@@ -56,7 +56,7 @@ jobs:
           else
             git worktree add --detach .work/pages HEAD
             git -C .work/pages switch --orphan gh-pages
-            git -C .work/pages rm -rf .
+            git -C .work/pages rm -rf --ignore-unmatch .
           fi
 
       - name: Validate and build immutable dataset
