@@ -44,6 +44,7 @@ uv run ruff check .
 
 ```text
 dist/latest.json
+dist/license.json
 dist/datasets/<version>/catalog.json
 dist/datasets/<version>/manifest.json
 dist/datasets/<version>/data/<university-id>/<unit-id>.json
@@ -56,4 +57,6 @@ GitHub 远程仓库、Actions、Pages 发布和 Auto Email Sender 应用集成�
 
 ## 许可证与数据边界
 
-仓库程序代码使用 MIT License。社区数据的发布约束、职业信息范围、归因和删除政策见 [DATA_POLICY.md](DATA_POLICY.md)。在正式公开数据前应再次确认最终数据许可证。
+仓库程序代码、校验工具和工作流使用 [MIT License](LICENSE)。机构注册表、导师实体、贡献声明、审核与纠错记录、撤销记录及生成的公开数据集使用 [CC BY 4.0](LICENSE-DATA.md)。
+
+社区数据的职业信息范围、投稿归因、第三方来源边界、更正和删除政策见 [DATA_POLICY.md](DATA_POLICY.md)。每次 Pages 构建还会在根目录发布机器可读的 `license.json`。

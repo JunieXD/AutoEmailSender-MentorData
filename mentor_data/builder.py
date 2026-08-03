@@ -240,6 +240,18 @@ def build_dataset(
             else:
                 shutil.copy2(source, destination)
 
+    data_license = data.policy["data_license"]
+    write_json_atomic(
+        output_root / "license.json",
+        {
+            "schema_version": 1,
+            "spdx_id": data_license["spdx_id"],
+            "name": data_license["name"],
+            "url": data_license["url"],
+            "attribution": data_license["attribution"],
+        },
+    )
+
     latest = {
         "schema_version": 1,
         "dataset_version": version,

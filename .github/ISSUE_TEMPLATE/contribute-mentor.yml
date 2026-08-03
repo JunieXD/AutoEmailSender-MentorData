@@ -107,6 +107,5 @@ body:
     attributes:
       label: 投稿确认
       options:
-        - label: 我确认提交的是公开职业信息，不包含私人备注、任务、发送记录或非公开个人信息，并同意按仓库数据政策公开来源和贡献者身份。
+        - label: 我确认提交的是公开职业信息，不包含私人备注、任务、发送记录或非公开个人信息；对于我有权许可的投稿内容，我同意按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 提供，并同意按仓库数据政策公开来源和贡献者身份。
           required: true
-

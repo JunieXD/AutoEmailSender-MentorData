@@ -6,6 +6,7 @@ import pytest
 
 from mentor_data.builder import build_dataset
 from mentor_data.errors import RepositoryValidationError
+from mentor_data.io_utils import load_yaml, write_yaml_atomic
 from mentor_data.repository import load_repository
 
 from .helpers import (
@@ -160,3 +161,33 @@ def test_dataset_version_directory_is_immutable(tmp_path) -> None:
     build_dataset(root, output, generated_at=fixed_datetime())
     with pytest.raises(FileExistsError, match="版本已经存在"):
         build_dataset(root, output, generated_at=fixed_datetime())
+
+
+def test_build_publishes_machine_readable_cc_by_4_metadata_and_page_notice(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    output = tmp_path / "dist"
+
+    build_dataset(root, output, generated_at=fixed_datetime())
+
+    license_document = json.loads((output / "license.json").read_text(encoding="utf-8"))
+    assert license_document == {
+        "schema_version": 1,
+        "spdx_id": "CC-BY-4.0",
+        "name": "Creative Commons Attribution 4.0 International",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "AutoEmailSender MentorData contributors",
+    }
+    page = (output / "index.html").read_text(encoding="utf-8")
+    assert 'rel="license"' in page
+    assert "CC BY 4.0" in page
+
+
+def test_repository_rejects_a_different_or_missing_data_license(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    policy_path = root / "registry" / "policy.yml"
+    policy = load_yaml(policy_path)
+    policy["data_license"]["spdx_id"] = "ODC-By-1.0"
+    write_yaml_atomic(policy_path, policy)
+
+    with pytest.raises(RepositoryValidationError, match="CC-BY-4.0"):
+        load_repository(root)

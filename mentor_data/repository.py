@@ -159,6 +159,21 @@ def _validate_policy(data: RepositoryData, issues: list[str]) -> None:
     age = policy.get("minimum_auto_merge_account_age_days")
     if not isinstance(age, int) or age < 0:
         issues.append("registry/policy.yml: minimum_auto_merge_account_age_days 必须是非负整数")
+    data_license = policy.get("data_license")
+    if not isinstance(data_license, dict):
+        issues.append("registry/policy.yml: data_license 必须存在")
+    else:
+        if data_license.get("spdx_id") != "CC-BY-4.0":
+            issues.append("registry/policy.yml: data_license.spdx_id 必须为 CC-BY-4.0")
+        if data_license.get("url") != "https://creativecommons.org/licenses/by/4.0/":
+            issues.append("registry/policy.yml: data_license.url 必须指向 CC BY 4.0 官方页面")
+        if not isinstance(data_license.get("name"), str) or not data_license["name"].strip():
+            issues.append("registry/policy.yml: data_license.name 必须是非空字符串")
+        if (
+            not isinstance(data_license.get("attribution"), str)
+            or not data_license["attribution"].strip()
+        ):
+            issues.append("registry/policy.yml: data_license.attribution 必须是非空字符串")
     limits = policy.get("limits")
     if not isinstance(limits, dict):
         issues.append("registry/policy.yml: limits 必须存在")

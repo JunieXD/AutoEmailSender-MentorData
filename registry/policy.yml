@@ -2,6 +2,12 @@ schema_version: 1
 minimum_auto_merge_account_age_days: 730
 minimum_app_version: 0.1.0
 
+data_license:
+  spdx_id: CC-BY-4.0
+  name: Creative Commons Attribution 4.0 International
+  url: https://creativecommons.org/licenses/by/4.0/
+  attribution: AutoEmailSender MentorData contributors
+
 limits:
   max_issue_body_bytes: 200000
   max_upload_bytes: 5242880
@@ -29,4 +35,3 @@ automation:
   organization_changes_require_review: true
   corrections_require_review: true
   lifecycle_changes_require_review: true
-
