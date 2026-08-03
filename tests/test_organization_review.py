@@ -401,6 +401,69 @@ def test_review_can_create_new_university_and_school_chain(tmp_path: Path) -> No
     assert proposal["accepted"]["organization_id"] == school["id"]
 
 
+def test_review_uses_trusted_schemas_for_an_older_pull_request(tmp_path: Path) -> None:
+    review_root = build_test_repository(tmp_path / "review")
+    trusted_root = build_test_repository(tmp_path / "trusted")
+    _, manifest, manifest_path = _prepare(
+        review_root,
+        tmp_path,
+        [_row("新老师", "mentor@new.edu", "新大", "工学院", "https://new.edu/mentor")],
+    )
+    group = manifest["groups"][0]
+    legacy_schema_path = review_root / "schemas" / "organization.schema.json"
+    legacy_schema = load_json(legacy_schema_path)
+    legacy_schema["$defs"]["organization"]["properties"]["official_urls"]["minItems"] = 1
+    legacy_schema["$defs"]["organization"].pop("allOf", None)
+    legacy_schema_path.write_text(
+        json.dumps(legacy_schema, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _create(
+                        "university",
+                        "university",
+                        "新示例大学",
+                        "https://new.edu/",
+                        ["new.edu"],
+                        save_alias=True,
+                    ),
+                    _create(
+                        "school",
+                        "school",
+                        "工学院",
+                        None,
+                        [],
+                        save_alias=True,
+                    ),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(trusted_root, tmp_path, decision)
+
+    applied = apply_organization_review(
+        review_root,
+        comment,
+        pull,
+        schema_root=trusted_root,
+    )
+
+    assert applied.ready_for_finalization is True
+    registry = load_yaml(review_root / "registry" / "organizations.yml")
+    school = next(item for item in registry["organizations"] if item["canonical_name"] == "工学院")
+    assert school["official_urls"] == []
+
+
 def test_review_requires_official_url_only_for_new_university(tmp_path: Path) -> None:
     root = build_test_repository(tmp_path)
     _, manifest, manifest_path = _prepare(

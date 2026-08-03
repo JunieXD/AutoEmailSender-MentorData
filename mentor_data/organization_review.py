@@ -493,8 +493,10 @@ def _candidate_repository_data(
     proposals_by_id: dict[str, dict[str, Any]],
     proposal_paths_by_id: dict[str, Path],
     proposal_directory: Path,
+    *,
+    schema_root: Path,
 ) -> Any:
-    data = copy.deepcopy(load_repository(root, validate=True))
+    data = copy.deepcopy(load_repository(root, validate=True, schema_root=schema_root))
     data.organizations_document = organizations_document
     data.registry = OrganizationRegistry(organizations_document["organizations"])
     batch_proposal_ids = {
@@ -550,7 +552,7 @@ def apply_organization_review(
     if manifest["issue"]["number"] != review_pull.issue_number:
         raise SubmissionError("机构审核清单的 Issue 编号不一致")
 
-    data = load_repository(root, validate=True)
+    data = load_repository(root, validate=True, schema_root=trusted_schema_root)
     if manifest["registry_sha256"] != _registry_digest(data.organizations_document):
         raise SubmissionError("机构注册表已经变化，请重新生成审核清单")
     resolution_path = (
@@ -702,8 +704,9 @@ def apply_organization_review(
         proposals_by_id,
         proposal_paths_by_id,
         proposal_directory,
+        schema_root=trusted_schema_root,
     )
-    validate_repository_data(candidate_data)
+    validate_repository_data(candidate_data, schema_root=trusted_schema_root)
 
     resolution = {
         "schema_version": 1,
@@ -740,14 +743,14 @@ def apply_organization_review(
         if path is not None:
             path.unlink(missing_ok=True)
     write_json_atomic(resolution_path, resolution)
-    load_repository(root, validate=True)
+    load_repository(root, validate=True, schema_root=trusted_schema_root)
 
     remaining_paths = [proposal_paths_by_id[key] for key in sorted(proposal_paths_by_id)]
     ready_for_finalization = False
     finalization_error: str | None = None
     if remaining_paths:
         try:
-            check_proposal_set(root, remaining_paths)
+            check_proposal_set(root, remaining_paths, schema_root=trusted_schema_root)
             ready_for_finalization = True
         except (RepositoryValidationError, SubmissionError, OSError, ValueError) as error:
             finalization_error = str(error).splitlines()[0][:500]

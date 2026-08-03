@@ -62,14 +62,19 @@ def _load_json_collection(path: Path) -> tuple[list[dict[str, Any]], dict[str, P
     return values, paths
 
 
-def load_repository(root: Path, *, validate: bool = True) -> RepositoryData:
+def load_repository(
+    root: Path,
+    *,
+    validate: bool = True,
+    schema_root: Path | None = None,
+) -> RepositoryData:
     resolved_root = root.resolve()
     organizations_document = load_yaml(resolved_root / "registry" / "organizations.yml")
     mentors, mentor_paths = _load_json_collection(resolved_root / "records" / "mentors")
     claims, claim_paths = _load_json_collection(resolved_root / "claims")
     resolutions, _ = _load_json_collection(resolved_root / "reports" / "resolutions")
-    organization_review_resolutions, organization_review_resolution_paths = (
-        _load_json_collection(resolved_root / "reviews" / "resolutions")
+    organization_review_resolutions, organization_review_resolution_paths = _load_json_collection(
+        resolved_root / "reviews" / "resolutions"
     )
     proposals, proposal_paths = _load_json_collection(resolved_root / "proposals")
     report_proposals, report_proposal_paths = _load_json_collection(
@@ -95,7 +100,7 @@ def load_repository(root: Path, *, validate: bool = True) -> RepositoryData:
         revocations=load_yaml(resolved_root / "registry" / "revocations.yml"),
     )
     if validate:
-        validate_repository_data(data)
+        validate_repository_data(data, schema_root=schema_root)
     return data
 
 
@@ -103,18 +108,27 @@ def validate_repository(root: Path) -> RepositoryData:
     return load_repository(root, validate=True)
 
 
-def validate_repository_data(data: RepositoryData) -> None:
+def validate_repository_data(
+    data: RepositoryData,
+    *,
+    schema_root: Path | None = None,
+) -> None:
     issues: list[str] = []
+    resolved_schema_root = (schema_root or data.root).resolve()
     schemas = {
-        "organizations": load_json(data.root / "schemas" / "organization.schema.json"),
-        "mentor": load_json(data.root / "schemas" / "mentor.schema.json"),
-        "claim": load_json(data.root / "schemas" / "claim.schema.json"),
-        "resolution": load_json(data.root / "schemas" / "resolution.schema.json"),
-        "correction_patch": load_json(data.root / "schemas" / "correction-patch.schema.json"),
-        "proposal": load_json(data.root / "schemas" / "proposal.schema.json"),
-        "report_proposal": load_json(data.root / "schemas" / "report-proposal.schema.json"),
+        "organizations": load_json(resolved_schema_root / "schemas" / "organization.schema.json"),
+        "mentor": load_json(resolved_schema_root / "schemas" / "mentor.schema.json"),
+        "claim": load_json(resolved_schema_root / "schemas" / "claim.schema.json"),
+        "resolution": load_json(resolved_schema_root / "schemas" / "resolution.schema.json"),
+        "correction_patch": load_json(
+            resolved_schema_root / "schemas" / "correction-patch.schema.json"
+        ),
+        "proposal": load_json(resolved_schema_root / "schemas" / "proposal.schema.json"),
+        "report_proposal": load_json(
+            resolved_schema_root / "schemas" / "report-proposal.schema.json"
+        ),
         "organization_review_resolution": load_json(
-            data.root / "schemas" / "organization-review-resolution.schema.json"
+            resolved_schema_root / "schemas" / "organization-review-resolution.schema.json"
         ),
     }
 
@@ -619,9 +633,7 @@ def _validate_organization_review_resolutions(
         updated = set(resolution.get("updated_organization_ids", []))
         missing = sorted((created | updated) - organization_ids)
         if missing:
-            issues.append(
-                f"organization review {resolution_id}: 机构不存在：{', '.join(missing)}"
-            )
+            issues.append(f"organization review {resolution_id}: 机构不存在：{', '.join(missing)}")
         mapped = set(resolution.get("mapped_proposal_ids", []))
         rejected = set(resolution.get("rejected_proposal_ids", []))
         if mapped & rejected:

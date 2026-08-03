@@ -564,10 +564,12 @@ def finalize_proposal(
     proposal_path: Path,
     *,
     moderator_github_user_id: int | None,
+    schema_root: Path | None = None,
 ) -> tuple[Path, Path]:
-    data = load_repository(root, validate=True)
+    resolved_schema_root = (schema_root or root).resolve()
+    data = load_repository(root, validate=True, schema_root=resolved_schema_root)
     proposal = load_json(proposal_path)
-    schema = load_json(data.root / "schemas" / "proposal.schema.json")
+    schema = load_json(resolved_schema_root / "schemas" / "proposal.schema.json")
     errors = list(
         Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(proposal)
     )
@@ -617,11 +619,16 @@ def finalize_proposal(
     claim_path = data.root / "claims" / str(user_id) / f"{claim['id']}.json"
     write_json_atomic(claim_path, claim)
     write_json_atomic(mentor_path, mentor)
-    load_repository(root, validate=True)
+    load_repository(root, validate=True, schema_root=resolved_schema_root)
     return claim_path, mentor_path
 
 
-def check_proposal(root: Path, proposal_path: Path) -> None:
+def check_proposal(
+    root: Path,
+    proposal_path: Path,
+    *,
+    schema_root: Path | None = None,
+) -> None:
     resolved_root = root.resolve()
     resolved_proposal = proposal_path.resolve()
     try:
@@ -643,6 +650,7 @@ def check_proposal(root: Path, proposal_path: Path) -> None:
             rehearsal_root,
             rehearsal_proposal,
             moderator_github_user_id=1,
+            schema_root=schema_root,
         )
 
 
@@ -673,7 +681,12 @@ def finalize_proposal_set(
     return results
 
 
-def check_proposal_set(root: Path, paths: list[Path] | None = None) -> None:
+def check_proposal_set(
+    root: Path,
+    paths: list[Path] | None = None,
+    *,
+    schema_root: Path | None = None,
+) -> None:
     resolved_root = root.resolve()
     resolved_paths = [path.resolve() for path in (paths or proposal_paths(resolved_root))]
     if not resolved_paths:
@@ -701,6 +714,7 @@ def check_proposal_set(root: Path, paths: list[Path] | None = None) -> None:
                 rehearsal_root,
                 rehearsal_path,
                 moderator_github_user_id=1,
+                schema_root=schema_root,
             )
             rehearsal_path.unlink()
-        load_repository(rehearsal_root, validate=True)
+        load_repository(rehearsal_root, validate=True, schema_root=schema_root)
