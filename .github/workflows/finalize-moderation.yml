@@ -3,6 +3,12 @@ name: Finalize merged moderation proposal
 on:
   pull_request:
     types: [closed]
+  workflow_dispatch:
+    inputs:
+      head_ref:
+        description: Trusted internal batch branch that was merged by the review workflow
+        required: true
+        type: string
 
 permissions:
   actions: write
@@ -16,18 +22,21 @@ concurrency:
 jobs:
   finalize:
     if: >-
-      github.event.pull_request.merged == true &&
-      github.event.pull_request.head.repo.full_name == github.repository &&
-      (startsWith(github.event.pull_request.head.ref, 'submission/issue-') ||
-       startsWith(github.event.pull_request.head.ref, 'batch/issue-') ||
-       startsWith(github.event.pull_request.head.ref, 'report/issue-'))
+      (github.event_name == 'workflow_dispatch' &&
+       startsWith(inputs.head_ref, 'batch/issue-')) ||
+      (github.event_name == 'pull_request' &&
+       github.event.pull_request.merged == true &&
+       github.event.pull_request.head.repo.full_name == github.repository &&
+       (startsWith(github.event.pull_request.head.ref, 'submission/issue-') ||
+        startsWith(github.event.pull_request.head.ref, 'batch/issue-') ||
+        startsWith(github.event.pull_request.head.ref, 'report/issue-')))
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
       GH_TOKEN: ${{ github.token }}
-      HEAD_REF: ${{ github.event.pull_request.head.ref }}
-      MERGED_BY_ID: ${{ github.event.pull_request.merged_by.id }}
-      MERGED_BY_LOGIN: ${{ github.event.pull_request.merged_by.login }}
+      HEAD_REF: ${{ github.event_name == 'workflow_dispatch' && inputs.head_ref || github.event.pull_request.head.ref }}
+      MERGED_BY_ID: ${{ github.event.pull_request.merged_by.id || '' }}
+      MERGED_BY_LOGIN: ${{ github.event.pull_request.merged_by.login || '' }}
     steps:
       - name: Check out merged main branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -49,7 +58,9 @@ jobs:
         run: uv run python scripts/parse_workflow_branch.py
 
       - name: Finalize accepted mentor contribution
-        if: steps.branch.outputs.kind == 'submission'
+        if: >-
+          steps.branch.outputs.pending == 'true' &&
+          steps.branch.outputs.kind == 'submission'
         run: |
           uv run mentor-data finalize-proposal \
             "proposals/issue-${{ steps.branch.outputs.issue_number }}.json" \
@@ -57,17 +68,23 @@ jobs:
           git rm "proposals/issue-${{ steps.branch.outputs.issue_number }}.json"
 
       - name: Finalize accepted batch contribution
-        if: steps.branch.outputs.kind == 'batch'
+        if: >-
+          steps.branch.outputs.pending == 'true' &&
+          steps.branch.outputs.kind == 'batch'
+        env:
+          MODERATOR_ID: ${{ steps.branch.outputs.moderator_id }}
         run: |
           uv run mentor-data finalize-proposal-set \
             "proposals/batch-issue-${{ steps.branch.outputs.issue_number }}" \
-            --moderator-id "$MERGED_BY_ID"
+            --moderator-id "$MODERATOR_ID"
           git rm -r "proposals/batch-issue-${{ steps.branch.outputs.issue_number }}"
           git rm --ignore-unmatch \
             "reviews/pending/batch-issue-${{ steps.branch.outputs.issue_number }}.json"
 
       - name: Finalize correction decision
-        if: steps.branch.outputs.kind == 'report'
+        if: >-
+          steps.branch.outputs.pending == 'true' &&
+          steps.branch.outputs.kind == 'report'
         run: |
           uv run mentor-data finalize-report-proposal \
             "reports/pending/issue-${{ steps.branch.outputs.issue_number }}.json" \
@@ -76,11 +93,13 @@ jobs:
           git rm "reports/pending/issue-${{ steps.branch.outputs.issue_number }}.json"
 
       - name: Validate final state
+        if: steps.branch.outputs.pending == 'true'
         run: |
           uv run mentor-data validate
           uv run pytest
 
       - name: Commit finalized canonical data
+        if: steps.branch.outputs.pending == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -92,11 +111,17 @@ jobs:
           git push origin HEAD:main
 
       - name: Publish finalized canonical change
+        if: steps.branch.outputs.pending == 'true'
         run: gh workflow run pages.yml --ref main
 
       - name: Notify and close Issue
+        if: steps.branch.outputs.pending == 'true'
         run: |
           gh issue comment "${{ steps.branch.outputs.issue_number }}" \
             --body "维护者审核已经应用，新的社区数据集将在 Pages 工作流通过后发布。"
           gh issue close "${{ steps.branch.outputs.issue_number }}" \
             --reason completed
+
+      - name: Treat an already finalized duplicate trigger as success
+        if: steps.branch.outputs.pending != 'true'
+        run: echo "This moderation branch has already been finalized; nothing to do."

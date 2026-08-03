@@ -5,6 +5,7 @@ on:
     types: [created]
 
 permissions:
+  actions: write
   contents: write
   issues: write
   pull-requests: write
@@ -87,6 +88,7 @@ jobs:
             --github-output "$GITHUB_OUTPUT"
 
       - name: Commit only moderated data paths
+        id: commit
         env:
           HEAD_REF: ${{ steps.pull.outputs.head_ref }}
           ISSUE_NUMBER: ${{ steps.pull.outputs.issue_number }}
@@ -106,6 +108,10 @@ jobs:
           fi
           git commit -m "data: apply organization review for issue #${ISSUE_NUMBER}"
           git push origin "HEAD:${HEAD_REF}"
+          HEAD_SHA=$(git rev-parse HEAD)
+          case "$HEAD_SHA" in ''|*[!0-9a-f]*) exit 1 ;; esac
+          [ "${#HEAD_SHA}" -eq 40 ] || exit 1
+          echo "head_sha=$HEAD_SHA" >> "$GITHUB_OUTPUT"
 
       - name: Mark fully rehearsed proposal set ready
         if: >-
@@ -114,6 +120,35 @@ jobs:
         env:
           PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
         run: gh pr ready "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
+
+      - name: Automatically merge fully rehearsed review
+        if: >-
+          steps.result.outputs.remaining_proposals != '0' &&
+          steps.result.outputs.ready_for_finalization == 'true'
+        env:
+          PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
+          HEAD_SHA: ${{ steps.commit.outputs.head_sha }}
+        run: |
+          case "$PR_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          case "$HEAD_SHA" in ''|*[!0-9a-f]*) exit 1 ;; esac
+          [ "${#HEAD_SHA}" -eq 40 ] || exit 1
+          gh pr merge "$PR_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --squash \
+            --match-head-commit "$HEAD_SHA"
+
+      - name: Dispatch canonical finalization after bot merge
+        if: >-
+          steps.result.outputs.remaining_proposals != '0' &&
+          steps.result.outputs.ready_for_finalization == 'true'
+        env:
+          HEAD_REF: ${{ steps.pull.outputs.head_ref }}
+        run: |
+          case "$HEAD_REF" in batch/issue-*) ;; *) exit 1 ;; esac
+          gh workflow run finalize-moderation.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref main \
+            -f "head_ref=$HEAD_REF"
 
       - name: Close an entirely rejected or invalid batch and its Issue
         if: steps.result.outputs.remaining_proposals == '0'
@@ -146,7 +181,7 @@ jobs:
           if [ "$REMAINING" = "0" ]; then
             STATUS="本批没有可继续落库的提案，PR 已关闭。"
           elif [ "$READY" = "true" ]; then
-            STATUS="剩余提案已通过落库预演，PR 已转为 Ready。"
+            STATUS="剩余提案已通过落库预演，PR 已自动合并并进入落库流程。"
           else
             STATUS="机构归属已应用；仍有身份或字段冲突，请继续在 PR 中人工处理。"
           fi

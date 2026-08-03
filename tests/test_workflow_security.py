@@ -80,6 +80,9 @@ def test_organization_review_runs_trusted_code_and_never_embeds_decision_in_shel
     )
     assert '--expected-repository "$GITHUB_REPOSITORY"' in text
     assert 'git push origin "HEAD:${HEAD_REF}"' in text
+    assert 'gh pr merge "$PR_NUMBER"' in text
+    assert '--match-head-commit "$HEAD_SHA"' in text
+    assert "gh workflow run finalize-moderation.yml" in text
     assert 'gh issue close "$ISSUE_NUMBER"' in text
 
 
@@ -88,3 +91,5 @@ def test_finalization_closes_the_source_issue_after_success() -> None:
     text = path.read_text(encoding="utf-8")
     assert 'gh issue close "${{ steps.branch.outputs.issue_number }}"' in text
     assert "--reason completed" in text
+    assert '--moderator-id "$MODERATOR_ID"' in text
+    assert "steps.branch.outputs.pending == 'true'" in text
