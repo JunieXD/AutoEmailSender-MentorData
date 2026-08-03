@@ -188,6 +188,19 @@ footer {
   text-align: center;
 }
 
+footer p {
+  margin-bottom: 0;
+}
+
+.license-notice {
+  margin-top: 0.35rem;
+}
+
+footer a {
+  color: #9a3412;
+  text-underline-offset: 3px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -218,4 +231,3 @@ footer {
     width: 100%;
   }
 }
-
