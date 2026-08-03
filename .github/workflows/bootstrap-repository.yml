@@ -1,0 +1,23 @@
+name: Bootstrap repository labels
+
+on:
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Create or update workflow labels
+        run: |
+          gh label create "submission:mentor" --repo "$GITHUB_REPOSITORY" --color "1D76DB" --description "Single mentor contribution" --force
+          gh label create "submission:batch" --repo "$GITHUB_REPOSITORY" --color "5319E7" --description "Batch mentor contribution" --force
+          gh label create "report:data" --repo "$GITHUB_REPOSITORY" --color "D93F0B" --description "Correction, lifecycle, or removal report" --force
+          gh label create "status:manual-review" --repo "$GITHUB_REPOSITORY" --color "FBCA04" --description "Requires maintainer review" --force
+          gh label create "status:auto-eligible" --repo "$GITHUB_REPOSITORY" --color "0E8A16" --description "Eligible for automated merge after validation" --force
+

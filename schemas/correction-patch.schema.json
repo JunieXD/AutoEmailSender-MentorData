@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/correction-patch.schema.json",
+  "title": "MentorData accepted correction patch",
+  "type": "object",
+  "additionalProperties": false,
+  "minProperties": 1,
+  "properties": {
+    "status": {
+      "enum": ["active", "retired", "departed", "deceased", "stale", "disputed", "removed"]
+    },
+    "status_reason": { "type": ["string", "null"], "maxLength": 1000 },
+    "status_source_url": { "$ref": "#/$defs/httpsUrl" },
+    "status_observed_at": { "type": "string", "format": "date-time" },
+    "names": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/name" }
+    },
+    "contacts": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/contact" }
+    },
+    "affiliations": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/affiliation" }
+    },
+    "profiles": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/profile" }
+    },
+    "title": {
+      "enum": [
+        "教授",
+        "副教授",
+        "助理教授",
+        "讲师",
+        "研究员",
+        "副研究员",
+        "助理研究员",
+        "特聘研究员",
+        null
+      ]
+    },
+    "research_directions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 1000 },
+      "uniqueItems": true
+    },
+    "recent_papers": {
+      "type": "array",
+      "maxItems": 8,
+      "items": { "type": "string", "minLength": 1, "maxLength": 2000 },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["status"] },
+      "then": { "required": ["status_reason", "status_source_url", "status_observed_at"] }
+    }
+  ],
+  "$defs": {
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "maxLength": 500
+    },
+    "organizationId": {
+      "type": "string",
+      "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+    },
+    "affiliationId": {
+      "type": "string",
+      "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$"
+    },
+    "name": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "kind", "is_primary"],
+      "properties": {
+        "value": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "kind": { "enum": ["native", "english", "alias", "former"] },
+        "is_primary": { "type": "boolean" }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "status",
+        "is_primary",
+        "affiliation_id",
+        "source_url",
+        "observed_at"
+      ],
+      "properties": {
+        "value": { "type": "string", "minLength": 3, "maxLength": 255 },
+        "status": { "enum": ["current", "former", "shared", "generic", "reassigned"] },
+        "is_primary": { "type": "boolean" },
+        "affiliation_id": {
+          "oneOf": [{ "$ref": "#/$defs/affiliationId" }, { "type": "null" }]
+        },
+        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "observed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "affiliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "organization_id",
+        "status",
+        "is_primary",
+        "title",
+        "started_at",
+        "ended_at",
+        "source_url",
+        "observed_at"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/affiliationId" },
+        "organization_id": { "$ref": "#/$defs/organizationId" },
+        "status": { "enum": ["current", "former"] },
+        "is_primary": { "type": "boolean" },
+        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "started_at": { "type": ["string", "null"], "format": "date" },
+        "ended_at": { "type": ["string", "null"], "format": "date" },
+        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "observed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "status", "affiliation_id", "observed_at"],
+      "properties": {
+        "url": { "$ref": "#/$defs/httpsUrl" },
+        "status": { "enum": ["current", "former", "unavailable"] },
+        "affiliation_id": {
+          "oneOf": [{ "$ref": "#/$defs/affiliationId" }, { "type": "null" }]
+        },
+        "observed_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}

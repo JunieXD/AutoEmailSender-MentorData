@@ -1,0 +1,42 @@
+name: Validate repository
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out trusted repository content
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+        with:
+          version: "0.11.26"
+          enable-cache: true
+
+      - name: Install locked dependencies
+        run: uv sync --locked --dev
+
+      - name: Lint Python
+        run: uv run ruff check .
+
+      - name: Run tests
+        run: uv run pytest
+
+      - name: Validate repository data
+        run: uv run mentor-data validate
+
+      - name: Test production dataset build
+        run: uv run mentor-data build --output dist
+

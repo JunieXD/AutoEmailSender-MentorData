@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/resolution.schema.json",
+  "title": "MentorData correction resolution",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "mentor_id",
+    "report_issue",
+    "reporter",
+    "decision",
+    "before",
+    "proposed",
+    "accepted",
+    "evidence_urls",
+    "moderator",
+    "decided_at",
+    "reason"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^resolution_[a-z0-9][a-z0-9_-]{5,95}$" },
+    "mentor_id": { "type": "string", "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$" },
+    "report_issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "url"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 }
+      }
+    },
+    "reporter": { "$ref": "#/$defs/githubActor" },
+    "decision": {
+      "enum": ["accepted", "partially_accepted", "rejected", "needs_evidence", "duplicate"]
+    },
+    "before": { "type": "object" },
+    "proposed": { "type": "object" },
+    "accepted": { "type": "object" },
+    "evidence_urls": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+      "uniqueItems": true
+    },
+    "moderator": { "$ref": "#/$defs/githubActor" },
+    "decided_at": { "type": "string", "format": "date-time" },
+    "reason": { "type": "string", "minLength": 1, "maxLength": 2000 }
+  },
+  "$defs": {
+    "githubActor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["github_user_id", "github_login"],
+      "properties": {
+        "github_user_id": { "type": "integer", "minimum": 1 },
+        "github_login": { "type": "string", "minLength": 1, "maxLength": 39 }
+      }
+    }
+  }
+}
+

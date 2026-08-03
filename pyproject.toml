@@ -1,0 +1,41 @@
+[project]
+name = "auto-email-sender-mentor-data"
+version = "0.1.0"
+description = "Auditable GitHub-backed community mentor dataset for Auto Email Sender"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Auto Email Sender contributors" }]
+dependencies = [
+  "jsonschema>=4.23,<5",
+  "openpyxl>=3.1.5,<4",
+  "PyYAML>=6.0.2,<7",
+]
+
+[project.scripts]
+mentor-data = "mentor_data.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<9",
+  "ruff>=0.9,<1",
+]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["mentor_data*"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+

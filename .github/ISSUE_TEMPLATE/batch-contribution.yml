@@ -1,0 +1,33 @@
+name: 批量贡献导师
+description: 上传由 Auto Email Sender 导出的安全社区共享包。
+title: "[批量投稿] "
+labels:
+  - submission:batch
+body:
+  - type: markdown
+    attributes:
+      value: |
+        仅接受安全模板的 UTF-8 CSV 或普通 XLSX。上传文件不得包含公式、宏、外部链接、个人备注、标签、任务或发送数据。原始文件只用于只读解析，不会提交到 Git 仓库。
+
+  - type: textarea
+    id: package
+    attributes:
+      label: 社区共享包
+      description: 请把一个 CSV 或 XLSX 文件拖入此框，等待 GitHub 显示附件链接后再提交。最大 5 MiB、最多 5,000 行。
+      placeholder: 将 community-share.xlsx 拖到这里
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明
+      description: 可以说明数据覆盖的学校、学院和官方入口页面。
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 投稿确认
+      options:
+        - label: 我确认文件只包含公开职业信息，并同意按仓库数据政策记录和公开贡献来源。
+          required: true

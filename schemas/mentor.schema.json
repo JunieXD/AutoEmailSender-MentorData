@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/mentor.schema.json",
+  "title": "MentorData canonical mentor entity",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "status",
+    "names",
+    "contacts",
+    "affiliations",
+    "profiles",
+    "research_directions",
+    "recent_papers",
+    "claim_ids",
+    "resolution_ids",
+    "field_provenance",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "$ref": "#/$defs/mentorId" },
+    "status": {
+      "enum": [
+        "active",
+        "retired",
+        "departed",
+        "deceased",
+        "stale",
+        "disputed",
+        "removed"
+      ]
+    },
+    "status_reason": { "type": ["string", "null"], "maxLength": 1000 },
+    "status_source_url": {
+      "oneOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }]
+    },
+    "status_observed_at": { "type": ["string", "null"], "format": "date-time" },
+    "names": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/name" }
+    },
+    "contacts": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/contact" }
+    },
+    "affiliations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/affiliation" }
+    },
+    "profiles": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/profile" }
+    },
+    "title": {
+      "type": ["string", "null"],
+      "enum": [
+        "教授",
+        "副教授",
+        "助理教授",
+        "讲师",
+        "研究员",
+        "副研究员",
+        "助理研究员",
+        "特聘研究员",
+        null
+      ]
+    },
+    "research_directions": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1, "maxLength": 1000 },
+      "uniqueItems": true
+    },
+    "recent_papers": {
+      "type": "array",
+      "maxItems": 8,
+      "items": { "type": "string", "minLength": 1, "maxLength": 2000 },
+      "uniqueItems": true
+    },
+    "claim_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/claimId" },
+      "uniqueItems": true
+    },
+    "resolution_ids": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/resolutionId" },
+      "uniqueItems": true
+    },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/sourceId" },
+        "uniqueItems": true
+      }
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "last_verified_at": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "$defs": {
+    "mentorId": {
+      "type": "string",
+      "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$"
+    },
+    "organizationId": {
+      "type": "string",
+      "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+    },
+    "affiliationId": {
+      "type": "string",
+      "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$"
+    },
+    "claimId": {
+      "type": "string",
+      "pattern": "^claim_[a-z0-9][a-z0-9_-]{5,95}$"
+    },
+    "resolutionId": {
+      "type": "string",
+      "pattern": "^resolution_[a-z0-9][a-z0-9_-]{5,95}$"
+    },
+    "sourceId": {
+      "oneOf": [
+        { "$ref": "#/$defs/claimId" },
+        { "$ref": "#/$defs/resolutionId" }
+      ]
+    },
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "maxLength": 500
+    },
+    "name": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "kind", "is_primary", "claim_ids"],
+      "properties": {
+        "value": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "kind": { "enum": ["native", "english", "alias", "former"] },
+        "is_primary": { "type": "boolean" },
+        "claim_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/claimId" },
+          "uniqueItems": true
+        },
+        "resolution_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/resolutionId" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "value",
+        "normalized_value",
+        "status",
+        "is_primary",
+        "affiliation_id",
+        "source_url",
+        "observed_at",
+        "claim_ids"
+      ],
+      "properties": {
+        "type": { "const": "email" },
+        "value": { "type": "string", "minLength": 3, "maxLength": 255 },
+        "normalized_value": { "type": "string", "minLength": 3, "maxLength": 255 },
+        "status": { "enum": ["current", "former", "shared", "generic", "reassigned"] },
+        "is_primary": { "type": "boolean" },
+        "affiliation_id": {
+          "oneOf": [{ "$ref": "#/$defs/affiliationId" }, { "type": "null" }]
+        },
+        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "observed_at": { "type": "string", "format": "date-time" },
+        "claim_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/claimId" },
+          "uniqueItems": true
+        },
+        "resolution_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/resolutionId" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "affiliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "organization_id",
+        "status",
+        "is_primary",
+        "title",
+        "started_at",
+        "ended_at",
+        "source_url",
+        "observed_at",
+        "claim_ids"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/affiliationId" },
+        "organization_id": { "$ref": "#/$defs/organizationId" },
+        "status": { "enum": ["current", "former"] },
+        "is_primary": { "type": "boolean" },
+        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "started_at": { "type": ["string", "null"], "format": "date" },
+        "ended_at": { "type": ["string", "null"], "format": "date" },
+        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "observed_at": { "type": "string", "format": "date-time" },
+        "claim_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/claimId" },
+          "uniqueItems": true
+        },
+        "resolution_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/resolutionId" },
+          "uniqueItems": true
+        }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "status", "affiliation_id", "observed_at", "claim_ids"],
+      "properties": {
+        "url": { "$ref": "#/$defs/httpsUrl" },
+        "status": { "enum": ["current", "former", "unavailable"] },
+        "affiliation_id": {
+          "oneOf": [{ "$ref": "#/$defs/affiliationId" }, { "type": "null" }]
+        },
+        "observed_at": { "type": "string", "format": "date-time" },
+        "claim_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/claimId" },
+          "uniqueItems": true
+        },
+        "resolution_ids": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/resolutionId" },
+          "uniqueItems": true
+        }
+      }
+    }
+  }
+}

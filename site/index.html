@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>AutoEmailSender 社区导师库</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">Auto Email Sender</p>
+        <h1>社区导师库</h1>
+        <p class="intro">
+          按学校与学院发布的可审计导师数据。每条信息保留官方来源和 GitHub 贡献记录，软件只下载用户选择的小型 JSON 分片。
+        </p>
+      </header>
+
+      <section class="summary" aria-live="polite">
+        <div>
+          <span class="label">数据版本</span>
+          <strong id="dataset-version">正在读取…</strong>
+        </div>
+        <div>
+          <span class="label">导师数量</span>
+          <strong id="record-count">—</strong>
+        </div>
+        <div>
+          <span class="label">生成时间</span>
+          <strong id="generated-at">—</strong>
+        </div>
+      </section>
+
+      <section class="catalog-section">
+        <div class="toolbar">
+          <div>
+            <p class="eyebrow">Catalog</p>
+            <h2>学校与学院</h2>
+          </div>
+          <label>
+            <span class="sr-only">搜索学校或学院</span>
+            <input id="catalog-search" type="search" placeholder="搜索学校或学院" autocomplete="off" />
+          </label>
+        </div>
+        <p id="load-error" class="error" hidden></p>
+        <div id="catalog" class="catalog" aria-live="polite"></div>
+      </section>
+
+      <footer>
+        当前页面只展示发布目录。导入、冲突比较、退休或离职提醒应在 Auto Email Sender 软件内完成。
+      </footer>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>
+

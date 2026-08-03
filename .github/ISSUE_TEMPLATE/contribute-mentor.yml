@@ -1,0 +1,112 @@
+name: 贡献一位导师
+description: 提交一位导师的公开职业信息；无需使用 Git 或 Pull Request。
+title: "[导师投稿] "
+labels:
+  - submission:mentor
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢贡献。请只提交高校官网已经公开的职业信息，不确定的字段请留空。你的 GitHub 数字用户 ID、提交时用户名和 Issue 链接会作为公开来源记录。
+
+  - type: input
+    id: name
+    attributes:
+      label: 导师姓名
+      description: 使用官方页面显示的姓名，不附加职称。
+      placeholder: 张伟
+    validations:
+      required: true
+
+  - type: input
+    id: email
+    attributes:
+      label: 公开工作邮箱
+      description: 不得提交私人邮箱、通用邮箱或多人共享邮箱。
+      placeholder: mentor@example.edu
+    validations:
+      required: true
+
+  - type: input
+    id: organization_id
+    attributes:
+      label: 社区机构 ID
+      description: 从 Auto Email Sender 打开时会自动填写；直接在 GitHub 投稿可以留空。
+      placeholder: org_example_university_cs
+
+  - type: input
+    id: university
+    attributes:
+      label: 学校正式名称
+      placeholder: 示例大学
+    validations:
+      required: true
+
+  - type: input
+    id: school
+    attributes:
+      label: 学院或研究院正式名称
+      placeholder: 计算机学院
+    validations:
+      required: true
+
+  - type: input
+    id: department
+    attributes:
+      label: 系所或中心
+      description: 没有更具体单位时可以留空。
+      placeholder: 人工智能研究所
+
+  - type: dropdown
+    id: title
+    attributes:
+      label: 职称
+      options:
+        - 未知或不填写
+        - 教授
+        - 副教授
+        - 助理教授
+        - 讲师
+        - 研究员
+        - 副研究员
+        - 助理研究员
+        - 特聘研究员
+    validations:
+      required: true
+
+  - type: textarea
+    id: research_direction
+    attributes:
+      label: 研究方向
+      description: 多个方向使用中文分号分隔，不要复制完整个人简介。
+      placeholder: 大语言模型；智能体
+
+  - type: textarea
+    id: recent_papers
+    attributes:
+      label: 近期或代表论文
+      description: 最多 8 篇，每行一篇；没有可靠证据时留空。
+
+  - type: input
+    id: profile_url
+    attributes:
+      label: 官方个人主页
+      placeholder: https://example.edu/faculty/mentor
+
+  - type: input
+    id: source_url
+    attributes:
+      label: 官方证据页面
+      description: 必须是支持本次信息的具体高校官方页面。
+      placeholder: https://example.edu/faculty/mentor
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 投稿确认
+      options:
+        - label: 我确认提交的是公开职业信息，不包含私人备注、任务、发送记录或非公开个人信息，并同意按仓库数据政策公开来源和贡献者身份。
+          required: true
+

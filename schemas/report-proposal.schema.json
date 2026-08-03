@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/report-proposal.schema.json",
+  "title": "MentorData correction report moderation proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "kind",
+    "issue",
+    "reporter",
+    "mentor_id",
+    "report_type",
+    "affected_fields",
+    "before",
+    "proposed",
+    "accepted",
+    "evidence_urls",
+    "decision",
+    "moderator_reason",
+    "review_reasons",
+    "created_at"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^report_proposal_issue_[1-9][0-9]*$" },
+    "kind": { "const": "correction_report" },
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "url"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 }
+      }
+    },
+    "reporter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["github_user_id", "github_login_at_submission", "submitted_at"],
+      "properties": {
+        "github_user_id": { "type": "integer", "minimum": 1 },
+        "github_login_at_submission": { "type": "string", "minLength": 1, "maxLength": 39 },
+        "submitted_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "mentor_id": { "type": "string", "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$" },
+    "report_type": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "affected_fields": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "before": { "type": "object" },
+    "proposed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "explanation"],
+      "properties": {
+        "value": { "type": "string", "minLength": 1, "maxLength": 10000 },
+        "explanation": { "type": "string", "minLength": 1, "maxLength": 10000 }
+      }
+    },
+    "accepted": { "type": "object" },
+    "evidence_urls": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+      "uniqueItems": true
+    },
+    "decision": {
+      "enum": ["pending", "accepted", "partially_accepted", "rejected", "needs_evidence", "duplicate"]
+    },
+    "moderator_reason": { "type": ["string", "null"], "maxLength": 2000 },
+    "review_reasons": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9_]{2,64}$" },
+      "uniqueItems": true
+    },
+    "created_at": { "type": "string", "format": "date-time" }
+  }
+}
+

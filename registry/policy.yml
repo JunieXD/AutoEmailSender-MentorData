@@ -1,0 +1,32 @@
+schema_version: 1
+minimum_auto_merge_account_age_days: 730
+minimum_app_version: 0.1.0
+
+limits:
+  max_issue_body_bytes: 200000
+  max_upload_bytes: 5242880
+  max_batch_rows: 5000
+  max_cell_characters: 10000
+  max_xlsx_entries: 2000
+  max_xlsx_uncompressed_bytes: 52428800
+  max_xlsx_compression_ratio: 100
+
+publication:
+  default_visible_statuses:
+    - active
+  historical_statuses:
+    - retired
+    - departed
+    - deceased
+    - stale
+    - disputed
+    - removed
+  stale_after_days: 365
+
+automation:
+  auto_merge_enabled: false
+  unknown_organizations_require_review: true
+  organization_changes_require_review: true
+  corrections_require_review: true
+  lifecycle_changes_require_review: true
+

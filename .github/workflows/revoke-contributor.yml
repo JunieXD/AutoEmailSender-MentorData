@@ -1,0 +1,111 @@
+name: Revoke contributor data
+
+on:
+  workflow_dispatch:
+    inputs:
+      github_user_id:
+        description: Stable numeric GitHub user ID
+        required: true
+        type: string
+      reason_code:
+        description: Short reason code using letters, digits, and underscores
+        required: true
+        type: string
+      source_issue_url:
+        description: Optional maintainer Issue URL documenting the decision
+        required: false
+        type: string
+      block_contributions:
+        description: Block future mentor contributions
+        required: true
+        default: true
+        type: boolean
+      block_reports:
+        description: Block future correction reports
+        required: true
+        default: false
+        type: boolean
+      apply:
+        description: Create a review PR; false only runs a dry-run
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: mentor-data-write
+  cancel-in-progress: false
+
+jobs:
+  revoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      USER_ID: ${{ inputs.github_user_id }}
+      REASON_CODE: ${{ inputs.reason_code }}
+      SOURCE_ISSUE_URL: ${{ inputs.source_issue_url }}
+      RUN_ID: ${{ github.run_id }}
+      BLOCK_CONTRIBUTIONS: ${{ inputs.block_contributions }}
+      BLOCK_REPORTS: ${{ inputs.block_reports }}
+      APPLY_CHANGES: ${{ inputs.apply }}
+    steps:
+      - name: Check out main branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+        with:
+          version: "0.11.26"
+          enable-cache: true
+
+      - name: Install locked dependencies
+        run: uv sync --locked --dev
+
+      - name: Dry-run revocation
+        run: |
+          ARGS=()
+          [ "$BLOCK_CONTRIBUTIONS" = "true" ] && ARGS+=(--block-scope contribute)
+          [ "$BLOCK_REPORTS" = "true" ] && ARGS+=(--block-scope report)
+          uv run mentor-data revoke-contributor \
+            --github-user-id "$USER_ID" \
+            --reason-code "$REASON_CODE" \
+            --source-issue-url "$SOURCE_ISSUE_URL" \
+            "${ARGS[@]}"
+
+      - name: Apply revocation to review branch
+        if: inputs.apply == true
+        id: pull_request
+        run: |
+          case "$USER_ID" in ''|*[!0-9]*) exit 1 ;; esac
+          case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
+          ARGS=()
+          [ "$BLOCK_CONTRIBUTIONS" = "true" ] && ARGS+=(--block-scope contribute)
+          [ "$BLOCK_REPORTS" = "true" ] && ARGS+=(--block-scope report)
+          BRANCH="revoke/user-${USER_ID}-${RUN_ID}"
+          git switch -c "$BRANCH"
+          uv run mentor-data revoke-contributor \
+            --github-user-id "$USER_ID" \
+            --reason-code "$REASON_CODE" \
+            --source-issue-url "$SOURCE_ISSUE_URL" \
+            "${ARGS[@]}" \
+            --apply
+          uv run mentor-data validate
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A claims records registry proposals reports
+          git commit -m "data: revoke contributor ${USER_ID}"
+          git push origin "$BRANCH"
+          PR_URL=$(gh pr create \
+            --draft \
+            --base main \
+            --head "$BRANCH" \
+            --title "撤销贡献者 ${USER_ID} 的数据" \
+            --body "该 PR 由维护者手动工作流生成。请确认独立来源保留、字段清理和导师撤下范围后再合并。")
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"

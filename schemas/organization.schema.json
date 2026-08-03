@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/organization.schema.json",
+  "title": "MentorData organization registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "organizations"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "organizations": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/organization" }
+    }
+  },
+  "$defs": {
+    "organizationId": {
+      "type": "string",
+      "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+    },
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "maxLength": 500
+    },
+    "organization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "canonical_name",
+        "parent_id",
+        "aliases",
+        "official_urls",
+        "approved_domains",
+        "status"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/organizationId" },
+        "type": {
+          "enum": [
+            "university",
+            "school",
+            "institute",
+            "department",
+            "center",
+            "laboratory"
+          ]
+        },
+        "canonical_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 255
+        },
+        "parent_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/organizationId" },
+            { "type": "null" }
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 255 },
+          "uniqueItems": true
+        },
+        "official_urls": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/httpsUrl" },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "approved_domains": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$",
+            "maxLength": 253
+          },
+          "uniqueItems": true
+        },
+        "status": { "enum": ["active", "renamed", "merged", "closed"] },
+        "successor_id": {
+          "oneOf": [
+            { "$ref": "#/$defs/organizationId" },
+            { "type": "null" }
+          ]
+        },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}
+

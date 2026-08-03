@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/claim.schema.json",
+  "title": "MentorData accepted contribution claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "mentor_id",
+    "status",
+    "contributor",
+    "submitted",
+    "accepted",
+    "evidence",
+    "moderation"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "$ref": "#/$defs/claimId" },
+    "mentor_id": { "$ref": "#/$defs/mentorId" },
+    "status": { "enum": ["accepted", "partially_accepted", "superseded", "revoked"] },
+    "contributor": { "$ref": "#/$defs/contributor" },
+    "submitted": { "$ref": "#/$defs/payload" },
+    "accepted": { "$ref": "#/$defs/payload" },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/evidence" }
+    },
+    "moderation": { "$ref": "#/$defs/moderation" },
+    "revocation_reason": { "type": ["string", "null"], "maxLength": 1000 },
+    "revoked_at": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "$defs": {
+    "claimId": {
+      "type": "string",
+      "pattern": "^claim_[a-z0-9][a-z0-9_-]{5,95}$"
+    },
+    "mentorId": {
+      "type": "string",
+      "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$"
+    },
+    "organizationId": {
+      "type": "string",
+      "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+    },
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://",
+      "maxLength": 500
+    },
+    "contributor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "github_user_id",
+        "github_login_at_submission",
+        "github_user_type",
+        "issue_number",
+        "issue_url",
+        "submitted_at",
+        "account_created_at",
+        "account_age_days_at_submission"
+      ],
+      "properties": {
+        "github_user_id": { "type": "integer", "minimum": 1 },
+        "github_login_at_submission": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$"
+        },
+        "github_user_type": { "enum": ["User", "Bot"] },
+        "issue_number": { "type": "integer", "minimum": 1 },
+        "issue_url": { "$ref": "#/$defs/httpsUrl" },
+        "submitted_at": { "type": "string", "format": "date-time" },
+        "account_created_at": { "type": "string", "format": "date-time" },
+        "account_age_days_at_submission": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "email", "organization_id", "source_url"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "email": { "type": "string", "minLength": 3, "maxLength": 255 },
+        "organization_id": {
+          "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }]
+        },
+        "submitted_university": { "type": ["string", "null"], "maxLength": 255 },
+        "submitted_school": { "type": ["string", "null"], "maxLength": 255 },
+        "submitted_department": { "type": ["string", "null"], "maxLength": 255 },
+        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "research_directions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "uniqueItems": true
+        },
+        "recent_papers": {
+          "type": "array",
+          "maxItems": 8,
+          "items": { "type": "string", "minLength": 1, "maxLength": 2000 },
+          "uniqueItems": true
+        },
+        "profile_url": {
+          "oneOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }]
+        },
+        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "mentor_status": {
+          "enum": [
+            "active",
+            "retired",
+            "departed",
+            "deceased",
+            "stale",
+            "disputed",
+            "removed"
+          ]
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fields", "source_url", "observed_at"],
+      "properties": {
+        "fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1, "maxLength": 64 },
+          "uniqueItems": true
+        },
+        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "observed_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "moderation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mode", "policy_version", "normalized_fields", "decision_at"],
+      "properties": {
+        "mode": { "enum": ["automatic", "manual"] },
+        "policy_version": { "type": "integer", "minimum": 1 },
+        "normalized_fields": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 64 },
+          "uniqueItems": true
+        },
+        "moderator_github_user_id": { "type": ["integer", "null"], "minimum": 1 },
+        "reason": { "type": ["string", "null"], "maxLength": 1000 },
+        "decision_at": { "type": "string", "format": "date-time" }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,78 @@
+name: 反馈信息错误、过时或删除请求
+description: 提供新的官方证据；反馈不会直接修改社区数据。
+title: "[信息反馈] "
+labels:
+  - report:data
+body:
+  - type: input
+    id: record_id
+    attributes:
+      label: 社区导师 ID
+      description: 从软件内打开时会自动填写。
+      placeholder: mentor_...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: report_type
+    attributes:
+      label: 反馈类型
+      options:
+        - 字段错误
+        - 信息已经过时
+        - 导师已经退休
+        - 导师已经离职或调动
+        - 导师已经去世
+        - 重复导师实体
+        - 邮箱被重新分配或多人共享
+        - 导师本人或机构请求删除
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected_fields
+    attributes:
+      label: 涉及字段
+      placeholder: 邮箱、学院、导师状态
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_value
+    attributes:
+      label: 当前社区值
+      description: 从软件打开时会预填；可以补充上下文。
+
+  - type: textarea
+    id: proposed_value
+    attributes:
+      label: 建议值或处理方式
+      description: 不确定时请说明，而不是猜测。
+    validations:
+      required: true
+
+  - type: input
+    id: evidence_url
+    attributes:
+      label: 新的官方证据页面
+      placeholder: https://example.edu/faculty/mentor
+    validations:
+      required: true
+
+  - type: textarea
+    id: explanation
+    attributes:
+      label: 说明
+      description: 简要说明为什么当前信息错误或已经过时。
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 反馈确认
+      options:
+        - label: 我确认反馈基于真实官方证据，并理解反馈需要维护者审核，不会直接修改或删除数据。
+          required: true
+

@@ -1,0 +1,96 @@
+name: Process mentor contribution Issue
+
+on:
+  issues:
+    types: [opened, reopened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: mentor-data-write
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: contains(github.event.issue.labels.*.name, 'submission:mentor')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      RUN_ID: ${{ github.run_id }}
+    steps:
+      - name: Check out trusted default branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+        with:
+          version: "0.11.26"
+          enable-cache: true
+
+      - name: Install locked dependencies
+        run: uv sync --locked --dev
+
+      - name: Parse untrusted Issue as data
+        run: |
+          uv run mentor-data prepare-issue \
+            --event "$GITHUB_EVENT_PATH" \
+            --output .work/proposals
+
+      - name: Read trusted proposal metadata
+        id: metadata
+        run: uv run python scripts/proposal_metadata.py ".work/proposals/issue-${ISSUE_NUMBER}.json"
+
+      - name: Store review proposal
+        run: |
+          mkdir -p proposals
+          cp ".work/proposals/issue-${ISSUE_NUMBER}.json" "proposals/issue-${ISSUE_NUMBER}.json"
+
+      - name: Create internal review branch and Pull Request
+        id: pull_request
+        env:
+          AUTO_ELIGIBLE: ${{ steps.metadata.outputs.auto_eligible }}
+        run: |
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
+          BRANCH="submission/issue-${ISSUE_NUMBER}-${RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$BRANCH"
+          git add proposals
+          git commit -m "data: prepare mentor submission #${ISSUE_NUMBER}"
+          git push origin "$BRANCH"
+          if [ "$AUTO_ELIGIBLE" = "true" ]; then
+            PR_URL=$(gh pr create \
+              --base main \
+              --head "$BRANCH" \
+              --title "自动处理导师投稿 #${ISSUE_NUMBER}" \
+              --body "由受信任默认分支工作流生成。关联 Issue #${ISSUE_NUMBER}。")
+            gh pr merge "$PR_URL" --squash --auto --delete-branch
+          else
+            PR_URL=$(gh pr create \
+              --draft \
+              --base main \
+              --head "$BRANCH" \
+              --title "审核导师投稿 #${ISSUE_NUMBER}" \
+              --body "请核对 accepted、target_mentor_id、机构映射和 review_reasons。确认后将 Draft 标记为 Ready 并合并；关联 Issue #${ISSUE_NUMBER}。")
+          fi
+          echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Link review Pull Request from Issue
+        run: |
+          gh issue comment "$ISSUE_NUMBER" \
+            --body "自动安全校验已经完成，审核记录：${{ steps.pull_request.outputs.pr_url }}"
+
+      - name: Explain validation failure without echoing untrusted data
+        if: failure()
+        run: |
+          gh issue comment "$ISSUE_NUMBER" \
+            --body "自动校验或提案生成未通过。当前数据集未发生变化；维护者可在本次 Actions 日志中查看固定格式错误。"

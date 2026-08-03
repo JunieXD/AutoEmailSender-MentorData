@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/proposal.schema.json",
+  "title": "MentorData moderation proposal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "kind",
+    "issue",
+    "contributor",
+    "submitted",
+    "accepted",
+    "target_mentor_id",
+    "match_status",
+    "review_reasons",
+    "auto_eligible",
+    "created_at"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": {
+      "type": "string",
+      "pattern": "^proposal_issue_[1-9][0-9]*(?:_row_[1-9][0-9]*)?$"
+    },
+    "kind": { "const": "mentor_contribution" },
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "url"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+        "batch_row": { "type": "integer", "minimum": 1, "maximum": 5000 }
+      }
+    },
+    "contributor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "github_user_id",
+        "github_login_at_submission",
+        "github_user_type",
+        "submitted_at",
+        "account_created_at",
+        "account_age_days_at_submission"
+      ],
+      "properties": {
+        "github_user_id": { "type": "integer", "minimum": 1 },
+        "github_login_at_submission": { "type": "string", "minLength": 1, "maxLength": 39 },
+        "github_user_type": { "enum": ["User", "Bot"] },
+        "submitted_at": { "type": "string", "format": "date-time" },
+        "account_created_at": { "type": "string", "format": "date-time" },
+        "account_age_days_at_submission": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "submitted": { "$ref": "#/$defs/payload" },
+    "accepted": { "$ref": "#/$defs/payload" },
+    "target_mentor_id": {
+      "type": ["string", "null"],
+      "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$"
+    },
+    "match_status": {
+      "enum": ["new", "matched_email", "matched_profile", "ambiguous", "conflict"]
+    },
+    "review_reasons": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9_]{2,64}$" },
+      "uniqueItems": true
+    },
+    "auto_eligible": { "type": "boolean" },
+    "created_at": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "email",
+        "organization_id",
+        "submitted_university",
+        "submitted_school",
+        "submitted_department",
+        "title",
+        "research_directions",
+        "recent_papers",
+        "profile_url",
+        "source_url",
+        "mentor_status"
+      ],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "email": { "type": "string", "minLength": 3, "maxLength": 255 },
+        "organization_id": {
+          "type": ["string", "null"],
+          "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+        },
+        "submitted_university": { "type": ["string", "null"], "maxLength": 255 },
+        "submitted_school": { "type": ["string", "null"], "maxLength": 255 },
+        "submitted_department": { "type": ["string", "null"], "maxLength": 255 },
+        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "research_directions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 1000 },
+          "uniqueItems": true
+        },
+        "recent_papers": {
+          "type": "array",
+          "maxItems": 8,
+          "items": { "type": "string", "minLength": 1, "maxLength": 2000 },
+          "uniqueItems": true
+        },
+        "profile_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "pattern": "^https://",
+          "maxLength": 500
+        },
+        "source_url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://",
+          "maxLength": 500
+        },
+        "mentor_status": { "const": "active" }
+      }
+    }
+  }
+}

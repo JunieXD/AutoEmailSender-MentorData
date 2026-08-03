@@ -1,0 +1,91 @@
+name: Finalize merged moderation proposal
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: mentor-data-write
+  cancel-in-progress: false
+
+jobs:
+  finalize:
+    if: >-
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      (startsWith(github.event.pull_request.head.ref, 'submission/issue-') ||
+       startsWith(github.event.pull_request.head.ref, 'batch/issue-') ||
+       startsWith(github.event.pull_request.head.ref, 'report/issue-'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      HEAD_REF: ${{ github.event.pull_request.head.ref }}
+      MERGED_BY_ID: ${{ github.event.pull_request.merged_by.id }}
+      MERGED_BY_LOGIN: ${{ github.event.pull_request.merged_by.login }}
+    steps:
+      - name: Check out merged main branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
+        with:
+          version: "0.11.26"
+          enable-cache: true
+
+      - name: Install locked dependencies
+        run: uv sync --locked --dev
+
+      - name: Parse trusted internal branch name
+        id: branch
+        run: uv run python scripts/parse_workflow_branch.py
+
+      - name: Finalize accepted mentor contribution
+        if: steps.branch.outputs.kind == 'submission'
+        run: |
+          uv run mentor-data finalize-proposal \
+            "proposals/issue-${{ steps.branch.outputs.issue_number }}.json" \
+            --moderator-id "$MERGED_BY_ID"
+          git rm "proposals/issue-${{ steps.branch.outputs.issue_number }}.json"
+
+      - name: Finalize accepted batch contribution
+        if: steps.branch.outputs.kind == 'batch'
+        run: |
+          uv run mentor-data finalize-proposal-set \
+            "proposals/batch-issue-${{ steps.branch.outputs.issue_number }}" \
+            --moderator-id "$MERGED_BY_ID"
+          git rm -r "proposals/batch-issue-${{ steps.branch.outputs.issue_number }}"
+
+      - name: Finalize correction decision
+        if: steps.branch.outputs.kind == 'report'
+        run: |
+          uv run mentor-data finalize-report-proposal \
+            "reports/pending/issue-${{ steps.branch.outputs.issue_number }}.json" \
+            --moderator-id "$MERGED_BY_ID" \
+            --moderator-login "$MERGED_BY_LOGIN"
+          git rm "reports/pending/issue-${{ steps.branch.outputs.issue_number }}.json"
+
+      - name: Validate final state
+        run: |
+          uv run mentor-data validate
+          uv run pytest
+
+      - name: Commit finalized canonical data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add claims records registry reports proposals
+          git commit -m "data: finalize moderation for issue #${{ steps.branch.outputs.issue_number }}"
+          git push origin HEAD:main
+
+      - name: Notify Issue
+        run: |
+          gh issue comment "${{ steps.branch.outputs.issue_number }}" \
+            --body "维护者审核已经应用，新的社区数据集将在 Pages 工作流通过后发布。"
