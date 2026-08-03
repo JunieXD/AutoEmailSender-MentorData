@@ -52,7 +52,7 @@ dist/datasets/<version>/revocations.json
 
 ## 当前阶段
 
-数据仓库原型、自动化和本地端到端试运行已经完成。正式开放投稿前，还需要建立 GitHub 远程仓库、完成仓库设置并进行 20～50 次人工审核试运行；应用内社区页面仍在集成。详细进度见 [docs/roadmap.md](docs/roadmap.md)，远程设置见 [docs/operations.md](docs/operations.md)。
+GitHub 远程仓库、Actions、Pages 发布和 Auto Email Sender 应用集成已经完成。生产目录当前以零记录空库安全上线，下一步是保持前 20～50 次真实投稿人工审核，根据试运行结果调整规则，再决定是否启用 730 天账号年龄自动合并。详细进度见 [docs/roadmap.md](docs/roadmap.md)，应用接口见 [docs/app-integration.md](docs/app-integration.md)，远程设置见 [docs/operations.md](docs/operations.md)。
 
 ## 许可证与数据边界
 
