@@ -26,3 +26,18 @@ def test_review_script_treats_manifest_as_text_and_outputs_fixed_comment_marker(
     assert "MAX_COMMENT_BYTES" in script
     assert "validateWebUrl" in script
     assert '["http:", "https:"]' in script
+
+
+def test_review_uses_custom_selection_controls_and_bounded_row_scrolling() -> None:
+    html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+    styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+
+    assert 'element("select"' not in script
+    assert 'createElement("select")' not in script
+    assert "datalist" not in html
+    assert "datalist" not in script
+    assert "createOrganizationPicker" in script
+    assert 'setAttribute("role", "combobox")' in script
+    assert "max-height: min(21rem, 50vh)" in styles
+    assert "scrollbar-gutter: stable" in styles

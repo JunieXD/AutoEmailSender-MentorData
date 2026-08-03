@@ -34,7 +34,6 @@ const state = {
   organizationById: new Map(),
   organizationLabelById: new Map(),
   organizationIdByLabel: new Map(),
-  datalistByKey: new Map(),
   cards: [],
 };
 
@@ -59,8 +58,10 @@ const nodes = {
   decisionText: document.querySelector("#decision-text"),
   copyOpen: document.querySelector("#copy-open-pr"),
   copyStatus: document.querySelector("#copy-status"),
-  datalists: document.querySelector("#review-datalists"),
 };
+
+let floatingControlSequence = 0;
+let activeFloatingControl = null;
 
 function element(tagName, className, text) {
   const node = document.createElement(tagName);
@@ -95,6 +96,11 @@ function organizationLabel(organization) {
 }
 
 function parseOrganizationInput(input, allowedIds = null) {
+  if (input.selectedId && state.organizationById.has(input.selectedId)) {
+    if (!allowedIds || allowedIds.has(input.selectedId)) {
+      return input.selectedId;
+    }
+  }
   const raw = input.value.trim();
   const organizationId = state.organizationIdByLabel.get(raw) || raw;
   if (!state.organizationById.has(organizationId)) {
@@ -112,22 +118,6 @@ function organizationsForLevel(level, parentId) {
     (organization) =>
       allowedTypes.has(organization.type) && (organization.parent_id || null) === parentId,
   );
-}
-
-function ensureDatalist(key, organizations) {
-  if (state.datalistByKey.has(key)) {
-    return state.datalistByKey.get(key);
-  }
-  const datalist = document.createElement("datalist");
-  datalist.id = `organization-options-${state.datalistByKey.size + 1}`;
-  for (const organization of organizations) {
-    const option = document.createElement("option");
-    option.value = state.organizationLabelById.get(organization.id);
-    datalist.append(option);
-  }
-  nodes.datalists.append(datalist);
-  state.datalistByKey.set(key, datalist.id);
-  return datalist.id;
 }
 
 function findExactOrganization(level, parentId, submittedName) {
@@ -175,15 +165,437 @@ async function proposedOrganizationId(type, canonicalName, parentId) {
   return `org_auto_${(await sha256Hex(seed)).slice(0, 20)}`;
 }
 
-function createSelect(options, className) {
-  const select = element("select", className);
-  for (const [value, label] of options) {
-    const option = document.createElement("option");
-    option.value = value;
-    option.textContent = label;
-    select.append(option);
+function closeActiveFloatingControl() {
+  const current = activeFloatingControl;
+  activeFloatingControl = null;
+  if (current) {
+    current.close();
   }
-  return select;
+}
+
+function activateFloatingControl(root, popup, close) {
+  if (activeFloatingControl?.root !== root) {
+    closeActiveFloatingControl();
+  }
+  activeFloatingControl = { root, popup, close };
+}
+
+function deactivateFloatingControl(root) {
+  if (activeFloatingControl?.root === root) {
+    activeFloatingControl = null;
+  }
+}
+
+function positionFloatingMenu(root, menu, minimumWidth = 0) {
+  const margin = 8;
+  const gap = 6;
+  const rect = root.getBoundingClientRect();
+  const viewportWidth = document.documentElement.clientWidth;
+  const viewportHeight = document.documentElement.clientHeight;
+  const width = Math.min(
+    Math.max(rect.width, minimumWidth),
+    Math.max(0, viewportWidth - margin * 2),
+  );
+  const left = Math.min(Math.max(margin, rect.left), viewportWidth - margin - width);
+  const spaceBelow = viewportHeight - rect.bottom - margin - gap;
+  const spaceAbove = rect.top - margin - gap;
+  const openAbove = spaceBelow < 160 && spaceAbove > spaceBelow;
+  const availableHeight = Math.max(96, openAbove ? spaceAbove : spaceBelow);
+
+  menu.style.left = `${left}px`;
+  menu.style.width = `${width}px`;
+  menu.style.maxHeight = `${Math.min(280, availableHeight)}px`;
+  const menuHeight = Math.min(menu.scrollHeight, 280, availableHeight);
+  menu.style.top = `${openAbove ? Math.max(margin, rect.top - gap - menuHeight) : rect.bottom + gap}px`;
+}
+
+document.addEventListener("pointerdown", (event) => {
+  if (
+    activeFloatingControl &&
+    !activeFloatingControl.root.contains(event.target) &&
+    !activeFloatingControl.popup.contains(event.target)
+  ) {
+    closeActiveFloatingControl();
+  }
+});
+window.addEventListener("resize", closeActiveFloatingControl);
+window.addEventListener("scroll", closeActiveFloatingControl, true);
+
+function createSelect(options, className, ariaLabel) {
+  const root = element("div", `custom-select ${className}`);
+  const trigger = element("button", "custom-select-trigger");
+  const valueLabel = element("span", "custom-select-value");
+  const chevron = element("span", "select-chevron");
+  const menu = element("div", "floating-menu custom-select-menu");
+  const menuId = `custom-select-options-${++floatingControlSequence}`;
+  let selectedValue = options[0]?.[0] || "";
+  let highlightedIndex = 0;
+  let open = false;
+  const optionNodes = [];
+
+  trigger.type = "button";
+  trigger.setAttribute("role", "combobox");
+  trigger.setAttribute("aria-haspopup", "listbox");
+  trigger.setAttribute("aria-expanded", "false");
+  trigger.setAttribute("aria-controls", menuId);
+  trigger.setAttribute("aria-label", ariaLabel);
+  chevron.setAttribute("aria-hidden", "true");
+  trigger.append(valueLabel, chevron);
+  menu.id = menuId;
+  menu.setAttribute("role", "listbox");
+  menu.setAttribute("aria-label", ariaLabel);
+  menu.hidden = true;
+
+  function updateHighlight() {
+    for (const [index, option] of optionNodes.entries()) {
+      option.classList.toggle("is-highlighted", index === highlightedIndex);
+    }
+    const highlighted = optionNodes[highlightedIndex];
+    if (highlighted) {
+      trigger.setAttribute("aria-activedescendant", highlighted.id);
+    } else {
+      trigger.removeAttribute("aria-activedescendant");
+    }
+  }
+
+  function setValue(value, notify = false) {
+    const index = options.findIndex(([candidate]) => candidate === value);
+    if (index < 0) {
+      return;
+    }
+    const changed = selectedValue !== value;
+    selectedValue = value;
+    highlightedIndex = index;
+    root.dataset.value = value;
+    valueLabel.textContent = options[index][1];
+    for (const [optionIndex, option] of optionNodes.entries()) {
+      const selected = optionIndex === index;
+      option.classList.toggle("is-selected", selected);
+      option.setAttribute("aria-selected", String(selected));
+    }
+    updateHighlight();
+    if (notify && changed) {
+      root.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+  }
+
+  function closeMenu() {
+    open = false;
+    root.removeAttribute("data-open");
+    trigger.setAttribute("aria-expanded", "false");
+    trigger.removeAttribute("aria-activedescendant");
+    menu.hidden = true;
+    deactivateFloatingControl(root);
+  }
+
+  function openMenu() {
+    if (trigger.disabled || open) {
+      return;
+    }
+    activateFloatingControl(root, menu, closeMenu);
+    open = true;
+    root.dataset.open = "true";
+    trigger.setAttribute("aria-expanded", "true");
+    menu.hidden = false;
+    highlightedIndex = Math.max(
+      0,
+      options.findIndex(([candidate]) => candidate === selectedValue),
+    );
+    updateHighlight();
+    positionFloatingMenu(root, menu);
+  }
+
+  for (const [index, [value, label]] of options.entries()) {
+    const option = element("button", "custom-select-option", label);
+    option.id = `${menuId}-option-${index + 1}`;
+    option.type = "button";
+    option.tabIndex = -1;
+    option.setAttribute("role", "option");
+    option.addEventListener("pointerenter", () => {
+      highlightedIndex = index;
+      updateHighlight();
+    });
+    option.addEventListener("click", () => {
+      setValue(value, true);
+      closeMenu();
+      trigger.focus();
+    });
+    optionNodes.push(option);
+    menu.append(option);
+  }
+
+  trigger.addEventListener("click", () => {
+    if (open) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+  trigger.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && open) {
+      event.preventDefault();
+      closeMenu();
+      return;
+    }
+    if (["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) {
+      event.preventDefault();
+      if (!open) {
+        openMenu();
+        return;
+      }
+      if (event.key === "Home") {
+        highlightedIndex = 0;
+      } else if (event.key === "End") {
+        highlightedIndex = optionNodes.length - 1;
+      } else {
+        const direction = event.key === "ArrowDown" ? 1 : -1;
+        highlightedIndex =
+          (highlightedIndex + direction + optionNodes.length) % optionNodes.length;
+      }
+      updateHighlight();
+      optionNodes[highlightedIndex]?.scrollIntoView({ block: "nearest" });
+      return;
+    }
+    if ((event.key === "Enter" || event.key === " ") && open) {
+      event.preventDefault();
+      const selected = options[highlightedIndex];
+      if (selected) {
+        setValue(selected[0], true);
+        closeMenu();
+      }
+    }
+  });
+
+  Object.defineProperty(root, "value", {
+    get: () => selectedValue,
+    set: (value) => setValue(String(value)),
+  });
+  Object.defineProperty(root, "disabled", {
+    get: () => trigger.disabled,
+    set: (value) => {
+      trigger.disabled = Boolean(value);
+      root.classList.toggle("is-disabled", trigger.disabled);
+      if (trigger.disabled) {
+        closeMenu();
+      }
+    },
+  });
+
+  root.append(trigger);
+  document.body.append(menu);
+  setValue(selectedValue);
+  return root;
+}
+
+function createOrganizationPicker(organizations, placeholder, ariaLabel) {
+  const root = element("div", "organization-picker organization-input");
+  const input = element("input", "organization-picker-input");
+  const toggle = element("button", "organization-picker-toggle");
+  const chevron = element("span", "select-chevron");
+  const menu = element("div", "floating-menu organization-picker-menu");
+  const menuId = `organization-picker-options-${++floatingControlSequence}`;
+  let availableOrganizations = [...organizations];
+  let visibleOrganizations = [];
+  let selectedId = null;
+  let highlightedIndex = -1;
+  let open = false;
+
+  input.type = "search";
+  input.placeholder = placeholder;
+  input.autocomplete = "off";
+  input.spellcheck = false;
+  input.setAttribute("role", "combobox");
+  input.setAttribute("aria-autocomplete", "list");
+  input.setAttribute("aria-expanded", "false");
+  input.setAttribute("aria-controls", menuId);
+  input.setAttribute("aria-label", ariaLabel);
+  toggle.type = "button";
+  toggle.setAttribute("aria-label", `${ariaLabel}：展开选项`);
+  toggle.tabIndex = -1;
+  chevron.setAttribute("aria-hidden", "true");
+  toggle.append(chevron);
+  menu.id = menuId;
+  menu.setAttribute("role", "listbox");
+  menu.setAttribute("aria-label", ariaLabel);
+  menu.hidden = true;
+
+  function updateHighlight() {
+    const optionNodes = [...menu.querySelectorAll(".organization-picker-option")];
+    for (const [index, option] of optionNodes.entries()) {
+      option.classList.toggle("is-highlighted", index === highlightedIndex);
+    }
+    const highlighted = optionNodes[highlightedIndex];
+    if (highlighted) {
+      input.setAttribute("aria-activedescendant", highlighted.id);
+    } else {
+      input.removeAttribute("aria-activedescendant");
+    }
+  }
+
+  function selectOrganization(organization, notify = true) {
+    const changed = selectedId !== organization.id;
+    selectedId = organization.id;
+    input.value = state.organizationLabelById.get(organization.id) || organization.canonical_name;
+    if (notify && changed) {
+      root.dispatchEvent(new Event("change", { bubbles: true }));
+    }
+  }
+
+  function renderOptions() {
+    const query = input.value.trim().toLocaleLowerCase();
+    visibleOrganizations = availableOrganizations
+      .filter((organization) => {
+        if (!query || selectedId === organization.id) {
+          return true;
+        }
+        const searchText = [
+          organizationLabel(organization),
+          ...(organization.aliases || []),
+        ]
+          .join(" ")
+          .toLocaleLowerCase();
+        return searchText.includes(query);
+      })
+      .slice(0, 80);
+    menu.replaceChildren();
+    highlightedIndex = visibleOrganizations.length ? 0 : -1;
+    if (!visibleOrganizations.length) {
+      menu.append(element("div", "picker-empty", "没有匹配的现有机构"));
+      updateHighlight();
+      return;
+    }
+    for (const [index, organization] of visibleOrganizations.entries()) {
+      const option = element("button", "organization-picker-option");
+      const primary = element("span", "organization-option-name", organization.canonical_name);
+      const lineage = (organization.lineage_names || [organization.canonical_name]).join(" / ");
+      const secondary = element(
+        "span",
+        "organization-option-path",
+        `${lineage} · ${organization.id}`,
+      );
+      option.id = `${menuId}-option-${index + 1}`;
+      option.type = "button";
+      option.tabIndex = -1;
+      option.setAttribute("role", "option");
+      option.setAttribute("aria-selected", String(selectedId === organization.id));
+      option.append(primary, secondary);
+      option.addEventListener("pointerenter", () => {
+        highlightedIndex = index;
+        updateHighlight();
+      });
+      option.addEventListener("click", () => {
+        selectOrganization(organization);
+        closeMenu();
+        input.focus();
+      });
+      menu.append(option);
+    }
+    updateHighlight();
+  }
+
+  function closeMenu() {
+    open = false;
+    root.removeAttribute("data-open");
+    input.setAttribute("aria-expanded", "false");
+    input.removeAttribute("aria-activedescendant");
+    menu.hidden = true;
+    deactivateFloatingControl(root);
+  }
+
+  function openMenu() {
+    if (open) {
+      return;
+    }
+    activateFloatingControl(root, menu, closeMenu);
+    open = true;
+    root.dataset.open = "true";
+    input.setAttribute("aria-expanded", "true");
+    renderOptions();
+    menu.hidden = false;
+    positionFloatingMenu(root, menu, 280);
+  }
+
+  input.addEventListener("focus", openMenu);
+  input.addEventListener("click", openMenu);
+  input.addEventListener("input", () => {
+    selectedId = null;
+    if (!open) {
+      openMenu();
+    } else {
+      renderOptions();
+      positionFloatingMenu(root, menu, 280);
+    }
+    root.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  input.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && open) {
+      event.preventDefault();
+      closeMenu();
+      return;
+    }
+    if (event.key === "Tab") {
+      closeMenu();
+      return;
+    }
+    if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+      event.preventDefault();
+      if (!open) {
+        openMenu();
+        return;
+      }
+      if (visibleOrganizations.length) {
+        const direction = event.key === "ArrowDown" ? 1 : -1;
+        highlightedIndex =
+          (highlightedIndex + direction + visibleOrganizations.length) %
+          visibleOrganizations.length;
+        updateHighlight();
+        menu
+          .querySelectorAll(".organization-picker-option")
+          [highlightedIndex]?.scrollIntoView({ block: "nearest" });
+      }
+      return;
+    }
+    if (event.key === "Enter" && open && highlightedIndex >= 0) {
+      event.preventDefault();
+      selectOrganization(visibleOrganizations[highlightedIndex]);
+      closeMenu();
+    }
+  });
+  toggle.addEventListener("click", () => {
+    const wasOpen = open;
+    input.focus();
+    if (wasOpen) {
+      closeMenu();
+    } else if (!open) {
+      openMenu();
+    }
+  });
+
+  Object.defineProperty(root, "value", {
+    get: () => input.value,
+    set: (value) => {
+      input.value = String(value || "");
+      selectedId = state.organizationIdByLabel.get(input.value) || null;
+    },
+  });
+  Object.defineProperty(root, "selectedId", {
+    get: () => selectedId,
+  });
+  root.setOptions = (nextOrganizations) => {
+    availableOrganizations = [...nextOrganizations];
+    if (selectedId && !availableOrganizations.some(({ id }) => id === selectedId)) {
+      selectedId = null;
+      input.value = "";
+    }
+    if (open) {
+      renderOptions();
+      positionFloatingMenu(root, menu, 280);
+    }
+  };
+
+  root.append(input, toggle);
+  document.body.append(menu);
+  return root;
 }
 
 function createInput(type, placeholder, className) {
@@ -243,20 +655,26 @@ function createLevelEditor(group, level, suggestedId) {
   if (level !== "university") {
     actionOptions.push(["skip", "归到上级（不建此层）"]);
   }
-  const action = createSelect(actionOptions, "level-action");
-  action.setAttribute("aria-label", `${LEVEL_LABELS[level]}处理方式`);
+  const action = createSelect(
+    actionOptions,
+    "level-action",
+    `${LEVEL_LABELS[level]}处理方式`,
+  );
 
   const existingPanel = element("div", "editor-panel existing-panel");
-  const existingInput = createInput("search", "输入名称并从建议中选择", "organization-input");
-  existingInput.setAttribute("aria-label", `选择现有${LEVEL_LABELS[level]}`);
+  const existingInput = createOrganizationPicker(
+    [],
+    "搜索并选择现有机构",
+    `选择现有${LEVEL_LABELS[level]}`,
+  );
   existingPanel.append(existingInput);
 
   const createPanel = element("div", "editor-panel create-panel");
   const organizationType = createSelect(
     LEVEL_TYPES[level].map((value) => [value, TYPE_LABELS[value]]),
     "organization-type",
+    `${LEVEL_LABELS[level]}类型`,
   );
-  organizationType.setAttribute("aria-label", `${LEVEL_LABELS[level]}类型`);
   const canonicalName = createInput("text", "正式名称", "canonical-name");
   canonicalName.setAttribute("aria-label", `${LEVEL_LABELS[level]}正式名称`);
   canonicalName.maxLength = 255;
@@ -327,11 +745,13 @@ function createRowEditor(row) {
       ["reject", "拒绝此行"],
     ],
     "row-action",
+    `${row.name}的逐行处理方式`,
   );
-  action.setAttribute("aria-label", `${row.name}的逐行处理方式`);
-  const organizationInput = createInput("search", "选择其他机构", "organization-input");
-  organizationInput.setAttribute("aria-label", `${row.name}改映射到的机构`);
-  organizationInput.setAttribute("list", ensureDatalist("all-organizations", state.manifest.organizations));
+  const organizationInput = createOrganizationPicker(
+    state.manifest.organizations,
+    "搜索并选择其他机构",
+    `${row.name}改映射到的机构`,
+  );
   const reason = createInput("text", "拒绝原因", "row-reason");
   reason.setAttribute("aria-label", `拒绝${row.name}的原因`);
   reason.maxLength = 500;
@@ -366,8 +786,7 @@ async function updateCard(card) {
 
     const available = organizationsForLevel(editor.level, parentId);
     editor.allowedExistingIds = new Set(available.map((organization) => organization.id));
-    const datalistKey = `${editor.level}:${parentId || "root"}`;
-    editor.existingInput.setAttribute("list", ensureDatalist(datalistKey, available));
+    editor.existingInput.setOptions(available);
     const selectedId = parseOrganizationInput(editor.existingInput);
     if (selectedId && !editor.allowedExistingIds.has(selectedId)) {
       editor.existingInput.value = "";
@@ -427,8 +846,8 @@ function createGroupCard(group, index) {
       ["reject", "拒绝整个组合"],
     ],
     "group-action",
+    `${pathText(group)}的分组处理方式`,
   );
-  groupAction.setAttribute("aria-label", `${pathText(group)}的分组处理方式`);
   const groupReason = createInput("text", "拒绝原因", "group-reason");
   groupReason.setAttribute("aria-label", `拒绝${pathText(group)}的原因`);
   groupReason.maxLength = 500;
