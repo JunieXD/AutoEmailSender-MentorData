@@ -41,7 +41,7 @@
     "accepted": { "type": "object" },
     "evidence_urls": {
       "type": "array",
-      "items": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+      "items": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
       "uniqueItems": true
     },
     "moderator": { "$ref": "#/$defs/githubActor" },
@@ -60,4 +60,3 @@
     }
   }
 }
-

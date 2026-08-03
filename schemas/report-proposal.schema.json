@@ -62,7 +62,7 @@
     "evidence_urls": {
       "type": "array",
       "minItems": 1,
-      "items": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+      "items": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
       "uniqueItems": true
     },
     "decision": {
@@ -77,4 +77,3 @@
     "created_at": { "type": "string", "format": "date-time" }
   }
 }
-

@@ -56,7 +56,7 @@
   "$defs": {
     "organizationId": { "type": "string", "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$" },
     "proposalId": { "type": "string", "pattern": "^proposal_issue_[1-9][0-9]*_row_[1-9][0-9]*$" },
-    "httpsUrl": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+    "webUrl": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
     "levelDecision": {
       "type": "object",
       "additionalProperties": false,
@@ -67,7 +67,7 @@
         "organization_id": { "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }] },
         "organization_type": { "type": ["string", "null"], "enum": ["university", "school", "institute", "department", "center", "laboratory", null] },
         "canonical_name": { "type": ["string", "null"], "maxLength": 255 },
-        "official_url": { "oneOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }] },
+        "official_url": { "oneOf": [{ "$ref": "#/$defs/webUrl" }, { "type": "null" }] },
         "approved_domains": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 253 }, "uniqueItems": true },
         "save_submitted_as_alias": { "type": "boolean" }
       }

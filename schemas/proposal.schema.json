@@ -109,19 +109,19 @@
         "recent_papers": {
           "type": "array",
           "maxItems": 8,
-          "items": { "type": "string", "minLength": 1, "maxLength": 2000 },
+          "items": { "type": "string", "minLength": 1, "maxLength": 5000 },
           "uniqueItems": true
         },
         "profile_url": {
           "type": ["string", "null"],
           "format": "uri",
-          "pattern": "^https://",
+          "pattern": "^https?://",
           "maxLength": 500
         },
         "source_url": {
           "type": "string",
           "format": "uri",
-          "pattern": "^https://",
+          "pattern": "^https?://",
           "maxLength": 500
         },
         "mentor_status": { "const": "active" }

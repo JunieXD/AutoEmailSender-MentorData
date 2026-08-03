@@ -13,7 +13,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 from .errors import SubmissionError
 from .github_events import GitHubActor, GitHubIssueEvent, parse_issue_form
 from .io_utils import load_json, write_json_atomic
-from .normalization import normalize_text, normalized_https_url
+from .normalization import normalize_text, normalized_web_url
 from .repository import RepositoryData, load_repository
 from .resolutions import apply_resolution
 
@@ -126,9 +126,9 @@ def create_report_proposal(
     mentor = next((item for item in data.mentors if item["id"] == mentor_id), None)
     if mentor is None:
         raise SubmissionError("反馈引用的社区导师 ID 不存在")
-    evidence_url = normalized_https_url(sections["新的官方证据页面"])
+    evidence_url = normalized_web_url(sections["新的官方证据页面"])
     if evidence_url is None:
-        raise SubmissionError("反馈证据必须是安全 HTTPS URL")
+        raise SubmissionError("反馈证据必须是安全的 HTTP 或 HTTPS URL")
     relevant_org_ids = {item["organization_id"] for item in mentor.get("affiliations", [])}
     review_reasons = ["corrections_require_manual_review"]
     if not any(data.registry.url_is_approved(evidence_url, org_id) for org_id in relevant_org_ids):

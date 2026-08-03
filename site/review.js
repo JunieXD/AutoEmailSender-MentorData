@@ -261,7 +261,7 @@ function createLevelEditor(group, level, suggestedId) {
   canonicalName.setAttribute("aria-label", `${LEVEL_LABELS[level]}正式名称`);
   canonicalName.maxLength = 255;
   canonicalName.value = submittedName;
-  const officialUrl = createInput("url", "https://… 官方网站", "official-url");
+  const officialUrl = createInput("url", "http:// 或 https:// 官方网站", "official-url");
   officialUrl.setAttribute("aria-label", `${LEVEL_LABELS[level]}官方网站`);
   officialUrl.maxLength = 500;
   const approvedDomains = createInput(
@@ -479,20 +479,24 @@ function createGroupCard(group, index) {
   return card;
 }
 
-function validateHttpsUrl(value, label) {
+function validateWebUrl(value, label) {
   let parsed;
   try {
     parsed = new URL(value);
   } catch {
-    throw new Error(`${label}必须是完整的 HTTPS URL`);
+    throw new Error(`${label}必须是完整的 HTTP 或 HTTPS URL`);
   }
   if (
-    parsed.protocol !== "https:" ||
+    !["http:", "https:"].includes(parsed.protocol) ||
     parsed.username ||
     parsed.password ||
-    (parsed.port && parsed.port !== "443")
+    (parsed.port &&
+      !(
+        (parsed.protocol === "http:" && parsed.port === "80") ||
+        (parsed.protocol === "https:" && parsed.port === "443")
+      ))
   ) {
-    throw new Error(`${label}必须是安全的 HTTPS URL`);
+    throw new Error(`${label}必须是安全的 HTTP 或 HTTPS URL`);
   }
   return value;
 }
@@ -573,7 +577,7 @@ async function collectLevels(card) {
     if (!canonicalName) {
       throw new Error(`${prefix}需要填写正式名称`);
     }
-    const officialUrl = validateHttpsUrl(editor.officialUrl.value.trim(), `${prefix}官网`);
+    const officialUrl = validateWebUrl(editor.officialUrl.value.trim(), `${prefix}官网`);
     const approvedDomains = parseDomains(editor.approvedDomains.value);
     if (editor.level === "university" && approvedDomains.length === 0) {
       throw new Error(`${prefix}至少需要一个批准域名`);

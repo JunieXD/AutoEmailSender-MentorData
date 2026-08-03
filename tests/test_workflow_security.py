@@ -78,5 +78,13 @@ def test_organization_review_runs_trusted_code_and_never_embeds_decision_in_shel
     assert "github.event.comment.body" not in "\n".join(
         line for line in text.splitlines() if line.lstrip().startswith("run:")
     )
-    assert "--expected-repository \"$GITHUB_REPOSITORY\"" in text
-    assert "git push origin \"HEAD:${HEAD_REF}\"" in text
+    assert '--expected-repository "$GITHUB_REPOSITORY"' in text
+    assert 'git push origin "HEAD:${HEAD_REF}"' in text
+    assert 'gh issue close "$ISSUE_NUMBER"' in text
+
+
+def test_finalization_closes_the_source_issue_after_success() -> None:
+    path = PROJECT_ROOT / ".github" / "workflows" / "finalize-moderation.yml"
+    text = path.read_text(encoding="utf-8")
+    assert 'gh issue close "${{ steps.branch.outputs.issue_number }}"' in text
+    assert "--reason completed" in text

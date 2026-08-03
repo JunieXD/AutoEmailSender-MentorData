@@ -36,7 +36,7 @@
     },
     "status_reason": { "type": ["string", "null"], "maxLength": 1000 },
     "status_source_url": {
-      "oneOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }]
+      "oneOf": [{ "$ref": "#/$defs/webUrl" }, { "type": "null" }]
     },
     "status_observed_at": { "type": ["string", "null"], "format": "date-time" },
     "names": {
@@ -78,7 +78,7 @@
     "recent_papers": {
       "type": "array",
       "maxItems": 8,
-      "items": { "type": "string", "minLength": 1, "maxLength": 2000 },
+      "items": { "type": "string", "minLength": 1, "maxLength": 5000 },
       "uniqueItems": true
     },
     "claim_ids": {
@@ -132,10 +132,10 @@
         { "$ref": "#/$defs/resolutionId" }
       ]
     },
-    "httpsUrl": {
+    "webUrl": {
       "type": "string",
       "format": "uri",
-      "pattern": "^https://",
+      "pattern": "^https?://",
       "maxLength": 500
     },
     "name": {
@@ -181,7 +181,7 @@
         "affiliation_id": {
           "oneOf": [{ "$ref": "#/$defs/affiliationId" }, { "type": "null" }]
         },
-        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "source_url": { "$ref": "#/$defs/webUrl" },
         "observed_at": { "type": "string", "format": "date-time" },
         "claim_ids": {
           "type": "array",
@@ -218,7 +218,7 @@
         "title": { "type": ["string", "null"], "maxLength": 255 },
         "started_at": { "type": ["string", "null"], "format": "date" },
         "ended_at": { "type": ["string", "null"], "format": "date" },
-        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "source_url": { "$ref": "#/$defs/webUrl" },
         "observed_at": { "type": "string", "format": "date-time" },
         "claim_ids": {
           "type": "array",
@@ -237,7 +237,7 @@
       "additionalProperties": false,
       "required": ["url", "status", "affiliation_id", "observed_at", "claim_ids"],
       "properties": {
-        "url": { "$ref": "#/$defs/httpsUrl" },
+        "url": { "$ref": "#/$defs/webUrl" },
         "status": { "enum": ["current", "former", "unavailable"] },
         "affiliation_id": {
           "oneOf": [{ "$ref": "#/$defs/affiliationId" }, { "type": "null" }]

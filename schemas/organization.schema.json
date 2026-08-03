@@ -17,10 +17,10 @@
       "type": "string",
       "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
     },
-    "httpsUrl": {
+    "webUrl": {
       "type": "string",
       "format": "uri",
-      "pattern": "^https://",
+      "pattern": "^https?://",
       "maxLength": 500
     },
     "organization": {
@@ -66,7 +66,7 @@
         },
         "official_urls": {
           "type": "array",
-          "items": { "$ref": "#/$defs/httpsUrl" },
+          "items": { "$ref": "#/$defs/webUrl" },
           "uniqueItems": true,
           "minItems": 1
         },
@@ -92,4 +92,3 @@
     }
   }
 }
-

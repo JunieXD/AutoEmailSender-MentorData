@@ -91,14 +91,14 @@ body:
     id: profile_url
     attributes:
       label: 官方个人主页
-      placeholder: https://example.edu/faculty/mentor
+      placeholder: https://example.edu/faculty/mentor（仅支持 HTTP 时可填写 http://）
 
   - type: input
     id: source_url
     attributes:
       label: 官方证据页面
       description: 必须是支持本次信息的具体高校官方页面。
-      placeholder: https://example.edu/faculty/mentor
+      placeholder: https://example.edu/faculty/mentor（仅支持 HTTP 时可填写 http://）
     validations:
       required: true
 

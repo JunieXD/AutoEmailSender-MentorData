@@ -13,7 +13,12 @@ from mentor_data.repository import load_repository
 from .helpers import build_test_repository
 
 
-def _issue_body(*, name: str = "示例导师", email: str = "mentor@example.edu") -> str:
+def _issue_body(
+    *,
+    name: str = "示例导师",
+    email: str = "mentor@example.edu",
+    recent_papers: str = "A Safe Example Paper",
+) -> str:
     sections = {
         "导师姓名": name,
         "公开工作邮箱": email,
@@ -23,7 +28,7 @@ def _issue_body(*, name: str = "示例导师", email: str = "mentor@example.edu"
         "系所或中心": "_No response_",
         "职称": "教授",
         "研究方向": "机器学习",
-        "近期或代表论文": "A Safe Example Paper",
+        "近期或代表论文": recent_papers,
         "官方个人主页": "https://cs.example.edu/faculty/mentor",
         "官方证据页面": "https://cs.example.edu/faculty/mentor",
         "投稿确认": "- [x] 我确认提交的是公开职业信息",
@@ -93,6 +98,50 @@ def test_new_submission_creates_reviewable_proposal_and_finalizes(tmp_path) -> N
     data = load_repository(root)
     assert len(data.mentors) == 1
     assert data.mentors[0]["contacts"][0]["normalized_value"] == "mentor@example.edu"
+
+
+def test_http_official_urls_are_accepted_and_preserved(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    event_path = _write_event(
+        tmp_path,
+        issue_number=14,
+        user_id=5005,
+        login="http-source-user",
+        body=_issue_body().replace("https://cs.example.edu", "http://cs.example.edu"),
+    )
+    result = create_mentor_proposal(
+        root,
+        load_issue_event(event_path, max_body_bytes=200_000),
+        _actor(5005, "http-source-user"),
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert result.proposal["submitted"]["profile_url"].startswith("http://")
+    assert result.proposal["submitted"]["source_url"].startswith("http://")
+    finalize_proposal(root, result.path, moderator_github_user_id=999)
+    mentor = load_repository(root).mentors[0]
+    assert mentor["profiles"][0]["url"].startswith("http://")
+    assert mentor["contacts"][0]["source_url"].startswith("http://")
+
+
+def test_realistic_long_publication_summary_is_accepted(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    event_path = _write_event(
+        tmp_path,
+        issue_number=15,
+        user_id=6006,
+        login="long-publication-user",
+        body=_issue_body(recent_papers="P" * 3_405),
+    )
+
+    result = create_mentor_proposal(
+        root,
+        load_issue_event(event_path, max_body_bytes=200_000),
+        _actor(6006, "long-publication-user"),
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert len(result.proposal["submitted"]["recent_papers"][0]) == 3_405
 
 
 def test_independent_duplicate_submission_adds_provenance_not_a_second_mentor(tmp_path) -> None:

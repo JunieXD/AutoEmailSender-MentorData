@@ -103,26 +103,26 @@ def create_batch_proposals(
             continue
         try:
             submitted, review_reasons = candidate_from_package_record(data, record)
+            proposal = build_mentor_proposal(
+                data,
+                event,
+                actor,
+                submitted=submitted,
+                review_reasons=review_reasons,
+                proposal_id=f"proposal_issue_{event.number}_row_{package_row.batch_row}",
+                batch_row=package_row.batch_row,
+            )
         except SubmissionError as error:
             invalid_rows.append(
                 {
                     "batch_row": package_row.batch_row,
                     "sheet_row": package_row.sheet_row,
                     "reason_code": "invalid_row_data",
-                    "message": str(error),
+                    "message": str(error).splitlines()[0][:500],
                     "submitted": record,
                 }
             )
             continue
-        proposal = build_mentor_proposal(
-            data,
-            event,
-            actor,
-            submitted=submitted,
-            review_reasons=review_reasons,
-            proposal_id=f"proposal_issue_{event.number}_row_{package_row.batch_row}",
-            batch_row=package_row.batch_row,
-        )
         path = output_directory / f"issue-{event.number}-row-{package_row.batch_row:04d}.json"
         write_json_atomic(path, proposal)
         proposals.append(proposal)

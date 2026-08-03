@@ -18,7 +18,7 @@ from .normalization import (
     hostname_for_url,
     normalize_organization_key,
     normalize_text,
-    normalized_https_url,
+    normalized_web_url,
 )
 from .organizations import OrganizationRegistry
 from .proposals import check_proposal_set
@@ -106,10 +106,7 @@ def _registry_digest(document: dict[str, Any]) -> str:
 
 
 def _group_id(submitted: dict[str, str | None]) -> str:
-    seed = "\n".join(
-        normalize_organization_key(submitted.get(level))
-        for level in LEVELS
-    )
+    seed = "\n".join(normalize_organization_key(submitted.get(level)) for level in LEVELS)
     return f"org_group_{hashlib.sha256(seed.encode('utf-8')).hexdigest()[:16]}"
 
 
@@ -223,9 +220,12 @@ def create_organization_review_manifest(
 def _parse_review_comment_payload(body: str) -> dict[str, Any]:
     if len(body.encode("utf-8")) > 200_000:
         raise SubmissionError("机构审核评论过大")
-    if not body.startswith(REVIEW_COMMENT_MARKER):
+    normalized_body = body.replace("\r\n", "\n")
+    if "\r" in normalized_body:
+        raise SubmissionError("机构审核评论包含不支持的换行符")
+    if not normalized_body.startswith(REVIEW_COMMENT_MARKER):
         raise SubmissionError("评论不是机构审核指令")
-    remainder = body[len(REVIEW_COMMENT_MARKER) :].strip()
+    remainder = normalized_body[len(REVIEW_COMMENT_MARKER) :].strip()
     if not remainder.startswith("```json\n") or not remainder.endswith("```"):
         raise SubmissionError("机构审核评论必须包含唯一的 JSON 代码块")
     payload = remainder[len("```json\n") : -len("```")].strip()
@@ -415,9 +415,9 @@ def _resolve_levels(
         canonical_name = normalize_text(item.get("canonical_name"))
         if not canonical_name:
             raise SubmissionError("新机构必须填写正式名称")
-        official_url = normalized_https_url(item.get("official_url"))
+        official_url = normalized_web_url(item.get("official_url"))
         if official_url is None:
-            raise SubmissionError("新机构必须填写安全 HTTPS 官网")
+            raise SubmissionError("新机构必须填写安全的 HTTP 或 HTTPS 官网")
         approved_domains = sorted(
             {_normalize_domain(value) for value in item.get("approved_domains", [])}
         )
@@ -680,9 +680,7 @@ def apply_organization_review(
         if target_id not in registry.by_id:
             raise SubmissionError(f"审核后的机构不存在：{target_id}")
         if not registry.url_is_approved(proposal["accepted"]["source_url"], target_id):
-            raise SubmissionError(
-                f"提案 {proposal_id} 的官方来源不属于所选机构批准域名"
-            )
+            raise SubmissionError(f"提案 {proposal_id} 的官方来源不属于所选机构批准域名")
 
     candidate_data = _candidate_repository_data(
         root,

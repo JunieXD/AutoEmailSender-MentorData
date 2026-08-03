@@ -5,8 +5,12 @@ import unicodedata
 from html import unescape
 from urllib.parse import urlsplit
 
-EMAIL_AT_PATTERN = re.compile(r"(?i)(?:\[|\(|（)?\s*(?:at|＠|艾特)\s*(?:\]|\)|）)?")
-EMAIL_DOT_PATTERN = re.compile(r"(?i)(?:\[|\(|（)?\s*(?:dot)\s*(?:\]|\)|）)?")
+EMAIL_AT_PATTERN = re.compile(
+    r"(?i)(?:\[\s*at\s*\]|\(\s*at\s*\)|（\s*at\s*）|(?<=\s)at(?=\s)|艾特)"
+)
+EMAIL_DOT_PATTERN = re.compile(
+    r"(?i)(?:\[\s*dot\s*\]|\(\s*dot\s*\)|（\s*dot\s*）|(?<=\s)dot(?=\s))"
+)
 EMAIL_CHINESE_DOT_PATTERN = re.compile(r"(?<=[A-Za-z0-9])\s*[点點]\s*(?=[A-Za-z0-9])")
 EMAIL_INVISIBLE_PATTERN = re.compile(r"[\u200b-\u200f\u2060\ufeff]")
 EMAIL_LOCAL_PATTERN = re.compile(r"^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+$")
@@ -102,15 +106,35 @@ def normalized_https_url(value: str | None) -> str | None:
         return None
     try:
         parsed = urlsplit(normalized)
+        port = parsed.port
     except ValueError:
         return None
     if parsed.scheme != "https" or not parsed.hostname:
         return None
     if parsed.username is not None or parsed.password is not None:
         return None
-    if parsed.port not in (None, 443):
+    if port not in (None, 443):
         return None
-    return normalized
+    return parsed.geturl()
+
+
+def normalized_web_url(value: str | None) -> str | None:
+    normalized = normalize_text(value)
+    if not normalized or len(normalized) > 500:
+        return None
+    try:
+        parsed = urlsplit(normalized)
+        port = parsed.port
+    except ValueError:
+        return None
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        return None
+    if parsed.username is not None or parsed.password is not None:
+        return None
+    expected_port = 80 if parsed.scheme == "http" else 443
+    if port not in (None, expected_port):
+        return None
+    return parsed.geturl()
 
 
 def hostname_for_url(value: str) -> str:

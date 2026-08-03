@@ -14,7 +14,7 @@ from .normalization import (
     is_valid_email,
     normalize_email,
     normalize_name_key,
-    normalized_https_url,
+    normalized_web_url,
 )
 from .repository import load_repository
 
@@ -52,10 +52,10 @@ def _apply_lifecycle(
     status = accepted.get("status")
     if status not in SUPPORTED_STATUS_VALUES:
         raise SubmissionError("Resolution accepted.status 无效")
-    source_url = normalized_https_url(accepted.get("status_source_url"))
+    source_url = normalized_web_url(accepted.get("status_source_url"))
     observed_at = accepted.get("status_observed_at")
     if source_url is None or not isinstance(observed_at, str):
-        raise SubmissionError("生命周期修改需要 HTTPS 证据和 status_observed_at")
+        raise SubmissionError("生命周期修改需要 HTTP(S) 证据和 status_observed_at")
 
     mentor["status"] = status
     mentor["status_reason"] = accepted.get("status_reason") or reason
@@ -130,7 +130,7 @@ def _replace_contacts(
             raise SubmissionError(f"纠错后的邮箱格式无效：{spec['value']}")
         if is_generic_email(email) and spec["status"] not in {"generic", "shared"}:
             raise SubmissionError("通用邮箱只能标记为 generic/shared")
-        source_url = normalized_https_url(spec["source_url"])
+        source_url = normalized_web_url(spec["source_url"])
         if source_url is None:
             raise SubmissionError("纠错后的邮箱来源 URL 无效")
         core = {
@@ -160,7 +160,7 @@ def _replace_affiliations(
     existing_by_id = {item["id"]: item for item in mentor.get("affiliations", [])}
     affiliations: list[dict[str, Any]] = []
     for spec in specs:
-        source_url = normalized_https_url(spec["source_url"])
+        source_url = normalized_web_url(spec["source_url"])
         if source_url is None:
             raise SubmissionError("纠错后的任职来源 URL 无效")
         core = {**spec, "source_url": source_url}
@@ -181,7 +181,7 @@ def _replace_profiles(
     existing_by_url = {item["url"]: item for item in mentor.get("profiles", [])}
     profiles: list[dict[str, Any]] = []
     for spec in specs:
-        url = normalized_https_url(spec["url"])
+        url = normalized_web_url(spec["url"])
         if url is None:
             raise SubmissionError("纠错后的主页 URL 无效")
         core = {**spec, "url": url}

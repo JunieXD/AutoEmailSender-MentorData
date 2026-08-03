@@ -94,7 +94,9 @@ jobs:
       - name: Publish finalized canonical change
         run: gh workflow run pages.yml --ref main
 
-      - name: Notify Issue
+      - name: Notify and close Issue
         run: |
           gh issue comment "${{ steps.branch.outputs.issue_number }}" \
             --body "维护者审核已经应用，新的社区数据集将在 Pages 工作流通过后发布。"
+          gh issue close "${{ steps.branch.outputs.issue_number }}" \
+            --reason completed

@@ -51,6 +51,12 @@
       "pattern": "^https://",
       "maxLength": 500
     },
+    "webUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://",
+      "maxLength": 500
+    },
     "contributor": {
       "type": "object",
       "additionalProperties": false,
@@ -100,13 +106,13 @@
         "recent_papers": {
           "type": "array",
           "maxItems": 8,
-          "items": { "type": "string", "minLength": 1, "maxLength": 2000 },
+          "items": { "type": "string", "minLength": 1, "maxLength": 5000 },
           "uniqueItems": true
         },
         "profile_url": {
-          "oneOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }]
+          "oneOf": [{ "$ref": "#/$defs/webUrl" }, { "type": "null" }]
         },
-        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "source_url": { "$ref": "#/$defs/webUrl" },
         "mentor_status": {
           "enum": [
             "active",
@@ -131,7 +137,7 @@
           "items": { "type": "string", "minLength": 1, "maxLength": 64 },
           "uniqueItems": true
         },
-        "source_url": { "$ref": "#/$defs/httpsUrl" },
+        "source_url": { "$ref": "#/$defs/webUrl" },
         "observed_at": { "type": "string", "format": "date-time" }
       }
     },
@@ -154,4 +160,3 @@
     }
   }
 }
-

@@ -179,11 +179,22 @@ def _decision(number: int, manifest_path: Path, decisions: list[dict]):
     }
 
 
-def _review_context(root: Path, tmp_path: Path, decision: dict, *, association: str = "OWNER"):
+def _review_context(
+    root: Path,
+    tmp_path: Path,
+    decision: dict,
+    *,
+    association: str = "OWNER",
+    line_ending: str = "\n",
+):
     comment_path = tmp_path / "comment.json"
-    comment_body = (
-        f"{REVIEW_COMMENT_MARKER}\n```json\n"
-        f"{json.dumps(decision, ensure_ascii=False)}\n```"
+    comment_body = line_ending.join(
+        [
+            REVIEW_COMMENT_MARKER,
+            "```json",
+            json.dumps(decision, ensure_ascii=False),
+            "```",
+        ]
     )
     comment_path.write_text(
         json.dumps(
@@ -336,9 +347,7 @@ def test_review_can_create_new_university_and_school_chain(tmp_path: Path) -> No
     assert applied.created_organizations == 2
     registry = load_yaml(root / "registry" / "organizations.yml")
     university = next(
-        item
-        for item in registry["organizations"]
-        if item["canonical_name"] == "新示例大学"
+        item for item in registry["organizations"] if item["canonical_name"] == "新示例大学"
     )
     school = next(item for item in registry["organizations"] if item["canonical_name"] == "工学院")
     assert university["aliases"] == ["新大"]
@@ -405,6 +414,32 @@ def test_review_comment_requires_trusted_repository_association(tmp_path: Path) 
 
     with pytest.raises(SubmissionError, match="受信任协作者"):
         _review_context(root, tmp_path, decision, association="NONE")
+
+
+def test_review_comment_accepts_github_crlf_line_endings(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [_row("甲老师", "a@example.edu", "示例大学", "计算机学院", "https://cs.example.edu/a")],
+    )
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": manifest["groups"][0]["id"],
+                "action": "reject",
+                "reason": "测试",
+                "levels": [],
+                "row_overrides": [],
+            }
+        ],
+    )
+
+    comment, _ = _review_context(root, tmp_path, decision, line_ending="\r\n")
+
+    assert comment.decision == decision
 
 
 def test_review_rejects_stale_manifest_digest(tmp_path: Path) -> None:

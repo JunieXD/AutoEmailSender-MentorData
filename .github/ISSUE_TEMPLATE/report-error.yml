@@ -56,7 +56,7 @@ body:
     id: evidence_url
     attributes:
       label: 新的官方证据页面
-      placeholder: https://example.edu/faculty/mentor
+      placeholder: https://example.edu/faculty/mentor（仅支持 HTTP 时可填写 http://）
     validations:
       required: true
 

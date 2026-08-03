@@ -24,3 +24,5 @@ def test_review_script_treats_manifest_as_text_and_outputs_fixed_comment_marker(
     assert "crypto.subtle.digest" in script
     assert "textContent" in script
     assert "MAX_COMMENT_BYTES" in script
+    assert "validateWebUrl" in script
+    assert '["http:", "https:"]' in script

@@ -115,11 +115,21 @@ jobs:
           PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
         run: gh pr ready "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
 
-      - name: Close an entirely rejected or invalid batch
+      - name: Close an entirely rejected or invalid batch and its Issue
         if: steps.result.outputs.remaining_proposals == '0'
         env:
           PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
-        run: gh pr close "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
+          ISSUE_NUMBER: ${{ steps.pull.outputs.issue_number }}
+        run: |
+          case "$PR_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          gh pr close "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
+          gh issue comment "$ISSUE_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --body "本批没有可继续落库的有效提案，审核记录已保存，投稿已自动关闭。"
+          gh issue close "$ISSUE_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --reason "not planned"
 
       - name: Publish bounded review summary
         env:

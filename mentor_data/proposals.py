@@ -21,7 +21,7 @@ from .normalization import (
     normalize_email,
     normalize_name_key,
     normalize_text,
-    normalized_https_url,
+    normalized_web_url,
 )
 from .repository import RepositoryData, load_repository
 
@@ -121,8 +121,8 @@ def _candidate_from_sections(
 ) -> tuple[dict[str, Any], list[str]]:
     name = normalize_text(sections["导师姓名"])
     email = normalize_email(sections["公开工作邮箱"])
-    source_url = normalized_https_url(sections["官方证据页面"])
-    profile_url = normalized_https_url(sections["官方个人主页"])
+    source_url = normalized_web_url(sections["官方证据页面"])
+    profile_url = normalized_web_url(sections["官方个人主页"])
     if not name:
         raise SubmissionError("导师姓名不能为空")
     if not is_valid_email(email):
@@ -130,9 +130,9 @@ def _candidate_from_sections(
     if is_generic_email(email):
         raise SubmissionError("通用邮箱不能作为导师主邮箱投稿")
     if source_url is None:
-        raise SubmissionError("官方证据页面必须是安全 HTTPS URL")
+        raise SubmissionError("官方证据页面必须是安全的 HTTP 或 HTTPS URL")
     if sections["官方个人主页"] and profile_url is None:
-        raise SubmissionError("官方个人主页必须是安全 HTTPS URL")
+        raise SubmissionError("官方个人主页必须是安全的 HTTP 或 HTTPS URL")
 
     organization_id, reasons = _resolve_organization(
         data,
