@@ -5,6 +5,7 @@ const SHA_PATTERN = /^[a-f0-9]{40,64}$/;
 const DOMAIN_PATTERN = /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$/;
 const MAX_MANIFEST_BYTES = 20_000_000;
 const MAX_COMMENT_BYTES = 200_000;
+const MAX_PROPOSAL_BYTES = 500_000;
 const LEVELS = ["university", "school", "department"];
 const LEVEL_LABELS = {
   university: "学校",
@@ -28,12 +29,14 @@ const TYPE_LABELS = {
 const state = {
   pullNumber: null,
   pullUrl: null,
+  pullHeadSha: null,
   issueNumber: null,
   manifest: null,
   manifestSha256: null,
   organizationById: new Map(),
   organizationLabelById: new Map(),
   organizationIdByLabel: new Map(),
+  profileUrlByProposalId: new Map(),
   cards: [],
 };
 
@@ -734,10 +737,95 @@ function createLevelEditor(group, level, suggestedId) {
   };
 }
 
+async function resolveMentorProfileUrl(row) {
+  const cached = state.profileUrlByProposalId.get(row.proposal_id);
+  if (cached) {
+    return cached;
+  }
+
+  if (Object.hasOwn(row, "profile_url")) {
+    const directUrl = validateWebUrl(row.profile_url || row.source_url, "导师主页");
+    state.profileUrlByProposalId.set(row.proposal_id, directUrl);
+    return directUrl;
+  }
+
+  const paddedRow = String(row.batch_row).padStart(4, "0");
+  const proposalUrl =
+    `https://raw.githubusercontent.com/${REPOSITORY}/${state.pullHeadSha}` +
+    `/proposals/batch-issue-${state.issueNumber}/issue-${state.issueNumber}-row-${paddedRow}.json`;
+  const response = await fetch(proposalUrl, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`无法读取导师主页（GitHub 返回 ${response.status}）`);
+  }
+  const proposalBuffer = await response.arrayBuffer();
+  if (proposalBuffer.byteLength === 0 || proposalBuffer.byteLength > MAX_PROPOSAL_BYTES) {
+    throw new Error("导师提案为空或超过页面处理上限");
+  }
+  const proposal = JSON.parse(
+    new TextDecoder("utf-8", { fatal: true }).decode(proposalBuffer),
+  );
+  const submitted = proposal?.submitted;
+  if (
+    proposal?.id !== row.proposal_id ||
+    proposal?.issue?.batch_row !== row.batch_row ||
+    submitted?.name !== row.name ||
+    submitted?.email !== row.email ||
+    submitted?.source_url !== row.source_url
+  ) {
+    throw new Error("导师主页与审核清单中的导师不一致");
+  }
+  const profileUrl = validateWebUrl(submitted.profile_url || row.source_url, "导师主页");
+  state.profileUrlByProposalId.set(row.proposal_id, profileUrl);
+  return profileUrl;
+}
+
+function createMentorProfileButton(row) {
+  const button = element("button", "mentor-profile-button", "主页 ↗");
+  const defaultLabel = button.textContent;
+  button.type = "button";
+  button.setAttribute("aria-label", `在新标签页打开${row.name}的主页`);
+  button.title = "在新标签页打开导师主页";
+  button.addEventListener("click", async () => {
+    const profileWindow = window.open("about:blank", "_blank");
+    if (!profileWindow) {
+      button.title = "浏览器拦截了新标签页，请允许此页面打开新窗口";
+      return;
+    }
+    try {
+      profileWindow.opener = null;
+    } catch {
+      profileWindow.close();
+      button.title = "浏览器无法安全隔离新标签页";
+      return;
+    }
+    button.disabled = true;
+    button.textContent = "打开中…";
+    try {
+      const profileUrl = await resolveMentorProfileUrl(row);
+      profileWindow.location.replace(profileUrl);
+      button.title = "在新标签页打开导师主页";
+    } catch (error) {
+      profileWindow.close();
+      button.textContent = "打开失败";
+      button.title = error instanceof Error ? error.message : "无法打开导师主页";
+      window.setTimeout(() => {
+        button.textContent = defaultLabel;
+      }, 2_000);
+      return;
+    } finally {
+      button.disabled = false;
+    }
+    button.textContent = defaultLabel;
+  });
+  return button;
+}
+
 function createRowEditor(row) {
   const wrapper = element("div", "row-editor");
   const identity = element("div", "row-identity");
-  identity.append(element("strong", null, row.name), element("span", null, row.email));
+  const nameLine = element("div", "row-name-line");
+  nameLine.append(element("strong", null, row.name), createMentorProfileButton(row));
+  identity.append(nameLine, element("span", null, row.email));
   const action = createSelect(
     [
       ["follow", "跟随分组"],
@@ -1191,6 +1279,7 @@ async function loadReview() {
 
     state.pullNumber = pullNumber;
     state.pullUrl = `https://github.com/${REPOSITORY}/pull/${pullNumber}`;
+    state.pullHeadSha = pull.head.sha;
     state.issueNumber = issueNumber;
     state.manifest = manifest;
     state.manifestSha256 = await sha256Hex(manifestBuffer);
