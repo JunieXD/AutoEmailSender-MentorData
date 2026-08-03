@@ -2,12 +2,7 @@ name: Check moderation proposals
 
 on:
   pull_request:
-    paths:
-      - "proposals/**"
-      - "reports/pending/**"
-      - "registry/organizations.yml"
-      - "records/mentors/**"
-      - "claims/**"
+    types: [opened, reopened, synchronize, ready_for_review]
 
 permissions:
   contents: read

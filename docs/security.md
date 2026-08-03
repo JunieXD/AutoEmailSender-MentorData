@@ -20,6 +20,7 @@
 - 机构目录使用注册表 ID，不使用用户输入路径。
 - Actions 固定到完整 commit SHA，并使用最小权限。
 - 不使用 `pull_request_target` 执行贡献者分支代码。
+- 不保存个人 PAT；自动写入只使用仓库短期 `GITHUB_TOKEN`。因该令牌不会递归触发普通 `push`/`pull_request` 工作流，自动路径在原作业内完成验证，并只用受支持的 `workflow_dispatch` 显式启动 Pages。
 
 ## 上传文件
 

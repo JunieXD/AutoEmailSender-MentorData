@@ -6,10 +6,12 @@
 2. 推送本仓库；在 Actions 设置中允许 GitHub Actions 读写仓库并创建 Pull Request。
 3. 启用仓库 Auto-merge；Pages 的构建来源选择 GitHub Actions。
 4. 运行 `Bootstrap repository labels` 工作流创建表单标签。
-5. 给 `main` 设置分支保护：要求 `Validate repository` 和 `Check moderation proposals`，禁止强推和删除。
+5. 给 `main` 禁止强推和删除。第一版不要把 PR 检查设为强制门禁：GitHub 自带 `GITHUB_TOKEN` 创建的自动 PR 不会触发新的 PR 工作流；自动路径已经在原工作流中完成同等校验，人工 Draft PR 在维护者编辑或标记 Ready 时会运行检查。
 6. 启用私密漏洞报告，并确认 Issue Forms 可用。
 
 `gh-pages` 是自动生成的不可变发布归档，不接受人工编辑，也不应套用要求普通 PR 的 `main` 分支保护。Pages 工作流会从它恢复旧版本、追加新版本，再发布完整静态站点。
+
+自动投稿使用仓库自带的短期 `GITHUB_TOKEN`，不需要保存个人 PAT。自动 PR 在同一工作流内完成规范化、测试和合并，然后通过 `workflow_dispatch` 显式启动 Pages；人工 PR 合并后由终审工作流写入规范数据并显式启动 Pages。这一安排是为了规避 GitHub 对“令牌触发后续工作流”的递归限制。
 
 ## 试运行与自动合并
 

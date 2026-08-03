@@ -5,6 +5,7 @@ on:
     types: [closed]
 
 permissions:
+  actions: write
   contents: write
   issues: write
 
@@ -84,6 +85,9 @@ jobs:
           git add claims records registry reports proposals
           git commit -m "data: finalize moderation for issue #${{ steps.branch.outputs.issue_number }}"
           git push origin HEAD:main
+
+      - name: Publish finalized canonical change
+        run: gh workflow run pages.yml --ref main
 
       - name: Notify Issue
         run: |

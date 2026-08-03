@@ -5,6 +5,7 @@ on:
     types: [opened, reopened]
 
 permissions:
+  actions: write
   contents: write
   issues: write
   pull-requests: write
@@ -48,7 +49,15 @@ jobs:
         id: metadata
         run: uv run python scripts/proposal_set_metadata.py .work/proposals
 
-      - name: Store review proposals
+      - name: Finalize canonical data for auto-eligible batch
+        if: steps.metadata.outputs.all_auto_eligible == 'true'
+        run: |
+          uv run mentor-data finalize-proposal-set .work/proposals
+          uv run mentor-data validate
+          uv run pytest
+
+      - name: Store manual-review proposals
+        if: steps.metadata.outputs.all_auto_eligible != 'true'
         run: |
           mkdir -p "proposals/batch-issue-${ISSUE_NUMBER}"
           cp .work/proposals/*.json "proposals/batch-issue-${ISSUE_NUMBER}/"
@@ -62,11 +71,15 @@ jobs:
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
           case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
           case "$PROPOSAL_COUNT" in ''|*[!0-9]*) exit 1 ;; esac
-          BRANCH="batch/issue-${ISSUE_NUMBER}-${RUN_ID}"
+          if [ "$ALL_AUTO_ELIGIBLE" = "true" ]; then
+            BRANCH="automatic-batch/issue-${ISSUE_NUMBER}-${RUN_ID}"
+          else
+            BRANCH="batch/issue-${ISSUE_NUMBER}-${RUN_ID}"
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$BRANCH"
-          git add proposals
+          git add claims records proposals
           git commit -m "data: prepare batch submission #${ISSUE_NUMBER}"
           git push origin "$BRANCH"
           if [ "$ALL_AUTO_ELIGIBLE" = "true" ]; then
@@ -75,7 +88,7 @@ jobs:
               --head "$BRANCH" \
               --title "自动处理批量导师投稿 #${ISSUE_NUMBER}" \
               --body "共 ${PROPOSAL_COUNT} 行。由受信任默认分支工作流生成；关联 Issue #${ISSUE_NUMBER}。")
-            gh pr merge "$PR_URL" --squash --auto --delete-branch
+            gh pr merge "$PR_URL" --squash --delete-branch
           else
             PR_URL=$(gh pr create \
               --draft \
@@ -85,6 +98,10 @@ jobs:
               --body "共 ${PROPOSAL_COUNT} 行。请逐项核对 accepted、target_mentor_id、机构映射和 review_reasons；关联 Issue #${ISSUE_NUMBER}。")
           fi
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Publish auto-eligible canonical batch
+        if: steps.metadata.outputs.all_auto_eligible == 'true'
+        run: gh workflow run pages.yml --ref main
 
       - name: Link review Pull Request from Issue
         run: |
