@@ -10,14 +10,21 @@ on:
       - "reports/resolutions/**"
       - "schemas/**"
       - "mentor_data/**"
+      - "scripts/publication_metadata.py"
       - "site/**"
       - "pyproject.toml"
       - "uv.lock"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Optional source Issue to close after a successful deployment
+        required: false
+        type: string
 
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 
@@ -26,7 +33,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      publish: ${{ steps.metadata.outputs.publish }}
+      issue_number: ${{ steps.metadata.outputs.issue_number }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Refuse to publish a repository with pending moderation
+        id: metadata
+        env:
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+        run: python3 scripts/publication_metadata.py
+
   build:
+    needs: gate
+    if: needs.gate.outputs.publish == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -93,3 +118,24 @@ jobs:
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+
+  close-issue:
+    if: >-
+      always() &&
+      needs.gate.result == 'success' &&
+      needs.gate.outputs.publish == 'true' &&
+      needs.deploy.result == 'success' &&
+      needs.gate.outputs.issue_number != ''
+    needs: [gate, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ needs.gate.outputs.issue_number }}
+    steps:
+      - name: Silently close the published source Issue
+        run: |
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          gh issue close "$ISSUE_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --reason completed

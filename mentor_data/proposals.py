@@ -59,6 +59,16 @@ class ProposalResult:
     path: Path
 
 
+@dataclass(slots=True)
+class _FinalizationContext:
+    data: RepositoryData
+    proposal_schema: dict[str, Any]
+    claim_by_id: dict[str, dict[str, Any]]
+    mentor_by_id: dict[str, dict[str, Any]]
+    mentor_index_by_id: dict[str, int]
+    email_owner_by_value: dict[str, str]
+
+
 def _deduplicated_parts(
     value: str, pattern: re.Pattern[str], *, maximum: int | None = None
 ) -> list[str]:
@@ -559,19 +569,52 @@ def _append_support(
     return updated
 
 
-def finalize_proposal(
-    root: Path,
+def _finalization_context(
+    data: RepositoryData,
+    *,
+    resolved_schema_root: Path,
+) -> _FinalizationContext:
+    mentor_by_id = {mentor["id"]: mentor for mentor in data.mentors}
+    email_owner_by_value: dict[str, str] = {}
+    for mentor in data.mentors:
+        for contact in mentor.get("contacts", []):
+            if contact.get("status") in {"current", "former"}:
+                email_owner_by_value[contact["normalized_value"]] = mentor["id"]
+    return _FinalizationContext(
+        data=data,
+        proposal_schema=load_json(resolved_schema_root / "schemas" / "proposal.schema.json"),
+        claim_by_id={claim["id"]: claim for claim in data.claims},
+        mentor_by_id=mentor_by_id,
+        mentor_index_by_id={mentor["id"]: index for index, mentor in enumerate(data.mentors)},
+        email_owner_by_value=email_owner_by_value,
+    )
+
+
+def _same_claim_ignoring_decision_time(
+    existing_claim: dict[str, Any],
+    generated_claim: dict[str, Any],
+) -> bool:
+    comparable = copy.deepcopy(generated_claim)
+    existing_moderation = existing_claim.get("moderation")
+    comparable_moderation = comparable.get("moderation")
+    if isinstance(existing_moderation, dict) and isinstance(comparable_moderation, dict):
+        comparable_moderation["decision_at"] = existing_moderation.get("decision_at")
+    return existing_claim == comparable
+
+
+def _finalize_proposal_in_context(
+    context: _FinalizationContext,
     proposal_path: Path,
     *,
     moderator_github_user_id: int | None,
-    schema_root: Path | None = None,
 ) -> tuple[Path, Path]:
-    resolved_schema_root = (schema_root or root).resolve()
-    data = load_repository(root, validate=True, schema_root=resolved_schema_root)
+    data = context.data
     proposal = load_json(proposal_path)
-    schema = load_json(resolved_schema_root / "schemas" / "proposal.schema.json")
     errors = list(
-        Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(proposal)
+        Draft202012Validator(
+            context.proposal_schema,
+            format_checker=FormatChecker(),
+        ).iter_errors(proposal)
     )
     if errors:
         raise SubmissionError(f"审核提案无效：{errors[0].message}")
@@ -590,37 +633,62 @@ def finalize_proposal(
     target_mentor_id = proposal.get("target_mentor_id")
     if target_mentor_id is None:
         mentor_id = proposed_mentor_id(proposal)
-        if any(
-            contact.get("normalized_value") == accepted["email"]
-            and contact.get("status") in {"current", "former"}
-            for mentor in data.mentors
-            for contact in mentor.get("contacts", [])
-        ):
-            raise SubmissionError("新导师邮箱已被现有实体占用，必须重新审核目标 mentor_id")
     else:
         mentor_id = target_mentor_id
-        if mentor_id not in data.mentor_paths:
+        if mentor_id not in context.mentor_by_id:
             raise SubmissionError("目标导师不存在")
 
     claim = _claim_payload(proposal, mentor_id=mentor_id, moderator_id=moderator_github_user_id)
-    existing_claim = next((item for item in data.claims if item["id"] == claim["id"]), None)
+    existing_claim = context.claim_by_id.get(claim["id"])
     if existing_claim is not None:
-        if existing_claim == claim:
+        if _same_claim_ignoring_decision_time(existing_claim, claim):
             return data.claim_paths[claim["id"]], data.mentor_paths[mentor_id]
         raise SubmissionError("相同 Issue 的 Claim 已存在但内容不同")
+    if target_mentor_id is None and accepted["email"] in context.email_owner_by_value:
+        raise SubmissionError("新导师邮箱已被现有实体占用，必须重新审核目标 mentor_id")
 
     if target_mentor_id is None:
         mentor = _new_mentor(proposal, claim)
         mentor_path = data.root / "records" / "mentors" / f"{mentor_id}.json"
     else:
-        existing_mentor = next(item for item in data.mentors if item["id"] == mentor_id)
+        existing_mentor = context.mentor_by_id[mentor_id]
         mentor = _append_support(existing_mentor, claim)
         mentor_path = data.mentor_paths[mentor_id]
     claim_path = data.root / "claims" / str(user_id) / f"{claim['id']}.json"
     write_json_atomic(claim_path, claim)
     write_json_atomic(mentor_path, mentor)
-    load_repository(root, validate=True, schema_root=resolved_schema_root)
+
+    context.claim_by_id[claim["id"]] = claim
+    data.claims.append(claim)
+    data.claim_paths[claim["id"]] = claim_path
+    if target_mentor_id is None:
+        context.mentor_index_by_id[mentor_id] = len(data.mentors)
+        data.mentors.append(mentor)
+        data.mentor_paths[mentor_id] = mentor_path
+        context.email_owner_by_value[accepted["email"]] = mentor_id
+    else:
+        data.mentors[context.mentor_index_by_id[mentor_id]] = mentor
+    context.mentor_by_id[mentor_id] = mentor
     return claim_path, mentor_path
+
+
+def finalize_proposal(
+    root: Path,
+    proposal_path: Path,
+    *,
+    moderator_github_user_id: int | None,
+    schema_root: Path | None = None,
+) -> tuple[Path, Path]:
+    resolved_schema_root = (schema_root or root).resolve()
+    data = load_repository(root, validate=True, schema_root=resolved_schema_root)
+    context = _finalization_context(data, resolved_schema_root=resolved_schema_root)
+    result = _finalize_proposal_in_context(
+        context,
+        proposal_path,
+        moderator_github_user_id=moderator_github_user_id,
+    )
+    load_repository(root, validate=True, schema_root=resolved_schema_root)
+    return result
 
 
 def check_proposal(
@@ -669,15 +737,19 @@ def finalize_proposal_set(
 ) -> list[tuple[Path, Path]]:
     if not paths:
         raise SubmissionError("没有找到待处理的导师提案")
+    resolved_schema_root = root.resolve()
+    data = load_repository(root, validate=True, schema_root=resolved_schema_root)
+    context = _finalization_context(data, resolved_schema_root=resolved_schema_root)
     results: list[tuple[Path, Path]] = []
     for path in sorted(paths):
         results.append(
-            finalize_proposal(
-                root,
+            _finalize_proposal_in_context(
+                context,
                 path,
                 moderator_github_user_id=moderator_github_user_id,
             )
         )
+    load_repository(root, validate=True, schema_root=resolved_schema_root)
     return results
 
 
@@ -709,12 +781,22 @@ def check_proposal_set(
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, destination)
             rehearsal_paths.append(destination)
+        resolved_schema_root = (schema_root or rehearsal_root).resolve()
+        data = load_repository(
+            rehearsal_root,
+            validate=True,
+            schema_root=resolved_schema_root,
+        )
+        context = _finalization_context(data, resolved_schema_root=resolved_schema_root)
         for rehearsal_path in sorted(rehearsal_paths):
-            finalize_proposal(
-                rehearsal_root,
+            _finalize_proposal_in_context(
+                context,
                 rehearsal_path,
                 moderator_github_user_id=1,
-                schema_root=schema_root,
             )
             rehearsal_path.unlink()
-        load_repository(rehearsal_root, validate=True, schema_root=schema_root)
+        load_repository(
+            rehearsal_root,
+            validate=True,
+            schema_root=resolved_schema_root,
+        )

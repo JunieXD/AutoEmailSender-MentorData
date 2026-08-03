@@ -99,6 +99,17 @@ def test_new_submission_creates_reviewable_proposal_and_finalizes(tmp_path) -> N
     assert len(data.mentors) == 1
     assert data.mentors[0]["contacts"][0]["normalized_value"] == "mentor@example.edu"
 
+    repeated_claim_path, repeated_mentor_path = finalize_proposal(
+        root,
+        result.path,
+        moderator_github_user_id=999,
+    )
+    assert repeated_claim_path == claim_path
+    assert repeated_mentor_path == mentor_path
+    repeated_data = load_repository(root)
+    assert len(repeated_data.claims) == 1
+    assert len(repeated_data.mentors) == 1
+
 
 def test_http_official_urls_are_accepted_and_preserved(tmp_path) -> None:
     root = build_test_repository(tmp_path)

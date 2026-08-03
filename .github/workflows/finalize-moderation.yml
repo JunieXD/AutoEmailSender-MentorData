@@ -13,7 +13,7 @@ on:
 permissions:
   actions: write
   contents: write
-  issues: write
+  issues: read
 
 concurrency:
   group: mentor-data-write
@@ -56,6 +56,30 @@ jobs:
       - name: Parse trusted internal branch name
         id: branch
         run: uv run python scripts/parse_workflow_branch.py
+
+      - name: Read source Issue state
+        id: issue
+        env:
+          ISSUE_NUMBER: ${{ steps.branch.outputs.issue_number }}
+        run: |
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          STATE=$(gh issue view "$ISSUE_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --json state \
+            --jq .state)
+          case "$STATE" in
+            OPEN) echo "open=true" >> "$GITHUB_OUTPUT" ;;
+            CLOSED) echo "open=false" >> "$GITHUB_OUTPUT" ;;
+            *) exit 1 ;;
+          esac
+
+      - name: Reject an unrecognized duplicate finalization
+        if: >-
+          steps.branch.outputs.pending != 'true' &&
+          steps.branch.outputs.finalized != 'true'
+        run: |
+          echo "The branch has neither a pending proposal nor a finalized result." >&2
+          exit 1
 
       - name: Finalize accepted mentor contribution
         if: >-
@@ -111,17 +135,22 @@ jobs:
           git push origin HEAD:main
 
       - name: Publish finalized canonical change
-        if: steps.branch.outputs.pending == 'true'
-        run: gh workflow run pages.yml --ref main
-
-      - name: Notify and close Issue
-        if: steps.branch.outputs.pending == 'true'
+        id: publish
+        if: >-
+          steps.branch.outputs.pending == 'true' ||
+          (steps.branch.outputs.finalized == 'true' &&
+           steps.issue.outputs.open == 'true')
+        env:
+          ISSUE_NUMBER: ${{ steps.branch.outputs.issue_number }}
         run: |
-          gh issue comment "${{ steps.branch.outputs.issue_number }}" \
-            --body "维护者审核已经应用，新的社区数据集将在 Pages 工作流通过后发布。"
-          gh issue close "${{ steps.branch.outputs.issue_number }}" \
-            --reason completed
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          gh workflow run pages.yml \
+            --ref main \
+            -f "issue_number=$ISSUE_NUMBER"
 
       - name: Treat an already finalized duplicate trigger as success
-        if: steps.branch.outputs.pending != 'true'
+        if: >-
+          steps.branch.outputs.pending != 'true' &&
+          steps.branch.outputs.finalized == 'true' &&
+          steps.issue.outputs.open != 'true'
         run: echo "This moderation branch has already been finalized; nothing to do."

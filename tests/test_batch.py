@@ -4,6 +4,9 @@ import csv
 import json
 from datetime import UTC, datetime
 
+import pytest
+
+import mentor_data.proposals as proposals_module
 from mentor_data.batch import create_batch_proposals
 from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.proposals import finalize_proposal_set
@@ -67,7 +70,10 @@ def _package(tmp_path):
     return path
 
 
-def test_batch_duplicates_become_two_claims_for_one_mentor(tmp_path) -> None:
+def test_batch_duplicates_become_two_claims_for_one_mentor(
+    tmp_path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
     root = build_test_repository(tmp_path)
     actor = GitHubActor(
         user_id=7007,
@@ -87,7 +93,17 @@ def test_batch_duplicates_become_two_claims_for_one_mentor(tmp_path) -> None:
     assert result.proposals[1]["match_status"] == "matched_email"
     assert result.proposals[1]["target_mentor_id"] is not None
 
+    original_load_repository = proposals_module.load_repository
+    load_count = 0
+
+    def counted_load_repository(*args, **kwargs):
+        nonlocal load_count
+        load_count += 1
+        return original_load_repository(*args, **kwargs)
+
+    monkeypatch.setattr(proposals_module, "load_repository", counted_load_repository)
     finalize_proposal_set(root, list(result.paths), moderator_github_user_id=999)
+    assert load_count == 2
     data = load_repository(root)
     assert len(data.mentors) == 1
     assert len(data.claims) == 2

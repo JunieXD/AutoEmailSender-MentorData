@@ -2,7 +2,7 @@ name: Process correction report Issue
 
 on:
   issues:
-    types: [opened, reopened]
+    types: [opened]
 
 permissions:
   contents: write
@@ -66,14 +66,28 @@ jobs:
             --body "请将 decision 从 pending 改为最终裁决，填写 moderator_reason；接受修改时还需填写 accepted。关联 Issue #${ISSUE_NUMBER}。")
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
 
-      - name: Link review Pull Request from Issue
+      - name: Post the only Issue status notification
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          PR_URL: ${{ steps.pull_request.outputs.pr_url }}
         run: |
-          gh issue comment "$ISSUE_NUMBER" \
-            --body "反馈已进入人工审核，不会直接修改社区数据：${{ steps.pull_request.outputs.pr_url }}"
-
-      - name: Explain validation failure without echoing untrusted data
-        if: failure()
-        run: |
-          gh issue comment "$ISSUE_NUMBER" \
-            --body "反馈自动校验未通过，社区数据没有变化。维护者可查看本次 Actions 的固定格式错误。"
-
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          if [ "$JOB_STATUS" = "success" ]; then
+            MESSAGE="反馈已进入人工审核，不会直接修改社区数据：${PR_URL}。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
+          else
+            MESSAGE="反馈自动校验未通过，社区数据没有变化。维护者可查看本次 Actions 的固定格式日志。"
+          fi
+          MARKER="<!-- mentor-data-status:v1 -->"
+          BODY="${MARKER}"$'\n'"${MESSAGE}"
+          COMMENT_IDS=$(gh api --paginate \
+            "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/comments?per_page=100" \
+            --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- mentor-data-status:v1 -->"))) | .id')
+          COMMENT_ID=${COMMENT_IDS%%$'\n'*}
+          case "$COMMENT_ID" in
+            '') gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "$BODY" ;;
+            *[!0-9]*) exit 1 ;;
+            *) gh api --method PATCH \
+                 "repos/${GITHUB_REPOSITORY}/issues/comments/${COMMENT_ID}" \
+                 -f "body=$BODY" >/dev/null ;;
+          esac

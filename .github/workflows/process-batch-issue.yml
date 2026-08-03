@@ -2,7 +2,7 @@ name: Process batch contribution Issue
 
 on:
   issues:
-    types: [opened, reopened]
+    types: [opened]
 
 permissions:
   actions: write
@@ -80,6 +80,7 @@ jobs:
           case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
           case "$PROPOSAL_COUNT" in ''|*[!0-9]*) exit 1 ;; esac
           case "$INVALID_ROW_COUNT" in ''|*[!0-9]*) exit 1 ;; esac
+          echo "merged=false" >> "$GITHUB_OUTPUT"
           if [ "$ALL_AUTO_ELIGIBLE" = "true" ]; then
             BRANCH="automatic-batch/issue-${ISSUE_NUMBER}-${RUN_ID}"
           else
@@ -101,6 +102,7 @@ jobs:
               --title "自动处理批量导师投稿 #${ISSUE_NUMBER}" \
               --body "共 ${PROPOSAL_COUNT} 条有效提案。由受信任默认分支工作流生成；关联 Issue #${ISSUE_NUMBER}。")
             gh pr merge "$PR_URL" --squash --delete-branch
+            echo "merged=true" >> "$GITHUB_OUTPUT"
             REVIEW_URL="$PR_URL"
           else
             PR_URL=$(gh pr create \
@@ -117,18 +119,41 @@ jobs:
           echo "review_url=$REVIEW_URL" >> "$GITHUB_OUTPUT"
 
       - name: Publish auto-eligible canonical batch
+        id: publish
         if: steps.metadata.outputs.all_auto_eligible == 'true'
-        run: gh workflow run pages.yml --ref main
+        run: |
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          gh workflow run pages.yml --ref main -f "issue_number=$ISSUE_NUMBER"
 
-      - name: Link review Pull Request from Issue
+      - name: Post the only Issue status notification
+        if: always()
         env:
+          JOB_STATUS: ${{ job.status }}
+          ALL_AUTO_ELIGIBLE: ${{ steps.metadata.outputs.all_auto_eligible }}
+          MERGED: ${{ steps.pull_request.outputs.merged }}
+          PR_URL: ${{ steps.pull_request.outputs.pr_url }}
           REVIEW_URL: ${{ steps.pull_request.outputs.review_url }}
         run: |
-          gh issue comment "$ISSUE_NUMBER" \
-            --body "批量文件已安全解析，原始附件不会写入仓库。下一步：${REVIEW_URL}"
-
-      - name: Explain validation failure without echoing untrusted data
-        if: failure()
-        run: |
-          gh issue comment "$ISSUE_NUMBER" \
-            --body "批量附件下载、校验或提案生成未通过。当前数据集未发生变化；维护者可查看固定格式错误。"
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          if [ "$JOB_STATUS" = "success" ] && [ "$ALL_AUTO_ELIGIBLE" = "true" ]; then
+            MESSAGE="批量投稿已安全解析并进入社区数据，原始附件不会写入仓库。发布成功后，本 Issue 会自动关闭。审核记录：${PR_URL}"
+          elif [ "$JOB_STATUS" = "success" ]; then
+            MESSAGE="批量投稿已安全解析，原始附件不会写入仓库。请由维护者继续审核：${REVIEW_URL}。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
+          elif [ "$MERGED" = "true" ]; then
+            MESSAGE="规范数据已经合并，但发布任务未成功启动。本 Issue 会保持开启，等待维护者补发。"
+          else
+            MESSAGE="批量附件下载、校验或提案生成未通过，社区数据没有改变。维护者可查看本次 Actions 的固定格式日志。"
+          fi
+          MARKER="<!-- mentor-data-status:v1 -->"
+          BODY="${MARKER}"$'\n'"${MESSAGE}"
+          COMMENT_IDS=$(gh api --paginate \
+            "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/comments?per_page=100" \
+            --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- mentor-data-status:v1 -->"))) | .id')
+          COMMENT_ID=${COMMENT_IDS%%$'\n'*}
+          case "$COMMENT_ID" in
+            '') gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "$BODY" ;;
+            *[!0-9]*) exit 1 ;;
+            *) gh api --method PATCH \
+                 "repos/${GITHUB_REPOSITORY}/issues/comments/${COMMENT_ID}" \
+                 -f "body=$BODY" >/dev/null ;;
+          esac

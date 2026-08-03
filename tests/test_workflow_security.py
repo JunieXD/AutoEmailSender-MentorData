@@ -15,6 +15,11 @@ FORBIDDEN_DIRECT_CONTEXT = (
     "${{ github.event.pull_request.body }}",
     "${{ github.event.comment.body }}",
 )
+ISSUE_WORKFLOWS = (
+    "process-mentor-issue.yml",
+    "process-batch-issue.yml",
+    "process-report-issue.yml",
+)
 
 
 def _walk_uses(value: Any):
@@ -84,12 +89,56 @@ def test_organization_review_runs_trusted_code_and_never_embeds_decision_in_shel
     assert '--match-head-commit "$HEAD_SHA"' in text
     assert "gh workflow run finalize-moderation.yml" in text
     assert 'gh issue close "$ISSUE_NUMBER"' in text
+    assert "gh issue comment" not in text
+    assert "gh pr comment" not in text
 
 
-def test_finalization_closes_the_source_issue_after_success() -> None:
+def test_issue_workflows_create_at_most_one_status_comment() -> None:
+    workflow_root = PROJECT_ROOT / ".github" / "workflows"
+    for filename in ISSUE_WORKFLOWS:
+        text = (workflow_root / filename).read_text(encoding="utf-8")
+        assert "types: [opened]" in text
+        assert "reopened" not in text
+        assert text.count("gh issue comment") == 1
+        assert "<!-- mentor-data-status:v1 -->" in text
+        assert "Post the only Issue status notification" in text
+
+
+def test_downstream_moderation_never_adds_progress_comments() -> None:
+    workflow_root = PROJECT_ROOT / ".github" / "workflows"
+    for filename in ("apply-organization-review.yml", "finalize-moderation.yml"):
+        text = (workflow_root / filename).read_text(encoding="utf-8")
+        assert "gh issue comment" not in text
+        assert "gh pr comment" not in text
+
+
+def test_finalization_dispatches_publication_with_source_issue() -> None:
     path = PROJECT_ROOT / ".github" / "workflows" / "finalize-moderation.yml"
     text = path.read_text(encoding="utf-8")
-    assert 'gh issue close "${{ steps.branch.outputs.issue_number }}"' in text
-    assert "--reason completed" in text
     assert '--moderator-id "$MODERATOR_ID"' in text
     assert "steps.branch.outputs.pending == 'true'" in text
+    assert "steps.branch.outputs.finalized == 'true'" in text
+    assert "gh workflow run pages.yml" in text
+    assert '-f "issue_number=$ISSUE_NUMBER"' in text
+    assert "gh issue comment" not in text
+
+
+def test_pages_refuses_intermediate_data_and_closes_only_after_deploy() -> None:
+    path = PROJECT_ROOT / ".github" / "workflows" / "pages.yml"
+    text = path.read_text(encoding="utf-8")
+    assert "python3 scripts/publication_metadata.py" in text
+    assert "needs.gate.outputs.publish == 'true'" in text
+    assert "needs.deploy.result == 'success'" in text
+    assert 'gh issue close "$ISSUE_NUMBER"' in text
+    assert "--reason completed" in text
+
+
+def test_draft_pull_requests_do_not_run_redundant_checks() -> None:
+    workflow_root = PROJECT_ROOT / ".github" / "workflows"
+    proposal_check = (workflow_root / "check-proposals.yml").read_text(encoding="utf-8")
+    validation = (workflow_root / "validate.yml").read_text(encoding="utf-8")
+    assert "if: github.event.pull_request.draft == false" in proposal_check
+    assert (
+        "if: github.event_name != 'pull_request' || github.event.pull_request.draft == false"
+        in validation
+    )

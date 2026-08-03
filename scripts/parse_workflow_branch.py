@@ -40,6 +40,23 @@ def _has_pending_proposal(kind: str, issue_number: str) -> bool:
     return directory.is_dir() and any(directory.glob("*.json"))
 
 
+def _has_finalized_result(kind: str, issue_number: str) -> bool:
+    number = int(issue_number)
+    if kind in {"submission", "batch"}:
+        for path in (Path("claims")).rglob("*.json"):
+            claim = json.loads(path.read_text(encoding="utf-8"))
+            contributor = claim.get("contributor") if isinstance(claim, dict) else None
+            if isinstance(contributor, dict) and contributor.get("issue_number") == number:
+                return True
+        return False
+    for path in (Path("reports") / "resolutions").rglob("*.json"):
+        resolution = json.loads(path.read_text(encoding="utf-8"))
+        report_issue = resolution.get("report_issue") if isinstance(resolution, dict) else None
+        if isinstance(report_issue, dict) and report_issue.get("number") == number:
+            return True
+    return False
+
+
 def main() -> int:
     branch = os.environ.get("HEAD_REF", "")
     match = BRANCH_PATTERN.fullmatch(branch)
@@ -52,11 +69,13 @@ def main() -> int:
     issue_number = match.group(2)
     moderator_id = _batch_moderator_id(issue_number) if kind == "batch" else ""
     pending = _has_pending_proposal(kind, issue_number)
+    finalized = _has_finalized_result(kind, issue_number)
     with Path(output_path).open("a", encoding="utf-8") as handle:
         handle.write(f"kind={kind}\n")
         handle.write(f"issue_number={issue_number}\n")
         handle.write(f"moderator_id={moderator_id}\n")
         handle.write(f"pending={'true' if pending else 'false'}\n")
+        handle.write(f"finalized={'true' if finalized else 'false'}\n")
     return 0
 
 

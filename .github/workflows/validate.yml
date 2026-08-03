@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   validate:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -39,4 +40,3 @@ jobs:
 
       - name: Test production dataset build
         run: uv run mentor-data build --output dist
-

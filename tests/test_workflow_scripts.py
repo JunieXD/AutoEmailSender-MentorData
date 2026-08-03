@@ -5,7 +5,8 @@ from pathlib import Path
 
 import pytest
 
-from scripts.parse_workflow_branch import main
+from scripts.parse_workflow_branch import main as parse_branch_main
+from scripts.publication_metadata import main as publication_metadata_main
 
 
 def _outputs(path: Path) -> dict[str, str]:
@@ -44,19 +45,36 @@ def test_batch_branch_uses_comment_reviewer_and_reports_pending_state(
     monkeypatch.setenv("HEAD_REF", f"batch/issue-{issue_number}-123")
     monkeypatch.setenv("GITHUB_OUTPUT", str(output_path))
 
-    assert main() == 0
+    assert parse_branch_main() == 0
 
     assert _outputs(output_path) == {
         "kind": "batch",
         "issue_number": str(issue_number),
         "moderator_id": "999",
         "pending": "true",
+        "finalized": "false",
     }
 
     proposal_path.unlink()
     output_path.unlink()
-    assert main() == 0
-    assert _outputs(output_path)["pending"] == "false"
+    assert parse_branch_main() == 0
+    assert _outputs(output_path) == {
+        "kind": "batch",
+        "issue_number": str(issue_number),
+        "moderator_id": "999",
+        "pending": "false",
+        "finalized": "false",
+    }
+
+    claim_path = tmp_path / "claims" / "7007" / "claim.json"
+    claim_path.parent.mkdir(parents=True)
+    claim_path.write_text(
+        json.dumps({"contributor": {"issue_number": issue_number}}),
+        encoding="utf-8",
+    )
+    output_path.unlink()
+    assert parse_branch_main() == 0
+    assert _outputs(output_path)["finalized"] == "true"
 
 
 def test_batch_branch_rejects_mismatched_review_resolution(
@@ -80,4 +98,39 @@ def test_batch_branch_rejects_mismatched_review_resolution(
     monkeypatch.setenv("GITHUB_OUTPUT", str(tmp_path / "github-output.txt"))
 
     with pytest.raises(RuntimeError, match="invalid reviewer metadata"):
-        main()
+        parse_branch_main()
+
+
+def test_publication_metadata_blocks_pending_moderation(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    pending_path = tmp_path / "reports" / "pending" / "issue-40.json"
+    pending_path.parent.mkdir(parents=True)
+    pending_path.write_text("{}\n", encoding="utf-8")
+    output_path = tmp_path / "publication-output.txt"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output_path))
+    monkeypatch.setenv("ISSUE_NUMBER", "40")
+
+    assert publication_metadata_main(["--root", str(tmp_path)]) == 0
+    assert _outputs(output_path) == {
+        "publish": "false",
+        "pending_count": "1",
+        "issue_number": "40",
+    }
+
+    pending_path.unlink()
+    output_path.unlink()
+    assert publication_metadata_main(["--root", str(tmp_path)]) == 0
+    assert _outputs(output_path)["publish"] == "true"
+
+
+def test_publication_metadata_rejects_untrusted_issue_number(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    monkeypatch.setenv("GITHUB_OUTPUT", str(tmp_path / "output.txt"))
+    monkeypatch.setenv("ISSUE_NUMBER", "1; echo unsafe")
+
+    with pytest.raises(RuntimeError, match="positive integer"):
+        publication_metadata_main(["--root", str(tmp_path)])

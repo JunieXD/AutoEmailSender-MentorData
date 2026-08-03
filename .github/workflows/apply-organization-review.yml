@@ -159,32 +159,6 @@ jobs:
           case "$PR_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
           gh pr close "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
-          gh issue comment "$ISSUE_NUMBER" \
-            --repo "$GITHUB_REPOSITORY" \
-            --body "本批没有可继续落库的有效提案，审核记录已保存，投稿已自动关闭。"
           gh issue close "$ISSUE_NUMBER" \
             --repo "$GITHUB_REPOSITORY" \
             --reason "not planned"
-
-      - name: Publish bounded review summary
-        env:
-          PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
-          MAPPED: ${{ steps.result.outputs.mapped_proposals }}
-          REJECTED: ${{ steps.result.outputs.rejected_proposals }}
-          INVALID: ${{ steps.result.outputs.invalid_rows }}
-          REMAINING: ${{ steps.result.outputs.remaining_proposals }}
-          READY: ${{ steps.result.outputs.ready_for_finalization }}
-        run: |
-          for VALUE in "$PR_NUMBER" "$MAPPED" "$REJECTED" "$INVALID" "$REMAINING"; do
-            case "$VALUE" in ''|*[!0-9]*) exit 1 ;; esac
-          done
-          if [ "$REMAINING" = "0" ]; then
-            STATUS="本批没有可继续落库的提案，PR 已关闭。"
-          elif [ "$READY" = "true" ]; then
-            STATUS="剩余提案已通过落库预演，PR 已自动合并并进入落库流程。"
-          else
-            STATUS="机构归属已应用；仍有身份或字段冲突，请继续在 PR 中人工处理。"
-          fi
-          gh pr comment "$PR_NUMBER" \
-            --repo "$GITHUB_REPOSITORY" \
-            --body "机构审核已应用：映射 ${MAPPED} 条，拒绝 ${REJECTED} 条，普通无效 ${INVALID} 条，剩余 ${REMAINING} 条。${STATUS}"
