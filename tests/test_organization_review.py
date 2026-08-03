@@ -14,6 +14,7 @@ from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.io_utils import load_json, load_yaml
 from mentor_data.organization_review import (
     REVIEW_COMMENT_MARKER,
+    _proposed_organization_id,
     apply_organization_review,
     create_organization_review_manifest,
     load_review_comment,
@@ -139,7 +140,7 @@ def _create(
     level: str,
     organization_type: str,
     canonical_name: str,
-    official_url: str,
+    official_url: str | None,
     approved_domains: list[str],
     *,
     save_alias: bool,
@@ -373,7 +374,7 @@ def test_review_can_create_new_university_and_school_chain(tmp_path: Path) -> No
                         "school",
                         "school",
                         "工学院",
-                        "https://engineering.new.edu/",
+                        None,
                         [],
                         save_alias=True,
                     ),
@@ -395,8 +396,122 @@ def test_review_can_create_new_university_and_school_chain(tmp_path: Path) -> No
     school = next(item for item in registry["organizations"] if item["canonical_name"] == "工学院")
     assert university["aliases"] == ["新大"]
     assert school["parent_id"] == university["id"]
+    assert school["official_urls"] == []
     proposal = load_json(root / "proposals" / "batch-issue-30" / "issue-30-row-0001.json")
     assert proposal["accepted"]["organization_id"] == school["id"]
+
+
+def test_review_requires_official_url_only_for_new_university(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [_row("新老师", "mentor@new.edu", "新大", "工学院", "https://new.edu/mentor")],
+    )
+    group = manifest["groups"][0]
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _create(
+                        "university",
+                        "university",
+                        "新示例大学",
+                        None,
+                        ["new.edu"],
+                        save_alias=True,
+                    ),
+                    _create(
+                        "school",
+                        "school",
+                        "工学院",
+                        None,
+                        [],
+                        save_alias=True,
+                    ),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    with pytest.raises(SubmissionError, match="新学校必须填写"):
+        apply_organization_review(root, comment, pull)
+
+
+def test_row_override_can_target_organization_created_by_later_group(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row("甲老师", "a@new.edu", "新示例大学", "甲学院", "https://new.edu/a"),
+            _row("乙老师", "b@new.edu", "新示例大学", "乙学院", "https://new.edu/b"),
+        ],
+    )
+    first_group, later_group = sorted(manifest["groups"], key=lambda item: item["id"])
+    university_id = _proposed_organization_id("university", "新示例大学", None)
+    later_school_name = later_group["submitted"]["school"]
+    later_school_id = _proposed_organization_id("school", later_school_name, university_id)
+
+    decisions = []
+    for group in manifest["groups"]:
+        row_overrides = []
+        if group["id"] == first_group["id"]:
+            row_overrides.append(
+                {
+                    "proposal_id": group["rows"][0]["proposal_id"],
+                    "action": "map_existing",
+                    "organization_id": later_school_id,
+                    "reason": None,
+                }
+            )
+        decisions.append(
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _create(
+                        "university",
+                        "university",
+                        "新示例大学",
+                        "https://new.edu/",
+                        ["new.edu"],
+                        save_alias=True,
+                    ),
+                    _create(
+                        "school",
+                        "school",
+                        group["submitted"]["school"],
+                        None,
+                        [],
+                        save_alias=True,
+                    ),
+                    _skip("department"),
+                ],
+                "row_overrides": row_overrides,
+            }
+        )
+
+    comment, pull = _review_context(root, tmp_path, _decision(30, manifest_path, decisions))
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.created_organizations == 3
+    first_proposal = load_json(
+        root
+        / "proposals"
+        / "batch-issue-30"
+        / f"issue-30-row-{first_group['rows'][0]['batch_row']:04d}.json"
+    )
+    assert first_proposal["accepted"]["organization_id"] == later_school_id
 
 
 def test_review_rejects_unapproved_row_override_domain(tmp_path: Path) -> None:

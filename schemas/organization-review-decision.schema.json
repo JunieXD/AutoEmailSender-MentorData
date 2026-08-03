@@ -52,8 +52,7 @@
             "properties": {
               "organization_id": { "type": "null" },
               "organization_type": { "enum": ["university", "school", "institute", "department", "center", "laboratory"] },
-              "canonical_name": { "type": "string", "minLength": 1, "maxLength": 255 },
-              "official_url": { "$ref": "#/$defs/webUrl" }
+              "canonical_name": { "type": "string", "minLength": 1, "maxLength": 255 }
             }
           }
         },

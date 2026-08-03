@@ -52,3 +52,27 @@ def test_review_links_each_mentor_to_a_safely_resolved_profile() -> None:
     assert "profileWindow.opener = null" in script
     assert "MAX_PROPOSAL_BYTES" in script
     assert ".mentor-profile-button" in styles
+
+
+def test_review_reuses_organization_drafts_and_autosaves_progress() -> None:
+    html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+
+    assert 'id="organization-tree"' in html
+    assert 'id="next-pending"' in html
+    assert 'id="autosave-status"' in html
+    assert "buildOrganizationDrafts" in script
+    assert "organizationDraftKey" in script
+    assert "localStorage.setItem" in script
+    assert "restoreReviewDraft" in script
+    assert "同一机构只需确认一次" in script
+
+
+def test_review_suggests_official_urls_and_lists_pending_destinations() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+
+    assert "suggestedOfficialUrl" in script
+    assert "官方网站（没有可以留空）" in script
+    assert "refreshPendingOrganizationOptions" in script
+    assert "本次新建" in script
+    assert "改到其他机构" in script

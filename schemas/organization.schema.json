@@ -67,8 +67,7 @@
         "official_urls": {
           "type": "array",
           "items": { "$ref": "#/$defs/webUrl" },
-          "uniqueItems": true,
-          "minItems": 1
+          "uniqueItems": true
         },
         "approved_domains": {
           "type": "array",
@@ -88,7 +87,13 @@
         },
         "created_at": { "type": "string", "format": "date-time" },
         "updated_at": { "type": "string", "format": "date-time" }
-      }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "university" } } },
+          "then": { "properties": { "official_urls": { "minItems": 1 } } }
+        }
+      ]
     }
   }
 }

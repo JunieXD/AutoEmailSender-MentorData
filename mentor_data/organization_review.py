@@ -417,8 +417,8 @@ def _resolve_levels(
         if not canonical_name:
             raise SubmissionError("新机构必须填写正式名称")
         official_url = normalized_web_url(item.get("official_url"))
-        if official_url is None:
-            raise SubmissionError("新机构必须填写安全的 HTTP 或 HTTPS 官网")
+        if level == "university" and official_url is None:
+            raise SubmissionError("新学校必须填写安全的 HTTP 或 HTTPS 官网")
         approved_domains = sorted(
             {_normalize_domain(value) for value in item.get("approved_domains", [])}
         )
@@ -443,7 +443,7 @@ def _resolve_levels(
                 "canonical_name": canonical_name,
                 "parent_id": parent_id,
                 "aliases": aliases,
-                "official_urls": [official_url],
+                "official_urls": [official_url] if official_url is not None else [],
                 "approved_domains": approved_domains,
                 "status": "active",
                 "successor_id": None,
@@ -463,7 +463,7 @@ def _resolve_levels(
                 raise SubmissionError(f"自动生成的机构 ID 与现有机构冲突：{organization_id}")
             organization = existing
             changed = False
-            if official_url not in organization["official_urls"]:
+            if official_url is not None and official_url not in organization["official_urls"]:
                 organization["official_urls"].append(official_url)
                 changed = True
             for domain in approved_domains:
@@ -611,7 +611,11 @@ def apply_organization_review(
     created_organization_ids: set[str] = set()
     updated_organization_ids: set[str] = set()
     decided_at = _iso_utc(review_comment.created_at)
+    base_targets: dict[str, str | None] = {}
+    overrides_by_group: dict[str, dict[str, dict[str, Any]]] = {}
 
+    # Resolve every institution first. A mentor can then be reassigned to an institution
+    # created by another group in the same review, regardless of group sort order.
     for group_id in sorted(manifest_groups):
         group = manifest_groups[group_id]
         group_decision = decision_groups[group_id]
@@ -621,6 +625,7 @@ def apply_organization_review(
             raise SubmissionError(f"分组 {group_id} 包含重复逐行覆盖")
         if not set(overrides).issubset(group_row_ids):
             raise SubmissionError(f"分组 {group_id} 的逐行覆盖不属于该分组")
+        overrides_by_group[group_id] = overrides
 
         base_target: str | None = None
         if group_decision["action"] == "resolve":
@@ -634,7 +639,13 @@ def apply_organization_review(
             updated_organization_ids.update(updated)
         elif not normalize_text(group_decision.get("reason")):
             raise SubmissionError(f"拒绝分组 {group_id} 时必须填写原因")
+        base_targets[group_id] = base_target
 
+    for group_id in sorted(manifest_groups):
+        group = manifest_groups[group_id]
+        group_decision = decision_groups[group_id]
+        overrides = overrides_by_group[group_id]
+        base_target = base_targets[group_id]
         for row in group["rows"]:
             proposal_id = row["proposal_id"]
             override = overrides.get(proposal_id)

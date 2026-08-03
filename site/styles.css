@@ -372,6 +372,236 @@ footer a {
   margin-bottom: 0;
 }
 
+.section-note {
+  margin: -0.35rem 0 0.7rem;
+  color: #78716c;
+  font-size: 0.86rem;
+}
+
+.review-progress-actions,
+.organization-summary-meta,
+.organization-draft-footer,
+.organization-source-bar {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.organization-progress {
+  color: #57534e;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.secondary-button,
+.text-button {
+  border: 1px solid #d6d3d1;
+  background: #fff;
+  color: #57534e;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.secondary-button {
+  min-height: 2.2rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.65rem;
+  font-size: 0.8rem;
+}
+
+.secondary-button:hover,
+.text-button:hover {
+  border-color: #fb923c;
+  color: #9a3412;
+}
+
+.secondary-button:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.autosave-status {
+  min-height: 1.15rem;
+  margin: 0 0 0.55rem;
+  color: #78716c;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.organization-tree {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.organization-branch {
+  min-width: 0;
+}
+
+.organization-children {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.55rem 0 0 1.1rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid #fed7aa;
+}
+
+.organization-draft {
+  border: 1px solid #e7e5e4;
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 1rem 2.5rem -2.3rem rgba(41, 37, 36, 0.55);
+}
+
+.organization-draft[open] {
+  border-color: #fdba74;
+}
+
+.organization-draft.has-error {
+  border-color: #fca5a5;
+}
+
+.organization-draft-summary {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.72rem 0.85rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.organization-draft-summary::-webkit-details-marker {
+  display: none;
+}
+
+.organization-summary-identity {
+  display: flex;
+  min-width: 0;
+  gap: 0.55rem;
+  align-items: baseline;
+}
+
+.organization-summary-identity strong {
+  overflow: hidden;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.organization-level-label {
+  flex: none;
+  color: #9a3412;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.organization-impact {
+  color: #78716c;
+  font-size: 0.72rem;
+}
+
+.organization-draft-status {
+  min-width: 3.6rem;
+  padding: 0.18rem 0.45rem;
+  border-radius: 999px;
+  background: #fff7ed;
+  color: #9a3412;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.organization-draft[data-status="已确认"] .organization-draft-status,
+.organization-draft[data-status="随上级"] .organization-draft-status {
+  background: #f0fdf4;
+  color: #15803d;
+}
+
+.organization-draft[data-status="未使用"] .organization-draft-status {
+  background: #f5f5f4;
+  color: #78716c;
+}
+
+.organization-draft-body {
+  padding: 0 0.85rem 0.85rem;
+  border-top: 1px solid #f0ece8;
+}
+
+.organization-draft-body > .review-field:first-child {
+  width: min(18rem, 100%);
+  margin-top: 0.7rem;
+}
+
+.review-field {
+  display: grid;
+  min-width: 0;
+  gap: 0.25rem;
+}
+
+.review-field-label {
+  color: #57534e;
+  font-size: 0.7rem;
+  font-weight: 750;
+}
+
+.review-field-hint {
+  color: #78716c;
+  font-size: 0.66rem;
+  line-height: 1.35;
+}
+
+.organization-draft .editor-panel {
+  margin-top: 0.55rem;
+}
+
+.organization-draft .create-panel {
+  grid-template-columns: minmax(8rem, 0.7fr) minmax(12rem, 1.5fr) repeat(2, minmax(12rem, 1fr));
+  align-items: start;
+}
+
+.organization-draft .create-panel .review-field {
+  grid-column: auto;
+}
+
+.organization-source-bar {
+  flex-wrap: wrap;
+  margin-top: 0.55rem;
+  color: #78716c;
+  font-size: 0.72rem;
+}
+
+.organization-source-bar .source-links {
+  margin: 0;
+  font-size: 0.72rem;
+}
+
+.text-button {
+  min-height: 1.8rem;
+  margin-left: auto;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.55rem;
+  font-size: 0.7rem;
+}
+
+.organization-draft-error {
+  margin: 0.55rem 0 0;
+}
+
+.organization-draft-footer {
+  justify-content: space-between;
+  margin-top: 0.65rem;
+}
+
+.organization-draft-footer .alias-option {
+  margin: 0;
+}
+
+.compact-button {
+  min-height: 2.2rem;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.78rem;
+}
+
 .review-groups {
   display: grid;
   gap: 0.8rem;
@@ -409,6 +639,20 @@ footer a {
   flex-wrap: wrap;
   gap: 0.5rem;
   align-items: center;
+}
+
+.group-assignment {
+  margin: 0.55rem 0 0;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.65rem;
+  background: #f0fdf4;
+  color: #166534;
+  font-size: 0.78rem;
+}
+
+.review-group[data-kind="rejected"] .group-assignment {
+  background: #fef2f2;
+  color: #b91c1c;
 }
 
 .neutral-badge {
@@ -813,6 +1057,29 @@ textarea:focus {
   margin-top: 1rem;
 }
 
+.decision-preview {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.55rem;
+  margin-top: 0.9rem;
+}
+
+.decision-preview > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0.65rem 0.75rem;
+  border-radius: 0.7rem;
+  background: #fafaf9;
+  color: #78716c;
+  font-size: 0.75rem;
+}
+
+.decision-preview strong {
+  color: #292524;
+  font-size: 1rem;
+}
+
 .decision-output label {
   display: block;
   margin-bottom: 0.45rem;
@@ -846,7 +1113,12 @@ textarea:focus {
 
 @media (max-width: 58rem) {
   .review-summary,
-  .levels-container {
+  .levels-container,
+  .decision-preview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .organization-draft .create-panel {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -878,9 +1150,21 @@ textarea:focus {
 
   .section-heading,
   .decision-actions,
-  .group-header {
+  .group-header,
+  .organization-draft-summary,
+  .organization-draft-footer {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .review-progress-actions,
+  .organization-summary-meta {
+    justify-content: space-between;
+  }
+
+  .organization-children {
+    margin-left: 0.45rem;
+    padding-left: 0.55rem;
   }
 
   .group-badges {
@@ -894,6 +1178,11 @@ textarea:focus {
   }
 
   .create-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .organization-draft .create-panel,
+  .decision-preview {
     grid-template-columns: 1fr;
   }
 
