@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9e5de21d7cdb5aa8e6cc"
+      ],
+      "ended_at": null,
+      "id": "aff_e972f75495373eb64d14",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9e5de21d7cdb5aa8e6cc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e972f75495373eb64d14",
+      "claim_ids": [
+        "claim_9e5de21d7cdb5aa8e6cc"
+      ],
+      "is_primary": true,
+      "normalized_value": "guohuili@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guohuili@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9e5de21d7cdb5aa8e6cc"
+    ],
+    "email": [
+      "claim_9e5de21d7cdb5aa8e6cc"
+    ],
+    "name": [
+      "claim_9e5de21d7cdb5aa8e6cc"
+    ],
+    "profile_url": [
+      "claim_9e5de21d7cdb5aa8e6cc"
+    ],
+    "research_directions": [
+      "claim_9e5de21d7cdb5aa8e6cc"
+    ],
+    "status": [
+      "claim_9e5de21d7cdb5aa8e6cc"
+    ],
+    "title": [
+      "claim_9e5de21d7cdb5aa8e6cc"
+    ]
+  },
+  "id": "mentor_54de696ec1bc5299eff0",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9e5de21d7cdb5aa8e6cc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李国徽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e972f75495373eb64d14",
+      "claim_ids": [
+        "claim_9e5de21d7cdb5aa8e6cc"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/liguohui/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "现代数据工程、实时计算、节能策略、开放环境下的机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

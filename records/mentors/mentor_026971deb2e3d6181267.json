@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8fa63ff891a55ca3e10c"
+      ],
+      "ended_at": null,
+      "id": "aff_605270d8dbd6be4d6eaa",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_3c5550a51b34133dd5c5",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8fa63ff891a55ca3e10c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_605270d8dbd6be4d6eaa",
+      "claim_ids": [
+        "claim_8fa63ff891a55ca3e10c"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangfang@mail.hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangfang@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8fa63ff891a55ca3e10c"
+    ],
+    "email": [
+      "claim_8fa63ff891a55ca3e10c"
+    ],
+    "name": [
+      "claim_8fa63ff891a55ca3e10c"
+    ],
+    "profile_url": [
+      "claim_8fa63ff891a55ca3e10c"
+    ],
+    "research_directions": [
+      "claim_8fa63ff891a55ca3e10c"
+    ],
+    "status": [
+      "claim_8fa63ff891a55ca3e10c"
+    ],
+    "title": [
+      "claim_8fa63ff891a55ca3e10c"
+    ]
+  },
+  "id": "mentor_026971deb2e3d6181267",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8fa63ff891a55ca3e10c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_605270d8dbd6be4d6eaa",
+      "claim_ids": [
+        "claim_8fa63ff891a55ca3e10c"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wangfang16/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络存储、并行存储系统、并行文件系统、基于非易失存..."
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dda2614b33550df9f052"
+      ],
+      "ended_at": null,
+      "id": "aff_e43fa2ed7d0674f2e82a",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_dda2614b33550df9f052"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e43fa2ed7d0674f2e82a",
+      "claim_ids": [
+        "claim_dda2614b33550df9f052"
+      ],
+      "is_primary": true,
+      "normalized_value": "xhdai@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xhdai@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dda2614b33550df9f052"
+    ],
+    "email": [
+      "claim_dda2614b33550df9f052"
+    ],
+    "name": [
+      "claim_dda2614b33550df9f052"
+    ],
+    "profile_url": [
+      "claim_dda2614b33550df9f052"
+    ],
+    "recent_papers": [
+      "claim_dda2614b33550df9f052"
+    ],
+    "status": [
+      "claim_dda2614b33550df9f052"
+    ]
+  },
+  "id": "mentor_c6d9e7246d207b4050dc",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dda2614b33550df9f052"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "戴小海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e43fa2ed7d0674f2e82a",
+      "claim_ids": [
+        "claim_dda2614b33550df9f052"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/xiaohai/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ipotane: Balancing the Good and Bad Cases of Asynchronous BFT.Network and Distributed System Security (NDSS) Symposium,2026, Icarus: Achieving Performant Asynchronous BFT with Only Optimistic Paths.Network and Distributed System Security (NDSS) Symposium,2026, Pako: Multi-valued Byzantine Agreement Comparable to Partially-synchronous BFT.IEEE Transactions on Computers (TC),2025, Parbft: Faster Asynchronous BFT Consensus with a Parallel Optimistic Path.ACM SIGSAC Conference on Computer and Communications Security (CCS),2023, Falcon: Advancing Asynchronous BFT Consensus for Lower Latency and Enhanced Throughput.nternational Conference on Very Large Databases (VLDB),2025, Wahoo: A DAG-based BFT Consensus with Low Latency and Low Communication Overhead.EEE Transactions on Information Forensics and Security (TIFS),2024,"
+  ],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": null,
+  "updated_at": "2026-08-03T12:54:04Z"
+}

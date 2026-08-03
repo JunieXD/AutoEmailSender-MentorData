@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b12e89a686a676d154e"
+      ],
+      "ended_at": null,
+      "id": "aff_9fc047c66d47f34ea336",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b12e89a686a676d154e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9fc047c66d47f34ea336",
+      "claim_ids": [
+        "claim_0b12e89a686a676d154e"
+      ],
+      "is_primary": true,
+      "normalized_value": "cherryyuanling@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cherryyuanling@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b12e89a686a676d154e"
+    ],
+    "email": [
+      "claim_0b12e89a686a676d154e"
+    ],
+    "name": [
+      "claim_0b12e89a686a676d154e"
+    ],
+    "profile_url": [
+      "claim_0b12e89a686a676d154e"
+    ],
+    "research_directions": [
+      "claim_0b12e89a686a676d154e"
+    ],
+    "status": [
+      "claim_0b12e89a686a676d154e"
+    ],
+    "title": [
+      "claim_0b12e89a686a676d154e"
+    ]
+  },
+  "id": "mentor_0956204cdee820269306",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b12e89a686a676d154e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁凌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9fc047c66d47f34ea336",
+      "claim_ids": [
+        "claim_0b12e89a686a676d154e"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yuanling1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据分析及处理、机器学习、基于联邦学习的隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6fce5a931d34cc576718"
+      ],
+      "ended_at": null,
+      "id": "aff_b968d1111658413c4b74",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6fce5a931d34cc576718"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b968d1111658413c4b74",
+      "claim_ids": [
+        "claim_6fce5a931d34cc576718"
+      ],
+      "is_primary": true,
+      "normalized_value": "tugang@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tugang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6fce5a931d34cc576718"
+    ],
+    "email": [
+      "claim_6fce5a931d34cc576718"
+    ],
+    "name": [
+      "claim_6fce5a931d34cc576718"
+    ],
+    "profile_url": [
+      "claim_6fce5a931d34cc576718"
+    ],
+    "research_directions": [
+      "claim_6fce5a931d34cc576718"
+    ],
+    "status": [
+      "claim_6fce5a931d34cc576718"
+    ],
+    "title": [
+      "claim_6fce5a931d34cc576718"
+    ]
+  },
+  "id": "mentor_2f949d9c9be7e758372a",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6fce5a931d34cc576718"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "涂刚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b968d1111658413c4b74",
+      "claim_ids": [
+        "claim_6fce5a931d34cc576718"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/tugang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、机器学习、深度学习、无人机影像分析、自然语言处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

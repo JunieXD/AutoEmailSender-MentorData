@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_26cb51a1ca29003d10c7"
+      ],
+      "ended_at": null,
+      "id": "aff_dad38e34acc9c9234a44",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_26cb51a1ca29003d10c7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dad38e34acc9c9234a44",
+      "claim_ids": [
+        "claim_26cb51a1ca29003d10c7"
+      ],
+      "is_primary": true,
+      "normalized_value": "weiw@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weiw@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_26cb51a1ca29003d10c7"
+    ],
+    "email": [
+      "claim_26cb51a1ca29003d10c7"
+    ],
+    "name": [
+      "claim_26cb51a1ca29003d10c7"
+    ],
+    "profile_url": [
+      "claim_26cb51a1ca29003d10c7"
+    ],
+    "research_directions": [
+      "claim_26cb51a1ca29003d10c7"
+    ],
+    "status": [
+      "claim_26cb51a1ca29003d10c7"
+    ],
+    "title": [
+      "claim_26cb51a1ca29003d10c7"
+    ]
+  },
+  "id": "mentor_f2f1214cde3345c6e77c",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_26cb51a1ca29003d10c7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏巍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dad38e34acc9c9234a44",
+      "claim_ids": [
+        "claim_26cb51a1ca29003d10c7"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/weiw/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、自然语言处理、信息检索与推荐、多模计算、数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

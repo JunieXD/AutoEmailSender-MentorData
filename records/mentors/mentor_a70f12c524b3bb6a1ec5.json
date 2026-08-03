@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b44bc2f541a1c86ad14b"
+      ],
+      "ended_at": null,
+      "id": "aff_030088bd2feff11148a2",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b44bc2f541a1c86ad14b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_030088bd2feff11148a2",
+      "claim_ids": [
+        "claim_b44bc2f541a1c86ad14b"
+      ],
+      "is_primary": true,
+      "normalized_value": "kkhuang@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kkhuang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b44bc2f541a1c86ad14b"
+    ],
+    "email": [
+      "claim_b44bc2f541a1c86ad14b"
+    ],
+    "name": [
+      "claim_b44bc2f541a1c86ad14b"
+    ],
+    "profile_url": [
+      "claim_b44bc2f541a1c86ad14b"
+    ],
+    "research_directions": [
+      "claim_b44bc2f541a1c86ad14b"
+    ],
+    "status": [
+      "claim_b44bc2f541a1c86ad14b"
+    ],
+    "title": [
+      "claim_b44bc2f541a1c86ad14b"
+    ]
+  },
+  "id": "mentor_a70f12c524b3bb6a1ec5",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b44bc2f541a1c86ad14b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄柯柯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_030088bd2feff11148a2",
+      "claim_ids": [
+        "claim_b44bc2f541a1c86ad14b"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/huangkeke/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据管理与分析、近似算法设计、图神经网络、大模型、AI for Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

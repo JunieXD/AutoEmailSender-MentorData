@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ca210ce125303d05ad19"
+      ],
+      "ended_at": null,
+      "id": "aff_7183c2ec09796d0fdc5e",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ca210ce125303d05ad19"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7183c2ec09796d0fdc5e",
+      "claim_ids": [
+        "claim_ca210ce125303d05ad19"
+      ],
+      "is_primary": true,
+      "normalized_value": "yjqing@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yjqing@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ca210ce125303d05ad19"
+    ],
+    "email": [
+      "claim_ca210ce125303d05ad19"
+    ],
+    "name": [
+      "claim_ca210ce125303d05ad19"
+    ],
+    "profile_url": [
+      "claim_ca210ce125303d05ad19"
+    ],
+    "research_directions": [
+      "claim_ca210ce125303d05ad19"
+    ],
+    "status": [
+      "claim_ca210ce125303d05ad19"
+    ],
+    "title": [
+      "claim_ca210ce125303d05ad19"
+    ]
+  },
+  "id": "mentor_4cf9f039cf7a0d744511",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ca210ce125303d05ad19"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于俊清"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7183c2ec09796d0fdc5e",
+      "claim_ids": [
+        "claim_ca210ce125303d05ad19"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yujunqing/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多核计算与流编译,网络安全与大数据处理,智能视频分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c56bca1ffe2795482d9"
+      ],
+      "ended_at": null,
+      "id": "aff_d9fd2016115a4010bf49",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c56bca1ffe2795482d9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d9fd2016115a4010bf49",
+      "claim_ids": [
+        "claim_1c56bca1ffe2795482d9"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuchonghu@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuchonghu@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c56bca1ffe2795482d9"
+    ],
+    "email": [
+      "claim_1c56bca1ffe2795482d9"
+    ],
+    "name": [
+      "claim_1c56bca1ffe2795482d9"
+    ],
+    "profile_url": [
+      "claim_1c56bca1ffe2795482d9"
+    ],
+    "research_directions": [
+      "claim_1c56bca1ffe2795482d9"
+    ],
+    "status": [
+      "claim_1c56bca1ffe2795482d9"
+    ],
+    "title": [
+      "claim_1c56bca1ffe2795482d9"
+    ]
+  },
+  "id": "mentor_1386858735d1e1b6343e",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c56bca1ffe2795482d9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡燏翀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d9fd2016115a4010bf49",
+      "claim_ids": [
+        "claim_1c56bca1ffe2795482d9"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/huyuchong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "容错技术(网络编码,纠删码等)去设计与实现“高可靠、高性能、高安全”的计算机存储系统(包括云存储、大数据存储、内存数据库、重删备份、异构存储等)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

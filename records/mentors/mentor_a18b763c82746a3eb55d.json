@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_99c3c322aea28311b2f3"
+      ],
+      "ended_at": null,
+      "id": "aff_c6feded4896bae4b5ce3",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_99c3c322aea28311b2f3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c6feded4896bae4b5ce3",
+      "claim_ids": [
+        "claim_99c3c322aea28311b2f3"
+      ],
+      "is_primary": true,
+      "normalized_value": "dqwang@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dqwang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_99c3c322aea28311b2f3"
+    ],
+    "email": [
+      "claim_99c3c322aea28311b2f3"
+    ],
+    "name": [
+      "claim_99c3c322aea28311b2f3"
+    ],
+    "profile_url": [
+      "claim_99c3c322aea28311b2f3"
+    ],
+    "research_directions": [
+      "claim_99c3c322aea28311b2f3"
+    ],
+    "status": [
+      "claim_99c3c322aea28311b2f3"
+    ],
+    "title": [
+      "claim_99c3c322aea28311b2f3"
+    ]
+  },
+  "id": "mentor_a18b763c82746a3eb55d",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_99c3c322aea28311b2f3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王多强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c6feded4896bae4b5ce3",
+      "claim_ids": [
+        "claim_99c3c322aea28311b2f3"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wangduoqiang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "并行与分布式计算,高性能计算,云计算,计算机应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cf11ff9b7e79944bf662"
+      ],
+      "ended_at": null,
+      "id": "aff_bca5fc91140795006d19",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cf11ff9b7e79944bf662"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bca5fc91140795006d19",
+      "claim_ids": [
+        "claim_cf11ff9b7e79944bf662"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjin@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zjin@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cf11ff9b7e79944bf662"
+    ],
+    "email": [
+      "claim_cf11ff9b7e79944bf662"
+    ],
+    "name": [
+      "claim_cf11ff9b7e79944bf662"
+    ],
+    "profile_url": [
+      "claim_cf11ff9b7e79944bf662"
+    ],
+    "research_directions": [
+      "claim_cf11ff9b7e79944bf662"
+    ],
+    "status": [
+      "claim_cf11ff9b7e79944bf662"
+    ],
+    "title": [
+      "claim_cf11ff9b7e79944bf662"
+    ]
+  },
+  "id": "mentor_32963613596bd35b04c9",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cf11ff9b7e79944bf662"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵进"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bca5fc91140795006d19",
+      "claim_ids": [
+        "claim_cf11ff9b7e79944bf662"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zhaojin123/zh_CN/index/2612153/list/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高性能体系结构和系统软件、图计算、智能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

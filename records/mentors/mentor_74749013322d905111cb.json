@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_39e740ec906860889ca5"
+      ],
+      "ended_at": null,
+      "id": "aff_776891e1d375215d8a52",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_39e740ec906860889ca5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_776891e1d375215d8a52",
+      "claim_ids": [
+        "claim_39e740ec906860889ca5"
+      ],
+      "is_primary": true,
+      "normalized_value": "bqdu@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bqdu@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_39e740ec906860889ca5"
+    ],
+    "email": [
+      "claim_39e740ec906860889ca5"
+    ],
+    "name": [
+      "claim_39e740ec906860889ca5"
+    ],
+    "profile_url": [
+      "claim_39e740ec906860889ca5"
+    ],
+    "research_directions": [
+      "claim_39e740ec906860889ca5"
+    ],
+    "status": [
+      "claim_39e740ec906860889ca5"
+    ],
+    "title": [
+      "claim_39e740ec906860889ca5"
+    ]
+  },
+  "id": "mentor_74749013322d905111cb",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_39e740ec906860889ca5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜冰倩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_776891e1d375215d8a52",
+      "claim_ids": [
+        "claim_39e740ec906860889ca5"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/dubingqian/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "分布式深度学习系统、边缘计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

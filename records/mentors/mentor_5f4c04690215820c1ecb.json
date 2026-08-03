@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_80993ca45651c281a02a"
+      ],
+      "ended_at": null,
+      "id": "aff_22758a03efb0f6615292",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_80993ca45651c281a02a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_22758a03efb0f6615292",
+      "claim_ids": [
+        "claim_80993ca45651c281a02a"
+      ],
+      "is_primary": true,
+      "normalized_value": "quanzhou@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "quanzhou@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_80993ca45651c281a02a"
+    ],
+    "email": [
+      "claim_80993ca45651c281a02a"
+    ],
+    "name": [
+      "claim_80993ca45651c281a02a"
+    ],
+    "profile_url": [
+      "claim_80993ca45651c281a02a"
+    ],
+    "research_directions": [
+      "claim_80993ca45651c281a02a"
+    ],
+    "status": [
+      "claim_80993ca45651c281a02a"
+    ],
+    "title": [
+      "claim_80993ca45651c281a02a"
+    ]
+  },
+  "id": "mentor_5f4c04690215820c1ecb",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_80993ca45651c281a02a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周全"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_22758a03efb0f6615292",
+      "claim_ids": [
+        "claim_80993ca45651c281a02a"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/ZHOUQUAN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "实时计算与移动计算、机器学习、实时与嵌入式系统软件设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

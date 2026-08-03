@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_136b56e6077f0d8f9e32"
+      ],
+      "ended_at": null,
+      "id": "aff_17cea52f13b0e49478e0",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_136b56e6077f0d8f9e32"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_17cea52f13b0e49478e0",
+      "claim_ids": [
+        "claim_136b56e6077f0d8f9e32"
+      ],
+      "is_primary": true,
+      "normalized_value": "cnwang@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cnwang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_136b56e6077f0d8f9e32"
+    ],
+    "email": [
+      "claim_136b56e6077f0d8f9e32"
+    ],
+    "name": [
+      "claim_136b56e6077f0d8f9e32"
+    ],
+    "profile_url": [
+      "claim_136b56e6077f0d8f9e32"
+    ],
+    "research_directions": [
+      "claim_136b56e6077f0d8f9e32"
+    ],
+    "status": [
+      "claim_136b56e6077f0d8f9e32"
+    ],
+    "title": [
+      "claim_136b56e6077f0d8f9e32"
+    ]
+  },
+  "id": "mentor_ed0560ffff99e91ded97",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_136b56e6077f0d8f9e32"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪承宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_17cea52f13b0e49478e0",
+      "claim_ids": [
+        "claim_136b56e6077f0d8f9e32"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/cnwang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机理与数据融合的科学计算,数学建模,数值线性代数,高性能矩阵计算,AI for Science,并行计算算法,人工智能计算加速,AI大模型推理加速,异构并行计算,存储器设计,ARM & RISC-V"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

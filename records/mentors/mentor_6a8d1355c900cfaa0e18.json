@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0a68ab7e0f37466bb2b9"
+      ],
+      "ended_at": null,
+      "id": "aff_14db5548ccb68738b1c5",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0a68ab7e0f37466bb2b9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_14db5548ccb68738b1c5",
+      "claim_ids": [
+        "claim_0a68ab7e0f37466bb2b9"
+      ],
+      "is_primary": true,
+      "normalized_value": "xzli@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xzli@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0a68ab7e0f37466bb2b9"
+    ],
+    "email": [
+      "claim_0a68ab7e0f37466bb2b9"
+    ],
+    "name": [
+      "claim_0a68ab7e0f37466bb2b9"
+    ],
+    "profile_url": [
+      "claim_0a68ab7e0f37466bb2b9"
+    ],
+    "research_directions": [
+      "claim_0a68ab7e0f37466bb2b9"
+    ],
+    "status": [
+      "claim_0a68ab7e0f37466bb2b9"
+    ],
+    "title": [
+      "claim_0a68ab7e0f37466bb2b9"
+    ]
+  },
+  "id": "mentor_6a8d1355c900cfaa0e18",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0a68ab7e0f37466bb2b9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李贤芝"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_14db5548ccb68738b1c5",
+      "claim_ids": [
+        "claim_0a68ab7e0f37466bb2b9"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/lixianzhi1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "三维视觉、计算机图形学、深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

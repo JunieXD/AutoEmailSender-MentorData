@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1dfe91c859b2fdcb9ad6"
+      ],
+      "ended_at": null,
+      "id": "aff_a91162610f02f8c6500c",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1dfe91c859b2fdcb9ad6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a91162610f02f8c6500c",
+      "claim_ids": [
+        "claim_1dfe91c859b2fdcb9ad6"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaof@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaof@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1dfe91c859b2fdcb9ad6"
+    ],
+    "email": [
+      "claim_1dfe91c859b2fdcb9ad6"
+    ],
+    "name": [
+      "claim_1dfe91c859b2fdcb9ad6"
+    ],
+    "profile_url": [
+      "claim_1dfe91c859b2fdcb9ad6"
+    ],
+    "research_directions": [
+      "claim_1dfe91c859b2fdcb9ad6"
+    ],
+    "status": [
+      "claim_1dfe91c859b2fdcb9ad6"
+    ],
+    "title": [
+      "claim_1dfe91c859b2fdcb9ad6"
+    ]
+  },
+  "id": "mentor_82f2a18bae83e7c00e5c",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1dfe91c859b2fdcb9ad6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a91162610f02f8c6500c",
+      "claim_ids": [
+        "claim_1dfe91c859b2fdcb9ad6"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zffeng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、知识发现、语义计算、数据挖掘、信息检索、社交网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

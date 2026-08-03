@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9b45ddd008ff29ea762e"
+      ],
+      "ended_at": null,
+      "id": "aff_c3281e1ef7900516c066",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9b45ddd008ff29ea762e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c3281e1ef7900516c066",
+      "claim_ids": [
+        "claim_9b45ddd008ff29ea762e"
+      ],
+      "is_primary": true,
+      "normalized_value": "idcliyuhua@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "idcliyuhua@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9b45ddd008ff29ea762e"
+    ],
+    "email": [
+      "claim_9b45ddd008ff29ea762e"
+    ],
+    "name": [
+      "claim_9b45ddd008ff29ea762e"
+    ],
+    "profile_url": [
+      "claim_9b45ddd008ff29ea762e"
+    ],
+    "research_directions": [
+      "claim_9b45ddd008ff29ea762e"
+    ],
+    "status": [
+      "claim_9b45ddd008ff29ea762e"
+    ],
+    "title": [
+      "claim_9b45ddd008ff29ea762e"
+    ]
+  },
+  "id": "mentor_b372104bbb61e12a887a",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9b45ddd008ff29ea762e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李玉华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c3281e1ef7900516c066",
+      "claim_ids": [
+        "claim_9b45ddd008ff29ea762e"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yhli/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘、社会网络分析挖掘、大数据分析挖掘、机器学习、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

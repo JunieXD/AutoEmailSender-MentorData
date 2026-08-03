@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3fba24d5667636413968"
+      ],
+      "ended_at": null,
+      "id": "aff_905d91948cb8cb72dd1f",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_3c5550a51b34133dd5c5",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3fba24d5667636413968"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_905d91948cb8cb72dd1f",
+      "claim_ids": [
+        "claim_3fba24d5667636413968"
+      ],
+      "is_primary": true,
+      "normalized_value": "wufei@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wufei@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3fba24d5667636413968"
+    ],
+    "email": [
+      "claim_3fba24d5667636413968"
+    ],
+    "name": [
+      "claim_3fba24d5667636413968"
+    ],
+    "profile_url": [
+      "claim_3fba24d5667636413968"
+    ],
+    "research_directions": [
+      "claim_3fba24d5667636413968"
+    ],
+    "status": [
+      "claim_3fba24d5667636413968"
+    ],
+    "title": [
+      "claim_3fba24d5667636413968"
+    ]
+  },
+  "id": "mentor_978360bc8a506bfc6e87",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3fba24d5667636413968"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴非"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_905d91948cb8cb72dd1f",
+      "claim_ids": [
+        "claim_3fba24d5667636413968"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wufei1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能存储、固态存储、新型非易失存储系统结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

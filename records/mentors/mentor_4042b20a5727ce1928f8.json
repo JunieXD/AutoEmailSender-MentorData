@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_603abb58f51615727911"
+      ],
+      "ended_at": null,
+      "id": "aff_133a57734a2c7f0722ba",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_603abb58f51615727911"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_133a57734a2c7f0722ba",
+      "claim_ids": [
+        "claim_603abb58f51615727911"
+      ],
+      "is_primary": true,
+      "normalized_value": "longzh@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "longzh@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_603abb58f51615727911"
+    ],
+    "email": [
+      "claim_603abb58f51615727911"
+    ],
+    "name": [
+      "claim_603abb58f51615727911"
+    ],
+    "profile_url": [
+      "claim_603abb58f51615727911"
+    ],
+    "research_directions": [
+      "claim_603abb58f51615727911"
+    ],
+    "status": [
+      "claim_603abb58f51615727911"
+    ],
+    "title": [
+      "claim_603abb58f51615727911"
+    ]
+  },
+  "id": "mentor_4042b20a5727ce1928f8",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_603abb58f51615727911"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_133a57734a2c7f0722ba",
+      "claim_ids": [
+        "claim_603abb58f51615727911"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/ZhengLong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能大模型、图计算、数据流等新兴领域系统结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

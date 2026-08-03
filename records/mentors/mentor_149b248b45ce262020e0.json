@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0a684e8acd3831243d4d"
+      ],
+      "ended_at": null,
+      "id": "aff_8a233a5825d79c9d5a60",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0a684e8acd3831243d4d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8a233a5825d79c9d5a60",
+      "claim_ids": [
+        "claim_0a684e8acd3831243d4d"
+      ],
+      "is_primary": true,
+      "normalized_value": "viviawangwei@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "viviawangwei@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0a684e8acd3831243d4d"
+    ],
+    "email": [
+      "claim_0a684e8acd3831243d4d"
+    ],
+    "name": [
+      "claim_0a684e8acd3831243d4d"
+    ],
+    "profile_url": [
+      "claim_0a684e8acd3831243d4d"
+    ],
+    "research_directions": [
+      "claim_0a684e8acd3831243d4d"
+    ],
+    "status": [
+      "claim_0a684e8acd3831243d4d"
+    ],
+    "title": [
+      "claim_0a684e8acd3831243d4d"
+    ]
+  },
+  "id": "mentor_149b248b45ce262020e0",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0a684e8acd3831243d4d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王蔚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8a233a5825d79c9d5a60",
+      "claim_ids": [
+        "claim_0a684e8acd3831243d4d"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/vivia_wangwei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据安全、云安全、网络编码"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

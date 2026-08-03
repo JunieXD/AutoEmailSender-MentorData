@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_42a12c68d1a799f048e0"
+      ],
+      "ended_at": null,
+      "id": "aff_23fac81e656eb58990c9",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_42a12c68d1a799f048e0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_23fac81e656eb58990c9",
+      "claim_ids": [
+        "claim_42a12c68d1a799f048e0"
+      ],
+      "is_primary": true,
+      "normalized_value": "wubin200@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wubin200@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_42a12c68d1a799f048e0"
+    ],
+    "email": [
+      "claim_42a12c68d1a799f048e0"
+    ],
+    "name": [
+      "claim_42a12c68d1a799f048e0"
+    ],
+    "profile_url": [
+      "claim_42a12c68d1a799f048e0"
+    ],
+    "research_directions": [
+      "claim_42a12c68d1a799f048e0"
+    ],
+    "status": [
+      "claim_42a12c68d1a799f048e0"
+    ],
+    "title": [
+      "claim_42a12c68d1a799f048e0"
+    ]
+  },
+  "id": "mentor_78911f5367d2fe213aa2",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_42a12c68d1a799f048e0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴兵"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_23fac81e656eb58990c9",
+      "claim_ids": [
+        "claim_42a12c68d1a799f048e0"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/%7EQvEFbe/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机系统结构、非易失存储技术、存算融合技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

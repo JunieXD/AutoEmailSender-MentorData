@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0ad13cba3bdf806674f9"
+      ],
+      "ended_at": null,
+      "id": "aff_737aa6959940fee7351d",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_0ad13cba3bdf806674f9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_737aa6959940fee7351d",
+      "claim_ids": [
+        "claim_0ad13cba3bdf806674f9"
+      ],
+      "is_primary": true,
+      "normalized_value": "pcyao@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pcyao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0ad13cba3bdf806674f9"
+    ],
+    "email": [
+      "claim_0ad13cba3bdf806674f9"
+    ],
+    "name": [
+      "claim_0ad13cba3bdf806674f9"
+    ],
+    "profile_url": [
+      "claim_0ad13cba3bdf806674f9"
+    ],
+    "research_directions": [
+      "claim_0ad13cba3bdf806674f9"
+    ],
+    "status": [
+      "claim_0ad13cba3bdf806674f9"
+    ]
+  },
+  "id": "mentor_f46addd541464bb66614",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0ad13cba3bdf806674f9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚鹏程"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_737aa6959940fee7351d",
+      "claim_ids": [
+        "claim_0ad13cba3bdf806674f9"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yaopengcheng1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机体系结构和智能计算加速器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": null,
+  "updated_at": "2026-08-03T12:54:04Z"
+}

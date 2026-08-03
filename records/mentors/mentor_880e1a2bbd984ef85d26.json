@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a2b98e7c5048ee365ee8"
+      ],
+      "ended_at": null,
+      "id": "aff_f26c666db09c42d7d789",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a2b98e7c5048ee365ee8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f26c666db09c42d7d789",
+      "claim_ids": [
+        "claim_a2b98e7c5048ee365ee8"
+      ],
+      "is_primary": true,
+      "normalized_value": "guohx@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guohx@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a2b98e7c5048ee365ee8"
+    ],
+    "email": [
+      "claim_a2b98e7c5048ee365ee8"
+    ],
+    "name": [
+      "claim_a2b98e7c5048ee365ee8"
+    ],
+    "profile_url": [
+      "claim_a2b98e7c5048ee365ee8"
+    ],
+    "research_directions": [
+      "claim_a2b98e7c5048ee365ee8"
+    ],
+    "status": [
+      "claim_a2b98e7c5048ee365ee8"
+    ],
+    "title": [
+      "claim_a2b98e7c5048ee365ee8"
+    ]
+  },
+  "id": "mentor_880e1a2bbd984ef85d26",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a2b98e7c5048ee365ee8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭红星"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f26c666db09c42d7d789",
+      "claim_ids": [
+        "claim_a2b98e7c5048ee365ee8"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/guohongxing/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "视频编码与图像识别、网络流媒体系统与应用、认知无线网络与位置服务"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

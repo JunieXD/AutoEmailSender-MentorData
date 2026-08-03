@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3e0821299e1e934fe6e2"
+      ],
+      "ended_at": null,
+      "id": "aff_17f66f5243b30869c24a",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_3e0821299e1e934fe6e2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_17f66f5243b30869c24a",
+      "claim_ids": [
+        "claim_3e0821299e1e934fe6e2"
+      ],
+      "is_primary": true,
+      "normalized_value": "lr@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lr@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3e0821299e1e934fe6e2"
+    ],
+    "email": [
+      "claim_3e0821299e1e934fe6e2"
+    ],
+    "name": [
+      "claim_3e0821299e1e934fe6e2"
+    ],
+    "profile_url": [
+      "claim_3e0821299e1e934fe6e2"
+    ],
+    "research_directions": [
+      "claim_3e0821299e1e934fe6e2"
+    ],
+    "status": [
+      "claim_3e0821299e1e934fe6e2"
+    ],
+    "title": [
+      "claim_3e0821299e1e934fe6e2"
+    ]
+  },
+  "id": "mentor_22ece581270bb0eb8829",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3e0821299e1e934fe6e2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李榕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_17f66f5243b30869c24a",
+      "claim_ids": [
+        "claim_3e0821299e1e934fe6e2"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/lirong7/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "VR及其应用、人工智能及大数据分析、图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

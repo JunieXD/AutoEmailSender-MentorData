@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b4ca9964a143be36ceea"
+      ],
+      "ended_at": null,
+      "id": "aff_3bd08d1c640d90fda349",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_b4ca9964a143be36ceea"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3bd08d1c640d90fda349",
+      "claim_ids": [
+        "claim_b4ca9964a143be36ceea"
+      ],
+      "is_primary": true,
+      "normalized_value": "hanghuang@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hanghuang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b4ca9964a143be36ceea"
+    ],
+    "email": [
+      "claim_b4ca9964a143be36ceea"
+    ],
+    "name": [
+      "claim_b4ca9964a143be36ceea"
+    ],
+    "profile_url": [
+      "claim_b4ca9964a143be36ceea"
+    ],
+    "recent_papers": [
+      "claim_b4ca9964a143be36ceea"
+    ],
+    "research_directions": [
+      "claim_b4ca9964a143be36ceea"
+    ],
+    "status": [
+      "claim_b4ca9964a143be36ceea"
+    ],
+    "title": [
+      "claim_b4ca9964a143be36ceea"
+    ]
+  },
+  "id": "mentor_df389bf9dae067a8f1e5",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b4ca9964a143be36ceea"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄航"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3bd08d1c640d90fda349",
+      "claim_ids": [
+        "claim_b4ca9964a143be36ceea"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/huanghang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hang Huang",
+    "Yuqing Zhao",
+    "Jia Rao",
+    "Song Wu",
+    "Hai Jin",
+    "Duoqiang Wang",
+    "Suo Kun",
+    "Lisong Pan"
+  ],
+  "research_directions": [
+    "虚拟化技术、无服务器计算与容器技术、算力网底座系统优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

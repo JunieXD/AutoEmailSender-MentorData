@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f7c9cd90f8890cc7d7ee"
+      ],
+      "ended_at": null,
+      "id": "aff_42af4ba1c07f3c4dc9a1",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_3c5550a51b34133dd5c5",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f7c9cd90f8890cc7d7ee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42af4ba1c07f3c4dc9a1",
+      "claim_ids": [
+        "claim_f7c9cd90f8890cc7d7ee"
+      ],
+      "is_primary": true,
+      "normalized_value": "jianzhou@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jianzhou@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f7c9cd90f8890cc7d7ee"
+    ],
+    "email": [
+      "claim_f7c9cd90f8890cc7d7ee"
+    ],
+    "name": [
+      "claim_f7c9cd90f8890cc7d7ee"
+    ],
+    "profile_url": [
+      "claim_f7c9cd90f8890cc7d7ee"
+    ],
+    "research_directions": [
+      "claim_f7c9cd90f8890cc7d7ee"
+    ],
+    "status": [
+      "claim_f7c9cd90f8890cc7d7ee"
+    ],
+    "title": [
+      "claim_f7c9cd90f8890cc7d7ee"
+    ]
+  },
+  "id": "mentor_3cfac2e6f0d053c83b1c",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f7c9cd90f8890cc7d7ee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周健"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42af4ba1c07f3c4dc9a1",
+      "claim_ids": [
+        "claim_f7c9cd90f8890cc7d7ee"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/jianzhou/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型存储和存算传融合技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

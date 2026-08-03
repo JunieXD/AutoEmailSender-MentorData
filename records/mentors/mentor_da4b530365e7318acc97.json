@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3d5671a948f868929868"
+      ],
+      "ended_at": null,
+      "id": "aff_fe324f758dad4fb019ca",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3d5671a948f868929868"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fe324f758dad4fb019ca",
+      "claim_ids": [
+        "claim_3d5671a948f868929868"
+      ],
+      "is_primary": true,
+      "normalized_value": "hudq024@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hudq024@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3d5671a948f868929868"
+    ],
+    "email": [
+      "claim_3d5671a948f868929868"
+    ],
+    "name": [
+      "claim_3d5671a948f868929868"
+    ],
+    "profile_url": [
+      "claim_3d5671a948f868929868"
+    ],
+    "research_directions": [
+      "claim_3d5671a948f868929868"
+    ],
+    "status": [
+      "claim_3d5671a948f868929868"
+    ],
+    "title": [
+      "claim_3d5671a948f868929868"
+    ]
+  },
+  "id": "mentor_da4b530365e7318acc97",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3d5671a948f868929868"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡迪青"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fe324f758dad4fb019ca",
+      "claim_ids": [
+        "claim_3d5671a948f868929868"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/hudiqing/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "海量数据存储系统、新型存储技术与器件、光存储技术及系统、嵌入式系统与SoC设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

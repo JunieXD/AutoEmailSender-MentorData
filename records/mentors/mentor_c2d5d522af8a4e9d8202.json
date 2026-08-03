@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_db2c4f328b95b7dd3ea5"
+      ],
+      "ended_at": null,
+      "id": "aff_51d0dec200eefc55fda4",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_db2c4f328b95b7dd3ea5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_51d0dec200eefc55fda4",
+      "claim_ids": [
+        "claim_db2c4f328b95b7dd3ea5"
+      ],
+      "is_primary": true,
+      "normalized_value": "dyao@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dyao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_db2c4f328b95b7dd3ea5"
+    ],
+    "email": [
+      "claim_db2c4f328b95b7dd3ea5"
+    ],
+    "name": [
+      "claim_db2c4f328b95b7dd3ea5"
+    ],
+    "profile_url": [
+      "claim_db2c4f328b95b7dd3ea5"
+    ],
+    "research_directions": [
+      "claim_db2c4f328b95b7dd3ea5"
+    ],
+    "status": [
+      "claim_db2c4f328b95b7dd3ea5"
+    ],
+    "title": [
+      "claim_db2c4f328b95b7dd3ea5"
+    ]
+  },
+  "id": "mentor_c2d5d522af8a4e9d8202",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_db2c4f328b95b7dd3ea5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚德中"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_51d0dec200eefc55fda4",
+      "claim_ids": [
+        "claim_db2c4f328b95b7dd3ea5"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/dezhong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "分布式机器学习、联邦学习、边缘智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

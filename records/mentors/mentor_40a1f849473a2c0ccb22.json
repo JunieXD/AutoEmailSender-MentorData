@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5992b476ad80c32b0de5"
+      ],
+      "ended_at": null,
+      "id": "aff_7a1bdc88d7b788a72c54",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5992b476ad80c32b0de5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7a1bdc88d7b788a72c54",
+      "claim_ids": [
+        "claim_5992b476ad80c32b0de5"
+      ],
+      "is_primary": true,
+      "normalized_value": "zgmeng@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zgmeng@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5992b476ad80c32b0de5"
+    ],
+    "email": [
+      "claim_5992b476ad80c32b0de5"
+    ],
+    "name": [
+      "claim_5992b476ad80c32b0de5"
+    ],
+    "profile_url": [
+      "claim_5992b476ad80c32b0de5"
+    ],
+    "research_directions": [
+      "claim_5992b476ad80c32b0de5"
+    ],
+    "status": [
+      "claim_5992b476ad80c32b0de5"
+    ],
+    "title": [
+      "claim_5992b476ad80c32b0de5"
+    ]
+  },
+  "id": "mentor_40a1f849473a2c0ccb22",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5992b476ad80c32b0de5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张猛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7a1bdc88d7b788a72c54",
+      "claim_ids": [
+        "claim_5992b476ad80c32b0de5"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zhangmeng12345/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "闪存存储、新型非易失存储、全息光存储和纠错编码"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

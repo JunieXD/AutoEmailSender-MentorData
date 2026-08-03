@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9166768a680dbee185dd"
+      ],
+      "ended_at": null,
+      "id": "aff_dbd2fb7886e296425001",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9166768a680dbee185dd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dbd2fb7886e296425001",
+      "claim_ids": [
+        "claim_9166768a680dbee185dd"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuhao_zhang@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shuhao_zhang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9166768a680dbee185dd"
+    ],
+    "email": [
+      "claim_9166768a680dbee185dd"
+    ],
+    "name": [
+      "claim_9166768a680dbee185dd"
+    ],
+    "profile_url": [
+      "claim_9166768a680dbee185dd"
+    ],
+    "research_directions": [
+      "claim_9166768a680dbee185dd"
+    ],
+    "status": [
+      "claim_9166768a680dbee185dd"
+    ],
+    "title": [
+      "claim_9166768a680dbee185dd"
+    ]
+  },
+  "id": "mentor_53a33cb356d6a66af6b1",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9166768a680dbee185dd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张书豪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dbd2fb7886e296425001",
+      "claim_ids": [
+        "claim_9166768a680dbee185dd"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/ZHANG_SHUHAO/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大模型 KV Cache 与内存系统、大模型分布式推理与服务调度、大模型推理引擎与系统优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

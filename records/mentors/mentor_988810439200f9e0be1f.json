@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e97ad5ccdf3037d38f02"
+      ],
+      "ended_at": null,
+      "id": "aff_80f8d7f7252e6b4b38d1",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e97ad5ccdf3037d38f02"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_80f8d7f7252e6b4b38d1",
+      "claim_ids": [
+        "claim_e97ad5ccdf3037d38f02"
+      ],
+      "is_primary": true,
+      "normalized_value": "tengzhang@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tengzhang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e97ad5ccdf3037d38f02"
+    ],
+    "email": [
+      "claim_e97ad5ccdf3037d38f02"
+    ],
+    "name": [
+      "claim_e97ad5ccdf3037d38f02"
+    ],
+    "profile_url": [
+      "claim_e97ad5ccdf3037d38f02"
+    ],
+    "research_directions": [
+      "claim_e97ad5ccdf3037d38f02"
+    ],
+    "status": [
+      "claim_e97ad5ccdf3037d38f02"
+    ],
+    "title": [
+      "claim_e97ad5ccdf3037d38f02"
+    ]
+  },
+  "id": "mentor_988810439200f9e0be1f",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e97ad5ccdf3037d38f02"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张腾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_80f8d7f7252e6b4b38d1",
+      "claim_ids": [
+        "claim_e97ad5ccdf3037d38f02"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zhangteng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习和数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}

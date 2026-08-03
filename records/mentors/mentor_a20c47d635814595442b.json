@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_64d7b7fbe3cc4de4b2af"
+      ],
+      "ended_at": null,
+      "id": "aff_a4df6b9f1110ba890c5b",
+      "is_primary": true,
+      "observed_at": "2026-08-03T12:54:04Z",
+      "organization_id": "org_auto_ff647878db706f701703",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_64d7b7fbe3cc4de4b2af"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a4df6b9f1110ba890c5b",
+      "claim_ids": [
+        "claim_64d7b7fbe3cc4de4b2af"
+      ],
+      "is_primary": true,
+      "normalized_value": "hulong@hust.edu.cn",
+      "observed_at": "2026-08-03T12:54:04Z",
+      "source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hulong@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-03T12:54:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_64d7b7fbe3cc4de4b2af"
+    ],
+    "email": [
+      "claim_64d7b7fbe3cc4de4b2af"
+    ],
+    "name": [
+      "claim_64d7b7fbe3cc4de4b2af"
+    ],
+    "profile_url": [
+      "claim_64d7b7fbe3cc4de4b2af"
+    ],
+    "research_directions": [
+      "claim_64d7b7fbe3cc4de4b2af"
+    ],
+    "status": [
+      "claim_64d7b7fbe3cc4de4b2af"
+    ],
+    "title": [
+      "claim_64d7b7fbe3cc4de4b2af"
+    ]
+  },
+  "id": "mentor_a20c47d635814595442b",
+  "last_verified_at": "2026-08-03T12:54:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_64d7b7fbe3cc4de4b2af"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a4df6b9f1110ba890c5b",
+      "claim_ids": [
+        "claim_64d7b7fbe3cc4de4b2af"
+      ],
+      "observed_at": "2026-08-03T12:54:04Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/hulong/zh_CN/index/585065/list/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "情感计算、基于深度强化学习的博弈、决策、对抗、协同、边缘计算、软件定义网络、大数据"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-03T12:54:04Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.hust.edu.cn/szdw/jsml/axmpyszmlb.htm",
+  "title": "教授",
+  "updated_at": "2026-08-03T12:54:04Z"
+}
