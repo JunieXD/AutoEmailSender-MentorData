@@ -13,7 +13,7 @@ from .proposals import (
     candidate_from_package_record,
 )
 from .repository import RepositoryData, load_repository
-from .uploads import parse_community_package
+from .uploads import parse_community_package_rows
 
 BATCH_FORM_LABELS = {"社区共享包", "补充说明", "投稿确认"}
 
@@ -22,10 +22,15 @@ BATCH_FORM_LABELS = {"社区共享包", "补充说明", "投稿确认"}
 class BatchProposalResult:
     paths: tuple[Path, ...]
     proposals: tuple[dict[str, Any], ...]
+    invalid_rows: tuple[dict[str, Any], ...]
 
     @property
     def all_auto_eligible(self) -> bool:
-        return bool(self.proposals) and all(item["auto_eligible"] for item in self.proposals)
+        return (
+            bool(self.proposals)
+            and not self.invalid_rows
+            and all(item["auto_eligible"] for item in self.proposals)
+        )
 
 
 def parse_batch_form(event: GitHubIssueEvent) -> dict[str, str]:
@@ -74,29 +79,59 @@ def create_batch_proposals(
 ) -> BatchProposalResult:
     data: RepositoryData = load_repository(root, validate=True)
     parse_batch_form(event)
-    records = parse_community_package(package_path, data.policy)
-    if not records:
+    package_rows = parse_community_package_rows(package_path, data.policy)
+    if not package_rows:
         raise SubmissionError("批量共享包没有可投稿的数据行")
 
     output_directory.mkdir(parents=True, exist_ok=True)
     proposals: list[dict[str, Any]] = []
     paths: list[Path] = []
-    for batch_row, record in enumerate(records, start=1):
-        submitted, review_reasons = candidate_from_package_record(data, record)
+    invalid_rows: list[dict[str, Any]] = []
+    for package_row in package_rows:
+        record = package_row.record
+        missing = [field for field in ("name", "email", "source_url") if not record[field]]
+        if missing:
+            invalid_rows.append(
+                {
+                    "batch_row": package_row.batch_row,
+                    "sheet_row": package_row.sheet_row,
+                    "reason_code": "missing_required_fields",
+                    "message": f"缺少必填字段：{', '.join(missing)}",
+                    "submitted": record,
+                }
+            )
+            continue
+        try:
+            submitted, review_reasons = candidate_from_package_record(data, record)
+        except SubmissionError as error:
+            invalid_rows.append(
+                {
+                    "batch_row": package_row.batch_row,
+                    "sheet_row": package_row.sheet_row,
+                    "reason_code": "invalid_row_data",
+                    "message": str(error),
+                    "submitted": record,
+                }
+            )
+            continue
         proposal = build_mentor_proposal(
             data,
             event,
             actor,
             submitted=submitted,
             review_reasons=review_reasons,
-            proposal_id=f"proposal_issue_{event.number}_row_{batch_row}",
-            batch_row=batch_row,
+            proposal_id=f"proposal_issue_{event.number}_row_{package_row.batch_row}",
+            batch_row=package_row.batch_row,
         )
-        path = output_directory / f"issue-{event.number}-row-{batch_row:04d}.json"
+        path = output_directory / f"issue-{event.number}-row-{package_row.batch_row:04d}.json"
         write_json_atomic(path, proposal)
         proposals.append(proposal)
         paths.append(path)
         if proposal["target_mentor_id"] is None:
             data.mentors.append(_pending_mentor(proposal))
 
-    return BatchProposalResult(paths=tuple(paths), proposals=tuple(proposals))
+    return BatchProposalResult(
+        paths=tuple(paths),
+        proposals=tuple(proposals),
+        invalid_rows=tuple(invalid_rows),
+    )

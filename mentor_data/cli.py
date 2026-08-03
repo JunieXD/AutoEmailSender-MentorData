@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import tempfile
 from datetime import UTC, datetime
@@ -11,7 +12,13 @@ from .batch import create_batch_proposals, parse_batch_form
 from .builder import build_dataset
 from .errors import MentorDataError, RepositoryValidationError
 from .github_events import GitHubActor, fetch_github_actor, load_issue_event, parse_datetime
-from .io_utils import load_json, load_yaml
+from .io_utils import load_json, load_yaml, write_json_atomic
+from .organization_review import (
+    apply_organization_review,
+    create_organization_review_manifest,
+    load_review_comment,
+    load_review_pull,
+)
 from .proposals import (
     check_proposal,
     check_proposal_set,
@@ -85,6 +92,14 @@ def build_parser() -> argparse.ArgumentParser:
     prepare_batch_parser.add_argument("--output", required=True)
     prepare_batch_parser.add_argument("--root")
     prepare_batch_parser.add_argument("--actor-json")
+    prepare_batch_parser.add_argument(
+        "--review-output",
+        help="写入按机构分组的批量审核清单",
+    )
+    prepare_batch_parser.add_argument(
+        "--proposal-directory",
+        help="审核分支中存放本批提案的仓库相对目录",
+    )
     prepare_batch_parser.add_argument(
         "--package",
         help="仅用于本地测试；生产环境省略并从经过校验的 GitHub 附件下载",
@@ -167,6 +182,35 @@ def build_parser() -> argparse.ArgumentParser:
     revoke_parser.add_argument("--apply", action="store_true")
     revoke_parser.add_argument("--root")
 
+    inspect_review_comment_parser = subparsers.add_parser(
+        "inspect-organization-review-comment",
+        help="从受信任的 PR 评论事件中提取机构审核决策",
+    )
+    inspect_review_comment_parser.add_argument("--event", required=True)
+    inspect_review_comment_parser.add_argument("--output", required=True)
+    inspect_review_comment_parser.add_argument("--github-output")
+    inspect_review_comment_parser.add_argument("--root")
+
+    inspect_review_pull_parser = subparsers.add_parser(
+        "inspect-organization-review-pull",
+        help="校验机构审核 Pull Request 的仓库与内部分支",
+    )
+    inspect_review_pull_parser.add_argument("--pull", required=True)
+    inspect_review_pull_parser.add_argument("--expected-repository", required=True)
+    inspect_review_pull_parser.add_argument("--expected-number", required=True, type=int)
+    inspect_review_pull_parser.add_argument("--github-output")
+
+    apply_review_parser = subparsers.add_parser(
+        "apply-organization-review",
+        help="将维护者的机构审核决策安全应用到内部批量投稿分支",
+    )
+    apply_review_parser.add_argument("--event", required=True)
+    apply_review_parser.add_argument("--pull", required=True)
+    apply_review_parser.add_argument("--expected-repository", required=True)
+    apply_review_parser.add_argument("--trusted-root", required=True)
+    apply_review_parser.add_argument("--github-output")
+    apply_review_parser.add_argument("--root")
+
     return parser
 
 
@@ -189,6 +233,25 @@ def _actor_from_json(path: Path) -> GitHubActor:
     )
 
 
+def _write_github_outputs(path_value: str | None, values: dict[str, str | int | bool]) -> None:
+    output_value = path_value or os.environ.get("GITHUB_OUTPUT")
+    if output_value is None:
+        return
+    lines: list[str] = []
+    for key, raw_value in values.items():
+        if not key.replace("_", "").isalnum():
+            raise ValueError("GitHub output 名称无效")
+        if isinstance(raw_value, bool):
+            value = "true" if raw_value else "false"
+        else:
+            value = str(raw_value)
+        if "\n" in value or "\r" in value:
+            raise ValueError(f"GitHub output {key} 包含换行")
+        lines.append(f"{key}={value}\n")
+    with Path(output_value).open("a", encoding="utf-8") as handle:
+        handle.writelines(lines)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
@@ -204,6 +267,9 @@ def main(argv: list[str] | None = None) -> int:
                         "mentors": len(data.mentors),
                         "claims": len(data.claims),
                         "resolutions": len(data.resolutions),
+                        "organization_review_resolutions": len(
+                            data.organization_review_resolutions
+                        ),
                         "proposals": len(data.proposals),
                         "report_proposals": len(data.report_proposals),
                     },
@@ -283,13 +349,31 @@ def main(argv: list[str] | None = None) -> int:
                     package_path=package_path,
                     output_directory=Path(args.output),
                 )
+                review_path: Path | None = None
+                if args.review_output:
+                    proposal_directory = (
+                        args.proposal_directory
+                        or f"proposals/batch-issue-{event.number}"
+                    )
+                    review_path = Path(args.review_output)
+                    create_organization_review_manifest(
+                        root,
+                        event,
+                        result,
+                        proposal_directory=proposal_directory,
+                        output_path=review_path,
+                    )
+                elif args.proposal_directory:
+                    raise ValueError("--proposal-directory 只能与 --review-output 一起使用")
             print(
                 json.dumps(
                     {
                         "ok": True,
                         "proposal_count": len(result.paths),
+                        "invalid_row_count": len(result.invalid_rows),
                         "all_auto_eligible": result.all_auto_eligible,
                         "proposals": [str(path) for path in result.paths],
+                        "organization_review": str(review_path) if review_path else None,
                     },
                     ensure_ascii=False,
                 )
@@ -395,6 +479,80 @@ def main(argv: list[str] | None = None) -> int:
                 apply=args.apply,
             )
             print(json.dumps({"ok": True, **result}, ensure_ascii=False))
+            return 0
+        if args.command == "inspect-organization-review-comment":
+            review_comment = load_review_comment(root, Path(args.event))
+            write_json_atomic(Path(args.output), review_comment.decision)
+            _write_github_outputs(
+                args.github_output,
+                {
+                    "pull_number": review_comment.pull_request_number,
+                    "comment_id": review_comment.comment_id,
+                },
+            )
+            print(
+                json.dumps(
+                    {
+                        "ok": True,
+                        "pull_request_number": review_comment.pull_request_number,
+                        "comment_id": review_comment.comment_id,
+                    },
+                    ensure_ascii=False,
+                )
+            )
+            return 0
+        if args.command == "inspect-organization-review-pull":
+            review_pull = load_review_pull(
+                Path(args.pull),
+                expected_repository=args.expected_repository,
+                expected_number=args.expected_number,
+            )
+            _write_github_outputs(
+                args.github_output,
+                {
+                    "head_ref": review_pull.head_ref,
+                    "issue_number": review_pull.issue_number,
+                },
+            )
+            print(
+                json.dumps(
+                    {
+                        "ok": True,
+                        "pull_request_number": review_pull.number,
+                        "issue_number": review_pull.issue_number,
+                        "head_ref": review_pull.head_ref,
+                    },
+                    ensure_ascii=False,
+                )
+            )
+            return 0
+        if args.command == "apply-organization-review":
+            trusted_root = _repository_root(args.trusted_root)
+            review_comment = load_review_comment(trusted_root, Path(args.event))
+            review_pull = load_review_pull(
+                Path(args.pull),
+                expected_repository=args.expected_repository,
+                expected_number=review_comment.pull_request_number,
+            )
+            result = apply_organization_review(
+                root,
+                review_comment,
+                review_pull,
+                schema_root=trusted_root,
+            )
+            outputs = {
+                "issue_number": review_pull.issue_number,
+                "head_ref": review_pull.head_ref,
+                "remaining_proposals": result.remaining_proposals,
+                "mapped_proposals": result.mapped_proposals,
+                "rejected_proposals": result.rejected_proposals,
+                "created_organizations": result.created_organizations,
+                "updated_organizations": result.updated_organizations,
+                "invalid_rows": result.invalid_rows,
+                "ready_for_finalization": result.ready_for_finalization,
+            }
+            _write_github_outputs(args.github_output, outputs)
+            print(json.dumps({"ok": True, **outputs}, ensure_ascii=False))
             return 0
     except RepositoryValidationError as error:
         for issue in error.issues:

@@ -43,11 +43,15 @@ jobs:
         run: |
           uv run mentor-data prepare-batch \
             --event "$GITHUB_EVENT_PATH" \
-            --output .work/proposals
+            --output .work/proposals \
+            --review-output .work/organization-review.json \
+            --proposal-directory "proposals/batch-issue-${ISSUE_NUMBER}"
 
       - name: Read trusted proposal-set metadata
         id: metadata
-        run: uv run python scripts/proposal_set_metadata.py .work/proposals
+        run: >-
+          uv run python scripts/proposal_set_metadata.py .work/proposals
+          --review .work/organization-review.json
 
       - name: Finalize canonical data for auto-eligible batch
         if: steps.metadata.outputs.all_auto_eligible == 'true'
@@ -60,17 +64,22 @@ jobs:
         if: steps.metadata.outputs.all_auto_eligible != 'true'
         run: |
           mkdir -p "proposals/batch-issue-${ISSUE_NUMBER}"
-          cp .work/proposals/*.json "proposals/batch-issue-${ISSUE_NUMBER}/"
+          mkdir -p reviews/pending
+          cp -R .work/proposals/. "proposals/batch-issue-${ISSUE_NUMBER}/"
+          cp .work/organization-review.json \
+            "reviews/pending/batch-issue-${ISSUE_NUMBER}.json"
 
       - name: Create internal review branch and Pull Request
         id: pull_request
         env:
           ALL_AUTO_ELIGIBLE: ${{ steps.metadata.outputs.all_auto_eligible }}
           PROPOSAL_COUNT: ${{ steps.metadata.outputs.proposal_count }}
+          INVALID_ROW_COUNT: ${{ steps.metadata.outputs.invalid_row_count }}
         run: |
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
           case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
           case "$PROPOSAL_COUNT" in ''|*[!0-9]*) exit 1 ;; esac
+          case "$INVALID_ROW_COUNT" in ''|*[!0-9]*) exit 1 ;; esac
           if [ "$ALL_AUTO_ELIGIBLE" = "true" ]; then
             BRANCH="automatic-batch/issue-${ISSUE_NUMBER}-${RUN_ID}"
           else
@@ -80,6 +89,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -c "$BRANCH"
           git add claims records proposals
+          if [ -d reviews ]; then
+            git add reviews
+          fi
           git commit -m "data: prepare batch submission #${ISSUE_NUMBER}"
           git push origin "$BRANCH"
           if [ "$ALL_AUTO_ELIGIBLE" = "true" ]; then
@@ -87,26 +99,33 @@ jobs:
               --base main \
               --head "$BRANCH" \
               --title "自动处理批量导师投稿 #${ISSUE_NUMBER}" \
-              --body "共 ${PROPOSAL_COUNT} 行。由受信任默认分支工作流生成；关联 Issue #${ISSUE_NUMBER}。")
+              --body "共 ${PROPOSAL_COUNT} 条有效提案。由受信任默认分支工作流生成；关联 Issue #${ISSUE_NUMBER}。")
             gh pr merge "$PR_URL" --squash --delete-branch
+            REVIEW_URL="$PR_URL"
           else
             PR_URL=$(gh pr create \
               --draft \
               --base main \
               --head "$BRANCH" \
               --title "审核批量导师投稿 #${ISSUE_NUMBER}" \
-              --body "共 ${PROPOSAL_COUNT} 行。请逐项核对 accepted、target_mentor_id、机构映射和 review_reasons；关联 Issue #${ISSUE_NUMBER}。")
+              --body "共 ${PROPOSAL_COUNT} 条有效提案、${INVALID_ROW_COUNT} 条普通无效行。请先使用机构审核助手统一学校与学院命名；关联 Issue #${ISSUE_NUMBER}。")
+            PR_NUMBER="${PR_URL##*/}"
+            case "$PR_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+            REVIEW_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/AutoEmailSender-MentorData/review.html?pr=${PR_NUMBER}"
           fi
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+          echo "review_url=$REVIEW_URL" >> "$GITHUB_OUTPUT"
 
       - name: Publish auto-eligible canonical batch
         if: steps.metadata.outputs.all_auto_eligible == 'true'
         run: gh workflow run pages.yml --ref main
 
       - name: Link review Pull Request from Issue
+        env:
+          REVIEW_URL: ${{ steps.pull_request.outputs.review_url }}
         run: |
           gh issue comment "$ISSUE_NUMBER" \
-            --body "批量文件已安全解析为逐行提案，原始附件不会写入仓库。审核记录：${{ steps.pull_request.outputs.pr_url }}"
+            --body "批量文件已安全解析，原始附件不会写入仓库。下一步：${REVIEW_URL}"
 
       - name: Explain validation failure without echoing untrusted data
         if: failure()

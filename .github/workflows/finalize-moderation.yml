@@ -63,6 +63,8 @@ jobs:
             "proposals/batch-issue-${{ steps.branch.outputs.issue_number }}" \
             --moderator-id "$MERGED_BY_ID"
           git rm -r "proposals/batch-issue-${{ steps.branch.outputs.issue_number }}"
+          git rm --ignore-unmatch \
+            "reviews/pending/batch-issue-${{ steps.branch.outputs.issue_number }}.json"
 
       - name: Finalize correction decision
         if: steps.branch.outputs.kind == 'report'
@@ -83,6 +85,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add claims records registry reports proposals
+          if [ -d reviews ]; then
+            git add reviews
+          fi
           git commit -m "data: finalize moderation for issue #${{ steps.branch.outputs.issue_number }}"
           git push origin HEAD:main
 

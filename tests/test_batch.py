@@ -92,3 +92,47 @@ def test_batch_duplicates_become_two_claims_for_one_mentor(tmp_path) -> None:
     assert len(data.mentors) == 1
     assert len(data.claims) == 2
     assert len(data.mentors[0]["claim_ids"]) == 2
+
+
+def test_invalid_row_does_not_discard_other_batch_rows(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    package_path = tmp_path / "mixed.csv"
+    valid = [
+        "有效导师",
+        "valid@example.edu",
+        "教授",
+        "示例大学",
+        "计算机学院",
+        "",
+        "机器学习",
+        "",
+        "",
+        "https://cs.example.edu/faculty/valid",
+    ]
+    invalid = valid.copy()
+    invalid[1] = ""
+    with package_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(SAFE_COLUMNS)
+        writer.writerow(invalid)
+        writer.writerow(valid)
+    actor = GitHubActor(
+        user_id=7007,
+        login="batch-user",
+        user_type="User",
+        created_at=datetime(2020, 1, 1, tzinfo=UTC),
+    )
+
+    result = create_batch_proposals(
+        root,
+        _batch_event(tmp_path),
+        actor,
+        package_path=package_path,
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert [item["issue"]["batch_row"] for item in result.proposals] == [2]
+    assert result.invalid_rows[0]["batch_row"] == 1
+    assert result.invalid_rows[0]["sheet_row"] == 2
+    assert result.invalid_rows[0]["reason_code"] == "missing_required_fields"
+    assert result.all_auto_eligible is False

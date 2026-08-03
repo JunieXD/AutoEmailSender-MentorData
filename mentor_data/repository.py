@@ -32,6 +32,8 @@ class RepositoryData:
     claims: list[dict[str, Any]]
     claim_paths: dict[str, Path]
     resolutions: list[dict[str, Any]]
+    organization_review_resolutions: list[dict[str, Any]]
+    organization_review_resolution_paths: dict[str, Path]
     proposals: list[dict[str, Any]]
     proposal_paths: dict[str, Path]
     report_proposals: list[dict[str, Any]]
@@ -66,6 +68,9 @@ def load_repository(root: Path, *, validate: bool = True) -> RepositoryData:
     mentors, mentor_paths = _load_json_collection(resolved_root / "records" / "mentors")
     claims, claim_paths = _load_json_collection(resolved_root / "claims")
     resolutions, _ = _load_json_collection(resolved_root / "reports" / "resolutions")
+    organization_review_resolutions, organization_review_resolution_paths = (
+        _load_json_collection(resolved_root / "reviews" / "resolutions")
+    )
     proposals, proposal_paths = _load_json_collection(resolved_root / "proposals")
     report_proposals, report_proposal_paths = _load_json_collection(
         resolved_root / "reports" / "pending"
@@ -81,6 +86,8 @@ def load_repository(root: Path, *, validate: bool = True) -> RepositoryData:
         claims=claims,
         claim_paths=claim_paths,
         resolutions=resolutions,
+        organization_review_resolutions=organization_review_resolutions,
+        organization_review_resolution_paths=organization_review_resolution_paths,
         proposals=proposals,
         proposal_paths=proposal_paths,
         report_proposals=report_proposals,
@@ -106,6 +113,9 @@ def validate_repository_data(data: RepositoryData) -> None:
         "correction_patch": load_json(data.root / "schemas" / "correction-patch.schema.json"),
         "proposal": load_json(data.root / "schemas" / "proposal.schema.json"),
         "report_proposal": load_json(data.root / "schemas" / "report-proposal.schema.json"),
+        "organization_review_resolution": load_json(
+            data.root / "schemas" / "organization-review-resolution.schema.json"
+        ),
     }
 
     for message in _schema_errors(schemas["organizations"], data.organizations_document):
@@ -138,6 +148,10 @@ def validate_repository_data(data: RepositoryData) -> None:
         if isinstance(accepted, dict) and accepted:
             for message in _schema_errors(schemas["correction_patch"], accepted):
                 issues.append(f"report proposal {proposal_id} accepted: {message}")
+    for resolution in data.organization_review_resolutions:
+        resolution_id = resolution.get("id", "<unknown>")
+        for message in _schema_errors(schemas["organization_review_resolution"], resolution):
+            issues.append(f"organization review {resolution_id}: {message}")
 
     _validate_policy(data, issues)
     _validate_organizations(data, issues)
@@ -146,6 +160,7 @@ def validate_repository_data(data: RepositoryData) -> None:
     _validate_resolutions(data, issues)
     _validate_proposals(data, issues)
     _validate_report_proposals(data, issues)
+    _validate_organization_review_resolutions(data, issues)
     _validate_revocations(data, issues)
 
     if issues:
@@ -581,6 +596,36 @@ def _validate_report_proposals(data: RepositoryData, issues: list[str]) -> None:
             issues.append(f"report proposal {proposal_id}: 封禁用户仍有待审核反馈")
         if proposal.get("mentor_id") not in mentor_ids:
             issues.append(f"report proposal {proposal_id}: mentor_id 不存在")
+
+
+def _validate_organization_review_resolutions(
+    data: RepositoryData,
+    issues: list[str],
+) -> None:
+    ids = [item.get("id") for item in data.organization_review_resolutions]
+    if len(ids) != len(set(ids)):
+        issues.append("reviews/resolutions: organization review id 重复")
+    issue_numbers = [
+        item.get("issue", {}).get("number")
+        for item in data.organization_review_resolutions
+        if isinstance(item.get("issue"), dict)
+    ]
+    if len(issue_numbers) != len(set(issue_numbers)):
+        issues.append("reviews/resolutions: 批量投稿 Issue 重复")
+    organization_ids = set(data.registry.by_id)
+    for resolution in data.organization_review_resolutions:
+        resolution_id = resolution.get("id", "<unknown>")
+        created = set(resolution.get("created_organization_ids", []))
+        updated = set(resolution.get("updated_organization_ids", []))
+        missing = sorted((created | updated) - organization_ids)
+        if missing:
+            issues.append(
+                f"organization review {resolution_id}: 机构不存在：{', '.join(missing)}"
+            )
+        mapped = set(resolution.get("mapped_proposal_ids", []))
+        rejected = set(resolution.get("rejected_proposal_ids", []))
+        if mapped & rejected:
+            issues.append(f"organization review {resolution_id}: 同一提案不能同时映射和拒绝")
 
 
 def _validate_revocations(data: RepositoryData, issues: list[str]) -> None:

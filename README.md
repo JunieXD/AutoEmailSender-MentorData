@@ -22,6 +22,8 @@ records/mentors/*.json            当前规范导师实体
 claims/<github-id>/*.json         已接受的原始贡献声明
 reports/resolutions/*.json        已处理的纠错裁决
 proposals/                        待维护者编辑和裁决的投稿提案
+reviews/pending/                  按机构组合生成的批量审核清单
+reviews/resolutions/              已应用的机构审核记录
 schemas/*.schema.json             数据契约
 mentor_data/                       校验、归一化、合并和发布工具
 site/                              GitHub Pages 静态页面源文件
@@ -53,7 +55,7 @@ dist/datasets/<version>/revocations.json
 
 ## 当前阶段
 
-GitHub 远程仓库、Actions、Pages 发布和 Auto Email Sender 应用集成已经完成。生产目录当前以零记录空库安全上线，下一步是保持前 20～50 次真实投稿人工审核，根据试运行结果调整规则，再决定是否启用 730 天账号年龄自动合并。详细进度见 [docs/roadmap.md](docs/roadmap.md)，应用接口见 [docs/app-integration.md](docs/app-integration.md)，远程设置见 [docs/operations.md](docs/operations.md)。
+GitHub 远程仓库、Actions、Pages 发布、批量机构审核助手和 Auto Email Sender 应用集成已经完成。生产目录当前以零记录空库安全上线，下一步是保持前 20～50 次真实投稿人工审核，根据试运行结果调整规则，再决定是否启用 730 天账号年龄自动合并。详细进度见 [docs/roadmap.md](docs/roadmap.md)，应用接口见 [docs/app-integration.md](docs/app-integration.md)，远程设置见 [docs/operations.md](docs/operations.md)。
 
 ## 许可证与数据边界
 

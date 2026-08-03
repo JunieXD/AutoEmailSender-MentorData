@@ -57,6 +57,13 @@ class GitHubAttachment:
     suffix: str
 
 
+@dataclass(frozen=True, slots=True)
+class CommunityPackageRow:
+    batch_row: int
+    sheet_row: int
+    record: dict[str, str]
+
+
 class _NoRedirectHandler(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):  # noqa: ANN001
         return None
@@ -176,7 +183,10 @@ def _safe_cell(value: Any, *, max_characters: int) -> str:
     return text
 
 
-def _rows_to_records(rows: list[list[Any]], policy: dict[str, Any]) -> list[dict[str, str]]:
+def _rows_to_package_rows(
+    rows: list[list[Any]],
+    policy: dict[str, Any],
+) -> list[CommunityPackageRow]:
     if not rows:
         raise UnsafePackageError("共享包为空")
     header = [normalize_text(str(value)) if value is not None else "" for value in rows[0]]
@@ -186,7 +196,7 @@ def _rows_to_records(rows: list[list[Any]], policy: dict[str, Any]) -> list[dict
     if len(rows) - 1 > max_rows:
         raise UnsafePackageError(f"共享包超过 {max_rows} 行限制")
     max_characters = _limit(policy, "max_cell_characters")
-    records: list[dict[str, str]] = []
+    records: list[CommunityPackageRow] = []
     for row_number, row in enumerate(rows[1:], start=2):
         values = [
             _safe_cell(row[index] if index < len(row) else None, max_characters=max_characters)
@@ -196,10 +206,25 @@ def _rows_to_records(rows: list[list[Any]], policy: dict[str, Any]) -> list[dict
             continue
         record = dict(zip(SAFE_COLUMNS, values, strict=True))
         record["email"] = normalize_email(record["email"])
-        if not record["name"] or not record["email"] or not record["source_url"]:
-            raise UnsafePackageError(f"第 {row_number} 行缺少 name、email 或 source_url")
-        records.append(record)
+        records.append(
+            CommunityPackageRow(
+                batch_row=len(records) + 1,
+                sheet_row=row_number,
+                record=record,
+            )
+        )
     return records
+
+
+def _rows_to_records(rows: list[list[Any]], policy: dict[str, Any]) -> list[dict[str, str]]:
+    package_rows = _rows_to_package_rows(rows, policy)
+    for item in package_rows:
+        record = item.record
+        if not record["name"] or not record["email"] or not record["source_url"]:
+            raise UnsafePackageError(
+                f"第 {item.sheet_row} 行缺少 name、email 或 source_url"
+            )
+    return [item.record for item in package_rows]
 
 
 def _inspect_xlsx_archive(path: Path, policy: dict[str, Any]) -> None:
@@ -235,7 +260,7 @@ def _inspect_xlsx_archive(path: Path, policy: dict[str, Any]) -> None:
                     raise UnsafePackageError("XLSX 包含异常高压缩比条目")
 
 
-def parse_community_package(path: Path, policy: dict[str, Any]) -> list[dict[str, str]]:
+def _read_community_package_rows(path: Path, policy: dict[str, Any]) -> list[list[Any]]:
     path = path.resolve()
     max_bytes = _limit(policy, "max_upload_bytes")
     size = path.stat().st_size
@@ -248,8 +273,7 @@ def parse_community_package(path: Path, policy: dict[str, Any]) -> list[dict[str
             content = path.read_bytes().decode("utf-8-sig")
         except UnicodeDecodeError as error:
             raise UnsafePackageError("CSV 必须使用 UTF-8 编码") from error
-        rows = list(csv.reader(io.StringIO(content)))
-        return _rows_to_records(rows, policy)
+        return list(csv.reader(io.StringIO(content)))
     if suffix != ".xlsx":
         raise UnsafePackageError("只支持 CSV 或普通 XLSX 共享包")
 
@@ -270,6 +294,17 @@ def parse_community_package(path: Path, policy: dict[str, Any]) -> list[dict[str
                     raise UnsafePackageError("XLSX 不得包含公式")
                 values.append(cell.value)
             rows.append(values)
-        return _rows_to_records(rows, policy)
+        return rows
     finally:
         workbook.close()
+
+
+def parse_community_package_rows(
+    path: Path,
+    policy: dict[str, Any],
+) -> list[CommunityPackageRow]:
+    return _rows_to_package_rows(_read_community_package_rows(path, policy), policy)
+
+
+def parse_community_package(path: Path, policy: dict[str, Any]) -> list[dict[str, str]]:
+    return _rows_to_records(_read_community_package_rows(path, policy), policy)

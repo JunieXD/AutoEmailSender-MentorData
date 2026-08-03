@@ -13,6 +13,7 @@ FORBIDDEN_DIRECT_CONTEXT = (
     "${{ github.event.issue.title }}",
     "${{ github.event.pull_request.title }}",
     "${{ github.event.pull_request.body }}",
+    "${{ github.event.comment.body }}",
 )
 
 
@@ -57,6 +58,7 @@ def test_every_repository_writer_uses_the_shared_concurrency_group() -> None:
         "process-batch-issue.yml",
         "process-report-issue.yml",
         "finalize-moderation.yml",
+        "apply-organization-review.yml",
         "revoke-contributor.yml",
     }
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
@@ -67,3 +69,14 @@ def test_every_repository_writer_uses_the_shared_concurrency_group() -> None:
         )
         assert document["concurrency"]["group"] == "mentor-data-write"
         assert document["concurrency"]["cancel-in-progress"] == "false"
+
+
+def test_organization_review_runs_trusted_code_and_never_embeds_decision_in_shell() -> None:
+    path = PROJECT_ROOT / ".github" / "workflows" / "apply-organization-review.yml"
+    text = path.read_text(encoding="utf-8")
+    assert ".trusted/.venv/bin/mentor-data apply-organization-review" in text
+    assert "github.event.comment.body" not in "\n".join(
+        line for line in text.splitlines() if line.lstrip().startswith("run:")
+    )
+    assert "--expected-repository \"$GITHUB_REPOSITORY\"" in text
+    assert "git push origin \"HEAD:${HEAD_REF}\"" in text

@@ -21,6 +21,9 @@
 - Actions 固定到完整 commit SHA，并使用最小权限。
 - 不使用 `pull_request_target` 执行贡献者分支代码。
 - 不保存个人 PAT；自动写入只使用仓库短期 `GITHUB_TOKEN`。因该令牌不会递归触发普通 `push`/`pull_request` 工作流，自动路径在原作业内完成验证，并只用受支持的 `workflow_dispatch` 显式启动 Pages。
+- 机构审核评论只作为 JSON 解析，绝不拼进 Shell；只有 GitHub 标记为 `OWNER`、`MEMBER` 或 `COLLABORATOR` 的评论者可以应用决策。
+- 评论工作流先检出默认分支并安装可信代码，再校验 PR 必须来自同仓库的 `batch/issue-N-RUN` 内部分支；提案分支中的程序不会执行。
+- 写回前校验清单和机构注册表 SHA-256，只暂存机构注册表、本批提案及对应审核记录。所有写入工作流共享同一 concurrency group。
 
 ## 上传文件
 
@@ -31,6 +34,7 @@
 - CSV 只接受 UTF-8/UTF-8 BOM。
 - 解析作业只读；写仓库作业只消费重新校验后的规范 JSON。
 - 原始上传文件不提交到 Git。
+- 个别缺字段或格式错误的数据行会被隔离并记录；表头、公式、压缩包结构和资源上限等文件级安全失败仍会整包拒绝。
 - Issue Form 使用普通文本框接收 GitHub 自动生成的附件链接；不存在可执行的上传控件。
 - 初始链接必须严格匹配 `github.com/user-attachments/...`，且只能有一个 CSV/XLSX 附件。
 - 下载不携带 GitHub Token，只跟随有限次数的 HTTPS 重定向，并把每个目标限制在 GitHub 控制的精确域名白名单中。
@@ -51,6 +55,7 @@
 
 - JSON 使用标准编码器，不拼接字符串。
 - HTML 显示全部转义并启用严格 CSP。
+- Pages 审核助手不接收或保存 GitHub Token，只读取公开 PR 与固定路径清单；不使用 `innerHTML`，并限制清单和生成评论大小。
 - CSV/XLSX 导出对 `= + - @` 前缀进行公式转义。
 - 构建器拒绝重复 ID、悬空引用、多个主要邮箱/任职和无来源字段。
 - Manifest 包含每个分片 SHA-256 和字节数。

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/organization-review-resolution.schema.json",
+  "title": "Applied batch organization review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "issue",
+    "pull_request_number",
+    "review_comment_id",
+    "reviewer",
+    "manifest_sha256",
+    "decided_at",
+    "created_organization_ids",
+    "updated_organization_ids",
+    "mapped_proposal_ids",
+    "rejected_proposal_ids",
+    "invalid_rows",
+    "decisions"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "id": { "type": "string", "pattern": "^organization_review_issue_[1-9][0-9]*$" },
+    "issue": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["number", "url"],
+      "properties": {
+        "number": { "type": "integer", "minimum": 1 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 }
+      }
+    },
+    "pull_request_number": { "type": "integer", "minimum": 1 },
+    "review_comment_id": { "type": "integer", "minimum": 1 },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["github_user_id", "github_login", "author_association"],
+      "properties": {
+        "github_user_id": { "type": "integer", "minimum": 1 },
+        "github_login": { "type": "string", "minLength": 1, "maxLength": 39 },
+        "author_association": { "enum": ["OWNER", "MEMBER", "COLLABORATOR"] }
+      }
+    },
+    "manifest_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "decided_at": { "type": "string", "format": "date-time" },
+    "created_organization_ids": { "type": "array", "items": { "$ref": "#/$defs/organizationId" }, "uniqueItems": true },
+    "updated_organization_ids": { "type": "array", "items": { "$ref": "#/$defs/organizationId" }, "uniqueItems": true },
+    "mapped_proposal_ids": { "type": "array", "items": { "$ref": "#/$defs/proposalId" }, "uniqueItems": true },
+    "rejected_proposal_ids": { "type": "array", "items": { "$ref": "#/$defs/proposalId" }, "uniqueItems": true },
+    "invalid_rows": { "type": "array", "items": { "type": "integer", "minimum": 1, "maximum": 5000 }, "uniqueItems": true },
+    "decisions": { "type": "array", "items": { "$ref": "#/$defs/groupDecision" } }
+  },
+  "$defs": {
+    "organizationId": { "type": "string", "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$" },
+    "proposalId": { "type": "string", "pattern": "^proposal_issue_[1-9][0-9]*_row_[1-9][0-9]*$" },
+    "httpsUrl": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+    "levelDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "action", "organization_id", "organization_type", "canonical_name", "official_url", "approved_domains", "save_submitted_as_alias"],
+      "properties": {
+        "level": { "enum": ["university", "school", "department"] },
+        "action": { "enum": ["existing", "create", "skip"] },
+        "organization_id": { "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }] },
+        "organization_type": { "type": ["string", "null"], "enum": ["university", "school", "institute", "department", "center", "laboratory", null] },
+        "canonical_name": { "type": ["string", "null"], "maxLength": 255 },
+        "official_url": { "oneOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }] },
+        "approved_domains": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 253 }, "uniqueItems": true },
+        "save_submitted_as_alias": { "type": "boolean" }
+      }
+    },
+    "rowOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_id", "action", "organization_id", "reason"],
+      "properties": {
+        "proposal_id": { "$ref": "#/$defs/proposalId" },
+        "action": { "enum": ["map_existing", "reject"] },
+        "organization_id": { "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }] },
+        "reason": { "type": ["string", "null"], "maxLength": 500 }
+      }
+    },
+    "groupDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["group_id", "action", "reason", "levels", "row_overrides"],
+      "properties": {
+        "group_id": { "type": "string", "pattern": "^org_group_[a-f0-9]{16}$" },
+        "action": { "enum": ["resolve", "reject"] },
+        "reason": { "type": ["string", "null"], "maxLength": 500 },
+        "levels": { "type": "array", "maxItems": 3, "items": { "$ref": "#/$defs/levelDecision" } },
+        "row_overrides": { "type": "array", "items": { "$ref": "#/$defs/rowOverride" } }
+      }
+    }
+  }
+}

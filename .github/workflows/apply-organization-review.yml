@@ -1,0 +1,145 @@
+name: Apply batch organization review
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: mentor-data-write
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: >-
+      github.event.issue.pull_request &&
+      startsWith(github.event.comment.body, '<!-- mentor-data-organization-review:v1 -->')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check out trusted default branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          path: .trusted
+          fetch-depth: 1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.11.26"
+          enable-cache: true
+
+      - name: Install locked trusted dependencies
+        working-directory: .trusted
+        run: uv sync --locked --dev
+
+      - name: Parse authorized review comment as data
+        id: comment
+        run: |
+          mkdir -p .work
+          .trusted/.venv/bin/mentor-data inspect-organization-review-comment \
+            --root .trusted \
+            --event "$GITHUB_EVENT_PATH" \
+            --output .work/decision.json \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Fetch public Pull Request metadata
+        env:
+          PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
+        run: |
+          case "$PR_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          gh api "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}" > .work/pull.json
+
+      - name: Validate internal review branch
+        id: pull
+        env:
+          PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
+        run: |
+          .trusted/.venv/bin/mentor-data inspect-organization-review-pull \
+            --pull .work/pull.json \
+            --expected-repository "$GITHUB_REPOSITORY" \
+            --expected-number "$PR_NUMBER" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Check out validated internal review branch as data
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ steps.pull.outputs.head_ref }}
+          path: review
+          fetch-depth: 0
+
+      - name: Apply decision with trusted code
+        id: result
+        run: |
+          .trusted/.venv/bin/mentor-data apply-organization-review \
+            --root review \
+            --trusted-root .trusted \
+            --event "$GITHUB_EVENT_PATH" \
+            --pull .work/pull.json \
+            --expected-repository "$GITHUB_REPOSITORY" \
+            --github-output "$GITHUB_OUTPUT"
+
+      - name: Commit only moderated data paths
+        env:
+          HEAD_REF: ${{ steps.pull.outputs.head_ref }}
+          ISSUE_NUMBER: ${{ steps.pull.outputs.issue_number }}
+        working-directory: review
+        run: |
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          case "$HEAD_REF" in batch/issue-*) ;; *) exit 1 ;; esac
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/organizations.yml \
+            "reviews/pending/batch-issue-${ISSUE_NUMBER}.json" \
+            "reviews/resolutions/batch-issue-${ISSUE_NUMBER}.json"
+          PROPOSAL_PATH="proposals/batch-issue-${ISSUE_NUMBER}"
+          TRACKED_PROPOSALS=$(git ls-files -- "$PROPOSAL_PATH")
+          if [ -d "$PROPOSAL_PATH" ] || [ -n "$TRACKED_PROPOSALS" ]; then
+            git add -A -- "$PROPOSAL_PATH"
+          fi
+          git commit -m "data: apply organization review for issue #${ISSUE_NUMBER}"
+          git push origin "HEAD:${HEAD_REF}"
+
+      - name: Mark fully rehearsed proposal set ready
+        if: >-
+          steps.result.outputs.remaining_proposals != '0' &&
+          steps.result.outputs.ready_for_finalization == 'true'
+        env:
+          PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
+        run: gh pr ready "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
+
+      - name: Close an entirely rejected or invalid batch
+        if: steps.result.outputs.remaining_proposals == '0'
+        env:
+          PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
+        run: gh pr close "$PR_NUMBER" --repo "$GITHUB_REPOSITORY"
+
+      - name: Publish bounded review summary
+        env:
+          PR_NUMBER: ${{ steps.comment.outputs.pull_number }}
+          MAPPED: ${{ steps.result.outputs.mapped_proposals }}
+          REJECTED: ${{ steps.result.outputs.rejected_proposals }}
+          INVALID: ${{ steps.result.outputs.invalid_rows }}
+          REMAINING: ${{ steps.result.outputs.remaining_proposals }}
+          READY: ${{ steps.result.outputs.ready_for_finalization }}
+        run: |
+          for VALUE in "$PR_NUMBER" "$MAPPED" "$REJECTED" "$INVALID" "$REMAINING"; do
+            case "$VALUE" in ''|*[!0-9]*) exit 1 ;; esac
+          done
+          if [ "$REMAINING" = "0" ]; then
+            STATUS="本批没有可继续落库的提案，PR 已关闭。"
+          elif [ "$READY" = "true" ]; then
+            STATUS="剩余提案已通过落库预演，PR 已转为 Ready。"
+          else
+            STATUS="机构归属已应用；仍有身份或字段冲突，请继续在 PR 中人工处理。"
+          fi
+          gh pr comment "$PR_NUMBER" \
+            --repo "$GITHUB_REPOSITORY" \
+            --body "机构审核已应用：映射 ${MAPPED} 条，拒绝 ${REJECTED} 条，普通无效 ${INVALID} 条，剩余 ${REMAINING} 条。${STATUS}"

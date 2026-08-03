@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        仅接受安全模板的 UTF-8 CSV 或普通 XLSX。上传文件不得包含公式、宏、外部链接、个人备注、标签、任务或发送数据。原始文件只用于只读解析，不会提交到 Git 仓库。
+        仅接受安全模板的 UTF-8 CSV 或普通 XLSX。一个文件可以混合多个学校和学院，无需拆分投稿。上传文件不得包含公式、宏、外部链接、个人备注、标签、任务或发送数据。原始文件只用于只读解析，不会提交到 Git 仓库。
 
   - type: textarea
     id: package
@@ -22,7 +22,7 @@ body:
     id: notes
     attributes:
       label: 补充说明
-      description: 可以说明数据覆盖的学校、学院和官方入口页面。
+      description: 可以说明数据覆盖的学校、学院和官方入口页面；学校或学院简称会在审核时统一映射。
 
   - type: checkboxes
     id: consent

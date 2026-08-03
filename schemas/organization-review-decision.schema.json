@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/organization-review-decision.schema.json",
+  "title": "Batch organization review decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "kind", "pull_request_number", "issue_number", "manifest_sha256", "decisions"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "kind": { "const": "batch_organization_review_decision" },
+    "pull_request_number": { "type": "integer", "minimum": 1 },
+    "issue_number": { "type": "integer", "minimum": 1 },
+    "manifest_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "decisions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/groupDecision" }
+    }
+  },
+  "$defs": {
+    "organizationId": { "type": "string", "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$" },
+    "httpsUrl": { "type": "string", "format": "uri", "pattern": "^https://", "maxLength": 500 },
+    "levelDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "action", "organization_id", "organization_type", "canonical_name", "official_url", "approved_domains", "save_submitted_as_alias"],
+      "properties": {
+        "level": { "enum": ["university", "school", "department"] },
+        "action": { "enum": ["existing", "create", "skip"] },
+        "organization_id": { "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }] },
+        "organization_type": { "type": ["string", "null"], "enum": ["university", "school", "institute", "department", "center", "laboratory", null] },
+        "canonical_name": { "type": ["string", "null"], "maxLength": 255 },
+        "official_url": { "oneOf": [{ "$ref": "#/$defs/httpsUrl" }, { "type": "null" }] },
+        "approved_domains": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 253 }, "uniqueItems": true },
+        "save_submitted_as_alias": { "type": "boolean" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "action": { "const": "existing" } } },
+          "then": {
+            "properties": {
+              "organization_id": { "$ref": "#/$defs/organizationId" },
+              "organization_type": { "type": "null" },
+              "canonical_name": { "type": "null" },
+              "official_url": { "type": "null" },
+              "approved_domains": { "maxItems": 0 }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "action": { "const": "create" } } },
+          "then": {
+            "properties": {
+              "organization_id": { "type": "null" },
+              "organization_type": { "enum": ["university", "school", "institute", "department", "center", "laboratory"] },
+              "canonical_name": { "type": "string", "minLength": 1, "maxLength": 255 },
+              "official_url": { "$ref": "#/$defs/httpsUrl" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "action": { "const": "skip" } } },
+          "then": {
+            "properties": {
+              "organization_id": { "type": "null" },
+              "organization_type": { "type": "null" },
+              "canonical_name": { "type": "null" },
+              "official_url": { "type": "null" },
+              "approved_domains": { "maxItems": 0 },
+              "save_submitted_as_alias": { "const": false }
+            }
+          }
+        }
+      ]
+    },
+    "rowOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_id", "action", "organization_id", "reason"],
+      "properties": {
+        "proposal_id": { "type": "string", "pattern": "^proposal_issue_[1-9][0-9]*_row_[1-9][0-9]*$" },
+        "action": { "enum": ["map_existing", "reject"] },
+        "organization_id": { "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }] },
+        "reason": { "type": ["string", "null"], "maxLength": 500 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "action": { "const": "map_existing" } } },
+          "then": { "properties": { "organization_id": { "$ref": "#/$defs/organizationId" } } }
+        },
+        {
+          "if": { "properties": { "action": { "const": "reject" } } },
+          "then": {
+            "properties": {
+              "organization_id": { "type": "null" },
+              "reason": { "type": "string", "minLength": 1, "maxLength": 500 }
+            }
+          }
+        }
+      ]
+    },
+    "groupDecision": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["group_id", "action", "reason", "levels", "row_overrides"],
+      "properties": {
+        "group_id": { "type": "string", "pattern": "^org_group_[a-f0-9]{16}$" },
+        "action": { "enum": ["resolve", "reject"] },
+        "reason": { "type": ["string", "null"], "maxLength": 500 },
+        "levels": { "type": "array", "maxItems": 3, "items": { "$ref": "#/$defs/levelDecision" } },
+        "row_overrides": { "type": "array", "items": { "$ref": "#/$defs/rowOverride" } }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "action": { "const": "resolve" } } },
+          "then": { "properties": { "levels": { "minItems": 3, "maxItems": 3 } } }
+        },
+        {
+          "if": { "properties": { "action": { "const": "reject" } } },
+          "then": {
+            "properties": {
+              "reason": { "type": "string", "minLength": 1, "maxLength": 500 },
+              "levels": { "maxItems": 0 }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
