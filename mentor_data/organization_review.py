@@ -174,6 +174,7 @@ def create_organization_review_manifest(
                 "batch_row": proposal["issue"]["batch_row"],
                 "name": submitted_payload["name"],
                 "email": submitted_payload["email"],
+                "profile_url": submitted_payload.get("profile_url"),
                 "source_url": source_url,
             }
         )
@@ -599,6 +600,8 @@ def apply_organization_review(
                 "email": submitted.get("email"),
                 "source_url": submitted.get("source_url"),
             }
+            if "profile_url" in row:
+                expected_row["profile_url"] = submitted.get("profile_url")
             if row != expected_row or _group_id(submitted_path) != group["id"]:
                 raise SubmissionError("机构审核清单与提案原始字段不一致，请重新生成清单")
 

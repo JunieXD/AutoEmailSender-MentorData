@@ -67,6 +67,12 @@
         "batch_row": { "type": "integer", "minimum": 1, "maximum": 5000 },
         "name": { "type": "string", "minLength": 1, "maxLength": 255 },
         "email": { "type": "string", "minLength": 3, "maxLength": 255 },
+        "profile_url": {
+          "oneOf": [
+            { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
+            { "type": "null" }
+          ]
+        },
         "source_url": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 }
       }
     },

@@ -73,6 +73,7 @@ def _row(
     source_url: str,
     *,
     department: str = "",
+    profile_url: str | None = None,
 ) -> list[str]:
     return [
         name,
@@ -83,7 +84,7 @@ def _row(
         department,
         "机器学习",
         "A Paper",
-        source_url,
+        profile_url or source_url,
         source_url,
     ]
 
@@ -235,7 +236,14 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
         root,
         tmp_path,
         [
-            _row("甲老师", "a@example.edu", "示例大学", "计院", "https://cs.example.edu/a"),
+            _row(
+                "甲老师",
+                "a@example.edu",
+                "示例大学",
+                "计院",
+                "https://cs.example.edu/a",
+                profile_url="https://cs.example.edu/faculty/a",
+            ),
             _row("乙老师", "b@example.edu", "示例大学", "计院", "https://cs.example.edu/b"),
             _row("丙老师", "c@sample.edu", "样本大学", "AI研究院", "https://ai.sample.edu/c"),
         ],
@@ -248,6 +256,7 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
     sample_group = next(
         group for group in manifest["groups"] if group["submitted"]["school"] == "AI研究院"
     )
+    assert example_group["rows"][0]["profile_url"] == "https://cs.example.edu/faculty/a"
     rejected_id = example_group["rows"][1]["proposal_id"]
     decisions = [
         {
@@ -299,6 +308,40 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
     resolution = load_json(root / "reviews" / "resolutions" / "batch-issue-30.json")
     assert resolution["reviewer"]["github_user_id"] == 999
     assert resolution["rejected_proposal_ids"] == [rejected_id]
+
+
+def test_review_accepts_legacy_manifest_without_profile_url(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [_row("甲老师", "a@example.edu", "示例大学", "计院", "https://cs.example.edu/a")],
+    )
+    group = manifest["groups"][0]
+    group["rows"][0].pop("profile_url")
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "reject",
+                "reason": "兼容旧审核清单",
+                "levels": [],
+                "row_overrides": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.rejected_proposals == 1
+    assert applied.remaining_proposals == 0
 
 
 def test_review_can_create_new_university_and_school_chain(tmp_path: Path) -> None:

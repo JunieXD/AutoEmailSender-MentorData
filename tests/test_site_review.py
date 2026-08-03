@@ -41,3 +41,14 @@ def test_review_uses_custom_selection_controls_and_bounded_row_scrolling() -> No
     assert 'setAttribute("role", "combobox")' in script
     assert "max-height: min(21rem, 50vh)" in styles
     assert "scrollbar-gutter: stable" in styles
+
+
+def test_review_links_each_mentor_to_a_safely_resolved_profile() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+    styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+
+    assert "createMentorProfileButton" in script
+    assert "resolveMentorProfileUrl" in script
+    assert "profileWindow.opener = null" in script
+    assert "MAX_PROPOSAL_BYTES" in script
+    assert ".mentor-profile-button" in styles

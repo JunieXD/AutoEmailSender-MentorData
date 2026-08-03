@@ -726,7 +726,48 @@ textarea:focus {
 
 .row-identity {
   display: grid;
-  min-width: 10rem;
+  min-width: 12rem;
+}
+
+.row-name-line {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row-name-line strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mentor-profile-button {
+  min-height: 1.5rem;
+  flex: none;
+  padding: 0.16rem 0.42rem;
+  border: 1px solid #fdba74;
+  border-radius: 999px;
+  background: #fff7ed;
+  color: #9a3412;
+  cursor: pointer;
+  font-size: 0.66rem;
+  font-weight: 750;
+}
+
+.mentor-profile-button:hover {
+  border-color: #fb923c;
+  background: #ffedd5;
+}
+
+.mentor-profile-button:focus-visible {
+  outline: 2px solid rgba(234, 88, 12, 0.2);
+  outline-offset: 1px;
+}
+
+.mentor-profile-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
 }
 
 .row-identity span {
