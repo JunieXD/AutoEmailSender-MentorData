@@ -17,7 +17,7 @@
         <a class="back-link" href="./">← 返回社区导师库</a>
         <p class="eyebrow">Maintainer tool</p>
         <h1>批量机构审核</h1>
-        <p class="intro">统一学校和学院名称，再把审核结果贴回对应 PR。</p>
+        <p class="intro">每个机构确认一次，再检查需要改派或拒绝的导师。</p>
       </header>
 
       <section id="review-status" class="review-status" aria-live="polite">
@@ -52,13 +52,29 @@
         <div id="invalid-rows" class="invalid-rows"></div>
       </details>
 
+      <section id="organizations-section" class="organizations-section" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Organization tree</p>
+            <h2>先整理机构</h2>
+          </div>
+          <div class="review-progress-actions">
+            <span id="organization-progress" class="organization-progress">—</span>
+            <button id="next-pending" class="secondary-button" type="button">下一个待确认</button>
+          </div>
+        </div>
+        <p class="section-note">同一学校或学院只需确认一次，结果会自动用于所有相关导师。</p>
+        <p id="autosave-status" class="autosave-status" aria-live="polite"></p>
+        <div id="organization-tree" class="organization-tree"></div>
+      </section>
+
       <section id="groups-section" class="groups-section" hidden>
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Organization groups</p>
-            <h2>逐组确认</h2>
+            <p class="eyebrow">Mentor assignments</p>
+            <h2>检查导师分组</h2>
           </div>
-          <p>同一写法只需处理一次；需要拆分时再展开导师行。</p>
+          <p>导师默认跟随上面的机构；只有改派或拒绝时才需要展开。</p>
         </div>
         <div id="review-groups" class="review-groups"></div>
       </section>
@@ -77,6 +93,7 @@
           <button id="generate-decision" class="primary-button" type="button">生成审核评论</button>
         </div>
         <p id="decision-error" class="error" hidden></p>
+        <div id="decision-preview" class="decision-preview" hidden></div>
         <div id="decision-output" class="decision-output" hidden>
           <label for="decision-text">复制以下内容到 PR 评论</label>
           <textarea id="decision-text" rows="12" readonly spellcheck="false"></textarea>
