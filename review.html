@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>批量机构审核 · AutoEmailSender 社区导师库</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="review-page">
+    <main class="shell review-shell">
+      <header class="review-hero">
+        <a class="back-link" href="./">← 返回社区导师库</a>
+        <p class="eyebrow">Maintainer tool</p>
+        <h1>批量机构审核</h1>
+        <p class="intro">统一学校和学院名称，再把审核结果贴回对应 PR。</p>
+      </header>
+
+      <section id="review-status" class="review-status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <div>
+          <strong id="status-title">正在读取审核清单…</strong>
+          <p id="status-detail">正在校验 PR、分支和机构注册表快照。</p>
+        </div>
+      </section>
+
+      <section id="review-summary" class="review-summary" hidden>
+        <div>
+          <span class="label">投稿 Issue</span>
+          <strong id="review-issue">—</strong>
+        </div>
+        <div>
+          <span class="label">机构组合</span>
+          <strong id="review-group-count">—</strong>
+        </div>
+        <div>
+          <span class="label">导师行</span>
+          <strong id="review-row-count">—</strong>
+        </div>
+        <div>
+          <span class="label">普通无效行</span>
+          <strong id="review-invalid-count">—</strong>
+        </div>
+      </section>
+
+      <details id="invalid-rows-panel" class="invalid-rows-panel" hidden>
+        <summary>查看未进入提案的普通无效行</summary>
+        <div id="invalid-rows" class="invalid-rows"></div>
+      </details>
+
+      <section id="groups-section" class="groups-section" hidden>
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Organization groups</p>
+            <h2>逐组确认</h2>
+          </div>
+          <p>同一写法只需处理一次；需要拆分时再展开导师行。</p>
+        </div>
+        <div id="review-groups" class="review-groups"></div>
+      </section>
+
+      <section id="empty-review" class="empty-review" hidden>
+        <h2>没有可映射的导师行</h2>
+        <p>本批只有普通无效行。生成审核评论后，系统会记录结果并关闭 PR。</p>
+      </section>
+
+      <section id="decision-panel" class="decision-panel" hidden>
+        <div class="decision-actions">
+          <div>
+            <h2>生成审核评论</h2>
+            <p>后端会再次校验全部选择；网页不会直接修改仓库。</p>
+          </div>
+          <button id="generate-decision" class="primary-button" type="button">生成审核评论</button>
+        </div>
+        <p id="decision-error" class="error" hidden></p>
+        <div id="decision-output" class="decision-output" hidden>
+          <label for="decision-text">复制以下内容到 PR 评论</label>
+          <textarea id="decision-text" rows="12" readonly spellcheck="false"></textarea>
+          <button id="copy-open-pr" class="primary-button" type="button">复制并打开 PR</button>
+          <p id="copy-status" class="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <div id="review-datalists"></div>
+    </main>
+    <script src="review.js" defer></script>
+  </body>
+</html>
