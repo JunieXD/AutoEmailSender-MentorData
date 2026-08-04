@@ -111,6 +111,30 @@ def test_new_submission_creates_reviewable_proposal_and_finalizes(tmp_path) -> N
     assert len(repeated_data.mentors) == 1
 
 
+def test_new_single_form_without_internal_organization_field_is_accepted(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    body = _issue_body().replace(
+        "### 社区机构 ID\n\norg_example_cs\n\n",
+        "",
+    )
+    event_path = _write_event(
+        tmp_path,
+        issue_number=13,
+        user_id=3003,
+        login="software-prefill-user",
+        body=body,
+    )
+
+    result = create_mentor_proposal(
+        root,
+        load_issue_event(event_path, max_body_bytes=200_000),
+        _actor(3003, "software-prefill-user"),
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert result.proposal["submitted"]["organization_id"] == "org_example_cs"
+
+
 def test_http_official_urls_are_accepted_and_preserved(tmp_path) -> None:
     root = build_test_repository(tmp_path)
     event_path = _write_event(

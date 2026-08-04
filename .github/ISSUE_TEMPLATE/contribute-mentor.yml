@@ -9,9 +9,9 @@ body:
       value: |
         **先补全上方标题：** 保留 `[导师投稿]`，写成 `[导师投稿] XXX大学XXX老师`。
 
-        如果要贡献多位导师，请返回选择“上传导师表格（推荐）”。这里只适合单独补充一位导师。
+        从 Auto Email Sender 打开时，软件会把这位导师的现有信息直接填入。请核对内容、补全空的必填项，最后勾选投稿确认并提交，不需要复制粘贴。
 
-        请按高校官网填写，不知道或不确定的选填项直接留空。学校或学院写简称也没关系，审核时会统一。你的 GitHub 账号和这个投稿页面会作为数据来源记录。
+        如果要贡献多位导师，请返回选择“上传导师表格（推荐）”。这里只适合单独补充一位导师。请按高校官网填写，学校和学院尽量使用全称；用了简称也没关系，审核时会统一。你的 GitHub 账号和这个投稿页面会作为数据来源记录。
 
   - type: markdown
     attributes:
@@ -34,13 +34,6 @@ body:
       placeholder: zhangwei@example.edu
     validations:
       required: true
-
-  - type: input
-    id: organization_id
-    attributes:
-      label: 机构信息（从软件打开时自动填写）
-      description: 如果这里已有内容，请保持不变；如果是空的，直接跳过。
-      placeholder: 空着也可以，不需要自己查找
 
   - type: input
     id: university
@@ -68,7 +61,7 @@ body:
       placeholder: 例如：人工智能研究所
 
   - type: input
-    id: title
+    id: academic_title
     attributes:
       label: 职称（选填）
       description: 例如教授、副教授、讲师或研究员；官网没有写时留空。

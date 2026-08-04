@@ -352,7 +352,11 @@ def create_mentor_proposal(
     output_directory: Path,
 ) -> ProposalResult:
     data = load_repository(root, validate=True)
-    sections = parse_issue_form(event.body, SINGLE_FORM_LABELS)
+    sections = parse_issue_form(
+        event.body,
+        SINGLE_FORM_LABELS,
+        optional_labels={"社区机构 ID"},
+    )
     if "我确认" not in sections["投稿确认"]:
         raise SubmissionError("投稿确认未完成")
     submitted, review_reasons = _candidate_from_sections(data, sections)

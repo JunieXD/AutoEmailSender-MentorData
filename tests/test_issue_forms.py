@@ -84,7 +84,12 @@ def test_current_form_labels_are_recognized_by_automation() -> None:
         current_labels = _field_labels(_load_form(filename))
         for canonical, alternate_labels in aliases.items():
             accepted_labels = {canonical, *alternate_labels}
-            assert len(current_labels & accepted_labels) == 1, (filename, canonical)
+            expected_count = (
+                0
+                if filename == "contribute-mentor.yml" and canonical == "社区机构 ID"
+                else 1
+            )
+            assert len(current_labels & accepted_labels) == expected_count, (filename, canonical)
 
 
 def test_text_fields_explain_what_to_enter_and_show_an_example() -> None:
@@ -130,7 +135,9 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
     labels = _field_labels(document)
     guidance = _markdown_text(document)
     title_field = next(
-        component for component in document["body"] if component.get("id") == "title"
+        component
+        for component in document["body"]
+        if component.get("id") == "academic_title"
     )
     assert {"必填：这位老师是谁", "选填：更多公开信息", "必填：信息来自哪里"} <= {
         line.removeprefix("### ") for line in guidance.splitlines()
@@ -138,7 +145,6 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
     assert "社区机构 ID" not in labels
     assert "官方证据页面" not in labels
     assert {
-        "机构信息（从软件打开时自动填写）",
         "更具体的单位（选填）",
         "职称（选填）",
         "研究方向（选填）",
@@ -148,6 +154,24 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
     assert title_field["type"] == "input"
     assert "官网没有写时留空" in title_field["attributes"]["description"]
     assert "[导师投稿] XXX大学XXX老师" in guidance
+    assert "现有信息直接填入" in guidance
+    assert "不需要复制粘贴" in guidance
+
+
+def test_removed_single_form_organization_field_remains_optional_for_old_and_new_issues() -> None:
+    body = "\n\n".join(
+        f"### {label}\n\n{'我确认' if label == '投稿确认' else '_No response_'}"
+        for label in SINGLE_FORM_LABELS
+        if label != "社区机构 ID"
+    )
+
+    sections = parse_issue_form(
+        body,
+        SINGLE_FORM_LABELS,
+        optional_labels={"社区机构 ID"},
+    )
+
+    assert sections["社区机构 ID"] == ""
 
 
 def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:
