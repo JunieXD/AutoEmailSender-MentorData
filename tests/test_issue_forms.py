@@ -27,6 +27,14 @@ def _field_labels(document: dict) -> set[str]:
     }
 
 
+def _field_ids(document: dict) -> set[str]:
+    return {
+        component["id"]
+        for component in document["body"]
+        if component.get("type") != "markdown"
+    }
+
+
 def _markdown_text(document: dict) -> str:
     return "\n".join(
         component["attributes"]["value"]
@@ -84,12 +92,7 @@ def test_current_form_labels_are_recognized_by_automation() -> None:
         current_labels = _field_labels(_load_form(filename))
         for canonical, alternate_labels in aliases.items():
             accepted_labels = {canonical, *alternate_labels}
-            expected_count = (
-                0
-                if filename == "contribute-mentor.yml" and canonical == "社区机构 ID"
-                else 1
-            )
-            assert len(current_labels & accepted_labels) == expected_count, (filename, canonical)
+            assert len(current_labels & accepted_labels) == 1, (filename, canonical)
 
 
 def test_text_fields_explain_what_to_enter_and_show_an_example() -> None:
@@ -149,7 +152,8 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
         "职称（选填）",
         "研究方向（选填）",
         "代表论文（选填）",
-        "老师的个人主页（选填）",
+        "老师的高校官网详情页（选填）",
+        "发现这位老师的来源页面",
     } <= labels
     assert title_field["type"] == "input"
     assert "官网没有写时留空" in title_field["attributes"]["description"]
@@ -158,20 +162,35 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
     assert "不需要复制粘贴" in guidance
 
 
-def test_removed_single_form_organization_field_remains_optional_for_old_and_new_issues() -> None:
-    body = "\n\n".join(
+def test_manual_form_ids_match_software_prefill_parameters() -> None:
+    field_ids = _field_ids(_load_form("contribute-mentor.yml"))
+
+    assert {
+        "name",
+        "email",
+        "university",
+        "school",
+        "department",
+        "academic_title",
+        "research_direction",
+        "recent_papers",
+        "profile_url",
+        "source_url",
+        "consent",
+    } == field_ids
+    assert "title" not in field_ids
+
+
+def test_removed_single_form_organization_heading_is_ignored_in_old_issues() -> None:
+    current_body = "\n\n".join(
         f"### {label}\n\n{'我确认' if label == '投稿确认' else '_No response_'}"
         for label in SINGLE_FORM_LABELS
-        if label != "社区机构 ID"
     )
+    body = "### 社区机构 ID\n\norg_old_internal\n\n" + current_body
 
-    sections = parse_issue_form(
-        body,
-        SINGLE_FORM_LABELS,
-        optional_labels={"社区机构 ID"},
-    )
+    sections = parse_issue_form(body, SINGLE_FORM_LABELS)
 
-    assert sections["社区机构 ID"] == ""
+    assert "社区机构 ID" not in sections
 
 
 def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:

@@ -98,8 +98,6 @@ def load_issue_event(path: Path, *, max_body_bytes: int) -> GitHubIssueEvent:
 def parse_issue_form(
     body: str,
     expected_labels: set[str] | Mapping[str, Collection[str]],
-    *,
-    optional_labels: Collection[str] = (),
 ) -> dict[str, str]:
     if isinstance(expected_labels, set):
         aliases = {label: {label} for label in expected_labels}
@@ -131,17 +129,9 @@ def parse_issue_form(
         if value in NO_RESPONSE_VALUES:
             value = ""
         sections[canonical] = value
-    optional = set(optional_labels)
-    unknown_optional = optional - aliases.keys()
-    if unknown_optional:
-        raise ValueError(
-            f"可选 Issue Form 标签不在预期字段中：{', '.join(sorted(unknown_optional))}"
-        )
-    missing = sorted(aliases.keys() - sections.keys() - optional)
+    missing = sorted(aliases.keys() - sections.keys())
     if missing:
         raise SubmissionError(f"Issue Form 缺少字段：{', '.join(missing)}")
-    for label in optional:
-        sections.setdefault(label, "")
     return sections
 
 

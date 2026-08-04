@@ -88,8 +88,8 @@ body:
   - type: input
     id: profile_url
     attributes:
-      label: 老师的个人主页（选填）
-      description: 填写这位老师在高校官网上的个人主页网址，以 http:// 或 https:// 开头。
+      label: 老师的高校官网详情页（选填）
+      description: 填写能看到这位老师姓名、邮箱、任职等信息的高校官网详情页；如果学校只有教师列表、没有个人详情页，可以留空。
       placeholder: https://example.edu/faculty/zhangwei
 
   - type: markdown
@@ -99,9 +99,9 @@ body:
   - type: input
     id: source_url
     attributes:
-      label: 能证明上述信息的高校官网页面
-      description: 填写能看到老师姓名、工作邮箱或任职信息的页面，可以与个人主页相同。
-      placeholder: https://example.edu/faculty/zhangwei
+      label: 发现这位老师的来源页面
+      description: 通常是教师列表、师资队伍或导师目录页，也就是从哪里进入老师详情页；如果没有单独的列表页，可以与详情页相同。
+      placeholder: https://example.edu/faculty
     validations:
       required: true
 

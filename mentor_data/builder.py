@@ -57,6 +57,21 @@ def _claim_contributors(
     return [contributors[key] for key in sorted(contributors)]
 
 
+def _discovery_source_url(
+    claim_by_id: dict[str, dict[str, Any]],
+    primary_contact: dict[str, Any],
+) -> str:
+    for claim_id in reversed(primary_contact.get("claim_ids", [])):
+        claim = claim_by_id.get(claim_id)
+        if claim is None or claim.get("status") not in {"accepted", "partially_accepted"}:
+            continue
+        accepted = claim.get("accepted", {})
+        source_url = accepted.get("source_url")
+        if isinstance(source_url, str) and source_url:
+            return source_url
+    return primary_contact["source_url"]
+
+
 def _project_affiliation(data: RepositoryData, affiliation: dict[str, Any]) -> dict[str, Any]:
     names = data.registry.projection_names(affiliation["organization_id"])
     return {
@@ -115,7 +130,7 @@ def _project_mentor(
         "research_direction": "；".join(mentor.get("research_directions", [])) or None,
         "recent_papers": mentor.get("recent_papers", []),
         "profile_url": current_profile["url"] if current_profile else None,
-        "source_url": primary_contact["source_url"],
+        "source_url": _discovery_source_url(claim_by_id, primary_contact),
         "status": mentor["status"],
         "last_verified_at": mentor.get("last_verified_at"),
         "contacts": active_contacts,

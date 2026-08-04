@@ -45,6 +45,7 @@ LEVEL_TYPES = {
 ORGANIZATION_REVIEW_REASONS = {
     "unknown_organization_id",
     "unapproved_source_domain",
+    "unapproved_profile_domain",
     "unmatched_university",
     "ambiguous_university",
     "unmatched_school",
@@ -180,6 +181,10 @@ def create_organization_review_manifest(
         )
         group["source_domains"].add(hostname_for_url(source_url))
         group["source_urls"].add(source_url)
+        profile_url = submitted_payload.get("profile_url")
+        if profile_url:
+            group["source_domains"].add(hostname_for_url(profile_url))
+            group["source_urls"].add(profile_url)
         organization_id = proposal["accepted"].get("organization_id")
         if organization_id is not None:
             group["suggested_organization_ids"].add(organization_id)
@@ -692,6 +697,9 @@ def apply_organization_review(
             raise SubmissionError(f"审核后的机构不存在：{target_id}")
         if not registry.url_is_approved(proposal["accepted"]["source_url"], target_id):
             raise SubmissionError(f"提案 {proposal_id} 的官方来源不属于所选机构批准域名")
+        profile_url = proposal["accepted"].get("profile_url")
+        if profile_url and not registry.url_is_approved(profile_url, target_id):
+            raise SubmissionError(f"提案 {proposal_id} 的导师详情页不属于所选机构批准域名")
 
     candidate_data = _candidate_repository_data(
         data,

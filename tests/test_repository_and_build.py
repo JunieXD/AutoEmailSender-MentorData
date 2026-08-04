@@ -30,7 +30,7 @@ def test_dual_affiliation_and_multiple_current_emails_publish_primary_projection
         name="示例导师",
         email="mentor@example.edu",
         organization_id="org_example_cs",
-        source_url="https://cs.example.edu/faculty/mentor",
+        source_url="https://cs.example.edu/faculty",
         profile_url="https://cs.example.edu/faculty/mentor",
     )
     second = claim(
@@ -65,6 +65,9 @@ def test_dual_affiliation_and_multiple_current_emails_publish_primary_projection
     shard = json.loads((catalog_path.parent / unit_path).read_text(encoding="utf-8"))
     record = shard["records"][0]
     assert record["email"] == "mentor@example.edu"
+    assert record["profile_url"] == "https://cs.example.edu/faculty/mentor"
+    assert record["source_url"] == "https://cs.example.edu/faculty"
+    assert record["contacts"][0]["source_url"] == "https://cs.example.edu/faculty/mentor"
     assert len(record["contacts"]) == 2
     assert len(record["affiliations"]) == 2
 

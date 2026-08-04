@@ -18,19 +18,20 @@ def _issue_body(
     name: str = "示例导师",
     email: str = "mentor@example.edu",
     recent_papers: str = "A Safe Example Paper",
+    profile_url: str = "https://cs.example.edu/faculty/mentor",
+    source_url: str = "https://cs.example.edu/faculty",
 ) -> str:
     sections = {
         "导师姓名": name,
         "公开工作邮箱": email,
-        "社区机构 ID": "org_example_cs",
         "学校正式名称": "示例大学",
         "学院或研究院正式名称": "计算机学院",
         "系所或中心": "_No response_",
         "职称": "教授",
         "研究方向": "机器学习",
         "近期或代表论文": recent_papers,
-        "官方个人主页": "https://cs.example.edu/faculty/mentor",
-        "官方证据页面": "https://cs.example.edu/faculty/mentor",
+        "高校官网导师详情页": profile_url,
+        "发现导师的来源页": source_url,
         "投稿确认": "- [x] 我确认提交的是公开职业信息",
     }
     return "\n\n".join(f"### {label}\n\n{value}" for label, value in sections.items())
@@ -111,18 +112,14 @@ def test_new_submission_creates_reviewable_proposal_and_finalizes(tmp_path) -> N
     assert len(repeated_data.mentors) == 1
 
 
-def test_new_single_form_without_internal_organization_field_is_accepted(tmp_path) -> None:
+def test_single_form_resolves_organization_from_public_names(tmp_path) -> None:
     root = build_test_repository(tmp_path)
-    body = _issue_body().replace(
-        "### 社区机构 ID\n\norg_example_cs\n\n",
-        "",
-    )
     event_path = _write_event(
         tmp_path,
         issue_number=13,
         user_id=3003,
         login="software-prefill-user",
-        body=body,
+        body=_issue_body(),
     )
 
     result = create_mentor_proposal(
@@ -133,6 +130,39 @@ def test_new_single_form_without_internal_organization_field_is_accepted(tmp_pat
     )
 
     assert result.proposal["submitted"]["organization_id"] == "org_example_cs"
+
+
+def test_detail_page_is_used_as_evidence_while_discovery_page_is_preserved(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    detail_url = "https://cs.example.edu/faculty/mentor"
+    discovery_url = "https://cs.example.edu/faculty"
+    event_path = _write_event(
+        tmp_path,
+        issue_number=16,
+        user_id=7007,
+        login="source-semantics-user",
+        body=_issue_body(profile_url=detail_url, source_url=discovery_url),
+    )
+
+    result = create_mentor_proposal(
+        root,
+        load_issue_event(event_path, max_body_bytes=200_000),
+        _actor(7007, "source-semantics-user"),
+        output_directory=tmp_path / "proposals",
+    )
+    claim_path, mentor_path = finalize_proposal(
+        root,
+        result.path,
+        moderator_github_user_id=999,
+    )
+
+    claim = json.loads(claim_path.read_text(encoding="utf-8"))
+    mentor = json.loads(mentor_path.read_text(encoding="utf-8"))
+    assert claim["accepted"]["profile_url"] == detail_url
+    assert claim["accepted"]["source_url"] == discovery_url
+    assert claim["evidence"][0]["source_url"] == detail_url
+    assert mentor["contacts"][0]["source_url"] == detail_url
+    assert mentor["affiliations"][0]["source_url"] == detail_url
 
 
 def test_http_official_urls_are_accepted_and_preserved(tmp_path) -> None:

@@ -8,7 +8,7 @@
 - `names`：一个或多个姓名表示，包含当前主要显示名和别名。
 - `contacts`：邮箱及其状态、来源、有效时间和主次关系。
 - `affiliations`：一个或多个任职关系，支持双聘、离职和历史任职。
-- `profiles`：一个或多个官方个人主页。
+- `profiles`：一个或多个高校官网导师详情页。
 - `status`：导师整体生命周期状态。
 - `title`、`research_directions`、`recent_papers`：当前规范投影字段。
 - `claim_ids`：支持当前实体的有效贡献声明。

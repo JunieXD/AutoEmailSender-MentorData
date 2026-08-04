@@ -17,15 +17,14 @@ def _contribution_event(tmp_path):
     sections = {
         "导师姓名": "端到端导师",
         "公开工作邮箱": "trial@example.edu",
-        "社区机构 ID": "org_example_cs",
         "学校正式名称": "示例大学",
         "学院或研究院正式名称": "计算机学院",
         "系所或中心": "_No response_",
         "职称": "教授",
         "研究方向": "可信系统",
         "近期或代表论文": "A Trial Paper",
-        "官方个人主页": "https://cs.example.edu/faculty/trial",
-        "官方证据页面": "https://cs.example.edu/faculty/trial",
+        "高校官网导师详情页": "https://cs.example.edu/faculty/trial",
+        "发现导师的来源页": "https://cs.example.edu/faculty",
         "投稿确认": "- [x] 我确认提交的是公开职业信息",
     }
     body = "\n\n".join(f"### {label}\n\n{value}" for label, value in sections.items())

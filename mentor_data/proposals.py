@@ -28,18 +28,22 @@ from .repository import RepositoryData, load_repository
 SINGLE_FORM_LABELS = {
     "导师姓名": set(),
     "公开工作邮箱": {"老师的工作邮箱"},
-    "社区机构 ID": {
-        "软件带来的机构信息（一般不用填写）",
-        "机构信息（从软件打开时自动填写）",
-    },
     "学校正式名称": {"学校名称"},
     "学院或研究院正式名称": {"学院或研究院名称"},
     "系所或中心": {"更具体的单位（选填）"},
     "职称": {"职称（选填）"},
     "研究方向": {"研究方向（选填）"},
     "近期或代表论文": {"代表论文（选填）"},
-    "官方个人主页": {"老师的个人主页（选填）"},
-    "官方证据页面": {"能证明上述信息的高校官网页面"},
+    "高校官网导师详情页": {
+        "官方个人主页",
+        "老师的个人主页（选填）",
+        "老师的高校官网详情页（选填）",
+    },
+    "发现导师的来源页": {
+        "官方证据页面",
+        "能证明上述信息的高校官网页面",
+        "发现这位老师的来源页面",
+    },
     "投稿确认": set(),
 }
 SUPPORTED_TITLES = {
@@ -125,18 +129,11 @@ def _blocked_scopes(data: RepositoryData, user_id: int) -> set[str]:
 def _resolve_organization(
     data: RepositoryData,
     *,
-    organization_id: str,
     university: str,
     school: str,
     department: str,
 ) -> tuple[str | None, list[str]]:
     reasons: list[str] = []
-    if organization_id:
-        organization = data.registry.by_id.get(organization_id)
-        if organization is None or organization.get("status") != "active":
-            return None, ["unknown_organization_id"]
-        return organization_id, reasons
-
     university_match = data.registry.match(university, parent_id=None)
     if university_match.status != "matched" or university_match.organization_id is None:
         return None, [f"{university_match.status}_university"]
@@ -160,8 +157,8 @@ def _candidate_from_sections(
 ) -> tuple[dict[str, Any], list[str]]:
     name = normalize_text(sections["导师姓名"])
     email = normalize_email(sections["公开工作邮箱"])
-    source_url = normalized_web_url(sections["官方证据页面"])
-    profile_url = normalized_web_url(sections["官方个人主页"])
+    source_url = normalized_web_url(sections["发现导师的来源页"])
+    profile_url = normalized_web_url(sections["高校官网导师详情页"])
     if not name:
         raise SubmissionError("导师姓名不能为空")
     if not is_valid_email(email):
@@ -169,13 +166,12 @@ def _candidate_from_sections(
     if is_generic_email(email):
         raise SubmissionError("通用邮箱不能作为导师主邮箱投稿")
     if source_url is None:
-        raise SubmissionError("官方证据页面必须是安全的 HTTP 或 HTTPS URL")
-    if sections["官方个人主页"] and profile_url is None:
-        raise SubmissionError("官方个人主页必须是安全的 HTTP 或 HTTPS URL")
+        raise SubmissionError("发现导师的来源页必须是有效的 HTTP 或 HTTPS URL")
+    if sections["高校官网导师详情页"] and profile_url is None:
+        raise SubmissionError("高校官网导师详情页必须是有效的 HTTP 或 HTTPS URL")
 
     organization_id, reasons = _resolve_organization(
         data,
-        organization_id=normalize_text(sections["社区机构 ID"]),
         university=normalize_text(sections["学校正式名称"]),
         school=normalize_text(sections["学院或研究院正式名称"]),
         department=normalize_text(sections["系所或中心"]),
@@ -184,6 +180,12 @@ def _candidate_from_sections(
         source_url, organization_id
     ):
         reasons.append("unapproved_source_domain")
+    if (
+        organization_id is not None
+        and profile_url is not None
+        and not data.registry.url_is_approved(profile_url, organization_id)
+    ):
+        reasons.append("unapproved_profile_domain")
 
     title_text = normalize_text(sections["职称"])
     title = title_text if title_text in SUPPORTED_TITLES else None
@@ -218,15 +220,14 @@ def candidate_from_package_record(
     sections = {
         "导师姓名": record["name"],
         "公开工作邮箱": record["email"],
-        "社区机构 ID": "",
         "学校正式名称": record["university"],
         "学院或研究院正式名称": record["school"],
         "系所或中心": record["department"],
         "职称": record["title"],
         "研究方向": record["research_direction"],
         "近期或代表论文": record["recent_papers"],
-        "官方个人主页": record["profile_url"],
-        "官方证据页面": record["source_url"],
+        "高校官网导师详情页": record["profile_url"],
+        "发现导师的来源页": record["source_url"],
         "投稿确认": "我确认",
     }
     return _candidate_from_sections(data, sections)
@@ -352,11 +353,7 @@ def create_mentor_proposal(
     output_directory: Path,
 ) -> ProposalResult:
     data = load_repository(root, validate=True)
-    sections = parse_issue_form(
-        event.body,
-        SINGLE_FORM_LABELS,
-        optional_labels={"社区机构 ID"},
-    )
+    sections = parse_issue_form(event.body, SINGLE_FORM_LABELS)
     if "我确认" not in sections["投稿确认"]:
         raise SubmissionError("投稿确认未完成")
     submitted, review_reasons = _candidate_from_sections(data, sections)
@@ -398,6 +395,7 @@ def _claim_payload(
     ]
     automatic = proposal.get("auto_eligible") is True and accepted == proposal["submitted"]
     mode = "automatic" if automatic else "manual"
+    verification_url = accepted.get("profile_url") or accepted["source_url"]
     return {
         "schema_version": 1,
         "id": claim_id,
@@ -418,7 +416,7 @@ def _claim_payload(
         "evidence": [
             {
                 "fields": source_fields,
-                "source_url": accepted["source_url"],
+                "source_url": verification_url,
                 "observed_at": contributor["submitted_at"],
             }
         ],
@@ -447,6 +445,7 @@ def _new_mentor(proposal: dict[str, Any], claim: dict[str, Any]) -> dict[str, An
     claim_id = claim["id"]
     mentor_id = claim["mentor_id"]
     observed_at = claim["contributor"]["submitted_at"]
+    verification_url = accepted.get("profile_url") or accepted["source_url"]
     affiliation_id = stable_proposal_entity_id("aff", proposal, "affiliation")
     profiles = []
     if accepted.get("profile_url"):
@@ -473,7 +472,7 @@ def _new_mentor(proposal: dict[str, Any], claim: dict[str, Any]) -> dict[str, An
         "id": mentor_id,
         "status": "active",
         "status_reason": None,
-        "status_source_url": accepted["source_url"],
+        "status_source_url": verification_url,
         "status_observed_at": observed_at,
         "names": [
             {
@@ -491,7 +490,7 @@ def _new_mentor(proposal: dict[str, Any], claim: dict[str, Any]) -> dict[str, An
                 "status": "current",
                 "is_primary": True,
                 "affiliation_id": affiliation_id,
-                "source_url": accepted["source_url"],
+                "source_url": verification_url,
                 "observed_at": observed_at,
                 "claim_ids": [claim_id],
             }
@@ -505,7 +504,7 @@ def _new_mentor(proposal: dict[str, Any], claim: dict[str, Any]) -> dict[str, An
                 "title": accepted.get("title"),
                 "started_at": None,
                 "ended_at": None,
-                "source_url": accepted["source_url"],
+                "source_url": verification_url,
                 "observed_at": observed_at,
                 "claim_ids": [claim_id],
             }
@@ -659,6 +658,9 @@ def _finalize_proposal_in_context(
         raise SubmissionError("审核后的机构不存在")
     if not data.registry.url_is_approved(accepted["source_url"], organization_id):
         raise SubmissionError("审核后的来源 URL 不属于批准机构域名")
+    profile_url = accepted.get("profile_url")
+    if profile_url and not data.registry.url_is_approved(profile_url, organization_id):
+        raise SubmissionError("审核后的高校官网导师详情页不属于批准机构域名")
     if not is_valid_email(accepted["email"]) or is_generic_email(accepted["email"]):
         raise SubmissionError("审核后的邮箱无效或属于通用邮箱")
 

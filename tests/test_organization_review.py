@@ -243,7 +243,7 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
                 "示例大学",
                 "计院",
                 "https://cs.example.edu/a",
-                profile_url="https://cs.example.edu/faculty/a",
+                profile_url="https://faculty.cs.example.edu/a",
             ),
             _row("乙老师", "b@example.edu", "示例大学", "计院", "https://cs.example.edu/b"),
             _row("丙老师", "c@sample.edu", "样本大学", "AI研究院", "https://ai.sample.edu/c"),
@@ -257,7 +257,13 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
     sample_group = next(
         group for group in manifest["groups"] if group["submitted"]["school"] == "AI研究院"
     )
-    assert example_group["rows"][0]["profile_url"] == "https://cs.example.edu/faculty/a"
+    assert example_group["rows"][0]["profile_url"] == "https://faculty.cs.example.edu/a"
+    assert example_group["source_domains"] == ["cs.example.edu", "faculty.cs.example.edu"]
+    assert example_group["source_urls"] == [
+        "https://cs.example.edu/a",
+        "https://cs.example.edu/b",
+        "https://faculty.cs.example.edu/a",
+    ]
     rejected_id = example_group["rows"][1]["proposal_id"]
     decisions = [
         {
