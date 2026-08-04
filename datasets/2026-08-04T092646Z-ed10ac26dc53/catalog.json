@@ -1,0 +1,36 @@
+{
+  "dataset_version": "2026-08-04T092646Z-ed10ac26dc53",
+  "generated_at": "2026-08-04T09:26:46Z",
+  "record_count": 116,
+  "schema_version": 1,
+  "universities": [
+    {
+      "id": "org_auto_41bbf5cfe92ed1491ef7",
+      "name": "南开大学",
+      "record_count": 5,
+      "units": [
+        {
+          "id": "org_auto_f081f90c975ffa8eae47",
+          "name": "智能光子研究院",
+          "path": "data/org_auto_41bbf5cfe92ed1491ef7/org_auto_f081f90c975ffa8eae47.json",
+          "record_count": 5,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_89927c24bd3d542ac5d3",
+      "name": "华中科技大学",
+      "record_count": 111,
+      "units": [
+        {
+          "id": "org_auto_ff647878db706f701703",
+          "name": "计算机科学与技术学院",
+          "path": "data/org_auto_89927c24bd3d542ac5d3/org_auto_ff647878db706f701703.json",
+          "record_count": 111,
+          "type": "school"
+        }
+      ]
+    }
+  ]
+}
