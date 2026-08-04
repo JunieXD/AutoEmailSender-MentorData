@@ -65,23 +65,12 @@ body:
       description: 例如系、研究所、实验室或中心；官网没有写时留空。
       placeholder: 例如：人工智能研究所
 
-  - type: dropdown
+  - type: input
     id: title
     attributes:
       label: 职称（选填）
-      options:
-        - 不知道或不填写
-        - 教授
-        - 副教授
-        - 助理教授
-        - 讲师
-        - 研究员
-        - 副研究员
-        - 助理研究员
-        - 特聘研究员
-      default: 0
-    validations:
-      required: true
+      description: 例如教授、副教授、讲师或研究员；官网没有写时留空。
+      placeholder: 例如：副教授
 
   - type: markdown
     attributes:

@@ -142,8 +142,8 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
         "代表论文（选填）",
         "老师的个人主页（选填）",
     } <= labels
-    assert title_field["attributes"]["default"] == 0
-    assert title_field["validations"]["required"] is True
+    assert title_field["type"] == "input"
+    assert "官网没有写时留空" in title_field["attributes"]["description"]
 
 
 def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:
