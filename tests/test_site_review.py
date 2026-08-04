@@ -92,7 +92,8 @@ def test_public_home_page_prioritizes_using_contributing_and_correcting_data() -
     html = (PROJECT_ROOT / "site" / "index.html").read_text(encoding="utf-8")
     script = (PROJECT_ROOT / "site" / "app.js").read_text(encoding="utf-8")
 
-    assert "不必每次重新抓取" in html
+    assert "共建社区导师库" in html
+    assert "直接导入社区导师库信息" in html
     assert "下载 Auto Email Sender" in html
     assert "贡献导师数据" in html
     assert "反馈错误或过时信息" in html
