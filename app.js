@@ -90,7 +90,7 @@ function safeCatalogUrl(path) {
     throw new Error("目录地址无效");
   }
   const url = new URL(path, window.location.href);
-  const base = new URL("./datasets/", window.location.href);
+  const base = new URL("./releases/", window.location.href);
   if (url.origin !== base.origin || !url.pathname.startsWith(base.pathname)) {
     throw new Error("目录地址不属于本站数据集");
   }
