@@ -20,10 +20,11 @@
 - 机构目录使用注册表 ID，不使用用户输入路径。
 - Actions 固定到完整 commit SHA，并使用最小权限。
 - 不使用 `pull_request_target` 执行贡献者分支代码。
-- 不保存个人 PAT；自动写入只使用仓库短期 `GITHUB_TOKEN`。因该令牌不会递归触发普通 `push`/`pull_request` 工作流，自动路径在原作业内完成验证，并只用受支持的 `workflow_dispatch` 显式启动 Pages。
+- 不保存个人 PAT；自动写入只使用仓库短期 `GITHUB_TOKEN`。需要继续处理时使用受支持的 `workflow_run`、`workflow_dispatch` 和定时恢复触发器。
 - 机构审核评论只作为 JSON 解析，绝不拼进 Shell；只有 GitHub 标记为 `OWNER`、`MEMBER` 或 `COLLABORATOR` 的评论者可以应用决策。
-- 评论工作流先检出默认分支并安装可信代码，再校验 PR 必须来自同仓库的 `batch/issue-N-RUN` 内部分支；提案分支中的程序不会执行。
-- 写回前校验清单和机构注册表 SHA-256，只暂存机构注册表、本批提案及对应审核记录。所有写入工作流共享同一 concurrency group。
+- `pull_request_target` 只用于唤醒默认分支上的可信落库队列；它不会检出或执行 PR 分支代码。队列只接受同仓库的 `submission/issue-N`、`batch/issue-N` 和 `report/issue-N` 内部分支。
+- 每种 PR 只允许修改对应 Issue 的固定提案路径，并限制文件数量和总字节数。写回前在最新 `main` 的临时工作树中重建、校验全部规范数据并写入不可伪造的发布收据。
+- 所有正式写入共享同一串行队列。处理期间若 `main` 或 PR head 变化，本次合并会停止而不是覆盖新数据。
 
 ## 上传文件
 
@@ -62,4 +63,6 @@
 
 ## 并发与发布
 
-写入工作流使用仓库级 concurrency group，避免两个投稿同时覆盖索引。发布数据使用不可变版本目录，只有完整构建和校验成功后才生成 `latest.json`。每个已发布版本同时归档在 `gh-pages` 分支，后续 Pages 部署会带上全部旧版本，不会只保留最新目录。
+正式写入使用仓库级串行队列，避免两个投稿同时覆盖数据。每次成功落库写入包含 Issue、PR、基础提交和提案提交摘要的收据；Pages 只会关闭已有有效收据且不再含待审核提案的 Issue。
+
+发布格式使用内容摘要决定版本号。数据未改变时不会创建新版本；学院分片按 SHA-256 寻址，未改变的分片跨版本复用。`gh-pages` 使用浅检出保存归档，但上传给 Pages 的 artifact 只包含当前 release 和当前 Manifest 引用的对象，避免每次重新上传全部历史版本。只有完整构建、逐文件哈希校验和部署成功后才切换公开站点。

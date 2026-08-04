@@ -45,6 +45,7 @@ def _write_event(tmp_path, *, issue_number: int, user_id: int, login: str, body:
                 "action": "opened",
                 "issue": {
                     "number": issue_number,
+                    "state": "open",
                     "html_url": f"https://github.com/example/repository/issues/{issue_number}",
                     "title": "[导师投稿] 示例导师",
                     "body": body,

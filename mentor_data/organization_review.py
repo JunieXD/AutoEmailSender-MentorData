@@ -30,10 +30,7 @@ if TYPE_CHECKING:
 
 
 REVIEW_COMMENT_MARKER = "<!-- mentor-data-organization-review:v1 -->"
-REVIEW_BRANCH_PATTERN = re.compile(
-    r"^batch/issue-(?P<issue>[1-9][0-9]*)-(?P<run>[1-9][0-9]*)"
-    r"(?:-(?P<attempt>[1-9][0-9]*))?$"
-)
+REVIEW_BRANCH_PATTERN = re.compile(r"^batch/issue-(?P<issue>[1-9][0-9]*)$")
 PROPOSAL_DIRECTORY_PATTERN = re.compile(r"^proposals/batch-issue-(?P<issue>[1-9][0-9]*)$")
 DOMAIN_PATTERN = re.compile(
     r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?"
@@ -367,6 +364,62 @@ def _add_alias(
     return True
 
 
+def _find_exact_active_organization(
+    organizations: list[dict[str, Any]],
+    *,
+    level: str,
+    parent_id: str | None,
+    name: str,
+) -> dict[str, Any] | None:
+    key = normalize_organization_key(name)
+    matches = [
+        organization
+        for organization in organizations
+        if organization.get("status") == "active"
+        and organization.get("parent_id") == parent_id
+        and organization.get("type") in LEVEL_TYPES[level]
+        and key
+        in {
+            normalize_organization_key(value)
+            for value in [
+                organization.get("canonical_name", ""),
+                *organization.get("aliases", []),
+            ]
+        }
+    ]
+    if len(matches) > 1:
+        raise SubmissionError(f"同级存在多个同名机构，无法自动归类：{name}")
+    return matches[0] if matches else None
+
+
+def _merge_organization_metadata(
+    organization: dict[str, Any],
+    *,
+    official_url: str | None,
+    approved_domains: list[str],
+    submitted_name: str,
+    save_submitted_as_alias: bool,
+    decided_at: str,
+) -> bool:
+    changed = False
+    if official_url is not None and official_url not in organization["official_urls"]:
+        organization["official_urls"].append(official_url)
+        changed = True
+    for domain in approved_domains:
+        if domain not in organization["approved_domains"]:
+            organization["approved_domains"].append(domain)
+            changed = True
+    if save_submitted_as_alias and _add_alias(
+        organization,
+        submitted_name,
+        decided_at=decided_at,
+    ):
+        changed = True
+    if changed:
+        organization["updated_at"] = decided_at
+    return changed
+
+
 def _resolve_levels(
     organizations_document: dict[str, Any],
     organizations_by_id: dict[str, dict[str, Any]],
@@ -424,12 +477,34 @@ def _resolve_levels(
         canonical_name = normalize_text(item.get("canonical_name"))
         if not canonical_name:
             raise SubmissionError("新机构必须填写正式名称")
-        official_url = normalized_web_url(item.get("official_url"))
-        if level == "university" and official_url is None:
-            raise SubmissionError("新学校必须填写安全的 HTTP 或 HTTPS 官网")
+        official_url_value = normalize_text(item.get("official_url"))
+        official_url = normalized_web_url(official_url_value)
+        if official_url_value and official_url is None:
+            raise SubmissionError("新机构官网必须是安全的 HTTP 或 HTTPS URL")
         approved_domains = sorted(
             {_normalize_domain(value) for value in item.get("approved_domains", [])}
         )
+        exact_existing = _find_exact_active_organization(
+            organizations,
+            level=level,
+            parent_id=parent_id,
+            name=canonical_name,
+        )
+        if exact_existing is not None:
+            if _merge_organization_metadata(
+                exact_existing,
+                official_url=official_url,
+                approved_domains=approved_domains,
+                submitted_name=submitted_name,
+                save_submitted_as_alias=item["save_submitted_as_alias"],
+                decided_at=decided_at,
+            ):
+                updated_ids.add(exact_existing["id"])
+            parent_id = exact_existing["id"]
+            target_id = exact_existing["id"]
+            continue
+        if level == "university" and official_url is None:
+            raise SubmissionError("新学校必须填写安全的 HTTP 或 HTTPS 官网")
         organization_id = _proposed_organization_id(
             organization_type,
             canonical_name,
@@ -470,22 +545,14 @@ def _resolve_levels(
             if any(existing.get(key) != value for key, value in expected.items()):
                 raise SubmissionError(f"自动生成的机构 ID 与现有机构冲突：{organization_id}")
             organization = existing
-            changed = False
-            if official_url is not None and official_url not in organization["official_urls"]:
-                organization["official_urls"].append(official_url)
-                changed = True
-            for domain in approved_domains:
-                if domain not in organization["approved_domains"]:
-                    organization["approved_domains"].append(domain)
-                    changed = True
-            if item["save_submitted_as_alias"] and _add_alias(
+            if _merge_organization_metadata(
                 organization,
-                submitted_name,
+                official_url=official_url,
+                approved_domains=approved_domains,
+                submitted_name=submitted_name,
+                save_submitted_as_alias=item["save_submitted_as_alias"],
                 decided_at=decided_at,
             ):
-                changed = True
-            if changed:
-                organization["updated_at"] = decided_at
                 updated_ids.add(organization_id)
         parent_id = organization_id
         target_id = organization_id
@@ -532,6 +599,7 @@ def apply_organization_review(
     review_pull: ReviewPull,
     *,
     schema_root: Path | None = None,
+    allow_registry_drift: bool = False,
 ) -> AppliedOrganizationReview:
     root = root.resolve()
     trusted_schema_root = (schema_root or root).resolve()
@@ -559,7 +627,10 @@ def apply_organization_review(
         raise SubmissionError("机构审核清单的 Issue 编号不一致")
 
     data = load_repository(root, validate=True, schema_root=trusted_schema_root)
-    if manifest["registry_sha256"] != _registry_digest(data.organizations_document):
+    if (
+        not allow_registry_drift
+        and manifest["registry_sha256"] != _registry_digest(data.organizations_document)
+    ):
         raise SubmissionError("机构注册表已经变化，请重新生成审核清单")
     resolution_path = (
         root / "reviews" / "resolutions" / f"batch-issue-{review_pull.issue_number}.json"

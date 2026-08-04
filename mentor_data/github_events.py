@@ -32,6 +32,8 @@ class GitHubActor:
 class GitHubIssueEvent:
     action: str
     number: int
+    state: str
+    is_pull_request: bool
     url: str
     title: str
     body: str
@@ -92,6 +94,8 @@ def load_issue_event(path: Path, *, max_body_bytes: int) -> GitHubIssueEvent:
     return GitHubIssueEvent(
         action=str(event.get("action", "")),
         number=number,
+        state=str(issue.get("state", "")),
+        is_pull_request=isinstance(issue.get("pull_request"), dict),
         url=str(issue.get("html_url", "")),
         title=title,
         body=body,
@@ -106,6 +110,8 @@ def load_issue_event(path: Path, *, max_body_bytes: int) -> GitHubIssueEvent:
 def require_issue_trigger(event: GitHubIssueEvent, *, expected_label: str) -> None:
     if event.action != "opened":
         raise SubmissionError("只处理新建的 Issue")
+    if event.state != "open" or event.is_pull_request:
+        raise SubmissionError("只处理仍然开放的普通 Issue")
     if expected_label not in event.labels:
         raise SubmissionError(f"Issue 缺少所需标签：{expected_label}")
 

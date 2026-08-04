@@ -8,19 +8,18 @@ on:
       - "records/**"
       - "registry/**"
       - "reports/resolutions/**"
+      - "reviews/resolutions/**"
+      - "reviews/promotions/**"
       - "schemas/**"
       - "mentor_data/**"
-      - "scripts/publication_metadata.py"
+      - "scripts/finalized_issue_numbers.py"
       - "site/**"
       - "pyproject.toml"
       - "uv.lock"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
-    inputs:
-      issue_number:
-        description: Optional source Issue to close after a successful deployment
-        required: false
-        type: string
+  schedule:
+    - cron: "23 * * * *"
 
 permissions:
   contents: write
@@ -30,35 +29,18 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
-  gate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    outputs:
-      publish: ${{ steps.metadata.outputs.publish }}
-      issue_number: ${{ steps.metadata.outputs.issue_number }}
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-
-      - name: Refuse to publish a repository with pending moderation
-        id: metadata
-        env:
-          ISSUE_NUMBER: ${{ inputs.issue_number }}
-        run: python3 scripts/publication_metadata.py
-
   build:
-    needs: gate
-    if: needs.gate.outputs.publish == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
-      - name: Check out repository
+      - name: Check out the exact main revision being published
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: 0
+          ref: ${{ github.sha }}
+          fetch-depth: 1
 
       - name: Install uv
         uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
@@ -69,37 +51,41 @@ jobs:
       - name: Install locked dependencies
         run: uv sync --locked --dev
 
-      - name: Restore immutable dataset archive
+      - name: Restore the immutable publication archive
         run: |
-          mkdir -p dist .work
+          mkdir -p .work
           if git ls-remote --exit-code origin refs/heads/gh-pages >/dev/null 2>&1; then
-            git fetch origin gh-pages
-            git worktree add --detach .work/pages origin/gh-pages
-            if [ -d .work/pages/datasets ]; then
-              # Published versions are immutable. Hard links avoid copying the
-              # growing archive twice while preserving every historical URL.
-              cp -al .work/pages/datasets dist/
-            fi
+            git fetch --no-tags --depth=1 origin gh-pages:refs/remotes/origin/gh-pages
+            git worktree add --detach .work/pages refs/remotes/origin/gh-pages
           else
             git worktree add --detach .work/pages HEAD
             git -C .work/pages switch --orphan gh-pages
             git -C .work/pages rm -rf --ignore-unmatch .
           fi
 
-      - name: Validate and build immutable dataset
+      - name: Validate and append the current content-addressed release
         run: |
           uv run mentor-data validate
-          uv run mentor-data build --output dist
-
-      - name: Archive every published version on gh-pages branch
-        run: |
-          rsync -a --delete --exclude='.git' dist/ .work/pages/
+          uv run mentor-data build --output .work/pages
+          git -C .work/pages rm -r --ignore-unmatch datasets
           touch .work/pages/.nojekyll
+
+      - name: Archive only when published content changed
+        run: |
           git -C .work/pages config user.name "github-actions[bot]"
           git -C .work/pages config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git -C .work/pages add -A
-          git -C .work/pages commit -m "data: publish immutable dataset ${GITHUB_RUN_ID}"
-          git -C .work/pages push origin HEAD:gh-pages
+          if git -C .work/pages diff --cached --quiet; then
+            echo "The publication archive is already current."
+          else
+            VERSION=$(uv run python -c \
+              'import json; print(json.load(open(".work/pages/latest.json", encoding="utf-8"))["dataset_version"])')
+            git -C .work/pages commit -m "data: publish ${VERSION}"
+            git -C .work/pages push origin HEAD:gh-pages
+          fi
+
+      - name: Stage only the current release for deployment
+        run: uv run mentor-data stage-current --archive .work/pages --output dist
 
       - name: Configure Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
@@ -121,23 +107,41 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
 
-  close-issue:
-    if: >-
-      always() &&
-      needs.gate.result == 'success' &&
-      needs.gate.outputs.publish == 'true' &&
-      needs.deploy.result == 'success' &&
-      needs.gate.outputs.issue_number != ''
-    needs: [gate, deploy]
+  close-issues:
+    if: always() && needs.deploy.result == 'success'
+    needs: deploy
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
       GH_TOKEN: ${{ github.token }}
-      ISSUE_NUMBER: ${{ needs.gate.outputs.issue_number }}
     steps:
-      - name: Silently close the published source Issue
+      - name: Check out the same published main revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.11.26"
+          enable-cache: true
+
+      - name: Install locked dependencies
+        run: uv sync --locked --dev
+
+      - name: Close every newly published source Issue
         run: |
-          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
-          gh issue close "$ISSUE_NUMBER" \
-            --repo "$GITHUB_REPOSITORY" \
-            --reason completed
+          mkdir -p .work
+          uv run python scripts/finalized_issue_numbers.py \
+            --output .work/finalized-issues.txt
+          while IFS= read -r ISSUE_NUMBER; do
+            case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+            ISSUE_STATE=$(gh api \
+              "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}" \
+              --jq 'if has("pull_request") then "pull" else .state end')
+            if [ "$ISSUE_STATE" = "open" ]; then
+              gh issue close "$ISSUE_NUMBER" \
+                --repo "$GITHUB_REPOSITORY" \
+                --reason completed
+            fi
+          done < .work/finalized-issues.txt

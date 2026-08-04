@@ -26,7 +26,7 @@ def test_review_script_treats_manifest_as_text_and_outputs_fixed_comment_marker(
     assert "MAX_COMMENT_BYTES" in script
     assert "validateWebUrl" in script
     assert '["http:", "https:"]' in script
-    assert "(?:-([1-9][0-9]*))?" in script
+    assert r"^batch\/issue-" in script
 
 
 def test_review_uses_custom_selection_controls_and_bounded_row_scrolling() -> None:
@@ -77,6 +77,7 @@ def test_review_suggests_official_urls_and_lists_pending_destinations() -> None:
     assert "refreshPendingOrganizationOptions" in script
     assert "本次新建" in script
     assert "改到其他机构" in script
+    assert "已找到同名机构，自动归到" in script
 
 
 def test_review_lazily_renders_large_mentor_groups_and_throttles_autosave() -> None:

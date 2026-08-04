@@ -57,55 +57,58 @@ def test_untrusted_issue_and_pull_request_text_is_never_interpolated_into_run_sc
             assert forbidden not in text, (path, forbidden)
 
 
-def test_every_repository_writer_uses_the_shared_concurrency_group() -> None:
-    writers = {
-        "process-mentor-issue.yml": "prepare",
-        "process-batch-issue.yml": "prepare",
-        "process-report-issue.yml": "prepare",
-        "finalize-moderation.yml": "finalize",
-        "apply-organization-review.yml": "apply",
-        "revoke-contributor.yml": "revoke",
-    }
+def test_issue_intake_is_isolated_per_issue_and_promotion_is_serialized() -> None:
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
-    for filename, job_name in writers.items():
+    expected_groups = {
+        "process-mentor-issue.yml": "process-mentor-",
+        "process-batch-issue.yml": "process-batch-",
+        "process-report-issue.yml": "process-report-",
+    }
+    for filename, prefix in expected_groups.items():
         document = yaml.load(
             (workflow_root / filename).read_text(encoding="utf-8"),
             Loader=yaml.BaseLoader,
         )
-        assert "concurrency" not in document
-        concurrency = document["jobs"][job_name]["concurrency"]
-        assert concurrency["group"] == "mentor-data-write"
+        concurrency = document["jobs"]["prepare"]["concurrency"]
+        assert concurrency["group"].startswith(prefix)
         assert concurrency["cancel-in-progress"] == "false"
 
+    promotion = yaml.load(
+        (workflow_root / "promote-ready-pulls.yml").read_text(encoding="utf-8"),
+        Loader=yaml.BaseLoader,
+    )
+    assert promotion["concurrency"]["group"] == "mentor-data-promotion"
+    assert promotion["concurrency"]["cancel-in-progress"] == "false"
+    assert "schedule" in promotion["on"]
 
-def test_skipped_issue_workflows_cannot_cancel_the_matching_writer() -> None:
+
+def test_issue_workflows_only_create_stable_proposal_pull_requests() -> None:
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
     for filename in ISSUE_WORKFLOWS:
-        document = yaml.load(
-            (workflow_root / filename).read_text(encoding="utf-8"),
-            Loader=yaml.BaseLoader,
-        )
-        assert "concurrency" not in document
-        prepare = document["jobs"]["prepare"]
-        assert "if" in prepare
-        assert prepare["concurrency"]["group"] == "mentor-data-write"
+        text = (workflow_root / filename).read_text(encoding="utf-8")
+        assert "scripts/issue_workflow_state.py" in text
+        assert "steps.workflow_state.outputs.branch" in text
+        assert "scripts/create_issue_pull_request.py" in text
+        assert "RUN_ID" not in text
+        assert "RUN_ATTEMPT" not in text
+        assert "gh pr merge" not in text
+        assert "gh workflow run pages.yml" not in text
+        assert "finalize-proposal" not in text
 
 
-def test_organization_review_runs_trusted_code_and_never_embeds_decision_in_shell() -> None:
-    path = PROJECT_ROOT / ".github" / "workflows" / "apply-organization-review.yml"
+def test_promotion_uses_trusted_default_branch_and_durable_fallback_triggers() -> None:
+    path = PROJECT_ROOT / ".github" / "workflows" / "promote-ready-pulls.yml"
     text = path.read_text(encoding="utf-8")
-    assert ".trusted/.venv/bin/mentor-data apply-organization-review" in text
+    assert "ref: main" in text
+    assert "scripts/promote_ready_pull_requests.py" in text
+    assert "workflow_run:" in text
+    assert "issue_comment:" in text
+    assert "pull_request_target:" in text
+    assert "schedule:" in text
     assert "github.event.comment.body" not in "\n".join(
         line for line in text.splitlines() if line.lstrip().startswith("run:")
     )
-    assert '--expected-repository "$GITHUB_REPOSITORY"' in text
-    assert 'git push origin "HEAD:${HEAD_REF}"' in text
-    assert 'gh pr merge "$PR_NUMBER"' in text
-    assert '--match-head-commit "$HEAD_SHA"' in text
-    assert "gh workflow run finalize-moderation.yml" in text
-    assert 'gh issue close "$ISSUE_NUMBER"' in text
-    assert "gh issue comment" not in text
-    assert "gh pr comment" not in text
+    assert "gh workflow run pages.yml" in text
 
 
 def test_issue_workflows_create_at_most_one_status_comment() -> None:
@@ -117,14 +120,18 @@ def test_issue_workflows_create_at_most_one_status_comment() -> None:
         assert text.count("gh issue comment") == 1
         assert "<!-- mentor-data-status:v1 -->" in text
         assert "Post the only Issue status notification" in text
+        assert "WORKFLOW_OUTCOME" in text
+        assert '"$WORKFLOW_OUTCOME" = "existing_pull"' in text
+        assert "outputs.outcome != 'finalized'" in text
 
 
-def test_issue_status_urls_are_separated_from_chinese_punctuation() -> None:
+def test_issue_status_urls_use_markdown_links_instead_of_bare_url_punctuation() -> None:
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
     attached_punctuation = re.compile(r"\$\{(?:PR_URL|REVIEW_URL)\}[，。；：！？]")
     for filename in ISSUE_WORKFLOWS:
         text = (workflow_root / filename).read_text(encoding="utf-8")
         assert attached_punctuation.search(text) is None
+        assert "](${" in text
 
 
 def test_issue_workflows_support_safe_maintainer_retries_and_exact_pr_titles() -> None:
@@ -134,56 +141,40 @@ def test_issue_workflows_support_safe_maintainer_retries_and_exact_pr_titles() -
         assert "workflow_dispatch:" in text
         assert "Resolve source Issue event" in text
         assert '--jq \'{action: "opened", issue: .}\'' in text
-        assert "scripts/create_issue_pull_request.py" in text
         assert '--event "$SOURCE_EVENT"' in text
         assert "gh pr create" not in text
         assert "GITHUB_TOKEN: ${{ github.token }}" in text
-        assert "RUN_ATTEMPT: ${{ github.run_attempt }}" in text
+        assert "--force-with-lease" in text
 
 
-def test_downstream_moderation_never_adds_progress_comments() -> None:
+def test_redundant_pull_request_check_workflows_are_removed() -> None:
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
-    for filename in ("apply-organization-review.yml", "finalize-moderation.yml"):
-        text = (workflow_root / filename).read_text(encoding="utf-8")
-        assert "gh issue comment" not in text
-        assert "gh pr comment" not in text
+    assert not (workflow_root / "check-proposals.yml").exists()
+    assert not (workflow_root / "finalize-moderation.yml").exists()
+    assert not (workflow_root / "apply-organization-review.yml").exists()
+    validation = yaml.load(
+        (workflow_root / "validate.yml").read_text(encoding="utf-8"),
+        Loader=yaml.BaseLoader,
+    )
+    assert "pull_request" not in validation["on"]
 
 
-def test_finalization_dispatches_publication_with_source_issue() -> None:
-    path = PROJECT_ROOT / ".github" / "workflows" / "finalize-moderation.yml"
-    text = path.read_text(encoding="utf-8")
-    assert '--moderator-id "$MODERATOR_ID"' in text
-    assert "steps.branch.outputs.pending == 'true'" in text
-    assert "steps.branch.outputs.finalized == 'true'" in text
-    assert "gh workflow run pages.yml" in text
-    assert '-f "issue_number=$ISSUE_NUMBER"' in text
-    assert "gh issue comment" not in text
-
-
-def test_pages_refuses_intermediate_data_and_closes_only_after_deploy() -> None:
+def test_pages_reconciles_all_finalized_issues_only_after_deploy() -> None:
     path = PROJECT_ROOT / ".github" / "workflows" / "pages.yml"
     text = path.read_text(encoding="utf-8")
-    assert "python3 scripts/publication_metadata.py" in text
-    assert "needs.gate.outputs.publish == 'true'" in text
+    document = yaml.load(text, Loader=yaml.BaseLoader)
+    assert "scripts/finalized_issue_numbers.py" in text
     assert "needs.deploy.result == 'success'" in text
     assert 'gh issue close "$ISSUE_NUMBER"' in text
     assert "--reason completed" in text
-
-
-def test_draft_pull_requests_do_not_run_redundant_checks() -> None:
-    workflow_root = PROJECT_ROOT / ".github" / "workflows"
-    proposal_check_path = workflow_root / "check-proposals.yml"
-    validation_path = workflow_root / "validate.yml"
-    proposal_check = proposal_check_path.read_text(encoding="utf-8")
-    validation = validation_path.read_text(encoding="utf-8")
-    assert "if: github.event.pull_request.draft == false" in proposal_check
-    assert (
-        "if: github.event_name != 'pull_request' || github.event.pull_request.draft == false"
-        in validation
+    assert "inputs.issue_number" not in text
+    assert "mentor-data build --output .work/pages" in text
+    assert "mentor-data stage-current --archive .work/pages --output dist" in text
+    assert "diff --cached --quiet" in text
+    assert document["concurrency"]["cancel-in-progress"] == "true"
+    upload_step = next(
+        step
+        for step in document["jobs"]["build"]["steps"]
+        if step.get("name") == "Upload Pages artifact"
     )
-    for path in (proposal_check_path, validation_path):
-        document = yaml.load(path.read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
-        pull_request_types = document["on"]["pull_request"]["types"]
-        assert "opened" not in pull_request_types
-        assert "ready_for_review" in pull_request_types
-        assert "synchronize" in pull_request_types
+    assert upload_step["with"]["path"] == "dist"

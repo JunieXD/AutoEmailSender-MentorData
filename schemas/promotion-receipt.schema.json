@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://juniexd.github.io/AutoEmailSender-MentorData/schemas/promotion-receipt.schema.json",
+  "title": "Mentor data promotion receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "issue_number",
+    "pull_number",
+    "pull_url",
+    "base_sha",
+    "proposal_commit_sha",
+    "finalized_at"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "kind": { "enum": ["mentor", "batch", "report"] },
+    "issue_number": { "type": "integer", "minimum": 1 },
+    "pull_number": { "type": "integer", "minimum": 1 },
+    "pull_url": {
+      "type": "string",
+      "pattern": "^https://github\\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/pull/[1-9][0-9]*$",
+      "maxLength": 500
+    },
+    "base_sha": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+    "proposal_commit_sha": { "type": "string", "pattern": "^[a-f0-9]{40}$" },
+    "finalized_at": { "type": "string", "format": "date-time" }
+  }
+}

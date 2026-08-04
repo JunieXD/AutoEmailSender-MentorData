@@ -9,7 +9,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from .batch import create_batch_proposals, parse_batch_form
-from .builder import build_dataset
+from .builder import build_dataset, stage_current_dataset
 from .errors import MentorDataError, RepositoryValidationError
 from .github_events import GitHubActor, fetch_github_actor, load_issue_event, parse_datetime
 from .io_utils import load_json, load_yaml, write_json_atomic
@@ -67,6 +67,13 @@ def build_parser() -> argparse.ArgumentParser:
     build_parser_command.add_argument("--root")
     build_parser_command.add_argument("--output", required=True)
     build_parser_command.add_argument("--generated-at")
+
+    stage_parser = subparsers.add_parser(
+        "stage-current",
+        help="从历史归档中整理仅含当前数据版本的 Pages 部署目录",
+    )
+    stage_parser.add_argument("--archive", required=True)
+    stage_parser.add_argument("--output", required=True)
 
     inspect_parser = subparsers.add_parser("inspect-package", help="安全检查批量共享包")
     inspect_parser.add_argument("path")
@@ -270,6 +277,7 @@ def main(argv: list[str] | None = None) -> int:
                         "organization_review_resolutions": len(
                             data.organization_review_resolutions
                         ),
+                        "promotion_receipts": len(data.promotion_receipts),
                         "proposals": len(data.proposals),
                         "report_proposals": len(data.report_proposals),
                     },
@@ -283,6 +291,10 @@ def main(argv: list[str] | None = None) -> int:
                 Path(args.output),
                 generated_at=_parse_generated_at(args.generated_at),
             )
+            print(json.dumps(latest, ensure_ascii=False))
+            return 0
+        if args.command == "stage-current":
+            latest = stage_current_dataset(Path(args.archive), Path(args.output))
             print(json.dumps(latest, ensure_ascii=False))
             return 0
         if args.command == "inspect-package":

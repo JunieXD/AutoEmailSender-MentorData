@@ -42,6 +42,7 @@ def _event(tmp_path: Path, *, number: int = 30):
                 "action": "opened",
                 "issue": {
                     "number": number,
+                    "state": "open",
                     "html_url": f"https://github.com/{REPOSITORY}/issues/{number}",
                     "title": "[批量投稿] 跨学校",
                     "body": body,
@@ -220,7 +221,7 @@ def _review_context(
             {
                 "number": 88,
                 "state": "open",
-                "head": {"ref": "batch/issue-30-123", "repo": {"full_name": REPOSITORY}},
+                "head": {"ref": "batch/issue-30", "repo": {"full_name": REPOSITORY}},
                 "base": {"ref": "main"},
             }
         ),
@@ -405,6 +406,62 @@ def test_review_can_create_new_university_and_school_chain(tmp_path: Path) -> No
     assert school["official_urls"] == []
     proposal = load_json(root / "proposals" / "batch-issue-30" / "issue-30-row-0001.json")
     assert proposal["accepted"]["organization_id"] == school["id"]
+
+
+def test_create_action_reuses_exact_existing_organization_chain(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "甲老师",
+                "a@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/a",
+            )
+        ],
+    )
+    group = manifest["groups"][0]
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _create(
+                        "university",
+                        "university",
+                        "示例大学",
+                        None,
+                        [],
+                        save_alias=True,
+                    ),
+                    _create(
+                        "school",
+                        "school",
+                        "计算机学院",
+                        None,
+                        [],
+                        save_alias=True,
+                    ),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.created_organizations == 0
+    proposal = load_json(root / "proposals" / "batch-issue-30" / "issue-30-row-0001.json")
+    assert proposal["accepted"]["organization_id"] == "org_example_cs"
 
 
 def test_review_uses_trusted_schemas_for_an_older_pull_request(tmp_path: Path) -> None:
@@ -718,8 +775,8 @@ def test_review_pull_rejects_fork_branch(tmp_path: Path) -> None:
         load_review_pull(pull_path, expected_repository=REPOSITORY, expected_number=88)
 
 
-def test_review_pull_accepts_retry_branch_with_run_attempt(tmp_path: Path) -> None:
-    pull_path = tmp_path / "retry-pull.json"
+def test_review_pull_rejects_legacy_run_specific_branch(tmp_path: Path) -> None:
+    pull_path = tmp_path / "legacy-pull.json"
     pull_path.write_text(
         json.dumps(
             {
@@ -735,7 +792,5 @@ def test_review_pull_accepts_retry_branch_with_run_attempt(tmp_path: Path) -> No
         encoding="utf-8",
     )
 
-    pull = load_review_pull(pull_path, expected_repository=REPOSITORY, expected_number=88)
-
-    assert pull.issue_number == 30
-    assert pull.head_ref == "batch/issue-30-123-2"
+    with pytest.raises(SubmissionError, match="内部分支"):
+        load_review_pull(pull_path, expected_repository=REPOSITORY, expected_number=88)

@@ -35,12 +35,12 @@
 
 ```json
 {
-  "dataset_version": "2026-08-03T053331Z-0752d0c095f7",
-  "unit_paths": ["data/org_university/org_school.json"]
+  "dataset_version": "v2-0752d0c095f7d084c8758f96f4b1a2c3",
+  "unit_paths": ["objects/sha256/0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef.json"]
 }
 ```
 
-`preview` 在上述字段外增加最多 500 个 `record_ids`。`import` 则增加最多 500 个 `items`；每项包含 `community_record_id`、可选的 `field_choices`（值为 `community` 或 `local`）以及身份冲突时必须显式设置的 `confirm_identity_match`。
+`preview` 在上述字段外增加最多 2,000 个 `record_ids`。`import` 则增加最多 2,000 个 `items`；每项包含 `community_record_id`、预览时返回的 `comparison_token`、可选的 `field_choices`（值为 `community` 或 `local`）以及身份冲突时必须显式设置的 `confirm_identity_match`。
 
 所有写入都在本地数据库事务中完成。客户端必须使用预览时的数据版本；版本变化、分片越界、生命周期禁止导入、邮箱多重匹配或稳定关联冲突都会拒绝写入。
 
@@ -87,7 +87,7 @@ remote_revoked_at
 - 冲突字段逐项显示，由用户决定；
 - 远端退休、离职或撤销只提示，不静默删除本地记录。
 
-社区记录完整保留多个联系方式和多个当前任职。v1 默认写入唯一主要当前邮箱与唯一主要当前任职；其他联系方式和任职在预览页展示，不丢失社区侧结构。`retired`、`departed`、`deceased`、`disputed`、`removed` 等状态通过撤销列表同步到关联表，只生成提醒，不删除、归档或恢复本地导师。
+社区记录完整保留多个联系方式和多个当前任职。软件默认写入唯一主要当前邮箱与唯一主要当前任职；其他联系方式和任职在预览页展示，不丢失社区侧结构。`retired`、`departed`、`deceased`、`disputed`、`removed` 等状态通过撤销列表同步到关联表，只生成提醒，不删除、归档或恢复本地导师。
 
 ## 贡献和反馈
 

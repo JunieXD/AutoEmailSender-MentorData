@@ -11,7 +11,6 @@ on:
         type: string
 
 permissions:
-  actions: write
   contents: write
   issues: write
   pull-requests: write
@@ -22,7 +21,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       contains(github.event.issue.labels.*.name, 'submission:mentor')
     concurrency:
-      group: mentor-data-write
+      group: process-mentor-${{ github.event.issue.number || inputs.issue_number }}
       cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -30,15 +29,13 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GITHUB_TOKEN: ${{ github.token }}
       ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
-      RUN_ID: ${{ github.run_id }}
-      RUN_ATTEMPT: ${{ github.run_attempt }}
       SOURCE_EVENT: .work/source-issue-event.json
     steps:
       - name: Check out trusted default branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Install uv
         uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
@@ -62,103 +59,110 @@ jobs:
             exit 1
           fi
 
+      - name: Inspect durable Issue workflow state
+        id: workflow_state
+        run: |
+          uv run python scripts/issue_workflow_state.py \
+            --event "$SOURCE_EVENT" \
+            --repository "$GITHUB_REPOSITORY" \
+            --issue-number "$ISSUE_NUMBER" \
+            --kind mentor \
+            --github-output "$GITHUB_OUTPUT"
+
       - name: Parse untrusted Issue as data
+        if: steps.workflow_state.outputs.process == 'true'
         run: |
           uv run mentor-data prepare-issue \
             --event "$SOURCE_EVENT" \
             --output .work/proposals
 
       - name: Read trusted proposal metadata
+        if: steps.workflow_state.outputs.process == 'true'
         id: metadata
         run: uv run python scripts/proposal_metadata.py ".work/proposals/issue-${ISSUE_NUMBER}.json"
 
-      - name: Finalize canonical data for auto-eligible submission
-        if: steps.metadata.outputs.auto_eligible == 'true'
-        run: |
-          uv run mentor-data finalize-proposal \
-            ".work/proposals/issue-${ISSUE_NUMBER}.json"
-          uv run mentor-data validate
-          uv run pytest
+      - name: Rehearse auto-eligible proposal
+        if: >-
+          steps.workflow_state.outputs.process == 'true' &&
+          steps.metadata.outputs.auto_eligible == 'true'
+        run: uv run mentor-data check-proposal ".work/proposals/issue-${ISSUE_NUMBER}.json"
 
-      - name: Store manual-review proposal
-        if: steps.metadata.outputs.auto_eligible != 'true'
-        run: |
-          mkdir -p proposals
-          cp ".work/proposals/issue-${ISSUE_NUMBER}.json" "proposals/issue-${ISSUE_NUMBER}.json"
-
-      - name: Create internal review branch and Pull Request
+      - name: Create stable proposal branch and Pull Request
+        if: steps.workflow_state.outputs.process == 'true'
         id: pull_request
         env:
           AUTO_ELIGIBLE: ${{ steps.metadata.outputs.auto_eligible }}
+          BRANCH: ${{ steps.workflow_state.outputs.branch }}
         run: |
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
-          case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
-          case "$RUN_ATTEMPT" in ''|*[!0-9]*) exit 1 ;; esac
-          echo "merged=false" >> "$GITHUB_OUTPUT"
-          if [ "$AUTO_ELIGIBLE" = "true" ]; then
-            BRANCH="automatic/issue-${ISSUE_NUMBER}-${RUN_ID}-${RUN_ATTEMPT}"
-          else
-            BRANCH="submission/issue-${ISSUE_NUMBER}-${RUN_ID}-${RUN_ATTEMPT}"
-          fi
+          case "$BRANCH" in "submission/issue-${ISSUE_NUMBER}") ;; *) exit 1 ;; esac
+          REMOTE_SHA=$(git ls-remote --heads origin "refs/heads/${BRANCH}" | awk '{print $1}')
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -c "$BRANCH"
-          git add claims records proposals
+          git switch -C "$BRANCH" main
+          mkdir -p proposals
+          cp ".work/proposals/issue-${ISSUE_NUMBER}.json" "proposals/issue-${ISSUE_NUMBER}.json"
+          git add "proposals/issue-${ISSUE_NUMBER}.json"
           git commit -m "data: prepare mentor submission #${ISSUE_NUMBER}"
-          git push origin "$BRANCH"
-          if [ "$AUTO_ELIGIBLE" = "true" ]; then
-            PR_URL=$(uv run python scripts/create_issue_pull_request.py \
-              --event "$SOURCE_EVENT" \
-              --repository "$GITHUB_REPOSITORY" \
-              --issue-number "$ISSUE_NUMBER" \
-              --kind mentor \
-              --head "$BRANCH" \
-              --body "由受信任默认分支工作流生成。关联 Issue #${ISSUE_NUMBER}。")
-            gh pr merge "$PR_URL" --squash --delete-branch
-            echo "merged=true" >> "$GITHUB_OUTPUT"
+          if [ -n "$REMOTE_SHA" ]; then
+            git push \
+              --force-with-lease="refs/heads/${BRANCH}:${REMOTE_SHA}" \
+              origin "HEAD:refs/heads/${BRANCH}"
           else
-            PR_URL=$(uv run python scripts/create_issue_pull_request.py \
-              --event "$SOURCE_EVENT" \
-              --repository "$GITHUB_REPOSITORY" \
-              --issue-number "$ISSUE_NUMBER" \
-              --kind mentor \
-              --head "$BRANCH" \
-              --draft \
-              --body "请核对 accepted、target_mentor_id、机构映射和 review_reasons。确认后将 Draft 标记为 Ready 并合并；关联 Issue #${ISSUE_NUMBER}。")
+            git push origin "HEAD:refs/heads/${BRANCH}"
           fi
+          PR_ARGS=(
+            --event "$SOURCE_EVENT"
+            --repository "$GITHUB_REPOSITORY"
+            --issue-number "$ISSUE_NUMBER"
+            --kind mentor
+            --head "$BRANCH"
+          )
+          if [ "$AUTO_ELIGIBLE" = "true" ]; then
+            PR_ARGS+=(
+              --label status:auto-eligible
+              --body "该投稿已通过自动校验，正在等待按顺序写入社区导师库。关联 Issue #${ISSUE_NUMBER}。"
+            )
+          else
+            PR_ARGS+=(
+              --draft
+              --label status:manual-review
+              --body "请核对 accepted、target_mentor_id、机构映射和 review_reasons；确认后将 Draft 标记为 Ready。关联 Issue #${ISSUE_NUMBER}。"
+            )
+          fi
+          PR_URL=$(uv run python scripts/create_issue_pull_request.py "${PR_ARGS[@]}")
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
 
-      - name: Publish auto-eligible canonical change
-        id: publish
-        if: steps.metadata.outputs.auto_eligible == 'true'
-        run: |
-          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
-          gh workflow run pages.yml --ref main -f "issue_number=$ISSUE_NUMBER"
-
       - name: Post the only Issue status notification
-        if: always()
+        if: >-
+          always() &&
+          steps.workflow_state.outputs.outcome != 'finalized' &&
+          steps.workflow_state.outputs.outcome != 'closed_pull'
         env:
           JOB_STATUS: ${{ job.status }}
           AUTO_ELIGIBLE: ${{ steps.metadata.outputs.auto_eligible }}
-          MERGED: ${{ steps.pull_request.outputs.merged }}
           PR_URL: ${{ steps.pull_request.outputs.pr_url }}
+          WORKFLOW_OUTCOME: ${{ steps.workflow_state.outputs.outcome }}
+          EXISTING_PR_URL: ${{ steps.workflow_state.outputs.pr_url }}
         run: |
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
-          if [ "$JOB_STATUS" = "success" ] && [ "$AUTO_ELIGIBLE" = "true" ]; then
-            MESSAGE="投稿已通过自动校验并进入社区数据。发布成功后，本 Issue 会自动关闭。审核记录：${PR_URL}"
-          elif [ "$JOB_STATUS" = "success" ]; then
-            MESSAGE="投稿已完成安全校验并进入维护者审核：${PR_URL} 。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
-          elif [ "$MERGED" = "true" ]; then
-            MESSAGE="规范数据已经合并，但发布任务未成功启动。本 Issue 会保持开启，等待维护者补发。"
-          else
-            MESSAGE="自动校验或提案生成未通过，社区数据没有改变。维护者可查看本次 Actions 的固定格式日志。"
-          fi
           MARKER="<!-- mentor-data-status:v1 -->"
-          BODY="${MARKER}"$'\n'"${MESSAGE}"
           COMMENT_IDS=$(gh api --paginate \
             "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/comments?per_page=100" \
             --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- mentor-data-status:v1 -->"))) | .id')
           COMMENT_ID=${COMMENT_IDS%%$'\n'*}
+          if [ "$WORKFLOW_OUTCOME" = "existing_pull" ] && [ -n "$COMMENT_ID" ]; then
+            exit 0
+          elif [ "$WORKFLOW_OUTCOME" = "existing_pull" ]; then
+            MESSAGE="投稿已经有对应的审核记录，不会重复创建。[查看记录](${EXISTING_PR_URL})"
+          elif [ "$JOB_STATUS" = "success" ] && [ "$AUTO_ELIGIBLE" = "true" ]; then
+            MESSAGE="投稿已通过自动校验，正在等待社区库按顺序处理。[查看记录](${PR_URL})"
+          elif [ "$JOB_STATUS" = "success" ]; then
+            MESSAGE="投稿已进入维护者审核。[继续审核](${PR_URL}) 审核完成后会自动写入和发布。"
+          else
+            MESSAGE="投稿校验或提案生成未通过，社区数据没有改变。维护者可查看本次 Actions 日志。"
+          fi
+          BODY="${MARKER}"$'\n'"${MESSAGE}"
           case "$COMMENT_ID" in
             '') gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "$BODY" ;;
             *[!0-9]*) exit 1 ;;

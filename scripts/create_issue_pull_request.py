@@ -18,26 +18,18 @@ PULL_URL_PATTERN_TEMPLATE = r"^https://github\.com/{repository}/pull/[1-9][0-9]*
 KIND_RULES = {
     "mentor": (
         "submission:mentor",
-        re.compile(
-            r"^(?:automatic|submission)/issue-(?P<issue>[1-9][0-9]*)-"
-            r"[1-9][0-9]*(?:-[1-9][0-9]*)?$"
-        ),
+        re.compile(r"^submission/issue-(?P<issue>[1-9][0-9]*)$"),
     ),
     "batch": (
         "submission:batch",
-        re.compile(
-            r"^(?:automatic-batch|batch)/issue-(?P<issue>[1-9][0-9]*)-"
-            r"[1-9][0-9]*(?:-[1-9][0-9]*)?$"
-        ),
+        re.compile(r"^batch/issue-(?P<issue>[1-9][0-9]*)$"),
     ),
     "report": (
         "report:data",
-        re.compile(
-            r"^report/issue-(?P<issue>[1-9][0-9]*)-"
-            r"[1-9][0-9]*(?:-[1-9][0-9]*)?$"
-        ),
+        re.compile(r"^report/issue-(?P<issue>[1-9][0-9]*)$"),
     ),
 }
+STATUS_LABELS = {"status:auto-eligible", "status:manual-review"}
 
 
 def build_pull_request_command(
@@ -47,6 +39,7 @@ def build_pull_request_command(
     title: str,
     body: str,
     draft: bool,
+    labels: Sequence[str] = (),
 ) -> list[str]:
     command = [
         "gh",
@@ -65,6 +58,8 @@ def build_pull_request_command(
     ]
     if draft:
         command.append("--draft")
+    for label in labels:
+        command.extend(("--label", label))
     return command
 
 
@@ -78,6 +73,7 @@ def create_issue_pull_request(
     head: str,
     body: str,
     draft: bool,
+    labels: Sequence[str] = (),
     runner: Callable[..., subprocess.CompletedProcess[str]] = subprocess.run,
 ) -> str:
     if REPOSITORY_PATTERN.fullmatch(repository) is None:
@@ -86,6 +82,8 @@ def create_issue_pull_request(
         raise ValueError("Issue 编号必须是正整数")
     if "\x00" in body or len(body) > 10_000:
         raise ValueError("Pull Request 正文无效或过长")
+    if len(labels) != len(set(labels)) or not set(labels).issubset(STATUS_LABELS):
+        raise ValueError("Pull Request 状态标签无效或重复")
     try:
         required_label, branch_pattern = KIND_RULES[kind]
     except KeyError as error:
@@ -109,6 +107,7 @@ def create_issue_pull_request(
         title=event.title,
         body=body,
         draft=draft,
+        labels=labels,
     )
     completed = runner(
         command,
@@ -138,6 +137,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--head", required=True)
     parser.add_argument("--body", required=True)
     parser.add_argument("--draft", action="store_true")
+    parser.add_argument("--label", action="append", default=[], choices=sorted(STATUS_LABELS))
     return parser
 
 
@@ -153,6 +153,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             head=args.head,
             body=args.body,
             draft=args.draft,
+            labels=args.label,
         )
     except (
         OSError,

@@ -1,7 +1,6 @@
 const REPOSITORY = "JunieXD/AutoEmailSender-MentorData";
 const COMMENT_MARKER = "<!-- mentor-data-organization-review:v1 -->";
-const BRANCH_PATTERN =
-  /^batch\/issue-([1-9][0-9]*)-([1-9][0-9]*)(?:-([1-9][0-9]*))?$/;
+const BRANCH_PATTERN = /^batch\/issue-([1-9][0-9]*)$/;
 const SHA_PATTERN = /^[a-f0-9]{40,64}$/;
 const DOMAIN_PATTERN = /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$/;
 const MAX_MANIFEST_BYTES = 20_000_000;
@@ -927,6 +926,8 @@ function createOrganizationDraftEditor(draft) {
 
   const error = element("p", "organization-draft-error error");
   error.hidden = true;
+  const reuseNotice = element("p", "organization-reuse-notice");
+  reuseNotice.hidden = true;
   const footer = element("div", "organization-draft-footer");
   const confirm = element("button", "primary-button compact-button", "确认并处理下一个");
   confirm.type = "button";
@@ -935,6 +936,7 @@ function createOrganizationDraftEditor(draft) {
     labeledControl("处理方式", action),
     existingPanel,
     createPanel,
+    reuseNotice,
     sourceBar,
     error,
     footer,
@@ -962,6 +964,7 @@ function createOrganizationDraftEditor(draft) {
     canonicalName,
     officialUrl,
     approvedDomains,
+    reuseNotice,
     aliasLabel,
     saveAlias,
     error,
@@ -1469,6 +1472,25 @@ async function updateOrganizationDrafts() {
     editor.existingInput.setOptions(available);
     if (draft.restoreExistingId && editor.existingInput.selectById(draft.restoreExistingId)) {
       draft.restoreExistingId = null;
+    }
+
+    editor.reuseNotice.hidden = true;
+    if (!draft.forcedSkip && editor.action.value === "create") {
+      const exactExistingId = findExactOrganization(
+        draft.level,
+        parentId,
+        editor.canonicalName.value,
+      );
+      if (
+        exactExistingId &&
+        editor.allowedExistingIds.has(exactExistingId) &&
+        editor.existingInput.selectById(exactExistingId)
+      ) {
+        editor.action.value = "existing";
+        const organization = state.organizationById.get(exactExistingId);
+        editor.reuseNotice.textContent = `已找到同名机构，自动归到「${organization?.canonical_name || draft.submittedName}」。`;
+        editor.reuseNotice.hidden = false;
+      }
     }
 
     editor.action.disabled = draft.forcedSkip;

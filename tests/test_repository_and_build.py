@@ -4,9 +4,9 @@ import json
 
 import pytest
 
-from mentor_data.builder import build_dataset
+from mentor_data.builder import build_dataset, stage_current_dataset
 from mentor_data.errors import RepositoryValidationError
-from mentor_data.io_utils import load_yaml, write_yaml_atomic
+from mentor_data.io_utils import load_yaml, write_json_atomic, write_yaml_atomic
 from mentor_data.repository import load_repository
 
 from .helpers import (
@@ -62,7 +62,7 @@ def test_dual_affiliation_and_multiple_current_emails_publish_primary_projection
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     assert catalog["record_count"] == 1
     unit_path = catalog["universities"][0]["units"][0]["path"]
-    shard = json.loads((catalog_path.parent / unit_path).read_text(encoding="utf-8"))
+    shard = json.loads((tmp_path / "dist" / unit_path).read_text(encoding="utf-8"))
     record = shard["records"][0]
     assert record["email"] == "mentor@example.edu"
     assert record["profile_url"] == "https://cs.example.edu/faculty/mentor"
@@ -158,12 +158,91 @@ def test_organization_alias_matching_is_scoped_to_parent(tmp_path) -> None:
     assert wrong_parent.status == "unknown"
 
 
-def test_dataset_version_directory_is_immutable(tmp_path) -> None:
+def test_unchanged_data_reuses_the_same_release(tmp_path) -> None:
     root = build_test_repository(tmp_path)
     output = tmp_path / "dist"
-    build_dataset(root, output, generated_at=fixed_datetime())
-    with pytest.raises(FileExistsError, match="版本已经存在"):
-        build_dataset(root, output, generated_at=fixed_datetime())
+    first = build_dataset(root, output, generated_at=fixed_datetime())
+    second = build_dataset(root, output)
+
+    assert second == first
+    assert len(list((output / "releases").iterdir())) == 1
+
+
+def test_new_release_reuses_unchanged_content_addressed_shards(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    value = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, value)
+    save_mentor(root, mentor())
+    output = tmp_path / "archive"
+    first = build_dataset(root, output, generated_at=fixed_datetime())
+    first_catalog = json.loads((output / first["catalog_path"]).read_text(encoding="utf-8"))
+    first_shard = first_catalog["universities"][0]["units"][0]["path"]
+
+    policy_path = root / "registry" / "policy.yml"
+    policy = load_yaml(policy_path)
+    policy["minimum_app_version"] = "2.4.2"
+    write_yaml_atomic(policy_path, policy)
+    second = build_dataset(root, output)
+    second_catalog = json.loads((output / second["catalog_path"]).read_text(encoding="utf-8"))
+
+    assert second["dataset_version"] != first["dataset_version"]
+    assert second_catalog["universities"][0]["units"][0]["path"] == first_shard
+    assert len(list((output / "objects" / "sha256").glob("*.json"))) == 1
+
+
+def test_staged_pages_artifact_contains_only_the_current_release(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    archive = tmp_path / "archive"
+    first = build_dataset(root, archive, generated_at=fixed_datetime())
+    policy_path = root / "registry" / "policy.yml"
+    policy = load_yaml(policy_path)
+    policy["minimum_app_version"] = "2.4.2"
+    write_yaml_atomic(policy_path, policy)
+    second = build_dataset(root, archive)
+
+    output = tmp_path / "deploy"
+    staged = stage_current_dataset(archive, output)
+
+    assert staged == second
+    assert (output / second["manifest_path"]).is_file()
+    assert not (output / first["manifest_path"]).exists()
+
+
+def test_staging_rejects_corrupt_archive_before_replacing_existing_output(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    archive = tmp_path / "archive"
+    latest = build_dataset(root, archive, generated_at=fixed_datetime())
+    manifest = json.loads((archive / latest["manifest_path"]).read_text(encoding="utf-8"))
+    published_path = manifest["files"][0]["path"]
+    (archive / published_path).write_bytes(b"corrupt")
+    output = tmp_path / "deploy"
+    output.mkdir()
+    marker = output / "keep-on-failure.txt"
+    marker.write_text("keep", encoding="utf-8")
+
+    with pytest.raises(ValueError, match="校验失败"):
+        stage_current_dataset(archive, output)
+
+    assert marker.read_text(encoding="utf-8") == "keep"
+
+
+def test_staging_rejects_an_output_directory_that_contains_the_archive(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    archive = tmp_path / "archive"
+    build_dataset(root, archive, generated_at=fixed_datetime())
+
+    with pytest.raises(ValueError, match="互相包含"):
+        stage_current_dataset(archive, tmp_path)
 
 
 def test_build_publishes_machine_readable_cc_by_4_metadata_and_page_notice(tmp_path) -> None:
@@ -193,4 +272,208 @@ def test_repository_rejects_a_different_or_missing_data_license(tmp_path) -> Non
     write_yaml_atomic(policy_path, policy)
 
     with pytest.raises(RepositoryValidationError, match="CC-BY-4.0"):
+        load_repository(root)
+
+
+def _promotion_receipt(*, kind: str, issue_number: int, pull_number: int = 10) -> dict:
+    return {
+        "schema_version": 1,
+        "kind": kind,
+        "issue_number": issue_number,
+        "pull_number": pull_number,
+        "pull_url": f"https://github.com/example/repository/pull/{pull_number}",
+        "base_sha": "a" * 40,
+        "proposal_commit_sha": "b" * 40,
+        "finalized_at": "2026-08-03T00:00:00Z",
+    }
+
+
+def _save_promotion_receipt(root, receipt: dict) -> None:
+    write_json_atomic(
+        root / "reviews" / "promotions" / f"issue-{receipt['issue_number']}.json",
+        receipt,
+    )
+
+
+def test_repository_accepts_mentor_batch_and_report_promotion_receipts(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    mentor_claim = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=40,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    batch_claim = claim(
+        claim_id="claim_fixture_2002",
+        mentor_id="mentor_fixture_0002",
+        user_id=2002,
+        login="fixture-two",
+        issue_number=41,
+        name="另一位导师",
+        email="other@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/other",
+    )
+    save_claim(root, mentor_claim)
+    save_claim(root, batch_claim)
+    save_mentor(root, mentor())
+    second_mentor = mentor(mentor_id="mentor_fixture_0002", claim_ids=["claim_fixture_2002"])
+    second_mentor["names"][0]["value"] = "另一位导师"
+    second_mentor["contacts"][0].update(
+        {
+            "value": "other@example.edu",
+            "normalized_value": "other@example.edu",
+            "source_url": "https://cs.example.edu/faculty/other",
+        }
+    )
+    second_mentor["affiliations"][0]["source_url"] = "https://cs.example.edu/faculty/other"
+    second_mentor["profiles"][0]["url"] = "https://cs.example.edu/faculty/other"
+    save_mentor(root, second_mentor)
+
+    write_json_atomic(
+        root / "reviews" / "resolutions" / "batch-issue-42.json",
+        {
+            "schema_version": 1,
+            "id": "organization_review_issue_42",
+            "issue": {
+                "number": 42,
+                "url": "https://github.com/example/repository/issues/42",
+            },
+            "pull_request_number": 12,
+            "review_comment_id": 100,
+            "reviewer": {
+                "github_user_id": 999,
+                "github_login": "maintainer",
+                "author_association": "OWNER",
+            },
+            "manifest_sha256": "c" * 64,
+            "decided_at": "2026-08-03T00:00:00Z",
+            "created_organization_ids": [],
+            "updated_organization_ids": [],
+            "mapped_proposal_ids": [],
+            "rejected_proposal_ids": ["proposal_issue_42_row_1"],
+            "invalid_rows": [],
+            "decisions": [],
+        },
+    )
+    write_json_atomic(
+        root / "reports" / "resolutions" / "resolution_report_43.json",
+        {
+            "schema_version": 1,
+            "id": "resolution_report_43",
+            "mentor_id": "mentor_fixture_0001",
+            "report_issue": {
+                "number": 43,
+                "url": "https://github.com/example/repository/issues/43",
+            },
+            "reporter": {"github_user_id": 5005, "github_login": "reporter"},
+            "decision": "rejected",
+            "before": {},
+            "proposed": {},
+            "accepted": {},
+            "evidence_urls": ["https://cs.example.edu/faculty/mentor"],
+            "moderator": {"github_user_id": 999, "github_login": "maintainer"},
+            "decided_at": "2026-08-03T00:00:00Z",
+            "reason": "官网仍显示当前信息",
+        },
+    )
+    for offset, (kind, issue_number) in enumerate(
+        (("mentor", 40), ("batch", 41), ("batch", 42), ("report", 43)),
+        start=10,
+    ):
+        _save_promotion_receipt(
+            root,
+            _promotion_receipt(kind=kind, issue_number=issue_number, pull_number=offset),
+        )
+
+    load_repository(root)
+
+
+def test_repository_rejects_promotion_receipt_without_final_data(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    _save_promotion_receipt(
+        root,
+        _promotion_receipt(kind="mentor", issue_number=50),
+    )
+
+    with pytest.raises(RepositoryValidationError, match="没有对应的最终数据"):
+        load_repository(root)
+
+
+def test_repository_rejects_promotion_receipt_with_mismatched_pull_url(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    value = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=51,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, value)
+    save_mentor(root, mentor())
+    receipt = _promotion_receipt(kind="mentor", issue_number=51, pull_number=10)
+    receipt["pull_url"] = "https://github.com/example/repository/pull/11"
+    _save_promotion_receipt(root, receipt)
+
+    with pytest.raises(RepositoryValidationError, match="PR URL 与编号不一致"):
+        load_repository(root)
+
+
+def test_repository_rejects_promotion_receipt_with_pending_proposal(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    value = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=52,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, value)
+    save_mentor(root, mentor())
+    submitted = value["submitted"]
+    pending = {
+        "schema_version": 1,
+        "id": "proposal_issue_52_row_1",
+        "kind": "mentor_contribution",
+        "issue": {
+            "number": 52,
+            "url": "https://github.com/example/repository/issues/52",
+            "batch_row": 1,
+        },
+        "contributor": {
+            "github_user_id": 1001,
+            "github_login_at_submission": "fixture-one",
+            "github_user_type": "User",
+            "submitted_at": "2026-08-03T00:00:00Z",
+            "account_created_at": "2020-01-01T00:00:00Z",
+            "account_age_days_at_submission": 2400,
+        },
+        "submitted": submitted,
+        "accepted": submitted,
+        "target_mentor_id": "mentor_fixture_0001",
+        "match_status": "matched_email",
+        "review_reasons": ["manual_review"],
+        "auto_eligible": False,
+        "created_at": "2026-08-03T00:00:00Z",
+    }
+    write_json_atomic(root / "proposals" / "issue-52.json", pending)
+    _save_promotion_receipt(
+        root,
+        _promotion_receipt(kind="mentor", issue_number=52),
+    )
+
+    with pytest.raises(RepositoryValidationError, match="仍有待审核提案"):
         load_repository(root)

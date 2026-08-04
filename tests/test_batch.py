@@ -33,6 +33,7 @@ def _batch_event(tmp_path):
                 "action": "opened",
                 "issue": {
                     "number": 30,
+                    "state": "open",
                     "html_url": "https://github.com/example/repository/issues/30",
                     "title": "[批量投稿] 示例",
                     "body": body,

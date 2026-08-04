@@ -21,7 +21,7 @@ jobs:
       github.event_name == 'workflow_dispatch' ||
       contains(github.event.issue.labels.*.name, 'report:data')
     concurrency:
-      group: mentor-data-write
+      group: process-report-${{ github.event.issue.number || inputs.issue_number }}
       cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 15
@@ -29,15 +29,13 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       GITHUB_TOKEN: ${{ github.token }}
       ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
-      RUN_ID: ${{ github.run_id }}
-      RUN_ATTEMPT: ${{ github.run_attempt }}
       SOURCE_EVENT: .work/source-issue-event.json
     steps:
       - name: Check out trusted default branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Install uv
         uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
@@ -61,27 +59,46 @@ jobs:
             exit 1
           fi
 
+      - name: Inspect durable Issue workflow state
+        id: workflow_state
+        run: |
+          uv run python scripts/issue_workflow_state.py \
+            --event "$SOURCE_EVENT" \
+            --repository "$GITHUB_REPOSITORY" \
+            --issue-number "$ISSUE_NUMBER" \
+            --kind report \
+            --github-output "$GITHUB_OUTPUT"
+
       - name: Parse untrusted report as data
+        if: steps.workflow_state.outputs.process == 'true'
         run: |
           uv run mentor-data prepare-report \
             --event "$SOURCE_EVENT" \
             --output .work/reports
 
-      - name: Create internal Draft Pull Request
+      - name: Create stable proposal branch and Draft Pull Request
+        if: steps.workflow_state.outputs.process == 'true'
         id: pull_request
+        env:
+          BRANCH: ${{ steps.workflow_state.outputs.branch }}
         run: |
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
-          case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
-          case "$RUN_ATTEMPT" in ''|*[!0-9]*) exit 1 ;; esac
-          BRANCH="report/issue-${ISSUE_NUMBER}-${RUN_ID}-${RUN_ATTEMPT}"
-          mkdir -p reports/pending
-          cp ".work/reports/issue-${ISSUE_NUMBER}.json" "reports/pending/issue-${ISSUE_NUMBER}.json"
+          case "$BRANCH" in "report/issue-${ISSUE_NUMBER}") ;; *) exit 1 ;; esac
+          REMOTE_SHA=$(git ls-remote --heads origin "refs/heads/${BRANCH}" | awk '{print $1}')
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git switch -c "$BRANCH"
-          git add reports/pending
+          git switch -C "$BRANCH" main
+          mkdir -p reports/pending
+          cp ".work/reports/issue-${ISSUE_NUMBER}.json" "reports/pending/issue-${ISSUE_NUMBER}.json"
+          git add "reports/pending/issue-${ISSUE_NUMBER}.json"
           git commit -m "data: prepare correction report #${ISSUE_NUMBER}"
-          git push origin "$BRANCH"
+          if [ -n "$REMOTE_SHA" ]; then
+            git push \
+              --force-with-lease="refs/heads/${BRANCH}:${REMOTE_SHA}" \
+              origin "HEAD:refs/heads/${BRANCH}"
+          else
+            git push origin "HEAD:refs/heads/${BRANCH}"
+          fi
           PR_URL=$(uv run python scripts/create_issue_pull_request.py \
             --event "$SOURCE_EVENT" \
             --repository "$GITHUB_REPOSITORY" \
@@ -89,27 +106,37 @@ jobs:
             --kind report \
             --head "$BRANCH" \
             --draft \
-            --body "请将 decision 从 pending 改为最终裁决，填写 moderator_reason；接受修改时还需填写 accepted。关联 Issue #${ISSUE_NUMBER}。")
+            --label status:manual-review \
+            --body "请填写最终 decision 和 moderator_reason；接受修改时还需填写 accepted。确认后将 Draft 标记为 Ready。关联 Issue #${ISSUE_NUMBER}。")
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
 
       - name: Post the only Issue status notification
-        if: always()
+        if: >-
+          always() &&
+          steps.workflow_state.outputs.outcome != 'finalized' &&
+          steps.workflow_state.outputs.outcome != 'closed_pull'
         env:
           JOB_STATUS: ${{ job.status }}
           PR_URL: ${{ steps.pull_request.outputs.pr_url }}
+          WORKFLOW_OUTCOME: ${{ steps.workflow_state.outputs.outcome }}
+          EXISTING_PR_URL: ${{ steps.workflow_state.outputs.pr_url }}
         run: |
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
-          if [ "$JOB_STATUS" = "success" ]; then
-            MESSAGE="反馈已进入人工审核，不会直接修改社区数据：${PR_URL} 。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
-          else
-            MESSAGE="反馈自动校验未通过，社区数据没有变化。维护者可查看本次 Actions 的固定格式日志。"
-          fi
           MARKER="<!-- mentor-data-status:v1 -->"
-          BODY="${MARKER}"$'\n'"${MESSAGE}"
           COMMENT_IDS=$(gh api --paginate \
             "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/comments?per_page=100" \
             --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- mentor-data-status:v1 -->"))) | .id')
           COMMENT_ID=${COMMENT_IDS%%$'\n'*}
+          if [ "$WORKFLOW_OUTCOME" = "existing_pull" ] && [ -n "$COMMENT_ID" ]; then
+            exit 0
+          elif [ "$WORKFLOW_OUTCOME" = "existing_pull" ]; then
+            MESSAGE="反馈已经有对应的审核记录，不会重复创建。[查看记录](${EXISTING_PR_URL})"
+          elif [ "$JOB_STATUS" = "success" ]; then
+            MESSAGE="反馈已进入维护者审核，不会直接修改社区数据。[继续审核](${PR_URL})"
+          else
+            MESSAGE="反馈校验或提案生成未通过，社区数据没有改变。维护者可查看本次 Actions 日志。"
+          fi
+          BODY="${MARKER}"$'\n'"${MESSAGE}"
           case "$COMMENT_ID" in
             '') gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "$BODY" ;;
             *[!0-9]*) exit 1 ;;

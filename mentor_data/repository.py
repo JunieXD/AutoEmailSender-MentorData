@@ -34,6 +34,7 @@ class RepositoryData:
     resolutions: list[dict[str, Any]]
     organization_review_resolutions: list[dict[str, Any]]
     organization_review_resolution_paths: dict[str, Path]
+    promotion_receipts: list[dict[str, Any]]
     proposals: list[dict[str, Any]]
     proposal_paths: dict[str, Path]
     report_proposals: list[dict[str, Any]]
@@ -75,6 +76,7 @@ def load_repository(
     organization_review_resolutions, organization_review_resolution_paths = _load_json_collection(
         resolved_root / "reviews" / "resolutions"
     )
+    promotion_receipts, _ = _load_json_collection(resolved_root / "reviews" / "promotions")
     proposals, proposal_paths = _load_json_collection(resolved_root / "proposals")
     report_proposals, report_proposal_paths = _load_json_collection(
         resolved_root / "reports" / "pending"
@@ -92,6 +94,7 @@ def load_repository(
         resolutions=resolutions,
         organization_review_resolutions=organization_review_resolutions,
         organization_review_resolution_paths=organization_review_resolution_paths,
+        promotion_receipts=promotion_receipts,
         proposals=proposals,
         proposal_paths=proposal_paths,
         report_proposals=report_proposals,
@@ -128,6 +131,9 @@ def validate_repository_data(
         ),
         "organization_review_resolution": load_json(
             resolved_schema_root / "schemas" / "organization-review-resolution.schema.json"
+        ),
+        "promotion_receipt": load_json(
+            resolved_schema_root / "schemas" / "promotion-receipt.schema.json"
         ),
     }
     format_checker = FormatChecker()
@@ -170,6 +176,10 @@ def validate_repository_data(
         resolution_id = resolution.get("id", "<unknown>")
         for message in _schema_errors(validators["organization_review_resolution"], resolution):
             issues.append(f"organization review {resolution_id}: {message}")
+    for receipt in data.promotion_receipts:
+        issue_number = receipt.get("issue_number", "<unknown>")
+        for message in _schema_errors(validators["promotion_receipt"], receipt):
+            issues.append(f"promotion receipt issue {issue_number}: {message}")
 
     _validate_policy(data, issues)
     _validate_organizations(data, issues)
@@ -179,6 +189,7 @@ def validate_repository_data(
     _validate_proposals(data, issues)
     _validate_report_proposals(data, issues)
     _validate_organization_review_resolutions(data, issues)
+    _validate_promotion_receipts(data, issues)
     _validate_revocations(data, issues)
 
     if issues:
@@ -642,6 +653,58 @@ def _validate_organization_review_resolutions(
         rejected = set(resolution.get("rejected_proposal_ids", []))
         if mapped & rejected:
             issues.append(f"organization review {resolution_id}: 同一提案不能同时映射和拒绝")
+
+
+def _validate_promotion_receipts(data: RepositoryData, issues: list[str]) -> None:
+    issue_numbers = [item.get("issue_number") for item in data.promotion_receipts]
+    pull_numbers = [item.get("pull_number") for item in data.promotion_receipts]
+    if len(issue_numbers) != len(set(issue_numbers)):
+        issues.append("reviews/promotions: Issue 编号重复")
+    if len(pull_numbers) != len(set(pull_numbers)):
+        issues.append("reviews/promotions: Pull Request 编号重复")
+    claim_issue_numbers = {
+        claim.get("contributor", {}).get("issue_number") for claim in data.claims
+    }
+    organization_review_issue_numbers = {
+        resolution.get("issue", {}).get("number")
+        for resolution in data.organization_review_resolutions
+    }
+    report_issue_numbers = {
+        resolution.get("report_issue", {}).get("number") for resolution in data.resolutions
+    }
+    pending_issue_numbers = {
+        proposal.get("issue", {}).get("number")
+        for proposal in [*data.proposals, *data.report_proposals]
+    }
+    for receipt in data.promotion_receipts:
+        issue_number = receipt.get("issue_number")
+        pull_number = receipt.get("pull_number")
+        pull_url = receipt.get("pull_url")
+        kind = receipt.get("kind")
+        if (
+            isinstance(pull_number, int)
+            and isinstance(pull_url, str)
+            and not pull_url.endswith(f"/pull/{pull_number}")
+        ):
+            issues.append(
+                f"reviews/promotions issue {issue_number}: PR URL 与编号不一致"
+            )
+        if kind == "mentor":
+            finalized = issue_number in claim_issue_numbers
+        elif kind == "batch":
+            finalized = (
+                issue_number in claim_issue_numbers
+                or issue_number in organization_review_issue_numbers
+            )
+        elif kind == "report":
+            finalized = issue_number in report_issue_numbers
+        else:
+            # The JSON Schema reports the unsupported kind separately.
+            finalized = False
+        if not finalized:
+            issues.append(f"reviews/promotions issue {issue_number}: 没有对应的最终数据")
+        if issue_number in pending_issue_numbers:
+            issues.append(f"reviews/promotions issue {issue_number}: 仍有待审核提案")
 
 
 def _validate_revocations(data: RepositoryData, issues: list[str]) -> None:

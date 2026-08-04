@@ -53,6 +53,7 @@ def _event(tmp_path, issue_number: int, report_type: str):
                 "action": "opened",
                 "issue": {
                     "number": issue_number,
+                    "state": "open",
                     "html_url": f"https://github.com/example/repository/issues/{issue_number}",
                     "title": "[信息反馈] 示例导师",
                     "body": _body(report_type),

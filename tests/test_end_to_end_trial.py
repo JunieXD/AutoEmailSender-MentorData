@@ -35,6 +35,7 @@ def _contribution_event(tmp_path):
                 "action": "opened",
                 "issue": {
                     "number": 40,
+                    "state": "open",
                     "html_url": "https://github.com/example/repository/issues/40",
                     "title": "[导师投稿] 端到端导师",
                     "body": body,

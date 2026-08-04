@@ -29,6 +29,7 @@ def _event_path(
                 "action": "opened",
                 "issue": {
                     "number": number,
+                    "state": "open",
                     "html_url": f"https://github.com/{REPOSITORY}/issues/{number}",
                     "title": title,
                     "body": "提交内容",
@@ -47,11 +48,11 @@ def _event_path(
 @pytest.mark.parametrize(
     ("kind", "label", "head", "draft"),
     [
-        ("mentor", "submission:mentor", "submission/issue-40-123456-1", True),
-        ("batch", "submission:batch", "batch/issue-40-123456-2", True),
-        ("report", "report:data", "report/issue-40-123456-3", True),
-        ("mentor", "submission:mentor", "automatic/issue-40-123456-4", False),
-        ("batch", "submission:batch", "automatic-batch/issue-40-123456-5", False),
+        ("mentor", "submission:mentor", "submission/issue-40", True),
+        ("batch", "submission:batch", "batch/issue-40", True),
+        ("report", "report:data", "report/issue-40", True),
+        ("mentor", "submission:mentor", "submission/issue-40", False),
+        ("batch", "submission:batch", "batch/issue-40", False),
     ],
 )
 def test_every_issue_flow_uses_the_exact_untrusted_title_as_one_process_argument(
@@ -81,6 +82,7 @@ def test_every_issue_flow_uses_the_exact_untrusted_title_as_one_process_argument
         head=head,
         body="固定审核说明",
         draft=draft,
+        labels=["status:manual-review" if draft else "status:auto-eligible"],
         runner=runner,
     )
 
@@ -90,6 +92,9 @@ def test_every_issue_flow_uses_the_exact_untrusted_title_as_one_process_argument
     assert command[command.index("--title") + 1] == UNTRUSTED_TITLE
     assert command.count(UNTRUSTED_TITLE) == 1
     assert ("--draft" in command) is draft
+    assert command[command.index("--label") + 1] == (
+        "status:manual-review" if draft else "status:auto-eligible"
+    )
     assert options == {"check": True, "stdout": subprocess.PIPE, "text": True}
     assert "shell" not in options
 
@@ -112,7 +117,7 @@ def test_pull_creation_rejects_a_mismatched_issue_label_before_invoking_github(
             repository=REPOSITORY,
             issue_number=40,
             kind="batch",
-            head="batch/issue-40-123456-1",
+            head="batch/issue-40",
             body="固定审核说明",
             draft=True,
             runner=runner,
@@ -131,7 +136,7 @@ def test_pull_creation_rejects_a_branch_for_another_issue(tmp_path: Path) -> Non
             repository=REPOSITORY,
             issue_number=40,
             kind="mentor",
-            head="submission/issue-41-123456-1",
+            head="submission/issue-41",
             body="固定审核说明",
             draft=True,
         )
@@ -152,7 +157,7 @@ def test_pull_creation_rejects_titles_with_line_breaks(tmp_path: Path) -> None:
             repository=REPOSITORY,
             issue_number=40,
             kind="mentor",
-            head="submission/issue-40-123456-1",
+            head="submission/issue-40",
             body="固定审核说明",
             draft=True,
         )
