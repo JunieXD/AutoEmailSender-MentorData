@@ -126,6 +126,9 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
     document = _load_form("contribute-mentor.yml")
     labels = _field_labels(document)
     guidance = _markdown_text(document)
+    title_field = next(
+        component for component in document["body"] if component.get("id") == "title"
+    )
     assert {"必填：这位老师是谁", "选填：更多公开信息", "必填：信息来自哪里"} <= {
         line.removeprefix("### ") for line in guidance.splitlines()
     }
@@ -139,6 +142,7 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
         "代表论文（选填）",
         "老师的个人主页（选填）",
     } <= labels
+    assert title_field["attributes"]["default"] == 0
 
 
 def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:
