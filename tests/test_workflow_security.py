@@ -164,10 +164,18 @@ def test_pages_refuses_intermediate_data_and_closes_only_after_deploy() -> None:
 
 def test_draft_pull_requests_do_not_run_redundant_checks() -> None:
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
-    proposal_check = (workflow_root / "check-proposals.yml").read_text(encoding="utf-8")
-    validation = (workflow_root / "validate.yml").read_text(encoding="utf-8")
+    proposal_check_path = workflow_root / "check-proposals.yml"
+    validation_path = workflow_root / "validate.yml"
+    proposal_check = proposal_check_path.read_text(encoding="utf-8")
+    validation = validation_path.read_text(encoding="utf-8")
     assert "if: github.event.pull_request.draft == false" in proposal_check
     assert (
         "if: github.event_name != 'pull_request' || github.event.pull_request.draft == false"
         in validation
     )
+    for path in (proposal_check_path, validation_path):
+        document = yaml.load(path.read_text(encoding="utf-8"), Loader=yaml.BaseLoader)
+        pull_request_types = document["on"]["pull_request"]["types"]
+        assert "opened" not in pull_request_types
+        assert "ready_for_review" in pull_request_types
+        assert "synchronize" in pull_request_types

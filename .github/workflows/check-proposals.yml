@@ -2,7 +2,7 @@ name: Check moderation proposals
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize, ready_for_review]
+    types: [reopened, synchronize, ready_for_review]
 
 permissions:
   contents: read
