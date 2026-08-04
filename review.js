@@ -1024,7 +1024,7 @@ async function resolveMentorProfileUrl(row) {
   }
 
   if (Object.hasOwn(row, "profile_url")) {
-    const directUrl = validateWebUrl(row.profile_url || row.source_url, "导师主页");
+    const directUrl = validateWebUrl(row.profile_url || row.source_url, "高校官网详情页");
     state.profileUrlByProposalId.set(row.proposal_id, directUrl);
     return directUrl;
   }
@@ -1035,7 +1035,7 @@ async function resolveMentorProfileUrl(row) {
     `/proposals/batch-issue-${state.issueNumber}/issue-${state.issueNumber}-row-${paddedRow}.json`;
   const response = await fetch(proposalUrl, { cache: "no-store" });
   if (!response.ok) {
-    throw new Error(`无法读取导师主页（GitHub 返回 ${response.status}）`);
+    throw new Error(`无法读取高校官网详情页（GitHub 返回 ${response.status}）`);
   }
   const proposalBuffer = await response.arrayBuffer();
   if (proposalBuffer.byteLength === 0 || proposalBuffer.byteLength > MAX_PROPOSAL_BYTES) {
@@ -1052,19 +1052,19 @@ async function resolveMentorProfileUrl(row) {
     submitted?.email !== row.email ||
     submitted?.source_url !== row.source_url
   ) {
-    throw new Error("导师主页与审核清单中的导师不一致");
+    throw new Error("导师详情信息与审核清单中的导师不一致");
   }
-  const profileUrl = validateWebUrl(submitted.profile_url || row.source_url, "导师主页");
+  const profileUrl = validateWebUrl(submitted.profile_url || row.source_url, "高校官网详情页");
   state.profileUrlByProposalId.set(row.proposal_id, profileUrl);
   return profileUrl;
 }
 
 function createMentorProfileButton(row) {
-  const button = element("button", "mentor-profile-button", "主页 ↗");
+  const button = element("button", "mentor-profile-button", "详情页 ↗");
   const defaultLabel = button.textContent;
   button.type = "button";
-  button.setAttribute("aria-label", `在新标签页打开${row.name}的主页`);
-  button.title = "在新标签页打开导师主页";
+  button.setAttribute("aria-label", `在新标签页打开${row.name}的高校官网详情页`);
+  button.title = "在新标签页打开高校官网详情页";
   button.addEventListener("click", async () => {
     const profileWindow = window.open("about:blank", "_blank");
     if (!profileWindow) {
@@ -1083,11 +1083,11 @@ function createMentorProfileButton(row) {
     try {
       const profileUrl = await resolveMentorProfileUrl(row);
       profileWindow.location.replace(profileUrl);
-      button.title = "在新标签页打开导师主页";
+      button.title = "在新标签页打开高校官网详情页";
     } catch (error) {
       profileWindow.close();
       button.textContent = "打开失败";
-      button.title = error instanceof Error ? error.message : "无法打开导师主页";
+      button.title = error instanceof Error ? error.message : "无法打开高校官网详情页";
       window.setTimeout(() => {
         button.textContent = defaultLabel;
       }, 2_000);
@@ -1927,11 +1927,14 @@ function collectRowOverrides(card) {
         throw new Error(`${row.name}需要选择现有或本次新建的机构`);
       }
       const organization = state.selectableOrganizationById.get(organizationId);
+      const verificationUrls = [row.profile_url, row.source_url].filter(Boolean);
       if (
         !organization ||
-        !sourceUrlMatchesDomains(row.source_url, organization.approved_domains || [])
+        !verificationUrls.every((url) =>
+          sourceUrlMatchesDomains(url, organization.approved_domains || []),
+        )
       ) {
-        throw new Error(`${row.name}的来源不属于改派机构的官方来源域名`);
+        throw new Error(`${row.name}的详情页或发现来源页不属于改派机构的官方来源域名`);
       }
       overrides.push({
         proposal_id: row.proposal_id,
