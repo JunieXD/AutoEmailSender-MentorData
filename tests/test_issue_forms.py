@@ -118,8 +118,11 @@ def test_batch_form_gives_first_time_contributors_a_short_path() -> None:
     assert all(step in guidance for step in ("1.", "2.", "3."))
     assert "贡献到社区" in guidance
     assert "多个学校和学院" in guidance
-    assert "简称也没关系" in guidance
+    assert "建议每次只上传同一所学校、同一个学院" in guidance
+    assert "尽量使用官网全称" in guidance
+    assert "用了简称也没关系" in guidance
     assert "不需要打开或修改" in guidance
+    assert "[批量投稿] XXX大学XXX学院" in guidance
 
 
 def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
@@ -144,11 +147,13 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
     } <= labels
     assert title_field["type"] == "input"
     assert "官网没有写时留空" in title_field["attributes"]["description"]
+    assert "[导师投稿] XXX大学XXX老师" in guidance
 
 
 def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:
     document = _load_form("report-error.yml")
     labels = _field_labels(document)
+    guidance = _markdown_text(document)
     assert {
         "要反馈的导师（软件自动填写）",
         "发现了什么问题",
@@ -157,3 +162,5 @@ def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:
         "可以证明的高校官网页面",
     } <= labels
     assert not {"社区导师 ID", "涉及字段", "当前社区值", "建议值或处理方式"} & labels
+    assert "[信息反馈] XXX大学XXX老师" in guidance
+    assert "标题、导师信息和“现在显示的内容”会自动填写" in guidance
