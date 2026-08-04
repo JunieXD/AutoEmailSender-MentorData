@@ -96,6 +96,14 @@ def test_issue_workflows_only_create_stable_proposal_pull_requests() -> None:
         assert "finalize-proposal" not in text
 
 
+def test_batch_workflow_stages_manifest_only_when_every_row_is_invalid() -> None:
+    path = PROJECT_ROOT / ".github" / "workflows" / "process-batch-issue.yml"
+    text = path.read_text(encoding="utf-8")
+
+    assert 'git add -- "reviews/pending/batch-issue-${ISSUE_NUMBER}.json"' in text
+    assert 'if [ "$PROPOSAL_COUNT" -gt 0 ]; then' in text
+
+
 def test_promotion_uses_trusted_default_branch_and_durable_fallback_triggers() -> None:
     path = PROJECT_ROOT / ".github" / "workflows" / "promote-ready-pulls.yml"
     text = path.read_text(encoding="utf-8")

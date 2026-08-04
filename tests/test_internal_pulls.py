@@ -64,6 +64,21 @@ def test_diff_rejects_changes_outside_the_issue_proposal_paths(tmp_path: Path) -
         proposal_paths_from_diff(tmp_path, pull, runner=runner)
 
 
+def test_all_invalid_batch_accepts_a_review_manifest_without_proposals(tmp_path: Path) -> None:
+    pull = load_internal_pull(_pull(), expected_repository="example/repository")
+
+    def runner(command, **kwargs):
+        return subprocess.CompletedProcess(
+            command,
+            0,
+            stdout="A\treviews/pending/batch-issue-40.json\n",
+        )
+
+    assert proposal_paths_from_diff(tmp_path, pull, runner=runner) == [
+        "reviews/pending/batch-issue-40.json"
+    ]
+
+
 def test_materialization_uses_git_without_a_shell_and_writes_only_fixed_paths(
     tmp_path: Path,
 ) -> None:

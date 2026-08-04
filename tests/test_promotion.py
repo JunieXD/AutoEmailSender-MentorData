@@ -1,37 +1,57 @@
 from __future__ import annotations
 
+import csv
+import hashlib
 import json
 import shutil
 import subprocess
 from datetime import UTC, datetime
 from pathlib import Path
 
+import pytest
+
+from mentor_data.batch import create_batch_proposals
 from mentor_data.errors import SubmissionError
 from mentor_data.github_events import GitHubActor, GitHubIssueEvent
 from mentor_data.internal_pulls import InternalPull
-from mentor_data.io_utils import load_yaml, write_yaml_atomic
+from mentor_data.io_utils import load_json, load_yaml, write_json_atomic, write_yaml_atomic
+from mentor_data.organization_review import (
+    REVIEW_COMMENT_MARKER,
+    create_organization_review_manifest,
+)
 from mentor_data.promotion import PromotionQueue, PromotionReceipt
 from mentor_data.proposals import create_mentor_proposal
+from mentor_data.reporting import create_report_proposal
 from mentor_data.repository import load_repository
+from mentor_data.uploads import SAFE_COLUMNS
 
-from .helpers import build_test_repository
+from .helpers import build_test_repository, claim, mentor, save_claim, save_mentor
 
 
-def _pull_payload(*, number: int, issue_number: int) -> dict:
+def _pull_payload(
+    *,
+    number: int,
+    issue_number: int,
+    kind: str = "mentor",
+    draft: bool = False,
+) -> dict:
+    prefix = {"mentor": "submission", "batch": "batch", "report": "report"}[kind]
+    status_label = "status:auto-eligible" if kind == "mentor" else "status:manual-review"
+    title_prefix = {"mentor": "导师投稿", "batch": "批量投稿", "report": "信息反馈"}[kind]
     return {
         "number": number,
         "state": "open",
         "merged": False,
-        "draft": False,
+        "draft": draft,
         "html_url": f"https://github.com/example/repository/pull/{number}",
-        "title": f"[导师投稿] 示例导师 {issue_number}",
+        "title": f"[{title_prefix}] 示例导师 {issue_number}",
         "head": {
-            "ref": f"submission/issue-{issue_number}",
+            "ref": f"{prefix}/issue-{issue_number}",
             "sha": "a" * 40,
             "repo": {"full_name": "example/repository"},
         },
         "base": {"ref": "main", "sha": "b" * 40},
-        "labels": [{"name": "status:auto-eligible"}],
+        "labels": [{"name": status_label}],
     }
 
 
@@ -285,16 +305,31 @@ def _automatic_proposal(root: Path, output: Path, *, issue_number: int) -> Path:
 
 
 class _LocalGitHubRunner:
-    def __init__(self, root: Path, pull_payload: dict) -> None:
+    def __init__(
+        self,
+        root: Path,
+        pull_payload: dict,
+        *,
+        comments: list[dict] | None = None,
+        timeline: list[dict] | None = None,
+    ) -> None:
         self.root = root
         self.pull_payload = pull_payload
+        self.comments = comments or []
+        self.timeline = timeline or []
         self.merged = False
 
     def __call__(self, command, **kwargs):
-        if command[:4] == ["gh", "api", "--paginate", "--slurp"] and command[
-            4
-        ].endswith("/pulls?state=open&per_page=100"):
-            values = [] if self.merged else [self.pull_payload]
+        if command[:4] == ["gh", "api", "--paginate", "--slurp"]:
+            endpoint = command[4]
+            if endpoint.endswith("/pulls?state=open&per_page=100"):
+                values = [] if self.merged else [self.pull_payload]
+            elif endpoint.endswith(f"/issues/{self.pull_payload['number']}/comments?per_page=100"):
+                values = self.comments
+            elif endpoint.endswith(f"/issues/{self.pull_payload['number']}/timeline?per_page=100"):
+                values = self.timeline
+            else:
+                raise AssertionError(f"unexpected paginated GitHub API call: {endpoint}")
             return subprocess.CompletedProcess(command, 0, stdout=json.dumps([values]))
         if command[:2] == ["gh", "api"] and len(command) == 3:
             endpoint = command[2]
@@ -304,7 +339,21 @@ class _LocalGitHubRunner:
                     0,
                     stdout=json.dumps(self.pull_payload),
                 )
+            if "/collaborators/maintainer/permission" in endpoint:
+                return subprocess.CompletedProcess(
+                    command,
+                    0,
+                    stdout=json.dumps(
+                        {
+                            "permission": "admin",
+                            "user": {"id": 999, "login": "maintainer", "type": "User"},
+                        }
+                    ),
+                )
+            raise AssertionError(f"unexpected GitHub API call: {endpoint}")
         if command[:3] == ["gh", "pr", "edit"]:
+            return subprocess.CompletedProcess(command, 0, stdout="")
+        if command[:3] == ["gh", "pr", "ready"]:
             return subprocess.CompletedProcess(command, 0, stdout="")
         if command[:3] == ["gh", "pr", "merge"]:
             number = self.pull_payload["number"]
@@ -329,9 +378,7 @@ class _LocalGitHubRunner:
         ):
             translated = list(command)
             pull_ref_index = next(
-                index
-                for index, value in enumerate(translated)
-                if value.startswith("+refs/pull/")
+                index for index, value in enumerate(translated) if value.startswith("+refs/pull/")
             )
             destination = translated[pull_ref_index].split(":", 1)[1]
             translated[pull_ref_index] = (
@@ -341,10 +388,7 @@ class _LocalGitHubRunner:
         return subprocess.run(command, **kwargs)
 
 
-def test_auto_eligible_mentor_is_rebuilt_finalized_and_merged_with_real_git(
-    tmp_path: Path,
-) -> None:
-    root = build_test_repository(tmp_path)
+def _initialize_local_git_repository(root: Path, tmp_path: Path) -> str:
     policy_path = root / "registry" / "policy.yml"
     policy = load_yaml(policy_path)
     policy["automation"]["auto_merge_enabled"] = True
@@ -364,6 +408,164 @@ def test_auto_eligible_mentor_is_rebuilt_finalized_and_merged_with_real_git(
     )
     _git(root, "remote", "add", "origin", str(remote))
     _git(root, "push", "--set-upstream", "origin", "main")
+    return base_sha
+
+
+def _stage_internal_pull_branch(root: Path, branch: str, paths: list[Path]) -> str:
+    _git(root, "switch", "-c", branch)
+    _git(root, "add", "--", *(str(path.relative_to(root)) for path in paths))
+    _git(root, "commit", "-m", f"stage {branch}")
+    head_sha = _git(root, "rev-parse", "HEAD")
+    _git(root, "push", "origin", branch)
+    _git(root, "switch", "main")
+    return head_sha
+
+
+def _batch_event(issue_number: int) -> GitHubIssueEvent:
+    return GitHubIssueEvent(
+        action="opened",
+        number=issue_number,
+        state="open",
+        is_pull_request=False,
+        url=f"https://github.com/example/repository/issues/{issue_number}",
+        title="[批量投稿] 示例大学计算机学院",
+        body=(
+            "### 社区共享包\n\n"
+            "[community.csv](https://github.com/user-attachments/assets/123e4567-e89b-12d3-a456-426614174000)\n\n"
+            "### 补充说明\n\n测试批次\n\n"
+            "### 投稿确认\n\n- [x] 我确认文件只包含公开职业信息"
+        ),
+        created_at=datetime(2026, 8, 3, tzinfo=UTC),
+        author_id=7007,
+        author_login="batch-user",
+        author_type="User",
+        labels=("submission:batch",),
+    )
+
+
+def _batch_actor() -> GitHubActor:
+    return GitHubActor(
+        user_id=7007,
+        login="batch-user",
+        user_type="User",
+        created_at=datetime(2020, 1, 1, tzinfo=UTC),
+    )
+
+
+def _prepare_batch_pull(
+    root: Path,
+    tmp_path: Path,
+    *,
+    issue_number: int,
+    valid: bool,
+) -> tuple[list[Path], dict]:
+    package = tmp_path / f"community-{issue_number}.csv"
+    row = [
+        "批量测试导师",
+        "batch@example.edu" if valid else "",
+        "教授",
+        "示例大学",
+        "计院",
+        "",
+        "可靠系统",
+        "Batch Paper",
+        "https://cs.example.edu/faculty/batch",
+        "https://cs.example.edu/faculty",
+    ]
+    with package.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(SAFE_COLUMNS)
+        writer.writerow(row)
+    proposal_directory = root / "proposals" / f"batch-issue-{issue_number}"
+    result = create_batch_proposals(
+        root,
+        _batch_event(issue_number),
+        _batch_actor(),
+        package_path=package,
+        output_directory=proposal_directory,
+    )
+    manifest_path = root / "reviews" / "pending" / f"batch-issue-{issue_number}.json"
+    manifest = create_organization_review_manifest(
+        root,
+        _batch_event(issue_number),
+        result,
+        proposal_directory=f"proposals/batch-issue-{issue_number}",
+        output_path=manifest_path,
+        generated_at=datetime(2026, 8, 3, tzinfo=UTC),
+    )
+    return [*result.paths, manifest_path], manifest
+
+
+def _organization_review_decision(issue_number: int, manifest_path: Path, manifest: dict) -> dict:
+    decisions = []
+    for group in manifest["groups"]:
+        decisions.append(
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    {
+                        "level": "university",
+                        "action": "existing",
+                        "organization_id": "org_example_university",
+                        "organization_type": None,
+                        "canonical_name": None,
+                        "official_url": None,
+                        "approved_domains": [],
+                        "save_submitted_as_alias": False,
+                    },
+                    {
+                        "level": "school",
+                        "action": "existing",
+                        "organization_id": "org_example_cs",
+                        "organization_type": None,
+                        "canonical_name": None,
+                        "official_url": None,
+                        "approved_domains": [],
+                        "save_submitted_as_alias": True,
+                    },
+                    {
+                        "level": "department",
+                        "action": "skip",
+                        "organization_id": None,
+                        "organization_type": None,
+                        "canonical_name": None,
+                        "official_url": None,
+                        "approved_domains": [],
+                        "save_submitted_as_alias": False,
+                    },
+                ],
+                "row_overrides": [],
+            }
+        )
+    return {
+        "schema_version": 1,
+        "kind": "batch_organization_review_decision",
+        "pull_request_number": 88,
+        "issue_number": issue_number,
+        "manifest_sha256": hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
+        "decisions": decisions,
+    }
+
+
+def _review_comment(decision: dict) -> dict:
+    return {
+        "id": 991,
+        "body": (
+            f"{REVIEW_COMMENT_MARKER}\n```json\n{json.dumps(decision, ensure_ascii=False)}\n```"
+        ),
+        "created_at": "2026-08-03T01:00:00Z",
+        "author_association": "OWNER",
+        "user": {"id": 999, "login": "maintainer", "type": "User"},
+    }
+
+
+def test_auto_eligible_mentor_is_rebuilt_finalized_and_merged_with_real_git(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    base_sha = _initialize_local_git_repository(root, tmp_path)
 
     issue_number = 40
     proposal = _automatic_proposal(root, tmp_path / "prepared", issue_number=issue_number)
@@ -398,3 +600,217 @@ def test_auto_eligible_mentor_is_rebuilt_finalized_and_merged_with_real_git(
     assert len(data.claims) == 1
     assert data.proposals == []
     assert data.promotion_receipts[0]["issue_number"] == issue_number
+
+
+def test_manually_reviewed_batch_is_finalized_and_merged_with_real_git(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    base_sha = _initialize_local_git_repository(root, tmp_path)
+    issue_number = 40
+    paths, manifest = _prepare_batch_pull(
+        root,
+        tmp_path,
+        issue_number=issue_number,
+        valid=True,
+    )
+    decision = _organization_review_decision(issue_number, paths[-1], manifest)
+    branch = f"batch/issue-{issue_number}"
+    proposal_sha = _stage_internal_pull_branch(root, branch, paths)
+    pull_payload = _pull_payload(
+        number=88,
+        issue_number=issue_number,
+        kind="batch",
+        draft=True,
+    )
+    pull_payload["head"]["sha"] = proposal_sha
+    pull_payload["base"]["sha"] = base_sha
+    runner = _LocalGitHubRunner(
+        root,
+        pull_payload,
+        comments=[_review_comment(decision)],
+    )
+
+    summary = PromotionQueue(
+        root=root,
+        repository="example/repository",
+        runner=runner,
+    ).run()
+
+    assert summary.merged == 1
+    assert summary.failed == 0
+    data = load_repository(root, validate=True)
+    assert len(data.mentors) == 1
+    assert len(data.claims) == 1
+    assert not (root / "proposals" / f"batch-issue-{issue_number}").exists()
+    resolution = load_json(root / "reviews" / "resolutions" / f"batch-issue-{issue_number}.json")
+    assert len(resolution["mapped_proposal_ids"]) == 1
+    assert resolution["invalid_rows"] == []
+
+
+def test_all_invalid_batch_records_rows_and_merges_without_proposal_files(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    base_sha = _initialize_local_git_repository(root, tmp_path)
+    issue_number = 40
+    paths, manifest = _prepare_batch_pull(
+        root,
+        tmp_path,
+        issue_number=issue_number,
+        valid=False,
+    )
+    assert len(paths) == 1
+    assert manifest["groups"] == []
+    assert len(manifest["invalid_rows"]) == 1
+    decision = _organization_review_decision(issue_number, paths[-1], manifest)
+    branch = f"batch/issue-{issue_number}"
+    proposal_sha = _stage_internal_pull_branch(root, branch, paths)
+    pull_payload = _pull_payload(
+        number=88,
+        issue_number=issue_number,
+        kind="batch",
+        draft=True,
+    )
+    pull_payload["head"]["sha"] = proposal_sha
+    pull_payload["base"]["sha"] = base_sha
+    runner = _LocalGitHubRunner(
+        root,
+        pull_payload,
+        comments=[_review_comment(decision)],
+    )
+
+    summary = PromotionQueue(
+        root=root,
+        repository="example/repository",
+        runner=runner,
+    ).run()
+
+    assert summary.merged == 1
+    assert summary.failed == 0
+    data = load_repository(root, validate=True)
+    assert data.mentors == []
+    assert data.claims == []
+    resolution = load_json(root / "reviews" / "resolutions" / f"batch-issue-{issue_number}.json")
+    assert resolution["mapped_proposal_ids"] == []
+    assert resolution["invalid_rows"] == [1]
+
+
+def _seed_report_mentor(root: Path) -> None:
+    value = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, value)
+    save_mentor(root, mentor())
+
+
+def _report_event(issue_number: int, report_type: str) -> GitHubIssueEvent:
+    sections = {
+        "社区导师 ID": "mentor_fixture_0001",
+        "反馈类型": report_type,
+        "涉及字段": "导师状态",
+        "当前社区值": "active",
+        "建议值或处理方式": "标记为退休",
+        "新的官方证据页面": "https://cs.example.edu/faculty/mentor",
+        "说明": "官方页面已经标注退休。",
+        "反馈确认": "- [x] 我确认反馈基于真实官方证据",
+    }
+    return GitHubIssueEvent(
+        action="opened",
+        number=issue_number,
+        state="open",
+        is_pull_request=False,
+        url=f"https://github.com/example/repository/issues/{issue_number}",
+        title="[信息反馈] 示例导师",
+        body="\n\n".join(f"### {label}\n\n{value}" for label, value in sections.items()),
+        created_at=datetime(2026, 8, 3, tzinfo=UTC),
+        author_id=5005,
+        author_login="reporter",
+        author_type="User",
+        labels=("report:data",),
+    )
+
+
+def _report_actor() -> GitHubActor:
+    return GitHubActor(
+        user_id=5005,
+        login="reporter",
+        user_type="User",
+        created_at=datetime(2020, 1, 1, tzinfo=UTC),
+    )
+
+
+@pytest.mark.parametrize(
+    ("decision", "expected_status"),
+    (("accepted", "retired"), ("rejected", "active")),
+)
+def test_reviewed_report_outcomes_are_finalized_and_merged_with_real_git(
+    tmp_path: Path,
+    decision: str,
+    expected_status: str,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_report_mentor(root)
+    base_sha = _initialize_local_git_repository(root, tmp_path)
+    issue_number = 40
+    proposal_path = create_report_proposal(
+        root,
+        _report_event(
+            issue_number,
+            "导师已经退休" if decision == "accepted" else "字段错误",
+        ),
+        _report_actor(),
+        output_directory=root / "reports" / "pending",
+    )
+    proposal = load_json(proposal_path)
+    proposal["decision"] = decision
+    proposal["moderator_reason"] = (
+        "官方来源确认退休" if decision == "accepted" else "证据仍显示当前信息"
+    )
+    if decision == "accepted":
+        proposal["accepted"] = {
+            "status": "retired",
+            "status_reason": "官网标注退休",
+            "status_source_url": "https://cs.example.edu/faculty/mentor",
+            "status_observed_at": "2026-08-03T00:00:00Z",
+        }
+    write_json_atomic(proposal_path, proposal)
+    branch = f"report/issue-{issue_number}"
+    proposal_sha = _stage_internal_pull_branch(root, branch, [proposal_path])
+    pull_payload = _pull_payload(
+        number=88,
+        issue_number=issue_number,
+        kind="report",
+    )
+    pull_payload["head"]["sha"] = proposal_sha
+    pull_payload["base"]["sha"] = base_sha
+    runner = _LocalGitHubRunner(
+        root,
+        pull_payload,
+        timeline=[
+            {
+                "event": "ready_for_review",
+                "actor": {"id": 999, "login": "maintainer", "type": "User"},
+            }
+        ],
+    )
+
+    summary = PromotionQueue(
+        root=root,
+        repository="example/repository",
+        runner=runner,
+    ).run()
+
+    assert summary.merged == 1
+    assert summary.failed == 0
+    data = load_repository(root, validate=True)
+    assert data.mentors[0]["status"] == expected_status
+    resolution = next(
+        item for item in data.resolutions if item["report_issue"]["number"] == issue_number
+    )
+    assert resolution["decision"] == decision
+    assert not (root / "reports" / "pending" / f"issue-{issue_number}.json").exists()

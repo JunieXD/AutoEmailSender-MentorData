@@ -168,6 +168,26 @@ def test_unchanged_data_reuses_the_same_release(tmp_path) -> None:
     assert len(list((output / "releases").iterdir())) == 1
 
 
+def test_rebuild_removes_deleted_static_files_but_keeps_release_archive(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    output = tmp_path / "dist"
+    first = build_dataset(root, output, generated_at=fixed_datetime())
+    archived_manifest = output / first["manifest_path"]
+    archived_manifest_payload = archived_manifest.read_bytes()
+    stale_file = output / "removed-page.html"
+    stale_file.write_text("obsolete", encoding="utf-8")
+    stale_directory = output / "removed-assets"
+    stale_directory.mkdir()
+    (stale_directory / "old.js").write_text("obsolete", encoding="utf-8")
+
+    build_dataset(root, output)
+
+    assert not stale_file.exists()
+    assert not stale_directory.exists()
+    assert archived_manifest.read_bytes() == archived_manifest_payload
+    assert (output / "index.html").is_file()
+
+
 def test_new_release_reuses_unchanged_content_addressed_shards(tmp_path) -> None:
     root = build_test_repository(tmp_path)
     value = claim(

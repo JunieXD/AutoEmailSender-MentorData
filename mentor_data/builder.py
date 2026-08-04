@@ -14,6 +14,7 @@ from .repository import RepositoryData, load_repository
 DATASET_SCHEMA_VERSION = 2
 DATASET_FORMAT_ID = "mentor-data-content-addressed-v2"
 DATASET_VERSION_PATTERN = re.compile(r"^v2-[a-f0-9]{32}$")
+PUBLICATION_ARCHIVE_ROOTS = {".git", "datasets", "objects", "releases"}
 CONTENT_OBJECT_PATTERN = re.compile(r"^objects/sha256/(?P<digest>[a-f0-9]{64})\.json$")
 
 
@@ -172,6 +173,18 @@ def _write_content_object(output_root: Path, value: Any) -> dict[str, Any]:
 
 def _publish_static_files(data: RepositoryData, output_root: Path) -> None:
     site_root = data.root / "site"
+    resolved_site_root = site_root.resolve()
+    if output_root == data.root.resolve() or output_root == resolved_site_root:
+        raise ValueError("数据发布目录不能覆盖仓库或静态页面源目录")
+
+    for existing in sorted(output_root.iterdir()):
+        if existing.name in PUBLICATION_ARCHIVE_ROOTS:
+            continue
+        if existing.is_dir() and not existing.is_symlink():
+            shutil.rmtree(existing)
+        else:
+            existing.unlink()
+
     if site_root.exists():
         for source in sorted(site_root.iterdir()):
             destination = output_root / source.name

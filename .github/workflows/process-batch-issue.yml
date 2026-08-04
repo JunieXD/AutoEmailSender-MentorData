@@ -117,9 +117,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git switch -C "$BRANCH" main
-          git add \
-            "proposals/batch-issue-${ISSUE_NUMBER}" \
-            "reviews/pending/batch-issue-${ISSUE_NUMBER}.json"
+          git add -- "reviews/pending/batch-issue-${ISSUE_NUMBER}.json"
+          if [ "$PROPOSAL_COUNT" -gt 0 ]; then
+            git add -- "proposals/batch-issue-${ISSUE_NUMBER}"
+          fi
           git commit -m "data: prepare batch submission #${ISSUE_NUMBER}"
           if [ -n "$REMOTE_SHA" ]; then
             git push \

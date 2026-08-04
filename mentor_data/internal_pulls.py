@@ -149,10 +149,6 @@ def proposal_paths_from_diff(
     }[pull.kind]
     if required not in paths:
         raise SubmissionError("内部审核分支缺少所需提案或审核清单")
-    if pull.kind == "batch" and not any(
-        path.startswith(f"proposals/batch-issue-{pull.issue_number}/") for path in paths
-    ):
-        raise SubmissionError("批量审核分支没有导师提案")
     return sorted(paths)
 
 
