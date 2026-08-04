@@ -2,7 +2,7 @@
 
 这里汇集高校官网公开的导师职业信息，供 Auto Email Sender 用户直接浏览和导入。每条被接受的信息都会保留 GitHub 贡献者、投稿 Issue 和高校官方来源，便于核对、纠错和撤销。
 
-[浏览社区导师库](https://juniexd.github.io/AutoEmailSender-MentorData/) · [批量贡献导师](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=batch-contribution.yml) · [反馈错误或过时信息](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=report-error.yml)
+[浏览社区导师库](https://juniexd.github.io/AutoEmailSender-MentorData/) · [上传导师表格](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=batch-contribution.yml) · [反馈导师信息问题](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=report-error.yml)
 
 社区库不是一个需要完整下载的超大 Excel。正式数据按学校和学院发布为小型、版本化的 JSON 分片，Auto Email Sender 只下载用户选择的部分。投稿用的 XLSX 或 CSV 附件只会被安全读取，不会原样提交到 Git 仓库。
 
@@ -13,7 +13,7 @@
 1. 在 Auto Email Sender 的“导师管理”中筛选要分享的导师。
 2. 选中这些导师，点击右侧的“贡献到社区”。
 3. 保存软件生成的 `community-share.xlsx`。
-4. 软件会打开 GitHub 的“批量贡献导师”页面。登录 GitHub 后，把刚保存的文件拖入“社区共享包”。
+4. 软件会打开 GitHub 的“上传导师表格（推荐）”页面。登录 GitHub 后，把刚保存的文件拖入“上传导师表格”。
 5. 等待 GitHub 显示附件链接，勾选投稿确认并提交 Issue。
 
 一个共享包可以混合任意数量的学校和学院，无需拆成多次投稿。每个文件最大 5 MiB、最多 5,000 行。
@@ -28,13 +28,13 @@
 
 ## 只贡献一位导师
 
-如果确实只想补充一位导师，也可以使用 [贡献一位导师表单](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=contribute-mentor.yml)。请填写导师姓名、公开工作邮箱、任职机构和能支持这些信息的高校官方证据页面。
+如果确实只想补充一位导师，也可以使用 [手动填写一位导师](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=contribute-mentor.yml)。请填写导师姓名、工作邮箱、任职机构和能看到这些信息的高校官网页面。
 
 官方页面可以使用 `https://`，仅支持 HTTP 的高校网站也可以使用 `http://`。没有独立官网的系、办公室或实验室不需要为了投稿虚构一个网址；维护者会复用合适的上级机构官网和批准域名。
 
 ## 反馈错误、退休、离职或删除请求
 
-发现数据错误或已经过时时，请提交 [信息反馈](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=report-error.yml)，并提供新的高校官方证据。可反馈的情况包括：
+发现数据错误或已经过时时，请提交 [导师信息问题反馈](https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=report-error.yml)，并提供能证明新情况的高校官网页面。可反馈的情况包括：
 
 - 姓名、邮箱、职称、学院或主页错误；
 - 导师已经退休、离职、调动或去世；

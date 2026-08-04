@@ -6,6 +6,7 @@ import re
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections.abc import Collection, Mapping
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
@@ -94,22 +95,41 @@ def load_issue_event(path: Path, *, max_body_bytes: int) -> GitHubIssueEvent:
     )
 
 
-def parse_issue_form(body: str, expected_labels: set[str]) -> dict[str, str]:
+def parse_issue_form(
+    body: str,
+    expected_labels: set[str] | Mapping[str, Collection[str]],
+) -> dict[str, str]:
+    if isinstance(expected_labels, set):
+        aliases = {label: {label} for label in expected_labels}
+    else:
+        aliases = {
+            canonical: {canonical, *accepted_labels}
+            for canonical, accepted_labels in expected_labels.items()
+        }
+    canonical_by_label: dict[str, str] = {}
+    for canonical, accepted_labels in aliases.items():
+        for label in accepted_labels:
+            existing = canonical_by_label.get(label)
+            if existing is not None and existing != canonical:
+                raise ValueError(f"Issue Form 标签别名重复：{label}")
+            canonical_by_label[label] = canonical
+
     matches = list(HEADING_PATTERN.finditer(body))
     sections: dict[str, str] = {}
     for index, match in enumerate(matches):
         label = match.group("label").strip()
-        if label not in expected_labels:
+        canonical = canonical_by_label.get(label)
+        if canonical is None:
             continue
-        if label in sections:
+        if canonical in sections:
             raise SubmissionError(f"Issue Form 字段重复：{label}")
         value_start = match.end()
         value_end = matches[index + 1].start() if index + 1 < len(matches) else len(body)
         value = body[value_start:value_end].strip()
         if value in NO_RESPONSE_VALUES:
             value = ""
-        sections[label] = value
-    missing = sorted(expected_labels - sections.keys())
+        sections[canonical] = value
+    missing = sorted(aliases.keys() - sections.keys())
     if missing:
         raise SubmissionError(f"Issue Form 缺少字段：{', '.join(missing)}")
     return sections

@@ -1,5 +1,5 @@
-name: 贡献一位导师
-description: 提交一位导师的公开职业信息；无需使用 Git 或 Pull Request。
+name: 贡献一位导师（手动填写）
+description: 没有导师表格时，可手动提交一位导师的高校官网公开信息。
 title: "[导师投稿] "
 labels:
   - submission:mentor
@@ -7,13 +7,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        感谢贡献。请只提交高校官网已经公开的职业信息，不确定的字段请留空。你的 GitHub 数字用户 ID、提交时用户名和 Issue 链接会作为公开来源记录。
+        如果要贡献多位导师，请返回选择“上传导师表格（推荐）”。这里只适合单独补充一位导师。
+
+        请按高校官网填写，不知道或不确定的选填项直接留空。学校或学院写简称也没关系，审核时会统一。你的 GitHub 账号和这个投稿页面会作为数据来源记录。
+
+  - type: markdown
+    attributes:
+      value: "### 必填：这位老师是谁"
 
   - type: input
     id: name
     attributes:
       label: 导师姓名
-      description: 使用官方页面显示的姓名，不附加职称。
+      description: 填写官网上的姓名，不要加“教授”“博导”等称呼。
       placeholder: 张伟
     validations:
       required: true
@@ -21,48 +27,50 @@ body:
   - type: input
     id: email
     attributes:
-      label: 公开工作邮箱
-      description: 不得提交私人邮箱、通用邮箱或多人共享邮箱。
-      placeholder: mentor@example.edu
+      label: 老师的工作邮箱
+      description: 填写高校官网公开的个人工作邮箱，不要填写私人邮箱或办公室公共邮箱。
+      placeholder: zhangwei@example.edu
     validations:
       required: true
 
   - type: input
     id: organization_id
     attributes:
-      label: 社区机构 ID
-      description: 从 Auto Email Sender 打开时会自动填写；直接在 GitHub 投稿可以留空。
-      placeholder: org_example_university_cs
+      label: 机构信息（从软件打开时自动填写）
+      description: 如果这里已有内容，请保持不变；如果是空的，直接跳过。
+      placeholder: 空着也可以，不需要自己查找
 
   - type: input
     id: university
     attributes:
-      label: 学校正式名称
-      placeholder: 示例大学
+      label: 学校名称
+      description: 照高校官网写即可，简称也可以，审核时会统一。
+      placeholder: 例如：华中科技大学
     validations:
       required: true
 
   - type: input
     id: school
     attributes:
-      label: 学院或研究院正式名称
-      placeholder: 计算机学院
+      label: 学院或研究院名称
+      description: 填写老师所属的学院或研究院，照官网写即可。
+      placeholder: 例如：计算机科学与技术学院
     validations:
       required: true
 
   - type: input
     id: department
     attributes:
-      label: 系所或中心
-      description: 没有更具体单位时可以留空。
-      placeholder: 人工智能研究所
+      label: 更具体的单位（选填）
+      description: 例如系、研究所、实验室或中心；官网没有写时留空。
+      placeholder: 例如：人工智能研究所
 
   - type: dropdown
     id: title
     attributes:
-      label: 职称
+      label: 职称（选填）
       options:
-        - 未知或不填写
+        - 不知道或不填写
         - 教授
         - 副教授
         - 助理教授
@@ -71,34 +79,42 @@ body:
         - 副研究员
         - 助理研究员
         - 特聘研究员
-    validations:
-      required: true
+
+  - type: markdown
+    attributes:
+      value: "### 选填：更多公开信息"
 
   - type: textarea
     id: research_direction
     attributes:
-      label: 研究方向
-      description: 多个方向使用中文分号分隔，不要复制完整个人简介。
-      placeholder: 大语言模型；智能体
+      label: 研究方向（选填）
+      description: 按官网填写；多个方向可以换行或用分号分开，没有就留空。
+      placeholder: 例如：大语言模型；智能体
 
   - type: textarea
     id: recent_papers
     attributes:
-      label: 近期或代表论文
-      description: 最多 8 篇，每行一篇；没有可靠证据时留空。
+      label: 代表论文（选填）
+      description: 填写论文标题，最多 8 篇，每行一篇；不确定就留空。
+      placeholder: 每行填写一篇论文的标题
 
   - type: input
     id: profile_url
     attributes:
-      label: 官方个人主页
-      placeholder: https://example.edu/faculty/mentor（仅支持 HTTP 时可填写 http://）
+      label: 老师的个人主页（选填）
+      description: 填写这位老师在高校官网上的个人主页网址，以 http:// 或 https:// 开头。
+      placeholder: https://example.edu/faculty/zhangwei
+
+  - type: markdown
+    attributes:
+      value: "### 必填：信息来自哪里"
 
   - type: input
     id: source_url
     attributes:
-      label: 官方证据页面
-      description: 必须是支持本次信息的具体高校官方页面。
-      placeholder: https://example.edu/faculty/mentor（仅支持 HTTP 时可填写 http://）
+      label: 能证明上述信息的高校官网页面
+      description: 填写能看到老师姓名、工作邮箱或任职信息的页面，可以与个人主页相同。
+      placeholder: https://example.edu/faculty/zhangwei
     validations:
       required: true
 
@@ -107,5 +123,5 @@ body:
     attributes:
       label: 投稿确认
       options:
-        - label: 我确认提交的是公开职业信息，不包含私人备注、任务、发送记录或非公开个人信息；对于我有权许可的投稿内容，我同意按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 提供，并同意按仓库数据政策公开来源和贡献者身份。
+        - label: 我确认填写的是高校官网公开的职业信息，并同意将我有权许可的投稿内容按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 共享；仓库会公开记录本次投稿所用的 GitHub 账号和投稿页面。
           required: true

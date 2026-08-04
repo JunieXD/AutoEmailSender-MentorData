@@ -16,7 +16,11 @@ from .proposals import (
 from .repository import RepositoryData, load_repository
 from .uploads import parse_community_package_rows
 
-BATCH_FORM_LABELS = {"社区共享包", "补充说明", "投稿确认"}
+BATCH_FORM_LABELS = {
+    "社区共享包": {"上传导师表格"},
+    "补充说明": {"补充说明（选填）"},
+    "投稿确认": set(),
+}
 
 
 @dataclass(frozen=True, slots=True)

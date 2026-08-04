@@ -1,5 +1,5 @@
-name: 批量贡献导师
-description: 上传由 Auto Email Sender 导出的安全社区共享包。
+name: 上传导师表格（推荐）
+description: 把 Auto Email Sender 导出的表格拖进来，一次可贡献多位导师。
 title: "[批量投稿] "
 labels:
   - submission:batch
@@ -7,27 +7,34 @@ body:
   - type: markdown
     attributes:
       value: |
-        仅接受安全模板的 UTF-8 CSV 或普通 XLSX。一个文件可以混合多个学校和学院，无需拆分投稿。上传文件不得包含公式、宏、外部链接、个人备注、标签、任务或发送数据。原始文件只用于只读解析，不会提交到 Git 仓库。
+        ### 只需三步
+
+        1. 在 Auto Email Sender 的导师管理页面选中要分享的导师，点击“贡献到社区”，并保存导出的 `community-share.xlsx`。
+        2. 把文件拖到下面的上传框，等待文件名变成可以点击的链接。
+        3. 勾选投稿确认，再点击页面底部的“Submit new issue”。
+
+        一个文件可以包含多个学校和学院；名称用了简称也没关系，审核时会统一。请直接上传软件生成的文件，不需要打开或修改它。
 
   - type: textarea
     id: package
     attributes:
-      label: 社区共享包
-      description: 请把一个 CSV 或 XLSX 文件拖入此框，等待 GitHub 显示附件链接后再提交。最大 5 MiB、最多 5,000 行。
-      placeholder: 将 community-share.xlsx 拖到这里
+      label: 上传导师表格
+      description: 把 community-share.xlsx 拖到这里。看到附件链接后再提交；文件最多 5 MiB、5,000 位导师。
+      placeholder: 把 community-share.xlsx 拖到这里，等待附件链接出现
     validations:
       required: true
 
   - type: textarea
     id: notes
     attributes:
-      label: 补充说明
-      description: 可以说明数据覆盖的学校、学院和官方入口页面；学校或学院简称会在审核时统一映射。
+      label: 补充说明（选填）
+      description: 有需要提醒审核者的内容再填写，没有可以留空。
+      placeholder: 例如：表格来自某学院教师列表；其中“计院”是“计算机学院”的简称。
 
   - type: checkboxes
     id: consent
     attributes:
       label: 投稿确认
       options:
-        - label: 我确认文件只包含公开职业信息；对于我有权许可的投稿内容，我同意按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 提供，并同意按仓库数据政策记录和公开贡献来源。
+        - label: 我确认表格里只有高校官网公开的职业信息，并同意将我有权许可的投稿内容按 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 共享；仓库会公开记录本次投稿所用的 GitHub 账号和投稿页面。
           required: true

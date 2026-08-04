@@ -4,9 +4,35 @@ from pathlib import Path
 
 import yaml
 
+from mentor_data.batch import BATCH_FORM_LABELS
+from mentor_data.github_events import parse_issue_form
+from mentor_data.proposals import SINGLE_FORM_LABELS
+from mentor_data.reporting import REPORT_FORM_LABELS
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SUPPORTED_FORM_TYPES = {"markdown", "input", "textarea", "dropdown", "checkboxes"}
 CC_BY_4_URL = "https://creativecommons.org/licenses/by/4.0/"
+
+
+def _load_form(name: str) -> dict:
+    path = PROJECT_ROOT / ".github" / "ISSUE_TEMPLATE" / name
+    return yaml.safe_load(path.read_text(encoding="utf-8"))
+
+
+def _field_labels(document: dict) -> set[str]:
+    return {
+        component["attributes"]["label"]
+        for component in document["body"]
+        if component.get("type") != "markdown"
+    }
+
+
+def _markdown_text(document: dict) -> str:
+    return "\n".join(
+        component["attributes"]["value"]
+        for component in document["body"]
+        if component.get("type") == "markdown"
+    )
 
 
 def test_issue_forms_use_only_supported_components_and_unique_ids() -> None:
@@ -46,3 +72,83 @@ def test_all_submission_forms_require_explicit_cc_by_4_consent() -> None:
         ]
         assert checkbox_labels, path
         assert any("CC BY 4.0" in label and CC_BY_4_URL in label for label in checkbox_labels), path
+
+
+def test_current_form_labels_are_recognized_by_automation() -> None:
+    forms = [
+        ("batch-contribution.yml", BATCH_FORM_LABELS),
+        ("contribute-mentor.yml", SINGLE_FORM_LABELS),
+        ("report-error.yml", REPORT_FORM_LABELS),
+    ]
+    for filename, aliases in forms:
+        current_labels = _field_labels(_load_form(filename))
+        for canonical, alternate_labels in aliases.items():
+            accepted_labels = {canonical, *alternate_labels}
+            assert len(current_labels & accepted_labels) == 1, (filename, canonical)
+
+
+def test_text_fields_explain_what_to_enter_and_show_an_example() -> None:
+    for filename in ("batch-contribution.yml", "contribute-mentor.yml", "report-error.yml"):
+        document = _load_form(filename)
+        for component in document["body"]:
+            if component.get("type") not in {"input", "textarea"}:
+                continue
+            attributes = component["attributes"]
+            assert attributes.get("description"), (filename, component["id"], "description")
+            assert attributes.get("placeholder"), (filename, component["id"], "placeholder")
+
+
+def test_old_issue_headings_remain_compatible_after_copy_changes() -> None:
+    body = "\n\n".join(
+        [
+            "### 社区共享包\n\n[community-share.xlsx](https://example.test/file.xlsx)",
+            "### 补充说明\n\n_No response_",
+            "### 投稿确认\n\n- [x] 我确认",
+        ]
+    )
+    sections = parse_issue_form(body, BATCH_FORM_LABELS)
+    assert sections["社区共享包"].startswith("[community-share.xlsx]")
+    assert sections["补充说明"] == ""
+
+
+def test_batch_form_gives_first_time_contributors_a_short_path() -> None:
+    document = _load_form("batch-contribution.yml")
+    guidance = _markdown_text(document)
+    assert document["name"] == "上传导师表格（推荐）"
+    assert all(step in guidance for step in ("1.", "2.", "3."))
+    assert "贡献到社区" in guidance
+    assert "多个学校和学院" in guidance
+    assert "简称也没关系" in guidance
+    assert "不需要打开或修改" in guidance
+
+
+def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
+    document = _load_form("contribute-mentor.yml")
+    labels = _field_labels(document)
+    guidance = _markdown_text(document)
+    assert {"必填：这位老师是谁", "选填：更多公开信息", "必填：信息来自哪里"} <= {
+        line.removeprefix("### ") for line in guidance.splitlines()
+    }
+    assert "社区机构 ID" not in labels
+    assert "官方证据页面" not in labels
+    assert {
+        "机构信息（从软件打开时自动填写）",
+        "更具体的单位（选填）",
+        "职称（选填）",
+        "研究方向（选填）",
+        "代表论文（选填）",
+        "老师的个人主页（选填）",
+    } <= labels
+
+
+def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:
+    document = _load_form("report-error.yml")
+    labels = _field_labels(document)
+    assert {
+        "要反馈的导师（软件自动填写）",
+        "发现了什么问题",
+        "哪里有问题",
+        "正确内容应该是什么",
+        "可以证明的高校官网页面",
+    } <= labels
+    assert not {"社区导师 ID", "涉及字段", "当前社区值", "建议值或处理方式"} & labels
