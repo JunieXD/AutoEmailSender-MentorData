@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_01234b84cd6048b6d396"
+      ],
+      "ended_at": null,
+      "id": "aff_84c15f2566b4c4616203",
+      "is_primary": true,
+      "observed_at": "2026-08-04T06:44:36Z",
+      "organization_id": "org_auto_f081f90c975ffa8eae47",
+      "source_url": "http://ioip.nankai.edu.cn/2024/1225/c36502a560532/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_01234b84cd6048b6d396"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_84c15f2566b4c4616203",
+      "claim_ids": [
+        "claim_01234b84cd6048b6d396"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujietao@nankai.edu.cn",
+      "observed_at": "2026-08-04T06:44:36Z",
+      "source_url": "http://ioip.nankai.edu.cn/2024/1225/c36502a560532/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liujietao@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-04T06:44:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_01234b84cd6048b6d396"
+    ],
+    "email": [
+      "claim_01234b84cd6048b6d396"
+    ],
+    "name": [
+      "claim_01234b84cd6048b6d396"
+    ],
+    "profile_url": [
+      "claim_01234b84cd6048b6d396"
+    ],
+    "research_directions": [
+      "claim_01234b84cd6048b6d396"
+    ],
+    "status": [
+      "claim_01234b84cd6048b6d396"
+    ],
+    "title": [
+      "claim_01234b84cd6048b6d396"
+    ]
+  },
+  "id": "mentor_bfeaeccd1345fa9944c4",
+  "last_verified_at": "2026-08-04T06:44:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_01234b84cd6048b6d396"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘杰涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_84c15f2566b4c4616203",
+      "claim_ids": [
+        "claim_01234b84cd6048b6d396"
+      ],
+      "observed_at": "2026-08-04T06:44:36Z",
+      "status": "current",
+      "url": "http://ioip.nankai.edu.cn/2024/1225/c36502a560532/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微纳光学与光电子学、光电子器件与集成、智能信息光子技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-04T06:44:36Z",
+  "status_reason": null,
+  "status_source_url": "http://ioip.nankai.edu.cn/2024/1225/c36502a560532/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-04T06:44:36Z"
+}
