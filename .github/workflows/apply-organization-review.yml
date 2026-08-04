@@ -10,15 +10,14 @@ permissions:
   issues: write
   pull-requests: write
 
-concurrency:
-  group: mentor-data-write
-  cancel-in-progress: false
-
 jobs:
   apply:
     if: >-
       github.event.issue.pull_request &&
       startsWith(github.event.comment.body, '<!-- mentor-data-organization-review:v1 -->')
+    concurrency:
+      group: mentor-data-write
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:

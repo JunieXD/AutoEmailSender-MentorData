@@ -17,6 +17,7 @@ from .io_utils import load_json
 HEADING_PATTERN = re.compile(r"^### (?P<label>[^\r\n]+)\r?$", re.MULTILINE)
 NO_RESPONSE_VALUES = {"_No response_", "No response", "无响应"}
 GITHUB_LOGIN_PATTERN = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$")
+MAX_ISSUE_TITLE_CHARACTERS = 256
 
 
 @dataclass(frozen=True, slots=True)
@@ -81,11 +82,18 @@ def load_issue_event(path: Path, *, max_body_bytes: int) -> GitHubIssueEvent:
     number = issue.get("number")
     if not isinstance(number, int) or number <= 0:
         raise SubmissionError("Issue 编号无效")
+    title = issue.get("title")
+    if not isinstance(title, str) or not title.strip():
+        raise SubmissionError("Issue 标题无效")
+    if len(title) > MAX_ISSUE_TITLE_CHARACTERS:
+        raise SubmissionError("Issue 标题超过长度限制")
+    if any(character in title for character in ("\x00", "\r", "\n")):
+        raise SubmissionError("Issue 标题包含不支持的控制字符")
     return GitHubIssueEvent(
         action=str(event.get("action", "")),
         number=number,
         url=str(issue.get("html_url", "")),
-        title=str(issue.get("title", "")),
+        title=title,
         body=body,
         created_at=parse_datetime(str(issue.get("created_at", ""))),
         author_id=author_id,
@@ -93,6 +101,13 @@ def load_issue_event(path: Path, *, max_body_bytes: int) -> GitHubIssueEvent:
         author_type=user_type,
         labels=labels,
     )
+
+
+def require_issue_trigger(event: GitHubIssueEvent, *, expected_label: str) -> None:
+    if event.action != "opened":
+        raise SubmissionError("只处理新建的 Issue")
+    if expected_label not in event.labels:
+        raise SubmissionError(f"Issue 缺少所需标签：{expected_label}")
 
 
 def parse_issue_form(

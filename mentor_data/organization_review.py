@@ -30,7 +30,10 @@ if TYPE_CHECKING:
 
 
 REVIEW_COMMENT_MARKER = "<!-- mentor-data-organization-review:v1 -->"
-REVIEW_BRANCH_PATTERN = re.compile(r"^batch/issue-(?P<issue>[1-9][0-9]*)-(?P<run>[1-9][0-9]*)$")
+REVIEW_BRANCH_PATTERN = re.compile(
+    r"^batch/issue-(?P<issue>[1-9][0-9]*)-(?P<run>[1-9][0-9]*)"
+    r"(?:-(?P<attempt>[1-9][0-9]*))?$"
+)
 PROPOSAL_DIRECTORY_PATTERN = re.compile(r"^proposals/batch-issue-(?P<issue>[1-9][0-9]*)$")
 DOMAIN_PATTERN = re.compile(
     r"^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?"

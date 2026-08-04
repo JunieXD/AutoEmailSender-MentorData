@@ -26,6 +26,7 @@ def test_review_script_treats_manifest_as_text_and_outputs_fixed_comment_marker(
     assert "MAX_COMMENT_BYTES" in script
     assert "validateWebUrl" in script
     assert '["http:", "https:"]' in script
+    assert "(?:-([1-9][0-9]*))?" in script
 
 
 def test_review_uses_custom_selection_controls_and_bounded_row_scrolling() -> None:

@@ -35,12 +35,11 @@ permissions:
   contents: write
   pull-requests: write
 
-concurrency:
-  group: mentor-data-write
-  cancel-in-progress: false
-
 jobs:
   revoke:
+    concurrency:
+      group: mentor-data-write
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:

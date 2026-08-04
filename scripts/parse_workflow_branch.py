@@ -5,7 +5,10 @@ import os
 import re
 from pathlib import Path
 
-BRANCH_PATTERN = re.compile(r"^(submission|batch|report)/issue-([1-9][0-9]*)-([1-9][0-9]*)$")
+BRANCH_PATTERN = re.compile(
+    r"^(submission|batch|report)/issue-([1-9][0-9]*)-"
+    r"([1-9][0-9]*)(?:-([1-9][0-9]*))?$"
+)
 
 
 def _batch_moderator_id(issue_number: str) -> int:

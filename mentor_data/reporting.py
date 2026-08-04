@@ -11,7 +11,7 @@ from typing import Any
 from jsonschema import Draft202012Validator, FormatChecker
 
 from .errors import SubmissionError
-from .github_events import GitHubActor, GitHubIssueEvent, parse_issue_form
+from .github_events import GitHubActor, GitHubIssueEvent, parse_issue_form, require_issue_trigger
 from .io_utils import load_json, write_json_atomic
 from .normalization import normalize_text, normalized_web_url
 from .repository import RepositoryData, load_repository
@@ -114,6 +114,7 @@ def create_report_proposal(
     *,
     output_directory: Path,
 ) -> Path:
+    require_issue_trigger(event, expected_label="report:data")
     data = load_repository(root, validate=True)
     if event.author_id != actor.user_id or event.author_login.casefold() != actor.login.casefold():
         raise SubmissionError("GitHub API 用户与反馈 Issue 作者不一致")

@@ -12,7 +12,13 @@ from typing import Any
 from jsonschema import Draft202012Validator, FormatChecker
 
 from .errors import SubmissionError
-from .github_events import GitHubActor, GitHubIssueEvent, account_age_days, parse_issue_form
+from .github_events import (
+    GitHubActor,
+    GitHubIssueEvent,
+    account_age_days,
+    parse_issue_form,
+    require_issue_trigger,
+)
 from .identifiers import proposed_mentor_id, stable_proposal_entity_id
 from .io_utils import load_json, write_json_atomic
 from .normalization import (
@@ -352,6 +358,7 @@ def create_mentor_proposal(
     *,
     output_directory: Path,
 ) -> ProposalResult:
+    require_issue_trigger(event, expected_label="submission:mentor")
     data = load_repository(root, validate=True)
     sections = parse_issue_form(event.body, SINGLE_FORM_LABELS)
     if "我确认" not in sections["投稿确认"]:

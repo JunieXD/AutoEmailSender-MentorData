@@ -3,6 +3,12 @@ name: Process mentor contribution Issue
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Open single-mentor contribution Issue to process or retry
+        required: true
+        type: string
 
 permissions:
   actions: write
@@ -10,19 +16,23 @@ permissions:
   issues: write
   pull-requests: write
 
-concurrency:
-  group: mentor-data-write
-  cancel-in-progress: false
-
 jobs:
   prepare:
-    if: contains(github.event.issue.labels.*.name, 'submission:mentor')
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      contains(github.event.issue.labels.*.name, 'submission:mentor')
+    concurrency:
+      group: mentor-data-write
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 15
     env:
       GH_TOKEN: ${{ github.token }}
-      ISSUE_NUMBER: ${{ github.event.issue.number }}
+      GITHUB_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number || inputs.issue_number }}
       RUN_ID: ${{ github.run_id }}
+      RUN_ATTEMPT: ${{ github.run_attempt }}
+      SOURCE_EVENT: .work/source-issue-event.json
     steps:
       - name: Check out trusted default branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -39,10 +49,23 @@ jobs:
       - name: Install locked dependencies
         run: uv sync --locked --dev
 
+      - name: Resolve source Issue event
+        run: |
+          case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          mkdir -p .work
+          if [ "$GITHUB_EVENT_NAME" = "issues" ]; then
+            cp "$GITHUB_EVENT_PATH" "$SOURCE_EVENT"
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            gh api "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}" \
+              --jq '{action: "opened", issue: .}' > "$SOURCE_EVENT"
+          else
+            exit 1
+          fi
+
       - name: Parse untrusted Issue as data
         run: |
           uv run mentor-data prepare-issue \
-            --event "$GITHUB_EVENT_PATH" \
+            --event "$SOURCE_EVENT" \
             --output .work/proposals
 
       - name: Read trusted proposal metadata
@@ -70,11 +93,12 @@ jobs:
         run: |
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
           case "$RUN_ID" in ''|*[!0-9]*) exit 1 ;; esac
+          case "$RUN_ATTEMPT" in ''|*[!0-9]*) exit 1 ;; esac
           echo "merged=false" >> "$GITHUB_OUTPUT"
           if [ "$AUTO_ELIGIBLE" = "true" ]; then
-            BRANCH="automatic/issue-${ISSUE_NUMBER}-${RUN_ID}"
+            BRANCH="automatic/issue-${ISSUE_NUMBER}-${RUN_ID}-${RUN_ATTEMPT}"
           else
-            BRANCH="submission/issue-${ISSUE_NUMBER}-${RUN_ID}"
+            BRANCH="submission/issue-${ISSUE_NUMBER}-${RUN_ID}-${RUN_ATTEMPT}"
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -83,19 +107,23 @@ jobs:
           git commit -m "data: prepare mentor submission #${ISSUE_NUMBER}"
           git push origin "$BRANCH"
           if [ "$AUTO_ELIGIBLE" = "true" ]; then
-            PR_URL=$(gh pr create \
-              --base main \
+            PR_URL=$(uv run python scripts/create_issue_pull_request.py \
+              --event "$SOURCE_EVENT" \
+              --repository "$GITHUB_REPOSITORY" \
+              --issue-number "$ISSUE_NUMBER" \
+              --kind mentor \
               --head "$BRANCH" \
-              --title "自动处理导师投稿 #${ISSUE_NUMBER}" \
               --body "由受信任默认分支工作流生成。关联 Issue #${ISSUE_NUMBER}。")
             gh pr merge "$PR_URL" --squash --delete-branch
             echo "merged=true" >> "$GITHUB_OUTPUT"
           else
-            PR_URL=$(gh pr create \
-              --draft \
-              --base main \
+            PR_URL=$(uv run python scripts/create_issue_pull_request.py \
+              --event "$SOURCE_EVENT" \
+              --repository "$GITHUB_REPOSITORY" \
+              --issue-number "$ISSUE_NUMBER" \
+              --kind mentor \
               --head "$BRANCH" \
-              --title "审核导师投稿 #${ISSUE_NUMBER}" \
+              --draft \
               --body "请核对 accepted、target_mentor_id、机构映射和 review_reasons。确认后将 Draft 标记为 Ready 并合并；关联 Issue #${ISSUE_NUMBER}。")
           fi
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"

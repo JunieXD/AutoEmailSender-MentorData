@@ -716,3 +716,26 @@ def test_review_pull_rejects_fork_branch(tmp_path: Path) -> None:
 
     with pytest.raises(SubmissionError, match="fork"):
         load_review_pull(pull_path, expected_repository=REPOSITORY, expected_number=88)
+
+
+def test_review_pull_accepts_retry_branch_with_run_attempt(tmp_path: Path) -> None:
+    pull_path = tmp_path / "retry-pull.json"
+    pull_path.write_text(
+        json.dumps(
+            {
+                "number": 88,
+                "state": "open",
+                "head": {
+                    "ref": "batch/issue-30-123-2",
+                    "repo": {"full_name": REPOSITORY},
+                },
+                "base": {"ref": "main"},
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    pull = load_review_pull(pull_path, expected_repository=REPOSITORY, expected_number=88)
+
+    assert pull.issue_number == 30
+    assert pull.head_ref == "batch/issue-30-123-2"

@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 from .errors import SubmissionError
-from .github_events import GitHubActor, GitHubIssueEvent, parse_issue_form
+from .github_events import GitHubActor, GitHubIssueEvent, parse_issue_form, require_issue_trigger
 from .identifiers import proposed_mentor_id
 from .io_utils import write_json_atomic
 from .proposals import (
@@ -82,6 +82,7 @@ def create_batch_proposals(
     package_path: Path,
     output_directory: Path,
 ) -> BatchProposalResult:
+    require_issue_trigger(event, expected_label="submission:batch")
     data: RepositoryData = load_repository(root, validate=True)
     parse_batch_form(event)
     package_rows = parse_community_package_rows(package_path, data.policy)

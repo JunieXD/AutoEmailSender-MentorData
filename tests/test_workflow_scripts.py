@@ -101,6 +101,40 @@ def test_batch_branch_rejects_mismatched_review_resolution(
         parse_branch_main()
 
 
+def test_retry_branch_with_run_attempt_is_supported(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    issue_number = 30
+    resolution_path = tmp_path / "reviews" / "resolutions" / f"batch-issue-{issue_number}.json"
+    resolution_path.parent.mkdir(parents=True)
+    resolution_path.write_text(
+        json.dumps(
+            {
+                "id": f"organization_review_issue_{issue_number}",
+                "issue": {"number": issue_number},
+                "reviewer": {"github_user_id": 999},
+            }
+        ),
+        encoding="utf-8",
+    )
+    proposal = (
+        tmp_path
+        / "proposals"
+        / f"batch-issue-{issue_number}"
+        / f"issue-{issue_number}-row-0001.json"
+    )
+    proposal.parent.mkdir(parents=True)
+    proposal.write_text("{}\n", encoding="utf-8")
+    output_path = tmp_path / "github-output.txt"
+    monkeypatch.chdir(tmp_path)
+    monkeypatch.setenv("HEAD_REF", f"batch/issue-{issue_number}-123-2")
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output_path))
+
+    assert parse_branch_main() == 0
+    assert _outputs(output_path)["issue_number"] == str(issue_number)
+
+
 def test_publication_metadata_blocks_pending_moderation(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

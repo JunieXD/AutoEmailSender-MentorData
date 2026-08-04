@@ -59,21 +59,36 @@ def test_untrusted_issue_and_pull_request_text_is_never_interpolated_into_run_sc
 
 def test_every_repository_writer_uses_the_shared_concurrency_group() -> None:
     writers = {
-        "process-mentor-issue.yml",
-        "process-batch-issue.yml",
-        "process-report-issue.yml",
-        "finalize-moderation.yml",
-        "apply-organization-review.yml",
-        "revoke-contributor.yml",
+        "process-mentor-issue.yml": "prepare",
+        "process-batch-issue.yml": "prepare",
+        "process-report-issue.yml": "prepare",
+        "finalize-moderation.yml": "finalize",
+        "apply-organization-review.yml": "apply",
+        "revoke-contributor.yml": "revoke",
     }
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
-    for filename in writers:
+    for filename, job_name in writers.items():
         document = yaml.load(
             (workflow_root / filename).read_text(encoding="utf-8"),
             Loader=yaml.BaseLoader,
         )
-        assert document["concurrency"]["group"] == "mentor-data-write"
-        assert document["concurrency"]["cancel-in-progress"] == "false"
+        assert "concurrency" not in document
+        concurrency = document["jobs"][job_name]["concurrency"]
+        assert concurrency["group"] == "mentor-data-write"
+        assert concurrency["cancel-in-progress"] == "false"
+
+
+def test_skipped_issue_workflows_cannot_cancel_the_matching_writer() -> None:
+    workflow_root = PROJECT_ROOT / ".github" / "workflows"
+    for filename in ISSUE_WORKFLOWS:
+        document = yaml.load(
+            (workflow_root / filename).read_text(encoding="utf-8"),
+            Loader=yaml.BaseLoader,
+        )
+        assert "concurrency" not in document
+        prepare = document["jobs"]["prepare"]
+        assert "if" in prepare
+        assert prepare["concurrency"]["group"] == "mentor-data-write"
 
 
 def test_organization_review_runs_trusted_code_and_never_embeds_decision_in_shell() -> None:
@@ -102,6 +117,20 @@ def test_issue_workflows_create_at_most_one_status_comment() -> None:
         assert text.count("gh issue comment") == 1
         assert "<!-- mentor-data-status:v1 -->" in text
         assert "Post the only Issue status notification" in text
+
+
+def test_issue_workflows_support_safe_maintainer_retries_and_exact_pr_titles() -> None:
+    workflow_root = PROJECT_ROOT / ".github" / "workflows"
+    for filename in ISSUE_WORKFLOWS:
+        text = (workflow_root / filename).read_text(encoding="utf-8")
+        assert "workflow_dispatch:" in text
+        assert "Resolve source Issue event" in text
+        assert '--jq \'{action: "opened", issue: .}\'' in text
+        assert "scripts/create_issue_pull_request.py" in text
+        assert '--event "$SOURCE_EVENT"' in text
+        assert "gh pr create" not in text
+        assert "GITHUB_TOKEN: ${{ github.token }}" in text
+        assert "RUN_ATTEMPT: ${{ github.run_attempt }}" in text
 
 
 def test_downstream_moderation_never_adds_progress_comments() -> None:
