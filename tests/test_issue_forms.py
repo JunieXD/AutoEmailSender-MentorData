@@ -143,6 +143,7 @@ def test_manual_form_uses_plain_labels_and_marks_optional_fields() -> None:
         "老师的个人主页（选填）",
     } <= labels
     assert title_field["attributes"]["default"] == 0
+    assert title_field["validations"]["required"] is True
 
 
 def test_report_form_asks_people_about_the_problem_in_plain_language() -> None:

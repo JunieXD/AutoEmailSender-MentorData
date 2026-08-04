@@ -80,6 +80,8 @@ body:
         - 助理研究员
         - 特聘研究员
       default: 0
+    validations:
+      required: true
 
   - type: markdown
     attributes:
