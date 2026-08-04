@@ -119,6 +119,14 @@ def test_issue_workflows_create_at_most_one_status_comment() -> None:
         assert "Post the only Issue status notification" in text
 
 
+def test_issue_status_urls_are_separated_from_chinese_punctuation() -> None:
+    workflow_root = PROJECT_ROOT / ".github" / "workflows"
+    attached_punctuation = re.compile(r"\$\{(?:PR_URL|REVIEW_URL)\}[，。；：！？]")
+    for filename in ISSUE_WORKFLOWS:
+        text = (workflow_root / filename).read_text(encoding="utf-8")
+        assert attached_punctuation.search(text) is None
+
+
 def test_issue_workflows_support_safe_maintainer_retries_and_exact_pr_titles() -> None:
     workflow_root = PROJECT_ROOT / ".github" / "workflows"
     for filename in ISSUE_WORKFLOWS:

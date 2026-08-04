@@ -166,7 +166,7 @@ jobs:
           if [ "$JOB_STATUS" = "success" ] && [ "$ALL_AUTO_ELIGIBLE" = "true" ]; then
             MESSAGE="批量投稿已安全解析并进入社区数据，原始附件不会写入仓库。发布成功后，本 Issue 会自动关闭。审核记录：${PR_URL}"
           elif [ "$JOB_STATUS" = "success" ]; then
-            MESSAGE="批量投稿已安全解析，原始附件不会写入仓库。请由维护者继续审核：${REVIEW_URL}。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
+            MESSAGE="批量投稿已安全解析，原始附件不会写入仓库。请由维护者继续审核：${REVIEW_URL} 。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
           elif [ "$MERGED" = "true" ]; then
             MESSAGE="规范数据已经合并，但发布任务未成功启动。本 Issue 会保持开启，等待维护者补发。"
           else

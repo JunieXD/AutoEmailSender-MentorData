@@ -100,7 +100,7 @@ jobs:
         run: |
           case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
           if [ "$JOB_STATUS" = "success" ]; then
-            MESSAGE="反馈已进入人工审核，不会直接修改社区数据：${PR_URL}。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
+            MESSAGE="反馈已进入人工审核，不会直接修改社区数据：${PR_URL} 。后续不再重复发送进度评论；审核和发布成功后，本 Issue 会自动关闭。"
           else
             MESSAGE="反馈自动校验未通过，社区数据没有变化。维护者可查看本次 Actions 的固定格式日志。"
           fi
