@@ -34,8 +34,9 @@ def _primary(values: list[dict[str, Any]], *, current: bool = False) -> dict[str
     return next((item for item in candidates if item.get("is_primary")), None)
 
 
-def _claim_contributors(data: RepositoryData, claim_ids: list[str]) -> list[dict[str, Any]]:
-    claim_by_id = {item["id"]: item for item in data.claims}
+def _claim_contributors(
+    claim_by_id: dict[str, dict[str, Any]], claim_ids: list[str]
+) -> list[dict[str, Any]]:
     contributors: dict[int, dict[str, Any]] = {}
     for claim_id in claim_ids:
         claim = claim_by_id.get(claim_id)
@@ -72,7 +73,11 @@ def _project_affiliation(data: RepositoryData, affiliation: dict[str, Any]) -> d
     }
 
 
-def _project_mentor(data: RepositoryData, mentor: dict[str, Any]) -> dict[str, Any]:
+def _project_mentor(
+    data: RepositoryData,
+    mentor: dict[str, Any],
+    claim_by_id: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
     primary_name = _primary(mentor["names"])
     primary_contact = _primary(mentor["contacts"], current=True)
     primary_affiliation = _primary(mentor["affiliations"], current=True)
@@ -115,7 +120,7 @@ def _project_mentor(data: RepositoryData, mentor: dict[str, Any]) -> dict[str, A
         "last_verified_at": mentor.get("last_verified_at"),
         "contacts": active_contacts,
         "affiliations": active_affiliations,
-        "contributors": _claim_contributors(data, mentor["claim_ids"]),
+        "contributors": _claim_contributors(claim_by_id, mentor["claim_ids"]),
     }
 
 
@@ -149,6 +154,7 @@ def build_dataset(
 
     grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     hidden_status_records: list[dict[str, Any]] = []
+    claim_by_id = {item["id"]: item for item in data.claims}
     for mentor in sorted(data.mentors, key=lambda item: item["id"]):
         if mentor["status"] != "active":
             hidden_status_records.append(
@@ -161,7 +167,7 @@ def build_dataset(
                 }
             )
             continue
-        projection = _project_mentor(data, mentor)
+        projection = _project_mentor(data, mentor, claim_by_id)
         primary_affiliation = _primary(mentor["affiliations"], current=True)
         if primary_affiliation is None:
             raise ValueError(f"导师 {mentor['id']} 缺少主要任职")

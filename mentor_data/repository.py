@@ -41,8 +41,7 @@ class RepositoryData:
     revocations: dict[str, Any]
 
 
-def _schema_errors(schema: dict[str, Any], value: Any) -> list[str]:
-    validator = Draft202012Validator(schema, format_checker=FormatChecker())
+def _schema_errors(validator: Draft202012Validator, value: Any) -> list[str]:
     messages: list[str] = []
     for error in sorted(validator.iter_errors(value), key=lambda item: list(item.absolute_path)):
         location = ".".join(str(item) for item in error.absolute_path) or "$"
@@ -131,40 +130,45 @@ def validate_repository_data(
             resolved_schema_root / "schemas" / "organization-review-resolution.schema.json"
         ),
     }
+    format_checker = FormatChecker()
+    validators = {
+        name: Draft202012Validator(schema, format_checker=format_checker)
+        for name, schema in schemas.items()
+    }
 
-    for message in _schema_errors(schemas["organizations"], data.organizations_document):
+    for message in _schema_errors(validators["organizations"], data.organizations_document):
         issues.append(f"registry/organizations.yml: {message}")
     for mentor in data.mentors:
         mentor_id = mentor.get("id", "<unknown>")
-        for message in _schema_errors(schemas["mentor"], mentor):
+        for message in _schema_errors(validators["mentor"], mentor):
             issues.append(f"mentor {mentor_id}: {message}")
     for claim in data.claims:
         claim_id = claim.get("id", "<unknown>")
-        for message in _schema_errors(schemas["claim"], claim):
+        for message in _schema_errors(validators["claim"], claim):
             issues.append(f"claim {claim_id}: {message}")
     for resolution in data.resolutions:
         resolution_id = resolution.get("id", "<unknown>")
-        for message in _schema_errors(schemas["resolution"], resolution):
+        for message in _schema_errors(validators["resolution"], resolution):
             issues.append(f"resolution {resolution_id}: {message}")
         accepted = resolution.get("accepted")
         if isinstance(accepted, dict) and accepted:
-            for message in _schema_errors(schemas["correction_patch"], accepted):
+            for message in _schema_errors(validators["correction_patch"], accepted):
                 issues.append(f"resolution {resolution_id} accepted: {message}")
     for proposal in data.proposals:
         proposal_id = proposal.get("id", "<unknown>")
-        for message in _schema_errors(schemas["proposal"], proposal):
+        for message in _schema_errors(validators["proposal"], proposal):
             issues.append(f"proposal {proposal_id}: {message}")
     for proposal in data.report_proposals:
         proposal_id = proposal.get("id", "<unknown>")
-        for message in _schema_errors(schemas["report_proposal"], proposal):
+        for message in _schema_errors(validators["report_proposal"], proposal):
             issues.append(f"report proposal {proposal_id}: {message}")
         accepted = proposal.get("accepted")
         if isinstance(accepted, dict) and accepted:
-            for message in _schema_errors(schemas["correction_patch"], accepted):
+            for message in _schema_errors(validators["correction_patch"], accepted):
                 issues.append(f"report proposal {proposal_id} accepted: {message}")
     for resolution in data.organization_review_resolutions:
         resolution_id = resolution.get("id", "<unknown>")
-        for message in _schema_errors(schemas["organization_review_resolution"], resolution):
+        for message in _schema_errors(validators["organization_review_resolution"], resolution):
             issues.append(f"organization review {resolution_id}: {message}")
 
     _validate_policy(data, issues)

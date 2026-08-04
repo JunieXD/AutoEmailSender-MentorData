@@ -60,9 +60,35 @@ class ProposalResult:
 
 
 @dataclass(slots=True)
+class ProposalBuildContext:
+    data: RepositoryData
+    validator: Draft202012Validator
+    email_matches: dict[str, list[dict[str, Any]]]
+    profile_matches: dict[str, list[dict[str, Any]]]
+
+    def register_mentor(self, mentor: dict[str, Any]) -> None:
+        for contact in mentor.get("contacts", []):
+            if contact.get("status") not in {"current", "former"}:
+                continue
+            value = contact.get("normalized_value")
+            if isinstance(value, str):
+                matches = self.email_matches.setdefault(value, [])
+                if all(item.get("id") != mentor.get("id") for item in matches):
+                    matches.append(mentor)
+        for profile in mentor.get("profiles", []):
+            if profile.get("status") != "current":
+                continue
+            value = profile.get("url")
+            if isinstance(value, str):
+                matches = self.profile_matches.setdefault(value, [])
+                if all(item.get("id") != mentor.get("id") for item in matches):
+                    matches.append(mentor)
+
+
+@dataclass(slots=True)
 class _FinalizationContext:
     data: RepositoryData
-    proposal_schema: dict[str, Any]
+    proposal_validator: Draft202012Validator
     claim_by_id: dict[str, dict[str, Any]]
     mentor_by_id: dict[str, dict[str, Any]]
     mentor_index_by_id: dict[str, int]
@@ -203,17 +229,23 @@ def candidate_from_package_record(
     return _candidate_from_sections(data, sections)
 
 
-def _match_mentor(
-    data: RepositoryData, payload: dict[str, Any]
-) -> tuple[str, str | None, list[str]]:
-    email_matches: list[dict[str, Any]] = []
+def prepare_proposal_build_context(data: RepositoryData) -> ProposalBuildContext:
+    schema = load_json(data.root / "schemas" / "proposal.schema.json")
+    context = ProposalBuildContext(
+        data=data,
+        validator=Draft202012Validator(schema, format_checker=FormatChecker()),
+        email_matches={},
+        profile_matches={},
+    )
     for mentor in data.mentors:
-        if any(
-            contact.get("normalized_value") == payload["email"]
-            and contact.get("status") in {"current", "former"}
-            for contact in mentor.get("contacts", [])
-        ):
-            email_matches.append(mentor)
+        context.register_mentor(mentor)
+    return context
+
+
+def _match_mentor(
+    context: ProposalBuildContext, payload: dict[str, Any]
+) -> tuple[str, str | None, list[str]]:
+    email_matches = context.email_matches.get(payload["email"], [])
     if len(email_matches) > 1:
         return "ambiguous", None, ["email_matches_multiple_mentors"]
     if email_matches:
@@ -233,14 +265,7 @@ def _match_mentor(
 
     profile_url = payload.get("profile_url")
     if profile_url:
-        profile_matches = [
-            mentor
-            for mentor in data.mentors
-            if any(
-                profile.get("url") == profile_url and profile.get("status") == "current"
-                for profile in mentor.get("profiles", [])
-            )
-        ]
+        profile_matches = context.profile_matches.get(profile_url, [])
         if len(profile_matches) > 1:
             return "ambiguous", None, ["profile_matches_multiple_mentors"]
         if profile_matches:
@@ -261,6 +286,7 @@ def build_mentor_proposal(
     review_reasons: list[str],
     proposal_id: str,
     batch_row: int | None = None,
+    context: ProposalBuildContext | None = None,
 ) -> dict[str, Any]:
     if event.author_id != actor.user_id:
         raise SubmissionError("GitHub API 用户 ID 与 Issue 作者 ID 不一致")
@@ -268,7 +294,10 @@ def build_mentor_proposal(
         raise SubmissionError("GitHub API login 与 Issue 作者不一致")
     if "contribute" in _blocked_scopes(data, actor.user_id):
         raise SubmissionError("该 GitHub 用户已被禁止投稿")
-    match_status, target_mentor_id, match_reasons = _match_mentor(data, submitted)
+    resolved_context = context or prepare_proposal_build_context(data)
+    if resolved_context.data is not data:
+        raise ValueError("提案构建上下文与仓库数据不一致")
+    match_status, target_mentor_id, match_reasons = _match_mentor(resolved_context, submitted)
     review_reasons = [*review_reasons, *match_reasons]
 
     age_days = account_age_days(actor, event.created_at)
@@ -306,10 +335,7 @@ def build_mentor_proposal(
         "auto_eligible": not review_reasons,
         "created_at": datetime.now(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     }
-    schema = load_json(data.root / "schemas" / "proposal.schema.json")
-    errors = list(
-        Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(proposal)
-    )
+    errors = list(resolved_context.validator.iter_errors(proposal))
     if errors:
         raise SubmissionError(f"生成的审核提案无效：{errors[0].message}")
     return proposal
@@ -580,9 +606,13 @@ def _finalization_context(
         for contact in mentor.get("contacts", []):
             if contact.get("status") in {"current", "former"}:
                 email_owner_by_value[contact["normalized_value"]] = mentor["id"]
+    proposal_schema = load_json(resolved_schema_root / "schemas" / "proposal.schema.json")
     return _FinalizationContext(
         data=data,
-        proposal_schema=load_json(resolved_schema_root / "schemas" / "proposal.schema.json"),
+        proposal_validator=Draft202012Validator(
+            proposal_schema,
+            format_checker=FormatChecker(),
+        ),
         claim_by_id={claim["id"]: claim for claim in data.claims},
         mentor_by_id=mentor_by_id,
         mentor_index_by_id={mentor["id"]: index for index, mentor in enumerate(data.mentors)},
@@ -610,12 +640,7 @@ def _finalize_proposal_in_context(
 ) -> tuple[Path, Path]:
     data = context.data
     proposal = load_json(proposal_path)
-    errors = list(
-        Draft202012Validator(
-            context.proposal_schema,
-            format_checker=FormatChecker(),
-        ).iter_errors(proposal)
-    )
+    errors = list(context.proposal_validator.iter_errors(proposal))
     if errors:
         raise SubmissionError(f"审核提案无效：{errors[0].message}")
     user_id = proposal["contributor"]["github_user_id"]

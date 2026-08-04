@@ -60,6 +60,7 @@ def _apply_revocation(
         raise SubmissionError(f"GitHub 用户 {github_user_id} 没有可撤销 Claim")
     claim_ids = {claim["id"] for claim in target_claims}
     affected_mentor_ids = sorted({claim["mentor_id"] for claim in target_claims})
+    mentor_by_id = {mentor["id"]: mentor for mentor in data.mentors}
     removed_mentor_ids: list[str] = []
     updated_mentor_ids: list[str] = []
 
@@ -72,7 +73,7 @@ def _apply_revocation(
 
     for mentor_id in affected_mentor_ids:
         mentor_path = data.mentor_paths[mentor_id]
-        mentor = copy.deepcopy(next(item for item in data.mentors if item["id"] == mentor_id))
+        mentor = copy.deepcopy(mentor_by_id[mentor_id])
         _remove_claim_support(mentor, claim_ids)
         if not mentor["claim_ids"]:
             mentor_path.unlink()

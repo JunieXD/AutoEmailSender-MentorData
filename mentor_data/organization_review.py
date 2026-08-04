@@ -22,7 +22,7 @@ from .normalization import (
 )
 from .organizations import OrganizationRegistry
 from .proposals import check_proposal_set
-from .repository import load_repository, validate_repository_data
+from .repository import RepositoryData, load_repository, validate_repository_data
 
 if TYPE_CHECKING:
     from .batch import BatchProposalResult
@@ -361,6 +361,7 @@ def _add_alias(
 
 def _resolve_levels(
     organizations_document: dict[str, Any],
+    organizations_by_id: dict[str, dict[str, Any]],
     submitted: dict[str, str | None],
     levels: list[dict[str, Any]],
     *,
@@ -369,7 +370,6 @@ def _resolve_levels(
     if [item["level"] for item in levels] != list(LEVELS):
         raise SubmissionError("机构层级决策必须按学校、学院、系所完整排列")
     organizations = organizations_document["organizations"]
-    by_id = {item["id"]: item for item in organizations}
     parent_id: str | None = None
     target_id: str | None = None
     created_ids: set[str] = set()
@@ -391,7 +391,7 @@ def _resolve_levels(
 
         if action == "existing":
             organization_id = item.get("organization_id")
-            organization = by_id.get(organization_id)
+            organization = organizations_by_id.get(organization_id)
             if organization is None or organization.get("status") != "active":
                 raise SubmissionError(f"所选机构不存在或不可用：{organization_id}")
             if organization["type"] not in LEVEL_TYPES[level]:
@@ -427,7 +427,7 @@ def _resolve_levels(
             canonical_name,
             parent_id,
         )
-        existing = by_id.get(organization_id)
+        existing = organizations_by_id.get(organization_id)
         if existing is None:
             aliases: list[str] = []
             if (
@@ -451,7 +451,7 @@ def _resolve_levels(
                 "updated_at": decided_at,
             }
             organizations.append(organization)
-            by_id[organization_id] = organization
+            organizations_by_id[organization_id] = organization
             created_ids.add(organization_id)
         else:
             expected = {
@@ -488,15 +488,13 @@ def _resolve_levels(
 
 
 def _candidate_repository_data(
-    root: Path,
+    source_data: RepositoryData,
     organizations_document: dict[str, Any],
     proposals_by_id: dict[str, dict[str, Any]],
     proposal_paths_by_id: dict[str, Path],
     proposal_directory: Path,
-    *,
-    schema_root: Path,
-) -> Any:
-    data = copy.deepcopy(load_repository(root, validate=True, schema_root=schema_root))
+) -> RepositoryData:
+    data = copy.deepcopy(source_data)
     data.organizations_document = organizations_document
     data.registry = OrganizationRegistry(organizations_document["organizations"])
     batch_proposal_ids = {
@@ -608,6 +606,7 @@ def apply_organization_review(
                 raise SubmissionError("机构审核清单与提案原始字段不一致，请重新生成清单")
 
     organizations_document = copy.deepcopy(data.organizations_document)
+    organizations_by_id = {item["id"]: item for item in organizations_document["organizations"]}
     mapped_ids: set[str] = set()
     rejected_ids: set[str] = set()
     created_organization_ids: set[str] = set()
@@ -633,6 +632,7 @@ def apply_organization_review(
         if group_decision["action"] == "resolve":
             base_target, created, updated = _resolve_levels(
                 organizations_document,
+                organizations_by_id,
                 group["submitted"],
                 group_decision["levels"],
                 decided_at=decided_at,
@@ -658,14 +658,9 @@ def apply_organization_review(
                 continue
             if override is not None:
                 target_id = override.get("organization_id")
-                organization = next(
-                    (
-                        item
-                        for item in organizations_document["organizations"]
-                        if item["id"] == target_id and item.get("status") == "active"
-                    ),
-                    None,
-                )
+                organization = organizations_by_id.get(target_id)
+                if organization is not None and organization.get("status") != "active":
+                    organization = None
                 if organization is None:
                     raise SubmissionError(f"逐行覆盖机构不存在：{target_id}")
             elif group_decision["action"] == "reject":
@@ -699,12 +694,11 @@ def apply_organization_review(
             raise SubmissionError(f"提案 {proposal_id} 的官方来源不属于所选机构批准域名")
 
     candidate_data = _candidate_repository_data(
-        root,
+        data,
         organizations_document,
         proposals_by_id,
         proposal_paths_by_id,
         proposal_directory,
-        schema_root=trusted_schema_root,
     )
     validate_repository_data(candidate_data, schema_root=trusted_schema_root)
 

@@ -11,6 +11,7 @@ from .io_utils import write_json_atomic
 from .proposals import (
     build_mentor_proposal,
     candidate_from_package_record,
+    prepare_proposal_build_context,
 )
 from .repository import RepositoryData, load_repository
 from .uploads import parse_community_package_rows
@@ -87,6 +88,7 @@ def create_batch_proposals(
     proposals: list[dict[str, Any]] = []
     paths: list[Path] = []
     invalid_rows: list[dict[str, Any]] = []
+    build_context = prepare_proposal_build_context(data)
     for package_row in package_rows:
         record = package_row.record
         missing = [field for field in ("name", "email", "source_url") if not record[field]]
@@ -111,6 +113,7 @@ def create_batch_proposals(
                 review_reasons=review_reasons,
                 proposal_id=f"proposal_issue_{event.number}_row_{package_row.batch_row}",
                 batch_row=package_row.batch_row,
+                context=build_context,
             )
         except SubmissionError as error:
             invalid_rows.append(
@@ -128,7 +131,9 @@ def create_batch_proposals(
         proposals.append(proposal)
         paths.append(path)
         if proposal["target_mentor_id"] is None:
-            data.mentors.append(_pending_mentor(proposal))
+            pending_mentor = _pending_mentor(proposal)
+            data.mentors.append(pending_mentor)
+            build_context.register_mentor(pending_mentor)
 
     return BatchProposalResult(
         paths=tuple(paths),

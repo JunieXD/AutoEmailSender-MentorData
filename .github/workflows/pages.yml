@@ -76,7 +76,9 @@ jobs:
             git fetch origin gh-pages
             git worktree add --detach .work/pages origin/gh-pages
             if [ -d .work/pages/datasets ]; then
-              cp -R .work/pages/datasets dist/
+              # Published versions are immutable. Hard links avoid copying the
+              # growing archive twice while preserving every historical URL.
+              cp -al .work/pages/datasets dist/
             fi
           else
             git worktree add --detach .work/pages HEAD

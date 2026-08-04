@@ -8,59 +8,153 @@
       content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
     />
     <meta name="referrer" content="no-referrer" />
-    <title>AutoEmailSender 社区导师库</title>
+    <meta
+      name="description"
+      content="浏览并在 Auto Email Sender 中导入大家共同整理的高校导师公开信息。"
+    />
+    <title>Auto Email Sender 社区导师库</title>
     <link rel="license" href="https://creativecommons.org/licenses/by/4.0/" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main class="shell">
-      <header class="hero">
-        <p class="eyebrow">Auto Email Sender</p>
-        <h1>社区导师库</h1>
-        <p class="intro">
-          按学校与学院发布的可审计导师数据。每条信息保留官方来源和 GitHub 贡献记录，软件只下载用户选择的小型 JSON 分片。
-        </p>
-      </header>
+  <body class="home-page">
+    <header class="home-nav">
+      <a class="home-brand" href="./" aria-label="社区导师库首页">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>社区导师库</span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#catalog-section">已收录院校</a>
+        <a
+          href="https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=batch-contribution.yml"
+          >贡献导师</a
+        >
+        <a
+          href="https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=report-error.yml"
+          >反馈错误</a
+        >
+        <a href="https://github.com/JunieXD/AutoEmailSender-MentorData">GitHub</a>
+      </nav>
+    </header>
 
-      <section class="summary" aria-live="polite">
-        <div>
-          <span class="label">数据版本</span>
-          <strong id="dataset-version">正在读取…</strong>
+    <main class="home-shell">
+      <section class="home-hero">
+        <div class="hero-copy">
+          <p class="home-eyebrow">由大家共同整理</p>
+          <h1>别人整理过的导师信息，<br />不必每次重新抓取</h1>
+          <p class="home-intro">
+            在 Auto Email Sender 中选择学校和学院，预览后直接导入公开导师信息。
+          </p>
+          <div class="hero-actions">
+            <a class="home-button primary" href="https://github.com/JunieXD/AutoEmailSender/releases"
+              >下载 Auto Email Sender</a
+            >
+            <a
+              class="home-button secondary"
+              href="https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=batch-contribution.yml"
+              >贡献导师数据</a
+            >
+          </div>
+          <p class="trust-note">每条信息都保留高校官方来源和贡献记录，方便核对与纠错。</p>
         </div>
-        <div>
-          <span class="label">导师数量</span>
-          <strong id="record-count">—</strong>
-        </div>
-        <div>
-          <span class="label">生成时间</span>
-          <strong id="generated-at">—</strong>
+        <div class="hero-preview" aria-label="软件内导入流程示意">
+          <div class="preview-window">
+            <div class="preview-bar"><i></i><i></i><i></i></div>
+            <div class="preview-heading">
+              <span>社区导师库</span>
+              <span class="preview-pill">可导入</span>
+            </div>
+            <div class="preview-search">搜索学校或学院</div>
+            <div class="preview-row active">
+              <span id="preview-university">高校导师数据</span><strong id="preview-records">—</strong>
+            </div>
+            <div class="preview-row"><span id="preview-unit">选择学院或单位</span><strong>预览</strong></div>
+            <div class="preview-action">选择后导入</div>
+          </div>
         </div>
       </section>
 
-      <section class="catalog-section">
-        <div class="toolbar">
+      <section class="home-stats" aria-label="收录概况" aria-live="polite">
+        <div><strong id="record-count">—</strong><span>位导师</span></div>
+        <div><strong id="university-count">—</strong><span>所高校</span></div>
+        <div><strong id="unit-count">—</strong><span>个学院或单位</span></div>
+      </section>
+
+      <section class="home-section usage-section">
+        <div class="home-section-heading">
           <div>
-            <p class="eyebrow">Catalog</p>
-            <h2>学校与学院</h2>
+            <p class="home-eyebrow">怎么使用</p>
+            <h2>三步完成导入</h2>
           </div>
-          <label>
+          <a href="https://juniexd.github.io/AutoEmailSender/docs/getting-started">查看软件使用说明</a>
+        </div>
+        <ol class="usage-steps">
+          <li><span>1</span><div><strong>打开社区导师库</strong><p>在软件导航栏最右侧进入。</p></div></li>
+          <li><span>2</span><div><strong>选择学校和学院</strong><p>只读取你需要的那部分数据。</p></div></li>
+          <li><span>3</span><div><strong>预览并导入</strong><p>冲突信息由你确认，本地记录不会被覆盖。</p></div></li>
+        </ol>
+      </section>
+
+      <section id="catalog-section" class="home-section home-catalog-section">
+        <div class="catalog-toolbar">
+          <div>
+            <p class="home-eyebrow">已收录院校</p>
+            <h2>看看有没有你关注的学校</h2>
+          </div>
+          <label class="catalog-search-label">
             <span class="sr-only">搜索学校或学院</span>
             <input id="catalog-search" type="search" placeholder="搜索学校或学院" autocomplete="off" />
           </label>
         </div>
+        <p id="catalog-status" class="catalog-status">正在读取社区目录…</p>
         <p id="load-error" class="error" hidden></p>
-        <div id="catalog" class="catalog" aria-live="polite"></div>
+        <div id="catalog" class="home-catalog" aria-live="polite"></div>
       </section>
 
-      <footer>
-        <p>当前页面只展示发布目录。导入、冲突比较、退休或离职提醒应在 Auto Email Sender 软件内完成。</p>
-        <p class="license-notice">
-          社区数据由 AutoEmailSender MentorData contributors 按
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-          提供；高校官网等第三方来源保留其原有权利。
-        </p>
-      </footer>
+      <section class="contribute-card">
+        <div>
+          <p class="home-eyebrow">一起完善导师库</p>
+          <h2>你整理过的数据，也能帮到其他同学</h2>
+          <p>在软件中按学校或学院导出，一次提交多位导师。提交后可在 GitHub 查看处理进度。</p>
+        </div>
+        <a
+          class="home-button primary"
+          href="https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=batch-contribution.yml"
+          >贡献导师数据</a
+        >
+      </section>
+
+      <section class="source-section">
+        <div>
+          <h2>发现信息不对？</h2>
+          <p>提交高校官方证据，我们会保留处理记录，并在确认后更新或下架。</p>
+        </div>
+        <a
+          class="text-link"
+          href="https://github.com/JunieXD/AutoEmailSender-MentorData/issues/new?template=report-error.yml"
+          >反馈错误或过时信息 →</a
+        >
+      </section>
+
+      <details class="data-details">
+        <summary>数据与许可说明</summary>
+        <div>
+          <p>
+            社区数据由 AutoEmailSender MentorData contributors 按
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            提供；高校官网等第三方来源保留其原有权利。
+          </p>
+          <p>
+            当前数据版本：<span id="dataset-version">正在读取…</span> · 更新于
+            <span id="generated-at">—</span>
+          </p>
+        </div>
+      </details>
     </main>
+
+    <footer class="home-footer">
+      <span>Auto Email Sender 社区导师库</span>
+      <span>公开来源 · 可追踪贡献 · 支持纠错</span>
+    </footer>
     <script src="app.js" defer></script>
   </body>
 </html>

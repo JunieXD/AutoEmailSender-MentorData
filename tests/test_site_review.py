@@ -76,3 +76,29 @@ def test_review_suggests_official_urls_and_lists_pending_destinations() -> None:
     assert "refreshPendingOrganizationOptions" in script
     assert "本次新建" in script
     assert "改到其他机构" in script
+
+
+def test_review_lazily_renders_large_mentor_groups_and_throttles_autosave() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+
+    assert "card.renderedRowCount + 100" in script
+    assert 'rowsDetails.addEventListener("toggle"' in script
+    assert "rowEditorByProposalId" in script
+    assert "autosaveDirty" in script
+    assert "window.setTimeout(saveReviewDraft, 800)" in script
+
+
+def test_public_home_page_prioritizes_using_contributing_and_correcting_data() -> None:
+    html = (PROJECT_ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    script = (PROJECT_ROOT / "site" / "app.js").read_text(encoding="utf-8")
+
+    assert "不必每次重新抓取" in html
+    assert "下载 Auto Email Sender" in html
+    assert "贡献导师数据" in html
+    assert "反馈错误或过时信息" in html
+    assert 'id="university-count"' in html
+    assert 'id="unit-count"' in html
+    assert "review.html" not in html
+    assert "innerHTML" not in script
+    assert "safeCatalogUrl" in script
+    assert "unit.path" not in script

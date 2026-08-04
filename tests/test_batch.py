@@ -94,20 +94,63 @@ def test_batch_duplicates_become_two_claims_for_one_mentor(
     assert result.proposals[1]["target_mentor_id"] is not None
 
     original_load_repository = proposals_module.load_repository
+    original_validator = proposals_module.Draft202012Validator
     load_count = 0
+    validator_count = 0
 
     def counted_load_repository(*args, **kwargs):
         nonlocal load_count
         load_count += 1
         return original_load_repository(*args, **kwargs)
 
+    def counted_validator(*args, **kwargs):
+        nonlocal validator_count
+        validator_count += 1
+        return original_validator(*args, **kwargs)
+
     monkeypatch.setattr(proposals_module, "load_repository", counted_load_repository)
+    monkeypatch.setattr(proposals_module, "Draft202012Validator", counted_validator)
     finalize_proposal_set(root, list(result.paths), moderator_github_user_id=999)
     assert load_count == 2
+    assert validator_count == 1
     data = load_repository(root)
     assert len(data.mentors) == 1
     assert len(data.claims) == 2
     assert len(data.mentors[0]["claim_ids"]) == 2
+
+
+def test_batch_reuses_proposal_schema_and_match_indexes(
+    tmp_path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    root = build_test_repository(tmp_path)
+    actor = GitHubActor(
+        user_id=7007,
+        login="batch-user",
+        user_type="User",
+        created_at=datetime(2020, 1, 1, tzinfo=UTC),
+    )
+    original_load_json = proposals_module.load_json
+    schema_load_count = 0
+
+    def counted_load_json(path):
+        nonlocal schema_load_count
+        if path.name == "proposal.schema.json":
+            schema_load_count += 1
+        return original_load_json(path)
+
+    monkeypatch.setattr(proposals_module, "load_json", counted_load_json)
+    result = create_batch_proposals(
+        root,
+        _batch_event(tmp_path),
+        actor,
+        package_path=_package(tmp_path),
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert schema_load_count == 1
+    assert result.proposals[0]["match_status"] == "new"
+    assert result.proposals[1]["match_status"] == "matched_email"
 
 
 def test_invalid_row_does_not_discard_other_batch_rows(tmp_path) -> None:

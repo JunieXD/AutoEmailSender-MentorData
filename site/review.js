@@ -34,6 +34,8 @@ const state = {
   manifest: null,
   manifestSha256: null,
   organizationById: new Map(),
+  organizationsByLevelParent: new Map(),
+  organizationIdsByExactName: new Map(),
   selectableOrganizationById: new Map(),
   organizationLabelById: new Map(),
   organizationIdByLabel: new Map(),
@@ -42,10 +44,15 @@ const state = {
   organizationDraftByKey: new Map(),
   pendingOrganizationIds: new Set(),
   pendingOrganizations: [],
+  pendingOrganizationsSignature: "",
   rowEditors: [],
+  rowEditorByProposalId: new Map(),
+  restoredRowValues: new Map(),
   groupCardById: new Map(),
   storageKey: null,
   updateToken: 0,
+  autosaveDirty: false,
+  proposedOrganizationIdCache: new Map(),
   cards: [],
 };
 
@@ -130,12 +137,22 @@ function parseOrganizationInput(input, allowedIds = null) {
   return organizationId;
 }
 
+function organizationLevel(organizationType) {
+  if (organizationType === "university") {
+    return "university";
+  }
+  if (["school", "institute"].includes(organizationType)) {
+    return "school";
+  }
+  return "department";
+}
+
+function levelParentKey(level, parentId) {
+  return `${level}\u001f${parentId || "root"}`;
+}
+
 function organizationsForLevel(level, parentId) {
-  const allowedTypes = new Set(LEVEL_TYPES[level]);
-  return state.manifest.organizations.filter(
-    (organization) =>
-      allowedTypes.has(organization.type) && (organization.parent_id || null) === parentId,
-  );
+  return state.organizationsByLevelParent.get(levelParentKey(level, parentId)) || [];
 }
 
 function findExactOrganization(level, parentId, submittedName) {
@@ -143,11 +160,10 @@ function findExactOrganization(level, parentId, submittedName) {
   if (!key) {
     return null;
   }
-  const matches = organizationsForLevel(level, parentId).filter((organization) => {
-    const names = [organization.canonical_name, ...(organization.aliases || [])];
-    return names.some((name) => normalizeOrganizationName(name) === key);
-  });
-  return matches.length === 1 ? matches[0].id : null;
+  const matches = state.organizationIdsByExactName.get(
+    `${levelParentKey(level, parentId)}\u001f${key}`,
+  );
+  return matches?.length === 1 ? matches[0] : null;
 }
 
 function suggestedOrganizations(group) {
@@ -180,7 +196,12 @@ async function sha256Hex(value) {
 
 async function proposedOrganizationId(type, canonicalName, parentId) {
   const seed = `${type}\n${normalizeOrganizationName(canonicalName)}\n${parentId || ""}`;
-  return `org_auto_${(await sha256Hex(seed)).slice(0, 20)}`;
+  let pending = state.proposedOrganizationIdCache.get(seed);
+  if (!pending) {
+    pending = sha256Hex(seed).then((digest) => `org_auto_${digest.slice(0, 20)}`);
+    state.proposedOrganizationIdCache.set(seed, pending);
+  }
+  return pending;
 }
 
 function closeActiveFloatingControl() {
@@ -708,6 +729,9 @@ function buildOrganizationDrafts() {
           effectiveDomains: [],
           lineageNames: [],
           forcedSkip: false,
+          active: true,
+          descendants: null,
+          suggestedOfficialUrl: null,
           restoreExistingId: null,
           hasRestoredState: false,
           editor: null,
@@ -739,11 +763,31 @@ function buildOrganizationDrafts() {
       draftByKey.get(draft.parentKey)?.childKeys.add(draft.key);
     }
   }
+  const collectDescendants = (draft) => {
+    if (draft.descendants) {
+      return draft.descendants;
+    }
+    const descendants = [];
+    for (const childKey of draft.childKeys) {
+      const child = draftByKey.get(childKey);
+      if (child) {
+        descendants.push(child, ...collectDescendants(child));
+      }
+    }
+    draft.descendants = descendants;
+    return descendants;
+  };
+  for (const draft of draftByKey.values()) {
+    collectDescendants(draft);
+  }
   state.organizationDraftByKey = draftByKey;
   return [...draftByKey.values()];
 }
 
 function suggestedOfficialUrl(draft) {
+  if (draft.suggestedOfficialUrl !== null) {
+    return draft.suggestedOfficialUrl;
+  }
   const sources = [...draft.sourceUrlCounts.entries()].sort(
     ([firstUrl, firstCount], [secondUrl, secondCount]) =>
       secondCount - firstCount || firstUrl.localeCompare(secondUrl),
@@ -752,13 +796,15 @@ function suggestedOfficialUrl(draft) {
     try {
       const parsed = new URL(sourceUrl);
       if (["http:", "https:"].includes(parsed.protocol)) {
-        return `${parsed.origin}/`;
+        draft.suggestedOfficialUrl = `${parsed.origin}/`;
+        return draft.suggestedOfficialUrl;
       }
     } catch {
       // The manifest is validated again before applying the decision.
     }
   }
-  return "";
+  draft.suggestedOfficialUrl = "";
+  return draft.suggestedOfficialUrl;
 }
 
 function labeledControl(labelText, control, hint = "") {
@@ -940,10 +986,16 @@ function createOrganizationDraftEditor(draft) {
 }
 
 function renderOrganizationDraftTree(drafts) {
-  const sortedChildren = (parentKey) =>
-    drafts
-      .filter((draft) => draft.parentKey === parentKey)
-      .sort((first, second) => first.submittedName.localeCompare(second.submittedName, "zh-CN"));
+  const childrenByParent = new Map();
+  for (const draft of drafts) {
+    const children = childrenByParent.get(draft.parentKey) || [];
+    children.push(draft);
+    childrenByParent.set(draft.parentKey, children);
+  }
+  for (const children of childrenByParent.values()) {
+    children.sort((first, second) => first.submittedName.localeCompare(second.submittedName, "zh-CN"));
+  }
+  const sortedChildren = (parentKey) => childrenByParent.get(parentKey) || [];
   const ordered = [];
   const renderBranch = (draft) => {
     ordered.push(draft);
@@ -1048,6 +1100,24 @@ function createMentorProfileButton(row) {
   return button;
 }
 
+function restoreRowEditorValue(editor) {
+  const value = state.restoredRowValues.get(editor.row.proposal_id);
+  if (!value || typeof value !== "object") {
+    return;
+  }
+  editor.action.value = storedText(value.action, 30) || "follow";
+  editor.reason.value = storedText(value.reason, 500);
+  editor.restoreTargetId = storedText(value.organization_id, 80) || null;
+  if (
+    editor.restoreTargetId &&
+    editor.organizationInput.selectById(editor.restoreTargetId)
+  ) {
+    editor.restoreTargetId = null;
+  }
+  editor.organizationInput.hidden = editor.action.value !== "map_existing";
+  editor.reason.hidden = editor.action.value !== "reject";
+}
+
 function createRowEditor(row) {
   const wrapper = element("div", "row-editor");
   const identity = element("div", "row-identity");
@@ -1064,7 +1134,7 @@ function createRowEditor(row) {
     `${row.name}的逐行处理方式`,
   );
   const organizationInput = createOrganizationPicker(
-    state.manifest.organizations,
+    [...state.manifest.organizations, ...state.pendingOrganizations],
     "选择现有或本次新建的机构",
     `${row.name}改映射到的机构`,
   );
@@ -1090,6 +1160,8 @@ function createRowEditor(row) {
     restoreTargetId: null,
   };
   state.rowEditors.push(editor);
+  state.rowEditorByProposalId.set(row.proposal_id, editor);
+  restoreRowEditorValue(editor);
   return editor;
 }
 
@@ -1148,12 +1220,10 @@ function createGroupCard(group, index) {
   const assignment = element("p", "group-assignment", "机构尚未确认");
 
   const rowsDetails = element("details", "rows-details");
-  const rowsSummary = element("summary", null, "拆分或拒绝个别导师行");
+  const rowsSummary = element("summary", null, `拆分或拒绝个别导师（${group.rows.length} 位）`);
   const rowsContainer = element("div", "rows-container");
-  const rowEditors = group.rows.map(createRowEditor);
-  for (const editor of rowEditors) {
-    rowsContainer.append(editor.wrapper);
-  }
+  const loadMoreRows = element("button", "text-button rows-load-more", "继续加载导师");
+  loadMoreRows.type = "button";
   rowsDetails.append(rowsSummary, rowsContainer);
   article.append(header, sources, assignment, groupControls, rowsDetails);
 
@@ -1163,8 +1233,31 @@ function createGroupCard(group, index) {
     groupAction,
     groupReason,
     assignment,
-    rowEditors,
+    rowEditors: [],
+    renderedRowCount: 0,
   };
+  card.loadMoreRows = () => {
+    const end = Math.min(card.renderedRowCount + 100, group.rows.length);
+    const fragment = document.createDocumentFragment();
+    for (const row of group.rows.slice(card.renderedRowCount, end)) {
+      const editor = createRowEditor(row);
+      card.rowEditors.push(editor);
+      fragment.append(editor.wrapper);
+    }
+    card.renderedRowCount = end;
+    rowsContainer.append(fragment);
+    loadMoreRows.textContent = `继续加载（剩余 ${group.rows.length - end} 位）`;
+    loadMoreRows.hidden = end >= group.rows.length;
+    if (!loadMoreRows.hidden) {
+      rowsContainer.append(loadMoreRows);
+    }
+  };
+  rowsDetails.addEventListener("toggle", () => {
+    if (rowsDetails.open && card.renderedRowCount === 0) {
+      card.loadMoreRows();
+    }
+  });
+  loadMoreRows.addEventListener("click", card.loadMoreRows);
   groupAction.addEventListener("change", scheduleReviewUpdate);
   groupReason.addEventListener("input", scheduleReviewUpdate);
   updateGroupCard(card);
@@ -1172,21 +1265,11 @@ function createGroupCard(group, index) {
 }
 
 function draftIsActive(draft) {
-  return [...draft.groupIds].some((groupId) => {
-    const card = state.groupCardById.get(groupId);
-    return !card || card.groupAction.value !== "reject";
-  });
+  return draft.active !== false;
 }
 
 function descendantDrafts(draft) {
-  const result = [];
-  for (const childKey of draft.childKeys) {
-    const child = state.organizationDraftByKey.get(childKey);
-    if (child) {
-      result.push(child, ...descendantDrafts(child));
-    }
-  }
-  return result;
+  return draft.descendants || [];
 }
 
 function markOrganizationDraftChanged(draft, affectsIdentity = false) {
@@ -1272,10 +1355,20 @@ function refreshPendingOrganizationOptions() {
     state.organizationIdByLabel.set(label, organization.id);
   }
   const options = [...state.manifest.organizations, ...state.pendingOrganizations];
-  for (const editor of state.rowEditors) {
-    editor.organizationInput.setOptions(options);
-    if (editor.restoreTargetId && editor.organizationInput.selectById(editor.restoreTargetId)) {
-      editor.restoreTargetId = null;
+  const signature = JSON.stringify(
+    state.pendingOrganizations.map((organization) => [
+      organization.id,
+      organization.canonical_name,
+      organization.approved_domains,
+    ]),
+  );
+  if (signature !== state.pendingOrganizationsSignature) {
+    state.pendingOrganizationsSignature = signature;
+    for (const editor of state.rowEditors) {
+      editor.organizationInput.setOptions(options);
+      if (editor.restoreTargetId && editor.organizationInput.selectById(editor.restoreTargetId)) {
+        editor.restoreTargetId = null;
+      }
     }
   }
 }
@@ -1342,6 +1435,14 @@ function showDraftValidation(draft) {
 
 async function updateOrganizationDrafts() {
   const token = ++state.updateToken;
+  const rejectedGroupIds = new Set(
+    state.cards
+      .filter((card) => card.groupAction.value === "reject")
+      .map((card) => card.group.id),
+  );
+  for (const draft of state.organizationDrafts) {
+    draft.active = [...draft.groupIds].some((groupId) => !rejectedGroupIds.has(groupId));
+  }
   for (const draft of state.organizationDrafts) {
     const editor = draft.editor;
     const parent = draft.parentKey ? state.organizationDraftByKey.get(draft.parentKey) : null;
@@ -1435,7 +1536,10 @@ async function updateOrganizationDrafts() {
     updateGroupCard(card);
   }
   updateOrganizationProgress();
-  scheduleAutosave();
+  if (state.autosaveDirty) {
+    state.autosaveDirty = false;
+    scheduleAutosave();
+  }
 }
 
 function pendingOrganizationDrafts() {
@@ -1480,6 +1584,7 @@ async function confirmOrganizationDraft(draft) {
     return;
   }
   draft.confirmed = true;
+  state.autosaveDirty = true;
   draft.editor.error.hidden = true;
   draft.editor.details.classList.remove("has-error");
   draft.editor.details.open = false;
@@ -1491,6 +1596,7 @@ let reviewUpdateTimer = null;
 let autosaveTimer = null;
 
 function scheduleReviewUpdate() {
+  state.autosaveDirty = true;
   nodes.decisionOutput.hidden = true;
   nodes.decisionPreview.hidden = true;
   window.clearTimeout(reviewUpdateTimer);
@@ -1501,6 +1607,19 @@ function scheduleReviewUpdate() {
 }
 
 function serializeReviewDraft() {
+  const rows = Object.fromEntries(state.restoredRowValues);
+  for (const editor of state.rowEditors) {
+    const value = {
+      action: editor.action.value,
+      organization_id: parseOrganizationInput(editor.organizationInput),
+      reason: editor.reason.value,
+    };
+    if (value.action === "follow" && !value.organization_id && !value.reason) {
+      delete rows[editor.row.proposal_id];
+    } else {
+      rows[editor.row.proposal_id] = value;
+    }
+  }
   return {
     version: 1,
     saved_at: new Date().toISOString(),
@@ -1525,16 +1644,7 @@ function serializeReviewDraft() {
         { action: card.groupAction.value, reason: card.groupReason.value },
       ]),
     ),
-    rows: Object.fromEntries(
-      state.rowEditors.map((editor) => [
-        editor.row.proposal_id,
-        {
-          action: editor.action.value,
-          organization_id: parseOrganizationInput(editor.organizationInput),
-          reason: editor.reason.value,
-        },
-      ]),
-    ),
+    rows,
   };
 }
 
@@ -1558,7 +1668,7 @@ function scheduleAutosave() {
     return;
   }
   window.clearTimeout(autosaveTimer);
-  autosaveTimer = window.setTimeout(saveReviewDraft, 250);
+  autosaveTimer = window.setTimeout(saveReviewDraft, 800);
 }
 
 function storedText(value, maximumLength) {
@@ -1602,16 +1712,25 @@ function restoreReviewDraft() {
     card.groupAction.value = storedText(value.action, 20);
     card.groupReason.value = storedText(value.reason, 500);
   }
-  for (const editor of state.rowEditors) {
-    const value = saved.rows?.[editor.row.proposal_id];
-    if (!value || typeof value !== "object") {
-      continue;
+  state.restoredRowValues.clear();
+  for (const group of state.manifest.groups) {
+    for (const row of group.rows) {
+      const value = saved.rows?.[row.proposal_id];
+      if (!value || typeof value !== "object") {
+        continue;
+      }
+      const restored = {
+        action: storedText(value.action, 30) || "follow",
+        organization_id: storedText(value.organization_id, 80) || null,
+        reason: storedText(value.reason, 500),
+      };
+      if (restored.action !== "follow" || restored.organization_id || restored.reason) {
+        state.restoredRowValues.set(row.proposal_id, restored);
+      }
     }
-    editor.action.value = storedText(value.action, 30);
-    editor.reason.value = storedText(value.reason, 500);
-    editor.restoreTargetId = storedText(value.organization_id, 80) || null;
-    editor.organizationInput.hidden = editor.action.value !== "map_existing";
-    editor.reason.hidden = editor.action.value !== "reject";
+  }
+  for (const editor of state.rowEditors) {
+    restoreRowEditorValue(editor);
   }
   nodes.autosaveStatus.textContent = "已恢复这个 PR 上次自动保存的审核进度。";
   return true;
@@ -1793,36 +1912,44 @@ async function collectLevels(group) {
 
 function collectRowOverrides(card) {
   const overrides = [];
-  for (const editor of card.rowEditors) {
-    if (editor.action.value === "follow") {
+  for (const row of card.group.rows) {
+    const editor = state.rowEditorByProposalId.get(row.proposal_id);
+    const restored = state.restoredRowValues.get(row.proposal_id);
+    const action = editor?.action.value || restored?.action || "follow";
+    if (action === "follow") {
       continue;
     }
-    if (editor.action.value === "map_existing") {
-      const organizationId = parseOrganizationInput(editor.organizationInput);
+    if (action === "map_existing") {
+      const organizationId = editor
+        ? parseOrganizationInput(editor.organizationInput)
+        : restored?.organization_id;
       if (!organizationId) {
-        throw new Error(`${editor.row.name}需要选择现有或本次新建的机构`);
+        throw new Error(`${row.name}需要选择现有或本次新建的机构`);
       }
       const organization = state.selectableOrganizationById.get(organizationId);
       if (
         !organization ||
-        !sourceUrlMatchesDomains(editor.row.source_url, organization.approved_domains || [])
+        !sourceUrlMatchesDomains(row.source_url, organization.approved_domains || [])
       ) {
-        throw new Error(`${editor.row.name}的来源不属于改派机构的官方来源域名`);
+        throw new Error(`${row.name}的来源不属于改派机构的官方来源域名`);
       }
       overrides.push({
-        proposal_id: editor.row.proposal_id,
+        proposal_id: row.proposal_id,
         action: "map_existing",
         organization_id: organizationId,
         reason: null,
       });
       continue;
     }
-    const reason = editor.reason.value.trim();
+    if (action !== "reject") {
+      throw new Error(`${row.name}的逐行处理方式无效`);
+    }
+    const reason = (editor?.reason.value || restored?.reason || "").trim();
     if (!reason) {
-      throw new Error(`拒绝${editor.row.name}时需要填写原因`);
+      throw new Error(`拒绝${row.name}时需要填写原因`);
     }
     overrides.push({
-      proposal_id: editor.row.proposal_id,
+      proposal_id: row.proposal_id,
       action: "reject",
       organization_id: null,
       reason,
@@ -2029,6 +2156,23 @@ async function loadReview() {
     for (const organization of manifest.organizations) {
       state.organizationById.set(organization.id, organization);
       state.selectableOrganizationById.set(organization.id, organization);
+      const level = organizationLevel(organization.type);
+      const parentKey = levelParentKey(level, organization.parent_id || null);
+      const organizations = state.organizationsByLevelParent.get(parentKey) || [];
+      organizations.push(organization);
+      state.organizationsByLevelParent.set(parentKey, organizations);
+      for (const name of [organization.canonical_name, ...(organization.aliases || [])]) {
+        const normalizedName = normalizeOrganizationName(name);
+        if (!normalizedName) {
+          continue;
+        }
+        const exactKey = `${parentKey}\u001f${normalizedName}`;
+        const ids = state.organizationIdsByExactName.get(exactKey) || [];
+        if (!ids.includes(organization.id)) {
+          ids.push(organization.id);
+        }
+        state.organizationIdsByExactName.set(exactKey, ids);
+      }
       const label = organizationLabel(organization);
       state.organizationLabelById.set(organization.id, label);
       state.organizationIdByLabel.set(label, organization.id);
