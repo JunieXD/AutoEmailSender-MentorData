@@ -1,0 +1,153 @@
+{
+  "created_organization_ids": [
+    "org_auto_41bbf5cfe92ed1491ef7",
+    "org_auto_f081f90c975ffa8eae47"
+  ],
+  "decided_at": "2026-08-04T09:25:33Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_1a74caf9fc87dbbe",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ioip.nankai.edu.cn"
+          ],
+          "canonical_name": "南开大学",
+          "level": "university",
+          "official_url": "https://ioip.nankai.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能光子研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_cd1c9cc357492302",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ioip.nankai.edu.cn"
+          ],
+          "canonical_name": "南开大学",
+          "level": "university",
+          "official_url": "https://ioip.nankai.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能光子研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d5ba0f1dfa5d2a6f",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ioip.nankai.edu.cn"
+          ],
+          "canonical_name": "南开大学",
+          "level": "university",
+          "official_url": "https://ioip.nankai.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能光子研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    }
+  ],
+  "id": "organization_review_issue_4",
+  "invalid_rows": [],
+  "issue": {
+    "number": 4,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/4"
+  },
+  "manifest_sha256": "4742a12adccd86a265ef9eb110e74ac92f69ce25fd4fb112287d78dd8c085d4b",
+  "mapped_proposal_ids": [
+    "proposal_issue_4_row_1",
+    "proposal_issue_4_row_2",
+    "proposal_issue_4_row_3",
+    "proposal_issue_4_row_4",
+    "proposal_issue_4_row_5"
+  ],
+  "pull_request_number": 5,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5177104391,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

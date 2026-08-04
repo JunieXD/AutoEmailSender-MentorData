@@ -37,3 +37,27 @@ organizations:
   successor_id: null
   created_at: '2026-08-03T15:20:56Z'
   updated_at: '2026-08-03T15:20:56Z'
+- id: org_auto_41bbf5cfe92ed1491ef7
+  type: university
+  canonical_name: 南开大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://ioip.nankai.edu.cn/
+  approved_domains:
+  - ioip.nankai.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-04T09:25:33Z'
+  updated_at: '2026-08-04T09:25:33Z'
+- id: org_auto_f081f90c975ffa8eae47
+  type: school
+  canonical_name: 智能光子研究院
+  parent_id: org_auto_41bbf5cfe92ed1491ef7
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-04T09:25:33Z'
+  updated_at: '2026-08-04T09:25:33Z'
