@@ -57,7 +57,7 @@ SUPPORTED_TITLES = {
     "特聘研究员",
 }
 SPLIT_DIRECTIONS = re.compile(r"[；;\r\n]+")
-SPLIT_PAPERS = re.compile(r"[|；;\r\n]+")
+SPLIT_PAPERS = re.compile(r"[\r\n]+")
 
 
 @dataclass(frozen=True, slots=True)

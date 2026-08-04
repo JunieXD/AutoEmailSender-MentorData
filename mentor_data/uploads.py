@@ -28,6 +28,7 @@ SAFE_COLUMNS = [
     "profile_url",
     "source_url",
 ]
+MULTILINE_COLUMNS = {"research_direction", "recent_papers"}
 FORMULA_PREFIXES = ("=", "+", "-", "@")
 FORBIDDEN_XLSX_PARTS = (
     "xl/externallinks/",
@@ -172,10 +173,23 @@ def _limit(policy: dict[str, Any], key: str) -> int:
     return value
 
 
-def _safe_cell(value: Any, *, max_characters: int) -> str:
+def _safe_cell(
+    value: Any,
+    *,
+    max_characters: int,
+    preserve_newlines: bool = False,
+) -> str:
     if value is None:
         return ""
-    text = normalize_text(str(value))
+    raw_text = str(value)
+    if preserve_newlines:
+        text = "\n".join(
+            normalized_line
+            for line in raw_text.splitlines()
+            if (normalized_line := normalize_text(line))
+        )
+    else:
+        text = normalize_text(raw_text)
     if len(text) > max_characters:
         raise UnsafePackageError("单元格内容超过长度限制")
     if text.startswith(FORMULA_PREFIXES):
@@ -199,8 +213,12 @@ def _rows_to_package_rows(
     records: list[CommunityPackageRow] = []
     for row_number, row in enumerate(rows[1:], start=2):
         values = [
-            _safe_cell(row[index] if index < len(row) else None, max_characters=max_characters)
-            for index in range(len(SAFE_COLUMNS))
+            _safe_cell(
+                row[index] if index < len(row) else None,
+                max_characters=max_characters,
+                preserve_newlines=column in MULTILINE_COLUMNS,
+            )
+            for index, column in enumerate(SAFE_COLUMNS)
         ]
         if not any(values):
             continue

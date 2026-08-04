@@ -41,6 +41,36 @@ def test_csv_package_is_parsed_and_email_is_normalized(tmp_path) -> None:
     assert records[0]["email"] == "mentor@example.edu"
 
 
+def test_xlsx_package_preserves_multiline_list_fields(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    path = tmp_path / "multiline.xlsx"
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.append(SAFE_COLUMNS)
+    sheet.append(
+        [
+            "示例导师",
+            "mentor@example.edu",
+            "教授",
+            "示例大学",
+            "计算机学院",
+            "",
+            "机器学习\n分布式系统",
+            "Paper One; Author A; Author B\nPaper Two",
+            "https://cs.example.edu/faculty/mentor",
+            "https://cs.example.edu/faculty/mentor",
+        ]
+    )
+    workbook.save(path)
+    workbook.close()
+
+    policy = load_yaml(root / "registry" / "policy.yml")
+    records = parse_community_package(path, policy)
+
+    assert records[0]["research_direction"] == "机器学习\n分布式系统"
+    assert records[0]["recent_papers"] == "Paper One; Author A; Author B\nPaper Two"
+
+
 def test_csv_formula_like_cell_is_rejected(tmp_path) -> None:
     root = build_test_repository(tmp_path)
     path = tmp_path / "formula.csv"

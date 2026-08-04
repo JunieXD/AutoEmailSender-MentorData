@@ -209,6 +209,27 @@ def test_realistic_long_publication_summary_is_accepted(tmp_path) -> None:
     assert len(result.proposal["submitted"]["recent_papers"][0]) == 3_405
 
 
+def test_recent_papers_split_only_on_newlines_and_keep_the_first_eight(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    papers = ["Paper 1; Author A; Author B", *[f"Paper {index}" for index in range(2, 10)]]
+    event_path = _write_event(
+        tmp_path,
+        issue_number=17,
+        user_id=8008,
+        login="multiline-publication-user",
+        body=_issue_body(recent_papers="\n".join(papers)),
+    )
+
+    result = create_mentor_proposal(
+        root,
+        load_issue_event(event_path, max_body_bytes=200_000),
+        _actor(8008, "multiline-publication-user"),
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert result.proposal["submitted"]["recent_papers"] == papers[:8]
+
+
 def test_independent_duplicate_submission_adds_provenance_not_a_second_mentor(tmp_path) -> None:
     root = build_test_repository(tmp_path)
     first_event_path = _write_event(
