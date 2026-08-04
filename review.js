@@ -1,6 +1,7 @@
 const REPOSITORY = "JunieXD/AutoEmailSender-MentorData";
 const COMMENT_MARKER = "<!-- mentor-data-organization-review:v1 -->";
-const BRANCH_PATTERN = /^batch\/issue-([1-9][0-9]*)-([1-9][0-9]*)$/;
+const BRANCH_PATTERN =
+  /^batch\/issue-([1-9][0-9]*)-([1-9][0-9]*)(?:-([1-9][0-9]*))?$/;
 const SHA_PATTERN = /^[a-f0-9]{40,64}$/;
 const DOMAIN_PATTERN = /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$/;
 const MAX_MANIFEST_BYTES = 20_000_000;
