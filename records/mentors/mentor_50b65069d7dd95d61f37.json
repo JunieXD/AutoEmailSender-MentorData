@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f5610d77751b9107048b"
+      ],
+      "ended_at": null,
+      "id": "aff_20671d55b6947d232f46",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2013.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f5610d77751b9107048b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_20671d55b6947d232f46",
+      "claim_ids": [
+        "claim_f5610d77751b9107048b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangzhi@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2013.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangzhi@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f5610d77751b9107048b"
+    ],
+    "email": [
+      "claim_f5610d77751b9107048b"
+    ],
+    "name": [
+      "claim_f5610d77751b9107048b"
+    ],
+    "profile_url": [
+      "claim_f5610d77751b9107048b"
+    ],
+    "research_directions": [
+      "claim_f5610d77751b9107048b"
+    ],
+    "status": [
+      "claim_f5610d77751b9107048b"
+    ],
+    "title": [
+      "claim_f5610d77751b9107048b"
+    ]
+  },
+  "id": "mentor_50b65069d7dd95d61f37",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f5610d77751b9107048b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张治"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_20671d55b6947d232f46",
+      "claim_ids": [
+        "claim_f5610d77751b9107048b"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1098/2013.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "基于数据驱动和神经网络的无线信号检测技术,高谱效高能效无线通信技术,先进通信系统设计与开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1098/2013.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

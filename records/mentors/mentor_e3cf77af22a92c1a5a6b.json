@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1bb6fbe6e220fbe797ec"
+      ],
+      "ended_at": null,
+      "id": "aff_022a3ab33e188fb58c96",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2016.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1bb6fbe6e220fbe797ec"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_022a3ab33e188fb58c96",
+      "claim_ids": [
+        "claim_1bb6fbe6e220fbe797ec"
+      ],
+      "is_primary": true,
+      "normalized_value": "jhzhang@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2016.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jhzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1bb6fbe6e220fbe797ec"
+    ],
+    "email": [
+      "claim_1bb6fbe6e220fbe797ec"
+    ],
+    "name": [
+      "claim_1bb6fbe6e220fbe797ec"
+    ],
+    "profile_url": [
+      "claim_1bb6fbe6e220fbe797ec"
+    ],
+    "research_directions": [
+      "claim_1bb6fbe6e220fbe797ec"
+    ],
+    "status": [
+      "claim_1bb6fbe6e220fbe797ec"
+    ],
+    "title": [
+      "claim_1bb6fbe6e220fbe797ec"
+    ]
+  },
+  "id": "mentor_e3cf77af22a92c1a5a6b",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1bb6fbe6e220fbe797ec"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张建华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_022a3ab33e188fb58c96",
+      "claim_ids": [
+        "claim_1bb6fbe6e220fbe797ec"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1098/2016.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "宽带移动通信系统新理论及技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1098/2016.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

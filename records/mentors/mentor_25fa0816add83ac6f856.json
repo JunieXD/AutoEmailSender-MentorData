@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_04c6f78cc7bd0265a669"
+      ],
+      "ended_at": null,
+      "id": "aff_e9ee443ed84036c25fde",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1072/2089.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_04c6f78cc7bd0265a669"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e9ee443ed84036c25fde",
+      "claim_ids": [
+        "claim_04c6f78cc7bd0265a669"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanshi@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1072/2089.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanshi@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_04c6f78cc7bd0265a669"
+    ],
+    "email": [
+      "claim_04c6f78cc7bd0265a669"
+    ],
+    "name": [
+      "claim_04c6f78cc7bd0265a669"
+    ],
+    "profile_url": [
+      "claim_04c6f78cc7bd0265a669"
+    ],
+    "research_directions": [
+      "claim_04c6f78cc7bd0265a669"
+    ],
+    "status": [
+      "claim_04c6f78cc7bd0265a669"
+    ],
+    "title": [
+      "claim_04c6f78cc7bd0265a669"
+    ]
+  },
+  "id": "mentor_25fa0816add83ac6f856",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_04c6f78cc7bd0265a669"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫石"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e9ee443ed84036c25fde",
+      "claim_ids": [
+        "claim_04c6f78cc7bd0265a669"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1072/2089.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多媒体通信,通信测试技术,电源技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1072/2089.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

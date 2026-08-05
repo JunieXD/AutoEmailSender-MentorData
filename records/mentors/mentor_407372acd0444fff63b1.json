@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9d8d4ed88c4d139dcf15"
+      ],
+      "ended_at": null,
+      "id": "aff_6fb649aad991c306c6c0",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1072/2090.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_9d8d4ed88c4d139dcf15"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6fb649aad991c306c6c0",
+      "claim_ids": [
+        "claim_9d8d4ed88c4d139dcf15"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaomin@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1072/2090.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaomin@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9d8d4ed88c4d139dcf15"
+    ],
+    "email": [
+      "claim_9d8d4ed88c4d139dcf15"
+    ],
+    "name": [
+      "claim_9d8d4ed88c4d139dcf15"
+    ],
+    "profile_url": [
+      "claim_9d8d4ed88c4d139dcf15"
+    ],
+    "research_directions": [
+      "claim_9d8d4ed88c4d139dcf15"
+    ],
+    "status": [
+      "claim_9d8d4ed88c4d139dcf15"
+    ],
+    "title": [
+      "claim_9d8d4ed88c4d139dcf15"
+    ]
+  },
+  "id": "mentor_407372acd0444fff63b1",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9d8d4ed88c4d139dcf15"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6fb649aad991c306c6c0",
+      "claim_ids": [
+        "claim_9d8d4ed88c4d139dcf15"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1072/2090.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动通信、未来网络、物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1072/2090.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

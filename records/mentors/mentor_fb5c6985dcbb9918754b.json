@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_26912b840f0b83b7b435"
+      ],
+      "ended_at": null,
+      "id": "aff_e5ca04da543054133db5",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://teacher.bupt.edu.cn/luotao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_26912b840f0b83b7b435"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e5ca04da543054133db5",
+      "claim_ids": [
+        "claim_26912b840f0b83b7b435"
+      ],
+      "is_primary": true,
+      "normalized_value": "tluo@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://teacher.bupt.edu.cn/luotao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tluo@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_26912b840f0b83b7b435"
+    ],
+    "email": [
+      "claim_26912b840f0b83b7b435"
+    ],
+    "name": [
+      "claim_26912b840f0b83b7b435"
+    ],
+    "profile_url": [
+      "claim_26912b840f0b83b7b435"
+    ],
+    "research_directions": [
+      "claim_26912b840f0b83b7b435"
+    ],
+    "status": [
+      "claim_26912b840f0b83b7b435"
+    ],
+    "title": [
+      "claim_26912b840f0b83b7b435"
+    ]
+  },
+  "id": "mentor_fb5c6985dcbb9918754b",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_26912b840f0b83b7b435"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e5ca04da543054133db5",
+      "claim_ids": [
+        "claim_26912b840f0b83b7b435"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/luotao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "宽带无线通信网络、语义通信及智能信号处理、智慧医疗及大数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/luotao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bc715b0f54e8f9a6af31"
+      ],
+      "ended_at": null,
+      "id": "aff_e5ea38e9a6415b086f38",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/2054.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bc715b0f54e8f9a6af31"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e5ea38e9a6415b086f38",
+      "claim_ids": [
+        "claim_bc715b0f54e8f9a6af31"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjw@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/2054.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zjw@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bc715b0f54e8f9a6af31"
+    ],
+    "email": [
+      "claim_bc715b0f54e8f9a6af31"
+    ],
+    "name": [
+      "claim_bc715b0f54e8f9a6af31"
+    ],
+    "profile_url": [
+      "claim_bc715b0f54e8f9a6af31"
+    ],
+    "research_directions": [
+      "claim_bc715b0f54e8f9a6af31"
+    ],
+    "status": [
+      "claim_bc715b0f54e8f9a6af31"
+    ],
+    "title": [
+      "claim_bc715b0f54e8f9a6af31"
+    ]
+  },
+  "id": "mentor_e59b2685ac7832dee7b6",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bc715b0f54e8f9a6af31"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张佳玮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e5ea38e9a6415b086f38",
+      "claim_ids": [
+        "claim_bc715b0f54e8f9a6af31"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1070/2054.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据中心全光交换与组网技术、光纤/无线融合网络中的人工智能技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1070/2054.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

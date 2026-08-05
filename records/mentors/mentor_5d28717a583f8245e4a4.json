@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2d0ed4aaa9fa99f52ab2"
+      ],
+      "ended_at": null,
+      "id": "aff_aedba586b03045d9203a",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_3242b465ebb15e072702",
+      "source_url": "https://sice.bupt.edu.cn/info/1060/2337.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2d0ed4aaa9fa99f52ab2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aedba586b03045d9203a",
+      "claim_ids": [
+        "claim_2d0ed4aaa9fa99f52ab2"
+      ],
+      "is_primary": true,
+      "normalized_value": "bilingzhang@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1060/2337.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bilingzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2d0ed4aaa9fa99f52ab2"
+    ],
+    "email": [
+      "claim_2d0ed4aaa9fa99f52ab2"
+    ],
+    "name": [
+      "claim_2d0ed4aaa9fa99f52ab2"
+    ],
+    "profile_url": [
+      "claim_2d0ed4aaa9fa99f52ab2"
+    ],
+    "research_directions": [
+      "claim_2d0ed4aaa9fa99f52ab2"
+    ],
+    "status": [
+      "claim_2d0ed4aaa9fa99f52ab2"
+    ],
+    "title": [
+      "claim_2d0ed4aaa9fa99f52ab2"
+    ]
+  },
+  "id": "mentor_5d28717a583f8245e4a4",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2d0ed4aaa9fa99f52ab2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张碧玲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aedba586b03045d9203a",
+      "claim_ids": [
+        "claim_2d0ed4aaa9fa99f52ab2"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1060/2337.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "5G/6G移动通信网络、车联网、物联网和能源互联网的资源协同与优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1060/2337.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

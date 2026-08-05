@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f2ea80db32e5624bc075"
+      ],
+      "ended_at": null,
+      "id": "aff_7da0f8365f2e26c5f859",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1074/2365.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f2ea80db32e5624bc075"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7da0f8365f2e26c5f859",
+      "claim_ids": [
+        "claim_f2ea80db32e5624bc075"
+      ],
+      "is_primary": true,
+      "normalized_value": "huzhiqun@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1074/2365.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huzhiqun@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f2ea80db32e5624bc075"
+    ],
+    "email": [
+      "claim_f2ea80db32e5624bc075"
+    ],
+    "name": [
+      "claim_f2ea80db32e5624bc075"
+    ],
+    "profile_url": [
+      "claim_f2ea80db32e5624bc075"
+    ],
+    "recent_papers": [
+      "claim_f2ea80db32e5624bc075"
+    ],
+    "research_directions": [
+      "claim_f2ea80db32e5624bc075"
+    ],
+    "status": [
+      "claim_f2ea80db32e5624bc075"
+    ]
+  },
+  "id": "mentor_c6a7490e25f013ad4d18",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f2ea80db32e5624bc075"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡智群"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7da0f8365f2e26c5f859",
+      "claim_ids": [
+        "claim_f2ea80db32e5624bc075"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1074/2365.htm"
+    }
+  ],
+  "recent_papers": [
+    "(TSP’2024)3D Extended Object Tracking by Fusing Roadside Sparse Radar Point Clouds and Pixel Keypoints(Under review)",
+    "(PRL’2023)FusionCalib: Automatic extrinsic parameters calibration based on road plane reconstruction for roadside integrated radar camera fusion sensors",
+    "(ITSC’2023)Continuous Trajectory Tracking Across Sensors at Intersection using Dynamic Target Set within the Overlapping Area",
+    "(TVT’24)Cooperative Optimization of Traffic Signals and Vehicle Speed Using a Novel Multi-agent Deep Reinforcement Learning",
+    "(TITS’2023)Intersec2vec-TSC: Intersection Representation Learning for Large-Scale Traffic Signal Control",
+    "(IET-ITS’2023)Dynamic Traffic Signal Control Using Mean Field Multi‐agent Reinforcement Learning in Large Scale Road Networks",
+    "(TC’2021)Network-scale Traffic Signal Control via Multiagent Reinforcement Learning with Deep Spatiotemporal Attentive Network",
+    "(Sensors’2021)Cooperative intersection with misperception in partially connected and automated traffic"
+  ],
+  "research_directions": [
+    "交通设施数字化、空天信息网络、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1074/2365.htm",
+  "title": null,
+  "updated_at": "2026-08-05T03:31:23Z"
+}

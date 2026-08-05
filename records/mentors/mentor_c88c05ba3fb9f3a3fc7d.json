@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1f0eee7264cb44f42a31"
+      ],
+      "ended_at": null,
+      "id": "aff_9084b5c5a657b2266fa8",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1103/2031.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_1f0eee7264cb44f42a31"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9084b5c5a657b2266fa8",
+      "claim_ids": [
+        "claim_1f0eee7264cb44f42a31"
+      ],
+      "is_primary": true,
+      "normalized_value": "leejj@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1103/2031.htm",
+      "status": "current",
+      "type": "email",
+      "value": "leejj@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1f0eee7264cb44f42a31"
+    ],
+    "email": [
+      "claim_1f0eee7264cb44f42a31"
+    ],
+    "name": [
+      "claim_1f0eee7264cb44f42a31"
+    ],
+    "profile_url": [
+      "claim_1f0eee7264cb44f42a31"
+    ],
+    "research_directions": [
+      "claim_1f0eee7264cb44f42a31"
+    ],
+    "status": [
+      "claim_1f0eee7264cb44f42a31"
+    ],
+    "title": [
+      "claim_1f0eee7264cb44f42a31"
+    ]
+  },
+  "id": "mentor_c88c05ba3fb9f3a3fc7d",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1f0eee7264cb44f42a31"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李江军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9084b5c5a657b2266fa8",
+      "claim_ids": [
+        "claim_1f0eee7264cb44f42a31"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1103/2031.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多媒体信息处理与通信,互联网应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1103/2031.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

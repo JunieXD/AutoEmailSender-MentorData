@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_05558ec9c20c31b82447"
+      ],
+      "ended_at": null,
+      "id": "aff_e96f4bf4fd516a316303",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_8a30aa77e0d4f6e35eef",
+      "source_url": "https://teacher.bupt.edu.cn/yanshi2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_05558ec9c20c31b82447"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e96f4bf4fd516a316303",
+      "claim_ids": [
+        "claim_05558ec9c20c31b82447"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanshi01@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://teacher.bupt.edu.cn/yanshi2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanshi01@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_05558ec9c20c31b82447"
+    ],
+    "email": [
+      "claim_05558ec9c20c31b82447"
+    ],
+    "name": [
+      "claim_05558ec9c20c31b82447"
+    ],
+    "profile_url": [
+      "claim_05558ec9c20c31b82447"
+    ],
+    "research_directions": [
+      "claim_05558ec9c20c31b82447"
+    ],
+    "status": [
+      "claim_05558ec9c20c31b82447"
+    ],
+    "title": [
+      "claim_05558ec9c20c31b82447"
+    ]
+  },
+  "id": "mentor_8521ba616b56f67ff0f2",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_05558ec9c20c31b82447"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫实"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e96f4bf4fd516a316303",
+      "claim_ids": [
+        "claim_05558ec9c20c31b82447"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yanshi2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "通信-感知-计算融合理论与关键技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yanshi2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

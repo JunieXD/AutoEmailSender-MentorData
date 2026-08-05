@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b432cab4d774e40b1e54"
+      ],
+      "ended_at": null,
+      "id": "aff_6b417c5db672a2704c5e",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1817.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b432cab4d774e40b1e54"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6b417c5db672a2704c5e",
+      "claim_ids": [
+        "claim_b432cab4d774e40b1e54"
+      ],
+      "is_primary": true,
+      "normalized_value": "hzt@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1817.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hzt@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b432cab4d774e40b1e54"
+    ],
+    "email": [
+      "claim_b432cab4d774e40b1e54"
+    ],
+    "name": [
+      "claim_b432cab4d774e40b1e54"
+    ],
+    "profile_url": [
+      "claim_b432cab4d774e40b1e54"
+    ],
+    "research_directions": [
+      "claim_b432cab4d774e40b1e54"
+    ],
+    "status": [
+      "claim_b432cab4d774e40b1e54"
+    ],
+    "title": [
+      "claim_b432cab4d774e40b1e54"
+    ]
+  },
+  "id": "mentor_b5e02f3057063e8bb8c1",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b432cab4d774e40b1e54"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄治同"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6b417c5db672a2704c5e",
+      "claim_ids": [
+        "claim_b432cab4d774e40b1e54"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1070/1817.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线光通信、光视觉与光通信融合"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1070/1817.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

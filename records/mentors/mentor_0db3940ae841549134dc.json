@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e55eadbab56905eaa622"
+      ],
+      "ended_at": null,
+      "id": "aff_96335696321a8ea3913e",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1102/2044.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e55eadbab56905eaa622"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96335696321a8ea3913e",
+      "claim_ids": [
+        "claim_e55eadbab56905eaa622"
+      ],
+      "is_primary": true,
+      "normalized_value": "cuihy@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1102/2044.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cuihy@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e55eadbab56905eaa622"
+    ],
+    "email": [
+      "claim_e55eadbab56905eaa622"
+    ],
+    "name": [
+      "claim_e55eadbab56905eaa622"
+    ],
+    "profile_url": [
+      "claim_e55eadbab56905eaa622"
+    ],
+    "research_directions": [
+      "claim_e55eadbab56905eaa622"
+    ],
+    "status": [
+      "claim_e55eadbab56905eaa622"
+    ],
+    "title": [
+      "claim_e55eadbab56905eaa622"
+    ]
+  },
+  "id": "mentor_0db3940ae841549134dc",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e55eadbab56905eaa622"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "崔鸿雁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_96335696321a8ea3913e",
+      "claim_ids": [
+        "claim_e55eadbab56905eaa622"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1102/2044.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据分析和可视化、未来网络智能资源管理、云技术、社会物理学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1102/2044.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

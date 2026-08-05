@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eb1283fca6da4c1f7581"
+      ],
+      "ended_at": null,
+      "id": "aff_85c4dbd085c0033a419a",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_8a30aa77e0d4f6e35eef",
+      "source_url": "https://sice.bupt.edu.cn/info/1055/2048.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eb1283fca6da4c1f7581"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_85c4dbd085c0033a419a",
+      "claim_ids": [
+        "claim_eb1283fca6da4c1f7581"
+      ],
+      "is_primary": true,
+      "normalized_value": "sjzhang@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1055/2048.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sjzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eb1283fca6da4c1f7581"
+    ],
+    "email": [
+      "claim_eb1283fca6da4c1f7581"
+    ],
+    "name": [
+      "claim_eb1283fca6da4c1f7581"
+    ],
+    "profile_url": [
+      "claim_eb1283fca6da4c1f7581"
+    ],
+    "research_directions": [
+      "claim_eb1283fca6da4c1f7581"
+    ],
+    "status": [
+      "claim_eb1283fca6da4c1f7581"
+    ],
+    "title": [
+      "claim_eb1283fca6da4c1f7581"
+    ]
+  },
+  "id": "mentor_8c7240d34a354a22ccae",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eb1283fca6da4c1f7581"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张世杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_85c4dbd085c0033a419a",
+      "claim_ids": [
+        "claim_eb1283fca6da4c1f7581"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1055/2048.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "卫星互联网、网络化空间信息系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1055/2048.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

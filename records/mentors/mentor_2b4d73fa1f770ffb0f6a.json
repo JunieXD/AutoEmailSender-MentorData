@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fbb0aa9481eb1ada9f6e"
+      ],
+      "ended_at": null,
+      "id": "aff_84f4f873b18b75a35a13",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1818.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fbb0aa9481eb1ada9f6e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_84f4f873b18b75a35a13",
+      "claim_ids": [
+        "claim_fbb0aa9481eb1ada9f6e"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiao@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1818.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fbb0aa9481eb1ada9f6e"
+    ],
+    "email": [
+      "claim_fbb0aa9481eb1ada9f6e"
+    ],
+    "name": [
+      "claim_fbb0aa9481eb1ada9f6e"
+    ],
+    "profile_url": [
+      "claim_fbb0aa9481eb1ada9f6e"
+    ],
+    "research_directions": [
+      "claim_fbb0aa9481eb1ada9f6e"
+    ],
+    "status": [
+      "claim_fbb0aa9481eb1ada9f6e"
+    ],
+    "title": [
+      "claim_fbb0aa9481eb1ada9f6e"
+    ]
+  },
+  "id": "mentor_2b4d73fa1f770ffb0f6a",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fbb0aa9481eb1ada9f6e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "乔耀军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_84f4f873b18b75a35a13",
+      "claim_ids": [
+        "claim_fbb0aa9481eb1ada9f6e"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1070/1818.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光纤通信系统与网络、光纤时间频率传输、可见光通信和区块链"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1070/1818.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

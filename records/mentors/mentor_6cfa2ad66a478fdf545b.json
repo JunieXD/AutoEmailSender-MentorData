@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a4f433ef196d397f1126"
+      ],
+      "ended_at": null,
+      "id": "aff_42aa06b9b585483c714e",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://teacher.bupt.edu.cn/yangchuang1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a4f433ef196d397f1126"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42aa06b9b585483c714e",
+      "claim_ids": [
+        "claim_a4f433ef196d397f1126"
+      ],
+      "is_primary": true,
+      "normalized_value": "chuangyang@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangchuang1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chuangyang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a4f433ef196d397f1126"
+    ],
+    "email": [
+      "claim_a4f433ef196d397f1126"
+    ],
+    "name": [
+      "claim_a4f433ef196d397f1126"
+    ],
+    "profile_url": [
+      "claim_a4f433ef196d397f1126"
+    ],
+    "research_directions": [
+      "claim_a4f433ef196d397f1126"
+    ],
+    "status": [
+      "claim_a4f433ef196d397f1126"
+    ],
+    "title": [
+      "claim_a4f433ef196d397f1126"
+    ]
+  },
+  "id": "mentor_6cfa2ad66a478fdf545b",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a4f433ef196d397f1126"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨闯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42aa06b9b585483c714e",
+      "claim_ids": [
+        "claim_a4f433ef196d397f1126"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangchuang1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "太赫兹通信感知一体化、微波太赫兹信道测量、微波太赫兹电磁参数测量"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangchuang1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

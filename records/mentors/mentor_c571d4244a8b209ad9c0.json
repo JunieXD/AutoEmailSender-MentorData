@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b8f5e136463540feb9b3"
+      ],
+      "ended_at": null,
+      "id": "aff_1e08da8677e7941ffb10",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2012.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b8f5e136463540feb9b3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1e08da8677e7941ffb10",
+      "claim_ids": [
+        "claim_b8f5e136463540feb9b3"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangqixun@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2012.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangqixun@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b8f5e136463540feb9b3"
+    ],
+    "email": [
+      "claim_b8f5e136463540feb9b3"
+    ],
+    "name": [
+      "claim_b8f5e136463540feb9b3"
+    ],
+    "profile_url": [
+      "claim_b8f5e136463540feb9b3"
+    ],
+    "research_directions": [
+      "claim_b8f5e136463540feb9b3"
+    ],
+    "status": [
+      "claim_b8f5e136463540feb9b3"
+    ],
+    "title": [
+      "claim_b8f5e136463540feb9b3"
+    ]
+  },
+  "id": "mentor_c571d4244a8b209ad9c0",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b8f5e136463540feb9b3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张奇勋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1e08da8677e7941ffb10",
+      "claim_ids": [
+        "claim_b8f5e136463540feb9b3"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1098/2012.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "6G移动通信、通信感知一体化技术、低空安防技术、具身智能通信前沿技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1098/2012.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

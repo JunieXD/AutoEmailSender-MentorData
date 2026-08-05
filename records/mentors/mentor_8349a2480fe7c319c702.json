@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a127a76d914e24fe2bc8"
+      ],
+      "ended_at": null,
+      "id": "aff_1d1477016f876fc8185a",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_8a30aa77e0d4f6e35eef",
+      "source_url": "https://teacher.bupt.edu.cn/caobin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a127a76d914e24fe2bc8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1d1477016f876fc8185a",
+      "claim_ids": [
+        "claim_a127a76d914e24fe2bc8"
+      ],
+      "is_primary": true,
+      "normalized_value": "caobin@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://teacher.bupt.edu.cn/caobin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "caobin@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a127a76d914e24fe2bc8"
+    ],
+    "email": [
+      "claim_a127a76d914e24fe2bc8"
+    ],
+    "name": [
+      "claim_a127a76d914e24fe2bc8"
+    ],
+    "profile_url": [
+      "claim_a127a76d914e24fe2bc8"
+    ],
+    "research_directions": [
+      "claim_a127a76d914e24fe2bc8"
+    ],
+    "status": [
+      "claim_a127a76d914e24fe2bc8"
+    ],
+    "title": [
+      "claim_a127a76d914e24fe2bc8"
+    ]
+  },
+  "id": "mentor_8349a2480fe7c319c702",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a127a76d914e24fe2bc8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹傧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1d1477016f876fc8185a",
+      "claim_ids": [
+        "claim_a127a76d914e24fe2bc8"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/caobin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新一代网络(B5G/6G)架构与协议、分布式大模型、身份管理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/caobin/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}
