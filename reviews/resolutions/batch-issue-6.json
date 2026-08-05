@@ -1,0 +1,697 @@
+{
+  "created_organization_ids": [
+    "org_auto_05a2c0b7d5e50f319135",
+    "org_auto_18f4153eaa2dde23fe73",
+    "org_auto_3242b465ebb15e072702",
+    "org_auto_53bf9aca83c48d66d303",
+    "org_auto_5854a752440bcd4ec175",
+    "org_auto_7ba694bb97b7962f48d2",
+    "org_auto_82b945c70240fee9ebab",
+    "org_auto_8a30aa77e0d4f6e35eef",
+    "org_auto_92f8ef3da193010d5004",
+    "org_auto_e379621dba894c5f5131"
+  ],
+  "decided_at": "2026-08-05T03:40:52Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0e211a24d87b718b",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "空间信息与数字技术教研中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_1f65babfd69b7f6e",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_6_row_78",
+          "reason": "学院不对"
+        }
+      ]
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_292550e84f3432e7",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息处理教研中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_408afca25c74af03",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息光子学与光通信国家重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8016e43b2b231df2",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "多媒体技术教研中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_873464057cd42574",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "通信网技术教研中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9d49463efe8f3758",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "泛网无线教研中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9fc18bf16831d8fa",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b89b5437b85cbe08",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "通信网中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e4cf19b00047704b",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "北京邮电大学无线新技术研究所(WTI)和移动互联网安全技术国家工程实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_eb5abb1f4b444cdf",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f2a5a20f8b42091c",
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bupt.edu.cn"
+          ],
+          "canonical_name": "北京邮电大学",
+          "level": "university",
+          "official_url": "https://bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sice.bupt.edu.cn"
+          ],
+          "canonical_name": "信息与通信工程学院",
+          "level": "school",
+          "official_url": "https://sice.bupt.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    }
+  ],
+  "id": "organization_review_issue_6",
+  "invalid_rows": [],
+  "issue": {
+    "number": 6,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/6"
+  },
+  "manifest_sha256": "969cda3c9e97b5a99393d27c3bba4f688be00a7263acb10527af4d75c5bd44bf",
+  "mapped_proposal_ids": [
+    "proposal_issue_6_row_1",
+    "proposal_issue_6_row_10",
+    "proposal_issue_6_row_100",
+    "proposal_issue_6_row_101",
+    "proposal_issue_6_row_102",
+    "proposal_issue_6_row_103",
+    "proposal_issue_6_row_104",
+    "proposal_issue_6_row_105",
+    "proposal_issue_6_row_106",
+    "proposal_issue_6_row_107",
+    "proposal_issue_6_row_108",
+    "proposal_issue_6_row_109",
+    "proposal_issue_6_row_11",
+    "proposal_issue_6_row_110",
+    "proposal_issue_6_row_111",
+    "proposal_issue_6_row_112",
+    "proposal_issue_6_row_113",
+    "proposal_issue_6_row_114",
+    "proposal_issue_6_row_115",
+    "proposal_issue_6_row_116",
+    "proposal_issue_6_row_117",
+    "proposal_issue_6_row_118",
+    "proposal_issue_6_row_119",
+    "proposal_issue_6_row_12",
+    "proposal_issue_6_row_120",
+    "proposal_issue_6_row_121",
+    "proposal_issue_6_row_122",
+    "proposal_issue_6_row_123",
+    "proposal_issue_6_row_124",
+    "proposal_issue_6_row_125",
+    "proposal_issue_6_row_126",
+    "proposal_issue_6_row_127",
+    "proposal_issue_6_row_128",
+    "proposal_issue_6_row_129",
+    "proposal_issue_6_row_13",
+    "proposal_issue_6_row_130",
+    "proposal_issue_6_row_131",
+    "proposal_issue_6_row_132",
+    "proposal_issue_6_row_133",
+    "proposal_issue_6_row_134",
+    "proposal_issue_6_row_135",
+    "proposal_issue_6_row_136",
+    "proposal_issue_6_row_137",
+    "proposal_issue_6_row_138",
+    "proposal_issue_6_row_139",
+    "proposal_issue_6_row_14",
+    "proposal_issue_6_row_140",
+    "proposal_issue_6_row_141",
+    "proposal_issue_6_row_142",
+    "proposal_issue_6_row_143",
+    "proposal_issue_6_row_144",
+    "proposal_issue_6_row_145",
+    "proposal_issue_6_row_146",
+    "proposal_issue_6_row_147",
+    "proposal_issue_6_row_148",
+    "proposal_issue_6_row_149",
+    "proposal_issue_6_row_15",
+    "proposal_issue_6_row_16",
+    "proposal_issue_6_row_17",
+    "proposal_issue_6_row_18",
+    "proposal_issue_6_row_19",
+    "proposal_issue_6_row_2",
+    "proposal_issue_6_row_20",
+    "proposal_issue_6_row_21",
+    "proposal_issue_6_row_22",
+    "proposal_issue_6_row_23",
+    "proposal_issue_6_row_24",
+    "proposal_issue_6_row_25",
+    "proposal_issue_6_row_26",
+    "proposal_issue_6_row_27",
+    "proposal_issue_6_row_28",
+    "proposal_issue_6_row_29",
+    "proposal_issue_6_row_3",
+    "proposal_issue_6_row_30",
+    "proposal_issue_6_row_31",
+    "proposal_issue_6_row_32",
+    "proposal_issue_6_row_33",
+    "proposal_issue_6_row_34",
+    "proposal_issue_6_row_35",
+    "proposal_issue_6_row_36",
+    "proposal_issue_6_row_37",
+    "proposal_issue_6_row_38",
+    "proposal_issue_6_row_39",
+    "proposal_issue_6_row_4",
+    "proposal_issue_6_row_40",
+    "proposal_issue_6_row_41",
+    "proposal_issue_6_row_42",
+    "proposal_issue_6_row_43",
+    "proposal_issue_6_row_44",
+    "proposal_issue_6_row_45",
+    "proposal_issue_6_row_46",
+    "proposal_issue_6_row_47",
+    "proposal_issue_6_row_48",
+    "proposal_issue_6_row_49",
+    "proposal_issue_6_row_5",
+    "proposal_issue_6_row_50",
+    "proposal_issue_6_row_51",
+    "proposal_issue_6_row_52",
+    "proposal_issue_6_row_53",
+    "proposal_issue_6_row_54",
+    "proposal_issue_6_row_55",
+    "proposal_issue_6_row_56",
+    "proposal_issue_6_row_57",
+    "proposal_issue_6_row_58",
+    "proposal_issue_6_row_59",
+    "proposal_issue_6_row_6",
+    "proposal_issue_6_row_60",
+    "proposal_issue_6_row_61",
+    "proposal_issue_6_row_62",
+    "proposal_issue_6_row_63",
+    "proposal_issue_6_row_64",
+    "proposal_issue_6_row_65",
+    "proposal_issue_6_row_66",
+    "proposal_issue_6_row_67",
+    "proposal_issue_6_row_68",
+    "proposal_issue_6_row_69",
+    "proposal_issue_6_row_7",
+    "proposal_issue_6_row_70",
+    "proposal_issue_6_row_71",
+    "proposal_issue_6_row_72",
+    "proposal_issue_6_row_73",
+    "proposal_issue_6_row_74",
+    "proposal_issue_6_row_75",
+    "proposal_issue_6_row_76",
+    "proposal_issue_6_row_77",
+    "proposal_issue_6_row_79",
+    "proposal_issue_6_row_8",
+    "proposal_issue_6_row_80",
+    "proposal_issue_6_row_81",
+    "proposal_issue_6_row_82",
+    "proposal_issue_6_row_83",
+    "proposal_issue_6_row_84",
+    "proposal_issue_6_row_85",
+    "proposal_issue_6_row_86",
+    "proposal_issue_6_row_87",
+    "proposal_issue_6_row_88",
+    "proposal_issue_6_row_89",
+    "proposal_issue_6_row_9",
+    "proposal_issue_6_row_90",
+    "proposal_issue_6_row_91",
+    "proposal_issue_6_row_92",
+    "proposal_issue_6_row_93",
+    "proposal_issue_6_row_94",
+    "proposal_issue_6_row_95",
+    "proposal_issue_6_row_96",
+    "proposal_issue_6_row_97",
+    "proposal_issue_6_row_98",
+    "proposal_issue_6_row_99"
+  ],
+  "pull_request_number": 7,
+  "rejected_proposal_ids": [
+    "proposal_issue_6_row_78"
+  ],
+  "review_comment_id": 5187262970,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

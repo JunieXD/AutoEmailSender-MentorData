@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1dd3abb617e7c76b78ca"
+      ],
+      "ended_at": null,
+      "id": "aff_01718e059934f18b1139",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1056/2655.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1dd3abb617e7c76b78ca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_01718e059934f18b1139",
+      "claim_ids": [
+        "claim_1dd3abb617e7c76b78ca"
+      ],
+      "is_primary": true,
+      "normalized_value": "fengxianguo@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1056/2655.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fengxianguo@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1dd3abb617e7c76b78ca"
+    ],
+    "email": [
+      "claim_1dd3abb617e7c76b78ca"
+    ],
+    "name": [
+      "claim_1dd3abb617e7c76b78ca"
+    ],
+    "profile_url": [
+      "claim_1dd3abb617e7c76b78ca"
+    ],
+    "research_directions": [
+      "claim_1dd3abb617e7c76b78ca"
+    ],
+    "status": [
+      "claim_1dd3abb617e7c76b78ca"
+    ],
+    "title": [
+      "claim_1dd3abb617e7c76b78ca"
+    ]
+  },
+  "id": "mentor_92f5ec148b62471a4358",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1dd3abb617e7c76b78ca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭凤仙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_01718e059934f18b1139",
+      "claim_ids": [
+        "claim_1dd3abb617e7c76b78ca"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1056/2655.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动通信和先进计算,包括无线算力网络、云边协同、AI-RAN、AI赋能技术等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1056/2655.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_541f073d5bc8ff4235d4"
+      ],
+      "ended_at": null,
+      "id": "aff_81b24af4f6e6467f90c3",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1811.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_541f073d5bc8ff4235d4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_81b24af4f6e6467f90c3",
+      "claim_ids": [
+        "claim_541f073d5bc8ff4235d4"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujiang@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1811.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liujiang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_541f073d5bc8ff4235d4"
+    ],
+    "email": [
+      "claim_541f073d5bc8ff4235d4"
+    ],
+    "name": [
+      "claim_541f073d5bc8ff4235d4"
+    ],
+    "profile_url": [
+      "claim_541f073d5bc8ff4235d4"
+    ],
+    "research_directions": [
+      "claim_541f073d5bc8ff4235d4"
+    ],
+    "status": [
+      "claim_541f073d5bc8ff4235d4"
+    ],
+    "title": [
+      "claim_541f073d5bc8ff4235d4"
+    ]
+  },
+  "id": "mentor_24432fa2dcdc9f36b630",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_541f073d5bc8ff4235d4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘江"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_81b24af4f6e6467f90c3",
+      "claim_ids": [
+        "claim_541f073d5bc8ff4235d4"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1070/1811.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "未来网络体系架构、网络虚拟化、软件定义网络(SDN)、信息中心网络(ICN)、网络试验环境构建、卫星互联网等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1070/1811.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1d51b5061384de85f592"
+      ],
+      "ended_at": null,
+      "id": "aff_dea0070dac78207374cd",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1071/1830.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1d51b5061384de85f592"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dea0070dac78207374cd",
+      "claim_ids": [
+        "claim_1d51b5061384de85f592"
+      ],
+      "is_primary": true,
+      "normalized_value": "lili66@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1071/1830.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lili66@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1d51b5061384de85f592"
+    ],
+    "email": [
+      "claim_1d51b5061384de85f592"
+    ],
+    "name": [
+      "claim_1d51b5061384de85f592"
+    ],
+    "profile_url": [
+      "claim_1d51b5061384de85f592"
+    ],
+    "research_directions": [
+      "claim_1d51b5061384de85f592"
+    ],
+    "status": [
+      "claim_1d51b5061384de85f592"
+    ],
+    "title": [
+      "claim_1d51b5061384de85f592"
+    ]
+  },
+  "id": "mentor_62add24491c466980d50",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1d51b5061384de85f592"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李莉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dea0070dac78207374cd",
+      "claim_ids": [
+        "claim_1d51b5061384de85f592"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1071/1830.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "未来网络理论与技术、物联网、软件定义网络等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1071/1830.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

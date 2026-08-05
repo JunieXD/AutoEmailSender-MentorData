@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_74956090ffc2905c41c4"
+      ],
+      "ended_at": null,
+      "id": "aff_c16d3f97ad4901df23d7",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_3242b465ebb15e072702",
+      "source_url": "https://teacher.bupt.edu.cn/wusheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_74956090ffc2905c41c4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c16d3f97ad4901df23d7",
+      "claim_ids": [
+        "claim_74956090ffc2905c41c4"
+      ],
+      "is_primary": true,
+      "normalized_value": "thuraya@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://teacher.bupt.edu.cn/wusheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "thuraya@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_74956090ffc2905c41c4"
+    ],
+    "email": [
+      "claim_74956090ffc2905c41c4"
+    ],
+    "name": [
+      "claim_74956090ffc2905c41c4"
+    ],
+    "profile_url": [
+      "claim_74956090ffc2905c41c4"
+    ],
+    "status": [
+      "claim_74956090ffc2905c41c4"
+    ],
+    "title": [
+      "claim_74956090ffc2905c41c4"
+    ]
+  },
+  "id": "mentor_9e6e2cadfd6286b7a7b6",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_74956090ffc2905c41c4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴胜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c16d3f97ad4901df23d7",
+      "claim_ids": [
+        "claim_74956090ffc2905c41c4"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wusheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wusheng/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6d23caee553320c55e00"
+      ],
+      "ended_at": null,
+      "id": "aff_09f4f3d6bb139fdd8fe5",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1825.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6d23caee553320c55e00"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_09f4f3d6bb139fdd8fe5",
+      "claim_ids": [
+        "claim_6d23caee553320c55e00"
+      ],
+      "is_primary": true,
+      "normalized_value": "lixi@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1825.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lixi@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6d23caee553320c55e00"
+    ],
+    "email": [
+      "claim_6d23caee553320c55e00"
+    ],
+    "name": [
+      "claim_6d23caee553320c55e00"
+    ],
+    "profile_url": [
+      "claim_6d23caee553320c55e00"
+    ],
+    "research_directions": [
+      "claim_6d23caee553320c55e00"
+    ],
+    "status": [
+      "claim_6d23caee553320c55e00"
+    ],
+    "title": [
+      "claim_6d23caee553320c55e00"
+    ]
+  },
+  "id": "mentor_1ea464abbac0fc613067",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6d23caee553320c55e00"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李曦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_09f4f3d6bb139fdd8fe5",
+      "claim_ids": [
+        "claim_6d23caee553320c55e00"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1070/1825.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "未来移动通信与网络智能化、异构网络、移动互联网、车联网、认知网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1070/1825.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5f3bd51228dbaedae251"
+      ],
+      "ended_at": null,
+      "id": "aff_c1724f62d90124b92047",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://teacher.bupt.edu.cn/zhangjiaxin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5f3bd51228dbaedae251"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c1724f62d90124b92047",
+      "claim_ids": [
+        "claim_5f3bd51228dbaedae251"
+      ],
+      "is_primary": true,
+      "normalized_value": "jxz@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhangjiaxin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jxz@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5f3bd51228dbaedae251"
+    ],
+    "email": [
+      "claim_5f3bd51228dbaedae251"
+    ],
+    "name": [
+      "claim_5f3bd51228dbaedae251"
+    ],
+    "profile_url": [
+      "claim_5f3bd51228dbaedae251"
+    ],
+    "research_directions": [
+      "claim_5f3bd51228dbaedae251"
+    ],
+    "status": [
+      "claim_5f3bd51228dbaedae251"
+    ],
+    "title": [
+      "claim_5f3bd51228dbaedae251"
+    ]
+  },
+  "id": "mentor_0541eb1972ff59d3e510",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5f3bd51228dbaedae251"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张佳鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c1724f62d90124b92047",
+      "claim_ids": [
+        "claim_5f3bd51228dbaedae251"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhangjiaxin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "卫星地面融合网络、算力网络与智慧社区"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhangjiaxin/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_805c03c6c6324aa400bb"
+      ],
+      "ended_at": null,
+      "id": "aff_9f15c772cb0fb328da5f",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2007.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_805c03c6c6324aa400bb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9f15c772cb0fb328da5f",
+      "claim_ids": [
+        "claim_805c03c6c6324aa400bb"
+      ],
+      "is_primary": true,
+      "normalized_value": "manan@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1098/2007.htm",
+      "status": "current",
+      "type": "email",
+      "value": "manan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_805c03c6c6324aa400bb"
+    ],
+    "email": [
+      "claim_805c03c6c6324aa400bb"
+    ],
+    "name": [
+      "claim_805c03c6c6324aa400bb"
+    ],
+    "profile_url": [
+      "claim_805c03c6c6324aa400bb"
+    ],
+    "research_directions": [
+      "claim_805c03c6c6324aa400bb"
+    ],
+    "status": [
+      "claim_805c03c6c6324aa400bb"
+    ],
+    "title": [
+      "claim_805c03c6c6324aa400bb"
+    ]
+  },
+  "id": "mentor_7dd41df42a2dec1130b2",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_805c03c6c6324aa400bb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9f15c772cb0fb328da5f",
+      "claim_ids": [
+        "claim_805c03c6c6324aa400bb"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1098/2007.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动通信理论与测试技术,包括5G/6G关键技术、无线信道建模与空口测试理论、语义通信等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1098/2007.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

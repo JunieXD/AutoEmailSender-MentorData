@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_36293d7c800e32c775c9"
+      ],
+      "ended_at": null,
+      "id": "aff_2a9e953adb9266ee538c",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1103/2030.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_36293d7c800e32c775c9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a9e953adb9266ee538c",
+      "claim_ids": [
+        "claim_36293d7c800e32c775c9"
+      ],
+      "is_primary": true,
+      "normalized_value": "dxcnet@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1103/2030.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dxcnet@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_36293d7c800e32c775c9"
+    ],
+    "email": [
+      "claim_36293d7c800e32c775c9"
+    ],
+    "name": [
+      "claim_36293d7c800e32c775c9"
+    ],
+    "profile_url": [
+      "claim_36293d7c800e32c775c9"
+    ],
+    "research_directions": [
+      "claim_36293d7c800e32c775c9"
+    ],
+    "status": [
+      "claim_36293d7c800e32c775c9"
+    ],
+    "title": [
+      "claim_36293d7c800e32c775c9"
+    ]
+  },
+  "id": "mentor_3dd373796cb2e7702e88",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_36293d7c800e32c775c9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜秀川"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a9e953adb9266ee538c",
+      "claim_ids": [
+        "claim_36293d7c800e32c775c9"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1103/2030.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线传感器网络、嵌入式系统、网络应用开发和计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1103/2030.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

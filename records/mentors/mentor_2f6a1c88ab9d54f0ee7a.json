@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eb7f7896a35b71b2d05a"
+      ],
+      "ended_at": null,
+      "id": "aff_f5e574664959d57516a4",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1809.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eb7f7896a35b71b2d05a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f5e574664959d57516a4",
+      "claim_ids": [
+        "claim_eb7f7896a35b71b2d05a"
+      ],
+      "is_primary": true,
+      "normalized_value": "lisf@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1070/1809.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lisf@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eb7f7896a35b71b2d05a"
+    ],
+    "email": [
+      "claim_eb7f7896a35b71b2d05a"
+    ],
+    "name": [
+      "claim_eb7f7896a35b71b2d05a"
+    ],
+    "profile_url": [
+      "claim_eb7f7896a35b71b2d05a"
+    ],
+    "research_directions": [
+      "claim_eb7f7896a35b71b2d05a"
+    ],
+    "status": [
+      "claim_eb7f7896a35b71b2d05a"
+    ],
+    "title": [
+      "claim_eb7f7896a35b71b2d05a"
+    ]
+  },
+  "id": "mentor_2f6a1c88ab9d54f0ee7a",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eb7f7896a35b71b2d05a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李书芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f5e574664959d57516a4",
+      "claim_ids": [
+        "claim_eb7f7896a35b71b2d05a"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1070/1809.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新一代移动通信关键技术与测试验证,多网融合关键技术,数据分析技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1070/1809.htm",
+  "title": "教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

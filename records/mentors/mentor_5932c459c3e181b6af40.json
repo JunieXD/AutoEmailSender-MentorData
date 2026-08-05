@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0849b74cac4cf1d4a38f"
+      ],
+      "ended_at": null,
+      "id": "aff_0f5d973a7f33eaa2dede",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://sice.bupt.edu.cn/info/1072/2088.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_0849b74cac4cf1d4a38f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0f5d973a7f33eaa2dede",
+      "claim_ids": [
+        "claim_0849b74cac4cf1d4a38f"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunyong@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://sice.bupt.edu.cn/info/1072/2088.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sunyong@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0849b74cac4cf1d4a38f"
+    ],
+    "email": [
+      "claim_0849b74cac4cf1d4a38f"
+    ],
+    "name": [
+      "claim_0849b74cac4cf1d4a38f"
+    ],
+    "profile_url": [
+      "claim_0849b74cac4cf1d4a38f"
+    ],
+    "research_directions": [
+      "claim_0849b74cac4cf1d4a38f"
+    ],
+    "status": [
+      "claim_0849b74cac4cf1d4a38f"
+    ],
+    "title": [
+      "claim_0849b74cac4cf1d4a38f"
+    ]
+  },
+  "id": "mentor_5932c459c3e181b6af40",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0849b74cac4cf1d4a38f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0f5d973a7f33eaa2dede",
+      "claim_ids": [
+        "claim_0849b74cac4cf1d4a38f"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://sice.bupt.edu.cn/info/1072/2088.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "下一代网络传输与控制、边缘计算、网络大数据分析技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://sice.bupt.edu.cn/info/1072/2088.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-05T03:31:23Z"
+}

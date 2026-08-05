@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8f32c8bd666ecf7ec0a"
+      ],
+      "ended_at": null,
+      "id": "aff_ec0465936f81db6cafc9",
+      "is_primary": true,
+      "observed_at": "2026-08-05T03:31:23Z",
+      "organization_id": "org_auto_e379621dba894c5f5131",
+      "source_url": "https://teacher.bupt.edu.cn/huanghai",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f8f32c8bd666ecf7ec0a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec0465936f81db6cafc9",
+      "claim_ids": [
+        "claim_f8f32c8bd666ecf7ec0a"
+      ],
+      "is_primary": true,
+      "normalized_value": "huanghai@bupt.edu.cn",
+      "observed_at": "2026-08-05T03:31:23Z",
+      "source_url": "https://teacher.bupt.edu.cn/huanghai",
+      "status": "current",
+      "type": "email",
+      "value": "huanghai@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-05T03:31:23Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8f32c8bd666ecf7ec0a"
+    ],
+    "email": [
+      "claim_f8f32c8bd666ecf7ec0a"
+    ],
+    "name": [
+      "claim_f8f32c8bd666ecf7ec0a"
+    ],
+    "profile_url": [
+      "claim_f8f32c8bd666ecf7ec0a"
+    ],
+    "research_directions": [
+      "claim_f8f32c8bd666ecf7ec0a"
+    ],
+    "status": [
+      "claim_f8f32c8bd666ecf7ec0a"
+    ],
+    "title": [
+      "claim_f8f32c8bd666ecf7ec0a"
+    ]
+  },
+  "id": "mentor_26464d829008aa019c53",
+  "last_verified_at": "2026-08-05T03:31:23Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8f32c8bd666ecf7ec0a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ec0465936f81db6cafc9",
+      "claim_ids": [
+        "claim_f8f32c8bd666ecf7ec0a"
+      ],
+      "observed_at": "2026-08-05T03:31:23Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/huanghai"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "虚拟现实、增强现实、计算机视觉、数字孪生"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-05T03:31:23Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/huanghai",
+  "title": "副教授",
+  "updated_at": "2026-08-05T03:31:23Z"
+}
