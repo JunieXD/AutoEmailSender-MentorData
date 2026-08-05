@@ -81,6 +81,7 @@ const nodes = {
   groupCount: document.querySelector("#review-group-count"),
   rowCount: document.querySelector("#review-row-count"),
   invalidCount: document.querySelector("#review-invalid-count"),
+  identityCount: document.querySelector("#review-identity-count"),
   invalidPanel: document.querySelector("#invalid-rows-panel"),
   invalidRows: document.querySelector("#invalid-rows"),
   organizationsSection: document.querySelector("#organizations-section"),
@@ -1173,6 +1174,171 @@ function createMentorProfileButton(row) {
   return button;
 }
 
+function organizationPathForId(organizationId) {
+  const organization = state.organizationById.get(organizationId);
+  return organization?.lineage_names?.join(" / ") || organizationId;
+}
+
+function groupTargetId(group) {
+  const drafts = LEVELS.map((level) =>
+    state.organizationDraftByKey.get(group.draftKeys?.[level]),
+  ).filter(Boolean);
+  return [...drafts].reverse().find((draft) => !draft.forcedSkip && draft.targetId)?.targetId || null;
+}
+
+function effectiveRowTargetId(card, editor) {
+  if (editor.action.value === "reject") {
+    return null;
+  }
+  if (editor.action.value === "map_existing") {
+    return parseOrganizationInput(editor.organizationInput);
+  }
+  if (card.groupAction.value === "reject") {
+    return null;
+  }
+  return groupTargetId(card.group);
+}
+
+function isCurrentIdentityOrganization(editor, organizationId) {
+  return Boolean(
+    editor &&
+      organizationId &&
+      editor.row.identity?.mentor?.affiliations?.some(
+        (affiliation) => affiliation.organization_id === organizationId,
+      ),
+  );
+}
+
+function identityAffiliationLabel(affiliation) {
+  const primary = affiliation.is_primary ? " · 主任职" : " · 兼任";
+  const title = affiliation.title ? ` · ${affiliation.title}` : "";
+  return `${organizationPathForId(affiliation.organization_id)}${primary}${title}`;
+}
+
+function updateIdentityResolutionState(editor) {
+  if (!editor.identityPanel) {
+    return;
+  }
+  const targetId = effectiveRowTargetId(editor.card, editor);
+  const rejected =
+    editor.action.value === "reject" ||
+    (editor.action.value !== "map_existing" && editor.card.groupAction.value === "reject");
+  const alreadyCurrent = isCurrentIdentityOrganization(editor, targetId);
+  const action = editor.identityAction.value;
+  editor.identityTargetId = targetId;
+  editor.identityActionField.hidden = rejected || alreadyCurrent;
+  editor.identityReasonField.hidden = rejected || alreadyCurrent;
+  editor.identityPrimaryOption.hidden =
+    rejected || alreadyCurrent || action !== "append_current_affiliation";
+  editor.identityFormerField.hidden =
+    rejected || alreadyCurrent || action !== "transfer_current_affiliation";
+
+  if (rejected) {
+    editor.identityStatus.textContent = "此导师将被拒绝，不会修改已有导师记录。";
+    editor.identityPanel.dataset.state = "rejected";
+  } else if (!targetId) {
+    editor.identityStatus.textContent = "先确认本行最终归属的机构，再选择双聘或调动。";
+    editor.identityPanel.dataset.state = "pending";
+  } else if (alreadyCurrent) {
+    editor.identityStatus.textContent = "审核后的机构已经是该导师的当前任职；这是机构归属纠正，无需新增任职。";
+    editor.identityPanel.dataset.state = "matched";
+  } else {
+    editor.identityStatus.textContent = `将归入「${organizationPathForId(targetId)}」。请明确确认是双聘还是调动。`;
+    editor.identityPanel.dataset.state = "required";
+  }
+}
+
+function createIdentityResolutionPanel(row) {
+  const panel = element("section", "identity-resolution");
+  panel.setAttribute("aria-label", `${row.name}的导师身份与任职判定`);
+  const heading = element("div", "identity-resolution-heading");
+  const headingCopy = element("div");
+  headingCopy.append(
+    element("span", "identity-kicker", "需要身份判定"),
+    element("strong", null, "疑似同一导师，学院不一致"),
+  );
+  const status = element("p", "identity-resolution-status");
+  heading.append(headingCopy, status);
+
+  const comparison = element("div", "identity-comparison");
+  const incoming = element("div", "identity-column incoming-identity");
+  incoming.append(
+    element("span", "identity-column-label", "本次投稿"),
+    element("strong", null, `${row.name} · ${row.email}`),
+    element("span", null, "学院归属以本组上方的机构决定为准"),
+  );
+  const existing = element("div", "identity-column existing-identity");
+  existing.append(
+    element("span", "identity-column-label", "已有导师实体"),
+    element("strong", null, `${row.identity.mentor.name} · ${row.identity.mentor.email}`),
+  );
+  const affiliations = element("ul", "identity-affiliations");
+  for (const affiliation of row.identity.mentor.affiliations) {
+    const item = element("li");
+    const source = element("a", "identity-affiliation-source", "证据 ↗");
+    source.href = affiliation.source_url;
+    source.target = "_blank";
+    source.rel = "noopener noreferrer";
+    item.append(element("span", null, identityAffiliationLabel(affiliation)), source);
+    affiliations.append(item);
+  }
+  existing.append(affiliations);
+  comparison.append(incoming, existing);
+
+  const controls = element("div", "identity-resolution-controls");
+  const action = createSelect(
+    [
+      ["", "请选择任职处理"],
+      ["append_current_affiliation", "同一导师 · 新增双聘任职"],
+      ["transfer_current_affiliation", "同一导师 · 已调动到新学院"],
+    ],
+    "identity-action",
+    `${row.name}的任职处理方式`,
+  );
+  const actionField = labeledControl("任职处理", action, "请选择后才会写入已有导师实体。");
+  const makePrimary = document.createElement("input");
+  makePrimary.type = "checkbox";
+  makePrimary.setAttribute("aria-label", `将${row.name}的新任职设为主任职`);
+  const primaryOption = element("label", "identity-primary-option");
+  primaryOption.append(makePrimary, element("span", null, "将新任职设为主任职"));
+
+  const formerOptions = [
+    ["", "选择要结束的现有任职"],
+    ...row.identity.mentor.affiliations.map((affiliation) => [
+      affiliation.id,
+      identityAffiliationLabel(affiliation),
+    ]),
+  ];
+  const formerAffiliation = createSelect(
+    formerOptions,
+    "former-affiliation",
+    `${row.name}调动前要结束的任职`,
+  );
+  const formerField = labeledControl(
+    "结束哪条现任职",
+    formerAffiliation,
+    "调动会把该任职标记为历史任职，并将新学院设为主任职。",
+  );
+  const reason = createInput("text", "例如：官网显示同时受聘于两个学院", "identity-reason");
+  reason.setAttribute("aria-label", `${row.name}任职判定的审核依据`);
+  reason.maxLength = 500;
+  const reasonField = labeledControl("审核依据（必填）", reason);
+  controls.append(actionField, primaryOption, formerField, reasonField);
+  panel.append(heading, comparison, controls);
+  return {
+    panel,
+    status,
+    action,
+    actionField,
+    makePrimary,
+    primaryOption,
+    formerAffiliation,
+    formerField,
+    reason,
+    reasonField,
+  };
+}
+
 function restoreRowEditorValue(editor) {
   const value = state.restoredRowValues.get(editor.row.proposal_id);
   if (!value || typeof value !== "object") {
@@ -1187,11 +1353,21 @@ function restoreRowEditorValue(editor) {
   ) {
     editor.restoreTargetId = null;
   }
+  if (editor.identityPanel) {
+    editor.identityAction.value = storedText(value.identity_action, 50);
+    editor.identityMakePrimary.checked = Boolean(value.identity_make_primary);
+    editor.identityFormerAffiliation.value = storedText(value.identity_former_affiliation_id, 80);
+    editor.identityReason.value = storedText(value.identity_reason, 500);
+  }
   editor.organizationInput.hidden = editor.action.value !== "map_existing";
   editor.reason.hidden = editor.action.value !== "reject";
 }
 
-function createRowEditor(row) {
+function createRowEditor(row, card) {
+  const existingEditor = state.rowEditorByProposalId.get(row.proposal_id);
+  if (existingEditor) {
+    return existingEditor;
+  }
   const wrapper = element("div", "row-editor");
   const identity = element("div", "row-identity");
   const nameLine = element("div", "row-name-line");
@@ -1216,25 +1392,59 @@ function createRowEditor(row) {
   reason.maxLength = 500;
   organizationInput.hidden = true;
   reason.hidden = true;
-  action.addEventListener("change", () => {
-    organizationInput.hidden = action.value !== "map_existing";
-    reason.hidden = action.value !== "reject";
-    scheduleReviewUpdate();
-  });
-  organizationInput.addEventListener("change", scheduleReviewUpdate);
-  reason.addEventListener("input", scheduleReviewUpdate);
-  wrapper.append(identity, action, organizationInput, reason);
   const editor = {
     row,
+    card,
     wrapper,
     action,
     organizationInput,
     reason,
     restoreTargetId: null,
+    identityPanel: null,
   };
+  if (row.identity?.requires_resolution === true) {
+    const identityResolution = createIdentityResolutionPanel(row);
+    wrapper.classList.add("has-identity-resolution");
+    editor.identityPanel = identityResolution.panel;
+    editor.identityStatus = identityResolution.status;
+    editor.identityAction = identityResolution.action;
+    editor.identityActionField = identityResolution.actionField;
+    editor.identityMakePrimary = identityResolution.makePrimary;
+    editor.identityPrimaryOption = identityResolution.primaryOption;
+    editor.identityFormerAffiliation = identityResolution.formerAffiliation;
+    editor.identityFormerField = identityResolution.formerField;
+    editor.identityReason = identityResolution.reason;
+    editor.identityReasonField = identityResolution.reasonField;
+    editor.identityTargetId = null;
+  }
+  action.addEventListener("change", () => {
+    organizationInput.hidden = action.value !== "map_existing";
+    reason.hidden = action.value !== "reject";
+    updateIdentityResolutionState(editor);
+    scheduleReviewUpdate();
+  });
+  organizationInput.addEventListener("change", () => {
+    updateIdentityResolutionState(editor);
+    scheduleReviewUpdate();
+  });
+  reason.addEventListener("input", scheduleReviewUpdate);
+  if (editor.identityPanel) {
+    editor.identityAction.addEventListener("change", () => {
+      updateIdentityResolutionState(editor);
+      scheduleReviewUpdate();
+    });
+    editor.identityMakePrimary.addEventListener("change", scheduleReviewUpdate);
+    editor.identityFormerAffiliation.addEventListener("change", scheduleReviewUpdate);
+    editor.identityReason.addEventListener("input", scheduleReviewUpdate);
+  }
+  wrapper.append(identity, action, organizationInput, reason);
+  if (editor.identityPanel) {
+    wrapper.append(editor.identityPanel);
+  }
   state.rowEditors.push(editor);
   state.rowEditorByProposalId.set(row.proposal_id, editor);
   restoreRowEditorValue(editor);
+  updateIdentityResolutionState(editor);
   return editor;
 }
 
@@ -1273,6 +1483,10 @@ function createGroupCard(group, index) {
     element("span", "badge", `${group.rows.length} 位导师`),
     element("span", "badge neutral-badge", `${group.source_domains.length} 个域名`),
   );
+  const identityRows = group.rows.filter((row) => row.identity?.requires_resolution === true);
+  if (identityRows.length) {
+    badges.append(element("span", "badge identity-badge", `${identityRows.length} 条任职待判定`));
+  }
   header.append(titleArea, badges);
 
   const sources = sourceLinks(group);
@@ -1292,13 +1506,13 @@ function createGroupCard(group, index) {
   groupControls.append(groupAction, groupReason);
   const assignment = element("p", "group-assignment", "机构尚未确认");
 
+  const ordinaryRows = group.rows.filter((row) => row.identity?.requires_resolution !== true);
   const rowsDetails = element("details", "rows-details");
-  const rowsSummary = element("summary", null, `拆分或拒绝个别导师（${group.rows.length} 位）`);
+  const rowsSummary = element("summary", null, `拆分或拒绝其他导师（${ordinaryRows.length} 位）`);
   const rowsContainer = element("div", "rows-container");
   const loadMoreRows = element("button", "text-button rows-load-more", "继续加载导师");
   loadMoreRows.type = "button";
   rowsDetails.append(rowsSummary, rowsContainer);
-  article.append(header, sources, assignment, groupControls, rowsDetails);
 
   const card = {
     group,
@@ -1309,18 +1523,34 @@ function createGroupCard(group, index) {
     rowEditors: [],
     renderedRowCount: 0,
   };
+  if (identityRows.length) {
+    const identitySection = element("section", "identity-conflicts");
+    const heading = element("div", "identity-conflicts-heading");
+    heading.append(
+      element("strong", null, "优先确认：同邮箱导师的任职关系"),
+      element("span", null, "每一条都需要选择双聘、调动或拒绝。"),
+    );
+    const container = element("div", "identity-conflicts-list");
+    for (const row of identityRows) {
+      const editor = createRowEditor(row, card);
+      card.rowEditors.push(editor);
+      container.append(editor.wrapper);
+    }
+    identitySection.append(heading, container);
+    card.identitySection = identitySection;
+  }
   card.loadMoreRows = () => {
-    const end = Math.min(card.renderedRowCount + 100, group.rows.length);
+    const end = Math.min(card.renderedRowCount + 100, ordinaryRows.length);
     const fragment = document.createDocumentFragment();
-    for (const row of group.rows.slice(card.renderedRowCount, end)) {
-      const editor = createRowEditor(row);
+    for (const row of ordinaryRows.slice(card.renderedRowCount, end)) {
+      const editor = createRowEditor(row, card);
       card.rowEditors.push(editor);
       fragment.append(editor.wrapper);
     }
     card.renderedRowCount = end;
     rowsContainer.append(fragment);
-    loadMoreRows.textContent = `继续加载（剩余 ${group.rows.length - end} 位）`;
-    loadMoreRows.hidden = end >= group.rows.length;
+    loadMoreRows.textContent = `继续加载（剩余 ${ordinaryRows.length - end} 位）`;
+    loadMoreRows.hidden = end >= ordinaryRows.length;
     if (!loadMoreRows.hidden) {
       rowsContainer.append(loadMoreRows);
     }
@@ -1333,6 +1563,13 @@ function createGroupCard(group, index) {
   loadMoreRows.addEventListener("click", card.loadMoreRows);
   groupAction.addEventListener("change", scheduleReviewUpdate);
   groupReason.addEventListener("input", scheduleReviewUpdate);
+  article.append(header, sources, assignment, groupControls);
+  if (card.identitySection) {
+    article.append(card.identitySection);
+  }
+  if (ordinaryRows.length) {
+    article.append(rowsDetails);
+  }
   updateGroupCard(card);
   return card;
 }
@@ -1657,6 +1894,9 @@ async function updateOrganizationDrafts() {
   for (const card of state.cards) {
     updateGroupCard(card);
   }
+  for (const editor of state.rowEditors) {
+    updateIdentityResolutionState(editor);
+  }
   updateOrganizationProgress();
   if (state.autosaveDirty) {
     state.autosaveDirty = false;
@@ -1736,7 +1976,21 @@ function serializeReviewDraft() {
       organization_id: parseOrganizationInput(editor.organizationInput),
       reason: editor.reason.value,
     };
-    if (value.action === "follow" && !value.organization_id && !value.reason) {
+    if (editor.identityPanel) {
+      value.identity_action = editor.identityAction.value;
+      value.identity_make_primary = editor.identityMakePrimary.checked;
+      value.identity_former_affiliation_id = editor.identityFormerAffiliation.value || null;
+      value.identity_reason = editor.identityReason.value;
+    }
+    if (
+      value.action === "follow" &&
+      !value.organization_id &&
+      !value.reason &&
+      !value.identity_action &&
+      !value.identity_make_primary &&
+      !value.identity_former_affiliation_id &&
+      !value.identity_reason
+    ) {
       delete rows[editor.row.proposal_id];
     } else {
       rows[editor.row.proposal_id] = value;
@@ -1848,8 +2102,21 @@ function restoreReviewDraft() {
         action: storedText(value.action, 30) || "follow",
         organization_id: storedText(value.organization_id, 80) || null,
         reason: storedText(value.reason, 500),
+        identity_action: storedText(value.identity_action, 50),
+        identity_make_primary: Boolean(value.identity_make_primary),
+        identity_former_affiliation_id:
+          storedText(value.identity_former_affiliation_id, 80) || null,
+        identity_reason: storedText(value.identity_reason, 500),
       };
-      if (restored.action !== "follow" || restored.organization_id || restored.reason) {
+      if (
+        restored.action !== "follow" ||
+        restored.organization_id ||
+        restored.reason ||
+        restored.identity_action ||
+        restored.identity_make_primary ||
+        restored.identity_former_affiliation_id ||
+        restored.identity_reason
+      ) {
         state.restoredRowValues.set(row.proposal_id, restored);
       }
     }
@@ -2086,6 +2353,59 @@ function collectRowOverrides(card) {
   return overrides;
 }
 
+function collectIdentityResolutions(card) {
+  const resolutions = [];
+  for (const row of card.group.rows) {
+    if (row.identity?.requires_resolution !== true) {
+      continue;
+    }
+    const editor = state.rowEditorByProposalId.get(row.proposal_id);
+    const restored = state.restoredRowValues.get(row.proposal_id);
+    const action = editor?.action.value || restored?.action || "follow";
+    const targetId = editor ? effectiveRowTargetId(card, editor) : null;
+    if (action === "reject" || targetId === null || isCurrentIdentityOrganization(editor, targetId)) {
+      continue;
+    }
+    const resolutionAction = editor?.identityAction.value || restored?.identity_action || "";
+    const reason = (editor?.identityReason.value || restored?.identity_reason || "").trim();
+    if (!resolutionAction) {
+      throw new Error(
+        `${row.name}疑似同一导师但学院不一致；请选择新增双聘、已调动到新学院或拒绝该导师`,
+      );
+    }
+    if (!reason) {
+      throw new Error(`${row.name}的任职判定需要填写审核依据`);
+    }
+    if (resolutionAction === "append_current_affiliation") {
+      resolutions.push({
+        proposal_id: row.proposal_id,
+        action: resolutionAction,
+        make_primary: Boolean(editor?.identityMakePrimary.checked || restored?.identity_make_primary),
+        former_affiliation_id: null,
+        reason,
+      });
+      continue;
+    }
+    if (resolutionAction !== "transfer_current_affiliation") {
+      throw new Error(`${row.name}的任职处理方式无效`);
+    }
+    const formerAffiliationId = editor
+      ? editor.identityFormerAffiliation.value
+      : restored?.identity_former_affiliation_id;
+    if (!formerAffiliationId) {
+      throw new Error(`${row.name}调动时需要选择要结束的现有任职`);
+    }
+    resolutions.push({
+      proposal_id: row.proposal_id,
+      action: resolutionAction,
+      make_primary: true,
+      former_affiliation_id: formerAffiliationId,
+      reason,
+    });
+  }
+  return resolutions;
+}
+
 async function collectDecision() {
   await updateOrganizationDrafts();
   const pending = pendingOrganizationDrafts();
@@ -2096,6 +2416,7 @@ async function collectDecision() {
   const decisions = [];
   for (const card of state.cards) {
     const rowOverrides = collectRowOverrides(card);
+    const identityResolutions = collectIdentityResolutions(card);
     if (card.groupAction.value === "reject") {
       const reason = card.groupReason.value.trim();
       if (!reason) {
@@ -2107,6 +2428,7 @@ async function collectDecision() {
         reason,
         levels: [],
         row_overrides: rowOverrides,
+        identity_resolutions: identityResolutions,
       });
       continue;
     }
@@ -2116,6 +2438,7 @@ async function collectDecision() {
       reason: null,
       levels: (await collectLevels(card.group)).levels,
       row_overrides: rowOverrides,
+      identity_resolutions: identityResolutions,
     });
   }
   return {
@@ -2143,6 +2466,8 @@ function renderDecisionPreview(decision) {
   let mappedRows = 0;
   let rejectedRows = 0;
   let adjustedRows = 0;
+  let dualAppointments = 0;
+  let transfers = 0;
   const decisionByGroup = new Map(decision.decisions.map((item) => [item.group_id, item]));
   for (const card of state.cards) {
     const groupDecision = decisionByGroup.get(card.group.id);
@@ -2160,11 +2485,20 @@ function renderDecisionPreview(decision) {
         }
       }
     }
+    for (const resolution of groupDecision.identity_resolutions || []) {
+      if (resolution.action === "append_current_affiliation") {
+        dualAppointments += 1;
+      } else if (resolution.action === "transfer_current_affiliation") {
+        transfers += 1;
+      }
+    }
   }
   const metrics = [
     ["新建机构", createdIds.size],
     ["导入导师", mappedRows],
     ["改派导师", adjustedRows],
+    ["新增双聘", dualAppointments],
+    ["任职调动", transfers],
     ["拒绝导师", rejectedRows],
   ];
   nodes.decisionPreview.replaceChildren();
@@ -2235,6 +2569,39 @@ function validateManifest(manifest, issueNumber) {
     !Array.isArray(manifest.organizations)
   ) {
     throw new Error("PR 中的机构审核清单格式或 Issue 归属不正确");
+  }
+  for (const group of manifest.groups) {
+    if (!group || !Array.isArray(group.rows)) {
+      throw new Error("审核清单缺少有效的导师分组行");
+    }
+    for (const row of group.rows) {
+      if (!Object.hasOwn(row || {}, "identity")) {
+        continue;
+      }
+      const identity = row.identity;
+      const mentor = identity?.mentor;
+      if (
+        identity?.requires_resolution !== true ||
+        identity?.match_status !== "conflict" ||
+        typeof identity?.target_mentor_id !== "string" ||
+        !Array.isArray(identity?.review_reasons) ||
+        !mentor ||
+        typeof mentor.id !== "string" ||
+        typeof mentor.name !== "string" ||
+        typeof mentor.email !== "string" ||
+        !Array.isArray(mentor.affiliations) ||
+        mentor.affiliations.length === 0 ||
+        !mentor.affiliations.every(
+          (affiliation) =>
+            affiliation?.status === "current" &&
+            typeof affiliation.id === "string" &&
+            typeof affiliation.organization_id === "string" &&
+            typeof affiliation.source_url === "string",
+        )
+      ) {
+        throw new Error("审核清单中的导师身份判定信息无效");
+      }
+    }
   }
 }
 
@@ -2315,10 +2682,16 @@ async function loadReview() {
     }
 
     const rowCount = manifest.groups.reduce((total, group) => total + group.rows.length, 0);
+    const identityCount = manifest.groups.reduce(
+      (total, group) =>
+        total + group.rows.filter((row) => row.identity?.requires_resolution === true).length,
+      0,
+    );
     nodes.issue.textContent = `#${issueNumber}`;
     nodes.groupCount.textContent = String(manifest.groups.length);
     nodes.rowCount.textContent = String(rowCount);
     nodes.invalidCount.textContent = String(manifest.invalid_rows.length);
+    nodes.identityCount.textContent = String(identityCount);
     nodes.summary.hidden = false;
     renderInvalidRows();
 
