@@ -30,6 +30,7 @@ if TYPE_CHECKING:
 
 
 REVIEW_COMMENT_MARKER = "<!-- mentor-data-organization-review:v1 -->"
+GITHUB_COMMENT_CHARACTER_LIMIT = 65_536
 REVIEW_BRANCH_PATTERN = re.compile(r"^batch/issue-(?P<issue>[1-9][0-9]*)$")
 PROPOSAL_DIRECTORY_PATTERN = re.compile(r"^proposals/batch-issue-(?P<issue>[1-9][0-9]*)$")
 DOMAIN_PATTERN = re.compile(
@@ -224,8 +225,10 @@ def create_organization_review_manifest(
 
 
 def _parse_review_comment_payload(body: str) -> dict[str, Any]:
-    if len(body.encode("utf-8")) > 200_000:
-        raise SubmissionError("机构审核评论过大")
+    if len(body) > GITHUB_COMMENT_CHARACTER_LIMIT:
+        raise SubmissionError(
+            f"机构审核评论超过 GitHub 的 {GITHUB_COMMENT_CHARACTER_LIMIT:,} 字符上限"
+        )
     normalized_body = body.replace("\r\n", "\n")
     if "\r" in normalized_body:
         raise SubmissionError("机构审核评论包含不支持的换行符")

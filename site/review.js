@@ -4,7 +4,7 @@ const BRANCH_PATTERN = /^batch\/issue-([1-9][0-9]*)$/;
 const SHA_PATTERN = /^[a-f0-9]{40,64}$/;
 const DOMAIN_PATTERN = /^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)+$/;
 const MAX_MANIFEST_BYTES = 20_000_000;
-const MAX_COMMENT_BYTES = 200_000;
+const GITHUB_COMMENT_CHARACTER_LIMIT = 65_536;
 const MAX_PROPOSAL_BYTES = 500_000;
 const LEVELS = ["university", "school", "department"];
 const LEVEL_LABELS = {
@@ -24,6 +24,22 @@ const TYPE_LABELS = {
   department: "系 / 部门",
   center: "中心",
   laboratory: "实验室",
+};
+const ORGANIZATION_TYPE_SUFFIX_RULES = {
+  school: [
+    ["研究院", "institute"],
+    ["研究所", "institute"],
+    ["学院", "school"],
+  ],
+  department: [
+    ["实验室", "laboratory"],
+    ["研究室", "laboratory"],
+    ["中心", "center"],
+    ["办公室", "department"],
+    ["系", "department"],
+    ["部", "department"],
+    ["研究所", "department"],
+  ],
 };
 
 const state = {
@@ -147,6 +163,27 @@ function organizationLevel(organizationType) {
   return "department";
 }
 
+function inferOrganizationType(level, canonicalName) {
+  const normalizedName = String(canonicalName || "").normalize("NFKC").trim();
+  const fallback = LEVEL_TYPES[level]?.[0] || "department";
+  for (const [suffix, organizationType] of ORGANIZATION_TYPE_SUFFIX_RULES[level] || []) {
+    if (normalizedName.endsWith(suffix)) {
+      return organizationType;
+    }
+  }
+  return fallback;
+}
+
+function shouldDefaultOrganizationToParent(level, canonicalName, parentCanonicalName) {
+  if (level !== "department") {
+    return false;
+  }
+  const normalizedName = normalizeOrganizationName(canonicalName);
+  return Boolean(
+    normalizedName && normalizedName === normalizeOrganizationName(parentCanonicalName),
+  );
+}
+
 function levelParentKey(level, parentId) {
   return `${level}\u001f${parentId || "root"}`;
 }
@@ -257,8 +294,19 @@ document.addEventListener("pointerdown", (event) => {
     closeActiveFloatingControl();
   }
 });
+function handleFloatingControlScroll(event) {
+  const current = activeFloatingControl;
+  if (!current) {
+    return;
+  }
+  if (event.target instanceof Node && current.popup.contains(event.target)) {
+    return;
+  }
+  closeActiveFloatingControl();
+}
+
 window.addEventListener("resize", closeActiveFloatingControl);
-window.addEventListener("scroll", closeActiveFloatingControl, true);
+window.addEventListener("scroll", handleFloatingControlScroll, true);
 
 function createSelect(options, className, ariaLabel) {
   const root = element("div", `custom-select ${className}`);
@@ -866,6 +914,7 @@ function createOrganizationDraftEditor(draft) {
   canonicalName.setAttribute("aria-label", `${LEVEL_LABELS[draft.level]}正式名称`);
   canonicalName.maxLength = 255;
   canonicalName.value = draft.submittedName;
+  organizationType.value = inferOrganizationType(draft.level, canonicalName.value);
   const officialUrl = createInput(
     "url",
     draft.level === "university"
@@ -928,6 +977,8 @@ function createOrganizationDraftEditor(draft) {
   error.hidden = true;
   const reuseNotice = element("p", "organization-reuse-notice");
   reuseNotice.hidden = true;
+  const defaultNotice = element("p", "organization-reuse-notice organization-default-notice");
+  defaultNotice.hidden = true;
   const footer = element("div", "organization-draft-footer");
   const confirm = element("button", "primary-button compact-button", "确认并处理下一个");
   confirm.type = "button";
@@ -937,6 +988,7 @@ function createOrganizationDraftEditor(draft) {
     existingPanel,
     createPanel,
     reuseNotice,
+    defaultNotice,
     sourceBar,
     error,
     footer,
@@ -965,19 +1017,36 @@ function createOrganizationDraftEditor(draft) {
     officialUrl,
     approvedDomains,
     reuseNotice,
+    defaultNotice,
     aliasLabel,
     saveAlias,
     error,
     confirm,
     restoreUrl,
+    actionManuallySelected: false,
+    organizationTypeManuallySelected: false,
+    autoSkippedToParent: false,
   };
   draft.editor = editor;
 
-  for (const control of [action, existingInput, organizationType]) {
-    control.addEventListener("change", () => markOrganizationDraftChanged(draft, true));
-  }
+  action.addEventListener("change", () => {
+    editor.actionManuallySelected = true;
+    editor.autoSkippedToParent = false;
+    editor.defaultNotice.hidden = true;
+    markOrganizationDraftChanged(draft, true);
+  });
+  existingInput.addEventListener("change", () => markOrganizationDraftChanged(draft, true));
+  organizationType.addEventListener("change", () => {
+    editor.organizationTypeManuallySelected = true;
+    markOrganizationDraftChanged(draft, true);
+  });
   saveAlias.addEventListener("change", () => markOrganizationDraftChanged(draft));
-  canonicalName.addEventListener("input", () => markOrganizationDraftChanged(draft, true));
+  canonicalName.addEventListener("input", () => {
+    if (!editor.organizationTypeManuallySelected) {
+      organizationType.value = inferOrganizationType(draft.level, canonicalName.value);
+    }
+    markOrganizationDraftChanged(draft, true);
+  });
   officialUrl.addEventListener("input", () => markOrganizationDraftChanged(draft));
   approvedDomains.addEventListener("input", () => markOrganizationDraftChanged(draft));
   restoreUrl.addEventListener("click", () => {
@@ -1475,6 +1544,7 @@ async function updateOrganizationDrafts() {
     }
 
     editor.reuseNotice.hidden = true;
+    editor.defaultNotice.hidden = true;
     if (!draft.forcedSkip && editor.action.value === "create") {
       const exactExistingId = findExactOrganization(
         draft.level,
@@ -1491,6 +1561,35 @@ async function updateOrganizationDrafts() {
         editor.reuseNotice.textContent = `已找到同名机构，自动归到「${organization?.canonical_name || draft.submittedName}」。`;
         editor.reuseNotice.hidden = false;
       }
+    }
+
+    const parentCanonicalName = parent?.lineageNames?.length
+      ? parent.lineageNames[parent.lineageNames.length - 1]
+      : "";
+    const shouldAutoSkip =
+      !draft.forcedSkip &&
+      !editor.actionManuallySelected &&
+      editor.action.value !== "existing" &&
+      shouldDefaultOrganizationToParent(
+        draft.level,
+        editor.canonicalName.value,
+        parentCanonicalName,
+      );
+    if (shouldAutoSkip) {
+      if (editor.action.value !== "skip") {
+        editor.action.value = "skip";
+        draft.confirmed = false;
+      }
+      editor.autoSkippedToParent = true;
+      editor.defaultNotice.textContent =
+        "正式名称与上级学院相同，已默认归到上级；如需单独建立，可修改处理方式。";
+      editor.defaultNotice.hidden = false;
+    } else if (editor.autoSkippedToParent) {
+      if (editor.action.value === "skip") {
+        editor.action.value = "create";
+        draft.confirmed = false;
+      }
+      editor.autoSkippedToParent = false;
     }
 
     editor.action.disabled = draft.forcedSkip;
@@ -1723,6 +1822,9 @@ function restoreReviewDraft() {
     draft.editor.approvedDomains.value = storedText(value.approved_domains, 2000);
     draft.editor.saveAlias.checked = Boolean(value.save_alias);
     draft.confirmed = Boolean(value.confirmed);
+    draft.editor.actionManuallySelected = true;
+    draft.editor.organizationTypeManuallySelected = true;
+    draft.editor.autoSkippedToParent = false;
     draft.restoreExistingId = storedText(value.existing_id, 80) || null;
     draft.hasRestoredState = true;
     draft.initialized = false;
@@ -2080,13 +2182,21 @@ async function generateDecision() {
   nodes.copyStatus.textContent = "";
   try {
     const decision = await collectDecision();
-    const body = `${COMMENT_MARKER}\n\`\`\`json\n${JSON.stringify(decision, null, 2)}\n\`\`\``;
-    if (new TextEncoder().encode(body).length > MAX_COMMENT_BYTES) {
-      throw new Error("审核评论超过 GitHub 处理上限，请减少逐行拆分后再生成");
+    const body = `${COMMENT_MARKER}\n\`\`\`json\n${JSON.stringify(decision)}\n\`\`\``;
+    const characterCount = Array.from(body).length;
+    if (characterCount > GITHUB_COMMENT_CHARACTER_LIMIT) {
+      throw new Error(
+        `审核评论有 ${characterCount.toLocaleString("zh-CN")} 个字符，超过 GitHub 的 ` +
+          `${GITHUB_COMMENT_CHARACTER_LIMIT.toLocaleString("zh-CN")} 字符上限。` +
+          "请减少需要单独改派或拒绝的导师后再生成。",
+      );
     }
     renderDecisionPreview(decision);
     nodes.decisionText.value = body;
     nodes.decisionOutput.hidden = false;
+    nodes.copyStatus.textContent =
+      `评论长度 ${characterCount.toLocaleString("zh-CN")} / ` +
+      `${GITHUB_COMMENT_CHARACTER_LIMIT.toLocaleString("zh-CN")} 字符，可以安全提交。`;
     nodes.decisionOutput.scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (error) {
     nodes.decisionError.textContent = error instanceof Error ? error.message : "无法生成审核评论";

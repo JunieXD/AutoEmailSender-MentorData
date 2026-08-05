@@ -13,7 +13,9 @@ from mentor_data.errors import SubmissionError
 from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.io_utils import load_json, load_yaml
 from mentor_data.organization_review import (
+    GITHUB_COMMENT_CHARACTER_LIMIT,
     REVIEW_COMMENT_MARKER,
+    _parse_review_comment_payload,
     _proposed_organization_id,
     apply_organization_review,
     create_organization_review_manifest,
@@ -724,6 +726,18 @@ def test_review_comment_accepts_github_crlf_line_endings(tmp_path: Path) -> None
     comment, _ = _review_context(root, tmp_path, decision, line_ending="\r\n")
 
     assert comment.decision == decision
+
+
+def test_review_comment_enforces_github_character_limit() -> None:
+    prefix = f'{REVIEW_COMMENT_MARKER}\n```json\n{{"text":"'
+    suffix = '"}\n```'
+    body = prefix + "界" * (GITHUB_COMMENT_CHARACTER_LIMIT - len(prefix) - len(suffix)) + suffix
+
+    assert len(body) == GITHUB_COMMENT_CHARACTER_LIMIT
+    assert _parse_review_comment_payload(body)["text"]
+
+    with pytest.raises(SubmissionError, match="65,536 字符上限"):
+        _parse_review_comment_payload(body + " ")
 
 
 def test_review_rejects_stale_manifest_digest(tmp_path: Path) -> None:

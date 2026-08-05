@@ -23,7 +23,9 @@ def test_review_script_treats_manifest_as_text_and_outputs_fixed_comment_marker(
     assert "mentor-data-organization-review:v1" in script
     assert "crypto.subtle.digest" in script
     assert "textContent" in script
-    assert "MAX_COMMENT_BYTES" in script
+    assert "GITHUB_COMMENT_CHARACTER_LIMIT = 65_536" in script
+    assert "Array.from(body).length" in script
+    assert "JSON.stringify(decision)" in script
     assert "validateWebUrl" in script
     assert '["http:", "https:"]' in script
     assert r"^batch\/issue-" in script
@@ -40,8 +42,26 @@ def test_review_uses_custom_selection_controls_and_bounded_row_scrolling() -> No
     assert "datalist" not in script
     assert "createOrganizationPicker" in script
     assert 'setAttribute("role", "combobox")' in script
+    assert "handleFloatingControlScroll" in script
+    assert "current.popup.contains(event.target)" in script
     assert "max-height: min(21rem, 50vh)" in styles
     assert "scrollbar-gutter: stable" in styles
+    assert "overscroll-behavior: contain" in styles
+
+
+def test_review_infers_new_organization_defaults_from_names() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+
+    assert "inferOrganizationType" in script
+    assert '["研究院", "institute"]' in script
+    assert '["学院", "school"]' in script
+    assert '["实验室", "laboratory"]' in script
+    assert '["中心", "center"]' in script
+    assert '["系", "department"]' in script
+    assert "shouldDefaultOrganizationToParent" in script
+    assert "正式名称与上级学院相同，已默认归到上级" in script
+    assert "actionManuallySelected" in script
+    assert "organizationTypeManuallySelected" in script
 
 
 def test_review_links_each_mentor_to_a_safely_resolved_profile() -> None:
