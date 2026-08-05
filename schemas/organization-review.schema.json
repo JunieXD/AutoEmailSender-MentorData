@@ -73,7 +73,54 @@
             { "type": "null" }
           ]
         },
-        "source_url": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 }
+        "source_url": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
+        "identity": { "$ref": "#/$defs/identityCandidate" }
+      }
+    },
+    "identityCandidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requires_resolution", "target_mentor_id", "match_status", "review_reasons", "mentor"],
+      "properties": {
+        "requires_resolution": { "const": true },
+        "target_mentor_id": { "type": "string", "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$" },
+        "match_status": { "const": "conflict" },
+        "review_reasons": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string", "pattern": "^[a-z0-9_]{2,64}$" },
+          "uniqueItems": true
+        },
+        "mentor": { "$ref": "#/$defs/identityMentor" }
+      }
+    },
+    "identityMentor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "email", "affiliations"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$" },
+        "name": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "email": { "type": "string", "minLength": 3, "maxLength": 255 },
+        "affiliations": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/identityAffiliation" }
+        }
+      }
+    },
+    "identityAffiliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "organization_id", "status", "is_primary", "title", "source_url", "observed_at"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$" },
+        "organization_id": { "type": "string", "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$" },
+        "status": { "const": "current" },
+        "is_primary": { "type": "boolean" },
+        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "source_url": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
+        "observed_at": { "type": "string", "format": "date-time" }
       }
     },
     "group": {

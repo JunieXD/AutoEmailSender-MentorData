@@ -17,7 +17,7 @@
         <a class="back-link" href="./">← 返回社区导师库</a>
         <p class="eyebrow">Maintainer tool</p>
         <h1>批量机构审核</h1>
-        <p class="intro">每个机构确认一次，再检查需要改派或拒绝的导师。</p>
+        <p class="intro">每个机构确认一次，再处理改派、拒绝与“同一导师但学院不一致”的任职判定。</p>
       </header>
 
       <section id="review-status" class="review-status" aria-live="polite">
@@ -44,6 +44,10 @@
         <div>
           <span class="label">普通无效行</span>
           <strong id="review-invalid-count">—</strong>
+        </div>
+        <div>
+          <span class="label">待判定任职</span>
+          <strong id="review-identity-count">—</strong>
         </div>
       </section>
 
@@ -74,7 +78,7 @@
             <p class="eyebrow">Mentor assignments</p>
             <h2>检查导师分组</h2>
           </div>
-          <p>导师默认跟随上面的机构；只有改派或拒绝时才需要展开。</p>
+          <p>导师默认跟随上面的机构；学院不一致的同邮箱导师会在这里优先显示，必须明确判定双聘、调动或拒绝。</p>
         </div>
         <div id="review-groups" class="review-groups"></div>
       </section>

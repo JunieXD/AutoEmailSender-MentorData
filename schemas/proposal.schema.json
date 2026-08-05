@@ -64,6 +64,7 @@
     "match_status": {
       "enum": ["new", "matched_email", "matched_profile", "ambiguous", "conflict"]
     },
+    "affiliation_resolution": { "$ref": "#/$defs/affiliationResolution" },
     "review_reasons": {
       "type": "array",
       "items": { "type": "string", "pattern": "^[a-z0-9_]{2,64}$" },
@@ -73,6 +74,41 @@
     "created_at": { "type": "string", "format": "date-time" }
   },
   "$defs": {
+    "affiliationResolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["action", "organization_id", "make_primary", "former_affiliation_id", "reason"],
+      "properties": {
+        "action": { "enum": ["append_current_affiliation", "transfer_current_affiliation"] },
+        "organization_id": {
+          "type": "string",
+          "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+        },
+        "make_primary": { "type": "boolean" },
+        "former_affiliation_id": {
+          "oneOf": [
+            { "type": "string", "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$" },
+            { "type": "null" }
+          ]
+        },
+        "reason": { "type": "string", "minLength": 1, "maxLength": 500 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "action": { "const": "append_current_affiliation" } } },
+          "then": { "properties": { "former_affiliation_id": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "action": { "const": "transfer_current_affiliation" } } },
+          "then": {
+            "properties": {
+              "make_primary": { "const": true },
+              "former_affiliation_id": { "type": "string", "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$" }
+            }
+          }
+        }
+      ]
+    },
     "payload": {
       "type": "object",
       "additionalProperties": false,

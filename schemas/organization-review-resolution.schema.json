@@ -83,6 +83,23 @@
         "reason": { "type": ["string", "null"], "maxLength": 500 }
       }
     },
+    "identityResolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_id", "action", "make_primary", "former_affiliation_id", "reason"],
+      "properties": {
+        "proposal_id": { "$ref": "#/$defs/proposalId" },
+        "action": { "enum": ["append_current_affiliation", "transfer_current_affiliation"] },
+        "make_primary": { "type": "boolean" },
+        "former_affiliation_id": {
+          "oneOf": [
+            { "type": "string", "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$" },
+            { "type": "null" }
+          ]
+        },
+        "reason": { "type": "string", "minLength": 1, "maxLength": 500 }
+      }
+    },
     "groupDecision": {
       "type": "object",
       "additionalProperties": false,
@@ -92,7 +109,8 @@
         "action": { "enum": ["resolve", "reject"] },
         "reason": { "type": ["string", "null"], "maxLength": 500 },
         "levels": { "type": "array", "maxItems": 3, "items": { "$ref": "#/$defs/levelDecision" } },
-        "row_overrides": { "type": "array", "items": { "$ref": "#/$defs/rowOverride" } }
+        "row_overrides": { "type": "array", "items": { "$ref": "#/$defs/rowOverride" } },
+        "identity_resolutions": { "type": "array", "items": { "$ref": "#/$defs/identityResolution" } }
       }
     }
   }

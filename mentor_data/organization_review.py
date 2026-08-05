@@ -16,6 +16,8 @@ from .github_events import GITHUB_LOGIN_PATTERN, parse_datetime
 from .io_utils import json_bytes, load_json, write_json_atomic, write_yaml_atomic
 from .normalization import (
     hostname_for_url,
+    normalize_email,
+    normalize_name_key,
     normalize_organization_key,
     normalize_text,
     normalized_web_url,
@@ -53,6 +55,16 @@ ORGANIZATION_REVIEW_REASONS = {
     "ambiguous_school",
     "unmatched_department",
     "ambiguous_department",
+}
+AFFILIATION_IDENTITY_REASONS = {
+    "email_organization_conflict",
+    "identity_requires_manual_review",
+}
+UNSUPPORTED_AFFILIATION_IDENTITY_REASONS = {
+    "email_name_conflict",
+    "profile_name_conflict",
+    "email_matches_multiple_mentors",
+    "profile_matches_multiple_mentors",
 }
 TRUSTED_REVIEW_ASSOCIATIONS = {"OWNER", "MEMBER", "COLLABORATOR"}
 
@@ -134,6 +146,93 @@ def _organization_options(registry: OrganizationRegistry) -> list[dict[str, Any]
     return options
 
 
+def _supported_affiliation_identity(
+    data: RepositoryData,
+    proposal: dict[str, Any],
+) -> dict[str, Any] | None:
+    """Return the reviewer-safe identity snapshot for an email/org conflict.
+
+    The organization review can only resolve a known email match whose primary name is
+    unchanged. Other identity conflicts deliberately stay outside this lightweight flow.
+    """
+
+    target_mentor_id = proposal.get("target_mentor_id")
+    reasons = set(proposal.get("review_reasons", []))
+    if (
+        proposal.get("match_status") != "conflict"
+        or not isinstance(target_mentor_id, str)
+        or not AFFILIATION_IDENTITY_REASONS.issubset(reasons)
+        or reasons & UNSUPPORTED_AFFILIATION_IDENTITY_REASONS
+    ):
+        return None
+    mentor = next((item for item in data.mentors if item.get("id") == target_mentor_id), None)
+    if mentor is None:
+        return None
+    accepted = proposal.get("accepted", {})
+    submitted_name = accepted.get("name")
+    submitted_email = accepted.get("email")
+    primary_name = next((item for item in mentor.get("names", []) if item.get("is_primary")), None)
+    matching_contact = next(
+        (
+            item
+            for item in mentor.get("contacts", [])
+            if item.get("status") in {"current", "former"}
+            and item.get("normalized_value") == normalize_email(str(submitted_email or ""))
+        ),
+        None,
+    )
+    current_affiliations = [
+        item for item in mentor.get("affiliations", []) if item.get("status") == "current"
+    ]
+    if (
+        primary_name is None
+        or matching_contact is None
+        or not isinstance(submitted_name, str)
+        or normalize_name_key(primary_name.get("value")) != normalize_name_key(submitted_name)
+        or not current_affiliations
+    ):
+        return None
+    return {
+        "requires_resolution": True,
+        "target_mentor_id": target_mentor_id,
+        "match_status": "conflict",
+        "review_reasons": sorted(AFFILIATION_IDENTITY_REASONS),
+        "mentor": {
+            "id": mentor["id"],
+            "name": primary_name["value"],
+            "email": matching_contact["normalized_value"],
+            "affiliations": [
+                {
+                    "id": affiliation["id"],
+                    "organization_id": affiliation["organization_id"],
+                    "status": "current",
+                    "is_primary": affiliation["is_primary"],
+                    "title": affiliation.get("title"),
+                    "source_url": affiliation["source_url"],
+                    "observed_at": affiliation["observed_at"],
+                }
+                for affiliation in sorted(current_affiliations, key=lambda item: item["id"])
+            ],
+        },
+    }
+
+
+def _manifest_row(data: RepositoryData, proposal: dict[str, Any]) -> dict[str, Any]:
+    submitted = proposal["submitted"]
+    row = {
+        "proposal_id": proposal["id"],
+        "batch_row": proposal["issue"]["batch_row"],
+        "name": submitted["name"],
+        "email": submitted["email"],
+        "profile_url": submitted.get("profile_url"),
+        "source_url": submitted["source_url"],
+    }
+    identity = _supported_affiliation_identity(data, proposal)
+    if identity is not None:
+        row["identity"] = identity
+    return row
+
+
 def create_organization_review_manifest(
     root: Path,
     event: GitHubIssueEvent,
@@ -170,16 +269,7 @@ def create_organization_review_manifest(
             },
         )
         source_url = submitted_payload["source_url"]
-        group["rows"].append(
-            {
-                "proposal_id": proposal["id"],
-                "batch_row": proposal["issue"]["batch_row"],
-                "name": submitted_payload["name"],
-                "email": submitted_payload["email"],
-                "profile_url": submitted_payload.get("profile_url"),
-                "source_url": source_url,
-            }
-        )
+        group["rows"].append(_manifest_row(data, proposal))
         group["source_domains"].add(hostname_for_url(source_url))
         group["source_urls"].add(source_url)
         profile_url = submitted_payload.get("profile_url")
@@ -596,6 +686,100 @@ def _candidate_repository_data(
     return data
 
 
+def _affiliation_resolution_for_target(
+    data: RepositoryData,
+    proposal: dict[str, Any],
+    resolution: dict[str, Any],
+    *,
+    organization_id: str,
+) -> dict[str, Any]:
+    """Validate a reviewer decision and bind it to the final organization ID."""
+
+    identity = _supported_affiliation_identity(data, proposal)
+    if identity is None:
+        raise SubmissionError(
+            f"提案 {proposal.get('id')} 不是可安全处理的同邮箱任职冲突；"
+            "请使用专门的身份纠错流程"
+        )
+    if not normalize_text(resolution.get("reason")):
+        raise SubmissionError(f"提案 {proposal['id']} 的任职判定必须填写审核依据")
+    action = resolution.get("action")
+    make_primary = resolution.get("make_primary")
+    former_affiliation_id = resolution.get("former_affiliation_id")
+    if action not in {"append_current_affiliation", "transfer_current_affiliation"}:
+        raise SubmissionError(f"提案 {proposal['id']} 的任职处理方式无效")
+    if not isinstance(make_primary, bool):
+        raise SubmissionError(f"提案 {proposal['id']} 的主任职设置无效")
+
+    current_affiliations = identity["mentor"]["affiliations"]
+    current_ids = {item["id"] for item in current_affiliations}
+    current_organization_ids = {item["organization_id"] for item in current_affiliations}
+    if organization_id in current_organization_ids:
+        raise SubmissionError(
+            f"提案 {proposal['id']} 的目标机构已是该导师的当前任职，"
+            "无需新增双聘或调动"
+        )
+    if action == "append_current_affiliation":
+        if former_affiliation_id is not None:
+            raise SubmissionError(f"提案 {proposal['id']} 的新增双聘不能结束现有任职")
+    else:
+        if make_primary is not True:
+            raise SubmissionError(f"提案 {proposal['id']} 的调动必须将新任职设为主任职")
+        if former_affiliation_id not in current_ids:
+            raise SubmissionError(
+                f"提案 {proposal['id']} 选择的原当前任职不存在或已经不是当前任职"
+            )
+    return {
+        "action": action,
+        "organization_id": organization_id,
+        "make_primary": make_primary,
+        "former_affiliation_id": former_affiliation_id,
+        "reason": normalize_text(resolution["reason"]),
+    }
+
+
+def _validate_affiliation_resolution_plan(
+    planned: list[tuple[str, str, dict[str, Any]]],
+) -> None:
+    """Reject order-dependent affiliation outcomes within one batch review."""
+
+    by_target: dict[tuple[str, str], set[tuple[str, bool, str | None]]] = {}
+    primary_targets: dict[str, set[str]] = {}
+    ended_affiliations: dict[tuple[str, str], set[str]] = {}
+    for proposal_id, mentor_id, resolution in planned:
+        organization_id = resolution["organization_id"]
+        signature = (
+            resolution["action"],
+            resolution["make_primary"],
+            resolution["former_affiliation_id"],
+        )
+        signatures = by_target.setdefault((mentor_id, organization_id), set())
+        signatures.add(signature)
+        if len(signatures) > 1:
+            raise SubmissionError(
+                f"导师 {mentor_id} 在机构 {organization_id} 的多条任职判定互相冲突；"
+                f"请统一提案 {proposal_id} 的处理方式"
+            )
+        if resolution["make_primary"]:
+            primary_targets.setdefault(mentor_id, set()).add(organization_id)
+        former_affiliation_id = resolution.get("former_affiliation_id")
+        if former_affiliation_id is not None:
+            ended_affiliations.setdefault((mentor_id, former_affiliation_id), set()).add(
+                organization_id
+            )
+
+    for mentor_id, organization_ids in primary_targets.items():
+        if len(organization_ids) > 1:
+            raise SubmissionError(
+                f"导师 {mentor_id} 在同一批次中被设置了多个新主任职；请只保留一个"
+            )
+    for (mentor_id, affiliation_id), organization_ids in ended_affiliations.items():
+        if len(organization_ids) > 1:
+            raise SubmissionError(
+                f"导师 {mentor_id} 的原任职 {affiliation_id} 被调动到多个机构；请只保留一个"
+            )
+
+
 def apply_organization_review(
     root: Path,
     review_comment: ReviewComment,
@@ -675,15 +859,13 @@ def apply_organization_review(
                 "school": submitted.get("submitted_school"),
                 "department": submitted.get("submitted_department"),
             }
-            expected_row = {
-                "proposal_id": proposal.get("id"),
-                "batch_row": proposal.get("issue", {}).get("batch_row"),
-                "name": submitted.get("name"),
-                "email": submitted.get("email"),
-                "source_url": submitted.get("source_url"),
-            }
-            if "profile_url" in row:
-                expected_row["profile_url"] = submitted.get("profile_url")
+            expected_row = _manifest_row(data, proposal)
+            if "profile_url" not in row:
+                expected_row.pop("profile_url", None)
+            # Pending manifests produced before affiliation review existed remain
+            # readable. They cannot opt into the new identity decision automatically.
+            if "identity" not in row:
+                expected_row.pop("identity", None)
             if row != expected_row or _group_id(submitted_path) != group["id"]:
                 raise SubmissionError("机构审核清单与提案原始字段不一致，请重新生成清单")
 
@@ -693,9 +875,11 @@ def apply_organization_review(
     rejected_ids: set[str] = set()
     created_organization_ids: set[str] = set()
     updated_organization_ids: set[str] = set()
+    planned_affiliation_resolutions: list[tuple[str, str, dict[str, Any]]] = []
     decided_at = _iso_utc(review_comment.created_at)
     base_targets: dict[str, str | None] = {}
     overrides_by_group: dict[str, dict[str, dict[str, Any]]] = {}
+    identity_resolutions_by_group: dict[str, dict[str, dict[str, Any]]] = {}
 
     # Resolve every institution first. A mentor can then be reassigned to an institution
     # created by another group in the same review, regardless of group sort order.
@@ -709,6 +893,15 @@ def apply_organization_review(
         if not set(overrides).issubset(group_row_ids):
             raise SubmissionError(f"分组 {group_id} 的逐行覆盖不属于该分组")
         overrides_by_group[group_id] = overrides
+        identity_resolutions = {
+            item["proposal_id"]: item
+            for item in group_decision.get("identity_resolutions", [])
+        }
+        if len(identity_resolutions) != len(group_decision.get("identity_resolutions", [])):
+            raise SubmissionError(f"分组 {group_id} 包含重复任职判定")
+        if not set(identity_resolutions).issubset(group_row_ids):
+            raise SubmissionError(f"分组 {group_id} 的任职判定不属于该分组")
+        identity_resolutions_by_group[group_id] = identity_resolutions
 
         base_target: str | None = None
         if group_decision["action"] == "resolve":
@@ -729,11 +922,15 @@ def apply_organization_review(
         group = manifest_groups[group_id]
         group_decision = decision_groups[group_id]
         overrides = overrides_by_group[group_id]
+        identity_resolutions = identity_resolutions_by_group[group_id]
         base_target = base_targets[group_id]
         for row in group["rows"]:
             proposal_id = row["proposal_id"]
             override = overrides.get(proposal_id)
+            identity_resolution = identity_resolutions.get(proposal_id)
             if override is not None and override["action"] == "reject":
+                if identity_resolution is not None:
+                    raise SubmissionError(f"被拒绝的提案 {proposal_id} 不能同时新增或调动任职")
                 if not normalize_text(override.get("reason")):
                     raise SubmissionError(f"拒绝提案 {proposal_id} 时必须填写原因")
                 rejected_ids.add(proposal_id)
@@ -746,6 +943,8 @@ def apply_organization_review(
                 if organization is None:
                     raise SubmissionError(f"逐行覆盖机构不存在：{target_id}")
             elif group_decision["action"] == "reject":
+                if identity_resolution is not None:
+                    raise SubmissionError(f"被拒绝的提案 {proposal_id} 不能同时新增或调动任职")
                 rejected_ids.add(proposal_id)
                 continue
             else:
@@ -753,14 +952,60 @@ def apply_organization_review(
             if not isinstance(target_id, str):
                 raise SubmissionError(f"提案 {proposal_id} 没有最终机构")
             proposal = proposals_by_id[proposal_id]
+            if proposal.get("affiliation_resolution") is not None:
+                raise SubmissionError(f"提案 {proposal_id} 已包含任职判定，不能重复应用机构审核")
             proposal["accepted"]["organization_id"] = target_id
             proposal["review_reasons"] = [
                 reason
                 for reason in proposal["review_reasons"]
                 if reason not in ORGANIZATION_REVIEW_REASONS
             ]
+            identity = row.get("identity")
+            if identity is None:
+                if identity_resolution is not None:
+                    raise SubmissionError(f"提案 {proposal_id} 不支持当前任职判定")
+            else:
+                supported_identity = _supported_affiliation_identity(data, proposal)
+                if supported_identity != identity:
+                    raise SubmissionError("导师身份或当前任职已经变化，请刷新审核清单")
+                current_organization_ids = {
+                    item["organization_id"] for item in identity["mentor"]["affiliations"]
+                }
+                if target_id in current_organization_ids:
+                    if identity_resolution is not None:
+                        raise SubmissionError(
+                            f"提案 {proposal_id} 的目标机构已是导师当前任职，无需新增双聘或调动"
+                        )
+                    proposal["review_reasons"] = [
+                        reason
+                        for reason in proposal["review_reasons"]
+                        if reason not in AFFILIATION_IDENTITY_REASONS
+                    ]
+                else:
+                    if identity_resolution is None:
+                        raise SubmissionError(
+                            f"提案 {proposal_id} 疑似同一导师但学院不一致；"
+                            "请选择新增双聘任职、已调动到新学院，或拒绝该导师"
+                        )
+                    affiliation_resolution = _affiliation_resolution_for_target(
+                        data,
+                        proposal,
+                        identity_resolution,
+                        organization_id=target_id,
+                    )
+                    proposal["affiliation_resolution"] = affiliation_resolution
+                    planned_affiliation_resolutions.append(
+                        (proposal_id, proposal["target_mentor_id"], affiliation_resolution)
+                    )
+                    proposal["review_reasons"] = [
+                        reason
+                        for reason in proposal["review_reasons"]
+                        if reason not in AFFILIATION_IDENTITY_REASONS
+                    ]
             proposal["auto_eligible"] = False
             mapped_ids.add(proposal_id)
+
+    _validate_affiliation_resolution_plan(planned_affiliation_resolutions)
 
     for proposal_id in rejected_ids:
         proposals_by_id.pop(proposal_id)

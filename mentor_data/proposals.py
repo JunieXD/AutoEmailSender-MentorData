@@ -106,6 +106,7 @@ class _FinalizationContext:
     mentor_by_id: dict[str, dict[str, Any]]
     mentor_index_by_id: dict[str, int]
     email_owner_by_value: dict[str, str]
+    resolved_affiliation_targets: set[tuple[str, str]]
 
 
 def _deduplicated_parts(
@@ -608,6 +609,182 @@ def _append_support(
     return updated
 
 
+def _add_claim_reference(value: dict[str, Any], claim_id: str) -> None:
+    claim_ids = value.setdefault("claim_ids", [])
+    if claim_id not in claim_ids:
+        claim_ids.append(claim_id)
+
+
+def _add_field_provenance(mentor: dict[str, Any], field: str, claim_id: str) -> None:
+    provenance = mentor["field_provenance"].setdefault(field, [])
+    if claim_id not in provenance:
+        provenance.append(claim_id)
+
+
+def _append_affiliation_resolution(
+    mentor: dict[str, Any],
+    claim: dict[str, Any],
+    resolution: dict[str, Any],
+    *,
+    proposal: dict[str, Any],
+    allow_existing_target: bool,
+) -> tuple[dict[str, Any], bool]:
+    """Apply a reviewed dual-appointment or transfer decision to one mentor."""
+
+    updated = copy.deepcopy(mentor)
+    accepted = claim["accepted"]
+    claim_id = claim["id"]
+    observed_at = claim["contributor"]["submitted_at"]
+    observed_date = observed_at.split("T", 1)[0]
+    verification_url = accepted.get("profile_url") or accepted["source_url"]
+    organization_id = accepted["organization_id"]
+    action = resolution.get("action")
+    if action not in {"append_current_affiliation", "transfer_current_affiliation"}:
+        raise SubmissionError("任职判定方式无效")
+    if resolution.get("organization_id") != organization_id:
+        raise SubmissionError("任职判定的机构与审核后的机构不一致")
+    if not normalize_text(resolution.get("reason")):
+        raise SubmissionError("任职判定缺少审核依据")
+    if action == "transfer_current_affiliation" and resolution.get("make_primary") is not True:
+        raise SubmissionError("任职调动必须将新任职设为主任职")
+    if (
+        action == "append_current_affiliation"
+        and resolution.get("former_affiliation_id") is not None
+    ):
+        raise SubmissionError("新增双聘不能结束现有任职")
+
+    primary_name = next(item for item in updated["names"] if item["is_primary"])
+    if normalize_name_key(primary_name["value"]) != normalize_name_key(accepted["name"]):
+        raise SubmissionError("审核后的姓名与目标导师主要姓名冲突")
+    contact = next(
+        (
+            item
+            for item in updated["contacts"]
+            if item["normalized_value"] == accepted["email"]
+            and item["status"] in {"current", "former"}
+        ),
+        None,
+    )
+    if contact is None:
+        raise SubmissionError("现有导师不包含审核后的邮箱；邮箱变更需要专门纠错流程")
+
+    current_affiliations = [
+        item for item in updated["affiliations"] if item["status"] == "current"
+    ]
+    existing_target = next(
+        (item for item in current_affiliations if item["organization_id"] == organization_id),
+        None,
+    )
+    if existing_target is not None:
+        if allow_existing_target:
+            return _append_support(updated, claim), False
+        raise SubmissionError("审核后的机构已是目标导师的当前任职，请刷新审核结论")
+
+    former_affiliation: dict[str, Any] | None = None
+    if action == "transfer_current_affiliation":
+        former_affiliation_id = resolution.get("former_affiliation_id")
+        former_affiliation = next(
+            (
+                item
+                for item in current_affiliations
+                if item["id"] == former_affiliation_id
+            ),
+            None,
+        )
+        if former_affiliation is None:
+            raise SubmissionError("选择的原当前任职不存在或已经不再是当前任职")
+
+    affiliation_id = stable_proposal_entity_id("aff", proposal, "affiliation-resolution")
+    if any(item["id"] == affiliation_id for item in updated["affiliations"]):
+        raise SubmissionError("新任职 ID 已存在，无法安全应用任职判定")
+    if former_affiliation is not None:
+        former_affiliation["status"] = "former"
+        former_affiliation["is_primary"] = False
+        former_affiliation["ended_at"] = observed_date
+        _add_claim_reference(former_affiliation, claim_id)
+        for profile in updated["profiles"]:
+            if (
+                profile.get("status") == "current"
+                and profile.get("affiliation_id") == former_affiliation["id"]
+            ):
+                profile["status"] = "former"
+                _add_claim_reference(profile, claim_id)
+
+    make_primary = bool(resolution["make_primary"])
+    if make_primary:
+        for affiliation in updated["affiliations"]:
+            if affiliation["status"] == "current":
+                affiliation["is_primary"] = False
+    new_affiliation = {
+        "id": affiliation_id,
+        "organization_id": organization_id,
+        "status": "current",
+        "is_primary": make_primary,
+        "title": accepted.get("title"),
+        "started_at": observed_date if action == "transfer_current_affiliation" else None,
+        "ended_at": None,
+        "source_url": verification_url,
+        "observed_at": observed_at,
+        "claim_ids": [claim_id],
+    }
+    updated["affiliations"].append(new_affiliation)
+
+    contact_was_former = contact["status"] == "former"
+    contact["status"] = "current"
+    if not any(
+        item.get("is_primary") and item.get("status") == "current"
+        for item in updated["contacts"]
+    ):
+        contact["is_primary"] = True
+    if action == "transfer_current_affiliation" or contact_was_former:
+        contact["affiliation_id"] = affiliation_id
+        contact["source_url"] = verification_url
+        contact["observed_at"] = observed_at
+    _add_claim_reference(contact, claim_id)
+    _add_claim_reference(primary_name, claim_id)
+
+    profile_url = accepted.get("profile_url")
+    if profile_url:
+        profile = next((item for item in updated["profiles"] if item["url"] == profile_url), None)
+        if profile is None:
+            profile = {
+                "url": profile_url,
+                "status": "current",
+                "affiliation_id": affiliation_id,
+                "observed_at": observed_at,
+                "claim_ids": [claim_id],
+            }
+            updated["profiles"].append(profile)
+        else:
+            profile["status"] = "current"
+            profile["affiliation_id"] = affiliation_id
+            profile["observed_at"] = observed_at
+            _add_claim_reference(profile, claim_id)
+        _add_field_provenance(updated, "profile_url", claim_id)
+
+    _add_field_provenance(updated, "name", claim_id)
+    _add_field_provenance(updated, "email", claim_id)
+    _add_field_provenance(updated, "affiliations", claim_id)
+    for field in ["title", "research_directions", "recent_papers"]:
+        incoming = accepted.get(field)
+        current = updated.get(field)
+        if incoming in (None, "", []):
+            continue
+        if current in (None, "", []):
+            updated[field] = copy.deepcopy(incoming)
+            _add_field_provenance(updated, field, claim_id)
+        elif current == incoming:
+            _add_field_provenance(updated, field, claim_id)
+
+    if claim_id not in updated["claim_ids"]:
+        updated["claim_ids"].append(claim_id)
+    updated["updated_at"] = observed_at
+    updated["last_verified_at"] = observed_at
+    for provenance in updated["field_provenance"].values():
+        provenance[:] = list(dict.fromkeys(provenance))
+    return updated, True
+
+
 def _finalization_context(
     data: RepositoryData,
     *,
@@ -630,6 +807,7 @@ def _finalization_context(
         mentor_by_id=mentor_by_id,
         mentor_index_by_id={mentor["id"]: index for index, mentor in enumerate(data.mentors)},
         email_owner_by_value=email_owner_by_value,
+        resolved_affiliation_targets=set(),
     )
 
 
@@ -672,12 +850,17 @@ def _finalize_proposal_in_context(
         raise SubmissionError("审核后的邮箱无效或属于通用邮箱")
 
     target_mentor_id = proposal.get("target_mentor_id")
+    affiliation_resolution = proposal.get("affiliation_resolution")
     if target_mentor_id is None:
+        if affiliation_resolution is not None:
+            raise SubmissionError("新导师提案不能包含现有导师任职判定")
         mentor_id = proposed_mentor_id(proposal)
     else:
         mentor_id = target_mentor_id
         if mentor_id not in context.mentor_by_id:
             raise SubmissionError("目标导师不存在")
+        if affiliation_resolution is not None and proposal.get("match_status") != "conflict":
+            raise SubmissionError("只有已确认的同一导师冲突可以新增或调动任职")
 
     claim = _claim_payload(proposal, mentor_id=mentor_id, moderator_id=moderator_github_user_id)
     existing_claim = context.claim_by_id.get(claim["id"])
@@ -693,7 +876,19 @@ def _finalize_proposal_in_context(
         mentor_path = data.root / "records" / "mentors" / f"{mentor_id}.json"
     else:
         existing_mentor = context.mentor_by_id[mentor_id]
-        mentor = _append_support(existing_mentor, claim)
+        if affiliation_resolution is None:
+            mentor = _append_support(existing_mentor, claim)
+        else:
+            resolution_key = (mentor_id, organization_id)
+            mentor, created_affiliation = _append_affiliation_resolution(
+                existing_mentor,
+                claim,
+                affiliation_resolution,
+                proposal=proposal,
+                allow_existing_target=resolution_key in context.resolved_affiliation_targets,
+            )
+            if created_affiliation:
+                context.resolved_affiliation_targets.add(resolution_key)
         mentor_path = data.mentor_paths[mentor_id]
     claim_path = data.root / "claims" / str(user_id) / f"{claim['id']}.json"
     write_json_atomic(claim_path, claim)

@@ -110,6 +110,23 @@ def test_review_lazily_renders_large_mentor_groups_and_throttles_autosave() -> N
     assert "window.setTimeout(saveReviewDraft, 800)" in script
 
 
+def test_review_prioritizes_affiliation_conflicts_and_emits_separate_decisions() -> None:
+    html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+    styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+
+    assert 'id="review-identity-count"' in html
+    assert "疑似同一导师，学院不一致" in script
+    assert "append_current_affiliation" in script
+    assert "transfer_current_affiliation" in script
+    assert "collectIdentityResolutions" in script
+    assert "identity_resolutions" in script
+    assert "新增双聘" in script
+    assert "任职调动" in script
+    assert ".identity-resolution" in styles
+    assert ".identity-comparison" in styles
+
+
 def test_public_home_page_prioritizes_using_contributing_and_correcting_data() -> None:
     html = (PROJECT_ROOT / "site" / "index.html").read_text(encoding="utf-8")
     script = (PROJECT_ROOT / "site" / "app.js").read_text(encoding="utf-8")

@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from mentor_data.batch import create_batch_proposals
+from mentor_data.builder import build_dataset
 from mentor_data.errors import SubmissionError
 from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.io_utils import load_json, load_yaml
@@ -22,9 +23,11 @@ from mentor_data.organization_review import (
     load_review_comment,
     load_review_pull,
 )
+from mentor_data.proposals import finalize_proposal
+from mentor_data.repository import load_repository
 from mentor_data.uploads import SAFE_COLUMNS
 
-from .helpers import build_test_repository
+from .helpers import build_test_repository, claim, fixed_datetime, mentor, save_claim, save_mentor
 
 REPOSITORY = "example/repository"
 
@@ -234,6 +237,43 @@ def _review_context(
     return comment, pull
 
 
+def _seed_existing_mentor(root: Path) -> None:
+    initial_claim = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+        profile_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, initial_claim)
+    save_mentor(root, mentor())
+
+
+def _sample_affiliation_decision(
+    group: dict,
+    *,
+    identity_resolutions: list[dict],
+    row_overrides: list[dict] | None = None,
+) -> dict:
+    return {
+        "group_id": group["id"],
+        "action": "resolve",
+        "reason": None,
+        "levels": [
+            _existing("university", "org_sample_university"),
+            _existing("school", "org_sample_ai"),
+            _skip("department"),
+        ],
+        "row_overrides": row_overrides or [],
+        "identity_resolutions": identity_resolutions,
+    }
+
+
 def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
     root = build_test_repository(tmp_path)
     result, manifest, manifest_path = _prepare(
@@ -318,6 +358,400 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
     resolution = load_json(root / "reviews" / "resolutions" / "batch-issue-30.json")
     assert resolution["reviewer"]["github_user_id"] == 999
     assert resolution["rejected_proposal_ids"] == [rejected_id]
+
+
+def test_manifest_shows_existing_mentor_and_current_affiliations_for_safe_conflict(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    _, manifest, _ = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/mentor",
+            )
+        ],
+    )
+
+    row = manifest["groups"][0]["rows"][0]
+
+    assert row["identity"] == {
+        "requires_resolution": True,
+        "target_mentor_id": "mentor_fixture_0001",
+        "match_status": "conflict",
+        "review_reasons": ["email_organization_conflict", "identity_requires_manual_review"],
+        "mentor": {
+            "id": "mentor_fixture_0001",
+            "name": "示例导师",
+            "email": "mentor@example.edu",
+            "affiliations": [
+                {
+                    "id": "aff_fixture_primary",
+                    "organization_id": "org_example_cs",
+                    "status": "current",
+                    "is_primary": True,
+                    "title": "教授",
+                    "source_url": "https://cs.example.edu/faculty/mentor",
+                    "observed_at": "2026-08-03T00:00:00Z",
+                }
+            ],
+        },
+    }
+
+
+def test_review_and_finalization_append_a_dual_appointment_without_duplicate_mentor(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/mentor",
+            )
+        ],
+    )
+    group = manifest["groups"][0]
+    proposal_id = group["rows"][0]["proposal_id"]
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            _sample_affiliation_decision(
+                group,
+                identity_resolutions=[
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "append_current_affiliation",
+                        "make_primary": False,
+                        "former_affiliation_id": None,
+                        "reason": "官网同时列在两个学院的导师页。",
+                    }
+                ],
+            )
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.ready_for_finalization is True
+    proposal_path = root / "proposals" / "batch-issue-30" / "issue-30-row-0001.json"
+    proposal = load_json(proposal_path)
+    assert proposal["affiliation_resolution"] == {
+        "action": "append_current_affiliation",
+        "organization_id": "org_sample_ai",
+        "make_primary": False,
+        "former_affiliation_id": None,
+        "reason": "官网同时列在两个学院的导师页。",
+    }
+
+    _, mentor_path = finalize_proposal(root, proposal_path, moderator_github_user_id=999)
+
+    finalized = load_json(mentor_path)
+    assert len(load_repository(root).mentors) == 1
+    current_affiliations = [
+        affiliation
+        for affiliation in finalized["affiliations"]
+        if affiliation["status"] == "current"
+    ]
+    assert {item["organization_id"] for item in current_affiliations} == {
+        "org_example_cs",
+        "org_sample_ai",
+    }
+    assert sum(item["is_primary"] for item in current_affiliations) == 1
+    primary_affiliation = next(item for item in current_affiliations if item["is_primary"])
+    assert primary_affiliation["organization_id"] == "org_example_cs"
+    assert finalized["contacts"][0]["affiliation_id"] == "aff_fixture_primary"
+
+
+def test_review_and_finalization_transfer_affiliation_and_publish_new_primary_shard(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/mentor",
+            )
+        ],
+    )
+    group = manifest["groups"][0]
+    proposal_id = group["rows"][0]["proposal_id"]
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            _sample_affiliation_decision(
+                group,
+                identity_resolutions=[
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "transfer_current_affiliation",
+                        "make_primary": True,
+                        "former_affiliation_id": "aff_fixture_primary",
+                        "reason": "新学院官网显示该导师已调入本院。",
+                    }
+                ],
+            )
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+    apply_organization_review(root, comment, pull)
+    proposal_path = root / "proposals" / "batch-issue-30" / "issue-30-row-0001.json"
+
+    _, mentor_path = finalize_proposal(root, proposal_path, moderator_github_user_id=999)
+
+    finalized = load_json(mentor_path)
+    former = next(item for item in finalized["affiliations"] if item["id"] == "aff_fixture_primary")
+    current = next(item for item in finalized["affiliations"] if item["status"] == "current")
+    assert former["status"] == "former"
+    assert former["is_primary"] is False
+    assert former["ended_at"] == "2026-08-03"
+    assert current["organization_id"] == "org_sample_ai"
+    assert current["is_primary"] is True
+    assert all(
+        profile["status"] == "former"
+        for profile in finalized["profiles"]
+        if profile["affiliation_id"] == "aff_fixture_primary"
+    )
+
+    latest = build_dataset(root, tmp_path / "dist", generated_at=fixed_datetime())
+    catalog = load_json(tmp_path / "dist" / latest["catalog_path"])
+    sample_university = next(
+        item for item in catalog["universities"] if item["name"] == "样本大学"
+    )
+    shard = load_json(tmp_path / "dist" / sample_university["units"][0]["path"])
+    assert shard["records"][0]["school"] == "人工智能研究院"
+
+
+def test_review_requires_a_safe_affiliation_decision_for_a_new_current_organization(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/mentor",
+            )
+        ],
+    )
+    group = manifest["groups"][0]
+    decision = _decision(
+        30,
+        manifest_path,
+        [_sample_affiliation_decision(group, identity_resolutions=[])],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    with pytest.raises(SubmissionError, match="请选择新增双聘任职、已调动到新学院，或拒绝该导师"):
+        apply_organization_review(root, comment, pull)
+
+
+def test_review_rejects_invalid_or_stale_affiliation_decisions(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/mentor",
+            )
+        ],
+    )
+    group = manifest["groups"][0]
+    proposal_id = group["rows"][0]["proposal_id"]
+    invalid_transfer = _decision(
+        30,
+        manifest_path,
+        [
+            _sample_affiliation_decision(
+                group,
+                identity_resolutions=[
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "transfer_current_affiliation",
+                        "make_primary": True,
+                        "former_affiliation_id": "aff_missing_0001",
+                        "reason": "官网显示调动。",
+                    }
+                ],
+            )
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, invalid_transfer)
+
+    with pytest.raises(SubmissionError, match="原当前任职不存在"):
+        apply_organization_review(root, comment, pull)
+
+    stale_resolution = _decision(
+        30,
+        manifest_path,
+        [
+            _sample_affiliation_decision(
+                group,
+                row_overrides=[
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "map_existing",
+                        "organization_id": "org_example_cs",
+                        "reason": None,
+                    }
+                ],
+                identity_resolutions=[
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "append_current_affiliation",
+                        "make_primary": False,
+                        "former_affiliation_id": None,
+                        "reason": "重复添加。",
+                    }
+                ],
+            )
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, stale_resolution)
+
+    with pytest.raises(SubmissionError, match="已是导师当前任职"):
+        apply_organization_review(root, comment, pull)
+
+
+def test_review_rejects_affiliation_decision_for_a_row_without_safe_identity_match(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "新老师",
+                "new@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/new",
+            )
+        ],
+    )
+    group = manifest["groups"][0]
+    proposal_id = group["rows"][0]["proposal_id"]
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _existing("university", "org_example_university"),
+                    _existing("school", "org_example_cs"),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+                "identity_resolutions": [
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "append_current_affiliation",
+                        "make_primary": False,
+                        "former_affiliation_id": None,
+                        "reason": "不应允许。",
+                    }
+                ],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    with pytest.raises(SubmissionError, match="不支持当前任职判定"):
+        apply_organization_review(root, comment, pull)
+
+
+def test_review_rejects_order_dependent_duplicate_affiliation_outcomes(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/mentor-one",
+            ),
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/mentor-two",
+            ),
+        ],
+    )
+    group = manifest["groups"][0]
+    first_id, second_id = [row["proposal_id"] for row in group["rows"]]
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            _sample_affiliation_decision(
+                group,
+                identity_resolutions=[
+                    {
+                        "proposal_id": first_id,
+                        "action": "append_current_affiliation",
+                        "make_primary": False,
+                        "former_affiliation_id": None,
+                        "reason": "双聘证据。",
+                    },
+                    {
+                        "proposal_id": second_id,
+                        "action": "transfer_current_affiliation",
+                        "make_primary": True,
+                        "former_affiliation_id": "aff_fixture_primary",
+                        "reason": "调动证据。",
+                    },
+                ],
+            )
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    with pytest.raises(SubmissionError, match="多条任职判定互相冲突"):
+        apply_organization_review(root, comment, pull)
 
 
 def test_review_accepts_legacy_manifest_without_profile_url(tmp_path: Path) -> None:

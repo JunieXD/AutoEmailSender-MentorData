@@ -97,6 +97,38 @@
         }
       ]
     },
+    "identityResolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["proposal_id", "action", "make_primary", "former_affiliation_id", "reason"],
+      "properties": {
+        "proposal_id": { "type": "string", "pattern": "^proposal_issue_[1-9][0-9]*_row_[1-9][0-9]*$" },
+        "action": { "enum": ["append_current_affiliation", "transfer_current_affiliation"] },
+        "make_primary": { "type": "boolean" },
+        "former_affiliation_id": {
+          "oneOf": [
+            { "type": "string", "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$" },
+            { "type": "null" }
+          ]
+        },
+        "reason": { "type": "string", "minLength": 1, "maxLength": 500 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "action": { "const": "append_current_affiliation" } } },
+          "then": { "properties": { "former_affiliation_id": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "action": { "const": "transfer_current_affiliation" } } },
+          "then": {
+            "properties": {
+              "make_primary": { "const": true },
+              "former_affiliation_id": { "type": "string", "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$" }
+            }
+          }
+        }
+      ]
+    },
     "groupDecision": {
       "type": "object",
       "additionalProperties": false,
@@ -106,7 +138,8 @@
         "action": { "enum": ["resolve", "reject"] },
         "reason": { "type": ["string", "null"], "maxLength": 500 },
         "levels": { "type": "array", "maxItems": 3, "items": { "$ref": "#/$defs/levelDecision" } },
-        "row_overrides": { "type": "array", "items": { "$ref": "#/$defs/rowOverride" } }
+        "row_overrides": { "type": "array", "items": { "$ref": "#/$defs/rowOverride" } },
+        "identity_resolutions": { "type": "array", "items": { "$ref": "#/$defs/identityResolution" } }
       },
       "allOf": [
         {
