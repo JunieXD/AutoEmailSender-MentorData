@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2b1684cfc3830d4ed9bd"
+      ],
+      "ended_at": null,
+      "id": "aff_dd6c95b7e8466cbc2fb3",
+      "is_primary": true,
+      "observed_at": "2026-08-07T14:02:43Z",
+      "organization_id": "org_auto_7f26d709fdd57fd04ae6",
+      "source_url": "http://grzy.hnu.edu.cn/site/index/liaolei",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2b1684cfc3830d4ed9bd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dd6c95b7e8466cbc2fb3",
+      "claim_ids": [
+        "claim_2b1684cfc3830d4ed9bd"
+      ],
+      "is_primary": true,
+      "normalized_value": "liaolei@hnu.edu.cn",
+      "observed_at": "2026-08-07T14:02:43Z",
+      "source_url": "http://grzy.hnu.edu.cn/site/index/liaolei",
+      "status": "current",
+      "type": "email",
+      "value": "liaolei@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T14:02:43Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2b1684cfc3830d4ed9bd"
+    ],
+    "email": [
+      "claim_2b1684cfc3830d4ed9bd"
+    ],
+    "name": [
+      "claim_2b1684cfc3830d4ed9bd"
+    ],
+    "profile_url": [
+      "claim_2b1684cfc3830d4ed9bd"
+    ],
+    "research_directions": [
+      "claim_2b1684cfc3830d4ed9bd"
+    ],
+    "status": [
+      "claim_2b1684cfc3830d4ed9bd"
+    ],
+    "title": [
+      "claim_2b1684cfc3830d4ed9bd"
+    ]
+  },
+  "id": "mentor_21d3916e5c924ecbd1d0",
+  "last_verified_at": "2026-08-07T14:02:43Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2b1684cfc3830d4ed9bd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "廖蕾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dd6c95b7e8466cbc2fb3",
+      "claim_ids": [
+        "claim_2b1684cfc3830d4ed9bd"
+      ],
+      "observed_at": "2026-08-07T14:02:43Z",
+      "status": "current",
+      "url": "http://grzy.hnu.edu.cn/site/index/liaolei"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微纳电子器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T14:02:43Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.hnu.edu.cn/site/index/liaolei",
+  "title": "教授",
+  "updated_at": "2026-08-07T14:02:43Z"
+}
