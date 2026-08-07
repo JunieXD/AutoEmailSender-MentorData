@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3b11624d9e1fcb984b20"
+      ],
+      "ended_at": null,
+      "id": "aff_f053f10c151f2002729a",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/leiwan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3b11624d9e1fcb984b20"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f053f10c151f2002729a",
+      "claim_ids": [
+        "claim_3b11624d9e1fcb984b20"
+      ],
+      "is_primary": true,
+      "normalized_value": "leiwan@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/leiwan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "leiwan@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3b11624d9e1fcb984b20"
+    ],
+    "email": [
+      "claim_3b11624d9e1fcb984b20"
+    ],
+    "name": [
+      "claim_3b11624d9e1fcb984b20"
+    ],
+    "profile_url": [
+      "claim_3b11624d9e1fcb984b20"
+    ],
+    "recent_papers": [
+      "claim_3b11624d9e1fcb984b20"
+    ],
+    "research_directions": [
+      "claim_3b11624d9e1fcb984b20"
+    ],
+    "status": [
+      "claim_3b11624d9e1fcb984b20"
+    ],
+    "title": [
+      "claim_3b11624d9e1fcb984b20"
+    ]
+  },
+  "id": "mentor_05465c8a263d5ea089dc",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3b11624d9e1fcb984b20"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "万磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f053f10c151f2002729a",
+      "claim_ids": [
+        "claim_3b11624d9e1fcb984b20"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/leiwan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "An Energy Optimization Clustering Scheme for Multi-Hop Underwater Acoustic Cooperative Sensor Networks",
+    "Double Interpolation-Based Linear Fitting for OMP Channel Estimation in OFDM Systems",
+    "Joint CFO, Gridless Channel Estimation and Data Detection for Underwater Acoustic OFDM Systems",
+    "PB-ACR: Node Payload Balanced Ant Colony Optimal Cooperative Routing for Multi-Hop Underwater Acoustic Sensor Networks",
+    "Adaptive Power Allocation for Non-coherent FSK in Time-varying Underwater Acoustic Communication Channels"
+  ],
+  "research_directions": [
+    "水声通信技术研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/leiwan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

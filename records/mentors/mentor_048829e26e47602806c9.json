@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1198bbcc0329bc76a406"
+      ],
+      "ended_at": null,
+      "id": "aff_d6b4cc9ec4476e456760",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/QYY/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1198bbcc0329bc76a406"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d6b4cc9ec4476e456760",
+      "claim_ids": [
+        "claim_1198bbcc0329bc76a406"
+      ],
+      "is_primary": true,
+      "normalized_value": "yyqu@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/QYY/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yyqu@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1198bbcc0329bc76a406"
+    ],
+    "email": [
+      "claim_1198bbcc0329bc76a406"
+    ],
+    "name": [
+      "claim_1198bbcc0329bc76a406"
+    ],
+    "profile_url": [
+      "claim_1198bbcc0329bc76a406"
+    ],
+    "recent_papers": [
+      "claim_1198bbcc0329bc76a406"
+    ],
+    "research_directions": [
+      "claim_1198bbcc0329bc76a406"
+    ],
+    "status": [
+      "claim_1198bbcc0329bc76a406"
+    ],
+    "title": [
+      "claim_1198bbcc0329bc76a406"
+    ]
+  },
+  "id": "mentor_048829e26e47602806c9",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1198bbcc0329bc76a406"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曲延云"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d6b4cc9ec4476e456760",
+      "claim_ids": [
+        "claim_1198bbcc0329bc76a406"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/QYY/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "基于全局局部协同的非均匀图像去雾方法",
+    "AdaFormer: Efficient Transformer with Adaptive Token Sparsification for Image Super-resolution",
+    "SkipDiff: Adaptive Skip Diffusion Model for High-Fidelity Perceptual Image Super-resolution",
+    "Beyond the Label Itself: Latent Labels Enhance Semi-supervised Point Cloud Panoptic Segmentation"
+  ],
+  "research_directions": [
+    "计算机视觉:低层视觉,视频和图像理解,三维点云分析,目标检测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/QYY/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

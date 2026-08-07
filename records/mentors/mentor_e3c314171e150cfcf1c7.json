@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_94a9abc77e407f798906"
+      ],
+      "ended_at": null,
+      "id": "aff_fc94c15192a1f70f1c5b",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_f8412c139f3e1c610912",
+      "source_url": "https://faculty.xmu.edu.cn/luyang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_94a9abc77e407f798906"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fc94c15192a1f70f1c5b",
+      "claim_ids": [
+        "claim_94a9abc77e407f798906"
+      ],
+      "is_primary": true,
+      "normalized_value": "luyang@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/luyang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "luyang@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_94a9abc77e407f798906"
+    ],
+    "email": [
+      "claim_94a9abc77e407f798906"
+    ],
+    "name": [
+      "claim_94a9abc77e407f798906"
+    ],
+    "profile_url": [
+      "claim_94a9abc77e407f798906"
+    ],
+    "recent_papers": [
+      "claim_94a9abc77e407f798906"
+    ],
+    "research_directions": [
+      "claim_94a9abc77e407f798906"
+    ],
+    "status": [
+      "claim_94a9abc77e407f798906"
+    ],
+    "title": [
+      "claim_94a9abc77e407f798906"
+    ]
+  },
+  "id": "mentor_e3c314171e150cfcf1c7",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_94a9abc77e407f798906"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "卢杨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fc94c15192a1f70f1c5b",
+      "claim_ids": [
+        "claim_94a9abc77e407f798906"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/luyang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Decision Boundary-aware Generation for Long-tailed Learning",
+    "SECOS: Semantic Capture for Rigorous Classification in Open-World Semi-Supervised Learning",
+    "Fine-Tuning Impairs the Balancedness of Foundation Models in Long-tailed Personalized Federated Learning",
+    "CUE: Concept-Aware Multi-Label Expansion to Mitigate Concept Confusion in Long-Tailed Learning",
+    "Direct Segmentation without Logits Optimization for Training-Free Open-Vocabulary Semantic Segmentation"
+  ],
+  "research_directions": [
+    "面向开放世界的可信人工智能算法,包含长尾学习、联邦学习、噪声标签学习、持续学习等机器学习前沿领域,以及在视觉工业质检场景中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/luyang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

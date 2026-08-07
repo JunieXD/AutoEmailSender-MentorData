@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_54706ee7611fa3a13b01"
+      ],
+      "ended_at": null,
+      "id": "aff_1db7dbf89929dd73fdad",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_f8412c139f3e1c610912",
+      "source_url": "https://faculty.xmu.edu.cn/lvyina/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_54706ee7611fa3a13b01"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1db7dbf89929dd73fdad",
+      "claim_ids": [
+        "claim_54706ee7611fa3a13b01"
+      ],
+      "is_primary": true,
+      "normalized_value": "elainelv95@gmail.com",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/lvyina/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "elainelv95@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_54706ee7611fa3a13b01"
+    ],
+    "email": [
+      "claim_54706ee7611fa3a13b01"
+    ],
+    "name": [
+      "claim_54706ee7611fa3a13b01"
+    ],
+    "profile_url": [
+      "claim_54706ee7611fa3a13b01"
+    ],
+    "recent_papers": [
+      "claim_54706ee7611fa3a13b01"
+    ],
+    "research_directions": [
+      "claim_54706ee7611fa3a13b01"
+    ],
+    "status": [
+      "claim_54706ee7611fa3a13b01"
+    ],
+    "title": [
+      "claim_54706ee7611fa3a13b01"
+    ]
+  },
+  "id": "mentor_df504594e8ad9598e650",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_54706ee7611fa3a13b01"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕熠娜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1db7dbf89929dd73fdad",
+      "claim_ids": [
+        "claim_54706ee7611fa3a13b01"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/lvyina/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Tetris: Lightweight Hyperparameter Auto-Tuning for Mitigating Performance Spikes in LSM-KVS.Proceedings of the 42nd IEEE International Conference on Data Engineering (ICDE),",
+    "CrossFS: Improving Cross-Domain File System Performance with CRDT-Based Metadata Synchronization.ACM Transactions on Storage,2025,",
+    "Rethinking LSM-tree based Key-Value Stores: A Survey.arXiv preprint arXiv:2507.09642,2025,",
+    "Phoenix: A Refactored I/O Stack for GPU Direct Storage without Phony Buffers.Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis,2025,",
+    "Wentong Li,Yina Lv, Longfei Luo, Yunpeng Song,Liang Shi.Access Characteristic-Guided Remote Swapping Across Mobile Devices.ACM Trans. Archit. Code Optim. (TACO),2024,21(4):",
+    "Tianyu Ren,Qiao Li, Yina Lv, Min Ye, Nan Guan, Chun Jason Xue.Near-Free Lifetime Extension for 3-D NAND Flash via Opportunistic Self-Healing.IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD),2024,43(11):4226-4237."
+  ],
+  "research_directions": [
+    "存储系统,NAND闪存存储介质和键值存储系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/lvyina/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

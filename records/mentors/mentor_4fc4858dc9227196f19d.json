@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_74cafd1c9599b08d5a53"
+      ],
+      "ended_at": null,
+      "id": "aff_8fcd6f620d578504a6c5",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/maobo/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_74cafd1c9599b08d5a53"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8fcd6f620d578504a6c5",
+      "claim_ids": [
+        "claim_74cafd1c9599b08d5a53"
+      ],
+      "is_primary": true,
+      "normalized_value": "maobo@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/maobo/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "maobo@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_74cafd1c9599b08d5a53"
+    ],
+    "email": [
+      "claim_74cafd1c9599b08d5a53"
+    ],
+    "name": [
+      "claim_74cafd1c9599b08d5a53"
+    ],
+    "profile_url": [
+      "claim_74cafd1c9599b08d5a53"
+    ],
+    "research_directions": [
+      "claim_74cafd1c9599b08d5a53"
+    ],
+    "status": [
+      "claim_74cafd1c9599b08d5a53"
+    ],
+    "title": [
+      "claim_74cafd1c9599b08d5a53"
+    ]
+  },
+  "id": "mentor_4fc4858dc9227196f19d",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_74cafd1c9599b08d5a53"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "毛波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8fcd6f620d578504a6c5",
+      "claim_ids": [
+        "claim_74cafd1c9599b08d5a53"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/maobo/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据存储系统及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/maobo/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

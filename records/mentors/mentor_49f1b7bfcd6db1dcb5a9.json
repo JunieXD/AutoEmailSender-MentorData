@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6a96f95695802d3a2932"
+      ],
+      "ended_at": null,
+      "id": "aff_aeb3e34ab11a716ca511",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/SJH1234/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6a96f95695802d3a2932"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aeb3e34ab11a716ca511",
+      "claim_ids": [
+        "claim_6a96f95695802d3a2932"
+      ],
+      "is_primary": true,
+      "normalized_value": "shijh@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/SJH1234/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shijh@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6a96f95695802d3a2932"
+    ],
+    "email": [
+      "claim_6a96f95695802d3a2932"
+    ],
+    "name": [
+      "claim_6a96f95695802d3a2932"
+    ],
+    "profile_url": [
+      "claim_6a96f95695802d3a2932"
+    ],
+    "research_directions": [
+      "claim_6a96f95695802d3a2932"
+    ],
+    "status": [
+      "claim_6a96f95695802d3a2932"
+    ],
+    "title": [
+      "claim_6a96f95695802d3a2932"
+    ]
+  },
+  "id": "mentor_49f1b7bfcd6db1dcb5a9",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6a96f95695802d3a2932"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "石江宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aeb3e34ab11a716ca511",
+      "claim_ids": [
+        "claim_6a96f95695802d3a2932"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/SJH1234/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自组织无线网络、导航信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/SJH1234/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

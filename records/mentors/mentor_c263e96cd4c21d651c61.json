@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d3c35275aae24363bfc1"
+      ],
+      "ended_at": null,
+      "id": "aff_ea3a9c0587c1f97041ee",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_04bb4be5ad0add1dc38b",
+      "source_url": "https://faculty.xmu.edu.cn/CX123456/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d3c35275aae24363bfc1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ea3a9c0587c1f97041ee",
+      "claim_ids": [
+        "claim_d3c35275aae24363bfc1"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengxuan@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/CX123456/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chengxuan@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d3c35275aae24363bfc1"
+    ],
+    "email": [
+      "claim_d3c35275aae24363bfc1"
+    ],
+    "name": [
+      "claim_d3c35275aae24363bfc1"
+    ],
+    "profile_url": [
+      "claim_d3c35275aae24363bfc1"
+    ],
+    "research_directions": [
+      "claim_d3c35275aae24363bfc1"
+    ],
+    "status": [
+      "claim_d3c35275aae24363bfc1"
+    ],
+    "title": [
+      "claim_d3c35275aae24363bfc1"
+    ]
+  },
+  "id": "mentor_c263e96cd4c21d651c61",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d3c35275aae24363bfc1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程轩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ea3a9c0587c1f97041ee",
+      "claim_ids": [
+        "claim_d3c35275aae24363bfc1"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/CX123456/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机图形学、3D视觉和多媒体,尤其是三维重建、图像生成、几何处理等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/CX123456/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

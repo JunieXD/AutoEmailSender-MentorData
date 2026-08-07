@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b754708c4b350e14abcf"
+      ],
+      "ended_at": null,
+      "id": "aff_50f86afd54ba9e09f324",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_f8412c139f3e1c610912",
+      "source_url": "https://faculty.xmu.edu.cn/xdli/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b754708c4b350e14abcf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_50f86afd54ba9e09f324",
+      "claim_ids": [
+        "claim_b754708c4b350e14abcf"
+      ],
+      "is_primary": true,
+      "normalized_value": "xdli@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/xdli/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xdli@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b754708c4b350e14abcf"
+    ],
+    "email": [
+      "claim_b754708c4b350e14abcf"
+    ],
+    "name": [
+      "claim_b754708c4b350e14abcf"
+    ],
+    "profile_url": [
+      "claim_b754708c4b350e14abcf"
+    ],
+    "recent_papers": [
+      "claim_b754708c4b350e14abcf"
+    ],
+    "research_directions": [
+      "claim_b754708c4b350e14abcf"
+    ],
+    "status": [
+      "claim_b754708c4b350e14abcf"
+    ],
+    "title": [
+      "claim_b754708c4b350e14abcf"
+    ]
+  },
+  "id": "mentor_7810aea8643aaad82e90",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b754708c4b350e14abcf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李晓东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_50f86afd54ba9e09f324",
+      "claim_ids": [
+        "claim_b754708c4b350e14abcf"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/xdli/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Safe and Efficient Control: A Subgraph-Augmented Hierarchical Reinforcement Learning Framework for Dynamically Reconfigurable Battery Systems",
+    "GenPlugin: A Plug-and-Play Framework for Long-Tail Generative Recommendation with Exposure Bias Mitigation",
+    "Hybrid Dual-Semantics Modeling for Enhancing Large Language Model Based Recommendation",
+    "BEACON: A Benchmark for Efficient and Accurate Counting of Subgraphs",
+    "Graph Rewiring with Motifs: a Find-and-Replace Approach"
+  ],
+  "research_directions": [
+    "图数据管理和挖掘、图智能体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/xdli/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

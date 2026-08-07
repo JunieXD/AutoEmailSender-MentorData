@@ -290,3 +290,80 @@ organizations:
   successor_id: null
   created_at: '2026-08-07T07:06:42Z'
   updated_at: '2026-08-07T07:06:42Z'
+- id: org_auto_e908089c4ecd82b7e31d
+  type: university
+  canonical_name: 厦门大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://xmu.edu.cn/
+  approved_domains:
+  - xmu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T07:18:28Z'
+  updated_at: '2026-08-07T07:18:28Z'
+- id: org_auto_888cad38a8640add30bb
+  type: school
+  canonical_name: 信息学院
+  parent_id: org_auto_e908089c4ecd82b7e31d
+  aliases: []
+  official_urls:
+  - https://informatics.xmu.edu.cn/
+  approved_domains:
+  - faculty.xmu.edu.cn
+  - informatics.xmu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T07:18:28Z'
+  updated_at: '2026-08-07T07:18:28Z'
+- id: org_auto_8c619f38297aaaadaadb
+  type: department
+  canonical_name: 信息与通信工程系
+  parent_id: org_auto_888cad38a8640add30bb
+  aliases:
+  - 信息学院信息与通信工程系
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T07:18:28Z'
+  updated_at: '2026-08-07T07:18:28Z'
+- id: org_auto_d8f897da7f46e173e7a0
+  type: department
+  canonical_name: 人工智能系
+  parent_id: org_auto_888cad38a8640add30bb
+  aliases:
+  - 厦门大学信息学院人工智能系
+  - 信息学院人工智能系
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T07:18:28Z'
+  updated_at: '2026-08-07T07:18:28Z'
+- id: org_auto_04bb4be5ad0add1dc38b
+  type: department
+  canonical_name: 软件工程系
+  parent_id: org_auto_888cad38a8640add30bb
+  aliases:
+  - 信息学院软件工程系
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T07:18:28Z'
+  updated_at: '2026-08-07T07:18:28Z'
+- id: org_auto_f8412c139f3e1c610912
+  type: department
+  canonical_name: 计算机科学与技术系
+  parent_id: org_auto_888cad38a8640add30bb
+  aliases:
+  - 厦门大学信息学院计算机系
+  - 信息学院计算机科学与技术系
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T07:18:28Z'
+  updated_at: '2026-08-07T07:18:28Z'

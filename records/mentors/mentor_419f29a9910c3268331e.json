@@ -1,0 +1,77 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_12ae96cf7ac0d705710e"
+      ],
+      "ended_at": null,
+      "id": "aff_e9ec4c2148b7588fd253",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://informatics.xmu.edu.cn/list_teacher.jsp?urltype=tp.TpCollegeZWTeachers&wbtreeid=2171&collegeid=1532&postdutyid=1132&language=zh_CN&faggregatequeryid=&checkaggregatequeryid=1132",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_12ae96cf7ac0d705710e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e9ec4c2148b7588fd253",
+      "claim_ids": [
+        "claim_12ae96cf7ac0d705710e"
+      ],
+      "is_primary": true,
+      "normalized_value": "mxp@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://informatics.xmu.edu.cn/list_teacher.jsp?urltype=tp.TpCollegeZWTeachers&wbtreeid=2171&collegeid=1532&postdutyid=1132&language=zh_CN&faggregatequeryid=&checkaggregatequeryid=1132",
+      "status": "current",
+      "type": "email",
+      "value": "mxp@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_12ae96cf7ac0d705710e"
+    ],
+    "email": [
+      "claim_12ae96cf7ac0d705710e"
+    ],
+    "name": [
+      "claim_12ae96cf7ac0d705710e"
+    ],
+    "status": [
+      "claim_12ae96cf7ac0d705710e"
+    ],
+    "title": [
+      "claim_12ae96cf7ac0d705710e"
+    ]
+  },
+  "id": "mentor_419f29a9910c3268331e",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_12ae96cf7ac0d705710e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闵小平"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://informatics.xmu.edu.cn/list_teacher.jsp?urltype=tp.TpCollegeZWTeachers&wbtreeid=2171&collegeid=1532&postdutyid=1132&language=zh_CN&faggregatequeryid=&checkaggregatequeryid=1132",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

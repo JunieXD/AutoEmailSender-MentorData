@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_afbee80626a9b01cccd7"
+      ],
+      "ended_at": null,
+      "id": "aff_fd8b655b4f76281160f6",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/GCM/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_afbee80626a9b01cccd7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fd8b655b4f76281160f6",
+      "claim_ids": [
+        "claim_afbee80626a9b01cccd7"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaocm92@gmail.com",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/GCM/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaocm92@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_afbee80626a9b01cccd7"
+    ],
+    "email": [
+      "claim_afbee80626a9b01cccd7"
+    ],
+    "name": [
+      "claim_afbee80626a9b01cccd7"
+    ],
+    "profile_url": [
+      "claim_afbee80626a9b01cccd7"
+    ],
+    "recent_papers": [
+      "claim_afbee80626a9b01cccd7"
+    ],
+    "research_directions": [
+      "claim_afbee80626a9b01cccd7"
+    ],
+    "status": [
+      "claim_afbee80626a9b01cccd7"
+    ],
+    "title": [
+      "claim_afbee80626a9b01cccd7"
+    ]
+  },
+  "id": "mentor_ec8004c8c251f5c394ca",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_afbee80626a9b01cccd7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高聪明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fd8b655b4f76281160f6",
+      "claim_ids": [
+        "claim_afbee80626a9b01cccd7"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/GCM/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Nemo: A Low-Write-Amplification Cache for Tiny Objects on Log-Structured Flash Devices.The International Conference on Architectural Support for Programming Languages and Operating Systems, ASPLOS'26,",
+    "Ares-Flash: Efficient Parallel Integer Arithmetic Operations Using NAND Flash Memory.The 57th IEEE/ACM International Symposium on Microarchitecture, MICRO'24,",
+    "Midas Touch: Invalid-Data Assisted Reliability and Performance Boost for 3D High-Density Flash.The IEEE International Symposium on High-Performance Computer Architecture, HPCA'24,",
+    "ParaBit: Processing Parallel Bitwise Operations in NAND Flash Memory based SSDs.The 54st Annual IEEE/ACM International Symposium on Microarchitecture, MICRO'21,",
+    "MedFS: Pursuing Low Update Overhead via Metadata-Enabled Delta Compression for Log-structured File System on Mobile Device.The 23rd USENIX Conference on File and Storage Technologies, FAST'25,",
+    "Constructing Large, Durable and Fast SSD System via Reprogramming 3D TLC Flash Memory.The 52nd IEEE/ACM International Symposium on Microarchitecture, MICRO'19,"
+  ],
+  "research_directions": [
+    "智能存储系统、存算融合、操作系统、非易失存储器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/GCM/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7dd0d72ef129f267b0de"
+      ],
+      "ended_at": null,
+      "id": "aff_538f3296aa6f5ba351c8",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/ZDF1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7dd0d72ef129f267b0de"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_538f3296aa6f5ba351c8",
+      "claim_ids": [
+        "claim_7dd0d72ef129f267b0de"
+      ],
+      "is_primary": true,
+      "normalized_value": "dfzhang@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/ZDF1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dfzhang@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7dd0d72ef129f267b0de"
+    ],
+    "email": [
+      "claim_7dd0d72ef129f267b0de"
+    ],
+    "name": [
+      "claim_7dd0d72ef129f267b0de"
+    ],
+    "profile_url": [
+      "claim_7dd0d72ef129f267b0de"
+    ],
+    "recent_papers": [
+      "claim_7dd0d72ef129f267b0de"
+    ],
+    "research_directions": [
+      "claim_7dd0d72ef129f267b0de"
+    ],
+    "status": [
+      "claim_7dd0d72ef129f267b0de"
+    ],
+    "title": [
+      "claim_7dd0d72ef129f267b0de"
+    ]
+  },
+  "id": "mentor_29cc67f8a496cdc9afd3",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7dd0d72ef129f267b0de"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张德富"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_538f3296aa6f5ba351c8",
+      "claim_ids": [
+        "claim_7dd0d72ef129f267b0de"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/ZDF1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "CoPE: Composition-based Poincaré embeddings for link prediction in knowledge graphs",
+    "求解二维装箱问题的强化学习启发式算法",
+    "用于二维不规则排样的离散临界多边形模型",
+    "求解矩形Packing问题的砌墙式启发式算法",
+    "求解三维装箱问题的混合模拟退火算法"
+  ],
+  "research_directions": [
+    "大数据和人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/ZDF1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

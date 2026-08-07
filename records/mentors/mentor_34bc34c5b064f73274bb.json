@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_61fb57c302e98d1c3e4b"
+      ],
+      "ended_at": null,
+      "id": "aff_cfc06f7fe700b7d73382",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_8c619f38297aaaadaadb",
+      "source_url": "https://faculty.xmu.edu.cn/HY1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_61fb57c302e98d1c3e4b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cfc06f7fe700b7d73382",
+      "claim_ids": [
+        "claim_61fb57c302e98d1c3e4b"
+      ],
+      "is_primary": true,
+      "normalized_value": "yhuang2010@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/HY1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yhuang2010@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_61fb57c302e98d1c3e4b"
+    ],
+    "email": [
+      "claim_61fb57c302e98d1c3e4b"
+    ],
+    "name": [
+      "claim_61fb57c302e98d1c3e4b"
+    ],
+    "profile_url": [
+      "claim_61fb57c302e98d1c3e4b"
+    ],
+    "recent_papers": [
+      "claim_61fb57c302e98d1c3e4b"
+    ],
+    "research_directions": [
+      "claim_61fb57c302e98d1c3e4b"
+    ],
+    "status": [
+      "claim_61fb57c302e98d1c3e4b"
+    ],
+    "title": [
+      "claim_61fb57c302e98d1c3e4b"
+    ]
+  },
+  "id": "mentor_34bc34c5b064f73274bb",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_61fb57c302e98d1c3e4b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄悦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cfc06f7fe700b7d73382",
+      "claim_ids": [
+        "claim_61fb57c302e98d1c3e4b"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/HY1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Relation Matters: Foreground-aware Graph-based Relational Reasoning for Domain Adaptive Object Detection",
+    "SRCD: Semantic Reasoning with Compound Domains for Single-Domain Generalized Object Detection",
+    "Mix and Reason: Reasoning over Semantic Topology with Data Mixing for Domain Generalization. NeurIPS, 2022",
+    "CODA: Generalizing to Open and Unseen Domains with Compaction and Disambiguation, Neruips 2023",
+    "Track Any Anomalous Object:A Granular Video Anomaly Detection Pipeline,CVPR 2025"
+  ],
+  "research_directions": [
+    "机器学习理论(鲁棒特征表示)及其在视觉、雷达数据解译等领域的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/HY1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2b8d07a1fb38c4722049"
+      ],
+      "ended_at": null,
+      "id": "aff_12eba53451c1b1638698",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/zhouyiyi/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2b8d07a1fb38c4722049"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_12eba53451c1b1638698",
+      "claim_ids": [
+        "claim_2b8d07a1fb38c4722049"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouyiyi@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/zhouyiyi/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhouyiyi@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2b8d07a1fb38c4722049"
+    ],
+    "email": [
+      "claim_2b8d07a1fb38c4722049"
+    ],
+    "name": [
+      "claim_2b8d07a1fb38c4722049"
+    ],
+    "profile_url": [
+      "claim_2b8d07a1fb38c4722049"
+    ],
+    "recent_papers": [
+      "claim_2b8d07a1fb38c4722049"
+    ],
+    "research_directions": [
+      "claim_2b8d07a1fb38c4722049"
+    ],
+    "status": [
+      "claim_2b8d07a1fb38c4722049"
+    ],
+    "title": [
+      "claim_2b8d07a1fb38c4722049"
+    ]
+  },
+  "id": "mentor_553a74827562b42507a6",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2b8d07a1fb38c4722049"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周奕毅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_12eba53451c1b1638698",
+      "claim_ids": [
+        "claim_2b8d07a1fb38c4722049"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/zhouyiyi/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Parameter and Computation Efficient Transfer Learning for Vision-Language Pre-trained Models",
+    "Cheap and Quick: Efficient Vision-Language Instruction Tuning for Large Language Models",
+    "SeqTR: A Simple Yet Universal Network for Visual Grounding",
+    "TRAR: Routing the Attention Spans in Transformer for Visual Question Answering",
+    "RefCLIP: A Universal Teacher for Weakly Supervised Referring Expression Comprehension"
+  ],
+  "research_directions": [
+    "高效多模态学习、多模态大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/zhouyiyi/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

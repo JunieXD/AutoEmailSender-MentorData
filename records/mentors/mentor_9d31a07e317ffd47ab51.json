@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2540fdc37014fe69ff4c"
+      ],
+      "ended_at": null,
+      "id": "aff_f882572ff62f18d3fd85",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_d8f897da7f46e173e7a0",
+      "source_url": "https://faculty.xmu.edu.cn/zzeng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2540fdc37014fe69ff4c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f882572ff62f18d3fd85",
+      "claim_ids": [
+        "claim_2540fdc37014fe69ff4c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zzeng@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/zzeng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zzeng@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2540fdc37014fe69ff4c"
+    ],
+    "email": [
+      "claim_2540fdc37014fe69ff4c"
+    ],
+    "name": [
+      "claim_2540fdc37014fe69ff4c"
+    ],
+    "profile_url": [
+      "claim_2540fdc37014fe69ff4c"
+    ],
+    "research_directions": [
+      "claim_2540fdc37014fe69ff4c"
+    ],
+    "status": [
+      "claim_2540fdc37014fe69ff4c"
+    ],
+    "title": [
+      "claim_2540fdc37014fe69ff4c"
+    ]
+  },
+  "id": "mentor_9d31a07e317ffd47ab51",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2540fdc37014fe69ff4c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曾展鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f882572ff62f18d3fd85",
+      "claim_ids": [
+        "claim_2540fdc37014fe69ff4c"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/zzeng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大模型的高效计算与模型压缩"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/zzeng/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

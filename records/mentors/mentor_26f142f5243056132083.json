@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6e97bbc185409334a5e"
+      ],
+      "ended_at": null,
+      "id": "aff_725d8d36c186d06fa246",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/CKY/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c6e97bbc185409334a5e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_725d8d36c186d06fa246",
+      "claim_ids": [
+        "claim_c6e97bbc185409334a5e"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenkeyu@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/CKY/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenkeyu@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6e97bbc185409334a5e"
+    ],
+    "email": [
+      "claim_c6e97bbc185409334a5e"
+    ],
+    "name": [
+      "claim_c6e97bbc185409334a5e"
+    ],
+    "profile_url": [
+      "claim_c6e97bbc185409334a5e"
+    ],
+    "research_directions": [
+      "claim_c6e97bbc185409334a5e"
+    ],
+    "status": [
+      "claim_c6e97bbc185409334a5e"
+    ]
+  },
+  "id": "mentor_26f142f5243056132083",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6e97bbc185409334a5e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈柯宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_725d8d36c186d06fa246",
+      "claim_ids": [
+        "claim_c6e97bbc185409334a5e"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/CKY/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "水下传感网、信息处理、智慧海洋"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/CKY/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-07T07:14:08Z"
+}
