@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6b8393eb7e86a9b364c1"
+      ],
+      "ended_at": null,
+      "id": "aff_3832e9591b6c79b2be74",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:48Z",
+      "organization_id": "org_auto_f18c7a74ca9ef2c90de6",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1251/1503.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6b8393eb7e86a9b364c1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3832e9591b6c79b2be74",
+      "claim_ids": [
+        "claim_6b8393eb7e86a9b364c1"
+      ],
+      "is_primary": true,
+      "normalized_value": "madandan@nwpu.edu.cn",
+      "observed_at": "2026-08-07T08:07:48Z",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1251/1503.htm",
+      "status": "current",
+      "type": "email",
+      "value": "madandan@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6b8393eb7e86a9b364c1"
+    ],
+    "email": [
+      "claim_6b8393eb7e86a9b364c1"
+    ],
+    "name": [
+      "claim_6b8393eb7e86a9b364c1"
+    ],
+    "profile_url": [
+      "claim_6b8393eb7e86a9b364c1"
+    ],
+    "recent_papers": [
+      "claim_6b8393eb7e86a9b364c1"
+    ],
+    "research_directions": [
+      "claim_6b8393eb7e86a9b364c1"
+    ],
+    "status": [
+      "claim_6b8393eb7e86a9b364c1"
+    ],
+    "title": [
+      "claim_6b8393eb7e86a9b364c1"
+    ]
+  },
+  "id": "mentor_4bba9ca0ea30bed0da42",
+  "last_verified_at": "2026-08-07T08:07:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6b8393eb7e86a9b364c1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马单丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3832e9591b6c79b2be74",
+      "claim_ids": [
+        "claim_6b8393eb7e86a9b364c1"
+      ],
+      "observed_at": "2026-08-07T08:07:48Z",
+      "status": "current",
+      "url": "https://iopen.nwpu.edu.cn/info/1251/1503.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Yuan, Y. Zhao, and D. Ma*, “NACAD: A Noise-Adaptive Context-Aware Detector for Remote Sensing Small Objects,” IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-13, 2023.",
+    "Y. Yuan, Z. Li, and D. Ma*, “Feature-Aligned Single-Stage Rotation Object Detection with Continuous Boundary,” IEEE Transactions on Geoscience and Remote Sensing, 2022.",
+    "Z. Li, Y. Yuan, and D. Ma*, “Multi-Scale Sample Selection Based on Statistical Characteristics for Object Detection,” International Conference on Acoustics, Speech and Signal Processing (IEEE ICASSP), 2021.",
+    "Y. Yuan, W. Su, and D. Ma*, “Efficient Dynamic Scene Deblurring Using Spatially Variant Deconvolution Network with Optical Flow Guided Training,” IEEE Conference on Computer Vision and Pattern Recognition (IEEE CVPR), 2020.",
+    "D. Ma, Y. Yuan, and Q. Wang*, “Hyperspectral Anomaly Detection Based on Separability-Aware Sample Cascade,” Remote Sensing, 2019.",
+    "D. Ma, Y. Yuan, and Q. Wang*, “Hyperspectral Anomaly Detection via Discriminative Feature Learning with Multiple-Dictionary Sparse Representation,” Remote Sensing, 2018.",
+    "D. Ma, Y. Yuan, and Q. Wang*, “A Sparse Dictionary Learning Method for Hyperspectral Anomaly Detection with Capped Norm,” IEEE International Geoscience and Remote Sensing Symposium, 2017.",
+    "Y. Yuan, D. Ma, and Q. Wang*, “Hyperspectral Anomaly Detection by Graph Pixel Selection,” IEEE Transactions on Cybernetics, 2016."
+  ],
+  "research_directions": [
+    "多模态认知计算、跨域遥感"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:48Z",
+  "status_reason": null,
+  "status_source_url": "https://iopen.nwpu.edu.cn/info/1251/1503.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T08:07:48Z"
+}

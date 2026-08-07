@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e6c7a16020720a2012a4"
+      ],
+      "ended_at": null,
+      "id": "aff_33b4211c23de267387d3",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:48Z",
+      "organization_id": "org_auto_f18c7a74ca9ef2c90de6",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1015/4986.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e6c7a16020720a2012a4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_33b4211c23de267387d3",
+      "claim_ids": [
+        "claim_e6c7a16020720a2012a4"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiangli@nwpu.edu.cn",
+      "observed_at": "2026-08-07T08:07:48Z",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1015/4986.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiangli@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e6c7a16020720a2012a4"
+    ],
+    "email": [
+      "claim_e6c7a16020720a2012a4"
+    ],
+    "name": [
+      "claim_e6c7a16020720a2012a4"
+    ],
+    "profile_url": [
+      "claim_e6c7a16020720a2012a4"
+    ],
+    "recent_papers": [
+      "claim_e6c7a16020720a2012a4"
+    ],
+    "research_directions": [
+      "claim_e6c7a16020720a2012a4"
+    ],
+    "status": [
+      "claim_e6c7a16020720a2012a4"
+    ],
+    "title": [
+      "claim_e6c7a16020720a2012a4"
+    ]
+  },
+  "id": "mentor_2e2d2d39b7f67daeafc9",
+  "last_verified_at": "2026-08-07T08:07:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e6c7a16020720a2012a4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_33b4211c23de267387d3",
+      "claim_ids": [
+        "claim_e6c7a16020720a2012a4"
+      ],
+      "observed_at": "2026-08-07T08:07:48Z",
+      "status": "current",
+      "url": "https://iopen.nwpu.edu.cn/info/1015/4986.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Jia, Q. Zhou, J. Gao, Q. Li, and Q. Wang, \"Like Humans to Few-Shot Learning through Knowledge Permeation of Visual and Language,\" IEEE Transactions on Multimedia, 2025.",
+    "Q. Wang, M. Zhang, J. Ren, and Q. Li*, \"Exploring Context Alignment and Structure Perception for Building Change Detection,\" IEEE Transactions on Geoscience and Remote Sensing, vol. 63, pp. 1-10, 2025.",
+    "Q. Wang, Y. Jia, J. Gao, and Q. Li*, \"Embedding Generalized Semantic Knowledge into Few-Shot Remote Sensing Segmentation,\" IEEE Transactions on Geoscience and Remote Sensing, vol. 63, pp. 1-13, 2025.",
+    "W. Jing, K. Chi, Q. Li, and Q. Wang, \"ChangeRD: A Registration-Integrated Change Detection Framework for Unaligned Remote Sensing Images,\" ISPRS Journal of Photogrammetry and Remote Sensing, vol. 220, pp. 64-74, 2025.",
+    "Q. Li, Q. Wang, and X. Li, \"Exploring the Relationship between 2D/3D Convolution for Hyperspectral Image Super-Resolution,\" IEEE Transactions on Geoscience and Remote Sensing, vol. 59, no. 10, pp. 8693-8703, 2021.",
+    "Q. Li, Y. Yuan, X. Jia, and Q. Wang, \"Dual-Stage Approach Toward Hyperspectral Image Super-Resolution,\" IEEE Transactions on Image Processing, vol. 31, pp. 7252-7263, 2022.",
+    "Q. Li, M. Gong, Y. Yuan, and Q. Wang, \"RGB-induced Feature Modulation Network for Hyperspectral Image Super-Resolution,\" IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-11, 2023.",
+    "Q. Li, M. Gong, Y. Yuan, and Q. Wang, \"Symmetrical Feature Propagation Network for Hyperspectral Image Super-Resolution,\" IEEE Transactions on Geoscience and Remote Sensing, vol. 60, pp. 1-12, 2023."
+  ],
+  "research_directions": [
+    "跨域遥感、多模态认知计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:48Z",
+  "status_reason": null,
+  "status_source_url": "https://iopen.nwpu.edu.cn/info/1015/4986.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T08:07:48Z"
+}

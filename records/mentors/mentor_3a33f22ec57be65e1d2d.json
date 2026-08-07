@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3d4ecc02b75cce8e3f1e"
+      ],
+      "ended_at": null,
+      "id": "aff_68999f8a892dfff0bd2a",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:48Z",
+      "organization_id": "org_auto_f18c7a74ca9ef2c90de6",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1015/5996.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3d4ecc02b75cce8e3f1e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_68999f8a892dfff0bd2a",
+      "claim_ids": [
+        "claim_3d4ecc02b75cce8e3f1e"
+      ],
+      "is_primary": true,
+      "normalized_value": "qing.ni@nwpu.edu.cn",
+      "observed_at": "2026-08-07T08:07:48Z",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1015/5996.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qing.ni@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ],
+    "email": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ],
+    "name": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ],
+    "profile_url": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ],
+    "recent_papers": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ],
+    "research_directions": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ],
+    "status": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ],
+    "title": [
+      "claim_3d4ecc02b75cce8e3f1e"
+    ]
+  },
+  "id": "mentor_3a33f22ec57be65e1d2d",
+  "last_verified_at": "2026-08-07T08:07:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3d4ecc02b75cce8e3f1e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "倪清"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_68999f8a892dfff0bd2a",
+      "claim_ids": [
+        "claim_3d4ecc02b75cce8e3f1e"
+      ],
+      "observed_at": "2026-08-07T08:07:48Z",
+      "status": "current",
+      "url": "https://iopen.nwpu.edu.cn/info/1015/5996.htm"
+    }
+  ],
+  "recent_papers": [
+    "Q. Ni, et al., Data-driven prognostic scheme for bearings based on a novel health indicator and gated recurrent unit network. IEEE Transactions on Industrial Informatics,2023, 19.2, 1301-1311. (中科院一区, ESI 高被引文章)",
+    "Q. Ni, et al., Data-driven bearing health management using a novel multi-scale fused feature and gated recurrent unit. Reliability Engineering & System Safety,2024, 242, 109753. (中科院一区, ESI 热点&高被引文章)",
+    "Q. Ni, et al., Physics-Informed Residual Network (PIResNet) for rolling element bearing fault diagnostics. Mechanical Systems and Signal Processing,2023, 200, 110544. (中科院一区, ESI 热点&高被引文章)",
+    "Q. Ni, et al., A fault information-guided variational mode decomposition (FIVMD) method for rolling element bearings diagnosis. Mechanical Systems and Signal Processing,2022, 164, 108216. (中科院一区, ESI 高被引文章)",
+    "Q. Ni, et al., A novel correntropy-based band selection method for the fault diagnosis of bearings under fault-irrelevant impulsive and cyclostationary interferences. Mechanical Systems and Signal Processing,2021, 153, 107498. (中科院一区)"
+  ],
+  "research_directions": [
+    "智能运维、大模型、物理信息神经网络、数字孪生、信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:48Z",
+  "status_reason": null,
+  "status_source_url": "https://iopen.nwpu.edu.cn/info/1015/5996.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T08:07:48Z"
+}
