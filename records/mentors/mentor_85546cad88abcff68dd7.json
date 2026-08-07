@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_20f24dde1ae55e336a2f"
+      ],
+      "ended_at": null,
+      "id": "aff_e5a4e672520ecf84c6d9",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_93d70925d69f4ea8f465",
+      "source_url": "https://ee.jlu.edu.cn/info/1019/9294.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_20f24dde1ae55e336a2f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e5a4e672520ecf84c6d9",
+      "claim_ids": [
+        "claim_20f24dde1ae55e336a2f"
+      ],
+      "is_primary": true,
+      "normalized_value": "xibinwang@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1019/9294.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xibinwang@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_20f24dde1ae55e336a2f"
+    ],
+    "email": [
+      "claim_20f24dde1ae55e336a2f"
+    ],
+    "name": [
+      "claim_20f24dde1ae55e336a2f"
+    ],
+    "profile_url": [
+      "claim_20f24dde1ae55e336a2f"
+    ],
+    "recent_papers": [
+      "claim_20f24dde1ae55e336a2f"
+    ],
+    "research_directions": [
+      "claim_20f24dde1ae55e336a2f"
+    ],
+    "status": [
+      "claim_20f24dde1ae55e336a2f"
+    ],
+    "title": [
+      "claim_20f24dde1ae55e336a2f"
+    ]
+  },
+  "id": "mentor_85546cad88abcff68dd7",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_20f24dde1ae55e336a2f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王希斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e5a4e672520ecf84c6d9",
+      "claim_ids": [
+        "claim_20f24dde1ae55e336a2f"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1019/9294.htm"
+    }
+  ],
+  "recent_papers": [
+    "Broadband and reconfigurable dual-mode optical switch with low power-consumption",
+    "Low-power thermo-optic switch based on polymer waveguide integrated with graphene heater",
+    "Mode-insensitive and mode-selective optical switch based on asymmetric Y-junctions and MMI couplers",
+    "Ultra-broadband multimode fiber-to-chip edge coupler based on periodically segmented waveguides",
+    "1 × 2 mode-independent polymeric thermo-optic switch based on a Mach–Zehnder interferometer with a multimode interferometer",
+    "Mode-independent thermo-optic switch based on the total-internal-reflection effect",
+    "Multimode optical switch based on cascaded Mach–Zehnder interferometer waveguides",
+    "Mode-selective modulator and switch based on graphene-polymer hybrid waveguides"
+  ],
+  "research_directions": [
+    "面向光通信/片上光互连领域的光波导材料、器件及其光子集成芯片,具体包括:高速电光调制器/电光开关",
+    "低功耗热光开关/可变光衰减器",
+    "有源复合光波导及其多功能集成芯片",
+    "多维复用光子集成芯片",
+    "异质异构光子集成芯片"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1019/9294.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}

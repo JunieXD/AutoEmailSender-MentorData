@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ea8f8ae0c79899ff21d0"
+      ],
+      "ended_at": null,
+      "id": "aff_cff897b3703012d8c0f8",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_6b237ad529f2c77f029f",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/2564.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ea8f8ae0c79899ff21d0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cff897b3703012d8c0f8",
+      "claim_ids": [
+        "claim_ea8f8ae0c79899ff21d0"
+      ],
+      "is_primary": true,
+      "normalized_value": "xusu@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/2564.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xusu@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ea8f8ae0c79899ff21d0"
+    ],
+    "email": [
+      "claim_ea8f8ae0c79899ff21d0"
+    ],
+    "name": [
+      "claim_ea8f8ae0c79899ff21d0"
+    ],
+    "profile_url": [
+      "claim_ea8f8ae0c79899ff21d0"
+    ],
+    "research_directions": [
+      "claim_ea8f8ae0c79899ff21d0"
+    ],
+    "status": [
+      "claim_ea8f8ae0c79899ff21d0"
+    ],
+    "title": [
+      "claim_ea8f8ae0c79899ff21d0"
+    ]
+  },
+  "id": "mentor_ecb358f7878990c62d9d",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ea8f8ae0c79899ff21d0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐速"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cff897b3703012d8c0f8",
+      "claim_ids": [
+        "claim_ea8f8ae0c79899ff21d0"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1021/2564.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向通信、探测与感知的太赫兹光子学片上器件与芯片",
+    "新型频谱调控器件:设计、制造、驱动与系统集成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1021/2564.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}

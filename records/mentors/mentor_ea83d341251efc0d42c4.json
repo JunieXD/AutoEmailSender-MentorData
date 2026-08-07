@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_16e1996938c3519b6105"
+      ],
+      "ended_at": null,
+      "id": "aff_03849bfc61161f414bba",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_6b237ad529f2c77f029f",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/1873.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_16e1996938c3519b6105"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_03849bfc61161f414bba",
+      "claim_ids": [
+        "claim_16e1996938c3519b6105"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaofl@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/1873.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaofl@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_16e1996938c3519b6105"
+    ],
+    "email": [
+      "claim_16e1996938c3519b6105"
+    ],
+    "name": [
+      "claim_16e1996938c3519b6105"
+    ],
+    "profile_url": [
+      "claim_16e1996938c3519b6105"
+    ],
+    "recent_papers": [
+      "claim_16e1996938c3519b6105"
+    ],
+    "research_directions": [
+      "claim_16e1996938c3519b6105"
+    ],
+    "status": [
+      "claim_16e1996938c3519b6105"
+    ],
+    "title": [
+      "claim_16e1996938c3519b6105"
+    ]
+  },
+  "id": "mentor_ea83d341251efc0d42c4",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_16e1996938c3519b6105"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郜峰利"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_03849bfc61161f414bba",
+      "claim_ids": [
+        "claim_16e1996938c3519b6105"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1021/1873.htm"
+    }
+  ],
+  "recent_papers": [
+    "Thermal analysis and an improved heat-dissipation structure design for an AlGaInP-LED micro-array device",
+    "Electrical Derivative Measurement of High-Power InGaAs LDs Under Scanning Current with Variable Step",
+    "Effects of unit size on current density and illuminance of micro-LED-array",
+    "Scalar-matrix-structured ghost imaging",
+    "Three-dimensional ghost imaging using acoustic transducer",
+    "Analysis of origin of measured 1/f noise in high-power semiconductor laser diodes far below threshold current",
+    "Object reconstitution using pseudo-inverse for ghost imaging",
+    "The influence of 1/ f noise on the electrical derivative initial peak of high-power semiconductor laser diodes"
+  ],
+  "research_directions": [
+    "半导体器件噪声与可靠性,关联成像目标重构方法,嵌入式系统开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1021/1873.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}
