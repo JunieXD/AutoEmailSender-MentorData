@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1d552f83ce81c0fd11b1"
+      ],
+      "ended_at": null,
+      "id": "aff_9fcc47247197a6935798",
+      "is_primary": true,
+      "observed_at": "2026-08-07T14:02:43Z",
+      "organization_id": "org_auto_7f26d709fdd57fd04ae6",
+      "source_url": "http://grzy.hnu.edu.cn/site/index/yangqisheng",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1d552f83ce81c0fd11b1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9fcc47247197a6935798",
+      "claim_ids": [
+        "claim_1d552f83ce81c0fd11b1"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangqs@hnu.edu.cn",
+      "observed_at": "2026-08-07T14:02:43Z",
+      "source_url": "http://grzy.hnu.edu.cn/site/index/yangqisheng",
+      "status": "current",
+      "type": "email",
+      "value": "yangqs@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T14:02:43Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1d552f83ce81c0fd11b1"
+    ],
+    "email": [
+      "claim_1d552f83ce81c0fd11b1"
+    ],
+    "name": [
+      "claim_1d552f83ce81c0fd11b1"
+    ],
+    "profile_url": [
+      "claim_1d552f83ce81c0fd11b1"
+    ],
+    "research_directions": [
+      "claim_1d552f83ce81c0fd11b1"
+    ],
+    "status": [
+      "claim_1d552f83ce81c0fd11b1"
+    ],
+    "title": [
+      "claim_1d552f83ce81c0fd11b1"
+    ]
+  },
+  "id": "mentor_69244dea74f34ae8f95e",
+  "last_verified_at": "2026-08-07T14:02:43Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1d552f83ce81c0fd11b1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨其晟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9fcc47247197a6935798",
+      "claim_ids": [
+        "claim_1d552f83ce81c0fd11b1"
+      ],
+      "observed_at": "2026-08-07T14:02:43Z",
+      "status": "current",
+      "url": "http://grzy.hnu.edu.cn/site/index/yangqisheng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光电异构计算芯片、智能可穿戴传感器和系统、AI4Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T14:02:43Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.hnu.edu.cn/site/index/yangqisheng",
+  "title": "副教授",
+  "updated_at": "2026-08-07T14:02:43Z"
+}

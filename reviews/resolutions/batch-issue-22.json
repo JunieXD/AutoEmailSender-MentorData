@@ -1,0 +1,474 @@
+{
+  "created_organization_ids": [
+    "org_auto_0556191888e7cd3beb95",
+    "org_auto_14b78b495cc73fd41cd6",
+    "org_auto_6f61b883b7e493270de3",
+    "org_auto_7f26d709fdd57fd04ae6",
+    "org_auto_9207d471f7da86768d9a",
+    "org_auto_c92fbc03dcd075c7dfb5",
+    "org_auto_dfe9ab23ef31a0648925",
+    "org_auto_e317d58ce6e6520073f5",
+    "org_auto_e8ac679a2a948265093f"
+  ],
+  "decided_at": "2026-08-07T14:08:55Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_178365dd46b84a23",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2af129556b09f16a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "机器人视觉感知与控制技术国家工程研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_304f597b7a362400",
+      "identity_resolutions": [],
+      "levels": [],
+      "reason": "学院不对",
+      "row_overrides": []
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_45a83701412f8c05",
+      "identity_resolutions": [],
+      "levels": [],
+      "reason": "学院不对",
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_472f43a3ad2f7d17",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_607792438e89edad",
+      "identity_resolutions": [],
+      "levels": [],
+      "reason": "学院不对",
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_85058bbc775406bf",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体物理与器件系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_8575e326f99076d1",
+      "identity_resolutions": [],
+      "levels": [],
+      "reason": "学院不对",
+      "row_overrides": []
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_943c1cea4a090b8b",
+      "identity_resolutions": [],
+      "levels": [],
+      "reason": "学院不对",
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_96d0e3ce35a733c5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "集成电路科学与工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ac3e87b720fd7b4c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "岳麓山工业创新中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_db0ac4d7299dacea",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "能源与动力工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f42e4614c5013106",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hnu.edu.cn"
+          ],
+          "canonical_name": "湖南大学",
+          "level": "university",
+          "official_url": "https://hnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体学院(集成电路学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_fff9dd6e63fd20e1",
+      "identity_resolutions": [],
+      "levels": [],
+      "reason": "学院不对",
+      "row_overrides": []
+    }
+  ],
+  "id": "organization_review_issue_22",
+  "invalid_rows": [],
+  "issue": {
+    "number": 22,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/22"
+  },
+  "manifest_sha256": "cf7ade016450d8cbcfb94fa9fbe878b6c756ea2c0cea1f38efabd996e6295c3a",
+  "mapped_proposal_ids": [
+    "proposal_issue_22_row_1",
+    "proposal_issue_22_row_10",
+    "proposal_issue_22_row_11",
+    "proposal_issue_22_row_12",
+    "proposal_issue_22_row_13",
+    "proposal_issue_22_row_14",
+    "proposal_issue_22_row_15",
+    "proposal_issue_22_row_16",
+    "proposal_issue_22_row_17",
+    "proposal_issue_22_row_18",
+    "proposal_issue_22_row_19",
+    "proposal_issue_22_row_2",
+    "proposal_issue_22_row_20",
+    "proposal_issue_22_row_21",
+    "proposal_issue_22_row_22",
+    "proposal_issue_22_row_23",
+    "proposal_issue_22_row_24",
+    "proposal_issue_22_row_25",
+    "proposal_issue_22_row_26",
+    "proposal_issue_22_row_27",
+    "proposal_issue_22_row_28",
+    "proposal_issue_22_row_29",
+    "proposal_issue_22_row_3",
+    "proposal_issue_22_row_32",
+    "proposal_issue_22_row_33",
+    "proposal_issue_22_row_37",
+    "proposal_issue_22_row_38",
+    "proposal_issue_22_row_39",
+    "proposal_issue_22_row_4",
+    "proposal_issue_22_row_40",
+    "proposal_issue_22_row_41",
+    "proposal_issue_22_row_42",
+    "proposal_issue_22_row_43",
+    "proposal_issue_22_row_44",
+    "proposal_issue_22_row_45",
+    "proposal_issue_22_row_46",
+    "proposal_issue_22_row_47",
+    "proposal_issue_22_row_48",
+    "proposal_issue_22_row_49",
+    "proposal_issue_22_row_5",
+    "proposal_issue_22_row_50",
+    "proposal_issue_22_row_51",
+    "proposal_issue_22_row_52",
+    "proposal_issue_22_row_53",
+    "proposal_issue_22_row_56",
+    "proposal_issue_22_row_59",
+    "proposal_issue_22_row_6",
+    "proposal_issue_22_row_61",
+    "proposal_issue_22_row_7",
+    "proposal_issue_22_row_8",
+    "proposal_issue_22_row_9"
+  ],
+  "pull_request_number": 23,
+  "rejected_proposal_ids": [
+    "proposal_issue_22_row_30",
+    "proposal_issue_22_row_31",
+    "proposal_issue_22_row_34",
+    "proposal_issue_22_row_35",
+    "proposal_issue_22_row_36",
+    "proposal_issue_22_row_54",
+    "proposal_issue_22_row_55",
+    "proposal_issue_22_row_57",
+    "proposal_issue_22_row_58",
+    "proposal_issue_22_row_60",
+    "proposal_issue_22_row_62"
+  ],
+  "review_comment_id": 5218096988,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

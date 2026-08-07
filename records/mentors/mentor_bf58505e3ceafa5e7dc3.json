@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1ba6313686212c317225"
+      ],
+      "ended_at": null,
+      "id": "aff_f326bf779ac31549257c",
+      "is_primary": true,
+      "observed_at": "2026-08-07T14:02:43Z",
+      "organization_id": "org_auto_e8ac679a2a948265093f",
+      "source_url": "https://grzy.hnu.edu.cn/site/index/liujie4",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1ba6313686212c317225"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f326bf779ac31549257c",
+      "claim_ids": [
+        "claim_1ba6313686212c317225"
+      ],
+      "is_primary": true,
+      "normalized_value": "jie_liu@hnu.edu.cn",
+      "observed_at": "2026-08-07T14:02:43Z",
+      "source_url": "https://grzy.hnu.edu.cn/site/index/liujie4",
+      "status": "current",
+      "type": "email",
+      "value": "jie_liu@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T14:02:43Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1ba6313686212c317225"
+    ],
+    "email": [
+      "claim_1ba6313686212c317225"
+    ],
+    "name": [
+      "claim_1ba6313686212c317225"
+    ],
+    "profile_url": [
+      "claim_1ba6313686212c317225"
+    ],
+    "research_directions": [
+      "claim_1ba6313686212c317225"
+    ],
+    "status": [
+      "claim_1ba6313686212c317225"
+    ],
+    "title": [
+      "claim_1ba6313686212c317225"
+    ]
+  },
+  "id": "mentor_bf58505e3ceafa5e7dc3",
+  "last_verified_at": "2026-08-07T14:02:43Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1ba6313686212c317225"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f326bf779ac31549257c",
+      "claim_ids": [
+        "claim_1ba6313686212c317225"
+      ],
+      "observed_at": "2026-08-07T14:02:43Z",
+      "status": "current",
+      "url": "https://grzy.hnu.edu.cn/site/index/liujie4"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "先进光刻、芯片架构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T14:02:43Z",
+  "status_reason": null,
+  "status_source_url": "https://grzy.hnu.edu.cn/site/index/liujie4",
+  "title": "教授",
+  "updated_at": "2026-08-07T14:02:43Z"
+}

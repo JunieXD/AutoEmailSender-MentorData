@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c42bd71cd82b139b6634"
+      ],
+      "ended_at": null,
+      "id": "aff_e45dc18583a2a1467467",
+      "is_primary": true,
+      "observed_at": "2026-08-07T14:02:43Z",
+      "organization_id": "org_auto_e8ac679a2a948265093f",
+      "source_url": "https://grzy.hnu.edu.cn/site/index/zhangjiliang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c42bd71cd82b139b6634"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e45dc18583a2a1467467",
+      "claim_ids": [
+        "claim_c42bd71cd82b139b6634"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjiliang@hnu.edu.cn",
+      "observed_at": "2026-08-07T14:02:43Z",
+      "source_url": "https://grzy.hnu.edu.cn/site/index/zhangjiliang",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjiliang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T14:02:43Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c42bd71cd82b139b6634"
+    ],
+    "email": [
+      "claim_c42bd71cd82b139b6634"
+    ],
+    "name": [
+      "claim_c42bd71cd82b139b6634"
+    ],
+    "profile_url": [
+      "claim_c42bd71cd82b139b6634"
+    ],
+    "research_directions": [
+      "claim_c42bd71cd82b139b6634"
+    ],
+    "status": [
+      "claim_c42bd71cd82b139b6634"
+    ],
+    "title": [
+      "claim_c42bd71cd82b139b6634"
+    ]
+  },
+  "id": "mentor_51424950d0b0f161c215",
+  "last_verified_at": "2026-08-07T14:02:43Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c42bd71cd82b139b6634"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张吉良"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e45dc18583a2a1467467",
+      "claim_ids": [
+        "claim_c42bd71cd82b139b6634"
+      ],
+      "observed_at": "2026-08-07T14:02:43Z",
+      "status": "current",
+      "url": "https://grzy.hnu.edu.cn/site/index/zhangjiliang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "集成电路硬件安全、先进密码硬件加速(后量子密码,同态加密,安全多方计算等)、处理器芯片安全、新型计算架构(存算一体、随机计算、近似计算等)的安全应用。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T14:02:43Z",
+  "status_reason": null,
+  "status_source_url": "https://grzy.hnu.edu.cn/site/index/zhangjiliang",
+  "title": "教授",
+  "updated_at": "2026-08-07T14:02:43Z"
+}

@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_482e9196fd520a9abb2e"
+      ],
+      "ended_at": null,
+      "id": "aff_91f50c7aeda553a83c05",
+      "is_primary": true,
+      "observed_at": "2026-08-07T14:02:43Z",
+      "organization_id": "org_auto_dfe9ab23ef31a0648925",
+      "source_url": "https://sic.hnu.edu.cn/info/1198/2183.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_482e9196fd520a9abb2e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_91f50c7aeda553a83c05",
+      "claim_ids": [
+        "claim_482e9196fd520a9abb2e"
+      ],
+      "is_primary": true,
+      "normalized_value": "jean-pierre.raskin@uclouvain.be",
+      "observed_at": "2026-08-07T14:02:43Z",
+      "source_url": "https://sic.hnu.edu.cn/info/1198/2183.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jean-pierre.raskin@uclouvain.be"
+    }
+  ],
+  "created_at": "2026-08-07T14:02:43Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_482e9196fd520a9abb2e"
+    ],
+    "email": [
+      "claim_482e9196fd520a9abb2e"
+    ],
+    "name": [
+      "claim_482e9196fd520a9abb2e"
+    ],
+    "profile_url": [
+      "claim_482e9196fd520a9abb2e"
+    ],
+    "recent_papers": [
+      "claim_482e9196fd520a9abb2e"
+    ],
+    "research_directions": [
+      "claim_482e9196fd520a9abb2e"
+    ],
+    "status": [
+      "claim_482e9196fd520a9abb2e"
+    ],
+    "title": [
+      "claim_482e9196fd520a9abb2e"
+    ]
+  },
+  "id": "mentor_3976145556bffe00da49",
+  "last_verified_at": "2026-08-07T14:02:43Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_482e9196fd520a9abb2e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "Jean-Pierre Raskin"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_91f50c7aeda553a83c05",
+      "claim_ids": [
+        "claim_482e9196fd520a9abb2e"
+      ],
+      "observed_at": "2026-08-07T14:02:43Z",
+      "status": "current",
+      "url": "https://sic.hnu.edu.cn/info/1198/2183.htm"
+    }
+  ],
+  "recent_papers": [
+    "A wideband power amplifier and a configurable balanced power amplifier in 22 nm FD-SOI for 5G 24-43 GHz applications, IEEE Transactions on Circuits and Systems I",
+    "AlN/Si interface engineering to mitigate RF losses in MOCVD grown GaN-on-Si substrates, Applied Physics Letters",
+    "Double Buried Oxide Trap-Rich substrates for high frequency applications”, IEEE Electron Device Letters",
+    "RF modelling of trap-rich passivated semiconductor substrates: Part I - Static and dynamic physics of carriers and traps, IEEE Transactions on Electron Devices",
+    "RF modelling of trap-rich passivated semiconductor substrates: Part II - Parameter impact on harmonic distortion, IEEE Transactions on Electron Devices",
+    "SOI technologies for RF and millimeter-wave integrated circuits, IEEE Journal of the Electron Devices Society (invited article)",
+    "On the Separate Extraction of Self-Heating and Substrate Effects in FD-SOI MOSFET, IEEE Electron Device Letters",
+    "Improved split CV mobility extraction in 28 nm FD SOI transistors, IEEE Electron Device Letters"
+  ],
+  "research_directions": [
+    "先进SOI MOSFET的建模、宽频表征与制造",
+    "MEMS/NEMS传感器的微纳加工,以及纳米尺度材料本征参数的提取"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T14:02:43Z",
+  "status_reason": null,
+  "status_source_url": "https://sic.hnu.edu.cn/info/1198/2183.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T14:02:43Z"
+}
