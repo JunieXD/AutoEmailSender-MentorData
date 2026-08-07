@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2d61bdba9e84f427149c"
+      ],
+      "ended_at": null,
+      "id": "aff_7c1041e2a5b502061d53",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:48Z",
+      "organization_id": "org_auto_f18c7a74ca9ef2c90de6",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1251/7086.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2d61bdba9e84f427149c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7c1041e2a5b502061d53",
+      "claim_ids": [
+        "claim_2d61bdba9e84f427149c"
+      ],
+      "is_primary": true,
+      "normalized_value": "lincoln.liu@nwpu.edu.cn",
+      "observed_at": "2026-08-07T08:07:48Z",
+      "source_url": "https://iopen.nwpu.edu.cn/info/1251/7086.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lincoln.liu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2d61bdba9e84f427149c"
+    ],
+    "email": [
+      "claim_2d61bdba9e84f427149c"
+    ],
+    "name": [
+      "claim_2d61bdba9e84f427149c"
+    ],
+    "profile_url": [
+      "claim_2d61bdba9e84f427149c"
+    ],
+    "recent_papers": [
+      "claim_2d61bdba9e84f427149c"
+    ],
+    "research_directions": [
+      "claim_2d61bdba9e84f427149c"
+    ],
+    "status": [
+      "claim_2d61bdba9e84f427149c"
+    ],
+    "title": [
+      "claim_2d61bdba9e84f427149c"
+    ]
+  },
+  "id": "mentor_a81da3e924efb05fccfe",
+  "last_verified_at": "2026-08-07T08:07:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2d61bdba9e84f427149c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘康"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7c1041e2a5b502061d53",
+      "claim_ids": [
+        "claim_2d61bdba9e84f427149c"
+      ],
+      "observed_at": "2026-08-07T08:07:48Z",
+      "status": "current",
+      "url": "https://iopen.nwpu.edu.cn/info/1251/7086.htm"
+    }
+  ],
+  "recent_papers": [
+    "S. Wang, K. Liu*, J. Huang, and X. Li, “FLDet: Faster and Lighter Aerial Object Detector,” IEEE Transactions on Circuits and Systems for Video Technology, vol. 35, no. 5, pp. 4450-4463, 2025. [PDF]",
+    "S. Jia, Y. Dong, C. Mao, L. Zheng, Y. Li, and K. Liu, “Multi-Path Feature Enhancement Network for Real-time Semantic Segmentation,” Neurocomputing, vol. 637, 2025. [PDF]",
+    "任晓斌, 刘康, 张文伟, 刘杜娟. 陕西打造全国领先的临地产业生态研究. 陕西蓝皮书:陕西经济发展报告, 99–112 (2025).",
+    "C. Guo, K. Liu*, D. Deng, and X. Li, “ViT Spatio-Temporal Feature Fusion for Aerial Object Tracking,” IEEE Transactions on Circuits and Systems for Video Technology, vol. 34, no. 8, pp. 6749-6761, 2024. [PDF]",
+    "R. Huang, K. Zhang, W. Shen, K. Liu*, “Dual Attention Mechanism for Multi-scale Low-Altitude UAV Detection,” Advances in Guidance, Navigation and Control, vol 1343, pp. 182-194, 2024. [PDF]",
+    "M. Chen, Z. Miao, K. Liu*, “GFE-Det: Global Feature Enhanced Method for Low-Altitude Target Detection,” Advances in Guidance, Navigation and Control, vol 1345, pp. 251-261, 2024. [PDF]",
+    "C. Xu, K. Liu*, and X. Li*, “Meta++ Network for Few-Shot Aerospace Crack Segmentation,” in Proc. IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2023. [PDF]",
+    "K. Liu and X. Li*, “Bio-inspired Multi-Sensory Pathway Network for Change Detection,” Cognitive Computation, vol. 14, no. 4, pp. 1421-1434, 2022. [PDF]"
+  ],
+  "research_directions": [
+    "智能光电检测、目标探测识别、结构健康监测、多模态认知计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:48Z",
+  "status_reason": null,
+  "status_source_url": "https://iopen.nwpu.edu.cn/info/1251/7086.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T08:07:48Z"
+}

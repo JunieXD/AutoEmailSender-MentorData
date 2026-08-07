@@ -529,3 +529,29 @@ organizations:
   successor_id: null
   created_at: '2026-08-07T08:11:14Z'
   updated_at: '2026-08-07T08:11:14Z'
+- id: org_auto_c8be69f24d66d48113c9
+  type: university
+  canonical_name: 西北工业大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://nwpu.edu.cn/
+  approved_domains:
+  - nwpu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T08:12:07Z'
+  updated_at: '2026-08-07T08:12:07Z'
+- id: org_auto_f18c7a74ca9ef2c90de6
+  type: institute
+  canonical_name: 光电与智能研究院
+  parent_id: org_auto_c8be69f24d66d48113c9
+  aliases: []
+  official_urls:
+  - https://iopen.nwpu.edu.cn/
+  approved_domains:
+  - iopen.nwpu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-07T08:12:07Z'
+  updated_at: '2026-08-07T08:12:07Z'
