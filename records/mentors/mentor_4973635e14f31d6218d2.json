@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8f5fc5c8892a22b67df8"
+      ],
+      "ended_at": null,
+      "id": "aff_6d982eb80f8be826db32",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_8431215cb3a7deced46a",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=557",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8f5fc5c8892a22b67df8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6d982eb80f8be826db32",
+      "claim_ids": [
+        "claim_8f5fc5c8892a22b67df8"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiuzhlin@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=557",
+      "status": "current",
+      "type": "email",
+      "value": "qiuzhlin@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8f5fc5c8892a22b67df8"
+    ],
+    "email": [
+      "claim_8f5fc5c8892a22b67df8"
+    ],
+    "name": [
+      "claim_8f5fc5c8892a22b67df8"
+    ],
+    "profile_url": [
+      "claim_8f5fc5c8892a22b67df8"
+    ],
+    "research_directions": [
+      "claim_8f5fc5c8892a22b67df8"
+    ],
+    "status": [
+      "claim_8f5fc5c8892a22b67df8"
+    ],
+    "title": [
+      "claim_8f5fc5c8892a22b67df8"
+    ]
+  },
+  "id": "mentor_4973635e14f31d6218d2",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8f5fc5c8892a22b67df8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林秋镇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6d982eb80f8be826db32",
+      "claim_ids": [
+        "claim_8f5fc5c8892a22b67df8"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=557"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "AI安全与强化学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=557",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

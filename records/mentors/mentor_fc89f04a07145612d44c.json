@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_64b7650d14cda2300e17"
+      ],
+      "ended_at": null,
+      "id": "aff_7abe444b97687fa35bc0",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_dcab6b3252c5c976336a",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=515",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_64b7650d14cda2300e17"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7abe444b97687fa35bc0",
+      "claim_ids": [
+        "claim_64b7650d14cda2300e17"
+      ],
+      "is_primary": true,
+      "normalized_value": "csshzhong@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=515",
+      "status": "current",
+      "type": "email",
+      "value": "csshzhong@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_64b7650d14cda2300e17"
+    ],
+    "email": [
+      "claim_64b7650d14cda2300e17"
+    ],
+    "name": [
+      "claim_64b7650d14cda2300e17"
+    ],
+    "profile_url": [
+      "claim_64b7650d14cda2300e17"
+    ],
+    "research_directions": [
+      "claim_64b7650d14cda2300e17"
+    ],
+    "status": [
+      "claim_64b7650d14cda2300e17"
+    ],
+    "title": [
+      "claim_64b7650d14cda2300e17"
+    ]
+  },
+  "id": "mentor_fc89f04a07145612d44c",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_64b7650d14cda2300e17"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "钟圣华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7abe444b97687fa35bc0",
+      "claim_ids": [
+        "claim_64b7650d14cda2300e17"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=515"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "脑机接口",
+    "多模态大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=515",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

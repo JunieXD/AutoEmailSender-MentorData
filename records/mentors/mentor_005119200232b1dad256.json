@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4e4331306c0d6c39e2e3"
+      ],
+      "ended_at": null,
+      "id": "aff_4c75c789293109047c1a",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_5f8a6cfa8ae7032b0322",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=563",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4e4331306c0d6c39e2e3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4c75c789293109047c1a",
+      "claim_ids": [
+        "claim_4e4331306c0d6c39e2e3"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangxuan@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=563",
+      "status": "current",
+      "type": "email",
+      "value": "yangxuan@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4e4331306c0d6c39e2e3"
+    ],
+    "email": [
+      "claim_4e4331306c0d6c39e2e3"
+    ],
+    "name": [
+      "claim_4e4331306c0d6c39e2e3"
+    ],
+    "profile_url": [
+      "claim_4e4331306c0d6c39e2e3"
+    ],
+    "research_directions": [
+      "claim_4e4331306c0d6c39e2e3"
+    ],
+    "status": [
+      "claim_4e4331306c0d6c39e2e3"
+    ],
+    "title": [
+      "claim_4e4331306c0d6c39e2e3"
+    ]
+  },
+  "id": "mentor_005119200232b1dad256",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4e4331306c0d6c39e2e3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨烜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4c75c789293109047c1a",
+      "claim_ids": [
+        "claim_4e4331306c0d6c39e2e3"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=563"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=563",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

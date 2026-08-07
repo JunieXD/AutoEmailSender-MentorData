@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e9914d2415e1ef8ff8c8"
+      ],
+      "ended_at": null,
+      "id": "aff_764ea9afa3851e6aca55",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_d1b9ee15482c72f5fe81",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1298",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e9914d2415e1ef8ff8c8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_764ea9afa3851e6aca55",
+      "claim_ids": [
+        "claim_e9914d2415e1ef8ff8c8"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanglj@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1298",
+      "status": "current",
+      "type": "email",
+      "value": "zhanglj@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e9914d2415e1ef8ff8c8"
+    ],
+    "email": [
+      "claim_e9914d2415e1ef8ff8c8"
+    ],
+    "name": [
+      "claim_e9914d2415e1ef8ff8c8"
+    ],
+    "profile_url": [
+      "claim_e9914d2415e1ef8ff8c8"
+    ],
+    "research_directions": [
+      "claim_e9914d2415e1ef8ff8c8"
+    ],
+    "status": [
+      "claim_e9914d2415e1ef8ff8c8"
+    ]
+  },
+  "id": "mentor_3ba7da393f5e33c6c829",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e9914d2415e1ef8ff8c8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张良杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_764ea9afa3851e6aca55",
+      "claim_ids": [
+        "claim_e9914d2415e1ef8ff8c8"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=1298"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "服务计算、人工智能、AIGC"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=1298",
+  "title": null,
+  "updated_at": "2026-08-07T07:40:45Z"
+}

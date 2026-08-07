@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e9698e4c404e0ec91377"
+      ],
+      "ended_at": null,
+      "id": "aff_9fea7366eebbe84083e5",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_d1b9ee15482c72f5fe81",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=766",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e9698e4c404e0ec91377"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9fea7366eebbe84083e5",
+      "claim_ids": [
+        "claim_e9698e4c404e0ec91377"
+      ],
+      "is_primary": true,
+      "normalized_value": "yongpan@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=766",
+      "status": "current",
+      "type": "email",
+      "value": "yongpan@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e9698e4c404e0ec91377"
+    ],
+    "email": [
+      "claim_e9698e4c404e0ec91377"
+    ],
+    "name": [
+      "claim_e9698e4c404e0ec91377"
+    ],
+    "profile_url": [
+      "claim_e9698e4c404e0ec91377"
+    ],
+    "research_directions": [
+      "claim_e9698e4c404e0ec91377"
+    ],
+    "status": [
+      "claim_e9698e4c404e0ec91377"
+    ],
+    "title": [
+      "claim_e9698e4c404e0ec91377"
+    ]
+  },
+  "id": "mentor_e89400d5e65e56d69428",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e9698e4c404e0ec91377"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邹永攀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9fea7366eebbe84083e5",
+      "claim_ids": [
+        "claim_e9698e4c404e0ec91377"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=766"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能物联网、可穿戴计算、移动计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=766",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

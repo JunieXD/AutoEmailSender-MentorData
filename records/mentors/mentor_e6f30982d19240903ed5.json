@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9ccd70d5f72505b331f9"
+      ],
+      "ended_at": null,
+      "id": "aff_f2dcbfe29782e9c56177",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_037bfd7125cf63b7bc0e",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1265",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9ccd70d5f72505b331f9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f2dcbfe29782e9c56177",
+      "claim_ids": [
+        "claim_9ccd70d5f72505b331f9"
+      ],
+      "is_primary": true,
+      "normalized_value": "qizhang@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1265",
+      "status": "current",
+      "type": "email",
+      "value": "qizhang@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9ccd70d5f72505b331f9"
+    ],
+    "email": [
+      "claim_9ccd70d5f72505b331f9"
+    ],
+    "name": [
+      "claim_9ccd70d5f72505b331f9"
+    ],
+    "profile_url": [
+      "claim_9ccd70d5f72505b331f9"
+    ],
+    "recent_papers": [
+      "claim_9ccd70d5f72505b331f9"
+    ],
+    "research_directions": [
+      "claim_9ccd70d5f72505b331f9"
+    ],
+    "status": [
+      "claim_9ccd70d5f72505b331f9"
+    ],
+    "title": [
+      "claim_9ccd70d5f72505b331f9"
+    ]
+  },
+  "id": "mentor_e6f30982d19240903ed5",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9ccd70d5f72505b331f9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张琦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f2dcbfe29782e9c56177",
+      "claim_ids": [
+        "claim_9ccd70d5f72505b331f9"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=1265"
+    }
+  ],
+  "recent_papers": [
+    "Qi Zhang, Jixuan Chen, Kaiyi Zhang, Antoni B. Chan, and Hui Huang*. Multi-view Crowd Tracking Transformer with View-Ground Interactions Under Large Real-World Scenes. CVPR 2026.",
+    "Qi Zhang, Kaiyi Zhang, Antoni B. Chan, and Hui Huang*. Mahalanobis Distance-based Multi-view Optimal Transport for Multi-view Crowd Localization. ECCV 2024.",
+    "Qi Zhang and Antoni B. Chan. Wide-Area Crowd Counting: Multi-View Fusion Networks for Counting in Large Scenes. International Journal of Computer Vision (IJCV), 130:1938-1960, 2022.",
+    "Qi Zhang, Wei Lin, and Antoni B. Chan. Cross-View Cross-Scene Multi-View Crowd Counting. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2021.",
+    "Qi Zhang and Antoni B. Chan. Wide-Area Crowd Counting via Ground-Plane Density Maps and Multi-View Fusion CNNs. In: IEEE/CVF Conf. on Computer Vision and Pattern Recognition (CVPR), 2019."
+  ],
+  "research_directions": [
+    "三维视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=1265",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

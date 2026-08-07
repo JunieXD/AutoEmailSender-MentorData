@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bb31b103d7b7bddd1fae"
+      ],
+      "ended_at": null,
+      "id": "aff_9c047db68dd8061635e0",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_d1b9ee15482c72f5fe81",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1101",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bb31b103d7b7bddd1fae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9c047db68dd8061635e0",
+      "claim_ids": [
+        "claim_bb31b103d7b7bddd1fae"
+      ],
+      "is_primary": true,
+      "normalized_value": "junyangchen@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1101",
+      "status": "current",
+      "type": "email",
+      "value": "junyangchen@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bb31b103d7b7bddd1fae"
+    ],
+    "email": [
+      "claim_bb31b103d7b7bddd1fae"
+    ],
+    "name": [
+      "claim_bb31b103d7b7bddd1fae"
+    ],
+    "profile_url": [
+      "claim_bb31b103d7b7bddd1fae"
+    ],
+    "recent_papers": [
+      "claim_bb31b103d7b7bddd1fae"
+    ],
+    "research_directions": [
+      "claim_bb31b103d7b7bddd1fae"
+    ],
+    "status": [
+      "claim_bb31b103d7b7bddd1fae"
+    ],
+    "title": [
+      "claim_bb31b103d7b7bddd1fae"
+    ]
+  },
+  "id": "mentor_b2937e6e48a34b6d72d2",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bb31b103d7b7bddd1fae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈俊扬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9c047db68dd8061635e0",
+      "claim_ids": [
+        "claim_bb31b103d7b7bddd1fae"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=1101"
+    }
+  ],
+  "recent_papers": [
+    "One paper accepted in IEEE Transactions on Services Computing, TSC 2026.",
+    "Two papers accepted in IEEE Transactions on Knowledge and Data Engineering, TKDE 2026.",
+    "Two papers accepted in AAAI Conference on Artificial Intelligence, AAAI 2026.",
+    "One paper accepted in Companion Proceedings of the Web Conference, WWW 2026.",
+    "One paper accepted in International Conference on Machine Learning, ICML 2025.",
+    "One paper accepted in Information Fusion, 2025.",
+    "Three papers accepted in International Joint Conferences on Artificial Intelligence, IJCAI 2025.",
+    "One paper accepted in IEEE Transactions on Knowledge and Data Engineering, TKDE 2025."
+  ],
+  "research_directions": [
+    "数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=1101",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

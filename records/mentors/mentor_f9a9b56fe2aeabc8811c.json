@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eff374e04b07fb315905"
+      ],
+      "ended_at": null,
+      "id": "aff_6e71cd4753ab4c2436dc",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_037bfd7125cf63b7bc0e",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1310",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_eff374e04b07fb315905"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6e71cd4753ab4c2436dc",
+      "claim_ids": [
+        "claim_eff374e04b07fb315905"
+      ],
+      "is_primary": true,
+      "normalized_value": "chencq@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=1310",
+      "status": "current",
+      "type": "email",
+      "value": "chencq@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eff374e04b07fb315905"
+    ],
+    "email": [
+      "claim_eff374e04b07fb315905"
+    ],
+    "name": [
+      "claim_eff374e04b07fb315905"
+    ],
+    "profile_url": [
+      "claim_eff374e04b07fb315905"
+    ],
+    "recent_papers": [
+      "claim_eff374e04b07fb315905"
+    ],
+    "research_directions": [
+      "claim_eff374e04b07fb315905"
+    ],
+    "status": [
+      "claim_eff374e04b07fb315905"
+    ]
+  },
+  "id": "mentor_f9a9b56fe2aeabc8811c",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eff374e04b07fb315905"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈超奇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6e71cd4753ab4c2436dc",
+      "claim_ids": [
+        "claim_eff374e04b07fb315905"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=1310"
+    }
+  ],
+  "recent_papers": [
+    "Chaoqi Chen, Qile Xu, Wenjun Zhou, and Hui Huang. \"PointLLM-R: Enhancing 3D Point Cloud Reasoning via Chain-of-Thought.\" ACM SIGGRAPH, 2026.",
+    "Yingkai Yang, Chaoqi Chen†, and Hui Huang. \"Back to Source: Open-Set Continual Test-Time Adaptation via Domain Compensation.\" CVPR, 2026.",
+    "Bingjun Luo, Tony Wang, Chaoqi Chen†, and Xinpeng Ding. \"ST-SimDiff: Balancing Spatiotemporal Similarity and Difference for Efficient Video Understanding with MLLMs.\" ICLR, 2026.",
+    "Mingrong Gong, Chaoqi Chen†, Luyao Tang, Yuxi Wang, and Sergio Escalera. \"4D Point Cloud Segmentation via Active Test-Time Adaptation.\" AAAI, 2026.",
+    "Luyao Tang, Kunze Huang, Chaoqi Chen†, Yuxuan Yuan, Chenxin Li, Xiaotong Tu, Xinghao Ding, and Yue Huang. \"Dissecting generalized category discovery: Multiplex consensus under self-deconstruction.\" ICCV, 2025 Highlight",
+    "Yuxuan Yuan, Luyao Tang, Yixin Chen, Chaoqi Chen†, Yue Huang, and Xinghao Ding. \"ASGS: Single-Domain Generalizable Open-Set Object Detection via Adaptive Subgraph Searching.\" ICCV, 2025.",
+    "Luyao Tang, Yuxuan Yuan, Chaoqi Chen†, Zeyu Zhang, Yue Huang, and Kun Zhang. \"OCRT: Boosting Foundation Models in the Open World with Object-Concept-Relation Triad.\" CVPR, 2025.",
+    "Mingrong Gong, Chaoqi Chen†, Qingqiang Sun, Yue Wang, and Hui Huang. \"Out-of-Distribution Detection with Prototypical Outlier Proxy.\" AAAI, 2025."
+  ],
+  "research_directions": [
+    "机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=1310",
+  "title": null,
+  "updated_at": "2026-08-07T07:40:45Z"
+}

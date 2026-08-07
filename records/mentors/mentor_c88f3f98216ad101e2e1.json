@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1caa1b79593b35f39622"
+      ],
+      "ended_at": null,
+      "id": "aff_9376a2ad372eb4c24d24",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_dcab6b3252c5c976336a",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=593",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1caa1b79593b35f39622"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9376a2ad372eb4c24d24",
+      "claim_ids": [
+        "claim_1caa1b79593b35f39622"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuyy@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=593",
+      "status": "current",
+      "type": "email",
+      "value": "zhuyy@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1caa1b79593b35f39622"
+    ],
+    "email": [
+      "claim_1caa1b79593b35f39622"
+    ],
+    "name": [
+      "claim_1caa1b79593b35f39622"
+    ],
+    "profile_url": [
+      "claim_1caa1b79593b35f39622"
+    ],
+    "research_directions": [
+      "claim_1caa1b79593b35f39622"
+    ],
+    "status": [
+      "claim_1caa1b79593b35f39622"
+    ],
+    "title": [
+      "claim_1caa1b79593b35f39622"
+    ]
+  },
+  "id": "mentor_c88f3f98216ad101e2e1",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1caa1b79593b35f39622"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱映映"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9376a2ad372eb4c24d24",
+      "claim_ids": [
+        "claim_1caa1b79593b35f39622"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=593"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、计算机视觉,多媒体大数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=593",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_29534ce4c009737a014f"
+      ],
+      "ended_at": null,
+      "id": "aff_5929f51cf774a302e3f1",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_60b36e7f4da7f30fcf74",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=953",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_29534ce4c009737a014f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5929f51cf774a302e3f1",
+      "claim_ids": [
+        "claim_29534ce4c009737a014f"
+      ],
+      "is_primary": true,
+      "normalized_value": "davidgao@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=953",
+      "status": "current",
+      "type": "email",
+      "value": "davidgao@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_29534ce4c009737a014f"
+    ],
+    "email": [
+      "claim_29534ce4c009737a014f"
+    ],
+    "name": [
+      "claim_29534ce4c009737a014f"
+    ],
+    "profile_url": [
+      "claim_29534ce4c009737a014f"
+    ],
+    "research_directions": [
+      "claim_29534ce4c009737a014f"
+    ],
+    "status": [
+      "claim_29534ce4c009737a014f"
+    ],
+    "title": [
+      "claim_29534ce4c009737a014f"
+    ]
+  },
+  "id": "mentor_76275656b7e5a258c5a5",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_29534ce4c009737a014f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高灿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5929f51cf774a302e3f1",
+      "claim_ids": [
+        "claim_29534ce4c009737a014f"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=953"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习,计算机视觉,多模态异常检测,医学大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=953",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_da8461776980d492d306"
+      ],
+      "ended_at": null,
+      "id": "aff_13fab7fd8d1fa59960e0",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_c0556b8be760ea7e2e66",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=582",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_da8461776980d492d306"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_13fab7fd8d1fa59960e0",
+      "claim_ids": [
+        "claim_da8461776980d492d306"
+      ],
+      "is_primary": true,
+      "normalized_value": "lizhi@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=582",
+      "status": "current",
+      "type": "email",
+      "value": "lizhi@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_da8461776980d492d306"
+    ],
+    "email": [
+      "claim_da8461776980d492d306"
+    ],
+    "name": [
+      "claim_da8461776980d492d306"
+    ],
+    "profile_url": [
+      "claim_da8461776980d492d306"
+    ],
+    "research_directions": [
+      "claim_da8461776980d492d306"
+    ],
+    "status": [
+      "claim_da8461776980d492d306"
+    ],
+    "title": [
+      "claim_da8461776980d492d306"
+    ]
+  },
+  "id": "mentor_d0fd404844a7997366d7",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_da8461776980d492d306"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_13fab7fd8d1fa59960e0",
+      "claim_ids": [
+        "claim_da8461776980d492d306"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=582"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "传感器网络结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=582",
+  "title": "讲师",
+  "updated_at": "2026-08-07T07:40:45Z"
+}
