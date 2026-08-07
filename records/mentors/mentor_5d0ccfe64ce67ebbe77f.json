@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4a8a1208fca8e78ef84a"
+      ],
+      "ended_at": null,
+      "id": "aff_5833397830b72a8504fb",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_f8b3e0e21a93d8d2eaad",
+      "source_url": "http://people.ucas.edu.cn/~xiarb",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_4a8a1208fca8e78ef84a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5833397830b72a8504fb",
+      "claim_ids": [
+        "claim_4a8a1208fca8e78ef84a"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiarb@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "http://people.ucas.edu.cn/~xiarb",
+      "status": "current",
+      "type": "email",
+      "value": "xiarb@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4a8a1208fca8e78ef84a"
+    ],
+    "email": [
+      "claim_4a8a1208fca8e78ef84a"
+    ],
+    "name": [
+      "claim_4a8a1208fca8e78ef84a"
+    ],
+    "profile_url": [
+      "claim_4a8a1208fca8e78ef84a"
+    ],
+    "research_directions": [
+      "claim_4a8a1208fca8e78ef84a"
+    ],
+    "status": [
+      "claim_4a8a1208fca8e78ef84a"
+    ],
+    "title": [
+      "claim_4a8a1208fca8e78ef84a"
+    ]
+  },
+  "id": "mentor_5d0ccfe64ce67ebbe77f",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4a8a1208fca8e78ef84a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "夏仁波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5833397830b72a8504fb",
+      "claim_ids": [
+        "claim_4a8a1208fca8e78ef84a"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "http://people.ucas.edu.cn/~xiarb"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "检测技术与自动化装置"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "http://people.ucas.edu.cn/~xiarb",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

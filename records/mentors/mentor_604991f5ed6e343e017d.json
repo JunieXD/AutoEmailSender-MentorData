@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_746c81a049d31a9a75f2"
+      ],
+      "ended_at": null,
+      "id": "aff_b9917227c939e1917f5d",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_d56e38f7af694fea4cfb",
+      "source_url": "http://people.ucas.edu.cn/~hanzhi",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_746c81a049d31a9a75f2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b9917227c939e1917f5d",
+      "claim_ids": [
+        "claim_746c81a049d31a9a75f2"
+      ],
+      "is_primary": true,
+      "normalized_value": "hanzhi@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "http://people.ucas.edu.cn/~hanzhi",
+      "status": "current",
+      "type": "email",
+      "value": "hanzhi@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_746c81a049d31a9a75f2"
+    ],
+    "email": [
+      "claim_746c81a049d31a9a75f2"
+    ],
+    "name": [
+      "claim_746c81a049d31a9a75f2"
+    ],
+    "profile_url": [
+      "claim_746c81a049d31a9a75f2"
+    ],
+    "recent_papers": [
+      "claim_746c81a049d31a9a75f2"
+    ],
+    "research_directions": [
+      "claim_746c81a049d31a9a75f2"
+    ],
+    "status": [
+      "claim_746c81a049d31a9a75f2"
+    ],
+    "title": [
+      "claim_746c81a049d31a9a75f2"
+    ]
+  },
+  "id": "mentor_604991f5ed6e343e017d",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_746c81a049d31a9a75f2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b9917227c939e1917f5d",
+      "claim_ids": [
+        "claim_746c81a049d31a9a75f2"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "http://people.ucas.edu.cn/~hanzhi"
+    }
+  ],
+  "recent_papers": [
+    "A Subspace-Based Method for Facial Image Editing",
+    "GeoRecon: Geometric Coherence for Online 3D Scene Reconstruction From Monocular Video",
+    "Pose-assisted Outlier Sample Re-labeling for Unsupervised Person Re-identification",
+    "Label smoothing regularization-based no hyperparameter domain generalization",
+    "Multi-Dimensional Low-Rank with Weighted Schatten p -Norm Minimization for Hyperspectral Anomaly Detection",
+    "Towards Super Compressed Neural Networks for Object Identification: Quantized Low-Rank Tensor Decomposition with Self-Attention",
+    "Learning Self- and Cross-Triplet Context Clues for Human-Object Interaction Detection",
+    "Compensation Atmospheric Scattering Model and Two-Branch Network for Single Image Dehazing"
+  ],
+  "research_directions": [
+    "模式识别与智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "http://people.ucas.edu.cn/~hanzhi",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

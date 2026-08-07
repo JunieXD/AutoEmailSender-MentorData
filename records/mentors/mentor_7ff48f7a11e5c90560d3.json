@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8457bad5ab65b28a3cf0"
+      ],
+      "ended_at": null,
+      "id": "aff_4fd8ada76a142e3e515b",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_9fd81a55e32fe48f370f",
+      "source_url": "https://people.ucas.edu.cn/~siazqf",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_8457bad5ab65b28a3cf0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4fd8ada76a142e3e515b",
+      "claim_ids": [
+        "claim_8457bad5ab65b28a3cf0"
+      ],
+      "is_primary": true,
+      "normalized_value": "zqf@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~siazqf",
+      "status": "current",
+      "type": "email",
+      "value": "zqf@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8457bad5ab65b28a3cf0"
+    ],
+    "email": [
+      "claim_8457bad5ab65b28a3cf0"
+    ],
+    "name": [
+      "claim_8457bad5ab65b28a3cf0"
+    ],
+    "profile_url": [
+      "claim_8457bad5ab65b28a3cf0"
+    ],
+    "research_directions": [
+      "claim_8457bad5ab65b28a3cf0"
+    ],
+    "status": [
+      "claim_8457bad5ab65b28a3cf0"
+    ],
+    "title": [
+      "claim_8457bad5ab65b28a3cf0"
+    ]
+  },
+  "id": "mentor_7ff48f7a11e5c90560d3",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8457bad5ab65b28a3cf0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张奇峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4fd8ada76a142e3e515b",
+      "claim_ids": [
+        "claim_8457bad5ab65b28a3cf0"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~siazqf"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机械电子工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~siazqf",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

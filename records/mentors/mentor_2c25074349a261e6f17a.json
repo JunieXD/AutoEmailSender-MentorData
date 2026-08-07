@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a8882d4e7c66aa9e6415"
+      ],
+      "ended_at": null,
+      "id": "aff_f83a4adb6e4c9b72c884",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_d56e38f7af694fea4cfb",
+      "source_url": "https://people.ucas.edu.cn/~lyw",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_a8882d4e7c66aa9e6415"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f83a4adb6e4c9b72c884",
+      "claim_ids": [
+        "claim_a8882d4e7c66aa9e6415"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuyuwang@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~lyw",
+      "status": "current",
+      "type": "email",
+      "value": "liuyuwang@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a8882d4e7c66aa9e6415"
+    ],
+    "email": [
+      "claim_a8882d4e7c66aa9e6415"
+    ],
+    "name": [
+      "claim_a8882d4e7c66aa9e6415"
+    ],
+    "profile_url": [
+      "claim_a8882d4e7c66aa9e6415"
+    ],
+    "research_directions": [
+      "claim_a8882d4e7c66aa9e6415"
+    ],
+    "status": [
+      "claim_a8882d4e7c66aa9e6415"
+    ],
+    "title": [
+      "claim_a8882d4e7c66aa9e6415"
+    ]
+  },
+  "id": "mentor_2c25074349a261e6f17a",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a8882d4e7c66aa9e6415"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘玉旺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f83a4adb6e4c9b72c884",
+      "claim_ids": [
+        "claim_a8882d4e7c66aa9e6415"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~lyw"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机械电子工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~lyw",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

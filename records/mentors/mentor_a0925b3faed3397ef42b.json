@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f07bd6d157cd961e2ff9"
+      ],
+      "ended_at": null,
+      "id": "aff_a9d02097bf5eef202029",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_bb9676413ccb3bc7b29c",
+      "source_url": "http://people.ucas.edu.cn/~luohaibo",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_f07bd6d157cd961e2ff9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a9d02097bf5eef202029",
+      "claim_ids": [
+        "claim_f07bd6d157cd961e2ff9"
+      ],
+      "is_primary": true,
+      "normalized_value": "luohb@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "http://people.ucas.edu.cn/~luohaibo",
+      "status": "current",
+      "type": "email",
+      "value": "luohb@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f07bd6d157cd961e2ff9"
+    ],
+    "email": [
+      "claim_f07bd6d157cd961e2ff9"
+    ],
+    "name": [
+      "claim_f07bd6d157cd961e2ff9"
+    ],
+    "profile_url": [
+      "claim_f07bd6d157cd961e2ff9"
+    ],
+    "research_directions": [
+      "claim_f07bd6d157cd961e2ff9"
+    ],
+    "status": [
+      "claim_f07bd6d157cd961e2ff9"
+    ],
+    "title": [
+      "claim_f07bd6d157cd961e2ff9"
+    ]
+  },
+  "id": "mentor_a0925b3faed3397ef42b",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f07bd6d157cd961e2ff9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗海波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a9d02097bf5eef202029",
+      "claim_ids": [
+        "claim_f07bd6d157cd961e2ff9"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "http://people.ucas.edu.cn/~luohaibo"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "http://people.ucas.edu.cn/~luohaibo",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

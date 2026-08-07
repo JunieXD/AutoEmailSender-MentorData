@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f1e9645ec5c3f83470bf"
+      ],
+      "ended_at": null,
+      "id": "aff_23aed707036554e3dc1f",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_d56e38f7af694fea4cfb",
+      "source_url": "https://people.ucas.edu.cn/~suquanmin",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_f1e9645ec5c3f83470bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_23aed707036554e3dc1f",
+      "claim_ids": [
+        "claim_f1e9645ec5c3f83470bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "qmsu@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~suquanmin",
+      "status": "current",
+      "type": "email",
+      "value": "qmsu@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f1e9645ec5c3f83470bf"
+    ],
+    "email": [
+      "claim_f1e9645ec5c3f83470bf"
+    ],
+    "name": [
+      "claim_f1e9645ec5c3f83470bf"
+    ],
+    "profile_url": [
+      "claim_f1e9645ec5c3f83470bf"
+    ],
+    "research_directions": [
+      "claim_f1e9645ec5c3f83470bf"
+    ],
+    "status": [
+      "claim_f1e9645ec5c3f83470bf"
+    ],
+    "title": [
+      "claim_f1e9645ec5c3f83470bf"
+    ]
+  },
+  "id": "mentor_d4288a5513183d830b7a",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f1e9645ec5c3f83470bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏全民"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_23aed707036554e3dc1f",
+      "claim_ids": [
+        "claim_f1e9645ec5c3f83470bf"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~suquanmin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "检测技术与自动化装置"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~suquanmin",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}
