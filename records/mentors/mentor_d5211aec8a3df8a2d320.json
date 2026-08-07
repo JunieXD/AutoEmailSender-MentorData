@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7ff4dad61a56f2d2bc7"
+      ],
+      "ended_at": null,
+      "id": "aff_e0eb0fbe51bb5e31e8a6",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_a3d506fcc50965fcb97c",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=616",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7ff4dad61a56f2d2bc7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e0eb0fbe51bb5e31e8a6",
+      "claim_ids": [
+        "claim_d7ff4dad61a56f2d2bc7"
+      ],
+      "is_primary": true,
+      "normalized_value": "xzwang@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=616",
+      "status": "current",
+      "type": "email",
+      "value": "xzwang@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7ff4dad61a56f2d2bc7"
+    ],
+    "email": [
+      "claim_d7ff4dad61a56f2d2bc7"
+    ],
+    "name": [
+      "claim_d7ff4dad61a56f2d2bc7"
+    ],
+    "profile_url": [
+      "claim_d7ff4dad61a56f2d2bc7"
+    ],
+    "research_directions": [
+      "claim_d7ff4dad61a56f2d2bc7"
+    ],
+    "status": [
+      "claim_d7ff4dad61a56f2d2bc7"
+    ],
+    "title": [
+      "claim_d7ff4dad61a56f2d2bc7"
+    ]
+  },
+  "id": "mentor_d5211aec8a3df8a2d320",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7ff4dad61a56f2d2bc7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王熙照"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e0eb0fbe51bb5e31e8a6",
+      "claim_ids": [
+        "claim_d7ff4dad61a56f2d2bc7"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=616"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、不确定性建模"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=616",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

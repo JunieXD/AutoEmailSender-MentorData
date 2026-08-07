@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_55b6e11dd81d82354d9a"
+      ],
+      "ended_at": null,
+      "id": "aff_2a61ee598cbb0831249c",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_60b36e7f4da7f30fcf74",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=565",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_55b6e11dd81d82354d9a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a61ee598cbb0831249c",
+      "claim_ids": [
+        "claim_55b6e11dd81d82354d9a"
+      ],
+      "is_primary": true,
+      "normalized_value": "laizhihui@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=565",
+      "status": "current",
+      "type": "email",
+      "value": "laizhihui@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_55b6e11dd81d82354d9a"
+    ],
+    "email": [
+      "claim_55b6e11dd81d82354d9a"
+    ],
+    "name": [
+      "claim_55b6e11dd81d82354d9a"
+    ],
+    "profile_url": [
+      "claim_55b6e11dd81d82354d9a"
+    ],
+    "recent_papers": [
+      "claim_55b6e11dd81d82354d9a"
+    ],
+    "research_directions": [
+      "claim_55b6e11dd81d82354d9a"
+    ],
+    "status": [
+      "claim_55b6e11dd81d82354d9a"
+    ],
+    "title": [
+      "claim_55b6e11dd81d82354d9a"
+    ]
+  },
+  "id": "mentor_d5b8ab94a83c8942a1a9",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_55b6e11dd81d82354d9a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赖志辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a61ee598cbb0831249c",
+      "claim_ids": [
+        "claim_55b6e11dd81d82354d9a"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=565"
+    }
+  ],
+  "recent_papers": [
+    "Tao Wang, Jianglin Lu, Zhihui Lai*, Jiajun Wen, Heng Kong,\"Uncertainty-guided pixel contrastive learning for semi-supervised medical image segmentation,\" in Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence, IJCAI, 2022, pp. 1444–1450.",
+    "Zhihui Lai, Dongmei Mo, Wai Keung Wong*, Yong Xu, Duoqian Miao, David Zhang, Robust discriminant regression for feature extraction, IEEE Transactions on Cybernetics, 2018, 48(8):2472-2484.",
+    "Zhihui Lai, Yudong Chen, Jian Wu, Wai Keung Wong, and Fumin Shen, Jointly Sparse Hashing for Image Retrieval, IEEE Transactions on Image Processing, 2018, 27(12): 6147-6158.",
+    "Zhihui Lai, Yong Xu, Jian Yang, Linlin Shen, David Zhang. Rotational invariant dimensionality reduction algorithms. IEEE Transactions on Cybernetics, 2017, 47(11):3733-3746.",
+    "Zhihui Lai, Waikeung Wong, Yong Xu, Jian Yang, Jinhui Tang and David Zhang, Approximate orthogonal sparse embedding for dimensionality reduction, IEEE Transactions on Neural Networks and Learning Systems, 2016, 27(4): 723-735.",
+    "Zhihui Lai, Yong Xu, Qingcai Chen, Jian Yang and David Zhang, Multilinear Sparse Principal Component Analysis, IEEE Transactions on Neural Networks and Learning Systems, 2014, 25(10): 1942-1950."
+  ],
+  "research_directions": [
+    "计算机视觉与模式识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=565",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

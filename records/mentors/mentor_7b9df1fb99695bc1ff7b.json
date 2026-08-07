@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4eda80d56765591e59b2"
+      ],
+      "ended_at": null,
+      "id": "aff_d7237654955557dadfa2",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_3534f946091203984a5c",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=562",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4eda80d56765591e59b2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d7237654955557dadfa2",
+      "claim_ids": [
+        "claim_4eda80d56765591e59b2"
+      ],
+      "is_primary": true,
+      "normalized_value": "hswu@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=562",
+      "status": "current",
+      "type": "email",
+      "value": "hswu@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4eda80d56765591e59b2"
+    ],
+    "email": [
+      "claim_4eda80d56765591e59b2"
+    ],
+    "name": [
+      "claim_4eda80d56765591e59b2"
+    ],
+    "profile_url": [
+      "claim_4eda80d56765591e59b2"
+    ],
+    "recent_papers": [
+      "claim_4eda80d56765591e59b2"
+    ],
+    "research_directions": [
+      "claim_4eda80d56765591e59b2"
+    ],
+    "status": [
+      "claim_4eda80d56765591e59b2"
+    ],
+    "title": [
+      "claim_4eda80d56765591e59b2"
+    ]
+  },
+  "id": "mentor_7b9df1fb99695bc1ff7b",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4eda80d56765591e59b2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴惠思"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d7237654955557dadfa2",
+      "claim_ids": [
+        "claim_4eda80d56765591e59b2"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=562"
+    }
+  ],
+  "recent_papers": [
+    "Huisi Wu, Canfeng Lin, Jiasheng Liu, Youyi Song, Zhenkun Wen, Jing Qin, Feature Masking on Non-overlapping Regions for Detecting Dense Cells in Blood Smear Image, IEEE Transactions on Medical Imaging, 2023, 42 (6): 1668-1680.",
+    "Huisi Wu, Xiaoting Huang, Xinrong Guo, Zhenkun Wen, Jing Qin, Cross-Image Dependency Modeling for Breast Ultrasound Segmentation, IEEE Transactions on Medical Imaging, 2023, 42 (6): 1619-1631.",
+    "Huisi Wu, Junquan Pan, Zhuoying Li, Zhenkun Wen, Jing Qin, Automated Skin Lesion Segmentation via an Adaptive Dual Attention Module, IEEE Transactions on Medical Imaging, 2021, 40 (1): 357-370.",
+    "Huisi Wu, Shihuai Chen, Guilian Chen, Wei Wang, Baiying Lei, Zhenkun Wen, FAT-Net: Feature Adaptive Transformers for Automated Skin Lesion Segmentation, Medical Image Analysis, 2022, 76:102327.",
+    "Huisi Wu, Jiasheng Liu, Fangyan Xiao, Zhenkun Wen, Lan Cheng, Jing Qin, Semi-supervised Segmentation of Echocardiography Videos via Noise-resilient Spatiotemporal Semantic Calibration and Fusion, Medical Image Analysis, 2022, 78:102397.",
+    "Huisi Wu, Zhaoze Wang, Youyi Song, Lin Yang, Jing Qin, Cross-patch Dense Contrastive Learning for Semi-supervised Segmentation of Cellular Nuclei in Histopathologic Images, IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2022), 2022.",
+    "Huisi Wu, Guilian Chen, Zhenkun Wen, Jing Qin, Collaborative and Adversarial Learning of Focused and Dispersive Representations for Semi-supervised Polyp Segmentation, IEEE International Conference on Computer Vision (ICCV 2021), pp. 3489-3498, 2021.",
+    "Huisi Wu, Jiafu Zhong, Wei Wang, Zhenkun Wen, Jing Qin, Precise yet Efficient Semantic Calibration and Refinement in ConvNets for Real-time Polyp Segmentation from Colonoscopy Videos, The Association for the Advance of Artificial Intelligence (AAAI 2021)."
+  ],
+  "research_directions": [
+    "计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=562",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

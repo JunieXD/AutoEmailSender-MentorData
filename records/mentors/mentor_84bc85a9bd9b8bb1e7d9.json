@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e485608205426221c4d6"
+      ],
+      "ended_at": null,
+      "id": "aff_a756858e368c4462fb1a",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_c0556b8be760ea7e2e66",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=512",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e485608205426221c4d6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a756858e368c4462fb1a",
+      "claim_ids": [
+        "claim_e485608205426221c4d6"
+      ],
+      "is_primary": true,
+      "normalized_value": "jameshq@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=512",
+      "status": "current",
+      "type": "email",
+      "value": "jameshq@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e485608205426221c4d6"
+    ],
+    "email": [
+      "claim_e485608205426221c4d6"
+    ],
+    "name": [
+      "claim_e485608205426221c4d6"
+    ],
+    "profile_url": [
+      "claim_e485608205426221c4d6"
+    ],
+    "research_directions": [
+      "claim_e485608205426221c4d6"
+    ],
+    "status": [
+      "claim_e485608205426221c4d6"
+    ],
+    "title": [
+      "claim_e485608205426221c4d6"
+    ]
+  },
+  "id": "mentor_84bc85a9bd9b8bb1e7d9",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e485608205426221c4d6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a756858e368c4462fb1a",
+      "claim_ids": [
+        "claim_e485608205426221c4d6"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=512"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "嵌入式系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=512",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

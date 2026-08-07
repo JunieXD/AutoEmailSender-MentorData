@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_86c0a7a6405c93caf3ad"
+      ],
+      "ended_at": null,
+      "id": "aff_fd7d80c63f4854531b13",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_8431215cb3a7deced46a",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=958",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_86c0a7a6405c93caf3ad"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fd7d80c63f4854531b13",
+      "claim_ids": [
+        "claim_86c0a7a6405c93caf3ad"
+      ],
+      "is_primary": true,
+      "normalized_value": "heying@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=958",
+      "status": "current",
+      "type": "email",
+      "value": "heying@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_86c0a7a6405c93caf3ad"
+    ],
+    "email": [
+      "claim_86c0a7a6405c93caf3ad"
+    ],
+    "name": [
+      "claim_86c0a7a6405c93caf3ad"
+    ],
+    "profile_url": [
+      "claim_86c0a7a6405c93caf3ad"
+    ],
+    "research_directions": [
+      "claim_86c0a7a6405c93caf3ad"
+    ],
+    "status": [
+      "claim_86c0a7a6405c93caf3ad"
+    ],
+    "title": [
+      "claim_86c0a7a6405c93caf3ad"
+    ]
+  },
+  "id": "mentor_3b2112217e5f98a3f20f",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_86c0a7a6405c93caf3ad"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "贺颖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fd7d80c63f4854531b13",
+      "claim_ids": [
+        "claim_86c0a7a6405c93caf3ad"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=958"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "具身智能、大语言模型、多模态大模型、强化学习、智能网联车"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=958",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}

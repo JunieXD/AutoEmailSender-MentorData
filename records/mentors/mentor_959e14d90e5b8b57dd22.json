@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d376ae1ef2090c91748e"
+      ],
+      "ended_at": null,
+      "id": "aff_16a5ffcedc7dda1cbbcb",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:40:45Z",
+      "organization_id": "org_auto_5f8a6cfa8ae7032b0322",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=532",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d376ae1ef2090c91748e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_16a5ffcedc7dda1cbbcb",
+      "claim_ids": [
+        "claim_d376ae1ef2090c91748e"
+      ],
+      "is_primary": true,
+      "normalized_value": "lqm@szu.edu.cn",
+      "observed_at": "2026-08-07T07:40:45Z",
+      "source_url": "https://csse.szu.edu.cn/pages/user/index?id=532",
+      "status": "current",
+      "type": "email",
+      "value": "lqm@szu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:40:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d376ae1ef2090c91748e"
+    ],
+    "email": [
+      "claim_d376ae1ef2090c91748e"
+    ],
+    "name": [
+      "claim_d376ae1ef2090c91748e"
+    ],
+    "profile_url": [
+      "claim_d376ae1ef2090c91748e"
+    ],
+    "research_directions": [
+      "claim_d376ae1ef2090c91748e"
+    ],
+    "status": [
+      "claim_d376ae1ef2090c91748e"
+    ],
+    "title": [
+      "claim_d376ae1ef2090c91748e"
+    ]
+  },
+  "id": "mentor_959e14d90e5b8b57dd22",
+  "last_verified_at": "2026-08-07T07:40:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d376ae1ef2090c91748e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗秋明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_16a5ffcedc7dda1cbbcb",
+      "claim_ids": [
+        "claim_d376ae1ef2090c91748e"
+      ],
+      "observed_at": "2026-08-07T07:40:45Z",
+      "status": "current",
+      "url": "https://csse.szu.edu.cn/pages/user/index?id=532"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高性能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:40:45Z",
+  "status_reason": null,
+  "status_source_url": "https://csse.szu.edu.cn/pages/user/index?id=532",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:40:45Z"
+}
