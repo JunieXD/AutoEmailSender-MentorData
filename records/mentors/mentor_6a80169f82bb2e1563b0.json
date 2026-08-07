@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6000261f5b95827d2d84"
+      ],
+      "ended_at": null,
+      "id": "aff_c830d5fd0b2f33fe94be",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_51b2e338375f561e2b5a",
+      "source_url": "https://faculty.bjtu.edu.cn/8192",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6000261f5b95827d2d84"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c830d5fd0b2f33fe94be",
+      "claim_ids": [
+        "claim_6000261f5b95827d2d84"
+      ],
+      "is_primary": true,
+      "normalized_value": "xydong@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8192",
+      "status": "current",
+      "type": "email",
+      "value": "xydong@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6000261f5b95827d2d84"
+    ],
+    "email": [
+      "claim_6000261f5b95827d2d84"
+    ],
+    "name": [
+      "claim_6000261f5b95827d2d84"
+    ],
+    "profile_url": [
+      "claim_6000261f5b95827d2d84"
+    ],
+    "recent_papers": [
+      "claim_6000261f5b95827d2d84"
+    ],
+    "research_directions": [
+      "claim_6000261f5b95827d2d84"
+    ],
+    "status": [
+      "claim_6000261f5b95827d2d84"
+    ],
+    "title": [
+      "claim_6000261f5b95827d2d84"
+    ]
+  },
+  "id": "mentor_6a80169f82bb2e1563b0",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6000261f5b95827d2d84"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董兴业"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c830d5fd0b2f33fe94be",
+      "claim_ids": [
+        "claim_6000261f5b95827d2d84"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8192"
+    }
+  ],
+  "recent_papers": [
+    "张宇哲, 董兴业, 周正. 求解资源受限项目调度问题的分支定价算法. 计算机科学, 2022, 49(12):274-282.",
+    "隗千千, 董兴业, 王焕政. 染缸排产建模及滑动时间窗启发式调度算法[J]. 计算机应用, 2020, 40(01):292-298.",
+    "崔如玉, 董兴业, 林友芳. Models for aircraft maintenance routing problem with consideration of remaining time and robustness[J]. Computers & Industrial Engineering, 2019, v137.",
+    "董兴业, M. Nowak, 陈萍,林友芳. Self-adaptive perturbation and multi-neighborhood search for iterated local search on the permutation flow shop problem[J]. COMPUTERS & INDUSTRIAL ENGINEERING, 2015,87:176-185.",
+    "董兴业, 陈萍, 黄厚宽, M. Nowak. A multi-restart iterated local search algorithm for the permutation flow shop problem minimizing total flow time[J]. Computers & Operations Research,2013-02,40(2),627:632",
+    "王超, 董兴业. 求解护士排班问题的变邻域搜索算法[J]. 计算机应用, 2013, 33(02):338-341+352.",
+    "陈萍, 黄厚宽, 董兴业. 求解多车型车辆路径问题的变邻域搜索算法[J]. 系统仿真学报, 2011, 23(09):1945-1950.",
+    "董兴业, 黄厚宽, 陈萍. An iterated local search algorithm for the permutation flowshop problem with total flowtime criterion[J]. Computers & Operations Research,2009-12,36(5)."
+  ],
+  "research_directions": [
+    "运筹优化与智能算法、调度优化算法、组合优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8192",
+  "title": "副教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

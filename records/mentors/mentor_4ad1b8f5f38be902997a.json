@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a14175dac0fcf03ceca9"
+      ],
+      "ended_at": null,
+      "id": "aff_3ff751f68e0e2d0cd88b",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_a33d6bd5e5916952d3de",
+      "source_url": "https://faculty.bjtu.edu.cn/9954",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a14175dac0fcf03ceca9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3ff751f68e0e2d0cd88b",
+      "claim_ids": [
+        "claim_a14175dac0fcf03ceca9"
+      ],
+      "is_primary": true,
+      "normalized_value": "wjhan@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9954",
+      "status": "current",
+      "type": "email",
+      "value": "wjhan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a14175dac0fcf03ceca9"
+    ],
+    "email": [
+      "claim_a14175dac0fcf03ceca9"
+    ],
+    "name": [
+      "claim_a14175dac0fcf03ceca9"
+    ],
+    "profile_url": [
+      "claim_a14175dac0fcf03ceca9"
+    ],
+    "recent_papers": [
+      "claim_a14175dac0fcf03ceca9"
+    ],
+    "research_directions": [
+      "claim_a14175dac0fcf03ceca9"
+    ],
+    "status": [
+      "claim_a14175dac0fcf03ceca9"
+    ],
+    "title": [
+      "claim_a14175dac0fcf03ceca9"
+    ]
+  },
+  "id": "mentor_4ad1b8f5f38be902997a",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a14175dac0fcf03ceca9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩文娟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3ff751f68e0e2d0cd88b",
+      "claim_ids": [
+        "claim_a14175dac0fcf03ceca9"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9954"
+    }
+  ],
+  "recent_papers": [
+    "Z Gao, Y Du, X Zhang, X Ma, Wenjuan Han, SC Zhu, Q Li. CLOVA: A Closed-Loop Visual Assistant with Tool Usage and Update. (CVPR 2024)",
+    "Haozhe Zhao, Zefan Cai, Shuzheng Si, Xiaojian Ma, Kaikai An, Liang Chen, Zixuan Liu, Sheng Wang, Wenjuan Han, Baobao Chang, Mmicl: Empowering vision-language model with multi-modal in-context learning. (ICLR 2024)",
+    "CollabKG: A Learnable Human-Machine-Cooperative Information Extraction Toolkit for (Event) Knowledge Graph Construction. (COLING2024)",
+    "Empowering Vision-Language Models for Reasoning Ability through Large Language Models. (ICASSP2024)",
+    "Wenjuan Han ,Zhao, Cai.Empowering MultiModal Models’ In-Context Learning Ability through Large Language Models. Proceedings of the ACM Turing Award Celebration Conference,2023",
+    "Jiapeng Li, Wenjuan Han, Lifeng Fan. IntentQA: Context-aware Video Intent Reasoning.International Conference on Computer Vision (ICCV2023)",
+    "Guangyuan Jiang, Manjie Xu, Wenjuan Han, Chi Zhang, Yixin Zhu. Evaluating and Inducing Personality in Pre-trained Language Models.37th Conference on Neural Information Processing Systems (NeurIPS 2023)",
+    "Chao Lou, Wenjuan Han (通讯), Yuhuan Lin, Zilong Zheng. Unsupervised Visual-Language Parsing: Seamlessly Bridging Visual Scene Graphs with Language Structures via Dependency Relationships.CVPR 2022"
+  ],
+  "research_directions": [
+    "多模态大模型、自然语言处理、认知智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9954",
+  "title": "副教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9de5c1955f362815b7e1"
+      ],
+      "ended_at": null,
+      "id": "aff_b40806d917c00d5d875b",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_fb2626fd6d0625cea264",
+      "source_url": "https://faculty.bjtu.edu.cn/8530",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9de5c1955f362815b7e1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b40806d917c00d5d875b",
+      "claim_ids": [
+        "claim_9de5c1955f362815b7e1"
+      ],
+      "is_primary": true,
+      "normalized_value": "fangww@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8530",
+      "status": "current",
+      "type": "email",
+      "value": "fangww@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9de5c1955f362815b7e1"
+    ],
+    "email": [
+      "claim_9de5c1955f362815b7e1"
+    ],
+    "name": [
+      "claim_9de5c1955f362815b7e1"
+    ],
+    "profile_url": [
+      "claim_9de5c1955f362815b7e1"
+    ],
+    "recent_papers": [
+      "claim_9de5c1955f362815b7e1"
+    ],
+    "research_directions": [
+      "claim_9de5c1955f362815b7e1"
+    ],
+    "status": [
+      "claim_9de5c1955f362815b7e1"
+    ],
+    "title": [
+      "claim_9de5c1955f362815b7e1"
+    ]
+  },
+  "id": "mentor_44872432561a100b7e22",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9de5c1955f362815b7e1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "方维维"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b40806d917c00d5d875b",
+      "claim_ids": [
+        "claim_9de5c1955f362815b7e1"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8530"
+    }
+  ],
+  "recent_papers": [
+    "Hong Wen, Hongwei Cai, Hongwei Tanyu, Weiwei Fang, Yanming Chen, Naixue Xiong. Efficient Compressed Video Action Recognition via Frame Selection and Token Merging in Vision Transformers, Neural Computing and Applications, 2026.",
+    "Wanqi Wang (equal contribution), Boran Jing(equal contribution), Shuyu He, Zheng Song, Weiwei Fang. EdgeATP: An Adaptive Tensor Parallelism Framework for Scalable and Efficient Transformer Inference on Edge Clusters, Journal of Systems Architecture, 2026.",
+    "Haoyuan Li, Zhenjie Lv, Yuhang Wang, Ying He, Weiwei Fang, Fei Richard Yu. Joint Service Caching and Computation Offloading in Mobile Edge Networks: A Hierarchical DRL Approach with Active Inference, IEEE Internet of Things Journal (IOTJ), 2026.",
+    "Xiuwen Li,Weiwei Fang,Liang Yue, Fanjie Shi, Naixue Xiong.Automated Spatial-Temporal Graph Neural Network Search for Skeleton-based Human Action Recognition on Edge Devices,IEEE Internet of Things Journal (IOTJ), 2026.",
+    "Wanqi Wang, Fanjie Shi, Hongwei Cai, Hongwei Tanyu, Yusong Cheng, Weiwei Fang. EBP: Accelerating Graph Neural Network Inference via Entropy-based Pruning, Networking, Accepted.",
+    "Xiuwen Li,Weiwei Fang, Liang Qian, Haoyuan Li, Yanming Chen, Naixue Xiong.Automated Design for Hardware-aware Graph Neural Networks on Edge Devices, IEEE Transactions on Network Science and Engineering (TNSE), 2026.",
+    "Qingli Wang,Chengwu Yu,Shan Chen,Weiwei Fang, Naixue Xiong.Joint Adaptive Resolution Selection and Conditional Early Exiting for Efficient Video Recognition on Edge Devices, Big Data Mining and Analytics, 2025.",
+    "Yanming Chen, Ziyang Huang, Yiwen Zhang,Weiwei Fang, Naixue Xiong.LyDRL: Lyapunov-guided Deep Reinforcement Learning for Stable Task Offloading in Connected Autonomous Vehicles, ACM Transactions on Autonomous and Adaptive Systems (TAAS), 2025."
+  ],
+  "research_directions": [
+    "网络智能与移动计算、智能物联网、移动计算、自主感知、定位与路径规划、基于强化学习的智能决策、先进计算与高性能计算、边缘智能计算、端侧边缘大模型、AI底层计算优化与自动设计、智能与无人系统研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8530",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

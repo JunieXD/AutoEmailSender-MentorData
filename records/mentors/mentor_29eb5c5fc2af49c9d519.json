@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_76c3e5e02a4ac48c203c"
+      ],
+      "ended_at": null,
+      "id": "aff_d3c938fe82056218036e",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/10313",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_76c3e5e02a4ac48c203c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d3c938fe82056218036e",
+      "claim_ids": [
+        "claim_76c3e5e02a4ac48c203c"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuaian@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10313",
+      "status": "current",
+      "type": "email",
+      "value": "shuaian@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_76c3e5e02a4ac48c203c"
+    ],
+    "email": [
+      "claim_76c3e5e02a4ac48c203c"
+    ],
+    "name": [
+      "claim_76c3e5e02a4ac48c203c"
+    ],
+    "profile_url": [
+      "claim_76c3e5e02a4ac48c203c"
+    ],
+    "recent_papers": [
+      "claim_76c3e5e02a4ac48c203c"
+    ],
+    "research_directions": [
+      "claim_76c3e5e02a4ac48c203c"
+    ],
+    "status": [
+      "claim_76c3e5e02a4ac48c203c"
+    ],
+    "title": [
+      "claim_76c3e5e02a4ac48c203c"
+    ]
+  },
+  "id": "mentor_29eb5c5fc2af49c9d519",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_76c3e5e02a4ac48c203c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "安帅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d3c938fe82056218036e",
+      "claim_ids": [
+        "claim_76c3e5e02a4ac48c203c"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/10313"
+    }
+  ],
+  "recent_papers": [
+    "Best of Both Worlds: Contextual Feature Explanation",
+    "Counterfactual Explanation at Will, with Zero Privacy Leakage",
+    "Relative Keys: Putting Feature Explanation into Context",
+    "Making Cache Monotonic and Consistent",
+    "Competitive Consistent Caching for Transactions"
+  ],
+  "research_directions": [
+    "数据库系统与理论、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10313",
+  "title": "讲师",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_730646882b363c8505ef"
+      ],
+      "ended_at": null,
+      "id": "aff_46b4734399e48a57971c",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_8164aec720861be56cf8",
+      "source_url": "https://faculty.bjtu.edu.cn/7527",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_730646882b363c8505ef"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_46b4734399e48a57971c",
+      "claim_ids": [
+        "claim_730646882b363c8505ef"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaobo@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7527",
+      "status": "current",
+      "type": "email",
+      "value": "gaobo@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_730646882b363c8505ef"
+    ],
+    "email": [
+      "claim_730646882b363c8505ef"
+    ],
+    "name": [
+      "claim_730646882b363c8505ef"
+    ],
+    "profile_url": [
+      "claim_730646882b363c8505ef"
+    ],
+    "recent_papers": [
+      "claim_730646882b363c8505ef"
+    ],
+    "research_directions": [
+      "claim_730646882b363c8505ef"
+    ],
+    "status": [
+      "claim_730646882b363c8505ef"
+    ],
+    "title": [
+      "claim_730646882b363c8505ef"
+    ]
+  },
+  "id": "mentor_c05a11335b03bb1f8549",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_730646882b363c8505ef"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高勃"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_46b4734399e48a57971c",
+      "claim_ids": [
+        "claim_730646882b363c8505ef"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7527"
+    }
+  ],
+  "recent_papers": [
+    "高勃,张红艳,朱明皓.面向智能制造的不规则零件排样优化算法.计算机集成制造系统,2021,6(27)",
+    "朱明皓,张志博,杨晓迎,高勃,臧冀原,屈贤明.推进产业基础高级化的战略与对策研究.中国工程科学,2021,2(23)",
+    "高勃,李学汉.面向智能工业的柔性装配批量调度优化策略.制造业自动化,2021,6(43)",
+    "高勃,张红艳,朱明皓.面向智能工厂应用的启发式板材排样优化算法.北京交通大学学报,2020,5(44)"
+  ],
+  "research_directions": [
+    "计算机软件与理论、软件工程、人工智能、计算机技术、大数据技术与工程、网络智能与移动计算、新一代电子信息技术、低空航行安全保障"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7527",
+  "title": "研究员",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

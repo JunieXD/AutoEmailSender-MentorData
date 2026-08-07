@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f778ec0f3b6cd53e941b"
+      ],
+      "ended_at": null,
+      "id": "aff_c49cea62907fbca7cb2d",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_a33d6bd5e5916952d3de",
+      "source_url": "https://faculty.bjtu.edu.cn/10144",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_f778ec0f3b6cd53e941b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c49cea62907fbca7cb2d",
+      "claim_ids": [
+        "claim_f778ec0f3b6cd53e941b"
+      ],
+      "is_primary": true,
+      "normalized_value": "kyhuang@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10144",
+      "status": "current",
+      "type": "email",
+      "value": "kyhuang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f778ec0f3b6cd53e941b"
+    ],
+    "email": [
+      "claim_f778ec0f3b6cd53e941b"
+    ],
+    "name": [
+      "claim_f778ec0f3b6cd53e941b"
+    ],
+    "profile_url": [
+      "claim_f778ec0f3b6cd53e941b"
+    ],
+    "research_directions": [
+      "claim_f778ec0f3b6cd53e941b"
+    ],
+    "status": [
+      "claim_f778ec0f3b6cd53e941b"
+    ],
+    "title": [
+      "claim_f778ec0f3b6cd53e941b"
+    ]
+  },
+  "id": "mentor_ca8a98c3a4044e243343",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f778ec0f3b6cd53e941b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄锴宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c49cea62907fbca7cb2d",
+      "claim_ids": [
+        "claim_f778ec0f3b6cd53e941b"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/10144"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "Multilingual AI, Large Language Model, Continual Learning, Conversational Information Search, AI for science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10144",
+  "title": "助理研究员",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

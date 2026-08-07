@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b31d52cac94b6d380e75"
+      ],
+      "ended_at": null,
+      "id": "aff_e0167e0ac16fef507529",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/8516",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b31d52cac94b6d380e75"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e0167e0ac16fef507529",
+      "claim_ids": [
+        "claim_b31d52cac94b6d380e75"
+      ],
+      "is_primary": true,
+      "normalized_value": "dxchang@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8516",
+      "status": "current",
+      "type": "email",
+      "value": "dxchang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b31d52cac94b6d380e75"
+    ],
+    "email": [
+      "claim_b31d52cac94b6d380e75"
+    ],
+    "name": [
+      "claim_b31d52cac94b6d380e75"
+    ],
+    "profile_url": [
+      "claim_b31d52cac94b6d380e75"
+    ],
+    "recent_papers": [
+      "claim_b31d52cac94b6d380e75"
+    ],
+    "research_directions": [
+      "claim_b31d52cac94b6d380e75"
+    ],
+    "status": [
+      "claim_b31d52cac94b6d380e75"
+    ],
+    "title": [
+      "claim_b31d52cac94b6d380e75"
+    ]
+  },
+  "id": "mentor_b3252add115ab956dbb6",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b31d52cac94b6d380e75"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "常冬霞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e0167e0ac16fef507529",
+      "claim_ids": [
+        "claim_b31d52cac94b6d380e75"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8516"
+    }
+  ],
+  "recent_papers": [
+    "Yiming Wang, Dongxia Chang, Zhiqiang Fu, Yao zhao, Incomplete multi-view clustering via cross-view relation transfer, IEEE TCSVT, 2022.",
+    "Yiming Wang, Dongxia Chang, Yao Zhao, Consistent multiple graph embedding for multi-view clustering, IEEE Transaction on Multimedia, 2021.",
+    "Yiming Wang, Dongxia Chang, Yao Zhao, A new blind image denoising method based on asymmetric generative adversarial network, IET Image Processing, 2021, 15(6):1260-1272.",
+    "Tuoqia Cao, Dongxia Chang(*), Yao Zhao. A new Ensemble Clustering Algorithm using a Reconstructed Mapping Coefficient[J]. KSII Transactions on Internet and Information Systems, 2020, 14(7): 2957-2980.",
+    "Liuwei Feng, Yao Zhao, Dongxia Chang(*), A new clustering algorithm based on the connected region generation, KSII Transctions on Internet and Information Systems, 2018.1.1, 12(6): 2619~2643.",
+    "陈朝威, 常冬霞, 基于密度差分的自动聚类算法软件学报2018.1.1 29(4): 935~944.",
+    "Dongxia Chang, Yao Zhao, A dynamic niching clustering algorithm based on individual-connectedness and its application to color image segmentation,Pattern Recognition,2016.12.1,60: 334~347.",
+    "Dongxia Chang, Yao Zhao, Changwen Zheng and Xianda Zhang, A genetic clustering algorithm using a message-based similarity measure, Expert Systems with Applications, vol. 39, 2194-2202, 2012."
+  ],
+  "research_directions": [
+    "数字媒体信息处理与智能分析、新一代电子信息技术、软件工程、人工智能、大数据技术与工程、智能感知与具身智能、计算机技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8516",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

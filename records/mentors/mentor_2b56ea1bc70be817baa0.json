@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b9ad183d7bfe98b66678"
+      ],
+      "ended_at": null,
+      "id": "aff_662bc317ae2a12bafe6f",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_a33d6bd5e5916952d3de",
+      "source_url": "https://faculty.bjtu.edu.cn/8754",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_b9ad183d7bfe98b66678"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_662bc317ae2a12bafe6f",
+      "claim_ids": [
+        "claim_b9ad183d7bfe98b66678"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenyf@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8754",
+      "status": "current",
+      "type": "email",
+      "value": "chenyf@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b9ad183d7bfe98b66678"
+    ],
+    "email": [
+      "claim_b9ad183d7bfe98b66678"
+    ],
+    "name": [
+      "claim_b9ad183d7bfe98b66678"
+    ],
+    "profile_url": [
+      "claim_b9ad183d7bfe98b66678"
+    ],
+    "recent_papers": [
+      "claim_b9ad183d7bfe98b66678"
+    ],
+    "research_directions": [
+      "claim_b9ad183d7bfe98b66678"
+    ],
+    "status": [
+      "claim_b9ad183d7bfe98b66678"
+    ],
+    "title": [
+      "claim_b9ad183d7bfe98b66678"
+    ]
+  },
+  "id": "mentor_2b56ea1bc70be817baa0",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b9ad183d7bfe98b66678"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈钰枫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_662bc317ae2a12bafe6f",
+      "claim_ids": [
+        "claim_b9ad183d7bfe98b66678"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8754"
+    }
+  ],
+  "recent_papers": [
+    "A Joint Model to Identify and Align Bilingual Named Entities",
+    "A Semantic_Specific Model for Chinese Named Entity Translation",
+    "On Jointly Recognizing and Aligning Bilingual Named Entities",
+    "A Structure-Based Model for Chinese Organization Name Translation",
+    "汉英双语命名实体识别与对齐的交互式方法",
+    "The CASIA Statistical Machine Translation System for IWSLT 2009",
+    "RoleTrans:中科院自动化研究所多语言文本机器翻译系统-中科院自动化所CWMT2013评测技术报告",
+    "多语言文本机器翻译系统-中科院自动化所CWMT2011评测技术报告"
+  ],
+  "research_directions": [
+    "机器学习与认知计算、计算机技术、软件工程、人工智能、大数据技术与工程、生成式人工智能与安全、新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8754",
+  "title": "研究员",
+  "updated_at": "2026-08-07T12:05:22Z"
+}
