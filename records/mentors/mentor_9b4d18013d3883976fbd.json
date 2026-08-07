@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1e635da5319fa56996e5"
+      ],
+      "ended_at": null,
+      "id": "aff_ca663cb33ca7cb23784c",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/10327",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1e635da5319fa56996e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ca663cb33ca7cb23784c",
+      "claim_ids": [
+        "claim_1e635da5319fa56996e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "xjjin0731@gmail.com",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10327",
+      "status": "current",
+      "type": "email",
+      "value": "xjjin0731@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1e635da5319fa56996e5"
+    ],
+    "email": [
+      "claim_1e635da5319fa56996e5"
+    ],
+    "name": [
+      "claim_1e635da5319fa56996e5"
+    ],
+    "profile_url": [
+      "claim_1e635da5319fa56996e5"
+    ],
+    "research_directions": [
+      "claim_1e635da5319fa56996e5"
+    ],
+    "status": [
+      "claim_1e635da5319fa56996e5"
+    ],
+    "title": [
+      "claim_1e635da5319fa56996e5"
+    ]
+  },
+  "id": "mentor_9b4d18013d3883976fbd",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1e635da5319fa56996e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "靳潇杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ca663cb33ca7cb23784c",
+      "claim_ids": [
+        "claim_1e635da5319fa56996e5"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/10327"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态智能、生成式视觉模型、高效深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10327",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

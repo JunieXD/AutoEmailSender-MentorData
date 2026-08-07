@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_da1d889c37ec89809dd3"
+      ],
+      "ended_at": null,
+      "id": "aff_4575c0d400d5816e27eb",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_0ad17acbe9ca98ea8c17",
+      "source_url": "https://faculty.bjtu.edu.cn/5608",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_da1d889c37ec89809dd3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4575c0d400d5816e27eb",
+      "claim_ids": [
+        "claim_da1d889c37ec89809dd3"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhan@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/5608",
+      "status": "current",
+      "type": "email",
+      "value": "zhan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_da1d889c37ec89809dd3"
+    ],
+    "email": [
+      "claim_da1d889c37ec89809dd3"
+    ],
+    "name": [
+      "claim_da1d889c37ec89809dd3"
+    ],
+    "profile_url": [
+      "claim_da1d889c37ec89809dd3"
+    ],
+    "research_directions": [
+      "claim_da1d889c37ec89809dd3"
+    ],
+    "status": [
+      "claim_da1d889c37ec89809dd3"
+    ],
+    "title": [
+      "claim_da1d889c37ec89809dd3"
+    ]
+  },
+  "id": "mentor_980631c29bd5b0c4b232",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_da1d889c37ec89809dd3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩臻"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4575c0d400d5816e27eb",
+      "claim_ids": [
+        "claim_da1d889c37ec89809dd3"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/5608"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "系统安全、网络与信息安全、软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/5608",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e7bebe0d884d4b4529dc"
+      ],
+      "ended_at": null,
+      "id": "aff_7a4e2fa97fd93fc78008",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_fb2626fd6d0625cea264",
+      "source_url": "https://faculty.bjtu.edu.cn/9210",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e7bebe0d884d4b4529dc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7a4e2fa97fd93fc78008",
+      "claim_ids": [
+        "claim_e7bebe0d884d4b4529dc"
+      ],
+      "is_primary": true,
+      "normalized_value": "nychen@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9210",
+      "status": "current",
+      "type": "email",
+      "value": "nychen@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e7bebe0d884d4b4529dc"
+    ],
+    "email": [
+      "claim_e7bebe0d884d4b4529dc"
+    ],
+    "name": [
+      "claim_e7bebe0d884d4b4529dc"
+    ],
+    "profile_url": [
+      "claim_e7bebe0d884d4b4529dc"
+    ],
+    "recent_papers": [
+      "claim_e7bebe0d884d4b4529dc"
+    ],
+    "research_directions": [
+      "claim_e7bebe0d884d4b4529dc"
+    ],
+    "status": [
+      "claim_e7bebe0d884d4b4529dc"
+    ],
+    "title": [
+      "claim_e7bebe0d884d4b4529dc"
+    ]
+  },
+  "id": "mentor_0098f931f0c8a9eebd6c",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e7bebe0d884d4b4529dc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈乃月"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7a4e2fa97fd93fc78008",
+      "claim_ids": [
+        "claim_e7bebe0d884d4b4529dc"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9210"
+    }
+  ],
+  "recent_papers": [
+    "Cai, L., Chen, Naiyue*, et al. FedCE: Personalized Federated Learning Method based on Clustering Ensembles. Proceedings of the 31st ACM International Conference on Multimedia. 2023 (CCF A)",
+    "Luo, G., Chen, Naiyue*, et al. Privacy-preserving clustering federated learning for non-IID data. Future Generation Computer Systems, 154 (2024)., 384-395. (SCI 1区)",
+    "张洪磊,李浥东,邬俊,陈乃月*等.基于隐私保护的联邦推荐算法综述.自动化学报, (2022), 48(09), 2142-2163. (CCF A)",
+    "Chen, Naiyue, Li, Y., et al.. A mutual information based federated learning framework for edge computing networks. Computer Communications, 176 (2021), 23-30.",
+    "Chen, Naiyue, Jin, Y., et al.. Trust-based Federated Learning for Network Anomaly. Web Intelligence, 19(4) ,2021.",
+    "Cai, L., Chen, Naiyue*, Wei, Y., Chen, H., & Li, Y. Cluster-based Federated Learning Framework for Intrusion Detection. In 2022 IEEE 13th International Symposium on Parallel Architectures, Algorithms and Programming (PAAP), pp. 1-6. IEEE. (BEST PAPER)",
+    "Hu, B., Liu, Y., Chen, Naiyue, Wang, L., Liu, N., & Cao, X.. SEGCN-DCR: A syntax-enhanced event detection framework with decoupled classification rebalance. Neurocomputing, 481 (2022), 55-66. (SCI 2区)",
+    "Chen, Naiyue, et al. A novel parallel community detection scheme based on label propagation. World Wide Web 21(5) ,pp: 1377-1398, 2018.(CCF B)"
+  ],
+  "research_directions": [
+    "计算机技术、软件工程、人工智能、大数据技术与工程、机器学习与认知计算、数据与知识工程、新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9210",
+  "title": "副教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ccf4c9b535f1609110b1"
+      ],
+      "ended_at": null,
+      "id": "aff_8508c6670ecad6237693",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_51b2e338375f561e2b5a",
+      "source_url": "https://faculty.bjtu.edu.cn/7904",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ccf4c9b535f1609110b1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8508c6670ecad6237693",
+      "claim_ids": [
+        "claim_ccf4c9b535f1609110b1"
+      ],
+      "is_primary": true,
+      "normalized_value": "shhan@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7904",
+      "status": "current",
+      "type": "email",
+      "value": "shhan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ccf4c9b535f1609110b1"
+    ],
+    "email": [
+      "claim_ccf4c9b535f1609110b1"
+    ],
+    "name": [
+      "claim_ccf4c9b535f1609110b1"
+    ],
+    "profile_url": [
+      "claim_ccf4c9b535f1609110b1"
+    ],
+    "recent_papers": [
+      "claim_ccf4c9b535f1609110b1"
+    ],
+    "research_directions": [
+      "claim_ccf4c9b535f1609110b1"
+    ],
+    "status": [
+      "claim_ccf4c9b535f1609110b1"
+    ],
+    "title": [
+      "claim_ccf4c9b535f1609110b1"
+    ]
+  },
+  "id": "mentor_0d032a13b947b0e0243d",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ccf4c9b535f1609110b1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩升"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8508c6670ecad6237693",
+      "claim_ids": [
+        "claim_ccf4c9b535f1609110b1"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7904"
+    }
+  ],
+  "recent_papers": [
+    "赵亮,韩升*,林友芳.Collision-avare Multi-robot Motion Coordination Deep-RL with Dynamic Priority Strategy.2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI),2021",
+    "李靖,董兴业,张凯,韩升*.Solving Open Shop Scheduling Problem via Graph Attention Neural Network.2020 IEEE 32ND INTERNATIONAL CONFERENCE ON TOOLS WITH ARTIFICIAL INTELLIGENCE (ICTAI),2020",
+    "郝秀召,武志昊,周海光,白相鹏,林友芳,韩升*.Motion Coordination of Multiple Robots Based on Deep Reinforcement Learning.2019 IEEE 31ST INTERNATIONAL CONFERENCE ON TOOLS WITH ARTIFICIAL INTELLIGENCE (ICTAI 2019),2019",
+    "曹茜,万怀宇,林友芳,韩升*.High-Value Prioritized Experience Replay for Off-policy Reinforcement Learning.2019 IEEE 31ST INTERNATIONAL CONFERENCE ON TOOLS WITH ARTIFICIAL INTELLIGENCE (ICTAI 2019),2019",
+    "潘如媛,董兴业,韩升.Solving Permutation Flowshop Problem with Deep Reinforcement Learning.2020 PROGNOSTICS AND SYSTEM HEALTH MANAGEMENT CONFERENCE (PHM-BESANCON 2020),2020",
+    "田晋文,董兴业,韩升.Optimizing for a Resource-constrained Multi-project Scheduling Problem with Planned Resource Unavailability.3rd International Conference on Modelling, Simulation and Applied Mathematics (MSAM),2018",
+    "田媚,丁丁,韩升,黄雅平,邹琪.计算机专业课程联动培养体系研究与建设——以本科一年级“C语言程序设计”和“程序设计基础训练”课程为例.工业和信息化教育,2019,3(0)",
+    "栗明威,江坤,韩升,董兴业.A special resource constrained project scheduling problem: model update and ant colony optimization solving.2015 4TH NATIONAL CONFERENCE ON ELECTRICAL, ELECTRONICS AND COMPUTER ENGINEERING ( NCEECE 2015),2015"
+  ],
+  "research_directions": [
+    "深度强化学习与智能系统,包括:多智能体协同、机器人运动协调、军事智能应用、人工智能及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7904",
+  "title": "副教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3d23b998dc713211c140"
+      ],
+      "ended_at": null,
+      "id": "aff_3dd712d79f221b7fd4f8",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_a9cc91eb4ae03e2a480c",
+      "source_url": "https://faculty.bjtu.edu.cn/10133",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_3d23b998dc713211c140"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3dd712d79f221b7fd4f8",
+      "claim_ids": [
+        "claim_3d23b998dc713211c140"
+      ],
+      "is_primary": true,
+      "normalized_value": "ylageng@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10133",
+      "status": "current",
+      "type": "email",
+      "value": "ylageng@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3d23b998dc713211c140"
+    ],
+    "email": [
+      "claim_3d23b998dc713211c140"
+    ],
+    "name": [
+      "claim_3d23b998dc713211c140"
+    ],
+    "profile_url": [
+      "claim_3d23b998dc713211c140"
+    ],
+    "recent_papers": [
+      "claim_3d23b998dc713211c140"
+    ],
+    "research_directions": [
+      "claim_3d23b998dc713211c140"
+    ],
+    "status": [
+      "claim_3d23b998dc713211c140"
+    ],
+    "title": [
+      "claim_3d23b998dc713211c140"
+    ]
+  },
+  "id": "mentor_7bbb126516dacd81d25f",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3d23b998dc713211c140"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "耿阳李敖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3dd712d79f221b7fd4f8",
+      "claim_ids": [
+        "claim_3d23b998dc713211c140"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/10133"
+    }
+  ],
+  "recent_papers": [
+    "Bo Chen, Xingyi Cheng, Pan Li,Yangli-ao Geng, Jing Gong, Shen Li, Zhilei Bei, Xu Tan, Boyan Wang, Xin Zeng, Chiming Liu, Aohan Zeng, Yuxiao Dong, Jie Tang & Le Song. xTrimoPGLM: unified 100-billion-parameter pretrained transformer for deciphering the language of proteins.Nature Methods, 2025. (Nature 子刊)",
+    "Yangli-ao Geng, Yuxiao Dong, Wenzheng Feng, et al., GSPNet: Graph Spectral Projection Network using Learnable Spectral Transformation. IEEE Transactions on Pattern Analysis and Machine Intelligence(TPAMI), 2026. (CCF A)",
+    "Wenju Sun, Qingyong Li, Tiancheng Li, Yangliao Geng*, Boyang Li. Revisiting the Role of Pretrained Weights in Model Merging: On Near-Optimality within the Core Subspace. International Conference on Machine Learning (ICML), 2026. (Accepted, CCF A)",
+    "Bihe Xu, Zhicheng Yan, Qingyong Li, Zhiqing Guo, Dong Zheng, Wen Yao, Bo Wang, Zhao Wang, Yangliao Geng*. ASTAFN: Bridging the Gap Between Weather Foundation Models and Accurate Station-Level Forecasting.ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2026. (CCF A, oral)",
+    "Wenju Sun, Qingyong Li, Wen Wang, Yang Liu,Yangliao Geng*, Boyang Li. Towards Minimizing Feature Drift in Model Merging: Layer-wise Task Vector Fusion for Adaptive Knowledge Integration.Annual Conference on Neural Information Processing Systems (NeurIPS), 2025.(CCF A)",
+    "Wenju Sun, Qingyong Li,Yangliao Geng*, Boyang Li. CAT Merging: A Training-Free Approach for Resolving Conflicts in Model Merging.International Conference on Machine Learning (ICML), 2025. (CCF A)",
+    "Wenju Sun, Qingyong Li, Wen Wang,Yangliao Geng*, Boyang Li.Task Arithmetic in Trust Region: A Training-Free Model Merging Approach to Navigate Knowledge Conflicts.ACM International Conference on Multimedia (ACMM), 2025.(CCF A)",
+    "李怡然, 李清勇, 郑栋,耿阳李敖*, 郭志清 徐良韬, 姚雯, 吕伟涛. 基于气象大模型的门控时空融合网络闪电预报方法. 中国科学: 地球科学. 2025. (中文地球科学顶刊)"
+  ],
+  "research_directions": [
+    "增量学习、模型融合、图机器学习、气象时空数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10133",
+  "title": "助理研究员",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

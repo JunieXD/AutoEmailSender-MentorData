@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cc0de295384aac04e967"
+      ],
+      "ended_at": null,
+      "id": "aff_42a3ee934e5676d0fbf8",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_a33d6bd5e5916952d3de",
+      "source_url": "https://faculty.bjtu.edu.cn/10073",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_cc0de295384aac04e967"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42a3ee934e5676d0fbf8",
+      "claim_ids": [
+        "claim_cc0de295384aac04e967"
+      ],
+      "is_primary": true,
+      "normalized_value": "qjguan@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10073",
+      "status": "current",
+      "type": "email",
+      "value": "qjguan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cc0de295384aac04e967"
+    ],
+    "email": [
+      "claim_cc0de295384aac04e967"
+    ],
+    "name": [
+      "claim_cc0de295384aac04e967"
+    ],
+    "profile_url": [
+      "claim_cc0de295384aac04e967"
+    ],
+    "recent_papers": [
+      "claim_cc0de295384aac04e967"
+    ],
+    "research_directions": [
+      "claim_cc0de295384aac04e967"
+    ],
+    "status": [
+      "claim_cc0de295384aac04e967"
+    ],
+    "title": [
+      "claim_cc0de295384aac04e967"
+    ]
+  },
+  "id": "mentor_dd505d2d5e3d2bacc2d2",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cc0de295384aac04e967"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "管庆吉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42a3ee934e5676d0fbf8",
+      "claim_ids": [
+        "claim_cc0de295384aac04e967"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/10073"
+    }
+  ],
+  "recent_papers": [
+    "Qingji Guan et al. Bolstering CLIP with Exemplar-anchored Positive-incentive Noise Learning for Fine-grained Pneumonia Classification.",
+    "Qingji Guan et al. Distribution-aware Mixtures of Experts for Long-Tailed Medical Image Classification.",
+    "Mengyang Pu, Yaping Huang, Qingji Guan, Zhihao Liu, and Haibin Ling, “RINDNet++: Edge Detection for Discontinuity in Reflectance, Illumination, Normal, and Depth”, International Journal of Computer Vision, 133(10):7486-7510, 2025.",
+    "Xiaokun Li, Yaping Huang, and Qingji Guan, “CLIP-driven Coarse-to-fine Semantic Guidance for Fine-grained Open-set Semi-supervised Learning”, In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pages 30312-30321, 2025.",
+    "Li Huang, Yaping Huang, and Qingji Guan. “Improving Image Inpainting via Adversarial Collaborative Training”, IEEE Transactions on Multimedia, 37: 356-370, 2025.",
+    "Caixia Zhou, Yaping Huang, Mengyang Pu, Qingji Guan, Ruoxi Deng, and Haibin Ling, “MuGE: Multiple Granularity Edge Detection”, In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), pages 25952-25962, 2024.",
+    "Qingji Guan, Qinrun Chen, Zhun Zhong, Yaping Huang, Yao Zhao. A Hard Knowledge Regularization Method with Probability Difference in Thorax Disease Images. Knowledge-Based Systems. 2023.",
+    "Qingji Guan, Zhuangzhuang Li, Jiayu Zhang, Yao Zhao. Joint Representation and Classifier Learning for Long-tailed Image Classification. Image and Vision Computing. 2023."
+  ],
+  "research_directions": [
+    "医学影像与计算机视觉交叉领域,主要包括医学影像识别、分割、定位、配准中涉及的噪声标签问题、长尾分布问题、数据对齐问题等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10073",
+  "title": "讲师",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

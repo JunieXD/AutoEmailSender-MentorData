@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7f669553a274e3294e5"
+      ],
+      "ended_at": null,
+      "id": "aff_56f85ece68ee89c51ee9",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_fb2626fd6d0625cea264",
+      "source_url": "https://faculty.bjtu.edu.cn/8239",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7f669553a274e3294e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_56f85ece68ee89c51ee9",
+      "claim_ids": [
+        "claim_d7f669553a274e3294e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "gyan@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8239",
+      "status": "current",
+      "type": "email",
+      "value": "gyan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7f669553a274e3294e5"
+    ],
+    "email": [
+      "claim_d7f669553a274e3294e5"
+    ],
+    "name": [
+      "claim_d7f669553a274e3294e5"
+    ],
+    "profile_url": [
+      "claim_d7f669553a274e3294e5"
+    ],
+    "research_directions": [
+      "claim_d7f669553a274e3294e5"
+    ],
+    "status": [
+      "claim_d7f669553a274e3294e5"
+    ],
+    "title": [
+      "claim_d7f669553a274e3294e5"
+    ]
+  },
+  "id": "mentor_d6394a0d611117623ee2",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7f669553a274e3294e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "安高云"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_56f85ece68ee89c51ee9",
+      "claim_ids": [
+        "claim_d7f669553a274e3294e5"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8239"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数字媒体信息处理与智能分析、新一代电子信息技术、软件工程、人工智能、大数据技术与工程、数据与知识工程、计算机技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8239",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

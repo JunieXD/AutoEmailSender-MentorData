@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b0e38472909b62ae6019"
+      ],
+      "ended_at": null,
+      "id": "aff_09ab579137214cd146c9",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_345f07aadbab11fa0138",
+      "source_url": "https://faculty.bjtu.edu.cn/7845",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b0e38472909b62ae6019"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_09ab579137214cd146c9",
+      "claim_ids": [
+        "claim_b0e38472909b62ae6019"
+      ],
+      "is_primary": true,
+      "normalized_value": "ydu@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7845",
+      "status": "current",
+      "type": "email",
+      "value": "ydu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b0e38472909b62ae6019"
+    ],
+    "email": [
+      "claim_b0e38472909b62ae6019"
+    ],
+    "name": [
+      "claim_b0e38472909b62ae6019"
+    ],
+    "profile_url": [
+      "claim_b0e38472909b62ae6019"
+    ],
+    "recent_papers": [
+      "claim_b0e38472909b62ae6019"
+    ],
+    "research_directions": [
+      "claim_b0e38472909b62ae6019"
+    ],
+    "status": [
+      "claim_b0e38472909b62ae6019"
+    ],
+    "title": [
+      "claim_b0e38472909b62ae6019"
+    ]
+  },
+  "id": "mentor_6b3c4d38ef7e10dae586",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b0e38472909b62ae6019"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜晔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_09ab579137214cd146c9",
+      "claim_ids": [
+        "claim_b0e38472909b62ae6019"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7845"
+    }
+  ],
+  "recent_papers": [
+    "Yu Gu, Le Zhang, Yunyi Zhang, Ye Du*. \"SatFedGuard: Semi-Supervised Federated Contrastive Learning With RL-Assisted Bidirectional Distillation for Anomaly Traffic Detection in Satellite Networks\", IEEE Transactions on Network and Service Management, 2026",
+    "Le Zhang, Ye Du,Jikai Zhang, Lingfang Li, Xin Liu. \"A modeling and simulation framework for the study and analysis of cascading failures in satellite networks\", Reliability Engineering & System Safety, 2026",
+    "Yu Tang, Qi Dai, Ye Du*,Le Zhang, Yunyi Zhang. \"SGEOM: Sample gradient entropy based oversampling method for the class-imbalanced problem in software defect prediction\", Applied Soft Computing, 2026",
+    "Li Duan, Pengrui Chen, Wen Zhang, Jiqiang Liu,Ye Du,Ning Ruan, Chao Li, Wei Wang, Wei Ni. \"Lightweight Authentication for Drone Service Collaboration Using Blockchain-Based Decentralized Identity and Physically Unclonable Functions\", IEEE Transactions on Information Forensics and Security, 2026",
+    "Yu Tang, Ye Du*,Jianbo Gao, Ang Li, Mingsong Yang. \"ISRLNN: A software defect prediction method based on instance similarity reverse loss\", Journal of Systems and Software,2026",
+    "Yu Tang, Ye Du*, Ang Li, Mingsong Yang, Yan Xia. \"An undersampling method for software defect prediction based on Hilbert curve mapping distance.\" Engineering Application of Artificial Intelligence, 2025.",
+    "Yan Ding, Na Wang, Ye Du, Xuehui Du. \"Secure Outsourcing of Laplacian-Eigenmap-Based Face Recognition in IoT.\" IEEE Internet of Things Journal, 2025.",
+    "Yunyi Zhang, Ye Du*, Le Zhang, Jiamu Li. \"Failure analysis and resilience enhancement of LEO satellite network under inter-satellite link flooding attack.\" Peer-to-Peer Networking and Applications, 2025."
+  ],
+  "research_directions": [
+    "空天地一体化网络安全、网络攻防与漏洞检测、计算机辅助定密与信息保密技术、网络异常行为检测、系统安全性分析与可用性增强、系统可靠性分析与评估、大数据流量分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7845",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

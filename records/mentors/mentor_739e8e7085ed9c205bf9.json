@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3e61ff7970726dde8b7e"
+      ],
+      "ended_at": null,
+      "id": "aff_dd1487ed3fd1338a13be",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_51b2e338375f561e2b5a",
+      "source_url": "https://faculty.bjtu.edu.cn/8097",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3e61ff7970726dde8b7e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dd1487ed3fd1338a13be",
+      "claim_ids": [
+        "claim_3e61ff7970726dde8b7e"
+      ],
+      "is_primary": true,
+      "normalized_value": "cyjia@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8097",
+      "status": "current",
+      "type": "email",
+      "value": "cyjia@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3e61ff7970726dde8b7e"
+    ],
+    "email": [
+      "claim_3e61ff7970726dde8b7e"
+    ],
+    "name": [
+      "claim_3e61ff7970726dde8b7e"
+    ],
+    "profile_url": [
+      "claim_3e61ff7970726dde8b7e"
+    ],
+    "recent_papers": [
+      "claim_3e61ff7970726dde8b7e"
+    ],
+    "research_directions": [
+      "claim_3e61ff7970726dde8b7e"
+    ],
+    "status": [
+      "claim_3e61ff7970726dde8b7e"
+    ],
+    "title": [
+      "claim_3e61ff7970726dde8b7e"
+    ]
+  },
+  "id": "mentor_739e8e7085ed9c205bf9",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3e61ff7970726dde8b7e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "贾彩燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dd1487ed3fd1338a13be",
+      "claim_ids": [
+        "claim_3e61ff7970726dde8b7e"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8097"
+    }
+  ],
+  "recent_papers": [
+    "Ziying Song, Lin Liu, Hongyu Pan, Bencheng Liao, Mingzhe Guo, Lei Yang, Yongchang Zhang, Shaoqing Xu, Caiyan Jia*, Yadan LuoDIVER: Reinforced Diffusion Breaks Imitation Bottlenecks in End-to-End Autonomous Driving, IEEE Transactions on Pattern Analysis and Machine Intelligence,2026 (SCI, CCF-A)",
+    "Feiyang jia, Lin Liu, Ziying Song, Caiyan Jia*, Hangjun Ye, Xiaoshuai Hao*, Long Chen, DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving, ICML 2026 July (CCF-A)",
+    "Lin Liu, Caiyan Jia*, Guanyi Yu, Ziying Song, JunQiao Li, Feiyang Jia, Peiliang Wu, Xiaoshuai Hao, Yadan Luo, GuideFlow: Constraint-Guided Flow Matching for Planning in End-to-End Autonomous Driving,CVPR 2026June (CCF-A)",
+    "Xiangyu Sun, Shijie Wang, Fengyi Zhang, Lin Liu, Caiyan Jia, Ziyong Song, Zi Huang, Yadan Lou*, VGGT-World: Transforming VGGT into an Autoregressive Geometry World Model, ECCV 2026 (CCF-B, 清华A)",
+    "Yongkun Du, Miaomiao Zhao, Songlin Fan, Zhineng Chen, Caiyan Jia, Yu-Gang Jiang, MDiff4STR: Mask Diffusion with Self-Reflection for Scene Text Recognition, AAAI 2026 (CCF-A)",
+    "Feiyang Jia,Caiyan Jia*, Ailin Liu, Shaoqing Xu, Qiming Xia, Lin Liu, Lei Yang, Yan Gong, Ziying Song, DGFusion: Dual-guided Fusion for Robust Multi-Modal 3D Object Detection, IEEE Transactions on Circuits and Systems for Video Technology, vol. 36, no. 4, pp. 4956-4970, April 2026. (SCI, CCF-B)",
+    "Ziying Song,Caiyan jia*, Lin Liu, Hongyu Pan, Yongchang Zhang, Junming Wang, Xingyu Zhang, Shaoging Xu, Lei Yang, Yadan Luo, Don't Shake the Wheel: Momentum-AwarePlanning in End-to-End Autonomous Driving, CVPR 2025 (CCF-A)",
+    "Yongkun Du, Zhineng Chen, Yuchen Su,Caiyan Jia, Yu-Gang Jiang, Instruction-Guided Scene Text Recognition, IEEE Transactions on Pattern Analysis and Machine Intelligence,accepted, 2025 (SCI, CCF-A)"
+  ],
+  "research_directions": [
+    "机器学习模型(图神经网络)、虚假信息检测、大模型生成内容检测及可信计算、推荐算法、自动驾驶场景多模态融合目标检测及大模型泛化研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8097",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

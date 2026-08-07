@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b489d956e66200c2814"
+      ],
+      "ended_at": null,
+      "id": "aff_9e4acf9d50ee842c242d",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_345f07aadbab11fa0138",
+      "source_url": "https://faculty.bjtu.edu.cn/9849",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b489d956e66200c2814"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9e4acf9d50ee842c242d",
+      "claim_ids": [
+        "claim_7b489d956e66200c2814"
+      ],
+      "is_primary": true,
+      "normalized_value": "yzchen@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9849",
+      "status": "current",
+      "type": "email",
+      "value": "yzchen@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b489d956e66200c2814"
+    ],
+    "email": [
+      "claim_7b489d956e66200c2814"
+    ],
+    "name": [
+      "claim_7b489d956e66200c2814"
+    ],
+    "profile_url": [
+      "claim_7b489d956e66200c2814"
+    ],
+    "status": [
+      "claim_7b489d956e66200c2814"
+    ],
+    "title": [
+      "claim_7b489d956e66200c2814"
+    ]
+  },
+  "id": "mentor_64b3df9dd51271d801a2",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b489d956e66200c2814"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈逸洲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9e4acf9d50ee842c242d",
+      "claim_ids": [
+        "claim_7b489d956e66200c2814"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9849"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9849",
+  "title": "讲师",
+  "updated_at": "2026-08-07T12:05:22Z"
+}

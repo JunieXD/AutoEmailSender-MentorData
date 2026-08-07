@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f5d4cff59767b7f9235c"
+      ],
+      "ended_at": null,
+      "id": "aff_8cf1295f837382edbb49",
+      "is_primary": true,
+      "observed_at": "2026-08-07T12:05:22Z",
+      "organization_id": "org_auto_51b2e338375f561e2b5a",
+      "source_url": "https://faculty.bjtu.edu.cn/8249",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f5d4cff59767b7f9235c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8cf1295f837382edbb49",
+      "claim_ids": [
+        "claim_f5d4cff59767b7f9235c"
+      ],
+      "is_primary": true,
+      "normalized_value": "lpjing@bjtu.edu.cn",
+      "observed_at": "2026-08-07T12:05:22Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8249",
+      "status": "current",
+      "type": "email",
+      "value": "lpjing@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T12:05:22Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f5d4cff59767b7f9235c"
+    ],
+    "email": [
+      "claim_f5d4cff59767b7f9235c"
+    ],
+    "name": [
+      "claim_f5d4cff59767b7f9235c"
+    ],
+    "profile_url": [
+      "claim_f5d4cff59767b7f9235c"
+    ],
+    "recent_papers": [
+      "claim_f5d4cff59767b7f9235c"
+    ],
+    "research_directions": [
+      "claim_f5d4cff59767b7f9235c"
+    ],
+    "status": [
+      "claim_f5d4cff59767b7f9235c"
+    ],
+    "title": [
+      "claim_f5d4cff59767b7f9235c"
+    ]
+  },
+  "id": "mentor_ca0c4cb851297e3d91b5",
+  "last_verified_at": "2026-08-07T12:05:22Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f5d4cff59767b7f9235c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "景丽萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8cf1295f837382edbb49",
+      "claim_ids": [
+        "claim_f5d4cff59767b7f9235c"
+      ],
+      "observed_at": "2026-08-07T12:05:22Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8249"
+    }
+  ],
+  "recent_papers": [
+    "Pengyu Xu, Jingren Hou, Liping Jing, Jian Yu. Structured Confidence-Guided Online Adaptation for LLM-based Multi-Label Classification. ACL, 2026.",
+    "Chenguang Li, Yu-Hui Wen, Liping Jing. MotivDance: Fine-Grained Text-Guided Motivation Choreography with Music Synchronization. AAAI 2026.",
+    "JingRen Hou, Hong Wang, Pengyu Xu, Chang Gao, Huafeng Liu, Liping Jing. Learning Neural Operators from Partial Observations via Latent Autoregressive Modeling. AAAI 2026.",
+    "Yi Feng, Jiaqi Wang, Wenxuan Zhang, Zhuang Chen, Shen Yutong, Xiyao Xiao, Minlie Huang, Liping Jing, Jian Yu. Reframe Your Life Story: Interactive Narrative Therapist and Innovative Moment Assessment with Large Language Models. EMNLP 2025.",
+    "Chang Gao, Kang Zhao, Runqi Wang, Jianfei Chen, Liping Jing. Maximum Redundancy Pruning: A Principle-Driven Layerwise Sparsity Allocation for LLMs. ACM MM 2025.",
+    "Chenxu Wang, Yilin Lyu, Zicheng Sun, Liping Jing. Continual Gradient Low-Rank Projection Fine-Tuning for LLMs. ACL 2025.",
+    "Yi Feng, Mingyang Song, Jiaqi Wang, Zhuang Chen, Guanqun Bi, Minlie Huang, Liping Jing, Jian Yu. SS-GEN: A Social Story Generation Framework with Large Language Models. AAAI 2025.",
+    "Yilin Lyu, Liyuan Wang, Xingxing Zhang, Zicheng Sun, Hang Su, Jun Zhu, Liping Jing. Overcoming Recency Bias of Normalization Statistics in Continual Learning: Balance and Adaptation. NeurIPS 2023."
+  ],
+  "research_directions": [
+    "机器学习与认知计算、高维数据表示、弱监督学习、可解释学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T12:05:22Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8249",
+  "title": "教授",
+  "updated_at": "2026-08-07T12:05:22Z"
+}
