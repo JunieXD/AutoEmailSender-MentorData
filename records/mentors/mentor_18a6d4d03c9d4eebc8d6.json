@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2abb546f0da7a7506370"
+      ],
+      "ended_at": null,
+      "id": "aff_8e655480035a981b412b",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_a1ac5125edeb9d4ca33b",
+      "source_url": "http://people.ucas.edu.cn/~zp",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2abb546f0da7a7506370"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8e655480035a981b412b",
+      "claim_ids": [
+        "claim_2abb546f0da7a7506370"
+      ],
+      "is_primary": true,
+      "normalized_value": "zp@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "http://people.ucas.edu.cn/~zp",
+      "status": "current",
+      "type": "email",
+      "value": "zp@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2abb546f0da7a7506370"
+    ],
+    "email": [
+      "claim_2abb546f0da7a7506370"
+    ],
+    "name": [
+      "claim_2abb546f0da7a7506370"
+    ],
+    "profile_url": [
+      "claim_2abb546f0da7a7506370"
+    ],
+    "research_directions": [
+      "claim_2abb546f0da7a7506370"
+    ],
+    "status": [
+      "claim_2abb546f0da7a7506370"
+    ],
+    "title": [
+      "claim_2abb546f0da7a7506370"
+    ]
+  },
+  "id": "mentor_18a6d4d03c9d4eebc8d6",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2abb546f0da7a7506370"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曾鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8e655480035a981b412b",
+      "claim_ids": [
+        "claim_2abb546f0da7a7506370"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "http://people.ucas.edu.cn/~zp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "控制理论与控制工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "http://people.ucas.edu.cn/~zp",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

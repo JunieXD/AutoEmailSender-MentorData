@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b0b4660eb83e3a5b04a9"
+      ],
+      "ended_at": null,
+      "id": "aff_0147e3093c4f9651d358",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_bb9676413ccb3bc7b29c",
+      "source_url": "http://people.ucas.edu.cn/~shizelin",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_b0b4660eb83e3a5b04a9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0147e3093c4f9651d358",
+      "claim_ids": [
+        "claim_b0b4660eb83e3a5b04a9"
+      ],
+      "is_primary": true,
+      "normalized_value": "zlshi@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "http://people.ucas.edu.cn/~shizelin",
+      "status": "current",
+      "type": "email",
+      "value": "zlshi@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b0b4660eb83e3a5b04a9"
+    ],
+    "email": [
+      "claim_b0b4660eb83e3a5b04a9"
+    ],
+    "name": [
+      "claim_b0b4660eb83e3a5b04a9"
+    ],
+    "profile_url": [
+      "claim_b0b4660eb83e3a5b04a9"
+    ],
+    "research_directions": [
+      "claim_b0b4660eb83e3a5b04a9"
+    ],
+    "status": [
+      "claim_b0b4660eb83e3a5b04a9"
+    ],
+    "title": [
+      "claim_b0b4660eb83e3a5b04a9"
+    ]
+  },
+  "id": "mentor_77213aa0281d21311d83",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b0b4660eb83e3a5b04a9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "史泽林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0147e3093c4f9651d358",
+      "claim_ids": [
+        "claim_b0b4660eb83e3a5b04a9"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "http://people.ucas.edu.cn/~shizelin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "http://people.ucas.edu.cn/~shizelin",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

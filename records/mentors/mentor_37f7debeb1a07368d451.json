@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0c468bf8b4c64e29569b"
+      ],
+      "ended_at": null,
+      "id": "aff_74310953d5b9f30dcbce",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_f8b3e0e21a93d8d2eaad",
+      "source_url": "https://people.ucas.edu.cn/~zhaojibin",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_0c468bf8b4c64e29569b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_74310953d5b9f30dcbce",
+      "claim_ids": [
+        "claim_0c468bf8b4c64e29569b"
+      ],
+      "is_primary": true,
+      "normalized_value": "jbzhao@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~zhaojibin",
+      "status": "current",
+      "type": "email",
+      "value": "jbzhao@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0c468bf8b4c64e29569b"
+    ],
+    "email": [
+      "claim_0c468bf8b4c64e29569b"
+    ],
+    "name": [
+      "claim_0c468bf8b4c64e29569b"
+    ],
+    "profile_url": [
+      "claim_0c468bf8b4c64e29569b"
+    ],
+    "research_directions": [
+      "claim_0c468bf8b4c64e29569b"
+    ],
+    "status": [
+      "claim_0c468bf8b4c64e29569b"
+    ],
+    "title": [
+      "claim_0c468bf8b4c64e29569b"
+    ]
+  },
+  "id": "mentor_37f7debeb1a07368d451",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0c468bf8b4c64e29569b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵吉宾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_74310953d5b9f30dcbce",
+      "claim_ids": [
+        "claim_0c468bf8b4c64e29569b"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~zhaojibin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机械制造及其自动化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~zhaojibin",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

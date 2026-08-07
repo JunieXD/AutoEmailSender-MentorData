@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aea770553dcef3b86c1a"
+      ],
+      "ended_at": null,
+      "id": "aff_bc9692d9adb2be82c093",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_3674380bfc0355885b95",
+      "source_url": "https://people.ucas.edu.cn/~lijunlin",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_aea770553dcef3b86c1a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bc9692d9adb2be82c093",
+      "claim_ids": [
+        "claim_aea770553dcef3b86c1a"
+      ],
+      "is_primary": true,
+      "normalized_value": "lijunlin@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~lijunlin",
+      "status": "current",
+      "type": "email",
+      "value": "lijunlin@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aea770553dcef3b86c1a"
+    ],
+    "email": [
+      "claim_aea770553dcef3b86c1a"
+    ],
+    "name": [
+      "claim_aea770553dcef3b86c1a"
+    ],
+    "profile_url": [
+      "claim_aea770553dcef3b86c1a"
+    ],
+    "research_directions": [
+      "claim_aea770553dcef3b86c1a"
+    ],
+    "status": [
+      "claim_aea770553dcef3b86c1a"
+    ],
+    "title": [
+      "claim_aea770553dcef3b86c1a"
+    ]
+  },
+  "id": "mentor_90ee09cdc287b166c324",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aea770553dcef3b86c1a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李俊麟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bc9692d9adb2be82c093",
+      "claim_ids": [
+        "claim_aea770553dcef3b86c1a"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~lijunlin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~lijunlin",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

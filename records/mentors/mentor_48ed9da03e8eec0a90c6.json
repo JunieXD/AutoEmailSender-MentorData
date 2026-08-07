@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4439e21fde022d9c662d"
+      ],
+      "ended_at": null,
+      "id": "aff_7e16cd92308216e76573",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_d56e38f7af694fea4cfb",
+      "source_url": "http://people.ucas.edu.cn/~lianqingliu",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_4439e21fde022d9c662d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7e16cd92308216e76573",
+      "claim_ids": [
+        "claim_4439e21fde022d9c662d"
+      ],
+      "is_primary": true,
+      "normalized_value": "lqliu@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "http://people.ucas.edu.cn/~lianqingliu",
+      "status": "current",
+      "type": "email",
+      "value": "lqliu@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4439e21fde022d9c662d"
+    ],
+    "email": [
+      "claim_4439e21fde022d9c662d"
+    ],
+    "name": [
+      "claim_4439e21fde022d9c662d"
+    ],
+    "profile_url": [
+      "claim_4439e21fde022d9c662d"
+    ],
+    "research_directions": [
+      "claim_4439e21fde022d9c662d"
+    ],
+    "status": [
+      "claim_4439e21fde022d9c662d"
+    ],
+    "title": [
+      "claim_4439e21fde022d9c662d"
+    ]
+  },
+  "id": "mentor_48ed9da03e8eec0a90c6",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4439e21fde022d9c662d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘连庆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7e16cd92308216e76573",
+      "claim_ids": [
+        "claim_4439e21fde022d9c662d"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "http://people.ucas.edu.cn/~lianqingliu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "http://people.ucas.edu.cn/~lianqingliu",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

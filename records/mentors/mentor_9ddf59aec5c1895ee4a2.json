@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_75236e290e752ff86a23"
+      ],
+      "ended_at": null,
+      "id": "aff_a54023a3b6d978fdcd01",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_a1ac5125edeb9d4ca33b",
+      "source_url": "https://people.ucas.edu.cn/~yangzhijia",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_75236e290e752ff86a23"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a54023a3b6d978fdcd01",
+      "claim_ids": [
+        "claim_75236e290e752ff86a23"
+      ],
+      "is_primary": true,
+      "normalized_value": "yang@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~yangzhijia",
+      "status": "current",
+      "type": "email",
+      "value": "yang@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_75236e290e752ff86a23"
+    ],
+    "email": [
+      "claim_75236e290e752ff86a23"
+    ],
+    "name": [
+      "claim_75236e290e752ff86a23"
+    ],
+    "profile_url": [
+      "claim_75236e290e752ff86a23"
+    ],
+    "research_directions": [
+      "claim_75236e290e752ff86a23"
+    ],
+    "status": [
+      "claim_75236e290e752ff86a23"
+    ],
+    "title": [
+      "claim_75236e290e752ff86a23"
+    ]
+  },
+  "id": "mentor_9ddf59aec5c1895ee4a2",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_75236e290e752ff86a23"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨志家"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a54023a3b6d978fdcd01",
+      "claim_ids": [
+        "claim_75236e290e752ff86a23"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~yangzhijia"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "检测技术与自动化装置"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~yangzhijia",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

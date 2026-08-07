@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4aed984ea3eef02c1300"
+      ],
+      "ended_at": null,
+      "id": "aff_cd99740556ed73b83bbf",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_9fd81a55e32fe48f370f",
+      "source_url": "https://people.ucas.edu.cn/~yanshuxue",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_4aed984ea3eef02c1300"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cd99740556ed73b83bbf",
+      "claim_ids": [
+        "claim_4aed984ea3eef02c1300"
+      ],
+      "is_primary": true,
+      "normalized_value": "yansx@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~yanshuxue",
+      "status": "current",
+      "type": "email",
+      "value": "yansx@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4aed984ea3eef02c1300"
+    ],
+    "email": [
+      "claim_4aed984ea3eef02c1300"
+    ],
+    "name": [
+      "claim_4aed984ea3eef02c1300"
+    ],
+    "profile_url": [
+      "claim_4aed984ea3eef02c1300"
+    ],
+    "research_directions": [
+      "claim_4aed984ea3eef02c1300"
+    ],
+    "status": [
+      "claim_4aed984ea3eef02c1300"
+    ],
+    "title": [
+      "claim_4aed984ea3eef02c1300"
+    ]
+  },
+  "id": "mentor_c10b32a5326eba8e81e4",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4aed984ea3eef02c1300"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "阎述学"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cd99740556ed73b83bbf",
+      "claim_ids": [
+        "claim_4aed984ea3eef02c1300"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~yanshuxue"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~yanshuxue",
+  "title": "研究员",
+  "updated_at": "2026-08-07T08:09:20Z"
+}

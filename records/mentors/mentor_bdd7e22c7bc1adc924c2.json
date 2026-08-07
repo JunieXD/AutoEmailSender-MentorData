@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eac3571dfb56288c159f"
+      ],
+      "ended_at": null,
+      "id": "aff_cf442c75d3ba9768f210",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:09:20Z",
+      "organization_id": "org_auto_260b542155697789da9f",
+      "source_url": "https://people.ucas.edu.cn/~dujinsong",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_eac3571dfb56288c159f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf442c75d3ba9768f210",
+      "claim_ids": [
+        "claim_eac3571dfb56288c159f"
+      ],
+      "is_primary": true,
+      "normalized_value": "jsdu@sia.cn",
+      "observed_at": "2026-08-07T08:09:20Z",
+      "source_url": "https://people.ucas.edu.cn/~dujinsong",
+      "status": "current",
+      "type": "email",
+      "value": "jsdu@sia.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:09:20Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eac3571dfb56288c159f"
+    ],
+    "email": [
+      "claim_eac3571dfb56288c159f"
+    ],
+    "name": [
+      "claim_eac3571dfb56288c159f"
+    ],
+    "profile_url": [
+      "claim_eac3571dfb56288c159f"
+    ],
+    "research_directions": [
+      "claim_eac3571dfb56288c159f"
+    ],
+    "status": [
+      "claim_eac3571dfb56288c159f"
+    ]
+  },
+  "id": "mentor_bdd7e22c7bc1adc924c2",
+  "last_verified_at": "2026-08-07T08:09:20Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eac3571dfb56288c159f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜劲松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf442c75d3ba9768f210",
+      "claim_ids": [
+        "claim_eac3571dfb56288c159f"
+      ],
+      "observed_at": "2026-08-07T08:09:20Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~dujinsong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "检测技术与自动化装置"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:09:20Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~dujinsong",
+  "title": null,
+  "updated_at": "2026-08-07T08:09:20Z"
+}
