@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1092a01b105f6890e51c"
+      ],
+      "ended_at": null,
+      "id": "aff_2d5808f202f563ababb1",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1196/12848.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_1092a01b105f6890e51c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2d5808f202f563ababb1",
+      "claim_ids": [
+        "claim_1092a01b105f6890e51c"
+      ],
+      "is_primary": true,
+      "normalized_value": "linlan@scu.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1196/12848.htm",
+      "status": "current",
+      "type": "email",
+      "value": "linlan@scu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1092a01b105f6890e51c"
+    ],
+    "email": [
+      "claim_1092a01b105f6890e51c"
+    ],
+    "name": [
+      "claim_1092a01b105f6890e51c"
+    ],
+    "profile_url": [
+      "claim_1092a01b105f6890e51c"
+    ],
+    "recent_papers": [
+      "claim_1092a01b105f6890e51c"
+    ],
+    "research_directions": [
+      "claim_1092a01b105f6890e51c"
+    ],
+    "status": [
+      "claim_1092a01b105f6890e51c"
+    ],
+    "title": [
+      "claim_1092a01b105f6890e51c"
+    ]
+  },
+  "id": "mentor_8590034c2672ff8f866b",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1092a01b105f6890e51c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林兰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2d5808f202f563ababb1",
+      "claim_ids": [
+        "claim_1092a01b105f6890e51c"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1196/12848.htm"
+    }
+  ],
+  "recent_papers": [
+    "林兰,黄煜,熊伟.基于XML和正则表达式文法的飞行动态固定电报解释器的设计与实现. 四川大学学报(自然科学版). 2009,46(2):325-328"
+  ],
+  "research_directions": [
+    "空中交通管制系统 数字图像"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1196/12848.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

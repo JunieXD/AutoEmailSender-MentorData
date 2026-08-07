@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f2bb630784ffc8a88426"
+      ],
+      "ended_at": null,
+      "id": "aff_2cf219c23273a4c41cb0",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1196/4603.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f2bb630784ffc8a88426"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2cf219c23273a4c41cb0",
+      "claim_ids": [
+        "claim_f2bb630784ffc8a88426"
+      ],
+      "is_primary": true,
+      "normalized_value": "yinhao@suc.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1196/4603.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yinhao@suc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f2bb630784ffc8a88426"
+    ],
+    "email": [
+      "claim_f2bb630784ffc8a88426"
+    ],
+    "name": [
+      "claim_f2bb630784ffc8a88426"
+    ],
+    "profile_url": [
+      "claim_f2bb630784ffc8a88426"
+    ],
+    "research_directions": [
+      "claim_f2bb630784ffc8a88426"
+    ],
+    "status": [
+      "claim_f2bb630784ffc8a88426"
+    ],
+    "title": [
+      "claim_f2bb630784ffc8a88426"
+    ]
+  },
+  "id": "mentor_0fa59ea17d29426c2d4d",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f2bb630784ffc8a88426"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹皓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2cf219c23273a4c41cb0",
+      "claim_ids": [
+        "claim_f2bb630784ffc8a88426"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1196/4603.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医疗超声信号与图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1196/4603.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

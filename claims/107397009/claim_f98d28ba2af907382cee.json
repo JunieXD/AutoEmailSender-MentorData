@@ -3,7 +3,7 @@
     "email": "daicheng@scu.edu.cn",
     "mentor_status": "active",
     "name": "代成",
-    "organization_id": null,
+    "organization_id": "org_auto_0670da0d850e2b40bd2e",
     "profile_url": "https://sw.scu.edu.cn/info/1195/15882.htm",
     "recent_papers": [
       "Qu Long, Bai Guangming, Cheng Dai (通讯), Liu Juan, Sun Dechao, \"Learning-Based AoI Minimization Through UAV-Assisted Data Distribution in Vehicular Networks,\" IEEE Transactions on Intelligent Transportation Systems, vol. 26, no. 11, pp.19645-19660, 2025.",
@@ -21,29 +21,47 @@
     "submitted_university": "四川大学",
     "title": "副教授"
   },
-  "auto_eligible": false,
   "contributor": {
     "account_age_days_at_submission": 1515,
     "account_created_at": "2022-06-13T08:30:46Z",
     "github_login_at_submission": "JunieXD",
     "github_user_id": 107397009,
     "github_user_type": "User",
+    "issue_number": 14,
+    "issue_url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/14",
     "submitted_at": "2026-08-07T08:07:11Z"
   },
-  "created_at": "2026-08-07T08:07:28Z",
-  "id": "proposal_issue_14_row_4",
-  "issue": {
-    "batch_row": 4,
-    "number": 14,
-    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/14"
-  },
-  "kind": "mentor_contribution",
-  "match_status": "new",
-  "review_reasons": [
-    "unknown_university",
-    "auto_merge_disabled"
+  "evidence": [
+    {
+      "fields": [
+        "name",
+        "email",
+        "organization_id",
+        "title",
+        "research_directions",
+        "recent_papers",
+        "profile_url"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1195/15882.htm"
+    }
   ],
+  "id": "claim_f98d28ba2af907382cee",
+  "mentor_id": "mentor_ff47fdd666ac3c1efba3",
+  "moderation": {
+    "decision_at": "2026-08-07T08:11:35Z",
+    "mode": "manual",
+    "moderator_github_user_id": 107397009,
+    "normalized_fields": [
+      "organization_id"
+    ],
+    "policy_version": 1,
+    "reason": "GitHub PR merge approval"
+  },
+  "revocation_reason": null,
+  "revoked_at": null,
   "schema_version": 1,
+  "status": "accepted",
   "submitted": {
     "email": "daicheng@scu.edu.cn",
     "mentor_status": "active",
@@ -65,6 +83,5 @@
     "submitted_school": "软件学院",
     "submitted_university": "四川大学",
     "title": "副教授"
-  },
-  "target_mentor_id": null
+  }
 }
