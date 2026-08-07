@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c4db0074ed206efa2bb3"
+      ],
+      "ended_at": null,
+      "id": "aff_d781c022a6db84d5f3d0",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_308268206df9a76b841f",
+      "source_url": "https://ee.jlu.edu.cn/info/1018/8753.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c4db0074ed206efa2bb3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d781c022a6db84d5f3d0",
+      "claim_ids": [
+        "claim_c4db0074ed206efa2bb3"
+      ],
+      "is_primary": true,
+      "normalized_value": "bianhy@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1018/8753.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bianhy@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c4db0074ed206efa2bb3"
+    ],
+    "email": [
+      "claim_c4db0074ed206efa2bb3"
+    ],
+    "name": [
+      "claim_c4db0074ed206efa2bb3"
+    ],
+    "profile_url": [
+      "claim_c4db0074ed206efa2bb3"
+    ],
+    "recent_papers": [
+      "claim_c4db0074ed206efa2bb3"
+    ],
+    "research_directions": [
+      "claim_c4db0074ed206efa2bb3"
+    ],
+    "status": [
+      "claim_c4db0074ed206efa2bb3"
+    ],
+    "title": [
+      "claim_c4db0074ed206efa2bb3"
+    ]
+  },
+  "id": "mentor_5cde9ac181eb71649762",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c4db0074ed206efa2bb3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "边虹宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d781c022a6db84d5f3d0",
+      "claim_ids": [
+        "claim_c4db0074ed206efa2bb3"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1018/8753.htm"
+    }
+  ],
+  "recent_papers": [
+    "Single proton detection and high-resolution imaging with all-inorganic perovskite nanocrystals.",
+    "Multimodal tuning of synaptic plasticity using persistent luminescent memitters.",
+    "Stimuli-Responsive Memristive Materials for Artificial Synapses and Neuromorphic Computing.",
+    "Anomalous anisotropic dopant distribution in hexagonal yttrium sublattice.",
+    "Frenkel Defect Responsive Upconversion through High-energy Radiation."
+  ],
+  "research_directions": [
+    "稀土掺杂纳米发光及钙钛矿材料、光电及辐射探测器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1018/8753.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}

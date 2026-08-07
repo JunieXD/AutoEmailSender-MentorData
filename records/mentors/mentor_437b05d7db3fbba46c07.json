@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f1f8abc14702597a791b"
+      ],
+      "ended_at": null,
+      "id": "aff_1d6aa855a27ad94c9c35",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_6b237ad529f2c77f029f",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/8357.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f1f8abc14702597a791b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1d6aa855a27ad94c9c35",
+      "claim_ids": [
+        "claim_f1f8abc14702597a791b"
+      ],
+      "is_primary": true,
+      "normalized_value": "taomin@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/8357.htm",
+      "status": "current",
+      "type": "email",
+      "value": "taomin@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f1f8abc14702597a791b"
+    ],
+    "email": [
+      "claim_f1f8abc14702597a791b"
+    ],
+    "name": [
+      "claim_f1f8abc14702597a791b"
+    ],
+    "profile_url": [
+      "claim_f1f8abc14702597a791b"
+    ],
+    "recent_papers": [
+      "claim_f1f8abc14702597a791b"
+    ],
+    "research_directions": [
+      "claim_f1f8abc14702597a791b"
+    ],
+    "status": [
+      "claim_f1f8abc14702597a791b"
+    ],
+    "title": [
+      "claim_f1f8abc14702597a791b"
+    ]
+  },
+  "id": "mentor_437b05d7db3fbba46c07",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f1f8abc14702597a791b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陶敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1d6aa855a27ad94c9c35",
+      "claim_ids": [
+        "claim_f1f8abc14702597a791b"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1021/8357.htm"
+    }
+  ],
+  "recent_papers": [
+    "Min Tao, Jian Guan, Tao Peng, et al. Simultaneous Realization of Laser Ranging and Communication Based on Dual-Pulse Interval Modulation[J], IEEE Transactions on Instrumentation and Measurement, 2021, 70: 1-10.",
+    "Min Tao, Tao Peng, Changchun Ding, et al. A Large-Range Steering Optical Phased Array Chip and High-Speed Controlling System[J]. IEEE Transactions on Instrumentation and Measurement, 2022, 71: 1-12.",
+    "Ziming Wang, Chengming Li, Baisong Chen, Haolun Du, Junfeng Song, andMin Tao*. Research on the Control Technology of Optical Phased Array High-Speed Scanning[J]. IEEE Transactions on Instrumentation and Measurement,2024, 73: 1-12.",
+    "Yingzhi Li, Ziming Wang, Haolun Du, Baisong Chen, Junfeng Song, andMin Tao*. Integrated communication and sensing system based on Si-SiN dual-layer optical phased array[J]. Optics Express, 2024, 32(19): 33222-33231.",
+    "Haolun Du, Ziming Wang, Baisong Chen, Xianqi Pang, Yingzhi Li, Heming Hu, Xuetong Li, Huan Qu, Jie Li,Min Tao*, and Junfeng Song. Research on Frequency Modulated Continuous Wave Laser Radar Imaging Technology Based on 2-axis Galvanometer[J]. IEEE Transactions on Instrumentation and Measurement, 2025, 74: 1-12."
+  ],
+  "research_directions": [
+    "激光雷达",
+    "嵌入式系统",
+    "FPGA系统开发",
+    "自动控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1021/8357.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}

@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f9aff257ab7d10bc024e"
+      ],
+      "ended_at": null,
+      "id": "aff_4266bd2a900d9f4d402c",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_6b237ad529f2c77f029f",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/1862.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f9aff257ab7d10bc024e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4266bd2a900d9f4d402c",
+      "claim_ids": [
+        "claim_f9aff257ab7d10bc024e"
+      ],
+      "is_primary": true,
+      "normalized_value": "wang_hongbo@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1021/1862.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wang_hongbo@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f9aff257ab7d10bc024e"
+    ],
+    "email": [
+      "claim_f9aff257ab7d10bc024e"
+    ],
+    "name": [
+      "claim_f9aff257ab7d10bc024e"
+    ],
+    "profile_url": [
+      "claim_f9aff257ab7d10bc024e"
+    ],
+    "recent_papers": [
+      "claim_f9aff257ab7d10bc024e"
+    ],
+    "research_directions": [
+      "claim_f9aff257ab7d10bc024e"
+    ],
+    "status": [
+      "claim_f9aff257ab7d10bc024e"
+    ],
+    "title": [
+      "claim_f9aff257ab7d10bc024e"
+    ]
+  },
+  "id": "mentor_53d37e6a627a9a37f231",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f9aff257ab7d10bc024e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王红波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4266bd2a900d9f4d402c",
+      "claim_ids": [
+        "claim_f9aff257ab7d10bc024e"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1021/1862.htm"
+    }
+  ],
+  "recent_papers": [
+    "Maneuvering motion prediction algorithm for AUV based on the HAM-BiTL combined network model",
+    "Research on path planning of intelligent ships affected by ocean currents based on deep reinforcement learning",
+    "Time-optimal trajectory planning for unmanned ships along a specified path based on the phase plane",
+    "Efficient collaborative collision avoidance algorithm considering COLREGs in complex multi-ship encounter scenarios",
+    "Integrated path planning for AUV communication efficiency and obstacle avoidance based on ant colony optimization and three-dimensional dynamic window algorithm",
+    "Research on AUV underwater path planning based on preference-driven interval multi-objective optimization algorithm",
+    "Robust fault-tolerant control for dynamic positioning vessels based on adaptive sliding mode control and control allocation",
+    "Parameter Optimization Design of MPC Controller in AUV Motion Control Based on Improved Black-Winged Kite Algorithm"
+  ],
+  "research_directions": [
+    "水面和水下船舶、机器人和无人车等运动优化控制、路径规划(含避碰)以及环境感知的研究与计算机仿真",
+    "PLC(可编程逻辑控制器)工业控制应用与编程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1021/1862.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}

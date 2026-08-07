@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ae9c97efe589c2bc32a3"
+      ],
+      "ended_at": null,
+      "id": "aff_5ae82a4778bc2e6a03a2",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_61cb247b5c11f87a7e33",
+      "source_url": "https://ee.jlu.edu.cn/info/1022/8368.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ae9c97efe589c2bc32a3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5ae82a4778bc2e6a03a2",
+      "claim_ids": [
+        "claim_ae9c97efe589c2bc32a3"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaotong@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1022/8368.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaotong@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ae9c97efe589c2bc32a3"
+    ],
+    "email": [
+      "claim_ae9c97efe589c2bc32a3"
+    ],
+    "name": [
+      "claim_ae9c97efe589c2bc32a3"
+    ],
+    "profile_url": [
+      "claim_ae9c97efe589c2bc32a3"
+    ],
+    "recent_papers": [
+      "claim_ae9c97efe589c2bc32a3"
+    ],
+    "research_directions": [
+      "claim_ae9c97efe589c2bc32a3"
+    ],
+    "status": [
+      "claim_ae9c97efe589c2bc32a3"
+    ],
+    "title": [
+      "claim_ae9c97efe589c2bc32a3"
+    ]
+  },
+  "id": "mentor_56deae85468e89e26caf",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ae9c97efe589c2bc32a3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高通"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5ae82a4778bc2e6a03a2",
+      "claim_ids": [
+        "claim_ae9c97efe589c2bc32a3"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1022/8368.htm"
+    }
+  ],
+  "recent_papers": [
+    "Tong Gao, Hao Chen*, Adaptive Heterogeneous Support Tensor Machine: An Extended STM for Object Recognition Using an Arbitrary Combination of Multisource Heterogeneous Remote Sensing Data, IEEE Transactions on Geoscience and Remote Sensing, 2022, vol. 60, pp. 1-22. (SCI, IF=8.2) (IEEE,遥感领域TOP期刊,中科院一区)",
+    "Tong Gao*, Lingjia Gu, Hao Chen*, Bin Zhou, \"Domain Adaptation Support Tensor Machine: An Extended STM for Object Recognition Using Cross-Source Heterogeneous Remote Sensing Data,\" in IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1-21, 2023 (SCI, IF=8.2) (IEEE,遥感领域TOP期刊,中科院一区)",
+    "Tong Gao*, Lingjia Gu, Hao Chen, \"Tensor Ring Discriminant Analysis Used for Dimension Reduction of Remote Sensing Feature Tensor,\" in IEEE Transactions on Geoscience and Remote Sensing, vol. 62, pp. 1-17, 2024. (SCI, IF=8.2) (IEEE,遥感领域TOP期刊,中科院一区)",
+    "Tong Gao, Hao Chen*, Wen Chen. HTGCE: An Graph-based and Classifier-oriented Dimension Reduction Method for Multisource Heterogeneous Features Tensors, IEEE Transactions on Geoscience and Remote Sensing,2022, vol. 60, pp. 1-18. (SCI, IF=8.2) (IEEE,遥感领域TOP期刊,中科院一区)",
+    "Tong Gao, Hao Chen*, Multicycle Disassembly-based Decomposition Algorithm used to Train Multiclass Support Vector Machines, Pattern Recognition, 2023. (SCI, IF=8.518) (IEEE,计算机科学领域TOP期刊,中科院一区)"
+  ],
+  "research_directions": [
+    "遥感图像智能解译",
+    "多源融合智能识别",
+    "高光谱遥感",
+    "嵌入式智能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1022/8368.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}

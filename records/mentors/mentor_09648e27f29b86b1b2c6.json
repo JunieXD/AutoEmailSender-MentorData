@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b32da2de98c770aeac67"
+      ],
+      "ended_at": null,
+      "id": "aff_6b19f4d4342b0cc6af62",
+      "is_primary": true,
+      "observed_at": "2026-08-07T06:59:37Z",
+      "organization_id": "org_auto_93d70925d69f4ea8f465",
+      "source_url": "https://ee.jlu.edu.cn/info/1019/1813.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b32da2de98c770aeac67"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6b19f4d4342b0cc6af62",
+      "claim_ids": [
+        "claim_b32da2de98c770aeac67"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenqd@jlu.edu.cn",
+      "observed_at": "2026-08-07T06:59:37Z",
+      "source_url": "https://ee.jlu.edu.cn/info/1019/1813.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenqd@jlu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T06:59:37Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b32da2de98c770aeac67"
+    ],
+    "email": [
+      "claim_b32da2de98c770aeac67"
+    ],
+    "name": [
+      "claim_b32da2de98c770aeac67"
+    ],
+    "profile_url": [
+      "claim_b32da2de98c770aeac67"
+    ],
+    "research_directions": [
+      "claim_b32da2de98c770aeac67"
+    ],
+    "status": [
+      "claim_b32da2de98c770aeac67"
+    ],
+    "title": [
+      "claim_b32da2de98c770aeac67"
+    ]
+  },
+  "id": "mentor_09648e27f29b86b1b2c6",
+  "last_verified_at": "2026-08-07T06:59:37Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b32da2de98c770aeac67"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈岐岱"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6b19f4d4342b0cc6af62",
+      "claim_ids": [
+        "claim_b32da2de98c770aeac67"
+      ],
+      "observed_at": "2026-08-07T06:59:37Z",
+      "status": "current",
+      "url": "https://ee.jlu.edu.cn/info/1019/1813.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "集成光电子、激光加工、微纳光学、超快光学、原子及近原子尺度制造"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T06:59:37Z",
+  "status_reason": null,
+  "status_source_url": "https://ee.jlu.edu.cn/info/1019/1813.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T06:59:37Z"
+}
