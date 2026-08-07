@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_245a1248f3c5c987876f"
+      ],
+      "ended_at": null,
+      "id": "aff_dd35f11499fafabeff1f",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/SJS/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_245a1248f3c5c987876f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dd35f11499fafabeff1f",
+      "claim_ids": [
+        "claim_245a1248f3c5c987876f"
+      ],
+      "is_primary": true,
+      "normalized_value": "jssu@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/SJS/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jssu@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_245a1248f3c5c987876f"
+    ],
+    "email": [
+      "claim_245a1248f3c5c987876f"
+    ],
+    "name": [
+      "claim_245a1248f3c5c987876f"
+    ],
+    "profile_url": [
+      "claim_245a1248f3c5c987876f"
+    ],
+    "recent_papers": [
+      "claim_245a1248f3c5c987876f"
+    ],
+    "research_directions": [
+      "claim_245a1248f3c5c987876f"
+    ],
+    "status": [
+      "claim_245a1248f3c5c987876f"
+    ],
+    "title": [
+      "claim_245a1248f3c5c987876f"
+    ]
+  },
+  "id": "mentor_90ea092f4cfaa635c85c",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_245a1248f3c5c987876f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏劲松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dd35f11499fafabeff1f",
+      "claim_ids": [
+        "claim_245a1248f3c5c987876f"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/SJS/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Translatotron-V(ison): An End-to-End Model for In-Image Machine Translation",
+    "Who To Align With: Feedback-Oriented Multi-Modal Alignment in Recommendation Systems",
+    "LiteSearch: Efficacious Tree Search for LLM",
+    "Response Enhanced Semi-supervised Dialogue Query Generation",
+    "Code-Aware Cross-Program Transfer Hyperparameter Optimization"
+  ],
+  "research_directions": [
+    "大模型跨语言能力迁移研究、同传大模型技术合作项目、跨模态暗知识高效获取与传输、多模态智能体关键技术与应用研发、自动报告数据生成系统开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/SJS/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

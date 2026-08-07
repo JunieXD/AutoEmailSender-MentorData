@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3a17e72037b93d16c3ca"
+      ],
+      "ended_at": null,
+      "id": "aff_feceb5ef6d8f94e0edaf",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_8c619f38297aaaadaadb",
+      "source_url": "https://faculty.xmu.edu.cn/LSC/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3a17e72037b93d16c3ca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_feceb5ef6d8f94e0edaf",
+      "claim_ids": [
+        "claim_3a17e72037b93d16c3ca"
+      ],
+      "is_primary": true,
+      "normalized_value": "liusc@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/LSC/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liusc@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3a17e72037b93d16c3ca"
+    ],
+    "email": [
+      "claim_3a17e72037b93d16c3ca"
+    ],
+    "name": [
+      "claim_3a17e72037b93d16c3ca"
+    ],
+    "profile_url": [
+      "claim_3a17e72037b93d16c3ca"
+    ],
+    "recent_papers": [
+      "claim_3a17e72037b93d16c3ca"
+    ],
+    "research_directions": [
+      "claim_3a17e72037b93d16c3ca"
+    ],
+    "status": [
+      "claim_3a17e72037b93d16c3ca"
+    ],
+    "title": [
+      "claim_3a17e72037b93d16c3ca"
+    ]
+  },
+  "id": "mentor_55e3cb204a3fb2d72ad6",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3a17e72037b93d16c3ca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘思聪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_feceb5ef6d8f94e0edaf",
+      "claim_ids": [
+        "claim_3a17e72037b93d16c3ca"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/LSC/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Sparsity-Aware Channel Estimation for Underwater Acoustic Wireless Networks: A Generative Adversarial Network Enabled Approach",
+    "Block-Sparse Learning Enabled Approach Towards Efficient Channel Estimation for Underwater Visible Light Communications",
+    "Classification-Driven Discrete Neural Representation Learning for Semantic Communications",
+    "Integrated sensing, lighting and communication based on visible light communication: A review",
+    "Multi-Target Cooperative Visible Light Positioning: A Compressed Sensing Based Framework"
+  ],
+  "research_directions": [
+    "通信感知一体化、可见光通信、压缩感知、基于人工智能的通信技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/LSC/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_edc8ca573dca2e3993b4"
+      ],
+      "ended_at": null,
+      "id": "aff_de96b7d49ddf2465e914",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/fchao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_edc8ca573dca2e3993b4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_de96b7d49ddf2465e914",
+      "claim_ids": [
+        "claim_edc8ca573dca2e3993b4"
+      ],
+      "is_primary": true,
+      "normalized_value": "fchao@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/fchao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fchao@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_edc8ca573dca2e3993b4"
+    ],
+    "email": [
+      "claim_edc8ca573dca2e3993b4"
+    ],
+    "name": [
+      "claim_edc8ca573dca2e3993b4"
+    ],
+    "profile_url": [
+      "claim_edc8ca573dca2e3993b4"
+    ],
+    "research_directions": [
+      "claim_edc8ca573dca2e3993b4"
+    ],
+    "status": [
+      "claim_edc8ca573dca2e3993b4"
+    ],
+    "title": [
+      "claim_edc8ca573dca2e3993b4"
+    ]
+  },
+  "id": "mentor_2fd0b3ae585aaf792d0a",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_edc8ca573dca2e3993b4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "晁飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_de96b7d49ddf2465e914",
+      "claim_ids": [
+        "claim_edc8ca573dca2e3993b4"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/fchao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "强化学习算法、深度神经网络的紧致化表征与压缩技术和网络结构搜索"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/fchao/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

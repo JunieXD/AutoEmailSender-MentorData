@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_facd13ea5311193493eb"
+      ],
+      "ended_at": null,
+      "id": "aff_b6eb1463132f73e58075",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/suqiang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_facd13ea5311193493eb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b6eb1463132f73e58075",
+      "claim_ids": [
+        "claim_facd13ea5311193493eb"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiangsu@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/suqiang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiangsu@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_facd13ea5311193493eb"
+    ],
+    "email": [
+      "claim_facd13ea5311193493eb"
+    ],
+    "name": [
+      "claim_facd13ea5311193493eb"
+    ],
+    "profile_url": [
+      "claim_facd13ea5311193493eb"
+    ],
+    "recent_papers": [
+      "claim_facd13ea5311193493eb"
+    ],
+    "research_directions": [
+      "claim_facd13ea5311193493eb"
+    ],
+    "status": [
+      "claim_facd13ea5311193493eb"
+    ],
+    "title": [
+      "claim_facd13ea5311193493eb"
+    ]
+  },
+  "id": "mentor_0f09dd20eacd4f710f43",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_facd13ea5311193493eb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b6eb1463132f73e58075",
+      "claim_ids": [
+        "claim_facd13ea5311193493eb"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/suqiang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Low‐Overhead Intra‐Host Container Communication with Hardware Offloading",
+    "Tomur: Traffic‐Aware Performance Prediction of On‐NIC Network Functions with Multi‐Resource Contention",
+    "Youmu: Efficient Columnar Data Pipeline for LLM Training",
+    "Toward Scalable and High-Performance GNN-Based Traffic Engineering with Free Path Selection",
+    "REMUS: Efficient Multi‐Request Schedulingin Computational Storage Devices",
+    "Offloading Cloud Network Services at Production Scale with SONiC DASH SmartSwitch",
+    "Towards Efficient Verification of Distributed In-Network Computing Programs",
+    "Leveraging Large Language Models for Automated Reproduction of Networking Research Results"
+  ],
+  "research_directions": [
+    "智算网络、机器学习系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/suqiang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

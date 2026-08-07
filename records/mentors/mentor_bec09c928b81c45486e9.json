@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8906f1ffe4d8a3d48640"
+      ],
+      "ended_at": null,
+      "id": "aff_b2acc2556c094948b94c",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_d8f897da7f46e173e7a0",
+      "source_url": "https://faculty.xmu.edu.cn/SSZ/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8906f1ffe4d8a3d48640"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b2acc2556c094948b94c",
+      "claim_ids": [
+        "claim_8906f1ffe4d8a3d48640"
+      ],
+      "is_primary": true,
+      "normalized_value": "ssz@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/SSZ/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ssz@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8906f1ffe4d8a3d48640"
+    ],
+    "email": [
+      "claim_8906f1ffe4d8a3d48640"
+    ],
+    "name": [
+      "claim_8906f1ffe4d8a3d48640"
+    ],
+    "profile_url": [
+      "claim_8906f1ffe4d8a3d48640"
+    ],
+    "recent_papers": [
+      "claim_8906f1ffe4d8a3d48640"
+    ],
+    "status": [
+      "claim_8906f1ffe4d8a3d48640"
+    ],
+    "title": [
+      "claim_8906f1ffe4d8a3d48640"
+    ]
+  },
+  "id": "mentor_bec09c928b81c45486e9",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8906f1ffe4d8a3d48640"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏松志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b2acc2556c094948b94c",
+      "claim_ids": [
+        "claim_8906f1ffe4d8a3d48640"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/SSZ/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Towards accurate abdominal tumor segmentation: A 2D model with Position-Aware and Key Slice Feature Sharing",
+    "Boosting semi-supervised learning under imbalanced regression via pseudo-labeling",
+    "CC-DA: CROSS-DOMAIN CONSISTENCY DATA AUGMENTATION FOR 3D TUMOR SEGMENTATION",
+    "A Hybrid Approach for Cross-Modality Pose Estimation Between Image and Point Cloud",
+    "Enhancement of Cat Breeds Classification Model Based on Meta Loss Correction"
+  ],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/SSZ/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

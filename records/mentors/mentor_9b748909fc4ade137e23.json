@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_484e6f0fef1d84ee1719"
+      ],
+      "ended_at": null,
+      "id": "aff_a24848e3cb9a5b110ef6",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/guoshihui/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_484e6f0fef1d84ee1719"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a24848e3cb9a5b110ef6",
+      "claim_ids": [
+        "claim_484e6f0fef1d84ee1719"
+      ],
+      "is_primary": true,
+      "normalized_value": "guoshihui@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/guoshihui/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guoshihui@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_484e6f0fef1d84ee1719"
+    ],
+    "email": [
+      "claim_484e6f0fef1d84ee1719"
+    ],
+    "name": [
+      "claim_484e6f0fef1d84ee1719"
+    ],
+    "profile_url": [
+      "claim_484e6f0fef1d84ee1719"
+    ],
+    "research_directions": [
+      "claim_484e6f0fef1d84ee1719"
+    ],
+    "status": [
+      "claim_484e6f0fef1d84ee1719"
+    ],
+    "title": [
+      "claim_484e6f0fef1d84ee1719"
+    ]
+  },
+  "id": "mentor_9b748909fc4ade137e23",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_484e6f0fef1d84ee1719"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭诗辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a24848e3cb9a5b110ef6",
+      "claim_ids": [
+        "claim_484e6f0fef1d84ee1719"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/guoshihui/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "虚拟现实、人机交互、计算机图形学(具体而言,我们在过去五年时间里面主要关注穿戴式人体动作捕捉,在未来五年我们将重点关注从人体数据采集、并将人类技能迁移到机器人)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/guoshihui/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

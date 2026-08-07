@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_33c4ce890f0d0acd8476"
+      ],
+      "ended_at": null,
+      "id": "aff_a4dfc65e42ab043394be",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/chenanjun/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_33c4ce890f0d0acd8476"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a4dfc65e42ab043394be",
+      "claim_ids": [
+        "claim_33c4ce890f0d0acd8476"
+      ],
+      "is_primary": true,
+      "normalized_value": "anjunchen@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/chenanjun/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "anjunchen@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_33c4ce890f0d0acd8476"
+    ],
+    "email": [
+      "claim_33c4ce890f0d0acd8476"
+    ],
+    "name": [
+      "claim_33c4ce890f0d0acd8476"
+    ],
+    "profile_url": [
+      "claim_33c4ce890f0d0acd8476"
+    ],
+    "recent_papers": [
+      "claim_33c4ce890f0d0acd8476"
+    ],
+    "research_directions": [
+      "claim_33c4ce890f0d0acd8476"
+    ],
+    "status": [
+      "claim_33c4ce890f0d0acd8476"
+    ],
+    "title": [
+      "claim_33c4ce890f0d0acd8476"
+    ]
+  },
+  "id": "mentor_d0f72686863d1a233456",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_33c4ce890f0d0acd8476"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈安军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a4dfc65e42ab043394be",
+      "claim_ids": [
+        "claim_33c4ce890f0d0acd8476"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/chenanjun/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Improving Sparse IMU-based Motion Capture with Motion Label Smoothing",
+    "AdaptiveFusion: Adaptive Multi-Modal Multi-View Fusion for 3D Human Body Reconstruction",
+    "Towards Weather-Robust 3D Human Body Reconstruction: Millimeter-Wave Radar-Based Dataset, Benchmark, and Multi-Modal Fusion",
+    "ImmFusion: Robust mmWave-RGB Fusion for 3D Human Body Reconstruction in All Weather Conditions",
+    "mmBody Benchmark: 3D Body Reconstruction Dataset and Analysis for Millimeter Wave Radar"
+  ],
+  "research_directions": [
+    "具身智能、人机交互"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/chenanjun/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

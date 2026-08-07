@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0ce934140e48dcccacf8"
+      ],
+      "ended_at": null,
+      "id": "aff_15c1dc7f4cdecdeb55cb",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/WXL1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0ce934140e48dcccacf8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_15c1dc7f4cdecdeb55cb",
+      "claim_ids": [
+        "claim_0ce934140e48dcccacf8"
+      ],
+      "is_primary": true,
+      "normalized_value": "xlwang@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/WXL1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xlwang@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0ce934140e48dcccacf8"
+    ],
+    "email": [
+      "claim_0ce934140e48dcccacf8"
+    ],
+    "name": [
+      "claim_0ce934140e48dcccacf8"
+    ],
+    "profile_url": [
+      "claim_0ce934140e48dcccacf8"
+    ],
+    "recent_papers": [
+      "claim_0ce934140e48dcccacf8"
+    ],
+    "research_directions": [
+      "claim_0ce934140e48dcccacf8"
+    ],
+    "status": [
+      "claim_0ce934140e48dcccacf8"
+    ],
+    "title": [
+      "claim_0ce934140e48dcccacf8"
+    ]
+  },
+  "id": "mentor_6bd1ba9be1581476a2d5",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0ce934140e48dcccacf8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晓黎"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_15c1dc7f4cdecdeb55cb",
+      "claim_ids": [
+        "claim_0ce934140e48dcccacf8"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/WXL1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "From A Timeline Contact Graph to Close Contact Tracing and Infection Diffusion Intervention",
+    "DEAMER: A Deep Exposure-Aware Multimodal Content-Based Recommendation System",
+    "Description Generation for Points of Interest",
+    "MHGRL: An Effective Representation Learning Model for Electronic Health Records",
+    "Knowledge Graph Embedding with Relation Rotation and Entity Adjustment by Quaternions"
+  ],
+  "research_directions": [
+    "医疗健康大数据、大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/WXL1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

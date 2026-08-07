@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aa2f7045c2178130f809"
+      ],
+      "ended_at": null,
+      "id": "aff_67d5f0ac9510706cdc65",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/ZY1234567891011121314151617/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_aa2f7045c2178130f809"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_67d5f0ac9510706cdc65",
+      "claim_ids": [
+        "claim_aa2f7045c2178130f809"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuyi@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/ZY1234567891011121314151617/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhuyi@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aa2f7045c2178130f809"
+    ],
+    "email": [
+      "claim_aa2f7045c2178130f809"
+    ],
+    "name": [
+      "claim_aa2f7045c2178130f809"
+    ],
+    "profile_url": [
+      "claim_aa2f7045c2178130f809"
+    ],
+    "recent_papers": [
+      "claim_aa2f7045c2178130f809"
+    ],
+    "research_directions": [
+      "claim_aa2f7045c2178130f809"
+    ],
+    "status": [
+      "claim_aa2f7045c2178130f809"
+    ]
+  },
+  "id": "mentor_48e7801eecbdd7f4049f",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aa2f7045c2178130f809"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱逸"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_67d5f0ac9510706cdc65",
+      "claim_ids": [
+        "claim_aa2f7045c2178130f809"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/ZY1234567891011121314151617/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Orthogonal Chirp Division Multiplexing With Cyclic Shift Keying",
+    "A radar vital signs detection method in complex environments",
+    "Real-Time Underwater Vision Sensing System for AUV Tracking",
+    "Real-Time Underwater Image Communication Guided by Depth Estimation",
+    "Efficient Semantic Communication for Underwater Images Guided by Physical Priors"
+  ],
+  "research_directions": [
+    "水下信号采集及多媒体信号的边缘端智能处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/ZY1234567891011121314151617/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-07T07:14:08Z"
+}

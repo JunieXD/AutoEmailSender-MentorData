@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_880599c4e630c04f5d41"
+      ],
+      "ended_at": null,
+      "id": "aff_bd70d94c6d17f973853d",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_8c619f38297aaaadaadb",
+      "source_url": "https://faculty.xmu.edu.cn/XL12/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_880599c4e630c04f5d41"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bd70d94c6d17f973853d",
+      "claim_ids": [
+        "claim_880599c4e630c04f5d41"
+      ],
+      "is_primary": true,
+      "normalized_value": "lxiao@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/XL12/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lxiao@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_880599c4e630c04f5d41"
+    ],
+    "email": [
+      "claim_880599c4e630c04f5d41"
+    ],
+    "name": [
+      "claim_880599c4e630c04f5d41"
+    ],
+    "profile_url": [
+      "claim_880599c4e630c04f5d41"
+    ],
+    "recent_papers": [
+      "claim_880599c4e630c04f5d41"
+    ],
+    "research_directions": [
+      "claim_880599c4e630c04f5d41"
+    ],
+    "status": [
+      "claim_880599c4e630c04f5d41"
+    ],
+    "title": [
+      "claim_880599c4e630c04f5d41"
+    ]
+  },
+  "id": "mentor_12cca1885902b5f8c351",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_880599c4e630c04f5d41"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bd70d94c6d17f973853d",
+      "claim_ids": [
+        "claim_880599c4e630c04f5d41"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/XL12/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Safe Multi-Agent Reinforcement Learning for Wireless Applications Against Adversarial Communications",
+    "Learning-based energy-efficient anti-jamming FANET routing with QoS guarantee",
+    "大语言模型增强的抗灰洞攻击海域无人机路由算法",
+    "Edge-Assisted Collaborative Perception Against Jamming and Interference in Vehicular Networks",
+    "Privacy-Preserving Federated Learning for UAV-Enabled Networks: Learning-Based Joint Scheduling and Resource Management"
+  ],
+  "research_directions": [
+    "无线通信,网络安全,大数据,机器学习,人工智能安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/XL12/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

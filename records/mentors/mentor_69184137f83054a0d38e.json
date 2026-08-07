@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1204b2443f914fc161dd"
+      ],
+      "ended_at": null,
+      "id": "aff_1c467ec12e9985784854",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/YCH1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1204b2443f914fc161dd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1c467ec12e9985784854",
+      "claim_ids": [
+        "claim_1204b2443f914fc161dd"
+      ],
+      "is_primary": true,
+      "normalized_value": "chyang@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/YCH1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chyang@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1204b2443f914fc161dd"
+    ],
+    "email": [
+      "claim_1204b2443f914fc161dd"
+    ],
+    "name": [
+      "claim_1204b2443f914fc161dd"
+    ],
+    "profile_url": [
+      "claim_1204b2443f914fc161dd"
+    ],
+    "status": [
+      "claim_1204b2443f914fc161dd"
+    ],
+    "title": [
+      "claim_1204b2443f914fc161dd"
+    ]
+  },
+  "id": "mentor_69184137f83054a0d38e",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1204b2443f914fc161dd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨晨晖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1c467ec12e9985784854",
+      "claim_ids": [
+        "claim_1204b2443f914fc161dd"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/YCH1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/YCH1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

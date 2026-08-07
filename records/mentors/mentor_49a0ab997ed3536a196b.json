@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d182cc1541e304dd98cb"
+      ],
+      "ended_at": null,
+      "id": "aff_423ab9abddcf40f3ffc1",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/CLB/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d182cc1541e304dd98cb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_423ab9abddcf40f3ffc1",
+      "claim_ids": [
+        "claim_d182cc1541e304dd98cb"
+      ],
+      "is_primary": true,
+      "normalized_value": "longbiaochen@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/CLB/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "longbiaochen@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d182cc1541e304dd98cb"
+    ],
+    "email": [
+      "claim_d182cc1541e304dd98cb"
+    ],
+    "name": [
+      "claim_d182cc1541e304dd98cb"
+    ],
+    "profile_url": [
+      "claim_d182cc1541e304dd98cb"
+    ],
+    "recent_papers": [
+      "claim_d182cc1541e304dd98cb"
+    ],
+    "research_directions": [
+      "claim_d182cc1541e304dd98cb"
+    ],
+    "status": [
+      "claim_d182cc1541e304dd98cb"
+    ],
+    "title": [
+      "claim_d182cc1541e304dd98cb"
+    ]
+  },
+  "id": "mentor_49a0ab997ed3536a196b",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d182cc1541e304dd98cb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈龙彪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_423ab9abddcf40f3ffc1",
+      "claim_ids": [
+        "claim_d182cc1541e304dd98cb"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/CLB/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "STKOpt: Automated Spatio-Temporal Knowledge Optimization for Traffic Prediction",
+    "FireExpert: Fire Event Identification and Assessment Leveraging Cross-Domain Knowledge and Large Language Model",
+    "CrowdBot: An Open-Environment Robot Management System for On-Campus Services",
+    "STORM: A Spatio-Temporal Context-Aware Model for Predicting Event-Triggered Abnormal Crowd Traffic",
+    "CrowdQ: Predicting the Queue State of Hospital Emergency Department Using Crowdsensing Mobility Data-Driven Models"
+  ],
+  "research_directions": [
+    "具身智能、普适计算、群智感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/CLB/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

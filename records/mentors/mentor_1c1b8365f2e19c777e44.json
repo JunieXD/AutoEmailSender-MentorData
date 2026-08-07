@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3aad2703029ce12510fa"
+      ],
+      "ended_at": null,
+      "id": "aff_3e016b8e4fd74824df84",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_f8412c139f3e1c610912",
+      "source_url": "https://faculty.xmu.edu.cn/HuiLi/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3aad2703029ce12510fa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3e016b8e4fd74824df84",
+      "claim_ids": [
+        "claim_3aad2703029ce12510fa"
+      ],
+      "is_primary": true,
+      "normalized_value": "hui@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/HuiLi/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hui@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3aad2703029ce12510fa"
+    ],
+    "email": [
+      "claim_3aad2703029ce12510fa"
+    ],
+    "name": [
+      "claim_3aad2703029ce12510fa"
+    ],
+    "profile_url": [
+      "claim_3aad2703029ce12510fa"
+    ],
+    "research_directions": [
+      "claim_3aad2703029ce12510fa"
+    ],
+    "status": [
+      "claim_3aad2703029ce12510fa"
+    ],
+    "title": [
+      "claim_3aad2703029ce12510fa"
+    ]
+  },
+  "id": "mentor_1c1b8365f2e19c777e44",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3aad2703029ce12510fa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3e016b8e4fd74824df84",
+      "claim_ids": [
+        "claim_3aad2703029ce12510fa"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/HuiLi/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "认知与决策、大语言模型、信息检索、数据挖掘、推荐系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/HuiLi/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

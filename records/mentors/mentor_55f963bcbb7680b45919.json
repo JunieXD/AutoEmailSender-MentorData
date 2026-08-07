@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_de8346d0222e4bb0f296"
+      ],
+      "ended_at": null,
+      "id": "aff_cfbaf751afdef39ef93e",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/LC1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_de8346d0222e4bb0f296"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cfbaf751afdef39ef93e",
+      "claim_ids": [
+        "claim_de8346d0222e4bb0f296"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenlin_xmu@126.com",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/LC1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenlin_xmu@126.com"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_de8346d0222e4bb0f296"
+    ],
+    "email": [
+      "claim_de8346d0222e4bb0f296"
+    ],
+    "name": [
+      "claim_de8346d0222e4bb0f296"
+    ],
+    "profile_url": [
+      "claim_de8346d0222e4bb0f296"
+    ],
+    "recent_papers": [
+      "claim_de8346d0222e4bb0f296"
+    ],
+    "research_directions": [
+      "claim_de8346d0222e4bb0f296"
+    ],
+    "status": [
+      "claim_de8346d0222e4bb0f296"
+    ],
+    "title": [
+      "claim_de8346d0222e4bb0f296"
+    ]
+  },
+  "id": "mentor_55f963bcbb7680b45919",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_de8346d0222e4bb0f296"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林琛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cfbaf751afdef39ef93e",
+      "claim_ids": [
+        "claim_de8346d0222e4bb0f296"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/LC1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Unbiased news recommendation model time and content",
+    "Who To Align With: Feedback-Oriented Multi-Modal Alignment in Recommendation Systems",
+    "Compound-Protein Interaction Prediction with Sparse Perturbation-Aware Attention",
+    "Code-Aware Cross-Program Transfer Hyperparameter Optimization",
+    "THINK-ON-GRAPH: DEEP AND RESPONSIBLE REASONING OF LARGE LANGUAGE MODEL ON KNOWLEDGE GRAPH"
+  ],
+  "research_directions": [
+    "AI4Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/LC1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

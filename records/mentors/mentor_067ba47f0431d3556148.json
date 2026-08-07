@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4d9d47e49ebd30b4adc8"
+      ],
+      "ended_at": null,
+      "id": "aff_f835d952c0ca25b9dcc2",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/SHX/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4d9d47e49ebd30b4adc8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f835d952c0ca25b9dcc2",
+      "claim_ids": [
+        "claim_4d9d47e49ebd30b4adc8"
+      ],
+      "is_primary": true,
+      "normalized_value": "hxsun@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/SHX/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hxsun@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4d9d47e49ebd30b4adc8"
+    ],
+    "email": [
+      "claim_4d9d47e49ebd30b4adc8"
+    ],
+    "name": [
+      "claim_4d9d47e49ebd30b4adc8"
+    ],
+    "profile_url": [
+      "claim_4d9d47e49ebd30b4adc8"
+    ],
+    "research_directions": [
+      "claim_4d9d47e49ebd30b4adc8"
+    ],
+    "status": [
+      "claim_4d9d47e49ebd30b4adc8"
+    ],
+    "title": [
+      "claim_4d9d47e49ebd30b4adc8"
+    ]
+  },
+  "id": "mentor_067ba47f0431d3556148",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4d9d47e49ebd30b4adc8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙海信"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f835d952c0ca25b9dcc2",
+      "claim_ids": [
+        "claim_4d9d47e49ebd30b4adc8"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/SHX/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "水声通信,阵列信号处理,海洋信息技术、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/SHX/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}

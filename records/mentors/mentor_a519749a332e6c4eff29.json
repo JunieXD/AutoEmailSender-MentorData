@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_70494588ae63907d2f6a"
+      ],
+      "ended_at": null,
+      "id": "aff_69b4d035d0bf09d66efe",
+      "is_primary": true,
+      "observed_at": "2026-08-07T07:14:08Z",
+      "organization_id": "org_auto_888cad38a8640add30bb",
+      "source_url": "https://faculty.xmu.edu.cn/WMH/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_70494588ae63907d2f6a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_69b4d035d0bf09d66efe",
+      "claim_ids": [
+        "claim_70494588ae63907d2f6a"
+      ],
+      "is_primary": true,
+      "normalized_value": "wmh@xmu.edu.cn",
+      "observed_at": "2026-08-07T07:14:08Z",
+      "source_url": "https://faculty.xmu.edu.cn/WMH/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wmh@xmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T07:14:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_70494588ae63907d2f6a"
+    ],
+    "email": [
+      "claim_70494588ae63907d2f6a"
+    ],
+    "name": [
+      "claim_70494588ae63907d2f6a"
+    ],
+    "profile_url": [
+      "claim_70494588ae63907d2f6a"
+    ],
+    "recent_papers": [
+      "claim_70494588ae63907d2f6a"
+    ],
+    "research_directions": [
+      "claim_70494588ae63907d2f6a"
+    ],
+    "status": [
+      "claim_70494588ae63907d2f6a"
+    ],
+    "title": [
+      "claim_70494588ae63907d2f6a"
+    ]
+  },
+  "id": "mentor_a519749a332e6c4eff29",
+  "last_verified_at": "2026-08-07T07:14:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_70494588ae63907d2f6a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴梅红"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_69b4d035d0bf09d66efe",
+      "claim_ids": [
+        "claim_70494588ae63907d2f6a"
+      ],
+      "observed_at": "2026-08-07T07:14:08Z",
+      "status": "current",
+      "url": "https://faculty.xmu.edu.cn/WMH/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Cross-Lingual Alzheimer’s Disease Speech Detection: Polarity Inversion and Few-Shot Calibration Strategies",
+    "Multidimensional Prosodic and Semantic Coherence Modeling for Mandarin Mild Cognitive Impairment Detection",
+    "Speech Depression Screening via Multi-Scale Feature Enhancement and Emotion-Aware Contrastive Learning",
+    "Cross-Modal Alignment and Rectified Flow-Based Latent Representation Synthesis for Enhanced Speech-Driven Alzheimer’s Disease Detection",
+    "Adding irrelevant information to the content prime reduces the prime-induced unmasking effect on speech recognition"
+  ],
+  "research_directions": [
+    "言语听觉、语音信号处理、认知计算、智能听力辅助"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T07:14:08Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xmu.edu.cn/WMH/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T07:14:08Z"
+}
