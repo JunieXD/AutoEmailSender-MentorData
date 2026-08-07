@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_326f542acecf743cc681"
+      ],
+      "ended_at": null,
+      "id": "aff_f5c81b3550b684a487d1",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1195/11437.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_326f542acecf743cc681"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f5c81b3550b684a487d1",
+      "claim_ids": [
+        "claim_326f542acecf743cc681"
+      ],
+      "is_primary": true,
+      "normalized_value": "hekun@scu.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1195/11437.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hekun@scu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_326f542acecf743cc681"
+    ],
+    "email": [
+      "claim_326f542acecf743cc681"
+    ],
+    "name": [
+      "claim_326f542acecf743cc681"
+    ],
+    "profile_url": [
+      "claim_326f542acecf743cc681"
+    ],
+    "recent_papers": [
+      "claim_326f542acecf743cc681"
+    ],
+    "research_directions": [
+      "claim_326f542acecf743cc681"
+    ],
+    "status": [
+      "claim_326f542acecf743cc681"
+    ],
+    "title": [
+      "claim_326f542acecf743cc681"
+    ]
+  },
+  "id": "mentor_2602ae2f48fe5b38f1db",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_326f542acecf743cc681"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "何坤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f5c81b3550b684a487d1",
+      "claim_ids": [
+        "claim_326f542acecf743cc681"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1195/11437.htm"
+    }
+  ],
+  "recent_papers": [
+    "何坤, 符颖,林涛等. 基于保边函数的图像去噪[J].辽宁工程技术大学学报(自然科学版), 31(1),pp.139-144,2012",
+    "何坤, 周激流, 刘昶, 刘然.基于局部保边函数的低信噪比图像去噪四川大学学报(工程科学版), 02期, 2009/3/15",
+    "何坤,琚生根等.TV数值计算的图像去噪[J].电子科技大学学报(自然科学版),2013,42(2)",
+    "Chang Liu, Kun He, Jiliu Zhou, FangNian Lang. Discriminant Orthogonal Rank-one Tensor Projections in Extended Graph Embedding Framework, Information-An International Interdisciplinary Journal, 15(8), pp,3423-3440,2012"
+  ],
+  "research_directions": [
+    "图像处理、数字水印、模式识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1195/11437.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_62a71519ffca7a4f1bba"
+      ],
+      "ended_at": null,
+      "id": "aff_f1735cd08cfd5794e1d6",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1196/12850.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_62a71519ffca7a4f1bba"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f1735cd08cfd5794e1d6",
+      "claim_ids": [
+        "claim_62a71519ffca7a4f1bba"
+      ],
+      "is_primary": true,
+      "normalized_value": "3149102@qq.com",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1196/12850.htm",
+      "status": "current",
+      "type": "email",
+      "value": "3149102@qq.com"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_62a71519ffca7a4f1bba"
+    ],
+    "email": [
+      "claim_62a71519ffca7a4f1bba"
+    ],
+    "name": [
+      "claim_62a71519ffca7a4f1bba"
+    ],
+    "profile_url": [
+      "claim_62a71519ffca7a4f1bba"
+    ],
+    "research_directions": [
+      "claim_62a71519ffca7a4f1bba"
+    ],
+    "status": [
+      "claim_62a71519ffca7a4f1bba"
+    ],
+    "title": [
+      "claim_62a71519ffca7a4f1bba"
+    ]
+  },
+  "id": "mentor_6805a7d19972ab7955d8",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_62a71519ffca7a4f1bba"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "熊运余"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f1735cd08cfd5794e1d6",
+      "claim_ids": [
+        "claim_62a71519ffca7a4f1bba"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1196/12850.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微地图GIS平台、视频分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1196/12850.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

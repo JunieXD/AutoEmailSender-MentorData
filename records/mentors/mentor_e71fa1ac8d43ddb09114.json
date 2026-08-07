@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c2b902edbc62827e328f"
+      ],
+      "ended_at": null,
+      "id": "aff_42e3410c8e3fe5a622cb",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1196/4595.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_c2b902edbc62827e328f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42e3410c8e3fe5a622cb",
+      "claim_ids": [
+        "claim_c2b902edbc62827e328f"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangwu@scu.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1196/4595.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huangwu@scu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c2b902edbc62827e328f"
+    ],
+    "email": [
+      "claim_c2b902edbc62827e328f"
+    ],
+    "name": [
+      "claim_c2b902edbc62827e328f"
+    ],
+    "profile_url": [
+      "claim_c2b902edbc62827e328f"
+    ],
+    "research_directions": [
+      "claim_c2b902edbc62827e328f"
+    ],
+    "status": [
+      "claim_c2b902edbc62827e328f"
+    ],
+    "title": [
+      "claim_c2b902edbc62827e328f"
+    ]
+  },
+  "id": "mentor_e71fa1ac8d43ddb09114",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c2b902edbc62827e328f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄武"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42e3410c8e3fe5a622cb",
+      "claim_ids": [
+        "claim_c2b902edbc62827e328f"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1196/4595.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "嵌入式系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1196/4595.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

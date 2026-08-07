@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c11ca29eecd6f8d22e36"
+      ],
+      "ended_at": null,
+      "id": "aff_c1758926e98a0e500b75",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1195/14600.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c11ca29eecd6f8d22e36"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c1758926e98a0e500b75",
+      "claim_ids": [
+        "claim_c11ca29eecd6f8d22e36"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoming@scu.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1195/14600.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoming@scu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c11ca29eecd6f8d22e36"
+    ],
+    "email": [
+      "claim_c11ca29eecd6f8d22e36"
+    ],
+    "name": [
+      "claim_c11ca29eecd6f8d22e36"
+    ],
+    "profile_url": [
+      "claim_c11ca29eecd6f8d22e36"
+    ],
+    "recent_papers": [
+      "claim_c11ca29eecd6f8d22e36"
+    ],
+    "research_directions": [
+      "claim_c11ca29eecd6f8d22e36"
+    ],
+    "status": [
+      "claim_c11ca29eecd6f8d22e36"
+    ],
+    "title": [
+      "claim_c11ca29eecd6f8d22e36"
+    ]
+  },
+  "id": "mentor_b7a9bc6c7313b327ca79",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c11ca29eecd6f8d22e36"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖铭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c1758926e98a0e500b75",
+      "claim_ids": [
+        "claim_c11ca29eecd6f8d22e36"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1195/14600.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xiao M, Wei R, Yu J, Gao C, Yang F, Zhang L. CpG island definition and methylation mapping of the T2T-YAO genome. Genomics, Proteomics & Bioinformatics, 2024.https://doi.org/10.1093/gpbjnl/qzae009",
+    "Xiao M, Ma F, Yu J, Xie J, Zhang Q, Liu P, Yu F, Jiang Y, Zhang L. A Computer Simulation of SARS-CoV-2 Mutation Spectra for Empirical Data Characterization and Analysis.Biomolecules.2023; 13(1):63. https://doi.org/10.3390/biom13010063",
+    "Zhang L, Dai Z, Yu J,Xiao M*.CpG-island-based annotation and analysis of human housekeeping genes [J].Briefings In Bioinformatics, 2021, 22(1): 515-525.",
+    "Xiao M,Liu G, Xie J, Dai Z, Wei Z, Ren Z, Yu J, Zhang L*. 2019nCoVAS: Developing the Web Service for Epidemic Transmission Prediction, Genome Analysis, and Psychological Stress Assessment for 2019-nCoV [J].IEEE/ACM Trans Comput Biol Bioinform,2021, 18(4): 1250-1261.",
+    "Xiao M,Yang X, Yu J, Zhang L*. CGIDLA:Developing the Web Server for CpG Island related Density and LAUPs (Lineage-associated Underrepresented Permutations) Study [J].IEEE/ACM Transactions on Computational Biology & Bioinformatics,2019, 17(6): 2148-2154."
+  ],
+  "research_directions": [
+    "生物信息、医学大数据、高性能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1195/14600.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

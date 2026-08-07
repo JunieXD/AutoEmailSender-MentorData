@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fc5695cb4df796d6ac14"
+      ],
+      "ended_at": null,
+      "id": "aff_173c5b63238a36dad2ee",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1194/11405.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fc5695cb4df796d6ac14"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_173c5b63238a36dad2ee",
+      "claim_ids": [
+        "claim_fc5695cb4df796d6ac14"
+      ],
+      "is_primary": true,
+      "normalized_value": "guobing@scu.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1194/11405.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guobing@scu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fc5695cb4df796d6ac14"
+    ],
+    "email": [
+      "claim_fc5695cb4df796d6ac14"
+    ],
+    "name": [
+      "claim_fc5695cb4df796d6ac14"
+    ],
+    "profile_url": [
+      "claim_fc5695cb4df796d6ac14"
+    ],
+    "recent_papers": [
+      "claim_fc5695cb4df796d6ac14"
+    ],
+    "research_directions": [
+      "claim_fc5695cb4df796d6ac14"
+    ],
+    "status": [
+      "claim_fc5695cb4df796d6ac14"
+    ],
+    "title": [
+      "claim_fc5695cb4df796d6ac14"
+    ]
+  },
+  "id": "mentor_8bd159c6a5ad3a837116",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fc5695cb4df796d6ac14"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭兵"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_173c5b63238a36dad2ee",
+      "claim_ids": [
+        "claim_fc5695cb4df796d6ac14"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1194/11405.htm"
+    }
+  ],
+  "recent_papers": [
+    "An energy-efficient algorithm for multi-site application partitioning in MCC.Journal: Sustainable Computing, Informatics and Systems, 2018, 18: 45~53.",
+    "Phase-Reconfigurable Shuffle Optimization for Hadoop MapReduce. IEEE Transaction on Cloud Computing, 2016.",
+    "High reliable real-time bandwidth scheduling for virtual machines with hidden Markov predicting in telehealth platform. Future Generation Computer Systems, 2015, 49(8): 68~76.",
+    "A Cross-layer Optimization and Design Approach under QoS Constraints for Green IP over WDM Networks. Computer Networks, 2015, 76(1): 177~190.",
+    "Energy Analysis and Prediction for Applications on Smartphones. Journal of Systems Architecture, 2013, 59(10), 1375~1382."
+  ],
+  "research_directions": [
+    "嵌入式系统、绿色计算、大数据管理、区块链"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1194/11405.htm",
+  "title": "教授",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

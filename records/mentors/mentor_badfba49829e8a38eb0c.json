@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c93980f57e0f0f5b15ba"
+      ],
+      "ended_at": null,
+      "id": "aff_7db7b3013af5af3e3dbd",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1195/11440.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c93980f57e0f0f5b15ba"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7db7b3013af5af3e3dbd",
+      "claim_ids": [
+        "claim_c93980f57e0f0f5b15ba"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuliang@scu.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1195/11440.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuliang@scu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c93980f57e0f0f5b15ba"
+    ],
+    "email": [
+      "claim_c93980f57e0f0f5b15ba"
+    ],
+    "name": [
+      "claim_c93980f57e0f0f5b15ba"
+    ],
+    "profile_url": [
+      "claim_c93980f57e0f0f5b15ba"
+    ],
+    "research_directions": [
+      "claim_c93980f57e0f0f5b15ba"
+    ],
+    "status": [
+      "claim_c93980f57e0f0f5b15ba"
+    ],
+    "title": [
+      "claim_c93980f57e0f0f5b15ba"
+    ]
+  },
+  "id": "mentor_badfba49829e8a38eb0c",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c93980f57e0f0f5b15ba"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "余谅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7db7b3013af5af3e3dbd",
+      "claim_ids": [
+        "claim_c93980f57e0f0f5b15ba"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1195/11440.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算技术和应用,网络媒体工程,无线与移动通信,智能信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1195/11440.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

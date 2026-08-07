@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cae33a050b7cb7abb7b0"
+      ],
+      "ended_at": null,
+      "id": "aff_5c98c2f65b12ec515c43",
+      "is_primary": true,
+      "observed_at": "2026-08-07T08:07:11Z",
+      "organization_id": "org_auto_0670da0d850e2b40bd2e",
+      "source_url": "https://sw.scu.edu.cn/info/1195/11441.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_cae33a050b7cb7abb7b0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5c98c2f65b12ec515c43",
+      "claim_ids": [
+        "claim_cae33a050b7cb7abb7b0"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangqiuhui@scu.edu.cn",
+      "observed_at": "2026-08-07T08:07:11Z",
+      "source_url": "https://sw.scu.edu.cn/info/1195/11441.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangqiuhui@scu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-07T08:07:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cae33a050b7cb7abb7b0"
+    ],
+    "email": [
+      "claim_cae33a050b7cb7abb7b0"
+    ],
+    "name": [
+      "claim_cae33a050b7cb7abb7b0"
+    ],
+    "profile_url": [
+      "claim_cae33a050b7cb7abb7b0"
+    ],
+    "recent_papers": [
+      "claim_cae33a050b7cb7abb7b0"
+    ],
+    "research_directions": [
+      "claim_cae33a050b7cb7abb7b0"
+    ],
+    "status": [
+      "claim_cae33a050b7cb7abb7b0"
+    ],
+    "title": [
+      "claim_cae33a050b7cb7abb7b0"
+    ]
+  },
+  "id": "mentor_3baf1975358e6f17f181",
+  "last_verified_at": "2026-08-07T08:07:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cae33a050b7cb7abb7b0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨秋辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5c98c2f65b12ec515c43",
+      "claim_ids": [
+        "claim_cae33a050b7cb7abb7b0"
+      ],
+      "observed_at": "2026-08-07T08:07:11Z",
+      "status": "current",
+      "url": "https://sw.scu.edu.cn/info/1195/11441.htm"
+    }
+  ],
+  "recent_papers": [
+    "基于动态插装的C/C++内存泄漏检测工具的设计与实现,2015",
+    "开放式XML数据的质量分析方法,2013",
+    "分布式自动化软件测试实现技术研究,2011",
+    "一种改进的基于遗传算法的多跑道到达飞机调度,2006",
+    "自适应遗传算法在飞机调度问题中的应用,2004"
+  ],
+  "research_directions": [
+    "软件测试、经验软件工程、数据库系统及其应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-07T08:07:11Z",
+  "status_reason": null,
+  "status_source_url": "https://sw.scu.edu.cn/info/1195/11441.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-07T08:07:11Z"
+}

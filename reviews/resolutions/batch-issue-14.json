@@ -1,0 +1,100 @@
+{
+  "created_organization_ids": [
+    "org_auto_0670da0d850e2b40bd2e",
+    "org_auto_7c318814e953da9a01c9",
+    "org_auto_ada58a76e7bfc6c039b6"
+  ],
+  "decided_at": "2026-08-07T08:11:14Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_17d8abfebad2329c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "scu.edu.cn"
+          ],
+          "canonical_name": "四川大学",
+          "level": "university",
+          "official_url": "https://scu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "sw.scu.edu.cn"
+          ],
+          "canonical_name": "软件学院",
+          "level": "school",
+          "official_url": "https://sw.scu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "reason": null,
+      "row_overrides": []
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_72793edd9b422b7c",
+      "identity_resolutions": [],
+      "levels": [],
+      "reason": "学院不对",
+      "row_overrides": []
+    }
+  ],
+  "id": "organization_review_issue_14",
+  "invalid_rows": [],
+  "issue": {
+    "number": 14,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/14"
+  },
+  "manifest_sha256": "424a33449568b09c5eb9c036d6288cd4e82c9e00dd2fb7dbe076564313234622",
+  "mapped_proposal_ids": [
+    "proposal_issue_14_row_10",
+    "proposal_issue_14_row_11",
+    "proposal_issue_14_row_12",
+    "proposal_issue_14_row_13",
+    "proposal_issue_14_row_14",
+    "proposal_issue_14_row_15",
+    "proposal_issue_14_row_16",
+    "proposal_issue_14_row_17",
+    "proposal_issue_14_row_18",
+    "proposal_issue_14_row_19",
+    "proposal_issue_14_row_2",
+    "proposal_issue_14_row_3",
+    "proposal_issue_14_row_4",
+    "proposal_issue_14_row_5",
+    "proposal_issue_14_row_6",
+    "proposal_issue_14_row_7",
+    "proposal_issue_14_row_8",
+    "proposal_issue_14_row_9"
+  ],
+  "pull_request_number": 15,
+  "rejected_proposal_ids": [
+    "proposal_issue_14_row_1"
+  ],
+  "review_comment_id": 5214313591,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
