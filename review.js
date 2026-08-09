@@ -2594,13 +2594,20 @@ function validateManifest(manifest, issueNumber) {
         typeof mentor.email !== "string" ||
         !Array.isArray(mentor.affiliations) ||
         mentor.affiliations.length === 0 ||
-        !mentor.affiliations.every(
-          (affiliation) =>
+        !mentor.affiliations.every((affiliation) => {
+          const hasResolvedOrganization = typeof affiliation?.organization_id === "string";
+          const hasPendingOrganization =
+            affiliation?.organization_id === null &&
+            typeof affiliation.organization_label === "string" &&
+            affiliation.organization_label.trim().length > 0 &&
+            affiliation.organization_label.length <= 800;
+          return (
             affiliation?.status === "current" &&
             typeof affiliation.id === "string" &&
-            typeof affiliation.organization_id === "string" &&
-            typeof affiliation.source_url === "string",
-        )
+            (hasResolvedOrganization || hasPendingOrganization) &&
+            typeof affiliation.source_url === "string"
+          );
+        })
       ) {
         throw new Error("审核清单中的导师身份判定信息无效");
       }
