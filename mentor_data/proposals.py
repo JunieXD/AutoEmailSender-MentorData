@@ -781,8 +781,9 @@ def _append_affiliation_resolution(
             }
             updated["profiles"].append(profile)
         else:
-            profile["status"] = "current"
-            profile["affiliation_id"] = affiliation_id
+            if make_primary or profile.get("status") != "current":
+                profile["status"] = "current"
+                profile["affiliation_id"] = affiliation_id
             profile["observed_at"] = observed_at
             _add_claim_reference(profile, claim_id)
         _add_field_provenance(updated, "profile_url", claim_id)

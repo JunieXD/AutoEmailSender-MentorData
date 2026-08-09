@@ -960,7 +960,6 @@ def apply_organization_review(
     rejected_ids: set[str] = set()
     created_organization_ids: set[str] = set()
     updated_organization_ids: set[str] = set()
-    planned_affiliation_resolutions: list[tuple[str, str, dict[str, Any]]] = []
     pending_target_ids = {
         proposed_mentor_id(proposal)
         for proposal in proposals_by_id.values()
@@ -1007,6 +1006,26 @@ def apply_organization_review(
         elif not normalize_text(group_decision.get("reason")):
             raise SubmissionError(f"拒绝分组 {group_id} 时必须填写原因")
         base_targets[group_id] = base_target
+
+    pending_target_organization_ids: dict[str, str] = {}
+    for group_id, group in manifest_groups.items():
+        group_decision = decision_groups[group_id]
+        overrides = overrides_by_group[group_id]
+        for row in group["rows"]:
+            proposal = proposals_by_id[row["proposal_id"]]
+            if proposal.get("target_mentor_id") is not None:
+                continue
+            override = overrides.get(row["proposal_id"])
+            if override is not None and override["action"] == "reject":
+                continue
+            if override is not None:
+                target_id = override.get("organization_id")
+            elif group_decision["action"] == "reject":
+                continue
+            else:
+                target_id = base_targets[group_id]
+            if isinstance(target_id, str):
+                pending_target_organization_ids[proposed_mentor_id(proposal)] = target_id
 
     for group_id in sorted(manifest_groups):
         group = manifest_groups[group_id]
@@ -1069,6 +1088,12 @@ def apply_organization_review(
                 current_organization_ids = {
                     item["organization_id"] for item in identity["mentor"]["affiliations"]
                 }
+                pending_organization_id = pending_target_organization_ids.get(
+                    identity.get("target_mentor_id")
+                )
+                if pending_organization_id is not None:
+                    current_organization_ids.discard(None)
+                    current_organization_ids.add(pending_organization_id)
                 if target_id in current_organization_ids:
                     if identity_resolution is not None:
                         raise SubmissionError(
@@ -1093,9 +1118,6 @@ def apply_organization_review(
                         identity=identity,
                     )
                     proposal["affiliation_resolution"] = affiliation_resolution
-                    planned_affiliation_resolutions.append(
-                        (proposal_id, proposal["target_mentor_id"], affiliation_resolution)
-                    )
                     proposal["review_reasons"] = [
                         reason
                         for reason in proposal["review_reasons"]
@@ -1104,6 +1126,62 @@ def apply_organization_review(
             proposal["auto_eligible"] = False
             mapped_ids.add(proposal_id)
 
+    for rejected_proposal_id in sorted(rejected_ids):
+        rejected_proposal = proposals_by_id[rejected_proposal_id]
+        if rejected_proposal.get("target_mentor_id") is not None:
+            continue
+        rejected_mentor_id = proposed_mentor_id(rejected_proposal)
+        dependents = [
+            proposal
+            for proposal_id, proposal in proposals_by_id.items()
+            if proposal_id not in rejected_ids
+            and proposal.get("target_mentor_id") == rejected_mentor_id
+        ]
+        if not dependents:
+            continue
+        replacement = min(
+            dependents,
+            key=lambda item: (item["issue"].get("batch_row", 0), item["id"]),
+        )
+        replacement_mentor_id = proposed_mentor_id(replacement)
+        replacement_organization_id = replacement["accepted"]["organization_id"]
+        rejected_affiliation_id = stable_proposal_entity_id(
+            "aff", rejected_proposal, "affiliation"
+        )
+        replacement_affiliation_id = stable_proposal_entity_id(
+            "aff", replacement, "affiliation"
+        )
+        replacement["target_mentor_id"] = None
+        replacement["match_status"] = "new"
+        replacement.pop("affiliation_resolution", None)
+        replacement["review_reasons"] = [
+            reason
+            for reason in replacement["review_reasons"]
+            if reason not in AFFILIATION_IDENTITY_REASONS
+        ]
+        for dependent in dependents:
+            if dependent is replacement:
+                continue
+            dependent["target_mentor_id"] = replacement_mentor_id
+            if dependent["accepted"]["organization_id"] == replacement_organization_id:
+                dependent.pop("affiliation_resolution", None)
+                continue
+            resolution = dependent.get("affiliation_resolution")
+            if resolution is None:
+                raise SubmissionError(
+                    f"提案 {dependent['id']} 的基准导师行已被拒绝，"
+                    "保留后的任职关系需要重新审核"
+                )
+            if resolution.get("former_affiliation_id") == rejected_affiliation_id:
+                resolution["former_affiliation_id"] = replacement_affiliation_id
+
+    planned_affiliation_resolutions = [
+        (proposal_id, proposal["target_mentor_id"], proposal["affiliation_resolution"])
+        for proposal_id, proposal in proposals_by_id.items()
+        if proposal_id not in rejected_ids
+        and proposal.get("target_mentor_id") is not None
+        and proposal.get("affiliation_resolution") is not None
+    ]
     _validate_affiliation_resolution_plan(planned_affiliation_resolutions)
 
     for proposal_id in rejected_ids:

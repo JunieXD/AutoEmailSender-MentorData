@@ -127,6 +127,14 @@ def test_review_prioritizes_affiliation_conflicts_and_emits_separate_decisions()
     assert ".identity-comparison" in styles
 
 
+def test_review_accepts_pending_affiliation_labels_for_new_batch_mentors() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+
+    assert "hasPendingOrganization" in script
+    assert "affiliation?.organization_id === null" in script
+    assert "affiliation.organization_label.trim().length > 0" in script
+
+
 def test_public_home_page_prioritizes_using_contributing_and_correcting_data() -> None:
     html = (PROJECT_ROOT / "site" / "index.html").read_text(encoding="utf-8")
     script = (PROJECT_ROOT / "site" / "app.js").read_text(encoding="utf-8")

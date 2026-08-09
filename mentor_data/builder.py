@@ -12,7 +12,7 @@ from .io_utils import json_bytes, load_json, write_json_atomic
 from .repository import RepositoryData, load_repository
 
 DATASET_SCHEMA_VERSION = 2
-DATASET_FORMAT_ID = "mentor-data-content-addressed-v2"
+DATASET_FORMAT_ID = "mentor-data-content-addressed-v2.1"
 DATASET_VERSION_PATTERN = re.compile(r"^v2-[a-f0-9]{32}$")
 PUBLICATION_ARCHIVE_ROOTS = {".git", "datasets", "objects", "releases"}
 CONTENT_OBJECT_PATTERN = re.compile(r"^objects/sha256/(?P<digest>[a-f0-9]{64})\.json$")
@@ -66,6 +66,39 @@ def _primary(values: list[dict[str, Any]], *, current: bool = False) -> dict[str
     if current:
         candidates = [item for item in values if item.get("status") == "current"]
     return next((item for item in candidates if item.get("is_primary")), None)
+
+
+def _relocation_available_at(
+    data: RepositoryData,
+    source_ids: set[str],
+    *,
+    observed_at: str,
+) -> str:
+    """Return the v2-compatible time when a transfer became publishable."""
+
+    parsed_observed_at = datetime.fromisoformat(observed_at.replace("Z", "+00:00"))
+    candidates = [
+        parsed_observed_at.replace(
+            tzinfo=parsed_observed_at.tzinfo or UTC,
+        ).astimezone(UTC)
+    ]
+    for claim in data.claims:
+        if claim.get("id") not in source_ids:
+            continue
+        value = claim.get("moderation", {}).get("decision_at")
+        if not isinstance(value, str):
+            continue
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        candidates.append(parsed.replace(tzinfo=parsed.tzinfo or UTC).astimezone(UTC))
+    for resolution in data.resolutions:
+        if resolution.get("id") not in source_ids:
+            continue
+        value = resolution.get("decided_at")
+        if not isinstance(value, str):
+            continue
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        candidates.append(parsed.replace(tzinfo=parsed.tzinfo or UTC).astimezone(UTC))
+    return _iso_utc(max(candidates))
 
 
 def _claim_contributors(
@@ -229,7 +262,8 @@ def _relocation_events(data: RepositoryData, mentor: dict[str, Any]) -> list[dic
             *former.get("claim_ids", []),
             *former.get("resolution_ids", []),
         }
-        if not primary_sources.intersection(former_sources):
+        transfer_sources = primary_sources.intersection(former_sources)
+        if not transfer_sources:
             continue
         origin_names = data.registry.projection_names(former["organization_id"])
         origin_label = " / ".join(
@@ -241,10 +275,15 @@ def _relocation_events(data: RepositoryData, mentor: dict[str, Any]) -> list[dic
             )
             if value
         )
-        observed_at = primary_affiliation["observed_at"]
+        source_observed_at = primary_affiliation["observed_at"]
+        event_observed_at = _relocation_available_at(
+            data,
+            transfer_sources,
+            observed_at=source_observed_at,
+        )
         seed = (
             f"{mentor['id']}:{former['organization_id']}:"
-            f"{primary_affiliation['organization_id']}:{observed_at}"
+            f"{primary_affiliation['organization_id']}:{source_observed_at}"
         )
         event_id = f"relocation_{hashlib.sha256(seed.encode('utf-8')).hexdigest()[:20]}"
         reason = f"导师任职已从「{origin_label}」调动至「{destination_label}」"
@@ -260,7 +299,7 @@ def _relocation_events(data: RepositoryData, mentor: dict[str, Any]) -> list[dic
                 "to_organization_id": primary_affiliation["organization_id"],
                 "reason": reason,
                 "source_url": primary_affiliation["source_url"],
-                "observed_at": observed_at,
+                "observed_at": event_observed_at,
             }
         )
     return sorted(events, key=lambda item: item["id"])

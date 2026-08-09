@@ -559,6 +559,83 @@ def test_same_new_mentor_in_two_organizations_finalizes_as_dual_appointment(
     } == {"org_example_cs", "org_sample_ai"}
 
 
+def test_rejecting_first_new_mentor_row_promotes_the_next_accepted_row(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "新导师",
+                "new@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/new",
+            ),
+            _row(
+                "新导师",
+                "new@example.edu",
+                "样本大学",
+                "AI研究院",
+                "https://ai.sample.edu/faculty/new",
+            ),
+        ],
+        number=34,
+    )
+    first_group = next(
+        group
+        for group in manifest["groups"]
+        if group["submitted"]["school"] == "计算机学院"
+    )
+    second_group = next(
+        group for group in manifest["groups"] if group["submitted"]["school"] == "AI研究院"
+    )
+    second_proposal_id = second_group["rows"][0]["proposal_id"]
+    decisions = [
+        {
+            "group_id": first_group["id"],
+            "action": "reject",
+            "reason": "首行证据不足。",
+            "levels": [],
+            "row_overrides": [],
+            "identity_resolutions": [],
+        },
+        _sample_affiliation_decision(
+            second_group,
+            identity_resolutions=[
+                {
+                    "proposal_id": second_proposal_id,
+                    "action": "append_current_affiliation",
+                    "make_primary": False,
+                    "former_affiliation_id": None,
+                    "reason": "第二行官网证据有效。",
+                }
+            ],
+        ),
+    ]
+    comment, pull = _review_context(
+        root,
+        tmp_path,
+        _decision(34, manifest_path, decisions),
+    )
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.rejected_proposals == 1
+    assert applied.ready_for_finalization is True
+    remaining_paths = [path for path in result.paths if path.exists()]
+    promoted = load_json(remaining_paths[0])
+    assert promoted["target_mentor_id"] is None
+    assert promoted["match_status"] == "new"
+    assert "affiliation_resolution" not in promoted
+    finalize_proposal_set(root, remaining_paths, moderator_github_user_id=999)
+    finalized = load_repository(root).mentors
+    assert len(finalized) == 1
+    assert finalized[0]["affiliations"][0]["organization_id"] == "org_sample_ai"
+
+
 def test_same_new_mentor_with_two_unknown_organizations_is_order_independent(
     tmp_path: Path,
 ) -> None:
@@ -658,6 +735,151 @@ def test_same_new_mentor_with_two_unknown_organizations_is_order_independent(
     ) == 2
 
 
+def test_same_new_mentor_unknown_aliases_can_resolve_to_one_new_organization(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "新导师",
+                "new@new.edu",
+                "新示例大学",
+                "甲学院",
+                "https://new.edu/faculty/new",
+            ),
+            _row(
+                "新导师",
+                "new@new.edu",
+                "新示例大学",
+                "甲系",
+                "https://new.edu/faculty/new",
+            ),
+        ],
+        number=32,
+    )
+    decisions = []
+    for group in manifest["groups"]:
+        decisions.append(
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _create(
+                        "university",
+                        "university",
+                        "新示例大学",
+                        "https://new.edu/",
+                        ["new.edu"],
+                        save_alias=True,
+                    ),
+                    _create(
+                        "school",
+                        "school",
+                        "统一学院",
+                        None,
+                        [],
+                        save_alias=True,
+                    ),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        )
+    comment, pull = _review_context(
+        root,
+        tmp_path,
+        _decision(32, manifest_path, decisions),
+    )
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.ready_for_finalization is True
+    finalize_proposal_set(root, list(result.paths), moderator_github_user_id=999)
+    finalized = load_repository(root).mentors[0]
+    current_affiliations = [
+        item for item in finalized["affiliations"] if item["status"] == "current"
+    ]
+    assert len(current_affiliations) == 1
+
+
+def test_dual_appointment_reusing_primary_profile_keeps_primary_projection(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "示例大学",
+                "新人工智能学院",
+                "https://cs.example.edu/faculty/mentor",
+            )
+        ],
+        number=33,
+    )
+    group = manifest["groups"][0]
+    proposal_id = group["rows"][0]["proposal_id"]
+    decision = _decision(
+        33,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _existing("university", "org_example_university"),
+                    _create(
+                        "school",
+                        "school",
+                        "新人工智能学院",
+                        None,
+                        [],
+                        save_alias=True,
+                    ),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+                "identity_resolutions": [
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "append_current_affiliation",
+                        "make_primary": False,
+                        "former_affiliation_id": None,
+                        "reason": "同一校级主页同时证明双聘。",
+                    }
+                ],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+    apply_organization_review(root, comment, pull)
+    finalize_proposal_set(root, list(result.paths), moderator_github_user_id=999)
+
+    finalized = load_repository(root).mentors[0]
+    profile = next(
+        item
+        for item in finalized["profiles"]
+        if item["url"] == "https://cs.example.edu/faculty/mentor"
+    )
+    assert profile["affiliation_id"] == "aff_fixture_primary"
+
+    latest = build_dataset(root, tmp_path / "dist", generated_at=fixed_datetime())
+    catalog = load_json(tmp_path / "dist" / latest["catalog_path"])
+    unit_path = catalog["universities"][0]["units"][0]["path"]
+    shard = load_json(tmp_path / "dist" / unit_path)
+    assert shard["records"][0]["profile_url"] == profile["url"]
+
+
 def test_review_and_finalization_transfer_affiliation_and_publish_new_primary_shard(
     tmp_path: Path,
 ) -> None:
@@ -733,6 +955,13 @@ def test_review_and_finalization_transfer_affiliation_and_publish_new_primary_sh
     assert relocation["status"] == "relocated"
     assert relocation["from_organization_id"] == "org_example_cs"
     assert relocation["to_organization_id"] == "org_sample_ai"
+    transfer_claim = next(
+        item
+        for item in load_repository(root).claims
+        if item["accepted"]["organization_id"] == "org_sample_ai"
+    )
+    assert relocation["observed_at"] == transfer_claim["moderation"]["decision_at"]
+    assert "published_at" not in relocation
 
 
 def test_review_requires_a_safe_affiliation_decision_for_a_new_current_organization(
