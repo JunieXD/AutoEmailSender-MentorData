@@ -115,10 +115,14 @@
       "required": ["id", "organization_id", "status", "is_primary", "title", "source_url", "observed_at"],
       "properties": {
         "id": { "type": "string", "pattern": "^aff_[a-z0-9][a-z0-9_-]{7,63}$" },
-        "organization_id": { "type": "string", "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$" },
+        "organization_id": {
+          "type": ["string", "null"],
+          "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+        },
+        "organization_label": { "type": "string", "minLength": 1, "maxLength": 800 },
         "status": { "const": "current" },
         "is_primary": { "type": "boolean" },
-        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "title": { "type": ["string", "null"], "minLength": 1, "maxLength": 255 },
         "source_url": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
         "observed_at": { "type": "string", "format": "date-time" }
       }

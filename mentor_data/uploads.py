@@ -8,6 +8,7 @@ import urllib.parse
 import urllib.request
 import zipfile
 from dataclasses import dataclass
+from itertools import islice
 from pathlib import Path, PurePosixPath
 from typing import Any
 
@@ -291,7 +292,8 @@ def _read_community_package_rows(path: Path, policy: dict[str, Any]) -> list[lis
             content = path.read_bytes().decode("utf-8-sig")
         except UnicodeDecodeError as error:
             raise UnsafePackageError("CSV 必须使用 UTF-8 编码") from error
-        return list(csv.reader(io.StringIO(content)))
+        max_rows = _limit(policy, "max_batch_rows")
+        return list(islice(csv.reader(io.StringIO(content)), max_rows + 2))
     if suffix != ".xlsx":
         raise UnsafePackageError("只支持 CSV 或普通 XLSX 共享包")
 
@@ -304,8 +306,17 @@ def _read_community_package_rows(path: Path, policy: dict[str, Any]) -> list[lis
         if len(workbook.sheetnames) != 1:
             raise UnsafePackageError("共享包必须且只能包含一个工作表")
         sheet = workbook.active
+        max_rows = _limit(policy, "max_batch_rows")
+        if sheet.max_row > max_rows + 1:
+            raise UnsafePackageError(f"共享包超过 {max_rows} 行限制")
+        if sheet.max_column > len(SAFE_COLUMNS):
+            raise UnsafePackageError(f"共享包超过 {len(SAFE_COLUMNS)} 列限制")
         rows: list[list[Any]] = []
-        for row in sheet.iter_rows():
+        for row in sheet.iter_rows(
+            min_row=1,
+            max_row=sheet.max_row,
+            max_col=min(sheet.max_column, len(SAFE_COLUMNS)),
+        ):
             values: list[Any] = []
             for cell in row:
                 if cell.data_type == "f":

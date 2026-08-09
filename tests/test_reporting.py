@@ -1,8 +1,12 @@
 from __future__ import annotations
 
 import json
+from dataclasses import replace
 from datetime import UTC, datetime
 
+import pytest
+
+from mentor_data.errors import SubmissionError
 from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.io_utils import load_json, write_json_atomic
 from mentor_data.reporting import (
@@ -133,3 +137,153 @@ def test_false_report_can_be_rejected_without_changing_mentor(tmp_path) -> None:
     assert changed_mentor is None
     assert resolution_path.exists()
     assert load_repository(root).mentors[0]["status"] == "active"
+
+
+def test_report_unchecked_confirmation_is_rejected(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    _seed(root)
+    event = _event(tmp_path, 23, "字段错误")
+    event = replace(event, body=event.body.replace("- [x] 我确认", "- [ ] 我确认"))
+
+    with pytest.raises(SubmissionError, match="反馈确认未完成"):
+        create_report_proposal(
+            root,
+            event,
+            _actor(),
+            output_directory=root / "reports" / "pending",
+        )
+
+
+def test_report_cannot_overwrite_affiliations_changed_during_review(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    _seed(root)
+    path = create_report_proposal(
+        root,
+        _event(tmp_path, 24, "字段错误"),
+        _actor(),
+        output_directory=root / "reports" / "pending",
+    )
+    pending = load_json(path)
+    pending["decision"] = "accepted"
+    pending["accepted"] = {"affiliations": pending["before"]["affiliations"]}
+    pending["moderator_reason"] = "按反馈时快照恢复任职"
+    write_json_atomic(path, pending)
+
+    mentor_path = root / "records" / "mentors" / "mentor_fixture_0001.json"
+    current = load_json(mentor_path)
+    current["affiliations"].append(
+        {
+            "id": "aff_fixture_secondary",
+            "organization_id": "org_sample_ai",
+            "status": "current",
+            "is_primary": False,
+            "title": "教授",
+            "started_at": None,
+            "ended_at": None,
+            "source_url": "https://ai.sample.edu/faculty/mentor",
+            "observed_at": "2026-08-03T00:30:00Z",
+            "claim_ids": ["claim_fixture_1001"],
+        }
+    )
+    write_json_atomic(mentor_path, current)
+
+    with pytest.raises(SubmissionError, match="目标字段已变化.*affiliations"):
+        finalize_report_proposal(
+            root,
+            path,
+            moderator_github_user_id=999,
+            moderator_github_login="maintainer",
+        )
+
+    assert len(load_repository(root).mentors[0]["affiliations"]) == 2
+
+
+def test_retirement_cannot_hide_a_new_affiliation_added_during_review(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    _seed(root)
+    path = create_report_proposal(
+        root,
+        _event(tmp_path, 26, "导师已经退休"),
+        _actor(),
+        output_directory=root / "reports" / "pending",
+    )
+    pending = load_json(path)
+    pending["decision"] = "accepted"
+    pending["accepted"] = {
+        "status": "retired",
+        "status_reason": "官网标注退休",
+        "status_source_url": "https://cs.example.edu/faculty/mentor",
+        "status_observed_at": "2026-08-03T00:00:00Z",
+    }
+    pending["moderator_reason"] = "官方来源确认退休"
+    write_json_atomic(path, pending)
+
+    mentor_path = root / "records" / "mentors" / "mentor_fixture_0001.json"
+    current = load_json(mentor_path)
+    current["affiliations"].append(
+        {
+            "id": "aff_fixture_secondary",
+            "organization_id": "org_sample_ai",
+            "status": "current",
+            "is_primary": False,
+            "title": "教授",
+            "started_at": None,
+            "ended_at": None,
+            "source_url": "https://ai.sample.edu/faculty/mentor",
+            "observed_at": "2026-08-03T00:30:00Z",
+            "claim_ids": ["claim_fixture_1001"],
+        }
+    )
+    write_json_atomic(mentor_path, current)
+
+    with pytest.raises(SubmissionError, match="目标字段已变化.*affiliations"):
+        finalize_report_proposal(
+            root,
+            path,
+            moderator_github_user_id=999,
+            moderator_github_login="maintainer",
+        )
+
+    persisted = load_repository(root).mentors[0]
+    assert persisted["status"] == "active"
+    assert len(persisted["affiliations"]) == 2
+
+
+def test_title_correction_cannot_overwrite_a_new_primary_affiliation_title(
+    tmp_path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed(root)
+    path = create_report_proposal(
+        root,
+        _event(tmp_path, 25, "职称错误"),
+        _actor(),
+        output_directory=root / "reports" / "pending",
+    )
+    pending = load_json(path)
+    pending["decision"] = "accepted"
+    pending["accepted"] = {"title": "副教授"}
+    pending["moderator_reason"] = "按反馈修正职称"
+    write_json_atomic(path, pending)
+
+    mentor_path = root / "records" / "mentors" / "mentor_fixture_0001.json"
+    current = load_json(mentor_path)
+    primary_affiliation = next(
+        item for item in current["affiliations"] if item["is_primary"]
+    )
+    primary_affiliation["title"] = "研究员"
+    write_json_atomic(mentor_path, current)
+
+    with pytest.raises(SubmissionError, match="目标字段已变化.*affiliations"):
+        finalize_report_proposal(
+            root,
+            path,
+            moderator_github_user_id=999,
+            moderator_github_login="maintainer",
+        )
+
+    persisted = load_repository(root).mentors[0]
+    assert persisted["title"] == "教授"
+    assert next(
+        item for item in persisted["affiliations"] if item["is_primary"]
+    )["title"] == "研究员"

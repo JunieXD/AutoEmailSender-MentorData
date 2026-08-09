@@ -30,6 +30,134 @@ SUPPORTED_STATUS_VALUES = {
 }
 
 
+def mentor_before_snapshot(mentor: dict[str, Any]) -> dict[str, Any]:
+    """Build the stable, provenance-free snapshot used for optimistic review checks."""
+
+    primary_name = next((item for item in mentor["names"] if item.get("is_primary")), None)
+    primary_contact = next(
+        (
+            item
+            for item in mentor["contacts"]
+            if item.get("status") == "current" and item.get("is_primary")
+        ),
+        None,
+    )
+    primary_affiliation = next(
+        (
+            item
+            for item in mentor["affiliations"]
+            if item.get("status") == "current" and item.get("is_primary")
+        ),
+        None,
+    )
+    return {
+        "status": mentor["status"],
+        "status_reason": mentor.get("status_reason"),
+        "status_source_url": mentor.get("status_source_url"),
+        "status_observed_at": mentor.get("status_observed_at"),
+        "name": primary_name["value"] if primary_name else None,
+        "email": primary_contact["normalized_value"] if primary_contact else None,
+        "organization_id": (
+            primary_affiliation["organization_id"] if primary_affiliation else None
+        ),
+        "title": mentor.get("title"),
+        "research_directions": mentor.get("research_directions", []),
+        "recent_papers": mentor.get("recent_papers", []),
+        "names": [
+            {key: item[key] for key in ("value", "kind", "is_primary")}
+            for item in mentor.get("names", [])
+        ],
+        "contacts": [
+            {
+                key: item[key]
+                for key in (
+                    "value",
+                    "status",
+                    "is_primary",
+                    "affiliation_id",
+                    "source_url",
+                    "observed_at",
+                )
+            }
+            for item in mentor.get("contacts", [])
+        ],
+        "affiliations": [
+            {
+                key: item[key]
+                for key in (
+                    "id",
+                    "organization_id",
+                    "status",
+                    "is_primary",
+                    "title",
+                    "started_at",
+                    "ended_at",
+                    "source_url",
+                    "observed_at",
+                )
+            }
+            for item in mentor.get("affiliations", [])
+        ],
+        "profiles": [
+            {key: item[key] for key in ("url", "status", "affiliation_id", "observed_at")}
+            for item in mentor.get("profiles", [])
+        ],
+        "last_verified_at": mentor.get("last_verified_at"),
+    }
+
+
+def _ensure_resolution_is_current(
+    mentor: dict[str, Any],
+    resolution: dict[str, Any],
+) -> None:
+    accepted = resolution["accepted"]
+    before = resolution["before"]
+    current = mentor_before_snapshot(mentor)
+    guarded_fields = {
+        field
+        for field in (
+            "status",
+            "names",
+            "contacts",
+            "affiliations",
+            "profiles",
+            "title",
+            "research_directions",
+            "recent_papers",
+        )
+        if field in accepted
+    }
+    # The published title is projected from the primary current affiliation. A
+    # scalar title correction therefore also updates that nested appointment and
+    # must be guarded against a concurrent affiliation change.
+    if "title" in accepted:
+        guarded_fields.add("affiliations")
+    if "status" in accepted:
+        guarded_fields.update(
+            {"status_reason", "status_source_url", "status_observed_at"}
+        )
+        if accepted.get("status") in HIDDEN_LIFECYCLE_STATUSES:
+            guarded_fields.update({"contacts", "affiliations", "profiles"})
+    changed = [
+        field
+        for field in sorted(guarded_fields)
+        if field in before and before[field] != current[field]
+    ]
+    if changed:
+        raise SubmissionError(
+            "纠错提案审核期间目标字段已变化，请基于最新数据重新审核："
+            + ", ".join(changed)
+        )
+
+
+def _same_resolution_ignoring_decision_time(
+    existing: dict[str, Any], candidate: dict[str, Any]
+) -> bool:
+    comparable = copy.deepcopy(candidate)
+    comparable["decided_at"] = existing.get("decided_at")
+    return comparable == existing
+
+
 def _date_from_datetime(value: str) -> str:
     parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
     if parsed.tzinfo is None:
@@ -224,6 +352,19 @@ def _apply_structured_patch(
         if field in accepted:
             mentor[field] = copy.deepcopy(accepted[field])
             _record_field_source(mentor, field, resolution_id)
+            if field == "title":
+                primary_affiliation = next(
+                    (
+                        item
+                        for item in mentor.get("affiliations", [])
+                        if item.get("status") == "current" and item.get("is_primary")
+                    ),
+                    None,
+                )
+                if primary_affiliation is not None:
+                    primary_affiliation["title"] = copy.deepcopy(accepted[field])
+                    _add_resolution_source(primary_affiliation, resolution_id)
+                    _record_field_source(mentor, "affiliations", resolution_id)
     if "status" in accepted:
         _apply_lifecycle(mentor, accepted, resolution["reason"], resolution_id)
         _record_field_source(mentor, "status", resolution_id)
@@ -258,12 +399,20 @@ def apply_resolution(root: Path, resolution_path: Path) -> tuple[Path, Path | No
 
     destination = data.root / "reports" / "resolutions" / f"{resolution['id']}.json"
     existing = next((item for item in data.resolutions if item["id"] == resolution["id"]), None)
-    if existing is not None and existing != resolution:
-        raise SubmissionError("相同 Resolution ID 已存在但内容不同")
+    if existing is not None:
+        if not _same_resolution_ignoring_decision_time(existing, resolution):
+            raise SubmissionError("相同 Resolution ID 已存在但内容不同")
+        changed_path = (
+            mentor_path
+            if resolution["decision"] in {"accepted", "partially_accepted"}
+            else None
+        )
+        return destination, changed_path
 
     changed_mentor_path: Path | None = None
     if resolution["decision"] in {"accepted", "partially_accepted"}:
         mentor = copy.deepcopy(next(item for item in data.mentors if item["id"] == mentor_id))
+        _ensure_resolution_is_current(mentor, resolution)
         accepted = resolution["accepted"]
         _apply_structured_patch(mentor, accepted, resolution)
         write_json_atomic(mentor_path, mentor)

@@ -133,6 +133,22 @@ def test_xlsx_formula_and_extra_sheet_are_rejected(tmp_path) -> None:
         parse_community_package(extra_sheet_path, policy)
 
 
+def test_xlsx_declared_dimensions_are_rejected_before_unbounded_iteration(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    policy = load_yaml(root / "registry" / "policy.yml")
+    policy["limits"]["max_batch_rows"] = 5
+    path = tmp_path / "oversized-dimension.xlsx"
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.append(SAFE_COLUMNS)
+    sheet["A100000"] = "超出范围"
+    workbook.save(path)
+    workbook.close()
+
+    with pytest.raises(UnsafePackageError, match="超过 5 行限制"):
+        parse_community_package(path, policy)
+
+
 def test_only_one_direct_github_issue_attachment_is_accepted() -> None:
     attachment = extract_github_attachment(
         "[community.xlsx](https://github.com/user-attachments/assets/"

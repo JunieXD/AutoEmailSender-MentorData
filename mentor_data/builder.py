@@ -4,7 +4,7 @@ import hashlib
 import re
 import shutil
 from collections import defaultdict
-from datetime import UTC, datetime
+from datetime import UTC, datetime, timedelta
 from pathlib import Path, PurePosixPath
 from typing import Any
 
@@ -22,7 +22,11 @@ def _iso_utc(value: datetime) -> str:
     return value.astimezone(UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
-def _source_digest(data: RepositoryData) -> str:
+def _source_digest(
+    data: RepositoryData,
+    *,
+    automatically_stale_ids: set[str],
+) -> str:
     payload = {
         "format": DATASET_FORMAT_ID,
         "policy": data.policy,
@@ -31,8 +35,30 @@ def _source_digest(data: RepositoryData) -> str:
         "claims": sorted(data.claims, key=lambda item: item["id"]),
         "resolutions": sorted(data.resolutions, key=lambda item: item["id"]),
         "revocations": data.revocations,
+        "automatically_stale_ids": sorted(automatically_stale_ids),
     }
     return hashlib.sha256(json_bytes(payload, pretty=False)).hexdigest()
+
+
+def _automatic_stale_deadline(
+    data: RepositoryData,
+    mentor: dict[str, Any],
+) -> datetime | None:
+    stale_after_days = data.policy.get("publication", {}).get("stale_after_days")
+    # Older canonical records may predate last_verified_at. Treat their last
+    # canonical update as the verification baseline instead of allowing an
+    # indefinitely active record to bypass the publication freshness policy.
+    last_verified_at = mentor.get("last_verified_at")
+    if not isinstance(last_verified_at, str):
+        last_verified_at = mentor.get("updated_at") or mentor.get("created_at")
+    if not isinstance(stale_after_days, int) or stale_after_days <= 0:
+        raise ValueError("publication.stale_after_days 必须为正整数")
+    if not isinstance(last_verified_at, str):
+        return None
+    parsed = datetime.fromisoformat(last_verified_at.replace("Z", "+00:00"))
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=UTC)
+    return parsed.astimezone(UTC) + timedelta(days=stale_after_days)
 
 
 def _primary(values: list[dict[str, Any]], *, current: bool = False) -> dict[str, Any] | None:
@@ -68,16 +94,20 @@ def _claim_contributors(
 def _discovery_source_url(
     claim_by_id: dict[str, dict[str, Any]],
     primary_contact: dict[str, Any],
+    primary_affiliation: dict[str, Any],
 ) -> str:
+    organization_id = primary_affiliation["organization_id"]
     for claim_id in reversed(primary_contact.get("claim_ids", [])):
         claim = claim_by_id.get(claim_id)
         if claim is None or claim.get("status") not in {"accepted", "partially_accepted"}:
             continue
         accepted = claim.get("accepted", {})
+        if accepted.get("organization_id") != organization_id:
+            continue
         source_url = accepted.get("source_url")
         if isinstance(source_url, str) and source_url:
             return source_url
-    return primary_contact["source_url"]
+    return primary_affiliation["source_url"]
 
 
 def _project_affiliation(data: RepositoryData, affiliation: dict[str, Any]) -> dict[str, Any]:
@@ -104,12 +134,25 @@ def _project_mentor(
     primary_name = _primary(mentor["names"])
     primary_contact = _primary(mentor["contacts"], current=True)
     primary_affiliation = _primary(mentor["affiliations"], current=True)
-    current_profile = next(
-        (item for item in mentor["profiles"] if item.get("status") == "current"),
-        None,
-    )
     if primary_name is None or primary_contact is None or primary_affiliation is None:
         raise ValueError(f"导师 {mentor['id']} 缺少发布所需主要字段")
+    current_profile = next(
+        (
+            item
+            for item in mentor["profiles"]
+            if item.get("status") == "current"
+            and item.get("affiliation_id") == primary_affiliation["id"]
+        ),
+        None,
+    ) or next(
+        (
+            item
+            for item in mentor["profiles"]
+            if item.get("status") == "current"
+            and item.get("affiliation_id") is None
+        ),
+        None,
+    )
     names = data.registry.projection_names(primary_affiliation["organization_id"])
     active_contacts = [
         {
@@ -131,20 +174,96 @@ def _project_mentor(
         "id": mentor["id"],
         "name": primary_name["value"],
         "email": primary_contact["normalized_value"],
-        "title": mentor.get("title") or primary_affiliation.get("title"),
+        "title": primary_affiliation.get("title") or mentor.get("title"),
         "university": names["university"],
         "school": names["school"],
         "department": names["department"],
         "research_direction": "；".join(mentor.get("research_directions", [])) or None,
         "recent_papers": mentor.get("recent_papers", []),
         "profile_url": current_profile["url"] if current_profile else None,
-        "source_url": _discovery_source_url(claim_by_id, primary_contact),
+        "source_url": _discovery_source_url(
+            claim_by_id,
+            primary_contact,
+            primary_affiliation,
+        ),
         "status": mentor["status"],
         "last_verified_at": mentor.get("last_verified_at"),
         "contacts": active_contacts,
         "affiliations": active_affiliations,
         "contributors": _claim_contributors(claim_by_id, mentor["claim_ids"]),
     }
+
+
+def _relocation_events(data: RepositoryData, mentor: dict[str, Any]) -> list[dict[str, Any]]:
+    """Project active transfers into the backward-compatible revocation event stream."""
+
+    primary_affiliation = _primary(mentor.get("affiliations", []), current=True)
+    if mentor.get("status") != "active" or primary_affiliation is None:
+        return []
+    primary_sources = {
+        *primary_affiliation.get("claim_ids", []),
+        *primary_affiliation.get("resolution_ids", []),
+    }
+    if not primary_sources:
+        return []
+    destination_names = data.registry.projection_names(
+        primary_affiliation["organization_id"]
+    )
+    destination_label = " / ".join(
+        value
+        for value in (
+            destination_names["university"],
+            destination_names["school"],
+            destination_names["department"],
+        )
+        if value
+    )
+    events: list[dict[str, Any]] = []
+    for former in mentor.get("affiliations", []):
+        if (
+            former.get("status") != "former"
+            or former.get("organization_id") == primary_affiliation["organization_id"]
+        ):
+            continue
+        former_sources = {
+            *former.get("claim_ids", []),
+            *former.get("resolution_ids", []),
+        }
+        if not primary_sources.intersection(former_sources):
+            continue
+        origin_names = data.registry.projection_names(former["organization_id"])
+        origin_label = " / ".join(
+            value
+            for value in (
+                origin_names["university"],
+                origin_names["school"],
+                origin_names["department"],
+            )
+            if value
+        )
+        observed_at = primary_affiliation["observed_at"]
+        seed = (
+            f"{mentor['id']}:{former['organization_id']}:"
+            f"{primary_affiliation['organization_id']}:{observed_at}"
+        )
+        event_id = f"relocation_{hashlib.sha256(seed.encode('utf-8')).hexdigest()[:20]}"
+        reason = f"导师任职已从「{origin_label}」调动至「{destination_label}」"
+        if len(reason) > 1_000:
+            reason = f"{reason[:999]}…"
+        events.append(
+            {
+                "kind": "relocation",
+                "id": event_id,
+                "community_record_id": mentor["id"],
+                "status": "relocated",
+                "from_organization_id": former["organization_id"],
+                "to_organization_id": primary_affiliation["organization_id"],
+                "reason": reason,
+                "source_url": primary_affiliation["source_url"],
+                "observed_at": observed_at,
+            }
+        )
+    return sorted(events, key=lambda item: item["id"])
 
 
 def _write_dataset_file(base: Path, relative_path: str, value: Any) -> dict[str, Any]:
@@ -243,7 +362,18 @@ def build_dataset(
 ) -> dict[str, Any]:
     data = load_repository(root, validate=True)
     instant = (generated_at or datetime.now(UTC)).astimezone(UTC).replace(microsecond=0)
-    digest = _source_digest(data)
+    stale_deadlines = {
+        mentor["id"]: deadline
+        for mentor in data.mentors
+        if mentor.get("status") == "active"
+        and (deadline := _automatic_stale_deadline(data, mentor)) is not None
+    }
+    automatically_stale_ids = {
+        mentor_id
+        for mentor_id, deadline in stale_deadlines.items()
+        if instant >= deadline
+    }
+    digest = _source_digest(data, automatically_stale_ids=automatically_stale_ids)
     version = f"v2-{digest[:32]}"
 
     output_root = output_root.resolve()
@@ -258,20 +388,32 @@ def build_dataset(
 
     grouped: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
     hidden_status_records: list[dict[str, Any]] = []
+    relocation_events: list[dict[str, Any]] = []
     claim_by_id = {item["id"]: item for item in data.claims}
     for mentor in sorted(data.mentors, key=lambda item: item["id"]):
-        if mentor["status"] != "active":
+        automatically_stale = mentor["id"] in automatically_stale_ids
+        if mentor["status"] != "active" or automatically_stale:
+            stale_deadline = stale_deadlines.get(mentor["id"])
             hidden_status_records.append(
                 {
                     "community_record_id": mentor["id"],
-                    "status": mentor["status"],
-                    "reason": mentor.get("status_reason"),
+                    "status": "stale" if automatically_stale else mentor["status"],
+                    "reason": (
+                        f"超过 {data.policy['publication']['stale_after_days']} 天未重新核验"
+                        if automatically_stale
+                        else mentor.get("status_reason")
+                    ),
                     "source_url": mentor.get("status_source_url"),
-                    "observed_at": mentor.get("status_observed_at"),
+                    "observed_at": (
+                        _iso_utc(stale_deadline)
+                        if automatically_stale and stale_deadline is not None
+                        else mentor.get("status_observed_at")
+                    ),
                 }
             )
             continue
         projection = _project_mentor(data, mentor, claim_by_id)
+        relocation_events.extend(_relocation_events(data, mentor))
         primary_affiliation = _primary(mentor["affiliations"], current=True)
         if primary_affiliation is None:
             raise ValueError(f"导师 {mentor['id']} 缺少主要任职")
@@ -322,12 +464,21 @@ def build_dataset(
     catalog_path = f"releases/{version}/catalog.json"
     files.append(_write_dataset_file(output_root, catalog_path, catalog))
 
+    existing_events = list(data.revocations.get("revocations", []))
+    existing_event_ids = {item.get("id") for item in existing_events}
     revocations = {
         "schema_version": DATASET_SCHEMA_VERSION,
         "dataset_version": version,
         "generated_at": generated_at_text,
         "records": hidden_status_records,
-        "events": data.revocations.get("revocations", []),
+        "events": [
+            *existing_events,
+            *(
+                event
+                for event in relocation_events
+                if event["id"] not in existing_event_ids
+            ),
+        ],
     }
     revocations_path = f"releases/{version}/revocations.json"
     files.append(_write_dataset_file(output_root, revocations_path, revocations))

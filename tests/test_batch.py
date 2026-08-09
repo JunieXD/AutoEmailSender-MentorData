@@ -2,12 +2,14 @@ from __future__ import annotations
 
 import csv
 import json
+from dataclasses import replace
 from datetime import UTC, datetime
 
 import pytest
 
 import mentor_data.proposals as proposals_module
 from mentor_data.batch import create_batch_proposals
+from mentor_data.errors import SubmissionError
 from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.proposals import finalize_proposal_set
 from mentor_data.repository import load_repository
@@ -118,6 +120,69 @@ def test_batch_duplicates_become_two_claims_for_one_mentor(
     assert len(data.mentors) == 1
     assert len(data.claims) == 2
     assert len(data.mentors[0]["claim_ids"]) == 2
+
+
+def test_batch_same_resolved_organization_alias_is_not_an_affiliation_conflict(
+    tmp_path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    package_path = tmp_path / "organization-alias.csv"
+    first = [
+        "示例导师",
+        "mentor@example.edu",
+        "教授",
+        "示例大学",
+        "计算机学院",
+        "",
+        "机器学习",
+        "A Paper",
+        "https://cs.example.edu/faculty/mentor",
+        "https://cs.example.edu/faculty/mentor",
+    ]
+    second = first.copy()
+    second[4] = "计算机系"
+    with package_path.open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(SAFE_COLUMNS)
+        writer.writerow(first)
+        writer.writerow(second)
+
+    result = create_batch_proposals(
+        root,
+        _batch_event(tmp_path),
+        GitHubActor(
+            user_id=7007,
+            login="batch-user",
+            user_type="User",
+            created_at=datetime(2020, 1, 1, tzinfo=UTC),
+        ),
+        package_path=package_path,
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert result.proposals[1]["match_status"] == "matched_email"
+    assert "email_organization_conflict" not in result.proposals[1]["review_reasons"]
+    assert "identity_requires_manual_review" not in result.proposals[1]["review_reasons"]
+
+
+def test_batch_unchecked_confirmation_is_rejected(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    event = _batch_event(tmp_path)
+    event = replace(event, body=event.body.replace("- [x] 我确认", "- [ ] 我确认"))
+
+    with pytest.raises(SubmissionError, match="批量投稿确认未完成"):
+        create_batch_proposals(
+            root,
+            event,
+            GitHubActor(
+                user_id=7007,
+                login="batch-user",
+                user_type="User",
+                created_at=datetime(2020, 1, 1, tzinfo=UTC),
+            ),
+            package_path=_package(tmp_path),
+            output_directory=tmp_path / "proposals",
+        )
 
 
 def test_batch_reuses_proposal_schema_and_match_indexes(

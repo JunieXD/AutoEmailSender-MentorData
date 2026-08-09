@@ -10,7 +10,7 @@ from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.proposals import create_mentor_proposal, finalize_proposal
 from mentor_data.repository import load_repository
 
-from .helpers import build_test_repository
+from .helpers import build_test_repository, claim, mentor, save_claim, save_mentor
 
 
 def _issue_body(
@@ -20,6 +20,7 @@ def _issue_body(
     recent_papers: str = "A Safe Example Paper",
     profile_url: str = "https://cs.example.edu/faculty/mentor",
     source_url: str = "https://cs.example.edu/faculty",
+    title: str = "教授",
 ) -> str:
     sections = {
         "导师姓名": name,
@@ -27,7 +28,7 @@ def _issue_body(
         "学校正式名称": "示例大学",
         "学院或研究院正式名称": "计算机学院",
         "系所或中心": "_No response_",
-        "职称": "教授",
+        "职称": title,
         "研究方向": "机器学习",
         "近期或代表论文": recent_papers,
         "高校官网导师详情页": profile_url,
@@ -111,6 +112,48 @@ def test_new_submission_creates_reviewable_proposal_and_finalizes(tmp_path) -> N
     repeated_data = load_repository(root)
     assert len(repeated_data.claims) == 1
     assert len(repeated_data.mentors) == 1
+
+
+def test_unchecked_confirmation_is_rejected(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    event_path = _write_event(
+        tmp_path,
+        issue_number=18,
+        user_id=1001,
+        login="fixture-one",
+        body=_issue_body().replace("- [x] 我确认", "- [ ] 我确认"),
+    )
+
+    with pytest.raises(SubmissionError, match="投稿确认未完成"):
+        create_mentor_proposal(
+            root,
+            load_issue_event(event_path, max_body_bytes=200_000),
+            _actor(1001, "fixture-one"),
+            output_directory=tmp_path / "proposals",
+        )
+
+
+def test_unrecognized_public_title_is_preserved_for_manual_review(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    event_path = _write_event(
+        tmp_path,
+        issue_number=19,
+        user_id=1001,
+        login="fixture-one",
+        body=_issue_body(title="长聘副教授"),
+    )
+
+    result = create_mentor_proposal(
+        root,
+        load_issue_event(event_path, max_body_bytes=200_000),
+        _actor(1001, "fixture-one"),
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert result.proposal["submitted"]["title"] == "长聘副教授"
+    assert "unrecognized_title" in result.proposal["review_reasons"]
+    _, mentor_path = finalize_proposal(root, result.path, moderator_github_user_id=999)
+    assert json.loads(mentor_path.read_text(encoding="utf-8"))["title"] == "长聘副教授"
 
 
 def test_single_form_resolves_organization_from_public_names(tmp_path) -> None:
@@ -304,6 +347,54 @@ def test_same_email_with_different_name_is_quarantined(tmp_path) -> None:
     assert "email_name_conflict" in conflict.proposal["review_reasons"]
     with pytest.raises(SubmissionError, match="姓名"):
         finalize_proposal(root, conflict.path, moderator_github_user_id=999)
+
+
+def test_former_email_requires_correction_instead_of_restoring_it(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    existing_claim = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, existing_claim)
+    existing = mentor()
+    existing["contacts"][0]["status"] = "former"
+    existing["contacts"][0]["is_primary"] = False
+    existing["contacts"].append(
+        {
+            **existing["contacts"][0],
+            "value": "mentor.current@example.edu",
+            "normalized_value": "mentor.current@example.edu",
+            "status": "current",
+            "is_primary": True,
+        }
+    )
+    save_mentor(root, existing)
+    event_path = _write_event(
+        tmp_path,
+        issue_number=20,
+        user_id=2002,
+        login="fixture-two",
+        body=_issue_body(email="mentor@example.edu"),
+    )
+
+    result = create_mentor_proposal(
+        root,
+        load_issue_event(event_path, max_body_bytes=200_000),
+        _actor(2002, "fixture-two"),
+        output_directory=tmp_path / "proposals",
+    )
+
+    assert result.proposal["match_status"] == "conflict"
+    assert "former_email_requires_correction" in result.proposal["review_reasons"]
+    with pytest.raises(SubmissionError, match="历史邮箱"):
+        finalize_proposal(root, result.path, moderator_github_user_id=999)
 
 
 def test_young_account_is_never_auto_eligible(tmp_path) -> None:

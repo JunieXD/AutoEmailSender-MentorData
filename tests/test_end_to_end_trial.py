@@ -111,6 +111,15 @@ def test_full_trial_contribute_publish_correct_retire_and_revoke(tmp_path) -> No
     )
     apply_resolution(root, title_resolution)
     assert load_repository(root).mentors[0]["title"] == "副教授"
+    title_build = build_dataset(root, tmp_path / "title-dist", generated_at=fixed_datetime())
+    title_catalog = json.loads(
+        (tmp_path / "title-dist" / title_build["catalog_path"]).read_text(encoding="utf-8")
+    )
+    title_unit_path = title_catalog["universities"][0]["units"][0]["path"]
+    title_records = json.loads(
+        (tmp_path / "title-dist" / title_unit_path).read_text(encoding="utf-8")
+    )["records"]
+    assert title_records[0]["title"] == "副教授"
 
     retirement_resolution = _resolution(
         tmp_path / "retirement-resolution.json",

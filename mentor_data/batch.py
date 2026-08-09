@@ -5,9 +5,16 @@ from pathlib import Path
 from typing import Any
 
 from .errors import SubmissionError
-from .github_events import GitHubActor, GitHubIssueEvent, parse_issue_form, require_issue_trigger
+from .github_events import (
+    GitHubActor,
+    GitHubIssueEvent,
+    has_checked_confirmation,
+    parse_issue_form,
+    require_issue_trigger,
+)
 from .identifiers import proposed_mentor_id
 from .io_utils import write_json_atomic
+from .normalization import normalize_organization_key
 from .proposals import (
     build_mentor_proposal,
     candidate_from_package_record,
@@ -40,7 +47,7 @@ class BatchProposalResult:
 
 def parse_batch_form(event: GitHubIssueEvent) -> dict[str, str]:
     sections = parse_issue_form(event.body, BATCH_FORM_LABELS)
-    if "我确认" not in sections["投稿确认"]:
+    if not has_checked_confirmation(sections["投稿确认"]):
         raise SubmissionError("批量投稿确认未完成")
     return sections
 
@@ -74,6 +81,18 @@ def _pending_mentor(proposal: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _submitted_organization_path(proposal: dict[str, Any]) -> tuple[str, str, str]:
+    submitted = proposal["submitted"]
+    return tuple(
+        normalize_organization_key(submitted.get(field))
+        for field in (
+            "submitted_university",
+            "submitted_school",
+            "submitted_department",
+        )
+    )
+
+
 def create_batch_proposals(
     root: Path,
     event: GitHubIssueEvent,
@@ -94,6 +113,7 @@ def create_batch_proposals(
     paths: list[Path] = []
     invalid_rows: list[dict[str, Any]] = []
     build_context = prepare_proposal_build_context(data)
+    pending_proposals_by_mentor_id: dict[str, dict[str, Any]] = {}
     for package_row in package_rows:
         record = package_row.record
         missing = [field for field in ("name", "email", "source_url") if not record[field]]
@@ -120,6 +140,32 @@ def create_batch_proposals(
                 batch_row=package_row.batch_row,
                 context=build_context,
             )
+            pending_target = pending_proposals_by_mentor_id.get(
+                proposal.get("target_mentor_id")
+            )
+            same_resolved_organization = (
+                isinstance(pending_target, dict)
+                and isinstance(pending_target["accepted"].get("organization_id"), str)
+                and pending_target["accepted"].get("organization_id")
+                == proposal["accepted"].get("organization_id")
+            )
+            if (
+                pending_target is not None
+                and _submitted_organization_path(pending_target)
+                != _submitted_organization_path(proposal)
+                and not same_resolved_organization
+            ):
+                proposal["match_status"] = "conflict"
+                proposal["review_reasons"] = list(
+                    dict.fromkeys(
+                        [
+                            *proposal["review_reasons"],
+                            "email_organization_conflict",
+                            "identity_requires_manual_review",
+                        ]
+                    )
+                )
+                proposal["auto_eligible"] = False
         except SubmissionError as error:
             invalid_rows.append(
                 {
@@ -139,6 +185,7 @@ def create_batch_proposals(
             pending_mentor = _pending_mentor(proposal)
             data.mentors.append(pending_mentor)
             build_context.register_mentor(pending_mentor)
+            pending_proposals_by_mentor_id[pending_mentor["id"]] = proposal
 
     return BatchProposalResult(
         paths=tuple(paths),

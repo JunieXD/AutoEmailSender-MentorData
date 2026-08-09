@@ -18,6 +18,10 @@ HEADING_PATTERN = re.compile(r"^### (?P<label>[^\r\n]+)\r?$", re.MULTILINE)
 NO_RESPONSE_VALUES = {"_No response_", "No response", "无响应"}
 GITHUB_LOGIN_PATTERN = re.compile(r"^[A-Za-z0-9](?:[A-Za-z0-9-]{0,37}[A-Za-z0-9])?$")
 MAX_ISSUE_TITLE_CHARACTERS = 256
+CHECKED_CONFIRMATION_PATTERN = re.compile(
+    r"^\s*-\s*\[[xX]\]\s*我确认[^\r\n]*$",
+    re.MULTILINE,
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -114,6 +118,12 @@ def require_issue_trigger(event: GitHubIssueEvent, *, expected_label: str) -> No
         raise SubmissionError("只处理仍然开放的普通 Issue")
     if expected_label not in event.labels:
         raise SubmissionError(f"Issue 缺少所需标签：{expected_label}")
+
+
+def has_checked_confirmation(value: str) -> bool:
+    """Return whether an Issue Form confirmation checkbox is actually checked."""
+
+    return CHECKED_CONFIRMATION_PATTERN.search(value) is not None
 
 
 def parse_issue_form(

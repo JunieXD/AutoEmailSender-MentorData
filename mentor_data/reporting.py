@@ -11,11 +11,17 @@ from typing import Any
 from jsonschema import Draft202012Validator, FormatChecker
 
 from .errors import SubmissionError
-from .github_events import GitHubActor, GitHubIssueEvent, parse_issue_form, require_issue_trigger
+from .github_events import (
+    GitHubActor,
+    GitHubIssueEvent,
+    has_checked_confirmation,
+    parse_issue_form,
+    require_issue_trigger,
+)
 from .io_utils import load_json, write_json_atomic
 from .normalization import normalize_text, normalized_web_url
 from .repository import RepositoryData, load_repository
-from .resolutions import apply_resolution
+from .resolutions import apply_resolution, mentor_before_snapshot
 
 REPORT_FORM_LABELS = {
     "社区导师 ID": {"要反馈的导师（软件自动填写）"},
@@ -36,77 +42,6 @@ def _blocked_for_report(data: RepositoryData, user_id: int) -> bool:
     )
 
 
-def _mentor_before_snapshot(mentor: dict[str, Any]) -> dict[str, Any]:
-    primary_name = next((item for item in mentor["names"] if item.get("is_primary")), None)
-    primary_contact = next(
-        (
-            item
-            for item in mentor["contacts"]
-            if item.get("status") == "current" and item.get("is_primary")
-        ),
-        None,
-    )
-    primary_affiliation = next(
-        (
-            item
-            for item in mentor["affiliations"]
-            if item.get("status") == "current" and item.get("is_primary")
-        ),
-        None,
-    )
-    return {
-        "status": mentor["status"],
-        "name": primary_name["value"] if primary_name else None,
-        "email": primary_contact["normalized_value"] if primary_contact else None,
-        "organization_id": (
-            primary_affiliation["organization_id"] if primary_affiliation else None
-        ),
-        "title": mentor.get("title"),
-        "research_directions": mentor.get("research_directions", []),
-        "recent_papers": mentor.get("recent_papers", []),
-        "names": [
-            {key: item[key] for key in ("value", "kind", "is_primary")}
-            for item in mentor.get("names", [])
-        ],
-        "contacts": [
-            {
-                key: item[key]
-                for key in (
-                    "value",
-                    "status",
-                    "is_primary",
-                    "affiliation_id",
-                    "source_url",
-                    "observed_at",
-                )
-            }
-            for item in mentor.get("contacts", [])
-        ],
-        "affiliations": [
-            {
-                key: item[key]
-                for key in (
-                    "id",
-                    "organization_id",
-                    "status",
-                    "is_primary",
-                    "title",
-                    "started_at",
-                    "ended_at",
-                    "source_url",
-                    "observed_at",
-                )
-            }
-            for item in mentor.get("affiliations", [])
-        ],
-        "profiles": [
-            {key: item[key] for key in ("url", "status", "affiliation_id", "observed_at")}
-            for item in mentor.get("profiles", [])
-        ],
-        "last_verified_at": mentor.get("last_verified_at"),
-    }
-
-
 def create_report_proposal(
     root: Path,
     event: GitHubIssueEvent,
@@ -121,7 +56,7 @@ def create_report_proposal(
     if _blocked_for_report(data, actor.user_id):
         raise SubmissionError("该 GitHub 用户已被禁止提交反馈")
     sections = parse_issue_form(event.body, REPORT_FORM_LABELS)
-    if "我确认" not in sections["反馈确认"]:
+    if not has_checked_confirmation(sections["反馈确认"]):
         raise SubmissionError("反馈确认未完成")
     mentor_id = normalize_text(sections["社区导师 ID"])
     mentor = next((item for item in data.mentors if item["id"] == mentor_id), None)
@@ -148,7 +83,7 @@ def create_report_proposal(
         "mentor_id": mentor_id,
         "report_type": normalize_text(sections["反馈类型"]),
         "affected_fields": normalize_text(sections["涉及字段"]),
-        "before": _mentor_before_snapshot(mentor),
+        "before": mentor_before_snapshot(mentor),
         "proposed": {
             "value": normalize_text(sections["建议值或处理方式"]),
             "explanation": normalize_text(sections["说明"]),

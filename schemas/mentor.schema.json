@@ -56,20 +56,7 @@
       "type": "array",
       "items": { "$ref": "#/$defs/profile" }
     },
-    "title": {
-      "type": ["string", "null"],
-      "enum": [
-        "教授",
-        "副教授",
-        "助理教授",
-        "讲师",
-        "研究员",
-        "副研究员",
-        "助理研究员",
-        "特聘研究员",
-        null
-      ]
-    },
+    "title": { "type": ["string", "null"], "minLength": 1, "maxLength": 255 },
     "research_directions": {
       "type": "array",
       "items": { "type": "string", "minLength": 1, "maxLength": 1000 },
@@ -215,7 +202,7 @@
         "organization_id": { "$ref": "#/$defs/organizationId" },
         "status": { "enum": ["current", "former"] },
         "is_primary": { "type": "boolean" },
-        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "title": { "type": ["string", "null"], "minLength": 1, "maxLength": 255 },
         "started_at": { "type": ["string", "null"], "format": "date" },
         "ended_at": { "type": ["string", "null"], "format": "date" },
         "source_url": { "$ref": "#/$defs/webUrl" },

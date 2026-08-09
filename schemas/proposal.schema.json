@@ -136,7 +136,7 @@
         "submitted_university": { "type": ["string", "null"], "maxLength": 255 },
         "submitted_school": { "type": ["string", "null"], "maxLength": 255 },
         "submitted_department": { "type": ["string", "null"], "maxLength": 255 },
-        "title": { "type": ["string", "null"], "maxLength": 255 },
+        "title": { "type": ["string", "null"], "minLength": 1, "maxLength": 255 },
         "research_directions": {
           "type": "array",
           "items": { "type": "string", "minLength": 1, "maxLength": 1000 },

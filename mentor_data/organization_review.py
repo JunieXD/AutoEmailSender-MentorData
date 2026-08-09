@@ -13,6 +13,7 @@ from jsonschema import Draft202012Validator, FormatChecker
 
 from .errors import RepositoryValidationError, SubmissionError
 from .github_events import GITHUB_LOGIN_PATTERN, parse_datetime
+from .identifiers import proposed_mentor_id, stable_proposal_entity_id
 from .io_utils import json_bytes, load_json, write_json_atomic, write_yaml_atomic
 from .normalization import (
     hostname_for_url,
@@ -65,6 +66,7 @@ UNSUPPORTED_AFFILIATION_IDENTITY_REASONS = {
     "profile_name_conflict",
     "email_matches_multiple_mentors",
     "profile_matches_multiple_mentors",
+    "former_email_requires_correction",
 }
 TRUSTED_REVIEW_ASSOCIATIONS = {"OWNER", "MEMBER", "COLLABORATOR"}
 
@@ -149,6 +151,8 @@ def _organization_options(registry: OrganizationRegistry) -> list[dict[str, Any]
 def _supported_affiliation_identity(
     data: RepositoryData,
     proposal: dict[str, Any],
+    *,
+    pending_proposals: list[dict[str, Any]] | tuple[dict[str, Any], ...] = (),
 ) -> dict[str, Any] | None:
     """Return the reviewer-safe identity snapshot for an email/org conflict.
 
@@ -167,6 +171,66 @@ def _supported_affiliation_identity(
         return None
     mentor = next((item for item in data.mentors if item.get("id") == target_mentor_id), None)
     if mentor is None:
+        pending = next(
+            (
+                item
+                for item in pending_proposals
+                if item.get("target_mentor_id") is None
+                and proposed_mentor_id(item) == target_mentor_id
+            ),
+            None,
+        )
+        if pending is not None:
+            pending_accepted = pending["accepted"]
+            pending_organization_id = pending_accepted.get("organization_id")
+            observed_at = pending["contributor"]["submitted_at"]
+            source_url = (
+                pending_accepted.get("profile_url")
+                or pending_accepted["source_url"]
+            )
+            affiliation_id = stable_proposal_entity_id(
+                "aff", pending, "affiliation"
+            )
+            submitted_path = " / ".join(
+                value
+                for value in (
+                    pending_accepted.get("submitted_university"),
+                    pending_accepted.get("submitted_school"),
+                    pending_accepted.get("submitted_department"),
+                )
+                if isinstance(value, str) and value
+            )
+            mentor = {
+                "id": target_mentor_id,
+                "names": [
+                    {"value": pending_accepted["name"], "is_primary": True}
+                ],
+                "contacts": [
+                    {
+                        "normalized_value": pending_accepted["email"],
+                        "status": "current",
+                        "is_primary": True,
+                        "affiliation_id": affiliation_id,
+                    }
+                ],
+                "affiliations": [
+                    {
+                        "id": affiliation_id,
+                        "organization_id": (
+                            pending_organization_id
+                            if isinstance(pending_organization_id, str)
+                            else None
+                        ),
+                        "organization_label": submitted_path or "机构待审核",
+                        "status": "current",
+                        "is_primary": True,
+                        "title": pending_accepted.get("title"),
+                        "source_url": source_url,
+                        "observed_at": observed_at,
+                    }
+                ],
+            }
+    if mentor is None:
         return None
     accepted = proposal.get("accepted", {})
     submitted_name = accepted.get("name")
@@ -176,7 +240,7 @@ def _supported_affiliation_identity(
         (
             item
             for item in mentor.get("contacts", [])
-            if item.get("status") in {"current", "former"}
+            if item.get("status") == "current"
             and item.get("normalized_value") == normalize_email(str(submitted_email or ""))
         ),
         None,
@@ -210,6 +274,11 @@ def _supported_affiliation_identity(
                     "title": affiliation.get("title"),
                     "source_url": affiliation["source_url"],
                     "observed_at": affiliation["observed_at"],
+                    **(
+                        {"organization_label": affiliation["organization_label"]}
+                        if affiliation.get("organization_label")
+                        else {}
+                    ),
                 }
                 for affiliation in sorted(current_affiliations, key=lambda item: item["id"])
             ],
@@ -217,7 +286,12 @@ def _supported_affiliation_identity(
     }
 
 
-def _manifest_row(data: RepositoryData, proposal: dict[str, Any]) -> dict[str, Any]:
+def _manifest_row(
+    data: RepositoryData,
+    proposal: dict[str, Any],
+    *,
+    pending_proposals: list[dict[str, Any]] | tuple[dict[str, Any], ...] = (),
+) -> dict[str, Any]:
     submitted = proposal["submitted"]
     row = {
         "proposal_id": proposal["id"],
@@ -227,7 +301,11 @@ def _manifest_row(data: RepositoryData, proposal: dict[str, Any]) -> dict[str, A
         "profile_url": submitted.get("profile_url"),
         "source_url": submitted["source_url"],
     }
-    identity = _supported_affiliation_identity(data, proposal)
+    identity = _supported_affiliation_identity(
+        data,
+        proposal,
+        pending_proposals=pending_proposals,
+    )
     if identity is not None:
         row["identity"] = identity
     return row
@@ -269,7 +347,9 @@ def create_organization_review_manifest(
             },
         )
         source_url = submitted_payload["source_url"]
-        group["rows"].append(_manifest_row(data, proposal))
+        group["rows"].append(
+            _manifest_row(data, proposal, pending_proposals=result.proposals)
+        )
         group["source_domains"].add(hostname_for_url(source_url))
         group["source_urls"].add(source_url)
         profile_url = submitted_payload.get("profile_url")
@@ -692,10 +772,11 @@ def _affiliation_resolution_for_target(
     resolution: dict[str, Any],
     *,
     organization_id: str,
+    identity: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Validate a reviewer decision and bind it to the final organization ID."""
 
-    identity = _supported_affiliation_identity(data, proposal)
+    identity = identity or _supported_affiliation_identity(data, proposal)
     if identity is None:
         raise SubmissionError(
             f"提案 {proposal.get('id')} 不是可安全处理的同邮箱任职冲突；"
@@ -859,7 +940,11 @@ def apply_organization_review(
                 "school": submitted.get("submitted_school"),
                 "department": submitted.get("submitted_department"),
             }
-            expected_row = _manifest_row(data, proposal)
+            expected_row = _manifest_row(
+                data,
+                proposal,
+                pending_proposals=tuple(proposals_by_id.values()),
+            )
             if "profile_url" not in row:
                 expected_row.pop("profile_url", None)
             # Pending manifests produced before affiliation review existed remain
@@ -876,6 +961,11 @@ def apply_organization_review(
     created_organization_ids: set[str] = set()
     updated_organization_ids: set[str] = set()
     planned_affiliation_resolutions: list[tuple[str, str, dict[str, Any]]] = []
+    pending_target_ids = {
+        proposed_mentor_id(proposal)
+        for proposal in proposals_by_id.values()
+        if proposal.get("target_mentor_id") is None
+    }
     decided_at = _iso_utc(review_comment.created_at)
     base_targets: dict[str, str | None] = {}
     overrides_by_group: dict[str, dict[str, dict[str, Any]]] = {}
@@ -965,7 +1055,15 @@ def apply_organization_review(
                 if identity_resolution is not None:
                     raise SubmissionError(f"提案 {proposal_id} 不支持当前任职判定")
             else:
-                supported_identity = _supported_affiliation_identity(data, proposal)
+                supported_identity = (
+                    identity
+                    if identity.get("target_mentor_id") in pending_target_ids
+                    else _supported_affiliation_identity(
+                        data,
+                        proposal,
+                        pending_proposals=tuple(proposals_by_id.values()),
+                    )
+                )
                 if supported_identity != identity:
                     raise SubmissionError("导师身份或当前任职已经变化，请刷新审核清单")
                 current_organization_ids = {
@@ -992,6 +1090,7 @@ def apply_organization_review(
                         proposal,
                         identity_resolution,
                         organization_id=target_id,
+                        identity=identity,
                     )
                     proposal["affiliation_resolution"] = affiliation_resolution
                     planned_affiliation_resolutions.append(

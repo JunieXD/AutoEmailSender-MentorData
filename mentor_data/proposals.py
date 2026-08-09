@@ -16,6 +16,7 @@ from .github_events import (
     GitHubActor,
     GitHubIssueEvent,
     account_age_days,
+    has_checked_confirmation,
     parse_issue_form,
     require_issue_trigger,
 )
@@ -195,7 +196,9 @@ def _candidate_from_sections(
         reasons.append("unapproved_profile_domain")
 
     title_text = normalize_text(sections["职称"])
-    title = title_text if title_text in SUPPORTED_TITLES else None
+    title = title_text or None
+    if title is not None and title not in SUPPORTED_TITLES:
+        reasons.append("unrecognized_title")
     payload = {
         "name": name,
         "email": email,
@@ -272,6 +275,15 @@ def _match_mentor(
         }
         if payload.get("organization_id") not in current_orgs:
             reasons.append("email_organization_conflict")
+        matching_contacts = [
+            item
+            for item in mentor.get("contacts", [])
+            if item.get("normalized_value") == payload["email"]
+        ]
+        if matching_contacts and not any(
+            item.get("status") == "current" for item in matching_contacts
+        ):
+            reasons.append("former_email_requires_correction")
         return ("conflict" if reasons else "matched_email"), mentor["id"], reasons
 
     profile_url = payload.get("profile_url")
@@ -362,7 +374,7 @@ def create_mentor_proposal(
     require_issue_trigger(event, expected_label="submission:mentor")
     data = load_repository(root, validate=True)
     sections = parse_issue_form(event.body, SINGLE_FORM_LABELS)
-    if "我确认" not in sections["投稿确认"]:
+    if not has_checked_confirmation(sections["投稿确认"]):
         raise SubmissionError("投稿确认未完成")
     submitted, review_reasons = _candidate_from_sections(data, sections)
     proposal = build_mentor_proposal(
@@ -546,12 +558,23 @@ def _append_support(
             item
             for item in updated["contacts"]
             if item["normalized_value"] == accepted["email"]
-            and item["status"] in {"current", "former"}
+            and item["status"] == "current"
         ),
         None,
     )
     if contact is None:
-        raise SubmissionError("现有导师不包含审核后的邮箱；邮箱变更需要专门纠错流程")
+        former_contact = next(
+            (
+                item
+                for item in updated["contacts"]
+                if item["normalized_value"] == accepted["email"]
+                and item["status"] == "former"
+            ),
+            None,
+        )
+        if former_contact is not None:
+            raise SubmissionError("审核后的邮箱已是历史邮箱；恢复邮箱需要专门纠错流程")
+        raise SubmissionError("现有导师不包含审核后的当前邮箱；邮箱变更需要专门纠错流程")
     affiliation = next(
         (
             item
@@ -661,7 +684,7 @@ def _append_affiliation_resolution(
             item
             for item in updated["contacts"]
             if item["normalized_value"] == accepted["email"]
-            and item["status"] in {"current", "former"}
+            and item["status"] == "current"
         ),
         None,
     )
@@ -729,14 +752,16 @@ def _append_affiliation_resolution(
     }
     updated["affiliations"].append(new_affiliation)
 
-    contact_was_former = contact["status"] == "former"
-    contact["status"] = "current"
-    if not any(
+    if make_primary:
+        for existing_contact in updated["contacts"]:
+            if existing_contact.get("status") == "current":
+                existing_contact["is_primary"] = existing_contact is contact
+    elif not any(
         item.get("is_primary") and item.get("status") == "current"
         for item in updated["contacts"]
     ):
         contact["is_primary"] = True
-    if action == "transfer_current_affiliation" or contact_was_former:
+    if make_primary:
         contact["affiliation_id"] = affiliation_id
         contact["source_url"] = verification_url
         contact["observed_at"] = observed_at
@@ -770,7 +795,7 @@ def _append_affiliation_resolution(
         current = updated.get(field)
         if incoming in (None, "", []):
             continue
-        if current in (None, "", []):
+        if make_primary or current in (None, "", []):
             updated[field] = copy.deepcopy(incoming)
             _add_field_provenance(updated, field, claim_id)
         elif current == incoming:

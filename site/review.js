@@ -1212,7 +1212,10 @@ function isCurrentIdentityOrganization(editor, organizationId) {
 function identityAffiliationLabel(affiliation) {
   const primary = affiliation.is_primary ? " · 主任职" : " · 兼任";
   const title = affiliation.title ? ` · ${affiliation.title}` : "";
-  return `${organizationPathForId(affiliation.organization_id)}${primary}${title}`;
+  const organization = affiliation.organization_id
+    ? organizationPathForId(affiliation.organization_id)
+    : affiliation.organization_label || "本批次另一条投稿（机构待审核）";
+  return `${organization}${primary}${title}`;
 }
 
 function updateIdentityResolutionState(editor) {

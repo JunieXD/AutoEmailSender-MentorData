@@ -72,6 +72,88 @@ def test_dual_affiliation_and_multiple_current_emails_publish_primary_projection
     assert len(record["affiliations"]) == 2
 
 
+def test_primary_affiliation_drives_title_profile_and_discovery_source(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    first = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty",
+        profile_url="https://cs.example.edu/faculty/mentor",
+        title="教授",
+    )
+    second = claim(
+        claim_id="claim_fixture_2002",
+        mentor_id="mentor_fixture_0001",
+        user_id=2002,
+        login="fixture-two",
+        issue_number=2,
+        name="示例导师",
+        email="mentor@sample.edu",
+        organization_id="org_sample_ai",
+        source_url="https://ai.sample.edu/faculty",
+        profile_url="https://ai.sample.edu/faculty/mentor",
+        title="副教授",
+    )
+    save_claim(root, first)
+    save_claim(root, second)
+    value = mentor(claim_ids=[first["id"], second["id"]], dual=True)
+    value["affiliations"][0]["is_primary"] = False
+    value["affiliations"][1]["is_primary"] = True
+    value["affiliations"][1]["title"] = "副教授"
+    value["contacts"][0]["is_primary"] = False
+    value["contacts"][1]["is_primary"] = True
+    value["title"] = "教授"
+    save_mentor(root, value)
+
+    latest = build_dataset(root, tmp_path / "dist", generated_at=fixed_datetime())
+    catalog = json.loads(
+        (tmp_path / "dist" / latest["catalog_path"]).read_text(encoding="utf-8")
+    )
+    unit_path = catalog["universities"][0]["units"][0]["path"]
+    record = json.loads(
+        (tmp_path / "dist" / unit_path).read_text(encoding="utf-8")
+    )["records"][0]
+
+    assert record["school"] == "人工智能研究院"
+    assert record["title"] == "副教授"
+    assert record["profile_url"] == "https://ai.sample.edu/faculty/mentor"
+    assert record["source_url"] == "https://ai.sample.edu/faculty"
+
+    value["profiles"] = [
+        item
+        for item in value["profiles"]
+        if item["affiliation_id"] != "aff_fixture_secondary"
+    ]
+    save_mentor(root, value)
+    without_primary_profile = build_dataset(
+        root,
+        tmp_path / "dist-without-primary-profile",
+        generated_at=fixed_datetime(),
+    )
+    without_primary_catalog = json.loads(
+        (
+            tmp_path
+            / "dist-without-primary-profile"
+            / without_primary_profile["catalog_path"]
+        ).read_text(encoding="utf-8")
+    )
+    without_primary_unit = without_primary_catalog["universities"][0]["units"][0]
+    without_primary_record = json.loads(
+        (
+            tmp_path
+            / "dist-without-primary-profile"
+            / without_primary_unit["path"]
+        ).read_text(encoding="utf-8")
+    )["records"][0]
+    assert without_primary_record["profile_url"] is None
+
+
 def test_retired_mentor_is_removed_from_import_shards_and_listed_in_revocations(tmp_path) -> None:
     root = build_test_repository(tmp_path)
     value = claim(
@@ -106,6 +188,82 @@ def test_retired_mentor_is_removed_from_import_shards_and_listed_in_revocations(
     assert catalog["record_count"] == 0
     assert revocations["records"][0]["community_record_id"] == "mentor_fixture_0001"
     assert revocations["records"][0]["status"] == "retired"
+
+
+def test_active_mentor_becomes_stale_after_policy_deadline(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    value = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, value)
+    active = mentor()
+    active["last_verified_at"] = "2025-08-03T00:00:00Z"
+    save_mentor(root, active)
+    output = tmp_path / "dist"
+
+    before_deadline = build_dataset(
+        root,
+        output,
+        generated_at=fixed_datetime().replace(year=2026, day=2),
+    )
+    before_catalog = json.loads(
+        (output / before_deadline["catalog_path"]).read_text(encoding="utf-8")
+    )
+    after_deadline = build_dataset(root, output, generated_at=fixed_datetime())
+    after_catalog = json.loads(
+        (output / after_deadline["catalog_path"]).read_text(encoding="utf-8")
+    )
+    revocations = json.loads(
+        (
+            output
+            / after_deadline["catalog_path"].replace("catalog.json", "revocations.json")
+        ).read_text(encoding="utf-8")
+    )
+
+    assert before_catalog["record_count"] == 1
+    assert after_deadline["dataset_version"] != before_deadline["dataset_version"]
+    assert after_catalog["record_count"] == 0
+    assert revocations["records"][0]["status"] == "stale"
+    assert revocations["records"][0]["observed_at"] == "2026-08-03T00:00:00Z"
+
+
+def test_active_legacy_mentor_uses_updated_at_as_stale_baseline(tmp_path) -> None:
+    root = build_test_repository(tmp_path)
+    value = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, value)
+    active = mentor()
+    active["last_verified_at"] = None
+    active["updated_at"] = "2025-08-03T00:00:00Z"
+    save_mentor(root, active)
+
+    latest = build_dataset(root, tmp_path / "dist", generated_at=fixed_datetime())
+    dataset_root = (tmp_path / "dist" / latest["catalog_path"]).parent
+    catalog = json.loads((dataset_root / "catalog.json").read_text(encoding="utf-8"))
+    revocations = json.loads(
+        (dataset_root / "revocations.json").read_text(encoding="utf-8")
+    )
+
+    assert catalog["record_count"] == 0
+    assert revocations["records"][0]["status"] == "stale"
+    assert revocations["records"][0]["observed_at"] == "2026-08-03T00:00:00Z"
 
 
 def test_same_current_email_cannot_belong_to_two_mentor_entities(tmp_path) -> None:
