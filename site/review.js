@@ -25,6 +25,9 @@ const TYPE_LABELS = {
   center: "中心",
   laboratory: "实验室",
 };
+const ALL_ORGANIZATION_TYPES = Object.keys(TYPE_LABELS);
+const SCHOOL_ORGANIZATION_TYPES = new Set(["school", "institute"]);
+const DEPARTMENT_ORGANIZATION_TYPES = new Set(["department", "center", "laboratory"]);
 const ORGANIZATION_TYPE_SUFFIX_RULES = {
   school: [
     ["研究院", "institute"],
@@ -123,11 +126,7 @@ function setStatus(kind, title, detail) {
 }
 
 function normalizeOrganizationName(value) {
-  return String(value || "")
-    .normalize("NFKC")
-    .trim()
-    .toLocaleLowerCase()
-    .replace(/[\s·•・,，.。()（）[\]【】]/gu, "");
+  return MentorReviewLogic.normalizeOrganizationName(value);
 }
 
 function organizationLabel(organization) {
@@ -1175,15 +1174,23 @@ function createMentorProfileButton(row) {
 }
 
 function organizationPathForId(organizationId) {
-  const organization = state.organizationById.get(organizationId);
+  const organization =
+    state.selectableOrganizationById.get(organizationId) || state.organizationById.get(organizationId);
   return organization?.lineage_names?.join(" / ") || organizationId;
 }
 
-function groupTargetId(group) {
+function standardGroupTargetId(group) {
   const drafts = LEVELS.map((level) =>
     state.organizationDraftByKey.get(group.draftKeys?.[level]),
   ).filter(Boolean);
   return [...drafts].reverse().find((draft) => !draft.forcedSkip && draft.targetId)?.targetId || null;
+}
+
+function groupTargetId(card) {
+  if (card.mappingMode.value === "corrected") {
+    return card.independentTargetId || null;
+  }
+  return standardGroupTargetId(card.group);
 }
 
 function effectiveRowTargetId(card, editor) {
@@ -1196,7 +1203,7 @@ function effectiveRowTargetId(card, editor) {
   if (card.groupAction.value === "reject") {
     return null;
   }
-  return groupTargetId(card.group);
+  return groupTargetId(card);
 }
 
 function isCurrentIdentityOrganization(editor, organizationId) {
@@ -1451,26 +1458,289 @@ function createRowEditor(row, card) {
   return editor;
 }
 
+function selectableOrganizationsForTypes(allowedTypes) {
+  return [...state.selectableOrganizationById.values()]
+    .filter((organization) => allowedTypes.has(organization.type))
+    .sort((first, second) =>
+      organizationLabel(first).localeCompare(organizationLabel(second), "zh-CN"),
+    );
+}
+
+function parentTypesForOrganizationType(organizationType) {
+  if (SCHOOL_ORGANIZATION_TYPES.has(organizationType)) {
+    return new Set(["university"]);
+  }
+  if (DEPARTMENT_ORGANIZATION_TYPES.has(organizationType)) {
+    return new Set(["school", "institute"]);
+  }
+  return new Set();
+}
+
+function groupParentDraftForTarget(card) {
+  const organizationType = card.targetOrganizationType.value;
+  const parentLevel = SCHOOL_ORGANIZATION_TYPES.has(organizationType)
+    ? "university"
+    : DEPARTMENT_ORGANIZATION_TYPES.has(organizationType)
+      ? "school"
+      : null;
+  return parentLevel
+    ? state.organizationDraftByKey.get(card.group.draftKeys?.[parentLevel]) || null
+    : null;
+}
+
+function mappingKindForTarget(card, organization) {
+  const inferredKind = MentorReviewLogic.correctionKindForDepartment(
+    card.group.submitted.department,
+    card.group.submitted.school,
+  );
+  if (inferredKind === "department_as_school" && organization?.type === "school") {
+    return inferredKind;
+  }
+  if (inferredKind === "department_as_institute" && organization?.type === "institute") {
+    return inferredKind;
+  }
+  return "custom";
+}
+
+function updateIndependentPanelVisibility(card) {
+  const mode = card.mappingMode.value;
+  const creating = card.targetAction.value === "create";
+  const organizationType = card.targetOrganizationType.value;
+  card.targetPanel.hidden = mode === "standard";
+  card.targetExistingPanel.hidden = creating;
+  card.targetCreatePanel.hidden = !creating;
+  card.targetParentControls.hidden = organizationType === "university";
+  card.targetOtherParentField.hidden =
+    organizationType === "university" || card.targetParentMode.value !== "other";
+  card.mappingReasonField.hidden = mode !== "corrected";
+  card.savePathCorrectionLabel.hidden = mode !== "corrected";
+}
+
+function createIndependentTargetEditor(card) {
+  const group = card.group;
+  const defaults = MentorReviewLogic.correctionDefaults(
+    group.submitted,
+    group.suggested_path_correction,
+  );
+  const panel = element("section", "independent-target-panel");
+  const notice = element("div", "path-correction-notice");
+  if (defaults) {
+    notice.dataset.source = defaults.source;
+    notice.append(
+      element(
+        "strong",
+        null,
+        defaults.source === "history" ? "已命中历史路径纠错" : "已自动识别层级错位",
+      ),
+      element("span", null, defaults.reason),
+    );
+  }
+  notice.hidden = !defaults;
+
+  const targetControls = element("div", "independent-target-controls");
+  const targetAction = createSelect(
+    [
+      ["existing", "选择已有机构"],
+      ["create", "新建独立机构"],
+    ],
+    "target-action",
+    `${pathText(group)}的纠错目标来源`,
+  );
+  const targetExistingPanel = element("div", "target-existing-panel");
+  const targetExistingInput = createOrganizationPicker(
+    [...state.manifest.organizations],
+    "搜索并选择最终归属机构",
+    `${pathText(group)}的最终归属机构`,
+  );
+  targetExistingPanel.append(labeledControl("最终归属", targetExistingInput));
+
+  const targetCreatePanel = element("div", "target-create-panel");
+  const targetOrganizationType = createSelect(
+    ALL_ORGANIZATION_TYPES.map((value) => [value, TYPE_LABELS[value]]),
+    "target-organization-type",
+    `${pathText(group)}的新机构类型`,
+  );
+  const targetCanonicalName = createInput(
+    "text",
+    "新机构正式名称",
+    "target-canonical-name",
+  );
+  targetCanonicalName.maxLength = 255;
+  targetCanonicalName.setAttribute("aria-label", `${pathText(group)}的新机构正式名称`);
+  const targetParentControls = element("div", "target-parent-controls");
+  const targetParentMode = createSelect(
+    [
+      ["group", "使用本组已确认的上级"],
+      ["other", "选择其他上级机构"],
+    ],
+    "target-parent-mode",
+    `${pathText(group)}的新机构上级来源`,
+  );
+  const targetOtherParentInput = createOrganizationPicker(
+    [],
+    "搜索并选择上级机构",
+    `${pathText(group)}的新机构上级`,
+  );
+  const targetOtherParentField = labeledControl("其他上级", targetOtherParentInput);
+  targetParentControls.append(
+    labeledControl("上级机构", targetParentMode),
+    targetOtherParentField,
+  );
+  const targetOfficialUrl = createInput(
+    "url",
+    "官方网站（没有可留空）",
+    "target-official-url",
+  );
+  targetOfficialUrl.maxLength = 500;
+  targetOfficialUrl.setAttribute("aria-label", `${pathText(group)}的新机构官方网站`);
+  const targetApprovedDomains = createInput(
+    "text",
+    "额外官方来源域名，多个用逗号分隔",
+    "target-approved-domains",
+  );
+  targetApprovedDomains.maxLength = 2000;
+  targetApprovedDomains.setAttribute("aria-label", `${pathText(group)}的新机构来源域名`);
+  targetCreatePanel.append(
+    labeledControl("机构类型", targetOrganizationType),
+    labeledControl("正式名称", targetCanonicalName),
+    targetParentControls,
+    labeledControl("官方网站（可留空）", targetOfficialUrl),
+    labeledControl(
+      "额外官方来源域名（可留空）",
+      targetApprovedDomains,
+      "默认继承上级机构已批准的域名。",
+    ),
+  );
+  targetControls.append(
+    labeledControl("目标处理", targetAction),
+    targetExistingPanel,
+    targetCreatePanel,
+  );
+
+  const correctionControls = element("div", "path-correction-controls");
+  const mappingReason = createInput(
+    "text",
+    "例如：官网显示该导师实际属于同校另一学院",
+    "mapping-reason",
+  );
+  mappingReason.maxLength = 500;
+  mappingReason.setAttribute("aria-label", `${pathText(group)}的路径纠错依据`);
+  const mappingReasonField = labeledControl("路径纠错依据（必填）", mappingReason);
+  const savePathCorrection = document.createElement("input");
+  savePathCorrection.type = "checkbox";
+  savePathCorrection.checked = true;
+  savePathCorrection.setAttribute("aria-label", `保存${pathText(group)}的路径纠错`);
+  const savePathCorrectionLabel = element("label", "save-path-correction");
+  savePathCorrectionLabel.append(
+    savePathCorrection,
+    element("span", null, "保存这条路径纠错，后续相同投稿自动建议"),
+  );
+  correctionControls.append(mappingReasonField, savePathCorrectionLabel);
+
+  const targetPreview = element("p", "independent-target-preview", "尚未确认最终机构");
+  const targetError = element("p", "independent-target-error error");
+  targetError.hidden = true;
+  panel.append(notice, targetControls, correctionControls, targetPreview, targetError);
+
+  Object.assign(card, {
+    targetPanel: panel,
+    correctionNotice: notice,
+    targetAction,
+    targetExistingPanel,
+    targetExistingInput,
+    targetCreatePanel,
+    targetOrganizationType,
+    targetCanonicalName,
+    targetParentControls,
+    targetParentMode,
+    targetOtherParentField,
+    targetOtherParentInput,
+    targetOfficialUrl,
+    targetApprovedDomains,
+    mappingReason,
+    mappingReasonField,
+    savePathCorrection,
+    savePathCorrectionLabel,
+    targetPreview,
+    targetError,
+    targetTypeManuallySelected: false,
+    independentTargetId: null,
+    independentCreation: null,
+    independentPendingOrganization: null,
+    restoreIndependentTargetId: defaults?.targetId || null,
+    restoreIndependentParentId: null,
+  });
+
+  card.mappingMode.value = defaults?.mode || "standard";
+  targetAction.value = defaults?.targetAction || "existing";
+  targetCanonicalName.value =
+    defaults?.canonicalName || String(group.submitted.department || group.submitted.school || "").trim();
+  targetOrganizationType.value =
+    defaults?.organizationType ||
+    MentorReviewLogic.organizationTypeForCorrection("custom", targetCanonicalName.value);
+  targetParentMode.value = defaults?.parentMode || "group";
+  mappingReason.value = defaults?.reason || "";
+  savePathCorrection.checked = defaults?.savePathCorrection !== false;
+  if (defaults?.targetId && targetExistingInput.selectById(defaults.targetId)) {
+    card.restoreIndependentTargetId = null;
+  }
+
+  const mark = () => scheduleReviewUpdate();
+  targetAction.addEventListener("change", mark);
+  targetExistingInput.addEventListener("change", mark);
+  targetOrganizationType.addEventListener("change", () => {
+    card.targetTypeManuallySelected = true;
+    mark();
+  });
+  targetCanonicalName.addEventListener("input", () => {
+    if (!card.targetTypeManuallySelected) {
+      targetOrganizationType.value = MentorReviewLogic.organizationTypeForCorrection(
+        "custom",
+        targetCanonicalName.value,
+      );
+    }
+    mark();
+  });
+  targetParentMode.addEventListener("change", mark);
+  targetOtherParentInput.addEventListener("change", mark);
+  targetOfficialUrl.addEventListener("input", mark);
+  targetApprovedDomains.addEventListener("input", mark);
+  mappingReason.addEventListener("input", mark);
+  savePathCorrection.addEventListener("change", mark);
+  updateIndependentPanelVisibility(card);
+  return panel;
+}
+
 function updateGroupCard(card) {
+  updateIndependentPanelVisibility(card);
   const rejecting = card.groupAction.value === "reject";
   card.groupReason.hidden = !rejecting;
   if (rejecting) {
-    card.assignment.textContent = "整个分组将被拒绝；仍可在导师列表中单独改派个别导师。";
+    card.assignment.textContent =
+      card.mappingMode.value === "alternate" && card.independentTargetId
+        ? `整组将被拒绝；仍可将个别导师改派到「${organizationPathForId(card.independentTargetId)}」。`
+        : "整个分组将被拒绝；仍可在导师列表中单独改派个别导师。";
     card.article.dataset.kind = "rejected";
     return;
   }
   card.article.dataset.kind = "resolved";
-  const drafts = LEVELS.map((level) =>
-    state.organizationDraftByKey.get(card.group.draftKeys?.[level]),
-  ).filter(Boolean);
-  const target = [...drafts].reverse().find((draft) => !draft.forcedSkip && draft.targetId);
-  if (!target) {
+  const targetId = groupTargetId(card);
+  if (!targetId) {
     card.assignment.textContent = "机构尚未确认";
     return;
   }
+  const drafts = LEVELS.map((level) =>
+    state.organizationDraftByKey.get(card.group.draftKeys?.[level]),
+  ).filter(Boolean);
   const pending = drafts.filter((draft) => draftIsActive(draft) && !draft.confirmed);
-  const lineage = target.lineageNames.join(" / ") || target.submittedName;
-  card.assignment.textContent = pending.length ? `${lineage} · 还有 ${pending.length} 个机构待确认` : lineage;
+  const prefix = card.mappingMode.value === "corrected" ? "整组纠正为" : "最终归属";
+  const alternate =
+    card.mappingMode.value === "alternate" && card.independentTargetId
+      ? ` · 备用目标：${organizationPathForId(card.independentTargetId)}`
+      : "";
+  card.assignment.textContent = pending.length
+    ? `${prefix}：${organizationPathForId(targetId)} · 还有 ${pending.length} 个机构待确认${alternate}`
+    : `${prefix}：${organizationPathForId(targetId)}${alternate}`;
 }
 
 function createGroupCard(group, index) {
@@ -1502,11 +1772,20 @@ function createGroupCard(group, index) {
     "group-action",
     `${pathText(group)}的分组处理方式`,
   );
+  const mappingMode = createSelect(
+    [
+      ["standard", "按投稿原路径归属"],
+      ["corrected", "纠正整组最终归属"],
+      ["alternate", "只准备备用目标"],
+    ],
+    "mapping-mode",
+    `${pathText(group)}的机构映射模式`,
+  );
   const groupReason = createInput("text", "拒绝原因", "group-reason");
   groupReason.setAttribute("aria-label", `拒绝${pathText(group)}的原因`);
   groupReason.maxLength = 500;
   groupReason.hidden = true;
-  groupControls.append(groupAction, groupReason);
+  groupControls.append(groupAction, mappingMode, groupReason);
   const assignment = element("p", "group-assignment", "机构尚未确认");
 
   const ordinaryRows = group.rows.filter((row) => row.identity?.requires_resolution !== true);
@@ -1521,11 +1800,13 @@ function createGroupCard(group, index) {
     group,
     article,
     groupAction,
+    mappingMode,
     groupReason,
     assignment,
     rowEditors: [],
     renderedRowCount: 0,
   };
+  const targetPanel = createIndependentTargetEditor(card);
   if (identityRows.length) {
     const identitySection = element("section", "identity-conflicts");
     const heading = element("div", "identity-conflicts-heading");
@@ -1564,9 +1845,15 @@ function createGroupCard(group, index) {
     }
   });
   loadMoreRows.addEventListener("click", card.loadMoreRows);
-  groupAction.addEventListener("change", scheduleReviewUpdate);
+  groupAction.addEventListener("change", () => {
+    if (groupAction.value === "reject" && mappingMode.value === "corrected") {
+      mappingMode.value = "alternate";
+    }
+    scheduleReviewUpdate();
+  });
+  mappingMode.addEventListener("change", scheduleReviewUpdate);
   groupReason.addEventListener("input", scheduleReviewUpdate);
-  article.append(header, sources, assignment, groupControls);
+  article.append(header, sources, assignment, groupControls, targetPanel);
   if (card.identitySection) {
     article.append(card.identitySection);
   }
@@ -1600,6 +1887,20 @@ function markOrganizationDraftChanged(draft, affectsIdentity = false) {
   scheduleReviewUpdate();
 }
 
+function requiredSubmittedLevelsForCard(card) {
+  if (card.groupAction.value === "reject") {
+    return new Set();
+  }
+  return new Set(
+    MentorReviewLogic.requiredSubmittedLevels({
+      mappingMode: card.mappingMode.value,
+      targetAction: card.targetAction.value,
+      parentMode: card.targetParentMode.value,
+      organizationType: card.targetOrganizationType.value,
+    }),
+  );
+}
+
 function parseDomainsForPreview(value) {
   try {
     return parseDomains(value);
@@ -1621,7 +1922,172 @@ function removePendingOrganizationOptions() {
   state.pendingOrganizations = [];
 }
 
-function refreshPendingOrganizationOptions() {
+function registerPendingOrganization(organization) {
+  state.pendingOrganizationIds.add(organization.id);
+  state.selectableOrganizationById.set(organization.id, organization);
+  const label = organizationLabel(organization);
+  state.organizationLabelById.set(organization.id, label);
+  state.organizationIdByLabel.set(label, organization.id);
+}
+
+function mergePendingOrganization(byId, organization) {
+  const existing = byId.get(organization.id);
+  if (!existing) {
+    byId.set(organization.id, organization);
+    return;
+  }
+  existing.approved_domains = [
+    ...new Set([...(existing.approved_domains || []), ...(organization.approved_domains || [])]),
+  ].sort();
+  existing.official_urls = [
+    ...new Set([...(existing.official_urls || []), ...(organization.official_urls || [])]),
+  ];
+}
+
+function showIndependentTargetError(card, message) {
+  card.targetError.textContent = message || "";
+  card.targetError.hidden = !message;
+  card.targetPanel.classList.toggle("has-error", Boolean(message));
+}
+
+async function updateIndependentTargetCard(card, showErrors = false) {
+  updateIndependentPanelVisibility(card);
+  card.independentTargetId = null;
+  card.independentCreation = null;
+  card.independentPendingOrganization = null;
+  if (card.mappingMode.value === "standard") {
+    card.targetPreview.textContent = "尚未确认最终机构";
+    showIndependentTargetError(card, null);
+    return null;
+  }
+
+  let error = null;
+  let targetOrganization = null;
+  if (card.targetAction.value === "existing") {
+    const targetId = parseOrganizationInput(card.targetExistingInput);
+    targetOrganization = state.selectableOrganizationById.get(targetId) || null;
+    if (!targetOrganization) {
+      error = "请选择最终归属的已有机构";
+    } else {
+      card.independentTargetId = targetOrganization.id;
+    }
+  } else if (card.targetAction.value === "create") {
+    const organizationType = card.targetOrganizationType.value;
+    const canonicalName = card.targetCanonicalName.value.trim();
+    if (!ALL_ORGANIZATION_TYPES.includes(organizationType)) {
+      error = "新机构类型无效";
+    } else if (!canonicalName) {
+      error = "新机构需要填写正式名称";
+    }
+
+    let parentId = null;
+    let parent = null;
+    if (!error && organizationType !== "university") {
+      if (card.targetParentMode.value === "group") {
+        const parentDraft = groupParentDraftForTarget(card);
+        parentId = parentDraft?.targetId || null;
+      } else {
+        parentId = parseOrganizationInput(card.targetOtherParentInput);
+      }
+      parent = state.selectableOrganizationById.get(parentId) || null;
+      const allowedParentTypes = parentTypesForOrganizationType(organizationType);
+      if (!parent || !allowedParentTypes.has(parent.type)) {
+        error = SCHOOL_ORGANIZATION_TYPES.has(organizationType)
+          ? "新学院或研究院需要选择大学作为上级"
+          : "新系所、中心或实验室需要选择学院或研究院作为上级";
+      }
+    }
+
+    let officialUrl = null;
+    let approvedDomains = [];
+    if (!error) {
+      const officialUrlValue = card.targetOfficialUrl.value.trim();
+      try {
+        officialUrl = officialUrlValue
+          ? validateWebUrl(officialUrlValue, `新机构「${canonicalName}」的官网`)
+          : null;
+        approvedDomains = parseDomains(card.targetApprovedDomains.value);
+      } catch (caught) {
+        error = caught instanceof Error ? caught.message : "新机构官网或域名无效";
+      }
+    }
+    const effectiveDomains = [
+      ...new Set([...(parent?.approved_domains || []), ...approvedDomains]),
+    ];
+    if (!error && organizationType === "university" && !officialUrl) {
+      error = `新学校「${canonicalName}」需要填写官方网站`;
+    }
+    if (!error && organizationType === "university" && approvedDomains.length === 0) {
+      error = `新学校「${canonicalName}」至少需要一个官方来源域名`;
+    }
+    if (officialUrl && !sourceUrlMatchesDomains(officialUrl, effectiveDomains)) {
+      error = `新机构「${canonicalName}」的官网不属于本级或上级官方来源域名`;
+    }
+    if (!error) {
+      const targetId = await proposedOrganizationId(
+        organizationType,
+        canonicalName,
+        parentId,
+      );
+      const lineageIds = [...(parent?.lineage_ids || []), targetId];
+      const lineageNames = [...(parent?.lineage_names || []), canonicalName];
+      card.independentTargetId = targetId;
+      card.independentCreation = {
+        organization_id: targetId,
+        organization_type: organizationType,
+        canonical_name: canonicalName,
+        parent_id: parentId,
+        official_url: officialUrl,
+        approved_domains: approvedDomains,
+      };
+      card.independentPendingOrganization = {
+        id: targetId,
+        type: organizationType,
+        canonical_name: canonicalName,
+        parent_id: parentId,
+        aliases: [],
+        official_urls: officialUrl ? [officialUrl] : [],
+        approved_domains: effectiveDomains,
+        lineage_ids: lineageIds,
+        lineage_names: lineageNames,
+        pending: true,
+        pending_kind: "independent",
+      };
+      targetOrganization = card.independentPendingOrganization;
+    }
+  } else {
+    error = "目标机构处理方式无效";
+  }
+
+  if (!error && card.mappingMode.value === "corrected" && card.groupAction.value === "reject") {
+    error = "被拒绝的整组不能设置纠错目标；请改为“只准备备用目标”";
+  }
+  if (!error && card.mappingMode.value === "corrected" && !card.mappingReason.value.trim()) {
+    error = "纠正整组归属时需要填写审核依据";
+  }
+
+  card.targetPreview.textContent = targetOrganization
+    ? `${card.mappingMode.value === "corrected" ? "整组最终归属" : "逐行改派备用目标"}：${(
+        targetOrganization.lineage_names || [targetOrganization.canonical_name]
+      ).join(" / ")}`
+    : "尚未确认最终机构";
+  showIndependentTargetError(card, showErrors ? error : null);
+  return error;
+}
+
+async function refreshPendingOrganizationOptions() {
+  const targetSelections = new Map(
+    state.cards.map((card) => [
+      card,
+      card.targetExistingInput.selectedId || card.restoreIndependentTargetId,
+    ]),
+  );
+  const parentSelections = new Map(
+    state.cards.map((card) => [
+      card,
+      card.targetOtherParentInput.selectedId || card.restoreIndependentParentId,
+    ]),
+  );
   removePendingOrganizationOptions();
   const byId = new Map();
   for (const draft of state.organizationDrafts) {
@@ -1647,31 +2113,66 @@ function refreshPendingOrganizationOptions() {
       lineage_ids: [...(parent?.lineageIds || []), draft.targetId],
       lineage_names: draft.lineageNames,
       pending: true,
+      pending_kind: "hierarchy",
     };
-    const existing = byId.get(organization.id);
-    if (existing) {
-      existing.approved_domains = [
-        ...new Set([...existing.approved_domains, ...organization.approved_domains]),
-      ];
-      continue;
-    }
-    byId.set(organization.id, organization);
+    mergePendingOrganization(byId, organization);
   }
+  for (const organization of byId.values()) {
+    registerPendingOrganization(organization);
+  }
+
+  const preliminaryOptions = [...state.manifest.organizations, ...byId.values()];
+  for (const card of state.cards) {
+    const parentOptions = preliminaryOptions.filter(
+      (organization) =>
+        organization.pending_kind !== "independent" &&
+        parentTypesForOrganizationType(card.targetOrganizationType.value).has(organization.type),
+    );
+    card.targetOtherParentInput.setOptions(parentOptions);
+    const preservedParentId = parentSelections.get(card);
+    if (preservedParentId && card.targetOtherParentInput.selectById(preservedParentId)) {
+      card.restoreIndependentParentId = null;
+    }
+    if (card.targetAction.value === "create") {
+      await updateIndependentTargetCard(card);
+    }
+    if (card.independentPendingOrganization) {
+      mergePendingOrganization(byId, card.independentPendingOrganization);
+    }
+  }
+
+  removePendingOrganizationOptions();
   state.pendingOrganizations = [...byId.values()].sort((first, second) =>
     organizationLabel(first).localeCompare(organizationLabel(second), "zh-CN"),
   );
   for (const organization of state.pendingOrganizations) {
-    state.pendingOrganizationIds.add(organization.id);
-    state.selectableOrganizationById.set(organization.id, organization);
-    const label = organizationLabel(organization);
-    state.organizationLabelById.set(organization.id, label);
-    state.organizationIdByLabel.set(label, organization.id);
+    registerPendingOrganization(organization);
   }
+
   const options = [...state.manifest.organizations, ...state.pendingOrganizations];
+  for (const card of state.cards) {
+    card.targetExistingInput.setOptions(options);
+    const preservedTargetId = targetSelections.get(card);
+    if (preservedTargetId && card.targetExistingInput.selectById(preservedTargetId)) {
+      card.restoreIndependentTargetId = null;
+    }
+    const parentOptions = options.filter(
+      (organization) =>
+        organization.pending_kind !== "independent" &&
+        parentTypesForOrganizationType(card.targetOrganizationType.value).has(organization.type),
+    );
+    card.targetOtherParentInput.setOptions(parentOptions);
+    const preservedParentId = parentSelections.get(card);
+    if (preservedParentId && card.targetOtherParentInput.selectById(preservedParentId)) {
+      card.restoreIndependentParentId = null;
+    }
+    await updateIndependentTargetCard(card);
+  }
   const signature = JSON.stringify(
     state.pendingOrganizations.map((organization) => [
       organization.id,
       organization.canonical_name,
+      organization.parent_id,
       organization.approved_domains,
     ]),
   );
@@ -1748,13 +2249,18 @@ function showDraftValidation(draft) {
 
 async function updateOrganizationDrafts() {
   const token = ++state.updateToken;
-  const rejectedGroupIds = new Set(
-    state.cards
-      .filter((card) => card.groupAction.value === "reject")
-      .map((card) => card.group.id),
-  );
+  const activeDraftKeys = new Set();
+  for (const card of state.cards) {
+    const requiredLevels = requiredSubmittedLevelsForCard(card);
+    for (const level of requiredLevels) {
+      const key = card.group.draftKeys?.[level];
+      if (key) {
+        activeDraftKeys.add(key);
+      }
+    }
+  }
   for (const draft of state.organizationDrafts) {
-    draft.active = [...draft.groupIds].some((groupId) => !rejectedGroupIds.has(groupId));
+    draft.active = activeDraftKeys.has(draft.key);
   }
   for (const draft of state.organizationDrafts) {
     const editor = draft.editor;
@@ -1889,11 +2395,17 @@ async function updateOrganizationDrafts() {
           : "待确认";
     editor.status.textContent = statusText;
     editor.details.dataset.status = statusText;
+    if (!active) {
+      editor.details.open = false;
+    }
   }
   if (token !== state.updateToken) {
     return;
   }
-  refreshPendingOrganizationOptions();
+  await refreshPendingOrganizationOptions();
+  if (token !== state.updateToken) {
+    return;
+  }
   for (const card of state.cards) {
     updateGroupCard(card);
   }
@@ -2000,7 +2512,7 @@ function serializeReviewDraft() {
     }
   }
   return {
-    version: 1,
+    version: 2,
     saved_at: new Date().toISOString(),
     organizations: Object.fromEntries(
       state.organizationDrafts.map((draft) => [
@@ -2020,7 +2532,21 @@ function serializeReviewDraft() {
     groups: Object.fromEntries(
       state.cards.map((card) => [
         card.group.id,
-        { action: card.groupAction.value, reason: card.groupReason.value },
+        {
+          action: card.groupAction.value,
+          reason: card.groupReason.value,
+          mapping_mode: card.mappingMode.value,
+          target_action: card.targetAction.value,
+          target_existing_id: parseOrganizationInput(card.targetExistingInput),
+          target_organization_type: card.targetOrganizationType.value,
+          target_canonical_name: card.targetCanonicalName.value,
+          target_parent_mode: card.targetParentMode.value,
+          target_parent_id: parseOrganizationInput(card.targetOtherParentInput),
+          target_official_url: card.targetOfficialUrl.value,
+          target_approved_domains: card.targetApprovedDomains.value,
+          mapping_reason: card.mappingReason.value,
+          save_path_correction: card.savePathCorrection.checked,
+        },
       ]),
     ),
     rows,
@@ -2064,7 +2590,7 @@ function restoreReviewDraft() {
   } catch {
     return false;
   }
-  if (!saved || saved.version !== 1) {
+  if (!saved || ![1, 2].includes(saved.version)) {
     return false;
   }
   for (const draft of state.organizationDrafts) {
@@ -2093,6 +2619,21 @@ function restoreReviewDraft() {
     }
     card.groupAction.value = storedText(value.action, 20);
     card.groupReason.value = storedText(value.reason, 500);
+    if (saved.version >= 2) {
+      card.mappingMode.value = storedText(value.mapping_mode, 30);
+      card.targetAction.value = storedText(value.target_action, 20);
+      card.targetOrganizationType.value = storedText(value.target_organization_type, 30);
+      card.targetCanonicalName.value = storedText(value.target_canonical_name, 255);
+      card.targetParentMode.value = storedText(value.target_parent_mode, 20);
+      card.targetOfficialUrl.value = storedText(value.target_official_url, 500);
+      card.targetApprovedDomains.value = storedText(value.target_approved_domains, 2000);
+      card.mappingReason.value = storedText(value.mapping_reason, 500);
+      card.savePathCorrection.checked = Boolean(value.save_path_correction);
+      card.targetTypeManuallySelected = true;
+      card.restoreIndependentTargetId = storedText(value.target_existing_id, 80) || null;
+      card.restoreIndependentParentId = storedText(value.target_parent_id, 80) || null;
+    }
+    updateIndependentPanelVisibility(card);
   }
   state.restoredRowValues.clear();
   for (const group of state.manifest.groups) {
@@ -2178,13 +2719,32 @@ function sourceUrlMatchesDomains(sourceUrl, domains) {
   return domains.some((domain) => hostMatchesDomain(hostname, domain));
 }
 
-async function collectLevels(group) {
+async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
+  if (requiredLevels.size === 0) {
+    return { levels: [], targetId: null, effectiveDomains: [] };
+  }
   const levels = [];
   let parentId = null;
   let inheritedDomains = [];
   let skippedSchool = false;
   let targetId = null;
   for (const level of LEVELS) {
+    if (!requiredLevels.has(level)) {
+      if (level === "school") {
+        skippedSchool = true;
+      }
+      levels.push({
+        level,
+        action: "skip",
+        organization_id: null,
+        organization_type: null,
+        canonical_name: null,
+        official_url: null,
+        approved_domains: [],
+        save_submitted_as_alias: false,
+      });
+      continue;
+    }
     const draft = state.organizationDraftByKey.get(group.draftKeys?.[level]);
     if (!draft) {
       if (level === "university") {
@@ -2297,11 +2857,6 @@ async function collectLevels(group) {
     inheritedDomains = effectiveDomains;
     targetId = parentId;
   }
-  for (const sourceUrl of group.source_urls) {
-    if (!sourceUrlMatchesDomains(sourceUrl, inheritedDomains)) {
-      throw new Error(`分组“${pathText(group)}”的来源域名尚未被所属机构批准`);
-    }
-  }
   return { levels, targetId, effectiveDomains: inheritedDomains };
 }
 
@@ -2409,6 +2964,40 @@ function collectIdentityResolutions(card) {
   return resolutions;
 }
 
+function validateFinalAssignmentSources(decisions) {
+  const decisionsByGroup = new Map(decisions.map((decision) => [decision.group_id, decision]));
+  for (const card of state.cards) {
+    const decision = decisionsByGroup.get(card.group.id);
+    const overrides = new Map(
+      decision.row_overrides.map((override) => [override.proposal_id, override]),
+    );
+    for (const row of card.group.rows) {
+      const override = overrides.get(row.proposal_id);
+      if (override?.action === "reject" || (!override && decision.action === "reject")) {
+        continue;
+      }
+      const targetId =
+        override?.action === "map_existing"
+          ? override.organization_id
+          : decision.target_organization_id || standardGroupTargetId(card.group);
+      const organization = state.selectableOrganizationById.get(targetId);
+      const verificationUrls = [...new Set([row.profile_url, row.source_url].filter(Boolean))];
+      if (
+        !organization ||
+        !verificationUrls.every((url) =>
+          sourceUrlMatchesDomains(url, organization.approved_domains || []),
+        )
+      ) {
+        throw new Error(
+          `${row.name}的详情页或发现来源页不属于最终机构「${
+            organization?.canonical_name || targetId || "未选择"
+          }」的官方来源域名`,
+        );
+      }
+    }
+  }
+}
+
 async function collectDecision() {
   await updateOrganizationDrafts();
   const pending = pendingOrganizationDrafts();
@@ -2416,10 +3005,26 @@ async function collectDecision() {
     focusNextPending();
     throw new Error(`还有 ${pending.length} 个机构尚未确认`);
   }
+  for (const card of state.cards) {
+    if (card.mappingMode.value === "standard") {
+      continue;
+    }
+    const error = await updateIndependentTargetCard(card, true);
+    if (error) {
+      card.targetPanel.scrollIntoView({ behavior: "smooth", block: "center" });
+      throw new Error(error);
+    }
+  }
   const decisions = [];
+  const referencedOrganizationIds = new Set();
   for (const card of state.cards) {
     const rowOverrides = collectRowOverrides(card);
     const identityResolutions = collectIdentityResolutions(card);
+    for (const override of rowOverrides) {
+      if (override.action === "map_existing") {
+        referencedOrganizationIds.add(override.organization_id);
+      }
+    }
     if (card.groupAction.value === "reject") {
       const reason = card.groupReason.value.trim();
       if (!reason) {
@@ -2430,26 +3035,73 @@ async function collectDecision() {
         action: "reject",
         reason,
         levels: [],
+        target_organization_id: null,
+        mapping_kind: "standard",
+        mapping_reason: null,
+        save_path_correction: false,
         row_overrides: rowOverrides,
         identity_resolutions: identityResolutions,
       });
       continue;
     }
+    const requiredLevels = requiredSubmittedLevelsForCard(card);
+    const levelResolution = await collectLevels(card.group, requiredLevels);
+    const corrected = card.mappingMode.value === "corrected";
+    const targetId = corrected ? card.independentTargetId : null;
+    const targetOrganization = corrected
+      ? state.selectableOrganizationById.get(targetId)
+      : null;
+    if (corrected && !targetOrganization) {
+      throw new Error(`分组“${pathText(card.group)}”没有有效的纠错目标机构`);
+    }
+    const overriddenProposalIds = new Set(
+      rowOverrides.map((override) => override.proposal_id),
+    );
+    if (
+      corrected &&
+      card.group.rows.some((row) => !overriddenProposalIds.has(row.proposal_id))
+    ) {
+      referencedOrganizationIds.add(targetId);
+    }
     decisions.push({
       group_id: card.group.id,
       action: "resolve",
       reason: null,
-      levels: (await collectLevels(card.group)).levels,
+      levels: levelResolution.levels,
+      target_organization_id: targetId,
+      mapping_kind: corrected ? mappingKindForTarget(card, targetOrganization) : "standard",
+      mapping_reason: corrected ? card.mappingReason.value.trim() : null,
+      save_path_correction: corrected ? card.savePathCorrection.checked : false,
       row_overrides: rowOverrides,
       identity_resolutions: identityResolutions,
     });
   }
+
+  const independentCreationCandidates = state.cards
+    .filter(
+      (card) =>
+        card.mappingMode.value !== "standard" &&
+        card.targetAction.value === "create" &&
+        card.independentCreation,
+    )
+    .map((card) => card.independentCreation);
+  const mergedCreations = MentorReviewLogic.mergeIndependentCreations(
+    independentCreationCandidates,
+    referencedOrganizationIds,
+  );
+  if (mergedCreations.unusedIds.length) {
+    throw new Error(
+      `备用机构尚未分配给任何导师：${mergedCreations.unusedIds.join("，")}`,
+    );
+  }
+  validateFinalAssignmentSources(decisions);
   return {
     schema_version: 1,
     kind: "batch_organization_review_decision",
     pull_request_number: state.pullNumber,
     issue_number: state.issueNumber,
     manifest_sha256: state.manifestSha256,
+    organization_creations: mergedCreations.creations,
     decisions,
   };
 }
@@ -2466,9 +3118,13 @@ function renderDecisionPreview(decision) {
       )
       .map((draft) => draft.targetId),
   );
+  for (const creation of decision.organization_creations || []) {
+    createdIds.add(creation.organization_id);
+  }
   let mappedRows = 0;
   let rejectedRows = 0;
   let adjustedRows = 0;
+  let correctedRows = 0;
   let dualAppointments = 0;
   let transfers = 0;
   const decisionByGroup = new Map(decision.decisions.map((item) => [item.group_id, item]));
@@ -2485,6 +3141,8 @@ function renderDecisionPreview(decision) {
         mappedRows += 1;
         if (override?.action === "map_existing") {
           adjustedRows += 1;
+        } else if (groupDecision.mapping_kind && groupDecision.mapping_kind !== "standard") {
+          correctedRows += 1;
         }
       }
     }
@@ -2499,6 +3157,7 @@ function renderDecisionPreview(decision) {
   const metrics = [
     ["新建机构", createdIds.size],
     ["导入导师", mappedRows],
+    ["路径纠正", correctedRows],
     ["改派导师", adjustedRows],
     ["新增双聘", dualAppointments],
     ["任职调动", transfers],
@@ -2573,9 +3232,31 @@ function validateManifest(manifest, issueNumber) {
   ) {
     throw new Error("PR 中的机构审核清单格式或 Issue 归属不正确");
   }
+  const organizationIds = new Set(
+    manifest.organizations
+      .map((organization) => organization?.id)
+      .filter((organizationId) => typeof organizationId === "string"),
+  );
   for (const group of manifest.groups) {
-    if (!group || !Array.isArray(group.rows)) {
+    if (!group || !Array.isArray(group.rows) || typeof group.submitted !== "object") {
       throw new Error("审核清单缺少有效的导师分组行");
+    }
+    const correction = group.suggested_path_correction;
+    if (correction !== undefined && correction !== null) {
+      const targetId = correction.target_organization_id;
+      if (
+        !["department_as_school", "department_as_institute", "custom"].includes(
+          correction.kind,
+        ) ||
+        !["history", "heuristic"].includes(correction.source) ||
+        typeof correction.reason !== "string" ||
+        !correction.reason.trim() ||
+        correction.reason.length > 500 ||
+        (targetId !== null &&
+          (typeof targetId !== "string" || !organizationIds.has(targetId)))
+      ) {
+        throw new Error("审核清单中的机构路径纠错建议无效");
+      }
     }
     for (const row of group.rows) {
       if (!Object.hasOwn(row || {}, "identity")) {
@@ -2719,6 +3400,11 @@ async function loadReview() {
       const restored = restoreReviewDraft();
       await updateOrganizationDrafts();
       const pending = pendingOrganizationDrafts();
+      for (const draft of state.organizationDrafts) {
+        if (!draftIsActive(draft) || draft.confirmed) {
+          draft.editor.details.open = false;
+        }
+      }
       for (const [index, draft] of pending.entries()) {
         draft.editor.details.open = restored ? draft.editor.details.open : index === 0;
       }

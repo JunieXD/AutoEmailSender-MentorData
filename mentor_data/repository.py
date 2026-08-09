@@ -653,6 +653,32 @@ def _validate_organization_review_resolutions(
         rejected = set(resolution.get("rejected_proposal_ids", []))
         if mapped & rejected:
             issues.append(f"organization review {resolution_id}: 同一提案不能同时映射和拒绝")
+        correction_paths: set[tuple[str, str, str]] = set()
+        for correction in resolution.get("path_corrections", []):
+            target_id = correction.get("target_organization_id")
+            if target_id not in organization_ids:
+                issues.append(
+                    f"organization review {resolution_id}: 路径纠错目标机构不存在：{target_id}"
+                )
+            proposal_ids = set(correction.get("proposal_ids", []))
+            if not proposal_ids.issubset(mapped):
+                issues.append(
+                    f"organization review {resolution_id}: 路径纠错引用了未映射提案"
+                )
+            submitted = correction.get("submitted", {})
+            path_key = tuple(
+                normalize_organization_key(submitted.get(level))
+                for level in ("university", "school", "department")
+            )
+            if path_key in correction_paths:
+                issues.append(f"organization review {resolution_id}: 路径纠错重复")
+            correction_paths.add(path_key)
+        for group_decision in resolution.get("decisions", []):
+            target_id = group_decision.get("target_organization_id")
+            if target_id is not None and target_id not in organization_ids:
+                issues.append(
+                    f"organization review {resolution_id}: 决策目标机构不存在：{target_id}"
+                )
 
 
 def _validate_promotion_receipts(data: RepositoryData, issues: list[str]) -> None:

@@ -46,6 +46,18 @@ LEVEL_TYPES = {
     "school": {"school", "institute"},
     "department": {"department", "center", "laboratory"},
 }
+PATH_CORRECTION_KINDS = {
+    "department_as_school",
+    "department_as_institute",
+    "custom",
+}
+PARENT_TYPES_BY_ORGANIZATION_TYPE = {
+    "school": {"university"},
+    "institute": {"university"},
+    "department": {"school", "institute"},
+    "center": {"school", "institute"},
+    "laboratory": {"school", "institute"},
+}
 ORGANIZATION_REVIEW_REASONS = {
     "unknown_organization_id",
     "unapproved_source_domain",
@@ -124,6 +136,122 @@ def _registry_digest(document: dict[str, Any]) -> str:
 def _group_id(submitted: dict[str, str | None]) -> str:
     seed = "\n".join(normalize_organization_key(submitted.get(level)) for level in LEVELS)
     return f"org_group_{hashlib.sha256(seed.encode('utf-8')).hexdigest()[:16]}"
+
+
+def _submitted_path_key(submitted: dict[str, Any]) -> tuple[str, str, str]:
+    return tuple(
+        normalize_organization_key(submitted.get(level)) for level in LEVELS
+    )  # type: ignore[return-value]
+
+
+def _active_organization_or_successor(
+    registry: OrganizationRegistry,
+    organization_id: str,
+) -> dict[str, Any] | None:
+    current_id: str | None = organization_id
+    seen: set[str] = set()
+    while current_id is not None and current_id not in seen:
+        seen.add(current_id)
+        organization = registry.by_id.get(current_id)
+        if organization is None:
+            return None
+        if organization.get("status") == "active":
+            return organization
+        successor_id = organization.get("successor_id")
+        current_id = successor_id if isinstance(successor_id, str) else None
+    return None
+
+
+def _historical_path_correction(
+    data: RepositoryData,
+    submitted: dict[str, str | None],
+) -> dict[str, Any] | None:
+    path_key = _submitted_path_key(submitted)
+    candidates: list[tuple[datetime, str, dict[str, Any]]] = []
+    for resolution in data.organization_review_resolutions:
+        decided_at = resolution.get("decided_at")
+        if not isinstance(decided_at, str):
+            continue
+        for correction in resolution.get("path_corrections", []):
+            if _submitted_path_key(correction.get("submitted", {})) != path_key:
+                continue
+            candidates.append(
+                (
+                    parse_datetime(decided_at),
+                    str(resolution.get("id", "")),
+                    correction,
+                )
+            )
+    if not candidates:
+        return None
+    correction = max(candidates, key=lambda item: (item[0], item[1]))[2]
+    target_id = correction.get("target_organization_id")
+    if not isinstance(target_id, str):
+        return None
+    target = _active_organization_or_successor(data.registry, target_id)
+    if target is None:
+        return None
+    kind = correction.get("kind")
+    reason = normalize_text(correction.get("reason"))
+    if kind not in PATH_CORRECTION_KINDS or not reason:
+        return None
+    return {
+        "kind": kind,
+        "target_organization_id": target["id"],
+        "source": "history",
+        "reason": reason,
+    }
+
+
+def _heuristic_path_correction(
+    data: RepositoryData,
+    submitted: dict[str, str | None],
+) -> dict[str, Any] | None:
+    department = normalize_text(submitted.get("department"))
+    school = normalize_text(submitted.get("school"))
+    if (
+        not department
+        or normalize_organization_key(department) == normalize_organization_key(school)
+    ):
+        return None
+    if department.endswith("研究院"):
+        kind = "department_as_institute"
+        expected_type = "institute"
+        reason = "系所字段以“研究院”结尾，疑似同校平级研究院"
+    elif department.endswith("学院"):
+        kind = "department_as_school"
+        expected_type = "school"
+        reason = "系所字段以“学院”结尾，疑似同校平级学院"
+    else:
+        return None
+
+    target_id: str | None = None
+    university = data.registry.match(
+        normalize_text(submitted.get("university")),
+        parent_id=None,
+    )
+    if university.status == "matched" and university.organization_id is not None:
+        sibling = data.registry.match(department, parent_id=university.organization_id)
+        if sibling.status == "matched" and sibling.organization_id is not None:
+            organization = data.registry.by_id[sibling.organization_id]
+            if organization.get("type") == expected_type:
+                target_id = sibling.organization_id
+    return {
+        "kind": kind,
+        "target_organization_id": target_id,
+        "source": "heuristic",
+        "reason": reason,
+    }
+
+
+def _suggested_path_correction(
+    data: RepositoryData,
+    submitted: dict[str, str | None],
+) -> dict[str, Any] | None:
+    return _historical_path_correction(data, submitted) or _heuristic_path_correction(
+        data,
+        submitted,
+    )
 
 
 def _organization_options(registry: OrganizationRegistry) -> list[dict[str, Any]]:
@@ -373,6 +501,10 @@ def create_organization_review_manifest(
                 "source_urls": sorted(group["source_urls"]),
                 "suggested_organization_id": (
                     next(iter(suggested_ids)) if len(suggested_ids) == 1 else None
+                ),
+                "suggested_path_correction": _suggested_path_correction(
+                    data,
+                    group["submitted"],
                 ),
                 "review_reasons": sorted(group["review_reasons"]),
             }
@@ -735,6 +867,192 @@ def _resolve_levels(
     return target_id, created_ids, updated_ids
 
 
+def _validate_independent_creation_references(
+    decision: dict[str, Any],
+    manifest_groups: dict[str, dict[str, Any]],
+) -> None:
+    creations = decision.get("organization_creations", [])
+    creation_by_id = {item["organization_id"]: item for item in creations}
+    if len(creation_by_id) != len(creations):
+        raise SubmissionError("独立新建机构包含重复 ID")
+    referenced_ids: set[str] = set()
+    for group_decision in decision["decisions"]:
+        group = manifest_groups[group_decision["group_id"]]
+        overrides = {
+            override["proposal_id"]: override
+            for override in group_decision["row_overrides"]
+        }
+        for override in overrides.values():
+            target_id = override.get("organization_id")
+            if override.get("action") == "map_existing" and isinstance(target_id, str):
+                referenced_ids.add(target_id)
+        target_id = group_decision.get("target_organization_id")
+        if group_decision["action"] != "resolve" or not isinstance(target_id, str):
+            continue
+        if any(
+            row["proposal_id"] not in overrides
+            for row in group["rows"]
+        ):
+            referenced_ids.add(target_id)
+
+    required_creation_ids: set[str] = set()
+    pending = [item for item in referenced_ids if item in creation_by_id]
+    while pending:
+        organization_id = pending.pop()
+        if organization_id in required_creation_ids:
+            continue
+        required_creation_ids.add(organization_id)
+        parent_id = creation_by_id[organization_id].get("parent_id")
+        if isinstance(parent_id, str) and parent_id in creation_by_id:
+            pending.append(parent_id)
+    unused = sorted(set(creation_by_id) - required_creation_ids)
+    if unused:
+        raise SubmissionError(f"独立新建机构没有被任何导师使用：{', '.join(unused)}")
+
+
+def _apply_independent_organization_creations(
+    organizations_document: dict[str, Any],
+    organizations_by_id: dict[str, dict[str, Any]],
+    creations: list[dict[str, Any]],
+    *,
+    decided_at: str,
+) -> tuple[set[str], set[str]]:
+    creation_by_id = {item["organization_id"]: item for item in creations}
+    if len(creation_by_id) != len(creations):
+        raise SubmissionError("独立新建机构包含重复 ID")
+    for organization_id, item in creation_by_id.items():
+        parent_id = item.get("parent_id")
+        organization_type = item["organization_type"]
+        canonical_name = normalize_text(item.get("canonical_name"))
+        if not canonical_name:
+            raise SubmissionError(f"新机构 {organization_id} 必须填写正式名称")
+        expected_id = _proposed_organization_id(
+            organization_type,
+            canonical_name,
+            parent_id,
+        )
+        if organization_id != expected_id:
+            raise SubmissionError(f"独立新建机构 ID 与规范字段不一致：{organization_id}")
+        if organization_type == "university" and parent_id is not None:
+            raise SubmissionError(f"新学校 {organization_id} 不能设置上级机构")
+        if organization_type != "university" and not isinstance(parent_id, str):
+            raise SubmissionError(f"新机构 {organization_id} 必须选择上级机构")
+        if (
+            isinstance(parent_id, str)
+            and parent_id not in organizations_by_id
+            and parent_id not in creation_by_id
+        ):
+            raise SubmissionError(f"新机构 {organization_id} 的上级机构不存在：{parent_id}")
+        if isinstance(parent_id, str):
+            parent = organizations_by_id.get(parent_id) or creation_by_id.get(parent_id)
+            parent_type = (
+                parent.get("type")
+                if parent is not None and "type" in parent
+                else parent.get("organization_type") if parent is not None else None
+            )
+            allowed_parent_types = PARENT_TYPES_BY_ORGANIZATION_TYPE.get(
+                organization_type,
+                set(),
+            )
+            if parent_type not in allowed_parent_types:
+                raise SubmissionError(
+                    f"新机构 {organization_id} 的上级机构类型不正确：{parent_id}"
+                )
+
+    organizations = organizations_document["organizations"]
+    pending = dict(creation_by_id)
+    created_ids: set[str] = set()
+    updated_ids: set[str] = set()
+    while pending:
+        progressed = False
+        for organization_id in sorted(pending):
+            item = pending[organization_id]
+            parent_id = item.get("parent_id")
+            if isinstance(parent_id, str) and parent_id in pending:
+                continue
+            parent = organizations_by_id.get(parent_id) if isinstance(parent_id, str) else None
+            if parent is not None and parent.get("status") != "active":
+                raise SubmissionError(f"新机构 {organization_id} 的上级机构不可用：{parent_id}")
+
+            canonical_name = normalize_text(item["canonical_name"])
+            organization_type = item["organization_type"]
+            official_url_value = normalize_text(item.get("official_url"))
+            official_url = normalized_web_url(official_url_value)
+            if official_url_value and official_url is None:
+                raise SubmissionError(f"新机构 {organization_id} 的官网地址无效")
+            approved_domains = sorted(
+                {_normalize_domain(value) for value in item.get("approved_domains", [])}
+            )
+            if organization_type == "university" and official_url is None:
+                raise SubmissionError(f"新学校 {organization_id} 必须填写官方网站")
+            if organization_type == "university" and not approved_domains:
+                raise SubmissionError(f"新学校 {organization_id} 必须填写官方来源域名")
+
+            same_name = [
+                organization
+                for organization in organizations
+                if organization.get("status") == "active"
+                and organization.get("parent_id") == parent_id
+                and normalize_organization_key(organization.get("canonical_name"))
+                == normalize_organization_key(canonical_name)
+            ]
+            if len(same_name) > 1:
+                raise SubmissionError(f"新机构 {organization_id} 的同级正式名称存在歧义")
+            if same_name and same_name[0]["id"] != organization_id:
+                raise SubmissionError(
+                    f"同级已存在正式名称为“{canonical_name}”的机构；请直接选择现有机构"
+                )
+
+            existing = organizations_by_id.get(organization_id)
+            if existing is None:
+                organization = {
+                    "id": organization_id,
+                    "type": organization_type,
+                    "canonical_name": canonical_name,
+                    "parent_id": parent_id,
+                    "aliases": [],
+                    "official_urls": [official_url] if official_url is not None else [],
+                    "approved_domains": approved_domains,
+                    "status": "active",
+                    "successor_id": None,
+                    "created_at": decided_at,
+                    "updated_at": decided_at,
+                }
+                organizations.append(organization)
+                organizations_by_id[organization_id] = organization
+                created_ids.add(organization_id)
+            else:
+                expected = {
+                    "type": organization_type,
+                    "canonical_name": canonical_name,
+                    "parent_id": parent_id,
+                    "status": "active",
+                }
+                if any(existing.get(key) != value for key, value in expected.items()):
+                    raise SubmissionError(f"独立新建机构与现有记录冲突：{organization_id}")
+                if _merge_organization_metadata(
+                    existing,
+                    official_url=official_url,
+                    approved_domains=approved_domains,
+                    submitted_name=canonical_name,
+                    save_submitted_as_alias=False,
+                    decided_at=decided_at,
+                ):
+                    updated_ids.add(organization_id)
+
+            registry = OrganizationRegistry(organizations)
+            if official_url is not None and not registry.url_is_approved(
+                official_url,
+                organization_id,
+            ):
+                raise SubmissionError(f"新机构 {organization_id} 的官网不属于批准域名")
+            pending.pop(organization_id)
+            progressed = True
+        if not progressed:
+            raise SubmissionError("独立新建机构的上级关系存在循环")
+    return created_ids, updated_ids
+
+
 def _candidate_repository_data(
     source_data: RepositoryData,
     organizations_document: dict[str, Any],
@@ -969,6 +1287,7 @@ def apply_organization_review(
     base_targets: dict[str, str | None] = {}
     overrides_by_group: dict[str, dict[str, dict[str, Any]]] = {}
     identity_resolutions_by_group: dict[str, dict[str, dict[str, Any]]] = {}
+    _validate_independent_creation_references(decision, manifest_groups)
 
     # Resolve every institution first. A mentor can then be reassigned to an institution
     # created by another group in the same review, regardless of group sort order.
@@ -994,18 +1313,76 @@ def apply_organization_review(
 
         base_target: str | None = None
         if group_decision["action"] == "resolve":
-            base_target, created, updated = _resolve_levels(
-                organizations_document,
-                organizations_by_id,
-                group["submitted"],
-                group_decision["levels"],
-                decided_at=decided_at,
-            )
-            created_organization_ids.update(created)
-            updated_organization_ids.update(updated)
+            levels = group_decision["levels"]
+            if levels:
+                base_target, created, updated = _resolve_levels(
+                    organizations_document,
+                    organizations_by_id,
+                    group["submitted"],
+                    levels,
+                    decided_at=decided_at,
+                )
+                created_organization_ids.update(created)
+                updated_organization_ids.update(updated)
+            elif not isinstance(group_decision.get("target_organization_id"), str):
+                raise SubmissionError(f"分组 {group_id} 没有机构层级或独立最终机构")
         elif not normalize_text(group_decision.get("reason")):
             raise SubmissionError(f"拒绝分组 {group_id} 时必须填写原因")
         base_targets[group_id] = base_target
+
+    created, updated = _apply_independent_organization_creations(
+        organizations_document,
+        organizations_by_id,
+        decision.get("organization_creations", []),
+        decided_at=decided_at,
+    )
+    created_organization_ids.update(created)
+    updated_organization_ids.update(updated)
+
+    final_targets: dict[str, str | None] = {}
+    for group_id in sorted(manifest_groups):
+        group_decision = decision_groups[group_id]
+        if group_decision["action"] == "reject":
+            if group_decision.get("target_organization_id") is not None:
+                raise SubmissionError(f"被拒绝的分组 {group_id} 不能设置最终机构")
+            if group_decision.get("save_path_correction") is True:
+                raise SubmissionError(f"被拒绝的分组 {group_id} 不能保存路径纠错")
+            final_targets[group_id] = None
+            continue
+
+        base_target = base_targets[group_id]
+        requested_target = group_decision.get("target_organization_id")
+        final_target = requested_target if isinstance(requested_target, str) else base_target
+        organization = organizations_by_id.get(final_target)
+        if organization is None or organization.get("status") != "active":
+            raise SubmissionError(f"分组 {group_id} 的最终机构不存在或不可用：{final_target}")
+        mapping_kind = group_decision.get("mapping_kind", "standard")
+        mapping_reason = normalize_text(group_decision.get("mapping_reason"))
+        save_path_correction = group_decision.get("save_path_correction", False)
+        if mapping_kind == "standard":
+            if final_target != base_target:
+                raise SubmissionError(f"分组 {group_id} 的标准映射不能绕过已确认层级")
+            if save_path_correction:
+                raise SubmissionError(f"分组 {group_id} 的标准映射不需要保存路径纠错")
+        else:
+            if mapping_kind not in PATH_CORRECTION_KINDS:
+                raise SubmissionError(f"分组 {group_id} 的路径纠错类型无效")
+            if not isinstance(requested_target, str):
+                raise SubmissionError(f"分组 {group_id} 的路径纠错必须明确最终机构")
+            if not mapping_reason:
+                raise SubmissionError(f"分组 {group_id} 的路径纠错必须填写审核依据")
+            expected_target_type = {
+                "department_as_school": "school",
+                "department_as_institute": "institute",
+            }.get(mapping_kind)
+            if (
+                expected_target_type is not None
+                and organization.get("type") != expected_target_type
+            ):
+                raise SubmissionError(
+                    f"分组 {group_id} 的路径纠错类型与最终机构不一致"
+                )
+        final_targets[group_id] = final_target
 
     pending_target_organization_ids: dict[str, str] = {}
     for group_id, group in manifest_groups.items():
@@ -1023,7 +1400,7 @@ def apply_organization_review(
             elif group_decision["action"] == "reject":
                 continue
             else:
-                target_id = base_targets[group_id]
+                target_id = final_targets[group_id]
             if isinstance(target_id, str):
                 pending_target_organization_ids[proposed_mentor_id(proposal)] = target_id
 
@@ -1032,7 +1409,7 @@ def apply_organization_review(
         group_decision = decision_groups[group_id]
         overrides = overrides_by_group[group_id]
         identity_resolutions = identity_resolutions_by_group[group_id]
-        base_target = base_targets[group_id]
+        final_target = final_targets[group_id]
         for row in group["rows"]:
             proposal_id = row["proposal_id"]
             override = overrides.get(proposal_id)
@@ -1057,7 +1434,7 @@ def apply_organization_review(
                 rejected_ids.add(proposal_id)
                 continue
             else:
-                target_id = base_target
+                target_id = final_target
             if not isinstance(target_id, str):
                 raise SubmissionError(f"提案 {proposal_id} 没有最终机构")
             proposal = proposals_by_id[proposal_id]
@@ -1184,6 +1561,50 @@ def apply_organization_review(
     ]
     _validate_affiliation_resolution_plan(planned_affiliation_resolutions)
 
+    path_corrections: list[dict[str, Any]] = []
+    for group_id in sorted(manifest_groups):
+        group = manifest_groups[group_id]
+        group_decision = decision_groups[group_id]
+        mapping_kind = group_decision.get("mapping_kind", "standard")
+        if (
+            group_decision["action"] != "resolve"
+            or mapping_kind == "standard"
+            or group_decision.get("save_path_correction") is not True
+        ):
+            continue
+        target_id = final_targets[group_id]
+        if not isinstance(target_id, str):
+            continue
+        overrides = overrides_by_group[group_id]
+        corrected_rows = [
+            row
+            for row in group["rows"]
+            if row["proposal_id"] not in rejected_ids
+            and (
+                row["proposal_id"] not in overrides
+                or overrides[row["proposal_id"]].get("organization_id") == target_id
+            )
+        ]
+        proposal_ids = [row["proposal_id"] for row in corrected_rows]
+        if not proposal_ids:
+            continue
+        source_domains = {
+            hostname_for_url(source_url)
+            for row in corrected_rows
+            for source_url in (row.get("source_url"), row.get("profile_url"))
+            if isinstance(source_url, str) and source_url
+        }
+        path_corrections.append(
+            {
+                "submitted": copy.deepcopy(group["submitted"]),
+                "target_organization_id": target_id,
+                "kind": mapping_kind,
+                "reason": normalize_text(group_decision["mapping_reason"]),
+                "proposal_ids": sorted(proposal_ids),
+                "source_domains": sorted(source_domains),
+            }
+        )
+
     for proposal_id in rejected_ids:
         proposals_by_id.pop(proposal_id)
         proposal_paths_by_id.pop(proposal_id)
@@ -1227,6 +1648,10 @@ def apply_organization_review(
         "mapped_proposal_ids": sorted(mapped_ids),
         "rejected_proposal_ids": sorted(rejected_ids),
         "invalid_rows": sorted(item["batch_row"] for item in manifest["invalid_rows"]),
+        "organization_creations": copy.deepcopy(
+            decision.get("organization_creations", [])
+        ),
+        "path_corrections": path_corrections,
         "decisions": copy.deepcopy(decision["decisions"]),
     }
     _validate_schema(

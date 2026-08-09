@@ -7,6 +7,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
+    assert '<script src="review-logic.js" defer></script>' in html
     assert '<script src="review.js" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
@@ -133,6 +134,25 @@ def test_review_accepts_pending_affiliation_labels_for_new_batch_mentors() -> No
     assert "hasPendingOrganization" in script
     assert "affiliation?.organization_id === null" in script
     assert "affiliation.organization_label.trim().length > 0" in script
+
+
+def test_review_supports_path_correction_and_independent_targets() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+    logic = (PROJECT_ROOT / "site" / "review-logic.js").read_text(encoding="utf-8")
+    styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+
+    assert "suggested_path_correction" in script
+    assert "纠正整组最终归属" in script
+    assert "只准备备用目标" in script
+    assert "organization_creations" in script
+    assert "target_organization_id" in script
+    assert "save_path_correction" in script
+    assert "validateFinalAssignmentSources" in script
+    assert "correctionDefaults" in logic
+    assert "requiredSubmittedLevels" in logic
+    assert "mergeIndependentCreations" in logic
+    assert ".independent-target-panel" in styles
+    assert ".path-correction-notice" in styles
 
 
 def test_public_home_page_prioritizes_using_contributing_and_correcting_data() -> None:

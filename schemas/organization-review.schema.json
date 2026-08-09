@@ -127,6 +127,26 @@
         "observed_at": { "type": "string", "format": "date-time" }
       }
     },
+    "pathCorrectionSuggestion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "target_organization_id", "source", "reason"],
+      "properties": {
+        "kind": {
+          "enum": [
+            "department_as_school",
+            "department_as_institute",
+            "custom"
+          ]
+        },
+        "target_organization_id": {
+          "type": ["string", "null"],
+          "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+        },
+        "source": { "enum": ["history", "heuristic"] },
+        "reason": { "type": "string", "minLength": 1, "maxLength": 500 }
+      }
+    },
     "group": {
       "type": "object",
       "additionalProperties": false,
@@ -156,6 +176,12 @@
         "suggested_organization_id": {
           "type": ["string", "null"],
           "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$"
+        },
+        "suggested_path_correction": {
+          "oneOf": [
+            { "$ref": "#/$defs/pathCorrectionSuggestion" },
+            { "type": "null" }
+          ]
         },
         "review_reasons": {
           "type": "array",

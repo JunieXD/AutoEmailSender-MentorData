@@ -12,7 +12,7 @@ from mentor_data.batch import create_batch_proposals
 from mentor_data.builder import build_dataset
 from mentor_data.errors import SubmissionError
 from mentor_data.github_events import GitHubActor, load_issue_event
-from mentor_data.io_utils import load_json, load_yaml
+from mentor_data.io_utils import load_json, load_yaml, write_yaml_atomic
 from mentor_data.organization_review import (
     GITHUB_COMMENT_CHARACTER_LIMIT,
     REVIEW_COMMENT_MARKER,
@@ -176,14 +176,45 @@ def _skip(level: str):
     }
 
 
-def _decision(number: int, manifest_path: Path, decisions: list[dict]):
-    return {
+def _decision(
+    number: int,
+    manifest_path: Path,
+    decisions: list[dict],
+    *,
+    organization_creations: list[dict] | None = None,
+):
+    payload = {
         "schema_version": 1,
         "kind": "batch_organization_review_decision",
         "pull_request_number": 88,
         "issue_number": number,
         "manifest_sha256": hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
         "decisions": decisions,
+    }
+    if organization_creations is not None:
+        payload["organization_creations"] = organization_creations
+    return payload
+
+
+def _independent_creation(
+    organization_type: str,
+    canonical_name: str,
+    parent_id: str | None,
+    *,
+    official_url: str | None = None,
+    approved_domains: list[str] | None = None,
+) -> dict:
+    return {
+        "organization_id": _proposed_organization_id(
+            organization_type,
+            canonical_name,
+            parent_id,
+        ),
+        "organization_type": organization_type,
+        "canonical_name": canonical_name,
+        "parent_id": parent_id,
+        "official_url": official_url,
+        "approved_domains": approved_domains or [],
     }
 
 
@@ -361,6 +392,800 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
     resolution = load_json(root / "reviews" / "resolutions" / "batch-issue-30.json")
     assert resolution["reviewer"]["github_user_id"] == 999
     assert resolution["rejected_proposal_ids"] == [rejected_id]
+
+
+def test_manifest_suggests_department_ending_in_school_as_sibling_school(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, _ = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "层级老师",
+                "level@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/level",
+                department="人工智能学院",
+            )
+        ],
+        number=35,
+    )
+
+    suggestion = manifest["groups"][0]["suggested_path_correction"]
+
+    assert suggestion == {
+        "kind": "department_as_school",
+        "target_organization_id": None,
+        "source": "heuristic",
+        "reason": "系所字段以“学院”结尾，疑似同校平级学院",
+    }
+
+
+def test_manifest_does_not_suggest_sibling_when_school_and_department_are_same(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, _ = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "同层老师",
+                "same@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/same",
+                department="计算机学院",
+            )
+        ],
+        number=36,
+    )
+
+    assert manifest["groups"][0]["suggested_path_correction"] is None
+
+
+def test_manifest_suggests_department_ending_in_institute_as_sibling_institute(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, _ = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "研究院老师",
+                "institute@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/institute",
+                department="智能科学研究院",
+            )
+        ],
+        number=41,
+    )
+
+    assert manifest["groups"][0]["suggested_path_correction"] == {
+        "kind": "department_as_institute",
+        "target_organization_id": None,
+        "source": "heuristic",
+        "reason": "系所字段以“研究院”结尾，疑似同校平级研究院",
+    }
+
+
+def test_review_creates_sibling_school_and_reuses_saved_path_correction(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "层级老师",
+                "level@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/level",
+                department="人工智能学院",
+            )
+        ],
+        number=37,
+    )
+    group = manifest["groups"][0]
+    creation = _independent_creation(
+        "school",
+        "人工智能学院",
+        "org_example_university",
+    )
+    target_id = creation["organization_id"]
+    decision = _decision(
+        37,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _existing("university", "org_example_university"),
+                    _skip("school"),
+                    _skip("department"),
+                ],
+                "target_organization_id": target_id,
+                "mapping_kind": "department_as_school",
+                "mapping_reason": "官网显示该导师属于同校人工智能学院。",
+                "save_path_correction": True,
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        ],
+        organization_creations=[creation],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.created_organizations == 1
+    proposal = load_json(result.paths[0])
+    assert proposal["accepted"]["organization_id"] == target_id
+    registry = load_yaml(root / "registry" / "organizations.yml")
+    created = next(item for item in registry["organizations"] if item["id"] == target_id)
+    assert created["type"] == "school"
+    assert created["parent_id"] == "org_example_university"
+    assert "人工智能学院" not in next(
+        item
+        for item in registry["organizations"]
+        if item["id"] == "org_example_cs"
+    )["aliases"]
+    resolution = load_json(root / "reviews" / "resolutions" / "batch-issue-37.json")
+    assert resolution["path_corrections"] == [
+        {
+            "submitted": {
+                "university": "示例大学",
+                "school": "计算机学院",
+                "department": "人工智能学院",
+            },
+            "target_organization_id": target_id,
+            "kind": "department_as_school",
+            "reason": "官网显示该导师属于同校人工智能学院。",
+            "proposal_ids": [group["rows"][0]["proposal_id"]],
+            "source_domains": ["cs.example.edu"],
+        }
+    ]
+    finalize_proposal_set(root, list(result.paths), moderator_github_user_id=999)
+
+    second_result, second_manifest, second_manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "后续老师",
+                "later@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/later",
+                department="人工智能学院",
+            )
+        ],
+        number=38,
+    )
+    second_group = second_manifest["groups"][0]
+    assert second_group["suggested_path_correction"] == {
+        "kind": "department_as_school",
+        "target_organization_id": target_id,
+        "source": "history",
+        "reason": "官网显示该导师属于同校人工智能学院。",
+    }
+    second_decision = _decision(
+        38,
+        second_manifest_path,
+        [
+            {
+                "group_id": second_group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "target_organization_id": target_id,
+                "mapping_kind": "department_as_school",
+                "mapping_reason": "沿用此前审核确认的完整路径纠错。",
+                "save_path_correction": True,
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        ],
+        organization_creations=[],
+    )
+    second_comment, second_pull = _review_context(root, tmp_path, second_decision)
+
+    second_applied = apply_organization_review(root, second_comment, second_pull)
+
+    assert second_applied.created_organizations == 0
+    assert load_json(second_result.paths[0])["accepted"]["organization_id"] == target_id
+
+
+def test_independent_school_can_be_used_only_for_a_row_override(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "甲老师",
+                "a@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/a",
+                department="人工智能学院",
+            ),
+            _row(
+                "乙老师",
+                "b@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/b",
+                department="人工智能学院",
+            ),
+        ],
+        number=39,
+    )
+    group = manifest["groups"][0]
+    creation = _independent_creation(
+        "school",
+        "人工智能学院",
+        "org_example_university",
+    )
+    target_id = creation["organization_id"]
+    overridden_id = group["rows"][1]["proposal_id"]
+    decision = _decision(
+        39,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _existing("university", "org_example_university"),
+                    _existing("school", "org_example_cs"),
+                    _skip("department"),
+                ],
+                "row_overrides": [
+                    {
+                        "proposal_id": overridden_id,
+                        "action": "map_existing",
+                        "organization_id": target_id,
+                        "reason": None,
+                    }
+                ],
+                "identity_resolutions": [],
+            }
+        ],
+        organization_creations=[creation],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    apply_organization_review(root, comment, pull)
+
+    proposals = [load_json(path) for path in result.paths]
+    assert {item["id"]: item["accepted"]["organization_id"] for item in proposals} == {
+        group["rows"][0]["proposal_id"]: "org_example_cs",
+        overridden_id: target_id,
+    }
+    resolution = load_json(root / "reviews" / "resolutions" / "batch-issue-39.json")
+    assert resolution["path_corrections"] == []
+
+
+def test_review_rejects_unused_or_forged_independent_organizations(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "安全老师",
+                "safe@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/safe",
+            )
+        ],
+        number=40,
+    )
+    group = manifest["groups"][0]
+    base_group_decision = {
+        "group_id": group["id"],
+        "action": "resolve",
+        "reason": None,
+        "levels": [
+            _existing("university", "org_example_university"),
+            _existing("school", "org_example_cs"),
+            _skip("department"),
+        ],
+        "row_overrides": [],
+        "identity_resolutions": [],
+    }
+    unused = _independent_creation(
+        "school",
+        "未使用学院",
+        "org_example_university",
+    )
+    unused_decision = _decision(
+        40,
+        manifest_path,
+        [base_group_decision],
+        organization_creations=[unused],
+    )
+    unused_comment, unused_pull = _review_context(root, tmp_path, unused_decision)
+
+    with pytest.raises(SubmissionError, match="没有被任何导师使用"):
+        apply_organization_review(root, unused_comment, unused_pull)
+
+    forged = _independent_creation(
+        "school",
+        "伪造学院",
+        "org_example_university",
+    )
+    forged["organization_id"] = "org_forged_school"
+    forged_group = {
+        **base_group_decision,
+        "target_organization_id": "org_forged_school",
+        "mapping_kind": "custom",
+        "mapping_reason": "测试伪造 ID。",
+        "save_path_correction": False,
+    }
+    forged_decision = _decision(
+        40,
+        manifest_path,
+        [forged_group],
+        organization_creations=[forged],
+    )
+    forged_comment, forged_pull = _review_context(root, tmp_path, forged_decision)
+
+    with pytest.raises(SubmissionError, match="ID 与规范字段不一致"):
+        apply_organization_review(root, forged_comment, forged_pull)
+
+    blank_name = _independent_creation("school", " ", "org_example_university")
+    blank_group = {
+        **base_group_decision,
+        "target_organization_id": blank_name["organization_id"],
+        "mapping_kind": "custom",
+        "mapping_reason": "测试空白名称。",
+        "save_path_correction": False,
+    }
+    blank_decision = _decision(
+        40,
+        manifest_path,
+        [blank_group],
+        organization_creations=[blank_name],
+    )
+    blank_comment, blank_pull = _review_context(root, tmp_path, blank_decision)
+
+    with pytest.raises(SubmissionError, match="必须填写正式名称"):
+        apply_organization_review(root, blank_comment, blank_pull)
+
+
+def test_historical_path_correction_follows_merged_organization_successor(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "历史老师",
+                "history@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/history",
+                department="人工智能学院",
+            )
+        ],
+        number=42,
+    )
+    group = manifest["groups"][0]
+    creation = _independent_creation(
+        "school",
+        "人工智能学院",
+        "org_example_university",
+    )
+    original_target = creation["organization_id"]
+    decision = _decision(
+        42,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "target_organization_id": original_target,
+                "mapping_kind": "department_as_school",
+                "mapping_reason": "官网确认该导师属于平级学院。",
+                "save_path_correction": True,
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        ],
+        organization_creations=[creation],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+    apply_organization_review(root, comment, pull)
+    finalize_proposal_set(root, list(result.paths), moderator_github_user_id=999)
+
+    organizations_document = load_yaml(root / "registry" / "organizations.yml")
+    successor_id = "org_example_intelligence_school"
+    original = next(
+        item
+        for item in organizations_document["organizations"]
+        if item["id"] == original_target
+    )
+    original["status"] = "merged"
+    original["successor_id"] = successor_id
+    original["updated_at"] = "2026-08-04T00:00:00Z"
+    organizations_document["organizations"].append(
+        {
+            "id": successor_id,
+            "type": "school",
+            "canonical_name": "智能科学学院",
+            "parent_id": "org_example_university",
+            "aliases": [],
+            "official_urls": [],
+            "approved_domains": [],
+            "status": "active",
+            "successor_id": None,
+            "created_at": "2026-08-04T00:00:00Z",
+            "updated_at": "2026-08-04T00:00:00Z",
+        }
+    )
+    write_yaml_atomic(root / "registry" / "organizations.yml", organizations_document)
+    load_repository(root, validate=True)
+
+    _, next_manifest, _ = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "后续老师",
+                "successor@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/successor",
+                department="人工智能学院",
+            )
+        ],
+        number=43,
+    )
+
+    assert next_manifest["groups"][0]["suggested_path_correction"] == {
+        "kind": "department_as_school",
+        "target_organization_id": successor_id,
+        "source": "history",
+        "reason": "官网确认该导师属于平级学院。",
+    }
+
+
+def test_review_rejects_invalid_path_correction_combinations(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "决策老师",
+                "decision@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/decision",
+            )
+        ],
+        number=44,
+    )
+    group = manifest["groups"][0]
+    cases = [
+        (
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "row_overrides": [],
+                "identity_resolutions": [],
+            },
+            "没有机构层级或独立最终机构",
+        ),
+        (
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "target_organization_id": "org_example_cs",
+                "mapping_kind": "custom",
+                "mapping_reason": None,
+                "save_path_correction": False,
+                "row_overrides": [],
+                "identity_resolutions": [],
+            },
+            "必须填写审核依据",
+        ),
+        (
+            {
+                "group_id": group["id"],
+                "action": "reject",
+                "reason": "来源不足。",
+                "levels": [],
+                "target_organization_id": None,
+                "mapping_kind": "custom",
+                "mapping_reason": "不应保存。",
+                "save_path_correction": True,
+                "row_overrides": [],
+                "identity_resolutions": [],
+            },
+            "不能保存路径纠错",
+        ),
+    ]
+    for group_decision, expected_error in cases:
+        decision = _decision(44, manifest_path, [group_decision])
+        comment, pull = _review_context(root, tmp_path, decision)
+        with pytest.raises(SubmissionError, match=expected_error):
+            apply_organization_review(root, comment, pull)
+
+
+def test_review_rejects_wrong_independent_parent_and_creation_without_mapped_mentor(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "安全边界老师",
+                "edge@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/edge",
+                department="边界学院",
+            )
+        ],
+        number=45,
+    )
+    group = manifest["groups"][0]
+    wrong_parent = _independent_creation("school", "边界学院", "org_example_cs")
+    wrong_parent_decision = _decision(
+        45,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "target_organization_id": wrong_parent["organization_id"],
+                "mapping_kind": "department_as_school",
+                "mapping_reason": "测试错误上级。",
+                "save_path_correction": False,
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        ],
+        organization_creations=[wrong_parent],
+    )
+    comment, pull = _review_context(root, tmp_path, wrong_parent_decision)
+    with pytest.raises(SubmissionError, match="上级机构类型不正确"):
+        apply_organization_review(root, comment, pull)
+
+    unused = _independent_creation("school", "边界学院", "org_example_university")
+    proposal_id = group["rows"][0]["proposal_id"]
+    unused_decision = _decision(
+        45,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "target_organization_id": unused["organization_id"],
+                "mapping_kind": "department_as_school",
+                "mapping_reason": "所有导师都拒绝时不应创建。",
+                "save_path_correction": True,
+                "row_overrides": [
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "reject",
+                        "organization_id": None,
+                        "reason": "该导师证据不足。",
+                    }
+                ],
+                "identity_resolutions": [],
+            }
+        ],
+        organization_creations=[unused],
+    )
+    comment, pull = _review_context(root, tmp_path, unused_decision)
+    with pytest.raises(SubmissionError, match="没有被任何导师使用"):
+        apply_organization_review(root, comment, pull)
+
+
+def test_review_validates_source_domains_against_each_mentor_final_target(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "域名老师",
+                "domain@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/domain",
+            )
+        ],
+        number=46,
+    )
+    group = manifest["groups"][0]
+    decision = _decision(
+        46,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "target_organization_id": "org_sample_ai",
+                "mapping_kind": "custom",
+                "mapping_reason": "故意选择不匹配的学院。",
+                "save_path_correction": False,
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    with pytest.raises(SubmissionError, match="官方来源不属于所选机构"):
+        apply_organization_review(root, comment, pull)
+
+
+def test_multiple_groups_reuse_one_independent_school_without_duplicate_creation(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "复用甲老师",
+                "reuse-a@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/reuse-a",
+                department="智能学院",
+            ),
+            _row(
+                "复用乙老师",
+                "reuse-b@example.edu",
+                "示例大学",
+                "电子学院",
+                "https://faculty.example.edu/reuse-b",
+                department="智能学院",
+            ),
+        ],
+        number=47,
+    )
+    creation = _independent_creation("school", "智能学院", "org_example_university")
+    target_id = creation["organization_id"]
+    decisions = [
+        {
+            "group_id": group["id"],
+            "action": "resolve",
+            "reason": None,
+            "levels": [],
+            "target_organization_id": target_id,
+            "mapping_kind": "department_as_school",
+            "mapping_reason": "官网显示属于同一平级学院。",
+            "save_path_correction": True,
+            "row_overrides": [],
+            "identity_resolutions": [],
+        }
+        for group in manifest["groups"]
+    ]
+    comment, pull = _review_context(
+        root,
+        tmp_path,
+        _decision(47, manifest_path, decisions, organization_creations=[creation]),
+    )
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.created_organizations == 1
+    assert {
+        load_json(path)["accepted"]["organization_id"]
+        for path in result.paths
+    } == {target_id}
+    resolution = load_json(root / "reviews" / "resolutions" / "batch-issue-47.json")
+    assert resolution["organization_creations"] == [creation]
+    assert len(resolution["path_corrections"]) == 2
+
+
+def test_corrected_group_target_drives_existing_mentor_affiliation_resolution(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "示例导师",
+                "mentor@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/mentor-ai",
+                department="人工智能学院",
+            )
+        ],
+        number=48,
+    )
+    group = manifest["groups"][0]
+    proposal_id = group["rows"][0]["proposal_id"]
+    assert group["rows"][0]["identity"]["requires_resolution"] is True
+    creation = _independent_creation(
+        "school",
+        "人工智能学院",
+        "org_example_university",
+    )
+    target_id = creation["organization_id"]
+    decision = _decision(
+        48,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [],
+                "target_organization_id": target_id,
+                "mapping_kind": "department_as_school",
+                "mapping_reason": "官网显示导师已任职于平级人工智能学院。",
+                "save_path_correction": True,
+                "row_overrides": [],
+                "identity_resolutions": [
+                    {
+                        "proposal_id": proposal_id,
+                        "action": "append_current_affiliation",
+                        "make_primary": False,
+                        "former_affiliation_id": None,
+                        "reason": "官网保留原学院职位并列出新学院任职。",
+                    }
+                ],
+            }
+        ],
+        organization_creations=[creation],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    apply_organization_review(root, comment, pull)
+
+    proposal = load_json(result.paths[0])
+    assert proposal["accepted"]["organization_id"] == target_id
+    assert proposal["affiliation_resolution"] == {
+        "action": "append_current_affiliation",
+        "organization_id": target_id,
+        "make_primary": False,
+        "former_affiliation_id": None,
+        "reason": "官网保留原学院职位并列出新学院任职。",
+    }
 
 
 def test_manifest_shows_existing_mentor_and_current_affiliations_for_safe_conflict(

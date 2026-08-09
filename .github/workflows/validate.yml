@@ -24,6 +24,11 @@ jobs:
           version: "0.11.26"
           enable-cache: true
 
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24"
+
       - name: Install locked dependencies
         run: uv sync --locked --dev
 
@@ -32,6 +37,9 @@ jobs:
 
       - name: Run tests
         run: uv run pytest
+
+      - name: Test reviewer browser logic
+        run: node --test tests/review-logic.test.js
 
       - name: Validate repository data
         run: uv run mentor-data validate

@@ -11,6 +11,11 @@
     "pull_request_number": { "type": "integer", "minimum": 1 },
     "issue_number": { "type": "integer", "minimum": 1 },
     "manifest_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "organization_creations": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": { "$ref": "#/$defs/organizationCreation" }
+    },
     "decisions": {
       "type": "array",
       "items": { "$ref": "#/$defs/groupDecision" }
@@ -19,6 +24,27 @@
   "$defs": {
     "organizationId": { "type": "string", "pattern": "^org_[a-z0-9][a-z0-9_-]{2,63}$" },
     "webUrl": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
+    "organizationCreation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["organization_id", "organization_type", "canonical_name", "parent_id", "official_url", "approved_domains"],
+      "properties": {
+        "organization_id": { "$ref": "#/$defs/organizationId" },
+        "organization_type": { "enum": ["university", "school", "institute", "department", "center", "laboratory"] },
+        "canonical_name": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "parent_id": {
+          "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }]
+        },
+        "official_url": {
+          "oneOf": [{ "$ref": "#/$defs/webUrl" }, { "type": "null" }]
+        },
+        "approved_domains": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 253 },
+          "uniqueItems": true
+        }
+      }
+    },
     "levelDecision": {
       "type": "object",
       "additionalProperties": false,
@@ -138,13 +164,30 @@
         "action": { "enum": ["resolve", "reject"] },
         "reason": { "type": ["string", "null"], "maxLength": 500 },
         "levels": { "type": "array", "maxItems": 3, "items": { "$ref": "#/$defs/levelDecision" } },
+        "target_organization_id": {
+          "oneOf": [{ "$ref": "#/$defs/organizationId" }, { "type": "null" }]
+        },
+        "mapping_kind": {
+          "enum": ["standard", "department_as_school", "department_as_institute", "custom"]
+        },
+        "mapping_reason": { "type": ["string", "null"], "maxLength": 500 },
+        "save_path_correction": { "type": "boolean" },
         "row_overrides": { "type": "array", "items": { "$ref": "#/$defs/rowOverride" } },
         "identity_resolutions": { "type": "array", "items": { "$ref": "#/$defs/identityResolution" } }
       },
       "allOf": [
         {
           "if": { "properties": { "action": { "const": "resolve" } } },
-          "then": { "properties": { "levels": { "minItems": 3, "maxItems": 3 } } }
+          "then": {
+            "properties": {
+              "levels": {
+                "oneOf": [
+                  { "maxItems": 0 },
+                  { "minItems": 3, "maxItems": 3 }
+                ]
+              }
+            }
+          }
         },
         {
           "if": { "properties": { "action": { "const": "reject" } } },
