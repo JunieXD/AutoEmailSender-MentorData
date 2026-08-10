@@ -2707,6 +2707,11 @@ footer a {
   color: #9a3412;
 }
 
+.record-conflict-badge {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
 .source-links {
   margin-top: 0.5rem;
   color: #78716c;
@@ -3137,6 +3142,17 @@ textarea:focus {
   background: linear-gradient(135deg, #fffaf2, #fff 72%);
 }
 
+.record-conflicts {
+  margin-top: 0.7rem;
+  padding: 0.75rem;
+  border: 1px solid #fb923c;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #fff7ed, #fff 72%);
+}
+
+.record-conflicts-heading,
+.record-conflict-heading,
+.record-conflicts-list,
 .identity-conflicts-heading,
 .identity-resolution-heading,
 .identity-resolution-controls,
@@ -3150,6 +3166,28 @@ textarea:focus {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: baseline;
   margin-bottom: 0.35rem;
+}
+
+.record-conflicts-heading,
+.record-conflict-heading {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+}
+
+.record-conflicts-heading {
+  margin-bottom: 0.35rem;
+}
+
+.record-conflicts-heading strong,
+.record-conflict-heading strong {
+  color: #9a3412;
+  font-size: 0.84rem;
+}
+
+.record-conflicts-heading span,
+.record-conflict-heading span {
+  color: #78716c;
+  font-size: 0.72rem;
 }
 
 .identity-conflicts-heading strong {
@@ -3167,6 +3205,10 @@ textarea:focus {
   gap: 0.65rem;
 }
 
+.record-conflicts-list {
+  gap: 0.65rem;
+}
+
 .row-editor {
   align-items: center;
   padding: 0.38rem 0;
@@ -3174,9 +3216,60 @@ textarea:focus {
   font-size: 0.8rem;
 }
 
-.row-editor.has-identity-resolution {
+.row-editor.has-identity-resolution,
+.row-editor.has-record-conflict {
   flex-wrap: wrap;
   align-items: flex-start;
+}
+
+.record-conflict {
+  width: 100%;
+  flex-basis: 100%;
+  margin-top: 0.15rem;
+  padding: 0.7rem;
+  border: 1px solid #fed7aa;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: inset 0.2rem 0 0 #f97316;
+}
+
+.record-conflict-note {
+  margin: 0.18rem 0 0;
+  color: #78716c;
+  font-size: 0.72rem;
+}
+
+.record-conflict-comparison {
+  margin-top: 0.5rem;
+}
+
+.record-conflict-values {
+  display: grid;
+  gap: 0.28rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.record-conflict-empty {
+  color: #a8a29e;
+}
+
+.record-conflict-replace {
+  margin-top: 0.65rem;
+}
+
+.record-conflict[data-state="replacement"] {
+  border-color: #86efac;
+  box-shadow: inset 0.2rem 0 0 #22c55e;
+}
+
+.record-conflict[data-state="replacement"] .record-conflict-heading span {
+  color: #15803d;
+}
+
+.record-conflict[data-state="pending"] {
+  border-color: #fbbf24;
+  box-shadow: inset 0.2rem 0 0 #f59e0b;
 }
 
 .identity-resolution {

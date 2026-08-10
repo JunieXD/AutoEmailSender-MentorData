@@ -29,6 +29,15 @@ const ALL_ORGANIZATION_TYPES = Object.keys(TYPE_LABELS);
 const SCHOOL_ORGANIZATION_TYPES = new Set(["school", "institute"]);
 const DEPARTMENT_ORGANIZATION_TYPES = new Set(["department", "center", "laboratory"]);
 const IDENTITY_CONFLICT_REJECTION_REASON = "同邮箱导师已存在，保留社区库现有记录";
+const RECORD_CONFLICT_REJECTION_REASON = "与已有记录的资料不一致，本次不采纳";
+const RECORD_CONFLICT_FIELD_LABELS = {
+  name: "姓名",
+  email: "邮箱",
+  title: "职称",
+  research_directions: "研究方向",
+  recent_papers: "近期论文",
+  profile_url: "导师主页",
+};
 const ORGANIZATION_TYPE_SUFFIX_RULES = {
   school: [
     ["研究院", "institute"],
@@ -1346,6 +1355,164 @@ function identityComparisonRow(label, incoming, existing, different = false) {
   return row;
 }
 
+function recordConflictValue(values) {
+  if (!Array.isArray(values) || values.length === 0) {
+    return element("span", "record-conflict-empty", "未记录");
+  }
+  if (values.length === 1) {
+    return element("span", null, values[0]);
+  }
+  const list = element("ul", "record-conflict-values");
+  for (const value of values) {
+    list.append(element("li", null, value));
+  }
+  return list;
+}
+
+function recordConflictRejectionReason(row) {
+  const labels = (row.record_conflict?.fields || [])
+    .map((conflict) => RECORD_CONFLICT_FIELD_LABELS[conflict.field])
+    .filter(Boolean);
+  return labels.length
+    ? `与已有记录的${labels.join("、")}不一致，本次不采纳`
+    : RECORD_CONFLICT_REJECTION_REASON;
+}
+
+function cardForProposalId(proposalId) {
+  return (
+    state.rowEditorByProposalId.get(proposalId)?.card ||
+    state.cards.find((card) =>
+      card.group.rows.some((row) => row.proposal_id === proposalId),
+    ) ||
+    null
+  );
+}
+
+function rowRejectionState(proposalId) {
+  const editor = state.rowEditorByProposalId.get(proposalId);
+  const restored = state.restoredRowValues.get(proposalId);
+  const card = editor?.card || cardForProposalId(proposalId);
+  const action = editor?.action.value || restored?.action || "follow";
+  return {
+    action,
+    card,
+    rejected:
+      action === "reject" || (action === "follow" && card?.groupAction.value === "reject"),
+  };
+}
+
+function pendingConflictSourceIsRejected(row) {
+  const sourceId = row.record_conflict?.pending_source_proposal_id;
+  return Boolean(sourceId && rowRejectionState(sourceId).rejected);
+}
+
+function rejectRowByProposalId(proposalId, reason) {
+  const editor = state.rowEditorByProposalId.get(proposalId);
+  const card = editor?.card || cardForProposalId(proposalId);
+  if (editor) {
+    editor.action.value = "reject";
+    editor.reason.value = reason;
+    editor.organizationInput.hidden = true;
+    editor.reason.hidden = false;
+    updateIdentityResolutionState(editor);
+  } else {
+    state.restoredRowValues.set(proposalId, {
+      ...(state.restoredRowValues.get(proposalId) || {}),
+      action: "reject",
+      organization_id: null,
+      reason,
+    });
+  }
+  if (card) {
+    markGroupWorkflowChanged(card);
+  }
+}
+
+function createRecordConflictPanel(row, editor) {
+  const panel = element("section", "record-conflict");
+  panel.setAttribute("aria-label", `${row.name}的资料冲突`);
+  const heading = element("div", "record-conflict-heading");
+  const status = element("span", null, "已默认不收录");
+  heading.append(
+    element("strong", null, "资料冲突"),
+    status,
+  );
+  const comparison = element("div", "identity-comparison record-conflict-comparison");
+  const table = element("table", "identity-comparison-table");
+  const tableHead = document.createElement("thead");
+  const headingRow = document.createElement("tr");
+  for (const label of ["字段", "本次投稿", "已有记录"]) {
+    const cell = document.createElement("th");
+    cell.scope = "col";
+    cell.textContent = label;
+    headingRow.append(cell);
+  }
+  tableHead.append(headingRow);
+  const tableBody = document.createElement("tbody");
+  for (const conflict of row.record_conflict.fields) {
+    tableBody.append(
+      identityComparisonRow(
+        RECORD_CONFLICT_FIELD_LABELS[conflict.field] || conflict.field,
+        recordConflictValue(conflict.incoming),
+        recordConflictValue(conflict.existing),
+        true,
+      ),
+    );
+  }
+  table.append(tableHead, tableBody);
+  comparison.append(table);
+  panel.append(
+    heading,
+    element("p", "record-conflict-note", "如需更新资料，请提交信息纠错。"),
+    comparison,
+  );
+  const pendingSourceId = row.record_conflict.pending_source_proposal_id;
+  const pendingSourceRow = row.record_conflict.pending_source_batch_row;
+  if (pendingSourceId && pendingSourceRow) {
+    const keepCurrent = element(
+      "button",
+      "secondary-button compact-button record-conflict-replace",
+      `保留本次，拒绝第 ${pendingSourceRow} 行`,
+    );
+    keepCurrent.type = "button";
+    keepCurrent.addEventListener("click", () => {
+      rejectRowByProposalId(
+        pendingSourceId,
+        `与同批次第 ${row.batch_row} 行冲突，保留证据更可靠的记录`,
+      );
+      editor.action.value = "follow";
+      editor.reason.value = "";
+      editor.organizationInput.hidden = true;
+      editor.reason.hidden = true;
+      panel.dataset.state = "replacement";
+      status.textContent = `保留本次；第 ${pendingSourceRow} 行不收录`;
+      updateIdentityResolutionState(editor);
+      markGroupWorkflowChanged(editor.card);
+    });
+    panel.append(keepCurrent);
+  }
+  return { panel, status };
+}
+
+function updateRecordConflictState(editor) {
+  if (!editor.recordConflictPanel) {
+    return;
+  }
+  const rowRejected = rowRejectionState(editor.row.proposal_id).rejected;
+  const sourceRejected = pendingConflictSourceIsRejected(editor.row);
+  if (rowRejected) {
+    editor.recordConflictStatus.textContent = "已默认不收录";
+    editor.recordConflictPanel.dataset.state = "rejected";
+  } else if (sourceRejected) {
+    const batchRow = editor.row.record_conflict.pending_source_batch_row;
+    editor.recordConflictStatus.textContent = `保留本次；第 ${batchRow} 行不收录`;
+    editor.recordConflictPanel.dataset.state = "replacement";
+  } else {
+    editor.recordConflictStatus.textContent = "请选择不收录哪条记录";
+    editor.recordConflictPanel.dataset.state = "pending";
+  }
+}
+
 function identityAffiliationsList(affiliations) {
   const list = element("ul", "identity-affiliations");
   for (const affiliation of affiliations) {
@@ -1570,7 +1737,10 @@ function createRowEditor(row, card) {
   const reason = createInput("text", "拒绝原因", "row-reason");
   reason.setAttribute("aria-label", `拒绝${row.name}的原因`);
   reason.maxLength = 500;
-  if (row.identity?.requires_resolution === true) {
+  if (row.record_conflict?.fields?.length) {
+    action.value = "reject";
+    reason.value = recordConflictRejectionReason(row);
+  } else if (row.identity?.requires_resolution === true) {
     action.value = "reject";
     reason.value = IDENTITY_CONFLICT_REJECTION_REASON;
   }
@@ -1585,7 +1755,14 @@ function createRowEditor(row, card) {
     reason,
     restoreTargetId: null,
     identityPanel: null,
+    recordConflictPanel: null,
   };
+  if (row.record_conflict?.fields?.length) {
+    wrapper.classList.add("has-record-conflict");
+    const recordConflict = createRecordConflictPanel(row, editor);
+    editor.recordConflictPanel = recordConflict.panel;
+    editor.recordConflictStatus = recordConflict.status;
+  }
   if (row.identity?.requires_resolution === true) {
     const identityResolution = createIdentityResolutionPanel(row, card);
     wrapper.classList.add("has-identity-resolution");
@@ -1605,6 +1782,7 @@ function createRowEditor(row, card) {
   action.addEventListener("change", () => {
     organizationInput.hidden = action.value !== "map_existing";
     reason.hidden = action.value !== "reject";
+    updateRecordConflictState(editor);
     updateIdentityResolutionState(editor);
     markGroupWorkflowChanged(card);
   });
@@ -1625,12 +1803,16 @@ function createRowEditor(row, card) {
     editor.identityReason.addEventListener("input", () => markGroupWorkflowChanged(card));
   }
   wrapper.append(identity, action, organizationInput, reason);
+  if (editor.recordConflictPanel) {
+    wrapper.append(editor.recordConflictPanel);
+  }
   if (editor.identityPanel) {
     wrapper.append(editor.identityPanel);
   }
   state.rowEditors.push(editor);
   state.rowEditorByProposalId.set(row.proposal_id, editor);
   restoreRowEditorValue(editor);
+  updateRecordConflictState(editor);
   updateIdentityResolutionState(editor);
   return editor;
 }
@@ -2103,8 +2285,14 @@ function createGroupCard(group) {
   const badges = element("div", "group-badges");
   badges.append(element("span", "badge", `${group.rows.length} 位导师`));
   const identityRows = group.rows.filter((row) => row.identity?.requires_resolution === true);
+  const recordConflictRows = group.rows.filter((row) => row.record_conflict?.fields?.length);
   if (identityRows.length) {
     badges.append(element("span", "badge identity-badge", `${identityRows.length} 项任职待判断`));
+  }
+  if (recordConflictRows.length) {
+    badges.append(
+      element("span", "badge record-conflict-badge", `${recordConflictRows.length} 项资料冲突`),
+    );
   }
   header.append(titleArea, badges);
 
@@ -2112,14 +2300,20 @@ function createGroupCard(group) {
   const requiresPathReview = Boolean(
     pathSuggestion && pathSuggestion.confidence !== "certain",
   );
-  const requiresAttention = requiresPathReview || identityRows.length > 0;
+  const requiresAttention =
+    requiresPathReview || identityRows.length > 0 || recordConflictRows.length > 0;
   const decisionSummary = element("section", "group-decision-summary");
   const decisionCopy = element("div", "group-decision-copy");
   decisionCopy.append(
     element(
       "strong",
       "group-decision-title",
-      pathSuggestion?.title || (identityRows.length ? "确认任职关系" : "沿用投稿路径"),
+      pathSuggestion?.title ||
+        (recordConflictRows.length
+          ? "处理导师资料冲突"
+          : identityRows.length
+            ? "确认任职关系"
+            : "沿用投稿路径"),
     ),
   );
   if (pathSuggestion?.reason) {
@@ -2154,7 +2348,10 @@ function createGroupCard(group) {
   groupControls.append(groupAction, mappingMode, groupReason);
   const assignment = element("p", "group-assignment", "机构尚未确认");
 
-  const ordinaryRows = group.rows.filter((row) => row.identity?.requires_resolution !== true);
+  const ordinaryRows = group.rows.filter(
+    (row) =>
+      row.identity?.requires_resolution !== true && !row.record_conflict?.fields?.length,
+  );
   const rowsDetails = element("details", "rows-details");
   const rowsSummary = element("summary", null, `逐位调整导师（${ordinaryRows.length}）`);
   const rowsContainer = element("div", "rows-container");
@@ -2302,12 +2499,31 @@ function createGroupCard(group) {
     quickActions.append(chooseOther, keepPath, reject);
   }
 
-  if (identityRows.length) {
+  if (recordConflictRows.length) {
+    const conflictSection = element("section", "record-conflicts");
+    const heading = element("div", "record-conflicts-heading");
+    heading.append(
+      element("strong", null, "确认资料冲突"),
+      element("span", null, `${recordConflictRows.length} 位导师`),
+    );
+    const container = element("div", "record-conflicts-list");
+    for (const row of recordConflictRows) {
+      const editor = createRowEditor(row, card);
+      card.rowEditors.push(editor);
+      container.append(editor.wrapper);
+    }
+    conflictSection.append(heading, container);
+    card.recordConflictSection = conflictSection;
+  }
+  const identityOnlyRows = identityRows.filter(
+    (row) => !row.record_conflict?.fields?.length,
+  );
+  if (identityOnlyRows.length) {
     const identitySection = element("section", "identity-conflicts");
     const heading = element("div", "identity-conflicts-heading");
     heading.append(element("strong", null, "确认同邮箱导师的任职"));
     const container = element("div", "identity-conflicts-list");
-    for (const row of identityRows) {
+    for (const row of identityOnlyRows) {
       const editor = createRowEditor(row, card);
       card.rowEditors.push(editor);
       container.append(editor.wrapper);
@@ -2357,6 +2573,9 @@ function createGroupCard(group) {
   setGroupTaskStatus(card, taskStatus.textContent);
 
   article.append(header, decisionSummary, sources, assignment, advancedDetails);
+  if (card.recordConflictSection) {
+    article.append(card.recordConflictSection);
+  }
   if (card.identitySection) {
     article.append(card.identitySection);
   }
@@ -3291,15 +3510,26 @@ function renderWorkflowNode(node) {
     const identityCount = task.card.group.rows.filter(
       (row) => row.identity?.requires_resolution === true,
     ).length;
+    const recordConflictCount = task.card.group.rows.filter(
+      (row) => row.record_conflict?.fields?.length,
+    ).length;
     const sectionTitle = task.card.pathSuggestion
       ? "归属与导师"
-      : identityCount
+      : recordConflictCount
+        ? "资料与导师"
+        : identityCount
         ? "任职与导师"
         : "导师";
+    const pendingLabels = [
+      recordConflictCount ? `${recordConflictCount} 项资料冲突` : "",
+      identityCount ? `${identityCount} 项任职待判断` : "",
+    ].filter(Boolean);
     nodes.nodeContent.append(
       workbenchSection(
         sectionTitle,
-        `${task.card.group.rows.length} 位导师${identityCount ? ` · ${identityCount} 项任职待判断` : ""}`,
+        `${task.card.group.rows.length} 位导师${
+          pendingLabels.length ? ` · ${pendingLabels.join(" · ")}` : ""
+        }`,
         task.element,
         workflowTaskStatus(task),
       ),
@@ -4104,6 +4334,7 @@ async function updateOrganizationDrafts() {
     updateGroupCard(card);
   }
   for (const editor of state.rowEditors) {
+    updateRecordConflictState(editor);
     updateIdentityResolutionState(editor);
   }
   refreshWorkflowTasks();
@@ -4354,6 +4585,8 @@ function restoreReviewDraft() {
   }
   for (const editor of state.rowEditors) {
     restoreRowEditorValue(editor);
+    updateRecordConflictState(editor);
+    updateIdentityResolutionState(editor);
   }
   nodes.autosaveStatus.textContent = "已恢复上次进度";
   return true;
@@ -4565,6 +4798,21 @@ function collectRowOverrides(card) {
     const editor = state.rowEditorByProposalId.get(row.proposal_id);
     const restored = state.restoredRowValues.get(row.proposal_id);
     const action = editor?.action.value || restored?.action || "follow";
+    const rejectedWithGroup = action === "follow" && card.groupAction.value === "reject";
+    const replacingRejectedPendingRow = pendingConflictSourceIsRejected(row);
+    if (
+      row.record_conflict?.fields?.length &&
+      action !== "reject" &&
+      !rejectedWithGroup &&
+      !replacingRejectedPendingRow
+    ) {
+      throw new ReviewValidationError(
+        row.record_conflict.pending_source_batch_row
+          ? `${row.name}与同批次第 ${row.record_conflict.pending_source_batch_row} 行冲突；请选择不收录哪条记录`
+          : `${row.name}与已有记录存在资料冲突；本次投稿应不收录`,
+        { card, row },
+      );
+    }
     if (action === "follow") {
       continue;
     }
@@ -5080,6 +5328,54 @@ function validateManifest(manifest, issueNumber) {
       }
     }
     for (const row of group.rows) {
+      if (Object.hasOwn(row || {}, "record_conflict")) {
+        const conflict = row.record_conflict;
+        const fields = conflict?.fields;
+        const hasPendingSourceId = Object.hasOwn(
+          conflict || {},
+          "pending_source_proposal_id",
+        );
+        const hasPendingSourceRow = Object.hasOwn(
+          conflict || {},
+          "pending_source_batch_row",
+        );
+        const fieldNames = Array.isArray(fields)
+          ? fields.map((field) => field?.field)
+          : [];
+        const validValues = (values) =>
+          Array.isArray(values) &&
+          values.every(
+            (value) =>
+              typeof value === "string" && value.length > 0 && value.length <= 5000,
+          );
+        if (
+          !conflict ||
+          typeof conflict.target_mentor_id !== "string" ||
+          typeof conflict.mentor_name !== "string" ||
+          !conflict.mentor_name.trim() ||
+          conflict.mentor_name.length > 255 ||
+          hasPendingSourceId !== hasPendingSourceRow ||
+          (hasPendingSourceId &&
+            (!/^proposal_issue_[1-9][0-9]*_row_[1-9][0-9]*$/.test(
+              conflict.pending_source_proposal_id,
+            ) ||
+              !Number.isInteger(conflict.pending_source_batch_row) ||
+              conflict.pending_source_batch_row < 1 ||
+              conflict.pending_source_batch_row > 5000)) ||
+          !Array.isArray(fields) ||
+          fields.length === 0 ||
+          fields.length > 6 ||
+          new Set(fieldNames).size !== fieldNames.length ||
+          !fields.every(
+            (field) =>
+              Object.hasOwn(RECORD_CONFLICT_FIELD_LABELS, field?.field) &&
+              validValues(field.incoming) &&
+              validValues(field.existing),
+          )
+        ) {
+          throw new Error("审核清单中的导师资料冲突信息无效");
+        }
+      }
       if (!Object.hasOwn(row || {}, "identity")) {
         continue;
       }
@@ -5194,18 +5490,22 @@ async function loadReview() {
     }
 
     const rowCount = manifest.groups.reduce((total, group) => total + group.rows.length, 0);
-    const identityCount = manifest.groups.reduce(
+    const mentorConflictCount = manifest.groups.reduce(
       (total, group) =>
-        total + group.rows.filter((row) => row.identity?.requires_resolution === true).length,
+        total +
+        group.rows.filter(
+          (row) =>
+            row.identity?.requires_resolution === true || row.record_conflict?.fields?.length,
+        ).length,
       0,
     );
     nodes.issue.textContent = `#${issueNumber}`;
     nodes.groupCount.textContent = String(manifest.groups.length);
     nodes.rowCount.textContent = String(rowCount);
     nodes.invalidCount.textContent = String(manifest.invalid_rows.length);
-    nodes.identityCount.textContent = String(identityCount);
+    nodes.identityCount.textContent = String(mentorConflictCount);
     nodes.invalidSummary.hidden = manifest.invalid_rows.length === 0;
-    nodes.identitySummary.hidden = identityCount === 0;
+    nodes.identitySummary.hidden = mentorConflictCount === 0;
     nodes.summary.hidden = false;
     renderInvalidRows();
 
