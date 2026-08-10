@@ -3,6 +3,7 @@
 
   const LEVELS = ["university", "school", "department"];
   const SCHOOL_TYPES = new Set(["school", "institute"]);
+  const COMPACT_DECISION_ENCODING = "shared_levels_v1";
 
   function normalizeOrganizationName(value) {
     return String(value || "")
@@ -295,7 +296,44 @@
     };
   }
 
+  function compactDecisionForComment(decision) {
+    const {
+      organization_creations: organizationCreations = [],
+      decisions = [],
+      ...metadata
+    } = decision;
+    const levelDecisions = [];
+    const levelDecisionIndex = new Map();
+    const compactDecisions = decisions.map((groupDecision) => {
+      const { levels = [], ...groupMetadata } = groupDecision;
+      const levelRefs = levels.map((levelDecision) => {
+        const key = JSON.stringify(levelDecision);
+        let index = levelDecisionIndex.get(key);
+        if (index === undefined) {
+          index = levelDecisions.length;
+          levelDecisionIndex.set(key, index);
+          levelDecisions.push(levelDecision);
+        }
+        return index;
+      });
+      return {
+        ...groupMetadata,
+        level_refs: levelRefs,
+      };
+    });
+    return {
+      ...metadata,
+      encoding: COMPACT_DECISION_ENCODING,
+      ...(organizationCreations.length
+        ? { organization_creations: organizationCreations }
+        : {}),
+      level_decisions: levelDecisions,
+      decisions: compactDecisions,
+    };
+  }
+
   scope.MentorReviewLogic = Object.freeze({
+    compactDecisionForComment,
     correctionDefaults,
     correctionKindForDepartment,
     compactOrganizationName,

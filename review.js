@@ -3774,21 +3774,32 @@ async function generateDecision() {
   nodes.copyStatus.textContent = "";
   try {
     const decision = await collectDecision();
-    const body = `${COMMENT_MARKER}\n\`\`\`json\n${JSON.stringify(decision)}\n\`\`\``;
-    const characterCount = Array.from(body).length;
+    const fullBody = `${COMMENT_MARKER}\n\`\`\`json\n${JSON.stringify(decision)}\n\`\`\``;
+    const compactDecision = MentorReviewLogic.compactDecisionForComment(decision);
+    const compactBody =
+      `${COMMENT_MARKER}\n\`\`\`json\n${JSON.stringify(compactDecision)}\n\`\`\``;
+    const fullCharacterCount = Array.from(fullBody).length;
+    const compactCharacterCount = Array.from(compactBody).length;
+    const useCompact = compactCharacterCount < fullCharacterCount;
+    const body = useCompact ? compactBody : fullBody;
+    const characterCount = useCompact ? compactCharacterCount : fullCharacterCount;
     if (characterCount > GITHUB_COMMENT_CHARACTER_LIMIT) {
       throw new Error(
         `审核评论有 ${characterCount.toLocaleString("zh-CN")} 个字符，超过 GitHub 的 ` +
           `${GITHUB_COMMENT_CHARACTER_LIMIT.toLocaleString("zh-CN")} 字符上限。` +
-          "请减少需要逐位调整或不收录的导师数量后再生成。",
+          "请把投稿拆成较小批次后重试。",
       );
     }
     renderDecisionPreview(decision);
     nodes.decisionText.value = body;
     nodes.decisionOutput.hidden = false;
+    const reduction = useCompact
+      ? Math.round((1 - compactCharacterCount / fullCharacterCount) * 100)
+      : 0;
     nodes.copyStatus.textContent =
       `评论长度 ${characterCount.toLocaleString("zh-CN")} / ` +
-      `${GITHUB_COMMENT_CHARACTER_LIMIT.toLocaleString("zh-CN")} 字符，可以安全提交。`;
+      `${GITHUB_COMMENT_CHARACTER_LIMIT.toLocaleString("zh-CN")} 字符` +
+      (reduction > 0 ? ` · 已精简 ${reduction}%` : "");
     nodes.decisionOutput.scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (error) {
     nodes.decisionError.textContent = error instanceof Error ? error.message : "无法生成审核评论";
