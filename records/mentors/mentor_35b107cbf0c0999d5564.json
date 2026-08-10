@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd5ddeb4ddac69ea7421"
+      ],
+      "ended_at": null,
+      "id": "aff_97c12b02f5b0c6875b1f",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_8693874134a0966f6a79",
+      "source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/939e53a810b242b092c0de2aa5d84e51.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fd5ddeb4ddac69ea7421"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_97c12b02f5b0c6875b1f",
+      "claim_ids": [
+        "claim_fd5ddeb4ddac69ea7421"
+      ],
+      "is_primary": true,
+      "normalized_value": "swang@bit.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/939e53a810b242b092c0de2aa5d84e51.htm",
+      "status": "current",
+      "type": "email",
+      "value": "swang@bit.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ],
+    "email": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ],
+    "name": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ],
+    "profile_url": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ],
+    "recent_papers": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ],
+    "research_directions": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ],
+    "status": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ],
+    "title": [
+      "claim_fd5ddeb4ddac69ea7421"
+    ]
+  },
+  "id": "mentor_35b107cbf0c0999d5564",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd5ddeb4ddac69ea7421"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王帅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_97c12b02f5b0c6875b1f",
+      "claim_ids": [
+        "claim_fd5ddeb4ddac69ea7421"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cst.bit.edu.cn/szdw/jsml/bssds/939e53a810b242b092c0de2aa5d84e51.htm"
+    }
+  ],
+  "recent_papers": [
+    "1. Shuai Wang, et al. Optimal Training Design for MIMO Systems With General Power Constraints, IEEE TSP, 2018. 2. Yujie Lin, Shuai Wang※, et al. NOMA Based Calibration for Large-Scale Spaceborne Antenna Arrays, IEEE TVT, 2018."
+  ],
+  "research_directions": [
+    "卫星通信、抗干扰通信、抗侦测通信、飞行器协同数据链、卫星载荷专用测试技术、数据链专用测试技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/939e53a810b242b092c0de2aa5d84e51.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

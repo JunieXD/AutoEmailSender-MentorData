@@ -1,0 +1,93 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_75b9059f64e683945220"
+      ],
+      "ended_at": null,
+      "id": "aff_a19c915f53bf48fe2154",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a33d6bd5e5916952d3de",
+      "source_url": "https://faculty.bjtu.edu.cn/9803/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_75b9059f64e683945220"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a19c915f53bf48fe2154",
+      "claim_ids": [
+        "claim_75b9059f64e683945220"
+      ],
+      "is_primary": true,
+      "normalized_value": "gxluo@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9803/",
+      "status": "current",
+      "type": "email",
+      "value": "gxluo@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_75b9059f64e683945220"
+    ],
+    "email": [
+      "claim_75b9059f64e683945220"
+    ],
+    "name": [
+      "claim_75b9059f64e683945220"
+    ],
+    "recent_papers": [
+      "claim_75b9059f64e683945220"
+    ],
+    "research_directions": [
+      "claim_75b9059f64e683945220"
+    ],
+    "status": [
+      "claim_75b9059f64e683945220"
+    ],
+    "title": [
+      "claim_75b9059f64e683945220"
+    ]
+  },
+  "id": "mentor_52c89f680dcc9f00f1e8",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_75b9059f64e683945220"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗贵珣"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Robust graph based social recommendation through contrastive multi-view learning (AAAI 2025)",
+    "Graph Attention Network with High-Order Neighbor Information Propagation for Social Recommendation (IJCAI 2024)",
+    "Privacy-preserving clustering federated learning for non-IID data (FGCS 2024)"
+  ],
+  "research_directions": [
+    "软件工程",
+    "网络智能与移动计算",
+    "机器学习与认知计算",
+    "人工智能",
+    "大数据技术与工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9803/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

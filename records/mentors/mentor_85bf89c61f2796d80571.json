@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_507a158361a2be1f1bfa"
+      ],
+      "ended_at": null,
+      "id": "aff_0df1c20cb8c8922f9eb0",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bd17f676cf6edda88750",
+      "source_url": "https://cs.pku.edu.cn/info/1083/3088.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_507a158361a2be1f1bfa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0df1c20cb8c8922f9eb0",
+      "claim_ids": [
+        "claim_507a158361a2be1f1bfa"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangtao@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1083/3088.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangtao@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_507a158361a2be1f1bfa"
+    ],
+    "email": [
+      "claim_507a158361a2be1f1bfa"
+    ],
+    "name": [
+      "claim_507a158361a2be1f1bfa"
+    ],
+    "profile_url": [
+      "claim_507a158361a2be1f1bfa"
+    ],
+    "research_directions": [
+      "claim_507a158361a2be1f1bfa"
+    ],
+    "status": [
+      "claim_507a158361a2be1f1bfa"
+    ],
+    "title": [
+      "claim_507a158361a2be1f1bfa"
+    ]
+  },
+  "id": "mentor_85bf89c61f2796d80571",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_507a158361a2be1f1bfa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王韬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0df1c20cb8c8922f9eb0",
+      "claim_ids": [
+        "claim_507a158361a2be1f1bfa"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1083/3088.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "情感计算、智能机器人系统、计算机系统结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1083/3088.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b8b9c9336c060fa91b95"
+      ],
+      "ended_at": null,
+      "id": "aff_382cac5c776fcd66820e",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_83ffd8d3e65dbe4a959d",
+      "source_url": "https://cs.pku.edu.cn/info/1062/3165.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b8b9c9336c060fa91b95"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_382cac5c776fcd66820e",
+      "claim_ids": [
+        "claim_b8b9c9336c060fa91b95"
+      ],
+      "is_primary": true,
+      "normalized_value": "gischen@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1062/3165.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gischen@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b8b9c9336c060fa91b95"
+    ],
+    "email": [
+      "claim_b8b9c9336c060fa91b95"
+    ],
+    "name": [
+      "claim_b8b9c9336c060fa91b95"
+    ],
+    "profile_url": [
+      "claim_b8b9c9336c060fa91b95"
+    ],
+    "recent_papers": [
+      "claim_b8b9c9336c060fa91b95"
+    ],
+    "research_directions": [
+      "claim_b8b9c9336c060fa91b95"
+    ],
+    "status": [
+      "claim_b8b9c9336c060fa91b95"
+    ],
+    "title": [
+      "claim_b8b9c9336c060fa91b95"
+    ]
+  },
+  "id": "mentor_a0ec381ff87b908554d2",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b8b9c9336c060fa91b95"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_382cac5c776fcd66820e",
+      "claim_ids": [
+        "claim_b8b9c9336c060fa91b95"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1062/3165.htm"
+    }
+  ],
+  "recent_papers": [
+    "张晓媛,陈斌. 基于改进GAN的手绘特征草图虚拟地形生成方法[J]. 遥感学报,2024, 28(5): 1232-1241.",
+    "张赖和, 陈斌. 基于全景图像的虚拟野外场景构建方法[J]. 北京大学学报自然科学版, 2023, 59(2): 211-220.",
+    "陈天翔, 陈斌. 一种基于全景视频的 6 自由度野外虚拟环境快速构建方法[J]. 图学学报, 2022, 43(5): 901-908.",
+    "袁泽, 陈斌. 基于 INLA-SPDE 方法的区域污染物模拟与预测[J]. 图学学报, 2022, 43(1): 125-132."
+  ],
+  "research_directions": [
+    "图形与多媒体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1062/3165.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

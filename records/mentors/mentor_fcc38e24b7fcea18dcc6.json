@@ -1,0 +1,88 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_75bedf0c06b0c93dc163"
+      ],
+      "ended_at": null,
+      "id": "aff_788f280ae219bfc6df75",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9839/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_75bedf0c06b0c93dc163"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_788f280ae219bfc6df75",
+      "claim_ids": [
+        "claim_75bedf0c06b0c93dc163"
+      ],
+      "is_primary": true,
+      "normalized_value": "syren@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9839/",
+      "status": "current",
+      "type": "email",
+      "value": "syren@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_75bedf0c06b0c93dc163"
+    ],
+    "email": [
+      "claim_75bedf0c06b0c93dc163"
+    ],
+    "name": [
+      "claim_75bedf0c06b0c93dc163"
+    ],
+    "research_directions": [
+      "claim_75bedf0c06b0c93dc163"
+    ],
+    "status": [
+      "claim_75bedf0c06b0c93dc163"
+    ],
+    "title": [
+      "claim_75bedf0c06b0c93dc163"
+    ]
+  },
+  "id": "mentor_fcc38e24b7fcea18dcc6",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_75bedf0c06b0c93dc163"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任申元"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机技术",
+    "人工智能",
+    "软件工程",
+    "大数据技术与工程",
+    "轨道交通信息技术",
+    "先进计算与高性能计算",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9839/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

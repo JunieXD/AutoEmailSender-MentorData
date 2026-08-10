@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cb2db9bc01deb5f63512"
+      ],
+      "ended_at": null,
+      "id": "aff_12a2b99f03890a4321ea",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1086/1737.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cb2db9bc01deb5f63512"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_12a2b99f03890a4321ea",
+      "claim_ids": [
+        "claim_cb2db9bc01deb5f63512"
+      ],
+      "is_primary": true,
+      "normalized_value": "xin@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1086/1737.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xin@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cb2db9bc01deb5f63512"
+    ],
+    "email": [
+      "claim_cb2db9bc01deb5f63512"
+    ],
+    "name": [
+      "claim_cb2db9bc01deb5f63512"
+    ],
+    "profile_url": [
+      "claim_cb2db9bc01deb5f63512"
+    ],
+    "research_directions": [
+      "claim_cb2db9bc01deb5f63512"
+    ],
+    "status": [
+      "claim_cb2db9bc01deb5f63512"
+    ],
+    "title": [
+      "claim_cb2db9bc01deb5f63512"
+    ]
+  },
+  "id": "mentor_cc76ea14d9ae3f09d403",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cb2db9bc01deb5f63512"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张昕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_12a2b99f03890a4321ea",
+      "claim_ids": [
+        "claim_cb2db9bc01deb5f63512"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1086/1737.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "程序设计语言,软件工程,高可靠人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1086/1737.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

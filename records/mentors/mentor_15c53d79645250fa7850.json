@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bd7d10ba80906c0c1b13"
+      ],
+      "ended_at": null,
+      "id": "aff_b4a7d500e3c807367269",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8620",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bd7d10ba80906c0c1b13"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b4a7d500e3c807367269",
+      "claim_ids": [
+        "claim_bd7d10ba80906c0c1b13"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuj@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8620",
+      "status": "current",
+      "type": "email",
+      "value": "wuj@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bd7d10ba80906c0c1b13"
+    ],
+    "email": [
+      "claim_bd7d10ba80906c0c1b13"
+    ],
+    "name": [
+      "claim_bd7d10ba80906c0c1b13"
+    ],
+    "profile_url": [
+      "claim_bd7d10ba80906c0c1b13"
+    ],
+    "recent_papers": [
+      "claim_bd7d10ba80906c0c1b13"
+    ],
+    "research_directions": [
+      "claim_bd7d10ba80906c0c1b13"
+    ],
+    "status": [
+      "claim_bd7d10ba80906c0c1b13"
+    ],
+    "title": [
+      "claim_bd7d10ba80906c0c1b13"
+    ]
+  },
+  "id": "mentor_15c53d79645250fa7850",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bd7d10ba80906c0c1b13"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邬俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b4a7d500e3c807367269",
+      "claim_ids": [
+        "claim_bd7d10ba80906c0c1b13"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8620"
+    }
+  ],
+  "recent_papers": [
+    "Sijin Lu & Jun Wu*, “Hierarchical Dual Debiasing in LLM-based Recommendation”,ACM Transactions on Information Systems (TOIS), To Appear, 2026.",
+    "Yu He, Zishen Zhao, Zhi Han, Chunlei Chen, Jinfei Hao,Qiang Fu, Shengzhe Tao & Jun Wu*, “Rail Image Harmonization Dataset: A Seed to Generate Evaluation Resources for Track Vision Inspection Systems”,Multimedia Systems, Vol. 32, Article 387, 2026.",
+    "Fangyuan Luo, Yankai Chen, Jun Wu* & Yidong Li, “Rank Gap Sensitive Deep AUC Maximization for CTR Prediction”,Pattern Recognition, Article 111496, 2025.",
+    "Xiangkui Lu & Jun Wu*, “Combining Association-rule-guided Sequence Augmentation with Listwise Contrastive Learning for Session-based Recommendation”,Information Processing & Management (IPM), Article 10399, 2025.",
+    "Xiangkui Lu, Jun Wu*, Junheng Huang, Fangyuan Luo & Jianbo Yuan, “Co-Training-Teaching: A Robust Semi-Supervised Framework for Review-Aware Rating Regression”,ACM Transactions on Knowledge Discovery from Data (TKDD), Vol. 18, No.2, Article 41, 2024."
+  ],
+  "research_directions": [
+    "搜索与推荐算法研究,智慧交通、数字医疗、计算甲骨"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8620",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8f3eda4ae44a80d9e826"
+      ],
+      "ended_at": null,
+      "id": "aff_1afcf9d02198aa8f1e78",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_3fb6be741445b678d2c5",
+      "source_url": "https://faculty.bjtu.edu.cn/7965",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8f3eda4ae44a80d9e826"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1afcf9d02198aa8f1e78",
+      "claim_ids": [
+        "claim_8f3eda4ae44a80d9e826"
+      ],
+      "is_primary": true,
+      "normalized_value": "yqsun@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7965",
+      "status": "current",
+      "type": "email",
+      "value": "yqsun@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8f3eda4ae44a80d9e826"
+    ],
+    "email": [
+      "claim_8f3eda4ae44a80d9e826"
+    ],
+    "name": [
+      "claim_8f3eda4ae44a80d9e826"
+    ],
+    "profile_url": [
+      "claim_8f3eda4ae44a80d9e826"
+    ],
+    "recent_papers": [
+      "claim_8f3eda4ae44a80d9e826"
+    ],
+    "research_directions": [
+      "claim_8f3eda4ae44a80d9e826"
+    ],
+    "status": [
+      "claim_8f3eda4ae44a80d9e826"
+    ],
+    "title": [
+      "claim_8f3eda4ae44a80d9e826"
+    ]
+  },
+  "id": "mentor_df8b348a499b21cbe7b5",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8f3eda4ae44a80d9e826"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙永奇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1afcf9d02198aa8f1e78",
+      "claim_ids": [
+        "claim_8f3eda4ae44a80d9e826"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7965"
+    }
+  ],
+  "recent_papers": [
+    "Yifan Sui, Yongqi Sun, Naiyue Chen*, Yingying Zhao, Hongbo Cao, Baomin Xu. Backdoor detection in federated learning with feature map: A multi-task learning perspective. IEEE Transactions on Information Forensics and Security, 2026.",
+    "Rongqiang Fang, Yongqi Sun, Jidong Yuan*, Hongbo Cao. DMIA: A disentangled-based method for graph convolutional network against membership inference attack. IEEE Transactions on Dependable and Secure Computing, 2025, 22(6): 7956-7970.",
+    "Rongqiang Fang, Yongqi Sun, Jidong Yuan*, Hongbo Cao, Jinkun Dong. A language-assisted semantic-aware disentangled method for link prediction on heterogeneous graphs. In Proceedings of the 33rd ACM International Conference on Multimedia (MM ’25), 2025: 2352-2361.",
+    "Yingying Zhao, Yongqi Sun, Naiyue Chen*, Yifan Sui, Hongbo Cao. FedFOC: Personalized federated learning via fine-grained one-shot clustering. IEEE Transactions on Industrial Informatics, 2025, 21(11):8396-8406.",
+    "Weiguo Zhu, Xingyu Zhang, Caiyuan Liu, Yongqi Sun*. D3STN: Dynamic delay differential equation spatiotemporal network for traffic flow forecasting. IEEE Transactions on Intelligent Transportation Systems, 2024, 25(11): 18093-18106."
+  ],
+  "research_directions": [
+    "时空数据分析与挖掘、深度强化学习、图表示学习、分布式人工智能、联邦学习、生成式人工智能与安全、低空航行安全保障"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7965",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

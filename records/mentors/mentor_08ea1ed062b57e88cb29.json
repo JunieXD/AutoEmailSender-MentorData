@@ -1,0 +1,84 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bf163adf3ea1576ae665"
+      ],
+      "ended_at": null,
+      "id": "aff_8ca3255e212494fb70f9",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9644/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bf163adf3ea1576ae665"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8ca3255e212494fb70f9",
+      "claim_ids": [
+        "claim_bf163adf3ea1576ae665"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangbo_cs@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9644/",
+      "status": "current",
+      "type": "email",
+      "value": "wangbo_cs@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bf163adf3ea1576ae665"
+    ],
+    "email": [
+      "claim_bf163adf3ea1576ae665"
+    ],
+    "name": [
+      "claim_bf163adf3ea1576ae665"
+    ],
+    "research_directions": [
+      "claim_bf163adf3ea1576ae665"
+    ],
+    "status": [
+      "claim_bf163adf3ea1576ae665"
+    ],
+    "title": [
+      "claim_bf163adf3ea1576ae665"
+    ]
+  },
+  "id": "mentor_08ea1ed062b57e88cb29",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bf163adf3ea1576ae665"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王博"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "编译器等系统软件的缺陷挖掘",
+    "智能化软件测试与调试",
+    "智能化代码自动生成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9644/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

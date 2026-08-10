@@ -1,0 +1,86 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8c99ca7b1d5caaf7d312"
+      ],
+      "ended_at": null,
+      "id": "aff_bb5014096dcda582819f",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_10319442d9eb4a98cda7",
+      "source_url": "http://faculty.bjtu.edu.cn/7443/",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8c99ca7b1d5caaf7d312"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bb5014096dcda582819f",
+      "claim_ids": [
+        "claim_8c99ca7b1d5caaf7d312"
+      ],
+      "is_primary": true,
+      "normalized_value": "yflin@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "http://faculty.bjtu.edu.cn/7443/",
+      "status": "current",
+      "type": "email",
+      "value": "yflin@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8c99ca7b1d5caaf7d312"
+    ],
+    "email": [
+      "claim_8c99ca7b1d5caaf7d312"
+    ],
+    "name": [
+      "claim_8c99ca7b1d5caaf7d312"
+    ],
+    "research_directions": [
+      "claim_8c99ca7b1d5caaf7d312"
+    ],
+    "status": [
+      "claim_8c99ca7b1d5caaf7d312"
+    ],
+    "title": [
+      "claim_8c99ca7b1d5caaf7d312"
+    ]
+  },
+  "id": "mentor_afa64a290c03f0b4bbc6",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8c99ca7b1d5caaf7d312"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林友芳"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘",
+    "大数据工程与技术",
+    "深度强化学习",
+    "智能技术与系统",
+    "交通数据分析与挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.bjtu.edu.cn/7443/",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

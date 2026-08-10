@@ -1,0 +1,85 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bb4822692a38563e9cbe"
+      ],
+      "ended_at": null,
+      "id": "aff_e30a1bbb192c236706f5",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9824/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_bb4822692a38563e9cbe"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e30a1bbb192c236706f5",
+      "claim_ids": [
+        "claim_bb4822692a38563e9cbe"
+      ],
+      "is_primary": true,
+      "normalized_value": "jcma@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9824/",
+      "status": "current",
+      "type": "email",
+      "value": "jcma@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bb4822692a38563e9cbe"
+    ],
+    "email": [
+      "claim_bb4822692a38563e9cbe"
+    ],
+    "name": [
+      "claim_bb4822692a38563e9cbe"
+    ],
+    "research_directions": [
+      "claim_bb4822692a38563e9cbe"
+    ],
+    "status": [
+      "claim_bb4822692a38563e9cbe"
+    ],
+    "title": [
+      "claim_bb4822692a38563e9cbe"
+    ]
+  },
+  "id": "mentor_41ba0638d4f318823143",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bb4822692a38563e9cbe"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马继昌"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "智能驾驶决策规划与优化控制",
+    "多智能体协同调度与集群编队",
+    "5G智能网联V2X",
+    "虚拟仿真数字孪生"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9824/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

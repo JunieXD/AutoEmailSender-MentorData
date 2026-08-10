@@ -1,0 +1,83 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4eede018267ec4679a9a"
+      ],
+      "ended_at": null,
+      "id": "aff_c53d4282e45365fb9372",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_e218570f7d344348679d",
+      "source_url": "https://faculty.bjtu.edu.cn/8875/",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_4eede018267ec4679a9a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c53d4282e45365fb9372",
+      "claim_ids": [
+        "claim_4eede018267ec4679a9a"
+      ],
+      "is_primary": true,
+      "normalized_value": "htxu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8875/",
+      "status": "current",
+      "type": "email",
+      "value": "htxu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4eede018267ec4679a9a"
+    ],
+    "email": [
+      "claim_4eede018267ec4679a9a"
+    ],
+    "name": [
+      "claim_4eede018267ec4679a9a"
+    ],
+    "research_directions": [
+      "claim_4eede018267ec4679a9a"
+    ],
+    "status": [
+      "claim_4eede018267ec4679a9a"
+    ]
+  },
+  "id": "mentor_4b41fb8f44115752822e",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4eede018267ec4679a9a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许华婷"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机技术",
+    "人工智能",
+    "软件工程",
+    "大数据技术与工程",
+    "轨道交通信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8875/",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

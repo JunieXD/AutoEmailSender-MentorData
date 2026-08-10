@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ecb681224e1deb7f68aa"
+      ],
+      "ended_at": null,
+      "id": "aff_5b5530904ecd09525c04",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_c23623e3cd4dcb4d1c02",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1113.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ecb681224e1deb7f68aa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5b5530904ecd09525c04",
+      "claim_ids": [
+        "claim_ecb681224e1deb7f68aa"
+      ],
+      "is_primary": true,
+      "normalized_value": "jinye@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1113.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jinye@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ecb681224e1deb7f68aa"
+    ],
+    "email": [
+      "claim_ecb681224e1deb7f68aa"
+    ],
+    "name": [
+      "claim_ecb681224e1deb7f68aa"
+    ],
+    "profile_url": [
+      "claim_ecb681224e1deb7f68aa"
+    ],
+    "research_directions": [
+      "claim_ecb681224e1deb7f68aa"
+    ],
+    "status": [
+      "claim_ecb681224e1deb7f68aa"
+    ]
+  },
+  "id": "mentor_0b695950c1f6fa679869",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ecb681224e1deb7f68aa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "金野"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5b5530904ecd09525c04",
+      "claim_ids": [
+        "claim_ecb681224e1deb7f68aa"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1113.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "卫星通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1113.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

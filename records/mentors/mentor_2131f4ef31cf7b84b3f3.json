@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aa9b5e7b57cc86c9579c"
+      ],
+      "ended_at": null,
+      "id": "aff_fd8f453252090338813f",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1685.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aa9b5e7b57cc86c9579c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fd8f453252090338813f",
+      "claim_ids": [
+        "claim_aa9b5e7b57cc86c9579c"
+      ],
+      "is_primary": true,
+      "normalized_value": "ding_li@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1685.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ding_li@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aa9b5e7b57cc86c9579c"
+    ],
+    "email": [
+      "claim_aa9b5e7b57cc86c9579c"
+    ],
+    "name": [
+      "claim_aa9b5e7b57cc86c9579c"
+    ],
+    "profile_url": [
+      "claim_aa9b5e7b57cc86c9579c"
+    ],
+    "research_directions": [
+      "claim_aa9b5e7b57cc86c9579c"
+    ],
+    "status": [
+      "claim_aa9b5e7b57cc86c9579c"
+    ],
+    "title": [
+      "claim_aa9b5e7b57cc86c9579c"
+    ]
+  },
+  "id": "mentor_2131f4ef31cf7b84b3f3",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aa9b5e7b57cc86c9579c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李锭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fd8f453252090338813f",
+      "claim_ids": [
+        "claim_aa9b5e7b57cc86c9579c"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1071/1685.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "程序分析,系统监控"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1071/1685.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

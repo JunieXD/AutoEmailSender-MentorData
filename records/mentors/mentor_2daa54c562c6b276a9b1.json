@@ -1,0 +1,94 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3c1cef9266c815617ed3"
+      ],
+      "ended_at": null,
+      "id": "aff_25b544be9b8df461f882",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8925/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3c1cef9266c815617ed3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_25b544be9b8df461f882",
+      "claim_ids": [
+        "claim_3c1cef9266c815617ed3"
+      ],
+      "is_primary": true,
+      "normalized_value": "wudan@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8925/",
+      "status": "current",
+      "type": "email",
+      "value": "wudan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3c1cef9266c815617ed3"
+    ],
+    "email": [
+      "claim_3c1cef9266c815617ed3"
+    ],
+    "name": [
+      "claim_3c1cef9266c815617ed3"
+    ],
+    "recent_papers": [
+      "claim_3c1cef9266c815617ed3"
+    ],
+    "research_directions": [
+      "claim_3c1cef9266c815617ed3"
+    ],
+    "status": [
+      "claim_3c1cef9266c815617ed3"
+    ],
+    "title": [
+      "claim_3c1cef9266c815617ed3"
+    ]
+  },
+  "id": "mentor_2daa54c562c6b276a9b1",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3c1cef9266c815617ed3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴丹"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Wu D. Hearing the Sound in the Brain: Influences of Different EEG References. Frontiers in Neuroscience, 2018, 12: 148.",
+    "Wu D, Kendrick KM, Levitin DJ, Li C, Yao D. Bach is the father of harmony: revealed by a 1/f fluctuation analysis across musical genres. PLoS One, 2015, 10(11): e0142431."
+  ],
+  "research_directions": [
+    "计算机技术",
+    "软件工程",
+    "人工智能",
+    "大数据技术与工程",
+    "机器学习与认知计算",
+    "计算机软件与理论",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8925/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

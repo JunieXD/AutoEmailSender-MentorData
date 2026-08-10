@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_28a2f62aab5ef497e875"
+      ],
+      "ended_at": null,
+      "id": "aff_96cb8efe2b9002f41300",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_329ce4e34426ad66a05d",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1163.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_28a2f62aab5ef497e875"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96cb8efe2b9002f41300",
+      "claim_ids": [
+        "claim_28a2f62aab5ef497e875"
+      ],
+      "is_primary": true,
+      "normalized_value": "xhqi@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1163.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xhqi@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_28a2f62aab5ef497e875"
+    ],
+    "email": [
+      "claim_28a2f62aab5ef497e875"
+    ],
+    "name": [
+      "claim_28a2f62aab5ef497e875"
+    ],
+    "profile_url": [
+      "claim_28a2f62aab5ef497e875"
+    ],
+    "status": [
+      "claim_28a2f62aab5ef497e875"
+    ]
+  },
+  "id": "mentor_43968fabc457ba80314a",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_28a2f62aab5ef497e875"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "齐向晖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_96cb8efe2b9002f41300",
+      "claim_ids": [
+        "claim_28a2f62aab5ef497e875"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1163.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1163.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

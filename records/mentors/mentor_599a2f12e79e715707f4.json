@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_43d37871ae5634d6f6dd"
+      ],
+      "ended_at": null,
+      "id": "aff_c06f5a24e7bfbb872415",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8767",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_43d37871ae5634d6f6dd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c06f5a24e7bfbb872415",
+      "claim_ids": [
+        "claim_43d37871ae5634d6f6dd"
+      ],
+      "is_primary": true,
+      "normalized_value": "sren@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8767",
+      "status": "current",
+      "type": "email",
+      "value": "sren@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_43d37871ae5634d6f6dd"
+    ],
+    "email": [
+      "claim_43d37871ae5634d6f6dd"
+    ],
+    "name": [
+      "claim_43d37871ae5634d6f6dd"
+    ],
+    "profile_url": [
+      "claim_43d37871ae5634d6f6dd"
+    ],
+    "recent_papers": [
+      "claim_43d37871ae5634d6f6dd"
+    ],
+    "research_directions": [
+      "claim_43d37871ae5634d6f6dd"
+    ],
+    "status": [
+      "claim_43d37871ae5634d6f6dd"
+    ],
+    "title": [
+      "claim_43d37871ae5634d6f6dd"
+    ]
+  },
+  "id": "mentor_599a2f12e79e715707f4",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_43d37871ae5634d6f6dd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任爽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c06f5a24e7bfbb872415",
+      "claim_ids": [
+        "claim_43d37871ae5634d6f6dd"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8767"
+    }
+  ],
+  "recent_papers": [
+    "Zhang Xinyun, Yu Ruiqi, Ren Shuang, Neural Implicit Representations for Multi-View Surface Reconstruction: A Survey, IEEE Transactions on Visualization and Computer Graphics, Vol.31, No.10, 9444-9463, October 2025",
+    "Han Bing, Deng Lixiang, Zheng Yi, Ren Shuang, S3U-PVNet: Arbitrary-scale point cloud upsampling via Point-Voxel Network based on Siamese Self-Supervised Learning,Computer Vision and Image Understanding, Vol.239, 1-16, February 2024, 103890",
+    "Han Bing, Deng Lixiang, Zheng Yi, Ren Shuang, UPU-SNet: Siamese network for unsupervised point cloud upsampling based on spatial-aware transformers, Computers and Graphics, Vol.115, 484-499, October 2023",
+    "Han Bing, Zhang Xinyun, Ren Shuang, PU-GACNet: Graph Attention Convolution Network for Point Cloud Upsampling, Image and Vision Computing, Vol.118, 104371, 1-13, February 2022, 104371",
+    "Han Bing, Ren Shuang, Mixed logit model based on nonlinear random utility functions: a transfer passenger demand prediction method on overnight D-trains, Soft Computing, Vol.26, No.7, 3411-3434, 2022"
+  ],
+  "research_directions": [
+    "人工智能、大数据、低空技术、虚拟现实、数据与知识工程、软件工程技术、轨道交通软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8767",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

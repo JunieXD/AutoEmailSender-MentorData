@@ -1,0 +1,85 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_15a2c22a9ca993d952dd"
+      ],
+      "ended_at": null,
+      "id": "aff_d0d6b92ca17f6f855704",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/5501/",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_15a2c22a9ca993d952dd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d0d6b92ca17f6f855704",
+      "claim_ids": [
+        "claim_15a2c22a9ca993d952dd"
+      ],
+      "is_primary": true,
+      "normalized_value": "fliu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/5501/",
+      "status": "current",
+      "type": "email",
+      "value": "fliu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_15a2c22a9ca993d952dd"
+    ],
+    "email": [
+      "claim_15a2c22a9ca993d952dd"
+    ],
+    "name": [
+      "claim_15a2c22a9ca993d952dd"
+    ],
+    "research_directions": [
+      "claim_15a2c22a9ca993d952dd"
+    ],
+    "status": [
+      "claim_15a2c22a9ca993d952dd"
+    ],
+    "title": [
+      "claim_15a2c22a9ca993d952dd"
+    ]
+  },
+  "id": "mentor_60e9d2315647f36f8212",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_15a2c22a9ca993d952dd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘峰"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "软件工程理论",
+    "轨道交通软件工程",
+    "人工智能",
+    "大数据技术与工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/5501/",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

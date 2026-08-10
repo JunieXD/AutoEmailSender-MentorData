@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5515b9cd6b7995646e9f"
+      ],
+      "ended_at": null,
+      "id": "aff_86c50829ffe2a8d74669",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9278",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5515b9cd6b7995646e9f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_86c50829ffe2a8d74669",
+      "claim_ids": [
+        "claim_5515b9cd6b7995646e9f"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangshuo@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9278",
+      "status": "current",
+      "type": "email",
+      "value": "zhangshuo@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5515b9cd6b7995646e9f"
+    ],
+    "email": [
+      "claim_5515b9cd6b7995646e9f"
+    ],
+    "name": [
+      "claim_5515b9cd6b7995646e9f"
+    ],
+    "profile_url": [
+      "claim_5515b9cd6b7995646e9f"
+    ],
+    "recent_papers": [
+      "claim_5515b9cd6b7995646e9f"
+    ],
+    "research_directions": [
+      "claim_5515b9cd6b7995646e9f"
+    ],
+    "status": [
+      "claim_5515b9cd6b7995646e9f"
+    ],
+    "title": [
+      "claim_5515b9cd6b7995646e9f"
+    ]
+  },
+  "id": "mentor_bb301f2428e3fe018116",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5515b9cd6b7995646e9f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张硕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_86c50829ffe2a8d74669",
+      "claim_ids": [
+        "claim_5515b9cd6b7995646e9f"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9278"
+    }
+  ],
+  "recent_papers": [
+    "LF-BVN: Blind-View Network for Self-Supervised Light Field Denoising (CVPR 2026)",
+    "Epipolar Consistent Attention Aggregation Network for Unsupervised Light Field Disparity Estimation (ICCV 2025)",
+    "Exploring View Consistency for Scene-Adaptive Low-Light Light Field Image Enhancement (ICCV 2025)",
+    "Epipolar Consistency-based Network for Structure-Aware LF Semantic Segmentation (ACM MM 2025)",
+    "Hierarchical Interactive Multi-Plane Image Construction for Light Field Background and Reflection Separation (TCSVT 2026)"
+  ],
+  "research_directions": [
+    "深度学习算法及其在计算机视觉中的应用,包括像素级视觉任务(图像超分辨、图像修复、图像增强等)、三维重建任务(多目视觉、深度估计、视角仿真、神经网络辐射场等)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9278",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_78c56b50bbf1c56f7c94"
+      ],
+      "ended_at": null,
+      "id": "aff_0aaf87b64d9d369b792d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8584",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_78c56b50bbf1c56f7c94"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0aaf87b64d9d369b792d",
+      "claim_ids": [
+        "claim_78c56b50bbf1c56f7c94"
+      ],
+      "is_primary": true,
+      "normalized_value": "kxiong@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8584",
+      "status": "current",
+      "type": "email",
+      "value": "kxiong@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_78c56b50bbf1c56f7c94"
+    ],
+    "email": [
+      "claim_78c56b50bbf1c56f7c94"
+    ],
+    "name": [
+      "claim_78c56b50bbf1c56f7c94"
+    ],
+    "profile_url": [
+      "claim_78c56b50bbf1c56f7c94"
+    ],
+    "recent_papers": [
+      "claim_78c56b50bbf1c56f7c94"
+    ],
+    "research_directions": [
+      "claim_78c56b50bbf1c56f7c94"
+    ],
+    "status": [
+      "claim_78c56b50bbf1c56f7c94"
+    ],
+    "title": [
+      "claim_78c56b50bbf1c56f7c94"
+    ]
+  },
+  "id": "mentor_bab89931594ca274cd64",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_78c56b50bbf1c56f7c94"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "熊轲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0aaf87b64d9d369b792d",
+      "claim_ids": [
+        "claim_78c56b50bbf1c56f7c94"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8584"
+    }
+  ],
+  "recent_papers": [
+    "Maximizing Harvested Energy in Green Energy Powered Multi-user MISO RF-based WPT",
+    "Maximizing Harvested Energy in Natural Energy Powered RF WPT with Nonlinear EH Model",
+    "Collaborative task offloading and resource allocation in small-cell MEC: A multi-agent PPO-based scheme",
+    "Minimizing AoI in high-speed railway mobile networks: DQN-based methods",
+    "AoI-minimal power adjustment in RF-EH-powered industrial IoT networks: A soft Actor-Critic-Based Method"
+  ],
+  "research_directions": [
+    "人工智能+6G网络、大模型在智慧电网和智慧教育等领域的应用、基于图学习/强化学习的网络优化、无线大数据分析与处理等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8584",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

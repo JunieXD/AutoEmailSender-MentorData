@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4294a1108b2cf4102c46"
+      ],
+      "ended_at": null,
+      "id": "aff_9ed87faabaad63465a49",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2243.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4294a1108b2cf4102c46"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9ed87faabaad63465a49",
+      "claim_ids": [
+        "claim_4294a1108b2cf4102c46"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhy@cis.pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2243.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhy@cis.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4294a1108b2cf4102c46"
+    ],
+    "email": [
+      "claim_4294a1108b2cf4102c46"
+    ],
+    "name": [
+      "claim_4294a1108b2cf4102c46"
+    ],
+    "profile_url": [
+      "claim_4294a1108b2cf4102c46"
+    ],
+    "research_directions": [
+      "claim_4294a1108b2cf4102c46"
+    ],
+    "status": [
+      "claim_4294a1108b2cf4102c46"
+    ],
+    "title": [
+      "claim_4294a1108b2cf4102c46"
+    ]
+  },
+  "id": "mentor_c369a480732813e97c7d",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4294a1108b2cf4102c46"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张岩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9ed87faabaad63465a49",
+      "claim_ids": [
+        "claim_4294a1108b2cf4102c46"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2243.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信息检索,数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2243.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

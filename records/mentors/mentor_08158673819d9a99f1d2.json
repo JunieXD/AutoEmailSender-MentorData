@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b58097de902ab8d8c29e"
+      ],
+      "ended_at": null,
+      "id": "aff_2a02ae25ee6c42be212c",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_329ce4e34426ad66a05d",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1245.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b58097de902ab8d8c29e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a02ae25ee6c42be212c",
+      "claim_ids": [
+        "claim_b58097de902ab8d8c29e"
+      ],
+      "is_primary": true,
+      "normalized_value": "xjzhou@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1245.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xjzhou@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b58097de902ab8d8c29e"
+    ],
+    "email": [
+      "claim_b58097de902ab8d8c29e"
+    ],
+    "name": [
+      "claim_b58097de902ab8d8c29e"
+    ],
+    "profile_url": [
+      "claim_b58097de902ab8d8c29e"
+    ],
+    "research_directions": [
+      "claim_b58097de902ab8d8c29e"
+    ],
+    "status": [
+      "claim_b58097de902ab8d8c29e"
+    ],
+    "title": [
+      "claim_b58097de902ab8d8c29e"
+    ]
+  },
+  "id": "mentor_08158673819d9a99f1d2",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b58097de902ab8d8c29e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周小计"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a02ae25ee6c42be212c",
+      "claim_ids": [
+        "claim_b58097de902ab8d8c29e"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1245.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超冷原子与物质波,精密测量"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1245.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

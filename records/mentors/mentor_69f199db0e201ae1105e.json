@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3afbec47621508ea5695"
+      ],
+      "ended_at": null,
+      "id": "aff_869d00295b2fc0b2c7c7",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_b03bc9847a81f7d4ea48",
+      "source_url": "https://cs.pku.edu.cn/info/1078/1672.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3afbec47621508ea5695"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_869d00295b2fc0b2c7c7",
+      "claim_ids": [
+        "claim_3afbec47621508ea5695"
+      ],
+      "is_primary": true,
+      "normalized_value": "szf@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1078/1672.htm",
+      "status": "current",
+      "type": "email",
+      "value": "szf@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3afbec47621508ea5695"
+    ],
+    "email": [
+      "claim_3afbec47621508ea5695"
+    ],
+    "name": [
+      "claim_3afbec47621508ea5695"
+    ],
+    "profile_url": [
+      "claim_3afbec47621508ea5695"
+    ],
+    "research_directions": [
+      "claim_3afbec47621508ea5695"
+    ],
+    "status": [
+      "claim_3afbec47621508ea5695"
+    ],
+    "title": [
+      "claim_3afbec47621508ea5695"
+    ]
+  },
+  "id": "mentor_69f199db0e201ae1105e",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3afbec47621508ea5695"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "穗志方"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_869d00295b2fc0b2c7c7",
+      "claim_ids": [
+        "claim_3afbec47621508ea5695"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1078/1672.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、文本挖掘与知识工程、计算语言学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1078/1672.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

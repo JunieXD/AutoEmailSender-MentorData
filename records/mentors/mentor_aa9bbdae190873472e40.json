@@ -1,0 +1,112 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5a7e2827d1cde30dfc65"
+      ],
+      "ended_at": null,
+      "id": "aff_920dec7a434c3ed3a32a",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7913",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5a7e2827d1cde30dfc65"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_920dec7a434c3ed3a32a",
+      "claim_ids": [
+        "claim_5a7e2827d1cde30dfc65"
+      ],
+      "is_primary": true,
+      "normalized_value": "nwang@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7913",
+      "status": "current",
+      "type": "email",
+      "value": "nwang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5a7e2827d1cde30dfc65"
+    ],
+    "email": [
+      "claim_5a7e2827d1cde30dfc65"
+    ],
+    "name": [
+      "claim_5a7e2827d1cde30dfc65"
+    ],
+    "profile_url": [
+      "claim_5a7e2827d1cde30dfc65"
+    ],
+    "recent_papers": [
+      "claim_5a7e2827d1cde30dfc65"
+    ],
+    "research_directions": [
+      "claim_5a7e2827d1cde30dfc65"
+    ],
+    "status": [
+      "claim_5a7e2827d1cde30dfc65"
+    ],
+    "title": [
+      "claim_5a7e2827d1cde30dfc65"
+    ]
+  },
+  "id": "mentor_aa9bbdae190873472e40",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5a7e2827d1cde30dfc65"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_920dec7a434c3ed3a32a",
+      "claim_ids": [
+        "claim_5a7e2827d1cde30dfc65"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7913"
+    }
+  ],
+  "recent_papers": [
+    "CrossER: A robust and adaptable generalized entity resolution framework for diverse and heterogeneous datasets",
+    "Automating Data Preparation Pipeline Efficiently via Monte Carlo Tree Search",
+    "QueryGuide: 基于生成式模型的细粒度查询提示推荐方法",
+    "SwiftDP: An Efficient Framework for Automated Data Preparation Pipeline Generation",
+    "A Robust Attention-based Cardinality Estimator with Domain Adaptation",
+    "QueryAccelerator: A SQL converter capturing and transforming the slow plan",
+    "CrowdDA: Difficulty-aware crowdsourcing task optimization for cleaning web tables",
+    "基于工人长短期时空偏好的众包任务分配"
+  ],
+  "research_directions": [
+    "数据与知识工程",
+    "人工智能",
+    "大数据技术与工程",
+    "数据管理",
+    "数据质量",
+    "大数据群智计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7913",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

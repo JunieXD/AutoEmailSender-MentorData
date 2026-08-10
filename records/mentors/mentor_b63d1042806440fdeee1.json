@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9865a9c747bed0c183c2"
+      ],
+      "ended_at": null,
+      "id": "aff_3131bf34344e0b49c018",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1310/3106.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_9865a9c747bed0c183c2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3131bf34344e0b49c018",
+      "claim_ids": [
+        "claim_9865a9c747bed0c183c2"
+      ],
+      "is_primary": true,
+      "normalized_value": "aray@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1310/3106.htm",
+      "status": "current",
+      "type": "email",
+      "value": "aray@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9865a9c747bed0c183c2"
+    ],
+    "email": [
+      "claim_9865a9c747bed0c183c2"
+    ],
+    "name": [
+      "claim_9865a9c747bed0c183c2"
+    ],
+    "profile_url": [
+      "claim_9865a9c747bed0c183c2"
+    ],
+    "status": [
+      "claim_9865a9c747bed0c183c2"
+    ]
+  },
+  "id": "mentor_b63d1042806440fdeee1",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9865a9c747bed0c183c2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐松青"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3131bf34344e0b49c018",
+      "claim_ids": [
+        "claim_9865a9c747bed0c183c2"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1310/3106.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1310/3106.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

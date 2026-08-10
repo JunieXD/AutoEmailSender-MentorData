@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fc4fbe19af1314d50773"
+      ],
+      "ended_at": null,
+      "id": "aff_9abe010606a79a54a200",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7791/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_fc4fbe19af1314d50773"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9abe010606a79a54a200",
+      "claim_ids": [
+        "claim_fc4fbe19af1314d50773"
+      ],
+      "is_primary": true,
+      "normalized_value": "lixy@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7791/",
+      "status": "current",
+      "type": "email",
+      "value": "lixy@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fc4fbe19af1314d50773"
+    ],
+    "email": [
+      "claim_fc4fbe19af1314d50773"
+    ],
+    "name": [
+      "claim_fc4fbe19af1314d50773"
+    ],
+    "research_directions": [
+      "claim_fc4fbe19af1314d50773"
+    ],
+    "status": [
+      "claim_fc4fbe19af1314d50773"
+    ],
+    "title": [
+      "claim_fc4fbe19af1314d50773"
+    ]
+  },
+  "id": "mentor_82c8b92c67319f8c5b6b",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fc4fbe19af1314d50773"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李晓勇"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机技术",
+    "软件工程",
+    "人工智能",
+    "大数据技术与工程",
+    "计算机网络与系统安全",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7791/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

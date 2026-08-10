@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_585c43cfeae08a018d61"
+      ],
+      "ended_at": null,
+      "id": "aff_1e1d82cbcc1b128b8b41",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2252.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_585c43cfeae08a018d61"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1e1d82cbcc1b128b8b41",
+      "claim_ids": [
+        "claim_585c43cfeae08a018d61"
+      ],
+      "is_primary": true,
+      "normalized_value": "yhtong@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2252.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yhtong@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_585c43cfeae08a018d61"
+    ],
+    "email": [
+      "claim_585c43cfeae08a018d61"
+    ],
+    "name": [
+      "claim_585c43cfeae08a018d61"
+    ],
+    "profile_url": [
+      "claim_585c43cfeae08a018d61"
+    ],
+    "research_directions": [
+      "claim_585c43cfeae08a018d61"
+    ],
+    "status": [
+      "claim_585c43cfeae08a018d61"
+    ],
+    "title": [
+      "claim_585c43cfeae08a018d61"
+    ]
+  },
+  "id": "mentor_b66ca05d83823b30e787",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_585c43cfeae08a018d61"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "童云海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1e1d82cbcc1b128b8b41",
+      "claim_ids": [
+        "claim_585c43cfeae08a018d61"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2252.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘与知识发现,智能媒体分析,隐私保护,数字图书馆"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2252.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

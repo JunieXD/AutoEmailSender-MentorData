@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2b52144cf9495ba52c43"
+      ],
+      "ended_at": null,
+      "id": "aff_651aa20c9a3cd870e673",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_2f3748952db80a92837b",
+      "source_url": "https://faculty.bjtu.edu.cn/6190",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2b52144cf9495ba52c43"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_651aa20c9a3cd870e673",
+      "claim_ids": [
+        "claim_2b52144cf9495ba52c43"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhhwang@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/6190",
+      "status": "current",
+      "type": "email",
+      "value": "zhhwang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2b52144cf9495ba52c43"
+    ],
+    "email": [
+      "claim_2b52144cf9495ba52c43"
+    ],
+    "name": [
+      "claim_2b52144cf9495ba52c43"
+    ],
+    "profile_url": [
+      "claim_2b52144cf9495ba52c43"
+    ],
+    "recent_papers": [
+      "claim_2b52144cf9495ba52c43"
+    ],
+    "research_directions": [
+      "claim_2b52144cf9495ba52c43"
+    ],
+    "status": [
+      "claim_2b52144cf9495ba52c43"
+    ],
+    "title": [
+      "claim_2b52144cf9495ba52c43"
+    ]
+  },
+  "id": "mentor_96ce0ec9842fd00e1b47",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2b52144cf9495ba52c43"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王志海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_651aa20c9a3cd870e673",
+      "claim_ids": [
+        "claim_2b52144cf9495ba52c43"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/6190"
+    }
+  ],
+  "recent_papers": [
+    "韩萌,王志海.采用信息排序的SuperParent算法的研究. 计算机工程与设计,2012",
+    "韩萌,王志海,原继东.Closed sequential pattern mining in high dimensional sequences. Journal of Software,2013",
+    "韩萌,王志海,原继东.Mining constraint based sequential patterns and rules on restaurant recommendation system. Journal of Computational Information Systems,2013",
+    "原继东,王志海,韩萌,刘亚姝.Efficiently using different arrays in mining access patterns. Journal of Computational Information Systems,2013",
+    "王中锋,王志海,解文杰.Tree-structured Bayesian network learning with application to scene classification. Electronics Letters,2011",
+    "王中锋,王志海.基于条件对数似然函数导数的贝叶斯网络分类器优化算法. 计算机学报,2012",
+    "付彬,王志海.基于树型依赖结构的多标记分类算法. 模式识别与人工智能,2012"
+  ],
+  "research_directions": [
+    "数据与知识工程、计算机技术、软件工程、人工智能、大数据技术与工程、生成式人工智能与安全、新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/6190",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

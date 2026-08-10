@@ -1,0 +1,88 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_83cfb606bdf7bdb8ad60"
+      ],
+      "ended_at": null,
+      "id": "aff_7ca3027169747523b9fd",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/6460/",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_83cfb606bdf7bdb8ad60"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7ca3027169747523b9fd",
+      "claim_ids": [
+        "claim_83cfb606bdf7bdb8ad60"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjw@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/6460/",
+      "status": "current",
+      "type": "email",
+      "value": "zjw@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_83cfb606bdf7bdb8ad60"
+    ],
+    "email": [
+      "claim_83cfb606bdf7bdb8ad60"
+    ],
+    "name": [
+      "claim_83cfb606bdf7bdb8ad60"
+    ],
+    "research_directions": [
+      "claim_83cfb606bdf7bdb8ad60"
+    ],
+    "status": [
+      "claim_83cfb606bdf7bdb8ad60"
+    ],
+    "title": [
+      "claim_83cfb606bdf7bdb8ad60"
+    ]
+  },
+  "id": "mentor_0a7d9db6db68f3594b43",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_83cfb606bdf7bdb8ad60"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张骏温"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机技术",
+    "计算机网络与系统安全",
+    "人工智能",
+    "轨道交通信息技术",
+    "大数据技术与工程",
+    "软件工程",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/6460/",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

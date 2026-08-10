@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e4db86c269d2161f79ca"
+      ],
+      "ended_at": null,
+      "id": "aff_a39eef77a38f39c10e6e",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bd17f676cf6edda88750",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1683.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e4db86c269d2161f79ca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a39eef77a38f39c10e6e",
+      "claim_ids": [
+        "claim_e4db86c269d2161f79ca"
+      ],
+      "is_primary": true,
+      "normalized_value": "gluo@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1683.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gluo@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e4db86c269d2161f79ca"
+    ],
+    "email": [
+      "claim_e4db86c269d2161f79ca"
+    ],
+    "name": [
+      "claim_e4db86c269d2161f79ca"
+    ],
+    "profile_url": [
+      "claim_e4db86c269d2161f79ca"
+    ],
+    "research_directions": [
+      "claim_e4db86c269d2161f79ca"
+    ],
+    "status": [
+      "claim_e4db86c269d2161f79ca"
+    ]
+  },
+  "id": "mentor_ac1ac261de02fb4e210c",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e4db86c269d2161f79ca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗国杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a39eef77a38f39c10e6e",
+      "claim_ids": [
+        "claim_e4db86c269d2161f79ca"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1071/1683.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型体系结构、设计自动化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1071/1683.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

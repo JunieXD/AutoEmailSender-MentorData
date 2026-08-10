@@ -1,0 +1,89 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3274baa6d5f63c044de5"
+      ],
+      "ended_at": null,
+      "id": "aff_6557b1610454874cf3ec",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_52c43fcebed3c4c82ce0",
+      "source_url": "https://faculty.bjtu.edu.cn/7320/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3274baa6d5f63c044de5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6557b1610454874cf3ec",
+      "claim_ids": [
+        "claim_3274baa6d5f63c044de5"
+      ],
+      "is_primary": true,
+      "normalized_value": "qzhwang1@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7320/",
+      "status": "current",
+      "type": "email",
+      "value": "qzhwang1@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3274baa6d5f63c044de5"
+    ],
+    "email": [
+      "claim_3274baa6d5f63c044de5"
+    ],
+    "name": [
+      "claim_3274baa6d5f63c044de5"
+    ],
+    "recent_papers": [
+      "claim_3274baa6d5f63c044de5"
+    ],
+    "research_directions": [
+      "claim_3274baa6d5f63c044de5"
+    ],
+    "status": [
+      "claim_3274baa6d5f63c044de5"
+    ],
+    "title": [
+      "claim_3274baa6d5f63c044de5"
+    ]
+  },
+  "id": "mentor_1342d7358e13492d0686",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3274baa6d5f63c044de5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王奇志"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Trajectory Identification of Spinning Ball Using Improved Extreme Learning Machine in Table Tennis Robot System (2015)",
+    "无迹卡尔曼滤波在旋转乒乓球轨迹预测中的应用 (2014)",
+    "乒乓球轨迹预测的研究与仿真 (2013)"
+  ],
+  "research_directions": [
+    "机器学习与认知计算,视觉感知,智能计算,行为分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7320/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

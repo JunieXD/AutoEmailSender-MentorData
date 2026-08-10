@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_71b538656aa53694f895"
+      ],
+      "ended_at": null,
+      "id": "aff_e2f660eafe137556dcf4",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d5dcc8084f11deff3208",
+      "source_url": "https://cs.pku.edu.cn/info/1085/1726.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_71b538656aa53694f895"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e2f660eafe137556dcf4",
+      "claim_ids": [
+        "claim_71b538656aa53694f895"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoyuan@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1085/1726.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoyuan@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_71b538656aa53694f895"
+    ],
+    "email": [
+      "claim_71b538656aa53694f895"
+    ],
+    "name": [
+      "claim_71b538656aa53694f895"
+    ],
+    "profile_url": [
+      "claim_71b538656aa53694f895"
+    ],
+    "research_directions": [
+      "claim_71b538656aa53694f895"
+    ],
+    "status": [
+      "claim_71b538656aa53694f895"
+    ],
+    "title": [
+      "claim_71b538656aa53694f895"
+    ]
+  },
+  "id": "mentor_b031a3096f72e8dd8481",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_71b538656aa53694f895"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁骁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e2f660eafe137556dcf4",
+      "claim_ids": [
+        "claim_71b538656aa53694f895"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1085/1726.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子计算、量子信息、量子资源理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1085/1726.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

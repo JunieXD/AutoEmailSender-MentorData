@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aa797131820bf1ac720b"
+      ],
+      "ended_at": null,
+      "id": "aff_13303470f1ee9af0dcf2",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/6448",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aa797131820bf1ac720b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_13303470f1ee9af0dcf2",
+      "claim_ids": [
+        "claim_aa797131820bf1ac720b"
+      ],
+      "is_primary": true,
+      "normalized_value": "xqliu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/6448",
+      "status": "current",
+      "type": "email",
+      "value": "xqliu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aa797131820bf1ac720b"
+    ],
+    "email": [
+      "claim_aa797131820bf1ac720b"
+    ],
+    "name": [
+      "claim_aa797131820bf1ac720b"
+    ],
+    "profile_url": [
+      "claim_aa797131820bf1ac720b"
+    ],
+    "research_directions": [
+      "claim_aa797131820bf1ac720b"
+    ],
+    "status": [
+      "claim_aa797131820bf1ac720b"
+    ],
+    "title": [
+      "claim_aa797131820bf1ac720b"
+    ]
+  },
+  "id": "mentor_6dfcf6657265e525ff98",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aa797131820bf1ac720b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘湘黔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_13303470f1ee9af0dcf2",
+      "claim_ids": [
+        "claim_aa797131820bf1ac720b"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/6448"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新一代电子信息技术",
+    "软件工程",
+    "人工智能",
+    "大数据技术与工程",
+    "低空航行安全保障",
+    "轨道交通信息技术",
+    "数字媒体信息处理与智能分析",
+    "计算机技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/6448",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

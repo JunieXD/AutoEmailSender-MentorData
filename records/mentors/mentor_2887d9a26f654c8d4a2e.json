@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b40892a733ebb6b50dff"
+      ],
+      "ended_at": null,
+      "id": "aff_c489c9f863aef4f9355a",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7922",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b40892a733ebb6b50dff"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c489c9f863aef4f9355a",
+      "claim_ids": [
+        "claim_b40892a733ebb6b50dff"
+      ],
+      "is_primary": true,
+      "normalized_value": "qzou@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7922",
+      "status": "current",
+      "type": "email",
+      "value": "qzou@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b40892a733ebb6b50dff"
+    ],
+    "email": [
+      "claim_b40892a733ebb6b50dff"
+    ],
+    "name": [
+      "claim_b40892a733ebb6b50dff"
+    ],
+    "profile_url": [
+      "claim_b40892a733ebb6b50dff"
+    ],
+    "recent_papers": [
+      "claim_b40892a733ebb6b50dff"
+    ],
+    "research_directions": [
+      "claim_b40892a733ebb6b50dff"
+    ],
+    "status": [
+      "claim_b40892a733ebb6b50dff"
+    ],
+    "title": [
+      "claim_b40892a733ebb6b50dff"
+    ]
+  },
+  "id": "mentor_2887d9a26f654c8d4a2e",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b40892a733ebb6b50dff"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邹琪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c489c9f863aef4f9355a",
+      "claim_ids": [
+        "claim_b40892a733ebb6b50dff"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7922"
+    }
+  ],
+  "recent_papers": [
+    "Xixia Xu, Qi Zou, Jiamao Li. Hierarchical Contrastive Consistency for Human Pose Estimation in Images and Videos. IEEE TCSVT, 2025",
+    "Xiangyun Tan, Qi Zou. TrajDiffRefine: refinement of spatio-temporal stochastic trajectory prediction via diffusion. Applied Intelligence, 2025",
+    "Zhiyuan Liu, Qi Zou*, Xixia Xu, Yanting Pei. Multi-Person Pose Estimation with Feature Enhancement and Decoupling based on Contrastive Learning. ACM TOMM, 2025",
+    "Xiaoyu Chen, Chao Bai, ZhenyaoWu, Xinyi Wu, Qi Zou*, Yong Xia, Song Wang. Coarse-to-fine text injecting for realistic image super-resolution. Neurocomputing, 2025",
+    "Xixia Xu, Qi Zou*, Jiamao Li. Rethinking the Sparse End-to-End Multiperson Pose Estimation. IEEE TSMC, 2024"
+  ],
+  "research_directions": [
+    "机器学习与认知计算",
+    "计算机视觉",
+    "多目标跟踪",
+    "姿态估计",
+    "轨迹预测",
+    "交互关系检测",
+    "视频预测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7922",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

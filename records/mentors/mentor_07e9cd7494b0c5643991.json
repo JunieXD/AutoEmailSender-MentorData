@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_57b998263a61aac40123"
+      ],
+      "ended_at": null,
+      "id": "aff_427e427676f206acaa64",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9815/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_57b998263a61aac40123"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_427e427676f206acaa64",
+      "claim_ids": [
+        "claim_57b998263a61aac40123"
+      ],
+      "is_primary": true,
+      "normalized_value": "kuoyang@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9815/",
+      "status": "current",
+      "type": "email",
+      "value": "kuoyang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_57b998263a61aac40123"
+    ],
+    "email": [
+      "claim_57b998263a61aac40123"
+    ],
+    "name": [
+      "claim_57b998263a61aac40123"
+    ],
+    "research_directions": [
+      "claim_57b998263a61aac40123"
+    ],
+    "status": [
+      "claim_57b998263a61aac40123"
+    ],
+    "title": [
+      "claim_57b998263a61aac40123"
+    ]
+  },
+  "id": "mentor_07e9cd7494b0c5643991",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_57b998263a61aac40123"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨扩"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "知识图谱、图学习与多模态学习等AI算法设计以及医学网络关系预测与智能辅助诊疗等应用研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9815/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

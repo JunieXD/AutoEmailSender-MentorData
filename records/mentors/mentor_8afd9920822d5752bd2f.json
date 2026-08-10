@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b2b9095613202455f9b"
+      ],
+      "ended_at": null,
+      "id": "aff_9821bdeaf6ea47abba44",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1067/1623.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b2b9095613202455f9b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9821bdeaf6ea47abba44",
+      "claim_ids": [
+        "claim_7b2b9095613202455f9b"
+      ],
+      "is_primary": true,
+      "normalized_value": "huzj@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1067/1623.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huzj@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b2b9095613202455f9b"
+    ],
+    "email": [
+      "claim_7b2b9095613202455f9b"
+    ],
+    "name": [
+      "claim_7b2b9095613202455f9b"
+    ],
+    "profile_url": [
+      "claim_7b2b9095613202455f9b"
+    ],
+    "research_directions": [
+      "claim_7b2b9095613202455f9b"
+    ],
+    "status": [
+      "claim_7b2b9095613202455f9b"
+    ],
+    "title": [
+      "claim_7b2b9095613202455f9b"
+    ]
+  },
+  "id": "mentor_8afd9920822d5752bd2f",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b2b9095613202455f9b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡振江"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9821bdeaf6ea47abba44",
+      "claim_ids": [
+        "claim_7b2b9095613202455f9b"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1067/1623.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "程序设计语言,函数式语言,程序演算,软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1067/1623.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

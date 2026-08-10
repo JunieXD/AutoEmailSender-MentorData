@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6f0ced4d7a41a874ed5"
+      ],
+      "ended_at": null,
+      "id": "aff_888d44aae65144f76d3e",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a746c189434c17b999b2",
+      "source_url": "https://cs.pku.edu.cn/info/1084/1719.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6f0ced4d7a41a874ed5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_888d44aae65144f76d3e",
+      "claim_ids": [
+        "claim_c6f0ced4d7a41a874ed5"
+      ],
+      "is_primary": true,
+      "normalized_value": "webg@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1084/1719.htm",
+      "status": "current",
+      "type": "email",
+      "value": "webg@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6f0ced4d7a41a874ed5"
+    ],
+    "email": [
+      "claim_c6f0ced4d7a41a874ed5"
+    ],
+    "name": [
+      "claim_c6f0ced4d7a41a874ed5"
+    ],
+    "profile_url": [
+      "claim_c6f0ced4d7a41a874ed5"
+    ],
+    "research_directions": [
+      "claim_c6f0ced4d7a41a874ed5"
+    ],
+    "status": [
+      "claim_c6f0ced4d7a41a874ed5"
+    ],
+    "title": [
+      "claim_c6f0ced4d7a41a874ed5"
+    ]
+  },
+  "id": "mentor_04ad61bcbeb2a8a1cc0c",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6f0ced4d7a41a874ed5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢正茂"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_888d44aae65144f76d3e",
+      "claim_ids": [
+        "claim_c6f0ced4d7a41a874ed5"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1084/1719.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "互联网内容搜集与信息提取"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1084/1719.htm",
+  "title": "助理研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

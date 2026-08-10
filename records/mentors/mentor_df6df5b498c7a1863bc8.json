@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9a51c842995a69d86b10"
+      ],
+      "ended_at": null,
+      "id": "aff_399910f8c2e309a3bfc6",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1084/1713.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9a51c842995a69d86b10"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_399910f8c2e309a3bfc6",
+      "claim_ids": [
+        "claim_9a51c842995a69d86b10"
+      ],
+      "is_primary": true,
+      "normalized_value": "taoxie@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1084/1713.htm",
+      "status": "current",
+      "type": "email",
+      "value": "taoxie@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9a51c842995a69d86b10"
+    ],
+    "email": [
+      "claim_9a51c842995a69d86b10"
+    ],
+    "name": [
+      "claim_9a51c842995a69d86b10"
+    ],
+    "profile_url": [
+      "claim_9a51c842995a69d86b10"
+    ],
+    "research_directions": [
+      "claim_9a51c842995a69d86b10"
+    ],
+    "status": [
+      "claim_9a51c842995a69d86b10"
+    ],
+    "title": [
+      "claim_9a51c842995a69d86b10"
+    ]
+  },
+  "id": "mentor_df6df5b498c7a1863bc8",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9a51c842995a69d86b10"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_399910f8c2e309a3bfc6",
+      "claim_ids": [
+        "claim_9a51c842995a69d86b10"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1084/1713.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件工程,操作系统,可信人工智能,RISC-V"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1084/1713.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

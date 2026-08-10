@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6f61643ede43d150827b"
+      ],
+      "ended_at": null,
+      "id": "aff_fd22c1ef34a0f71eba78",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2246.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6f61643ede43d150827b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fd22c1ef34a0f71eba78",
+      "claim_ids": [
+        "claim_6f61643ede43d150827b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaohj@cis.pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2246.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaohj@cis.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6f61643ede43d150827b"
+    ],
+    "email": [
+      "claim_6f61643ede43d150827b"
+    ],
+    "name": [
+      "claim_6f61643ede43d150827b"
+    ],
+    "profile_url": [
+      "claim_6f61643ede43d150827b"
+    ],
+    "research_directions": [
+      "claim_6f61643ede43d150827b"
+    ],
+    "status": [
+      "claim_6f61643ede43d150827b"
+    ],
+    "title": [
+      "claim_6f61643ede43d150827b"
+    ]
+  },
+  "id": "mentor_acb9ba8a97e859c457b0",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6f61643ede43d150827b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵卉菁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fd22c1ef34a0f71eba78",
+      "claim_ids": [
+        "claim_6f61643ede43d150827b"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2246.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器感知,智能车,自动驾驶,自主移动机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2246.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

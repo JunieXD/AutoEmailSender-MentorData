@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_41b01cbeb79e09347cd8"
+      ],
+      "ended_at": null,
+      "id": "aff_801a5eaf33037793aaa3",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d5046f2763a667ab9a72",
+      "source_url": "https://faculty.bjtu.edu.cn/7444",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_41b01cbeb79e09347cd8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_801a5eaf33037793aaa3",
+      "claim_ids": [
+        "claim_41b01cbeb79e09347cd8"
+      ],
+      "is_primary": true,
+      "normalized_value": "chzhang1@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7444",
+      "status": "current",
+      "type": "email",
+      "value": "chzhang1@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_41b01cbeb79e09347cd8"
+    ],
+    "email": [
+      "claim_41b01cbeb79e09347cd8"
+    ],
+    "name": [
+      "claim_41b01cbeb79e09347cd8"
+    ],
+    "profile_url": [
+      "claim_41b01cbeb79e09347cd8"
+    ],
+    "recent_papers": [
+      "claim_41b01cbeb79e09347cd8"
+    ],
+    "research_directions": [
+      "claim_41b01cbeb79e09347cd8"
+    ],
+    "status": [
+      "claim_41b01cbeb79e09347cd8"
+    ],
+    "title": [
+      "claim_41b01cbeb79e09347cd8"
+    ]
+  },
+  "id": "mentor_df3f6ceaa391d23a1ac8",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_41b01cbeb79e09347cd8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张春"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_801a5eaf33037793aaa3",
+      "claim_ids": [
+        "claim_41b01cbeb79e09347cd8"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7444"
+    }
+  ],
+  "recent_papers": [
+    "王欢,张春,张宁,陈耀华.具有强泛化性的高铁逆变器开路故障诊断算法.计算机集成制造,2021",
+    "Huan Wang, Chun Zhang, Ning Zhang, Yiting Chen, Yaohua Chen. Fault Diagnosis for IGBTs Open-Circuit Faults in High-Speed Trains Based on Convolutional Neural Network. 2019 PHM-QINGDAO",
+    "Yiting Chen, Chun Zhang, Ning Zhang, Xue Guo, Huan Wang, Yaohua Chen. Cuckoo Search Based Relevance Vector Machine with Hybrid Kernel for Battery Remaining Useful Life Prediction. 2019 PHM-QINGDAO",
+    "Yaohua Chen, Chun Zhang, Ning Zhang, Yiting Chen, Huan Wang. Multi-Task Learning and Attention Mechanism Based Long Short-Term Memory for Temperature Prediction of EMU Bearing. 2019 PHM-QINGDAO",
+    "张春,周静.动车组运维效率关联规则挖掘优化算法.计算机研究与发展,2017"
+  ],
+  "research_directions": [
+    "轨道交通信息技术",
+    "软件工程技术",
+    "人工智能",
+    "大数据技术与工程",
+    "数据与知识工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7444",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bff09b1f1424ca3ed905"
+      ],
+      "ended_at": null,
+      "id": "aff_2d059fdfcbd4f8fcb578",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_c23623e3cd4dcb4d1c02",
+      "source_url": "https://ele.pku.edu.cn/info/1121/3693.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bff09b1f1424ca3ed905"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2d059fdfcbd4f8fcb578",
+      "claim_ids": [
+        "claim_bff09b1f1424ca3ed905"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuhangzhang@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1121/3693.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shuhangzhang@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bff09b1f1424ca3ed905"
+    ],
+    "email": [
+      "claim_bff09b1f1424ca3ed905"
+    ],
+    "name": [
+      "claim_bff09b1f1424ca3ed905"
+    ],
+    "profile_url": [
+      "claim_bff09b1f1424ca3ed905"
+    ],
+    "research_directions": [
+      "claim_bff09b1f1424ca3ed905"
+    ],
+    "status": [
+      "claim_bff09b1f1424ca3ed905"
+    ],
+    "title": [
+      "claim_bff09b1f1424ca3ed905"
+    ]
+  },
+  "id": "mentor_28944f1295c8b0c5db2f",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bff09b1f1424ca3ed905"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张舒航"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2d059fdfcbd4f8fcb578",
+      "claim_ids": [
+        "claim_bff09b1f1424ca3ed905"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1121/3693.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能无线网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1121/3693.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_53777e2c8925aa178062"
+      ],
+      "ended_at": null,
+      "id": "aff_ab787ac6811d69e85346",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2270.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_53777e2c8925aa178062"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ab787ac6811d69e85346",
+      "claim_ids": [
+        "claim_53777e2c8925aa178062"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoru.yuan@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2270.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoru.yuan@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_53777e2c8925aa178062"
+    ],
+    "email": [
+      "claim_53777e2c8925aa178062"
+    ],
+    "name": [
+      "claim_53777e2c8925aa178062"
+    ],
+    "profile_url": [
+      "claim_53777e2c8925aa178062"
+    ],
+    "research_directions": [
+      "claim_53777e2c8925aa178062"
+    ],
+    "status": [
+      "claim_53777e2c8925aa178062"
+    ],
+    "title": [
+      "claim_53777e2c8925aa178062"
+    ]
+  },
+  "id": "mentor_4f0c656d6b07d60bae69",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_53777e2c8925aa178062"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁晓如"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ab787ac6811d69e85346",
+      "claim_ids": [
+        "claim_53777e2c8925aa178062"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2270.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "科学可视化,信息可视化,可视分析,人机交互,计算机图形学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2270.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

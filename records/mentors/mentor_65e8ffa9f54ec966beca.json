@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_444d7ce28a774615b4dc"
+      ],
+      "ended_at": null,
+      "id": "aff_67e363149b27516a3ef9",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9627/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_444d7ce28a774615b4dc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_67e363149b27516a3ef9",
+      "claim_ids": [
+        "claim_444d7ce28a774615b4dc"
+      ],
+      "is_primary": true,
+      "normalized_value": "ytpei@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9627/",
+      "status": "current",
+      "type": "email",
+      "value": "ytpei@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_444d7ce28a774615b4dc"
+    ],
+    "email": [
+      "claim_444d7ce28a774615b4dc"
+    ],
+    "name": [
+      "claim_444d7ce28a774615b4dc"
+    ],
+    "recent_papers": [
+      "claim_444d7ce28a774615b4dc"
+    ],
+    "research_directions": [
+      "claim_444d7ce28a774615b4dc"
+    ],
+    "status": [
+      "claim_444d7ce28a774615b4dc"
+    ],
+    "title": [
+      "claim_444d7ce28a774615b4dc"
+    ]
+  },
+  "id": "mentor_65e8ffa9f54ec966beca",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_444d7ce28a774615b4dc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "裴艳婷"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Y. Pei, F. Yang. Mean teacher with pseudo-label correction for cross-domain image classification[J]. Neurocomputing, 2026."
+  ],
+  "research_directions": [
+    "计算机视觉、人工智能、具身智能、低空智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9627/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

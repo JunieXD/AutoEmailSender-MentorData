@@ -1,0 +1,79 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e877aae79d0427efeed4"
+      ],
+      "ended_at": null,
+      "id": "aff_ef8c4b9a2221256816d7",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/10276/",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e877aae79d0427efeed4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ef8c4b9a2221256816d7",
+      "claim_ids": [
+        "claim_e877aae79d0427efeed4"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuaizheng@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10276/",
+      "status": "current",
+      "type": "email",
+      "value": "shuaizheng@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e877aae79d0427efeed4"
+    ],
+    "email": [
+      "claim_e877aae79d0427efeed4"
+    ],
+    "name": [
+      "claim_e877aae79d0427efeed4"
+    ],
+    "research_directions": [
+      "claim_e877aae79d0427efeed4"
+    ],
+    "status": [
+      "claim_e877aae79d0427efeed4"
+    ]
+  },
+  "id": "mentor_f94b93c022a3e8de54a7",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e877aae79d0427efeed4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑帅"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "图机器学习、多模态学习、Agentic AI"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10276/",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

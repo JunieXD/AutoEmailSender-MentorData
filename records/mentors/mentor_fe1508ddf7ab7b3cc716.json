@@ -1,0 +1,91 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7a5ee83fcaecac5e1f6d"
+      ],
+      "ended_at": null,
+      "id": "aff_9bd45e94aa2603938a2e",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_568e2daa6fc83e2e9deb",
+      "source_url": "https://faculty.bjtu.edu.cn/7644/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7a5ee83fcaecac5e1f6d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9bd45e94aa2603938a2e",
+      "claim_ids": [
+        "claim_7a5ee83fcaecac5e1f6d"
+      ],
+      "is_primary": true,
+      "normalized_value": "aqzhao@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7644/",
+      "status": "current",
+      "type": "email",
+      "value": "aqzhao@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7a5ee83fcaecac5e1f6d"
+    ],
+    "email": [
+      "claim_7a5ee83fcaecac5e1f6d"
+    ],
+    "name": [
+      "claim_7a5ee83fcaecac5e1f6d"
+    ],
+    "recent_papers": [
+      "claim_7a5ee83fcaecac5e1f6d"
+    ],
+    "research_directions": [
+      "claim_7a5ee83fcaecac5e1f6d"
+    ],
+    "status": [
+      "claim_7a5ee83fcaecac5e1f6d"
+    ],
+    "title": [
+      "claim_7a5ee83fcaecac5e1f6d"
+    ]
+  },
+  "id": "mentor_fe1508ddf7ab7b3cc716",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7a5ee83fcaecac5e1f6d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵阿群"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "A Novel Addressing and Routing Architecture for Cloud-Service Datacenter Networks",
+    "基于复杂网络的轨道交通网络结构特性研究",
+    "Research on Interface Switching Network Architecture",
+    "Research on Handoff Delay and Mobility Management Cost of Mobility Protocols in Wireless Sensor Networks",
+    "基于BRITE的向量地址平均长度仿真研究"
+  ],
+  "research_directions": [
+    "计算机网络体系结构和协议、数据中心网络、卫星网络、网络应用系统、轨道交通数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7644/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

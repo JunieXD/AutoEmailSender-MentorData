@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2560d232017ce4565ee4"
+      ],
+      "ended_at": null,
+      "id": "aff_ec3f8894578ecde7cea2",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/7827/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2560d232017ce4565ee4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec3f8894578ecde7cea2",
+      "claim_ids": [
+        "claim_2560d232017ce4565ee4"
+      ],
+      "is_primary": true,
+      "normalized_value": "wbzhu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7827/",
+      "status": "current",
+      "type": "email",
+      "value": "wbzhu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2560d232017ce4565ee4"
+    ],
+    "email": [
+      "claim_2560d232017ce4565ee4"
+    ],
+    "name": [
+      "claim_2560d232017ce4565ee4"
+    ],
+    "research_directions": [
+      "claim_2560d232017ce4565ee4"
+    ],
+    "status": [
+      "claim_2560d232017ce4565ee4"
+    ],
+    "title": [
+      "claim_2560d232017ce4565ee4"
+    ]
+  },
+  "id": "mentor_7c8667d5bc3cee81b355",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2560d232017ce4565ee4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱维彬"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "语音识别、语音合成、语言信息处理、言语情感计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7827/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

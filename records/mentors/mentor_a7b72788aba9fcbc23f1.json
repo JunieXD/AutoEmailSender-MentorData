@@ -1,0 +1,89 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_816ab25f16559431138c"
+      ],
+      "ended_at": null,
+      "id": "aff_2a05fe032579c68a6ef8",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/10271/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_816ab25f16559431138c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a05fe032579c68a6ef8",
+      "claim_ids": [
+        "claim_816ab25f16559431138c"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangchuan@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10271/",
+      "status": "current",
+      "type": "email",
+      "value": "wangchuan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_816ab25f16559431138c"
+    ],
+    "email": [
+      "claim_816ab25f16559431138c"
+    ],
+    "name": [
+      "claim_816ab25f16559431138c"
+    ],
+    "recent_papers": [
+      "claim_816ab25f16559431138c"
+    ],
+    "research_directions": [
+      "claim_816ab25f16559431138c"
+    ],
+    "status": [
+      "claim_816ab25f16559431138c"
+    ],
+    "title": [
+      "claim_816ab25f16559431138c"
+    ]
+  },
+  "id": "mentor_a7b72788aba9fcbc23f1",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_816ab25f16559431138c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王川"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Hard-Label Black-Box Adversarial Attacks for Implicit Scene Interactions (IEEE TIFS, 2025)"
+  ],
+  "research_directions": [
+    "计算机视觉",
+    "机器学习",
+    "人工智能交叉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10271/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}
