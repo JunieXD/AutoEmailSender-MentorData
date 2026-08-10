@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_90f7c9486386b91576aa"
+      ],
+      "ended_at": null,
+      "id": "aff_ccd42dffe9326c7669ee",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_35202d609a14e837828e",
+      "source_url": "https://cnic.cas.cn/rcdw/yjy/202503/t20250305_7549192.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_90f7c9486386b91576aa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ccd42dffe9326c7669ee",
+      "claim_ids": [
+        "claim_90f7c9486386b91576aa"
+      ],
+      "is_primary": true,
+      "normalized_value": "lichong@cnic.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://cnic.cas.cn/rcdw/yjy/202503/t20250305_7549192.html",
+      "status": "current",
+      "type": "email",
+      "value": "lichong@cnic.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_90f7c9486386b91576aa"
+    ],
+    "email": [
+      "claim_90f7c9486386b91576aa"
+    ],
+    "name": [
+      "claim_90f7c9486386b91576aa"
+    ],
+    "profile_url": [
+      "claim_90f7c9486386b91576aa"
+    ],
+    "recent_papers": [
+      "claim_90f7c9486386b91576aa"
+    ],
+    "research_directions": [
+      "claim_90f7c9486386b91576aa"
+    ],
+    "status": [
+      "claim_90f7c9486386b91576aa"
+    ]
+  },
+  "id": "mentor_92e9a20b7f1423ce33fd",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_90f7c9486386b91576aa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李翀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ccd42dffe9326c7669ee",
+      "claim_ids": [
+        "claim_90f7c9486386b91576aa"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://cnic.cas.cn/rcdw/yjy/202503/t20250305_7549192.html"
+    }
+  ],
+  "recent_papers": [
+    "Similarity Discriminating Algorithm for Scientific Research Projects, Journal of Organizational and End User Computing,Volum 35, 2023.",
+    "MMDBench: A Benchmark for Hybrid Query in Multimodal Database, Benchmarking, Measuring, and Optimizing: 15th BenchCouncil International Symposium, Bench 2023.",
+    "CAGAT:Centrality-Adjusted Graph Attention Network for Active Scientific Talent Discovery, Personal and Ubiquitous Computing, Volum 26, 2022.",
+    "基于Web of Science的PageRank人才挖掘算法研究,计算机应用,2021,41(5).",
+    "基于 Neo4j 的 Web of Science 科研社区挖掘及算法优化,小型微型计算机系统,2020,第30卷.",
+    "一个轻量级分步式机器学习系统设计与实现,计算机工程,2020,46(1).",
+    "基于Hive的高可用双引擎数据仓库,计算机系统应用,2019,28(9).",
+    "一种分布式用户浏览点击模型算法,计算机工程,2019,45(3)."
+  ],
+  "research_directions": [
+    "算力网络与应用、分布式计算及云网协调技术、数据融合技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cnic.cas.cn/rcdw/yjy/202503/t20250305_7549192.html",
+  "title": null,
+  "updated_at": "2026-08-10T06:47:52Z"
+}

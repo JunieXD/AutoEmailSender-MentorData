@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd21066127a00e63d3b8"
+      ],
+      "ended_at": null,
+      "id": "aff_cb607faa0f45542703c5",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_76b2750cb2be45412a72",
+      "source_url": "https://people.ucas.ac.cn/~wangwencheng",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_fd21066127a00e63d3b8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cb607faa0f45542703c5",
+      "claim_ids": [
+        "claim_fd21066127a00e63d3b8"
+      ],
+      "is_primary": true,
+      "normalized_value": "whn@ios.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~wangwencheng",
+      "status": "current",
+      "type": "email",
+      "value": "whn@ios.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd21066127a00e63d3b8"
+    ],
+    "email": [
+      "claim_fd21066127a00e63d3b8"
+    ],
+    "name": [
+      "claim_fd21066127a00e63d3b8"
+    ],
+    "profile_url": [
+      "claim_fd21066127a00e63d3b8"
+    ],
+    "research_directions": [
+      "claim_fd21066127a00e63d3b8"
+    ],
+    "status": [
+      "claim_fd21066127a00e63d3b8"
+    ],
+    "title": [
+      "claim_fd21066127a00e63d3b8"
+    ]
+  },
+  "id": "mentor_acfc2b8a041446f8b2ce",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd21066127a00e63d3b8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王文成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cb607faa0f45542703c5",
+      "claim_ids": [
+        "claim_fd21066127a00e63d3b8"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~wangwencheng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "虚拟现实与可视分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~wangwencheng",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

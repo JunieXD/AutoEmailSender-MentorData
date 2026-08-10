@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c9e88df0cd471ec52223"
+      ],
+      "ended_at": null,
+      "id": "aff_f32139619238e35b2d5b",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_1294d4905497b465d4ca",
+      "source_url": "https://people.ucas.ac.cn/~tgm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c9e88df0cd471ec52223"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f32139619238e35b2d5b",
+      "claim_ids": [
+        "claim_c9e88df0cd471ec52223"
+      ],
+      "is_primary": true,
+      "normalized_value": "tgm@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~tgm",
+      "status": "current",
+      "type": "email",
+      "value": "tgm@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c9e88df0cd471ec52223"
+    ],
+    "email": [
+      "claim_c9e88df0cd471ec52223"
+    ],
+    "name": [
+      "claim_c9e88df0cd471ec52223"
+    ],
+    "profile_url": [
+      "claim_c9e88df0cd471ec52223"
+    ],
+    "recent_papers": [
+      "claim_c9e88df0cd471ec52223"
+    ],
+    "research_directions": [
+      "claim_c9e88df0cd471ec52223"
+    ],
+    "status": [
+      "claim_c9e88df0cd471ec52223"
+    ],
+    "title": [
+      "claim_c9e88df0cd471ec52223"
+    ]
+  },
+  "id": "mentor_0fca1b9464efe8f012ab",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c9e88df0cd471ec52223"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谭光明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f32139619238e35b2d5b",
+      "claim_ids": [
+        "claim_c9e88df0cd471ec52223"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~tgm"
+    }
+  ],
+  "recent_papers": [
+    "MD-pipe: A Strong Scaling Enhanced Pipeline Architecture for Ab Initio Accuracy Molecular Dynamics. ISCA 2025: 1956-1968.",
+    "Jupiter: Pushing Speed and Scalability Limitations for Subgraph Matching on Multi-GPUs. EuroSys 2025: 558-572.",
+    "Optimizing Deep Learning Inference Efficiency through Block Dependency Analysis. ASPLOS (2) 2025: 719-733.",
+    "Mario: Near Zero-cost Activation Checkpointing in Pipeline Parallelism. PPoPP 2025: 197-211.",
+    "GeneralSparse: Bridging the Gap in SpMM for Pruned Large Language Model Inference on GPUs. USENIX ATC 2025: 417-432.",
+    "GLumin: Fast Connectivity Check Based on LUTs For Efficient Graph Pattern Mining. PPoPP 2025: 455-468",
+    "BeeZip: Towards An Organized and Scalable Architecture for Data Compression. ASPLOS (3) 2024: 133-148",
+    "Exploiting Fine-Grained Redundancy in Set-Centric Graph Pattern Mining. PPoPP 2024: 175-187"
+  ],
+  "research_directions": [
+    "高性能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~tgm",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

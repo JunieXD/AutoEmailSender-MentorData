@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3a05eca0d0555946c8d0"
+      ],
+      "ended_at": null,
+      "id": "aff_bdc050de3b0c05a474b3",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_00b5ff4b8ad33289ded6",
+      "source_url": "https://people.ucas.ac.cn/~0029235",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_3a05eca0d0555946c8d0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bdc050de3b0c05a474b3",
+      "claim_ids": [
+        "claim_3a05eca0d0555946c8d0"
+      ],
+      "is_primary": true,
+      "normalized_value": "wxz@cnic.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~0029235",
+      "status": "current",
+      "type": "email",
+      "value": "wxz@cnic.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3a05eca0d0555946c8d0"
+    ],
+    "email": [
+      "claim_3a05eca0d0555946c8d0"
+    ],
+    "name": [
+      "claim_3a05eca0d0555946c8d0"
+    ],
+    "profile_url": [
+      "claim_3a05eca0d0555946c8d0"
+    ],
+    "research_directions": [
+      "claim_3a05eca0d0555946c8d0"
+    ],
+    "status": [
+      "claim_3a05eca0d0555946c8d0"
+    ],
+    "title": [
+      "claim_3a05eca0d0555946c8d0"
+    ]
+  },
+  "id": "mentor_c3ad81bd273d369fa257",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3a05eca0d0555946c8d0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王学志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bdc050de3b0c05a474b3",
+      "claim_ids": [
+        "claim_3a05eca0d0555946c8d0"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~0029235"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据管理与处理、大数据分析与挖掘、大数据应用技术、生物大数据技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~0029235",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

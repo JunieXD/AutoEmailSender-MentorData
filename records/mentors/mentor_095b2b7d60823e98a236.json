@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0c9383fe613d1ceb32d1"
+      ],
+      "ended_at": null,
+      "id": "aff_2a8717e48a3e96ac14b2",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_76958588303487ae2181",
+      "source_url": "https://people.ucas.edu.cn/~chenxm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_0c9383fe613d1ceb32d1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a8717e48a3e96ac14b2",
+      "claim_ids": [
+        "claim_0c9383fe613d1ceb32d1"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenxiaoming@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.edu.cn/~chenxm",
+      "status": "current",
+      "type": "email",
+      "value": "chenxiaoming@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0c9383fe613d1ceb32d1"
+    ],
+    "email": [
+      "claim_0c9383fe613d1ceb32d1"
+    ],
+    "name": [
+      "claim_0c9383fe613d1ceb32d1"
+    ],
+    "profile_url": [
+      "claim_0c9383fe613d1ceb32d1"
+    ],
+    "recent_papers": [
+      "claim_0c9383fe613d1ceb32d1"
+    ],
+    "research_directions": [
+      "claim_0c9383fe613d1ceb32d1"
+    ],
+    "status": [
+      "claim_0c9383fe613d1ceb32d1"
+    ],
+    "title": [
+      "claim_0c9383fe613d1ceb32d1"
+    ]
+  },
+  "id": "mentor_095b2b7d60823e98a236",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0c9383fe613d1ceb32d1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈晓明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a8717e48a3e96ac14b2",
+      "claim_ids": [
+        "claim_0c9383fe613d1ceb32d1"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~chenxm"
+    }
+  ],
+  "recent_papers": [
+    "I/O Analysis is All You Need: An I/O Analysis for Long-Sequence Attention, in 2026 Architectural Support for Programming Languages and Operating Systems (ASPLOS'26)",
+    "CIM-BLAS: Computing-in-Memory Accelerator for BLAS, in 2025 Design Automation Conference (DAC'25)",
+    "TMiner: A Vertex-Based Task Scheduling Architecture for Graph Pattern Mining, in 2024 International Symposium on Microarchitecture (MICRO'24)",
+    "ACES: Accelerating Sparse Matrix Multiplication with Adaptive Execution Flow and Concurrency-Aware Cache Optimizations, in 2024 Architectural Support for Programming Languages and Operating Systems (ASPLOS'24)",
+    "Older and Wise: The Marriage of Device Aging and Intellectual Property Protection of DNNs, in 2024 Design Automation Conference (DAC'24)",
+    "PIMSYN: Synthesizing Processing-in-memory CNN Accelerators, in 2024 Design, Automation, and Test in Europe (DATE'24)",
+    "DADU-RBD: Robot Rigid Body Dynamics Accelerator with Multifunctional Pipelines, in 56th IEEE/ACM International Symposium on Microarchitecture (MICRO'23)",
+    "LIM-GEN: A Data-guided Framework for Automated Generation of Heterogeneous Logic-in-Memory Architecture, in International Conference on Computer-Aided Design (ICCAD'23)"
+  ],
+  "research_directions": [
+    "Electronic Design Automation (EDA), Computer Architecture, Sparse Linear Solver, 存算一体架构, AI加速器, 集成电路设计自动化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~chenxm",
+  "title": "副研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

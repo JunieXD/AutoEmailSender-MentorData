@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e89fc3dd7a88aa9315fa"
+      ],
+      "ended_at": null,
+      "id": "aff_e5b172769476f30fcd43",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_76b2750cb2be45412a72",
+      "source_url": "https://people.ucas.ac.cn/~zhanglj",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_e89fc3dd7a88aa9315fa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e5b172769476f30fcd43",
+      "claim_ids": [
+        "claim_e89fc3dd7a88aa9315fa"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanglj@ios.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~zhanglj",
+      "status": "current",
+      "type": "email",
+      "value": "zhanglj@ios.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e89fc3dd7a88aa9315fa"
+    ],
+    "email": [
+      "claim_e89fc3dd7a88aa9315fa"
+    ],
+    "name": [
+      "claim_e89fc3dd7a88aa9315fa"
+    ],
+    "profile_url": [
+      "claim_e89fc3dd7a88aa9315fa"
+    ],
+    "research_directions": [
+      "claim_e89fc3dd7a88aa9315fa"
+    ],
+    "status": [
+      "claim_e89fc3dd7a88aa9315fa"
+    ],
+    "title": [
+      "claim_e89fc3dd7a88aa9315fa"
+    ]
+  },
+  "id": "mentor_2022c672cd534d8586b8",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e89fc3dd7a88aa9315fa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张立军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e5b172769476f30fcd43",
+      "claim_ids": [
+        "claim_e89fc3dd7a88aa9315fa"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~zhanglj"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件与理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~zhanglj",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

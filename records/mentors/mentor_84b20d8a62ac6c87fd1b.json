@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_02f1950bb7a44ccb841e"
+      ],
+      "ended_at": null,
+      "id": "aff_0837584b7f96200ff100",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_58747d108e64c6e91102",
+      "source_url": "https://ict.cas.cn/sourcedb/cn/jssrck/201711/t20171120_4896085.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_02f1950bb7a44ccb841e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0837584b7f96200ff100",
+      "claim_ids": [
+        "claim_02f1950bb7a44ccb841e"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangying2009@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://ict.cas.cn/sourcedb/cn/jssrck/201711/t20171120_4896085.html",
+      "status": "current",
+      "type": "email",
+      "value": "wangying2009@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_02f1950bb7a44ccb841e"
+    ],
+    "email": [
+      "claim_02f1950bb7a44ccb841e"
+    ],
+    "name": [
+      "claim_02f1950bb7a44ccb841e"
+    ],
+    "profile_url": [
+      "claim_02f1950bb7a44ccb841e"
+    ],
+    "recent_papers": [
+      "claim_02f1950bb7a44ccb841e"
+    ],
+    "research_directions": [
+      "claim_02f1950bb7a44ccb841e"
+    ],
+    "status": [
+      "claim_02f1950bb7a44ccb841e"
+    ],
+    "title": [
+      "claim_02f1950bb7a44ccb841e"
+    ]
+  },
+  "id": "mentor_84b20d8a62ac6c87fd1b",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_02f1950bb7a44ccb841e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王颖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0837584b7f96200ff100",
+      "claim_ids": [
+        "claim_02f1950bb7a44ccb841e"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://ict.cas.cn/sourcedb/cn/jssrck/201711/t20171120_4896085.html"
+    }
+  ],
+  "recent_papers": [
+    "An Automatic Neural Network Architecture-and-Quantization Joint Optimization Framework for Efficient Model Inference",
+    "A Task-Adaptive In-Situ ReRAM Computing for Graph Convolutional Networks",
+    "Advancements in Accelerating Deep Neural Network Inference on AIoT Devices: A Survey",
+    "An Energy-Efficient In-Memory Accelerator for Graph Construction and Updating",
+    "CIM-MLC: A Multi-level Compilation Stack for Computing-In-Memory Accelerators",
+    "PrimePar: Efficient Spatial-temporal Tensor Partitioning for Large Transformer Model Training",
+    "Chiplever: Towards Effortless Extension of Chiplet-based System for FHE",
+    "Data is all you need: Finetuning LLMs for Chip Design via an Automated design-data augmentation framework"
+  ],
+  "research_directions": [
+    "计算机体系结构、集成电路设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ict.cas.cn/sourcedb/cn/jssrck/201711/t20171120_4896085.html",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

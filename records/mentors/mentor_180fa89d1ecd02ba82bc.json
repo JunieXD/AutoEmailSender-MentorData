@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2e306828d313b4537bbc"
+      ],
+      "ended_at": null,
+      "id": "aff_97391d45b1205f26db68",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_00b5ff4b8ad33289ded6",
+      "source_url": "https://people.ucas.ac.cn/~0020501",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2e306828d313b4537bbc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_97391d45b1205f26db68",
+      "claim_ids": [
+        "claim_2e306828d313b4537bbc"
+      ],
+      "is_primary": true,
+      "normalized_value": "jjr@sccas.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~0020501",
+      "status": "current",
+      "type": "email",
+      "value": "jjr@sccas.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2e306828d313b4537bbc"
+    ],
+    "email": [
+      "claim_2e306828d313b4537bbc"
+    ],
+    "name": [
+      "claim_2e306828d313b4537bbc"
+    ],
+    "profile_url": [
+      "claim_2e306828d313b4537bbc"
+    ],
+    "research_directions": [
+      "claim_2e306828d313b4537bbc"
+    ],
+    "status": [
+      "claim_2e306828d313b4537bbc"
+    ],
+    "title": [
+      "claim_2e306828d313b4537bbc"
+    ]
+  },
+  "id": "mentor_180fa89d1ecd02ba82bc",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2e306828d313b4537bbc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜金荣"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_97391d45b1205f26db68",
+      "claim_ids": [
+        "claim_2e306828d313b4537bbc"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~0020501"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "并行计算,地球系统模式软件,深度学习应用,数值算法,数值模拟"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~0020501",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

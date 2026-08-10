@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0850e8a68f9407bc4a64"
+      ],
+      "ended_at": null,
+      "id": "aff_3ad6c130ef9818d56fca",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_e852513e64eceb075ddc",
+      "source_url": "https://people.ucas.ac.cn/~0046073",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_0850e8a68f9407bc4a64"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3ad6c130ef9818d56fca",
+      "claim_ids": [
+        "claim_0850e8a68f9407bc4a64"
+      ],
+      "is_primary": true,
+      "normalized_value": "weidong@iie.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~0046073",
+      "status": "current",
+      "type": "email",
+      "value": "weidong@iie.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0850e8a68f9407bc4a64"
+    ],
+    "email": [
+      "claim_0850e8a68f9407bc4a64"
+    ],
+    "name": [
+      "claim_0850e8a68f9407bc4a64"
+    ],
+    "profile_url": [
+      "claim_0850e8a68f9407bc4a64"
+    ],
+    "recent_papers": [
+      "claim_0850e8a68f9407bc4a64"
+    ],
+    "research_directions": [
+      "claim_0850e8a68f9407bc4a64"
+    ],
+    "status": [
+      "claim_0850e8a68f9407bc4a64"
+    ]
+  },
+  "id": "mentor_c9bdcb55b40187f57441",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0850e8a68f9407bc4a64"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏冬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3ad6c130ef9818d56fca",
+      "claim_ids": [
+        "claim_0850e8a68f9407bc4a64"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~0046073"
+    }
+  ],
+  "recent_papers": [
+    "Passive Multi-User Traffic Analysis Based on 5G NR/LTE Physical Layer",
+    "PFAE: A Novel Polarization Fingerprint Based UAV Attitude Estimation Scheme for ISAC",
+    "基于上行控制信道的移动通信空口流量分析技术",
+    "基于人工极化指纹注入的物理层认证",
+    "Polarization Fingerprint Based LoRaWAN Physical Layer Authentication",
+    "Physical Layer Authentication Based on Channel Polarization Response in Dual-Polarized Antenna Communication Systems",
+    "Physical Layer Authentication Based on Continuous Channel Polarization Response in Low SNR scenes",
+    "A Monte Carlo Algorithm Based on Stochastic Geometry for Simulating Satellite Systems Interference"
+  ],
+  "research_directions": [
+    "信号估值与检测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~0046073",
+  "title": null,
+  "updated_at": "2026-08-10T06:47:52Z"
+}

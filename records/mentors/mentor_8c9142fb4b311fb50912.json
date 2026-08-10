@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e35e9d681443e2e5321f"
+      ],
+      "ended_at": null,
+      "id": "aff_3dd4c33e292067aa7988",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_2b1812214b5ba6cd8d62",
+      "source_url": "https://people.ucas.ac.cn/~xingzhou",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_e35e9d681443e2e5321f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3dd4c33e292067aa7988",
+      "claim_ids": [
+        "claim_e35e9d681443e2e5321f"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangxingzhou@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~xingzhou",
+      "status": "current",
+      "type": "email",
+      "value": "zhangxingzhou@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e35e9d681443e2e5321f"
+    ],
+    "email": [
+      "claim_e35e9d681443e2e5321f"
+    ],
+    "name": [
+      "claim_e35e9d681443e2e5321f"
+    ],
+    "profile_url": [
+      "claim_e35e9d681443e2e5321f"
+    ],
+    "research_directions": [
+      "claim_e35e9d681443e2e5321f"
+    ],
+    "status": [
+      "claim_e35e9d681443e2e5321f"
+    ],
+    "title": [
+      "claim_e35e9d681443e2e5321f"
+    ]
+  },
+  "id": "mentor_8c9142fb4b311fb50912",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e35e9d681443e2e5321f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张星洲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3dd4c33e292067aa7988",
+      "claim_ids": [
+        "claim_e35e9d681443e2e5321f"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~xingzhou"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "分布式计算系统,边缘计算与人工智能,多智能体协同"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~xingzhou",
+  "title": "副研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

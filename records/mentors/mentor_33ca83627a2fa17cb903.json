@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a1a80ce9deadd72a4638"
+      ],
+      "ended_at": null,
+      "id": "aff_03c3b12de9a45d688e58",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_12ca4006b0c12fd5c7ed",
+      "source_url": "https://people.ucas.ac.cn/~0070909",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_a1a80ce9deadd72a4638"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_03c3b12de9a45d688e58",
+      "claim_ids": [
+        "claim_a1a80ce9deadd72a4638"
+      ],
+      "is_primary": true,
+      "normalized_value": "lith@ucas.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~0070909",
+      "status": "current",
+      "type": "email",
+      "value": "lith@ucas.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a1a80ce9deadd72a4638"
+    ],
+    "email": [
+      "claim_a1a80ce9deadd72a4638"
+    ],
+    "name": [
+      "claim_a1a80ce9deadd72a4638"
+    ],
+    "profile_url": [
+      "claim_a1a80ce9deadd72a4638"
+    ],
+    "research_directions": [
+      "claim_a1a80ce9deadd72a4638"
+    ],
+    "status": [
+      "claim_a1a80ce9deadd72a4638"
+    ],
+    "title": [
+      "claim_a1a80ce9deadd72a4638"
+    ]
+  },
+  "id": "mentor_33ca83627a2fa17cb903",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a1a80ce9deadd72a4638"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李太豪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_03c3b12de9a45d688e58",
+      "claim_ids": [
+        "claim_a1a80ce9deadd72a4638"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~0070909"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态融合大模型构建",
+    "基于大模型的数字化精神疾病诊疗系统构建",
+    "多模态情感识别关键技术研究",
+    "多模态人机交互关键技术研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~0070909",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

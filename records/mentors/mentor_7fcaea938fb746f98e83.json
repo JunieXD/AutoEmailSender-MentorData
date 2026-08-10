@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4bdb9937269444737704"
+      ],
+      "ended_at": null,
+      "id": "aff_34a40d2f85d9c3b4e15c",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_00b5ff4b8ad33289ded6",
+      "source_url": "https://people.ucas.ac.cn/~0046428",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_4bdb9937269444737704"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_34a40d2f85d9c3b4e15c",
+      "claim_ids": [
+        "claim_4bdb9937269444737704"
+      ],
+      "is_primary": true,
+      "normalized_value": "bluejoe@cnic.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~0046428",
+      "status": "current",
+      "type": "email",
+      "value": "bluejoe@cnic.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4bdb9937269444737704"
+    ],
+    "email": [
+      "claim_4bdb9937269444737704"
+    ],
+    "name": [
+      "claim_4bdb9937269444737704"
+    ],
+    "profile_url": [
+      "claim_4bdb9937269444737704"
+    ],
+    "research_directions": [
+      "claim_4bdb9937269444737704"
+    ],
+    "status": [
+      "claim_4bdb9937269444737704"
+    ]
+  },
+  "id": "mentor_7fcaea938fb746f98e83",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4bdb9937269444737704"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈志宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_34a40d2f85d9c3b4e15c",
+      "claim_ids": [
+        "claim_4bdb9937269444737704"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~0046428"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据管理与处理、大数据分析与挖掘、大数据应用技术、生物大数据技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~0046428",
+  "title": null,
+  "updated_at": "2026-08-10T06:47:52Z"
+}

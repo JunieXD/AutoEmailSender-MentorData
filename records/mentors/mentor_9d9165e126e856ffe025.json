@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a9511b30ff7a5f17b3b2"
+      ],
+      "ended_at": null,
+      "id": "aff_3b883b1dcb694aa3169a",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_e852513e64eceb075ddc",
+      "source_url": "https://people.ucas.ac.cn/~0057575",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_a9511b30ff7a5f17b3b2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3b883b1dcb694aa3169a",
+      "claim_ids": [
+        "claim_a9511b30ff7a5f17b3b2"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyan@iie.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~0057575",
+      "status": "current",
+      "type": "email",
+      "value": "wangyan@iie.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a9511b30ff7a5f17b3b2"
+    ],
+    "email": [
+      "claim_a9511b30ff7a5f17b3b2"
+    ],
+    "name": [
+      "claim_a9511b30ff7a5f17b3b2"
+    ],
+    "profile_url": [
+      "claim_a9511b30ff7a5f17b3b2"
+    ],
+    "research_directions": [
+      "claim_a9511b30ff7a5f17b3b2"
+    ],
+    "status": [
+      "claim_a9511b30ff7a5f17b3b2"
+    ]
+  },
+  "id": "mentor_9d9165e126e856ffe025",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a9511b30ff7a5f17b3b2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王妍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3b883b1dcb694aa3169a",
+      "claim_ids": [
+        "claim_a9511b30ff7a5f17b3b2"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~0057575"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络科技安全、安全体系结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~0057575",
+  "title": null,
+  "updated_at": "2026-08-10T06:47:52Z"
+}

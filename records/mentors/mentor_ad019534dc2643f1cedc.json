@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_14a66a0848ba2d9d8991"
+      ],
+      "ended_at": null,
+      "id": "aff_1401ba9f228cd3eb2a5d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_2b1812214b5ba6cd8d62",
+      "source_url": "https://people.ucas.edu.cn/~liwenming",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_14a66a0848ba2d9d8991"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1401ba9f228cd3eb2a5d",
+      "claim_ids": [
+        "claim_14a66a0848ba2d9d8991"
+      ],
+      "is_primary": true,
+      "normalized_value": "liwenming@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.edu.cn/~liwenming",
+      "status": "current",
+      "type": "email",
+      "value": "liwenming@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_14a66a0848ba2d9d8991"
+    ],
+    "email": [
+      "claim_14a66a0848ba2d9d8991"
+    ],
+    "name": [
+      "claim_14a66a0848ba2d9d8991"
+    ],
+    "profile_url": [
+      "claim_14a66a0848ba2d9d8991"
+    ],
+    "recent_papers": [
+      "claim_14a66a0848ba2d9d8991"
+    ],
+    "research_directions": [
+      "claim_14a66a0848ba2d9d8991"
+    ],
+    "status": [
+      "claim_14a66a0848ba2d9d8991"
+    ],
+    "title": [
+      "claim_14a66a0848ba2d9d8991"
+    ]
+  },
+  "id": "mentor_ad019534dc2643f1cedc",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_14a66a0848ba2d9d8991"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李文明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1401ba9f228cd3eb2a5d",
+      "claim_ids": [
+        "claim_14a66a0848ba2d9d8991"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~liwenming"
+    }
+  ],
+  "recent_papers": [
+    "MLX: Multi-Layer Execution for Structured LLM Workload Acceleration on Spatial Architectures",
+    "SCARF: A Scene-Adaptive Depth-Guided G-3DGS Encoder Accelerator with Semantic Reuse and Fused Dataflow",
+    "M2-DFU: Multi-Mode Dataflow Architecture for Adaptive and High-Efficency Data Processing",
+    "TOSCA: Towards Semi-Centralized Scheduling in Dataflow Architectures via Hardware-Software Co-Design",
+    "A Scalable RISC-V Extended Infrastructure for Unstructured SpMM in LLM Inference with Vectorizable Sparse Format",
+    "BISC: Rethinking Instruction Set Abstractions at Block Granularity",
+    "HALO: A Heterogeneous Accelerator for Low-Latency and Energy-Efficient Edge LLM Inference",
+    "HGNNMap: Heterogeneous Graph Neural Network-Based Mapping for Spatial Accelerators"
+  ],
+  "research_directions": [
+    "数据流处理器芯片设计,人工智能处理器芯片设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~liwenming",
+  "title": "副研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

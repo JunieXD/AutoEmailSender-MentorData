@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_565ab8c9b9e8b9fcc10d"
+      ],
+      "ended_at": null,
+      "id": "aff_f822997376935b40e95c",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_12ca4006b0c12fd5c7ed",
+      "source_url": "https://www.scholat.com/wuou",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_565ab8c9b9e8b9fcc10d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f822997376935b40e95c",
+      "claim_ids": [
+        "claim_565ab8c9b9e8b9fcc10d"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuou@ucas.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://www.scholat.com/wuou",
+      "status": "current",
+      "type": "email",
+      "value": "wuou@ucas.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ],
+    "email": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ],
+    "name": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ],
+    "profile_url": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ],
+    "recent_papers": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ],
+    "research_directions": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ],
+    "status": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ],
+    "title": [
+      "claim_565ab8c9b9e8b9fcc10d"
+    ]
+  },
+  "id": "mentor_82c3dd33f052c659a612",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_565ab8c9b9e8b9fcc10d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴偶"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f822997376935b40e95c",
+      "claim_ids": [
+        "claim_565ab8c9b9e8b9fcc10d"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://www.scholat.com/wuou"
+    }
+  ],
+  "recent_papers": [
+    "Unequal Vulnerability: The Differential Impact of Label Flipping Attacks Across Classes",
+    "Robust LLM Unlearning via Post Judgment and Multi-round Thinking",
+    "ECOC-IL: Robust and Efficient Label LDP for Imbalanced Learning",
+    "Towards Robust and Generalizable Learning via Implicit Counterfactual Data Augmentation",
+    "CAKE: Causal-guided Adaptive Knowledge Editing for LLMs",
+    "AlphaEdit+: Model Editing in the Presence of Conflicting and Inconsistent Knowledge",
+    "Data Valuation by Fusing Global and Local Statistical Information",
+    "Data Measures for Deep Learning: A Survey"
+  ],
+  "research_directions": [
+    "数据科学与人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scholat.com/wuou",
+  "title": "教授",
+  "updated_at": "2026-08-10T06:47:52Z"
+}
