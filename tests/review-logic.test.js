@@ -95,8 +95,20 @@ test("路径建议识别重复上级和带前缀的学院写法", () => {
   assert.equal(prefixed.kind, "parent_name_with_prefix");
   assert.equal(prefixed.action, "use_parent");
   assert.equal(prefixed.confidence, "high");
-  assert.equal(prefixed.reason, "名称可能只是当前学院的另一种写法。");
+  assert.equal(prefixed.reason, "名称与当前学院相同或只是写法不同。");
   assert.equal(longPrefixed.kind, "parent_name_with_prefix");
+});
+
+test("混合多个明确机构时不会因末尾名称相同而归入上级", () => {
+  const suggestion = logic.pathReviewSuggestion({
+    university: "国科大杭州高等研究院",
+    school: "智能科学与技术学院",
+    department:
+      "中国科学院软件研究所、国科大杭州高等研究院智能科学与技术学院",
+  });
+
+  assert.equal(suggestion.action, "reject_group");
+  assert.equal(suggestion.kind, "mixed_organizations");
 });
 
 test("历史审核结果优先于名称推断", () => {
@@ -145,6 +157,275 @@ test("学院和研究院需要判断层级，研究所默认作为学院下级",
     department: "先进计算研究所",
   });
   assert.equal(researchInstitute, null);
+});
+
+test("系所误填学院时优先匹配同校同级机构", () => {
+  const sibling = {
+    id: "org_example_cs",
+    type: "school",
+    canonical_name: "计算机学院",
+    aliases: [],
+    lineage_names: ["示例大学", "计算机学院"],
+  };
+  const otherUniversity = {
+    id: "org_other_cs",
+    type: "school",
+    canonical_name: "计算机学院",
+    aliases: [],
+    lineage_names: ["其他大学", "计算机学院"],
+  };
+  const candidate = logic.siblingOrganizationCandidate(
+    {
+      university: "示例大学",
+      school: "电子学院",
+      department: "计算机学院",
+    },
+    [otherUniversity, sibling],
+  );
+
+  assert.equal(candidate.id, "org_example_cs");
+  assert.equal(
+    logic.siblingOrganizationCandidate(
+      {
+        university: "示例大学",
+        school: "电子学院",
+        department: "先进计算研究所",
+      },
+      [sibling],
+    ),
+    null,
+  );
+});
+
+test("学院层级默认值区分上级别名、同级学院和新建同级学院", () => {
+  const submitted = {
+    university: "北京大学",
+    school: "电子学院",
+    department: "化学学院",
+  };
+  const createSibling = logic.schoolLevelPlacementDefault(submitted, []);
+  assert.equal(createSibling.action, "create_sibling");
+  assert.equal(createSibling.organizationType, "school");
+  assert.equal(createSibling.canonicalName, "化学学院");
+
+  const similarName = logic.schoolLevelPlacementDefault(
+    { ...submitted, department: "电子科技学院" },
+    [],
+  );
+  assert.equal(similarName.action, "create_sibling");
+
+  const useParent = logic.schoolLevelPlacementDefault(
+    { ...submitted, department: "北京大学电子学院" },
+    [],
+  );
+  assert.equal(useParent.action, "use_parent");
+  assert.ok(useParent.score >= 95);
+
+  const sibling = {
+    id: "org_pku_chemistry",
+    type: "school",
+    canonical_name: "化学学院",
+    aliases: [],
+    lineage_names: ["北京大学", "化学学院"],
+  };
+  const useSibling = logic.schoolLevelPlacementDefault(submitted, [sibling]);
+  assert.equal(useSibling.action, "use_existing");
+  assert.equal(useSibling.organization.id, sibling.id);
+
+  const rejectMixed = logic.schoolLevelPlacementDefault(
+    {
+      ...submitted,
+      department: "中国科学院计算技术研究所、中国科学院大学计算机科学与技术学院",
+    },
+    [],
+  );
+  assert.equal(rejectMixed.action, "reject_group");
+});
+
+test("同级学院只接受明确名称证据，模糊相似不自动归并", () => {
+  const placement = logic.schoolLevelPlacementDefault(
+    {
+      university: "北京交通大学",
+      school: "计算机科学与技术学院",
+      department: "网络空间安全学院",
+    },
+    [
+      {
+        id: "org_bjtu_security",
+        type: "school",
+        canonical_name: "网络空间安全学院 国家保密学院",
+        aliases: [],
+        lineage_names: ["北京交通大学", "网络空间安全学院 国家保密学院"],
+      },
+    ],
+  );
+
+  assert.equal(placement.action, "use_existing");
+  assert.equal(placement.organization.id, "org_bjtu_security");
+  assert.ok(placement.score >= 95);
+
+  const tiedPlacement = logic.schoolLevelPlacementDefault(
+    {
+      university: "北京交通大学",
+      school: "计算机科学与技术学院",
+      department: "计算机学院",
+    },
+    [
+      {
+        id: "org_bjtu_computer_information",
+        type: "school",
+        canonical_name: "计算机与信息技术学院",
+        aliases: [],
+        lineage_names: ["北京交通大学", "计算机与信息技术学院"],
+      },
+    ],
+  );
+  assert.equal(tiedPlacement.action, "create_sibling");
+
+  const historicalAliasPlacement = logic.schoolLevelPlacementDefault(
+    {
+      university: "北京交通大学",
+      school: "计算机科学与技术学院",
+      department: "计算机与信息技术学院",
+    },
+    [
+      {
+        id: "org_bjtu_computer_information",
+        type: "school",
+        canonical_name: "计算机与信息技术学院",
+        aliases: [],
+        lineage_names: ["北京交通大学", "计算机与信息技术学院"],
+      },
+    ],
+  );
+  assert.equal(historicalAliasPlacement.action, "use_existing");
+  assert.equal(
+    historicalAliasPlacement.organization.id,
+    "org_bjtu_computer_information",
+  );
+});
+
+test("学院名称相似度只把明确变体用于自动判断", () => {
+  assert.ok(logic.schoolOrganizationNameScore("电子学院", "电子科技学院") < 95);
+  assert.ok(
+    logic.schoolOrganizationNameScore(
+      "计算机科学与技术学院",
+      "计算机与信息技术学院",
+    ) < 95,
+  );
+  assert.ok(
+    logic.schoolOrganizationNameScore("光电与智能研究院", "光电与智能学院") >= 90,
+  );
+  assert.ok(
+    logic.schoolOrganizationNameScore(
+      "智能科学与技术学院",
+      "国科大杭州高等研究院智能学院",
+      ["国科大杭州高等研究院"],
+    ) < 95,
+  );
+  assert.equal(logic.schoolOrganizationNameScore("电子学院", "化学学院"), 0);
+  assert.ok(
+    logic.schoolOrganizationNameScore(
+      "智能科学与技术学院",
+      "计算机科学与技术学院",
+    ) < 70,
+  );
+});
+
+test("学院名称只有唯一高置信候选时才默认归入已有机构", () => {
+  const computerSchool = {
+    id: "org_bjtu_computer",
+    type: "school",
+    canonical_name: "计算机科学与技术学院",
+    aliases: ["计算机与信息技术学院"],
+  };
+  const unrelated = {
+    id: "org_bjtu_security",
+    type: "school",
+    canonical_name: "网络空间安全学院",
+    aliases: [],
+  };
+  const matched = logic.schoolOrganizationCandidateMatch(
+    "计算机与信息技术学院",
+    [unrelated, computerSchool],
+  );
+  assert.equal(matched.organization.id, computerSchool.id);
+  assert.equal(matched.score, 100);
+
+  assert.equal(
+    logic.schoolOrganizationCandidateMatch(
+      "电子科技学院",
+      [{ id: "first", type: "school", canonical_name: "电子学院", aliases: [] }],
+    ),
+    null,
+  );
+});
+
+test("同邮箱导师的现有任职形成多数证据时才建议学院", () => {
+  const organizations = [
+    {
+      id: "university",
+      type: "university",
+      canonical_name: "示例大学",
+      lineage_ids: ["university"],
+    },
+    {
+      id: "school_a",
+      type: "school",
+      canonical_name: "甲学院",
+      lineage_ids: ["university", "school_a"],
+    },
+    {
+      id: "department_a",
+      type: "department",
+      canonical_name: "甲系",
+      lineage_ids: ["university", "school_a", "department_a"],
+    },
+    {
+      id: "school_b",
+      type: "school",
+      canonical_name: "乙学院",
+      lineage_ids: ["university", "school_b"],
+    },
+  ];
+  const identityRow = (organizationId) => ({
+    identity: {
+      requires_resolution: true,
+      mentor: {
+        affiliations: [{ status: "current", organization_id: organizationId }],
+      },
+    },
+  });
+
+  const evidence = logic.identitySchoolEvidence(
+    [identityRow("department_a"), identityRow("department_a")],
+    organizations,
+  );
+  assert.equal(evidence.organization.id, "school_a");
+  assert.equal(evidence.votes, 2);
+
+  assert.equal(
+    logic.identitySchoolEvidence(
+      [identityRow("department_a"), identityRow("school_b")],
+      organizations,
+    ),
+    null,
+  );
+  assert.equal(
+    logic.identitySchoolEvidence([identityRow("department_a")], organizations),
+    null,
+  );
+});
+
+test("系所名称重复学校时默认归到学校而不是当前学院", () => {
+  const suggestion = logic.pathReviewSuggestion({
+    university: "国科大杭州高等研究院",
+    school: "智能科学与技术学院",
+    department: "杭州高等研究院",
+  });
+
+  assert.equal(suggestion.action, "use_ancestor");
+  assert.equal(suggestion.targetLevel, "university");
 });
 
 test("候选机构优先显示名称、当前批次、同校和同域名相关项", () => {

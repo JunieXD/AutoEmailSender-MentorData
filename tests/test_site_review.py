@@ -7,9 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="styles.css?v=7" />' in html
-    assert '<script src="review-logic.js?v=7" defer></script>' in html
-    assert '<script src="review.js?v=7" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=8" />' in html
+    assert '<script src="review-logic.js?v=8" defer></script>' in html
+    assert '<script src="review.js?v=8" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -110,8 +110,8 @@ def test_review_reuses_organization_drafts_and_autosaves_progress() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
     script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
 
-    assert 'id="organization-tree"' in html
-    assert 'id="next-pending"' in html
+    assert 'id="review-organization-tree"' in html
+    assert 'id="confirm-review-task"' in html
     assert 'id="autosave-status"' in html
     assert "buildOrganizationDrafts" in script
     assert "organizationDraftKey" in script
@@ -174,6 +174,8 @@ def test_review_supports_path_correction_and_independent_targets() -> None:
     script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
     logic = (PROJECT_ROOT / "site" / "review-logic.js").read_text(encoding="utf-8")
     styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+    adjustment_start = script.index("function openGroupAdjustment(card)")
+    adjustment_block = script[adjustment_start : adjustment_start + 500]
 
     assert "suggested_path_correction" in script
     assert "整组调整归属" in script
@@ -188,20 +190,23 @@ def test_review_supports_path_correction_and_independent_targets() -> None:
     assert "mergeIndependentCreations" in logic
     assert ".independent-target-panel" in styles
     assert ".path-correction-notice" in styles
+    assert 'card.groupAction.value = "resolve"' in adjustment_block
+    assert "updateGroupCard(card)" in adjustment_block
 
 
-def test_review_uses_one_task_workspace_and_plain_reviewer_language() -> None:
+def test_review_uses_organization_tree_and_plain_reviewer_language() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
     script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
     logic = (PROJECT_ROOT / "site" / "review-logic.js").read_text(encoding="utf-8")
     styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
 
     assert 'id="review-workspace"' in html
-    assert 'id="review-task-list"' in html
+    assert 'id="review-organization-tree"' in html
+    assert 'id="review-tree-search"' in html
     assert 'id="workflow-pending-count"' in html
-    assert 'class="review-task-main"' in html
+    assert 'class="review-node-main"' in html
     assert 'id="confirm-review-task"' in html
-    assert "最近处理" in html
+    assert "确认此节点并继续" in html
     assert "review-result-summary" not in html
     assert "审核导师投稿" in html
     assert "系统会先整理没有争议的内容" not in html
@@ -212,19 +217,32 @@ def test_review_uses_one_task_workspace_and_plain_reviewer_language() -> None:
     assert "没有发现机构层级或导师任职方面的冲突" not in script
     assert "taskContext" in script
     assert "buildWorkflowTasks" in script
+    assert "buildWorkflowNodes" in script
+    assert "renderWorkflowTree" in script
+    assert "renderWorkflowNode" in script
     assert "applySuggestedGroupDecision" in script
+    assert "applyInitialPathSuggestions" in script
     assert "focusNextWorkflowTask" in script
     assert "额外官方来源域名" not in script
     assert "pathReviewSuggestion" in logic
     assert "rankOrganizationCandidates" in logic
     assert "rankOrganizationSearchResults" in logic
-    assert "review-task-section-label" in script
+    assert "workflowNodeIdForDraft" in script
+    assert "review-tree-node" in script
     assert "completed_at" in script
     assert "focusReviewValidationError" in script
     assert "organization-create-context" in script
     assert "忽略非官网详情页" in script
+    assert "移到其他学院" in script
+    assert "不收录这组" in script
+    assert "siblingOrganizationCandidate" in logic
+    assert "schoolLevelPlacementDefault" in logic
+    assert 'action: "create_sibling"' in logic
+    assert 'action: "reject_group"' in logic
     assert ".review-workspace-grid" in styles
-    assert ".review-task-main" in styles
+    assert ".review-node-main" in styles
+    assert ".review-tree-node" in styles
+    assert ".node-workbench-section" in styles
     assert "height: 2.3rem" in styles
     assert ".review-workflow-bar" in styles
 
