@@ -11,7 +11,13 @@ from typing import Any
 
 from jsonschema import Draft202012Validator, FormatChecker
 
-from .errors import SubmissionError
+from .errors import (
+    ProposalConflictError,
+    ProposalFieldConflict,
+    ProposalFinalizationIssue,
+    ProposalSetValidationError,
+    SubmissionError,
+)
 from .github_events import (
     GitHubActor,
     GitHubIssueEvent,
@@ -551,8 +557,11 @@ def _append_support(
     claim_id = claim["id"]
     observed_at = claim["contributor"]["submitted_at"]
     primary_name = next(item for item in updated["names"] if item["is_primary"])
+    conflicts: list[ProposalFieldConflict] = []
     if normalize_name_key(primary_name["value"]) != normalize_name_key(accepted["name"]):
-        raise SubmissionError("审核后的姓名与目标导师主要姓名冲突")
+        conflicts.append(
+            ProposalFieldConflict("name", "审核后的姓名与目标导师主要姓名冲突")
+        )
     contact = next(
         (
             item
@@ -573,8 +582,19 @@ def _append_support(
             None,
         )
         if former_contact is not None:
-            raise SubmissionError("审核后的邮箱已是历史邮箱；恢复邮箱需要专门纠错流程")
-        raise SubmissionError("现有导师不包含审核后的当前邮箱；邮箱变更需要专门纠错流程")
+            conflicts.append(
+                ProposalFieldConflict(
+                    "email",
+                    "审核后的邮箱已是历史邮箱；恢复邮箱需要专门纠错流程",
+                )
+            )
+        else:
+            conflicts.append(
+                ProposalFieldConflict(
+                    "email",
+                    "现有导师不包含审核后的当前邮箱；邮箱变更需要专门纠错流程",
+                )
+            )
     affiliation = next(
         (
             item
@@ -585,14 +605,12 @@ def _append_support(
         None,
     )
     if affiliation is None:
-        raise SubmissionError("现有导师不包含审核后的当前机构；任职变更需要专门纠错流程")
-
-    for nested in (primary_name, contact, affiliation):
-        if claim_id not in nested["claim_ids"]:
-            nested["claim_ids"].append(claim_id)
-    updated["field_provenance"].setdefault("name", []).append(claim_id)
-    updated["field_provenance"].setdefault("email", []).append(claim_id)
-    updated["field_provenance"].setdefault("affiliations", []).append(claim_id)
+        conflicts.append(
+            ProposalFieldConflict(
+                "affiliations",
+                "现有导师不包含审核后的当前机构；任职变更需要专门纠错流程",
+            )
+        )
 
     scalar_fields = ["title", "research_directions", "recent_papers"]
     for field in scalar_fields:
@@ -600,17 +618,47 @@ def _append_support(
         current = updated.get(field)
         if incoming in (None, "", []):
             continue
-        if current in (None, "", []):
-            updated[field] = copy.deepcopy(incoming)
-        elif current != incoming:
-            raise SubmissionError(f"审核后的字段 {field} 与目标导师当前值冲突")
-        updated["field_provenance"].setdefault(field, []).append(claim_id)
+        if current not in (None, "", []) and current != incoming:
+            conflicts.append(
+                ProposalFieldConflict(
+                    field,
+                    f"审核后的字段 {field} 与目标导师当前值冲突",
+                )
+            )
 
     profile_url = accepted.get("profile_url")
+    profile = None
     if profile_url:
         profile = next((item for item in updated["profiles"] if item["url"] == profile_url), None)
         if profile is None and any(item["status"] == "current" for item in updated["profiles"]):
-            raise SubmissionError("官方主页发生变化，需要专门纠错流程")
+            conflicts.append(
+                ProposalFieldConflict(
+                    "profile_url",
+                    "官方主页发生变化，需要专门纠错流程",
+                )
+            )
+
+    if conflicts:
+        raise ProposalConflictError(conflicts)
+
+    assert contact is not None
+    assert affiliation is not None
+    for nested in (primary_name, contact, affiliation):
+        if claim_id not in nested["claim_ids"]:
+            nested["claim_ids"].append(claim_id)
+    updated["field_provenance"].setdefault("name", []).append(claim_id)
+    updated["field_provenance"].setdefault("email", []).append(claim_id)
+    updated["field_provenance"].setdefault("affiliations", []).append(claim_id)
+
+    for field in scalar_fields:
+        incoming = accepted.get(field)
+        if incoming in (None, "", []):
+            continue
+        if updated.get(field) in (None, "", []):
+            updated[field] = copy.deepcopy(incoming)
+        updated["field_provenance"].setdefault(field, []).append(claim_id)
+
+    if profile_url:
         if profile is None:
             profile = {
                 "url": profile_url,
@@ -815,6 +863,7 @@ def _finalization_context(
     data: RepositoryData,
     *,
     resolved_schema_root: Path,
+    proposal_validator: Draft202012Validator | None = None,
 ) -> _FinalizationContext:
     mentor_by_id = {mentor["id"]: mentor for mentor in data.mentors}
     email_owner_by_value: dict[str, str] = {}
@@ -822,13 +871,15 @@ def _finalization_context(
         for contact in mentor.get("contacts", []):
             if contact.get("status") in {"current", "former"}:
                 email_owner_by_value[contact["normalized_value"]] = mentor["id"]
-    proposal_schema = load_json(resolved_schema_root / "schemas" / "proposal.schema.json")
-    return _FinalizationContext(
-        data=data,
-        proposal_validator=Draft202012Validator(
+    if proposal_validator is None:
+        proposal_schema = load_json(resolved_schema_root / "schemas" / "proposal.schema.json")
+        proposal_validator = Draft202012Validator(
             proposal_schema,
             format_checker=FormatChecker(),
-        ),
+        )
+    return _FinalizationContext(
+        data=data,
+        proposal_validator=proposal_validator,
         claim_by_id={claim["id"]: claim for claim in data.claims},
         mentor_by_id=mentor_by_id,
         mentor_index_by_id={mentor["id"]: index for index, mentor in enumerate(data.mentors)},
@@ -854,6 +905,7 @@ def _finalize_proposal_in_context(
     proposal_path: Path,
     *,
     moderator_github_user_id: int | None,
+    write_changes: bool = True,
 ) -> tuple[Path, Path]:
     data = context.data
     proposal = load_json(proposal_path)
@@ -917,8 +969,9 @@ def _finalize_proposal_in_context(
                 context.resolved_affiliation_targets.add(resolution_key)
         mentor_path = data.mentor_paths[mentor_id]
     claim_path = data.root / "claims" / str(user_id) / f"{claim['id']}.json"
-    write_json_atomic(claim_path, claim)
-    write_json_atomic(mentor_path, mentor)
+    if write_changes:
+        write_json_atomic(claim_path, claim)
+        write_json_atomic(mentor_path, mentor)
 
     context.claim_by_id[claim["id"]] = claim
     data.claims.append(claim)
@@ -991,17 +1044,84 @@ def proposal_paths(root: Path) -> list[Path]:
     return sorted(path for path in directory.rglob("*.json") if path.is_file())
 
 
+def _proposal_issue_field(message: str) -> str | None:
+    if "邮箱" in message:
+        return "email"
+    if "姓名" in message:
+        return "name"
+    if "任职" in message or "机构" in message:
+        return "affiliations"
+    if "主页" in message:
+        return "profile_url"
+    if "职称" in message:
+        return "title"
+    return None
+
+
+def _proposal_finalization_issues(
+    proposal: dict[str, Any],
+    error: SubmissionError,
+) -> list[ProposalFinalizationIssue]:
+    accepted = proposal.get("accepted", {})
+    common = {
+        "proposal_id": str(proposal.get("id") or "未知提案"),
+        "batch_row": proposal.get("issue", {}).get("batch_row"),
+        "name": str(accepted.get("name") or "未知导师"),
+        "email": str(accepted.get("email") or "未提供邮箱"),
+    }
+    if isinstance(error, ProposalConflictError):
+        return [
+            ProposalFinalizationIssue(
+                **common,
+                field=conflict.field,
+                message=conflict.message,
+            )
+            for conflict in error.conflicts
+        ]
+    message = str(error).splitlines()[0]
+    return [
+        ProposalFinalizationIssue(
+            **common,
+            field=_proposal_issue_field(message),
+            message=message,
+        )
+    ]
+
+
 def finalize_proposal_set(
     root: Path,
     paths: list[Path],
     *,
     moderator_github_user_id: int | None,
+    schema_root: Path | None = None,
 ) -> list[tuple[Path, Path]]:
     if not paths:
         raise SubmissionError("没有找到待处理的导师提案")
-    resolved_schema_root = root.resolve()
+    resolved_schema_root = (schema_root or root).resolve()
+
     data = load_repository(root, validate=True, schema_root=resolved_schema_root)
     context = _finalization_context(data, resolved_schema_root=resolved_schema_root)
+    preflight_data = copy.deepcopy(data)
+    preflight_context = _finalization_context(
+        preflight_data,
+        resolved_schema_root=resolved_schema_root,
+        proposal_validator=context.proposal_validator,
+    )
+    issues: list[ProposalFinalizationIssue] = []
+    for path in sorted(paths):
+        proposal = load_json(path)
+        try:
+            _finalize_proposal_in_context(
+                preflight_context,
+                path,
+                moderator_github_user_id=moderator_github_user_id,
+                write_changes=False,
+            )
+        except SubmissionError as error:
+            issues.extend(_proposal_finalization_issues(proposal, error))
+    if issues:
+        raise ProposalSetValidationError(issues)
+
     results: list[tuple[Path, Path]] = []
     for path in sorted(paths):
         results.append(
@@ -1044,18 +1164,13 @@ def check_proposal_set(
                 shutil.copy2(source, destination)
             rehearsal_paths.append(destination)
         resolved_schema_root = (schema_root or rehearsal_root).resolve()
-        data = load_repository(
+        finalize_proposal_set(
             rehearsal_root,
-            validate=True,
+            rehearsal_paths,
+            moderator_github_user_id=1,
             schema_root=resolved_schema_root,
         )
-        context = _finalization_context(data, resolved_schema_root=resolved_schema_root)
-        for rehearsal_path in sorted(rehearsal_paths):
-            _finalize_proposal_in_context(
-                context,
-                rehearsal_path,
-                moderator_github_user_id=1,
-            )
+        for rehearsal_path in rehearsal_paths:
             rehearsal_path.unlink()
         load_repository(
             rehearsal_root,

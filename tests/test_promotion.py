@@ -11,7 +11,11 @@ from pathlib import Path
 import pytest
 
 from mentor_data.batch import create_batch_proposals
-from mentor_data.errors import SubmissionError
+from mentor_data.errors import (
+    ProposalFinalizationIssue,
+    ProposalSetValidationError,
+    SubmissionError,
+)
 from mentor_data.github_events import GitHubActor, GitHubIssueEvent
 from mentor_data.internal_pulls import InternalPull
 from mentor_data.io_utils import load_json, load_yaml, write_json_atomic, write_yaml_atomic
@@ -134,6 +138,37 @@ def test_open_pull_queue_is_loaded_in_one_paginated_api_call(tmp_path: Path) -> 
             "repos/example/repository/pulls?state=open&per_page=100",
         ]
     ]
+
+
+def test_attention_message_keeps_complete_batch_conflict_list() -> None:
+    error = ProposalSetValidationError(
+        [
+            ProposalFinalizationIssue(
+                proposal_id="proposal_issue_30_row_36",
+                batch_row=36,
+                name="黄华",
+                email="hhua@example.edu",
+                field="research_directions",
+                message="审核后的研究方向与当前值冲突",
+            ),
+            ProposalFinalizationIssue(
+                proposal_id="proposal_issue_30_row_65",
+                batch_row=65,
+                name="白慧慧",
+                email="hhbai@example.edu",
+                field="recent_papers",
+                message="审核后的近期论文与当前值冲突",
+            ),
+        ]
+    )
+
+    message = PromotionQueue._attention_message(error)
+
+    assert "落库前发现 2 项导师数据冲突" in message
+    assert "表格第 36 行 黄华" in message
+    assert "研究方向" in message
+    assert "表格第 65 行 白慧慧" in message
+    assert "近期论文" in message
 
 
 def test_untrusted_marker_comment_cannot_override_a_batch_review(tmp_path: Path) -> None:

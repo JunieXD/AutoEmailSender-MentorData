@@ -1310,6 +1310,195 @@ def test_manifest_shows_existing_mentor_and_current_affiliations_for_safe_confli
     }
 
 
+def test_manifest_shows_all_existing_record_field_conflicts(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    submitted = _row(
+        "示例导师",
+        "mentor@example.edu",
+        "示例大学",
+        "计算机学院",
+        "https://cs.example.edu/faculty/mentor",
+    )
+    submitted[6] = "新研究方向"
+    submitted[7] = "A Shorter Paper Title"
+    _, manifest, _ = _prepare(root, tmp_path, [submitted])
+
+    conflict = manifest["groups"][0]["rows"][0]["record_conflict"]
+
+    assert conflict["target_mentor_id"] == "mentor_fixture_0001"
+    assert conflict["mentor_name"] == "示例导师"
+    assert conflict["fields"] == [
+        {
+            "field": "research_directions",
+            "incoming": ["新研究方向"],
+            "existing": ["机器学习"],
+        },
+        {
+            "field": "recent_papers",
+            "incoming": ["A Shorter Paper Title"],
+            "existing": ["A Safe Example Paper"],
+        },
+    ]
+
+
+def test_manifest_shows_same_batch_profile_match_with_different_email(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    profile_url = "https://cs.example.edu/faculty/same-person"
+    _, manifest, _ = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "同一导师",
+                "first@example.edu",
+                "示例大学",
+                "计算机学院",
+                profile_url,
+                profile_url=profile_url,
+            ),
+            _row(
+                "同一导师",
+                "second@example.edu",
+                "示例大学",
+                "计算机学院",
+                profile_url,
+                profile_url=profile_url,
+            ),
+        ],
+    )
+
+    rows = sorted(manifest["groups"][0]["rows"], key=lambda row: row["batch_row"])
+
+    assert "record_conflict" not in rows[0]
+    assert rows[1]["record_conflict"]["fields"] == [
+        {
+            "field": "email",
+            "incoming": ["second@example.edu"],
+            "existing": ["first@example.edu"],
+        }
+    ]
+    assert rows[1]["record_conflict"]["pending_source_proposal_id"] == rows[0][
+        "proposal_id"
+    ]
+    assert rows[1]["record_conflict"]["pending_source_batch_row"] == rows[0][
+        "batch_row"
+    ]
+
+
+def test_review_can_replace_an_earlier_same_batch_profile_match(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    profile_url = "https://cs.example.edu/faculty/same-person"
+    result, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "同一导师",
+                "wrong@example.edu",
+                "示例大学",
+                "计算机学院",
+                profile_url,
+                profile_url=profile_url,
+            ),
+            _row(
+                "同一导师",
+                "correct@example.edu",
+                "示例大学",
+                "计算机学院",
+                profile_url,
+                profile_url=profile_url,
+            ),
+        ],
+    )
+    group = manifest["groups"][0]
+    rows = sorted(group["rows"], key=lambda row: row["batch_row"])
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _existing("university", "org_example_university"),
+                    _existing("school", "org_example_cs"),
+                    _skip("department"),
+                ],
+                "row_overrides": [
+                    {
+                        "proposal_id": rows[0]["proposal_id"],
+                        "action": "reject",
+                        "organization_id": None,
+                        "reason": "同批次后续记录的邮箱证据更可靠。",
+                    }
+                ],
+                "identity_resolutions": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.rejected_proposals == 1
+    assert applied.ready_for_finalization is True
+    remaining_paths = [path for path in result.paths if path.exists()]
+    assert len(remaining_paths) == 1
+    promoted = load_json(remaining_paths[0])
+    assert promoted["accepted"]["email"] == "correct@example.edu"
+    assert promoted["target_mentor_id"] is None
+    assert promoted["match_status"] == "new"
+
+    finalize_proposal_set(root, remaining_paths, moderator_github_user_id=999)
+
+    finalized = load_repository(root).mentors
+    assert len(finalized) == 1
+    assert finalized[0]["contacts"][0]["normalized_value"] == "correct@example.edu"
+
+
+def test_review_requires_rejecting_existing_record_field_conflicts(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    submitted = _row(
+        "示例导师",
+        "mentor@example.edu",
+        "示例大学",
+        "计算机学院",
+        "https://cs.example.edu/faculty/mentor",
+    )
+    submitted[6] = "新研究方向"
+    _, manifest, manifest_path = _prepare(root, tmp_path, [submitted])
+    group = manifest["groups"][0]
+    decision = _decision(
+        30,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _existing("university", "org_example_university"),
+                    _existing("school", "org_example_cs"),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    with pytest.raises(SubmissionError, match="资料冲突.*必须拒绝"):
+        apply_organization_review(root, comment, pull)
+
+
 def test_review_and_finalization_append_a_dual_appointment_without_duplicate_mentor(
     tmp_path: Path,
 ) -> None:
@@ -2078,14 +2267,24 @@ def test_review_rejects_order_dependent_duplicate_affiliation_outcomes(tmp_path:
 
 def test_review_accepts_legacy_manifest_without_new_optional_row_fields(tmp_path: Path) -> None:
     root = build_test_repository(tmp_path)
+    _seed_existing_mentor(root)
+    submitted = _row(
+        "示例导师",
+        "mentor@example.edu",
+        "示例大学",
+        "计算机学院",
+        "https://cs.example.edu/faculty/mentor",
+    )
+    submitted[6] = "旧清单未记录的冲突方向"
     _, manifest, manifest_path = _prepare(
         root,
         tmp_path,
-        [_row("甲老师", "a@example.edu", "示例大学", "计院", "https://cs.example.edu/a")],
+        [submitted],
     )
     group = manifest["groups"][0]
     group["rows"][0].pop("profile_url")
     group["rows"][0].pop("title")
+    group["rows"][0].pop("record_conflict")
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

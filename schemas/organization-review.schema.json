@@ -75,7 +75,50 @@
           ]
         },
         "source_url": { "type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 500 },
-        "identity": { "$ref": "#/$defs/identityCandidate" }
+        "identity": { "$ref": "#/$defs/identityCandidate" },
+        "record_conflict": { "$ref": "#/$defs/recordConflict" }
+      }
+    },
+    "recordConflict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_mentor_id", "mentor_name", "fields"],
+      "dependentRequired": {
+        "pending_source_proposal_id": ["pending_source_batch_row"],
+        "pending_source_batch_row": ["pending_source_proposal_id"]
+      },
+      "properties": {
+        "target_mentor_id": { "type": "string", "pattern": "^mentor_[a-z0-9][a-z0-9_-]{7,63}$" },
+        "mentor_name": { "type": "string", "minLength": 1, "maxLength": 255 },
+        "pending_source_proposal_id": {
+          "type": "string",
+          "pattern": "^proposal_issue_[1-9][0-9]*_row_[1-9][0-9]*$"
+        },
+        "pending_source_batch_row": { "type": "integer", "minimum": 1, "maximum": 5000 },
+        "fields": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": { "$ref": "#/$defs/recordConflictField" }
+        }
+      }
+    },
+    "recordConflictField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["field", "incoming", "existing"],
+      "properties": {
+        "field": {
+          "enum": ["name", "email", "title", "research_directions", "recent_papers", "profile_url"]
+        },
+        "incoming": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 5000 }
+        },
+        "existing": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1, "maxLength": 5000 }
+        }
       }
     },
     "identityCandidate": {

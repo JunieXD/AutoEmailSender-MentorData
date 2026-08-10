@@ -5,9 +5,10 @@ from datetime import UTC, datetime
 
 import pytest
 
-from mentor_data.errors import SubmissionError
+from mentor_data.errors import ProposalSetValidationError, SubmissionError
 from mentor_data.github_events import GitHubActor, load_issue_event
-from mentor_data.proposals import create_mentor_proposal, finalize_proposal
+from mentor_data.io_utils import write_json_atomic
+from mentor_data.proposals import create_mentor_proposal, finalize_proposal, finalize_proposal_set
 from mentor_data.repository import load_repository
 
 from .helpers import build_test_repository, claim, mentor, save_claim, save_mentor
@@ -21,6 +22,7 @@ def _issue_body(
     profile_url: str = "https://cs.example.edu/faculty/mentor",
     source_url: str = "https://cs.example.edu/faculty",
     title: str = "教授",
+    research_directions: str = "机器学习",
 ) -> str:
     sections = {
         "导师姓名": name,
@@ -29,7 +31,7 @@ def _issue_body(
         "学院或研究院正式名称": "计算机学院",
         "系所或中心": "_No response_",
         "职称": title,
-        "研究方向": "机器学习",
+        "研究方向": research_directions,
         "近期或代表论文": recent_papers,
         "高校官网导师详情页": profile_url,
         "发现导师的来源页": source_url,
@@ -311,6 +313,81 @@ def test_independent_duplicate_submission_adds_provenance_not_a_second_mentor(tm
     assert len(data.mentors) == 1
     assert len(data.mentors[0]["claim_ids"]) == 2
     assert len(data.mentors[0]["contacts"][0]["claim_ids"]) == 2
+
+
+def test_proposal_set_preflight_reports_every_field_conflict_without_writes(
+    tmp_path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    existing_claim = claim(
+        claim_id="claim_fixture_1001",
+        mentor_id="mentor_fixture_0001",
+        user_id=1001,
+        login="fixture-one",
+        issue_number=1,
+        name="示例导师",
+        email="mentor@example.edu",
+        organization_id="org_example_cs",
+        source_url="https://cs.example.edu/faculty/mentor",
+        profile_url="https://cs.example.edu/faculty/mentor",
+    )
+    save_claim(root, existing_claim)
+    save_mentor(root, mentor())
+
+    first_event = _write_event(
+        tmp_path,
+        issue_number=10,
+        user_id=2002,
+        login="fixture-two",
+        body=_issue_body(
+            research_directions="新研究方向",
+            recent_papers="A Shorter Paper Title",
+        ),
+    )
+    first = create_mentor_proposal(
+        root,
+        load_issue_event(first_event, max_body_bytes=200_000),
+        _actor(2002, "fixture-two"),
+        output_directory=tmp_path / "proposals",
+    )
+    first.proposal["issue"]["batch_row"] = 36
+    write_json_atomic(first.path, first.proposal)
+
+    second_event = _write_event(
+        tmp_path,
+        issue_number=11,
+        user_id=3003,
+        login="fixture-three",
+        body=_issue_body(title="副教授"),
+    )
+    second = create_mentor_proposal(
+        root,
+        load_issue_event(second_event, max_body_bytes=200_000),
+        _actor(3003, "fixture-three"),
+        output_directory=tmp_path / "proposals",
+    )
+    second.proposal["issue"]["batch_row"] = 65
+    write_json_atomic(second.path, second.proposal)
+
+    with pytest.raises(ProposalSetValidationError) as caught:
+        finalize_proposal_set(
+            root,
+            [first.path, second.path],
+            moderator_github_user_id=999,
+        )
+
+    assert [(issue.batch_row, issue.field) for issue in caught.value.issues] == [
+        (36, "research_directions"),
+        (36, "recent_papers"),
+        (65, "title"),
+    ]
+    assert "表格第 36 行 示例导师" in str(caught.value)
+    assert "研究方向" in str(caught.value)
+    assert "近期论文" in str(caught.value)
+    assert "表格第 65 行 示例导师" in str(caught.value)
+    data = load_repository(root)
+    assert len(data.claims) == 1
+    assert len(data.mentors[0]["claim_ids"]) == 1
 
 
 def test_same_email_with_different_name_is_quarantined(tmp_path) -> None:

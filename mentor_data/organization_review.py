@@ -11,7 +11,7 @@ from typing import TYPE_CHECKING, Any
 
 from jsonschema import Draft202012Validator, FormatChecker
 
-from .errors import RepositoryValidationError, SubmissionError
+from .errors import ProposalSetValidationError, RepositoryValidationError, SubmissionError
 from .github_events import GITHUB_LOGIN_PATTERN, parse_datetime
 from .identifiers import proposed_mentor_id, stable_proposal_entity_id
 from .io_utils import json_bytes, load_json, write_json_atomic, write_yaml_atomic
@@ -277,6 +277,206 @@ def _organization_options(registry: OrganizationRegistry) -> list[dict[str, Any]
     return options
 
 
+def _target_mentor_snapshot(
+    data: RepositoryData,
+    proposal: dict[str, Any],
+    *,
+    pending_proposals: list[dict[str, Any]] | tuple[dict[str, Any], ...] = (),
+) -> dict[str, Any] | None:
+    target_mentor_id = proposal.get("target_mentor_id")
+    if not isinstance(target_mentor_id, str):
+        return None
+    mentor = next((item for item in data.mentors if item.get("id") == target_mentor_id), None)
+    if mentor is not None:
+        return mentor
+    pending = next(
+        (
+            item
+            for item in pending_proposals
+            if item.get("target_mentor_id") is None
+            and proposed_mentor_id(item) == target_mentor_id
+        ),
+        None,
+    )
+    if pending is None:
+        return None
+    accepted = pending["accepted"]
+    organization_id = accepted.get("organization_id")
+    observed_at = pending["contributor"]["submitted_at"]
+    source_url = accepted.get("profile_url") or accepted["source_url"]
+    affiliation_id = stable_proposal_entity_id("aff", pending, "affiliation")
+    submitted_path = " / ".join(
+        value
+        for value in (
+            accepted.get("submitted_university"),
+            accepted.get("submitted_school"),
+            accepted.get("submitted_department"),
+        )
+        if isinstance(value, str) and value
+    )
+    return {
+        "id": target_mentor_id,
+        "names": [{"value": accepted["name"], "is_primary": True}],
+        "contacts": [
+            {
+                "normalized_value": accepted["email"],
+                "status": "current",
+                "is_primary": True,
+                "affiliation_id": affiliation_id,
+            }
+        ],
+        "affiliations": [
+            {
+                "id": affiliation_id,
+                "organization_id": organization_id if isinstance(organization_id, str) else None,
+                "organization_label": submitted_path or "机构待审核",
+                "status": "current",
+                "is_primary": True,
+                "title": accepted.get("title"),
+                "source_url": source_url,
+                "observed_at": observed_at,
+            }
+        ],
+        "profiles": (
+            [{"url": accepted["profile_url"], "status": "current"}]
+            if accepted.get("profile_url")
+            else []
+        ),
+        "title": accepted.get("title"),
+        "research_directions": list(accepted.get("research_directions") or []),
+        "recent_papers": list(accepted.get("recent_papers") or []),
+    }
+
+
+def _record_conflict(
+    data: RepositoryData,
+    proposal: dict[str, Any],
+    *,
+    pending_proposals: list[dict[str, Any]] | tuple[dict[str, Any], ...] = (),
+) -> dict[str, Any] | None:
+    mentor = _target_mentor_snapshot(
+        data,
+        proposal,
+        pending_proposals=pending_proposals,
+    )
+    if mentor is None:
+        return None
+    accepted = proposal.get("accepted", {})
+    primary_name = next(
+        (item.get("value") for item in mentor.get("names", []) if item.get("is_primary")),
+        None,
+    )
+    current_emails = list(
+        dict.fromkeys(
+            item["normalized_value"]
+            for item in mentor.get("contacts", [])
+            if item.get("status") == "current"
+            and isinstance(item.get("normalized_value"), str)
+        )
+    )
+    conflicts: list[dict[str, Any]] = []
+
+    incoming_name = accepted.get("name")
+    if (
+        isinstance(incoming_name, str)
+        and isinstance(primary_name, str)
+        and normalize_name_key(incoming_name) != normalize_name_key(primary_name)
+    ):
+        conflicts.append(
+            {"field": "name", "incoming": [incoming_name], "existing": [primary_name]}
+        )
+
+    incoming_email = normalize_email(str(accepted.get("email") or ""))
+    if incoming_email and incoming_email not in current_emails:
+        conflicts.append(
+            {"field": "email", "incoming": [incoming_email], "existing": current_emails}
+        )
+
+    organization_id = accepted.get("organization_id")
+    pending = next(
+        (
+            item
+            for item in pending_proposals
+            if item.get("target_mentor_id") is None
+            and proposed_mentor_id(item) == proposal.get("target_mentor_id")
+        ),
+        None,
+    )
+    same_affiliation = proposal.get("match_status") == "matched_email" or (
+        isinstance(organization_id, str)
+        and any(
+            affiliation.get("status") == "current"
+            and affiliation.get("organization_id") == organization_id
+            for affiliation in mentor.get("affiliations", [])
+        )
+    )
+    if not same_affiliation and pending is not None:
+        submitted_path = tuple(
+            normalize_organization_key(accepted.get(field))
+            for field in (
+                "submitted_university",
+                "submitted_school",
+                "submitted_department",
+            )
+        )
+        pending_path = tuple(
+            normalize_organization_key(pending["accepted"].get(field))
+            for field in (
+                "submitted_university",
+                "submitted_school",
+                "submitted_department",
+            )
+        )
+        same_affiliation = any(submitted_path) and submitted_path == pending_path
+
+    if same_affiliation:
+        for field in ("title", "research_directions", "recent_papers"):
+            incoming = accepted.get(field)
+            current = mentor.get(field)
+            if incoming in (None, "", []) or current in (None, "", []):
+                continue
+            if incoming == current:
+                continue
+            incoming_values = list(incoming) if isinstance(incoming, list) else [str(incoming)]
+            current_values = list(current) if isinstance(current, list) else [str(current)]
+            conflicts.append(
+                {"field": field, "incoming": incoming_values, "existing": current_values}
+            )
+
+        incoming_profile = accepted.get("profile_url")
+        current_profiles = list(
+            dict.fromkeys(
+                item["url"]
+                for item in mentor.get("profiles", [])
+                if item.get("status") == "current" and isinstance(item.get("url"), str)
+            )
+        )
+        if incoming_profile and current_profiles and incoming_profile not in current_profiles:
+            conflicts.append(
+                {
+                    "field": "profile_url",
+                    "incoming": [incoming_profile],
+                    "existing": current_profiles,
+                }
+            )
+
+    if not conflicts:
+        return None
+    return {
+        "target_mentor_id": mentor["id"],
+        "mentor_name": primary_name or str(accepted.get("name") or "未知导师"),
+        "fields": conflicts,
+        **(
+            {
+                "pending_source_proposal_id": pending["id"],
+                "pending_source_batch_row": pending["issue"]["batch_row"],
+            }
+            if pending is not None
+            else {}
+        ),
+    }
+
+
 def _supported_affiliation_identity(
     data: RepositoryData,
     proposal: dict[str, Any],
@@ -298,67 +498,11 @@ def _supported_affiliation_identity(
         or reasons & UNSUPPORTED_AFFILIATION_IDENTITY_REASONS
     ):
         return None
-    mentor = next((item for item in data.mentors if item.get("id") == target_mentor_id), None)
-    if mentor is None:
-        pending = next(
-            (
-                item
-                for item in pending_proposals
-                if item.get("target_mentor_id") is None
-                and proposed_mentor_id(item) == target_mentor_id
-            ),
-            None,
-        )
-        if pending is not None:
-            pending_accepted = pending["accepted"]
-            pending_organization_id = pending_accepted.get("organization_id")
-            observed_at = pending["contributor"]["submitted_at"]
-            source_url = (
-                pending_accepted.get("profile_url")
-                or pending_accepted["source_url"]
-            )
-            affiliation_id = stable_proposal_entity_id(
-                "aff", pending, "affiliation"
-            )
-            submitted_path = " / ".join(
-                value
-                for value in (
-                    pending_accepted.get("submitted_university"),
-                    pending_accepted.get("submitted_school"),
-                    pending_accepted.get("submitted_department"),
-                )
-                if isinstance(value, str) and value
-            )
-            mentor = {
-                "id": target_mentor_id,
-                "names": [
-                    {"value": pending_accepted["name"], "is_primary": True}
-                ],
-                "contacts": [
-                    {
-                        "normalized_value": pending_accepted["email"],
-                        "status": "current",
-                        "is_primary": True,
-                        "affiliation_id": affiliation_id,
-                    }
-                ],
-                "affiliations": [
-                    {
-                        "id": affiliation_id,
-                        "organization_id": (
-                            pending_organization_id
-                            if isinstance(pending_organization_id, str)
-                            else None
-                        ),
-                        "organization_label": submitted_path or "机构待审核",
-                        "status": "current",
-                        "is_primary": True,
-                        "title": pending_accepted.get("title"),
-                        "source_url": source_url,
-                        "observed_at": observed_at,
-                    }
-                ],
-            }
+    mentor = _target_mentor_snapshot(
+        data,
+        proposal,
+        pending_proposals=pending_proposals,
+    )
     if mentor is None:
         return None
     accepted = proposal.get("accepted", {})
@@ -438,6 +582,13 @@ def _manifest_row(
     )
     if identity is not None:
         row["identity"] = identity
+    record_conflict = _record_conflict(
+        data,
+        proposal,
+        pending_proposals=pending_proposals,
+    )
+    if record_conflict is not None:
+        row["record_conflict"] = record_conflict
     return row
 
 
@@ -1319,6 +1470,11 @@ def apply_organization_review(
             # readable. They cannot opt into the new identity decision automatically.
             if "identity" not in row:
                 expected_row.pop("identity", None)
+            # Older pending manifests did not include existing-record field conflicts.
+            # They remain reviewable, but new manifests expose these differences before
+            # a moderator can approve the row.
+            if "record_conflict" not in row:
+                expected_row.pop("record_conflict", None)
             if row != expected_row or _group_id(submitted_path) != group["id"]:
                 raise SubmissionError("机构审核清单与提案原始字段不一致，请重新生成清单")
 
@@ -1454,6 +1610,19 @@ def apply_organization_review(
             if isinstance(target_id, str):
                 pending_target_organization_ids[proposed_mentor_id(proposal)] = target_id
 
+    planned_rejected_ids = {
+        row["proposal_id"]
+        for group_id, group in manifest_groups.items()
+        for row in group["rows"]
+        if (
+            overrides_by_group[group_id].get(row["proposal_id"], {}).get("action")
+            == "reject"
+            or (
+                row["proposal_id"] not in overrides_by_group[group_id]
+                and decision_groups[group_id]["action"] == "reject"
+            )
+        )
+    }
     for group_id in sorted(manifest_groups):
         group = manifest_groups[group_id]
         group_decision = decision_groups[group_id]
@@ -1464,6 +1633,34 @@ def apply_organization_review(
             proposal_id = row["proposal_id"]
             override = overrides.get(proposal_id)
             identity_resolution = identity_resolutions.get(proposal_id)
+            row_rejected = (override is not None and override["action"] == "reject") or (
+                override is None and group_decision["action"] == "reject"
+            )
+            record_conflict = row.get("record_conflict")
+            pending_source_proposal_id = (
+                record_conflict.get("pending_source_proposal_id")
+                if isinstance(record_conflict, dict)
+                else None
+            )
+            replaces_rejected_pending_row = (
+                isinstance(record_conflict, dict)
+                and isinstance(pending_source_proposal_id, str)
+                and pending_source_proposal_id in planned_rejected_ids
+                and pending_source_proposal_id in proposals_by_id
+                and proposals_by_id[pending_source_proposal_id].get("target_mentor_id")
+                is None
+                and proposed_mentor_id(proposals_by_id[pending_source_proposal_id])
+                == record_conflict.get("target_mentor_id")
+            )
+            if (
+                record_conflict is not None
+                and not row_rejected
+                and not replaces_rejected_pending_row
+            ):
+                raise SubmissionError(
+                    f"提案 {proposal_id} 与已有导师资料冲突；本次投稿必须拒绝，"
+                    "资料更新请使用信息纠错流程"
+                )
             if override is not None and override["action"] == "reject":
                 if identity_resolution is not None:
                     raise SubmissionError(f"被拒绝的提案 {proposal_id} 不能同时新增或调动任职")
@@ -1727,7 +1924,11 @@ def apply_organization_review(
             check_proposal_set(root, remaining_paths, schema_root=trusted_schema_root)
             ready_for_finalization = True
         except (RepositoryValidationError, SubmissionError, OSError, ValueError) as error:
-            finalization_error = str(error).splitlines()[0][:500]
+            finalization_error = (
+                str(error)[:60_000]
+                if isinstance(error, ProposalSetValidationError)
+                else str(error).splitlines()[0][:500]
+            )
 
     return AppliedOrganizationReview(
         remaining_proposals=len(remaining_paths),

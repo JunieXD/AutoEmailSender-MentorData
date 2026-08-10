@@ -7,9 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="styles.css?v=8" />' in html
-    assert '<script src="review-logic.js?v=8" defer></script>' in html
-    assert '<script src="review.js?v=8" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=9" />' in html
+    assert '<script src="review-logic.js?v=9" defer></script>' in html
+    assert '<script src="review.js?v=9" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -160,6 +160,25 @@ def test_review_prioritizes_affiliation_conflicts_and_emits_separate_decisions()
     assert 'action.value = "reject"' in script
     assert "identity-comparison-table" in script
     assert "pathText(card.group)" in script
+
+
+def test_review_compares_existing_record_fields_and_rejects_conflicts_by_default() -> None:
+    html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+    styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+
+    assert "导师待确认" in html
+    assert "RECORD_CONFLICT_REJECTION_REASON" in script
+    assert "RECORD_CONFLICT_FIELD_LABELS" in script
+    assert "createRecordConflictPanel" in script
+    assert "recordConflictRejectionReason" in script
+    assert "本次投稿应不收录" in script
+    assert "如需更新资料，请提交信息纠错。" in script
+    assert "pendingConflictSourceIsRejected" in script
+    assert "保留本次，拒绝第" in script
+    assert ".record-conflicts" in styles
+    assert ".record-conflict-comparison" in styles
+    assert '.record-conflict[data-state="replacement"]' in styles
 
 
 def test_review_accepts_pending_affiliation_labels_for_new_batch_mentors() -> None:

@@ -12,7 +12,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
-from .errors import RepositoryValidationError, SubmissionError
+from .errors import ProposalSetValidationError, RepositoryValidationError, SubmissionError
 from .internal_pulls import (
     SHA_PATTERN,
     InternalPull,
@@ -124,7 +124,7 @@ class PromotionQueue:
             except (RepositoryValidationError, SubmissionError, ValueError) as error:
                 failed += 1
                 try:
-                    self._mark_attention(pull, str(error).splitlines()[0][:1_000])
+                    self._mark_attention(pull, self._attention_message(error))
                 except (OSError, RuntimeError, subprocess.CalledProcessError) as mark_error:
                     print(
                         f"Could not record attention state for PR #{pull.number}: {mark_error}"
@@ -138,6 +138,27 @@ class PromotionQueue:
             failed=failed,
             skipped=skipped,
         )
+
+    @staticmethod
+    def _attention_message(error: Exception) -> str:
+        text = str(error)
+        if not isinstance(error, ProposalSetValidationError) and not text.startswith(
+            "落库前发现 "
+        ):
+            return str(error).splitlines()[0][:1_000]
+        if len(text) <= 60_000:
+            return text
+        lines = text.splitlines()
+        kept = [lines[0]]
+        used = len(lines[0])
+        for line in lines[1:]:
+            if used + len(line) + 1 > 59_900:
+                break
+            kept.append(line)
+            used += len(line) + 1
+        omitted = max(0, len(lines) - len(kept))
+        kept.append(f"- 其余 {omitted} 项请在审核页中处理")
+        return "\n".join(kept)
 
     def _run(
         self,
