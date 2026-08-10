@@ -7,8 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<script src="review-logic.js" defer></script>' in html
-    assert '<script src="review.js" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=2" />' in html
+    assert '<script src="review-logic.js?v=2" defer></script>' in html
+    assert '<script src="review.js?v=2" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -87,7 +88,7 @@ def test_review_infers_new_organization_defaults_from_names() -> None:
     assert '["中心", "center"]' in script
     assert '["系", "department"]' in script
     assert "shouldDefaultOrganizationToParent" in script
-    assert "正式名称与上级学院相同，已默认归到上级" in script
+    assert "这一层与上级名称相同，系统已归入上级" in script
     assert "actionManuallySelected" in script
     assert "organizationTypeManuallySelected" in script
 
@@ -114,7 +115,7 @@ def test_review_reuses_organization_drafts_and_autosaves_progress() -> None:
     assert "organizationDraftKey" in script
     assert "localStorage.setItem" in script
     assert "restoreReviewDraft" in script
-    assert "同一机构只需确认一次" in script
+    assert "相关机构和导师归属已经同步更新" in script
 
 
 def test_review_suggests_official_urls_and_lists_pending_destinations() -> None:
@@ -124,7 +125,7 @@ def test_review_suggests_official_urls_and_lists_pending_destinations() -> None:
     assert "官方网站（没有可以留空）" in script
     assert "refreshPendingOrganizationOptions" in script
     assert "本次新建" in script
-    assert "改到其他机构" in script
+    assert "单独调整到其他机构" in script
     assert "已找到同名机构，自动归到" in script
 
 
@@ -144,12 +145,12 @@ def test_review_prioritizes_affiliation_conflicts_and_emits_separate_decisions()
     styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
 
     assert 'id="review-identity-count"' in html
-    assert "疑似同一导师，学院不一致" in script
+    assert "同一位导师出现了不同的机构归属" in script
     assert "append_current_affiliation" in script
     assert "transfer_current_affiliation" in script
     assert "collectIdentityResolutions" in script
     assert "identity_resolutions" in script
-    assert "新增双聘" in script
+    assert "增加双聘任职" in script
     assert "任职调动" in script
     assert ".identity-resolution" in styles
     assert ".identity-comparison" in styles
@@ -169,8 +170,8 @@ def test_review_supports_path_correction_and_independent_targets() -> None:
     styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
 
     assert "suggested_path_correction" in script
-    assert "纠正整组最终归属" in script
-    assert "只准备备用目标" in script
+    assert "调整整组的最终归属" in script
+    assert "仅为个别导师准备其他机构" in script
     assert "organization_creations" in script
     assert "target_organization_id" in script
     assert "save_path_correction" in script
@@ -180,6 +181,29 @@ def test_review_supports_path_correction_and_independent_targets() -> None:
     assert "mergeIndependentCreations" in logic
     assert ".independent-target-panel" in styles
     assert ".path-correction-notice" in styles
+
+
+def test_review_uses_one_task_workspace_and_plain_reviewer_language() -> None:
+    html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+    logic = (PROJECT_ROOT / "site" / "review-logic.js").read_text(encoding="utf-8")
+    styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+
+    assert 'id="review-workspace"' in html
+    assert 'id="review-task-list"' in html
+    assert 'id="workflow-pending-count"' in html
+    assert 'id="result-summary-title"' in html
+    assert "一次处理一件事" in html
+    assert "归入已有机构" in script
+    assert "不单独建立，归入上级" in script
+    assert "确认这项处理" in script
+    assert "buildWorkflowTasks" in script
+    assert "applySuggestedGroupDecision" in script
+    assert "focusNextWorkflowTask" in script
+    assert "pathReviewSuggestion" in logic
+    assert "rankOrganizationCandidates" in logic
+    assert ".review-workspace-grid" in styles
+    assert ".review-workflow-bar" in styles
 
 
 def test_public_home_page_prioritizes_using_contributing_and_correcting_data() -> None:

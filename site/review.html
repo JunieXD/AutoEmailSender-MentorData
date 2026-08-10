@@ -8,16 +8,17 @@
       content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
     />
     <meta name="referrer" content="no-referrer" />
-    <title>批量机构审核 · AutoEmailSender 社区导师库</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>投稿审核 · AutoEmailSender 社区导师库</title>
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body class="review-page">
+    <a class="skip-link" href="#review-workspace">跳到审核内容</a>
     <main class="shell review-shell">
       <header class="review-hero">
         <a class="back-link" href="./">← 返回社区导师库</a>
-        <p class="eyebrow">Maintainer tool</p>
-        <h1>批量机构审核</h1>
-        <p class="intro">每个机构确认一次，再处理改派、拒绝与“同一导师但学院不一致”的任职判定。</p>
+        <p class="eyebrow">投稿审核</p>
+        <h1>审核这次导师投稿</h1>
+        <p class="intro">系统会先整理没有争议的内容。你只需要逐项处理机构、归属或任职方面的疑问。</p>
       </header>
 
       <section id="review-status" class="review-status" aria-live="polite">
@@ -42,72 +43,133 @@
           <strong id="review-row-count">—</strong>
         </div>
         <div>
-          <span class="label">普通无效行</span>
+          <span class="label">未进入审核</span>
           <strong id="review-invalid-count">—</strong>
         </div>
         <div>
-          <span class="label">待判定任职</span>
+          <span class="label">任职待判断</span>
           <strong id="review-identity-count">—</strong>
         </div>
       </section>
 
       <details id="invalid-rows-panel" class="invalid-rows-panel" hidden>
-        <summary>查看未进入提案的普通无效行</summary>
+        <summary>查看未进入审核的数据</summary>
         <div id="invalid-rows" class="invalid-rows"></div>
       </details>
 
-      <section id="organizations-section" class="organizations-section" hidden>
-        <div class="section-heading">
+      <section id="review-workspace" class="review-workspace" hidden>
+        <header class="workflow-heading">
           <div>
-            <p class="eyebrow">Organization tree</p>
-            <h2>先整理机构</h2>
+            <p class="eyebrow">需要你判断的内容</p>
+            <h2>一次处理一件事</h2>
+            <p>选择处理结果后，相关机构和导师会一起更新，不需要在页面上下往返。</p>
           </div>
-          <div class="review-progress-actions">
-            <span id="organization-progress" class="organization-progress">—</span>
-            <button id="next-pending" class="secondary-button" type="button">下一个待确认</button>
+          <div class="workflow-progress" aria-live="polite">
+            <strong id="workflow-pending-count">—</strong>
+            <span>项尚未处理</span>
           </div>
-        </div>
-        <p class="section-note">同一学校或学院只需确认一次，结果会自动用于所有相关导师。</p>
-        <p id="autosave-status" class="autosave-status" aria-live="polite"></p>
-        <div id="organization-tree" class="organization-tree"></div>
-      </section>
+        </header>
 
-      <section id="groups-section" class="groups-section" hidden>
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Mentor assignments</p>
-            <h2>检查导师分组</h2>
-          </div>
-          <p>导师默认跟随上面的机构；学院不一致的同邮箱导师会在这里优先显示，必须明确判定双聘、调动或拒绝。</p>
+        <p id="autosave-status" class="autosave-status" aria-live="polite"></p>
+
+        <div class="review-workspace-grid">
+          <nav class="review-task-rail" aria-label="审核事项">
+            <div class="task-filter" role="tablist" aria-label="筛选审核事项">
+              <button id="task-filter-pending" type="button" role="tab" aria-selected="true">
+                待处理 <span id="task-filter-pending-count">0</span>
+              </button>
+              <button id="task-filter-done" type="button" role="tab" aria-selected="false">
+                已处理 <span id="task-filter-done-count">0</span>
+              </button>
+              <button id="task-filter-all" type="button" role="tab" aria-selected="false">
+                全部 <span id="task-filter-all-count">0</span>
+              </button>
+            </div>
+            <div id="review-task-list" class="review-task-list"></div>
+          </nav>
+
+          <section id="review-task-stage" class="review-task-stage" aria-live="polite" tabindex="-1">
+            <div id="review-task-empty" class="review-task-empty" hidden>
+              <h3>这一栏已经处理完了</h3>
+              <p>可以查看其他项目，或者进入最后检查。</p>
+            </div>
+
+            <section id="organizations-section" class="organizations-section" hidden>
+              <div class="task-section-heading">
+                <div>
+                  <p class="eyebrow">机构处理</p>
+                  <h2>确认这个机构如何收录</h2>
+                </div>
+                <div class="review-progress-actions">
+                  <span id="organization-progress" class="organization-progress">—</span>
+                  <button id="next-pending" class="secondary-button" type="button">处理下一项</button>
+                </div>
+              </div>
+              <p class="section-note">这里的选择会同步用于所有相关导师。</p>
+              <div id="organization-tree" class="organization-tree"></div>
+            </section>
+
+            <section id="groups-section" class="groups-section" hidden>
+              <div class="task-section-heading">
+                <div>
+                  <p class="eyebrow">导师归属</p>
+                  <h2>确认这组导师的最终归属</h2>
+                </div>
+              </div>
+              <p class="section-note">先确认整组处理方式；只有少数导师不一致时，再单独调整。</p>
+              <div id="review-groups" class="review-groups"></div>
+            </section>
+          </section>
+
+          <aside class="review-result-summary" aria-labelledby="result-summary-title">
+            <div>
+              <p class="eyebrow">处理结果</p>
+              <h2 id="result-summary-title">本次会发生什么</h2>
+            </div>
+            <dl class="result-metrics">
+              <div><dt>新建机构</dt><dd id="result-new-organizations">0</dd></div>
+              <div><dt>归入已有机构</dt><dd id="result-reused-organizations">0</dd></div>
+              <div><dt>调整导师归属</dt><dd id="result-corrected-groups">0</dd></div>
+              <div><dt>不收录导师</dt><dd id="result-rejected-rows">0</dd></div>
+            </dl>
+            <p id="result-summary-note" class="result-summary-note">完成待处理事项后，可以进行最后检查。</p>
+            <button id="open-final-check" class="secondary-button" type="button">查看最后检查</button>
+          </aside>
         </div>
-        <div id="review-groups" class="review-groups"></div>
+
+        <footer class="review-workflow-bar">
+          <button id="previous-review-task" class="secondary-button" type="button">上一项</button>
+          <p id="workflow-position" aria-live="polite">—</p>
+          <button id="next-review-task" class="primary-button" type="button">下一项</button>
+        </footer>
       </section>
 
       <section id="empty-review" class="empty-review" hidden>
-        <h2>没有可映射的导师行</h2>
-        <p>本批只有普通无效行。生成审核评论后，系统会记录结果并关闭 PR。</p>
+        <h2>没有可进入审核的导师</h2>
+        <p>这次投稿中的导师数据都未通过基础检查。生成审核评论后，系统会记录结果并关闭 PR。</p>
       </section>
 
       <section id="decision-panel" class="decision-panel" hidden>
         <div class="decision-actions">
           <div>
-            <h2>生成审核评论</h2>
-            <p>后端会再次校验全部选择；网页不会直接修改仓库。</p>
+            <p class="eyebrow">最后检查</p>
+            <h2>确认本次处理结果</h2>
+            <p>系统会再次检查所有选择。生成评论不会直接修改仓库。</p>
           </div>
-          <button id="generate-decision" class="primary-button" type="button">生成审核评论</button>
+          <button id="generate-decision" class="primary-button" type="button">检查并生成审核评论</button>
         </div>
         <p id="decision-error" class="error" hidden></p>
         <div id="decision-preview" class="decision-preview" hidden></div>
         <div id="decision-output" class="decision-output" hidden>
-          <label for="decision-text">复制以下内容到 PR 评论</label>
+          <label for="decision-text">审核评论已经生成</label>
           <textarea id="decision-text" rows="12" readonly spellcheck="false"></textarea>
-          <button id="copy-open-pr" class="primary-button" type="button">复制并打开 PR</button>
+          <button id="copy-open-pr" class="primary-button" type="button">复制评论并打开 PR</button>
           <p id="copy-status" class="copy-status" aria-live="polite"></p>
         </div>
       </section>
 
     </main>
-    <script src="review-logic.js" defer></script>
-    <script src="review.js" defer></script>
+    <script src="review-logic.js?v=2" defer></script>
+    <script src="review.js?v=2" defer></script>
   </body>
 </html>

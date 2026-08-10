@@ -214,14 +214,15 @@ def _heuristic_path_correction(
         or normalize_organization_key(department) == normalize_organization_key(school)
     ):
         return None
-    if department.endswith("研究院"):
+    if department.endswith(("研究院", "研究所")):
         kind = "department_as_institute"
         expected_type = "institute"
-        reason = "系所字段以“研究院”结尾，疑似同校平级研究院"
+        suffix = "研究所" if department.endswith("研究所") else "研究院"
+        reason = f"投稿中的系所名称以“{suffix}”结尾，可能不是当前学院的下级机构"
     elif department.endswith("学院"):
         kind = "department_as_school"
         expected_type = "school"
-        reason = "系所字段以“学院”结尾，疑似同校平级学院"
+        reason = "投稿中的系所名称以“学院”结尾，需要确认它是否与当前学院同级"
     else:
         return None
 

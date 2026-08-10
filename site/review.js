@@ -73,6 +73,10 @@ const state = {
   autosaveDirty: false,
   proposedOrganizationIdCache: new Map(),
   cards: [],
+  workflowTasks: [],
+  workflowTaskById: new Map(),
+  workflowFilter: "pending",
+  currentWorkflowTaskId: null,
 };
 
 const nodes = {
@@ -87,6 +91,17 @@ const nodes = {
   identityCount: document.querySelector("#review-identity-count"),
   invalidPanel: document.querySelector("#invalid-rows-panel"),
   invalidRows: document.querySelector("#invalid-rows"),
+  reviewWorkspace: document.querySelector("#review-workspace"),
+  workflowPendingCount: document.querySelector("#workflow-pending-count"),
+  taskFilterPending: document.querySelector("#task-filter-pending"),
+  taskFilterPendingCount: document.querySelector("#task-filter-pending-count"),
+  taskFilterDone: document.querySelector("#task-filter-done"),
+  taskFilterDoneCount: document.querySelector("#task-filter-done-count"),
+  taskFilterAll: document.querySelector("#task-filter-all"),
+  taskFilterAllCount: document.querySelector("#task-filter-all-count"),
+  taskList: document.querySelector("#review-task-list"),
+  taskStage: document.querySelector("#review-task-stage"),
+  taskEmpty: document.querySelector("#review-task-empty"),
   organizationsSection: document.querySelector("#organizations-section"),
   organizationTree: document.querySelector("#organization-tree"),
   organizationProgress: document.querySelector("#organization-progress"),
@@ -103,6 +118,15 @@ const nodes = {
   decisionText: document.querySelector("#decision-text"),
   copyOpen: document.querySelector("#copy-open-pr"),
   copyStatus: document.querySelector("#copy-status"),
+  resultNewOrganizations: document.querySelector("#result-new-organizations"),
+  resultReusedOrganizations: document.querySelector("#result-reused-organizations"),
+  resultCorrectedGroups: document.querySelector("#result-corrected-groups"),
+  resultRejectedRows: document.querySelector("#result-rejected-rows"),
+  resultSummaryNote: document.querySelector("#result-summary-note"),
+  openFinalCheck: document.querySelector("#open-final-check"),
+  previousTask: document.querySelector("#previous-review-task"),
+  nextTask: document.querySelector("#next-review-task"),
+  workflowPosition: document.querySelector("#workflow-position"),
 };
 
 let floatingControlSequence = 0;
@@ -373,11 +397,15 @@ function createSelect(options, className, ariaLabel) {
     trigger.removeAttribute("aria-activedescendant");
     menu.hidden = true;
     deactivateFloatingControl(root);
+    menu.remove();
   }
 
   function openMenu() {
     if (trigger.disabled || open) {
       return;
+    }
+    if (!menu.isConnected) {
+      document.body.append(menu);
     }
     activateFloatingControl(root, menu, closeMenu);
     open = true;
@@ -469,7 +497,6 @@ function createSelect(options, className, ariaLabel) {
   });
 
   root.append(trigger);
-  document.body.append(menu);
   setValue(selectedValue);
   return root;
 }
@@ -587,11 +614,15 @@ function createOrganizationPicker(organizations, placeholder, ariaLabel) {
     input.removeAttribute("aria-activedescendant");
     menu.hidden = true;
     deactivateFloatingControl(root);
+    menu.remove();
   }
 
   function openMenu() {
     if (open) {
       return;
+    }
+    if (!menu.isConnected) {
+      document.body.append(menu);
     }
     activateFloatingControl(root, menu, closeMenu);
     open = true;
@@ -691,7 +722,6 @@ function createOrganizationPicker(organizations, placeholder, ariaLabel) {
   };
 
   root.append(input, toggle);
-  document.body.append(menu);
   return root;
 }
 
@@ -878,17 +908,17 @@ function createOrganizationDraftEditor(draft) {
     "organization-impact",
     `${draft.groupIds.size} 个分组 · ${draft.rowCount} 位导师`,
   );
-  const status = element("span", "organization-draft-status", "待确认");
+  const status = element("span", "organization-draft-status", "待处理");
   summaryMeta.append(impact, status);
   summary.append(summaryIdentity, summaryMeta);
 
   const body = element("div", "organization-draft-body");
   const actionOptions = [
-    ["existing", "使用现有机构"],
-    ["create", "新建机构"],
+    ["existing", "归入已有机构"],
+    ["create", "保留为新机构"],
   ];
   if (draft.level !== "university") {
-    actionOptions.push(["skip", "归到上级（不建此层）"]);
+    actionOptions.push(["skip", "不单独建立，归入上级"]);
   }
   const action = createSelect(
     actionOptions,
@@ -899,7 +929,7 @@ function createOrganizationDraftEditor(draft) {
   const existingPanel = element("div", "editor-panel existing-panel");
   const existingInput = createOrganizationPicker(
     [],
-    "搜索并选择现有机构",
+    "搜索已有机构",
     `选择现有${LEVEL_LABELS[draft.level]}`,
   );
   existingPanel.append(labeledControl("现有机构", existingInput));
@@ -956,7 +986,7 @@ function createOrganizationDraftEditor(draft) {
   const sourceGroup = {
     source_urls: [...draft.sourceUrlCounts.keys()].sort(),
   };
-  sourceBar.append(element("span", null, "投稿来源"), sourceLinks(sourceGroup));
+  sourceBar.append(element("span", null, "核对来源"), sourceLinks(sourceGroup));
   const restoreUrl = element(
     "button",
     "text-button",
@@ -971,7 +1001,7 @@ function createOrganizationDraftEditor(draft) {
   saveAlias.type = "checkbox";
   saveAlias.checked = Boolean(draft.submittedName);
   saveAlias.setAttribute("aria-label", `保存${draft.submittedName}为别名`);
-  aliasLabel.append(saveAlias, element("span", null, "正式名称修改后，保留投稿写法作为别名"));
+  aliasLabel.append(saveAlias, element("span", null, "正式名称不同时，把投稿写法保存为别名"));
 
   const error = element("p", "organization-draft-error error");
   error.hidden = true;
@@ -980,7 +1010,7 @@ function createOrganizationDraftEditor(draft) {
   const defaultNotice = element("p", "organization-reuse-notice organization-default-notice");
   defaultNotice.hidden = true;
   const footer = element("div", "organization-draft-footer");
-  const confirm = element("button", "primary-button compact-button", "确认并处理下一个");
+  const confirm = element("button", "primary-button compact-button", "确认这个机构");
   confirm.type = "button";
   footer.append(aliasLabel, confirm);
   body.append(
@@ -1112,7 +1142,7 @@ async function resolveMentorProfileUrl(row) {
   }
   const proposalBuffer = await response.arrayBuffer();
   if (proposalBuffer.byteLength === 0 || proposalBuffer.byteLength > MAX_PROPOSAL_BYTES) {
-    throw new Error("导师提案为空或超过页面处理上限");
+    throw new Error("无法读取这位导师的数据：文件为空或过大");
   }
   const proposal = JSON.parse(
     new TextDecoder("utf-8", { fatal: true }).decode(proposalBuffer),
@@ -1217,7 +1247,7 @@ function isCurrentIdentityOrganization(editor, organizationId) {
 }
 
 function identityAffiliationLabel(affiliation) {
-  const primary = affiliation.is_primary ? " · 主任职" : " · 兼任";
+  const primary = affiliation.is_primary ? " · 主要任职" : " · 兼任";
   const title = affiliation.title ? ` · ${affiliation.title}` : "";
   const organization = affiliation.organization_id
     ? organizationPathForId(affiliation.organization_id)
@@ -1244,7 +1274,7 @@ function updateIdentityResolutionState(editor) {
     rejected || alreadyCurrent || action !== "transfer_current_affiliation";
 
   if (rejected) {
-    editor.identityStatus.textContent = "此导师将被拒绝，不会修改已有导师记录。";
+    editor.identityStatus.textContent = "这位导师不会收录，社区库中的现有记录不会改变。";
     editor.identityPanel.dataset.state = "rejected";
   } else if (!targetId) {
     editor.identityStatus.textContent = "先确认本行最终归属的机构，再选择双聘或调动。";
@@ -1264,8 +1294,8 @@ function createIdentityResolutionPanel(row) {
   const heading = element("div", "identity-resolution-heading");
   const headingCopy = element("div");
   headingCopy.append(
-    element("span", "identity-kicker", "需要身份判定"),
-    element("strong", null, "疑似同一导师，学院不一致"),
+    element("span", "identity-kicker", "需要判断任职关系"),
+    element("strong", null, "同一位导师出现了不同的机构归属"),
   );
   const status = element("p", "identity-resolution-status");
   heading.append(headingCopy, status);
@@ -1279,7 +1309,7 @@ function createIdentityResolutionPanel(row) {
   );
   const existing = element("div", "identity-column existing-identity");
   existing.append(
-    element("span", "identity-column-label", "已有导师实体"),
+    element("span", "identity-column-label", "社区库中的现有记录"),
     element("strong", null, `${row.identity.mentor.name} · ${row.identity.mentor.email}`),
   );
   const affiliations = element("ul", "identity-affiliations");
@@ -1298,19 +1328,19 @@ function createIdentityResolutionPanel(row) {
   const controls = element("div", "identity-resolution-controls");
   const action = createSelect(
     [
-      ["", "请选择任职处理"],
-      ["append_current_affiliation", "同一导师 · 新增双聘任职"],
-      ["transfer_current_affiliation", "同一导师 · 已调动到新学院"],
+      ["", "请选择导师的任职情况"],
+      ["append_current_affiliation", "同时在两个机构任职"],
+      ["transfer_current_affiliation", "已经调到本次投稿的机构"],
     ],
     "identity-action",
     `${row.name}的任职处理方式`,
   );
-  const actionField = labeledControl("任职处理", action, "请选择后才会写入已有导师实体。");
+  const actionField = labeledControl("任职情况", action, "这个选择会更新导师现有的任职记录。");
   const makePrimary = document.createElement("input");
   makePrimary.type = "checkbox";
-  makePrimary.setAttribute("aria-label", `将${row.name}的新任职设为主任职`);
+  makePrimary.setAttribute("aria-label", `将${row.name}的本次任职设为主要任职`);
   const primaryOption = element("label", "identity-primary-option");
-  primaryOption.append(makePrimary, element("span", null, "将新任职设为主任职"));
+  primaryOption.append(makePrimary, element("span", null, "将本次投稿的机构设为主要任职"));
 
   const formerOptions = [
     ["", "选择要结束的现有任职"],
@@ -1325,14 +1355,14 @@ function createIdentityResolutionPanel(row) {
     `${row.name}调动前要结束的任职`,
   );
   const formerField = labeledControl(
-    "结束哪条现任职",
+    "哪条任职已经结束",
     formerAffiliation,
-    "调动会把该任职标记为历史任职，并将新学院设为主任职。",
+    "系统会保留原任职的历史记录，并将本次投稿的机构设为主要任职。",
   );
   const reason = createInput("text", "例如：官网显示同时受聘于两个学院", "identity-reason");
   reason.setAttribute("aria-label", `${row.name}任职判定的审核依据`);
   reason.maxLength = 500;
-  const reasonField = labeledControl("审核依据（必填）", reason);
+  const reasonField = labeledControl("判断依据（必填）", reason);
   controls.append(actionField, primaryOption, formerField, reasonField);
   panel.append(heading, comparison, controls);
   return {
@@ -1385,17 +1415,20 @@ function createRowEditor(row, card) {
   identity.append(nameLine, element("span", null, row.email));
   const action = createSelect(
     [
-      ["follow", "跟随机构分组"],
-      ["map_existing", "改到其他机构"],
-      ["reject", "拒绝此导师"],
+      ["follow", "跟随这组的最终归属"],
+      ["map_existing", "单独调整到其他机构"],
+      ["reject", "不收录这位导师"],
     ],
     "row-action",
     `${row.name}的逐行处理方式`,
   );
   const organizationInput = createOrganizationPicker(
-    [...state.manifest.organizations, ...state.pendingOrganizations],
+    MentorReviewLogic.rankOrganizationCandidates(card.group, [
+      ...state.manifest.organizations,
+      ...state.pendingOrganizations,
+    ]),
     "选择现有或本次新建的机构",
-    `${row.name}改映射到的机构`,
+    `${row.name}单独调整到的机构`,
   );
   const reason = createInput("text", "拒绝原因", "row-reason");
   reason.setAttribute("aria-label", `拒绝${row.name}的原因`);
@@ -1431,21 +1464,23 @@ function createRowEditor(row, card) {
     organizationInput.hidden = action.value !== "map_existing";
     reason.hidden = action.value !== "reject";
     updateIdentityResolutionState(editor);
-    scheduleReviewUpdate();
+    markGroupWorkflowChanged(card);
   });
   organizationInput.addEventListener("change", () => {
     updateIdentityResolutionState(editor);
-    scheduleReviewUpdate();
+    markGroupWorkflowChanged(card);
   });
-  reason.addEventListener("input", scheduleReviewUpdate);
+  reason.addEventListener("input", () => markGroupWorkflowChanged(card));
   if (editor.identityPanel) {
     editor.identityAction.addEventListener("change", () => {
       updateIdentityResolutionState(editor);
-      scheduleReviewUpdate();
+      markGroupWorkflowChanged(card);
     });
-    editor.identityMakePrimary.addEventListener("change", scheduleReviewUpdate);
-    editor.identityFormerAffiliation.addEventListener("change", scheduleReviewUpdate);
-    editor.identityReason.addEventListener("input", scheduleReviewUpdate);
+    editor.identityMakePrimary.addEventListener("change", () => markGroupWorkflowChanged(card));
+    editor.identityFormerAffiliation.addEventListener("change", () =>
+      markGroupWorkflowChanged(card),
+    );
+    editor.identityReason.addEventListener("input", () => markGroupWorkflowChanged(card));
   }
   wrapper.append(identity, action, organizationInput, reason);
   if (editor.identityPanel) {
@@ -1530,7 +1565,7 @@ function createIndependentTargetEditor(card) {
       element(
         "strong",
         null,
-        defaults.source === "history" ? "已命中历史路径纠错" : "已自动识别层级错位",
+        defaults.source === "history" ? "以前处理过相同路径" : "系统发现这条路径可能需要调整",
       ),
       element("span", null, defaults.reason),
     );
@@ -1540,15 +1575,15 @@ function createIndependentTargetEditor(card) {
   const targetControls = element("div", "independent-target-controls");
   const targetAction = createSelect(
     [
-      ["existing", "选择已有机构"],
-      ["create", "新建独立机构"],
+      ["existing", "归入已有机构"],
+      ["create", "建立一个新机构"],
     ],
     "target-action",
-    `${pathText(group)}的纠错目标来源`,
+    `${pathText(group)}的最终归属处理方式`,
   );
   const targetExistingPanel = element("div", "target-existing-panel");
   const targetExistingInput = createOrganizationPicker(
-    [...state.manifest.organizations],
+    MentorReviewLogic.rankOrganizationCandidates(group, state.manifest.organizations),
     "搜索并选择最终归属机构",
     `${pathText(group)}的最终归属机构`,
   );
@@ -1570,7 +1605,7 @@ function createIndependentTargetEditor(card) {
   const targetParentControls = element("div", "target-parent-controls");
   const targetParentMode = createSelect(
     [
-      ["group", "使用本组已确认的上级"],
+      ["group", "沿用当前路径中的上级"],
       ["other", "选择其他上级机构"],
     ],
     "target-parent-mode",
@@ -1620,24 +1655,24 @@ function createIndependentTargetEditor(card) {
   const correctionControls = element("div", "path-correction-controls");
   const mappingReason = createInput(
     "text",
-    "例如：官网显示该导师实际属于同校另一学院",
+    "例如：导师主页显示其实际属于另一学院",
     "mapping-reason",
   );
   mappingReason.maxLength = 500;
-  mappingReason.setAttribute("aria-label", `${pathText(group)}的路径纠错依据`);
-  const mappingReasonField = labeledControl("路径纠错依据（必填）", mappingReason);
+  mappingReason.setAttribute("aria-label", `${pathText(group)}调整机构归属的判断依据`);
+  const mappingReasonField = labeledControl("判断依据（必填）", mappingReason);
   const savePathCorrection = document.createElement("input");
   savePathCorrection.type = "checkbox";
   savePathCorrection.checked = true;
-  savePathCorrection.setAttribute("aria-label", `保存${pathText(group)}的路径纠错`);
+  savePathCorrection.setAttribute("aria-label", `记住${pathText(group)}的机构归属判断`);
   const savePathCorrectionLabel = element("label", "save-path-correction");
   savePathCorrectionLabel.append(
     savePathCorrection,
-    element("span", null, "保存这条路径纠错，后续相同投稿自动建议"),
+    element("span", null, "记住这次判断，遇到相同投稿路径时优先采用"),
   );
   correctionControls.append(mappingReasonField, savePathCorrectionLabel);
 
-  const targetPreview = element("p", "independent-target-preview", "尚未确认最终机构");
+  const targetPreview = element("p", "independent-target-preview", "尚未选择最终归属");
   const targetError = element("p", "independent-target-error error");
   targetError.hidden = true;
   panel.append(notice, targetControls, correctionControls, targetPreview, targetError);
@@ -1685,7 +1720,9 @@ function createIndependentTargetEditor(card) {
     card.restoreIndependentTargetId = null;
   }
 
-  const mark = () => scheduleReviewUpdate();
+  const mark = () => {
+    markGroupWorkflowChanged(card);
+  };
   targetAction.addEventListener("change", mark);
   targetExistingInput.addEventListener("change", mark);
   targetOrganizationType.addEventListener("change", () => {
@@ -1718,25 +1755,25 @@ function updateGroupCard(card) {
   if (rejecting) {
     card.assignment.textContent =
       card.mappingMode.value === "alternate" && card.independentTargetId
-        ? `整组将被拒绝；仍可将个别导师改派到「${organizationPathForId(card.independentTargetId)}」。`
-        : "整个分组将被拒绝；仍可在导师列表中单独改派个别导师。";
+        ? `这组导师不会收录；个别导师仍可调整到「${organizationPathForId(card.independentTargetId)}」。`
+        : "这组导师不会收录；如有例外，可以在导师列表中单独调整。";
     card.article.dataset.kind = "rejected";
     return;
   }
   card.article.dataset.kind = "resolved";
   const targetId = groupTargetId(card);
   if (!targetId) {
-    card.assignment.textContent = "机构尚未确认";
+    card.assignment.textContent = "最终归属会在相关机构处理完成后自动显示。";
     return;
   }
   const drafts = LEVELS.map((level) =>
     state.organizationDraftByKey.get(card.group.draftKeys?.[level]),
   ).filter(Boolean);
   const pending = drafts.filter((draft) => draftIsActive(draft) && !draft.confirmed);
-  const prefix = card.mappingMode.value === "corrected" ? "整组纠正为" : "最终归属";
+  const prefix = card.mappingMode.value === "corrected" ? "调整后的归属" : "最终归属";
   const alternate =
     card.mappingMode.value === "alternate" && card.independentTargetId
-      ? ` · 备用目标：${organizationPathForId(card.independentTargetId)}`
+      ? ` · 个别导师可选：${organizationPathForId(card.independentTargetId)}`
       : "";
   card.assignment.textContent = pending.length
     ? `${prefix}：${organizationPathForId(targetId)} · 还有 ${pending.length} 个机构待确认${alternate}`
@@ -1758,28 +1795,63 @@ function createGroupCard(group, index) {
   );
   const identityRows = group.rows.filter((row) => row.identity?.requires_resolution === true);
   if (identityRows.length) {
-    badges.append(element("span", "badge identity-badge", `${identityRows.length} 条任职待判定`));
+    badges.append(element("span", "badge identity-badge", `${identityRows.length} 项任职待判断`));
   }
   header.append(titleArea, badges);
+
+  const pathSuggestion = MentorReviewLogic.pathReviewSuggestion(
+    group.submitted,
+    group.suggested_path_correction,
+  );
+  const requiresPathReview = Boolean(
+    pathSuggestion && pathSuggestion.confidence !== "certain",
+  );
+  const requiresAttention = requiresPathReview || identityRows.length > 0;
+  const decisionSummary = element("section", "group-decision-summary");
+  const decisionCopy = element("div", "group-decision-copy");
+  decisionCopy.append(
+    element(
+      "span",
+      `decision-kicker${requiresAttention ? " needs-review" : ""}`,
+      requiresAttention ? "需要判断" : "系统已整理",
+    ),
+    element(
+      "strong",
+      "group-decision-title",
+      pathSuggestion?.title || "沿用投稿中的机构层级",
+    ),
+    element(
+      "p",
+      "group-decision-reason",
+      pathSuggestion?.reason || "没有发现机构层级或导师任职方面的冲突。",
+    ),
+    element(
+      "span",
+      "group-decision-impact",
+      `这个选择会用于 ${group.rows.length} 位导师`,
+    ),
+  );
+  const quickActions = element("div", "group-quick-actions");
+  decisionSummary.append(decisionCopy, quickActions);
 
   const sources = sourceLinks(group);
   const groupControls = element("div", "group-controls");
   const groupAction = createSelect(
     [
-      ["resolve", "确认并映射"],
-      ["reject", "拒绝整个组合"],
+      ["resolve", "收录这组导师"],
+      ["reject", "不收录这组导师"],
     ],
     "group-action",
-    `${pathText(group)}的分组处理方式`,
+    `${pathText(group)}的整组处理方式`,
   );
   const mappingMode = createSelect(
     [
-      ["standard", "按投稿原路径归属"],
-      ["corrected", "纠正整组最终归属"],
-      ["alternate", "只准备备用目标"],
+      ["standard", "沿用投稿中的机构层级"],
+      ["corrected", "调整整组的最终归属"],
+      ["alternate", "仅为个别导师准备其他机构"],
     ],
     "mapping-mode",
-    `${pathText(group)}的机构映射模式`,
+    `${pathText(group)}的导师归属处理方式`,
   );
   const groupReason = createInput("text", "拒绝原因", "group-reason");
   groupReason.setAttribute("aria-label", `拒绝${pathText(group)}的原因`);
@@ -1799,6 +1871,12 @@ function createGroupCard(group, index) {
   const card = {
     group,
     article,
+    header,
+    pathSuggestion,
+    requiresAttention,
+    workflowConfirmed: !requiresAttention,
+    decisionSummary,
+    quickActions,
     groupAction,
     mappingMode,
     groupReason,
@@ -1807,6 +1885,52 @@ function createGroupCard(group, index) {
     renderedRowCount: 0,
   };
   const targetPanel = createIndependentTargetEditor(card);
+  const advancedDetails = element("details", "group-advanced-details");
+  const advancedSummary = element("summary", null, "查看其他处理方式");
+  const advancedBody = element("div", "group-advanced-body");
+  advancedBody.append(groupControls, targetPanel);
+  advancedDetails.append(advancedSummary, advancedBody);
+  card.advancedDetails = advancedDetails;
+
+  if (pathSuggestion?.action === "use_parent") {
+    const useParent = element(
+      "button",
+      "primary-button compact-button",
+      pathSuggestion.title,
+    );
+    useParent.type = "button";
+    card.suggestionActionButton = useParent;
+    card.suggestionActionLabel = pathSuggestion.title;
+    useParent.addEventListener("click", () => void applySuggestedGroupDecision(card));
+    quickActions.append(useParent);
+    const keepPath = element("button", "secondary-button compact-button", "保留投稿中的层级");
+    keepPath.type = "button";
+    keepPath.addEventListener("click", () => void keepSubmittedGroupPath(card));
+    quickActions.append(keepPath);
+  } else if (pathSuggestion?.action === "use_existing") {
+    const useExisting = element("button", "primary-button compact-button", "采用系统找到的机构");
+    useExisting.type = "button";
+    card.suggestionActionButton = useExisting;
+    card.suggestionActionLabel = "采用系统找到的机构";
+    useExisting.addEventListener("click", () => void applySuggestedGroupDecision(card));
+    quickActions.append(useExisting);
+    const chooseOther = element("button", "secondary-button compact-button", "选择其他机构");
+    chooseOther.type = "button";
+    chooseOther.addEventListener("click", () => openGroupAdjustment(card));
+    quickActions.append(chooseOther);
+  } else if (pathSuggestion?.action === "review_hierarchy") {
+    const useParent = element("button", "secondary-button compact-button", "不单独建立这一层");
+    useParent.type = "button";
+    useParent.addEventListener("click", () => void applySuggestedGroupDecision(card, "use_parent"));
+    const keepPath = element("button", "secondary-button compact-button", "保留为下级机构");
+    keepPath.type = "button";
+    keepPath.addEventListener("click", () => void keepSubmittedGroupPath(card));
+    const chooseOther = element("button", "secondary-button compact-button", "调整到其他机构");
+    chooseOther.type = "button";
+    chooseOther.addEventListener("click", () => openGroupAdjustment(card));
+    quickActions.append(useParent, keepPath, chooseOther);
+  }
+
   if (identityRows.length) {
     const identitySection = element("section", "identity-conflicts");
     const heading = element("div", "identity-conflicts-heading");
@@ -1849,19 +1973,521 @@ function createGroupCard(group, index) {
     if (groupAction.value === "reject" && mappingMode.value === "corrected") {
       mappingMode.value = "alternate";
     }
-    scheduleReviewUpdate();
+    markGroupWorkflowChanged(card);
   });
-  mappingMode.addEventListener("change", scheduleReviewUpdate);
-  groupReason.addEventListener("input", scheduleReviewUpdate);
-  article.append(header, sources, assignment, groupControls, targetPanel);
+  mappingMode.addEventListener("change", () => markGroupWorkflowChanged(card));
+  groupReason.addEventListener("input", () => markGroupWorkflowChanged(card));
+
+  const taskFooter = element("footer", "group-task-footer");
+  const taskStatus = element(
+    "p",
+    "group-task-status",
+    card.workflowConfirmed ? "系统已整理，可在最后检查中复核。" : "请选择处理结果后确认。",
+  );
+  const confirmTask = element("button", "primary-button compact-button", "确认这项处理");
+  confirmTask.type = "button";
+  confirmTask.addEventListener("click", () => void confirmGroupWorkflowTask(card));
+  taskFooter.append(taskStatus, confirmTask);
+  Object.assign(card, { taskFooter, taskStatus, confirmTask });
+  setGroupTaskStatus(card, taskStatus.textContent);
+
+  article.append(header, decisionSummary, sources, assignment, advancedDetails);
   if (card.identitySection) {
     article.append(card.identitySection);
   }
   if (ordinaryRows.length) {
     article.append(rowsDetails);
   }
+  article.append(taskFooter);
   updateGroupCard(card);
   return card;
+}
+
+function setGroupTaskStatus(card, message) {
+  card.taskStatus.textContent = message;
+  card.article.dataset.workflowStatus = card.workflowConfirmed ? "done" : "pending";
+}
+
+function markGroupWorkflowChanged(card, message = "处理方式已修改，请确认这项处理。") {
+  card.workflowConfirmed = false;
+  if (card.taskStatus) {
+    setGroupTaskStatus(card, message);
+  }
+  scheduleReviewUpdate();
+}
+
+function identityReviewError(card) {
+  for (const row of card.group.rows) {
+    if (row.identity?.requires_resolution !== true) {
+      continue;
+    }
+    const editor = state.rowEditorByProposalId.get(row.proposal_id);
+    if (!editor || editor.action.value === "reject" || card.groupAction.value === "reject") {
+      continue;
+    }
+    if (!editor.identityAction.value) {
+      return `${row.name}的任职关系尚未选择`;
+    }
+    if (!editor.identityReason.value.trim()) {
+      return `${row.name}的任职判断需要填写依据`;
+    }
+    if (
+      editor.identityAction.value === "transfer_current_affiliation" &&
+      !editor.identityFormerAffiliation.value
+    ) {
+      return `${row.name}调动时需要选择原来的任职`;
+    }
+  }
+  return null;
+}
+
+function suggestionClusterKey(card) {
+  const suggestion = card.pathSuggestion;
+  if (!suggestion || !["certain", "high"].includes(suggestion.confidence)) {
+    return null;
+  }
+  if (suggestion.action === "use_existing" && suggestion.targetId) {
+    return `existing:${suggestion.targetId}`;
+  }
+  if (suggestion.action === "use_parent") {
+    return [
+      "parent",
+      MentorReviewLogic.compactOrganizationName(card.group.submitted.university),
+      MentorReviewLogic.compactOrganizationName(card.group.submitted.school),
+    ].join(":");
+  }
+  return null;
+}
+
+function suggestionClusterCards(card) {
+  const key = suggestionClusterKey(card);
+  if (!key) {
+    return [card];
+  }
+  return state.cards.filter(
+    (candidate) =>
+      !candidate.workflowConfirmed && suggestionClusterKey(candidate) === key,
+  );
+}
+
+function updateSuggestionBatchLabels() {
+  for (const card of state.cards) {
+    if (!card.suggestionActionButton) {
+      continue;
+    }
+    const count = suggestionClusterCards(card).length;
+    card.suggestionActionButton.textContent =
+      count > 1
+        ? `${card.suggestionActionLabel}（同时处理 ${count} 组）`
+        : card.suggestionActionLabel;
+  }
+}
+
+function applySuggestedGroupState(card, forcedAction = null) {
+  const suggestion = card.pathSuggestion;
+  const action = forcedAction || suggestion?.action;
+  card.groupAction.value = "resolve";
+  if (action === "use_existing" && suggestion?.targetId) {
+    card.mappingMode.value = "corrected";
+    card.targetAction.value = "existing";
+    card.targetExistingInput.selectById(suggestion.targetId);
+    card.mappingReason.value = suggestion.reason;
+  } else {
+    card.mappingMode.value = "standard";
+    const departmentDraft = state.organizationDraftByKey.get(
+      card.group.draftKeys?.department,
+    );
+    if (departmentDraft) {
+      departmentDraft.editor.action.value = "skip";
+      departmentDraft.editor.actionManuallySelected = true;
+      departmentDraft.editor.autoSkippedToParent = false;
+      departmentDraft.confirmed = true;
+      departmentDraft.editor.error.hidden = true;
+    }
+  }
+  card.workflowConfirmed = !card.group.rows.some(
+    (row) => row.identity?.requires_resolution === true,
+  );
+  setGroupTaskStatus(
+    card,
+    card.workflowConfirmed
+      ? "已确认，相关机构和导师归属已经同步更新。"
+      : "机构归属已确认，请继续处理导师任职关系。",
+  );
+}
+
+async function applySuggestedGroupDecision(card, forcedAction = null) {
+  const cards = forcedAction ? [card] : suggestionClusterCards(card);
+  for (const candidate of cards) {
+    applySuggestedGroupState(candidate, forcedAction);
+  }
+  state.autosaveDirty = true;
+  await updateOrganizationDrafts();
+  if (cards.every((candidate) => candidate.workflowConfirmed)) {
+    focusNextWorkflowTask();
+  }
+}
+
+async function keepSubmittedGroupPath(card) {
+  card.groupAction.value = "resolve";
+  card.mappingMode.value = "standard";
+  const departmentDraft = state.organizationDraftByKey.get(
+    card.group.draftKeys?.department,
+  );
+  if (departmentDraft && departmentDraft.editor.action.value === "skip") {
+    departmentDraft.editor.action.value = "create";
+    departmentDraft.editor.actionManuallySelected = true;
+    departmentDraft.editor.autoSkippedToParent = false;
+    departmentDraft.confirmed = false;
+  }
+  card.workflowConfirmed = !card.group.rows.some(
+    (row) => row.identity?.requires_resolution === true,
+  );
+  setGroupTaskStatus(
+    card,
+    card.workflowConfirmed
+      ? "已保留投稿层级。需要建立或复用的机构会出现在后续事项中。"
+      : "投稿层级已保留，请继续处理导师任职关系。",
+  );
+  state.autosaveDirty = true;
+  await updateOrganizationDrafts();
+  if (card.workflowConfirmed) {
+    focusNextWorkflowTask();
+  }
+}
+
+function openGroupAdjustment(card) {
+  card.mappingMode.value = "corrected";
+  card.targetAction.value = "existing";
+  card.workflowConfirmed = false;
+  card.advancedDetails.open = true;
+  updateIndependentPanelVisibility(card);
+  setGroupTaskStatus(card, "请选择最终归属，并填写判断依据。");
+  scheduleReviewUpdate();
+  window.setTimeout(() => card.targetExistingInput.focus(), 0);
+}
+
+async function confirmGroupWorkflowTask(card) {
+  card.taskStatus.classList.remove("error");
+  if (card.groupAction.value === "reject" && !card.groupReason.value.trim()) {
+    card.taskStatus.textContent = "请填写不收录这组导师的原因。";
+    card.taskStatus.classList.add("error");
+    card.advancedDetails.open = true;
+    card.groupReason.focus();
+    return;
+  }
+  if (card.mappingMode.value !== "standard") {
+    const error = await updateIndependentTargetCard(card, true);
+    if (error) {
+      card.taskStatus.textContent = error;
+      card.taskStatus.classList.add("error");
+      card.advancedDetails.open = true;
+      return;
+    }
+  }
+  const identityError = identityReviewError(card);
+  if (identityError) {
+    card.taskStatus.textContent = identityError;
+    card.taskStatus.classList.add("error");
+    return;
+  }
+  card.workflowConfirmed = true;
+  setGroupTaskStatus(card, "已确认，相关机构和导师归属已经同步更新。");
+  state.autosaveDirty = true;
+  await updateOrganizationDrafts();
+  focusNextWorkflowTask();
+}
+
+function workflowTaskStatus(task) {
+  if (task.kind === "organization") {
+    return task.draft.confirmed ? "done" : "pending";
+  }
+  return task.card.workflowConfirmed ? "done" : "pending";
+}
+
+function buildWorkflowTasks() {
+  const tasks = [];
+  const unresolvedPathDraftKeys = new Set(
+    state.cards
+      .filter((card) => card.pathSuggestion && !card.workflowConfirmed)
+      .map((card) => card.group.draftKeys?.department)
+      .filter(Boolean),
+  );
+  for (const card of state.cards) {
+    const hasIdentityReview = card.group.rows.some(
+      (row) => row.identity?.requires_resolution === true,
+    );
+    const label = hasIdentityReview
+      ? "导师任职"
+      : card.pathSuggestion
+        ? "机构归属"
+        : "导师归属";
+    tasks.push({
+      id: `group:${card.group.id}`,
+      kind: "group",
+      priority: card.pathSuggestion
+        ? card.pathSuggestion.confidence === "high"
+          ? 5
+          : 10
+        : hasIdentityReview
+          ? 30
+          : 50,
+      label,
+      title: card.pathSuggestion?.title || "沿用投稿路径",
+      subtitle: pathText(card.group),
+      card,
+      element: card.article,
+    });
+  }
+  for (const draft of state.organizationDrafts) {
+    if (
+      !draftIsActive(draft) ||
+      draft.forcedSkip ||
+      unresolvedPathDraftKeys.has(draft.key)
+    ) {
+      continue;
+    }
+    tasks.push({
+      id: `organization:${draft.key}`,
+      kind: "organization",
+      priority: 20 + LEVELS.indexOf(draft.level),
+      label: LEVEL_LABELS[draft.level],
+      title: draft.submittedName,
+      subtitle: `${draft.groupIds.size} 组 · ${draft.rowCount} 位导师`,
+      draft,
+      element: draft.editor.details,
+    });
+  }
+  tasks.sort((first, second) => {
+    const firstPending = workflowTaskStatus(first) === "pending" ? 0 : 1;
+    const secondPending = workflowTaskStatus(second) === "pending" ? 0 : 1;
+    return (
+      firstPending - secondPending ||
+      first.priority - second.priority ||
+      first.title.localeCompare(second.title, "zh-CN")
+    );
+  });
+  return tasks;
+}
+
+function taskMatchesFilter(task) {
+  const status = workflowTaskStatus(task);
+  if (state.workflowFilter === "pending") {
+    return status === "pending";
+  }
+  if (state.workflowFilter === "done") {
+    return status === "done";
+  }
+  return true;
+}
+
+function setWorkflowFilter(filter) {
+  state.workflowFilter = filter;
+  state.currentWorkflowTaskId = null;
+  refreshWorkflowTasks();
+}
+
+function selectWorkflowTask(taskId, { focus = true } = {}) {
+  const task = state.workflowTaskById.get(taskId);
+  if (!task) {
+    return;
+  }
+  state.currentWorkflowTaskId = taskId;
+  renderWorkflowTask(task);
+  renderWorkflowTaskList();
+  if (focus) {
+    nodes.taskStage.focus({ preventScroll: true });
+  }
+}
+
+function renderWorkflowTask(task) {
+  nodes.taskEmpty.hidden = Boolean(task);
+  nodes.organizationsSection.hidden = !task || task.kind !== "organization";
+  nodes.groupsSection.hidden = !task || task.kind !== "group";
+  if (!task) {
+    nodes.workflowPosition.textContent = "当前没有项目";
+    nodes.previousTask.disabled = true;
+    nodes.nextTask.disabled = true;
+    return;
+  }
+  if (task.kind === "organization") {
+    if (nodes.groups.childElementCount) {
+      nodes.groups.replaceChildren();
+    }
+    if (
+      nodes.organizationTree.childElementCount !== 1 ||
+      nodes.organizationTree.firstElementChild !== task.element
+    ) {
+      nodes.organizationTree.replaceChildren(task.element);
+    }
+    task.element.open = true;
+  } else {
+    if (nodes.organizationTree.childElementCount) {
+      nodes.organizationTree.replaceChildren();
+    }
+    if (
+      nodes.groups.childElementCount !== 1 ||
+      nodes.groups.firstElementChild !== task.element
+    ) {
+      nodes.groups.replaceChildren(task.element);
+    }
+  }
+  const visible = state.workflowTasks.filter(taskMatchesFilter);
+  const index = visible.findIndex((item) => item.id === task.id);
+  nodes.workflowPosition.textContent = `${Math.max(index + 1, 1)} / ${visible.length}`;
+  nodes.previousTask.disabled = index <= 0;
+  nodes.nextTask.disabled = index < 0 || index >= visible.length - 1;
+  nodes.nextTask.textContent = workflowTaskStatus(task) === "pending" ? "暂时跳过" : "下一项";
+}
+
+function renderWorkflowTaskList() {
+  const visible = state.workflowTasks.filter(taskMatchesFilter);
+  nodes.taskList.replaceChildren();
+  for (const task of visible) {
+    const button = element("button", "review-task-item");
+    button.type = "button";
+    button.dataset.status = workflowTaskStatus(task);
+    button.setAttribute("aria-current", String(task.id === state.currentWorkflowTaskId));
+    const top = element("span", "review-task-item-top");
+    top.append(
+      element("span", "review-task-kind", task.label),
+      element(
+        "span",
+        "review-task-state",
+        workflowTaskStatus(task) === "pending" ? "待处理" : "已处理",
+      ),
+    );
+    button.append(
+      top,
+      element("strong", null, task.title),
+      element("span", "review-task-subtitle", task.subtitle),
+    );
+    button.addEventListener("click", () => selectWorkflowTask(task.id));
+    nodes.taskList.append(button);
+  }
+}
+
+function updateWorkflowResultSummary() {
+  const activeDrafts = state.organizationDrafts.filter(
+    (draft) => draftIsActive(draft) && !draft.forcedSkip,
+  );
+  const newOrganizationIds = new Set(
+    activeDrafts
+      .filter(
+        (draft) =>
+          draft.confirmed && draft.editor.action.value === "create" && draft.targetId,
+      )
+      .map((draft) => draft.targetId),
+  );
+  for (const card of state.cards) {
+    if (card.workflowConfirmed && card.independentCreation?.organization_id) {
+      newOrganizationIds.add(card.independentCreation.organization_id);
+    }
+  }
+  const reusedOrganizations = activeDrafts.filter(
+    (draft) =>
+      draft.confirmed && draft.editor.action.value === "existing" && draft.targetId,
+  ).length;
+  const correctedGroups = state.cards.filter(
+    (card) => {
+      if (!card.workflowConfirmed) {
+        return false;
+      }
+      if (card.mappingMode.value !== "standard") {
+        return true;
+      }
+      const departmentDraft = state.organizationDraftByKey.get(
+        card.group.draftKeys?.department,
+      );
+      return Boolean(card.pathSuggestion && departmentDraft?.editor.action.value === "skip");
+    },
+  ).length;
+  let rejectedRows = 0;
+  for (const card of state.cards) {
+    if (!card.workflowConfirmed) {
+      continue;
+    }
+    if (card.groupAction.value === "reject") {
+      rejectedRows += card.group.rows.length;
+      continue;
+    }
+    for (const row of card.group.rows) {
+      const editor = state.rowEditorByProposalId.get(row.proposal_id);
+      const restored = state.restoredRowValues.get(row.proposal_id);
+      if ((editor?.action.value || restored?.action) === "reject") {
+        rejectedRows += 1;
+      }
+    }
+  }
+  nodes.resultNewOrganizations.textContent = String(newOrganizationIds.size);
+  nodes.resultReusedOrganizations.textContent = String(reusedOrganizations);
+  nodes.resultCorrectedGroups.textContent = String(correctedGroups);
+  nodes.resultRejectedRows.textContent = String(rejectedRows);
+  const pending = state.workflowTasks.filter(
+    (task) => workflowTaskStatus(task) === "pending",
+  ).length;
+  nodes.workflowPendingCount.textContent = String(pending);
+  nodes.resultSummaryNote.textContent = pending
+    ? `还有 ${pending} 项需要处理。你仍然可以随时查看最后检查。`
+    : "所有需要判断的内容都已处理，可以进行最后检查。";
+  nodes.generate.disabled = pending > 0;
+  nodes.generate.textContent = pending
+    ? `还有 ${pending} 项未处理`
+    : "检查并生成审核评论";
+}
+
+function refreshWorkflowTasks() {
+  updateSuggestionBatchLabels();
+  state.workflowTasks = buildWorkflowTasks();
+  state.workflowTaskById = new Map(state.workflowTasks.map((task) => [task.id, task]));
+  const pendingCount = state.workflowTasks.filter(
+    (task) => workflowTaskStatus(task) === "pending",
+  ).length;
+  const doneCount = state.workflowTasks.length - pendingCount;
+  nodes.taskFilterPendingCount.textContent = String(pendingCount);
+  nodes.taskFilterDoneCount.textContent = String(doneCount);
+  nodes.taskFilterAllCount.textContent = String(state.workflowTasks.length);
+  for (const [button, filter] of [
+    [nodes.taskFilterPending, "pending"],
+    [nodes.taskFilterDone, "done"],
+    [nodes.taskFilterAll, "all"],
+  ]) {
+    button.setAttribute("aria-selected", String(state.workflowFilter === filter));
+  }
+  let visible = state.workflowTasks.filter(taskMatchesFilter);
+  let current = state.workflowTaskById.get(state.currentWorkflowTaskId);
+  if (!current || !visible.some((task) => task.id === current.id)) {
+    current = visible[0] || null;
+    state.currentWorkflowTaskId = current?.id || null;
+  }
+  renderWorkflowTaskList();
+  renderWorkflowTask(current);
+  updateWorkflowResultSummary();
+}
+
+function focusNextWorkflowTask() {
+  refreshWorkflowTasks();
+  const pending = state.workflowTasks.filter(
+    (task) => workflowTaskStatus(task) === "pending",
+  );
+  if (!pending.length) {
+    state.workflowFilter = "done";
+    refreshWorkflowTasks();
+    nodes.openFinalCheck.focus({ preventScroll: true });
+    return;
+  }
+  state.workflowFilter = "pending";
+  state.currentWorkflowTaskId = pending[0].id;
+  refreshWorkflowTasks();
+}
+
+function moveWorkflowTask(offset) {
+  const visible = state.workflowTasks.filter(taskMatchesFilter);
+  const index = visible.findIndex((task) => task.id === state.currentWorkflowTaskId);
+  const target = visible[index + offset];
+  if (target) {
+    selectWorkflowTask(target.id);
+  }
 }
 
 function draftIsActive(draft) {
@@ -1890,6 +2516,25 @@ function markOrganizationDraftChanged(draft, affectsIdentity = false) {
 function requiredSubmittedLevelsForCard(card) {
   if (card.groupAction.value === "reject") {
     return new Set();
+  }
+  if (
+    card.mappingMode.value === "corrected" &&
+    card.targetAction.value === "existing"
+  ) {
+    const targetId = parseOrganizationInput(card.targetExistingInput);
+    if (!targetId) {
+      return new Set(LEVELS);
+    }
+    const target = state.selectableOrganizationById.get(targetId);
+    if (target?.pending_kind === "hierarchy") {
+      const lineageIds = new Set(target.lineage_ids || []);
+      return new Set(
+        LEVELS.filter((level) => {
+          const draft = state.organizationDraftByKey.get(card.group.draftKeys?.[level]);
+          return Boolean(draft?.targetId && lineageIds.has(draft.targetId));
+        }),
+      );
+    }
   }
   return new Set(
     MentorReviewLogic.requiredSubmittedLevels({
@@ -1956,7 +2601,7 @@ async function updateIndependentTargetCard(card, showErrors = false) {
   card.independentCreation = null;
   card.independentPendingOrganization = null;
   if (card.mappingMode.value === "standard") {
-    card.targetPreview.textContent = "尚未确认最终机构";
+    card.targetPreview.textContent = "将沿用投稿中的机构层级；相关机构处理完成后会自动确定最终归属。";
     showIndependentTargetError(card, null);
     return null;
   }
@@ -1967,7 +2612,7 @@ async function updateIndependentTargetCard(card, showErrors = false) {
     const targetId = parseOrganizationInput(card.targetExistingInput);
     targetOrganization = state.selectableOrganizationById.get(targetId) || null;
     if (!targetOrganization) {
-      error = "请选择最终归属的已有机构";
+      error = "请选择这组导师最终归入的机构";
     } else {
       card.independentTargetId = targetOrganization.id;
     }
@@ -2056,21 +2701,21 @@ async function updateIndependentTargetCard(card, showErrors = false) {
       targetOrganization = card.independentPendingOrganization;
     }
   } else {
-    error = "目标机构处理方式无效";
+    error = "请选择如何处理这组导师的最终归属";
   }
 
   if (!error && card.mappingMode.value === "corrected" && card.groupAction.value === "reject") {
-    error = "被拒绝的整组不能设置纠错目标；请改为“只准备备用目标”";
+    error = "不收录整组导师时，不能同时调整整组归属。若只调整个别导师，请选择“仅为个别导师准备其他机构”。";
   }
   if (!error && card.mappingMode.value === "corrected" && !card.mappingReason.value.trim()) {
-    error = "纠正整组归属时需要填写审核依据";
+    error = "调整整组归属时需要填写判断依据";
   }
 
   card.targetPreview.textContent = targetOrganization
-    ? `${card.mappingMode.value === "corrected" ? "整组最终归属" : "逐行改派备用目标"}：${(
+    ? `${card.mappingMode.value === "corrected" ? "这组导师将归入" : "个别导师可以归入"}：${(
         targetOrganization.lineage_names || [targetOrganization.canonical_name]
       ).join(" / ")}`
-    : "尚未确认最终机构";
+    : "尚未选择最终归属";
   showIndependentTargetError(card, showErrors ? error : null);
   return error;
 }
@@ -2151,7 +2796,9 @@ async function refreshPendingOrganizationOptions() {
 
   const options = [...state.manifest.organizations, ...state.pendingOrganizations];
   for (const card of state.cards) {
-    card.targetExistingInput.setOptions(options);
+    card.targetExistingInput.setOptions(
+      MentorReviewLogic.rankOrganizationCandidates(card.group, options),
+    );
     const preservedTargetId = targetSelections.get(card);
     if (preservedTargetId && card.targetExistingInput.selectById(preservedTargetId)) {
       card.restoreIndependentTargetId = null;
@@ -2179,7 +2826,9 @@ async function refreshPendingOrganizationOptions() {
   if (signature !== state.pendingOrganizationsSignature) {
     state.pendingOrganizationsSignature = signature;
     for (const editor of state.rowEditors) {
-      editor.organizationInput.setOptions(options);
+      editor.organizationInput.setOptions(
+        MentorReviewLogic.rankOrganizationCandidates(editor.card.group, options),
+      );
       if (editor.restoreTargetId && editor.organizationInput.selectById(editor.restoreTargetId)) {
         editor.restoreTargetId = null;
       }
@@ -2324,11 +2973,11 @@ async function updateOrganizationDrafts() {
     if (shouldAutoSkip) {
       if (editor.action.value !== "skip") {
         editor.action.value = "skip";
-        draft.confirmed = false;
+        draft.confirmed = true;
       }
       editor.autoSkippedToParent = true;
       editor.defaultNotice.textContent =
-        "正式名称与上级学院相同，已默认归到上级；如需单独建立，可修改处理方式。";
+        "这一层与上级名称相同，系统已归入上级，不会重复建立机构。";
       editor.defaultNotice.hidden = false;
     } else if (editor.autoSkippedToParent) {
       if (editor.action.value === "skip") {
@@ -2389,10 +3038,10 @@ async function updateOrganizationDrafts() {
     const statusText = !active
       ? "未使用"
       : draft.forcedSkip
-        ? "随上级"
+        ? "已归入上级"
         : draft.confirmed
-          ? "已确认"
-          : "待确认";
+          ? "已处理"
+          : "待处理";
     editor.status.textContent = statusText;
     editor.details.dataset.status = statusText;
     if (!active) {
@@ -2413,6 +3062,7 @@ async function updateOrganizationDrafts() {
     updateIdentityResolutionState(editor);
   }
   updateOrganizationProgress();
+  refreshWorkflowTasks();
   if (state.autosaveDirty) {
     state.autosaveDirty = false;
     scheduleAutosave();
@@ -2431,10 +3081,10 @@ function updateOrganizationProgress() {
   );
   const pending = active.filter((draft) => !draft.confirmed);
   nodes.organizationProgress.textContent = pending.length
-    ? `待确认 ${pending.length} / ${active.length}`
-    : `已确认 ${active.length} 个机构`;
+    ? `还有 ${pending.length} 个机构待处理`
+    : `已处理 ${active.length} 个机构`;
   nodes.nextPending.disabled = pending.length === 0;
-  nodes.nextPending.textContent = pending.length ? `下一个待确认（${pending.length}）` : "机构已全部确认";
+  nodes.nextPending.textContent = pending.length ? "处理下一个机构" : "机构已全部处理";
 }
 
 function focusNextPending(afterDraft = null) {
@@ -2466,7 +3116,7 @@ async function confirmOrganizationDraft(draft) {
   draft.editor.details.classList.remove("has-error");
   draft.editor.details.open = false;
   await updateOrganizationDrafts();
-  focusNextPending(draft);
+  focusNextWorkflowTask();
 }
 
 let reviewUpdateTimer = null;
@@ -2512,7 +3162,7 @@ function serializeReviewDraft() {
     }
   }
   return {
-    version: 2,
+    version: 3,
     saved_at: new Date().toISOString(),
     organizations: Object.fromEntries(
       state.organizationDrafts.map((draft) => [
@@ -2546,6 +3196,7 @@ function serializeReviewDraft() {
           target_approved_domains: card.targetApprovedDomains.value,
           mapping_reason: card.mappingReason.value,
           save_path_correction: card.savePathCorrection.checked,
+          workflow_confirmed: card.workflowConfirmed,
         },
       ]),
     ),
@@ -2590,7 +3241,7 @@ function restoreReviewDraft() {
   } catch {
     return false;
   }
-  if (!saved || ![1, 2].includes(saved.version)) {
+  if (!saved || ![1, 2, 3].includes(saved.version)) {
     return false;
   }
   for (const draft of state.organizationDrafts) {
@@ -2632,6 +3283,13 @@ function restoreReviewDraft() {
       card.targetTypeManuallySelected = true;
       card.restoreIndependentTargetId = storedText(value.target_existing_id, 80) || null;
       card.restoreIndependentParentId = storedText(value.target_parent_id, 80) || null;
+    }
+    if (saved.version >= 3) {
+      card.workflowConfirmed = Boolean(value.workflow_confirmed);
+      setGroupTaskStatus(
+        card,
+        card.workflowConfirmed ? "已恢复之前确认的处理结果。" : "这项仍需要处理。",
+      );
     }
     updateIndependentPanelVisibility(card);
   }
@@ -2748,7 +3406,7 @@ async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
     const draft = state.organizationDraftByKey.get(group.draftKeys?.[level]);
     if (!draft) {
       if (level === "university") {
-        throw new Error(`分组“${pathText(group)}”没有学校名称`);
+        throw new Error(`“${pathText(group)}”缺少学校名称`);
       }
       if (level === "school") {
         skippedSchool = true;
@@ -2884,7 +3542,7 @@ function collectRowOverrides(card) {
           sourceUrlMatchesDomains(url, organization.approved_domains || []),
         )
       ) {
-        throw new Error(`${row.name}的详情页或发现来源页不属于改派机构的官方来源域名`);
+        throw new Error(`${row.name}的详情页或发现来源页不属于调整后机构的官方来源域名`);
       }
       overrides.push({
         proposal_id: row.proposal_id,
@@ -2928,7 +3586,7 @@ function collectIdentityResolutions(card) {
     const reason = (editor?.identityReason.value || restored?.identity_reason || "").trim();
     if (!resolutionAction) {
       throw new Error(
-        `${row.name}疑似同一导师但学院不一致；请选择新增双聘、已调动到新学院或拒绝该导师`,
+        `${row.name}在社区库中已有其他机构任职；请选择双聘、任职调动或不收录这位导师`,
       );
     }
     if (!reason) {
@@ -2989,7 +3647,7 @@ function validateFinalAssignmentSources(decisions) {
         )
       ) {
         throw new Error(
-          `${row.name}的详情页或发现来源页不属于最终机构「${
+          `${row.name}的详情页或发现来源页不属于最终归属机构「${
             organization?.canonical_name || targetId || "未选择"
           }」的官方来源域名`,
         );
@@ -3000,6 +3658,15 @@ function validateFinalAssignmentSources(decisions) {
 
 async function collectDecision() {
   await updateOrganizationDrafts();
+  const pendingWorkflowTasks = state.workflowTasks.filter(
+    (task) => workflowTaskStatus(task) === "pending",
+  );
+  if (pendingWorkflowTasks.length) {
+    state.workflowFilter = "pending";
+    state.currentWorkflowTaskId = pendingWorkflowTasks[0].id;
+    refreshWorkflowTasks();
+    throw new Error(`还有 ${pendingWorkflowTasks.length} 项需要处理`);
+  }
   const pending = pendingOrganizationDrafts();
   if (pending.length) {
     focusNextPending();
@@ -3052,7 +3719,7 @@ async function collectDecision() {
       ? state.selectableOrganizationById.get(targetId)
       : null;
     if (corrected && !targetOrganization) {
-      throw new Error(`分组“${pathText(card.group)}”没有有效的纠错目标机构`);
+      throw new Error(`“${pathText(card.group)}”还没有选择有效的最终归属机构`);
     }
     const overriddenProposalIds = new Set(
       rowOverrides.map((override) => override.proposal_id),
@@ -3157,11 +3824,11 @@ function renderDecisionPreview(decision) {
   const metrics = [
     ["新建机构", createdIds.size],
     ["导入导师", mappedRows],
-    ["路径纠正", correctedRows],
-    ["改派导师", adjustedRows],
-    ["新增双聘", dualAppointments],
-    ["任职调动", transfers],
-    ["拒绝导师", rejectedRows],
+    ["调整整组归属", correctedRows],
+    ["单独调整导师归属", adjustedRows],
+    ["增加双聘任职", dualAppointments],
+    ["记录任职调动", transfers],
+    ["不收录导师", rejectedRows],
   ];
   nodes.decisionPreview.replaceChildren();
   for (const [label, value] of metrics) {
@@ -3184,7 +3851,7 @@ async function generateDecision() {
       throw new Error(
         `审核评论有 ${characterCount.toLocaleString("zh-CN")} 个字符，超过 GitHub 的 ` +
           `${GITHUB_COMMENT_CHARACTER_LIMIT.toLocaleString("zh-CN")} 字符上限。` +
-          "请减少需要单独改派或拒绝的导师后再生成。",
+          "请减少需要逐位调整或不收录的导师数量后再生成。",
       );
     }
     renderDecisionPreview(decision);
@@ -3239,7 +3906,7 @@ function validateManifest(manifest, issueNumber) {
   );
   for (const group of manifest.groups) {
     if (!group || !Array.isArray(group.rows) || typeof group.submitted !== "object") {
-      throw new Error("审核清单缺少有效的导师分组行");
+      throw new Error("审核清单中没有有效的导师数据组合");
     }
     const correction = group.suggested_path_correction;
     if (correction !== undefined && correction !== null) {
@@ -3255,7 +3922,7 @@ function validateManifest(manifest, issueNumber) {
         (targetId !== null &&
           (typeof targetId !== "string" || !organizationIds.has(targetId)))
       ) {
-        throw new Error("审核清单中的机构路径纠错建议无效");
+        throw new Error("审核清单中的机构归属建议格式无效");
       }
     }
     for (const row of group.rows) {
@@ -3389,8 +4056,7 @@ async function loadReview() {
     if (manifest.groups.length) {
       const drafts = buildOrganizationDrafts();
       renderOrganizationDraftTree(drafts);
-      nodes.organizationsSection.hidden = false;
-      nodes.groupsSection.hidden = false;
+      nodes.reviewWorkspace.hidden = false;
       for (const [index, group] of manifest.groups.entries()) {
         const card = createGroupCard(group, index);
         state.cards.push(card);
@@ -3414,8 +4080,8 @@ async function loadReview() {
     nodes.decisionPanel.hidden = false;
     setStatus(
       "ready",
-      "审核清单已验证",
-      `同一机构只需确认一次；提交结果前仍会由后端复核 PR #${pullNumber}。`,
+      "投稿内容已读取",
+      `系统已经整理重复内容；提交前仍会再次核对 PR #${pullNumber}。`,
     );
   } catch (error) {
     setStatus("error", "无法打开审核清单", error instanceof Error ? error.message : "未知错误");
@@ -3424,6 +4090,15 @@ async function loadReview() {
 
 nodes.generate.addEventListener("click", () => void generateDecision());
 nodes.copyOpen.addEventListener("click", () => void copyAndOpenPullRequest());
-nodes.nextPending.addEventListener("click", () => focusNextPending());
+nodes.nextPending.addEventListener("click", () => focusNextWorkflowTask());
+nodes.taskFilterPending.addEventListener("click", () => setWorkflowFilter("pending"));
+nodes.taskFilterDone.addEventListener("click", () => setWorkflowFilter("done"));
+nodes.taskFilterAll.addEventListener("click", () => setWorkflowFilter("all"));
+nodes.previousTask.addEventListener("click", () => moveWorkflowTask(-1));
+nodes.nextTask.addEventListener("click", () => moveWorkflowTask(1));
+nodes.openFinalCheck.addEventListener("click", () => {
+  nodes.decisionPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+  nodes.generate.focus({ preventScroll: true });
+});
 window.addEventListener("pagehide", saveReviewDraft);
 void loadReview();
