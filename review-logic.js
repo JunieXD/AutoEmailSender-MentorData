@@ -33,8 +33,8 @@
         action: "use_existing",
         targetId: suggestion.target_organization_id,
         confidence: suggestion.source === "history" ? "certain" : "high",
-        title: "采用系统找到的机构",
-        reason: String(suggestion.reason || "系统找到了与投稿路径对应的已有机构。"),
+        title: "采用已有归属",
+        reason: String(suggestion.reason || "已找到对应机构。"),
       };
     }
     if (schoolKey && departmentKey === schoolKey) {
@@ -44,7 +44,7 @@
         targetLevel: "school",
         confidence: "certain",
         title: `归入「${school}」`,
-        reason: "系所内容与学院名称相同，不需要再建立一级机构。",
+        reason: "与学院同名，无需重复建立。",
       };
     }
     if (
@@ -58,7 +58,7 @@
         targetLevel: "school",
         confidence: "high",
         title: `归入「${school}」`,
-        reason: "系所名称以当前学院全名结尾，前面的内容更像学校或校区说明。请确认它是否只是学院的另一种写法。",
+        reason: "名称可能只是当前学院的另一种写法。",
       };
     }
     if (
@@ -72,7 +72,7 @@
         targetLevel: "school",
         confidence: "review",
         title: "不单独建立这一层",
-        reason: "系所内容与上级学校名称相同或高度重合，可能是重复填写的上级机构。",
+        reason: "名称与上级学校重复。",
       };
     }
     if (correctionKindForDepartment(department, school)) {
@@ -80,9 +80,9 @@
         kind: "ambiguous_hierarchy",
         action: "review_hierarchy",
         confidence: "review",
-        title: "判断这一层的实际归属",
+        title: "确认实际层级",
         reason:
-          String(suggestion?.reason || "这个系所名称看起来可能是学院或研究院，需要确认它的实际层级。"),
+          String(suggestion?.reason || "名称像学院或研究院。"),
       };
     }
     return null;
@@ -199,10 +199,10 @@
     const canonicalName = String(submitted?.department || "").normalize("NFKC").trim();
     const defaultReason =
       kind === "department_as_institute"
-        ? "投稿中的系所名称像独立研究机构，需要确认它是否属于当前学院。"
+        ? "名称像独立研究机构，请确认层级。"
         : kind === "department_as_school"
-          ? "投稿中的系所名称以“学院”结尾，需要确认它是否与当前学院同级。"
-          : "投稿机构路径需要纠正";
+          ? "名称像学院，请确认层级。"
+          : "请确认机构归属";
     const targetId =
       typeof suggestion?.target_organization_id === "string"
         ? suggestion.target_organization_id
