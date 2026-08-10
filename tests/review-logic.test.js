@@ -82,6 +82,7 @@ test("路径建议识别重复上级和带前缀的学院写法", () => {
   assert.equal(prefixed.kind, "parent_name_with_prefix");
   assert.equal(prefixed.action, "use_parent");
   assert.equal(prefixed.confidence, "high");
+  assert.equal(prefixed.reason, "名称可能只是当前学院的另一种写法。");
   assert.equal(longPrefixed.kind, "parent_name_with_prefix");
 });
 

@@ -7,9 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="styles.css?v=2" />' in html
-    assert '<script src="review-logic.js?v=2" defer></script>' in html
-    assert '<script src="review.js?v=2" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=5" />' in html
+    assert '<script src="review-logic.js?v=5" defer></script>' in html
+    assert '<script src="review.js?v=5" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -88,7 +88,7 @@ def test_review_infers_new_organization_defaults_from_names() -> None:
     assert '["中心", "center"]' in script
     assert '["系", "department"]' in script
     assert "shouldDefaultOrganizationToParent" in script
-    assert "这一层与上级名称相同，系统已归入上级" in script
+    assert "与上级同名，已归入上级" in script
     assert "actionManuallySelected" in script
     assert "organizationTypeManuallySelected" in script
 
@@ -115,18 +115,18 @@ def test_review_reuses_organization_drafts_and_autosaves_progress() -> None:
     assert "organizationDraftKey" in script
     assert "localStorage.setItem" in script
     assert "restoreReviewDraft" in script
-    assert "相关机构和导师归属已经同步更新" in script
+    assert 'nodes.autosaveStatus.textContent = "已保存"' in script
 
 
 def test_review_suggests_official_urls_and_lists_pending_destinations() -> None:
     script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
 
     assert "suggestedOfficialUrl" in script
-    assert "官方网站（没有可以留空）" in script
+    assert "官网（可留空）" in script
     assert "refreshPendingOrganizationOptions" in script
     assert "本次新建" in script
     assert "单独调整到其他机构" in script
-    assert "已找到同名机构，自动归到" in script
+    assert "已匹配" in script
 
 
 def test_review_lazily_renders_large_mentor_groups_and_throttles_autosave() -> None:
@@ -145,7 +145,7 @@ def test_review_prioritizes_affiliation_conflicts_and_emits_separate_decisions()
     styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
 
     assert 'id="review-identity-count"' in html
-    assert "同一位导师出现了不同的机构归属" in script
+    assert "确认任职关系" in script
     assert "append_current_affiliation" in script
     assert "transfer_current_affiliation" in script
     assert "collectIdentityResolutions" in script
@@ -170,8 +170,8 @@ def test_review_supports_path_correction_and_independent_targets() -> None:
     styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
 
     assert "suggested_path_correction" in script
-    assert "调整整组的最终归属" in script
-    assert "仅为个别导师准备其他机构" in script
+    assert "整组调整归属" in script
+    assert "仅调整个别导师" in script
     assert "organization_creations" in script
     assert "target_organization_id" in script
     assert "save_path_correction" in script
@@ -192,17 +192,25 @@ def test_review_uses_one_task_workspace_and_plain_reviewer_language() -> None:
     assert 'id="review-workspace"' in html
     assert 'id="review-task-list"' in html
     assert 'id="workflow-pending-count"' in html
-    assert 'id="result-summary-title"' in html
-    assert "一次处理一件事" in html
+    assert 'class="review-task-main"' in html
+    assert "review-result-summary" not in html
+    assert "审核导师投稿" in html
+    assert "系统会先整理没有争议的内容" not in html
+    assert "选择处理结果后" not in html
     assert "归入已有机构" in script
-    assert "不单独建立，归入上级" in script
-    assert "确认这项处理" in script
+    assert "归入上级" in script
+    assert "这个选择会用于" not in script
+    assert "没有发现机构层级或导师任职方面的冲突" not in script
+    assert "taskContext" in script
     assert "buildWorkflowTasks" in script
     assert "applySuggestedGroupDecision" in script
     assert "focusNextWorkflowTask" in script
+    assert "额外官方来源域名" not in script
     assert "pathReviewSuggestion" in logic
     assert "rankOrganizationCandidates" in logic
     assert ".review-workspace-grid" in styles
+    assert ".review-task-main" in styles
+    assert "height: 2.3rem" in styles
     assert ".review-workflow-bar" in styles
 
 
