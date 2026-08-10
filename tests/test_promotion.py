@@ -21,6 +21,7 @@ from mentor_data.organization_review import (
 )
 from mentor_data.promotion import PromotionQueue, PromotionReceipt
 from mentor_data.proposals import create_mentor_proposal
+from mentor_data.report_review import REPORT_REVIEW_COMMENT_MARKER
 from mentor_data.reporting import create_report_proposal
 from mentor_data.repository import load_repository
 from mentor_data.uploads import SAFE_COLUMNS
@@ -561,6 +562,19 @@ def _review_comment(decision: dict) -> dict:
     }
 
 
+def _report_review_comment(decision: dict) -> dict:
+    return {
+        "id": 992,
+        "body": (
+            f"{REPORT_REVIEW_COMMENT_MARKER}\n"
+            f"```json\n{json.dumps(decision, ensure_ascii=False)}\n```"
+        ),
+        "created_at": "2026-08-03T01:00:00Z",
+        "author_association": "OWNER",
+        "user": {"id": 999, "login": "maintainer", "type": "User"},
+    }
+
+
 def test_auto_eligible_mentor_is_rebuilt_finalized_and_merged_with_real_git(
     tmp_path: Path,
 ) -> None:
@@ -814,3 +828,59 @@ def test_reviewed_report_outcomes_are_finalized_and_merged_with_real_git(
     )
     assert resolution["decision"] == decision
     assert not (root / "reports" / "pending" / f"issue-{issue_number}.json").exists()
+
+
+def test_draft_report_review_comment_is_applied_and_merged_with_real_git(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _seed_report_mentor(root)
+    base_sha = _initialize_local_git_repository(root, tmp_path)
+    issue_number = 40
+    proposal_path = create_report_proposal(
+        root,
+        _report_event(issue_number, "字段错误"),
+        _report_actor(),
+        output_directory=root / "reports" / "pending",
+    )
+    decision = {
+        "schema_version": 1,
+        "kind": "report_review_decision",
+        "pull_request_number": 88,
+        "issue_number": issue_number,
+        "proposal_sha256": hashlib.sha256(proposal_path.read_bytes()).hexdigest(),
+        "decision": "rejected",
+        "moderator_reason": "官网仍显示当前信息，反馈不成立",
+        "accepted": {},
+    }
+    branch = f"report/issue-{issue_number}"
+    proposal_sha = _stage_internal_pull_branch(root, branch, [proposal_path])
+    pull_payload = _pull_payload(
+        number=88,
+        issue_number=issue_number,
+        kind="report",
+        draft=True,
+    )
+    pull_payload["head"]["sha"] = proposal_sha
+    pull_payload["base"]["sha"] = base_sha
+    runner = _LocalGitHubRunner(
+        root,
+        pull_payload,
+        comments=[_report_review_comment(decision)],
+    )
+
+    summary = PromotionQueue(
+        root=root,
+        repository="example/repository",
+        runner=runner,
+    ).run()
+
+    assert summary.merged == 1
+    assert summary.failed == 0
+    assert runner.merged is True
+    data = load_repository(root, validate=True)
+    resolution = next(
+        item for item in data.resolutions if item["report_issue"]["number"] == issue_number
+    )
+    assert resolution["decision"] == "rejected"
+    assert resolution["moderator"]["github_login"] == "maintainer"

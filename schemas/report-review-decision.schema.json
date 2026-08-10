@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoemailsender.example/schemas/report-review-decision.schema.json",
+  "title": "Correction report review decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "pull_request_number",
+    "issue_number",
+    "proposal_sha256",
+    "decision",
+    "moderator_reason",
+    "accepted"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "kind": { "const": "report_review_decision" },
+    "pull_request_number": { "type": "integer", "minimum": 1 },
+    "issue_number": { "type": "integer", "minimum": 1 },
+    "proposal_sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "decision": {
+      "enum": ["accepted", "partially_accepted", "rejected", "needs_evidence", "duplicate"]
+    },
+    "moderator_reason": { "type": "string", "minLength": 1, "maxLength": 2000 },
+    "accepted": { "type": "object" }
+  }
+}

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <title>信息反馈审核 · AutoEmailSender 社区导师库</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="review-page report-review-page">
+    <main class="shell review-shell report-review-shell">
+      <header class="review-hero report-review-hero">
+        <a class="back-link" href="./">← 返回社区导师库</a>
+        <p class="eyebrow">Maintainer tool</p>
+        <h1>信息反馈审核</h1>
+        <p class="intro">对照当前记录、反馈内容和官网证据，选择裁决。无需编辑 JSON 或手动合并。</p>
+      </header>
+
+      <section id="report-review-status" class="review-status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <div>
+          <strong id="report-status-title">正在读取反馈提案…</strong>
+          <p id="report-status-detail">正在校验 PR、分支和反馈快照。</p>
+        </div>
+      </section>
+
+      <section id="report-summary" class="review-summary report-summary" hidden>
+        <div>
+          <span class="label">反馈 Issue</span>
+          <strong id="report-issue">-</strong>
+        </div>
+        <div>
+          <span class="label">导师</span>
+          <strong id="report-mentor">-</strong>
+        </div>
+        <div>
+          <span class="label">涉及字段</span>
+          <strong id="report-fields">-</strong>
+        </div>
+        <div>
+          <span class="label">官网证据</span>
+          <strong id="report-evidence-count">-</strong>
+        </div>
+      </section>
+
+      <section id="report-comparison" class="report-comparison" hidden>
+        <article class="report-panel reporter-panel">
+          <div class="report-panel-heading">
+            <div>
+              <span class="report-panel-kicker">反馈者建议</span>
+              <h2 id="report-type">信息反馈</h2>
+            </div>
+            <a id="source-issue-link" class="report-source-link" target="_blank" rel="noopener noreferrer">打开 Issue ↗</a>
+          </div>
+          <dl class="reporter-content">
+            <div>
+              <dt>建议修改</dt>
+              <dd id="proposed-value"></dd>
+            </div>
+            <div>
+              <dt>补充说明</dt>
+              <dd id="proposed-explanation"></dd>
+            </div>
+          </dl>
+          <div class="evidence-block">
+            <h3>官网证据</h3>
+            <div id="evidence-links" class="evidence-links"></div>
+            <p>请打开证据页核对“字段归属”和“当前状态”，不要只确认页面中出现了该文本。</p>
+          </div>
+        </article>
+
+        <article class="report-panel current-panel">
+          <div class="report-panel-heading">
+            <div>
+              <span class="report-panel-kicker">社区当前记录</span>
+              <h2 id="current-name">当前导师</h2>
+            </div>
+            <span id="current-status" class="record-status">active</span>
+          </div>
+          <dl id="current-record" class="current-record"></dl>
+        </article>
+      </section>
+
+      <section id="report-decision-panel" class="report-decision-panel" hidden>
+        <div class="section-heading report-section-heading">
+          <div>
+            <h2>选择审核结论</h2>
+            <p>先决定反馈是否成立，再填写实际采用值。未接受的反馈不会修改导师数据。</p>
+          </div>
+          <span id="report-autosave" class="autosave-status" aria-live="polite"></span>
+        </div>
+
+        <fieldset class="decision-choices">
+          <legend class="sr-only">审核结论</legend>
+          <label class="decision-choice" data-decision="accepted">
+            <input type="radio" name="report-decision" value="accepted" />
+            <span><strong>接受</strong><small>证据完整，按最终采用值修改</small></span>
+          </label>
+          <label class="decision-choice" data-decision="partially_accepted">
+            <input type="radio" name="report-decision" value="partially_accepted" />
+            <span><strong>部分接受</strong><small>反馈有一部分成立，只应用确认字段</small></span>
+          </label>
+          <label class="decision-choice" data-decision="rejected">
+            <input type="radio" name="report-decision" value="rejected" />
+            <span><strong>拒绝</strong><small>证据不能证明原记录有误</small></span>
+          </label>
+          <label class="decision-choice" data-decision="needs_evidence">
+            <input type="radio" name="report-decision" value="needs_evidence" />
+            <span><strong>需要补证</strong><small>先记录结论，等待更明确的官网证据</small></span>
+          </label>
+          <label class="decision-choice" data-decision="duplicate">
+            <input type="radio" name="report-decision" value="duplicate" />
+            <span><strong>重复反馈</strong><small>相同问题已有审核记录</small></span>
+          </label>
+        </fieldset>
+
+        <label class="report-reason-field" for="moderator-reason">
+          <span>审核依据 <b>必填</b></span>
+          <textarea
+            id="moderator-reason"
+            rows="3"
+            maxlength="2000"
+            placeholder="写清楚官网显示了什么，以及为什么作出这个结论"
+          ></textarea>
+          <small id="reason-hint">这段文字会进入永久审核记录。</small>
+        </label>
+
+        <section id="accepted-editor" class="accepted-editor" hidden>
+          <div class="accepted-editor-heading">
+            <div>
+              <h3>实际采用的修改</h3>
+              <p>勾选要改的字段。表单会保留未修改的多邮箱、多主页和任职记录。</p>
+            </div>
+            <span id="selected-change-count">已选择 0 项</span>
+          </div>
+
+          <div class="change-editor-list">
+            <details class="change-editor" data-field="contacts">
+              <summary>
+                <label><input id="change-email" type="checkbox" /> 邮箱</label>
+                <span id="email-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body email-editor-grid">
+                <label>处理方式
+                  <select id="email-action">
+                    <option value="replace_primary">替换主邮箱，旧邮箱转为历史</option>
+                    <option value="add_secondary">新增辅助邮箱，保留当前主邮箱</option>
+                    <option value="replace_all">只保留新邮箱</option>
+                  </select>
+                </label>
+                <label>新邮箱
+                  <input id="accepted-email" type="email" autocomplete="off" />
+                </label>
+                <label class="wide-field">证据页面
+                  <input id="email-source" type="url" autocomplete="off" />
+                </label>
+              </div>
+            </details>
+
+            <details class="change-editor" data-field="names">
+              <summary>
+                <label><input id="change-name" type="checkbox" /> 姓名</label>
+                <span id="name-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body">
+                <label>最终主姓名
+                  <input id="accepted-name" type="text" maxlength="255" />
+                </label>
+              </div>
+            </details>
+
+            <details class="change-editor" data-field="title">
+              <summary>
+                <label><input id="change-title" type="checkbox" /> 职称</label>
+                <span id="title-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body">
+                <label>最终职称
+                  <input id="accepted-title" type="text" maxlength="255" />
+                </label>
+              </div>
+            </details>
+
+            <details class="change-editor" data-field="profiles">
+              <summary>
+                <label><input id="change-profile" type="checkbox" /> 导师主页</label>
+                <span id="profile-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body email-editor-grid">
+                <label>处理方式
+                  <select id="profile-action">
+                    <option value="replace_current">替换当前主页，旧主页标记失效</option>
+                    <option value="add_current">新增一个当前主页</option>
+                  </select>
+                </label>
+                <label class="wide-field">新主页
+                  <input id="accepted-profile" type="url" autocomplete="off" />
+                </label>
+                <label class="wide-field">证据页面
+                  <input id="profile-source" type="url" autocomplete="off" />
+                </label>
+              </div>
+            </details>
+
+            <details class="change-editor" data-field="affiliations">
+              <summary>
+                <label><input id="change-affiliation" type="checkbox" /> 主要任职</label>
+                <span id="affiliation-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body affiliation-editor-grid">
+                <label>最终机构 ID
+                  <input id="accepted-organization" type="text" autocomplete="off" />
+                </label>
+                <label>任职职称
+                  <input id="accepted-affiliation-title" type="text" maxlength="255" />
+                </label>
+                <label class="wide-field">官网依据
+                  <input id="affiliation-source" type="url" autocomplete="off" />
+                </label>
+              </div>
+            </details>
+
+            <details class="change-editor" data-field="status">
+              <summary>
+                <label><input id="change-status" type="checkbox" /> 导师状态</label>
+                <span id="status-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body status-editor-grid">
+                <label>最终状态
+                  <select id="accepted-status">
+                    <option value="active">在职</option>
+                    <option value="retired">已退休</option>
+                    <option value="departed">已离职</option>
+                    <option value="deceased">已去世</option>
+                    <option value="stale">长期未核验</option>
+                    <option value="disputed">存在争议</option>
+                    <option value="removed">已移除</option>
+                  </select>
+                </label>
+                <label>状态说明
+                  <input id="status-reason" type="text" maxlength="1000" />
+                </label>
+                <label class="wide-field">官网依据
+                  <input id="status-source" type="url" autocomplete="off" />
+                </label>
+                <label>观察时间
+                  <input id="status-observed" type="datetime-local" />
+                </label>
+              </div>
+            </details>
+
+            <details class="change-editor" data-field="research_directions">
+              <summary>
+                <label><input id="change-research" type="checkbox" /> 研究方向</label>
+                <span id="research-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body">
+                <label>每行一个研究方向
+                  <textarea id="accepted-research" rows="5"></textarea>
+                </label>
+              </div>
+            </details>
+
+            <details class="change-editor" data-field="recent_papers">
+              <summary>
+                <label><input id="change-papers" type="checkbox" /> 代表论文</label>
+                <span id="papers-summary">未选择</span>
+              </summary>
+              <div class="change-editor-body">
+                <label>每行一篇，最多 8 篇
+                  <textarea id="accepted-papers" rows="6"></textarea>
+                </label>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <div class="report-submit-panel">
+          <div>
+            <h2>生成审核评论</h2>
+            <p>提交后，可信队列会复核身份、提案 SHA 和结构化修改，再自动落库并合并。</p>
+          </div>
+          <button id="generate-report-decision" class="primary-button" type="button">检查并生成</button>
+        </div>
+        <p id="report-decision-error" class="error" hidden></p>
+        <div id="report-decision-preview" class="report-decision-preview" hidden></div>
+        <div id="report-decision-output" class="decision-output" hidden>
+          <label for="report-decision-text">复制以下内容到 PR 评论</label>
+          <textarea id="report-decision-text" rows="10" readonly spellcheck="false"></textarea>
+          <button id="copy-open-report-pr" class="primary-button" type="button">复制并打开 PR</button>
+          <p id="report-copy-status" class="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+    <script src="report-review-logic.js" defer></script>
+    <script src="report-review.js" defer></script>
+  </body>
+</html>

@@ -38,7 +38,8 @@ jobs:
        (github.event.issue.pull_request &&
         contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
                  github.event.comment.author_association) &&
-        startsWith(github.event.comment.body, '<!-- mentor-data-organization-review:v1 -->'))) &&
+        (startsWith(github.event.comment.body, '<!-- mentor-data-organization-review:v1 -->') ||
+         startsWith(github.event.comment.body, '<!-- mentor-data-report-review:v1 -->')))) &&
       (github.event_name != 'pull_request_target' ||
        github.event.pull_request.head.repo.full_name == github.repository) &&
       (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success')

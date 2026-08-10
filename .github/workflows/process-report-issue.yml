@@ -107,8 +107,12 @@ jobs:
             --head "$BRANCH" \
             --draft \
             --label status:manual-review \
-            --body "请填写最终 decision 和 moderator_reason；接受修改时还需填写 accepted。确认后将 Draft 标记为 Ready。关联 Issue #${ISSUE_NUMBER}。")
+            --body "请使用维护者审核页面选择裁决并提交审核评论。可信队列会复核后自动落库、标记 Ready 并合并。关联 Issue #${ISSUE_NUMBER}。")
+          PR_NUMBER=${PR_URL##*/}
+          case "$PR_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+          REVIEW_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/AutoEmailSender-MentorData/report-review.html?pr=${PR_NUMBER}"
           echo "pr_url=$PR_URL" >> "$GITHUB_OUTPUT"
+          echo "review_url=$REVIEW_URL" >> "$GITHUB_OUTPUT"
 
       - name: Post the only Issue status notification
         if: >-
@@ -118,6 +122,7 @@ jobs:
         env:
           JOB_STATUS: ${{ job.status }}
           PR_URL: ${{ steps.pull_request.outputs.pr_url }}
+          REVIEW_URL: ${{ steps.pull_request.outputs.review_url }}
           WORKFLOW_OUTCOME: ${{ steps.workflow_state.outputs.outcome }}
           EXISTING_PR_URL: ${{ steps.workflow_state.outputs.pr_url }}
         run: |
@@ -127,12 +132,13 @@ jobs:
             "repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/comments?per_page=100" \
             --jq '.[] | select(.user.login == "github-actions[bot]" and (.body | startswith("<!-- mentor-data-status:v1 -->"))) | .id')
           COMMENT_ID=${COMMENT_IDS%%$'\n'*}
-          if [ "$WORKFLOW_OUTCOME" = "existing_pull" ] && [ -n "$COMMENT_ID" ]; then
-            exit 0
-          elif [ "$WORKFLOW_OUTCOME" = "existing_pull" ]; then
-            MESSAGE="反馈已经有对应的审核记录，不会重复创建。[查看记录](${EXISTING_PR_URL})"
+          if [ "$WORKFLOW_OUTCOME" = "existing_pull" ]; then
+            EXISTING_PR_NUMBER=${EXISTING_PR_URL##*/}
+            case "$EXISTING_PR_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
+            EXISTING_REVIEW_URL="https://${GITHUB_REPOSITORY_OWNER}.github.io/AutoEmailSender-MentorData/report-review.html?pr=${EXISTING_PR_NUMBER}"
+            MESSAGE="反馈已经有对应的审核记录，不会重复创建。[打开审核页](${EXISTING_REVIEW_URL})"
           elif [ "$JOB_STATUS" = "success" ]; then
-            MESSAGE="反馈已进入维护者审核，不会直接修改社区数据。[继续审核](${PR_URL})"
+            MESSAGE="反馈已进入维护者审核，不会直接修改社区数据。[打开审核页](${REVIEW_URL})"
           else
             MESSAGE="反馈校验或提案生成未通过，社区数据没有改变。维护者可查看本次 Actions 日志。"
           fi

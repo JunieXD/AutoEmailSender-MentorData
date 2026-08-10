@@ -30,6 +30,12 @@ from .organization_review import (
     load_review_comment,
 )
 from .proposals import finalize_proposal, finalize_proposal_set
+from .report_review import (
+    REPORT_REVIEW_COMMENT_MARKER,
+    ReportReviewComment,
+    apply_report_review,
+    load_report_review_comment_value,
+)
 from .reporting import finalize_report_proposal
 from .repository import load_repository
 
@@ -184,9 +190,13 @@ class PromotionQueue:
     def _is_ready(self, pull: InternalPull) -> bool:
         if not pull.draft:
             return True
-        if pull.kind != "batch" or pull.status_label != "status:manual-review":
+        if pull.status_label != "status:manual-review":
             return False
-        return self._latest_batch_review_comment(pull, required=False) is not None
+        if pull.kind == "batch":
+            return self._latest_batch_review_comment(pull, required=False) is not None
+        if pull.kind == "report":
+            return self._latest_report_review_comment(pull, required=False) is not None
+        return False
 
     def _fetch_commits(self, pull: InternalPull) -> None:
         self._run(
@@ -455,8 +465,23 @@ class PromotionQueue:
             proposal_path.unlink()
             return
         if pull.kind == "report":
-            moderator = self._ready_moderator(pull)
             proposal_path = candidate / "reports" / "pending" / f"issue-{pull.issue_number}.json"
+            if pull.draft:
+                review_comment = self._latest_report_review_comment(pull, required=True)
+                assert review_comment is not None
+                moderator = Moderator(
+                    github_user_id=review_comment.reviewer_id,
+                    github_login=review_comment.reviewer_login,
+                )
+                self._require_collaborator(moderator)
+                apply_report_review(
+                    candidate,
+                    proposal_path,
+                    review_comment,
+                    expected_issue_number=pull.issue_number,
+                )
+            else:
+                moderator = self._ready_moderator(pull)
             finalize_report_proposal(
                 candidate,
                 proposal_path,
@@ -538,6 +563,32 @@ class PromotionQueue:
             event_path = Path(temporary) / "event.json"
             event_path.write_text(json.dumps(event, ensure_ascii=False), encoding="utf-8")
             return load_review_comment(self.root, event_path)
+
+    def _latest_report_review_comment(
+        self,
+        pull: InternalPull,
+        *,
+        required: bool,
+    ) -> ReportReviewComment | None:
+        comments = self._gh_paginated_list(
+            f"repos/{self.repository}/issues/{pull.number}/comments?per_page=100"
+        )
+        candidates = [
+            item
+            for item in comments
+            if isinstance(item, dict)
+            and str(item.get("body") or "").startswith(REPORT_REVIEW_COMMENT_MARKER)
+            and item.get("author_association") in TRUSTED_REVIEW_ASSOCIATIONS
+        ]
+        if not candidates:
+            if required:
+                raise SubmissionError("信息反馈尚未提交有效的审核结果")
+            return None
+        return load_report_review_comment_value(
+            self.root,
+            pull_request_number=pull.number,
+            comment=candidates[-1],
+        )
 
     def _ready_moderator(self, pull: InternalPull) -> Moderator:
         events = self._gh_paginated_list(

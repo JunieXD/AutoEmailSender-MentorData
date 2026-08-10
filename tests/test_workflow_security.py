@@ -117,6 +117,17 @@ def test_promotion_uses_trusted_default_branch_and_durable_fallback_triggers() -
         line for line in text.splitlines() if line.lstrip().startswith("run:")
     )
     assert "gh workflow run pages.yml" in text
+    assert "mentor-data-report-review:v1" in text
+
+
+def test_report_workflow_links_to_the_structured_review_page() -> None:
+    path = PROJECT_ROOT / ".github" / "workflows" / "process-report-issue.yml"
+    text = path.read_text(encoding="utf-8")
+
+    assert "report-review.html?pr=${PR_NUMBER}" in text
+    assert "[打开审核页](${REVIEW_URL})" in text
+    assert "无需手动" not in text
+    assert "填写最终 decision" not in text
 
 
 def test_issue_workflows_create_at_most_one_status_comment() -> None:

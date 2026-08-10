@@ -16,6 +16,30 @@ def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     assert "form-action 'none'" in html
 
 
+def test_report_review_page_is_safe_and_never_requires_json_editing() -> None:
+    html = (PROJECT_ROOT / "site" / "report-review.html").read_text(encoding="utf-8")
+    script = (PROJECT_ROOT / "site" / "report-review.js").read_text(encoding="utf-8")
+    styles = (PROJECT_ROOT / "site" / "styles.css").read_text(encoding="utf-8")
+
+    assert '<script src="report-review-logic.js" defer></script>' in html
+    assert '<script src="report-review.js" defer></script>' in html
+    assert "<script>" not in html
+    assert "https://api.github.com" in html
+    assert "https://raw.githubusercontent.com" in html
+    assert "script-src 'self'" in html
+    assert "form-action 'none'" in html
+    assert "mentor-data-report-review:v1" in script
+    assert "crypto.subtle.digest" in script
+    assert "innerHTML" not in script
+    assert "outerHTML" not in script
+    assert "eval(" not in script
+    assert 'Object.keys(proposal.accepted || {}).length !== 0' in script
+    assert 'decision: "rejected"' not in script
+    assert "无需编辑 JSON 或手动合并" in html
+    assert ".report-comparison" in styles
+    assert ".decision-choices" in styles
+
+
 def test_review_script_treats_manifest_as_text_and_outputs_fixed_comment_marker() -> None:
     script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
     assert "innerHTML" not in script
