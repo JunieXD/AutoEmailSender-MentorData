@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ca4895704f0af491321a"
+      ],
+      "ended_at": null,
+      "id": "aff_0a967a7edadbc220ecfc",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_00b5ff4b8ad33289ded6",
+      "source_url": "https://people.ucas.edu.cn/~0020520",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_ca4895704f0af491321a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0a967a7edadbc220ecfc",
+      "claim_ids": [
+        "claim_ca4895704f0af491321a"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyg@sccas.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.edu.cn/~0020520",
+      "status": "current",
+      "type": "email",
+      "value": "wangyg@sccas.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ca4895704f0af491321a"
+    ],
+    "email": [
+      "claim_ca4895704f0af491321a"
+    ],
+    "name": [
+      "claim_ca4895704f0af491321a"
+    ],
+    "profile_url": [
+      "claim_ca4895704f0af491321a"
+    ],
+    "research_directions": [
+      "claim_ca4895704f0af491321a"
+    ],
+    "status": [
+      "claim_ca4895704f0af491321a"
+    ],
+    "title": [
+      "claim_ca4895704f0af491321a"
+    ]
+  },
+  "id": "mentor_348abbbb619134d2b793",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ca4895704f0af491321a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王彦棡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0a967a7edadbc220ecfc",
+      "claim_ids": [
+        "claim_ca4895704f0af491321a"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~0020520"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能,并行计算,云计算,高性能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~0020520",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2ed295e5e325f681863d"
+      ],
+      "ended_at": null,
+      "id": "aff_258d174c36280697cd08",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_9b4cae6b90179070cbfb",
+      "source_url": "https://ict.cas.cn/sourcedb/cn/jssrck/202005/t20200508_5576444.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2ed295e5e325f681863d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_258d174c36280697cd08",
+      "claim_ids": [
+        "claim_2ed295e5e325f681863d"
+      ],
+      "is_primary": true,
+      "normalized_value": "liucheng@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://ict.cas.cn/sourcedb/cn/jssrck/202005/t20200508_5576444.html",
+      "status": "current",
+      "type": "email",
+      "value": "liucheng@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2ed295e5e325f681863d"
+    ],
+    "email": [
+      "claim_2ed295e5e325f681863d"
+    ],
+    "name": [
+      "claim_2ed295e5e325f681863d"
+    ],
+    "profile_url": [
+      "claim_2ed295e5e325f681863d"
+    ],
+    "recent_papers": [
+      "claim_2ed295e5e325f681863d"
+    ],
+    "research_directions": [
+      "claim_2ed295e5e325f681863d"
+    ],
+    "status": [
+      "claim_2ed295e5e325f681863d"
+    ],
+    "title": [
+      "claim_2ed295e5e325f681863d"
+    ]
+  },
+  "id": "mentor_a61df2c8707eb9209868",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2ed295e5e325f681863d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_258d174c36280697cd08",
+      "claim_ids": [
+        "claim_2ed295e5e325f681863d"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://ict.cas.cn/sourcedb/cn/jssrck/202005/t20200508_5576444.html"
+    }
+  ],
+  "recent_papers": [
+    "DRIM-ANN: An Approximate Nearest Neighbor Search Engine based on Commercial DRAM-PIMs, SC 2025",
+    "Graphitron: A Domain Specific Language for FPGA-based Graph Processing Accelerator Generation, LCTES 2025",
+    "FrontOrder: Frontier-guided Graph Reordering, ICDE 2025",
+    "NeuVSA: A Unified and Efficient Accelerator for Neural Vector Search, HPCA 2025",
+    "LUT-DLA: Lookup Table as Efficient Extreme Low-Bit Deep Learning Accelerator, HPCA 2025",
+    "TaijiGraph: An Out-of-core Graph Processing System Enhanced with Computational Storage, IPDPS 2025",
+    "HLSPilot: LLM-based High-Level Synthesis, ICCAD 2024",
+    "An Energy-Efficient In-Memory Accelerator for Graph Construction and Updating, TCAD 2024"
+  ],
+  "research_directions": [
+    "专用硬件加速、AI4EDA"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ict.cas.cn/sourcedb/cn/jssrck/202005/t20200508_5576444.html",
+  "title": "副研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cdfeaffaa6781695f37c"
+      ],
+      "ended_at": null,
+      "id": "aff_18c07dede5f2d2c80b60",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_2b1812214b5ba6cd8d62",
+      "source_url": "https://people.ucas.edu.cn/~dbu",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_cdfeaffaa6781695f37c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_18c07dede5f2d2c80b60",
+      "claim_ids": [
+        "claim_cdfeaffaa6781695f37c"
+      ],
+      "is_primary": true,
+      "normalized_value": "dbu@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.edu.cn/~dbu",
+      "status": "current",
+      "type": "email",
+      "value": "dbu@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cdfeaffaa6781695f37c"
+    ],
+    "email": [
+      "claim_cdfeaffaa6781695f37c"
+    ],
+    "name": [
+      "claim_cdfeaffaa6781695f37c"
+    ],
+    "profile_url": [
+      "claim_cdfeaffaa6781695f37c"
+    ],
+    "research_directions": [
+      "claim_cdfeaffaa6781695f37c"
+    ],
+    "status": [
+      "claim_cdfeaffaa6781695f37c"
+    ],
+    "title": [
+      "claim_cdfeaffaa6781695f37c"
+    ]
+  },
+  "id": "mentor_f1d0ebcf8bdedaa0e991",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cdfeaffaa6781695f37c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "卜东波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_18c07dede5f2d2c80b60",
+      "claim_ids": [
+        "claim_cdfeaffaa6781695f37c"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~dbu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "算法设计与分析(包括SAT问题理论和算法、信息检索、生物信息学),AI辅助的蛋白质结构预测、蛋白质设计,AI辅助的算法设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~dbu",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

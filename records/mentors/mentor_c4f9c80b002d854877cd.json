@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9926880655eab78531cc"
+      ],
+      "ended_at": null,
+      "id": "aff_42cba8fca29900715c57",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_76958588303487ae2181",
+      "source_url": "https://people.ucas.ac.cn/~shaoen",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_9926880655eab78531cc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42cba8fca29900715c57",
+      "claim_ids": [
+        "claim_9926880655eab78531cc"
+      ],
+      "is_primary": true,
+      "normalized_value": "shaoen@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~shaoen",
+      "status": "current",
+      "type": "email",
+      "value": "shaoen@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9926880655eab78531cc"
+    ],
+    "email": [
+      "claim_9926880655eab78531cc"
+    ],
+    "name": [
+      "claim_9926880655eab78531cc"
+    ],
+    "profile_url": [
+      "claim_9926880655eab78531cc"
+    ],
+    "recent_papers": [
+      "claim_9926880655eab78531cc"
+    ],
+    "research_directions": [
+      "claim_9926880655eab78531cc"
+    ],
+    "status": [
+      "claim_9926880655eab78531cc"
+    ],
+    "title": [
+      "claim_9926880655eab78531cc"
+    ]
+  },
+  "id": "mentor_c4f9c80b002d854877cd",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9926880655eab78531cc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邵恩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42cba8fca29900715c57",
+      "claim_ids": [
+        "claim_9926880655eab78531cc"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~shaoen"
+    }
+  ],
+  "recent_papers": [
+    "Optimizing Deep Learning Inference Efficiency through Block Dependency Analysis",
+    "Accelerating Parallel Structures in DNNs via Parallel Fusion and Operator Co-Optimization",
+    "rocCache:面向ROCm软件生态的访存与计算协同编译与共性优化系统",
+    "ElasticRoom: Multi-Tenant DNN Inference Engine via Co-design with Resource-constrained Compilation and Strong Priority Scheduling.",
+    "FILL: a heterogeneous resource scheduling system addressing the low throughput problem in GROMACS",
+    "POSTER: FineCo: Fine-grained Heterogeneous Resource Management for Concurrent DNN Inferences.",
+    "基于跨异构编程模型的共性算子代码迁移与并行优化",
+    "DeletePop: A DLT Execution Time Predictor Based on Comprehensive Modeling"
+  ],
+  "research_directions": [
+    "高性能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~shaoen",
+  "title": "副研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

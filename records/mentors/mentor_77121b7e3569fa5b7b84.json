@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2c080b3db5aaf8a36058"
+      ],
+      "ended_at": null,
+      "id": "aff_7b1de8f0892f0f969cd4",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_2b1812214b5ba6cd8d62",
+      "source_url": "https://people.ucas.edu.cn/~sgshan",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2c080b3db5aaf8a36058"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7b1de8f0892f0f969cd4",
+      "claim_ids": [
+        "claim_2c080b3db5aaf8a36058"
+      ],
+      "is_primary": true,
+      "normalized_value": "sgshan@ict.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.edu.cn/~sgshan",
+      "status": "current",
+      "type": "email",
+      "value": "sgshan@ict.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2c080b3db5aaf8a36058"
+    ],
+    "email": [
+      "claim_2c080b3db5aaf8a36058"
+    ],
+    "name": [
+      "claim_2c080b3db5aaf8a36058"
+    ],
+    "profile_url": [
+      "claim_2c080b3db5aaf8a36058"
+    ],
+    "research_directions": [
+      "claim_2c080b3db5aaf8a36058"
+    ],
+    "status": [
+      "claim_2c080b3db5aaf8a36058"
+    ],
+    "title": [
+      "claim_2c080b3db5aaf8a36058"
+    ]
+  },
+  "id": "mentor_77121b7e3569fa5b7b84",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2c080b3db5aaf8a36058"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "山世光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7b1de8f0892f0f969cd4",
+      "claim_ids": [
+        "claim_2c080b3db5aaf8a36058"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~sgshan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能,特别是计算机视觉、模式识别、深度学习、情感计算、基础模型架构、大模型垂域化、智能算法安全、AI4Science等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~sgshan",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

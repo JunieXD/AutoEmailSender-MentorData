@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5336b5fa2c838b450853"
+      ],
+      "ended_at": null,
+      "id": "aff_e4d452fdcb47cfa658e6",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_12ca4006b0c12fd5c7ed",
+      "source_url": "https://people.ucas.edu.cn/~csq",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_5336b5fa2c838b450853"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e4d452fdcb47cfa658e6",
+      "claim_ids": [
+        "claim_5336b5fa2c838b450853"
+      ],
+      "is_primary": true,
+      "normalized_value": "chisq@ucas.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.edu.cn/~csq",
+      "status": "current",
+      "type": "email",
+      "value": "chisq@ucas.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5336b5fa2c838b450853"
+    ],
+    "email": [
+      "claim_5336b5fa2c838b450853"
+    ],
+    "name": [
+      "claim_5336b5fa2c838b450853"
+    ],
+    "profile_url": [
+      "claim_5336b5fa2c838b450853"
+    ],
+    "recent_papers": [
+      "claim_5336b5fa2c838b450853"
+    ],
+    "research_directions": [
+      "claim_5336b5fa2c838b450853"
+    ],
+    "status": [
+      "claim_5336b5fa2c838b450853"
+    ],
+    "title": [
+      "claim_5336b5fa2c838b450853"
+    ]
+  },
+  "id": "mentor_4e40de05dfc97ab48fe2",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5336b5fa2c838b450853"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "池胜强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e4d452fdcb47cfa658e6",
+      "claim_ids": [
+        "claim_5336b5fa2c838b450853"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.edu.cn/~csq"
+    }
+  ],
+  "recent_papers": [
+    "A deep clustering Gaussian process algorithm for motor progression prediction of Parkinson's disease",
+    "A Self-Supervised Graph Neural Network to Identify Temporal Phenotypes of End-Stage Renal Disease Using Longitudinal Electronic Health Records",
+    "Integrated multi-omics analysis identifies a machine learning-derived signature for predicting prognosis and therapeutic vulnerability in clear cell renal cell carcinoma",
+    "Construction of an artificially intelligent model for accurate detection of HCC by integrating clinical, radiological, and peripheral immunological features",
+    "Comparison of machine learning and logistic regression models for predicting emergence delirium in elderly patients: A prospective study",
+    "Attribute Diversity Aware Community Detection on Attributed Graphs Using Three-view Graph Attention Neural Networks",
+    "Graph Neural Network Based Multi-Label Hierarchical Classification for Disease Predictions in General Practice",
+    "Temporal Phenotyping for End-Stage Renal Disease Using Longitudinal Electronic Health Records"
+  ],
+  "research_directions": [
+    "医学信息学、医疗大数据和人工智能、大模型和智能体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.edu.cn/~csq",
+  "title": "副研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

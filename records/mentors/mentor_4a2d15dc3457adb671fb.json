@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_11f8b40204bf365f8c35"
+      ],
+      "ended_at": null,
+      "id": "aff_755e95c08c346303befd",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_58434439c10074e922eb",
+      "source_url": "http://www.cnic.cas.cn/sourcedb_cnic_cas/zw/rcdw/yjy/202107/t20210702_6125784.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_11f8b40204bf365f8c35"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_755e95c08c346303befd",
+      "claim_ids": [
+        "claim_11f8b40204bf365f8c35"
+      ],
+      "is_primary": true,
+      "normalized_value": "lybmath@cnic.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "http://www.cnic.cas.cn/sourcedb_cnic_cas/zw/rcdw/yjy/202107/t20210702_6125784.html",
+      "status": "current",
+      "type": "email",
+      "value": "lybmath@cnic.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_11f8b40204bf365f8c35"
+    ],
+    "email": [
+      "claim_11f8b40204bf365f8c35"
+    ],
+    "name": [
+      "claim_11f8b40204bf365f8c35"
+    ],
+    "profile_url": [
+      "claim_11f8b40204bf365f8c35"
+    ],
+    "recent_papers": [
+      "claim_11f8b40204bf365f8c35"
+    ],
+    "research_directions": [
+      "claim_11f8b40204bf365f8c35"
+    ],
+    "status": [
+      "claim_11f8b40204bf365f8c35"
+    ],
+    "title": [
+      "claim_11f8b40204bf365f8c35"
+    ]
+  },
+  "id": "mentor_4a2d15dc3457adb671fb",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_11f8b40204bf365f8c35"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李彦彪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_755e95c08c346303befd",
+      "claim_ids": [
+        "claim_11f8b40204bf365f8c35"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "http://www.cnic.cas.cn/sourcedb_cnic_cas/zw/rcdw/yjy/202107/t20210702_6125784.html"
+    }
+  ],
+  "recent_papers": [
+    "From Address Blocks to Authorized Prefixes: Redesigning RPKI ROV with a Hierarchical Hashing Scheme for Fast and Memory-Efficient Validation",
+    "A Balanced Tuple Partitioning Method for Packet Classification with High-Performance and Scalability",
+    "INT-MC: Low-Overhead In-Band Network-Wide TelemetryBased on Matrix Completion",
+    "Heuristic Binary Search: Adaptive and Fast IPv6 Route Lookup With Incremental Prefix Updates",
+    "MaP: Increasing node capacity of programmable cloud gateways",
+    "GraphIoT: Lightweight IoT Device Detection Based on Graph Classifiers and Incremental Learning",
+    "The Hanging ROA: A Secure and Scalable Encoding Scheme for Route Origin Authorization",
+    "Fast Online Packet Classification With Convolutional Neural Network"
+  ],
+  "research_directions": [
+    "数据包计算,高效可靠路由,卫星互联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "http://www.cnic.cas.cn/sourcedb_cnic_cas/zw/rcdw/yjy/202107/t20210702_6125784.html",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

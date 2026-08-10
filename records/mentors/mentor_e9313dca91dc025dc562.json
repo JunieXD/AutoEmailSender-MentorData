@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c8ec108e55e2c220125c"
+      ],
+      "ended_at": null,
+      "id": "aff_814670f2e4631187395e",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_00b5ff4b8ad33289ded6",
+      "source_url": "https://people.ucas.ac.cn/~zhouyuanchun",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c8ec108e55e2c220125c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_814670f2e4631187395e",
+      "claim_ids": [
+        "claim_c8ec108e55e2c220125c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zyc@cnic.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~zhouyuanchun",
+      "status": "current",
+      "type": "email",
+      "value": "zyc@cnic.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c8ec108e55e2c220125c"
+    ],
+    "email": [
+      "claim_c8ec108e55e2c220125c"
+    ],
+    "name": [
+      "claim_c8ec108e55e2c220125c"
+    ],
+    "profile_url": [
+      "claim_c8ec108e55e2c220125c"
+    ],
+    "research_directions": [
+      "claim_c8ec108e55e2c220125c"
+    ],
+    "status": [
+      "claim_c8ec108e55e2c220125c"
+    ],
+    "title": [
+      "claim_c8ec108e55e2c220125c"
+    ]
+  },
+  "id": "mentor_e9313dca91dc025dc562",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c8ec108e55e2c220125c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周园春"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_814670f2e4631187395e",
+      "claim_ids": [
+        "claim_c8ec108e55e2c220125c"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~zhouyuanchun"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "科学大数据与数据智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~zhouyuanchun",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

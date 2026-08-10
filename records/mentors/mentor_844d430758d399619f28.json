@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f1cf972ed9262d8199ec"
+      ],
+      "ended_at": null,
+      "id": "aff_9e6c054a56b2eab4e811",
+      "is_primary": true,
+      "observed_at": "2026-08-10T06:47:52Z",
+      "organization_id": "org_auto_0691835ce0ba12aa9f21",
+      "source_url": "https://people.ucas.ac.cn/~wangyj",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_f1cf972ed9262d8199ec"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9e6c054a56b2eab4e811",
+      "claim_ids": [
+        "claim_f1cf972ed9262d8199ec"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyj@semi.ac.cn",
+      "observed_at": "2026-08-10T06:47:52Z",
+      "source_url": "https://people.ucas.ac.cn/~wangyj",
+      "status": "current",
+      "type": "email",
+      "value": "wangyj@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-10T06:47:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f1cf972ed9262d8199ec"
+    ],
+    "email": [
+      "claim_f1cf972ed9262d8199ec"
+    ],
+    "name": [
+      "claim_f1cf972ed9262d8199ec"
+    ],
+    "profile_url": [
+      "claim_f1cf972ed9262d8199ec"
+    ],
+    "recent_papers": [
+      "claim_f1cf972ed9262d8199ec"
+    ],
+    "research_directions": [
+      "claim_f1cf972ed9262d8199ec"
+    ],
+    "status": [
+      "claim_f1cf972ed9262d8199ec"
+    ],
+    "title": [
+      "claim_f1cf972ed9262d8199ec"
+    ]
+  },
+  "id": "mentor_844d430758d399619f28",
+  "last_verified_at": "2026-08-10T06:47:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f1cf972ed9262d8199ec"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王毅军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9e6c054a56b2eab4e811",
+      "claim_ids": [
+        "claim_f1cf972ed9262d8199ec"
+      ],
+      "observed_at": "2026-08-10T06:47:52Z",
+      "status": "current",
+      "url": "https://people.ucas.ac.cn/~wangyj"
+    }
+  ],
+  "recent_papers": [
+    "A brainwave verification system integrating passwords with EEG templates for online identification and authentication",
+    "A new spatial contrast coding approach for SSVEP-based BCIs",
+    "Optimizing the proportion of stimulation area in a grid stimulus for user-friendly SSVEP-based BCIs",
+    "High-Density Electroencephalogram Facilitates the Detection of Small Stimuli in Code-Modulated Visual Evoked Potential Brain-Computer Interfaces",
+    "A calibration-free c-VEP based BCI employing narrow-band random sequences",
+    "Optimizing Visual Stimulation Paradigms for User-Friendly SSVEP-Based BCIs",
+    "An open dataset for human SSVEPs in the frequency range of 1-60 Hz",
+    "A high-frequency SSVEP-BCI system based on a 360 Hz refresh rate"
+  ],
+  "research_directions": [
+    "神经工程和计算神经科学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T06:47:52Z",
+  "status_reason": null,
+  "status_source_url": "https://people.ucas.ac.cn/~wangyj",
+  "title": "研究员",
+  "updated_at": "2026-08-10T06:47:52Z"
+}

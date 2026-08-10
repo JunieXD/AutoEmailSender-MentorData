@@ -1,0 +1,1695 @@
+{
+  "created_organization_ids": [
+    "org_auto_00b5ff4b8ad33289ded6",
+    "org_auto_0691835ce0ba12aa9f21",
+    "org_auto_0847655cbfd569c3e172",
+    "org_auto_1294d4905497b465d4ca",
+    "org_auto_12ca4006b0c12fd5c7ed",
+    "org_auto_2b1812214b5ba6cd8d62",
+    "org_auto_31f9e7c95d2ccd2898f4",
+    "org_auto_35202d609a14e837828e",
+    "org_auto_35485f69276ba7ba8b55",
+    "org_auto_4f9d138909d10da9ddab",
+    "org_auto_58434439c10074e922eb",
+    "org_auto_58747d108e64c6e91102",
+    "org_auto_6233f120548a43046b0a",
+    "org_auto_71af84e7580cff17878c",
+    "org_auto_76958588303487ae2181",
+    "org_auto_76b2750cb2be45412a72",
+    "org_auto_9b4cae6b90179070cbfb",
+    "org_auto_b2bf8349a935242db807",
+    "org_auto_b33029d44c3afd6af524",
+    "org_auto_c84b746d091a92582c0f",
+    "org_auto_e852513e64eceb075ddc"
+  ],
+  "decided_at": "2026-08-10T07:43:17Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0e364b98763326d0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息化前瞻技术研究开放实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_0f0501d7432a720c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_10a1668ac61e7878",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院计算技术研究所前瞻研究室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_1e3aa4a805d23b20",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "韩银和教授工作室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_27d13514dabbbf0a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "处理器芯片重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2d1f7d8cc924b6f7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院软件研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_2f7097f5a69557ed",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": "学院错误",
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_30470105546a6939",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "张健教授工作室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_329f35e34dd03bdc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "投稿中的系所名称以“研究院”结尾，可能不是当前学院的下级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_12ca4006b0c12fd5c7ed"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_457b5c52442f18e8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "投稿中的系所名称以“研究院”结尾，可能不是当前学院的下级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_12ca4006b0c12fd5c7ed"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_460ef976296bc88b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院半导体研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_46245d83dcfa81da",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": "学院错误",
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_4def0ba069abddb2",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": "学院错误",
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4dfaf4e642238df3",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_56c6816aae71efd5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院计算技术研究所,高性能计算机研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5a34841d5e423e2b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院计算机网络信息中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6a4431516655c698",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6b7cbe31b2e80ad3",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "科技处",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_73ba35cc0e0e6bec",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能软件研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_851eef566c0096a0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b0acf14ee5138fa8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b1156b3d1b9642ac",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "先进交互式技术与应用发展部",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b582ea915df91651",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院信息工程研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c384cccdb9ac2cb2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院计算技术研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c7a603d13b67dd8a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d011c705c49e13a1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能计算机研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_dbefbfb577e070fb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能计算机研究中心、处理器芯片重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e8dfcb2cd9a84a89",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算技术研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ed87d31b022c9698",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国科学院软件研究所智能软件研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f90d5c46351743a7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cnic.cas.cn",
+            "faculty.hdu.edu.cn",
+            "hias.ucas.ac.cn",
+            "ict.cas.cn",
+            "people.ucas.ac.cn",
+            "people.ucas.edu.cn",
+            "semi.cas.cn",
+            "www.cnic.cas.cn",
+            "www.ict.ac.cn",
+            "www.ict.cas.cn",
+            "www.scholat.com"
+          ],
+          "canonical_name": "国科大杭州高等研究院",
+          "level": "university",
+          "official_url": "http://hias.ucas.ac.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "大数据技术与应用发展部",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_28",
+  "invalid_rows": [],
+  "issue": {
+    "number": 28,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/28"
+  },
+  "manifest_sha256": "0811cb9d4af9350afc0b349d6d095f3e68347fe5957bb8b4a5848e02ba6fa9b9",
+  "mapped_proposal_ids": [
+    "proposal_issue_28_row_1",
+    "proposal_issue_28_row_10",
+    "proposal_issue_28_row_11",
+    "proposal_issue_28_row_12",
+    "proposal_issue_28_row_13",
+    "proposal_issue_28_row_14",
+    "proposal_issue_28_row_15",
+    "proposal_issue_28_row_16",
+    "proposal_issue_28_row_17",
+    "proposal_issue_28_row_18",
+    "proposal_issue_28_row_19",
+    "proposal_issue_28_row_2",
+    "proposal_issue_28_row_21",
+    "proposal_issue_28_row_22",
+    "proposal_issue_28_row_23",
+    "proposal_issue_28_row_24",
+    "proposal_issue_28_row_25",
+    "proposal_issue_28_row_26",
+    "proposal_issue_28_row_27",
+    "proposal_issue_28_row_28",
+    "proposal_issue_28_row_29",
+    "proposal_issue_28_row_3",
+    "proposal_issue_28_row_30",
+    "proposal_issue_28_row_31",
+    "proposal_issue_28_row_32",
+    "proposal_issue_28_row_33",
+    "proposal_issue_28_row_34",
+    "proposal_issue_28_row_35",
+    "proposal_issue_28_row_36",
+    "proposal_issue_28_row_38",
+    "proposal_issue_28_row_39",
+    "proposal_issue_28_row_4",
+    "proposal_issue_28_row_40",
+    "proposal_issue_28_row_41",
+    "proposal_issue_28_row_42",
+    "proposal_issue_28_row_43",
+    "proposal_issue_28_row_44",
+    "proposal_issue_28_row_45",
+    "proposal_issue_28_row_46",
+    "proposal_issue_28_row_47",
+    "proposal_issue_28_row_48",
+    "proposal_issue_28_row_49",
+    "proposal_issue_28_row_5",
+    "proposal_issue_28_row_50",
+    "proposal_issue_28_row_51",
+    "proposal_issue_28_row_52",
+    "proposal_issue_28_row_53",
+    "proposal_issue_28_row_54",
+    "proposal_issue_28_row_55",
+    "proposal_issue_28_row_56",
+    "proposal_issue_28_row_57",
+    "proposal_issue_28_row_58",
+    "proposal_issue_28_row_59",
+    "proposal_issue_28_row_6",
+    "proposal_issue_28_row_60",
+    "proposal_issue_28_row_61",
+    "proposal_issue_28_row_62",
+    "proposal_issue_28_row_63",
+    "proposal_issue_28_row_64",
+    "proposal_issue_28_row_65",
+    "proposal_issue_28_row_66",
+    "proposal_issue_28_row_67",
+    "proposal_issue_28_row_68",
+    "proposal_issue_28_row_69",
+    "proposal_issue_28_row_7",
+    "proposal_issue_28_row_70",
+    "proposal_issue_28_row_71",
+    "proposal_issue_28_row_72",
+    "proposal_issue_28_row_73",
+    "proposal_issue_28_row_74",
+    "proposal_issue_28_row_75",
+    "proposal_issue_28_row_76",
+    "proposal_issue_28_row_77",
+    "proposal_issue_28_row_78",
+    "proposal_issue_28_row_79",
+    "proposal_issue_28_row_8",
+    "proposal_issue_28_row_80",
+    "proposal_issue_28_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_28_row_41",
+        "proposal_issue_28_row_50",
+        "proposal_issue_28_row_67",
+        "proposal_issue_28_row_68",
+        "proposal_issue_28_row_76",
+        "proposal_issue_28_row_78"
+      ],
+      "reason": "投稿中的系所名称以“研究院”结尾,可能不是当前学院的下级机构",
+      "source_domains": [
+        "hias.ucas.ac.cn",
+        "people.ucas.ac.cn",
+        "people.ucas.edu.cn"
+      ],
+      "submitted": {
+        "department": "杭州高等研究院",
+        "school": "智能科学与技术学院",
+        "university": "国科大杭州高等研究院"
+      },
+      "target_organization_id": "org_auto_12ca4006b0c12fd5c7ed"
+    },
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_28_row_51",
+        "proposal_issue_28_row_80"
+      ],
+      "reason": "投稿中的系所名称以“研究院”结尾,可能不是当前学院的下级机构",
+      "source_domains": [
+        "hias.ucas.ac.cn",
+        "people.ucas.edu.cn"
+      ],
+      "submitted": {
+        "department": "国科大杭州高等研究院",
+        "school": "智能科学与技术学院",
+        "university": "国科大杭州高等研究院"
+      },
+      "target_organization_id": "org_auto_12ca4006b0c12fd5c7ed"
+    }
+  ],
+  "pull_request_number": 29,
+  "rejected_proposal_ids": [
+    "proposal_issue_28_row_20",
+    "proposal_issue_28_row_37",
+    "proposal_issue_28_row_81",
+    "proposal_issue_28_row_82"
+  ],
+  "review_comment_id": 5237286378,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
