@@ -4,6 +4,11 @@
   const LEVELS = ["university", "school", "department"];
   const SCHOOL_TYPES = new Set(["school", "institute"]);
   const COMPACT_DECISION_ENCODING = "shared_levels_v1";
+  // Automatic placement requires explicit name evidence. Shared discipline words
+  // alone do not prove that two colleges are the same organization.
+  const SCHOOL_NAME_MATCH_THRESHOLD = 95;
+  const SCHOOL_AUTO_MATCH_THRESHOLD = 95;
+  const SIBLING_NAME_MATCH_THRESHOLD = 95;
 
   function normalizeOrganizationName(value) {
     return String(value || "")
@@ -15,6 +20,230 @@
 
   function compactOrganizationName(value) {
     return normalizeOrganizationName(value).replace(/[-—–_/:：|]/gu, "");
+  }
+
+  function stripSchoolLevelSuffix(value) {
+    return String(value || "").replace(/(?:学院|研究院)$/u, "");
+  }
+
+  function mixedOrganizationCount(value) {
+    return String(value || "")
+      .normalize("NFKC")
+      .split(/[,，、;；]+/u)
+      .map((part) => part.trim())
+      .filter((part) => /(?:学院|研究院|研究所)$/u.test(part)).length;
+  }
+
+  function schoolNameVariants(value, contextNames = []) {
+    const raw = String(value || "").normalize("NFKC").toLocaleLowerCase().trim();
+    const parts = raw
+      .split(/[\s/\\|>›→,，;；、·•・()（）[\]【】_-]+/u)
+      .map(compactOrganizationName)
+      .filter(Boolean);
+    const contexts = contextNames.map(compactOrganizationName).filter(Boolean);
+    const variants = new Set([compactOrganizationName(raw), ...parts]);
+    for (const candidate of [...variants]) {
+      for (const context of contexts) {
+        if (candidate.startsWith(context) && candidate.length > context.length) {
+          variants.add(candidate.slice(context.length));
+        }
+      }
+    }
+    for (const candidate of [...variants]) {
+      const stem = stripSchoolLevelSuffix(candidate);
+      if (stem) {
+        variants.add(stem);
+      }
+    }
+    return [...variants].filter(Boolean);
+  }
+
+  function commonPrefixLength(first, second) {
+    const maximum = Math.min(first.length, second.length);
+    let length = 0;
+    while (length < maximum && first[length] === second[length]) {
+      length += 1;
+    }
+    return length;
+  }
+
+  function bigramDiceScore(first, second) {
+    if (first.length < 2 || second.length < 2) {
+      return 0;
+    }
+    const counts = new Map();
+    for (let index = 0; index < first.length - 1; index += 1) {
+      const value = first.slice(index, index + 2);
+      counts.set(value, (counts.get(value) || 0) + 1);
+    }
+    let overlap = 0;
+    for (let index = 0; index < second.length - 1; index += 1) {
+      const value = second.slice(index, index + 2);
+      const count = counts.get(value) || 0;
+      if (count > 0) {
+        overlap += 1;
+        counts.set(value, count - 1);
+      }
+    }
+    return (2 * overlap) / (first.length + second.length - 2);
+  }
+
+  function schoolOrganizationNameScore(first, second, contextNames = []) {
+    const firstVariants = schoolNameVariants(first, contextNames);
+    const secondVariants = schoolNameVariants(second, contextNames);
+    let score = 0;
+    for (const firstVariant of firstVariants) {
+      for (const secondVariant of secondVariants) {
+        if (firstVariant === secondVariant) {
+          score = Math.max(score, 100);
+          continue;
+        }
+        const firstStem = stripSchoolLevelSuffix(firstVariant);
+        const secondStem = stripSchoolLevelSuffix(secondVariant);
+        if (!firstStem || !secondStem) {
+          continue;
+        }
+        if (firstStem === secondStem) {
+          score = Math.max(score, 96);
+          continue;
+        }
+        const shorterLength = Math.min(firstStem.length, secondStem.length);
+        const longerLength = Math.max(firstStem.length, secondStem.length);
+        if (
+          shorterLength >= 2 &&
+          (firstStem.includes(secondStem) || secondStem.includes(firstStem))
+        ) {
+          const coverage = shorterLength / longerLength;
+          score = Math.max(
+            score,
+            shorterLength === 2 ? 72 : Math.round(82 + coverage * 8),
+          );
+        }
+        const prefixLength = commonPrefixLength(firstStem, secondStem);
+        if (prefixLength >= 2 && prefixLength / shorterLength >= 0.6) {
+          score = Math.max(
+            score,
+            Math.round(60 + (prefixLength / shorterLength) * 18),
+          );
+        }
+        const dice = bigramDiceScore(firstStem, secondStem);
+        if (prefixLength >= 2 && dice >= 0.58) {
+          score = Math.max(score, Math.round(58 + dice * 25));
+        }
+      }
+    }
+    return Math.min(score, 100);
+  }
+
+  function parentOrganizationNameMatch(submitted) {
+    const score = schoolOrganizationNameScore(
+      submitted?.school,
+      submitted?.department,
+      [submitted?.university],
+    );
+    if (score < SCHOOL_NAME_MATCH_THRESHOLD) {
+      return null;
+    }
+    return {
+      score,
+      confidence: score >= 90 ? "high" : "review",
+      reason:
+        score >= 90
+          ? "名称与当前学院相同或只是写法不同。"
+          : "名称与当前学院较为接近。",
+    };
+  }
+
+  function schoolOrganizationCandidateMatch(
+    submittedName,
+    organizations,
+    contextNames = [],
+  ) {
+    const candidates = (organizations || [])
+      .filter((organization) => SCHOOL_TYPES.has(organization?.type))
+      .map((organization) => {
+        const names = [organization.canonical_name, ...(organization.aliases || [])]
+          .filter(Boolean);
+        const score = Math.max(
+          0,
+          ...names.map((name) =>
+            schoolOrganizationNameScore(submittedName, name, contextNames),
+          ),
+        );
+        return { organization, score };
+      })
+      .filter(({ score }) => score >= SCHOOL_AUTO_MATCH_THRESHOLD)
+      .sort(
+        (first, second) =>
+          second.score - first.score ||
+          String(first.organization.canonical_name).localeCompare(
+            String(second.organization.canonical_name),
+            "zh-CN",
+          ),
+      );
+    if (!candidates.length || candidates[0].score === candidates[1]?.score) {
+      return null;
+    }
+    return candidates[0];
+  }
+
+  function identitySchoolEvidence(rows, organizations) {
+    const organizationById = new Map(
+      (organizations || [])
+        .filter((organization) => typeof organization?.id === "string")
+        .map((organization) => [organization.id, organization]),
+    );
+    const votes = new Map();
+    let evidenceRows = 0;
+    for (const row of rows || []) {
+      if (row?.identity?.requires_resolution !== true) {
+        continue;
+      }
+      const schoolIds = new Set();
+      for (const affiliation of row.identity.mentor?.affiliations || []) {
+        if (affiliation?.status !== "current") {
+          continue;
+        }
+        const organization = organizationById.get(affiliation.organization_id);
+        if (!organization) {
+          continue;
+        }
+        const school = [...(organization.lineage_ids || [organization.id])]
+          .reverse()
+          .map((organizationId) => organizationById.get(organizationId))
+          .find((candidate) => SCHOOL_TYPES.has(candidate?.type));
+        if (school) {
+          schoolIds.add(school.id);
+        }
+      }
+      if (schoolIds.size !== 1) {
+        continue;
+      }
+      const [schoolId] = schoolIds;
+      evidenceRows += 1;
+      votes.set(schoolId, (votes.get(schoolId) || 0) + 1);
+    }
+    const ranked = [...votes.entries()].sort(
+      ([firstId, firstVotes], [secondId, secondVotes]) =>
+        secondVotes - firstVotes || firstId.localeCompare(secondId),
+    );
+    if (!ranked.length) {
+      return null;
+    }
+    const [organizationId, topVotes] = ranked[0];
+    const secondVotes = ranked[1]?.[1] || 0;
+    if (
+      topVotes < 2 ||
+      topVotes === secondVotes ||
+      topVotes / evidenceRows < 0.75
+    ) {
+      return null;
+    }
+    return {
+      organization: organizationById.get(organizationId),
+      votes: topVotes,
+      evidenceRows,
+    };
   }
 
   function organizationSearchTokens(value) {
@@ -124,6 +353,17 @@
         reason: String(suggestion.reason || "已找到对应机构。"),
       };
     }
+    if (mixedOrganizationCount(department) > 1) {
+      return {
+        kind: "mixed_organizations",
+        action: "reject_group",
+        correctionKind:
+          correctionKindForDepartment(department, school) || "custom",
+        confidence: "review",
+        title: "不收录这组",
+        reason: "系所字段混合了多个机构，无法确定唯一归属。",
+      };
+    }
     if (schoolKey && departmentKey === schoolKey) {
       return {
         kind: "same_as_parent",
@@ -134,18 +374,15 @@
         reason: "与学院同名，无需重复建立。",
       };
     }
-    if (
-      schoolKey &&
-      departmentKey.length > schoolKey.length &&
-      departmentKey.endsWith(schoolKey)
-    ) {
+    const parentMatch = parentOrganizationNameMatch(submitted);
+    if (parentMatch) {
       return {
         kind: "parent_name_with_prefix",
         action: "use_parent",
         targetLevel: "school",
-        confidence: "high",
+        confidence: parentMatch.confidence,
         title: `归入「${school}」`,
-        reason: "名称可能只是当前学院的另一种写法。",
+        reason: parentMatch.reason,
       };
     }
     if (
@@ -155,11 +392,11 @@
     ) {
       return {
         kind: "repeated_ancestor",
-        action: "use_parent",
-        targetLevel: "school",
-        confidence: "review",
-        title: "不单独建立这一层",
-        reason: "名称与上级学校重复。",
+        action: "use_ancestor",
+        targetLevel: "university",
+        confidence: departmentKey === universityKey ? "certain" : "high",
+        title: `归入「${university}」`,
+        reason: "名称与学校相同或只是学校名称的另一种写法。",
       };
     }
     if (department.endsWith("研究所")) {
@@ -244,6 +481,130 @@
       return "department_as_school";
     }
     return null;
+  }
+
+  function siblingOrganizationMatch(submitted, organizations) {
+    const kind = correctionKindForDepartment(
+      submitted?.department,
+      submitted?.school,
+    );
+    const expectedType =
+      kind === "department_as_school"
+        ? "school"
+        : kind === "department_as_institute"
+          ? "institute"
+          : null;
+    if (!expectedType) {
+      return null;
+    }
+    const universityKey = compactOrganizationName(submitted?.university);
+    const departmentKey = compactOrganizationName(submitted?.department);
+    if (!universityKey || !departmentKey) {
+      return null;
+    }
+    const schoolKey = compactOrganizationName(submitted?.school);
+    const candidates = (organizations || [])
+      .map((organization) => {
+        if (organization?.type !== expectedType) {
+          return null;
+        }
+        const names = [organization.canonical_name, ...(organization.aliases || [])]
+          .filter(Boolean);
+        const compactNames = names.map(compactOrganizationName).filter(Boolean);
+        const lineage = (organization.lineage_names || [])
+          .map(compactOrganizationName)
+          .filter(Boolean);
+        if (
+          lineage[0] !== universityKey ||
+          (schoolKey && compactNames.includes(schoolKey))
+        ) {
+          return null;
+        }
+        const score = Math.max(
+          0,
+          ...names.map((name) =>
+            schoolOrganizationNameScore(
+              submitted?.department,
+              name,
+              [submitted?.university],
+            ),
+          ),
+        );
+        return score >= SIBLING_NAME_MATCH_THRESHOLD
+          ? { organization, score }
+          : null;
+      })
+      .filter(Boolean)
+      .sort((first, second) => {
+        const firstCanonical =
+          compactOrganizationName(first.organization.canonical_name) === departmentKey ? 1 : 0;
+        const secondCanonical =
+          compactOrganizationName(second.organization.canonical_name) === departmentKey ? 1 : 0;
+        return (
+          second.score - first.score ||
+          secondCanonical - firstCanonical ||
+          (first.organization.lineage_names || []).length -
+            (second.organization.lineage_names || []).length ||
+          String(first.organization.canonical_name).localeCompare(
+            String(second.organization.canonical_name),
+            "zh-CN",
+          )
+        );
+      });
+    return candidates[0] || null;
+  }
+
+  function siblingOrganizationCandidate(submitted, organizations) {
+    return siblingOrganizationMatch(submitted, organizations)?.organization || null;
+  }
+
+  function schoolLevelPlacementDefault(submitted, organizations = []) {
+    const correctionKind = correctionKindForDepartment(
+      submitted?.department,
+      submitted?.school,
+    );
+    if (!correctionKind) {
+      return null;
+    }
+    const submittedDepartment = String(submitted?.department || "").normalize("NFKC").trim();
+    if (mixedOrganizationCount(submittedDepartment) > 1) {
+      return {
+        action: "reject_group",
+        correctionKind,
+        reason: "系所字段混合了多个机构，无法确定唯一归属。",
+      };
+    }
+    const sibling = siblingOrganizationMatch(submitted, organizations);
+    const parent = parentOrganizationNameMatch(submitted);
+    if (parent) {
+      return {
+        action: "use_parent",
+        correctionKind,
+        ...parent,
+      };
+    }
+    if (sibling) {
+      return {
+        action: "use_existing",
+        correctionKind,
+        organization: sibling.organization,
+        score: sibling.score,
+      };
+    }
+    if (parent) {
+      return {
+        action: "use_parent",
+        correctionKind,
+        ...parent,
+      };
+    }
+    return {
+      action: "create_sibling",
+      correctionKind,
+      canonicalName: submittedDepartment,
+      organizationType:
+        correctionKind === "department_as_institute" ? "institute" : "school",
+    };
   }
 
   function organizationTypeForCorrection(kind, canonicalName) {
@@ -429,12 +790,19 @@
     correctionKindForDepartment,
     compactOrganizationName,
     hasOfficialEvidence,
+    identitySchoolEvidence,
     mergeIndependentCreations,
     normalizeOrganizationName,
     organizationTypeForCorrection,
+    parentOrganizationNameMatch,
     pathReviewSuggestion,
     rankOrganizationCandidates,
     rankOrganizationSearchResults,
     requiredSubmittedLevels,
+    schoolOrganizationCandidateMatch,
+    schoolLevelPlacementDefault,
+    schoolOrganizationNameScore,
+    siblingOrganizationCandidate,
+    siblingOrganizationMatch,
   });
 })(globalThis);

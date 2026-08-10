@@ -76,8 +76,15 @@ const state = {
   cards: [],
   workflowTasks: [],
   workflowTaskById: new Map(),
+  workflowNodes: [],
+  workflowRootNodes: [],
+  workflowNodeById: new Map(),
+  workflowNodeIdByTaskId: new Map(),
   workflowFilter: "pending",
   currentWorkflowTaskId: null,
+  currentWorkflowNodeId: null,
+  expandedWorkflowNodeIds: new Set(),
+  workflowSearchQuery: "",
   lastCompletionAt: 0,
 };
 
@@ -103,16 +110,12 @@ const nodes = {
   taskFilterDoneCount: document.querySelector("#task-filter-done-count"),
   taskFilterAll: document.querySelector("#task-filter-all"),
   taskFilterAllCount: document.querySelector("#task-filter-all-count"),
-  taskList: document.querySelector("#review-task-list"),
-  taskStage: document.querySelector("#review-task-stage"),
-  taskEmpty: document.querySelector("#review-task-empty"),
-  organizationsSection: document.querySelector("#organizations-section"),
-  organizationTree: document.querySelector("#organization-tree"),
-  organizationProgress: document.querySelector("#organization-progress"),
-  nextPending: document.querySelector("#next-pending"),
+  treeSearch: document.querySelector("#review-tree-search"),
+  organizationTree: document.querySelector("#review-organization-tree"),
+  taskStage: document.querySelector("#review-node-stage"),
+  taskEmpty: document.querySelector("#review-node-empty"),
+  nodeContent: document.querySelector("#review-node-content"),
   autosaveStatus: document.querySelector("#autosave-status"),
-  groupsSection: document.querySelector("#groups-section"),
-  groups: document.querySelector("#review-groups"),
   emptyReview: document.querySelector("#empty-review"),
   decisionPanel: document.querySelector("#decision-panel"),
   generate: document.querySelector("#generate-decision"),
@@ -231,9 +234,11 @@ function shouldDefaultOrganizationToParent(level, canonicalName, parentCanonical
   if (level !== "department") {
     return false;
   }
-  const normalizedName = normalizeOrganizationName(canonicalName);
   return Boolean(
-    normalizedName && normalizedName === normalizeOrganizationName(parentCanonicalName),
+    MentorReviewLogic.parentOrganizationNameMatch({
+      school: parentCanonicalName,
+      department: canonicalName,
+    }),
   );
 }
 
@@ -276,6 +281,16 @@ function suggestedOrganizations(group) {
     }
   }
   return result;
+}
+
+function identitySchoolEvidenceForDraft(draft) {
+  if (draft.level !== "school") {
+    return null;
+  }
+  const rows = state.manifest.groups
+    .filter((group) => draft.groupIds.has(group.id))
+    .flatMap((group) => group.rows);
+  return MentorReviewLogic.identitySchoolEvidence(rows, state.manifest.organizations);
 }
 
 async function sha256Hex(value) {
@@ -863,6 +878,8 @@ function buildOrganizationDrafts() {
           suggestedOfficialUrl: null,
           restoreExistingId: null,
           hasRestoredState: false,
+          autoMatchedExistingId: null,
+          autoMatchedExistingReason: null,
           editor: null,
         };
         draftByKey.set(key, draft);
@@ -1113,16 +1130,24 @@ function createOrganizationDraftEditor(draft) {
     actionManuallySelected: false,
     organizationTypeManuallySelected: false,
     autoSkippedToParent: false,
+    suggestedSkipToParent: false,
   };
   draft.editor = editor;
 
   action.addEventListener("change", () => {
     editor.actionManuallySelected = true;
     editor.autoSkippedToParent = false;
+    editor.suggestedSkipToParent = false;
+    draft.autoMatchedExistingId = null;
+    draft.autoMatchedExistingReason = null;
     editor.defaultNotice.hidden = true;
     markOrganizationDraftChanged(draft, true);
   });
-  existingInput.addEventListener("change", () => markOrganizationDraftChanged(draft, true));
+  existingInput.addEventListener("change", () => {
+    draft.autoMatchedExistingId = null;
+    draft.autoMatchedExistingReason = null;
+    markOrganizationDraftChanged(draft, true);
+  });
   organizationType.addEventListener("change", () => {
     editor.organizationTypeManuallySelected = true;
     markOrganizationDraftChanged(draft, true);
@@ -1156,22 +1181,15 @@ function renderOrganizationDraftTree(drafts) {
   }
   const sortedChildren = (parentKey) => childrenByParent.get(parentKey) || [];
   const ordered = [];
-  const renderBranch = (draft) => {
+  const prepareBranch = (draft) => {
     ordered.push(draft);
-    const branch = element("div", `organization-branch branch-${draft.level}`);
-    branch.append(createOrganizationDraftEditor(draft).details);
-    const children = sortedChildren(draft.key);
-    if (children.length) {
-      const container = element("div", "organization-children");
-      for (const child of children) {
-        container.append(renderBranch(child));
-      }
-      branch.append(container);
+    createOrganizationDraftEditor(draft);
+    for (const child of sortedChildren(draft.key)) {
+      prepareBranch(child);
     }
-    return branch;
   };
   for (const root of sortedChildren(null)) {
-    nodes.organizationTree.append(renderBranch(root));
+    prepareBranch(root);
   }
   state.organizationDrafts = ordered;
 }
@@ -1677,9 +1695,24 @@ function updateIndependentPanelVisibility(card) {
 
 function createIndependentTargetEditor(card) {
   const group = card.group;
+  const resolvedSuggestion = card.pathSuggestion?.targetId
+    ? {
+        kind:
+          card.pathSuggestion.correctionKind ||
+          group.suggested_path_correction?.kind ||
+          MentorReviewLogic.correctionKindForDepartment(
+            group.submitted.department,
+            group.submitted.school,
+          ) ||
+          "custom",
+        target_organization_id: card.pathSuggestion.targetId,
+        source: card.pathSuggestion.confidence === "certain" ? "history" : "heuristic",
+        reason: card.pathSuggestion.reason,
+      }
+    : group.suggested_path_correction;
   const defaults = MentorReviewLogic.correctionDefaults(
     group.submitted,
-    group.suggested_path_correction,
+    resolvedSuggestion,
   );
   const panel = element("section", "independent-target-panel");
   const groupContext = element("p", "independent-target-context");
@@ -1704,7 +1737,7 @@ function createIndependentTargetEditor(card) {
   const targetControls = element("div", "independent-target-controls");
   const targetAction = createSelect(
     [
-      ["existing", "归入已有机构"],
+      ["existing", "选择已有机构"],
       ["create", "新建机构"],
     ],
     "target-action",
@@ -1716,7 +1749,7 @@ function createIndependentTargetEditor(card) {
     "输入学校、学院或系所",
     `${pathText(group)}的最终归属机构`,
   );
-  targetExistingPanel.append(labeledControl("归属", targetExistingInput));
+  targetExistingPanel.append(labeledControl("最终归属", targetExistingInput));
 
   const targetCreatePanel = element("div", "target-create-panel");
   const targetOrganizationType = createSelect(
@@ -1883,8 +1916,7 @@ function createIndependentTargetEditor(card) {
 function updateGroupCard(card) {
   updateIndependentPanelVisibility(card);
   const rejecting = card.groupAction.value === "reject";
-  card.assignment.hidden =
-    !card.workflowConfirmed && !rejecting && card.mappingMode.value === "standard";
+  card.assignment.hidden = false;
   card.groupReason.hidden = !rejecting;
   if (rejecting) {
     card.assignment.textContent =
@@ -1914,6 +1946,155 @@ function updateGroupCard(card) {
     : `${prefix}：${organizationPathForId(targetId)}${alternate}`;
 }
 
+function pathSuggestionForGroup(group) {
+  const suggestion = MentorReviewLogic.pathReviewSuggestion(
+    group.submitted,
+    group.suggested_path_correction,
+  );
+  if (suggestion?.action === "use_ancestor") {
+    return {
+      ...suggestion,
+      ancestorDraftKey: group.draftKeys?.[suggestion.targetLevel] || null,
+      correctionKind: "custom",
+    };
+  }
+  if (suggestion?.action !== "review_hierarchy") {
+    return suggestion;
+  }
+
+  const identityEvidence = MentorReviewLogic.identitySchoolEvidence(
+    group.rows,
+    state.manifest.organizations,
+  );
+  const identityOrganization = identityEvidence?.organization;
+  const identityUniversity = identityOrganization?.lineage_names?.[0];
+  if (
+    identityOrganization &&
+    MentorReviewLogic.compactOrganizationName(identityUniversity) ===
+      MentorReviewLogic.compactOrganizationName(group.submitted.university)
+  ) {
+    const names = [
+      identityOrganization.canonical_name,
+      ...(identityOrganization.aliases || []),
+    ];
+    const parentScore = Math.max(
+      0,
+      ...names.map((name) =>
+        MentorReviewLogic.schoolOrganizationNameScore(
+          group.submitted.school,
+          name,
+          [group.submitted.university],
+        ),
+      ),
+    );
+    const reason =
+      `现有同邮箱导师中，${identityEvidence.votes} 位的任职指向` +
+      `「${identityOrganization.canonical_name}」。`;
+    if (parentScore >= 95) {
+      return {
+        ...suggestion,
+        action: "use_parent",
+        targetLevel: "school",
+        confidence: "high",
+        title: `归入「${group.submitted.school}」`,
+        reason,
+      };
+    }
+    return {
+      ...suggestion,
+      action: "use_existing",
+      targetId: identityOrganization.id,
+      correctionKind: MentorReviewLogic.correctionKindForDepartment(
+        group.submitted.department,
+        group.submitted.school,
+      ),
+      confidence: "high",
+      title: `移到「${identityOrganization.canonical_name}」`,
+      reason,
+    };
+  }
+
+  const draftByCandidateId = new Map();
+  const draftCandidates = state.organizationDrafts
+    .filter((draft) => draft.level === "school" && draft.key !== group.draftKeys?.school)
+    .map((draft) => {
+      const parent = draft.parentKey
+        ? state.organizationDraftByKey.get(draft.parentKey)
+        : null;
+      const candidate = {
+        id: draft.key,
+        type: draft.editor?.organizationType.value || inferOrganizationType("school", draft.submittedName),
+        canonical_name: draft.submittedName,
+        aliases: [],
+        lineage_names: [parent?.submittedName, draft.submittedName].filter(Boolean),
+      };
+      draftByCandidateId.set(candidate.id, draft);
+      return candidate;
+    });
+  const placement = MentorReviewLogic.schoolLevelPlacementDefault(
+    group.submitted,
+    [...state.manifest.organizations, ...draftCandidates],
+  );
+
+  if (placement?.action === "use_existing") {
+    const siblingDraft = draftByCandidateId.get(placement.organization.id);
+    return {
+      ...suggestion,
+      action: siblingDraft ? "use_sibling_draft" : "use_existing",
+      ...(siblingDraft
+        ? { siblingDraftKey: siblingDraft.key }
+        : { targetId: placement.organization.id }),
+      correctionKind: placement.correctionKind,
+      confidence: "high",
+      title: `移到「${placement.organization.canonical_name}」`,
+      reason:
+        placement.score === 100
+          ? `名称与${siblingDraft ? "本次投稿中的" : "同校已有"}学院一致。`
+          : `名称与${siblingDraft ? "本次投稿中的" : "同校已有"}学院高度相近。`,
+    };
+  }
+
+  if (placement?.action === "use_parent") {
+    return {
+      ...suggestion,
+      action: "use_parent",
+      targetLevel: "school",
+      confidence: placement.confidence,
+      title: `归入「${group.submitted.school}」`,
+      reason: placement.reason,
+    };
+  }
+  if (placement?.action === "reject_group") {
+    return {
+      ...suggestion,
+      action: "reject_group",
+      correctionKind: placement.correctionKind,
+      confidence: "review",
+      title: group.rows.length === 1 ? "不收录这位导师" : "不收录这组",
+      reason: placement.reason,
+    };
+  }
+  return {
+    ...suggestion,
+    action: "create_sibling",
+    correctionKind: placement?.correctionKind,
+    confidence: "review",
+    canonicalName: placement?.canonicalName || group.submitted.department,
+    organizationType: placement?.organizationType || "school",
+    title: `新建「${group.submitted.department}」并迁入`,
+    reason: `名称像学院或研究院，但未找到可信的同名或别名。已预填为${group.submitted.university}直属机构，请核对。`,
+  };
+}
+
+function openGroupRejection(card) {
+  card.groupAction.value = "reject";
+  card.mappingMode.value = "standard";
+  card.advancedDetails.open = true;
+  updateGroupCard(card);
+  markGroupWorkflowChanged(card, "请填写不收录原因。");
+  window.setTimeout(() => card.groupReason.focus(), 0);
+}
+
 function createGroupCard(group) {
   const article = element("article", "review-group");
   const header = element("div", "group-header");
@@ -1927,10 +2108,7 @@ function createGroupCard(group) {
   }
   header.append(titleArea, badges);
 
-  const pathSuggestion = MentorReviewLogic.pathReviewSuggestion(
-    group.submitted,
-    group.suggested_path_correction,
-  );
+  const pathSuggestion = pathSuggestionForGroup(group);
   const requiresPathReview = Boolean(
     pathSuggestion && pathSuggestion.confidence !== "certain",
   );
@@ -1978,7 +2156,7 @@ function createGroupCard(group) {
 
   const ordinaryRows = group.rows.filter((row) => row.identity?.requires_resolution !== true);
   const rowsDetails = element("details", "rows-details");
-  const rowsSummary = element("summary", null, `单独处理导师（${ordinaryRows.length}）`);
+  const rowsSummary = element("summary", null, `逐位调整导师（${ordinaryRows.length}）`);
   const rowsContainer = element("div", "rows-container");
   const loadMoreRows = element("button", "text-button rows-load-more", "继续加载导师");
   loadMoreRows.type = "button";
@@ -2006,7 +2184,7 @@ function createGroupCard(group) {
   };
   const targetPanel = createIndependentTargetEditor(card);
   const advancedDetails = element("details", "group-advanced-details");
-  const advancedSummary = element("summary", null, "其他处理方式");
+  const advancedSummary = element("summary", null, "调整归属或不收录");
   const advancedBody = element("div", "group-advanced-body");
   advancedBody.append(groupControls, targetPanel);
   advancedDetails.append(advancedSummary, advancedBody);
@@ -2026,29 +2204,102 @@ function createGroupCard(group) {
     const keepPath = element("button", "secondary-button compact-button", "保留原层级");
     keepPath.type = "button";
     keepPath.addEventListener("click", () => void keepSubmittedGroupPath(card));
-    quickActions.append(keepPath);
-  } else if (pathSuggestion?.action === "use_existing") {
-    const useExisting = element("button", "primary-button compact-button", "采用已有归属");
-    useExisting.type = "button";
-    card.suggestionActionButton = useExisting;
-    card.suggestionActionLabel = "采用已有归属";
-    useExisting.addEventListener("click", () => void applySuggestedGroupDecision(card));
-    quickActions.append(useExisting);
-    const chooseOther = element("button", "secondary-button compact-button", "改选机构");
+    const chooseOther = element("button", "secondary-button compact-button", "选择其他机构");
     chooseOther.type = "button";
     chooseOther.addEventListener("click", () => openGroupAdjustment(card));
-    quickActions.append(chooseOther);
-  } else if (pathSuggestion?.action === "review_hierarchy") {
-    const useParent = element("button", "secondary-button compact-button", "归入上级");
-    useParent.type = "button";
-    useParent.addEventListener("click", () => void applySuggestedGroupDecision(card, "use_parent"));
-    const keepPath = element("button", "secondary-button compact-button", "保留为下级");
+    const reject = element(
+      "button",
+      "text-button compact-button danger-button",
+      group.rows.length === 1 ? "不收录这位导师" : "不收录这组",
+    );
+    reject.type = "button";
+    reject.addEventListener("click", () => openGroupRejection(card));
+    quickActions.append(chooseOther, keepPath, reject);
+  } else if (pathSuggestion?.action === "reject_group") {
+    const reject = element(
+      "button",
+      "primary-button compact-button",
+      pathSuggestion.title,
+    );
+    reject.type = "button";
+    card.suggestionActionButton = reject;
+    card.suggestionActionLabel = pathSuggestion.title;
+    reject.addEventListener("click", () => void applySuggestedGroupDecision(card));
+    const chooseOther = element("button", "secondary-button compact-button", "选择其他机构");
+    chooseOther.type = "button";
+    chooseOther.addEventListener("click", () => openGroupAdjustment(card));
+    const keepPath = element("button", "secondary-button compact-button", "确为下级系所");
     keepPath.type = "button";
     keepPath.addEventListener("click", () => void keepSubmittedGroupPath(card));
-    const chooseOther = element("button", "secondary-button compact-button", "改选机构");
+    quickActions.append(reject, chooseOther, keepPath);
+  } else if (
+    ["use_existing", "use_sibling_draft", "use_ancestor", "create_sibling"].includes(
+      pathSuggestion?.action,
+    )
+  ) {
+    const useExisting = element(
+      "button",
+      "primary-button compact-button",
+      pathSuggestion.title || "采用已有归属",
+    );
+    useExisting.type = "button";
+    card.suggestionActionButton = useExisting;
+    card.suggestionActionLabel = pathSuggestion.title || "采用已有归属";
+    useExisting.addEventListener("click", () => void applySuggestedGroupDecision(card));
+    quickActions.append(useExisting);
+    const chooseOther = element("button", "secondary-button compact-button", "选择其他机构");
     chooseOther.type = "button";
     chooseOther.addEventListener("click", () => openGroupAdjustment(card));
-    quickActions.append(useParent, keepPath, chooseOther);
+    if (pathSuggestion.action === "create_sibling") {
+      const useParent = element(
+        "button",
+        "secondary-button compact-button",
+        `归入「${group.submitted.school}」`,
+      );
+      useParent.type = "button";
+      useParent.addEventListener("click", () =>
+        void applySuggestedGroupDecision(card, "use_parent"),
+      );
+      quickActions.append(useParent);
+    }
+    const keepPath = element(
+      "button",
+      "secondary-button compact-button",
+      pathSuggestion.action === "create_sibling" ? "确为下级系所" : "保留原层级",
+    );
+    keepPath.type = "button";
+    keepPath.addEventListener("click", () => void keepSubmittedGroupPath(card));
+    quickActions.append(chooseOther, keepPath);
+    const reject = element(
+      "button",
+      "text-button compact-button danger-button",
+      group.rows.length === 1 ? "不收录这位导师" : "不收录这组",
+    );
+    reject.type = "button";
+    reject.addEventListener("click", () => openGroupRejection(card));
+    quickActions.append(reject);
+  } else if (pathSuggestion?.action === "review_hierarchy") {
+    const chooseOther = element(
+      "button",
+      "primary-button compact-button",
+      pathSuggestion.kind === "ambiguous_hierarchy" &&
+        group.submitted.department.endsWith("学院")
+        ? "移到其他学院"
+        : "选择正确机构",
+    );
+    chooseOther.type = "button";
+    chooseOther.addEventListener("click", () => openGroupAdjustment(card));
+    const keepPath = element("button", "secondary-button compact-button", "确为下级系所");
+    keepPath.type = "button";
+    keepPath.addEventListener("click", () => void keepSubmittedGroupPath(card));
+    const reject = element(
+      "button",
+      "text-button compact-button danger-button",
+      group.rows.length === 1 ? "不收录这位导师" : "不收录这组",
+    );
+    reject.type = "button";
+    reject.addEventListener("click", () => openGroupRejection(card));
+    quickActions.append(chooseOther, keepPath, reject);
   }
 
   if (identityRows.length) {
@@ -2126,10 +2377,7 @@ function setGroupTaskStatus(card, message) {
 function markGroupWorkflowChanged(card, message = "修改后请确认。") {
   card.workflowConfirmed = false;
   clearWorkflowCompletion(card);
-  if (
-    state.workflowFilter === "done" &&
-    state.currentWorkflowTaskId === `group:${card.group.id}`
-  ) {
+  if (state.workflowFilter === "done") {
     state.workflowFilter = "all";
   }
   if (card.taskStatus) {
@@ -2175,6 +2423,12 @@ function suggestionClusterKey(card) {
   if (suggestion.action === "use_existing" && suggestion.targetId) {
     return `existing:${suggestion.targetId}`;
   }
+  if (suggestion.action === "use_sibling_draft" && suggestion.siblingDraftKey) {
+    return `sibling:${suggestion.siblingDraftKey}`;
+  }
+  if (suggestion.action === "use_ancestor" && suggestion.ancestorDraftKey) {
+    return `ancestor:${suggestion.ancestorDraftKey}`;
+  }
   if (suggestion.action === "use_parent") {
     return [
       "parent",
@@ -2192,7 +2446,8 @@ function suggestionClusterCards(card) {
   }
   return state.cards.filter(
     (candidate) =>
-      !candidate.workflowConfirmed && suggestionClusterKey(candidate) === key,
+      suggestionClusterKey(candidate) === key &&
+      (candidate === card || !candidate.workflowConfirmed),
   );
 }
 
@@ -2209,27 +2464,75 @@ function updateSuggestionBatchLabels() {
   }
 }
 
-function applySuggestedGroupState(card, forcedAction = null) {
+function configureSuggestedGroupControls(card, forcedAction = null, { manual = false } = {}) {
   const suggestion = card.pathSuggestion;
   const action = forcedAction || suggestion?.action;
   card.groupAction.value = "resolve";
+  let configured = true;
   if (action === "use_existing" && suggestion?.targetId) {
     card.mappingMode.value = "corrected";
     card.targetAction.value = "existing";
-    card.targetExistingInput.selectById(suggestion.targetId);
     card.mappingReason.value = suggestion.reason;
-  } else {
+    configured = card.targetExistingInput.selectById(suggestion.targetId);
+  } else if (action === "use_sibling_draft" && suggestion?.siblingDraftKey) {
+    const siblingDraft = state.organizationDraftByKey.get(suggestion.siblingDraftKey);
+    card.mappingMode.value = "corrected";
+    card.targetAction.value = "existing";
+    card.mappingReason.value = suggestion.reason;
+    configured = Boolean(
+      siblingDraft?.targetId && card.targetExistingInput.selectById(siblingDraft.targetId),
+    );
+  } else if (action === "use_ancestor" && suggestion?.ancestorDraftKey) {
+    const ancestorDraft = state.organizationDraftByKey.get(suggestion.ancestorDraftKey);
+    card.mappingMode.value = "corrected";
+    card.targetAction.value = "existing";
+    card.mappingReason.value = suggestion.reason;
+    configured = Boolean(
+      ancestorDraft?.targetId && card.targetExistingInput.selectById(ancestorDraft.targetId),
+    );
+  } else if (action === "create_sibling") {
+    card.mappingMode.value = "corrected";
+    card.targetAction.value = "create";
+    card.targetOrganizationType.value = suggestion.organizationType;
+    card.targetCanonicalName.value = suggestion.canonicalName;
+    card.targetParentMode.value = "group";
+    card.mappingReason.value = suggestion.reason;
+    card.targetTypeManuallySelected = false;
+  } else if (action === "reject_group") {
+    card.groupAction.value = "reject";
+    card.mappingMode.value = "standard";
+    card.groupReason.value = suggestion.reason;
+  } else if (action === "use_parent") {
     card.mappingMode.value = "standard";
     const departmentDraft = state.organizationDraftByKey.get(
       card.group.draftKeys?.department,
     );
     if (departmentDraft) {
       departmentDraft.editor.action.value = "skip";
-      departmentDraft.editor.actionManuallySelected = true;
+      departmentDraft.editor.actionManuallySelected = manual;
       departmentDraft.editor.autoSkippedToParent = false;
+      departmentDraft.editor.suggestedSkipToParent = !manual;
       departmentDraft.confirmed = true;
       departmentDraft.editor.error.hidden = true;
+      departmentDraft.editor.defaultNotice.textContent = "已默认归入上级";
+      departmentDraft.editor.defaultNotice.hidden = manual;
     }
+  } else {
+    configured = false;
+  }
+  updateGroupCard(card);
+  return configured;
+}
+
+function applySuggestedGroupState(card, forcedAction = null) {
+  const configured = configureSuggestedGroupControls(card, forcedAction, { manual: true });
+  if (!configured) {
+    card.workflowConfirmed = false;
+    clearWorkflowCompletion(card);
+    card.advancedDetails.open = true;
+    updateIndependentPanelVisibility(card);
+    setGroupTaskStatus(card, "请确认最终归属。");
+    return false;
   }
   card.workflowConfirmed = !card.group.rows.some(
     (row) => row.identity?.requires_resolution === true,
@@ -2245,6 +2548,28 @@ function applySuggestedGroupState(card, forcedAction = null) {
       ? ""
       : "继续确认任职。",
   );
+  return true;
+}
+
+function applyInitialPathSuggestions() {
+  let changed = false;
+  for (const card of state.cards) {
+    if (!card.pathSuggestion) {
+      continue;
+    }
+    const configured = configureSuggestedGroupControls(card);
+    if (!configured) {
+      card.workflowConfirmed = false;
+      clearWorkflowCompletion(card);
+      setGroupTaskStatus(card, "请确认最终归属。");
+      continue;
+    }
+    changed = true;
+  }
+  if (changed) {
+    state.autosaveDirty = true;
+  }
+  return changed;
 }
 
 async function applySuggestedGroupDecision(card, forcedAction = null) {
@@ -2269,6 +2594,7 @@ async function keepSubmittedGroupPath(card) {
     departmentDraft.editor.action.value = "create";
     departmentDraft.editor.actionManuallySelected = true;
     departmentDraft.editor.autoSkippedToParent = false;
+    departmentDraft.editor.suggestedSkipToParent = false;
     departmentDraft.confirmed = false;
   }
   card.workflowConfirmed = !card.group.rows.some(
@@ -2293,24 +2619,23 @@ async function keepSubmittedGroupPath(card) {
 }
 
 function openGroupAdjustment(card) {
+  card.groupAction.value = "resolve";
   card.mappingMode.value = "corrected";
   card.targetAction.value = "existing";
-  card.workflowConfirmed = false;
   card.advancedDetails.open = true;
-  updateIndependentPanelVisibility(card);
-  setGroupTaskStatus(card, "请选择归属并填写依据。");
-  scheduleReviewUpdate();
+  updateGroupCard(card);
+  markGroupWorkflowChanged(card, "请选择归属并填写依据。");
   window.setTimeout(() => card.targetExistingInput.focus(), 0);
 }
 
-async function confirmGroupWorkflowTask(card) {
+async function confirmGroupWorkflowTask(card, { advance = true } = {}) {
   card.taskStatus.classList.remove("error");
   if (card.groupAction.value === "reject" && !card.groupReason.value.trim()) {
     card.taskStatus.textContent = "请填写不收录这组导师的原因。";
     card.taskStatus.classList.add("error");
     card.advancedDetails.open = true;
     card.groupReason.focus();
-    return;
+    return false;
   }
   if (card.mappingMode.value !== "standard") {
     const error = await updateIndependentTargetCard(card, true);
@@ -2318,21 +2643,24 @@ async function confirmGroupWorkflowTask(card) {
       card.taskStatus.textContent = error;
       card.taskStatus.classList.add("error");
       card.advancedDetails.open = true;
-      return;
+      return false;
     }
   }
   const identityError = identityReviewError(card);
   if (identityError) {
     card.taskStatus.textContent = identityError;
     card.taskStatus.classList.add("error");
-    return;
+    return false;
   }
   card.workflowConfirmed = true;
   markWorkflowCompleted(card);
   setGroupTaskStatus(card, "");
   state.autosaveDirty = true;
   await updateOrganizationDrafts();
-  focusNextWorkflowTask();
+  if (advance) {
+    focusNextWorkflowTask();
+  }
+  return true;
 }
 
 function groupWorkflowValidationError(card) {
@@ -2463,149 +2791,375 @@ function buildWorkflowTasks() {
   return tasks;
 }
 
-function taskMatchesFilter(task) {
-  const status = workflowTaskStatus(task);
+function workflowNodeIdForDraft(draft) {
+  return `node:${draft.key}`;
+}
+
+function buildWorkflowNodes() {
+  const nodeByDraftKey = new Map();
+  const nodeById = new Map();
+  const taskNodeIds = new Map();
+  for (const draft of state.organizationDrafts) {
+    const node = {
+      id: workflowNodeIdForDraft(draft),
+      name: draft.submittedName,
+      level: draft.level,
+      draft,
+      parent: null,
+      children: [],
+      cards: [],
+      tasks: [],
+      pathNames: [],
+      searchText: "",
+      pendingTasks: [],
+      completedAt: null,
+      subtreeCompletedAt: null,
+      subtreePendingNodes: 0,
+      subtreePendingTasks: 0,
+      subtreeDoneNodes: 0,
+      sortIndex: 0,
+      directVisible: false,
+      treeVisible: false,
+    };
+    nodeByDraftKey.set(draft.key, node);
+    nodeById.set(node.id, node);
+  }
+
+  const roots = [];
+  for (const node of nodeById.values()) {
+    const parent = node.draft?.parentKey
+      ? nodeByDraftKey.get(node.draft.parentKey) || null
+      : null;
+    node.parent = parent;
+    if (parent) {
+      parent.children.push(node);
+    } else {
+      roots.push(node);
+    }
+    const task = state.workflowTaskById.get(`organization:${node.draft.key}`);
+    if (task) {
+      node.tasks.push(task);
+      taskNodeIds.set(task.id, node.id);
+    }
+  }
+
+  for (const card of state.cards) {
+    const draftKey = [...LEVELS]
+      .reverse()
+      .map((level) => card.group.draftKeys?.[level])
+      .find((key) => key && nodeByDraftKey.has(key));
+    let node = draftKey ? nodeByDraftKey.get(draftKey) : null;
+    if (!node) {
+      const submittedPath = LEVELS.map((level) => card.group.submitted[level]).filter(Boolean);
+      node = {
+        id: `node:group:${card.group.id}`,
+        name: submittedPath.at(-1) || "未填写机构",
+        level: submittedPath.length >= 3 ? "department" : submittedPath.length === 2 ? "school" : "university",
+        draft: null,
+        parent: null,
+        children: [],
+        cards: [],
+        tasks: [],
+        pathNames: submittedPath,
+        searchText: "",
+        pendingTasks: [],
+        completedAt: null,
+        subtreeCompletedAt: null,
+        subtreePendingNodes: 0,
+        subtreePendingTasks: 0,
+        subtreeDoneNodes: 0,
+        sortIndex: 0,
+        directVisible: false,
+        treeVisible: false,
+      };
+      roots.push(node);
+      nodeById.set(node.id, node);
+    }
+    node.cards.push(card);
+    const task = state.workflowTaskById.get(`group:${card.group.id}`);
+    if (task) {
+      node.tasks.push(task);
+      taskNodeIds.set(task.id, node.id);
+    }
+  }
+
+  const sortNodes = (nodesToSort) => {
+    nodesToSort.sort(
+      (first, second) =>
+        first.name.localeCompare(second.name, "zh-CN") || first.id.localeCompare(second.id),
+    );
+    for (const node of nodesToSort) {
+      sortNodes(node.children);
+    }
+  };
+  sortNodes(roots);
+
+  const ordered = [];
+  const prepareNode = (node) => {
+    node.tasks.sort((first, second) => first.phase - second.phase || first.id.localeCompare(second.id));
+    if (!node.pathNames.length) {
+      const names = [];
+      let current = node;
+      while (current) {
+        names.unshift(current.name);
+        current = current.parent;
+      }
+      node.pathNames = names;
+    }
+    const mentorValues = node.cards.flatMap((card) =>
+      card.group.rows.flatMap((row) => [row.name, row.email, row.title || ""]),
+    );
+    node.searchText = [
+      ...node.pathNames,
+      node.draft?.submittedName || "",
+      ...mentorValues,
+    ]
+      .join(" ")
+      .normalize("NFKC")
+      .toLocaleLowerCase();
+    node.sortIndex = ordered.length;
+    ordered.push(node);
+    for (const child of node.children) {
+      prepareNode(child);
+    }
+  };
+  for (const root of roots) {
+    prepareNode(root);
+  }
+
+  const updateStats = (node) => {
+    node.pendingTasks = node.tasks.filter(
+      (task) => workflowTaskStatus(task) === "pending",
+    );
+    node.completedAt = Math.max(
+      0,
+      ...node.tasks.map((task) => task.completedAt || 0),
+    ) || null;
+    node.subtreePendingNodes = node.pendingTasks.length ? 1 : 0;
+    node.subtreePendingTasks = node.pendingTasks.length;
+    node.subtreeDoneNodes = node.tasks.length && !node.pendingTasks.length ? 1 : 0;
+    node.subtreeCompletedAt = node.completedAt;
+    for (const child of node.children) {
+      updateStats(child);
+      node.subtreePendingNodes += child.subtreePendingNodes;
+      node.subtreePendingTasks += child.subtreePendingTasks;
+      node.subtreeDoneNodes += child.subtreeDoneNodes;
+      node.subtreeCompletedAt = Math.max(
+        node.subtreeCompletedAt || 0,
+        child.subtreeCompletedAt || 0,
+      ) || null;
+    }
+  };
+  for (const root of roots) {
+    updateStats(root);
+  }
+  return { ordered, roots, nodeById, taskNodeIds };
+}
+
+function workflowNodeMatchesFilter(node) {
+  if (!node.tasks.length) {
+    return false;
+  }
   if (state.workflowFilter === "pending") {
-    return status === "pending";
+    return node.pendingTasks.length > 0;
   }
   if (state.workflowFilter === "done") {
-    return status === "done";
+    return node.pendingTasks.length === 0;
   }
   return true;
 }
 
-function visibleWorkflowTasks() {
-  const visible = state.workflowTasks.filter(taskMatchesFilter);
+function workflowSearchTokens() {
+  return state.workflowSearchQuery
+    .normalize("NFKC")
+    .toLocaleLowerCase()
+    .split(/\s+/u)
+    .map((token) => token.trim())
+    .filter(Boolean);
+}
+
+function workflowNodeMatchesSearch(node, tokens = workflowSearchTokens()) {
+  return !tokens.length || tokens.every((token) => node.searchText.includes(token));
+}
+
+function updateWorkflowTreeVisibility() {
+  const tokens = workflowSearchTokens();
+  const visit = (node) => {
+    node.directVisible = workflowNodeMatchesFilter(node) && workflowNodeMatchesSearch(node, tokens);
+    let childVisible = false;
+    for (const child of node.children) {
+      childVisible = visit(child) || childVisible;
+    }
+    node.treeVisible = node.directVisible || childVisible;
+    return node.treeVisible;
+  };
+  for (const root of state.workflowRootNodes) {
+    visit(root);
+  }
+}
+
+function visibleWorkflowNodes() {
+  const visible = state.workflowNodes.filter((node) => node.directVisible);
   if (state.workflowFilter !== "done") {
     return visible;
   }
   return visible.sort(
     (first, second) =>
       (second.completedAt || 0) - (first.completedAt || 0) ||
-      compareWorkflowTaskPath(first, second),
+      first.sortIndex - second.sortIndex,
   );
 }
 
-function setWorkflowFilter(filter) {
-  state.workflowFilter = filter;
-  state.currentWorkflowTaskId = null;
-  refreshWorkflowTasks();
-}
-
-function selectWorkflowTask(taskId, { focus = true } = {}) {
-  const task = state.workflowTaskById.get(taskId);
-  if (!task) {
-    return;
-  }
-  state.currentWorkflowTaskId = taskId;
-  renderWorkflowTask(task);
-  renderWorkflowTaskList();
-  if (focus) {
-    nodes.taskStage.focus({ preventScroll: true });
+function expandWorkflowNodePath(node) {
+  let current = node;
+  while (current) {
+    state.expandedWorkflowNodeIds.add(current.id);
+    current = current.parent;
   }
 }
 
-function renderWorkflowTask(task) {
-  nodes.taskEmpty.hidden = Boolean(task);
-  nodes.organizationsSection.hidden = !task || task.kind !== "organization";
-  nodes.groupsSection.hidden = !task || task.kind !== "group";
-  if (!task) {
-    nodes.workflowPosition.textContent = "当前没有项目";
-    nodes.previousTask.disabled = true;
-    nodes.confirmTask.disabled = true;
-    nodes.confirmTask.textContent = "确认并继续";
-    nodes.nextTask.disabled = true;
-    return;
+function workflowChildrenForDisplay(node) {
+  const visible = node.children.filter((child) => child.treeVisible);
+  if (state.workflowFilter !== "done") {
+    return visible;
   }
-  if (task.kind === "organization") {
-    if (nodes.groups.childElementCount) {
-      nodes.groups.replaceChildren();
-    }
-    if (
-      nodes.organizationTree.childElementCount !== 1 ||
-      nodes.organizationTree.firstElementChild !== task.element
-    ) {
-      nodes.organizationTree.replaceChildren(task.element);
-    }
-    task.element.open = true;
-  } else {
-    if (nodes.organizationTree.childElementCount) {
-      nodes.organizationTree.replaceChildren();
-    }
-    if (
-      nodes.groups.childElementCount !== 1 ||
-      nodes.groups.firstElementChild !== task.element
-    ) {
-      nodes.groups.replaceChildren(task.element);
-    }
-  }
-  const visible = visibleWorkflowTasks();
-  const index = visible.findIndex((item) => item.id === task.id);
-  const pending = workflowTaskStatus(task) === "pending";
-  nodes.workflowPosition.textContent = `${Math.max(index + 1, 1)} / ${visible.length}`;
-  nodes.previousTask.disabled = index <= 0;
-  nodes.confirmTask.disabled = !pending;
-  nodes.confirmTask.textContent = pending ? "确认并继续" : "已确认";
-  nodes.nextTask.disabled = index < 0 || index >= visible.length - 1;
-  nodes.nextTask.textContent = pending ? "暂时跳过" : "下一项";
+  return visible.sort(
+    (first, second) =>
+      (second.subtreeCompletedAt || 0) - (first.subtreeCompletedAt || 0) ||
+      first.name.localeCompare(second.name, "zh-CN"),
+  );
 }
 
-function renderWorkflowTaskList() {
-  const visible = visibleWorkflowTasks();
-  nodes.taskList.replaceChildren();
+function formatCompletionTime(value) {
+  return new Intl.DateTimeFormat("zh-CN", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: false,
+  }).format(new Date(value));
+}
+
+function renderWorkflowTree() {
+  nodes.organizationTree.replaceChildren();
   let selectedButton = null;
-  let previousSection = null;
-  for (const task of visible) {
-    if (state.workflowFilter !== "done" && task.sectionLabel !== previousSection) {
-      nodes.taskList.append(
-        element("div", "review-task-section-label", task.sectionLabel || "未填写学校"),
-      );
-      previousSection = task.sectionLabel;
+  const searchActive = Boolean(workflowSearchTokens().length);
+  const renderBranch = (node, depth) => {
+    const item = element("li", `review-tree-item tree-level-${node.level}`);
+    item.setAttribute("role", "treeitem");
+    item.setAttribute("aria-level", String(depth));
+    item.setAttribute("aria-selected", String(node.id === state.currentWorkflowNodeId));
+    const children = workflowChildrenForDisplay(node);
+    const expanded = searchActive || state.expandedWorkflowNodeIds.has(node.id);
+    if (children.length) {
+      item.setAttribute("aria-expanded", String(expanded));
     }
-    const button = element("button", "review-task-item");
+    const row = element("div", "review-tree-row");
+    if (children.length) {
+      const toggle = element("button", "review-tree-toggle", "›");
+      toggle.type = "button";
+      toggle.setAttribute("aria-label", `${expanded ? "折叠" : "展开"}${node.name}`);
+      toggle.setAttribute("aria-expanded", String(expanded));
+      if (expanded) {
+        toggle.dataset.expanded = "true";
+      }
+      toggle.addEventListener("click", () => {
+        if (state.expandedWorkflowNodeIds.has(node.id)) {
+          state.expandedWorkflowNodeIds.delete(node.id);
+        } else {
+          state.expandedWorkflowNodeIds.add(node.id);
+        }
+        renderWorkflowTree();
+      });
+      row.append(toggle);
+    } else {
+      row.append(element("span", "review-tree-toggle-spacer"));
+    }
+
+    const button = element("button", "review-tree-node");
     button.type = "button";
-    button.dataset.status = workflowTaskStatus(task);
-    button.setAttribute("aria-current", String(task.id === state.currentWorkflowTaskId));
-    const top = element("span", "review-task-item-top");
-    top.append(element("span", "review-task-kind", task.label));
-    if (state.workflowFilter === "all") {
-      top.append(
-        element(
-          "span",
-          "review-task-state",
-          workflowTaskStatus(task) === "pending" ? "待处理" : "已处理",
-        ),
-      );
-    }
-    if (state.workflowFilter === "done" && task.completedAt) {
-      top.append(
-        element(
-          "span",
-          "review-task-time",
-          new Intl.DateTimeFormat("zh-CN", {
-            hour: "2-digit",
-            minute: "2-digit",
-            second: "2-digit",
-            hour12: false,
-          }).format(new Date(task.completedAt)),
-        ),
-      );
-    }
-    const subtitle =
+    button.dataset.status =
       state.workflowFilter === "done"
-        ? [task.sectionLabel, task.subtitle].filter(Boolean).join(" · ")
-        : task.subtitle;
-    button.append(
-      top,
-      element("strong", null, task.title),
-      element("span", "review-task-subtitle", subtitle),
+        ? "done"
+        : node.pendingTasks.length || node.subtreePendingNodes
+          ? "pending"
+          : "done";
+    button.setAttribute("aria-current", String(node.id === state.currentWorkflowNodeId));
+    const identity = element("span", "review-tree-node-identity");
+    identity.append(
+      element(
+        "span",
+        "review-tree-node-level",
+        { university: "学校", school: "学院", department: "系所" }[node.level],
+      ),
+      element("strong", null, node.name),
     );
-    button.addEventListener("click", () => selectWorkflowTask(task.id));
-    nodes.taskList.append(button);
-    if (task.id === state.currentWorkflowTaskId) {
+    const details = element("span", "review-tree-node-details");
+    const mentorCount = node.draft?.rowCount ||
+      node.cards.reduce((total, card) => total + card.group.rows.length, 0);
+    if (mentorCount) {
+      details.append(element("span", null, `${mentorCount} 位导师`));
+    }
+    if (state.workflowFilter === "done" && node.completedAt) {
+      details.append(element("time", null, formatCompletionTime(node.completedAt)));
+    }
+    const hasPendingDescendants =
+      node.subtreePendingNodes > (node.pendingTasks.length ? 1 : 0);
+    const pendingLabel =
+      state.workflowFilter === "done"
+        ? node.directVisible && node.subtreeDoneNodes === 1
+          ? "完成"
+          : `${node.subtreeDoneNodes} 个`
+        : hasPendingDescendants
+          ? `${node.subtreePendingNodes} 处`
+          : node.pendingTasks.length
+            ? `${node.pendingTasks.length} 项`
+            : "完成";
+    details.append(element("span", "review-tree-node-status", pendingLabel));
+    button.append(identity, details);
+    button.addEventListener("click", () => selectWorkflowNode(node.id));
+    row.append(button);
+    item.append(row);
+    if (children.length && expanded) {
+      const group = element("ul", "review-tree-group");
+      group.setAttribute("role", "group");
+      for (const child of children) {
+        group.append(renderBranch(child, depth + 1));
+      }
+      item.append(group);
+    }
+    if (node.id === state.currentWorkflowNodeId) {
       selectedButton = button;
     }
+    return item;
+  };
+
+  const roots = state.workflowRootNodes
+    .filter((root) => root.treeVisible)
+    .sort((first, second) => {
+      if (state.workflowFilter === "done") {
+        const recentOrder =
+          (second.subtreeCompletedAt || 0) - (first.subtreeCompletedAt || 0);
+        if (recentOrder) {
+          return recentOrder;
+        }
+      }
+      return first.name.localeCompare(second.name, "zh-CN");
+    });
+  if (!roots.length) {
+    const empty = element(
+      "p",
+      "review-tree-empty",
+      state.workflowSearchQuery ? "没有匹配的机构或导师" : "当前没有机构节点",
+    );
+    nodes.organizationTree.append(empty);
+    return;
   }
+  const list = element("ul", "review-tree-list");
+  list.setAttribute("role", "group");
+  for (const root of roots) {
+    list.append(renderBranch(root, 1));
+  }
+  nodes.organizationTree.append(list);
   if (selectedButton) {
     window.requestAnimationFrame(() => {
       if (selectedButton.isConnected) {
@@ -2615,14 +3169,215 @@ function renderWorkflowTaskList() {
   }
 }
 
+function workbenchSection(title, detail, content, status) {
+  const section = element("section", "node-workbench-section");
+  section.dataset.status = status;
+  const heading = element("header", "node-workbench-section-heading");
+  const copy = element("div");
+  copy.append(element("h3", null, title));
+  if (detail) {
+    copy.append(element("p", null, detail));
+  }
+  heading.append(
+    copy,
+    element(
+      "span",
+      "node-workbench-section-status",
+      status === "pending" ? "待处理" : "已处理",
+    ),
+  );
+  section.append(heading, content);
+  return section;
+}
+
+function revealWorkflowMentorMatch(node) {
+  document
+    .querySelectorAll(".has-tree-search-match")
+    .forEach((matched) => matched.classList.remove("has-tree-search-match"));
+  const tokens = workflowSearchTokens();
+  if (!tokens.length) {
+    return;
+  }
+  for (const card of node.cards) {
+    const row = card.group.rows.find((candidate) => {
+      const searchText = [candidate.name, candidate.email, candidate.title || ""]
+        .join(" ")
+        .normalize("NFKC")
+        .toLocaleLowerCase();
+      return tokens.every((token) => searchText.includes(token));
+    });
+    if (!row) {
+      continue;
+    }
+    if (card.rowsDetails) {
+      card.rowsDetails.open = true;
+    }
+    let editor = state.rowEditorByProposalId.get(row.proposal_id);
+    while (
+      !editor &&
+      card.loadMoreRows &&
+      card.renderedRowCount < card.ordinaryRowCount
+    ) {
+      card.loadMoreRows();
+      editor = state.rowEditorByProposalId.get(row.proposal_id);
+    }
+    if (editor) {
+      editor.wrapper.classList.add("has-tree-search-match");
+      window.requestAnimationFrame(() => {
+        if (editor.wrapper.isConnected) {
+          editor.wrapper.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      });
+    }
+    return;
+  }
+}
+
+function renderWorkflowNode(node) {
+  const activeControl = nodes.taskStage.contains(document.activeElement)
+    ? document.activeElement
+    : null;
+  const selection =
+    activeControl instanceof HTMLInputElement || activeControl instanceof HTMLTextAreaElement
+      ? [activeControl.selectionStart, activeControl.selectionEnd]
+      : null;
+  nodes.taskEmpty.hidden = Boolean(node);
+  nodes.nodeContent.replaceChildren();
+  if (!node) {
+    nodes.workflowPosition.textContent = "当前没有节点";
+    nodes.previousTask.disabled = true;
+    nodes.confirmTask.disabled = true;
+    nodes.confirmTask.textContent = "确认此节点并继续";
+    nodes.nextTask.disabled = true;
+    return;
+  }
+
+  const header = element("header", "review-node-header");
+  const headingCopy = element("div", "review-node-heading-copy");
+  headingCopy.append(
+    element("span", "review-node-eyebrow", "投稿路径"),
+    element("h2", null, node.name),
+    element("p", "review-node-breadcrumb", node.pathNames.join(" / ")),
+  );
+  const summary = element("div", "review-node-summary");
+  summary.append(
+    element(
+      "span",
+      "review-node-level-badge",
+      { university: "学校", school: "学院", department: "系所" }[node.level],
+    ),
+    element(
+      "strong",
+      node.pendingTasks.length ? "pending" : "done",
+      node.pendingTasks.length ? `${node.pendingTasks.length} 项待处理` : "已处理",
+    ),
+  );
+  header.append(headingCopy, summary);
+  nodes.nodeContent.append(header);
+
+  const organizationTask = node.tasks.find((task) => task.kind === "organization");
+  if (organizationTask) {
+    organizationTask.element.open = true;
+    nodes.nodeContent.append(
+      workbenchSection(
+        "机构信息",
+        "确认名称、类型和官网",
+        organizationTask.element,
+        workflowTaskStatus(organizationTask),
+      ),
+    );
+  }
+  for (const task of node.tasks.filter((candidate) => candidate.kind === "group")) {
+    const identityCount = task.card.group.rows.filter(
+      (row) => row.identity?.requires_resolution === true,
+    ).length;
+    const sectionTitle = task.card.pathSuggestion
+      ? "归属与导师"
+      : identityCount
+        ? "任职与导师"
+        : "导师";
+    nodes.nodeContent.append(
+      workbenchSection(
+        sectionTitle,
+        `${task.card.group.rows.length} 位导师${identityCount ? ` · ${identityCount} 项任职待判断` : ""}`,
+        task.element,
+        workflowTaskStatus(task),
+      ),
+    );
+  }
+  if (!node.tasks.length) {
+    nodes.nodeContent.append(
+      element("p", "review-node-context-note", "请从下级节点继续审核。"),
+    );
+  }
+  revealWorkflowMentorMatch(node);
+
+  const visible = visibleWorkflowNodes();
+  const index = visible.findIndex((item) => item.id === node.id);
+  nodes.workflowPosition.textContent =
+    index >= 0 ? `${index + 1} / ${visible.length} 个节点` : "层级节点";
+  nodes.previousTask.disabled = index <= 0;
+  nodes.confirmTask.disabled = node.pendingTasks.length === 0;
+  nodes.confirmTask.textContent = node.pendingTasks.length
+    ? "确认此节点并继续"
+    : "此节点已确认";
+  nodes.nextTask.disabled = index < 0 || index >= visible.length - 1;
+  nodes.nextTask.textContent = node.pendingTasks.length ? "暂时跳过" : "下一个";
+  if (activeControl?.isConnected) {
+    activeControl.focus({ preventScroll: true });
+    if (selection && typeof activeControl.setSelectionRange === "function") {
+      activeControl.setSelectionRange(selection[0], selection[1]);
+    }
+  }
+}
+
+function setWorkflowFilter(filter) {
+  state.workflowFilter = filter;
+  state.currentWorkflowTaskId = null;
+  state.currentWorkflowNodeId = null;
+  refreshWorkflowTasks();
+}
+
+function selectWorkflowNode(nodeId, { focus = true, preferredTaskId = null } = {}) {
+  const node = state.workflowNodeById.get(nodeId);
+  if (!node) {
+    return;
+  }
+  if (state.workflowSearchQuery && !workflowNodeMatchesSearch(node)) {
+    state.workflowSearchQuery = "";
+    nodes.treeSearch.value = "";
+    updateWorkflowTreeVisibility();
+  }
+  state.currentWorkflowNodeId = node.id;
+  const preferred = node.tasks.find((task) => task.id === preferredTaskId);
+  state.currentWorkflowTaskId =
+    preferred?.id || node.pendingTasks[0]?.id || node.tasks[0]?.id || null;
+  expandWorkflowNodePath(node);
+  renderWorkflowTree();
+  renderWorkflowNode(node);
+  if (focus) {
+    nodes.taskStage.focus({ preventScroll: true });
+  }
+}
+
+function selectWorkflowTask(taskId, { focus = true } = {}) {
+  const nodeId = state.workflowNodeIdByTaskId.get(taskId);
+  if (nodeId) {
+    selectWorkflowNode(nodeId, { focus, preferredTaskId: taskId });
+  }
+}
+
 function updateWorkflowProgress() {
-  const pending = state.workflowTasks.filter(
+  const pendingTasks = state.workflowTasks.filter(
     (task) => workflowTaskStatus(task) === "pending",
   ).length;
-  nodes.workflowPendingCount.textContent = String(pending);
-  nodes.generate.disabled = pending > 0;
-  nodes.generate.textContent = pending
-    ? `还有 ${pending} 项未处理`
+  const pendingNodes = state.workflowNodes.filter(
+    (node) => node.pendingTasks.length > 0,
+  ).length;
+  nodes.workflowPendingCount.textContent = String(pendingNodes);
+  nodes.generate.disabled = pendingTasks > 0;
+  nodes.generate.textContent = pendingTasks
+    ? `还有 ${pendingNodes} 个节点待处理`
     : "生成审核评论";
 }
 
@@ -2630,13 +3385,21 @@ function refreshWorkflowTasks() {
   updateSuggestionBatchLabels();
   state.workflowTasks = buildWorkflowTasks();
   state.workflowTaskById = new Map(state.workflowTasks.map((task) => [task.id, task]));
-  const pendingCount = state.workflowTasks.filter(
-    (task) => workflowTaskStatus(task) === "pending",
+  const tree = buildWorkflowNodes();
+  state.workflowNodes = tree.ordered;
+  state.workflowRootNodes = tree.roots;
+  state.workflowNodeById = tree.nodeById;
+  state.workflowNodeIdByTaskId = tree.taskNodeIds;
+  updateWorkflowTreeVisibility();
+
+  const pendingCount = state.workflowNodes.filter((node) => node.pendingTasks.length).length;
+  const doneCount = state.workflowNodes.filter(
+    (node) => node.tasks.length && !node.pendingTasks.length,
   ).length;
-  const doneCount = state.workflowTasks.length - pendingCount;
+  const allCount = state.workflowNodes.filter((node) => node.tasks.length).length;
   nodes.taskFilterPendingCount.textContent = String(pendingCount);
   nodes.taskFilterDoneCount.textContent = String(doneCount);
-  nodes.taskFilterAllCount.textContent = String(state.workflowTasks.length);
+  nodes.taskFilterAllCount.textContent = String(allCount);
   for (const [button, filter] of [
     [nodes.taskFilterPending, "pending"],
     [nodes.taskFilterDone, "done"],
@@ -2644,53 +3407,80 @@ function refreshWorkflowTasks() {
   ]) {
     button.setAttribute("aria-selected", String(state.workflowFilter === filter));
   }
-  let visible = visibleWorkflowTasks();
-  let current = state.workflowTaskById.get(state.currentWorkflowTaskId);
-  if (!current || !visible.some((task) => task.id === current.id)) {
+
+  const visible = visibleWorkflowNodes();
+  let current = state.workflowNodeById.get(state.currentWorkflowNodeId);
+  if (!current || !visible.some((node) => node.id === current.id)) {
     current = visible[0] || null;
-    state.currentWorkflowTaskId = current?.id || null;
+    state.currentWorkflowNodeId = current?.id || null;
   }
-  renderWorkflowTaskList();
-  renderWorkflowTask(current);
+  if (current) {
+    expandWorkflowNodePath(current);
+    if (!current.tasks.some((task) => task.id === state.currentWorkflowTaskId)) {
+      state.currentWorkflowTaskId = current.pendingTasks[0]?.id || current.tasks[0]?.id || null;
+    }
+  } else {
+    state.currentWorkflowTaskId = null;
+  }
+  renderWorkflowTree();
+  renderWorkflowNode(current);
   updateWorkflowProgress();
 }
 
-function focusNextWorkflowTask() {
+function focusNextWorkflowTask(afterNodeId = state.currentWorkflowNodeId) {
+  const previousIndex = state.workflowNodeById.get(afterNodeId)?.sortIndex ?? -1;
   refreshWorkflowTasks();
-  const pending = state.workflowTasks.filter(
-    (task) => workflowTaskStatus(task) === "pending",
-  );
+  const pending = state.workflowNodes.filter((node) => node.pendingTasks.length > 0);
   if (!pending.length) {
     state.workflowFilter = "done";
+    state.currentWorkflowNodeId = null;
     refreshWorkflowTasks();
     nodes.decisionPanel.scrollIntoView({ behavior: "smooth", block: "start" });
     nodes.generate.focus({ preventScroll: true });
     return;
   }
   state.workflowFilter = "pending";
-  state.currentWorkflowTaskId = pending[0].id;
-  refreshWorkflowTasks();
+  updateWorkflowTreeVisibility();
+  const sameNode = state.workflowNodeById.get(afterNodeId);
+  const target =
+    (sameNode?.pendingTasks.length ? sameNode : null) ||
+    pending.find((node) => node.sortIndex > previousIndex) ||
+    pending[0];
+  selectWorkflowNode(target.id);
+  updateWorkflowProgress();
 }
 
 function moveWorkflowTask(offset) {
-  const visible = visibleWorkflowTasks();
-  const index = visible.findIndex((task) => task.id === state.currentWorkflowTaskId);
+  const visible = visibleWorkflowNodes();
+  const index = visible.findIndex((node) => node.id === state.currentWorkflowNodeId);
   const target = visible[index + offset];
   if (target) {
-    selectWorkflowTask(target.id);
+    selectWorkflowNode(target.id);
   }
 }
 
 async function confirmCurrentWorkflowTask() {
-  const task = state.workflowTaskById.get(state.currentWorkflowTaskId);
-  if (!task || workflowTaskStatus(task) !== "pending") {
+  const node = state.workflowNodeById.get(state.currentWorkflowNodeId);
+  if (!node?.pendingTasks.length) {
     return;
   }
-  if (task.kind === "organization") {
-    await confirmOrganizationDraft(task.draft);
-  } else {
-    await confirmGroupWorkflowTask(task.card);
+  const nodeId = node.id;
+  const taskIds = node.pendingTasks.map((task) => task.id);
+  for (const taskId of taskIds) {
+    const task = state.workflowTaskById.get(taskId);
+    if (!task || workflowTaskStatus(task) !== "pending") {
+      continue;
+    }
+    const confirmed =
+      task.kind === "organization"
+        ? await confirmOrganizationDraft(task.draft, { advance: false })
+        : await confirmGroupWorkflowTask(task.card, { advance: false });
+    if (!confirmed) {
+      selectWorkflowTask(taskId, { focus: false });
+      return;
+    }
   }
+  focusNextWorkflowTask(nodeId);
 }
 
 function draftIsActive(draft) {
@@ -2707,10 +3497,7 @@ function markOrganizationDraftChanged(draft, affectsIdentity = false) {
     clearWorkflowCompletion(affected);
     affected.editor.error.hidden = true;
   }
-  if (
-    state.workflowFilter === "done" &&
-    state.currentWorkflowTaskId === `organization:${draft.key}`
-  ) {
+  if (state.workflowFilter === "done") {
     state.workflowFilter = "all";
   }
   if (affectsIdentity) {
@@ -3138,7 +3925,35 @@ async function updateOrganizationDrafts() {
     if (!draft.initialized && (draft.level === "university" || parentId)) {
       let initialExistingId = draft.restoreExistingId;
       if (!initialExistingId && !draft.hasRestoredState) {
+        draft.autoMatchedExistingId = null;
+        draft.autoMatchedExistingReason = null;
         initialExistingId = findExactOrganization(draft.level, parentId, draft.submittedName);
+        if (!initialExistingId && draft.level === "school") {
+          const identityEvidence = identitySchoolEvidenceForDraft(draft);
+          if (
+            identityEvidence &&
+            organizationsForLevel(draft.level, parentId).some(
+              (organization) => organization.id === identityEvidence.organization.id,
+            )
+          ) {
+            initialExistingId = identityEvidence.organization.id;
+            draft.autoMatchedExistingId = initialExistingId;
+            draft.autoMatchedExistingReason = "identity";
+          }
+        }
+        if (!initialExistingId && draft.level === "school") {
+          const parentOrganization = state.selectableOrganizationById.get(parentId);
+          const matched = MentorReviewLogic.schoolOrganizationCandidateMatch(
+            draft.submittedName,
+            organizationsForLevel(draft.level, parentId),
+            parentOrganization?.lineage_names || [parentOrganization?.canonical_name],
+          );
+          if (matched) {
+            initialExistingId = matched.organization.id;
+            draft.autoMatchedExistingId = initialExistingId;
+            draft.autoMatchedExistingReason = "name";
+          }
+        }
         if (initialExistingId) {
           editor.action.value = "existing";
           draft.confirmed = true;
@@ -3157,6 +3972,18 @@ async function updateOrganizationDrafts() {
 
     editor.reuseNotice.hidden = true;
     editor.defaultNotice.hidden = true;
+    if (
+      draft.autoMatchedExistingId &&
+      editor.action.value === "existing" &&
+      editor.existingInput.selectedId === draft.autoMatchedExistingId
+    ) {
+      const matched = state.organizationById.get(draft.autoMatchedExistingId);
+      editor.defaultNotice.textContent =
+        draft.autoMatchedExistingReason === "identity"
+          ? `同邮箱导师的现有任职指向「${matched?.canonical_name || draft.submittedName}」，已预选`
+          : `名称明确匹配「${matched?.canonical_name || draft.submittedName}」，已预选`;
+      editor.defaultNotice.hidden = false;
+    }
     if (!draft.forcedSkip && editor.action.value === "create") {
       const exactExistingId = findExactOrganization(
         draft.level,
@@ -3187,7 +4014,11 @@ async function updateOrganizationDrafts() {
         editor.canonicalName.value,
         parentCanonicalName,
       );
-    if (shouldAutoSkip) {
+    if (editor.suggestedSkipToParent && editor.action.value === "skip") {
+      editor.autoSkippedToParent = false;
+      editor.defaultNotice.textContent = "已按审核证据预选归入上级";
+      editor.defaultNotice.hidden = false;
+    } else if (shouldAutoSkip) {
       if (editor.action.value !== "skip") {
         editor.action.value = "skip";
         draft.confirmed = true;
@@ -3275,7 +4106,6 @@ async function updateOrganizationDrafts() {
   for (const editor of state.rowEditors) {
     updateIdentityResolutionState(editor);
   }
-  updateOrganizationProgress();
   refreshWorkflowTasks();
   if (state.autosaveDirty) {
     state.autosaveDirty = false;
@@ -3289,40 +4119,12 @@ function pendingOrganizationDrafts() {
   );
 }
 
-function updateOrganizationProgress() {
-  const active = state.organizationDrafts.filter(
-    (draft) => draftIsActive(draft) && !draft.forcedSkip,
-  );
-  const pending = active.filter((draft) => !draft.confirmed);
-  nodes.organizationProgress.textContent = pending.length
-    ? `还有 ${pending.length} 个机构待处理`
-    : `已处理 ${active.length} 个机构`;
-  nodes.nextPending.disabled = pending.length === 0;
-  nodes.nextPending.textContent = pending.length ? "处理下一个机构" : "机构已全部处理";
-}
-
-function focusNextPending(afterDraft = null) {
-  const pending = pendingOrganizationDrafts();
-  if (!pending.length) {
-    return;
-  }
-  let target = pending[0];
-  if (afterDraft) {
-    const afterIndex = state.organizationDrafts.indexOf(afterDraft);
-    target =
-      pending.find((draft) => state.organizationDrafts.indexOf(draft) > afterIndex) || pending[0];
-  }
-  target.editor.details.open = true;
-  target.editor.details.scrollIntoView({ behavior: "smooth", block: "center" });
-  target.editor.summary.focus({ preventScroll: true });
-}
-
-async function confirmOrganizationDraft(draft) {
+async function confirmOrganizationDraft(draft, { advance = true } = {}) {
   await updateOrganizationDrafts();
   const message = showDraftValidation(draft);
   if (message) {
     draft.editor.details.open = true;
-    return;
+    return false;
   }
   draft.confirmed = true;
   markWorkflowCompleted(draft);
@@ -3331,7 +4133,10 @@ async function confirmOrganizationDraft(draft) {
   draft.editor.details.classList.remove("has-error");
   draft.editor.details.open = false;
   await updateOrganizationDrafts();
-  focusNextWorkflowTask();
+  if (advance) {
+    focusNextWorkflowTask();
+  }
+  return true;
 }
 
 let reviewUpdateTimer = null;
@@ -3481,6 +4286,7 @@ function restoreReviewDraft() {
     draft.editor.actionManuallySelected = true;
     draft.editor.organizationTypeManuallySelected = true;
     draft.editor.autoSkippedToParent = false;
+    draft.editor.suggestedSkipToParent = false;
     draft.restoreExistingId = storedText(value.existing_id, 80) || null;
     draft.hasRestoredState = true;
     draft.initialized = false;
@@ -3973,9 +4779,12 @@ async function collectDecision() {
   );
   if (pendingWorkflowTasks.length) {
     state.workflowFilter = "pending";
-    state.currentWorkflowTaskId = pendingWorkflowTasks[0].id;
     refreshWorkflowTasks();
-    throw new Error(`还有 ${pendingWorkflowTasks.length} 项需要处理`);
+    selectWorkflowTask(pendingWorkflowTasks[0].id, { focus: false });
+    const pendingNodeCount = state.workflowNodes.filter(
+      (node) => node.pendingTasks.length > 0,
+    ).length;
+    throw new Error(`还有 ${pendingNodeCount} 个节点需要处理`);
   }
   const pending = pendingOrganizationDrafts();
   if (pending.length) {
@@ -4408,10 +5217,12 @@ async function loadReview() {
         const card = createGroupCard(group);
         state.cards.push(card);
         state.groupCardById.set(group.id, card);
-        nodes.groups.append(card.article);
       }
       const restored = restoreReviewDraft();
       await updateOrganizationDrafts();
+      if (!restored && applyInitialPathSuggestions()) {
+        await updateOrganizationDrafts();
+      }
       const pending = pendingOrganizationDrafts();
       for (const draft of state.organizationDrafts) {
         if (!draftIsActive(draft) || draft.confirmed) {
@@ -4433,10 +5244,13 @@ async function loadReview() {
 
 nodes.generate.addEventListener("click", () => void generateDecision());
 nodes.copyOpen.addEventListener("click", () => void copyAndOpenPullRequest());
-nodes.nextPending.addEventListener("click", () => focusNextWorkflowTask());
 nodes.taskFilterPending.addEventListener("click", () => setWorkflowFilter("pending"));
 nodes.taskFilterDone.addEventListener("click", () => setWorkflowFilter("done"));
 nodes.taskFilterAll.addEventListener("click", () => setWorkflowFilter("all"));
+nodes.treeSearch.addEventListener("input", () => {
+  state.workflowSearchQuery = nodes.treeSearch.value.trim();
+  refreshWorkflowTasks();
+});
 nodes.previousTask.addEventListener("click", () => moveWorkflowTask(-1));
 nodes.confirmTask.addEventListener("click", () => void confirmCurrentWorkflowTask());
 nodes.nextTask.addEventListener("click", () => moveWorkflowTask(1));

@@ -9,7 +9,7 @@
     />
     <meta name="referrer" content="no-referrer" />
     <title>投稿审核 · AutoEmailSender 社区导师库</title>
-    <link rel="stylesheet" href="styles.css?v=7" />
+    <link rel="stylesheet" href="styles.css?v=8" />
   </head>
   <body class="review-page">
     <a class="skip-link" href="#review-workspace">跳到审核内容</a>
@@ -63,48 +63,49 @@
         <p id="autosave-status" class="autosave-status" aria-live="polite"></p>
 
         <div class="review-workspace-grid">
-          <nav class="review-task-rail" aria-label="审核事项">
-            <div class="task-filter" role="tablist" aria-label="筛选审核事项">
+          <nav class="review-tree-rail" aria-label="投稿机构树">
+            <div class="tree-filter" role="tablist" aria-label="筛选机构节点">
               <button id="task-filter-pending" type="button" role="tab" aria-selected="true">
                 待处理 <span id="task-filter-pending-count">0</span>
               </button>
               <button id="task-filter-done" type="button" role="tab" aria-selected="false">
-                最近处理 <span id="task-filter-done-count">0</span>
+                最近 <span id="task-filter-done-count">0</span>
               </button>
               <button id="task-filter-all" type="button" role="tab" aria-selected="false">
                 全部 <span id="task-filter-all-count">0</span>
               </button>
             </div>
-            <div id="review-task-list" class="review-task-list"></div>
+            <label class="review-tree-search" for="review-tree-search">
+              <span class="sr-only">搜索机构或导师</span>
+              <input
+                id="review-tree-search"
+                type="search"
+                placeholder="搜索机构或导师"
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </label>
+            <div
+              id="review-organization-tree"
+              class="review-organization-tree"
+              role="tree"
+              aria-label="投稿机构树"
+            ></div>
           </nav>
 
-          <div class="review-task-main">
-            <section id="review-task-stage" class="review-task-stage" aria-live="polite" tabindex="-1">
-              <div id="review-task-empty" class="review-task-empty" hidden>
-                <h3>已处理完</h3>
+          <div class="review-node-main">
+            <section id="review-node-stage" class="review-node-stage" aria-live="polite" tabindex="-1">
+              <div id="review-node-empty" class="review-node-empty" hidden>
+                <h3>当前没有节点</h3>
               </div>
-
-              <section id="organizations-section" class="organizations-section" hidden>
-                <div class="task-section-heading" hidden>
-                  <h2>确认机构</h2>
-                  <div class="review-progress-actions" hidden>
-                    <span id="organization-progress" class="organization-progress">—</span>
-                    <button id="next-pending" class="secondary-button" type="button">处理下一项</button>
-                  </div>
-                </div>
-                <div id="organization-tree" class="organization-tree"></div>
-              </section>
-
-              <section id="groups-section" class="groups-section" hidden>
-                <div id="review-groups" class="review-groups"></div>
-              </section>
+              <div id="review-node-content" class="review-node-content"></div>
             </section>
 
             <footer class="review-workflow-bar">
-              <button id="previous-review-task" class="secondary-button" type="button">上一项</button>
+              <button id="previous-review-task" class="secondary-button" type="button">上一个</button>
               <p id="workflow-position" aria-live="polite">—</p>
-              <button id="confirm-review-task" class="primary-button" type="button">确认并继续</button>
-              <button id="next-review-task" class="secondary-button" type="button">下一项</button>
+              <button id="confirm-review-task" class="primary-button" type="button">确认此节点并继续</button>
+              <button id="next-review-task" class="secondary-button" type="button">下一个</button>
             </footer>
           </div>
         </div>
@@ -131,7 +132,7 @@
       </section>
 
     </main>
-    <script src="review-logic.js?v=7" defer></script>
-    <script src="review.js?v=7" defer></script>
+    <script src="review-logic.js?v=8" defer></script>
+    <script src="review.js?v=8" defer></script>
   </body>
 </html>
