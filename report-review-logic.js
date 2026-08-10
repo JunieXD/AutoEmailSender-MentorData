@@ -23,6 +23,40 @@
       .find((email) => !current.has(email)) || "";
   }
 
+  function decodeGitHubFile(file, expectedPath, maximumBytes) {
+    if (
+      !file ||
+      file.type !== "file" ||
+      file.path !== expectedPath ||
+      file.encoding !== "base64" ||
+      !Number.isSafeInteger(file.size) ||
+      file.size <= 0 ||
+      file.size > maximumBytes ||
+      typeof file.content !== "string"
+    ) {
+      throw new Error("GitHub 返回的反馈提案文件信息不正确");
+    }
+    const encoded = file.content.replace(/\s/gu, "");
+    if (
+      encoded.length === 0 ||
+      encoded.length % 4 !== 0 ||
+      !/^[A-Za-z0-9+/]*={0,2}$/u.test(encoded)
+    ) {
+      throw new Error("GitHub 返回的反馈提案不是有效的 Base64 文件");
+    }
+    let binary;
+    try {
+      binary = scope.atob(encoded);
+    } catch {
+      throw new Error("GitHub 返回的反馈提案不是有效的 Base64 文件");
+    }
+    const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+    if (bytes.byteLength !== file.size || bytes.byteLength > maximumBytes) {
+      throw new Error("GitHub 返回的反馈提案文件大小不一致");
+    }
+    return bytes.buffer;
+  }
+
   function observedAt(value) {
     const candidate = value ? new Date(value) : new Date();
     if (Number.isNaN(candidate.getTime())) {
@@ -126,6 +160,7 @@
     buildContacts,
     buildNames,
     buildProfiles,
+    decodeGitHubFile,
     extractEmails,
     observedAt,
     suggestedEmail,

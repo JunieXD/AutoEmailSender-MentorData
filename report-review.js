@@ -573,17 +573,25 @@ async function loadReview() {
       throw new Error("该 PR 不是开放的内部信息反馈分支");
     }
     const issueNumber = Number(branchMatch[1]);
+    const proposalPath = `reports/pending/issue-${issueNumber}.json`;
     const proposalUrl =
-      `https://raw.githubusercontent.com/${REPOSITORY}/${pull.head.sha}` +
-      `/reports/pending/issue-${issueNumber}.json`;
-    const proposalResponse = await fetch(proposalUrl, { cache: "no-store" });
+      `https://api.github.com/repos/${REPOSITORY}/contents/${proposalPath}` +
+      `?ref=${encodeURIComponent(pull.head.sha)}`;
+    let proposalResponse;
+    try {
+      proposalResponse = await fetch(proposalUrl, { cache: "no-store" });
+    } catch {
+      throw new Error("无法连接 GitHub API 读取反馈提案，请检查网络后重试");
+    }
     if (!proposalResponse.ok) {
       throw new Error(`无法读取反馈提案（GitHub 返回 ${proposalResponse.status}）`);
     }
-    const proposalBuffer = await proposalResponse.arrayBuffer();
-    if (proposalBuffer.byteLength === 0 || proposalBuffer.byteLength > MAX_PROPOSAL_BYTES) {
-      throw new Error("反馈提案为空或超过页面处理上限");
-    }
+    const proposalFile = await proposalResponse.json();
+    const proposalBuffer = MentorReportReviewLogic.decodeGitHubFile(
+      proposalFile,
+      proposalPath,
+      MAX_PROPOSAL_BYTES,
+    );
     const proposal = JSON.parse(
       new TextDecoder("utf-8", { fatal: true }).decode(proposalBuffer),
     );
