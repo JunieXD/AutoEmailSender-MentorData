@@ -14,6 +14,7 @@ from mentor_data.errors import SubmissionError
 from mentor_data.github_events import GitHubActor, load_issue_event
 from mentor_data.io_utils import load_json, load_yaml, write_yaml_atomic
 from mentor_data.organization_review import (
+    COMPACT_REVIEW_ENCODING,
     GITHUB_COMMENT_CHARACTER_LIMIT,
     REVIEW_COMMENT_MARKER,
     _parse_review_comment_payload,
@@ -2433,6 +2434,69 @@ def test_review_comment_accepts_github_crlf_line_endings(tmp_path: Path) -> None
     comment, _ = _review_context(root, tmp_path, decision, line_ending="\r\n")
 
     assert comment.decision == decision
+
+
+def test_review_comment_expands_shared_organization_levels(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    shared_levels = [
+        _existing("university", "org_example_university"),
+        _existing("school", "org_example_cs"),
+        _skip("department"),
+    ]
+    compact_decision = {
+        "schema_version": 1,
+        "kind": "batch_organization_review_decision",
+        "encoding": COMPACT_REVIEW_ENCODING,
+        "pull_request_number": 88,
+        "issue_number": 30,
+        "manifest_sha256": "a" * 64,
+        "level_decisions": shared_levels,
+        "decisions": [
+            {
+                "group_id": f"org_group_{index:016x}",
+                "action": "resolve",
+                "reason": None,
+                "level_refs": [0, 1, 2],
+                "row_overrides": [],
+            }
+            for index in range(2)
+        ],
+    }
+
+    comment, _ = _review_context(root, tmp_path, compact_decision)
+
+    assert "encoding" not in comment.decision
+    assert "level_decisions" not in comment.decision
+    assert comment.decision["organization_creations"] == []
+    assert [item["levels"] for item in comment.decision["decisions"]] == [
+        shared_levels,
+        shared_levels,
+    ]
+
+
+def test_review_comment_rejects_invalid_shared_level_reference(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    compact_decision = {
+        "schema_version": 1,
+        "kind": "batch_organization_review_decision",
+        "encoding": COMPACT_REVIEW_ENCODING,
+        "pull_request_number": 88,
+        "issue_number": 30,
+        "manifest_sha256": "a" * 64,
+        "level_decisions": [_skip("department")],
+        "decisions": [
+            {
+                "group_id": "org_group_0000000000000000",
+                "action": "resolve",
+                "reason": None,
+                "level_refs": [1],
+                "row_overrides": [],
+            }
+        ],
+    }
+
+    with pytest.raises(SubmissionError, match="共享机构层级引用越界"):
+        _review_context(root, tmp_path, compact_decision)
 
 
 def test_review_comment_enforces_github_character_limit() -> None:

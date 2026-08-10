@@ -253,3 +253,71 @@ test("独立新建机构去重合并域名并报告未使用项", () => {
   const unused = logic.mergeIndependentCreations([base], new Set());
   assert.deepEqual(Array.from(unused.unusedIds), [base.organization_id]);
 });
+
+test("审核评论复用重复机构层级并保持原决策不变", () => {
+  const levels = [
+    {
+      level: "university",
+      action: "existing",
+      organization_id: "org_example_university",
+      organization_type: null,
+      canonical_name: null,
+      official_url: null,
+      approved_domains: [],
+      save_submitted_as_alias: false,
+    },
+    {
+      level: "school",
+      action: "existing",
+      organization_id: "org_example_school",
+      organization_type: null,
+      canonical_name: null,
+      official_url: null,
+      approved_domains: [],
+      save_submitted_as_alias: false,
+    },
+    {
+      level: "department",
+      action: "skip",
+      organization_id: null,
+      organization_type: null,
+      canonical_name: null,
+      official_url: null,
+      approved_domains: [],
+      save_submitted_as_alias: false,
+    },
+  ];
+  const decision = {
+    schema_version: 1,
+    kind: "batch_organization_review_decision",
+    pull_request_number: 27,
+    issue_number: 26,
+    manifest_sha256: "a".repeat(64),
+    organization_creations: [],
+    decisions: Array.from({ length: 12 }, (_, index) => ({
+      group_id: `org_group_${index.toString(16).padStart(16, "0")}`,
+      action: "resolve",
+      reason: null,
+      levels,
+      target_organization_id: null,
+      mapping_kind: "standard",
+      mapping_reason: null,
+      save_path_correction: false,
+      row_overrides: [],
+      identity_resolutions: [],
+    })),
+  };
+  const originalJson = JSON.stringify(decision);
+  const compact = JSON.parse(
+    JSON.stringify(logic.compactDecisionForComment(decision)),
+  );
+  const compactJson = JSON.stringify(compact);
+
+  assert.equal(compact.encoding, "shared_levels_v1");
+  assert.equal(compact.level_decisions.length, 3);
+  assert.equal(Object.hasOwn(compact, "organization_creations"), false);
+  assert.deepEqual(compact.decisions[0].level_refs, [0, 1, 2]);
+  assert.equal(Object.hasOwn(compact.decisions[0], "levels"), false);
+  assert.equal(compactJson.length < originalJson.length * 0.45, true);
+  assert.equal(JSON.stringify(decision), originalJson);
+});

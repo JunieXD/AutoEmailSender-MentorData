@@ -33,6 +33,7 @@ if TYPE_CHECKING:
 
 
 REVIEW_COMMENT_MARKER = "<!-- mentor-data-organization-review:v1 -->"
+COMPACT_REVIEW_ENCODING = "shared_levels_v1"
 GITHUB_COMMENT_CHARACTER_LIMIT = 65_536
 REVIEW_BRANCH_PATTERN = re.compile(r"^batch/issue-(?P<issue>[1-9][0-9]*)$")
 PROPOSAL_DIRECTORY_PATTERN = re.compile(r"^proposals/batch-issue-(?P<issue>[1-9][0-9]*)$")
@@ -552,6 +553,51 @@ def _parse_review_comment_payload(body: str) -> dict[str, Any]:
     return value
 
 
+def _expand_compact_review_decision(value: dict[str, Any]) -> dict[str, Any]:
+    shared_levels = value.get("level_decisions")
+    decisions = value.get("decisions")
+    if not isinstance(shared_levels, list) or not isinstance(decisions, list):
+        raise SubmissionError("精简机构审核决策缺少共享机构层级")
+
+    canonical_levels = [
+        json.dumps(item, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        for item in shared_levels
+    ]
+    if len(canonical_levels) != len(set(canonical_levels)):
+        raise SubmissionError("精简机构审核决策包含重复的共享机构层级")
+
+    expanded = copy.deepcopy(value)
+    expanded.pop("encoding")
+    expanded.pop("level_decisions")
+    used_level_refs: set[int] = set()
+    for group_decision in expanded["decisions"]:
+        if not isinstance(group_decision, dict):
+            raise SubmissionError("精简机构审核决策包含无效分组")
+        if "levels" in group_decision:
+            raise SubmissionError("精简机构审核决策不能同时填写 levels 和 level_refs")
+        level_refs = group_decision.pop("level_refs", None)
+        if not isinstance(level_refs, list):
+            raise SubmissionError("精简机构审核决策缺少 level_refs")
+        if any(
+            isinstance(reference, bool) or not isinstance(reference, int)
+            for reference in level_refs
+        ):
+            raise SubmissionError("精简机构审核决策的共享机构层级引用无效")
+        if len(level_refs) != len(set(level_refs)):
+            raise SubmissionError("精简机构审核决策的共享机构层级引用重复")
+        if any(reference < 0 or reference >= len(shared_levels) for reference in level_refs):
+            raise SubmissionError("精简机构审核决策的共享机构层级引用越界")
+        used_level_refs.update(level_refs)
+        group_decision["levels"] = [
+            copy.deepcopy(shared_levels[reference]) for reference in level_refs
+        ]
+
+    if used_level_refs != set(range(len(shared_levels))):
+        raise SubmissionError("精简机构审核决策包含未使用的共享机构层级")
+    expanded.setdefault("organization_creations", [])
+    return expanded
+
+
 def load_review_comment(root: Path, event_path: Path) -> ReviewComment:
     event = load_json(event_path)
     issue = event.get("issue")
@@ -580,6 +626,8 @@ def load_review_comment(root: Path, event_path: Path) -> ReviewComment:
     if reviewer_type != "User" or association not in TRUSTED_REVIEW_ASSOCIATIONS:
         raise SubmissionError("只有仓库所有者或受信任协作者可以应用机构审核")
     decision = _parse_review_comment_payload(str(comment.get("body") or ""))
+    if decision.get("encoding") == COMPACT_REVIEW_ENCODING:
+        decision = _expand_compact_review_decision(decision)
     _validate_schema(
         root,
         "organization-review-decision.schema.json",

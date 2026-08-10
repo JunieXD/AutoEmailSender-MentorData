@@ -7,9 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="styles.css?v=5" />' in html
-    assert '<script src="review-logic.js?v=5" defer></script>' in html
-    assert '<script src="review.js?v=5" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=6" />' in html
+    assert '<script src="review-logic.js?v=6" defer></script>' in html
+    assert '<script src="review.js?v=6" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -53,8 +53,10 @@ def test_review_script_treats_manifest_as_text_and_outputs_fixed_comment_marker(
     assert "crypto.subtle.digest" in script
     assert "textContent" in script
     assert "GITHUB_COMMENT_CHARACTER_LIMIT = 65_536" in script
-    assert "Array.from(body).length" in script
+    assert "Array.from(compactBody).length" in script
     assert "JSON.stringify(decision)" in script
+    assert "compactDecisionForComment" in script
+    assert "已精简" in script
     assert "validateWebUrl" in script
     assert '["http:", "https:"]' in script
     assert r"^batch\/issue-" in script
