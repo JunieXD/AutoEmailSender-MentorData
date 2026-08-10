@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b8cabc554f723e9e1e42"
+      ],
+      "ended_at": null,
+      "id": "aff_c081e3427bc1106eb60f",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1681.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b8cabc554f723e9e1e42"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c081e3427bc1106eb60f",
+      "claim_ids": [
+        "claim_b8cabc554f723e9e1e42"
+      ],
+      "is_primary": true,
+      "normalized_value": "yunhuai.liu@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1681.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yunhuai.liu@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b8cabc554f723e9e1e42"
+    ],
+    "email": [
+      "claim_b8cabc554f723e9e1e42"
+    ],
+    "name": [
+      "claim_b8cabc554f723e9e1e42"
+    ],
+    "profile_url": [
+      "claim_b8cabc554f723e9e1e42"
+    ],
+    "research_directions": [
+      "claim_b8cabc554f723e9e1e42"
+    ],
+    "status": [
+      "claim_b8cabc554f723e9e1e42"
+    ],
+    "title": [
+      "claim_b8cabc554f723e9e1e42"
+    ]
+  },
+  "id": "mentor_68ee9217ec8a6e69e685",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b8cabc554f723e9e1e42"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘云淮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c081e3427bc1106eb60f",
+      "claim_ids": [
+        "claim_b8cabc554f723e9e1e42"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1071/1681.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "物联网、移动计算、智慧城市、工业互联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1071/1681.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

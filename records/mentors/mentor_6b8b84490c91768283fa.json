@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bb75ed169110d0c94186"
+      ],
+      "ended_at": null,
+      "id": "aff_83aa4565f70b562246a2",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2257.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bb75ed169110d0c94186"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_83aa4565f70b562246a2",
+      "claim_ids": [
+        "claim_bb75ed169110d0c94186"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhdeng@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2257.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhdeng@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bb75ed169110d0c94186"
+    ],
+    "email": [
+      "claim_bb75ed169110d0c94186"
+    ],
+    "name": [
+      "claim_bb75ed169110d0c94186"
+    ],
+    "profile_url": [
+      "claim_bb75ed169110d0c94186"
+    ],
+    "research_directions": [
+      "claim_bb75ed169110d0c94186"
+    ],
+    "status": [
+      "claim_bb75ed169110d0c94186"
+    ],
+    "title": [
+      "claim_bb75ed169110d0c94186"
+    ]
+  },
+  "id": "mentor_6b8b84490c91768283fa",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bb75ed169110d0c94186"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓志鸿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_83aa4565f70b562246a2",
+      "claim_ids": [
+        "claim_bb75ed169110d0c94186"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2257.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习与深度学习、自然语言处理、大数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2257.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

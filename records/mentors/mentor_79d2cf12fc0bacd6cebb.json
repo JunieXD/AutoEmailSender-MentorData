@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_78825f32cdb5f42e0cb3"
+      ],
+      "ended_at": null,
+      "id": "aff_aa8099ddd48bbefa8581",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_8693874134a0966f6a79",
+      "source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/ad666d1397f44e3a9faf6756d7b9cc42.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_78825f32cdb5f42e0cb3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aa8099ddd48bbefa8581",
+      "claim_ids": [
+        "claim_78825f32cdb5f42e0cb3"
+      ],
+      "is_primary": true,
+      "normalized_value": "ye.liu@bit.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/ad666d1397f44e3a9faf6756d7b9cc42.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ye.liu@bit.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_78825f32cdb5f42e0cb3"
+    ],
+    "email": [
+      "claim_78825f32cdb5f42e0cb3"
+    ],
+    "name": [
+      "claim_78825f32cdb5f42e0cb3"
+    ],
+    "profile_url": [
+      "claim_78825f32cdb5f42e0cb3"
+    ],
+    "recent_papers": [
+      "claim_78825f32cdb5f42e0cb3"
+    ],
+    "research_directions": [
+      "claim_78825f32cdb5f42e0cb3"
+    ],
+    "status": [
+      "claim_78825f32cdb5f42e0cb3"
+    ]
+  },
+  "id": "mentor_79d2cf12fc0bacd6cebb",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_78825f32cdb5f42e0cb3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘晔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aa8099ddd48bbefa8581",
+      "claim_ids": [
+        "claim_78825f32cdb5f42e0cb3"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cst.bit.edu.cn/szdw/jsml/bssds/ad666d1397f44e3a9faf6756d7b9cc42.htm"
+    }
+  ],
+  "recent_papers": [
+    "1. Ye Liu, et al. Propertygpt: LLM-driven formal verification of smart contracts. NDSS, 2025.",
+    "2. Ye Liu, et al. Towards automated verification of smart contract fairness. FSE, 2020.",
+    "3. Ye Liu, et al. Finding permission bugs in smart contracts with role mining. ISSTA, 2022."
+  ],
+  "research_directions": [
+    "区块链安全,大模型安全,软件安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/ad666d1397f44e3a9faf6756d7b9cc42.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

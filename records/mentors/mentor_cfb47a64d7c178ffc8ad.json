@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_683a71f2906ef9bf54b1"
+      ],
+      "ended_at": null,
+      "id": "aff_472e84fddc501467c87d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1008/1090.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_683a71f2906ef9bf54b1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_472e84fddc501467c87d",
+      "claim_ids": [
+        "claim_683a71f2906ef9bf54b1"
+      ],
+      "is_primary": true,
+      "normalized_value": "yang@sei.pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1008/1090.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yang@sei.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_683a71f2906ef9bf54b1"
+    ],
+    "email": [
+      "claim_683a71f2906ef9bf54b1"
+    ],
+    "name": [
+      "claim_683a71f2906ef9bf54b1"
+    ],
+    "profile_url": [
+      "claim_683a71f2906ef9bf54b1"
+    ],
+    "research_directions": [
+      "claim_683a71f2906ef9bf54b1"
+    ],
+    "status": [
+      "claim_683a71f2906ef9bf54b1"
+    ],
+    "title": [
+      "claim_683a71f2906ef9bf54b1"
+    ]
+  },
+  "id": "mentor_cfb47a64d7c178ffc8ad",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_683a71f2906ef9bf54b1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨芙清"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_472e84fddc501467c87d",
+      "claim_ids": [
+        "claim_683a71f2906ef9bf54b1"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1008/1090.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "系统软件,软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1008/1090.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

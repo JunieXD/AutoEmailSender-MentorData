@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_147c7eb14e6e0c16e849"
+      ],
+      "ended_at": null,
+      "id": "aff_0806d7f791d874b340f4",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a746c189434c17b999b2",
+      "source_url": "https://cs.pku.edu.cn/info/1061/1602.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_147c7eb14e6e0c16e849"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0806d7f791d874b340f4",
+      "claim_ids": [
+        "claim_147c7eb14e6e0c16e849"
+      ],
+      "is_primary": true,
+      "normalized_value": "bkg@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1061/1602.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bkg@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_147c7eb14e6e0c16e849"
+    ],
+    "email": [
+      "claim_147c7eb14e6e0c16e849"
+    ],
+    "name": [
+      "claim_147c7eb14e6e0c16e849"
+    ],
+    "profile_url": [
+      "claim_147c7eb14e6e0c16e849"
+    ],
+    "research_directions": [
+      "claim_147c7eb14e6e0c16e849"
+    ],
+    "status": [
+      "claim_147c7eb14e6e0c16e849"
+    ]
+  },
+  "id": "mentor_dcba2c694548f878e75d",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_147c7eb14e6e0c16e849"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "边凯归"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0806d7f791d874b340f4",
+      "claim_ids": [
+        "claim_147c7eb14e6e0c16e849"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1061/1602.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1061/1602.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

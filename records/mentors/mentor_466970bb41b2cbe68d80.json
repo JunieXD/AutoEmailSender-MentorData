@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b9fa9e0f600034149592"
+      ],
+      "ended_at": null,
+      "id": "aff_681c8fa7a65794953440",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_51b2e338375f561e2b5a",
+      "source_url": "http://faculty.bjtu.edu.cn/8793/",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b9fa9e0f600034149592"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_681c8fa7a65794953440",
+      "claim_ids": [
+        "claim_b9fa9e0f600034149592"
+      ],
+      "is_primary": true,
+      "normalized_value": "hywan@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "http://faculty.bjtu.edu.cn/8793/",
+      "status": "current",
+      "type": "email",
+      "value": "hywan@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b9fa9e0f600034149592"
+    ],
+    "email": [
+      "claim_b9fa9e0f600034149592"
+    ],
+    "name": [
+      "claim_b9fa9e0f600034149592"
+    ],
+    "research_directions": [
+      "claim_b9fa9e0f600034149592"
+    ],
+    "status": [
+      "claim_b9fa9e0f600034149592"
+    ],
+    "title": [
+      "claim_b9fa9e0f600034149592"
+    ]
+  },
+  "id": "mentor_466970bb41b2cbe68d80",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b9fa9e0f600034149592"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "万怀宇"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "时空智能与具身智能,包括时空数据挖掘、时空知识图谱、时空大模型、具身行为决策"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.bjtu.edu.cn/8793/",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0db7afb0c8684d541407"
+      ],
+      "ended_at": null,
+      "id": "aff_ec174e59e0fd4b5ec413",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1066/1620.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0db7afb0c8684d541407"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec174e59e0fd4b5ec413",
+      "claim_ids": [
+        "claim_0db7afb0c8684d541407"
+      ],
+      "is_primary": true,
+      "normalized_value": "yaoguo@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1066/1620.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yaoguo@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0db7afb0c8684d541407"
+    ],
+    "email": [
+      "claim_0db7afb0c8684d541407"
+    ],
+    "name": [
+      "claim_0db7afb0c8684d541407"
+    ],
+    "profile_url": [
+      "claim_0db7afb0c8684d541407"
+    ],
+    "research_directions": [
+      "claim_0db7afb0c8684d541407"
+    ],
+    "status": [
+      "claim_0db7afb0c8684d541407"
+    ],
+    "title": [
+      "claim_0db7afb0c8684d541407"
+    ]
+  },
+  "id": "mentor_12d2e084f10065403e79",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0db7afb0c8684d541407"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭耀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ec174e59e0fd4b5ec413",
+      "claim_ids": [
+        "claim_0db7afb0c8684d541407"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1066/1620.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "操作系统、移动计算、软件安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1066/1620.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

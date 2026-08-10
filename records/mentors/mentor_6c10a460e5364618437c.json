@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_53733346a3824c185767"
+      ],
+      "ended_at": null,
+      "id": "aff_60e22403ba8d970b9aaa",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1084/1718.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_53733346a3824c185767"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_60e22403ba8d970b9aaa",
+      "claim_ids": [
+        "claim_53733346a3824c185767"
+      ],
+      "is_primary": true,
+      "normalized_value": "jxu@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1084/1718.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jxu@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_53733346a3824c185767"
+    ],
+    "email": [
+      "claim_53733346a3824c185767"
+    ],
+    "name": [
+      "claim_53733346a3824c185767"
+    ],
+    "profile_url": [
+      "claim_53733346a3824c185767"
+    ],
+    "research_directions": [
+      "claim_53733346a3824c185767"
+    ],
+    "status": [
+      "claim_53733346a3824c185767"
+    ],
+    "title": [
+      "claim_53733346a3824c185767"
+    ]
+  },
+  "id": "mentor_6c10a460e5364618437c",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_53733346a3824c185767"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许进"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_60e22403ba8d970b9aaa",
+      "claim_ids": [
+        "claim_53733346a3824c185767"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1084/1718.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机理论,图形理论,生物计算机,生物信息学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1084/1718.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

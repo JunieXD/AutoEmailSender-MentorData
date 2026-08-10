@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9ab53c0da3b04cba50b8"
+      ],
+      "ended_at": null,
+      "id": "aff_a79f9bf1201249b9071d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2266.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9ab53c0da3b04cba50b8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a79f9bf1201249b9071d",
+      "claim_ids": [
+        "claim_9ab53c0da3b04cba50b8"
+      ],
+      "is_primary": true,
+      "normalized_value": "muhan@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2266.htm",
+      "status": "current",
+      "type": "email",
+      "value": "muhan@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9ab53c0da3b04cba50b8"
+    ],
+    "email": [
+      "claim_9ab53c0da3b04cba50b8"
+    ],
+    "name": [
+      "claim_9ab53c0da3b04cba50b8"
+    ],
+    "profile_url": [
+      "claim_9ab53c0da3b04cba50b8"
+    ],
+    "research_directions": [
+      "claim_9ab53c0da3b04cba50b8"
+    ],
+    "status": [
+      "claim_9ab53c0da3b04cba50b8"
+    ],
+    "title": [
+      "claim_9ab53c0da3b04cba50b8"
+    ]
+  },
+  "id": "mentor_e5bd73f65c96ceac9867",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9ab53c0da3b04cba50b8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张牧涵"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a79f9bf1201249b9071d",
+      "claim_ids": [
+        "claim_9ab53c0da3b04cba50b8"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2266.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、图神经网络、图基础模型、大模型高效架构和推理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2266.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7118cf1078a65178454"
+      ],
+      "ended_at": null,
+      "id": "aff_a2c68e7ea5ee408b08f1",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_24e9e94f5d3f63854eec",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1681.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7118cf1078a65178454"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a2c68e7ea5ee408b08f1",
+      "claim_ids": [
+        "claim_d7118cf1078a65178454"
+      ],
+      "is_primary": true,
+      "normalized_value": "kang@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1681.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kang@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7118cf1078a65178454"
+    ],
+    "email": [
+      "claim_d7118cf1078a65178454"
+    ],
+    "name": [
+      "claim_d7118cf1078a65178454"
+    ],
+    "profile_url": [
+      "claim_d7118cf1078a65178454"
+    ],
+    "research_directions": [
+      "claim_d7118cf1078a65178454"
+    ],
+    "status": [
+      "claim_d7118cf1078a65178454"
+    ],
+    "title": [
+      "claim_d7118cf1078a65178454"
+    ]
+  },
+  "id": "mentor_0fc82ec94152cee2ee61",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7118cf1078a65178454"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "康佳昊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a2c68e7ea5ee408b08f1",
+      "claim_ids": [
+        "claim_d7118cf1078a65178454"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1681.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "低维电子、新型显示、柔性电子"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1681.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

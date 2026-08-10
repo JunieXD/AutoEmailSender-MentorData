@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fe0c523f91508fb928ae"
+      ],
+      "ended_at": null,
+      "id": "aff_783daa28a43aab4227d8",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2256.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_fe0c523f91508fb928ae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_783daa28a43aab4227d8",
+      "claim_ids": [
+        "claim_fe0c523f91508fb928ae"
+      ],
+      "is_primary": true,
+      "normalized_value": "gjsong@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2256.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gjsong@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fe0c523f91508fb928ae"
+    ],
+    "email": [
+      "claim_fe0c523f91508fb928ae"
+    ],
+    "name": [
+      "claim_fe0c523f91508fb928ae"
+    ],
+    "profile_url": [
+      "claim_fe0c523f91508fb928ae"
+    ],
+    "research_directions": [
+      "claim_fe0c523f91508fb928ae"
+    ],
+    "status": [
+      "claim_fe0c523f91508fb928ae"
+    ],
+    "title": [
+      "claim_fe0c523f91508fb928ae"
+    ]
+  },
+  "id": "mentor_45e7f9aaa544585eacd7",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fe0c523f91508fb928ae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋国杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_783daa28a43aab4227d8",
+      "claim_ids": [
+        "claim_fe0c523f91508fb928ae"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2256.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "价值观建模与测量、智能体建模与应用、图机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2256.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6499de62de391616e1b"
+      ],
+      "ended_at": null,
+      "id": "aff_4fec0af1de850c33580d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7355",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f6499de62de391616e1b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4fec0af1de850c33580d",
+      "claim_ids": [
+        "claim_f6499de62de391616e1b"
+      ],
+      "is_primary": true,
+      "normalized_value": "jieliu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7355",
+      "status": "current",
+      "type": "email",
+      "value": "jieliu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6499de62de391616e1b"
+    ],
+    "email": [
+      "claim_f6499de62de391616e1b"
+    ],
+    "name": [
+      "claim_f6499de62de391616e1b"
+    ],
+    "profile_url": [
+      "claim_f6499de62de391616e1b"
+    ],
+    "recent_papers": [
+      "claim_f6499de62de391616e1b"
+    ],
+    "research_directions": [
+      "claim_f6499de62de391616e1b"
+    ],
+    "status": [
+      "claim_f6499de62de391616e1b"
+    ],
+    "title": [
+      "claim_f6499de62de391616e1b"
+    ]
+  },
+  "id": "mentor_24d834f759a8efcd1ac2",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6499de62de391616e1b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4fec0af1de850c33580d",
+      "claim_ids": [
+        "claim_f6499de62de391616e1b"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7355"
+    }
+  ],
+  "recent_papers": [
+    "An Yu, Liu Jie, Meshless reconstruction method for fluorescence molecular tomography based on compactly supported radial basis function, Journal of Biomedical Optics, 2015",
+    "Yu an, Jie Liu, A Novel Region Reconstruction Method for Fluorescence Molecular Tomography, IEEE Transaction On Biomedical Engineering, 2015",
+    "Zhezhang, Jieliu, In situ study of self-assembled nanocomposite films by spectral SPR sensor, Materials Science and Engineering: C, 2015"
+  ],
+  "research_directions": [
+    "新一代电子信息技术",
+    "计算机技术",
+    "软件工程",
+    "人工智能",
+    "大数据技术与工程",
+    "机器学习与认知计算",
+    "智能感知与具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7355",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

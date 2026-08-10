@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6cd40ea2864e5b24d63c"
+      ],
+      "ended_at": null,
+      "id": "aff_2243ac896ae6d9da0bc1",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a746c189434c17b999b2",
+      "source_url": "https://cs.pku.edu.cn/info/1072/4600.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6cd40ea2864e5b24d63c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2243ac896ae6d9da0bc1",
+      "claim_ids": [
+        "claim_6cd40ea2864e5b24d63c"
+      ],
+      "is_primary": true,
+      "normalized_value": "xupeng.miao@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1072/4600.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xupeng.miao@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6cd40ea2864e5b24d63c"
+    ],
+    "email": [
+      "claim_6cd40ea2864e5b24d63c"
+    ],
+    "name": [
+      "claim_6cd40ea2864e5b24d63c"
+    ],
+    "profile_url": [
+      "claim_6cd40ea2864e5b24d63c"
+    ],
+    "research_directions": [
+      "claim_6cd40ea2864e5b24d63c"
+    ],
+    "status": [
+      "claim_6cd40ea2864e5b24d63c"
+    ],
+    "title": [
+      "claim_6cd40ea2864e5b24d63c"
+    ]
+  },
+  "id": "mentor_e3c9e4f59b648c4f8313",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6cd40ea2864e5b24d63c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苗旭鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2243ac896ae6d9da0bc1",
+      "claim_ids": [
+        "claim_6cd40ea2864e5b24d63c"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1072/4600.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1072/4600.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

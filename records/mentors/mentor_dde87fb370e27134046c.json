@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_018e48f792b0183cbfa6"
+      ],
+      "ended_at": null,
+      "id": "aff_c9863051277a137e2c3d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8932",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_018e48f792b0183cbfa6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c9863051277a137e2c3d",
+      "claim_ids": [
+        "claim_018e48f792b0183cbfa6"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhwu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8932",
+      "status": "current",
+      "type": "email",
+      "value": "zhwu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_018e48f792b0183cbfa6"
+    ],
+    "email": [
+      "claim_018e48f792b0183cbfa6"
+    ],
+    "name": [
+      "claim_018e48f792b0183cbfa6"
+    ],
+    "profile_url": [
+      "claim_018e48f792b0183cbfa6"
+    ],
+    "recent_papers": [
+      "claim_018e48f792b0183cbfa6"
+    ],
+    "research_directions": [
+      "claim_018e48f792b0183cbfa6"
+    ],
+    "status": [
+      "claim_018e48f792b0183cbfa6"
+    ],
+    "title": [
+      "claim_018e48f792b0183cbfa6"
+    ]
+  },
+  "id": "mentor_dde87fb370e27134046c",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_018e48f792b0183cbfa6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "武志昊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c9863051277a137e2c3d",
+      "claim_ids": [
+        "claim_018e48f792b0183cbfa6"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8932"
+    }
+  ],
+  "recent_papers": [
+    "Peng Cheng, Zhihao Wu, Jianxiong Li, Ziteng He, Haoran Xu, Wei Sun, Youfang Lin, Yunxin Liu, Xianyuan Zhan, Sample Efficient Offline RL via T-Symmetry Enforced Latent State-Stitching, ICLR, 2026",
+    "Shuo Wang, Zhihao Wu, Xiaobo Hu, Jinwen Wang, Youfang Lin, Kai Lv. How to Learn Domain-Invariant Representations for Visual Reinforcement Learning: An Information-Theoretical Perspective. IJCAI, 2024",
+    "王硕、武志昊、胡小波、王金文、吕凯、林友芳,What Effects the Generalization in Visual Reinforcement Learning: Policy Consistency with Truncated Return Prediction, AAAI, 2024",
+    "Chengpeng, Xianyuan Zhan, Zhihao Wu, et al. Look Beneath the Surface: Exploiting Fundamental Symmetry for Sample-Efficient Offline RL. NeurIPS, 2023",
+    "Shuo Wang, Zhihao Wu, Xiaobo Hu, Youfang Lin, Kai Lv. Skill-based Hierarchical Reinforcement Learning for Target Visual Navigation. IEEE TMM, 2023"
+  ],
+  "research_directions": [
+    "强化学习、深度学习的模型、算法与应用研究",
+    "交通大数据分析挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8932",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

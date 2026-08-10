@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5991e1a034986f0bd3d1"
+      ],
+      "ended_at": null,
+      "id": "aff_5a9f7ad677e716e8f9aa",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_8693874134a0966f6a79",
+      "source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/646ea0d5a2124429ab1ae3153c03e10d.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_5991e1a034986f0bd3d1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5a9f7ad677e716e8f9aa",
+      "claim_ids": [
+        "claim_5991e1a034986f0bd3d1"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangwei@bit.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/646ea0d5a2124429ab1ae3153c03e10d.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huangwei@bit.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5991e1a034986f0bd3d1"
+    ],
+    "email": [
+      "claim_5991e1a034986f0bd3d1"
+    ],
+    "name": [
+      "claim_5991e1a034986f0bd3d1"
+    ],
+    "profile_url": [
+      "claim_5991e1a034986f0bd3d1"
+    ],
+    "recent_papers": [
+      "claim_5991e1a034986f0bd3d1"
+    ],
+    "research_directions": [
+      "claim_5991e1a034986f0bd3d1"
+    ],
+    "status": [
+      "claim_5991e1a034986f0bd3d1"
+    ]
+  },
+  "id": "mentor_bfe9600175f5c3310aab",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5991e1a034986f0bd3d1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄玮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5a9f7ad677e716e8f9aa",
+      "claim_ids": [
+        "claim_5991e1a034986f0bd3d1"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cst.bit.edu.cn/szdw/jsml/bssds/646ea0d5a2124429ab1ae3153c03e10d.htm"
+    }
+  ],
+  "recent_papers": [
+    "1. Wei Huang, Liang Gao, \"A time wave neural network framework\", IEEE TNNLS, 2020.",
+    "2. Wei Huang, et al., \"Multiobjective differential evolution enhanced with principle component analysis\", Swarm and Evolutionary Computation, 2019.",
+    "3. Wei Huang, et al., \"Hybrid fuzzy wavelet neural networks architecture\", IEEE TNNLS, 2018."
+  ],
+  "research_directions": [
+    "网络优化与智能态势感知",
+    "深度学习与大数据安全",
+    "移动互联网安全、可信计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bit.edu.cn/szdw/jsml/bssds/646ea0d5a2124429ab1ae3153c03e10d.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

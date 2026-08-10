@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a9f1be7cb2001d44b6ff"
+      ],
+      "ended_at": null,
+      "id": "aff_3ebc7c1d98ad148b9245",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_f42afea26b5a81cb2702",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1221.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a9f1be7cb2001d44b6ff"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3ebc7c1d98ad148b9245",
+      "claim_ids": [
+        "claim_a9f1be7cb2001d44b6ff"
+      ],
+      "is_primary": true,
+      "normalized_value": "yelh@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1221.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yelh@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a9f1be7cb2001d44b6ff"
+    ],
+    "email": [
+      "claim_a9f1be7cb2001d44b6ff"
+    ],
+    "name": [
+      "claim_a9f1be7cb2001d44b6ff"
+    ],
+    "profile_url": [
+      "claim_a9f1be7cb2001d44b6ff"
+    ],
+    "research_directions": [
+      "claim_a9f1be7cb2001d44b6ff"
+    ],
+    "status": [
+      "claim_a9f1be7cb2001d44b6ff"
+    ],
+    "title": [
+      "claim_a9f1be7cb2001d44b6ff"
+    ]
+  },
+  "id": "mentor_153c5b5e1ad25d2da855",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a9f1be7cb2001d44b6ff"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "叶林晖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3ebc7c1d98ad148b9245",
+      "claim_ids": [
+        "claim_a9f1be7cb2001d44b6ff"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1221.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电子结构方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1221.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

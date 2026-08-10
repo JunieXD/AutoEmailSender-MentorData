@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8d586e3e64b5525a8599"
+      ],
+      "ended_at": null,
+      "id": "aff_1e18405dea197f238061",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2386.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8d586e3e64b5525a8599"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1e18405dea197f238061",
+      "claim_ids": [
+        "claim_8d586e3e64b5525a8599"
+      ],
+      "is_primary": true,
+      "normalized_value": "mchu@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2386.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mchu@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8d586e3e64b5525a8599"
+    ],
+    "email": [
+      "claim_8d586e3e64b5525a8599"
+    ],
+    "name": [
+      "claim_8d586e3e64b5525a8599"
+    ],
+    "profile_url": [
+      "claim_8d586e3e64b5525a8599"
+    ],
+    "research_directions": [
+      "claim_8d586e3e64b5525a8599"
+    ],
+    "status": [
+      "claim_8d586e3e64b5525a8599"
+    ],
+    "title": [
+      "claim_8d586e3e64b5525a8599"
+    ]
+  },
+  "id": "mentor_cc8aa9ef6886c36df2db",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8d586e3e64b5525a8599"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "楚梦渝"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1e18405dea197f238061",
+      "claim_ids": [
+        "claim_8d586e3e64b5525a8599"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2386.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机图形学,物理仿真,机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2386.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

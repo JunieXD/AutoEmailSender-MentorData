@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5e141c2d671e0b3fbc42"
+      ],
+      "ended_at": null,
+      "id": "aff_d9425d602ec99c1954a7",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bd17f676cf6edda88750",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1684.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5e141c2d671e0b3fbc42"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d9425d602ec99c1954a7",
+      "claim_ids": [
+        "claim_5e141c2d671e0b3fbc42"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyw@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1071/1684.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lyw@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5e141c2d671e0b3fbc42"
+    ],
+    "email": [
+      "claim_5e141c2d671e0b3fbc42"
+    ],
+    "name": [
+      "claim_5e141c2d671e0b3fbc42"
+    ],
+    "profile_url": [
+      "claim_5e141c2d671e0b3fbc42"
+    ],
+    "research_directions": [
+      "claim_5e141c2d671e0b3fbc42"
+    ],
+    "status": [
+      "claim_5e141c2d671e0b3fbc42"
+    ],
+    "title": [
+      "claim_5e141c2d671e0b3fbc42"
+    ]
+  },
+  "id": "mentor_0bc231f449b2a983813c",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5e141c2d671e0b3fbc42"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗英伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d9425d602ec99c1954a7",
+      "claim_ids": [
+        "claim_5e141c2d671e0b3fbc42"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1071/1684.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "系统虚拟化,高效计算系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1071/1684.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

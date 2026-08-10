@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_512befc885e48fa6adcd"
+      ],
+      "ended_at": null,
+      "id": "aff_c9e82d892af121d1834f",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/7787",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_512befc885e48fa6adcd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c9e82d892af121d1834f",
+      "claim_ids": [
+        "claim_512befc885e48fa6adcd"
+      ],
+      "is_primary": true,
+      "normalized_value": "wbliu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7787",
+      "status": "current",
+      "type": "email",
+      "value": "wbliu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_512befc885e48fa6adcd"
+    ],
+    "email": [
+      "claim_512befc885e48fa6adcd"
+    ],
+    "name": [
+      "claim_512befc885e48fa6adcd"
+    ],
+    "profile_url": [
+      "claim_512befc885e48fa6adcd"
+    ],
+    "recent_papers": [
+      "claim_512befc885e48fa6adcd"
+    ],
+    "research_directions": [
+      "claim_512befc885e48fa6adcd"
+    ],
+    "status": [
+      "claim_512befc885e48fa6adcd"
+    ],
+    "title": [
+      "claim_512befc885e48fa6adcd"
+    ]
+  },
+  "id": "mentor_1dbe1a9bbef0965c2137",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_512befc885e48fa6adcd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘渭滨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c9e82d892af121d1834f",
+      "claim_ids": [
+        "claim_512befc885e48fa6adcd"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7787"
+    }
+  ],
+  "recent_papers": [
+    "ZhiyuanZou,Weibin Liu*,et al.Minimum volume simplex-based scene representation and attribute recognition with feature fusion. Applied Intelligence, 2023, 53(8):8959-8977.",
+    "ZhiyuanZou,Weibin Liu*,et al.NMEAS: Neuro-MaxEnt architecture search, International Journal of Machine Learning and Cybernetics, 14(9):2963-2977.",
+    "JiaXu,Weibin Liu*,et al.MSPENet: Multi-scale adaptive fusion and position enhancement network for human pose estimation[J].The Visual Computer, 2023, 39(5):2005-2019.",
+    "DandanCao,Weibin Liu*,et al.Human pose estimation based on feature enhancement and multi-scale feature fusion[J].Signal, Image and Video Processing, 2023, 17(3):643-650.",
+    "XiukunZhang,Weibin Liu*,et al.GCAENet: global-class context with advanced edge network for single human parsing.The Visual Computer, 2023. doi: 10.1007/s00371-022-02735-4."
+  ],
+  "research_directions": [
+    "数字媒体信息处理与智能分析",
+    "人工智能",
+    "软件工程",
+    "新一代电子信息技术",
+    "大数据技术与工程",
+    "低空航行安全保障",
+    "智能感知与具身智能",
+    "计算机技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7787",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

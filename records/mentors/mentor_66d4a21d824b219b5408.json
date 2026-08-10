@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_68fe5dedf3a262600edf"
+      ],
+      "ended_at": null,
+      "id": "aff_76cb3fa9211ddf81a9d9",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2253.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_68fe5dedf3a262600edf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_76cb3fa9211ddf81a9d9",
+      "claim_ids": [
+        "claim_68fe5dedf3a262600edf"
+      ],
+      "is_primary": true,
+      "normalized_value": "wxh@cis.pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2253.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wxh@cis.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_68fe5dedf3a262600edf"
+    ],
+    "email": [
+      "claim_68fe5dedf3a262600edf"
+    ],
+    "name": [
+      "claim_68fe5dedf3a262600edf"
+    ],
+    "profile_url": [
+      "claim_68fe5dedf3a262600edf"
+    ],
+    "research_directions": [
+      "claim_68fe5dedf3a262600edf"
+    ],
+    "status": [
+      "claim_68fe5dedf3a262600edf"
+    ],
+    "title": [
+      "claim_68fe5dedf3a262600edf"
+    ]
+  },
+  "id": "mentor_66d4a21d824b219b5408",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_68fe5dedf3a262600edf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴玺宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_76cb3fa9211ddf81a9d9",
+      "claim_ids": [
+        "claim_68fe5dedf3a262600edf"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2253.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "听感知计算模型,心理声学,语音识别,语音合成,人机交互"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2253.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

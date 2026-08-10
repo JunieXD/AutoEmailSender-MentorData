@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_54bfab7865f66f77ebc0"
+      ],
+      "ended_at": null,
+      "id": "aff_de990153864c4e68fad7",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8072",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_54bfab7865f66f77ebc0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_de990153864c4e68fad7",
+      "claim_ids": [
+        "claim_54bfab7865f66f77ebc0"
+      ],
+      "is_primary": true,
+      "normalized_value": "hzzhao@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8072",
+      "status": "current",
+      "type": "email",
+      "value": "hzzhao@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_54bfab7865f66f77ebc0"
+    ],
+    "email": [
+      "claim_54bfab7865f66f77ebc0"
+    ],
+    "name": [
+      "claim_54bfab7865f66f77ebc0"
+    ],
+    "profile_url": [
+      "claim_54bfab7865f66f77ebc0"
+    ],
+    "recent_papers": [
+      "claim_54bfab7865f66f77ebc0"
+    ],
+    "research_directions": [
+      "claim_54bfab7865f66f77ebc0"
+    ],
+    "status": [
+      "claim_54bfab7865f66f77ebc0"
+    ],
+    "title": [
+      "claim_54bfab7865f66f77ebc0"
+    ]
+  },
+  "id": "mentor_893b0a58f6856138c0cf",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_54bfab7865f66f77ebc0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵宏智"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_de990153864c4e68fad7",
+      "claim_ids": [
+        "claim_54bfab7865f66f77ebc0"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8072"
+    }
+  ],
+  "recent_papers": [
+    "Hongzhi Zhao,Liu Xun*, Ruiyang Chen, Chao Tang, Yangyang He, Deyang Wang, Jinxiang Xie. Batched Data Layout-Optimization for im2col-based convolutions on CPUs. The Journal of SuperComputing(SCI,CCF C类). 2025,81(1219): 1-29.",
+    "Wang, Y.; Zhao, H. An Improved Strategy for Data Layout in Convolution Operations on FPGA-Based Multi-Memory Accelerators. Electronics (SCI,JCR - Q2). 2025, 14, 2127:1-12.",
+    "Wang Yongchang, Hongzhi Zhao*, Jinyao Zhao. AFHRE: An Accurate and Fast Hardware Resources Estimation Method for Convolutional Accelerator with Systolic Array Structure on FPGA. Electronics.(SCI, JCR - Q2) . 2025, 14(1)168: 1-21."
+  ],
+  "research_directions": [
+    "人工智能软件基础设施开发与加速技术",
+    "微处理器体系结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8072",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

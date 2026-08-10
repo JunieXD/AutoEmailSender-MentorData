@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f4a49be9728ab893e44e"
+      ],
+      "ended_at": null,
+      "id": "aff_dca4bcfe4fe5c5cb6bf3",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9167",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f4a49be9728ab893e44e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dca4bcfe4fe5c5cb6bf3",
+      "claim_ids": [
+        "claim_f4a49be9728ab893e44e"
+      ],
+      "is_primary": true,
+      "normalized_value": "wj@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9167",
+      "status": "current",
+      "type": "email",
+      "value": "wj@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f4a49be9728ab893e44e"
+    ],
+    "email": [
+      "claim_f4a49be9728ab893e44e"
+    ],
+    "name": [
+      "claim_f4a49be9728ab893e44e"
+    ],
+    "profile_url": [
+      "claim_f4a49be9728ab893e44e"
+    ],
+    "recent_papers": [
+      "claim_f4a49be9728ab893e44e"
+    ],
+    "research_directions": [
+      "claim_f4a49be9728ab893e44e"
+    ],
+    "status": [
+      "claim_f4a49be9728ab893e44e"
+    ],
+    "title": [
+      "claim_f4a49be9728ab893e44e"
+    ]
+  },
+  "id": "mentor_4bd2e72bde52c2ef8159",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f4a49be9728ab893e44e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晶"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dca4bcfe4fe5c5cb6bf3",
+      "claim_ids": [
+        "claim_f4a49be9728ab893e44e"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9167"
+    }
+  ],
+  "recent_papers": [
+    "Xiyuan Jin, Jing Wang*, Xiaoyu Ou, Lei Liu, Youfang Lin, Time-Series Contrastive Learning against False Negatives and Class Imbalance, IEEE Transactions on Neural Networks and Learning Systems 36(9) (2025) 16946-16959",
+    "Jing Wang, Zhiyang Feng, Xiaojun Ning, Youfang Lin, Badong Chen, Ziyu Jia*, Two-stream Dynamic Heterogeneous Graph Recurrent Neural Network for Multi-label Multi-modal Emotion Recognition, IEEE Transactions on Affective Computing 16(3) (2025) 2396-2409",
+    "Jing Wang, Xuehui Wang, Xiaojun Ning, Youfang Lin, Huy Phan, Ziyu Jia*, Subject-Adaptation Salient Wave Detection Network for Multimodal Sleep Stage Classification, IEEE Journal of Biomedical and Health Informatics 29 (3) (2025): 2172-2184",
+    "Xiyuan Jin, Jing Wang*, Huaiyu Qin, Xiaojun Ning, Tianzuo Xin, Youfang Lin, Group-wise Relation Mining for Weakly-supervised Fine-grained Multimodal Emotion Recognition, Neural Networks 190 (2025) 107543",
+    "Jinghang Yue, Jing Wang*, Shuo Zhang, Zhaoyang Ma, Yuxing Shi, Youfang Lin, TV-Net: Temporal-Variable feature harmonizing Network for multivariate time series classification and interpretation, Neural Networks 182 (2025) 106896"
+  ],
+  "research_directions": [
+    "时间序列数据分析与挖掘",
+    "AI赋能系统健康/智能运维(AIOps):异常检测、故障诊断",
+    "脑机接口:睡眠监测、情绪识别、运动想象、疾病检测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9167",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

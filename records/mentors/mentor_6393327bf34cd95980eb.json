@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b10650dda7c59776d02"
+      ],
+      "ended_at": null,
+      "id": "aff_03efb950db89ea1e837d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9322",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b10650dda7c59776d02"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_03efb950db89ea1e837d",
+      "claim_ids": [
+        "claim_0b10650dda7c59776d02"
+      ],
+      "is_primary": true,
+      "normalized_value": "tianyi@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9322",
+      "status": "current",
+      "type": "email",
+      "value": "tianyi@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b10650dda7c59776d02"
+    ],
+    "email": [
+      "claim_0b10650dda7c59776d02"
+    ],
+    "name": [
+      "claim_0b10650dda7c59776d02"
+    ],
+    "profile_url": [
+      "claim_0b10650dda7c59776d02"
+    ],
+    "recent_papers": [
+      "claim_0b10650dda7c59776d02"
+    ],
+    "research_directions": [
+      "claim_0b10650dda7c59776d02"
+    ],
+    "status": [
+      "claim_0b10650dda7c59776d02"
+    ],
+    "title": [
+      "claim_0b10650dda7c59776d02"
+    ]
+  },
+  "id": "mentor_6393327bf34cd95980eb",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b10650dda7c59776d02"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田艺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_03efb950db89ea1e837d",
+      "claim_ids": [
+        "claim_0b10650dda7c59776d02"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9322"
+    }
+  ],
+  "recent_papers": [
+    "Lin Zhang, Yi Tian*, Xiyun Wang, Wanru Xu, Yi Jin, Yaping Huang, Differential Contrastive Training for Gaze Estimation, ACM Multimedia 2025. (CCF A)",
+    "Wangsheng He, Wanru Xu, Ping Guo, Zhenjiang Miao, Yi Tian, InstructStep: Fine-Grained Localization of Step Content and Relation in Instructional Video, ACM Multimedia 2025. (CCF A)",
+    "Yi Tian, Xiyun Wang, Sihui Zhang, Wanru Xu, Yi Jin, Yaping Huang*, ‘Disengage AND Integrate’: Personalized Causal Network for Gaze Estimation, IEEE Transactions on Image Processing (TIP), 2025. (CCF A)",
+    "Jiansong Qi, Yaping Huang*, Ying Zhang, Sihui Zhang, Mei Tian, Yi Tian*, and Fanchao Meng, Lin Guan, and Tianyi Chang, Visual Question Answering Driven Eye Tracking Paradigm for Identifying Children with Autism Spectrum Disorder, ACM MM, 2024. (CCF A)",
+    "Keyi Huang, Yi Tian*, Chen Yu, Yaping Huang, Dual-referenced Assistive Network for Action Quality Assessment, Neurocomputing, 2024."
+  ],
+  "research_directions": [
+    "人工智能,机器学习,计算机视觉,具身感知——视线估计及眼动研究,精神类疾病诊断(孤独症辅助诊断、双向情感障碍及重度抑郁症诊断),人体行为识别及动作质量评估,具身感知(视觉语言导航),动车组故障动态图像恢复与检测,零样本及小样本学习等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9322",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

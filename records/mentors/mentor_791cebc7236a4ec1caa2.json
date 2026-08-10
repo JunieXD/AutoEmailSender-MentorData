@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_902772c3835163be0ad2"
+      ],
+      "ended_at": null,
+      "id": "aff_4f2873e409104fc6a156",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9522",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_902772c3835163be0ad2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4f2873e409104fc6a156",
+      "claim_ids": [
+        "claim_902772c3835163be0ad2"
+      ],
+      "is_primary": true,
+      "normalized_value": "xwanru@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9522",
+      "status": "current",
+      "type": "email",
+      "value": "xwanru@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_902772c3835163be0ad2"
+    ],
+    "email": [
+      "claim_902772c3835163be0ad2"
+    ],
+    "name": [
+      "claim_902772c3835163be0ad2"
+    ],
+    "profile_url": [
+      "claim_902772c3835163be0ad2"
+    ],
+    "recent_papers": [
+      "claim_902772c3835163be0ad2"
+    ],
+    "research_directions": [
+      "claim_902772c3835163be0ad2"
+    ],
+    "status": [
+      "claim_902772c3835163be0ad2"
+    ],
+    "title": [
+      "claim_902772c3835163be0ad2"
+    ]
+  },
+  "id": "mentor_791cebc7236a4ec1caa2",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_902772c3835163be0ad2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许万茹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4f2873e409104fc6a156",
+      "claim_ids": [
+        "claim_902772c3835163be0ad2"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9522"
+    }
+  ],
+  "recent_papers": [
+    "He W, Xu W, Guo P, et al. InstructStep: Fine-Grained Localization of Step Content and Relation in Instructional Video. ACMMM 2025.",
+    "Chen X, Cen Y, Xu W, et al. Hierarchical Meta-prototypes Network for Few-shot Action Recognition. ACMMM 2025.",
+    "Zhang L, Tian Y, Wang X, Xu W, et al. Differential Contrastive Training for Gaze Estimation. ACMMM 2025.",
+    "Zhang G, Kan S, Zhang F, Xu W, et al. Noise-Guided Predicate Representation Extraction and Diffusion-Enhanced Discretization for Scene Graph Generation. ICML 2025.",
+    "Liu Y, Xu W, Miao Z, et al. Natural Cognizing Video: A Decoupling and Integration Network for General Event Boundary Captioning. TMM 2025."
+  ],
+  "research_directions": [
+    "计算机视觉、深度学习、视频理解、行为识别、视频描述"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9522",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

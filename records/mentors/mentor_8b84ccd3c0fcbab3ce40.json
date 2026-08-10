@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9b8abf631a3f2b02d5f7"
+      ],
+      "ended_at": null,
+      "id": "aff_2b2442a3b65a745e2bad",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/6463",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9b8abf631a3f2b02d5f7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2b2442a3b65a745e2bad",
+      "claim_ids": [
+        "claim_9b8abf631a3f2b02d5f7"
+      ],
+      "is_primary": true,
+      "normalized_value": "jianyu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/6463",
+      "status": "current",
+      "type": "email",
+      "value": "jianyu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ],
+    "email": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ],
+    "name": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ],
+    "profile_url": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ],
+    "recent_papers": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ],
+    "research_directions": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ],
+    "status": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ],
+    "title": [
+      "claim_9b8abf631a3f2b02d5f7"
+    ]
+  },
+  "id": "mentor_8b84ccd3c0fcbab3ce40",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9b8abf631a3f2b02d5f7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于剑"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2b2442a3b65a745e2bad",
+      "claim_ids": [
+        "claim_9b8abf631a3f2b02d5f7"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/6463"
+    }
+  ],
+  "recent_papers": [
+    "于剑,图灵测试的明与暗,计算机研究与发展,57(5):906-911(2020)",
+    "Bo Liu,Liping Jing,Jia Li, Jian Yu,Alex Gittens,Michael W. Mahoney: Group Collaborative Representation for Image Set Classification.International Journal of Computer Vision 127(2): 181-206 (2019)",
+    "Dong Deng,Liping Jing, Jian Yu,Shaolong Sun,Michael K. Ng: Sentiment Lexicon Construction With Hierarchical Supervision Topic Model.IEEE/ACM Trans. Audio, Speech & Language Processing 27(4): 704-718 (2019)",
+    "Yafang Li,Caiyan Jia,Xiangnan Kong,Liu Yang, Jian Yu: Locally Weighted Fusion of Structural and Attribute Information in Graph Clustering.IEEE Trans. Cybernetics 49(1): 247-260 (2019)",
+    "Jialin Hua, Jian Yu, Miin-ShenYang, Fast clustering for signed graphs based on random walk gap, Social Networks, in press (2018)"
+  ],
+  "research_directions": [
+    "机器学习与认知计算、人工智能、计算机技术、软件工程、大数据技术与工程、新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/6463",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

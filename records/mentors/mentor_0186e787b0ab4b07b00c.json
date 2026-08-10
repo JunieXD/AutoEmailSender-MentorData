@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d54edd152d065b4b0062"
+      ],
+      "ended_at": null,
+      "id": "aff_90a754c55536e98c3c71",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_7f9e17722f75f99714bc",
+      "source_url": "https://cs.pku.edu.cn/info/1085/1724.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d54edd152d065b4b0062"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_90a754c55536e98c3c71",
+      "claim_ids": [
+        "claim_d54edd152d065b4b0062"
+      ],
+      "is_primary": true,
+      "normalized_value": "yijiangfang@mprc.pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1085/1724.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yijiangfang@mprc.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d54edd152d065b4b0062"
+    ],
+    "email": [
+      "claim_d54edd152d065b4b0062"
+    ],
+    "name": [
+      "claim_d54edd152d065b4b0062"
+    ],
+    "profile_url": [
+      "claim_d54edd152d065b4b0062"
+    ],
+    "research_directions": [
+      "claim_d54edd152d065b4b0062"
+    ],
+    "status": [
+      "claim_d54edd152d065b4b0062"
+    ],
+    "title": [
+      "claim_d54edd152d065b4b0062"
+    ]
+  },
+  "id": "mentor_0186e787b0ab4b07b00c",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d54edd152d065b4b0062"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "易江芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_90a754c55536e98c3c71",
+      "claim_ids": [
+        "claim_d54edd152d065b4b0062"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1085/1724.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机体系结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1085/1724.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

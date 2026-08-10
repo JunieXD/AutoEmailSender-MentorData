@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2d4748884968ad72032a"
+      ],
+      "ended_at": null,
+      "id": "aff_5e5e8a486bf53f8cd706",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a746c189434c17b999b2",
+      "source_url": "https://cs.pku.edu.cn/info/1085/1720.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2d4748884968ad72032a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5e5e8a486bf53f8cd706",
+      "claim_ids": [
+        "claim_2d4748884968ad72032a"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangtong@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1085/1720.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangtong@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2d4748884968ad72032a"
+    ],
+    "email": [
+      "claim_2d4748884968ad72032a"
+    ],
+    "name": [
+      "claim_2d4748884968ad72032a"
+    ],
+    "profile_url": [
+      "claim_2d4748884968ad72032a"
+    ],
+    "research_directions": [
+      "claim_2d4748884968ad72032a"
+    ],
+    "status": [
+      "claim_2d4748884968ad72032a"
+    ],
+    "title": [
+      "claim_2d4748884968ad72032a"
+    ]
+  },
+  "id": "mentor_fccddd563f38a8a9b589",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2d4748884968ad72032a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨仝"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5e5e8a486bf53f8cd706",
+      "claim_ids": [
+        "claim_2d4748884968ad72032a"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1085/1720.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络大数据关键技术、高速数据流处理算法、机器学习算法加速"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1085/1720.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

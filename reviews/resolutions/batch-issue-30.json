@@ -1,0 +1,3008 @@
+{
+  "created_organization_ids": [
+    "org_auto_10319442d9eb4a98cda7",
+    "org_auto_24e9e94f5d3f63854eec",
+    "org_auto_2a80b9bc86463fc0b96c",
+    "org_auto_2f3748952db80a92837b",
+    "org_auto_329ce4e34426ad66a05d",
+    "org_auto_3fb6be741445b678d2c5",
+    "org_auto_4bdf73e34b9f90b3c9ed",
+    "org_auto_52c43fcebed3c4c82ce0",
+    "org_auto_568e2daa6fc83e2e9deb",
+    "org_auto_5d8e6df3c43e99c105b7",
+    "org_auto_6854be3a038054f44b23",
+    "org_auto_6ade58ec513ff27a4923",
+    "org_auto_6e946f932070d952d13e",
+    "org_auto_736ac8e461d06b8f58bf",
+    "org_auto_73aaf4104d851081d83d",
+    "org_auto_7f9e17722f75f99714bc",
+    "org_auto_83ffd8d3e65dbe4a959d",
+    "org_auto_8693874134a0966f6a79",
+    "org_auto_9f16f7c78bc8aa10dcfa",
+    "org_auto_a1ccb6b7c7f160370b35",
+    "org_auto_a746c189434c17b999b2",
+    "org_auto_ab5831a0a8170a718059",
+    "org_auto_af1d9e02cfcd8ddddd42",
+    "org_auto_b03bc9847a81f7d4ea48",
+    "org_auto_bc32eda2ad69bd0fd462",
+    "org_auto_bd17f676cf6edda88750",
+    "org_auto_be20d43dbdc9d24ce9de",
+    "org_auto_c20d36cba096631846bf",
+    "org_auto_c23623e3cd4dcb4d1c02",
+    "org_auto_cac70a7727f65a2d5598",
+    "org_auto_d3d2e2c7389995ea9d2c",
+    "org_auto_d5dcc8084f11deff3208",
+    "org_auto_e218570f7d344348679d",
+    "org_auto_ec43e6fc8b9cffbb0b83",
+    "org_auto_f42afea26b5a81cb2702"
+  ],
+  "decided_at": "2026-08-10T13:52:21Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_065425333005a542",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "系统结构研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_0bd7ee25faefcab2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_a9cc91eb4ae03e2a480c",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_0c9a6d090a0cba6f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络与高能效计算研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_10449b45cdb769b2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机网络研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_11dc3898cff6daff",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bit.edu.cn"
+          ],
+          "canonical_name": "北京理工大学",
+          "level": "university",
+          "official_url": "https://bit.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_168a871ea18dc205",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bit.edu.cn"
+          ],
+          "canonical_name": "北京理工大学",
+          "level": "university",
+          "official_url": "https://bit.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_197a2d051aad10de",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "高速铁路网络管理教育部工程研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_82",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_1e27a4ec144c5821",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "投稿中的系所名称以“学院”结尾，需要确认它是否与当前学院同级",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_5d8e6df3c43e99c105b7"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_212f1dedc555e181",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "元宇宙技术研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_25695ebee6ddedfa",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息与通信研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_25b780b55d7ff692",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "应用电子学研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2732946365444ec1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bit.edu.cn"
+          ],
+          "canonical_name": "北京理工大学",
+          "level": "university",
+          "official_url": "https://bit.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_27db6ee195c58a96",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_296b8d9d71713ec1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2cd8286e50841877",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2fde5ba3b851c663",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中国语言文学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_67",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_75",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4fd81fe5d6d0fa68",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算语言学研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_504e5a3d86bde57a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "医学智能研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_50ec899cd7e5aff1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_556a1cf1e6767850",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_fb2626fd6d0625cea264",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_71",
+          "reason": "与社区库已有记录的研究方向、近期论文不一致，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_57b8cecf6cf5f4fb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6930d5ab0b3696ef",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件与微电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "金融信息与工程管理系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6bcbec6a14ff6da8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bit.edu.cn"
+          ],
+          "canonical_name": "北京理工大学",
+          "level": "university",
+          "official_url": "https://bit.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6e5da4cd9704636e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "数据科学与工程研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6f9885af3381fd3c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7397ebdf391d0811",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络科学与智能系统研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_78aa40bca4890f66",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_28",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_30",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_32",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_37",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_63",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_66",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_68",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_70",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_72",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_74",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_76",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_78",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_79",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7e77312fcd569352",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_210",
+          "reason": "同批次第 259 行的邮箱证据更可靠，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_83123a9600a9c718",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "实验教学中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_85822ea96255c937",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "碳基电子学研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8c78a3b221fc7ee2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "物理电子学研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8cca195a283ada0e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_bf1d3cf066307af9de74",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_64",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_65",
+          "reason": "与社区库已有记录的研究方向、近期论文不一致，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8dcbc2a100e8318e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络与高能效研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_94f62333a3fdb00b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件与微电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "集成电路与智能系统系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9b1221430bc39d19",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "机器学习与认知计算研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_a0e2e10f01528e7c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_27",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_31",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_34",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_35",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_38",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_a2a10b7287d6c291",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bit.edu.cn"
+          ],
+          "canonical_name": "北京理工大学",
+          "level": "university",
+          "official_url": "https://bit.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_afbdc7cb84c98664",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "前沿计算研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b1c9d03950e06b61",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_d5046f2763a667ab9a72",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b786f475b37a1344",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bc39ece97afa8507",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bit.edu.cn"
+          ],
+          "canonical_name": "北京理工大学",
+          "level": "university",
+          "official_url": "https://bit.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bdd2604c816511a3",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_a33d6bd5e5916952d3de",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_36",
+          "reason": "与社区库已有记录的研究方向不一致，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c0bacb9df4ea901d",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_cc5f9164b34099c4",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_73",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_77",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_81",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_dc59d3459e9b1568",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "云计算与数据科学研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_df94ee0ed7693d0b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_bf1d3cf066307af9de74",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_33",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e71a448927454ddf",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "系统软件研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_29",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_edef90725dab8eae",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f2e447ccbdea2691",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "量子电子学研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f3b510c19a132834",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f574837329a0b6da",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_51b2e338375f561e2b5a",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_fa5c7bdd2b6d8a5a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_345f07aadbab11fa0138",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_fd6658c52ccb3c41",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_a5d5bd5d0bea305449fa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_53877ed9b876daca30aa",
+          "organization_type": null,
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_69",
+          "reason": "已有"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_30_row_80",
+          "reason": "已有"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_fe6a756cf5e52728",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "pku.edu.cn"
+          ],
+          "canonical_name": "北京大学",
+          "level": "university",
+          "official_url": "https://pku.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_30",
+  "invalid_rows": [],
+  "issue": {
+    "number": 30,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/30"
+  },
+  "manifest_sha256": "d3e320c0997fe3e6a0086424580f63202c7ff451cf964dd4f131563d38d6b59e",
+  "mapped_proposal_ids": [
+    "proposal_issue_30_row_1",
+    "proposal_issue_30_row_10",
+    "proposal_issue_30_row_100",
+    "proposal_issue_30_row_101",
+    "proposal_issue_30_row_102",
+    "proposal_issue_30_row_103",
+    "proposal_issue_30_row_104",
+    "proposal_issue_30_row_105",
+    "proposal_issue_30_row_106",
+    "proposal_issue_30_row_107",
+    "proposal_issue_30_row_108",
+    "proposal_issue_30_row_109",
+    "proposal_issue_30_row_11",
+    "proposal_issue_30_row_110",
+    "proposal_issue_30_row_111",
+    "proposal_issue_30_row_112",
+    "proposal_issue_30_row_113",
+    "proposal_issue_30_row_114",
+    "proposal_issue_30_row_115",
+    "proposal_issue_30_row_116",
+    "proposal_issue_30_row_117",
+    "proposal_issue_30_row_118",
+    "proposal_issue_30_row_119",
+    "proposal_issue_30_row_12",
+    "proposal_issue_30_row_120",
+    "proposal_issue_30_row_121",
+    "proposal_issue_30_row_122",
+    "proposal_issue_30_row_123",
+    "proposal_issue_30_row_124",
+    "proposal_issue_30_row_125",
+    "proposal_issue_30_row_126",
+    "proposal_issue_30_row_127",
+    "proposal_issue_30_row_128",
+    "proposal_issue_30_row_129",
+    "proposal_issue_30_row_13",
+    "proposal_issue_30_row_130",
+    "proposal_issue_30_row_131",
+    "proposal_issue_30_row_132",
+    "proposal_issue_30_row_133",
+    "proposal_issue_30_row_134",
+    "proposal_issue_30_row_135",
+    "proposal_issue_30_row_136",
+    "proposal_issue_30_row_137",
+    "proposal_issue_30_row_138",
+    "proposal_issue_30_row_139",
+    "proposal_issue_30_row_14",
+    "proposal_issue_30_row_140",
+    "proposal_issue_30_row_141",
+    "proposal_issue_30_row_142",
+    "proposal_issue_30_row_143",
+    "proposal_issue_30_row_144",
+    "proposal_issue_30_row_145",
+    "proposal_issue_30_row_146",
+    "proposal_issue_30_row_147",
+    "proposal_issue_30_row_148",
+    "proposal_issue_30_row_149",
+    "proposal_issue_30_row_15",
+    "proposal_issue_30_row_150",
+    "proposal_issue_30_row_151",
+    "proposal_issue_30_row_152",
+    "proposal_issue_30_row_153",
+    "proposal_issue_30_row_154",
+    "proposal_issue_30_row_155",
+    "proposal_issue_30_row_156",
+    "proposal_issue_30_row_157",
+    "proposal_issue_30_row_158",
+    "proposal_issue_30_row_159",
+    "proposal_issue_30_row_16",
+    "proposal_issue_30_row_160",
+    "proposal_issue_30_row_161",
+    "proposal_issue_30_row_162",
+    "proposal_issue_30_row_163",
+    "proposal_issue_30_row_164",
+    "proposal_issue_30_row_165",
+    "proposal_issue_30_row_166",
+    "proposal_issue_30_row_167",
+    "proposal_issue_30_row_168",
+    "proposal_issue_30_row_169",
+    "proposal_issue_30_row_17",
+    "proposal_issue_30_row_170",
+    "proposal_issue_30_row_171",
+    "proposal_issue_30_row_172",
+    "proposal_issue_30_row_173",
+    "proposal_issue_30_row_174",
+    "proposal_issue_30_row_175",
+    "proposal_issue_30_row_176",
+    "proposal_issue_30_row_177",
+    "proposal_issue_30_row_178",
+    "proposal_issue_30_row_179",
+    "proposal_issue_30_row_18",
+    "proposal_issue_30_row_180",
+    "proposal_issue_30_row_181",
+    "proposal_issue_30_row_182",
+    "proposal_issue_30_row_183",
+    "proposal_issue_30_row_184",
+    "proposal_issue_30_row_185",
+    "proposal_issue_30_row_186",
+    "proposal_issue_30_row_187",
+    "proposal_issue_30_row_188",
+    "proposal_issue_30_row_189",
+    "proposal_issue_30_row_19",
+    "proposal_issue_30_row_190",
+    "proposal_issue_30_row_191",
+    "proposal_issue_30_row_192",
+    "proposal_issue_30_row_193",
+    "proposal_issue_30_row_194",
+    "proposal_issue_30_row_195",
+    "proposal_issue_30_row_196",
+    "proposal_issue_30_row_197",
+    "proposal_issue_30_row_198",
+    "proposal_issue_30_row_199",
+    "proposal_issue_30_row_2",
+    "proposal_issue_30_row_20",
+    "proposal_issue_30_row_200",
+    "proposal_issue_30_row_201",
+    "proposal_issue_30_row_202",
+    "proposal_issue_30_row_203",
+    "proposal_issue_30_row_204",
+    "proposal_issue_30_row_205",
+    "proposal_issue_30_row_206",
+    "proposal_issue_30_row_207",
+    "proposal_issue_30_row_208",
+    "proposal_issue_30_row_209",
+    "proposal_issue_30_row_21",
+    "proposal_issue_30_row_211",
+    "proposal_issue_30_row_212",
+    "proposal_issue_30_row_213",
+    "proposal_issue_30_row_214",
+    "proposal_issue_30_row_215",
+    "proposal_issue_30_row_216",
+    "proposal_issue_30_row_217",
+    "proposal_issue_30_row_218",
+    "proposal_issue_30_row_219",
+    "proposal_issue_30_row_22",
+    "proposal_issue_30_row_220",
+    "proposal_issue_30_row_221",
+    "proposal_issue_30_row_222",
+    "proposal_issue_30_row_223",
+    "proposal_issue_30_row_224",
+    "proposal_issue_30_row_225",
+    "proposal_issue_30_row_226",
+    "proposal_issue_30_row_227",
+    "proposal_issue_30_row_228",
+    "proposal_issue_30_row_229",
+    "proposal_issue_30_row_23",
+    "proposal_issue_30_row_230",
+    "proposal_issue_30_row_231",
+    "proposal_issue_30_row_232",
+    "proposal_issue_30_row_233",
+    "proposal_issue_30_row_234",
+    "proposal_issue_30_row_235",
+    "proposal_issue_30_row_236",
+    "proposal_issue_30_row_237",
+    "proposal_issue_30_row_238",
+    "proposal_issue_30_row_239",
+    "proposal_issue_30_row_24",
+    "proposal_issue_30_row_240",
+    "proposal_issue_30_row_241",
+    "proposal_issue_30_row_242",
+    "proposal_issue_30_row_243",
+    "proposal_issue_30_row_244",
+    "proposal_issue_30_row_245",
+    "proposal_issue_30_row_246",
+    "proposal_issue_30_row_247",
+    "proposal_issue_30_row_248",
+    "proposal_issue_30_row_249",
+    "proposal_issue_30_row_25",
+    "proposal_issue_30_row_250",
+    "proposal_issue_30_row_251",
+    "proposal_issue_30_row_252",
+    "proposal_issue_30_row_253",
+    "proposal_issue_30_row_254",
+    "proposal_issue_30_row_255",
+    "proposal_issue_30_row_256",
+    "proposal_issue_30_row_257",
+    "proposal_issue_30_row_258",
+    "proposal_issue_30_row_259",
+    "proposal_issue_30_row_26",
+    "proposal_issue_30_row_260",
+    "proposal_issue_30_row_261",
+    "proposal_issue_30_row_262",
+    "proposal_issue_30_row_263",
+    "proposal_issue_30_row_264",
+    "proposal_issue_30_row_265",
+    "proposal_issue_30_row_266",
+    "proposal_issue_30_row_267",
+    "proposal_issue_30_row_268",
+    "proposal_issue_30_row_269",
+    "proposal_issue_30_row_270",
+    "proposal_issue_30_row_271",
+    "proposal_issue_30_row_272",
+    "proposal_issue_30_row_273",
+    "proposal_issue_30_row_274",
+    "proposal_issue_30_row_275",
+    "proposal_issue_30_row_276",
+    "proposal_issue_30_row_277",
+    "proposal_issue_30_row_278",
+    "proposal_issue_30_row_279",
+    "proposal_issue_30_row_280",
+    "proposal_issue_30_row_281",
+    "proposal_issue_30_row_282",
+    "proposal_issue_30_row_283",
+    "proposal_issue_30_row_284",
+    "proposal_issue_30_row_285",
+    "proposal_issue_30_row_286",
+    "proposal_issue_30_row_287",
+    "proposal_issue_30_row_288",
+    "proposal_issue_30_row_289",
+    "proposal_issue_30_row_290",
+    "proposal_issue_30_row_291",
+    "proposal_issue_30_row_292",
+    "proposal_issue_30_row_293",
+    "proposal_issue_30_row_294",
+    "proposal_issue_30_row_295",
+    "proposal_issue_30_row_296",
+    "proposal_issue_30_row_297",
+    "proposal_issue_30_row_298",
+    "proposal_issue_30_row_299",
+    "proposal_issue_30_row_3",
+    "proposal_issue_30_row_300",
+    "proposal_issue_30_row_301",
+    "proposal_issue_30_row_302",
+    "proposal_issue_30_row_303",
+    "proposal_issue_30_row_304",
+    "proposal_issue_30_row_305",
+    "proposal_issue_30_row_306",
+    "proposal_issue_30_row_307",
+    "proposal_issue_30_row_308",
+    "proposal_issue_30_row_309",
+    "proposal_issue_30_row_310",
+    "proposal_issue_30_row_311",
+    "proposal_issue_30_row_312",
+    "proposal_issue_30_row_313",
+    "proposal_issue_30_row_314",
+    "proposal_issue_30_row_315",
+    "proposal_issue_30_row_316",
+    "proposal_issue_30_row_317",
+    "proposal_issue_30_row_318",
+    "proposal_issue_30_row_319",
+    "proposal_issue_30_row_320",
+    "proposal_issue_30_row_321",
+    "proposal_issue_30_row_322",
+    "proposal_issue_30_row_323",
+    "proposal_issue_30_row_324",
+    "proposal_issue_30_row_325",
+    "proposal_issue_30_row_326",
+    "proposal_issue_30_row_327",
+    "proposal_issue_30_row_328",
+    "proposal_issue_30_row_329",
+    "proposal_issue_30_row_330",
+    "proposal_issue_30_row_331",
+    "proposal_issue_30_row_332",
+    "proposal_issue_30_row_333",
+    "proposal_issue_30_row_334",
+    "proposal_issue_30_row_335",
+    "proposal_issue_30_row_336",
+    "proposal_issue_30_row_337",
+    "proposal_issue_30_row_338",
+    "proposal_issue_30_row_339",
+    "proposal_issue_30_row_340",
+    "proposal_issue_30_row_341",
+    "proposal_issue_30_row_342",
+    "proposal_issue_30_row_343",
+    "proposal_issue_30_row_344",
+    "proposal_issue_30_row_39",
+    "proposal_issue_30_row_4",
+    "proposal_issue_30_row_40",
+    "proposal_issue_30_row_41",
+    "proposal_issue_30_row_42",
+    "proposal_issue_30_row_43",
+    "proposal_issue_30_row_44",
+    "proposal_issue_30_row_45",
+    "proposal_issue_30_row_46",
+    "proposal_issue_30_row_47",
+    "proposal_issue_30_row_48",
+    "proposal_issue_30_row_49",
+    "proposal_issue_30_row_5",
+    "proposal_issue_30_row_50",
+    "proposal_issue_30_row_51",
+    "proposal_issue_30_row_52",
+    "proposal_issue_30_row_53",
+    "proposal_issue_30_row_54",
+    "proposal_issue_30_row_55",
+    "proposal_issue_30_row_56",
+    "proposal_issue_30_row_57",
+    "proposal_issue_30_row_58",
+    "proposal_issue_30_row_59",
+    "proposal_issue_30_row_6",
+    "proposal_issue_30_row_60",
+    "proposal_issue_30_row_61",
+    "proposal_issue_30_row_62",
+    "proposal_issue_30_row_7",
+    "proposal_issue_30_row_8",
+    "proposal_issue_30_row_83",
+    "proposal_issue_30_row_84",
+    "proposal_issue_30_row_85",
+    "proposal_issue_30_row_86",
+    "proposal_issue_30_row_87",
+    "proposal_issue_30_row_88",
+    "proposal_issue_30_row_89",
+    "proposal_issue_30_row_9",
+    "proposal_issue_30_row_90",
+    "proposal_issue_30_row_91",
+    "proposal_issue_30_row_92",
+    "proposal_issue_30_row_93",
+    "proposal_issue_30_row_94",
+    "proposal_issue_30_row_95",
+    "proposal_issue_30_row_96",
+    "proposal_issue_30_row_97",
+    "proposal_issue_30_row_98",
+    "proposal_issue_30_row_99"
+  ],
+  "organization_creations": [],
+  "path_corrections": [
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_30_row_129"
+      ],
+      "reason": "投稿中的系所名称以“学院”结尾,需要确认它是否与当前学院同级",
+      "source_domains": [
+        "faculty.bjtu.edu.cn"
+      ],
+      "submitted": {
+        "department": "网络空间安全学院",
+        "school": "计算机科学与技术学院",
+        "university": "北京交通大学"
+      },
+      "target_organization_id": "org_auto_5d8e6df3c43e99c105b7"
+    }
+  ],
+  "pull_request_number": 31,
+  "rejected_proposal_ids": [
+    "proposal_issue_30_row_210",
+    "proposal_issue_30_row_27",
+    "proposal_issue_30_row_28",
+    "proposal_issue_30_row_29",
+    "proposal_issue_30_row_30",
+    "proposal_issue_30_row_31",
+    "proposal_issue_30_row_32",
+    "proposal_issue_30_row_33",
+    "proposal_issue_30_row_34",
+    "proposal_issue_30_row_35",
+    "proposal_issue_30_row_36",
+    "proposal_issue_30_row_37",
+    "proposal_issue_30_row_38",
+    "proposal_issue_30_row_63",
+    "proposal_issue_30_row_64",
+    "proposal_issue_30_row_65",
+    "proposal_issue_30_row_66",
+    "proposal_issue_30_row_67",
+    "proposal_issue_30_row_68",
+    "proposal_issue_30_row_69",
+    "proposal_issue_30_row_70",
+    "proposal_issue_30_row_71",
+    "proposal_issue_30_row_72",
+    "proposal_issue_30_row_73",
+    "proposal_issue_30_row_74",
+    "proposal_issue_30_row_75",
+    "proposal_issue_30_row_76",
+    "proposal_issue_30_row_77",
+    "proposal_issue_30_row_78",
+    "proposal_issue_30_row_79",
+    "proposal_issue_30_row_80",
+    "proposal_issue_30_row_81",
+    "proposal_issue_30_row_82"
+  ],
+  "review_comment_id": 5241211161,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": [
+    "org_auto_53877ed9b876daca30aa",
+    "org_auto_cac70a7727f65a2d5598"
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0628d7ca7c4b40937cf"
+      ],
+      "ended_at": null,
+      "id": "aff_ddc3b2a19653d5ff1e5c",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8902",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0628d7ca7c4b40937cf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ddc3b2a19653d5ff1e5c",
+      "claim_ids": [
+        "claim_d0628d7ca7c4b40937cf"
+      ],
+      "is_primary": true,
+      "normalized_value": "zteng@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8902",
+      "status": "current",
+      "type": "email",
+      "value": "zteng@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0628d7ca7c4b40937cf"
+    ],
+    "email": [
+      "claim_d0628d7ca7c4b40937cf"
+    ],
+    "name": [
+      "claim_d0628d7ca7c4b40937cf"
+    ],
+    "profile_url": [
+      "claim_d0628d7ca7c4b40937cf"
+    ],
+    "recent_papers": [
+      "claim_d0628d7ca7c4b40937cf"
+    ],
+    "research_directions": [
+      "claim_d0628d7ca7c4b40937cf"
+    ],
+    "status": [
+      "claim_d0628d7ca7c4b40937cf"
+    ],
+    "title": [
+      "claim_d0628d7ca7c4b40937cf"
+    ]
+  },
+  "id": "mentor_47da1093a8b7493f168f",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0628d7ca7c4b40937cf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "滕竹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ddc3b2a19653d5ff1e5c",
+      "claim_ids": [
+        "claim_d0628d7ca7c4b40937cf"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8902"
+    }
+  ],
+  "recent_papers": [
+    "QueryLink: Leveraging Query-Memory Alignment for Long-Term Reasoning in LLM Agents (ACL 2026)",
+    "Leveraging Evidence Priors for Robust Prompt Learning under Noisy Supervision in Vision-Language Models (ICML 2026)",
+    "Open-Unfairness Adversarial Mitigation for Generalized Deepfake Detection (ICCV 2025)",
+    "OV-DAVEL: Towards Open-Vocabulary Dense Audio-Visual Event Localization in Untrimmed Videos (ACM MM 2025)",
+    "Less Attention is More: Prompt Transformer for Generalized Category Discovery (CVPR 2025)",
+    "Bi-stream Coteaching Network for Weakly-supervised Deepfake Localization in Videos (TIFS 2025)"
+  ],
+  "research_directions": [
+    "机器学习与认知计算",
+    "计算机技术",
+    "软件工程",
+    "人工智能",
+    "大数据技术与工程",
+    "数字媒体信息处理与智能分析",
+    "低空航行安全保障",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8902",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

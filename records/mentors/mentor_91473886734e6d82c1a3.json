@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_90fc34a3e69eabce3528"
+      ],
+      "ended_at": null,
+      "id": "aff_4e6c1ebc26a12753f6bd",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_be20d43dbdc9d24ce9de",
+      "source_url": "https://ss.pku.edu.cn/sztd/gcglsssz/a49ca5c94b234c03bd71282e305c5f24.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_90fc34a3e69eabce3528"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4e6c1ebc26a12753f6bd",
+      "claim_ids": [
+        "claim_90fc34a3e69eabce3528"
+      ],
+      "is_primary": true,
+      "normalized_value": "cxx@ss.pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ss.pku.edu.cn/sztd/gcglsssz/a49ca5c94b234c03bd71282e305c5f24.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cxx@ss.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_90fc34a3e69eabce3528"
+    ],
+    "email": [
+      "claim_90fc34a3e69eabce3528"
+    ],
+    "name": [
+      "claim_90fc34a3e69eabce3528"
+    ],
+    "profile_url": [
+      "claim_90fc34a3e69eabce3528"
+    ],
+    "recent_papers": [
+      "claim_90fc34a3e69eabce3528"
+    ],
+    "research_directions": [
+      "claim_90fc34a3e69eabce3528"
+    ],
+    "status": [
+      "claim_90fc34a3e69eabce3528"
+    ],
+    "title": [
+      "claim_90fc34a3e69eabce3528"
+    ]
+  },
+  "id": "mentor_91473886734e6d82c1a3",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_90fc34a3e69eabce3528"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹喜信"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4e6c1ebc26a12753f6bd",
+      "claim_ids": [
+        "claim_90fc34a3e69eabce3528"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ss.pku.edu.cn/sztd/gcglsssz/a49ca5c94b234c03bd71282e305c5f24.htm"
+    }
+  ],
+  "recent_papers": [
+    "1. Yi Zhuo et al., A 320×256 6.9mW 2.2mK-NETD LW-IRFPA..., ISSCC 2025",
+    "2. Weichen Xu et al., Mutual Information-Driven Self-supervised Point Cloud Pre-training, Knowledge-based Systems, 2025",
+    "3. Zhan'gang Ma et al., Software and Hardware Processing Method for Blockchain Light Node SPV Verification, IEEE ISPA 2023",
+    "4. Yuxuan Zhao et al., Multimodal Affective States Recognition..., IEEE Transactions on Affective Computing, 2021",
+    "5. Yongwei Chen et al., Intensity-image reconstruction for event cameras using CNN, ICASSP 2020"
+  ],
+  "research_directions": [
+    "AI嵌入式系统、数字媒体SOC设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ss.pku.edu.cn/sztd/gcglsssz/a49ca5c94b234c03bd71282e305c5f24.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

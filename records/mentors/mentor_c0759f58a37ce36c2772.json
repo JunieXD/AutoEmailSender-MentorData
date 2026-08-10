@@ -1,0 +1,79 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_12a63ec13d75403741c4"
+      ],
+      "ended_at": null,
+      "id": "aff_617d945ea95a6cf96c03",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/10280/",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_12a63ec13d75403741c4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_617d945ea95a6cf96c03",
+      "claim_ids": [
+        "claim_12a63ec13d75403741c4"
+      ],
+      "is_primary": true,
+      "normalized_value": "rqwang@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10280/",
+      "status": "current",
+      "type": "email",
+      "value": "rqwang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_12a63ec13d75403741c4"
+    ],
+    "email": [
+      "claim_12a63ec13d75403741c4"
+    ],
+    "name": [
+      "claim_12a63ec13d75403741c4"
+    ],
+    "research_directions": [
+      "claim_12a63ec13d75403741c4"
+    ],
+    "status": [
+      "claim_12a63ec13d75403741c4"
+    ]
+  },
+  "id": "mentor_c0759f58a37ce36c2772",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_12a63ec13d75403741c4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王润琪"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "深度学习模型后训练与轻量化、具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10280/",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

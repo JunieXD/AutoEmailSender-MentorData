@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c08f3bca41f7c38f2621"
+      ],
+      "ended_at": null,
+      "id": "aff_800c6114df759866d847",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_5d8e6df3c43e99c105b7",
+      "source_url": "https://faculty.bjtu.edu.cn/6279",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c08f3bca41f7c38f2621"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_800c6114df759866d847",
+      "claim_ids": [
+        "claim_c08f3bca41f7c38f2621"
+      ],
+      "is_primary": true,
+      "normalized_value": "jqliu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/6279",
+      "status": "current",
+      "type": "email",
+      "value": "jqliu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c08f3bca41f7c38f2621"
+    ],
+    "email": [
+      "claim_c08f3bca41f7c38f2621"
+    ],
+    "name": [
+      "claim_c08f3bca41f7c38f2621"
+    ],
+    "profile_url": [
+      "claim_c08f3bca41f7c38f2621"
+    ],
+    "recent_papers": [
+      "claim_c08f3bca41f7c38f2621"
+    ],
+    "research_directions": [
+      "claim_c08f3bca41f7c38f2621"
+    ],
+    "status": [
+      "claim_c08f3bca41f7c38f2621"
+    ],
+    "title": [
+      "claim_c08f3bca41f7c38f2621"
+    ]
+  },
+  "id": "mentor_559f51446657a9774eed",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c08f3bca41f7c38f2621"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘吉强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_800c6114df759866d847",
+      "claim_ids": [
+        "claim_c08f3bca41f7c38f2621"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/6279"
+    }
+  ],
+  "recent_papers": [
+    "CoBA: Collusive Backdoor Attacks With Optimized Trigger to Federated Learning. IEEE Trans. Dependable Secur. Comput. 2025",
+    "Defending Against Membership Inference Attacks on Iteratively Pruned Deep Neural Networks. NDSS 2025",
+    "PKVIC: Supplement Missing Software Package Information in Security Vulnerability Reports. IEEE Trans. Dependable Secur. Comput. 2024",
+    "FedComm: A Privacy-Enhanced and Efficient Authentication Protocol for Federated Learning in Vehicular Ad-Hoc Networks. IEEE Trans. Inf. Forensics Secur. 2024",
+    "Eyes on Federated Recommendation: Targeted Poisoning With Competition and Its Mitigation. IEEE Trans. Inf. Forensics Secur. 2024"
+  ],
+  "research_directions": [
+    "隐私保护,物联网安全,区块链,可信计算,网络安全,人工智能安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/6279",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

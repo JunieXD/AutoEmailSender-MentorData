@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e67ba003c0be6bbe41ab"
+      ],
+      "ended_at": null,
+      "id": "aff_b1d9ed369347b43a940e",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bd17f676cf6edda88750",
+      "source_url": "https://cs.pku.edu.cn/info/1067/1629.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e67ba003c0be6bbe41ab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1d9ed369347b43a940e",
+      "claim_ids": [
+        "claim_e67ba003c0be6bbe41ab"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangqun@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1067/1629.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huangqun@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e67ba003c0be6bbe41ab"
+    ],
+    "email": [
+      "claim_e67ba003c0be6bbe41ab"
+    ],
+    "name": [
+      "claim_e67ba003c0be6bbe41ab"
+    ],
+    "profile_url": [
+      "claim_e67ba003c0be6bbe41ab"
+    ],
+    "research_directions": [
+      "claim_e67ba003c0be6bbe41ab"
+    ],
+    "status": [
+      "claim_e67ba003c0be6bbe41ab"
+    ],
+    "title": [
+      "claim_e67ba003c0be6bbe41ab"
+    ]
+  },
+  "id": "mentor_a70aa726d5eabab5b467",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e67ba003c0be6bbe41ab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄群"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1d9ed369347b43a940e",
+      "claim_ids": [
+        "claim_e67ba003c0be6bbe41ab"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1067/1629.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机网络、分布式系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1067/1629.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

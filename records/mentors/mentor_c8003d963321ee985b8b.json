@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_95ce3410c5bf77c2e28e"
+      ],
+      "ended_at": null,
+      "id": "aff_575ccad2c29d6ce5f023",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/10107/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_95ce3410c5bf77c2e28e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_575ccad2c29d6ce5f023",
+      "claim_ids": [
+        "claim_95ce3410c5bf77c2e28e"
+      ],
+      "is_primary": true,
+      "normalized_value": "lvkai@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10107/",
+      "status": "current",
+      "type": "email",
+      "value": "lvkai@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_95ce3410c5bf77c2e28e"
+    ],
+    "email": [
+      "claim_95ce3410c5bf77c2e28e"
+    ],
+    "name": [
+      "claim_95ce3410c5bf77c2e28e"
+    ],
+    "research_directions": [
+      "claim_95ce3410c5bf77c2e28e"
+    ],
+    "status": [
+      "claim_95ce3410c5bf77c2e28e"
+    ],
+    "title": [
+      "claim_95ce3410c5bf77c2e28e"
+    ]
+  },
+  "id": "mentor_c8003d963321ee985b8b",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_95ce3410c5bf77c2e28e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕凯"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉,强化学习,具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10107/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

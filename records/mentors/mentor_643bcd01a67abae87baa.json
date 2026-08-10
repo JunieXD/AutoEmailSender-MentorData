@@ -1,0 +1,88 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ce49d148b62e5277800a"
+      ],
+      "ended_at": null,
+      "id": "aff_962de9a10fcea2b35c48",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/10282/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ce49d148b62e5277800a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_962de9a10fcea2b35c48",
+      "claim_ids": [
+        "claim_ce49d148b62e5277800a"
+      ],
+      "is_primary": true,
+      "normalized_value": "mlsys_research@163.com",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/10282/",
+      "status": "current",
+      "type": "email",
+      "value": "mlsys_research@163.com"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ce49d148b62e5277800a"
+    ],
+    "email": [
+      "claim_ce49d148b62e5277800a"
+    ],
+    "name": [
+      "claim_ce49d148b62e5277800a"
+    ],
+    "research_directions": [
+      "claim_ce49d148b62e5277800a"
+    ],
+    "status": [
+      "claim_ce49d148b62e5277800a"
+    ],
+    "title": [
+      "claim_ce49d148b62e5277800a"
+    ]
+  },
+  "id": "mentor_643bcd01a67abae87baa",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ce49d148b62e5277800a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李夏青"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "先进计算与高性能计算",
+    "大数据技术与工程",
+    "计算机技术",
+    "生成式人工智能与安全",
+    "人工智能",
+    "软件工程",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/10282/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

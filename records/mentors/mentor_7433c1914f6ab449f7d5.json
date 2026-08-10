@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_512f470505dffb044631"
+      ],
+      "ended_at": null,
+      "id": "aff_64c4381487952e93677c",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1062/1610.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_512f470505dffb044631"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_64c4381487952e93677c",
+      "claim_ids": [
+        "claim_512f470505dffb044631"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenhj@sei.pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1062/1610.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenhj@sei.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_512f470505dffb044631"
+    ],
+    "email": [
+      "claim_512f470505dffb044631"
+    ],
+    "name": [
+      "claim_512f470505dffb044631"
+    ],
+    "profile_url": [
+      "claim_512f470505dffb044631"
+    ],
+    "research_directions": [
+      "claim_512f470505dffb044631"
+    ],
+    "status": [
+      "claim_512f470505dffb044631"
+    ],
+    "title": [
+      "claim_512f470505dffb044631"
+    ]
+  },
+  "id": "mentor_7433c1914f6ab449f7d5",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_512f470505dffb044631"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈泓婕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_64c4381487952e93677c",
+      "claim_ids": [
+        "claim_512f470505dffb044631"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1062/1610.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件工程、程序设计语言"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1062/1610.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

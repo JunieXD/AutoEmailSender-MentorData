@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4aa42a3585661793b8a5"
+      ],
+      "ended_at": null,
+      "id": "aff_f871df196783f1d510cd",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/9371",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4aa42a3585661793b8a5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f871df196783f1d510cd",
+      "claim_ids": [
+        "claim_4aa42a3585661793b8a5"
+      ],
+      "is_primary": true,
+      "normalized_value": "cjzhang@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9371",
+      "status": "current",
+      "type": "email",
+      "value": "cjzhang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4aa42a3585661793b8a5"
+    ],
+    "email": [
+      "claim_4aa42a3585661793b8a5"
+    ],
+    "name": [
+      "claim_4aa42a3585661793b8a5"
+    ],
+    "profile_url": [
+      "claim_4aa42a3585661793b8a5"
+    ],
+    "recent_papers": [
+      "claim_4aa42a3585661793b8a5"
+    ],
+    "research_directions": [
+      "claim_4aa42a3585661793b8a5"
+    ],
+    "status": [
+      "claim_4aa42a3585661793b8a5"
+    ],
+    "title": [
+      "claim_4aa42a3585661793b8a5"
+    ]
+  },
+  "id": "mentor_38a0b653ee620c5f70ef",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4aa42a3585661793b8a5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张淳杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f871df196783f1d510cd",
+      "claim_ids": [
+        "claim_4aa42a3585661793b8a5"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9371"
+    }
+  ],
+  "recent_papers": [
+    "Leveraging Failed Samples: A Few-Shot and Training-Free Framework for Generalized Deepfake Detection, AAAI 2026",
+    "Embodied cognitive intelligence guided Moon sample collection, The Innovation 6(7), 100939, 2025",
+    "Visual Relation Diffusion for Human-Object Interaction Detection, ICCV, 2025",
+    "IA2GNN: Imbalance-Aware Adaptive Graph Construction for Multi-Modal Image Fusion, IEEE T-MM, 2025",
+    "PSVMA+: Exploring Multi-Granularity Semantic-Visual Adaption for Generalized Zero-Shot Learning, IEEE TPAMI 47(1): 51-66, 2025"
+  ],
+  "research_directions": [
+    "图像处理与理解、计算机视觉、多媒体数据处理与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9371",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

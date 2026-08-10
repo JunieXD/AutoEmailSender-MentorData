@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_355f6f8c3234f1ed0065"
+      ],
+      "ended_at": null,
+      "id": "aff_a95e6e1c851f044ac0e0",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/9583/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_355f6f8c3234f1ed0065"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a95e6e1c851f044ac0e0",
+      "claim_ids": [
+        "claim_355f6f8c3234f1ed0065"
+      ],
+      "is_primary": true,
+      "normalized_value": "yingqin@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9583/",
+      "status": "current",
+      "type": "email",
+      "value": "yingqin@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_355f6f8c3234f1ed0065"
+    ],
+    "email": [
+      "claim_355f6f8c3234f1ed0065"
+    ],
+    "name": [
+      "claim_355f6f8c3234f1ed0065"
+    ],
+    "research_directions": [
+      "claim_355f6f8c3234f1ed0065"
+    ],
+    "status": [
+      "claim_355f6f8c3234f1ed0065"
+    ],
+    "title": [
+      "claim_355f6f8c3234f1ed0065"
+    ]
+  },
+  "id": "mentor_0c9b6c2457f224aba222",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_355f6f8c3234f1ed0065"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "秦颖"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "语音信号处理、语音评估、语音识别、跨模态学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9583/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

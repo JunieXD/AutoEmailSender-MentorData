@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b8d88774a401f142e707"
+      ],
+      "ended_at": null,
+      "id": "aff_78dcaebb4bd93078284d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/5900/",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b8d88774a401f142e707"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_78dcaebb4bd93078284d",
+      "claim_ids": [
+        "claim_b8d88774a401f142e707"
+      ],
+      "is_primary": true,
+      "normalized_value": "yzhao@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/5900/",
+      "status": "current",
+      "type": "email",
+      "value": "yzhao@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b8d88774a401f142e707"
+    ],
+    "email": [
+      "claim_b8d88774a401f142e707"
+    ],
+    "name": [
+      "claim_b8d88774a401f142e707"
+    ],
+    "research_directions": [
+      "claim_b8d88774a401f142e707"
+    ],
+    "status": [
+      "claim_b8d88774a401f142e707"
+    ],
+    "title": [
+      "claim_b8d88774a401f142e707"
+    ]
+  },
+  "id": "mentor_a79637fbefa70fb01e99",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b8d88774a401f142e707"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵耀"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "数字媒体信息处理与智能分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/5900/",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

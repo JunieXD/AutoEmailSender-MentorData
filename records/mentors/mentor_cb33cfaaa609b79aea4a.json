@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f2c6b1b07fa7a371c0e7"
+      ],
+      "ended_at": null,
+      "id": "aff_2a0749a0c26bf9572424",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_b03bc9847a81f7d4ea48",
+      "source_url": "https://cs.pku.edu.cn/info/1083/1705.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f2c6b1b07fa7a371c0e7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a0749a0c26bf9572424",
+      "claim_ids": [
+        "claim_f2c6b1b07fa7a371c0e7"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuyf@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1083/1705.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wuyf@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f2c6b1b07fa7a371c0e7"
+    ],
+    "email": [
+      "claim_f2c6b1b07fa7a371c0e7"
+    ],
+    "name": [
+      "claim_f2c6b1b07fa7a371c0e7"
+    ],
+    "profile_url": [
+      "claim_f2c6b1b07fa7a371c0e7"
+    ],
+    "research_directions": [
+      "claim_f2c6b1b07fa7a371c0e7"
+    ],
+    "status": [
+      "claim_f2c6b1b07fa7a371c0e7"
+    ],
+    "title": [
+      "claim_f2c6b1b07fa7a371c0e7"
+    ]
+  },
+  "id": "mentor_cb33cfaaa609b79aea4a",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f2c6b1b07fa7a371c0e7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴云芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a0749a0c26bf9572424",
+      "claim_ids": [
+        "claim_f2c6b1b07fa7a371c0e7"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1083/1705.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1083/1705.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

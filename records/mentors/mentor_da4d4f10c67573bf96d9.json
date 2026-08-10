@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_76d1553f7d75075dfb6b"
+      ],
+      "ended_at": null,
+      "id": "aff_5174ceeffed1cf5923bd",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_83ffd8d3e65dbe4a959d",
+      "source_url": "https://cs.pku.edu.cn/info/1062/1606.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_76d1553f7d75075dfb6b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5174ceeffed1cf5923bd",
+      "claim_ids": [
+        "claim_76d1553f7d75075dfb6b"
+      ],
+      "is_primary": true,
+      "normalized_value": "cyf@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1062/1606.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cyf@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_76d1553f7d75075dfb6b"
+    ],
+    "email": [
+      "claim_76d1553f7d75075dfb6b"
+    ],
+    "name": [
+      "claim_76d1553f7d75075dfb6b"
+    ],
+    "profile_url": [
+      "claim_76d1553f7d75075dfb6b"
+    ],
+    "research_directions": [
+      "claim_76d1553f7d75075dfb6b"
+    ],
+    "status": [
+      "claim_76d1553f7d75075dfb6b"
+    ],
+    "title": [
+      "claim_76d1553f7d75075dfb6b"
+    ]
+  },
+  "id": "mentor_da4d4f10c67573bf96d9",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_76d1553f7d75075dfb6b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈一峯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5174ceeffed1cf5923bd",
+      "claim_ids": [
+        "claim_76d1553f7d75075dfb6b"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1062/1606.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "并行编程语言,异构并行软件,形式化方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1062/1606.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

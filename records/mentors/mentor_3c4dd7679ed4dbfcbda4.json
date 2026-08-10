@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8f068ac30432374ea1a7"
+      ],
+      "ended_at": null,
+      "id": "aff_fb528f63ad10e476acc2",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a746c189434c17b999b2",
+      "source_url": "https://cs.pku.edu.cn/info/1066/1619.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8f068ac30432374ea1a7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fb528f63ad10e476acc2",
+      "claim_ids": [
+        "claim_8f068ac30432374ea1a7"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaojun@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1066/1619.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaojun@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8f068ac30432374ea1a7"
+    ],
+    "email": [
+      "claim_8f068ac30432374ea1a7"
+    ],
+    "name": [
+      "claim_8f068ac30432374ea1a7"
+    ],
+    "profile_url": [
+      "claim_8f068ac30432374ea1a7"
+    ],
+    "research_directions": [
+      "claim_8f068ac30432374ea1a7"
+    ],
+    "status": [
+      "claim_8f068ac30432374ea1a7"
+    ],
+    "title": [
+      "claim_8f068ac30432374ea1a7"
+    ]
+  },
+  "id": "mentor_3c4dd7679ed4dbfcbda4",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8f068ac30432374ea1a7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fb528f63ad10e476acc2",
+      "claim_ids": [
+        "claim_8f068ac30432374ea1a7"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1066/1619.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图数据分析和学习、AI+DB"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1066/1619.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

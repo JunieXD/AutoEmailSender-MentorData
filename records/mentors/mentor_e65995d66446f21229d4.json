@@ -1,0 +1,89 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7061aeb1514a3e3b034a"
+      ],
+      "ended_at": null,
+      "id": "aff_161ace0da5fdbf11c35d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7707/",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7061aeb1514a3e3b034a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_161ace0da5fdbf11c35d",
+      "claim_ids": [
+        "claim_7061aeb1514a3e3b034a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjy@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7707/",
+      "status": "current",
+      "type": "email",
+      "value": "zjy@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7061aeb1514a3e3b034a"
+    ],
+    "email": [
+      "claim_7061aeb1514a3e3b034a"
+    ],
+    "name": [
+      "claim_7061aeb1514a3e3b034a"
+    ],
+    "research_directions": [
+      "claim_7061aeb1514a3e3b034a"
+    ],
+    "status": [
+      "claim_7061aeb1514a3e3b034a"
+    ],
+    "title": [
+      "claim_7061aeb1514a3e3b034a"
+    ]
+  },
+  "id": "mentor_e65995d66446f21229d4",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7061aeb1514a3e3b034a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张晋豫"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "软件工程技术",
+    "计算机技术",
+    "软件工程",
+    "人工智能",
+    "大数据技术与工程",
+    "计算机网络与系统安全",
+    "智能感知与具身智能",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7707/",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

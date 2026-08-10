@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eced84ea9c1eff755a5b"
+      ],
+      "ended_at": null,
+      "id": "aff_39cde256cd83ecd1a674",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_c23623e3cd4dcb4d1c02",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1052.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_eced84ea9c1eff755a5b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_39cde256cd83ecd1a674",
+      "claim_ids": [
+        "claim_eced84ea9c1eff755a5b"
+      ],
+      "is_primary": true,
+      "normalized_value": "c.chen@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1052.htm",
+      "status": "current",
+      "type": "email",
+      "value": "c.chen@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eced84ea9c1eff755a5b"
+    ],
+    "email": [
+      "claim_eced84ea9c1eff755a5b"
+    ],
+    "name": [
+      "claim_eced84ea9c1eff755a5b"
+    ],
+    "profile_url": [
+      "claim_eced84ea9c1eff755a5b"
+    ],
+    "research_directions": [
+      "claim_eced84ea9c1eff755a5b"
+    ],
+    "status": [
+      "claim_eced84ea9c1eff755a5b"
+    ],
+    "title": [
+      "claim_eced84ea9c1eff755a5b"
+    ]
+  },
+  "id": "mentor_7aeacfbd761bc0f91456",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eced84ea9c1eff755a5b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈晨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_39cde256cd83ecd1a674",
+      "claim_ids": [
+        "claim_eced84ea9c1eff755a5b"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1052.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新一代通信与数据网络、大数据分析、医疗信息化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1052.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

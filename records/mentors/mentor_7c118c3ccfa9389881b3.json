@@ -1,0 +1,85 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b7acdcd49b4068165c0d"
+      ],
+      "ended_at": null,
+      "id": "aff_4f03bac722e40d0c29be",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7817/",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b7acdcd49b4068165c0d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4f03bac722e40d0c29be",
+      "claim_ids": [
+        "claim_b7acdcd49b4068165c0d"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhfzhu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7817/",
+      "status": "current",
+      "type": "email",
+      "value": "zhfzhu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b7acdcd49b4068165c0d"
+    ],
+    "email": [
+      "claim_b7acdcd49b4068165c0d"
+    ],
+    "name": [
+      "claim_b7acdcd49b4068165c0d"
+    ],
+    "research_directions": [
+      "claim_b7acdcd49b4068165c0d"
+    ],
+    "status": [
+      "claim_b7acdcd49b4068165c0d"
+    ],
+    "title": [
+      "claim_b7acdcd49b4068165c0d"
+    ]
+  },
+  "id": "mentor_7c118c3ccfa9389881b3",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b7acdcd49b4068165c0d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱振峰"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉",
+    "机器学习",
+    "推荐技术与动态数据挖掘",
+    "AI for X"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7817/",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

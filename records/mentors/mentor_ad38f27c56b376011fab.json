@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b6db5220996eda154590"
+      ],
+      "ended_at": null,
+      "id": "aff_61ea917880b581857ce2",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/8408",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b6db5220996eda154590"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_61ea917880b581857ce2",
+      "claim_ids": [
+        "claim_b6db5220996eda154590"
+      ],
+      "is_primary": true,
+      "normalized_value": "ydli@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8408",
+      "status": "current",
+      "type": "email",
+      "value": "ydli@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b6db5220996eda154590"
+    ],
+    "email": [
+      "claim_b6db5220996eda154590"
+    ],
+    "name": [
+      "claim_b6db5220996eda154590"
+    ],
+    "profile_url": [
+      "claim_b6db5220996eda154590"
+    ],
+    "recent_papers": [
+      "claim_b6db5220996eda154590"
+    ],
+    "research_directions": [
+      "claim_b6db5220996eda154590"
+    ],
+    "status": [
+      "claim_b6db5220996eda154590"
+    ],
+    "title": [
+      "claim_b6db5220996eda154590"
+    ]
+  },
+  "id": "mentor_ad38f27c56b376011fab",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b6db5220996eda154590"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李浥东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_61ea917880b581857ce2",
+      "claim_ids": [
+        "claim_b6db5220996eda154590"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8408"
+    }
+  ],
+  "recent_papers": [
+    "Linkage-Based Object Re-Identification via Graph Learning (IEEE TITS 2024)",
+    "Scale-Disentangled and Uncertainty-Guided Alignment for Domain-Adaptive Object Detection (IEEE TITS 2024)",
+    "Real-Time Adaptive Partition and Resource Allocation for Multi-User End-Cloud Inference Collaboration in Mobile Environment (IEEE TMC 2024)",
+    "A Resource-Efficient Feature Extraction Framework for Image Processing in IoT Devices (IEEE TMC 2024)",
+    "SECaaS-Based Partially Observable Defense Model for IIoT Against Advanced Persistent Threats (IEEE TSC 2024)",
+    "Multi-Vision Services Acceleration Framework for IoT Devices (IEEE ICWS 2024)",
+    "Tensorized Unaligned Multi-view Clustering with Multi-scale Representation Learning (ACM SIGKDD 2024)",
+    "Weakly Supervised Object Detection With Class Prototypical Network (IEEE TMM 2023)"
+  ],
+  "research_directions": [
+    "大数据智能、数据治理与隐私保护、先进计算、智能交通系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8408",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

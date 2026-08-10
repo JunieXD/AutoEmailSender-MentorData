@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5927ce067a94efb2aa44"
+      ],
+      "ended_at": null,
+      "id": "aff_f04e273ac249b6feb845",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_d3d2e2c7389995ea9d2c",
+      "source_url": "https://cs.pku.edu.cn/info/1078/1676.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5927ce067a94efb2aa44"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f04e273ac249b6feb845",
+      "claim_ids": [
+        "claim_5927ce067a94efb2aa44"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunyc@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1078/1676.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sunyc@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5927ce067a94efb2aa44"
+    ],
+    "email": [
+      "claim_5927ce067a94efb2aa44"
+    ],
+    "name": [
+      "claim_5927ce067a94efb2aa44"
+    ],
+    "profile_url": [
+      "claim_5927ce067a94efb2aa44"
+    ],
+    "research_directions": [
+      "claim_5927ce067a94efb2aa44"
+    ],
+    "status": [
+      "claim_5927ce067a94efb2aa44"
+    ],
+    "title": [
+      "claim_5927ce067a94efb2aa44"
+    ]
+  },
+  "id": "mentor_1ec2bfef823f04fd813b",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5927ce067a94efb2aa44"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙艳春"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f04e273ac249b6feb845",
+      "claim_ids": [
+        "claim_5927ce067a94efb2aa44"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1078/1676.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件工程、服务计算、大数据分析、智慧教育技术等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1078/1676.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

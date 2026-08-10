@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_975a62f8e3f95700d0af"
+      ],
+      "ended_at": null,
+      "id": "aff_b07b3d482d319ed2bd58",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_f42afea26b5a81cb2702",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1093.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_975a62f8e3f95700d0af"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b07b3d482d319ed2bd58",
+      "claim_ids": [
+        "claim_975a62f8e3f95700d0af"
+      ],
+      "is_primary": true,
+      "normalized_value": "smhou@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1093.htm",
+      "status": "current",
+      "type": "email",
+      "value": "smhou@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_975a62f8e3f95700d0af"
+    ],
+    "email": [
+      "claim_975a62f8e3f95700d0af"
+    ],
+    "name": [
+      "claim_975a62f8e3f95700d0af"
+    ],
+    "profile_url": [
+      "claim_975a62f8e3f95700d0af"
+    ],
+    "research_directions": [
+      "claim_975a62f8e3f95700d0af"
+    ],
+    "status": [
+      "claim_975a62f8e3f95700d0af"
+    ],
+    "title": [
+      "claim_975a62f8e3f95700d0af"
+    ]
+  },
+  "id": "mentor_b1e326eb1eac4b3e341e",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_975a62f8e3f95700d0af"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "侯士敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b07b3d482d319ed2bd58",
+      "claim_ids": [
+        "claim_975a62f8e3f95700d0af"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1093.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "分子电子学,扫描探针显微学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1093.htm",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

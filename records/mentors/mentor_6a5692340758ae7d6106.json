@@ -1,0 +1,88 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4436fbfd442e71cdb11e"
+      ],
+      "ended_at": null,
+      "id": "aff_093803e854d4780b0a77",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9844/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_4436fbfd442e71cdb11e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_093803e854d4780b0a77",
+      "claim_ids": [
+        "claim_4436fbfd442e71cdb11e"
+      ],
+      "is_primary": true,
+      "normalized_value": "maxiaole@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9844/",
+      "status": "current",
+      "type": "email",
+      "value": "maxiaole@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4436fbfd442e71cdb11e"
+    ],
+    "email": [
+      "claim_4436fbfd442e71cdb11e"
+    ],
+    "name": [
+      "claim_4436fbfd442e71cdb11e"
+    ],
+    "research_directions": [
+      "claim_4436fbfd442e71cdb11e"
+    ],
+    "status": [
+      "claim_4436fbfd442e71cdb11e"
+    ],
+    "title": [
+      "claim_4436fbfd442e71cdb11e"
+    ]
+  },
+  "id": "mentor_6a5692340758ae7d6106",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4436fbfd442e71cdb11e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马晓乐"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "新一代电子信息技术",
+    "人工智能",
+    "软件工程",
+    "大数据技术与工程",
+    "数字媒体信息处理与智能分析",
+    "智能感知与具身智能",
+    "计算机技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9844/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

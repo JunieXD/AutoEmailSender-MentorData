@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c90869ecc3c583ee25d6"
+      ],
+      "ended_at": null,
+      "id": "aff_cea9354b63aadc3e306f",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/6037",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c90869ecc3c583ee25d6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cea9354b63aadc3e306f",
+      "claim_ids": [
+        "claim_c90869ecc3c583ee25d6"
+      ],
+      "is_primary": true,
+      "normalized_value": "hyin@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/6037",
+      "status": "current",
+      "type": "email",
+      "value": "hyin@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c90869ecc3c583ee25d6"
+    ],
+    "email": [
+      "claim_c90869ecc3c583ee25d6"
+    ],
+    "name": [
+      "claim_c90869ecc3c583ee25d6"
+    ],
+    "profile_url": [
+      "claim_c90869ecc3c583ee25d6"
+    ],
+    "recent_papers": [
+      "claim_c90869ecc3c583ee25d6"
+    ],
+    "research_directions": [
+      "claim_c90869ecc3c583ee25d6"
+    ],
+    "status": [
+      "claim_c90869ecc3c583ee25d6"
+    ],
+    "title": [
+      "claim_c90869ecc3c583ee25d6"
+    ]
+  },
+  "id": "mentor_64e2e4b1e004987d600c",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c90869ecc3c583ee25d6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cea9354b63aadc3e306f",
+      "claim_ids": [
+        "claim_c90869ecc3c583ee25d6"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/6037"
+    }
+  ],
+  "recent_papers": [
+    "UniDxMD: Towards unified representation for cross-modal unsupervised domain adaptation in 3d semantic segmentation",
+    "EnIter: Enhancing iterative multi-view depth estimation with universal contextual hints",
+    "Gradual interaction network for stereo matching",
+    "Enhanced feature pyramid for multi-view stereo with adaptive correlation cost volume",
+    "SP-AI2: Sparse prior guided cost construction and adaptive intra and inter scale cost aggregation for multi-view depth estimation",
+    "Research on Mileage Deviation Calibration Method of Track Geometry Dynamic Inspection Data Based on Improved DTW Algorithm",
+    "Adaptive Neighbor Embedding for Efficient Stereo Matching",
+    "Estimating intrinsic characteristics of images for shadow removal"
+  ],
+  "research_directions": [
+    "计算机视觉、机器学习、智能信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/6037",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

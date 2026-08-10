@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8fbd5cde69a967aecf30"
+      ],
+      "ended_at": null,
+      "id": "aff_0d77eb1a0684848347bd",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7957",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8fbd5cde69a967aecf30"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0d77eb1a0684848347bd",
+      "claim_ids": [
+        "claim_8fbd5cde69a967aecf30"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhliu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7957",
+      "status": "current",
+      "type": "email",
+      "value": "zhliu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8fbd5cde69a967aecf30"
+    ],
+    "email": [
+      "claim_8fbd5cde69a967aecf30"
+    ],
+    "name": [
+      "claim_8fbd5cde69a967aecf30"
+    ],
+    "profile_url": [
+      "claim_8fbd5cde69a967aecf30"
+    ],
+    "recent_papers": [
+      "claim_8fbd5cde69a967aecf30"
+    ],
+    "research_directions": [
+      "claim_8fbd5cde69a967aecf30"
+    ],
+    "status": [
+      "claim_8fbd5cde69a967aecf30"
+    ],
+    "title": [
+      "claim_8fbd5cde69a967aecf30"
+    ]
+  },
+  "id": "mentor_c60b99734922d79ecd7e",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8fbd5cde69a967aecf30"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘真"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0d77eb1a0684848347bd",
+      "claim_ids": [
+        "claim_8fbd5cde69a967aecf30"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7957"
+    }
+  ],
+  "recent_papers": [
+    "Yannan Wang, Zhen Liu*, Chong Geng, Ruiqi Liu, Guoqiang Zhang, Feng Liu. Maintaining Content Strong Consistency from an Edge Caching Perspective: An Offline Reinforcement Learning Approach. IEEE Transactions on Mobile Computing (TMC). 2026, 25(8):12521-12535.",
+    "Yiran Li, Zhen Liu*, Ze Kou, Yannan Wang, Guoqiang Zhang, Yidong Li, Yongqi Sun. Real-time Adaptive Partition and Resource Allocation for Multi-user End-cloud Inference Collaboration in Mobile Environment. IEEE Transactions on Mobile Computing (TMC). 2024, 23(12):13076-13094.",
+    "Chong Geng, Zhen Liu*, Yannan Wang, Yiran Li. Distrubuted Cloud-Edge Scheduling for Multimedia Data Requests: A MARL Approach. IEEE International Conference on Multimedia&Expo (ICME). Mantes, France. June 30-July 4, 2025.",
+    "Yibo Gao, Zhen Liu*, Xinxin Yang, Sibo Lu, Yafan Yuan. Disentangled Multi-Graph Convolution for Cross-Domain Recommendation. ACM Transactions on Knowledge Discovery from Data (TKDD). 2025, 19(3): 1-28.",
+    "Xinxin Yang, Zhen Liu*, Xiaoman Lu, Yafan Yuan, Sibo Lu, Yibo Gao. Contrastive Disentangled Representation Learning for Debiasing Recommendation with Uniform Data. The 33rd ACM International Conference on Information and Knowledge Management (CIKM). Boise, USA. Oct. 21-25, 2024:4188-4192."
+  ],
+  "research_directions": [
+    "云计算与边缘计算(云边端协同训练和推理、模型压缩边缘部署,云边端协同存储)",
+    "推荐算法和推荐系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7957",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

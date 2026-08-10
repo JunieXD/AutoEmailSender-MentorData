@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aa6a2f96957d54c0d91b"
+      ],
+      "ended_at": null,
+      "id": "aff_ec0a0ccbda3466aba7b7",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_fb2626fd6d0625cea264",
+      "source_url": "https://faculty.bjtu.edu.cn/8580",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aa6a2f96957d54c0d91b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec0a0ccbda3466aba7b7",
+      "claim_ids": [
+        "claim_aa6a2f96957d54c0d91b"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangdong@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8580",
+      "status": "current",
+      "type": "email",
+      "value": "wangdong@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aa6a2f96957d54c0d91b"
+    ],
+    "email": [
+      "claim_aa6a2f96957d54c0d91b"
+    ],
+    "name": [
+      "claim_aa6a2f96957d54c0d91b"
+    ],
+    "profile_url": [
+      "claim_aa6a2f96957d54c0d91b"
+    ],
+    "recent_papers": [
+      "claim_aa6a2f96957d54c0d91b"
+    ],
+    "research_directions": [
+      "claim_aa6a2f96957d54c0d91b"
+    ],
+    "status": [
+      "claim_aa6a2f96957d54c0d91b"
+    ],
+    "title": [
+      "claim_aa6a2f96957d54c0d91b"
+    ]
+  },
+  "id": "mentor_7b0c2bd2fd4f7b3d3fe7",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aa6a2f96957d54c0d91b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ec0a0ccbda3466aba7b7",
+      "claim_ids": [
+        "claim_aa6a2f96957d54c0d91b"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8580"
+    }
+  ],
+  "recent_papers": [
+    "Dual-Branch Cross-Layer Information Flow Network for Camouflaged Object Detection in Complex Scenes (2025)",
+    "HE-BiDet: A Hardware Efficient Binary Neural Network Accelerator for Object Detection in SAR Images (2025)",
+    "An FPGA-based binary neural network accelerator with enhanced hardware efficiency and data reuse (2025)",
+    "Sparse Convolution FPGA Accelerator Based on Multi-Bank Hash Selection (2025)",
+    "BNN-SAM: Improving generalization of binary object detector by Seeking Flat Minima (2024)"
+  ],
+  "research_directions": [
+    "人工智能和计算机视觉算法/软件设计",
+    "人工智能处理器/系统设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8580",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

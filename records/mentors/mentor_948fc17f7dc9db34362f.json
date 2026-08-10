@@ -1,0 +1,88 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dab8e70cf49a40aca3b4"
+      ],
+      "ended_at": null,
+      "id": "aff_96801f512f075de71edf",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/7989/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_dab8e70cf49a40aca3b4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96801f512f075de71edf",
+      "claim_ids": [
+        "claim_dab8e70cf49a40aca3b4"
+      ],
+      "is_primary": true,
+      "normalized_value": "chezhang@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7989/",
+      "status": "current",
+      "type": "email",
+      "value": "chezhang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dab8e70cf49a40aca3b4"
+    ],
+    "email": [
+      "claim_dab8e70cf49a40aca3b4"
+    ],
+    "name": [
+      "claim_dab8e70cf49a40aca3b4"
+    ],
+    "research_directions": [
+      "claim_dab8e70cf49a40aca3b4"
+    ],
+    "status": [
+      "claim_dab8e70cf49a40aca3b4"
+    ],
+    "title": [
+      "claim_dab8e70cf49a40aca3b4"
+    ]
+  },
+  "id": "mentor_948fc17f7dc9db34362f",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dab8e70cf49a40aca3b4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "章春娥"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "数字媒体信息处理与智能分析",
+    "新一代电子信息技术",
+    "软件工程",
+    "人工智能",
+    "大数据技术与工程",
+    "网络智能与移动计算",
+    "计算机技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7989/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

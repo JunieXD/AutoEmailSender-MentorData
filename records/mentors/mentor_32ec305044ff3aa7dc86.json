@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a487535b84cb1a9d05e9"
+      ],
+      "ended_at": null,
+      "id": "aff_384bc485a1466e02a8c6",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_cac70a7727f65a2d5598",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2241.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a487535b84cb1a9d05e9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_384bc485a1466e02a8c6",
+      "claim_ids": [
+        "claim_a487535b84cb1a9d05e9"
+      ],
+      "is_primary": true,
+      "normalized_value": "qutianshu@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://www.cis.pku.edu.cn/info/1362/2241.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qutianshu@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a487535b84cb1a9d05e9"
+    ],
+    "email": [
+      "claim_a487535b84cb1a9d05e9"
+    ],
+    "name": [
+      "claim_a487535b84cb1a9d05e9"
+    ],
+    "profile_url": [
+      "claim_a487535b84cb1a9d05e9"
+    ],
+    "research_directions": [
+      "claim_a487535b84cb1a9d05e9"
+    ],
+    "status": [
+      "claim_a487535b84cb1a9d05e9"
+    ],
+    "title": [
+      "claim_a487535b84cb1a9d05e9"
+    ]
+  },
+  "id": "mentor_32ec305044ff3aa7dc86",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a487535b84cb1a9d05e9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曲天书"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_384bc485a1466e02a8c6",
+      "claim_ids": [
+        "claim_a487535b84cb1a9d05e9"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://www.cis.pku.edu.cn/info/1362/2241.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "音频编码,空间听觉,声源定位与增强"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cis.pku.edu.cn/info/1362/2241.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

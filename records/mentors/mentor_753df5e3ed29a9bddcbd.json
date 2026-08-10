@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c44c2f13140c1a2e6103"
+      ],
+      "ended_at": null,
+      "id": "aff_17458c2138680ba2b26f",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a746c189434c17b999b2",
+      "source_url": "https://cs.pku.edu.cn/info/1062/1612.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c44c2f13140c1a2e6103"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_17458c2138680ba2b26f",
+      "claim_ids": [
+        "claim_c44c2f13140c1a2e6103"
+      ],
+      "is_primary": true,
+      "normalized_value": "pekingchenwei@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://cs.pku.edu.cn/info/1062/1612.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pekingchenwei@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c44c2f13140c1a2e6103"
+    ],
+    "email": [
+      "claim_c44c2f13140c1a2e6103"
+    ],
+    "name": [
+      "claim_c44c2f13140c1a2e6103"
+    ],
+    "profile_url": [
+      "claim_c44c2f13140c1a2e6103"
+    ],
+    "research_directions": [
+      "claim_c44c2f13140c1a2e6103"
+    ],
+    "status": [
+      "claim_c44c2f13140c1a2e6103"
+    ],
+    "title": [
+      "claim_c44c2f13140c1a2e6103"
+    ]
+  },
+  "id": "mentor_753df5e3ed29a9bddcbd",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c44c2f13140c1a2e6103"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈薇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_17458c2138680ba2b26f",
+      "claim_ids": [
+        "claim_c44c2f13140c1a2e6103"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://cs.pku.edu.cn/info/1062/1612.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据库与数据挖掘、非结构化数据管理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.pku.edu.cn/info/1062/1612.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

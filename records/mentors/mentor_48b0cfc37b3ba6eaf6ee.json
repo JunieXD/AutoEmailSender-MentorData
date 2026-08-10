@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d227e0f4ce859e5cd744"
+      ],
+      "ended_at": null,
+      "id": "aff_c5aa0f775779ca616da9",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_bf1d3cf066307af9de74",
+      "source_url": "https://faculty.bjtu.edu.cn/9882",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d227e0f4ce859e5cd744"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c5aa0f775779ca616da9",
+      "claim_ids": [
+        "claim_d227e0f4ce859e5cd744"
+      ],
+      "is_primary": true,
+      "normalized_value": "wei.wang@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9882",
+      "status": "current",
+      "type": "email",
+      "value": "wei.wang@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d227e0f4ce859e5cd744"
+    ],
+    "email": [
+      "claim_d227e0f4ce859e5cd744"
+    ],
+    "name": [
+      "claim_d227e0f4ce859e5cd744"
+    ],
+    "profile_url": [
+      "claim_d227e0f4ce859e5cd744"
+    ],
+    "recent_papers": [
+      "claim_d227e0f4ce859e5cd744"
+    ],
+    "research_directions": [
+      "claim_d227e0f4ce859e5cd744"
+    ],
+    "status": [
+      "claim_d227e0f4ce859e5cd744"
+    ],
+    "title": [
+      "claim_d227e0f4ce859e5cd744"
+    ]
+  },
+  "id": "mentor_48b0cfc37b3ba6eaf6ee",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d227e0f4ce859e5cd744"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c5aa0f775779ca616da9",
+      "claim_ids": [
+        "claim_d227e0f4ce859e5cd744"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9882"
+    }
+  ],
+  "recent_papers": [
+    "SI-Edit: Toward Sketch-Instruction Guided Local Image Editing with Pixel-Level Precision (ACM MM 2026)",
+    "Compass-RoPE: Isotropic Rotary Position Embeddings for Vision Transformers (ICML 2026)",
+    "All-in-One Slider for Attribute Manipulation in Diffusion Models (CVPR 2026)",
+    "Sharpness-aware Fine-Tuning for OOD Detection (IEEE TIP 2026)",
+    "A Unified Masked Jigsaw Puzzle Framework for Vision and Language Models (IEEE TPAMI 2025)",
+    "DCI: Dual-Conditional Inversion for Boosting Diffusion-Based Image Editing (NeurIPS 2025)"
+  ],
+  "research_directions": [
+    "计算机视觉、机器学习、AIGC、图像/视频生成与风格转换、伪造图像检测、OOD检测与域泛化、人脸识别、人体动作识别、图像分割、目标检测、类脑机器学习、扩散模型、对抗生成网络、神经辐射场、变分自编码器、Transformer"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9882",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

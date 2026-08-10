@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1a2b71db32f975674172"
+      ],
+      "ended_at": null,
+      "id": "aff_202996517ac30a960a2d",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_c23623e3cd4dcb4d1c02",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1127.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_1a2b71db32f975674172"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_202996517ac30a960a2d",
+      "claim_ids": [
+        "claim_1a2b71db32f975674172"
+      ],
+      "is_primary": true,
+      "normalized_value": "lili_15@pku.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://ele.pku.edu.cn/info/1023/1127.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lili_15@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1a2b71db32f975674172"
+    ],
+    "email": [
+      "claim_1a2b71db32f975674172"
+    ],
+    "name": [
+      "claim_1a2b71db32f975674172"
+    ],
+    "profile_url": [
+      "claim_1a2b71db32f975674172"
+    ],
+    "research_directions": [
+      "claim_1a2b71db32f975674172"
+    ],
+    "status": [
+      "claim_1a2b71db32f975674172"
+    ]
+  },
+  "id": "mentor_df4a547f9b84409415a2",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1a2b71db32f975674172"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李力"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_202996517ac30a960a2d",
+      "claim_ids": [
+        "claim_1a2b71db32f975674172"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://ele.pku.edu.cn/info/1023/1127.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://ele.pku.edu.cn/info/1023/1127.htm",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

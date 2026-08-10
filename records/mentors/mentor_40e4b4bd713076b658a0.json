@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b3211422327781d22663"
+      ],
+      "ended_at": null,
+      "id": "aff_64fc1de32df5297265bd",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/7954",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b3211422327781d22663"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_64fc1de32df5297265bd",
+      "claim_ids": [
+        "claim_b3211422327781d22663"
+      ],
+      "is_primary": true,
+      "normalized_value": "lxtian@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/7954",
+      "status": "current",
+      "type": "email",
+      "value": "lxtian@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b3211422327781d22663"
+    ],
+    "email": [
+      "claim_b3211422327781d22663"
+    ],
+    "name": [
+      "claim_b3211422327781d22663"
+    ],
+    "profile_url": [
+      "claim_b3211422327781d22663"
+    ],
+    "recent_papers": [
+      "claim_b3211422327781d22663"
+    ],
+    "research_directions": [
+      "claim_b3211422327781d22663"
+    ],
+    "status": [
+      "claim_b3211422327781d22663"
+    ],
+    "title": [
+      "claim_b3211422327781d22663"
+    ]
+  },
+  "id": "mentor_40e4b4bd713076b658a0",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b3211422327781d22663"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田丽霞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_64fc1de32df5297265bd",
+      "claim_ids": [
+        "claim_b3211422327781d22663"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/7954"
+    }
+  ],
+  "recent_papers": [
+    "Shanshan Xu, Le Xu, Yeqing Yang, Lixia Tian*. MAE-Diff: Masked-autoencoder-guided diffusion framework for source-free domain adaptive medical image segmentation. Engineering Applications of Artificial Intelligence. 2025, 162, 112219. (1区)",
+    "Shanshan Xu, Lixia Tian*. DiffCNN: A collaborative framework of diffusion model and CNN for semi-supervised medical image segmentation. Neural Networks 2025, 107813. (2区)",
+    "Xiaoxi Tian, Hao Ma, Yun Guan, Le Xu, Jiangcong Liu, andLixia Tian*. Transformer^3: A pure Transformer framework for fMRI-based representations of human brain function. IEEE Journal of Biomedical and Health Informatics, 2025, 29: 468-481. (1区)",
+    "Hao Ma, Yongkang Xu,Lixia Tian*.RS-MAE: Region-state masked autoencoder for neuropsychiatric disorder classifications based on resting-state fMRI.IEEE Transactions on Neural Networks and Learning Systems. 2025, 36:10707- 10720. (1区)",
+    "Yongkang Xu, Lianhong Duan, Zhicheng Zhang, Tiansheng Sun, Yang Zhang,Lixia Tian*. SVVD-Net: A Framework with Relative Position Constraints for Vertebral Vertex Detection. Biomedical Signal Processing and Control. 2025,106, 107746. (3区)"
+  ],
+  "research_directions": [
+    "机器学习与认知计算",
+    "人工智能",
+    "计算机技术",
+    "大数据技术与工程",
+    "软件工程",
+    "数据与知识工程",
+    "新一代电子信息技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/7954",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

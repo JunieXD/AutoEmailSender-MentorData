@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8050e4ed448aff026055"
+      ],
+      "ended_at": null,
+      "id": "aff_572d3949bbe049fe90a2",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9544",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_8050e4ed448aff026055"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_572d3949bbe049fe90a2",
+      "claim_ids": [
+        "claim_8050e4ed448aff026055"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanglu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9544",
+      "status": "current",
+      "type": "email",
+      "value": "yanglu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8050e4ed448aff026055"
+    ],
+    "email": [
+      "claim_8050e4ed448aff026055"
+    ],
+    "name": [
+      "claim_8050e4ed448aff026055"
+    ],
+    "profile_url": [
+      "claim_8050e4ed448aff026055"
+    ],
+    "recent_papers": [
+      "claim_8050e4ed448aff026055"
+    ],
+    "research_directions": [
+      "claim_8050e4ed448aff026055"
+    ],
+    "status": [
+      "claim_8050e4ed448aff026055"
+    ]
+  },
+  "id": "mentor_f430789ab1e0bb0d3912",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8050e4ed448aff026055"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陆杨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_572d3949bbe049fe90a2",
+      "claim_ids": [
+        "claim_8050e4ed448aff026055"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/9544"
+    }
+  ],
+  "recent_papers": [
+    "Two-Stage Graph Attention Network for Joint and Scalable Optimization of RIS-Aided Transmission",
+    "A Survey on Pinching-Antenna Systems: Optimization Techniques, Intelligent Designs, and Multifunctional Applications",
+    "Embodied AI-Enhanced IoMT Edge Computing: UAV Trajectory Optimization and Task Offloading with Mobility Prediction",
+    "Covert Communications in MEC-Based Networked ISAC Systems Towards Low-Altitude Economy",
+    "Agentic Graph Neural Networks for Wireless Communications and Networking Towards Edge General Intelligence: A Survey"
+  ],
+  "research_directions": [
+    "优化理论及应用、机器学习赋能移动通信网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9544",
+  "title": null,
+  "updated_at": "2026-08-10T07:30:52Z"
+}

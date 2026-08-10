@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e6d0fa9a42c7b6c64f03"
+      ],
+      "ended_at": null,
+      "id": "aff_840f2ef4477384d4876a",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_a33d6bd5e5916952d3de",
+      "source_url": "https://faculty.bjtu.edu.cn/8029",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e6d0fa9a42c7b6c64f03"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_840f2ef4477384d4876a",
+      "claim_ids": [
+        "claim_e6d0fa9a42c7b6c64f03"
+      ],
+      "is_primary": true,
+      "normalized_value": "xzzhou@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/8029",
+      "status": "current",
+      "type": "email",
+      "value": "xzzhou@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ],
+    "email": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ],
+    "name": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ],
+    "profile_url": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ],
+    "recent_papers": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ],
+    "research_directions": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ],
+    "status": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ],
+    "title": [
+      "claim_e6d0fa9a42c7b6c64f03"
+    ]
+  },
+  "id": "mentor_4ebb0bade00f1e6fe08f",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e6d0fa9a42c7b6c64f03"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周雪忠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_840f2ef4477384d4876a",
+      "claim_ids": [
+        "claim_e6d0fa9a42c7b6c64f03"
+      ],
+      "observed_at": "2026-08-10T07:30:52Z",
+      "status": "current",
+      "url": "https://faculty.bjtu.edu.cn/8029"
+    }
+  ],
+  "recent_papers": [
+    "Meta relation-aware Metric Learning Framework for Few-Shot Uncertain Knowledge Graph Completion, IEEE TKDE 2026",
+    "Structure-Aware Zero-Shot Relational Learning for Knowledge Graphs without External Knowledge, ACL Findings 2026",
+    "FedCE: A Contrast Enhancement Federated Learning Method for Heterogeneous Medical Named Entity Recognition, Tsinghua Science and Technology, 2025",
+    "KGCRR: An Effective Metric-Driven Knowledge Graph Completion Framework, AAAI-25, 2025",
+    "Distribution-aware neural network: A novel patient representation learning algorithm for Traditional Chinese medicine diagnosis prediction, Engineering Applications of Artificial Intelligence, 2026"
+  ],
+  "research_directions": [
+    "数据挖掘、机器学习、知识图谱与大语言模型及其在医学领域的人工智能应用研究,网络医学和网络药理学等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/8029",
+  "title": "教授",
+  "updated_at": "2026-08-10T07:30:52Z"
+}

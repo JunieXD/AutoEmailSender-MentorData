@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_60d6d69c7c701292c168"
+      ],
+      "ended_at": null,
+      "id": "aff_f78f5c06d901414f48be",
+      "is_primary": true,
+      "observed_at": "2026-08-10T07:30:52Z",
+      "organization_id": "org_auto_53877ed9b876daca30aa",
+      "source_url": "https://faculty.bjtu.edu.cn/9417/",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_60d6d69c7c701292c168"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f78f5c06d901414f48be",
+      "claim_ids": [
+        "claim_60d6d69c7c701292c168"
+      ],
+      "is_primary": true,
+      "normalized_value": "haiyangliu@bjtu.edu.cn",
+      "observed_at": "2026-08-10T07:30:52Z",
+      "source_url": "https://faculty.bjtu.edu.cn/9417/",
+      "status": "current",
+      "type": "email",
+      "value": "haiyangliu@bjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-10T07:30:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_60d6d69c7c701292c168"
+    ],
+    "email": [
+      "claim_60d6d69c7c701292c168"
+    ],
+    "name": [
+      "claim_60d6d69c7c701292c168"
+    ],
+    "research_directions": [
+      "claim_60d6d69c7c701292c168"
+    ],
+    "status": [
+      "claim_60d6d69c7c701292c168"
+    ],
+    "title": [
+      "claim_60d6d69c7c701292c168"
+    ]
+  },
+  "id": "mentor_39dd0f826cab8c89ca80",
+  "last_verified_at": "2026-08-10T07:30:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_60d6d69c7c701292c168"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘海洋"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "软件工程",
+    "数据与知识工程",
+    "大数据技术与工程",
+    "人工智能",
+    "计算机技术",
+    "机器学习与认知计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-10T07:30:52Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.bjtu.edu.cn/9417/",
+  "title": "讲师",
+  "updated_at": "2026-08-10T07:30:52Z"
+}
