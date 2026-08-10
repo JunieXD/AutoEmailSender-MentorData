@@ -8,6 +8,7 @@ const vm = require("node:vm");
 
 const context = {};
 context.globalThis = context;
+context.atob = globalThis.atob;
 vm.runInNewContext(
   fs.readFileSync(path.join(__dirname, "..", "site", "report-review-logic.js"), "utf8"),
   context,
@@ -74,4 +75,40 @@ test("研究方向和论文按行去空并去重", () => {
     "器件建模",
     "射频电路",
   ]);
+});
+
+test("解码 GitHub Contents API 文件并保留原始字节", () => {
+  const source = Buffer.from('{"name":"导师"}\n', "utf8");
+  const decoded = logic.decodeGitHubFile({
+    type: "file",
+    path: "reports/pending/issue-24.json",
+    encoding: "base64",
+    size: source.byteLength,
+    content: source.toString("base64").replace(/(.{8})/gu, "$1\n"),
+  }, "reports/pending/issue-24.json", 1_000_000);
+
+  assert.deepEqual(Buffer.from(decoded), source);
+});
+
+test("拒绝路径、大小或编码不一致的 GitHub 文件", () => {
+  const valid = {
+    type: "file",
+    path: "reports/pending/issue-24.json",
+    encoding: "base64",
+    size: 2,
+    content: "e30=",
+  };
+
+  assert.throws(
+    () => logic.decodeGitHubFile({ ...valid, path: "reports/pending/issue-25.json" }, valid.path, 100),
+    /文件信息不正确/u,
+  );
+  assert.throws(
+    () => logic.decodeGitHubFile({ ...valid, size: 3 }, valid.path, 100),
+    /文件大小不一致/u,
+  );
+  assert.throws(
+    () => logic.decodeGitHubFile({ ...valid, content: "not base64" }, valid.path, 100),
+    /不是有效的 Base64/u,
+  );
 });

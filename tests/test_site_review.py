@@ -25,11 +25,14 @@ def test_report_review_page_is_safe_and_never_requires_json_editing() -> None:
     assert '<script src="report-review.js" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
-    assert "https://raw.githubusercontent.com" in html
+    assert "https://raw.githubusercontent.com" not in html
     assert "script-src 'self'" in html
     assert "form-action 'none'" in html
     assert "mentor-data-report-review:v1" in script
     assert "crypto.subtle.digest" in script
+    assert "/contents/${proposalPath}" in script
+    assert "MentorReportReviewLogic.decodeGitHubFile" in script
+    assert "raw.githubusercontent.com" not in script
     assert "innerHTML" not in script
     assert "outerHTML" not in script
     assert "eval(" not in script
