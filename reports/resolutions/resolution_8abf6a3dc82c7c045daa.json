@@ -1,6 +1,5 @@
 {
   "accepted": {},
-  "affected_fields": "邮箱",
   "before": {
     "affiliations": [
       {
@@ -64,31 +63,29 @@
     "status_source_url": "https://sic.hnu.edu.cn/info/1198/2183.htm",
     "title": "教授"
   },
-  "created_at": "2026-08-10T03:38:05Z",
-  "decision": "pending",
+  "decided_at": "2026-08-10T04:42:08Z",
+  "decision": "rejected",
   "evidence_urls": [
     "https://sic.hnu.edu.cn/info/1198/2183.htm"
   ],
-  "id": "report_proposal_issue_24",
-  "issue": {
-    "number": 24,
-    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/24"
-  },
-  "kind": "correction_report",
+  "id": "resolution_8abf6a3dc82c7c045daa",
   "mentor_id": "mentor_3976145556bffe00da49",
-  "moderator_reason": null,
+  "moderator": {
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
   "proposed": {
     "explanation": "老师的中文邮箱是:liguoli_lily@hnu.edu.cn",
     "value": "中文邮箱是:liguoli_lily@hnu.edu.cn"
   },
-  "report_type": "姓名、邮箱、学校或其他内容有误",
-  "reporter": {
-    "github_login_at_submission": "JunieXD",
-    "github_user_id": 107397009,
-    "submitted_at": "2026-08-10T03:37:49Z"
+  "reason": "老师官网的中文邮箱有对应另一个主页",
+  "report_issue": {
+    "number": 24,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/24"
   },
-  "review_reasons": [
-    "corrections_require_manual_review"
-  ],
+  "reporter": {
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
   "schema_version": 1
 }
