@@ -1,0 +1,94 @@
+{
+  "accepted": {},
+  "affected_fields": "邮箱",
+  "before": {
+    "affiliations": [
+      {
+        "ended_at": null,
+        "id": "aff_91f50c7aeda553a83c05",
+        "is_primary": true,
+        "observed_at": "2026-08-07T14:02:43Z",
+        "organization_id": "org_auto_dfe9ab23ef31a0648925",
+        "source_url": "https://sic.hnu.edu.cn/info/1198/2183.htm",
+        "started_at": null,
+        "status": "current",
+        "title": "教授"
+      }
+    ],
+    "contacts": [
+      {
+        "affiliation_id": "aff_91f50c7aeda553a83c05",
+        "is_primary": true,
+        "observed_at": "2026-08-07T14:02:43Z",
+        "source_url": "https://sic.hnu.edu.cn/info/1198/2183.htm",
+        "status": "current",
+        "value": "jean-pierre.raskin@uclouvain.be"
+      }
+    ],
+    "email": "jean-pierre.raskin@uclouvain.be",
+    "last_verified_at": "2026-08-07T14:02:43Z",
+    "name": "Jean-Pierre Raskin",
+    "names": [
+      {
+        "is_primary": true,
+        "kind": "native",
+        "value": "Jean-Pierre Raskin"
+      }
+    ],
+    "organization_id": "org_auto_dfe9ab23ef31a0648925",
+    "profiles": [
+      {
+        "affiliation_id": "aff_91f50c7aeda553a83c05",
+        "observed_at": "2026-08-07T14:02:43Z",
+        "status": "current",
+        "url": "https://sic.hnu.edu.cn/info/1198/2183.htm"
+      }
+    ],
+    "recent_papers": [
+      "A wideband power amplifier and a configurable balanced power amplifier in 22 nm FD-SOI for 5G 24-43 GHz applications, IEEE Transactions on Circuits and Systems I",
+      "AlN/Si interface engineering to mitigate RF losses in MOCVD grown GaN-on-Si substrates, Applied Physics Letters",
+      "Double Buried Oxide Trap-Rich substrates for high frequency applications”, IEEE Electron Device Letters",
+      "RF modelling of trap-rich passivated semiconductor substrates: Part I - Static and dynamic physics of carriers and traps, IEEE Transactions on Electron Devices",
+      "RF modelling of trap-rich passivated semiconductor substrates: Part II - Parameter impact on harmonic distortion, IEEE Transactions on Electron Devices",
+      "SOI technologies for RF and millimeter-wave integrated circuits, IEEE Journal of the Electron Devices Society (invited article)",
+      "On the Separate Extraction of Self-Heating and Substrate Effects in FD-SOI MOSFET, IEEE Electron Device Letters",
+      "Improved split CV mobility extraction in 28 nm FD SOI transistors, IEEE Electron Device Letters"
+    ],
+    "research_directions": [
+      "先进SOI MOSFET的建模、宽频表征与制造",
+      "MEMS/NEMS传感器的微纳加工,以及纳米尺度材料本征参数的提取"
+    ],
+    "status": "active",
+    "status_observed_at": "2026-08-07T14:02:43Z",
+    "status_reason": null,
+    "status_source_url": "https://sic.hnu.edu.cn/info/1198/2183.htm",
+    "title": "教授"
+  },
+  "created_at": "2026-08-10T03:38:05Z",
+  "decision": "pending",
+  "evidence_urls": [
+    "https://sic.hnu.edu.cn/info/1198/2183.htm"
+  ],
+  "id": "report_proposal_issue_24",
+  "issue": {
+    "number": 24,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/24"
+  },
+  "kind": "correction_report",
+  "mentor_id": "mentor_3976145556bffe00da49",
+  "moderator_reason": null,
+  "proposed": {
+    "explanation": "老师的中文邮箱是:liguoli_lily@hnu.edu.cn",
+    "value": "中文邮箱是:liguoli_lily@hnu.edu.cn"
+  },
+  "report_type": "姓名、邮箱、学校或其他内容有误",
+  "reporter": {
+    "github_login_at_submission": "JunieXD",
+    "github_user_id": 107397009,
+    "submitted_at": "2026-08-10T03:37:49Z"
+  },
+  "review_reasons": [
+    "corrections_require_manual_review"
+  ],
+  "schema_version": 1
+}
