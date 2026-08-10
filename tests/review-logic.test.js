@@ -8,13 +8,14 @@ const vm = require("node:vm");
 
 const context = {};
 context.globalThis = context;
+context.URL = URL;
 vm.runInNewContext(
   fs.readFileSync(path.join(__dirname, "..", "site", "review-logic.js"), "utf8"),
   context,
 );
 const logic = context.MentorReviewLogic;
 
-test("学院和研究院后缀会进入人工判断但不会默认新建", () => {
+test("学院和研究院后缀会进入人工判断，研究所默认保留为学院下级", () => {
   const school = logic.correctionDefaults(
     { school: "计算机学院", department: "人工智能学院" },
     null,
@@ -32,6 +33,18 @@ test("学院和研究院后缀会进入人工判断但不会默认新建", () =>
   assert.equal(school.savePathCorrection, true);
   assert.equal(institute.kind, "department_as_institute");
   assert.equal(institute.organizationType, "institute");
+  assert.equal(
+    logic.correctionDefaults(
+      { school: "计算机学院", department: "先进计算研究所" },
+      {
+        kind: "department_as_institute",
+        target_organization_id: null,
+        source: "heuristic",
+        reason: "旧版审核建议",
+      },
+    ),
+    null,
+  );
   assert.equal(
     logic.correctionDefaults(
       { school: " 计算机学院 ", department: "计算机学院" },
@@ -107,7 +120,7 @@ test("历史审核结果优先于名称推断", () => {
   assert.equal(suggestion.confidence, "certain");
 });
 
-test("只有机构后缀时要求判断层级，不替审核者做决定", () => {
+test("学院和研究院需要判断层级，研究所默认作为学院下级", () => {
   const suggestion = logic.pathReviewSuggestion(
     {
       university: "示例大学",
@@ -131,8 +144,7 @@ test("只有机构后缀时要求判断层级，不替审核者做决定", () =>
     school: "计算机学院",
     department: "先进计算研究所",
   });
-  assert.equal(researchInstitute.kind, "ambiguous_hierarchy");
-  assert.equal(researchInstitute.action, "review_hierarchy");
+  assert.equal(researchInstitute, null);
 });
 
 test("候选机构优先显示名称、当前批次、同校和同域名相关项", () => {
@@ -198,6 +210,68 @@ test("候选机构优先显示名称、当前批次、同校和同域名相关�
       "org_unrelated_pending",
       "org_unrelated",
     ],
+  );
+});
+
+test("机构搜索支持同时输入学校和学院并优先完整路径", () => {
+  const school = {
+    id: "org_example_cs",
+    canonical_name: "计算机学院",
+    aliases: [],
+    lineage_names: ["示例大学", "计算机学院"],
+    approved_domains: [],
+  };
+  const department = {
+    id: "org_example_ai",
+    canonical_name: "人工智能研究所",
+    aliases: [],
+    lineage_names: ["示例大学", "计算机学院", "人工智能研究所"],
+    approved_domains: [],
+  };
+  const other = {
+    id: "org_other_cs",
+    canonical_name: "计算机学院",
+    aliases: [],
+    lineage_names: ["其他大学", "计算机学院"],
+    approved_domains: [],
+  };
+
+  assert.deepEqual(
+    Array.from(
+      logic.rankOrganizationSearchResults(
+        [department, other, school],
+        "示例大学 计算机学院",
+      ),
+      (organization) => organization.id,
+    ),
+    ["org_example_cs", "org_example_ai"],
+  );
+  assert.deepEqual(
+    Array.from(
+      logic.rankOrganizationSearchResults(
+        [other, school],
+        "示例大学计算机学院",
+      ),
+      (organization) => organization.id,
+    ),
+    ["org_example_cs"],
+  );
+});
+
+test("官方发现来源可以核验，外部个人主页不会被误认为官方域名", () => {
+  assert.equal(
+    logic.hasOfficialEvidence(
+      ["https://faculty.example.edu/mentor/1"],
+      ["example.edu"],
+    ),
+    true,
+  );
+  assert.equal(
+    logic.hasOfficialEvidence(
+      ["https://scholar.google.com/citations?user=example"],
+      ["example.edu"],
+    ),
+    false,
   );
 });
 

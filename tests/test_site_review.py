@@ -7,9 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="styles.css?v=6" />' in html
-    assert '<script src="review-logic.js?v=6" defer></script>' in html
-    assert '<script src="review.js?v=6" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=7" />' in html
+    assert '<script src="review-logic.js?v=7" defer></script>' in html
+    assert '<script src="review.js?v=7" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -156,6 +156,10 @@ def test_review_prioritizes_affiliation_conflicts_and_emits_separate_decisions()
     assert "任职调动" in script
     assert ".identity-resolution" in styles
     assert ".identity-comparison" in styles
+    assert "IDENTITY_CONFLICT_REJECTION_REASON" in script
+    assert 'action.value = "reject"' in script
+    assert "identity-comparison-table" in script
+    assert "pathText(card.group)" in script
 
 
 def test_review_accepts_pending_affiliation_labels_for_new_batch_mentors() -> None:
@@ -178,6 +182,7 @@ def test_review_supports_path_correction_and_independent_targets() -> None:
     assert "target_organization_id" in script
     assert "save_path_correction" in script
     assert "validateFinalAssignmentSources" in script
+    assert "hasOfficialEvidence" in logic
     assert "correctionDefaults" in logic
     assert "requiredSubmittedLevels" in logic
     assert "mergeIndependentCreations" in logic
@@ -195,6 +200,8 @@ def test_review_uses_one_task_workspace_and_plain_reviewer_language() -> None:
     assert 'id="review-task-list"' in html
     assert 'id="workflow-pending-count"' in html
     assert 'class="review-task-main"' in html
+    assert 'id="confirm-review-task"' in html
+    assert "最近处理" in html
     assert "review-result-summary" not in html
     assert "审核导师投稿" in html
     assert "系统会先整理没有争议的内容" not in html
@@ -210,6 +217,12 @@ def test_review_uses_one_task_workspace_and_plain_reviewer_language() -> None:
     assert "额外官方来源域名" not in script
     assert "pathReviewSuggestion" in logic
     assert "rankOrganizationCandidates" in logic
+    assert "rankOrganizationSearchResults" in logic
+    assert "review-task-section-label" in script
+    assert "completed_at" in script
+    assert "focusReviewValidationError" in script
+    assert "organization-create-context" in script
+    assert "忽略非官网详情页" in script
     assert ".review-workspace-grid" in styles
     assert ".review-task-main" in styles
     assert "height: 2.3rem" in styles

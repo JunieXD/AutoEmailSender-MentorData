@@ -9,7 +9,7 @@
     />
     <meta name="referrer" content="no-referrer" />
     <title>投稿审核 · AutoEmailSender 社区导师库</title>
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body class="review-page">
     <a class="skip-link" href="#review-workspace">跳到审核内容</a>
@@ -69,7 +69,7 @@
                 待处理 <span id="task-filter-pending-count">0</span>
               </button>
               <button id="task-filter-done" type="button" role="tab" aria-selected="false">
-                已处理 <span id="task-filter-done-count">0</span>
+                最近处理 <span id="task-filter-done-count">0</span>
               </button>
               <button id="task-filter-all" type="button" role="tab" aria-selected="false">
                 全部 <span id="task-filter-all-count">0</span>
@@ -103,7 +103,8 @@
             <footer class="review-workflow-bar">
               <button id="previous-review-task" class="secondary-button" type="button">上一项</button>
               <p id="workflow-position" aria-live="polite">—</p>
-              <button id="next-review-task" class="primary-button" type="button">下一项</button>
+              <button id="confirm-review-task" class="primary-button" type="button">确认并继续</button>
+              <button id="next-review-task" class="secondary-button" type="button">下一项</button>
             </footer>
           </div>
         </div>
@@ -130,7 +131,7 @@
       </section>
 
     </main>
-    <script src="review-logic.js?v=6" defer></script>
-    <script src="review.js?v=6" defer></script>
+    <script src="review-logic.js?v=7" defer></script>
+    <script src="review.js?v=7" defer></script>
   </body>
 </html>

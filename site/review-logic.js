@@ -17,6 +17,92 @@
     return normalizeOrganizationName(value).replace(/[-—–_/:：|]/gu, "");
   }
 
+  function organizationSearchTokens(value) {
+    return String(value || "")
+      .normalize("NFKC")
+      .toLocaleLowerCase()
+      .split(/[\s/\\|>›→,，;；·•・()（）[\]【】_-]+/u)
+      .map(compactOrganizationName)
+      .filter(Boolean);
+  }
+
+  function rankOrganizationSearchResults(organizations, query) {
+    const tokens = organizationSearchTokens(query);
+    if (!tokens.length) {
+      return [...organizations];
+    }
+    const compactQuery = compactOrganizationName(query);
+    const lastToken = tokens[tokens.length - 1];
+    return organizations
+      .map((organization, index) => {
+        const canonicalName = compactOrganizationName(organization.canonical_name);
+        const aliases = (organization.aliases || [])
+          .map(compactOrganizationName)
+          .filter(Boolean);
+        const lineage = (organization.lineage_names || [])
+          .map(compactOrganizationName)
+          .filter(Boolean);
+        const lineageText = lineage.join("");
+        const searchable = [
+          canonicalName,
+          ...aliases,
+          ...lineage,
+          lineageText,
+          compactOrganizationName(organization.id),
+          ...(organization.approved_domains || []).map(compactOrganizationName),
+        ].filter(Boolean);
+        if (!tokens.every((token) => searchable.some((field) => field.includes(token)))) {
+          return null;
+        }
+
+        let score = 0;
+        if (lineageText === compactQuery) {
+          score += 2200;
+        } else if (lineageText.includes(compactQuery)) {
+          score += 320;
+        }
+        if (canonicalName === compactQuery) {
+          score += 1800;
+        }
+        if (aliases.includes(compactQuery)) {
+          score += 1500;
+        }
+        if (canonicalName === lastToken || aliases.includes(lastToken)) {
+          score += 900;
+        }
+        for (const token of tokens) {
+          if (lineage.includes(token)) {
+            score += 320;
+          } else if (searchable.some((field) => field.startsWith(token))) {
+            score += 120;
+          } else {
+            score += 40;
+          }
+        }
+        score -= Math.max(0, lineage.length - tokens.length) * 8;
+        return { organization, index, score };
+      })
+      .filter(Boolean)
+      .sort((first, second) => second.score - first.score || first.index - second.index)
+      .map(({ organization }) => organization);
+  }
+
+  function hasOfficialEvidence(urls, domains) {
+    const normalizedDomains = (domains || [])
+      .map((domain) => String(domain || "").toLocaleLowerCase().replace(/\.$/u, ""))
+      .filter(Boolean);
+    return (urls || []).some((url) => {
+      try {
+        const hostname = new URL(url).hostname.toLocaleLowerCase().replace(/\.$/u, "");
+        return normalizedDomains.some(
+          (domain) => hostname === domain || hostname.endsWith(`.${domain}`),
+        );
+      } catch {
+        return false;
+      }
+    });
+  }
+
   function pathReviewSuggestion(submitted, suggestion = null) {
     const university = String(submitted?.university || "").normalize("NFKC").trim();
     const school = String(submitted?.school || "").normalize("NFKC").trim();
@@ -75,6 +161,9 @@
         title: "不单独建立这一层",
         reason: "名称与上级学校重复。",
       };
+    }
+    if (department.endsWith("研究所")) {
+      return null;
     }
     if (correctionKindForDepartment(department, school)) {
       return {
@@ -148,10 +237,7 @@
       return null;
     }
     const submittedDepartment = String(department || "").normalize("NFKC").trim();
-    if (
-      submittedDepartment.endsWith("研究院") ||
-      submittedDepartment.endsWith("研究所")
-    ) {
+    if (submittedDepartment.endsWith("研究院")) {
       return "department_as_institute";
     }
     if (submittedDepartment.endsWith("学院")) {
@@ -185,6 +271,14 @@
 
   function correctionDefaults(submitted, suggestion) {
     const serverKind = suggestion?.kind;
+    const suggestedTargetId =
+      typeof suggestion?.target_organization_id === "string"
+        ? suggestion.target_organization_id
+        : null;
+    const submittedDepartment = String(submitted?.department || "").normalize("NFKC").trim();
+    if (submittedDepartment.endsWith("研究所") && !suggestedTargetId) {
+      return null;
+    }
     const inferredKind = correctionKindForDepartment(
       submitted?.department,
       submitted?.school,
@@ -204,10 +298,7 @@
         : kind === "department_as_school"
           ? "名称像学院，请确认层级。"
           : "请确认机构归属";
-    const targetId =
-      typeof suggestion?.target_organization_id === "string"
-        ? suggestion.target_organization_id
-        : null;
+    const targetId = suggestedTargetId;
     return {
       mode: targetId ? "corrected" : "standard",
       targetAction: "existing",
@@ -337,11 +428,13 @@
     correctionDefaults,
     correctionKindForDepartment,
     compactOrganizationName,
+    hasOfficialEvidence,
     mergeIndependentCreations,
     normalizeOrganizationName,
     organizationTypeForCorrection,
     pathReviewSuggestion,
     rankOrganizationCandidates,
+    rankOrganizationSearchResults,
     requiredSubmittedLevels,
   });
 })(globalThis);

@@ -336,7 +336,7 @@ def test_groups_cross_school_rows_and_saves_alias_once(tmp_path: Path) -> None:
         group for group in manifest["groups"] if group["submitted"]["school"] == "AI研究院"
     )
     assert example_group["rows"][0]["profile_url"] == "https://faculty.cs.example.edu/a"
-    assert example_group["source_domains"] == ["cs.example.edu", "faculty.cs.example.edu"]
+    assert example_group["source_domains"] == ["cs.example.edu"]
     assert example_group["source_urls"] == [
         "https://cs.example.edu/a",
         "https://cs.example.edu/b",
@@ -476,7 +476,7 @@ def test_manifest_suggests_department_ending_in_institute_as_sibling_institute(
     }
 
 
-def test_manifest_suggests_department_ending_in_research_institute_for_review(
+def test_manifest_keeps_department_ending_in_research_institute_below_school(
     tmp_path: Path,
 ) -> None:
     root = build_test_repository(tmp_path)
@@ -496,12 +496,8 @@ def test_manifest_suggests_department_ending_in_research_institute_for_review(
         number=42,
     )
 
-    assert manifest["groups"][0]["suggested_path_correction"] == {
-        "kind": "department_as_institute",
-        "target_organization_id": None,
-        "source": "heuristic",
-        "reason": "投稿中的系所名称以“研究所”结尾，可能不是当前学院的下级机构",
-    }
+    assert manifest["groups"][0]["suggested_path_correction"] is None
+    assert manifest["groups"][0]["rows"][0]["title"] == "教授"
 
 
 def test_review_creates_sibling_school_and_reuses_saved_path_correction(
@@ -1082,6 +1078,58 @@ def test_review_validates_source_domains_against_each_mentor_final_target(
 
     with pytest.raises(SubmissionError, match="官方来源不属于所选机构"):
         apply_organization_review(root, comment, pull)
+
+
+def test_review_discards_external_profile_when_official_source_is_valid(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "外部主页老师",
+                "external-profile@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/external-profile",
+                profile_url="https://scholar.google.com/citations?user=example",
+            )
+        ],
+        number=47,
+    )
+    group = manifest["groups"][0]
+    decision = _decision(
+        47,
+        manifest_path,
+        [
+            {
+                "group_id": group["id"],
+                "action": "resolve",
+                "reason": None,
+                "levels": [
+                    _existing("university", "org_example_university"),
+                    _existing("school", "org_example_cs"),
+                    _skip("department"),
+                ],
+                "row_overrides": [],
+                "identity_resolutions": [],
+            }
+        ],
+    )
+    comment, pull = _review_context(root, tmp_path, decision)
+
+    applied = apply_organization_review(root, comment, pull)
+
+    assert applied.mapped_proposals == 1
+    proposal = load_json(
+        root / "proposals" / "batch-issue-47" / "issue-47-row-0001.json"
+    )
+    assert proposal["accepted"]["source_url"] == (
+        "https://cs.example.edu/faculty/external-profile"
+    )
+    assert proposal["accepted"]["profile_url"] is None
 
 
 def test_multiple_groups_reuse_one_independent_school_without_duplicate_creation(
@@ -2028,7 +2076,7 @@ def test_review_rejects_order_dependent_duplicate_affiliation_outcomes(tmp_path:
         apply_organization_review(root, comment, pull)
 
 
-def test_review_accepts_legacy_manifest_without_profile_url(tmp_path: Path) -> None:
+def test_review_accepts_legacy_manifest_without_new_optional_row_fields(tmp_path: Path) -> None:
     root = build_test_repository(tmp_path)
     _, manifest, manifest_path = _prepare(
         root,
@@ -2037,6 +2085,7 @@ def test_review_accepts_legacy_manifest_without_profile_url(tmp_path: Path) -> N
     )
     group = manifest["groups"][0]
     group["rows"][0].pop("profile_url")
+    group["rows"][0].pop("title")
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

@@ -215,11 +215,10 @@ def _heuristic_path_correction(
         or normalize_organization_key(department) == normalize_organization_key(school)
     ):
         return None
-    if department.endswith(("研究院", "研究所")):
+    if department.endswith("研究院"):
         kind = "department_as_institute"
         expected_type = "institute"
-        suffix = "研究所" if department.endswith("研究所") else "研究院"
-        reason = f"投稿中的系所名称以“{suffix}”结尾，可能不是当前学院的下级机构"
+        reason = "投稿中的系所名称以“研究院”结尾，可能不是当前学院的下级机构"
     elif department.endswith("学院"):
         kind = "department_as_school"
         expected_type = "school"
@@ -428,6 +427,7 @@ def _manifest_row(
         "batch_row": proposal["issue"]["batch_row"],
         "name": submitted["name"],
         "email": submitted["email"],
+        "title": submitted.get("title"),
         "profile_url": submitted.get("profile_url"),
         "source_url": submitted["source_url"],
     }
@@ -484,7 +484,6 @@ def create_organization_review_manifest(
         group["source_urls"].add(source_url)
         profile_url = submitted_payload.get("profile_url")
         if profile_url:
-            group["source_domains"].add(hostname_for_url(profile_url))
             group["source_urls"].add(profile_url)
         organization_id = proposal["accepted"].get("organization_id")
         if organization_id is not None:
@@ -1312,6 +1311,8 @@ def apply_organization_review(
                 proposal,
                 pending_proposals=tuple(proposals_by_id.values()),
             )
+            if "title" not in row:
+                expected_row.pop("title", None)
             if "profile_url" not in row:
                 expected_row.pop("profile_url", None)
             # Pending manifests produced before affiliation review existed remain
@@ -1638,10 +1639,8 @@ def apply_organization_review(
         if not proposal_ids:
             continue
         source_domains = {
-            hostname_for_url(source_url)
+            hostname_for_url(row["source_url"])
             for row in corrected_rows
-            for source_url in (row.get("source_url"), row.get("profile_url"))
-            if isinstance(source_url, str) and source_url
         }
         path_corrections.append(
             {
@@ -1668,7 +1667,7 @@ def apply_organization_review(
             raise SubmissionError(f"提案 {proposal_id} 的官方来源不属于所选机构批准域名")
         profile_url = proposal["accepted"].get("profile_url")
         if profile_url and not registry.url_is_approved(profile_url, target_id):
-            raise SubmissionError(f"提案 {proposal_id} 的导师详情页不属于所选机构批准域名")
+            proposal["accepted"]["profile_url"] = None
 
     candidate_data = _candidate_repository_data(
         data,

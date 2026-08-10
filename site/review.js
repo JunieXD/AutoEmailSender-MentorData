@@ -28,6 +28,7 @@ const TYPE_LABELS = {
 const ALL_ORGANIZATION_TYPES = Object.keys(TYPE_LABELS);
 const SCHOOL_ORGANIZATION_TYPES = new Set(["school", "institute"]);
 const DEPARTMENT_ORGANIZATION_TYPES = new Set(["department", "center", "laboratory"]);
+const IDENTITY_CONFLICT_REJECTION_REASON = "同邮箱导师已存在，保留社区库现有记录";
 const ORGANIZATION_TYPE_SUFFIX_RULES = {
   school: [
     ["研究院", "institute"],
@@ -77,6 +78,7 @@ const state = {
   workflowTaskById: new Map(),
   workflowFilter: "pending",
   currentWorkflowTaskId: null,
+  lastCompletionAt: 0,
 };
 
 const nodes = {
@@ -121,6 +123,7 @@ const nodes = {
   copyOpen: document.querySelector("#copy-open-pr"),
   copyStatus: document.querySelector("#copy-status"),
   previousTask: document.querySelector("#previous-review-task"),
+  confirmTask: document.querySelector("#confirm-review-task"),
   nextTask: document.querySelector("#next-review-task"),
   workflowPosition: document.querySelector("#workflow-position"),
 };
@@ -137,6 +140,35 @@ function element(tagName, className, text) {
     node.textContent = text;
   }
   return node;
+}
+
+class ReviewValidationError extends Error {
+  constructor(message, { card = null, draft = null, row = null, focusTarget = null } = {}) {
+    super(message);
+    this.name = "ReviewValidationError";
+    this.taskId = card
+      ? `group:${card.group.id}`
+      : draft
+        ? `organization:${draft.key}`
+        : null;
+    this.card = card;
+    this.draft = draft;
+    this.proposalId = row?.proposal_id || null;
+    this.focusTarget = focusTarget;
+  }
+}
+
+function nextCompletionTime() {
+  state.lastCompletionAt = Math.max(Date.now(), state.lastCompletionAt + 1);
+  return state.lastCompletionAt;
+}
+
+function markWorkflowCompleted(item) {
+  item.completedAt = nextCompletionTime();
+}
+
+function clearWorkflowCompletion(item) {
+  item.completedAt = null;
 }
 
 function setStatus(kind, title, detail) {
@@ -553,21 +585,14 @@ function createOrganizationPicker(organizations, placeholder, ariaLabel) {
   }
 
   function renderOptions() {
-    const query = input.value.trim().toLocaleLowerCase();
-    visibleOrganizations = availableOrganizations
-      .filter((organization) => {
-        if (!query || selectedId === organization.id) {
-          return true;
-        }
-        const searchText = [
-          organizationLabel(organization),
-          ...(organization.aliases || []),
-        ]
-          .join(" ")
-          .toLocaleLowerCase();
-        return searchText.includes(query);
-      })
-      .slice(0, 80);
+    const query = input.value.trim();
+    const selectedLabel = selectedId ? state.organizationLabelById.get(selectedId) : null;
+    const searching = Boolean(query && query !== selectedLabel);
+    visibleOrganizations = (
+      searching
+        ? MentorReviewLogic.rankOrganizationSearchResults(availableOrganizations, query)
+        : availableOrganizations
+    ).slice(0, 80);
     menu.replaceChildren();
     highlightedIndex = visibleOrganizations.length ? 0 : -1;
     if (!visibleOrganizations.length) {
@@ -717,6 +742,7 @@ function createOrganizationPicker(organizations, placeholder, ariaLabel) {
     selectOrganization(organization, notify);
     return true;
   };
+  root.focus = () => input.focus();
 
   root.append(input, toggle);
   return root;
@@ -756,6 +782,24 @@ function taskContext(group) {
     String(group.submitted.university || "").trim() ||
     "未填写机构"
   );
+}
+
+function draftPath(draft) {
+  const path = [];
+  let current = draft;
+  while (current) {
+    path.unshift({ level: current.level, name: current.submittedName });
+    current = current.parentKey ? state.organizationDraftByKey.get(current.parentKey) : null;
+  }
+  return path;
+}
+
+function draftParentContext(draft) {
+  return draftPath(draft)
+    .slice(0, -1)
+    .map(({ name }) => name)
+    .filter(Boolean)
+    .join(" / ");
 }
 
 function sourceLinks(group) {
@@ -808,6 +852,7 @@ function buildOrganizationDrafts() {
           suggestedIds: new Set(),
           rowCount: 0,
           confirmed: false,
+          completedAt: null,
           initialized: false,
           targetId: null,
           effectiveDomains: [],
@@ -824,14 +869,13 @@ function buildOrganizationDrafts() {
       }
       draft.groupIds.add(group.id);
       draft.rowCount += group.rows.length;
-      for (const sourceUrl of group.source_urls) {
+      for (const row of group.rows) {
+        const sourceUrl = row.source_url;
         draft.sourceUrlCounts.set(
           sourceUrl,
-          (draft.sourceUrlCounts.get(sourceUrl) || 0) + group.rows.length,
+          (draft.sourceUrlCounts.get(sourceUrl) || 0) + 1,
         );
-      }
-      for (const domain of group.source_domains) {
-        draft.sourceDomains.add(domain);
+        draft.sourceDomains.add(new URL(sourceUrl).hostname.toLocaleLowerCase().replace(/\.$/u, ""));
       }
       const suggestedId = suggested.get(level);
       if (suggestedId) {
@@ -904,9 +948,15 @@ function createOrganizationDraftEditor(draft) {
   const details = element("details", `organization-draft organization-${draft.level}`);
   const summary = element("summary", "organization-draft-summary");
   const summaryIdentity = element("span", "organization-summary-identity");
+  const summaryNames = element("span", "organization-summary-names");
+  const parentContext = draftParentContext(draft);
+  summaryNames.append(element("strong", null, draft.submittedName));
+  if (parentContext) {
+    summaryNames.append(element("small", null, parentContext));
+  }
   summaryIdentity.append(
     element("span", "organization-level-label", LEVEL_LABELS[draft.level]),
-    element("strong", null, draft.submittedName),
+    summaryNames,
   );
   const summaryMeta = element("span", "organization-summary-meta");
   const impact = element(
@@ -935,7 +985,7 @@ function createOrganizationDraftEditor(draft) {
   const existingPanel = element("div", "editor-panel existing-panel");
   const existingInput = createOrganizationPicker(
     [],
-    "搜索已有机构",
+    "输入学校、学院或系所",
     `选择现有${LEVEL_LABELS[draft.level]}`,
   );
   existingPanel.append(labeledControl("现有机构", existingInput));
@@ -968,6 +1018,14 @@ function createOrganizationDraftEditor(draft) {
   approvedDomains.maxLength = 2000;
   if (draft.level === "university") {
     approvedDomains.value = [...draft.sourceDomains].sort().join(", ");
+  }
+  if (parentContext) {
+    const createContext = element("p", "organization-create-context");
+    createContext.append(
+      element("span", null, "新建位置"),
+      element("strong", null, parentContext),
+    );
+    createPanel.append(createContext);
   }
   createPanel.append(
     labeledControl("机构类型", organizationType),
@@ -1012,9 +1070,7 @@ function createOrganizationDraftEditor(draft) {
   const defaultNotice = element("p", "organization-reuse-notice organization-default-notice");
   defaultNotice.hidden = true;
   const footer = element("div", "organization-draft-footer");
-  const confirm = element("button", "primary-button compact-button", "确认");
-  confirm.type = "button";
-  footer.append(aliasLabel, confirm);
+  footer.append(aliasLabel);
   body.append(
     labeledControl("处理方式", action),
     existingPanel,
@@ -1053,7 +1109,6 @@ function createOrganizationDraftEditor(draft) {
     aliasLabel,
     saveAlias,
     error,
-    confirm,
     restoreUrl,
     actionManuallySelected: false,
     organizationTypeManuallySelected: false,
@@ -1086,7 +1141,6 @@ function createOrganizationDraftEditor(draft) {
     markOrganizationDraftChanged(draft);
     officialUrl.focus();
   });
-  confirm.addEventListener("click", () => void confirmOrganizationDraft(draft));
   return editor;
 }
 
@@ -1257,6 +1311,47 @@ function identityAffiliationLabel(affiliation) {
   return `${organization}${primary}${title}`;
 }
 
+function identityComparisonRow(label, incoming, existing, different = false) {
+  const row = document.createElement("tr");
+  const heading = document.createElement("th");
+  heading.scope = "row";
+  heading.append(element("span", null, label));
+  if (different) {
+    heading.append(element("span", "identity-diff-marker", "不同"));
+    row.dataset.different = "true";
+  }
+  const incomingCell = document.createElement("td");
+  const existingCell = document.createElement("td");
+  incomingCell.append(incoming instanceof Node ? incoming : document.createTextNode(incoming));
+  existingCell.append(existing instanceof Node ? existing : document.createTextNode(existing));
+  row.append(heading, incomingCell, existingCell);
+  return row;
+}
+
+function identityAffiliationsList(affiliations) {
+  const list = element("ul", "identity-affiliations");
+  for (const affiliation of affiliations) {
+    const item = element("li");
+    const source = element("a", "identity-affiliation-source", "证据 ↗");
+    source.href = affiliation.source_url;
+    source.target = "_blank";
+    source.rel = "noopener noreferrer";
+    item.append(element("span", null, identityAffiliationLabel(affiliation)), source);
+    list.append(item);
+  }
+  return list;
+}
+
+function identityValueMatches(incoming, candidates) {
+  const normalizedIncoming = MentorReviewLogic.compactOrganizationName(incoming);
+  return Boolean(
+    normalizedIncoming &&
+      candidates.some(
+        (candidate) => MentorReviewLogic.compactOrganizationName(candidate) === normalizedIncoming,
+      ),
+  );
+}
+
 function updateIdentityResolutionState(editor) {
   if (!editor.identityPanel) {
     return;
@@ -1270,13 +1365,14 @@ function updateIdentityResolutionState(editor) {
   editor.identityTargetId = targetId;
   editor.identityActionField.hidden = rejected || alreadyCurrent;
   editor.identityReasonField.hidden = rejected || alreadyCurrent;
+  editor.identityControls.hidden = rejected || alreadyCurrent;
   editor.identityPrimaryOption.hidden =
     rejected || alreadyCurrent || action !== "append_current_affiliation";
   editor.identityFormerField.hidden =
     rejected || alreadyCurrent || action !== "transfer_current_affiliation";
 
   if (rejected) {
-    editor.identityStatus.textContent = "不收录；现有记录不变。";
+    editor.identityStatus.textContent = "默认不收录本次提交；现有记录不变。";
     editor.identityPanel.dataset.state = "rejected";
   } else if (!targetId) {
     editor.identityStatus.textContent = "先确认归属。";
@@ -1290,38 +1386,62 @@ function updateIdentityResolutionState(editor) {
   }
 }
 
-function createIdentityResolutionPanel(row) {
+function createIdentityResolutionPanel(row, card) {
   const panel = element("section", "identity-resolution");
   panel.setAttribute("aria-label", `${row.name}的导师身份与任职判定`);
   const heading = element("div", "identity-resolution-heading");
   const headingCopy = element("div");
-  headingCopy.append(element("strong", null, "确认任职关系"));
+  headingCopy.append(element("strong", null, "同邮箱记录对比"));
   const status = element("p", "identity-resolution-status");
   heading.append(headingCopy, status);
 
   const comparison = element("div", "identity-comparison");
-  const incoming = element("div", "identity-column incoming-identity");
-  incoming.append(
-    element("span", "identity-column-label", "本次投稿"),
-    element("strong", null, `${row.name} · ${row.email}`),
-  );
-  const existing = element("div", "identity-column existing-identity");
-  existing.append(
-    element("span", "identity-column-label", "社区库中的现有记录"),
-    element("strong", null, `${row.identity.mentor.name} · ${row.identity.mentor.email}`),
-  );
-  const affiliations = element("ul", "identity-affiliations");
-  for (const affiliation of row.identity.mentor.affiliations) {
-    const item = element("li");
-    const source = element("a", "identity-affiliation-source", "证据 ↗");
-    source.href = affiliation.source_url;
-    source.target = "_blank";
-    source.rel = "noopener noreferrer";
-    item.append(element("span", null, identityAffiliationLabel(affiliation)), source);
-    affiliations.append(item);
+  const table = element("table", "identity-comparison-table");
+  const tableHead = document.createElement("thead");
+  const headingRow = document.createElement("tr");
+  for (const label of ["字段", "本次投稿", "社区库现有记录"]) {
+    const cell = document.createElement("th");
+    cell.scope = "col";
+    cell.textContent = label;
+    headingRow.append(cell);
   }
-  existing.append(affiliations);
-  comparison.append(incoming, existing);
+  tableHead.append(headingRow);
+  const tableBody = document.createElement("tbody");
+  const affiliations = row.identity.mentor.affiliations;
+  const existingPaths = affiliations.map((affiliation) =>
+    affiliation.organization_id
+      ? organizationPathForId(affiliation.organization_id)
+      : affiliation.organization_label || "机构待审核",
+  );
+  const existingTitles = affiliations.map((affiliation) => affiliation.title).filter(Boolean);
+  tableBody.append(
+    identityComparisonRow(
+      "姓名",
+      row.name,
+      row.identity.mentor.name,
+      !identityValueMatches(row.name, [row.identity.mentor.name]),
+    ),
+    identityComparisonRow(
+      "邮箱",
+      row.email,
+      row.identity.mentor.email,
+      row.email.trim().toLocaleLowerCase() !== row.identity.mentor.email.trim().toLocaleLowerCase(),
+    ),
+    identityComparisonRow(
+      "机构",
+      pathText(card.group),
+      identityAffiliationsList(affiliations),
+      !identityValueMatches(pathText(card.group), existingPaths),
+    ),
+    identityComparisonRow(
+      "职称",
+      row.title || "未提供",
+      existingTitles.join("、") || "未填写",
+      Boolean(row.title) && !identityValueMatches(row.title, existingTitles),
+    ),
+  );
+  table.append(tableHead, tableBody);
+  comparison.append(table);
 
   const controls = element("div", "identity-resolution-controls");
   const action = createSelect(
@@ -1374,6 +1494,7 @@ function createIdentityResolutionPanel(row) {
     formerField,
     reason,
     reasonField,
+    controls,
   };
 }
 
@@ -1425,14 +1546,18 @@ function createRowEditor(row, card) {
       ...state.manifest.organizations,
       ...state.pendingOrganizations,
     ]),
-    "选择现有或本次新建的机构",
+    "输入学校、学院或系所",
     `${row.name}单独调整到的机构`,
   );
   const reason = createInput("text", "拒绝原因", "row-reason");
   reason.setAttribute("aria-label", `拒绝${row.name}的原因`);
   reason.maxLength = 500;
-  organizationInput.hidden = true;
-  reason.hidden = true;
+  if (row.identity?.requires_resolution === true) {
+    action.value = "reject";
+    reason.value = IDENTITY_CONFLICT_REJECTION_REASON;
+  }
+  organizationInput.hidden = action.value !== "map_existing";
+  reason.hidden = action.value !== "reject";
   const editor = {
     row,
     card,
@@ -1444,7 +1569,7 @@ function createRowEditor(row, card) {
     identityPanel: null,
   };
   if (row.identity?.requires_resolution === true) {
-    const identityResolution = createIdentityResolutionPanel(row);
+    const identityResolution = createIdentityResolutionPanel(row, card);
     wrapper.classList.add("has-identity-resolution");
     editor.identityPanel = identityResolution.panel;
     editor.identityStatus = identityResolution.status;
@@ -1456,6 +1581,7 @@ function createRowEditor(row, card) {
     editor.identityFormerField = identityResolution.formerField;
     editor.identityReason = identityResolution.reason;
     editor.identityReasonField = identityResolution.reasonField;
+    editor.identityControls = identityResolution.controls;
     editor.identityTargetId = null;
   }
   action.addEventListener("change", () => {
@@ -1556,6 +1682,11 @@ function createIndependentTargetEditor(card) {
     group.suggested_path_correction,
   );
   const panel = element("section", "independent-target-panel");
+  const groupContext = element("p", "independent-target-context");
+  groupContext.append(
+    element("span", null, "投稿路径"),
+    element("strong", null, pathText(group)),
+  );
   const notice = element("div", "path-correction-notice");
   if (defaults) {
     notice.dataset.source = defaults.source;
@@ -1582,7 +1713,7 @@ function createIndependentTargetEditor(card) {
   const targetExistingPanel = element("div", "target-existing-panel");
   const targetExistingInput = createOrganizationPicker(
     MentorReviewLogic.rankOrganizationCandidates(group, state.manifest.organizations),
-    "搜索并选择最终归属机构",
+    "输入学校、学院或系所",
     `${pathText(group)}的最终归属机构`,
   );
   targetExistingPanel.append(labeledControl("归属", targetExistingInput));
@@ -1611,7 +1742,7 @@ function createIndependentTargetEditor(card) {
   );
   const targetOtherParentInput = createOrganizationPicker(
     [],
-    "搜索并选择上级机构",
+    "输入学校或学院",
     `${pathText(group)}的新机构上级`,
   );
   const targetOtherParentField = labeledControl("其他上级", targetOtherParentInput);
@@ -1669,7 +1800,14 @@ function createIndependentTargetEditor(card) {
   const targetPreview = element("p", "independent-target-preview", "未选择归属");
   const targetError = element("p", "independent-target-error error");
   targetError.hidden = true;
-  panel.append(notice, targetControls, correctionControls, targetPreview, targetError);
+  panel.append(
+    groupContext,
+    notice,
+    targetControls,
+    correctionControls,
+    targetPreview,
+    targetError,
+  );
 
   Object.assign(card, {
     targetPanel: panel,
@@ -1853,6 +1991,8 @@ function createGroupCard(group) {
     pathSuggestion,
     requiresAttention,
     workflowConfirmed: !requiresAttention,
+    completedAt: null,
+    independentValidationError: null,
     decisionSummary,
     quickActions,
     groupAction,
@@ -1861,6 +2001,8 @@ function createGroupCard(group) {
     assignment,
     rowEditors: [],
     renderedRowCount: 0,
+    ordinaryRowCount: ordinaryRows.length,
+    rowsDetails,
   };
   const targetPanel = createIndependentTargetEditor(card);
   const advancedDetails = element("details", "group-advanced-details");
@@ -1945,8 +2087,8 @@ function createGroupCard(group) {
   });
   loadMoreRows.addEventListener("click", card.loadMoreRows);
   groupAction.addEventListener("change", () => {
-    if (groupAction.value === "reject" && mappingMode.value === "corrected") {
-      mappingMode.value = "alternate";
+    if (groupAction.value === "reject") {
+      mappingMode.value = "standard";
     }
     markGroupWorkflowChanged(card);
   });
@@ -1959,11 +2101,8 @@ function createGroupCard(group) {
     "group-task-status",
     "",
   );
-  const confirmTask = element("button", "primary-button compact-button", "确认");
-  confirmTask.type = "button";
-  confirmTask.addEventListener("click", () => void confirmGroupWorkflowTask(card));
-  taskFooter.append(taskStatus, confirmTask);
-  Object.assign(card, { taskFooter, taskStatus, confirmTask });
+  taskFooter.append(taskStatus);
+  Object.assign(card, { taskFooter, taskStatus });
   setGroupTaskStatus(card, taskStatus.textContent);
 
   article.append(header, decisionSummary, sources, assignment, advancedDetails);
@@ -1986,6 +2125,13 @@ function setGroupTaskStatus(card, message) {
 
 function markGroupWorkflowChanged(card, message = "修改后请确认。") {
   card.workflowConfirmed = false;
+  clearWorkflowCompletion(card);
+  if (
+    state.workflowFilter === "done" &&
+    state.currentWorkflowTaskId === `group:${card.group.id}`
+  ) {
+    state.workflowFilter = "all";
+  }
   if (card.taskStatus) {
     setGroupTaskStatus(card, message);
   }
@@ -1999,6 +2145,10 @@ function identityReviewError(card) {
     }
     const editor = state.rowEditorByProposalId.get(row.proposal_id);
     if (!editor || editor.action.value === "reject" || card.groupAction.value === "reject") {
+      continue;
+    }
+    const targetId = effectiveRowTargetId(card, editor);
+    if (targetId && isCurrentIdentityOrganization(editor, targetId)) {
       continue;
     }
     if (!editor.identityAction.value) {
@@ -2084,6 +2234,11 @@ function applySuggestedGroupState(card, forcedAction = null) {
   card.workflowConfirmed = !card.group.rows.some(
     (row) => row.identity?.requires_resolution === true,
   );
+  if (card.workflowConfirmed) {
+    markWorkflowCompleted(card);
+  } else {
+    clearWorkflowCompletion(card);
+  }
   setGroupTaskStatus(
     card,
     card.workflowConfirmed
@@ -2119,6 +2274,11 @@ async function keepSubmittedGroupPath(card) {
   card.workflowConfirmed = !card.group.rows.some(
     (row) => row.identity?.requires_resolution === true,
   );
+  if (card.workflowConfirmed) {
+    markWorkflowCompleted(card);
+  } else {
+    clearWorkflowCompletion(card);
+  }
   setGroupTaskStatus(
     card,
     card.workflowConfirmed
@@ -2168,21 +2328,83 @@ async function confirmGroupWorkflowTask(card) {
     return;
   }
   card.workflowConfirmed = true;
+  markWorkflowCompleted(card);
   setGroupTaskStatus(card, "");
   state.autosaveDirty = true;
   await updateOrganizationDrafts();
   focusNextWorkflowTask();
 }
 
+function groupWorkflowValidationError(card) {
+  if (card.groupAction.value === "reject" && !card.groupReason.value.trim()) {
+    return "请填写不收录这组导师的原因。";
+  }
+  if (
+    card.mappingMode.value !== "standard" &&
+    card.independentValidationError
+  ) {
+    return card.independentValidationError;
+  }
+  return identityReviewError(card);
+}
+
 function workflowTaskStatus(task) {
   if (task.kind === "organization") {
     return task.draft.confirmed ? "done" : "pending";
   }
-  return task.card.workflowConfirmed ? "done" : "pending";
+  return task.card.workflowConfirmed && !groupWorkflowValidationError(task.card)
+    ? "done"
+    : "pending";
+}
+
+function workflowSortMetadata(group, phase) {
+  const university = String(group?.submitted?.university || "未填写学校").trim();
+  const school = String(group?.submitted?.school || "").trim();
+  const department = String(group?.submitted?.department || "").trim();
+  return {
+    sortPath: [university, school, department],
+    sectionLabel: [university, school].filter(Boolean).join(" / "),
+    phase,
+    batchRow: Math.min(...(group?.rows || []).map((row) => row.batch_row), 5_001),
+  };
+}
+
+function representativeGroupForDraft(draft) {
+  return state.cards
+    .filter((card) => draft.groupIds.has(card.group.id))
+    .map((card) => card.group)
+    .sort((first, second) =>
+      pathText(first).localeCompare(pathText(second), "zh-CN") ||
+      Math.min(...first.rows.map((row) => row.batch_row)) -
+        Math.min(...second.rows.map((row) => row.batch_row)),
+    )[0] || null;
+}
+
+function compareWorkflowTaskPath(first, second) {
+  for (let index = 0; index < first.sortPath.length; index += 1) {
+    const order = first.sortPath[index].localeCompare(second.sortPath[index], "zh-CN");
+    if (order) {
+      return order;
+    }
+  }
+  return (
+    first.phase - second.phase ||
+    first.batchRow - second.batchRow ||
+    first.title.localeCompare(second.title, "zh-CN") ||
+    first.id.localeCompare(second.id)
+  );
 }
 
 function buildWorkflowTasks() {
   const tasks = [];
+  for (const card of state.cards) {
+    const validationError = groupWorkflowValidationError(card);
+    if (card.workflowConfirmed && validationError) {
+      card.workflowConfirmed = false;
+      clearWorkflowCompletion(card);
+      setGroupTaskStatus(card, validationError);
+    }
+  }
   const unresolvedPathDraftKeys = new Set(
     state.cards
       .filter((card) => card.pathSuggestion && !card.workflowConfirmed)
@@ -2198,21 +2420,17 @@ function buildWorkflowTasks() {
       : card.pathSuggestion
         ? "归属"
         : "导师";
+    const phase = card.pathSuggestion ? 2 : hasIdentityReview ? 4 : 5;
     tasks.push({
       id: `group:${card.group.id}`,
       kind: "group",
-      priority: card.pathSuggestion
-        ? card.pathSuggestion.confidence === "high"
-          ? 5
-          : 10
-        : hasIdentityReview
-          ? 30
-          : 50,
       label,
       title: card.pathSuggestion?.title || "沿用投稿路径",
       subtitle: taskContext(card.group),
       card,
       element: card.article,
+      completedAt: card.completedAt,
+      ...workflowSortMetadata(card.group, phase),
     });
   }
   for (const draft of state.organizationDrafts) {
@@ -2223,10 +2441,11 @@ function buildWorkflowTasks() {
     ) {
       continue;
     }
+    const representativeGroup = representativeGroupForDraft(draft);
+    const phase = { university: 0, school: 1, department: 3 }[draft.level];
     tasks.push({
       id: `organization:${draft.key}`,
       kind: "organization",
-      priority: 20 + LEVELS.indexOf(draft.level),
       label: {
         university: "学校",
         school: "学院",
@@ -2236,17 +2455,11 @@ function buildWorkflowTasks() {
       subtitle: `${draft.groupIds.size} 组 · ${draft.rowCount} 位导师`,
       draft,
       element: draft.editor.details,
+      completedAt: draft.completedAt,
+      ...workflowSortMetadata(representativeGroup, phase),
     });
   }
-  tasks.sort((first, second) => {
-    const firstPending = workflowTaskStatus(first) === "pending" ? 0 : 1;
-    const secondPending = workflowTaskStatus(second) === "pending" ? 0 : 1;
-    return (
-      firstPending - secondPending ||
-      first.priority - second.priority ||
-      first.title.localeCompare(second.title, "zh-CN")
-    );
-  });
+  tasks.sort(compareWorkflowTaskPath);
   return tasks;
 }
 
@@ -2259,6 +2472,18 @@ function taskMatchesFilter(task) {
     return status === "done";
   }
   return true;
+}
+
+function visibleWorkflowTasks() {
+  const visible = state.workflowTasks.filter(taskMatchesFilter);
+  if (state.workflowFilter !== "done") {
+    return visible;
+  }
+  return visible.sort(
+    (first, second) =>
+      (second.completedAt || 0) - (first.completedAt || 0) ||
+      compareWorkflowTaskPath(first, second),
+  );
 }
 
 function setWorkflowFilter(filter) {
@@ -2287,6 +2512,8 @@ function renderWorkflowTask(task) {
   if (!task) {
     nodes.workflowPosition.textContent = "当前没有项目";
     nodes.previousTask.disabled = true;
+    nodes.confirmTask.disabled = true;
+    nodes.confirmTask.textContent = "确认并继续";
     nodes.nextTask.disabled = true;
     return;
   }
@@ -2312,19 +2539,29 @@ function renderWorkflowTask(task) {
       nodes.groups.replaceChildren(task.element);
     }
   }
-  const visible = state.workflowTasks.filter(taskMatchesFilter);
+  const visible = visibleWorkflowTasks();
   const index = visible.findIndex((item) => item.id === task.id);
+  const pending = workflowTaskStatus(task) === "pending";
   nodes.workflowPosition.textContent = `${Math.max(index + 1, 1)} / ${visible.length}`;
   nodes.previousTask.disabled = index <= 0;
+  nodes.confirmTask.disabled = !pending;
+  nodes.confirmTask.textContent = pending ? "确认并继续" : "已确认";
   nodes.nextTask.disabled = index < 0 || index >= visible.length - 1;
-  nodes.nextTask.textContent = workflowTaskStatus(task) === "pending" ? "暂时跳过" : "下一项";
+  nodes.nextTask.textContent = pending ? "暂时跳过" : "下一项";
 }
 
 function renderWorkflowTaskList() {
-  const visible = state.workflowTasks.filter(taskMatchesFilter);
+  const visible = visibleWorkflowTasks();
   nodes.taskList.replaceChildren();
   let selectedButton = null;
+  let previousSection = null;
   for (const task of visible) {
+    if (state.workflowFilter !== "done" && task.sectionLabel !== previousSection) {
+      nodes.taskList.append(
+        element("div", "review-task-section-label", task.sectionLabel || "未填写学校"),
+      );
+      previousSection = task.sectionLabel;
+    }
     const button = element("button", "review-task-item");
     button.type = "button";
     button.dataset.status = workflowTaskStatus(task);
@@ -2340,10 +2577,28 @@ function renderWorkflowTaskList() {
         ),
       );
     }
+    if (state.workflowFilter === "done" && task.completedAt) {
+      top.append(
+        element(
+          "span",
+          "review-task-time",
+          new Intl.DateTimeFormat("zh-CN", {
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hour12: false,
+          }).format(new Date(task.completedAt)),
+        ),
+      );
+    }
+    const subtitle =
+      state.workflowFilter === "done"
+        ? [task.sectionLabel, task.subtitle].filter(Boolean).join(" · ")
+        : task.subtitle;
     button.append(
       top,
       element("strong", null, task.title),
-      element("span", "review-task-subtitle", task.subtitle),
+      element("span", "review-task-subtitle", subtitle),
     );
     button.addEventListener("click", () => selectWorkflowTask(task.id));
     nodes.taskList.append(button);
@@ -2389,7 +2644,7 @@ function refreshWorkflowTasks() {
   ]) {
     button.setAttribute("aria-selected", String(state.workflowFilter === filter));
   }
-  let visible = state.workflowTasks.filter(taskMatchesFilter);
+  let visible = visibleWorkflowTasks();
   let current = state.workflowTaskById.get(state.currentWorkflowTaskId);
   if (!current || !visible.some((task) => task.id === current.id)) {
     current = visible[0] || null;
@@ -2418,11 +2673,23 @@ function focusNextWorkflowTask() {
 }
 
 function moveWorkflowTask(offset) {
-  const visible = state.workflowTasks.filter(taskMatchesFilter);
+  const visible = visibleWorkflowTasks();
   const index = visible.findIndex((task) => task.id === state.currentWorkflowTaskId);
   const target = visible[index + offset];
   if (target) {
     selectWorkflowTask(target.id);
+  }
+}
+
+async function confirmCurrentWorkflowTask() {
+  const task = state.workflowTaskById.get(state.currentWorkflowTaskId);
+  if (!task || workflowTaskStatus(task) !== "pending") {
+    return;
+  }
+  if (task.kind === "organization") {
+    await confirmOrganizationDraft(task.draft);
+  } else {
+    await confirmGroupWorkflowTask(task.card);
   }
 }
 
@@ -2437,7 +2704,14 @@ function descendantDrafts(draft) {
 function markOrganizationDraftChanged(draft, affectsIdentity = false) {
   for (const affected of [draft, ...descendantDrafts(draft)]) {
     affected.confirmed = false;
+    clearWorkflowCompletion(affected);
     affected.editor.error.hidden = true;
+  }
+  if (
+    state.workflowFilter === "done" &&
+    state.currentWorkflowTaskId === `organization:${draft.key}`
+  ) {
+    state.workflowFilter = "all";
   }
   if (affectsIdentity) {
     for (const descendant of descendantDrafts(draft)) {
@@ -2537,6 +2811,7 @@ async function updateIndependentTargetCard(card, showErrors = false) {
   card.independentCreation = null;
   card.independentPendingOrganization = null;
   if (card.mappingMode.value === "standard") {
+    card.independentValidationError = null;
     card.targetPreview.textContent = "按投稿路径";
     showIndependentTargetError(card, null);
     return null;
@@ -2652,6 +2927,12 @@ async function updateIndependentTargetCard(card, showErrors = false) {
         targetOrganization.lineage_names || [targetOrganization.canonical_name]
       ).join(" / ")}`
     : "未选择归属";
+  card.independentValidationError = error;
+  if (error && card.workflowConfirmed) {
+    card.workflowConfirmed = false;
+    clearWorkflowCompletion(card);
+    setGroupTaskStatus(card, "归属已失效，请重新确认。");
+  }
   showIndependentTargetError(card, showErrors ? error : null);
   return error;
 }
@@ -2927,8 +3208,6 @@ async function updateOrganizationDrafts() {
     editor.existingPanel.hidden = action !== "existing";
     editor.createPanel.hidden = action !== "create";
     editor.aliasLabel.hidden = action === "skip" || !draft.submittedName;
-    editor.confirm.hidden = draft.forcedSkip || !draftIsActive(draft);
-
     draft.targetId = null;
     draft.effectiveDomains = inheritedDomains;
     draft.lineageNames = parent?.lineageNames || [];
@@ -3046,6 +3325,7 @@ async function confirmOrganizationDraft(draft) {
     return;
   }
   draft.confirmed = true;
+  markWorkflowCompleted(draft);
   state.autosaveDirty = true;
   draft.editor.error.hidden = true;
   draft.editor.details.classList.remove("has-error");
@@ -3097,7 +3377,7 @@ function serializeReviewDraft() {
     }
   }
   return {
-    version: 3,
+    version: 4,
     saved_at: new Date().toISOString(),
     organizations: Object.fromEntries(
       state.organizationDrafts.map((draft) => [
@@ -3111,6 +3391,7 @@ function serializeReviewDraft() {
           approved_domains: draft.editor.approvedDomains.value,
           save_alias: draft.editor.saveAlias.checked,
           confirmed: draft.confirmed,
+          completed_at: draft.completedAt,
         },
       ]),
     ),
@@ -3132,6 +3413,7 @@ function serializeReviewDraft() {
           mapping_reason: card.mappingReason.value,
           save_path_correction: card.savePathCorrection.checked,
           workflow_confirmed: card.workflowConfirmed,
+          completed_at: card.completedAt,
         },
       ]),
     ),
@@ -3163,6 +3445,10 @@ function storedText(value, maximumLength) {
   return typeof value === "string" ? value.slice(0, maximumLength) : "";
 }
 
+function storedCompletionTime(value) {
+  return Number.isSafeInteger(value) && value > 0 ? value : null;
+}
+
 function restoreReviewDraft() {
   if (!state.storageKey) {
     return false;
@@ -3173,7 +3459,7 @@ function restoreReviewDraft() {
   } catch {
     return false;
   }
-  if (!saved || ![1, 2, 3].includes(saved.version)) {
+  if (!saved || ![1, 2, 3, 4].includes(saved.version)) {
     return false;
   }
   for (const draft of state.organizationDrafts) {
@@ -3188,6 +3474,10 @@ function restoreReviewDraft() {
     draft.editor.approvedDomains.value = storedText(value.approved_domains, 2000);
     draft.editor.saveAlias.checked = Boolean(value.save_alias);
     draft.confirmed = Boolean(value.confirmed);
+    if (saved.version >= 4) {
+      draft.completedAt = storedCompletionTime(value.completed_at);
+      state.lastCompletionAt = Math.max(state.lastCompletionAt, draft.completedAt || 0);
+    }
     draft.editor.actionManuallySelected = true;
     draft.editor.organizationTypeManuallySelected = true;
     draft.editor.autoSkippedToParent = false;
@@ -3219,6 +3509,10 @@ function restoreReviewDraft() {
     if (saved.version >= 3) {
       card.workflowConfirmed = Boolean(value.workflow_confirmed);
       setGroupTaskStatus(card, "");
+    }
+    if (saved.version >= 4) {
+      card.completedAt = storedCompletionTime(value.completed_at);
+      state.lastCompletionAt = Math.max(state.lastCompletionAt, card.completedAt || 0);
     }
     updateIndependentPanelVisibility(card);
   }
@@ -3307,6 +3601,7 @@ function sourceUrlMatchesDomains(sourceUrl, domains) {
 }
 
 async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
+  const card = state.groupCardById.get(group.id) || null;
   if (requiredLevels.size === 0) {
     return { levels: [], targetId: null, effectiveDomains: [] };
   }
@@ -3335,7 +3630,7 @@ async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
     const draft = state.organizationDraftByKey.get(group.draftKeys?.[level]);
     if (!draft) {
       if (level === "university") {
-        throw new Error(`“${pathText(group)}”缺少学校名称`);
+        throw new ReviewValidationError(`“${pathText(group)}”缺少学校名称`, { card });
       }
       if (level === "school") {
         skippedSchool = true;
@@ -3356,18 +3651,21 @@ async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
     const action = draft.forcedSkip ? "skip" : editor.action.value;
     if (!draft.confirmed && !draft.forcedSkip) {
       draft.editor.details.open = true;
-      draft.editor.details.scrollIntoView({ behavior: "smooth", block: "center" });
-      throw new Error(`${LEVEL_LABELS[level]}「${draft.submittedName}」尚未确认`);
+      throw new ReviewValidationError(`${LEVEL_LABELS[level]}「${draft.submittedName}」尚未确认`, {
+        draft,
+      });
     }
     const validationMessage = showDraftValidation(draft);
     if (validationMessage) {
       draft.confirmed = false;
       draft.editor.details.open = true;
-      throw new Error(validationMessage);
+      throw new ReviewValidationError(validationMessage, { draft });
     }
     if (action === "skip") {
       if (level === "university") {
-        throw new Error(`学校「${draft.submittedName}」不能归到上级机构`);
+        throw new ReviewValidationError(`学校「${draft.submittedName}」不能归到上级机构`, {
+          draft,
+        });
       }
       if (level === "school") {
         skippedSchool = true;
@@ -3385,7 +3683,9 @@ async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
       continue;
     }
     if (skippedSchool) {
-      throw new Error(`系所「${draft.submittedName}」不能在归到学校后单独建立`);
+      throw new ReviewValidationError(`系所「${draft.submittedName}」不能在归到学校后单独建立`, {
+        draft,
+      });
     }
     if (action === "existing") {
       const organizationId = parseOrganizationInput(
@@ -3393,7 +3693,10 @@ async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
         editor.allowedExistingIds,
       );
       if (!organizationId) {
-        throw new Error(`${LEVEL_LABELS[level]}「${draft.submittedName}」需要选择现有机构`);
+        throw new ReviewValidationError(
+          `${LEVEL_LABELS[level]}「${draft.submittedName}」需要选择现有机构`,
+          { draft },
+        );
       }
       levels.push({
         level,
@@ -3412,7 +3715,10 @@ async function collectLevels(group, requiredLevels = new Set(LEVELS)) {
     }
     const canonicalName = editor.canonicalName.value.trim();
     if (!canonicalName) {
-      throw new Error(`${LEVEL_LABELS[level]}「${draft.submittedName}」需要填写正式名称`);
+      throw new ReviewValidationError(
+        `${LEVEL_LABELS[level]}「${draft.submittedName}」需要填写正式名称`,
+        { draft },
+      );
     }
     const officialUrlValue = editor.officialUrl.value.trim();
     const officialUrl = officialUrlValue
@@ -3461,17 +3767,24 @@ function collectRowOverrides(card) {
         ? parseOrganizationInput(editor.organizationInput)
         : restored?.organization_id;
       if (!organizationId) {
-        throw new Error(`${row.name}需要选择现有或本次新建的机构`);
+        throw new ReviewValidationError(`${row.name}需要选择归属机构`, {
+          card,
+          row,
+        });
       }
       const organization = state.selectableOrganizationById.get(organizationId);
-      const verificationUrls = [row.profile_url, row.source_url].filter(Boolean);
+      const verificationUrls = [row.source_url].filter(Boolean);
       if (
         !organization ||
-        !verificationUrls.every((url) =>
-          sourceUrlMatchesDomains(url, organization.approved_domains || []),
+        !MentorReviewLogic.hasOfficialEvidence(
+          verificationUrls,
+          organization.approved_domains || [],
         )
       ) {
-        throw new Error(`${row.name}的详情页或发现来源页不属于调整后机构的官方来源域名`);
+        throw new ReviewValidationError(
+          `${row.name}的发现来源页不属于调整后机构的官方域名`,
+          { card, row },
+        );
       }
       overrides.push({
         proposal_id: row.proposal_id,
@@ -3482,11 +3795,11 @@ function collectRowOverrides(card) {
       continue;
     }
     if (action !== "reject") {
-      throw new Error(`${row.name}的逐行处理方式无效`);
+      throw new ReviewValidationError(`${row.name}的逐行处理方式无效`, { card, row });
     }
     const reason = (editor?.reason.value || restored?.reason || "").trim();
     if (!reason) {
-      throw new Error(`拒绝${row.name}时需要填写原因`);
+      throw new ReviewValidationError(`不收录${row.name}时需要填写原因`, { card, row });
     }
     overrides.push({
       proposal_id: row.proposal_id,
@@ -3514,12 +3827,13 @@ function collectIdentityResolutions(card) {
     const resolutionAction = editor?.identityAction.value || restored?.identity_action || "";
     const reason = (editor?.identityReason.value || restored?.identity_reason || "").trim();
     if (!resolutionAction) {
-      throw new Error(
+      throw new ReviewValidationError(
         `${row.name}在社区库中已有其他机构任职；请选择双聘、任职调动或不收录这位导师`,
+        { card, row },
       );
     }
     if (!reason) {
-      throw new Error(`${row.name}的任职判定需要填写审核依据`);
+      throw new ReviewValidationError(`${row.name}的任职判定需要填写依据`, { card, row });
     }
     if (resolutionAction === "append_current_affiliation") {
       resolutions.push({
@@ -3532,13 +3846,13 @@ function collectIdentityResolutions(card) {
       continue;
     }
     if (resolutionAction !== "transfer_current_affiliation") {
-      throw new Error(`${row.name}的任职处理方式无效`);
+      throw new ReviewValidationError(`${row.name}的任职处理方式无效`, { card, row });
     }
     const formerAffiliationId = editor
       ? editor.identityFormerAffiliation.value
       : restored?.identity_former_affiliation_id;
     if (!formerAffiliationId) {
-      throw new Error(`${row.name}调动时需要选择要结束的现有任职`);
+      throw new ReviewValidationError(`${row.name}调动时需要选择原任职`, { card, row });
     }
     resolutions.push({
       proposal_id: row.proposal_id,
@@ -3568,21 +3882,88 @@ function validateFinalAssignmentSources(decisions) {
           ? override.organization_id
           : decision.target_organization_id || standardGroupTargetId(card.group);
       const organization = state.selectableOrganizationById.get(targetId);
-      const verificationUrls = [...new Set([row.profile_url, row.source_url].filter(Boolean))];
+      const verificationUrls = [row.source_url].filter(Boolean);
       if (
         !organization ||
-        !verificationUrls.every((url) =>
-          sourceUrlMatchesDomains(url, organization.approved_domains || []),
+        !MentorReviewLogic.hasOfficialEvidence(
+          verificationUrls,
+          organization.approved_domains || [],
         )
       ) {
-        throw new Error(
-          `${row.name}的详情页或发现来源页不属于最终归属机构「${
+        throw new ReviewValidationError(
+          `${row.name}的发现来源页不属于最终归属机构「${
             organization?.canonical_name || targetId || "未选择"
-          }」的官方来源域名`,
+          }」的官方域名`,
+          { card, row },
         );
       }
     }
   }
+}
+
+function focusReviewValidationError(error) {
+  if (!(error instanceof ReviewValidationError) || !error.taskId) {
+    return false;
+  }
+  document
+    .querySelectorAll(".has-review-error")
+    .forEach((node) => node.classList.remove("has-review-error"));
+
+  if (error.card) {
+    error.card.workflowConfirmed = false;
+    clearWorkflowCompletion(error.card);
+    error.card.taskStatus.textContent = error.message;
+    error.card.taskStatus.classList.add("error");
+    error.card.taskStatus.hidden = false;
+    if (error.focusTarget === "target") {
+      error.card.advancedDetails.open = true;
+      showIndependentTargetError(error.card, error.message);
+    }
+  }
+  if (error.draft) {
+    error.draft.confirmed = false;
+    clearWorkflowCompletion(error.draft);
+    error.draft.editor.details.open = true;
+    error.draft.editor.error.textContent = error.message;
+    error.draft.editor.error.hidden = false;
+    error.draft.editor.details.classList.add("has-error");
+  }
+
+  state.workflowFilter = "pending";
+  state.currentWorkflowTaskId = error.taskId;
+  refreshWorkflowTasks();
+  selectWorkflowTask(error.taskId, { focus: false });
+
+  let target = error.draft?.editor.details || error.card?.article || null;
+  if (error.proposalId && error.card) {
+    if (error.card.rowsDetails) {
+      error.card.rowsDetails.open = true;
+    }
+    let editor = state.rowEditorByProposalId.get(error.proposalId);
+    while (
+      !editor &&
+      error.card.loadMoreRows &&
+      error.card.renderedRowCount < error.card.ordinaryRowCount
+    ) {
+      error.card.loadMoreRows();
+      editor = state.rowEditorByProposalId.get(error.proposalId);
+    }
+    if (editor) {
+      editor.wrapper.classList.add("has-review-error");
+      editor.wrapper.tabIndex = -1;
+      target = editor.wrapper;
+    }
+  } else if (error.focusTarget === "target" && error.card) {
+    error.card.targetPanel.classList.add("has-review-error");
+    target = error.card.targetPanel;
+  }
+  window.requestAnimationFrame(() => {
+    if (target?.isConnected) {
+      target.scrollIntoView({ behavior: "smooth", block: "center" });
+      target.focus?.({ preventScroll: true });
+    }
+  });
+  return true;
 }
 
 async function collectDecision() {
@@ -3598,8 +3979,9 @@ async function collectDecision() {
   }
   const pending = pendingOrganizationDrafts();
   if (pending.length) {
-    focusNextPending();
-    throw new Error(`还有 ${pending.length} 个机构尚未确认`);
+    throw new ReviewValidationError(`还有 ${pending.length} 个机构尚未确认`, {
+      draft: pending[0],
+    });
   }
   for (const card of state.cards) {
     if (card.mappingMode.value === "standard") {
@@ -3607,8 +3989,7 @@ async function collectDecision() {
     }
     const error = await updateIndependentTargetCard(card, true);
     if (error) {
-      card.targetPanel.scrollIntoView({ behavior: "smooth", block: "center" });
-      throw new Error(error);
+      throw new ReviewValidationError(error, { card, focusTarget: "target" });
     }
   }
   const decisions = [];
@@ -3624,7 +4005,9 @@ async function collectDecision() {
     if (card.groupAction.value === "reject") {
       const reason = card.groupReason.value.trim();
       if (!reason) {
-        throw new Error(`拒绝${pathText(card.group)}时需要填写原因`);
+        throw new ReviewValidationError(`不收录${pathText(card.group)}时需要填写原因`, {
+          card,
+        });
       }
       decisions.push({
         group_id: card.group.id,
@@ -3648,7 +4031,10 @@ async function collectDecision() {
       ? state.selectableOrganizationById.get(targetId)
       : null;
     if (corrected && !targetOrganization) {
-      throw new Error(`“${pathText(card.group)}”还没有选择有效的最终归属机构`);
+      throw new ReviewValidationError(`“${pathText(card.group)}”还没有选择有效的归属机构`, {
+        card,
+        focusTarget: "target",
+      });
     }
     const overriddenProposalIds = new Set(
       rowOverrides.map((override) => override.proposal_id),
@@ -3721,6 +4107,7 @@ function renderDecisionPreview(decision) {
   let rejectedRows = 0;
   let adjustedRows = 0;
   let correctedRows = 0;
+  let ignoredExternalProfiles = 0;
   let dualAppointments = 0;
   let transfers = 0;
   const decisionByGroup = new Map(decision.decisions.map((item) => [item.group_id, item]));
@@ -3735,6 +4122,21 @@ function renderDecisionPreview(decision) {
         rejectedRows += 1;
       } else {
         mappedRows += 1;
+        const targetId =
+          override?.action === "map_existing"
+            ? override.organization_id
+            : groupDecision.target_organization_id || standardGroupTargetId(card.group);
+        const organization = state.selectableOrganizationById.get(targetId);
+        if (
+          row.profile_url &&
+          organization &&
+          !MentorReviewLogic.hasOfficialEvidence(
+            [row.profile_url],
+            organization.approved_domains || [],
+          )
+        ) {
+          ignoredExternalProfiles += 1;
+        }
         if (override?.action === "map_existing") {
           adjustedRows += 1;
         } else if (groupDecision.mapping_kind && groupDecision.mapping_kind !== "standard") {
@@ -3757,6 +4159,7 @@ function renderDecisionPreview(decision) {
     ["单独调整导师归属", adjustedRows],
     ["增加双聘任职", dualAppointments],
     ["记录任职调动", transfers],
+    ["忽略非官网详情页", ignoredExternalProfiles],
     ["不收录导师", rejectedRows],
   ];
   nodes.decisionPreview.replaceChildren();
@@ -3802,7 +4205,9 @@ async function generateDecision() {
       (reduction > 0 ? ` · 已精简 ${reduction}%` : "");
     nodes.decisionOutput.scrollIntoView({ behavior: "smooth", block: "start" });
   } catch (error) {
-    nodes.decisionError.textContent = error instanceof Error ? error.message : "无法生成审核评论";
+    const located = focusReviewValidationError(error);
+    const message = error instanceof Error ? error.message : "无法生成审核评论";
+    nodes.decisionError.textContent = located ? `${message}。已定位到对应记录` : message;
     nodes.decisionError.hidden = false;
   }
 }
@@ -4033,6 +4438,7 @@ nodes.taskFilterPending.addEventListener("click", () => setWorkflowFilter("pendi
 nodes.taskFilterDone.addEventListener("click", () => setWorkflowFilter("done"));
 nodes.taskFilterAll.addEventListener("click", () => setWorkflowFilter("all"));
 nodes.previousTask.addEventListener("click", () => moveWorkflowTask(-1));
+nodes.confirmTask.addEventListener("click", () => void confirmCurrentWorkflowTask());
 nodes.nextTask.addEventListener("click", () => moveWorkflowTask(1));
 window.addEventListener("pagehide", saveReviewDraft);
 void loadReview();
