@@ -10,6 +10,7 @@ from mentor_data.io_utils import load_yaml, write_json_atomic, write_yaml_atomic
 from mentor_data.repository import load_repository
 
 from .helpers import (
+    PROJECT_ROOT,
     build_test_repository,
     claim,
     fixed_datetime,
@@ -17,6 +18,42 @@ from .helpers import (
     save_claim,
     save_mentor,
 )
+
+
+def test_pr33_school_hierarchy_repair_has_no_active_reference_to_merged_department() -> None:
+    data = load_repository(PROJECT_ROOT)
+    former_department_id = "org_auto_6c245c14deeaa59981a5"
+    school_id = "org_auto_398616f04bdab861ee7d"
+
+    former_department = data.registry.by_id[former_department_id]
+    school = data.registry.by_id[school_id]
+    assert former_department["status"] == "merged"
+    assert former_department["successor_id"] == school_id
+    assert school["type"] == "school"
+    assert school["parent_id"] == "org_auto_c8be69f24d66d48113c9"
+    assert all(
+        affiliation["organization_id"] != former_department_id
+        for mentor_record in data.mentors
+        for affiliation in mentor_record.get("affiliations", [])
+        if affiliation.get("status") == "current"
+    )
+    assert all(
+        claim_record.get("accepted", {}).get("organization_id") != former_department_id
+        for claim_record in data.claims
+        if claim_record.get("status") == "accepted"
+    )
+
+    resolution = next(
+        item
+        for item in data.organization_review_resolutions
+        if item["id"] == "organization_review_issue_32"
+    )
+    correction = next(
+        item
+        for item in resolution["path_corrections"]
+        if item["submitted"]["department"] == "集成电路学院(微电子学院)"
+    )
+    assert correction["target_organization_id"] == school_id
 
 
 def test_dual_affiliation_and_multiple_current_emails_publish_primary_projection(tmp_path) -> None:

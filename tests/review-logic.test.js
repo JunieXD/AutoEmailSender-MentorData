@@ -242,6 +242,46 @@ test("学院层级默认值区分上级别名、同级学院和新建同级学�
   assert.equal(rejectMixed.action, "reject_group");
 });
 
+test("括号中的学院别名按同一机构判断", () => {
+  const submitted = {
+    university: "西北工业大学",
+    school: "计算机学院",
+    department: "集成电路学院(微电子学院)",
+  };
+
+  assert.equal(
+    logic.correctionKindForDepartment(submitted.department, submitted.school),
+    "department_as_school",
+  );
+  assert.equal(
+    logic.schoolLevelOrganizationTypeForName(submitted.department),
+    "school",
+  );
+  assert.equal(
+    logic.organizationTypeForCorrection("custom", submitted.department),
+    "school",
+  );
+  const placement = logic.schoolLevelPlacementDefault(submitted, []);
+  assert.equal(placement.action, "create_sibling");
+  assert.equal(placement.organizationType, "school");
+  assert.equal(placement.canonicalName, submitted.department);
+  assert.equal(logic.pathReviewSuggestion(submitted).action, "review_hierarchy");
+
+  const mixed = logic.schoolLevelPlacementDefault(
+    {
+      ...submitted,
+      department: "集成电路学院(微电子学院)、材料学院",
+    },
+    [],
+  );
+  assert.equal(mixed.action, "reject_group");
+
+  assert.equal(
+    logic.correctionKindForDepartment("人工智能研究院(人工智能学院)", "计算机学院"),
+    null,
+  );
+});
+
 test("同级学院只接受明确名称证据，模糊相似不自动归并", () => {
   const placement = logic.schoolLevelPlacementDefault(
     {

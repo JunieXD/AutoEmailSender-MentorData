@@ -7,9 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="styles.css?v=9" />' in html
-    assert '<script src="review-logic.js?v=9" defer></script>' in html
-    assert '<script src="review.js?v=9" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=10" />' in html
+    assert '<script src="review-logic.js?v=10" defer></script>' in html
+    assert '<script src="review.js?v=10" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -246,6 +246,7 @@ def test_review_uses_organization_tree_and_plain_reviewer_language() -> None:
     assert "pathReviewSuggestion" in logic
     assert "rankOrganizationCandidates" in logic
     assert "rankOrganizationSearchResults" in logic
+    assert "schoolLevelOrganizationTypeForName" in logic
     assert "workflowNodeIdForDraft" in script
     assert "review-tree-node" in script
     assert "completed_at" in script
@@ -258,12 +259,29 @@ def test_review_uses_organization_tree_and_plain_reviewer_language() -> None:
     assert "schoolLevelPlacementDefault" in logic
     assert 'action: "create_sibling"' in logic
     assert 'action: "reject_group"' in logic
+    assert "当前学院下暂无已有系所" in script
+    assert "输入学校和学院，可组合搜索" in script
+    assert "picker-empty-action" in script
     assert ".review-workspace-grid" in styles
     assert ".review-node-main" in styles
     assert ".review-tree-node" in styles
     assert ".node-workbench-section" in styles
     assert "height: 2.3rem" in styles
     assert ".review-workflow-bar" in styles
+
+
+def test_switching_final_placement_clears_stale_pending_candidates() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+    required_levels_block = script.split("function requiredSubmittedLevelsForCard", 1)[1].split(
+        "function parseDomainsForPreview", 1
+    )[0]
+    refresh_options_block = script.split("async function refreshPendingOrganizationOptions", 1)[
+        1
+    ].split("function draftValidationError", 1)[0]
+
+    assert "return new Set(LEVELS)" not in required_levels_block
+    assert "await updateIndependentTargetCard(card);" in refresh_options_block
+    assert 'if (card.targetAction.value === "create")' not in refresh_options_block
 
 
 def test_public_home_page_prioritizes_using_contributing_and_correcting_data() -> None:

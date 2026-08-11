@@ -2901,9 +2901,17 @@ textarea:focus {
 }
 
 .picker-empty {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
   padding: 0.65rem;
   color: #78716c;
   text-align: center;
+}
+
+.picker-empty-action {
+  min-height: 1.8rem;
+  padding: 0.25rem 0.45rem;
 }
 
 .group-action {

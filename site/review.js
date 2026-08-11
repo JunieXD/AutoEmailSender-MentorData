@@ -554,7 +554,17 @@ function createSelect(options, className, ariaLabel) {
   return root;
 }
 
-function createOrganizationPicker(organizations, placeholder, ariaLabel) {
+function createOrganizationPicker(
+  organizations,
+  placeholder,
+  ariaLabel,
+  {
+    emptyMessage = "暂无可选机构",
+    noMatchMessage = "未找到匹配机构",
+    emptyActionLabel = "",
+    onEmptyAction = null,
+  } = {},
+) {
   const root = element("div", "organization-picker organization-input");
   const input = element("input", "organization-picker-input");
   const toggle = element("button", "organization-picker-toggle");
@@ -620,7 +630,28 @@ function createOrganizationPicker(organizations, placeholder, ariaLabel) {
     menu.replaceChildren();
     highlightedIndex = visibleOrganizations.length ? 0 : -1;
     if (!visibleOrganizations.length) {
-      menu.append(element("div", "picker-empty", "没有匹配的现有机构"));
+      const empty = element("div", "picker-empty");
+      empty.append(
+        element(
+          "span",
+          "picker-empty-message",
+          searching && availableOrganizations.length ? noMatchMessage : emptyMessage,
+        ),
+      );
+      if (emptyActionLabel && typeof onEmptyAction === "function") {
+        const emptyAction = element(
+          "button",
+          "text-button picker-empty-action",
+          emptyActionLabel,
+        );
+        emptyAction.type = "button";
+        emptyAction.addEventListener("click", () => {
+          closeMenu();
+          onEmptyAction();
+        });
+        empty.append(emptyAction);
+      }
+      menu.append(empty);
       updateHighlight();
       return;
     }
@@ -628,10 +659,13 @@ function createOrganizationPicker(organizations, placeholder, ariaLabel) {
       const option = element("button", "organization-picker-option");
       const primary = element("span", "organization-option-name", organization.canonical_name);
       const lineage = (organization.lineage_names || [organization.canonical_name]).join(" / ");
+      const typeLabel = TYPE_LABELS[organization.type] || "机构";
       const secondary = element(
         "span",
         "organization-option-path",
-        organization.pending ? `${lineage} · 本次新建` : `${lineage} · ${organization.id}`,
+        organization.pending
+          ? `${typeLabel} · ${lineage} · 本次新建`
+          : `${typeLabel} · ${lineage}`,
       );
       option.id = `${menuId}-option-${index + 1}`;
       option.type = "button";
@@ -1009,12 +1043,31 @@ function createOrganizationDraftEditor(draft) {
   );
 
   const existingPanel = element("div", "editor-panel existing-panel");
+  const existingScopeLabel = {
+    university: "已有学校",
+    school: "当前学校下的学院或研究院",
+    department: "当前学院下的系所",
+  }[draft.level];
+  const emptyScopeMessage = {
+    university: "暂无已有学校",
+    school: "当前学校下暂无已有学院或研究院",
+    department: "当前学院下暂无已有系所",
+  }[draft.level];
   const existingInput = createOrganizationPicker(
     [],
-    "输入学校、学院或系所",
+    "输入名称筛选",
     `选择现有${LEVEL_LABELS[draft.level]}`,
+    {
+      emptyMessage: emptyScopeMessage,
+      noMatchMessage: `${existingScopeLabel}中未找到匹配机构`,
+      emptyActionLabel: "改为新建",
+      onEmptyAction: () => {
+        action.value = "create";
+        action.dispatchEvent(new Event("change", { bubbles: true }));
+      },
+    },
   );
-  existingPanel.append(labeledControl("现有机构", existingInput));
+  existingPanel.append(labeledControl(existingScopeLabel, existingInput));
 
   const createPanel = element("div", "editor-panel create-panel");
   const organizationType = createSelect(
@@ -1928,8 +1981,17 @@ function createIndependentTargetEditor(card) {
   const targetExistingPanel = element("div", "target-existing-panel");
   const targetExistingInput = createOrganizationPicker(
     MentorReviewLogic.rankOrganizationCandidates(group, state.manifest.organizations),
-    "输入学校、学院或系所",
+    "输入学校和学院，可组合搜索",
     `${pathText(group)}的最终归属机构`,
+    {
+      emptyMessage: "暂无可选机构",
+      noMatchMessage: "未找到匹配机构",
+      emptyActionLabel: "新建机构",
+      onEmptyAction: () => {
+        targetAction.value = "create";
+        targetAction.dispatchEvent(new Event("change", { bubbles: true }));
+      },
+    },
   );
   targetExistingPanel.append(labeledControl("最终归属", targetExistingInput));
 
@@ -2256,6 +2318,8 @@ function pathSuggestionForGroup(group) {
       reason: placement.reason,
     };
   }
+  const siblingTypeLabel =
+    placement?.organizationType === "institute" ? "同级研究院" : "同级学院";
   return {
     ...suggestion,
     action: "create_sibling",
@@ -2263,8 +2327,8 @@ function pathSuggestionForGroup(group) {
     confidence: "review",
     canonicalName: placement?.canonicalName || group.submitted.department,
     organizationType: placement?.organizationType || "school",
-    title: `新建「${group.submitted.department}」并迁入`,
-    reason: `名称像学院或研究院，但未找到可信的同名或别名。已预填为${group.submitted.university}直属机构，请核对。`,
+    title: `新建${siblingTypeLabel}「${group.submitted.department}」并迁入`,
+    reason: `同校未找到可信匹配，已按${siblingTypeLabel}预填。`,
   };
 }
 
@@ -3750,7 +3814,7 @@ function requiredSubmittedLevelsForCard(card) {
   ) {
     const targetId = parseOrganizationInput(card.targetExistingInput);
     if (!targetId) {
-      return new Set(LEVELS);
+      return new Set();
     }
     const target = state.selectableOrganizationById.get(targetId);
     if (target?.pending_kind === "hierarchy") {
@@ -4012,9 +4076,7 @@ async function refreshPendingOrganizationOptions() {
     if (preservedParentId && card.targetOtherParentInput.selectById(preservedParentId)) {
       card.restoreIndependentParentId = null;
     }
-    if (card.targetAction.value === "create") {
-      await updateIndependentTargetCard(card);
-    }
+    await updateIndependentTargetCard(card);
     if (card.independentPendingOrganization) {
       mergePendingOrganization(byId, card.independentPendingOrganization);
     }

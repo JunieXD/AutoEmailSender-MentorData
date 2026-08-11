@@ -343,7 +343,24 @@
     "proposal_issue_32_row_99"
   ],
   "organization_creations": [],
-  "path_corrections": [],
+  "path_corrections": [
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_32_row_63"
+      ],
+      "reason": "带括号的两个名称是同一学院的别名，应归入同校学院。",
+      "source_domains": [
+        "jsj.nwpu.edu.cn"
+      ],
+      "submitted": {
+        "department": "集成电路学院(微电子学院)",
+        "school": "计算机学院",
+        "university": "西北工业大学"
+      },
+      "target_organization_id": "org_auto_398616f04bdab861ee7d"
+    }
+  ],
   "pull_request_number": 33,
   "rejected_proposal_ids": [],
   "review_comment_id": 5250184393,

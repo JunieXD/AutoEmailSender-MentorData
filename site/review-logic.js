@@ -31,7 +31,33 @@
       .normalize("NFKC")
       .split(/[,，、;；]+/u)
       .map((part) => part.trim())
-      .filter((part) => /(?:学院|研究院|研究所)$/u.test(part)).length;
+      .filter(
+        (part) =>
+          schoolLevelOrganizationTypeForName(part) ||
+          /(?:研究所)(?:[()[\]【】].*)?$/u.test(part),
+      ).length;
+  }
+
+  function schoolLevelOrganizationTypeForName(value) {
+    const parts = String(value || "")
+      .normalize("NFKC")
+      .split(/[()[\]【】/／\\|,，、;；]+/u)
+      .map((part) => part.trim())
+      .filter(Boolean);
+    const types = new Set(
+      parts
+        .map((part) => {
+          if (part.endsWith("研究院")) {
+            return "institute";
+          }
+          if (part.endsWith("学院")) {
+            return "school";
+          }
+          return null;
+        })
+        .filter(Boolean),
+    );
+    return types.size === 1 ? [...types][0] : null;
   }
 
   function schoolNameVariants(value, contextNames = []) {
@@ -473,11 +499,11 @@
     ) {
       return null;
     }
-    const submittedDepartment = String(department || "").normalize("NFKC").trim();
-    if (submittedDepartment.endsWith("研究院")) {
+    const organizationType = schoolLevelOrganizationTypeForName(department);
+    if (organizationType === "institute") {
       return "department_as_institute";
     }
-    if (submittedDepartment.endsWith("学院")) {
+    if (organizationType === "school") {
       return "department_as_school";
     }
     return null;
@@ -591,13 +617,6 @@
         score: sibling.score,
       };
     }
-    if (parent) {
-      return {
-        action: "use_parent",
-        correctionKind,
-        ...parent,
-      };
-    }
     return {
       action: "create_sibling",
       correctionKind,
@@ -615,11 +634,12 @@
       return "institute";
     }
     const name = String(canonicalName || "").normalize("NFKC").trim();
-    if (name.endsWith("研究院") || name.endsWith("研究所")) {
-      return "institute";
+    const schoolLevelType = schoolLevelOrganizationTypeForName(name);
+    if (schoolLevelType) {
+      return schoolLevelType;
     }
-    if (name.endsWith("学院")) {
-      return "school";
+    if (name.endsWith("研究所")) {
+      return "institute";
     }
     if (name.endsWith("实验室") || name.endsWith("研究室")) {
       return "laboratory";
@@ -801,6 +821,7 @@
     requiredSubmittedLevels,
     schoolOrganizationCandidateMatch,
     schoolLevelPlacementDefault,
+    schoolLevelOrganizationTypeForName,
     schoolOrganizationNameScore,
     siblingOrganizationCandidate,
     siblingOrganizationMatch,

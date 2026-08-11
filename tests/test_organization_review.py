@@ -421,7 +421,7 @@ def test_manifest_suggests_department_ending_in_school_as_sibling_school(
         "kind": "department_as_school",
         "target_organization_id": None,
         "source": "heuristic",
-        "reason": "投稿中的系所名称以“学院”结尾，需要确认它是否与当前学院同级",
+        "reason": "系所名称像学院，需确认实际层级",
     }
 
 
@@ -472,7 +472,35 @@ def test_manifest_suggests_department_ending_in_institute_as_sibling_institute(
         "kind": "department_as_institute",
         "target_organization_id": None,
         "source": "heuristic",
-        "reason": "投稿中的系所名称以“研究院”结尾，可能不是当前学院的下级机构",
+        "reason": "系所名称像研究院，需确认实际层级",
+    }
+
+
+def test_manifest_recognizes_parenthesized_school_aliases_as_one_sibling_school(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, _ = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "别名学院老师",
+                "alias-school@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/alias-school",
+                department="集成电路学院(微电子学院)",
+            )
+        ],
+        number=41,
+    )
+
+    assert manifest["groups"][0]["suggested_path_correction"] == {
+        "kind": "department_as_school",
+        "target_organization_id": None,
+        "source": "heuristic",
+        "reason": "系所名称像学院，需确认实际层级",
     }
 
 

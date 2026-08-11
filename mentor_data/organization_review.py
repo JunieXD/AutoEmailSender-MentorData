@@ -215,14 +215,26 @@ def _heuristic_path_correction(
         or normalize_organization_key(department) == normalize_organization_key(school)
     ):
         return None
-    if department.endswith("研究院"):
+    name_parts = [
+        normalize_text(part)
+        for part in re.split(r"[()（）\[\]【】/／\\|,，、;；]+", department)
+        if normalize_text(part)
+    ]
+    school_level_types = {
+        "institute"
+        if part.endswith("研究院")
+        else "school"
+        if part.endswith("学院")
+        else None
+        for part in name_parts
+    } - {None}
+    expected_type = next(iter(school_level_types)) if len(school_level_types) == 1 else None
+    if expected_type == "institute":
         kind = "department_as_institute"
-        expected_type = "institute"
-        reason = "投稿中的系所名称以“研究院”结尾，可能不是当前学院的下级机构"
-    elif department.endswith("学院"):
+        reason = "系所名称像研究院，需确认实际层级"
+    elif expected_type == "school":
         kind = "department_as_school"
-        expected_type = "school"
-        reason = "投稿中的系所名称以“学院”结尾，需要确认它是否与当前学院同级"
+        reason = "系所名称像学院，需确认实际层级"
     else:
         return None
 
