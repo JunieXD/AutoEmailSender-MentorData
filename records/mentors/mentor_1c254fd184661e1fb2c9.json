@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9c3d0f71945b7e84118a"
+      ],
+      "ended_at": null,
+      "id": "aff_d689cabc6eaf8d433bd0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/lbwang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9c3d0f71945b7e84118a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d689cabc6eaf8d433bd0",
+      "claim_ids": [
+        "claim_9c3d0f71945b7e84118a"
+      ],
+      "is_primary": true,
+      "normalized_value": "lbwang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/lbwang",
+      "status": "current",
+      "type": "email",
+      "value": "lbwang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9c3d0f71945b7e84118a"
+    ],
+    "email": [
+      "claim_9c3d0f71945b7e84118a"
+    ],
+    "name": [
+      "claim_9c3d0f71945b7e84118a"
+    ],
+    "profile_url": [
+      "claim_9c3d0f71945b7e84118a"
+    ],
+    "recent_papers": [
+      "claim_9c3d0f71945b7e84118a"
+    ],
+    "research_directions": [
+      "claim_9c3d0f71945b7e84118a"
+    ],
+    "status": [
+      "claim_9c3d0f71945b7e84118a"
+    ],
+    "title": [
+      "claim_9c3d0f71945b7e84118a"
+    ]
+  },
+  "id": "mentor_1c254fd184661e1fb2c9",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9c3d0f71945b7e84118a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王立斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d689cabc6eaf8d433bd0",
+      "claim_ids": [
+        "claim_9c3d0f71945b7e84118a"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/lbwang"
+    }
+  ],
+  "recent_papers": [
+    "Libin Wang, Raymond Chi-Wing Wong. Efficient Indexing for Flexible Label-Constrained Shortest Path Queries in Road Networks. ACM SIGMOD, 2025 (CCF-A)",
+    "Libin Wang, Raymond Chi-Wing Wong. NRP: An Efficient Index for Stochastic Routing in Road Networks. IEEE ICDE, 2025 (CCF-A)",
+    "Libin Wang, Raymond Chi-Wing Wong. PCSP: Efficiently Answering Label-Constrained Shortest Path Queries in Road Networks. Proc. VLDB Endow., 2024 (CCF-A)",
+    "Libin Wang, Raymond Chi-Wing Wong, Christian S. Jensen. Congestion-Mitigating Spatiotemporal Routing in Road Networks. IEEE ICDE, 2024 (CCF-A)",
+    "Libin Wang, Raymond Chi-Wing Wong. QHL: A Fast Algorithm for Exact Constrained Shortest Path Search on Road Networks. ACM SIGMOD, 2023 (CCF-A)",
+    "Libin Wang, Raymond Chi-Wing Wong. Efficient Public Transport Planning on Roads. IEEE ICDE, 2023 (CCF-A)",
+    "Yongxin Tong, Yuxiang Zeng, Bolin Ding, Libin Wang, Lei Chen. Two-Sided Online Micro-Task Assignment in Spatial Crowdsourcing. IEEE TKDE, 2021 (CCF-A)",
+    "Libin Wang, Yongxin Tong, Chunming Hu, Lei Chen, Yiming Li. Procrastination-Aware Scheduling: A Bipartite Graph Perspective. IEEE ICDE, 2019 (CCF-A)"
+  ],
+  "research_directions": [
+    "时空大数据管理、智慧交通、强化学习、AI4DB"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/lbwang",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

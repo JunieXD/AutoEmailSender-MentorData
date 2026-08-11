@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_154e7e7fd04a5ac9ae69"
+      ],
+      "ended_at": null,
+      "id": "aff_f4094a6bd6dcaa17b43b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/lihuixian.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_154e7e7fd04a5ac9ae69"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f4094a6bd6dcaa17b43b",
+      "claim_ids": [
+        "claim_154e7e7fd04a5ac9ae69"
+      ],
+      "is_primary": true,
+      "normalized_value": "lihuixian@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/lihuixian.html",
+      "status": "current",
+      "type": "email",
+      "value": "lihuixian@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ],
+    "email": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ],
+    "name": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ],
+    "profile_url": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ],
+    "recent_papers": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ],
+    "research_directions": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ],
+    "status": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ],
+    "title": [
+      "claim_154e7e7fd04a5ac9ae69"
+    ]
+  },
+  "id": "mentor_6a16fd39cb6672bf942d",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_154e7e7fd04a5ac9ae69"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李慧贤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f4094a6bd6dcaa17b43b",
+      "claim_ids": [
+        "claim_154e7e7fd04a5ac9ae69"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/lihuixian.html"
+    }
+  ],
+  "recent_papers": [
+    "EvalComp: Bootstrapping Based on Homomorphic Comparison Function for CKKS",
+    "Parallel Accelerating Number Theoretic Transform for Bootstrapping on a Graphics Processing Unit",
+    "Completely Anonymous Certificateless Multi-Receiver Signcryption Scheme with Sender Traceability",
+    "MPKC-based Threshold Proxy Signcryption Scheme",
+    "Efficient and Adaptively Secure Attribute-Based Proxy Reencryption Scheme",
+    "Cryptanalysis of Wang et al.’s improved anonymous multi-receiver identity-based encryption scheme",
+    "一种混合多变量签名方案",
+    "基于多变量公钥密码体制的无证书多接收者签密体制"
+  ],
+  "research_directions": [
+    "信息安全、同态加密、密码协议设计和分析、大模型隐私推理、FPGA虚拟化技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/lihuixian.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

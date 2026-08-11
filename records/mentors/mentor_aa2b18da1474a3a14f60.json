@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4ec0aaaf5564ce38a3a4"
+      ],
+      "ended_at": null,
+      "id": "aff_939bfcbb89bc42c92df1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/2021010007",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4ec0aaaf5564ce38a3a4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_939bfcbb89bc42c92df1",
+      "claim_ids": [
+        "claim_4ec0aaaf5564ce38a3a4"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuting@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/2021010007",
+      "status": "current",
+      "type": "email",
+      "value": "liuting@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ],
+    "email": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ],
+    "name": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ],
+    "profile_url": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ],
+    "recent_papers": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ],
+    "research_directions": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ],
+    "status": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ],
+    "title": [
+      "claim_4ec0aaaf5564ce38a3a4"
+    ]
+  },
+  "id": "mentor_aa2b18da1474a3a14f60",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4ec0aaaf5564ce38a3a4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘婷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_939bfcbb89bc42c92df1",
+      "claim_ids": [
+        "claim_4ec0aaaf5564ce38a3a4"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/2021010007"
+    }
+  ],
+  "recent_papers": [
+    "Efficient Decoupled Feature 3D Gaussian Splatting via Hierarchical Compression",
+    "Hybrid Global-Local Representation with Augmented Spatial Guidance for Zero-Shot Referring Image Segmentation",
+    "Hierarchical Grafting Network with Structural Alignment for Ultra-High Resolution Image Segmentation",
+    "Effective Road Segmentation With Selective State-Space Model and Frequency Feature Compensation",
+    "One-shot In-context Part Segmentation",
+    "Towards Accurate Human Parsing through Edge Guided Diffusion",
+    "Lyapunov-stable deep equilibrium models",
+    "Asymptotic Consistent Graph Structure Learning for Multivariate Time Series Anomaly Detection"
+  ],
+  "research_directions": [
+    "多模态信息处理、2D/3D语义分割、深度学习与计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/2021010007",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

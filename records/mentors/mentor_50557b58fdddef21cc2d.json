@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_99ab04ffc24d5b900ed8"
+      ],
+      "ended_at": null,
+      "id": "aff_e3920d3d075544797927",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/wangliang.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_99ab04ffc24d5b900ed8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e3920d3d075544797927",
+      "claim_ids": [
+        "claim_99ab04ffc24d5b900ed8"
+      ],
+      "is_primary": true,
+      "normalized_value": "liangwang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/wangliang.html",
+      "status": "current",
+      "type": "email",
+      "value": "liangwang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_99ab04ffc24d5b900ed8"
+    ],
+    "email": [
+      "claim_99ab04ffc24d5b900ed8"
+    ],
+    "name": [
+      "claim_99ab04ffc24d5b900ed8"
+    ],
+    "profile_url": [
+      "claim_99ab04ffc24d5b900ed8"
+    ],
+    "recent_papers": [
+      "claim_99ab04ffc24d5b900ed8"
+    ],
+    "research_directions": [
+      "claim_99ab04ffc24d5b900ed8"
+    ],
+    "status": [
+      "claim_99ab04ffc24d5b900ed8"
+    ],
+    "title": [
+      "claim_99ab04ffc24d5b900ed8"
+    ]
+  },
+  "id": "mentor_50557b58fdddef21cc2d",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_99ab04ffc24d5b900ed8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e3920d3d075544797927",
+      "claim_ids": [
+        "claim_99ab04ffc24d5b900ed8"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/wangliang.html"
+    }
+  ],
+  "recent_papers": [
+    "mmHSE: Enhanced Eavesdropping Attack on Headsets Leveraging COTS mmWave Radar, ACM international joint conference on Pervasive and Ubiquitous Computing/ Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies , ACM UbiComp 2025",
+    "Collaborative Scheduling of Time-dependent UAVs, Vehicles and Workers for Crowdsensing in Disaster Response, ACM international joint conference on Pervasive and Ubiquitous Computing/ Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies , ACM UbiComp 2025",
+    "Path-Enhanced Contrastive Learning for Recommendation,The Thirty-ninth Annual Conference on Neural Information Processing Systems, NeurIPS 2025 spotlight",
+    "Crowdsensing for Emergency Response in Unknown Environments: A Rapid Strategic Sensing Approach, IEEE Transactions on Mobile Computing, 2025,DOI: 10.1109/TMC.2025.3583816",
+    "Erasure Coding-Based Cost-Optimized and Latency-Aware Data Storage in UAV-Enabled Edge Systems, IEEE Transactions on Mobile Computing, 2025",
+    "Two Time-Scale DRL for Service Caching and Task Offloading in Cross-Domain Marine Networks, IEEE Transactions on Mobile Computing, 2025",
+    "TBCIM: Two-Level Blockchain-Aided Edge Resource Allocation Mechanism for Federated Learning Service Market, IEEE/ACM Transactions on Networking, 2025",
+    "Balancing Cooperation and Competition: Selfish Worker Coalition Formation in Spatial Crowdsourcing, ACM Transactions on Intelligent Systems and Technology, 2025"
+  ],
+  "research_directions": [
+    "物联网、城市计算、群智计算等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/wangliang.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

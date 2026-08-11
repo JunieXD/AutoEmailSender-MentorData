@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_74cb788205e23b6c410c"
+      ],
+      "ended_at": null,
+      "id": "aff_8ea47b10a39a8c3b469e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/2018010311.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_74cb788205e23b6c410c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8ea47b10a39a8c3b469e",
+      "claim_ids": [
+        "claim_74cb788205e23b6c410c"
+      ],
+      "is_primary": true,
+      "normalized_value": "xueff@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/2018010311.html",
+      "status": "current",
+      "type": "email",
+      "value": "xueff@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_74cb788205e23b6c410c"
+    ],
+    "email": [
+      "claim_74cb788205e23b6c410c"
+    ],
+    "name": [
+      "claim_74cb788205e23b6c410c"
+    ],
+    "profile_url": [
+      "claim_74cb788205e23b6c410c"
+    ],
+    "recent_papers": [
+      "claim_74cb788205e23b6c410c"
+    ],
+    "research_directions": [
+      "claim_74cb788205e23b6c410c"
+    ],
+    "status": [
+      "claim_74cb788205e23b6c410c"
+    ]
+  },
+  "id": "mentor_40305e33c8048632da10",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_74cb788205e23b6c410c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "薛菲菲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8ea47b10a39a8c3b469e",
+      "claim_ids": [
+        "claim_74cb788205e23b6c410c"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/2018010311.html"
+    }
+  ],
+  "recent_papers": [
+    "Design of a 10-bit 1 MS/s Pipelined SAR ADC for CZT-based imaging system",
+    "Design and Characterization of a 12-bit 10MS/s 10mW Pipelined SAR ADC for CZT-based Hard X-ray Imager",
+    "Design of a 12-bit 2 MS/s 12 mW Pipelined SAR ADC in CMOS 0.18 μm technology for CZT-based imaging system",
+    "A 12-bit 10 MS/s 12 mW pipelined SAR ADC for CubeSat systems using Vcm-based switching MDAC and unit capacitor array",
+    "Design of a radiation-hardened low-power Pipelined SAR ADC for CZT-based imaging system",
+    "Design of a 10-bit 50MSPS pipeline ADC for CMOS image sensor",
+    "用于PET成像系统的流水线ADC设计"
+  ],
+  "research_directions": [
+    "低功耗抗辐射集成电路的设计与测试,CMOS辐射探测电路与系统研究(含低噪声模拟前端信号处理、高速数据读出处理、数模/模数转换器设计、时间数字转换器、高速数据传输接口等)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/2018010311.html",
+  "title": null,
+  "updated_at": "2026-08-11T07:13:32Z"
+}

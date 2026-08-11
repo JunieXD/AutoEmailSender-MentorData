@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2b81b76512ea2b98e28f"
+      ],
+      "ended_at": null,
+      "id": "aff_d3d8db3d57a0b981c461",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/yxchen.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2b81b76512ea2b98e28f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d3d8db3d57a0b981c461",
+      "claim_ids": [
+        "claim_2b81b76512ea2b98e28f"
+      ],
+      "is_primary": true,
+      "normalized_value": "yxchen@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/yxchen.html",
+      "status": "current",
+      "type": "email",
+      "value": "yxchen@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2b81b76512ea2b98e28f"
+    ],
+    "email": [
+      "claim_2b81b76512ea2b98e28f"
+    ],
+    "name": [
+      "claim_2b81b76512ea2b98e28f"
+    ],
+    "profile_url": [
+      "claim_2b81b76512ea2b98e28f"
+    ],
+    "recent_papers": [
+      "claim_2b81b76512ea2b98e28f"
+    ],
+    "research_directions": [
+      "claim_2b81b76512ea2b98e28f"
+    ],
+    "status": [
+      "claim_2b81b76512ea2b98e28f"
+    ],
+    "title": [
+      "claim_2b81b76512ea2b98e28f"
+    ]
+  },
+  "id": "mentor_7ed6c82e335c7dfa13f4",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2b81b76512ea2b98e28f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈亚兴"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d3d8db3d57a0b981c461",
+      "claim_ids": [
+        "claim_2b81b76512ea2b98e28f"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/yxchen.html"
+    }
+  ],
+  "recent_papers": [
+    "I-PAttnGAN: An Image-Assisted Point Cloud Generation Method Based on Attention Generative Adversarial Network",
+    "基于多层依赖图的数据跨域流转异常行为动态感知方法",
+    "浅谈开源与学术评价的协同效应",
+    "RaftFed: An Efficient Federated Learning Framework for Vehicular Crowd Intelligence",
+    "FlexiGuard: Self-adaptive and Dynamic Context-based Access Control for Cross-domain Data Sharing",
+    "Efficient Bi-objective SQL Optimization for Enclaved Cloud Databases with Differentially-private Padding",
+    "ESMAC: Efficient and Secure Multi-owner Access Control with TEE in Multi-level Data Processing",
+    "eSwin-UNet: A Collaborative Model for Industrial Surface Defect Detection"
+  ],
+  "research_directions": [
+    "群智计算系统与开源、数据隐私计算、泛在人机物资源系统及其关键技术、可信数据空间及其关键技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/yxchen.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

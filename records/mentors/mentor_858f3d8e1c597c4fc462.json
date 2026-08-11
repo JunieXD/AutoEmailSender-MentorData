@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7f19732cb6c8899ce0cf"
+      ],
+      "ended_at": null,
+      "id": "aff_c651bb254bb9392e163c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_28f504a8806f93b70732",
+      "source_url": "http://teacher.nwpu.edu.cn/2022010127",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7f19732cb6c8899ce0cf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c651bb254bb9392e163c",
+      "claim_ids": [
+        "claim_7f19732cb6c8899ce0cf"
+      ],
+      "is_primary": true,
+      "normalized_value": "xing.huang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/2022010127",
+      "status": "current",
+      "type": "email",
+      "value": "xing.huang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7f19732cb6c8899ce0cf"
+    ],
+    "email": [
+      "claim_7f19732cb6c8899ce0cf"
+    ],
+    "name": [
+      "claim_7f19732cb6c8899ce0cf"
+    ],
+    "profile_url": [
+      "claim_7f19732cb6c8899ce0cf"
+    ],
+    "recent_papers": [
+      "claim_7f19732cb6c8899ce0cf"
+    ],
+    "research_directions": [
+      "claim_7f19732cb6c8899ce0cf"
+    ],
+    "status": [
+      "claim_7f19732cb6c8899ce0cf"
+    ],
+    "title": [
+      "claim_7f19732cb6c8899ce0cf"
+    ]
+  },
+  "id": "mentor_858f3d8e1c597c4fc462",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7f19732cb6c8899ce0cf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄兴"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c651bb254bb9392e163c",
+      "claim_ids": [
+        "claim_7f19732cb6c8899ce0cf"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/2022010127"
+    }
+  ],
+  "recent_papers": [
+    "X. Huang, J. X. Wang, Z. W. Yu, B. Guo, H. B. Ma, T.-Y. Ho, U. Schlichtmann, and K. Chakrabarty, “Path-Driven Washing and Drying Co-Optimization in Continuous-Flow Lab-on-Chips”,IEEE Transactions on Computer-aided Design of Integrated Circuits and Systems(TCAD), 2026.(CCF-A)",
+    "Q. G. Shen, C. L. Zhang, H. Y. Xu, Z. W. Yu, B. Guo, Y. X. Zhao, B. Yu, Tsung-Yi Ho, and X. Huang*, “HPPlacer: A High-Precision Slack-Aware Global Placement Engine”, Proceedings of IEEE/ACM Design, Automation and Test in Europe (DATE) Conference, 2026, pp. 1-6.(CCF-B)",
+    "H. Y. Xu, X. Huang*, Z, Zhuang, Z. W. Yu, B. Guo, K.-Y. Chao, B. Yu, T.-Y. Ho, and M. D. F. Wong, “Hierarchical Partitioning-Based Inter-Chip Redistribution Layer Routing for Fan-Out Wafer-Level Packaging”, IEEE Transactions on Computer-aided Design of Integrated Circuits and Systems(TCAD), vol. 44, no. 11, pp. 4367-4380, 2025.(CCF-A)",
+    "Z. Q. Jia, C. Jiang, J. H. Li, Y. Belgaid, M. F. Ge, L. Li, S. Y. Hu, X. Huang, T.-Y. Ho, W. F. Dong, Z. W. Yu, and H. B. Ma, “Intelligent Single-Cell Manipulation: LLMs- and Object Detection-Enhanced Active-Matrix Digital Microfluidics”, Microsystems & Nanoengineering (MINE), vol. 11, no. 133, pp. 1-15, 2025.(中科院一区TOP)",
+    "G. G. Liu, P. C. Huang, Z. P. Li, W.-H. Liu,X. Huang*, and W. Z. Guo, “Late Breaking Results: An Efficient and Scalable Track Assignment with GPU Parallelism”, Proceedings of ACM/IEEE Design Automation Conference (DAC), 2025, pp. 1-2. (CCF-A)",
+    "Y. H. Zhu, G. G. Liu, W. Z. Guo, andX. Huang, “FTCD: Fault-Tolerant Co-Design of Flow and Control Layers for Fully Programmable Valve Array Biochips”, IEEE Transactions on Computer-aided Design of Integrated Circuits and Systems (TCAD), vol. 44, no. 7, pp. 2669-2682, 2025. (CCF-A)",
+    "Z. K. Lin, G. G. Liu,X. Huang, Y. B. Lin, J. X. Zhang, W.-H. Liu, and T.-C. Wang, “A Unified Deep Reinforcement Learning Approach for Constructing Rectilinear and Octilinear Steiner Minimum Tree”, IEEE Transactions on Computer-aided Design of Integrated Circuits and Systems (TCAD), vol. 44, no. 7, pp. 2711-2724, 2025.(CCF-A)",
+    "S. Qi, Z. W. Yu, B. Guo, S. Z. Li, Z. P. Li, H. B. Ma, T.-Y. Ho, K. Chakrabarty, andX. Huang*,\"Design Automation Techniques for Microfluidic Fully Programmable Valve Array Biochips: A Systematic Survey”, ACM Transactions on Design A utomation of Electronic Systems (TODAES), vol. 31, no. 1, pp. 1:1-1:31, 2025.(CCF-B)"
+  ],
+  "research_directions": [
+    "AI芯片设计、微流控芯片设计自动化、具身智能、集成电路布局布线"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/2022010127",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

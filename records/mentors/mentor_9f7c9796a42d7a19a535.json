@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_72cdc39885261a8bddeb"
+      ],
+      "ended_at": null,
+      "id": "aff_1ebd83eef061669b0b60",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/yeungg.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_72cdc39885261a8bddeb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1ebd83eef061669b0b60",
+      "claim_ids": [
+        "claim_72cdc39885261a8bddeb"
+      ],
+      "is_primary": true,
+      "normalized_value": "yeungg@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/yeungg.html",
+      "status": "current",
+      "type": "email",
+      "value": "yeungg@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_72cdc39885261a8bddeb"
+    ],
+    "email": [
+      "claim_72cdc39885261a8bddeb"
+    ],
+    "name": [
+      "claim_72cdc39885261a8bddeb"
+    ],
+    "profile_url": [
+      "claim_72cdc39885261a8bddeb"
+    ],
+    "research_directions": [
+      "claim_72cdc39885261a8bddeb"
+    ],
+    "status": [
+      "claim_72cdc39885261a8bddeb"
+    ],
+    "title": [
+      "claim_72cdc39885261a8bddeb"
+    ]
+  },
+  "id": "mentor_9f7c9796a42d7a19a535",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_72cdc39885261a8bddeb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨刚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1ebd83eef061669b0b60",
+      "claim_ids": [
+        "claim_72cdc39885261a8bddeb"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/yeungg.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "群体智能操作系统、无人机集群资源管理与任务调度、嵌入式分布计算系统建模技术、CPS系统协同设计技术以及服务计算及其中间件技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/yeungg.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

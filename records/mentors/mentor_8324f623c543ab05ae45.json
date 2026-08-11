@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f12ce5119da4706310ce"
+      ],
+      "ended_at": null,
+      "id": "aff_f119bb6e49f83f319a00",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/hanru.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f12ce5119da4706310ce"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f119bb6e49f83f319a00",
+      "claim_ids": [
+        "claim_f12ce5119da4706310ce"
+      ],
+      "is_primary": true,
+      "normalized_value": "hanru@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/hanru.html",
+      "status": "current",
+      "type": "email",
+      "value": "hanru@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f12ce5119da4706310ce"
+    ],
+    "email": [
+      "claim_f12ce5119da4706310ce"
+    ],
+    "name": [
+      "claim_f12ce5119da4706310ce"
+    ],
+    "profile_url": [
+      "claim_f12ce5119da4706310ce"
+    ],
+    "research_directions": [
+      "claim_f12ce5119da4706310ce"
+    ],
+    "status": [
+      "claim_f12ce5119da4706310ce"
+    ],
+    "title": [
+      "claim_f12ce5119da4706310ce"
+    ]
+  },
+  "id": "mentor_8324f623c543ab05ae45",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f12ce5119da4706310ce"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩茹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f119bb6e49f83f319a00",
+      "claim_ids": [
+        "claim_f12ce5119da4706310ce"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/hanru.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型低功耗纳米电路的建模与仿真,纳米电路的可靠性研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/hanru.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

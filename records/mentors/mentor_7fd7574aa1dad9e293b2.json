@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0ff9dbe99cab604d0e48"
+      ],
+      "ended_at": null,
+      "id": "aff_3311390d913729dfbcd3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/zhanglj.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0ff9dbe99cab604d0e48"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3311390d913729dfbcd3",
+      "claim_ids": [
+        "claim_0ff9dbe99cab604d0e48"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanglijun@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/zhanglj.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhanglijun@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0ff9dbe99cab604d0e48"
+    ],
+    "email": [
+      "claim_0ff9dbe99cab604d0e48"
+    ],
+    "name": [
+      "claim_0ff9dbe99cab604d0e48"
+    ],
+    "profile_url": [
+      "claim_0ff9dbe99cab604d0e48"
+    ],
+    "recent_papers": [
+      "claim_0ff9dbe99cab604d0e48"
+    ],
+    "research_directions": [
+      "claim_0ff9dbe99cab604d0e48"
+    ],
+    "status": [
+      "claim_0ff9dbe99cab604d0e48"
+    ],
+    "title": [
+      "claim_0ff9dbe99cab604d0e48"
+    ]
+  },
+  "id": "mentor_7fd7574aa1dad9e293b2",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0ff9dbe99cab604d0e48"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张利军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3311390d913729dfbcd3",
+      "claim_ids": [
+        "claim_0ff9dbe99cab604d0e48"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/zhanglj.html"
+    }
+  ],
+  "recent_papers": [
+    "Adaptive deep learning for entity resolution by risk analysis",
+    "Identifying Urban Functional Regions by LDA Topic Model with POI Data",
+    "Adaptive deep learning for network intrusion detection by risk analysis",
+    "An Overview on Supervised Semi-structured Data Classification",
+    "Rapid Trend Prediction for Large-Scale Cloud Database KPIs by Clustering",
+    "A semi-structured data classification model with integrating tag sequence and ngram",
+    "软件缺陷预测中的数据质量评估方法",
+    "一种面向金融应用的海量分布式关系数据库"
+  ],
+  "research_directions": [
+    "数据库系统理论与技术、大数据分析与挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/zhanglj.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

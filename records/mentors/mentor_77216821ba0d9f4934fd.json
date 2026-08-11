@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3bb44aeb8aae72ace195"
+      ],
+      "ended_at": null,
+      "id": "aff_3832f9f10c439a9869e0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/zhuyian.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3bb44aeb8aae72ace195"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3832f9f10c439a9869e0",
+      "claim_ids": [
+        "claim_3bb44aeb8aae72ace195"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuya@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/zhuyian.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhuya@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3bb44aeb8aae72ace195"
+    ],
+    "email": [
+      "claim_3bb44aeb8aae72ace195"
+    ],
+    "name": [
+      "claim_3bb44aeb8aae72ace195"
+    ],
+    "profile_url": [
+      "claim_3bb44aeb8aae72ace195"
+    ],
+    "recent_papers": [
+      "claim_3bb44aeb8aae72ace195"
+    ],
+    "research_directions": [
+      "claim_3bb44aeb8aae72ace195"
+    ],
+    "status": [
+      "claim_3bb44aeb8aae72ace195"
+    ],
+    "title": [
+      "claim_3bb44aeb8aae72ace195"
+    ]
+  },
+  "id": "mentor_77216821ba0d9f4934fd",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3bb44aeb8aae72ace195"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱怡安"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3832f9f10c439a9869e0",
+      "claim_ids": [
+        "claim_3bb44aeb8aae72ace195"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/zhuyian.html"
+    }
+  ],
+  "recent_papers": [
+    "Adaptive gated embedding and cross-modal semantic fusion for multimodal knowledge graph completion",
+    "Priority list scheduling algorithm for response time analysis optimization using dependency-driven non-critical nodes parallelism factor",
+    "Fined-grained unmanned aerial vehicle anomaly detection by fusing multi?domain features",
+    "Robust Audio–Visual Speaker Localization in Noisy Aircraft Cabins for Inflight Medical Assistance",
+    "FFCL-KGC: Feature Fusion Contrastive Learning via Dual Prompting for Knowledge Graph Completion",
+    "Implicit Multi-Scale Swin Transformer Network for Image Denoising",
+    "Anomaly detection for multivariate time series in IoT using discrete wavelet decomposition and dual graph attention networks",
+    "Knowledge Graph Completion via Multi-feature Learning"
+  ],
+  "research_directions": [
+    "嵌入式系统、云计算与大数据系统、人工智能、分布式系统与并行计算、边缘计算、数字孪生、网络及安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/zhuyian.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

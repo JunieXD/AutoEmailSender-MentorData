@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2ddeefd4484eddfbb336"
+      ],
+      "ended_at": null,
+      "id": "aff_1653f003d4e17815de84",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/funing.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_2ddeefd4484eddfbb336"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1653f003d4e17815de84",
+      "claim_ids": [
+        "claim_2ddeefd4484eddfbb336"
+      ],
+      "is_primary": true,
+      "normalized_value": "funing@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/funing.html",
+      "status": "current",
+      "type": "email",
+      "value": "funing@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2ddeefd4484eddfbb336"
+    ],
+    "email": [
+      "claim_2ddeefd4484eddfbb336"
+    ],
+    "name": [
+      "claim_2ddeefd4484eddfbb336"
+    ],
+    "profile_url": [
+      "claim_2ddeefd4484eddfbb336"
+    ],
+    "research_directions": [
+      "claim_2ddeefd4484eddfbb336"
+    ],
+    "status": [
+      "claim_2ddeefd4484eddfbb336"
+    ]
+  },
+  "id": "mentor_d54b87618dc0952aab01",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2ddeefd4484eddfbb336"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "符宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1653f003d4e17815de84",
+      "claim_ids": [
+        "claim_2ddeefd4484eddfbb336"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/funing.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机软件理论、数据挖掘、机器学习方法与应用、深度学习、图数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/funing.html",
+  "title": null,
+  "updated_at": "2026-08-11T07:13:32Z"
+}

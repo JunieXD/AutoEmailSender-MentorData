@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fa984500cd87820a6487"
+      ],
+      "ended_at": null,
+      "id": "aff_7e5ccb76887e04527326",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/ypzhang.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fa984500cd87820a6487"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7e5ccb76887e04527326",
+      "claim_ids": [
+        "claim_fa984500cd87820a6487"
+      ],
+      "is_primary": true,
+      "normalized_value": "ypzhaang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/ypzhang.html",
+      "status": "current",
+      "type": "email",
+      "value": "ypzhaang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fa984500cd87820a6487"
+    ],
+    "email": [
+      "claim_fa984500cd87820a6487"
+    ],
+    "name": [
+      "claim_fa984500cd87820a6487"
+    ],
+    "profile_url": [
+      "claim_fa984500cd87820a6487"
+    ],
+    "recent_papers": [
+      "claim_fa984500cd87820a6487"
+    ],
+    "research_directions": [
+      "claim_fa984500cd87820a6487"
+    ],
+    "status": [
+      "claim_fa984500cd87820a6487"
+    ],
+    "title": [
+      "claim_fa984500cd87820a6487"
+    ]
+  },
+  "id": "mentor_46a1f6a53aaf30b30b2a",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fa984500cd87820a6487"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张育培"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7e5ccb76887e04527326",
+      "claim_ids": [
+        "claim_fa984500cd87820a6487"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/ypzhang.html"
+    }
+  ],
+  "recent_papers": [
+    "SaTeen: Learning Structural Alignment for Continual Test-Time Adaptation[C]. ICML,2026.",
+    "DOGT: Double-Order Graph Transformers With Adaptive Node-Group Learning[J]. IEEE transactions on neural networks and learning systems, 2026.",
+    "Multiscale Weisfeiler-Leman Directed Graph Neural Networks for Prerequisite-Link Prediction[J]. IEEE transactions on knowledge and data engineering, 2025.",
+    "Robust spatio-temporal graph neural network with sparse structure learning[J]. Pattern Recognition, 2025.",
+    "Learning path planning via prior-guided reinforcement learning[C]. Artificial Intelligence in Education (AIED). 2025.",
+    "Adaptive meta-knowledge dictionary learning for incremental knowledge tracing[J]. Engineering Applications of Artificial Intelligence, 2024.",
+    "Federated learning-outcome prediction with multi-layer privacy protection[J]. Frontiers of Computer Science, 2024.",
+    "Doubly constrained offline reinforcement learning for learning path recommendation[J]. Knowledge-Based Systems, 2024."
+  ],
+  "research_directions": [
+    "结构化机器学习与教育大数据,涵盖理论计算基础(拓扑图论和优化理论)、智能模型理论与技术(机器学习和统计学习)、大数据科学分析(教育数据挖掘和飞行模式分析)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/ypzhang.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

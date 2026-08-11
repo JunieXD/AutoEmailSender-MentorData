@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b1379d026506ddf10b39"
+      ],
+      "ended_at": null,
+      "id": "aff_b952061a890ff0718a70",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/wanglf.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b1379d026506ddf10b39"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b952061a890ff0718a70",
+      "claim_ids": [
+        "claim_b1379d026506ddf10b39"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanglf@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/wanglf.html",
+      "status": "current",
+      "type": "email",
+      "value": "wanglf@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b1379d026506ddf10b39"
+    ],
+    "email": [
+      "claim_b1379d026506ddf10b39"
+    ],
+    "name": [
+      "claim_b1379d026506ddf10b39"
+    ],
+    "profile_url": [
+      "claim_b1379d026506ddf10b39"
+    ],
+    "research_directions": [
+      "claim_b1379d026506ddf10b39"
+    ],
+    "status": [
+      "claim_b1379d026506ddf10b39"
+    ],
+    "title": [
+      "claim_b1379d026506ddf10b39"
+    ]
+  },
+  "id": "mentor_d093e9e3308709fdc0af",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b1379d026506ddf10b39"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王丽芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b952061a890ff0718a70",
+      "claim_ids": [
+        "claim_b1379d026506ddf10b39"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/wanglf.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、机器学习、公众数据分析、云计算&云安全、网络与信息安全、电子商务&移动电子商务&电子服务技术、企业应用集成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/wanglf.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

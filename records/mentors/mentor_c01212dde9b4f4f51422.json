@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eefbc5bfbf1480a913a7"
+      ],
+      "ended_at": null,
+      "id": "aff_6896e22ef7049787c8ff",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/songlingyun.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eefbc5bfbf1480a913a7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6896e22ef7049787c8ff",
+      "claim_ids": [
+        "claim_eefbc5bfbf1480a913a7"
+      ],
+      "is_primary": true,
+      "normalized_value": "lysong@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/songlingyun.html",
+      "status": "current",
+      "type": "email",
+      "value": "lysong@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eefbc5bfbf1480a913a7"
+    ],
+    "email": [
+      "claim_eefbc5bfbf1480a913a7"
+    ],
+    "name": [
+      "claim_eefbc5bfbf1480a913a7"
+    ],
+    "profile_url": [
+      "claim_eefbc5bfbf1480a913a7"
+    ],
+    "recent_papers": [
+      "claim_eefbc5bfbf1480a913a7"
+    ],
+    "research_directions": [
+      "claim_eefbc5bfbf1480a913a7"
+    ],
+    "status": [
+      "claim_eefbc5bfbf1480a913a7"
+    ],
+    "title": [
+      "claim_eefbc5bfbf1480a913a7"
+    ]
+  },
+  "id": "mentor_c01212dde9b4f4f51422",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eefbc5bfbf1480a913a7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋凌云"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6896e22ef7049787c8ff",
+      "claim_ids": [
+        "claim_eefbc5bfbf1480a913a7"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/songlingyun.html"
+    }
+  ],
+  "recent_papers": [
+    "KSS-MoE: Knowledge Space Synergy framework in Mixture of Experts for Continual Visual Instruction Tuning. AAAI 2026.",
+    "FLASH: Fast Generative Retrieval via Autoregressive Semantic Hashing with Provably Distance Bounds. KDD 2026.",
+    "When Gradient Boosting Meets Adaption: Exploring Weak Learner Principle for Parameter Efficient Fine-tuning. KDD 2026.",
+    "G-HiRel: Enhancing the Adaption to Knowledge Updating for Large Language Model Reasoning. The Findings of the 64th Annual Meeting of the Association for Computational Linguistics(ACL 2026).",
+    "Robust Spatial-Temporal Similar Trajectory Search via Structure-Enhanced Domain-Invariant Learning. ICDE 2026.",
+    "Multimodal Pre-training Models of Molecular Representation for Drug Discovery. National Science Review. 2026.",
+    "Multi-Scale Temporal Neural Network for Stock Trend Prediction Enhanced by Temporal Hyperedge Learning. IJCAI, 2025.",
+    "Metapath and Hypergraph Structure-based Multi-Channel Graph Contrastive Learning for Student Performance Prediction. IJCAI, 2025."
+  ],
+  "research_directions": [
+    "可视化、跨媒体认知与推理、计算机视觉、多模态融合与推理、多模态大模型强化微调与多步推理、图像语义理解、基于RAG的大模型增强、时序图神经网络数据关联分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/songlingyun.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

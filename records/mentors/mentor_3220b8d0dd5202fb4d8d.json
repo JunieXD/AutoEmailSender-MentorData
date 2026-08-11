@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8836432f4deba8c88da6"
+      ],
+      "ended_at": null,
+      "id": "aff_d6c349ab00915244a8ca",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/yuzhiwen.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8836432f4deba8c88da6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d6c349ab00915244a8ca",
+      "claim_ids": [
+        "claim_8836432f4deba8c88da6"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhiwenyu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/yuzhiwen.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhiwenyu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8836432f4deba8c88da6"
+    ],
+    "email": [
+      "claim_8836432f4deba8c88da6"
+    ],
+    "name": [
+      "claim_8836432f4deba8c88da6"
+    ],
+    "profile_url": [
+      "claim_8836432f4deba8c88da6"
+    ],
+    "research_directions": [
+      "claim_8836432f4deba8c88da6"
+    ],
+    "status": [
+      "claim_8836432f4deba8c88da6"
+    ],
+    "title": [
+      "claim_8836432f4deba8c88da6"
+    ]
+  },
+  "id": "mentor_3220b8d0dd5202fb4d8d",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8836432f4deba8c88da6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "於志文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d6c349ab00915244a8ca",
+      "claim_ids": [
+        "claim_8836432f4deba8c88da6"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/yuzhiwen.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "物联网、普适计算、人机系统、智能感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/yuzhiwen.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

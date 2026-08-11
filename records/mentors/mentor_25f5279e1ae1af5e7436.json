@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_71d63c0765455da0071d"
+      ],
+      "ended_at": null,
+      "id": "aff_f81567eb05ee0fc66bec",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/weibo.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_71d63c0765455da0071d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f81567eb05ee0fc66bec",
+      "claim_ids": [
+        "claim_71d63c0765455da0071d"
+      ],
+      "is_primary": true,
+      "normalized_value": "wbchu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/weibo.html",
+      "status": "current",
+      "type": "email",
+      "value": "wbchu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_71d63c0765455da0071d"
+    ],
+    "email": [
+      "claim_71d63c0765455da0071d"
+    ],
+    "name": [
+      "claim_71d63c0765455da0071d"
+    ],
+    "profile_url": [
+      "claim_71d63c0765455da0071d"
+    ],
+    "recent_papers": [
+      "claim_71d63c0765455da0071d"
+    ],
+    "research_directions": [
+      "claim_71d63c0765455da0071d"
+    ],
+    "status": [
+      "claim_71d63c0765455da0071d"
+    ],
+    "title": [
+      "claim_71d63c0765455da0071d"
+    ]
+  },
+  "id": "mentor_25f5279e1ae1af5e7436",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_71d63c0765455da0071d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "褚伟波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f81567eb05ee0fc66bec",
+      "claim_ids": [
+        "claim_71d63c0765455da0071d"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/weibo.html"
+    }
+  ],
+  "recent_papers": [
+    "On DNN Model Partitioning and Deployment for Collaborative Multi-Edge AI Computing",
+    "On Joint Revenue Maximization, Resource Allocation and Task Offloading for Crowdsourcing-like Edge Computing",
+    "On Incentivizing Resource Allocation and Task Offloading for Cooperative Edge Computing",
+    "Online Optimal Service Caching for Multi-Access Edge Computing: A Constrained Multi-Armed Bandit Optimization Approach",
+    "Joint Service Caching, Resource Allocation and Task Offloading for MEC-based Networks: A Multi-Layer Optimization Approach",
+    "Online Optimal Service Selection, Resource Allocation and Task Offloading for Multi-Access Edge Computing: A Utility-based Approach",
+    "Jointly Optimizing Throughput and Content Delivery Cost over Lossy Cache Networks",
+    "Sharing Cache Resources among Content Providers: A Utility-Based Approach"
+  ],
+  "research_directions": [
+    "计算机网络测量、建模与分析,复杂网络控制以及信息安全等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/weibo.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_314f02ddd5c7d65e49c0"
+      ],
+      "ended_at": null,
+      "id": "aff_1f9f9017c78993d25cf7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://jszy.nwpu.edu.cn/wangzhu.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_314f02ddd5c7d65e49c0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f9f9017c78993d25cf7",
+      "claim_ids": [
+        "claim_314f02ddd5c7d65e49c0"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangzhu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://jszy.nwpu.edu.cn/wangzhu.html",
+      "status": "current",
+      "type": "email",
+      "value": "wangzhu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_314f02ddd5c7d65e49c0"
+    ],
+    "email": [
+      "claim_314f02ddd5c7d65e49c0"
+    ],
+    "name": [
+      "claim_314f02ddd5c7d65e49c0"
+    ],
+    "profile_url": [
+      "claim_314f02ddd5c7d65e49c0"
+    ],
+    "recent_papers": [
+      "claim_314f02ddd5c7d65e49c0"
+    ],
+    "research_directions": [
+      "claim_314f02ddd5c7d65e49c0"
+    ],
+    "status": [
+      "claim_314f02ddd5c7d65e49c0"
+    ],
+    "title": [
+      "claim_314f02ddd5c7d65e49c0"
+    ]
+  },
+  "id": "mentor_f4914c2ec21714303e69",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_314f02ddd5c7d65e49c0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王柱"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f9f9017c78993d25cf7",
+      "claim_ids": [
+        "claim_314f02ddd5c7d65e49c0"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://jszy.nwpu.edu.cn/wangzhu.html"
+    }
+  ],
+  "recent_papers": [
+    "MultiScanner: Enabling Simultaneous Detection of Multiple Liquids with mmWave Radar Based on a Composite Reflection Model",
+    "Towards Crowd Wireless Sensing: the Framework and Open Issues",
+    "FinerSense: A Fine-grained Respiration Sensing System Based on Precise Separation of Wi-Fi Signals",
+    "Characterizing the Through-Wall Sensing Mechanism of Wi-Fi Signals with a Refraction-Aware Fresnel Zone Model",
+    "mmPencil: Toward Writing-Style-Independent In-Air Handwriting Recognition via mmWave Radar and Large Vision-Language Model",
+    "Size Matters: Characterizing the Effect of Target Size on Wi-Fi Sensing Based on the Fresnel Zone Model",
+    "GrainSense: A Wireless Grain Moisture Sensing System based on Wi-Fi Signals",
+    "LiqDetector: Enabling Container-Independent Liquid Detection with mmWave Signals Based on a Dual-Reflection Model"
+  ],
+  "research_directions": [
+    "智能感知、普适计算、智能物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://jszy.nwpu.edu.cn/wangzhu.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

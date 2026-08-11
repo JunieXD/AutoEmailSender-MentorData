@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eb21d85016be69c4be43"
+      ],
+      "ended_at": null,
+      "id": "aff_d72e205ce7a57a5d83dd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/weixiaomin.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_eb21d85016be69c4be43"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d72e205ce7a57a5d83dd",
+      "claim_ids": [
+        "claim_eb21d85016be69c4be43"
+      ],
+      "is_primary": true,
+      "normalized_value": "weixm@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/weixiaomin.html",
+      "status": "current",
+      "type": "email",
+      "value": "weixm@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eb21d85016be69c4be43"
+    ],
+    "email": [
+      "claim_eb21d85016be69c4be43"
+    ],
+    "name": [
+      "claim_eb21d85016be69c4be43"
+    ],
+    "profile_url": [
+      "claim_eb21d85016be69c4be43"
+    ],
+    "recent_papers": [
+      "claim_eb21d85016be69c4be43"
+    ],
+    "research_directions": [
+      "claim_eb21d85016be69c4be43"
+    ],
+    "status": [
+      "claim_eb21d85016be69c4be43"
+    ]
+  },
+  "id": "mentor_b4ff12bb6601ede3a4e4",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eb21d85016be69c4be43"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏晓敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d72e205ce7a57a5d83dd",
+      "claim_ids": [
+        "claim_eb21d85016be69c4be43"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/weixiaomin.html"
+    }
+  ],
+  "recent_papers": [
+    "Design of a low-noise, high-linearity, readout ASIC for CdZnTe-based gamma-ray spectrometers",
+    "A low noise APD readout ASIC for electromagnetic calorimeter in HIEPA",
+    "A 12-bit 10MS/s 12mW pipelined SAR ADC for CubeSat systems using Vcm-based switching MDAC and unit capacitor array",
+    "High data-rate readout logic design of a 512 × 1024 pixel array dedicated for CEPC vertex detector",
+    "A simulation system and its applications for signal readout of CMOS pixel sensors in high energy physics",
+    "Development of a radiation-hardened SRAM with EDAC algorithm for fast readout CMOS pixel sensors for charged particle tracking",
+    "A built-in SRAM for radiation hard CMOS pixel sensors dedicated to high energy physics experiments",
+    "A radiation-hardened 2T-Memory cell for Monolithic Active Pixel Sensors in STAR experiment"
+  ],
+  "research_directions": [
+    "CMOS辐射探测器电路与系统、集成电路辐射加固技术、X射线检测、空间辐射剂量检测、医学成像、高能物理实验、低噪声模拟前端信号处理、高速数据读出处理、数模模数转换器设计、时间数字转换器、高速数据传输接口"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/weixiaomin.html",
+  "title": null,
+  "updated_at": "2026-08-11T07:13:32Z"
+}

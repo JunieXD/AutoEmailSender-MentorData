@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1a236e1dc356d1a28655"
+      ],
+      "ended_at": null,
+      "id": "aff_bba12206d36c38aa0641",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/xingyi",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1a236e1dc356d1a28655"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bba12206d36c38aa0641",
+      "claim_ids": [
+        "claim_1a236e1dc356d1a28655"
+      ],
+      "is_primary": true,
+      "normalized_value": "xingyili@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/xingyi",
+      "status": "current",
+      "type": "email",
+      "value": "xingyili@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1a236e1dc356d1a28655"
+    ],
+    "email": [
+      "claim_1a236e1dc356d1a28655"
+    ],
+    "name": [
+      "claim_1a236e1dc356d1a28655"
+    ],
+    "profile_url": [
+      "claim_1a236e1dc356d1a28655"
+    ],
+    "recent_papers": [
+      "claim_1a236e1dc356d1a28655"
+    ],
+    "research_directions": [
+      "claim_1a236e1dc356d1a28655"
+    ],
+    "status": [
+      "claim_1a236e1dc356d1a28655"
+    ],
+    "title": [
+      "claim_1a236e1dc356d1a28655"
+    ]
+  },
+  "id": "mentor_0f30d711d11f0e6feec1",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1a236e1dc356d1a28655"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李幸一"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bba12206d36c38aa0641",
+      "claim_ids": [
+        "claim_1a236e1dc356d1a28655"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/xingyi"
+    }
+  ],
+  "recent_papers": [
+    "Accurately Deciphering Tissue Heterogeneity from Spatial Multi-modal and Multi-omics with STransformer",
+    "WEmarker: breast cancer-specific prognostic analysis with weighted multiplex network embedding",
+    "FluNexus: a versatile web platform for antigenic prediction and visualization of influenza A viruses",
+    "Multi-Task Learning Framework for Cancer Driver Gene Identification on Multi-Network and Multi-OMICS Data",
+    "DualMarker: A multi-source fusion identification method for prognostic biomarkers of breast cancer based on dual-layer heterogeneous network",
+    "Deep graph convolutional network-based multi-omics integration for cancer driver gene identification",
+    "Towards Simplified Graph Neural Networks for Identifying Cancer Driver Genes in Heterophilic Networks",
+    "PathActMarker: an R package for inferring pathway activity of complex diseases"
+  ],
+  "research_directions": [
+    "生物信息学(AI for Science)、数据挖掘、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/xingyi",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

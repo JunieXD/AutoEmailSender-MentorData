@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_61c3598ff980faee8bbc"
+      ],
+      "ended_at": null,
+      "id": "aff_ab17541944fbd32e13da",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/panwei.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_61c3598ff980faee8bbc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ab17541944fbd32e13da",
+      "claim_ids": [
+        "claim_61c3598ff980faee8bbc"
+      ],
+      "is_primary": true,
+      "normalized_value": "panwei@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/panwei.html",
+      "status": "current",
+      "type": "email",
+      "value": "panwei@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_61c3598ff980faee8bbc"
+    ],
+    "email": [
+      "claim_61c3598ff980faee8bbc"
+    ],
+    "name": [
+      "claim_61c3598ff980faee8bbc"
+    ],
+    "profile_url": [
+      "claim_61c3598ff980faee8bbc"
+    ],
+    "research_directions": [
+      "claim_61c3598ff980faee8bbc"
+    ],
+    "status": [
+      "claim_61c3598ff980faee8bbc"
+    ],
+    "title": [
+      "claim_61c3598ff980faee8bbc"
+    ]
+  },
+  "id": "mentor_fef0381d17a89206e422",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_61c3598ff980faee8bbc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "潘炜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ab17541944fbd32e13da",
+      "claim_ids": [
+        "claim_61c3598ff980faee8bbc"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/panwei.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络空间安全监测与防护、多智能体决策、网络化系统建模、网络与信息安全、网络测量与分析、网络攻防对抗、软件逆向工程、智能决策与控制、强化学习、多智能体系统、智能机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/panwei.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

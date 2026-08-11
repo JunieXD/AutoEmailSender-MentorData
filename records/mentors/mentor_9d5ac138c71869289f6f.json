@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_23050e96955d2912d62e"
+      ],
+      "ended_at": null,
+      "id": "aff_10288d5490a17558375a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/linyi.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_23050e96955d2912d62e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_10288d5490a17558375a",
+      "claim_ids": [
+        "claim_23050e96955d2912d62e"
+      ],
+      "is_primary": true,
+      "normalized_value": "ly_cs@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/linyi.html",
+      "status": "current",
+      "type": "email",
+      "value": "ly_cs@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_23050e96955d2912d62e"
+    ],
+    "email": [
+      "claim_23050e96955d2912d62e"
+    ],
+    "name": [
+      "claim_23050e96955d2912d62e"
+    ],
+    "profile_url": [
+      "claim_23050e96955d2912d62e"
+    ],
+    "research_directions": [
+      "claim_23050e96955d2912d62e"
+    ],
+    "status": [
+      "claim_23050e96955d2912d62e"
+    ],
+    "title": [
+      "claim_23050e96955d2912d62e"
+    ]
+  },
+  "id": "mentor_9d5ac138c71869289f6f",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_23050e96955d2912d62e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林奕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_10288d5490a17558375a",
+      "claim_ids": [
+        "claim_23050e96955d2912d62e"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/linyi.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "实时网络、实时系统、嵌入/实时存储技术、海量存储技术、时间触发体系结构、软件建模"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/linyi.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

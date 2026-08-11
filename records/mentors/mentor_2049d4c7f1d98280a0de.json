@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_79fd79831d5173f07796"
+      ],
+      "ended_at": null,
+      "id": "aff_2e507153877c8b29d642",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/liqing",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_79fd79831d5173f07796"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2e507153877c8b29d642",
+      "claim_ids": [
+        "claim_79fd79831d5173f07796"
+      ],
+      "is_primary": true,
+      "normalized_value": "qingli@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/liqing",
+      "status": "current",
+      "type": "email",
+      "value": "qingli@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_79fd79831d5173f07796"
+    ],
+    "email": [
+      "claim_79fd79831d5173f07796"
+    ],
+    "name": [
+      "claim_79fd79831d5173f07796"
+    ],
+    "profile_url": [
+      "claim_79fd79831d5173f07796"
+    ],
+    "research_directions": [
+      "claim_79fd79831d5173f07796"
+    ],
+    "status": [
+      "claim_79fd79831d5173f07796"
+    ],
+    "title": [
+      "claim_79fd79831d5173f07796"
+    ]
+  },
+  "id": "mentor_2049d4c7f1d98280a0de",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_79fd79831d5173f07796"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李青"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2e507153877c8b29d642",
+      "claim_ids": [
+        "claim_79fd79831d5173f07796"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/liqing"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、知识图谱及复杂医疗事件解析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/liqing",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_896a100ff8794170a255"
+      ],
+      "ended_at": null,
+      "id": "aff_3caf0e484b02a18e0007",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/liuwenjie.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_896a100ff8794170a255"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3caf0e484b02a18e0007",
+      "claim_ids": [
+        "claim_896a100ff8794170a255"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuwenjie@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/liuwenjie.html",
+      "status": "current",
+      "type": "email",
+      "value": "liuwenjie@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_896a100ff8794170a255"
+    ],
+    "email": [
+      "claim_896a100ff8794170a255"
+    ],
+    "name": [
+      "claim_896a100ff8794170a255"
+    ],
+    "profile_url": [
+      "claim_896a100ff8794170a255"
+    ],
+    "recent_papers": [
+      "claim_896a100ff8794170a255"
+    ],
+    "research_directions": [
+      "claim_896a100ff8794170a255"
+    ],
+    "status": [
+      "claim_896a100ff8794170a255"
+    ],
+    "title": [
+      "claim_896a100ff8794170a255"
+    ]
+  },
+  "id": "mentor_6848bb30d8de19f31519",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_896a100ff8794170a255"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘文洁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3caf0e484b02a18e0007",
+      "claim_ids": [
+        "claim_896a100ff8794170a255"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/liuwenjie.html"
+    }
+  ],
+  "recent_papers": [
+    "景苌弘,刘文洁,高锦涛等.面向分布式数据库的HTAP研究与实现.西北工业大学学报.2021,39(02):430-438(EI:20212110414061)",
+    "张晨煜, 刘文洁, 庞天泽,等. 基于分布式数据库的相关子查询优化[J]. 西北工业大学学报, 39(4):10.(EI:20201108299322)",
+    "J Gao, Liu W , Li Z , et al. A general fragments allocation method for join query in distributed database[J]. Information Sciences, 2020, 512:1249-1263.(SCI 1区,CCF 推荐B类期刊)",
+    "Gao J , Zhanhuai L I , Liu W , et al. A new fragments allocating method for join query in distributed database[J]. Frontiers of Computer Science (print), 2020, 14(4).(SCI 4区,CCF 推荐C类期刊)",
+    "J Gao, Liu W , Li Z . An adaptive strategy for statistics collecting in distributed database[J]. Frontiers of Computer Science (print), 2020, 14(5).(SCI 4区, CCF推荐C类期刊)",
+    "高锦涛, 刘文洁, 李战怀. 一种面向分布式读写分离系统的数据同步策略[J]. 西北工业大学学报, 2020(1):209-215.",
+    "高锦涛, GAO JinTao, 李战怀,等. 分布式数据库下基于剪枝的并行合并连接策略[J]. 软件学报, 2019, Vol.30Issue(11):3364-3381.",
+    "Gao Jintao, Liu Wenjie, Li Zhanhuai, Du Hongtao, Pei Ouya. A New Statistics Collecting Method with Adaptive Strategy. DASFAA 2019(CCF推荐B类期刊)"
+  ],
+  "research_directions": [
+    "云计算、大数据处理、海量分布式数据库,列存储数据库、自律计算、高可用软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/liuwenjie.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d5f74b9dffbe9cde0493"
+      ],
+      "ended_at": null,
+      "id": "aff_1b9bb6ba58f578b6dff3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/wupeng.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d5f74b9dffbe9cde0493"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1b9bb6ba58f578b6dff3",
+      "claim_ids": [
+        "claim_d5f74b9dffbe9cde0493"
+      ],
+      "is_primary": true,
+      "normalized_value": "pengwu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/wupeng.html",
+      "status": "current",
+      "type": "email",
+      "value": "pengwu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d5f74b9dffbe9cde0493"
+    ],
+    "email": [
+      "claim_d5f74b9dffbe9cde0493"
+    ],
+    "name": [
+      "claim_d5f74b9dffbe9cde0493"
+    ],
+    "profile_url": [
+      "claim_d5f74b9dffbe9cde0493"
+    ],
+    "recent_papers": [
+      "claim_d5f74b9dffbe9cde0493"
+    ],
+    "research_directions": [
+      "claim_d5f74b9dffbe9cde0493"
+    ],
+    "status": [
+      "claim_d5f74b9dffbe9cde0493"
+    ],
+    "title": [
+      "claim_d5f74b9dffbe9cde0493"
+    ]
+  },
+  "id": "mentor_4eb254fcef30d503e6e9",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d5f74b9dffbe9cde0493"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1b9bb6ba58f578b6dff3",
+      "claim_ids": [
+        "claim_d5f74b9dffbe9cde0493"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/wupeng.html"
+    }
+  ],
+  "recent_papers": [
+    "AVadCLIP: Audio-Visual Collaboration for Robust Video Anomaly Detection",
+    "Deep Learning for Video Anomaly Detection: A Review",
+    "Single-Frame Supervision for Temporal Video Anomaly Grounding",
+    "TargetVAU: Multimodal Anomaly-Aware Resoning for Target Behavior Understanding in Videos",
+    "VarCMP: Adapting Cross-Modal Pre-Training Models for Video Anomaly Retrieval",
+    "Weakly Supervised Video Anomaly Detection and Localization with Spatio-Temporal Prompts",
+    "Open-Vocabulary Video Anomaly Detection",
+    "Towards Video Anomaly Retrieval from Video Anomaly Detection: New Benchmarks and Model"
+  ],
+  "research_directions": [
+    "深度学习与计算机视觉,包括视频异常事件检测、图像缺陷检测、视觉语言大模型、跨模态检索等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/wupeng.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

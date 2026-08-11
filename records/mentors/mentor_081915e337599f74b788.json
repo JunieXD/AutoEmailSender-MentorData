@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_78184b6f2358893511e4"
+      ],
+      "ended_at": null,
+      "id": "aff_f30f865ec210a2cdb201",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/wangyt",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_78184b6f2358893511e4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f30f865ec210a2cdb201",
+      "claim_ids": [
+        "claim_78184b6f2358893511e4"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyt@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/wangyt",
+      "status": "current",
+      "type": "email",
+      "value": "wangyt@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_78184b6f2358893511e4"
+    ],
+    "email": [
+      "claim_78184b6f2358893511e4"
+    ],
+    "name": [
+      "claim_78184b6f2358893511e4"
+    ],
+    "profile_url": [
+      "claim_78184b6f2358893511e4"
+    ],
+    "recent_papers": [
+      "claim_78184b6f2358893511e4"
+    ],
+    "research_directions": [
+      "claim_78184b6f2358893511e4"
+    ],
+    "status": [
+      "claim_78184b6f2358893511e4"
+    ],
+    "title": [
+      "claim_78184b6f2358893511e4"
+    ]
+  },
+  "id": "mentor_081915e337599f74b788",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_78184b6f2358893511e4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王永天"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f30f865ec210a2cdb201",
+      "claim_ids": [
+        "claim_78184b6f2358893511e4"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/wangyt"
+    }
+  ],
+  "recent_papers": [
+    "Efficient integration of spatial omics data for joint domain detection, matching, and alignment with stMSA",
+    "DisConST: Distribution-aware Contrastive Learning for Spatial Domain Identification",
+    "Enhanced RNA Secondary Structure Prediction through Integrative Deep Learning and Structural Context Analysis",
+    "BioRAGent: natural language biomedical querying with retrieval-augmented multiagent systems",
+    "Recent Progress and Challenges of Artificial Intelligence in Bioinformatics and New Medicine",
+    "Inference of gene coexpression networks from single-cell transcriptome data based on variance decomposition analysis",
+    "A Multi‐Property Optimizing Generative Adversarial Network for de novo Antimicrobial Peptide Design",
+    "STExplore: An Integrated Online Platform for Comprehensive Analysis and Visualization of Spatial Transcriptomics Data"
+  ],
+  "research_directions": [
+    "生物信息学、数据挖掘、人工智能、药物疫苗设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/wangyt",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}
