@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f767dd3b54f9d1c1e9a8"
+      ],
+      "ended_at": null,
+      "id": "aff_dc2e2d662e6346367ff3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/2017030108.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f767dd3b54f9d1c1e9a8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dc2e2d662e6346367ff3",
+      "claim_ids": [
+        "claim_f767dd3b54f9d1c1e9a8"
+      ],
+      "is_primary": true,
+      "normalized_value": "hfcui@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/2017030108.html",
+      "status": "current",
+      "type": "email",
+      "value": "hfcui@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f767dd3b54f9d1c1e9a8"
+    ],
+    "email": [
+      "claim_f767dd3b54f9d1c1e9a8"
+    ],
+    "name": [
+      "claim_f767dd3b54f9d1c1e9a8"
+    ],
+    "profile_url": [
+      "claim_f767dd3b54f9d1c1e9a8"
+    ],
+    "research_directions": [
+      "claim_f767dd3b54f9d1c1e9a8"
+    ],
+    "status": [
+      "claim_f767dd3b54f9d1c1e9a8"
+    ],
+    "title": [
+      "claim_f767dd3b54f9d1c1e9a8"
+    ]
+  },
+  "id": "mentor_236925003b8441245833",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f767dd3b54f9d1c1e9a8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "崔恒飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dc2e2d662e6346367ff3",
+      "claim_ids": [
+        "claim_f767dd3b54f9d1c1e9a8"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/2017030108.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医学图像智能计算、心脏图像分割、冠心病计算机辅助诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/2017030108.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

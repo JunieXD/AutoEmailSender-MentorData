@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_133d509a957bd4a0ade2"
+      ],
+      "ended_at": null,
+      "id": "aff_85a845b4def08b2426ab",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/rgzhao",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_133d509a957bd4a0ade2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_85a845b4def08b2426ab",
+      "claim_ids": [
+        "claim_133d509a957bd4a0ade2"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaoruiguang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/rgzhao",
+      "status": "current",
+      "type": "email",
+      "value": "zhaoruiguang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_133d509a957bd4a0ade2"
+    ],
+    "email": [
+      "claim_133d509a957bd4a0ade2"
+    ],
+    "name": [
+      "claim_133d509a957bd4a0ade2"
+    ],
+    "profile_url": [
+      "claim_133d509a957bd4a0ade2"
+    ],
+    "recent_papers": [
+      "claim_133d509a957bd4a0ade2"
+    ],
+    "research_directions": [
+      "claim_133d509a957bd4a0ade2"
+    ],
+    "status": [
+      "claim_133d509a957bd4a0ade2"
+    ],
+    "title": [
+      "claim_133d509a957bd4a0ade2"
+    ]
+  },
+  "id": "mentor_b9970570bd0ff297b5e1",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_133d509a957bd4a0ade2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵瑞光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_85a845b4def08b2426ab",
+      "claim_ids": [
+        "claim_133d509a957bd4a0ade2"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/rgzhao"
+    }
+  ],
+  "recent_papers": [
+    "Performance Analysis of Compact On-Chip Operators for Cluster Feature Extraction",
+    "Pixel-Level Clustering Algorithm for Data Reconstruction in ILC",
+    "A 2-D Clustering Algorithm for Data Reconstruction in Vertex Detector of ILC",
+    "FPGA implementation of an artificial neural network for subatomic physics experiment particles recognition",
+    "Model to predict the number of transistors in an asymmetrical priority Address-Encoder and Reset-Decoder readout circuit for monolithic active pixel sensors for high-energy physics",
+    "A Real-time Auto-detection Method for RandomTelegraph Signal (RTS) Noise Detection in CMOS Active pixel sensors",
+    "GEANT4 analysis of energy deposition in CMOS photodiode under gamma-ray irradiation",
+    "CMOS Pixel Sensor with on-chip Neural Network for Vertex Detector of ILC"
+  ],
+  "research_directions": [
+    "主要从事数模混合信号集成电路设计、智能化CMOS像素探测器设计、低噪声电路设计、集成电路辐射加固技术等领域的研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/rgzhao",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

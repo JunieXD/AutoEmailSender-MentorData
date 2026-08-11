@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4f3695cec3c01536c589"
+      ],
+      "ended_at": null,
+      "id": "aff_792bcaac5cffca69ceb9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/2006000138.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4f3695cec3c01536c589"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_792bcaac5cffca69ceb9",
+      "claim_ids": [
+        "claim_4f3695cec3c01536c589"
+      ],
+      "is_primary": true,
+      "normalized_value": "haipeng@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/2006000138.html",
+      "status": "current",
+      "type": "email",
+      "value": "haipeng@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4f3695cec3c01536c589"
+    ],
+    "email": [
+      "claim_4f3695cec3c01536c589"
+    ],
+    "name": [
+      "claim_4f3695cec3c01536c589"
+    ],
+    "profile_url": [
+      "claim_4f3695cec3c01536c589"
+    ],
+    "research_directions": [
+      "claim_4f3695cec3c01536c589"
+    ],
+    "status": [
+      "claim_4f3695cec3c01536c589"
+    ],
+    "title": [
+      "claim_4f3695cec3c01536c589"
+    ]
+  },
+  "id": "mentor_c17f2dc20115951b84e7",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4f3695cec3c01536c589"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王海鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_792bcaac5cffca69ceb9",
+      "claim_ids": [
+        "claim_4f3695cec3c01536c589"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/2006000138.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、人机交互技术、面向智能交通和健康医疗的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/2006000138.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d3c0c112fd3768bfc324"
+      ],
+      "ended_at": null,
+      "id": "aff_fb5ea9153b021ca7241c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_28f504a8806f93b70732",
+      "source_url": "https://teacher.nwpu.edu.cn/scliu.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d3c0c112fd3768bfc324"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fb5ea9153b021ca7241c",
+      "claim_ids": [
+        "claim_d3c0c112fd3768bfc324"
+      ],
+      "is_primary": true,
+      "normalized_value": "scliu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/scliu.html",
+      "status": "current",
+      "type": "email",
+      "value": "scliu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d3c0c112fd3768bfc324"
+    ],
+    "email": [
+      "claim_d3c0c112fd3768bfc324"
+    ],
+    "name": [
+      "claim_d3c0c112fd3768bfc324"
+    ],
+    "profile_url": [
+      "claim_d3c0c112fd3768bfc324"
+    ],
+    "research_directions": [
+      "claim_d3c0c112fd3768bfc324"
+    ],
+    "status": [
+      "claim_d3c0c112fd3768bfc324"
+    ],
+    "title": [
+      "claim_d3c0c112fd3768bfc324"
+    ]
+  },
+  "id": "mentor_571bda6a9fba79a56b3b",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d3c0c112fd3768bfc324"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘思聪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fb5ea9153b021ca7241c",
+      "claim_ids": [
+        "claim_d3c0c112fd3768bfc324"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/scliu.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "泛在嵌入式智能计算、普适计算、智能物联网系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/scliu.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

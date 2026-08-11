@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c2d61dbf07a24926c98c"
+      ],
+      "ended_at": null,
+      "id": "aff_63eb0abad7d49c28488e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_28f504a8806f93b70732",
+      "source_url": "https://teacher.nwpu.edu.cn/helei.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c2d61dbf07a24926c98c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_63eb0abad7d49c28488e",
+      "claim_ids": [
+        "claim_c2d61dbf07a24926c98c"
+      ],
+      "is_primary": true,
+      "normalized_value": "chl@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/helei.html",
+      "status": "current",
+      "type": "email",
+      "value": "chl@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c2d61dbf07a24926c98c"
+    ],
+    "email": [
+      "claim_c2d61dbf07a24926c98c"
+    ],
+    "name": [
+      "claim_c2d61dbf07a24926c98c"
+    ],
+    "profile_url": [
+      "claim_c2d61dbf07a24926c98c"
+    ],
+    "recent_papers": [
+      "claim_c2d61dbf07a24926c98c"
+    ],
+    "research_directions": [
+      "claim_c2d61dbf07a24926c98c"
+    ],
+    "status": [
+      "claim_c2d61dbf07a24926c98c"
+    ],
+    "title": [
+      "claim_c2d61dbf07a24926c98c"
+    ]
+  },
+  "id": "mentor_bfd5e85f9b8e5a4a3c84",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c2d61dbf07a24926c98c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "崔禾磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_63eb0abad7d49c28488e",
+      "claim_ids": [
+        "claim_c2d61dbf07a24926c98c"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/helei.html"
+    }
+  ],
+  "recent_papers": [
+    "O-TSN: Enabling Oblivious Traffic Switch for Time-Sensitive Networking",
+    "MeCo: Enhancing LLM-Empowered Multi-Robot Collaboration via Similar Task Memoization",
+    "ObliMIG: Enabling Data Migration on Oblivious Storage Without Interruption",
+    "V-ORAM: A Versatile and Adaptive ORAM Framework with Service Transformation for Dynamic Workloads",
+    "SenFEED: Dynamic Decentralized Oracle Services for Accurate and Real-Time Sensor Data",
+    "TrustLive: Dynamic and Efficient Trust Evaluation in SIoT with Graph Neural Networks",
+    "AutoCut: Multi-Objective Offloading Service for Heterogeneous DNN in Internet of Things",
+    "DCrowd: Decentralized Mobile Crowdsensing via Proof of Task Assignment Blockchain"
+  ],
+  "research_directions": [
+    "可信群智计算、隐私计算、去中心化云存储、边缘智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/helei.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

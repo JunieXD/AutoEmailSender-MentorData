@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7fae94ef29bc32d5bdac"
+      ],
+      "ended_at": null,
+      "id": "aff_48a893eca4d9ea39eba6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/2020010159",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7fae94ef29bc32d5bdac"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_48a893eca4d9ea39eba6",
+      "claim_ids": [
+        "claim_7fae94ef29bc32d5bdac"
+      ],
+      "is_primary": true,
+      "normalized_value": "nannanzhao@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/2020010159",
+      "status": "current",
+      "type": "email",
+      "value": "nannanzhao@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7fae94ef29bc32d5bdac"
+    ],
+    "email": [
+      "claim_7fae94ef29bc32d5bdac"
+    ],
+    "name": [
+      "claim_7fae94ef29bc32d5bdac"
+    ],
+    "profile_url": [
+      "claim_7fae94ef29bc32d5bdac"
+    ],
+    "recent_papers": [
+      "claim_7fae94ef29bc32d5bdac"
+    ],
+    "research_directions": [
+      "claim_7fae94ef29bc32d5bdac"
+    ],
+    "status": [
+      "claim_7fae94ef29bc32d5bdac"
+    ],
+    "title": [
+      "claim_7fae94ef29bc32d5bdac"
+    ]
+  },
+  "id": "mentor_c21ec2f49c162be6f87e",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7fae94ef29bc32d5bdac"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵楠楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_48a893eca4d9ea39eba6",
+      "claim_ids": [
+        "claim_7fae94ef29bc32d5bdac"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/2020010159"
+    }
+  ],
+  "recent_papers": [
+    "An End-to-End High-Performance Deduplication Scheme for Docker Registries and Docker Container Storage Systems. ACM Trans. Storage. 2024.",
+    "A Cache Sharing Mechanism Based on RDMA, IEEE HPCC-2022.",
+    "Building A Fast and Efficient LSM-tree Store by Integrating Local Storage with Cloud Storage. Transactions on Architecture and Code Optimization, 2022.",
+    "SCHEDTUNE: A Heterogeneity-aware GPUScheduler for Deep Learnin. IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing, 2022.",
+    "RLRP: High-Efficient Data Placement with Reinforcement Learning for Modern Distributed Storage Systems. IEEE International Parallel and Distributed Processing Symposium, 2022.",
+    "TridentKV: A Read-Optimized LSM-Tree Based KV Store via Adaptive Indexing and Space-Efficient Partitioning. IEEE Transactions on Parallel and Distributed Systems, 2021.",
+    "Large-Scale Analysis of the Docker Images and Performance Implications to Container Storage Systems. IEEE Transactions on Parallel and Distributed Systems, 2021.",
+    "DupHunter: Flexible High-Performance Deduplication for Docker Registries. USENIX Annual Technical Conference, 2020."
+  ],
+  "research_directions": [
+    "云存储、分布式系统、内存系统、容器虚拟化、人工智能、GPU调度、存储系统、容器系统、缓存、内存压缩、智能存储"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/2020010159",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

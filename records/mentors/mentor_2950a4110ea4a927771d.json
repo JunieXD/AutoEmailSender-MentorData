@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_38dc97bcca80fe6b9e5c"
+      ],
+      "ended_at": null,
+      "id": "aff_59f9230e0053c700c90d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/hzhou",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_38dc97bcca80fe6b9e5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_59f9230e0053c700c90d",
+      "claim_ids": [
+        "claim_38dc97bcca80fe6b9e5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "hzhou117@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/hzhou",
+      "status": "current",
+      "type": "email",
+      "value": "hzhou117@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ],
+    "email": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ],
+    "name": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ],
+    "profile_url": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ],
+    "recent_papers": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ],
+    "research_directions": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ],
+    "status": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ],
+    "title": [
+      "claim_38dc97bcca80fe6b9e5c"
+    ]
+  },
+  "id": "mentor_2950a4110ea4a927771d",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_38dc97bcca80fe6b9e5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周欢"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_59f9230e0053c700c90d",
+      "claim_ids": [
+        "claim_38dc97bcca80fe6b9e5c"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/hzhou"
+    }
+  ],
+  "recent_papers": [
+    "H. Zhou, D. Meng, J. Guo, P. Sun, L. Zhao, B. Guo, and Z. Yu, Broker-assisted Computation Offloading and Resource Pricing in MEC Networks: A Two-Stage Stackelberg Game Approach,IEEE Transactions on Services Computing, vol. PP, no. 99, pp. 1-1, 2026. (CCF A, IF: 5.5)",
+    "H. Zhou, Q. Gu, P. Sun, X. Zhou, and Victor C. M. Leung,Incentive-driven and Energy Efficient Federated Learning in Mobile Edge Networks, IEEE Transactions on Cognitive Communications and Networking, PP (99): 1-1, 2025. (SCI, IF:5.0)",
+    "Z. Wang, Y. Cao, K. Jiang, H. Zhou, J. Kang, Y. Zhuang, D. Tian, and V. C. M. Leung, When Crowdsensing Meets Smart Cities: A Comprehensive Survey and New Perspectives. IEEE Commun. Surv. Tutorials,27(2): 1101-1151, 2025.(IF:46.7)",
+    "H. Zhou, M. Li, P. Sun, B. Guo, and Z. Yu,Accelerating Federated Learning via Parameter Selection and Pre-synchronization in Mobile Edge-Cloud Networks,IEEE Transactions on Mobile Computing, 23(11):10313 - 10328, 2024 (CCF A, IF:7.7)",
+    "H. Zhou, H. Wang, Z. Yu, B. Guo, M. Xiao, and J. Wu, Federated Distributed Deep Reinforcement Learning for Recommendation-enabled Edge Caching in Multi-tier Edge-cloud Networks,IEEE Transactions on Services Computing, 17(6):3640-3656, 2024. (CCF A, IF: 5.5)",
+    "Z. Lin, X. Liu*,H. Zhou*, and J. Wu, Adaptive Time-Varying Routing for Energy Saving and Load Balancing in Wireless Body Area Networks,IEEE Transactions on Mobile Computing,23(1): 90-101, 2024. (CCF A, IF:7.7)",
+    "H. Zhou, M. Li, N. Wang, G. Min, and J. Wu,Accelerating Deep Learning Inference via Model Parallelism and Partial Computation Offloading,IEEE Transactions on Parallel and Distributed System, 34(2): 475-488, 2023. (CCF A, IF:5.6)",
+    "H. Zhou, X. Chen, S. He, D. Guo, and J. Wu, Reverse Auction-based Computation Offloading andResource Allocation in Mobile Cloud-Edge Computing,IEEE Transactions on Mobile Computing, 22(10): 6144-6159, 2023. (ESI高被引论文,CCF A, IF:7.7)"
+  ],
+  "research_directions": [
+    "边缘智能、车联网、人工智能、联邦学习、群智计算等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/hzhou",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

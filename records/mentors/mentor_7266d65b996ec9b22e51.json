@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e1a1c2d5d25e93b304f7"
+      ],
+      "ended_at": null,
+      "id": "aff_ea5e35917a5fc65131ac",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/2023010044",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e1a1c2d5d25e93b304f7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ea5e35917a5fc65131ac",
+      "claim_ids": [
+        "claim_e1a1c2d5d25e93b304f7"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanglu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/2023010044",
+      "status": "current",
+      "type": "email",
+      "value": "zhanglu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e1a1c2d5d25e93b304f7"
+    ],
+    "email": [
+      "claim_e1a1c2d5d25e93b304f7"
+    ],
+    "name": [
+      "claim_e1a1c2d5d25e93b304f7"
+    ],
+    "profile_url": [
+      "claim_e1a1c2d5d25e93b304f7"
+    ],
+    "status": [
+      "claim_e1a1c2d5d25e93b304f7"
+    ],
+    "title": [
+      "claim_e1a1c2d5d25e93b304f7"
+    ]
+  },
+  "id": "mentor_7266d65b996ec9b22e51",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e1a1c2d5d25e93b304f7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张璐"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ea5e35917a5fc65131ac",
+      "claim_ids": [
+        "claim_e1a1c2d5d25e93b304f7"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/2023010044"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/2023010044",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

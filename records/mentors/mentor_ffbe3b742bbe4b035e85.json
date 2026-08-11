@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e6580ea01b7c34c94186"
+      ],
+      "ended_at": null,
+      "id": "aff_c27618410fcdc5738635",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/2020010088",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e6580ea01b7c34c94186"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c27618410fcdc5738635",
+      "claim_ids": [
+        "claim_e6580ea01b7c34c94186"
+      ],
+      "is_primary": true,
+      "normalized_value": "yizheng@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/2020010088",
+      "status": "current",
+      "type": "email",
+      "value": "yizheng@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e6580ea01b7c34c94186"
+    ],
+    "email": [
+      "claim_e6580ea01b7c34c94186"
+    ],
+    "name": [
+      "claim_e6580ea01b7c34c94186"
+    ],
+    "profile_url": [
+      "claim_e6580ea01b7c34c94186"
+    ],
+    "research_directions": [
+      "claim_e6580ea01b7c34c94186"
+    ],
+    "status": [
+      "claim_e6580ea01b7c34c94186"
+    ],
+    "title": [
+      "claim_e6580ea01b7c34c94186"
+    ]
+  },
+  "id": "mentor_ffbe3b742bbe4b035e85",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e6580ea01b7c34c94186"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑异"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c27618410fcdc5738635",
+      "claim_ids": [
+        "claim_e6580ea01b7c34c94186"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/2020010088"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子密码、量子计算、后量子密码算法、量子智能算法及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/2020010088",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

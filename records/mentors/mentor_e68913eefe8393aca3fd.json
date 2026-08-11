@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fe34f0a0f3a6842ad9b4"
+      ],
+      "ended_at": null,
+      "id": "aff_a395d122590f2ffc25b0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/2023010084",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fe34f0a0f3a6842ad9b4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a395d122590f2ffc25b0",
+      "claim_ids": [
+        "claim_fe34f0a0f3a6842ad9b4"
+      ],
+      "is_primary": true,
+      "normalized_value": "beiya.yang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/2023010084",
+      "status": "current",
+      "type": "email",
+      "value": "beiya.yang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ],
+    "email": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ],
+    "name": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ],
+    "profile_url": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ],
+    "recent_papers": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ],
+    "research_directions": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ],
+    "status": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ],
+    "title": [
+      "claim_fe34f0a0f3a6842ad9b4"
+    ]
+  },
+  "id": "mentor_e68913eefe8393aca3fd",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fe34f0a0f3a6842ad9b4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨北亚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a395d122590f2ffc25b0",
+      "claim_ids": [
+        "claim_fe34f0a0f3a6842ad9b4"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/2023010084"
+    }
+  ],
+  "recent_papers": [
+    "Yang B, Yang E, Yu L, Niu C. Ultrasonic and IMU Based High Precision UAV Localisation for the Low Cost Autonomous Inspection in Oil and Gas Pressure Vessels. IEEE Transactions on Industrial Informatics, vol. 19, no. 10, pp. 10523-10534, Oct. 2023, doi: 10.1109/TII.2023.3240874",
+    "Yang B, Yang E, Yu L, Niu C. Adaptive Extended Kalman Filter-Based Fusion Approach for High-Precision UAV Positioning in Extremely Confined Environments. IEEE/ASME Transactions on Mechatronics, vol. 28, no. 1, pp. 543-554, Feb. 2023, doi: 10.1109/TMECH.2022.3203875.",
+    "Yang B, Yang E, Shi H, Yu L, Niu C. Adaptive Square-Root Cubature Kalman Filter Based Low Cost UAV Positioning in Dark and GPS-denied Environments. IEEE Transactions on Intelligent Vehicles,vol. 10, no. 5, pp. 3587-3599, May 2025, doi: 10.1109/TIV.2024.3457678.",
+    "Yang B, Yang E, Yu L, Niu C. Sensor Fusion-Based UAV Localization System for Low-Cost Autonomous Inspection in Extremely Confined Environments. IEEE Sensors Journal, vol. 24, no. 14, pp. 22144-22155, July, 2024.",
+    "Yang B, Yang E, Yu L, Loeliger A. High-Precision UWB-Based Localisation for UAV in Extremely Confined Environments. IEEESensors Journal, vol. 22, no. 1, pp. 1020-9, Jan, 2022.",
+    "Shi H, Wang Q, Wang Z, Zhan J, Liang H, Yang B*. TDOA based localization mechanism for the UAV positioning in dark and confined environments. Displays, 103346, Jan, 2026, Early Access.",
+    "Yang B, Yang E. A survey on radio frequency based precise localisation technology for UAV in GPS-denied environment. Journal of Intelligent & Robotic Systems,vol. 103, no. 3, pp. 1-30, Nov, 2021."
+  ],
+  "research_directions": [
+    "多智能体决策、机器人智能控制、GPS拒止环境无人机高精度定位、融合定位技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/2023010084",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

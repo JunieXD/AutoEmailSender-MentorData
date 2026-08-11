@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3f79a6038a6f4be203a3"
+      ],
+      "ended_at": null,
+      "id": "aff_97d1a1800203fac62b41",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/feima",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3f79a6038a6f4be203a3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_97d1a1800203fac62b41",
+      "claim_ids": [
+        "claim_3f79a6038a6f4be203a3"
+      ],
+      "is_primary": true,
+      "normalized_value": "feima@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/feima",
+      "status": "current",
+      "type": "email",
+      "value": "feima@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3f79a6038a6f4be203a3"
+    ],
+    "email": [
+      "claim_3f79a6038a6f4be203a3"
+    ],
+    "name": [
+      "claim_3f79a6038a6f4be203a3"
+    ],
+    "profile_url": [
+      "claim_3f79a6038a6f4be203a3"
+    ],
+    "research_directions": [
+      "claim_3f79a6038a6f4be203a3"
+    ],
+    "status": [
+      "claim_3f79a6038a6f4be203a3"
+    ],
+    "title": [
+      "claim_3f79a6038a6f4be203a3"
+    ]
+  },
+  "id": "mentor_158a51627bf36a489f87",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3f79a6038a6f4be203a3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_97d1a1800203fac62b41",
+      "claim_ids": [
+        "claim_3f79a6038a6f4be203a3"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/feima"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "复杂网络、随机游走、数据安全、数据挖掘、图论与组合、协同演化博弈论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/feima",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c2fa908e623e22fbe6d3"
+      ],
+      "ended_at": null,
+      "id": "aff_a2e43adc32b34b9c8ea5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/haicheng",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c2fa908e623e22fbe6d3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a2e43adc32b34b9c8ea5",
+      "claim_ids": [
+        "claim_c2fa908e623e22fbe6d3"
+      ],
+      "is_primary": true,
+      "normalized_value": "yihaicheng@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/haicheng",
+      "status": "current",
+      "type": "email",
+      "value": "yihaicheng@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c2fa908e623e22fbe6d3"
+    ],
+    "email": [
+      "claim_c2fa908e623e22fbe6d3"
+    ],
+    "name": [
+      "claim_c2fa908e623e22fbe6d3"
+    ],
+    "profile_url": [
+      "claim_c2fa908e623e22fbe6d3"
+    ],
+    "recent_papers": [
+      "claim_c2fa908e623e22fbe6d3"
+    ],
+    "research_directions": [
+      "claim_c2fa908e623e22fbe6d3"
+    ],
+    "status": [
+      "claim_c2fa908e623e22fbe6d3"
+    ],
+    "title": [
+      "claim_c2fa908e623e22fbe6d3"
+    ]
+  },
+  "id": "mentor_be86e0da3e498c7635cc",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c2fa908e623e22fbe6d3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "易海成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a2e43adc32b34b9c8ea5",
+      "claim_ids": [
+        "claim_c2fa908e623e22fbe6d3"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/haicheng"
+    }
+  ],
+  "recent_papers": [
+    "A Multimodal Information Fusion Framework for Accurate and Robust Prediction of Drug-Drug Interactions",
+    "Three-dimensional Geometric Deep Learning for Reaction Prediction with Equivariant Graph Transformer",
+    "TriM-DTA: A tri-modal fusion framework for drug–target binding affinity prediction",
+    "Local-global Structure-aware Geometric Equivariant Graph Representation Learning for Predicting Protein-Ligand Binding Affinity",
+    "Equivariant 3D-conditional Diffusion Model for De novo Drug Generation",
+    "MathEagle: Accurate Prediction of Drug-Drug Interaction Events via Multi-head Attention and Heterogeneous Attribute Graph Learning",
+    "Accurate prediction of drug combination risk levels based on relational graph convolutional network and multi-head attention",
+    "Fusing graph transformer with multi-aggregate GCN for enhanced drug–disease associations prediction"
+  ],
+  "research_directions": [
+    "面向复杂生命系统的人工智能框架与算法、智能药物设计、大规模分子关联网络挖掘、几何深度学习、生成式模型、多模态大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/haicheng",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

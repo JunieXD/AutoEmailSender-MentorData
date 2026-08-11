@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b7a471bd715c06e4f399"
+      ],
+      "ended_at": null,
+      "id": "aff_cb5d60a73a71588997d3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/zhaoxn.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b7a471bd715c06e4f399"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cb5d60a73a71588997d3",
+      "claim_ids": [
+        "claim_b7a471bd715c06e4f399"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaoxn@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/zhaoxn.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhaoxn@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b7a471bd715c06e4f399"
+    ],
+    "email": [
+      "claim_b7a471bd715c06e4f399"
+    ],
+    "name": [
+      "claim_b7a471bd715c06e4f399"
+    ],
+    "profile_url": [
+      "claim_b7a471bd715c06e4f399"
+    ],
+    "recent_papers": [
+      "claim_b7a471bd715c06e4f399"
+    ],
+    "research_directions": [
+      "claim_b7a471bd715c06e4f399"
+    ],
+    "status": [
+      "claim_b7a471bd715c06e4f399"
+    ],
+    "title": [
+      "claim_b7a471bd715c06e4f399"
+    ]
+  },
+  "id": "mentor_31f0ac67014de33aa82a",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b7a471bd715c06e4f399"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵晓南"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cb5d60a73a71588997d3",
+      "claim_ids": [
+        "claim_b7a471bd715c06e4f399"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/zhaoxn.html"
+    }
+  ],
+  "recent_papers": [
+    "基于能耗梯度的SSD功率建模方法研究[J]. 计算机研究与发展, 2019, 56(8):11.",
+    "基于历史数据的虚拟机资源分配方法[J]. 计算机研究与发展, 2019, 56(4):11.",
+    "一种基于LSM树的键值存储系统性能优化方法[J]. 计算机研究与发展, 2019, 56(8):11.",
+    "云存储中数据完整性自适应审计方法[J]. 计算机研究与发展, 2017, 54(1):12.",
+    "公有云存储系统性能评测方法研究[J]. 计算机应用, 2017, 37(5):7.",
+    "云存储中支持失效文件快速查询的批量审计方法[J]. 计算机学报, 2017, 40(10):14.",
+    "支持多代理的云存储数据完整性审计方法[J]. 西北工业大学学报, 2016, 34(2):6.",
+    "FSObserver: A Performance Measurement and Monitoring Tool for Distributed Storage Systems. In proceeding of International Conference of Network and Parallel Computing. NPC 2018. Lecture Notes in Computer Science, vol 11276. Springer"
+  ],
+  "research_directions": [
+    "大数据存储系统、云计算与云存储系统设计与优化、大数据存储系统资源管理与智能配置、云存储系统性能建模与性能优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/zhaoxn.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

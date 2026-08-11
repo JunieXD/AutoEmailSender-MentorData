@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4bc5a4edca512827a55f"
+      ],
+      "ended_at": null,
+      "id": "aff_70d3292fcd07aaa256dd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/yuhui.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4bc5a4edca512827a55f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_70d3292fcd07aaa256dd",
+      "claim_ids": [
+        "claim_4bc5a4edca512827a55f"
+      ],
+      "is_primary": true,
+      "normalized_value": "huiyu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/yuhui.html",
+      "status": "current",
+      "type": "email",
+      "value": "huiyu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4bc5a4edca512827a55f"
+    ],
+    "email": [
+      "claim_4bc5a4edca512827a55f"
+    ],
+    "name": [
+      "claim_4bc5a4edca512827a55f"
+    ],
+    "profile_url": [
+      "claim_4bc5a4edca512827a55f"
+    ],
+    "recent_papers": [
+      "claim_4bc5a4edca512827a55f"
+    ],
+    "research_directions": [
+      "claim_4bc5a4edca512827a55f"
+    ],
+    "status": [
+      "claim_4bc5a4edca512827a55f"
+    ],
+    "title": [
+      "claim_4bc5a4edca512827a55f"
+    ]
+  },
+  "id": "mentor_de8cde719f59ad39412b",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4bc5a4edca512827a55f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于会"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_70d3292fcd07aaa256dd",
+      "claim_ids": [
+        "claim_4bc5a4edca512827a55f"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/yuhui.html"
+    }
+  ],
+  "recent_papers": [
+    "Predicting the Imbalanced Impact of Drugs on Microbial Abundance Using Multi-View Learning and Data Augmentation",
+    "MTGGF: A Metabolism Type-Aware Graph Generative Model for Molecular Metabolite Prediction",
+    "DVL-CC: A Novel Dual-View Learning Framework for Compound Cocrystal Prediction Boosted by View Consistency and Complementarity",
+    "Multiview clustering with semantic fusion and contrastive learning",
+    "Prediction of drug–target binding affinity based on multi-scale feature fusion",
+    "Identifying the reaction centers of molecule based on dual-view representation",
+    "GGI-DDI: Identification for key molecular substructures by granule learning to interpret predicted drug–drug interactions",
+    "ADMET property prediction via multi-task graph learning under adaptive auxiliary task selection"
+  ],
+  "research_directions": [
+    "智能决策、粒计算与三支决策、复杂网络、数据挖掘、生物信息、药物间相互作用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/yuhui.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

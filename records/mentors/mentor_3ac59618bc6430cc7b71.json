@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7dc0574009f2033bf8ed"
+      ],
+      "ended_at": null,
+      "id": "aff_d52cb4c72543b67eb057",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/gqliang.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7dc0574009f2033bf8ed"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d52cb4c72543b67eb057",
+      "claim_ids": [
+        "claim_7dc0574009f2033bf8ed"
+      ],
+      "is_primary": true,
+      "normalized_value": "gqliang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/gqliang.html",
+      "status": "current",
+      "type": "email",
+      "value": "gqliang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7dc0574009f2033bf8ed"
+    ],
+    "email": [
+      "claim_7dc0574009f2033bf8ed"
+    ],
+    "name": [
+      "claim_7dc0574009f2033bf8ed"
+    ],
+    "profile_url": [
+      "claim_7dc0574009f2033bf8ed"
+    ],
+    "recent_papers": [
+      "claim_7dc0574009f2033bf8ed"
+    ],
+    "research_directions": [
+      "claim_7dc0574009f2033bf8ed"
+    ],
+    "status": [
+      "claim_7dc0574009f2033bf8ed"
+    ],
+    "title": [
+      "claim_7dc0574009f2033bf8ed"
+    ]
+  },
+  "id": "mentor_3ac59618bc6430cc7b71",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7dc0574009f2033bf8ed"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "梁国强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d52cb4c72543b67eb057",
+      "claim_ids": [
+        "claim_7dc0574009f2033bf8ed"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/gqliang.html"
+    }
+  ],
+  "recent_papers": [
+    "Multi-level Collaborative Distillation Meets Global Workspace Model: A Unified Framework for OCIL",
+    "Task-Driven Generative Prompt Learning for Vision-Language Pretrained Model",
+    "Attention Retention for Continual Learning with Vision Transformers",
+    "Enhancing Feature Learning with Hard Samples in Mutual Learning for Online Class Incremental Learning",
+    "Boosting Multi-Modal Alignment: Geometric Feature Separation for Class Incremental Learning",
+    "Gradient Decomposition and Alignment for Incremental Object Detection",
+    "Prompt-Based Modality Alignment for Effective Multi-Modal Object Re-Identification",
+    "Coleclip: Open-domain continual learning via joint task prompt and vocabulary learning"
+  ],
+  "research_directions": [
+    "计算机视觉、持续学习,类增量学习、目标检测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/gqliang.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

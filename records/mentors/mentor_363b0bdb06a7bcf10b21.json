@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5046fc5879cb0b77a342"
+      ],
+      "ended_at": null,
+      "id": "aff_876a6f0f87c71d47dec9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/2016010219.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_5046fc5879cb0b77a342"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_876a6f0f87c71d47dec9",
+      "claim_ids": [
+        "claim_5046fc5879cb0b77a342"
+      ],
+      "is_primary": true,
+      "normalized_value": "cjc@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/2016010219.html",
+      "status": "current",
+      "type": "email",
+      "value": "cjc@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5046fc5879cb0b77a342"
+    ],
+    "email": [
+      "claim_5046fc5879cb0b77a342"
+    ],
+    "name": [
+      "claim_5046fc5879cb0b77a342"
+    ],
+    "profile_url": [
+      "claim_5046fc5879cb0b77a342"
+    ],
+    "recent_papers": [
+      "claim_5046fc5879cb0b77a342"
+    ],
+    "research_directions": [
+      "claim_5046fc5879cb0b77a342"
+    ],
+    "status": [
+      "claim_5046fc5879cb0b77a342"
+    ]
+  },
+  "id": "mentor_363b0bdb06a7bcf10b21",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5046fc5879cb0b77a342"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈进朝"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_876a6f0f87c71d47dec9",
+      "claim_ids": [
+        "claim_5046fc5879cb0b77a342"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/2016010219.html"
+    }
+  ],
+  "recent_papers": [
+    "Pointer Network-Based Reinforcement Learning for UAV-Assisted Mobile Edge Computing",
+    "CEST: Enhancing Multi-Agent Perception via Communication-Efficient Spatial-Temporal Fusion",
+    "Extrinsic-and-Intrinsic Reward-Based Multi-Agent Reinforcement Learning for Multi-UAV Cooperative Target Encirclement",
+    "QCTF: A Quantized Communication and Transferable Fusion Framework for Multi-Agent Collaborative Perception",
+    "Energy-aware Scheduling of Workflow Applications Towards Schedule Length Optimization in Heterogeneous Distributed Embedded Systems",
+    "Non-Preemptive Scheduling of Periodic Tasks with Data Dependencies in Heterogeneous Multiprocessor Embedded Systems",
+    "基于时空密度聚类的异构无人机集群覆盖路径规划方法",
+    "Work-in-Progress: Time-Aware Regional Coverage Search Using UGV-UAV Cluster Based on an Improved PPO Algorithm"
+  ],
+  "research_directions": [
+    "智能无人集群系统、分布式与实时系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/2016010219.html",
+  "title": null,
+  "updated_at": "2026-08-11T07:13:32Z"
+}

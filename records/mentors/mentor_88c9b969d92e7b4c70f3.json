@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_324a649887625b3fab51"
+      ],
+      "ended_at": null,
+      "id": "aff_a03c0d60d52bc7992d0e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/zhangmeng.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_324a649887625b3fab51"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a03c0d60d52bc7992d0e",
+      "claim_ids": [
+        "claim_324a649887625b3fab51"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangm@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/zhangmeng.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhangm@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_324a649887625b3fab51"
+    ],
+    "email": [
+      "claim_324a649887625b3fab51"
+    ],
+    "name": [
+      "claim_324a649887625b3fab51"
+    ],
+    "profile_url": [
+      "claim_324a649887625b3fab51"
+    ],
+    "recent_papers": [
+      "claim_324a649887625b3fab51"
+    ],
+    "research_directions": [
+      "claim_324a649887625b3fab51"
+    ],
+    "status": [
+      "claim_324a649887625b3fab51"
+    ],
+    "title": [
+      "claim_324a649887625b3fab51"
+    ]
+  },
+  "id": "mentor_88c9b969d92e7b4c70f3",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_324a649887625b3fab51"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张萌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a03c0d60d52bc7992d0e",
+      "claim_ids": [
+        "claim_324a649887625b3fab51"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/zhangmeng.html"
+    }
+  ],
+  "recent_papers": [
+    "Sijia Wang, Shengbing Zhang, Lun Zhang, Yichao Yuan, Yawen Zhao, Xinyu Zhang, Meng Zhang*, “TPQA: Efficient attention architecture with task-aware pattern-guided quantizatio,” Future Generation Computer Systems, vol.179,2026.",
+    "H. Wang, S. Zhang, X. Fan, Z. Yang, and M. Zhang*, “NDPGNN: A Near-Data Processing Architecture for GNN Training and Inference Acceleration,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 43, no. 11, pp. 3997–4008, Nov. 2024.",
+    "M. Wang, S. Zhang, S. Wang, Z. Yang, M. Zhang*,“OFT: An accelerator with eager gradient prediction for attention training,”in 2024 International Conference on Computer-aided Design (ICCAD), Oct. 2024, pp.1-6",
+    "Z. Yang, S. Zhang, C. Li, M. Wang, H. Wang, and M. Zhang*: Efficient Knowledge Management for Heterogeneous Federated Continual Learning on Resource-constrained Edge Devices, Future Generation Computer Systems, vol. 156, pp. 16–29, Jul. 2024.",
+    "Zhao Yang, Shengbing Zhang, Chuxi Li, Miao Wang, Jiaying Yang, Meng Zhang*: Equalized Aggregation for Heterogeneous Federated Mobile Edge Learning. IEEE Transactions on Mobile Computing.vol. 23, no. 5, pp. 3558–3575, May 2024.",
+    "Z. Yang, S. Zhang, C. Li, H. Wang, and M. Zhang*: Resource-efficient Heterogenous Federated Continual Learning on Edge.2024 Design, Automation & Test in Europe Conference (DATE 2024), Valencia, Spain, 2024-3-25-2024-3-27",
+    "Zhao Yang, Shengbing Zhang, Chuxi Li, Miao Wang, Jiaying Yang, Meng Zhang*: Joint heterogeneity-aware personalized federated search for energy efficient battery-powered edge computing. Future Generation Computer Systems. Volume 146, September 2023, Pages 178-194",
+    "Chuxi Li, Xiaoya Fan, Xiaoti Wu, Zhao Yang, Miao Wang, Meng Zhang* and Shengbing Zhang: Memory-computing Decoupling: a DNN Multitasking Accelerator with Adaptive Data Arrangement. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems.Volume 41. Issue 11, Nov. 2022."
+  ],
+  "research_directions": [
+    "先进微处理器体系结构、智能计算系统结构、具身智能计算系统结构、处理器性能评价以及领域专用集成电路及系统,开展面向航天专用的图像处理计算系统、领域专用智能计算芯片以及面向ASIC化需求的专用处理器FPGA原型设计与验证工作"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/zhangmeng.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

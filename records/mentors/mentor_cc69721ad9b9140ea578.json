@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2ec8d0f2a43e8dc5a10d"
+      ],
+      "ended_at": null,
+      "id": "aff_0622ee4d2da1701d69da",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/2025010089",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2ec8d0f2a43e8dc5a10d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0622ee4d2da1701d69da",
+      "claim_ids": [
+        "claim_2ec8d0f2a43e8dc5a10d"
+      ],
+      "is_primary": true,
+      "normalized_value": "suowei@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/2025010089",
+      "status": "current",
+      "type": "email",
+      "value": "suowei@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ],
+    "email": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ],
+    "name": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ],
+    "profile_url": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ],
+    "recent_papers": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ],
+    "research_directions": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ],
+    "status": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ],
+    "title": [
+      "claim_2ec8d0f2a43e8dc5a10d"
+    ]
+  },
+  "id": "mentor_cc69721ad9b9140ea578",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2ec8d0f2a43e8dc5a10d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "索伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0622ee4d2da1701d69da",
+      "claim_ids": [
+        "claim_2ec8d0f2a43e8dc5a10d"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/2025010089"
+    }
+  ],
+  "recent_papers": [
+    "Hallucination-aware Intermediate Representation Editing in Large Vision-Language Models. ICLR, 2026",
+    "Semi-Supervised VQA Multi-Modal Explanation via Self-Critical Learning. IEEE TPAMI, 2026",
+    "Understanding and Mitigating Hallucinations in Multimodal Chain-of-Thought Models. CVPR, 2026",
+    "Beyond Attention Imbalance: Mitigating Hallucinations via Spectral Surgery. ICML, 2026",
+    "Octopus: Alleviating Hallucination via Dynamic Contrastive Decoding. CVPR, 2025",
+    "Pruning All-Rounder: Rethinking and Improving Inference Efficiency for Large Vision Language Models. ICCV, 2025",
+    "基于探针引导的视觉语言多模态解释方法。《计算机学报》,2025",
+    "Short-LVLM: Compressing and Accelerating Large Vision-Language Models by Pruning Redundant Layers. ACM MM, 2025"
+  ],
+  "research_directions": [
+    "计算机视觉、跨模态推理、多模态大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/2025010089",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

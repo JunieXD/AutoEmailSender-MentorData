@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4f5dd5d183dcd3067598"
+      ],
+      "ended_at": null,
+      "id": "aff_3507ba053f4f5d11aa6f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/lianwei.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4f5dd5d183dcd3067598"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3507ba053f4f5d11aa6f",
+      "claim_ids": [
+        "claim_4f5dd5d183dcd3067598"
+      ],
+      "is_primary": true,
+      "normalized_value": "wlw@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/lianwei.html",
+      "status": "current",
+      "type": "email",
+      "value": "wlw@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4f5dd5d183dcd3067598"
+    ],
+    "email": [
+      "claim_4f5dd5d183dcd3067598"
+    ],
+    "name": [
+      "claim_4f5dd5d183dcd3067598"
+    ],
+    "profile_url": [
+      "claim_4f5dd5d183dcd3067598"
+    ],
+    "recent_papers": [
+      "claim_4f5dd5d183dcd3067598"
+    ],
+    "research_directions": [
+      "claim_4f5dd5d183dcd3067598"
+    ],
+    "status": [
+      "claim_4f5dd5d183dcd3067598"
+    ],
+    "title": [
+      "claim_4f5dd5d183dcd3067598"
+    ]
+  },
+  "id": "mentor_105a78daec67a9e3d977",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4f5dd5d183dcd3067598"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴连伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3507ba053f4f5d11aa6f",
+      "claim_ids": [
+        "claim_4f5dd5d183dcd3067598"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/lianwei.html"
+    }
+  ],
+  "recent_papers": [
+    "An W, Wu L*, Wang Z. IPMark: A Sentence-Level Watermark for LLMs with Hierarchical Personalization and Efficient Detection. ICML 2026.",
+    "Lian J, Liu L, Wang Y, Wu Y, Wu L, Zhu L, Zheng Z. Generating Attribution Reports for Manipulated Facial Images: A Dataset and Baseline. ACL 2026.",
+    "Zhang Y, Wang Y, Han K, Wu Y, Wu L, Zhu L, Zheng Z. Cultivating Forensic Reasoning for Generalizable Multimodal Manipulation Detection. ACL 2026.",
+    "Ji H, Fan Y, Zhao M, Li X, Wu L, Gao C. STRIDE-ED: A Strategy-Grounded Stepwise Reasoning Framework for Empathetic Dialogue Systems. ACL 2026.",
+    "Wang Q, Wu L*, Wang K, et al. From Form to Logic: Masked Reconstruction and Reasoning Distillation for Short Video Fake News Detection. ACL 2026.",
+    "Wang B, Wu L*, et al. HCPRA: A Hierarchical Cognition–Perception–Reasoning Agent Framework for Emotion-Cause Pair Extraction in Conversations. SIGIR 2026.",
+    "吴连伟, 安文博, 王康等. 大模型水印研究进展综述:从文本到多模态. 计算机学报. 2026",
+    "Zhang Y, Wang Y, Wu Y, Wu L, Zhu L, Zheng Z. The Coherence Trap: When MLLM-Crafted Narratives Exploit Manipulated Visual Contexts. CVPR 2026."
+  ],
+  "research_directions": [
+    "自然语言处理、大语言模型安全、网络内容安全、AIGC检测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/lianwei.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

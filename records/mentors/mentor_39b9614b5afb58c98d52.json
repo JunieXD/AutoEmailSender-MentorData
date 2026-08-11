@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b78006e50e0421bcb6d8"
+      ],
+      "ended_at": null,
+      "id": "aff_24a18c8ccdc81ef97249",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/wwzhang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b78006e50e0421bcb6d8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_24a18c8ccdc81ef97249",
+      "claim_ids": [
+        "claim_b78006e50e0421bcb6d8"
+      ],
+      "is_primary": true,
+      "normalized_value": "wei-wei.zhang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/wwzhang",
+      "status": "current",
+      "type": "email",
+      "value": "wei-wei.zhang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b78006e50e0421bcb6d8"
+    ],
+    "email": [
+      "claim_b78006e50e0421bcb6d8"
+    ],
+    "name": [
+      "claim_b78006e50e0421bcb6d8"
+    ],
+    "profile_url": [
+      "claim_b78006e50e0421bcb6d8"
+    ],
+    "research_directions": [
+      "claim_b78006e50e0421bcb6d8"
+    ],
+    "status": [
+      "claim_b78006e50e0421bcb6d8"
+    ],
+    "title": [
+      "claim_b78006e50e0421bcb6d8"
+    ]
+  },
+  "id": "mentor_39b9614b5afb58c98d52",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b78006e50e0421bcb6d8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张伟伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_24a18c8ccdc81ef97249",
+      "claim_ids": [
+        "claim_b78006e50e0421bcb6d8"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/wwzhang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子机器学习、量子行走、量子水印/隐写、量子多方安全计算、量子算法、量子模拟、超导量子线路设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/wwzhang",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}
