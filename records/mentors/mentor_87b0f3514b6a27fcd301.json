@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8465f3689b6fcc169db1"
+      ],
+      "ended_at": null,
+      "id": "aff_088cb7ee5ca8f611425d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/DAWEIGAO/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_8465f3689b6fcc169db1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_088cb7ee5ca8f611425d",
+      "claim_ids": [
+        "claim_8465f3689b6fcc169db1"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaodawei@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/DAWEIGAO/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaodawei@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8465f3689b6fcc169db1"
+    ],
+    "email": [
+      "claim_8465f3689b6fcc169db1"
+    ],
+    "name": [
+      "claim_8465f3689b6fcc169db1"
+    ],
+    "profile_url": [
+      "claim_8465f3689b6fcc169db1"
+    ],
+    "recent_papers": [
+      "claim_8465f3689b6fcc169db1"
+    ],
+    "research_directions": [
+      "claim_8465f3689b6fcc169db1"
+    ],
+    "status": [
+      "claim_8465f3689b6fcc169db1"
+    ],
+    "title": [
+      "claim_8465f3689b6fcc169db1"
+    ]
+  },
+  "id": "mentor_87b0f3514b6a27fcd301",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8465f3689b6fcc169db1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高大伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_088cb7ee5ca8f611425d",
+      "claim_ids": [
+        "claim_8465f3689b6fcc169db1"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/DAWEIGAO/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Sub-Nyquist Wideband Spectrum Sensing and DOA Estimation with Sparse Co-Arrays",
+    "Dual Tensor Completion Network-Based Joint Frequency and DOA Estimation Under Spatio-Temporal Sub-Nyquist Sampling",
+    "Nonlinear-Embedding Transformer based Modulation Recognition for Sub-Nyquist Sampling Systems with Reduced Channels",
+    "Prediction of Optical Chaos Based on Liquid Neural Networks",
+    "Unsupervised Learning with Unrolled UAMP and ViT for FMCW Radar Interference Suppression",
+    "Hybrid Neural Network Based Signal Detection for Multi-User MIMO with Hardware Imperfections"
+  ],
+  "research_directions": [
+    "智能信号处理(信号调制类型智能识别、射频指纹识别、超宽带频谱感知)、多通道采样技术(多维域降采样理论与方法、超宽带信号参数估计方法)、通信感知一体化(概率图模型、消息传递算法、硬件损失下信号检测方法等)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/DAWEIGAO/zh_CN/index.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_362a723f34756c27afe5"
+      ],
+      "ended_at": null,
+      "id": "aff_2475c1eb4388caeb4f38",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/DXW/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_362a723f34756c27afe5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2475c1eb4388caeb4f38",
+      "claim_ids": [
+        "claim_362a723f34756c27afe5"
+      ],
+      "is_primary": true,
+      "normalized_value": "xwdong@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/DXW/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xwdong@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_362a723f34756c27afe5"
+    ],
+    "email": [
+      "claim_362a723f34756c27afe5"
+    ],
+    "name": [
+      "claim_362a723f34756c27afe5"
+    ],
+    "profile_url": [
+      "claim_362a723f34756c27afe5"
+    ],
+    "research_directions": [
+      "claim_362a723f34756c27afe5"
+    ],
+    "status": [
+      "claim_362a723f34756c27afe5"
+    ],
+    "title": [
+      "claim_362a723f34756c27afe5"
+    ]
+  },
+  "id": "mentor_45ee9d426298b7d67be0",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_362a723f34756c27afe5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董学文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2475c1eb4388caeb4f38",
+      "claim_ids": [
+        "claim_362a723f34756c27afe5"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/DXW/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "区块链+大模型/智能体、区块链架构+安全、人工智能/大模型/智能体安全与隐私、基于区块链的6G/物联网/元宇宙安全与隐私"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/DXW/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

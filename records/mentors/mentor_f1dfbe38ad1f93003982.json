@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_99945499f4659f9e7fff"
+      ],
+      "ended_at": null,
+      "id": "aff_d4f6151edc8624d0f3b8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_4b69e1627a306e9fe0e2",
+      "source_url": "https://faculty.xidian.edu.cn/YZ1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_99945499f4659f9e7fff"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d4f6151edc8624d0f3b8",
+      "claim_ids": [
+        "claim_99945499f4659f9e7fff"
+      ],
+      "is_primary": true,
+      "normalized_value": "zyan@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/YZ1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zyan@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_99945499f4659f9e7fff"
+    ],
+    "email": [
+      "claim_99945499f4659f9e7fff"
+    ],
+    "name": [
+      "claim_99945499f4659f9e7fff"
+    ],
+    "profile_url": [
+      "claim_99945499f4659f9e7fff"
+    ],
+    "research_directions": [
+      "claim_99945499f4659f9e7fff"
+    ],
+    "status": [
+      "claim_99945499f4659f9e7fff"
+    ],
+    "title": [
+      "claim_99945499f4659f9e7fff"
+    ]
+  },
+  "id": "mentor_f1dfbe38ad1f93003982",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_99945499f4659f9e7fff"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫峥"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d4f6151edc8624d0f3b8",
+      "claim_ids": [
+        "claim_99945499f4659f9e7fff"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YZ1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信任管理和可信计算、6G可信网络、区块链技术及应用、隐私保护、数据分析和可信AI、可信软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YZ1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

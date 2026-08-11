@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3fb29c3e125551c2553b"
+      ],
+      "ended_at": null,
+      "id": "aff_769ade90d1c2eec4fa62",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LIFEI/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_3fb29c3e125551c2553b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_769ade90d1c2eec4fa62",
+      "claim_ids": [
+        "claim_3fb29c3e125551c2553b"
+      ],
+      "is_primary": true,
+      "normalized_value": "lifei@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LIFEI/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lifei@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3fb29c3e125551c2553b"
+    ],
+    "email": [
+      "claim_3fb29c3e125551c2553b"
+    ],
+    "name": [
+      "claim_3fb29c3e125551c2553b"
+    ],
+    "profile_url": [
+      "claim_3fb29c3e125551c2553b"
+    ],
+    "research_directions": [
+      "claim_3fb29c3e125551c2553b"
+    ],
+    "status": [
+      "claim_3fb29c3e125551c2553b"
+    ]
+  },
+  "id": "mentor_844fac4d4342f8dbb21e",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3fb29c3e125551c2553b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_769ade90d1c2eec4fa62",
+      "claim_ids": [
+        "claim_3fb29c3e125551c2553b"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LIFEI/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "视觉感知与理解(低质量图像复原增强、复杂及退化场景感知与理解、AIGC图像质量评估)、三维世界建模(3DGS场景重建、场景编辑理解)、具身智能(视觉-语言-行动(VLA)大模型、无人设备自主规划与协同控制)、边缘人工智能、多模态场景感知、图像复原与增强"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LIFEI/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aa21ba0693d436ceb18c"
+      ],
+      "ended_at": null,
+      "id": "aff_47c488077c297e3caeaa",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/ZY26/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aa21ba0693d436ceb18c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_47c488077c297e3caeaa",
+      "claim_ids": [
+        "claim_aa21ba0693d436ceb18c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouyu@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZY26/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhouyu@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aa21ba0693d436ceb18c"
+    ],
+    "email": [
+      "claim_aa21ba0693d436ceb18c"
+    ],
+    "name": [
+      "claim_aa21ba0693d436ceb18c"
+    ],
+    "profile_url": [
+      "claim_aa21ba0693d436ceb18c"
+    ],
+    "research_directions": [
+      "claim_aa21ba0693d436ceb18c"
+    ],
+    "status": [
+      "claim_aa21ba0693d436ceb18c"
+    ],
+    "title": [
+      "claim_aa21ba0693d436ceb18c"
+    ]
+  },
+  "id": "mentor_cd960e034c95cd6b2a12",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aa21ba0693d436ceb18c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_47c488077c297e3caeaa",
+      "claim_ids": [
+        "claim_aa21ba0693d436ceb18c"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZY26/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能雷达信号处理、认知电子战、无人机SAR图像处理及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZY26/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2f15e6eca54bfbc232fc"
+      ],
+      "ended_at": null,
+      "id": "aff_5765d1f2f1c7a1daadc0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_3a097d48862cd50961c6",
+      "source_url": "https://faculty.xidian.edu.cn/ZCS1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2f15e6eca54bfbc232fc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5765d1f2f1c7a1daadc0",
+      "claim_ids": [
+        "claim_2f15e6eca54bfbc232fc"
+      ],
+      "is_primary": true,
+      "normalized_value": "cszhang@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZCS1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cszhang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2f15e6eca54bfbc232fc"
+    ],
+    "email": [
+      "claim_2f15e6eca54bfbc232fc"
+    ],
+    "name": [
+      "claim_2f15e6eca54bfbc232fc"
+    ],
+    "profile_url": [
+      "claim_2f15e6eca54bfbc232fc"
+    ],
+    "research_directions": [
+      "claim_2f15e6eca54bfbc232fc"
+    ],
+    "status": [
+      "claim_2f15e6eca54bfbc232fc"
+    ],
+    "title": [
+      "claim_2f15e6eca54bfbc232fc"
+    ]
+  },
+  "id": "mentor_16a5c112b881e56edde4",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2f15e6eca54bfbc232fc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张沉思"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5765d1f2f1c7a1daadc0",
+      "claim_ids": [
+        "claim_2f15e6eca54bfbc232fc"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZCS1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、面向军民行业应用的空地/空空无线自组网传输技术、面向5G/B5G移动通信的宽带无线传输技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZCS1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

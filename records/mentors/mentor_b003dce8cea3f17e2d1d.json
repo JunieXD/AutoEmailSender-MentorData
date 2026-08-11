@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_50484e4d369b6ae04190"
+      ],
+      "ended_at": null,
+      "id": "aff_54dae0124d1610555aa9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_6d94514f0e022a434b3e",
+      "source_url": "https://faculty.xidian.edu.cn/ZS3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_50484e4d369b6ae04190"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_54dae0124d1610555aa9",
+      "claim_ids": [
+        "claim_50484e4d369b6ae04190"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangshuai@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZS3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangshuai@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_50484e4d369b6ae04190"
+    ],
+    "email": [
+      "claim_50484e4d369b6ae04190"
+    ],
+    "name": [
+      "claim_50484e4d369b6ae04190"
+    ],
+    "profile_url": [
+      "claim_50484e4d369b6ae04190"
+    ],
+    "research_directions": [
+      "claim_50484e4d369b6ae04190"
+    ],
+    "status": [
+      "claim_50484e4d369b6ae04190"
+    ],
+    "title": [
+      "claim_50484e4d369b6ae04190"
+    ]
+  },
+  "id": "mentor_b003dce8cea3f17e2d1d",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_50484e4d369b6ae04190"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张帅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_54dae0124d1610555aa9",
+      "claim_ids": [
+        "claim_50484e4d369b6ae04190"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZS3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "相控阵天线优化设计、微波测量与成像、电磁散射与隐身技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZS3/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

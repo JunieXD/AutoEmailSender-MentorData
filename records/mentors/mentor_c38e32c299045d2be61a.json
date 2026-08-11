@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_24feec1baf27b8f7a802"
+      ],
+      "ended_at": null,
+      "id": "aff_8c826082ff22ae859162",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/LSB/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_24feec1baf27b8f7a802"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8c826082ff22ae859162",
+      "claim_ids": [
+        "claim_24feec1baf27b8f7a802"
+      ],
+      "is_primary": true,
+      "normalized_value": "sbliu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LSB/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sbliu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_24feec1baf27b8f7a802"
+    ],
+    "email": [
+      "claim_24feec1baf27b8f7a802"
+    ],
+    "name": [
+      "claim_24feec1baf27b8f7a802"
+    ],
+    "profile_url": [
+      "claim_24feec1baf27b8f7a802"
+    ],
+    "research_directions": [
+      "claim_24feec1baf27b8f7a802"
+    ],
+    "status": [
+      "claim_24feec1baf27b8f7a802"
+    ],
+    "title": [
+      "claim_24feec1baf27b8f7a802"
+    ]
+  },
+  "id": "mentor_c38e32c299045d2be61a",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_24feec1baf27b8f7a802"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘术彬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8c826082ff22ae859162",
+      "claim_ids": [
+        "claim_24feec1baf27b8f7a802"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LSB/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "混合信号集成电路(模数转换器ADC、锁相环PLL、高精度模拟前端AFE等)、射频集成电路(接收机射频前端及LNA、VGA、Mixer等)、高速数据接口(Serdes等)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LSB/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

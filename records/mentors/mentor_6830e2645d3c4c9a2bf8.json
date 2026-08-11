@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a710c6fca8018b0eaf17"
+      ],
+      "ended_at": null,
+      "id": "aff_b7fc2079a096a17c5eac",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/CBX/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a710c6fca8018b0eaf17"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b7fc2079a096a17c5eac",
+      "claim_ids": [
+        "claim_a710c6fca8018b0eaf17"
+      ],
+      "is_primary": true,
+      "normalized_value": "bxchen@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/CBX/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bxchen@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a710c6fca8018b0eaf17"
+    ],
+    "email": [
+      "claim_a710c6fca8018b0eaf17"
+    ],
+    "name": [
+      "claim_a710c6fca8018b0eaf17"
+    ],
+    "profile_url": [
+      "claim_a710c6fca8018b0eaf17"
+    ],
+    "research_directions": [
+      "claim_a710c6fca8018b0eaf17"
+    ],
+    "status": [
+      "claim_a710c6fca8018b0eaf17"
+    ],
+    "title": [
+      "claim_a710c6fca8018b0eaf17"
+    ]
+  },
+  "id": "mentor_6830e2645d3c4c9a2bf8",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a710c6fca8018b0eaf17"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈百孝"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b7fc2079a096a17c5eac",
+      "claim_ids": [
+        "claim_a710c6fca8018b0eaf17"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/CBX/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新体制雷达:稀布阵综合脉冲孔径雷达、MIMO雷达",
+    "阵列信号处理",
+    "新型导引头末制导雷达及其抗干扰技术",
+    "岸-舰双基地地波超视距雷达",
+    "软件无线电"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/CBX/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

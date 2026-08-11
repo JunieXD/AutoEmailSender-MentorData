@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2f97cc7ee123dc0d2eae"
+      ],
+      "ended_at": null,
+      "id": "aff_b6f0728b52d96997751a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/LIUJING/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2f97cc7ee123dc0d2eae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b6f0728b52d96997751a",
+      "claim_ids": [
+        "claim_2f97cc7ee123dc0d2eae"
+      ],
+      "is_primary": true,
+      "normalized_value": "ngleliujing@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LIUJING/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ngleliujing@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2f97cc7ee123dc0d2eae"
+    ],
+    "email": [
+      "claim_2f97cc7ee123dc0d2eae"
+    ],
+    "name": [
+      "claim_2f97cc7ee123dc0d2eae"
+    ],
+    "profile_url": [
+      "claim_2f97cc7ee123dc0d2eae"
+    ],
+    "research_directions": [
+      "claim_2f97cc7ee123dc0d2eae"
+    ],
+    "status": [
+      "claim_2f97cc7ee123dc0d2eae"
+    ],
+    "title": [
+      "claim_2f97cc7ee123dc0d2eae"
+    ]
+  },
+  "id": "mentor_224d3e8689e619925435",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2f97cc7ee123dc0d2eae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘婧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b6f0728b52d96997751a",
+      "claim_ids": [
+        "claim_2f97cc7ee123dc0d2eae"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LIUJING/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "雷达目标检测、机器学习、阵列信号处理、雷达智能信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LIUJING/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

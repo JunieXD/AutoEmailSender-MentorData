@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_38ce84997e0f15b57537"
+      ],
+      "ended_at": null,
+      "id": "aff_1ea976c5410d6963309f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_9c05cacba53b98061851",
+      "source_url": "https://faculty.xidian.edu.cn/xchduan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_38ce84997e0f15b57537"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1ea976c5410d6963309f",
+      "claim_ids": [
+        "claim_38ce84997e0f15b57537"
+      ],
+      "is_primary": true,
+      "normalized_value": "xchduan@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/xchduan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xchduan@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_38ce84997e0f15b57537"
+    ],
+    "email": [
+      "claim_38ce84997e0f15b57537"
+    ],
+    "name": [
+      "claim_38ce84997e0f15b57537"
+    ],
+    "profile_url": [
+      "claim_38ce84997e0f15b57537"
+    ],
+    "research_directions": [
+      "claim_38ce84997e0f15b57537"
+    ],
+    "status": [
+      "claim_38ce84997e0f15b57537"
+    ],
+    "title": [
+      "claim_38ce84997e0f15b57537"
+    ]
+  },
+  "id": "mentor_bad872b731641e0b2f78",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_38ce84997e0f15b57537"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "段学超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1ea976c5410d6963309f",
+      "claim_ids": [
+        "claim_38ce84997e0f15b57537"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/xchduan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "并联机器人、冗余驱动并联机器人、少自由度并联机器人的分析、优化与控制、机电一体化、面向先进电子装备的驱动与测量技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/xchduan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

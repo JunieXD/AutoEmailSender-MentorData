@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2f1c08e0b8405fb1b878"
+      ],
+      "ended_at": null,
+      "id": "aff_0d7ac64c8f293039c8e8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_6d94514f0e022a434b3e",
+      "source_url": "https://faculty.xidian.edu.cn/Luvning/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_2f1c08e0b8405fb1b878"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0d7ac64c8f293039c8e8",
+      "claim_ids": [
+        "claim_2f1c08e0b8405fb1b878"
+      ],
+      "is_primary": true,
+      "normalized_value": "nlv@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/Luvning/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "nlv@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2f1c08e0b8405fb1b878"
+    ],
+    "email": [
+      "claim_2f1c08e0b8405fb1b878"
+    ],
+    "name": [
+      "claim_2f1c08e0b8405fb1b878"
+    ],
+    "profile_url": [
+      "claim_2f1c08e0b8405fb1b878"
+    ],
+    "research_directions": [
+      "claim_2f1c08e0b8405fb1b878"
+    ],
+    "status": [
+      "claim_2f1c08e0b8405fb1b878"
+    ],
+    "title": [
+      "claim_2f1c08e0b8405fb1b878"
+    ]
+  },
+  "id": "mentor_82f0fc040a241d39abf3",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2f1c08e0b8405fb1b878"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0d7ac64c8f293039c8e8",
+      "claim_ids": [
+        "claim_2f1c08e0b8405fb1b878"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/Luvning/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与智能信号处理、遥感影像处理、自动测试系统、先进控制技术与应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/Luvning/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3e52a281e4951172ca97"
+      ],
+      "ended_at": null,
+      "id": "aff_eb368076273b2545ee69",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_6d94514f0e022a434b3e",
+      "source_url": "https://faculty.xidian.edu.cn/DCX1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3e52a281e4951172ca97"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eb368076273b2545ee69",
+      "claim_ids": [
+        "claim_3e52a281e4951172ca97"
+      ],
+      "is_primary": true,
+      "normalized_value": "chxdong@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/DCX1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chxdong@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3e52a281e4951172ca97"
+    ],
+    "email": [
+      "claim_3e52a281e4951172ca97"
+    ],
+    "name": [
+      "claim_3e52a281e4951172ca97"
+    ],
+    "profile_url": [
+      "claim_3e52a281e4951172ca97"
+    ],
+    "research_directions": [
+      "claim_3e52a281e4951172ca97"
+    ],
+    "status": [
+      "claim_3e52a281e4951172ca97"
+    ],
+    "title": [
+      "claim_3e52a281e4951172ca97"
+    ]
+  },
+  "id": "mentor_77794677ccd7dd196ad4",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3e52a281e4951172ca97"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董春曦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eb368076273b2545ee69",
+      "claim_ids": [
+        "claim_3e52a281e4951172ca97"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/DCX1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信息对抗技术、信息对抗系统仿真、雷达对抗智能处理、数据清洗与标注、数据增强与扩维、雷达/通信辐射源识别、成像雷达干扰技术、电磁态势感知、雷达/雷达对抗系统仿真、高速信号处理技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/DCX1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

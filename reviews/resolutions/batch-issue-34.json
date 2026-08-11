@@ -1,0 +1,2297 @@
+{
+  "created_organization_ids": [
+    "org_auto_0333ee380594b1ab2487",
+    "org_auto_1902911fead888d82ada",
+    "org_auto_24c1e0a7776bd807701e",
+    "org_auto_2d3e05096f023eb0edbf",
+    "org_auto_3a097d48862cd50961c6",
+    "org_auto_455531adde006a2c0d22",
+    "org_auto_4872c4c7ffb46d9df7f9",
+    "org_auto_4b69e1627a306e9fe0e2",
+    "org_auto_4cbdf43495a949559e86",
+    "org_auto_6d94514f0e022a434b3e",
+    "org_auto_7c6254f7e5c502b2fc80",
+    "org_auto_8c379e85a31c51357105",
+    "org_auto_93a64f03b1c04d23a458",
+    "org_auto_9c05cacba53b98061851",
+    "org_auto_b3c41cb2017552a01745",
+    "org_auto_c11d5640fde954de58c2",
+    "org_auto_c2caf064daf1ea5c2c71",
+    "org_auto_c86042735dd2569717da",
+    "org_auto_d57aff9ceb84049eaaba",
+    "org_auto_e665b61a4591ffed0b8d",
+    "org_auto_e726ffd29821f4dc40c2",
+    "org_auto_f0adf234929aa8e128f7",
+    "org_auto_fff4a2808d5dbc8ae3f8"
+  ],
+  "decided_at": "2026-08-11T10:16:26Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_03dcc46c11536292",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "集成电路研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_118bc4f61d5be46f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "两个学院都在",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_c2caf064daf1ea5c2c71"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_132792d37f8ee570",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "空天地一体化综合业务网全国重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_13f3e945a62a0eb1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_c11d5640fde954de58c2"
+    },
+    {
+      "action": "reject",
+      "group_id": "org_group_19cf70256418f700",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": "学院",
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_20c0923f64b80e47",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "学院",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_b3c41cb2017552a01745"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_381c83e5486b8d4e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "先进信息研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_38b2176ffdd68cc6",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_39d509fe482b0ead",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_6d94514f0e022a434b3e"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_46fe4b523a8892e2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4ae36363ec6077f3",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_53385d20a1062cd8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_fff4a2808d5dbc8ae3f8"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_54333d4d216fe561",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_c86042735dd2569717da"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5b5165f411c61616",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "先进信息研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6ab6e28602961276",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "先进视觉研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6af40f636129193c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6bbab8d1d103fd8e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "集成电路研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6d5d568e3c1c87b5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_b3c41cb2017552a01745"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_76c4edc43e615861",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "卫星互联网研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8824d3b54f300e3e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "集成电路研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_89d604464b563b84",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "汽车电子研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8d437f54010dd20f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "卫星互联网研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9df1dfc9cd8dd01c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "雷达信号处理全国重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_a9b5a5aba942b729",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_aa6784a525e86c9e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_f0adf234929aa8e128f7"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b86dab74a3ca307b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_3a097d48862cd50961c6"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bf47f8a3ec3ac7f4",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_cb1021ad2175bc30",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_93a64f03b1c04d23a458"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d2523e1702901700",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "汽车电子研究所/概念验证中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d4d8312727697200",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "学院",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_c2caf064daf1ea5c2c71"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d841c9b4c6345c6a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "两个学院都在",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_c2caf064daf1ea5c2c71"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_da282c313769c0a2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_2d3e05096f023eb0edbf"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_efa3f205d33516f7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_9c05cacba53b98061851"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f3ecb7be79200f0a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "杭州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "工业软件研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": true
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_feae4f36ed176252",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xidian.edu.cn"
+          ],
+          "canonical_name": "西安电子科技大学",
+          "level": "university",
+          "official_url": "https://xidian.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": true
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "同校未找到可信匹配，已按同级学院预填。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_4b69e1627a306e9fe0e2"
+    }
+  ],
+  "id": "organization_review_issue_34",
+  "invalid_rows": [],
+  "issue": {
+    "number": 34,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/34"
+  },
+  "manifest_sha256": "d9697fb3bb833f81c79eb3a3f0eb8454260df8fc64ac13f8bfd3c746b457b5fe",
+  "mapped_proposal_ids": [
+    "proposal_issue_34_row_1",
+    "proposal_issue_34_row_10",
+    "proposal_issue_34_row_100",
+    "proposal_issue_34_row_101",
+    "proposal_issue_34_row_102",
+    "proposal_issue_34_row_103",
+    "proposal_issue_34_row_104",
+    "proposal_issue_34_row_105",
+    "proposal_issue_34_row_106",
+    "proposal_issue_34_row_107",
+    "proposal_issue_34_row_108",
+    "proposal_issue_34_row_109",
+    "proposal_issue_34_row_11",
+    "proposal_issue_34_row_110",
+    "proposal_issue_34_row_112",
+    "proposal_issue_34_row_113",
+    "proposal_issue_34_row_114",
+    "proposal_issue_34_row_115",
+    "proposal_issue_34_row_116",
+    "proposal_issue_34_row_117",
+    "proposal_issue_34_row_118",
+    "proposal_issue_34_row_119",
+    "proposal_issue_34_row_12",
+    "proposal_issue_34_row_120",
+    "proposal_issue_34_row_121",
+    "proposal_issue_34_row_122",
+    "proposal_issue_34_row_123",
+    "proposal_issue_34_row_124",
+    "proposal_issue_34_row_125",
+    "proposal_issue_34_row_126",
+    "proposal_issue_34_row_127",
+    "proposal_issue_34_row_128",
+    "proposal_issue_34_row_129",
+    "proposal_issue_34_row_13",
+    "proposal_issue_34_row_130",
+    "proposal_issue_34_row_131",
+    "proposal_issue_34_row_132",
+    "proposal_issue_34_row_133",
+    "proposal_issue_34_row_134",
+    "proposal_issue_34_row_135",
+    "proposal_issue_34_row_136",
+    "proposal_issue_34_row_137",
+    "proposal_issue_34_row_138",
+    "proposal_issue_34_row_139",
+    "proposal_issue_34_row_14",
+    "proposal_issue_34_row_140",
+    "proposal_issue_34_row_141",
+    "proposal_issue_34_row_142",
+    "proposal_issue_34_row_143",
+    "proposal_issue_34_row_144",
+    "proposal_issue_34_row_145",
+    "proposal_issue_34_row_146",
+    "proposal_issue_34_row_147",
+    "proposal_issue_34_row_148",
+    "proposal_issue_34_row_149",
+    "proposal_issue_34_row_15",
+    "proposal_issue_34_row_150",
+    "proposal_issue_34_row_151",
+    "proposal_issue_34_row_152",
+    "proposal_issue_34_row_153",
+    "proposal_issue_34_row_154",
+    "proposal_issue_34_row_155",
+    "proposal_issue_34_row_156",
+    "proposal_issue_34_row_157",
+    "proposal_issue_34_row_158",
+    "proposal_issue_34_row_159",
+    "proposal_issue_34_row_16",
+    "proposal_issue_34_row_160",
+    "proposal_issue_34_row_161",
+    "proposal_issue_34_row_162",
+    "proposal_issue_34_row_163",
+    "proposal_issue_34_row_164",
+    "proposal_issue_34_row_165",
+    "proposal_issue_34_row_166",
+    "proposal_issue_34_row_167",
+    "proposal_issue_34_row_168",
+    "proposal_issue_34_row_169",
+    "proposal_issue_34_row_17",
+    "proposal_issue_34_row_170",
+    "proposal_issue_34_row_171",
+    "proposal_issue_34_row_173",
+    "proposal_issue_34_row_174",
+    "proposal_issue_34_row_175",
+    "proposal_issue_34_row_176",
+    "proposal_issue_34_row_177",
+    "proposal_issue_34_row_178",
+    "proposal_issue_34_row_179",
+    "proposal_issue_34_row_18",
+    "proposal_issue_34_row_180",
+    "proposal_issue_34_row_181",
+    "proposal_issue_34_row_182",
+    "proposal_issue_34_row_183",
+    "proposal_issue_34_row_184",
+    "proposal_issue_34_row_185",
+    "proposal_issue_34_row_186",
+    "proposal_issue_34_row_187",
+    "proposal_issue_34_row_188",
+    "proposal_issue_34_row_189",
+    "proposal_issue_34_row_19",
+    "proposal_issue_34_row_190",
+    "proposal_issue_34_row_191",
+    "proposal_issue_34_row_192",
+    "proposal_issue_34_row_193",
+    "proposal_issue_34_row_194",
+    "proposal_issue_34_row_195",
+    "proposal_issue_34_row_196",
+    "proposal_issue_34_row_197",
+    "proposal_issue_34_row_198",
+    "proposal_issue_34_row_199",
+    "proposal_issue_34_row_2",
+    "proposal_issue_34_row_20",
+    "proposal_issue_34_row_200",
+    "proposal_issue_34_row_201",
+    "proposal_issue_34_row_202",
+    "proposal_issue_34_row_203",
+    "proposal_issue_34_row_204",
+    "proposal_issue_34_row_205",
+    "proposal_issue_34_row_206",
+    "proposal_issue_34_row_207",
+    "proposal_issue_34_row_208",
+    "proposal_issue_34_row_209",
+    "proposal_issue_34_row_21",
+    "proposal_issue_34_row_210",
+    "proposal_issue_34_row_211",
+    "proposal_issue_34_row_212",
+    "proposal_issue_34_row_213",
+    "proposal_issue_34_row_214",
+    "proposal_issue_34_row_215",
+    "proposal_issue_34_row_216",
+    "proposal_issue_34_row_217",
+    "proposal_issue_34_row_218",
+    "proposal_issue_34_row_219",
+    "proposal_issue_34_row_22",
+    "proposal_issue_34_row_220",
+    "proposal_issue_34_row_221",
+    "proposal_issue_34_row_222",
+    "proposal_issue_34_row_223",
+    "proposal_issue_34_row_224",
+    "proposal_issue_34_row_225",
+    "proposal_issue_34_row_226",
+    "proposal_issue_34_row_227",
+    "proposal_issue_34_row_228",
+    "proposal_issue_34_row_229",
+    "proposal_issue_34_row_23",
+    "proposal_issue_34_row_230",
+    "proposal_issue_34_row_231",
+    "proposal_issue_34_row_232",
+    "proposal_issue_34_row_233",
+    "proposal_issue_34_row_234",
+    "proposal_issue_34_row_235",
+    "proposal_issue_34_row_236",
+    "proposal_issue_34_row_237",
+    "proposal_issue_34_row_238",
+    "proposal_issue_34_row_239",
+    "proposal_issue_34_row_24",
+    "proposal_issue_34_row_240",
+    "proposal_issue_34_row_241",
+    "proposal_issue_34_row_242",
+    "proposal_issue_34_row_243",
+    "proposal_issue_34_row_244",
+    "proposal_issue_34_row_245",
+    "proposal_issue_34_row_246",
+    "proposal_issue_34_row_247",
+    "proposal_issue_34_row_248",
+    "proposal_issue_34_row_249",
+    "proposal_issue_34_row_25",
+    "proposal_issue_34_row_250",
+    "proposal_issue_34_row_251",
+    "proposal_issue_34_row_252",
+    "proposal_issue_34_row_253",
+    "proposal_issue_34_row_254",
+    "proposal_issue_34_row_255",
+    "proposal_issue_34_row_26",
+    "proposal_issue_34_row_27",
+    "proposal_issue_34_row_28",
+    "proposal_issue_34_row_29",
+    "proposal_issue_34_row_3",
+    "proposal_issue_34_row_30",
+    "proposal_issue_34_row_31",
+    "proposal_issue_34_row_32",
+    "proposal_issue_34_row_33",
+    "proposal_issue_34_row_34",
+    "proposal_issue_34_row_35",
+    "proposal_issue_34_row_36",
+    "proposal_issue_34_row_37",
+    "proposal_issue_34_row_38",
+    "proposal_issue_34_row_39",
+    "proposal_issue_34_row_4",
+    "proposal_issue_34_row_40",
+    "proposal_issue_34_row_41",
+    "proposal_issue_34_row_42",
+    "proposal_issue_34_row_43",
+    "proposal_issue_34_row_44",
+    "proposal_issue_34_row_45",
+    "proposal_issue_34_row_46",
+    "proposal_issue_34_row_47",
+    "proposal_issue_34_row_48",
+    "proposal_issue_34_row_49",
+    "proposal_issue_34_row_5",
+    "proposal_issue_34_row_50",
+    "proposal_issue_34_row_51",
+    "proposal_issue_34_row_52",
+    "proposal_issue_34_row_53",
+    "proposal_issue_34_row_54",
+    "proposal_issue_34_row_55",
+    "proposal_issue_34_row_56",
+    "proposal_issue_34_row_57",
+    "proposal_issue_34_row_58",
+    "proposal_issue_34_row_59",
+    "proposal_issue_34_row_6",
+    "proposal_issue_34_row_60",
+    "proposal_issue_34_row_61",
+    "proposal_issue_34_row_62",
+    "proposal_issue_34_row_63",
+    "proposal_issue_34_row_64",
+    "proposal_issue_34_row_65",
+    "proposal_issue_34_row_66",
+    "proposal_issue_34_row_67",
+    "proposal_issue_34_row_68",
+    "proposal_issue_34_row_69",
+    "proposal_issue_34_row_7",
+    "proposal_issue_34_row_70",
+    "proposal_issue_34_row_71",
+    "proposal_issue_34_row_72",
+    "proposal_issue_34_row_73",
+    "proposal_issue_34_row_74",
+    "proposal_issue_34_row_75",
+    "proposal_issue_34_row_76",
+    "proposal_issue_34_row_77",
+    "proposal_issue_34_row_78",
+    "proposal_issue_34_row_79",
+    "proposal_issue_34_row_8",
+    "proposal_issue_34_row_80",
+    "proposal_issue_34_row_81",
+    "proposal_issue_34_row_82",
+    "proposal_issue_34_row_83",
+    "proposal_issue_34_row_84",
+    "proposal_issue_34_row_85",
+    "proposal_issue_34_row_86",
+    "proposal_issue_34_row_87",
+    "proposal_issue_34_row_88",
+    "proposal_issue_34_row_89",
+    "proposal_issue_34_row_9",
+    "proposal_issue_34_row_90",
+    "proposal_issue_34_row_91",
+    "proposal_issue_34_row_92",
+    "proposal_issue_34_row_93",
+    "proposal_issue_34_row_94",
+    "proposal_issue_34_row_95",
+    "proposal_issue_34_row_96",
+    "proposal_issue_34_row_97",
+    "proposal_issue_34_row_98",
+    "proposal_issue_34_row_99"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "信息力学与感知工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_2d3e05096f023eb0edbf",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "通信工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_3a097d48862cd50961c6",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "网络与信息安全学院",
+      "official_url": null,
+      "organization_id": "org_auto_4b69e1627a306e9fe0e2",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "电子工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_6d94514f0e022a434b3e",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "微电子学院",
+      "official_url": null,
+      "organization_id": "org_auto_93a64f03b1c04d23a458",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "机电工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_9c05cacba53b98061851",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "计算机科学与技术学院",
+      "official_url": null,
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "空间科学与技术学院",
+      "official_url": null,
+      "organization_id": "org_auto_c11d5640fde954de58c2",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "光电工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_c86042735dd2569717da",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "物理学院",
+      "official_url": null,
+      "organization_id": "org_auto_f0adf234929aa8e128f7",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "人工智能学院",
+      "official_url": null,
+      "organization_id": "org_auto_fff4a2808d5dbc8ae3f8",
+      "organization_type": "school",
+      "parent_id": "org_auto_4872c4c7ffb46d9df7f9"
+    }
+  ],
+  "path_corrections": [
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_34_row_249"
+      ],
+      "reason": "两个学院都在",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "杭州研究院、机电工程学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_c2caf064daf1ea5c2c71"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_38"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "空间科学与技术学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_c11d5640fde954de58c2"
+    },
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_34_row_25"
+      ],
+      "reason": "学院",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机科学与技术学院软件工程系",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_b3c41cb2017552a01745"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_110",
+        "proposal_issue_34_row_189",
+        "proposal_issue_34_row_203",
+        "proposal_issue_34_row_205",
+        "proposal_issue_34_row_206",
+        "proposal_issue_34_row_207",
+        "proposal_issue_34_row_208",
+        "proposal_issue_34_row_219",
+        "proposal_issue_34_row_220",
+        "proposal_issue_34_row_221",
+        "proposal_issue_34_row_222",
+        "proposal_issue_34_row_223",
+        "proposal_issue_34_row_226",
+        "proposal_issue_34_row_232",
+        "proposal_issue_34_row_234",
+        "proposal_issue_34_row_24",
+        "proposal_issue_34_row_39",
+        "proposal_issue_34_row_54",
+        "proposal_issue_34_row_81",
+        "proposal_issue_34_row_82",
+        "proposal_issue_34_row_84",
+        "proposal_issue_34_row_85"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "电子工程学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_6d94514f0e022a434b3e"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_171",
+        "proposal_issue_34_row_174",
+        "proposal_issue_34_row_175",
+        "proposal_issue_34_row_176",
+        "proposal_issue_34_row_177",
+        "proposal_issue_34_row_178",
+        "proposal_issue_34_row_19",
+        "proposal_issue_34_row_40",
+        "proposal_issue_34_row_56",
+        "proposal_issue_34_row_57"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "人工智能学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_fff4a2808d5dbc8ae3f8"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_75",
+        "proposal_issue_34_row_76",
+        "proposal_issue_34_row_77",
+        "proposal_issue_34_row_78"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "光电工程学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_c86042735dd2569717da"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_1",
+        "proposal_issue_34_row_10",
+        "proposal_issue_34_row_11",
+        "proposal_issue_34_row_12",
+        "proposal_issue_34_row_15",
+        "proposal_issue_34_row_18",
+        "proposal_issue_34_row_2",
+        "proposal_issue_34_row_20",
+        "proposal_issue_34_row_21",
+        "proposal_issue_34_row_22",
+        "proposal_issue_34_row_23",
+        "proposal_issue_34_row_26",
+        "proposal_issue_34_row_27",
+        "proposal_issue_34_row_29",
+        "proposal_issue_34_row_3",
+        "proposal_issue_34_row_30",
+        "proposal_issue_34_row_31",
+        "proposal_issue_34_row_32",
+        "proposal_issue_34_row_4",
+        "proposal_issue_34_row_5",
+        "proposal_issue_34_row_6",
+        "proposal_issue_34_row_7",
+        "proposal_issue_34_row_8",
+        "proposal_issue_34_row_9"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机科学与技术学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_b3c41cb2017552a01745"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_112",
+        "proposal_issue_34_row_113",
+        "proposal_issue_34_row_114",
+        "proposal_issue_34_row_69"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "物理学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_f0adf234929aa8e128f7"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_121",
+        "proposal_issue_34_row_122",
+        "proposal_issue_34_row_123",
+        "proposal_issue_34_row_125",
+        "proposal_issue_34_row_126",
+        "proposal_issue_34_row_128",
+        "proposal_issue_34_row_129",
+        "proposal_issue_34_row_159",
+        "proposal_issue_34_row_180",
+        "proposal_issue_34_row_202",
+        "proposal_issue_34_row_46",
+        "proposal_issue_34_row_61",
+        "proposal_issue_34_row_62",
+        "proposal_issue_34_row_63",
+        "proposal_issue_34_row_64",
+        "proposal_issue_34_row_80",
+        "proposal_issue_34_row_83",
+        "proposal_issue_34_row_95",
+        "proposal_issue_34_row_96",
+        "proposal_issue_34_row_97"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "通信工程学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_3a097d48862cd50961c6"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_168",
+        "proposal_issue_34_row_170",
+        "proposal_issue_34_row_41",
+        "proposal_issue_34_row_42",
+        "proposal_issue_34_row_43",
+        "proposal_issue_34_row_49",
+        "proposal_issue_34_row_50",
+        "proposal_issue_34_row_51",
+        "proposal_issue_34_row_93"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "微电子学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_93a64f03b1c04d23a458"
+    },
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_34_row_53",
+        "proposal_issue_34_row_86"
+      ],
+      "reason": "学院",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "网络与信息安全学院、杭州研究院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_c2caf064daf1ea5c2c71"
+    },
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_34_row_144"
+      ],
+      "reason": "两个学院都在",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "集成电路学院、杭州研究院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_c2caf064daf1ea5c2c71"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_192",
+        "proposal_issue_34_row_193",
+        "proposal_issue_34_row_195",
+        "proposal_issue_34_row_196",
+        "proposal_issue_34_row_199",
+        "proposal_issue_34_row_72",
+        "proposal_issue_34_row_73"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "信息力学与感知工程学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_2d3e05096f023eb0edbf"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_131",
+        "proposal_issue_34_row_173",
+        "proposal_issue_34_row_246",
+        "proposal_issue_34_row_247",
+        "proposal_issue_34_row_248",
+        "proposal_issue_34_row_250",
+        "proposal_issue_34_row_251",
+        "proposal_issue_34_row_252",
+        "proposal_issue_34_row_253",
+        "proposal_issue_34_row_254",
+        "proposal_issue_34_row_255",
+        "proposal_issue_34_row_55",
+        "proposal_issue_34_row_60"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "机电工程学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_9c05cacba53b98061851"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_34_row_134",
+        "proposal_issue_34_row_47",
+        "proposal_issue_34_row_48",
+        "proposal_issue_34_row_65",
+        "proposal_issue_34_row_66",
+        "proposal_issue_34_row_67",
+        "proposal_issue_34_row_87",
+        "proposal_issue_34_row_88",
+        "proposal_issue_34_row_89",
+        "proposal_issue_34_row_90",
+        "proposal_issue_34_row_92"
+      ],
+      "reason": "同校未找到可信匹配,已按同级学院预填。",
+      "source_domains": [
+        "hz.xidian.edu.cn"
+      ],
+      "submitted": {
+        "department": "网络与信息安全学院",
+        "school": "杭州研究院",
+        "university": "西安电子科技大学"
+      },
+      "target_organization_id": "org_auto_4b69e1627a306e9fe0e2"
+    }
+  ],
+  "pull_request_number": 35,
+  "rejected_proposal_ids": [
+    "proposal_issue_34_row_111",
+    "proposal_issue_34_row_172"
+  ],
+  "review_comment_id": 5251844199,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": [
+    "org_auto_24c1e0a7776bd807701e",
+    "org_auto_e665b61a4591ffed0b8d"
+  ]
+}

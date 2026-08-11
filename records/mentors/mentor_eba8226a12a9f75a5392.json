@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6f8e7253375c090f3fdc"
+      ],
+      "ended_at": null,
+      "id": "aff_7ab64257086b9e3fe996",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_4b69e1627a306e9fe0e2",
+      "source_url": "https://faculty.xidian.edu.cn/WANGYAO/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6f8e7253375c090f3fdc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7ab64257086b9e3fe996",
+      "claim_ids": [
+        "claim_6f8e7253375c090f3fdc"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyao@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/WANGYAO/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangyao@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6f8e7253375c090f3fdc"
+    ],
+    "email": [
+      "claim_6f8e7253375c090f3fdc"
+    ],
+    "name": [
+      "claim_6f8e7253375c090f3fdc"
+    ],
+    "profile_url": [
+      "claim_6f8e7253375c090f3fdc"
+    ],
+    "recent_papers": [
+      "claim_6f8e7253375c090f3fdc"
+    ],
+    "research_directions": [
+      "claim_6f8e7253375c090f3fdc"
+    ],
+    "status": [
+      "claim_6f8e7253375c090f3fdc"
+    ],
+    "title": [
+      "claim_6f8e7253375c090f3fdc"
+    ]
+  },
+  "id": "mentor_eba8226a12a9f75a5392",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6f8e7253375c090f3fdc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王尧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7ab64257086b9e3fe996",
+      "claim_ids": [
+        "claim_6f8e7253375c090f3fdc"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WANGYAO/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Enabling Secure Touch-to-Access Device Pairing based on Human Body’s Electrical Response",
+    "Your Breath Doesn’t Lie: Multi-user Authentication by Sensing Respiration using mmWave Radar",
+    "HeartPrint: Exploring a Heartbeat-based Multi-user Authentication with Single mmWave Radar",
+    "Your Eyes Reveal Your Secrets: An Eye Movement-Based Password Inference on Smartphone",
+    "Secure Your Voice: An Oral Airflow-based Continuous Liveness Detection for Voice Assistants",
+    "Exploring a Secure Device Pairing Using Human Body as a Conductor",
+    "Simultaneous Authentication of Multiple Users Using a Single mmWave Radar"
+  ],
+  "research_directions": [
+    "生物识别、物联网安全、AI模型安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WANGYAO/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

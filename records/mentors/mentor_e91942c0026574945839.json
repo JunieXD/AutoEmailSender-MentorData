@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b791302d4ff622fb579"
+      ],
+      "ended_at": null,
+      "id": "aff_a6f1ae8507a07cbdc71d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LLH1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b791302d4ff622fb579"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a6f1ae8507a07cbdc71d",
+      "claim_ids": [
+        "claim_7b791302d4ff622fb579"
+      ],
+      "is_primary": true,
+      "normalized_value": "lhli@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LLH1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lhli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b791302d4ff622fb579"
+    ],
+    "email": [
+      "claim_7b791302d4ff622fb579"
+    ],
+    "name": [
+      "claim_7b791302d4ff622fb579"
+    ],
+    "profile_url": [
+      "claim_7b791302d4ff622fb579"
+    ],
+    "research_directions": [
+      "claim_7b791302d4ff622fb579"
+    ],
+    "status": [
+      "claim_7b791302d4ff622fb579"
+    ],
+    "title": [
+      "claim_7b791302d4ff622fb579"
+    ]
+  },
+  "id": "mentor_e91942c0026574945839",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b791302d4ff622fb579"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李龙海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a6f1ae8507a07cbdc71d",
+      "claim_ids": [
+        "claim_7b791302d4ff622fb579"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LLH1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高性能分布式计算、空间大数据管理、信息安全与隐私保护、嵌入式系统设计、高性能网络分布式计算、云存储技术、地理信息大数据分析与可视化、网络安全(Internet用户隐私保护技术、比特币隐私保护与应用、操作系统安全)、嵌入式系统(嵌入式软硬件协调设计、linux内核分析与移植、linux应用软件设计与优化)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LLH1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

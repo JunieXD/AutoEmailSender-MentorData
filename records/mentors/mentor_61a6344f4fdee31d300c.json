@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_888893eed91e8e0611b0"
+      ],
+      "ended_at": null,
+      "id": "aff_009127fe667005861cd5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/JW1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_888893eed91e8e0611b0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_009127fe667005861cd5",
+      "claim_ids": [
+        "claim_888893eed91e8e0611b0"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiangwen@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/JW1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiangwen@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_888893eed91e8e0611b0"
+    ],
+    "email": [
+      "claim_888893eed91e8e0611b0"
+    ],
+    "name": [
+      "claim_888893eed91e8e0611b0"
+    ],
+    "profile_url": [
+      "claim_888893eed91e8e0611b0"
+    ],
+    "research_directions": [
+      "claim_888893eed91e8e0611b0"
+    ],
+    "status": [
+      "claim_888893eed91e8e0611b0"
+    ],
+    "title": [
+      "claim_888893eed91e8e0611b0"
+    ]
+  },
+  "id": "mentor_61a6344f4fdee31d300c",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_888893eed91e8e0611b0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_009127fe667005861cd5",
+      "claim_ids": [
+        "claim_888893eed91e8e0611b0"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/JW1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "天线与射频技术、电磁散射理论与设计、空间电磁测量与安全、智能汽车电子"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/JW1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

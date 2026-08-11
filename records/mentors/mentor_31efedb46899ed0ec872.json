@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3fc51cb0415e4392e06a"
+      ],
+      "ended_at": null,
+      "id": "aff_482d6f6d690c0d1e0882",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_4b69e1627a306e9fe0e2",
+      "source_url": "https://faculty.xidian.edu.cn/LVMINJIE/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3fc51cb0415e4392e06a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_482d6f6d690c0d1e0882",
+      "claim_ids": [
+        "claim_3fc51cb0415e4392e06a"
+      ],
+      "is_primary": true,
+      "normalized_value": "mjlv@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LVMINJIE/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mjlv@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3fc51cb0415e4392e06a"
+    ],
+    "email": [
+      "claim_3fc51cb0415e4392e06a"
+    ],
+    "name": [
+      "claim_3fc51cb0415e4392e06a"
+    ],
+    "profile_url": [
+      "claim_3fc51cb0415e4392e06a"
+    ],
+    "recent_papers": [
+      "claim_3fc51cb0415e4392e06a"
+    ],
+    "research_directions": [
+      "claim_3fc51cb0415e4392e06a"
+    ],
+    "status": [
+      "claim_3fc51cb0415e4392e06a"
+    ],
+    "title": [
+      "claim_3fc51cb0415e4392e06a"
+    ]
+  },
+  "id": "mentor_31efedb46899ed0ec872",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3fc51cb0415e4392e06a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕敏杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_482d6f6d690c0d1e0882",
+      "claim_ids": [
+        "claim_3fc51cb0415e4392e06a"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LVMINJIE/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Efficient Repair Analysis Algorithm Exploration for Memory With Redundancy and In-Memory ECC",
+    "Improving 3D DRAM Fault Tolerance Through Weak Cell Aware Error Correction",
+    "Logic-DRAM Co-Design to Exploit the Efficient Repair Technique for Stacked DRAM",
+    "Exploiting Intracell Bit-Error Characteristics to Improve Min-Sum LDPC Decoding for MLC NAND Flash-Based Storage in Mobile Device",
+    "Logic-DRAM co-design to efficiently repair stacked DRAM with unused spares",
+    "Improving min-sum LDPC decoding throughput by exploiting intra-cell bit error characteristic in MLC NAND flash memory",
+    "VLSI design of fuzzy-decision bit-flipping QC-LDPC decoder"
+  ],
+  "research_directions": [
+    "数字集成电路设计与FPGA原型验证、人工智能安全、硬件安全、高性能计算机体系结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LVMINJIE/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

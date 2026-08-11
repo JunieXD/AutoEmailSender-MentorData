@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0374b1b5db894fc0918a"
+      ],
+      "ended_at": null,
+      "id": "aff_360e7bf44179724ecb5c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_e665b61a4591ffed0b8d",
+      "source_url": "https://hz.xidian.edu.cn/info/2077/28354.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_0374b1b5db894fc0918a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_360e7bf44179724ecb5c",
+      "claim_ids": [
+        "claim_0374b1b5db894fc0918a"
+      ],
+      "is_primary": true,
+      "normalized_value": "baoyaoqi@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://hz.xidian.edu.cn/info/2077/28354.htm",
+      "status": "current",
+      "type": "email",
+      "value": "baoyaoqi@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0374b1b5db894fc0918a"
+    ],
+    "email": [
+      "claim_0374b1b5db894fc0918a"
+    ],
+    "name": [
+      "claim_0374b1b5db894fc0918a"
+    ],
+    "profile_url": [
+      "claim_0374b1b5db894fc0918a"
+    ],
+    "research_directions": [
+      "claim_0374b1b5db894fc0918a"
+    ],
+    "status": [
+      "claim_0374b1b5db894fc0918a"
+    ],
+    "title": [
+      "claim_0374b1b5db894fc0918a"
+    ]
+  },
+  "id": "mentor_5449cf91977800fe4554",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0374b1b5db894fc0918a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "包瑶琦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_360e7bf44179724ecb5c",
+      "claim_ids": [
+        "claim_0374b1b5db894fc0918a"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://hz.xidian.edu.cn/info/2077/28354.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "3D感知及硬件加速,主要包括SPAD近感计算、SPAD读出电路设计、点云感知神经网络架构设计及轻量化、点云感知神经网络加速器设计等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://hz.xidian.edu.cn/info/2077/28354.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

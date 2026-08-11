@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_199ace49b18ce0b4de0b"
+      ],
+      "ended_at": null,
+      "id": "aff_13d6cd6886a653c331ce",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_93a64f03b1c04d23a458",
+      "source_url": "https://faculty.xidian.edu.cn/YL13/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_199ace49b18ce0b4de0b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_13d6cd6886a653c331ce",
+      "claim_ids": [
+        "claim_199ace49b18ce0b4de0b"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanlei@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/YL13/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuanlei@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_199ace49b18ce0b4de0b"
+    ],
+    "email": [
+      "claim_199ace49b18ce0b4de0b"
+    ],
+    "name": [
+      "claim_199ace49b18ce0b4de0b"
+    ],
+    "profile_url": [
+      "claim_199ace49b18ce0b4de0b"
+    ],
+    "research_directions": [
+      "claim_199ace49b18ce0b4de0b"
+    ],
+    "status": [
+      "claim_199ace49b18ce0b4de0b"
+    ],
+    "title": [
+      "claim_199ace49b18ce0b4de0b"
+    ]
+  },
+  "id": "mentor_6db138056c01d8fa3281",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_199ace49b18ce0b4de0b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "元磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_13d6cd6886a653c331ce",
+      "claim_ids": [
+        "claim_199ace49b18ce0b4de0b"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YL13/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型宽禁带半导体功率芯片",
+    "宽禁带电路与系统",
+    "车规级功率器件/模块可靠性评估"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YL13/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

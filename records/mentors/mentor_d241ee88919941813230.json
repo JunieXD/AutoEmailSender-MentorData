@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_59f12f83f1afa9b59d45"
+      ],
+      "ended_at": null,
+      "id": "aff_bcf25e14f65e5e793f11",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_1902911fead888d82ada",
+      "source_url": "https://faculty.xidian.edu.cn/YL11/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_59f12f83f1afa9b59d45"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bcf25e14f65e5e793f11",
+      "claim_ids": [
+        "claim_59f12f83f1afa9b59d45"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyang@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/YL11/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lyang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_59f12f83f1afa9b59d45"
+    ],
+    "email": [
+      "claim_59f12f83f1afa9b59d45"
+    ],
+    "name": [
+      "claim_59f12f83f1afa9b59d45"
+    ],
+    "profile_url": [
+      "claim_59f12f83f1afa9b59d45"
+    ],
+    "research_directions": [
+      "claim_59f12f83f1afa9b59d45"
+    ],
+    "status": [
+      "claim_59f12f83f1afa9b59d45"
+    ],
+    "title": [
+      "claim_59f12f83f1afa9b59d45"
+    ]
+  },
+  "id": "mentor_d241ee88919941813230",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_59f12f83f1afa9b59d45"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bcf25e14f65e5e793f11",
+      "claim_ids": [
+        "claim_59f12f83f1afa9b59d45"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YL11/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "隐蔽通信、信号特征提取与识别、移动边缘计算、无线缓存网络、非正交多址接入、无线物理层安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YL11/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

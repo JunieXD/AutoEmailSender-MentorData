@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f29f27ddbfa987a6f182"
+      ],
+      "ended_at": null,
+      "id": "aff_46b018146d18ca2a7a6e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_fff4a2808d5dbc8ae3f8",
+      "source_url": "https://faculty.xidian.edu.cn/mtf/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f29f27ddbfa987a6f182"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_46b018146d18ca2a7a6e",
+      "claim_ids": [
+        "claim_f29f27ddbfa987a6f182"
+      ],
+      "is_primary": true,
+      "normalized_value": "mintfeng@hnu.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/mtf/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mintfeng@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f29f27ddbfa987a6f182"
+    ],
+    "email": [
+      "claim_f29f27ddbfa987a6f182"
+    ],
+    "name": [
+      "claim_f29f27ddbfa987a6f182"
+    ],
+    "profile_url": [
+      "claim_f29f27ddbfa987a6f182"
+    ],
+    "status": [
+      "claim_f29f27ddbfa987a6f182"
+    ],
+    "title": [
+      "claim_f29f27ddbfa987a6f182"
+    ]
+  },
+  "id": "mentor_9937376d107c72184b16",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f29f27ddbfa987a6f182"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冯明涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_46b018146d18ca2a7a6e",
+      "claim_ids": [
+        "claim_f29f27ddbfa987a6f182"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/mtf/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/mtf/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

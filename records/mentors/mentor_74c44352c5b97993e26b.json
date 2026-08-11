@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a2bdfee42a03f4ace42c"
+      ],
+      "ended_at": null,
+      "id": "aff_b57f77140b76d05921a6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/ZC5/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a2bdfee42a03f4ace42c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b57f77140b76d05921a6",
+      "claim_ids": [
+        "claim_a2bdfee42a03f4ace42c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangc@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZC5/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangc@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a2bdfee42a03f4ace42c"
+    ],
+    "email": [
+      "claim_a2bdfee42a03f4ace42c"
+    ],
+    "name": [
+      "claim_a2bdfee42a03f4ace42c"
+    ],
+    "profile_url": [
+      "claim_a2bdfee42a03f4ace42c"
+    ],
+    "research_directions": [
+      "claim_a2bdfee42a03f4ace42c"
+    ],
+    "status": [
+      "claim_a2bdfee42a03f4ace42c"
+    ],
+    "title": [
+      "claim_a2bdfee42a03f4ace42c"
+    ]
+  },
+  "id": "mentor_74c44352c5b97993e26b",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a2bdfee42a03f4ace42c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张琛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b57f77140b76d05921a6",
+      "claim_ids": [
+        "claim_a2bdfee42a03f4ace42c"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZC5/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能与大数据分析、软件安全、形式化方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZC5/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

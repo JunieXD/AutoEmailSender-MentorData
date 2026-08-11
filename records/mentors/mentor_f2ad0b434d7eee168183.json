@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_170c29da94943b5886ca"
+      ],
+      "ended_at": null,
+      "id": "aff_47cd6ae642901bed3b26",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/XMD/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_170c29da94943b5886ca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_47cd6ae642901bed3b26",
+      "claim_ids": [
+        "claim_170c29da94943b5886ca"
+      ],
+      "is_primary": true,
+      "normalized_value": "xmd@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/XMD/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xmd@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_170c29da94943b5886ca"
+    ],
+    "email": [
+      "claim_170c29da94943b5886ca"
+    ],
+    "name": [
+      "claim_170c29da94943b5886ca"
+    ],
+    "profile_url": [
+      "claim_170c29da94943b5886ca"
+    ],
+    "research_directions": [
+      "claim_170c29da94943b5886ca"
+    ],
+    "status": [
+      "claim_170c29da94943b5886ca"
+    ],
+    "title": [
+      "claim_170c29da94943b5886ca"
+    ]
+  },
+  "id": "mentor_f2ad0b434d7eee168183",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_170c29da94943b5886ca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邢孟道"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_47cd6ae642901bed3b26",
+      "claim_ids": [
+        "claim_170c29da94943b5886ca"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/XMD/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "雷达超高分辨率成像(成像智能)、遥感应用与图像智能处理(图像智能)、协同探测成像与任务规划(逻辑智能)、电磁侦察与成像抗干扰(博弈对抗)、空时频稀疏信号处理(压缩感知)、新体制雷达成像技术(微波光子、ISAR、SAL)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/XMD/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

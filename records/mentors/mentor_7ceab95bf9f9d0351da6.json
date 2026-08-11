@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f1ba51a6e3a54911cdfc"
+      ],
+      "ended_at": null,
+      "id": "aff_dc1ca6a8ddaaecc94d5e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_93a64f03b1c04d23a458",
+      "source_url": "https://faculty.xidian.edu.cn/HHY/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f1ba51a6e3a54911cdfc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dc1ca6a8ddaaecc94d5e",
+      "claim_ids": [
+        "claim_f1ba51a6e3a54911cdfc"
+      ],
+      "is_primary": true,
+      "normalized_value": "huhy@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/HHY/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huhy@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f1ba51a6e3a54911cdfc"
+    ],
+    "email": [
+      "claim_f1ba51a6e3a54911cdfc"
+    ],
+    "name": [
+      "claim_f1ba51a6e3a54911cdfc"
+    ],
+    "profile_url": [
+      "claim_f1ba51a6e3a54911cdfc"
+    ],
+    "research_directions": [
+      "claim_f1ba51a6e3a54911cdfc"
+    ],
+    "status": [
+      "claim_f1ba51a6e3a54911cdfc"
+    ],
+    "title": [
+      "claim_f1ba51a6e3a54911cdfc"
+    ]
+  },
+  "id": "mentor_7ceab95bf9f9d0351da6",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f1ba51a6e3a54911cdfc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡辉勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dc1ca6a8ddaaecc94d5e",
+      "claim_ids": [
+        "claim_f1ba51a6e3a54911cdfc"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/HHY/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "硅基单光子探测芯片设计与实现",
+    "硅基高速光电子器件及光电芯片集成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/HHY/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

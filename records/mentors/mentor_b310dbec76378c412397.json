@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6d05f027d4f1e718008e"
+      ],
+      "ended_at": null,
+      "id": "aff_8813d59f5ee72b15c83b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_1902911fead888d82ada",
+      "source_url": "https://faculty.xidian.edu.cn/ZLN/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6d05f027d4f1e718008e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8813d59f5ee72b15c83b",
+      "claim_ids": [
+        "claim_6d05f027d4f1e718008e"
+      ],
+      "is_primary": true,
+      "normalized_value": "lnzhu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZLN/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lnzhu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6d05f027d4f1e718008e"
+    ],
+    "email": [
+      "claim_6d05f027d4f1e718008e"
+    ],
+    "name": [
+      "claim_6d05f027d4f1e718008e"
+    ],
+    "profile_url": [
+      "claim_6d05f027d4f1e718008e"
+    ],
+    "research_directions": [
+      "claim_6d05f027d4f1e718008e"
+    ],
+    "status": [
+      "claim_6d05f027d4f1e718008e"
+    ],
+    "title": [
+      "claim_6d05f027d4f1e718008e"
+    ]
+  },
+  "id": "mentor_b310dbec76378c412397",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6d05f027d4f1e718008e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱丽娜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8813d59f5ee72b15c83b",
+      "claim_ids": [
+        "claim_6d05f027d4f1e718008e"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZLN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "B5G、6G,车联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZLN/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

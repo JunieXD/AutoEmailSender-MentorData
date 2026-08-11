@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1ba1e3c1c18bc2a731d1"
+      ],
+      "ended_at": null,
+      "id": "aff_a6627709151baf66738d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/binwang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1ba1e3c1c18bc2a731d1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a6627709151baf66738d",
+      "claim_ids": [
+        "claim_1ba1e3c1c18bc2a731d1"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangbin02@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/binwang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangbin02@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1ba1e3c1c18bc2a731d1"
+    ],
+    "email": [
+      "claim_1ba1e3c1c18bc2a731d1"
+    ],
+    "name": [
+      "claim_1ba1e3c1c18bc2a731d1"
+    ],
+    "profile_url": [
+      "claim_1ba1e3c1c18bc2a731d1"
+    ],
+    "research_directions": [
+      "claim_1ba1e3c1c18bc2a731d1"
+    ],
+    "status": [
+      "claim_1ba1e3c1c18bc2a731d1"
+    ],
+    "title": [
+      "claim_1ba1e3c1c18bc2a731d1"
+    ]
+  },
+  "id": "mentor_cc5e6d4de8bbf166b4bc",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1ba1e3c1c18bc2a731d1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王滨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a6627709151baf66738d",
+      "claim_ids": [
+        "claim_1ba1e3c1c18bc2a731d1"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/binwang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据安全、物联网安全、密码工程、人工智能安全、密码学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/binwang/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

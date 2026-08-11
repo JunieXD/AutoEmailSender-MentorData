@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f227a2dada49f50dec5a"
+      ],
+      "ended_at": null,
+      "id": "aff_dbc16f400aa1d739ab4a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/WCL3/en/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f227a2dada49f50dec5a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dbc16f400aa1d739ab4a",
+      "claim_ids": [
+        "claim_f227a2dada49f50dec5a"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangchanglong@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/WCL3/en/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangchanglong@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f227a2dada49f50dec5a"
+    ],
+    "email": [
+      "claim_f227a2dada49f50dec5a"
+    ],
+    "name": [
+      "claim_f227a2dada49f50dec5a"
+    ],
+    "profile_url": [
+      "claim_f227a2dada49f50dec5a"
+    ],
+    "research_directions": [
+      "claim_f227a2dada49f50dec5a"
+    ],
+    "status": [
+      "claim_f227a2dada49f50dec5a"
+    ]
+  },
+  "id": "mentor_20bb55c114dadfc4b7d8",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f227a2dada49f50dec5a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王常龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dbc16f400aa1d739ab4a",
+      "claim_ids": [
+        "claim_f227a2dada49f50dec5a"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WCL3/en/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "外辐射源雷达信号处理、雷达动态博弈对抗"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WCL3/en/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:04:15Z"
+}

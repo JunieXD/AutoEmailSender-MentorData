@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bf197d3a7be04d7c7e8e"
+      ],
+      "ended_at": null,
+      "id": "aff_5f7627c317164b49db27",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/wanglu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bf197d3a7be04d7c7e8e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5f7627c317164b49db27",
+      "claim_ids": [
+        "claim_bf197d3a7be04d7c7e8e"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanglu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/wanglu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanglu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bf197d3a7be04d7c7e8e"
+    ],
+    "email": [
+      "claim_bf197d3a7be04d7c7e8e"
+    ],
+    "name": [
+      "claim_bf197d3a7be04d7c7e8e"
+    ],
+    "profile_url": [
+      "claim_bf197d3a7be04d7c7e8e"
+    ],
+    "research_directions": [
+      "claim_bf197d3a7be04d7c7e8e"
+    ],
+    "status": [
+      "claim_bf197d3a7be04d7c7e8e"
+    ],
+    "title": [
+      "claim_bf197d3a7be04d7c7e8e"
+    ]
+  },
+  "id": "mentor_55446d1ec10a89f5b77c",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bf197d3a7be04d7c7e8e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王璐"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5f7627c317164b49db27",
+      "claim_ids": [
+        "claim_bf197d3a7be04d7c7e8e"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/wanglu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "AI for SE(人工智能赋能软件工程):微服务架构与云原生软件智能运维、AI Agent与大模型融合软件测试",
+    "SE for AI(AI融合软件工程化研究):边缘智能端侧大模型轻量化与分布式推理、深度学习系统与大模型安全可信",
+    "基于机器学习的软件自动化测试、面向DNN和大模型的测试技术、基于大模型的软件智能运维、云计算、云操作系统、分布式操作系统、面向大模型计算的NPU集群、昇腾与鲲鹏架构、OpenHarmony、OpenEuler"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/wanglu/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

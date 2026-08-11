@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f7273e7ae0a1e112a0c7"
+      ],
+      "ended_at": null,
+      "id": "aff_42b4520cb788e00d3cb6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/ZSH4/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f7273e7ae0a1e112a0c7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42b4520cb788e00d3cb6",
+      "claim_ids": [
+        "claim_f7273e7ae0a1e112a0c7"
+      ],
+      "is_primary": true,
+      "normalized_value": "shzhou@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZSH4/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shzhou@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f7273e7ae0a1e112a0c7"
+    ],
+    "email": [
+      "claim_f7273e7ae0a1e112a0c7"
+    ],
+    "name": [
+      "claim_f7273e7ae0a1e112a0c7"
+    ],
+    "profile_url": [
+      "claim_f7273e7ae0a1e112a0c7"
+    ],
+    "research_directions": [
+      "claim_f7273e7ae0a1e112a0c7"
+    ],
+    "status": [
+      "claim_f7273e7ae0a1e112a0c7"
+    ],
+    "title": [
+      "claim_f7273e7ae0a1e112a0c7"
+    ]
+  },
+  "id": "mentor_4c25385e5309c5100bf6",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f7273e7ae0a1e112a0c7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周生华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42b4520cb788e00d3cb6",
+      "claim_ids": [
+        "claim_f7273e7ae0a1e112a0c7"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZSH4/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "MIMO雷达、信号融合、分布式检测、雷达目标特性、分布式跟踪、分布式误差自校正、波形优化、射频低截获"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZSH4/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

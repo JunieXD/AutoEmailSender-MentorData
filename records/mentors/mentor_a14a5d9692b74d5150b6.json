@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_78898af1b9d46c13fc52"
+      ],
+      "ended_at": null,
+      "id": "aff_4183107f59d973509212",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_f0adf234929aa8e128f7",
+      "source_url": "https://faculty.xidian.edu.cn/YEPEI/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_78898af1b9d46c13fc52"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4183107f59d973509212",
+      "claim_ids": [
+        "claim_78898af1b9d46c13fc52"
+      ],
+      "is_primary": true,
+      "normalized_value": "yepei@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/YEPEI/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yepei@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_78898af1b9d46c13fc52"
+    ],
+    "email": [
+      "claim_78898af1b9d46c13fc52"
+    ],
+    "name": [
+      "claim_78898af1b9d46c13fc52"
+    ],
+    "profile_url": [
+      "claim_78898af1b9d46c13fc52"
+    ],
+    "research_directions": [
+      "claim_78898af1b9d46c13fc52"
+    ],
+    "status": [
+      "claim_78898af1b9d46c13fc52"
+    ]
+  },
+  "id": "mentor_a14a5d9692b74d5150b6",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_78898af1b9d46c13fc52"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冶佩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4183107f59d973509212",
+      "claim_ids": [
+        "claim_78898af1b9d46c13fc52"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YEPEI/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "雷达信号处理、ISAR成像"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YEPEI/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:04:15Z"
+}
