@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0672a15dd81cc068bd1b"
+      ],
+      "ended_at": null,
+      "id": "aff_cfed2cc2103c66cc3d29",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/WLM1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0672a15dd81cc068bd1b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cfed2cc2103c66cc3d29",
+      "claim_ids": [
+        "claim_0672a15dd81cc068bd1b"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanglm@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/WLM1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanglm@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0672a15dd81cc068bd1b"
+    ],
+    "email": [
+      "claim_0672a15dd81cc068bd1b"
+    ],
+    "name": [
+      "claim_0672a15dd81cc068bd1b"
+    ],
+    "profile_url": [
+      "claim_0672a15dd81cc068bd1b"
+    ],
+    "research_directions": [
+      "claim_0672a15dd81cc068bd1b"
+    ],
+    "status": [
+      "claim_0672a15dd81cc068bd1b"
+    ],
+    "title": [
+      "claim_0672a15dd81cc068bd1b"
+    ]
+  },
+  "id": "mentor_5249f5ff78e1b50ff3a9",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0672a15dd81cc068bd1b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王黎明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cfed2cc2103c66cc3d29",
+      "claim_ids": [
+        "claim_0672a15dd81cc068bd1b"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WLM1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医工交叉、工业智能、航天系统软件关键技术、工业智能视觉检测、人工智能机器诊疗技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WLM1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

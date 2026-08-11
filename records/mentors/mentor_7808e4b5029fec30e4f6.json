@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3277ef1ccbdb39e26fc8"
+      ],
+      "ended_at": null,
+      "id": "aff_1d80f0d0c9b32c4b8cb9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/YQ3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3277ef1ccbdb39e26fc8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1d80f0d0c9b32c4b8cb9",
+      "claim_ids": [
+        "claim_3277ef1ccbdb39e26fc8"
+      ],
+      "is_primary": true,
+      "normalized_value": "q.yu@vip.163.com",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/YQ3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "q.yu@vip.163.com"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3277ef1ccbdb39e26fc8"
+    ],
+    "email": [
+      "claim_3277ef1ccbdb39e26fc8"
+    ],
+    "name": [
+      "claim_3277ef1ccbdb39e26fc8"
+    ],
+    "profile_url": [
+      "claim_3277ef1ccbdb39e26fc8"
+    ],
+    "research_directions": [
+      "claim_3277ef1ccbdb39e26fc8"
+    ],
+    "status": [
+      "claim_3277ef1ccbdb39e26fc8"
+    ],
+    "title": [
+      "claim_3277ef1ccbdb39e26fc8"
+    ]
+  },
+  "id": "mentor_7808e4b5029fec30e4f6",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3277ef1ccbdb39e26fc8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1d80f0d0c9b32c4b8cb9",
+      "claim_ids": [
+        "claim_3277ef1ccbdb39e26fc8"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YQ3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "AI大模型应用、知识图谱构建与智能应用、医学影像分析、大数据算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YQ3/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

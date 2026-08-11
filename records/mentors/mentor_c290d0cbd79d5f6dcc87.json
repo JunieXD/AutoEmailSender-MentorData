@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e7515169a0ff91d60242"
+      ],
+      "ended_at": null,
+      "id": "aff_a5edb5601fa10b35dee6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_3a097d48862cd50961c6",
+      "source_url": "https://faculty.xidian.edu.cn/CC2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e7515169a0ff91d60242"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a5edb5601fa10b35dee6",
+      "claim_ids": [
+        "claim_e7515169a0ff91d60242"
+      ],
+      "is_primary": true,
+      "normalized_value": "cc2000@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/CC2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cc2000@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e7515169a0ff91d60242"
+    ],
+    "email": [
+      "claim_e7515169a0ff91d60242"
+    ],
+    "name": [
+      "claim_e7515169a0ff91d60242"
+    ],
+    "profile_url": [
+      "claim_e7515169a0ff91d60242"
+    ],
+    "research_directions": [
+      "claim_e7515169a0ff91d60242"
+    ],
+    "status": [
+      "claim_e7515169a0ff91d60242"
+    ],
+    "title": [
+      "claim_e7515169a0ff91d60242"
+    ]
+  },
+  "id": "mentor_c290d0cbd79d5f6dcc87",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e7515169a0ff91d60242"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈晨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a5edb5601fa10b35dee6",
+      "claim_ids": [
+        "claim_e7515169a0ff91d60242"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/CC2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "短距离无线通信",
+    "物联网、SDN、下一代网络",
+    "车联网、中国智能网联汽车",
+    "操作系统相关的内核开发设计、体系结构、云计算",
+    "网络仿真"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/CC2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cbebeab788ce53ebc16c"
+      ],
+      "ended_at": null,
+      "id": "aff_4bc2c0ad3796b9bf1c72",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LXY10/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cbebeab788ce53ebc16c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4bc2c0ad3796b9bf1c72",
+      "claim_ids": [
+        "claim_cbebeab788ce53ebc16c"
+      ],
+      "is_primary": true,
+      "normalized_value": "xyliu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LXY10/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xyliu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cbebeab788ce53ebc16c"
+    ],
+    "email": [
+      "claim_cbebeab788ce53ebc16c"
+    ],
+    "name": [
+      "claim_cbebeab788ce53ebc16c"
+    ],
+    "profile_url": [
+      "claim_cbebeab788ce53ebc16c"
+    ],
+    "recent_papers": [
+      "claim_cbebeab788ce53ebc16c"
+    ],
+    "research_directions": [
+      "claim_cbebeab788ce53ebc16c"
+    ],
+    "status": [
+      "claim_cbebeab788ce53ebc16c"
+    ],
+    "title": [
+      "claim_cbebeab788ce53ebc16c"
+    ]
+  },
+  "id": "mentor_6f0741efc2cf56f2bd53",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cbebeab788ce53ebc16c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘西洋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4bc2c0ad3796b9bf1c72",
+      "claim_ids": [
+        "claim_cbebeab788ce53ebc16c"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LXY10/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Predicting gastric cancer outcome from resected lymph node histopathology images using deep learning",
+    "Systemically modeling the relationship between climate change and wheat aphid abundance",
+    "A human-in-the-loop deep learning paradigm for synergic visual evaluation in children",
+    "Dense anatomical annotation of slit-lamp images improves the performance of deep learning for the diagnosis of ophthalmic disorders",
+    "Exploring prognostic indicators in the pathological images of hepatocellular carcinoma based on deep learning"
+  ],
+  "research_directions": [
+    "医工融合(医学影像可信解读、多模态跨尺度计算病理、高应激高心理负荷下心理危机预警与干预)、工业智能(工业产线下硬实时(毫秒级)、极高准确率要求下的“机电光软算”一体工业视觉、工业生产深度强化学习优化控制)、科学人工智能(数字岩芯三维孔隙分割预训练模型、流体力学偏微分方程数据双驱动页岩油气仿真)、医学人工智能、工业大数据与工业智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LXY10/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

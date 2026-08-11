@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_73ead5f2de99a2d48b9c"
+      ],
+      "ended_at": null,
+      "id": "aff_753ebf799f480f22dc56",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/YANJIEXI/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_73ead5f2de99a2d48b9c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_753ebf799f480f22dc56",
+      "claim_ids": [
+        "claim_73ead5f2de99a2d48b9c"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanjiexi@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/YANJIEXI/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanjiexi@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_73ead5f2de99a2d48b9c"
+    ],
+    "email": [
+      "claim_73ead5f2de99a2d48b9c"
+    ],
+    "name": [
+      "claim_73ead5f2de99a2d48b9c"
+    ],
+    "profile_url": [
+      "claim_73ead5f2de99a2d48b9c"
+    ],
+    "recent_papers": [
+      "claim_73ead5f2de99a2d48b9c"
+    ],
+    "research_directions": [
+      "claim_73ead5f2de99a2d48b9c"
+    ],
+    "status": [
+      "claim_73ead5f2de99a2d48b9c"
+    ]
+  },
+  "id": "mentor_cf3134c694edbd7e1388",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_73ead5f2de99a2d48b9c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫杰熹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_753ebf799f480f22dc56",
+      "claim_ids": [
+        "claim_73ead5f2de99a2d48b9c"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YANJIEXI/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Rethinking Noise Sampling in Class-Imbalanced Diffusion Models",
+    "LLM Knows Body Language, Too: Translating Speech Voices into Human Gestures",
+    "Retrieval Across Any Domains via Large-scale Pre-trained Model",
+    "Causality-Invariant Interactive Mining for Cross-Modal Similarity Learning",
+    "Implicit Compositional Generative Network for Length-Variable Co-Speech Gesture Synthesis",
+    "Asymmetric Mutual Alignment for Unsupervised Zero-shot Sketch-based Image Retrieval",
+    "Learning with Diversity: Self-Expanded Equalization for Better Generalized Deep Metric Learning",
+    "Adaptive Hierarchical Similarity Metric Learning With Noisy Labels"
+  ],
+  "research_directions": [
+    "机器学习、计算机视觉、多模态认知与推理、AI for Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YANJIEXI/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:04:15Z"
+}

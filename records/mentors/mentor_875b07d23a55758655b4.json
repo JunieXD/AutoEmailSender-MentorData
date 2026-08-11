@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3ea4d0790852eb72ef16"
+      ],
+      "ended_at": null,
+      "id": "aff_96b8233f8515288fe6bf",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c86042735dd2569717da",
+      "source_url": "https://faculty.xidian.edu.cn/ZDC/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3ea4d0790852eb72ef16"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96b8233f8515288fe6bf",
+      "claim_ids": [
+        "claim_3ea4d0790852eb72ef16"
+      ],
+      "is_primary": true,
+      "normalized_value": "dch.zhang@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZDC/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dch.zhang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3ea4d0790852eb72ef16"
+    ],
+    "email": [
+      "claim_3ea4d0790852eb72ef16"
+    ],
+    "name": [
+      "claim_3ea4d0790852eb72ef16"
+    ],
+    "profile_url": [
+      "claim_3ea4d0790852eb72ef16"
+    ],
+    "research_directions": [
+      "claim_3ea4d0790852eb72ef16"
+    ],
+    "status": [
+      "claim_3ea4d0790852eb72ef16"
+    ],
+    "title": [
+      "claim_3ea4d0790852eb72ef16"
+    ]
+  },
+  "id": "mentor_875b07d23a55758655b4",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3ea4d0790852eb72ef16"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张大成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_96b8233f8515288fe6bf",
+      "claim_ids": [
+        "claim_3ea4d0790852eb72ef16"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZDC/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "激光光谱远程遥测与应用研究、中红外深紫外极窄线宽可调谐激光、激光质谱分析仪器与应用研究、飞秒激光驱动极紫外光源、激光自动控制与测量系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZDC/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

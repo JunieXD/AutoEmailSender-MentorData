@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2bec00fd489fe1a7bc40"
+      ],
+      "ended_at": null,
+      "id": "aff_f96395774b2fda83f9a9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_3a097d48862cd50961c6",
+      "source_url": "https://faculty.xidian.edu.cn/WBC/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2bec00fd489fe1a7bc40"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f96395774b2fda83f9a9",
+      "claim_ids": [
+        "claim_2bec00fd489fe1a7bc40"
+      ],
+      "is_primary": true,
+      "normalized_value": "bcwang79@aliyun.com",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/WBC/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bcwang79@aliyun.com"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2bec00fd489fe1a7bc40"
+    ],
+    "email": [
+      "claim_2bec00fd489fe1a7bc40"
+    ],
+    "name": [
+      "claim_2bec00fd489fe1a7bc40"
+    ],
+    "profile_url": [
+      "claim_2bec00fd489fe1a7bc40"
+    ],
+    "research_directions": [
+      "claim_2bec00fd489fe1a7bc40"
+    ],
+    "status": [
+      "claim_2bec00fd489fe1a7bc40"
+    ],
+    "title": [
+      "claim_2bec00fd489fe1a7bc40"
+    ]
+  },
+  "id": "mentor_963b938072d41d2d24b5",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2bec00fd489fe1a7bc40"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王保仓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f96395774b2fda83f9a9",
+      "claim_ids": [
+        "claim_2bec00fd489fe1a7bc40"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WBC/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算安全、大数据安全、数论算法、全同态加密、后量子公钥密码"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WBC/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

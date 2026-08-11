@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2d40071303e31928dc38"
+      ],
+      "ended_at": null,
+      "id": "aff_c4e7e6c0ff192f29da5f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_4b69e1627a306e9fe0e2",
+      "source_url": "https://faculty.xidian.edu.cn/DWX1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2d40071303e31928dc38"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c4e7e6c0ff192f29da5f",
+      "claim_ids": [
+        "claim_2d40071303e31928dc38"
+      ],
+      "is_primary": true,
+      "normalized_value": "wxding@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/DWX1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wxding@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2d40071303e31928dc38"
+    ],
+    "email": [
+      "claim_2d40071303e31928dc38"
+    ],
+    "name": [
+      "claim_2d40071303e31928dc38"
+    ],
+    "profile_url": [
+      "claim_2d40071303e31928dc38"
+    ],
+    "research_directions": [
+      "claim_2d40071303e31928dc38"
+    ],
+    "status": [
+      "claim_2d40071303e31928dc38"
+    ],
+    "title": [
+      "claim_2d40071303e31928dc38"
+    ]
+  },
+  "id": "mentor_d46561a17efb9f9b2a16",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2d40071303e31928dc38"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "丁文秀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c4e7e6c0ff192f29da5f",
+      "claim_ids": [
+        "claim_2d40071303e31928dc38"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/DWX1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算安全、区块链、隐私计算等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/DWX1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

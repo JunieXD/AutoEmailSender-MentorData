@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0beb94e8bf8d6c785cab"
+      ],
+      "ended_at": null,
+      "id": "aff_f8008de1dd6d0500e24f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_1902911fead888d82ada",
+      "source_url": "https://faculty.xidian.edu.cn/FYC/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0beb94e8bf8d6c785cab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f8008de1dd6d0500e24f",
+      "claim_ids": [
+        "claim_0beb94e8bf8d6c785cab"
+      ],
+      "is_primary": true,
+      "normalized_value": "ycfu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/FYC/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ycfu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0beb94e8bf8d6c785cab"
+    ],
+    "email": [
+      "claim_0beb94e8bf8d6c785cab"
+    ],
+    "name": [
+      "claim_0beb94e8bf8d6c785cab"
+    ],
+    "profile_url": [
+      "claim_0beb94e8bf8d6c785cab"
+    ],
+    "research_directions": [
+      "claim_0beb94e8bf8d6c785cab"
+    ],
+    "status": [
+      "claim_0beb94e8bf8d6c785cab"
+    ],
+    "title": [
+      "claim_0beb94e8bf8d6c785cab"
+    ]
+  },
+  "id": "mentor_51526627a66033e3fc0b",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0beb94e8bf8d6c785cab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "付宇钏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f8008de1dd6d0500e24f",
+      "claim_ids": [
+        "claim_0beb94e8bf8d6c785cab"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/FYC/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多维资源调度、通感一体化及机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/FYC/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b5ff6f4c0c2b14e6967f"
+      ],
+      "ended_at": null,
+      "id": "aff_6d7a6510777947a902a2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_3a097d48862cd50961c6",
+      "source_url": "https://faculty.xidian.edu.cn/XX1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b5ff6f4c0c2b14e6967f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6d7a6510777947a902a2",
+      "claim_ids": [
+        "claim_b5ff6f4c0c2b14e6967f"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoxiao@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/XX1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoxiao@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b5ff6f4c0c2b14e6967f"
+    ],
+    "email": [
+      "claim_b5ff6f4c0c2b14e6967f"
+    ],
+    "name": [
+      "claim_b5ff6f4c0c2b14e6967f"
+    ],
+    "profile_url": [
+      "claim_b5ff6f4c0c2b14e6967f"
+    ],
+    "research_directions": [
+      "claim_b5ff6f4c0c2b14e6967f"
+    ],
+    "status": [
+      "claim_b5ff6f4c0c2b14e6967f"
+    ],
+    "title": [
+      "claim_b5ff6f4c0c2b14e6967f"
+    ]
+  },
+  "id": "mentor_ac4028aa4f91b68d7ba2",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b5ff6f4c0c2b14e6967f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖潇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6d7a6510777947a902a2",
+      "claim_ids": [
+        "claim_b5ff6f4c0c2b14e6967f"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/XX1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、人工智能、通信雷达信号处理、物联网、车联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/XX1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

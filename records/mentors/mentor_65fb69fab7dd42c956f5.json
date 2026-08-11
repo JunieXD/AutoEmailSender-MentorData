@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4da00d25168d1b78f305"
+      ],
+      "ended_at": null,
+      "id": "aff_6fcf64920029017ed0a2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_24c1e0a7776bd807701e",
+      "source_url": "https://hz.xidian.edu.cn/info/1287/12884.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_4da00d25168d1b78f305"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6fcf64920029017ed0a2",
+      "claim_ids": [
+        "claim_4da00d25168d1b78f305"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangfen@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://hz.xidian.edu.cn/info/1287/12884.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangfen@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4da00d25168d1b78f305"
+    ],
+    "email": [
+      "claim_4da00d25168d1b78f305"
+    ],
+    "name": [
+      "claim_4da00d25168d1b78f305"
+    ],
+    "profile_url": [
+      "claim_4da00d25168d1b78f305"
+    ],
+    "research_directions": [
+      "claim_4da00d25168d1b78f305"
+    ],
+    "status": [
+      "claim_4da00d25168d1b78f305"
+    ]
+  },
+  "id": "mentor_65fb69fab7dd42c956f5",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4da00d25168d1b78f305"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪芬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6fcf64920029017ed0a2",
+      "claim_ids": [
+        "claim_4da00d25168d1b78f305"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://hz.xidian.edu.cn/info/1287/12884.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图信号处理、强化学习、主动学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://hz.xidian.edu.cn/info/1287/12884.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:04:15Z"
+}

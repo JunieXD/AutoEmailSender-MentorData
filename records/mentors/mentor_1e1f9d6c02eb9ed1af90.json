@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a0bfa6db705c6e9f0796"
+      ],
+      "ended_at": null,
+      "id": "aff_451ecba16f58af3be7b6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/LZF3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a0bfa6db705c6e9f0796"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_451ecba16f58af3be7b6",
+      "claim_ids": [
+        "claim_a0bfa6db705c6e9f0796"
+      ],
+      "is_primary": true,
+      "normalized_value": "lzf@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LZF3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lzf@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a0bfa6db705c6e9f0796"
+    ],
+    "email": [
+      "claim_a0bfa6db705c6e9f0796"
+    ],
+    "name": [
+      "claim_a0bfa6db705c6e9f0796"
+    ],
+    "profile_url": [
+      "claim_a0bfa6db705c6e9f0796"
+    ],
+    "research_directions": [
+      "claim_a0bfa6db705c6e9f0796"
+    ],
+    "status": [
+      "claim_a0bfa6db705c6e9f0796"
+    ],
+    "title": [
+      "claim_a0bfa6db705c6e9f0796"
+    ]
+  },
+  "id": "mentor_1e1f9d6c02eb9ed1af90",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a0bfa6db705c6e9f0796"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李真芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_451ecba16f58af3be7b6",
+      "claim_ids": [
+        "claim_a0bfa6db705c6e9f0796"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LZF3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "雷达对地遥感系统与信号处理,包括合成孔径雷达(SAR)、干涉合成孔径雷达(InSAR)、先进的机载、星载SAR/InSAR系统设计与实现"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LZF3/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_60c3f6fb767fec74eb41"
+      ],
+      "ended_at": null,
+      "id": "aff_99ebc0a6a050e2720574",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_3a097d48862cd50961c6",
+      "source_url": "https://faculty.xidian.edu.cn/GL5/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_60c3f6fb767fec74eb41"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_99ebc0a6a050e2720574",
+      "claim_ids": [
+        "claim_60c3f6fb767fec74eb41"
+      ],
+      "is_primary": true,
+      "normalized_value": "lguan@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/GL5/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lguan@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_60c3f6fb767fec74eb41"
+    ],
+    "email": [
+      "claim_60c3f6fb767fec74eb41"
+    ],
+    "name": [
+      "claim_60c3f6fb767fec74eb41"
+    ],
+    "profile_url": [
+      "claim_60c3f6fb767fec74eb41"
+    ],
+    "research_directions": [
+      "claim_60c3f6fb767fec74eb41"
+    ],
+    "status": [
+      "claim_60c3f6fb767fec74eb41"
+    ],
+    "title": [
+      "claim_60c3f6fb767fec74eb41"
+    ]
+  },
+  "id": "mentor_cf7e22168330bb7c16bd",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_60c3f6fb767fec74eb41"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "关磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_99ebc0a6a050e2720574",
+      "claim_ids": [
+        "claim_60c3f6fb767fec74eb41"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/GL5/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "跳频抗干扰通信,频谱传感网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/GL5/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

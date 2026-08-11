@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_faa535c9bcd5032fe8be"
+      ],
+      "ended_at": null,
+      "id": "aff_b1f9733057f056751c5b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/MAOWEI/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_faa535c9bcd5032fe8be"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1f9733057f056751c5b",
+      "claim_ids": [
+        "claim_faa535c9bcd5032fe8be"
+      ],
+      "is_primary": true,
+      "normalized_value": "maowei@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/MAOWEI/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "maowei@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_faa535c9bcd5032fe8be"
+    ],
+    "email": [
+      "claim_faa535c9bcd5032fe8be"
+    ],
+    "name": [
+      "claim_faa535c9bcd5032fe8be"
+    ],
+    "profile_url": [
+      "claim_faa535c9bcd5032fe8be"
+    ],
+    "research_directions": [
+      "claim_faa535c9bcd5032fe8be"
+    ],
+    "status": [
+      "claim_faa535c9bcd5032fe8be"
+    ]
+  },
+  "id": "mentor_7a2a679ec958458c4027",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_faa535c9bcd5032fe8be"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "毛伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1f9733057f056751c5b",
+      "claim_ids": [
+        "claim_faa535c9bcd5032fe8be"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/MAOWEI/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能芯片设计,数模混合信号处理芯片设计,智能计算系统研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/MAOWEI/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:04:15Z"
+}

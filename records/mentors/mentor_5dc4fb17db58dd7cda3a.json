@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5021bb64f6bede85fd8a"
+      ],
+      "ended_at": null,
+      "id": "aff_ed42a2e985bdcd33e27e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/LYY7/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_5021bb64f6bede85fd8a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ed42a2e985bdcd33e27e",
+      "claim_ids": [
+        "claim_5021bb64f6bede85fd8a"
+      ],
+      "is_primary": true,
+      "normalized_value": "liyongyuan@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LYY7/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liyongyuan@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5021bb64f6bede85fd8a"
+    ],
+    "email": [
+      "claim_5021bb64f6bede85fd8a"
+    ],
+    "name": [
+      "claim_5021bb64f6bede85fd8a"
+    ],
+    "profile_url": [
+      "claim_5021bb64f6bede85fd8a"
+    ],
+    "research_directions": [
+      "claim_5021bb64f6bede85fd8a"
+    ],
+    "status": [
+      "claim_5021bb64f6bede85fd8a"
+    ],
+    "title": [
+      "claim_5021bb64f6bede85fd8a"
+    ]
+  },
+  "id": "mentor_5dc4fb17db58dd7cda3a",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5021bb64f6bede85fd8a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "励勇远"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ed42a2e985bdcd33e27e",
+      "claim_ids": [
+        "claim_5021bb64f6bede85fd8a"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LYY7/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "混合信号集成电路设计(电源管理芯片方向)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LYY7/zh_CN/index.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

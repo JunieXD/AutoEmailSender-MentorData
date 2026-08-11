@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0dffebce05091a2a6baa"
+      ],
+      "ended_at": null,
+      "id": "aff_af96ff250d3e134aa475",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/XK2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0dffebce05091a2a6baa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_af96ff250d3e134aa475",
+      "claim_ids": [
+        "claim_0dffebce05091a2a6baa"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiekun@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/XK2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiekun@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0dffebce05091a2a6baa"
+    ],
+    "email": [
+      "claim_0dffebce05091a2a6baa"
+    ],
+    "name": [
+      "claim_0dffebce05091a2a6baa"
+    ],
+    "profile_url": [
+      "claim_0dffebce05091a2a6baa"
+    ],
+    "research_directions": [
+      "claim_0dffebce05091a2a6baa"
+    ],
+    "status": [
+      "claim_0dffebce05091a2a6baa"
+    ],
+    "title": [
+      "claim_0dffebce05091a2a6baa"
+    ]
+  },
+  "id": "mentor_01dc94824fcef285c789",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0dffebce05091a2a6baa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢琨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_af96ff250d3e134aa475",
+      "claim_ids": [
+        "claim_0dffebce05091a2a6baa"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/XK2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、图像安全、生物信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/XK2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd32c47f677236a56332"
+      ],
+      "ended_at": null,
+      "id": "aff_f50a49ad90e7259feb89",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_f0adf234929aa8e128f7",
+      "source_url": "https://faculty.xidian.edu.cn/WANGJIADONG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fd32c47f677236a56332"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f50a49ad90e7259feb89",
+      "claim_ids": [
+        "claim_fd32c47f677236a56332"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiadongwang@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/WANGJIADONG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiadongwang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd32c47f677236a56332"
+    ],
+    "email": [
+      "claim_fd32c47f677236a56332"
+    ],
+    "name": [
+      "claim_fd32c47f677236a56332"
+    ],
+    "profile_url": [
+      "claim_fd32c47f677236a56332"
+    ],
+    "research_directions": [
+      "claim_fd32c47f677236a56332"
+    ],
+    "status": [
+      "claim_fd32c47f677236a56332"
+    ],
+    "title": [
+      "claim_fd32c47f677236a56332"
+    ]
+  },
+  "id": "mentor_273dd210a8a74ab0779a",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd32c47f677236a56332"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王家东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f50a49ad90e7259feb89",
+      "claim_ids": [
+        "claim_fd32c47f677236a56332"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WANGJIADONG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "雷达信号处理、雷达SAR/ISAR成像、运动补偿、电子对抗"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WANGJIADONG/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

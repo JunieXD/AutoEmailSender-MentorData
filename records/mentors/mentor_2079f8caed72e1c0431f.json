@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c604fb1d2596fbd4591d"
+      ],
+      "ended_at": null,
+      "id": "aff_dbd2aa8c8ea7018a59c7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_c2caf064daf1ea5c2c71",
+      "source_url": "https://faculty.xidian.edu.cn/ZUOSHENG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c604fb1d2596fbd4591d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dbd2aa8c8ea7018a59c7",
+      "claim_ids": [
+        "claim_c604fb1d2596fbd4591d"
+      ],
+      "is_primary": true,
+      "normalized_value": "szuo@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZUOSHENG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "szuo@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c604fb1d2596fbd4591d"
+    ],
+    "email": [
+      "claim_c604fb1d2596fbd4591d"
+    ],
+    "name": [
+      "claim_c604fb1d2596fbd4591d"
+    ],
+    "profile_url": [
+      "claim_c604fb1d2596fbd4591d"
+    ],
+    "recent_papers": [
+      "claim_c604fb1d2596fbd4591d"
+    ],
+    "research_directions": [
+      "claim_c604fb1d2596fbd4591d"
+    ],
+    "status": [
+      "claim_c604fb1d2596fbd4591d"
+    ],
+    "title": [
+      "claim_c604fb1d2596fbd4591d"
+    ]
+  },
+  "id": "mentor_2079f8caed72e1c0431f",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c604fb1d2596fbd4591d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "左胜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dbd2aa8c8ea7018a59c7",
+      "claim_ids": [
+        "claim_c604fb1d2596fbd4591d"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZUOSHENG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Massively Parallel Preconditioned FEM–BEM Method for Accurate Analysis of Complex Electromagnetic Field Problems",
+    "A Parallel Direct Domain Decomposition Solver Based on Schur Complement for Electromagnetic Finite Element Analysis",
+    "A Fast Parallel Solution Technique for Large Periodic Structures Based on FEM-DDM",
+    "An Efficient Parallel Hybrid Method of FEM-MLFMA for Electromagnetic Radiation and Scattering Analysis of Separated Objects",
+    "Simulation of Challenging Electromagnetic Problems Using a Massively Parallel Finite Element Method Solver",
+    "A Novel Finite Element Mesh Truncation Technology Accelerated by Parallel Multilevel Fast Multipole Algorithm and its Applications"
+  ],
+  "research_directions": [
+    "大规模并行有限元区域分解算法、超大型电磁周期结构快速求解技术、有限元法的伴随求导技术、电磁混合算法、多物理场仿真计算、电磁仿真软件、高性能计算、电磁有限元数值方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZUOSHENG/zh_CN/index.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_634a363c8d26a2450e90"
+      ],
+      "ended_at": null,
+      "id": "aff_e4256e09345924c7e366",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_93a64f03b1c04d23a458",
+      "source_url": "https://faculty.xidian.edu.cn/LC3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_634a363c8d26a2450e90"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e4256e09345924c7e366",
+      "claim_ids": [
+        "claim_634a363c8d26a2450e90"
+      ],
+      "is_primary": true,
+      "normalized_value": "licong@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LC3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "licong@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_634a363c8d26a2450e90"
+    ],
+    "email": [
+      "claim_634a363c8d26a2450e90"
+    ],
+    "name": [
+      "claim_634a363c8d26a2450e90"
+    ],
+    "profile_url": [
+      "claim_634a363c8d26a2450e90"
+    ],
+    "research_directions": [
+      "claim_634a363c8d26a2450e90"
+    ],
+    "status": [
+      "claim_634a363c8d26a2450e90"
+    ],
+    "title": [
+      "claim_634a363c8d26a2450e90"
+    ]
+  },
+  "id": "mentor_61ca6128511749d1693a",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_634a363c8d26a2450e90"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李聪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e4256e09345924c7e366",
+      "claim_ids": [
+        "claim_634a363c8d26a2450e90"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LC3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向先进工艺的智能EDA技术、可靠性感知的超大规模集成电路设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LC3/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aec5b55b0986913963b1"
+      ],
+      "ended_at": null,
+      "id": "aff_419c90486f0d68cf0ca7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_fff4a2808d5dbc8ae3f8",
+      "source_url": "https://faculty.xidian.edu.cn/LIWEIBIN/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aec5b55b0986913963b1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_419c90486f0d68cf0ca7",
+      "claim_ids": [
+        "claim_aec5b55b0986913963b1"
+      ],
+      "is_primary": true,
+      "normalized_value": "weibinli@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LIWEIBIN/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weibinli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aec5b55b0986913963b1"
+    ],
+    "email": [
+      "claim_aec5b55b0986913963b1"
+    ],
+    "name": [
+      "claim_aec5b55b0986913963b1"
+    ],
+    "profile_url": [
+      "claim_aec5b55b0986913963b1"
+    ],
+    "research_directions": [
+      "claim_aec5b55b0986913963b1"
+    ],
+    "status": [
+      "claim_aec5b55b0986913963b1"
+    ],
+    "title": [
+      "claim_aec5b55b0986913963b1"
+    ]
+  },
+  "id": "mentor_eeaf6a7dda23862f0c2b",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aec5b55b0986913963b1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李卫斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_419c90486f0d68cf0ca7",
+      "claim_ids": [
+        "claim_aec5b55b0986913963b1"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LIWEIBIN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高精度定位技术与世界模型、遥感影像处理与遥感大模型、工业智能与工业互联网、大语言模型与智能体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LIWEIBIN/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

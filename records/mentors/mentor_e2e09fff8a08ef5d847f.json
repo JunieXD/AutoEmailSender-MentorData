@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8a14d9f4fe5b57a900cc"
+      ],
+      "ended_at": null,
+      "id": "aff_cba3f3a56004a7d01416",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/TSY/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8a14d9f4fe5b57a900cc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cba3f3a56004a7d01416",
+      "claim_ids": [
+        "claim_8a14d9f4fe5b57a900cc"
+      ],
+      "is_primary": true,
+      "normalized_value": "sytang@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/TSY/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sytang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8a14d9f4fe5b57a900cc"
+    ],
+    "email": [
+      "claim_8a14d9f4fe5b57a900cc"
+    ],
+    "name": [
+      "claim_8a14d9f4fe5b57a900cc"
+    ],
+    "profile_url": [
+      "claim_8a14d9f4fe5b57a900cc"
+    ],
+    "research_directions": [
+      "claim_8a14d9f4fe5b57a900cc"
+    ],
+    "status": [
+      "claim_8a14d9f4fe5b57a900cc"
+    ],
+    "title": [
+      "claim_8a14d9f4fe5b57a900cc"
+    ]
+  },
+  "id": "mentor_e2e09fff8a08ef5d847f",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8a14d9f4fe5b57a900cc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "唐世阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cba3f3a56004a7d01416",
+      "claim_ids": [
+        "claim_8a14d9f4fe5b57a900cc"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/TSY/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "雷达系统仿真技术、雷达目标检测技术、SAR实时成像系统设计、雷达成像制导及景像匹配技术、机载/星载/弹载雷达成像技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/TSY/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

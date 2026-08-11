@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_915460bdb45290f092aa"
+      ],
+      "ended_at": null,
+      "id": "aff_317b9c9b8e0b918bd33f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_4b69e1627a306e9fe0e2",
+      "source_url": "https://faculty.xidian.edu.cn/LIUDECHENG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_915460bdb45290f092aa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_317b9c9b8e0b918bd33f",
+      "claim_ids": [
+        "claim_915460bdb45290f092aa"
+      ],
+      "is_primary": true,
+      "normalized_value": "dchliu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LIUDECHENG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dchliu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_915460bdb45290f092aa"
+    ],
+    "email": [
+      "claim_915460bdb45290f092aa"
+    ],
+    "name": [
+      "claim_915460bdb45290f092aa"
+    ],
+    "profile_url": [
+      "claim_915460bdb45290f092aa"
+    ],
+    "research_directions": [
+      "claim_915460bdb45290f092aa"
+    ],
+    "status": [
+      "claim_915460bdb45290f092aa"
+    ],
+    "title": [
+      "claim_915460bdb45290f092aa"
+    ]
+  },
+  "id": "mentor_9f4074fac82559a6c8ff",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_915460bdb45290f092aa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘德成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_317b9c9b8e0b918bd33f",
+      "claim_ids": [
+        "claim_915460bdb45290f092aa"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LIUDECHENG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能安全、计算机视觉、模型内生安全、图像处理与机器学习,具体研究方向包括人脸伪造检测(DeepFake/AIGC鉴伪)、视觉隐私保护(视觉信息隐藏/身份匿名化)、跨模态数据识别(Heterogeneous Face/ReID)、模型内生安全(对抗攻击评测/模型对抗防御)、视觉-语义空间对齐(Cross-modal Alignment)、多模态大模型(Multimodal LLM)等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LIUDECHENG/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

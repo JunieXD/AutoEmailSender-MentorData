@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_697cd515d4cdc3888147"
+      ],
+      "ended_at": null,
+      "id": "aff_3177372b5cbd69387cbf",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_6d94514f0e022a434b3e",
+      "source_url": "https://faculty.xidian.edu.cn/WEIKUN/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_697cd515d4cdc3888147"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3177372b5cbd69387cbf",
+      "claim_ids": [
+        "claim_697cd515d4cdc3888147"
+      ],
+      "is_primary": true,
+      "normalized_value": "weikun01@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/WEIKUN/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weikun01@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_697cd515d4cdc3888147"
+    ],
+    "email": [
+      "claim_697cd515d4cdc3888147"
+    ],
+    "name": [
+      "claim_697cd515d4cdc3888147"
+    ],
+    "profile_url": [
+      "claim_697cd515d4cdc3888147"
+    ],
+    "recent_papers": [
+      "claim_697cd515d4cdc3888147"
+    ],
+    "research_directions": [
+      "claim_697cd515d4cdc3888147"
+    ],
+    "status": [
+      "claim_697cd515d4cdc3888147"
+    ],
+    "title": [
+      "claim_697cd515d4cdc3888147"
+    ]
+  },
+  "id": "mentor_658b84924a45f1c494a6",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_697cd515d4cdc3888147"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏坤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3177372b5cbd69387cbf",
+      "claim_ids": [
+        "claim_697cd515d4cdc3888147"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WEIKUN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Rotation Control Unlearning: Quantifying and Controlling Continuous Unlearning for LLM with The Cognitive Rotation Space, Xiang Zhang, Kun Wei, Xu Yang, Chenghao Xu, Su Yan, Cheng Deng, ICLR2026.",
+    "A Bridge from Audio to Video: Phoneme-Viseme Alignment Allows Every Face to Speak Multiple Languages, Zibo Su, Kun Wei, J Li, X Yang, C Deng, ICLR2026.",
+    "Perceive, Reflect and Understand Long Video: Progressive Multi-Granular Clue Exploration with Interactive Agents, Jiahua Li, Kun Wei, Zhe Xu, Zibo Su, Xu Yang, Cheng Deng, ICLR2026.",
+    "Trajectory Regularized: Reducing Storage Dependency in Model Merging for Continual Learning, Xi Wang, Xu Yang,Kun Wei, Cheng Deng, CVPR2026.",
+    "Towards Robust Edge Model Adaptation via Elastic Architecture Search, Xianhang Chu, Xu Yang, Kun Wei, Xi Wang,AAAI2026.(oral)",
+    "Diffusion-calibrated Continual Test-time Adapation, Xu Yang, Moqi Li, Kun Wei, AAAI2026.(oral)",
+    "Backtrace Mamba: Reviving Critical Temporal Contexts via Hierarchical Memory Compression for Online Action Detection, Su Yan, Jiahua Li, Kun Wei, Cheng Deng,AAAI2026.",
+    "Robust Temporal Action Localization With Meta Boundary Refinement, Jiahua Li, Kun Wei, Zhe Xu, Liejun Wang, Cheng Deng, IEEE Transactions on Multimedia."
+  ],
+  "research_directions": [
+    "增量学习、多模态学习及视觉内容生成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WEIKUN/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

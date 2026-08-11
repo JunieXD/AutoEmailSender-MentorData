@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_49b72ed5e16c8303c629"
+      ],
+      "ended_at": null,
+      "id": "aff_caf6abbd3a9a4fe9846f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_9c05cacba53b98061851",
+      "source_url": "https://faculty.xidian.edu.cn/BH/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_49b72ed5e16c8303c629"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_caf6abbd3a9a4fe9846f",
+      "claim_ids": [
+        "claim_49b72ed5e16c8303c629"
+      ],
+      "is_primary": true,
+      "normalized_value": "hbao@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/BH/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hbao@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_49b72ed5e16c8303c629"
+    ],
+    "email": [
+      "claim_49b72ed5e16c8303c629"
+    ],
+    "name": [
+      "claim_49b72ed5e16c8303c629"
+    ],
+    "profile_url": [
+      "claim_49b72ed5e16c8303c629"
+    ],
+    "status": [
+      "claim_49b72ed5e16c8303c629"
+    ],
+    "title": [
+      "claim_49b72ed5e16c8303c629"
+    ]
+  },
+  "id": "mentor_d300261103dd0aff6c3c",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_49b72ed5e16c8303c629"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "保宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_caf6abbd3a9a4fe9846f",
+      "claim_ids": [
+        "claim_49b72ed5e16c8303c629"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/BH/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/BH/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

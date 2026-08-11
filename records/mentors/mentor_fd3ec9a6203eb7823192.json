@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_723ebf3951d8ab205690"
+      ],
+      "ended_at": null,
+      "id": "aff_0a353496205a39aac400",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_fff4a2808d5dbc8ae3f8",
+      "source_url": "https://faculty.xidian.edu.cn/LYY6/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_723ebf3951d8ab205690"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0a353496205a39aac400",
+      "claim_ids": [
+        "claim_723ebf3951d8ab205690"
+      ],
+      "is_primary": true,
+      "normalized_value": "yyli@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LYY6/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yyli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_723ebf3951d8ab205690"
+    ],
+    "email": [
+      "claim_723ebf3951d8ab205690"
+    ],
+    "name": [
+      "claim_723ebf3951d8ab205690"
+    ],
+    "profile_url": [
+      "claim_723ebf3951d8ab205690"
+    ],
+    "research_directions": [
+      "claim_723ebf3951d8ab205690"
+    ],
+    "status": [
+      "claim_723ebf3951d8ab205690"
+    ],
+    "title": [
+      "claim_723ebf3951d8ab205690"
+    ]
+  },
+  "id": "mentor_fd3ec9a6203eb7823192",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_723ebf3951d8ab205690"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李阳阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0a353496205a39aac400",
+      "claim_ids": [
+        "claim_723ebf3951d8ab205690"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LYY6/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子机器学习、遥感影像解译与无人系统应用研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LYY6/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

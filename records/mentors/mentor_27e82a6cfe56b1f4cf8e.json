@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9bab237c6892bf78cb5e"
+      ],
+      "ended_at": null,
+      "id": "aff_f73e68722e99017d3d46",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_1902911fead888d82ada",
+      "source_url": "https://faculty.xidian.edu.cn/QH/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9bab237c6892bf78cb5e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f73e68722e99017d3d46",
+      "claim_ids": [
+        "claim_9bab237c6892bf78cb5e"
+      ],
+      "is_primary": true,
+      "normalized_value": "hqin@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/QH/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hqin@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9bab237c6892bf78cb5e"
+    ],
+    "email": [
+      "claim_9bab237c6892bf78cb5e"
+    ],
+    "name": [
+      "claim_9bab237c6892bf78cb5e"
+    ],
+    "profile_url": [
+      "claim_9bab237c6892bf78cb5e"
+    ],
+    "research_directions": [
+      "claim_9bab237c6892bf78cb5e"
+    ],
+    "status": [
+      "claim_9bab237c6892bf78cb5e"
+    ],
+    "title": [
+      "claim_9bab237c6892bf78cb5e"
+    ]
+  },
+  "id": "mentor_27e82a6cfe56b1f4cf8e",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9bab237c6892bf78cb5e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "秦浩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f73e68722e99017d3d46",
+      "claim_ids": [
+        "claim_9bab237c6892bf78cb5e"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/QH/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "低轨道卫星移动通信系统星地通信体制、天基移动通信物联网空中接口,5G/6G移动通信、卫星通信、车联网、边缘计算领域的机器学习,多媒体信息智能处理(机器学习/深度学习、基于图像内容的识别与理解、工业互联网异常检测),卫星通信领域大模型研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/QH/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

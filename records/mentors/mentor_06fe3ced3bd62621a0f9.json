@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a12eb014e68ae85935ad"
+      ],
+      "ended_at": null,
+      "id": "aff_d2db54103e183011fac4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_0333ee380594b1ab2487",
+      "source_url": "https://faculty.xidian.edu.cn/WF4/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a12eb014e68ae85935ad"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d2db54103e183011fac4",
+      "claim_ids": [
+        "claim_a12eb014e68ae85935ad"
+      ],
+      "is_primary": true,
+      "normalized_value": "fwei@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/WF4/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fwei@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a12eb014e68ae85935ad"
+    ],
+    "email": [
+      "claim_a12eb014e68ae85935ad"
+    ],
+    "name": [
+      "claim_a12eb014e68ae85935ad"
+    ],
+    "profile_url": [
+      "claim_a12eb014e68ae85935ad"
+    ],
+    "research_directions": [
+      "claim_a12eb014e68ae85935ad"
+    ],
+    "status": [
+      "claim_a12eb014e68ae85935ad"
+    ],
+    "title": [
+      "claim_a12eb014e68ae85935ad"
+    ]
+  },
+  "id": "mentor_06fe3ced3bd62621a0f9",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a12eb014e68ae85935ad"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d2db54103e183011fac4",
+      "claim_ids": [
+        "claim_a12eb014e68ae85935ad"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WF4/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "毫米波雷达与通信系统、新型人工电磁材料与器件、探地雷达与智能识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WF4/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

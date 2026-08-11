@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_16c569c0ac94de0d549a"
+      ],
+      "ended_at": null,
+      "id": "aff_c3b3a76465cf4eddc41b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_4b69e1627a306e9fe0e2",
+      "source_url": "https://faculty.xidian.edu.cn/PCL1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_16c569c0ac94de0d549a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c3b3a76465cf4eddc41b",
+      "claim_ids": [
+        "claim_16c569c0ac94de0d549a"
+      ],
+      "is_primary": true,
+      "normalized_value": "clpeng@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/PCL1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "clpeng@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_16c569c0ac94de0d549a"
+    ],
+    "email": [
+      "claim_16c569c0ac94de0d549a"
+    ],
+    "name": [
+      "claim_16c569c0ac94de0d549a"
+    ],
+    "profile_url": [
+      "claim_16c569c0ac94de0d549a"
+    ],
+    "research_directions": [
+      "claim_16c569c0ac94de0d549a"
+    ],
+    "status": [
+      "claim_16c569c0ac94de0d549a"
+    ],
+    "title": [
+      "claim_16c569c0ac94de0d549a"
+    ]
+  },
+  "id": "mentor_9a4ed7c97d356c26c58e",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_16c569c0ac94de0d549a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭春蕾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c3b3a76465cf4eddc41b",
+      "claim_ids": [
+        "claim_16c569c0ac94de0d549a"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/PCL1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能安全、信息内容安全、计算机视觉、模式识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/PCL1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

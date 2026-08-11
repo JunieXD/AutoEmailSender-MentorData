@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a0ef54e9db599ac29344"
+      ],
+      "ended_at": null,
+      "id": "aff_c632191f1f06fdc21b19",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_9c05cacba53b98061851",
+      "source_url": "https://faculty.xidian.edu.cn/DZY2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a0ef54e9db599ac29344"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c632191f1f06fdc21b19",
+      "claim_ids": [
+        "claim_a0ef54e9db599ac29344"
+      ],
+      "is_primary": true,
+      "normalized_value": "zydai@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/DZY2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zydai@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a0ef54e9db599ac29344"
+    ],
+    "email": [
+      "claim_a0ef54e9db599ac29344"
+    ],
+    "name": [
+      "claim_a0ef54e9db599ac29344"
+    ],
+    "profile_url": [
+      "claim_a0ef54e9db599ac29344"
+    ],
+    "research_directions": [
+      "claim_a0ef54e9db599ac29344"
+    ],
+    "status": [
+      "claim_a0ef54e9db599ac29344"
+    ],
+    "title": [
+      "claim_a0ef54e9db599ac29344"
+    ]
+  },
+  "id": "mentor_fd2be1f4ab905b8f2cc2",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a0ef54e9db599ac29344"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "戴志勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c632191f1f06fdc21b19",
+      "claim_ids": [
+        "claim_a0ef54e9db599ac29344"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/DZY2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "精密电驱电控技术与装备、新能源并网技术与装备、电气系统智能化关键技术研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/DZY2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

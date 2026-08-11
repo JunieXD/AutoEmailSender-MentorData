@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_96187fe413d681f38e16"
+      ],
+      "ended_at": null,
+      "id": "aff_b2f7ed861490152e7c3a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_e726ffd29821f4dc40c2",
+      "source_url": "https://hz.xidian.edu.cn/info/1278/5059.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_96187fe413d681f38e16"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b2f7ed861490152e7c3a",
+      "claim_ids": [
+        "claim_96187fe413d681f38e16"
+      ],
+      "is_primary": true,
+      "normalized_value": "tianye@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://hz.xidian.edu.cn/info/1278/5059.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tianye@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_96187fe413d681f38e16"
+    ],
+    "email": [
+      "claim_96187fe413d681f38e16"
+    ],
+    "name": [
+      "claim_96187fe413d681f38e16"
+    ],
+    "profile_url": [
+      "claim_96187fe413d681f38e16"
+    ],
+    "research_directions": [
+      "claim_96187fe413d681f38e16"
+    ],
+    "status": [
+      "claim_96187fe413d681f38e16"
+    ],
+    "title": [
+      "claim_96187fe413d681f38e16"
+    ]
+  },
+  "id": "mentor_5f8a793ca01ae98e4640",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_96187fe413d681f38e16"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田野"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b2f7ed861490152e7c3a",
+      "claim_ids": [
+        "claim_96187fe413d681f38e16"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://hz.xidian.edu.cn/info/1278/5059.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、数字工程、软件智能、工业智能体、云计算、嵌入式系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://hz.xidian.edu.cn/info/1278/5059.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

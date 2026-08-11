@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9550b041f3e9288bd5fc"
+      ],
+      "ended_at": null,
+      "id": "aff_de88832748aadc028fe7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_6d94514f0e022a434b3e",
+      "source_url": "https://faculty.xidian.edu.cn/LGG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9550b041f3e9288bd5fc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_de88832748aadc028fe7",
+      "claim_ids": [
+        "claim_9550b041f3e9288bd5fc"
+      ],
+      "is_primary": true,
+      "normalized_value": "ggliu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LGG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ggliu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9550b041f3e9288bd5fc"
+    ],
+    "email": [
+      "claim_9550b041f3e9288bd5fc"
+    ],
+    "name": [
+      "claim_9550b041f3e9288bd5fc"
+    ],
+    "profile_url": [
+      "claim_9550b041f3e9288bd5fc"
+    ],
+    "status": [
+      "claim_9550b041f3e9288bd5fc"
+    ],
+    "title": [
+      "claim_9550b041f3e9288bd5fc"
+    ]
+  },
+  "id": "mentor_4085e11dd776a7cc216d",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9550b041f3e9288bd5fc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘高高"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_de88832748aadc028fe7",
+      "claim_ids": [
+        "claim_9550b041f3e9288bd5fc"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LGG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LGG/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

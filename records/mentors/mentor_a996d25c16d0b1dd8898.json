@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_883eb1961c9b111c7ecb"
+      ],
+      "ended_at": null,
+      "id": "aff_b513915c499d6b9b2ca4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/CC1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_883eb1961c9b111c7ecb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b513915c499d6b9b2ca4",
+      "claim_ids": [
+        "claim_883eb1961c9b111c7ecb"
+      ],
+      "is_primary": true,
+      "normalized_value": "czeng@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/CC1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "czeng@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_883eb1961c9b111c7ecb"
+    ],
+    "email": [
+      "claim_883eb1961c9b111c7ecb"
+    ],
+    "name": [
+      "claim_883eb1961c9b111c7ecb"
+    ],
+    "profile_url": [
+      "claim_883eb1961c9b111c7ecb"
+    ],
+    "research_directions": [
+      "claim_883eb1961c9b111c7ecb"
+    ],
+    "status": [
+      "claim_883eb1961c9b111c7ecb"
+    ],
+    "title": [
+      "claim_883eb1961c9b111c7ecb"
+    ]
+  },
+  "id": "mentor_a996d25c16d0b1dd8898",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_883eb1961c9b111c7ecb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曾操"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b513915c499d6b9b2ca4",
+      "claim_ids": [
+        "claim_883eb1961c9b111c7ecb"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/CC1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "阵列信号处理、多通道/多源运动目标检测、新体制雷达及实时信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/CC1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a8ca2b40b27cb0de5707"
+      ],
+      "ended_at": null,
+      "id": "aff_c56b850c49d92696bd41",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:04:15Z",
+      "organization_id": "org_auto_d57aff9ceb84049eaaba",
+      "source_url": "https://faculty.xidian.edu.cn/LYJ3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a8ca2b40b27cb0de5707"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c56b850c49d92696bd41",
+      "claim_ids": [
+        "claim_a8ca2b40b27cb0de5707"
+      ],
+      "is_primary": true,
+      "normalized_value": "yjliu@xidian.edu.cn",
+      "observed_at": "2026-08-11T10:04:15Z",
+      "source_url": "https://faculty.xidian.edu.cn/LYJ3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yjliu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:04:15Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a8ca2b40b27cb0de5707"
+    ],
+    "email": [
+      "claim_a8ca2b40b27cb0de5707"
+    ],
+    "name": [
+      "claim_a8ca2b40b27cb0de5707"
+    ],
+    "profile_url": [
+      "claim_a8ca2b40b27cb0de5707"
+    ],
+    "research_directions": [
+      "claim_a8ca2b40b27cb0de5707"
+    ],
+    "status": [
+      "claim_a8ca2b40b27cb0de5707"
+    ],
+    "title": [
+      "claim_a8ca2b40b27cb0de5707"
+    ]
+  },
+  "id": "mentor_005d1bc994b7b756dd08",
+  "last_verified_at": "2026-08-11T10:04:15Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a8ca2b40b27cb0de5707"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘永军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c56b850c49d92696bd41",
+      "claim_ids": [
+        "claim_a8ca2b40b27cb0de5707"
+      ],
+      "observed_at": "2026-08-11T10:04:15Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LYJ3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "一体化波形设计与处理(雷达通信/通信感知/雷达干扰/探测干扰/雷达通信干扰一体化)、反侦察抗干扰设计、分布式协同探测、目标检测、参数估计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:04:15Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LYJ3/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:04:15Z"
+}
