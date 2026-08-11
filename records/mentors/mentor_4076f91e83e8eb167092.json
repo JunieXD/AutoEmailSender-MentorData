@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1d001e599bfdc0aede10"
+      ],
+      "ended_at": null,
+      "id": "aff_50a89870c1b2c1da107a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_8b4d9a42a5ae9c04b1a3",
+      "source_url": "https://teacher.bupt.edu.cn/qiaoxiuquan",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1d001e599bfdc0aede10"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_50a89870c1b2c1da107a",
+      "claim_ids": [
+        "claim_1d001e599bfdc0aede10"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiaoxq@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/qiaoxiuquan",
+      "status": "current",
+      "type": "email",
+      "value": "qiaoxq@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1d001e599bfdc0aede10"
+    ],
+    "email": [
+      "claim_1d001e599bfdc0aede10"
+    ],
+    "name": [
+      "claim_1d001e599bfdc0aede10"
+    ],
+    "profile_url": [
+      "claim_1d001e599bfdc0aede10"
+    ],
+    "recent_papers": [
+      "claim_1d001e599bfdc0aede10"
+    ],
+    "research_directions": [
+      "claim_1d001e599bfdc0aede10"
+    ],
+    "status": [
+      "claim_1d001e599bfdc0aede10"
+    ],
+    "title": [
+      "claim_1d001e599bfdc0aede10"
+    ]
+  },
+  "id": "mentor_4076f91e83e8eb167092",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1d001e599bfdc0aede10"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "乔秀全"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_50a89870c1b2c1da107a",
+      "claim_ids": [
+        "claim_1d001e599bfdc0aede10"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/qiaoxiuquan"
+    }
+  ],
+  "recent_papers": [
+    "RGB-Depth Fusion GAN for Indoor Depth Completion. 35th IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2022), New Orleans, Louisiana, June 21-24, 2022. (Accepted) (CCF A类会议)",
+    "AoDNN: An Auto-Offloading Approach to Optimize Deep Inference for Fostering Mobile Web. 2022 IEEE International Conference on Computer Communications (INFOCOM 2022),2-5 May 2022,virtual conference. (CCF A类会议)",
+    "A Lightweight Collaborative Deep Neural Network for the Mobile Web in Edge Cloud [J].IEEE Transactions on Mobile Computing(TMC). 2022, vol.21, no.7, pp: 2289-2305, DOI:10.1109/TMC.2020.3043051",
+    "AITransfer: Progressive AI-powered Transmission for Real-Time Point Cloud Video Streaming.ACM International Conference on Multimedia (ACM MM), 20-24 October, 2021, Chendu, China. (CCF A类会议)",
+    "WebPoseEstimator: A Fundamental and Flexible Pose Estimation Framework for Mobile Web AR.IEEE Virtual Reality (VR) 2021, (Poster Paper, CCF A类会议), March 27-April 3, 2021, Lisbon, Portugal.",
+    "DeepAdapter: A Collaborative Deep Learning Framework for the Mobile Web Using Context-Aware Network Pruning, in Proceedings of the 2020 IEEE International Conference on Computer Communications (INFOCOM 2020), (Acceptance Rate: 19.8%), 6-9 July 2020, pp. 834-843",
+    "6G Vision: An AI-Driven Decentralized Network and Service Architecture. IEEE Internet Computing, 2020,vol. 24, no. 4, July/August 2020, pp. 33-40.",
+    "“物媒时代”如何构建智慧社会,《国家治理》,2020年第29期,2020年8月.(特邀)"
+  ],
+  "research_directions": [
+    "基于跨平台Web的AR/VR技术、面向6G的多模态全息通信服务、空间计算、数字孪生与元宇宙服务、三维建模及可视化关键技术、智能边缘计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/qiaoxiuquan",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

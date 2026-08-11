@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_43b9bcdea2e9467bc09e"
+      ],
+      "ended_at": null,
+      "id": "aff_4897384e483204ade41b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_836033ed02e2b0de913d",
+      "source_url": "https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_43b9bcdea2e9467bc09e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4897384e483204ade41b",
+      "claim_ids": [
+        "claim_43b9bcdea2e9467bc09e"
+      ],
+      "is_primary": true,
+      "normalized_value": "linzw@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "linzw@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_43b9bcdea2e9467bc09e"
+    ],
+    "email": [
+      "claim_43b9bcdea2e9467bc09e"
+    ],
+    "name": [
+      "claim_43b9bcdea2e9467bc09e"
+    ],
+    "profile_url": [
+      "claim_43b9bcdea2e9467bc09e"
+    ],
+    "research_directions": [
+      "claim_43b9bcdea2e9467bc09e"
+    ],
+    "status": [
+      "claim_43b9bcdea2e9467bc09e"
+    ],
+    "title": [
+      "claim_43b9bcdea2e9467bc09e"
+    ]
+  },
+  "id": "mentor_033a5bde4a6b4202efa7",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_43b9bcdea2e9467bc09e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林昭文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4897384e483204ade41b",
+      "claim_ids": [
+        "claim_43b9bcdea2e9467bc09e"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动互联网技术及应用、下一代互联网技术、网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/linzhaowen/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

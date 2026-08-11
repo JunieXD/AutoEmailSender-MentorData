@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a873589e0a627316a22d"
+      ],
+      "ended_at": null,
+      "id": "aff_ab2dfb09be5a9c39968e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangwufan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_a873589e0a627316a22d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ab2dfb09be5a9c39968e",
+      "claim_ids": [
+        "claim_a873589e0a627316a22d"
+      ],
+      "is_primary": true,
+      "normalized_value": "wufanwang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangwufan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wufanwang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a873589e0a627316a22d"
+    ],
+    "email": [
+      "claim_a873589e0a627316a22d"
+    ],
+    "name": [
+      "claim_a873589e0a627316a22d"
+    ],
+    "profile_url": [
+      "claim_a873589e0a627316a22d"
+    ],
+    "recent_papers": [
+      "claim_a873589e0a627316a22d"
+    ],
+    "research_directions": [
+      "claim_a873589e0a627316a22d"
+    ],
+    "status": [
+      "claim_a873589e0a627316a22d"
+    ]
+  },
+  "id": "mentor_08163fd921b374f8d24a",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a873589e0a627316a22d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王吴凡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ab2dfb09be5a9c39968e",
+      "claim_ids": [
+        "claim_a873589e0a627316a22d"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangwufan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Learning to LEAP: Efficient Dense Point Tracking by Focusing Where It Matters. AAAI 2026.",
+    "Per-Flow Asynchronous Traffic Shaping in Time-Sensitive Networking. DAC 2026.",
+    "Contrastive Cross-Bag Augmentation for Multiple Instance Learning-based Whole Slide Image Classification, IEEE CVPR 2026.",
+    "Monocular Vision-based Fast 3D Mapping and Multi-Agent-Assisted Trajectory Planning for UAVs. ACM MM 2025.",
+    "Enhancing Low Latency Adaptive Live Streaming Through Precise Bandwidth Prediction. IEEE/ACM ToN 2024.",
+    "Revisiting the Generalization Ability of Deep Local Descriptors. IEEE TIV 2024.",
+    "Revisiting Unsupervised Local Descriptor Learning. AAAI 2023. (Oral, CCF-A)",
+    "DeeProphet: Improving HTTP Adaptive Streaming for Low Latency Live Video by Meticulous Bandwidth Prediction. WWW 2023. (CCF-A)"
+  ],
+  "research_directions": [
+    "智能无人系统(视觉定位)、互联网体系结构、边缘计算、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangwufan/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

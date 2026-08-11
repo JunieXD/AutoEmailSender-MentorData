@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0006208de7ec8f93ad5a"
+      ],
+      "ended_at": null,
+      "id": "aff_b7f2a0d831e7796f3abe",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_71f05b46835191d2b4b6",
+      "source_url": "https://teacher.bupt.edu.cn/fangwei",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0006208de7ec8f93ad5a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b7f2a0d831e7796f3abe",
+      "claim_ids": [
+        "claim_0006208de7ec8f93ad5a"
+      ],
+      "is_primary": true,
+      "normalized_value": "fang_wei@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/fangwei",
+      "status": "current",
+      "type": "email",
+      "value": "fang_wei@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0006208de7ec8f93ad5a"
+    ],
+    "email": [
+      "claim_0006208de7ec8f93ad5a"
+    ],
+    "name": [
+      "claim_0006208de7ec8f93ad5a"
+    ],
+    "profile_url": [
+      "claim_0006208de7ec8f93ad5a"
+    ],
+    "research_directions": [
+      "claim_0006208de7ec8f93ad5a"
+    ],
+    "status": [
+      "claim_0006208de7ec8f93ad5a"
+    ],
+    "title": [
+      "claim_0006208de7ec8f93ad5a"
+    ]
+  },
+  "id": "mentor_71640d7d34abb1db8f3a",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0006208de7ec8f93ad5a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "方维"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b7f2a0d831e7796f3abe",
+      "claim_ids": [
+        "claim_0006208de7ec8f93ad5a"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/fangwei"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "物联网安全技术、物联网服务计算、云计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/fangwei",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1a2827132035b9b8ba70"
+      ],
+      "ended_at": null,
+      "id": "aff_0c463e2aff78acfac26c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zbo/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1a2827132035b9b8ba70"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0c463e2aff78acfac26c",
+      "claim_ids": [
+        "claim_1a2827132035b9b8ba70"
+      ],
+      "is_primary": true,
+      "normalized_value": "zbo@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zbo/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zbo@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1a2827132035b9b8ba70"
+    ],
+    "email": [
+      "claim_1a2827132035b9b8ba70"
+    ],
+    "name": [
+      "claim_1a2827132035b9b8ba70"
+    ],
+    "profile_url": [
+      "claim_1a2827132035b9b8ba70"
+    ],
+    "recent_papers": [
+      "claim_1a2827132035b9b8ba70"
+    ],
+    "research_directions": [
+      "claim_1a2827132035b9b8ba70"
+    ],
+    "status": [
+      "claim_1a2827132035b9b8ba70"
+    ],
+    "title": [
+      "claim_1a2827132035b9b8ba70"
+    ]
+  },
+  "id": "mentor_4bd031fd8d86adb2f101",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1a2827132035b9b8ba70"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0c463e2aff78acfac26c",
+      "claim_ids": [
+        "claim_1a2827132035b9b8ba70"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zbo/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zheng Zhang,Bo Zhang, et. al. SLIP: Structural Learning via Implicit-to-Explicit Alignment Paradigm for Semi-Supervised Medical Image Segmentation.ACM MM2026.(CCF-A)",
+    "Bo Zhang, Xinan Xu,et. al. Contrastive Cross-Bag Augmentation for Multiple Instance Learning-based Whole Slide Image Classification. CVPR 2026. (CCF-A)",
+    "Chenzhi Zhao,Bo Zhang, et. al. Learning to LEAP: Efficient Dense Point Tracking by Focusing Where It Matters.AAAI2026.(CCF-A)",
+    "Zheng Zhang, Bo Zhang, et. al. A Semantic Knowledge Complementarity based Decoupling Framework for Semi-supervised Class-imbalanced Medical Image Segmentation. CVPR 2025. (CCF-A)",
+    "Xiaohang Zhang, Bo Zhang, et. al. AIGC-Enhanced UAV-Based 3D Mapping and Trajectory Planning for Rapid Disaster Response. ACM MM 2025. (CCF-A)",
+    "Zheng Zhang,Bo Zhang, et. al. MM-MoE: A Disease-oriented Multi-Task and Multi-View Framework for Generalized Cardiac Segmentation.ACM TOMM2025.",
+    "Yu Bai, Bo Zhang, et. al. Norma: A Noise Robust Memory-Augmented Framework for Whole Slide Image Classification. ECCV 2024.",
+    "Zibo Ma, Bo Zhang, et. al. ADDG: An Adaptive Domain Generalization Framework for Cross-Plane MRI Segmentation. ACM MM 2024.(CCF-A)"
+  ],
+  "research_directions": [
+    "计算机视觉与大模型应用(智慧医疗、运动分析)、物联网(低空)、人工智能、计算机视觉、智慧医疗、运动分析、物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zbo/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

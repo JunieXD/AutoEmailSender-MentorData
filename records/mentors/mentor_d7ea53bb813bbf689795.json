@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e7eeacffa6e8c97df9be"
+      ],
+      "ended_at": null,
+      "id": "aff_7f0f6799bf341644ec79",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yuyanhua",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e7eeacffa6e8c97df9be"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7f0f6799bf341644ec79",
+      "claim_ids": [
+        "claim_e7eeacffa6e8c97df9be"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuyanhua@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yuyanhua",
+      "status": "current",
+      "type": "email",
+      "value": "yuyanhua@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e7eeacffa6e8c97df9be"
+    ],
+    "email": [
+      "claim_e7eeacffa6e8c97df9be"
+    ],
+    "name": [
+      "claim_e7eeacffa6e8c97df9be"
+    ],
+    "profile_url": [
+      "claim_e7eeacffa6e8c97df9be"
+    ],
+    "recent_papers": [
+      "claim_e7eeacffa6e8c97df9be"
+    ],
+    "research_directions": [
+      "claim_e7eeacffa6e8c97df9be"
+    ],
+    "status": [
+      "claim_e7eeacffa6e8c97df9be"
+    ],
+    "title": [
+      "claim_e7eeacffa6e8c97df9be"
+    ]
+  },
+  "id": "mentor_d7ea53bb813bbf689795",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e7eeacffa6e8c97df9be"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于艳华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7f0f6799bf341644ec79",
+      "claim_ids": [
+        "claim_e7eeacffa6e8c97df9be"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yuyanhua"
+    }
+  ],
+  "recent_papers": [
+    "《基于强化学习的知识图谱综述》",
+    "LightRAG"
+  ],
+  "research_directions": [
+    "大数据、数据挖掘、机器学习、深度学习、NLP、知识图谱、多模态"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yuyanhua",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

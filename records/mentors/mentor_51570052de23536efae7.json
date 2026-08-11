@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0f5cbce165acbdf67ccd"
+      ],
+      "ended_at": null,
+      "id": "aff_1c7017a2062af1b248fe",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhouzan1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0f5cbce165acbdf67ccd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1c7017a2062af1b248fe",
+      "claim_ids": [
+        "claim_0f5cbce165acbdf67ccd"
+      ],
+      "is_primary": true,
+      "normalized_value": "zan.zhou@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhouzan1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zan.zhou@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0f5cbce165acbdf67ccd"
+    ],
+    "email": [
+      "claim_0f5cbce165acbdf67ccd"
+    ],
+    "name": [
+      "claim_0f5cbce165acbdf67ccd"
+    ],
+    "profile_url": [
+      "claim_0f5cbce165acbdf67ccd"
+    ],
+    "research_directions": [
+      "claim_0f5cbce165acbdf67ccd"
+    ],
+    "status": [
+      "claim_0f5cbce165acbdf67ccd"
+    ],
+    "title": [
+      "claim_0f5cbce165acbdf67ccd"
+    ]
+  },
+  "id": "mentor_51570052de23536efae7",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0f5cbce165acbdf67ccd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周赞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1c7017a2062af1b248fe",
+      "claim_ids": [
+        "claim_0f5cbce165acbdf67ccd"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhouzan1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络安全、AI安全与隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhouzan1/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

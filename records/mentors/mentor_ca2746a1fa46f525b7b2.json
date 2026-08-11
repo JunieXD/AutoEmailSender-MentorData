@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8b50802e254a2dedf6f"
+      ],
+      "ended_at": null,
+      "id": "aff_31d6549cc46e1938927a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_836033ed02e2b0de913d",
+      "source_url": "https://teacher.bupt.edu.cn/zhaodong",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f8b50802e254a2dedf6f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_31d6549cc46e1938927a",
+      "claim_ids": [
+        "claim_f8b50802e254a2dedf6f"
+      ],
+      "is_primary": true,
+      "normalized_value": "dzhao@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhaodong",
+      "status": "current",
+      "type": "email",
+      "value": "dzhao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8b50802e254a2dedf6f"
+    ],
+    "email": [
+      "claim_f8b50802e254a2dedf6f"
+    ],
+    "name": [
+      "claim_f8b50802e254a2dedf6f"
+    ],
+    "profile_url": [
+      "claim_f8b50802e254a2dedf6f"
+    ],
+    "research_directions": [
+      "claim_f8b50802e254a2dedf6f"
+    ],
+    "status": [
+      "claim_f8b50802e254a2dedf6f"
+    ],
+    "title": [
+      "claim_f8b50802e254a2dedf6f"
+    ]
+  },
+  "id": "mentor_ca2746a1fa46f525b7b2",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8b50802e254a2dedf6f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_31d6549cc46e1938927a",
+      "claim_ids": [
+        "claim_f8b50802e254a2dedf6f"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhaodong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "群智感知计算、边缘智能、多模态融合感知、城市计算、多媒体系统与网络等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhaodong",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

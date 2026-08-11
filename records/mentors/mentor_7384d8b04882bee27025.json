@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f69952125417d61d47de"
+      ],
+      "ended_at": null,
+      "id": "aff_3ad8b275573fab039b00",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yangtan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f69952125417d61d47de"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3ad8b275573fab039b00",
+      "claim_ids": [
+        "claim_f69952125417d61d47de"
+      ],
+      "is_primary": true,
+      "normalized_value": "tyang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangtan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tyang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f69952125417d61d47de"
+    ],
+    "email": [
+      "claim_f69952125417d61d47de"
+    ],
+    "name": [
+      "claim_f69952125417d61d47de"
+    ],
+    "profile_url": [
+      "claim_f69952125417d61d47de"
+    ],
+    "status": [
+      "claim_f69952125417d61d47de"
+    ],
+    "title": [
+      "claim_f69952125417d61d47de"
+    ]
+  },
+  "id": "mentor_7384d8b04882bee27025",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f69952125417d61d47de"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨谈"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3ad8b275573fab039b00",
+      "claim_ids": [
+        "claim_f69952125417d61d47de"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangtan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangtan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

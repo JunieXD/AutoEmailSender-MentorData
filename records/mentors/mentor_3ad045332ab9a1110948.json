@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_27d88e35ec196786d37d"
+      ],
+      "ended_at": null,
+      "id": "aff_6c9edb15bed4c66a7c87",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_14390f1744cea6ce4ad9",
+      "source_url": "https://teacher.bupt.edu.cn/lumeilian",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_27d88e35ec196786d37d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6c9edb15bed4c66a7c87",
+      "claim_ids": [
+        "claim_27d88e35ec196786d37d"
+      ],
+      "is_primary": true,
+      "normalized_value": "mllu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/lumeilian",
+      "status": "current",
+      "type": "email",
+      "value": "mllu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_27d88e35ec196786d37d"
+    ],
+    "email": [
+      "claim_27d88e35ec196786d37d"
+    ],
+    "name": [
+      "claim_27d88e35ec196786d37d"
+    ],
+    "profile_url": [
+      "claim_27d88e35ec196786d37d"
+    ],
+    "status": [
+      "claim_27d88e35ec196786d37d"
+    ],
+    "title": [
+      "claim_27d88e35ec196786d37d"
+    ]
+  },
+  "id": "mentor_3ad045332ab9a1110948",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_27d88e35ec196786d37d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "卢美莲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6c9edb15bed4c66a7c87",
+      "claim_ids": [
+        "claim_27d88e35ec196786d37d"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/lumeilian"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/lumeilian",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

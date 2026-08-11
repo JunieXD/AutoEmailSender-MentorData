@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ec1f85eb0aa1be28a882"
+      ],
+      "ended_at": null,
+      "id": "aff_5e3f3dcc0780d81060b5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_8b4d9a42a5ae9c04b1a3",
+      "source_url": "https://teacher.bupt.edu.cn/chengbo",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ec1f85eb0aa1be28a882"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5e3f3dcc0780d81060b5",
+      "claim_ids": [
+        "claim_ec1f85eb0aa1be28a882"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengbo@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/chengbo",
+      "status": "current",
+      "type": "email",
+      "value": "chengbo@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ec1f85eb0aa1be28a882"
+    ],
+    "email": [
+      "claim_ec1f85eb0aa1be28a882"
+    ],
+    "name": [
+      "claim_ec1f85eb0aa1be28a882"
+    ],
+    "profile_url": [
+      "claim_ec1f85eb0aa1be28a882"
+    ],
+    "research_directions": [
+      "claim_ec1f85eb0aa1be28a882"
+    ],
+    "status": [
+      "claim_ec1f85eb0aa1be28a882"
+    ],
+    "title": [
+      "claim_ec1f85eb0aa1be28a882"
+    ]
+  },
+  "id": "mentor_3c0b89f85bf61b60b0fa",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ec1f85eb0aa1be28a882"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程渤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5e3f3dcc0780d81060b5",
+      "claim_ids": [
+        "claim_ec1f85eb0aa1be28a882"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/chengbo"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、计算机视觉、多模态大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/chengbo",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

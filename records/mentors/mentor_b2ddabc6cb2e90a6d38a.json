@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_27405d4390177e344e52"
+      ],
+      "ended_at": null,
+      "id": "aff_151b8170beb53b9a49d2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangli",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_27405d4390177e344e52"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_151b8170beb53b9a49d2",
+      "claim_ids": [
+        "claim_27405d4390177e344e52"
+      ],
+      "is_primary": true,
+      "normalized_value": "liwang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangli",
+      "status": "current",
+      "type": "email",
+      "value": "liwang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_27405d4390177e344e52"
+    ],
+    "email": [
+      "claim_27405d4390177e344e52"
+    ],
+    "name": [
+      "claim_27405d4390177e344e52"
+    ],
+    "profile_url": [
+      "claim_27405d4390177e344e52"
+    ],
+    "research_directions": [
+      "claim_27405d4390177e344e52"
+    ],
+    "status": [
+      "claim_27405d4390177e344e52"
+    ],
+    "title": [
+      "claim_27405d4390177e344e52"
+    ]
+  },
+  "id": "mentor_b2ddabc6cb2e90a6d38a",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_27405d4390177e344e52"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王莉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_151b8170beb53b9a49d2",
+      "claim_ids": [
+        "claim_27405d4390177e344e52"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangli"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "应急指挥通信、低空智联网、能源互联网、边缘智能、5G智能车联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangli",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

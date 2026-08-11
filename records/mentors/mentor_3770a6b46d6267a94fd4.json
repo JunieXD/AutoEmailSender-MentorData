@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_185a383b6982b8ce44c5"
+      ],
+      "ended_at": null,
+      "id": "aff_203376f8cef00729ee02",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/tianye",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_185a383b6982b8ce44c5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_203376f8cef00729ee02",
+      "claim_ids": [
+        "claim_185a383b6982b8ce44c5"
+      ],
+      "is_primary": true,
+      "normalized_value": "yetian@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/tianye",
+      "status": "current",
+      "type": "email",
+      "value": "yetian@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_185a383b6982b8ce44c5"
+    ],
+    "email": [
+      "claim_185a383b6982b8ce44c5"
+    ],
+    "name": [
+      "claim_185a383b6982b8ce44c5"
+    ],
+    "profile_url": [
+      "claim_185a383b6982b8ce44c5"
+    ],
+    "research_directions": [
+      "claim_185a383b6982b8ce44c5"
+    ],
+    "status": [
+      "claim_185a383b6982b8ce44c5"
+    ],
+    "title": [
+      "claim_185a383b6982b8ce44c5"
+    ]
+  },
+  "id": "mentor_3770a6b46d6267a94fd4",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_185a383b6982b8ce44c5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田野"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_203376f8cef00729ee02",
+      "claim_ids": [
+        "claim_185a383b6982b8ce44c5"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/tianye"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "知识发现、网络体系结构、新型互联网体系结构、视频内容理解、社会化传播、未来互联网体系结构和关键机制、网络及业务的服务质量控制与管理技术、机器学习理论在网络体系架构和资源管理方面的应用研究、社会化媒体内容及传播行为分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/tianye",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

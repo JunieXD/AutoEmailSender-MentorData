@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_379d0c8ead57df7ed64e"
+      ],
+      "ended_at": null,
+      "id": "aff_d83fc791453b3063cea1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yuanyanni",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_379d0c8ead57df7ed64e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d83fc791453b3063cea1",
+      "claim_ids": [
+        "claim_379d0c8ead57df7ed64e"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanyanni@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yuanyanni",
+      "status": "current",
+      "type": "email",
+      "value": "yuanyanni@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_379d0c8ead57df7ed64e"
+    ],
+    "email": [
+      "claim_379d0c8ead57df7ed64e"
+    ],
+    "name": [
+      "claim_379d0c8ead57df7ed64e"
+    ],
+    "profile_url": [
+      "claim_379d0c8ead57df7ed64e"
+    ],
+    "research_directions": [
+      "claim_379d0c8ead57df7ed64e"
+    ],
+    "status": [
+      "claim_379d0c8ead57df7ed64e"
+    ],
+    "title": [
+      "claim_379d0c8ead57df7ed64e"
+    ]
+  },
+  "id": "mentor_11a062c1c762cdb8e51d",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_379d0c8ead57df7ed64e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁燕妮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d83fc791453b3063cea1",
+      "claim_ids": [
+        "claim_379d0c8ead57df7ed64e"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yuanyanni"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据科学与大数据技术、智能信息处理与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yuanyanni",
+  "title": "讲师",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

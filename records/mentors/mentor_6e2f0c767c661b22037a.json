@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a556b9cbd8f49b8d0c18"
+      ],
+      "ended_at": null,
+      "id": "aff_ae3e3f24006219a02884",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangmu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_a556b9cbd8f49b8d0c18"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ae3e3f24006219a02884",
+      "claim_ids": [
+        "claim_a556b9cbd8f49b8d0c18"
+      ],
+      "is_primary": true,
+      "normalized_value": "muwang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangmu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "muwang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a556b9cbd8f49b8d0c18"
+    ],
+    "email": [
+      "claim_a556b9cbd8f49b8d0c18"
+    ],
+    "name": [
+      "claim_a556b9cbd8f49b8d0c18"
+    ],
+    "profile_url": [
+      "claim_a556b9cbd8f49b8d0c18"
+    ],
+    "recent_papers": [
+      "claim_a556b9cbd8f49b8d0c18"
+    ],
+    "research_directions": [
+      "claim_a556b9cbd8f49b8d0c18"
+    ],
+    "status": [
+      "claim_a556b9cbd8f49b8d0c18"
+    ]
+  },
+  "id": "mentor_6e2f0c767c661b22037a",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a556b9cbd8f49b8d0c18"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王目"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ae3e3f24006219a02884",
+      "claim_ids": [
+        "claim_a556b9cbd8f49b8d0c18"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangmu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Multi-Agent Reinforcement Learning for Task Offloading in Crowd-Edge Computing",
+    "CoLive: Edge-Assisted Clustered Learning Framework for Viewport Prediction in 360° Live Streaming",
+    "Blockchain-Empowered Collaborative Task Offloading for Cloud-Edge-Device Computing",
+    "LEOEdge: A Satellite-Ground Cooperation Platform for the AI Inference in Large LEO Constellation",
+    "Towards Optimal Customized Architecture for Heterogeneous Federated Learning with Contrastive Cloud-Edge Model Decoupling"
+  ],
+  "research_directions": [
+    "未来互联网传输机制、算网融合、边缘计算、多媒体通信、网络大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangmu/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

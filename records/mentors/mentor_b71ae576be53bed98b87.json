@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_20daae831c20aba627f2"
+      ],
+      "ended_at": null,
+      "id": "aff_4d4d47d182353be840ec",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/ouzhonghong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_20daae831c20aba627f2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4d4d47d182353be840ec",
+      "claim_ids": [
+        "claim_20daae831c20aba627f2"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhonghong.ou@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/ouzhonghong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhonghong.ou@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_20daae831c20aba627f2"
+    ],
+    "email": [
+      "claim_20daae831c20aba627f2"
+    ],
+    "name": [
+      "claim_20daae831c20aba627f2"
+    ],
+    "profile_url": [
+      "claim_20daae831c20aba627f2"
+    ],
+    "research_directions": [
+      "claim_20daae831c20aba627f2"
+    ],
+    "status": [
+      "claim_20daae831c20aba627f2"
+    ],
+    "title": [
+      "claim_20daae831c20aba627f2"
+    ]
+  },
+  "id": "mentor_b71ae576be53bed98b87",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_20daae831c20aba627f2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "欧中洪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4d4d47d182353be840ec",
+      "claim_ids": [
+        "claim_20daae831c20aba627f2"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/ouzhonghong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "深度学习、计算机视觉、目标检测、医疗人工智能、大数据分析、小样本学习、跨域自适应、小目标检测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/ouzhonghong/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

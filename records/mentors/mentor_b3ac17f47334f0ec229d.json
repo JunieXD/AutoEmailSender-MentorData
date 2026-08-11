@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8bf4f7186bb5bc73154"
+      ],
+      "ended_at": null,
+      "id": "aff_e724d61ed6b403452b15",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_14390f1744cea6ce4ad9",
+      "source_url": "https://teacher.bupt.edu.cn/hubo",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f8bf4f7186bb5bc73154"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e724d61ed6b403452b15",
+      "claim_ids": [
+        "claim_f8bf4f7186bb5bc73154"
+      ],
+      "is_primary": true,
+      "normalized_value": "hubo@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/hubo",
+      "status": "current",
+      "type": "email",
+      "value": "hubo@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8bf4f7186bb5bc73154"
+    ],
+    "email": [
+      "claim_f8bf4f7186bb5bc73154"
+    ],
+    "name": [
+      "claim_f8bf4f7186bb5bc73154"
+    ],
+    "profile_url": [
+      "claim_f8bf4f7186bb5bc73154"
+    ],
+    "recent_papers": [
+      "claim_f8bf4f7186bb5bc73154"
+    ],
+    "research_directions": [
+      "claim_f8bf4f7186bb5bc73154"
+    ],
+    "status": [
+      "claim_f8bf4f7186bb5bc73154"
+    ],
+    "title": [
+      "claim_f8bf4f7186bb5bc73154"
+    ]
+  },
+  "id": "mentor_b3ac17f47334f0ec229d",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8bf4f7186bb5bc73154"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e724d61ed6b403452b15",
+      "claim_ids": [
+        "claim_f8bf4f7186bb5bc73154"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/hubo"
+    }
+  ],
+  "recent_papers": [
+    "SatelliteLLM: Bridging Large Language Models and Satellite-Terrestrial Integrated Networks Using Semantic Alignment and Knowledge-Guided Reinforcement Learning",
+    "Graph World Model for Energy-Efficient Hybrid Beamforming in LEO Satellite Networks",
+    "World Model for Autonomous Information Freshness in Sparse-Reward Mobile Edge Networks",
+    "Twin Adaptive Distributional Reinforcement Learning for Robust Handover Control in LEO Satellite Networks",
+    "Dynamic Beam Pattern Based on Cooperation Multi-Agent VDN-D3QN for LEO Satellite Communication System",
+    "An Uplink Throughput Optimization Scheme for UAV-Enabled Urban Emergency Communications",
+    "Energy Efficient Placement of a Drone Base Station for Minimum Required Transmit Power",
+    "User-Centric Access Network (UCAN) for 6G: Motivation, Concept, Challenges and Key Technologies"
+  ],
+  "research_directions": [
+    "宽带无线移动通信系统、B5G/6G星地融合网络、低空智联网、网络人工智能、智能体通信、泛在移动计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/hubo",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

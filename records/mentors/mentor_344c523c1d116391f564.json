@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_66a2e35a8e13eb81ae25"
+      ],
+      "ended_at": null,
+      "id": "aff_70fa8efac4fe0e15b7a8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_71f05b46835191d2b4b6",
+      "source_url": "https://teacher.bupt.edu.cn/jianghai/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_66a2e35a8e13eb81ae25"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_70fa8efac4fe0e15b7a8",
+      "claim_ids": [
+        "claim_66a2e35a8e13eb81ae25"
+      ],
+      "is_primary": true,
+      "normalized_value": "hai.jiang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/jianghai/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hai.jiang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_66a2e35a8e13eb81ae25"
+    ],
+    "email": [
+      "claim_66a2e35a8e13eb81ae25"
+    ],
+    "name": [
+      "claim_66a2e35a8e13eb81ae25"
+    ],
+    "profile_url": [
+      "claim_66a2e35a8e13eb81ae25"
+    ],
+    "research_directions": [
+      "claim_66a2e35a8e13eb81ae25"
+    ],
+    "status": [
+      "claim_66a2e35a8e13eb81ae25"
+    ]
+  },
+  "id": "mentor_344c523c1d116391f564",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_66a2e35a8e13eb81ae25"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_70fa8efac4fe0e15b7a8",
+      "claim_ids": [
+        "claim_66a2e35a8e13eb81ae25"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/jianghai/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高性能计算、并行计算、异构计算、云计算、量子计算、分布式系统、大数据处理、网络空间安全、编译系统、系统安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/jianghai/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

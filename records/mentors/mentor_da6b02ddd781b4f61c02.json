@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fde064b7c8403dba0f8e"
+      ],
+      "ended_at": null,
+      "id": "aff_505bc70f723bd2ca9209",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/xiongyongping",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fde064b7c8403dba0f8e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_505bc70f723bd2ca9209",
+      "claim_ids": [
+        "claim_fde064b7c8403dba0f8e"
+      ],
+      "is_primary": true,
+      "normalized_value": "ypxiong@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/xiongyongping",
+      "status": "current",
+      "type": "email",
+      "value": "ypxiong@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fde064b7c8403dba0f8e"
+    ],
+    "email": [
+      "claim_fde064b7c8403dba0f8e"
+    ],
+    "name": [
+      "claim_fde064b7c8403dba0f8e"
+    ],
+    "profile_url": [
+      "claim_fde064b7c8403dba0f8e"
+    ],
+    "research_directions": [
+      "claim_fde064b7c8403dba0f8e"
+    ],
+    "status": [
+      "claim_fde064b7c8403dba0f8e"
+    ],
+    "title": [
+      "claim_fde064b7c8403dba0f8e"
+    ]
+  },
+  "id": "mentor_da6b02ddd781b4f61c02",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fde064b7c8403dba0f8e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "熊永平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_505bc70f723bd2ca9209",
+      "claim_ids": [
+        "claim_fde064b7c8403dba0f8e"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xiongyongping"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "物理规律与空间智能技术结合、光场AIGC、多模态大模型、文档智能、多模态空间感知、物理驱动场景仿真、多智能体决策控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xiongyongping",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

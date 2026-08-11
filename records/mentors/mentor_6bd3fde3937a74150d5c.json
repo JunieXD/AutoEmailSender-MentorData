@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_79db34f55ba57c8a2c9b"
+      ],
+      "ended_at": null,
+      "id": "aff_6ca3bc07d314ffafc7ae",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_637aa74af73e0513e663",
+      "source_url": "https://teacher.bupt.edu.cn/huangyakun1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_79db34f55ba57c8a2c9b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6ca3bc07d314ffafc7ae",
+      "claim_ids": [
+        "claim_79db34f55ba57c8a2c9b"
+      ],
+      "is_primary": true,
+      "normalized_value": "ykhuang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/huangyakun1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ykhuang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_79db34f55ba57c8a2c9b"
+    ],
+    "email": [
+      "claim_79db34f55ba57c8a2c9b"
+    ],
+    "name": [
+      "claim_79db34f55ba57c8a2c9b"
+    ],
+    "profile_url": [
+      "claim_79db34f55ba57c8a2c9b"
+    ],
+    "recent_papers": [
+      "claim_79db34f55ba57c8a2c9b"
+    ],
+    "research_directions": [
+      "claim_79db34f55ba57c8a2c9b"
+    ],
+    "status": [
+      "claim_79db34f55ba57c8a2c9b"
+    ],
+    "title": [
+      "claim_79db34f55ba57c8a2c9b"
+    ]
+  },
+  "id": "mentor_6bd3fde3937a74150d5c",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_79db34f55ba57c8a2c9b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄亚坤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6ca3bc07d314ffafc7ae",
+      "claim_ids": [
+        "claim_79db34f55ba57c8a2c9b"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/huangyakun1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "PD2GS: Part-Level Decoupling and Continuous Deformation of Articulated Objects via Gaussian Splatting",
+    "PortaCap: Portable Volumetric Video Capturing System for Metaverse Interaction",
+    "Intent-Driven Cognitive XR Networks: Multi-Agent Orchestration for Immersive Communication",
+    "Webarnav: Mobile web ar indoor navigation with edge-assisted vision localization",
+    "Fpselector: A flexible path selector for mobile augmented reality offloading",
+    "HiVAT: Improving QoE for hybrid video streaming service with adaptive transcoding",
+    "ISCom: Interest-aware semantic communication scheme for point cloud video streaming on metaverse XR devices",
+    "AoDNN: An auto-offloading approach to optimize deep inference for fostering mobile web"
+  ],
+  "research_directions": [
+    "沉浸式通信、体积视频通信、3D多媒体传输、分布式深度学习、云渲染和智能AR/VR服务"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/huangyakun1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

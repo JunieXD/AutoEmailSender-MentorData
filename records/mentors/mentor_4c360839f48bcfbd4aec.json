@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_33f74f79dfbc98a8b9c7"
+      ],
+      "ended_at": null,
+      "id": "aff_301b4382dd63edc00d42",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_ecf5dd0538de86b4a143",
+      "source_url": "https://teacher.bupt.edu.cn/renpengfei1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_33f74f79dfbc98a8b9c7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_301b4382dd63edc00d42",
+      "claim_ids": [
+        "claim_33f74f79dfbc98a8b9c7"
+      ],
+      "is_primary": true,
+      "normalized_value": "rpf@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/renpengfei1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "rpf@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ],
+    "email": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ],
+    "name": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ],
+    "profile_url": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ],
+    "recent_papers": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ],
+    "research_directions": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ],
+    "status": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ],
+    "title": [
+      "claim_33f74f79dfbc98a8b9c7"
+    ]
+  },
+  "id": "mentor_4c360839f48bcfbd4aec",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_33f74f79dfbc98a8b9c7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任鹏飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_301b4382dd63edc00d42",
+      "claim_ids": [
+        "claim_33f74f79dfbc98a8b9c7"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/renpengfei1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "MGDHand: Multi-Granularity Prior-to-Inertial Distillation Framework for Sequential 3D Hand Pose Estimation from Sparse IMUs. In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026.",
+    "A Temporal and Content Co-Awareness Latent Diffusion for Controllable Hand Image Generation. In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026.",
+    "UST-Hand: An Uncertainty-aware Spatiotemporal Point Cloud Interaction Network for 3D Self-supervised Hand Pose Estimation. In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026.",
+    "Clay-to-Stone: Phase-wise 3D Gaussian Splatting for Monocular Articulated Hand-Object Manipulation Modeling. In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026.",
+    "OMG-Bench: A New Challenging Benchmark for Skeleton-based Online Micro Hand Gesture Recognition. In IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026.",
+    "Prior-aware Dynamic Temporal Modeling Framework for Sequential 3D Hand Pose Estimation. In International Conference on Computer Vision (ICCV), 2025.",
+    "A3-Net: Calibration-Free Multi-View 3D Hand Reconstruction for Enhanced Musical Instrument Learning. In the 34th International Joint Conference on Artificial Intelligence(IJCAI), 2025.",
+    "Unified 2D-3D Discrete Priors for Noise-Robust and Calibration-Free Multiview 3D Human Pose Estimation. In Neural Information Processing Systems (NIPS), 2025."
+  ],
+  "research_directions": [
+    "三维视觉-人体/手部姿态三维重建、具身智能-具身数据采集/灵巧手控制、人机交互-人体/手势交互、生成模型-高保真人体/手部数据生成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/renpengfei1/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

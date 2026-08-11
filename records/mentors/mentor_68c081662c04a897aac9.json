@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_71cdd1d051cc62637c36"
+      ],
+      "ended_at": null,
+      "id": "aff_762b1d35d8b2d71bbccc",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/maxiao1",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_71cdd1d051cc62637c36"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_762b1d35d8b2d71bbccc",
+      "claim_ids": [
+        "claim_71cdd1d051cc62637c36"
+      ],
+      "is_primary": true,
+      "normalized_value": "maxiao18@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/maxiao1",
+      "status": "current",
+      "type": "email",
+      "value": "maxiao18@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_71cdd1d051cc62637c36"
+    ],
+    "email": [
+      "claim_71cdd1d051cc62637c36"
+    ],
+    "name": [
+      "claim_71cdd1d051cc62637c36"
+    ],
+    "profile_url": [
+      "claim_71cdd1d051cc62637c36"
+    ],
+    "research_directions": [
+      "claim_71cdd1d051cc62637c36"
+    ],
+    "status": [
+      "claim_71cdd1d051cc62637c36"
+    ],
+    "title": [
+      "claim_71cdd1d051cc62637c36"
+    ]
+  },
+  "id": "mentor_68c081662c04a897aac9",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_71cdd1d051cc62637c36"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马骁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_762b1d35d8b2d71bbccc",
+      "claim_ids": [
+        "claim_71cdd1d051cc62637c36"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/maxiao1"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "边缘计算/卫星计算、5G/6G核心网、核心网高稳感知大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/maxiao1",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

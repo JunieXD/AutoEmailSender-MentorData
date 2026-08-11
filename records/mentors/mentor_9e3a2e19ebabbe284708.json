@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_810e873d6ee6a103bc3c"
+      ],
+      "ended_at": null,
+      "id": "aff_11012d76e63d1a461146",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhanghaibin",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_810e873d6ee6a103bc3c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_11012d76e63d1a461146",
+      "claim_ids": [
+        "claim_810e873d6ee6a103bc3c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanghb@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhanghaibin",
+      "status": "current",
+      "type": "email",
+      "value": "zhanghb@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_810e873d6ee6a103bc3c"
+    ],
+    "email": [
+      "claim_810e873d6ee6a103bc3c"
+    ],
+    "name": [
+      "claim_810e873d6ee6a103bc3c"
+    ],
+    "profile_url": [
+      "claim_810e873d6ee6a103bc3c"
+    ],
+    "status": [
+      "claim_810e873d6ee6a103bc3c"
+    ]
+  },
+  "id": "mentor_9e3a2e19ebabbe284708",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_810e873d6ee6a103bc3c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张海滨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_11012d76e63d1a461146",
+      "claim_ids": [
+        "claim_810e873d6ee6a103bc3c"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhanghaibin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhanghaibin",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

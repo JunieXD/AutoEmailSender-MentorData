@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8fcc42d7c6a6e6576c4f"
+      ],
+      "ended_at": null,
+      "id": "aff_f9f242ffcea4f6ce5095",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/duxiaoting/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_8fcc42d7c6a6e6576c4f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f9f242ffcea4f6ce5095",
+      "claim_ids": [
+        "claim_8fcc42d7c6a6e6576c4f"
+      ],
+      "is_primary": true,
+      "normalized_value": "duxiaoting@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/duxiaoting/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "duxiaoting@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8fcc42d7c6a6e6576c4f"
+    ],
+    "email": [
+      "claim_8fcc42d7c6a6e6576c4f"
+    ],
+    "name": [
+      "claim_8fcc42d7c6a6e6576c4f"
+    ],
+    "profile_url": [
+      "claim_8fcc42d7c6a6e6576c4f"
+    ],
+    "research_directions": [
+      "claim_8fcc42d7c6a6e6576c4f"
+    ],
+    "status": [
+      "claim_8fcc42d7c6a6e6576c4f"
+    ],
+    "title": [
+      "claim_8fcc42d7c6a6e6576c4f"
+    ]
+  },
+  "id": "mentor_7d82a1910318623c1240",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8fcc42d7c6a6e6576c4f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜晓婷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f9f242ffcea4f6ce5095",
+      "claim_ids": [
+        "claim_8fcc42d7c6a6e6576c4f"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/duxiaoting/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大模型可信性评估、可信智能软件、智能软件测试"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/duxiaoting/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

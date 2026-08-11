@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_81fce2d840200c15b4e0"
+      ],
+      "ended_at": null,
+      "id": "aff_cf7a46452a24fe2d8e19",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhangzhongbao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_81fce2d840200c15b4e0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf7a46452a24fe2d8e19",
+      "claim_ids": [
+        "claim_81fce2d840200c15b4e0"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhongbaozb@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhangzhongbao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhongbaozb@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_81fce2d840200c15b4e0"
+    ],
+    "email": [
+      "claim_81fce2d840200c15b4e0"
+    ],
+    "name": [
+      "claim_81fce2d840200c15b4e0"
+    ],
+    "profile_url": [
+      "claim_81fce2d840200c15b4e0"
+    ],
+    "research_directions": [
+      "claim_81fce2d840200c15b4e0"
+    ],
+    "status": [
+      "claim_81fce2d840200c15b4e0"
+    ],
+    "title": [
+      "claim_81fce2d840200c15b4e0"
+    ]
+  },
+  "id": "mentor_a1dcdd1ed917394200e9",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_81fce2d840200c15b4e0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张忠宝"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf7a46452a24fe2d8e19",
+      "claim_ids": [
+        "claim_81fce2d840200c15b4e0"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhangzhongbao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "内容安全、社交计算、大数据分析、自然语言处理、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhangzhongbao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

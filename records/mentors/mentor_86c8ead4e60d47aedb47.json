@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6f24c6c1f73860b00c7"
+      ],
+      "ended_at": null,
+      "id": "aff_c8aba298e68669897b64",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/liangmeiyu",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6f24c6c1f73860b00c7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c8aba298e68669897b64",
+      "claim_ids": [
+        "claim_c6f24c6c1f73860b00c7"
+      ],
+      "is_primary": true,
+      "normalized_value": "meiyu1210@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/liangmeiyu",
+      "status": "current",
+      "type": "email",
+      "value": "meiyu1210@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6f24c6c1f73860b00c7"
+    ],
+    "email": [
+      "claim_c6f24c6c1f73860b00c7"
+    ],
+    "name": [
+      "claim_c6f24c6c1f73860b00c7"
+    ],
+    "profile_url": [
+      "claim_c6f24c6c1f73860b00c7"
+    ],
+    "research_directions": [
+      "claim_c6f24c6c1f73860b00c7"
+    ],
+    "status": [
+      "claim_c6f24c6c1f73860b00c7"
+    ],
+    "title": [
+      "claim_c6f24c6c1f73860b00c7"
+    ]
+  },
+  "id": "mentor_86c8ead4e60d47aedb47",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6f24c6c1f73860b00c7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "梁美玉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c8aba298e68669897b64",
+      "claim_ids": [
+        "claim_c6f24c6c1f73860b00c7"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/liangmeiyu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、机器学习、多模态/跨模态大数据挖掘与检索、多模态知识图谱、多模态大模型、联邦学习与联邦大模型、大数据挖掘、多媒体智能信息处理、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/liangmeiyu",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

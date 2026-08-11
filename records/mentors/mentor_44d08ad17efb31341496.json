@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2653c1cc9e70c57ce0d9"
+      ],
+      "ended_at": null,
+      "id": "aff_9bead36aa24f86c293f3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/shenqiwei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_2653c1cc9e70c57ce0d9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9bead36aa24f86c293f3",
+      "claim_ids": [
+        "claim_2653c1cc9e70c57ce0d9"
+      ],
+      "is_primary": true,
+      "normalized_value": "shenqw@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/shenqiwei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shenqw@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2653c1cc9e70c57ce0d9"
+    ],
+    "email": [
+      "claim_2653c1cc9e70c57ce0d9"
+    ],
+    "name": [
+      "claim_2653c1cc9e70c57ce0d9"
+    ],
+    "profile_url": [
+      "claim_2653c1cc9e70c57ce0d9"
+    ],
+    "research_directions": [
+      "claim_2653c1cc9e70c57ce0d9"
+    ],
+    "status": [
+      "claim_2653c1cc9e70c57ce0d9"
+    ],
+    "title": [
+      "claim_2653c1cc9e70c57ce0d9"
+    ]
+  },
+  "id": "mentor_44d08ad17efb31341496",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2653c1cc9e70c57ce0d9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈奇威"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9bead36aa24f86c293f3",
+      "claim_ids": [
+        "claim_2653c1cc9e70c57ce0d9"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/shenqiwei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络智能、多媒体、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/shenqiwei/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T10:42:41Z"
+}
