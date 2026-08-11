@@ -95,6 +95,8 @@ const state = {
   expandedWorkflowNodeIds: new Set(),
   workflowSearchQuery: "",
   lastCompletionAt: 0,
+  workflowComposingInput: null,
+  reviewUpdateDeferredForInput: false,
 };
 
 const nodes = {
@@ -814,6 +816,55 @@ function createInput(type, placeholder, className) {
   return input;
 }
 
+function workflowTextInputIsActive() {
+  const active = document.activeElement;
+  return Boolean(
+    (state.workflowComposingInput?.isConnected &&
+      nodes.taskStage.contains(state.workflowComposingInput)) ||
+      ((active instanceof HTMLInputElement || active instanceof HTMLTextAreaElement) &&
+        active.dataset.workflowTextInput === "true" &&
+        nodes.taskStage.contains(active)),
+  );
+}
+
+function bindWorkflowTextInput(input, onInput) {
+  // Rebuilding the workbench while this control is focused cancels IME composition
+  // and clears the browser's native undo history. Reconcile the hierarchy on commit.
+  input.dataset.workflowTextInput = "true";
+  input.addEventListener("compositionstart", () => {
+    state.workflowComposingInput = input;
+  });
+  input.addEventListener("compositionend", () => {
+    if (state.workflowComposingInput === input) {
+      state.workflowComposingInput = null;
+    }
+  });
+  input.addEventListener("input", (event) => {
+    input.dataset.workflowTextDirty = "true";
+    onInput(event);
+  });
+  input.addEventListener("change", () => {
+    delete input.dataset.workflowTextDirty;
+    scheduleReviewUpdate();
+  });
+  input.addEventListener("blur", () => {
+    if (state.workflowComposingInput === input) {
+      state.workflowComposingInput = null;
+    }
+    const shouldRefresh =
+      input.dataset.workflowTextDirty === "true" || state.reviewUpdateDeferredForInput;
+    delete input.dataset.workflowTextDirty;
+    if (!shouldRefresh) {
+      return;
+    }
+    window.setTimeout(() => {
+      if (!workflowTextInputIsActive()) {
+        scheduleReviewUpdate();
+      }
+    }, 0);
+  });
+}
+
 function renderInvalidRows() {
   const rows = state.manifest.invalid_rows;
   if (!rows.length) {
@@ -1215,14 +1266,14 @@ function createOrganizationDraftEditor(draft) {
     markOrganizationDraftChanged(draft, true);
   });
   saveAlias.addEventListener("change", () => markOrganizationDraftChanged(draft));
-  canonicalName.addEventListener("input", () => {
+  bindWorkflowTextInput(canonicalName, () => {
     if (!editor.organizationTypeManuallySelected) {
       organizationType.value = inferOrganizationType(draft.level, canonicalName.value);
     }
-    markOrganizationDraftChanged(draft, true);
+    markOrganizationDraftTextChanged(draft, true);
   });
-  officialUrl.addEventListener("input", () => markOrganizationDraftChanged(draft));
-  approvedDomains.addEventListener("input", () => markOrganizationDraftChanged(draft));
+  bindWorkflowTextInput(officialUrl, () => markOrganizationDraftTextChanged(draft));
+  bindWorkflowTextInput(approvedDomains, () => markOrganizationDraftTextChanged(draft));
   restoreUrl.addEventListener("click", () => {
     officialUrl.value = suggestedOfficialUrl(draft);
     markOrganizationDraftChanged(draft);
@@ -1843,7 +1894,7 @@ function createRowEditor(row, card) {
     updateIdentityResolutionState(editor);
     markGroupWorkflowChanged(card);
   });
-  reason.addEventListener("input", () => markGroupWorkflowChanged(card));
+  bindWorkflowTextInput(reason, () => markGroupWorkflowTextChanged(card));
   if (editor.identityPanel) {
     editor.identityAction.addEventListener("change", () => {
       updateIdentityResolutionState(editor);
@@ -1853,7 +1904,7 @@ function createRowEditor(row, card) {
     editor.identityFormerAffiliation.addEventListener("change", () =>
       markGroupWorkflowChanged(card),
     );
-    editor.identityReason.addEventListener("input", () => markGroupWorkflowChanged(card));
+    bindWorkflowTextInput(editor.identityReason, () => markGroupWorkflowTextChanged(card));
   }
   wrapper.append(identity, action, organizationInput, reason);
   if (editor.recordConflictPanel) {
@@ -2138,20 +2189,20 @@ function createIndependentTargetEditor(card) {
     card.targetTypeManuallySelected = true;
     mark();
   });
-  targetCanonicalName.addEventListener("input", () => {
+  bindWorkflowTextInput(targetCanonicalName, () => {
     if (!card.targetTypeManuallySelected) {
       targetOrganizationType.value = MentorReviewLogic.organizationTypeForCorrection(
         "custom",
         targetCanonicalName.value,
       );
     }
-    mark();
+    markGroupWorkflowTextChanged(card);
   });
   targetParentMode.addEventListener("change", mark);
   targetOtherParentInput.addEventListener("change", mark);
-  targetOfficialUrl.addEventListener("input", mark);
-  targetApprovedDomains.addEventListener("input", mark);
-  mappingReason.addEventListener("input", mark);
+  bindWorkflowTextInput(targetOfficialUrl, () => markGroupWorkflowTextChanged(card));
+  bindWorkflowTextInput(targetApprovedDomains, () => markGroupWorkflowTextChanged(card));
+  bindWorkflowTextInput(mappingReason, () => markGroupWorkflowTextChanged(card));
   savePathCorrection.addEventListener("change", mark);
   updateIndependentPanelVisibility(card);
   return panel;
@@ -2624,7 +2675,7 @@ function createGroupCard(group) {
     markGroupWorkflowChanged(card);
   });
   mappingMode.addEventListener("change", () => markGroupWorkflowChanged(card));
-  groupReason.addEventListener("input", () => markGroupWorkflowChanged(card));
+  bindWorkflowTextInput(groupReason, () => markGroupWorkflowTextChanged(card));
 
   const taskFooter = element("footer", "group-task-footer");
   const taskStatus = element(
@@ -2657,7 +2708,7 @@ function setGroupTaskStatus(card, message) {
   card.article.dataset.workflowStatus = card.workflowConfirmed ? "done" : "pending";
 }
 
-function markGroupWorkflowChanged(card, message = "修改后请确认。") {
+function invalidateGroupWorkflow(card, message) {
   card.workflowConfirmed = false;
   clearWorkflowCompletion(card);
   if (state.workflowFilter === "done") {
@@ -2666,7 +2717,16 @@ function markGroupWorkflowChanged(card, message = "修改后请确认。") {
   if (card.taskStatus) {
     setGroupTaskStatus(card, message);
   }
+}
+
+function markGroupWorkflowChanged(card, message = "修改后请确认。") {
+  invalidateGroupWorkflow(card, message);
   scheduleReviewUpdate();
+}
+
+function markGroupWorkflowTextChanged(card, message = "修改后请确认。") {
+  invalidateGroupWorkflow(card, message);
+  markReviewTextInputChanged();
 }
 
 function identityReviewError(card) {
@@ -3517,6 +3577,10 @@ function revealWorkflowMentorMatch(node) {
 }
 
 function renderWorkflowNode(node) {
+  if (workflowTextInputIsActive()) {
+    state.reviewUpdateDeferredForInput = true;
+    return;
+  }
   const activeControl = nodes.taskStage.contains(document.activeElement)
     ? document.activeElement
     : null;
@@ -3785,7 +3849,7 @@ function descendantDrafts(draft) {
   return draft.descendants || [];
 }
 
-function markOrganizationDraftChanged(draft, affectsIdentity = false) {
+function invalidateOrganizationDraft(draft, affectsIdentity) {
   for (const affected of [draft, ...descendantDrafts(draft)]) {
     affected.confirmed = false;
     clearWorkflowCompletion(affected);
@@ -3801,7 +3865,16 @@ function markOrganizationDraftChanged(draft, affectsIdentity = false) {
       descendant.hasRestoredState = false;
     }
   }
+}
+
+function markOrganizationDraftChanged(draft, affectsIdentity = false) {
+  invalidateOrganizationDraft(draft, affectsIdentity);
   scheduleReviewUpdate();
+}
+
+function markOrganizationDraftTextChanged(draft, affectsIdentity = false) {
+  invalidateOrganizationDraft(draft, affectsIdentity);
+  markReviewTextInputChanged();
 }
 
 function requiredSubmittedLevelsForCard(card) {
@@ -4442,8 +4515,21 @@ function scheduleReviewUpdate() {
   window.clearTimeout(reviewUpdateTimer);
   reviewUpdateTimer = window.setTimeout(() => {
     reviewUpdateTimer = null;
+    if (workflowTextInputIsActive()) {
+      state.reviewUpdateDeferredForInput = true;
+      return;
+    }
+    state.reviewUpdateDeferredForInput = false;
     void updateOrganizationDrafts();
   }, 80);
+}
+
+function markReviewTextInputChanged() {
+  state.updateToken += 1;
+  state.autosaveDirty = true;
+  nodes.decisionOutput.hidden = true;
+  nodes.decisionPreview.hidden = true;
+  scheduleAutosave();
 }
 
 function serializeReviewDraft() {
@@ -4525,6 +4611,7 @@ function saveReviewDraft() {
   }
   try {
     localStorage.setItem(state.storageKey, JSON.stringify(serializeReviewDraft()));
+    state.autosaveDirty = false;
     nodes.autosaveStatus.textContent = "已保存";
   } catch {
     nodes.autosaveStatus.textContent = "浏览器未允许自动保存，请在完成前不要关闭页面。";

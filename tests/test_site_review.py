@@ -7,9 +7,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 def test_review_page_has_strict_external_script_and_connection_policy() -> None:
     html = (PROJECT_ROOT / "site" / "review.html").read_text(encoding="utf-8")
-    assert '<link rel="stylesheet" href="styles.css?v=10" />' in html
-    assert '<script src="review-logic.js?v=10" defer></script>' in html
-    assert '<script src="review.js?v=10" defer></script>' in html
+    assert '<link rel="stylesheet" href="styles.css?v=11" />' in html
+    assert '<script src="review-logic.js?v=11" defer></script>' in html
+    assert '<script src="review.js?v=11" defer></script>' in html
     assert "<script>" not in html
     assert "https://api.github.com" in html
     assert "https://raw.githubusercontent.com" in html
@@ -139,6 +139,32 @@ def test_review_lazily_renders_large_mentor_groups_and_throttles_autosave() -> N
     assert "rowEditorByProposalId" in script
     assert "autosaveDirty" in script
     assert "window.setTimeout(saveReviewDraft, 800)" in script
+
+
+def test_review_text_inputs_preserve_ime_composition_and_native_undo() -> None:
+    script = (PROJECT_ROOT / "site" / "review.js").read_text(encoding="utf-8")
+
+    assert "function bindWorkflowTextInput" in script
+    assert 'input.addEventListener("compositionstart"' in script
+    assert 'input.addEventListener("compositionend"' in script
+    assert 'input.dataset.workflowTextInput = "true"' in script
+    assert "function markReviewTextInputChanged" in script
+    assert "if (workflowTextInputIsActive())" in script
+    assert "state.reviewUpdateDeferredForInput = true" in script
+    assert "bindWorkflowTextInput(mappingReason" in script
+    assert "bindWorkflowTextInput(canonicalName" in script
+    assert "bindWorkflowTextInput(officialUrl" in script
+    assert "bindWorkflowTextInput(approvedDomains" in script
+    assert "bindWorkflowTextInput(reason" in script
+    assert "bindWorkflowTextInput(editor.identityReason" in script
+    assert "bindWorkflowTextInput(targetCanonicalName" in script
+    assert "bindWorkflowTextInput(targetOfficialUrl" in script
+    assert "bindWorkflowTextInput(targetApprovedDomains" in script
+    assert "bindWorkflowTextInput(groupReason" in script
+    assert 'mappingReason.addEventListener("input"' not in script
+    assert 'canonicalName.addEventListener("input"' not in script
+    assert 'targetCanonicalName.addEventListener("input"' not in script
+    assert 'groupReason.addEventListener("input"' not in script
 
 
 def test_review_prioritizes_affiliation_conflicts_and_emits_separate_decisions() -> None:
