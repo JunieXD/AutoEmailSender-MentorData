@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c937e4a42640432993fc"
+      ],
+      "ended_at": null,
+      "id": "aff_a47c97cdd88b59258965",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yangyang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c937e4a42640432993fc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a47c97cdd88b59258965",
+      "claim_ids": [
+        "claim_c937e4a42640432993fc"
+      ],
+      "is_primary": true,
+      "normalized_value": "yyang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangyang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yyang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c937e4a42640432993fc"
+    ],
+    "email": [
+      "claim_c937e4a42640432993fc"
+    ],
+    "name": [
+      "claim_c937e4a42640432993fc"
+    ],
+    "profile_url": [
+      "claim_c937e4a42640432993fc"
+    ],
+    "research_directions": [
+      "claim_c937e4a42640432993fc"
+    ],
+    "status": [
+      "claim_c937e4a42640432993fc"
+    ],
+    "title": [
+      "claim_c937e4a42640432993fc"
+    ]
+  },
+  "id": "mentor_2f34630462213026177b",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c937e4a42640432993fc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨杨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a47c97cdd88b59258965",
+      "claim_ids": [
+        "claim_c937e4a42640432993fc"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangyang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据和人工智能应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangyang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

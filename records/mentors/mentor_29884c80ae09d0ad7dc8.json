@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ae1595bdd889c50c6b53"
+      ],
+      "ended_at": null,
+      "id": "aff_28e8424b7ae821590630",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/qiulirong1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ae1595bdd889c50c6b53"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_28e8424b7ae821590630",
+      "claim_ids": [
+        "claim_ae1595bdd889c50c6b53"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiulirong@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/qiulirong1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiulirong@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ae1595bdd889c50c6b53"
+    ],
+    "email": [
+      "claim_ae1595bdd889c50c6b53"
+    ],
+    "name": [
+      "claim_ae1595bdd889c50c6b53"
+    ],
+    "profile_url": [
+      "claim_ae1595bdd889c50c6b53"
+    ],
+    "research_directions": [
+      "claim_ae1595bdd889c50c6b53"
+    ],
+    "status": [
+      "claim_ae1595bdd889c50c6b53"
+    ],
+    "title": [
+      "claim_ae1595bdd889c50c6b53"
+    ]
+  },
+  "id": "mentor_29884c80ae09d0ad7dc8",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ae1595bdd889c50c6b53"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邱莉榕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_28e8424b7ae821590630",
+      "claim_ids": [
+        "claim_ae1595bdd889c50c6b53"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/qiulirong1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、大模型、社会网络与数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/qiulirong1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

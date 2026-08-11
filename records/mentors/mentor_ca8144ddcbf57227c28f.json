@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d93fac6f843c50d17b97"
+      ],
+      "ended_at": null,
+      "id": "aff_c96c2933736c2e31dbb7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/hhuang",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_d93fac6f843c50d17b97"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c96c2933736c2e31dbb7",
+      "claim_ids": [
+        "claim_d93fac6f843c50d17b97"
+      ],
+      "is_primary": true,
+      "normalized_value": "hhuang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/hhuang",
+      "status": "current",
+      "type": "email",
+      "value": "hhuang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d93fac6f843c50d17b97"
+    ],
+    "email": [
+      "claim_d93fac6f843c50d17b97"
+    ],
+    "name": [
+      "claim_d93fac6f843c50d17b97"
+    ],
+    "profile_url": [
+      "claim_d93fac6f843c50d17b97"
+    ],
+    "research_directions": [
+      "claim_d93fac6f843c50d17b97"
+    ],
+    "status": [
+      "claim_d93fac6f843c50d17b97"
+    ]
+  },
+  "id": "mentor_ca8144ddcbf57227c28f",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d93fac6f843c50d17b97"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c96c2933736c2e31dbb7",
+      "claim_ids": [
+        "claim_d93fac6f843c50d17b97"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/hhuang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、数据挖掘、物联网服务计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/hhuang",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b458eeb9ef6e4eb0115"
+      ],
+      "ended_at": null,
+      "id": "aff_34d311c58eae8796f055",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_836033ed02e2b0de913d",
+      "source_url": "https://teacher.bupt.edu.cn/duanpengrui",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b458eeb9ef6e4eb0115"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_34d311c58eae8796f055",
+      "claim_ids": [
+        "claim_7b458eeb9ef6e4eb0115"
+      ],
+      "is_primary": true,
+      "normalized_value": "dpr@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/duanpengrui",
+      "status": "current",
+      "type": "email",
+      "value": "dpr@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b458eeb9ef6e4eb0115"
+    ],
+    "email": [
+      "claim_7b458eeb9ef6e4eb0115"
+    ],
+    "name": [
+      "claim_7b458eeb9ef6e4eb0115"
+    ],
+    "profile_url": [
+      "claim_7b458eeb9ef6e4eb0115"
+    ],
+    "research_directions": [
+      "claim_7b458eeb9ef6e4eb0115"
+    ],
+    "status": [
+      "claim_7b458eeb9ef6e4eb0115"
+    ],
+    "title": [
+      "claim_7b458eeb9ef6e4eb0115"
+    ]
+  },
+  "id": "mentor_ce9b1c5b9e7367704198",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b458eeb9ef6e4eb0115"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "段鹏瑞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_34d311c58eae8796f055",
+      "claim_ids": [
+        "claim_7b458eeb9ef6e4eb0115"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/duanpengrui"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "长期从事计算机通信的教学与科研工作,目前主要从事无线多媒体传感网方面的研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/duanpengrui",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

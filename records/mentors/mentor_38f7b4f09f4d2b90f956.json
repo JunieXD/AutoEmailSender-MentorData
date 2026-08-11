@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0cc1f5334525f037ba9b"
+      ],
+      "ended_at": null,
+      "id": "aff_4a5e91e499221d60fcb7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhaofang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0cc1f5334525f037ba9b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4a5e91e499221d60fcb7",
+      "claim_ids": [
+        "claim_0cc1f5334525f037ba9b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zfsse@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhaofang",
+      "status": "current",
+      "type": "email",
+      "value": "zfsse@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0cc1f5334525f037ba9b"
+    ],
+    "email": [
+      "claim_0cc1f5334525f037ba9b"
+    ],
+    "name": [
+      "claim_0cc1f5334525f037ba9b"
+    ],
+    "profile_url": [
+      "claim_0cc1f5334525f037ba9b"
+    ],
+    "research_directions": [
+      "claim_0cc1f5334525f037ba9b"
+    ],
+    "status": [
+      "claim_0cc1f5334525f037ba9b"
+    ],
+    "title": [
+      "claim_0cc1f5334525f037ba9b"
+    ]
+  },
+  "id": "mentor_38f7b4f09f4d2b90f956",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0cc1f5334525f037ba9b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵方"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4a5e91e499221d60fcb7",
+      "claim_ids": [
+        "claim_0cc1f5334525f037ba9b"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhaofang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动计算与人工智能、时空大数据挖掘、多源感知融合定位及导航"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhaofang",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

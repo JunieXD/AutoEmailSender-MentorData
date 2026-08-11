@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_090bd32165f6f973b1a3"
+      ],
+      "ended_at": null,
+      "id": "aff_a42e1716e13ded8b5252",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yuanyuyu",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_090bd32165f6f973b1a3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a42e1716e13ded8b5252",
+      "claim_ids": [
+        "claim_090bd32165f6f973b1a3"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanyuyu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yuanyuyu",
+      "status": "current",
+      "type": "email",
+      "value": "yuanyuyu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_090bd32165f6f973b1a3"
+    ],
+    "email": [
+      "claim_090bd32165f6f973b1a3"
+    ],
+    "name": [
+      "claim_090bd32165f6f973b1a3"
+    ],
+    "profile_url": [
+      "claim_090bd32165f6f973b1a3"
+    ],
+    "research_directions": [
+      "claim_090bd32165f6f973b1a3"
+    ],
+    "status": [
+      "claim_090bd32165f6f973b1a3"
+    ],
+    "title": [
+      "claim_090bd32165f6f973b1a3"
+    ]
+  },
+  "id": "mentor_d3eacf3743f037e56fb5",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_090bd32165f6f973b1a3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁玉宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a42e1716e13ded8b5252",
+      "claim_ids": [
+        "claim_090bd32165f6f973b1a3"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yuanyuyu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "国际(国内)软件工程标准化、软件可信、软件产品质量与度量、软件测试技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yuanyuyu",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

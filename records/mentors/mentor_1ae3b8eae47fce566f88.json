@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_84a540e6a21f2b2e791a"
+      ],
+      "ended_at": null,
+      "id": "aff_10d53c2dc52dfe8bf3a1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_71f05b46835191d2b4b6",
+      "source_url": "https://teacher.bupt.edu.cn/yiqiuping",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_84a540e6a21f2b2e791a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_10d53c2dc52dfe8bf3a1",
+      "claim_ids": [
+        "claim_84a540e6a21f2b2e791a"
+      ],
+      "is_primary": true,
+      "normalized_value": "yiqiuping@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yiqiuping",
+      "status": "current",
+      "type": "email",
+      "value": "yiqiuping@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_84a540e6a21f2b2e791a"
+    ],
+    "email": [
+      "claim_84a540e6a21f2b2e791a"
+    ],
+    "name": [
+      "claim_84a540e6a21f2b2e791a"
+    ],
+    "profile_url": [
+      "claim_84a540e6a21f2b2e791a"
+    ],
+    "research_directions": [
+      "claim_84a540e6a21f2b2e791a"
+    ],
+    "status": [
+      "claim_84a540e6a21f2b2e791a"
+    ],
+    "title": [
+      "claim_84a540e6a21f2b2e791a"
+    ]
+  },
+  "id": "mentor_1ae3b8eae47fce566f88",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_84a540e6a21f2b2e791a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "易秋萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_10d53c2dc52dfe8bf3a1",
+      "claim_ids": [
+        "claim_84a540e6a21f2b2e791a"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yiqiuping"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "编程语言(程序分析、程序验证)、软件安全与测试(基于AI技术的漏洞挖掘、错误定位)、软件工程及形式化分析方法、系统软件安全、程序分析测试、软件错误定位与修复、并行程序分析验证、基于大模型等AI技术与程序分析相结合的高效程序分析、漏洞挖掘技术、构建大规模程序分析验证平台、C++11并行程序分析验证方法及工具平台研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yiqiuping",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

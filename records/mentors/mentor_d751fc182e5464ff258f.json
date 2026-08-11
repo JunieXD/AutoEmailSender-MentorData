@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4fe1417483cd7dbe49dc"
+      ],
+      "ended_at": null,
+      "id": "aff_653e51fd12b2b5c9f865",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_8b4d9a42a5ae9c04b1a3",
+      "source_url": "https://teacher.bupt.edu.cn/wubudan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4fe1417483cd7dbe49dc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_653e51fd12b2b5c9f865",
+      "claim_ids": [
+        "claim_4fe1417483cd7dbe49dc"
+      ],
+      "is_primary": true,
+      "normalized_value": "wubudan@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wubudan",
+      "status": "current",
+      "type": "email",
+      "value": "wubudan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4fe1417483cd7dbe49dc"
+    ],
+    "email": [
+      "claim_4fe1417483cd7dbe49dc"
+    ],
+    "name": [
+      "claim_4fe1417483cd7dbe49dc"
+    ],
+    "profile_url": [
+      "claim_4fe1417483cd7dbe49dc"
+    ],
+    "research_directions": [
+      "claim_4fe1417483cd7dbe49dc"
+    ],
+    "status": [
+      "claim_4fe1417483cd7dbe49dc"
+    ],
+    "title": [
+      "claim_4fe1417483cd7dbe49dc"
+    ]
+  },
+  "id": "mentor_d751fc182e5464ff258f",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4fe1417483cd7dbe49dc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴步丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_653e51fd12b2b5c9f865",
+      "claim_ids": [
+        "claim_4fe1417483cd7dbe49dc"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wubudan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据与大模型服务方法与技术,涉及软件大数据智能分析、智能业务流程管理、大模型软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wubudan",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

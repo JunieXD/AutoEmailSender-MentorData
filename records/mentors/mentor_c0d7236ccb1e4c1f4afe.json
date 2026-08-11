@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_44e55e2573f55693a7db"
+      ],
+      "ended_at": null,
+      "id": "aff_a4ceaf70c743f4bcd768",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_14390f1744cea6ce4ad9",
+      "source_url": "https://teacher.bupt.edu.cn/gongxiangyang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_44e55e2573f55693a7db"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a4ceaf70c743f4bcd768",
+      "claim_ids": [
+        "claim_44e55e2573f55693a7db"
+      ],
+      "is_primary": true,
+      "normalized_value": "xygong@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/gongxiangyang",
+      "status": "current",
+      "type": "email",
+      "value": "xygong@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_44e55e2573f55693a7db"
+    ],
+    "email": [
+      "claim_44e55e2573f55693a7db"
+    ],
+    "name": [
+      "claim_44e55e2573f55693a7db"
+    ],
+    "profile_url": [
+      "claim_44e55e2573f55693a7db"
+    ],
+    "research_directions": [
+      "claim_44e55e2573f55693a7db"
+    ],
+    "status": [
+      "claim_44e55e2573f55693a7db"
+    ],
+    "title": [
+      "claim_44e55e2573f55693a7db"
+    ]
+  },
+  "id": "mentor_c0d7236ccb1e4c1f4afe",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_44e55e2573f55693a7db"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "龚向阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a4ceaf70c743f4bcd768",
+      "claim_ids": [
+        "claim_44e55e2573f55693a7db"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/gongxiangyang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "宽带网络与业务的控制管理、服务质量保障、计算机与网络体系结构、下一代互联网、未来网络理论与技术、新型网络体系结构、移动互联网技术与创新应用、计算机视觉与智慧计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/gongxiangyang",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

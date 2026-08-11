@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c598a81cd3563284d686"
+      ],
+      "ended_at": null,
+      "id": "aff_abc4252f54c38617e692",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangjing",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c598a81cd3563284d686"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_abc4252f54c38617e692",
+      "claim_ids": [
+        "claim_c598a81cd3563284d686"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangjing@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangjing",
+      "status": "current",
+      "type": "email",
+      "value": "wangjing@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c598a81cd3563284d686"
+    ],
+    "email": [
+      "claim_c598a81cd3563284d686"
+    ],
+    "name": [
+      "claim_c598a81cd3563284d686"
+    ],
+    "profile_url": [
+      "claim_c598a81cd3563284d686"
+    ],
+    "status": [
+      "claim_c598a81cd3563284d686"
+    ],
+    "title": [
+      "claim_c598a81cd3563284d686"
+    ]
+  },
+  "id": "mentor_11747d6428f40d5ba788",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c598a81cd3563284d686"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晶"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_abc4252f54c38617e692",
+      "claim_ids": [
+        "claim_c598a81cd3563284d686"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangjing"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangjing",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

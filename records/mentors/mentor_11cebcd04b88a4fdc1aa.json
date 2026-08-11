@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3abff53c1ce4ddfcce68"
+      ],
+      "ended_at": null,
+      "id": "aff_83b65165872199a69e49",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_14390f1744cea6ce4ad9",
+      "source_url": "https://teacher.bupt.edu.cn/cqxu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3abff53c1ce4ddfcce68"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_83b65165872199a69e49",
+      "claim_ids": [
+        "claim_3abff53c1ce4ddfcce68"
+      ],
+      "is_primary": true,
+      "normalized_value": "cqxu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/cqxu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cqxu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3abff53c1ce4ddfcce68"
+    ],
+    "email": [
+      "claim_3abff53c1ce4ddfcce68"
+    ],
+    "name": [
+      "claim_3abff53c1ce4ddfcce68"
+    ],
+    "profile_url": [
+      "claim_3abff53c1ce4ddfcce68"
+    ],
+    "research_directions": [
+      "claim_3abff53c1ce4ddfcce68"
+    ],
+    "status": [
+      "claim_3abff53c1ce4ddfcce68"
+    ],
+    "title": [
+      "claim_3abff53c1ce4ddfcce68"
+    ]
+  },
+  "id": "mentor_11cebcd04b88a4fdc1aa",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3abff53c1ce4ddfcce68"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许长桥"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_83b65165872199a69e49",
+      "claim_ids": [
+        "claim_3abff53c1ce4ddfcce68"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/cqxu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型网络、多媒体通信、网络安全、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/cqxu/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

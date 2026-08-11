@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_327d0ef81ab3df4e66af"
+      ],
+      "ended_at": null,
+      "id": "aff_b1257a4aa4e1e6079615",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/shiyan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_327d0ef81ab3df4e66af"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1257a4aa4e1e6079615",
+      "claim_ids": [
+        "claim_327d0ef81ab3df4e66af"
+      ],
+      "is_primary": true,
+      "normalized_value": "shiyan@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/shiyan",
+      "status": "current",
+      "type": "email",
+      "value": "shiyan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_327d0ef81ab3df4e66af"
+    ],
+    "email": [
+      "claim_327d0ef81ab3df4e66af"
+    ],
+    "name": [
+      "claim_327d0ef81ab3df4e66af"
+    ],
+    "profile_url": [
+      "claim_327d0ef81ab3df4e66af"
+    ],
+    "status": [
+      "claim_327d0ef81ab3df4e66af"
+    ],
+    "title": [
+      "claim_327d0ef81ab3df4e66af"
+    ]
+  },
+  "id": "mentor_b587bf04e5f2afaf543e",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_327d0ef81ab3df4e66af"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "时岩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1257a4aa4e1e6079615",
+      "claim_ids": [
+        "claim_327d0ef81ab3df4e66af"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/shiyan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/shiyan",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

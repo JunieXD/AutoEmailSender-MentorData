@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a456ac5112204ce82235"
+      ],
+      "ended_at": null,
+      "id": "aff_9c07d23b46024375ffb0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhangchengwen",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a456ac5112204ce82235"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9c07d23b46024375ffb0",
+      "claim_ids": [
+        "claim_a456ac5112204ce82235"
+      ],
+      "is_primary": true,
+      "normalized_value": "zcwbupt@126.com",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhangchengwen",
+      "status": "current",
+      "type": "email",
+      "value": "zcwbupt@126.com"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a456ac5112204ce82235"
+    ],
+    "email": [
+      "claim_a456ac5112204ce82235"
+    ],
+    "name": [
+      "claim_a456ac5112204ce82235"
+    ],
+    "profile_url": [
+      "claim_a456ac5112204ce82235"
+    ],
+    "research_directions": [
+      "claim_a456ac5112204ce82235"
+    ],
+    "status": [
+      "claim_a456ac5112204ce82235"
+    ],
+    "title": [
+      "claim_a456ac5112204ce82235"
+    ]
+  },
+  "id": "mentor_e795ae0bd1d0640acc09",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a456ac5112204ce82235"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张成文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9c07d23b46024375ffb0",
+      "claim_ids": [
+        "claim_a456ac5112204ce82235"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhangchengwen"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能大模型、数字人、大数据推荐、知识图谱、计算机视觉、云计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhangchengwen",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

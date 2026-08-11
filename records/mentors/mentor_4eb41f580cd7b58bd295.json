@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_234b00dae63b50858f6c"
+      ],
+      "ended_at": null,
+      "id": "aff_70ce61e83a0e7c25fa02",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhanglejian",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_234b00dae63b50858f6c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_70ce61e83a0e7c25fa02",
+      "claim_ids": [
+        "claim_234b00dae63b50858f6c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanglj@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhanglejian",
+      "status": "current",
+      "type": "email",
+      "value": "zhanglj@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_234b00dae63b50858f6c"
+    ],
+    "email": [
+      "claim_234b00dae63b50858f6c"
+    ],
+    "name": [
+      "claim_234b00dae63b50858f6c"
+    ],
+    "profile_url": [
+      "claim_234b00dae63b50858f6c"
+    ],
+    "status": [
+      "claim_234b00dae63b50858f6c"
+    ]
+  },
+  "id": "mentor_4eb41f580cd7b58bd295",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_234b00dae63b50858f6c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张乐剑"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_70ce61e83a0e7c25fa02",
+      "claim_ids": [
+        "claim_234b00dae63b50858f6c"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhanglejian"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhanglejian",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

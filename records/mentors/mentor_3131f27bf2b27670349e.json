@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_17ac71c69dbb9f5c502f"
+      ],
+      "ended_at": null,
+      "id": "aff_14f522aa1fe2877565a7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/shichuan",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_17ac71c69dbb9f5c502f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_14f522aa1fe2877565a7",
+      "claim_ids": [
+        "claim_17ac71c69dbb9f5c502f"
+      ],
+      "is_primary": true,
+      "normalized_value": "shichuan@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/shichuan",
+      "status": "current",
+      "type": "email",
+      "value": "shichuan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_17ac71c69dbb9f5c502f"
+    ],
+    "email": [
+      "claim_17ac71c69dbb9f5c502f"
+    ],
+    "name": [
+      "claim_17ac71c69dbb9f5c502f"
+    ],
+    "profile_url": [
+      "claim_17ac71c69dbb9f5c502f"
+    ],
+    "research_directions": [
+      "claim_17ac71c69dbb9f5c502f"
+    ],
+    "status": [
+      "claim_17ac71c69dbb9f5c502f"
+    ],
+    "title": [
+      "claim_17ac71c69dbb9f5c502f"
+    ]
+  },
+  "id": "mentor_3131f27bf2b27670349e",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_17ac71c69dbb9f5c502f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "石川"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_14f522aa1fe2877565a7",
+      "claim_ids": [
+        "claim_17ac71c69dbb9f5c502f"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/shichuan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘、机器学习、人工智能和大数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/shichuan",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

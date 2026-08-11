@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f391dec5c735ef8ff05d"
+      ],
+      "ended_at": null,
+      "id": "aff_ca2a5e596bdb5a5ec932",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_8b4d9a42a5ae9c04b1a3",
+      "source_url": "https://teacher.bupt.edu.cn/liuchuanchang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f391dec5c735ef8ff05d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ca2a5e596bdb5a5ec932",
+      "claim_ids": [
+        "claim_f391dec5c735ef8ff05d"
+      ],
+      "is_primary": true,
+      "normalized_value": "lcc3265@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/liuchuanchang",
+      "status": "current",
+      "type": "email",
+      "value": "lcc3265@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f391dec5c735ef8ff05d"
+    ],
+    "email": [
+      "claim_f391dec5c735ef8ff05d"
+    ],
+    "name": [
+      "claim_f391dec5c735ef8ff05d"
+    ],
+    "profile_url": [
+      "claim_f391dec5c735ef8ff05d"
+    ],
+    "research_directions": [
+      "claim_f391dec5c735ef8ff05d"
+    ],
+    "status": [
+      "claim_f391dec5c735ef8ff05d"
+    ],
+    "title": [
+      "claim_f391dec5c735ef8ff05d"
+    ]
+  },
+  "id": "mentor_d4fe4e0ab04849cfa3f9",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f391dec5c735ef8ff05d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘传昌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ca2a5e596bdb5a5ec932",
+      "claim_ids": [
+        "claim_f391dec5c735ef8ff05d"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/liuchuanchang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "金融大数据与AI,Android恶意应用检测,物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/liuchuanchang",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

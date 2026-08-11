@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_80628a8ca40df38820e5"
+      ],
+      "ended_at": null,
+      "id": "aff_7b833b65946f21a06163",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_14390f1744cea6ce4ad9",
+      "source_url": "https://teacher.bupt.edu.cn/huxiameng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_80628a8ca40df38820e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7b833b65946f21a06163",
+      "claim_ids": [
+        "claim_80628a8ca40df38820e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "huxiameng@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/huxiameng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huxiameng@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_80628a8ca40df38820e5"
+    ],
+    "email": [
+      "claim_80628a8ca40df38820e5"
+    ],
+    "name": [
+      "claim_80628a8ca40df38820e5"
+    ],
+    "profile_url": [
+      "claim_80628a8ca40df38820e5"
+    ],
+    "research_directions": [
+      "claim_80628a8ca40df38820e5"
+    ],
+    "status": [
+      "claim_80628a8ca40df38820e5"
+    ]
+  },
+  "id": "mentor_289bc32fa8dd507eed50",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_80628a8ca40df38820e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡夏蒙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7b833b65946f21a06163",
+      "claim_ids": [
+        "claim_80628a8ca40df38820e5"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/huxiameng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "卫星计算、操作系统、终端智能、资源调度与系统软件优化、缓存建模、多程序共生调度、智能实时操作系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/huxiameng/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2268d42071dac7bca162"
+      ],
+      "ended_at": null,
+      "id": "aff_86f0adec6a93f902a131",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yangcheng",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2268d42071dac7bca162"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_86f0adec6a93f902a131",
+      "claim_ids": [
+        "claim_2268d42071dac7bca162"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangcheng@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangcheng",
+      "status": "current",
+      "type": "email",
+      "value": "yangcheng@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2268d42071dac7bca162"
+    ],
+    "email": [
+      "claim_2268d42071dac7bca162"
+    ],
+    "name": [
+      "claim_2268d42071dac7bca162"
+    ],
+    "profile_url": [
+      "claim_2268d42071dac7bca162"
+    ],
+    "status": [
+      "claim_2268d42071dac7bca162"
+    ],
+    "title": [
+      "claim_2268d42071dac7bca162"
+    ]
+  },
+  "id": "mentor_ea889218fa99da92b0ba",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2268d42071dac7bca162"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_86f0adec6a93f902a131",
+      "claim_ids": [
+        "claim_2268d42071dac7bca162"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangcheng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangcheng",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

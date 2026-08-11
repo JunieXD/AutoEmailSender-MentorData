@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d936c3a6f3a30fae1504"
+      ],
+      "ended_at": null,
+      "id": "aff_e9b20cfc9f9d7bbc7ae7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/xiayamei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d936c3a6f3a30fae1504"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e9b20cfc9f9d7bbc7ae7",
+      "claim_ids": [
+        "claim_d936c3a6f3a30fae1504"
+      ],
+      "is_primary": true,
+      "normalized_value": "ymxia@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/xiayamei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ymxia@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d936c3a6f3a30fae1504"
+    ],
+    "email": [
+      "claim_d936c3a6f3a30fae1504"
+    ],
+    "name": [
+      "claim_d936c3a6f3a30fae1504"
+    ],
+    "profile_url": [
+      "claim_d936c3a6f3a30fae1504"
+    ],
+    "research_directions": [
+      "claim_d936c3a6f3a30fae1504"
+    ],
+    "status": [
+      "claim_d936c3a6f3a30fae1504"
+    ],
+    "title": [
+      "claim_d936c3a6f3a30fae1504"
+    ]
+  },
+  "id": "mentor_f074aa762709b3964740",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d936c3a6f3a30fae1504"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "夏亚梅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e9b20cfc9f9d7bbc7ae7",
+      "claim_ids": [
+        "claim_d936c3a6f3a30fae1504"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xiayamei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络安全、数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xiayamei/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

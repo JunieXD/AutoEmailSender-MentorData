@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_638a16c1b8a198725a50"
+      ],
+      "ended_at": null,
+      "id": "aff_67908c08abc2bbb17269",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/xuezhe",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_638a16c1b8a198725a50"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_67908c08abc2bbb17269",
+      "claim_ids": [
+        "claim_638a16c1b8a198725a50"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuezhe@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/xuezhe",
+      "status": "current",
+      "type": "email",
+      "value": "xuezhe@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_638a16c1b8a198725a50"
+    ],
+    "email": [
+      "claim_638a16c1b8a198725a50"
+    ],
+    "name": [
+      "claim_638a16c1b8a198725a50"
+    ],
+    "profile_url": [
+      "claim_638a16c1b8a198725a50"
+    ],
+    "research_directions": [
+      "claim_638a16c1b8a198725a50"
+    ],
+    "status": [
+      "claim_638a16c1b8a198725a50"
+    ],
+    "title": [
+      "claim_638a16c1b8a198725a50"
+    ]
+  },
+  "id": "mentor_e24c6b6c28bf80ef900c",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_638a16c1b8a198725a50"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "薛哲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_67908c08abc2bbb17269",
+      "claim_ids": [
+        "claim_638a16c1b8a198725a50"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xuezhe"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态大数据分析与挖掘、联邦学习、数据挖掘、机器学习、人工智能、多模态/多视图学习、突发事件检测与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xuezhe",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

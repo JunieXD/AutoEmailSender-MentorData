@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1f5c7e7a4e40af7d2726"
+      ],
+      "ended_at": null,
+      "id": "aff_badf1cb5db3d456fd6f1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangchun/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_1f5c7e7a4e40af7d2726"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_badf1cb5db3d456fd6f1",
+      "claim_ids": [
+        "claim_1f5c7e7a4e40af7d2726"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanch@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangchun/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanch@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1f5c7e7a4e40af7d2726"
+    ],
+    "email": [
+      "claim_1f5c7e7a4e40af7d2726"
+    ],
+    "name": [
+      "claim_1f5c7e7a4e40af7d2726"
+    ],
+    "profile_url": [
+      "claim_1f5c7e7a4e40af7d2726"
+    ],
+    "research_directions": [
+      "claim_1f5c7e7a4e40af7d2726"
+    ],
+    "status": [
+      "claim_1f5c7e7a4e40af7d2726"
+    ]
+  },
+  "id": "mentor_8505dff1d4e0aed6d70a",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1f5c7e7a4e40af7d2726"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王纯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_badf1cb5db3d456fd6f1",
+      "claim_ids": [
+        "claim_1f5c7e7a4e40af7d2726"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangchun/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "业务网络智能化,云计算技术及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangchun/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

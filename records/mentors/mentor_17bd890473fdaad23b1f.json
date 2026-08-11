@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9e1f0f34bd277f29d25b"
+      ],
+      "ended_at": null,
+      "id": "aff_7e2f46361f57e8308e88",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_71f05b46835191d2b4b6",
+      "source_url": "https://teacher.bupt.edu.cn/fangpeiyu",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9e1f0f34bd277f29d25b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7e2f46361f57e8308e88",
+      "claim_ids": [
+        "claim_9e1f0f34bd277f29d25b"
+      ],
+      "is_primary": true,
+      "normalized_value": "fangpeiyu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/fangpeiyu",
+      "status": "current",
+      "type": "email",
+      "value": "fangpeiyu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9e1f0f34bd277f29d25b"
+    ],
+    "email": [
+      "claim_9e1f0f34bd277f29d25b"
+    ],
+    "name": [
+      "claim_9e1f0f34bd277f29d25b"
+    ],
+    "profile_url": [
+      "claim_9e1f0f34bd277f29d25b"
+    ],
+    "research_directions": [
+      "claim_9e1f0f34bd277f29d25b"
+    ],
+    "status": [
+      "claim_9e1f0f34bd277f29d25b"
+    ],
+    "title": [
+      "claim_9e1f0f34bd277f29d25b"
+    ]
+  },
+  "id": "mentor_17bd890473fdaad23b1f",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9e1f0f34bd277f29d25b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "方沛宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7e2f46361f57e8308e88",
+      "claim_ids": [
+        "claim_9e1f0f34bd277f29d25b"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/fangpeiyu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与机器学习、嵌入式系统、边缘计算与智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/fangpeiyu",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6cce3e003aebeb1aa617"
+      ],
+      "ended_at": null,
+      "id": "aff_68d14529c3fb31583b24",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_836033ed02e2b0de913d",
+      "source_url": "https://teacher.bupt.edu.cn/sunyi",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6cce3e003aebeb1aa617"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_68d14529c3fb31583b24",
+      "claim_ids": [
+        "claim_6cce3e003aebeb1aa617"
+      ],
+      "is_primary": true,
+      "normalized_value": "sybupt@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/sunyi",
+      "status": "current",
+      "type": "email",
+      "value": "sybupt@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6cce3e003aebeb1aa617"
+    ],
+    "email": [
+      "claim_6cce3e003aebeb1aa617"
+    ],
+    "name": [
+      "claim_6cce3e003aebeb1aa617"
+    ],
+    "profile_url": [
+      "claim_6cce3e003aebeb1aa617"
+    ],
+    "research_directions": [
+      "claim_6cce3e003aebeb1aa617"
+    ],
+    "status": [
+      "claim_6cce3e003aebeb1aa617"
+    ],
+    "title": [
+      "claim_6cce3e003aebeb1aa617"
+    ]
+  },
+  "id": "mentor_b28fb690921fda9bdf6a",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6cce3e003aebeb1aa617"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙溢"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_68d14529c3fb31583b24",
+      "claim_ids": [
+        "claim_6cce3e003aebeb1aa617"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/sunyi"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信息安全、安全多方计算、零知识证明、大数据安全、隐私计算、区块链"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/sunyi",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

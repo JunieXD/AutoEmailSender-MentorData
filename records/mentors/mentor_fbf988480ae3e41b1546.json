@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b3a18b2b05c198b9af62"
+      ],
+      "ended_at": null,
+      "id": "aff_f0f0afddd28ddf56d26a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yuanquan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b3a18b2b05c198b9af62"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f0f0afddd28ddf56d26a",
+      "claim_ids": [
+        "claim_b3a18b2b05c198b9af62"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanquan@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yuanquan",
+      "status": "current",
+      "type": "email",
+      "value": "yuanquan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b3a18b2b05c198b9af62"
+    ],
+    "email": [
+      "claim_b3a18b2b05c198b9af62"
+    ],
+    "name": [
+      "claim_b3a18b2b05c198b9af62"
+    ],
+    "profile_url": [
+      "claim_b3a18b2b05c198b9af62"
+    ],
+    "research_directions": [
+      "claim_b3a18b2b05c198b9af62"
+    ],
+    "status": [
+      "claim_b3a18b2b05c198b9af62"
+    ],
+    "title": [
+      "claim_b3a18b2b05c198b9af62"
+    ]
+  },
+  "id": "mentor_fbf988480ae3e41b1546",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b3a18b2b05c198b9af62"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁泉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f0f0afddd28ddf56d26a",
+      "claim_ids": [
+        "claim_b3a18b2b05c198b9af62"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yuanquan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "车路群智协同、多域资源优化、融合网络中的群体智能计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yuanquan",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

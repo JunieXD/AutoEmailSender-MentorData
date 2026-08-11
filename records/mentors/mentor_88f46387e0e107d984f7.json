@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4ffc84932598ba99323f"
+      ],
+      "ended_at": null,
+      "id": "aff_928c31402a009e69d51e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_8b4d9a42a5ae9c04b1a3",
+      "source_url": "https://teacher.bupt.edu.cn/chenyong",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4ffc84932598ba99323f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_928c31402a009e69d51e",
+      "claim_ids": [
+        "claim_4ffc84932598ba99323f"
+      ],
+      "is_primary": true,
+      "normalized_value": "yong.chen@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/chenyong",
+      "status": "current",
+      "type": "email",
+      "value": "yong.chen@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4ffc84932598ba99323f"
+    ],
+    "email": [
+      "claim_4ffc84932598ba99323f"
+    ],
+    "name": [
+      "claim_4ffc84932598ba99323f"
+    ],
+    "profile_url": [
+      "claim_4ffc84932598ba99323f"
+    ],
+    "status": [
+      "claim_4ffc84932598ba99323f"
+    ],
+    "title": [
+      "claim_4ffc84932598ba99323f"
+    ]
+  },
+  "id": "mentor_88f46387e0e107d984f7",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4ffc84932598ba99323f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_928c31402a009e69d51e",
+      "claim_ids": [
+        "claim_4ffc84932598ba99323f"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/chenyong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/chenyong",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

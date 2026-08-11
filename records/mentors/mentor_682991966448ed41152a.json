@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f805251dcdfa7a8a2553"
+      ],
+      "ended_at": null,
+      "id": "aff_6637df25c3420c178bb1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_836033ed02e2b0de913d",
+      "source_url": "https://teacher.bupt.edu.cn/fuhuiyuan",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f805251dcdfa7a8a2553"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6637df25c3420c178bb1",
+      "claim_ids": [
+        "claim_f805251dcdfa7a8a2553"
+      ],
+      "is_primary": true,
+      "normalized_value": "fhy@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/fuhuiyuan",
+      "status": "current",
+      "type": "email",
+      "value": "fhy@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f805251dcdfa7a8a2553"
+    ],
+    "email": [
+      "claim_f805251dcdfa7a8a2553"
+    ],
+    "name": [
+      "claim_f805251dcdfa7a8a2553"
+    ],
+    "profile_url": [
+      "claim_f805251dcdfa7a8a2553"
+    ],
+    "research_directions": [
+      "claim_f805251dcdfa7a8a2553"
+    ],
+    "status": [
+      "claim_f805251dcdfa7a8a2553"
+    ],
+    "title": [
+      "claim_f805251dcdfa7a8a2553"
+    ]
+  },
+  "id": "mentor_682991966448ed41152a",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f805251dcdfa7a8a2553"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "傅慧源"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6637df25c3420c178bb1",
+      "claim_ids": [
+        "claim_f805251dcdfa7a8a2553"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/fuhuiyuan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "深度学习、计算机视觉、视频大数据、多媒体系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/fuhuiyuan",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

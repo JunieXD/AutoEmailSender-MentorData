@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fa582c70d6be858b4cc6"
+      ],
+      "ended_at": null,
+      "id": "aff_8457d291af401a4d2d96",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/chengxiang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fa582c70d6be858b4cc6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8457d291af401a4d2d96",
+      "claim_ids": [
+        "claim_fa582c70d6be858b4cc6"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengxiang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/chengxiang",
+      "status": "current",
+      "type": "email",
+      "value": "chengxiang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fa582c70d6be858b4cc6"
+    ],
+    "email": [
+      "claim_fa582c70d6be858b4cc6"
+    ],
+    "name": [
+      "claim_fa582c70d6be858b4cc6"
+    ],
+    "profile_url": [
+      "claim_fa582c70d6be858b4cc6"
+    ],
+    "research_directions": [
+      "claim_fa582c70d6be858b4cc6"
+    ],
+    "status": [
+      "claim_fa582c70d6be858b4cc6"
+    ],
+    "title": [
+      "claim_fa582c70d6be858b4cc6"
+    ]
+  },
+  "id": "mentor_f009241ff269d3b05ce3",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fa582c70d6be858b4cc6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程祥"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8457d291af401a4d2d96",
+      "claim_ids": [
+        "claim_fa582c70d6be858b4cc6"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/chengxiang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘与知识工程、数据安全与隐私保护、大数据、人工智能、网络服务"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/chengxiang",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

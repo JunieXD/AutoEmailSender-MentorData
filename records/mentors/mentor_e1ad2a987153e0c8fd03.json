@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4b393ba126e03e586e48"
+      ],
+      "ended_at": null,
+      "id": "aff_92e68fca853fee6ce2f7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/xudaliang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4b393ba126e03e586e48"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_92e68fca853fee6ce2f7",
+      "claim_ids": [
+        "claim_4b393ba126e03e586e48"
+      ],
+      "is_primary": true,
+      "normalized_value": "xudaliang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/xudaliang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xudaliang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4b393ba126e03e586e48"
+    ],
+    "email": [
+      "claim_4b393ba126e03e586e48"
+    ],
+    "name": [
+      "claim_4b393ba126e03e586e48"
+    ],
+    "profile_url": [
+      "claim_4b393ba126e03e586e48"
+    ],
+    "research_directions": [
+      "claim_4b393ba126e03e586e48"
+    ],
+    "status": [
+      "claim_4b393ba126e03e586e48"
+    ],
+    "title": [
+      "claim_4b393ba126e03e586e48"
+    ]
+  },
+  "id": "mentor_e1ad2a987153e0c8fd03",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4b393ba126e03e586e48"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐大亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_92e68fca853fee6ce2f7",
+      "claim_ids": [
+        "claim_4b393ba126e03e586e48"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xudaliang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动计算与系统软件、大模型推理优化、多模态大模型与具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xudaliang/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

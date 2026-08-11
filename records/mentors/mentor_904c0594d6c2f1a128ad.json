@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fc7b6a64231eb90dfb17"
+      ],
+      "ended_at": null,
+      "id": "aff_7555c3b43e1a94198b25",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_f37317db5f78de54a8e6",
+      "source_url": "https://teacher.bupt.edu.cn/yangya",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fc7b6a64231eb90dfb17"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7555c3b43e1a94198b25",
+      "claim_ids": [
+        "claim_fc7b6a64231eb90dfb17"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangya@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangya",
+      "status": "current",
+      "type": "email",
+      "value": "yangya@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fc7b6a64231eb90dfb17"
+    ],
+    "email": [
+      "claim_fc7b6a64231eb90dfb17"
+    ],
+    "name": [
+      "claim_fc7b6a64231eb90dfb17"
+    ],
+    "profile_url": [
+      "claim_fc7b6a64231eb90dfb17"
+    ],
+    "research_directions": [
+      "claim_fc7b6a64231eb90dfb17"
+    ],
+    "status": [
+      "claim_fc7b6a64231eb90dfb17"
+    ],
+    "title": [
+      "claim_fc7b6a64231eb90dfb17"
+    ]
+  },
+  "id": "mentor_904c0594d6c2f1a128ad",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fc7b6a64231eb90dfb17"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨亚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7555c3b43e1a94198b25",
+      "claim_ids": [
+        "claim_fc7b6a64231eb90dfb17"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangya"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "企业信息化、大数据、人工智能、无人驾驶、自动驾驶算法研究、无人驾驶配送车的研究与应用、基于语言大模型的竞赛类复杂代码生成技术研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangya",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

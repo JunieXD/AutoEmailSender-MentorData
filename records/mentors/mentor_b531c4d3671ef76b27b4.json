@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6dc974fca7f93321aaf5"
+      ],
+      "ended_at": null,
+      "id": "aff_7f285669bb3453d19969",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_637aa74af73e0513e663",
+      "source_url": "https://teacher.bupt.edu.cn/qifeng",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6dc974fca7f93321aaf5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7f285669bb3453d19969",
+      "claim_ids": [
+        "claim_6dc974fca7f93321aaf5"
+      ],
+      "is_primary": true,
+      "normalized_value": "qifeng@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/qifeng",
+      "status": "current",
+      "type": "email",
+      "value": "qifeng@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6dc974fca7f93321aaf5"
+    ],
+    "email": [
+      "claim_6dc974fca7f93321aaf5"
+    ],
+    "name": [
+      "claim_6dc974fca7f93321aaf5"
+    ],
+    "profile_url": [
+      "claim_6dc974fca7f93321aaf5"
+    ],
+    "research_directions": [
+      "claim_6dc974fca7f93321aaf5"
+    ],
+    "status": [
+      "claim_6dc974fca7f93321aaf5"
+    ],
+    "title": [
+      "claim_6dc974fca7f93321aaf5"
+    ]
+  },
+  "id": "mentor_b531c4d3671ef76b27b4",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6dc974fca7f93321aaf5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "亓峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7f285669bb3453d19969",
+      "claim_ids": [
+        "claim_6dc974fca7f93321aaf5"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/qifeng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "通信软件、网络与数据管理、区块链"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/qifeng",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

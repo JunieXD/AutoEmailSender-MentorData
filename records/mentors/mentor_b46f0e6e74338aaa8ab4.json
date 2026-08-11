@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_64c0b242321ba12b32c3"
+      ],
+      "ended_at": null,
+      "id": "aff_dead7a40981fc8d9a8c2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhouanfu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_64c0b242321ba12b32c3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dead7a40981fc8d9a8c2",
+      "claim_ids": [
+        "claim_64c0b242321ba12b32c3"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouanfu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhouanfu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhouanfu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_64c0b242321ba12b32c3"
+    ],
+    "email": [
+      "claim_64c0b242321ba12b32c3"
+    ],
+    "name": [
+      "claim_64c0b242321ba12b32c3"
+    ],
+    "profile_url": [
+      "claim_64c0b242321ba12b32c3"
+    ],
+    "recent_papers": [
+      "claim_64c0b242321ba12b32c3"
+    ],
+    "research_directions": [
+      "claim_64c0b242321ba12b32c3"
+    ],
+    "status": [
+      "claim_64c0b242321ba12b32c3"
+    ],
+    "title": [
+      "claim_64c0b242321ba12b32c3"
+    ]
+  },
+  "id": "mentor_b46f0e6e74338aaa8ab4",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_64c0b242321ba12b32c3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周安福"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dead7a40981fc8d9a8c2",
+      "claim_ids": [
+        "claim_64c0b242321ba12b32c3"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhouanfu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "[MobiCom'25] MoleSen: From Macro Sensing to Micro Molecular-level Taste Sensing",
+    "[NSDI'25]Tooth: Toward Optimal Balance of Video QoE and Redundancy Cost by Fine-Grained FEC in Cloud Gaming Streaming",
+    "[MobiCom'24]Venus: Enhancing QoE of Crowdsourced Live Video Streaming by Exploiting Multiflow Viewer Assistance",
+    "[UbiComp'24]AirECG: Contactless Electrocardiogram for Cardiac Disease Monitoring via mmWave Sensing and Cross-domain Diffusion Model",
+    "[UbiComp'24]airTac: A Contactless Digital Tactile Receptor for Detecting Material and Roughness via Terahertz Sensing",
+    "[UbiComp'24]mmArrhythmia: Contactless Arrhythmia Detection via mmWave Sensing",
+    "[TMC'24]mmTAA: A Contact-Less Thoracoabdominal Asynchrony Measurement System Based on mmWave Sensing",
+    "[MobiCom'22] Tutti: coupling 5G RAN and mobile edge computing for latency-critical video analytics"
+  ],
+  "research_directions": [
+    "AI硬件、多模态感知AI模型、AI-driven networking,应用于主动健康、宠物智能设备、视频物联等领域。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhouanfu/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

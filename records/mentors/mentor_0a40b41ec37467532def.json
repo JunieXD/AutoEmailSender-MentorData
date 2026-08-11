@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_73dd8ef589f2181adfdf"
+      ],
+      "ended_at": null,
+      "id": "aff_9edb1d5533c34ea1d7e1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/niukun",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_73dd8ef589f2181adfdf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9edb1d5533c34ea1d7e1",
+      "claim_ids": [
+        "claim_73dd8ef589f2181adfdf"
+      ],
+      "is_primary": true,
+      "normalized_value": "niukun@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/niukun",
+      "status": "current",
+      "type": "email",
+      "value": "niukun@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_73dd8ef589f2181adfdf"
+    ],
+    "email": [
+      "claim_73dd8ef589f2181adfdf"
+    ],
+    "name": [
+      "claim_73dd8ef589f2181adfdf"
+    ],
+    "profile_url": [
+      "claim_73dd8ef589f2181adfdf"
+    ],
+    "research_directions": [
+      "claim_73dd8ef589f2181adfdf"
+    ],
+    "status": [
+      "claim_73dd8ef589f2181adfdf"
+    ],
+    "title": [
+      "claim_73dd8ef589f2181adfdf"
+    ]
+  },
+  "id": "mentor_0a40b41ec37467532def",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_73dd8ef589f2181adfdf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "牛琨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9edb1d5533c34ea1d7e1",
+      "claim_ids": [
+        "claim_73dd8ef589f2181adfdf"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/niukun"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能引擎、机器学习与大数据算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/niukun",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_96c45f3d80631db2fd51"
+      ],
+      "ended_at": null,
+      "id": "aff_cc6f5b975965ed91b211",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_637aa74af73e0513e663",
+      "source_url": "https://teacher.bupt.edu.cn/gaozhipeng",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_96c45f3d80631db2fd51"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cc6f5b975965ed91b211",
+      "claim_ids": [
+        "claim_96c45f3d80631db2fd51"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaozhipeng@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/gaozhipeng",
+      "status": "current",
+      "type": "email",
+      "value": "gaozhipeng@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_96c45f3d80631db2fd51"
+    ],
+    "email": [
+      "claim_96c45f3d80631db2fd51"
+    ],
+    "name": [
+      "claim_96c45f3d80631db2fd51"
+    ],
+    "profile_url": [
+      "claim_96c45f3d80631db2fd51"
+    ],
+    "research_directions": [
+      "claim_96c45f3d80631db2fd51"
+    ],
+    "status": [
+      "claim_96c45f3d80631db2fd51"
+    ],
+    "title": [
+      "claim_96c45f3d80631db2fd51"
+    ]
+  },
+  "id": "mentor_47cac5ff2e12c060a4f7",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_96c45f3d80631db2fd51"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高志鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cc6f5b975965ed91b211",
+      "claim_ids": [
+        "claim_96c45f3d80631db2fd51"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/gaozhipeng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "边缘计算,区块链,大数据,物联网 区块链跨链技术与智能应用,边缘数据分析与边缘智能系统,大数据智能管理与分析技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/gaozhipeng",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

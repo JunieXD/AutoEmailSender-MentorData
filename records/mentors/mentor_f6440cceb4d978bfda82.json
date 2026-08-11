@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_814da2363b3c8235daa5"
+      ],
+      "ended_at": null,
+      "id": "aff_a9fa60c0ac187bba4af3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangyi2",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_814da2363b3c8235daa5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a9fa60c0ac187bba4af3",
+      "claim_ids": [
+        "claim_814da2363b3c8235daa5"
+      ],
+      "is_primary": true,
+      "normalized_value": "yiwang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangyi2",
+      "status": "current",
+      "type": "email",
+      "value": "yiwang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_814da2363b3c8235daa5"
+    ],
+    "email": [
+      "claim_814da2363b3c8235daa5"
+    ],
+    "name": [
+      "claim_814da2363b3c8235daa5"
+    ],
+    "profile_url": [
+      "claim_814da2363b3c8235daa5"
+    ],
+    "research_directions": [
+      "claim_814da2363b3c8235daa5"
+    ],
+    "status": [
+      "claim_814da2363b3c8235daa5"
+    ],
+    "title": [
+      "claim_814da2363b3c8235daa5"
+    ]
+  },
+  "id": "mentor_f6440cceb4d978bfda82",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_814da2363b3c8235daa5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王祎"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a9fa60c0ac187bba4af3",
+      "claim_ids": [
+        "claim_814da2363b3c8235daa5"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangyi2"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "社会计算、计算机支持的协同工作、软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangyi2",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

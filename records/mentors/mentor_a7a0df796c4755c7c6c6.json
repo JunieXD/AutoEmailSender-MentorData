@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bdfd4eddc2cd0285fdee"
+      ],
+      "ended_at": null,
+      "id": "aff_163405d763a77159717e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/hebo1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_bdfd4eddc2cd0285fdee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_163405d763a77159717e",
+      "claim_ids": [
+        "claim_bdfd4eddc2cd0285fdee"
+      ],
+      "is_primary": true,
+      "normalized_value": "hebo@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/hebo1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hebo@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ],
+    "email": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ],
+    "name": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ],
+    "profile_url": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ],
+    "recent_papers": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ],
+    "research_directions": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ],
+    "status": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ],
+    "title": [
+      "claim_bdfd4eddc2cd0285fdee"
+    ]
+  },
+  "id": "mentor_a7a0df796c4755c7c6c6",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bdfd4eddc2cd0285fdee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "何波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_163405d763a77159717e",
+      "claim_ids": [
+        "claim_bdfd4eddc2cd0285fdee"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/hebo1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Region Partitioning-Based Scalable Real-Time Network Verification via Native Distributed Architecture",
+    "HyperWay: Proactively Mitigating Transient Congestion with Edge Capsule Tunnel in Massive IoT",
+    "Switch-Assisted Selective Retransmission for Lossy RDMA Networks",
+    "HiAsCC: Hierarchical Asynchronous Collective Communication Method for Large Model Training",
+    "LLM-Powered Intent-Driven Configuration Generation for Multi-Vendor Networks",
+    "OIPR: Evaluation for Time-series Anomaly Detection Inspired by Operator Interest",
+    "Hammurabi: Establish Cooperative Order from Pre-trained Policies in Multi-UAV Networks",
+    "高动态无人机场景下多路径传输调度算法"
+  ],
+  "research_directions": [
+    "算力网络、大模型集合通信、智能体网络、RDMA传输等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/hebo1/zh_CN/index.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

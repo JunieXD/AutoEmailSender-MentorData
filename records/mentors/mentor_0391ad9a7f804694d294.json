@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0a59fade25e82035c4af"
+      ],
+      "ended_at": null,
+      "id": "aff_2b6dbb59d7abc89c518a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/liuwei3",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_0a59fade25e82035c4af"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2b6dbb59d7abc89c518a",
+      "claim_ids": [
+        "claim_0a59fade25e82035c4af"
+      ],
+      "is_primary": true,
+      "normalized_value": "wliu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/liuwei3",
+      "status": "current",
+      "type": "email",
+      "value": "wliu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0a59fade25e82035c4af"
+    ],
+    "email": [
+      "claim_0a59fade25e82035c4af"
+    ],
+    "name": [
+      "claim_0a59fade25e82035c4af"
+    ],
+    "profile_url": [
+      "claim_0a59fade25e82035c4af"
+    ],
+    "research_directions": [
+      "claim_0a59fade25e82035c4af"
+    ],
+    "status": [
+      "claim_0a59fade25e82035c4af"
+    ],
+    "title": [
+      "claim_0a59fade25e82035c4af"
+    ]
+  },
+  "id": "mentor_0391ad9a7f804694d294",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0a59fade25e82035c4af"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2b6dbb59d7abc89c518a",
+      "claim_ids": [
+        "claim_0a59fade25e82035c4af"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/liuwei3"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "物联网,工业互联网,大数据技术,人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/liuwei3",
+  "title": "讲师",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

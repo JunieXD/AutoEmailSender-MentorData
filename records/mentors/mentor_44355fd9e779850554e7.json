@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f3cb75e2feeb9bcb328e"
+      ],
+      "ended_at": null,
+      "id": "aff_747abe82236ba74adc9e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangzunliang",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f3cb75e2feeb9bcb328e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_747abe82236ba74adc9e",
+      "claim_ids": [
+        "claim_f3cb75e2feeb9bcb328e"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangzl@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangzunliang",
+      "status": "current",
+      "type": "email",
+      "value": "wangzl@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f3cb75e2feeb9bcb328e"
+    ],
+    "email": [
+      "claim_f3cb75e2feeb9bcb328e"
+    ],
+    "name": [
+      "claim_f3cb75e2feeb9bcb328e"
+    ],
+    "profile_url": [
+      "claim_f3cb75e2feeb9bcb328e"
+    ],
+    "research_directions": [
+      "claim_f3cb75e2feeb9bcb328e"
+    ],
+    "status": [
+      "claim_f3cb75e2feeb9bcb328e"
+    ]
+  },
+  "id": "mentor_44355fd9e779850554e7",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f3cb75e2feeb9bcb328e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王尊亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_747abe82236ba74adc9e",
+      "claim_ids": [
+        "claim_f3cb75e2feeb9bcb328e"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangzunliang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "互联网技术、多媒体信息处理技术以及应用软件研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangzunliang",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

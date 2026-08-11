@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9aeb8eb1c38e1c0a5465"
+      ],
+      "ended_at": null,
+      "id": "aff_72290f583d0dc799648c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_71f05b46835191d2b4b6",
+      "source_url": "https://teacher.bupt.edu.cn/lianghongliang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9aeb8eb1c38e1c0a5465"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_72290f583d0dc799648c",
+      "claim_ids": [
+        "claim_9aeb8eb1c38e1c0a5465"
+      ],
+      "is_primary": true,
+      "normalized_value": "hliang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/lianghongliang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hliang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ],
+    "email": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ],
+    "name": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ],
+    "profile_url": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ],
+    "recent_papers": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ],
+    "research_directions": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ],
+    "status": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ],
+    "title": [
+      "claim_9aeb8eb1c38e1c0a5465"
+    ]
+  },
+  "id": "mentor_a82488838f1eab704a15",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9aeb8eb1c38e1c0a5465"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "梁洪亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_72290f583d0dc799648c",
+      "claim_ids": [
+        "claim_9aeb8eb1c38e1c0a5465"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/lianghongliang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Qianyue Wei; Zheng Zhang; Qiuping Yi; Zongcheng Ji;Hongliang Liang; CosFormer: A Code Semantic-Aware Transformer for Vulnerability Detection, IEEE Transactions on Software Engineering (TSE2026), DOI: 10.1109/tse.2026.3659630, (CCF A)",
+    "Jie Liu, Lianda Yao, Yanqi Li,Hongliang Liang: Toward Automatic Heap Exploit Generation by Using Heap Layout Constraints on Binary Programs. IEEE Trans. Inf. Forensics Secur. 20: 11623-11635 (TIFS) (2025) (CCF A)",
+    "Hongliang Liang; Luming Yin; Wenying Hu; Yuxing Li; Wuwei Shen ; Unified and Split Symbolic Execution for Exposing Semantic Differences, ACM Transactions on Software Engineering and Methodology, (TOSEM)2025 (CCF A)",
+    "Ruikang Ni, Da Xiao, Qingye Meng, Xiangyu Li, Shihui Zheng,Hongliang Liang: Benchmarking and Understanding Compositional Relational Reasoning of LLMs. AAAI(2025) (CCF A)",
+    "Hongliang Liang, Xiangyu Li, Da Xiao, etc: Generative Pre-Trained Transformer-Based Reinforcement Learning for Testing Web Application Firewalls.IEEE Trans. Dependable Secur. Comput.(TDSC) 2024 (CCF A)",
+    "Hongliang Liang, Xinglin Yu, Xianglin Cheng, etc: Multiple Targets Directed Greybox Fuzzing. IEEE Trans. Dependable Secur. Comput. (TDSC) 2024 (CCF A)",
+    "Dongyu Ma, Zeyu Liang, Luming Yin,Hongliang Liang: Symbolic testing of floating-point bugs and exceptions. J. Syst. Softw. 219: 112226 JSS(2025) (CCF-B)",
+    "Xinglin Yu,Hongliang Liang, Chunlin Wang: Multiple Targets Directed Greybox Fuzzing: From Reachable to Exploited. SANER2024: 907-917 (CCF-B)"
+  ],
+  "research_directions": [
+    "智能系统与强化学习、软件测试与验证、可信软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/lianghongliang/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

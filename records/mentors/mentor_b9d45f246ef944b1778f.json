@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9fe247e004f6f8ed9bdf"
+      ],
+      "ended_at": null,
+      "id": "aff_74a22b3d59e3fdb0b229",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_14390f1744cea6ce4ad9",
+      "source_url": "https://teacher.bupt.edu.cn/sunli1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9fe247e004f6f8ed9bdf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_74a22b3d59e3fdb0b229",
+      "claim_ids": [
+        "claim_9fe247e004f6f8ed9bdf"
+      ],
+      "is_primary": true,
+      "normalized_value": "lsun@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/sunli1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lsun@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ],
+    "email": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ],
+    "name": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ],
+    "profile_url": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ],
+    "recent_papers": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ],
+    "research_directions": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ],
+    "status": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ],
+    "title": [
+      "claim_9fe247e004f6f8ed9bdf"
+    ]
+  },
+  "id": "mentor_b9d45f246ef944b1778f",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9fe247e004f6f8ed9bdf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙笠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_74a22b3d59e3fdb0b229",
+      "claim_ids": [
+        "claim_9fe247e004f6f8ed9bdf"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/sunli1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "LSEnet: Lorentz Structural Entropy Neural Network for Deep Graph Clustering, ICML 2024, Oral (Top 1%)(CCF-A类)",
+    "Deeper with Riemannian Geometry: Overcoming Oversmoothing and Oversquashing for Graph Foundation Models, NeurIPS 2025(CCF-A类)",
+    "Spiking Graph Neural Network on Riemannian Manifolds, NeurIPS 2024(CCF-A类)",
+    "RiemannGFM: Learning a Graph Foundation Model from Riemannian Geometry, ACM Web Conference 2025 (WWW),Oral. (CCF-A类)",
+    "RicciNet: Deep Clustering via A Riemannian Generative Model, ACM Web Conference 2024 (WWW). (CCF-A类)",
+    "Aligning Dynamic Social Networks: An Optimization over Dynamic Graph Autoencoder, IEEE TKDE, 2023, 35(6): 5597-5611. (CCF-A类)",
+    "Pioneer: Physics-informed Riemannian Graph ODE for entropy-increasing Dynamics, AAAI 2025, Oral.(CCF-A类)",
+    "A Self-supervised Mixed-curvature Graph Neural Network, AAAI 2022, pp. 4146-4155.Rate: 15%, Oral. (CCF-A类)"
+  ],
+  "research_directions": [
+    "黎曼机器学习、图数据挖掘、AI4Science、互联网内容安全、大模型安全、图基础模型、黎曼深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/sunli1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

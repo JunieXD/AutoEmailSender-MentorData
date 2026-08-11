@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3402a318a281cecb0f0b"
+      ],
+      "ended_at": null,
+      "id": "aff_0a4236ad9150cf26f537",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wuxin",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3402a318a281cecb0f0b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0a4236ad9150cf26f537",
+      "claim_ids": [
+        "claim_3402a318a281cecb0f0b"
+      ],
+      "is_primary": true,
+      "normalized_value": "xin.wu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wuxin",
+      "status": "current",
+      "type": "email",
+      "value": "xin.wu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3402a318a281cecb0f0b"
+    ],
+    "email": [
+      "claim_3402a318a281cecb0f0b"
+    ],
+    "name": [
+      "claim_3402a318a281cecb0f0b"
+    ],
+    "profile_url": [
+      "claim_3402a318a281cecb0f0b"
+    ],
+    "research_directions": [
+      "claim_3402a318a281cecb0f0b"
+    ],
+    "status": [
+      "claim_3402a318a281cecb0f0b"
+    ],
+    "title": [
+      "claim_3402a318a281cecb0f0b"
+    ]
+  },
+  "id": "mentor_39630a8ab9659f2ec786",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3402a318a281cecb0f0b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0a4236ad9150cf26f537",
+      "claim_ids": [
+        "claim_3402a318a281cecb0f0b"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wuxin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、多模态遥感、无人机协同感知、微弱小目标检测/识别/跟踪"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wuxin",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

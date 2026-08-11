@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f4f5af1c6f31bced7883"
+      ],
+      "ended_at": null,
+      "id": "aff_98eb30dd8b7a9e7ac75e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/yangzhen",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f4f5af1c6f31bced7883"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_98eb30dd8b7a9e7ac75e",
+      "claim_ids": [
+        "claim_f4f5af1c6f31bced7883"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangzhen@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangzhen",
+      "status": "current",
+      "type": "email",
+      "value": "yangzhen@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f4f5af1c6f31bced7883"
+    ],
+    "email": [
+      "claim_f4f5af1c6f31bced7883"
+    ],
+    "name": [
+      "claim_f4f5af1c6f31bced7883"
+    ],
+    "profile_url": [
+      "claim_f4f5af1c6f31bced7883"
+    ],
+    "research_directions": [
+      "claim_f4f5af1c6f31bced7883"
+    ],
+    "status": [
+      "claim_f4f5af1c6f31bced7883"
+    ],
+    "title": [
+      "claim_f4f5af1c6f31bced7883"
+    ]
+  },
+  "id": "mentor_e44fe2ddf39cc71b671d",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f4f5af1c6f31bced7883"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨震"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_98eb30dd8b7a9e7ac75e",
+      "claim_ids": [
+        "claim_f4f5af1c6f31bced7883"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangzhen"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自动驾驶关键技术、移动云计算、超媒体计算与机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangzhen",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

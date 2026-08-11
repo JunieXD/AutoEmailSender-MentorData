@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bc95005af90acb7e54e4"
+      ],
+      "ended_at": null,
+      "id": "aff_b873846243a900b737f3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/fenglei",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bc95005af90acb7e54e4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b873846243a900b737f3",
+      "claim_ids": [
+        "claim_bc95005af90acb7e54e4"
+      ],
+      "is_primary": true,
+      "normalized_value": "fenglei@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/fenglei",
+      "status": "current",
+      "type": "email",
+      "value": "fenglei@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bc95005af90acb7e54e4"
+    ],
+    "email": [
+      "claim_bc95005af90acb7e54e4"
+    ],
+    "name": [
+      "claim_bc95005af90acb7e54e4"
+    ],
+    "profile_url": [
+      "claim_bc95005af90acb7e54e4"
+    ],
+    "recent_papers": [
+      "claim_bc95005af90acb7e54e4"
+    ],
+    "research_directions": [
+      "claim_bc95005af90acb7e54e4"
+    ],
+    "status": [
+      "claim_bc95005af90acb7e54e4"
+    ],
+    "title": [
+      "claim_bc95005af90acb7e54e4"
+    ]
+  },
+  "id": "mentor_262e6ec82c918318baf1",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bc95005af90acb7e54e4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "丰雷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b873846243a900b737f3",
+      "claim_ids": [
+        "claim_bc95005af90acb7e54e4"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/fenglei"
+    }
+  ],
+  "recent_papers": [
+    "Intelligent Reflecting Surface Aided Wireless Clock Synchronization for Indoor Substation",
+    "Decentralized Cooperative Caching and Offloading for Virtual Reality Task Based on GAN-Powered Multi-Agent Reinforcement Learning",
+    "Predictable Wireless Networked Scheduling for Bridging Hybrid Time-Sensitive and Real-Time Services",
+    "Multi-cluster Cooperative Offloading for VR Task: A MARL Approach with Graph Embedding",
+    "xURLLC-Aware Service Provisioning in Vehicular Networks: A Semantic Communication Perspective",
+    "Digital Twin Driven Service Self-Healing With Graph Neural Networks in 6G Edge Networks",
+    "Ergodic Capacity Analysis of IRS Aided Wireless-Powered Relay Communication Network",
+    "Energy- and Quality-Aware Task Offloading for WebVR Service in Terminal-Aided Mobile Edge Network"
+  ],
+  "research_directions": [
+    "确定性网络,工业互联网信息通信",
+    "无线网络管理,B5G/6G网络技术",
+    "分布式AI技术,联邦学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/fenglei",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

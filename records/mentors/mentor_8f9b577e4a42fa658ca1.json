@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4fea8b6d9d3547ccda31"
+      ],
+      "ended_at": null,
+      "id": "aff_f4cb61bf262424bd1b13",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_14390f1744cea6ce4ad9",
+      "source_url": "https://teacher.bupt.edu.cn/xiedongliang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4fea8b6d9d3547ccda31"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f4cb61bf262424bd1b13",
+      "claim_ids": [
+        "claim_4fea8b6d9d3547ccda31"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiedl@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/xiedongliang",
+      "status": "current",
+      "type": "email",
+      "value": "xiedl@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4fea8b6d9d3547ccda31"
+    ],
+    "email": [
+      "claim_4fea8b6d9d3547ccda31"
+    ],
+    "name": [
+      "claim_4fea8b6d9d3547ccda31"
+    ],
+    "profile_url": [
+      "claim_4fea8b6d9d3547ccda31"
+    ],
+    "status": [
+      "claim_4fea8b6d9d3547ccda31"
+    ],
+    "title": [
+      "claim_4fea8b6d9d3547ccda31"
+    ]
+  },
+  "id": "mentor_8f9b577e4a42fa658ca1",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4fea8b6d9d3547ccda31"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢东亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f4cb61bf262424bd1b13",
+      "claim_ids": [
+        "claim_4fea8b6d9d3547ccda31"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xiedongliang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xiedongliang",
+  "title": "教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

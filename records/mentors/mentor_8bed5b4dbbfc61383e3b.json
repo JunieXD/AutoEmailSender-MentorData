@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_99adffc130e9739f2485"
+      ],
+      "ended_at": null,
+      "id": "aff_78a12f1bea280d0ff28b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_637aa74af73e0513e663",
+      "source_url": "https://teacher.bupt.edu.cn/xiongao",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_99adffc130e9739f2485"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_78a12f1bea280d0ff28b",
+      "claim_ids": [
+        "claim_99adffc130e9739f2485"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiongao@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/xiongao",
+      "status": "current",
+      "type": "email",
+      "value": "xiongao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_99adffc130e9739f2485"
+    ],
+    "email": [
+      "claim_99adffc130e9739f2485"
+    ],
+    "name": [
+      "claim_99adffc130e9739f2485"
+    ],
+    "profile_url": [
+      "claim_99adffc130e9739f2485"
+    ],
+    "status": [
+      "claim_99adffc130e9739f2485"
+    ],
+    "title": [
+      "claim_99adffc130e9739f2485"
+    ]
+  },
+  "id": "mentor_8bed5b4dbbfc61383e3b",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_99adffc130e9739f2485"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "熊翱"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_78a12f1bea280d0ff28b",
+      "claim_ids": [
+        "claim_99adffc130e9739f2485"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xiongao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xiongao",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

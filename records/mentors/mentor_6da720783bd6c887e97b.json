@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_14fc5e014a6c652d8ce1"
+      ],
+      "ended_at": null,
+      "id": "aff_3df7efe44ef0aeaff26b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/guogang",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_14fc5e014a6c652d8ce1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3df7efe44ef0aeaff26b",
+      "claim_ids": [
+        "claim_14fc5e014a6c652d8ce1"
+      ],
+      "is_primary": true,
+      "normalized_value": "guogang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/guogang",
+      "status": "current",
+      "type": "email",
+      "value": "guogang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_14fc5e014a6c652d8ce1"
+    ],
+    "email": [
+      "claim_14fc5e014a6c652d8ce1"
+    ],
+    "name": [
+      "claim_14fc5e014a6c652d8ce1"
+    ],
+    "profile_url": [
+      "claim_14fc5e014a6c652d8ce1"
+    ],
+    "research_directions": [
+      "claim_14fc5e014a6c652d8ce1"
+    ],
+    "status": [
+      "claim_14fc5e014a6c652d8ce1"
+    ]
+  },
+  "id": "mentor_6da720783bd6c887e97b",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_14fc5e014a6c652d8ce1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭岗"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3df7efe44ef0aeaff26b",
+      "claim_ids": [
+        "claim_14fc5e014a6c652d8ce1"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/guogang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "互联网恶意网站识别发现、互联网信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/guogang",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

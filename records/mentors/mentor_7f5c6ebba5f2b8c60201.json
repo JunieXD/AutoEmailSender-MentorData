@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9e0a26e5659f88f55c75"
+      ],
+      "ended_at": null,
+      "id": "aff_a0924375457900c73fcb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/wangxueying1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9e0a26e5659f88f55c75"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a0924375457900c73fcb",
+      "claim_ids": [
+        "claim_9e0a26e5659f88f55c75"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangxueying@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/wangxueying1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangxueying@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9e0a26e5659f88f55c75"
+    ],
+    "email": [
+      "claim_9e0a26e5659f88f55c75"
+    ],
+    "name": [
+      "claim_9e0a26e5659f88f55c75"
+    ],
+    "profile_url": [
+      "claim_9e0a26e5659f88f55c75"
+    ],
+    "recent_papers": [
+      "claim_9e0a26e5659f88f55c75"
+    ],
+    "research_directions": [
+      "claim_9e0a26e5659f88f55c75"
+    ],
+    "status": [
+      "claim_9e0a26e5659f88f55c75"
+    ],
+    "title": [
+      "claim_9e0a26e5659f88f55c75"
+    ]
+  },
+  "id": "mentor_7f5c6ebba5f2b8c60201",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9e0a26e5659f88f55c75"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王雪莹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a0924375457900c73fcb",
+      "claim_ids": [
+        "claim_9e0a26e5659f88f55c75"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wangxueying1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "DyPARS: Dynamic-Shape DNN Optimization via Pareto-Aware MCTS for Graph Variants",
+    "OptiFX: Automatic Optimization for Convolutional Neural Networks with Aggressive Operator Fusion on GPUs",
+    "Fast convolution meets low precision: Exploring efficient quantized Winograd convolution on modern CPUs",
+    "An application-oblivious memory scheduling system for DNN accelerators",
+    "Facilitating hardware-aware neural architecture search with learning-based predictive models",
+    "CoAxNN: Optimizing on-device deep learning with conditional approximate neural networks",
+    "Accelerating deep learning inference with cross-layer data reuse on GPUs"
+  ],
+  "research_directions": [
+    "聚焦国产芯片上的AI Infra、编译优化研究,开展AI编译、软硬协同、算子优化、计算图优化、混合精度量化等相关工作"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wangxueying1/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

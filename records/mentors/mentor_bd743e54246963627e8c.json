@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b01a996eded3dc76ac5c"
+      ],
+      "ended_at": null,
+      "id": "aff_c6ab03f7521547026cb4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/kangxuejing",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b01a996eded3dc76ac5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c6ab03f7521547026cb4",
+      "claim_ids": [
+        "claim_b01a996eded3dc76ac5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "kangxuejing@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/kangxuejing",
+      "status": "current",
+      "type": "email",
+      "value": "kangxuejing@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b01a996eded3dc76ac5c"
+    ],
+    "email": [
+      "claim_b01a996eded3dc76ac5c"
+    ],
+    "name": [
+      "claim_b01a996eded3dc76ac5c"
+    ],
+    "profile_url": [
+      "claim_b01a996eded3dc76ac5c"
+    ],
+    "recent_papers": [
+      "claim_b01a996eded3dc76ac5c"
+    ],
+    "research_directions": [
+      "claim_b01a996eded3dc76ac5c"
+    ],
+    "status": [
+      "claim_b01a996eded3dc76ac5c"
+    ],
+    "title": [
+      "claim_b01a996eded3dc76ac5c"
+    ]
+  },
+  "id": "mentor_bd743e54246963627e8c",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b01a996eded3dc76ac5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "康学净"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c6ab03f7521547026cb4",
+      "claim_ids": [
+        "claim_b01a996eded3dc76ac5c"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/kangxuejing"
+    }
+  ],
+  "recent_papers": [
+    "Pei Zhou, Xuejing Kang*, Anlong Ming. Vine spread for superpixel segmentation, IEEE Transactions on Image Processing. 2023, 32: 878-891.",
+    "Chunpeng Li, Xuejing Kang*, Lei Zhu, Lizhu Ye, Panhe Feng, Anlong Ming. ICDA: Illumination-coupled domain adaptation framework for unsupervised nighttime semantic segmentation, Proceedings of the 32th International Joint Conference on Artificial Intelligence(IJCAI).2023.",
+    "Chunxiao Li, Xuejing Kang, Anlong Ming. WBFlow: Few-shot white balance for sRGB images via reversible neural flows, Proceedings of the 32th International Joint Conference on Artificial Intelligence(IJCAI), 2023.",
+    "Chunxiao Li, Xuejing Kang, Zhifeng Zhang, Anlong Ming. SWBNet: A stable white balance network for sRGB images, Proceedings of the 37th AAAI conference on Artificial Intelligence(AAAI). pp. Feb. 7-Feb. 14, 2023.",
+    "Zhifeng Zhang, Xuejing Kang, Anlong Ming. Domain adversarial learning for color constancy, Proceedings of the 31th International Joint Conference on Artificial Intelligence and the 25th European conference on Artificial Intelligence(IJCAI). pp. July 23-July 29, 2022.",
+    "Yuxiang Tang, Xuejing Kang, Chunxiao Li, Zhaowen Lin, Anlong Ming. Transfer learning for color constancy via statistic perspective, Proceedings of the 36th AAAI conference on Artificial Intelligence(AAAI). pp. Feb. 22-Mar. 01, 2022.",
+    "Lei Zhu, Xuejing Kang*, Anlong Ming. Explored normalized cut with random walk refining term for image segmentation, IEEE Transactions on Image Processing. 2022, 31: 2893-2906.",
+    "Xuejing Kang, Peiqi Duan, Ruyu Xu. Single image super-resolution based on Mapping-vector clustering and nonlinear pixel-reconstruction. Signal Processing: Image Communication. 2022, 100: 116501."
+  ],
+  "research_directions": [
+    "图像信号处理、深度学习与计算机视觉、新型视觉安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/kangxuejing",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}

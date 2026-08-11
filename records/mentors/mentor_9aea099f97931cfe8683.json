@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7977d761f056fd09f1e8"
+      ],
+      "ended_at": null,
+      "id": "aff_2e78698b5a40d9eeb545",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/zhangyiran/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_7977d761f056fd09f1e8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2e78698b5a40d9eeb545",
+      "claim_ids": [
+        "claim_7977d761f056fd09f1e8"
+      ],
+      "is_primary": true,
+      "normalized_value": "yiranzhang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhangyiran/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yiranzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7977d761f056fd09f1e8"
+    ],
+    "email": [
+      "claim_7977d761f056fd09f1e8"
+    ],
+    "name": [
+      "claim_7977d761f056fd09f1e8"
+    ],
+    "profile_url": [
+      "claim_7977d761f056fd09f1e8"
+    ],
+    "recent_papers": [
+      "claim_7977d761f056fd09f1e8"
+    ],
+    "research_directions": [
+      "claim_7977d761f056fd09f1e8"
+    ],
+    "status": [
+      "claim_7977d761f056fd09f1e8"
+    ]
+  },
+  "id": "mentor_9aea099f97931cfe8683",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7977d761f056fd09f1e8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张乙然"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2e78698b5a40d9eeb545",
+      "claim_ids": [
+        "claim_7977d761f056fd09f1e8"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhangyiran/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Revisiting Congestion Control for Lossless Ethernet",
+    "Congestion Detection in Lossless Networks",
+    "Revisiting Congestion Detection in Lossless Networks",
+    "VMS: Load Balancing Based on the Virtual Switch Layer in Datacenter Networks",
+    "Receiver-Driven Congestion Control for InfiniBand"
+  ],
+  "research_directions": [
+    "智算网络、网络传输优化、新型网络与卫星计算、网络流量管理与控制、数据中心网络、网络体系结构、卫星网络等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhangyiran/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

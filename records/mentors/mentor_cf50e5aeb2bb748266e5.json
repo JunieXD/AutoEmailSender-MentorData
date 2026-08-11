@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_404c6a4687664742ed3d"
+      ],
+      "ended_at": null,
+      "id": "aff_b74194c6af7ce8335a42",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_71f05b46835191d2b4b6",
+      "source_url": "http://teacher.bupt.edu.cn/lishigang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_404c6a4687664742ed3d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b74194c6af7ce8335a42",
+      "claim_ids": [
+        "claim_404c6a4687664742ed3d"
+      ],
+      "is_primary": true,
+      "normalized_value": "lishigang@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "http://teacher.bupt.edu.cn/lishigang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lishigang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_404c6a4687664742ed3d"
+    ],
+    "email": [
+      "claim_404c6a4687664742ed3d"
+    ],
+    "name": [
+      "claim_404c6a4687664742ed3d"
+    ],
+    "profile_url": [
+      "claim_404c6a4687664742ed3d"
+    ],
+    "research_directions": [
+      "claim_404c6a4687664742ed3d"
+    ],
+    "status": [
+      "claim_404c6a4687664742ed3d"
+    ]
+  },
+  "id": "mentor_cf50e5aeb2bb748266e5",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_404c6a4687664742ed3d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李士刚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b74194c6af7ce8335a42",
+      "claim_ids": [
+        "claim_404c6a4687664742ed3d"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "http://teacher.bupt.edu.cn/lishigang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大模型系统、并行计算、异构计算、高性能计算、计算机系统结构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.bupt.edu.cn/lishigang/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

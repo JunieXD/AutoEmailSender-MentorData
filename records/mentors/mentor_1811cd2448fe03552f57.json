@@ -1,0 +1,94 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_731203343c9adbf77cae"
+      ],
+      "ended_at": null,
+      "id": "aff_6fb5a31966b6c5cfef78",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/xiaohan1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_731203343c9adbf77cae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6fb5a31966b6c5cfef78",
+      "claim_ids": [
+        "claim_731203343c9adbf77cae"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaohan@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/xiaohan1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaohan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_731203343c9adbf77cae"
+    ],
+    "email": [
+      "claim_731203343c9adbf77cae"
+    ],
+    "name": [
+      "claim_731203343c9adbf77cae"
+    ],
+    "profile_url": [
+      "claim_731203343c9adbf77cae"
+    ],
+    "research_directions": [
+      "claim_731203343c9adbf77cae"
+    ],
+    "status": [
+      "claim_731203343c9adbf77cae"
+    ]
+  },
+  "id": "mentor_1811cd2448fe03552f57",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_731203343c9adbf77cae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖寒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6fb5a31966b6c5cfef78",
+      "claim_ids": [
+        "claim_731203343c9adbf77cae"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xiaohan1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "(1)智能体通信:智能体大小模型端云协同,MCP/A2A大语言智能模型通信协议,边缘智能等",
+    "(2)多媒体通信:流媒体、全景视频/XR游戏、数字人直播等媒体传输优化",
+    "(3)异构数据处理:多模态信息感知(医疗应用)、时序预测、时空关联分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xiaohan1/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

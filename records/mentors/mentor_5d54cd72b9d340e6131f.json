@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_41d16524c0ca1fc200ee"
+      ],
+      "ended_at": null,
+      "id": "aff_7f4bbbab70cdfa8e20ce",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_647a5c31ffe27e5f29fb",
+      "source_url": "https://teacher.bupt.edu.cn/guyonghao",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_41d16524c0ca1fc200ee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7f4bbbab70cdfa8e20ce",
+      "claim_ids": [
+        "claim_41d16524c0ca1fc200ee"
+      ],
+      "is_primary": true,
+      "normalized_value": "guyonghao@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/guyonghao",
+      "status": "current",
+      "type": "email",
+      "value": "guyonghao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_41d16524c0ca1fc200ee"
+    ],
+    "email": [
+      "claim_41d16524c0ca1fc200ee"
+    ],
+    "name": [
+      "claim_41d16524c0ca1fc200ee"
+    ],
+    "profile_url": [
+      "claim_41d16524c0ca1fc200ee"
+    ],
+    "research_directions": [
+      "claim_41d16524c0ca1fc200ee"
+    ],
+    "status": [
+      "claim_41d16524c0ca1fc200ee"
+    ]
+  },
+  "id": "mentor_5d54cd72b9d340e6131f",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_41d16524c0ca1fc200ee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谷勇浩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7f4bbbab70cdfa8e20ce",
+      "claim_ids": [
+        "claim_41d16524c0ca1fc200ee"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/guyonghao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络安全、数据科学与信息处理、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/guyonghao",
+  "title": null,
+  "updated_at": "2026-08-11T10:42:41Z"
+}

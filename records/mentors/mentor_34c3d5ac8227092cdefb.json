@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_63f2a9bf10a290df697f"
+      ],
+      "ended_at": null,
+      "id": "aff_529e636e3b9df5dcd140",
+      "is_primary": true,
+      "observed_at": "2026-08-11T10:42:41Z",
+      "organization_id": "org_auto_dba803732ef7ef00f92b",
+      "source_url": "https://teacher.bupt.edu.cn/zhuyifan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_63f2a9bf10a290df697f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_529e636e3b9df5dcd140",
+      "claim_ids": [
+        "claim_63f2a9bf10a290df697f"
+      ],
+      "is_primary": true,
+      "normalized_value": "yifan_zhu@bupt.edu.cn",
+      "observed_at": "2026-08-11T10:42:41Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhuyifan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yifan_zhu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T10:42:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_63f2a9bf10a290df697f"
+    ],
+    "email": [
+      "claim_63f2a9bf10a290df697f"
+    ],
+    "name": [
+      "claim_63f2a9bf10a290df697f"
+    ],
+    "profile_url": [
+      "claim_63f2a9bf10a290df697f"
+    ],
+    "research_directions": [
+      "claim_63f2a9bf10a290df697f"
+    ],
+    "status": [
+      "claim_63f2a9bf10a290df697f"
+    ],
+    "title": [
+      "claim_63f2a9bf10a290df697f"
+    ]
+  },
+  "id": "mentor_34c3d5ac8227092cdefb",
+  "last_verified_at": "2026-08-11T10:42:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_63f2a9bf10a290df697f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱一凡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_529e636e3b9df5dcd140",
+      "claim_ids": [
+        "claim_63f2a9bf10a290df697f"
+      ],
+      "observed_at": "2026-08-11T10:42:41Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhuyifan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大模型智能体、Graph RAG、图数据挖掘、推荐系统、脑网络分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T10:42:41Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhuyifan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T10:42:41Z"
+}
