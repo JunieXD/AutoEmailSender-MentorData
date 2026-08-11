@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_84f6a3b33577653de5ce"
+      ],
+      "ended_at": null,
+      "id": "aff_0b71efe7b758f1844315",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_b1155542e425b4d80652",
+      "source_url": "https://teacher.nwpu.edu.cn/yuanhuang.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_84f6a3b33577653de5ce"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0b71efe7b758f1844315",
+      "claim_ids": [
+        "claim_84f6a3b33577653de5ce"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanhuang@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/yuanhuang.html",
+      "status": "current",
+      "type": "email",
+      "value": "yuanhuang@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_84f6a3b33577653de5ce"
+    ],
+    "email": [
+      "claim_84f6a3b33577653de5ce"
+    ],
+    "name": [
+      "claim_84f6a3b33577653de5ce"
+    ],
+    "profile_url": [
+      "claim_84f6a3b33577653de5ce"
+    ],
+    "recent_papers": [
+      "claim_84f6a3b33577653de5ce"
+    ],
+    "research_directions": [
+      "claim_84f6a3b33577653de5ce"
+    ],
+    "status": [
+      "claim_84f6a3b33577653de5ce"
+    ],
+    "title": [
+      "claim_84f6a3b33577653de5ce"
+    ]
+  },
+  "id": "mentor_877fcfe07281363d18da",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_84f6a3b33577653de5ce"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄裕安"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0b71efe7b758f1844315",
+      "claim_ids": [
+        "claim_84f6a3b33577653de5ce"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/yuanhuang.html"
+    }
+  ],
+  "recent_papers": [
+    "scBIT: Integrating Single-cell Transcriptomic Data into fMRI-based Prediction for Alzheimer's Disease Diagnosis",
+    "DAGFormer: A graph-based domain adaptation approach for single-cell cancer drug response prediction",
+    "Unsupervised Cell Clustering in Single-Cell RNA Sequencing Data Using a Multi-Graph Transformer",
+    "scTECTA: Asymmetric Deep Transfer Learning for Cross-Patient Tumor Microenvironment Single-Cell Annotation",
+    "scGraphDap: Integrating Functional State Pseudo-labels and Graph Structure Learning for Robust Cell Type Annotation in Tumor Microenvironments",
+    "scExGraph: Explainable Graph Neural Network for Predicting Tumor Environment Components with Single-cell Sequencing Data",
+    "scProGraph: a cell bagging strategy for cell type annotation with gene interaction-aware explainability",
+    "scKAN: Interpretable Single-cell Analysis for Cell-type-specific Gene Discovery and Drug Repurposing via Kolmogorov-Arnold Networks"
+  ],
+  "research_directions": [
+    "生物医学大数据、计算生物学、人工智能与数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/yuanhuang.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

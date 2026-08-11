@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fcfb0a549c0203159a2c"
+      ],
+      "ended_at": null,
+      "id": "aff_e662fa763616ec186095",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/shihaobin.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fcfb0a549c0203159a2c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e662fa763616ec186095",
+      "claim_ids": [
+        "claim_fcfb0a549c0203159a2c"
+      ],
+      "is_primary": true,
+      "normalized_value": "shihaobin@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/shihaobin.html",
+      "status": "current",
+      "type": "email",
+      "value": "shihaobin@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fcfb0a549c0203159a2c"
+    ],
+    "email": [
+      "claim_fcfb0a549c0203159a2c"
+    ],
+    "name": [
+      "claim_fcfb0a549c0203159a2c"
+    ],
+    "profile_url": [
+      "claim_fcfb0a549c0203159a2c"
+    ],
+    "recent_papers": [
+      "claim_fcfb0a549c0203159a2c"
+    ],
+    "research_directions": [
+      "claim_fcfb0a549c0203159a2c"
+    ],
+    "status": [
+      "claim_fcfb0a549c0203159a2c"
+    ],
+    "title": [
+      "claim_fcfb0a549c0203159a2c"
+    ]
+  },
+  "id": "mentor_8f1ed8e11065fc8a77cc",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fcfb0a549c0203159a2c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "史豪斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e662fa763616ec186095",
+      "claim_ids": [
+        "claim_fcfb0a549c0203159a2c"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/shihaobin.html"
+    }
+  ],
+  "recent_papers": [
+    "Haobin Shi,Jingchen Li,Jiahui Mao,Kao-Shing Hwang, Lateral Transfer Learning for Multi-Agent Reinforcement Learning,IEEE Transactions on Cybernetics, 53(3):1699-1711,2023.",
+    "Haobin Shi, Jingchen Li, Meng Liang, Maxwell Hwang, Kao-Shing Hwang, Yun-Yu Hsu,Path Planning of Randomly Scattering Waypoints for Wafer Probing Based on Deep Attention Mechanism,IEEE Transactions on Systems, Man, and Cybernetics: Systems,53(1):529-541,2023.",
+    "Jingchen Li , Haobin Shi* , Wenbai Chen,Naijun Liu, Kao-Shing Hwang,Semi-Supervised Detection Model Based on Adaptive Ensemble Learning for Medical Images,IEEE Transactions on Neural Networks and Learning Systems,early access,2023.",
+    "Jingchen Li,Haobin Shi*,Kao-Shing Hwang, Using Fuzzy Logic to Learn Abstract Policies in Large-Scale Multi-Agent Reinforcement Learning,IEEE Transactions on Fuzzy Systems, 30(12):5211-5224,2022.",
+    "Haobin Shi, Jingchen Li, Shicong Chen, Kao-Shing Hwang, A behavior fusion method based on inverse reinforcement learning, Information Sciences, Volume 609, pp:429-444,2022.",
+    "Jingchen Li, Fan Wu, Haobin Shi, Kao-Shing Hwang,A Collaboration of Multi-agent Model using an Interactive Interface,Information Sciences, Volume 611, pp:349–363,2022.",
+    "李静晨,史豪斌,黄国胜,基于自注意力机制和策略映射重组的多智能体强化学习算法,计算机学报,45(9): 1842-1858, 2022.",
+    "Jingchen Li,Haobin Shi, An explainable ensemble feedforward method with Gaussian convolutional filter,Knowledge-Based Systems,225: 107103,2021."
+  ],
+  "research_directions": [
+    "分布式人工智能、智能机器人、群机器人协同决策、智能控制与决策、机器人路径规划与导航、机器学习、商务智能、多智能体系统、智能系统与安全、网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/shihaobin.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

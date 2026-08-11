@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4de7eae4b4bac4961fee"
+      ],
+      "ended_at": null,
+      "id": "aff_abd38aebb0b68c31e0f0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/leliu",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4de7eae4b4bac4961fee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_abd38aebb0b68c31e0f0",
+      "claim_ids": [
+        "claim_4de7eae4b4bac4961fee"
+      ],
+      "is_primary": true,
+      "normalized_value": "lel@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/leliu",
+      "status": "current",
+      "type": "email",
+      "value": "lel@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4de7eae4b4bac4961fee"
+    ],
+    "email": [
+      "claim_4de7eae4b4bac4961fee"
+    ],
+    "name": [
+      "claim_4de7eae4b4bac4961fee"
+    ],
+    "profile_url": [
+      "claim_4de7eae4b4bac4961fee"
+    ],
+    "recent_papers": [
+      "claim_4de7eae4b4bac4961fee"
+    ],
+    "research_directions": [
+      "claim_4de7eae4b4bac4961fee"
+    ],
+    "status": [
+      "claim_4de7eae4b4bac4961fee"
+    ],
+    "title": [
+      "claim_4de7eae4b4bac4961fee"
+    ]
+  },
+  "id": "mentor_ecdcc12545923980bb75",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4de7eae4b4bac4961fee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘乐"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_abd38aebb0b68c31e0f0",
+      "claim_ids": [
+        "claim_4de7eae4b4bac4961fee"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/leliu"
+    }
+  ],
+  "recent_papers": [
+    "Do Large Language Models Reason About Uncertainty Like Humans? A Benchmark on Hurricane Forecast Visualization Comprehension",
+    "SUVIS: A Depth- and Motion-Encoded Stereoscopic System for Communicating Forecast Uncertainty",
+    "基于探针引导的视觉语言多模态解释方法",
+    "TruSiA: Trustworthy and Situated Agent-Based Human–Swarm Interaction",
+    "More video-relevant paragraph captioning via Perturbed Attention Self-Distillation",
+    "VizTA: Enhancing Comprehension of Distributional Visualization with Visual‐Lexical Fused Conversational Interface",
+    "BiFTVis: A Bidirectional Feature-Tracking Method for Visual Analytics of Flow Fields",
+    "Touch, Sound, and Space: Exploring Immersive Music Interaction through AI-Generated Environments"
+  ],
+  "research_directions": [
+    "大数据可视分析、人机交互、计算机图形学及人工智能交叉领域研究,沉浸式可视互动、大模型驱动的可视互动"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/leliu",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_52cc5ae8e8ef36c124ec"
+      ],
+      "ended_at": null,
+      "id": "aff_fb9fca72437a00086afe",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/nihongbo.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_52cc5ae8e8ef36c124ec"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fb9fca72437a00086afe",
+      "claim_ids": [
+        "claim_52cc5ae8e8ef36c124ec"
+      ],
+      "is_primary": true,
+      "normalized_value": "nihb@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/nihongbo.html",
+      "status": "current",
+      "type": "email",
+      "value": "nihb@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_52cc5ae8e8ef36c124ec"
+    ],
+    "email": [
+      "claim_52cc5ae8e8ef36c124ec"
+    ],
+    "name": [
+      "claim_52cc5ae8e8ef36c124ec"
+    ],
+    "profile_url": [
+      "claim_52cc5ae8e8ef36c124ec"
+    ],
+    "research_directions": [
+      "claim_52cc5ae8e8ef36c124ec"
+    ],
+    "status": [
+      "claim_52cc5ae8e8ef36c124ec"
+    ],
+    "title": [
+      "claim_52cc5ae8e8ef36c124ec"
+    ]
+  },
+  "id": "mentor_ee64770ca26b1e9c5409",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_52cc5ae8e8ef36c124ec"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "倪红波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fb9fca72437a00086afe",
+      "claim_ids": [
+        "claim_52cc5ae8e8ef36c124ec"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/nihongbo.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "普适计算、智能系统技术、新型智能健康感知、健康大数据分析、智能化健康评测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/nihongbo.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

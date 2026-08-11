@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4715d5abda3739de50e2"
+      ],
+      "ended_at": null,
+      "id": "aff_21512dcb5b3883808a43",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/2017010186.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4715d5abda3739de50e2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_21512dcb5b3883808a43",
+      "claim_ids": [
+        "claim_4715d5abda3739de50e2"
+      ],
+      "is_primary": true,
+      "normalized_value": "iverlon1987@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/2017010186.html",
+      "status": "current",
+      "type": "email",
+      "value": "iverlon1987@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4715d5abda3739de50e2"
+    ],
+    "email": [
+      "claim_4715d5abda3739de50e2"
+    ],
+    "name": [
+      "claim_4715d5abda3739de50e2"
+    ],
+    "profile_url": [
+      "claim_4715d5abda3739de50e2"
+    ],
+    "recent_papers": [
+      "claim_4715d5abda3739de50e2"
+    ],
+    "research_directions": [
+      "claim_4715d5abda3739de50e2"
+    ],
+    "status": [
+      "claim_4715d5abda3739de50e2"
+    ],
+    "title": [
+      "claim_4715d5abda3739de50e2"
+    ]
+  },
+  "id": "mentor_46606643750f606eac04",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4715d5abda3739de50e2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹翰林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_21512dcb5b3883808a43",
+      "claim_ids": [
+        "claim_4715d5abda3739de50e2"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/2017010186.html"
+    }
+  ],
+  "recent_papers": [
+    "Runoff prediction in gauged and ungauged basins using Transformer-XAJ model",
+    "Multi-step regional rainfall-runoff modeling using pyramidal transformer",
+    "Monthly streamflow forecasting with temporal-periodic Transformer",
+    "Runoff Predictions in New-gauged Basins Using Two Transformer-based Models",
+    "Rainfall-Runoff Modeling Using Long Short-Term Memory based Step-Sequence Framework",
+    "RR-Former: Rainfall-Runoff Modeling based on Transformer",
+    "Rainfall-Runoff Modeling Using LSTM-based Multi-State-Vector Sequence-to-Sequence Model",
+    "Runoff Predictions in Ungauged Basins Using Sequence-to-Sequence Models"
+  ],
+  "research_directions": [
+    "时间序列预测、深度学习与气象水文学交叉研究、智能决策、AI4Science、深度网络与偏微分方程联合建模与求解、降雨(融雪)-径流模拟"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/2017010186.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

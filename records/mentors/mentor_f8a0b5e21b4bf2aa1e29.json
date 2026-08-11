@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_53ae7f15ce0387c27334"
+      ],
+      "ended_at": null,
+      "id": "aff_9b7e1b720a47fbfb855b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/zhougq.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_53ae7f15ce0387c27334"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9b7e1b720a47fbfb855b",
+      "claim_ids": [
+        "claim_53ae7f15ce0387c27334"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouguoqing@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/zhougq.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhouguoqing@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_53ae7f15ce0387c27334"
+    ],
+    "email": [
+      "claim_53ae7f15ce0387c27334"
+    ],
+    "name": [
+      "claim_53ae7f15ce0387c27334"
+    ],
+    "profile_url": [
+      "claim_53ae7f15ce0387c27334"
+    ],
+    "recent_papers": [
+      "claim_53ae7f15ce0387c27334"
+    ],
+    "research_directions": [
+      "claim_53ae7f15ce0387c27334"
+    ],
+    "status": [
+      "claim_53ae7f15ce0387c27334"
+    ],
+    "title": [
+      "claim_53ae7f15ce0387c27334"
+    ]
+  },
+  "id": "mentor_f8a0b5e21b4bf2aa1e29",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_53ae7f15ce0387c27334"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周果清"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9b7e1b720a47fbfb855b",
+      "claim_ids": [
+        "claim_53ae7f15ce0387c27334"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/zhougq.html"
+    }
+  ],
+  "recent_papers": [
+    "Guoqing Zhou, Qing Wang. Enhanced Continuous Tabu Search for Parameter Estimation in Multiview Geometry. IEEE 14th International Conference on Computer Vision 2013 (ICCV2013,国际顶级会议).",
+    "Zhaolin Xiao, Qing Wang, Guoqing Zhou, Jingyi Yu. Aliasing Detection and Reduction in Plenoptic Imaging. (CVPR2014,国际顶级会议).",
+    "周果清, 王庆. 基于minmaxKKT条件的三维重构方法. 自动化学报, 2012, 38(9): 1439-1444.(EI)",
+    "周果清, 王庆. 针对摄像机矩阵估计的增强连续禁忌搜索方法. 电子学报.(EI).",
+    "周果清, 王庆. 三维重构中一种快速全局最优算法. 西北工业大学学报, 2010, 28(1):77-81. (EI)",
+    "Guoqing Zhou, Qing Wang. A Hybrid Steepest Descent Method for L-infinity Geometry Problems. Sino-foreign-interchange Workshop on Intelligence Science and Intelligent Data Engineering 2011. (EI)",
+    "肖照林, 杨恒, 周果清, 王庆. 一种视差法与变焦法融合的深度估计方法. 西北工业大学学报, 2013, 31(2):311-316.(EI)"
+  ],
+  "research_directions": [
+    "机器视觉、光场成像、计算摄影学、全局优化理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/zhougq.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

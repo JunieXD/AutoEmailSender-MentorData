@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b845cf6f83f9c5d3eb7"
+      ],
+      "ended_at": null,
+      "id": "aff_e1c6a671569cb1498ec5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_28f504a8806f93b70732",
+      "source_url": "https://teacher.nwpu.edu.cn/2026010012",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b845cf6f83f9c5d3eb7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e1c6a671569cb1498ec5",
+      "claim_ids": [
+        "claim_7b845cf6f83f9c5d3eb7"
+      ],
+      "is_primary": true,
+      "normalized_value": "sizhen.bian@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/2026010012",
+      "status": "current",
+      "type": "email",
+      "value": "sizhen.bian@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b845cf6f83f9c5d3eb7"
+    ],
+    "email": [
+      "claim_7b845cf6f83f9c5d3eb7"
+    ],
+    "name": [
+      "claim_7b845cf6f83f9c5d3eb7"
+    ],
+    "profile_url": [
+      "claim_7b845cf6f83f9c5d3eb7"
+    ],
+    "research_directions": [
+      "claim_7b845cf6f83f9c5d3eb7"
+    ],
+    "status": [
+      "claim_7b845cf6f83f9c5d3eb7"
+    ],
+    "title": [
+      "claim_7b845cf6f83f9c5d3eb7"
+    ]
+  },
+  "id": "mentor_6ff840d6b2ec66710fc1",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b845cf6f83f9c5d3eb7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "边思振"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e1c6a671569cb1498ec5",
+      "claim_ids": [
+        "claim_7b845cf6f83f9c5d3eb7"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/2026010012"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "普适计算、类脑智能、基座模型与智能体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/2026010012",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

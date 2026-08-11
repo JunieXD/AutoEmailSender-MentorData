@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bf9d21c24a3cb03ca3d1"
+      ],
+      "ended_at": null,
+      "id": "aff_0bb92f59aa95f6a0a68e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/xirunping.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bf9d21c24a3cb03ca3d1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0bb92f59aa95f6a0a68e",
+      "claim_ids": [
+        "claim_bf9d21c24a3cb03ca3d1"
+      ],
+      "is_primary": true,
+      "normalized_value": "xrp@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/xirunping.html",
+      "status": "current",
+      "type": "email",
+      "value": "xrp@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bf9d21c24a3cb03ca3d1"
+    ],
+    "email": [
+      "claim_bf9d21c24a3cb03ca3d1"
+    ],
+    "name": [
+      "claim_bf9d21c24a3cb03ca3d1"
+    ],
+    "profile_url": [
+      "claim_bf9d21c24a3cb03ca3d1"
+    ],
+    "research_directions": [
+      "claim_bf9d21c24a3cb03ca3d1"
+    ],
+    "status": [
+      "claim_bf9d21c24a3cb03ca3d1"
+    ],
+    "title": [
+      "claim_bf9d21c24a3cb03ca3d1"
+    ]
+  },
+  "id": "mentor_f53a2e7004067ac6cb13",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bf9d21c24a3cb03ca3d1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郗润平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0bb92f59aa95f6a0a68e",
+      "claim_ids": [
+        "claim_bf9d21c24a3cb03ca3d1"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/xirunping.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、多图像与图形处理、媒体信息处理技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/xirunping.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

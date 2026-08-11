@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b493bf70a8f94544fe91"
+      ],
+      "ended_at": null,
+      "id": "aff_d3bfed1428c49d0f036f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/liyj.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b493bf70a8f94544fe91"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d3bfed1428c49d0f036f",
+      "claim_ids": [
+        "claim_b493bf70a8f94544fe91"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyj@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/liyj.html",
+      "status": "current",
+      "type": "email",
+      "value": "lyj@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b493bf70a8f94544fe91"
+    ],
+    "email": [
+      "claim_b493bf70a8f94544fe91"
+    ],
+    "name": [
+      "claim_b493bf70a8f94544fe91"
+    ],
+    "profile_url": [
+      "claim_b493bf70a8f94544fe91"
+    ],
+    "recent_papers": [
+      "claim_b493bf70a8f94544fe91"
+    ],
+    "research_directions": [
+      "claim_b493bf70a8f94544fe91"
+    ],
+    "status": [
+      "claim_b493bf70a8f94544fe91"
+    ],
+    "title": [
+      "claim_b493bf70a8f94544fe91"
+    ]
+  },
+  "id": "mentor_6586ec68a50ec043ee67",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b493bf70a8f94544fe91"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李勇军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d3bfed1428c49d0f036f",
+      "claim_ids": [
+        "claim_b493bf70a8f94544fe91"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/liyj.html"
+    }
+  ],
+  "recent_papers": [
+    "AlLNet: Alternative Learning is Better for Multi-modal Fake News Detection",
+    "DSAD: A Dual-Stream Aligned Detection Framework for LLM-Generated Exam Answers",
+    "A Multi-view Trajectory Representation Learning Method for User Identification",
+    "TACSNET: Two-stage Alignment Cross-modal Differential Sensing Network for Concept Prediction",
+    "Learning Frequency-Aware Cross-Modal Interaction for Multimodal Fake News Detection",
+    "A Trajectory-oriented Locality-sensitive Hashing Method for User Identification",
+    "Fake social media news detection based on forwarding user representation",
+    "A Trajectory-based User Movement Pattern Similarity Measure for User Identification"
+  ],
+  "research_directions": [
+    "表示学习,尤其关注社交网络、时序数据分析、教育等领域的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/liyj.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

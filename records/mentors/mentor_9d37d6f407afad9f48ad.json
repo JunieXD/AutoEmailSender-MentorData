@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8de9ae6b7d058aeebe4c"
+      ],
+      "ended_at": null,
+      "id": "aff_9a97163effcffc667c43",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_b1155542e425b4d80652",
+      "source_url": "https://teacher.nwpu.edu.cn/zhuhongyou.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8de9ae6b7d058aeebe4c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9a97163effcffc667c43",
+      "claim_ids": [
+        "claim_8de9ae6b7d058aeebe4c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuhongyou@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/zhuhongyou.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhuhongyou@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ],
+    "email": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ],
+    "name": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ],
+    "profile_url": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ],
+    "recent_papers": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ],
+    "research_directions": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ],
+    "status": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ],
+    "title": [
+      "claim_8de9ae6b7d058aeebe4c"
+    ]
+  },
+  "id": "mentor_9d37d6f407afad9f48ad",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8de9ae6b7d058aeebe4c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尤著宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9a97163effcffc667c43",
+      "claim_ids": [
+        "claim_8de9ae6b7d058aeebe4c"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/zhuhongyou.html"
+    }
+  ],
+  "recent_papers": [
+    "scPriorGraph: constructing biosemantic cell-cell graphs with prior gene set selection for cell type identification from scRNA-seq data",
+    "Local-globalstructure-awaregeometricequivariantgraphrepresentationlearning forpredictingprotein-ligandbindingaffinity",
+    "Towardmultilabelclassification formultiplediseasepredictionusinggutmicrobiotaprofiles",
+    "Cross-scalefeatureinteractionnetwork forsemanticsegmentation inside-sc sonarimages",
+    "Regulation-aware graph learning for drug repositioning over heterogeneous biological network",
+    "UAVSeg:dual-encodercross-scaleattentionnetwork for UAVimagessemanticsegmentation",
+    "Biomedical Knowledge Graph Embedding with Capsule Network for Multi-label Drug-Drug Interaction Prediction",
+    "MGRCDA: Metagraph Recommendation Method for Predicting CircRNA-Disease Association"
+  ],
+  "research_directions": [
+    "模式识别、生物医学大数据分析及智能无人系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/zhuhongyou.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

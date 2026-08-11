@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_22a74d53881c66743eee"
+      ],
+      "ended_at": null,
+      "id": "aff_122a2fab9f384544b345",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "https://teacher.nwpu.edu.cn/shenbo.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_22a74d53881c66743eee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_122a2fab9f384544b345",
+      "claim_ids": [
+        "claim_22a74d53881c66743eee"
+      ],
+      "is_primary": true,
+      "normalized_value": "shen@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "https://teacher.nwpu.edu.cn/shenbo.html",
+      "status": "current",
+      "type": "email",
+      "value": "shen@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_22a74d53881c66743eee"
+    ],
+    "email": [
+      "claim_22a74d53881c66743eee"
+    ],
+    "name": [
+      "claim_22a74d53881c66743eee"
+    ],
+    "profile_url": [
+      "claim_22a74d53881c66743eee"
+    ],
+    "recent_papers": [
+      "claim_22a74d53881c66743eee"
+    ],
+    "research_directions": [
+      "claim_22a74d53881c66743eee"
+    ],
+    "status": [
+      "claim_22a74d53881c66743eee"
+    ],
+    "title": [
+      "claim_22a74d53881c66743eee"
+    ]
+  },
+  "id": "mentor_a40e053a003eccfcf074",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_22a74d53881c66743eee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_122a2fab9f384544b345",
+      "claim_ids": [
+        "claim_22a74d53881c66743eee"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "https://teacher.nwpu.edu.cn/shenbo.html"
+    }
+  ],
+  "recent_papers": [
+    "无人集群协同感知鲁棒性智能评估方法",
+    "Memory-Priority Scheduling for Digital Simulation Model of Security and Stability Control Systems on a Multi-core System",
+    "Efficient Data Management Mechanism for Evaluating Unmanned Aerial Vehicles Swarm",
+    "Dynamic task offloading and online scheduling for Edge-enabled IoT with a hierarchical framework",
+    "A Stackelberg Evolutionary Game Theoretic Framework for Dynamical Data Trading in Artificial Intelligence of Things (AIoT)",
+    "An Efficient Task Scheduling for Security and Stability Control System Models on Multi-Core Systems",
+    "Illumination-Aware Infrared and Visible Image Fusion for Nighttime Object Tracking",
+    "视觉端边云融合架构: 面向超级智慧城市群演进的关键技术"
+  ],
+  "research_directions": [
+    "人工智能系统解释性及其评估、端边协同学习、表征学习、智能博弈、智能化软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.nwpu.edu.cn/shenbo.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

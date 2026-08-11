@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b3dedbfad0abd3ba25e"
+      ],
+      "ended_at": null,
+      "id": "aff_e604fc72b9717b31755e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_bc39d2e0b41446b4dc04",
+      "source_url": "http://teacher.nwpu.edu.cn/yaoye.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b3dedbfad0abd3ba25e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e604fc72b9717b31755e",
+      "claim_ids": [
+        "claim_7b3dedbfad0abd3ba25e"
+      ],
+      "is_primary": true,
+      "normalized_value": "yaoye@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/yaoye.html",
+      "status": "current",
+      "type": "email",
+      "value": "yaoye@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b3dedbfad0abd3ba25e"
+    ],
+    "email": [
+      "claim_7b3dedbfad0abd3ba25e"
+    ],
+    "name": [
+      "claim_7b3dedbfad0abd3ba25e"
+    ],
+    "profile_url": [
+      "claim_7b3dedbfad0abd3ba25e"
+    ],
+    "research_directions": [
+      "claim_7b3dedbfad0abd3ba25e"
+    ],
+    "status": [
+      "claim_7b3dedbfad0abd3ba25e"
+    ],
+    "title": [
+      "claim_7b3dedbfad0abd3ba25e"
+    ]
+  },
+  "id": "mentor_16acec1d9b65b121a423",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b3dedbfad0abd3ba25e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚烨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e604fc72b9717b31755e",
+      "claim_ids": [
+        "claim_7b3dedbfad0abd3ba25e"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/yaoye.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络信息系统安全性测评技术,网络软件安全性测试技术,工业互联网及安全技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/yaoye.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}

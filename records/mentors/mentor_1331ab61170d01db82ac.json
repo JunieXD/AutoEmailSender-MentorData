@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ee44faefffb9fbe309c4"
+      ],
+      "ended_at": null,
+      "id": "aff_1f435f91565cb65958c7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T07:13:32Z",
+      "organization_id": "org_auto_28f504a8806f93b70732",
+      "source_url": "http://teacher.nwpu.edu.cn/wugao.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ee44faefffb9fbe309c4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f435f91565cb65958c7",
+      "claim_ids": [
+        "claim_ee44faefffb9fbe309c4"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaowu@nwpu.edu.cn",
+      "observed_at": "2026-08-11T07:13:32Z",
+      "source_url": "http://teacher.nwpu.edu.cn/wugao.html",
+      "status": "current",
+      "type": "email",
+      "value": "gaowu@nwpu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T07:13:32Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ee44faefffb9fbe309c4"
+    ],
+    "email": [
+      "claim_ee44faefffb9fbe309c4"
+    ],
+    "name": [
+      "claim_ee44faefffb9fbe309c4"
+    ],
+    "profile_url": [
+      "claim_ee44faefffb9fbe309c4"
+    ],
+    "recent_papers": [
+      "claim_ee44faefffb9fbe309c4"
+    ],
+    "research_directions": [
+      "claim_ee44faefffb9fbe309c4"
+    ],
+    "status": [
+      "claim_ee44faefffb9fbe309c4"
+    ],
+    "title": [
+      "claim_ee44faefffb9fbe309c4"
+    ]
+  },
+  "id": "mentor_1331ab61170d01db82ac",
+  "last_verified_at": "2026-08-11T07:13:32Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ee44faefffb9fbe309c4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高武"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f435f91565cb65958c7",
+      "claim_ids": [
+        "claim_ee44faefffb9fbe309c4"
+      ],
+      "observed_at": "2026-08-11T07:13:32Z",
+      "status": "current",
+      "url": "http://teacher.nwpu.edu.cn/wugao.html"
+    }
+  ],
+  "recent_papers": [
+    "Design Techniques of a 130-nm Current-mode Analog Front-end Readout Integrated Circuit with Large Dynamic Range for SiPM Detectors",
+    "An Energy-Efficient In-Sensor Computing Architecture with In-Pixel Spiking Neuron and Event-Driven Computation for Low-Energy X-Ray Imaging: Modeling and Evaluation",
+    "Noise Modeling and Optimization of a 130-nm High-Rate Readout Integrated Circuit with Auto-Reset Feedback for Deep-Silicon-Based Energy-Resolved Photon-Counting CT",
+    "Design of An Intelligent Pixel Readout ASIC with ADC-less In-sensor Computing based on Binary-Weight Analog Neural Network for Hybrid X-Ray Imaging Detectors",
+    "Efficient Training and Neuro-Encoding for Bridging Hybrid ANN and SNN Computation",
+    "Design of a Multichannel, 14-bit, 3-MS/s Hybrid ADC based on SAR-TDC Two-stage Conversion for Dark Matter Particle Detection",
+    "Design of a Pixel-Level Low-Dropout Regulator With Sub-Loop Compensation in Large Matrix Readout ASICs for Space X-Ray Imaging",
+    "Real-Time Road Damage Detection Using an Optimized YOLOv9s-Fusion in IoT Infrastructure"
+  ],
+  "research_directions": [
+    "智能计算架构与仿生芯片、专用集成电路设计及集成电路可靠性、仿生感知与类脑计算芯片技术、智能计算架构与系统芯片、混合微纳集成系统、模拟/混合信号集成电路设计、抗辐射集成电路设计、2.5D/3D集成电路封装、集成电路IP保护、集成电路硬件安全、集成电路测试、集成电路可靠性、智能微系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T07:13:32Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nwpu.edu.cn/wugao.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T07:13:32Z"
+}
