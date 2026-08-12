@@ -8,6 +8,7 @@ import tempfile
 from datetime import UTC, datetime
 from pathlib import Path
 
+from .agent_review_cli import execute_review, register_review_parser
 from .batch import create_batch_proposals, parse_batch_form
 from .builder import build_dataset, stage_current_dataset
 from .errors import MentorDataError, RepositoryValidationError
@@ -218,6 +219,8 @@ def build_parser() -> argparse.ArgumentParser:
     apply_review_parser.add_argument("--github-output")
     apply_review_parser.add_argument("--root")
 
+    register_review_parser(subparsers)
+
     return parser
 
 
@@ -262,6 +265,8 @@ def _write_github_outputs(path_value: str | None, values: dict[str, str | int | 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    if args.command == "review":
+        return execute_review(args)
     try:
         root = _repository_root(getattr(args, "root", None))
         if args.command == "validate":

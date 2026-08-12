@@ -29,6 +29,20 @@ Issue 工作流只解析输入并创建提案 PR，不直接修改正式数据�
 
 ## 维护者如何审核
 
+### 使用 Agent CLI 审核批量投稿
+
+维护者可以不打开审核网页，改用仓库内置的 `mentor-data review` 命令和 `review-mentor-data-pr` Skill 完成人机协作审核。该流程默认相信投稿的导师职业信息，不访问个人主页核验内容，重点处理学校、学院、研究院和系所字段的规范化与机构树归属。
+
+从命令自描述帮助开始：
+
+```bash
+uv run mentor-data review --help
+```
+
+CLI 会先自动处理唯一精确匹配、明确新机构、空层级和重复祖先等确定项，再把不确定的机构关系压缩为带稳定 ID 的问题。审核底稿保存在被 Git 忽略的 `.work/agent-reviews/`，不会写入投稿分支。所有问题回答完成后，`review check` 会在最新 `main` 的临时 worktree 中复用可信后端完成全量预演。
+
+只有 `review submit` 会写入 GitHub。它要求显式确认 PR 编号并再次预演，然后发布一次正式审核评论；该评论会立即触发现有可信落库队列。不要另外将 Draft 标记为 Ready、手动修改提案或合并 PR。完整需求与安全边界见 [Agent 机构审核 CLI 需求](agent-review-cli-requirements.md)。
+
 ### 单条投稿
 
 自动资格投稿会直接进入落库队列。需要人工审核时：
