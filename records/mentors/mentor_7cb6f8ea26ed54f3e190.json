@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c78accfd8f6b74bef32d"
+      ],
+      "ended_at": null,
+      "id": "aff_7fed87a1089d14ae6918",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40861.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c78accfd8f6b74bef32d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7fed87a1089d14ae6918",
+      "claim_ids": [
+        "claim_c78accfd8f6b74bef32d"
+      ],
+      "is_primary": true,
+      "normalized_value": "jshen@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40861.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jshen@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c78accfd8f6b74bef32d"
+    ],
+    "email": [
+      "claim_c78accfd8f6b74bef32d"
+    ],
+    "name": [
+      "claim_c78accfd8f6b74bef32d"
+    ],
+    "profile_url": [
+      "claim_c78accfd8f6b74bef32d"
+    ],
+    "recent_papers": [
+      "claim_c78accfd8f6b74bef32d"
+    ],
+    "research_directions": [
+      "claim_c78accfd8f6b74bef32d"
+    ],
+    "status": [
+      "claim_c78accfd8f6b74bef32d"
+    ],
+    "title": [
+      "claim_c78accfd8f6b74bef32d"
+    ]
+  },
+  "id": "mentor_7cb6f8ea26ed54f3e190",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c78accfd8f6b74bef32d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7fed87a1089d14ae6918",
+      "claim_ids": [
+        "claim_c78accfd8f6b74bef32d"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1471/40861.htm"
+    }
+  ],
+  "recent_papers": [
+    "数据结构-C++实现(第三版)",
+    "数据结构-C++实现习题解析与实验指导(第二版)",
+    "数据结构-C++实现(第二版)",
+    "计算机操作系统原理与应用",
+    "计算机操作系统基础与应用(第二版)",
+    "数据结构——C++实现习题解析与实验指导",
+    "计算机操作系统基础与应用",
+    "数据结构——C++实现"
+  ],
+  "research_directions": [
+    "决策支持系统(DSS)、自然语言处理(NLP)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1471/40861.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

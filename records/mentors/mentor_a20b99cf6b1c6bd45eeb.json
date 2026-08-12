@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c26304e47c4b74fd1758"
+      ],
+      "ended_at": null,
+      "id": "aff_beddc9feb618a659853d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40641.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c26304e47c4b74fd1758"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_beddc9feb618a659853d",
+      "claim_ids": [
+        "claim_c26304e47c4b74fd1758"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuechen@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40641.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xuechen@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c26304e47c4b74fd1758"
+    ],
+    "email": [
+      "claim_c26304e47c4b74fd1758"
+    ],
+    "name": [
+      "claim_c26304e47c4b74fd1758"
+    ],
+    "profile_url": [
+      "claim_c26304e47c4b74fd1758"
+    ],
+    "recent_papers": [
+      "claim_c26304e47c4b74fd1758"
+    ],
+    "research_directions": [
+      "claim_c26304e47c4b74fd1758"
+    ],
+    "status": [
+      "claim_c26304e47c4b74fd1758"
+    ],
+    "title": [
+      "claim_c26304e47c4b74fd1758"
+    ]
+  },
+  "id": "mentor_a20b99cf6b1c6bd45eeb",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c26304e47c4b74fd1758"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈雪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_beddc9feb618a659853d",
+      "claim_ids": [
+        "claim_c26304e47c4b74fd1758"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1471/40641.htm"
+    }
+  ],
+  "recent_papers": [
+    "Triple contrastive learning framework for domain-level zero-shot recommendation, Neurocomputing, 654,131354, 2025.",
+    "Synthesizing global and local perspectives in contrastive learning for graph anomaly detection, Knowledge-based System, 315, 113289, 2025.",
+    "Cognitive-based Knowledge Learning Framework for Recommendation, Knowledge-based Systems, 287, 111446, 2024.",
+    "Distilling Object Detectors with Mask-guided feature and relation-based knowledge, International Journal of Computational Science and Engineering, 2024.",
+    "Refining ChatGPT for Document-Level Relation Extraction: A Multi-dimensional Prompting Approach,International Conference on Intelligent Computing, 2024.",
+    "HKFNet: Fine-Grained External Knowledge Fusion for Fact-Based Visual Question Answering, International Joint Conference on Neural Networks , 2024."
+  ],
+  "research_directions": [
+    "推荐系统,用户行为分析,机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1471/40641.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

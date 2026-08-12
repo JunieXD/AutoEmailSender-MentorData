@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eb6b4b1d2d0c2ec62a3d"
+      ],
+      "ended_at": null,
+      "id": "aff_4c1cc29b3e86aa7ebde7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1491/41551.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_eb6b4b1d2d0c2ec62a3d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4c1cc29b3e86aa7ebde7",
+      "claim_ids": [
+        "claim_eb6b4b1d2d0c2ec62a3d"
+      ],
+      "is_primary": true,
+      "normalized_value": "dinghai@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1491/41551.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dinghai@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eb6b4b1d2d0c2ec62a3d"
+    ],
+    "email": [
+      "claim_eb6b4b1d2d0c2ec62a3d"
+    ],
+    "name": [
+      "claim_eb6b4b1d2d0c2ec62a3d"
+    ],
+    "profile_url": [
+      "claim_eb6b4b1d2d0c2ec62a3d"
+    ],
+    "recent_papers": [
+      "claim_eb6b4b1d2d0c2ec62a3d"
+    ],
+    "research_directions": [
+      "claim_eb6b4b1d2d0c2ec62a3d"
+    ],
+    "status": [
+      "claim_eb6b4b1d2d0c2ec62a3d"
+    ]
+  },
+  "id": "mentor_e2b4acded702914a2370",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eb6b4b1d2d0c2ec62a3d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "丁雪海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4c1cc29b3e86aa7ebde7",
+      "claim_ids": [
+        "claim_eb6b4b1d2d0c2ec62a3d"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1491/41551.htm"
+    }
+  ],
+  "recent_papers": [
+    "An artificial intelligence framework for the diagnosis of prosthetic joint infection based on 99mTc-MDP dynamic bone scintigraphy",
+    "3DFRINet: A Framework for the Detection and Diagnosis of Fracture Related Infection in Low Extremities Based on 18F-FDG PET/CT 3D Images",
+    "Predicting 18F-FDG SUVs of metastatic pulmonary nodes from CT images in patients with differentiated thyroid cancer by using a convolutional neural network",
+    "A novel deep learning method to segment parathyroid glands on intraoperative videos of thyroid surgery",
+    "An automatic parathyroid recognition and segmentation model based on deep learning of near-infrared autofluorescence imaging",
+    "Automated classification of cervical lymph-node-level from ultrasound using Depthwise Separable Convolutional Swin Transformer",
+    "A novel wavelet-transform based convolution classification network for cervical lymph node metastasis of papillary thyroid carcinoma in ultrasound images",
+    "A Novel Model of Thyroid Nodule Segmentation for Ultrasound Images"
+  ],
+  "research_directions": [
+    "人工智能(图像识别分割、自然语言处理)、数据挖掘与可视化分析,具体包括基于神经网络的图像识别分割模型相关理论及其在医学影像病灶分割、人脸检测、异常行为识别等场景的应用研究、构建知识图谱的关键技术(知识抽取、知识表示、知识推理、知识补全)相关算法研究、聚类算法、推荐算法、蚁群算法等数据挖掘智能算法的优化研究及其在智能决策领域的应用研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1491/41551.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:30:02Z"
+}

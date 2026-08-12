@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dcad9a5d7cd4a47af481"
+      ],
+      "ended_at": null,
+      "id": "aff_e4fdc413a7ae3b382956",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40591.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_dcad9a5d7cd4a47af481"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e4fdc413a7ae3b382956",
+      "claim_ids": [
+        "claim_dcad9a5d7cd4a47af481"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhupp@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40591.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhupp@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dcad9a5d7cd4a47af481"
+    ],
+    "email": [
+      "claim_dcad9a5d7cd4a47af481"
+    ],
+    "name": [
+      "claim_dcad9a5d7cd4a47af481"
+    ],
+    "profile_url": [
+      "claim_dcad9a5d7cd4a47af481"
+    ],
+    "recent_papers": [
+      "claim_dcad9a5d7cd4a47af481"
+    ],
+    "research_directions": [
+      "claim_dcad9a5d7cd4a47af481"
+    ],
+    "status": [
+      "claim_dcad9a5d7cd4a47af481"
+    ],
+    "title": [
+      "claim_dcad9a5d7cd4a47af481"
+    ]
+  },
+  "id": "mentor_0912cb84c8c9e71fbca6",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dcad9a5d7cd4a47af481"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱频频"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e4fdc413a7ae3b382956",
+      "claim_ids": [
+        "claim_dcad9a5d7cd4a47af481"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40591.htm"
+    }
+  ],
+  "recent_papers": [
+    "GB/T 36339-2018《智能客服语义库技术要求》",
+    "GB/T 40691-2021《人工智能 情感计算用户界面 模型》",
+    "《智能客户服务技术与应用》"
+  ],
+  "research_directions": [
+    "主要方向为自然语言理解、多模态人机交互和大模型技术研发和产业应用,亦涉及科学智能、人工智能教育和创新创业教育等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40591.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

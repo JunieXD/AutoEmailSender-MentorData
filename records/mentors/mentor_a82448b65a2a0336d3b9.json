@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3adf7d46def2644df2c3"
+      ],
+      "ended_at": null,
+      "id": "aff_0960e2c98e7b324754bc",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40501.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3adf7d46def2644df2c3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0960e2c98e7b324754bc",
+      "claim_ids": [
+        "claim_3adf7d46def2644df2c3"
+      ],
+      "is_primary": true,
+      "normalized_value": "bingbignwang@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40501.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bingbignwang@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3adf7d46def2644df2c3"
+    ],
+    "email": [
+      "claim_3adf7d46def2644df2c3"
+    ],
+    "name": [
+      "claim_3adf7d46def2644df2c3"
+    ],
+    "profile_url": [
+      "claim_3adf7d46def2644df2c3"
+    ],
+    "recent_papers": [
+      "claim_3adf7d46def2644df2c3"
+    ],
+    "research_directions": [
+      "claim_3adf7d46def2644df2c3"
+    ],
+    "status": [
+      "claim_3adf7d46def2644df2c3"
+    ],
+    "title": [
+      "claim_3adf7d46def2644df2c3"
+    ]
+  },
+  "id": "mentor_a82448b65a2a0336d3b9",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3adf7d46def2644df2c3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王冰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0960e2c98e7b324754bc",
+      "claim_ids": [
+        "claim_3adf7d46def2644df2c3"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40501.htm"
+    }
+  ],
+  "recent_papers": [
+    "Anonymous reweighted subgraph sampling-based graph neural networks for link prediction",
+    "Coupling dynamics of information and epidemic under multi-source heterogeneous social impacts",
+    "Hybrid-relation dynamic hypergraph attention network for traffic flow prediction",
+    "Temporal correlation-based neural relational inference for binary dynamics",
+    "NFI-SGAT: Node feature initliazation-based streaming graph learning model with graph attenton network for critical node identification in temporal networks",
+    "Combined effects of information dissemination and resource allocation on spatial spreading of the epidemic",
+    "Bacbone-based dynamic graph spatio-temporal network for epidemic forecasting",
+    "Interplay of simplicial information propagation and epidemic spreading on multiplex metapopulation networks"
+  ],
+  "research_directions": [
+    "复杂网络建模、数据处理与分析、图机器学习、图表示学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40501.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

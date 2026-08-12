@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_721f09c1b80e259907c2"
+      ],
+      "ended_at": null,
+      "id": "aff_05505adb1fcb1ffa810f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41321.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_721f09c1b80e259907c2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_05505adb1fcb1ffa810f",
+      "claim_ids": [
+        "claim_721f09c1b80e259907c2"
+      ],
+      "is_primary": true,
+      "normalized_value": "pangsy@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41321.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pangsy@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_721f09c1b80e259907c2"
+    ],
+    "email": [
+      "claim_721f09c1b80e259907c2"
+    ],
+    "name": [
+      "claim_721f09c1b80e259907c2"
+    ],
+    "profile_url": [
+      "claim_721f09c1b80e259907c2"
+    ],
+    "recent_papers": [
+      "claim_721f09c1b80e259907c2"
+    ],
+    "research_directions": [
+      "claim_721f09c1b80e259907c2"
+    ],
+    "status": [
+      "claim_721f09c1b80e259907c2"
+    ],
+    "title": [
+      "claim_721f09c1b80e259907c2"
+    ]
+  },
+  "id": "mentor_dae7fc34384b844ba51f",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_721f09c1b80e259907c2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "庞盛业"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_05505adb1fcb1ffa810f",
+      "claim_ids": [
+        "claim_721f09c1b80e259907c2"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41321.htm"
+    }
+  ],
+  "recent_papers": [
+    "Leveraging Co-occurrence Bias in Web API Recommendation via Causality-Inspired Context-Adjusted Graph Learning",
+    "TrustPay: A Dual-Layer Blockchain-based Framework for Trusted Service Transaction",
+    "Mask-Guided Hybrid Triggers for Robust Clean-Label Backdoor Attacks",
+    "LMSR: LLM-enhanced Multi-perspective Service Feature Learning for Web API Recommendation",
+    "Service Regulation Analysis Framework for Service Design Time: A Case Study of Internet Healthcare Service",
+    "Adaptive Scheduling of High-Availability Drone Swarms for Congestion Alleviation in CAVs",
+    "DTSSN: A Distributed Trustworthy Sensor Service Network Architecture for Smart City",
+    "Maximizing Overall Service Profit: Multi-Edge Service Pricing as a Stochastic Game Model"
+  ],
+  "research_directions": [
+    "服务计算、AI Agent、数据评估、AI安全、推荐系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41321.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_32e00f1d5c62aabbdfd2"
+      ],
+      "ended_at": null,
+      "id": "aff_0abffe378f2c4cca8e99",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41251.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_32e00f1d5c62aabbdfd2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0abffe378f2c4cca8e99",
+      "claim_ids": [
+        "claim_32e00f1d5c62aabbdfd2"
+      ],
+      "is_primary": true,
+      "normalized_value": "haokong@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41251.htm",
+      "status": "current",
+      "type": "email",
+      "value": "haokong@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ],
+    "email": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ],
+    "name": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ],
+    "profile_url": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ],
+    "recent_papers": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ],
+    "research_directions": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ],
+    "status": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ],
+    "title": [
+      "claim_32e00f1d5c62aabbdfd2"
+    ]
+  },
+  "id": "mentor_28e793521ee85874492f",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_32e00f1d5c62aabbdfd2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孔浩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0abffe378f2c4cca8e99",
+      "claim_ids": [
+        "claim_32e00f1d5c62aabbdfd2"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41251.htm"
+    }
+  ],
+  "recent_papers": [
+    "Realistic Facial Expression Reconstruction Using Millimeter Wave",
+    "A survey of mmwave radar-based sensing in autonomous vehicles, smart homes and industry",
+    "mmHand: 3D Hand Pose Estimation Leveraging mmWave Signals",
+    "Toward Multi-User Authentication Using WiFi Signals",
+    "Puth the Limit of WiFi-based User Authentication Towards Undefined Gestures",
+    "m3Track: mmWave-based Multi-User 3D Posture Tracking",
+    "MultiAuth: Enable Muti-User Authentication with Single Commodity WiFi Device",
+    "Continuous Authentication Through Finger Gesture Interaction for Smart Homes Using WiFi"
+  ],
+  "research_directions": [
+    "无线感知,具身智能,AI4S电磁"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41251.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

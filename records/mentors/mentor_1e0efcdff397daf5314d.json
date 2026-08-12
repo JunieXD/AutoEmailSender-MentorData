@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd13adf869fb490b99fc"
+      ],
+      "ended_at": null,
+      "id": "aff_d7a5a7bef84429bf5017",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1491/41581.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_fd13adf869fb490b99fc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d7a5a7bef84429bf5017",
+      "claim_ids": [
+        "claim_fd13adf869fb490b99fc"
+      ],
+      "is_primary": true,
+      "normalized_value": "ywang1982@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1491/41581.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ywang1982@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd13adf869fb490b99fc"
+    ],
+    "email": [
+      "claim_fd13adf869fb490b99fc"
+    ],
+    "name": [
+      "claim_fd13adf869fb490b99fc"
+    ],
+    "profile_url": [
+      "claim_fd13adf869fb490b99fc"
+    ],
+    "recent_papers": [
+      "claim_fd13adf869fb490b99fc"
+    ],
+    "research_directions": [
+      "claim_fd13adf869fb490b99fc"
+    ],
+    "status": [
+      "claim_fd13adf869fb490b99fc"
+    ]
+  },
+  "id": "mentor_1e0efcdff397daf5314d",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd13adf869fb490b99fc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王洋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d7a5a7bef84429bf5017",
+      "claim_ids": [
+        "claim_fd13adf869fb490b99fc"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1491/41581.htm"
+    }
+  ],
+  "recent_papers": [
+    "A regularized lattice Boltzmann method based on the multi-layer grid using a buffer scheme",
+    "A parallel algorithm based on regularized lattice Boltzmann method for multi-layer grids",
+    "Behavior of foreign interstitial hydrogen and helium atoms at tungsten/beryllium interface from first-principles calculations",
+    "First-principles study on the effect of 3d transition metal atom doping on Cl adsorption on α-Fe(100) surface",
+    "Physical properties and effect of helium-vacancy pair on tungsten/graphene composite as plasma-facing materials from first principles"
+  ],
+  "research_directions": [
+    "高性能计算,计算流体力学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1491/41581.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:30:02Z"
+}

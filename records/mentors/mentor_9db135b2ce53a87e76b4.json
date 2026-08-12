@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d180f54d2f215c1e16ae"
+      ],
+      "ended_at": null,
+      "id": "aff_9c7c609a6cd02b3756f5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40581.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d180f54d2f215c1e16ae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9c7c609a6cd02b3756f5",
+      "claim_ids": [
+        "claim_d180f54d2f215c1e16ae"
+      ],
+      "is_primary": true,
+      "normalized_value": "xzhang@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40581.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xzhang@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d180f54d2f215c1e16ae"
+    ],
+    "email": [
+      "claim_d180f54d2f215c1e16ae"
+    ],
+    "name": [
+      "claim_d180f54d2f215c1e16ae"
+    ],
+    "profile_url": [
+      "claim_d180f54d2f215c1e16ae"
+    ],
+    "recent_papers": [
+      "claim_d180f54d2f215c1e16ae"
+    ],
+    "research_directions": [
+      "claim_d180f54d2f215c1e16ae"
+    ],
+    "status": [
+      "claim_d180f54d2f215c1e16ae"
+    ],
+    "title": [
+      "claim_d180f54d2f215c1e16ae"
+    ]
+  },
+  "id": "mentor_9db135b2ce53a87e76b4",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d180f54d2f215c1e16ae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张新鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9c7c609a6cd02b3756f5",
+      "claim_ids": [
+        "claim_d180f54d2f215c1e16ae"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40581.htm"
+    }
+  ],
+  "recent_papers": [
+    "Multi-level Feature Fusion Network for Shadow Removal Detection. IEEE Transactions on Circuits and Systems for Video Technology (2025)",
+    "Image-to-Image Steganography based on multimodal generative model. Signal Processing 238 (2026): 110106",
+    "Generative Image Steganography Based on Text-to-Image Multimodal Generative Model. IEEE Transactions on Circuits and Systems for Video Technology (2025)",
+    "Neural Network Watermarking with Hierarchical Recoverability. IEEE Transactions on Dependable and Secure Computing (2025)",
+    "Universal Low Bit-Rate Speech Steganalysis Integrating Domain-specific and Domain-shared Knowledge. IEEE Transactions on Dependable and Secure Computing (2025)",
+    "Reversible data hiding in encrypted images with secret sharing and multivariate linear equation. IEEE Transactions on Dependable and Secure Computing (2025)",
+    "PurifyFL: Non-Interactive Privacy-Preserving Federated Learning Against Poisoning Attacks Based on Single Server. IEEE Transactions on Emerging Topics in Computational Intelligence (2025)",
+    "Lightweight Multi-User Public-Key Authenticated Encryption With Keyword Search. IEEE Transactions on Information Forensics and Security (2025)"
+  ],
+  "research_directions": [
+    "人工智能安全,多媒体信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40581.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

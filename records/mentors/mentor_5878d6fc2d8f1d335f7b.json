@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c75f00ce9f1501982e61"
+      ],
+      "ended_at": null,
+      "id": "aff_a11ae6f34fa11e15478c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40491.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c75f00ce9f1501982e61"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a11ae6f34fa11e15478c",
+      "claim_ids": [
+        "claim_c75f00ce9f1501982e61"
+      ],
+      "is_primary": true,
+      "normalized_value": "pengwang@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40491.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pengwang@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c75f00ce9f1501982e61"
+    ],
+    "email": [
+      "claim_c75f00ce9f1501982e61"
+    ],
+    "name": [
+      "claim_c75f00ce9f1501982e61"
+    ],
+    "profile_url": [
+      "claim_c75f00ce9f1501982e61"
+    ],
+    "recent_papers": [
+      "claim_c75f00ce9f1501982e61"
+    ],
+    "research_directions": [
+      "claim_c75f00ce9f1501982e61"
+    ],
+    "status": [
+      "claim_c75f00ce9f1501982e61"
+    ]
+  },
+  "id": "mentor_5878d6fc2d8f1d335f7b",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c75f00ce9f1501982e61"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a11ae6f34fa11e15478c",
+      "claim_ids": [
+        "claim_c75f00ce9f1501982e61"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40491.htm"
+    }
+  ],
+  "recent_papers": [
+    "Memory Trace Synthesis via Deep Learning for Memory Controller Simulation.",
+    "A UVM and Python Co-Simulation Framework for Automated Memory Controller Verification.",
+    "基于JESD204B协议的智能信号处理SoC中自适应缓冲结构",
+    "基于UVM的SoC中桥接芯片验证平台",
+    "BFRXOR: A load-aware DDR4 address mapping method",
+    "Design of a DDR Controller Performance Test Platform Based on FPGA and SD Card",
+    "Triple contrastive learning framework for domain-level zero-shot recommendation.",
+    "基于SPCB的处理器直连低延时PCS的设计实现."
+  ],
+  "research_directions": [
+    "计算机系统结构,集成电路设计与验证"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40491.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:30:02Z"
+}

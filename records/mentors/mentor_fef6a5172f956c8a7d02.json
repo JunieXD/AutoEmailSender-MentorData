@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eaa40c6cfff7e74d62cf"
+      ],
+      "ended_at": null,
+      "id": "aff_c1de0be85af5bfdad929",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40461.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eaa40c6cfff7e74d62cf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c1de0be85af5bfdad929",
+      "claim_ids": [
+        "claim_eaa40c6cfff7e74d62cf"
+      ],
+      "is_primary": true,
+      "normalized_value": "jjie.peng@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40461.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jjie.peng@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ],
+    "email": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ],
+    "name": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ],
+    "profile_url": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ],
+    "recent_papers": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ],
+    "research_directions": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ],
+    "status": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ],
+    "title": [
+      "claim_eaa40c6cfff7e74d62cf"
+    ]
+  },
+  "id": "mentor_fef6a5172f956c8a7d02",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eaa40c6cfff7e74d62cf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭俊杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c1de0be85af5bfdad929",
+      "claim_ids": [
+        "claim_eaa40c6cfff7e74d62cf"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40461.htm"
+    }
+  ],
+  "recent_papers": [
+    "Multimodal Transformers are Hierarchical Modal-wise Heterogeneous Graphs",
+    "基于层次化一致性语义学习的多模态意图识别",
+    "Multimodal sentiment analysis with text-augmented cross-modal feature interaction attention network",
+    "Multimodal intent recognition based on text-guided cross-modal attention",
+    "FERMixNet: An Occlusion Robust Facial Expression Recognition Model with Facial Mixing Augmentation and Mid-Level Representation Learning",
+    "TDSNet: A Temporal Difference based Network for Video Semantic Segmentation",
+    "Multi-scale feature fusion for facial expression recognition",
+    "Frame-level nonverbal feature enhancement based sentiment analysis"
+  ],
+  "research_directions": [
+    "自然语言处理、计算机视觉、多模态分析、智能技术与系统等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40461.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

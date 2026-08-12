@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3f665094a8ab6ff52ffd"
+      ],
+      "ended_at": null,
+      "id": "aff_890315476efaa230826d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41481.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_3f665094a8ab6ff52ffd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_890315476efaa230826d",
+      "claim_ids": [
+        "claim_3f665094a8ab6ff52ffd"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangyuanjian@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41481.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangyuanjian@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3f665094a8ab6ff52ffd"
+    ],
+    "email": [
+      "claim_3f665094a8ab6ff52ffd"
+    ],
+    "name": [
+      "claim_3f665094a8ab6ff52ffd"
+    ],
+    "profile_url": [
+      "claim_3f665094a8ab6ff52ffd"
+    ],
+    "recent_papers": [
+      "claim_3f665094a8ab6ff52ffd"
+    ],
+    "research_directions": [
+      "claim_3f665094a8ab6ff52ffd"
+    ],
+    "status": [
+      "claim_3f665094a8ab6ff52ffd"
+    ],
+    "title": [
+      "claim_3f665094a8ab6ff52ffd"
+    ]
+  },
+  "id": "mentor_67aafecdb687115bed95",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3f665094a8ab6ff52ffd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张远健"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_890315476efaa230826d",
+      "claim_ids": [
+        "claim_3f665094a8ab6ff52ffd"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41481.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yuanjian Zhang, Tianna Zhao(#), Duoqian Miao, Yiyu Yao, Three-way multi-label classification: A review, a framework, and new challenges, Applied Soft Computing, 2025, 171: 112757.",
+    "Tianna Zhao, Yuanjian Zhang(#), Duoqian Miao, Witold Pedrycz, Fine-grained local label correlation for multi-label classification, Knowledge-Based Systems, 2025, 314: 113210.",
+    "Jianfeng Xu, Peng Xin, Yuanjian Zhang(#), Three-way neighborhood based stream computing for incomplete hybrid information system, Knowledge-Based Systems, 2023, 262: 110232.",
+    "Yuanjian Zhang, Tianna Zhao, Duoqian Miao(#), Witold Pedrycz, Granular multilabel batch active learning with pairwise label correlation, IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2022, 52(5): 3079-3091.",
+    "Yuanjian Zhang, Duoqian Miao(#), Witold Pedrycz, Tianna Zhao, Jianfeng Xu, Ying Yu, Granular structure-based incremental updating for multi-label classification, Knowledge-Based Systems, 2020, 189: 105066."
+  ],
+  "research_directions": [
+    "机器学习、软计算、自然语言处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41481.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

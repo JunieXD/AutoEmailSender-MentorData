@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cc2a113eee9b9ec1b364"
+      ],
+      "ended_at": null,
+      "id": "aff_d1ea3fc64cc0159e4e6f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40451.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cc2a113eee9b9ec1b364"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d1ea3fc64cc0159e4e6f",
+      "claim_ids": [
+        "claim_cc2a113eee9b9ec1b364"
+      ],
+      "is_primary": true,
+      "normalized_value": "yueliu@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40451.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yueliu@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cc2a113eee9b9ec1b364"
+    ],
+    "email": [
+      "claim_cc2a113eee9b9ec1b364"
+    ],
+    "name": [
+      "claim_cc2a113eee9b9ec1b364"
+    ],
+    "profile_url": [
+      "claim_cc2a113eee9b9ec1b364"
+    ],
+    "recent_papers": [
+      "claim_cc2a113eee9b9ec1b364"
+    ],
+    "research_directions": [
+      "claim_cc2a113eee9b9ec1b364"
+    ],
+    "status": [
+      "claim_cc2a113eee9b9ec1b364"
+    ],
+    "title": [
+      "claim_cc2a113eee9b9ec1b364"
+    ]
+  },
+  "id": "mentor_7ca86b9606dc84ca271b",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cc2a113eee9b9ec1b364"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘悦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d1ea3fc64cc0159e4e6f",
+      "claim_ids": [
+        "claim_cc2a113eee9b9ec1b364"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40451.htm"
+    }
+  ],
+  "recent_papers": [
+    "Data Quantity Governance for Machine Learning in Materials Science",
+    "Auto-MatRegressor: Liberating Machine Learning Alchemists",
+    "Generative Artificial Intelligence and Its Applications in Materials Science: Current Situation and Future Perspectives",
+    "Improving Disentanglement in Variational Auto-Encoders via Feature Imbalance Informed Dimension Weighting",
+    "Knowledge Augmented Expert finding framework via knowledge graph embedding for Community Question Answering",
+    "Descriptors divide-and-conquer enables multifaceted and interpretable materials structure–activity relationship analysis",
+    "A general framework to govern machine learning oriented materials data quality",
+    "A knowledge acquisition automatizing framework from literature exemplified by Na+ activation energy prediction of NASICON solid-state electrolyte"
+  ],
+  "research_directions": [
+    "机器学习泛化能力、可解释性和易用性(AutoML)研究及其在材料筛选与性能预测(AI for Materials Science)、CQA中问题响应时间预测、个性化推荐等方面的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40451.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

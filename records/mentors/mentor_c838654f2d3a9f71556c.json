@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_74bf0c6e0fc574afcaab"
+      ],
+      "ended_at": null,
+      "id": "aff_e3c14f3f71391a3879b3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40531.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_74bf0c6e0fc574afcaab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e3c14f3f71391a3879b3",
+      "claim_ids": [
+        "claim_74bf0c6e0fc574afcaab"
+      ],
+      "is_primary": true,
+      "normalized_value": "xingwu@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40531.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xingwu@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_74bf0c6e0fc574afcaab"
+    ],
+    "email": [
+      "claim_74bf0c6e0fc574afcaab"
+    ],
+    "name": [
+      "claim_74bf0c6e0fc574afcaab"
+    ],
+    "profile_url": [
+      "claim_74bf0c6e0fc574afcaab"
+    ],
+    "recent_papers": [
+      "claim_74bf0c6e0fc574afcaab"
+    ],
+    "research_directions": [
+      "claim_74bf0c6e0fc574afcaab"
+    ],
+    "status": [
+      "claim_74bf0c6e0fc574afcaab"
+    ],
+    "title": [
+      "claim_74bf0c6e0fc574afcaab"
+    ]
+  },
+  "id": "mentor_c838654f2d3a9f71556c",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_74bf0c6e0fc574afcaab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "武星"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e3c14f3f71391a3879b3",
+      "claim_ids": [
+        "claim_74bf0c6e0fc574afcaab"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40531.htm"
+    }
+  ],
+  "recent_papers": [
+    "Wu X, Pei J, Chen C, et al. Federated Active Learning for Multicenter Collaborative Disease Diagnosis[J]. IEEE Transactions on Medical Imaging, 2022.",
+    "Wu X, Chen C, Zhong M, et al. COVID-AL: The diagnosis of COVID-19 with deep active learning[J]. Medical Image Analysis, 2021, 68: 101913.",
+    "Wu X, Li P, Zhao M, et al. Customer churn prediction for web browsers[J]. Expert Systems with Applications, 2022, 209: 118177.",
+    "Wu X, Chen C, Li P, et al. FTAP: Feature transferring autonomous machine learning pipeline[J]. Information Sciences, 2022, 593: 385-397.",
+    "Wu X, Li Y, Wang J, et al. UBAR: User Behavior-Aware Recommendation with knowledge graph[J]. Knowledge-Based Systems, 2022, 254: 109661."
+  ],
+  "research_directions": [
+    "多模态机器学习、图像与视频处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40531.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

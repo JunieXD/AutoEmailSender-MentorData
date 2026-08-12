@@ -2044,3 +2044,49 @@ organizations:
   successor_id: null
   created_at: '2026-08-11T10:48:52Z'
   updated_at: '2026-08-11T10:48:52Z'
+- id: org_auto_f6fb8183d78ed957c5d9
+  type: university
+  canonical_name: 上海大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://cs.shu.edu.cn/
+  approved_domains:
+  - cs.shu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T09:28:37Z'
+  updated_at: '2026-08-12T09:28:37Z'
+- id: org_auto_268a039852244ae4c1f0
+  type: school
+  canonical_name: 计算机工程与科学学院
+  parent_id: org_auto_f6fb8183d78ed957c5d9
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T09:28:37Z'
+  updated_at: '2026-08-12T09:28:37Z'
+- id: org_auto_5b0b6f02a53b26cc9ad7
+  type: department
+  canonical_name: 智能科学技术系
+  parent_id: org_auto_268a039852244ae4c1f0
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T09:28:37Z'
+  updated_at: '2026-08-12T09:28:37Z'
+- id: org_auto_7b43577d49383bb47c32
+  type: department
+  canonical_name: 计算机工程与科学学院智能科学系
+  parent_id: org_auto_268a039852244ae4c1f0
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T09:28:37Z'
+  updated_at: '2026-08-12T09:28:37Z'

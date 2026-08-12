@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_12f22ab16ec3f9640e44"
+      ],
+      "ended_at": null,
+      "id": "aff_473e0b66fe39d6025fae",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41461.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_12f22ab16ec3f9640e44"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_473e0b66fe39d6025fae",
+      "claim_ids": [
+        "claim_12f22ab16ec3f9640e44"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangjungang@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41461.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangjungang@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_12f22ab16ec3f9640e44"
+    ],
+    "email": [
+      "claim_12f22ab16ec3f9640e44"
+    ],
+    "name": [
+      "claim_12f22ab16ec3f9640e44"
+    ],
+    "profile_url": [
+      "claim_12f22ab16ec3f9640e44"
+    ],
+    "recent_papers": [
+      "claim_12f22ab16ec3f9640e44"
+    ],
+    "research_directions": [
+      "claim_12f22ab16ec3f9640e44"
+    ],
+    "status": [
+      "claim_12f22ab16ec3f9640e44"
+    ],
+    "title": [
+      "claim_12f22ab16ec3f9640e44"
+    ]
+  },
+  "id": "mentor_13479fc51bc8b7d5a5e8",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_12f22ab16ec3f9640e44"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨军港"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_473e0b66fe39d6025fae",
+      "claim_ids": [
+        "claim_12f22ab16ec3f9640e44"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41461.htm"
+    }
+  ],
+  "recent_papers": [
+    "Certified Distributional Robustness via Smoothed Classifiers",
+    "Matrix Gaussian Mechanisms for Differentially-Private Learning",
+    "Differential Privacy for Tensor-Valued Queries",
+    "Differentially-Private Deep Learning with Directional Noise",
+    "无人机通信中的矩阵差分隐私保护方法"
+  ],
+  "research_directions": [
+    "深度学习中的隐私安全、差分隐私、对抗学习、联邦学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41461.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

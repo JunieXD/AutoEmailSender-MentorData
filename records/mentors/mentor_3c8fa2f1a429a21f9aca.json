@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_33af37802e51a1e43e3c"
+      ],
+      "ended_at": null,
+      "id": "aff_3b7960ed18592a781a20",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41401.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_33af37802e51a1e43e3c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3b7960ed18592a781a20",
+      "claim_ids": [
+        "claim_33af37802e51a1e43e3c"
+      ],
+      "is_primary": true,
+      "normalized_value": "hanzhangwang@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41401.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hanzhangwang@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_33af37802e51a1e43e3c"
+    ],
+    "email": [
+      "claim_33af37802e51a1e43e3c"
+    ],
+    "name": [
+      "claim_33af37802e51a1e43e3c"
+    ],
+    "profile_url": [
+      "claim_33af37802e51a1e43e3c"
+    ],
+    "recent_papers": [
+      "claim_33af37802e51a1e43e3c"
+    ],
+    "research_directions": [
+      "claim_33af37802e51a1e43e3c"
+    ],
+    "status": [
+      "claim_33af37802e51a1e43e3c"
+    ],
+    "title": [
+      "claim_33af37802e51a1e43e3c"
+    ]
+  },
+  "id": "mentor_3c8fa2f1a429a21f9aca",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_33af37802e51a1e43e3c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王含章"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3b7960ed18592a781a20",
+      "claim_ids": [
+        "claim_33af37802e51a1e43e3c"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41401.htm"
+    }
+  ],
+  "recent_papers": [
+    "Safety-Potential Pruning for Enhancing Safety Prompts Against VLM Jailbreaking Without Retraining. Chongxin Li,Hanzhang Wang, and Lian Duan. Transactions of the Association for Computational Linguistics (TACL).2026.",
+    "Attack as Defense: Safeguarding Large Vision-Language Models from Jailbreaking by Adversarial Attacks.Chongxin Li,Hanzhang Wang, Yuchun Fang.EMNLP Findings.2025.",
+    "Textural or Textual: How Vision-Language Models Read Text in Images.HanzhangWang, Qingyuan Ma.ICML. 2025.",
+    "Exploring Intrinsic Dimension for Vision-Language Model Pruning.Hanzhang Wang, Jiawen Zhang, and Qingyuan Ma. ICML.2024.",
+    "Swell-and-Shrink: Decomposing Image Captioning by Transformation and Summarization.Hanzhang Wang, Hanli Wang, and Kaisheng Xu.IJCAI.2019.",
+    "Categorizing concepts with basic level for vision-to-language.Hanzhang Wang, Hanli Wang, and Kaisheng Xu.CVPR. 2018."
+  ],
+  "research_directions": [
+    "人工智能、多模态、视觉语言理解"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41401.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

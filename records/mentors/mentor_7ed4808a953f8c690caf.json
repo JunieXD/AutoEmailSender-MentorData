@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4b51a22ac3b6e442090c"
+      ],
+      "ended_at": null,
+      "id": "aff_33b6b354354802d5cc7a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40881.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4b51a22ac3b6e442090c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_33b6b354354802d5cc7a",
+      "claim_ids": [
+        "claim_4b51a22ac3b6e442090c"
+      ],
+      "is_primary": true,
+      "normalized_value": "yansun@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40881.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yansun@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4b51a22ac3b6e442090c"
+    ],
+    "email": [
+      "claim_4b51a22ac3b6e442090c"
+    ],
+    "name": [
+      "claim_4b51a22ac3b6e442090c"
+    ],
+    "profile_url": [
+      "claim_4b51a22ac3b6e442090c"
+    ],
+    "recent_papers": [
+      "claim_4b51a22ac3b6e442090c"
+    ],
+    "research_directions": [
+      "claim_4b51a22ac3b6e442090c"
+    ],
+    "status": [
+      "claim_4b51a22ac3b6e442090c"
+    ],
+    "title": [
+      "claim_4b51a22ac3b6e442090c"
+    ]
+  },
+  "id": "mentor_7ed4808a953f8c690caf",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4b51a22ac3b6e442090c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙妍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_33b6b354354802d5cc7a",
+      "claim_ids": [
+        "claim_4b51a22ac3b6e442090c"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1471/40881.htm"
+    }
+  ],
+  "recent_papers": [
+    "ProDe: Prototype-based pattern decoupling for scene-dependent multi-modality video anomaly detection",
+    "R2S-Net: Recognize-then-refine-spot network for micro-expression spot-then-recognize",
+    "A plug-and-play repair approach for addressing data missingness in human motion prediction",
+    "TriGait: Hybrid Fusion Strategy for Multimodal Alignment and Integration in Gait Recognition",
+    "On Parameterizing Higher-order Motion for Behaviour Recognition"
+  ],
+  "research_directions": [
+    "复杂动态场景下的多模态行为感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1471/40881.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

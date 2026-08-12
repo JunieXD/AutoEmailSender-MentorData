@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c8c7541f27cc58112069"
+      ],
+      "ended_at": null,
+      "id": "aff_880f5a2ac0cc8166c729",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41501.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_c8c7541f27cc58112069"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_880f5a2ac0cc8166c729",
+      "claim_ids": [
+        "claim_c8c7541f27cc58112069"
+      ],
+      "is_primary": true,
+      "normalized_value": "hongfei_zhu@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41501.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hongfei_zhu@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c8c7541f27cc58112069"
+    ],
+    "email": [
+      "claim_c8c7541f27cc58112069"
+    ],
+    "name": [
+      "claim_c8c7541f27cc58112069"
+    ],
+    "profile_url": [
+      "claim_c8c7541f27cc58112069"
+    ],
+    "recent_papers": [
+      "claim_c8c7541f27cc58112069"
+    ],
+    "research_directions": [
+      "claim_c8c7541f27cc58112069"
+    ],
+    "status": [
+      "claim_c8c7541f27cc58112069"
+    ],
+    "title": [
+      "claim_c8c7541f27cc58112069"
+    ]
+  },
+  "id": "mentor_3bda9c098b45c0ad8267",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c8c7541f27cc58112069"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱弘飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_880f5a2ac0cc8166c729",
+      "claim_ids": [
+        "claim_c8c7541f27cc58112069"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41501.htm"
+    }
+  ],
+  "recent_papers": [
+    "面向元宇宙的特色实验室建设与人才培养",
+    "《数据科学与智能计算——学习指导与习题集》",
+    "基于线上线下混合式教学的\"数据分析与人工智能\"课程研究与实践",
+    "基于云计算技术的教学实验系统设计与实践"
+  ],
+  "research_directions": [
+    "数据分析、人工智能、程序设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41501.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}
