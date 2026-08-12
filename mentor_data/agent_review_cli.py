@@ -95,7 +95,7 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     commands.add_parser(
         "doctor",
         parents=[common],
-        help="检查本地 CLI、可信仓库、GitHub CLI 和 Codex Skill 是否可用",
+        help="检查本地 CLI、可信仓库、GitHub CLI 和仓库 Skill 是否可用",
         description=(
             "只检查本机环境，不访问 GitHub，也不写入仓库。"
             "可从任意目录运行；editable 安装会自动定位 MentorData 源码仓库。"
@@ -341,7 +341,17 @@ def _doctor(args: argparse.Namespace) -> dict[str, Any]:
     root, source = _discover_root(args.root)
     root_valid = root is not None and _is_repository_root(root)
     codex_home = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex")).expanduser()
-    skill_path = codex_home / "skills" / "review-mentor-data-pr"
+    global_skill_path = codex_home / "skills" / "review-mentor-data-pr"
+    repository_skill_path = (
+        root / ".agents" / "skills" / "review-mentor-data-pr"
+        if root is not None
+        else None
+    )
+    repository_skill_available = (
+        repository_skill_path is not None
+        and (repository_skill_path / "SKILL.md").is_file()
+    )
+    global_skill_installed = (global_skill_path / "SKILL.md").is_file()
     cli_path = shutil.which("mentor-data")
     project_clis = (
         {
@@ -359,13 +369,13 @@ def _doctor(args: argparse.Namespace) -> dict[str, Any]:
         "trusted_root": root_valid,
         "cli_on_path": cli_on_path,
         "github_cli_on_path": gh_path is not None,
-        "codex_skill_installed": (skill_path / "SKILL.md").is_file(),
+        "codex_skill_available": repository_skill_available or global_skill_installed,
     }
     actions: list[str] = []
     if not checks["cli_on_path"] and root_valid:
         actions.append(f"uv tool install --editable {root}")
-    if not checks["codex_skill_installed"] and root_valid:
-        actions.append(f"安装 {root / '.agents/skills/review-mentor-data-pr'} 到 {skill_path}")
+    if not checks["codex_skill_available"] and root_valid:
+        actions.append(f"恢复仓库 Skill：{repository_skill_path}")
     if not checks["github_cli_on_path"]:
         actions.append("安装并登录 GitHub CLI (gh)")
     return {
@@ -373,7 +383,17 @@ def _doctor(args: argparse.Namespace) -> dict[str, Any]:
         "root": str(root) if root is not None else None,
         "root_source": source,
         "cli": cli_path,
-        "skill": str(skill_path),
+        "skill": {
+            "source": (
+                "repository"
+                if repository_skill_available
+                else "global" if global_skill_installed else None
+            ),
+            "repository_path": (
+                str(repository_skill_path) if repository_skill_path is not None else None
+            ),
+            "global_path": str(global_skill_path),
+        },
         "checks": checks,
         "actions": actions,
     }

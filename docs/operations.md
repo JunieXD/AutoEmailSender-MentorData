@@ -40,7 +40,7 @@ uv tool install --editable .
 mentor-data review doctor
 ```
 
-`doctor` 是只读的本地检查，会精确报告 CLI、可信仓库、GitHub CLI 和全局 Codex Skill 是否就绪，以及尚需执行的动作。仓库内的 Skill 位于 `.agents/skills/review-mentor-data-pr`；如果希望从其他项目会话调用，应将它安装到 Codex 的全局 Skills 目录。安装或更新 Skill 后，新会话即可发现它。
+`doctor` 是只读的本地检查，会精确报告 CLI、可信仓库、GitHub CLI 和 Codex Skill 是否就绪，以及尚需执行的动作。仓库内的 Skill 位于 `.agents/skills/review-mentor-data-pr`，仓库内版本已足够使用，不需要安装到全局 Skills 目录。
 
 从命令自描述帮助开始：
 

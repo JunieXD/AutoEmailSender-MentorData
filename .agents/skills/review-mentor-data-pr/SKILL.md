@@ -5,7 +5,7 @@ description: Review AutoEmailSender-MentorData batch contribution Pull Requests 
 
 # Review MentorData PR
 
-Use the repository's globally installed `mentor-data review` CLI as the source of truth. Start with `mentor-data review doctor`; stop and report its `actions` when `ready` is false. Read `mentor-data review --help` and the relevant subcommand help instead of reconstructing commands or decision JSON manually.
+Use the repository's `mentor-data review` CLI as the source of truth. Start with `mentor-data review doctor`; the repository-local Skill is sufficient and must not be globally installed. Stop and report the CLI's `actions` when `ready` is false. Read `mentor-data review --help` and the relevant subcommand help instead of reconstructing commands or decision JSON manually.
 
 ## Preserve the review boundary
 

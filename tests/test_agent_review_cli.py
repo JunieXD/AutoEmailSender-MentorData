@@ -58,7 +58,7 @@ def test_doctor_reports_machine_readable_setup_actions(
         "trusted_root": True,
         "cli_on_path": False,
         "github_cli_on_path": False,
-        "codex_skill_installed": False,
+        "codex_skill_available": False,
     }
     assert result["actions"][0] == f"uv tool install --editable {root}"
     json.dumps(result)
@@ -83,3 +83,26 @@ def test_doctor_does_not_treat_project_virtualenv_as_global_cli(
 
     assert result["checks"]["cli_on_path"] is False
     assert result["actions"][0] == f"uv tool install --editable {root}"
+
+
+def test_doctor_accepts_repository_skill_without_global_install(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    root = tmp_path / "mentor-data"
+    _make_repository(root)
+    repository_skill = root / ".agents" / "skills" / "review-mentor-data-pr"
+    repository_skill.mkdir(parents=True)
+    (repository_skill / "SKILL.md").write_text("---\nname: test\n---\n", encoding="utf-8")
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli.shutil.which",
+        lambda name: f"/usr/local/bin/{name}",
+    )
+    monkeypatch.setenv("CODEX_HOME", str(tmp_path / "codex"))
+
+    result = _doctor(argparse.Namespace(root=str(root)))
+
+    assert result["ready"] is True
+    assert result["checks"]["codex_skill_available"] is True
+    assert result["skill"]["source"] == "repository"
+    assert result["actions"] == []
