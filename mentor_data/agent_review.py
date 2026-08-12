@@ -529,8 +529,33 @@ def _source_directory(url: str) -> str | None:
     return f"{parsed.scheme.casefold()}://{parsed.hostname.casefold()}{port}{path}"
 
 
+def _source_url_key(url: str) -> str | None:
+    parsed = urlsplit(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        return None
+    path = parsed.path or "/"
+    filename = path.rstrip("/").rsplit("/", 1)[-1].casefold()
+    if not filename or re.fullmatch(
+        r"(?:index|list|default)(?:[_-]\d+)?\.(?:s?html?|php|aspx?)",
+        filename,
+    ):
+        return None
+    port = f":{parsed.port}" if parsed.port else ""
+    query = f"?{parsed.query}" if parsed.query else ""
+    return f"{parsed.scheme.casefold()}://{parsed.hostname.casefold()}{port}{path}{query}"
+
+
+def _candidate_group_context(group: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "group_id": group["id"],
+        "path": group_path(group),
+        "name": normalize_text(group["submitted"].get("department")),
+        "row_count": len(group.get("rows", [])),
+    }
+
+
 def _similar_new_department_contexts(groups: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
-    """Return one human-review question for each potential new sibling collision."""
+    """Return stable review contexts for potential new sibling collisions."""
 
     candidates = [
         group
@@ -540,7 +565,9 @@ def _similar_new_department_contexts(groups: list[dict[str, Any]]) -> dict[str, 
         )
         in LEVEL_TYPES["department"]
     ]
-    result: dict[str, dict[str, Any]] = {}
+    candidates_by_id = {group["id"]: group for group in candidates}
+    adjacency: dict[str, set[str]] = {group["id"]: set() for group in candidates}
+    relation_evidence: dict[tuple[str, str], dict[str, Any]] = {}
     for index, first in enumerate(candidates):
         first_submitted = first["submitted"]
         for second in candidates[index + 1 :]:
@@ -568,30 +595,123 @@ def _similar_new_department_contexts(groups: list[dict[str, Any]]) -> dict[str, 
             shared_directories = sorted(
                 first_directories.intersection(second_directories)
             )
+            first_source_urls = {
+                key
+                for url in first.get("source_urls", [])
+                if (key := _source_url_key(url)) is not None
+            }
+            second_source_urls = {
+                key
+                for url in second.get("source_urls", [])
+                if (key := _source_url_key(url)) is not None
+            }
+            shared_source_urls = sorted(first_source_urls.intersection(second_source_urls))
             similar_name = _names_are_similar(first_name, second_name, parent_name)
-            if not similar_name and not shared_directories:
+            if not similar_name and not shared_source_urls:
                 continue
-            canonical = min(
-                (first_name, second_name),
-                key=lambda item: (
-                    len(_department_name_without_parent(item, parent_name)),
-                    len(item),
-                    item,
-                ),
-            )
-            reviewed = second if second["id"] != first["id"] else first
-            result[reviewed["id"]] = {
-                "candidate_names": sorted({first_name, second_name}),
-                "recommended_canonical_name": canonical if similar_name else None,
+            pair = tuple(sorted((first["id"], second["id"])))
+            adjacency[first["id"]].add(second["id"])
+            adjacency[second["id"]].add(first["id"])
+            relation_evidence[pair] = {
                 "shared_source_directories": shared_directories[:3],
+                "shared_source_urls": shared_source_urls[:3],
                 "evidence": [
                     value
                     for value, enabled in (
                         ("similar_name", similar_name),
                         ("shared_source_directory", bool(shared_directories)),
+                        ("shared_source_url", bool(shared_source_urls)),
                     )
                     if enabled
                 ],
+            }
+
+    result: dict[str, dict[str, Any]] = {}
+    visited: set[str] = set()
+    for candidate_id in sorted(candidates_by_id):
+        if candidate_id in visited or not adjacency[candidate_id]:
+            continue
+        component: set[str] = set()
+        pending = [candidate_id]
+        while pending:
+            current = pending.pop()
+            if current in component:
+                continue
+            component.add(current)
+            pending.extend(sorted(adjacency[current] - component, reverse=True))
+        visited.update(component)
+        component_groups = [candidates_by_id[group_id] for group_id in component]
+        parent_name = normalize_text(component_groups[0]["submitted"].get("school"))
+        canonical_group = min(
+            component_groups,
+            key=lambda group: (
+                len(
+                    _department_name_without_parent(
+                        normalize_text(group["submitted"].get("department")),
+                        parent_name,
+                    )
+                ),
+                len(normalize_text(group["submitted"].get("department"))),
+                normalize_text(group["submitted"].get("department")),
+                group["id"],
+            ),
+        )
+        canonical_name = normalize_text(canonical_group["submitted"].get("department"))
+        component_relations = [
+            value
+            for pair, value in relation_evidence.items()
+            if pair[0] in component and pair[1] in component
+        ]
+        evidence = sorted(
+            {item for relation in component_relations for item in relation["evidence"]}
+        )
+        shared_directories = sorted(
+            {
+                item
+                for relation in component_relations
+                for item in relation["shared_source_directories"]
+            }
+        )
+        shared_source_urls = sorted(
+            {
+                item
+                for relation in component_relations
+                for item in relation["shared_source_urls"]
+            }
+        )
+        candidate_contexts = sorted(
+            (_candidate_group_context(group) for group in component_groups),
+            key=lambda item: (item["name"], item["group_id"]),
+        )
+        for reviewed in component_groups:
+            if reviewed["id"] == canonical_group["id"]:
+                continue
+            reviewed_name = normalize_text(reviewed["submitted"].get("department"))
+            reviewed_has_name_evidence = any(
+                reviewed["id"] in pair and "similar_name" in relation["evidence"]
+                for pair, relation in relation_evidence.items()
+                if pair[0] in component and pair[1] in component
+            )
+            exact_parent_cleanup = _department_name_without_parent(
+                reviewed_name, parent_name
+            ) == _department_name_without_parent(canonical_name, parent_name)
+            result[reviewed["id"]] = {
+                "candidate_names": [item["name"] for item in candidate_contexts],
+                "candidate_groups": candidate_contexts,
+                "recommended_canonical_group_id": (
+                    canonical_group["id"] if reviewed_has_name_evidence else None
+                ),
+                "recommended_canonical_name": (
+                    canonical_name if reviewed_has_name_evidence else None
+                ),
+                "recommendation_confidence": (
+                    "high" if exact_parent_cleanup else "medium"
+                )
+                if reviewed_has_name_evidence
+                else None,
+                "shared_source_directories": shared_directories[:3],
+                "shared_source_urls": shared_source_urls[:3],
+                "evidence": evidence,
             }
     return result
 
@@ -637,6 +757,8 @@ def _plan_path(
     university_level: dict[str, Any] | None = None
     final_target_id: str | None = None
     final_target_is_new = False
+    saved_canonical_path_correction = False
+    canonical_path_correction_reason: str | None = None
 
     for index, level in enumerate(LEVELS):
         value = normalize_text(submitted.get(level))
@@ -815,13 +937,21 @@ def _plan_path(
                 pull_number,
                 group,
                 kind="similar_new_sibling",
-                subject="|".join(similar_new_department["candidate_names"]),
+                subject="|".join(
+                    item["group_id"]
+                    for item in similar_new_department.get("candidate_groups", [])
+                )
+                or "|".join(similar_new_department["candidate_names"]),
                 level=level,
                 prompt="同一父级下存在疑似重复的新机构，请确认是否合并名称",
                 reason="新机构名称相似、存在包含关系或共享同一来源页，不能自动拆分。",
                 rule_default="keep-separate",
                 context_recommendation="use-canonical" if recommended_name else None,
-                recommendation_confidence="medium" if recommended_name else None,
+                recommendation_confidence=(
+                    similar_new_department.get("recommendation_confidence")
+                    if recommended_name
+                    else None
+                ),
                 options=_question_options(
                     ("use-canonical", "合并为一个规范名称", ["canonical_name"]),
                     ("keep-separate", "确认是两个不同机构", []),
@@ -830,6 +960,7 @@ def _plan_path(
                 ),
                 context=copy.deepcopy(similar_new_department),
                 answers=answers,
+                path_correction_choices=("use-canonical",),
             )
             questions.append(question)
             choice = _answer_choice(question)
@@ -850,12 +981,25 @@ def _plan_path(
                 rules.append("user_use_parent_for_similar_sibling")
                 break
             if choice == "use-canonical":
+                submitted_value = value
                 value = normalize_text(answer.get("canonical_name"))
                 if not value:
                     raise AgentReviewError("review_answer_invalid", "合并机构必须填写规范名称")
                 inferred_type = infer_organization_type(level, value)
                 if inferred_type not in LEVEL_TYPES[level]:
                     raise AgentReviewError("review_answer_invalid", "规范名称与机构层级不匹配")
+                if answer.get("save_path_correction"):
+                    if normalize_organization_key(submitted_value) == normalize_organization_key(
+                        value
+                    ):
+                        raise AgentReviewError(
+                            "review_answer_invalid",
+                            "规范名称与投稿名称相同，无需保存未来路径纠正规则",
+                        )
+                    saved_canonical_path_correction = True
+                    canonical_path_correction_reason = (
+                        f"人工确认将投稿系所名称“{submitted_value}”规范为“{value}”。"
+                    )
                 rules.append("user_merge_similar_sibling")
             else:
                 rules.append("user_keep_separate_sibling")
@@ -1138,7 +1282,16 @@ def _plan_path(
     while len(levels) < len(LEVELS):
         levels.append(_level_skip(LEVELS[len(levels)]))
 
-    decision = _resolved_group_decision(group["id"], levels=levels)
+    decision = _resolved_group_decision(
+        group["id"],
+        levels=levels,
+        target_organization_id=(
+            final_target_id if saved_canonical_path_correction else None
+        ),
+        mapping_kind="custom" if saved_canonical_path_correction else "standard",
+        mapping_reason=canonical_path_correction_reason,
+        save_path_correction=saved_canonical_path_correction,
+    )
     if final_target_id and not final_target_is_new and not _organization_matches_sources(
         group,
         organizations,

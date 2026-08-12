@@ -430,12 +430,18 @@ def test_similar_new_sibling_departments_require_one_human_decision(
     assert question["type"] == "similar_new_sibling"
     assert question["rule_default"] == "keep-separate"
     assert question["context_recommendation"] == "use-canonical"
-    assert question["recommendation_confidence"] == "medium"
+    assert question["recommendation_confidence"] == "high"
     assert question["context"]["recommended_canonical_name"] == "智能科学技术系"
+    assert question["context"]["recommended_canonical_group_id"] == first["groups"][0]["id"]
     assert question["context"]["evidence"] == [
-        "similar_name",
         "shared_source_directory",
+        "similar_name",
     ]
+    assert question["path_correction_scopes"] == [
+        "current-batch",
+        "future-identical-path",
+    ]
+    assert question["path_correction_choices"] == ["use-canonical"]
 
     merged = _plan(
         manifest,
@@ -445,6 +451,7 @@ def test_similar_new_sibling_departments_require_one_human_decision(
             question["id"]: {
                 "choice": "use-canonical",
                 "canonical_name": "智能科学技术系",
+                "save_path_correction": True,
             }
         },
     )
@@ -453,6 +460,17 @@ def test_similar_new_sibling_departments_require_one_human_decision(
         for decision in merged["decision"]["decisions"]
     }
     assert merged_department_names == {"智能科学技术系"}
+    corrected_decision = next(
+        item
+        for item in merged["decision"]["decisions"]
+        if item["save_path_correction"]
+    )
+    assert corrected_decision["mapping_kind"] == "custom"
+    assert corrected_decision["target_organization_id"] == proposed_organization_id(
+        "department",
+        "智能科学技术系",
+        "org_example_cs",
+    )
     assert _apply(root, 76, merged["decision"]).created_organizations == 1
 
     separate = _plan(
@@ -469,6 +487,100 @@ def test_similar_new_sibling_departments_require_one_human_decision(
         "智能科学技术系",
         "计算机学院智能科学技术系",
     }
+
+
+def test_common_index_directory_does_not_link_unrelated_new_departments(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "智能老师",
+                "intelligence@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/list.htm",
+                department="智能安全系",
+                profile_url="https://cs.example.edu/profiles/intelligence.html",
+            ),
+            _row(
+                "密码老师",
+                "crypto@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/list.htm",
+                department="密码科学与技术系",
+                profile_url="https://cs.example.edu/profiles/crypto.html",
+            ),
+        ],
+        number=761,
+    )
+
+    draft = _plan(manifest, manifest_path, issue_number=761)
+
+    assert draft["summary"]["pending_questions"] == 0
+    assert {
+        item["levels"][-1]["canonical_name"]
+        for item in draft["decision"]["decisions"]
+    } == {"智能安全系", "密码科学与技术系"}
+
+
+def test_similar_department_context_aggregates_only_the_collision_cluster(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "规范老师",
+                "canonical@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/list.htm",
+                department="网络安全系",
+                profile_url="https://cs.example.edu/profiles/canonical.html",
+            ),
+            _row(
+                "变体老师",
+                "variant@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/list.htm",
+                department="计算机学院网络安全系",
+                profile_url="https://cs.example.edu/profiles/variant.html",
+            ),
+            _row(
+                "密码老师",
+                "crypto-cluster@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/list.htm",
+                department="密码科学与技术系",
+                profile_url="https://cs.example.edu/profiles/crypto-cluster.html",
+            ),
+        ],
+        number=762,
+    )
+
+    draft = _plan(manifest, manifest_path, issue_number=762)
+    pending = [item for item in draft["questions"] if item["status"] == "pending"]
+
+    assert len(pending) == 1
+    question = pending[0]
+    assert question["path"].endswith("计算机学院网络安全系")
+    assert question["context"]["candidate_names"] == [
+        "网络安全系",
+        "计算机学院网络安全系",
+    ]
+    assert [
+        item["name"] for item in question["context"]["candidate_groups"]
+    ] == ["网络安全系", "计算机学院网络安全系"]
+    assert question["context"]["recommended_canonical_name"] == "网络安全系"
 
 
 def test_latest_main_organizations_override_stale_manifest_snapshot(tmp_path: Path) -> None:
