@@ -34,6 +34,12 @@ Use the repository's `mentor-data review` CLI as the source of truth. Start with
 8. Run the full preflight and show every path normalization, organization create, update, rename,
    merge, official URL, and approved-domain change before any formal submission.
 
+Render organization changes as a nested Markdown tree that preserves the real hierarchy:
+university, then school or institute, then department, center, or laboratory. Indent every child
+below its parent in both the planning preview and the final pre-submit summary; never flatten nodes
+from different levels into one list. Keep row counts and domain or URL changes on the applicable
+node.
+
 Use CLI filters, IDs, field projection, and organization search to keep context small. Read a full group or question only when its summary is insufficient.
 
 ## Protect formal approval
