@@ -169,13 +169,29 @@ def test_school_name_in_department_waits_for_user_then_creates_sibling(
 
     assert first["decision"] is None
     assert question["type"] == "school_level_in_department"
-    assert question["recommendation"] == "create-sibling"
+    assert question["rule_default"] == "create-sibling"
+    assert question["context_recommendation"] is None
+    assert question["recommendation_confidence"] is None
+    assert question["path_correction_scopes"] == [
+        "current-batch",
+        "future-identical-path",
+    ]
+    assert question["path_correction_choices"] == [
+        "use-suggested",
+        "map-sibling",
+        "create-sibling",
+    ]
 
     second = _plan(
         manifest,
         manifest_path,
         issue_number=71,
-        answers={question["id"]: {"choice": "create-sibling"}},
+        answers={
+            question["id"]: {
+                "choice": "create-sibling",
+                "save_path_correction": True,
+            }
+        },
     )
 
     assert second["summary"]["pending_questions"] == 0
@@ -188,6 +204,7 @@ def test_school_name_in_department_waits_for_user_then_creates_sibling(
         "org_example_university",
     )
     assert decision["decisions"][0]["mapping_kind"] == "department_as_school"
+    assert decision["decisions"][0]["save_path_correction"] is True
     _validate_schema(
         root,
         "organization-review-decision.schema.json",
@@ -315,6 +332,15 @@ def test_answer_validation_field_projection_and_stale_guard() -> None:
         question,
         {"choice": "map-existing", "organization_id": "org_example_cs"},
     )
+    with pytest.raises(AgentReviewError, match="不支持保存"):
+        validate_answer(
+            question,
+            {
+                "choice": "map-existing",
+                "organization_id": "org_example_cs",
+                "save_path_correction": True,
+            },
+        )
 
     assert project_fields({"id": "x", "path": "y"}, ["id"]) == {"id": "x"}
     with pytest.raises(AgentReviewError, match="未知输出字段"):
@@ -386,7 +412,9 @@ def test_similar_new_sibling_departments_require_one_human_decision(
     assert len(pending) == 1
     question = pending[0]
     assert question["type"] == "similar_new_sibling"
-    assert question["recommendation"] == "use-canonical"
+    assert question["rule_default"] == "keep-separate"
+    assert question["context_recommendation"] == "use-canonical"
+    assert question["recommendation_confidence"] == "medium"
     assert question["context"]["recommended_canonical_name"] == "智能科学技术系"
     assert question["context"]["evidence"] == [
         "similar_name",

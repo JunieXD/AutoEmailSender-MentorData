@@ -65,6 +65,22 @@ def _add_fields(parser: argparse.ArgumentParser) -> None:
     )
 
 
+def _add_answer_value_arguments(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument("--organization-id")
+    parser.add_argument("--organization-type")
+    parser.add_argument("--canonical-name")
+    parser.add_argument("--official-url")
+    parser.add_argument("--approved-domain", action="append", default=[])
+    parser.add_argument("--reason")
+    parser.add_argument("--former-affiliation-id")
+    parser.add_argument("--make-primary", action="store_true")
+    parser.add_argument(
+        "--save-path-correction",
+        action="store_true",
+        help="把相同投稿路径的纠正保存为未来规则；省略时仅用于当前批次",
+    )
+
+
 def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     common = _common_parser()
     review = subparsers.add_parser(
@@ -197,7 +213,10 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         "questions",
         parents=[common],
         help="筛选需要用户裁决的问题",
-        description="默认只输出待回答问题的短摘要、建议选择和可用选择值。",
+        description=(
+            "默认只输出待回答问题的短摘要。rule_default 是机械默认值，不代表业务判断；"
+            "context_recommendation 只在存在上下文证据时出现，并附置信度。"
+        ),
     )
     questions.add_argument("--pr", type=int, required=True)
     questions.add_argument(
@@ -236,15 +255,34 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     answer_action = answer.add_mutually_exclusive_group(required=True)
     answer_action.add_argument("--choice", help="问题选项 value")
     answer_action.add_argument("--clear", action="store_true", help="清除该问题的已有回答")
-    answer.add_argument("--organization-id")
-    answer.add_argument("--organization-type")
-    answer.add_argument("--canonical-name")
-    answer.add_argument("--official-url")
-    answer.add_argument("--approved-domain", action="append", default=[])
-    answer.add_argument("--reason")
-    answer.add_argument("--former-affiliation-id")
-    answer.add_argument("--make-primary", action="store_true")
-    answer.add_argument("--save-path-correction", action="store_true")
+    _add_answer_value_arguments(answer)
+
+    answer_many = commands.add_parser(
+        "answer-many",
+        parents=[common],
+        help="用同一裁决原子回答一组问题",
+        description=(
+            "按逗号分隔 ID 或问题筛选器选择问题，只刷新一次远程状态并只重算一次底稿。"
+            "所有问题都通过参数校验且数量与 --confirm-count 一致后才写入底稿。"
+        ),
+    )
+    answer_many.add_argument("--pr", type=int, required=True)
+    answer_many.add_argument("--ids", help="逗号分隔的问题 ID；不可与筛选器同时使用")
+    answer_many.add_argument("--type", help="按问题类型筛选")
+    answer_many.add_argument(
+        "--level",
+        choices=["university", "school", "department", "none"],
+        help="按问题层级筛选",
+    )
+    answer_many.add_argument("--query", help="按路径、提示或问题 ID 包含文本筛选")
+    answer_many.add_argument("--choice", required=True, help="应用到全部问题的选项 value")
+    answer_many.add_argument(
+        "--confirm-count",
+        type=int,
+        required=True,
+        help="预期命中问题数；不完全一致时拒绝写入",
+    )
+    _add_answer_value_arguments(answer_many)
 
     check = commands.add_parser(
         "check",
@@ -694,25 +732,34 @@ def _question_summary(item: dict[str, Any]) -> dict[str, Any]:
         "status": item["status"],
         "prompt": item["prompt"],
         "reason": item["reason"],
-        "recommendation": item["recommendation"],
+        "rule_default": item.get("rule_default"),
+        "context_recommendation": item.get("context_recommendation"),
+        "recommendation_confidence": item.get("recommendation_confidence"),
+        "path_correction_scopes": item.get("path_correction_scopes", []),
+        "path_correction_choices": item.get("path_correction_choices", []),
         "choices": [option["value"] for option in item["options"]],
     }
 
 
+def _question_matches_filters(item: dict[str, Any], args: argparse.Namespace) -> bool:
+    if getattr(args, "type", None) and item.get("type") != args.type:
+        return False
+    level = getattr(args, "level", None)
+    expected_level = None if level == "none" else level
+    if level and item.get("level") != expected_level:
+        return False
+    query = (getattr(args, "query", None) or "").casefold()
+    searchable = f"{item['id']} {item['path']} {item['prompt']}".casefold()
+    return not query or query in searchable
+
+
 def _questions(args: argparse.Namespace, workspace: Path) -> dict[str, Any]:
     draft = load_draft(workspace, args.pr)
-    query = (args.query or "").casefold()
     items: list[dict[str, Any]] = []
     for item in draft.get("questions", []):
         if args.status != "all" and item.get("status") != args.status:
             continue
-        if args.type and item.get("type") != args.type:
-            continue
-        expected_level = None if args.level == "none" else args.level
-        if args.level and item.get("level") != expected_level:
-            continue
-        searchable = f"{item['id']} {item['path']} {item['prompt']}".casefold()
-        if query and query not in searchable:
+        if not _question_matches_filters(item, args):
             continue
         items.append(project_fields(_question_summary(item), _fields(args)))
     return {"count": len(items), "items": items}
@@ -772,6 +819,108 @@ def _answer(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, 
         "question": args.id,
         "choice": choice,
         "cleared": args.clear,
+        "path_correction_scope": (
+            None
+            if args.clear or not question.get("path_correction_scopes")
+            else (
+                "future-identical-path"
+                if args.save_path_correction
+                else "current-batch"
+            )
+        ),
+        "pending_questions": len(pending),
+        "next_question": pending[0]["id"] if pending else None,
+        "next": (
+            f"mentor-data review question --pr {args.pr} --id {pending[0]['id']}"
+            if pending
+            else f"mentor-data review check --pr {args.pr}"
+        ),
+    }
+
+
+def _answer_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
+    filter_values = [args.type, args.level, args.query]
+    if args.ids and any(filter_values):
+        raise AgentReviewError(
+            "review_answer_many_selector_invalid",
+            "--ids 不能与 --type、--level 或 --query 同时使用",
+        )
+    if not args.ids and not any(filter_values):
+        raise AgentReviewError(
+            "review_answer_many_selector_required",
+            "answer-many 必须提供 --ids 或至少一个问题筛选器",
+        )
+    if args.confirm_count < 1:
+        raise AgentReviewError(
+            "review_answer_many_count_invalid",
+            "--confirm-count 必须大于零",
+        )
+
+    client = _client(args, root)
+    pull, manifest, digest = _refresh(client, workspace, args.pr)
+    previous = load_draft(workspace, args.pr)
+    assert_draft_current(previous, pull, digest)
+    questions = previous.get("questions", [])
+    if args.ids:
+        selected_ids = [item.strip() for item in args.ids.split(",") if item.strip()]
+        if not selected_ids or len(selected_ids) != len(set(selected_ids)):
+            raise AgentReviewError(
+                "review_answer_many_ids_invalid",
+                "--ids 必须包含互不重复的问题 ID",
+            )
+        question_values = {item["id"]: item for item in questions}
+        missing = [item for item in selected_ids if item not in question_values]
+        if missing:
+            raise AgentReviewError(
+                "review_question_not_found",
+                f"审核底稿中没有问题：{', '.join(missing)}",
+            )
+        selected = [question_values[item] for item in selected_ids]
+    else:
+        selected = [
+            item
+            for item in questions
+            if item.get("status") == "pending" and _question_matches_filters(item, args)
+        ]
+        selected_ids = [item["id"] for item in selected]
+
+    if len(selected) != args.confirm_count:
+        raise AgentReviewError(
+            "review_answer_many_count_mismatch",
+            f"筛选命中 {len(selected)} 个问题，与 --confirm-count {args.confirm_count} 不一致",
+        )
+
+    payload = _answer_payload(args)
+    for question in selected:
+        validate_answer(question, payload)
+    answers = dict(previous.get("answers", {}))
+    for question_id in selected_ids:
+        answers[question_id] = dict(payload)
+    latest_organizations = client.fetch_main_organizations()
+    draft = plan_review(
+        repository=args.repository,
+        pull=pull,
+        manifest=manifest,
+        manifest_sha256=digest,
+        previous_answers=answers,
+        latest_organizations=latest_organizations,
+    )
+    save_draft(workspace, draft)
+    pending = [item for item in draft["questions"] if item["status"] == "pending"]
+    return {
+        "pr": args.pr,
+        "answered_count": len(selected),
+        "question_ids": selected_ids,
+        "choice": payload["choice"],
+        "path_correction_scope": (
+            None
+            if not any(item.get("path_correction_scopes") for item in selected)
+            else (
+                "future-identical-path"
+                if payload.get("save_path_correction")
+                else "current-batch"
+            )
+        ),
         "pending_questions": len(pending),
         "next_question": pending[0]["id"] if pending else None,
         "next": (
@@ -907,6 +1056,8 @@ def execute_review(args: argparse.Namespace) -> int:
             data = _question(args, workspace)
         elif command == "answer":
             data = _answer(args, root, workspace)
+        elif command == "answer-many":
+            data = _answer_many(args, root, workspace)
         elif command == "check":
             data = _check(args, root, workspace)
         elif command == "decision":

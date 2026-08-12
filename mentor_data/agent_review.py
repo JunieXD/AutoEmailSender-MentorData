@@ -442,10 +442,13 @@ def _group_question(
     level: str | None,
     prompt: str,
     reason: str,
-    recommendation: str,
+    rule_default: str | None,
     options: list[dict[str, Any]],
     context: dict[str, Any],
     answers: dict[str, Any],
+    context_recommendation: str | None = None,
+    recommendation_confidence: str | None = None,
+    path_correction_choices: tuple[str, ...] = (),
 ) -> dict[str, Any]:
     question_id = _question_id(pull_number, group["id"], kind, subject)
     answer = copy.deepcopy(answers.get(question_id))
@@ -457,7 +460,15 @@ def _group_question(
         "path": group_path(group),
         "prompt": prompt,
         "reason": reason,
-        "recommendation": recommendation,
+        "rule_default": rule_default,
+        "context_recommendation": context_recommendation,
+        "recommendation_confidence": recommendation_confidence,
+        "path_correction_scopes": (
+            ["current-batch", "future-identical-path"]
+            if path_correction_choices
+            else []
+        ),
+        "path_correction_choices": list(path_correction_choices),
         "options": options,
         "context": context,
         "status": "answered" if answer is not None else "pending",
@@ -646,7 +657,8 @@ def _plan_path(
                     level=level,
                     prompt="学院为空但系所不为空，最终机构层级需要确认",
                     reason="现有机构 Schema 不允许跳过学院后继续按标准路径创建系所。",
-                    recommendation="map-existing",
+                    rule_default=None,
+                    path_correction_choices=("map-existing", "create-under-university"),
                     options=_question_options(
                         ("map-existing", "直接映射到现有机构", ["organization_id"]),
                         ("create-under-university", "在学校下新建机构", ["organization_type"]),
@@ -682,6 +694,7 @@ def _plan_path(
                             target_organization_id=target_id,
                             mapping_kind="custom",
                             mapping_reason=answer.get("reason") or "学院字段为空，人工确认最终机构",
+                            save_path_correction=bool(answer.get("save_path_correction")),
                         ),
                         questions,
                         rules,
@@ -726,6 +739,7 @@ def _plan_path(
                         target_organization_id=organization_id,
                         mapping_kind="custom",
                         mapping_reason=answer.get("reason") or "学院字段为空，人工确认机构层级",
+                        save_path_correction=bool(answer.get("save_path_correction")),
                     ),
                     questions,
                     rules,
@@ -805,7 +819,9 @@ def _plan_path(
                 level=level,
                 prompt="同一父级下存在疑似重复的新机构，请确认是否合并名称",
                 reason="新机构名称相似、存在包含关系或共享同一来源页，不能自动拆分。",
-                recommendation="use-canonical" if recommended_name else "keep-separate",
+                rule_default="keep-separate",
+                context_recommendation="use-canonical" if recommended_name else None,
+                recommendation_confidence="medium" if recommended_name else None,
                 options=_question_options(
                     ("use-canonical", "合并为一个规范名称", ["canonical_name"]),
                     ("keep-separate", "确认是两个不同机构", []),
@@ -888,7 +904,14 @@ def _plan_path(
                 level=level,
                 prompt=f"系所字段“{value}”看起来是学院级机构，请确认实际归属",
                 reason=ambiguity_reason,
-                recommendation="use-suggested" if suggested_target else "create-sibling",
+                rule_default="create-sibling",
+                context_recommendation=("use-suggested" if suggested_target else None),
+                recommendation_confidence=(
+                    "high"
+                    if isinstance(suggestion, dict) and suggestion.get("source") == "history"
+                    else "medium" if suggested_target else None
+                ),
+                path_correction_choices=("use-suggested", "map-sibling", "create-sibling"),
                 options=options,
                 context={
                     "submitted": copy.deepcopy(submitted),
@@ -1014,7 +1037,8 @@ def _plan_path(
             level=level,
             prompt=f"{level} 字段“{value}”无法自动确定，请选择处理方式",
             reason=ambiguity_reason,
-            recommendation="create-submitted" if inferred_type else "map-existing",
+            rule_default="create-submitted" if inferred_type else None,
+            path_correction_choices=("map-existing",),
             options=_question_options(
                 ("create-submitted", "按投稿名称新建当前层级机构", ["organization_type"]),
                 ("map-existing", "直接映射到任意现有最终机构", ["organization_id"]),
@@ -1063,7 +1087,8 @@ def _plan_path(
                     "所选现有机构不存在",
                 )
             if (
-                organization_level(target["type"]) != level
+                answer.get("save_path_correction")
+                or organization_level(target["type"]) != level
                 or target.get("parent_id") != parent_id
             ):
                 return (
@@ -1127,7 +1152,7 @@ def _plan_path(
             level=None,
             prompt="投稿来源域名不属于最终机构当前批准域名",
             reason="现有可信后端会拒绝来源域名不兼容的映射。",
-            recommendation="approve-domains",
+            rule_default=None,
             options=_question_options(
                 ("approve-domains", "把本次来源域名加入最终机构", []),
                 ("map-existing", "改为其他现有机构", ["organization_id"]),
@@ -1207,7 +1232,7 @@ def _row_question(
     kind: str,
     prompt: str,
     reason: str,
-    recommendation: str,
+    rule_default: str | None,
     options: list[dict[str, Any]],
     context: dict[str, Any],
     answers: dict[str, Any],
@@ -1220,7 +1245,7 @@ def _row_question(
         level=None,
         prompt=prompt,
         reason=reason,
-        recommendation=recommendation,
+        rule_default=rule_default,
         options=options,
         context={
             "proposal_id": row["proposal_id"],
@@ -1277,7 +1302,7 @@ def _apply_row_questions(
                 kind="record_conflict",
                 prompt=f"{row['name']} 与已有导师资料冲突，请决定本次投稿如何处理",
                 reason="普通机构审核不能覆盖已有导师资料。",
-                recommendation="reject-row",
+                rule_default="reject-row",
                 options=_question_options(
                     ("reject-row", "不收录本行", []),
                     ("reject-group", "不收录整个机构分组", []),
@@ -1323,7 +1348,7 @@ def _apply_row_questions(
             kind="identity_conflict",
             prompt=f"{row['name']} 已在其他机构任职，请判断双聘、调动或拒绝",
             reason="任职关系变化不能由机构名称规则推断。",
-            recommendation="reject-row",
+            rule_default="reject-row",
             options=_question_options(
                 ("reject-row", "不收录本行", []),
                 ("dual", "新增当前双聘任职", ["reason"]),
@@ -1491,6 +1516,13 @@ def validate_answer(question: dict[str, Any], answer: dict[str, Any]) -> None:
         raise AgentReviewError(
             "review_answer_incomplete",
             f"选择 {choice} 还需要参数：{', '.join(missing)}",
+        )
+    if answer.get("save_path_correction") and choice not in question.get(
+        "path_correction_choices", []
+    ):
+        raise AgentReviewError(
+            "review_answer_invalid",
+            f"问题 {question['id']} 不支持保存未来路径纠正规则",
         )
 
 
