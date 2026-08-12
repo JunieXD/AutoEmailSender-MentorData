@@ -119,7 +119,8 @@ Skill 只描述协作原则：
 5. `uv run ruff check .`；
 6. `uv run pytest`；
 7. Skill `quick_validate.py`；
-8. 对一个开放 PR 运行只读 `inspect` 和 `plan` 烟雾测试，但不运行 `submit`。
+8. 以 editable tool 安装 CLI，从另一个工作区运行 `review doctor` 和只读 `queue`；
+9. 对一个开放 PR 运行只读 `inspect` 和 `plan` 烟雾测试，但不运行 `submit`。
 
 最终审查：
 
@@ -135,5 +136,6 @@ Skill 只描述协作原则：
 - 默认工作流不核验导师个人资料内容，也不需要浏览器。
 - 所有远程写入均受显式授权和二次预演保护。
 - Skill 可被自动发现并通过校验。
+- CLI 已进入用户 PATH，且能从非 MentorData 工作区自动定位可信仓库。
 - 全部仓库测试和静态检查通过。
-- 变更已提交并推送远程分支。
+- 变更已提交并推送远程 `main`。

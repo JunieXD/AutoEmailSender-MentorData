@@ -3,6 +3,8 @@ from __future__ import annotations
 import argparse
 import contextlib
 import json
+import os
+import shutil
 import sys
 from pathlib import Path
 from typing import Any
@@ -27,6 +29,12 @@ from .agent_review_github import GitHubReviewClient
 from .agent_review_preflight import run_preflight
 
 DEFAULT_REPOSITORY = "JunieXD/AutoEmailSender-MentorData"
+ROOT_ENVIRONMENT_VARIABLE = "MENTOR_DATA_ROOT"
+ROOT_MARKERS = (
+    Path("pyproject.toml"),
+    Path("schemas/organization-review.schema.json"),
+    Path("registry/organizations.yml"),
+)
 
 
 def _common_parser() -> argparse.ArgumentParser:
@@ -68,6 +76,7 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         ),
         epilog=(
             "推荐流程：\n"
+            "  mentor-data review doctor\n"
             "  mentor-data review queue\n"
             "  mentor-data review inspect --pr 81\n"
             "  mentor-data review plan --pr 81\n"
@@ -82,6 +91,16 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     commands = review.add_subparsers(dest="review_command", required=True)
+
+    commands.add_parser(
+        "doctor",
+        parents=[common],
+        help="检查本地 CLI、可信仓库、GitHub CLI 和 Codex Skill 是否可用",
+        description=(
+            "只检查本机环境，不访问 GitHub，也不写入仓库。"
+            "可从任意目录运行；editable 安装会自动定位 MentorData 源码仓库。"
+        ),
+    )
 
     queue = commands.add_parser(
         "queue",
@@ -272,12 +291,92 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     _add_fields(status)
 
 
+def _is_repository_root(path: Path) -> bool:
+    return all((path / marker).is_file() for marker in ROOT_MARKERS)
+
+
+def _discover_root(explicit: str | None = None) -> tuple[Path | None, str | None]:
+    if explicit:
+        return Path(explicit).expanduser().resolve(), "argument"
+
+    configured = os.environ.get(ROOT_ENVIRONMENT_VARIABLE)
+    if configured:
+        return Path(configured).expanduser().resolve(), "environment"
+
+    current = Path.cwd().resolve()
+    for candidate in (current, *current.parents):
+        if _is_repository_root(candidate):
+            return candidate, "working-tree"
+
+    package_root = Path(__file__).resolve().parents[1]
+    if _is_repository_root(package_root):
+        return package_root, "editable-install"
+    return None, None
+
+
 def _root(args: argparse.Namespace) -> Path:
-    return Path(args.root or ".").resolve()
+    root, source = _discover_root(args.root)
+    if root is None:
+        raise AgentReviewError(
+            "review_root_not_found",
+            "找不到本地可信 MentorData 仓库",
+            next_command=(
+                "mentor-data review doctor；或设置 MENTOR_DATA_ROOT / 使用 --root"
+            ),
+        )
+    if source in {"argument", "environment"} and not _is_repository_root(root):
+        raise AgentReviewError(
+            "review_root_invalid",
+            f"{root} 不是完整的 MentorData 仓库",
+            next_command="mentor-data review doctor",
+        )
+    return root
 
 
 def _workspace(args: argparse.Namespace, root: Path) -> Path:
     return Path(args.workspace).resolve() if args.workspace else root / ".work" / "agent-reviews"
+
+
+def _doctor(args: argparse.Namespace) -> dict[str, Any]:
+    root, source = _discover_root(args.root)
+    root_valid = root is not None and _is_repository_root(root)
+    codex_home = Path(os.environ.get("CODEX_HOME", Path.home() / ".codex")).expanduser()
+    skill_path = codex_home / "skills" / "review-mentor-data-pr"
+    cli_path = shutil.which("mentor-data")
+    project_clis = (
+        {
+            (root / ".venv" / "bin" / "mentor-data").resolve(),
+            (root / ".venv" / "Scripts" / "mentor-data.exe").resolve(),
+        }
+        if root is not None
+        else set()
+    )
+    cli_on_path = cli_path is not None and (
+        Path(cli_path).resolve() not in project_clis
+    )
+    gh_path = shutil.which("gh")
+    checks = {
+        "trusted_root": root_valid,
+        "cli_on_path": cli_on_path,
+        "github_cli_on_path": gh_path is not None,
+        "codex_skill_installed": (skill_path / "SKILL.md").is_file(),
+    }
+    actions: list[str] = []
+    if not checks["cli_on_path"] and root_valid:
+        actions.append(f"uv tool install --editable {root}")
+    if not checks["codex_skill_installed"] and root_valid:
+        actions.append(f"安装 {root / '.agents/skills/review-mentor-data-pr'} 到 {skill_path}")
+    if not checks["github_cli_on_path"]:
+        actions.append("安装并登录 GitHub CLI (gh)")
+    return {
+        "ready": all(checks.values()),
+        "root": str(root) if root is not None else None,
+        "root_source": source,
+        "cli": cli_path,
+        "skill": str(skill_path),
+        "checks": checks,
+        "actions": actions,
+    }
 
 
 def _fields(args: argparse.Namespace) -> list[str] | None:
@@ -745,9 +844,12 @@ def _status(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, 
 def execute_review(args: argparse.Namespace) -> int:
     output_format = getattr(args, "format", "json")
     try:
+        command = args.review_command
+        if command == "doctor":
+            _emit(command, _doctor(args), output_format=output_format)
+            return 0
         root = _root(args)
         workspace = _workspace(args, root)
-        command = args.review_command
         if command == "queue":
             data = _queue(args, root, workspace)
         elif command == "inspect":

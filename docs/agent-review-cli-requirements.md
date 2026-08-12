@@ -82,6 +82,8 @@ CLI 只发布审核评论，后续由现有可信队列应用决定、更新分�
 
 ### 5.1 自描述
 
+- 支持通过 `uv tool install --editable .` 一次安装到用户 PATH；从其他工作区调用时，自动定位 editable 源码仓库，也允许 `MENTOR_DATA_ROOT` 或 `--root` 显式覆盖。
+- `mentor-data review doctor` 只读检查 CLI、可信仓库、GitHub CLI 和全局 Codex Skill，返回紧凑的机器可读状态与待办动作。
 - `mentor-data review --help` 描述完整工作流和安全边界。
 - 每个子命令提供用途、前置条件、默认输出、筛选参数和下一步示例。
 - 错误输出包含稳定错误代码、简短原因和可执行的下一步命令。
@@ -118,6 +120,7 @@ CLI 只发布审核评论，后续由现有可信队列应用决定、更新分�
 ### 5.4 建议命令能力
 
 - `review queue`：列出开放的批量审核 PR，支持状态和文本筛选。
+- `review doctor`：从任意工作区诊断本地安装、仓库定位和 Skill 可发现性。
 - `review inspect --pr N`：读取或刷新目标 PR 清单，返回极简摘要。
 - `review plan --pr N`：运行确定性规则并创建或刷新底稿。
 - `review groups --pr N`：筛选并列出机构路径分组。

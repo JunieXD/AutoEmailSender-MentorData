@@ -33,10 +33,19 @@ Issue 工作流只解析输入并创建提案 PR，不直接修改正式数据�
 
 维护者可以不打开审核网页，改用仓库内置的 `mentor-data review` 命令和 `review-mentor-data-pr` Skill 完成人机协作审核。该流程默认相信投稿的导师职业信息，不访问个人主页核验内容，重点处理学校、学院、研究院和系所字段的规范化与机构树归属。
 
+第一次使用时，在本仓库根目录把 CLI 以 editable tool 方式安装。这样 `mentor-data` 会进入用户 PATH，CLI 仍直接使用当前仓库源码，并且从其他工作区调用时也能自动找到这份可信仓库：
+
+```bash
+uv tool install --editable .
+mentor-data review doctor
+```
+
+`doctor` 是只读的本地检查，会精确报告 CLI、可信仓库、GitHub CLI 和全局 Codex Skill 是否就绪，以及尚需执行的动作。仓库内的 Skill 位于 `.agents/skills/review-mentor-data-pr`；如果希望从其他项目会话调用，应将它安装到 Codex 的全局 Skills 目录。安装或更新 Skill 后，新会话即可发现它。
+
 从命令自描述帮助开始：
 
 ```bash
-uv run mentor-data review --help
+mentor-data review --help
 ```
 
 CLI 会先自动处理唯一精确匹配、明确新机构、空层级和重复祖先等确定项，再把不确定的机构关系压缩为带稳定 ID 的问题。审核底稿保存在被 Git 忽略的 `.work/agent-reviews/`，不会写入投稿分支。所有问题回答完成后，`review check` 会在最新 `main` 的临时 worktree 中复用可信后端完成全量预演。
