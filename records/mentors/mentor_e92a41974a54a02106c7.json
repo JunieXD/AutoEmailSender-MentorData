@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e5a2ba33a991dc784df0"
+      ],
+      "ended_at": null,
+      "id": "aff_202253a2260e9db297a9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/yan/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e5a2ba33a991dc784df0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_202253a2260e9db297a9",
+      "claim_ids": [
+        "claim_e5a2ba33a991dc784df0"
+      ],
+      "is_primary": true,
+      "normalized_value": "yan@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/yan/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yan@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e5a2ba33a991dc784df0"
+    ],
+    "email": [
+      "claim_e5a2ba33a991dc784df0"
+    ],
+    "name": [
+      "claim_e5a2ba33a991dc784df0"
+    ],
+    "profile_url": [
+      "claim_e5a2ba33a991dc784df0"
+    ],
+    "research_directions": [
+      "claim_e5a2ba33a991dc784df0"
+    ],
+    "status": [
+      "claim_e5a2ba33a991dc784df0"
+    ],
+    "title": [
+      "claim_e5a2ba33a991dc784df0"
+    ]
+  },
+  "id": "mentor_e92a41974a54a02106c7",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e5a2ba33a991dc784df0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫亚萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_202253a2260e9db297a9",
+      "claim_ids": [
+        "claim_e5a2ba33a991dc784df0"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/yan/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、图像异常检测、视觉质量评估、特征匹配、少/零样本学习、自监督学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/yan/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

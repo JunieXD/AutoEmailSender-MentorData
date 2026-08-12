@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_212ac9e952669ae0ddd2"
+      ],
+      "ended_at": null,
+      "id": "aff_2ea35b31e3b3676a6982",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/wni/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_212ac9e952669ae0ddd2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2ea35b31e3b3676a6982",
+      "claim_ids": [
+        "claim_212ac9e952669ae0ddd2"
+      ],
+      "is_primary": true,
+      "normalized_value": "wni@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/wni/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wni@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_212ac9e952669ae0ddd2"
+    ],
+    "email": [
+      "claim_212ac9e952669ae0ddd2"
+    ],
+    "name": [
+      "claim_212ac9e952669ae0ddd2"
+    ],
+    "profile_url": [
+      "claim_212ac9e952669ae0ddd2"
+    ],
+    "recent_papers": [
+      "claim_212ac9e952669ae0ddd2"
+    ],
+    "research_directions": [
+      "claim_212ac9e952669ae0ddd2"
+    ],
+    "status": [
+      "claim_212ac9e952669ae0ddd2"
+    ],
+    "title": [
+      "claim_212ac9e952669ae0ddd2"
+    ]
+  },
+  "id": "mentor_1a88fff584193c778f79",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_212ac9e952669ae0ddd2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "倪巍伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2ea35b31e3b3676a6982",
+      "claim_ids": [
+        "claim_212ac9e952669ae0ddd2"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/wni/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ruyu Zhang, Weiwei Ni*(倪巍伟), Nan Fu, Lihe Hou, Dongyue Zhang, Yifan Zhang, Liang Zheng: Principal Angle-Based Clustered Federated Learning With Local Differential Privacy for Heterogeneous Data. IEEE Trans. Inf. Forensics Secur. 20: 9328-9342 (2025)",
+    "Dongyue Zhang, Weiwei Ni*(倪巍伟), Nan Fu, Lihe Hou, Ruyu Zhang. Locally differentially private trajectory publication based on regional popularity awareness. IEEE Trans. Inf. Forensics Secur. 20: 6719-6732 (2025).",
+    "Nan Fu,Weiwei Ni*(倪巍伟),Lihe Hou, Dongyue Zhang, Ruyu Zhang.Community detection in decentralized social networks with local differential privacy.Inf. Sci.661,120164(2024).",
+    "Sen Zhang,Weiwei Ni*(倪巍伟), Nan Fu.Community Preserved Social Graph Publishing with Node Differential Privacy.J. Comput. Sci. Technol.38(6):1369-1386(2024)",
+    "Lihe Hou,Weiwei Ni*(倪巍伟),Sen Zhang,Nan Fu,Dongyue Zhang.Block-HRG: Block-based differentially private IoT networks release.Ad Hoc Networks.140: 103059 (2023)",
+    "Nan Fu,Weiwei Ni*(倪巍伟),Sen Zhang,Lihe Hou,Dongyue Zhang.GC-NLDP: A graph clustering algorithm with local differential privacy.Comput. Secur.124: 102967 (2023)",
+    "Lihe Hou,Weiwei Ni*(倪巍伟),Sen Zhang,Nan Fu,Dongyue Zhang.Wdt-SCAN: Clustering decentralized social graphs with local differential privacy.Comput. Secur.125: 103036 (2023)",
+    "Dongyue Zhang,Weiwei Ni*(倪巍伟),Nan Fu,Lihe Hou,Ruyu Zhang.Locally differentially private multi-dimensional data collection via haar transform.Comput. Secur.130: 103291 (2023)"
+  ],
+  "research_directions": [
+    "数据智能与数据安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/wni/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bcf76b1c5b86312ee7eb"
+      ],
+      "ended_at": null,
+      "id": "aff_a945d1a24ed0e9e61c8d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/zhangbl/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bcf76b1c5b86312ee7eb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a945d1a24ed0e9e61c8d",
+      "claim_ids": [
+        "claim_bcf76b1c5b86312ee7eb"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangbl@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/zhangbl/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangbl@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bcf76b1c5b86312ee7eb"
+    ],
+    "email": [
+      "claim_bcf76b1c5b86312ee7eb"
+    ],
+    "name": [
+      "claim_bcf76b1c5b86312ee7eb"
+    ],
+    "profile_url": [
+      "claim_bcf76b1c5b86312ee7eb"
+    ],
+    "research_directions": [
+      "claim_bcf76b1c5b86312ee7eb"
+    ],
+    "status": [
+      "claim_bcf76b1c5b86312ee7eb"
+    ],
+    "title": [
+      "claim_bcf76b1c5b86312ee7eb"
+    ]
+  },
+  "id": "mentor_8b8f6f4ed6324dd70c28",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bcf76b1c5b86312ee7eb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张柏礼"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a945d1a24ed0e9e61c8d",
+      "claim_ids": [
+        "claim_bcf76b1c5b86312ee7eb"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/zhangbl/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据分析,人工智能应用,数据仓库,复杂系统信息集成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/zhangbl/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

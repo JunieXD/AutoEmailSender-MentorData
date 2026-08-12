@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ba1453712b9f8f6e4ef2"
+      ],
+      "ended_at": null,
+      "id": "aff_96cd19db598d21d4bd98",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/jiaqilv/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ba1453712b9f8f6e4ef2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96cd19db598d21d4bd98",
+      "claim_ids": [
+        "claim_ba1453712b9f8f6e4ef2"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiaqi.lv@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/jiaqilv/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiaqi.lv@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ],
+    "email": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ],
+    "name": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ],
+    "profile_url": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ],
+    "recent_papers": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ],
+    "research_directions": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ],
+    "status": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ],
+    "title": [
+      "claim_ba1453712b9f8f6e4ef2"
+    ]
+  },
+  "id": "mentor_acc1285aa73ec1e3a7ab",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ba1453712b9f8f6e4ef2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕佳祺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_96cd19db598d21d4bd98",
+      "claim_ids": [
+        "claim_ba1453712b9f8f6e4ef2"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/jiaqilv/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Liu*, J. Lv*, X Geng, and N Xu.Learning with Partial-label and unlabeled data: A uniform treatment for supervision redundancy and insufficiency. In Proceedings of 41st International Conference on Machine Learning (ICML 2024), PMLR, Vienna, Austria, Jul 21--27, 2024.",
+    "J. Lv, B. Liu, L. Feng, N. Xu, M. Xu, B. An, G. Niu, X. Geng, and M. Sugiyama. On therobustness of average losses for partial-label learning.IEEE Transactions on Pattern Analysis and Machine Intelligence, 46(5):2569–2583, 2024.",
+    "S. Xia*, J. Lv*, N. Xu, G. Niu, and X. Geng. Towards effective visual representations for partial-label learning. In Proceedings of 2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2023), pp. 15589--15598, Vancouver, British Columbia, Canada, Jun 18--22, 2023.",
+    "N. Xu, B. Liu, J. Lv, C. Qiao, and X. Geng. Progressive Purification for Instance-Dependent Partial Label Learning. In Proceedings of 40th International Conference on Machine Learning (ICML 2023), PMLR, vol. 202, pp. 38551--38565, Honolulu, Hawaii, USA, Jul 24--30, 2023.",
+    "C. Qiao, N. Xu, J. Lv, Y. Ren, and X. Geng. FREDIS: A Fusion Framework of Refinement and Disambiguation for Unreliable Partial Label Learning. In Proceedings of 40th International Conference on Machine Learning (ICML 2023), PMLR, vol. 202, pp. 28321--28336, Honolulu, Hawaii, USA, Jul 24--30, 2023.",
+    "S. Xia, J. Lv, N. Xu, and X. Geng. Ambiguity-Induced Contrastive Learning for InstanceDependent Partial Label Learning. In Proceedings of 31st International Joint Conference on Artificial Intelligence (IJCAI 2022), pp. 3615--3621, Vienna, Austria, Jul 23--29, 2022.",
+    "Z. Wu, J. Lv, and M. Sugiyama. Learning with Proper Partial Labels.Neural Computation, vol. 35, no. 1, pp. 58--81, 2023.",
+    "J. Lv, T. Wu, C. Peng, Y. Liu, N. Xu, and X. Geng. Compact Learning for Multi-Label Classification.Pattern Recognition, vol. 113, pp. 107833, 2021."
+  ],
+  "research_directions": [
+    "弱监督学习,可信机器学习,深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/jiaqilv/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

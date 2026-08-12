@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_df400f3575e5003e0cb0"
+      ],
+      "ended_at": null,
+      "id": "aff_f426192b9dd9352f8994",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/huyutao/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_df400f3575e5003e0cb0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f426192b9dd9352f8994",
+      "claim_ids": [
+        "claim_df400f3575e5003e0cb0"
+      ],
+      "is_primary": true,
+      "normalized_value": "huyutao@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/huyutao/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huyutao@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_df400f3575e5003e0cb0"
+    ],
+    "email": [
+      "claim_df400f3575e5003e0cb0"
+    ],
+    "name": [
+      "claim_df400f3575e5003e0cb0"
+    ],
+    "profile_url": [
+      "claim_df400f3575e5003e0cb0"
+    ],
+    "recent_papers": [
+      "claim_df400f3575e5003e0cb0"
+    ],
+    "research_directions": [
+      "claim_df400f3575e5003e0cb0"
+    ],
+    "status": [
+      "claim_df400f3575e5003e0cb0"
+    ],
+    "title": [
+      "claim_df400f3575e5003e0cb0"
+    ]
+  },
+  "id": "mentor_f66ef15b9ee8a41ef233",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_df400f3575e5003e0cb0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡宇韬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f426192b9dd9352f8994",
+      "claim_ids": [
+        "claim_df400f3575e5003e0cb0"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/huyutao/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Beyond One-to-One: Rethinking the Referring Image Segmentation",
+    "OmniMedVQA: A New Large-Scale Comprehensive Evaluation Benchmark for Medical LVLM",
+    "Nas-Count: Counting-by-Density with Neural Architecture Search",
+    "Hierarchical Self-Distilled Feature Learning for Fine-Grained Visual Categorization",
+    "Variational Self-Distillation for Remote Sensing Scene Classification",
+    "Alignment Enhancement Network for Fine-Grained Visual Categorization",
+    "Learning Foreground Information Bottleneck for Few-Shot Semantic Segmentation",
+    "Attentional Kernel Encoding Networks for Fine-Grained Visual Categorization"
+  ],
+  "research_directions": [
+    "计算机视觉、多模态学习、医学图像分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/huyutao/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

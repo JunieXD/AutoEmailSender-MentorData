@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2adc36680e44950b8c01"
+      ],
+      "ended_at": null,
+      "id": "aff_09c2e9d409b568724af6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/xiangzhongluo/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_2adc36680e44950b8c01"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_09c2e9d409b568724af6",
+      "claim_ids": [
+        "claim_2adc36680e44950b8c01"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiangzhong.luo@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xiangzhongluo/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiangzhong.luo@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2adc36680e44950b8c01"
+    ],
+    "email": [
+      "claim_2adc36680e44950b8c01"
+    ],
+    "name": [
+      "claim_2adc36680e44950b8c01"
+    ],
+    "profile_url": [
+      "claim_2adc36680e44950b8c01"
+    ],
+    "research_directions": [
+      "claim_2adc36680e44950b8c01"
+    ],
+    "status": [
+      "claim_2adc36680e44950b8c01"
+    ]
+  },
+  "id": "mentor_9d56111539e8b8c078c1",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2adc36680e44950b8c01"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗翔中"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_09c2e9d409b568724af6",
+      "claim_ids": [
+        "claim_2adc36680e44950b8c01"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xiangzhongluo/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "Efficient AI Algorithms, Efficient Large Language Models"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xiangzhongluo/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

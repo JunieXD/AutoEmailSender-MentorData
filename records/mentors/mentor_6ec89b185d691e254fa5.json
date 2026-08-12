@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_527e3244788a0e033e4b"
+      ],
+      "ended_at": null,
+      "id": "aff_04bd8983b7e16a177394",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/shixiao/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_527e3244788a0e033e4b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_04bd8983b7e16a177394",
+      "claim_ids": [
+        "claim_527e3244788a0e033e4b"
+      ],
+      "is_primary": true,
+      "normalized_value": "xshi@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/shixiao/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xshi@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_527e3244788a0e033e4b"
+    ],
+    "email": [
+      "claim_527e3244788a0e033e4b"
+    ],
+    "name": [
+      "claim_527e3244788a0e033e4b"
+    ],
+    "profile_url": [
+      "claim_527e3244788a0e033e4b"
+    ],
+    "recent_papers": [
+      "claim_527e3244788a0e033e4b"
+    ],
+    "research_directions": [
+      "claim_527e3244788a0e033e4b"
+    ],
+    "status": [
+      "claim_527e3244788a0e033e4b"
+    ],
+    "title": [
+      "claim_527e3244788a0e033e4b"
+    ]
+  },
+  "id": "mentor_6ec89b185d691e254fa5",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_527e3244788a0e033e4b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "时霄"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_04bd8983b7e16a177394",
+      "claim_ids": [
+        "claim_527e3244788a0e033e4b"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/shixiao/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ziqi Wang, Liang Pang, Xiao Shi, Longxing Shi. “Efficient Memory Circuits Yield Analysis and Optimization Framework via Meta-Learning”, IEEE Transactions on Circuits and Systems II: Express Briefs, (TCASII), 2024.",
+    "Junzhuo Zhou, Li Huang, Haoxuan Xia, Yihui Cai, Leilei Jin, Xiao Shi, Wei W. Xing, Ting-Jung Lin, Lei He. “LVF2: A Statistical Timing Model based on Gaussian Mixture for Yield Estimation and Speed Binning”, 61st ACM/IEEE Design Automation Conference (DAC), 2024.",
+    "Liang Pang, Ziqi Wang, Rui Shi, Mengyun Yao, Xiao Shi, Hao Yan, Longxing Shi. “An efficient SRAM yield analysis method based on scaled-sigma adaptive importance sampling with meta-model accelerated”, Integration 89 (2023): 155-167.",
+    "Liang Pang, Mengyun Yao, Xiao Shi, Hao Yan, Longxing Shi. “CharTM: The dynamic stability characterization for memory based on tail distribution modeling”, Microelectronics Journal 133 (2023): 105697.",
+    "Xiao Shi, Hao Yan, Qiancun Huang, Chengzhen Xuan, Longxing Shi, Lei He. “A Compact High-Dimensional Yield Analysis Method using Low-Rank Tensor Approximation”, Transactions on Design Automation of Electronic Systems, (TODAES), 2021.",
+    "Xiao Shi, Hao Yan, Chuwen Li, Jinxin Wang, Longxing Shi, Lei He. “A Non-Gaussian Adaptive Importance Sampling Method for High-Dimensional and Multi-Failure-Region SRAM Yield Analysis”, International Conference On Computer Aided Design, (ICCAD), 2020.",
+    "Xiao Shi,Hao Yan, Jinxin Wang, Jiajia Zhang, Longxing Shi, Lei He. An Efficient Adaptive Importance Sampling Method for SRAM and Analog Yield Analysis. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, (TCAD), 2020.",
+    "Peng Zou, Zhifeng Lin,Xiao Shi, Yingjie Wu, Jianli Chen, Jun Yu, and Yao-Wen Chang, Time-Division Multiplexing Based System-Level FPGA Routing for Logic Verification, 57th ACM/IEEE Design Automation Conference (DAC), 2020."
+  ],
+  "research_directions": [
+    "大语言模型,机器学习,EDA电子设计自动化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/shixiao/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6d50726fe001e3741afa"
+      ],
+      "ended_at": null,
+      "id": "aff_64258d5519960aa0893a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/bliu/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6d50726fe001e3741afa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_64258d5519960aa0893a",
+      "claim_ids": [
+        "claim_6d50726fe001e3741afa"
+      ],
+      "is_primary": true,
+      "normalized_value": "bliu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/bliu/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "bliu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6d50726fe001e3741afa"
+    ],
+    "email": [
+      "claim_6d50726fe001e3741afa"
+    ],
+    "name": [
+      "claim_6d50726fe001e3741afa"
+    ],
+    "profile_url": [
+      "claim_6d50726fe001e3741afa"
+    ],
+    "recent_papers": [
+      "claim_6d50726fe001e3741afa"
+    ],
+    "research_directions": [
+      "claim_6d50726fe001e3741afa"
+    ],
+    "status": [
+      "claim_6d50726fe001e3741afa"
+    ],
+    "title": [
+      "claim_6d50726fe001e3741afa"
+    ]
+  },
+  "id": "mentor_7a2477720c1c6ec549ca",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6d50726fe001e3741afa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_64258d5519960aa0893a",
+      "claim_ids": [
+        "claim_6d50726fe001e3741afa"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/bliu/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Type Dynamics Theory-Driven Personality Detection with LLM-Enhanced Social Profiling",
+    "EarlyDLM: Early Detecting Lateral Movements Through Graph and Loopback Sequence Embedding",
+    "Using Graph with Inter-connection Intervals Embedding to Discover Potential Threats in the Network",
+    "The intelligent social event observer: Multi-source continuous event integration, discovery, and induction with LLMs",
+    "Towards strategic persuasion: Unveiling users' susceptibility to persuasive strategies in dialogues",
+    "PsyAdvisor: A Plug-and-Play Strategy Advice Planner with Proactive Questioning in Psychological Conversations",
+    "面向未知网络威胁的网络要地自适应防御模型",
+    "Knowledge graph based question-answering model with subgraph retrieval optimization"
+  ],
+  "research_directions": [
+    "大模型拟人化技术研究,大模型应用研究,社交网络内容安全研究,在线社交网络舆情分析,基于大数据的用户画像,算力网络协议与路由研究,网络行为分析与安全防御"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/bliu/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

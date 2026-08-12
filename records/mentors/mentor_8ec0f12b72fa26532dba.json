@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8fb89b45ed42d287ceb1"
+      ],
+      "ended_at": null,
+      "id": "aff_681dcb08def746f34b5f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/bxli/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8fb89b45ed42d287ceb1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_681dcb08def746f34b5f",
+      "claim_ids": [
+        "claim_8fb89b45ed42d287ceb1"
+      ],
+      "is_primary": true,
+      "normalized_value": "bx.li@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/bxli/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bx.li@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8fb89b45ed42d287ceb1"
+    ],
+    "email": [
+      "claim_8fb89b45ed42d287ceb1"
+    ],
+    "name": [
+      "claim_8fb89b45ed42d287ceb1"
+    ],
+    "profile_url": [
+      "claim_8fb89b45ed42d287ceb1"
+    ],
+    "recent_papers": [
+      "claim_8fb89b45ed42d287ceb1"
+    ],
+    "research_directions": [
+      "claim_8fb89b45ed42d287ceb1"
+    ],
+    "status": [
+      "claim_8fb89b45ed42d287ceb1"
+    ],
+    "title": [
+      "claim_8fb89b45ed42d287ceb1"
+    ]
+  },
+  "id": "mentor_8ec0f12b72fa26532dba",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8fb89b45ed42d287ceb1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李必信"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_681dcb08def746f34b5f",
+      "claim_ids": [
+        "claim_8fb89b45ed42d287ceb1"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/bxli/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Reinforcement Learning-Driven Adversarial Attack Methods with Dynamic Perturbation Optimization",
+    "A Survey of Blockchain Privacy Protection in Intra-Chain and Cross-Chain Scenarios: State-of-the-art, Challenges, and Future Work",
+    "TRAGIC: Test Oracle Generation for ISA Compliance Testing via Large Language Model",
+    "Bridging Bug Localization and Issue Fixing: A Hierarchical Localization Framework Leveraging Large Language Models",
+    "SA.Resilience.Evaluator: Evaluate the Resilience of Software Architecture Based on Attack Surface Analysis",
+    "ZKVeil: A Privacy-preserving Compliance Verification Scheme for Blockchain-enabled Supply Chain Transactions",
+    "VulFinder: Exploring Chaincode Vulnerabilities More Effectively and Efficiently Using Knowledge Graph Based Defect Pattern Matching",
+    "Why Smart Contracts Reported as Vulnerable Were not Exploited?"
+  ],
+  "research_directions": [
+    "智能化软件开发和维护、软件缺陷检测与质量提升、软件安全与可信保障"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/bxli/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

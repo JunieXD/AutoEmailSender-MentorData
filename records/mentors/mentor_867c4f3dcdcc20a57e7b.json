@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0117826cfdd3aff23f47"
+      ],
+      "ended_at": null,
+      "id": "aff_ff35c1830de5413bb456",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/xdgu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0117826cfdd3aff23f47"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ff35c1830de5413bb456",
+      "claim_ids": [
+        "claim_0117826cfdd3aff23f47"
+      ],
+      "is_primary": true,
+      "normalized_value": "xdgu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xdgu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xdgu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0117826cfdd3aff23f47"
+    ],
+    "email": [
+      "claim_0117826cfdd3aff23f47"
+    ],
+    "name": [
+      "claim_0117826cfdd3aff23f47"
+    ],
+    "profile_url": [
+      "claim_0117826cfdd3aff23f47"
+    ],
+    "status": [
+      "claim_0117826cfdd3aff23f47"
+    ],
+    "title": [
+      "claim_0117826cfdd3aff23f47"
+    ]
+  },
+  "id": "mentor_867c4f3dcdcc20a57e7b",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0117826cfdd3aff23f47"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "顾晓丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ff35c1830de5413bb456",
+      "claim_ids": [
+        "claim_0117826cfdd3aff23f47"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xdgu/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xdgu/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

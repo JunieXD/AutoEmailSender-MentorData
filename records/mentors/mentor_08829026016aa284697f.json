@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_989016d4f5e37072a50e"
+      ],
+      "ended_at": null,
+      "id": "aff_e1bfcbb53fe80a7da387",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/yangming2002/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_989016d4f5e37072a50e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e1bfcbb53fe80a7da387",
+      "claim_ids": [
+        "claim_989016d4f5e37072a50e"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangming2002@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/yangming2002/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangming2002@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_989016d4f5e37072a50e"
+    ],
+    "email": [
+      "claim_989016d4f5e37072a50e"
+    ],
+    "name": [
+      "claim_989016d4f5e37072a50e"
+    ],
+    "profile_url": [
+      "claim_989016d4f5e37072a50e"
+    ],
+    "recent_papers": [
+      "claim_989016d4f5e37072a50e"
+    ],
+    "research_directions": [
+      "claim_989016d4f5e37072a50e"
+    ],
+    "status": [
+      "claim_989016d4f5e37072a50e"
+    ],
+    "title": [
+      "claim_989016d4f5e37072a50e"
+    ]
+  },
+  "id": "mentor_08829026016aa284697f",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_989016d4f5e37072a50e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e1bfcbb53fe80a7da387",
+      "claim_ids": [
+        "claim_989016d4f5e37072a50e"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/yangming2002/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Tor-based Anonymous Network Covert Channel",
+    "Descriptors of Exposure: Undermining Tor Anonymity through Exploiting DESCRIPTOR FLOOD",
+    "Duplicate- Node Attack: Identifying Guards to Degrade and Triangulate Onion Services",
+    "Your Outer Appearance Mirrors Your Inner Self: Exploiting Unobservable Node Internals to Deanonymize Uploaders in Freenet",
+    "Time Tells All: Deanonymization of Blockchain RPC Users with Zero Transaction Fee",
+    "Do Not Trust What They Tell: Exposing Malicious Accomplices in Tor via Anomalous Circuit Detection",
+    "RIoTFuzzer: Companion App Assisted Remote Fuzzing for Detecting Vulnerabilities in IoT Devices",
+    "A De-anonymization Attack Against Downloaders in Freenet"
+  ],
+  "research_directions": [
+    "匿名网络、流量分析、数币安全、智能物联网、Agentic AI for Cybersecurity等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/yangming2002/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

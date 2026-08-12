@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8efeb77237c381dbe391"
+      ],
+      "ended_at": null,
+      "id": "aff_c42f1ae3b3dc387b325d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/xfqi/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_8efeb77237c381dbe391"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c42f1ae3b3dc387b325d",
+      "claim_ids": [
+        "claim_8efeb77237c381dbe391"
+      ],
+      "is_primary": true,
+      "normalized_value": "xfqi@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xfqi/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xfqi@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8efeb77237c381dbe391"
+    ],
+    "email": [
+      "claim_8efeb77237c381dbe391"
+    ],
+    "name": [
+      "claim_8efeb77237c381dbe391"
+    ],
+    "profile_url": [
+      "claim_8efeb77237c381dbe391"
+    ],
+    "research_directions": [
+      "claim_8efeb77237c381dbe391"
+    ],
+    "status": [
+      "claim_8efeb77237c381dbe391"
+    ]
+  },
+  "id": "mentor_a77f053f036cac15c020",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8efeb77237c381dbe391"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "戚晓芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c42f1ae3b3dc387b325d",
+      "claim_ids": [
+        "claim_8efeb77237c381dbe391"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xfqi/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件工程,智能软件工程,软件分析与测试"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xfqi/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

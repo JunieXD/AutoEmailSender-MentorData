@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d720782c1f41d499db71"
+      ],
+      "ended_at": null,
+      "id": "aff_2d9379a1eb8a22d9e73f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/yaoli/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d720782c1f41d499db71"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2d9379a1eb8a22d9e73f",
+      "claim_ids": [
+        "claim_d720782c1f41d499db71"
+      ],
+      "is_primary": true,
+      "normalized_value": "yao.li@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/yaoli/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yao.li@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d720782c1f41d499db71"
+    ],
+    "email": [
+      "claim_d720782c1f41d499db71"
+    ],
+    "name": [
+      "claim_d720782c1f41d499db71"
+    ],
+    "profile_url": [
+      "claim_d720782c1f41d499db71"
+    ],
+    "recent_papers": [
+      "claim_d720782c1f41d499db71"
+    ],
+    "research_directions": [
+      "claim_d720782c1f41d499db71"
+    ],
+    "status": [
+      "claim_d720782c1f41d499db71"
+    ],
+    "title": [
+      "claim_d720782c1f41d499db71"
+    ]
+  },
+  "id": "mentor_df061e5785b78a967d93",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d720782c1f41d499db71"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚莉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2d9379a1eb8a22d9e73f",
+      "claim_ids": [
+        "claim_d720782c1f41d499db71"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/yaoli/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xinwei Li,Li Lin,Hui Jiao,Li Yao*,Tien-Tsin Wong,Hanqian Wu. DiVE: Decoupling Intra-layer Visual Evidence for Mitigating Hallucinations in Large Vision-Language Models. ACL 2026 accepted (CCF A)",
+    "Zhang Y , Lin Y , Wan X, Li Yao*, et al. Structure-Aware Conditional Diffusion Generation for Incomplete Multi-View Clustering[J].IEEE Transactions on Knowledge and Data Engineering, PP[2026-04-08].DOI:10.1109/TKDE.2026.3673320.(CCF A)",
+    "Aslam M W , Rehman S U , Tayyab A M M , Li Yao* .CGA: Curvature-Guided Attention for Remote Sensing Image Super-Resolution[J].IEEE Transactions on Geoscience and Remote Sensing, 64[2026-04-08].DOI:10.1109/TGRS.2026.3661098.(JCR Q1)",
+    "Xiao, Z., Xu, Y., Huang, Y., Yao, L*. (2026). PUNO: A Neural Operator Framework for Point Cloud Upsampling. Proceedings of the AAAI Conference on Artificial Intelligence, 40(13), 11042-11050.https://doi.org/10.1609/aaai.v40i13.38082(CCF A)",
+    "Zhang, Y., Wan, X., Zhang, C., Xu, J., Chen, C., Wong, T.-T., Yao, L.*, & Lin, Y. (2026). Mamba-Driven Multi-View Discriminative Clustering via Global-Local Cross-View Sequence Modeling. Proceedings of the AAAI Conference on Artificial Intelligence, 40(34), 28519-28527.https://doi.org/10.1609/aaai.v40i34.40082(CCF A)",
+    "Leizhen Wang , Peibo Duan, Zhengbing He, Cheng Lyu, Xin Chen , Nan Zheng , Li Yao , Zhenliang Ma,Agentic Large Language Models for day-to-day route choices,Transportation Research Part C: Emerging Technologies,Volume 180, November 2025, 105307.https://doi.org/10.1016/j.trc.2025.105307(中科院Q1区Top期刊)",
+    "Zhang, Y., Lin, Y., Yan, W., Yao, L.*, Wan, X., Li, G., Zhang, C., Ke, G., & Xu, J. (2025). Incomplete Multi-view Clustering via Diffusion Contrastive Generation.Proceedings of the AAAI Conference on Artificial Intelligence, 39(21), 22650-22658.https://doi.org/10.1609/aaai.v39i21.34424(CCF A)"
+  ],
+  "research_directions": [
+    "计算机图形学、计算机视觉、人工智能交叉应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/yaoli/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

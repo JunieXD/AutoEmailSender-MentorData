@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aef0ffa42d4b80004ea9"
+      ],
+      "ended_at": null,
+      "id": "aff_2445c3010ff3c380515b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/xuyang_palm/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_aef0ffa42d4b80004ea9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2445c3010ff3c380515b",
+      "claim_ids": [
+        "claim_aef0ffa42d4b80004ea9"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuyang_palm@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xuyang_palm/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xuyang_palm@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aef0ffa42d4b80004ea9"
+    ],
+    "email": [
+      "claim_aef0ffa42d4b80004ea9"
+    ],
+    "name": [
+      "claim_aef0ffa42d4b80004ea9"
+    ],
+    "profile_url": [
+      "claim_aef0ffa42d4b80004ea9"
+    ],
+    "recent_papers": [
+      "claim_aef0ffa42d4b80004ea9"
+    ],
+    "research_directions": [
+      "claim_aef0ffa42d4b80004ea9"
+    ],
+    "status": [
+      "claim_aef0ffa42d4b80004ea9"
+    ]
+  },
+  "id": "mentor_dc52d8ce086f73db8aa5",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aef0ffa42d4b80004ea9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨旭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2445c3010ff3c380515b",
+      "claim_ids": [
+        "claim_aef0ffa42d4b80004ea9"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xuyang_palm/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "How to Configure Good In-Context Sequence for Visual Question Answering",
+    "ICD-LM: Configuring Vision-Language In-Context Demonstrations by Language Modeling",
+    "Manipulating the Label Space for In-Context Classification",
+    "Exploring Diverse In-Context Configurations for Image Captioning",
+    "Transforming Visual Scene Graphs to Image Captions",
+    "Learning Trajectory-Word Alignments for Video-Language Tasks"
+  ],
+  "research_directions": [
+    "Vision-Language tasks, Large Language Model, In-Context Learning, Learngene, Large Vision-Language Model, Image Captioning"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xuyang_palm/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

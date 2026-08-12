@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d4dd158a5f96f18e381b"
+      ],
+      "ended_at": null,
+      "id": "aff_aecf58a8916985c65039",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/fangpengfei/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d4dd158a5f96f18e381b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aecf58a8916985c65039",
+      "claim_ids": [
+        "claim_d4dd158a5f96f18e381b"
+      ],
+      "is_primary": true,
+      "normalized_value": "fangpengfei@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/fangpengfei/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fangpengfei@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d4dd158a5f96f18e381b"
+    ],
+    "email": [
+      "claim_d4dd158a5f96f18e381b"
+    ],
+    "name": [
+      "claim_d4dd158a5f96f18e381b"
+    ],
+    "profile_url": [
+      "claim_d4dd158a5f96f18e381b"
+    ],
+    "research_directions": [
+      "claim_d4dd158a5f96f18e381b"
+    ],
+    "status": [
+      "claim_d4dd158a5f96f18e381b"
+    ],
+    "title": [
+      "claim_d4dd158a5f96f18e381b"
+    ]
+  },
+  "id": "mentor_25e272f62ea6f509d96a",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d4dd158a5f96f18e381b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "方鹏飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aecf58a8916985c65039",
+      "claim_ids": [
+        "claim_d4dd158a5f96f18e381b"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/fangpengfei/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、计算机视觉、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/fangpengfei/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

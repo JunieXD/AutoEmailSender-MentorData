@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eff72e028aabc0bf5cf5"
+      ],
+      "ended_at": null,
+      "id": "aff_2b67a816c8b03bf00697",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/longc/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eff72e028aabc0bf5cf5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2b67a816c8b03bf00697",
+      "claim_ids": [
+        "claim_eff72e028aabc0bf5cf5"
+      ],
+      "is_primary": true,
+      "normalized_value": "chen_long@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/longc/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chen_long@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eff72e028aabc0bf5cf5"
+    ],
+    "email": [
+      "claim_eff72e028aabc0bf5cf5"
+    ],
+    "name": [
+      "claim_eff72e028aabc0bf5cf5"
+    ],
+    "profile_url": [
+      "claim_eff72e028aabc0bf5cf5"
+    ],
+    "recent_papers": [
+      "claim_eff72e028aabc0bf5cf5"
+    ],
+    "research_directions": [
+      "claim_eff72e028aabc0bf5cf5"
+    ],
+    "status": [
+      "claim_eff72e028aabc0bf5cf5"
+    ],
+    "title": [
+      "claim_eff72e028aabc0bf5cf5"
+    ]
+  },
+  "id": "mentor_88dbc85b061f16490814",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eff72e028aabc0bf5cf5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2b67a816c8b03bf00697",
+      "claim_ids": [
+        "claim_eff72e028aabc0bf5cf5"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/longc/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "DDRL: A Dual-phase Deep Reinforcement Learning Approach for UAV-Assisted Content Delivery Across Multiple Base Stations. IEEE Transaction on Wireless Communication. 2026.",
+    "OPKV: A High-Throughput Plugin-Driven Framework for Recallable Sparsity in Paged KV Cache Systems. MLSys 2026.",
+    "DyMerge-LoRA: On-GPU Post-Merge Fusion for High-Throughput Multi-Tenant Composite LoRA Serving. SIGKDD 2026.",
+    "CAFGD: Reduce Fragmentation in Large-Scale Multi-tenant Clusters for GPU Sharing Workloads. ICDCS 2025.",
+    "Reliable Truth Discovery for Dynamic and Dependent Sources. IEEE Transactions on Knowledge and Data Engineering, 2025."
+  ],
+  "research_directions": [
+    "机器学习系统优化(mlsys)、大模型推理加速、云计算/边缘计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/longc/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5c91113e8a543cd7d901"
+      ],
+      "ended_at": null,
+      "id": "aff_ab42f3061beff5d73226",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/kewenjun/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5c91113e8a543cd7d901"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ab42f3061beff5d73226",
+      "claim_ids": [
+        "claim_5c91113e8a543cd7d901"
+      ],
+      "is_primary": true,
+      "normalized_value": "kewenjun@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/kewenjun/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kewenjun@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5c91113e8a543cd7d901"
+    ],
+    "email": [
+      "claim_5c91113e8a543cd7d901"
+    ],
+    "name": [
+      "claim_5c91113e8a543cd7d901"
+    ],
+    "profile_url": [
+      "claim_5c91113e8a543cd7d901"
+    ],
+    "recent_papers": [
+      "claim_5c91113e8a543cd7d901"
+    ],
+    "research_directions": [
+      "claim_5c91113e8a543cd7d901"
+    ],
+    "status": [
+      "claim_5c91113e8a543cd7d901"
+    ],
+    "title": [
+      "claim_5c91113e8a543cd7d901"
+    ]
+  },
+  "id": "mentor_ae8cbcbfbd6f37d434a5",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5c91113e8a543cd7d901"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "柯文俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ab42f3061beff5d73226",
+      "claim_ids": [
+        "claim_5c91113e8a543cd7d901"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/kewenjun/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Lou, W. Ke, Y. He, P. Wang, Q. Liu, H Xu. Boosting multimodal CoT reasoning through DPO with Error-prone Sample Synthesis. IPM 2026 (CCF B)",
+    "Y. Guo, B. Wang, X. Fan,W. Ke,H. Luo. On the Salience of Low-Probability Tokens for AI-Generated Text Detection: A Multiscale Uncertainty Perspective. ICML 2026 (CCF-A)",
+    "Z. Yang,W. Ke,Y. Li, Y. Liu, J. Xu, P. Wang, H. Xu. Mitigating Tool Overuse for LLMs via Active Knowledge Boundary Probing. IJCAI 2026 (CCF-B)",
+    "T. Hong, P. Wang,W. Ke,Y. He, H. Wang. Benchmarking and Enhancing Relational Diagrams Reasoning for Multimodal Large Language Models. IJCAI 2026 (CCF-B)",
+    "C. Zhang, J. Liu,Y. He, W. Ke, P. Wang, Y. Le, S. Liu, Z. Yang. Exploring Layer Activation Dynamic of CoT via Knowledge Probe. ACL 2026 Main ConferenceOral (CCF-A)",
+    "J. Zhou, P. Wang, W. Ke,J. Liu, Y. He. Capability Decomposition for Unified Information Extraction via Hierarchical Mixture-of-Experts. ACL 2026 Main Conference Oral (CCF-A)",
+    "W. Ke,H. Xu, Z. Shang, Y. He, J. Wang, Z. Xu, P. Wang, Y. Lou, J. Liu. From Outcome to Process: Optimizing MoE Load Balancing with MCTS. ACL 2026 Findings(CCF-A)",
+    "Y. He, J. Liu, W. Wen, Y. Guo, H. Chen, Y. Ma,W.Ke.LogicICL: Towards Instructive Logical-Aware Demonstrations forStimulating LLMs Mathematical Reasoning Ability. IEEE Trans. on Emerging Topics in Computational Intelligence 2026 (SCI JCR Q1)"
+  ],
+  "research_directions": [
+    "人工智能、大语言模型、自然语言处理、知识图谱"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/kewenjun/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

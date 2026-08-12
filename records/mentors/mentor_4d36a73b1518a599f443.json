@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4216fb3a6ae2a1064582"
+      ],
+      "ended_at": null,
+      "id": "aff_60a32ed6ec503fa6f20c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/yqiao/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_4216fb3a6ae2a1064582"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_60a32ed6ec503fa6f20c",
+      "claim_ids": [
+        "claim_4216fb3a6ae2a1064582"
+      ],
+      "is_primary": true,
+      "normalized_value": "yqiao@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/yqiao/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yqiao@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4216fb3a6ae2a1064582"
+    ],
+    "email": [
+      "claim_4216fb3a6ae2a1064582"
+    ],
+    "name": [
+      "claim_4216fb3a6ae2a1064582"
+    ],
+    "profile_url": [
+      "claim_4216fb3a6ae2a1064582"
+    ],
+    "recent_papers": [
+      "claim_4216fb3a6ae2a1064582"
+    ],
+    "research_directions": [
+      "claim_4216fb3a6ae2a1064582"
+    ],
+    "status": [
+      "claim_4216fb3a6ae2a1064582"
+    ],
+    "title": [
+      "claim_4216fb3a6ae2a1064582"
+    ]
+  },
+  "id": "mentor_4d36a73b1518a599f443",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4216fb3a6ae2a1064582"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "乔伊果"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_60a32ed6ec503fa6f20c",
+      "claim_ids": [
+        "claim_4216fb3a6ae2a1064582"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/yqiao/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Fast, High-Quality Hierarchical Depth-Map Super-Resolution",
+    "How to TrainYour Dog: Neural Enhancement of Quadruped Animations",
+    "Exploring the Perception of Quadruped Motion Retargeting",
+    "High-Quality Depth Up-Sampling via a Supervised Classification Guided MRF Model",
+    "A Novel Segmentation based Depth MapUpsampling",
+    "Color Correction and Depth-Based Hierarchical Hole Filling in Free Viewpoint Generation",
+    "High-Quality Depth Up-Sampling Based on Multi-ScaleSLIC",
+    "Dictionary Based Hole Filling with Assistance of Depth"
+  ],
+  "research_directions": [
+    "多模态视觉感知、计算机视觉、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/yqiao/main.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

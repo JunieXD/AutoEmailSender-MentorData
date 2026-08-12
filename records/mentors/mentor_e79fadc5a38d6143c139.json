@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_35e5347aa981646a76dc"
+      ],
+      "ended_at": null,
+      "id": "aff_b1051cba7cd6557aa57a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_9e7bf58b3d6ccb33e738",
+      "source_url": "https://cs.seu.edu.cn/2019/0105/c23024a257511/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_35e5347aa981646a76dc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1051cba7cd6557aa57a",
+      "claim_ids": [
+        "claim_35e5347aa981646a76dc"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhenling@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/2019/0105/c23024a257511/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhenling@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_35e5347aa981646a76dc"
+    ],
+    "email": [
+      "claim_35e5347aa981646a76dc"
+    ],
+    "name": [
+      "claim_35e5347aa981646a76dc"
+    ],
+    "profile_url": [
+      "claim_35e5347aa981646a76dc"
+    ],
+    "recent_papers": [
+      "claim_35e5347aa981646a76dc"
+    ],
+    "research_directions": [
+      "claim_35e5347aa981646a76dc"
+    ],
+    "status": [
+      "claim_35e5347aa981646a76dc"
+    ]
+  },
+  "id": "mentor_e79fadc5a38d6143c139",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_35e5347aa981646a76dc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "凌 振"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1051cba7cd6557aa57a",
+      "claim_ids": [
+        "claim_35e5347aa981646a76dc"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/2019/0105/c23024a257511/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Cuckoo in the Nest: Multi‐Stage, Multi‐Identifier Hijacking in BACnet/SC",
+    "Towards Secure and Efficient Driver Support for Embedded TEE Systems",
+    "MIMO-LP: A Multi-Input Multi-Output Framework for Subgraph-based Link Prediction",
+    "A Tor-based Anonymous Network Covert Channel",
+    "Towards Practical Headphones Eavesdropping Leveraging COTS mmWave Radar",
+    "PR-RFFI: Practical RF Fingerprint Injection based Wi-Fi Device Identification",
+    "Your Outer Appearance Mirrors Your Inner Self: Exploiting Unobservable Node Internals to Deanonymize Uploaders in Freenet",
+    "Detecting Rule Anomalies and Interference for Home Automation"
+  ],
+  "research_directions": [
+    "Artificial Intelligence of Things and System Security, Network Security and Privacy, Confidential Computing"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/2019/0105/c23024a257511/page.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

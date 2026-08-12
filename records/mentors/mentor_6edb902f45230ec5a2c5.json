@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e7e6865bd825dbd76d42"
+      ],
+      "ended_at": null,
+      "id": "aff_497b1d1a39de642ead59",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/pengyang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e7e6865bd825dbd76d42"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_497b1d1a39de642ead59",
+      "claim_ids": [
+        "claim_e7e6865bd825dbd76d42"
+      ],
+      "is_primary": true,
+      "normalized_value": "pengyang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/pengyang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pengyang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e7e6865bd825dbd76d42"
+    ],
+    "email": [
+      "claim_e7e6865bd825dbd76d42"
+    ],
+    "name": [
+      "claim_e7e6865bd825dbd76d42"
+    ],
+    "profile_url": [
+      "claim_e7e6865bd825dbd76d42"
+    ],
+    "recent_papers": [
+      "claim_e7e6865bd825dbd76d42"
+    ],
+    "research_directions": [
+      "claim_e7e6865bd825dbd76d42"
+    ],
+    "status": [
+      "claim_e7e6865bd825dbd76d42"
+    ],
+    "title": [
+      "claim_e7e6865bd825dbd76d42"
+    ]
+  },
+  "id": "mentor_6edb902f45230ec5a2c5",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e7e6865bd825dbd76d42"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_497b1d1a39de642ead59",
+      "claim_ids": [
+        "claim_e7e6865bd825dbd76d42"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/pengyang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Towards an Ultra-Lightweight Text Representation: Causal Convolutional Networks With Feature Self-Enhancement Mechanisms",
+    "DCRLRec: Dual-Domain Contrastive Reinforcement Large Language Model for Recommendation",
+    "Multi-Dimensional Information Representation for Offensive Language Detection",
+    "An Approach to Optimizing Semantic Consistency for Text-to-Digital Human Generation",
+    "RDP-FedGAN: A Rényi-Differential Privacy Empowered Federated Learning GAN in Smart Parking",
+    "Energy Efficient Heterogeneous Federated Learning over Mobile Devices: A Deep Reinforcement Learning Based Stackelberg Game Approach",
+    "HYShield: A Multi-Layered Security Framework for Air-Space-Ground-Maritime Networks in 6G Scenarios",
+    "Lattice-based Threshold Encryption for Data Privacy Protection with Zero Trust in Internet of Medical Things"
+  ],
+  "research_directions": [
+    "AI与自然语言处理、区块链与网络安全、边缘计算、大数据治理、安全可信数字基座"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/pengyang/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

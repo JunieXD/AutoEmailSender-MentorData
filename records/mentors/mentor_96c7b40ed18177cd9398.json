@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d95026f2b5cfb372cfee"
+      ],
+      "ended_at": null,
+      "id": "aff_fec729115cef00fe8edc",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/mawd/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_d95026f2b5cfb372cfee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fec729115cef00fe8edc",
+      "claim_ids": [
+        "claim_d95026f2b5cfb372cfee"
+      ],
+      "is_primary": true,
+      "normalized_value": "mawd@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/mawd/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mawd@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d95026f2b5cfb372cfee"
+    ],
+    "email": [
+      "claim_d95026f2b5cfb372cfee"
+    ],
+    "name": [
+      "claim_d95026f2b5cfb372cfee"
+    ],
+    "profile_url": [
+      "claim_d95026f2b5cfb372cfee"
+    ],
+    "recent_papers": [
+      "claim_d95026f2b5cfb372cfee"
+    ],
+    "research_directions": [
+      "claim_d95026f2b5cfb372cfee"
+    ],
+    "status": [
+      "claim_d95026f2b5cfb372cfee"
+    ],
+    "title": [
+      "claim_d95026f2b5cfb372cfee"
+    ]
+  },
+  "id": "mentor_96c7b40ed18177cd9398",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d95026f2b5cfb372cfee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马卫东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fec729115cef00fe8edc",
+      "claim_ids": [
+        "claim_d95026f2b5cfb372cfee"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/mawd/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "马卫东等译著.精通Kotlin(67万字).东南大学出版社,2023.10.",
+    "Weidong Ma, Zhaohui Luo.Type-based Modelling and Collaborative Programming for Control-Oriented System. 15th International Conference on Collaborative Computing: Networking, Applications and Worksharing, Springer, London, UK, 2019.",
+    "Weidong Ma, Zhiying Wang. A Control-Oriented System Requirement Description Language Based on Directed Acyclic Graph. 8th IEEE International Conference on Software Engineering and Service Science, 2017.",
+    "Weidong Ma, Yang Deng etc. COSRDL:An Event-driven Control-Oriented system Requirement Modeling Method. 15th conference on embedded system of china, 2017.",
+    "马卫东,王磊,李幼平,水鸿寿,周明天, 用户需求行为对互联网动力学整体特性的影响,物理学报, 2008,57(3): 1381-1388.",
+    "马卫东,李幼平,马建国,周明天.面向Web网页的区域用户行为实证研究.计算机学报, 2008, 31(6):960-967.",
+    "邢玲,马建国,马卫东著.信息共享理论与网络体系结构(28万字),科学出版社, 2011.10."
+  ],
+  "research_directions": [
+    "大模型与机器学习、嵌入式系统与物联网、工业软件与可信软件研制等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/mawd/main.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

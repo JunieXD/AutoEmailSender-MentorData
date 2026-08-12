@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_58f958532efa79dc9188"
+      ],
+      "ended_at": null,
+      "id": "aff_fb888117c1fd460933c2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/cxue/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_58f958532efa79dc9188"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fb888117c1fd460933c2",
+      "claim_ids": [
+        "claim_58f958532efa79dc9188"
+      ],
+      "is_primary": true,
+      "normalized_value": "cxue@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/cxue/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cxue@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_58f958532efa79dc9188"
+    ],
+    "email": [
+      "claim_58f958532efa79dc9188"
+    ],
+    "name": [
+      "claim_58f958532efa79dc9188"
+    ],
+    "profile_url": [
+      "claim_58f958532efa79dc9188"
+    ],
+    "recent_papers": [
+      "claim_58f958532efa79dc9188"
+    ],
+    "research_directions": [
+      "claim_58f958532efa79dc9188"
+    ],
+    "status": [
+      "claim_58f958532efa79dc9188"
+    ],
+    "title": [
+      "claim_58f958532efa79dc9188"
+    ]
+  },
+  "id": "mentor_3d600c4b5adf81f2b974",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_58f958532efa79dc9188"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "薛澄"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fb888117c1fd460933c2",
+      "claim_ids": [
+        "claim_58f958532efa79dc9188"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/cxue/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Niu, L.,Xue, C†., “Noise-Aware Few-Shot Learning through Bi-directional Multi-view Prompt Alignment,” inProceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.",
+    "Fang, Z.*, Xue, C.*†,Liu, C., Xu, B., Chen, M., Hu, X.“PhySe-RPO: Physics and Semantics Guided Relative Policy Optimization for Diffusion-Based Surgical Smoke Removal,” inFindings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026.",
+    "He, Y., Li, A.,Xue, C.†, “CauCLIP: Bridging the Sim-to-Real Gap in Surgical Video Understanding via Causality-Inspired Vision-Language Modeling,” inIEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2026.",
+    "Xue, C., Zhao, S., Wang, D., Chen, C., Yang, G., Chen, Y., “TD-SAM: Temporal and Distance-Guided Adaptations of SAM for Accurate Surgical Instrument Segmentation,”IEEE Journal of Biomedical and Health Informatics, 2025, accepted.",
+    "Zhang, Q., Li, Y.,Xue, C., Wang, H., Li, X., “GlandSAM: Injecting Morphology Knowledge into Segment Anything Model for Label-Free Gland Segmentation,”IEEE Transactions on Medical Imaging, 2024.",
+    "Zhang, S., Chen, M., Wu, J., Zhang, Z., Li, T.,Xue, C.†, Kong, Y.†, “Spineclue: Automatic Vertebrae Identification Using Contrastive Learning and Uncertainty Estimation,”Artificial Intelligence in Medicine, 2024.",
+    "Xue, C., Yu, L., Chen, P., Dou, Q., Heng, P.-A., “Robust Medical Image Classification from Noisy Labeled Data with Global and Local Representation Guided Co-training,”IEEE Transactions on Medical Imaging, 2022.",
+    "Xue, C., Zhu, L., Fu, H., Hu, X., Li, X., Zhang, H., Heng, P.-A., “Global Guidance Network for Breast Lesion Segmentation in Ultrasound Images,”Medical Image Analysis, 2021."
+  ],
+  "research_directions": [
+    "医学影像智能分析,多模态融合,疾病预后分析,手术机器人,多模态大模型,具身智能等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/cxue/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

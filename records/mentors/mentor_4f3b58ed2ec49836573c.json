@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a736f0392e9164827b13"
+      ],
+      "ended_at": null,
+      "id": "aff_54e4d33c226bf398ca51",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/lujianhua/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_a736f0392e9164827b13"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_54e4d33c226bf398ca51",
+      "claim_ids": [
+        "claim_a736f0392e9164827b13"
+      ],
+      "is_primary": true,
+      "normalized_value": "lujianhua@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/lujianhua/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lujianhua@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a736f0392e9164827b13"
+    ],
+    "email": [
+      "claim_a736f0392e9164827b13"
+    ],
+    "name": [
+      "claim_a736f0392e9164827b13"
+    ],
+    "profile_url": [
+      "claim_a736f0392e9164827b13"
+    ],
+    "research_directions": [
+      "claim_a736f0392e9164827b13"
+    ],
+    "status": [
+      "claim_a736f0392e9164827b13"
+    ]
+  },
+  "id": "mentor_4f3b58ed2ec49836573c",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a736f0392e9164827b13"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕建华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_54e4d33c226bf398ca51",
+      "claim_ids": [
+        "claim_a736f0392e9164827b13"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/lujianhua/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据管理与分析、机器学习与知识发现、故障诊断与健康管理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/lujianhua/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

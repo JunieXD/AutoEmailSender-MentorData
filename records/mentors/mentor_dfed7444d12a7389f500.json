@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_17121f25bd34a7f34151"
+      ],
+      "ended_at": null,
+      "id": "aff_7bda024f97f7e3f15a0d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/zychen/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_17121f25bd34a7f34151"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7bda024f97f7e3f15a0d",
+      "claim_ids": [
+        "claim_17121f25bd34a7f34151"
+      ],
+      "is_primary": true,
+      "normalized_value": "zy.chen@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/zychen/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zy.chen@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_17121f25bd34a7f34151"
+    ],
+    "email": [
+      "claim_17121f25bd34a7f34151"
+    ],
+    "name": [
+      "claim_17121f25bd34a7f34151"
+    ],
+    "profile_url": [
+      "claim_17121f25bd34a7f34151"
+    ],
+    "research_directions": [
+      "claim_17121f25bd34a7f34151"
+    ],
+    "status": [
+      "claim_17121f25bd34a7f34151"
+    ],
+    "title": [
+      "claim_17121f25bd34a7f34151"
+    ]
+  },
+  "id": "mentor_dfed7444d12a7389f500",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_17121f25bd34a7f34151"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈忠英"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7bda024f97f7e3f15a0d",
+      "claim_ids": [
+        "claim_17121f25bd34a7f34151"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/zychen/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "神经网络、智能计算和智慧能源系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/zychen/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

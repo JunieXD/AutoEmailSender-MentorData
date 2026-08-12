@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0ec0032befa5da263d49"
+      ],
+      "ended_at": null,
+      "id": "aff_6481a8e4e2f1ac1dc61e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/msun/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0ec0032befa5da263d49"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6481a8e4e2f1ac1dc61e",
+      "claim_ids": [
+        "claim_0ec0032befa5da263d49"
+      ],
+      "is_primary": true,
+      "normalized_value": "msun@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/msun/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "msun@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0ec0032befa5da263d49"
+    ],
+    "email": [
+      "claim_0ec0032befa5da263d49"
+    ],
+    "name": [
+      "claim_0ec0032befa5da263d49"
+    ],
+    "profile_url": [
+      "claim_0ec0032befa5da263d49"
+    ],
+    "recent_papers": [
+      "claim_0ec0032befa5da263d49"
+    ],
+    "research_directions": [
+      "claim_0ec0032befa5da263d49"
+    ],
+    "status": [
+      "claim_0ec0032befa5da263d49"
+    ],
+    "title": [
+      "claim_0ec0032befa5da263d49"
+    ]
+  },
+  "id": "mentor_81bb004466eee1829b87",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0ec0032befa5da263d49"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙明萱"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6481a8e4e2f1ac1dc61e",
+      "claim_ids": [
+        "claim_0ec0032befa5da263d49"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/msun/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Efficient training of large-scale AI models through federated mixture-of-experts: a system-level approach.",
+    "Learning to rank with top-K fairness.",
+    "Joint device and training scheduling for wireless federated learning.",
+    "DualGFL: federated learning with a dual-level coalition-auction game.",
+    "Client selection for wireless federated learning with data and latency heterogeneity.",
+    "Sparse transformer Hawkes process for long event sequences.",
+    "List-wise fairness criterion for point processes."
+  ],
+  "research_directions": [
+    "可信机器学习,重点关注公平性、安全性和隐私保护。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/msun/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}
