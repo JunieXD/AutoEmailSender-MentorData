@@ -140,6 +140,22 @@ def test_plan_auto_resolves_exact_parents_and_clear_department(tmp_path: Path) -
         "exact_school_match",
         "clear_new_department_department",
     ]
+    assert draft["organization_change_preview"] == [
+        {
+            "action": "create",
+            "id": proposed_organization_id(
+                "department",
+                "软件工程系",
+                "org_example_cs",
+            ),
+            "type": "department",
+            "path": "示例大学 / 计算机学院 / 软件工程系",
+            "source": "rule",
+            "source_domains": ["cs.example.edu"],
+            "official_urls": [],
+            "approved_domains": [],
+        }
+    ]
     applied = _apply(root, 70, decision)
     assert applied.ready_for_finalization is True
     assert applied.created_organizations == 1

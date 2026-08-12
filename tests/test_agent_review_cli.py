@@ -13,7 +13,16 @@ from mentor_data.agent_review import (
     load_draft,
     save_draft,
 )
-from mentor_data.agent_review_cli import _answer_many, _discover_root, _doctor, _root
+from mentor_data.agent_review_cli import (
+    _answer_many,
+    _brief,
+    _classify_status,
+    _discover_root,
+    _doctor,
+    _queue,
+    _root,
+    _status,
+)
 
 
 def _make_repository(root: Path) -> None:
@@ -271,3 +280,235 @@ def test_answer_many_count_mismatch_leaves_draft_unchanged(
 
     assert captured.value.code == "review_answer_many_count_mismatch"
     assert load_draft(workspace, 88) == original
+
+
+def test_queue_next_uses_explicit_ascending_order(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    def pull(number: int) -> PullSnapshot:
+        return PullSnapshot(
+            number=number,
+            issue_number=number - 1,
+            title=f"投稿 {number}",
+            url=f"https://github.test/pull/{number}",
+            branch=f"batch/issue-{number - 1}",
+            head_sha=str(number % 10) * 40,
+            base_sha="b" * 40,
+            draft=True,
+            status_label="status:manual-review",
+        )
+
+    class Client:
+        def list_open_batch_pulls(self):
+            return [pull(12), pull(10), pull(11)]
+
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    args = argparse.Namespace(
+        status_label=None,
+        query=None,
+        next=True,
+        limit=None,
+        fields=None,
+    )
+
+    result = _queue(args, tmp_path, tmp_path / "workspace")
+
+    assert result["order"] == "pr-number-ascending"
+    assert result["total_count"] == 3
+    assert [item["pr"] for item in result["items"]] == [10]
+
+
+def test_brief_combines_plan_questions_and_creation_preview(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    pull = PullSnapshot(
+        number=88,
+        issue_number=87,
+        title="批量审核",
+        url="https://github.test/pull/88",
+        branch="batch/issue-87",
+        head_sha="a" * 40,
+        base_sha="b" * 40,
+        draft=True,
+        status_label="status:manual-review",
+    )
+    question = _answer_many_draft(pull, "c" * 64)["questions"][0]
+    planned = {
+        "schema_version": 1,
+        "kind": "agent_organization_review_draft",
+        "repository": "example/repository",
+        "pull": pull.as_dict(),
+        "manifest_sha256": "c" * 64,
+        "answers": {},
+        "questions": [question],
+        "summary": {"groups": 1, "pending_questions": 1, "complete": False},
+        "organization_change_preview": [
+            {
+                "action": "create",
+                "id": "org_preview",
+                "type": "department",
+                "path": "示例大学 / 计算机学院 / 待定系",
+                "source": "rule",
+                "source_domains": ["example.edu"],
+                "official_urls": [],
+                "approved_domains": [],
+            }
+        ],
+    }
+
+    class Client:
+        def fetch_main_organizations(self):
+            return []
+
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli._doctor",
+        lambda args: {"ready": True, "actions": []},
+    )
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli._refresh",
+        lambda client, selected_workspace, pull_number: (
+            pull,
+            {"kind": "batch_organization_review"},
+            "c" * 64,
+        ),
+    )
+    monkeypatch.setattr("mentor_data.agent_review_cli.plan_review", lambda **kwargs: planned)
+    args = argparse.Namespace(
+        root=str(tmp_path),
+        repository="example/repository",
+        pr=88,
+        reset=False,
+        fields=None,
+    )
+
+    result = _brief(args, tmp_path, workspace)
+
+    assert result["ready"] is True
+    assert result["organization_change_preview"][0]["id"] == "org_preview"
+    assert result["pending_questions"][0]["id"] == "q_1"
+    assert result["next"].endswith("--id q_1")
+    assert load_draft(workspace, 88)["summary"]["pending_questions"] == 1
+
+
+def test_status_waits_internally_until_published(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    pending = {
+        "pr": 88,
+        "pr_state": "open",
+        "merged": False,
+        "merged_at": None,
+        "updated_at": "2026-08-12T10:00:00Z",
+        "labels": ["status:manual-review"],
+        "review_comments": 1,
+        "checks": {"total": 1, "pending": 1, "failed": 0},
+    }
+    published = {
+        **pending,
+        "pr_state": "closed",
+        "merged": True,
+        "merged_at": "2026-08-12T10:01:00Z",
+        "checks": {"total": 1, "pending": 0, "failed": 0},
+    }
+
+    class Client:
+        def __init__(self):
+            self.values = [pending, published]
+
+        def status(self, pull_number, *, issue_number=None):
+            return self.values.pop(0)
+
+    monotonic_values = iter([0.0, 0.0, 1.0])
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli.time.monotonic",
+        lambda: next(monotonic_values),
+    )
+    monkeypatch.setattr("mentor_data.agent_review_cli.time.sleep", lambda seconds: None)
+    args = argparse.Namespace(
+        pr=88,
+        wait=True,
+        timeout_seconds=10,
+        poll_seconds=1,
+        fields=None,
+    )
+
+    result = _status(args, tmp_path, tmp_path / "workspace")
+
+    assert result["phase"] == "published"
+    assert result["terminal"] is True
+    assert result["outcome"] == "merged-published"
+    assert result["last_transition_at"] == "2026-08-12T10:01:00Z"
+    assert result["next_poll_seconds"] is None
+
+
+def test_status_classifies_attention_and_workflow_failure() -> None:
+    base = {
+        "pr_state": "open",
+        "merged": False,
+        "merged_at": None,
+        "updated_at": "2026-08-12T10:00:00Z",
+        "labels": [],
+        "review_comments": 1,
+        "checks": {"total": 1, "pending": 0, "failed": 0},
+    }
+
+    attention = _classify_status(
+        {**base, "labels": ["status:needs-attention"]},
+        next_poll_seconds=5,
+    )
+    failure = _classify_status(
+        {**base, "checks": {"total": 1, "pending": 0, "failed": 1}},
+        next_poll_seconds=5,
+    )
+
+    assert attention["outcome"] == "needs-attention"
+    assert failure["outcome"] == "workflow-failure"
+    assert attention["terminal"] is failure["terminal"] is True
+
+
+def test_status_wait_returns_timeout_as_terminal_outcome(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    pending = {
+        "pr": 88,
+        "pr_state": "open",
+        "merged": False,
+        "merged_at": None,
+        "updated_at": "2026-08-12T10:00:00Z",
+        "labels": ["status:manual-review"],
+        "review_comments": 1,
+        "checks": {"total": 1, "pending": 1, "failed": 0},
+    }
+
+    class Client:
+        def status(self, pull_number, *, issue_number=None):
+            return dict(pending)
+
+    monotonic_values = iter([0.0, 0.0, 1.0])
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli.time.monotonic",
+        lambda: next(monotonic_values),
+    )
+    monkeypatch.setattr("mentor_data.agent_review_cli.time.sleep", lambda seconds: None)
+    args = argparse.Namespace(
+        pr=88,
+        wait=True,
+        timeout_seconds=1,
+        poll_seconds=1,
+        fields=None,
+    )
+
+    result = _status(args, tmp_path, tmp_path / "workspace")
+
+    assert result["phase"] == "timeout"
+    assert result["terminal"] is True
+    assert result["outcome"] == "timeout"
+    assert result["next_poll_seconds"] is None

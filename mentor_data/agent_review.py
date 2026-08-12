@@ -1391,6 +1391,118 @@ def _apply_row_questions(
             )
 
 
+def _organization_change_preview(
+    group: dict[str, Any],
+    rules: list[str],
+    decision: dict[str, Any] | None,
+    creations: list[dict[str, Any]],
+    organizations: ManifestOrganizations,
+) -> list[dict[str, Any]]:
+    previews: dict[str, dict[str, Any]] = {}
+    parent_id: str | None = None
+    lineage_names: list[str] = []
+    submitted = group["submitted"]
+    levels = decision.get("levels", []) if decision is not None else []
+    if not levels:
+        for level in LEVELS:
+            value = normalize_text(submitted.get(level))
+            exact_rule = f"exact_{level}_match"
+            clear_prefix = f"clear_new_{level}_"
+            clear_rule = next((item for item in rules if item.startswith(clear_prefix)), None)
+            if exact_rule in rules:
+                existing = organizations.exact(level, parent_id, value)
+                if existing is None:
+                    break
+                parent_id = existing["id"]
+                lineage_names = list(existing.get("lineage_names", [value]))
+            elif clear_rule:
+                organization_type = clear_rule.removeprefix(clear_prefix)
+                level_preview = _level_create(level, organization_type, value, group)
+                organization_id = proposed_organization_id(
+                    organization_type,
+                    value,
+                    parent_id,
+                )
+                lineage_names.append(value)
+                previews[organization_id] = {
+                    "action": "create",
+                    "id": organization_id,
+                    "type": organization_type,
+                    "path": " / ".join(lineage_names),
+                    "source": "rule",
+                    "source_domains": list(group.get("source_domains", [])),
+                    "official_urls": (
+                        [level_preview["official_url"]]
+                        if level_preview.get("official_url")
+                        else []
+                    ),
+                    "approved_domains": list(level_preview.get("approved_domains", [])),
+                }
+                parent_id = organization_id
+            elif not value or f"empty_{level}" in rules:
+                continue
+            else:
+                break
+    else:
+        for level in levels:
+            if level["action"] == "existing":
+                existing = organizations.by_id.get(level["organization_id"])
+                if existing is None:
+                    break
+                parent_id = existing["id"]
+                lineage_names = list(
+                    existing.get("lineage_names", [existing["canonical_name"]])
+                )
+            elif level["action"] == "create":
+                organization_id = proposed_organization_id(
+                    level["organization_type"],
+                    level["canonical_name"],
+                    parent_id,
+                )
+                lineage_names.append(level["canonical_name"])
+                previews[organization_id] = {
+                    "action": "create",
+                    "id": organization_id,
+                    "type": level["organization_type"],
+                    "path": " / ".join(lineage_names),
+                    "source": (
+                        "rule"
+                        if any(item.startswith(f"clear_new_{level['level']}_") for item in rules)
+                        else "user-decision"
+                    ),
+                    "source_domains": list(group.get("source_domains", [])),
+                    "official_urls": (
+                        [level["official_url"]] if level.get("official_url") else []
+                    ),
+                    "approved_domains": list(level.get("approved_domains", [])),
+                }
+                parent_id = organization_id
+
+    known_paths = {
+        item["id"]: " / ".join(item.get("lineage_names", []))
+        for item in organizations.organizations
+    }
+    known_paths.update({item["id"]: item["path"] for item in previews.values()})
+    for creation in creations:
+        parent_path = known_paths.get(creation.get("parent_id"), "")
+        path = " / ".join(
+            item for item in (parent_path, creation["canonical_name"]) if item
+        )
+        previews[creation["organization_id"]] = {
+            "action": "create",
+            "id": creation["organization_id"],
+            "type": creation["organization_type"],
+            "path": path,
+            "source": "user-decision",
+            "source_domains": list(group.get("source_domains", [])),
+            "official_urls": (
+                [creation["official_url"]] if creation.get("official_url") else []
+            ),
+            "approved_domains": list(creation.get("approved_domains", [])),
+        }
+    return list(previews.values())
+
+
 def plan_review(
     *,
     repository: str,
@@ -1410,6 +1522,7 @@ def plan_review(
     group_plans: list[dict[str, Any]] = []
     all_questions: list[dict[str, Any]] = []
     all_creations: list[dict[str, Any]] = []
+    organization_change_preview: dict[str, dict[str, Any]] = {}
     decisions: list[dict[str, Any]] = []
 
     similar_new_departments = _similar_new_department_contexts(manifest["groups"])
@@ -1445,6 +1558,14 @@ def plan_review(
                 ),
             }
         )
+        for preview in _organization_change_preview(
+            group,
+            rules,
+            decision,
+            creations,
+            organizations,
+        ):
+            organization_change_preview[preview["id"]] = preview
         all_questions.extend(questions)
         all_creations.extend(creations)
         if decision is not None and not pending:
@@ -1482,6 +1603,9 @@ def plan_review(
         "answers": answers,
         "groups": group_plans,
         "questions": all_questions,
+        "organization_change_preview": [
+            organization_change_preview[key] for key in sorted(organization_change_preview)
+        ],
         "decision": decision_document,
         "preflight": None,
         "submission": None,

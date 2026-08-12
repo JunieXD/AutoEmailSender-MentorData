@@ -6,6 +6,7 @@ import json
 import os
 import shutil
 import sys
+import time
 from pathlib import Path
 from typing import Any
 
@@ -23,6 +24,7 @@ from .agent_review import (
     project_fields,
     save_draft,
     sha256_bytes,
+    utc_now,
     validate_answer,
 )
 from .agent_review_github import GitHubReviewClient
@@ -122,7 +124,9 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         "queue",
         parents=[common],
         help="列出开放的内部批量投稿 PR",
-        description="只返回 PR 标识、标题、审核规模和本地底稿状态，不读取导师行详情。",
+        description=(
+            "按 PR 编号升序返回标识、标题、审核规模和本地底稿状态，不读取导师行详情。"
+        ),
     )
     queue.add_argument(
         "--status-label",
@@ -130,6 +134,12 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         help="仅返回指定处理标签",
     )
     queue.add_argument("--query", help="按 PR 编号或标题包含文本筛选")
+    queue.add_argument(
+        "--next",
+        action="store_true",
+        help="只返回排序后的下一个 PR",
+    )
+    queue.add_argument("--limit", type=int, help="最多返回多少个 PR")
     _add_fields(queue)
 
     inspect = commands.add_parser(
@@ -157,6 +167,23 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         help="清除旧答案并基于当前 PR 重新规划；PR 变化后必须显式使用",
     )
     _add_fields(plan)
+
+    brief = commands.add_parser(
+        "brief",
+        parents=[common],
+        help="一次生成审核起始简报和本地底稿",
+        description=(
+            "组合环境检查、PR 摘要、确定性规划、自动新建机构预览和待回答问题摘要；"
+            "只写本地审核底稿，不写 GitHub。"
+        ),
+    )
+    brief.add_argument("--pr", type=int, required=True)
+    brief.add_argument(
+        "--reset",
+        action="store_true",
+        help="丢弃旧答案并基于当前 PR 重新生成简报",
+    )
+    _add_fields(brief)
 
     groups = commands.add_parser(
         "groups",
@@ -324,8 +351,29 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         "status",
         parents=[common],
         help="查看审核评论、Actions、PR 和来源 Issue 状态",
+        description=(
+            "返回 phase、terminal、outcome、last_transition_at 和 next_poll_seconds。"
+            "使用 --wait 时由 CLI 轮询到明确终态或超时。"
+        ),
     )
     status.add_argument("--pr", type=int, required=True)
+    status.add_argument(
+        "--wait",
+        action="store_true",
+        help="持续轮询直到合并、需处理、未合并关闭、工作流失败或超时",
+    )
+    status.add_argument(
+        "--timeout-seconds",
+        type=int,
+        default=900,
+        help="--wait 的总超时秒数（默认：900）",
+    )
+    status.add_argument(
+        "--poll-seconds",
+        type=int,
+        default=5,
+        help="--wait 的轮询间隔秒数，范围 1-60（默认：5）",
+    )
     _add_fields(status)
 
 
@@ -509,7 +557,22 @@ def _find_question(draft: dict[str, Any], question_id: str) -> dict[str, Any]:
 
 
 def _queue(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
-    pulls = _client(args, root).list_open_batch_pulls()
+    next_only = getattr(args, "next", False)
+    limit = getattr(args, "limit", None)
+    if next_only and limit is not None:
+        raise AgentReviewError(
+            "review_queue_limit_invalid",
+            "--next 不能与 --limit 同时使用",
+        )
+    if limit is not None and limit < 1:
+        raise AgentReviewError(
+            "review_queue_limit_invalid",
+            "--limit 必须大于零",
+        )
+    pulls = sorted(
+        _client(args, root).list_open_batch_pulls(),
+        key=lambda item: item.number,
+    )
     query = (args.query or "").casefold()
     items: list[dict[str, Any]] = []
     for pull in pulls:
@@ -544,7 +607,17 @@ def _queue(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, A
             except AgentReviewError:
                 item["local_state"] = "invalid"
         items.append(project_fields(item, _fields(args)))
-    return {"count": len(items), "items": items}
+    total_count = len(items)
+    if next_only:
+        items = items[:1]
+    elif limit is not None:
+        items = items[:limit]
+    return {
+        "count": len(items),
+        "total_count": total_count,
+        "order": "pr-number-ascending",
+        "items": items,
+    }
 
 
 def _inspect(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
@@ -591,6 +664,57 @@ def _plan(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, An
         "next": (
             f"mentor-data review questions --pr {args.pr} --status pending"
             if draft["summary"]["pending_questions"]
+            else f"mentor-data review check --pr {args.pr}"
+        ),
+    }
+    return project_fields(result, _fields(args))
+
+
+def _brief(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
+    environment = _doctor(args)
+    if not environment["ready"]:
+        return project_fields(
+            {
+                "pr": args.pr,
+                "ready": False,
+                "actions": environment["actions"],
+            },
+            _fields(args),
+        )
+    client = _client(args, root)
+    pull, manifest, digest = _refresh(client, workspace, args.pr)
+    previous_answers: dict[str, Any] = {}
+    path = draft_path(workspace, args.pr)
+    if path.is_file() and not args.reset:
+        previous = load_draft(workspace, args.pr)
+        assert_draft_current(previous, pull, digest)
+        previous_answers = previous.get("answers", {})
+    draft = plan_review(
+        repository=args.repository,
+        pull=pull,
+        manifest=manifest,
+        manifest_sha256=digest,
+        previous_answers=previous_answers,
+        latest_organizations=client.fetch_main_organizations(),
+    )
+    save_draft(workspace, draft)
+    pending = [
+        _question_summary(item)
+        for item in draft["questions"]
+        if item["status"] == "pending"
+    ]
+    result = {
+        "pr": pull.number,
+        "issue": pull.issue_number,
+        "title": pull.title,
+        "version": pull.head_sha[:12],
+        "ready": True,
+        "summary": draft["summary"],
+        "organization_change_preview": draft["organization_change_preview"],
+        "pending_questions": pending,
+        "next": (
+            f"mentor-data review question --pr {args.pr} --id {pending[0]['id']}"
+            if pending
             else f"mentor-data review check --pr {args.pr}"
         ),
     }
@@ -1013,18 +1137,84 @@ def _submit(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, 
         "comment_id": comment["id"],
         "url": comment.get("html_url"),
         "preflight": preflight,
-        "next": f"mentor-data review status --pr {args.pr}",
+        "next": f"mentor-data review status --pr {args.pr} --wait",
+    }
+
+
+def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[str, Any]:
+    labels = set(value.get("labels", []))
+    checks = value.get("checks", {})
+    if value.get("merged") is True:
+        phase = "published"
+        outcome = "merged-published"
+        terminal = True
+    elif "status:needs-attention" in labels:
+        phase = "needs-attention"
+        outcome = "needs-attention"
+        terminal = True
+    elif value.get("pr_state") == "closed":
+        phase = "closed"
+        outcome = "closed-unmerged"
+        terminal = True
+    elif checks.get("failed", 0) > 0:
+        phase = "workflow-failed"
+        outcome = "workflow-failure"
+        terminal = True
+    elif value.get("review_comments", 0) == 0:
+        phase = "awaiting-review"
+        outcome = None
+        terminal = False
+    elif checks.get("pending", 0) > 0:
+        phase = "workflow-running"
+        outcome = None
+        terminal = False
+    else:
+        phase = "promotion-queued"
+        outcome = None
+        terminal = False
+    return {
+        **value,
+        "phase": phase,
+        "terminal": terminal,
+        "outcome": outcome,
+        "last_transition_at": value.get("merged_at") or value.get("updated_at"),
+        "next_poll_seconds": None if terminal else next_poll_seconds,
     }
 
 
 def _status(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
+    if args.timeout_seconds < 1:
+        raise AgentReviewError("review_wait_invalid", "--timeout-seconds 必须大于零")
+    if not 1 <= args.poll_seconds <= 60:
+        raise AgentReviewError("review_wait_invalid", "--poll-seconds 必须在 1 到 60 之间")
     issue_number = None
     path = draft_path(workspace, args.pr)
     if path.is_file():
         with contextlib.suppress(AgentReviewError):
             issue_number = load_draft(workspace, args.pr)["pull"].get("issue_number")
-    value = _client(args, root).status(args.pr, issue_number=issue_number)
-    return project_fields(value, _fields(args))
+    client = _client(args, root)
+    started = time.monotonic()
+    while True:
+        value = _classify_status(
+            client.status(args.pr, issue_number=issue_number),
+            next_poll_seconds=args.poll_seconds,
+        )
+        elapsed = time.monotonic() - started
+        value["observed_at"] = utc_now()
+        value["waited_seconds"] = round(elapsed, 3)
+        if value["terminal"] or not args.wait:
+            return project_fields(value, _fields(args))
+        if elapsed >= args.timeout_seconds:
+            value.update(
+                {
+                    "phase": "timeout",
+                    "terminal": True,
+                    "outcome": "timeout",
+                    "next_poll_seconds": None,
+                }
+            )
+            return project_fields(value, _fields(args))
+        time.sleep(min(args.poll_seconds, max(0.0, args.timeout_seconds - elapsed)))
 
 
 def execute_review(args: argparse.Namespace) -> int:
@@ -1042,6 +1232,8 @@ def execute_review(args: argparse.Namespace) -> int:
             data = _inspect(args, root, workspace)
         elif command == "plan":
             data = _plan(args, root, workspace)
+        elif command == "brief":
+            data = _brief(args, root, workspace)
         elif command == "groups":
             data = _groups(args, workspace)
         elif command == "group":

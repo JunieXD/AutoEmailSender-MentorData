@@ -5,7 +5,7 @@ description: Review AutoEmailSender-MentorData batch contribution Pull Requests 
 
 # Review MentorData PR
 
-Use the repository's `mentor-data review` CLI as the source of truth. Start with `mentor-data review doctor`; the repository-local Skill is sufficient and must not be globally installed. Stop and report the CLI's `actions` when `ready` is false. Read `mentor-data review --help` and the relevant subcommand help instead of reconstructing commands or decision JSON manually.
+Use the repository's `mentor-data review` CLI as the source of truth. Start with `mentor-data review brief --pr N`, which includes the environment check; the repository-local Skill is sufficient and must not be globally installed. Stop and report the CLI's `actions` when `ready` is false. Read `mentor-data review --help` and the relevant subcommand help instead of reconstructing commands or decision JSON manually.
 
 ## Preserve the review boundary
 
@@ -42,6 +42,7 @@ Use CLI filters, IDs, field projection, and organization search to keep context 
 - Do not directly edit proposal JSON, the organization registry, the PR branch, Draft state, or merge state.
 - Do not use `gh pr ready` or `gh pr merge`; let the existing trusted queue apply, finalize, and merge the review.
 - If the CLI reports a stale PR or manifest, stop using the old draft, re-plan the current version, and surface any decisions that need confirmation again.
-- After submission, use the CLI status command until the PR merges, needs attention, closes without merge, or the user asks to stop.
+- After submission, run `review status --wait`; let the CLI poll until it reports a terminal outcome
+  instead of sleeping or manually polling.
 
 When a command fails, follow its structured `error.next` guidance. Do not bypass a guard by constructing a review comment outside the CLI.

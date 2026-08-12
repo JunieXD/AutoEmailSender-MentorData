@@ -313,6 +313,7 @@ class GitHubReviewClient:
             "draft": pull.get("draft") is True,
             "merged": pull.get("merged") is True,
             "merged_at": pull.get("merged_at"),
+            "updated_at": pull.get("updated_at"),
             "labels": labels,
             "issue": resolved_issue,
             "issue_state": issue.get("state") if isinstance(issue, dict) else None,
