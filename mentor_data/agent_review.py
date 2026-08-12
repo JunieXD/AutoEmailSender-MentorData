@@ -1656,6 +1656,93 @@ def _organization_change_preview(
     return list(previews.values())
 
 
+def _resolved_path(
+    decision: dict[str, Any],
+    organizations: ManifestOrganizations,
+    previews: list[dict[str, Any]],
+) -> str | None:
+    if decision.get("action") != "resolve":
+        return None
+    target_id = decision.get("target_organization_id")
+    if isinstance(target_id, str):
+        target = organizations.by_id.get(target_id)
+        if target is not None:
+            return " / ".join(target.get("lineage_names", [target["canonical_name"]]))
+        target_preview = next(
+            (item for item in previews if item.get("id") == target_id),
+            None,
+        )
+        if target_preview is not None:
+            return target_preview["path"]
+
+    lineage_names: list[str] = []
+    for level in decision.get("levels", []):
+        if level.get("action") == "existing":
+            existing = organizations.by_id.get(level.get("organization_id"))
+            if existing is not None:
+                lineage_names = list(
+                    existing.get("lineage_names", [existing["canonical_name"]])
+                )
+        elif level.get("action") == "create":
+            lineage_names.append(level["canonical_name"])
+    return " / ".join(lineage_names) if lineage_names else None
+
+
+def _path_normalization(
+    group: dict[str, Any],
+    group_plan: dict[str, Any],
+    decision: dict[str, Any] | None,
+    organizations: ManifestOrganizations,
+    previews: list[dict[str, Any]],
+) -> dict[str, Any] | None:
+    if decision is None or decision.get("action") != "resolve":
+        return None
+    submitted_path = group_path(group)
+    resolved_path = _resolved_path(decision, organizations, previews)
+    if resolved_path is None:
+        return None
+    rules = group_plan.get("auto_rules", [])
+    normalization_rules = [
+        rule
+        for rule in rules
+        if rule.startswith(("empty_", "user_skip_", "user_map_"))
+        or rule
+        in {
+            "historical_path_correction",
+            "repeated_parent_name",
+            "repeated_university_name",
+            "user_use_parent",
+            "user_use_parent_for_similar_sibling",
+            "user_merge_similar_sibling",
+        }
+    ]
+    if submitted_path == resolved_path and not normalization_rules:
+        return None
+    if submitted_path != resolved_path and not normalization_rules:
+        normalization_rules = ["canonical_path"]
+    used_user_decision = any(rule.startswith("user_") for rule in normalization_rules)
+    if "historical_path_correction" in normalization_rules:
+        source = "saved-rule"
+    else:
+        source = "user-decision" if used_user_decision else "rule"
+    save_path_correction = decision.get("save_path_correction") is True
+    return {
+        "group_id": group["id"],
+        "submitted_path": submitted_path,
+        "resolved_path": resolved_path,
+        "row_count": len(group.get("rows", [])),
+        "source": source,
+        "rules": normalization_rules,
+        "path_correction_scope": (
+            "future-identical-path"
+            if save_path_correction
+            else "current-batch"
+            if used_user_decision and submitted_path != resolved_path
+            else None
+        ),
+    }
+
+
 def plan_review(
     *,
     repository: str,
@@ -1676,6 +1763,7 @@ def plan_review(
     all_questions: list[dict[str, Any]] = []
     all_creations: list[dict[str, Any]] = []
     organization_change_preview: dict[str, dict[str, Any]] = {}
+    path_normalizations: list[dict[str, Any]] = []
     decisions: list[dict[str, Any]] = []
 
     similar_new_departments = _similar_new_department_contexts(manifest["groups"])
@@ -1698,27 +1786,36 @@ def plan_review(
             )
         pending = [item for item in questions if item["status"] == "pending"]
         state = "pending" if pending else ("answered" if questions else "auto")
-        group_plans.append(
-            {
-                "id": group["id"],
-                "path": group_path(group),
-                "row_count": len(group["rows"]),
-                "state": state,
-                "auto_rules": rules,
-                "question_ids": [item["id"] for item in questions],
-                "decision": (
-                    copy.deepcopy(decision) if decision is not None and not pending else None
-                ),
-            }
-        )
-        for preview in _organization_change_preview(
+        group_plan = {
+            "id": group["id"],
+            "path": group_path(group),
+            "row_count": len(group["rows"]),
+            "state": state,
+            "auto_rules": rules,
+            "question_ids": [item["id"] for item in questions],
+            "decision": (
+                copy.deepcopy(decision) if decision is not None and not pending else None
+            ),
+        }
+        group_plans.append(group_plan)
+        previews = _organization_change_preview(
             group,
             rules,
             decision,
             creations,
             organizations,
-        ):
+        )
+        for preview in previews:
             organization_change_preview[preview["id"]] = preview
+        normalization = _path_normalization(
+            group,
+            group_plan,
+            decision if not pending else None,
+            organizations,
+            previews,
+        )
+        if normalization is not None:
+            path_normalizations.append(normalization)
         all_questions.extend(questions)
         all_creations.extend(creations)
         if decision is not None and not pending:
@@ -1759,6 +1856,10 @@ def plan_review(
         "organization_change_preview": [
             organization_change_preview[key] for key in sorted(organization_change_preview)
         ],
+        "path_normalizations": sorted(
+            path_normalizations,
+            key=lambda item: (item["submitted_path"], item["group_id"]),
+        ),
         "decision": decision_document,
         "preflight": None,
         "submission": None,

@@ -16,6 +16,7 @@ from mentor_data.agent_review import (
 from mentor_data.agent_review_cli import (
     _answer_many,
     _brief,
+    _check,
     _classify_status,
     _discover_root,
     _doctor,
@@ -357,6 +358,17 @@ def test_brief_combines_plan_questions_and_creation_preview(
                 "approved_domains": [],
             }
         ],
+        "path_normalizations": [
+            {
+                "group_id": "org_group_1",
+                "submitted_path": "示例大学 / 计算机学院 / 计算机学院",
+                "resolved_path": "示例大学 / 计算机学院",
+                "row_count": 3,
+                "source": "rule",
+                "rules": ["repeated_parent_name"],
+                "path_correction_scope": None,
+            }
+        ],
     }
 
     class Client:
@@ -389,9 +401,73 @@ def test_brief_combines_plan_questions_and_creation_preview(
 
     assert result["ready"] is True
     assert result["organization_change_preview"][0]["id"] == "org_preview"
+    assert result["path_normalizations"][0]["row_count"] == 3
     assert result["pending_questions"][0]["id"] == "q_1"
     assert result["next"].endswith("--id q_1")
     assert load_draft(workspace, 88)["summary"]["pending_questions"] == 1
+
+
+def test_check_includes_path_normalizations_in_preflight_output(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    pull = PullSnapshot(
+        number=88,
+        issue_number=87,
+        title="批量审核",
+        url="https://github.test/pull/88",
+        branch="batch/issue-87",
+        head_sha="a" * 40,
+        base_sha="b" * 40,
+        draft=True,
+        status_label="status:manual-review",
+    )
+    path_normalizations = [
+        {
+            "group_id": "org_group_1",
+            "submitted_path": "示例大学 / 计算机学院 / 计算机学院",
+            "resolved_path": "示例大学 / 计算机学院",
+            "row_count": 3,
+            "source": "rule",
+            "rules": ["repeated_parent_name"],
+            "path_correction_scope": None,
+        }
+    ]
+    draft = {
+        "schema_version": 1,
+        "kind": "agent_organization_review_draft",
+        "repository": "example/repository",
+        "pull": pull.as_dict(),
+        "manifest_sha256": "c" * 64,
+        "decision": {"decisions": []},
+        "path_normalizations": path_normalizations,
+    }
+    save_draft(workspace, draft)
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: object())
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli._refresh",
+        lambda client, selected_workspace, pull_number: (
+            pull,
+            {"kind": "batch_organization_review"},
+            "c" * 64,
+        ),
+    )
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli.run_preflight",
+        lambda **kwargs: {"ok": True, "organization_changes": []},
+    )
+    args = argparse.Namespace(
+        root=str(tmp_path),
+        repository="example/repository",
+        pr=88,
+        fields=None,
+    )
+
+    result = _check(args, tmp_path, workspace)
+
+    assert result["ok"] is True
+    assert result["path_normalizations"] == path_normalizations
 
 
 def test_status_waits_internally_until_published(

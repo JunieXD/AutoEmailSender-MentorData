@@ -301,7 +301,52 @@ def test_department_repeating_university_maps_to_university(tmp_path: Path) -> N
         "skip",
         "skip",
     ]
+    assert draft["path_normalizations"] == [
+        {
+            "group_id": draft["groups"][0]["id"],
+            "submitted_path": "示例大学 / 计算机学院 / 示例大学",
+            "resolved_path": "示例大学",
+            "row_count": 1,
+            "source": "rule",
+            "rules": ["repeated_university_name"],
+            "path_correction_scope": None,
+        }
+    ]
     assert _apply(root, 75, draft["decision"]).ready_for_finalization is True
+
+
+def test_empty_department_is_visible_in_path_normalization_summary(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "学院老师",
+                "school-only@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/faculty/school-only",
+            )
+        ],
+        number=751,
+    )
+
+    draft = _plan(manifest, manifest_path, issue_number=751)
+
+    assert draft["path_normalizations"] == [
+        {
+            "group_id": draft["groups"][0]["id"],
+            "submitted_path": "示例大学 / 计算机学院",
+            "resolved_path": "示例大学 / 计算机学院",
+            "row_count": 1,
+            "source": "rule",
+            "rules": ["empty_department"],
+            "path_correction_scope": None,
+        }
+    ]
 
 
 def test_comment_body_uses_backend_compatible_payload(tmp_path: Path) -> None:
@@ -471,6 +516,17 @@ def test_similar_new_sibling_departments_require_one_human_decision(
         "智能科学技术系",
         "org_example_cs",
     )
+    assert merged["path_normalizations"] == [
+        {
+            "group_id": corrected_decision["group_id"],
+            "submitted_path": "示例大学 / 计算机学院 / 计算机学院智能科学技术系",
+            "resolved_path": "示例大学 / 计算机学院 / 智能科学技术系",
+            "row_count": 1,
+            "source": "user-decision",
+            "rules": ["user_merge_similar_sibling"],
+            "path_correction_scope": "future-identical-path",
+        }
+    ]
     assert _apply(root, 76, merged["decision"]).created_organizations == 1
 
     separate = _plan(

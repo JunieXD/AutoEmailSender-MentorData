@@ -173,7 +173,7 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         parents=[common],
         help="一次生成审核起始简报和本地底稿",
         description=(
-            "组合环境检查、PR 摘要、确定性规划、自动新建机构预览和待回答问题摘要；"
+            "组合环境检查、PR 摘要、确定性规划、路径规范化、自动新建机构预览和待回答问题摘要；"
             "只写本地审核底稿，不写 GitHub。"
         ),
     )
@@ -317,7 +317,7 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         help="在最新 main 上完整预演审核决定",
         description=(
             "物化受限 PR 提案到临时 worktree，复用可信后端应用机构审核并预演全部提案。"
-            "不会修改当前工作树或 GitHub。"
+            "输出机构变更和投稿路径规范化，不会修改当前工作树或 GitHub。"
         ),
     )
     check.add_argument("--pr", type=int, required=True)
@@ -711,6 +711,7 @@ def _brief(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, A
         "ready": True,
         "summary": draft["summary"],
         "organization_change_preview": draft["organization_change_preview"],
+        "path_normalizations": draft.get("path_normalizations", []),
         "pending_questions": pending,
         "next": (
             f"mentor-data review question --pr {args.pr} --id {pending[0]['id']}"
@@ -1065,7 +1066,13 @@ def _check(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, A
     draft["preflight"] = preflight
     draft["submission"] = None
     save_draft(workspace, draft)
-    return project_fields(preflight, _fields(args))
+    return project_fields(
+        {
+            **preflight,
+            "path_normalizations": draft.get("path_normalizations", []),
+        },
+        _fields(args),
+    )
 
 
 def _decision(args: argparse.Namespace, workspace: Path) -> Any:
@@ -1088,6 +1095,7 @@ def _decision(args: argparse.Namespace, workspace: Path) -> Any:
             item.get("action") != "create" for item in organization_changes
         ),
         "organization_changes": organization_changes,
+        "path_normalizations": draft.get("path_normalizations", []),
         "decision_sha256": canonical_json_sha256(decision),
         "comment_characters": len(body),
         "preflight_ok": draft.get("preflight", {}).get("ok") is True,
