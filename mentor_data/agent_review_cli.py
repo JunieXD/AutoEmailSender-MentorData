@@ -257,6 +257,11 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         choices=["university", "school", "department", "none"],
     )
     questions.add_argument("--query", help="按路径、提示或问题 ID 包含文本筛选")
+    questions.add_argument(
+        "--details",
+        action="store_true",
+        help="一次返回全部命中问题的紧凑裁决上下文、来源摘要和选项参数",
+    )
     _add_fields(questions)
 
     question = commands.add_parser(
@@ -352,7 +357,8 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         parents=[common],
         help="查看审核评论、Actions、PR 和来源 Issue 状态",
         description=(
-            "返回 phase、terminal、outcome、last_transition_at 和 next_poll_seconds。"
+            "返回匹配的落库 Actions、phase、terminal、outcome、last_transition_at 和 "
+            "next_poll_seconds。PR 已合并但来源 Issue 未关闭时仍视为收尾中；"
             "使用 --wait 时由 CLI 轮询到明确终态或超时。"
         ),
     )
@@ -360,7 +366,7 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     status.add_argument(
         "--wait",
         action="store_true",
-        help="持续轮询直到合并、需处理、未合并关闭、工作流失败或超时",
+        help="持续轮询直到发布及来源 Issue 收尾、需处理、未合并关闭、工作流失败或超时",
     )
     status.add_argument(
         "--timeout-seconds",
@@ -866,6 +872,28 @@ def _question_summary(item: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _question_options_with_commands(
+    pull_number: int,
+    question_id: str,
+    options: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    flag_names = {
+        "approved_domains": "approved-domain",
+        "former_affiliation_id": "former-affiliation-id",
+    }
+    values: list[dict[str, Any]] = []
+    for option in options:
+        command = (
+            f"mentor-data review answer --pr {pull_number} --id {question_id} "
+            f"--choice {option['value']}"
+        )
+        for field in option.get("requires", []):
+            flag = flag_names.get(field, field.replace("_", "-"))
+            command += f" --{flag} <{field}>"
+        values.append({**option, "command": command})
+    return values
+
+
 def _question_matches_filters(item: dict[str, Any], args: argparse.Namespace) -> bool:
     if getattr(args, "type", None) and item.get("type") != args.type:
         return False
@@ -880,13 +908,37 @@ def _question_matches_filters(item: dict[str, Any], args: argparse.Namespace) ->
 
 def _questions(args: argparse.Namespace, workspace: Path) -> dict[str, Any]:
     draft = load_draft(workspace, args.pr)
+    manifest_groups: dict[str, dict[str, Any]] = {}
+    if getattr(args, "details", False):
+        manifest = load_cached_manifest(workspace, args.pr)
+        manifest_groups = {item["id"]: item for item in manifest.get("groups", [])}
+    draft_groups = {item["id"]: item for item in draft.get("groups", [])}
     items: list[dict[str, Any]] = []
     for item in draft.get("questions", []):
         if args.status != "all" and item.get("status") != args.status:
             continue
         if not _question_matches_filters(item, args):
             continue
-        items.append(project_fields(_question_summary(item), _fields(args)))
+        value = _question_summary(item)
+        if getattr(args, "details", False):
+            group = manifest_groups.get(item["group_id"], {})
+            group_plan = draft_groups.get(item["group_id"], {})
+            value.update(
+                {
+                    "row_count": len(group.get("rows", [])),
+                    "source_domains": group.get("source_domains", []),
+                    "source_url_samples": group.get("source_urls", [])[:2],
+                    "auto_rules": group_plan.get("auto_rules", []),
+                    "context": item.get("context", {}),
+                    "options": _question_options_with_commands(
+                        args.pr,
+                        item["id"],
+                        item.get("options", []),
+                    ),
+                    "answer": item.get("answer"),
+                }
+            )
+        items.append(project_fields(value, _fields(args)))
     return {"count": len(items), "items": items}
 
 
@@ -1152,10 +1204,31 @@ def _submit(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, 
 def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[str, Any]:
     labels = set(value.get("labels", []))
     checks = value.get("checks", {})
+    promotion_run = value.get("promotion_run")
+    promotion_status = (
+        promotion_run.get("status") if isinstance(promotion_run, dict) else None
+    )
+    promotion_conclusion = (
+        promotion_run.get("conclusion") if isinstance(promotion_run, dict) else None
+    )
+    workflow_failed = (
+        promotion_status == "completed"
+        and promotion_conclusion not in {"success", "skipped", "neutral"}
+    ) or checks.get("failed", 0) > 0
     if value.get("merged") is True:
-        phase = "published"
-        outcome = "merged-published"
-        terminal = True
+        if value.get("issue") is not None and value.get("issue_state") != "closed":
+            if workflow_failed:
+                phase = "workflow-failed"
+                outcome = "workflow-failure"
+                terminal = True
+            else:
+                phase = "published-cleanup-pending"
+                outcome = None
+                terminal = False
+        else:
+            phase = "published"
+            outcome = "merged-published"
+            terminal = True
     elif "status:needs-attention" in labels:
         phase = "needs-attention"
         outcome = "needs-attention"
@@ -1164,7 +1237,7 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
         phase = "closed"
         outcome = "closed-unmerged"
         terminal = True
-    elif checks.get("failed", 0) > 0:
+    elif workflow_failed:
         phase = "workflow-failed"
         outcome = "workflow-failure"
         terminal = True
@@ -1172,7 +1245,7 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
         phase = "awaiting-review"
         outcome = None
         terminal = False
-    elif checks.get("pending", 0) > 0:
+    elif promotion_status not in {None, "completed"} or checks.get("pending", 0) > 0:
         phase = "workflow-running"
         outcome = None
         terminal = False
@@ -1185,7 +1258,15 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
         "phase": phase,
         "terminal": terminal,
         "outcome": outcome,
-        "last_transition_at": value.get("merged_at") or value.get("updated_at"),
+        "last_transition_at": (
+            value.get("merged_at")
+            or (
+                promotion_run.get("updated_at")
+                if isinstance(promotion_run, dict)
+                else None
+            )
+            or value.get("updated_at")
+        ),
         "next_poll_seconds": None if terminal else next_poll_seconds,
     }
 

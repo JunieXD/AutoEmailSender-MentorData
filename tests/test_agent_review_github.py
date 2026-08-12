@@ -4,6 +4,9 @@ import json
 import subprocess
 from pathlib import Path
 
+import pytest
+
+from mentor_data.agent_review import AgentReviewError
 from mentor_data.agent_review_github import GitHubReviewClient
 
 from .helpers import PROJECT_ROOT
@@ -134,3 +137,110 @@ organizations:
             "lineage_names": ["示例大学"],
         }
     ]
+
+
+def test_status_matches_named_promotion_workflow_run(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=PROJECT_ROOT,
+    )
+    pull = {
+        **_pull_payload(),
+        "updated_at": "2026-08-12T10:00:00Z",
+        "merged_at": None,
+    }
+    workflow_runs = {
+        "workflow_runs": [
+            {
+                "id": 100,
+                "display_title": "Promote ready mentor data after review PR #11",
+                "event": "issue_comment",
+                "status": "completed",
+                "conclusion": "success",
+                "created_at": "2026-08-12T09:59:00Z",
+                "updated_at": "2026-08-12T10:00:00Z",
+                "html_url": "https://github.test/actions/runs/100",
+                "pull_requests": [],
+            },
+            {
+                "id": 101,
+                "display_title": "Promote ready mentor data after review PR #12",
+                "event": "issue_comment",
+                "status": "in_progress",
+                "conclusion": None,
+                "created_at": "2026-08-12T10:01:00Z",
+                "updated_at": "2026-08-12T10:02:00Z",
+                "html_url": "https://github.test/actions/runs/101",
+                "pull_requests": [],
+            },
+        ]
+    }
+
+    def fake_json(endpoint: str):
+        if endpoint.endswith("pulls/12"):
+            return pull
+        if endpoint.endswith("issues/11"):
+            return {"state": "open"}
+        if "actions/workflows/promote-ready-pulls.yml/runs" in endpoint:
+            return workflow_runs
+        if endpoint.endswith("commits/" + "a" * 40 + "/check-runs"):
+            return {"check_runs": []}
+        raise AssertionError(endpoint)
+
+    monkeypatch.setattr(client, "_json", fake_json)
+    monkeypatch.setattr(
+        client,
+        "official_review_comments",
+        lambda pull_number: [{"id": 99, "body": "official"}],
+    )
+
+    result = client.status(12)
+
+    assert result["promotion_run"] == {
+        "id": 101,
+        "event": "issue_comment",
+        "status": "in_progress",
+        "conclusion": None,
+        "created_at": "2026-08-12T10:01:00Z",
+        "updated_at": "2026-08-12T10:02:00Z",
+        "url": "https://github.test/actions/runs/101",
+    }
+
+
+def test_status_keeps_existing_fallback_when_actions_are_unavailable(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=PROJECT_ROOT,
+    )
+    pull = {
+        **_pull_payload(),
+        "updated_at": "2026-08-12T10:00:00Z",
+        "merged_at": None,
+    }
+
+    def fake_json(endpoint: str):
+        if endpoint.endswith("pulls/12"):
+            return pull
+        if endpoint.endswith("issues/11"):
+            return {"state": "open"}
+        if "actions/workflows/promote-ready-pulls.yml/runs" in endpoint:
+            raise AgentReviewError("review_github_failed", "Actions 不可用")
+        if endpoint.endswith("commits/" + "a" * 40 + "/check-runs"):
+            return {"check_runs": []}
+        raise AssertionError(endpoint)
+
+    monkeypatch.setattr(client, "_json", fake_json)
+    monkeypatch.setattr(
+        client,
+        "official_review_comments",
+        lambda pull_number: [{"id": 99, "body": "official"}],
+    )
+
+    result = client.status(12)
+
+    assert result["promotion_run"] is None
+    assert result["review_comments"] == 1

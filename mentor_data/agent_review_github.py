@@ -296,6 +296,51 @@ class GitHubReviewClient:
             else None
         )
         comments = self.official_review_comments(pull_number)
+        promotion_run = None
+        if comments:
+            try:
+                runs_payload = self._json(
+                    f"repos/{self.repository}/actions/workflows/"
+                    "promote-ready-pulls.yml/runs?per_page=50"
+                )
+            except AgentReviewError:
+                runs_payload = None
+            runs = (
+                runs_payload.get("workflow_runs", [])
+                if isinstance(runs_payload, dict)
+                else []
+            )
+            matching_runs = []
+            for run in runs:
+                if not isinstance(run, dict):
+                    continue
+                title = run.get("display_title")
+                title_matches = isinstance(title, str) and re.search(
+                    rf"\bPR\s*#{pull_number}\b",
+                    title,
+                    flags=re.IGNORECASE,
+                )
+                pull_requests = run.get("pull_requests", [])
+                pull_matches = isinstance(pull_requests, list) and any(
+                    isinstance(item, dict) and item.get("number") == pull_number
+                    for item in pull_requests
+                )
+                if title_matches or pull_matches:
+                    matching_runs.append(run)
+            if matching_runs:
+                selected_run = max(
+                    matching_runs,
+                    key=lambda item: (item.get("created_at") or "", item.get("id") or 0),
+                )
+                promotion_run = {
+                    "id": selected_run.get("id"),
+                    "event": selected_run.get("event"),
+                    "status": selected_run.get("status"),
+                    "conclusion": selected_run.get("conclusion"),
+                    "created_at": selected_run.get("created_at"),
+                    "updated_at": selected_run.get("updated_at"),
+                    "url": selected_run.get("html_url"),
+                }
         head_sha = pull.get("head", {}).get("sha")
         check_runs: list[dict[str, Any]] = []
         if isinstance(head_sha, str):
@@ -319,6 +364,7 @@ class GitHubReviewClient:
             "issue_state": issue.get("state") if isinstance(issue, dict) else None,
             "review_comments": len(comments),
             "latest_review_comment_id": comments[-1].get("id") if comments else None,
+            "promotion_run": promotion_run,
             "checks": {
                 "total": len(check_runs),
                 "pending": sum(item.get("status") != "completed" for item in check_runs),

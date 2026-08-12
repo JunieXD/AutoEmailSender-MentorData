@@ -10,6 +10,7 @@ import pytest
 from mentor_data.agent_review import (
     AgentReviewError,
     PullSnapshot,
+    cache_snapshot,
     load_draft,
     save_draft,
 )
@@ -20,6 +21,7 @@ from mentor_data.agent_review_cli import (
     _classify_status,
     _discover_root,
     _doctor,
+    _questions,
     _queue,
     _root,
     _status,
@@ -470,6 +472,63 @@ def test_check_includes_path_normalizations_in_preflight_output(
     assert result["path_normalizations"] == path_normalizations
 
 
+def test_questions_details_returns_compact_batch_decision_packets(tmp_path: Path) -> None:
+    workspace = tmp_path / "workspace"
+    pull = PullSnapshot(
+        number=88,
+        issue_number=87,
+        title="批量审核",
+        url="https://github.test/pull/88",
+        branch="batch/issue-87",
+        head_sha="a" * 40,
+        base_sha="b" * 40,
+        draft=True,
+        status_label="status:manual-review",
+    )
+    draft = _answer_many_draft(pull, "c" * 64)
+    save_draft(workspace, draft)
+    cache_snapshot(
+        workspace,
+        pull,
+        {
+            "kind": "batch_organization_review",
+            "groups": [
+                {
+                    "id": f"group_{index}",
+                    "rows": [{"proposal_id": f"proposal_{index}"}],
+                    "source_domains": ["cs.example.edu"],
+                    "source_urls": [
+                        "https://cs.example.edu/faculty/list.htm",
+                        f"https://cs.example.edu/faculty/{index}.htm",
+                    ],
+                }
+                for index in (1, 2)
+            ],
+        },
+    )
+    args = argparse.Namespace(
+        pr=88,
+        status="pending",
+        type=None,
+        level=None,
+        query=None,
+        details=True,
+        fields=None,
+    )
+
+    result = _questions(args, workspace)
+
+    assert result["count"] == 2
+    first = result["items"][0]
+    assert first["row_count"] == 1
+    assert first["source_domains"] == ["cs.example.edu"]
+    assert len(first["source_url_samples"]) == 2
+    assert first["options"][0]["requires"] == ["organization_id"]
+    assert first["options"][0]["command"].endswith(
+        "--choice map-existing --organization-id <organization_id>"
+    )
+
+
 def test_status_waits_internally_until_published(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,
@@ -484,22 +543,25 @@ def test_status_waits_internally_until_published(
         "review_comments": 1,
         "checks": {"total": 1, "pending": 1, "failed": 0},
     }
-    published = {
+    cleanup_pending = {
         **pending,
         "pr_state": "closed",
         "merged": True,
         "merged_at": "2026-08-12T10:01:00Z",
+        "issue": 87,
+        "issue_state": "open",
         "checks": {"total": 1, "pending": 0, "failed": 0},
     }
+    published = {**cleanup_pending, "issue_state": "closed"}
 
     class Client:
         def __init__(self):
-            self.values = [pending, published]
+            self.values = [pending, cleanup_pending, published]
 
         def status(self, pull_number, *, issue_number=None):
             return self.values.pop(0)
 
-    monotonic_values = iter([0.0, 0.0, 1.0])
+    monotonic_values = iter([0.0, 0.0, 1.0, 2.0])
     monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
     monkeypatch.setattr(
         "mentor_data.agent_review_cli.time.monotonic",
@@ -542,10 +604,22 @@ def test_status_classifies_attention_and_workflow_failure() -> None:
         {**base, "checks": {"total": 1, "pending": 0, "failed": 1}},
         next_poll_seconds=5,
     )
+    action_failure = _classify_status(
+        {
+            **base,
+            "promotion_run": {
+                "status": "completed",
+                "conclusion": "failure",
+                "updated_at": "2026-08-12T10:02:00Z",
+            },
+        },
+        next_poll_seconds=5,
+    )
 
     assert attention["outcome"] == "needs-attention"
     assert failure["outcome"] == "workflow-failure"
-    assert attention["terminal"] is failure["terminal"] is True
+    assert action_failure["outcome"] == "workflow-failure"
+    assert attention["terminal"] is failure["terminal"] is action_failure["terminal"] is True
 
 
 def test_status_wait_returns_timeout_as_terminal_outcome(

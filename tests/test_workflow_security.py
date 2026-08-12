@@ -113,6 +113,8 @@ def test_promotion_uses_trusted_default_branch_and_durable_fallback_triggers() -
     assert "issue_comment:" in text
     assert "pull_request_target:" in text
     assert "schedule:" in text
+    assert "run-name:" in text
+    assert "after review PR #{0}" in text
     assert "github.event.comment.body" not in "\n".join(
         line for line in text.splitlines() if line.lstrip().startswith("run:")
     )

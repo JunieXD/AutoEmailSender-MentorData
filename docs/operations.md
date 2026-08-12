@@ -48,9 +48,9 @@ mentor-data review doctor
 mentor-data review --help
 ```
 
-CLI 会先自动处理唯一精确匹配、明确新机构、空层级和重复祖先等确定项，再把不确定的机构关系压缩为带稳定 ID 的问题。审核底稿保存在被 Git 忽略的 `.work/agent-reviews/`，不会写入投稿分支。所有问题回答完成后，`review check` 会在最新 `main` 的临时 worktree 中复用可信后端完成全量预演。
+CLI 会先自动处理唯一精确匹配、明确新机构、空层级和重复祖先等确定项，再把不确定的机构关系压缩为带稳定 ID 的问题。`review brief` 会汇总投稿路径规范化和新建机构；`review questions --details` 可一次读取全部待裁决问题的紧凑上下文与可执行命令。审核底稿保存在被 Git 忽略的 `.work/agent-reviews/`，不会写入投稿分支。所有问题回答完成后，`review check` 会在最新 `main` 的临时 worktree 中复用可信后端完成全量预演，并再次列出路径和机构变更。
 
-只有 `review submit` 会写入 GitHub。它要求显式确认 PR 编号并再次预演，然后发布一次正式审核评论；该评论会立即触发现有可信落库队列。不要另外将 Draft 标记为 Ready、手动修改提案或合并 PR。完整需求与安全边界见 [Agent 机构审核 CLI 需求](agent-review-cli-requirements.md)。
+只有 `review submit` 会写入 GitHub。它要求显式确认 PR 编号并再次预演，然后发布一次正式审核评论；该评论会立即触发现有可信落库队列。提交后使用 `review status --wait` 等待数据发布和来源 Issue 收尾，不要另外将 Draft 标记为 Ready、手动修改提案或合并 PR。完整需求与安全边界见 [Agent 机构审核 CLI 需求](agent-review-cli-requirements.md)。
 
 ### 单条投稿
 

@@ -87,14 +87,14 @@ CLI 只发布审核评论，后续由现有可信队列应用决定、更新分�
 - `mentor-data review --help` 描述完整工作流和安全边界。
 - 每个子命令提供用途、前置条件、默认输出、筛选参数和下一步示例。
 - 错误输出包含稳定错误代码、简短原因和可执行的下一步命令。
-- Skill 只需让 Agent先读取 CLI 帮助，不维护易过期的参数清单。
+- Skill 只维护人机协作和提交边界；Agent 优先跟随结构化 `next`，信息不足时再读取 CLI 帮助，不在 Skill 中维护易过期的参数清单。
 
 ### 5.2 渐进披露和低 Token 输出
 
 - 默认输出紧凑 JSON；人类可读输出必须显式选择。
 - 队列只输出 PR 编号、标题、状态和审核规模。
 - 分组列表默认不输出导师行详情。
-- 问题列表只输出问题 ID、路径、问题类型、建议选择和选项值。
+- 问题列表只输出问题 ID、路径、问题类型、建议选择和选项值；详细模式一次返回命中问题的紧凑裁决上下文、影响行数和可执行命令。
 - 单项详情通过稳定 ID 显式读取。
 - 支持按状态、问题类型、规则、机构层级和文本查询筛选。
 - 支持 `--fields` 精确选择输出字段；未知字段必须报错。
@@ -109,6 +109,7 @@ CLI 只发布审核评论，后续由现有可信队列应用决定、更新分�
 - 仓库名、PR 编号、Issue 编号；
 - PR head SHA、base SHA、清单 SHA-256 和注册表 SHA-256；
 - 自动决定及其规则和理由；
+- 原始投稿路径到最终机构路径的规范化摘要；
 - 待用户决定的问题；
 - 用户回答；
 - 生成的完整审核决定；
@@ -123,15 +124,16 @@ CLI 只发布审核评论，后续由现有可信队列应用决定、更新分�
 - `review doctor`：从任意工作区诊断本地安装、仓库定位和 Skill 可发现性。
 - `review inspect --pr N`：读取或刷新目标 PR 清单，返回极简摘要。
 - `review plan --pr N`：运行确定性规则并创建或刷新底稿。
+- `review brief --pr N`：一次返回环境、规划、路径规范化、机构变更和待裁决问题。
 - `review groups --pr N`：筛选并列出机构路径分组。
 - `review group --pr N --id ID`：读取一个分组的必要详情。
-- `review questions --pr N`：筛选并列出待决定问题。
+- `review questions --pr N [--details]`：筛选并列出待决定问题，可批量读取紧凑裁决包。
 - `review question --pr N --id ID`：读取单个问题及完整选项。
 - `review answer --pr N --id ID --choice VALUE`：记录用户决定及必要参数。
 - `review check --pr N`：在最新 `main` 上完整预演并输出影响摘要。
 - `review decision --pr N`：按需输出完整决定或正式评论正文。
 - `review submit --pr N --confirm-pr N`：再次预演后发布正式评论。
-- `review status --pr N`：报告评论、Actions、PR 和 Issue 状态。
+- `review status --pr N [--wait]`：报告匹配的落库 Actions、PR 和 Issue 状态，并在等待模式中覆盖来源 Issue 收尾。
 
 最终命令名称可以遵循现有 CLI 风格调整，但必须覆盖上述能力和安全边界。
 
