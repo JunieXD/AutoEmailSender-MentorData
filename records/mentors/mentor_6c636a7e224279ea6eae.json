@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6b9be287d54b06d0c1b"
+      ],
+      "ended_at": null,
+      "id": "aff_adce873a662732de85e1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/cg1/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f6b9be287d54b06d0c1b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_adce873a662732de85e1",
+      "claim_ids": [
+        "claim_f6b9be287d54b06d0c1b"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengguang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/cg1/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chengguang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6b9be287d54b06d0c1b"
+    ],
+    "email": [
+      "claim_f6b9be287d54b06d0c1b"
+    ],
+    "name": [
+      "claim_f6b9be287d54b06d0c1b"
+    ],
+    "profile_url": [
+      "claim_f6b9be287d54b06d0c1b"
+    ],
+    "recent_papers": [
+      "claim_f6b9be287d54b06d0c1b"
+    ],
+    "research_directions": [
+      "claim_f6b9be287d54b06d0c1b"
+    ],
+    "status": [
+      "claim_f6b9be287d54b06d0c1b"
+    ],
+    "title": [
+      "claim_f6b9be287d54b06d0c1b"
+    ]
+  },
+  "id": "mentor_6c636a7e224279ea6eae",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6b9be287d54b06d0c1b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_adce873a662732de85e1",
+      "claim_ids": [
+        "claim_f6b9be287d54b06d0c1b"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/cg1/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zihan Chen, Guang Cheng*, Ziheng Xu, Shuyi Guo, Yuyang Zhou, Yuyu Zhao. Length Matters: Scalable Fast Internet Encrypted Traffic Service Classification based on Multi-PDU Length Sequence with Composite Deep Learning [J]. Digital Communications and Networks.",
+    "Wu H, Li X, Cheng G, et al. Monitoring Video Resolution of Adaptive Encrypted Video Traffic Based on HTTP/2 Features [C]//IEEE INFOCOM 2021-IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS). IEEE, 2021.",
+    "Wu H, Chen X, Cheng G, et al. BCAC: Batch Classifier based on Agglomerative Clustering for traffic classification in a backbone network [C]//IEEE/ACM International Symposium on Quality of Service (IWQoS 2021), Tokyo, Japan, 06, 2021.",
+    "陈子涵, 程光*. 基于Stackelberg-Markov非对等三方博弈模型的移动目标防御技术[J]. 计算机学报, 2020, 043(003):512-525.",
+    "周余阳, 程光*, 郭春生,等. 移动目标防御的攻击面动态转移技术研究综述[J]. 软件学报, 2018,29(9):2799-2820.",
+    "赵玉宇,程光*,刘旭辉,袁帅,唐路.下一代网络处理器及应用综述[J].软件学报, 2021, 32(02) : 445-474.",
+    "Yuyu Zhao, Guang Cheng*, Yu Duan, Zhouchao Gu, Yuyang Zhou, Lu Tang. Snapshot for IoT: Adaptive Measurement for Multidimensional QoS Resources [C]// IEEE/ACM International Symposium on Quality of Service (IWQoS 2021), Tokyo, Japan, 06, 2021.",
+    "Zhou Y, Cheng G*, Zhao YY, et al. Towards Proactive and Efficient DDoS Mitigation in IIoT Systems: A Moving Target Defense Approach [J]. IEEE Transactions on Industrial Informatics, 2021, doi: 10.1109/ TII.2021. 3090719."
+  ],
+  "research_directions": [
+    "网络流量安全分析、网络安全主动防御、下一代网络处理器的内生安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/cg1/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

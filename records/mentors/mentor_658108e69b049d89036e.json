@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d8f6273d674d2677cecb"
+      ],
+      "ended_at": null,
+      "id": "aff_23497c21354749124e5c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/hyn1/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d8f6273d674d2677cecb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_23497c21354749124e5c",
+      "claim_ids": [
+        "claim_d8f6273d674d2677cecb"
+      ],
+      "is_primary": true,
+      "normalized_value": "hyn.list@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/hyn1/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hyn.list@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d8f6273d674d2677cecb"
+    ],
+    "email": [
+      "claim_d8f6273d674d2677cecb"
+    ],
+    "name": [
+      "claim_d8f6273d674d2677cecb"
+    ],
+    "profile_url": [
+      "claim_d8f6273d674d2677cecb"
+    ],
+    "recent_papers": [
+      "claim_d8f6273d674d2677cecb"
+    ],
+    "research_directions": [
+      "claim_d8f6273d674d2677cecb"
+    ],
+    "status": [
+      "claim_d8f6273d674d2677cecb"
+    ],
+    "title": [
+      "claim_d8f6273d674d2677cecb"
+    ]
+  },
+  "id": "mentor_658108e69b049d89036e",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d8f6273d674d2677cecb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡轶宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_23497c21354749124e5c",
+      "claim_ids": [
+        "claim_d8f6273d674d2677cecb"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/hyn1/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Detecting AI-generated videos via global semantic awareness and inter-frame semantic consistency",
+    "BM-DDFN: Bilinear cross-domain modeling for AIGC image source attribution",
+    "Unsupervised anomaly detection with a stacked transformer diffusion reconstruction framework",
+    "Targeted and Transferable Adversarial Attacks on Large Vision-Language Models via Two-Stage Region-Specific Perturbations",
+    "Ill-posed regions-aware self-supervised stereo matching with left-right consistency",
+    "A generalized defect-data-free defect inspection method based on image reconstruction and anomaly detection",
+    "Multiscale Features Integrated Model for Generalizable Deepfake Detection",
+    "A Universal Defense Strategy Against Adversarial Attacks Based on Attention-Guided"
+  ],
+  "research_directions": [
+    "计算机视觉:双目视觉高精度定位,双目视觉运动采集,通用工业场景无损检测",
+    "内容安全:对抗样本攻防,AIGC内容鉴别,AIGC溯源,医学影像溯源,视觉内容安全",
+    "大模型:大模型应用,垂直领域大模型等",
+    "负责东南大学大模型应用服务开发与管理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/hyn1/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}
