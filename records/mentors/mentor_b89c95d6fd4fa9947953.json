@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_65310bfbdd96df14fe6e"
+      ],
+      "ended_at": null,
+      "id": "aff_49486077786ee0889f9f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/lzh/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_65310bfbdd96df14fe6e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_49486077786ee0889f9f",
+      "claim_ids": [
+        "claim_65310bfbdd96df14fe6e"
+      ],
+      "is_primary": true,
+      "normalized_value": "lzh@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/lzh/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lzh@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_65310bfbdd96df14fe6e"
+    ],
+    "email": [
+      "claim_65310bfbdd96df14fe6e"
+    ],
+    "name": [
+      "claim_65310bfbdd96df14fe6e"
+    ],
+    "profile_url": [
+      "claim_65310bfbdd96df14fe6e"
+    ],
+    "research_directions": [
+      "claim_65310bfbdd96df14fe6e"
+    ],
+    "status": [
+      "claim_65310bfbdd96df14fe6e"
+    ],
+    "title": [
+      "claim_65310bfbdd96df14fe6e"
+    ]
+  },
+  "id": "mentor_b89c95d6fd4fa9947953",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_65310bfbdd96df14fe6e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘志昊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_49486077786ee0889f9f",
+      "claim_ids": [
+        "claim_65310bfbdd96df14fe6e"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/lzh/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子计算与机器学习、新型算法与信息安全、人工智能算法及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/lzh/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

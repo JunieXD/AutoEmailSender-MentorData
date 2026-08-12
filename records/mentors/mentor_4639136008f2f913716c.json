@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0c896b1e5b0fb822ab60"
+      ],
+      "ended_at": null,
+      "id": "aff_a14a07daae6b39778810",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/shu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_0c896b1e5b0fb822ab60"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a14a07daae6b39778810",
+      "claim_ids": [
+        "claim_0c896b1e5b0fb822ab60"
+      ],
+      "is_primary": true,
+      "normalized_value": "shu.list@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/shu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shu.list@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0c896b1e5b0fb822ab60"
+    ],
+    "email": [
+      "claim_0c896b1e5b0fb822ab60"
+    ],
+    "name": [
+      "claim_0c896b1e5b0fb822ab60"
+    ],
+    "profile_url": [
+      "claim_0c896b1e5b0fb822ab60"
+    ],
+    "status": [
+      "claim_0c896b1e5b0fb822ab60"
+    ]
+  },
+  "id": "mentor_4639136008f2f913716c",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0c896b1e5b0fb822ab60"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "舒华忠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a14a07daae6b39778810",
+      "claim_ids": [
+        "claim_0c896b1e5b0fb822ab60"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/shu/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/shu/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

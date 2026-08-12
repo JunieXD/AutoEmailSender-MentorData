@@ -2147,3 +2147,47 @@ organizations:
   successor_id: null
   created_at: '2026-08-12T15:55:49Z'
   updated_at: '2026-08-12T15:55:49Z'
+- id: org_auto_9e7bf58b3d6ccb33e738
+  type: school
+  canonical_name: 计算机科学与工程学院
+  parent_id: org_auto_56d49257105c0f7c37d0
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T16:47:14Z'
+  updated_at: '2026-08-12T16:47:14Z'
+- id: org_auto_49147e486e81435bf164
+  type: department
+  canonical_name: 影像科学与技术系
+  parent_id: org_auto_9e7bf58b3d6ccb33e738
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T16:47:14Z'
+  updated_at: '2026-08-12T16:47:14Z'
+- id: org_auto_65a0ea16121ac5fe3e77
+  type: department
+  canonical_name: 计算机科学系
+  parent_id: org_auto_9e7bf58b3d6ccb33e738
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T16:47:14Z'
+  updated_at: '2026-08-12T16:47:14Z'
+- id: org_auto_b5ccd7183f019135caa7
+  type: department
+  canonical_name: 计算机工程系
+  parent_id: org_auto_9e7bf58b3d6ccb33e738
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T16:47:14Z'
+  updated_at: '2026-08-12T16:47:14Z'

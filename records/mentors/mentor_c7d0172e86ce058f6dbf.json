@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_25f44a3c49c9a5ef30d8"
+      ],
+      "ended_at": null,
+      "id": "aff_d00ea05fd4716bd994f9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/wjwu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_25f44a3c49c9a5ef30d8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d00ea05fd4716bd994f9",
+      "claim_ids": [
+        "claim_25f44a3c49c9a5ef30d8"
+      ],
+      "is_primary": true,
+      "normalized_value": "wjwu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/wjwu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wjwu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ],
+    "email": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ],
+    "name": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ],
+    "profile_url": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ],
+    "recent_papers": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ],
+    "research_directions": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ],
+    "status": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ],
+    "title": [
+      "claim_25f44a3c49c9a5ef30d8"
+    ]
+  },
+  "id": "mentor_c7d0172e86ce058f6dbf",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_25f44a3c49c9a5ef30d8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴文甲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d00ea05fd4716bd994f9",
+      "claim_ids": [
+        "claim_25f44a3c49c9a5ef30d8"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/wjwu/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "ODGMAC: On-demand Grouping-based MAC for Dense IoT Networks",
+    "Diff-ADF: Differential Adjacent-dual-frame Radio Frequency Fingerprinting for LoRa Devices",
+    "RF-TESI: Radio Frequency Fingerprint-based Smartphone Identification under Temperature Variation",
+    "Energy-Constrained UAV Flight Scheduling for IoT Data Collection with 60 GHz Communication",
+    "Learning-aided client association control for high-density WLANs",
+    "CQP-RFFI: Injecting a Communication-Quality Preserving RF Fingerprint for Wi-Fi Device Identification",
+    "TEA-RFFI: Temperature adjusted radio frequency fingerprint-based smartphone identification",
+    "PR-RFFI: Practical RF Fingerprint Injection based Wi-Fi Device Identification"
+  ],
+  "research_directions": [
+    "终端多模态识别、物联网边缘智能体、多媒体边缘计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/wjwu/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

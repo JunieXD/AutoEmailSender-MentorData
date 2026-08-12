@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8dd2a6de05ebd395be66"
+      ],
+      "ended_at": null,
+      "id": "aff_bb85ba84fc812470f490",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/dianshen/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_8dd2a6de05ebd395be66"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bb85ba84fc812470f490",
+      "claim_ids": [
+        "claim_8dd2a6de05ebd395be66"
+      ],
+      "is_primary": true,
+      "normalized_value": "dshen@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/dianshen/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dshen@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8dd2a6de05ebd395be66"
+    ],
+    "email": [
+      "claim_8dd2a6de05ebd395be66"
+    ],
+    "name": [
+      "claim_8dd2a6de05ebd395be66"
+    ],
+    "profile_url": [
+      "claim_8dd2a6de05ebd395be66"
+    ],
+    "recent_papers": [
+      "claim_8dd2a6de05ebd395be66"
+    ],
+    "research_directions": [
+      "claim_8dd2a6de05ebd395be66"
+    ],
+    "status": [
+      "claim_8dd2a6de05ebd395be66"
+    ]
+  },
+  "id": "mentor_c07a56e9b9addc4af9bd",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8dd2a6de05ebd395be66"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈典"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bb85ba84fc812470f490",
+      "claim_ids": [
+        "claim_8dd2a6de05ebd395be66"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/dianshen/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Bin Yang, Dian Shen, Jianrui Liu, Beilun Wang. NGSim: A High-Fidelity and Efficient Simulator for Optimizing Network Function Graphs. INFOCOMCCF A 2026: 1-10.",
+    "Han Tian, Han Wang, Wenbo Li, Xudong Liao, Decang Sun, Wenxue Li, Donghui Chen, Bin Huang, Senbo Fu, Junxue Zhang, Dian Shen, Kai Chen. PolicyCache: Intra-flow Learning in Congestion Control. NSDICCF A 2026: 35-55.",
+    "Fan Sun, Fang Dong, Dian Shen. Decentralizing Compressed Sensing for Federated Learning with Hardware-Software Codesign. INFOCOMCCF A 2026: 1-10.",
+    "Wanning Bao, Liangmin Wang, Haiqin Wu, Dian Shen, Boris Düdder. TolerStore: Tolerating Malicious Nodes in Decentralized Storage Network. TCCCF A 2026, 75(3): 942-956.",
+    "Runhuai Chen, Dian Shen, Dandan Zhang, Kaihong Huang, Linghui Meng, Beilun Wang. Compressing LLM Knowledge into Graph Representations for Text-attributed Graphs Learning. ACLCCF A 2026: 30303-30318.",
+    "Ying Zhan, Xiuqi Tang, Yan Zhang, Xiao Tan, Dian Shen, Zhou Yu, Beilun Wang. LiGen: Active Lipid Generation via a Molecular Language Model. ACLCCF A 2026: 8674-8686.",
+    "Xiao Tan, Tongtong Su, Jiayi Wu, Yan Zhang, Binghui Xu, Dian Shen, Meng Wang, Beilun Wang. Identification of Influential Node Group in Attributed Graph through Explaining Graph Neural Network. WWWCCF A 2026: 1171-1182.",
+    "Xiaolin Guo, Fang Dong, Dian Shen, Zhaowu Huang. Popularity-Aware Layer-Wise Caching and Function Scheduling for Dynamic Workflow at the Edge. TMCCCF A 2026, 25(5): 6277-6291."
+  ],
+  "research_directions": [
+    "AI Infra/System,边缘计算,人工智能应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/dianshen/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

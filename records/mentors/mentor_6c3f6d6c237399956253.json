@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_211f027b646563cf9de2"
+      ],
+      "ended_at": null,
+      "id": "aff_eb75f0334be0db3e0a26",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/gyyang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_211f027b646563cf9de2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eb75f0334be0db3e0a26",
+      "claim_ids": [
+        "claim_211f027b646563cf9de2"
+      ],
+      "is_primary": true,
+      "normalized_value": "yang.list@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/gyyang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yang.list@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_211f027b646563cf9de2"
+    ],
+    "email": [
+      "claim_211f027b646563cf9de2"
+    ],
+    "name": [
+      "claim_211f027b646563cf9de2"
+    ],
+    "profile_url": [
+      "claim_211f027b646563cf9de2"
+    ],
+    "recent_papers": [
+      "claim_211f027b646563cf9de2"
+    ],
+    "research_directions": [
+      "claim_211f027b646563cf9de2"
+    ],
+    "status": [
+      "claim_211f027b646563cf9de2"
+    ],
+    "title": [
+      "claim_211f027b646563cf9de2"
+    ]
+  },
+  "id": "mentor_6c3f6d6c237399956253",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_211f027b646563cf9de2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨冠羽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eb75f0334be0db3e0a26",
+      "claim_ids": [
+        "claim_211f027b646563cf9de2"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/gyyang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "【IEEE-TCSVT 2026】Xia JH, Zhang XL, He YT, Qi YL, Hu YT, Haigron P, Tang CX, Zhang LJ*, Yang GY*. (2025). AEGIS: Using Conditional Multi-View Diffusion Model to Achieve Angiographic Enhancement in Non-Contrast CT. IEEE Transactions on Circuits and Systems for Video Technology, 2026, online",
+    "【IEEE-RBME 2026】Zhang Y, Zhang XF, Qi XM, Chen F, Yang GY*, Fu HZ*. Content Generation Models in Computational Pathology: A Comprehensive Survey on Methods, Applications, and Challenges. IEEE Reviews in Biomedical Engineering, 2026, 19:374-395.",
+    "【MedIA 2025】Zhang Y, Chen F, Qi YL, Yang GY*, Fu HZ* (2025). PathFL: Multi-alignment Federated Learning for pathology image segmentation. Medical Image Analysis,105:103670, 2025.",
+    "【中国图象图形学报 2025】魏然,戚晓明,何宇霆,江升,钱雯,徐怡,祝因苏, Pascal Haigron,舒华忠,杨冠羽*. 基于知识蒸馏与互信息的多模态MRI疾病预后 . 中国图象图形学报,2025, 30(4): 0279-0291.",
+    "【IEEE-TPAMI 2025, CCF-A】He YT, Wang BY, Ge RJ, Chen Y, Yang GY*, Li S. Homeomorphism Prior for False Positive and Negative Problem in Medical Image Dense Contrastive Representation Learning. IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE-TPAMI), 2025. doi: 10.1109/TPAMI.2025.3540644. IF=20.8",
+    "【IEEE-TCSVT 2024】Wang T, Qi XM and Yang GY*. Polyp Segmentation via Semantic Enhanced Perceptual Network. IEEE Transactions on Circuits and Systems for Video Technology (IEEE-TCSVT), 2024, 34(12):12594-12607. IF=8.3",
+    "【IEEE-JBHI2024】Qi XM, He YT, Qi YL, Kong YY, Yang GY*, Li S. STANet: Spatio-Temporal Adaptive Network and Clinical Prior Embedding Learning for 3D+ T CMR Segmentation. IEEE Journal of Biomedical and Health Informatics (IEEE-JBHI), 2024, 28(2):881-892. IF=7.7",
+    "【IEEE-JBHI 2023】Yang GY*, He YT, Lv Y, Chen Y, Coatrieux JL, Sun XX, Wang Q, Wei, YY, Li S, Zhu YS*. Multi-Task Learning for Pulmonary Arterial Hypertension Prognosis Prediction Via Memory Drift and Prior Promp t Learning on 3D Chest CT,IEEE Journal of Biomedical and Health Informatics (IEEE-JBHI), 2023, 27(4): 1967-1978."
+  ],
+  "research_directions": [
+    "图像处理与分析、深度学习、医学人工智能、图像分割、图像配准、医学影像计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/gyyang/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

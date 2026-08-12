@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_66afba5933754e19be98"
+      ],
+      "ended_at": null,
+      "id": "aff_645dae4eb6c0eeb1eafa",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/sfyang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_66afba5933754e19be98"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_645dae4eb6c0eeb1eafa",
+      "claim_ids": [
+        "claim_66afba5933754e19be98"
+      ],
+      "is_primary": true,
+      "normalized_value": "sfyang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/sfyang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sfyang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_66afba5933754e19be98"
+    ],
+    "email": [
+      "claim_66afba5933754e19be98"
+    ],
+    "name": [
+      "claim_66afba5933754e19be98"
+    ],
+    "profile_url": [
+      "claim_66afba5933754e19be98"
+    ],
+    "recent_papers": [
+      "claim_66afba5933754e19be98"
+    ],
+    "research_directions": [
+      "claim_66afba5933754e19be98"
+    ],
+    "status": [
+      "claim_66afba5933754e19be98"
+    ],
+    "title": [
+      "claim_66afba5933754e19be98"
+    ]
+  },
+  "id": "mentor_556da9b8b3d50968ea0a",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_66afba5933754e19be98"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨绍富"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_645dae4eb6c0eeb1eafa",
+      "claim_ids": [
+        "claim_66afba5933754e19be98"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/sfyang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "K. Che, H. Qu, S. Yang*, and W. Xu, Fully asynchronous delayed gradient tracking over directed networks, IEEE Transactions on Signal and Information Processing over Networks, 2026, accepted.",
+    "K. Che, S. Yang*, and H. Qu, Decentralized bilevel optimization beyond the singleton lower-level with the penalty method, IEEE/CAA Journal of Automatica Sinica, 2026, accepted.",
+    "L. Wang, S. Yang*, Y. Wan, W. Xu, and M.-L. Zhang, Privacy preserving decentralized learning with positive-incentive noise, IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 48, no. 7, pp. 8520-8534, 2026.",
+    "L. Wang, L. Guo, S. Yang*, and X. Shi, Differentially private decentralized optimization with relay communication, IEEE Transactions on Information Forensics and Security, vol. 20, pp. 724-736, 2025.",
+    "X. Zhou, Y. Yuan, S. Yang*, and J. Hao, MENTOR: Guiding hierarchical reinforcement learning with human feedback and dynamic distance constraint, IEEE Transactions on Emerging Topics in Computational Intelligence, vol. 9, no. 2, pp. 1292-1306, 2025.",
+    "W. Xu, Z. Wang, S. Yang*, and W. Yu, Data-driven adaptive consensus for general linear multi-agent systems: A fully distributed protocol, Automatica, vol. 174, p. 112126, 2025. (Regular Paper)",
+    "Z. Zhang, S. Yang*, W. Xu, and K. Di, Privacy-preserving distributed ADMM with event-triggered communication, IEEE Transactions on Neural Networks and Learning Systems, vol. 35, no. 2, pp. 2835-2847, 2024."
+  ],
+  "research_directions": [
+    "多智能体强化学习",
+    "分布式优化与博弈"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/sfyang/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

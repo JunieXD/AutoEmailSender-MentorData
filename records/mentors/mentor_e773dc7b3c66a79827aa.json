@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1a7700753028fa61e887"
+      ],
+      "ended_at": null,
+      "id": "aff_31ccf8015ffc31c45614",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/chongzhihong/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1a7700753028fa61e887"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_31ccf8015ffc31c45614",
+      "claim_ids": [
+        "claim_1a7700753028fa61e887"
+      ],
+      "is_primary": true,
+      "normalized_value": "chongzhihong@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/chongzhihong/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chongzhihong@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1a7700753028fa61e887"
+    ],
+    "email": [
+      "claim_1a7700753028fa61e887"
+    ],
+    "name": [
+      "claim_1a7700753028fa61e887"
+    ],
+    "profile_url": [
+      "claim_1a7700753028fa61e887"
+    ],
+    "research_directions": [
+      "claim_1a7700753028fa61e887"
+    ],
+    "status": [
+      "claim_1a7700753028fa61e887"
+    ],
+    "title": [
+      "claim_1a7700753028fa61e887"
+    ]
+  },
+  "id": "mentor_e773dc7b3c66a79827aa",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1a7700753028fa61e887"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "崇志宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_31ccf8015ffc31c45614",
+      "claim_ids": [
+        "claim_1a7700753028fa61e887"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/chongzhihong/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能的数学基础和应用技术、神经网络计算的数据科学与系统、互联网与去中心化计算/区块链"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/chongzhihong/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_30d1d59e418169880e5c"
+      ],
+      "ended_at": null,
+      "id": "aff_1787a3807e77bc1da6ec",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/shuaiwang_iot/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_30d1d59e418169880e5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1787a3807e77bc1da6ec",
+      "claim_ids": [
+        "claim_30d1d59e418169880e5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuaiwang_iot@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/shuaiwang_iot/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shuaiwang_iot@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_30d1d59e418169880e5c"
+    ],
+    "email": [
+      "claim_30d1d59e418169880e5c"
+    ],
+    "name": [
+      "claim_30d1d59e418169880e5c"
+    ],
+    "profile_url": [
+      "claim_30d1d59e418169880e5c"
+    ],
+    "recent_papers": [
+      "claim_30d1d59e418169880e5c"
+    ],
+    "research_directions": [
+      "claim_30d1d59e418169880e5c"
+    ],
+    "status": [
+      "claim_30d1d59e418169880e5c"
+    ],
+    "title": [
+      "claim_30d1d59e418169880e5c"
+    ]
+  },
+  "id": "mentor_e7ad9060a6b2a09fe96e",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_30d1d59e418169880e5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王帅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1787a3807e77bc1da6ec",
+      "claim_ids": [
+        "claim_30d1d59e418169880e5c"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/shuaiwang_iot/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "[SenSys'25]UMusic: In-car Occupancy Sensing via High-resolution UWB Power Delay Profile(Best Paper Award Nomination)",
+    "[Ubicomp'25]WULoc: Achieving Extremely Long-range High-precision Localization via Wi-Fi-UWB Connection",
+    "[Ubicomp'25]mmSpyVR: Exploiting mmWave Radar for Penetrating Obstacles to Uncover Privacy Vulnerability Of Virtual Reality",
+    "[SIGKDD'25]ProST: Prompt Future Snapshot on Dynamic Graphs for Spatio-Temporal Prediction",
+    "[AAAI'25]DigimonGPT: An Evolvable Agent with Hierarchical Human-like Memory for Video Question Answering",
+    "[GlobeCom'25]NN-Chirp: Neural Network Defined Chirp Spread Spectrum Modulator",
+    "[ICPADS'25]NN-Pulse: Neural Network Defined Pulse Modulator",
+    "[ICPADS'25]EdgeSched: Adaptive User-space Scheduling for Serverless Functions in Edge Computing"
+  ],
+  "research_directions": [
+    "具身智能系统及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/shuaiwang_iot/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

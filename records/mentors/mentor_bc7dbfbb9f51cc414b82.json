@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9fcf9021cbc0bfa4bf43"
+      ],
+      "ended_at": null,
+      "id": "aff_65d29869c58af443d382",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/fdong/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9fcf9021cbc0bfa4bf43"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_65d29869c58af443d382",
+      "claim_ids": [
+        "claim_9fcf9021cbc0bfa4bf43"
+      ],
+      "is_primary": true,
+      "normalized_value": "fdong@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/fdong/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fdong@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ],
+    "email": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ],
+    "name": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ],
+    "profile_url": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ],
+    "recent_papers": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ],
+    "research_directions": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ],
+    "status": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ],
+    "title": [
+      "claim_9fcf9021cbc0bfa4bf43"
+    ]
+  },
+  "id": "mentor_bc7dbfbb9f51cc414b82",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9fcf9021cbc0bfa4bf43"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "东方"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_65d29869c58af443d382",
+      "claim_ids": [
+        "claim_9fcf9021cbc0bfa4bf43"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/fdong/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "AccSI: Accelerating Serverless Inference via Edge-Assisted Pipelined Model Fetching. IEEE Transactions on Mobile Computing, 2026.",
+    "Joint Optimization of DNN Model Caching and Request Routing in Mobile Edge Computing. IEEE Transactions on Networking, 2026.",
+    "MixServe: An Automatic Distributed Serving System for MoE Models with Hybrid Parallelism Based on Fused Communication Algorithm. IEEE ICDCS 2026.",
+    "CAGS: Color-Adaptive Volumetric Video Streaming with Dynamic 3D Gaussian Splatting. ACM SIGGRAPH 2026.",
+    "CODEA: Online Container Deployment and EdgeAssociation for Multi-Edge Federated Synergy Learning. IEEE Transactions on Mobile Computing, 2026.",
+    "Balloon: An Adaptive Indexing System for Distributed Collaborative Edge Data Query. IEEE Transactions on Mobile Computing, 2026.",
+    "Decentralizing Compressed Sensing for Federated Learning with Hardware–software Codesign. IEEE INFOCOM2026.",
+    "Enabling Efficient Synergistic Multi-view Inference across Heterogeneous Edge Devices. ACM Transactions on Sensor Networks, 2025."
+  ],
+  "research_directions": [
+    "边缘计算与边缘智能",
+    "软硬协同的机器学习执行优化",
+    "虚拟化资源管理",
+    "工业互联网智能云端协作"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/fdong/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

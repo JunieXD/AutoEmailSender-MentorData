@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f11b5fb474e3479ae2b8"
+      ],
+      "ended_at": null,
+      "id": "aff_152f2c5d2f6d0f6984dd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/rfbai/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f11b5fb474e3479ae2b8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_152f2c5d2f6d0f6984dd",
+      "claim_ids": [
+        "claim_f11b5fb474e3479ae2b8"
+      ],
+      "is_primary": true,
+      "normalized_value": "rfbai@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/rfbai/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "rfbai@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f11b5fb474e3479ae2b8"
+    ],
+    "email": [
+      "claim_f11b5fb474e3479ae2b8"
+    ],
+    "name": [
+      "claim_f11b5fb474e3479ae2b8"
+    ],
+    "profile_url": [
+      "claim_f11b5fb474e3479ae2b8"
+    ],
+    "recent_papers": [
+      "claim_f11b5fb474e3479ae2b8"
+    ],
+    "research_directions": [
+      "claim_f11b5fb474e3479ae2b8"
+    ],
+    "status": [
+      "claim_f11b5fb474e3479ae2b8"
+    ],
+    "title": [
+      "claim_f11b5fb474e3479ae2b8"
+    ]
+  },
+  "id": "mentor_31626c4f8822e941673d",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f11b5fb474e3479ae2b8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "白如帆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_152f2c5d2f6d0f6984dd",
+      "claim_ids": [
+        "claim_f11b5fb474e3479ae2b8"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/rfbai/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "On the Computation of Mixed Strategies for Security Games with General Defending Requirements",
+    "Hyper-relational interaction modeling in multi-modal trajectory prediction for intelligent connected vehicles in smart cites",
+    "Resource-limited Network Security Games with General Contagious Attacks",
+    "Stackelberg Security Games with Contagious Attacks on a Network: Reallocation to the Rescue",
+    "Multi-agent Online Scheduling: MMS Allocations for Indivisible Items",
+    "Mixed Strategies for Security Games with General Defending Requirements",
+    "Defending against Contagious Attacks on a Network with Resource Reallocation",
+    "Preserving Dynamic Attention for Long-Term Spatial-Temporal Prediction"
+  ],
+  "research_directions": [
+    "算法博弈论,资源优化分配,强化学习,时空数据挖掘,多智能体系统,(资源及任务)公平分配"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/rfbai/main.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

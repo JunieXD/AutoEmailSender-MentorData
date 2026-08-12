@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ee73c6f31aeeea2a0aa2"
+      ],
+      "ended_at": null,
+      "id": "aff_707a64fc5feca3615948",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/xzhang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ee73c6f31aeeea2a0aa2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_707a64fc5feca3615948",
+      "claim_ids": [
+        "claim_ee73c6f31aeeea2a0aa2"
+      ],
+      "is_primary": true,
+      "normalized_value": "x.zhang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xzhang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "x.zhang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ee73c6f31aeeea2a0aa2"
+    ],
+    "email": [
+      "claim_ee73c6f31aeeea2a0aa2"
+    ],
+    "name": [
+      "claim_ee73c6f31aeeea2a0aa2"
+    ],
+    "profile_url": [
+      "claim_ee73c6f31aeeea2a0aa2"
+    ],
+    "recent_papers": [
+      "claim_ee73c6f31aeeea2a0aa2"
+    ],
+    "research_directions": [
+      "claim_ee73c6f31aeeea2a0aa2"
+    ],
+    "status": [
+      "claim_ee73c6f31aeeea2a0aa2"
+    ]
+  },
+  "id": "mentor_0f06a41d889774eab5c7",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ee73c6f31aeeea2a0aa2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张祥"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_707a64fc5feca3615948",
+      "claim_ids": [
+        "claim_ee73c6f31aeeea2a0aa2"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xzhang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xiang Zhang, Erjing Lin, Yulian Lv. Multi-Target Search on Semantic Associations in Linked Data. International Journal on Semantic Web and Information Systems, 14(1):71-97, 2018.",
+    "Xiang Zhang, Erjing Lin, Siyao Pi. Predicting Object Types in Linked Data by Text Classification. The 5th International Conference on Advanced Cloud and Big Data (CBD2017). 391-396, 2017.",
+    "Xiang Zhang, Yulian Lv. Towards Multi-Target Search of Semantic Association. In Proceedings of the 6th Joint International Semantic Technology Conference (JIST2016). 236-244, 2016.",
+    "Xiang Zhang, Yulian Lv, Erjing Lin. Object Clustering in Linked Data using Centrality. In Proceedings of China Conference on Knowledge Graph and Semantic Computing (CCKS2016). 1-12, 2016.",
+    "Xiang Zhang, Wenyao Cheng. Pattern Mining in Linked Data by Edge-labeling. Journal of Tsinghua Science and Technology. 21(2):168-175, 2016.",
+    "Xiang Zhang, Xing Li, Yunqing Wen, Kai Shen, Jingkun Hao. Building virtual ontologies in semantic web. Journal of Southeast University. 45-4, 652-656, 2015.",
+    "Yunqing Wen, Xiang Zhang, Kai Shen, Peng Wang. Towards Building Virtual Vocabularies in the Semantic Web. In Proceedings of the 9th International Conference on Advanced Data Mining and Applications (ADMA2013). 2013, 193-204.",
+    "Wenbo Zhang, Xiang Zhang, Yuming Qian, Chao Xing, Peng Wang. Access Control Models for Information Retrieval in Social Network. Journal of Computational Information Systems. 2013, 9(16):6511-6518."
+  ],
+  "research_directions": [
+    "大语言模型,人工智能与生物医学交叉应用,知识图谱"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xzhang/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

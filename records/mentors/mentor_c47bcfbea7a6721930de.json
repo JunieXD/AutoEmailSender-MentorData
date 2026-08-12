@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b80c89eed8f8346f655c"
+      ],
+      "ended_at": null,
+      "id": "aff_3cecc198e812ed442f36",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/xianqiang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b80c89eed8f8346f655c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3cecc198e812ed442f36",
+      "claim_ids": [
+        "claim_b80c89eed8f8346f655c"
+      ],
+      "is_primary": true,
+      "normalized_value": "xianqiang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xianqiang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xianqiang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b80c89eed8f8346f655c"
+    ],
+    "email": [
+      "claim_b80c89eed8f8346f655c"
+    ],
+    "name": [
+      "claim_b80c89eed8f8346f655c"
+    ],
+    "profile_url": [
+      "claim_b80c89eed8f8346f655c"
+    ],
+    "research_directions": [
+      "claim_b80c89eed8f8346f655c"
+    ],
+    "status": [
+      "claim_b80c89eed8f8346f655c"
+    ],
+    "title": [
+      "claim_b80c89eed8f8346f655c"
+    ]
+  },
+  "id": "mentor_c47bcfbea7a6721930de",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b80c89eed8f8346f655c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "包贤强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3cecc198e812ed442f36",
+      "claim_ids": [
+        "claim_b80c89eed8f8346f655c"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xianqiang/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医疗机器人、具身智能、人工智能交叉、多模态感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xianqiang/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a24826da7cc584fb6f16"
+      ],
+      "ended_at": null,
+      "id": "aff_9a3d276f164db6e7e015",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/xiangliu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_a24826da7cc584fb6f16"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9a3d276f164db6e7e015",
+      "claim_ids": [
+        "claim_a24826da7cc584fb6f16"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiangliu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xiangliu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiangliu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a24826da7cc584fb6f16"
+    ],
+    "email": [
+      "claim_a24826da7cc584fb6f16"
+    ],
+    "name": [
+      "claim_a24826da7cc584fb6f16"
+    ],
+    "profile_url": [
+      "claim_a24826da7cc584fb6f16"
+    ],
+    "recent_papers": [
+      "claim_a24826da7cc584fb6f16"
+    ],
+    "research_directions": [
+      "claim_a24826da7cc584fb6f16"
+    ],
+    "status": [
+      "claim_a24826da7cc584fb6f16"
+    ]
+  },
+  "id": "mentor_19fb360c088759ae7090",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a24826da7cc584fb6f16"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘翔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9a3d276f164db6e7e015",
+      "claim_ids": [
+        "claim_a24826da7cc584fb6f16"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xiangliu/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Budget Feasible Mechanisms: A Survey (IJCAI)",
+    "B2-bandit: Budgeted pricing with blocking workers in crowdsourcing under uncertainty. IEEE Journal on Selected Areas in Communications (JSAC)",
+    "Budget-feasible mechanisms for proportionally selecting agents from groups. Artificial Intelligence (AIJ)",
+    "Budget-feasible sybil-proof mechanisms for crowdsensing. Theoretical Computer Science",
+    "Communication-topology preserving motion planning: Enabling static routing in uav networks. ACM Transactions on Sensor Networks (TOSN)",
+    "Structural credit assignment-guided coordinated mcts: An efficient and scalable method for online multiagent planning. In International conference on autonomous agents and multiagent systems (AAMAS)",
+    "Budget-feasible mechanisms in two-sided crowdsensing markets: Truthfulness, fairness, and efficiency. IEEE Transactions on Mobile Computing (TMC)",
+    "Budget-feasible mechanisms for representing groups of agents proportionally. In Proceedings of the 27th international joint conference on artificial intelligence (IJCAI)"
+  ],
+  "research_directions": [
+    "算法博弈论,拍卖机制设计,多智能体系统,强化学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xiangliu/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}

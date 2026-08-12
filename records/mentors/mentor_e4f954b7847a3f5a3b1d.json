@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ef4302ed1b86c088b03a"
+      ],
+      "ended_at": null,
+      "id": "aff_e862709ba1ffbf5a10bd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/zhutongxin/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ef4302ed1b86c088b03a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e862709ba1ffbf5a10bd",
+      "claim_ids": [
+        "claim_ef4302ed1b86c088b03a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhutongxin@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/zhutongxin/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhutongxin@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ef4302ed1b86c088b03a"
+    ],
+    "email": [
+      "claim_ef4302ed1b86c088b03a"
+    ],
+    "name": [
+      "claim_ef4302ed1b86c088b03a"
+    ],
+    "profile_url": [
+      "claim_ef4302ed1b86c088b03a"
+    ],
+    "recent_papers": [
+      "claim_ef4302ed1b86c088b03a"
+    ],
+    "research_directions": [
+      "claim_ef4302ed1b86c088b03a"
+    ],
+    "status": [
+      "claim_ef4302ed1b86c088b03a"
+    ],
+    "title": [
+      "claim_ef4302ed1b86c088b03a"
+    ]
+  },
+  "id": "mentor_e4f954b7847a3f5a3b1d",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ef4302ed1b86c088b03a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱同鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e862709ba1ffbf5a10bd",
+      "claim_ids": [
+        "claim_ef4302ed1b86c088b03a"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/zhutongxin/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Optimized Task Offloading and Result Caching in Compute-Storage Cooperative Edge Networks",
+    "A Group-Centric Framework for Task Offloading Scheduling in Industrial Edge Computing Networks with Incomplete Information",
+    "Competition-Driven Coalition Formation Enabling Collaborative DAG Task Scheduling in Edge Computing",
+    "Task Offloading Scheduling for Mobile Edge Computing Networks with Incomplete Edge Information",
+    "Group-Centric Scheduling for Industrial Edge Computing Networks with Incomplete Information",
+    "AoI Minimization Data Collection Scheduling for Battery-Free Wireless Sensor Networks",
+    "Data Aggregation Scheduling in Battery-Free Wireless Sensor Networks",
+    "Correlation Aware Scheduling for Edge-Enabled Industrial Internet of Things"
+  ],
+  "research_directions": [
+    "物联网、边缘计算、调度优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/zhutongxin/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

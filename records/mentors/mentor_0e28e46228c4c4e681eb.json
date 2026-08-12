@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_85063e3cc44def7181ad"
+      ],
+      "ended_at": null,
+      "id": "aff_502a78097fbf8076c983",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/jswu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_85063e3cc44def7181ad"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_502a78097fbf8076c983",
+      "claim_ids": [
+        "claim_85063e3cc44def7181ad"
+      ],
+      "is_primary": true,
+      "normalized_value": "jswu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/jswu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jswu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_85063e3cc44def7181ad"
+    ],
+    "email": [
+      "claim_85063e3cc44def7181ad"
+    ],
+    "name": [
+      "claim_85063e3cc44def7181ad"
+    ],
+    "profile_url": [
+      "claim_85063e3cc44def7181ad"
+    ],
+    "recent_papers": [
+      "claim_85063e3cc44def7181ad"
+    ],
+    "research_directions": [
+      "claim_85063e3cc44def7181ad"
+    ],
+    "status": [
+      "claim_85063e3cc44def7181ad"
+    ],
+    "title": [
+      "claim_85063e3cc44def7181ad"
+    ]
+  },
+  "id": "mentor_0e28e46228c4c4e681eb",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_85063e3cc44def7181ad"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "伍家松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_502a78097fbf8076c983",
+      "claim_ids": [
+        "claim_85063e3cc44def7181ad"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/jswu/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "FocusKG: A novel multimodal knowledge graph dataset with temporal information for link prediction. IEEE Transactions on Knowledge and Data Engineering,2026, 38(8): 5113-5126.",
+    "Multimodal entity linking with dynamic modality selection and interactive prompt learning. IEEE Transactions on Knowledge and Data Engineering, 2025, 37(9): 5467-5480.",
+    "SCL: Semantic coherence learning for video question answering. IEEE Transactions on Multimedia, 2026, doi: 10.1109/TMM.2026.3668493.",
+    "Multiscale low-frequency memory network for improved feature extraction in convolutional neural networks. The 38th AAAI Conference on Artificial Intelligence (AAAI), Vancouver, Canada, 2024, 5967-5975.",
+    "Multimodal entity linking via vib-based mixture of experts and efficient entropy-driven LLM refinement. ACMMM, 2026, Accepted.",
+    "Collaborative aware bidirectional semantic reasoning for video question answering. IEEE Transactions on Circuits and Systems for Video Technology, 2025, 35(3): 2074-2086.",
+    "Improving End-to-end Sign Language Translation with Adaptive Video Representation Enhanced Transformer. IEEE Transactions on Circuits and Systems for Video Technology, 2024, 34(9): 8327-8342.",
+    "Wavelet-Based Dual-Task Network. IEEE Transactions on Neural Networks and Learning Systems, 2025, doi: 10.1109/TNNLS.2024.3486330."
+  ],
+  "research_directions": [
+    "多模态深度学习,信号与图像处理, 疾病辅助诊疗系统研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/jswu/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

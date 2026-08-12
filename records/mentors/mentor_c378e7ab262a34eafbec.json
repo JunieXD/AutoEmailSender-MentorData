@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e8b30843fcde241f10e5"
+      ],
+      "ended_at": null,
+      "id": "aff_dc8bd7f031d11f1b4944",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/gcliu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e8b30843fcde241f10e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dc8bd7f031d11f1b4944",
+      "claim_ids": [
+        "claim_e8b30843fcde241f10e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "gc-liu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/gcliu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gc-liu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e8b30843fcde241f10e5"
+    ],
+    "email": [
+      "claim_e8b30843fcde241f10e5"
+    ],
+    "name": [
+      "claim_e8b30843fcde241f10e5"
+    ],
+    "profile_url": [
+      "claim_e8b30843fcde241f10e5"
+    ],
+    "recent_papers": [
+      "claim_e8b30843fcde241f10e5"
+    ],
+    "research_directions": [
+      "claim_e8b30843fcde241f10e5"
+    ],
+    "status": [
+      "claim_e8b30843fcde241f10e5"
+    ],
+    "title": [
+      "claim_e8b30843fcde241f10e5"
+    ]
+  },
+  "id": "mentor_c378e7ab262a34eafbec",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e8b30843fcde241f10e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘光迟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dc8bd7f031d11f1b4944",
+      "claim_ids": [
+        "claim_e8b30843fcde241f10e5"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/gcliu/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "MIMO-LP: A Multi-Input Multi-Output Framework for Subgraph-based Link Prediction",
+    "A Needle in a Haystack: Defending Federated Learning Backdoor Attacks via Orthogonal Subnetwork Pruning",
+    "Authority Backdoor: A Certifiable Backdoor Mechanism for Authoring DNNs",
+    "Descriptors of Exposure: Undermining Tor Anonymity through Exploiting Descriptor Flood",
+    "Cease at the Ultimate Goodness: Towards Efficient Website Fingerprinting Defense via Iterative Mutual Information Minimization",
+    "Time will Tell: Large-scale De-anonymization of Hidden I2P Services via Live Behavior Alignment",
+    "Towards Flexible MCU Peripheral Emulation",
+    "TORCHLIGHT: Shedding LIGHT on Real-World Attacks on Cloudless IoT Devices Concealed within the Tor Network"
+  ],
+  "research_directions": [
+    "AI for Cyber Security, Security for AI, 网络空间安全,图学习,多模态表示学习, AI for Cyber Science, Graph Learning, Multimodal Learning, and Natrual Language Processing"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/gcliu/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

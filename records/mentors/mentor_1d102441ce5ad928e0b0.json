@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4402fe00467a6af8d7ab"
+      ],
+      "ended_at": null,
+      "id": "aff_8d515bfb2509be91451a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/tianxingwu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4402fe00467a6af8d7ab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8d515bfb2509be91451a",
+      "claim_ids": [
+        "claim_4402fe00467a6af8d7ab"
+      ],
+      "is_primary": true,
+      "normalized_value": "tianxingwu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/tianxingwu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tianxingwu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4402fe00467a6af8d7ab"
+    ],
+    "email": [
+      "claim_4402fe00467a6af8d7ab"
+    ],
+    "name": [
+      "claim_4402fe00467a6af8d7ab"
+    ],
+    "profile_url": [
+      "claim_4402fe00467a6af8d7ab"
+    ],
+    "research_directions": [
+      "claim_4402fe00467a6af8d7ab"
+    ],
+    "status": [
+      "claim_4402fe00467a6af8d7ab"
+    ],
+    "title": [
+      "claim_4402fe00467a6af8d7ab"
+    ]
+  },
+  "id": "mentor_1d102441ce5ad928e0b0",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4402fe00467a6af8d7ab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴天星"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8d515bfb2509be91451a",
+      "claim_ids": [
+        "claim_4402fe00467a6af8d7ab"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/tianxingwu/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "知识图谱、大语言模型、知识表示与推理、人工智能应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/tianxingwu/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

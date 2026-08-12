@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_510be7973c6b34ae5f18"
+      ],
+      "ended_at": null,
+      "id": "aff_773d89311b07064fb712",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/kongyouyong/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_510be7973c6b34ae5f18"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_773d89311b07064fb712",
+      "claim_ids": [
+        "claim_510be7973c6b34ae5f18"
+      ],
+      "is_primary": true,
+      "normalized_value": "kongyouyong@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/kongyouyong/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kongyouyong@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_510be7973c6b34ae5f18"
+    ],
+    "email": [
+      "claim_510be7973c6b34ae5f18"
+    ],
+    "name": [
+      "claim_510be7973c6b34ae5f18"
+    ],
+    "profile_url": [
+      "claim_510be7973c6b34ae5f18"
+    ],
+    "recent_papers": [
+      "claim_510be7973c6b34ae5f18"
+    ],
+    "research_directions": [
+      "claim_510be7973c6b34ae5f18"
+    ],
+    "status": [
+      "claim_510be7973c6b34ae5f18"
+    ],
+    "title": [
+      "claim_510be7973c6b34ae5f18"
+    ]
+  },
+  "id": "mentor_7dd1a4798be2a671dfd9",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_510be7973c6b34ae5f18"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孔佑勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_773d89311b07064fb712",
+      "claim_ids": [
+        "claim_510be7973c6b34ae5f18"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/kongyouyong/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "NeuroBridge: Bridging Functional and Structural Brain Networks via Neural Coupling and Consistency-Guided Dynamic Graph Learning",
+    "Multi-Scale Spatial-Temporal Attention Networks for Functional Connectome Classification",
+    "MSARAE: Multiscale Adversarial Regularized Autoencoders for Cortical Network Classification",
+    "Let Invariant Learning Inspire Neighbor-shift Generalization on Graphs",
+    "Topology-Aware Dynamic Reweighting for Distribution Shifts on Graph",
+    "HePa: Heterogeneous Graph Prompting For All-level Classification Tasks",
+    "Suit the Node Pair to the Case: A Multi-Scale Node Pair Grouping Strategy for Graph-MLP Distillation",
+    "Multi-Connectivity Representation Learning Network for Major Depressive Disorder Diagnosis"
+  ],
+  "research_directions": [
+    "人工智能(大模型)与交叉应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/kongyouyong/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

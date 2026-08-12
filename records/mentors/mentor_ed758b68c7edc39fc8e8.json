@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ac9d927528a1ec41335e"
+      ],
+      "ended_at": null,
+      "id": "aff_d038f52566fabf67f70a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/yangqs/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ac9d927528a1ec41335e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d038f52566fabf67f70a",
+      "claim_ids": [
+        "claim_ac9d927528a1ec41335e"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangqs@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/yangqs/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangqs@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ac9d927528a1ec41335e"
+    ],
+    "email": [
+      "claim_ac9d927528a1ec41335e"
+    ],
+    "name": [
+      "claim_ac9d927528a1ec41335e"
+    ],
+    "profile_url": [
+      "claim_ac9d927528a1ec41335e"
+    ],
+    "recent_papers": [
+      "claim_ac9d927528a1ec41335e"
+    ],
+    "research_directions": [
+      "claim_ac9d927528a1ec41335e"
+    ],
+    "status": [
+      "claim_ac9d927528a1ec41335e"
+    ],
+    "title": [
+      "claim_ac9d927528a1ec41335e"
+    ]
+  },
+  "id": "mentor_ed758b68c7edc39fc8e8",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ac9d927528a1ec41335e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨全胜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d038f52566fabf67f70a",
+      "claim_ids": [
+        "claim_ac9d927528a1ec41335e"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/yangqs/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "杨全胜,翟玉庆,吴强.线上线下混合式计算机综合实践类“金课”建设,计算机教育,2021,No.318(6) 52-56",
+    "江仲鸣,杨全胜. 基于异构多核SoC的LT码编码硬件化技术研究,计算机工程与科学,2020,Vol.42(12),2125-2132",
+    "杨全胜,翟玉庆,舒华忠,姜龙玉,吕倩,贯通式与虚实结合的计算机系统实践平台建设,计算机教育,2018,No.277(01) 19-24",
+    "Yang Quansheng, Lin Shanshan,Discussion and practice of computer practical MOOC,14th International Conference on Computer Science and Education,ICCSE 2019,1095-1099,Toronto,Canada,2019,8",
+    "Lin Li, Quansheng Yang, SMCFA: A Zynq-based Stacked Multi CPU-FPGA Architecture,InternationalConference on Field Programmable Technology IEEE, Xian, 2016.12",
+    "杨全胜,吴哲凯,CMCsim:一种可配置的多核模拟器2012年全国计算机体系结构学术年会 (ACA’12),西安,2012.8.25-2012.8.26",
+    "莫毓昌,杨全胜,故障树随机生成及变量排序研究,浙江大学学报2011.8.1,45(9):1539~1543",
+    "Mo Yuchang,Yang Quansheng 动态多阶段系统模块化分析Journal ofSoutheast University,2010.1.15,25(3):316~319"
+  ],
+  "research_directions": [
+    "计算机系统结构、AI算法硬件加速、可重构计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/yangqs/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

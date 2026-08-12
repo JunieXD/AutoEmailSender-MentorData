@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ffedb0831a864147a76a"
+      ],
+      "ended_at": null,
+      "id": "aff_8f65358699d169b29b70",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/seu_zzz/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ffedb0831a864147a76a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8f65358699d169b29b70",
+      "claim_ids": [
+        "claim_ffedb0831a864147a76a"
+      ],
+      "is_primary": true,
+      "normalized_value": "seu_zzz@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/seu_zzz/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "seu_zzz@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ffedb0831a864147a76a"
+    ],
+    "email": [
+      "claim_ffedb0831a864147a76a"
+    ],
+    "name": [
+      "claim_ffedb0831a864147a76a"
+    ],
+    "profile_url": [
+      "claim_ffedb0831a864147a76a"
+    ],
+    "research_directions": [
+      "claim_ffedb0831a864147a76a"
+    ],
+    "status": [
+      "claim_ffedb0831a864147a76a"
+    ],
+    "title": [
+      "claim_ffedb0831a864147a76a"
+    ]
+  },
+  "id": "mentor_8268767778bdc55638b4",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ffedb0831a864147a76a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张志政"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8f65358699d169b29b70",
+      "claim_ids": [
+        "claim_ffedb0831a864147a76a"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/seu_zzz/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习与知识工程",
+    "逻辑程序、论证和思辨模型、自动规划,及相关智能Agent的设计、实现、应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/seu_zzz/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

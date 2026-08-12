@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_91fa142366f0ee328e21"
+      ],
+      "ended_at": null,
+      "id": "aff_1f1eca31d2033e1bfff9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/jyzhang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_91fa142366f0ee328e21"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f1eca31d2033e1bfff9",
+      "claim_ids": [
+        "claim_91fa142366f0ee328e21"
+      ],
+      "is_primary": true,
+      "normalized_value": "j.y.zhang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/jyzhang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "j.y.zhang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_91fa142366f0ee328e21"
+    ],
+    "email": [
+      "claim_91fa142366f0ee328e21"
+    ],
+    "name": [
+      "claim_91fa142366f0ee328e21"
+    ],
+    "profile_url": [
+      "claim_91fa142366f0ee328e21"
+    ],
+    "recent_papers": [
+      "claim_91fa142366f0ee328e21"
+    ],
+    "research_directions": [
+      "claim_91fa142366f0ee328e21"
+    ],
+    "status": [
+      "claim_91fa142366f0ee328e21"
+    ],
+    "title": [
+      "claim_91fa142366f0ee328e21"
+    ]
+  },
+  "id": "mentor_0f6191a0ae146c618454",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_91fa142366f0ee328e21"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张靖阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f1eca31d2033e1bfff9",
+      "claim_ids": [
+        "claim_91fa142366f0ee328e21"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/jyzhang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Face-to-skull translation via a progressive global-local shape transform network",
+    "Selective Rank-1 Orthogonality Regularization: Rethinking Stability-Plasticity Balance in Continual Medical Image Classification",
+    "RecHCA: Hierarchical Context Awareness for One-Step Sensorless Freehand 3D Ultrasound Reconstruction",
+    "Stratum-Wise Difference Learning with deep Laplacian pyramid for semi-supervised 3D intracranial hemorrhage segmentation",
+    "CTF-DANN: IMPROVING DEPRESSION DETECTION VIA DOMAIN ADAPTATION WITH CROSS-CHANNEL TEMPORAL-FREQUENCY ATTENTION IN EEG SIGNALS",
+    "Sequence-Independent Continual Test-Time Adaptation with Mixture of Incremental Experts for Cross-Domain Segmentation",
+    "Comprehensive Generative Replay for Task-Incremental Segmentation with Concurrent Appearance and Semantic Forgetting",
+    "DC2T: Disentanglement-Guided Consolidation and Consistency Training for Semi-Supervised Cross-Site Continual Segmentation"
+  ],
+  "research_directions": [
+    "医学影像智能分析,医疗多模态大模型,高效鲁棒的深度学习理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/jyzhang/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

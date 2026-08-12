@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bf884f1cbdf3dc720c91"
+      ],
+      "ended_at": null,
+      "id": "aff_126b30b33cafffcf5d37",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/shanfeng/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bf884f1cbdf3dc720c91"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_126b30b33cafffcf5d37",
+      "claim_ids": [
+        "claim_bf884f1cbdf3dc720c91"
+      ],
+      "is_primary": true,
+      "normalized_value": "shanfeng@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/shanfeng/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shanfeng@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bf884f1cbdf3dc720c91"
+    ],
+    "email": [
+      "claim_bf884f1cbdf3dc720c91"
+    ],
+    "name": [
+      "claim_bf884f1cbdf3dc720c91"
+    ],
+    "profile_url": [
+      "claim_bf884f1cbdf3dc720c91"
+    ],
+    "recent_papers": [
+      "claim_bf884f1cbdf3dc720c91"
+    ],
+    "research_directions": [
+      "claim_bf884f1cbdf3dc720c91"
+    ],
+    "status": [
+      "claim_bf884f1cbdf3dc720c91"
+    ],
+    "title": [
+      "claim_bf884f1cbdf3dc720c91"
+    ]
+  },
+  "id": "mentor_eebb92b9a0c646558d61",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bf884f1cbdf3dc720c91"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "单冯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_126b30b33cafffcf5d37",
+      "claim_ids": [
+        "claim_bf884f1cbdf3dc720c91"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/shanfeng/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Enhancing Routing in Dynamic and Dense Networks through UWB Swarm Ranging for Embodied Intelligence",
+    "Balancing Timeliness and Accuracy: A Hybrid Data-Control Plane Framework for Volumetric DDoS Defense in IoT",
+    "SLIM+: Jointly Optimizing EIV Placement and UAV Fleet Sizing for Deadline-Driven Tasks",
+    "Ballet in Sky: Online Satellite Downlink with Joint ISL Balancing and GS Selection under Uncertainty",
+    "ODGMAC: On-demand Grouping-based MAC for Dense IoT Networks",
+    "Optimal Swarm Ranging Protocol for Dynamic and Dense Ultra-Wideband Networks",
+    "RESCUE: Opportunistic Online Scheduling of Model Retraining on Underutilized Edges",
+    "Onboard Ranging-based Relative Localization and Stability for Lightweight Aerial Swarms"
+  ],
+  "research_directions": [
+    "智能嵌入式系统、边缘智能、群体智能、具身智能体网络、规划与调度、算法设计与优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/shanfeng/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

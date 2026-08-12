@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_11c3703cd7ddc50036e4"
+      ],
+      "ended_at": null,
+      "id": "aff_38eb86bae74f7c520c20",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/yikun/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_11c3703cd7ddc50036e4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_38eb86bae74f7c520c20",
+      "claim_ids": [
+        "claim_11c3703cd7ddc50036e4"
+      ],
+      "is_primary": true,
+      "normalized_value": "yikun@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/yikun/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yikun@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_11c3703cd7ddc50036e4"
+    ],
+    "email": [
+      "claim_11c3703cd7ddc50036e4"
+    ],
+    "name": [
+      "claim_11c3703cd7ddc50036e4"
+    ],
+    "profile_url": [
+      "claim_11c3703cd7ddc50036e4"
+    ],
+    "recent_papers": [
+      "claim_11c3703cd7ddc50036e4"
+    ],
+    "research_directions": [
+      "claim_11c3703cd7ddc50036e4"
+    ],
+    "status": [
+      "claim_11c3703cd7ddc50036e4"
+    ],
+    "title": [
+      "claim_11c3703cd7ddc50036e4"
+    ]
+  },
+  "id": "mentor_b76c7bf42942558c022f",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_11c3703cd7ddc50036e4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张谊坤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_38eb86bae74f7c520c20",
+      "claim_ids": [
+        "claim_11c3703cd7ddc50036e4"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/yikun/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Target Distribution and Jacobian Prior Guided Lung Ventilation Image Synthesis with Global Semantic Enhancement. Information Fusion, Accepted.",
+    "Co-MoCo: Collaborative Learning Enabled Motion Compensation for Weight-bearing CBCT. MICCAI, Accepted.",
+    "Segmentation-Guided Accelerating Diffusion Model for Cardiac CT Motion Artifact Reduction via Limited-Angle Imaging. IEEE Transactions on Medical Imaging, 45(7): 3778-3791.",
+    "FDA-Recon: Faithful and Data-Adaptive Reconstruction for Limited-Angle CBCT. IEEE Transactions on Instrumentation and Measurement, 75: 1-13.",
+    "MVSS-PCR: A Multi-View Subsampling Approach with Prior-Constrained Reconstruction for Self-Supervised CT Denoising. IEEE Transactions on Instrumentation and Measurement, 75: 1-13.",
+    "Multi-dimensional Attention-Enhanced Reconstruction for Sparse-view CBCT. Medical Physics, 53, 2: e70299.",
+    "Spectral-X: Latent Prior Enhanced Spectral CT Restoration with Mamba-assisted X-Net. Computerized Medical Imaging and Graphics, 127, 102696.",
+    "FDA-Recon: Feature and Data Alignment Reconstruction for Sparse-view CBCT. Medical Image Analysis, 109, 103928."
+  ],
+  "research_directions": [
+    "智能医学图像重建、处理与分析,人工智能及其交叉应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/yikun/main.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

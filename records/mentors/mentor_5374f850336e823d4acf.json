@@ -1,0 +1,112 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f75e47837fb5e3b24880"
+      ],
+      "ended_at": null,
+      "id": "aff_76f095bb1e44a0fb631c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/absong/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f75e47837fb5e3b24880"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_76f095bb1e44a0fb631c",
+      "claim_ids": [
+        "claim_f75e47837fb5e3b24880"
+      ],
+      "is_primary": true,
+      "normalized_value": "absong@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/absong/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "absong@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f75e47837fb5e3b24880"
+    ],
+    "email": [
+      "claim_f75e47837fb5e3b24880"
+    ],
+    "name": [
+      "claim_f75e47837fb5e3b24880"
+    ],
+    "profile_url": [
+      "claim_f75e47837fb5e3b24880"
+    ],
+    "recent_papers": [
+      "claim_f75e47837fb5e3b24880"
+    ],
+    "research_directions": [
+      "claim_f75e47837fb5e3b24880"
+    ],
+    "status": [
+      "claim_f75e47837fb5e3b24880"
+    ],
+    "title": [
+      "claim_f75e47837fb5e3b24880"
+    ]
+  },
+  "id": "mentor_5374f850336e823d4acf",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f75e47837fb5e3b24880"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋爱波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_76f095bb1e44a0fb631c",
+      "claim_ids": [
+        "claim_f75e47837fb5e3b24880"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/absong/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Jingyi Qiu, Aibo Song, Jiahui Jin, Xiaolin Fang, Jingyi Ding, Tianbo Zhang and Jianguo Qian. Dependency-Aware Core Column Discovery for Table Understanding.The 22ND International Semantic Web Conference(ISWC2023),Nov. 6-10,2023, Athens, Greece.",
+    "Song Aibo, Peng Bowen, Qiu Jingyi,Xue Yingying , Du Mingyang.BSDP: A Novel Balanced Spark Data Partitioner.2021 IEEE 27th International Conference on Parallel and Distributed Systems( ICPADS 2021),December 14-16, 2021,Beijing, China.",
+    "Yingying Xue, Jiahui Jin, Aibo Song∗, Yingxue Zhang, Yangyang Liu and Kaixuan Wang,Relation-Based Multi-Type Aware Knowledge Graph Embedding,Neurocomputing,2021,Volume 456 , Pages 11-22",
+    "Xiaolin Gu, Wenjia Wu, Aibo Song, Ming Yang, Zhen Ling, Junzhou Luo. RF-TESI: Radio Frequency Fingerprint-based Smartphone Identification under Temperature Variation.ACM Transactions on Sensor Networks (TOSN), Volume 20,DOI10.1145/3636462.",
+    "Zhiang Wu, Aibo Song, Jie Cao, Junzhou Luo, Lu Zhang. Efficiently Translating Complex SQL Query to MapReduce Jobflow on Cloud.IEEE Transactions on Cloud Computing, 2020,8(2):508-517",
+    "Yangyang Liu, Mingyu Zhai, Jiahui Jin , Aibo Song∗, Jikeng Lin , Zhiang Wu ,Yixin Zhao,Intelligent online catastrophe assessment and preventive control via astacked denoising autoencoder,Neurocomputing, 2020, 380: 306-320",
+    "Aibo Song, Yangyang Liu , Zhiang Wu, Mingyu Zhai, Junzhou Luo. A Local Random Walk Model for Complex Networks Based on Discriminative Feature Combinations. Expert Systems With Applications 2019,118:329–339.",
+    "Aibo Song,Mingyu Zhai,Yingying Xue,Peng Chen, Mingyang Du, Yutong Wan.Query Optimization Approach with Middle Storage Layer for Spark SQL. The 22nd IEEE International Conference on Computer Supported Cooperative Work in Design (CSCWD 2018),2018.5.9-11,Nanjing."
+  ],
+  "research_directions": [
+    "云计算与大数据科学",
+    "基于智能的数据管理",
+    "知识图谱嵌入复杂逻辑查询",
+    "大数据机器学习索引",
+    "网络表格计算",
+    "无监督目标跟踪等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/absong/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b6660823581d2003add2"
+      ],
+      "ended_at": null,
+      "id": "aff_4ab62e05e1f0732e9a88",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_b5ccd7183f019135caa7",
+      "source_url": "https://cs.seu.edu.cn/cyli/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b6660823581d2003add2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4ab62e05e1f0732e9a88",
+      "claim_ids": [
+        "claim_b6660823581d2003add2"
+      ],
+      "is_primary": true,
+      "normalized_value": "cyli@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/cyli/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cyli@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b6660823581d2003add2"
+    ],
+    "email": [
+      "claim_b6660823581d2003add2"
+    ],
+    "name": [
+      "claim_b6660823581d2003add2"
+    ],
+    "profile_url": [
+      "claim_b6660823581d2003add2"
+    ],
+    "recent_papers": [
+      "claim_b6660823581d2003add2"
+    ],
+    "research_directions": [
+      "claim_b6660823581d2003add2"
+    ],
+    "status": [
+      "claim_b6660823581d2003add2"
+    ],
+    "title": [
+      "claim_b6660823581d2003add2"
+    ]
+  },
+  "id": "mentor_2ff2c9cd2dad1b2fc219",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b6660823581d2003add2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李传佑"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4ab62e05e1f0732e9a88",
+      "claim_ids": [
+        "claim_b6660823581d2003add2"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/cyli/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Fast Human Action Recognition via Millimeter Wave Radar Point Cloud Sequences Learning",
+    "An Algorithm/Hardware Co-Optimized Method to Accelerate CNNs with Compressed Convolutional Weights on FPGA",
+    "ANNA: Accelerating Neural Network Accelerator through Software-Hardware Co-design for Vertical Applications in Edge Systems",
+    "A High-Performance Convolution Block Oriented Accelerator for MBConv-Based CNNs",
+    "WSGP: A Window-based Streaming Graph Partitioning Approach",
+    "A variable neighborhood search algorithm for energy conscious task scheduling in heterogeneous computing systems",
+    "Feature Fusion Based Subgraph Classification for Link Prediction",
+    "Interval Job Scheduling with Machine Launch Cost"
+  ],
+  "research_directions": [
+    "System for AI, AI for System, Simulation, AI-driven decision-making"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/cyli/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

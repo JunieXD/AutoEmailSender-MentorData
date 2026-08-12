@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ce469e3d7af27866ba3e"
+      ],
+      "ended_at": null,
+      "id": "aff_96fc0823a055d76ca3f9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_49147e486e81435bf164",
+      "source_url": "https://cs.seu.edu.cn/xuji/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ce469e3d7af27866ba3e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96fc0823a055d76ca3f9",
+      "claim_ids": [
+        "claim_ce469e3d7af27866ba3e"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuji@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/xuji/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xuji@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ce469e3d7af27866ba3e"
+    ],
+    "email": [
+      "claim_ce469e3d7af27866ba3e"
+    ],
+    "name": [
+      "claim_ce469e3d7af27866ba3e"
+    ],
+    "profile_url": [
+      "claim_ce469e3d7af27866ba3e"
+    ],
+    "recent_papers": [
+      "claim_ce469e3d7af27866ba3e"
+    ],
+    "research_directions": [
+      "claim_ce469e3d7af27866ba3e"
+    ],
+    "status": [
+      "claim_ce469e3d7af27866ba3e"
+    ],
+    "title": [
+      "claim_ce469e3d7af27866ba3e"
+    ]
+  },
+  "id": "mentor_c2be65eff22ce3ebaf8e",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ce469e3d7af27866ba3e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "季续"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_96fc0823a055d76ca3f9",
+      "claim_ids": [
+        "claim_ce469e3d7af27866ba3e"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/xuji/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhong, Xinyun, Guojun Zhu, Li Chen, Yikun Zhang, Qianjin Feng, Xu Ji#, and Yang Chen#. 2025. “Delta-Net: Deep Dual-Domain Alternating Optimization Network for High Pitch Helical CT Reconstruction.” IEEE Transactions on Medical Imaging PP: 1–1.",
+    "Ji, X.*,Zhuo, X., Lu, Y., Mao, W., Zhu, S., Quan, G., Xi, Y., Lyu, T., & Chen, Y. (2024). Image domain multi-material decomposition noise suppression through basis transformation and selective filtering.IEEE Journal of Biomedical and Health Informatics,28(5), 2891–2903.",
+    "Kan, S., Ren, C., Liu, Z., Lu, Y., Luo, S., Ji, X.#, &Chen, Y. (2025). DuDo-RAC: Dual-domain optimization for ring artifact correction in photon counting CT.Computer Methods and Programs in Biomedicine,263, 108636–108636.",
+    "Sun, J., Liu, Y., Xi, Y., Coatrieux, G., Coatrieux, J.-L., Ji, X.#, Jiang, L.#, & Chen, Y. (2024). Multi-grained contrastive representation learning for label-efficient lesion segmentation and onset time classification of acute ischemic stroke.Medical Image Analysis,103250.",
+    "Ji, X.*, Lu, Y., Zhang, Y., Zhuo, X., Kan, S., Mao, W., Coatrieux, G., Coatrieux, J.-L., Quan, G., Xi, Y., Li, S., Lyu, T., & Chen, Y. (2024). SeNAS-net: Self-supervised noise and artifact suppression network for material decomposition in spectral CT.IEEE Transactions on Computational Imaging, Vol.10, 677–689.",
+    "Ji, X.*, Lu, Y., Zhuo, X., Zhang, Y., Zhu, S., & Chen, Y. (2023). A geometrical calibration method for C-arm CT based on a nonlinear registration model. IEEE Transactions on Instrumentation and Measurement, 72, 1–13.",
+    "Wu, Q.,Ji, X.#, Gu, Y., Xiang, J., Quan, G., Li, B., Zhu, J., Coatrieux, G., Coatrieux, J.-L., & Chen, Y#. (2023). Unsharp Structure Guided Filtering for self-supervised low-dose CT imaging. IEEE Transactions on Medical Imaging, 42(11), 3283–3294.",
+    "Ji, X.*, Gao, D., Gan, Y., Zhang, Y., Xi, Y., Quan, G., Lu, Z., & Chen, Y. (2023). A deep-learning-based method for correction of bone-induced CT beam-hardening artifacts. IEEE Transactions on Instrumentation and Measurement, Vol. 72."
+  ],
+  "research_directions": [
+    "智能图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/xuji/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

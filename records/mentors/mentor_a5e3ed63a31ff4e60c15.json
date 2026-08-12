@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f2c0854cd3827f884c87"
+      ],
+      "ended_at": null,
+      "id": "aff_c44af58ed551ec3de674",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/wangdb/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f2c0854cd3827f884c87"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c44af58ed551ec3de674",
+      "claim_ids": [
+        "claim_f2c0854cd3827f884c87"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangdb@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/wangdb/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangdb@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f2c0854cd3827f884c87"
+    ],
+    "email": [
+      "claim_f2c0854cd3827f884c87"
+    ],
+    "name": [
+      "claim_f2c0854cd3827f884c87"
+    ],
+    "profile_url": [
+      "claim_f2c0854cd3827f884c87"
+    ],
+    "research_directions": [
+      "claim_f2c0854cd3827f884c87"
+    ],
+    "status": [
+      "claim_f2c0854cd3827f884c87"
+    ],
+    "title": [
+      "claim_f2c0854cd3827f884c87"
+    ]
+  },
+  "id": "mentor_a5e3ed63a31ff4e60c15",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f2c0854cd3827f884c87"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王登豹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c44af58ed551ec3de674",
+      "claim_ids": [
+        "claim_f2c0854cd3827f884c87"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/wangdb/main.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、人工智能、可信机器学习(大模型置信度校准、多模态模型幻觉检测与缓解)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/wangdb/main.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:31:45Z"
+}

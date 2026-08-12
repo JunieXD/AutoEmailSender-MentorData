@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ec852a7bce33d9cb7eca"
+      ],
+      "ended_at": null,
+      "id": "aff_b09435159ab94b8c491c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:45Z",
+      "organization_id": "org_auto_65a0ea16121ac5fe3e77",
+      "source_url": "https://cs.seu.edu.cn/jly/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ec852a7bce33d9cb7eca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b09435159ab94b8c491c",
+      "claim_ids": [
+        "claim_ec852a7bce33d9cb7eca"
+      ],
+      "is_primary": true,
+      "normalized_value": "jly@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:45Z",
+      "source_url": "https://cs.seu.edu.cn/jly/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jly@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ec852a7bce33d9cb7eca"
+    ],
+    "email": [
+      "claim_ec852a7bce33d9cb7eca"
+    ],
+    "name": [
+      "claim_ec852a7bce33d9cb7eca"
+    ],
+    "profile_url": [
+      "claim_ec852a7bce33d9cb7eca"
+    ],
+    "recent_papers": [
+      "claim_ec852a7bce33d9cb7eca"
+    ],
+    "research_directions": [
+      "claim_ec852a7bce33d9cb7eca"
+    ],
+    "status": [
+      "claim_ec852a7bce33d9cb7eca"
+    ]
+  },
+  "id": "mentor_0fb0ab33c7d75ba3319d",
+  "last_verified_at": "2026-08-11T13:31:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ec852a7bce33d9cb7eca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜龙玉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b09435159ab94b8c491c",
+      "claim_ids": [
+        "claim_ec852a7bce33d9cb7eca"
+      ],
+      "observed_at": "2026-08-11T13:31:45Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/jly/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Q. Ma. L. Jiang*,Lambertian-based adversarial attacks on deep-learning-based underwater side-scan sonar image classification,Pattern Recognition,2023.",
+    "杨磊,黄俊达,姜龙玉*,宽带高阶子空间超短基线水下声学定位,《信号处理》,39(10),2023,1866-1878.",
+    "C.Yang, Y. Li,L. Jiang*,Foreground enhancement network for object detection in sonar images,Machine Vision and Applications,34(56),2023.",
+    "Q. Ma. L. Jiang*,Training with Noise Adversarial Network: A Generalization Method for Object Detection on Sonar Image,WACV, 2022",
+    "L. Jiang,Z. Zhang, Three-dimensional higher-order raypath separation in a shallow-water waveguide,The Journal of the Acoustical Society of America,2022.",
+    "J.Lv,L. Jiang*,Active Deep Learning Technique for Underwater Target Recognition,IEEE Oceans, 2022.",
+    "L. Jiangand W. Song, Fast raypath separation based on low-rank matrix approximation in a shallow-water waveguide,The Journal of the Acoustical Society of America, 2018.",
+    "L. Jiang, R. He, Y. Hong, J. Wu, H. Shu, Two-dimensional active raypath separation using examination of the roots of the spectrum polynomial,The Journal of the Acoustical Society of America,142(4): 408~414,2017."
+  ],
+  "research_directions": [
+    "人工智能、海洋信息智能处理,水下目标检测和识别、大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:45Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/jly/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:45Z"
+}
