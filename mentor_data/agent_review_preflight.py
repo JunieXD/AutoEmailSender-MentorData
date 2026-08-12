@@ -20,6 +20,64 @@ from .proposals import finalize_proposal_set
 from .repository import load_repository
 
 
+def _organization_changes(before: Any, after: Any) -> list[dict[str, Any]]:
+    changes: list[dict[str, Any]] = []
+    before_ids = set(before.by_id)
+    compared_fields = (
+        "type",
+        "canonical_name",
+        "parent_id",
+        "aliases",
+        "official_urls",
+        "approved_domains",
+        "status",
+        "successor_id",
+    )
+    for organization in after.organizations:
+        organization_id = organization["id"]
+        previous = before.by_id.get(organization_id)
+        changed_fields = {
+            field: {
+                "before": previous.get(field) if previous is not None else None,
+                "after": organization.get(field),
+            }
+            for field in compared_fields
+            if previous is not None and previous.get(field) != organization.get(field)
+        }
+        if previous is not None and not changed_fields:
+            continue
+        if organization_id not in before_ids:
+            action = "create"
+        elif (
+            organization.get("status") == "merged"
+            and (
+                previous.get("status") != "merged"
+                or previous.get("successor_id") != organization.get("successor_id")
+            )
+        ):
+            action = "merge"
+        elif previous.get("canonical_name") != organization.get("canonical_name"):
+            action = "rename"
+        else:
+            action = "update"
+        lineage = after.lineage(organization_id)
+        item = {
+            "action": action,
+            "id": organization_id,
+            "type": organization["type"],
+            "path": " / ".join(item["canonical_name"] for item in lineage),
+            "aliases": organization.get("aliases", []),
+            "official_urls": organization.get("official_urls", []),
+            "approved_domains": organization.get("approved_domains", []),
+            "status": organization.get("status"),
+            "successor_id": organization.get("successor_id"),
+        }
+        if changed_fields:
+            item["changed_fields"] = changed_fields
+        changes.append(item)
+    return sorted(changes, key=lambda item: (item["action"], item["path"], item["id"]))
+
+
 def _internal_pull(pull: PullSnapshot) -> InternalPull:
     return InternalPull(
         number=pull.number,
@@ -68,6 +126,7 @@ def run_preflight(
             cwd=root,
         )
         try:
+            before_registry = load_repository(candidate, schema_root=root).registry
             materialize_proposal_paths(
                 root,
                 candidate,
@@ -111,7 +170,8 @@ def run_preflight(
                     proposal_paths,
                     moderator_github_user_id=1,
                 )
-            load_repository(candidate, validate=True, schema_root=root)
+            final_data = load_repository(candidate, validate=True, schema_root=root)
+            organization_changes = _organization_changes(before_registry, final_data.registry)
             return {
                 "ok": True,
                 "checked_at": utc_now(),
@@ -123,6 +183,7 @@ def run_preflight(
                 "rejected_proposals": applied.rejected_proposals,
                 "created_organizations": applied.created_organizations,
                 "updated_organizations": applied.updated_organizations,
+                "organization_changes": organization_changes,
                 "invalid_rows": applied.invalid_rows,
                 "finalized_proposals": len(finalized),
             }

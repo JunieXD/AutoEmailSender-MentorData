@@ -552,7 +552,24 @@
     "proposal_issue_38_row_9"
   ],
   "organization_creations": [],
-  "path_corrections": [],
+  "path_corrections": [
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_38_row_60"
+      ],
+      "reason": "系所字段包含父学院前缀，与智能科学技术系是同一机构的名称变体。",
+      "source_domains": [
+        "cs.shu.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机工程与科学学院智能科学系",
+        "school": "计算机工程与科学学院",
+        "university": "上海大学"
+      },
+      "target_organization_id": "org_auto_5b0b6f02a53b26cc9ad7"
+    }
+  ],
   "pull_request_number": 39,
   "rejected_proposal_ids": [],
   "review_comment_id": 5264890420,
@@ -562,5 +579,9 @@
     "github_user_id": 107397009
   },
   "schema_version": 1,
-  "updated_organization_ids": []
+  "updated_organization_ids": [
+    "org_auto_5b0b6f02a53b26cc9ad7",
+    "org_auto_7b43577d49383bb47c32",
+    "org_auto_f6fb8183d78ed957c5d9"
+  ]
 }

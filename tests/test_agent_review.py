@@ -15,6 +15,7 @@ from mentor_data.agent_review import (
     plan_review,
     project_fields,
     proposed_organization_id,
+    university_domain_from_source,
     validate_answer,
 )
 from mentor_data.agent_review_github import GitHubReviewClient
@@ -59,6 +60,7 @@ def _plan(
     *,
     issue_number: int,
     answers: dict | None = None,
+    latest_organizations: list[dict] | None = None,
 ) -> dict:
     return plan_review(
         repository=REPOSITORY,
@@ -66,6 +68,7 @@ def _plan(
         manifest=manifest,
         manifest_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
         previous_answers=answers,
+        latest_organizations=latest_organizations,
     )
 
 
@@ -340,6 +343,133 @@ def test_new_university_home_uses_discovery_domain_not_external_profile() -> Non
     assert _source_root(group) == "https://faculty.example.edu/"
 
 
+def test_chinese_university_domain_collapses_only_edu_cn_subdomains() -> None:
+    assert university_domain_from_source("cs.shu.edu.cn") == "shu.edu.cn"
+    assert university_domain_from_source("SHU.EDU.CN.") == "shu.edu.cn"
+    assert university_domain_from_source("faculty.example.edu") == "faculty.example.edu"
+    assert university_domain_from_source("cs.example.com.cn") == "cs.example.com.cn"
+
+
+def test_similar_new_sibling_departments_require_one_human_decision(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "短名老师",
+                "short@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/short.html",
+                department="智能科学技术系",
+                profile_url="https://cs.example.edu/profiles/short.html",
+            ),
+            _row(
+                "长名老师",
+                "long@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/long.html",
+                department="计算机学院智能科学技术系",
+                profile_url="https://cs.example.edu/profiles/long.html",
+            ),
+        ],
+        number=76,
+    )
+
+    first = _plan(manifest, manifest_path, issue_number=76)
+    pending = [item for item in first["questions"] if item["status"] == "pending"]
+
+    assert len(pending) == 1
+    question = pending[0]
+    assert question["type"] == "similar_new_sibling"
+    assert question["recommendation"] == "use-canonical"
+    assert question["context"]["recommended_canonical_name"] == "智能科学技术系"
+    assert question["context"]["evidence"] == [
+        "similar_name",
+        "shared_source_directory",
+    ]
+
+    merged = _plan(
+        manifest,
+        manifest_path,
+        issue_number=76,
+        answers={
+            question["id"]: {
+                "choice": "use-canonical",
+                "canonical_name": "智能科学技术系",
+            }
+        },
+    )
+    merged_department_names = {
+        decision["levels"][-1]["canonical_name"]
+        for decision in merged["decision"]["decisions"]
+    }
+    assert merged_department_names == {"智能科学技术系"}
+    assert _apply(root, 76, merged["decision"]).created_organizations == 1
+
+    separate = _plan(
+        manifest,
+        manifest_path,
+        issue_number=76,
+        answers={question["id"]: {"choice": "keep-separate"}},
+    )
+    separate_department_names = {
+        decision["levels"][-1]["canonical_name"]
+        for decision in separate["decision"]["decisions"]
+    }
+    assert separate_department_names == {
+        "智能科学技术系",
+        "计算机学院智能科学技术系",
+    }
+
+
+def test_latest_main_organizations_override_stale_manifest_snapshot(tmp_path: Path) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "最新机构老师",
+                "latest@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/latest",
+                department="智能科学系",
+            )
+        ],
+        number=77,
+    )
+    latest_id = "org_latest_intelligence"
+    latest = [
+        {
+            "id": latest_id,
+            "type": "department",
+            "canonical_name": "智能科学系",
+            "parent_id": "org_example_cs",
+            "aliases": [],
+            "official_urls": [],
+            "approved_domains": ["example.edu"],
+            "lineage_ids": ["org_example_university", "org_example_cs", latest_id],
+            "lineage_names": ["示例大学", "计算机学院", "智能科学系"],
+        }
+    ]
+
+    draft = _plan(
+        manifest,
+        manifest_path,
+        issue_number=77,
+        latest_organizations=latest,
+    )
+
+    assert draft["summary"]["complete"] is True
+    assert draft["decision"]["decisions"][0]["levels"][-1]["organization_id"] == latest_id
+
+
 def test_preflight_reuses_trusted_review_and_finalization_pipeline(tmp_path: Path) -> None:
     root = build_test_repository(tmp_path)
     base_sha = _initialize_local_git_repository(root, tmp_path)
@@ -391,4 +521,23 @@ def test_preflight_reuses_trusted_review_and_finalization_pipeline(tmp_path: Pat
     assert result["mapped_proposals"] == 1
     assert result["finalized_proposals"] == 1
     assert result["main_sha"] == base_sha
+    assert result["organization_changes"] == [
+        {
+            "action": "update",
+            "id": "org_example_cs",
+            "type": "school",
+            "path": "示例大学 / 计算机学院",
+            "aliases": ["计算机系", "计院"],
+            "official_urls": ["https://cs.example.edu/"],
+            "approved_domains": [],
+            "status": "active",
+            "successor_id": None,
+            "changed_fields": {
+                "aliases": {
+                    "before": ["计算机系"],
+                    "after": ["计算机系", "计院"],
+                }
+            },
+        }
+    ]
     assert not list(root.parent.glob("mentor-data-agent-review-*"))

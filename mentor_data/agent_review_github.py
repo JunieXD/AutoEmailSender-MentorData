@@ -8,10 +8,13 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
+import yaml
+
 from .agent_review import AgentReviewError, PullSnapshot
 from .errors import SubmissionError
 from .internal_pulls import BRANCH_PATTERN, InternalPull, load_internal_pull
-from .organization_review import REVIEW_COMMENT_MARKER, _validate_schema
+from .organization_review import REVIEW_COMMENT_MARKER, _organization_options, _validate_schema
+from .organizations import OrganizationRegistry
 
 REPOSITORY_PATTERN = re.compile(
     r"^[A-Za-z0-9](?:[A-Za-z0-9_.-]{0,38})/[A-Za-z0-9_.-]{1,100}$"
@@ -189,6 +192,28 @@ class GitHubReviewClient:
         pull = self.get_open_batch_pull(pull_number)
         manifest, payload = self.fetch_manifest(pull)
         return pull, manifest, payload
+
+    def fetch_main_organizations(self) -> list[dict[str, Any]]:
+        completed = self._run(
+            [
+                "gh",
+                "api",
+                "-H",
+                "Accept: application/vnd.github.raw+json",
+                f"repos/{self.repository}/contents/registry/organizations.yml?ref=main",
+            ]
+        )
+        try:
+            document = yaml.safe_load(completed.stdout)
+        except yaml.YAMLError as error:
+            raise AgentReviewError(
+                "review_github_response_invalid",
+                "最新 main 的机构注册表不是有效 YAML",
+            ) from error
+        if not isinstance(document, dict):
+            raise AgentReviewError("review_github_response_invalid", "最新机构注册表格式无效")
+        _validate_schema(self.root, "organization.schema.json", document, "最新机构注册表")
+        return _organization_options(OrganizationRegistry(document["organizations"]))
 
     def fetch_for_preflight(self, pull: PullSnapshot) -> None:
         self._run(

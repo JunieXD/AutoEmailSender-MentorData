@@ -86,3 +86,51 @@ def test_submit_comment_uses_json_stdin_without_shell_interpolation(tmp_path: Pa
     assert command[-2:] == ["--input", "-"]
     assert json.loads(input_value or "{}")["body"] == body
     assert body not in command
+
+
+def test_fetch_main_organizations_returns_compact_active_options() -> None:
+    registry = """\
+schema_version: 1
+organizations:
+- id: org_example_university
+  type: university
+  canonical_name: 示例大学
+  parent_id: null
+  aliases: []
+  official_urls: [https://example.edu/]
+  approved_domains: [example.edu]
+  status: active
+  successor_id: null
+- id: org_old_school
+  type: school
+  canonical_name: 旧学院
+  parent_id: org_example_university
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: merged
+  successor_id: null
+"""
+
+    def runner(command, **kwargs):
+        return subprocess.CompletedProcess(command, 0, registry, "")
+
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=PROJECT_ROOT,
+        runner=runner,
+    )
+
+    assert client.fetch_main_organizations() == [
+        {
+            "id": "org_example_university",
+            "type": "university",
+            "canonical_name": "示例大学",
+            "parent_id": None,
+            "aliases": [],
+            "official_urls": ["https://example.edu/"],
+            "approved_domains": ["example.edu"],
+            "lineage_ids": ["org_example_university"],
+            "lineage_names": ["示例大学"],
+        }
+    ]

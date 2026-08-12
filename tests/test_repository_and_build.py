@@ -56,6 +56,43 @@ def test_pr33_school_hierarchy_repair_has_no_active_reference_to_merged_departme
     assert correction["target_organization_id"] == school_id
 
 
+def test_pr39_department_alias_and_university_domain_repair_are_consistent() -> None:
+    data = load_repository(PROJECT_ROOT)
+    university_id = "org_auto_f6fb8183d78ed957c5d9"
+    department_id = "org_auto_5b0b6f02a53b26cc9ad7"
+    duplicate_id = "org_auto_7b43577d49383bb47c32"
+
+    university = data.registry.by_id[university_id]
+    duplicate = data.registry.by_id[duplicate_id]
+    assert university["official_urls"] == ["https://shu.edu.cn/"]
+    assert university["approved_domains"] == ["shu.edu.cn"]
+    assert duplicate["status"] == "merged"
+    assert duplicate["successor_id"] == department_id
+    assert all(
+        affiliation["organization_id"] != duplicate_id
+        for mentor_record in data.mentors
+        for affiliation in mentor_record.get("affiliations", [])
+        if affiliation.get("status") == "current"
+    )
+    assert all(
+        claim_record.get("accepted", {}).get("organization_id") != duplicate_id
+        for claim_record in data.claims
+        if claim_record.get("status") == "accepted"
+    )
+
+    resolution = next(
+        item
+        for item in data.organization_review_resolutions
+        if item["id"] == "organization_review_issue_38"
+    )
+    correction = next(
+        item
+        for item in resolution["path_corrections"]
+        if item["submitted"]["department"] == "计算机工程与科学学院智能科学系"
+    )
+    assert correction["target_organization_id"] == department_id
+
+
 def test_dual_affiliation_and_multiple_current_emails_publish_primary_projection(tmp_path) -> None:
     root = build_test_repository(tmp_path)
     first = claim(

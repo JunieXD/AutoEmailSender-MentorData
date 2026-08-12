@@ -544,6 +544,7 @@ def _plan(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, An
         manifest=manifest,
         manifest_sha256=digest,
         previous_answers=previous_answers,
+        latest_organizations=client.fetch_main_organizations(),
     )
     save_draft(workspace, draft)
     result = {
@@ -617,8 +618,15 @@ def _organization_level(organization_type: str) -> str:
     return "department"
 
 
-def _organizations(args: argparse.Namespace, workspace: Path) -> dict[str, Any]:
+def _organizations(
+    args: argparse.Namespace,
+    root: Path,
+    workspace: Path,
+) -> dict[str, Any]:
     manifest = load_cached_manifest(workspace, args.pr)
+    organization_values = {item["id"]: item for item in manifest["organizations"]}
+    for item in _client(args, root).fetch_main_organizations():
+        organization_values[item["id"]] = item
     if not any((args.query, args.level, args.parent_id, args.domain)):
         raise AgentReviewError(
             "review_filter_required",
@@ -628,7 +636,7 @@ def _organizations(args: argparse.Namespace, workspace: Path) -> dict[str, Any]:
     tokens = [item.casefold() for item in (args.query or "").split() if item]
     domain = (args.domain or "").casefold().rstrip(".")
     items: list[dict[str, Any]] = []
-    for organization in manifest["organizations"]:
+    for organization in organization_values.values():
         if args.level and _organization_level(organization["type"]) != args.level:
             continue
         if args.parent_id and organization.get("parent_id") != args.parent_id:
@@ -755,6 +763,7 @@ def _answer(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, 
         manifest=manifest,
         manifest_sha256=digest,
         previous_answers=answers,
+        latest_organizations=client.fetch_main_organizations(),
     )
     save_draft(workspace, draft)
     pending = [item for item in draft["questions"] if item["status"] == "pending"]
@@ -794,10 +803,18 @@ def _decision(args: argparse.Namespace, workspace: Path) -> Any:
         return decision
     if args.view == "comment":
         return {"body": body, "characters": len(body)}
+    preflight = draft.get("preflight") or {}
+    organization_changes = preflight.get("organization_changes", [])
     return {
         "pr": args.pr,
         "groups": len(decision["decisions"]),
-        "organization_creations": len(decision.get("organization_creations", [])),
+        "organization_creations": sum(
+            item.get("action") == "create" for item in organization_changes
+        ),
+        "organization_updates": sum(
+            item.get("action") != "create" for item in organization_changes
+        ),
+        "organization_changes": organization_changes,
         "decision_sha256": canonical_json_sha256(decision),
         "comment_characters": len(body),
         "preflight_ok": draft.get("preflight", {}).get("ok") is True,
@@ -881,7 +898,7 @@ def execute_review(args: argparse.Namespace) -> int:
         elif command == "group":
             data = _group(args, workspace)
         elif command == "organizations":
-            data = _organizations(args, workspace)
+            data = _organizations(args, root, workspace)
         elif command == "invalid-rows":
             data = _invalid_rows(args, workspace)
         elif command == "questions":

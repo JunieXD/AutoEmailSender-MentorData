@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import difflib
 import hashlib
 import json
 import re
@@ -304,6 +305,32 @@ def _source_root(group: dict[str, Any]) -> str | None:
     return None
 
 
+def university_domain_from_source(domain: str) -> str:
+    """Collapse Chinese university subdomains to the institution-level edu.cn domain."""
+
+    normalized = domain.casefold().rstrip(".")
+    labels = normalized.split(".")
+    if len(labels) > 3 and labels[-2:] == ["edu", "cn"]:
+        return ".".join(labels[-3:])
+    return normalized
+
+
+def _university_source(group: dict[str, Any]) -> tuple[str | None, list[str]]:
+    domains = sorted(
+        {
+            university_domain_from_source(item)
+            for item in group.get("source_domains", [])
+            if item
+        }
+    )
+    if not domains:
+        return _source_root(group), []
+    preferred = domains[0]
+    if preferred.endswith(".edu.cn"):
+        return f"https://{preferred}/", domains
+    return _source_root(group), domains
+
+
 def _level_skip(level: str) -> dict[str, Any]:
     return {
         "level": level,
@@ -336,16 +363,15 @@ def _level_create(
     canonical_name: str,
     group: dict[str, Any],
 ) -> dict[str, Any]:
+    university_url, university_domains = _university_source(group)
     return {
         "level": level,
         "action": "create",
         "organization_id": None,
         "organization_type": organization_type,
         "canonical_name": normalize_text(canonical_name),
-        "official_url": _source_root(group) if level == "university" else None,
-        "approved_domains": (
-            sorted(set(group.get("source_domains", []))) if level == "university" else []
-        ),
+        "official_url": university_url if level == "university" else None,
+        "approved_domains": university_domains if level == "university" else [],
         "save_submitted_as_alias": False,
     }
 
@@ -463,11 +489,108 @@ def _question_options(*values: tuple[str, str, list[str]]) -> list[dict[str, Any
     ]
 
 
+def _department_name_without_parent(name: str, parent_name: str) -> str:
+    normalized_name = normalize_organization_key(name)
+    normalized_parent = normalize_organization_key(parent_name)
+    if normalized_parent and normalized_name.startswith(normalized_parent):
+        return normalized_name[len(normalized_parent) :]
+    return normalized_name
+
+
+def _names_are_similar(first: str, second: str, parent_name: str) -> bool:
+    first_key = _department_name_without_parent(first, parent_name)
+    second_key = _department_name_without_parent(second, parent_name)
+    if not first_key or not second_key or first_key == second_key:
+        return bool(first_key and second_key)
+    if first_key in second_key or second_key in first_key:
+        return True
+    return difflib.SequenceMatcher(None, first_key, second_key).ratio() >= 0.78
+
+
+def _source_directory(url: str) -> str | None:
+    parsed = urlsplit(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        return None
+    path = parsed.path or "/"
+    if not path.endswith("/"):
+        path = path.rsplit("/", 1)[0] + "/"
+    port = f":{parsed.port}" if parsed.port else ""
+    return f"{parsed.scheme.casefold()}://{parsed.hostname.casefold()}{port}{path}"
+
+
+def _similar_new_department_contexts(groups: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Return one human-review question for each potential new sibling collision."""
+
+    candidates = [
+        group
+        for group in groups
+        if infer_organization_type(
+            "department", normalize_text(group["submitted"].get("department"))
+        )
+        in LEVEL_TYPES["department"]
+    ]
+    result: dict[str, dict[str, Any]] = {}
+    for index, first in enumerate(candidates):
+        first_submitted = first["submitted"]
+        for second in candidates[index + 1 :]:
+            second_submitted = second["submitted"]
+            same_parent = all(
+                normalize_organization_key(first_submitted.get(level))
+                == normalize_organization_key(second_submitted.get(level))
+                for level in ("university", "school")
+            )
+            if not same_parent:
+                continue
+            first_name = normalize_text(first_submitted.get("department"))
+            second_name = normalize_text(second_submitted.get("department"))
+            parent_name = normalize_text(first_submitted.get("school"))
+            first_directories = {
+                directory
+                for url in first.get("source_urls", [])
+                if (directory := _source_directory(url)) is not None
+            }
+            second_directories = {
+                directory
+                for url in second.get("source_urls", [])
+                if (directory := _source_directory(url)) is not None
+            }
+            shared_directories = sorted(
+                first_directories.intersection(second_directories)
+            )
+            similar_name = _names_are_similar(first_name, second_name, parent_name)
+            if not similar_name and not shared_directories:
+                continue
+            canonical = min(
+                (first_name, second_name),
+                key=lambda item: (
+                    len(_department_name_without_parent(item, parent_name)),
+                    len(item),
+                    item,
+                ),
+            )
+            reviewed = second if second["id"] != first["id"] else first
+            result[reviewed["id"]] = {
+                "candidate_names": sorted({first_name, second_name}),
+                "recommended_canonical_name": canonical if similar_name else None,
+                "shared_source_directories": shared_directories[:3],
+                "evidence": [
+                    value
+                    for value, enabled in (
+                        ("similar_name", similar_name),
+                        ("shared_source_directory", bool(shared_directories)),
+                    )
+                    if enabled
+                ],
+            }
+    return result
+
+
 def _plan_path(
     pull_number: int,
     group: dict[str, Any],
     organizations: ManifestOrganizations,
     answers: dict[str, Any],
+    similar_new_department: dict[str, Any] | None = None,
 ) -> tuple[dict[str, Any] | None, list[dict[str, Any]], list[str], list[dict[str, Any]]]:
     questions: list[dict[str, Any]] = []
     rules: list[str] = []
@@ -672,6 +795,54 @@ def _plan_path(
             and inferred_type is not None
             and not misplaced_school_level
         )
+        if automatic_creation and level == "department" and similar_new_department:
+            recommended_name = similar_new_department.get("recommended_canonical_name")
+            question = _group_question(
+                pull_number,
+                group,
+                kind="similar_new_sibling",
+                subject="|".join(similar_new_department["candidate_names"]),
+                level=level,
+                prompt="同一父级下存在疑似重复的新机构，请确认是否合并名称",
+                reason="新机构名称相似、存在包含关系或共享同一来源页，不能自动拆分。",
+                recommendation="use-canonical" if recommended_name else "keep-separate",
+                options=_question_options(
+                    ("use-canonical", "合并为一个规范名称", ["canonical_name"]),
+                    ("keep-separate", "确认是两个不同机构", []),
+                    ("use-parent", "不创建系所并归入当前学院", []),
+                    ("reject-group", "不收录这一组", []),
+                ),
+                context=copy.deepcopy(similar_new_department),
+                answers=answers,
+            )
+            questions.append(question)
+            choice = _answer_choice(question)
+            if choice is None:
+                return None, questions, rules, creations
+            answer = question["answer"]
+            if choice == "reject-group":
+                return (
+                    _rejected_group_decision(
+                        group["id"], answer.get("reason") or "新机构关系无法确定"
+                    ),
+                    questions,
+                    rules,
+                    creations,
+                )
+            if choice == "use-parent":
+                levels.append(_level_skip(level))
+                rules.append("user_use_parent_for_similar_sibling")
+                break
+            if choice == "use-canonical":
+                value = normalize_text(answer.get("canonical_name"))
+                if not value:
+                    raise AgentReviewError("review_answer_invalid", "合并机构必须填写规范名称")
+                inferred_type = infer_organization_type(level, value)
+                if inferred_type not in LEVEL_TYPES[level]:
+                    raise AgentReviewError("review_answer_invalid", "规范名称与机构层级不匹配")
+                rules.append("user_merge_similar_sibling")
+            else:
+                rules.append("user_keep_separate_sibling")
         if automatic_creation:
             current_level = _level_create(level, inferred_type, value, group)
             levels.append(current_level)
@@ -1202,20 +1373,28 @@ def plan_review(
     manifest: dict[str, Any],
     manifest_sha256: str,
     previous_answers: dict[str, Any] | None = None,
+    latest_organizations: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
-    organizations = ManifestOrganizations(manifest["organizations"])
+    organization_values = {
+        item["id"]: copy.deepcopy(item) for item in manifest["organizations"]
+    }
+    for item in latest_organizations or []:
+        organization_values[item["id"]] = copy.deepcopy(item)
+    organizations = ManifestOrganizations(list(organization_values.values()))
     answers = copy.deepcopy(previous_answers or {})
     group_plans: list[dict[str, Any]] = []
     all_questions: list[dict[str, Any]] = []
     all_creations: list[dict[str, Any]] = []
     decisions: list[dict[str, Any]] = []
 
+    similar_new_departments = _similar_new_department_contexts(manifest["groups"])
     for group in sorted(manifest["groups"], key=lambda item: item["id"]):
         decision, questions, rules, creations = _plan_path(
             pull.number,
             group,
             organizations,
             answers,
+            similar_new_departments.get(group["id"]),
         )
         if decision is not None:
             _apply_row_questions(
