@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_565e1f87e006cf1d11a3"
+      ],
+      "ended_at": null,
+      "id": "aff_ebef3d952b5ae5d9add4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/clq1/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_565e1f87e006cf1d11a3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ebef3d952b5ae5d9add4",
+      "claim_ids": [
+        "claim_565e1f87e006cf1d11a3"
+      ],
+      "is_primary": true,
+      "normalized_value": "lqchen@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/clq1/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lqchen@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_565e1f87e006cf1d11a3"
+    ],
+    "email": [
+      "claim_565e1f87e006cf1d11a3"
+    ],
+    "name": [
+      "claim_565e1f87e006cf1d11a3"
+    ],
+    "profile_url": [
+      "claim_565e1f87e006cf1d11a3"
+    ],
+    "recent_papers": [
+      "claim_565e1f87e006cf1d11a3"
+    ],
+    "research_directions": [
+      "claim_565e1f87e006cf1d11a3"
+    ],
+    "status": [
+      "claim_565e1f87e006cf1d11a3"
+    ],
+    "title": [
+      "claim_565e1f87e006cf1d11a3"
+    ]
+  },
+  "id": "mentor_4210eafe447a174fb656",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_565e1f87e006cf1d11a3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈立全"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ebef3d952b5ae5d9add4",
+      "claim_ids": [
+        "claim_565e1f87e006cf1d11a3"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/clq1/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Image Steganalysis Based on Dual-Path Enhancement and Fractal Downsampling",
+    "Phase Shift Matrix Design With Vector Quantization in RIS-Aided Physical Layer Key Generation",
+    "Phase-Shift Matrices Optimization in STAR-RIS-Aided Physical-Layer Key Generation",
+    "Joint Design of Balance Mechanism and Compensation Strategy in K-means Clustering Assisted Physical Layer Key Generation",
+    "A Lightweight Image Forgery Prevention Scheme for IoT Using GAN-Based Steganography",
+    "DCANet: CNN model with dual-path network and improved coordinate attention for JPEG steganalysis",
+    "PUF-based dynamic secret-key strategy with hierarchical blockchain for UAV swarm authentication",
+    "Blockchain-enabled One-to-many Searchable Encryption Supporting Designated Server and Multi-keywords for Cloud IoMT"
+  ],
+  "research_directions": [
+    "移动信息安全、物联网系统与安全、云计算及大数据安全、密码与安全协议、深度学习与人工智能安全、区块链安全技术、信息隐藏与数字水印"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/clq1/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

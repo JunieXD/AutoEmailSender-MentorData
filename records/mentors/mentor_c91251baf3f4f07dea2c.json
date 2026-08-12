@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_122188b02ede193cba6e"
+      ],
+      "ended_at": null,
+      "id": "aff_9f5d5138115168340318",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/lsz/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_122188b02ede193cba6e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9f5d5138115168340318",
+      "claim_ids": [
+        "claim_122188b02ede193cba6e"
+      ],
+      "is_primary": true,
+      "normalized_value": "songzeli@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/lsz/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "songzeli@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_122188b02ede193cba6e"
+    ],
+    "email": [
+      "claim_122188b02ede193cba6e"
+    ],
+    "name": [
+      "claim_122188b02ede193cba6e"
+    ],
+    "profile_url": [
+      "claim_122188b02ede193cba6e"
+    ],
+    "recent_papers": [
+      "claim_122188b02ede193cba6e"
+    ],
+    "research_directions": [
+      "claim_122188b02ede193cba6e"
+    ],
+    "status": [
+      "claim_122188b02ede193cba6e"
+    ],
+    "title": [
+      "claim_122188b02ede193cba6e"
+    ]
+  },
+  "id": "mentor_c91251baf3f4f07dea2c",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_122188b02ede193cba6e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李松泽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9f5d5138115168340318",
+      "claim_ids": [
+        "claim_122188b02ede193cba6e"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/lsz/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "H. Hu, Y. Wu, Y. Shi, S. Li, C. Jiang, and W. Zhang, \"Communication-Efficient Coded Computing for Distributed Multi-Task Learning,\" IEEE Transactions on Communications, Apr. 2023.",
+    "T. Jahani-Nezhad, M. A. Maddah-Ali, S. Li, and G. Caire, \"Swiftagg+: Achieving asymptotically optimal communication loads in secure aggregation for federated learning,\" IEEE Journal on Selected Areas in Communications, vol. 41, no. 4, pp. 977–989, Mar. 2023.",
+    "J. Zhu, S. Li, and J. Li, \"Information-Theoretically Private Matrix Multiplication From MDS-Coded Storage,\" IEEE Transactions on Information Forensics and Security, vol. 18, pp. 1680-1695, 2023.",
+    "S. Li, D. Yao, and J. Liu, \"FedVS: Straggler-Resilient and Privacy-Preserving Vertical Federated Learning for Split Models,\" ICML, July 2023.",
+    "Y. Dai and S. Li, \"Chameleon: Adapting to Peer Images for Planting Durable Backdoors in Federated Learning,\" ICML, July 2023.",
+    "J. Shao, Y. Sun, S. Li, and J. Zhang, \"DReS-FL: Dropout-Resilient Secure Federated Learning for Non-IID Clients via Secret Data Sharing,\" NeurIPS, Nov. 2022.",
+    "J. So, C. Yang, S. Li, Q. Yu, R. E. Ali, B. Guler, and S. Avestimehr, \"LightSecAgg: A Lightweight and Versatile Design for Secure Aggregation in Federated Learning,\" Proceedings of Machine Learning and Systems 4, 2022.",
+    "C. He, S. Li, J. So, X. Zeng, M. Zhang, H. Wang, X. Wang, P. Vepakomma, A. Singh, H. Qiu, et al., \"Fedml: A Research Library and Benchmark for Federated Machine Learning,\" NeurIPS 2020 Workshop on Scalability, Privacy, and Security in Federated Learning (NeurIPS-SpicyFL 2020 Best Paper Award), 2020."
+  ],
+  "research_directions": [
+    "大语言模型及多模态大模型安全、大模型智能体安全、隐私保护、可信机器学习、安全多方计算、区块链安全及隐私"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/lsz/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

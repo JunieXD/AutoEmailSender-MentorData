@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4bd7498c2eeaca0916d8"
+      ],
+      "ended_at": null,
+      "id": "aff_ec1d7571e8ec56020590",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/cjx1/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4bd7498c2eeaca0916d8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec1d7571e8ec56020590",
+      "claim_ids": [
+        "claim_4bd7498c2eeaca0916d8"
+      ],
+      "is_primary": true,
+      "normalized_value": "jx.cao@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/cjx1/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jx.cao@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4bd7498c2eeaca0916d8"
+    ],
+    "email": [
+      "claim_4bd7498c2eeaca0916d8"
+    ],
+    "name": [
+      "claim_4bd7498c2eeaca0916d8"
+    ],
+    "profile_url": [
+      "claim_4bd7498c2eeaca0916d8"
+    ],
+    "recent_papers": [
+      "claim_4bd7498c2eeaca0916d8"
+    ],
+    "research_directions": [
+      "claim_4bd7498c2eeaca0916d8"
+    ],
+    "status": [
+      "claim_4bd7498c2eeaca0916d8"
+    ],
+    "title": [
+      "claim_4bd7498c2eeaca0916d8"
+    ]
+  },
+  "id": "mentor_c8ea8ce2b04b046b985a",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4bd7498c2eeaca0916d8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹玖新"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ec1d7571e8ec56020590",
+      "claim_ids": [
+        "claim_4bd7498c2eeaca0916d8"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/cjx1/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhou J, Zhang Z, Ying L, Chai H, Cao J and Duan H. Hey, your secrets leaked! detecting and characterizing secret leakage in the wild[C]//2025 IEEE Symposium on Security and Privacy (IEEE SP). IEEE, 2025: 449-467. (CCF A)",
+    "Ge J, Zhang X, Cao J, Zhu X, Liu W and Gao Q. Gen4track: A tuning-free data augmentation framework via self-correcting diffusion model for vision-language tracking[C]//Proceedings of the 33rd ACM International Conference on Multimedia(ACM MM). 2025: 3037-3046. (CCF A)",
+    "Wang, Kun; Cao, Jiuxin; Ge, Jiawei; Liu, Chang; Liu, Bo. Causality-inspired representation learning for weakly supervised skeleton-based action recognition[J]. Source: Knowledge-Based Systems, v 326, September 27, 2025. (中科院一区TOP)",
+    "Liu W, Cao J, Miao B, Fu Z, Zhu X, Ge J, Liu B, Nasim M and Mian A. Denoise-then-retrieve: text-conditioned video denoising for video moment retrieval[C]//Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence(IJCAI). 2025: 1612-1620. (CCF B)",
+    "Wang, Kun; Cao, Jiuxin; Ge, Jiawei; Liu, Chang; Liu, Bo. ACM Transactions on Multimedia Computing, Communications and Applications, v 21, n 4, March 11, 2025.(CCF B)",
+    "Cao B, Wu Q, Cao J, Liu B and Gui J. External reliable information-enhanced multimodal contrastive learning for fake news detection[C]//Proceedings of the AAAI Conference on Artificial Intelligence(AAAI). 2025, 39(1): 31-39. (CCF A)",
+    "Yan X, He L, Xu Y, Cao J, Wang L and Xie G. High-speed encrypted traffic classification by using payload features[J]. Digital Communications and Networks, 2025, 11(2): 412-423.(SCI)",
+    "Min H, Cao J, Zhou T and Meng Q. IPSA: A Multi-View perception model for information propagation in online social networks[J]. Big Data Mining and Analytics, 2024, 8(1): 241-256. (中科院一区)"
+  ],
+  "research_directions": [
+    "社会计算",
+    "大数据智能处理与内容安全",
+    "人工智能:自然语言智能处理与生成,视频理解、生成与搜索,图像理解、描述与分类",
+    "大数据安全与隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/cjx1/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

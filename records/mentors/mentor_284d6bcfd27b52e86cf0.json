@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e848ad8204ed1852c1fe"
+      ],
+      "ended_at": null,
+      "id": "aff_ed93862b24db454c67d9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/wzs1/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e848ad8204ed1852c1fe"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ed93862b24db454c67d9",
+      "claim_ids": [
+        "claim_e848ad8204ed1852c1fe"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanchangsheng@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/wzs1/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanchangsheng@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e848ad8204ed1852c1fe"
+    ],
+    "email": [
+      "claim_e848ad8204ed1852c1fe"
+    ],
+    "name": [
+      "claim_e848ad8204ed1852c1fe"
+    ],
+    "profile_url": [
+      "claim_e848ad8204ed1852c1fe"
+    ],
+    "recent_papers": [
+      "claim_e848ad8204ed1852c1fe"
+    ],
+    "research_directions": [
+      "claim_e848ad8204ed1852c1fe"
+    ],
+    "status": [
+      "claim_e848ad8204ed1852c1fe"
+    ],
+    "title": [
+      "claim_e848ad8204ed1852c1fe"
+    ]
+  },
+  "id": "mentor_284d6bcfd27b52e86cf0",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e848ad8204ed1852c1fe"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "万长胜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ed93862b24db454c67d9",
+      "claim_ids": [
+        "claim_e848ad8204ed1852c1fe"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/wzs1/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Auditing Images Collected by Sensors in Ambient Intelligence Systems with Privacy and High Efficiency",
+    "SCRPM: securing crowdsourcing-based road pavement monitoring system with location privacy",
+    "non-interactive privacy-preserving auditing on images in mobile crowdsourcing networks",
+    "A survey on gait recognition",
+    "TR-MCN: Light Weight Task Recommendation for Mobile Crowdsourcing Networks",
+    "Efficient identity-based data transmission for VANET",
+    "non-interactive identity-based data transmission for underwater wireless communications with anonymity and zero-knowledge",
+    "ACMHS: Efficient Access Control for Mobile Healthcare System"
+  ],
+  "research_directions": [
+    "人工智能,数据分析,应用密码学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/wzs1/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

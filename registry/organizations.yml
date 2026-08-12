@@ -2090,3 +2090,60 @@ organizations:
   successor_id: org_auto_5b0b6f02a53b26cc9ad7
   created_at: '2026-08-12T09:28:37Z'
   updated_at: '2026-08-12T09:56:52Z'
+- id: org_auto_56d49257105c0f7c37d0
+  type: university
+  canonical_name: 东南大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://seu.edu.cn/
+  approved_domains:
+  - seu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T15:55:49Z'
+  updated_at: '2026-08-12T15:55:49Z'
+- id: org_auto_5f4b7c42173e4b98e029
+  type: school
+  canonical_name: 网络空间安全学院
+  parent_id: org_auto_56d49257105c0f7c37d0
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T15:55:49Z'
+  updated_at: '2026-08-12T15:55:49Z'
+- id: org_auto_feb244f00d5fd62b56ad
+  type: department
+  canonical_name: 网络安全系
+  parent_id: org_auto_5f4b7c42173e4b98e029
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T15:55:49Z'
+  updated_at: '2026-08-12T15:55:49Z'
+- id: org_auto_1cfdef26bfb0f4ef532e
+  type: department
+  canonical_name: 智能安全系
+  parent_id: org_auto_5f4b7c42173e4b98e029
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T15:55:49Z'
+  updated_at: '2026-08-12T15:55:49Z'
+- id: org_auto_b4f5467deabad0279cdc
+  type: department
+  canonical_name: 密码科学与技术系
+  parent_id: org_auto_5f4b7c42173e4b98e029
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-12T15:55:49Z'
+  updated_at: '2026-08-12T15:55:49Z'

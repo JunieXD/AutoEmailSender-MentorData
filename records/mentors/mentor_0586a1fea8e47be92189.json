@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_652c5e09179b8ec8b94f"
+      ],
+      "ended_at": null,
+      "id": "aff_4e734a1b58e52f72c53f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_feb244f00d5fd62b56ad",
+      "source_url": "https://cyber.seu.edu.cn/msy1/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_652c5e09179b8ec8b94f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4e734a1b58e52f72c53f",
+      "claim_ids": [
+        "claim_652c5e09179b8ec8b94f"
+      ],
+      "is_primary": true,
+      "normalized_value": "siyami@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/msy1/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "siyami@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_652c5e09179b8ec8b94f"
+    ],
+    "email": [
+      "claim_652c5e09179b8ec8b94f"
+    ],
+    "name": [
+      "claim_652c5e09179b8ec8b94f"
+    ],
+    "profile_url": [
+      "claim_652c5e09179b8ec8b94f"
+    ],
+    "recent_papers": [
+      "claim_652c5e09179b8ec8b94f"
+    ],
+    "research_directions": [
+      "claim_652c5e09179b8ec8b94f"
+    ],
+    "status": [
+      "claim_652c5e09179b8ec8b94f"
+    ],
+    "title": [
+      "claim_652c5e09179b8ec8b94f"
+    ]
+  },
+  "id": "mentor_0586a1fea8e47be92189",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_652c5e09179b8ec8b94f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "米思娅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4e734a1b58e52f72c53f",
+      "claim_ids": [
+        "claim_652c5e09179b8ec8b94f"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/msy1/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "TAR: Token-Aware Refinement for Fine-grained Generalized Category Discovery",
+    "Efficient and Effective In-context Demonstration Selection with Coreset",
+    "Object Adaptive Self Supervised Dense Visual Pre Training",
+    "Temporal Segment Dropout for Human Action Video Recognition",
+    "A channel robust radio frequency fingerprint authentication method based on hadamard product comparision",
+    "LFM signal sources classification based on self-supervised learning",
+    "A Closer Look at Video Sampling for Sequential Action Recognition",
+    "LFM signal source identification based on time-frequency enhancement and residual shrinkage"
+  ],
+  "research_directions": [
+    "物理层安全,硬件安全,水声通信安全。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/msy1/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

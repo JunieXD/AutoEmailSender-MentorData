@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b7f86c5d206c20bd2c52"
+      ],
+      "ended_at": null,
+      "id": "aff_d5742db74a789d7cf263",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/hfy/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b7f86c5d206c20bd2c52"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d5742db74a789d7cf263",
+      "claim_ids": [
+        "claim_b7f86c5d206c20bd2c52"
+      ],
+      "is_primary": true,
+      "normalized_value": "101010315@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/hfy/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "101010315@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b7f86c5d206c20bd2c52"
+    ],
+    "email": [
+      "claim_b7f86c5d206c20bd2c52"
+    ],
+    "name": [
+      "claim_b7f86c5d206c20bd2c52"
+    ],
+    "profile_url": [
+      "claim_b7f86c5d206c20bd2c52"
+    ],
+    "recent_papers": [
+      "claim_b7f86c5d206c20bd2c52"
+    ],
+    "research_directions": [
+      "claim_b7f86c5d206c20bd2c52"
+    ],
+    "status": [
+      "claim_b7f86c5d206c20bd2c52"
+    ],
+    "title": [
+      "claim_b7f86c5d206c20bd2c52"
+    ]
+  },
+  "id": "mentor_c5fcffb78fd15eb420ec",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b7f86c5d206c20bd2c52"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄风义"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d5742db74a789d7cf263",
+      "claim_ids": [
+        "claim_b7f86c5d206c20bd2c52"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/hfy/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "An improved small-signal equivalent circuit for GaN high electron mobility transistors",
+    "Frequency-independent asymmetric double-πequivalent circuit for silicon on-chip spiral inductors, physics-based modeling and parameter extraction",
+    "Effect of substrate parasitic effect on silicon-based transmission lines and on-chip inductors",
+    "An Analytical Approach to Parameter Extraction for On-Chip Spiral Inductors With Double-pi Equivalent Circuit",
+    "Scalable Distributed-capacitance Model for Silicon on-chip Spiral Inductors",
+    "A Novel Analytical Approach to Parameter Extraction for on-chip Spiral Inductors Taking into account High-order Parasitic Effect",
+    "Characteristic-function approach to parameter extraction for asymmetric equivalent circuit of on-chip spiral inductors"
+  ],
+  "research_directions": [
+    "半导体器件模型研究、高速芯片系统安全研究、射频/微波集成电路研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/hfy/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

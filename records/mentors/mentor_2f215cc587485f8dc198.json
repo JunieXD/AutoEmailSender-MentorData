@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6787f407301b1af405e0"
+      ],
+      "ended_at": null,
+      "id": "aff_2dd144fd7cf9ce05cfaf",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/dhx/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6787f407301b1af405e0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2dd144fd7cf9ce05cfaf",
+      "claim_ids": [
+        "claim_6787f407301b1af405e0"
+      ],
+      "is_primary": true,
+      "normalized_value": "duanhx@tsinghua.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/dhx/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "duanhx@tsinghua.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6787f407301b1af405e0"
+    ],
+    "email": [
+      "claim_6787f407301b1af405e0"
+    ],
+    "name": [
+      "claim_6787f407301b1af405e0"
+    ],
+    "profile_url": [
+      "claim_6787f407301b1af405e0"
+    ],
+    "recent_papers": [
+      "claim_6787f407301b1af405e0"
+    ],
+    "research_directions": [
+      "claim_6787f407301b1af405e0"
+    ],
+    "status": [
+      "claim_6787f407301b1af405e0"
+    ],
+    "title": [
+      "claim_6787f407301b1af405e0"
+    ]
+  },
+  "id": "mentor_2f215cc587485f8dc198",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6787f407301b1af405e0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "段海新"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2dd144fd7cf9ce05cfaf",
+      "claim_ids": [
+        "claim_6787f407301b1af405e0"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/dhx/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Linkai Zheng, Xiang Li, Chuhan Wang Run Guo, Haixin Duan, Jianjun Chen, Chao Zhang, Kaiwen Shen, ReqsMiner: Automated Discovery of CDN Forwarding Request Inconsistencies and DoS Attacks with Grammar-based Fuzzing, NDSS 2024",
+    "Mingxuan Liu, Yiming Zhang, Xiang Li, Chaoyi Lu Baojun Liu, Haixin Duan, Xiaofeng Zheng., Understanding the Implementation and Security Implications of Protective DNS Services, NDSS 2024",
+    "Chuhan Wang, Yasuhiro Kuranaga, Yihang Wang, Mingming Zhang, Linkai Zheng, Xiang Li, Jianjun Chen, Haixin Duan, Yanzhong Lin, Qingfeng Pan,BreakSPF: How Shared Infrastructures Magnify SPF Vulnerabilities Across the Internet, NDSS 2024",
+    "Xiang Li, Dashuai Wu, Haixin Duan, Qi Li DNSBomb: A New Practical-and-Powerful Pulsing DoS Attack Exploiting DNS Queries-and-Responses, Security&Privacy 2024",
+    "Xiang Li, Wei Xu, Baojun Liu, Mingming Zhang, Zhou Li, Jia Zhang, Deliang Chang, Xiaofeng Zheng, Chuhan Wang, Jianjun Chen, Haixin Duan, Qi Li. TuDoor Attack: Systematically Exploring and Exploiting Logic Vulnerabilities in DNS Response Pre-processing with Malformed Packets. Security & Privacy 2024",
+    "Yacong Gu, Lingyun Ying, Huajun Chai, Yingyuan Pu, Haixin Duan, Xing Gao, More Haste, Less Speed: Cache Related Security Threats in Continuous Integration Services, Security&Privacy 2024",
+    "Enze Wang, Jianjun Chen, Wei Xie, Chuhan Wang, Yifei Gao, Zhenhua Wang, Haixin Duan, Yang Liu, Baosheng Wang. Where URLs Become Weapons: Automated Discovery of SSRF Vulnerabilities in Web Applications, Security & Privacy 2024",
+    "Qi Wang, Jianjun Chen, Zheyu Jiang, Run Guo, Ximeng Liu, Chao Zhang, Haixin Duan, Break the Wall from bottom: Automated Discovery of Protocol-Level Evasion Vulnerabilities in Web Application Firewalls, Security&Privacy 2024"
+  ],
+  "research_directions": [
+    "网络协议安全、人工智能安全、网络测量、入侵检测、地下产业检测、物联网安全,漏洞挖掘,互联网治理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/dhx/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

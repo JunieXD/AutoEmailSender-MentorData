@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1815572f5d5fc0661a4d"
+      ],
+      "ended_at": null,
+      "id": "aff_3db64af3ac57115a78da",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_b4f5467deabad0279cdc",
+      "source_url": "https://cyber.seu.edu.cn/hjg/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1815572f5d5fc0661a4d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3db64af3ac57115a78da",
+      "claim_ids": [
+        "claim_1815572f5d5fc0661a4d"
+      ],
+      "is_primary": true,
+      "normalized_value": "jghan@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/hjg/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jghan@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1815572f5d5fc0661a4d"
+    ],
+    "email": [
+      "claim_1815572f5d5fc0661a4d"
+    ],
+    "name": [
+      "claim_1815572f5d5fc0661a4d"
+    ],
+    "profile_url": [
+      "claim_1815572f5d5fc0661a4d"
+    ],
+    "recent_papers": [
+      "claim_1815572f5d5fc0661a4d"
+    ],
+    "research_directions": [
+      "claim_1815572f5d5fc0661a4d"
+    ],
+    "status": [
+      "claim_1815572f5d5fc0661a4d"
+    ],
+    "title": [
+      "claim_1815572f5d5fc0661a4d"
+    ]
+  },
+  "id": "mentor_6dd5109c91416435a5f0",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1815572f5d5fc0661a4d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩金广"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3db64af3ac57115a78da",
+      "claim_ids": [
+        "claim_1815572f5d5fc0661a4d"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/hjg/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Privacy-Preserving Decentralized Signature-Based Access Control",
+    "Efficient Registered Attribute Based Access Control With Same Sub-Policies in Mobile Cloud Computing",
+    "Privacy-Preserving Decentralized Functional Encryption for Inner Product",
+    "OLBS: Oblivious Location-Based Services",
+    "Similarity-Based Secure Deduplication for IIoT Cloud Management System",
+    "TFS-ABS: Traceable and Forward Secure Attribute-based Signature Scheme with Constant-Size",
+    "Privacy-Preserving Electronic Ticket Scheme with Attribute-Based Credential",
+    "Anonymous Single Sign-on with Proxy Re-Verification"
+  ],
+  "research_directions": [
+    "密码学、隐私保护、访问控制、区块链、云计算安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/hjg/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}

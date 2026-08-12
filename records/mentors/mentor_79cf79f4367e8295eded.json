@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4563a9fcf113f2057c11"
+      ],
+      "ended_at": null,
+      "id": "aff_0ac8015c0f0592e6bf04",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:16Z",
+      "organization_id": "org_auto_5f4b7c42173e4b98e029",
+      "source_url": "https://cyber.seu.edu.cn/wlm/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4563a9fcf113f2057c11"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0ac8015c0f0592e6bf04",
+      "claim_ids": [
+        "claim_4563a9fcf113f2057c11"
+      ],
+      "is_primary": true,
+      "normalized_value": "wlm.seu@qq.com",
+      "observed_at": "2026-08-11T13:31:16Z",
+      "source_url": "https://cyber.seu.edu.cn/wlm/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wlm.seu@qq.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:16Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4563a9fcf113f2057c11"
+    ],
+    "email": [
+      "claim_4563a9fcf113f2057c11"
+    ],
+    "name": [
+      "claim_4563a9fcf113f2057c11"
+    ],
+    "profile_url": [
+      "claim_4563a9fcf113f2057c11"
+    ],
+    "research_directions": [
+      "claim_4563a9fcf113f2057c11"
+    ],
+    "status": [
+      "claim_4563a9fcf113f2057c11"
+    ],
+    "title": [
+      "claim_4563a9fcf113f2057c11"
+    ]
+  },
+  "id": "mentor_79cf79f4367e8295eded",
+  "last_verified_at": "2026-08-11T13:31:16Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4563a9fcf113f2057c11"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王良民"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0ac8015c0f0592e6bf04",
+      "claim_ids": [
+        "claim_4563a9fcf113f2057c11"
+      ],
+      "observed_at": "2026-08-11T13:31:16Z",
+      "status": "current",
+      "url": "https://cyber.seu.edu.cn/wlm/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "架构驱动的安全计算技术、可应用的网络安全监管技术,应用领域包括物联网应用系统、区块链交易系统、互联网安全治理等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:16Z",
+  "status_reason": null,
+  "status_source_url": "https://cyber.seu.edu.cn/wlm/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:16Z"
+}
