@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bb442064d95ece5d5ef5"
+      ],
+      "ended_at": null,
+      "id": "aff_7690e229c043912bade4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41431.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_bb442064d95ece5d5ef5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7690e229c043912bade4",
+      "claim_ids": [
+        "claim_bb442064d95ece5d5ef5"
+      ],
+      "is_primary": true,
+      "normalized_value": "luwang@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41431.htm",
+      "status": "current",
+      "type": "email",
+      "value": "luwang@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bb442064d95ece5d5ef5"
+    ],
+    "email": [
+      "claim_bb442064d95ece5d5ef5"
+    ],
+    "name": [
+      "claim_bb442064d95ece5d5ef5"
+    ],
+    "profile_url": [
+      "claim_bb442064d95ece5d5ef5"
+    ],
+    "recent_papers": [
+      "claim_bb442064d95ece5d5ef5"
+    ],
+    "research_directions": [
+      "claim_bb442064d95ece5d5ef5"
+    ],
+    "status": [
+      "claim_bb442064d95ece5d5ef5"
+    ],
+    "title": [
+      "claim_bb442064d95ece5d5ef5"
+    ]
+  },
+  "id": "mentor_a40075c929072cf30bea",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bb442064d95ece5d5ef5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王路"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7690e229c043912bade4",
+      "claim_ids": [
+        "claim_bb442064d95ece5d5ef5"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41431.htm"
+    }
+  ],
+  "recent_papers": [
+    "Juntao Chen,Lu Wang: Distribution Features Based on Normalizing Flow for Anomaly Detection. International Joint Conference on Neural Networks 2025 (IJCNN 2025)",
+    "Lu Wang; Dongkai Zhang; Jiahao Guo; Yuexing Han: Image Anomaly Detection Using Normal Data Only by Latent Space Resampling, Applied Sciences 2020",
+    "Songmin Dai; Xiaoqiang Li;Lu Wang; Pin Wu: Learning Segmentation Masks with the Independence Prior, Proceedings of the AAAI Conference on Artificial Intelligence, 2019(AAAI 2019)"
+  ],
+  "research_directions": [
+    "计算机视觉,深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41431.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

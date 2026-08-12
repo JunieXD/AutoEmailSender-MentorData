@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_820b32f0644c4e6e3822"
+      ],
+      "ended_at": null,
+      "id": "aff_275ffecc6a17c0da01c2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41451.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_820b32f0644c4e6e3822"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_275ffecc6a17c0da01c2",
+      "claim_ids": [
+        "claim_820b32f0644c4e6e3822"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangxi@t.shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41451.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangxi@t.shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_820b32f0644c4e6e3822"
+    ],
+    "email": [
+      "claim_820b32f0644c4e6e3822"
+    ],
+    "name": [
+      "claim_820b32f0644c4e6e3822"
+    ],
+    "profile_url": [
+      "claim_820b32f0644c4e6e3822"
+    ],
+    "recent_papers": [
+      "claim_820b32f0644c4e6e3822"
+    ],
+    "research_directions": [
+      "claim_820b32f0644c4e6e3822"
+    ],
+    "status": [
+      "claim_820b32f0644c4e6e3822"
+    ],
+    "title": [
+      "claim_820b32f0644c4e6e3822"
+    ]
+  },
+  "id": "mentor_a72b0782ef96252aa5d4",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_820b32f0644c4e6e3822"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王皙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_275ffecc6a17c0da01c2",
+      "claim_ids": [
+        "claim_820b32f0644c4e6e3822"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41451.htm"
+    }
+  ],
+  "recent_papers": [
+    "LLaMA-PG: A domain-knowledge-enhanced framework for verification property generation from BPMN models",
+    "KI-GCNN: Knowledge-Informed Graph Convolutional Neural Network for Multiclass Trajectory Prediction at Signalized Intersections",
+    "Dataset Construction through Ontology-Based Data Requirements Analysis",
+    "Computer-Aided Formalization of Internal Consistent Product Family Models",
+    "A Framework for Requirements Specification of Machine-Learning Systems",
+    "A Formal Engineering Approach to Product Family Modeling",
+    "Computer-Aided Formalization of Requirements Based on Patterns"
+  ],
+  "research_directions": [
+    "软件工程、软件需求、软件测试"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41451.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_957e1178be5647183b84"
+      ],
+      "ended_at": null,
+      "id": "aff_41428abb2c0ae4c7fd67",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40551.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_957e1178be5647183b84"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_41428abb2c0ae4c7fd67",
+      "claim_ids": [
+        "claim_957e1178be5647183b84"
+      ],
+      "is_primary": true,
+      "normalized_value": "xinliming@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40551.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xinliming@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_957e1178be5647183b84"
+    ],
+    "email": [
+      "claim_957e1178be5647183b84"
+    ],
+    "name": [
+      "claim_957e1178be5647183b84"
+    ],
+    "profile_url": [
+      "claim_957e1178be5647183b84"
+    ],
+    "recent_papers": [
+      "claim_957e1178be5647183b84"
+    ],
+    "research_directions": [
+      "claim_957e1178be5647183b84"
+    ],
+    "status": [
+      "claim_957e1178be5647183b84"
+    ],
+    "title": [
+      "claim_957e1178be5647183b84"
+    ]
+  },
+  "id": "mentor_83182358f2eb779f909d",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_957e1178be5647183b84"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "辛立明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_41428abb2c0ae4c7fd67",
+      "claim_ids": [
+        "claim_957e1178be5647183b84"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40551.htm"
+    }
+  ],
+  "recent_papers": [
+    "Model Reference Adaptive Control for Aortic Pressure Regulation in Ex Vivo Heart Perfusion",
+    "Single-beat Measurement of Left Ventricular Contractility in Normothermic Ex Situ Perfused Porcine Hearts",
+    "Trajectory Consensus for Coordination of Multiple Curvature-bounded Vehicles",
+    "Semi-Parametric Model-Based Adaptive Control for Aortic Pressure Regulation in Ex Situ Heart Perfusion",
+    "Flexible triboelectric 3D touch pad with unit subdivision structure for effective XY positioning and pressure sensing",
+    "HEPI: High-reward experience-assisted policy iteration in deep reinforcement learning"
+  ],
+  "research_directions": [
+    "具身智能,智能诊疗"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40551.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

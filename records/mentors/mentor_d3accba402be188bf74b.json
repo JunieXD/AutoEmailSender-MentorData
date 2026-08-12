@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_49b0c36541aada559f7b"
+      ],
+      "ended_at": null,
+      "id": "aff_295f4efea8e6d5a1978e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/51591.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_49b0c36541aada559f7b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_295f4efea8e6d5a1978e",
+      "claim_ids": [
+        "claim_49b0c36541aada559f7b"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengpz@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/51591.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chengpz@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_49b0c36541aada559f7b"
+    ],
+    "email": [
+      "claim_49b0c36541aada559f7b"
+    ],
+    "name": [
+      "claim_49b0c36541aada559f7b"
+    ],
+    "profile_url": [
+      "claim_49b0c36541aada559f7b"
+    ],
+    "recent_papers": [
+      "claim_49b0c36541aada559f7b"
+    ],
+    "research_directions": [
+      "claim_49b0c36541aada559f7b"
+    ],
+    "status": [
+      "claim_49b0c36541aada559f7b"
+    ],
+    "title": [
+      "claim_49b0c36541aada559f7b"
+    ]
+  },
+  "id": "mentor_d3accba402be188bf74b",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_49b0c36541aada559f7b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程彭洲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_295f4efea8e6d5a1978e",
+      "claim_ids": [
+        "claim_49b0c36541aada559f7b"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/51591.htm"
+    }
+  ],
+  "recent_papers": [
+    "Domain Adaptation of MLLM-Based GUI Agents in Documentation-Rich Environments with Standard Operating Procedures",
+    "Mobile-Aptus: Confidence-Driven Proactive and Robust Interaction in MLLM-based Mobile-Using Agents",
+    "Faithful Mobile GUI Agents with Guided Advantage Estimator",
+    "From tool to personal assistant: The principles, evolution, and security risks of AI agents",
+    "Flooding spread of manipulated knowledge in llm-based multi-agent communities",
+    "See, think, act: Teaching multimodal agents to effectively interact with gui by identifying toggles",
+    "Hidden Ghost Hand: Unveiling Backdoor Vulnerabilities in MLLM-Powered Mobile GUI Agents",
+    "Gem: Gaussian embedding modeling for out-of-distribution detection in gui agents"
+  ],
+  "research_directions": [
+    "多模态大模型推理,自主交互智能体,人工智能安全,网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/51591.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

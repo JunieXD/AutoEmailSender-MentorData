@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eee93fb3746a82c5bc60"
+      ],
+      "ended_at": null,
+      "id": "aff_430bcbc9c552f9f6d1d8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/50491.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_eee93fb3746a82c5bc60"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_430bcbc9c552f9f6d1d8",
+      "claim_ids": [
+        "claim_eee93fb3746a82c5bc60"
+      ],
+      "is_primary": true,
+      "normalized_value": "whzhu@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/50491.htm",
+      "status": "current",
+      "type": "email",
+      "value": "whzhu@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eee93fb3746a82c5bc60"
+    ],
+    "email": [
+      "claim_eee93fb3746a82c5bc60"
+    ],
+    "name": [
+      "claim_eee93fb3746a82c5bc60"
+    ],
+    "profile_url": [
+      "claim_eee93fb3746a82c5bc60"
+    ],
+    "research_directions": [
+      "claim_eee93fb3746a82c5bc60"
+    ],
+    "status": [
+      "claim_eee93fb3746a82c5bc60"
+    ],
+    "title": [
+      "claim_eee93fb3746a82c5bc60"
+    ]
+  },
+  "id": "mentor_46ab65b333ed22d649a0",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eee93fb3746a82c5bc60"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱文浩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_430bcbc9c552f9f6d1d8",
+      "claim_ids": [
+        "claim_eee93fb3746a82c5bc60"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/50491.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "工业视觉、基于大模型的知识工程、智能体开发和应用、AI+AR智能眼镜应用、计算流体力学算法和软件等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/50491.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

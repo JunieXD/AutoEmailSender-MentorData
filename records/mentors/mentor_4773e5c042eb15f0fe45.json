@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_50852156ae5a93db98f6"
+      ],
+      "ended_at": null,
+      "id": "aff_cb1980e3a56bddac0471",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40411.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_50852156ae5a93db98f6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cb1980e3a56bddac0471",
+      "claim_ids": [
+        "claim_50852156ae5a93db98f6"
+      ],
+      "is_primary": true,
+      "normalized_value": "tleng@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40411.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tleng@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_50852156ae5a93db98f6"
+    ],
+    "email": [
+      "claim_50852156ae5a93db98f6"
+    ],
+    "name": [
+      "claim_50852156ae5a93db98f6"
+    ],
+    "profile_url": [
+      "claim_50852156ae5a93db98f6"
+    ],
+    "research_directions": [
+      "claim_50852156ae5a93db98f6"
+    ],
+    "status": [
+      "claim_50852156ae5a93db98f6"
+    ],
+    "title": [
+      "claim_50852156ae5a93db98f6"
+    ]
+  },
+  "id": "mentor_4773e5c042eb15f0fe45",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_50852156ae5a93db98f6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冷拓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cb1980e3a56bddac0471",
+      "claim_ids": [
+        "claim_50852156ae5a93db98f6"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40411.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器证明、自动推理、离散优化、人工智能的数理基础"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40411.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_70403f5f799e548e6f39"
+      ],
+      "ended_at": null,
+      "id": "aff_1d68e07f92f418e1ff5c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40631.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_70403f5f799e548e6f39"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1d68e07f92f418e1ff5c",
+      "claim_ids": [
+        "claim_70403f5f799e548e6f39"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenweiwei@seu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40631.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenweiwei@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_70403f5f799e548e6f39"
+    ],
+    "email": [
+      "claim_70403f5f799e548e6f39"
+    ],
+    "name": [
+      "claim_70403f5f799e548e6f39"
+    ],
+    "profile_url": [
+      "claim_70403f5f799e548e6f39"
+    ],
+    "recent_papers": [
+      "claim_70403f5f799e548e6f39"
+    ],
+    "research_directions": [
+      "claim_70403f5f799e548e6f39"
+    ],
+    "status": [
+      "claim_70403f5f799e548e6f39"
+    ],
+    "title": [
+      "claim_70403f5f799e548e6f39"
+    ]
+  },
+  "id": "mentor_3255097a61f2891878d7",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_70403f5f799e548e6f39"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈巍巍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1d68e07f92f418e1ff5c",
+      "claim_ids": [
+        "claim_70403f5f799e548e6f39"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1471/40631.htm"
+    }
+  ],
+  "recent_papers": [
+    "Weiwei Chen,Xianjin Xia,Shuai Wang,Xianjun Deng, Jiehong Wu, Caishi Huang, “Sym-FEC: Enhancing Error Correction in LoRa PHY with a Symbol-Level FEC Decoder”,IEEE Transactions on Mobile Computing, 2025",
+    "Weiwei Chen,Xianjin Xia,Shuai Wang,Tian He, Gang Liu, Caishi Huang, “Enabling large scale LoRa parallel decoding with high-dimensional and high-accuracy features”,IEEE Transactions on Mobile Computing, 2024",
+    "Weiwei Chen,Shuai Wang,Tian He. “Magnifier: leveraging the fine-grained hardware information and their temporal patterns for concurrent LoRa decoding”,IEEE Transactions on Mobile Computing, 2023",
+    "Weiwei Chen,Zhimeng Yin,Tian He. “Enabling Global Cooperation for Heterogeneous Networks via Reliable Concurrent Cross Technology Communications”,IEEE Transactions on Mobile Computing, 2022",
+    "Weiwei Chen,Yunhuai Liu,Tian He. “SoftHM: A Software-based Hierarchical Modulation Design for Wireless System.”IEEE/ACM Transactions on Networking(IEEE ToN),2021",
+    "Weiwei Chen, Runze Zhang, Xianjin Xia, Shuai Wang, Tian He,“Deepdetangle: Deep learning-based fusion of chirp-level and packet-level features for lora parallel decoding”, ICNP 2024",
+    "Weiwei Chen, Jiefeng Zhang, Xianjin Xia, Shuai Wang, Tian He, “Hitting the sweet spot: An SF-any coding paradigm for empowering city-wide LoRa communications”,IPSN 2024",
+    "Weiwei Chen, Shuai Wang, Tian He, Xianjin Xia,“Hi2LoRa: Exploring Highly Dimensional and Highly Accurate Features to push LoRaWAN Concurrency Limits with Low Implementation Cost”, IEEE ICNP 2023"
+  ],
+  "research_directions": [
+    "移动计算,卫星物联网,无线感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1471/40631.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_08920808e685c6787e4b"
+      ],
+      "ended_at": null,
+      "id": "aff_3b75d3fad8ef1f2b62a4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40951.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_08920808e685c6787e4b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3b75d3fad8ef1f2b62a4",
+      "claim_ids": [
+        "claim_08920808e685c6787e4b"
+      ],
+      "is_primary": true,
+      "normalized_value": "hrzhangsh@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1471/40951.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hrzhangsh@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_08920808e685c6787e4b"
+    ],
+    "email": [
+      "claim_08920808e685c6787e4b"
+    ],
+    "name": [
+      "claim_08920808e685c6787e4b"
+    ],
+    "profile_url": [
+      "claim_08920808e685c6787e4b"
+    ],
+    "recent_papers": [
+      "claim_08920808e685c6787e4b"
+    ],
+    "research_directions": [
+      "claim_08920808e685c6787e4b"
+    ],
+    "status": [
+      "claim_08920808e685c6787e4b"
+    ],
+    "title": [
+      "claim_08920808e685c6787e4b"
+    ]
+  },
+  "id": "mentor_4ba7d4bd5e51d30e8a32",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_08920808e685c6787e4b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张惠然"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3b75d3fad8ef1f2b62a4",
+      "claim_ids": [
+        "claim_08920808e685c6787e4b"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1471/40951.htm"
+    }
+  ],
+  "recent_papers": [
+    "Substructure-enhanced MPNN for polymer discovery and knowledge: a study in predicting glass transition temperature",
+    "Subgroup discovery similarity score (SDSS): A significant criterion for the integration of statistical knowledge into machine learning in materials science",
+    "A GPT-assisted iterative method for extracting domain knowledge from a large volume of literature of electromagnetic wave absorbing materials with limited manually annotated data",
+    "Highly Selective Nano-Interface Engineering in Multishelled Nanocubes for Enhanced Broadband Electromagnetic Attenuation",
+    "A domain knowledge enhanced machine learning method to predict the properties of halide double perovskite A2B+B3+X6",
+    "Deriving equation from data via knowledge discovery and machine learning: A study of Young’s modulus of Ti-Nb alloys"
+  ],
+  "research_directions": [
+    "机器学习、人工智能,面向交叉学科(材料、医学)的人工智能方法应用,脑认知,脑机接口技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1471/40951.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

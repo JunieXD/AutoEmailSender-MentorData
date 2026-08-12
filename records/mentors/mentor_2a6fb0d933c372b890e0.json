@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c5f5a31f48a7a2140ea2"
+      ],
+      "ended_at": null,
+      "id": "aff_68d36c1450a5feef29d1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40381.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c5f5a31f48a7a2140ea2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_68d36c1450a5feef29d1",
+      "claim_ids": [
+        "claim_c5f5a31f48a7a2140ea2"
+      ],
+      "is_primary": true,
+      "normalized_value": "ycfang@staff.shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1461/40381.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ycfang@staff.shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ],
+    "email": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ],
+    "name": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ],
+    "profile_url": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ],
+    "recent_papers": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ],
+    "research_directions": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ],
+    "status": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ],
+    "title": [
+      "claim_c5f5a31f48a7a2140ea2"
+    ]
+  },
+  "id": "mentor_2a6fb0d933c372b890e0",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c5f5a31f48a7a2140ea2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "方昱春"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_68d36c1450a5feef29d1",
+      "claim_ids": [
+        "claim_c5f5a31f48a7a2140ea2"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1461/40381.htm"
+    }
+  ],
+  "recent_papers": [
+    "Structure-aware sign language recognition with spatial-temporal scene graph",
+    "OBCTeacher: Resisting labeled data scarcity in oracle bone character detection by semi-supervised learning",
+    "Prototype learning for adversarial domain adaptation",
+    "Enhanced task attention with adversarial learning for dynamic multi-task CNN",
+    "Adversarial Learning Guided Task Relatedness Refinement for Multi-Task Deep Learning",
+    "Attribute Prototype Learning for Interactive Face Retrieval",
+    "Dynamic Multi-Task Learning with Convolutional Neural Network"
+  ],
+  "research_directions": [
+    "模式识别、机器学习、计算机视觉、人工智能应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1461/40381.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

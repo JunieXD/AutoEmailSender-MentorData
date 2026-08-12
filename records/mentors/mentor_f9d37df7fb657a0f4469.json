@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9efbad0c812f11c7e6c7"
+      ],
+      "ended_at": null,
+      "id": "aff_a733cee5b0396e010eeb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41291.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_9efbad0c812f11c7e6c7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a733cee5b0396e010eeb",
+      "claim_ids": [
+        "claim_9efbad0c812f11c7e6c7"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangliu_cs@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41291.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangliu_cs@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9efbad0c812f11c7e6c7"
+    ],
+    "email": [
+      "claim_9efbad0c812f11c7e6c7"
+    ],
+    "name": [
+      "claim_9efbad0c812f11c7e6c7"
+    ],
+    "profile_url": [
+      "claim_9efbad0c812f11c7e6c7"
+    ],
+    "recent_papers": [
+      "claim_9efbad0c812f11c7e6c7"
+    ],
+    "research_directions": [
+      "claim_9efbad0c812f11c7e6c7"
+    ],
+    "status": [
+      "claim_9efbad0c812f11c7e6c7"
+    ],
+    "title": [
+      "claim_9efbad0c812f11c7e6c7"
+    ]
+  },
+  "id": "mentor_f9d37df7fb657a0f4469",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9efbad0c812f11c7e6c7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘洋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a733cee5b0396e010eeb",
+      "claim_ids": [
+        "claim_9efbad0c812f11c7e6c7"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41291.htm"
+    }
+  ],
+  "recent_papers": [
+    "FastPERT: Towards Fast Microservice Application Latency Prediction via Structural Inductive Bias over PERT Networks,AAAI 2025.",
+    "PERT-GNN: Latency Prediction for Microservice-based Cloud-Native Applications via Graph Neural Networks, KDD 2023.",
+    "Cloud Configuration Optimization for Recurring Batch-Processing Applications, TPDS 2023.",
+    "Online Resource Optimization for Elastic Stream Processing with Regret Guarantee, ICPP 2022.",
+    "Optimal Job Scheduling With Resource Packing for Heterogeneous Servers, ToN 2021.",
+    "Online Job Scheduling with Resource Packing on a Cluster of Heterogeneous Servers, INFOCOM 2019."
+  ],
+  "research_directions": [
+    "分布式系统",
+    "人工智能",
+    "云计算系统的智能调度问题"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41291.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}

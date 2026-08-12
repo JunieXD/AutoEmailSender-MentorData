@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b25573506461ab7d842c"
+      ],
+      "ended_at": null,
+      "id": "aff_06be094e4e484d1767b4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:30:02Z",
+      "organization_id": "org_auto_268a039852244ae4c1f0",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41491.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_b25573506461ab7d842c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_06be094e4e484d1767b4",
+      "claim_ids": [
+        "claim_b25573506461ab7d842c"
+      ],
+      "is_primary": true,
+      "normalized_value": "richzhou@shu.edu.cn",
+      "observed_at": "2026-08-11T13:30:02Z",
+      "source_url": "https://cs.shu.edu.cn/info/1481/41491.htm",
+      "status": "current",
+      "type": "email",
+      "value": "richzhou@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:30:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b25573506461ab7d842c"
+    ],
+    "email": [
+      "claim_b25573506461ab7d842c"
+    ],
+    "name": [
+      "claim_b25573506461ab7d842c"
+    ],
+    "profile_url": [
+      "claim_b25573506461ab7d842c"
+    ],
+    "recent_papers": [
+      "claim_b25573506461ab7d842c"
+    ],
+    "research_directions": [
+      "claim_b25573506461ab7d842c"
+    ],
+    "status": [
+      "claim_b25573506461ab7d842c"
+    ],
+    "title": [
+      "claim_b25573506461ab7d842c"
+    ]
+  },
+  "id": "mentor_248b1d6f26a1be8fe844",
+  "last_verified_at": "2026-08-11T13:30:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b25573506461ab7d842c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周健航"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_06be094e4e484d1767b4",
+      "claim_ids": [
+        "claim_b25573506461ab7d842c"
+      ],
+      "observed_at": "2026-08-11T13:30:02Z",
+      "status": "current",
+      "url": "https://cs.shu.edu.cn/info/1481/41491.htm"
+    }
+  ],
+  "recent_papers": [
+    "Alsherfawi, A.,Zhou, J.*, Shehata, A., & Yagi, Y. (2025). Behavioral Signature Decoding: Facial Landmark-based Graph Learning for Cybernetic Avatar Authentication.2025 IEEE International Joint Conference on Biometrics(IJCB2025).",
+    "Ang, J.,Zhou, J.*, & Wu, X. (2025). Privacy-preserving Facial-based Diagnosis with Shared-Attention Multitask Learning.2025 IEEE International Joint Conference on Biometrics(IJCB2025).",
+    "Zhou, J., Li, S., Zeng, S., & Zhang, B. (2024). Probabilistic Nuclear-Norm Matrix Regression Regularized by Random Graph Theory. IEEE Transactions on Emerging Topics in Computational Intelligence.",
+    "Zhou, J., Zhang, Q., Zeng, S., Zhang, B., & Fang, L. (2024). Latent Linear Discriminant Analysis for feature extraction via Isometric Structural Learning. Pattern Recognition, 149, 110218.",
+    "Zhou, J., Wang, G., Zeng, S., & Zhang, B. (2023). Learning with Euler Collaborative Representation for Robust Pattern Analysis.ACM Transactions on Intelligent Systems and Technology. 109, 1-25.",
+    "Zhou, J., Zhang, B., & Zeng, S. (2022). Consensus Sparsity: Multi-context Sparse Image Representation via L∞-induced Matrix Variate.IEEE Transactions on Image Processing. 32, 603-616.",
+    "Zhou, J., Zhang, Q., Zeng, S., & Zhang, B. (2022). Fuzzy Graph Subspace Convolutional Network.IEEE Transactions on Neural Networks and Learning Systems.",
+    "Zhou, J., Zhang, B., Zeng, S., & Lai, Q. (2021). Joint Discriminative Latent Subspace Learning for Image Classification.IEEE Transactions on Circuits and Systems for Video Technology."
+  ],
+  "research_directions": [
+    "模式识别、生物特征识别、稀疏学习、非完整多模态聚类"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:30:02Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.shu.edu.cn/info/1481/41491.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:30:02Z"
+}
