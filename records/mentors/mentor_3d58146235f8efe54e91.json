@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4e79bb91fe4a6e9d4d48"
+      ],
+      "ended_at": null,
+      "id": "aff_9c8a343a25682c5441b5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/wt2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4e79bb91fe4a6e9d4d48"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9c8a343a25682c5441b5",
+      "claim_ids": [
+        "claim_4e79bb91fe4a6e9d4d48"
+      ],
+      "is_primary": true,
+      "normalized_value": "twang@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/wt2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "twang@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4e79bb91fe4a6e9d4d48"
+    ],
+    "email": [
+      "claim_4e79bb91fe4a6e9d4d48"
+    ],
+    "name": [
+      "claim_4e79bb91fe4a6e9d4d48"
+    ],
+    "profile_url": [
+      "claim_4e79bb91fe4a6e9d4d48"
+    ],
+    "research_directions": [
+      "claim_4e79bb91fe4a6e9d4d48"
+    ],
+    "status": [
+      "claim_4e79bb91fe4a6e9d4d48"
+    ],
+    "title": [
+      "claim_4e79bb91fe4a6e9d4d48"
+    ]
+  },
+  "id": "mentor_3d58146235f8efe54e91",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4e79bb91fe4a6e9d4d48"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王廷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9c8a343a25682c5441b5",
+      "claim_ids": [
+        "claim_4e79bb91fe4a6e9d4d48"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/wt2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能,天基算力网络,边缘智能,智能信息网络、端边云协同,分布式AI系统、联邦学习、机器人、多智能体强化学习、大模型、大小模型端云协同演进,智能边缘、智能云、数据中心,AI驱动智联网络、工业互联网(Industrial IoT, IIoT)、智能体互联网(Internet of Agents, IoA),卫星边缘大模型星地协同/在轨训练、卫星边缘大模型弹性推理与部署、面向卫星边缘人工智能的信息传输理论与资源优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/wt2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

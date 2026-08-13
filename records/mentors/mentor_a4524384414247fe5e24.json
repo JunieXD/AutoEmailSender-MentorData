@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2109927c2a702e62f7e9"
+      ],
+      "ended_at": null,
+      "id": "aff_b1c23502439abdb10fb3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/st2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2109927c2a702e62f7e9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1c23502439abdb10fb3",
+      "claim_ids": [
+        "claim_2109927c2a702e62f7e9"
+      ],
+      "is_primary": true,
+      "normalized_value": "tsu@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/st2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "tsu@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2109927c2a702e62f7e9"
+    ],
+    "email": [
+      "claim_2109927c2a702e62f7e9"
+    ],
+    "name": [
+      "claim_2109927c2a702e62f7e9"
+    ],
+    "profile_url": [
+      "claim_2109927c2a702e62f7e9"
+    ],
+    "research_directions": [
+      "claim_2109927c2a702e62f7e9"
+    ],
+    "status": [
+      "claim_2109927c2a702e62f7e9"
+    ],
+    "title": [
+      "claim_2109927c2a702e62f7e9"
+    ]
+  },
+  "id": "mentor_a4524384414247fe5e24",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2109927c2a702e62f7e9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏亭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1c23502439abdb10fb3",
+      "claim_ids": [
+        "claim_2109927c2a702e62f7e9"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/st2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "工业软件,软件分析、测试、验证、系统和软件安全、人工智能与软工和系统交叉方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/st2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ec5f427684e0029332cc"
+      ],
+      "ended_at": null,
+      "id": "aff_f45409f7dc3fdab6e075",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/wgl2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ec5f427684e0029332cc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f45409f7dc3fdab6e075",
+      "claim_ids": [
+        "claim_ec5f427684e0029332cc"
+      ],
+      "is_primary": true,
+      "normalized_value": "glwang@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/wgl2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "glwang@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ec5f427684e0029332cc"
+    ],
+    "email": [
+      "claim_ec5f427684e0029332cc"
+    ],
+    "name": [
+      "claim_ec5f427684e0029332cc"
+    ],
+    "profile_url": [
+      "claim_ec5f427684e0029332cc"
+    ],
+    "recent_papers": [
+      "claim_ec5f427684e0029332cc"
+    ],
+    "research_directions": [
+      "claim_ec5f427684e0029332cc"
+    ],
+    "status": [
+      "claim_ec5f427684e0029332cc"
+    ],
+    "title": [
+      "claim_ec5f427684e0029332cc"
+    ]
+  },
+  "id": "mentor_a73708170dc5d2f81fd0",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ec5f427684e0029332cc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王高丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f45409f7dc3fdab6e075",
+      "claim_ids": [
+        "claim_ec5f427684e0029332cc"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/wgl2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Jianqiang Ni, Gaoli Wang*, Yingxin Li. Tracking Algebraic Degree with Exponent Sets: Higher-Order Differential Attacks on FHE-Friendly Cipher Yu 2 X. Designs, Codes and Cryptography, 94(123),https://doi.org/10.1007/s10623-026-01852-8, 2026. (CCF B, SCI)",
+    "Yingxin Li, Fukang Liu,Gaoli Wang*, Haifeng Qian, Keting Jia, Xiangyu Kong.New Collision Attacks on Round-Reduced SHA-512. CRYPTO 2025, August 17-21, 2025, Santa Barbara, USA, LNCS 16004, pp. 200-229, 2025.(三大国际密码顶级会议之一, CCF A)",
+    "Jianqiang Ni, Yingxin Li , Fukang Liu, Gaoli Wang*.Practical Key Collision on AES and Kiasu-BC.IEEE Transactions on Information Theory, DOI: 10.1109/TIT.2025.3623726, 71(12), pp. 9732-9752, October 2025.(CCF A)",
+    "Tianling Weng,Gaoli Wang*, Keting Jia, Xiaoyang Dong, Siwei Sun, Tingting Cui. Exploiting Output Bits and the χ Operation in MitM Preimage Attacks on Keccak. Designs, Codes and Cryptography,https://doi.org/10.1007/s10623-025-01703-y,93(11), pp. 4887- 4909, 2025. (CCF B, SCI)",
+    "Tianling Weng, Gaoli Wang*.New SAT-based Model for Constructing Linear Layers with GoodCryptographic Properties and Implementation. Frontiers of Computer Science (FCS), DOI: 10.1007/s11704-025-40011-5, Volume 20, article number 2010812, (2026).(CCF B, SCI)",
+    "Lingyue Qin, Boxin Zhao, Qingliang Hou, Keting Jia, Gaoli Wang, Xiaoyang Dong. Linear Cancellations in the MitM Attacks on Sponge Functions. FSE/ToSC 2025, Issue 3, IACR Trans. Symmetric Cryptol. 2025(3), pp. 633-692, 2025. (密码学旗舰会议,CCF B)",
+    "Jing Jia, Gaoli Wang*, Yingxin Li, Jianqiang Ni, Jianyong Hu. Security Analysis of the Lightweight Cryptographic Algorithm Sycon for IoT Devices. IEEE Internet of Things Journal. 12(8), pp. 38249-38261, DOI: 10.1109/JIOT.2025.3585031, SEPTEMBER 15, 2025. (SCI,一区)",
+    "Wei Chen, X.Y. Li,Gaoli Wang*, L.B. Li, J.C. Shen, E. Li. HML-BFT: Hybrid multi-layer BFT consensus with reputation model for large-scale blockchain. Peer-to-Peer Networking and Applications,Appl. 18(1), pp. 1-14, 2025. (SCI, CCF C)"
+  ],
+  "research_directions": [
+    "密码学、人工智能安全、量子计算、隐私计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/wgl2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

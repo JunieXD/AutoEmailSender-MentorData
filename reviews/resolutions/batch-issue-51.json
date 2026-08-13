@@ -1,0 +1,410 @@
+{
+  "created_organization_ids": [
+    "org_auto_7dd881ebf96d0a61ed7f",
+    "org_auto_ba2f20ff684c141254a3",
+    "org_auto_bef3df0765bc90939f42",
+    "org_auto_f7c50cb10536268671ce"
+  ],
+  "decided_at": "2026-08-13T02:35:08Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_13065b4fa63fddaa",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ecnu.edu.cn"
+          ],
+          "canonical_name": "华东师范大学",
+          "level": "university",
+          "official_url": "https://ecnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_28153186c6d754e3",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ecnu.edu.cn"
+          ],
+          "canonical_name": "华东师范大学",
+          "level": "university",
+          "official_url": "https://ecnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_32502429ac5fb491",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ecnu.edu.cn"
+          ],
+          "canonical_name": "华东师范大学",
+          "level": "university",
+          "official_url": "https://ecnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_aaab2c7cefa8aa71",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ecnu.edu.cn"
+          ],
+          "canonical_name": "华东师范大学",
+          "level": "university",
+          "official_url": "https://ecnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_ba2f20ff684c141254a3"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bef8687c5b95ac00",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ecnu.edu.cn"
+          ],
+          "canonical_name": "华东师范大学",
+          "level": "university",
+          "official_url": "https://ecnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能机器人实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c3aebace4811fb7b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ecnu.edu.cn"
+          ],
+          "canonical_name": "华东师范大学",
+          "level": "university",
+          "official_url": "https://ecnu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_51",
+  "invalid_rows": [],
+  "issue": {
+    "number": 51,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/51"
+  },
+  "manifest_sha256": "263cb0ab80b486f1d9b5071105b0e73d5b64006b4efef349be4c18d40334458c",
+  "mapped_proposal_ids": [
+    "proposal_issue_51_row_1",
+    "proposal_issue_51_row_10",
+    "proposal_issue_51_row_11",
+    "proposal_issue_51_row_12",
+    "proposal_issue_51_row_13",
+    "proposal_issue_51_row_14",
+    "proposal_issue_51_row_15",
+    "proposal_issue_51_row_16",
+    "proposal_issue_51_row_17",
+    "proposal_issue_51_row_18",
+    "proposal_issue_51_row_19",
+    "proposal_issue_51_row_2",
+    "proposal_issue_51_row_20",
+    "proposal_issue_51_row_21",
+    "proposal_issue_51_row_22",
+    "proposal_issue_51_row_23",
+    "proposal_issue_51_row_24",
+    "proposal_issue_51_row_25",
+    "proposal_issue_51_row_26",
+    "proposal_issue_51_row_27",
+    "proposal_issue_51_row_28",
+    "proposal_issue_51_row_29",
+    "proposal_issue_51_row_3",
+    "proposal_issue_51_row_30",
+    "proposal_issue_51_row_31",
+    "proposal_issue_51_row_32",
+    "proposal_issue_51_row_33",
+    "proposal_issue_51_row_34",
+    "proposal_issue_51_row_35",
+    "proposal_issue_51_row_36",
+    "proposal_issue_51_row_37",
+    "proposal_issue_51_row_38",
+    "proposal_issue_51_row_39",
+    "proposal_issue_51_row_4",
+    "proposal_issue_51_row_40",
+    "proposal_issue_51_row_41",
+    "proposal_issue_51_row_42",
+    "proposal_issue_51_row_43",
+    "proposal_issue_51_row_44",
+    "proposal_issue_51_row_45",
+    "proposal_issue_51_row_46",
+    "proposal_issue_51_row_47",
+    "proposal_issue_51_row_48",
+    "proposal_issue_51_row_49",
+    "proposal_issue_51_row_5",
+    "proposal_issue_51_row_50",
+    "proposal_issue_51_row_51",
+    "proposal_issue_51_row_52",
+    "proposal_issue_51_row_53",
+    "proposal_issue_51_row_54",
+    "proposal_issue_51_row_55",
+    "proposal_issue_51_row_56",
+    "proposal_issue_51_row_57",
+    "proposal_issue_51_row_58",
+    "proposal_issue_51_row_59",
+    "proposal_issue_51_row_6",
+    "proposal_issue_51_row_60",
+    "proposal_issue_51_row_61",
+    "proposal_issue_51_row_62",
+    "proposal_issue_51_row_63",
+    "proposal_issue_51_row_64",
+    "proposal_issue_51_row_65",
+    "proposal_issue_51_row_66",
+    "proposal_issue_51_row_67",
+    "proposal_issue_51_row_68",
+    "proposal_issue_51_row_69",
+    "proposal_issue_51_row_7",
+    "proposal_issue_51_row_70",
+    "proposal_issue_51_row_71",
+    "proposal_issue_51_row_72",
+    "proposal_issue_51_row_73",
+    "proposal_issue_51_row_74",
+    "proposal_issue_51_row_75",
+    "proposal_issue_51_row_76",
+    "proposal_issue_51_row_77",
+    "proposal_issue_51_row_78",
+    "proposal_issue_51_row_79",
+    "proposal_issue_51_row_8",
+    "proposal_issue_51_row_80",
+    "proposal_issue_51_row_81",
+    "proposal_issue_51_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "密码学院",
+      "official_url": null,
+      "organization_id": "org_auto_ba2f20ff684c141254a3",
+      "organization_type": "school",
+      "parent_id": "org_auto_f7c50cb10536268671ce"
+    }
+  ],
+  "path_corrections": [
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_51_row_39",
+        "proposal_issue_51_row_74"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "sei.ecnu.edu.cn"
+      ],
+      "submitted": {
+        "department": "密码学院",
+        "school": "软件工程学院",
+        "university": "华东师范大学"
+      },
+      "target_organization_id": "org_auto_ba2f20ff684c141254a3"
+    }
+  ],
+  "pull_request_number": 55,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275263722,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

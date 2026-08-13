@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_28336166e82f74927ef3"
+      ],
+      "ended_at": null,
+      "id": "aff_a107d9628dd2c32f9576",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/shy/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_28336166e82f74927ef3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a107d9628dd2c32f9576",
+      "claim_ids": [
+        "claim_28336166e82f74927ef3"
+      ],
+      "is_primary": true,
+      "normalized_value": "hysun@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/shy/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "hysun@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_28336166e82f74927ef3"
+    ],
+    "email": [
+      "claim_28336166e82f74927ef3"
+    ],
+    "name": [
+      "claim_28336166e82f74927ef3"
+    ],
+    "profile_url": [
+      "claim_28336166e82f74927ef3"
+    ],
+    "recent_papers": [
+      "claim_28336166e82f74927ef3"
+    ],
+    "research_directions": [
+      "claim_28336166e82f74927ef3"
+    ],
+    "status": [
+      "claim_28336166e82f74927ef3"
+    ],
+    "title": [
+      "claim_28336166e82f74927ef3"
+    ]
+  },
+  "id": "mentor_2bee77084861137256f9",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_28336166e82f74927ef3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙海英"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a107d9628dd2c32f9576",
+      "claim_ids": [
+        "claim_28336166e82f74927ef3"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/shy/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Efficient Robustness Verification of the Deep Neural Networks for Smart IoT Devices",
+    "MC/DC Test Case Automatic Generation for Safety-Critical Systems",
+    "Uncertainty Modeling and Quantitative Evaluation of Cyber-physical Systems",
+    "STSL: A Novel Spatio-Temporal Specification Language for QRS2020",
+    "A Novel Approach for Bounded Model Checking Through Full Parallelism",
+    "SafetySysML: An Executable Safety-Critical Avionics Requirement Modeling Language",
+    "Uncertainty-Aware Behavior Modeling and Quantitative Safety Evaluation for Automatic Flight Control Systems",
+    "A Fully Parallel Approach of Model Checking Via Probe Machine"
+  ],
+  "research_directions": [
+    "软件测试、测试自动生成、形式化建模、形式化验证、模型驱动的软件构造"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/shy/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

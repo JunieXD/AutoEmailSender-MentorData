@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eb5df558ea5a3fea96d0"
+      ],
+      "ended_at": null,
+      "id": "aff_d69caf7c85d5c5604604",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cx2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eb5df558ea5a3fea96d0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d69caf7c85d5c5604604",
+      "claim_ids": [
+        "claim_eb5df558ea5a3fea96d0"
+      ],
+      "is_primary": true,
+      "normalized_value": "xchen@geo.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cx2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "xchen@geo.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eb5df558ea5a3fea96d0"
+    ],
+    "email": [
+      "claim_eb5df558ea5a3fea96d0"
+    ],
+    "name": [
+      "claim_eb5df558ea5a3fea96d0"
+    ],
+    "profile_url": [
+      "claim_eb5df558ea5a3fea96d0"
+    ],
+    "research_directions": [
+      "claim_eb5df558ea5a3fea96d0"
+    ],
+    "status": [
+      "claim_eb5df558ea5a3fea96d0"
+    ],
+    "title": [
+      "claim_eb5df558ea5a3fea96d0"
+    ]
+  },
+  "id": "mentor_2c49628bce4e39d5297a",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eb5df558ea5a3fea96d0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈曦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d69caf7c85d5c5604604",
+      "claim_ids": [
+        "claim_eb5df558ea5a3fea96d0"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/cx2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态大模型与多智能体系统、时间序列预测、具身智能体(Embodied AI Agent),研究成果应用于新药发现、电商与金融等领域"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/cx2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

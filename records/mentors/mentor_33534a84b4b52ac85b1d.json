@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_74ca44339cdab5a6aaa1"
+      ],
+      "ended_at": null,
+      "id": "aff_ce699eb7137a36c5d7ec",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/yzf2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_74ca44339cdab5a6aaa1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ce699eb7137a36c5d7ec",
+      "claim_ids": [
+        "claim_74ca44339cdab5a6aaa1"
+      ],
+      "is_primary": true,
+      "normalized_value": "zfyang@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/yzf2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "zfyang@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_74ca44339cdab5a6aaa1"
+    ],
+    "email": [
+      "claim_74ca44339cdab5a6aaa1"
+    ],
+    "name": [
+      "claim_74ca44339cdab5a6aaa1"
+    ],
+    "profile_url": [
+      "claim_74ca44339cdab5a6aaa1"
+    ],
+    "recent_papers": [
+      "claim_74ca44339cdab5a6aaa1"
+    ],
+    "research_directions": [
+      "claim_74ca44339cdab5a6aaa1"
+    ],
+    "status": [
+      "claim_74ca44339cdab5a6aaa1"
+    ],
+    "title": [
+      "claim_74ca44339cdab5a6aaa1"
+    ]
+  },
+  "id": "mentor_33534a84b4b52ac85b1d",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_74ca44339cdab5a6aaa1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨争峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ce699eb7137a36c5d7ec",
+      "claim_ids": [
+        "claim_74ca44339cdab5a6aaa1"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/yzf2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "M. Ren, Z. Yang*, X. Zeng and Z. Liu, Provably Safe Controller Synthesis via Learning-Assisted Vector Barrier Certificates Generations. IEEE Trans. Comput. Aided Des. Integr. Circuits Syst., 2007. (CCF-A)",
+    "B. Xiong, H. Lv, J. Liu, Y. Wang, S. Chen, J. Wang, Z. Yang*, L. Zhi, Automated Formal Proofs of Combinatorial Identities via Wilf-Zeilberger Guidance and LLMs. ICML'2026. (Spotlight)",
+    "R. Zuo, H. Zhao, G. He, Z.Yang*, J.Wang, From LLM-Generated Conjectures to Lean Formalizations: Automated Polynomial Inequality Proving via Sum-of-Squares Certificates. ICML'2026.(CCF-A)",
+    "N. Qi, H. Zhao, Z. Yang*, X. Zeng, M. Ren, C. Peng and Z. Liu, Incremental Synthesis of Safe Controller Guided by Learning-Enabled Barrier Certificates with Efficient LP Verification. FM'2026.(CCF-A)",
+    "W. Jiang, G. He, B. Xiong, J. Wang and Z. Yang*, SAIR-Comb: A Structure-Aware Iterative Refinement Framework for Combinatorics Autoformalization, ACL'2026. (CCF-A)",
+    "H. Zhao, M. Ren, B. Liu, N. Qi, X. Zeng, Z. Zeng and Z. Yang*, Safe Reinforcement Learning for NN-controlled Systems with Neural Barrier Certificate Guidance. IEEE Trans. Comput. Aided Des. Integr. Circuits Syst.,2026. (CCF-A).",
+    "R. Zuo, L. Chen, Z.Yang*, Lightweight Image Super-Resolution via Efficient Shift Convolution and Edge-Enhanced Attention. ICASSP, 2026.",
+    "N. Qi, X.Zeng, B. Liu, Z.Yang*,X. Tang, L. Zhang, C. Peng, Z. Zeng, An Iterative Scheme of Hybrid Controller Synthesis for Nonlinear Systems Subject to Safety Constraints. Information and Computation(IANDC), 2025:105377. (CCF-A)."
+  ],
+  "research_directions": [
+    "大语言模型与自动推理、机器学习与优化、智能系统分析与验证、符号计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/yzf2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

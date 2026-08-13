@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_67425a86842777e44b41"
+      ],
+      "ended_at": null,
+      "id": "aff_a42449f3e24930f311b4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/lxx2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_67425a86842777e44b41"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a42449f3e24930f311b4",
+      "claim_ids": [
+        "claim_67425a86842777e44b41"
+      ],
+      "is_primary": true,
+      "normalized_value": "xxli@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/lxx2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "xxli@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_67425a86842777e44b41"
+    ],
+    "email": [
+      "claim_67425a86842777e44b41"
+    ],
+    "name": [
+      "claim_67425a86842777e44b41"
+    ],
+    "profile_url": [
+      "claim_67425a86842777e44b41"
+    ],
+    "recent_papers": [
+      "claim_67425a86842777e44b41"
+    ],
+    "research_directions": [
+      "claim_67425a86842777e44b41"
+    ],
+    "status": [
+      "claim_67425a86842777e44b41"
+    ],
+    "title": [
+      "claim_67425a86842777e44b41"
+    ]
+  },
+  "id": "mentor_a3e1549e97d964a570c2",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_67425a86842777e44b41"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李祥学"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a42449f3e24930f311b4",
+      "claim_ids": [
+        "claim_67425a86842777e44b41"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/lxx2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "AutoS2ploit: From Automotive Safety-Critical Functionalities to Security Exploit. Securecomm 2024.",
+    "隐私保护计算密码技术研究进展与应用. 中国科学-信息科学,2023",
+    "Constant-Round Multiparty Private Function Evaluation with (Quasi-)Linear Complexities. ACNS2023",
+    "Demystifying Blockchain Scalability: Sibling Chains with Minimal Interleaving. Securecomm 2023",
+    "Robust anomaly-based intrusion detection system for in-vehicle network by graph neural network framework. Applied Intelligence, 2023",
+    "Communication-Efficient and Quantum-Resistant PKE with Multi-Ciphertexts Equality Test",
+    "A Survey on Classical Lattice Algorithms",
+    "Lower Bound on the Overlattice-Based Sieve Algorithm."
+  ],
+  "research_directions": [
+    "密码与抗量子密码",
+    "密码与抗量子密码算法实现及其优化(FPGA、AVX/AVX2/AVX-512,NEON,RVV、CUDA/OPENCL等)",
+    "人工智能安全(PPML、PSI、PIR等)",
+    "抗量子密码困难问题分析",
+    "智能网联汽车安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/lxx2/main.psp",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

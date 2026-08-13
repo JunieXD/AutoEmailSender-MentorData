@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2d7660c4878aae12bb6f"
+      ],
+      "ended_at": null,
+      "id": "aff_eff14cb3759a346b224f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zcj2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2d7660c4878aae12bb6f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eff14cb3759a346b224f",
+      "claim_ids": [
+        "claim_2d7660c4878aae12bb6f"
+      ],
+      "is_primary": true,
+      "normalized_value": "cjzhou@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zcj2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "cjzhou@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2d7660c4878aae12bb6f"
+    ],
+    "email": [
+      "claim_2d7660c4878aae12bb6f"
+    ],
+    "name": [
+      "claim_2d7660c4878aae12bb6f"
+    ],
+    "profile_url": [
+      "claim_2d7660c4878aae12bb6f"
+    ],
+    "research_directions": [
+      "claim_2d7660c4878aae12bb6f"
+    ],
+    "status": [
+      "claim_2d7660c4878aae12bb6f"
+    ],
+    "title": [
+      "claim_2d7660c4878aae12bb6f"
+    ]
+  },
+  "id": "mentor_b8d49d73fc42b1c59915",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2d7660c4878aae12bb6f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周炽金"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eff14cb3759a346b224f",
+      "claim_ids": [
+        "claim_2d7660c4878aae12bb6f"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/zcj2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能系统安全、软件质量保障、AI System Reliability、LLMs for Program Analysis"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/zcj2/main.psp",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

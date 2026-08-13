@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_12a29f87cdb6c61cdb26"
+      ],
+      "ended_at": null,
+      "id": "aff_5c257d93a45200200283",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/hyh2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_12a29f87cdb6c61cdb26"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5c257d93a45200200283",
+      "claim_ids": [
+        "claim_12a29f87cdb6c61cdb26"
+      ],
+      "is_primary": true,
+      "normalized_value": "yhhuang@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/hyh2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "yhhuang@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_12a29f87cdb6c61cdb26"
+    ],
+    "email": [
+      "claim_12a29f87cdb6c61cdb26"
+    ],
+    "name": [
+      "claim_12a29f87cdb6c61cdb26"
+    ],
+    "profile_url": [
+      "claim_12a29f87cdb6c61cdb26"
+    ],
+    "recent_papers": [
+      "claim_12a29f87cdb6c61cdb26"
+    ],
+    "research_directions": [
+      "claim_12a29f87cdb6c61cdb26"
+    ],
+    "status": [
+      "claim_12a29f87cdb6c61cdb26"
+    ],
+    "title": [
+      "claim_12a29f87cdb6c61cdb26"
+    ]
+  },
+  "id": "mentor_4a296fe8d6297f1576de",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_12a29f87cdb6c61cdb26"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄滟鸿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5c257d93a45200200283",
+      "claim_ids": [
+        "claim_12a29f87cdb6c61cdb26"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/hyh2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Formal Analysis and Verification of Airborne Software Based on DO-333",
+    "Modeling and Verification of A Timing Protection Mechanism in the OSEK/VDX OS using CSP",
+    "KST: Executable Formal Semantics of IEC 61131-3 Structured Text for Verification",
+    "A Decomposition-Based Development Method for Industrial Control Systems",
+    "A Feasibility Analysis Framework of Time-Sensitive Networking Using Real-Time Calculus",
+    "An Intelligent Fuzzing Data Generation Method Based on Deep Adversarial Learning",
+    "Automated Test Generation for IEC 61131-3 ST Programs via Dynamic Symbolic Execution",
+    "Scade2Nu : A Tool for Verifying Safety Requirements of SCADE Models with Temporal Specifications"
+  ],
+  "research_directions": [
+    "可信计算,形式化建模与验证,高可信嵌入式控制软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/hyh2/main.psp",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3e4505a86919f0d2be02"
+      ],
+      "ended_at": null,
+      "id": "aff_005ee86d13061342417e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/sjc2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_3e4505a86919f0d2be02"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_005ee86d13061342417e",
+      "claim_ids": [
+        "claim_3e4505a86919f0d2be02"
+      ],
+      "is_primary": true,
+      "normalized_value": "jcshen@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/sjc2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jcshen@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3e4505a86919f0d2be02"
+    ],
+    "email": [
+      "claim_3e4505a86919f0d2be02"
+    ],
+    "name": [
+      "claim_3e4505a86919f0d2be02"
+    ],
+    "profile_url": [
+      "claim_3e4505a86919f0d2be02"
+    ],
+    "research_directions": [
+      "claim_3e4505a86919f0d2be02"
+    ],
+    "status": [
+      "claim_3e4505a86919f0d2be02"
+    ]
+  },
+  "id": "mentor_9293f0b166377c34de02",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3e4505a86919f0d2be02"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈佳辰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_005ee86d13061342417e",
+      "claim_ids": [
+        "claim_3e4505a86919f0d2be02"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/sjc2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算安全与隐私保护,可搜索加密,区块链技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/sjc2/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}
