@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_086fe52d51a97c84108f",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:31:57Z",
+          "organization_id": "org_auto_5c3090952227a829f5ac",
+          "school": "自动化学院",
+          "source_url": "https://faculty.csu.edu.cn/chenbaifan/zh_CN/index.htm",
+          "status": "current",
+          "title": "副教授",
+          "university": "中南大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_086fe52d51a97c84108f",
+          "email": "chenbaifan@csu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:31:57Z",
+          "source_url": "https://faculty.csu.edu.cn/chenbaifan/zh_CN/index.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/44"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "chenbaifan@csu.edu.cn",
+      "id": "mentor_5e447a2003d2216c8200",
+      "last_verified_at": "2026-08-11T13:31:57Z",
+      "name": "陈白帆",
+      "profile_url": "https://faculty.csu.edu.cn/chenbaifan/zh_CN/index.htm",
+      "recent_papers": [],
+      "research_direction": "移动机器人环境感知与定位、SLAM、机器视觉、机器学习",
+      "school": "自动化学院",
+      "source_url": "https://ai.csu.edu.cn/szdw.htm",
+      "status": "active",
+      "title": "副教授",
+      "university": "中南大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_5c3090952227a829f5ac",
+    "name": "自动化学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_a17c92199e49c73c642b",
+    "name": "中南大学"
+  }
+}

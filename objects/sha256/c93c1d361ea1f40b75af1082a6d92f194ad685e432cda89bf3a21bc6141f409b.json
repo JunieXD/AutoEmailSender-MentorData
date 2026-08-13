@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_cd3eae8c30f2804ada57",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:31:57Z",
+          "organization_id": "org_auto_0da9de1e7a5944ba54da",
+          "school": "资源加工与生物工程学院",
+          "source_url": "http://faculty.csu.edu.cn/fanxiaohui/zh_CN/index.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "中南大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_cd3eae8c30f2804ada57",
+          "email": "csufanxiaohui@126.com",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:31:57Z",
+          "source_url": "http://faculty.csu.edu.cn/fanxiaohui/zh_CN/index.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/44"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "csufanxiaohui@126.com",
+      "id": "mentor_1e570cec875e590b7dd4",
+      "last_verified_at": "2026-08-11T13:31:57Z",
+      "name": "范晓慧",
+      "profile_url": "http://faculty.csu.edu.cn/fanxiaohui/zh_CN/index.htm",
+      "recent_papers": [],
+      "research_direction": "铁矿绿色低碳造块与氢冶金、冶金烟气污染控制与碳捕集利用、冶金过程数学建模与智能控制、多产业固废协同资源化与增值利用",
+      "school": "资源加工与生物工程学院",
+      "source_url": "https://ai.csu.edu.cn/szdw.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "中南大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_0da9de1e7a5944ba54da",
+    "name": "资源加工与生物工程学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_a17c92199e49c73c642b",
+    "name": "中南大学"
+  }
+}
