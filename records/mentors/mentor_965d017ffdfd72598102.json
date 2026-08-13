@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b23a6c3e49826cd07896"
+      ],
+      "ended_at": null,
+      "id": "aff_0868b8046c61a50be86b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_9ecb6f5287357895d1e0",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/5150.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b23a6c3e49826cd07896"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0868b8046c61a50be86b",
+      "claim_ids": [
+        "claim_b23a6c3e49826cd07896"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaoyali@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/5150.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaoyali@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b23a6c3e49826cd07896"
+    ],
+    "email": [
+      "claim_b23a6c3e49826cd07896"
+    ],
+    "name": [
+      "claim_b23a6c3e49826cd07896"
+    ],
+    "profile_url": [
+      "claim_b23a6c3e49826cd07896"
+    ],
+    "research_directions": [
+      "claim_b23a6c3e49826cd07896"
+    ],
+    "status": [
+      "claim_b23a6c3e49826cd07896"
+    ],
+    "title": [
+      "claim_b23a6c3e49826cd07896"
+    ]
+  },
+  "id": "mentor_965d017ffdfd72598102",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b23a6c3e49826cd07896"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高雅丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0868b8046c61a50be86b",
+      "claim_ids": [
+        "claim_b23a6c3e49826cd07896"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/5150.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络安全、信任管理、威胁情报、数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/5150.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

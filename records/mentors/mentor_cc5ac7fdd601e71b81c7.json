@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_99fb9fb24d9cecde87a0"
+      ],
+      "ended_at": null,
+      "id": "aff_b1812b84cb984a4bef15",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_212e51db2ebf653a5c76",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1143.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_99fb9fb24d9cecde87a0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1812b84cb984a4bef15",
+      "claim_ids": [
+        "claim_99fb9fb24d9cecde87a0"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangyu@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1143.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangyu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_99fb9fb24d9cecde87a0"
+    ],
+    "email": [
+      "claim_99fb9fb24d9cecde87a0"
+    ],
+    "name": [
+      "claim_99fb9fb24d9cecde87a0"
+    ],
+    "profile_url": [
+      "claim_99fb9fb24d9cecde87a0"
+    ],
+    "research_directions": [
+      "claim_99fb9fb24d9cecde87a0"
+    ],
+    "status": [
+      "claim_99fb9fb24d9cecde87a0"
+    ],
+    "title": [
+      "claim_99fb9fb24d9cecde87a0"
+    ]
+  },
+  "id": "mentor_cc5ac7fdd601e71b81c7",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_99fb9fb24d9cecde87a0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨榆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1812b84cb984a4bef15",
+      "claim_ids": [
+        "claim_99fb9fb24d9cecde87a0"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1143.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数字内容安全、信息安全、大数据与云安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1143.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

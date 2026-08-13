@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4461f43b407d09069135"
+      ],
+      "ended_at": null,
+      "id": "aff_475e262cef88077d0b3e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_2642b40b425ae6441bf7",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3560.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4461f43b407d09069135"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_475e262cef88077d0b3e",
+      "claim_ids": [
+        "claim_4461f43b407d09069135"
+      ],
+      "is_primary": true,
+      "normalized_value": "qsujuan@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3560.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qsujuan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4461f43b407d09069135"
+    ],
+    "email": [
+      "claim_4461f43b407d09069135"
+    ],
+    "name": [
+      "claim_4461f43b407d09069135"
+    ],
+    "profile_url": [
+      "claim_4461f43b407d09069135"
+    ],
+    "recent_papers": [
+      "claim_4461f43b407d09069135"
+    ],
+    "research_directions": [
+      "claim_4461f43b407d09069135"
+    ],
+    "status": [
+      "claim_4461f43b407d09069135"
+    ],
+    "title": [
+      "claim_4461f43b407d09069135"
+    ]
+  },
+  "id": "mentor_338895c8996c9e1f2fed",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4461f43b407d09069135"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "秦素娟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_475e262cef88077d0b3e",
+      "claim_ids": [
+        "claim_4461f43b407d09069135"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/3560.htm"
+    }
+  ],
+  "recent_papers": [
+    "KRProtector: Detection and Files Protection for IoT devices on Android without ROOT against Ransomware Based on Decoys",
+    "Dynamic Proof of Data Possession and Replication with Tree Sharing and Batch Verification in the Cloud",
+    "Variational quantum algorithm for the Poisson equation",
+    "Self-Testing of Symmetric Three-Qubit States",
+    "Error Tolerance Bound in QKD-Based Quantum Private Query",
+    "Comments on Provable Multicopy Dynamic Data Possession in Cloud Computing Systems",
+    "Quantum private query: A new kind of practical quantum cryptographic protocol",
+    "Asymptotic quantum algorithm for the Toeplitz systems"
+  ],
+  "research_directions": [
+    "量子密码、信息安全理论研究及工业互联网安全实践"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/3560.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

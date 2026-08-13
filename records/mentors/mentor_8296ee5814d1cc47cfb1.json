@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_08f45e6ba78fe9454933"
+      ],
+      "ended_at": null,
+      "id": "aff_4a3919b1da04618c85e7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_2642b40b425ae6441bf7",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3562.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_08f45e6ba78fe9454933"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4a3919b1da04618c85e7",
+      "claim_ids": [
+        "claim_08f45e6ba78fe9454933"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanghua_288@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3562.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhanghua_288@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_08f45e6ba78fe9454933"
+    ],
+    "email": [
+      "claim_08f45e6ba78fe9454933"
+    ],
+    "name": [
+      "claim_08f45e6ba78fe9454933"
+    ],
+    "profile_url": [
+      "claim_08f45e6ba78fe9454933"
+    ],
+    "research_directions": [
+      "claim_08f45e6ba78fe9454933"
+    ],
+    "status": [
+      "claim_08f45e6ba78fe9454933"
+    ],
+    "title": [
+      "claim_08f45e6ba78fe9454933"
+    ]
+  },
+  "id": "mentor_8296ee5814d1cc47cfb1",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_08f45e6ba78fe9454933"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4a3919b1da04618c85e7",
+      "claim_ids": [
+        "claim_08f45e6ba78fe9454933"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/3562.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "密码学、工业控制系统安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/3562.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

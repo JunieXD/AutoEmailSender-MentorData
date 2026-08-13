@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3bac081e2ee5ba26ae3e"
+      ],
+      "ended_at": null,
+      "id": "aff_65927677cf2f5425b672",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_212e51db2ebf653a5c76",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/4277.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3bac081e2ee5ba26ae3e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_65927677cf2f5425b672",
+      "claim_ids": [
+        "claim_3bac081e2ee5ba26ae3e"
+      ],
+      "is_primary": true,
+      "normalized_value": "dou@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/4277.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dou@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3bac081e2ee5ba26ae3e"
+    ],
+    "email": [
+      "claim_3bac081e2ee5ba26ae3e"
+    ],
+    "name": [
+      "claim_3bac081e2ee5ba26ae3e"
+    ],
+    "profile_url": [
+      "claim_3bac081e2ee5ba26ae3e"
+    ],
+    "research_directions": [
+      "claim_3bac081e2ee5ba26ae3e"
+    ],
+    "status": [
+      "claim_3bac081e2ee5ba26ae3e"
+    ],
+    "title": [
+      "claim_3bac081e2ee5ba26ae3e"
+    ]
+  },
+  "id": "mentor_9b58e4f6535515e2db02",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3bac081e2ee5ba26ae3e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "窦钊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_65927677cf2f5425b672",
+      "claim_ids": [
+        "claim_3bac081e2ee5ba26ae3e"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/4277.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子计算与后量子密码、物联网安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/4277.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

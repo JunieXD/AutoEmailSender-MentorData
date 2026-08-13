@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a8cdc493ed7f22d9cebc"
+      ],
+      "ended_at": null,
+      "id": "aff_a3eb666eca5864ad4fd9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_7e57adae6a952d5660e3",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3515.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_a8cdc493ed7f22d9cebc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a3eb666eca5864ad4fd9",
+      "claim_ids": [
+        "claim_a8cdc493ed7f22d9cebc"
+      ],
+      "is_primary": true,
+      "normalized_value": "cheer1107@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3515.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cheer1107@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a8cdc493ed7f22d9cebc"
+    ],
+    "email": [
+      "claim_a8cdc493ed7f22d9cebc"
+    ],
+    "name": [
+      "claim_a8cdc493ed7f22d9cebc"
+    ],
+    "profile_url": [
+      "claim_a8cdc493ed7f22d9cebc"
+    ],
+    "research_directions": [
+      "claim_a8cdc493ed7f22d9cebc"
+    ],
+    "status": [
+      "claim_a8cdc493ed7f22d9cebc"
+    ],
+    "title": [
+      "claim_a8cdc493ed7f22d9cebc"
+    ]
+  },
+  "id": "mentor_76d208b3e11ed73a7cdd",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a8cdc493ed7f22d9cebc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐洁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a3eb666eca5864ad4fd9",
+      "claim_ids": [
+        "claim_a8cdc493ed7f22d9cebc"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/3515.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据分析,移动通信网和物联网技术、区块链技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/3515.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

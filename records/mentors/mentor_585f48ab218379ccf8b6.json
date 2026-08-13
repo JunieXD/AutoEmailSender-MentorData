@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_31b0d43e7b464041f262"
+      ],
+      "ended_at": null,
+      "id": "aff_a9240e1c212708aab047",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_212e51db2ebf653a5c76",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1153.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_31b0d43e7b464041f262"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a9240e1c212708aab047",
+      "claim_ids": [
+        "claim_31b0d43e7b464041f262"
+      ],
+      "is_primary": true,
+      "normalized_value": "yxyang@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1153.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yxyang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_31b0d43e7b464041f262"
+    ],
+    "email": [
+      "claim_31b0d43e7b464041f262"
+    ],
+    "name": [
+      "claim_31b0d43e7b464041f262"
+    ],
+    "profile_url": [
+      "claim_31b0d43e7b464041f262"
+    ],
+    "research_directions": [
+      "claim_31b0d43e7b464041f262"
+    ],
+    "status": [
+      "claim_31b0d43e7b464041f262"
+    ],
+    "title": [
+      "claim_31b0d43e7b464041f262"
+    ]
+  },
+  "id": "mentor_585f48ab218379ccf8b6",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_31b0d43e7b464041f262"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨义先"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a9240e1c212708aab047",
+      "claim_ids": [
+        "claim_31b0d43e7b464041f262"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1153.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络与信息安全,现代密码理论与应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1153.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

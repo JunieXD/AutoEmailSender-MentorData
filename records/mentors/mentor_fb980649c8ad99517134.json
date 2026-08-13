@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8d26ed78b86a2f898c29"
+      ],
+      "ended_at": null,
+      "id": "aff_dc75cc427a73a0d171fb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_f07e4356fcf1e62abef6",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1190.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8d26ed78b86a2f898c29"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dc75cc427a73a0d171fb",
+      "claim_ids": [
+        "claim_8d26ed78b86a2f898c29"
+      ],
+      "is_primary": true,
+      "normalized_value": "kfzheng@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1190.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kfzheng@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8d26ed78b86a2f898c29"
+    ],
+    "email": [
+      "claim_8d26ed78b86a2f898c29"
+    ],
+    "name": [
+      "claim_8d26ed78b86a2f898c29"
+    ],
+    "profile_url": [
+      "claim_8d26ed78b86a2f898c29"
+    ],
+    "research_directions": [
+      "claim_8d26ed78b86a2f898c29"
+    ],
+    "status": [
+      "claim_8d26ed78b86a2f898c29"
+    ],
+    "title": [
+      "claim_8d26ed78b86a2f898c29"
+    ]
+  },
+  "id": "mentor_fb980649c8ad99517134",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8d26ed78b86a2f898c29"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑康锋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dc75cc427a73a0d171fb",
+      "claim_ids": [
+        "claim_8d26ed78b86a2f898c29"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1190.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络安全、人工智能安全、认知安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1190.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c88d2ad8bc98a2e97cc6"
+      ],
+      "ended_at": null,
+      "id": "aff_f2a231f0edab9fd9bb6d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_14f3812bb47cb07c8789",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/5190.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_c88d2ad8bc98a2e97cc6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f2a231f0edab9fd9bb6d",
+      "claim_ids": [
+        "claim_c88d2ad8bc98a2e97cc6"
+      ],
+      "is_primary": true,
+      "normalized_value": "changshuo@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/5190.htm",
+      "status": "current",
+      "type": "email",
+      "value": "changshuo@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ],
+    "email": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ],
+    "name": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ],
+    "profile_url": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ],
+    "recent_papers": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ],
+    "research_directions": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ],
+    "status": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ],
+    "title": [
+      "claim_c88d2ad8bc98a2e97cc6"
+    ]
+  },
+  "id": "mentor_502fd2f51a2e05975a53",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c88d2ad8bc98a2e97cc6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "昌硕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f2a231f0edab9fd9bb6d",
+      "claim_ids": [
+        "claim_c88d2ad8bc98a2e97cc6"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/5190.htm"
+    }
+  ],
+  "recent_papers": [
+    "Multitask-Learning-Based Deep Neural Network for Automatic Modulation Classification, in IEEE Internet of Things Journal, vol. 9, no. 3, pp. 2192-2206, 2022",
+    "A Hierarchical Classification Head based Convolutional Gated Deep Neural Network for Automatic Modulation Classification, in IEEE Transactions on Wireless Communications, early access",
+    "Spatial Attention Fusion for Obstacle Detection Using MmWave Radar and Vision Sensor, Sensors, vol. 20, no. 4, p. 956, 2020",
+    "Online Siamese Network for Visual Object Tracking, Sensors, vol. 19, no. 8, p. 1858, 2019",
+    "Modulation Classification of Active Attacks in Internet of Things: Lightweight MCBLDN with Spatial Transformer Network, in IEEE Internet of Things Journal, early access",
+    "Fusing MmWave Radar with Camera for 3D Detection in Autonomous Driving, early access",
+    "MmWave Radar and Vision Fusion for Object Detection in Autonomous Driving: A Review, Sensors, vol. 22, no. 7, p. 2542, 2022",
+    "Hierarchical Digital Modulation Classification Using Cascaded Convolutional Neural Network, in Journal of Communications and Information Networks, vol. 6, no. 1, pp. 72-81, 2021"
+  ],
+  "research_directions": [
+    "无线信号处理,多传感器融合,深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/5190.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

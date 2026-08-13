@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_88379d6341f97e11aa03"
+      ],
+      "ended_at": null,
+      "id": "aff_7d13c5ec2df720ff1be6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_212e51db2ebf653a5c76",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/4706.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_88379d6341f97e11aa03"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7d13c5ec2df720ff1be6",
+      "claim_ids": [
+        "claim_88379d6341f97e11aa03"
+      ],
+      "is_primary": true,
+      "normalized_value": "lijian@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/4706.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lijian@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_88379d6341f97e11aa03"
+    ],
+    "email": [
+      "claim_88379d6341f97e11aa03"
+    ],
+    "name": [
+      "claim_88379d6341f97e11aa03"
+    ],
+    "profile_url": [
+      "claim_88379d6341f97e11aa03"
+    ],
+    "recent_papers": [
+      "claim_88379d6341f97e11aa03"
+    ],
+    "research_directions": [
+      "claim_88379d6341f97e11aa03"
+    ],
+    "status": [
+      "claim_88379d6341f97e11aa03"
+    ],
+    "title": [
+      "claim_88379d6341f97e11aa03"
+    ]
+  },
+  "id": "mentor_e65582eec1d1be24b61d",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_88379d6341f97e11aa03"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李剑"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7d13c5ec2df720ff1be6",
+      "claim_ids": [
+        "claim_88379d6341f97e11aa03"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/4706.htm"
+    }
+  ],
+  "recent_papers": [
+    "Source-Location Privacy Protection based on Anonymity Cloud in Wireless Sensor Networks",
+    "An efficient anti-quantum lattice-based blind signature for blockchain-enabled systems",
+    "Healthchain: Secure EMRs Management and Trading in Distributed Healthcare Service System",
+    "A Quantum Key Distribution Protocol Based on the EPR Pairs and Its Simulation",
+    "Quantum Key Distribution Based on Single-particle and EPR Entanglement",
+    "Quantum adversarial metric learning model based on triplet loss function",
+    "Security and application of semi-quantum key distribution protocol for users with different quantum capabilities",
+    "Measurement-Based Quantum Sealed-Bid Auction"
+  ],
+  "research_directions": [
+    "网络空间安全、量子安全通信、人工智能、区块链技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/4706.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

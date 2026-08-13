@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_514cbc2106b1f8927fc8"
+      ],
+      "ended_at": null,
+      "id": "aff_bb477bb63fb8cee9e78b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_7e57adae6a952d5660e3",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/4384.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_514cbc2106b1f8927fc8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bb477bb63fb8cee9e78b",
+      "claim_ids": [
+        "claim_514cbc2106b1f8927fc8"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanxuejing@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/4384.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuanxuejing@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_514cbc2106b1f8927fc8"
+    ],
+    "email": [
+      "claim_514cbc2106b1f8927fc8"
+    ],
+    "name": [
+      "claim_514cbc2106b1f8927fc8"
+    ],
+    "profile_url": [
+      "claim_514cbc2106b1f8927fc8"
+    ],
+    "recent_papers": [
+      "claim_514cbc2106b1f8927fc8"
+    ],
+    "research_directions": [
+      "claim_514cbc2106b1f8927fc8"
+    ],
+    "status": [
+      "claim_514cbc2106b1f8927fc8"
+    ],
+    "title": [
+      "claim_514cbc2106b1f8927fc8"
+    ]
+  },
+  "id": "mentor_40069caefc5b6b9b718a",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_514cbc2106b1f8927fc8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁雪敬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bb477bb63fb8cee9e78b",
+      "claim_ids": [
+        "claim_514cbc2106b1f8927fc8"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/4384.htm"
+    }
+  ],
+  "recent_papers": [
+    "FedWM: Data-Free Watermarking for Model Ownership Protection in Federated Learning",
+    "EvilHarmony: Stealthy adversarial attacks against black-box speech recognition systems",
+    "Adversarial attack and defense for commercial black-box chinese-english speech recognition systems",
+    "EvilPromptFuzzer: generating inappropriate content based on text-to-image models",
+    "Enhancing privacy preservation in federated learning via learning rate perturbation",
+    "SoK: A modularized approach to study the security of automatic speech recognition systems",
+    "Devil’s Whisper: A general approach for physical adversarial attacks against commercial black-box speech recognition devices",
+    "Commandersong: A systematic approach for practical adversarial voice recognition"
+  ],
+  "research_directions": [
+    "人工智能系统安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/4384.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:29Z"
+}
