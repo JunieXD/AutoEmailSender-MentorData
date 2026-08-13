@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 import subprocess
+import time
 from collections.abc import Callable
 from pathlib import Path
 from typing import Any
@@ -20,6 +21,21 @@ REPOSITORY_PATTERN = re.compile(
     r"^[A-Za-z0-9](?:[A-Za-z0-9_.-]{0,38})/[A-Za-z0-9_.-]{1,100}$"
 )
 MAX_MANIFEST_BYTES = 20_000_000
+TRANSIENT_GITHUB_MESSAGES = (
+    "eof",
+    "timed out",
+    "timeout",
+    "connection reset",
+    "connection refused",
+    "temporary failure",
+    "service unavailable",
+    "bad gateway",
+    "gateway timeout",
+    "rate limit",
+    "502",
+    "503",
+    "504",
+)
 
 
 class GitHubReviewClient:
@@ -28,13 +44,24 @@ class GitHubReviewClient:
         *,
         repository: str,
         root: Path,
+        max_attempts: int = 3,
+        sleeper: Callable[[float], None] = time.sleep,
         runner: Callable[..., subprocess.CompletedProcess] = subprocess.run,
     ) -> None:
         if REPOSITORY_PATTERN.fullmatch(repository) is None:
             raise AgentReviewError("review_repository_invalid", "GitHub 仓库名无效")
         self.repository = repository
         self.root = root.resolve()
+        if max_attempts < 1 or max_attempts > 5:
+            raise AgentReviewError("review_retry_invalid", "GitHub 重试次数必须在 1 到 5 之间")
+        self.max_attempts = max_attempts
+        self.sleeper = sleeper
         self.runner = runner
+
+    @staticmethod
+    def _is_transient(message: str) -> bool:
+        normalized = message.casefold()
+        return any(item in normalized for item in TRANSIENT_GITHUB_MESSAGES)
 
     def _run(
         self,
@@ -43,29 +70,39 @@ class GitHubReviewClient:
         text: bool = True,
         input_value: str | None = None,
         cwd: Path | None = None,
+        retry_transient: bool = False,
     ) -> subprocess.CompletedProcess:
-        try:
-            return self.runner(
-                command,
-                check=True,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                text=text,
-                input=input_value,
-                cwd=cwd,
-            )
-        except subprocess.CalledProcessError as error:
-            stderr = error.stderr
-            if isinstance(stderr, bytes):
-                stderr = stderr.decode("utf-8", errors="replace")
-            message = str(stderr or error).splitlines()[0][:500]
-            raise AgentReviewError(
-                "review_github_unavailable",
-                f"GitHub 命令失败：{message}",
-            ) from error
+        for attempt in range(1, self.max_attempts + 1):
+            try:
+                return self.runner(
+                    command,
+                    check=True,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=text,
+                    input=input_value,
+                    cwd=cwd,
+                )
+            except (OSError, subprocess.CalledProcessError) as error:
+                stderr = getattr(error, "stderr", None)
+                if isinstance(stderr, bytes):
+                    stderr = stderr.decode("utf-8", errors="replace")
+                message = str(stderr or error).splitlines()[0][:500]
+                if (
+                    retry_transient
+                    and attempt < self.max_attempts
+                    and self._is_transient(message)
+                ):
+                    self.sleeper(float(2 ** (attempt - 1)))
+                    continue
+                raise AgentReviewError(
+                    "review_github_unavailable",
+                    f"GitHub 命令失败：{message}",
+                ) from error
+        raise AssertionError("unreachable")
 
     def _json(self, endpoint: str) -> Any:
-        completed = self._run(["gh", "api", endpoint])
+        completed = self._run(["gh", "api", endpoint], retry_transient=True)
         try:
             return json.loads(completed.stdout)
         except json.JSONDecodeError as error:
@@ -75,7 +112,10 @@ class GitHubReviewClient:
             ) from error
 
     def _paginated(self, endpoint: str, *, max_items: int = 10_000) -> list[Any]:
-        completed = self._run(["gh", "api", "--paginate", "--slurp", endpoint])
+        completed = self._run(
+            ["gh", "api", "--paginate", "--slurp", endpoint],
+            retry_transient=True,
+        )
         try:
             pages = json.loads(completed.stdout)
         except json.JSONDecodeError as error:
@@ -157,6 +197,7 @@ class GitHubReviewClient:
                 endpoint,
             ],
             text=False,
+            retry_transient=True,
         )
         payload = completed.stdout
         if not isinstance(payload, bytes):
@@ -201,7 +242,8 @@ class GitHubReviewClient:
                 "-H",
                 "Accept: application/vnd.github.raw+json",
                 f"repos/{self.repository}/contents/registry/organizations.yml?ref=main",
-            ]
+            ],
+            retry_transient=True,
         )
         try:
             document = yaml.safe_load(completed.stdout)
@@ -226,6 +268,7 @@ class GitHubReviewClient:
                 f"+refs/pull/{pull.number}/head:refs/remotes/origin/agent-review-{pull.number}",
             ],
             cwd=self.root,
+            retry_transient=True,
         )
         fetched = self._run(
             ["git", "rev-parse", f"refs/remotes/origin/agent-review-{pull.number}"],
@@ -280,6 +323,48 @@ class GitHubReviewClient:
                 "GitHub 返回的审核评论缺少 ID",
             )
         return value
+
+    def retry_promotion(self, pull_number: int) -> dict[str, Any]:
+        value = self._json(f"repos/{self.repository}/pulls/{pull_number}")
+        if not isinstance(value, dict):
+            raise AgentReviewError("review_pull_invalid", "Pull Request 元数据格式无效")
+        try:
+            pull = load_internal_pull(value, expected_repository=self.repository)
+        except SubmissionError as error:
+            raise AgentReviewError(
+                "review_retry_not_open",
+                f"PR #{pull_number} 已不是待落库的内部 PR：{error}",
+            ) from error
+        if pull.kind != "batch":
+            raise AgentReviewError(
+                "review_pull_not_batch",
+                f"PR #{pull_number} 不是批量导师投稿",
+            )
+        if not self.official_review_comments(pull_number):
+            raise AgentReviewError(
+                "review_retry_not_approved",
+                f"PR #{pull_number} 尚无正式审核评论，不能触发重试",
+            )
+        completed = self._run(
+            [
+                "gh",
+                "workflow",
+                "run",
+                "promote-ready-pulls.yml",
+                "--repo",
+                self.repository,
+                "--ref",
+                "main",
+                "-f",
+                f"pull_number={pull_number}",
+            ]
+        )
+        return {
+            "pr": pull_number,
+            "workflow": "promote-ready-pulls.yml",
+            "dispatched": True,
+            "output": str(completed.stdout or "").strip() or None,
+        }
 
     def status(self, pull_number: int, *, issue_number: int | None = None) -> dict[str, Any]:
         pull = self._json(f"repos/{self.repository}/pulls/{pull_number}")

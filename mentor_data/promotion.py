@@ -6,6 +6,7 @@ import re
 import shutil
 import subprocess
 import tempfile
+import time
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import UTC, datetime
@@ -68,10 +69,56 @@ class PromotionSummary:
     merged: int
     failed: int
     skipped: int
+    retryable: int = 0
+    results: tuple[dict[str, Any], ...] = ()
 
 
 class MainBranchMoved(RuntimeError):
     pass
+
+
+def _looks_like_branch_race(error: BaseException) -> bool:
+    text = str(error).casefold()
+    return any(
+        phrase in text
+        for phrase in (
+            "base branch was modified",
+            "base branch has been modified",
+            "head branch was modified",
+            "expected head commit",
+            "match-head-commit",
+        )
+    )
+
+
+def _looks_like_transient(error: BaseException) -> bool:
+    text = str(error).casefold()
+    return any(
+        phrase in text
+        for phrase in (
+            "eof",
+            "timed out",
+            "timeout",
+            "connection reset",
+            "connection refused",
+            "temporary failure",
+            "service unavailable",
+            "bad gateway",
+            "gateway timeout",
+            "rate limit",
+            "502",
+            "503",
+            "504",
+        )
+    )
+
+
+class PromotionRetryableError(RuntimeError):
+    """A queue item can be retried safely on a later trusted run."""
+
+    def __init__(self, message: str, *, attempts: int) -> None:
+        super().__init__(message)
+        self.attempts = attempts
 
 
 class PromotionQueue:
@@ -81,6 +128,9 @@ class PromotionQueue:
         root: Path,
         repository: str,
         include_attention: bool = False,
+        pull_number: int | None = None,
+        max_attempts: int = 3,
+        sleeper: Callable[[float], None] = time.sleep,
         runner: Callable[..., subprocess.CompletedProcess] = subprocess.run,
     ) -> None:
         if REPOSITORY_PATTERN.fullmatch(repository) is None:
@@ -88,14 +138,28 @@ class PromotionQueue:
         self.root = root.resolve()
         self.repository = repository
         self.include_attention = include_attention
+        if pull_number is not None and pull_number <= 0:
+            raise ValueError("PR 编号必须大于零")
+        if max_attempts < 1 or max_attempts > 5:
+            raise ValueError("promotion 重试次数必须在 1 到 5 之间")
+        self.pull_number = pull_number
+        self.max_attempts = max_attempts
+        self.sleeper = sleeper
         self.runner = runner
 
     def run(self) -> PromotionSummary:
         pulls = self._list_open_pulls()
+        selected_pulls = [
+            item
+            for item in pulls
+            if self.pull_number is None or item.get("number") == self.pull_number
+        ]
         merged = 0
         failed = 0
         skipped = 0
-        for pull_payload in pulls:
+        retryable = 0
+        results: list[dict[str, Any]] = []
+        for pull_payload in selected_pulls:
             labels = {
                 item.get("name")
                 for item in pull_payload.get("labels", [])
@@ -103,6 +167,13 @@ class PromotionQueue:
             }
             if ATTENTION_LABEL in labels and not self.include_attention:
                 skipped += 1
+                results.append(
+                    {
+                        "pr": pull_payload.get("number"),
+                        "status": "skipped",
+                        "reason": "needs-attention",
+                    }
+                )
                 continue
             try:
                 pull = load_internal_pull(
@@ -111,18 +182,46 @@ class PromotionQueue:
                 )
             except SubmissionError:
                 skipped += 1
+                results.append(
+                    {
+                        "pr": pull_payload.get("number"),
+                        "status": "skipped",
+                        "reason": "not-internal-pull",
+                    }
+                )
                 continue
             try:
                 if not self._is_ready(pull):
                     skipped += 1
+                    results.append(
+                        {"pr": pull.number, "status": "skipped", "reason": "not-ready"}
+                    )
                     continue
-                self._promote(pull)
+                attempts = self._promote_with_retry(pull)
                 self._remove_attention_label(pull.number)
                 merged += 1
-            except MainBranchMoved:
-                skipped += 1
+                results.append({"pr": pull.number, "status": "merged", "attempts": attempts})
+            except PromotionRetryableError as error:
+                failed += 1
+                retryable += 1
+                results.append(
+                    {
+                        "pr": pull.number,
+                        "status": "retryable",
+                        "attempts": error.attempts,
+                        "error": str(error).splitlines()[0][:1_000],
+                    }
+                )
+                print(f"Retryable promotion failure for PR #{pull.number}: {error}")
             except (RepositoryValidationError, SubmissionError, ValueError) as error:
                 failed += 1
+                results.append(
+                    {
+                        "pr": pull.number,
+                        "status": "failed",
+                        "error": str(error).splitlines()[0][:1_000],
+                    }
+                )
                 try:
                     self._mark_attention(pull, self._attention_message(error))
                 except (OSError, RuntimeError, subprocess.CalledProcessError) as mark_error:
@@ -131,13 +230,65 @@ class PromotionQueue:
                     )
             except (OSError, RuntimeError, subprocess.CalledProcessError) as error:
                 failed += 1
+                results.append(
+                    {
+                        "pr": pull.number,
+                        "status": "failed",
+                        "error": str(error).splitlines()[0][:1_000],
+                    }
+                )
                 print(f"Transient promotion failure for PR #{pull.number}: {error}")
         return PromotionSummary(
-            scanned=len(pulls),
+            scanned=len(selected_pulls),
             merged=merged,
             failed=failed,
             skipped=skipped,
+            retryable=retryable,
+            results=tuple(results),
         )
+
+    def _refresh_pull(self, pull: InternalPull) -> InternalPull:
+        value = self._gh_json(f"repos/{self.repository}/pulls/{pull.number}")
+        if not isinstance(value, dict):
+            raise RuntimeError("GitHub PR 刷新结果格式无效")
+        refreshed = load_internal_pull(value, expected_repository=self.repository)
+        if refreshed.kind != pull.kind or refreshed.issue_number != pull.issue_number:
+            raise RuntimeError("Pull Request 身份在重试期间发生变化")
+        return refreshed
+
+    def _promote_with_retry(self, pull: InternalPull) -> int:
+        current = pull
+        last_error: BaseException | None = None
+        for attempt in range(1, self.max_attempts + 1):
+            try:
+                self._promote(current)
+                return attempt
+            except MainBranchMoved as error:
+                last_error = error
+            except (OSError, RuntimeError, subprocess.CalledProcessError) as error:
+                if _looks_like_branch_race(error) or _looks_like_transient(error):
+                    last_error = error
+                else:
+                    raise
+            if attempt >= self.max_attempts:
+                break
+            self.sleeper(float(2 ** (attempt - 1)))
+            try:
+                current = self._refresh_pull(current)
+            except SubmissionError as error:
+                raise PromotionRetryableError(
+                    f"PR #{pull.number} 在重试前已关闭或变化：{error}",
+                    attempts=attempt,
+                ) from error
+            except (OSError, RuntimeError, subprocess.CalledProcessError) as error:
+                if not (_looks_like_branch_race(error) or _looks_like_transient(error)):
+                    raise
+                last_error = error
+        wrapped = PromotionRetryableError(
+            f"PR #{pull.number} 在 {self.max_attempts} 次尝试后仍未完成：{last_error}",
+            attempts=self.max_attempts,
+        )
+        raise wrapped from last_error
 
     @staticmethod
     def _attention_message(error: Exception) -> str:
@@ -167,27 +318,62 @@ class PromotionQueue:
         text: bool = True,
         cwd: Path | None = None,
     ) -> subprocess.CompletedProcess:
-        return self.runner(
-            command,
-            check=True,
-            stdout=subprocess.PIPE,
-            text=text,
-            cwd=cwd,
-        )
+        try:
+            return self.runner(
+                command,
+                check=True,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=text,
+                cwd=cwd,
+            )
+        except subprocess.CalledProcessError as error:
+            stderr = error.stderr
+            if isinstance(stderr, bytes):
+                stderr = stderr.decode("utf-8", errors="replace")
+            stdout = error.stdout
+            if isinstance(stdout, bytes):
+                stdout = stdout.decode("utf-8", errors="replace")
+            detail = str(stderr or stdout or error).strip()
+            raise RuntimeError(detail or "命令执行失败") from error
+
+    def _github_read(self, command: list[str]) -> subprocess.CompletedProcess:
+        last_error: RuntimeError | None = None
+        for attempt in range(1, self.max_attempts + 1):
+            try:
+                return self._run(command)
+            except RuntimeError as error:
+                if not _looks_like_transient(error) or attempt >= self.max_attempts:
+                    raise
+                last_error = error
+                self.sleeper(float(2 ** (attempt - 1)))
+        assert last_error is not None
+        raise last_error
 
     def _gh_json(self, endpoint: str) -> Any:
-        completed = self._run(["gh", "api", endpoint])
-        try:
-            return json.loads(completed.stdout)
-        except json.JSONDecodeError as error:
-            raise RuntimeError("GitHub API 没有返回有效 JSON") from error
+        for attempt in range(1, self.max_attempts + 1):
+            completed = self._github_read(["gh", "api", endpoint])
+            try:
+                return json.loads(completed.stdout)
+            except json.JSONDecodeError as error:
+                if attempt >= self.max_attempts:
+                    raise RuntimeError("GitHub API 没有返回有效 JSON") from error
+                self.sleeper(float(2 ** (attempt - 1)))
+        raise AssertionError("unreachable")
 
     def _gh_paginated_list(self, endpoint: str, *, max_items: int = 10_000) -> list[Any]:
-        completed = self._run(["gh", "api", "--paginate", "--slurp", endpoint])
-        try:
-            pages = json.loads(completed.stdout)
-        except json.JSONDecodeError as error:
-            raise RuntimeError("GitHub API 分页结果不是有效 JSON") from error
+        pages: Any = None
+        for attempt in range(1, self.max_attempts + 1):
+            completed = self._github_read(
+                ["gh", "api", "--paginate", "--slurp", endpoint]
+            )
+            try:
+                pages = json.loads(completed.stdout)
+                break
+            except json.JSONDecodeError as error:
+                if attempt >= self.max_attempts:
+                    raise RuntimeError("GitHub API 分页结果不是有效 JSON") from error
+                self.sleeper(float(2 ** (attempt - 1)))
         if not isinstance(pages, list) or any(not isinstance(page, list) for page in pages):
             raise RuntimeError("GitHub API 分页结果格式无效")
         values = [item for page in pages for item in page]
@@ -709,20 +895,28 @@ class PromotionQueue:
         )
         if self._origin_main_sha() != expected_base_sha:
             raise MainBranchMoved("main 在合并前已经更新")
-        self._run(
-            [
-                "gh",
-                "pr",
-                "merge",
-                str(pull.number),
-                "--repo",
-                self.repository,
-                "--squash",
-                "--delete-branch",
-                "--match-head-commit",
-                expected_head_sha,
-            ]
-        )
+        try:
+            self._run(
+                [
+                    "gh",
+                    "pr",
+                    "merge",
+                    str(pull.number),
+                    "--repo",
+                    self.repository,
+                    "--squash",
+                    "--delete-branch",
+                    "--match-head-commit",
+                    expected_head_sha,
+                ]
+            )
+        except RuntimeError as error:
+            if not _looks_like_transient(error):
+                raise
+            fresh = self._gh_json(f"repos/{self.repository}/pulls/{pull.number}")
+            if isinstance(fresh, dict) and fresh.get("merged") is True:
+                return
+            raise
 
     def _mark_attention(self, pull: InternalPull, message: str) -> None:
         self._run(
@@ -808,6 +1002,12 @@ def write_github_outputs(path: Path, summary: PromotionSummary) -> None:
         handle.write(f"merged={summary.merged}\n")
         handle.write(f"failed={summary.failed}\n")
         handle.write(f"skipped={summary.skipped}\n")
+        handle.write(f"retryable={summary.retryable}\n")
+        handle.write(
+            "results="
+            + json.dumps(summary.results, ensure_ascii=False, separators=(",", ":"))
+            + "\n"
+        )
         handle.write(f"publish={'true' if summary.merged else 'false'}\n")
 
 

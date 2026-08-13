@@ -382,6 +382,18 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     )
     _add_fields(status)
 
+    retry = commands.add_parser(
+        "retry",
+        parents=[common],
+        help="为已正式批准但停滞的 PR 重新触发可信落库队列",
+        description=(
+            "只触发 main 上的 promote-ready-pulls.yml，不直接修改 PR、分支或合并状态。"
+            "要求 PR 仍开放、已有正式审核评论，并提供完全一致的 --confirm-pr。"
+        ),
+    )
+    retry.add_argument("--pr", type=int, required=True)
+    retry.add_argument("--confirm-pr", type=int, required=True)
+
 
 def _is_repository_root(path: Path) -> bool:
     return all((path / marker).is_file() for marker in ROOT_MARKERS)
@@ -1249,11 +1261,19 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
         phase = "workflow-running"
         outcome = None
         terminal = False
+    elif promotion_status == "completed" and promotion_conclusion in {
+        "success",
+        "skipped",
+        "neutral",
+    }:
+        phase = "retryable-stalled"
+        outcome = "retryable-stalled"
+        terminal = True
     else:
         phase = "promotion-queued"
         outcome = None
         terminal = False
-    return {
+    result = {
         **value,
         "phase": phase,
         "terminal": terminal,
@@ -1268,6 +1288,25 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
             or value.get("updated_at")
         ),
         "next_poll_seconds": None if terminal else next_poll_seconds,
+    }
+    if phase == "retryable-stalled":
+        result["next"] = (
+            f"mentor-data review retry --pr {value.get('pr')} "
+            f"--confirm-pr {value.get('pr')}"
+        )
+    return result
+
+
+def _retry(args: argparse.Namespace, root: Path) -> dict[str, Any]:
+    if args.confirm_pr != args.pr:
+        raise AgentReviewError(
+            "review_confirmation_mismatch",
+            "--confirm-pr 必须与 --pr 完全一致",
+        )
+    result = _client(args, root).retry_promotion(args.pr)
+    return {
+        **result,
+        "next": f"mentor-data review status --pr {args.pr} --wait",
     }
 
 
@@ -1347,6 +1386,8 @@ def execute_review(args: argparse.Namespace) -> int:
             data = _submit(args, root, workspace)
         elif command == "status":
             data = _status(args, root, workspace)
+        elif command == "retry":
+            data = _retry(args, root)
         else:
             raise AgentReviewError("review_command_invalid", "未知审核命令")
         _emit(command, data, output_format=output_format)

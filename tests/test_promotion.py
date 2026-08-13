@@ -23,7 +23,12 @@ from mentor_data.organization_review import (
     REVIEW_COMMENT_MARKER,
     create_organization_review_manifest,
 )
-from mentor_data.promotion import PromotionQueue, PromotionReceipt
+from mentor_data.promotion import (
+    PromotionQueue,
+    PromotionReceipt,
+    PromotionSummary,
+    write_github_outputs,
+)
 from mentor_data.proposals import create_mentor_proposal
 from mentor_data.report_review import REPORT_REVIEW_COMMENT_MARKER
 from mentor_data.reporting import create_report_proposal
@@ -249,6 +254,91 @@ def test_one_invalid_pull_and_attention_failure_do_not_block_the_next_pull(
     assert summary.failed == 1
     assert summary.merged == 1
     assert queue.promoted == [89]
+
+
+def test_main_branch_race_is_retried_and_reported(tmp_path: Path) -> None:
+    class RetryQueue(PromotionQueue):
+        attempts = 0
+
+        def _list_open_pulls(self):
+            return [_pull_payload(number=88, issue_number=40)]
+
+        def _is_ready(self, pull):
+            return True
+
+        def _promote(self, pull):
+            self.attempts += 1
+            if self.attempts < 3:
+                raise RuntimeError("Base branch was modified. Review and try the merge again.")
+
+        def _refresh_pull(self, pull):
+            return pull
+
+        def _remove_attention_label(self, pull_number):
+            return None
+
+    sleeps: list[float] = []
+    queue = RetryQueue(
+        root=tmp_path,
+        repository="example/repository",
+        sleeper=sleeps.append,
+    )
+
+    summary = queue.run()
+
+    assert summary.merged == 1
+    assert summary.failed == 0
+    assert summary.results == ({"pr": 88, "status": "merged", "attempts": 3},)
+    assert sleeps == [1.0, 2.0]
+
+
+def test_exhausted_race_is_a_retryable_failure_not_a_skip(tmp_path: Path) -> None:
+    class RetryQueue(PromotionQueue):
+        def _list_open_pulls(self):
+            return [_pull_payload(number=88, issue_number=40)]
+
+        def _is_ready(self, pull):
+            return True
+
+        def _promote(self, pull):
+            raise RuntimeError("Base branch was modified. Review and try the merge again.")
+
+        def _refresh_pull(self, pull):
+            return pull
+
+    summary = RetryQueue(
+        root=tmp_path,
+        repository="example/repository",
+        max_attempts=2,
+        sleeper=lambda seconds: None,
+    ).run()
+
+    assert summary.failed == 1
+    assert summary.retryable == 1
+    assert summary.skipped == 0
+    assert summary.results[0]["status"] == "retryable"
+    assert summary.results[0]["attempts"] == 2
+
+
+def test_promotion_outputs_include_machine_readable_per_pull_results(tmp_path: Path) -> None:
+    output = tmp_path / "github-output"
+    summary = PromotionSummary(
+        scanned=1,
+        merged=0,
+        failed=1,
+        skipped=0,
+        retryable=1,
+        results=({"pr": 88, "status": "retryable", "attempts": 3},),
+    )
+
+    write_github_outputs(output, summary)
+
+    values = dict(line.split("=", 1) for line in output.read_text(encoding="utf-8").splitlines())
+    assert values["retryable"] == "1"
+    assert json.loads(values["results"]) == [
+        {"pr": 88, "status": "retryable", "attempts": 3}
+    ]
+    assert values["publish"] == "false"
 
 
 def test_finalized_branch_receipt_recovers_without_reapplying_the_proposal(

@@ -115,10 +115,13 @@ def test_promotion_uses_trusted_default_branch_and_durable_fallback_triggers() -
     assert "schedule:" in text
     assert "run-name:" in text
     assert "after review PR #{0}" in text
+    assert "retry PR #{0}" in text
+    assert "pull_number:" in text
     assert "github.event.comment.body" not in "\n".join(
         line for line in text.splitlines() if line.lstrip().startswith("run:")
     )
     assert "gh workflow run pages.yml" in text
+    assert "always() && steps.promotion.outputs.publish == 'true'" in text
     assert "mentor-data-report-review:v1" in text
 
 

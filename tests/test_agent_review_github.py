@@ -91,6 +91,86 @@ def test_submit_comment_uses_json_stdin_without_shell_interpolation(tmp_path: Pa
     assert body not in command
 
 
+def test_transient_github_eof_is_retried(tmp_path: Path) -> None:
+    attempts = 0
+    sleeps: list[float] = []
+
+    def runner(command, **kwargs):
+        nonlocal attempts
+        attempts += 1
+        if attempts == 1:
+            raise subprocess.CalledProcessError(1, command, stderr="unexpected EOF")
+        return subprocess.CompletedProcess(command, 0, json.dumps({"ok": True}), "")
+
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=tmp_path,
+        runner=runner,
+        sleeper=sleeps.append,
+    )
+
+    assert client._json("repos/example/repository") == {"ok": True}
+    assert attempts == 2
+    assert sleeps == [1.0]
+
+
+def test_mutating_github_command_is_not_replayed_after_eof(tmp_path: Path) -> None:
+    attempts = 0
+
+    def runner(command, **kwargs):
+        nonlocal attempts
+        attempts += 1
+        raise subprocess.CalledProcessError(1, command, stderr="unexpected EOF")
+
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=tmp_path,
+        runner=runner,
+        sleeper=lambda seconds: None,
+    )
+
+    with pytest.raises(AgentReviewError):
+        client.submit_review_comment(12, "review")
+
+    assert attempts == 1
+
+
+def test_retry_promotion_dispatches_only_the_trusted_workflow(tmp_path: Path) -> None:
+    calls: list[list[str]] = []
+
+    def runner(command, **kwargs):
+        calls.append(command)
+        return subprocess.CompletedProcess(command, 0, "", "")
+
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=tmp_path,
+        runner=runner,
+    )
+    client._json = lambda endpoint: _pull_payload()  # type: ignore[method-assign]
+    client.official_review_comments = (  # type: ignore[method-assign]
+        lambda pull_number: [{"id": 99}]
+    )
+
+    result = client.retry_promotion(12)
+
+    assert result["dispatched"] is True
+    assert calls == [
+        [
+            "gh",
+            "workflow",
+            "run",
+            "promote-ready-pulls.yml",
+            "--repo",
+            "example/repository",
+            "--ref",
+            "main",
+            "-f",
+            "pull_number=12",
+        ]
+    ]
+
+
 def test_fetch_main_organizations_returns_compact_active_options() -> None:
     registry = """\
 schema_version: 1

@@ -23,6 +23,7 @@ from mentor_data.agent_review_cli import (
     _doctor,
     _questions,
     _queue,
+    _retry,
     _root,
     _status,
 )
@@ -620,6 +621,51 @@ def test_status_classifies_attention_and_workflow_failure() -> None:
     assert failure["outcome"] == "workflow-failure"
     assert action_failure["outcome"] == "workflow-failure"
     assert attention["terminal"] is failure["terminal"] is action_failure["terminal"] is True
+
+
+def test_status_classifies_successful_action_without_merge_as_retryable_stalled() -> None:
+    result = _classify_status(
+        {
+            "pr": 88,
+            "pr_state": "open",
+            "merged": False,
+            "merged_at": None,
+            "updated_at": "2026-08-12T10:00:00Z",
+            "labels": [],
+            "review_comments": 1,
+            "checks": {"total": 1, "pending": 0, "failed": 0},
+            "promotion_run": {
+                "status": "completed",
+                "conclusion": "success",
+                "updated_at": "2026-08-12T10:02:00Z",
+            },
+        },
+        next_poll_seconds=5,
+    )
+
+    assert result["phase"] == "retryable-stalled"
+    assert result["terminal"] is True
+    assert result["next"] == "mentor-data review retry --pr 88 --confirm-pr 88"
+
+
+def test_retry_requires_confirmation_and_dispatches_trusted_queue(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    class Client:
+        def retry_promotion(self, pull_number):
+            return {"pr": pull_number, "dispatched": True}
+
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    args = argparse.Namespace(pr=88, confirm_pr=88, repository="example/repository")
+
+    result = _retry(args, tmp_path)
+
+    assert result == {
+        "pr": 88,
+        "dispatched": True,
+        "next": "mentor-data review status --pr 88 --wait",
+    }
 
 
 def test_status_wait_returns_timeout_as_terminal_outcome(
