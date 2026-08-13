@@ -1,0 +1,789 @@
+{
+  "created_organization_ids": [
+    "org_auto_0da9de1e7a5944ba54da",
+    "org_auto_16b7ee6f798a58a56b28",
+    "org_auto_2b2d54e37a634184854a",
+    "org_auto_376ca1495a9cd78870ce",
+    "org_auto_40a72300d85e3888388b",
+    "org_auto_45fa5f9ea81dfa05f160",
+    "org_auto_5c3090952227a829f5ac",
+    "org_auto_82af4026e58910b0b029",
+    "org_auto_98eae5e1804049179d88",
+    "org_auto_a17c92199e49c73c642b"
+  ],
+  "decided_at": "2026-08-13T02:21:10Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_008cb452a464a91f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_376ca1495a9cd78870ce"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_035663e1826dffd1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2d576fc3e53bdbdc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_357ece5f88d862c0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_16b7ee6f798a58a56b28"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6a0ba407c1f093cb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_45fa5f9ea81dfa05f160"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7d7afb6cb039fdfb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_989db4eb755f05e0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c93c46de4d519c2b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_0da9de1e7a5944ba54da"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_cf16930c00e39127",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_82af4026e58910b0b029"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d2ab3dc446ccd4a8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f20ad299942efdfa",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_5c3090952227a829f5ac"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f9e6b83d8efc1120",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "csu.edu.cn"
+          ],
+          "canonical_name": "中南大学",
+          "level": "university",
+          "official_url": "https://csu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_2b2d54e37a634184854a"
+    }
+  ],
+  "id": "organization_review_issue_44",
+  "invalid_rows": [],
+  "issue": {
+    "number": 44,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/44"
+  },
+  "manifest_sha256": "a324dfd1bd0d11cbdd5ddbef041ef26c961da5e1b66b2844b48e7d83aacbd1c8",
+  "mapped_proposal_ids": [
+    "proposal_issue_44_row_1",
+    "proposal_issue_44_row_10",
+    "proposal_issue_44_row_11",
+    "proposal_issue_44_row_12",
+    "proposal_issue_44_row_13",
+    "proposal_issue_44_row_14",
+    "proposal_issue_44_row_15",
+    "proposal_issue_44_row_16",
+    "proposal_issue_44_row_17",
+    "proposal_issue_44_row_18",
+    "proposal_issue_44_row_19",
+    "proposal_issue_44_row_2",
+    "proposal_issue_44_row_20",
+    "proposal_issue_44_row_21",
+    "proposal_issue_44_row_22",
+    "proposal_issue_44_row_23",
+    "proposal_issue_44_row_24",
+    "proposal_issue_44_row_25",
+    "proposal_issue_44_row_26",
+    "proposal_issue_44_row_27",
+    "proposal_issue_44_row_28",
+    "proposal_issue_44_row_29",
+    "proposal_issue_44_row_3",
+    "proposal_issue_44_row_30",
+    "proposal_issue_44_row_31",
+    "proposal_issue_44_row_4",
+    "proposal_issue_44_row_5",
+    "proposal_issue_44_row_6",
+    "proposal_issue_44_row_7",
+    "proposal_issue_44_row_8",
+    "proposal_issue_44_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "资源加工与生物工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_0da9de1e7a5944ba54da",
+      "organization_type": "school",
+      "parent_id": "org_auto_a17c92199e49c73c642b"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "电子信息学院",
+      "official_url": null,
+      "organization_id": "org_auto_16b7ee6f798a58a56b28",
+      "organization_type": "school",
+      "parent_id": "org_auto_a17c92199e49c73c642b"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "冶金与环境学院",
+      "official_url": null,
+      "organization_id": "org_auto_2b2d54e37a634184854a",
+      "organization_type": "school",
+      "parent_id": "org_auto_a17c92199e49c73c642b"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "资源与安全工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_376ca1495a9cd78870ce",
+      "organization_type": "school",
+      "parent_id": "org_auto_a17c92199e49c73c642b"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "交通运输工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_45fa5f9ea81dfa05f160",
+      "organization_type": "school",
+      "parent_id": "org_auto_a17c92199e49c73c642b"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "自动化学院",
+      "official_url": null,
+      "organization_id": "org_auto_5c3090952227a829f5ac",
+      "organization_type": "school",
+      "parent_id": "org_auto_a17c92199e49c73c642b"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "湘雅药学院",
+      "official_url": null,
+      "organization_id": "org_auto_82af4026e58910b0b029",
+      "organization_type": "school",
+      "parent_id": "org_auto_a17c92199e49c73c642b"
+    }
+  ],
+  "path_corrections": [
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_44_row_16",
+        "proposal_issue_44_row_4"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "ai.csu.edu.cn"
+      ],
+      "submitted": {
+        "department": "资源与安全工程学院",
+        "school": "人工智能学院",
+        "university": "中南大学"
+      },
+      "target_organization_id": "org_auto_376ca1495a9cd78870ce"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_44_row_19",
+        "proposal_issue_44_row_2"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "ai.csu.edu.cn"
+      ],
+      "submitted": {
+        "department": "电子信息学院",
+        "school": "人工智能学院",
+        "university": "中南大学"
+      },
+      "target_organization_id": "org_auto_16b7ee6f798a58a56b28"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_44_row_18",
+        "proposal_issue_44_row_20",
+        "proposal_issue_44_row_6",
+        "proposal_issue_44_row_9"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "ai.csu.edu.cn"
+      ],
+      "submitted": {
+        "department": "交通运输工程学院",
+        "school": "人工智能学院",
+        "university": "中南大学"
+      },
+      "target_organization_id": "org_auto_45fa5f9ea81dfa05f160"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_44_row_1"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "ai.csu.edu.cn"
+      ],
+      "submitted": {
+        "department": "资源加工与生物工程学院",
+        "school": "人工智能学院",
+        "university": "中南大学"
+      },
+      "target_organization_id": "org_auto_0da9de1e7a5944ba54da"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_44_row_17"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "ai.csu.edu.cn"
+      ],
+      "submitted": {
+        "department": "湘雅药学院",
+        "school": "人工智能学院",
+        "university": "中南大学"
+      },
+      "target_organization_id": "org_auto_82af4026e58910b0b029"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_44_row_14"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "ai.csu.edu.cn"
+      ],
+      "submitted": {
+        "department": "自动化学院",
+        "school": "人工智能学院",
+        "university": "中南大学"
+      },
+      "target_organization_id": "org_auto_5c3090952227a829f5ac"
+    },
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_44_row_21",
+        "proposal_issue_44_row_22",
+        "proposal_issue_44_row_23",
+        "proposal_issue_44_row_24",
+        "proposal_issue_44_row_3",
+        "proposal_issue_44_row_8"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "ai.csu.edu.cn"
+      ],
+      "submitted": {
+        "department": "冶金与环境学院",
+        "school": "人工智能学院",
+        "university": "中南大学"
+      },
+      "target_organization_id": "org_auto_2b2d54e37a634184854a"
+    }
+  ],
+  "pull_request_number": 48,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275180837,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

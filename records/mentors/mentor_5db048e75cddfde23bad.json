@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f9c22076f3dd594706dd"
+      ],
+      "ended_at": null,
+      "id": "aff_d706a7e429be01239c95",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_98eae5e1804049179d88",
+      "source_url": "http://faculty.csu.edu.cn/wangyunbo/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f9c22076f3dd594706dd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d706a7e429be01239c95",
+      "claim_ids": [
+        "claim_f9c22076f3dd594706dd"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyunbo@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/wangyunbo/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangyunbo@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f9c22076f3dd594706dd"
+    ],
+    "email": [
+      "claim_f9c22076f3dd594706dd"
+    ],
+    "name": [
+      "claim_f9c22076f3dd594706dd"
+    ],
+    "profile_url": [
+      "claim_f9c22076f3dd594706dd"
+    ],
+    "recent_papers": [
+      "claim_f9c22076f3dd594706dd"
+    ],
+    "research_directions": [
+      "claim_f9c22076f3dd594706dd"
+    ],
+    "status": [
+      "claim_f9c22076f3dd594706dd"
+    ],
+    "title": [
+      "claim_f9c22076f3dd594706dd"
+    ]
+  },
+  "id": "mentor_5db048e75cddfde23bad",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f9c22076f3dd594706dd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王运波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d706a7e429be01239c95",
+      "claim_ids": [
+        "claim_f9c22076f3dd594706dd"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/wangyunbo/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "lBioDPP: Dynamic Prompt Policy Learning for Biomedical Vision-Language Models. The 40th AAAI Conference on Artificial Intelligence (AAAI), pp. 1-9, January 2026. (CCF-A)",
+    "Decoupled Low-Rank Prompt Subspace Learning for VLMs Adaptation in Biomedical Domain. The 34th ACM International Conference on Multimedia (ACMMM), pp. 1-10, 2026. (CCF-A)",
+    "Temporal-Spatial Coupling via Graph Diffusion Gated Recursion for Flotation Grade Monitoring. IEEE Transactions on Instrumentation and Measurement (IEEE-TIM), pp. 1-13, 2026.",
+    "Yunbo Wang, YuJie Wu, Zhien Dai, Can Tian, Jun Long, Jianhai Chen. Noisy Correspondence Rectification via Asymmetric Similarity Learning. The 39th AAAI Conference on Artificial Intelligence (AAAI), pp. 1-9, February 2025. (CCF-A)",
+    "Zhenyu Huang, Xianlai Chen, Taixiang Li, Xing Zhao, Ying An, Yunbo Wang*. HiGraphSum: Hierarchical Hypergraph-Based Dual-Stage Automatic Summarization of Discharge Summaries. International Conference on Bioinformatics and Biomedicine (IEEE BIBM), 2025. (CCF-B)",
+    "Zhenyu Huang, Xianlai Chen, Yunbo Wang*, Jincai Huang, Xing Zhao. A Survey on Biomedical Automatic Text Summarization with Large Language Models. Information Processing and Management (IPM), pp. 1-48, 2025. (CCF-B,中科院1区top)",
+    "Xin Jia, Jinglei Zhang, Lei Jia, Yunbo Wang*, Shengyong Chen*. Rotation Invariant Dual-view 3D Point Cloud Reconstruction with Geometrical Consistency Based Feature Aggregation. Information Fusion (InfFus), pp. 1-14, 2025. (CAAI-A, 中科院1区top)"
+  ],
+  "research_directions": [
+    "跨媒体分析、多模态大模型、AI4Healthcare、AIGC"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/wangyunbo/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}

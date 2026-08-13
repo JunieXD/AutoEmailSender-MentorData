@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9d6d6c201e91d83f5072"
+      ],
+      "ended_at": null,
+      "id": "aff_e33b4f9bccca8126dfaa",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_98eae5e1804049179d88",
+      "source_url": "https://ai.csu.edu.cn/xygk/xyld.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_9d6d6c201e91d83f5072"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e33b4f9bccca8126dfaa",
+      "claim_ids": [
+        "claim_9d6d6c201e91d83f5072"
+      ],
+      "is_primary": true,
+      "normalized_value": "xym@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "https://ai.csu.edu.cn/xygk/xyld.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xym@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9d6d6c201e91d83f5072"
+    ],
+    "email": [
+      "claim_9d6d6c201e91d83f5072"
+    ],
+    "name": [
+      "claim_9d6d6c201e91d83f5072"
+    ],
+    "profile_url": [
+      "claim_9d6d6c201e91d83f5072"
+    ],
+    "status": [
+      "claim_9d6d6c201e91d83f5072"
+    ]
+  },
+  "id": "mentor_9ebab27b3ea3572e75e2",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9d6d6c201e91d83f5072"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "向英明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e33b4f9bccca8126dfaa",
+      "claim_ids": [
+        "claim_9d6d6c201e91d83f5072"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "https://ai.csu.edu.cn/xygk/xyld.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.csu.edu.cn/xygk/xyld.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:57Z"
+}

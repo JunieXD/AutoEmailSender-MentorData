@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c604bccd290c87acf5dc"
+      ],
+      "ended_at": null,
+      "id": "aff_9aa81699ed29a0129ea0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_98eae5e1804049179d88",
+      "source_url": "http://faculty.csu.edu.cn/zhourongrong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c604bccd290c87acf5dc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9aa81699ed29a0129ea0",
+      "claim_ids": [
+        "claim_c604bccd290c87acf5dc"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhourr@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/zhourongrong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhourr@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c604bccd290c87acf5dc"
+    ],
+    "email": [
+      "claim_c604bccd290c87acf5dc"
+    ],
+    "name": [
+      "claim_c604bccd290c87acf5dc"
+    ],
+    "profile_url": [
+      "claim_c604bccd290c87acf5dc"
+    ],
+    "research_directions": [
+      "claim_c604bccd290c87acf5dc"
+    ],
+    "status": [
+      "claim_c604bccd290c87acf5dc"
+    ],
+    "title": [
+      "claim_c604bccd290c87acf5dc"
+    ]
+  },
+  "id": "mentor_7a0f959935235d0d0255",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c604bccd290c87acf5dc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周蓉蓉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9aa81699ed29a0129ea0",
+      "claim_ids": [
+        "claim_c604bccd290c87acf5dc"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/zhourongrong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "肺癌靶区勾画与AI、肺癌脑转移的基础及临床、胸部肿瘤的放化疗及靶向免疫治疗"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/zhourongrong/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}

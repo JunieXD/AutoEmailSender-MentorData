@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c11f1d0d55b3d63c2665"
+      ],
+      "ended_at": null,
+      "id": "aff_0957e57fbd5ba12001ab",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_376ca1495a9cd78870ce",
+      "source_url": "http://faculty.csu.edu.cn/bilin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c11f1d0d55b3d63c2665"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0957e57fbd5ba12001ab",
+      "claim_ids": [
+        "claim_c11f1d0d55b3d63c2665"
+      ],
+      "is_primary": true,
+      "normalized_value": "mr.bilin@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/bilin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mr.bilin@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c11f1d0d55b3d63c2665"
+    ],
+    "email": [
+      "claim_c11f1d0d55b3d63c2665"
+    ],
+    "name": [
+      "claim_c11f1d0d55b3d63c2665"
+    ],
+    "profile_url": [
+      "claim_c11f1d0d55b3d63c2665"
+    ],
+    "research_directions": [
+      "claim_c11f1d0d55b3d63c2665"
+    ],
+    "status": [
+      "claim_c11f1d0d55b3d63c2665"
+    ],
+    "title": [
+      "claim_c11f1d0d55b3d63c2665"
+    ]
+  },
+  "id": "mentor_6b1f6b82895607e964d9",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c11f1d0d55b3d63c2665"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "毕 林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0957e57fbd5ba12001ab",
+      "claim_ids": [
+        "claim_c11f1d0d55b3d63c2665"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/bilin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数字矿山与智能开采"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/bilin/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}
