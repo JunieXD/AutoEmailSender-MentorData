@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b7dcd4866149932d5f56"
+      ],
+      "ended_at": null,
+      "id": "aff_e177722054def27aef26",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/ww2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b7dcd4866149932d5f56"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e177722054def27aef26",
+      "claim_ids": [
+        "claim_b7dcd4866149932d5f56"
+      ],
+      "is_primary": true,
+      "normalized_value": "wwu@cc.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/ww2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "wwu@cc.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b7dcd4866149932d5f56"
+    ],
+    "email": [
+      "claim_b7dcd4866149932d5f56"
+    ],
+    "name": [
+      "claim_b7dcd4866149932d5f56"
+    ],
+    "profile_url": [
+      "claim_b7dcd4866149932d5f56"
+    ],
+    "recent_papers": [
+      "claim_b7dcd4866149932d5f56"
+    ],
+    "research_directions": [
+      "claim_b7dcd4866149932d5f56"
+    ],
+    "status": [
+      "claim_b7dcd4866149932d5f56"
+    ],
+    "title": [
+      "claim_b7dcd4866149932d5f56"
+    ]
+  },
+  "id": "mentor_127f9bd1417ed50f32f4",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b7dcd4866149932d5f56"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴雯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e177722054def27aef26",
+      "claim_ids": [
+        "claim_b7dcd4866149932d5f56"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/ww2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Zhuo Wang,Wen Wu*,Guoqing Wang,Guangze Ye,Zhenxiao Cheng.MetaEval: Measuring the Discrimination of Benchmarks for Efficient LLM Evaluation.In AAAI Conference on Artificial Intelligence (AAAI'26),2026",
+    "Guangze Ye,Wen Wu*,Guoqing Wang,Xi Chen,Hong Zheng and Liang He. Disentangled Modeling of Preferences and Social Influence for Group Recommendation. In AAAI Conference on Artificial Intelligence (AAAI'25oral),2025",
+    "Guoqing Wang,Wen Wu*,Guangze Ye,Zhenxiao Cheng,Xi Chen and Hong Zheng.Decoupling Metacognition from Cognition: A Framework for Quantifying Metacognitive Ability in LLMs. In AAAI Conference on Artificial Intelligence (AAAI'25 oral),2025",
+    "吴雯,任飞霏。《基于大模型启发式提问的学生元认知能力提升研究》,发表于《心理科学》,2025.",
+    "Wen Wu,Guangze Ye, Hui Yu, Wenxin Hu, Xi Chen, Liang He. Knowledge-Aware Modeling of Group Commonality for Group Recommendation. In Expert System With Applications, 2025.",
+    "Wen Wu*, Xixiong Zhou, Xiaowen Shi, Ping Wu, Xin Lin, Jing Yang and Liang He. The Effect of Individual-Level Factors and Task Features on Interface Design for Rule-Verification Crowdsourcing Tasks. In International Journal of Human-Computer Interaction, 2024.",
+    "Guangze Ye,Wen Wu*, Liye Shi, Wenxin Hu, Xi Chen and Liang He. A Personality-Guided Preference Aggregator for Ephemeral Group Recommendation. In Applied Soft Computing Journal, 2024.",
+    "Yu Ji,Wen Wu*, Yi Hu, Xi Chen, Jiayi Chen, Wenxin Hu and Liang He.Personality-Assisted Mood Modeling with Historical Reviews for Sentiment Classification. In Information Sciences, 2023."
+  ],
+  "research_directions": [
+    "聚焦人工智能、心理学、教育学等多学科交叉,涉及深度学习、用户建模、人机交互、数据挖掘、推荐系统、性格心理学、认知与元认知、统计学、群体博弈等方向,具体研究内容包括基于元认知的启发式提问、基于多智能体的大模型安全与价值观对齐、基于性格和情绪的个性化推荐、群体智能决策等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/ww2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

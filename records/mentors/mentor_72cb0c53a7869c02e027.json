@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ee25ee243ce4a42a5a86"
+      ],
+      "ended_at": null,
+      "id": "aff_5ba5f0b8877ab49d55ae",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/lcl1/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ee25ee243ce4a42a5a86"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5ba5f0b8877ab49d55ae",
+      "claim_ids": [
+        "claim_ee25ee243ce4a42a5a86"
+      ],
+      "is_primary": true,
+      "normalized_value": "clli@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/lcl1/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "clli@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ee25ee243ce4a42a5a86"
+    ],
+    "email": [
+      "claim_ee25ee243ce4a42a5a86"
+    ],
+    "name": [
+      "claim_ee25ee243ce4a42a5a86"
+    ],
+    "profile_url": [
+      "claim_ee25ee243ce4a42a5a86"
+    ],
+    "recent_papers": [
+      "claim_ee25ee243ce4a42a5a86"
+    ],
+    "research_directions": [
+      "claim_ee25ee243ce4a42a5a86"
+    ],
+    "status": [
+      "claim_ee25ee243ce4a42a5a86"
+    ],
+    "title": [
+      "claim_ee25ee243ce4a42a5a86"
+    ]
+  },
+  "id": "mentor_72cb0c53a7869c02e027",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ee25ee243ce4a42a5a86"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李昌龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5ba5f0b8877ab49d55ae",
+      "claim_ids": [
+        "claim_ee25ee243ce4a42a5a86"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/lcl1/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Liekun Hu, Changlong Li*,STORM: a Multipath QUIC Scheduler for Quick Response of Multimedia Data Transport under Unstable Mobile Networks, In the USENIX Annual Technical Conference (USENIX ATC), 2025. (CCF-A, 计算机系统领域顶级会议,通讯作者)",
+    "Changlong Li, Zongwei Zhu, Chao Wang, Fangming Liu, Fei Xu, Xuehai Zhou, and Edwin Sha, Archer: Adaptive Memory Compression with Page-Association-Rule Awareness for High-Speed Response of Mobile Devices, In 23th USENIX Conference on File and Storage Technologies (FAST), 2025. (CCF-A, 存储领域顶级会议)",
+    "Changlong Li, Zongwei Zhu, Chun Jason Xue, Yu Liang, Rachata Ausavarungnirun, Liang Shi, and Xuehai Zhou, Freezing-based Memory and Process Co-design for User Experience on Resource-limited Mobile Devices, In the ACM Transactions on Computer Systems (TOCS), 2025. (CCF-A, 计算机系统领域顶刊)",
+    "Changlong Li, Zongwei Zhu, Yuyangjun Lu, Chao Wang, Xuehai Zhou, and Edwin H.-M. Sha, A Lightweight I/O Throttling Service to Improve the User Experience of Mobile Devices, In IEEE Transactions on Services Computing (TSC), 2025. (CCF-A)",
+    "Zirui Lian, Qianyue Cao, Chao Liang, Jing Cao, Zongwei Zhu, Zhi Yang, Cheng Ji,Changlong Li, and Xuehai Zhou, HaloFL: Efficient Heterogeneity-Aware Federated Learning through Optimal Submodel Extraction and Dynamic Sparse Adjustment, In IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025. (CCF-A)",
+    "Wen Ran, Changlong Li*, and Edwin H.-M. Sha, Secure-collaborative Autonomous Driving Systems for Multi-Mobile Intelligent Agents, In the Computer Joural (COMPJ), 2025. (CCF-B, 通讯作者)",
+    "Qiang Chen,Changlong Li*, Argus: Real-Time HQ Video Decoding with CPU Coordinating on Consumer Devices, In IEEE Real-Time Systems Symposium (RTSS), 2024. (CCF-A, 实时系统领域顶级会议,通讯作者)",
+    "Changlong Li, Yu Liang, Rachata Ausavarungnirun, Zongwei Zhu, Liang Shi, and Chun Jason Xue, ICE: Collaborating Memory and Process Management for User Experience on Resource-limited Mobile Devices, In the European Conference on Computer Systems (EuroSys), 2023. (CCF-A,操作系统领域顶级会议)"
+  ],
+  "research_directions": [
+    "智能嵌入式系统(e.g.,智能手机,自动驾驶,人形机器人),AIGC,具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/lcl1/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

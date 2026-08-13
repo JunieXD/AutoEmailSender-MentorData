@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1aa5fb2381599ea5182e"
+      ],
+      "ended_at": null,
+      "id": "aff_e71c0095047bf6e6ca3a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/jj2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1aa5fb2381599ea5182e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e71c0095047bf6e6ca3a",
+      "claim_ids": [
+        "claim_1aa5fb2381599ea5182e"
+      ],
+      "is_primary": true,
+      "normalized_value": "jjin@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/jj2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jjin@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1aa5fb2381599ea5182e"
+    ],
+    "email": [
+      "claim_1aa5fb2381599ea5182e"
+    ],
+    "name": [
+      "claim_1aa5fb2381599ea5182e"
+    ],
+    "profile_url": [
+      "claim_1aa5fb2381599ea5182e"
+    ],
+    "research_directions": [
+      "claim_1aa5fb2381599ea5182e"
+    ],
+    "status": [
+      "claim_1aa5fb2381599ea5182e"
+    ],
+    "title": [
+      "claim_1aa5fb2381599ea5182e"
+    ]
+  },
+  "id": "mentor_0f59cc4ea6e40d6ee336",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1aa5fb2381599ea5182e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "金 健"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e71c0095047bf6e6ca3a",
+      "claim_ids": [
+        "claim_1aa5fb2381599ea5182e"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/jj2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别、机器学习和人工智能等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/jj2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0a4467327c13df2dc6e0"
+      ],
+      "ended_at": null,
+      "id": "aff_4b8e909000e9baa0b706",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/ljc2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0a4467327c13df2dc6e0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4b8e909000e9baa0b706",
+      "claim_ids": [
+        "claim_0a4467327c13df2dc6e0"
+      ],
+      "is_primary": true,
+      "normalized_value": "jcli@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/ljc2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jcli@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0a4467327c13df2dc6e0"
+    ],
+    "email": [
+      "claim_0a4467327c13df2dc6e0"
+    ],
+    "name": [
+      "claim_0a4467327c13df2dc6e0"
+    ],
+    "profile_url": [
+      "claim_0a4467327c13df2dc6e0"
+    ],
+    "research_directions": [
+      "claim_0a4467327c13df2dc6e0"
+    ],
+    "status": [
+      "claim_0a4467327c13df2dc6e0"
+    ],
+    "title": [
+      "claim_0a4467327c13df2dc6e0"
+    ]
+  },
+  "id": "mentor_15f3c800d0f23bbf8d4e",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0a4467327c13df2dc6e0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李俊诚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4b8e909000e9baa0b706",
+      "claim_ids": [
+        "claim_0a4467327c13df2dc6e0"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/ljc2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "复杂场景下的视觉增强、通用/快速磁共振重建与增强、多模态口腔智慧诊疗,图像复原、增强、检测、分割、预测等为基础研究方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/ljc2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

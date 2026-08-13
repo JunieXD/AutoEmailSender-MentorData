@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2d5b6aa520a6687cf063"
+      ],
+      "ended_at": null,
+      "id": "aff_bb5d56b069212a7dfb83",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/qtw/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2d5b6aa520a6687cf063"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bb5d56b069212a7dfb83",
+      "claim_ids": [
+        "claim_2d5b6aa520a6687cf063"
+      ],
+      "is_primary": true,
+      "normalized_value": "twqian@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/qtw/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "twqian@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2d5b6aa520a6687cf063"
+    ],
+    "email": [
+      "claim_2d5b6aa520a6687cf063"
+    ],
+    "name": [
+      "claim_2d5b6aa520a6687cf063"
+    ],
+    "profile_url": [
+      "claim_2d5b6aa520a6687cf063"
+    ],
+    "research_directions": [
+      "claim_2d5b6aa520a6687cf063"
+    ],
+    "status": [
+      "claim_2d5b6aa520a6687cf063"
+    ],
+    "title": [
+      "claim_2d5b6aa520a6687cf063"
+    ]
+  },
+  "id": "mentor_6a4493e892f73b528c5a",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2d5b6aa520a6687cf063"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "钱天文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bb5d56b069212a7dfb83",
+      "claim_ids": [
+        "claim_2d5b6aa520a6687cf063"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/qtw/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "视觉-语言多模态学习、视频理解、具身智能,围绕面向具身场景的第一人称视频理解、多模态大模型推理、视觉语言导航等具体任务开展技术探索"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/qtw/main.psp",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

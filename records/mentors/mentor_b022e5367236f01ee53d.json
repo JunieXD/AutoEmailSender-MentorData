@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5125d178f76c7cce0b11"
+      ],
+      "ended_at": null,
+      "id": "aff_b426e82f87d7c4893ea7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_952ed80c939d019261f9",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5125d178f76c7cce0b11"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b426e82f87d7c4893ea7",
+      "claim_ids": [
+        "claim_5125d178f76c7cce0b11"
+      ],
+      "is_primary": true,
+      "normalized_value": "xfwang@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "xfwang@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5125d178f76c7cce0b11"
+    ],
+    "email": [
+      "claim_5125d178f76c7cce0b11"
+    ],
+    "name": [
+      "claim_5125d178f76c7cce0b11"
+    ],
+    "profile_url": [
+      "claim_5125d178f76c7cce0b11"
+    ],
+    "research_directions": [
+      "claim_5125d178f76c7cce0b11"
+    ],
+    "status": [
+      "claim_5125d178f76c7cce0b11"
+    ],
+    "title": [
+      "claim_5125d178f76c7cce0b11"
+    ]
+  },
+  "id": "mentor_b022e5367236f01ee53d",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5125d178f76c7cce0b11"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王祥丰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b426e82f87d7c4893ea7",
+      "claim_ids": [
+        "claim_5125d178f76c7cce0b11"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "Agent (Optimization, RL, MARL, LLM-based) and Applications、智能体及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_54a5d7dab61c647a7ebe"
+      ],
+      "ended_at": null,
+      "id": "aff_a9eba20906a443e4b2e6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zj2_6437/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_54a5d7dab61c647a7ebe"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a9eba20906a443e4b2e6",
+      "claim_ids": [
+        "claim_54a5d7dab61c647a7ebe"
+      ],
+      "is_primary": true,
+      "normalized_value": "jzhao@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zj2_6437/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jzhao@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_54a5d7dab61c647a7ebe"
+    ],
+    "email": [
+      "claim_54a5d7dab61c647a7ebe"
+    ],
+    "name": [
+      "claim_54a5d7dab61c647a7ebe"
+    ],
+    "profile_url": [
+      "claim_54a5d7dab61c647a7ebe"
+    ],
+    "recent_papers": [
+      "claim_54a5d7dab61c647a7ebe"
+    ],
+    "research_directions": [
+      "claim_54a5d7dab61c647a7ebe"
+    ],
+    "status": [
+      "claim_54a5d7dab61c647a7ebe"
+    ],
+    "title": [
+      "claim_54a5d7dab61c647a7ebe"
+    ]
+  },
+  "id": "mentor_4994d8a8cbd8c3b13f37",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_54a5d7dab61c647a7ebe"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵静"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a9eba20906a443e4b2e6",
+      "claim_ids": [
+        "claim_54a5d7dab61c647a7ebe"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/zj2_6437/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Zhenbo Huang, Shiliang Sun, Jing Zhao. Reward-free offline reinforcement learning - Optimizing behavior policy via action exploration. Knowledge-Based Systems. 2024.",
+    "Jing Zhao, Zengyu Qiu, Huiqin Hu, Shiliang Sun. HWLane: HW-Transformer for Lane Detection. IEEE Transactions on Intelligent Transportation Systems (2024)",
+    "Kaitao Chen, Shiliang Sun, Jing Zhao: CaMIL: Causal Multiple Instance Learning for Whole Slide Image Classification. AAAI 2024: 1120-1128",
+    "Chaoyue Ding, Shiliang Sun, and Jing Zhao*. MST-GAT: A multimodal spatial–temporal graph attention network for time series anomaly detection. Information Fusion 89 (2023): 527-536.",
+    "Shaofan Liu, Shiliang Sun, Jing Zhao*: Fair Transfer Learning with Factor Variational Auto-Encoder. Neural Process. Lett. 55(3): 2049-2061 (2023)",
+    "Shiliang Sun, Jing Zhao*, Minghao Gu, Shanhu Wang: Variational Hybrid Monte Carlo for Efficient Multi-Modal Data Sampling. Entropy 25(4): 560 (2023)",
+    "Wenbo Dong, Shiliang Sun*, Jing Zhao, Nan Zhang: Knowledge graph relation reasoning with variational reinforcement network. Inf. Fusion 100: 101900 (2023)",
+    "Zhenbo Huang, Shiliang Sun*,Jing Zhao, Liang Mao: Multi-modal policy fusion for end-to-end autonomous driving. Inf. Fusion 98: 101834 (2023)"
+  ],
+  "research_directions": [
+    "多模态机器学习,主要应用:自动驾驶、医学诊断、多模态翻译"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/zj2_6437/main.psp",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

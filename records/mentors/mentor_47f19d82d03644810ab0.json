@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a2b000c87eb2d45398ad"
+      ],
+      "ended_at": null,
+      "id": "aff_97d6c6fd7083b63ee441",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/cq2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_a2b000c87eb2d45398ad"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_97d6c6fd7083b63ee441",
+      "claim_ids": [
+        "claim_a2b000c87eb2d45398ad"
+      ],
+      "is_primary": true,
+      "normalized_value": "qcao@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/cq2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "qcao@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a2b000c87eb2d45398ad"
+    ],
+    "email": [
+      "claim_a2b000c87eb2d45398ad"
+    ],
+    "name": [
+      "claim_a2b000c87eb2d45398ad"
+    ],
+    "profile_url": [
+      "claim_a2b000c87eb2d45398ad"
+    ],
+    "recent_papers": [
+      "claim_a2b000c87eb2d45398ad"
+    ],
+    "research_directions": [
+      "claim_a2b000c87eb2d45398ad"
+    ],
+    "status": [
+      "claim_a2b000c87eb2d45398ad"
+    ]
+  },
+  "id": "mentor_47f19d82d03644810ab0",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a2b000c87eb2d45398ad"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_97d6c6fd7083b63ee441",
+      "claim_ids": [
+        "claim_a2b000c87eb2d45398ad"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/cq2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Nanjun Yu, Qiang Cao, Zheng Dong. Simple Adaptive Spectrum Graph Filters for Rumor Detection. In IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), April 2025. (CCF B)",
+    "Bing Xie, Qiang Cao, Mayuresh Kunjir, Linli Wan, Jeff Chase, Anirban Mandal, Mats Rynge. WIRE:Resource-efficient Scaling with Online Prediction for DAG-based Workflows. In IEEE International Conference on Cluster Computing (CLUSTER), Sept. 2021. (CCF B)",
+    "Qiang Cao, Michael Sirivianos, Xiaowei Yang, and Tiago Pregueiro. Aiding the Detection of Fake Accounts in Large Scale Social Online Services. In USENIX/ACM Symposium on Networked Systems Design and Implementation, April 2012 (NSDI'12). (CCF A)",
+    "Qiang Cao, Xiaowei Yang, Jieqi Yu, and Christopher Palow. Uncovering Large Groups of Active Malicious Accounts in Online Social Networks. In ACM Conference on Computer and Communications Security, November 2014 (CCS'14). (CCF A)",
+    "Qiang Cao, Michael Sirivianos, Xiaowei Yang, and Kamesh Munagala. Combating Friend Spam Using Social Rejections. In IEEE International Conference on Distributed Computing Systems, June 2015 (ICDCS'15). (CCF B)",
+    "Yang Chen, Yu Chen, Qiang Cao, and Xiaowei Yang. PacketCloud: a Cloudlet-based Open Platform for In-network Services. In IEEE Transactions on Parallel and Distributed Systems (TPDS), Volume 27, Issue 4, April, 2016. (CCF A)",
+    "Yan Zhai, Qiang Cao, Jeffrey S. Chase, and Michael Swift. TapCon: Practical Third-Party Attestation for the Cloud. In USENIX Workshop on Hot Topics in Cloud Computing (HotCloud), July 2017.",
+    "Qingyuan Gong, Yang Chen, Jiyao Hu, Qiang Cao, Pan Hui, and Xin Wang. Understanding Cross-Site Linking in Online Social Networks. In ACM Transactions on the Web (TWEB), Volume 12, Issue 4, Sept., 2018. (CCF B)"
+  ],
+  "research_directions": [
+    "在线社交网络安全、深度学习、计算机网络、网络大数据"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/cq2/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:36Z"
+}

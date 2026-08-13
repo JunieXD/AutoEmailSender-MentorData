@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3b94ce513981476d92fd"
+      ],
+      "ended_at": null,
+      "id": "aff_b46b012f5512b947a009",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wll/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_3b94ce513981476d92fd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b46b012f5512b947a009",
+      "claim_ids": [
+        "claim_3b94ce513981476d92fd"
+      ],
+      "is_primary": true,
+      "normalized_value": "llwang@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wll/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "llwang@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3b94ce513981476d92fd"
+    ],
+    "email": [
+      "claim_3b94ce513981476d92fd"
+    ],
+    "name": [
+      "claim_3b94ce513981476d92fd"
+    ],
+    "profile_url": [
+      "claim_3b94ce513981476d92fd"
+    ],
+    "research_directions": [
+      "claim_3b94ce513981476d92fd"
+    ],
+    "status": [
+      "claim_3b94ce513981476d92fd"
+    ]
+  },
+  "id": "mentor_c63bf8aef2adf692a22d",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3b94ce513981476d92fd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王琳琳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b46b012f5512b947a009",
+      "claim_ids": [
+        "claim_3b94ce513981476d92fd"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/wll/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、数据挖掘、机器学习、ChatGPT大模型训练"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/wll/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:36Z"
+}
