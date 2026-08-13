@@ -1,0 +1,117 @@
+{
+  "created_organization_ids": [
+    "org_auto_0cba6afeee577dcf5a3a"
+  ],
+  "decided_at": "2026-08-13T03:46:47Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_3bda2bd170fb48eb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_4872c4c7ffb46d9df7f9",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "广州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_82159e0a37dfbcd5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_4872c4c7ffb46d9df7f9",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "广州研究院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_75",
+  "invalid_rows": [],
+  "issue": {
+    "number": 75,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/75"
+  },
+  "manifest_sha256": "9cac75f3716621414a54c59e30d6789faca60127035dae2eca517d4295ae2b9e",
+  "mapped_proposal_ids": [
+    "proposal_issue_75_row_1",
+    "proposal_issue_75_row_2"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 78,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275709502,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
