@@ -1,0 +1,624 @@
+{
+  "dataset_version": "v2-a3c7fd506d4b2341a2d6e5a1da824dca",
+  "generated_at": "2026-08-13T03:48:36Z",
+  "record_count": 3000,
+  "schema_version": 2,
+  "universities": [
+    {
+      "id": "org_auto_12b2d41a1939c34ec2d2",
+      "name": "深圳大学",
+      "record_count": 67,
+      "units": [
+        {
+          "id": "org_auto_64d458ee555b13286ab1",
+          "name": "计算机与软件学院",
+          "path": "objects/sha256/59cc7d38ea3180083ab2b3b81e41e7426d8be4a8262aaa66f3020bcea56fbfc6.json",
+          "record_count": 67,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_3a48d512750510086a85",
+      "name": "中国科学院",
+      "record_count": 63,
+      "units": [
+        {
+          "id": "org_auto_9ed1bf1cfd48e1b3baa1",
+          "name": "沈阳自动化研究所",
+          "path": "objects/sha256/a4f553207ed59c78e3dfb15aaa2569c780378b17b90cfafb622fd51d515e1367.json",
+          "record_count": 63,
+          "type": "institute"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_3ce5e783fbd769384b1f",
+      "name": "天津大学",
+      "record_count": 73,
+      "units": [
+        {
+          "id": "org_auto_3b3429b7cba9d077e233",
+          "name": "计算机科学与技术学院",
+          "path": "objects/sha256/fea0cf5027da20ea0347a2b0e10effc5f1e8560b18c7e0844fac8e820cb99be2.json",
+          "record_count": 26,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_65efd0fef3c6a9ac2718",
+          "name": "软件学院",
+          "path": "objects/sha256/4120e5c8d6db1b31668ebd8e92172459eceec8d7a0c4e3f15166c83d859ba4c7.json",
+          "record_count": 47,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_41bbf5cfe92ed1491ef7",
+      "name": "南开大学",
+      "record_count": 49,
+      "units": [
+        {
+          "id": "org_auto_6287055d2f930a5c4241",
+          "name": "计算机学院",
+          "path": "objects/sha256/37a3e21418af9e99953af3b28d296f03edebf121b92e790d0366d55a717a5b38.json",
+          "record_count": 44,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_f081f90c975ffa8eae47",
+          "name": "智能光子研究院",
+          "path": "objects/sha256/1cd0bc98dbeafa1a6b76f5f3b07e43fcdcac2641368d3e1c86de23a0ec95ccb4.json",
+          "record_count": 5,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_4872c4c7ffb46d9df7f9",
+      "name": "西安电子科技大学",
+      "record_count": 255,
+      "units": [
+        {
+          "id": "org_auto_0cba6afeee577dcf5a3a",
+          "name": "广州研究院",
+          "path": "objects/sha256/92b5625a6f752fe52fccdef8f4fe2414bb1c116b83aa049f14561722c687901c.json",
+          "record_count": 2,
+          "type": "institute"
+        },
+        {
+          "id": "org_auto_2d3e05096f023eb0edbf",
+          "name": "信息力学与感知工程学院",
+          "path": "objects/sha256/10847ef83913b22382a95fd86d4f1c3506318a43d94d66abe5f65bfd7b2bdcda.json",
+          "record_count": 7,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_3a097d48862cd50961c6",
+          "name": "通信工程学院",
+          "path": "objects/sha256/2e0fa8e30bfad9a16775a268d50bd355475c3420bc4304fbdbb200f0d6ba91ec.json",
+          "record_count": 20,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_4b69e1627a306e9fe0e2",
+          "name": "网络与信息安全学院",
+          "path": "objects/sha256/1121002dcdcc1b777d1f418a3041d8d3832cbc347ee0e02c93d7609da0c0e99b.json",
+          "record_count": 11,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_6d94514f0e022a434b3e",
+          "name": "电子工程学院",
+          "path": "objects/sha256/546c07c428d96352e635b9777bb20aa9a7a2e4a362fd9a1a987fd830efa4568b.json",
+          "record_count": 22,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_93a64f03b1c04d23a458",
+          "name": "微电子学院",
+          "path": "objects/sha256/9ebe729b5f5e4ac96480e6af8ba75fd8a5ef3c15ec3228c5f5f278112b94a441.json",
+          "record_count": 9,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_9c05cacba53b98061851",
+          "name": "机电工程学院",
+          "path": "objects/sha256/c498604169ffcccb9f2db9186e896b2e8429443be4df046913086e95ea5e5ef8.json",
+          "record_count": 13,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_b3c41cb2017552a01745",
+          "name": "计算机科学与技术学院",
+          "path": "objects/sha256/355e96df2684684f585813e06067839a262ca017aba62f361710b2dac0be8dc9.json",
+          "record_count": 25,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_c11d5640fde954de58c2",
+          "name": "空间科学与技术学院",
+          "path": "objects/sha256/77a4fc7257bc2d9cacbd047ba7eb662186c2c772f09f2f34ce0a4f1d93e21a9b.json",
+          "record_count": 1,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_c2caf064daf1ea5c2c71",
+          "name": "杭州研究院",
+          "path": "objects/sha256/4b306b752bd2aaa91db21a0d7d980295f1be05483f469f89cf5016711ae83950.json",
+          "record_count": 127,
+          "type": "institute"
+        },
+        {
+          "id": "org_auto_c86042735dd2569717da",
+          "name": "光电工程学院",
+          "path": "objects/sha256/023c4b796172672c58cd96ab766d074e521eb07b38fa11d57cf4d5375dc046a9.json",
+          "record_count": 4,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_f0adf234929aa8e128f7",
+          "name": "物理学院",
+          "path": "objects/sha256/92cf3d57b3e984c39ed26411ca449e648031ddf0fff8979b77870cb1610bdc39.json",
+          "record_count": 4,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_fff4a2808d5dbc8ae3f8",
+          "name": "人工智能学院",
+          "path": "objects/sha256/4672b34a45e80e4368b66c4cdecac059d50404bfc2b18e03d1a08394314c3b3d.json",
+          "record_count": 10,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_4fb345a9de00e5b3626b",
+      "name": "浙江大学",
+      "record_count": 229,
+      "units": [
+        {
+          "id": "org_auto_28efc5a2a551ab6b2bf9",
+          "name": "海洋学院",
+          "path": "objects/sha256/f0da721f658a4e076ef15206728d432cc0d7946ea43fc0d8ddf4d7310450dc48.json",
+          "record_count": 142,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_35769d45f47723f33719",
+          "name": "软件学院",
+          "path": "objects/sha256/b03847685895d87ed272c2ec75eb200511ac8e3294e1fa83eea000eec2dacee7.json",
+          "record_count": 84,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_67dcda45818a3339453e",
+          "name": "计算机科学与技术学院",
+          "path": "objects/sha256/a21f36db7c5c6452acb434c1417df3bfb75a78c70448a5ad8aef85c2051e8bef.json",
+          "record_count": 3,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_56d49257105c0f7c37d0",
+      "name": "东南大学",
+      "record_count": 143,
+      "units": [
+        {
+          "id": "org_auto_5f4b7c42173e4b98e029",
+          "name": "网络空间安全学院",
+          "path": "objects/sha256/57b8cdf93b6ee244f2664b5abfe8964bc7fbf402b7062c3c0dd88efb5ee2d34a.json",
+          "record_count": 27,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_9e7bf58b3d6ccb33e738",
+          "name": "计算机科学与工程学院",
+          "path": "objects/sha256/662a099ca42fc6a92944a894a64b191dd576a03f8d13b34edf245293e0a84967.json",
+          "record_count": 116,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_6d0a10ae17f678f0ece7",
+      "name": "苏州大学",
+      "record_count": 89,
+      "units": [
+        {
+          "id": "org_auto_d743d7cb1647fc518491",
+          "name": "计算机科学与技术学院(软件学院)",
+          "path": "objects/sha256/bbcc17c3682c7e54f6539eb89c544c9971b110f787dde8e41c43c76f9ac63417.json",
+          "record_count": 89,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_6f61b883b7e493270de3",
+      "name": "湖南大学",
+      "record_count": 51,
+      "units": [
+        {
+          "id": "org_auto_7f26d709fdd57fd04ae6",
+          "name": "半导体学院(集成电路学院)",
+          "path": "objects/sha256/37c85a26c1b25a0abe37f904630b5263c84e4faa68d82822dbb083ed9b941e51.json",
+          "record_count": 51,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_736ac8e461d06b8f58bf",
+      "name": "北京理工大学",
+      "record_count": 40,
+      "units": [
+        {
+          "id": "org_auto_8693874134a0966f6a79",
+          "name": "网络空间安全学院",
+          "path": "objects/sha256/015ba9e2ab77f20b799dfac86405667c195e0fa6ddfdafebcaecf02141e601e5.json",
+          "record_count": 40,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_7ba694bb97b7962f48d2",
+      "name": "北京邮电大学",
+      "record_count": 418,
+      "units": [
+        {
+          "id": "org_auto_0a0bff97c31c51fa2946",
+          "name": "网络空间安全学院",
+          "path": "objects/sha256/d3e224c7197c102c957d132c9ba1fd230a3ecb61935c248fa637d0e5daa7c0c6.json",
+          "record_count": 81,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_647a5c31ffe27e5f29fb",
+          "name": "计算机学院(国家示范性软件学院)",
+          "path": "objects/sha256/617716495871a23af46e916549cf24b152bafb48c56df53bac5db994ab851daa.json",
+          "record_count": 189,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_e379621dba894c5f5131",
+          "name": "信息与通信工程学院",
+          "path": "objects/sha256/e14e5716436946bace9a636ae192f04f489652be32d3bc85b46a963997419a77.json",
+          "record_count": 148,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_7c318814e953da9a01c9",
+      "name": "四川大学",
+      "record_count": 18,
+      "units": [
+        {
+          "id": "org_auto_ada58a76e7bfc6c039b6",
+          "name": "软件学院",
+          "path": "objects/sha256/d2ad5bb85b61ca5a8a5db13ee1154cf009eeb0c3e2805512654d63a7a6970d5a.json",
+          "record_count": 18,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_89927c24bd3d542ac5d3",
+      "name": "华中科技大学",
+      "record_count": 111,
+      "units": [
+        {
+          "id": "org_auto_ff647878db706f701703",
+          "name": "计算机科学与技术学院",
+          "path": "objects/sha256/5633d602ebeb2dbf9242e012338312b2f995e8292cf79d48345f377de1f211d3.json",
+          "record_count": 111,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_999272344ad0187e5645",
+      "name": "电子科技大学",
+      "record_count": 203,
+      "units": [
+        {
+          "id": "org_auto_225d6f7b44ee5bc4e5f0",
+          "name": "信息与软件工程学院",
+          "path": "objects/sha256/2f951b3a483ac44efbbedfcab8cf7b518e46f5e4e1a2e61b2d1a6a94a473f257.json",
+          "record_count": 30,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_76b338d5dc65fb558099",
+          "name": "计算机科学与工程学院(网络空间安全学院)",
+          "path": "objects/sha256/2a4c2514c78ee2bc0659a16957eb26044e67c326ac15aff679775ac3c4c701ca.json",
+          "record_count": 173,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_a17c92199e49c73c642b",
+      "name": "中南大学",
+      "record_count": 120,
+      "units": [
+        {
+          "id": "org_auto_0da9de1e7a5944ba54da",
+          "name": "资源加工与生物工程学院",
+          "path": "objects/sha256/c93c1d361ea1f40b75af1082a6d92f194ad685e432cda89bf3a21bc6141f409b.json",
+          "record_count": 1,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_16b7ee6f798a58a56b28",
+          "name": "电子信息学院",
+          "path": "objects/sha256/e473182d2e2bd12a0052234a47c7d57315971660a36c1be7e7c2632463cd3ba4.json",
+          "record_count": 2,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_17c746e3c1e4b120b8bf",
+          "name": "计算机学院",
+          "path": "objects/sha256/d428eedb6eb06bf0efe7f3da3d163161033b8c3eaca713465e1288ab73807878.json",
+          "record_count": 78,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_2b2d54e37a634184854a",
+          "name": "冶金与环境学院",
+          "path": "objects/sha256/2a3a8f403db53cefa267292522980ce478bf39f812eb6835eb91ccf86582e00d.json",
+          "record_count": 6,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_376ca1495a9cd78870ce",
+          "name": "资源与安全工程学院",
+          "path": "objects/sha256/f147277a6d0f1b2dbd08df1721cbade9167f8606534d363cfce28e7c2a0daf55.json",
+          "record_count": 2,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_45fa5f9ea81dfa05f160",
+          "name": "交通运输工程学院",
+          "path": "objects/sha256/8b525368f7e3db87c7bc9e9885c154d490f772f06a0bf26b6b4feabf30157a36.json",
+          "record_count": 4,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_5c3090952227a829f5ac",
+          "name": "自动化学院",
+          "path": "objects/sha256/ce5b49e02c3e7fe9707034a6d025b2fb0b188d9a7630062f85b7c2f6dbca9d52.json",
+          "record_count": 1,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_82af4026e58910b0b029",
+          "name": "湘雅药学院",
+          "path": "objects/sha256/fa474c4057695b399f8d06f7cfd1270f1cd6e1c0568ca8b4f8dbacdd4411f750.json",
+          "record_count": 1,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_98eae5e1804049179d88",
+          "name": "人工智能学院",
+          "path": "objects/sha256/ba562ca66222c069e54ab211fe265c8b72703edff608829bd844a8f7fc2f8c2f.json",
+          "record_count": 14,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_a2b85de6b5e5e6bb23ea",
+          "name": "大数据研究院",
+          "path": "objects/sha256/4731ad567d2bd58b9ecc106d5ccabdcd676abc858c4725d8fc959ce4c7ab687a.json",
+          "record_count": 11,
+          "type": "institute"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_a5c66783a9abfd84652d",
+      "name": "吉林大学",
+      "record_count": 112,
+      "units": [
+        {
+          "id": "org_auto_39db7071a66df9f88bcb",
+          "name": "电子科学与工程学院",
+          "path": "objects/sha256/54e64deb6e5255e510d8907d98d8a7396d48c9e71522fb4f5f93115340056eee.json",
+          "record_count": 112,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_a5d5bd5d0bea305449fa",
+      "name": "北京交通大学",
+      "record_count": 133,
+      "units": [
+        {
+          "id": "org_auto_53877ed9b876daca30aa",
+          "name": "计算机科学与技术学院",
+          "path": "objects/sha256/0d35227730da1524f2f4399d02c3ea7229dd699cf189718a1ee454cb07fc52ca.json",
+          "record_count": 129,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_5d8e6df3c43e99c105b7",
+          "name": "网络空间安全学院",
+          "path": "objects/sha256/78f9d429d3c11ab5d6836e4da7561a45a8b26016964cc0d9eeaa66577d79f005.json",
+          "record_count": 4,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_af1d9e02cfcd8ddddd42",
+      "name": "北京大学",
+      "record_count": 171,
+      "units": [
+        {
+          "id": "org_auto_4bdf73e34b9f90b3c9ed",
+          "name": "软件与微电子学院",
+          "path": "objects/sha256/05176190deee2995009685d800abdcb98baded5cf7a7456b4036312fa7ca30c3.json",
+          "record_count": 2,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_6ade58ec513ff27a4923",
+          "name": "计算机学院",
+          "path": "objects/sha256/2877db77b61e8ae69629f91453cc76f96f47e269db9588def145b93f1ad655ee.json",
+          "record_count": 97,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_ab5831a0a8170a718059",
+          "name": "电子学院",
+          "path": "objects/sha256/2fa82183354ddbd057c9e21924ed1d088624c17af419de273d97b70e8676ad00.json",
+          "record_count": 43,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_cac70a7727f65a2d5598",
+          "name": "智能学院",
+          "path": "objects/sha256/b6b117f7306d617f6991448af415a93d0f3854178411bb3f9a8d51a9c112f4a1.json",
+          "record_count": 29,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_b33029d44c3afd6af524",
+      "name": "国科大杭州高等研究院",
+      "record_count": 78,
+      "units": [
+        {
+          "id": "org_auto_12ca4006b0c12fd5c7ed",
+          "name": "智能科学与技术学院",
+          "path": "objects/sha256/eb7fdb13820d29aef3f4b9d94ee25e5f146b706753ed2b8c7782b0dac5f9f861.json",
+          "record_count": 78,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_bcd757192fb1551f1e2e",
+      "name": "南京大学",
+      "record_count": 40,
+      "units": [
+        {
+          "id": "org_auto_a5e4797a0f501cf390eb",
+          "name": "软件学院",
+          "path": "objects/sha256/48d6ca6dcba6cd1ec473e6b7cf269d218b931dd0f7322f48b248d05dcc6a001a.json",
+          "record_count": 40,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_c8be69f24d66d48113c9",
+      "name": "西北工业大学",
+      "record_count": 150,
+      "units": [
+        {
+          "id": "org_auto_398616f04bdab861ee7d",
+          "name": "集成电路学院(微电子学院)",
+          "path": "objects/sha256/d264b85172394405260fbac4ec2e4562a97abe42ac5a406fdfeba2baa7185b31.json",
+          "record_count": 1,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_bc39d2e0b41446b4dc04",
+          "name": "计算机学院",
+          "path": "objects/sha256/5326c6f0cfb7bf40129a620f0418e4f5c5a4b333eb3395598210dfe43694b5a6.json",
+          "record_count": 108,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_f18c7a74ca9ef2c90de6",
+          "name": "光电与智能研究院",
+          "path": "objects/sha256/1a53864d0dc77be46722460629f3694e9f5287302c4e82da874f546b6f89b233.json",
+          "record_count": 41,
+          "type": "institute"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_e908089c4ecd82b7e31d",
+      "name": "厦门大学",
+      "record_count": 150,
+      "units": [
+        {
+          "id": "org_auto_888cad38a8640add30bb",
+          "name": "信息学院",
+          "path": "objects/sha256/9690c03249dfe95c1c98a12c3f8bf2d11415c044aa9b49cf435bbd7c85d490b2.json",
+          "record_count": 150,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_f6fb8183d78ed957c5d9",
+      "name": "上海大学",
+      "record_count": 84,
+      "units": [
+        {
+          "id": "org_auto_268a039852244ae4c1f0",
+          "name": "计算机工程与科学学院",
+          "path": "objects/sha256/42cf92c3c1e10ac36e0c945b5d0459cd17902b3ab55df714ffaf35dae3ff837a.json",
+          "record_count": 84,
+          "type": "school"
+        }
+      ]
+    },
+    {
+      "id": "org_auto_f7c50cb10536268671ce",
+      "name": "华东师范大学",
+      "record_count": 153,
+      "units": [
+        {
+          "id": "org_auto_000460f9899f23785272",
+          "name": "上海智能教育研究院",
+          "path": "objects/sha256/7d91ea21ed124f9244a582dd79c8a38d65e198173cdf3b3dbf97a56e492d1c93.json",
+          "record_count": 2,
+          "type": "institute"
+        },
+        {
+          "id": "org_auto_1c31d42564d58cf4f41f",
+          "name": "数据科学与工程学院",
+          "path": "objects/sha256/53e73a89372bb65aa719a4b9e336d6b62d0bfed5c5633d735daaea3fe66df0d5.json",
+          "record_count": 1,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_952ed80c939d019261f9",
+          "name": "数学科学学院",
+          "path": "objects/sha256/8be84796471471feb8b93e2e188e719084bc22d267d877ab15caf40499e9c7b7.json",
+          "record_count": 1,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_ba2f20ff684c141254a3",
+          "name": "密码学院",
+          "path": "objects/sha256/e2159e1c564d1ce7cdff6bc7340a259e417f2154347b3ac754e05e581680e7dd.json",
+          "record_count": 2,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_bef3df0765bc90939f42",
+          "name": "软件工程学院",
+          "path": "objects/sha256/8fce8b8149e45ec57360d96f351ec63d99b41a21bf3d7e7ec240eec66335d38f.json",
+          "record_count": 79,
+          "type": "school"
+        },
+        {
+          "id": "org_auto_f50048bc0b7406c548d5",
+          "name": "计算机科学与技术学院",
+          "path": "objects/sha256/6bdbec05ea49b6ada1617911fb47b9f77e60b6581f773e65bbd577a12dd9dced.json",
+          "record_count": 68,
+          "type": "school"
+        }
+      ]
+    }
+  ]
+}
