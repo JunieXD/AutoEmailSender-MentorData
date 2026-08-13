@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_44b9518bbf264d64a27b"
+      ],
+      "ended_at": null,
+      "id": "aff_d8d68fdfc6cd265a9a29",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:12Z",
+      "organization_id": "org_auto_369534f6fe9ec3b5e3e2",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548854/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_44b9518bbf264d64a27b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d8d68fdfc6cd265a9a29",
+      "claim_ids": [
+        "claim_44b9518bbf264d64a27b"
+      ],
+      "is_primary": true,
+      "normalized_value": "yzhou@nankai.edu.cn",
+      "observed_at": "2026-08-11T13:33:12Z",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548854/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yzhou@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:12Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_44b9518bbf264d64a27b"
+    ],
+    "email": [
+      "claim_44b9518bbf264d64a27b"
+    ],
+    "name": [
+      "claim_44b9518bbf264d64a27b"
+    ],
+    "profile_url": [
+      "claim_44b9518bbf264d64a27b"
+    ],
+    "recent_papers": [
+      "claim_44b9518bbf264d64a27b"
+    ],
+    "research_directions": [
+      "claim_44b9518bbf264d64a27b"
+    ],
+    "status": [
+      "claim_44b9518bbf264d64a27b"
+    ],
+    "title": [
+      "claim_44b9518bbf264d64a27b"
+    ]
+  },
+  "id": "mentor_bb54e57312d52a00f292",
+  "last_verified_at": "2026-08-11T13:33:12Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_44b9518bbf264d64a27b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d8d68fdfc6cd265a9a29",
+      "claim_ids": [
+        "claim_44b9518bbf264d64a27b"
+      ],
+      "observed_at": "2026-08-11T13:33:12Z",
+      "status": "current",
+      "url": "https://cc.nankai.edu.cn/2021/0323/c13619a548854/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "\"Towards Real-World Document Parsing via Realistic Scene Synthesis and Document-Aware Training.\"CVPR, 2026.",
+    "\"MMTIT-Bench: A Multilingual and Multi-Scenario Benchmark with Cognition–Perception–Reasoning Guided Text-Image Machine Translation.\"CVPR, 2026.",
+    "\"DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding.\"CVPR, 2026.",
+    "\"StyleTextGen: Style-Conditioned Multilingual Scene Text Generation.\"CVPR, 2026.",
+    "\"Semantic Audio-Visual Navigation in Continuous Environments.\"CVPR, 2026.",
+    "\"Orthogonal Knowledge Refreshing for Domain-Incremental Object Detection.\"ECCV, 2026.",
+    "\"UniTranslator: A Unified Multi-modal framework for End-to-end In-Image Machine Translation.\"ECCV, 2026.",
+    "\"StrucTab: A Structured Optimization Framework for Table Parsing.\"ECCV, 2026."
+  ],
+  "research_directions": [
+    "计算机视觉、多模态人工智能、具身智能、大模型、自然语言处理与深度学习等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:12Z",
+  "status_reason": null,
+  "status_source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548854/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:12Z"
+}

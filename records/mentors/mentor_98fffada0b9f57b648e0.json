@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eabb0a1f8492bc2c2b0e"
+      ],
+      "ended_at": null,
+      "id": "aff_a824365a1493544010ab",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:12Z",
+      "organization_id": "org_auto_ed3705edead7c4b05fc5",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a569225/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eabb0a1f8492bc2c2b0e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a824365a1493544010ab",
+      "claim_ids": [
+        "claim_eabb0a1f8492bc2c2b0e"
+      ],
+      "is_primary": true,
+      "normalized_value": "senchen@nankai.edu.cn",
+      "observed_at": "2026-08-11T13:33:12Z",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a569225/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "senchen@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:12Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eabb0a1f8492bc2c2b0e"
+    ],
+    "email": [
+      "claim_eabb0a1f8492bc2c2b0e"
+    ],
+    "name": [
+      "claim_eabb0a1f8492bc2c2b0e"
+    ],
+    "profile_url": [
+      "claim_eabb0a1f8492bc2c2b0e"
+    ],
+    "research_directions": [
+      "claim_eabb0a1f8492bc2c2b0e"
+    ],
+    "status": [
+      "claim_eabb0a1f8492bc2c2b0e"
+    ],
+    "title": [
+      "claim_eabb0a1f8492bc2c2b0e"
+    ]
+  },
+  "id": "mentor_98fffada0b9f57b648e0",
+  "last_verified_at": "2026-08-11T13:33:12Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eabb0a1f8492bc2c2b0e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈森"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a824365a1493544010ab",
+      "claim_ids": [
+        "claim_eabb0a1f8492bc2c2b0e"
+      ],
+      "observed_at": "2026-08-11T13:33:12Z",
+      "status": "current",
+      "url": "https://cc.nankai.edu.cn/2021/0323/c13619a569225/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:12Z",
+  "status_reason": null,
+  "status_source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a569225/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:12Z"
+}
