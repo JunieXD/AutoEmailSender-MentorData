@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c5bab6613ced4282bc0f"
+      ],
+      "ended_at": null,
+      "id": "aff_169c0c2e212fc4837b03",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//yanhuili/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c5bab6613ced4282bc0f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_169c0c2e212fc4837b03",
+      "claim_ids": [
+        "claim_c5bab6613ced4282bc0f"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanhuili@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//yanhuili/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "yanhuili@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c5bab6613ced4282bc0f"
+    ],
+    "email": [
+      "claim_c5bab6613ced4282bc0f"
+    ],
+    "name": [
+      "claim_c5bab6613ced4282bc0f"
+    ],
+    "profile_url": [
+      "claim_c5bab6613ced4282bc0f"
+    ],
+    "recent_papers": [
+      "claim_c5bab6613ced4282bc0f"
+    ],
+    "research_directions": [
+      "claim_c5bab6613ced4282bc0f"
+    ],
+    "status": [
+      "claim_c5bab6613ced4282bc0f"
+    ],
+    "title": [
+      "claim_c5bab6613ced4282bc0f"
+    ]
+  },
+  "id": "mentor_e7d2512e93fba624ec52",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c5bab6613ced4282bc0f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李言辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_169c0c2e212fc4837b03",
+      "claim_ids": [
+        "claim_c5bab6613ced4282bc0f"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//yanhuili/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Weighted Suspiciousness and Balanced Aggregation to Boost Spectrum-based Fault Localization of Deep Learning Models",
+    "Boosting Code-line-level Defect Prediction with Spectrum Information and Causality Analysis",
+    "Why and How We Combine Multiple Deep Learning Models with Functional Overlaps",
+    "ReckDroid: Detecting red packet fraud in Android apps",
+    "Knowledge Graph Driven Inference Testing for Question Answering Software",
+    "Evaluating Terminology Translation in Machine Translation Systems via Metamorphic Testing",
+    "Assessing effectiveness of test suites: what do we know and what should we do?",
+    "Generating Python Type Annotations from Type Inference: How Far Are We?"
+  ],
+  "research_directions": [
+    "intelligent software testing, AI Testing and Debugging, Mutation Testing, empirical software engineering, software analysis, knowledge engineering, formal methods"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//yanhuili/index.html",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T13:32:48Z"
+}

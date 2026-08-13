@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4c5c20f82cd2ec18853b"
+      ],
+      "ended_at": null,
+      "id": "aff_df1eb099fed7d0f0a9ca",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//liyue/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_4c5c20f82cd2ec18853b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_df1eb099fed7d0f0a9ca",
+      "claim_ids": [
+        "claim_4c5c20f82cd2ec18853b"
+      ],
+      "is_primary": true,
+      "normalized_value": "liyue@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//liyue/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "liyue@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4c5c20f82cd2ec18853b"
+    ],
+    "email": [
+      "claim_4c5c20f82cd2ec18853b"
+    ],
+    "name": [
+      "claim_4c5c20f82cd2ec18853b"
+    ],
+    "profile_url": [
+      "claim_4c5c20f82cd2ec18853b"
+    ],
+    "recent_papers": [
+      "claim_4c5c20f82cd2ec18853b"
+    ],
+    "research_directions": [
+      "claim_4c5c20f82cd2ec18853b"
+    ],
+    "status": [
+      "claim_4c5c20f82cd2ec18853b"
+    ]
+  },
+  "id": "mentor_58ba5df0c7f7b4f0d053",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4c5c20f82cd2ec18853b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李月"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_df1eb099fed7d0f0a9ca",
+      "claim_ids": [
+        "claim_4c5c20f82cd2ec18853b"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//liyue/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Automatic Dockerfile Generation with Large Language Models",
+    "A Knowledge Enhanced Large Language Model for Bug Localization",
+    "PairSmell: A Novel Perspective Inspecting Software Modular Structure",
+    "Automatic Fixing of Missing Dependency Errors",
+    "An Explainable Automated Model for Measuring Software Engineer Contribution",
+    "Fine-SE: Integrating Semantic Features and Expert Features for Software Effort Estimation",
+    "GPP: A Graph-Powered Prioritizer for Code Review Requests",
+    "Verification and Validation of Software Process Simulation Models: A Systematic Mapping Study"
+  ],
+  "research_directions": [
+    "智能软件工程,大语言模型,缺陷分析,代码补全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//liyue/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_38133e70be577ebd35ee"
+      ],
+      "ended_at": null,
+      "id": "aff_e1d5b9a9ce4182debd6e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//gjd/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_38133e70be577ebd35ee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e1d5b9a9ce4182debd6e",
+      "claim_ids": [
+        "claim_38133e70be577ebd35ee"
+      ],
+      "is_primary": true,
+      "normalized_value": "gjd@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//gjd/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "gjd@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_38133e70be577ebd35ee"
+    ],
+    "email": [
+      "claim_38133e70be577ebd35ee"
+    ],
+    "name": [
+      "claim_38133e70be577ebd35ee"
+    ],
+    "profile_url": [
+      "claim_38133e70be577ebd35ee"
+    ],
+    "recent_papers": [
+      "claim_38133e70be577ebd35ee"
+    ],
+    "research_directions": [
+      "claim_38133e70be577ebd35ee"
+    ],
+    "status": [
+      "claim_38133e70be577ebd35ee"
+    ],
+    "title": [
+      "claim_38133e70be577ebd35ee"
+    ]
+  },
+  "id": "mentor_dc16a28aa6298877d2bd",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_38133e70be577ebd35ee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "葛季栋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e1d5b9a9ce4182debd6e",
+      "claim_ids": [
+        "claim_38133e70be577ebd35ee"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//gjd/index.html"
+    }
+  ],
+  "recent_papers": [
+    "An Empirical Study of Code Simplification Methods in Code Intelligence Tasks, accepted by ACM TOSEM (CCF-A顶刊/软件工程顶刊)",
+    "Improving Source Code Pre-training via Type-Specific Masking, accepted by ACM TOSEM (CCF-A顶刊/软件工程顶刊)",
+    "Patch Correctness Assessment: A Survey, accepted by ACM TOSEM (CCF-A顶刊/软件工程顶刊)",
+    "Privacy-Preserving Federated Neural Architecture Search With Enhanced Robustness for Edge Computing, accepted by IEEE TMC (CCF-A顶刊/分布式计算顶刊)",
+    "LawBench: Benchmarking Legal Knowledge of Large Language Models, accepted by EMNLP 2024 (CCF-B顶会/NLP顶会)",
+    "Effective Hard Negative Mining for Contrastive Learning-based Code Search, accepted by ACM TOSEM (CCF-A顶刊/软件工程顶刊)",
+    "Benchmarking and Categorizing the Performance of Neural Program Repair Systems for Java, accepted by ACM TOSEM (CCF-A顶刊/软件工程顶刊)",
+    "Practical Program Repair via Preference-based Ensemble Strategy, accepted by ICSE'2024 (CCF-A会议/软件工程顶会)"
+  ],
+  "research_directions": [
+    "自然语言处理与智能软件工程、分布式计算与工作流协同"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//gjd/index.html",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:48Z"
+}

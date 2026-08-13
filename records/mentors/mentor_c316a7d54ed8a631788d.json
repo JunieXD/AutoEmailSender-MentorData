@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_38d67af48e875a6d6392"
+      ],
+      "ended_at": null,
+      "id": "aff_d235db3135d4241b50a4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//hezhang/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_38d67af48e875a6d6392"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d235db3135d4241b50a4",
+      "claim_ids": [
+        "claim_38d67af48e875a6d6392"
+      ],
+      "is_primary": true,
+      "normalized_value": "hezhang@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//hezhang/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "hezhang@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_38d67af48e875a6d6392"
+    ],
+    "email": [
+      "claim_38d67af48e875a6d6392"
+    ],
+    "name": [
+      "claim_38d67af48e875a6d6392"
+    ],
+    "profile_url": [
+      "claim_38d67af48e875a6d6392"
+    ],
+    "research_directions": [
+      "claim_38d67af48e875a6d6392"
+    ],
+    "status": [
+      "claim_38d67af48e875a6d6392"
+    ],
+    "title": [
+      "claim_38d67af48e875a6d6392"
+    ]
+  },
+  "id": "mentor_c316a7d54ed8a631788d",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_38d67af48e875a6d6392"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张贺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d235db3135d4241b50a4",
+      "claim_ids": [
+        "claim_38d67af48e875a6d6392"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//hezhang/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件研发效能、开发运维一体化(DevOps)、软件/系统工程过程、软件体系结构、软件质量保障、软件/人工智能安全与可信、面向区块链软件工程、经验软件工程、循证软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//hezhang/index.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:48Z"
+}

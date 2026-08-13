@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_561a0d43d12001d5296e"
+      ],
+      "ended_at": null,
+      "id": "aff_bf3e9376657f22dad73c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//khy/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_561a0d43d12001d5296e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bf3e9376657f22dad73c",
+      "claim_ids": [
+        "claim_561a0d43d12001d5296e"
+      ],
+      "is_primary": true,
+      "normalized_value": "khy@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//khy/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "khy@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_561a0d43d12001d5296e"
+    ],
+    "email": [
+      "claim_561a0d43d12001d5296e"
+    ],
+    "name": [
+      "claim_561a0d43d12001d5296e"
+    ],
+    "profile_url": [
+      "claim_561a0d43d12001d5296e"
+    ],
+    "recent_papers": [
+      "claim_561a0d43d12001d5296e"
+    ],
+    "research_directions": [
+      "claim_561a0d43d12001d5296e"
+    ],
+    "status": [
+      "claim_561a0d43d12001d5296e"
+    ]
+  },
+  "id": "mentor_06e0d85d934f881e5cfc",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_561a0d43d12001d5296e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "匡宏宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bf3e9376657f22dad73c",
+      "claim_ids": [
+        "claim_561a0d43d12001d5296e"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//khy/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Does AI Code Review Lead to Code Changes? A Case Study of GitHub Actions",
+    "Brevity is the Soul of Wit: Condensing Code Changes to Improve Commit Message Generation",
+    "AVIATE: Exploiting Translation Variants of Artifacts to Improve IR-based Traceability Recovery in Bilingual Software Projects",
+    "TRIAD: Automated Traceability Recovery based on Biterm-enhanced Deduction of Transitive Links among Artifacts",
+    "Using Consensual Biterms from Text Structures of Requirements and Code to Improve IR-Based Traceability Recovery",
+    "Semi-supervised pre-processing for learning-based traceability framework on real-world software projects",
+    "Propagating frugal user feedback through closeness of code dependencies to improve IR-based traceability recovery"
+  ],
+  "research_directions": [
+    "软件可追踪性、程序理解、情绪分析、文本分析、程序分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//khy/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

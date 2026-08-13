@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8d773436c2bf5e6c083"
+      ],
+      "ended_at": null,
+      "id": "aff_a81eac69f96f97162b5b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//why/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f8d773436c2bf5e6c083"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a81eac69f96f97162b5b",
+      "claim_ids": [
+        "claim_f8d773436c2bf5e6c083"
+      ],
+      "is_primary": true,
+      "normalized_value": "why@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//why/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "why@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8d773436c2bf5e6c083"
+    ],
+    "email": [
+      "claim_f8d773436c2bf5e6c083"
+    ],
+    "name": [
+      "claim_f8d773436c2bf5e6c083"
+    ],
+    "profile_url": [
+      "claim_f8d773436c2bf5e6c083"
+    ],
+    "recent_papers": [
+      "claim_f8d773436c2bf5e6c083"
+    ],
+    "research_directions": [
+      "claim_f8d773436c2bf5e6c083"
+    ],
+    "status": [
+      "claim_f8d773436c2bf5e6c083"
+    ],
+    "title": [
+      "claim_f8d773436c2bf5e6c083"
+    ]
+  },
+  "id": "mentor_09c04b05a40f40dd2e9b",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8d773436c2bf5e6c083"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王慧妍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a81eac69f96f97162b5b",
+      "claim_ids": [
+        "claim_f8d773436c2bf5e6c083"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//why/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Testing Constraint Checking Implementations via Principled Metamorphic Transformations",
+    "Incremental-Concurrent Fusion Checking for Efficient Context Consistency",
+    "Automatically Resolving Dependency-Conflict Building Failures via Behavior-Consistent Loosening of Library Version Constraints",
+    "Freeze-and-Mutate: Abnormal Sample Identification for DL Applications through Model Core Analysis",
+    "Minimizing Link Generation in Constraint Checking for Context Inconsistency Detection",
+    "INFUSE: Towards Efficient Context Consistency by Incremental-Concurrent Check Fusion",
+    "Generic Adaptive Scheduling for Efficient Context Inconsistency Detection",
+    "DISSECTOR: Input Validation for Deep Learning Applications by Crossing-layer Dissection"
+  ],
+  "research_directions": [
+    "智能化软件工程、泛在操作系统数据保障、软件开发工具链研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//why/index.html",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T13:32:48Z"
+}

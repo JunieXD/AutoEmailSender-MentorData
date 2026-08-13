@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e4df14ec6fcca011c2c7"
+      ],
+      "ended_at": null,
+      "id": "aff_5144af7ed3b9a3a2a0ac",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//sqlite/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e4df14ec6fcca011c2c7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5144af7ed3b9a3a2a0ac",
+      "claim_ids": [
+        "claim_e4df14ec6fcca011c2c7"
+      ],
+      "is_primary": true,
+      "normalized_value": "sqlite@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//sqlite/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "sqlite@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e4df14ec6fcca011c2c7"
+    ],
+    "email": [
+      "claim_e4df14ec6fcca011c2c7"
+    ],
+    "name": [
+      "claim_e4df14ec6fcca011c2c7"
+    ],
+    "profile_url": [
+      "claim_e4df14ec6fcca011c2c7"
+    ],
+    "recent_papers": [
+      "claim_e4df14ec6fcca011c2c7"
+    ],
+    "research_directions": [
+      "claim_e4df14ec6fcca011c2c7"
+    ],
+    "status": [
+      "claim_e4df14ec6fcca011c2c7"
+    ]
+  },
+  "id": "mentor_e9ba75db5f2db42c3b64",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e4df14ec6fcca011c2c7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "石守谦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5144af7ed3b9a3a2a0ac",
+      "claim_ids": [
+        "claim_e4df14ec6fcca011c2c7"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//sqlite/index.html"
+    }
+  ],
+  "recent_papers": [
+    "EdgeCut: Fast and Low-Overhead Access of User-Associated Contents from Edge Servers",
+    "Smash: Flexible, Fast, and Resource-efficient Placement and Lookup of Distributed Storage",
+    "LOIS: Low-cost Packet Header Protection for IoT Devices",
+    "RF-Chain: Decentralized, Credible, and Counterfeit-proof Supply Chain Management with Commodity RFIDs",
+    "On-device IoT Certificate Revocation Checking with Small Memory and Low Latency",
+    "Concury: A Fast and Light-weight Software Cloud Load Balancer",
+    "Concurrent Entanglement Routing for Quantum Networks: Model and Designs",
+    "Ludo Hashing: Compact, Fast, and Dynamic Key-value Lookups for Practical Network Systems"
+  ],
+  "research_directions": [
+    "大数据、分布式和高性能计算机系统、大语言模型的推理和应用、下一代知识图谱、机器学习的交叉学科、自组网/下一代车联网等网络协议的设计和优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//sqlite/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

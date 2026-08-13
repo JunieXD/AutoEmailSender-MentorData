@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6ca84e812b9ae7593c28"
+      ],
+      "ended_at": null,
+      "id": "aff_2bc0364bf27274b9edd9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//szll/szdw/zpzljs/fy/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_6ca84e812b9ae7593c28"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2bc0364bf27274b9edd9",
+      "claim_ids": [
+        "claim_6ca84e812b9ae7593c28"
+      ],
+      "is_primary": true,
+      "normalized_value": "fy@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//szll/szdw/zpzljs/fy/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "fy@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6ca84e812b9ae7593c28"
+    ],
+    "email": [
+      "claim_6ca84e812b9ae7593c28"
+    ],
+    "name": [
+      "claim_6ca84e812b9ae7593c28"
+    ],
+    "profile_url": [
+      "claim_6ca84e812b9ae7593c28"
+    ],
+    "recent_papers": [
+      "claim_6ca84e812b9ae7593c28"
+    ],
+    "research_directions": [
+      "claim_6ca84e812b9ae7593c28"
+    ],
+    "status": [
+      "claim_6ca84e812b9ae7593c28"
+    ]
+  },
+  "id": "mentor_77f28d2f7691ec2af5d8",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6ca84e812b9ae7593c28"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冯奕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2bc0364bf27274b9edd9",
+      "claim_ids": [
+        "claim_6ca84e812b9ae7593c28"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//szll/szdw/zpzljs/fy/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Legal Judgment Prediction: A Reflection on the State of the Art. ACL 2026. (一作)",
+    "Improving Legal Judgment Prediction via Quantitative Reasoning. TKDD. (通讯)",
+    "System L: Toward System 2-Style Legal Reasoning. AAAI 2026. (通讯)",
+    "LawShift: Benchmarking Legal Judgment Prediction Under Statute Shifts. NeurIPS 2025. (通讯)",
+    "Understanding Advertisements. AAAI 2025. (一作)"
+  ],
+  "research_directions": [
+    "自然语言处理、大模型Agent、交叉人工智能、多模态、智能软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//szll/szdw/zpzljs/fy/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

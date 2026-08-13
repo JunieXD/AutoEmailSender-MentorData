@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1cb574ee3b215aed2271"
+      ],
+      "ended_at": null,
+      "id": "aff_d754a4942eda7553c475",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//lxyang/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_1cb574ee3b215aed2271"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d754a4942eda7553c475",
+      "claim_ids": [
+        "claim_1cb574ee3b215aed2271"
+      ],
+      "is_primary": true,
+      "normalized_value": "lxyang@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//lxyang/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "lxyang@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1cb574ee3b215aed2271"
+    ],
+    "email": [
+      "claim_1cb574ee3b215aed2271"
+    ],
+    "name": [
+      "claim_1cb574ee3b215aed2271"
+    ],
+    "profile_url": [
+      "claim_1cb574ee3b215aed2271"
+    ],
+    "research_directions": [
+      "claim_1cb574ee3b215aed2271"
+    ],
+    "status": [
+      "claim_1cb574ee3b215aed2271"
+    ],
+    "title": [
+      "claim_1cb574ee3b215aed2271"
+    ]
+  },
+  "id": "mentor_582519a5bf1d2d9c32c6",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1cb574ee3b215aed2271"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨岚心"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d754a4942eda7553c475",
+      "claim_ids": [
+        "claim_1cb574ee3b215aed2271"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//lxyang/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件质量、软件安全、代码评审、软件仓库挖掘等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//lxyang/index.html",
+  "title": "助理研究员",
+  "updated_at": "2026-08-11T13:32:48Z"
+}
