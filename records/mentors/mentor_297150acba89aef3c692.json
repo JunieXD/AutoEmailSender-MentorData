@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d8010699b5036b8e52a5"
+      ],
+      "ended_at": null,
+      "id": "aff_a21ad3b8e8818eafd318",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10961.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d8010699b5036b8e52a5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a21ad3b8e8818eafd318",
+      "claim_ids": [
+        "claim_d8010699b5036b8e52a5"
+      ],
+      "is_primary": true,
+      "normalized_value": "guolin.sun@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10961.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guolin.sun@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d8010699b5036b8e52a5"
+    ],
+    "email": [
+      "claim_d8010699b5036b8e52a5"
+    ],
+    "name": [
+      "claim_d8010699b5036b8e52a5"
+    ],
+    "profile_url": [
+      "claim_d8010699b5036b8e52a5"
+    ],
+    "recent_papers": [
+      "claim_d8010699b5036b8e52a5"
+    ],
+    "research_directions": [
+      "claim_d8010699b5036b8e52a5"
+    ],
+    "status": [
+      "claim_d8010699b5036b8e52a5"
+    ],
+    "title": [
+      "claim_d8010699b5036b8e52a5"
+    ]
+  },
+  "id": "mentor_297150acba89aef3c692",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d8010699b5036b8e52a5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙国林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a21ad3b8e8818eafd318",
+      "claim_ids": [
+        "claim_d8010699b5036b8e52a5"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/10961.htm"
+    }
+  ],
+  "recent_papers": [
+    "AI-Native Blockchain for Multi-Domain Resource Trading in 6G",
+    "Dynamic Pricing for Vehicle Dispatching in Mobility-as-a-Service Market via Multi-Agent Deep Reinforcement Learning",
+    "Holistic Roadmap of Trends in Radio Access Network Slicing: A Survey",
+    "Blockchain-Enabled Federated Learning-Based Resource Allocation and Trading for Network Slicing in 5G",
+    "Competitive Pricing for Resource Trading in Sliced Mobile Networks: A Multi-Agent Reinforcement Learning Approach",
+    "DeepFESL: Deep Federated Echo State Learning-Based Proactive Content Caching in UAV-Assisted Networks",
+    "SNAF: DRL-Based Interdependent E2E Resource Slicing Scheme for a Virtualized Network",
+    "Consortium Blockchain-Based Spectrum Trading for Network Slicing in 5G RAN: A Multi-Agent Deep Reinforcement Learning Approach"
+  ],
+  "research_directions": [
+    "人工智能、智能决策、网络智能、泛在智能物联"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/10961.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

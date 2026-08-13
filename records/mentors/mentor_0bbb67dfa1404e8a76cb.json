@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b11f46d43688fcdb6dc1"
+      ],
+      "ended_at": null,
+      "id": "aff_6a4758c85d07ca7b36c6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11404.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b11f46d43688fcdb6dc1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6a4758c85d07ca7b36c6",
+      "claim_ids": [
+        "claim_b11f46d43688fcdb6dc1"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhzuo@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11404.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhzuo@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b11f46d43688fcdb6dc1"
+    ],
+    "email": [
+      "claim_b11f46d43688fcdb6dc1"
+    ],
+    "name": [
+      "claim_b11f46d43688fcdb6dc1"
+    ],
+    "profile_url": [
+      "claim_b11f46d43688fcdb6dc1"
+    ],
+    "recent_papers": [
+      "claim_b11f46d43688fcdb6dc1"
+    ],
+    "research_directions": [
+      "claim_b11f46d43688fcdb6dc1"
+    ],
+    "status": [
+      "claim_b11f46d43688fcdb6dc1"
+    ],
+    "title": [
+      "claim_b11f46d43688fcdb6dc1"
+    ]
+  },
+  "id": "mentor_0bbb67dfa1404e8a76cb",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b11f46d43688fcdb6dc1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "左志宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6a4758c85d07ca7b36c6",
+      "claim_ids": [
+        "claim_b11f46d43688fcdb6dc1"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11404.htm"
+    }
+  ],
+  "recent_papers": [
+    "ZUO Zhihong, The measurement problem and the completeness of quantum state, https://arxiv.org/abs/2104.05594",
+    "ZUO Zhihong, ZHU Qingxin and ZHOU Mingtian. Infection, imitation and the hierarchy of computer viruses. Computer & Security, 25(6), 2006.",
+    "ZUO Zhi-hong, ZHU Qingxing, Zhou Mingtian, On the time complexity of computer viruses, IEEE transaction on information theory, 51(8), 2005.",
+    "ZUO Zhihong and ZHOU Mingtian. Some further theoretical results about computer viruses, Computer Journal,2004, 47(6):625-633",
+    "ZUO Zhihong and ZHOU Mingtian.Web ontology language OWL and its description logic foundation. Proceedings of the 4thInternational Conference on PDCAT, 2003.8, Chengdu, China",
+    "ZUO Zhihong and ZHOU Mingtian. A distributed description logic approach to semantic annotation, Proceedings of the 4th International Conference on PDCAT, 2003.8, Chengdu, China",
+    "ZUO Zhihong and ZHOU Mingtian. Some considerations in formalizing UML class diagrams with description logics, Proceedings of 2003 IEEE international conference on RISSP, 2003.10, Changsha, China"
+  ],
+  "research_directions": [
+    "信息安全、量子计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11404.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

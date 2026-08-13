@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b6bb0e4a84ec572d241"
+      ],
+      "ended_at": null,
+      "id": "aff_d4b1284ddbb07f2ecee3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15380.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b6bb0e4a84ec572d241"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d4b1284ddbb07f2ecee3",
+      "claim_ids": [
+        "claim_0b6bb0e4a84ec572d241"
+      ],
+      "is_primary": true,
+      "normalized_value": "jie.yang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15380.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jie.yang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b6bb0e4a84ec572d241"
+    ],
+    "email": [
+      "claim_0b6bb0e4a84ec572d241"
+    ],
+    "name": [
+      "claim_0b6bb0e4a84ec572d241"
+    ],
+    "profile_url": [
+      "claim_0b6bb0e4a84ec572d241"
+    ],
+    "recent_papers": [
+      "claim_0b6bb0e4a84ec572d241"
+    ],
+    "research_directions": [
+      "claim_0b6bb0e4a84ec572d241"
+    ],
+    "status": [
+      "claim_0b6bb0e4a84ec572d241"
+    ],
+    "title": [
+      "claim_0b6bb0e4a84ec572d241"
+    ]
+  },
+  "id": "mentor_882cc0b675e3fabb43c0",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b6bb0e4a84ec572d241"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d4b1284ddbb07f2ecee3",
+      "claim_ids": [
+        "claim_0b6bb0e4a84ec572d241"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/15380.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Ren, Y. Wang, S. Tan, Y. Chen, J. Yang, Person Re-identification in 3D Space: A WiFi Vision-based Approach, Proceedings of the 32nd USENIX Security Symposium (USENIX Security), 2023.",
+    "Y. Wang, Y. Ren, Y. Chen, J. Yang, Wi-Mesh: A WiFi-based Approach for 3D Human Mesh Construction, The 20th ACM Conference on Embedded Networked Sensor Systems (ACM SenSys), 2022.",
+    "Y. Ren, Z. Wang, S. Tan, Y. Chen, J. Yang, GoPose: 3D Human Pose Estimation Using WiFi, The ACM International Joint Conference on Pervasive and Ubiquitous Computing (ACM Ubicomp), 2022.",
+    "Z. Wang, Y. Ren, Y. Wang, S. Tan, Y. Chen, J. Yang, ToothSonic: Earable Authentication via Acoustic Toothprint, The ACM International Joint Conference on Pervasive and Ubiquitous Computing (ACM Ubicomp), 2022.",
+    "S. Tan, Y. Ren, Y. Chen, and J. Yang, A Survey of Commodity WiFi Sensing in 10 Years: Status, Challenges, and Opportunities,IEEE Internet of Things Journal (IEEE IoT), 2022.",
+    "L. Zhang, S. Tan, Y. Chen, J Yang, A Continuous Articulatory Gesture Based Liveness Detection for Voice Authentication on Smart Devices, IEEE Internet of Things Journal (IEEE IoT), 2022.",
+    "L. Zhang, S. Tan, Y. Chen, J. Yang, A Phoneme Localization Based Liveness Detection for Text-independent Speaker Verification, IEEE Transactions on Mobile Computing (IEEE TMC), 2022.",
+    "S. Tan, Y. Chen, and J. Yang, Enabling Fine-grained Finger Gesture Recognition on Commodity WiFi Devices, IEEE Transactions on Mobile Computing (IEEE TMC), 2021."
+  ],
+  "research_directions": [
+    "无线和移动计算、智能感知、无线和移动安全、物联网、物联网安全、机器学习应用与安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/15380.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6e33e04f1f0e574d59a"
+      ],
+      "ended_at": null,
+      "id": "aff_a4bc82b076225861bc46",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11283.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f6e33e04f1f0e574d59a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a4bc82b076225861bc46",
+      "claim_ids": [
+        "claim_f6e33e04f1f0e574d59a"
+      ],
+      "is_primary": true,
+      "normalized_value": "yting@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11283.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yting@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6e33e04f1f0e574d59a"
+    ],
+    "email": [
+      "claim_f6e33e04f1f0e574d59a"
+    ],
+    "name": [
+      "claim_f6e33e04f1f0e574d59a"
+    ],
+    "profile_url": [
+      "claim_f6e33e04f1f0e574d59a"
+    ],
+    "recent_papers": [
+      "claim_f6e33e04f1f0e574d59a"
+    ],
+    "research_directions": [
+      "claim_f6e33e04f1f0e574d59a"
+    ],
+    "status": [
+      "claim_f6e33e04f1f0e574d59a"
+    ]
+  },
+  "id": "mentor_70b24f8414e3df61714c",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6e33e04f1f0e574d59a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨挺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a4bc82b076225861bc46",
+      "claim_ids": [
+        "claim_f6e33e04f1f0e574d59a"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11283.htm"
+    }
+  ],
+  "recent_papers": [
+    "Experimental study: a LQI-based ranging technique in ZigBee sensor networks. International Journal of Sensor Networks 19.2 (2015): 130-138.",
+    "Driver layer approach to time-of-arrival ranging in IEEE 802.11 g networks. 2012 IEEE Consumer Communications and Networking Conference (CCNC). IEEE, 2012.",
+    "Short life artificial fish swarm algorithm for wireless sensor network. 2013 International Conference on Computational Problem-Solving (ICCP). IEEE, 2013."
+  ],
+  "research_directions": [
+    "计算机网络、信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11283.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:14Z"
+}

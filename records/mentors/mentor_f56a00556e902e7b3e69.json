@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e565b123915c27b9a1e3"
+      ],
+      "ended_at": null,
+      "id": "aff_f3f2773291a9d7a83b98",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15638.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e565b123915c27b9a1e3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f3f2773291a9d7a83b98",
+      "claim_ids": [
+        "claim_e565b123915c27b9a1e3"
+      ],
+      "is_primary": true,
+      "normalized_value": "xbwang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15638.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xbwang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e565b123915c27b9a1e3"
+    ],
+    "email": [
+      "claim_e565b123915c27b9a1e3"
+    ],
+    "name": [
+      "claim_e565b123915c27b9a1e3"
+    ],
+    "profile_url": [
+      "claim_e565b123915c27b9a1e3"
+    ],
+    "recent_papers": [
+      "claim_e565b123915c27b9a1e3"
+    ],
+    "research_directions": [
+      "claim_e565b123915c27b9a1e3"
+    ],
+    "status": [
+      "claim_e565b123915c27b9a1e3"
+    ],
+    "title": [
+      "claim_e565b123915c27b9a1e3"
+    ]
+  },
+  "id": "mentor_f56a00556e902e7b3e69",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e565b123915c27b9a1e3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晓斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f3f2773291a9d7a83b98",
+      "claim_ids": [
+        "claim_e565b123915c27b9a1e3"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/15638.htm"
+    }
+  ],
+  "recent_papers": [
+    "Spatio-temporal sequential memory model with mini-column neural network",
+    "Bio-inspired model based on global-local hybrid learning in spiking neural network",
+    "3D face registration on simulated annealing algorithm",
+    "A novel method for multiple depot and open paths, multiple traveling salesmen problem",
+    "Genetic algorithm based neural network for license plate recognition",
+    "A modified pulse coupled neural network for shortest-path problem",
+    "Review on the application of artificial intelligence in antivirus detection system",
+    "A method of remote fault diagnosis based on analytical hierarchy process"
+  ],
+  "research_directions": [
+    "程序设计语言及编译、机器智能与模式识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/15638.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

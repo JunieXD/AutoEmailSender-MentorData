@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_97765d69a057f7bf1094"
+      ],
+      "ended_at": null,
+      "id": "aff_01b43db07140197f6cb6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/18315.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_97765d69a057f7bf1094"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_01b43db07140197f6cb6",
+      "claim_ids": [
+        "claim_97765d69a057f7bf1094"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhong.zhang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/18315.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhong.zhang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_97765d69a057f7bf1094"
+    ],
+    "email": [
+      "claim_97765d69a057f7bf1094"
+    ],
+    "name": [
+      "claim_97765d69a057f7bf1094"
+    ],
+    "profile_url": [
+      "claim_97765d69a057f7bf1094"
+    ],
+    "recent_papers": [
+      "claim_97765d69a057f7bf1094"
+    ],
+    "research_directions": [
+      "claim_97765d69a057f7bf1094"
+    ],
+    "status": [
+      "claim_97765d69a057f7bf1094"
+    ],
+    "title": [
+      "claim_97765d69a057f7bf1094"
+    ]
+  },
+  "id": "mentor_d6b52fd6adf6458a8ae0",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_97765d69a057f7bf1094"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张众"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_01b43db07140197f6cb6",
+      "claim_ids": [
+        "claim_97765d69a057f7bf1094"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/18315.htm"
+    }
+  ],
+  "recent_papers": [
+    "Learning to Generate Structured Output with Schema Reinforcement Learning",
+    "Learning Evolving Tools for Large Language Models",
+    "AgentCPM-GUI: Building Mobile-Use Agents with Reinforcement Fine-Tuning",
+    "RepoAgent: An LLM-Powered Open-Source Framework for Repository-level Code Documentation Generation",
+    "Fine-tuning Happens in Tiny Subspaces: Exploring Intrinsic Task-specific Subspaces of Pre-trained Language Models",
+    "Mixhead: Breaking the Low-rank Bottleneck in Multi-head Attention Language Models",
+    "Revisiting Representation Degeneration Problem in Language Modeling",
+    "Towards Robust Arbitrarily Oriented Subspace Clustering"
+  ],
+  "research_directions": [
+    "大模型智能体、自然语言处理、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/18315.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

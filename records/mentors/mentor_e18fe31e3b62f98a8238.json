@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d35e13ef9eb59e3428a1"
+      ],
+      "ended_at": null,
+      "id": "aff_f3cfd22507758a1bea9c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11960.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d35e13ef9eb59e3428a1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f3cfd22507758a1bea9c",
+      "claim_ids": [
+        "claim_d35e13ef9eb59e3428a1"
+      ],
+      "is_primary": true,
+      "normalized_value": "renyanzhi05@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11960.htm",
+      "status": "current",
+      "type": "email",
+      "value": "renyanzhi05@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d35e13ef9eb59e3428a1"
+    ],
+    "email": [
+      "claim_d35e13ef9eb59e3428a1"
+    ],
+    "name": [
+      "claim_d35e13ef9eb59e3428a1"
+    ],
+    "profile_url": [
+      "claim_d35e13ef9eb59e3428a1"
+    ],
+    "recent_papers": [
+      "claim_d35e13ef9eb59e3428a1"
+    ],
+    "research_directions": [
+      "claim_d35e13ef9eb59e3428a1"
+    ],
+    "status": [
+      "claim_d35e13ef9eb59e3428a1"
+    ],
+    "title": [
+      "claim_d35e13ef9eb59e3428a1"
+    ]
+  },
+  "id": "mentor_e18fe31e3b62f98a8238",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d35e13ef9eb59e3428a1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任彦之"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f3cfd22507758a1bea9c",
+      "claim_ids": [
+        "claim_d35e13ef9eb59e3428a1"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11960.htm"
+    }
+  ],
+  "recent_papers": [
+    "Secure and Controllable Secret Key Generation through CSI Obfuscation Matrix Encapsulation",
+    "Robust Mobile Two-Factor Authentication Leveraging Acoustic Fingerprinting",
+    "Indoor Location Identification For Smart Speakers Leveraging 3-D Acoustic Images",
+    "Secret key generation based on manipulated channel measurement matching",
+    "TouchTone: Smartwatch Privacy Protection via Unobtrusive Finger Touch Gestures",
+    "mmHand: 3D Hand Pose Estimation Leveraging mmWave Signals",
+    "Physical Layer Secret Key Generation Leveraging Proactive Pilot Contamination",
+    "PPG-Hear: A Practical Eavesdropping Attack with Photoplethysmography Sensors"
+  ],
+  "research_directions": [
+    "移动计算,感知计算,物联网,信息安全等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11960.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_58cf3c43e2a511127fc5"
+      ],
+      "ended_at": null,
+      "id": "aff_63abc2285036a9523ba6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10967.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_58cf3c43e2a511127fc5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_63abc2285036a9523ba6",
+      "claim_ids": [
+        "claim_58cf3c43e2a511127fc5"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangbo@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10967.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangbo@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_58cf3c43e2a511127fc5"
+    ],
+    "email": [
+      "claim_58cf3c43e2a511127fc5"
+    ],
+    "name": [
+      "claim_58cf3c43e2a511127fc5"
+    ],
+    "profile_url": [
+      "claim_58cf3c43e2a511127fc5"
+    ],
+    "recent_papers": [
+      "claim_58cf3c43e2a511127fc5"
+    ],
+    "research_directions": [
+      "claim_58cf3c43e2a511127fc5"
+    ],
+    "status": [
+      "claim_58cf3c43e2a511127fc5"
+    ],
+    "title": [
+      "claim_58cf3c43e2a511127fc5"
+    ]
+  },
+  "id": "mentor_42392ec15a7182ad6110",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_58cf3c43e2a511127fc5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_63abc2285036a9523ba6",
+      "claim_ids": [
+        "claim_58cf3c43e2a511127fc5"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/10967.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhu Zhang(研究生), Bo Yang(通讯作者). PHDEA4SR: Enhancing sequential recommendation with periodicity and high-order dependencies, Information Fusion, Vol. 127, Article Number: 103862, 2026.",
+    "Ruijie Xiao(研究生), Bo Yang(通讯作者), Qianyang Zhu. PIA: Fusing edge prior information into attention for semantic segmentation in vision transformer, Information Fusion, Vol. 132, Article Number: 104222, 2026.",
+    "Wei Liu(研究生), Bo Yang(通讯作者), et al. EKT-ML: An efficient knowledge tracing model with multi-task learning, Expert Systems with Applications, Vol. 298, Article Number: 129671, 2026.",
+    "Siyi Fan(研究生), Bo Yang(通讯作者),etal. MCMamba: A multi-scale correlation-aware model with Mamba for stock price forecasting, Expert Systems with Applications, Vol. 328, Article Number: 132868, 2026.",
+    "Xiaohan Jiang(研究生), Bo Yang(通讯作者), Wei Liu. DMAM: Difficulty-enhanced multi-view attention-based model for knowledge tracing, Knowledge-Based Systems, Vol. 324, Article Number: 113736, 2025.",
+    "Zhu Zhang(研究生), Bo Yang(通讯作者), Yimeng Lu. A local context enhanced consistency-aware Mamba-based sequential recommendation model, Information Processing & Management, Vol. 62, No. 3, Article Number: 104076, 2025.",
+    "Zhu Zhang(研究生), Bo Yang(通讯作者),et al. A global contextual enhanced structural-aware transformer for sequential recommendation, Knowledge-Based Systems, Vol. 304, Article Number: 112515, 2024.",
+    "Zhu Zhang(研究生), Bo Yang(通讯作者), et al. Multi-level category-aware graph neural network for session-based recommendation, Expert Systems with Applications, Vol. 242, Article Number: 122773, 2024."
+  ],
+  "research_directions": [
+    "机器学习与数据挖掘(推荐系统、LLM、知识图谱、因果推断、迁移学习)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/10967.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

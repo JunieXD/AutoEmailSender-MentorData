@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ca30eba6673fa56cbc56"
+      ],
+      "ended_at": null,
+      "id": "aff_6b3ad98a946bed888b76",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11372.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ca30eba6673fa56cbc56"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6b3ad98a946bed888b76",
+      "claim_ids": [
+        "claim_ca30eba6673fa56cbc56"
+      ],
+      "is_primary": true,
+      "normalized_value": "jwli@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11372.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jwli@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ca30eba6673fa56cbc56"
+    ],
+    "email": [
+      "claim_ca30eba6673fa56cbc56"
+    ],
+    "name": [
+      "claim_ca30eba6673fa56cbc56"
+    ],
+    "profile_url": [
+      "claim_ca30eba6673fa56cbc56"
+    ],
+    "recent_papers": [
+      "claim_ca30eba6673fa56cbc56"
+    ],
+    "research_directions": [
+      "claim_ca30eba6673fa56cbc56"
+    ],
+    "status": [
+      "claim_ca30eba6673fa56cbc56"
+    ]
+  },
+  "id": "mentor_15c1c99f435b1db29dd9",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ca30eba6673fa56cbc56"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李经纬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6b3ad98a946bed888b76",
+      "claim_ids": [
+        "claim_ca30eba6673fa56cbc56"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11372.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yanjing Ren,Jingwei Li*, Zuoru Yang, Patrick P. C. Lee, and Xiaosong Zhang. Accelerating Encrypted Deduplication via SGX. USENIX ATC, 2021.CCF-A",
+    "Jingwei Li, Suyu Huang, Yanjing Ren, Zuoru Yang, Patrick P. C. Lee, Xiaosong Zhang, and Yao Hao. Enabling Secure and Space-Efficient Metadata Management in Encrypted Deduplication. IEEE Transactions on Computers, 2021.CCF-A",
+    "Jingwei Li, Zuoru Yang, Yanjing Ren, Patrick P. C. Lee, and Xiaosong Zhang.Balancing Storage Efficiency and Data Confidentiality with Tunable Encrypted Deduplication. ACM Eurosys, 2020.清华计算机推荐A类会议",
+    "Jingwei Li, Patrick P. C. Lee, Chufeng Tan, Chuan Qin, and Xiaosong Zhang. Information Leakage in Encrypted Deduplication via Frequency Analysis: Attacks and Defenses. ACM Transactions on Storage, vol. 16, no. 1, pp. 4:1–4:30, 2020.CCF-A",
+    "Chuan Qin,Jingwei Li*, and Patrick P. C. Lee. The Design and Implementation of a Rekeying-aware Encrypted Deduplication Storage System. ACM Transactions on Storage, vol. 13, no. 1, pp. 1–30, 2017.CCF-A",
+    "Jingwei Li, Chuan Qin, Patrick P. C. Lee, and Xiaosong Zhang, Information Leakage in Encrypted Deduplication via Frequency Analysis. DSN, 2017.会议最佳论文提名奖(共3篇)",
+    "Jingwei Li, Anna Squicciarini, Dan Lin, Smitha Sundareswaran, and Chunfu Jia. MMBcloud-tree: Authenticated Index for Verifiable Cloud Service Selection. IEEE Transactions on Dependable and Secure Computing, vol. 14, no. 2, pp. 185–198, 2017.CCF-A",
+    "Jingwei Li, Dan Lin, Anna Squicciarini, Jin Li, and Chunfu Jia.Towards Privacy-Preserving Storage and Retrieval in Multiple Clouds. IEEE Transactions on Cloud Computing, vol. 5, no. 3, pp. 499–509, 2017.JCR-1"
+  ],
+  "research_directions": [
+    "数据安全存储、区块链取证"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11372.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:14Z"
+}

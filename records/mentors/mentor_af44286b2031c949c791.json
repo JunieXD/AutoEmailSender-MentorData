@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_da31c1f3638a743d26aa"
+      ],
+      "ended_at": null,
+      "id": "aff_8a21f5c047f990c4fe4c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/16855.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_da31c1f3638a743d26aa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8a21f5c047f990c4fe4c",
+      "claim_ids": [
+        "claim_da31c1f3638a743d26aa"
+      ],
+      "is_primary": true,
+      "normalized_value": "haiweiwu@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/16855.htm",
+      "status": "current",
+      "type": "email",
+      "value": "haiweiwu@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_da31c1f3638a743d26aa"
+    ],
+    "email": [
+      "claim_da31c1f3638a743d26aa"
+    ],
+    "name": [
+      "claim_da31c1f3638a743d26aa"
+    ],
+    "profile_url": [
+      "claim_da31c1f3638a743d26aa"
+    ],
+    "recent_papers": [
+      "claim_da31c1f3638a743d26aa"
+    ],
+    "research_directions": [
+      "claim_da31c1f3638a743d26aa"
+    ],
+    "status": [
+      "claim_da31c1f3638a743d26aa"
+    ],
+    "title": [
+      "claim_da31c1f3638a743d26aa"
+    ]
+  },
+  "id": "mentor_af44286b2031c949c791",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_da31c1f3638a743d26aa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴海威"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8a21f5c047f990c4fe4c",
+      "claim_ids": [
+        "claim_da31c1f3638a743d26aa"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/16855.htm"
+    }
+  ],
+  "recent_papers": [
+    "H. W. Wu, J. T. Zhou, X. Y. Zhang, J. Y. Tian, and W. W. Sun, “Robust Camera Model Identification over Online Social Network Shared Images via Multi-Scenario Learning”, IEEE Transactions on Information Forensics and Security (T-IFS), 2023.",
+    "H. W. Wu, J. T. Zhou, J. Y. Tian, J. Liu, and Yu Qiao, “Robust Image Forgery Detection against Transmission over Online Social Networks”, IEEE Transactions on Information Forensics and Security (T-IFS), 2022.",
+    "H. W. Wu and J. T. Zhou, “Privacy Leakage of SIFT Features via Deep Generative Model based Image Reconstruction”, IEEE Transactions on Information Forensics and Security (T-IFS), 2021.",
+    "H. W. Wu, J. T. Zhou, and Y. M. Li, “Deep Generative Model for Image Inpainting with Local Binary Pattern Learning and Spatial Attention”, IEEE Transactions on Multimedia (T-MM), 2021.",
+    "H. W. Wu and J. T. Zhou, “IID-Net: Image Inpainting Detection Network via Neural Architecture Search and Attention”, IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT), 2021."
+  ],
+  "research_directions": [
+    "从事人工智能与网络安全交叉领域研究,聚焦多媒体数字取证(图像伪造定位、深伪检测和相机溯源等)和人工智能安全(鲁棒训练、对抗攻击和后门防御等)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/16855.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

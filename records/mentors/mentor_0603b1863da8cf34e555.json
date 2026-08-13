@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_981b1991ebf1f9e120fd"
+      ],
+      "ended_at": null,
+      "id": "aff_5adf07acfa6a86d6b66e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11639.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_981b1991ebf1f9e120fd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5adf07acfa6a86d6b66e",
+      "claim_ids": [
+        "claim_981b1991ebf1f9e120fd"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaojb@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11639.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaojb@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_981b1991ebf1f9e120fd"
+    ],
+    "email": [
+      "claim_981b1991ebf1f9e120fd"
+    ],
+    "name": [
+      "claim_981b1991ebf1f9e120fd"
+    ],
+    "profile_url": [
+      "claim_981b1991ebf1f9e120fd"
+    ],
+    "recent_papers": [
+      "claim_981b1991ebf1f9e120fd"
+    ],
+    "research_directions": [
+      "claim_981b1991ebf1f9e120fd"
+    ],
+    "status": [
+      "claim_981b1991ebf1f9e120fd"
+    ],
+    "title": [
+      "claim_981b1991ebf1f9e120fd"
+    ]
+  },
+  "id": "mentor_0603b1863da8cf34e555",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_981b1991ebf1f9e120fd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高建彬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5adf07acfa6a86d6b66e",
+      "claim_ids": [
+        "claim_981b1991ebf1f9e120fd"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11639.htm"
+    }
+  ],
+  "recent_papers": [
+    "Selective Sharing of Outsourced Encrypted Data in Cloud Environments",
+    "A Proxy Re-Encryption Approach to Secure Data Sharing in the Internet of Things Based on Blockchain",
+    "A Blockchain Approach to Ensuring Provenance to Outsourced Cloud Data in a Sharing Ecosystem",
+    "Personal Health Records Sharing Scheme Based on Attribute Based Signcryption with Data Integrity Verifiable",
+    "Training Machine Learning Models Through Preserved Decentralization",
+    "A Fully Secure KP-ABE Scheme on Prime-Order Bilinear Groups through Selective Techniques",
+    "基于区块链的链上数据安全共享体系研究",
+    "A blockchainized privacy-preserving support vector machine classification on mobile crowd sensed data"
+  ],
+  "research_directions": [
+    "区块链技术及应用,网络与数据安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11639.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

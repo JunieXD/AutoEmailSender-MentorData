@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fed2bec7ddb38d3f51c1"
+      ],
+      "ended_at": null,
+      "id": "aff_75b054d4c061f7179610",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11027.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fed2bec7ddb38d3f51c1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_75b054d4c061f7179610",
+      "claim_ids": [
+        "claim_fed2bec7ddb38d3f51c1"
+      ],
+      "is_primary": true,
+      "normalized_value": "guowu@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11027.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guowu@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ],
+    "email": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ],
+    "name": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ],
+    "profile_url": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ],
+    "recent_papers": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ],
+    "research_directions": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ],
+    "status": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ],
+    "title": [
+      "claim_fed2bec7ddb38d3f51c1"
+    ]
+  },
+  "id": "mentor_015d94b70a8aca25b47f",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fed2bec7ddb38d3f51c1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨国武"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_75b054d4c061f7179610",
+      "claim_ids": [
+        "claim_fed2bec7ddb38d3f51c1"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11027.htm"
+    }
+  ],
+  "recent_papers": [
+    "Defu Liu, Ivor Tsang, and Guowu Yang*, “A Convergence Path to Deep Learning on Noisy Labels”, IEEE Transactions on Neural Networks and Learning Systems 35(4), April, 2024, 5170-5182. (中科院一区)",
+    "Shuo He, Chaojie Wang, Guowu Yang*, Lei Feng*, “Candidate Label Set Pruning: A Data-centric Perspective for Deep Partial-Lebel Learning,” ICLR 2024 (Oral paper).",
+    "Defu Liu, Wen li, lixin Duan, Ivor Tsang, and Guowu Yang*, “Noisy Label Learning with Provable Consistency for a Wider Family of Losses”, IEEE Transactions on Pattern Analysis and Machine Intelligence, 45(11), 13536-13552, Nov. 2023. (CCF A类期刊,中科院一区)",
+    "Jianyang Zhang, Guowu Yang, Ping Hu, Guosheng Lin, Fengmao Lv, “Semantic Consistent Embedding for Domain Adaptive Zero-Shot Learning”, IEEE Transactions on Image Processing, vol.32, 4024-4035, 2023. (CCF A类期刊,中科院一区)",
+    "Xiao Zeng, Huijun Liang, Jun Yuan, Xiaoyu Song, Guowu Yang*, “Generalized Affine Equivalence Checking of Boolean Functions via Reachability Analysis”,IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 42(9), 2966-2979, Sept. 2023. (CCF A类期刊)",
+    "Shuo He, Lei Feng, Guowu Yang*, “Partial-label Learning with Mixed Closed-set and Open-set Out-of-candidate Examples”, ACM SIGKDD 2023, pp.722-731, Long Beach CA, USA, Aug. 6-10, 2023. (CCF A类会议)",
+    "Shuo He, Guowu Yang*, Lei Feng, “Candidate-aware Selective Disambiguation Based on Normalized Entropy for Instance-dependent Partial-label Learning”, ICCV 2023, pp.1792-1801, Paris, France, Oct. 2-6, 2023. (CCF A类会议)",
+    "Fengmao Lv, Jianyang Zhang*, Guowu Yang, Lei Feng, Yufeng Yu, Lixin Duan, “Learning Cross-domain Semantic-visual Relationships for Transductive Zero-shot Learning”, Pattern Recognition, 141, 2023, 109591. (中科院一区)"
+  ],
+  "research_directions": [
+    "量子计算,机器学习,布尔函数"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11027.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

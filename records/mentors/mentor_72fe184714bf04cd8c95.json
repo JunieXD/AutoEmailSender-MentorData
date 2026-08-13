@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_77382842a3435dc3d1da"
+      ],
+      "ended_at": null,
+      "id": "aff_8b06f825690398d7fd0a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/12686.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_77382842a3435dc3d1da"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8b06f825690398d7fd0a",
+      "claim_ids": [
+        "claim_77382842a3435dc3d1da"
+      ],
+      "is_primary": true,
+      "normalized_value": "renfuji@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/12686.htm",
+      "status": "current",
+      "type": "email",
+      "value": "renfuji@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_77382842a3435dc3d1da"
+    ],
+    "email": [
+      "claim_77382842a3435dc3d1da"
+    ],
+    "name": [
+      "claim_77382842a3435dc3d1da"
+    ],
+    "profile_url": [
+      "claim_77382842a3435dc3d1da"
+    ],
+    "recent_papers": [
+      "claim_77382842a3435dc3d1da"
+    ],
+    "research_directions": [
+      "claim_77382842a3435dc3d1da"
+    ],
+    "status": [
+      "claim_77382842a3435dc3d1da"
+    ],
+    "title": [
+      "claim_77382842a3435dc3d1da"
+    ]
+  },
+  "id": "mentor_72fe184714bf04cd8c95",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_77382842a3435dc3d1da"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任福继"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8b06f825690398d7fd0a",
+      "claim_ids": [
+        "claim_77382842a3435dc3d1da"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/12686.htm"
+    }
+  ],
+  "recent_papers": [
+    "Granular symmetric implicational method",
+    "Intent-enhanced attentive Bert capsule network for zero-shot intention detection",
+    "Double Bayesian Pairwise Learning for One-class Collaborative Filtering",
+    "A Survey of Textual Emotion Recognition and Its Challenges",
+    "Multi-label Emotion Detection via Emotion-Specified Feature Extraction and Emotion Correlation Learning",
+    "BeSense: Leveraging WiFi Channel Data and Computational Intelligence for Behavior Analysis",
+    "Facial Expression Imitation Method for Humanoid Robot Based on Smooth-Constraint Reversed Mechanical Model (SRMM)",
+    "A review on human-computer interaction and intelligent robots"
+  ],
+  "research_directions": [
+    "情感计算、智能机器人、自然语言理解、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/12686.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

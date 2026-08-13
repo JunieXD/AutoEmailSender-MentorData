@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_07d264c9346cfde2171b"
+      ],
+      "ended_at": null,
+      "id": "aff_5047887d6f5d1fff7748",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11418.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_07d264c9346cfde2171b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5047887d6f5d1fff7748",
+      "claim_ids": [
+        "claim_07d264c9346cfde2171b"
+      ],
+      "is_primary": true,
+      "normalized_value": "myxiao@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11418.htm",
+      "status": "current",
+      "type": "email",
+      "value": "myxiao@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_07d264c9346cfde2171b"
+    ],
+    "email": [
+      "claim_07d264c9346cfde2171b"
+    ],
+    "name": [
+      "claim_07d264c9346cfde2171b"
+    ],
+    "profile_url": [
+      "claim_07d264c9346cfde2171b"
+    ],
+    "recent_papers": [
+      "claim_07d264c9346cfde2171b"
+    ],
+    "research_directions": [
+      "claim_07d264c9346cfde2171b"
+    ],
+    "status": [
+      "claim_07d264c9346cfde2171b"
+    ],
+    "title": [
+      "claim_07d264c9346cfde2171b"
+    ]
+  },
+  "id": "mentor_bc6a7f8c9aaceea7b650",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_07d264c9346cfde2171b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖鸣宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5047887d6f5d1fff7748",
+      "claim_ids": [
+        "claim_07d264c9346cfde2171b"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11418.htm"
+    }
+  ],
+  "recent_papers": [
+    "Exact algorithms for maximum independent set",
+    "Exact algorithms for Maximum Induced Matching",
+    "Efficient Reductions and a Fast Algorithm of Maximum Weighted Independent Set",
+    "On a generalization of Nemhauser and Trotter's local optimization theorem",
+    "Tight Approximation Ratio of a General Greedy Splitting Algorithm for the Minimum k-Way Cut Problem"
+  ],
+  "research_directions": [
+    "算法设计、精确与参数算法、图论与图算法、组合优化、机制设计与算法博弈论、多智能体算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11418.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

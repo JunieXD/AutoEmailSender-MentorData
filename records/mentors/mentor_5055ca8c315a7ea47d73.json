@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e7e0b371c7c99fbc148b"
+      ],
+      "ended_at": null,
+      "id": "aff_3595526817b512816828",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11405.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e7e0b371c7c99fbc148b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3595526817b512816828",
+      "claim_ids": [
+        "claim_e7e0b371c7c99fbc148b"
+      ],
+      "is_primary": true,
+      "normalized_value": "xmwang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11405.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xmwang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e7e0b371c7c99fbc148b"
+    ],
+    "email": [
+      "claim_e7e0b371c7c99fbc148b"
+    ],
+    "name": [
+      "claim_e7e0b371c7c99fbc148b"
+    ],
+    "profile_url": [
+      "claim_e7e0b371c7c99fbc148b"
+    ],
+    "recent_papers": [
+      "claim_e7e0b371c7c99fbc148b"
+    ],
+    "research_directions": [
+      "claim_e7e0b371c7c99fbc148b"
+    ],
+    "status": [
+      "claim_e7e0b371c7c99fbc148b"
+    ],
+    "title": [
+      "claim_e7e0b371c7c99fbc148b"
+    ]
+  },
+  "id": "mentor_5055ca8c315a7ea47d73",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e7e0b371c7c99fbc148b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晓敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3595526817b512816828",
+      "claim_ids": [
+        "claim_e7e0b371c7c99fbc148b"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11405.htm"
+    }
+  ],
+  "recent_papers": [
+    "Cost Ensemble with Gradient Selecting for GANs, IJCAI,2022(CCF A)",
+    "CyclicShift:A Data Augmentation Method For Enriching Data Patterns, ACM Multimedia,2022(CCF A)",
+    "Reinforcement Learning Based Diagnosis and Prediction for COVID-19 by Optimizing a Mixed Cost Function From CT Images, Journal of Biomedical and Health Informatics,2022(中科院二区)",
+    "Deep Learning Using CT Images to Grade Clear Cell Renal Cell Carcinoma: Development and Validation of a Prediction Model, Cancers,2022(中科院二区)",
+    "Cut-Thumbnail:A Novel Data Augmentation for Convolutional Neural Network,ACM Multimedia,2021(CCF A)",
+    "Gu jiqing, Chao song, Xiaomin wang,Enhancing Personalized Trip Recommendation with Attractive Routes,AAAI,2020(CCF A)"
+  ],
+  "research_directions": [
+    "人工智能、医工交叉、大数据、无线网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11405.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

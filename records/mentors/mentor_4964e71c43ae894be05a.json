@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_85a4675bc3826d31a3a6"
+      ],
+      "ended_at": null,
+      "id": "aff_c0b8cc45ce17c71b0d7e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11961.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_85a4675bc3826d31a3a6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c0b8cc45ce17c71b0d7e",
+      "claim_ids": [
+        "claim_85a4675bc3826d31a3a6"
+      ],
+      "is_primary": true,
+      "normalized_value": "chaosong@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11961.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chaosong@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_85a4675bc3826d31a3a6"
+    ],
+    "email": [
+      "claim_85a4675bc3826d31a3a6"
+    ],
+    "name": [
+      "claim_85a4675bc3826d31a3a6"
+    ],
+    "profile_url": [
+      "claim_85a4675bc3826d31a3a6"
+    ],
+    "recent_papers": [
+      "claim_85a4675bc3826d31a3a6"
+    ],
+    "research_directions": [
+      "claim_85a4675bc3826d31a3a6"
+    ],
+    "status": [
+      "claim_85a4675bc3826d31a3a6"
+    ],
+    "title": [
+      "claim_85a4675bc3826d31a3a6"
+    ]
+  },
+  "id": "mentor_4964e71c43ae894be05a",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_85a4675bc3826d31a3a6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c0b8cc45ce17c71b0d7e",
+      "claim_ids": [
+        "claim_85a4675bc3826d31a3a6"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11961.htm"
+    }
+  ],
+  "recent_papers": [
+    "ACM: AccuracyAware Collaborative Monitoring for Software-Defined Network-Wide Measurement",
+    "Pedestrian Flow Prediction and Route Recommendation with Business Events",
+    "Distributed Triangle Approximately Counting Algorithms in Simple Graph Stream",
+    "Towards Problem of First Miss under Mobile Edge Caching",
+    "Enhancing Personalized Trip Recommendation with Attractive Routes",
+    "Towards Cascading Problem for Dynamic Rate Allocations in ISP Networks with SDN",
+    "One-Request Scheme for M2P Data Transmissions in Software-Defined IoT Networks",
+    "Efficient routing through discretization of overlapped road segments in VANETs"
+  ],
+  "research_directions": [
+    "计算机网络、分布式计算、大数据分析与挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11961.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

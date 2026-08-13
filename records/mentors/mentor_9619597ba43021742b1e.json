@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_15c5709976cfccd1ecf0"
+      ],
+      "ended_at": null,
+      "id": "aff_71da206ed66396be78a6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11199.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_15c5709976cfccd1ecf0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_71da206ed66396be78a6",
+      "claim_ids": [
+        "claim_15c5709976cfccd1ecf0"
+      ],
+      "is_primary": true,
+      "normalized_value": "qinke@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11199.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qinke@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_15c5709976cfccd1ecf0"
+    ],
+    "email": [
+      "claim_15c5709976cfccd1ecf0"
+    ],
+    "name": [
+      "claim_15c5709976cfccd1ecf0"
+    ],
+    "profile_url": [
+      "claim_15c5709976cfccd1ecf0"
+    ],
+    "recent_papers": [
+      "claim_15c5709976cfccd1ecf0"
+    ],
+    "research_directions": [
+      "claim_15c5709976cfccd1ecf0"
+    ],
+    "status": [
+      "claim_15c5709976cfccd1ecf0"
+    ],
+    "title": [
+      "claim_15c5709976cfccd1ecf0"
+    ]
+  },
+  "id": "mentor_9619597ba43021742b1e",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_15c5709976cfccd1ecf0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "秦科"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_71da206ed66396be78a6",
+      "claim_ids": [
+        "claim_15c5709976cfccd1ecf0"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11199.htm"
+    }
+  ],
+  "recent_papers": [
+    "Enhancing relation extraction using multi-task learning with SDP evidence",
+    "Beta-LR: Interpretable Logical Reasoning based on Beta Distribution",
+    "Completion Time Optimization in UAV-Relaying-Assisted MEC Networks with Moving Users",
+    "Denoising Graph Inference Network for Document-Level Relation Extraction",
+    "Deep neural network-based relation extraction: an overview",
+    "Document-level relation extraction using evidence reasoning on RST-GRAPH",
+    "Research on the Construction and Application of Breast Cancer-specific Database System Based on Full Data Lifecycle",
+    "Improving Neural Machine Translation Model with Deep Encoding Information"
+  ],
+  "research_directions": [
+    "人工智能,神经网络,机器学习,数据科学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11199.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

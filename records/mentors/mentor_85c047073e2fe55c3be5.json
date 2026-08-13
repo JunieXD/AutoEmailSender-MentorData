@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd82c2ddea2be0b5b82d"
+      ],
+      "ended_at": null,
+      "id": "aff_6264505b8ceb1fd2b65d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11947.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fd82c2ddea2be0b5b82d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6264505b8ceb1fd2b65d",
+      "claim_ids": [
+        "claim_fd82c2ddea2be0b5b82d"
+      ],
+      "is_primary": true,
+      "normalized_value": "jpli2222@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11947.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jpli2222@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ],
+    "email": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ],
+    "name": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ],
+    "profile_url": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ],
+    "recent_papers": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ],
+    "research_directions": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ],
+    "status": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ],
+    "title": [
+      "claim_fd82c2ddea2be0b5b82d"
+    ]
+  },
+  "id": "mentor_85c047073e2fe55c3be5",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd82c2ddea2be0b5b82d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李建平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6264505b8ceb1fd2b65d",
+      "claim_ids": [
+        "claim_fd82c2ddea2be0b5b82d"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11947.htm"
+    }
+  ],
+  "recent_papers": [
+    "DEBCM: Deep Learning-Based Enhanced Breast Invasive Ductal Carcinoma Classification Model in IoMT Healthcare Systems",
+    "Federated Fusion of Magnified Histopathological Images for Breast Tumor Classification in the Internet of Medical Things",
+    "A survey of deep learning techniques based Parkinson’s disease recognition methods employing clinical data",
+    "IIMFCBM: Intelligent Integrated Model for Feature Extraction and Classification of Brain Tumors Using MRI Clinical Imaging Data in IoT-Healthcare",
+    "A wavelet convolutional capsule network with modified super resolution generative adversarial network for fault diagnosis and classification",
+    "WMR-DepthwiseNet:A Wavelet Multi-Resolution Depthwise Separable Convolutional Neural Network for COVID-19 Diagnosis",
+    "COVID-19 Diagnosis from Chest X-Ray Images Using a Robust Multi-Resolution Analysis Siamese Neural Network with Super Resolution Convolutional Neural Network",
+    "Detection of Breast Cancer Through Clinical Data Using Supervised and Unsupervised Feature Selection Techniques"
+  ],
+  "research_directions": [
+    "小波分析理论、信号处理、图像处理、模式识别、人工智能与智能经济、数字水印与信息安全、大数据智能安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11947.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

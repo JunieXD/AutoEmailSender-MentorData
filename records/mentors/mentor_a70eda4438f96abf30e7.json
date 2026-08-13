@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b1097d6182b076e02464"
+      ],
+      "ended_at": null,
+      "id": "aff_e753c6dc2c27b29ee5ea",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_1dc51da601cf204b61a1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11973.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_b1097d6182b076e02464"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e753c6dc2c27b29ee5ea",
+      "claim_ids": [
+        "claim_b1097d6182b076e02464"
+      ],
+      "is_primary": true,
+      "normalized_value": "xyf1989@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11973.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xyf1989@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b1097d6182b076e02464"
+    ],
+    "email": [
+      "claim_b1097d6182b076e02464"
+    ],
+    "name": [
+      "claim_b1097d6182b076e02464"
+    ],
+    "profile_url": [
+      "claim_b1097d6182b076e02464"
+    ],
+    "recent_papers": [
+      "claim_b1097d6182b076e02464"
+    ],
+    "research_directions": [
+      "claim_b1097d6182b076e02464"
+    ],
+    "status": [
+      "claim_b1097d6182b076e02464"
+    ]
+  },
+  "id": "mentor_a70eda4438f96abf30e7",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b1097d6182b076e02464"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖逸飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e753c6dc2c27b29ee5ea",
+      "claim_ids": [
+        "claim_b1097d6182b076e02464"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11973.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Xiao, S. Zhou, L. Zhong. Erasure coding-oriented data update for cloud storage: A survey[J]. IEEE Access, 2020, 227982-227998.",
+    "Y. Xiao, S. Zhou, L. Zhong, et al. Sector error-oriented durability-aware fast repair in erasure- coded cloud storage systems[C]. Communications in Computer and Information Science, Guangzhou, China, 2021, 445-459.",
+    "Y. Xiao, S. Zhou, L. Zhong. Health data availability protection: Delta-xor-relay data update in erasure-coded cloud storage systems[J]. CMES-Computer Modeling in Engineering Sciences, 2023, 135(1): 169–185."
+  ],
+  "research_directions": [
+    "云存储,强化学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11973.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:14Z"
+}

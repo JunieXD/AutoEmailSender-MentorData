@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a68cda09c326808a5845"
+      ],
+      "ended_at": null,
+      "id": "aff_5835f03b78d053437467",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11454.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a68cda09c326808a5845"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5835f03b78d053437467",
+      "claim_ids": [
+        "claim_a68cda09c326808a5845"
+      ],
+      "is_primary": true,
+      "normalized_value": "xinzhengniu@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11454.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xinzhengniu@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a68cda09c326808a5845"
+    ],
+    "email": [
+      "claim_a68cda09c326808a5845"
+    ],
+    "name": [
+      "claim_a68cda09c326808a5845"
+    ],
+    "profile_url": [
+      "claim_a68cda09c326808a5845"
+    ],
+    "research_directions": [
+      "claim_a68cda09c326808a5845"
+    ],
+    "status": [
+      "claim_a68cda09c326808a5845"
+    ],
+    "title": [
+      "claim_a68cda09c326808a5845"
+    ]
+  },
+  "id": "mentor_d43816e11e8a5ba738ff",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a68cda09c326808a5845"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "牛新征"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5835f03b78d053437467",
+      "claim_ids": [
+        "claim_a68cda09c326808a5845"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11454.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据分析、数据挖掘、图像识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11454.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_968a99ee4c2292246ed6"
+      ],
+      "ended_at": null,
+      "id": "aff_f00f6b1b20a051609308",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10952.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_968a99ee4c2292246ed6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f00f6b1b20a051609308",
+      "claim_ids": [
+        "claim_968a99ee4c2292246ed6"
+      ],
+      "is_primary": true,
+      "normalized_value": "zkang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10952.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zkang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_968a99ee4c2292246ed6"
+    ],
+    "email": [
+      "claim_968a99ee4c2292246ed6"
+    ],
+    "name": [
+      "claim_968a99ee4c2292246ed6"
+    ],
+    "profile_url": [
+      "claim_968a99ee4c2292246ed6"
+    ],
+    "recent_papers": [
+      "claim_968a99ee4c2292246ed6"
+    ],
+    "research_directions": [
+      "claim_968a99ee4c2292246ed6"
+    ],
+    "status": [
+      "claim_968a99ee4c2292246ed6"
+    ],
+    "title": [
+      "claim_968a99ee4c2292246ed6"
+    ]
+  },
+  "id": "mentor_24403310cb9e1991f114",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_968a99ee4c2292246ed6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "康昭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f00f6b1b20a051609308",
+      "claim_ids": [
+        "claim_968a99ee4c2292246ed6"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/10952.htm"
+    }
+  ],
+  "recent_papers": [
+    "When Heterophily Meets Heterogeneous Graphs: Latent Graphs Guided Unsupervised Representation Learning",
+    "Disentangling Homophily and Heterophily in Multimodal Graph Clustering",
+    "Multi-Domain Graph Foundation Models: Robust Knowledge Transfer via Topology Alignment",
+    "Cooperation of Experts: Fusing Heterogeneous Information with Large Margin",
+    "Bridging Generative and Discriminative Learning: Few-Shot Relation Extraction via Two-Stage Knowledge-Guided Pre-training",
+    "CDC: A Simple Framework for Complex Data Clustering",
+    "One Node One Model: Featuring the Missing-Half for Graph Clustering",
+    "Beyond Redundancy: Information-aware Unsupervised Multiplex Graph Structure Learning"
+  ],
+  "research_directions": [
+    "图机器学习、大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/10952.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

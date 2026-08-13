@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_605bd4925893369e76ba"
+      ],
+      "ended_at": null,
+      "id": "aff_689a613e3edbf45a53ca",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15378.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_605bd4925893369e76ba"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_689a613e3edbf45a53ca",
+      "claim_ids": [
+        "claim_605bd4925893369e76ba"
+      ],
+      "is_primary": true,
+      "normalized_value": "dengjw@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15378.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dengjw@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_605bd4925893369e76ba"
+    ],
+    "email": [
+      "claim_605bd4925893369e76ba"
+    ],
+    "name": [
+      "claim_605bd4925893369e76ba"
+    ],
+    "profile_url": [
+      "claim_605bd4925893369e76ba"
+    ],
+    "recent_papers": [
+      "claim_605bd4925893369e76ba"
+    ],
+    "research_directions": [
+      "claim_605bd4925893369e76ba"
+    ],
+    "status": [
+      "claim_605bd4925893369e76ba"
+    ],
+    "title": [
+      "claim_605bd4925893369e76ba"
+    ]
+  },
+  "id": "mentor_62f27eee6208c0f599e0",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_605bd4925893369e76ba"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓佳文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_689a613e3edbf45a53ca",
+      "claim_ids": [
+        "claim_605bd4925893369e76ba"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/15378.htm"
+    }
+  ],
+  "recent_papers": [
+    "Enhancing Offensive Language Detection with Data Augmentation and Knowledge Distillation",
+    "A Survey of Textual Emotion Recognition and Its Challenges",
+    "Multi-Label Emotion Detection via Emotion-Specified Feature Extraction and Emotion Correlation Learning",
+    "COLD: A Benchmark for Chinese Offensive Language Detection",
+    "Towards identifying social bias in dialog systems: Framework, dataset, and benchmark",
+    "Recent advances towards safe, responsible, and moral dialogue systems: A survey",
+    "On the Safety of Conversational Models: Taxonomy, Dataset, and Benchmark",
+    "InstructSafety: A Unified Framework for Building Multidimensional and Explainable Safety Detector through Instruction Tuning"
+  ],
+  "research_directions": [
+    "自然语言处理、情感计算、人机对话系统、生成式AI安全伦理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/15378.htm",
+  "title": "助理研究员",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

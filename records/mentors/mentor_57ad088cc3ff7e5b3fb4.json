@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_50c4da8829425d5b539c"
+      ],
+      "ended_at": null,
+      "id": "aff_c28cf0a7187fc75749da",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11563.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_50c4da8829425d5b539c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c28cf0a7187fc75749da",
+      "claim_ids": [
+        "claim_50c4da8829425d5b539c"
+      ],
+      "is_primary": true,
+      "normalized_value": "haomyang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11563.htm",
+      "status": "current",
+      "type": "email",
+      "value": "haomyang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_50c4da8829425d5b539c"
+    ],
+    "email": [
+      "claim_50c4da8829425d5b539c"
+    ],
+    "name": [
+      "claim_50c4da8829425d5b539c"
+    ],
+    "profile_url": [
+      "claim_50c4da8829425d5b539c"
+    ],
+    "recent_papers": [
+      "claim_50c4da8829425d5b539c"
+    ],
+    "research_directions": [
+      "claim_50c4da8829425d5b539c"
+    ],
+    "status": [
+      "claim_50c4da8829425d5b539c"
+    ],
+    "title": [
+      "claim_50c4da8829425d5b539c"
+    ]
+  },
+  "id": "mentor_57ad088cc3ff7e5b3fb4",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_50c4da8829425d5b539c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨浩淼"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c28cf0a7187fc75749da",
+      "claim_ids": [
+        "claim_50c4da8829425d5b539c"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11563.htm"
+    }
+  ],
+  "recent_papers": [
+    "Fast Generation-Based Gradient Leakage Attacks: An Approach to Generate Training Data Directly from the Gradient",
+    "A Comprehensive Overview of Backdoor Attacks in Large Language Models within Communication Networks",
+    "A Dropout-Tolerated Privacy-Preserving Method for Decentralized Crowdsourced Federated Learning",
+    "Robust Indoor Location Identification for Smartphones Using Echoes from Dominant Reflectors",
+    "Fast Generation-Based Gradient Leakage Attacks against Highly Compressed Gradients",
+    "FedVAE: Communication-Efficient Federated Learning With Non-IID Private Data",
+    "Using Highly Compressed Gradients in Federated Learning for Data Reconstruction Attacks",
+    "Gradient Leakage Attacks in Federated Learning: Research Frontiers, Taxonomy and Future Directions"
+  ],
+  "research_directions": [
+    "数据安全、隐私保护、深度学习安全、大模型安全、云计算安全、物联网安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11563.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

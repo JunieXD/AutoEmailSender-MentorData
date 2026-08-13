@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_63a3b84c80216f6d2519"
+      ],
+      "ended_at": null,
+      "id": "aff_8f42fdfd5bc7d70d503a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11042.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_63a3b84c80216f6d2519"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8f42fdfd5bc7d70d503a",
+      "claim_ids": [
+        "claim_63a3b84c80216f6d2519"
+      ],
+      "is_primary": true,
+      "normalized_value": "yalanye@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11042.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yalanye@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_63a3b84c80216f6d2519"
+    ],
+    "email": [
+      "claim_63a3b84c80216f6d2519"
+    ],
+    "name": [
+      "claim_63a3b84c80216f6d2519"
+    ],
+    "profile_url": [
+      "claim_63a3b84c80216f6d2519"
+    ],
+    "recent_papers": [
+      "claim_63a3b84c80216f6d2519"
+    ],
+    "research_directions": [
+      "claim_63a3b84c80216f6d2519"
+    ],
+    "status": [
+      "claim_63a3b84c80216f6d2519"
+    ],
+    "title": [
+      "claim_63a3b84c80216f6d2519"
+    ]
+  },
+  "id": "mentor_91bc5904df058ed144cd",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_63a3b84c80216f6d2519"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "叶娅兰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8f42fdfd5bc7d70d503a",
+      "claim_ids": [
+        "claim_63a3b84c80216f6d2519"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11042.htm"
+    }
+  ],
+  "recent_papers": [
+    "Rethinking occlusion in FER: A semantic-aware perspective and go beyond",
+    "Toward reliable emotion recognition: Alleviating label noise and reducing uncertain prediction",
+    "Online multi-hypergraph fusion learning for cross-subject emotion recognition",
+    "Online unsupervised domain adaptation via reducing inter- and intra-domain discrepancies",
+    "Learning latent representations for generalized zero-shot learning",
+    "Multimodal physiological signals fusion for online emotion recognition",
+    "Prototype matching with domain alignment for open-world specific emitter identification",
+    "Online ECG emotion recognition for unknown subjects via hypergraph-based transfer learning"
+  ],
+  "research_directions": [
+    "人工智能,侧重人机交互的理论、方法及软硬一体系统研制",
+    "研究方向涵盖人机交互中的多模态(视频、语音、生理、行为等)数据融合、可信人机交互、垂直领域大模型,脑机接口与具身智能中人体生理指标计算、情感状态识别、认知负荷评估,跨场景跨任务跨个体跨时期的泛化建模,可穿戴信号分析与计算,医学图像分割"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11042.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0d49df5e2e439616dad7"
+      ],
+      "ended_at": null,
+      "id": "aff_e3d319906b8bc60c11a9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11025.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0d49df5e2e439616dad7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e3d319906b8bc60c11a9",
+      "claim_ids": [
+        "claim_0d49df5e2e439616dad7"
+      ],
+      "is_primary": true,
+      "normalized_value": "yang.yang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11025.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yang.yang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0d49df5e2e439616dad7"
+    ],
+    "email": [
+      "claim_0d49df5e2e439616dad7"
+    ],
+    "name": [
+      "claim_0d49df5e2e439616dad7"
+    ],
+    "profile_url": [
+      "claim_0d49df5e2e439616dad7"
+    ],
+    "recent_papers": [
+      "claim_0d49df5e2e439616dad7"
+    ],
+    "research_directions": [
+      "claim_0d49df5e2e439616dad7"
+    ],
+    "status": [
+      "claim_0d49df5e2e439616dad7"
+    ],
+    "title": [
+      "claim_0d49df5e2e439616dad7"
+    ]
+  },
+  "id": "mentor_03a5c8dd4ad0364ee224",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0d49df5e2e439616dad7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e3d319906b8bc60c11a9",
+      "claim_ids": [
+        "claim_0d49df5e2e439616dad7"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11025.htm"
+    }
+  ],
+  "recent_papers": [
+    "Universal Weighting Metric Learning for Cross-Modal Retrieval",
+    "Joint Feature Synthesis and Embedding: Adversarial Cross-modal Retrieval Revisited",
+    "One-Shot Image-to-Image Translation via Part-Global Learning with a Multi-adversarial Framework",
+    "Adversarial Attack against Urban Scene Segmentation for Autonomous Vehicles",
+    "Mind the Remainder: A Taylor’s Theorem View on Recurrent Neural Networks",
+    "Multi-stage Aggregated Transformer Network for Temporal Language Localization in Videos",
+    "PSD: Principled Synthetic-to-Real Dehazing Guided by Physical Priors",
+    "Adaptive Knowledge Driven Regularization for Deep Neural Networks"
+  ],
+  "research_directions": [
+    "多媒体内容理解、多媒体标注、多媒体检索、社会媒体分析、事件发现、事件跟踪、用户建模、机器学习、大规模哈希、稀疏编码、聚类算法等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11025.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

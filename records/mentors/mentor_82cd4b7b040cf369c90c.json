@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3205bce9b0f037d96edd"
+      ],
+      "ended_at": null,
+      "id": "aff_1a6b2b905dc0c7482d0b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11417.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3205bce9b0f037d96edd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1a6b2b905dc0c7482d0b",
+      "claim_ids": [
+        "claim_3205bce9b0f037d96edd"
+      ],
+      "is_primary": true,
+      "normalized_value": "shenglin_gui@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11417.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shenglin_gui@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3205bce9b0f037d96edd"
+    ],
+    "email": [
+      "claim_3205bce9b0f037d96edd"
+    ],
+    "name": [
+      "claim_3205bce9b0f037d96edd"
+    ],
+    "profile_url": [
+      "claim_3205bce9b0f037d96edd"
+    ],
+    "recent_papers": [
+      "claim_3205bce9b0f037d96edd"
+    ],
+    "research_directions": [
+      "claim_3205bce9b0f037d96edd"
+    ],
+    "status": [
+      "claim_3205bce9b0f037d96edd"
+    ],
+    "title": [
+      "claim_3205bce9b0f037d96edd"
+    ]
+  },
+  "id": "mentor_82cd4b7b040cf369c90c",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3205bce9b0f037d96edd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "桂盛霖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1a6b2b905dc0c7482d0b",
+      "claim_ids": [
+        "claim_3205bce9b0f037d96edd"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11417.htm"
+    }
+  ],
+  "recent_papers": [
+    "Object and Contour Detection with an Architecture-Fusion Network"
+  ],
+  "research_directions": [
+    "嵌入式系统安全技术、多媒体人工智能计算,研究探索嵌入式系统(物联网)在代码安全、协议安全等方向的关键技术和分析方法,以及网络传播多媒体数据的人工智能计算模型和治理机制研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11417.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

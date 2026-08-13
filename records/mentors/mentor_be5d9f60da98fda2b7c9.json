@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8b85e9fe2670d9fba2b"
+      ],
+      "ended_at": null,
+      "id": "aff_299bd7d75f804cb30600",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11419.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f8b85e9fe2670d9fba2b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_299bd7d75f804cb30600",
+      "claim_ids": [
+        "claim_f8b85e9fe2670d9fba2b"
+      ],
+      "is_primary": true,
+      "normalized_value": "cwy@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11419.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cwy@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ],
+    "email": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ],
+    "name": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ],
+    "profile_url": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ],
+    "recent_papers": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ],
+    "research_directions": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ],
+    "status": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ],
+    "title": [
+      "claim_f8b85e9fe2670d9fba2b"
+    ]
+  },
+  "id": "mentor_be5d9f60da98fda2b7c9",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8b85e9fe2670d9fba2b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈文宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_299bd7d75f804cb30600",
+      "claim_ids": [
+        "claim_f8b85e9fe2670d9fba2b"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11419.htm"
+    }
+  ],
+  "recent_papers": [
+    "Spatial division networks for weakly supervised detection",
+    "Bioinformatics and system biology approach to identify the influences of SARS-CoV-2 infections to idiopathic pulmonary fibrosis and chronic obstructive pulmonary disease patients",
+    "PreDTIs: prediction of drug-target interactions based on multiple feature information using gradient boosting framework with data balancing and feature selection techniques",
+    "Summarization With Self-Aware Context Selecting Mechanism",
+    "Weakly Supervised Image Classification and Pointwise Localization with Graph Convolutional Networks",
+    "Structure learning with similarity preserving",
+    "Multi-graph fusion for multi-view spectral clustering",
+    "Partition level multiview subspace clustering"
+  ],
+  "research_directions": [
+    "编译原理,形式语言与自动机理论,模式识别,自然语言处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11419.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

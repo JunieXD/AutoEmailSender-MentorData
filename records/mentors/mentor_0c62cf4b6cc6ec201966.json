@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b0eaa78a2ef727d18ed5"
+      ],
+      "ended_at": null,
+      "id": "aff_d5b821f5a4e53f7d71ad",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11284.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b0eaa78a2ef727d18ed5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d5b821f5a4e53f7d71ad",
+      "claim_ids": [
+        "claim_b0eaa78a2ef727d18ed5"
+      ],
+      "is_primary": true,
+      "normalized_value": "shimincai@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11284.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shimincai@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ],
+    "email": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ],
+    "name": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ],
+    "profile_url": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ],
+    "recent_papers": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ],
+    "research_directions": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ],
+    "status": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ],
+    "title": [
+      "claim_b0eaa78a2ef727d18ed5"
+    ]
+  },
+  "id": "mentor_0c62cf4b6cc6ec201966",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b0eaa78a2ef727d18ed5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蔡世民"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d5b821f5a4e53f7d71ad",
+      "claim_ids": [
+        "claim_b0eaa78a2ef727d18ed5"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11284.htm"
+    }
+  ],
+  "recent_papers": [
+    "Understanding the urban mobility community by taxi travel trajectory",
+    "SSNE: Effective node representation for link prediction in sparse networks",
+    "Temporal propagating network approach to long-term evolutionary process of public opinion",
+    "Multisite autism spectrum disorder classification using convolutional neural network classifier and individual morphological brain networks",
+    "Simulating two-phase taxi service process by random walk theory",
+    "The hierarchical structure of stock market in the times of global financial crisis",
+    "Detecting overlapping community structure with node influence",
+    "Equivalence and its invalidation between non-Markovian and Markovian spreading dynamics on complex networks"
+  ],
+  "research_directions": [
+    "复杂网络系统理论及应用、网络数据挖掘、时间序列分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11284.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

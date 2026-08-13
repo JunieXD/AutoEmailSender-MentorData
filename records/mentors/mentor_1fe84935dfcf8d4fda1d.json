@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_714a056ee36b81c2d648"
+      ],
+      "ended_at": null,
+      "id": "aff_d04b97db70c8f7b0417d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/12350.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_714a056ee36b81c2d648"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d04b97db70c8f7b0417d",
+      "claim_ids": [
+        "claim_714a056ee36b81c2d648"
+      ],
+      "is_primary": true,
+      "normalized_value": "maluzhang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/12350.htm",
+      "status": "current",
+      "type": "email",
+      "value": "maluzhang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_714a056ee36b81c2d648"
+    ],
+    "email": [
+      "claim_714a056ee36b81c2d648"
+    ],
+    "name": [
+      "claim_714a056ee36b81c2d648"
+    ],
+    "profile_url": [
+      "claim_714a056ee36b81c2d648"
+    ],
+    "recent_papers": [
+      "claim_714a056ee36b81c2d648"
+    ],
+    "research_directions": [
+      "claim_714a056ee36b81c2d648"
+    ],
+    "status": [
+      "claim_714a056ee36b81c2d648"
+    ],
+    "title": [
+      "claim_714a056ee36b81c2d648"
+    ]
+  },
+  "id": "mentor_1fe84935dfcf8d4fda1d",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_714a056ee36b81c2d648"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张马路"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d04b97db70c8f7b0417d",
+      "claim_ids": [
+        "claim_714a056ee36b81c2d648"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/12350.htm"
+    }
+  ],
+  "recent_papers": [
+    "Event-Driven Learning Spiking Neural Networks",
+    "Neural Dynamics Self-Attention for Spiking Transformers",
+    "Robust Spiking Neural Networks Against Adversarial Attacks",
+    "TP-Spikformer: Token Pruned Spiking Transformer",
+    "AdaS: Adaptive Gradient Descent for Spiking Transformers",
+    "Hyperspectral Image Fusion with Spectral-Band and Fusion-Scale Agnosticism",
+    "Positional Encoding for Spiking Transformers",
+    "SDTrack: A Baseline for Event-based Tracking via Spiking Neural Networks"
+  ],
+  "research_directions": [
+    "类脑计算、人工智能、神经网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/12350.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

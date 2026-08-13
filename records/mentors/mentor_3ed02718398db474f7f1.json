@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5e7041cf60fb136e1844"
+      ],
+      "ended_at": null,
+      "id": "aff_826024fb32795b4be54d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11026.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5e7041cf60fb136e1844"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_826024fb32795b4be54d",
+      "claim_ids": [
+        "claim_5e7041cf60fb136e1844"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiuhang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11026.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiuhang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5e7041cf60fb136e1844"
+    ],
+    "email": [
+      "claim_5e7041cf60fb136e1844"
+    ],
+    "name": [
+      "claim_5e7041cf60fb136e1844"
+    ],
+    "profile_url": [
+      "claim_5e7041cf60fb136e1844"
+    ],
+    "recent_papers": [
+      "claim_5e7041cf60fb136e1844"
+    ],
+    "research_directions": [
+      "claim_5e7041cf60fb136e1844"
+    ],
+    "status": [
+      "claim_5e7041cf60fb136e1844"
+    ],
+    "title": [
+      "claim_5e7041cf60fb136e1844"
+    ]
+  },
+  "id": "mentor_3ed02718398db474f7f1",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5e7041cf60fb136e1844"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邱航"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_826024fb32795b4be54d",
+      "claim_ids": [
+        "claim_5e7041cf60fb136e1844"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11026.htm"
+    }
+  ],
+  "recent_papers": [
+    "DIAM: Adaptive Drug Repositioning with Decoupled Biological Mechanism and Instance-Aware Modulation",
+    "HAHGL-CDR: Heterogeneous adaptive hypergraph learning for cancer drug response prediction",
+    "HCLGT-DRP: Hypergraph contrastive learning and graph transformer for drug response prediction",
+    "MHGCL: Multimodal heterogeneous graph contrastive learning for cancer patient classification",
+    "Deep Gated Neural Network With Self-Attention Mechanism for Survival Analysis",
+    "MGDMCL: A multi-omics integration framework based on masked graph dynamic learning and multi-granularity feature contrastive learning for biomedical classification",
+    "Multimodal representation learning with hierarchical knowledge decomposition for cancer survival analysis",
+    "Disease network analysis to reveal comorbidity patterns in hospitalized patients with COPD using large-scale administrative health data"
+  ],
+  "research_directions": [
+    "医学多模态表示学习与跨模态融合、时空数据挖掘、健康医疗大数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11026.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

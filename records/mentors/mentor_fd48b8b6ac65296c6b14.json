@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_deff3444ca548d0cd0f5"
+      ],
+      "ended_at": null,
+      "id": "aff_d612844900488086d78f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_76b338d5dc65fb558099",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11968.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_deff3444ca548d0cd0f5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d612844900488086d78f",
+      "claim_ids": [
+        "claim_deff3444ca548d0cd0f5"
+      ],
+      "is_primary": true,
+      "normalized_value": "wyl@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11968.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wyl@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_deff3444ca548d0cd0f5"
+    ],
+    "email": [
+      "claim_deff3444ca548d0cd0f5"
+    ],
+    "name": [
+      "claim_deff3444ca548d0cd0f5"
+    ],
+    "profile_url": [
+      "claim_deff3444ca548d0cd0f5"
+    ],
+    "status": [
+      "claim_deff3444ca548d0cd0f5"
+    ],
+    "title": [
+      "claim_deff3444ca548d0cd0f5"
+    ]
+  },
+  "id": "mentor_fd48b8b6ac65296c6b14",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_deff3444ca548d0cd0f5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王玉林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d612844900488086d78f",
+      "claim_ids": [
+        "claim_deff3444ca548d0cd0f5"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11968.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11968.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:14Z"
+}
