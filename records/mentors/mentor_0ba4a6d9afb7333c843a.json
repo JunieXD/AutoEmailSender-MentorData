@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fb25534a96b04ef89222"
+      ],
+      "ended_at": null,
+      "id": "aff_8654dce7a9ada1546e2d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/9376.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fb25534a96b04ef89222"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8654dce7a9ada1546e2d",
+      "claim_ids": [
+        "claim_fb25534a96b04ef89222"
+      ],
+      "is_primary": true,
+      "normalized_value": "yi.ding@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/9376.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yi.ding@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fb25534a96b04ef89222"
+    ],
+    "email": [
+      "claim_fb25534a96b04ef89222"
+    ],
+    "name": [
+      "claim_fb25534a96b04ef89222"
+    ],
+    "profile_url": [
+      "claim_fb25534a96b04ef89222"
+    ],
+    "recent_papers": [
+      "claim_fb25534a96b04ef89222"
+    ],
+    "research_directions": [
+      "claim_fb25534a96b04ef89222"
+    ],
+    "status": [
+      "claim_fb25534a96b04ef89222"
+    ],
+    "title": [
+      "claim_fb25534a96b04ef89222"
+    ]
+  },
+  "id": "mentor_0ba4a6d9afb7333c843a",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fb25534a96b04ef89222"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "丁熠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8654dce7a9ada1546e2d",
+      "claim_ids": [
+        "claim_fb25534a96b04ef89222"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/9376.htm"
+    }
+  ],
+  "recent_papers": [
+    "Interpreting Universal Adversarial Example Attacks on Image Classification Models",
+    "RLSegNet: An Medical Image Segmentation Network based on Reinforcement Learning",
+    "Adversarial Sample Attack and Defense Method for Encrypted Traffic Data",
+    "Segmentation mask and feature similarity loss guided GAN for object-oriented image-to-image translation",
+    "MallesNet: A multi-object assistance based network for brachial plexus segmentation in ultrasound images",
+    "DeepEDN: A Deep Learning-based Image Encryption and Decryption Network for Internet of Medical Things",
+    "DeepKeyGen: A Deep Learning based Stream Cipher Generator for Medical Image Encryption and Decryption",
+    "MVFusFra: A Multi-View Dynamic Fusion Framework for Multimodal Brain Tumor Segmentation"
+  ],
+  "research_directions": [
+    "深度学习,机器学习,图像处理,计算机辅助诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/9376.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

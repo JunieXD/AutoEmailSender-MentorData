@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0a9a36658cc61f62da8"
+      ],
+      "ended_at": null,
+      "id": "aff_175b8e2acf5f59bad499",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5655.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0a9a36658cc61f62da8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_175b8e2acf5f59bad499",
+      "claim_ids": [
+        "claim_d0a9a36658cc61f62da8"
+      ],
+      "is_primary": true,
+      "normalized_value": "xionghu.uestc@gmail.com",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5655.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xionghu.uestc@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0a9a36658cc61f62da8"
+    ],
+    "email": [
+      "claim_d0a9a36658cc61f62da8"
+    ],
+    "name": [
+      "claim_d0a9a36658cc61f62da8"
+    ],
+    "profile_url": [
+      "claim_d0a9a36658cc61f62da8"
+    ],
+    "recent_papers": [
+      "claim_d0a9a36658cc61f62da8"
+    ],
+    "research_directions": [
+      "claim_d0a9a36658cc61f62da8"
+    ],
+    "status": [
+      "claim_d0a9a36658cc61f62da8"
+    ],
+    "title": [
+      "claim_d0a9a36658cc61f62da8"
+    ]
+  },
+  "id": "mentor_7e0783921ce5e83a0e03",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0a9a36658cc61f62da8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "熊虎"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_175b8e2acf5f59bad499",
+      "claim_ids": [
+        "claim_d0a9a36658cc61f62da8"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/5655.htm"
+    }
+  ],
+  "recent_papers": [
+    "Efficient and Privacy-Preserving Authentication Protocol for Heterogeneous Systems in IIoT",
+    "Efficient Certificateless Aggregate Signature with Conditional Privacy-preserving in IoV",
+    "A Novel Multiserver Authentication Scheme Using Proxy Resignature With Scalability and Strong User Anonymity",
+    "Comment on \"Achieving Secure, Universal, and Fine-grained Query Results Verification for Secure Search Scheme over Encrypted Cloud Data\"",
+    "Lightweight and Privacy-Aware Fine-Grained Access Control for IoT-oriented Smart Health",
+    "Secure message classification services through identity-based signcryption with equality test towards the Internet of vehicles",
+    "Server-aided attribute-based signature supporting expressive access structures for industrial internet of things",
+    "Mobile access and flexible search over encrypted cloud data in heterogeneous systems"
+  ],
+  "research_directions": [
+    "网络安全技术与应用、公钥密码学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/5655.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

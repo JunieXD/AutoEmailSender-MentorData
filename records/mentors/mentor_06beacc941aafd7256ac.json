@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a0797f2d98a4477830b8"
+      ],
+      "ended_at": null,
+      "id": "aff_fe41b074dbd861ee9d1f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/10918.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a0797f2d98a4477830b8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fe41b074dbd861ee9d1f",
+      "claim_ids": [
+        "claim_a0797f2d98a4477830b8"
+      ],
+      "is_primary": true,
+      "normalized_value": "weijiang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/10918.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weijiang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a0797f2d98a4477830b8"
+    ],
+    "email": [
+      "claim_a0797f2d98a4477830b8"
+    ],
+    "name": [
+      "claim_a0797f2d98a4477830b8"
+    ],
+    "profile_url": [
+      "claim_a0797f2d98a4477830b8"
+    ],
+    "research_directions": [
+      "claim_a0797f2d98a4477830b8"
+    ],
+    "status": [
+      "claim_a0797f2d98a4477830b8"
+    ],
+    "title": [
+      "claim_a0797f2d98a4477830b8"
+    ]
+  },
+  "id": "mentor_06beacc941aafd7256ac",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a0797f2d98a4477830b8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "江维"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fe41b074dbd861ee9d1f",
+      "claim_ids": [
+        "claim_a0797f2d98a4477830b8"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/10918.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "可信AI,嵌入式系统,软硬件协同加速"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/10918.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

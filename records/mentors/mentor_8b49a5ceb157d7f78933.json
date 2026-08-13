@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_432b55d603810e356d97"
+      ],
+      "ended_at": null,
+      "id": "aff_d7b1f208ff6563191d2c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5661.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_432b55d603810e356d97"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d7b1f208ff6563191d2c",
+      "claim_ids": [
+        "claim_432b55d603810e356d97"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuyg_cn@163.com",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5661.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuyg_cn@163.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_432b55d603810e356d97"
+    ],
+    "email": [
+      "claim_432b55d603810e356d97"
+    ],
+    "name": [
+      "claim_432b55d603810e356d97"
+    ],
+    "profile_url": [
+      "claim_432b55d603810e356d97"
+    ],
+    "recent_papers": [
+      "claim_432b55d603810e356d97"
+    ],
+    "research_directions": [
+      "claim_432b55d603810e356d97"
+    ],
+    "status": [
+      "claim_432b55d603810e356d97"
+    ],
+    "title": [
+      "claim_432b55d603810e356d97"
+    ]
+  },
+  "id": "mentor_8b49a5ceb157d7f78933",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_432b55d603810e356d97"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘勇国"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d7b1f208ff6563191d2c",
+      "claim_ids": [
+        "claim_432b55d603810e356d97"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/5661.htm"
+    }
+  ],
+  "recent_papers": [
+    "Multi-attribute discriminative representation learning for prediction of adverse drug-drug interaction",
+    "Orthogonal latent space learning with feature weighting and graph learning for multimodal Alzheimer's disease diagnosis",
+    "Adaptive regularized multi-attribute fuzzy distance learning for predicting adverse drug-drug interaction",
+    "DGDFS: Dependence guided discriminative feature selection for predicting adverse drug-drug interaction",
+    "FSPRM: A feature subsequence based probability representation model for Chinese word embedding"
+  ],
+  "research_directions": [
+    "数字医学, 计算健康, 人工智能, 大数据"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/5661.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

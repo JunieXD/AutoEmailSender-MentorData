@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6581a8b76774d98a6e5c"
+      ],
+      "ended_at": null,
+      "id": "aff_c296ad0c1b9262c906e3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5656.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6581a8b76774d98a6e5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c296ad0c1b9262c906e3",
+      "claim_ids": [
+        "claim_6581a8b76774d98a6e5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "gcluo@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5656.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gcluo@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6581a8b76774d98a6e5c"
+    ],
+    "email": [
+      "claim_6581a8b76774d98a6e5c"
+    ],
+    "name": [
+      "claim_6581a8b76774d98a6e5c"
+    ],
+    "profile_url": [
+      "claim_6581a8b76774d98a6e5c"
+    ],
+    "research_directions": [
+      "claim_6581a8b76774d98a6e5c"
+    ],
+    "status": [
+      "claim_6581a8b76774d98a6e5c"
+    ],
+    "title": [
+      "claim_6581a8b76774d98a6e5c"
+    ]
+  },
+  "id": "mentor_48e62a502365a4c2b70c",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6581a8b76774d98a6e5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗光春"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c296ad0c1b9262c906e3",
+      "claim_ids": [
+        "claim_6581a8b76774d98a6e5c"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/5656.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算与大数据、信息安全、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/5656.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

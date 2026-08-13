@@ -2917,3 +2917,49 @@ organizations:
   successor_id: null
   created_at: '2026-08-13T03:16:22Z'
   updated_at: '2026-08-13T03:16:22Z'
+- id: org_auto_999272344ad0187e5645
+  type: university
+  canonical_name: 电子科技大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://uestc.edu.cn/
+  approved_domains:
+  - uestc.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:20:07Z'
+  updated_at: '2026-08-13T03:20:07Z'
+- id: org_auto_225d6f7b44ee5bc4e5f0
+  type: school
+  canonical_name: 信息与软件工程学院
+  parent_id: org_auto_999272344ad0187e5645
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:20:07Z'
+  updated_at: '2026-08-13T03:20:07Z'
+- id: org_auto_f50d145015e917365a08
+  type: department
+  canonical_name: 数字动漫系
+  parent_id: org_auto_225d6f7b44ee5bc4e5f0
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:20:07Z'
+  updated_at: '2026-08-13T03:20:07Z'
+- id: org_auto_4322c05aaee4172fa1bb
+  type: department
+  canonical_name: 信息工程系
+  parent_id: org_auto_225d6f7b44ee5bc4e5f0
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:20:07Z'
+  updated_at: '2026-08-13T03:20:07Z'

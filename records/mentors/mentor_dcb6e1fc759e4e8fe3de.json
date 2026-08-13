@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_490758daeaef73482bac"
+      ],
+      "ended_at": null,
+      "id": "aff_74680b983e0a8ed0d21d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5657.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_490758daeaef73482bac"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_74680b983e0a8ed0d21d",
+      "claim_ids": [
+        "claim_490758daeaef73482bac"
+      ],
+      "is_primary": true,
+      "normalized_value": "tian_wenhong@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5657.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tian_wenhong@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_490758daeaef73482bac"
+    ],
+    "email": [
+      "claim_490758daeaef73482bac"
+    ],
+    "name": [
+      "claim_490758daeaef73482bac"
+    ],
+    "profile_url": [
+      "claim_490758daeaef73482bac"
+    ],
+    "research_directions": [
+      "claim_490758daeaef73482bac"
+    ],
+    "status": [
+      "claim_490758daeaef73482bac"
+    ],
+    "title": [
+      "claim_490758daeaef73482bac"
+    ]
+  },
+  "id": "mentor_dcb6e1fc759e4e8fe3de",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_490758daeaef73482bac"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田文洪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_74680b983e0a8ed0d21d",
+      "claim_ids": [
+        "claim_490758daeaef73482bac"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/5657.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算大数据和智能平台资源优化调度",
+    "基于深度学习的图像识别和科技文献质量自动分析",
+    "NP难问题近似算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/5657.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

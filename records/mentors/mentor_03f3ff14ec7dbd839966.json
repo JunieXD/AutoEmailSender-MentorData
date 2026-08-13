@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_43ef83445c7d2a7ff61d"
+      ],
+      "ended_at": null,
+      "id": "aff_08005a72f6afa1a2d2e0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/10495.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_43ef83445c7d2a7ff61d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_08005a72f6afa1a2d2e0",
+      "claim_ids": [
+        "claim_43ef83445c7d2a7ff61d"
+      ],
+      "is_primary": true,
+      "normalized_value": "richardchen@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/10495.htm",
+      "status": "current",
+      "type": "email",
+      "value": "richardchen@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_43ef83445c7d2a7ff61d"
+    ],
+    "email": [
+      "claim_43ef83445c7d2a7ff61d"
+    ],
+    "name": [
+      "claim_43ef83445c7d2a7ff61d"
+    ],
+    "profile_url": [
+      "claim_43ef83445c7d2a7ff61d"
+    ],
+    "recent_papers": [
+      "claim_43ef83445c7d2a7ff61d"
+    ],
+    "research_directions": [
+      "claim_43ef83445c7d2a7ff61d"
+    ],
+    "status": [
+      "claim_43ef83445c7d2a7ff61d"
+    ]
+  },
+  "id": "mentor_03f3ff14ec7dbd839966",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_43ef83445c7d2a7ff61d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈雷霆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_08005a72f6afa1a2d2e0",
+      "claim_ids": [
+        "claim_43ef83445c7d2a7ff61d"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/10495.htm"
+    }
+  ],
+  "recent_papers": [
+    "Weighted Graph-structured Semantics Constraint Network for Cross-Modal Retrieval. IEEE Transactions on Multimedia, doi: 10.1109/TMM.2023.3282894. (中科院1区)",
+    "Model long-range dependencies for multi-modality and multi-view retinopathy diagnosis through transformers. Knowledge-Based Systems, 2023, 271: 110544. (中科院1区)",
+    "FLeak-Seg: Automated Fundus Fluorescein Leakage Segmentation via Cross-Modal Attention Learning. IEEE Multim, 2022, 29(2): 114-123. (中科院2区)",
+    "Pixel-wise triplet learning for enhancing boundary discrimination in medical image segmentation. Knowl. Based Syst. 243: 108424 (2022)(中科院1区)",
+    "Exploring Graph-Structured Semantics for Cross-Modal Retrieval. ACM Multimedia 2021: 4277-4286. (CCF-A)"
+  ],
+  "research_directions": [
+    "图形图像处理、虚拟现实技术、云计算与大数据、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/10495.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:08Z"
+}
