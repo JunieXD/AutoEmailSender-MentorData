@@ -124,6 +124,9 @@ def test_promotion_uses_trusted_default_branch_and_durable_fallback_triggers() -
     )
     assert "gh workflow run pages.yml" in text
     assert "always() && steps.promotion.outputs.publish == 'true'" in text
+    assert "steps.promotion.outputs.issue_numbers" in text
+    assert '-f "issue_numbers=$ISSUE_NUMBERS"' in text
+    assert "Validate current canonical data" not in text
     assert "mentor-data-report-review:v1" in text
 
 
@@ -185,7 +188,7 @@ def test_redundant_pull_request_check_workflows_are_removed() -> None:
     assert "pull_request" not in validation["on"]
 
 
-def test_pages_reconciles_all_finalized_issues_only_after_deploy() -> None:
+def test_pages_closes_only_requested_issues_and_keeps_scheduled_reconciliation() -> None:
     path = PROJECT_ROOT / ".github" / "workflows" / "pages.yml"
     text = path.read_text(encoding="utf-8")
     document = yaml.load(text, Loader=yaml.BaseLoader)
@@ -193,11 +196,15 @@ def test_pages_reconciles_all_finalized_issues_only_after_deploy() -> None:
     assert "needs.deploy.result == 'success'" in text
     assert 'gh issue close "$ISSUE_NUMBER"' in text
     assert "--reason completed" in text
-    assert "inputs.issue_number" not in text
+    assert "issue_numbers:" in text
+    assert "--issues \"$REQUESTED_ISSUES\"" in text
+    assert "schedule" in document["on"]
+    assert "push" not in document["on"]
     assert "mentor-data build --output .work/pages" in text
+    assert "mentor-data validate" not in text
     assert "mentor-data stage-current --archive .work/pages --output dist" in text
     assert "diff --cached --quiet" in text
-    assert document["concurrency"]["cancel-in-progress"] == "true"
+    assert document["concurrency"]["cancel-in-progress"] == "false"
     upload_step = next(
         step
         for step in document["jobs"]["build"]["steps"]

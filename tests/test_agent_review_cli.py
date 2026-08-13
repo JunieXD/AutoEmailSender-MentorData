@@ -651,6 +651,69 @@ def test_status_classifies_successful_action_without_merge_as_retryable_stalled(
     assert result["next"] == "mentor-data review retry --pr 88 --confirm-pr 88"
 
 
+def test_merged_pr_waits_for_publication_even_when_shared_promotion_run_failed() -> None:
+    result = _classify_status(
+        {
+            "pr": 88,
+            "issue": 87,
+            "issue_state": "open",
+            "pr_state": "closed",
+            "merged": True,
+            "merged_at": "2026-08-12T10:02:00Z",
+            "updated_at": "2026-08-12T10:02:00Z",
+            "labels": [],
+            "review_comments": 1,
+            "checks": {"total": 0, "pending": 0, "failed": 0},
+            "promotion_run": {
+                "id": 100,
+                "status": "completed",
+                "conclusion": "failure",
+                "updated_at": "2026-08-12T10:03:00Z",
+            },
+            "publication_run": {
+                "id": 101,
+                "status": "in_progress",
+                "conclusion": None,
+                "updated_at": "2026-08-12T10:04:00Z",
+            },
+        },
+        next_poll_seconds=5,
+    )
+
+    assert result["phase"] == "published-cleanup-pending"
+    assert result["terminal"] is False
+    assert result["last_transition_at"] == "2026-08-12T10:04:00Z"
+    assert result["next"] == "mentor-data review status --pr 88 --wait"
+
+
+def test_failed_publication_reports_exact_rerun_command() -> None:
+    result = _classify_status(
+        {
+            "repository": "example/repository",
+            "pr": 88,
+            "issue": 87,
+            "issue_state": "open",
+            "pr_state": "closed",
+            "merged": True,
+            "merged_at": "2026-08-12T10:02:00Z",
+            "updated_at": "2026-08-12T10:02:00Z",
+            "labels": [],
+            "review_comments": 1,
+            "checks": {"total": 0, "pending": 0, "failed": 0},
+            "publication_run": {
+                "id": 101,
+                "status": "completed",
+                "conclusion": "failure",
+                "updated_at": "2026-08-12T10:04:00Z",
+            },
+        },
+        next_poll_seconds=5,
+    )
+
+    assert result["phase"] == "workflow-failed"
+    assert result["next"] == "gh run rerun 101 --failed --repo example/repository"
+
+
 def test_retry_requires_confirmation_and_dispatches_trusted_queue(
     monkeypatch: pytest.MonkeyPatch,
     tmp_path: Path,
@@ -723,7 +786,15 @@ def test_check_many_keeps_mixed_results_and_checks_every_pr(
         calls.append(args.pr)
         if args.pr == 12:
             raise AgentReviewError("review_questions_pending", "还有问题")
-        return {"ok": True, "organization_changes": []}
+        return {
+            "ok": True,
+            "duration_seconds": 1.25,
+            "stage_seconds": {"sync": 0.25, "finalize-and-validate": 1.0},
+            "mapped_proposals": 3,
+            "finalized_proposals": 3,
+            "organization_changes": [{"action": "create", "path": "不应进入默认输出"}],
+            "path_normalizations": [{"submitted": "不应进入默认输出"}],
+        }
 
     monkeypatch.setattr("mentor_data.agent_review_cli._check", check)
     args = argparse.Namespace(prs="11,12,13", fields=None)
@@ -735,7 +806,31 @@ def test_check_many_keeps_mixed_results_and_checks_every_pr(
     assert result["failed"] == 1
     assert result["all_passed"] is False
     assert result["items"][1]["error"]["code"] == "review_questions_pending"
+    assert result["items"][0]["organization_changes"] == 1
+    assert result["items"][0]["path_normalizations"] == 1
+    assert isinstance(result["items"][0]["organization_changes"], int)
+    assert result["stage_seconds"] == {"sync": 0.5, "finalize-and-validate": 2.0}
+    report = json.loads(Path(result["report"]).read_text(encoding="utf-8"))
+    assert report["items"][0]["preflight"]["organization_changes"][0]["path"] == (
+        "不应进入默认输出"
+    )
     assert result["next"] is None
+
+
+def test_check_many_rejects_report_path_outside_workspace_before_checks(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli._check",
+        lambda *args, **kwargs: pytest.fail("preflight must not run"),
+    )
+    args = argparse.Namespace(prs="11", fields=None, report="../outside.json")
+
+    with pytest.raises(AgentReviewError) as captured:
+        _check_many(args, tmp_path, tmp_path / "workspace")
+
+    assert captured.value.code == "review_report_path_invalid"
 
 
 def test_submit_many_rejects_nonidentical_authorization_before_github(

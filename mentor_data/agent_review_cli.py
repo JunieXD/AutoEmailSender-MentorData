@@ -30,6 +30,7 @@ from .agent_review import (
 )
 from .agent_review_github import GitHubReviewClient
 from .agent_review_preflight import run_preflight
+from .io_utils import write_json_atomic
 
 DEFAULT_REPOSITORY = "JunieXD/AutoEmailSender-MentorData"
 ROOT_ENVIRONMENT_VARIABLE = "MENTOR_DATA_ROOT"
@@ -347,6 +348,13 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         ),
     )
     _add_pr_list(check_many)
+    check_many.add_argument(
+        "--report",
+        help=(
+            "完整 JSON 报告文件名（必须位于审核 workspace 的 reports 目录；"
+            "默认：check-many-<PR列表>.json）"
+        ),
+    )
     _add_fields(check_many)
 
     decision = commands.add_parser(
@@ -1224,8 +1232,34 @@ def _batch_result_item(
         return item
 
 
+def _check_many_report_path(args: argparse.Namespace, workspace: Path) -> Path:
+    report_root = (workspace / "reports").resolve()
+    requested_report = getattr(args, "report", None)
+    if not requested_report:
+        pull_numbers = _parse_prs(args.prs)
+        return report_root / (
+            "check-many-" + "-".join(str(item) for item in pull_numbers) + ".json"
+        )
+    requested_path = Path(requested_report)
+    report_path = (
+        requested_path.resolve()
+        if requested_path.is_absolute()
+        else (report_root / requested_path).resolve()
+    )
+    if report_path.parent != report_root:
+        raise AgentReviewError(
+            "review_report_path_invalid",
+            "--report 必须是审核 workspace 的 reports 目录内的 JSON 文件名",
+        )
+    if report_path.suffix.casefold() != ".json":
+        raise AgentReviewError("review_report_path_invalid", "--report 必须使用 .json 后缀")
+    return report_path
+
+
 def _check_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
     pull_numbers = _parse_prs(args.prs)
+    report_path = _check_many_report_path(args, workspace)
+    started = time.monotonic()
     items = [
         _batch_result_item(
             pull_number,
@@ -1238,7 +1272,44 @@ def _check_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[s
         )
         for pull_number in pull_numbers
     ]
+    duration_seconds = round(time.monotonic() - started, 3)
     passed = sum(item["ok"] for item in items)
+    stage_seconds: dict[str, float] = {}
+    compact_items: list[dict[str, Any]] = []
+    for item in items:
+        if not item["ok"]:
+            compact_items.append(item)
+            continue
+        preflight = item["preflight"]
+        for stage, seconds in preflight.get("stage_seconds", {}).items():
+            if isinstance(stage, str) and isinstance(seconds, (int, float)):
+                stage_seconds[stage] = round(stage_seconds.get(stage, 0.0) + seconds, 3)
+        compact_items.append(
+            {
+                "pr": item["pr"],
+                "ok": True,
+                "duration_seconds": preflight.get("duration_seconds"),
+                "mapped_proposals": preflight.get("mapped_proposals"),
+                "finalized_proposals": preflight.get("finalized_proposals"),
+                "organization_changes": len(preflight.get("organization_changes", [])),
+                "path_normalizations": len(preflight.get("path_normalizations", [])),
+            }
+        )
+
+    write_json_atomic(
+        report_path,
+        {
+            "schema_version": 1,
+            "command": "review.check-many",
+            "checked_at": utc_now(),
+            "prs": pull_numbers,
+            "duration_seconds": duration_seconds,
+            "stage_seconds": stage_seconds,
+            "passed": passed,
+            "failed": len(items) - passed,
+            "items": items,
+        },
+    )
     return project_fields(
         {
             "prs": pull_numbers,
@@ -1246,7 +1317,10 @@ def _check_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[s
             "passed": passed,
             "failed": len(items) - passed,
             "all_passed": passed == len(items),
-            "items": items,
+            "duration_seconds": duration_seconds,
+            "stage_seconds": stage_seconds,
+            "items": compact_items,
+            "report": str(report_path),
             "next": (
                 "mentor-data review submit-many "
                 f"--prs {','.join(map(str, pull_numbers))} "
@@ -1495,13 +1569,25 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
     promotion_conclusion = (
         promotion_run.get("conclusion") if isinstance(promotion_run, dict) else None
     )
-    workflow_failed = (
+    publication_run = value.get("publication_run")
+    publication_status = (
+        publication_run.get("status") if isinstance(publication_run, dict) else None
+    )
+    publication_conclusion = (
+        publication_run.get("conclusion") if isinstance(publication_run, dict) else None
+    )
+    promotion_failed = (
         promotion_status == "completed"
         and promotion_conclusion not in {"success", "skipped", "neutral"}
-    ) or checks.get("failed", 0) > 0
+    )
+    publication_failed = (
+        publication_status == "completed"
+        and publication_conclusion not in {"success", "skipped", "neutral"}
+    )
+    checks_failed = checks.get("failed", 0) > 0
     if value.get("merged") is True:
         if value.get("issue") is not None and value.get("issue_state") != "closed":
-            if workflow_failed:
+            if publication_failed:
                 phase = "workflow-failed"
                 outcome = "workflow-failure"
                 terminal = True
@@ -1521,7 +1607,7 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
         phase = "closed"
         outcome = "closed-unmerged"
         terminal = True
-    elif workflow_failed:
+    elif promotion_failed or publication_failed or checks_failed:
         phase = "workflow-failed"
         outcome = "workflow-failure"
         terminal = True
@@ -1551,7 +1637,12 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
         "terminal": terminal,
         "outcome": outcome,
         "last_transition_at": (
-            value.get("merged_at")
+            (
+                publication_run.get("updated_at")
+                if isinstance(publication_run, dict)
+                else None
+            )
+            or value.get("merged_at")
             or (
                 promotion_run.get("updated_at")
                 if isinstance(promotion_run, dict)
@@ -1566,6 +1657,22 @@ def _classify_status(value: dict[str, Any], *, next_poll_seconds: int) -> dict[s
             f"mentor-data review retry --pr {value.get('pr')} "
             f"--confirm-pr {value.get('pr')}"
         )
+    elif phase == "workflow-failed":
+        if publication_failed and isinstance(publication_run, dict):
+            run_id = publication_run.get("id")
+            repository = value.get("repository")
+            if isinstance(run_id, int):
+                result["next"] = (
+                    f"gh run rerun {run_id} --failed"
+                    + (f" --repo {repository}" if isinstance(repository, str) else "")
+                )
+        elif value.get("merged") is not True:
+            result["next"] = (
+                f"mentor-data review retry --pr {value.get('pr')} "
+                f"--confirm-pr {value.get('pr')}"
+            )
+    elif not terminal:
+        result["next"] = f"mentor-data review status --pr {value.get('pr')} --wait"
     return result
 
 
@@ -1635,12 +1742,20 @@ def _status_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[
 
     started = time.monotonic()
     while True:
+        raw_items = (
+            client.status_many(pull_numbers, issue_numbers=issue_numbers)
+            if hasattr(client, "status_many")
+            else [
+                client.status(pull_number, issue_number=issue_numbers[pull_number])
+                for pull_number in pull_numbers
+            ]
+        )
         items = [
             _classify_status(
-                client.status(pull_number, issue_number=issue_numbers[pull_number]),
+                value,
                 next_poll_seconds=args.poll_seconds,
             )
-            for pull_number in pull_numbers
+            for value in raw_items
         ]
         elapsed = time.monotonic() - started
         all_terminal = all(item["terminal"] for item in items)
@@ -1659,24 +1774,30 @@ def _status_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[
         if all_terminal or timed_out or not args.wait:
             phases: dict[str, int] = {}
             compact_items = []
+            runs_by_id: dict[int, dict[str, Any]] = {}
             for item in items:
                 phase = str(item["phase"])
                 phases[phase] = phases.get(phase, 0) + 1
-                compact_items.append(
-                    {
-                        key: item.get(key)
-                        for key in (
-                            "pr",
-                            "issue",
-                            "phase",
-                            "terminal",
-                            "outcome",
-                            "last_transition_at",
-                            "next",
-                        )
-                        if item.get(key) is not None
-                    }
-                )
+                compact = {
+                    key: item.get(key)
+                    for key in (
+                        "pr",
+                        "issue",
+                        "phase",
+                        "terminal",
+                        "outcome",
+                        "last_transition_at",
+                        "next",
+                    )
+                    if item.get(key) is not None
+                }
+                for kind in ("promotion", "publication"):
+                    run = item.get(f"{kind}_run")
+                    run_id = run.get("id") if isinstance(run, dict) else None
+                    if isinstance(run_id, int):
+                        runs_by_id[run_id] = {"kind": kind, **run}
+                        compact[f"{kind}_run_id"] = run_id
+                compact_items.append(compact)
             return project_fields(
                 {
                     "prs": pull_numbers,
@@ -1685,6 +1806,7 @@ def _status_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[
                     "phases": phases,
                     "waited_seconds": round(elapsed, 3),
                     "items": compact_items,
+                    "runs": [runs_by_id[key] for key in sorted(runs_by_id)],
                 },
                 _fields(args),
             )

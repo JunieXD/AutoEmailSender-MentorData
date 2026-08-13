@@ -75,9 +75,6 @@ jobs:
       - name: Install locked trusted dependencies
         run: uv sync --locked --dev
 
-      - name: Validate current canonical data
-        run: uv run mentor-data validate
-
       - name: Promote every durable ready Pull Request in order
         id: promotion
         env:
@@ -104,4 +101,11 @@ jobs:
 
       - name: Publish once after processing the queue
         if: always() && steps.promotion.outputs.publish == 'true'
-        run: gh workflow run pages.yml --repo "$GITHUB_REPOSITORY" --ref main
+        env:
+          ISSUE_NUMBERS: ${{ steps.promotion.outputs.issue_numbers }}
+        run: |
+          case "$ISSUE_NUMBERS" in ''|*[!0-9,]*|,*|*,|*,,*) exit 2 ;; esac
+          gh workflow run pages.yml \
+            --repo "$GITHUB_REPOSITORY" \
+            --ref main \
+            -f "issue_numbers=$ISSUE_NUMBERS"

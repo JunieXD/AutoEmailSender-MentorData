@@ -1400,6 +1400,7 @@ def apply_organization_review(
     *,
     schema_root: Path | None = None,
     allow_registry_drift: bool = False,
+    defer_finalization_check: bool = False,
 ) -> AppliedOrganizationReview:
     root = root.resolve()
     trusted_schema_root = (schema_root or root).resolve()
@@ -1929,12 +1930,14 @@ def apply_organization_review(
         if path is not None:
             path.unlink(missing_ok=True)
     write_json_atomic(resolution_path, resolution)
-    load_repository(root, validate=True, schema_root=trusted_schema_root)
-
     remaining_paths = [proposal_paths_by_id[key] for key in sorted(proposal_paths_by_id)]
     ready_for_finalization = False
     finalization_error: str | None = None
-    if remaining_paths:
+    if defer_finalization_check:
+        ready_for_finalization = bool(remaining_paths)
+    else:
+        load_repository(root, validate=True, schema_root=trusted_schema_root)
+    if remaining_paths and not defer_finalization_check:
         try:
             check_proposal_set(root, remaining_paths, schema_root=trusted_schema_root)
             ready_for_finalization = True

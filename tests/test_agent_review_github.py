@@ -294,6 +294,32 @@ def test_status_matches_named_promotion_workflow_run(
             return {"state": "open"}
         if "actions/workflows/promote-ready-pulls.yml/runs" in endpoint:
             return workflow_runs
+        if endpoint.endswith("actions/runs/101/jobs?per_page=100"):
+            return {
+                "jobs": [
+                    {
+                        "name": "promote",
+                        "steps": [
+                            {
+                                "name": "Install dependencies",
+                                "number": 1,
+                                "status": "completed",
+                                "conclusion": "success",
+                                "started_at": "2026-08-12T10:01:05Z",
+                                "completed_at": "2026-08-12T10:01:15Z",
+                            },
+                            {
+                                "name": "Promote queue",
+                                "number": 2,
+                                "status": "in_progress",
+                                "conclusion": None,
+                                "started_at": "2026-08-12T10:01:16Z",
+                                "completed_at": None,
+                            },
+                        ],
+                    }
+                ]
+            }
         if endpoint.endswith("commits/" + "a" * 40 + "/check-runs"):
             return {"check_runs": []}
         raise AssertionError(endpoint)
@@ -307,15 +333,18 @@ def test_status_matches_named_promotion_workflow_run(
 
     result = client.status(12)
 
-    assert result["promotion_run"] == {
-        "id": 101,
-        "event": "issue_comment",
-        "status": "in_progress",
-        "conclusion": None,
-        "created_at": "2026-08-12T10:01:00Z",
-        "updated_at": "2026-08-12T10:02:00Z",
-        "url": "https://github.test/actions/runs/101",
-    }
+    promotion_run = result["promotion_run"]
+    assert promotion_run["id"] == 101
+    assert promotion_run["attempt"] == 1
+    assert promotion_run["retry_count"] == 0
+    assert promotion_run["status"] == "in_progress"
+    assert promotion_run["started_at"] == "2026-08-12T10:01:00Z"
+    assert promotion_run["completed_at"] is None
+    assert promotion_run["duration_seconds"] is None
+    assert promotion_run["latest_stage"]["step"] == "Promote queue"
+    assert promotion_run["stage_seconds"] == [
+        {"job": "promote", "step": "Install dependencies", "seconds": 10.0}
+    ]
 
 
 def test_status_matches_batch_allowlist_workflow_run(monkeypatch: pytest.MonkeyPatch) -> None:
@@ -344,6 +373,19 @@ def test_status_matches_batch_allowlist_workflow_run(monkeypatch: pytest.MonkeyP
                         "updated_at": "2026-08-12T10:02:00Z",
                         "html_url": "https://github.test/actions/runs/102",
                         "pull_requests": [],
+                    }
+                ]
+            }
+        if endpoint.endswith("actions/runs/102/jobs?per_page=100"):
+            return {
+                "jobs": [
+                    {
+                        "name": "promote",
+                        "status": "in_progress",
+                        "conclusion": None,
+                        "started_at": "2026-08-12T10:01:00Z",
+                        "completed_at": None,
+                        "steps": [],
                     }
                 ]
             }
@@ -394,3 +436,206 @@ def test_status_keeps_existing_fallback_when_actions_are_unavailable(
 
     assert result["promotion_run"] is None
     assert result["review_comments"] == 1
+
+
+def test_status_many_reuses_workflow_lists_and_shared_run_progress(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    client = GitHubReviewClient(repository="example/repository", root=PROJECT_ROOT)
+    calls: list[str] = []
+
+    def fake_json(endpoint: str):
+        calls.append(endpoint)
+        if endpoint.endswith("pulls/12"):
+            return {
+                **_pull_payload(12),
+                "updated_at": "2026-08-12T10:00:00Z",
+                "merged_at": None,
+            }
+        if endpoint.endswith("pulls/13"):
+            pull = _pull_payload(13)
+            pull["head"] = {**pull["head"], "ref": "batch/issue-12", "sha": "b" * 40}
+            return {**pull, "updated_at": "2026-08-12T10:00:00Z", "merged_at": None}
+        if endpoint.endswith("issues/11") or endpoint.endswith("issues/12"):
+            return {"state": "open"}
+        if endpoint.endswith("actions/workflows/promote-ready-pulls.yml/runs?per_page=50"):
+            return {
+                "workflow_runs": [
+                    {
+                        "id": 200,
+                        "run_number": 25,
+                        "run_attempt": 2,
+                        "display_title": "Promote ready mentor data batch PRs 12,13",
+                        "event": "workflow_dispatch",
+                        "status": "in_progress",
+                        "conclusion": None,
+                        "created_at": "2026-08-12T10:01:00Z",
+                        "run_started_at": "2026-08-12T10:01:05Z",
+                        "updated_at": "2026-08-12T10:02:00Z",
+                        "html_url": "https://github.test/actions/runs/200",
+                        "pull_requests": [],
+                    }
+                ]
+            }
+        if endpoint.endswith("actions/workflows/pages.yml/runs?per_page=50"):
+            return {"workflow_runs": []}
+        if endpoint.endswith("actions/runs/200/jobs?per_page=100"):
+            return {
+                "jobs": [
+                    {
+                        "name": "promote",
+                        "steps": [
+                            {
+                                "name": "Promote queue",
+                                "number": 4,
+                                "status": "in_progress",
+                                "conclusion": None,
+                                "started_at": "2026-08-12T10:01:20Z",
+                                "completed_at": None,
+                            }
+                        ],
+                    }
+                ]
+            }
+        if endpoint.endswith("commits/" + "a" * 40 + "/check-runs") or endpoint.endswith(
+            "commits/" + "b" * 40 + "/check-runs"
+        ):
+            return {"check_runs": []}
+        raise AssertionError(endpoint)
+
+    monkeypatch.setattr(client, "_json", fake_json)
+    monkeypatch.setattr(client, "official_review_comments", lambda pull_number: [{"id": 99}])
+
+    results = client.status_many([12, 13], issue_numbers={12: 11, 13: 12})
+
+    assert [item["promotion_run"]["id"] for item in results] == [200, 200]
+    assert results[0]["promotion_run"]["attempt"] == 2
+    assert results[0]["promotion_run"]["retry_count"] == 1
+    assert results[0]["promotion_run"]["latest_stage"]["step"] == "Promote queue"
+    assert calls.count(
+        "repos/example/repository/actions/workflows/promote-ready-pulls.yml/runs?per_page=50"
+    ) == 1
+    assert calls.count(
+        "repos/example/repository/actions/workflows/pages.yml/runs?per_page=50"
+    ) == 1
+    assert calls.count("repos/example/repository/actions/runs/200/jobs?per_page=100") == 1
+
+
+def test_status_tracks_publication_run_for_merged_pull_with_open_issue(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    client = GitHubReviewClient(repository="example/repository", root=PROJECT_ROOT)
+    pull = {
+        **_pull_payload(12),
+        "state": "closed",
+        "merged": True,
+        "merged_at": "2026-08-12T10:02:00Z",
+        "updated_at": "2026-08-12T10:02:00Z",
+    }
+
+    def fake_json(endpoint: str):
+        if endpoint.endswith("pulls/12"):
+            return pull
+        if endpoint.endswith("issues/11"):
+            return {"state": "open"}
+        if endpoint.endswith("actions/workflows/promote-ready-pulls.yml/runs?per_page=50"):
+            return {"workflow_runs": []}
+        if endpoint.endswith("actions/workflows/pages.yml/runs?per_page=50"):
+            return {
+                "workflow_runs": [
+                    {
+                        "id": 300,
+                        "run_number": 30,
+                        "run_attempt": 1,
+                        "display_title": "Publish MentorData for Issues 10,11,12",
+                        "event": "workflow_dispatch",
+                        "status": "completed",
+                        "conclusion": "success",
+                        "created_at": "2026-08-12T10:03:00Z",
+                        "run_started_at": "2026-08-12T10:03:05Z",
+                        "updated_at": "2026-08-12T10:04:05Z",
+                        "html_url": "https://github.test/actions/runs/300",
+                    }
+                ]
+            }
+        if endpoint.endswith("actions/runs/300/jobs?per_page=100"):
+            return {
+                "jobs": [
+                    {
+                        "name": "deploy",
+                        "steps": [
+                            {
+                                "name": "Deploy Pages",
+                                "number": 3,
+                                "status": "completed",
+                                "conclusion": "success",
+                                "started_at": "2026-08-12T10:03:35Z",
+                                "completed_at": "2026-08-12T10:04:00Z",
+                            }
+                        ],
+                    }
+                ]
+            }
+        if endpoint.endswith("commits/" + "a" * 40 + "/check-runs"):
+            return {"check_runs": []}
+        raise AssertionError(endpoint)
+
+    monkeypatch.setattr(client, "_json", fake_json)
+    monkeypatch.setattr(client, "official_review_comments", lambda pull_number: [{"id": 99}])
+
+    result = client.status(12)
+
+    assert result["publication_run"]["id"] == 300
+    assert result["publication_run"]["duration_seconds"] == 55.0
+    assert result["publication_run"]["stage_seconds"] == [
+        {"job": "deploy", "step": "Deploy Pages", "seconds": 25.0}
+    ]
+
+
+def test_status_keeps_completed_publication_run_after_issue_closes(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    client = GitHubReviewClient(repository="example/repository", root=PROJECT_ROOT)
+    pull = {
+        **_pull_payload(12),
+        "state": "closed",
+        "merged": True,
+        "merged_at": "2026-08-12T10:02:00Z",
+        "updated_at": "2026-08-12T10:02:00Z",
+    }
+
+    def fake_json(endpoint: str):
+        if endpoint.endswith("pulls/12"):
+            return pull
+        if endpoint.endswith("issues/11"):
+            return {"state": "closed"}
+        if endpoint.endswith("actions/workflows/promote-ready-pulls.yml/runs?per_page=50"):
+            return {"workflow_runs": []}
+        if endpoint.endswith("actions/workflows/pages.yml/runs?per_page=50"):
+            return {
+                "workflow_runs": [
+                    {
+                        "id": 300,
+                        "display_title": "Publish MentorData for Issues 11",
+                        "event": "workflow_dispatch",
+                        "status": "completed",
+                        "conclusion": "success",
+                        "created_at": "2026-08-12T10:03:00Z",
+                        "updated_at": "2026-08-12T10:04:05Z",
+                        "html_url": "https://github.test/actions/runs/300",
+                    }
+                ]
+            }
+        if endpoint.endswith("actions/runs/300/jobs?per_page=100"):
+            return {"jobs": []}
+        if endpoint.endswith("commits/" + "a" * 40 + "/check-runs"):
+            return {"check_runs": []}
+        raise AssertionError(endpoint)
+
+    monkeypatch.setattr(client, "_json", fake_json)
+    monkeypatch.setattr(client, "official_review_comments", lambda pull_number: [{"id": 99}])
+
+    result = client.status(12)
+
+    assert result["issue_state"] == "closed"
+    assert result["publication_run"]["id"] == 300

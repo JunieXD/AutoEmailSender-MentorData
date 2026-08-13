@@ -288,7 +288,17 @@ def test_main_branch_race_is_retried_and_reported(tmp_path: Path) -> None:
 
     assert summary.merged == 1
     assert summary.failed == 0
-    assert summary.results == ({"pr": 88, "status": "merged", "attempts": 3},)
+    assert summary.results[0]["pr"] == 88
+    assert summary.results[0]["issue"] == 40
+    assert summary.results[0]["status"] == "merged"
+    assert summary.results[0]["attempts"] == 3
+    assert summary.results[0]["duration_seconds"] == 0.0
+    assert summary.results[0]["stage_seconds"] == {
+        "cleanup": 0.0,
+        "readiness": 0.0,
+        "retry-wait": 0.0,
+        "sync": 0.0,
+    }
     assert sleeps == [1.0, 2.0]
 
 
@@ -324,21 +334,40 @@ def test_promotion_outputs_include_machine_readable_per_pull_results(tmp_path: P
     output = tmp_path / "github-output"
     summary = PromotionSummary(
         scanned=1,
-        merged=0,
-        failed=1,
+        merged=1,
+        failed=0,
         skipped=0,
-        retryable=1,
-        results=({"pr": 88, "status": "retryable", "attempts": 3},),
+        retryable=0,
+        results=(
+            {
+                "pr": 88,
+                "issue": 40,
+                "status": "merged",
+                "attempts": 3,
+                "duration_seconds": 12.5,
+                "stage_seconds": {"validate": 4.0},
+            },
+        ),
+        duration_seconds=12.5,
     )
 
     write_github_outputs(output, summary)
 
     values = dict(line.split("=", 1) for line in output.read_text(encoding="utf-8").splitlines())
-    assert values["retryable"] == "1"
+    assert values["retryable"] == "0"
+    assert values["duration_seconds"] == "12.5"
+    assert values["issue_numbers"] == "40"
     assert json.loads(values["results"]) == [
-        {"pr": 88, "status": "retryable", "attempts": 3}
+        {
+            "pr": 88,
+            "issue": 40,
+            "status": "merged",
+            "attempts": 3,
+            "duration_seconds": 12.5,
+            "stage_seconds": {"validate": 4.0},
+        }
     ]
-    assert values["publish"] == "false"
+    assert values["publish"] == "true"
 
 
 def test_batch_allowlist_preserves_requested_order(tmp_path: Path) -> None:

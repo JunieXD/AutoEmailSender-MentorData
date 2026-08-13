@@ -46,7 +46,7 @@ def main() -> int:
         print(
             f"scanned={summary.scanned} merged={summary.merged} "
             f"failed={summary.failed} skipped={summary.skipped} "
-            f"retryable={summary.retryable}"
+            f"retryable={summary.retryable} duration_seconds={summary.duration_seconds}"
         )
         print(json.dumps(summary.results, ensure_ascii=False, separators=(",", ":")))
         return 1 if summary.failed else 0

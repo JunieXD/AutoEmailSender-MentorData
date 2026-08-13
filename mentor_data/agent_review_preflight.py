@@ -3,6 +3,8 @@ from __future__ import annotations
 import shutil
 import subprocess
 import tempfile
+import time
+from collections.abc import Callable
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
@@ -99,18 +101,38 @@ def run_preflight(
     client: GitHubReviewClient,
     pull: PullSnapshot,
     decision: dict[str, Any],
+    clock: Callable[[], float] = time.monotonic,
 ) -> dict[str, Any]:
-    client.fetch_for_preflight(pull)
-    main_sha = client._run(
-        ["git", "rev-parse", "refs/remotes/origin/main"],
-        cwd=root,
-    ).stdout.strip()
+    started = clock()
+    stage_seconds: dict[str, float] = {}
+
+    def timed(stage: str, action: Callable[[], Any]) -> Any:
+        stage_started = clock()
+        try:
+            return action()
+        finally:
+            stage_seconds[stage] = round(
+                stage_seconds.get(stage, 0.0) + clock() - stage_started,
+                3,
+            )
+
+    timed("sync", lambda: client.fetch_for_preflight(pull))
+    main_sha = timed(
+        "sync",
+        lambda: client._run(
+            ["git", "rev-parse", "refs/remotes/origin/main"],
+            cwd=root,
+        ).stdout.strip(),
+    )
     internal = _internal_pull(pull)
     try:
-        paths = proposal_paths_from_diff(
-            root,
-            internal,
-            runner=client.runner,
+        paths = timed(
+            "prepare",
+            lambda: proposal_paths_from_diff(
+                root,
+                internal,
+                runner=client.runner,
+            ),
         )
     except (OSError, subprocess.CalledProcessError, MentorDataError, ValueError) as error:
         raise AgentReviewError(
@@ -121,18 +143,28 @@ def run_preflight(
     prefix = f"mentor-data-agent-review-{pull.number}-"
     with tempfile.TemporaryDirectory(prefix=prefix) as temporary:
         candidate = Path(temporary) / "candidate"
-        client._run(
-            ["git", "worktree", "add", "--detach", str(candidate), main_sha],
-            cwd=root,
+        timed(
+            "worktree",
+            lambda: client._run(
+                ["git", "worktree", "add", "--detach", str(candidate), main_sha],
+                cwd=root,
+            ),
         )
+        result: dict[str, Any] | None = None
         try:
-            before_registry = load_repository(candidate, schema_root=root).registry
-            materialize_proposal_paths(
-                root,
-                candidate,
-                source_sha=pull.head_sha,
-                paths=paths,
-                runner=client.runner,
+            before_registry = timed(
+                "worktree",
+                lambda: load_repository(candidate, validate=False, schema_root=root).registry,
+            )
+            timed(
+                "materialize",
+                lambda: materialize_proposal_paths(
+                    root,
+                    candidate,
+                    source_sha=pull.head_sha,
+                    paths=paths,
+                    runner=client.runner,
+                ),
             )
             review_comment = ReviewComment(
                 pull_request_number=pull.number,
@@ -149,12 +181,16 @@ def run_preflight(
                 head_ref=pull.branch,
                 repository=client.repository,
             )
-            applied = apply_organization_review(
-                candidate,
-                review_comment,
-                review_pull,
-                schema_root=root,
-                allow_registry_drift=True,
+            applied = timed(
+                "apply-review",
+                lambda: apply_organization_review(
+                    candidate,
+                    review_comment,
+                    review_pull,
+                    schema_root=root,
+                    allow_registry_drift=True,
+                    defer_finalization_check=True,
+                ),
             )
             if applied.remaining_proposals and not applied.ready_for_finalization:
                 raise AgentReviewError(
@@ -165,16 +201,26 @@ def run_preflight(
             proposal_paths = sorted(proposal_directory.glob("*.json"))
             finalized = []
             if proposal_paths:
-                finalized = finalize_proposal_set(
-                    candidate,
-                    proposal_paths,
-                    moderator_github_user_id=1,
+                finalized = timed(
+                    "finalize-and-validate",
+                    lambda: finalize_proposal_set(
+                        candidate,
+                        proposal_paths,
+                        moderator_github_user_id=1,
+                    ),
                 )
-            final_data = load_repository(candidate, validate=True, schema_root=root)
+                final_data = load_repository(candidate, validate=False, schema_root=root)
+            else:
+                final_data = timed(
+                    "final-validate",
+                    lambda: load_repository(candidate, validate=True, schema_root=root),
+                )
             organization_changes = _organization_changes(before_registry, final_data.registry)
-            return {
+            result = {
                 "ok": True,
                 "checked_at": utc_now(),
+                "duration_seconds": 0.0,
+                "stage_seconds": stage_seconds,
                 "main_sha": main_sha,
                 "head_sha": pull.head_sha,
                 "decision_sha256": canonical_json_sha256(decision),
@@ -187,6 +233,7 @@ def run_preflight(
                 "invalid_rows": applied.invalid_rows,
                 "finalized_proposals": len(finalized),
             }
+            return result
         except AgentReviewError:
             raise
         except RepositoryValidationError as error:
@@ -198,12 +245,18 @@ def run_preflight(
                 str(error).splitlines()[0][:1_000],
             ) from error
         finally:
-            client.runner(
-                ["git", "worktree", "remove", "--force", str(candidate)],
-                check=False,
-                stdout=subprocess.DEVNULL,
-                stderr=subprocess.DEVNULL,
-                text=True,
-                cwd=root,
-            )
-            shutil.rmtree(candidate, ignore_errors=True)
+            cleanup_started = clock()
+            try:
+                client.runner(
+                    ["git", "worktree", "remove", "--force", str(candidate)],
+                    check=False,
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                    text=True,
+                    cwd=root,
+                )
+                shutil.rmtree(candidate, ignore_errors=True)
+            finally:
+                stage_seconds["cleanup"] = round(clock() - cleanup_started, 3)
+                if result is not None:
+                    result["duration_seconds"] = round(clock() - started, 3)

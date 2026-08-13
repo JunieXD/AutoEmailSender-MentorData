@@ -781,6 +781,16 @@ def test_preflight_reuses_trusted_review_and_finalization_pipeline(tmp_path: Pat
     assert result["ok"] is True
     assert result["mapped_proposals"] == 1
     assert result["finalized_proposals"] == 1
+    assert result["duration_seconds"] >= 0
+    assert {
+        "sync",
+        "prepare",
+        "worktree",
+        "materialize",
+        "apply-review",
+        "finalize-and-validate",
+        "cleanup",
+    }.issubset(result["stage_seconds"])
     assert result["main_sha"] == base_sha
     assert result["organization_changes"] == [
         {

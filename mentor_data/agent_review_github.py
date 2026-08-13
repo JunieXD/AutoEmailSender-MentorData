@@ -5,6 +5,7 @@ import re
 import subprocess
 import time
 from collections.abc import Callable
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
@@ -41,6 +42,8 @@ TRANSIENT_GITHUB_MESSAGES = (
     "503",
     "504",
 )
+PROMOTION_WORKFLOW = "promote-ready-pulls.yml"
+PUBLICATION_WORKFLOW = "pages.yml"
 
 
 class GitHubReviewClient:
@@ -418,7 +421,205 @@ class GitHubReviewClient:
             "output": str(completed.stdout or "").strip() or None,
         }
 
-    def status(self, pull_number: int, *, issue_number: int | None = None) -> dict[str, Any]:
+    def _workflow_runs(self, workflow: str) -> tuple[dict[str, Any], ...]:
+        try:
+            payload = self._json(
+                f"repos/{self.repository}/actions/workflows/{workflow}/runs?per_page=50"
+            )
+        except AgentReviewError:
+            return ()
+        values = payload.get("workflow_runs", []) if isinstance(payload, dict) else []
+        return tuple(item for item in values if isinstance(item, dict))
+
+    @staticmethod
+    def _title_numbers(title: Any, marker: str) -> set[int]:
+        if not isinstance(title, str) or marker not in title:
+            return set()
+        return {int(item) for item in re.findall(r"[1-9][0-9]*", title.split(marker, 1)[1])}
+
+    @classmethod
+    def _promotion_run_matches(cls, run: dict[str, Any], pull_number: int) -> bool:
+        title = run.get("display_title")
+        title_matches = (
+            isinstance(title, str)
+            and (
+                re.search(rf"\bPR\s*#{pull_number}\b", title, flags=re.IGNORECASE)
+                is not None
+                or pull_number in cls._title_numbers(title, "batch PRs ")
+            )
+        )
+        pull_requests = run.get("pull_requests", [])
+        pull_matches = isinstance(pull_requests, list) and any(
+            isinstance(item, dict) and item.get("number") == pull_number
+            for item in pull_requests
+        )
+        return title_matches or pull_matches
+
+    @classmethod
+    def _publication_run_matches(cls, run: dict[str, Any], issue_number: int) -> bool:
+        return issue_number in cls._title_numbers(run.get("display_title"), "for Issues ")
+
+    @staticmethod
+    def _latest_matching_run(
+        runs: tuple[dict[str, Any], ...],
+        matches: Callable[[dict[str, Any]], bool],
+    ) -> dict[str, Any] | None:
+        matching = [item for item in runs if matches(item)]
+        return (
+            max(matching, key=lambda item: (item.get("created_at") or "", item.get("id") or 0))
+            if matching
+            else None
+        )
+
+    @staticmethod
+    def _duration_seconds(started_at: Any, completed_at: Any) -> float | None:
+        if not isinstance(started_at, str) or not isinstance(completed_at, str):
+            return None
+        try:
+            started = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
+            completed = datetime.fromisoformat(completed_at.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+        return round(max(0.0, (completed - started).total_seconds()), 3)
+
+    def _run_progress(self, run_id: int) -> dict[str, Any] | None:
+        try:
+            payload = self._json(
+                f"repos/{self.repository}/actions/runs/{run_id}/jobs?per_page=100"
+            )
+        except AgentReviewError:
+            return None
+        jobs = payload.get("jobs", []) if isinstance(payload, dict) else []
+        stages: list[dict[str, Any]] = []
+        for job in jobs:
+            if not isinstance(job, dict):
+                continue
+            steps = job.get("steps", [])
+            if isinstance(steps, list) and steps:
+                for step in steps:
+                    if not isinstance(step, dict):
+                        continue
+                    stages.append(
+                        {
+                            "job": job.get("name"),
+                            "step": step.get("name"),
+                            "status": step.get("status"),
+                            "conclusion": step.get("conclusion"),
+                            "started_at": step.get("started_at"),
+                            "completed_at": step.get("completed_at"),
+                            "number": step.get("number"),
+                        }
+                    )
+            else:
+                stages.append(
+                    {
+                        "job": job.get("name"),
+                        "step": None,
+                        "status": job.get("status"),
+                        "conclusion": job.get("conclusion"),
+                        "started_at": job.get("started_at"),
+                        "completed_at": job.get("completed_at"),
+                        "number": None,
+                    }
+                )
+        if not stages:
+            return None
+        active = [item for item in stages if item.get("status") == "in_progress"]
+        completed = [item for item in stages if item.get("status") == "completed"]
+        queued = [item for item in stages if item.get("status") == "queued"]
+        candidates = active or queued or completed
+        latest_stage = max(
+            candidates,
+            key=lambda item: (
+                item.get("started_at") or item.get("completed_at") or "",
+                item.get("number") or 0,
+            ),
+        )
+        stage_seconds = [
+            {
+                "job": item.get("job"),
+                "step": item.get("step"),
+                "seconds": duration,
+            }
+            for item in stages
+            if (
+                duration := self._duration_seconds(
+                    item.get("started_at"), item.get("completed_at")
+                )
+            )
+            is not None
+        ]
+        completed_times = [
+            item["completed_at"]
+            for item in stages
+            if isinstance(item.get("completed_at"), str)
+        ]
+        return {
+            "latest_stage": latest_stage,
+            "stage_seconds": stage_seconds,
+            "completed_at": max(completed_times) if completed_times else None,
+        }
+
+    def _run_summary(
+        self,
+        run: dict[str, Any] | None,
+        *,
+        progress_cache: dict[int, dict[str, Any] | None],
+    ) -> dict[str, Any] | None:
+        if run is None:
+            return None
+        run_id = run.get("id")
+        progress = None
+        if isinstance(run_id, int):
+            if run_id not in progress_cache:
+                progress_cache[run_id] = self._run_progress(run_id)
+            progress = progress_cache[run_id]
+        status = run.get("status")
+        started_at = run.get("run_started_at") or run.get("created_at")
+        completed_at = (
+            (
+                (
+                    progress.get("completed_at")
+                    if isinstance(progress, dict)
+                    else None
+                )
+                or run.get("updated_at")
+            )
+            if status == "completed"
+            else None
+        )
+        attempt = run.get("run_attempt") if isinstance(run.get("run_attempt"), int) else 1
+        return {
+            "id": run_id,
+            "number": run.get("run_number"),
+            "attempt": attempt,
+            "retry_count": max(0, attempt - 1),
+            "event": run.get("event"),
+            "status": status,
+            "conclusion": run.get("conclusion"),
+            "created_at": run.get("created_at"),
+            "started_at": started_at,
+            "completed_at": completed_at,
+            "updated_at": run.get("updated_at"),
+            "duration_seconds": self._duration_seconds(started_at, completed_at),
+            "latest_stage": (
+                progress.get("latest_stage") if isinstance(progress, dict) else None
+            ),
+            "stage_seconds": (
+                progress.get("stage_seconds", []) if isinstance(progress, dict) else []
+            ),
+            "url": run.get("html_url"),
+        }
+
+    def status(
+        self,
+        pull_number: int,
+        *,
+        issue_number: int | None = None,
+        promotion_runs: tuple[dict[str, Any], ...] | None = None,
+        publication_runs: tuple[dict[str, Any], ...] | None = None,
+        progress_cache: dict[int, dict[str, Any] | None] | None = None,
+    ) -> dict[str, Any]:
         pull = self._json(f"repos/{self.repository}/pulls/{pull_number}")
         if not isinstance(pull, dict):
             raise AgentReviewError("review_pull_invalid", "Pull Request 元数据格式无效")
@@ -433,51 +634,42 @@ class GitHubReviewClient:
             else None
         )
         comments = self.official_review_comments(pull_number)
-        promotion_run = None
-        if comments:
-            try:
-                runs_payload = self._json(
-                    f"repos/{self.repository}/actions/workflows/"
-                    "promote-ready-pulls.yml/runs?per_page=50"
-                )
-            except AgentReviewError:
-                runs_payload = None
-            runs = (
-                runs_payload.get("workflow_runs", [])
-                if isinstance(runs_payload, dict)
-                else []
+        cached_progress = progress_cache if progress_cache is not None else {}
+        available_promotion_runs = (
+            ()
+            if not comments
+            else self._workflow_runs(PROMOTION_WORKFLOW)
+            if promotion_runs is None
+            else promotion_runs
+        )
+        available_publication_runs = (
+            ()
+            if (
+                pull.get("merged") is not True
+                or resolved_issue is None
             )
-            matching_runs = []
-            for run in runs:
-                if not isinstance(run, dict):
-                    continue
-                title = run.get("display_title")
-                title_matches = isinstance(title, str) and re.search(
-                    rf"(?:\bPR\s*#{pull_number}\b|\bPRs\s+[0-9,]*\b{pull_number}\b)",
-                    title,
-                    flags=re.IGNORECASE,
-                )
-                pull_requests = run.get("pull_requests", [])
-                pull_matches = isinstance(pull_requests, list) and any(
-                    isinstance(item, dict) and item.get("number") == pull_number
-                    for item in pull_requests
-                )
-                if title_matches or pull_matches:
-                    matching_runs.append(run)
-            if matching_runs:
-                selected_run = max(
-                    matching_runs,
-                    key=lambda item: (item.get("created_at") or "", item.get("id") or 0),
-                )
-                promotion_run = {
-                    "id": selected_run.get("id"),
-                    "event": selected_run.get("event"),
-                    "status": selected_run.get("status"),
-                    "conclusion": selected_run.get("conclusion"),
-                    "created_at": selected_run.get("created_at"),
-                    "updated_at": selected_run.get("updated_at"),
-                    "url": selected_run.get("html_url"),
-                }
+            else self._workflow_runs(PUBLICATION_WORKFLOW)
+            if publication_runs is None
+            else publication_runs
+        )
+        selected_promotion = (
+            self._latest_matching_run(
+                available_promotion_runs,
+                lambda run: self._promotion_run_matches(run, pull_number),
+            )
+            if comments
+            else None
+        )
+        selected_publication = (
+            self._latest_matching_run(
+                available_publication_runs,
+                lambda run: self._publication_run_matches(run, resolved_issue),
+            )
+            if resolved_issue is not None
+            else None
+        )
+        promotion_run = self._run_summary(selected_promotion, progress_cache=cached_progress)
+        publication_run = self._run_summary(selected_publication, progress_cache=cached_progress)
         head_sha = pull.get("head", {}).get("sha")
         check_runs: list[dict[str, Any]] = []
         if isinstance(head_sha, str):
@@ -490,6 +682,7 @@ class GitHubReviewClient:
             if isinstance(item, dict) and isinstance(item.get("name"), str)
         )
         return {
+            "repository": self.repository,
             "pr": pull_number,
             "pr_state": pull.get("state"),
             "draft": pull.get("draft") is True,
@@ -502,6 +695,7 @@ class GitHubReviewClient:
             "review_comments": len(comments),
             "latest_review_comment_id": comments[-1].get("id") if comments else None,
             "promotion_run": promotion_run,
+            "publication_run": publication_run,
             "checks": {
                 "total": len(check_runs),
                 "pending": sum(item.get("status") != "completed" for item in check_runs),
@@ -512,3 +706,23 @@ class GitHubReviewClient:
                 ),
             },
         }
+
+    def status_many(
+        self,
+        pull_numbers: list[int],
+        *,
+        issue_numbers: dict[int, int | None],
+    ) -> list[dict[str, Any]]:
+        promotion_runs = self._workflow_runs(PROMOTION_WORKFLOW)
+        publication_runs = self._workflow_runs(PUBLICATION_WORKFLOW)
+        progress_cache: dict[int, dict[str, Any] | None] = {}
+        return [
+            self.status(
+                pull_number,
+                issue_number=issue_numbers.get(pull_number),
+                promotion_runs=promotion_runs,
+                publication_runs=publication_runs,
+                progress_cache=progress_cache,
+            )
+            for pull_number in pull_numbers
+        ]

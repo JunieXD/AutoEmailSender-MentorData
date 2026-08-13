@@ -25,7 +25,7 @@ Issue 工作流只解析输入并创建提案 PR，不直接修改正式数据�
 
 队列会在投稿准备成功、维护者完成审核、PR 更新、定时恢复或手动运行时启动。某条 PR 的数据确实需要人工处理时，才会增加 `status:needs-attention` 并保留一条可更新的说明；它不会阻塞后面的投稿。修正后移除该标签即可重试，也可以手动运行队列并启用 `include_attention`。
 
-正式数据合并后，Pages 只部署当前 v2 发布和它引用的内容对象。数据没有变化时不会产生新的版本或 `gh-pages` 提交；学院内容没有变化时会复用原对象。发布成功后，来源 Issue 才会自动关闭。每小时的恢复任务会补处理因临时故障遗漏的发布或 Issue 关闭。
+正式数据合并后，同一 promotion Runner 无论处理多少份 PR，都只在整批结束时触发一次 Pages。Pages 只部署当前 v2 发布和它引用的内容对象；数据没有变化时不会产生新的版本或 `gh-pages` 提交，学院内容没有变化时会复用原对象。发布成功后只关闭该批落库回执对应的来源 Issue。Pages 运行串行排队，不会取消正在运行的前一批清理；每小时的无参数恢复任务会扫描全部回执，补处理因临时故障遗漏的发布或 Issue 关闭。
 
 ## 维护者如何审核
 
@@ -52,7 +52,7 @@ CLI 会先自动处理唯一精确匹配、明确新机构、空层级和重复�
 
 只有 `review submit` 会写入 GitHub。它要求显式确认 PR 编号并再次预演，然后发布一次正式审核评论；该评论会立即触发现有可信落库队列。提交后使用 `review status --wait` 等待数据发布和来源 Issue 收尾，不要另外将 Draft 标记为 Ready、手动修改提案或合并 PR。完整需求与安全边界见 [Agent 机构审核 CLI 需求](agent-review-cli-requirements.md)。
 
-需要集中处理多份投稿时，仍应逐份完成 `brief`、问题裁决和机构树审查，然后用 `review check-many --prs N,M` 做独立完整预检。用户一次明确授权完整有序编号列表后，`review submit-many --prs N,M --confirm-prs N,M` 才会逐份发布正式评论，并在所有评论就绪后只启动一次可信落库 Runner。若任一预检失败则零评论写入；评论阶段中断可用同一命令幂等续跑。最后用 `review status-many --prs N,M --wait` 统一等待并核对每份 PR 和来源 Issue。
+需要集中处理多份投稿时，仍应逐份完成 `brief`、问题裁决和机构树审查，然后用 `review check-many --prs N,M` 做独立完整预检。默认结果是适合 Agent 上下文的紧凑计数与耗时，完整结果位于返回的 `.work/agent-reviews/reports/` 路径。用户一次明确授权完整有序编号列表后，`review submit-many --prs N,M --confirm-prs N,M` 才会逐份发布正式评论，并在所有评论就绪后只启动一次可信落库 Runner。若任一预检失败则零评论写入；评论阶段中断可用同一命令幂等续跑。最后用 `review status-many --prs N,M --wait` 统一等待；输出会去重共享的 promotion/Pages run，并显示 run ID、重试次数、最近步骤、耗时和下一命令。
 
 ### 单条投稿
 

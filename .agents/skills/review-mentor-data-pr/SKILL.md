@@ -38,6 +38,8 @@ Use the repository's `mentor-data review` CLI as the source of truth. Start with
 For a consolidated review, plan every PR first, resolve deterministic items, and present all
 remaining ambiguities together. Group the summary by PR, then render each PR's institution changes
 as its own nested tree. Never use one PR's preflight as evidence that another PR is safe.
+Use the compact `check-many` result for the consolidated outcome; read the returned local report
+only for a failed PR or when exact changes are needed. Do not paste the full report into context.
 
 Render organization changes as a nested Markdown tree that preserves the real hierarchy:
 university, then school or institute, then department, center, or laboratory. Indent every child
@@ -64,5 +66,7 @@ Use CLI filters, IDs, field projection, and organization search to keep context 
 - After a batch submission, use the CLI's batch status command. The trusted queue may merge the
   selected PRs sequentially in one runner and publish once afterward, but completion still requires
   checking every PR and every source Issue.
+- Treat promotion and publication as separate stages. Report shared run IDs once, follow the CLI's
+  latest-stage and `next` fields, and do not infer publication from PR merge alone.
 
 When a command fails, follow its structured `error.next` guidance. Do not bypass a guard by constructing a review comment outside the CLI.

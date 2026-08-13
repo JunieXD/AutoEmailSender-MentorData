@@ -72,6 +72,7 @@ class PromotionSummary:
     skipped: int
     retryable: int = 0
     results: tuple[dict[str, Any], ...] = ()
+    duration_seconds: float = 0.0
 
 
 class MainBranchMoved(RuntimeError):
@@ -133,6 +134,7 @@ class PromotionQueue:
         pull_numbers: tuple[int, ...] | None = None,
         max_attempts: int = 3,
         sleeper: Callable[[float], None] = time.sleep,
+        clock: Callable[[], float] = time.monotonic,
         runner: Callable[..., subprocess.CompletedProcess] = subprocess.run,
     ) -> None:
         if REPOSITORY_PATTERN.fullmatch(repository) is None:
@@ -156,9 +158,23 @@ class PromotionQueue:
         self.pull_numbers = pull_numbers
         self.max_attempts = max_attempts
         self.sleeper = sleeper
+        self.clock = clock
         self.runner = runner
+        self._stage_timings: dict[str, float] = {}
+
+    def _timed(self, stage: str, action: Callable[[], Any]) -> Any:
+        started = self.clock()
+        try:
+            return action()
+        finally:
+            elapsed = self.clock() - started
+            self._stage_timings[stage] = round(
+                self._stage_timings.get(stage, 0.0) + elapsed,
+                3,
+            )
 
     def run(self) -> PromotionSummary:
+        queue_started = self.clock()
         pulls = self._list_open_pulls()
         missing_pull_numbers: list[int] = []
         if self.pull_numbers is not None:
@@ -184,11 +200,15 @@ class PromotionQueue:
                 "pr": number,
                 "status": "retryable",
                 "attempts": 0,
+                "duration_seconds": 0.0,
+                "stage_seconds": {},
                 "error": "显式选择的 PR 不在开放队列中",
             }
             for number in missing_pull_numbers
         ]
         for pull_payload in selected_pulls:
+            pull_started = self.clock()
+            self._stage_timings = {}
             labels = {
                 item.get("name")
                 for item in pull_payload.get("labels", [])
@@ -201,6 +221,8 @@ class PromotionQueue:
                         "pr": pull_payload.get("number"),
                         "status": "skipped",
                         "reason": "needs-attention",
+                        "duration_seconds": round(self.clock() - pull_started, 3),
+                        "stage_seconds": {},
                     }
                 )
                 continue
@@ -216,53 +238,91 @@ class PromotionQueue:
                         "pr": pull_payload.get("number"),
                         "status": "skipped",
                         "reason": "not-internal-pull",
+                        "duration_seconds": round(self.clock() - pull_started, 3),
+                        "stage_seconds": {},
                     }
                 )
                 continue
             try:
-                if not self._is_ready(pull):
+                if not self._timed(
+                    "readiness", lambda selected=pull: self._is_ready(selected)
+                ):
                     skipped += 1
                     results.append(
-                        {"pr": pull.number, "status": "skipped", "reason": "not-ready"}
+                        {
+                            "pr": pull.number,
+                            "issue": pull.issue_number,
+                            "status": "skipped",
+                            "reason": "not-ready",
+                            "duration_seconds": round(self.clock() - pull_started, 3),
+                            "stage_seconds": dict(self._stage_timings),
+                        }
                     )
                     continue
                 attempts = self._promote_with_retry(pull)
-                self._remove_attention_label(pull.number)
+                self._timed(
+                    "cleanup",
+                    lambda pull_number=pull.number: self._remove_attention_label(pull_number),
+                )
                 merged += 1
-                results.append({"pr": pull.number, "status": "merged", "attempts": attempts})
+                results.append(
+                    {
+                        "pr": pull.number,
+                        "issue": pull.issue_number,
+                        "status": "merged",
+                        "attempts": attempts,
+                        "duration_seconds": round(self.clock() - pull_started, 3),
+                        "stage_seconds": dict(self._stage_timings),
+                    }
+                )
             except PromotionRetryableError as error:
                 failed += 1
                 retryable += 1
                 results.append(
                     {
                         "pr": pull.number,
+                        "issue": pull.issue_number,
                         "status": "retryable",
                         "attempts": error.attempts,
+                        "duration_seconds": round(self.clock() - pull_started, 3),
+                        "stage_seconds": dict(self._stage_timings),
                         "error": str(error).splitlines()[0][:1_000],
                     }
                 )
                 print(f"Retryable promotion failure for PR #{pull.number}: {error}")
             except (RepositoryValidationError, SubmissionError, ValueError) as error:
                 failed += 1
-                results.append(
-                    {
-                        "pr": pull.number,
-                        "status": "failed",
-                        "error": str(error).splitlines()[0][:1_000],
-                    }
-                )
                 try:
-                    self._mark_attention(pull, self._attention_message(error))
+                    attention_message = self._attention_message(error)
+                    self._timed(
+                        "attention",
+                        lambda selected=pull, message=attention_message: self._mark_attention(
+                            selected, message
+                        ),
+                    )
                 except (OSError, RuntimeError, subprocess.CalledProcessError) as mark_error:
                     print(
                         f"Could not record attention state for PR #{pull.number}: {mark_error}"
                     )
+                results.append(
+                    {
+                        "pr": pull.number,
+                        "issue": pull.issue_number,
+                        "status": "failed",
+                        "duration_seconds": round(self.clock() - pull_started, 3),
+                        "stage_seconds": dict(self._stage_timings),
+                        "error": str(error).splitlines()[0][:1_000],
+                    }
+                )
             except (OSError, RuntimeError, subprocess.CalledProcessError) as error:
                 failed += 1
                 results.append(
                     {
                         "pr": pull.number,
+                        "issue": pull.issue_number,
                         "status": "failed",
+                        "duration_seconds": round(self.clock() - pull_started, 3),
+                        "stage_seconds": dict(self._stage_timings),
                         "error": str(error).splitlines()[0][:1_000],
                     }
                 )
@@ -274,6 +334,7 @@ class PromotionQueue:
             skipped=skipped,
             retryable=retryable,
             results=tuple(results),
+            duration_seconds=round(self.clock() - queue_started, 3),
         )
 
     def _refresh_pull(self, pull: InternalPull) -> InternalPull:
@@ -301,9 +362,16 @@ class PromotionQueue:
                     raise
             if attempt >= self.max_attempts:
                 break
-            self.sleeper(float(2 ** (attempt - 1)))
+            self._timed(
+                "retry-wait",
+                lambda selected_attempt=attempt: self.sleeper(
+                    float(2 ** (selected_attempt - 1))
+                ),
+            )
             try:
-                current = self._refresh_pull(current)
+                current = self._timed(
+                    "sync", lambda selected=current: self._refresh_pull(selected)
+                )
             except SubmissionError as error:
                 raise PromotionRetryableError(
                     f"PR #{pull.number} 在重试前已关闭或变化：{error}",
@@ -527,17 +595,28 @@ class PromotionQueue:
         )
 
     def _promote(self, pull: InternalPull) -> None:
-        self._fetch_commits(pull)
+        self._timed("sync", lambda: self._fetch_commits(pull))
         main_sha = self._origin_main_sha()
         receipt = self._load_receipt(pull)
         if receipt is not None and receipt.base_sha == main_sha:
-            self._validate_final_branch(pull, base_sha=main_sha)
+            self._timed(
+                "validate",
+                lambda: self._validate_final_branch(pull, base_sha=main_sha),
+            )
             if pull.draft:
-                self._run(["gh", "pr", "ready", str(pull.number), "--repo", self.repository])
-            self._merge_pull(
-                pull,
-                expected_head_sha=pull.head_sha,
-                expected_base_sha=main_sha,
+                self._timed(
+                    "ready",
+                    lambda selected=pull: self._run(
+                        ["gh", "pr", "ready", str(selected.number), "--repo", self.repository]
+                    ),
+                )
+            self._timed(
+                "merge",
+                lambda: self._merge_pull(
+                    pull,
+                    expected_head_sha=pull.head_sha,
+                    expected_base_sha=main_sha,
+                ),
             )
             return
 
@@ -547,42 +626,55 @@ class PromotionQueue:
         else:
             proposal_source_sha = receipt.proposal_commit_sha
             proposal_base_sha = receipt.base_sha
-        paths = proposal_paths_from_diff(
-            self.root,
-            pull,
-            source_sha=proposal_source_sha,
-            base_sha=proposal_base_sha,
-            runner=self.runner,
+        paths = self._timed(
+            "prepare",
+            lambda: proposal_paths_from_diff(
+                self.root,
+                pull,
+                source_sha=proposal_source_sha,
+                base_sha=proposal_base_sha,
+                runner=self.runner,
+            ),
         )
         with tempfile.TemporaryDirectory(prefix=f"mentor-data-pr-{pull.number}-") as temporary:
             candidate = Path(temporary) / "candidate"
-            self._run(
-                ["git", "worktree", "add", "--detach", str(candidate), main_sha],
-                cwd=self.root,
+            self._timed(
+                "worktree",
+                lambda: self._run(
+                    ["git", "worktree", "add", "--detach", str(candidate), main_sha],
+                    cwd=self.root,
+                ),
             )
             try:
-                materialize_proposal_paths(
-                    self.root,
-                    candidate,
-                    source_sha=proposal_source_sha,
-                    paths=paths,
-                    runner=self.runner,
+                self._timed(
+                    "materialize",
+                    lambda: materialize_proposal_paths(
+                        self.root,
+                        candidate,
+                        source_sha=proposal_source_sha,
+                        paths=paths,
+                        runner=self.runner,
+                    ),
                 )
-                self._configure_git(candidate)
-                self._run(["git", "add", "--", *paths], cwd=candidate)
-                self._run(
-                    [
-                        "git",
-                        "commit",
-                        "-m",
-                        f"queue: stage proposal for issue #{pull.issue_number}",
-                    ],
-                    cwd=candidate,
-                )
-                proposal_commit_sha = self._run(
-                    ["git", "rev-parse", "HEAD"], cwd=candidate
-                ).stdout.strip()
-                self._finalize_candidate(candidate, pull)
+
+                def stage_proposal() -> str:
+                    self._configure_git(candidate)
+                    self._run(["git", "add", "--", *paths], cwd=candidate)
+                    self._run(
+                        [
+                            "git",
+                            "commit",
+                            "-m",
+                            f"queue: stage proposal for issue #{pull.issue_number}",
+                        ],
+                        cwd=candidate,
+                    )
+                    return self._run(
+                        ["git", "rev-parse", "HEAD"], cwd=candidate
+                    ).stdout.strip()
+
+                proposal_commit_sha = self._timed("prepare", stage_proposal)
+                self._timed("finalize", lambda: self._finalize_candidate(candidate, pull))
                 write_json_atomic(
                     candidate / self._receipt_path(pull),
                     {
@@ -599,7 +691,10 @@ class PromotionQueue:
                         .replace("+00:00", "Z"),
                     },
                 )
-                load_repository(candidate, validate=True, schema_root=self.root)
+                self._timed(
+                    "validate",
+                    lambda: load_repository(candidate, validate=True, schema_root=self.root),
+                )
                 allowed_roots = (
                     "claims",
                     "records",
@@ -608,78 +703,97 @@ class PromotionQueue:
                     "proposals",
                     "reviews",
                 )
-                tracked = self._run(
-                    ["git", "ls-files", "--", *allowed_roots],
-                    cwd=candidate,
-                ).stdout.splitlines()
-                tracked_roots = {Path(path).parts[0] for path in tracked if Path(path).parts}
-                stage_roots = [
-                    path
-                    for path in allowed_roots
-                    if (candidate / path).exists() or path in tracked_roots
-                ]
-                self._run(
-                    [
-                        "git",
-                        "add",
-                        "-A",
-                        "--",
-                        *stage_roots,
-                    ],
-                    cwd=candidate,
-                )
-                self._run(
-                    [
-                        "git",
-                        "commit",
-                        "-m",
-                        f"data: finalize moderation for issue #{pull.issue_number}",
-                    ],
-                    cwd=candidate,
-                )
-                final_sha = self._run(["git", "rev-parse", "HEAD"], cwd=candidate).stdout.strip()
-                self._run(
-                    [
-                        "git",
-                        "fetch",
-                        "--no-tags",
-                        "origin",
-                        "+refs/heads/main:refs/remotes/origin/main",
-                    ],
-                    cwd=self.root,
+
+                def commit_final_data() -> str:
+                    tracked = self._run(
+                        ["git", "ls-files", "--", *allowed_roots],
+                        cwd=candidate,
+                    ).stdout.splitlines()
+                    tracked_roots = {Path(path).parts[0] for path in tracked if Path(path).parts}
+                    stage_roots = [
+                        path
+                        for path in allowed_roots
+                        if (candidate / path).exists() or path in tracked_roots
+                    ]
+                    self._run(["git", "add", "-A", "--", *stage_roots], cwd=candidate)
+                    self._run(
+                        [
+                            "git",
+                            "commit",
+                            "-m",
+                            f"data: finalize moderation for issue #{pull.issue_number}",
+                        ],
+                        cwd=candidate,
+                    )
+                    return self._run(
+                        ["git", "rev-parse", "HEAD"], cwd=candidate
+                    ).stdout.strip()
+
+                final_sha = self._timed("commit", commit_final_data)
+                self._timed(
+                    "sync",
+                    lambda: self._run(
+                        [
+                            "git",
+                            "fetch",
+                            "--no-tags",
+                            "origin",
+                            "+refs/heads/main:refs/remotes/origin/main",
+                        ],
+                        cwd=self.root,
+                    ),
                 )
                 if self._origin_main_sha() != main_sha:
                     raise MainBranchMoved("main 在落库期间已经更新")
                 fresh = self._gh_json(f"repos/{self.repository}/pulls/{pull.number}")
                 if not isinstance(fresh, dict) or fresh.get("head", {}).get("sha") != pull.head_sha:
                     raise MainBranchMoved("Pull Request 在落库期间已经更新")
-                self._run(
-                    [
-                        "git",
-                        "push",
-                        f"--force-with-lease=refs/heads/{pull.branch}:{pull.head_sha}",
-                        "origin",
-                        f"HEAD:refs/heads/{pull.branch}",
-                    ],
-                    cwd=candidate,
+                self._timed(
+                    "push",
+                    lambda: self._run(
+                        [
+                            "git",
+                            "push",
+                            f"--force-with-lease=refs/heads/{pull.branch}:{pull.head_sha}",
+                            "origin",
+                            f"HEAD:refs/heads/{pull.branch}",
+                        ],
+                        cwd=candidate,
+                    ),
                 )
                 if pull.draft:
-                    self._run(
-                        ["gh", "pr", "ready", str(pull.number), "--repo", self.repository]
+                    self._timed(
+                        "ready",
+                        lambda selected=pull: self._run(
+                            [
+                                "gh",
+                                "pr",
+                                "ready",
+                                str(selected.number),
+                                "--repo",
+                                self.repository,
+                            ]
+                        ),
                     )
-                self._merge_pull(
-                    pull,
-                    expected_head_sha=final_sha,
-                    expected_base_sha=main_sha,
+                self._timed(
+                    "merge",
+                    lambda: self._merge_pull(
+                        pull,
+                        expected_head_sha=final_sha,
+                        expected_base_sha=main_sha,
+                    ),
                 )
             finally:
-                self.runner(
-                    ["git", "worktree", "remove", "--force", str(candidate)],
-                    check=False,
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL,
-                    text=True,
-                    cwd=self.root,
+                self._timed(
+                    "cleanup",
+                    lambda: self.runner(
+                        ["git", "worktree", "remove", "--force", str(candidate)],
+                        check=False,
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                        text=True,
+                        cwd=self.root,
+                    ),
                 )
 
     def _configure_git(self, candidate: Path) -> None:
@@ -767,6 +881,7 @@ class PromotionQueue:
                 review_pull,
                 schema_root=self.root,
                 allow_registry_drift=True,
+                defer_finalization_check=True,
             )
             if not applied.ready_for_finalization and applied.remaining_proposals:
                 raise SubmissionError(
@@ -1049,6 +1164,13 @@ def write_github_outputs(path: Path, summary: PromotionSummary) -> None:
         handle.write(f"failed={summary.failed}\n")
         handle.write(f"skipped={summary.skipped}\n")
         handle.write(f"retryable={summary.retryable}\n")
+        handle.write(f"duration_seconds={summary.duration_seconds}\n")
+        issue_numbers = [
+            item["issue"]
+            for item in summary.results
+            if item.get("status") == "merged" and isinstance(item.get("issue"), int)
+        ]
+        handle.write(f"issue_numbers={','.join(str(item) for item in issue_numbers)}\n")
         handle.write(
             "results="
             + json.dumps(summary.results, ensure_ascii=False, separators=(",", ":"))

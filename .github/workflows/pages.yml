@@ -1,23 +1,14 @@
 name: Publish GitHub Pages dataset
+run-name: "Publish MentorData${{ inputs.issue_numbers && format(' for Issues {0}', inputs.issue_numbers) || github.event_name == 'schedule' && ' reconciliation' || '' }}"
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "claims/**"
-      - "records/**"
-      - "registry/**"
-      - "reports/resolutions/**"
-      - "reviews/resolutions/**"
-      - "reviews/promotions/**"
-      - "schemas/**"
-      - "mentor_data/**"
-      - "scripts/finalized_issue_numbers.py"
-      - "site/**"
-      - "pyproject.toml"
-      - "uv.lock"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
+    inputs:
+      issue_numbers:
+        description: Comma-separated source Issue allowlist for this publication batch
+        required: false
+        default: ""
+        type: string
   schedule:
     - cron: "23 * * * *"
 
@@ -29,7 +20,7 @@ permissions:
 
 concurrency:
   group: github-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -65,7 +56,6 @@ jobs:
 
       - name: Validate and append the current content-addressed release
         run: |
-          uv run mentor-data validate
           uv run mentor-data build --output .work/pages
           git -C .work/pages rm -r --ignore-unmatch datasets
           touch .work/pages/.nojekyll
@@ -114,6 +104,7 @@ jobs:
     timeout-minutes: 5
     env:
       GH_TOKEN: ${{ github.token }}
+      REQUESTED_ISSUES: ${{ inputs.issue_numbers || '' }}
     steps:
       - name: Check out the same published main revision
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -129,11 +120,15 @@ jobs:
       - name: Install locked dependencies
         run: uv sync --locked --dev
 
-      - name: Close every newly published source Issue
+      - name: Close source Issues from this publication or reconcile all receipts
         run: |
           mkdir -p .work
-          uv run python scripts/finalized_issue_numbers.py \
-            --output .work/finalized-issues.txt
+          ARGS=(--output .work/finalized-issues.txt)
+          if [ -n "$REQUESTED_ISSUES" ]; then
+            case "$REQUESTED_ISSUES" in *[!0-9,]*|,*|*,|*,,*) exit 2 ;; esac
+            ARGS+=(--issues "$REQUESTED_ISSUES")
+          fi
+          uv run python scripts/finalized_issue_numbers.py "${ARGS[@]}"
           while IFS= read -r ISSUE_NUMBER; do
             case "$ISSUE_NUMBER" in ''|*[!0-9]*) exit 1 ;; esac
             ISSUE_STATE=$(gh api \
