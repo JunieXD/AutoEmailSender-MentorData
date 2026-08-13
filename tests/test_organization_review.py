@@ -2787,6 +2787,16 @@ def test_review_comment_enforces_github_character_limit() -> None:
         _parse_review_comment_payload(body + " ")
 
 
+def test_review_comment_accepts_internal_batch_submit_marker() -> None:
+    body = (
+        f"{REVIEW_COMMENT_MARKER}\n"
+        "<!-- mentor-data-batch-submit:v1 -->\n"
+        '```json\n{"pull_request_number":88}\n```'
+    )
+
+    assert _parse_review_comment_payload(body)["pull_request_number"] == 88
+
+
 def test_review_rejects_stale_manifest_digest(tmp_path: Path) -> None:
     root = build_test_repository(tmp_path)
     _, manifest, manifest_path = _prepare(

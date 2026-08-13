@@ -11,10 +11,15 @@ from urllib.parse import quote
 
 import yaml
 
-from .agent_review import AgentReviewError, PullSnapshot
+from .agent_review import COMMENT_CHARACTER_LIMIT, AgentReviewError, PullSnapshot
 from .errors import SubmissionError
 from .internal_pulls import BRANCH_PATTERN, InternalPull, load_internal_pull
-from .organization_review import REVIEW_COMMENT_MARKER, _organization_options, _validate_schema
+from .organization_review import (
+    BATCH_SUBMIT_MARKER,
+    REVIEW_COMMENT_MARKER,
+    _organization_options,
+    _validate_schema,
+)
 from .organizations import OrganizationRegistry
 
 REPOSITORY_PATTERN = re.compile(
@@ -297,7 +302,14 @@ class GitHubReviewClient:
             if str(item.get("body") or "").startswith(REVIEW_COMMENT_MARKER)
         ]
 
-    def submit_review_comment(self, pull_number: int, body: str) -> dict[str, Any]:
+    def submit_review_comment(
+        self,
+        pull_number: int,
+        body: str,
+        *,
+        suppress_trigger: bool = False,
+    ) -> dict[str, Any]:
+        body = self.review_comment_body(body, suppress_trigger=suppress_trigger)
         completed = self._run(
             [
                 "gh",
@@ -323,6 +335,46 @@ class GitHubReviewClient:
                 "GitHub 返回的审核评论缺少 ID",
             )
         return value
+
+    @staticmethod
+    def review_comment_body(body: str, *, suppress_trigger: bool) -> str:
+        if suppress_trigger:
+            marker, separator, remainder = body.partition("\n")
+            if marker != REVIEW_COMMENT_MARKER or not separator:
+                raise AgentReviewError(
+                    "review_comment_invalid",
+                    "批量审核评论缺少正式审核标记",
+                )
+            body = f"{marker}\n{BATCH_SUBMIT_MARKER}\n{remainder}"
+        if len(body) > COMMENT_CHARACTER_LIMIT:
+            raise AgentReviewError(
+                "review_comment_too_large",
+                f"审核评论有 {len(body)} 个字符，超过 {COMMENT_CHARACTER_LIMIT} 字符上限",
+            )
+        return body
+
+    def dispatch_promotion_queue(self, pull_numbers: list[int]) -> dict[str, Any]:
+        if not pull_numbers or any(item <= 0 for item in pull_numbers):
+            raise AgentReviewError("review_prs_invalid", "可信队列需要有效的 PR 编号")
+        completed = self._run(
+            [
+                "gh",
+                "workflow",
+                "run",
+                "promote-ready-pulls.yml",
+                "--repo",
+                self.repository,
+                "--ref",
+                "main",
+                "-f",
+                "pull_numbers=" + ",".join(str(item) for item in pull_numbers),
+            ]
+        )
+        return {
+            "workflow": "promote-ready-pulls.yml",
+            "dispatched": True,
+            "output": str(completed.stdout or "").strip() or None,
+        }
 
     def retry_promotion(self, pull_number: int) -> dict[str, Any]:
         value = self._json(f"repos/{self.repository}/pulls/{pull_number}")
@@ -401,7 +453,7 @@ class GitHubReviewClient:
                     continue
                 title = run.get("display_title")
                 title_matches = isinstance(title, str) and re.search(
-                    rf"\bPR\s*#{pull_number}\b",
+                    rf"(?:\bPR\s*#{pull_number}\b|\bPRs\s+[0-9,]*\b{pull_number}\b)",
                     title,
                     flags=re.IGNORECASE,
                 )

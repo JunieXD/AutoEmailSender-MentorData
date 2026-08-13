@@ -18,6 +18,7 @@ from mentor_data.agent_review_cli import (
     _answer_many,
     _brief,
     _check,
+    _check_many,
     _classify_status,
     _discover_root,
     _doctor,
@@ -26,6 +27,8 @@ from mentor_data.agent_review_cli import (
     _retry,
     _root,
     _status,
+    _status_many,
+    _submit_many,
 )
 
 
@@ -708,3 +711,262 @@ def test_status_wait_returns_timeout_as_terminal_outcome(
     assert result["terminal"] is True
     assert result["outcome"] == "timeout"
     assert result["next_poll_seconds"] is None
+
+
+def test_check_many_keeps_mixed_results_and_checks_every_pr(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    calls: list[int] = []
+
+    def check(args, root, workspace):
+        calls.append(args.pr)
+        if args.pr == 12:
+            raise AgentReviewError("review_questions_pending", "还有问题")
+        return {"ok": True, "organization_changes": []}
+
+    monkeypatch.setattr("mentor_data.agent_review_cli._check", check)
+    args = argparse.Namespace(prs="11,12,13", fields=None)
+
+    result = _check_many(args, tmp_path, tmp_path / "workspace")
+
+    assert calls == [11, 12, 13]
+    assert result["passed"] == 2
+    assert result["failed"] == 1
+    assert result["all_passed"] is False
+    assert result["items"][1]["error"]["code"] == "review_questions_pending"
+    assert result["next"] is None
+
+
+def test_submit_many_rejects_nonidentical_authorization_before_github(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    monkeypatch.setattr(
+        "mentor_data.agent_review_cli._client",
+        lambda args, root: pytest.fail("GitHub must not be touched"),
+    )
+    args = argparse.Namespace(
+        prs="11,12",
+        confirm_prs="12,11",
+        repository="example/repository",
+    )
+
+    with pytest.raises(AgentReviewError) as captured:
+        _submit_many(args, tmp_path, tmp_path / "workspace")
+
+    assert captured.value.code == "review_confirmation_mismatch"
+
+
+def test_submit_many_preflights_every_pr_before_any_remote_write(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    prepared: list[int] = []
+    writes: list[int] = []
+
+    class Client:
+        def submit_review_comment(self, pull_number, body, *, suppress_trigger=False):
+            writes.append(pull_number)
+            return {"id": pull_number}
+
+        def dispatch_promotion_queue(self, pull_numbers):
+            pytest.fail("queue must not be dispatched")
+
+    def prepare(**kwargs):
+        pull_number = kwargs["pull_number"]
+        prepared.append(pull_number)
+        if pull_number == 12:
+            raise AgentReviewError("review_preflight_failed", "机构冲突")
+        return {"unused": True}
+
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    monkeypatch.setattr("mentor_data.agent_review_cli._prepare_submission", prepare)
+    args = argparse.Namespace(
+        prs="11,12,13",
+        confirm_prs="11,12,13",
+        repository="example/repository",
+    )
+
+    result = _submit_many(args, tmp_path, tmp_path / "workspace")
+
+    assert prepared == [11, 12, 13]
+    assert writes == []
+    assert result["submitted"] == 0
+    assert result["queue_dispatched"] is False
+    assert result["items"][0]["pr"] == 12
+
+
+def test_submit_many_posts_independent_comments_and_dispatches_once(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    calls: list[tuple] = []
+
+    def pull(number: int) -> PullSnapshot:
+        return PullSnapshot(
+            number=number,
+            issue_number=number - 1,
+            title=f"PR {number}",
+            url=f"https://github.test/pull/{number}",
+            branch=f"batch/issue-{number - 1}",
+            head_sha=str(number % 10) * 40,
+            base_sha="b" * 40,
+            draft=True,
+            status_label="status:manual-review",
+        )
+
+    class Client:
+        def fetch_review_bundle(self, pull_number):
+            return pull(pull_number), {}, f"payload-{pull_number}".encode()
+
+        def submit_review_comment(self, pull_number, body, *, suppress_trigger=False):
+            calls.append(("comment", pull_number, suppress_trigger, body))
+            return {"id": pull_number * 10, "html_url": f"https://comment/{pull_number}"}
+
+        def dispatch_promotion_queue(self, pull_numbers):
+            calls.append(("dispatch", tuple(pull_numbers)))
+            return {"dispatched": True}
+
+    def prepare(**kwargs):
+        number = kwargs["pull_number"]
+        return {
+            "pull": pull(number),
+            "draft": {
+                "schema_version": 1,
+                "pull": pull(number).as_dict(),
+                "manifest_sha256": f"digest-{number}",
+            },
+            "decision": {"pr": number},
+            "body": f"review-{number}",
+            "preflight": {"ok": True},
+            "existing_comment": None,
+        }
+
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    monkeypatch.setattr("mentor_data.agent_review_cli._prepare_submission", prepare)
+    monkeypatch.setattr("mentor_data.agent_review_cli.assert_draft_current", lambda *args: None)
+    args = argparse.Namespace(
+        prs="11,12",
+        confirm_prs="11,12",
+        repository="example/repository",
+    )
+
+    result = _submit_many(args, tmp_path, workspace)
+
+    assert [call[:3] for call in calls[:2]] == [
+        ("comment", 11, True),
+        ("comment", 12, True),
+    ]
+    assert calls[2] == ("dispatch", (11, 12))
+    assert result["submitted"] == 2
+    assert result["queue_dispatched"] is True
+    assert all(item["reused"] is False for item in result["items"])
+    assert load_draft(workspace, 11)["submission"]["comment_id"] == 110
+
+
+def test_submit_many_reuses_matching_deferred_comment_on_resume(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    submitted: list[int] = []
+
+    def pull(number: int) -> PullSnapshot:
+        return PullSnapshot(
+            number=number,
+            issue_number=number - 1,
+            title=f"PR {number}",
+            url=f"https://github.test/pull/{number}",
+            branch=f"batch/issue-{number - 1}",
+            head_sha=str(number % 10) * 40,
+            base_sha="b" * 40,
+            draft=True,
+            status_label="status:manual-review",
+        )
+
+    class Client:
+        def fetch_review_bundle(self, pull_number):
+            return pull(pull_number), {}, b"payload"
+
+        def submit_review_comment(self, pull_number, body, *, suppress_trigger=False):
+            submitted.append(pull_number)
+            return {"id": 120}
+
+        def dispatch_promotion_queue(self, pull_numbers):
+            return {"dispatched": True}
+
+    def prepare(**kwargs):
+        number = kwargs["pull_number"]
+        return {
+            "pull": pull(number),
+            "draft": {"schema_version": 1, "pull": pull(number).as_dict()},
+            "decision": {"pr": number},
+            "body": "review",
+            "preflight": {"ok": True},
+            "existing_comment": (
+                {"id": 110, "html_url": "https://comment/11"} if number == 11 else None
+            ),
+        }
+
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    monkeypatch.setattr("mentor_data.agent_review_cli._prepare_submission", prepare)
+    monkeypatch.setattr("mentor_data.agent_review_cli.assert_draft_current", lambda *args: None)
+    args = argparse.Namespace(
+        prs="11,12",
+        confirm_prs="11,12",
+        repository="example/repository",
+    )
+
+    result = _submit_many(args, tmp_path, workspace)
+
+    assert submitted == [12]
+    assert [item["reused"] for item in result["items"]] == [True, False]
+
+
+def test_status_many_returns_compact_mixed_phase_summary(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
+    class Client:
+        def status(self, pull_number, *, issue_number=None):
+            base = {
+                "pr": pull_number,
+                "issue": pull_number - 1,
+                "updated_at": "2026-08-12T10:00:00Z",
+                "labels": [],
+                "review_comments": 1,
+                "checks": {"total": 0, "pending": 0, "failed": 0},
+            }
+            if pull_number == 11:
+                return {
+                    **base,
+                    "pr_state": "closed",
+                    "merged": True,
+                    "merged_at": "2026-08-12T10:01:00Z",
+                    "issue_state": "closed",
+                }
+            return {
+                **base,
+                "pr_state": "open",
+                "merged": False,
+                "merged_at": None,
+                "issue_state": "open",
+                "promotion_run": {"status": "completed", "conclusion": "success"},
+            }
+
+    monkeypatch.setattr("mentor_data.agent_review_cli._client", lambda args, root: Client())
+    args = argparse.Namespace(
+        prs="11,12",
+        wait=False,
+        timeout_seconds=10,
+        poll_seconds=1,
+        fields=None,
+    )
+
+    result = _status_many(args, tmp_path, tmp_path / "workspace")
+
+    assert result["phases"] == {"published": 1, "retryable-stalled": 1}
+    assert result["terminal"] is True
+    assert result["items"][1]["next"].endswith("--confirm-pr 12")

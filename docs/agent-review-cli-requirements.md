@@ -131,9 +131,12 @@ CLI 只发布审核评论，后续由现有可信队列应用决定、更新分�
 - `review question --pr N --id ID`：读取单个问题及完整选项。
 - `review answer --pr N --id ID --choice VALUE`：记录用户决定及必要参数。
 - `review check --pr N`：在最新 `main` 上完整预演并输出影响摘要。
+- `review check-many --prs N,M`：保持独立底稿并逐份完整预演，返回混合成功/失败汇总。
 - `review decision --pr N`：按需输出完整决定或正式评论正文。
 - `review submit --pr N --confirm-pr N`：再次预演后发布正式评论。
+- `review submit-many --prs N,M --confirm-prs N,M`：先让全部独立预检和最终版本检查通过，再逐份发布正式评论并只触发一次可信队列；授权列表必须完全一致。
 - `review status --pr N [--wait]`：报告匹配的落库 Actions、PR 和 Issue 状态，并在等待模式中覆盖来源 Issue 收尾。
+- `review status-many --prs N,M [--wait]`：统一等待并紧凑汇总多个 PR 的阶段和终态。
 
 最终命令名称可以遵循现有 CLI 风格调整，但必须覆盖上述能力和安全边界。
 
@@ -181,6 +184,7 @@ CLI 退出码：成功为 `0`，业务或输入错误为 `2`，外部暂时性�
 - 旧 PR SHA 或旧清单上的底稿不能提交。
 - 有未回答问题时不能预演为可提交，也不能提交。
 - `submit` 未提供匹配的显式确认参数时不会产生远程写入。
+- `submit-many` 在任一 PR 预检失败时不会发布任何评论；中途失败可幂等续跑，且延迟批次评论只能由对应显式白名单队列处理。
 - 预演复用现有可信 Python 业务逻辑，并在最新 `main` 上运行。
 - CLI 和规则有覆盖成功、歧义、漂移、冲突和提交保护的自动化测试。
 - Skill 简洁、通过官方 Skill 校验，并把命令细节留给 CLI 自描述帮助。

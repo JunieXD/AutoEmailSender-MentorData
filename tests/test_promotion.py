@@ -341,6 +341,115 @@ def test_promotion_outputs_include_machine_readable_per_pull_results(tmp_path: P
     assert values["publish"] == "false"
 
 
+def test_batch_allowlist_preserves_requested_order(tmp_path: Path) -> None:
+    class OrderedQueue(PromotionQueue):
+        promoted: list[int]
+
+        def __init__(self):
+            super().__init__(
+                root=tmp_path,
+                repository="example/repository",
+                pull_numbers=(89, 88),
+            )
+            self.promoted = []
+
+        def _list_open_pulls(self):
+            return [
+                _pull_payload(number=88, issue_number=40),
+                _pull_payload(number=89, issue_number=41),
+                _pull_payload(number=90, issue_number=42),
+            ]
+
+        def _is_ready(self, pull):
+            return True
+
+        def _promote(self, pull):
+            self.promoted.append(pull.number)
+
+        def _remove_attention_label(self, pull_number):
+            return None
+
+    queue = OrderedQueue()
+
+    summary = queue.run()
+
+    assert queue.promoted == [89, 88]
+    assert summary.scanned == 2
+
+
+def test_deferred_batch_comment_requires_explicit_allowlist(tmp_path: Path) -> None:
+    pull = InternalPull(
+        number=88,
+        url="https://github.com/example/repository/pull/88",
+        title="[批量投稿] 示例大学",
+        kind="batch",
+        issue_number=40,
+        branch="batch/issue-40",
+        head_sha="a" * 40,
+        base_sha="b" * 40,
+        draft=True,
+        status_label="status:manual-review",
+    )
+    comment = {
+        "body": (
+            f"{REVIEW_COMMENT_MARKER}\n"
+            "<!-- mentor-data-batch-submit:v1 -->\n```json\n{}\n```"
+        ),
+        "author_association": "OWNER",
+    }
+
+    scheduled = PromotionQueue(root=tmp_path, repository="example/repository")
+    selected = PromotionQueue(
+        root=tmp_path,
+        repository="example/repository",
+        pull_numbers=(88,),
+    )
+    scheduled._latest_batch_review_comment_payload = (  # type: ignore[method-assign]
+        lambda selected_pull: comment
+    )
+    selected._latest_batch_review_comment_payload = (  # type: ignore[method-assign]
+        lambda selected_pull: comment
+    )
+
+    assert scheduled._is_ready(pull) is False
+    assert selected._is_ready(pull) is True
+
+    ready_pull = InternalPull(
+        number=pull.number,
+        url=pull.url,
+        title=pull.title,
+        kind=pull.kind,
+        issue_number=pull.issue_number,
+        branch=pull.branch,
+        head_sha=pull.head_sha,
+        base_sha=pull.base_sha,
+        draft=False,
+        status_label=pull.status_label,
+    )
+    assert scheduled._is_ready(ready_pull) is False
+
+
+def test_missing_pr_in_explicit_batch_allowlist_is_not_silently_ignored(tmp_path: Path) -> None:
+    class MissingQueue(PromotionQueue):
+        def _list_open_pulls(self):
+            return [_pull_payload(number=88, issue_number=40)]
+
+        def _is_ready(self, pull):
+            return False
+
+    summary = MissingQueue(
+        root=tmp_path,
+        repository="example/repository",
+        pull_numbers=(88, 89),
+    ).run()
+
+    assert summary.scanned == 2
+    assert summary.failed == 1
+    assert summary.retryable == 1
+    assert summary.results[0]["pr"] == 89
+    assert summary.results[0]["status"] == "retryable"
+
+
 def test_finalized_branch_receipt_recovers_without_reapplying_the_proposal(
     tmp_path: Path,
 ) -> None:

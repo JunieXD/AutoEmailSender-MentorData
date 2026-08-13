@@ -52,6 +52,8 @@ CLI 会先自动处理唯一精确匹配、明确新机构、空层级和重复�
 
 只有 `review submit` 会写入 GitHub。它要求显式确认 PR 编号并再次预演，然后发布一次正式审核评论；该评论会立即触发现有可信落库队列。提交后使用 `review status --wait` 等待数据发布和来源 Issue 收尾，不要另外将 Draft 标记为 Ready、手动修改提案或合并 PR。完整需求与安全边界见 [Agent 机构审核 CLI 需求](agent-review-cli-requirements.md)。
 
+需要集中处理多份投稿时，仍应逐份完成 `brief`、问题裁决和机构树审查，然后用 `review check-many --prs N,M` 做独立完整预检。用户一次明确授权完整有序编号列表后，`review submit-many --prs N,M --confirm-prs N,M` 才会逐份发布正式评论，并在所有评论就绪后只启动一次可信落库 Runner。若任一预检失败则零评论写入；评论阶段中断可用同一命令幂等续跑。最后用 `review status-many --prs N,M --wait` 统一等待并核对每份 PR 和来源 Issue。
+
 ### 单条投稿
 
 自动资格投稿会直接进入落库队列。需要人工审核时：

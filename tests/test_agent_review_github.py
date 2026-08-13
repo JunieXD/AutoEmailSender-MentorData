@@ -171,6 +171,35 @@ def test_retry_promotion_dispatches_only_the_trusted_workflow(tmp_path: Path) ->
     ]
 
 
+def test_deferred_batch_comment_keeps_official_marker_and_dispatches_one_allowlist(
+    tmp_path: Path,
+) -> None:
+    calls: list[list[str]] = []
+
+    def runner(command, **kwargs):
+        calls.append(command)
+        if command[:4] == ["gh", "api", "--method", "POST"]:
+            body = json.loads(kwargs["input"])["body"]
+            assert body.startswith(
+                "<!-- mentor-data-organization-review:v1 -->\n"
+                "<!-- mentor-data-batch-submit:v1 -->\n"
+            )
+            return subprocess.CompletedProcess(command, 0, json.dumps({"id": 99}), "")
+        return subprocess.CompletedProcess(command, 0, "", "")
+
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=tmp_path,
+        runner=runner,
+    )
+    body = "<!-- mentor-data-organization-review:v1 -->\n```json\n{}\n```"
+
+    client.submit_review_comment(11, body, suppress_trigger=True)
+    client.dispatch_promotion_queue([11, 12])
+
+    assert calls[-1][-2:] == ["-f", "pull_numbers=11,12"]
+
+
 def test_fetch_main_organizations_returns_compact_active_options() -> None:
     registry = """\
 schema_version: 1
@@ -287,6 +316,47 @@ def test_status_matches_named_promotion_workflow_run(
         "updated_at": "2026-08-12T10:02:00Z",
         "url": "https://github.test/actions/runs/101",
     }
+
+
+def test_status_matches_batch_allowlist_workflow_run(monkeypatch: pytest.MonkeyPatch) -> None:
+    client = GitHubReviewClient(repository="example/repository", root=PROJECT_ROOT)
+    pull = {
+        **_pull_payload(),
+        "updated_at": "2026-08-12T10:00:00Z",
+        "merged_at": None,
+    }
+
+    def fake_json(endpoint: str):
+        if endpoint.endswith("pulls/12"):
+            return pull
+        if endpoint.endswith("issues/11"):
+            return {"state": "open"}
+        if "actions/workflows/promote-ready-pulls.yml/runs" in endpoint:
+            return {
+                "workflow_runs": [
+                    {
+                        "id": 102,
+                        "display_title": "Promote ready mentor data batch PRs 11,12,13",
+                        "event": "workflow_dispatch",
+                        "status": "in_progress",
+                        "conclusion": None,
+                        "created_at": "2026-08-12T10:01:00Z",
+                        "updated_at": "2026-08-12T10:02:00Z",
+                        "html_url": "https://github.test/actions/runs/102",
+                        "pull_requests": [],
+                    }
+                ]
+            }
+        if endpoint.endswith("commits/" + "a" * 40 + "/check-runs"):
+            return {"check_runs": []}
+        raise AssertionError(endpoint)
+
+    monkeypatch.setattr(client, "_json", fake_json)
+    monkeypatch.setattr(client, "official_review_comments", lambda pull_number: [{"id": 99}])
+
+    result = client.status(12)
+
+    assert result["promotion_run"]["id"] == 102
 
 
 def test_status_keeps_existing_fallback_when_actions_are_unavailable(

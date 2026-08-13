@@ -7,6 +7,7 @@ import os
 import shutil
 import sys
 import time
+from collections.abc import Callable
 from pathlib import Path
 from typing import Any
 
@@ -64,6 +65,14 @@ def _add_fields(parser: argparse.ArgumentParser) -> None:
     parser.add_argument(
         "--fields",
         help="逗号分隔的精确输出字段；未知字段会列出全部可选字段",
+    )
+
+
+def _add_pr_list(parser: argparse.ArgumentParser, *, required: bool = True) -> None:
+    parser.add_argument(
+        "--prs",
+        required=required,
+        help="逗号分隔的 PR 编号；去重后按给定顺序处理",
     )
 
 
@@ -328,6 +337,18 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     check.add_argument("--pr", type=int, required=True)
     _add_fields(check)
 
+    check_many = commands.add_parser(
+        "check-many",
+        parents=[common],
+        help="逐份完整预检多个已规划 PR 并返回紧凑汇总",
+        description=(
+            "每个 PR 仍使用独立底稿和完整预检；任一失败不会阻止其余只读预检，"
+            "但汇总会明确标记失败项。"
+        ),
+    )
+    _add_pr_list(check_many)
+    _add_fields(check_many)
+
     decision = commands.add_parser(
         "decision",
         parents=[common],
@@ -351,6 +372,23 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
     )
     submit.add_argument("--pr", type=int, required=True)
     submit.add_argument("--confirm-pr", type=int, required=True)
+
+    submit_many = commands.add_parser(
+        "submit-many",
+        parents=[common],
+        help="一次授权后逐份发布多个已完整预检的正式审核评论",
+        description=(
+            "先对全部 PR 完成独立预检和最终版本检查；只有全部通过才开始写入。"
+            "--confirm-prs 必须与 --prs 的有序编号集合完全一致。"
+            "每份仍发布独立正式评论，最后只触发一次可信落库队列。"
+        ),
+    )
+    _add_pr_list(submit_many)
+    submit_many.add_argument(
+        "--confirm-prs",
+        required=True,
+        help="明确授权的逗号分隔 PR 编号，必须与 --prs 完全一致",
+    )
 
     status = commands.add_parser(
         "status",
@@ -381,6 +419,18 @@ def register_review_parser(subparsers: argparse._SubParsersAction) -> None:
         help="--wait 的轮询间隔秒数，范围 1-60（默认：5）",
     )
     _add_fields(status)
+
+    status_many = commands.add_parser(
+        "status-many",
+        parents=[common],
+        help="一次查询多个 PR 的审核、落库和发布状态",
+        description="默认查询一次；--wait 会统一轮询到全部 PR 终止或总超时。",
+    )
+    _add_pr_list(status_many)
+    status_many.add_argument("--wait", action="store_true")
+    status_many.add_argument("--timeout-seconds", type=int, default=900)
+    status_many.add_argument("--poll-seconds", type=int, default=5)
+    _add_fields(status_many)
 
     retry = commands.add_parser(
         "retry",
@@ -1139,6 +1189,76 @@ def _check(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, A
     )
 
 
+def _parse_prs(value: str, *, argument: str = "--prs") -> list[int]:
+    raw = [item.strip() for item in value.split(",")]
+    if not raw or any(not item or not item.isascii() or not item.isdecimal() for item in raw):
+        raise AgentReviewError(
+            "review_prs_invalid",
+            f"{argument} 必须是逗号分隔的正整数",
+        )
+    values = [int(item) for item in raw]
+    if any(item <= 0 for item in values) or len(values) != len(set(values)):
+        raise AgentReviewError(
+            "review_prs_invalid",
+            f"{argument} 必须是无重复的正整数列表",
+        )
+    return values
+
+
+def _batch_result_item(
+    pull_number: int,
+    operation: str,
+    action: Callable[[], dict[str, Any]],
+) -> dict[str, Any]:
+    try:
+        value = action()
+        return {"pr": pull_number, "ok": True, operation: value}
+    except AgentReviewError as error:
+        item: dict[str, Any] = {
+            "pr": pull_number,
+            "ok": False,
+            "error": {"code": error.code, "message": error.message},
+        }
+        if error.next_command:
+            item["error"]["next"] = error.next_command
+        return item
+
+
+def _check_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
+    pull_numbers = _parse_prs(args.prs)
+    items = [
+        _batch_result_item(
+            pull_number,
+            "preflight",
+            lambda pull_number=pull_number: _check(
+                argparse.Namespace(**{**vars(args), "pr": pull_number, "fields": None}),
+                root,
+                workspace,
+            ),
+        )
+        for pull_number in pull_numbers
+    ]
+    passed = sum(item["ok"] for item in items)
+    return project_fields(
+        {
+            "prs": pull_numbers,
+            "count": len(items),
+            "passed": passed,
+            "failed": len(items) - passed,
+            "all_passed": passed == len(items),
+            "items": items,
+            "next": (
+                "mentor-data review submit-many "
+                f"--prs {','.join(map(str, pull_numbers))} "
+                f"--confirm-prs {','.join(map(str, pull_numbers))}"
+                if passed == len(items)
+                else None
+            ),
+        },
+        _fields(args),
+    )
+
+
 def _decision(args: argparse.Namespace, workspace: Path) -> Any:
     draft = load_draft(workspace, args.pr)
     decision = _require_decision(draft, args.pr)
@@ -1210,6 +1330,158 @@ def _submit(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, 
         "url": comment.get("html_url"),
         "preflight": preflight,
         "next": f"mentor-data review status --pr {args.pr} --wait",
+    }
+
+
+def _prepare_submission(
+    *,
+    root: Path,
+    workspace: Path,
+    pull_number: int,
+    client: GitHubReviewClient,
+) -> dict[str, Any]:
+    pull, _, digest = _refresh(client, workspace, pull_number)
+    draft = load_draft(workspace, pull_number)
+    assert_draft_current(draft, pull, digest)
+    decision = _require_decision(draft, pull_number)
+    body = decision_comment_body(decision)
+    existing = client.official_review_comments(pull_number)
+    resumable_comment = None
+    if existing:
+        expected = client.review_comment_body(body, suppress_trigger=True)
+        resumable_comment = existing[-1] if existing[-1].get("body") == expected else None
+        if resumable_comment is None:
+            raise AgentReviewError(
+                "review_already_submitted",
+                f"PR #{pull_number} 已有不同的正式审核评论 #{existing[-1].get('id')}",
+                next_command=f"mentor-data review status --pr {pull_number}",
+            )
+    preflight = run_preflight(root=root, client=client, pull=pull, decision=decision)
+    final_pull, _, final_payload = client.fetch_review_bundle(pull_number)
+    assert_draft_current(draft, final_pull, sha256_bytes(final_payload))
+    final_comments = client.official_review_comments(pull_number)
+    if resumable_comment is None and final_comments:
+        raise AgentReviewError(
+            "review_already_submitted",
+            f"PR #{pull_number} 在预演期间出现了正式审核评论",
+            next_command=f"mentor-data review status --pr {pull_number}",
+        )
+    if resumable_comment is not None and (
+        not final_comments or final_comments[-1].get("id") != resumable_comment.get("id")
+    ):
+        raise AgentReviewError(
+            "review_already_submitted",
+            f"PR #{pull_number} 在预演期间出现了不同的正式审核评论",
+            next_command=f"mentor-data review status --pr {pull_number}",
+        )
+    return {
+        "pull": pull,
+        "draft": draft,
+        "decision": decision,
+        "body": body,
+        "preflight": preflight,
+        "existing_comment": resumable_comment,
+    }
+
+
+def _submit_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
+    pull_numbers = _parse_prs(args.prs)
+    confirmed = _parse_prs(args.confirm_prs, argument="--confirm-prs")
+    if confirmed != pull_numbers:
+        raise AgentReviewError(
+            "review_confirmation_mismatch",
+            "--confirm-prs 必须与 --prs 的顺序和编号完全一致",
+        )
+    client = _client(args, root)
+    prepared: list[dict[str, Any]] = []
+    failures: list[dict[str, Any]] = []
+    for pull_number in pull_numbers:
+        item = _batch_result_item(
+            pull_number,
+            "prepared",
+            lambda pull_number=pull_number: _prepare_submission(
+                root=root,
+                workspace=workspace,
+                pull_number=pull_number,
+                client=client,
+            ),
+        )
+        if item["ok"]:
+            prepared.append(item["prepared"])
+        else:
+            failures.append(item)
+    if failures:
+        return {
+            "prs": pull_numbers,
+            "submitted": 0,
+            "failed": len(failures),
+            "queue_dispatched": False,
+            "items": failures,
+        }
+
+    # A final all-PR read barrier keeps the no-write preflight phase atomic.
+    for pull_number, item in zip(pull_numbers, prepared, strict=True):
+        final_pull, _, final_payload = client.fetch_review_bundle(pull_number)
+        assert_draft_current(item["draft"], final_pull, sha256_bytes(final_payload))
+
+    submitted: list[dict[str, Any]] = []
+    for pull_number, item in zip(pull_numbers, prepared, strict=True):
+        comment = item["existing_comment"]
+        if comment is None:
+            try:
+                comment = client.submit_review_comment(
+                    pull_number,
+                    item["body"],
+                    suppress_trigger=True,
+                )
+            except AgentReviewError as error:
+                return {
+                    "prs": pull_numbers,
+                    "submitted": len(submitted),
+                    "failed": 1,
+                    "queue_dispatched": False,
+                    "items": [
+                        *submitted,
+                        {
+                            "pr": pull_number,
+                            "ok": False,
+                            "error": {"code": error.code, "message": error.message},
+                        },
+                    ],
+                    "next": (
+                        "mentor-data review submit-many "
+                        f"--prs {args.prs} --confirm-prs {args.confirm_prs}"
+                    ),
+                }
+        draft = item["draft"]
+        draft["preflight"] = item["preflight"]
+        draft["submission"] = {
+            "comment_id": comment["id"],
+            "url": comment.get("html_url"),
+            "head_sha": item["pull"].head_sha,
+            "decision_sha256": canonical_json_sha256(item["decision"]),
+        }
+        save_draft(workspace, draft)
+        submitted.append(
+            {
+                "pr": pull_number,
+                "ok": True,
+                "comment_id": comment["id"],
+                "url": comment.get("html_url"),
+                "reused": item["existing_comment"] is not None,
+            }
+        )
+    dispatch = client.dispatch_promotion_queue(pull_numbers)
+    return {
+        "prs": pull_numbers,
+        "submitted": len(submitted),
+        "failed": 0,
+        "queue_dispatched": dispatch["dispatched"],
+        "items": submitted,
+        "next": (
+            "mentor-data review status-many "
+            f"--prs {','.join(map(str, pull_numbers))} --wait"
+        ),
     }
 
 
@@ -1345,6 +1617,80 @@ def _status(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, 
         time.sleep(min(args.poll_seconds, max(0.0, args.timeout_seconds - elapsed)))
 
 
+def _status_many(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, Any]:
+    if args.timeout_seconds < 1:
+        raise AgentReviewError("review_wait_invalid", "--timeout-seconds 必须大于零")
+    if not 1 <= args.poll_seconds <= 60:
+        raise AgentReviewError("review_wait_invalid", "--poll-seconds 必须在 1 到 60 之间")
+    pull_numbers = _parse_prs(args.prs)
+    client = _client(args, root)
+    issue_numbers: dict[int, int | None] = {}
+    for pull_number in pull_numbers:
+        issue_number = None
+        path = draft_path(workspace, pull_number)
+        if path.is_file():
+            with contextlib.suppress(AgentReviewError):
+                issue_number = load_draft(workspace, pull_number)["pull"].get("issue_number")
+        issue_numbers[pull_number] = issue_number
+
+    started = time.monotonic()
+    while True:
+        items = [
+            _classify_status(
+                client.status(pull_number, issue_number=issue_numbers[pull_number]),
+                next_poll_seconds=args.poll_seconds,
+            )
+            for pull_number in pull_numbers
+        ]
+        elapsed = time.monotonic() - started
+        all_terminal = all(item["terminal"] for item in items)
+        timed_out = args.wait and not all_terminal and elapsed >= args.timeout_seconds
+        if timed_out:
+            for item in items:
+                if not item["terminal"]:
+                    item.update(
+                        {
+                            "phase": "timeout",
+                            "terminal": True,
+                            "outcome": "timeout",
+                            "next_poll_seconds": None,
+                        }
+                    )
+        if all_terminal or timed_out or not args.wait:
+            phases: dict[str, int] = {}
+            compact_items = []
+            for item in items:
+                phase = str(item["phase"])
+                phases[phase] = phases.get(phase, 0) + 1
+                compact_items.append(
+                    {
+                        key: item.get(key)
+                        for key in (
+                            "pr",
+                            "issue",
+                            "phase",
+                            "terminal",
+                            "outcome",
+                            "last_transition_at",
+                            "next",
+                        )
+                        if item.get(key) is not None
+                    }
+                )
+            return project_fields(
+                {
+                    "prs": pull_numbers,
+                    "count": len(items),
+                    "terminal": all(item["terminal"] for item in items),
+                    "phases": phases,
+                    "waited_seconds": round(elapsed, 3),
+                    "items": compact_items,
+                },
+                _fields(args),
+            )
+        time.sleep(min(args.poll_seconds, max(0.0, args.timeout_seconds - elapsed)))
+
+
 def execute_review(args: argparse.Namespace) -> int:
     output_format = getattr(args, "format", "json")
     try:
@@ -1380,12 +1726,18 @@ def execute_review(args: argparse.Namespace) -> int:
             data = _answer_many(args, root, workspace)
         elif command == "check":
             data = _check(args, root, workspace)
+        elif command == "check-many":
+            data = _check_many(args, root, workspace)
         elif command == "decision":
             data = _decision(args, workspace)
         elif command == "submit":
             data = _submit(args, root, workspace)
+        elif command == "submit-many":
+            data = _submit_many(args, root, workspace)
         elif command == "status":
             data = _status(args, root, workspace)
+        elif command == "status-many":
+            data = _status_many(args, root, workspace)
         elif command == "retry":
             data = _retry(args, root)
         else:

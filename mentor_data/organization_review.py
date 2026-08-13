@@ -33,6 +33,7 @@ if TYPE_CHECKING:
 
 
 REVIEW_COMMENT_MARKER = "<!-- mentor-data-organization-review:v1 -->"
+BATCH_SUBMIT_MARKER = "<!-- mentor-data-batch-submit:v1 -->"
 COMPACT_REVIEW_ENCODING = "shared_levels_v1"
 GITHUB_COMMENT_CHARACTER_LIMIT = 65_536
 REVIEW_BRANCH_PATTERN = re.compile(r"^batch/issue-(?P<issue>[1-9][0-9]*)$")
@@ -701,6 +702,8 @@ def _parse_review_comment_payload(body: str) -> dict[str, Any]:
     if not normalized_body.startswith(REVIEW_COMMENT_MARKER):
         raise SubmissionError("评论不是机构审核指令")
     remainder = normalized_body[len(REVIEW_COMMENT_MARKER) :].strip()
+    if remainder.startswith(BATCH_SUBMIT_MARKER):
+        remainder = remainder[len(BATCH_SUBMIT_MARKER) :].strip()
     if not remainder.startswith("```json\n") or not remainder.endswith("```"):
         raise SubmissionError("机构审核评论必须包含唯一的 JSON 代码块")
     payload = remainder[len("```json\n") : -len("```")].strip()

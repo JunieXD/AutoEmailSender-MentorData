@@ -13,7 +13,8 @@ Use the repository's `mentor-data review` CLI as the source of truth. Start with
 - Do not open, crawl, or verify mentor pages unless the user explicitly requests content verification.
 - Treat source-domain validation performed by the trusted backend as a structural intake check, not an instruction to inspect page contents.
 - Focus on institution normalization, organization-tree placement, conflicts already exposed by the review manifest, and safe intake.
-- Process one PR at a time. Do not plan or submit another PR until the current PR reaches the requested stopping point.
+- Use single-PR mode for isolated work and batch mode when the user asks for a consolidated review.
+  In batch mode, keep a separate current draft, decision, and complete preflight for every PR.
 
 ## Collaborate with the user
 
@@ -34,11 +35,16 @@ Use the repository's `mentor-data review` CLI as the source of truth. Start with
 8. Run the full preflight and show every path normalization, organization create, update, rename,
    merge, official URL, and approved-domain change before any formal submission.
 
+For a consolidated review, plan every PR first, resolve deterministic items, and present all
+remaining ambiguities together. Group the summary by PR, then render each PR's institution changes
+as its own nested tree. Never use one PR's preflight as evidence that another PR is safe.
+
 Render organization changes as a nested Markdown tree that preserves the real hierarchy:
 university, then school or institute, then department, center, or laboratory. Indent every child
 below its parent in both the planning preview and the final pre-submit summary; never flatten nodes
 from different levels into one list. Keep row counts and domain or URL changes on the applicable
-node.
+node. In a multi-PR summary, make the PR heading the outer level and restart the institution tree
+under it.
 
 Use CLI filters, IDs, field projection, and organization search to keep context small. Read a full group or question only when its summary is insufficient.
 
@@ -46,11 +52,17 @@ Use CLI filters, IDs, field projection, and organization search to keep context 
 
 - Treat a marked organization-review PR comment as final approval because it immediately triggers the trusted promotion queue.
 - Never run `review submit` without explicit authorization in the current conversation.
+- For `submit-many`, require one explicit authorization that lists every PR number. The confirmed
+  ordered PR list must exactly match the checked list; adding, omitting, deduplicating, or reordering
+  PRs requires renewed authorization.
 - Do not infer submission authority from permission to inspect, plan, answer, or preflight.
 - Do not directly edit proposal JSON, the organization registry, the PR branch, Draft state, or merge state.
 - Do not use `gh pr ready` or `gh pr merge`; let the existing trusted queue apply, finalize, and merge the review.
 - If the CLI reports a stale PR or manifest, stop using the old draft, re-plan the current version, and surface any decisions that need confirmation again.
 - After submission, run `review status --wait`; let the CLI poll until publication and source-Issue
   cleanup reach a terminal outcome instead of sleeping or manually polling.
+- After a batch submission, use the CLI's batch status command. The trusted queue may merge the
+  selected PRs sequentially in one runner and publish once afterward, but completion still requires
+  checking every PR and every source Issue.
 
 When a command fails, follow its structured `error.next` guidance. Do not bypass a guard by constructing a review comment outside the CLI.

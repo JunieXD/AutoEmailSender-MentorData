@@ -23,6 +23,7 @@ from .internal_pulls import (
 )
 from .io_utils import load_json, write_json_atomic
 from .organization_review import (
+    BATCH_SUBMIT_MARKER,
     REVIEW_COMMENT_MARKER,
     TRUSTED_REVIEW_ASSOCIATIONS,
     ReviewComment,
@@ -129,6 +130,7 @@ class PromotionQueue:
         repository: str,
         include_attention: bool = False,
         pull_number: int | None = None,
+        pull_numbers: tuple[int, ...] | None = None,
         max_attempts: int = 3,
         sleeper: Callable[[float], None] = time.sleep,
         runner: Callable[..., subprocess.CompletedProcess] = subprocess.run,
@@ -140,25 +142,52 @@ class PromotionQueue:
         self.include_attention = include_attention
         if pull_number is not None and pull_number <= 0:
             raise ValueError("PR 编号必须大于零")
+        if pull_number is not None and pull_numbers is not None:
+            raise ValueError("单个 PR 与批量 PR 白名单不能同时设置")
+        if pull_numbers is not None and (
+            not pull_numbers
+            or any(item <= 0 for item in pull_numbers)
+            or len(pull_numbers) != len(set(pull_numbers))
+        ):
+            raise ValueError("批量 PR 白名单必须是无重复的正整数")
         if max_attempts < 1 or max_attempts > 5:
             raise ValueError("promotion 重试次数必须在 1 到 5 之间")
         self.pull_number = pull_number
+        self.pull_numbers = pull_numbers
         self.max_attempts = max_attempts
         self.sleeper = sleeper
         self.runner = runner
 
     def run(self) -> PromotionSummary:
         pulls = self._list_open_pulls()
-        selected_pulls = [
-            item
-            for item in pulls
-            if self.pull_number is None or item.get("number") == self.pull_number
-        ]
+        missing_pull_numbers: list[int] = []
+        if self.pull_numbers is not None:
+            by_number = {item.get("number"): item for item in pulls}
+            selected_pulls = [
+                by_number[number] for number in self.pull_numbers if number in by_number
+            ]
+            missing_pull_numbers = [
+                number for number in self.pull_numbers if number not in by_number
+            ]
+        else:
+            selected_pulls = [
+                item
+                for item in pulls
+                if self.pull_number is None or item.get("number") == self.pull_number
+            ]
         merged = 0
-        failed = 0
+        failed = len(missing_pull_numbers)
         skipped = 0
-        retryable = 0
-        results: list[dict[str, Any]] = []
+        retryable = len(missing_pull_numbers)
+        results: list[dict[str, Any]] = [
+            {
+                "pr": number,
+                "status": "retryable",
+                "attempts": 0,
+                "error": "显式选择的 PR 不在开放队列中",
+            }
+            for number in missing_pull_numbers
+        ]
         for pull_payload in selected_pulls:
             labels = {
                 item.get("name")
@@ -239,7 +268,7 @@ class PromotionQueue:
                 )
                 print(f"Transient promotion failure for PR #{pull.number}: {error}")
         return PromotionSummary(
-            scanned=len(selected_pulls),
+            scanned=len(selected_pulls) + len(missing_pull_numbers),
             merged=merged,
             failed=failed,
             skipped=skipped,
@@ -395,12 +424,23 @@ class PromotionQueue:
         return sorted(pulls, key=lambda item: item["number"])
 
     def _is_ready(self, pull: InternalPull) -> bool:
+        if pull.kind == "batch":
+            comment = self._latest_batch_review_comment_payload(pull)
+            deferred = comment is not None and BATCH_SUBMIT_MARKER in str(
+                comment.get("body") or ""
+            )
+            explicitly_selected = pull.number == self.pull_number or (
+                self.pull_numbers is not None and pull.number in self.pull_numbers
+            )
+            if deferred and not explicitly_selected:
+                return False
         if not pull.draft:
             return True
         if pull.status_label != "status:manual-review":
             return False
         if pull.kind == "batch":
-            return self._latest_batch_review_comment(pull, required=False) is not None
+            comment = comment or self._latest_batch_review_comment_payload(pull)
+            return comment is not None
         if pull.kind == "report":
             return self._latest_report_review_comment(pull, required=False) is not None
         return False
@@ -750,6 +790,21 @@ class PromotionQueue:
         *,
         required: bool,
     ) -> ReviewComment | None:
+        comment = self._latest_batch_review_comment_payload(pull)
+        if comment is None:
+            if required:
+                raise SubmissionError("批量投稿尚未提交有效的机构审核结果")
+            return None
+        event = {"issue": {"number": pull.number, "pull_request": {}}, "comment": comment}
+        with tempfile.TemporaryDirectory(prefix="mentor-data-review-comment-") as temporary:
+            event_path = Path(temporary) / "event.json"
+            event_path.write_text(json.dumps(event, ensure_ascii=False), encoding="utf-8")
+            return load_review_comment(self.root, event_path)
+
+    def _latest_batch_review_comment_payload(
+        self,
+        pull: InternalPull,
+    ) -> dict[str, Any] | None:
         comments = self._gh_paginated_list(
             f"repos/{self.repository}/issues/{pull.number}/comments?per_page=100"
         )
@@ -760,16 +815,7 @@ class PromotionQueue:
             and str(item.get("body") or "").startswith(REVIEW_COMMENT_MARKER)
             and item.get("author_association") in TRUSTED_REVIEW_ASSOCIATIONS
         ]
-        if not candidates:
-            if required:
-                raise SubmissionError("批量投稿尚未提交有效的机构审核结果")
-            return None
-        comment = candidates[-1]
-        event = {"issue": {"number": pull.number, "pull_request": {}}, "comment": comment}
-        with tempfile.TemporaryDirectory(prefix="mentor-data-review-comment-") as temporary:
-            event_path = Path(temporary) / "event.json"
-            event_path.write_text(json.dumps(event, ensure_ascii=False), encoding="utf-8")
-            return load_review_comment(self.root, event_path)
+        return candidates[-1] if candidates else None
 
     def _latest_report_review_comment(
         self,

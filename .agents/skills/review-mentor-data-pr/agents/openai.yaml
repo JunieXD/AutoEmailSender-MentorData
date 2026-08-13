@@ -1,4 +1,4 @@
 interface:
   display_name: "社区导师投稿审核"
   short_description: "人机协作审核社区导师投稿的机构规范化、归属决策与安全入库流程"
-  default_prompt: "Use $review-mentor-data-pr to review one MentorData batch PR with human decisions for ambiguous organizations."
+  default_prompt: "Use $review-mentor-data-pr to review one or more MentorData PRs, escalating only ambiguous organization decisions."
