@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fc0c253572ca635f132e"
+      ],
+      "ended_at": null,
+      "id": "aff_13a0223840c9cafcba99",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:53Z",
+      "organization_id": "org_auto_0cba6afeee577dcf5a3a",
+      "source_url": "https://faculty.xidian.edu.cn/YTH/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fc0c253572ca635f132e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_13a0223840c9cafcba99",
+      "claim_ids": [
+        "claim_fc0c253572ca635f132e"
+      ],
+      "is_primary": true,
+      "normalized_value": "thyan@mail.xidian.edu.cn",
+      "observed_at": "2026-08-11T13:34:53Z",
+      "source_url": "https://faculty.xidian.edu.cn/YTH/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "thyan@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fc0c253572ca635f132e"
+    ],
+    "email": [
+      "claim_fc0c253572ca635f132e"
+    ],
+    "name": [
+      "claim_fc0c253572ca635f132e"
+    ],
+    "profile_url": [
+      "claim_fc0c253572ca635f132e"
+    ],
+    "research_directions": [
+      "claim_fc0c253572ca635f132e"
+    ],
+    "status": [
+      "claim_fc0c253572ca635f132e"
+    ],
+    "title": [
+      "claim_fc0c253572ca635f132e"
+    ]
+  },
+  "id": "mentor_0ac2d62c94ad5cb709ea",
+  "last_verified_at": "2026-08-11T13:34:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fc0c253572ca635f132e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "严体华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_13a0223840c9cafcba99",
+      "claim_ids": [
+        "claim_fc0c253572ca635f132e"
+      ],
+      "observed_at": "2026-08-11T13:34:53Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YTH/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据、人工智能、新一代通信技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:53Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YTH/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:53Z"
+}
