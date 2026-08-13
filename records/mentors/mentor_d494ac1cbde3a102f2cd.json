@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9e23a5125e723f996f34"
+      ],
+      "ended_at": null,
+      "id": "aff_90d888f435bd6693ee52",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_76b338d5dc65fb558099",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11963.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_9e23a5125e723f996f34"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_90d888f435bd6693ee52",
+      "claim_ids": [
+        "claim_9e23a5125e723f996f34"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunm@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11963.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sunm@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9e23a5125e723f996f34"
+    ],
+    "email": [
+      "claim_9e23a5125e723f996f34"
+    ],
+    "name": [
+      "claim_9e23a5125e723f996f34"
+    ],
+    "profile_url": [
+      "claim_9e23a5125e723f996f34"
+    ],
+    "status": [
+      "claim_9e23a5125e723f996f34"
+    ]
+  },
+  "id": "mentor_d494ac1cbde3a102f2cd",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9e23a5125e723f996f34"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_90d888f435bd6693ee52",
+      "claim_ids": [
+        "claim_9e23a5125e723f996f34"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11963.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11963.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:14Z"
+}

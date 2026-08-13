@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_841a5fe86b80da4979a8"
+      ],
+      "ended_at": null,
+      "id": "aff_1d72d5feafb032818864",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10962.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_841a5fe86b80da4979a8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1d72d5feafb032818864",
+      "claim_ids": [
+        "claim_841a5fe86b80da4979a8"
+      ],
+      "is_primary": true,
+      "normalized_value": "jjl@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10962.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jjl@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_841a5fe86b80da4979a8"
+    ],
+    "email": [
+      "claim_841a5fe86b80da4979a8"
+    ],
+    "name": [
+      "claim_841a5fe86b80da4979a8"
+    ],
+    "profile_url": [
+      "claim_841a5fe86b80da4979a8"
+    ],
+    "recent_papers": [
+      "claim_841a5fe86b80da4979a8"
+    ],
+    "research_directions": [
+      "claim_841a5fe86b80da4979a8"
+    ],
+    "status": [
+      "claim_841a5fe86b80da4979a8"
+    ],
+    "title": [
+      "claim_841a5fe86b80da4979a8"
+    ]
+  },
+  "id": "mentor_936cf73359761d956f23",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_841a5fe86b80da4979a8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李晶晶"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1d72d5feafb032818864",
+      "claim_ids": [
+        "claim_841a5fe86b80da4979a8"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/10962.htm"
+    }
+  ],
+  "recent_papers": [
+    "Maximum Density Divergence for Domain Adaptation.",
+    "Faster Domain Adaptation Networks, IEEE Transactions on Knowledge and Data Engineering (TKDE), 2021 (CCF A)",
+    "Leveraging the invariant side of generative zero-shot learning. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pp. 7402-7411. 2019.",
+    "From zero-shot learning to cold-start recommendation. In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI), vol. 33, pp. 4189-4196. 2019.",
+    "Alleviating Feature Confusion for Generative Zero-shot Learning. In Proceedings of the 27th ACM International Conference on Multimedia (ACM MM), pp. 1587-1595. 2019.",
+    "Cycle-consistent Conditional Adversarial Transfer Networks. In Proceedings of the 27th ACM International Conference on Multimedia (ACM MM), pp. 747-755. 2019.",
+    "Learning Modality-Invariant Latent Representations for Generalized Zero-shot Learning, ACM Multimedia (ACM MM) 2020, CCF A.",
+    "Investigating the Bilateral Connections in Generative Zero-shot Learning, IEEE Transactions on Cybernetics (TCYB), 2021."
+  ],
+  "research_directions": [
+    "机器学习、迁移学习、小样本学习、多媒体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/10962.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

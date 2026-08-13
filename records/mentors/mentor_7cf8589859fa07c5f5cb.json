@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cb567e1af00703152a73"
+      ],
+      "ended_at": null,
+      "id": "aff_ac9d9cac1cd9e9e3b693",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11354.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cb567e1af00703152a73"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ac9d9cac1cd9e9e3b693",
+      "claim_ids": [
+        "claim_cb567e1af00703152a73"
+      ],
+      "is_primary": true,
+      "normalized_value": "sjie@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11354.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sjie@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cb567e1af00703152a73"
+    ],
+    "email": [
+      "claim_cb567e1af00703152a73"
+    ],
+    "name": [
+      "claim_cb567e1af00703152a73"
+    ],
+    "profile_url": [
+      "claim_cb567e1af00703152a73"
+    ],
+    "recent_papers": [
+      "claim_cb567e1af00703152a73"
+    ],
+    "research_directions": [
+      "claim_cb567e1af00703152a73"
+    ],
+    "status": [
+      "claim_cb567e1af00703152a73"
+    ],
+    "title": [
+      "claim_cb567e1af00703152a73"
+    ]
+  },
+  "id": "mentor_7cf8589859fa07c5f5cb",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cb567e1af00703152a73"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "申杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ac9d9cac1cd9e9e3b693",
+      "claim_ids": [
+        "claim_cb567e1af00703152a73"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11354.htm"
+    }
+  ],
+  "recent_papers": [
+    "Deep learning-based object identification with instance segmentation and pseudo-LiDAR point cloud for work zone safety",
+    "Detecting safety helmet wearing on construction sites with bounding-box regression and deep transfer learning",
+    "A convolutional neural‐network‐based pedestrian counting model for various crowded scenes",
+    "A Universal Application Storage System Based on Smart Card",
+    "A Context-Aware Mobile Web Middleware for Service of Surveillance Video with Privacy",
+    "A Secure Element General Access Component for Mobile Payment",
+    "Handbook of Augmented Reality",
+    "Invariant-Based Augmented Reality on Mobile Phones"
+  ],
+  "research_directions": [
+    "人工智能、深度学习、增强现实、虚拟现实、视频通讯"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11354.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3930758eec84c266a3ff"
+      ],
+      "ended_at": null,
+      "id": "aff_95d79ac73c489520aa62",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15386.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3930758eec84c266a3ff"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_95d79ac73c489520aa62",
+      "claim_ids": [
+        "claim_3930758eec84c266a3ff"
+      ],
+      "is_primary": true,
+      "normalized_value": "dongxiao.liu@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15386.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dongxiao.liu@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3930758eec84c266a3ff"
+    ],
+    "email": [
+      "claim_3930758eec84c266a3ff"
+    ],
+    "name": [
+      "claim_3930758eec84c266a3ff"
+    ],
+    "profile_url": [
+      "claim_3930758eec84c266a3ff"
+    ],
+    "recent_papers": [
+      "claim_3930758eec84c266a3ff"
+    ],
+    "research_directions": [
+      "claim_3930758eec84c266a3ff"
+    ],
+    "status": [
+      "claim_3930758eec84c266a3ff"
+    ],
+    "title": [
+      "claim_3930758eec84c266a3ff"
+    ]
+  },
+  "id": "mentor_7a12d3e6380e1986e54f",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3930758eec84c266a3ff"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘栋骁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_95d79ac73c489520aa62",
+      "claim_ids": [
+        "claim_3930758eec84c266a3ff"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/15386.htm"
+    }
+  ],
+  "recent_papers": [
+    "Blockchain-cloud transparent data marketing: Consortium regulation and fairness",
+    "Blockchain-based collaborative credential management for anonymous authentication in SAGVN",
+    "Authenticated and prunable dictionary for blockchain-based VNF management",
+    "Data Protection: Privacy-preserving Data Collection with Validation"
+  ],
+  "research_directions": [
+    "数据安全、通信网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/15386.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

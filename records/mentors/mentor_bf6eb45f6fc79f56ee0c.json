@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b0ce16ef8acae4944d5c"
+      ],
+      "ended_at": null,
+      "id": "aff_a6a64c4c22d2e386a4c1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/17829.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_b0ce16ef8acae4944d5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a6a64c4c22d2e386a4c1",
+      "claim_ids": [
+        "claim_b0ce16ef8acae4944d5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "szhang94@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/17829.htm",
+      "status": "current",
+      "type": "email",
+      "value": "szhang94@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b0ce16ef8acae4944d5c"
+    ],
+    "email": [
+      "claim_b0ce16ef8acae4944d5c"
+    ],
+    "name": [
+      "claim_b0ce16ef8acae4944d5c"
+    ],
+    "profile_url": [
+      "claim_b0ce16ef8acae4944d5c"
+    ],
+    "recent_papers": [
+      "claim_b0ce16ef8acae4944d5c"
+    ],
+    "research_directions": [
+      "claim_b0ce16ef8acae4944d5c"
+    ],
+    "status": [
+      "claim_b0ce16ef8acae4944d5c"
+    ],
+    "title": [
+      "claim_b0ce16ef8acae4944d5c"
+    ]
+  },
+  "id": "mentor_bf6eb45f6fc79f56ee0c",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b0ce16ef8acae4944d5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张少帅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a6a64c4c22d2e386a4c1",
+      "claim_ids": [
+        "claim_b0ce16ef8acae4944d5c"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/17829.htm"
+    }
+  ],
+  "recent_papers": [
+    "High Accuracy Matrix Computations on Neural Engines: A Study of QR Factorization and its Applications",
+    "Fast Symmetric Eigenvalue Decomposition via WY Representation on Tensor Core",
+    "Rethinking Back Transformation in 2-stage Eigenvalue Decomposition on Heterogeneous Architectures",
+    "Improving Tridiagonalization Performance on GPU Architectures",
+    "High Performance Householder QR Factorization on Emerging GPU Architectures Using Tensor Cores"
+  ],
+  "research_directions": [
+    "高性能计算、数值代数"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/17829.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

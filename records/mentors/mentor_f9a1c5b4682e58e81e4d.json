@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8438eccb6dbca7c05fc9"
+      ],
+      "ended_at": null,
+      "id": "aff_a719cf6a92293d7d90e0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11353.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8438eccb6dbca7c05fc9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a719cf6a92293d7d90e0",
+      "claim_ids": [
+        "claim_8438eccb6dbca7c05fc9"
+      ],
+      "is_primary": true,
+      "normalized_value": "mshou@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11353.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mshou@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8438eccb6dbca7c05fc9"
+    ],
+    "email": [
+      "claim_8438eccb6dbca7c05fc9"
+    ],
+    "name": [
+      "claim_8438eccb6dbca7c05fc9"
+    ],
+    "profile_url": [
+      "claim_8438eccb6dbca7c05fc9"
+    ],
+    "research_directions": [
+      "claim_8438eccb6dbca7c05fc9"
+    ],
+    "status": [
+      "claim_8438eccb6dbca7c05fc9"
+    ],
+    "title": [
+      "claim_8438eccb6dbca7c05fc9"
+    ]
+  },
+  "id": "mentor_f9a1c5b4682e58e81e4d",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8438eccb6dbca7c05fc9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "侯孟书"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a719cf6a92293d7d90e0",
+      "claim_ids": [
+        "claim_8438eccb6dbca7c05fc9"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11353.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能数据库、智能存储、大语言模型、大数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11353.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

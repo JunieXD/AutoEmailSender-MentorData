@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4c8a382b4caf436a6fb2"
+      ],
+      "ended_at": null,
+      "id": "aff_c381ba68e929110e7b21",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15390.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4c8a382b4caf436a6fb2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c381ba68e929110e7b21",
+      "claim_ids": [
+        "claim_4c8a382b4caf436a6fb2"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangpeng8619@gmail.com",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15390.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangpeng8619@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4c8a382b4caf436a6fb2"
+    ],
+    "email": [
+      "claim_4c8a382b4caf436a6fb2"
+    ],
+    "name": [
+      "claim_4c8a382b4caf436a6fb2"
+    ],
+    "profile_url": [
+      "claim_4c8a382b4caf436a6fb2"
+    ],
+    "recent_papers": [
+      "claim_4c8a382b4caf436a6fb2"
+    ],
+    "research_directions": [
+      "claim_4c8a382b4caf436a6fb2"
+    ],
+    "status": [
+      "claim_4c8a382b4caf436a6fb2"
+    ],
+    "title": [
+      "claim_4c8a382b4caf436a6fb2"
+    ]
+  },
+  "id": "mentor_42cd2fef537a1d85c20c",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4c8a382b4caf436a6fb2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c381ba68e929110e7b21",
+      "claim_ids": [
+        "claim_4c8a382b4caf436a6fb2"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/15390.htm"
+    }
+  ],
+  "recent_papers": [
+    "Self-Supervised Node Representation Learning via Node-to-Neighborhood Alignment",
+    "Efficient Adaptation of Large Vision Transformer via Adapter Re-Composing",
+    "Attribute-Aware Deep Hashing with Self-Consistency for Large-Scale Fine-Grained Image Retrieval",
+    "Revisiting prototypical network for cross domain few-shot learning",
+    "Glocal energy-based learning for few-shot open-set recognition",
+    "Continual Referring Expression Comprehension via Dual Modular Memorization",
+    "Node Representation Learning in Graph via Node-to-Neighbourhood Mutual Information Maximization",
+    "Anisotropic Convolutional Neural Networks for RGB-D based Semantic Scene Completion"
+  ],
+  "research_directions": [
+    "计算机视觉、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/15390.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e36088cb6d60f0bacb8b"
+      ],
+      "ended_at": null,
+      "id": "aff_638d34e03198a1ec365f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11975.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e36088cb6d60f0bacb8b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_638d34e03198a1ec365f",
+      "claim_ids": [
+        "claim_e36088cb6d60f0bacb8b"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuyang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11975.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xuyang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e36088cb6d60f0bacb8b"
+    ],
+    "email": [
+      "claim_e36088cb6d60f0bacb8b"
+    ],
+    "name": [
+      "claim_e36088cb6d60f0bacb8b"
+    ],
+    "profile_url": [
+      "claim_e36088cb6d60f0bacb8b"
+    ],
+    "research_directions": [
+      "claim_e36088cb6d60f0bacb8b"
+    ],
+    "status": [
+      "claim_e36088cb6d60f0bacb8b"
+    ],
+    "title": [
+      "claim_e36088cb6d60f0bacb8b"
+    ]
+  },
+  "id": "mentor_b0a84cf260852e12cf71",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e36088cb6d60f0bacb8b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐杨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_638d34e03198a1ec365f",
+      "claim_ids": [
+        "claim_e36088cb6d60f0bacb8b"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11975.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能系统应用技术",
+    "分布式人工智能与多智能体系统",
+    "自主无人系统与群体协同",
+    "分布式智能信息处理与边缘计算技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11975.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

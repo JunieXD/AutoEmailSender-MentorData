@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b086f4d73d3625fd4efa"
+      ],
+      "ended_at": null,
+      "id": "aff_24d7e9781b51c3fff321",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11019.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b086f4d73d3625fd4efa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_24d7e9781b51c3fff321",
+      "claim_ids": [
+        "claim_b086f4d73d3625fd4efa"
+      ],
+      "is_primary": true,
+      "normalized_value": "qliu@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11019.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qliu@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b086f4d73d3625fd4efa"
+    ],
+    "email": [
+      "claim_b086f4d73d3625fd4efa"
+    ],
+    "name": [
+      "claim_b086f4d73d3625fd4efa"
+    ],
+    "profile_url": [
+      "claim_b086f4d73d3625fd4efa"
+    ],
+    "recent_papers": [
+      "claim_b086f4d73d3625fd4efa"
+    ],
+    "research_directions": [
+      "claim_b086f4d73d3625fd4efa"
+    ],
+    "status": [
+      "claim_b086f4d73d3625fd4efa"
+    ],
+    "title": [
+      "claim_b086f4d73d3625fd4efa"
+    ]
+  },
+  "id": "mentor_2a460c0fbaa916295d27",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b086f4d73d3625fd4efa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘峤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_24d7e9781b51c3fff321",
+      "claim_ids": [
+        "claim_b086f4d73d3625fd4efa"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11019.htm"
+    }
+  ],
+  "recent_papers": [
+    "Relational Learning with Gated and Attentive Neighbor Aggregator for Few-Shot Knowledge Graph Completion",
+    "Forecasting the Evolution of Hydropower Generation",
+    "Content attention model for aspect based sentiment analysis",
+    "STAMP: Short-term attention/memory priority model for session-based recommendation",
+    "Hierarchical random walk inference in knowledge graphs",
+    "知识图谱构建技术综述"
+  ],
+  "research_directions": [
+    "统计机器学习、深度学习、数据挖掘、人工智能算法应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11019.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

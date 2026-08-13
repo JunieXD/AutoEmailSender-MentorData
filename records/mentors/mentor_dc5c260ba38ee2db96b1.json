@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ba05f60125edadc1495d"
+      ],
+      "ended_at": null,
+      "id": "aff_07cb18cff43b9727944a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10959.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ba05f60125edadc1495d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_07cb18cff43b9727944a",
+      "claim_ids": [
+        "claim_ba05f60125edadc1495d"
+      ],
+      "is_primary": true,
+      "normalized_value": "cd_zhenglh@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10959.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cd_zhenglh@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ba05f60125edadc1495d"
+    ],
+    "email": [
+      "claim_ba05f60125edadc1495d"
+    ],
+    "name": [
+      "claim_ba05f60125edadc1495d"
+    ],
+    "profile_url": [
+      "claim_ba05f60125edadc1495d"
+    ],
+    "recent_papers": [
+      "claim_ba05f60125edadc1495d"
+    ],
+    "research_directions": [
+      "claim_ba05f60125edadc1495d"
+    ],
+    "status": [
+      "claim_ba05f60125edadc1495d"
+    ],
+    "title": [
+      "claim_ba05f60125edadc1495d"
+    ]
+  },
+  "id": "mentor_dc5c260ba38ee2db96b1",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ba05f60125edadc1495d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑莉华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_07cb18cff43b9727944a",
+      "claim_ids": [
+        "claim_ba05f60125edadc1495d"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/10959.htm"
+    }
+  ],
+  "recent_papers": [
+    "郑莉华,曾雪,基于Map/Reduce的H.264/avc并行视频编码",
+    "L.H Zheng,L.T,R Joint RD Model for H.264/AVC Intra frame Rate Control",
+    "L.H Zheng,L.T,Rate Control Model Analyse and Coding Complexity Optimized Selection for H.264 Video Coding",
+    "L.H Zheng, L.Tian,Wu Yue. A Rate Control Scheme for Distributed High Performance Video Coding in Cloud",
+    "L.H Zheng, S.Wu. An infrastructure for web services migration in clouds",
+    "L.H Zheng, Y.Wu. Rate control scheme for H.264/AVC video encoding"
+  ],
+  "research_directions": [
+    "图像/视频处理、云/大数据服务迁移、并行处理及获取最优化技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/10959.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

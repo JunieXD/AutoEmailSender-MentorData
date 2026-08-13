@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c51090389895aba7ec18"
+      ],
+      "ended_at": null,
+      "id": "aff_de15c5f6036e50c4dbef",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11212.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c51090389895aba7ec18"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_de15c5f6036e50c4dbef",
+      "claim_ids": [
+        "claim_c51090389895aba7ec18"
+      ],
+      "is_primary": true,
+      "normalized_value": "liwen@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11212.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liwen@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c51090389895aba7ec18"
+    ],
+    "email": [
+      "claim_c51090389895aba7ec18"
+    ],
+    "name": [
+      "claim_c51090389895aba7ec18"
+    ],
+    "profile_url": [
+      "claim_c51090389895aba7ec18"
+    ],
+    "recent_papers": [
+      "claim_c51090389895aba7ec18"
+    ],
+    "research_directions": [
+      "claim_c51090389895aba7ec18"
+    ],
+    "status": [
+      "claim_c51090389895aba7ec18"
+    ],
+    "title": [
+      "claim_c51090389895aba7ec18"
+    ]
+  },
+  "id": "mentor_d203ccc7a326e6279f1f",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c51090389895aba7ec18"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_de15c5f6036e50c4dbef",
+      "claim_ids": [
+        "claim_c51090389895aba7ec18"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11212.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yuhua Chen, Haoran Wang, Wen Li*, Christos Sakaridis, Dengxin Dai and Luc Van Gool,\"Scale-aware Domain Adaptive Faster R-CNN\",International Journal on Computer Vision (IJCV),2021.",
+    "Rui Gong, Dengxin Dai, Yuhua Chen, Wen Li and Luc Van Goo,\"Analogical Image Translation for Fog Generation\",AAAI Conference on Artificial Intelligence (AAAI),2021.",
+    "Yawei Li, Wen Li, Martin Danelljan, Kai Zhang, Shuhang Gu, Luc Van Gool and Radu Timofte,\"The Heterogeneity Hypothesis: Finding Layer-Wise Dissimilated Network Architecture\",Conference on Computer Vision and Pattern Recognition (CVPR),2021.",
+    "Yuan Tian, Qin Wang, Zhiwu Huang, Wen Li, Dengxin Dai, Minghao Yang, Jun Wang and Olga Fink,\"Off-Policy Reinforcement Learning For Efficient And Effective Gan Architecture Search\", European Conference on Computer Vision (ECCV),2020,175-192.",
+    "Haoliang Li, Wen Li and Shiqi Wang,\"Discovering and incorporating latent target-domains for domain adaptation\",Pattern Recognition,2020,108.",
+    "Changqing Zhang, Huazhu Fu, Jing Wang, Wen Li, Xiaochun Cao and Qinghua Hu,\"Tensorized Multi-view Subspace Representation Learning\",International Journal of Computer Vision,2020,128(8-9),2344-2361.",
+    "Yuhua Chen, Wen Li, Xiaoran Chen and Luc Van Gool,\"Learning Semantic Segmentation from Synthetic Data: A Geometrically Guided Input-Output Adaptation Approach\",IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR),2019,1841-1850.",
+    "Weichen Zhang, Dong Xu, Wanli Ouyang and Wen Li,\"Self-paced collaborative and adversarial network for unsupervised domain adaptation\",IEEE Transactions on Pattern Analysis and Machine Intelligence,2019."
+  ],
+  "research_directions": [
+    "计算机视觉与机器学习,有限监督下的机器学习问题和计算机视觉应用,涉及图像分类、视频识别、目标检测、语义分割、图像转换、图像生成等计算机视觉任务和领域适应、迁移学习、弱监督学习、半监督学习等机器学习理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11212.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

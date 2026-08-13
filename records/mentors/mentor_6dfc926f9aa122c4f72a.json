@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a1ae29dc53f6d57949ab"
+      ],
+      "ended_at": null,
+      "id": "aff_980262cee07e3f4e499f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10956.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a1ae29dc53f6d57949ab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_980262cee07e3f4e499f",
+      "claim_ids": [
+        "claim_a1ae29dc53f6d57949ab"
+      ],
+      "is_primary": true,
+      "normalized_value": "zheng.chang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10956.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zheng.chang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a1ae29dc53f6d57949ab"
+    ],
+    "email": [
+      "claim_a1ae29dc53f6d57949ab"
+    ],
+    "name": [
+      "claim_a1ae29dc53f6d57949ab"
+    ],
+    "profile_url": [
+      "claim_a1ae29dc53f6d57949ab"
+    ],
+    "recent_papers": [
+      "claim_a1ae29dc53f6d57949ab"
+    ],
+    "research_directions": [
+      "claim_a1ae29dc53f6d57949ab"
+    ],
+    "status": [
+      "claim_a1ae29dc53f6d57949ab"
+    ],
+    "title": [
+      "claim_a1ae29dc53f6d57949ab"
+    ]
+  },
+  "id": "mentor_6dfc926f9aa122c4f72a",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a1ae29dc53f6d57949ab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "常征"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_980262cee07e3f4e499f",
+      "claim_ids": [
+        "claim_a1ae29dc53f6d57949ab"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/10956.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zheng Chang, et al, \"Blockchain-Empowered Drone Network: Architecture, Features, and Future\" IEEE Network, vol. 35, no. 1, pp. 86-93, March 2021",
+    "Zheng Chang, W. Guo, X. Guo, Z. Zhou and T. Ristaniemi, \"Incentive Mechanism for Edge Computing-based Blockchain,\" IEEE Transactions on Industrial Informatics, vol. 16, no. 11, pp. 7105-7114, Nov. 2020.",
+    "Zheng Chang, D. Zhang, T. Hamalainen, Z. Han and T. Ristaniemi, \"Incentive Mechanism for Resource Allocation in Wireless Virtualized Networks with Multiple Infrastructure Providers,\" IEEE Transactions on Mobile Computing, vol. 19, no. 1, pp. 103-115. Jan. 2020.",
+    "F. Jameel, Zheng Chang, J. Huang and T. Ristaniemi, \"Internet of Autonomous Vehicles: Architecture, Features, and Socio-Technological Challenges,\" IEEE Wireless Communications, vol. 26, no. 4, pp. 21-29, August 2019.",
+    "A. Samanta, and Zheng Chang, \"Adaptive Service Offloading for Revenue Maximization in Mobile Edge Computing with Delay-Constraint,\" IEEE Internet of Things Journal, vol. 6, no. 2, pp. 3864-3872, April 2019."
+  ],
+  "research_directions": [
+    "无线网络、边缘计算、物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/10956.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

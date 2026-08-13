@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a151fb8f73f6ee9273eb"
+      ],
+      "ended_at": null,
+      "id": "aff_87721e6a58dba2ed5103",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/17839.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a151fb8f73f6ee9273eb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_87721e6a58dba2ed5103",
+      "claim_ids": [
+        "claim_a151fb8f73f6ee9273eb"
+      ],
+      "is_primary": true,
+      "normalized_value": "jianfei.sun@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/17839.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jianfei.sun@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a151fb8f73f6ee9273eb"
+    ],
+    "email": [
+      "claim_a151fb8f73f6ee9273eb"
+    ],
+    "name": [
+      "claim_a151fb8f73f6ee9273eb"
+    ],
+    "profile_url": [
+      "claim_a151fb8f73f6ee9273eb"
+    ],
+    "recent_papers": [
+      "claim_a151fb8f73f6ee9273eb"
+    ],
+    "research_directions": [
+      "claim_a151fb8f73f6ee9273eb"
+    ],
+    "status": [
+      "claim_a151fb8f73f6ee9273eb"
+    ],
+    "title": [
+      "claim_a151fb8f73f6ee9273eb"
+    ]
+  },
+  "id": "mentor_193448a6b2dc00ab5fee",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a151fb8f73f6ee9273eb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙剑飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_87721e6a58dba2ed5103",
+      "claim_ids": [
+        "claim_a151fb8f73f6ee9273eb"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/17839.htm"
+    }
+  ],
+  "recent_papers": [
+    "Sanitizable Cross-domain Access Control with Policy-driven Dynamic Authorization",
+    "Forward-Secure Hierarchical Delegable Signature for Smart Homes",
+    "Robust Multimodal Fake News Detection via Adversarial Learning and GAN",
+    "Privacy-preserving Fine-grained Data Sharing with Dynamic Service for the Cloud-edge IoT",
+    "An Efficient Privacy-aware Split Learning Framework for Satellite Communications",
+    "AuditPCH: Auditable Payment Channel Hub with Privacy Protection",
+    "PkT-SIN: Keyed-Verification Anonymous Credential with Periodick-Time Authentication for Space Information Networks",
+    "Joint Client-and-Sample Selection for Federated Learning via Bi-level Optimization"
+  ],
+  "research_directions": [
+    "网络与系统安全、人工智能安全、隐私保护、应用密码学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/17839.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

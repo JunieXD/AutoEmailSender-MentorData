@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_070c3e2e2b15ef9f3034"
+      ],
+      "ended_at": null,
+      "id": "aff_0902a90f6d99fd6001f9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11029.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_070c3e2e2b15ef9f3034"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0902a90f6d99fd6001f9",
+      "claim_ids": [
+        "claim_070c3e2e2b15ef9f3034"
+      ],
+      "is_primary": true,
+      "normalized_value": "lingtian@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11029.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lingtian@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_070c3e2e2b15ef9f3034"
+    ],
+    "email": [
+      "claim_070c3e2e2b15ef9f3034"
+    ],
+    "name": [
+      "claim_070c3e2e2b15ef9f3034"
+    ],
+    "profile_url": [
+      "claim_070c3e2e2b15ef9f3034"
+    ],
+    "recent_papers": [
+      "claim_070c3e2e2b15ef9f3034"
+    ],
+    "research_directions": [
+      "claim_070c3e2e2b15ef9f3034"
+    ],
+    "status": [
+      "claim_070c3e2e2b15ef9f3034"
+    ],
+    "title": [
+      "claim_070c3e2e2b15ef9f3034"
+    ]
+  },
+  "id": "mentor_316136ae87a64c50b4c5",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_070c3e2e2b15ef9f3034"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田玲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0902a90f6d99fd6001f9",
+      "claim_ids": [
+        "claim_070c3e2e2b15ef9f3034"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11029.htm"
+    }
+  ],
+  "recent_papers": [
+    "Non-autoregressive diffusion-based temporal point processes for continuous-time long-term event prediction",
+    "PLEASING: Exploring the historical and potential events for temporal knowledge graph reasoning.",
+    "Intensity-free convolutional temporal point process: Incorporating local and global event contexts",
+    "Knowledge graph and knowledge reasoning: A systematic review",
+    "知识图谱综述——表示,构建,推理与知识超图理论",
+    "Structured Graph Learning for Clustering and Semi-Supervised Classification",
+    "Optimal contract-based mechanisms for online data trading markets",
+    "Video coding optimization for virtual reality 360-degree source"
+  ],
+  "research_directions": [
+    "人工智能、认知科学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11029.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

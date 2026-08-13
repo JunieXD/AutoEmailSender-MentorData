@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cd36a32b7f06d1986c76"
+      ],
+      "ended_at": null,
+      "id": "aff_08d4ef8128ed4a08fd88",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11529.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cd36a32b7f06d1986c76"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_08d4ef8128ed4a08fd88",
+      "claim_ids": [
+        "claim_cd36a32b7f06d1986c76"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujy@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11529.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liujy@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cd36a32b7f06d1986c76"
+    ],
+    "email": [
+      "claim_cd36a32b7f06d1986c76"
+    ],
+    "name": [
+      "claim_cd36a32b7f06d1986c76"
+    ],
+    "profile_url": [
+      "claim_cd36a32b7f06d1986c76"
+    ],
+    "recent_papers": [
+      "claim_cd36a32b7f06d1986c76"
+    ],
+    "research_directions": [
+      "claim_cd36a32b7f06d1986c76"
+    ],
+    "status": [
+      "claim_cd36a32b7f06d1986c76"
+    ],
+    "title": [
+      "claim_cd36a32b7f06d1986c76"
+    ]
+  },
+  "id": "mentor_0587e202f5c265cf7906",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cd36a32b7f06d1986c76"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘杰彦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_08d4ef8128ed4a08fd88",
+      "claim_ids": [
+        "claim_cd36a32b7f06d1986c76"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11529.htm"
+    }
+  ],
+  "recent_papers": [
+    "Liu, Jieyan; Li, Jingjing; Lu, Ke, Coupled local-global adaptation for multi-source transfer learning, Neurocomputing (SCI, JCR二区) , 275: 247~254, 2018",
+    "Jieyan Liu, Ao Ma, Mengmeng Jing . Combining Discriminant Embedding and Transfer Learning for Visual Tracking. Tenth International Conference on Graphics and Image Processing, 2018",
+    "Liu, Jieyan, Ma, Ao; Li, Jingjing, Lu, Ke, Low-Rank Representation with Graph Constraints for Robust Visual Tracking , IEICE Transactions on Information and Systems (SCI), E100D(6): 1325~1338, 2017",
+    "Jieyan Liu, Lubomir Bic, Haigang Gong, Siyu Zhan. Data collection for mobile crowdsensing in the presence of selfishness, EURASIP Journal on Wireless Communications and Networking (SCI), 82: 1~10, 2016",
+    "Mengmeng Jing, Jingjing Li, Ke Lu, Jieyan Liu, Zi Huang, Adaptive component embedding for unsupervised domain adaptation. ICME(CCF B), 2019"
+  ],
+  "research_directions": [
+    "迁移学习、深度学习等方法在识别上的应用基础研究",
+    "计算系统与网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11529.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

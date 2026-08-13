@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d576826def9589a24db4"
+      ],
+      "ended_at": null,
+      "id": "aff_757cd334f4ad5b7b990b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11373.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d576826def9589a24db4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_757cd334f4ad5b7b990b",
+      "claim_ids": [
+        "claim_d576826def9589a24db4"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangke@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11373.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huangke@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d576826def9589a24db4"
+    ],
+    "email": [
+      "claim_d576826def9589a24db4"
+    ],
+    "name": [
+      "claim_d576826def9589a24db4"
+    ],
+    "profile_url": [
+      "claim_d576826def9589a24db4"
+    ],
+    "recent_papers": [
+      "claim_d576826def9589a24db4"
+    ],
+    "research_directions": [
+      "claim_d576826def9589a24db4"
+    ],
+    "status": [
+      "claim_d576826def9589a24db4"
+    ],
+    "title": [
+      "claim_d576826def9589a24db4"
+    ]
+  },
+  "id": "mentor_732293408735117be863",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d576826def9589a24db4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄可"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_757cd334f4ad5b7b990b",
+      "claim_ids": [
+        "claim_d576826def9589a24db4"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11373.htm"
+    }
+  ],
+  "recent_papers": [
+    "Design and Analysis of Cryptographic Algorithms in Blockchain",
+    "Building Redactable Consortium Blockchain for Industrial Internet-of-Things",
+    "Achieving Intelligent Trust-Layer for IoT via Self-Redactable Blockchain",
+    "Bidirectional and Malleable Proof-of-Ownership for Large File in Cloud Storage",
+    "EVA: Efficient Versatile Auditing Scheme for IoT-Based Datamarket in Jointcloud",
+    "Building Blockchains with Secure and Practical Public-Key Cryptographic Algorithms: Background, Motivations and Example"
+  ],
+  "research_directions": [
+    "应用密码研究、区块链安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11373.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

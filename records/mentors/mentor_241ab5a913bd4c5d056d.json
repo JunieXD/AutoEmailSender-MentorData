@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4282db4d73c56c5806fa"
+      ],
+      "ended_at": null,
+      "id": "aff_a5db5b7a5b68d9285efe",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15383.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_4282db4d73c56c5806fa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a5db5b7a5b68d9285efe",
+      "claim_ids": [
+        "claim_4282db4d73c56c5806fa"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiangxu@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/15383.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiangxu@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4282db4d73c56c5806fa"
+    ],
+    "email": [
+      "claim_4282db4d73c56c5806fa"
+    ],
+    "name": [
+      "claim_4282db4d73c56c5806fa"
+    ],
+    "profile_url": [
+      "claim_4282db4d73c56c5806fa"
+    ],
+    "recent_papers": [
+      "claim_4282db4d73c56c5806fa"
+    ],
+    "research_directions": [
+      "claim_4282db4d73c56c5806fa"
+    ],
+    "status": [
+      "claim_4282db4d73c56c5806fa"
+    ],
+    "title": [
+      "claim_4282db4d73c56c5806fa"
+    ]
+  },
+  "id": "mentor_241ab5a913bd4c5d056d",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4282db4d73c56c5806fa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜徐"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a5db5b7a5b68d9285efe",
+      "claim_ids": [
+        "claim_4282db4d73c56c5806fa"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/15383.htm"
+    }
+  ],
+  "recent_papers": [
+    "Real-Time Scheduling and Analysis of Processing Chains on Multi-threaded Executor in ROS 2",
+    "Scheduling Parallel Real-Time Tasks on Virtual Processors",
+    "A Unified Blocking Analysis for Parallel Tasks With Spin Locks Under Global Fixed Priority Scheduling",
+    "Real-Time Scheduling of Parallel Task Graphs With Critical Sections Across Different Vertices",
+    "Virtually-Federated Scheduling of Parallel Real-Time Tasks"
+  ],
+  "research_directions": [
+    "嵌入式实时系统、CPS、嵌入式人工智能、ROS"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/15383.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

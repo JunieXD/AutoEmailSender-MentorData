@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5017fd6ceab88d263fba"
+      ],
+      "ended_at": null,
+      "id": "aff_df0c74414cc8906406af",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11925.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5017fd6ceab88d263fba"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_df0c74414cc8906406af",
+      "claim_ids": [
+        "claim_5017fd6ceab88d263fba"
+      ],
+      "is_primary": true,
+      "normalized_value": "wljuestc@sina.com",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11925.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wljuestc@sina.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5017fd6ceab88d263fba"
+    ],
+    "email": [
+      "claim_5017fd6ceab88d263fba"
+    ],
+    "name": [
+      "claim_5017fd6ceab88d263fba"
+    ],
+    "profile_url": [
+      "claim_5017fd6ceab88d263fba"
+    ],
+    "recent_papers": [
+      "claim_5017fd6ceab88d263fba"
+    ],
+    "research_directions": [
+      "claim_5017fd6ceab88d263fba"
+    ],
+    "status": [
+      "claim_5017fd6ceab88d263fba"
+    ],
+    "title": [
+      "claim_5017fd6ceab88d263fba"
+    ]
+  },
+  "id": "mentor_a23a9bc03e670bd00f0d",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5017fd6ceab88d263fba"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴立军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_df0c74414cc8906406af",
+      "claim_ids": [
+        "claim_5017fd6ceab88d263fba"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11925.htm"
+    }
+  ],
+  "recent_papers": [
+    "Lijun Wu. An I/O Efficient Approach for Detecting All Accepting Cycles. IEEE Transactions on Software Engineering(TSE), 2015.08.",
+    "Lijun Wu. An I/O Efficient Model Checking Algorithm for Large-Scale Systems. IEEE Transactions on VLSI systems. 2015.05.",
+    "Lijun Wu.A complete first-order temporal BDI logic for forest multi-agent systems. Knowledge-Based Systems.2012.03.",
+    "Lijun Wu. A Concurrent Dynamic Logic of Knowledge, Belief and Certainty for Multi-Agent Systems. Knowledge-Based Systems.2010.03."
+  ],
+  "research_directions": [
+    "人工智能、信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11925.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

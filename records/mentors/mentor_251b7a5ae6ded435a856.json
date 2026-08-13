@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_646cce48976347435769"
+      ],
+      "ended_at": null,
+      "id": "aff_15ef28bb3ee77feb8dd2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/12608.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_646cce48976347435769"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_15ef28bb3ee77feb8dd2",
+      "claim_ids": [
+        "claim_646cce48976347435769"
+      ],
+      "is_primary": true,
+      "normalized_value": "fagenli@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/12608.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fagenli@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_646cce48976347435769"
+    ],
+    "email": [
+      "claim_646cce48976347435769"
+    ],
+    "name": [
+      "claim_646cce48976347435769"
+    ],
+    "profile_url": [
+      "claim_646cce48976347435769"
+    ],
+    "recent_papers": [
+      "claim_646cce48976347435769"
+    ],
+    "research_directions": [
+      "claim_646cce48976347435769"
+    ],
+    "status": [
+      "claim_646cce48976347435769"
+    ],
+    "title": [
+      "claim_646cce48976347435769"
+    ]
+  },
+  "id": "mentor_251b7a5ae6ded435a856",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_646cce48976347435769"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李发根"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_15ef28bb3ee77feb8dd2",
+      "claim_ids": [
+        "claim_646cce48976347435769"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/12608.htm"
+    }
+  ],
+  "recent_papers": [
+    "Searchable public-key encryption with cryptographic reverse firewalls for cloud storage",
+    "An efficient privacy-aware authentication scheme with hierarchical access control for mobile cloud computing services",
+    "An efficient hybrid signcryption scheme with conditional privacy-preservation for heterogeneous vehicular communication in VANETs",
+    "Efficient signcryption with proxy re-encryption and its application in smart grid",
+    "Cost-effective and anonymous access control for wireless body area networks",
+    "Efficient certificateless access control for wireless body area networks",
+    "Efficient deniably authenticated encryption and its application to e-mail",
+    "Practical secure communication for integrating wireless sensor networks into the Internet of things"
+  ],
+  "research_directions": [
+    "密码学与信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/12608.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

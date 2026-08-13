@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b68749b8ddb0b07ca2f9"
+      ],
+      "ended_at": null,
+      "id": "aff_8af9a4fa3c7a9ae0de53",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_76b338d5dc65fb558099",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11943.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b68749b8ddb0b07ca2f9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8af9a4fa3c7a9ae0de53",
+      "claim_ids": [
+        "claim_b68749b8ddb0b07ca2f9"
+      ],
+      "is_primary": true,
+      "normalized_value": "haoyujie@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11943.htm",
+      "status": "current",
+      "type": "email",
+      "value": "haoyujie@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b68749b8ddb0b07ca2f9"
+    ],
+    "email": [
+      "claim_b68749b8ddb0b07ca2f9"
+    ],
+    "name": [
+      "claim_b68749b8ddb0b07ca2f9"
+    ],
+    "profile_url": [
+      "claim_b68749b8ddb0b07ca2f9"
+    ],
+    "status": [
+      "claim_b68749b8ddb0b07ca2f9"
+    ],
+    "title": [
+      "claim_b68749b8ddb0b07ca2f9"
+    ]
+  },
+  "id": "mentor_5be53afcfaccc5a294e5",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b68749b8ddb0b07ca2f9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郝玉洁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8af9a4fa3c7a9ae0de53",
+      "claim_ids": [
+        "claim_b68749b8ddb0b07ca2f9"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11943.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11943.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

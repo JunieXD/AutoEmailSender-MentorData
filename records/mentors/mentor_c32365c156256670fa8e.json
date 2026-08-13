@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a2abea23f576bbfa3cc8"
+      ],
+      "ended_at": null,
+      "id": "aff_70b05b8f49c77a6dea29",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/16701.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a2abea23f576bbfa3cc8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_70b05b8f49c77a6dea29",
+      "claim_ids": [
+        "claim_a2abea23f576bbfa3cc8"
+      ],
+      "is_primary": true,
+      "normalized_value": "jie.zou@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/16701.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jie.zou@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a2abea23f576bbfa3cc8"
+    ],
+    "email": [
+      "claim_a2abea23f576bbfa3cc8"
+    ],
+    "name": [
+      "claim_a2abea23f576bbfa3cc8"
+    ],
+    "profile_url": [
+      "claim_a2abea23f576bbfa3cc8"
+    ],
+    "research_directions": [
+      "claim_a2abea23f576bbfa3cc8"
+    ],
+    "status": [
+      "claim_a2abea23f576bbfa3cc8"
+    ],
+    "title": [
+      "claim_a2abea23f576bbfa3cc8"
+    ]
+  },
+  "id": "mentor_c32365c156256670fa8e",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a2abea23f576bbfa3cc8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邹杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_70b05b8f49c77a6dea29",
+      "claim_ids": [
+        "claim_a2abea23f576bbfa3cc8"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/16701.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信息检索、自然语言处理、推荐系统、多模态检索和推荐"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/16701.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

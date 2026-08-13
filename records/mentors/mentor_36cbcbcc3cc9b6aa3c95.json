@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_095e3f13d4caf3919558"
+      ],
+      "ended_at": null,
+      "id": "aff_03d8d44c5d72c076fcdc",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11988.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_095e3f13d4caf3919558"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_03d8d44c5d72c076fcdc",
+      "claim_ids": [
+        "claim_095e3f13d4caf3919558"
+      ],
+      "is_primary": true,
+      "normalized_value": "cxu@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11988.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cxu@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_095e3f13d4caf3919558"
+    ],
+    "email": [
+      "claim_095e3f13d4caf3919558"
+    ],
+    "name": [
+      "claim_095e3f13d4caf3919558"
+    ],
+    "profile_url": [
+      "claim_095e3f13d4caf3919558"
+    ],
+    "recent_papers": [
+      "claim_095e3f13d4caf3919558"
+    ],
+    "research_directions": [
+      "claim_095e3f13d4caf3919558"
+    ],
+    "status": [
+      "claim_095e3f13d4caf3919558"
+    ]
+  },
+  "id": "mentor_36cbcbcc3cc9b6aa3c95",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_095e3f13d4caf3919558"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_03d8d44c5d72c076fcdc",
+      "claim_ids": [
+        "claim_095e3f13d4caf3919558"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11988.htm"
+    }
+  ],
+  "recent_papers": [
+    "Faster pseudopolynomial time algorithms for subset sum",
+    "Hypergraph k-cut in randomized polynomial time",
+    "Minimum Cuts and Sparsification in Hypergraphs",
+    "Beating the 2-approximation factor for Global Bicut",
+    "Multicriteria Cuts and Size-Constrained k-Cuts in Hypergraphs"
+  ],
+  "research_directions": [
+    "算法设计、组合优化、计算几何"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11988.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:14Z"
+}

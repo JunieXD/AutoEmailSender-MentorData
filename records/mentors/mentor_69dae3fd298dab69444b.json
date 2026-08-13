@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_064d58adb281888cc8a5"
+      ],
+      "ended_at": null,
+      "id": "aff_b021dee7905bfa9e14ce",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_94cc64f8b6a06c67e8f1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10953.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_064d58adb281888cc8a5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b021dee7905bfa9e14ce",
+      "claim_ids": [
+        "claim_064d58adb281888cc8a5"
+      ],
+      "is_primary": true,
+      "normalized_value": "lilin@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/10953.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lilin@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_064d58adb281888cc8a5"
+    ],
+    "email": [
+      "claim_064d58adb281888cc8a5"
+    ],
+    "name": [
+      "claim_064d58adb281888cc8a5"
+    ],
+    "profile_url": [
+      "claim_064d58adb281888cc8a5"
+    ],
+    "recent_papers": [
+      "claim_064d58adb281888cc8a5"
+    ],
+    "research_directions": [
+      "claim_064d58adb281888cc8a5"
+    ],
+    "status": [
+      "claim_064d58adb281888cc8a5"
+    ],
+    "title": [
+      "claim_064d58adb281888cc8a5"
+    ]
+  },
+  "id": "mentor_69dae3fd298dab69444b",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_064d58adb281888cc8a5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b021dee7905bfa9e14ce",
+      "claim_ids": [
+        "claim_064d58adb281888cc8a5"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/10953.htm"
+    }
+  ],
+  "recent_papers": [
+    "李林,马乔,雷瀚文.一种工作于内核态的进程间持久性内存保护方法,CN110147670B, 2020.",
+    "Lin Li, Rui Pan. On-line Memory Defragmentation for NVM-based Persistent Heaps. NVMSA, 2017.",
+    "ZH Guo,L Li,Q Wang,M Lin,R Pan. FMPC: A Fast Multi-Dimensional Packet Classification Algorithm, SEIS2014.",
+    "P Rui,L Lin,Z Guo,Q Wang,L Meng. An Architecture for Private Cloud Storage System Based on Block Device, WCCIE2014.",
+    "李林,卢显良.一种针对规则集不一致性的测试数据包选取算法.计算机科学,2011,38(9): 71-75.",
+    "李林,卢显良,李泽平,聂晓文,彭永祥,李梁.一种适用于Diverse Firewall Design的规则集比较算法.四川大学学报(工程科学版), 2009, 41(5): 160-164.",
+    "李林,卢显良,聂晓文,徐海湄,蒲汛,彭永祥.针对规则更新操作的测试数据包选取算法.计算机应用研究, 2009, 26(5): 1919-1921.",
+    "李林,卢显良.一种基于切割映射的规则冲突消除算法.电子学报, 2008, 36(2): 408-412."
+  ],
+  "research_directions": [
+    "操作系统、非易失内存应用、分布式系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/10953.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

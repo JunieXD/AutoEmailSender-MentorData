@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8adbb2833062af1cd281"
+      ],
+      "ended_at": null,
+      "id": "aff_d420819d6c65c5223316",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11258.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8adbb2833062af1cd281"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d420819d6c65c5223316",
+      "claim_ids": [
+        "claim_8adbb2833062af1cd281"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanruzhang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11258.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanruzhang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8adbb2833062af1cd281"
+    ],
+    "email": [
+      "claim_8adbb2833062af1cd281"
+    ],
+    "name": [
+      "claim_8adbb2833062af1cd281"
+    ],
+    "profile_url": [
+      "claim_8adbb2833062af1cd281"
+    ],
+    "recent_papers": [
+      "claim_8adbb2833062af1cd281"
+    ],
+    "research_directions": [
+      "claim_8adbb2833062af1cd281"
+    ],
+    "status": [
+      "claim_8adbb2833062af1cd281"
+    ],
+    "title": [
+      "claim_8adbb2833062af1cd281"
+    ]
+  },
+  "id": "mentor_50765f36297361649dbe",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8adbb2833062af1cd281"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张彦如"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d420819d6c65c5223316",
+      "claim_ids": [
+        "claim_8adbb2833062af1cd281"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11258.htm"
+    }
+  ],
+  "recent_papers": [
+    "Edge Intelligence for Plug-in Electrical Vehicle Charging Service",
+    "Data Services Sales Design With Mixed Bundling Strategy: A Multidimensional Adverse Selection Approach",
+    "Cold-Start Representation Learning: A Recommendation Approach with Bert4Movie and Movie2Vec",
+    "Toward Efficient Network Resource Sharing: From One-Sided Market to Two-Sided Market",
+    "Contract Theory for Wireless Networks",
+    "Incentive mechanism for mobile crowdsourcing using an optimized tournament model",
+    "A social-aware framework for efficient information dissemination in wireless ad hoc networks",
+    "Multi-dimensional incentive mechanism in mobile crowdsourcing with moral hazard"
+  ],
+  "research_directions": [
+    "无线网络、移动互联网等网络资源分配,协同、激励机制设计,优化理论、合约理论、匹配理论、博弈论应用研究。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11258.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

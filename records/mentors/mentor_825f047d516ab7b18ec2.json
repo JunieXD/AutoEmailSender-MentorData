@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8297fb99689b5d4cefde"
+      ],
+      "ended_at": null,
+      "id": "aff_4a3010f5f48d9b8ad52c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_ddb56f3ea6b0ab3489dd",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/17958.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_8297fb99689b5d4cefde"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4a3010f5f48d9b8ad52c",
+      "claim_ids": [
+        "claim_8297fb99689b5d4cefde"
+      ],
+      "is_primary": true,
+      "normalized_value": "wenbo_jiang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/17958.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wenbo_jiang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8297fb99689b5d4cefde"
+    ],
+    "email": [
+      "claim_8297fb99689b5d4cefde"
+    ],
+    "name": [
+      "claim_8297fb99689b5d4cefde"
+    ],
+    "profile_url": [
+      "claim_8297fb99689b5d4cefde"
+    ],
+    "recent_papers": [
+      "claim_8297fb99689b5d4cefde"
+    ],
+    "research_directions": [
+      "claim_8297fb99689b5d4cefde"
+    ],
+    "status": [
+      "claim_8297fb99689b5d4cefde"
+    ]
+  },
+  "id": "mentor_825f047d516ab7b18ec2",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8297fb99689b5d4cefde"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜文博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4a3010f5f48d9b8ad52c",
+      "claim_ids": [
+        "claim_8297fb99689b5d4cefde"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/17958.htm"
+    }
+  ],
+  "recent_papers": [
+    "TEAR: Temporal-aware Automated Red-teaming for Text-to-Video Models",
+    "vCause: Efficient and Verifiable Causality Analysis for Cloud-based Endpoint Auditing",
+    "MPMA: Preference Manipulation Attack Against Model Context Protocol",
+    "ConfGuard: A Simple and Effective Backdoor Detection for Large Language Models",
+    "Focusing on Language: Revealing and Exploiting Language Attention Heads in Multilingual Large Language Models",
+    "DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy",
+    "Watch Out for Your Guidance on Generation! Exploring Conditional Backdoor Attacks against Large Language Models",
+    "The Ripple Effect: On Unforeseen Complications of Backdoor Attacks"
+  ],
+  "research_directions": [
+    "人工智能安全、数据安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/17958.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:14Z"
+}

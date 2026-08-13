@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_90c4ff1b3eb795b14228"
+      ],
+      "ended_at": null,
+      "id": "aff_4af2cb7dcd79bb5a9eaf",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_76b338d5dc65fb558099",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/18329.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_90c4ff1b3eb795b14228"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4af2cb7dcd79bb5a9eaf",
+      "claim_ids": [
+        "claim_90c4ff1b3eb795b14228"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhengziqiang1@gmail.com",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/18329.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhengziqiang1@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_90c4ff1b3eb795b14228"
+    ],
+    "email": [
+      "claim_90c4ff1b3eb795b14228"
+    ],
+    "name": [
+      "claim_90c4ff1b3eb795b14228"
+    ],
+    "profile_url": [
+      "claim_90c4ff1b3eb795b14228"
+    ],
+    "recent_papers": [
+      "claim_90c4ff1b3eb795b14228"
+    ],
+    "research_directions": [
+      "claim_90c4ff1b3eb795b14228"
+    ],
+    "status": [
+      "claim_90c4ff1b3eb795b14228"
+    ],
+    "title": [
+      "claim_90c4ff1b3eb795b14228"
+    ]
+  },
+  "id": "mentor_821c6a0794c851b15c68",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_90c4ff1b3eb795b14228"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑自强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4af2cb7dcd79bb5a9eaf",
+      "claim_ids": [
+        "claim_90c4ff1b3eb795b14228"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/18329.htm"
+    }
+  ],
+  "recent_papers": [
+    "Z. Zheng, D. Wong, B. Son, J. Shi, S. Yeung. CoralSRT: Revisiting Coral Reef Semantic Segmentation by Feature Rectification via Self-supervised Guidance. IEEE/CVF International Conference on Computer Vision (ICCV), 2025.",
+    "Z. Zheng, Y. Chen, H. Zeng, T. Vu, B. Son, S. Yeung. MarineInst: A Foundation Model for Marine Image Analysis with Instance Visual Description. European Conference on Computer Vision (ECCV), 2024. (Oral Paper: 200/8585).",
+    "Z. Zheng, H. Liang, B. Son, Y. Wong, P. Jr, A. Chui, S. Yeung. CoralSCOP: Segment any COral Image on this Planet. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2024. (Highlight Paper: 324/11532).",
+    "Z. Zheng, Y. Cheng, Z. Xin, Z. Yu, B. Zheng. Robust Perception under Adverse Conditions for Autonomous Driving based on Data Augmentation. IEEE Transactions on Intelligent Transportation Systems (TITS), 2023.",
+    "Z. Zheng, Y. Bin, X. Lv, Y. Wu, Y. Yang, H. Shen. Asynchronous generative adversarial network for asymmetric unpaired image-to-image translation. IEEE Transaction on Multimedia (TMM), 2022.",
+    "Z. Zheng, Y. Hu, Y. Bin, X. Xu, Y. Yang, H. Shen. Component Aware Image Steganography via Adversarial Global-and-Part Checking. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 2022.",
+    "Z. Zheng, Y. Wu, X. Han, J. Shi. ForkGAN: Seeing into rainy night. European Conference on Computer Vision (ECCV), 2020. (Oral Paper: 102/5150)."
+  ],
+  "research_directions": [
+    "计算机视觉、视觉基础模型、水下视觉、3D/4D感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/18329.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}

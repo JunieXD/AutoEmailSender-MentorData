@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d870d74f59b02878b902"
+      ],
+      "ended_at": null,
+      "id": "aff_6579b444da425d9fb64a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:14Z",
+      "organization_id": "org_auto_d1fa8725604fc0a348d1",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11352.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d870d74f59b02878b902"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6579b444da425d9fb64a",
+      "claim_ids": [
+        "claim_d870d74f59b02878b902"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenlisi@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:14Z",
+      "source_url": "https://www.scse.uestc.edu.cn/info/1081/11352.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenlisi@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:14Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d870d74f59b02878b902"
+    ],
+    "email": [
+      "claim_d870d74f59b02878b902"
+    ],
+    "name": [
+      "claim_d870d74f59b02878b902"
+    ],
+    "profile_url": [
+      "claim_d870d74f59b02878b902"
+    ],
+    "recent_papers": [
+      "claim_d870d74f59b02878b902"
+    ],
+    "research_directions": [
+      "claim_d870d74f59b02878b902"
+    ],
+    "status": [
+      "claim_d870d74f59b02878b902"
+    ],
+    "title": [
+      "claim_d870d74f59b02878b902"
+    ]
+  },
+  "id": "mentor_cd8ad1d56568b79bea7b",
+  "last_verified_at": "2026-08-11T13:34:14Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d870d74f59b02878b902"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈力思"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6579b444da425d9fb64a",
+      "claim_ids": [
+        "claim_d870d74f59b02878b902"
+      ],
+      "observed_at": "2026-08-11T13:34:14Z",
+      "status": "current",
+      "url": "https://www.scse.uestc.edu.cn/info/1081/11352.htm"
+    }
+  ],
+  "recent_papers": [
+    "Chengcheng Yang, Lisi Chen, Hao Wang, S Shang. Towards Efficient Selection of Activity Trajectories based on Diversity and Coverage. AAAI 2021.",
+    "Shanshan Feng, Lisi Chen, Kaiqi Zhao, Wei Wei, Fan Li, Shuo Shang. Node2LV: Squared Lorentzian Representations for Node Proximity. ICDE 2021.",
+    "Ke Li, Lisi Chen, Shuo Shang, Panos Kalnis, Bin Yao: Traffic Congestion Alleviation over Dynamic Road Networks: Continuous Optimal Route Combination for Trip Query Streams. IJCAI 2021.",
+    "Lisi Chen, Shuo Shang, Shanshan Feng, Panos Kalnis: Parallel Subtrajectory Alignment over Massive-Scale Trajectory Data. IJCAI 2021",
+    "Lisi Chen, Shuo Shang, Christian S. Jensen, Jianliang Xu, Panos Kalnis, Bin Yao, Ling Shao: Top-k term publish/subscribe for geo-textual data streams. VLDB J. 29(5): 1101-1128 (2020)",
+    "Lisi Chen, Shuo Shang, Tao Guo: Real-Time Route Search by Locations. AAAI 2020.",
+    "Lisi Chen, Shuo Shang, Bin Yao, Jing Li: Pay Your Trip for Traffic Congestion: Dynamic Pricing in Traffic-Aware Road Networks. AAAI 2020",
+    "Lisi Chen, Shuo Shang, Christian S. Jensen, Bin Yao, Panos Kalnis: Parallel Semantic Trajectory Similarity Join. ICDE 2020."
+  ],
+  "research_directions": [
+    "时空大数据管理与分析、流数据处理、时空数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:14Z",
+  "status_reason": null,
+  "status_source_url": "https://www.scse.uestc.edu.cn/info/1081/11352.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:14Z"
+}
