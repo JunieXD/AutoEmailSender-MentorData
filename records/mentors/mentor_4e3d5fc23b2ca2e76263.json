@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3a2c2ade3775c9978fd9"
+      ],
+      "ended_at": null,
+      "id": "aff_1574d990052bca1df6ab",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/huangchao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3a2c2ade3775c9978fd9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1574d990052bca1df6ab",
+      "claim_ids": [
+        "claim_3a2c2ade3775c9978fd9"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangchao@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/huangchao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huangchao@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3a2c2ade3775c9978fd9"
+    ],
+    "email": [
+      "claim_3a2c2ade3775c9978fd9"
+    ],
+    "name": [
+      "claim_3a2c2ade3775c9978fd9"
+    ],
+    "profile_url": [
+      "claim_3a2c2ade3775c9978fd9"
+    ],
+    "research_directions": [
+      "claim_3a2c2ade3775c9978fd9"
+    ],
+    "status": [
+      "claim_3a2c2ade3775c9978fd9"
+    ],
+    "title": [
+      "claim_3a2c2ade3775c9978fd9"
+    ]
+  },
+  "id": "mentor_4e3d5fc23b2ca2e76263",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3a2c2ade3775c9978fd9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1574d990052bca1df6ab",
+      "claim_ids": [
+        "claim_3a2c2ade3775c9978fd9"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/huangchao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "形式化验证、机器学习(尤其是强化学习)、信息物理系统/机器人(CPS & Robotics)交叉研究,机器学习算法/模型可靠性保证"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/huangchao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

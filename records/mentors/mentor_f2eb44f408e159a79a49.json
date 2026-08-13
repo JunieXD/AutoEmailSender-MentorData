@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_25f593861309a6385611"
+      ],
+      "ended_at": null,
+      "id": "aff_2dc984dbe274cfda1049",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/GL1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_25f593861309a6385611"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2dc984dbe274cfda1049",
+      "claim_ids": [
+        "claim_25f593861309a6385611"
+      ],
+      "is_primary": true,
+      "normalized_value": "lgao@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/GL1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lgao@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_25f593861309a6385611"
+    ],
+    "email": [
+      "claim_25f593861309a6385611"
+    ],
+    "name": [
+      "claim_25f593861309a6385611"
+    ],
+    "profile_url": [
+      "claim_25f593861309a6385611"
+    ],
+    "research_directions": [
+      "claim_25f593861309a6385611"
+    ],
+    "status": [
+      "claim_25f593861309a6385611"
+    ],
+    "title": [
+      "claim_25f593861309a6385611"
+    ]
+  },
+  "id": "mentor_f2eb44f408e159a79a49",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_25f593861309a6385611"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高琳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2dc984dbe274cfda1049",
+      "claim_ids": [
+        "claim_25f593861309a6385611"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/GL1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘基础与应用(数据挖掘、机器学习理论与方法,图挖掘技术及社交网络数据分析,动态数据挖掘)",
+    "生物数据分析及在疾病中的应用(生物数据网络建模与高效分析算法,复杂疾病模式挖掘与分析方法,长非编码RNA(LncRNA)分析)",
+    "图论与组合优化算法及应用(图结构划分算法及复杂网络拓扑结构特征分析,组合优化算法)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/GL1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

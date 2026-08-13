@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8ef6e4cc638b683316cf"
+      ],
+      "ended_at": null,
+      "id": "aff_d162bdbfc9fce2411a9e",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/CH2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8ef6e4cc638b683316cf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d162bdbfc9fce2411a9e",
+      "claim_ids": [
+        "claim_8ef6e4cc638b683316cf"
+      ],
+      "is_primary": true,
+      "normalized_value": "hchu@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/CH2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hchu@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8ef6e4cc638b683316cf"
+    ],
+    "email": [
+      "claim_8ef6e4cc638b683316cf"
+    ],
+    "name": [
+      "claim_8ef6e4cc638b683316cf"
+    ],
+    "profile_url": [
+      "claim_8ef6e4cc638b683316cf"
+    ],
+    "research_directions": [
+      "claim_8ef6e4cc638b683316cf"
+    ],
+    "status": [
+      "claim_8ef6e4cc638b683316cf"
+    ],
+    "title": [
+      "claim_8ef6e4cc638b683316cf"
+    ]
+  },
+  "id": "mentor_f69a7c0bad62635ce3cf",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8ef6e4cc638b683316cf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "褚华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d162bdbfc9fce2411a9e",
+      "claim_ids": [
+        "claim_8ef6e4cc638b683316cf"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/CH2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能推荐与决策、大语言模型赋能的AI应用、面向对象、软件工程、逆向工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/CH2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

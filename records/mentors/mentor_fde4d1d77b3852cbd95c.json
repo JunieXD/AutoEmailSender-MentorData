@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_23a70b21bcc3e4db0a09"
+      ],
+      "ended_at": null,
+      "id": "aff_8b9d7d247c1b3590d8aa",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/JSW/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_23a70b21bcc3e4db0a09"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8b9d7d247c1b3590d8aa",
+      "claim_ids": [
+        "claim_23a70b21bcc3e4db0a09"
+      ],
+      "is_primary": true,
+      "normalized_value": "swjia@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/JSW/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "swjia@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_23a70b21bcc3e4db0a09"
+    ],
+    "email": [
+      "claim_23a70b21bcc3e4db0a09"
+    ],
+    "name": [
+      "claim_23a70b21bcc3e4db0a09"
+    ],
+    "profile_url": [
+      "claim_23a70b21bcc3e4db0a09"
+    ],
+    "research_directions": [
+      "claim_23a70b21bcc3e4db0a09"
+    ],
+    "status": [
+      "claim_23a70b21bcc3e4db0a09"
+    ],
+    "title": [
+      "claim_23a70b21bcc3e4db0a09"
+    ]
+  },
+  "id": "mentor_fde4d1d77b3852cbd95c",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_23a70b21bcc3e4db0a09"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "贾松卫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8b9d7d247c1b3590d8aa",
+      "claim_ids": [
+        "claim_23a70b21bcc3e4db0a09"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/JSW/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算生物信息学、大数据挖掘算法研究、网络科学研究与分析、社交网络数据挖掘与分析、复杂网络中的社团挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/JSW/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

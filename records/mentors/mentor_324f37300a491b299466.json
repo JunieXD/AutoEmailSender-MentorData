@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0d69d95226c9f462fa67"
+      ],
+      "ended_at": null,
+      "id": "aff_1cfeddb9ec61d835fb00",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/SYL4/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0d69d95226c9f462fa67"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1cfeddb9ec61d835fb00",
+      "claim_ids": [
+        "claim_0d69d95226c9f462fa67"
+      ],
+      "is_primary": true,
+      "normalized_value": "ylshen@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/SYL4/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ylshen@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0d69d95226c9f462fa67"
+    ],
+    "email": [
+      "claim_0d69d95226c9f462fa67"
+    ],
+    "name": [
+      "claim_0d69d95226c9f462fa67"
+    ],
+    "profile_url": [
+      "claim_0d69d95226c9f462fa67"
+    ],
+    "research_directions": [
+      "claim_0d69d95226c9f462fa67"
+    ],
+    "status": [
+      "claim_0d69d95226c9f462fa67"
+    ],
+    "title": [
+      "claim_0d69d95226c9f462fa67"
+    ]
+  },
+  "id": "mentor_324f37300a491b299466",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0d69d95226c9f462fa67"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈玉龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1cfeddb9ec61d835fb00",
+      "claim_ids": [
+        "claim_0d69d95226c9f462fa67"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/SYL4/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "5G系统安全、云计算平台及安全、大数据分析及安全、物联网及安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/SYL4/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

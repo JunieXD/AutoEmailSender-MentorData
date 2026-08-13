@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1cc8ffa298fdfd33b766"
+      ],
+      "ended_at": null,
+      "id": "aff_10d8d689e7b88da62dc9",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/QYN/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1cc8ffa298fdfd33b766"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_10d8d689e7b88da62dc9",
+      "claim_ids": [
+        "claim_1cc8ffa298fdfd33b766"
+      ],
+      "is_primary": true,
+      "normalized_value": "ynquan@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/QYN/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ynquan@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1cc8ffa298fdfd33b766"
+    ],
+    "email": [
+      "claim_1cc8ffa298fdfd33b766"
+    ],
+    "name": [
+      "claim_1cc8ffa298fdfd33b766"
+    ],
+    "profile_url": [
+      "claim_1cc8ffa298fdfd33b766"
+    ],
+    "research_directions": [
+      "claim_1cc8ffa298fdfd33b766"
+    ],
+    "status": [
+      "claim_1cc8ffa298fdfd33b766"
+    ],
+    "title": [
+      "claim_1cc8ffa298fdfd33b766"
+    ]
+  },
+  "id": "mentor_5b9b6ef84e168594440e",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1cc8ffa298fdfd33b766"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "权义宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_10d8d689e7b88da62dc9",
+      "claim_ids": [
+        "claim_1cc8ffa298fdfd33b766"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/QYN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、数据可视化与可视分析、网络计算与网络安全、网络大数据分析、协议并行加速与虚拟化、云计算安全和信任模型、大数据分析与可视化、社交网络大数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/QYN/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

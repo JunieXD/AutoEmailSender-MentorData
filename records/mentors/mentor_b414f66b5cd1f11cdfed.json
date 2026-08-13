@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f68b3f1beed3dfbfafd9"
+      ],
+      "ended_at": null,
+      "id": "aff_8753cc957c56fc7147e3",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LH10/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f68b3f1beed3dfbfafd9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8753cc957c56fc7147e3",
+      "claim_ids": [
+        "claim_f68b3f1beed3dfbfafd9"
+      ],
+      "is_primary": true,
+      "normalized_value": "hangli@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LH10/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hangli@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f68b3f1beed3dfbfafd9"
+    ],
+    "email": [
+      "claim_f68b3f1beed3dfbfafd9"
+    ],
+    "name": [
+      "claim_f68b3f1beed3dfbfafd9"
+    ],
+    "profile_url": [
+      "claim_f68b3f1beed3dfbfafd9"
+    ],
+    "research_directions": [
+      "claim_f68b3f1beed3dfbfafd9"
+    ],
+    "status": [
+      "claim_f68b3f1beed3dfbfafd9"
+    ],
+    "title": [
+      "claim_f68b3f1beed3dfbfafd9"
+    ]
+  },
+  "id": "mentor_b414f66b5cd1f11cdfed",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f68b3f1beed3dfbfafd9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李航"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8753cc957c56fc7147e3",
+      "claim_ids": [
+        "claim_f68b3f1beed3dfbfafd9"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LH10/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "操作系统,可信计算,虚拟化,复杂系统理解",
+    "Operating System, Linux Kernel Analysis, Reliability"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LH10/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

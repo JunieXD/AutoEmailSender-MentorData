@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9cdce4ef5a05e9bb4bca"
+      ],
+      "ended_at": null,
+      "id": "aff_ab1f20cf750a70d669ad",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LD5/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9cdce4ef5a05e9bb4bca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ab1f20cf750a70d669ad",
+      "claim_ids": [
+        "claim_9cdce4ef5a05e9bb4bca"
+      ],
+      "is_primary": true,
+      "normalized_value": "dlu@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LD5/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dlu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9cdce4ef5a05e9bb4bca"
+    ],
+    "email": [
+      "claim_9cdce4ef5a05e9bb4bca"
+    ],
+    "name": [
+      "claim_9cdce4ef5a05e9bb4bca"
+    ],
+    "profile_url": [
+      "claim_9cdce4ef5a05e9bb4bca"
+    ],
+    "research_directions": [
+      "claim_9cdce4ef5a05e9bb4bca"
+    ],
+    "status": [
+      "claim_9cdce4ef5a05e9bb4bca"
+    ],
+    "title": [
+      "claim_9cdce4ef5a05e9bb4bca"
+    ]
+  },
+  "id": "mentor_b4b86280aec70a18ec61",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9cdce4ef5a05e9bb4bca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "卢笛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ab1f20cf750a70d669ad",
+      "claim_ids": [
+        "claim_9cdce4ef5a05e9bb4bca"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LD5/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算、虚拟化技术及其安全问题",
+    "可信计算技术",
+    "数据库安全技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LD5/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

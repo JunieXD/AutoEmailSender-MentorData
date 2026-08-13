@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_964e9fe890a687906428"
+      ],
+      "ended_at": null,
+      "id": "aff_948b7e8223f3d733c538",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LQY1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_964e9fe890a687906428"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_948b7e8223f3d733c538",
+      "claim_ids": [
+        "claim_964e9fe890a687906428"
+      ],
+      "is_primary": true,
+      "normalized_value": "liqingyang@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LQY1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liqingyang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_964e9fe890a687906428"
+    ],
+    "email": [
+      "claim_964e9fe890a687906428"
+    ],
+    "name": [
+      "claim_964e9fe890a687906428"
+    ],
+    "profile_url": [
+      "claim_964e9fe890a687906428"
+    ],
+    "recent_papers": [
+      "claim_964e9fe890a687906428"
+    ],
+    "research_directions": [
+      "claim_964e9fe890a687906428"
+    ],
+    "status": [
+      "claim_964e9fe890a687906428"
+    ]
+  },
+  "id": "mentor_465ddf53606419e1816a",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_964e9fe890a687906428"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李青洋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_948b7e8223f3d733c538",
+      "claim_ids": [
+        "claim_964e9fe890a687906428"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LQY1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Human-Machine Hybrid Federated Learning: Concept and Applications",
+    "Efficient Hierarchical Quantization for Heterogeneous Devices in Cloud–Edge–Device Architecture",
+    "Hierarchical Human-UAV Cooperative Task Allocation for Spatiotemporal Crowdsensing in Disaster Response",
+    "FedHMIR: Unified Framework for Federated Human-Machine Synergy in Personalization-Generalization Balancing Identity Recognition"
+  ],
+  "research_directions": [
+    "人机物融合感知计算、智能物联网、多智能体强化学习、群智感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LQY1/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-12T07:26:28Z"
+}

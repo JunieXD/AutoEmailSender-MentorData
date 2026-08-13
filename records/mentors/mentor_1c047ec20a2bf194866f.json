@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4c83c2e2bd035e579d08"
+      ],
+      "ended_at": null,
+      "id": "aff_f694ac7c48e73f685297",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LK3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4c83c2e2bd035e579d08"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f694ac7c48e73f685297",
+      "claim_ids": [
+        "claim_4c83c2e2bd035e579d08"
+      ],
+      "is_primary": true,
+      "normalized_value": "kailiu@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LK3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kailiu@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4c83c2e2bd035e579d08"
+    ],
+    "email": [
+      "claim_4c83c2e2bd035e579d08"
+    ],
+    "name": [
+      "claim_4c83c2e2bd035e579d08"
+    ],
+    "profile_url": [
+      "claim_4c83c2e2bd035e579d08"
+    ],
+    "research_directions": [
+      "claim_4c83c2e2bd035e579d08"
+    ],
+    "status": [
+      "claim_4c83c2e2bd035e579d08"
+    ],
+    "title": [
+      "claim_4c83c2e2bd035e579d08"
+    ]
+  },
+  "id": "mentor_1c047ec20a2bf194866f",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4c83c2e2bd035e579d08"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘凯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f694ac7c48e73f685297",
+      "claim_ids": [
+        "claim_4c83c2e2bd035e579d08"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LK3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高速图像视频编码算法及实现研究、基于FPGA/嵌入式片上系统的应用研究、高性能微处理器体系结构研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LK3/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

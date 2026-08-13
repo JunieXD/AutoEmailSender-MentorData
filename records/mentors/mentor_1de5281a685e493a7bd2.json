@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0e024fd73ea282401ae0"
+      ],
+      "ended_at": null,
+      "id": "aff_72e57b7ed9b15ae99bcd",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/ZJX4/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0e024fd73ea282401ae0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_72e57b7ed9b15ae99bcd",
+      "claim_ids": [
+        "claim_0e024fd73ea282401ae0"
+      ],
+      "is_primary": true,
+      "normalized_value": "jianxianzhang@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZJX4/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jianxianzhang@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0e024fd73ea282401ae0"
+    ],
+    "email": [
+      "claim_0e024fd73ea282401ae0"
+    ],
+    "name": [
+      "claim_0e024fd73ea282401ae0"
+    ],
+    "profile_url": [
+      "claim_0e024fd73ea282401ae0"
+    ],
+    "research_directions": [
+      "claim_0e024fd73ea282401ae0"
+    ],
+    "status": [
+      "claim_0e024fd73ea282401ae0"
+    ],
+    "title": [
+      "claim_0e024fd73ea282401ae0"
+    ]
+  },
+  "id": "mentor_1de5281a685e493a7bd2",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0e024fd73ea282401ae0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张剑贤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_72e57b7ed9b15ae99bcd",
+      "claim_ids": [
+        "claim_0e024fd73ea282401ae0"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZJX4/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "片上系统及片上网络、高性能异构计算、视觉图像处理及深度学习算法并行优化、新能源汽车动力电池管理、嵌入式无线传感器网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZJX4/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

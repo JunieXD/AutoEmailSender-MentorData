@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_14dbc08a430e8e384e29"
+      ],
+      "ended_at": null,
+      "id": "aff_97a90b38eb13f515ae86",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LH16/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_14dbc08a430e8e384e29"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_97a90b38eb13f515ae86",
+      "claim_ids": [
+        "claim_14dbc08a430e8e384e29"
+      ],
+      "is_primary": true,
+      "normalized_value": "heli@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LH16/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "heli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_14dbc08a430e8e384e29"
+    ],
+    "email": [
+      "claim_14dbc08a430e8e384e29"
+    ],
+    "name": [
+      "claim_14dbc08a430e8e384e29"
+    ],
+    "profile_url": [
+      "claim_14dbc08a430e8e384e29"
+    ],
+    "research_directions": [
+      "claim_14dbc08a430e8e384e29"
+    ],
+    "status": [
+      "claim_14dbc08a430e8e384e29"
+    ],
+    "title": [
+      "claim_14dbc08a430e8e384e29"
+    ]
+  },
+  "id": "mentor_4c226ab136464859a199",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_14dbc08a430e8e384e29"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李贺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_97a90b38eb13f515ae86",
+      "claim_ids": [
+        "claim_14dbc08a430e8e384e29"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LH16/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、深度学习、数据挖掘、大数据处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LH16/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

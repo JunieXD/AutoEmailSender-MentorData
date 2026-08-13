@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_043eb3d64db70ea27fe7"
+      ],
+      "ended_at": null,
+      "id": "aff_e4550dab18c47bb8c414",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LPY2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_043eb3d64db70ea27fe7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e4550dab18c47bb8c414",
+      "claim_ids": [
+        "claim_043eb3d64db70ea27fe7"
+      ],
+      "is_primary": true,
+      "normalized_value": "lipengyong@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LPY2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lipengyong@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_043eb3d64db70ea27fe7"
+    ],
+    "email": [
+      "claim_043eb3d64db70ea27fe7"
+    ],
+    "name": [
+      "claim_043eb3d64db70ea27fe7"
+    ],
+    "profile_url": [
+      "claim_043eb3d64db70ea27fe7"
+    ],
+    "recent_papers": [
+      "claim_043eb3d64db70ea27fe7"
+    ],
+    "research_directions": [
+      "claim_043eb3d64db70ea27fe7"
+    ],
+    "status": [
+      "claim_043eb3d64db70ea27fe7"
+    ],
+    "title": [
+      "claim_043eb3d64db70ea27fe7"
+    ]
+  },
+  "id": "mentor_c9502d1276c50fb76141",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_043eb3d64db70ea27fe7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李朋勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e4550dab18c47bb8c414",
+      "claim_ids": [
+        "claim_043eb3d64db70ea27fe7"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LPY2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Li, P.,Zhang K., et.al. A deep learning approach for rational ligand generation with toxicity control via reactive building blocks. Nature Computational Science. 2024.",
+    "Li, P.,Jiang, Z., et al., Improving drug response prediction via integrating gene relationships with deep learning. Briefings in Bioinformatics.2024.",
+    "Li, Y., Hsieh, C. Y., Lu, R., Gong, X., Wang, X.,Li, P., ... & Yao, X. (2022). An adaptive graph learning method for automated molecular interactions and properties predictions.Nature Machine Intelligence,4(7), 645-651.",
+    "Li, P.#, Wang, J.#, Li, Z., Qiao, Y., Liu, X., Ma, F., et al. Pairwise Half-graph Discrimination: A Simple Graph-level Self-supervised Strategy for Pre-training Graph Neural Networks. IJCAI 2021.",
+    "Li, P.#, Li, Y.#, Hsieh, C. Y., Zhang, S., Liu, X., Liu, H., et al. Trimnet: learning molecular representation from triplet messages for biomedicine.Briefings in Bioinformatics,2021, 22(4): bbaa266.",
+    "Li, P., Wang, J., Qiao, Y., Chen, H., Yu, Y., Yao, X., et al. An effective self-supervised framework for learning expressive molecular global representations to drug discovery.Briefings in Bioinformatics.2021, 22(6): bbab109",
+    "Li, Y., Li, P., Yang, X., Hsieh, C. Y., Zhang, S., Wang, X., et al. Introducing block design in graph neural networks for molecular properties prediction. Chemical Engineering Journal, 2021, 414, 128817.",
+    "Liu, X., Luo, Y., Li, P., Song, S., & Peng, J. Deep geometric representations for modeling effects of mutations on protein-protein binding affinity.PLoS computational biology, 2021, 17(8), e1009284."
+  ],
+  "research_directions": [
+    "图神经网络、深度生成模型、人工智能辅助药物研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LPY2/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e4317ae5ab0a34e6e0b0"
+      ],
+      "ended_at": null,
+      "id": "aff_6b82cfcb53b9d9b3dea6",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/zpj/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e4317ae5ab0a34e6e0b0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6b82cfcb53b9d9b3dea6",
+      "claim_ids": [
+        "claim_e4317ae5ab0a34e6e0b0"
+      ],
+      "is_primary": true,
+      "normalized_value": "zpj@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/zpj/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zpj@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e4317ae5ab0a34e6e0b0"
+    ],
+    "email": [
+      "claim_e4317ae5ab0a34e6e0b0"
+    ],
+    "name": [
+      "claim_e4317ae5ab0a34e6e0b0"
+    ],
+    "profile_url": [
+      "claim_e4317ae5ab0a34e6e0b0"
+    ],
+    "research_directions": [
+      "claim_e4317ae5ab0a34e6e0b0"
+    ],
+    "status": [
+      "claim_e4317ae5ab0a34e6e0b0"
+    ],
+    "title": [
+      "claim_e4317ae5ab0a34e6e0b0"
+    ]
+  },
+  "id": "mentor_a63c5c50129d291cc324",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e4317ae5ab0a34e6e0b0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蒋志平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6b82cfcb53b9d9b3dea6",
+      "claim_ids": [
+        "claim_e4317ae5ab0a34e6e0b0"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/zpj/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "围绕PicoScenes平台的相关研发、高性能OFDM基带系统、Wi-Fi集成通信与感知(ISAC)、Wi-Fi感知、定位、定制/隐蔽通信系统、基于软件无线电的OFDM基带信号处理/雷达技术、Al+医疗与Al+无线感知等前沿交叉研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/zpj/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0616e65be624f8ba998c"
+      ],
+      "ended_at": null,
+      "id": "aff_24023ff577dced87598a",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LH14/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0616e65be624f8ba998c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_24023ff577dced87598a",
+      "claim_ids": [
+        "claim_0616e65be624f8ba998c"
+      ],
+      "is_primary": true,
+      "normalized_value": "hli@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LH14/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0616e65be624f8ba998c"
+    ],
+    "email": [
+      "claim_0616e65be624f8ba998c"
+    ],
+    "name": [
+      "claim_0616e65be624f8ba998c"
+    ],
+    "profile_url": [
+      "claim_0616e65be624f8ba998c"
+    ],
+    "research_directions": [
+      "claim_0616e65be624f8ba998c"
+    ],
+    "status": [
+      "claim_0616e65be624f8ba998c"
+    ],
+    "title": [
+      "claim_0616e65be624f8ba998c"
+    ]
+  },
+  "id": "mentor_0db529da9f17dec46d88",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0616e65be624f8ba998c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_24023ff577dced87598a",
+      "claim_ids": [
+        "claim_0616e65be624f8ba998c"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LH14/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘、信息检索、保护隐私的数据查询、社会计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LH14/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7cab24a771739b18e79a"
+      ],
+      "ended_at": null,
+      "id": "aff_a597d13e2b0ea63200c4",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/NZX/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7cab24a771739b18e79a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a597d13e2b0ea63200c4",
+      "claim_ids": [
+        "claim_7cab24a771739b18e79a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zxniu@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/NZX/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zxniu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7cab24a771739b18e79a"
+    ],
+    "email": [
+      "claim_7cab24a771739b18e79a"
+    ],
+    "name": [
+      "claim_7cab24a771739b18e79a"
+    ],
+    "profile_url": [
+      "claim_7cab24a771739b18e79a"
+    ],
+    "research_directions": [
+      "claim_7cab24a771739b18e79a"
+    ],
+    "status": [
+      "claim_7cab24a771739b18e79a"
+    ],
+    "title": [
+      "claim_7cab24a771739b18e79a"
+    ]
+  },
+  "id": "mentor_58e355e1bcd14f90515a",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7cab24a771739b18e79a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "牛振兴"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a597d13e2b0ea63200c4",
+      "claim_ids": [
+        "claim_7cab24a771739b18e79a"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/NZX/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/NZX/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

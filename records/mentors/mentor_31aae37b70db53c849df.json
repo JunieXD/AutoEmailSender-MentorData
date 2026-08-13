@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e64c3731e81e04dd3874"
+      ],
+      "ended_at": null,
+      "id": "aff_c600f73924bdcc87a24d",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/jiangfenlong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e64c3731e81e04dd3874"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c600f73924bdcc87a24d",
+      "claim_ids": [
+        "claim_e64c3731e81e04dd3874"
+      ],
+      "is_primary": true,
+      "normalized_value": "fljiang@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/jiangfenlong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fljiang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e64c3731e81e04dd3874"
+    ],
+    "email": [
+      "claim_e64c3731e81e04dd3874"
+    ],
+    "name": [
+      "claim_e64c3731e81e04dd3874"
+    ],
+    "profile_url": [
+      "claim_e64c3731e81e04dd3874"
+    ],
+    "research_directions": [
+      "claim_e64c3731e81e04dd3874"
+    ],
+    "status": [
+      "claim_e64c3731e81e04dd3874"
+    ]
+  },
+  "id": "mentor_31aae37b70db53c849df",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e64c3731e81e04dd3874"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蒋汾龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c600f73924bdcc87a24d",
+      "claim_ids": [
+        "claim_e64c3731e81e04dd3874"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/jiangfenlong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "空天遥感信息智能解译、深度学习理论与优化方法、无人集群智能博弈与测试评估"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/jiangfenlong/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-12T07:26:28Z"
+}
