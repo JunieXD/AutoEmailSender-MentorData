@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_22faf1c098bfaf5d34c1"
+      ],
+      "ended_at": null,
+      "id": "aff_e00da62d8ee218b9fba1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zj2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_22faf1c098bfaf5d34c1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e00da62d8ee218b9fba1",
+      "claim_ids": [
+        "claim_22faf1c098bfaf5d34c1"
+      ],
+      "is_primary": true,
+      "normalized_value": "jzhou@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zj2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jzhou@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_22faf1c098bfaf5d34c1"
+    ],
+    "email": [
+      "claim_22faf1c098bfaf5d34c1"
+    ],
+    "name": [
+      "claim_22faf1c098bfaf5d34c1"
+    ],
+    "profile_url": [
+      "claim_22faf1c098bfaf5d34c1"
+    ],
+    "recent_papers": [
+      "claim_22faf1c098bfaf5d34c1"
+    ],
+    "research_directions": [
+      "claim_22faf1c098bfaf5d34c1"
+    ],
+    "status": [
+      "claim_22faf1c098bfaf5d34c1"
+    ]
+  },
+  "id": "mentor_a1574945e744d9adf242",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_22faf1c098bfaf5d34c1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e00da62d8ee218b9fba1",
+      "claim_ids": [
+        "claim_22faf1c098bfaf5d34c1"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/zj2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "LifeAlign: Lifelong Alignment for Large Language Models with Memory-Augmented Focalized Preference Optimization",
+    "AutoSkill: Experience-Driven Lifelong Learning via Skill Self-Evolution",
+    "Dynamic Multimodal Activation Steering for Hallucination Mitigation in Large Vision-Language Models",
+    "PsychEval: A Multi-Session and Multi-Therapy Benchmark for High-Realism and Comprehensive AI Psychological Counselor",
+    "Mimic Human Cognition, Master Multi-Image Reasoning: A Meta-Action Framework for Enhanced Visual Understanding",
+    "Building Self-Evolving Agents via Experience-Driven Lifelong Learning: A Framework and Benchmark",
+    "Task-Core Memory Management and Consolidation for Long-Term Continual Learning",
+    "Reinforced Interactive Continual Learning via Real-Time Noisy Human Feedback"
+  ],
+  "research_directions": [
+    "自然语言处理、情感分析、持续学习、大模型、智能教育等相关技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/zj2/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:36Z"
+}

@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fe13ab1048ae74ba54f8"
+      ],
+      "ended_at": null,
+      "id": "aff_1b3876784fdb1064f00e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/xcy/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_fe13ab1048ae74ba54f8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1b3876784fdb1064f00e",
+      "claim_ids": [
+        "claim_fe13ab1048ae74ba54f8"
+      ],
+      "is_primary": true,
+      "normalized_value": "cyxiao@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/xcy/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "cyxiao@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fe13ab1048ae74ba54f8"
+    ],
+    "email": [
+      "claim_fe13ab1048ae74ba54f8"
+    ],
+    "name": [
+      "claim_fe13ab1048ae74ba54f8"
+    ],
+    "profile_url": [
+      "claim_fe13ab1048ae74ba54f8"
+    ],
+    "status": [
+      "claim_fe13ab1048ae74ba54f8"
+    ],
+    "title": [
+      "claim_fe13ab1048ae74ba54f8"
+    ]
+  },
+  "id": "mentor_76091d31b7cecd966626",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fe13ab1048ae74ba54f8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖春芸"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1b3876784fdb1064f00e",
+      "claim_ids": [
+        "claim_fe13ab1048ae74ba54f8"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/xcy/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/xcy/main.psp",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

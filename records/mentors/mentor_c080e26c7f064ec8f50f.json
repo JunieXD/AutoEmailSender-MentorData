@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d1d2eff42ca33809e075"
+      ],
+      "ended_at": null,
+      "id": "aff_ff09ce8fdf7973509211",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/shc/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d1d2eff42ca33809e075"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ff09ce8fdf7973509211",
+      "claim_ids": [
+        "claim_d1d2eff42ca33809e075"
+      ],
+      "is_primary": true,
+      "normalized_value": "hcsong@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/shc/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "hcsong@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d1d2eff42ca33809e075"
+    ],
+    "email": [
+      "claim_d1d2eff42ca33809e075"
+    ],
+    "name": [
+      "claim_d1d2eff42ca33809e075"
+    ],
+    "profile_url": [
+      "claim_d1d2eff42ca33809e075"
+    ],
+    "recent_papers": [
+      "claim_d1d2eff42ca33809e075"
+    ],
+    "research_directions": [
+      "claim_d1d2eff42ca33809e075"
+    ],
+    "status": [
+      "claim_d1d2eff42ca33809e075"
+    ],
+    "title": [
+      "claim_d1d2eff42ca33809e075"
+    ]
+  },
+  "id": "mentor_c080e26c7f064ec8f50f",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d1d2eff42ca33809e075"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋海川"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ff09ce8fdf7973509211",
+      "claim_ids": [
+        "claim_d1d2eff42ca33809e075"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/shc/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Han Liang, Xu Zhang,Haichuan Song*, Kanle Shi, Yu-Shen Liu, Zhizhong Han. SparseRecon: Neural implicit surface reconstruction from sparse views with feature and depth consistencies.ICCV 2025.",
+    "Yan Zaoming, Pengcheng Lei, Tingting Wang, Faming Fang, Junkang Zhang, Yaomin Huang,Haichuan Song*. Explicit Depth-Aware Blurry Video Frame Interpolation Guided by Differential Curves.CVPR2025.",
+    "Peng Zhengyuan, Jinpeng Ma, Zhimin Sun, Ran Yi,Haichuan Song, Xin Tan, Lizhuang Ma. MOS: Modeling Object-Scene Associations in Generalized Category Discovery.CVPR2025.",
+    "Zhang Junkang, Faming Fang, Tingting Wang, Guixu Zhang,Haichuan Song*. FrDiff: Framelet-based Conditional Diffusion Model for Multispectral and Panchromatic ImageFusion.IEEE Transactions on Multimedia(TOM 2025).",
+    "Yang Wenya, Xiao-Diao Chen, Wen Wu, Hongshuai Qin, Kangming Yan, Xiaoyang Mao, Hai-Chuan Song*. Boosting DeepUnsupervised Edge Detection via Segment Anything Model. IEEE Transactions on Industrial Informatics (TII 2024).",
+    "Hai-ChuanSong, Zhihong Zheng, Zhizhong Zhang, Yuan Xie, Guchu Zou, Zhenyi Qi, and Xin Tan. Mutual Positive andNegativeLearning for Weakly-supervised Point Cloud Semantic Segmentation.ICME 2024, pp. 1-6. IEEE, 2024.",
+    "Wang Yuan, Zhi-zhong Zhang, Cong Wang,Hai-Chuan Song, Yuan Xie, and Li-zhuang Ma. Task-level Self-supervision for Cross-domain Few-shot Learning. AAAI 2022.",
+    "Jing-Yu Gong, Jia-Chen Xu, Xin Tan,Hai-Chuan Song, Yan-Yun Qu, Yuan Xie, Li-Zhuang Ma. Omni-supervised Point Cloud Segmentation via Gradual Receptive Field Component Reasoning. CVPR 2021."
+  ],
+  "research_directions": [
+    "计算机辅助设计(CAD)、三维打印、三维计算机视觉等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/shc/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

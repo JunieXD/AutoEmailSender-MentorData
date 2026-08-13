@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7a331bd803fe4c141c78"
+      ],
+      "ended_at": null,
+      "id": "aff_24fab2c4e269efb729a4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/yy2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7a331bd803fe4c141c78"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_24fab2c4e269efb729a4",
+      "claim_ids": [
+        "claim_7a331bd803fe4c141c78"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanyang@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/yy2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "yanyang@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7a331bd803fe4c141c78"
+    ],
+    "email": [
+      "claim_7a331bd803fe4c141c78"
+    ],
+    "name": [
+      "claim_7a331bd803fe4c141c78"
+    ],
+    "profile_url": [
+      "claim_7a331bd803fe4c141c78"
+    ],
+    "recent_papers": [
+      "claim_7a331bd803fe4c141c78"
+    ],
+    "research_directions": [
+      "claim_7a331bd803fe4c141c78"
+    ],
+    "status": [
+      "claim_7a331bd803fe4c141c78"
+    ],
+    "title": [
+      "claim_7a331bd803fe4c141c78"
+    ]
+  },
+  "id": "mentor_f57bb80996955b252d1f",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7a331bd803fe4c141c78"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_24fab2c4e269efb729a4",
+      "claim_ids": [
+        "claim_7a331bd803fe4c141c78"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/yy2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Ming Gu, Yan Yang*. Plan, Generate and Complicate: Improving Low-resource Dialogue State Tracking via Easy-to-Diffcult Zero-shot Data Augmentation. ACL 2024.",
+    "Feng Gao, Yan Yang* et al. Self-supervised BGP-Graph Reasoning Enhanced Complex KBQA via SPARQL Generation. Information Processing and Management(IPM)2024(2025 IPM最佳博士研究论文奖)",
+    "兰孟烨,杨燕*.基于程序结构树的多智能体协同推理数学推理框架,中文信息学报2024",
+    "B. Li, B. Wang, P. Zhuang, H. Cao, S. Wu, Z. Tan, S. Gao, P. Li, W. Jin, Z. Shao, K. Zheng, L. Wu, B. Gao, Y. Wang, H. Jiang, S. Guo, L. He*, Y. Yang*, G. Jinzz*, A novel staging system derived from natural language processing of pathology reports to predict prognostic outcomes of pancreatic cancer: a retrospective cohort study.Int J Surg (2023).",
+    "陈妍,杨燕*,孙宇翔,庄鹏杰,陈成才,贺樑.基于用户预期情绪感知策略选择的情感支持对话系统,中文信息学报2023.",
+    "Zhang Yushi, Yan Yang*, Ming Gu, Feng Gao, Chengcai Chen and Liang He.“CEG: A joint model for causal commonsense events enhanced story ending generation.”PLOS ONE 18 (2023): n. pag.",
+    "张骏,杨燕*,霍沛,孙宇翔,李程烽,李勇,知识感知的多类型对话推荐.中文信息学报2021 Vol. 35 (5): 110-117.",
+    "张凉,杨燕*,陈成才,贺樑.基于多视角对抗学习的开放域对话生成模型[J].计算机应用研究,2021,38(2):372-376."
+  ],
+  "research_directions": [
+    "研究方向为自然语言处理和知识计算,研究兴趣为多技能对话系统,着重将知识与自然语言结合研究医疗、教育、金融等应用场景的自然语言理解、小样本知识抽取、知识引导的预测推理、约束对话生成等任务"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/yy2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

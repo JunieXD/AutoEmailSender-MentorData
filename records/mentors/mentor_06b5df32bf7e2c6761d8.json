@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f9241ebdea29c99bf655"
+      ],
+      "ended_at": null,
+      "id": "aff_75ff666c725c362239cf",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f9241ebdea29c99bf655"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_75ff666c725c362239cf",
+      "claim_ids": [
+        "claim_f9241ebdea29c99bf655"
+      ],
+      "is_primary": true,
+      "normalized_value": "zzzhang@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "zzzhang@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f9241ebdea29c99bf655"
+    ],
+    "email": [
+      "claim_f9241ebdea29c99bf655"
+    ],
+    "name": [
+      "claim_f9241ebdea29c99bf655"
+    ],
+    "profile_url": [
+      "claim_f9241ebdea29c99bf655"
+    ],
+    "recent_papers": [
+      "claim_f9241ebdea29c99bf655"
+    ],
+    "research_directions": [
+      "claim_f9241ebdea29c99bf655"
+    ],
+    "status": [
+      "claim_f9241ebdea29c99bf655"
+    ],
+    "title": [
+      "claim_f9241ebdea29c99bf655"
+    ]
+  },
+  "id": "mentor_06b5df32bf7e2c6761d8",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f9241ebdea29c99bf655"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张志忠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_75ff666c725c362239cf",
+      "claim_ids": [
+        "claim_f9241ebdea29c99bf655"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Z. Zhang* et al. Learning to align via Wasserstein for person re-identification[J]. IEEE Transactions on Image Processing. 2020",
+    "Z. Zhang* et al. Tensor multi-task learning for person re-identification[J]. IEEE Transactions on Image Processing, 2020.",
+    "Z. Zhang* et al. Effective image retrieval via multilinear multi-index fusion[J]. IEEE Transactions on Multimedia, 2019.",
+    "X. Liu, Z. Zhang* et al. Learn from Concepts: Towards the Purified Memory for Few-shot Learning. IJCAI 2021.",
+    "W. Yuan, Z. Zhang# et al. Task-level Self-supervision for Cross-domain Few-shot Learning. AAAI 2022.",
+    "X. Tian, Z. Zhang# et al. Farewell to Mutual Information: Variational Distillation for Cross-Modal Person Re-Identification. CVPR 2021 Oral"
+  ],
+  "research_directions": [
+    "主要研究方向为机器学习与计算机视觉,围绕全天候的视觉感知,针对行人重识别、小样本图像分类、3D点云分割等视觉应用,从事跨模态/传感器视觉研究。具体研究方向包括:1. 行人重识别相关理论与应用研究",
+    "2. 跨模态/跨域的域迁移算法研究",
+    "3. 人工智能社会影响分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

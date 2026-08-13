@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f417e994ef331476fef2"
+      ],
+      "ended_at": null,
+      "id": "aff_f7176bd35073fbf99bb2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/sdy/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f417e994ef331476fef2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f7176bd35073fbf99bb2",
+      "claim_ids": [
+        "claim_f417e994ef331476fef2"
+      ],
+      "is_primary": true,
+      "normalized_value": "dyshi@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/sdy/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "dyshi@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f417e994ef331476fef2"
+    ],
+    "email": [
+      "claim_f417e994ef331476fef2"
+    ],
+    "name": [
+      "claim_f417e994ef331476fef2"
+    ],
+    "profile_url": [
+      "claim_f417e994ef331476fef2"
+    ],
+    "research_directions": [
+      "claim_f417e994ef331476fef2"
+    ],
+    "status": [
+      "claim_f417e994ef331476fef2"
+    ],
+    "title": [
+      "claim_f417e994ef331476fef2"
+    ]
+  },
+  "id": "mentor_8952b081c1026ac04c00",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f417e994ef331476fef2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "石东昱"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f7176bd35073fbf99bb2",
+      "claim_ids": [
+        "claim_f417e994ef331476fef2"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/sdy/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "不确定推理系统,概率推断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/sdy/main.psp",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

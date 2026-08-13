@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b6c47412569ac1b6d2ab"
+      ],
+      "ended_at": null,
+      "id": "aff_f530cab4c3a0a40b3438",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/sjm2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_b6c47412569ac1b6d2ab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f530cab4c3a0a40b3438",
+      "claim_ids": [
+        "claim_b6c47412569ac1b6d2ab"
+      ],
+      "is_primary": true,
+      "normalized_value": "jmshi@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/sjm2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jmshi@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b6c47412569ac1b6d2ab"
+    ],
+    "email": [
+      "claim_b6c47412569ac1b6d2ab"
+    ],
+    "name": [
+      "claim_b6c47412569ac1b6d2ab"
+    ],
+    "profile_url": [
+      "claim_b6c47412569ac1b6d2ab"
+    ],
+    "recent_papers": [
+      "claim_b6c47412569ac1b6d2ab"
+    ],
+    "research_directions": [
+      "claim_b6c47412569ac1b6d2ab"
+    ],
+    "status": [
+      "claim_b6c47412569ac1b6d2ab"
+    ],
+    "title": [
+      "claim_b6c47412569ac1b6d2ab"
+    ]
+  },
+  "id": "mentor_ac7e3c5c57fd5082f473",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b6c47412569ac1b6d2ab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "施江鸣"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f530cab4c3a0a40b3438",
+      "claim_ids": [
+        "claim_b6c47412569ac1b6d2ab"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/sjm2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Two-Stage Knowledge Distillation for Visible-Infrared Person Re-Identification",
+    "CHIPS: Efficient CLIP Adaptation via Curvature-Aware Hybrid Influence-Based Data Selection",
+    "Learning Discriminativity, Compatibility and Adaptivity for Replay-Free Lifelong Visible-Infrared Person Re-Identification",
+    "Multi-Schema Proximity Network for Composed Image Retrieval",
+    "Multilevel Informed Prompt Tuning for Robust Molecular Property Prediction",
+    "Multi-Memory Matching for Unsupervised Visible-Infrared Person Re-Identification",
+    "Learning Commonality, Divergence and Variety for Unsupervised Visible-Infrared Person Re-Identification",
+    "CLIP-Guided Federated Learning on Heterogeneous and Long-Tailed Data"
+  ],
+  "research_directions": [
+    "空间智能大模型、鲁棒多模态学习与全天候视觉感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/sjm2/main.psp",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

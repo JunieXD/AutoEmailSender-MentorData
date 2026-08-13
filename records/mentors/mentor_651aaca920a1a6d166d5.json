@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_045aab449f73b823c372"
+      ],
+      "ended_at": null,
+      "id": "aff_32a0dcd6789e031d642d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/ly2_19214/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_045aab449f73b823c372"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_32a0dcd6789e031d642d",
+      "claim_ids": [
+        "claim_045aab449f73b823c372"
+      ],
+      "is_primary": true,
+      "normalized_value": "yli@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/ly2_19214/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "yli@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_045aab449f73b823c372"
+    ],
+    "email": [
+      "claim_045aab449f73b823c372"
+    ],
+    "name": [
+      "claim_045aab449f73b823c372"
+    ],
+    "profile_url": [
+      "claim_045aab449f73b823c372"
+    ],
+    "recent_papers": [
+      "claim_045aab449f73b823c372"
+    ],
+    "research_directions": [
+      "claim_045aab449f73b823c372"
+    ],
+    "status": [
+      "claim_045aab449f73b823c372"
+    ],
+    "title": [
+      "claim_045aab449f73b823c372"
+    ]
+  },
+  "id": "mentor_651aaca920a1a6d166d5",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_045aab449f73b823c372"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李 洋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_32a0dcd6789e031d642d",
+      "claim_ids": [
+        "claim_045aab449f73b823c372"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/ly2_19214/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "GT2-GS: Geometry-aware Texture Transfer for Gaussian Splatting Wenjie Liu, Zhongliang Liu, Junwei Shu, Changbo Wang, Yang Li. AAAI, 2026.",
+    "Audio-VLA: Adding Contact Audio Perception to Vision-Language-Action Model for Robotic Manipulation. Xiangyi Wei, Haotian Zhang, Xinyi Cao, Siyu Xie, Weifeng Ge, Yang Li, Changbo Wang.Arxiv, 2025.",
+    "TimeSoccer: An End-to-End Multimodal Large Language Model for Soccer Commentary Generation. Ling You, Wenxuan Huang, Xinni Xie, Xiangyi Wei, Bangyan Li, Yang Li, Shaohui Lin, Changbo Wang. ACM MM, 2025.",
+    "Open-World Reinforcement Learning over Long Short-Term Imagination. Jiajian Li, Qi Wang, Yunbo Wang, Xin Jin, Yang Li, Wenjun Zeng, Xiaokang Yang. ICLR, 2025.",
+    "Motion-Zero: A Zero-Shot Trajectory Control Framework of Moving Object for Diffusion-Based Video Generation. Changgu Chen, Junwei Shu, Gaoqi He, Changbo Wang, Yang Li. AAAI, 2025.",
+    "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model.Yiming Sun, Fan Yu, Shaoxiang Chen, Yu Zhang, Junwei Huang, Yang Li, Chenhui Li, Changbo Wang. NeurIPS, 2024.",
+    "FIND: Fine-tuning Initial Noise Distribution with Policy Optimization for Diffusion Models.Changgu Chen, Libing Yang, Xiaoyan Yang, Lianggangxu Chen, Gaoqi He, Changbo Wang, Yang Li. ACM Multimedia, 2024.",
+    "ClothPPO: A Proximal Policy Optimization Enhancing Framework for Robotic Cloth Manipulation with Observation-Aligned Action Spaces.Libing Yang, Yang Li, Long Chen. International Joint Conference on Artificial Intelligence (IJCAI), 2024."
+  ],
+  "research_directions": [
+    "计算机视觉、机器学习、计算机图形学、机器人感知,具身智能、空间智能、世界模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/ly2_19214/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2d9f6032e4729129dc5d"
+      ],
+      "ended_at": null,
+      "id": "aff_8d0a104d11c0c547d1b8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zk2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2d9f6032e4729129dc5d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8d0a104d11c0c547d1b8",
+      "claim_ids": [
+        "claim_2d9f6032e4729129dc5d"
+      ],
+      "is_primary": true,
+      "normalized_value": "kzhang@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zk2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "kzhang@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2d9f6032e4729129dc5d"
+    ],
+    "email": [
+      "claim_2d9f6032e4729129dc5d"
+    ],
+    "name": [
+      "claim_2d9f6032e4729129dc5d"
+    ],
+    "profile_url": [
+      "claim_2d9f6032e4729129dc5d"
+    ],
+    "recent_papers": [
+      "claim_2d9f6032e4729129dc5d"
+    ],
+    "research_directions": [
+      "claim_2d9f6032e4729129dc5d"
+    ],
+    "status": [
+      "claim_2d9f6032e4729129dc5d"
+    ],
+    "title": [
+      "claim_2d9f6032e4729129dc5d"
+    ]
+  },
+  "id": "mentor_2257e6f257e4af795bf5",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2d9f6032e4729129dc5d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张凯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8d0a104d11c0c547d1b8",
+      "claim_ids": [
+        "claim_2d9f6032e4729129dc5d"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/zk2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Jiahao Xiong, Yihe Liu, Xianming Hu, Hongbo Zhao, Nuoyi Chen, Jie Zhang, Kai Zhang. Localized Low-Rank Adaptation within Clustered Parameter Subspaces. The 64th Annual Meeting of the Association for Computational Linguistics (ACL) 2026.",
+    "Chenglin Wang, Yucheng Zhou, Shuang Chen, Tao Wang, Kai Zhang. LADR: Locality-Aware Dynamic Rescue for Efficient Text-to-Image Generation with Diffusion Large Language Models.The 64th Annual Meeting of the Association for Computational Linguistics (ACL) 2026.",
+    "Jiacheng Tang, Zhiyuan Zhou, Zhuolin He, Jia Zhang, Kai Zhang, Jian Pu. CausalVAD: De-confounding End-to-End Autonomous Driving via Causal Intervention. International Conference on Computer Vision and Pattern Recognition (CVPR) 2026.",
+    "Baoli Wang, Chenglin Wang, Jingyang Chen, Danlin Liu, Changzhi Sun, Jie Zhang, Kai Zhang, Honglin Li. Conditional Diffusion with Locality Aware Modal Alignment for Generating Diverse Protein Conformational Ensembles. Nature Machine Intelligence 2026.",
+    "Yihe Liu, Huibin Wang, Chenglin Wang, Jiahao Xiong, Pinyi Zhang, Xianming Hu, Nuoyi Chen, Hongbo Zhao, Jie Zhang, Kai Zhang. Next-ToBE: Probabilistic Next Token-Bag Exploitation for Activating Anticipatory Capacity in LLMs. The Fourteenth International Conference on Learning Representations (ICLR) 2026.",
+    "Qiaoyu Hu, Changzhi Sun, Huan He, Jiazheng Xu, Danlin Liu, Wenqing Zhang, Sumeng Shi, Kai Zhang, Honglin Li. Target-aware 3D Molecular Generation Based on Guided Equivariant Diffusion. Nature Communications 2025.",
+    "Chenglin Wang, Yucheng Zhou, Zhe Wang, Zijie Zhai, JIanbing Shen, Kai Zhang. Alternate Geometric and Semantic Denoising Diffusion for Protein Inverse Folding. European Conference on Machine Learning & Principles and Practice of Knowledge Discovery in Database (ECML & PKDD) 2025.",
+    "Pinyi Zhang, Siyu An, Lingfeng Qiao, Yifei Yu, Jingyang Chen, Jie Wang, Di Yin, Xing Sun, and Kai Zhang. 2025. RolePlot: A Systematic Framework for Evaluating and Enhancing the Plot-Progression Capabilities of Role-Playing Agents. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL) 2025."
+  ],
+  "research_directions": [
+    "语言模型,Transformer(注意力机制、位置编码、记忆、微调、量化)",
+    "蛋白质语言模型、构象扩散生成、分子相互作用",
+    "图神经网络、表征学习、推荐系统",
+    "时间序列分析预测、异常检测、动态网络分析",
+    "fMRI数据分析、脑网络、精神疾病诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/zk2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

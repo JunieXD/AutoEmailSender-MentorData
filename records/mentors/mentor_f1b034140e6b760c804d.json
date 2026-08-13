@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_418b6e718074cf7cde5d"
+      ],
+      "ended_at": null,
+      "id": "aff_750b4dbf59ae88c4d456",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/dl2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_418b6e718074cf7cde5d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_750b4dbf59ae88c4d456",
+      "claim_ids": [
+        "claim_418b6e718074cf7cde5d"
+      ],
+      "is_primary": true,
+      "normalized_value": "ldou@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/dl2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "ldou@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_418b6e718074cf7cde5d"
+    ],
+    "email": [
+      "claim_418b6e718074cf7cde5d"
+    ],
+    "name": [
+      "claim_418b6e718074cf7cde5d"
+    ],
+    "profile_url": [
+      "claim_418b6e718074cf7cde5d"
+    ],
+    "recent_papers": [
+      "claim_418b6e718074cf7cde5d"
+    ],
+    "research_directions": [
+      "claim_418b6e718074cf7cde5d"
+    ],
+    "status": [
+      "claim_418b6e718074cf7cde5d"
+    ],
+    "title": [
+      "claim_418b6e718074cf7cde5d"
+    ]
+  },
+  "id": "mentor_f1b034140e6b760c804d",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_418b6e718074cf7cde5d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "窦亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_750b4dbf59ae88c4d456",
+      "claim_ids": [
+        "claim_418b6e718074cf7cde5d"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/dl2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "FinHunter: Improved Search-Based Test Generation for Structural Testing of FinTech Systems. In Companion Proceedings of the 32nd ACM International Conference on the Foundations of Software Engineering (FSE 2024). Association for Computing Machinery, New York, NY, USA, 10–20.",
+    "基于深度强化学习与程序分析的OJ习题推荐模型[J].计算机科学,2023,50(08):58-67.",
+    "Heterogeneous Directed Hypergraph Neural Network over abstract syntax tree (AST) for Code Classification. SEKE 2023.",
+    "记忆与认知融合的个性化OJ习题推荐方法[J].计算机学报,2023,46(01):103-124.",
+    "Difficulty-aware Convolutional Knowledge Tracing for Student Performance Prediction. UIC 2022:1232-1238.",
+    "FinFuzzer: One Step Further in Fuzzing Fintech Systems. ASE 2021:1111-1115.",
+    "DroidMutator: an effective mutation analysis tool for Android applications. ICSE 2020: 77-80."
+  ],
+  "research_directions": [
+    "软件方法及技术、智能教育、交叉智能应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/dl2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

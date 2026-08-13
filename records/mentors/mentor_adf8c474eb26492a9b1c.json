@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3ceeb58ca5429034b2c9"
+      ],
+      "ended_at": null,
+      "id": "aff_e6bef3145637396780fb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/xf2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3ceeb58ca5429034b2c9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e6bef3145637396780fb",
+      "claim_ids": [
+        "claim_3ceeb58ca5429034b2c9"
+      ],
+      "is_primary": true,
+      "normalized_value": "fxu@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/xf2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "fxu@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3ceeb58ca5429034b2c9"
+    ],
+    "email": [
+      "claim_3ceeb58ca5429034b2c9"
+    ],
+    "name": [
+      "claim_3ceeb58ca5429034b2c9"
+    ],
+    "profile_url": [
+      "claim_3ceeb58ca5429034b2c9"
+    ],
+    "recent_papers": [
+      "claim_3ceeb58ca5429034b2c9"
+    ],
+    "research_directions": [
+      "claim_3ceeb58ca5429034b2c9"
+    ],
+    "status": [
+      "claim_3ceeb58ca5429034b2c9"
+    ],
+    "title": [
+      "claim_3ceeb58ca5429034b2c9"
+    ]
+  },
+  "id": "mentor_adf8c474eb26492a9b1c",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3ceeb58ca5429034b2c9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e6bef3145637396780fb",
+      "claim_ids": [
+        "claim_3ceeb58ca5429034b2c9"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/xf2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Cappuccino: Cost-Efficient Heterogeneous LoRA Fine-tuning via Replica-Level Orchestration",
+    "Rubick: Exploiting Job Reconfigurability for Deep Learning Cluster Scheduling",
+    "Espresso: Cost-Efficient Large Model Training by Exploiting GPU Heterogeneity in the Cloud"
+  ],
+  "research_directions": [
+    "分布式机器学习系统、云计算性能保证、云边端协同计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/xf2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

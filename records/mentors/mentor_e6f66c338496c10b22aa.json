@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c984e8924b578caf619e"
+      ],
+      "ended_at": null,
+      "id": "aff_b537f676f932eb5c7031",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/lsh2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c984e8924b578caf619e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b537f676f932eb5c7031",
+      "claim_ids": [
+        "claim_c984e8924b578caf619e"
+      ],
+      "is_primary": true,
+      "normalized_value": "shlin@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/lsh2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "shlin@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c984e8924b578caf619e"
+    ],
+    "email": [
+      "claim_c984e8924b578caf619e"
+    ],
+    "name": [
+      "claim_c984e8924b578caf619e"
+    ],
+    "profile_url": [
+      "claim_c984e8924b578caf619e"
+    ],
+    "recent_papers": [
+      "claim_c984e8924b578caf619e"
+    ],
+    "research_directions": [
+      "claim_c984e8924b578caf619e"
+    ],
+    "status": [
+      "claim_c984e8924b578caf619e"
+    ],
+    "title": [
+      "claim_c984e8924b578caf619e"
+    ]
+  },
+  "id": "mentor_e6f66c338496c10b22aa",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c984e8924b578caf619e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林绍辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b537f676f932eb5c7031",
+      "claim_ids": [
+        "claim_c984e8924b578caf619e"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/lsh2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "W. Huang, B. Jia, S. Cao, Z. Ye, F. Zhao, Z. Xu, Y. Hu,S. Lin*. Vision-r1: Incentivizing reasoning capability in multimodal large language models.ICLR, 2026.",
+    "W.Huang,S. Chen,Z. Xie,S. Cao,S. Tang,Y. Shen,Q. Yin,W. Hu,X. Wang,Y. Tang,J. Qiao,H. Guo,Y. Hu,Z. Yin,P. Torr,Y. Cheng,W. Ouyang,S. Lin*.Interleaving Reasoning for Better Text-to-Image Generation. ICLR, 2026.",
+    "B. Jia,W. Huang,Y. Tang,J. Qiao,J. Liao,S. Cao,F. Zhao,Z. Feng,Z. Gu,Z. Yin,L. Bai,W. Ouyang,L. Chen,F. Zhao,Z. Wang,Y. Xie,S. Lin*.CompBench: Benchmarking ComplexInstruction-guided Image Editing. CVPR, 2026.",
+    "Z. Shi, J. Gong, P. Wang, X. Wang, T. Qian, W. Li, Y. Fang, J. Xie, L. Ma, S. Lin*.Omni-Supervised Motion Editing: Balancing Change and Invariance through Positive-Negative Learning. CVPR, 2026.",
+    "M. Wang,J. Qiao,Y. Li,L. Jiang,W. Li,J. Hu,J. Xie,Z. Yu,X. Chen,G. Zhang,S. Lin*.CSD: Content-aware Speculative Decoding for Efficient Image Generation. ICML, 2026.",
+    "Y. Tang, B. Jia, W. Huang, L. Zhang, J. Xie, W. Li, W. Li, J. Hu, X. Chen, R. Ji, S. Lin*.Towards Efficient Large Language Reasoning Models via Extreme-Ratio Chain-of-Thought Compression. ICML, 2026.",
+    "Yuan Fang, Xiangfeng Xu, Wenxi Li, Yuming Wang, Heming Jia, Yunhang Shen, Jiao Xie, Shaohui Lin*.Query-guided feature mining for weakly supervised object detection. Neurocomputing, 2026.",
+    "Zihan Wang,Xudong Huang,Junbo Qiao,Wei Li,Jie Hu,Xinghao Chen,Shaohui Lin*.Allo{SR}2 : Rectifying One-Step Super-Resolution to Stay Real via Allomorphic Generative Flows. ECCV, 2026."
+  ],
+  "research_directions": [
+    "大模型压缩、高效图像复原与生成、Agent、AI4Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/lsh2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3866fde1bb392006acca"
+      ],
+      "ended_at": null,
+      "id": "aff_5ecb949b1edd96ad384b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s37/hdc/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_3866fde1bb392006acca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5ecb949b1edd96ad384b",
+      "claim_ids": [
+        "claim_3866fde1bb392006acca"
+      ],
+      "is_primary": true,
+      "normalized_value": "hongdc@dase.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s37/hdc/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "hongdc@dase.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3866fde1bb392006acca"
+    ],
+    "email": [
+      "claim_3866fde1bb392006acca"
+    ],
+    "name": [
+      "claim_3866fde1bb392006acca"
+    ],
+    "profile_url": [
+      "claim_3866fde1bb392006acca"
+    ],
+    "research_directions": [
+      "claim_3866fde1bb392006acca"
+    ],
+    "status": [
+      "claim_3866fde1bb392006acca"
+    ]
+  },
+  "id": "mentor_412c46fb348d5cf1648c",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3866fde1bb392006acca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "洪道诚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5ecb949b1edd96ad384b",
+      "claim_ids": [
+        "claim_3866fde1bb392006acca"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s37/hdc/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "教育大数据、智能教育、深度学习分析、多模态智能处理等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s37/hdc/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:36Z"
+}

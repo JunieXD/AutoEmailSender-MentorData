@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_17f0e8d6f12775da922b"
+      ],
+      "ended_at": null,
+      "id": "aff_3aa26eb6ab1a907bfa2b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wtq/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_17f0e8d6f12775da922b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3aa26eb6ab1a907bfa2b",
+      "claim_ids": [
+        "claim_17f0e8d6f12775da922b"
+      ],
+      "is_primary": true,
+      "normalized_value": "tqwei@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wtq/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "tqwei@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_17f0e8d6f12775da922b"
+    ],
+    "email": [
+      "claim_17f0e8d6f12775da922b"
+    ],
+    "name": [
+      "claim_17f0e8d6f12775da922b"
+    ],
+    "profile_url": [
+      "claim_17f0e8d6f12775da922b"
+    ],
+    "recent_papers": [
+      "claim_17f0e8d6f12775da922b"
+    ],
+    "research_directions": [
+      "claim_17f0e8d6f12775da922b"
+    ],
+    "status": [
+      "claim_17f0e8d6f12775da922b"
+    ],
+    "title": [
+      "claim_17f0e8d6f12775da922b"
+    ]
+  },
+  "id": "mentor_8e7fecbccb27afe6af7e",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_17f0e8d6f12775da922b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏同权"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3aa26eb6ab1a907bfa2b",
+      "claim_ids": [
+        "claim_17f0e8d6f12775da922b"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/wtq/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Liying Li, Junlong Zhou, Tongquan Wei, Mingsong Chen, and Sharon Hu, “Learning-Based Modeling and Optimization for Real-time System Availability,” IEEE Transactions on Computers, vol. 70, no. 4, pp. 581-594, 2021",
+    "Kun Cao, Liying Li, Yangguang Cui, Tongquan Wei, and Shiyan Hu, “Exploring Placement of Heterogeneous Edge Servers for Response Time Minimization in Mobile Edge-Cloud Computing,” IEEE Transactions on Industrial Informatics, vol. 17, no. 1, pp. 494-503, 2021",
+    "Changjiang Gou, Anne Benoit, Mingsong Chen, Loris Marchal and Tongquan Wei,“Reliable and Energy-Aware Mapping of Streaming Series-Parallel Applications onto Hierarchical Platforms,” INRIA, 2020",
+    "Yunfei Song, Tian Liu, Tongquan Wei, Xiangfeng Wang, Zhe Tao, Mingsong Chen,“FDA3: Federated Defense Against Adversarial Attacks for Cloud-Based IIoT Applications,” IEEE Transactions on Industrial Informatics, 2020",
+    "Longxia Huang, Junlong Zhou, Gongxuan Zhang, Jin Sun, Tongquan Wei, Shui Yu, and Shiyan Hu, \"IPANM: Incentive Public Auditing Scheme for Non-Manager Groups in Clouds,\" IEEE Transactions on Dependable and Secure Computing, 2020",
+    "Peijin Cong, Guo Xu, Junlong Zhou, Mingsong Chen, Tongquan Wei, and Meikang Qiu,\"Personality- and Value-aware Scheduling of User Requests in Cloud for Profit Maximization,\"IEEE Transactions on Cloud Computing, 2020",
+    "Peijing Cong, Junlong Zhou, Mingsong Chen, and Tongquan Wei, \"Personality-Guided Cloud Pricing via Reinforcement Learning,\" IEEE Transactions on Cloud Computing, 2020",
+    "Haifeng Gu, Jianning Zhang, Mingsong Chen, Tongquan Wei, Li Lei, and Fei Xie, \"Specification-Driven Conformance Checking for Virtual/Silicon Devices using Mutation Testing,\" IEEE Transactions on Computers, 2020"
+  ],
+  "research_directions": [
+    "边缘智能计算及应用、新型端-边-云协同智能计算架构、性能建模与优化、分布式深度学习与联邦学习、智能物联网(AIoT)资源配置、面向边缘端的实时视频流分析及图像恢复、深度神经网络模型及应用、多模态学习及部署优化、大模型应用及提示词工程、LLM Agent架构及优化技术、云计算与服务计算、个性化云数据中心资源配置、云经济学与云服务定价、容器编排与管理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/wtq/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3ac67e69e316c7c167c1"
+      ],
+      "ended_at": null,
+      "id": "aff_bac22abecb7aa1853bb2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zw2_6443/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3ac67e69e316c7c167c1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bac22abecb7aa1853bb2",
+      "claim_ids": [
+        "claim_3ac67e69e316c7c167c1"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangwei.thu2011@gmail.com",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/zw2_6443/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "zhangwei.thu2011@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3ac67e69e316c7c167c1"
+    ],
+    "email": [
+      "claim_3ac67e69e316c7c167c1"
+    ],
+    "name": [
+      "claim_3ac67e69e316c7c167c1"
+    ],
+    "profile_url": [
+      "claim_3ac67e69e316c7c167c1"
+    ],
+    "research_directions": [
+      "claim_3ac67e69e316c7c167c1"
+    ],
+    "status": [
+      "claim_3ac67e69e316c7c167c1"
+    ],
+    "title": [
+      "claim_3ac67e69e316c7c167c1"
+    ]
+  },
+  "id": "mentor_d2fe877af230583b833a",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3ac67e69e316c7c167c1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bac22abecb7aa1853bb2",
+      "claim_ids": [
+        "claim_3ac67e69e316c7c167c1"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/zw2_6443/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习(大模型、可解释机器学习、高效机器学习)、数据挖掘(推荐系统、用户行为建模)、智能教育(知识追踪与认知诊断、个性化学习推荐)等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/zw2_6443/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

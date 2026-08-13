@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0e0a819c9d5f59cc1fbe"
+      ],
+      "ended_at": null,
+      "id": "aff_74ed4d3e2476c5d86b07",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/sxm2_25665/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_0e0a819c9d5f59cc1fbe"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_74ed4d3e2476c5d86b07",
+      "claim_ids": [
+        "claim_0e0a819c9d5f59cc1fbe"
+      ],
+      "is_primary": true,
+      "normalized_value": "xmshi@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/sxm2_25665/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "xmshi@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ],
+    "email": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ],
+    "name": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ],
+    "profile_url": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ],
+    "recent_papers": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ],
+    "research_directions": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ],
+    "status": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ],
+    "title": [
+      "claim_0e0a819c9d5f59cc1fbe"
+    ]
+  },
+  "id": "mentor_d10bbfe881e7b97d51fc",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0e0a819c9d5f59cc1fbe"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "施晓明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_74ed4d3e2476c5d86b07",
+      "claim_ids": [
+        "claim_0e0a819c9d5f59cc1fbe"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/sxm2_25665/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Cost-effective Instruction Learning for Pathology Vision and Language Analysis.",
+    "Medical Dialogue System: A Survey of Categories, Methods, Evaluation and Challenges.",
+    "MedBench: A Comprehensive, Standardized, and Reliable Benchmarking System for Evaluating Chinese Medical Large Language Models.",
+    "MidMed: Towards Mixed-Type Dialogues for Medical Consultation.",
+    "AF Adapter: Continual Pretraining for Building Chinese Biomedical Language Model.",
+    "Combating with Extremely Noisy Samples in Weakly Supervised Slot Filling for Automatic Diagnosis.",
+    "Learning Semantic Alignment with Global Modality Reconstruction for VideoLanguage Pre-training towards Retrieval.",
+    "Online Action Detection with Learning Future Representations by Contrastive Learning."
+  ],
+  "research_directions": [
+    "自然语言处理、大模型基础技术及医疗教育等垂直领域应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/sxm2_25665/main.psp",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

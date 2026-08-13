@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_11c608ec019a661db992"
+      ],
+      "ended_at": null,
+      "id": "aff_31ea2034ecd5b5bf1fd8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247715",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_11c608ec019a661db992"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_31ea2034ecd5b5bf1fd8",
+      "claim_ids": [
+        "claim_11c608ec019a661db992"
+      ],
+      "is_primary": true,
+      "normalized_value": "lshi@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247715",
+      "status": "current",
+      "type": "email",
+      "value": "lshi@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_11c608ec019a661db992"
+    ],
+    "email": [
+      "claim_11c608ec019a661db992"
+    ],
+    "name": [
+      "claim_11c608ec019a661db992"
+    ],
+    "profile_url": [
+      "claim_11c608ec019a661db992"
+    ],
+    "recent_papers": [
+      "claim_11c608ec019a661db992"
+    ],
+    "research_directions": [
+      "claim_11c608ec019a661db992"
+    ],
+    "status": [
+      "claim_11c608ec019a661db992"
+    ],
+    "title": [
+      "claim_11c608ec019a661db992"
+    ]
+  },
+  "id": "mentor_07db59291a6f0cb887df",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_11c608ec019a661db992"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "石 亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_31ea2034ecd5b5bf1fd8",
+      "claim_ids": [
+        "claim_11c608ec019a661db992"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247715"
+    }
+  ],
+  "recent_papers": [
+    "ZNS SSD相关论文,发表于CCF-A类期刊TC",
+    "CSD相关论文,发表于CCF-A类期刊ACM TOS",
+    "两篇相关论文,发表于NVMSA 2026",
+    "Zoned UFS相关论文,发表于CCF-A类期刊ACM TOS",
+    "Zoned UFS相关论文,发表于CCF-A类会议DAC",
+    "相关论文,发表于USENIX FAST(Works in Progress)",
+    "相关论文,发表于USENIX FAST(Poster)"
+  ],
+  "research_directions": [
+    "存储系统和操作系统,包括大模型/人工智能、大数据/云计算、嵌入式系统/物联网以及移动终端等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247715",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f176f2b80e1a106934f9"
+      ],
+      "ended_at": null,
+      "id": "aff_1d0e5b2433618f8cb463",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wf2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_f176f2b80e1a106934f9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1d0e5b2433618f8cb463",
+      "claim_ids": [
+        "claim_f176f2b80e1a106934f9"
+      ],
+      "is_primary": true,
+      "normalized_value": "fwang@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/wf2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "fwang@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f176f2b80e1a106934f9"
+    ],
+    "email": [
+      "claim_f176f2b80e1a106934f9"
+    ],
+    "name": [
+      "claim_f176f2b80e1a106934f9"
+    ],
+    "profile_url": [
+      "claim_f176f2b80e1a106934f9"
+    ],
+    "recent_papers": [
+      "claim_f176f2b80e1a106934f9"
+    ],
+    "research_directions": [
+      "claim_f176f2b80e1a106934f9"
+    ],
+    "status": [
+      "claim_f176f2b80e1a106934f9"
+    ],
+    "title": [
+      "claim_f176f2b80e1a106934f9"
+    ]
+  },
+  "id": "mentor_458f641906fc06b9ea43",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f176f2b80e1a106934f9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1d0e5b2433618f8cb463",
+      "claim_ids": [
+        "claim_f176f2b80e1a106934f9"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/wf2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Youzhe Song,Feng Wang. “CoReFace: Sample-guided Contrastive Regularization for Deep Face Recognition”, Pattern Recognition, 2024, 152(110483): 1-12.",
+    "Jiangqi Liu andFeng Wang, “Mixed-attention Auto Encoder for Multi-class Industrial Anomaly Detection”, International Conference on Acoustic, Speech and Signal Processing, 2024.",
+    "Haohan Luo, Feng Wang. “A Simulation-based Framework for Urban Road Accident Detection”, IEEE Conference on Acoustics, Speech, and Signal Processing, 2023.",
+    "Yanhao Jing,Feng Wang. “TP-VIT: A Two-Pathway Vision Transformer for Video Action Recognition”, International Conference on Acoustics, Speech, and Signal Processing, 2022.",
+    "H. Qiu, L. He, H. Pan, F. Zhang,F. Wang,\"Ego-Deliver: A Large-Scale Dataset for Egocentric Video Analysis\", ACM Multimedia, 2021.",
+    "H. Qiu, L. He,F. Wang, \"DUAL FOCUS ATTENTION NETWORK FOR VIDEO EMOTION RECOGNITION\", ICME 2020.",
+    "X. Gu, X. Xue, F. Wang,“FINE-GRAINED ACTION RECOGNITION ON A NOVEL BASKETBALL DATASET”, ICASSP, 2020.",
+    "H. Qiu, Y, Zheng, H. Ye,F. Wang, and L. He, “Precise Temporal Action Localization by Evolving Temporal Proposals”, ICMR 2018."
+  ],
+  "research_directions": [
+    "机器视觉",
+    "多媒体信息处理",
+    "医学图像分析",
+    "智能交通",
+    "模式识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/wf2/main.psp",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:32:36Z"
+}

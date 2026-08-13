@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7d834b57fa06d6aef7ac"
+      ],
+      "ended_at": null,
+      "id": "aff_60b473059881f846f2fd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:36Z",
+      "organization_id": "org_auto_f50048bc0b7406c548d5",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/xjk/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7d834b57fa06d6aef7ac"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_60b473059881f846f2fd",
+      "claim_ids": [
+        "claim_7d834b57fa06d6aef7ac"
+      ],
+      "is_primary": true,
+      "normalized_value": "jkxie@cs.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:36Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s16/xjk/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jkxie@cs.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7d834b57fa06d6aef7ac"
+    ],
+    "email": [
+      "claim_7d834b57fa06d6aef7ac"
+    ],
+    "name": [
+      "claim_7d834b57fa06d6aef7ac"
+    ],
+    "profile_url": [
+      "claim_7d834b57fa06d6aef7ac"
+    ],
+    "recent_papers": [
+      "claim_7d834b57fa06d6aef7ac"
+    ],
+    "research_directions": [
+      "claim_7d834b57fa06d6aef7ac"
+    ],
+    "status": [
+      "claim_7d834b57fa06d6aef7ac"
+    ],
+    "title": [
+      "claim_7d834b57fa06d6aef7ac"
+    ]
+  },
+  "id": "mentor_eecd1ec0d12b5eb7837d",
+  "last_verified_at": "2026-08-11T13:32:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7d834b57fa06d6aef7ac"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢瑾奎"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_60b473059881f846f2fd",
+      "claim_ids": [
+        "claim_7d834b57fa06d6aef7ac"
+      ],
+      "observed_at": "2026-08-11T13:32:36Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s16/xjk/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "曹磊亮,谢瑾奎,郭天晟.结合残差网络和噪声处理的节点分类模型.小型微型计算机系统, 2024.6.",
+    "颜祯, 谢瑾奎,曹磊亮.基于邻域交互和图神经网络的推荐模型.小型微型计算机系统, 2023.7.",
+    "Wenzhuo Huang, Xuntian Yan, Zhen Yan,Jinkui Xie. A Heterogeneous Collaborative Filtering Model for Social Recommendation. 28th International Conference on Neural Information Processing (ICONIP 2021). Springer, Cham, 2021: 414-421.",
+    "Wanting Zhao, Hao Xu, Wenzhuo Huang, Jinkui Xie. Higher-Order Heterogeneous Graph Convolutional Network Based on Meta-Paths. 2020 International Joint Conference on Neural Networks (IJCNN 2020), 2020.7.",
+    "杨奔,王炜晔,赵婉婷,谢瑾奎.基于DQN的动态深度多分支搜索的自动配载算法.计算机工程, 2020.8.",
+    "Weiye Wang, Ben Yang, Wanting Zhao, Jinkui Xie. A deep matrix factorization method with missing not at random data for social recommendation. 26th International Conference on Neural Informational Processing (ICONIP 2019), 2019.12.",
+    "Yuzhu Wu, Qianwen Zhang, Jinkui Xie. Coarsening Networks Based on Local Link Similarity for Community Detection. The 42nd IEEE Computer Software and Applications Conference. (COMPSAC 2018), 2018.7.",
+    "Yuzhu Wu, Shumin Pan, Qianwen Zhang, Jinkui Xie. Dynamic Bidding Strategy Based on Probabilistic Feedback in Display Advertising. The 24th International Conference on Neural Information Processing (ICONIP 2017), 2017.11."
+  ],
+  "research_directions": [
+    "机器学习与大数据分析、算法博弈论与社会计算、分布式系统与智能控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:36Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s16/xjk/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:36Z"
+}
