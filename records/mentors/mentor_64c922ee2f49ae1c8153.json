@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dd5123a2f49f1af80d34"
+      ],
+      "ended_at": null,
+      "id": "aff_3c996e035f8c37d80313",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/ZJ21/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_dd5123a2f49f1af80d34"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3c996e035f8c37d80313",
+      "claim_ids": [
+        "claim_dd5123a2f49f1af80d34"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjie@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZJ21/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjie@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dd5123a2f49f1af80d34"
+    ],
+    "email": [
+      "claim_dd5123a2f49f1af80d34"
+    ],
+    "name": [
+      "claim_dd5123a2f49f1af80d34"
+    ],
+    "profile_url": [
+      "claim_dd5123a2f49f1af80d34"
+    ],
+    "research_directions": [
+      "claim_dd5123a2f49f1af80d34"
+    ],
+    "status": [
+      "claim_dd5123a2f49f1af80d34"
+    ]
+  },
+  "id": "mentor_64c922ee2f49ae1c8153",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dd5123a2f49f1af80d34"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张捷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3c996e035f8c37d80313",
+      "claim_ids": [
+        "claim_dd5123a2f49f1af80d34"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZJ21/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件分析、隐私保护、低代码技术、软件实训等领域"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZJ21/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-12T07:26:28Z"
+}

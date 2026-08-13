@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b76088072ff44c3b191d"
+      ],
+      "ended_at": null,
+      "id": "aff_e5c985eaf7dd8a989be2",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/WBB1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b76088072ff44c3b191d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e5c985eaf7dd8a989be2",
+      "claim_ids": [
+        "claim_b76088072ff44c3b191d"
+      ],
+      "is_primary": true,
+      "normalized_value": "bingbowang@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/WBB1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bingbowang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b76088072ff44c3b191d"
+    ],
+    "email": [
+      "claim_b76088072ff44c3b191d"
+    ],
+    "name": [
+      "claim_b76088072ff44c3b191d"
+    ],
+    "profile_url": [
+      "claim_b76088072ff44c3b191d"
+    ],
+    "recent_papers": [
+      "claim_b76088072ff44c3b191d"
+    ],
+    "research_directions": [
+      "claim_b76088072ff44c3b191d"
+    ],
+    "status": [
+      "claim_b76088072ff44c3b191d"
+    ],
+    "title": [
+      "claim_b76088072ff44c3b191d"
+    ]
+  },
+  "id": "mentor_f261a52b058e8b6f01c3",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b76088072ff44c3b191d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王炳波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e5c985eaf7dd8a989be2",
+      "claim_ids": [
+        "claim_b76088072ff44c3b191d"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/WBB1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "The Peripheral and Core regions of Virus-Host Network of COVID-19",
+    "Improving Single-Cell RNA-seq Clustering by Integrating Pathways",
+    "CBP-JMF: an Improved Joint Matrix Tri-Factorization Method for Characterizing Complex Biological Processes of Diseases",
+    "C3: connect separate connected components to form a succinct disease module",
+    "Inferring essential proteins from centrality in interconnected multilayer networks",
+    "The periphery and the core properties explain the omnigenic model in the human interactome",
+    "Optimal control nodes in disease-perturbed networks as targets for combination therapy",
+    "Diversified Control Paths: A Significant Way Disease Genes Perturb the Human Regulatory Network"
+  ],
+  "research_directions": [
+    "复杂网络数据分析、数据挖掘、计算生物信息学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/WBB1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_21fbc2ca0f1c6045026e"
+      ],
+      "ended_at": null,
+      "id": "aff_b6b2cfba848000455b14",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/zhouenyuan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_21fbc2ca0f1c6045026e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b6b2cfba848000455b14",
+      "claim_ids": [
+        "claim_21fbc2ca0f1c6045026e"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouenyuan@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/zhouenyuan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhouenyuan@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_21fbc2ca0f1c6045026e"
+    ],
+    "email": [
+      "claim_21fbc2ca0f1c6045026e"
+    ],
+    "name": [
+      "claim_21fbc2ca0f1c6045026e"
+    ],
+    "profile_url": [
+      "claim_21fbc2ca0f1c6045026e"
+    ],
+    "research_directions": [
+      "claim_21fbc2ca0f1c6045026e"
+    ],
+    "status": [
+      "claim_21fbc2ca0f1c6045026e"
+    ],
+    "title": [
+      "claim_21fbc2ca0f1c6045026e"
+    ]
+  },
+  "id": "mentor_013c9a4a2291dd9de8fc",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_21fbc2ca0f1c6045026e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周恩愿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b6b2cfba848000455b14",
+      "claim_ids": [
+        "claim_21fbc2ca0f1c6045026e"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/zhouenyuan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "区块链数据库、分布式知识图谱、可信人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/zhouenyuan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

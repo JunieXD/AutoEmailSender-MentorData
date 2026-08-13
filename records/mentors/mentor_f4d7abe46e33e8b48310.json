@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2a88d6d56707294059aa"
+      ],
+      "ended_at": null,
+      "id": "aff_4f242c7601aee74cf8e2",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/YY3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2a88d6d56707294059aa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4f242c7601aee74cf8e2",
+      "claim_ids": [
+        "claim_2a88d6d56707294059aa"
+      ],
+      "is_primary": true,
+      "normalized_value": "yaoyong@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/YY3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yaoyong@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2a88d6d56707294059aa"
+    ],
+    "email": [
+      "claim_2a88d6d56707294059aa"
+    ],
+    "name": [
+      "claim_2a88d6d56707294059aa"
+    ],
+    "profile_url": [
+      "claim_2a88d6d56707294059aa"
+    ],
+    "research_directions": [
+      "claim_2a88d6d56707294059aa"
+    ],
+    "status": [
+      "claim_2a88d6d56707294059aa"
+    ],
+    "title": [
+      "claim_2a88d6d56707294059aa"
+    ]
+  },
+  "id": "mentor_f4d7abe46e33e8b48310",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2a88d6d56707294059aa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4f242c7601aee74cf8e2",
+      "claim_ids": [
+        "claim_2a88d6d56707294059aa"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YY3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘算法及优化、分布式计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YY3/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

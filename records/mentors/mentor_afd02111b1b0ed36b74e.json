@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c37b60446d028a4f45bf"
+      ],
+      "ended_at": null,
+      "id": "aff_305c774b702ade7892f4",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/ZHONGHAODI/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c37b60446d028a4f45bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_305c774b702ade7892f4",
+      "claim_ids": [
+        "claim_c37b60446d028a4f45bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhonghaodi@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZHONGHAODI/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhonghaodi@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c37b60446d028a4f45bf"
+    ],
+    "email": [
+      "claim_c37b60446d028a4f45bf"
+    ],
+    "name": [
+      "claim_c37b60446d028a4f45bf"
+    ],
+    "profile_url": [
+      "claim_c37b60446d028a4f45bf"
+    ],
+    "research_directions": [
+      "claim_c37b60446d028a4f45bf"
+    ],
+    "status": [
+      "claim_c37b60446d028a4f45bf"
+    ],
+    "title": [
+      "claim_c37b60446d028a4f45bf"
+    ]
+  },
+  "id": "mentor_afd02111b1b0ed36b74e",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c37b60446d028a4f45bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "钟昊迪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_305c774b702ade7892f4",
+      "claim_ids": [
+        "claim_c37b60446d028a4f45bf"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZHONGHAODI/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "具身视觉感知与计算、多模态深度学习、数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZHONGHAODI/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

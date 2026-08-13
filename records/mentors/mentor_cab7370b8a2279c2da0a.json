@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6ed7bf64d51ed2b953d8"
+      ],
+      "ended_at": null,
+      "id": "aff_e5bb5a60a56132b6820a",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/YB5/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6ed7bf64d51ed2b953d8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e5bb5a60a56132b6820a",
+      "claim_ids": [
+        "claim_6ed7bf64d51ed2b953d8"
+      ],
+      "is_primary": true,
+      "normalized_value": "yubin@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/YB5/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yubin@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6ed7bf64d51ed2b953d8"
+    ],
+    "email": [
+      "claim_6ed7bf64d51ed2b953d8"
+    ],
+    "name": [
+      "claim_6ed7bf64d51ed2b953d8"
+    ],
+    "profile_url": [
+      "claim_6ed7bf64d51ed2b953d8"
+    ],
+    "research_directions": [
+      "claim_6ed7bf64d51ed2b953d8"
+    ],
+    "status": [
+      "claim_6ed7bf64d51ed2b953d8"
+    ],
+    "title": [
+      "claim_6ed7bf64d51ed2b953d8"
+    ]
+  },
+  "id": "mentor_cab7370b8a2279c2da0a",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6ed7bf64d51ed2b953d8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "鱼滨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e5bb5a60a56132b6820a",
+      "claim_ids": [
+        "claim_6ed7bf64d51ed2b953d8"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YB5/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信息安全、人工智能、医学图像处理、大数据安全与治理、机器学习、软件开发方法与环境"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YB5/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

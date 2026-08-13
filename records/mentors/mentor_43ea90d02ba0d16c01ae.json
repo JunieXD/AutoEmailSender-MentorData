@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6ef10dde08f4f9620e83"
+      ],
+      "ended_at": null,
+      "id": "aff_ec5cfbc88836afe197d8",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/xtqiao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6ef10dde08f4f9620e83"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec5cfbc88836afe197d8",
+      "claim_ids": [
+        "claim_6ef10dde08f4f9620e83"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiaoxiaotian@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/xtqiao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiaoxiaotian@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6ef10dde08f4f9620e83"
+    ],
+    "email": [
+      "claim_6ef10dde08f4f9620e83"
+    ],
+    "name": [
+      "claim_6ef10dde08f4f9620e83"
+    ],
+    "profile_url": [
+      "claim_6ef10dde08f4f9620e83"
+    ],
+    "recent_papers": [
+      "claim_6ef10dde08f4f9620e83"
+    ],
+    "research_directions": [
+      "claim_6ef10dde08f4f9620e83"
+    ],
+    "status": [
+      "claim_6ef10dde08f4f9620e83"
+    ],
+    "title": [
+      "claim_6ef10dde08f4f9620e83"
+    ]
+  },
+  "id": "mentor_43ea90d02ba0d16c01ae",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6ef10dde08f4f9620e83"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "乔晓田"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ec5cfbc88836afe197d8",
+      "claim_ids": [
+        "claim_6ef10dde08f4f9620e83"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/xtqiao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "AmodalEdit: Advancing Instruction-Based Image Editing via Amodal Scene Layout Perception.",
+    "LayoutAD: Exploring Semantic-Geometric Misalignment Reasoning for Scene Layout Anomaly Detection.",
+    "Less is More: Efficient Image Vectorization with Adaptive Parameterization.",
+    "HDLayout: Hierarchical and Directional Layout Planning for Arbitrary Shaped Visual Text Generation.",
+    "Under the Shadow: Exploiting Opacity Variation for Fine-grained Shadow Detection.",
+    "Design Order Guided Visual Note Optimization.",
+    "Learning Object Context for Novel-view Scene Layout Generation.",
+    "Instance-aware Scene Layout Forecasting."
+  ],
+  "research_directions": [
+    "多媒体数据智能分析与可视化,复杂场景感知与理解(Perceptive AI)、创意内容设计与生成(Generative AI)、多模态大模型优化(Efficient AI),智能媒体分析、计算机视觉、计算机图形学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/xtqiao/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_298f5ca474cabc1246bb"
+      ],
+      "ended_at": null,
+      "id": "aff_c0b06df44a7434eb19b5",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/TL1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_298f5ca474cabc1246bb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c0b06df44a7434eb19b5",
+      "claim_ids": [
+        "claim_298f5ca474cabc1246bb"
+      ],
+      "is_primary": true,
+      "normalized_value": "tianlong@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/TL1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tianlong@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_298f5ca474cabc1246bb"
+    ],
+    "email": [
+      "claim_298f5ca474cabc1246bb"
+    ],
+    "name": [
+      "claim_298f5ca474cabc1246bb"
+    ],
+    "profile_url": [
+      "claim_298f5ca474cabc1246bb"
+    ],
+    "recent_papers": [
+      "claim_298f5ca474cabc1246bb"
+    ],
+    "research_directions": [
+      "claim_298f5ca474cabc1246bb"
+    ],
+    "status": [
+      "claim_298f5ca474cabc1246bb"
+    ],
+    "title": [
+      "claim_298f5ca474cabc1246bb"
+    ]
+  },
+  "id": "mentor_af196592f6282e523ab0",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_298f5ca474cabc1246bb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田隆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c0b06df44a7434eb19b5",
+      "claim_ids": [
+        "claim_298f5ca474cabc1246bb"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/TL1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Lu R, Liu G, Li K, Tian L*, et al. MaskAD: Parallel Masked Autoencoder for Multi-class Unsupervised Anomaly Detection. AAAI, 2026, Oral. (通讯)(CCF-A类会议)",
+    "Li Y,Tian L*, et al. FastRef: Fast Prototype Refinement for Few-shot Industrial Anomaly Detection. CVPR, 2026. (学生一作,通讯)(CCF-A类会议)",
+    "张博安,李坤城,田隆*, et al. 基于多域表征对齐融合的雷达目标无监督异常检测方法. 电子学报, 2026. (学生一作,通讯)(国内雷达领域具有影响力的期刊)",
+    "Zhang B, Dong H, Zhang J, Tian L*, et al. Low-rank Adaptation of Pre-trained Stable Diffusion for Rigid-body Target ISAR Imaging. IGARSS, 2025, Oral. (学生共一,通讯)(CCF-C类会议)",
+    "Tian L, Zhang Y, Chai X, et al. Fast Prototype Refinement for HRRP Target Recognition with Missing Aspects. IGARSS, 2025. (CCF-C类会议)",
+    "Shi H, Tian L*, Tao J, Li Y, Wang L, Liu X, A Spatial-temporal Deep Probabilistic Diffusion Model for Reliable Hail Nowcasting with Radar Echo Extrapolation. WWW Companion, 2025. (与学生共一)(CCF-A类会议的Workshop)",
+    "Zhang J, Dong H, Tian L*, He X, Sun H, Liu Y, Sparse Bayesian Network for Fast Micro-Doppler Analysis. IEEE ICASSP, 2025. (学生一作,通讯) (CCF-B类会议)",
+    "Yang X, Li Y,Tian L*, Ting L, Liu X, Wang P. Foreground-aware Prototypical Network for Prohibited Item Detection from X-ray Scans. IEEE ICASSP, 2025.(学生一作,通讯) (CCF-B类会议)"
+  ],
+  "research_directions": [
+    "时间序列表示学习、智能信号处理、小样本表示学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/TL1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

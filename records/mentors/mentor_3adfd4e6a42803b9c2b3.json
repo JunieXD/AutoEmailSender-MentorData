@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4ffe79610274ea09dc64"
+      ],
+      "ended_at": null,
+      "id": "aff_f961f2b96c564503bf9a",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/BL2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4ffe79610274ea09dc64"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f961f2b96c564503bf9a",
+      "claim_ids": [
+        "claim_4ffe79610274ea09dc64"
+      ],
+      "is_primary": true,
+      "normalized_value": "baoliang@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/BL2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "baoliang@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4ffe79610274ea09dc64"
+    ],
+    "email": [
+      "claim_4ffe79610274ea09dc64"
+    ],
+    "name": [
+      "claim_4ffe79610274ea09dc64"
+    ],
+    "profile_url": [
+      "claim_4ffe79610274ea09dc64"
+    ],
+    "research_directions": [
+      "claim_4ffe79610274ea09dc64"
+    ],
+    "status": [
+      "claim_4ffe79610274ea09dc64"
+    ],
+    "title": [
+      "claim_4ffe79610274ea09dc64"
+    ]
+  },
+  "id": "mentor_3adfd4e6a42803b9c2b3",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4ffe79610274ea09dc64"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "鲍亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f961f2b96c564503bf9a",
+      "claim_ids": [
+        "claim_4ffe79610274ea09dc64"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/BL2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "软件体系结构、面向服务的计算、云计算、大数据等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/BL2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

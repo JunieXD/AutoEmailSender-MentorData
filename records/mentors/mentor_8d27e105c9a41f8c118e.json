@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5b1b0b7fca580abf2a22"
+      ],
+      "ended_at": null,
+      "id": "aff_ddaa8e91807c2b2fd402",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/L_Fan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5b1b0b7fca580abf2a22"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ddaa8e91807c2b2fd402",
+      "claim_ids": [
+        "claim_5b1b0b7fca580abf2a22"
+      ],
+      "is_primary": true,
+      "normalized_value": "lfan@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/L_Fan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lfan@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5b1b0b7fca580abf2a22"
+    ],
+    "email": [
+      "claim_5b1b0b7fca580abf2a22"
+    ],
+    "name": [
+      "claim_5b1b0b7fca580abf2a22"
+    ],
+    "profile_url": [
+      "claim_5b1b0b7fca580abf2a22"
+    ],
+    "recent_papers": [
+      "claim_5b1b0b7fca580abf2a22"
+    ],
+    "research_directions": [
+      "claim_5b1b0b7fca580abf2a22"
+    ],
+    "status": [
+      "claim_5b1b0b7fca580abf2a22"
+    ],
+    "title": [
+      "claim_5b1b0b7fca580abf2a22"
+    ]
+  },
+  "id": "mentor_8d27e105c9a41f8c118e",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5b1b0b7fca580abf2a22"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "范磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ddaa8e91807c2b2fd402",
+      "claim_ids": [
+        "claim_5b1b0b7fca580abf2a22"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/L_Fan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "L. Fan*, Z.Su, X.Liu, An asynchronous parallel symbolic regression approach based on multiobjective genetic programming with GPU acceleration, Applied Soft Computing, 196 (2026) 115010. doi:https://doi.org/10.1016/j.asoc.2026.115010",
+    "L. Fan*, et al. Optimizing data regeneration and storage with data dependency for cloud scientific workflow systems, Expert Systems with Applications, 238 (2024) 121984. doi:https://doi.org/10.1016/j.eswa.2023.121984",
+    "L. Fan*, et al. Decomposition based cross-parallel multiobjective genetic programming for symbolic regression. Applied. Soft Computing,167 (2024) 112239. doi:https://doi.org/10.1016/j.asoc.2024.112239",
+    "范磊等. 一种云环境中科学工作流数据集的存储方法, 2022-10-04, 发明专利,中国, CN202011133768.8 (已授权)",
+    "范磊等. 一种面向多请求的科学工作流数据集存储方法, 2022-10-04, 发明专利,中国, CN202011131397.X (已授权)",
+    "范磊等. 基于四阶龙格-库塔法的多弹道并行计算研究, 航空科学技术, 35(9):101-110, 2024.",
+    "Y. Liu, Z. Su, Y. Zhuang, L. Fan* and L. Zhou, \"Towards task parallelizing in scientific workflow systems,\" 2022 18th International Conference on Computational Intelligence and Security (CIS), Chengdu, China, 2022, pp. 404-408.",
+    "L. Zhou, Z. Su, Y. Zhuang, Y. Liu and L. Fan*, \"Parallelization of multi-trajectory calculation based on Runge-Kutta method,\" 2022 18th International Conference on Computational Intelligence and Security (CIS), Chengdu, China, 2022, pp. 409-413."
+  ],
+  "research_directions": [
+    "可解释机器学习方法及应用、智能工作流理论与方法、计算智能及应用、工程优化理论与方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/L_Fan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

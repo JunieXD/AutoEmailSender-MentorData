@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2446562610ca5f5daab0"
+      ],
+      "ended_at": null,
+      "id": "aff_93552b3748c661c667be",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_284dcd56c6a65655ef55",
+      "source_url": "https://faculty.xidian.edu.cn/zhouyangtao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_2446562610ca5f5daab0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_93552b3748c661c667be",
+      "claim_ids": [
+        "claim_2446562610ca5f5daab0"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouyangtao@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/zhouyangtao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhouyangtao@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2446562610ca5f5daab0"
+    ],
+    "email": [
+      "claim_2446562610ca5f5daab0"
+    ],
+    "name": [
+      "claim_2446562610ca5f5daab0"
+    ],
+    "profile_url": [
+      "claim_2446562610ca5f5daab0"
+    ],
+    "recent_papers": [
+      "claim_2446562610ca5f5daab0"
+    ],
+    "research_directions": [
+      "claim_2446562610ca5f5daab0"
+    ],
+    "status": [
+      "claim_2446562610ca5f5daab0"
+    ]
+  },
+  "id": "mentor_59791586807fb98e34ca",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2446562610ca5f5daab0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周洋涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_93552b3748c661c667be",
+      "claim_ids": [
+        "claim_2446562610ca5f5daab0"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/zhouyangtao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "D3MBR: Dual-level Diffusion Denoiser with Preference Guidance for Multi-behavior Recommendation",
+    "Knowledge-empowered Course Recommendation with Cross-graph and Forgetting-aware Cross-attention",
+    "SeeKRec: Towards Semantic-empowered Knowledge-aware Recommendation",
+    "PreFact: Knowledge Propagation Regulating Network Toward Preferred Facts for Knowledge-aware Recommendation",
+    "Bundling-aware Masked Graph AutoEncoder for Bundle Recommendation",
+    "A Spectral Heterogeneous Diffusion Framework for Knowledge-aware Recommendation",
+    "Breaking Knowledge Boundaries: Cognitive Distillation-enhanced Cross-Behavior Course Recommendation Model",
+    "Knowledge Starts with Practice: Knowledge-aware Exercise Generative Recommendation with Adaptive Multi-Agent Cooperation"
+  ],
+  "research_directions": [
+    "智能推荐与决策、教育大数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/zhouyangtao/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-12T07:26:28Z"
+}

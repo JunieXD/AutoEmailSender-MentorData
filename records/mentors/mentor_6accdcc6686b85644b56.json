@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b11384cd0378faab2ed"
+      ],
+      "ended_at": null,
+      "id": "aff_4dd361c44c0eb984114f",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LUZIXIANG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b11384cd0378faab2ed"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4dd361c44c0eb984114f",
+      "claim_ids": [
+        "claim_0b11384cd0378faab2ed"
+      ],
+      "is_primary": true,
+      "normalized_value": "zxlu@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LUZIXIANG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zxlu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b11384cd0378faab2ed"
+    ],
+    "email": [
+      "claim_0b11384cd0378faab2ed"
+    ],
+    "name": [
+      "claim_0b11384cd0378faab2ed"
+    ],
+    "profile_url": [
+      "claim_0b11384cd0378faab2ed"
+    ],
+    "research_directions": [
+      "claim_0b11384cd0378faab2ed"
+    ],
+    "status": [
+      "claim_0b11384cd0378faab2ed"
+    ],
+    "title": [
+      "claim_0b11384cd0378faab2ed"
+    ]
+  },
+  "id": "mentor_6accdcc6686b85644b56",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b11384cd0378faab2ed"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "卢子祥"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4dd361c44c0eb984114f",
+      "claim_ids": [
+        "claim_0b11384cd0378faab2ed"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LUZIXIANG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能教育、计算机视觉、计算机合成全息"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LUZIXIANG/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

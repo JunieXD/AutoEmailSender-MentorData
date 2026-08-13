@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c74f00931296f34e4a83"
+      ],
+      "ended_at": null,
+      "id": "aff_da2fcd9e2159e025bc8d",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LIYUNAN/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c74f00931296f34e4a83"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_da2fcd9e2159e025bc8d",
+      "claim_ids": [
+        "claim_c74f00931296f34e4a83"
+      ],
+      "is_primary": true,
+      "normalized_value": "yunanli@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LIYUNAN/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yunanli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c74f00931296f34e4a83"
+    ],
+    "email": [
+      "claim_c74f00931296f34e4a83"
+    ],
+    "name": [
+      "claim_c74f00931296f34e4a83"
+    ],
+    "profile_url": [
+      "claim_c74f00931296f34e4a83"
+    ],
+    "recent_papers": [
+      "claim_c74f00931296f34e4a83"
+    ],
+    "research_directions": [
+      "claim_c74f00931296f34e4a83"
+    ],
+    "status": [
+      "claim_c74f00931296f34e4a83"
+    ],
+    "title": [
+      "claim_c74f00931296f34e4a83"
+    ]
+  },
+  "id": "mentor_3f94be5ba4674e6e47cf",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c74f00931296f34e4a83"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李宇楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_da2fcd9e2159e025bc8d",
+      "claim_ids": [
+        "claim_c74f00931296f34e4a83"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LIYUNAN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Guanwen Feng, Zhihao Qian,Yunan Li*, Siyu Jin, Qiguang Miao*, Chi-Man Pun. LES-Talker: Fine-grained emotion editing for talking head generation in linear emotion space.IEEE Transactions on Affective Computing. 2026. (CCF B类,情感计算与多媒体顶级期刊)",
+    "Guanwen Feng, Haoran Cheng,Yunan Li*, Zhiyuan Ma, Chaoneng Li, Zhihao Qian, QiguangMiao, Chi-Man Pun. EmoSpeaker: One-shot fine-grained emotion-controlled talking face generation.IEEE Transactions on Multimedia. 2026. [full_text][project] (CCF A类,多媒体顶级期刊)",
+    "Xi Geng,Yunan Li(共一), Zhuoqi Ma, Zixiang Lu, Qiguang Miao. No blind alignment but generation: A different view of continuous sign language recognition based on diffusion. Pattern Recognition. 2026: 169, 111960.",
+    "Yunan Li, Xi Geng, Zhuoqi Ma, Qiguang Miao, Chi-Man Pun. Boundary-Aware Sentence-Gloss Alignment with Semantic Similarity Measurement for Continuous Sign Language Recognition. IEEE Transactions on Circuits and Systems for Video Technology. 2025.",
+    "Guanwen Feng, Yilin Zhang, Yunan Li, Siyu Jin, Qiguang Miao. Gaussian-Face: Talking Head Generation with Hybrid Density via 3D Gaussian Splatting. ICASSP. 2025. (CCF B类,语音与信号处理领域重要会议)",
+    "Yuanyuan Shi,Yunan Li*, Siyu Liang Huizhou Chen, Qiguang Miao*. MGR-Dark: A Large Multimodal Video Dataset and RGB-IR Benchmark for Gesture Recognition in Darkness. ACM MM. 2024: 2321-2330.[full_text](CCF A类,计算机视觉顶级会议)",
+    "Yunan Li, Yihao Zhang, Shoude Li, et al. Watching it in Dark: A Target-Aware Representation Learning Framework for High-Level Vision Tasks in Low Illumination. ECCV, 2024: 37-53. [full_text][code](CCF B类,计算机视觉顶级会议)",
+    "Yunan Li, Huizhou Chen, Guanwen Feng, Qiguang Miao. Learning Robust Representations with Information Bottleneck and Memory Network for RGB-D-based Gesture Recognition. Proceedings of the IEEE Conference on Computer Vision. 2023:20968-20978. [full_text][code](CCF A类,计算机视觉顶级会议)"
+  ],
+  "research_directions": [
+    "计算机视觉、深度学习、图像增强、人体行为/手势识别、手语识别与生成、恶劣天气下图像增强、跨模态面部/手语动画生成、图像风格迁移"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LIYUNAN/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

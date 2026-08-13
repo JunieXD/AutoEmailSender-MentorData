@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3be7b1dfe3bd527a6001"
+      ],
+      "ended_at": null,
+      "id": "aff_5e38eb9f9cd669ce44a8",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3be7b1dfe3bd527a6001"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5e38eb9f9cd669ce44a8",
+      "claim_ids": [
+        "claim_3be7b1dfe3bd527a6001"
+      ],
+      "is_primary": true,
+      "normalized_value": "cxu@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cxu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3be7b1dfe3bd527a6001"
+    ],
+    "email": [
+      "claim_3be7b1dfe3bd527a6001"
+    ],
+    "name": [
+      "claim_3be7b1dfe3bd527a6001"
+    ],
+    "profile_url": [
+      "claim_3be7b1dfe3bd527a6001"
+    ],
+    "status": [
+      "claim_3be7b1dfe3bd527a6001"
+    ],
+    "title": [
+      "claim_3be7b1dfe3bd527a6001"
+    ]
+  },
+  "id": "mentor_b916c887d5158957598e",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3be7b1dfe3bd527a6001"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐偲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5e38eb9f9cd669ce44a8",
+      "claim_ids": [
+        "claim_3be7b1dfe3bd527a6001"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/XUCAI/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

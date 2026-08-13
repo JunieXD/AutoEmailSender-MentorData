@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_711bf12ffaefdd155098"
+      ],
+      "ended_at": null,
+      "id": "aff_cc686b6b59ab66d7a49d",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LUYIHENG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_711bf12ffaefdd155098"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cc686b6b59ab66d7a49d",
+      "claim_ids": [
+        "claim_711bf12ffaefdd155098"
+      ],
+      "is_primary": true,
+      "normalized_value": "luyiheng@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LUYIHENG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "luyiheng@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_711bf12ffaefdd155098"
+    ],
+    "email": [
+      "claim_711bf12ffaefdd155098"
+    ],
+    "name": [
+      "claim_711bf12ffaefdd155098"
+    ],
+    "profile_url": [
+      "claim_711bf12ffaefdd155098"
+    ],
+    "recent_papers": [
+      "claim_711bf12ffaefdd155098"
+    ],
+    "research_directions": [
+      "claim_711bf12ffaefdd155098"
+    ],
+    "status": [
+      "claim_711bf12ffaefdd155098"
+    ],
+    "title": [
+      "claim_711bf12ffaefdd155098"
+    ]
+  },
+  "id": "mentor_53085e5ecf1764595328",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_711bf12ffaefdd155098"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "芦毅衡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cc686b6b59ab66d7a49d",
+      "claim_ids": [
+        "claim_711bf12ffaefdd155098"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LUYIHENG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Energy-Based CNN Pruning for Remote Sensing Scene Classification. TGRS, 2023.",
+    "SNPF: Sensitiveness based Network Pruning Framework for Efficient Edge Computing. IoTJ, 2024.",
+    "Entropy Induced Pruning Framework for Convolutional Neural Networks. AAAI 2024.",
+    "SAAF: Self-Adaptive Attention Factor-Based Taylor-Pruning on Convolutional Neural Networks. TNNLS, 2025.",
+    "Layer-Interaction Adaptive Pruning for Remote Sensing Scene Classification. TGRS, 2025.",
+    "Efficiency-aware Federated Learning for Image Classification via Model Adaptation. TCSVT, 2026.",
+    "SSA-KD: Self-Structure-Aware Knowledge Distillation for Convolutional Neural Networks. NN, 2026."
+  ],
+  "research_directions": [
+    "神经网络压缩,进化计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LUYIHENG/zh_CN/index.htm",
+  "title": "助理研究员",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

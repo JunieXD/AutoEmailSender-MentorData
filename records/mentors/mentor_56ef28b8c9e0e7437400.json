@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a5c3cd9dacf44b73c513"
+      ],
+      "ended_at": null,
+      "id": "aff_4e3110f4c58fcbe58308",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LN10/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a5c3cd9dacf44b73c513"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4e3110f4c58fcbe58308",
+      "claim_ids": [
+        "claim_a5c3cd9dacf44b73c513"
+      ],
+      "is_primary": true,
+      "normalized_value": "nluo@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LN10/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "nluo@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a5c3cd9dacf44b73c513"
+    ],
+    "email": [
+      "claim_a5c3cd9dacf44b73c513"
+    ],
+    "name": [
+      "claim_a5c3cd9dacf44b73c513"
+    ],
+    "profile_url": [
+      "claim_a5c3cd9dacf44b73c513"
+    ],
+    "research_directions": [
+      "claim_a5c3cd9dacf44b73c513"
+    ],
+    "status": [
+      "claim_a5c3cd9dacf44b73c513"
+    ],
+    "title": [
+      "claim_a5c3cd9dacf44b73c513"
+    ]
+  },
+  "id": "mentor_56ef28b8c9e0e7437400",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a5c3cd9dacf44b73c513"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4e3110f4c58fcbe58308",
+      "claim_ids": [
+        "claim_a5c3cd9dacf44b73c513"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LN10/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "三维场景重建与SLAM、机器人视觉语言导航、深度学习及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LN10/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

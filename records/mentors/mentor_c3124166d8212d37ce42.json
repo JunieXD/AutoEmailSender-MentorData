@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_940bc4120fe3e276aceb"
+      ],
+      "ended_at": null,
+      "id": "aff_eb784bcbda09254beaa0",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LX12/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_940bc4120fe3e276aceb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eb784bcbda09254beaa0",
+      "claim_ids": [
+        "claim_940bc4120fe3e276aceb"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoli@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LX12/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_940bc4120fe3e276aceb"
+    ],
+    "email": [
+      "claim_940bc4120fe3e276aceb"
+    ],
+    "name": [
+      "claim_940bc4120fe3e276aceb"
+    ],
+    "profile_url": [
+      "claim_940bc4120fe3e276aceb"
+    ],
+    "research_directions": [
+      "claim_940bc4120fe3e276aceb"
+    ],
+    "status": [
+      "claim_940bc4120fe3e276aceb"
+    ],
+    "title": [
+      "claim_940bc4120fe3e276aceb"
+    ]
+  },
+  "id": "mentor_c3124166d8212d37ce42",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_940bc4120fe3e276aceb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李晓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eb784bcbda09254beaa0",
+      "claim_ids": [
+        "claim_940bc4120fe3e276aceb"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LX12/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、深度学习、计算机视觉,具体包括大数据分析、小样本学习、零样本学习、迁移学习、生成式对抗网络、卷积神经网络、图像分类、物体识别、RGB-D图像分类、行为识别等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LX12/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

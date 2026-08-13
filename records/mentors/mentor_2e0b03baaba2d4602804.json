@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5dc49f9bfad3ecc42ec5"
+      ],
+      "ended_at": null,
+      "id": "aff_f357e4d8b0737fe840e3",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/wangxiaoli/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5dc49f9bfad3ecc42ec5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f357e4d8b0737fe840e3",
+      "claim_ids": [
+        "claim_5dc49f9bfad3ecc42ec5"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangxiaoli@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/wangxiaoli/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangxiaoli@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5dc49f9bfad3ecc42ec5"
+    ],
+    "email": [
+      "claim_5dc49f9bfad3ecc42ec5"
+    ],
+    "name": [
+      "claim_5dc49f9bfad3ecc42ec5"
+    ],
+    "profile_url": [
+      "claim_5dc49f9bfad3ecc42ec5"
+    ],
+    "research_directions": [
+      "claim_5dc49f9bfad3ecc42ec5"
+    ],
+    "status": [
+      "claim_5dc49f9bfad3ecc42ec5"
+    ],
+    "title": [
+      "claim_5dc49f9bfad3ecc42ec5"
+    ]
+  },
+  "id": "mentor_2e0b03baaba2d4602804",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5dc49f9bfad3ecc42ec5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晓丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f357e4d8b0737fe840e3",
+      "claim_ids": [
+        "claim_5dc49f9bfad3ecc42ec5"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/wangxiaoli/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能理论及其应用、大数据分析、资源和任务调度、大规模并行与分布式计算(云计算/边缘计算/雾计算)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/wangxiaoli/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

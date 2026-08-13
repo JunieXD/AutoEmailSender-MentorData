@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1ae2c2ca74b1d2c7c991"
+      ],
+      "ended_at": null,
+      "id": "aff_50b7cb384b9fb2b6454b",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/XYS1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1ae2c2ca74b1d2c7c991"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_50b7cb384b9fb2b6454b",
+      "claim_ids": [
+        "claim_1ae2c2ca74b1d2c7c991"
+      ],
+      "is_primary": true,
+      "normalized_value": "ysxu@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/XYS1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ysxu@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1ae2c2ca74b1d2c7c991"
+    ],
+    "email": [
+      "claim_1ae2c2ca74b1d2c7c991"
+    ],
+    "name": [
+      "claim_1ae2c2ca74b1d2c7c991"
+    ],
+    "profile_url": [
+      "claim_1ae2c2ca74b1d2c7c991"
+    ],
+    "research_directions": [
+      "claim_1ae2c2ca74b1d2c7c991"
+    ],
+    "status": [
+      "claim_1ae2c2ca74b1d2c7c991"
+    ],
+    "title": [
+      "claim_1ae2c2ca74b1d2c7c991"
+    ]
+  },
+  "id": "mentor_26a9a65ca3d9f0e685d1",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1ae2c2ca74b1d2c7c991"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐悦甡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_50b7cb384b9fb2b6454b",
+      "claim_ids": [
+        "claim_1ae2c2ca74b1d2c7c991"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/XYS1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "1. 面向中台与后台的系统资源管理、系统服务运维及系统部署优化,包括面向微服务系统的资源调度/资源预测/中心部署/边缘部署/云边协同/缓存管理/工作流调度,面向微服务系统的故障检测/可观测性,函数服务的资源调度等",
+    "2. 面向软件服务工程的移动与边缘计算,包括面向Restful API的服务选择、服务组合与语义标注、移动应用APK中的API分析、移动计算环境中的服务推荐、选择与组合等",
+    "3. 数据驱动软件工程研究--推荐系统与信息检索方向,包括围绕面向Web API/API/APP的推荐等,围绕软件包/软件项目/软件开发团队的推荐与对应的方法等。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/XYS1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

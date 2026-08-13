@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_da1a403b9494647fdc11"
+      ],
+      "ended_at": null,
+      "id": "aff_24bcb2ae88849ec105f1",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/hwhuo/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_da1a403b9494647fdc11"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_24bcb2ae88849ec105f1",
+      "claim_ids": [
+        "claim_da1a403b9494647fdc11"
+      ],
+      "is_primary": true,
+      "normalized_value": "hwhuo@mail.xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/hwhuo/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hwhuo@mail.xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_da1a403b9494647fdc11"
+    ],
+    "email": [
+      "claim_da1a403b9494647fdc11"
+    ],
+    "name": [
+      "claim_da1a403b9494647fdc11"
+    ],
+    "profile_url": [
+      "claim_da1a403b9494647fdc11"
+    ],
+    "recent_papers": [
+      "claim_da1a403b9494647fdc11"
+    ],
+    "research_directions": [
+      "claim_da1a403b9494647fdc11"
+    ],
+    "status": [
+      "claim_da1a403b9494647fdc11"
+    ],
+    "title": [
+      "claim_da1a403b9494647fdc11"
+    ]
+  },
+  "id": "mentor_507bdc9f362b7d4fbf2a",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_da1a403b9494647fdc11"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "霍红卫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_24bcb2ae88849ec105f1",
+      "claim_ids": [
+        "claim_da1a403b9494647fdc11"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/hwhuo/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Indexing labeled property multidigraphs in entropy space, with applications",
+    "FM-Adaptive: A practical data-aware FM-Index",
+    "Panaln: Indexing pangenopme for read alignment",
+    "Practical high-order entropy-compressed text self-indexing",
+    "MSQ-Index: A succinct index for fast graph similarity search",
+    "Optimal in-place suffix sorting",
+    "CIndex: compressed indexes for fast retrieval of FASTQ files",
+    "An efficient algorithm for graph edit distance computation"
+  ],
+  "research_directions": [
+    "压缩数据结构,压缩索引与检索,算法理论与算法工程,并行算法,外存算法,图数据库压缩索引与相似性搜索,泛基因组压缩索引与近似模式搜索,神经网络模型压缩"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/hwhuo/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

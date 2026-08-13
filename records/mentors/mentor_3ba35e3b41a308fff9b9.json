@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_96c777d5deabfd6cc118"
+      ],
+      "ended_at": null,
+      "id": "aff_77054fba9dc9802bb81e",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_81ecfb549b9bb9689afb",
+      "source_url": "https://faculty.xidian.edu.cn/MQG1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_96c777d5deabfd6cc118"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_77054fba9dc9802bb81e",
+      "claim_ids": [
+        "claim_96c777d5deabfd6cc118"
+      ],
+      "is_primary": true,
+      "normalized_value": "qgmiao@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/MQG1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qgmiao@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_96c777d5deabfd6cc118"
+    ],
+    "email": [
+      "claim_96c777d5deabfd6cc118"
+    ],
+    "name": [
+      "claim_96c777d5deabfd6cc118"
+    ],
+    "profile_url": [
+      "claim_96c777d5deabfd6cc118"
+    ],
+    "research_directions": [
+      "claim_96c777d5deabfd6cc118"
+    ],
+    "status": [
+      "claim_96c777d5deabfd6cc118"
+    ],
+    "title": [
+      "claim_96c777d5deabfd6cc118"
+    ]
+  },
+  "id": "mentor_3ba35e3b41a308fff9b9",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_96c777d5deabfd6cc118"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苗启广"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_77054fba9dc9802bb81e",
+      "claim_ids": [
+        "claim_96c777d5deabfd6cc118"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/MQG1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、大数据分析、智能教育技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/MQG1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

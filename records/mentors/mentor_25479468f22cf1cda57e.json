@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eb554eb88db51d5a9e3c"
+      ],
+      "ended_at": null,
+      "id": "aff_edcbea858bc02fac6a21",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/ZN5/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_eb554eb88db51d5a9e3c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_edcbea858bc02fac6a21",
+      "claim_ids": [
+        "claim_eb554eb88db51d5a9e3c"
+      ],
+      "is_primary": true,
+      "normalized_value": "nanzhang@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/ZN5/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "nanzhang@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eb554eb88db51d5a9e3c"
+    ],
+    "email": [
+      "claim_eb554eb88db51d5a9e3c"
+    ],
+    "name": [
+      "claim_eb554eb88db51d5a9e3c"
+    ],
+    "profile_url": [
+      "claim_eb554eb88db51d5a9e3c"
+    ],
+    "research_directions": [
+      "claim_eb554eb88db51d5a9e3c"
+    ],
+    "status": [
+      "claim_eb554eb88db51d5a9e3c"
+    ],
+    "title": [
+      "claim_eb554eb88db51d5a9e3c"
+    ]
+  },
+  "id": "mentor_25479468f22cf1cda57e",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eb554eb88db51d5a9e3c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张南"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_edcbea858bc02fac6a21",
+      "claim_ids": [
+        "claim_eb554eb88db51d5a9e3c"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/ZN5/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "程序和芯片设计的形式化验证(时序逻辑、时序逻辑程序设计、定理证明、模型检测、运行时验证)、FPGA-EDA软件开发(逻辑综合,工艺映射,打包,布局布线,位流生成)、智能规划(AI Planning)与自动推理(Automated Reasoning)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/ZN5/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

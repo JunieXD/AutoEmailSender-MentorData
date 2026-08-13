@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_21d293e7fd51e41e825e"
+      ],
+      "ended_at": null,
+      "id": "aff_717b271ac1164e400cd9",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/LR3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_21d293e7fd51e41e825e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_717b271ac1164e400cd9",
+      "claim_ids": [
+        "claim_21d293e7fd51e41e825e"
+      ],
+      "is_primary": true,
+      "normalized_value": "rli@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LR3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "rli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_21d293e7fd51e41e825e"
+    ],
+    "email": [
+      "claim_21d293e7fd51e41e825e"
+    ],
+    "name": [
+      "claim_21d293e7fd51e41e825e"
+    ],
+    "profile_url": [
+      "claim_21d293e7fd51e41e825e"
+    ],
+    "research_directions": [
+      "claim_21d293e7fd51e41e825e"
+    ],
+    "status": [
+      "claim_21d293e7fd51e41e825e"
+    ],
+    "title": [
+      "claim_21d293e7fd51e41e825e"
+    ]
+  },
+  "id": "mentor_d2b2cb0e1c32f3b98a04",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_21d293e7fd51e41e825e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李瑞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_717b271ac1164e400cd9",
+      "claim_ids": [
+        "claim_21d293e7fd51e41e825e"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LR3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能感知、物联网、智能化系统、网络管理与网络诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LR3/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

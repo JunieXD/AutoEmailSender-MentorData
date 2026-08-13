@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_725420a101de72f156c5"
+      ],
+      "ended_at": null,
+      "id": "aff_bac4e804997f59bf48ee",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/YYS/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_725420a101de72f156c5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bac4e804997f59bf48ee",
+      "claim_ids": [
+        "claim_725420a101de72f156c5"
+      ],
+      "is_primary": true,
+      "normalized_value": "ysye@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/YYS/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ysye@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_725420a101de72f156c5"
+    ],
+    "email": [
+      "claim_725420a101de72f156c5"
+    ],
+    "name": [
+      "claim_725420a101de72f156c5"
+    ],
+    "profile_url": [
+      "claim_725420a101de72f156c5"
+    ],
+    "recent_papers": [
+      "claim_725420a101de72f156c5"
+    ],
+    "research_directions": [
+      "claim_725420a101de72f156c5"
+    ],
+    "status": [
+      "claim_725420a101de72f156c5"
+    ],
+    "title": [
+      "claim_725420a101de72f156c5"
+    ]
+  },
+  "id": "mentor_036860dbb6ebe289ce1c",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_725420a101de72f156c5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "叶育森"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bac4e804997f59bf48ee",
+      "claim_ids": [
+        "claim_725420a101de72f156c5"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YYS/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "CellLoop: Identifying single-cell 3D genome chromatin loops. Nature Communications, 2026.",
+    "BandHiC: a memory-efficient and user-friendly Python package for organizing and analyzing Hi-C matrices down to sub-kilobase resolution. BMC Genomics, 2026, Accepted.",
+    "CellFeature: Cell and Feature Co-Embedding from Single-Cell Multi-Omics with Heterogeneous Graph Model. IEEE International Conference on Bioinformatics and Biomedicine (BIBM), 2024, pp. 976-981.",
+    "Beaconet: A Reference-Free Method for Integrating Multiple Batches of Single-Cell Transcriptomic Data in Original Molecular Space. Advanced Science. 2024, 11(26):2306770.",
+    "Statistical modeling and significance estimation of multi-way chromatin contacts with HyperloopFinder, Briefings in Bioinformatics, 2024, 25(4):bbae341.",
+    "DeCGR: an interactive toolkit for deciphering complex genomic rearrangements from Hi-C data. BMC Genomics, 2024, 25(1):1152.",
+    "Deciphering Hierarchical Chromatin Domains and Preference of Genomic Position Forming Boundaries in Single Mouse Embryonic Stem Cells. Advanced Science, 2023: e2205162.",
+    "HiSV: A control-free method for structural variation detection from Hi-C data. PLOS Computational Biology, 2023, 19(1): e1010760."
+  ],
+  "research_directions": [
+    "生物数据分析、深度学习及图表示学习理论、生物信息学、图模式挖掘及表示学习、4D细胞结构和功能研究、单细胞多组学研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YYS/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

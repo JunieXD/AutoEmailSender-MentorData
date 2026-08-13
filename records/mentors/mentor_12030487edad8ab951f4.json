@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cd1f6b701e1cf7e9f71e"
+      ],
+      "ended_at": null,
+      "id": "aff_31461f6a827197df7775",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/JJ2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cd1f6b701e1cf7e9f71e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_31461f6a827197df7775",
+      "claim_ids": [
+        "claim_cd1f6b701e1cf7e9f71e"
+      ],
+      "is_primary": true,
+      "normalized_value": "jji@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/JJ2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jji@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cd1f6b701e1cf7e9f71e"
+    ],
+    "email": [
+      "claim_cd1f6b701e1cf7e9f71e"
+    ],
+    "name": [
+      "claim_cd1f6b701e1cf7e9f71e"
+    ],
+    "profile_url": [
+      "claim_cd1f6b701e1cf7e9f71e"
+    ],
+    "research_directions": [
+      "claim_cd1f6b701e1cf7e9f71e"
+    ],
+    "status": [
+      "claim_cd1f6b701e1cf7e9f71e"
+    ],
+    "title": [
+      "claim_cd1f6b701e1cf7e9f71e"
+    ]
+  },
+  "id": "mentor_12030487edad8ab951f4",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cd1f6b701e1cf7e9f71e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "纪建"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_31461f6a827197df7775",
+      "claim_ids": [
+        "claim_cd1f6b701e1cf7e9f71e"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/JJ2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图像处理与分析、模式识别与机器学习、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/JJ2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

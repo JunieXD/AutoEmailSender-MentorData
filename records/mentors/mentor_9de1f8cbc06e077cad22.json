@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_07651010d154c3b81e05"
+      ],
+      "ended_at": null,
+      "id": "aff_d02afcf8ea76a4a1493a",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_284dcd56c6a65655ef55",
+      "source_url": "https://faculty.xidian.edu.cn/LJN1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_07651010d154c3b81e05"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d02afcf8ea76a4a1493a",
+      "claim_ids": [
+        "claim_07651010d154c3b81e05"
+      ],
+      "is_primary": true,
+      "normalized_value": "lijianan@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/LJN1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lijianan@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_07651010d154c3b81e05"
+    ],
+    "email": [
+      "claim_07651010d154c3b81e05"
+    ],
+    "name": [
+      "claim_07651010d154c3b81e05"
+    ],
+    "profile_url": [
+      "claim_07651010d154c3b81e05"
+    ],
+    "recent_papers": [
+      "claim_07651010d154c3b81e05"
+    ],
+    "research_directions": [
+      "claim_07651010d154c3b81e05"
+    ],
+    "status": [
+      "claim_07651010d154c3b81e05"
+    ],
+    "title": [
+      "claim_07651010d154c3b81e05"
+    ]
+  },
+  "id": "mentor_9de1f8cbc06e077cad22",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_07651010d154c3b81e05"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李佳楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d02afcf8ea76a4a1493a",
+      "claim_ids": [
+        "claim_07651010d154c3b81e05"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/LJN1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Knowledge-empowered Course Recommendation with Cross-graph and Forgetting-aware Cross-attention",
+    "SeeKRec: Towards Semantic-empowered Knowledge-aware Recommendation",
+    "PreFact: Knowledge Propagation Regulating Network Toward Preferred Facts for Knowledge-aware Recommendation",
+    "Bundling-aware Masked Graph AutoEncoder for Bundle Recommendation",
+    "基于静态与动态学习需求感知的知识点推荐方法",
+    "A Spectral Heterogeneous Diffusion Framework for Knowledge-aware Recommendation",
+    "Knowledge Starts with Practice: Knowledge-aware Exercise Generative Recommendation with Adaptive Multi-Agent Cooperation",
+    "Breaking Knowledge Boundaries: Cognitive Distillation-enhanced Cross-Behavior Course Recommendation Model"
+  ],
+  "research_directions": [
+    "多模态信息智能处理、图像及视频理解、行为识别、智能推荐"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/LJN1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

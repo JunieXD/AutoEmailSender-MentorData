@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c90168a32ae7d7b3d735"
+      ],
+      "ended_at": null,
+      "id": "aff_c072553a96a4c4f8bf7e",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/YL7/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c90168a32ae7d7b3d735"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c072553a96a4c4f8bf7e",
+      "claim_ids": [
+        "claim_c90168a32ae7d7b3d735"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangli@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/YL7/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangli@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c90168a32ae7d7b3d735"
+    ],
+    "email": [
+      "claim_c90168a32ae7d7b3d735"
+    ],
+    "name": [
+      "claim_c90168a32ae7d7b3d735"
+    ],
+    "profile_url": [
+      "claim_c90168a32ae7d7b3d735"
+    ],
+    "research_directions": [
+      "claim_c90168a32ae7d7b3d735"
+    ],
+    "status": [
+      "claim_c90168a32ae7d7b3d735"
+    ],
+    "title": [
+      "claim_c90168a32ae7d7b3d735"
+    ]
+  },
+  "id": "mentor_5e7ec7c7e4e974eaaf7f",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c90168a32ae7d7b3d735"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨力"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c072553a96a4c4f8bf7e",
+      "claim_ids": [
+        "claim_c90168a32ae7d7b3d735"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/YL7/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动互联网安全--认证方法与技术、云计算安全--数据安全存储与删除、移动终端安全--运行环境安全验证、可信计算--远程证明技术、移动网络安全、智能系统安全、隐私与可信计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/YL7/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}

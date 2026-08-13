@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8f19e29b864e9e9a442e"
+      ],
+      "ended_at": null,
+      "id": "aff_ae2f6d3f05cbaef418ce",
+      "is_primary": true,
+      "observed_at": "2026-08-12T07:26:28Z",
+      "organization_id": "org_auto_b3c41cb2017552a01745",
+      "source_url": "https://faculty.xidian.edu.cn/sxzhang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8f19e29b864e9e9a442e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ae2f6d3f05cbaef418ce",
+      "claim_ids": [
+        "claim_8f19e29b864e9e9a442e"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangsx@xidian.edu.cn",
+      "observed_at": "2026-08-12T07:26:28Z",
+      "source_url": "https://faculty.xidian.edu.cn/sxzhang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangsx@xidian.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-12T07:26:28Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8f19e29b864e9e9a442e"
+    ],
+    "email": [
+      "claim_8f19e29b864e9e9a442e"
+    ],
+    "name": [
+      "claim_8f19e29b864e9e9a442e"
+    ],
+    "profile_url": [
+      "claim_8f19e29b864e9e9a442e"
+    ],
+    "recent_papers": [
+      "claim_8f19e29b864e9e9a442e"
+    ],
+    "research_directions": [
+      "claim_8f19e29b864e9e9a442e"
+    ],
+    "status": [
+      "claim_8f19e29b864e9e9a442e"
+    ],
+    "title": [
+      "claim_8f19e29b864e9e9a442e"
+    ]
+  },
+  "id": "mentor_c8beba1b59c875327a7c",
+  "last_verified_at": "2026-08-12T07:26:28Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8f19e29b864e9e9a442e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张世雄"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ae2f6d3f05cbaef418ce",
+      "claim_ids": [
+        "claim_8f19e29b864e9e9a442e"
+      ],
+      "observed_at": "2026-08-12T07:26:28Z",
+      "status": "current",
+      "url": "https://faculty.xidian.edu.cn/sxzhang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Disentangling the over-integration of single-cell and spatial multiomics data with transfer learning",
+    "LADSG: Label-anonymized distillation and similar gradient substitution for label privacy in vertical federated learning",
+    "scMGCL: accurate and efficient integration representation of single-cell multiomics data",
+    "Efficient generation of paired single-cell multiomics profiles by deep learning",
+    "Review of single-cell RNA-seq data clustering for cell type identification and characterization",
+    "Uncovering the key dimensions of high-throughput biomolecular data using deep learning",
+    "Nature-inspired compressed sensing for transcriptomic profiling from random composite measurement",
+    "Synergizing CRISPR/Cas9 off-target predictions for ensemble insights and practical applications"
+  ],
+  "research_directions": [
+    "Bioinformatics, Computational Intelligence, Single-cell Omics Analysis, Data Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-12T07:26:28Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xidian.edu.cn/sxzhang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-12T07:26:28Z"
+}
