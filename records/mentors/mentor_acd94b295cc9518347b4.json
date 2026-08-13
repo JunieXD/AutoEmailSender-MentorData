@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8d1a51ab837d559c310"
+      ],
+      "ended_at": null,
+      "id": "aff_914b501eaf2f88bbf951",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:56Z",
+      "organization_id": "org_auto_28efc5a2a551ab6b2bf9",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53756a2202369/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f8d1a51ab837d559c310"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_914b501eaf2f88bbf951",
+      "claim_ids": [
+        "claim_f8d1a51ab837d559c310"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangdahai@zju.edu.cn",
+      "observed_at": "2026-08-11T13:33:56Z",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53756a2202369/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangdahai@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8d1a51ab837d559c310"
+    ],
+    "email": [
+      "claim_f8d1a51ab837d559c310"
+    ],
+    "name": [
+      "claim_f8d1a51ab837d559c310"
+    ],
+    "profile_url": [
+      "claim_f8d1a51ab837d559c310"
+    ],
+    "research_directions": [
+      "claim_f8d1a51ab837d559c310"
+    ],
+    "status": [
+      "claim_f8d1a51ab837d559c310"
+    ],
+    "title": [
+      "claim_f8d1a51ab837d559c310"
+    ]
+  },
+  "id": "mentor_acd94b295cc9518347b4",
+  "last_verified_at": "2026-08-11T13:33:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8d1a51ab837d559c310"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张大海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_914b501eaf2f88bbf951",
+      "claim_ids": [
+        "claim_f8d1a51ab837d559c310"
+      ],
+      "observed_at": "2026-08-11T13:33:56Z",
+      "status": "current",
+      "url": "http://oc.zju.edu.cn/2019/0614/c53756a2202369/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "海洋技术与工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:56Z",
+  "status_reason": null,
+  "status_source_url": "http://oc.zju.edu.cn/2019/0614/c53756a2202369/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:56Z"
+}

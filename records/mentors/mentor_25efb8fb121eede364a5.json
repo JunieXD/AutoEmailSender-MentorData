@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ec2a533e0b632e90f430"
+      ],
+      "ended_at": null,
+      "id": "aff_dd35092b78aa3288292a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:56Z",
+      "organization_id": "org_auto_28efc5a2a551ab6b2bf9",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53768a2202381/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ec2a533e0b632e90f430"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dd35092b78aa3288292a",
+      "claim_ids": [
+        "claim_ec2a533e0b632e90f430"
+      ],
+      "is_primary": true,
+      "normalized_value": "tpaehtz@gmail.com",
+      "observed_at": "2026-08-11T13:33:56Z",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53768a2202381/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tpaehtz@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ec2a533e0b632e90f430"
+    ],
+    "email": [
+      "claim_ec2a533e0b632e90f430"
+    ],
+    "name": [
+      "claim_ec2a533e0b632e90f430"
+    ],
+    "profile_url": [
+      "claim_ec2a533e0b632e90f430"
+    ],
+    "status": [
+      "claim_ec2a533e0b632e90f430"
+    ],
+    "title": [
+      "claim_ec2a533e0b632e90f430"
+    ]
+  },
+  "id": "mentor_25efb8fb121eede364a5",
+  "last_verified_at": "2026-08-11T13:33:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ec2a533e0b632e90f430"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "THOMAS PAHTZ"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dd35092b78aa3288292a",
+      "claim_ids": [
+        "claim_ec2a533e0b632e90f430"
+      ],
+      "observed_at": "2026-08-11T13:33:56Z",
+      "status": "current",
+      "url": "http://oc.zju.edu.cn/2019/0614/c53768a2202381/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:56Z",
+  "status_reason": null,
+  "status_source_url": "http://oc.zju.edu.cn/2019/0614/c53768a2202381/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:56Z"
+}

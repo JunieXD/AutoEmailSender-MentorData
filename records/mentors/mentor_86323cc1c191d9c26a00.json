@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e08c4470f25f60b4b30b"
+      ],
+      "ended_at": null,
+      "id": "aff_49ae2f62c52cf2685909",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:56Z",
+      "organization_id": "org_auto_cee3d31cb8f7bcb78b07",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53762a2588366/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e08c4470f25f60b4b30b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_49ae2f62c52cf2685909",
+      "claim_ids": [
+        "claim_e08c4470f25f60b4b30b"
+      ],
+      "is_primary": true,
+      "normalized_value": "mli15@zju.edu.cn",
+      "observed_at": "2026-08-11T13:33:56Z",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53762a2588366/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mli15@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e08c4470f25f60b4b30b"
+    ],
+    "email": [
+      "claim_e08c4470f25f60b4b30b"
+    ],
+    "name": [
+      "claim_e08c4470f25f60b4b30b"
+    ],
+    "profile_url": [
+      "claim_e08c4470f25f60b4b30b"
+    ],
+    "status": [
+      "claim_e08c4470f25f60b4b30b"
+    ]
+  },
+  "id": "mentor_86323cc1c191d9c26a00",
+  "last_verified_at": "2026-08-11T13:33:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e08c4470f25f60b4b30b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_49ae2f62c52cf2685909",
+      "claim_ids": [
+        "claim_e08c4470f25f60b4b30b"
+      ],
+      "observed_at": "2026-08-11T13:33:56Z",
+      "status": "current",
+      "url": "http://oc.zju.edu.cn/2019/0614/c53762a2588366/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:56Z",
+  "status_reason": null,
+  "status_source_url": "http://oc.zju.edu.cn/2019/0614/c53762a2588366/page.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:33:56Z"
+}
