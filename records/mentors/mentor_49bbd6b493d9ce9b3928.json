@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_902ad0ca69cf85ab7fde"
+      ],
+      "ended_at": null,
+      "id": "aff_f484131acf0135bffa25",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/14209.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_902ad0ca69cf85ab7fde"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f484131acf0135bffa25",
+      "claim_ids": [
+        "claim_902ad0ca69cf85ab7fde"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhli@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/14209.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhli@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_902ad0ca69cf85ab7fde"
+    ],
+    "email": [
+      "claim_902ad0ca69cf85ab7fde"
+    ],
+    "name": [
+      "claim_902ad0ca69cf85ab7fde"
+    ],
+    "profile_url": [
+      "claim_902ad0ca69cf85ab7fde"
+    ],
+    "recent_papers": [
+      "claim_902ad0ca69cf85ab7fde"
+    ],
+    "research_directions": [
+      "claim_902ad0ca69cf85ab7fde"
+    ],
+    "status": [
+      "claim_902ad0ca69cf85ab7fde"
+    ],
+    "title": [
+      "claim_902ad0ca69cf85ab7fde"
+    ]
+  },
+  "id": "mentor_49bbd6b493d9ce9b3928",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_902ad0ca69cf85ab7fde"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李子豪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f484131acf0135bffa25",
+      "claim_ids": [
+        "claim_902ad0ca69cf85ab7fde"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/14209.htm"
+    }
+  ],
+  "recent_papers": [
+    "Denial of Sequencing Attacks in Ethereum Layer 2 Rollups",
+    "fAmulet: Finding Finalization Failure Bugs in Polygon zkRollup",
+    "Demystifying DeFi MEV Activities in Flashbots Bundle",
+    "Finding Correctness Issues on Ethereum Verkle Tries via Preimage-Aware Differential Testing",
+    "Auspex: Unveiling Inconsistency Bugs of Transaction Fee Mechanism in Blockchain",
+    "Maat: Analyzing and Optimizing Overcharge on Blockchain Storage",
+    "Nurgle: Exacerbating Resource Consumption in Blockchain State Storage via MPT Manipulation",
+    "DoubleUp Roll: Double-spending in Arbitrum by Rolling It Back"
+  ],
+  "research_directions": [
+    "新兴系统软件安全、智能化软件安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/14209.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

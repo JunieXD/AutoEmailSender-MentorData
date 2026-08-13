@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6159dd0e0a13637daf61"
+      ],
+      "ended_at": null,
+      "id": "aff_4b11c4479a4ada97bca2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13639.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6159dd0e0a13637daf61"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4b11c4479a4ada97bca2",
+      "claim_ids": [
+        "claim_6159dd0e0a13637daf61"
+      ],
+      "is_primary": true,
+      "normalized_value": "ruijinwang@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13639.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ruijinwang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6159dd0e0a13637daf61"
+    ],
+    "email": [
+      "claim_6159dd0e0a13637daf61"
+    ],
+    "name": [
+      "claim_6159dd0e0a13637daf61"
+    ],
+    "profile_url": [
+      "claim_6159dd0e0a13637daf61"
+    ],
+    "research_directions": [
+      "claim_6159dd0e0a13637daf61"
+    ],
+    "status": [
+      "claim_6159dd0e0a13637daf61"
+    ],
+    "title": [
+      "claim_6159dd0e0a13637daf61"
+    ]
+  },
+  "id": "mentor_f34b5564755a36e60d01",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6159dd0e0a13637daf61"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王瑞锦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4b11c4479a4ada97bca2",
+      "claim_ids": [
+        "claim_6159dd0e0a13637daf61"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/13639.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络与数据安全、AI及安全、云边协同计算、区块链与隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/13639.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

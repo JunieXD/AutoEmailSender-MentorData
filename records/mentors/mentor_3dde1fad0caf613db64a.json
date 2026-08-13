@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4b575084113759593c8b"
+      ],
+      "ended_at": null,
+      "id": "aff_797aab07988a35f01608",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/11939.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4b575084113759593c8b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_797aab07988a35f01608",
+      "claim_ids": [
+        "claim_4b575084113759593c8b"
+      ],
+      "is_primary": true,
+      "normalized_value": "wj@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/11939.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wj@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4b575084113759593c8b"
+    ],
+    "email": [
+      "claim_4b575084113759593c8b"
+    ],
+    "name": [
+      "claim_4b575084113759593c8b"
+    ],
+    "profile_url": [
+      "claim_4b575084113759593c8b"
+    ],
+    "research_directions": [
+      "claim_4b575084113759593c8b"
+    ],
+    "status": [
+      "claim_4b575084113759593c8b"
+    ],
+    "title": [
+      "claim_4b575084113759593c8b"
+    ]
+  },
+  "id": "mentor_3dde1fad0caf613db64a",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4b575084113759593c8b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴劲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_797aab07988a35f01608",
+      "claim_ids": [
+        "claim_4b575084113759593c8b"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/11939.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、软件定义网络、大数据技术、软件安全技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/11939.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

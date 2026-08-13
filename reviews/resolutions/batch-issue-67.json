@@ -1,0 +1,242 @@
+{
+  "created_organization_ids": [
+    "org_auto_225d6f7b44ee5bc4e5f0",
+    "org_auto_4322c05aaee4172fa1bb",
+    "org_auto_999272344ad0187e5645",
+    "org_auto_f50d145015e917365a08"
+  ],
+  "decided_at": "2026-08-13T03:20:07Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_2190f50f1537609d",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "uestc.edu.cn"
+          ],
+          "canonical_name": "电子科技大学",
+          "level": "university",
+          "official_url": "https://uestc.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息与软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "数字动漫系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_83ff8785bc0233ae",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "uestc.edu.cn"
+          ],
+          "canonical_name": "电子科技大学",
+          "level": "university",
+          "official_url": "https://uestc.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息与软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b2bfb7a69a122c01",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "uestc.edu.cn"
+          ],
+          "canonical_name": "电子科技大学",
+          "level": "university",
+          "official_url": "https://uestc.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息与软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ccf2e2bb963312cc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "uestc.edu.cn"
+          ],
+          "canonical_name": "电子科技大学",
+          "level": "university",
+          "official_url": "https://uestc.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息与软件工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_67",
+  "invalid_rows": [],
+  "issue": {
+    "number": 67,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/67"
+  },
+  "manifest_sha256": "432fb6c80af147292c664d6b274eb60ebbbc121f99ccc3f33b6e06733a04e739",
+  "mapped_proposal_ids": [
+    "proposal_issue_67_row_1",
+    "proposal_issue_67_row_10",
+    "proposal_issue_67_row_11",
+    "proposal_issue_67_row_12",
+    "proposal_issue_67_row_13",
+    "proposal_issue_67_row_14",
+    "proposal_issue_67_row_15",
+    "proposal_issue_67_row_16",
+    "proposal_issue_67_row_17",
+    "proposal_issue_67_row_18",
+    "proposal_issue_67_row_19",
+    "proposal_issue_67_row_2",
+    "proposal_issue_67_row_20",
+    "proposal_issue_67_row_21",
+    "proposal_issue_67_row_22",
+    "proposal_issue_67_row_23",
+    "proposal_issue_67_row_24",
+    "proposal_issue_67_row_25",
+    "proposal_issue_67_row_26",
+    "proposal_issue_67_row_27",
+    "proposal_issue_67_row_28",
+    "proposal_issue_67_row_29",
+    "proposal_issue_67_row_3",
+    "proposal_issue_67_row_30",
+    "proposal_issue_67_row_4",
+    "proposal_issue_67_row_5",
+    "proposal_issue_67_row_6",
+    "proposal_issue_67_row_7",
+    "proposal_issue_67_row_8",
+    "proposal_issue_67_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 74,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275544709,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

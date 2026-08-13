@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9d824f693bcdf3c8d9a2"
+      ],
+      "ended_at": null,
+      "id": "aff_4dcf2041fe611aba3006",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/11490.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9d824f693bcdf3c8d9a2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4dcf2041fe611aba3006",
+      "claim_ids": [
+        "claim_9d824f693bcdf3c8d9a2"
+      ],
+      "is_primary": true,
+      "normalized_value": "john.zhangyh@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/11490.htm",
+      "status": "current",
+      "type": "email",
+      "value": "john.zhangyh@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9d824f693bcdf3c8d9a2"
+    ],
+    "email": [
+      "claim_9d824f693bcdf3c8d9a2"
+    ],
+    "name": [
+      "claim_9d824f693bcdf3c8d9a2"
+    ],
+    "profile_url": [
+      "claim_9d824f693bcdf3c8d9a2"
+    ],
+    "research_directions": [
+      "claim_9d824f693bcdf3c8d9a2"
+    ],
+    "status": [
+      "claim_9d824f693bcdf3c8d9a2"
+    ],
+    "title": [
+      "claim_9d824f693bcdf3c8d9a2"
+    ]
+  },
+  "id": "mentor_6567184ab31c1f24699f",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9d824f693bcdf3c8d9a2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张玉宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4dcf2041fe611aba3006",
+      "claim_ids": [
+        "claim_9d824f693bcdf3c8d9a2"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/11490.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "体系工程 (System of Systems), 基于模型系统工程MBSE(Model-Based Systems Engineering)、软件工程(工业软件),需求工程,使命工程(Mission Engineering),自动控制(Dynamic Systems & Control),人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/11490.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

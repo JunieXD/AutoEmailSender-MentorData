@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f2619d65790a967f126f"
+      ],
+      "ended_at": null,
+      "id": "aff_1defb88f10b1b01a9814",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5646.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f2619d65790a967f126f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1defb88f10b1b01a9814",
+      "claim_ids": [
+        "claim_f2619d65790a967f126f"
+      ],
+      "is_primary": true,
+      "normalized_value": "qinzhen@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5646.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qinzhen@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f2619d65790a967f126f"
+    ],
+    "email": [
+      "claim_f2619d65790a967f126f"
+    ],
+    "name": [
+      "claim_f2619d65790a967f126f"
+    ],
+    "profile_url": [
+      "claim_f2619d65790a967f126f"
+    ],
+    "recent_papers": [
+      "claim_f2619d65790a967f126f"
+    ],
+    "research_directions": [
+      "claim_f2619d65790a967f126f"
+    ],
+    "status": [
+      "claim_f2619d65790a967f126f"
+    ],
+    "title": [
+      "claim_f2619d65790a967f126f"
+    ]
+  },
+  "id": "mentor_19595a641145b8523bd0",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f2619d65790a967f126f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "秦臻"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1defb88f10b1b01a9814",
+      "claim_ids": [
+        "claim_f2619d65790a967f126f"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/5646.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhen Qin*, Pengbiao Zhao, Tianming Zhuang, Fuhu Deng, Yi Ding, and Dajiang Chen. A survey of identity recognition via data fusion and feature learning. Information Fusion, 2023. https://doi.org/10.1016/j.inffus.2022.10.032",
+    "Peng Xiao, Zhen Qin*, Dajiang Chen, Ning Zhang, Yi Ding, Fuhu Deng, Zhiguang Qin, Minghui Pang. FastNet: A Lightweight Convolutional Neural Network for Tumors Fast Identification in Mobile Computer-Assisted Devices. IEEE Internet of Things Journal. 2023. DOI: 10.1109/JIOT.2023.3235651",
+    "Yi Ding, Fuyuan Tan, Ji Geng, Zhen Qin*, Mingsheng Cao, Kim-Kwang Raymond Choo and Zhiguang Qin. Interpreting Universal Adversarial Example Attacks on Image Classification Models. IEEE Transactions on Dependable and Secure Computing, 2022. DOI:10.1109/TDSC.2022.3202544",
+    "Zhen Qin, Qingya Chen, Yi Ding*, Tianming Zhuang, Zhiguang Qin, and Kim-Kwang Raymond Choo. Segmentation mask and feature similarity loss guided GAN for object-oriented image-to-image translation. Information Processing & Management, Volume 59, Issue 3, May 2022. https://doi.org/ 10.1016/j.ipm.2022.102926",
+    "Adu Asare Baffour, Zhen Qin*, Ji Geng, Yi Ding, Fuhu Deng, and Zhiguang Qin. Generic network for domain adaptation based on self-supervised learning and deep clustering. Neurocomputing, Volume 476, March 2022: 126-136. https://doi. org/10.1016/j.neucom.2021.12.099",
+    "Yi Ding, Wei Zheng, Ji Geng, Zhen Qin*, Kim-Kwang Raymond Choo, Zhiguang Qin, Hou Xiaolin*. MVFusFra: A Multi-View Dynamic Fusion Framework for Multimodal Brain Tumor Segmentation. IEEE Journal of Biomedical and Health Informatics. Volume 26,Issue 4, April 2022:1570-1581. DOI:10.1109/JBHI.2021.3122328",
+    "Yi Ding, Fuyuan Tan, Zhen Qin*, Mingsheng Cao, Kim-Kwang Raymond Choo and Zhinguang Qin. DeepKeyGen: A Deep Learning based Stream Cipher Generator for Medical Image Encryption and Decryption. IEEE Transactions on Neural Networks and Learning Systems. 2021. DOI:10.1109/TNNLS.2021.3062754",
+    "Zhen Qin, Gu Huang, Hu Xiong, Zhiguang Qin*, and Kim-Kwang Raymond Choo. A Fuzzy Authentication System Based on Neural Network Learning and Extreme Value Statistics. IEEE Transactions on Fuzzy Systems, Volume 29, Issue 3, Mar. 2021:549-559. DOI: 10.1109/TFUZZ.2019.2956896"
+  ],
+  "research_directions": [
+    "数据融合分析",
+    "人工智能安全",
+    "移动互联网",
+    "工业物联网",
+    "数据隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/5646.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_05f127245cb7c42ce610"
+      ],
+      "ended_at": null,
+      "id": "aff_79d3e53c5562bc484ed7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13275.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_05f127245cb7c42ce610"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_79d3e53c5562bc484ed7",
+      "claim_ids": [
+        "claim_05f127245cb7c42ce610"
+      ],
+      "is_primary": true,
+      "normalized_value": "dr_liyun@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13275.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dr_liyun@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_05f127245cb7c42ce610"
+    ],
+    "email": [
+      "claim_05f127245cb7c42ce610"
+    ],
+    "name": [
+      "claim_05f127245cb7c42ce610"
+    ],
+    "profile_url": [
+      "claim_05f127245cb7c42ce610"
+    ],
+    "research_directions": [
+      "claim_05f127245cb7c42ce610"
+    ],
+    "status": [
+      "claim_05f127245cb7c42ce610"
+    ],
+    "title": [
+      "claim_05f127245cb7c42ce610"
+    ]
+  },
+  "id": "mentor_a9a26569d6da51dbb089",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_05f127245cb7c42ce610"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李允"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_79d3e53c5562bc484ed7",
+      "claim_ids": [
+        "claim_05f127245cb7c42ce610"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/13275.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "嵌入式系统",
+    "网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/13275.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

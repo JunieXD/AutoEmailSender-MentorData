@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_913f41ad9d4503b7f697"
+      ],
+      "ended_at": null,
+      "id": "aff_6a944fdf367c47e1e58e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5662.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_913f41ad9d4503b7f697"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6a944fdf367c47e1e58e",
+      "claim_ids": [
+        "claim_913f41ad9d4503b7f697"
+      ],
+      "is_primary": true,
+      "normalized_value": "hlei@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5662.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hlei@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_913f41ad9d4503b7f697"
+    ],
+    "email": [
+      "claim_913f41ad9d4503b7f697"
+    ],
+    "name": [
+      "claim_913f41ad9d4503b7f697"
+    ],
+    "profile_url": [
+      "claim_913f41ad9d4503b7f697"
+    ],
+    "research_directions": [
+      "claim_913f41ad9d4503b7f697"
+    ],
+    "status": [
+      "claim_913f41ad9d4503b7f697"
+    ],
+    "title": [
+      "claim_913f41ad9d4503b7f697"
+    ]
+  },
+  "id": "mentor_38e69d7d386f02f45ae9",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_913f41ad9d4503b7f697"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "雷航"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6a944fdf367c47e1e58e",
+      "claim_ids": [
+        "claim_913f41ad9d4503b7f697"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/5662.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "嵌入式实时系统软件、开发工具、软件可靠性测试及评价、实时软件设计方法、大数据分析、二维和三维图像处理、机器视觉、软件形式化验证等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/5662.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

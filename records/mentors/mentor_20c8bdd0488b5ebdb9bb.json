@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_04768d4b553422d28ea0"
+      ],
+      "ended_at": null,
+      "id": "aff_0fac5809d35f58baff72",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13089.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_04768d4b553422d28ea0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0fac5809d35f58baff72",
+      "claim_ids": [
+        "claim_04768d4b553422d28ea0"
+      ],
+      "is_primary": true,
+      "normalized_value": "lwg@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13089.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lwg@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_04768d4b553422d28ea0"
+    ],
+    "email": [
+      "claim_04768d4b553422d28ea0"
+    ],
+    "name": [
+      "claim_04768d4b553422d28ea0"
+    ],
+    "profile_url": [
+      "claim_04768d4b553422d28ea0"
+    ],
+    "recent_papers": [
+      "claim_04768d4b553422d28ea0"
+    ],
+    "research_directions": [
+      "claim_04768d4b553422d28ea0"
+    ],
+    "status": [
+      "claim_04768d4b553422d28ea0"
+    ],
+    "title": [
+      "claim_04768d4b553422d28ea0"
+    ]
+  },
+  "id": "mentor_20c8bdd0488b5ebdb9bb",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_04768d4b553422d28ea0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭力维"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0fac5809d35f58baff72",
+      "claim_ids": [
+        "claim_04768d4b553422d28ea0"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/13089.htm"
+    }
+  ],
+  "recent_papers": [
+    "ASPLOS(第一/共同第一作者)",
+    "USENIX ATC 2024最佳论文(第一/共同第一作者)",
+    "EuroSys(第一/共同第一作者)"
+  ],
+  "research_directions": [
+    "操作系统内核、系统安全、人工智能安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/13089.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

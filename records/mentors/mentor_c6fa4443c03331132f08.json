@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f1681c88852681954f11"
+      ],
+      "ended_at": null,
+      "id": "aff_e7567dbf8349d254f2f3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13274.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f1681c88852681954f11"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e7567dbf8349d254f2f3",
+      "claim_ids": [
+        "claim_f1681c88852681954f11"
+      ],
+      "is_primary": true,
+      "normalized_value": "lluo@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/13274.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lluo@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f1681c88852681954f11"
+    ],
+    "email": [
+      "claim_f1681c88852681954f11"
+    ],
+    "name": [
+      "claim_f1681c88852681954f11"
+    ],
+    "profile_url": [
+      "claim_f1681c88852681954f11"
+    ],
+    "recent_papers": [
+      "claim_f1681c88852681954f11"
+    ],
+    "research_directions": [
+      "claim_f1681c88852681954f11"
+    ],
+    "status": [
+      "claim_f1681c88852681954f11"
+    ],
+    "title": [
+      "claim_f1681c88852681954f11"
+    ]
+  },
+  "id": "mentor_c6fa4443c03331132f08",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f1681c88852681954f11"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗蕾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e7567dbf8349d254f2f3",
+      "claim_ids": [
+        "claim_f1681c88852681954f11"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/13274.htm"
+    }
+  ],
+  "recent_papers": [
+    "An intrusion detection system integrating network-level intrusion detection and host-level intrusion detection",
+    "基于特征值分布和人工智能的网络入侵检测系统的研究与实现",
+    "A solution to make trusted execution environment more trustworthy",
+    "AUTOSAR可运行实体-任务自动映射方法研究",
+    "A novel minimal exposure path problem in wireless sensor networks and its solution algorithm",
+    "A Novel Mobile Device NFC Stack Architecture",
+    "Reliability analysis of real-time fault-tolerant task models",
+    "The Rendering Optimization of SVG Player on Mobile Devices"
+  ],
+  "research_directions": [
+    "嵌入式实时操作系统、汽车与物联网网络与数据安全、区块链与隐私计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/13274.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}

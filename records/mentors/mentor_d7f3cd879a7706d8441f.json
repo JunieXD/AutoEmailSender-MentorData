@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7278adba95357161f2d3"
+      ],
+      "ended_at": null,
+      "id": "aff_492bb9b31886ebbd9468",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:08Z",
+      "organization_id": "org_auto_225d6f7b44ee5bc4e5f0",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5650.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7278adba95357161f2d3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_492bb9b31886ebbd9468",
+      "claim_ids": [
+        "claim_7278adba95357161f2d3"
+      ],
+      "is_primary": true,
+      "normalized_value": "liaoyong@uestc.edu.cn",
+      "observed_at": "2026-08-11T13:34:08Z",
+      "source_url": "https://sise.uestc.edu.cn/info/1035/5650.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liaoyong@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7278adba95357161f2d3"
+    ],
+    "email": [
+      "claim_7278adba95357161f2d3"
+    ],
+    "name": [
+      "claim_7278adba95357161f2d3"
+    ],
+    "profile_url": [
+      "claim_7278adba95357161f2d3"
+    ],
+    "research_directions": [
+      "claim_7278adba95357161f2d3"
+    ],
+    "status": [
+      "claim_7278adba95357161f2d3"
+    ],
+    "title": [
+      "claim_7278adba95357161f2d3"
+    ]
+  },
+  "id": "mentor_d7f3cd879a7706d8441f",
+  "last_verified_at": "2026-08-11T13:34:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7278adba95357161f2d3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "廖勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_492bb9b31886ebbd9468",
+      "claim_ids": [
+        "claim_7278adba95357161f2d3"
+      ],
+      "observed_at": "2026-08-11T13:34:08Z",
+      "status": "current",
+      "url": "https://sise.uestc.edu.cn/info/1035/5650.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "Real-Time Computing, Embedded Computer Architecture"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:08Z",
+  "status_reason": null,
+  "status_source_url": "https://sise.uestc.edu.cn/info/1035/5650.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:08Z"
+}
