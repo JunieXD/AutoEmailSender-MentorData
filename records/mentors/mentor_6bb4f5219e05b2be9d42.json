@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9f1e3c27cf4eb7824bbe"
+      ],
+      "ended_at": null,
+      "id": "aff_fa60ac7dbdd031afb80e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/whq/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9f1e3c27cf4eb7824bbe"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fa60ac7dbdd031afb80e",
+      "claim_ids": [
+        "claim_9f1e3c27cf4eb7824bbe"
+      ],
+      "is_primary": true,
+      "normalized_value": "hqwu@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/whq/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "hqwu@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ],
+    "email": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ],
+    "name": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ],
+    "profile_url": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ],
+    "recent_papers": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ],
+    "research_directions": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ],
+    "status": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ],
+    "title": [
+      "claim_9f1e3c27cf4eb7824bbe"
+    ]
+  },
+  "id": "mentor_6bb4f5219e05b2be9d42",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9f1e3c27cf4eb7824bbe"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邬海琴"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fa60ac7dbdd031afb80e",
+      "claim_ids": [
+        "claim_9f1e3c27cf4eb7824bbe"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/whq/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "BFCrowd: Federated Crowdsourcing With Privacy-Aware and Fine-Grained Task Matching Via Blockchain",
+    "Give Me a Secure Ride: TEE-BlockchainEnabled Privacy-Aware and Verifiable RideSharing Services",
+    "PGVMatch: Privacy-Preserving and Fine-Grained Crowdsourcing Task Matching with Lightweight On-Chain Public Verifiability",
+    "VP^2-Match: Verifiable Privacy-Aware and Personalized Crowdsourcing Task Matching via Blockchain",
+    "Survey on Secure Keyword Search over Outsourced Data: From Cloud to Blockchain-Assisted Architecture",
+    "A Vehicular Trust Blockchain Framework with Scalable Byzantine Consensus",
+    "Reliable and Streaming Truth Discovery in Blockchain-based Crowdsourcing",
+    "Enabling Data Trustworthiness and User Privacy in Mobile Crowdsensing"
+  ],
+  "research_directions": [
+    "大数据安全与隐私保护(Big data security and privacy)、众包/移动群智感知(Crowdsourcing/Mobile crowdsensing)、区块链应用(Blockchain-based applications)、联邦学习(Federated learning)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/whq/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

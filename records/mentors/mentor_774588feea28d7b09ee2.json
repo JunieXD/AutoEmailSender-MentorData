@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2f4ed183b5a72c6759ce"
+      ],
+      "ended_at": null,
+      "id": "aff_183ae516da9fb236eaa1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/xcy2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2f4ed183b5a72c6759ce"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_183ae516da9fb236eaa1",
+      "claim_ids": [
+        "claim_2f4ed183b5a72c6759ce"
+      ],
+      "is_primary": true,
+      "normalized_value": "cyxu@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/xcy2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "cyxu@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2f4ed183b5a72c6759ce"
+    ],
+    "email": [
+      "claim_2f4ed183b5a72c6759ce"
+    ],
+    "name": [
+      "claim_2f4ed183b5a72c6759ce"
+    ],
+    "profile_url": [
+      "claim_2f4ed183b5a72c6759ce"
+    ],
+    "recent_papers": [
+      "claim_2f4ed183b5a72c6759ce"
+    ],
+    "research_directions": [
+      "claim_2f4ed183b5a72c6759ce"
+    ],
+    "status": [
+      "claim_2f4ed183b5a72c6759ce"
+    ],
+    "title": [
+      "claim_2f4ed183b5a72c6759ce"
+    ]
+  },
+  "id": "mentor_774588feea28d7b09ee2",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2f4ed183b5a72c6759ce"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许晨阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_183ae516da9fb236eaa1",
+      "claim_ids": [
+        "claim_2f4ed183b5a72c6759ce"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/xcy2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Fair Submodular Maximization over a Knapsack Constraint. In Proceedings of International Joint Conference on Artificial Intelligence (IJCAI 2025).",
+    "Logarithmic Approximations for Fair k-Set Selection. In Proceedings of International Joint Conference on Artificial Intelligence (IJCAI 2025).",
+    "Mechanism Design for Auctions with Externalities on Budgets. In Proceedings of International Joint Conference on Theoretical Computer Science (IJTCS 2025).",
+    "Mechanism Design for Exchange Markets. In Proceedings of Conference On Web And Internet Economics (WINE 2024).",
+    "Open-Book Neural Algorithmic Reasoning. In Proceedings of Annual Conference on Neural Information Processing Systems (NeurIPS 2024).",
+    "A Context-Enhanced Framework for Sequential Graph Reasoning. In Proceedings of International Joint Conference on Artificial Intelligence (IJCAI 2024).",
+    "Sampling for Beyond-Worst-Case Online Ranking. In Proceedings of AAAI Conference on Artificial Intelligence (AAAI 2024).",
+    "Boundary-Aware Periodicity-based Sparsification Strategy for Ultra-Long Time Series Forecasting. In Proceedings of ACM International Conference on Multimedia (ACM MM 2024)."
+  ],
+  "research_directions": [
+    "理论计算机、运筹学、算法博弈论、机器学习、组合优化、在线优化、图神经网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/xcy2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

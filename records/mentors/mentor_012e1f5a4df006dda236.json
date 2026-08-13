@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0dff3346d7fbe15f079"
+      ],
+      "ended_at": null,
+      "id": "aff_69690794ee8110ac1434",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zhb2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_d0dff3346d7fbe15f079"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_69690794ee8110ac1434",
+      "claim_ids": [
+        "claim_d0dff3346d7fbe15f079"
+      ],
+      "is_primary": true,
+      "normalized_value": "hbzhu@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zhb2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "hbzhu@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0dff3346d7fbe15f079"
+    ],
+    "email": [
+      "claim_d0dff3346d7fbe15f079"
+    ],
+    "name": [
+      "claim_d0dff3346d7fbe15f079"
+    ],
+    "profile_url": [
+      "claim_d0dff3346d7fbe15f079"
+    ],
+    "research_directions": [
+      "claim_d0dff3346d7fbe15f079"
+    ],
+    "status": [
+      "claim_d0dff3346d7fbe15f079"
+    ]
+  },
+  "id": "mentor_012e1f5a4df006dda236",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0dff3346d7fbe15f079"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱惠彪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_69690794ee8110ac1434",
+      "claim_ids": [
+        "claim_d0dff3346d7fbe15f079"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/zhb2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高可信计算、形式化方法、形式语义及其连接、程序分析与验证、进程代数"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/zhb2/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}

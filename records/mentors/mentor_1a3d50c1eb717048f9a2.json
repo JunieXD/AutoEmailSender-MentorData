@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_41e283b5a00f85f1c240"
+      ],
+      "ended_at": null,
+      "id": "aff_05af1d86e51e4c1cccc8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/lxz/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_41e283b5a00f85f1c240"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_05af1d86e51e4c1cccc8",
+      "claim_ids": [
+        "claim_41e283b5a00f85f1c240"
+      ],
+      "is_primary": true,
+      "normalized_value": "xzliu@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/lxz/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "xzliu@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_41e283b5a00f85f1c240"
+    ],
+    "email": [
+      "claim_41e283b5a00f85f1c240"
+    ],
+    "name": [
+      "claim_41e283b5a00f85f1c240"
+    ],
+    "profile_url": [
+      "claim_41e283b5a00f85f1c240"
+    ],
+    "research_directions": [
+      "claim_41e283b5a00f85f1c240"
+    ],
+    "status": [
+      "claim_41e283b5a00f85f1c240"
+    ]
+  },
+  "id": "mentor_1a3d50c1eb717048f9a2",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_41e283b5a00f85f1c240"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘献忠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_05af1d86e51e4c1cccc8",
+      "claim_ids": [
+        "claim_41e283b5a00f85f1c240"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/lxz/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能系统开发,移动智能终端应用,教育大数据分析与应用,无线传感器网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/lxz/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}

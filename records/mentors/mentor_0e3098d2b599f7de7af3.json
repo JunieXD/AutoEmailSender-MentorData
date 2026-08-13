@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ffa0175beeb2839d3ed9"
+      ],
+      "ended_at": null,
+      "id": "aff_9edad1fa0d6f9a95cbbd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zj2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ffa0175beeb2839d3ed9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9edad1fa0d6f9a95cbbd",
+      "claim_ids": [
+        "claim_ffa0175beeb2839d3ed9"
+      ],
+      "is_primary": true,
+      "normalized_value": "jzhou@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zj2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jzhou@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ffa0175beeb2839d3ed9"
+    ],
+    "email": [
+      "claim_ffa0175beeb2839d3ed9"
+    ],
+    "name": [
+      "claim_ffa0175beeb2839d3ed9"
+    ],
+    "profile_url": [
+      "claim_ffa0175beeb2839d3ed9"
+    ],
+    "recent_papers": [
+      "claim_ffa0175beeb2839d3ed9"
+    ],
+    "research_directions": [
+      "claim_ffa0175beeb2839d3ed9"
+    ],
+    "status": [
+      "claim_ffa0175beeb2839d3ed9"
+    ],
+    "title": [
+      "claim_ffa0175beeb2839d3ed9"
+    ]
+  },
+  "id": "mentor_0e3098d2b599f7de7af3",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ffa0175beeb2839d3ed9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9edad1fa0d6f9a95cbbd",
+      "claim_ids": [
+        "claim_ffa0175beeb2839d3ed9"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/zj2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "EPNS: Efficient privacy-preserving intelligent traffic navigation from multiparty delegated computation in cloud-assisted VANETs, IEEE Transactions on Mobile Computing, CCF A,22(3): 1491-1506, 2023",
+    "A differentially private federated learning model against poisoning attacks in edge computing, IEEE Transactions on Dependable and Secure Computing, CCF A,20(3): 1941-1958, 2023",
+    "Lightweight privacy-preserving distributed recommender system using tag-based multikey fully homomorphic data encapsulation, IEEE Transactions on Dependable and Secure Computing, CCF A,20(6): 5230-5246, 2023",
+    "Generalized autonomous path proxy re-encryption scheme to support branch functionality. IEEE Transactions on Information Forensics and Security,CCF A, 18:5387-5400, 2023",
+    "Updatable private set intersection with forward privacy. IEEE Transactions on Information Forensics and Security,CCF A, 19: 8573-8586, 2024",
+    "Efficient multilevel threshold changeable homomorphic data encapsulation with application to privacy-preserving vehicle positioning. IEEE Transactions on Intelligent Transportation Systems,中科院一区,26(4): 5494-5508, 2025",
+    "MuEOC: Efficient SGX-based multi-key homomorphic outsourcing computation for e-health system. IEEE Transactions on Dependable and Secure Computing,CCF A,22(3): 2103-2118, 2025",
+    "A ring signature with aggregation for ensuring privacy in blockchain transactions. IEEE Internet of Things Journal,中科院一区, 12(12): 21001-21015, 2025"
+  ],
+  "research_directions": [
+    "公钥密码学、外包系统的安全与隐私保护关键理论(全同态加密、安全多方计算),及其在云计算、人工智能、区块链、大数据、物联网和边缘计算等各类新兴网络服务中的应用密码学研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/zj2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

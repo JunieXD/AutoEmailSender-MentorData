@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4030d0b1e8f12bb3d5c2"
+      ],
+      "ended_at": null,
+      "id": "aff_4aab5c1e83f359a56015",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/lcj/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4030d0b1e8f12bb3d5c2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4aab5c1e83f359a56015",
+      "claim_ids": [
+        "claim_4030d0b1e8f12bb3d5c2"
+      ],
+      "is_primary": true,
+      "normalized_value": "cjli@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/lcj/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "cjli@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4030d0b1e8f12bb3d5c2"
+    ],
+    "email": [
+      "claim_4030d0b1e8f12bb3d5c2"
+    ],
+    "name": [
+      "claim_4030d0b1e8f12bb3d5c2"
+    ],
+    "profile_url": [
+      "claim_4030d0b1e8f12bb3d5c2"
+    ],
+    "research_directions": [
+      "claim_4030d0b1e8f12bb3d5c2"
+    ],
+    "status": [
+      "claim_4030d0b1e8f12bb3d5c2"
+    ],
+    "title": [
+      "claim_4030d0b1e8f12bb3d5c2"
+    ]
+  },
+  "id": "mentor_655cc1208355c03558ca",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4030d0b1e8f12bb3d5c2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李成举"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4aab5c1e83f359a56015",
+      "claim_ids": [
+        "claim_4030d0b1e8f12bb3d5c2"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/lcj/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "编码密码、信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/lcj/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

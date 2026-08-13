@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e3d84f2d827b493e9d80"
+      ],
+      "ended_at": null,
+      "id": "aff_576c1dfcdf94167628ca",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/mhy2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e3d84f2d827b493e9d80"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_576c1dfcdf94167628ca",
+      "claim_ids": [
+        "claim_e3d84f2d827b493e9d80"
+      ],
+      "is_primary": true,
+      "normalized_value": "hymao@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/mhy2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "hymao@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e3d84f2d827b493e9d80"
+    ],
+    "email": [
+      "claim_e3d84f2d827b493e9d80"
+    ],
+    "name": [
+      "claim_e3d84f2d827b493e9d80"
+    ],
+    "profile_url": [
+      "claim_e3d84f2d827b493e9d80"
+    ],
+    "research_directions": [
+      "claim_e3d84f2d827b493e9d80"
+    ],
+    "status": [
+      "claim_e3d84f2d827b493e9d80"
+    ],
+    "title": [
+      "claim_e3d84f2d827b493e9d80"
+    ]
+  },
+  "id": "mentor_4aecfecf7fb042683fc4",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e3d84f2d827b493e9d80"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "毛宏燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_576c1dfcdf94167628ca",
+      "claim_ids": [
+        "claim_e3d84f2d827b493e9d80"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/mhy2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能计算 可信计算 形式化方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/mhy2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

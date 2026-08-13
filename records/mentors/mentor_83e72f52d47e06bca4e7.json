@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3fbf5529c17ff4ab2f96"
+      ],
+      "ended_at": null,
+      "id": "aff_6770ae42036af30cc054",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cy2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_3fbf5529c17ff4ab2f96"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6770ae42036af30cc054",
+      "claim_ids": [
+        "claim_3fbf5529c17ff4ab2f96"
+      ],
+      "is_primary": true,
+      "normalized_value": "ycai@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cy2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "ycai@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3fbf5529c17ff4ab2f96"
+    ],
+    "email": [
+      "claim_3fbf5529c17ff4ab2f96"
+    ],
+    "name": [
+      "claim_3fbf5529c17ff4ab2f96"
+    ],
+    "profile_url": [
+      "claim_3fbf5529c17ff4ab2f96"
+    ],
+    "research_directions": [
+      "claim_3fbf5529c17ff4ab2f96"
+    ],
+    "status": [
+      "claim_3fbf5529c17ff4ab2f96"
+    ]
+  },
+  "id": "mentor_83e72f52d47e06bca4e7",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3fbf5529c17ff4ab2f96"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蔡喁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6770ae42036af30cc054",
+      "claim_ids": [
+        "claim_3fbf5529c17ff4ab2f96"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/cy2/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "民机软件和系统安全性管理、高安全性系统和软件验证技术、工业产品生命周期信息化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/cy2/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}

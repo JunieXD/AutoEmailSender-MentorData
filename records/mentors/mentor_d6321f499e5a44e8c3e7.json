@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aa2cb736da09c46dba70"
+      ],
+      "ended_at": null,
+      "id": "aff_f3e5812872d961b6517a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zyx2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aa2cb736da09c46dba70"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f3e5812872d961b6517a",
+      "claim_ids": [
+        "claim_aa2cb736da09c46dba70"
+      ],
+      "is_primary": true,
+      "normalized_value": "yxzhao@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/zyx2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "yxzhao@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aa2cb736da09c46dba70"
+    ],
+    "email": [
+      "claim_aa2cb736da09c46dba70"
+    ],
+    "name": [
+      "claim_aa2cb736da09c46dba70"
+    ],
+    "profile_url": [
+      "claim_aa2cb736da09c46dba70"
+    ],
+    "recent_papers": [
+      "claim_aa2cb736da09c46dba70"
+    ],
+    "research_directions": [
+      "claim_aa2cb736da09c46dba70"
+    ],
+    "status": [
+      "claim_aa2cb736da09c46dba70"
+    ],
+    "title": [
+      "claim_aa2cb736da09c46dba70"
+    ]
+  },
+  "id": "mentor_d6321f499e5a44e8c3e7",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aa2cb736da09c46dba70"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵涌鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f3e5812872d961b6517a",
+      "claim_ids": [
+        "claim_aa2cb736da09c46dba70"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/zyx2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Yongxin Zhao, Ziqi Xu, Xi Wu: Check-Agent: Multimodal fraud detection via a multi-agent framework. Knowl. Based Syst. 350: 116511 (2026)(SCI一区)",
+    "Wenxian Su, Xi Wu, Yongxin Zhao*: NL2ACSL : Interactively translating natural language to ANSI C specification language with large language models. Knowl. Based Syst. 335: 115177 (2026) (SCI一区)",
+    "Aijia Cheng, Kailong Wang, Ling Shi, Yongxin Zhao: R2IF: Aligning Reasoning with Decisions via Composite Rewards for Interpretable LLM Function Calling. ACL (1) 2026: 36995-37008(CCF A)",
+    "Ziqi Xu, Yi Liu, Yuekang Li, Ling Shi, Kailong Wang, Yongxin Zhao: STEAMROLLER: A Multi-Agent System for Inclusive Automatic Speech Recognition for People Who Stutter. AAAI 2026: 39495-39503 (CCF A)",
+    "Yongxin Zhao, Wenhan Wu, Yuan Fei, Zhihao Liu, Yang Li, Yilong Yang, Ling Shi, Bo Zhang: An architecture refactoring approach to reducing software hierarchy complexity. J. Softw. Evol. Process. 36(4)(2024)(SCI一区)",
+    "Jin Lv, Yongxin Zhao*, Xi Wu, Yongjian Li, Qiang Wang: Formal Analysis of TSN Scheduler for Real-Time Communications. IEEE Trans. Reliab. 70(3): 1286-1294 (2021) (SCI一区)",
+    "Mufan Xiang, Yongjian Li, Sijun Tan, Yongxin Zhao*, Yiwei Chi: Parameterized Design and Formal Verification of Multi-ported Memory. ICECCS 2022: 33-41",
+    "Weiyu Xu, Xi Wu, Yongxin Zhao*, Yongjian Li: Formal Verification and Analysis of Time-Sensitive Software-Defined Network Architecture. SEKE 2022: 369-375"
+  ],
+  "research_directions": [
+    "可信人工智能:大模型、AI Agent、 AI安全、AI鲁棒性、可解释和公平性、因果推断",
+    "可信软件工程:智能系统、网络协议等各类系统及软件的可信建模、分析、验证和应用研究",
+    "形式化方法:程序统一理论、形式语义理论、形式建模与分析、形式验证、定理证明"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/zyx2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

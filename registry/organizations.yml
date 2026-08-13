@@ -2479,3 +2479,49 @@ organizations:
   successor_id: null
   created_at: '2026-08-13T02:31:21Z'
   updated_at: '2026-08-13T02:31:21Z'
+- id: org_auto_f7c50cb10536268671ce
+  type: university
+  canonical_name: 华东师范大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://ecnu.edu.cn/
+  approved_domains:
+  - ecnu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T02:35:08Z'
+  updated_at: '2026-08-13T02:35:08Z'
+- id: org_auto_bef3df0765bc90939f42
+  type: school
+  canonical_name: 软件工程学院
+  parent_id: org_auto_f7c50cb10536268671ce
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T02:35:08Z'
+  updated_at: '2026-08-13T02:35:08Z'
+- id: org_auto_7dd881ebf96d0a61ed7f
+  type: laboratory
+  canonical_name: 智能机器人实验室
+  parent_id: org_auto_bef3df0765bc90939f42
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T02:35:08Z'
+  updated_at: '2026-08-13T02:35:08Z'
+- id: org_auto_ba2f20ff684c141254a3
+  type: school
+  canonical_name: 密码学院
+  parent_id: org_auto_f7c50cb10536268671ce
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T02:35:08Z'
+  updated_at: '2026-08-13T02:35:08Z'

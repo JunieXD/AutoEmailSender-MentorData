@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a601c0bd321554e018c4"
+      ],
+      "ended_at": null,
+      "id": "aff_2b25ed4a44906bd64fcd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/wxl2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a601c0bd321554e018c4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2b25ed4a44906bd64fcd",
+      "claim_ids": [
+        "claim_a601c0bd321554e018c4"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoluwang@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/wxl2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoluwang@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a601c0bd321554e018c4"
+    ],
+    "email": [
+      "claim_a601c0bd321554e018c4"
+    ],
+    "name": [
+      "claim_a601c0bd321554e018c4"
+    ],
+    "profile_url": [
+      "claim_a601c0bd321554e018c4"
+    ],
+    "recent_papers": [
+      "claim_a601c0bd321554e018c4"
+    ],
+    "research_directions": [
+      "claim_a601c0bd321554e018c4"
+    ],
+    "status": [
+      "claim_a601c0bd321554e018c4"
+    ],
+    "title": [
+      "claim_a601c0bd321554e018c4"
+    ]
+  },
+  "id": "mentor_5ba15b34d9d4f48a40ca",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a601c0bd321554e018c4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王小鹭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2b25ed4a44906bd64fcd",
+      "claim_ids": [
+        "claim_a601c0bd321554e018c4"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/wxl2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Xiaolu Wang, Yuchang Sun, Hoi-To Wai, Jun Zhang. Tackling Arbitrarily Heterogeneous Data in Asynchronous SGD without Worker Scheduling. INFORMS Journal on Computing (IJOC), 2026.",
+    "Xiaolu Wang, Zijian Li, Shi Jin, Jun Zhang. Achieving Linear Speedup in Asynchronous Federated Learning with Heterogeneous Clients. IEEE Transactions on Mobile Computing (TMC), 2025.",
+    "Wenjing Yan, Xiangyu Zhong, Xiaolu Wang, Ying-Jun Angela Zhang. Momentum-Driven Adaptivity: Towards Tuning-Free Asynchronous Federated Learning. In Proceedings of the 42nd International Conference on Machine Learning (ICML), 2025.",
+    "Xinran Li, Xiaolu Wang, Chenjia Bai, Jun Zhang. Exponential Topology-Enabled Scalable Communication in Multi-Agent Reinforcement Learning. In Proceedings of the 13rd International Conference on Learning Representations (ICLR), 2025.",
+    "Wenjing Yan, Kai Zhang, Xiaolu Wang, Xuanyu Cao. Problem Parameter-Free Federated Learning. In Proceedings of the 49th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2025.",
+    "Zhaoye Pan, Xiaolu Wang, Huikang Liu, Jun Zhang. An Efficient Hierarchical Block Coordinate Descent Method for Time-Varying Graphical Lasso. In Proceedings of the 49th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2024.",
+    "Xiaolu Wang, Cheng Jin, Hoi-To Wai, Yuantao Gu. Linear Speedup of Incremental Aggregated Gradient Methods on Streaming Data. In Proceedings of the 62nd IEEE Conference on Decision and Control (CDC), 2023.",
+    "Xiaolu Wang, Chung-Yiu Yau, Hoi-To Wai. Network Effects in Performative Prediction Games. In Proceedings of the 40th International Conference on Machine Learning (ICML), 2023."
+  ],
+  "research_directions": [
+    "最优化方法及其在数据科学和人工智能中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/wxl2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

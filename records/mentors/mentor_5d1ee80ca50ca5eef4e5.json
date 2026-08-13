@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7ff6b134efeff40b4502"
+      ],
+      "ended_at": null,
+      "id": "aff_7ca168a52481555a849a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/czf/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_7ff6b134efeff40b4502"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7ca168a52481555a849a",
+      "claim_ids": [
+        "claim_7ff6b134efeff40b4502"
+      ],
+      "is_primary": true,
+      "normalized_value": "zfcao@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/czf/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "zfcao@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7ff6b134efeff40b4502"
+    ],
+    "email": [
+      "claim_7ff6b134efeff40b4502"
+    ],
+    "name": [
+      "claim_7ff6b134efeff40b4502"
+    ],
+    "profile_url": [
+      "claim_7ff6b134efeff40b4502"
+    ],
+    "status": [
+      "claim_7ff6b134efeff40b4502"
+    ]
+  },
+  "id": "mentor_5d1ee80ca50ca5eef4e5",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7ff6b134efeff40b4502"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹珍富"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7ca168a52481555a849a",
+      "claim_ids": [
+        "claim_7ff6b134efeff40b4502"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/czf/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/czf/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}

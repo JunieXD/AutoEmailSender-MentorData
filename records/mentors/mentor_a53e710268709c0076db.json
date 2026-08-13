@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_75fe7f41db4ddd81ba6b"
+      ],
+      "ended_at": null,
+      "id": "aff_c2bcc7e6dc367449c93f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/gj2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_75fe7f41db4ddd81ba6b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c2bcc7e6dc367449c93f",
+      "claim_ids": [
+        "claim_75fe7f41db4ddd81ba6b"
+      ],
+      "is_primary": true,
+      "normalized_value": "jguo@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/gj2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "jguo@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ],
+    "email": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ],
+    "name": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ],
+    "profile_url": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ],
+    "recent_papers": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ],
+    "research_directions": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ],
+    "status": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ],
+    "title": [
+      "claim_75fe7f41db4ddd81ba6b"
+    ]
+  },
+  "id": "mentor_a53e710268709c0076db",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_75fe7f41db4ddd81ba6b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭建"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c2bcc7e6dc367449c93f",
+      "claim_ids": [
+        "claim_75fe7f41db4ddd81ba6b"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/gj2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "SuperDetector: A Framework for Performance Detection on Vulnerabilities of Smart Contracts",
+    "Formal Modeling and Verification of Smart Contracts with Spin",
+    "Adaptive Layered Segregated Fit Scheme for Dynamic Memory Allocation",
+    "Formal Verification of a Hybrid IoT Operating System Model",
+    "Toward a Unified Executable Formal Automobile OS Kernel and Its Applications",
+    "Timing Modeling and Analysis for AUTOSAR OS Schedule Tables",
+    "End-to-End Automated Verification for OS Kernels",
+    "Formal Modeling and Verifying the TTCAN Protocol from a Probabilistic Perspective"
+  ],
+  "research_directions": [
+    "嵌入式系统开发与分析(主要包括汽车电子、多复用智能卡)、嵌入式实时操作系统、嵌入式系统与智能系统的建模分析与验证、形式化方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/gj2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

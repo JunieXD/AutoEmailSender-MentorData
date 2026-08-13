@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e6a0e892e24724769a38"
+      ],
+      "ended_at": null,
+      "id": "aff_b5b97d99e1e6bdffb329",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/czl2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e6a0e892e24724769a38"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b5b97d99e1e6bdffb329",
+      "claim_ids": [
+        "claim_e6a0e892e24724769a38"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhlchen@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/czl2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "zhlchen@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e6a0e892e24724769a38"
+    ],
+    "email": [
+      "claim_e6a0e892e24724769a38"
+    ],
+    "name": [
+      "claim_e6a0e892e24724769a38"
+    ],
+    "profile_url": [
+      "claim_e6a0e892e24724769a38"
+    ],
+    "recent_papers": [
+      "claim_e6a0e892e24724769a38"
+    ],
+    "research_directions": [
+      "claim_e6a0e892e24724769a38"
+    ],
+    "status": [
+      "claim_e6a0e892e24724769a38"
+    ],
+    "title": [
+      "claim_e6a0e892e24724769a38"
+    ]
+  },
+  "id": "mentor_d393716d3a44e60b887e",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e6a0e892e24724769a38"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈志立"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b5b97d99e1e6bdffb329",
+      "claim_ids": [
+        "claim_e6a0e892e24724769a38"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/czl2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Jie Fu, Qingqing Ye, Haibo Hu, Zhili Chen, Lulu Wang, Kuncan Wang, Xun Ran. DPSUR: Accelerating Differentially Private Stochastic Gradient Descent Using Selective Update and Release. Proceedings of the VLDB Endowment, 17(6), 1200-1213.",
+    "Zhili Chen, Tianjiao Ni, Hong Zhong, Shun Zhang, Jie Cui. Differentially Private Double Spectrum Auction with Approximate Social Welfare Maximization. IEEE Transactions on Information Forensics and Security, 14(11): 2805-2818, 2019.",
+    "Zhili Chen, Liusheng Huang, Lin Chen. ITSEC: An Information-theoretically Secure Framework for Truthful Spectrum Auctions. Proceedings of IEEE INFOCOM 2015, pp. 2065-2073.",
+    "Zhili Chen, Liusheng Huang, Lu Li, Wei Yang, Haibo Miao, Miaomiao Tian, Fei Wang. PS-TRUST: Provably Secure Solution for Truthful Double Spectrum Auctions. Proceedings of IEEE INFOCOM 2014, pp. 1249-1257.",
+    "Zhili Chen, Lin Chen, Hong Zhong. Towards Secure and Verifiable Database-driven Spectrum Sharing. Proceedings of IEEE DSN 2017, pp. 285-296.",
+    "Zhili Chen, Xuemei Wei, Hong Zhong, Jie Cui, Yan Xu, Shun Zhang. Secure, Efficient and Practical Double Spectrum Auction. Proceedings of IEEE/ACM IWQoS 2017.",
+    "Zhili Chen, Lin Chen, Liusheng Huang, Hong Zhong. On Privacy-preserving Cloud Auction. Proceedings of IEEE SRDS 2016, pp. 279-288.",
+    "Shun Zhang, Laixiang Liu, Zhili Chen, Hong Zhong. Probabilistic Matrix Factorization with Personalized Differential Privacy. Knowledge-Based Systems, 2019."
+  ],
+  "research_directions": [
+    "安全多方计算及其应用、差分隐私及其应用、联邦机器学习和数据隐私保护、网络资源分配中的隐私保护、信息隐藏"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/czl2/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

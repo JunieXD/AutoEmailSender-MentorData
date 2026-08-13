@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a5fa8e55a7ca924d6af4"
+      ],
+      "ended_at": null,
+      "id": "aff_0f2b1b7ea3a0afb5d108",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cyx/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a5fa8e55a7ca924d6af4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0f2b1b7ea3a0afb5d108",
+      "claim_ids": [
+        "claim_a5fa8e55a7ca924d6af4"
+      ],
+      "is_primary": true,
+      "normalized_value": "yxchen@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cyx/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "yxchen@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ],
+    "email": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ],
+    "name": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ],
+    "profile_url": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ],
+    "recent_papers": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ],
+    "research_directions": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ],
+    "status": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ],
+    "title": [
+      "claim_a5fa8e55a7ca924d6af4"
+    ]
+  },
+  "id": "mentor_356246f836e63fd94d1a",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a5fa8e55a7ca924d6af4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈仪香"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0f2b1b7ea3a0afb5d108",
+      "claim_ids": [
+        "claim_a5fa8e55a7ca924d6af4"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/cyx/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Static Application Security Testing (SAST) Tools for Smart Contracts: How Far Are We?",
+    "Using My Functions Should Follow My Checks: Understanding and Detecting Insecure OpenZeppelin Code in Smart Contracts",
+    "FineWAVE: Fine-Grained Warning Verification of Bugs for Automated Static Analysis Tools",
+    "How to characterize imprecision in multi-view clustering?",
+    "On divergence-sensitive weak probabilistic bisimilarity",
+    "A Comprehensive Study on Quality Assurance Tools for Java",
+    "Comparison and Evaluation on Static Application Security Testing (SAST) Tools for Java",
+    "人工智能系统可信性度量评估研究综述"
+  ],
+  "research_directions": [
+    "人工智能可信基础、可信智能系统、智能软件形式化方法、智能嵌入式系统设计、智能系统设计与优化、物联网、实时系统规范语言设计与语义、软件可信度量与评估、软硬件协同设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/cyx/main.psp",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

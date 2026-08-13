@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ce4bef8159a7a7b56485"
+      ],
+      "ended_at": null,
+      "id": "aff_4908f3459ef30ee994a1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/hm2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ce4bef8159a7a7b56485"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4908f3459ef30ee994a1",
+      "claim_ids": [
+        "claim_ce4bef8159a7a7b56485"
+      ],
+      "is_primary": true,
+      "normalized_value": "mhu@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/hm2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "mhu@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ce4bef8159a7a7b56485"
+    ],
+    "email": [
+      "claim_ce4bef8159a7a7b56485"
+    ],
+    "name": [
+      "claim_ce4bef8159a7a7b56485"
+    ],
+    "profile_url": [
+      "claim_ce4bef8159a7a7b56485"
+    ],
+    "recent_papers": [
+      "claim_ce4bef8159a7a7b56485"
+    ],
+    "research_directions": [
+      "claim_ce4bef8159a7a7b56485"
+    ],
+    "status": [
+      "claim_ce4bef8159a7a7b56485"
+    ]
+  },
+  "id": "mentor_540520a7c47b41e38894",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ce4bef8159a7a7b56485"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡铭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4908f3459ef30ee994a1",
+      "claim_ids": [
+        "claim_ce4bef8159a7a7b56485"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/hm2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Required Spine Optional Limbs: Heterogeneous Federated Learning via Backbone-sharing and Activation-guided Selection",
+    "Data-selection-based model repair for federated learning",
+    "Learn by Analogy: Distribution-aware Fuzz Testing for DNNs via Cross-Modal Generation",
+    "Silence of Commit Messages: An Empirical Study for Vulnerability Commit Message Generation Using Large Language Models",
+    "SPIDE: Serial and Parallel Intertwined Speculative Decoding",
+    "Shedding Light on VLN Robustness: A Black-box Framework for Indoor Lighting-based Adversarial Attack",
+    "DySTop: Dynamic Staleness Control and Topology Construction for Asynchronous Decentralized Federated Learning",
+    "Separate Bombs from Firecrackers: Intention-guided Vulnerability Assessment via LLM"
+  ],
+  "research_directions": [
+    "软件工程(大模型驱动的可信代码生成、模型驱动开发、需求工程、安全规约生成和挖掘)、智能系统(分布式学习、大模型和多智能体系统设计和优化、具身智能)、可信人工智能(传统人工智能安全、大模型和多智能体系统安全)、信息物理融合系统(实时系统建模、嵌入式代码生成)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/hm2/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}

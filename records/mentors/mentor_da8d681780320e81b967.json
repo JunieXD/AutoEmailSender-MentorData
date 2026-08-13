@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9104948d099a5e31616f"
+      ],
+      "ended_at": null,
+      "id": "aff_d21a0e8fc5b2fe871cf4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/gsz/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9104948d099a5e31616f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d21a0e8fc5b2fe871cf4",
+      "claim_ids": [
+        "claim_9104948d099a5e31616f"
+      ],
+      "is_primary": true,
+      "normalized_value": "szgu@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/gsz/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "szgu@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9104948d099a5e31616f"
+    ],
+    "email": [
+      "claim_9104948d099a5e31616f"
+    ],
+    "name": [
+      "claim_9104948d099a5e31616f"
+    ],
+    "profile_url": [
+      "claim_9104948d099a5e31616f"
+    ],
+    "recent_papers": [
+      "claim_9104948d099a5e31616f"
+    ],
+    "research_directions": [
+      "claim_9104948d099a5e31616f"
+    ],
+    "status": [
+      "claim_9104948d099a5e31616f"
+    ],
+    "title": [
+      "claim_9104948d099a5e31616f"
+    ]
+  },
+  "id": "mentor_da8d681780320e81b967",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9104948d099a5e31616f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谷守珍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d21a0e8fc5b2fe871cf4",
+      "claim_ids": [
+        "claim_9104948d099a5e31616f"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/gsz/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "S. Shao,S. Gu(通信作者), B. Sun,E. H.-M.Sha, Q.Zhuge. Fairness Scheduling for Tasks with Different Real-time Level on Heterogeneous Systems,IEEE 28th International Conference on Parallel and Distributed Systems (ICPADS), 2023. (CCF C)",
+    "M. jia,E. H.-M.Sha, Q.Zhuge,S. Gu. Transient Computing for Energy Harvesting Systems: A Survey,Journal of Systems Architecture, 2022, 132(4):102743.(CCF-B)",
+    "R. Xu,E. H.-M.Sha, Q.Zhuge,L. Shi,S. Gu,Y. Hou. Relaxed Placement: Minimizing Shift Operations for Racetrack Memory in Hybrid SPM.ACM Great Lakes Symposium on VLSI,2021:129-134.",
+    "S. Gao,S. Gu(通信作者), R. Xu, E. H.-M.Sha, Q.Zhuge. Performance Optimization for Parallel Systems with Shared DWM via Retiming, Loop Scheduling, and Data Placement,Journal of Systems Architecture, 2021, 112:101842.(CCF-B)",
+    "E. H.-M.Sha,M. Xu,S. Gu(通信作者), Q.Zhuge. Optimizing the data placement and scheduling on multi-port DWM in multi-core embedded system,Journal of Systems Architecture, 2021, 117:102145.(CCF-B)",
+    "H. Chen, Y.Lv, C. Li,S. Gu, L.Shi. An Empirical Study of Hybrid SSD withOptaneand QLC Flash,IEEE 38th International Conference on Computer Design (ICCD), 2020, pp.175-178. (CCF-B)",
+    "R. Xu,E. H.-M.Sha, Q.Zhuge,S. Gu, L. Shi. Optimizing Data Placement for Hybrid SPM with SRAM and RacetrackMemory,IEEE 38th International Conference on Computer Design (ICCD), 2020, pp. 409-416. (CCF-B)",
+    "Z. Ma,E. H.-M.Sha,Q.Zhuge,W. Jiang, R. Zhang,S.Gu.Future Generation Computer Systems, 2020, 105:1-12.(CCF-C)"
+  ],
+  "research_directions": [
+    "智能系统存储优化技术、新型存储体系结构、多核并行嵌入式系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/gsz/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

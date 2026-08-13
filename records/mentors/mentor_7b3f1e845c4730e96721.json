@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c015518e6978b80e2d71"
+      ],
+      "ended_at": null,
+      "id": "aff_ba892ef8edb8500fae18",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cc2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c015518e6978b80e2d71"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ba892ef8edb8500fae18",
+      "claim_ids": [
+        "claim_c015518e6978b80e2d71"
+      ],
+      "is_primary": true,
+      "normalized_value": "chchen@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cc2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "chchen@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c015518e6978b80e2d71"
+    ],
+    "email": [
+      "claim_c015518e6978b80e2d71"
+    ],
+    "name": [
+      "claim_c015518e6978b80e2d71"
+    ],
+    "profile_url": [
+      "claim_c015518e6978b80e2d71"
+    ],
+    "recent_papers": [
+      "claim_c015518e6978b80e2d71"
+    ],
+    "research_directions": [
+      "claim_c015518e6978b80e2d71"
+    ],
+    "status": [
+      "claim_c015518e6978b80e2d71"
+    ],
+    "title": [
+      "claim_c015518e6978b80e2d71"
+    ]
+  },
+  "id": "mentor_7b3f1e845c4730e96721",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c015518e6978b80e2d71"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈程"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ba892ef8edb8500fae18",
+      "claim_ids": [
+        "claim_c015518e6978b80e2d71"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/cc2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "Robust Decentralized Multi-armed Bandits: From Corruption-Resilience to Byzantine-Resilience.",
+    "A Near-optimal, Scalable and Parallelizable Framework for Stochastic Bandits Robust to Adversarial Corruptions and Beyond.",
+    "Few-Shot Diffusion Models Escape the Curse of Dimensionality.",
+    "Is Aggregation the Only Choice? Federated Learning via Layer-wise Model Recombination.",
+    "Approximate Matrix Multiplication over Sliding Windows.",
+    "Zeroth-Order Methods for Constrained Nonconvex Nonsmooth Stochastic Optimization.",
+    "Robustness Verification of Deep Reinforcement Learning Based Control Systems using Reward Martingales.",
+    "Block Broyden's Methods for Solving Nonlinear Equations."
+  ],
+  "research_directions": [
+    "机器学习理论、在线学习、强化学习、最优化方法、矩阵近似、扩散模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/cc2/main.psp",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:42Z"
+}

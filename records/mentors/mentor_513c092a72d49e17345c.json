@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f3d007aec97ac3537c8c"
+      ],
+      "ended_at": null,
+      "id": "aff_02ff930d24342eff8c22",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/by2/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f3d007aec97ac3537c8c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_02ff930d24342eff8c22",
+      "claim_ids": [
+        "claim_f3d007aec97ac3537c8c"
+      ],
+      "is_primary": true,
+      "normalized_value": "ybao@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/by2/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "ybao@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f3d007aec97ac3537c8c"
+    ],
+    "email": [
+      "claim_f3d007aec97ac3537c8c"
+    ],
+    "name": [
+      "claim_f3d007aec97ac3537c8c"
+    ],
+    "profile_url": [
+      "claim_f3d007aec97ac3537c8c"
+    ],
+    "recent_papers": [
+      "claim_f3d007aec97ac3537c8c"
+    ],
+    "research_directions": [
+      "claim_f3d007aec97ac3537c8c"
+    ],
+    "status": [
+      "claim_f3d007aec97ac3537c8c"
+    ]
+  },
+  "id": "mentor_513c092a72d49e17345c",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f3d007aec97ac3537c8c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "鲍钰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_02ff930d24342eff8c22",
+      "claim_ids": [
+        "claim_f3d007aec97ac3537c8c"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/by2/main.psp"
+    }
+  ],
+  "recent_papers": [
+    "A committee machine with two-layer expert nets",
+    "基于网站日志挖掘的频繁遍历主干子网发现",
+    "基于WEB日志的个性化搜素引擎模型的发现",
+    "基于WEB日志的隐私保护关联规则挖掘方法",
+    "WEB日志挖掘中3G WAP子网的获取研究",
+    "运用WebMo 对Web应用项目进行规模和工作量的估计",
+    "基于OLAP的上海社区服务网后台数据仓库的设计与实现",
+    "基于WEB日志挖掘的网站结构优化方法"
+  ],
+  "research_directions": [
+    "主要研究软件可靠性和重用性。目前主要研究软件构架,物联网,面向对象编程以及互联网+应用项目的开发。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/by2/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}

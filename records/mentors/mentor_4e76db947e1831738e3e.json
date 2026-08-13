@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ae6ed28020803a058c60"
+      ],
+      "ended_at": null,
+      "id": "aff_1e84c88d57ebe2c24db9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:42Z",
+      "organization_id": "org_auto_bef3df0765bc90939f42",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cfd/main.psp",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ae6ed28020803a058c60"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1e84c88d57ebe2c24db9",
+      "claim_ids": [
+        "claim_ae6ed28020803a058c60"
+      ],
+      "is_primary": true,
+      "normalized_value": "fdcai@sei.ecnu.edu.cn",
+      "observed_at": "2026-08-11T13:32:42Z",
+      "source_url": "https://faculty.ecnu.edu.cn/_s43/cfd/main.psp",
+      "status": "current",
+      "type": "email",
+      "value": "fdcai@sei.ecnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:42Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ae6ed28020803a058c60"
+    ],
+    "email": [
+      "claim_ae6ed28020803a058c60"
+    ],
+    "name": [
+      "claim_ae6ed28020803a058c60"
+    ],
+    "profile_url": [
+      "claim_ae6ed28020803a058c60"
+    ],
+    "research_directions": [
+      "claim_ae6ed28020803a058c60"
+    ],
+    "status": [
+      "claim_ae6ed28020803a058c60"
+    ]
+  },
+  "id": "mentor_4e76db947e1831738e3e",
+  "last_verified_at": "2026-08-11T13:32:42Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ae6ed28020803a058c60"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蔡方达"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1e84c88d57ebe2c24db9",
+      "claim_ids": [
+        "claim_ae6ed28020803a058c60"
+      ],
+      "observed_at": "2026-08-11T13:32:42Z",
+      "status": "current",
+      "url": "https://faculty.ecnu.edu.cn/_s43/cfd/main.psp"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "QEMU虚拟化、DSL编译技术、计算机安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:42Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.ecnu.edu.cn/_s43/cfd/main.psp",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:42Z"
+}
