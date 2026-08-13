@@ -1,0 +1,96 @@
+{
+  "created_organization_ids": [],
+  "decided_at": "2026-08-13T02:24:46Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_545bd09fc99889f3",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认投稿路径应直接归入所选现有机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_9e7bf58b3d6ccb33e738"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_77ea561e162e52e3",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认投稿路径应直接归入所选现有机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_9e7bf58b3d6ccb33e738"
+    }
+  ],
+  "id": "organization_review_issue_42",
+  "invalid_rows": [],
+  "issue": {
+    "number": 42,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/42"
+  },
+  "manifest_sha256": "3b95c9966817b1f4c0cf145ae465b21f4cd5549f46631a2d1caada718cb16401",
+  "mapped_proposal_ids": [
+    "proposal_issue_42_row_1",
+    "proposal_issue_42_row_2",
+    "proposal_issue_42_row_3",
+    "proposal_issue_42_row_4",
+    "proposal_issue_42_row_5",
+    "proposal_issue_42_row_6",
+    "proposal_issue_42_row_7"
+  ],
+  "organization_creations": [],
+  "path_corrections": [
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_42_row_2",
+        "proposal_issue_42_row_5"
+      ],
+      "reason": "人工确认投稿路径应直接归入所选现有机构",
+      "source_domains": [
+        "cse.seu.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机工程系",
+        "school": "计算机科学与工程学院、软件学院、人工智能学院",
+        "university": "东南大学"
+      },
+      "target_organization_id": "org_auto_9e7bf58b3d6ccb33e738"
+    },
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_42_row_1",
+        "proposal_issue_42_row_3",
+        "proposal_issue_42_row_4",
+        "proposal_issue_42_row_6",
+        "proposal_issue_42_row_7"
+      ],
+      "reason": "人工确认投稿路径应直接归入所选现有机构",
+      "source_domains": [
+        "cse.seu.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机科学系",
+        "school": "计算机科学与工程学院、软件学院、人工智能学院",
+        "university": "东南大学"
+      },
+      "target_organization_id": "org_auto_9e7bf58b3d6ccb33e738"
+    }
+  ],
+  "pull_request_number": 50,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275201099,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

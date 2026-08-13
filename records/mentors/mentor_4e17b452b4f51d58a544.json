@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_902060aebcb90726dffe"
+      ],
+      "ended_at": null,
+      "id": "aff_2a963c89f70e05fa7dbe",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:51Z",
+      "organization_id": "org_auto_9e7bf58b3d6ccb33e738",
+      "source_url": "https://cs.seu.edu.cn/wanglulu/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_902060aebcb90726dffe"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a963c89f70e05fa7dbe",
+      "claim_ids": [
+        "claim_902060aebcb90726dffe"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanglulu@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:51Z",
+      "source_url": "https://cs.seu.edu.cn/wanglulu/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanglulu@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_902060aebcb90726dffe"
+    ],
+    "email": [
+      "claim_902060aebcb90726dffe"
+    ],
+    "name": [
+      "claim_902060aebcb90726dffe"
+    ],
+    "profile_url": [
+      "claim_902060aebcb90726dffe"
+    ],
+    "recent_papers": [
+      "claim_902060aebcb90726dffe"
+    ],
+    "research_directions": [
+      "claim_902060aebcb90726dffe"
+    ],
+    "status": [
+      "claim_902060aebcb90726dffe"
+    ],
+    "title": [
+      "claim_902060aebcb90726dffe"
+    ]
+  },
+  "id": "mentor_4e17b452b4f51d58a544",
+  "last_verified_at": "2026-08-11T13:31:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_902060aebcb90726dffe"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王璐璐"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a963c89f70e05fa7dbe",
+      "claim_ids": [
+        "claim_902060aebcb90726dffe"
+      ],
+      "observed_at": "2026-08-11T13:31:51Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/wanglulu/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Learning Graph-based Patch Representations for Identifying and Assessing Silent Vulnerability Fixes. Accepted by ISSRE 2024. CoRR abs/2409.08512(2024)",
+    "An empirical study of software architecture resilience evaluation methods. J. Syst. Softw. 202: 111726 (2023)",
+    "Microservice architecture recovery based on intra-service and inter-service features. J. Syst. Softw. 204: 111754 (2023)",
+    "Type slicing: An accurate object oriented slicing based on sub-statement level dependence graph. Inf. Softw. Technol. 127: 106369",
+    "An Empirical Investigation into the Effects of Code Comments on Issue Resolution. COMPSAC 2020: 921-930",
+    "An Analysis of Utility for API Recommendation: Do the Matched Results Have the Same Efforts? QRS 2020: 479-488",
+    "HiRec: API Recommendation using Hierarchical Context. ISSRE 2019: 369-379",
+    "Identify MVC architectural pattern based on ontology. SEKE 2019: 612-777"
+  ],
+  "research_directions": [
+    "软件安全,程序分析,智能化漏洞检测,软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:51Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/wanglulu/main.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:51Z"
+}
