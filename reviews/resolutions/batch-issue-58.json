@@ -1,0 +1,452 @@
+{
+  "created_organization_ids": [
+    "org_auto_3b3429b7cba9d077e233",
+    "org_auto_3ce5e783fbd769384b1f",
+    "org_auto_5d8c7c88f44e1e32b9fc",
+    "org_auto_c2400385fde4fe5a5df0",
+    "org_auto_d06ebad960f5763fae06"
+  ],
+  "decided_at": "2026-08-13T03:05:09Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_02127497df28b7f7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_0288317a58e8e817",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_206cd59cac4440b6",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认将投稿系所名称“计算机学院计算机科学系”规范为“计算机系”。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_d06ebad960f5763fae06"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_268e43aca718ce10",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2904885dadb68f6a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部-实验教学中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8fd49dabf45d61b9",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机实验教学中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ce628c5622e18cc7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_dfa7ca206f1dd41e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tju.edu.cn"
+          ],
+          "canonical_name": "天津大学",
+          "level": "university",
+          "official_url": "https://tju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认将投稿系所名称“计算机科学系”规范为“计算机系”。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_d06ebad960f5763fae06"
+    }
+  ],
+  "id": "organization_review_issue_58",
+  "invalid_rows": [],
+  "issue": {
+    "number": 58,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/58"
+  },
+  "manifest_sha256": "372db614fdc65ead425b56d6bda122afe0140faf8deb2c4d026a515b0e24d8e8",
+  "mapped_proposal_ids": [
+    "proposal_issue_58_row_1",
+    "proposal_issue_58_row_10",
+    "proposal_issue_58_row_11",
+    "proposal_issue_58_row_12",
+    "proposal_issue_58_row_13",
+    "proposal_issue_58_row_14",
+    "proposal_issue_58_row_15",
+    "proposal_issue_58_row_16",
+    "proposal_issue_58_row_17",
+    "proposal_issue_58_row_18",
+    "proposal_issue_58_row_19",
+    "proposal_issue_58_row_2",
+    "proposal_issue_58_row_20",
+    "proposal_issue_58_row_21",
+    "proposal_issue_58_row_22",
+    "proposal_issue_58_row_23",
+    "proposal_issue_58_row_24",
+    "proposal_issue_58_row_25",
+    "proposal_issue_58_row_26",
+    "proposal_issue_58_row_3",
+    "proposal_issue_58_row_4",
+    "proposal_issue_58_row_5",
+    "proposal_issue_58_row_6",
+    "proposal_issue_58_row_7",
+    "proposal_issue_58_row_8",
+    "proposal_issue_58_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_58_row_6"
+      ],
+      "reason": "人工确认将投稿系所名称“计算机学院计算机科学系”规范为“计算机系”。",
+      "source_domains": [
+        "cs.tju.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机学院计算机科学系",
+        "school": "计算机科学与技术学院",
+        "university": "天津大学"
+      },
+      "target_organization_id": "org_auto_d06ebad960f5763fae06"
+    },
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_58_row_3"
+      ],
+      "reason": "人工确认将投稿系所名称“计算机科学系”规范为“计算机系”。",
+      "source_domains": [
+        "cs.tju.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机科学系",
+        "school": "计算机科学与技术学院",
+        "university": "天津大学"
+      },
+      "target_organization_id": "org_auto_d06ebad960f5763fae06"
+    }
+  ],
+  "pull_request_number": 63,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275445768,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

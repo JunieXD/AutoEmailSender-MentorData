@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cf46ed7a30fdbad91dc5"
+      ],
+      "ended_at": null,
+      "id": "aff_6b215044f172551d2223",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1094/1090.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cf46ed7a30fdbad91dc5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6b215044f172551d2223",
+      "claim_ids": [
+        "claim_cf46ed7a30fdbad91dc5"
+      ],
+      "is_primary": true,
+      "normalized_value": "shizhan@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1094/1090.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shizhan@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cf46ed7a30fdbad91dc5"
+    ],
+    "email": [
+      "claim_cf46ed7a30fdbad91dc5"
+    ],
+    "name": [
+      "claim_cf46ed7a30fdbad91dc5"
+    ],
+    "profile_url": [
+      "claim_cf46ed7a30fdbad91dc5"
+    ],
+    "research_directions": [
+      "claim_cf46ed7a30fdbad91dc5"
+    ],
+    "status": [
+      "claim_cf46ed7a30fdbad91dc5"
+    ],
+    "title": [
+      "claim_cf46ed7a30fdbad91dc5"
+    ]
+  },
+  "id": "mentor_f10c465397ac9c53e413",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cf46ed7a30fdbad91dc5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈世展"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6b215044f172551d2223",
+      "claim_ids": [
+        "claim_cf46ed7a30fdbad91dc5"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1094/1090.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "服务计算、软件生态系统挖掘与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1094/1090.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

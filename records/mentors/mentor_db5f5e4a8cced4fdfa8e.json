@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_140f37167b4f5aff1804"
+      ],
+      "ended_at": null,
+      "id": "aff_31145c699fdfa306f042",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1115/4582.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_140f37167b4f5aff1804"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_31145c699fdfa306f042",
+      "claim_ids": [
+        "claim_140f37167b4f5aff1804"
+      ],
+      "is_primary": true,
+      "normalized_value": "xinxie@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1115/4582.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xinxie@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_140f37167b4f5aff1804"
+    ],
+    "email": [
+      "claim_140f37167b4f5aff1804"
+    ],
+    "name": [
+      "claim_140f37167b4f5aff1804"
+    ],
+    "profile_url": [
+      "claim_140f37167b4f5aff1804"
+    ],
+    "research_directions": [
+      "claim_140f37167b4f5aff1804"
+    ],
+    "status": [
+      "claim_140f37167b4f5aff1804"
+    ],
+    "title": [
+      "claim_140f37167b4f5aff1804"
+    ]
+  },
+  "id": "mentor_db5f5e4a8cced4fdfa8e",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_140f37167b4f5aff1804"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_31145c699fdfa306f042",
+      "claim_ids": [
+        "claim_140f37167b4f5aff1804"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1115/4582.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线感知、可穿戴、射频识别、联邦学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1115/4582.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

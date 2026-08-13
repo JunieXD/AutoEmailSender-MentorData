@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_47c02fb15179728821a1"
+      ],
+      "ended_at": null,
+      "id": "aff_37fc367b8c4cc8cf4f19",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1117/1165.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_47c02fb15179728821a1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_37fc367b8c4cc8cf4f19",
+      "claim_ids": [
+        "claim_47c02fb15179728821a1"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaobo.zhou@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1117/1165.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaobo.zhou@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_47c02fb15179728821a1"
+    ],
+    "email": [
+      "claim_47c02fb15179728821a1"
+    ],
+    "name": [
+      "claim_47c02fb15179728821a1"
+    ],
+    "profile_url": [
+      "claim_47c02fb15179728821a1"
+    ],
+    "research_directions": [
+      "claim_47c02fb15179728821a1"
+    ],
+    "status": [
+      "claim_47c02fb15179728821a1"
+    ],
+    "title": [
+      "claim_47c02fb15179728821a1"
+    ]
+  },
+  "id": "mentor_d39d6dd97ebd0e6333e9",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_47c02fb15179728821a1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周晓波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_37fc367b8c4cc8cf4f19",
+      "claim_ids": [
+        "claim_47c02fb15179728821a1"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1117/1165.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算、物联网、移动边缘计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1117/1165.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}
