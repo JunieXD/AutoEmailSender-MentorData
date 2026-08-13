@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1282a94d5e37fd54d96e"
+      ],
+      "ended_at": null,
+      "id": "aff_000d8f22e0f60ba64ae1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:12Z",
+      "organization_id": "org_auto_8c067fc1e28c79b2dedd",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548886/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1282a94d5e37fd54d96e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_000d8f22e0f60ba64ae1",
+      "claim_ids": [
+        "claim_1282a94d5e37fd54d96e"
+      ],
+      "is_primary": true,
+      "normalized_value": "gongxiaoli@nankai.edu.cn",
+      "observed_at": "2026-08-11T13:33:12Z",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548886/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gongxiaoli@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:12Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1282a94d5e37fd54d96e"
+    ],
+    "email": [
+      "claim_1282a94d5e37fd54d96e"
+    ],
+    "name": [
+      "claim_1282a94d5e37fd54d96e"
+    ],
+    "profile_url": [
+      "claim_1282a94d5e37fd54d96e"
+    ],
+    "recent_papers": [
+      "claim_1282a94d5e37fd54d96e"
+    ],
+    "research_directions": [
+      "claim_1282a94d5e37fd54d96e"
+    ],
+    "status": [
+      "claim_1282a94d5e37fd54d96e"
+    ],
+    "title": [
+      "claim_1282a94d5e37fd54d96e"
+    ]
+  },
+  "id": "mentor_126a7dfdc3c5ef617334",
+  "last_verified_at": "2026-08-11T13:33:12Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1282a94d5e37fd54d96e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宫晓利"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_000d8f22e0f60ba64ae1",
+      "claim_ids": [
+        "claim_1282a94d5e37fd54d96e"
+      ],
+      "observed_at": "2026-08-11T13:33:12Z",
+      "status": "current",
+      "url": "https://cc.nankai.edu.cn/2021/0323/c13619a548886/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Thread Level SLO-Aware I/O Framework for Embedded Virtualization. TPDS 2021.3(CCF A类期刊)",
+    "Enhancing Atomic Instruction Emulation for Cross-ISA Dynamic Binary Translation. CGO 2021(CCF B类会议)",
+    "Liberator: A Data Reuse Framework for Out-of-Memory Graph Computing on GPUs. TPDS 2023(CCF A类期刊)",
+    "Prism: Decomposing Program Semantics for Code Clone Detection through Compilation. ICSE 2024(CCF A类会议)",
+    "Hybrid-Memcached: A Novel Approach for Memcached Persistence Optimization With Hybrid Memory. TC 2024(CCF A类期刊)"
+  ],
+  "research_directions": [
+    "操作系统,物联网,异构计算系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:12Z",
+  "status_reason": null,
+  "status_source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548886/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:12Z"
+}

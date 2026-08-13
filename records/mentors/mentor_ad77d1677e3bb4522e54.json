@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5d71e2501f297c130480"
+      ],
+      "ended_at": null,
+      "id": "aff_f4dc07c6d8e3b0c95d94",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:12Z",
+      "organization_id": "org_auto_369534f6fe9ec3b5e3e2",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548875/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5d71e2501f297c130480"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f4dc07c6d8e3b0c95d94",
+      "claim_ids": [
+        "claim_5d71e2501f297c130480"
+      ],
+      "is_primary": true,
+      "normalized_value": "shaoxl@nankai.edu.cn",
+      "observed_at": "2026-08-11T13:33:12Z",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548875/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shaoxl@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:12Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5d71e2501f297c130480"
+    ],
+    "email": [
+      "claim_5d71e2501f297c130480"
+    ],
+    "name": [
+      "claim_5d71e2501f297c130480"
+    ],
+    "profile_url": [
+      "claim_5d71e2501f297c130480"
+    ],
+    "recent_papers": [
+      "claim_5d71e2501f297c130480"
+    ],
+    "research_directions": [
+      "claim_5d71e2501f297c130480"
+    ],
+    "status": [
+      "claim_5d71e2501f297c130480"
+    ],
+    "title": [
+      "claim_5d71e2501f297c130480"
+    ]
+  },
+  "id": "mentor_ad77d1677e3bb4522e54",
+  "last_verified_at": "2026-08-11T13:33:12Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5d71e2501f297c130480"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邵秀丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f4dc07c6d8e3b0c95d94",
+      "claim_ids": [
+        "claim_5d71e2501f297c130480"
+      ],
+      "observed_at": "2026-08-11T13:33:12Z",
+      "status": "current",
+      "url": "https://cc.nankai.edu.cn/2021/0323/c13619a548875/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "LC3Net: Ladder context correlation complementary network for salient object detection[J]. Knowledge-Based Systems.",
+    "IBNet: Interactive branch network for salient object detection[J]. Neurocomputing, 2021, 465: 574-583.",
+    "Subspace clustering with block diagonal sparse representation[J]. Neural Processing Letters, 2021, 53: 4293-4312.",
+    "Collaborative learning in bounding box regression for object detection[J]. Pattern Recognition Letters, 2021, 148: 121-127.",
+    "A plug and play fast intersection over union loss for boundary box regression[C]//Proceedings of the International Conference on Acoustics, Speech and Signal Processing (ICASSP). 2021: 1705-1709.",
+    "Lightweight boundary refinement module based on point supervision for semantic segmentation[J]. Image and Vision Computing, 2021, 110: 104169.",
+    "Rotor surface defect and symmetry detection based on point cloud registration[C]//Proceedings of the IEEE International Conference on Power Electronics, Computer Applications (ICPECA). 2021.",
+    "Improved filtering and hole filling algorithm for the point cloud of rotor surface based on PCL[C]//Proceedings of the IEEE International Conference on Power Electronics, Computer Applications (ICPECA). 2021."
+  ],
+  "research_directions": [
+    "人工智能、数据分析、智能系统、CSCW协同控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:12Z",
+  "status_reason": null,
+  "status_source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548875/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:12Z"
+}

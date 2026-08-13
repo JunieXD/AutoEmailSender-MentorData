@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6e9cbb0e98ee0a2c0d91"
+      ],
+      "ended_at": null,
+      "id": "aff_1fee56c6825208f54cab",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:12Z",
+      "organization_id": "org_auto_ed3705edead7c4b05fc5",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a599867/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6e9cbb0e98ee0a2c0d91"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1fee56c6825208f54cab",
+      "claim_ids": [
+        "claim_6e9cbb0e98ee0a2c0d91"
+      ],
+      "is_primary": true,
+      "normalized_value": "zwang@nankai.edu.cn",
+      "observed_at": "2026-08-11T13:33:12Z",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a599867/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zwang@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:12Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ],
+    "email": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ],
+    "name": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ],
+    "profile_url": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ],
+    "recent_papers": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ],
+    "research_directions": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ],
+    "status": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ],
+    "title": [
+      "claim_6e9cbb0e98ee0a2c0d91"
+    ]
+  },
+  "id": "mentor_81e78632ec677f27e128",
+  "last_verified_at": "2026-08-11T13:33:12Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6e9cbb0e98ee0a2c0d91"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1fee56c6825208f54cab",
+      "claim_ids": [
+        "claim_6e9cbb0e98ee0a2c0d91"
+      ],
+      "observed_at": "2026-08-11T13:33:12Z",
+      "status": "current",
+      "url": "https://cc.nankai.edu.cn/2021/0323/c13619a599867/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "As Seasons Change: Temporal Feature Powers Malware Classification",
+    "DECODE: Dynamic Exploration for Constraint-Guided Vulnerability Discovery in Deep Learning Operators",
+    "An Empirical Study on Static Application Security Testing (SAST) Tools for Python",
+    "CRX-ray: Large-Scale Detection of API Key Leakage in Browser Extensions",
+    "PerCheck: An AST-Based Framework for Detecting Over-Privilege in Chrome Extensions",
+    "A Hierarchical Adaptive Belief Rule Base for Chrome Extension Risk Assessment",
+    "Density Boosts Everything A General Strategy for Improving Performance Robustness and Sustainability of Malware Detectors",
+    "Security Analysis on a Two-Factor Privacy-Preserving Protocol for Efficient Authentication in Internet of Vehicles Networks"
+  ],
+  "research_directions": [
+    "计算机病毒的分析与防治、二进制代码逆向分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:12Z",
+  "status_reason": null,
+  "status_source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a599867/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:12Z"
+}

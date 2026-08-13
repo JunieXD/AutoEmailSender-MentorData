@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_de3369a4d850d5b949cb"
+      ],
+      "ended_at": null,
+      "id": "aff_65902aa59e926c15aa6c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:12Z",
+      "organization_id": "org_auto_369534f6fe9ec3b5e3e2",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548863/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_de3369a4d850d5b949cb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_65902aa59e926c15aa6c",
+      "claim_ids": [
+        "claim_de3369a4d850d5b949cb"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangyl@nankai.edu.cn",
+      "observed_at": "2026-08-11T13:33:12Z",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548863/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangyl@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:12Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_de3369a4d850d5b949cb"
+    ],
+    "email": [
+      "claim_de3369a4d850d5b949cb"
+    ],
+    "name": [
+      "claim_de3369a4d850d5b949cb"
+    ],
+    "profile_url": [
+      "claim_de3369a4d850d5b949cb"
+    ],
+    "research_directions": [
+      "claim_de3369a4d850d5b949cb"
+    ],
+    "status": [
+      "claim_de3369a4d850d5b949cb"
+    ],
+    "title": [
+      "claim_de3369a4d850d5b949cb"
+    ]
+  },
+  "id": "mentor_0114c5ecd5ea1c42475e",
+  "last_verified_at": "2026-08-11T13:33:12Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_de3369a4d850d5b949cb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨愚鲁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_65902aa59e926c15aa6c",
+      "claim_ids": [
+        "claim_de3369a4d850d5b949cb"
+      ],
+      "observed_at": "2026-08-11T13:33:12Z",
+      "status": "current",
+      "url": "https://cc.nankai.edu.cn/2021/0323/c13619a548863/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "并行与分布式处理,系统结构,可重构系统,网格计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:12Z",
+  "status_reason": null,
+  "status_source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a548863/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:12Z"
+}

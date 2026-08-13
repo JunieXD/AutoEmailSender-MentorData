@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_37a5e2766afa439b498a"
+      ],
+      "ended_at": null,
+      "id": "aff_3294e3b14c4c8508e77c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:12Z",
+      "organization_id": "org_auto_369534f6fe9ec3b5e3e2",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a572841/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_37a5e2766afa439b498a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3294e3b14c4c8508e77c",
+      "claim_ids": [
+        "claim_37a5e2766afa439b498a"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuyun@nankai.edu.cn",
+      "observed_at": "2026-08-11T13:33:12Z",
+      "source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a572841/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuyun@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:12Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_37a5e2766afa439b498a"
+    ],
+    "email": [
+      "claim_37a5e2766afa439b498a"
+    ],
+    "name": [
+      "claim_37a5e2766afa439b498a"
+    ],
+    "profile_url": [
+      "claim_37a5e2766afa439b498a"
+    ],
+    "research_directions": [
+      "claim_37a5e2766afa439b498a"
+    ],
+    "status": [
+      "claim_37a5e2766afa439b498a"
+    ],
+    "title": [
+      "claim_37a5e2766afa439b498a"
+    ]
+  },
+  "id": "mentor_a4b7e111695d1e656f63",
+  "last_verified_at": "2026-08-11T13:33:12Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_37a5e2766afa439b498a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘云"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3294e3b14c4c8508e77c",
+      "claim_ids": [
+        "claim_37a5e2766afa439b498a"
+      ],
+      "observed_at": "2026-08-11T13:33:12Z",
+      "status": "current",
+      "url": "https://cc.nankai.edu.cn/2021/0323/c13619a572841/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能,计算机视觉,多模态大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:12Z",
+  "status_reason": null,
+  "status_source_url": "https://cc.nankai.edu.cn/2021/0323/c13619a572841/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:12Z"
+}
