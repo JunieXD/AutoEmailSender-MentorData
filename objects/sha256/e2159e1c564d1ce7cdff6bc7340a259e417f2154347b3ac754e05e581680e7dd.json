@@ -1,0 +1,117 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_db1d442c3ef34f3aafe2",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:42Z",
+          "organization_id": "org_auto_ba2f20ff684c141254a3",
+          "school": "密码学院",
+          "source_url": "https://faculty.ecnu.edu.cn/_s43/xm2/main.psp",
+          "status": "current",
+          "title": "副教授",
+          "university": "华东师范大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_db1d442c3ef34f3aafe2",
+          "email": "mxu@cs.ecnu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:42Z",
+          "source_url": "https://faculty.ecnu.edu.cn/_s43/xm2/main.psp"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/51"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "mxu@cs.ecnu.edu.cn",
+      "id": "mentor_9e4ffa32810a85fb4443",
+      "last_verified_at": "2026-08-11T13:32:42Z",
+      "name": "徐鸣",
+      "profile_url": "https://faculty.ecnu.edu.cn/_s43/xm2/main.psp",
+      "recent_papers": [
+        "Model Checking Matrix Product States Against Linear Chain Logic",
+        "A Quantum Game Designed for Property Partitioning with Implementation on Superconducting Quantum Processors",
+        "Theoretical and Experimental Performance Analysis on Error-Bounded Quantum Search Process",
+        "Checking Continuous Stochastic Logic against Quantum Continuous-Time Markov Chains",
+        "Termination and Universal Termination Problems for Nondeterministic Quantum Programs",
+        "A Sample-Driven Solving Procedure for the Repeated Reachability of Quantum Continuous-time Markov Chains",
+        "Quantitative Controller Synthesis for Consumption Markov Decision Processes",
+        "An Algebraic Method to Fidelity-based Model Checking over Quantum Markov Chains"
+      ],
+      "research_direction": "基础算法及其应用",
+      "school": "密码学院",
+      "source_url": "https://sei.ecnu.edu.cn/33189/list.htm",
+      "status": "active",
+      "title": "副教授",
+      "university": "华东师范大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_9213bf9ff0ae60e0739f",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:42Z",
+          "organization_id": "org_auto_ba2f20ff684c141254a3",
+          "school": "密码学院",
+          "source_url": "https://faculty.ecnu.edu.cn/_s43/gjq/main.psp",
+          "status": "current",
+          "title": "教授",
+          "university": "华东师范大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_9213bf9ff0ae60e0739f",
+          "email": "jqgong@sei.ecnu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:42Z",
+          "source_url": "https://faculty.ecnu.edu.cn/_s43/gjq/main.psp"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/51"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "jqgong@sei.ecnu.edu.cn",
+      "id": "mentor_f4fdc9634b90d997249e",
+      "last_verified_at": "2026-08-11T13:32:42Z",
+      "name": "巩俊卿",
+      "profile_url": "https://faculty.ecnu.edu.cn/_s43/gjq/main.psp",
+      "recent_papers": [],
+      "research_direction": "密码学与信息安全",
+      "school": "密码学院",
+      "source_url": "https://sei.ecnu.edu.cn/33189/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "华东师范大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_ba2f20ff684c141254a3",
+    "name": "密码学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_f7c50cb10536268671ce",
+    "name": "华东师范大学"
+  }
+}
