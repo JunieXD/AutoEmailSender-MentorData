@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b79680cbdf1aecceb5ae"
+      ],
+      "ended_at": null,
+      "id": "aff_03c20f77f1a705a5094d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/11/55/c11250a528725/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b79680cbdf1aecceb5ae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_03c20f77f1a705a5094d",
+      "claim_ids": [
+        "claim_b79680cbdf1aecceb5ae"
+      ],
+      "is_primary": true,
+      "normalized_value": "kongfang@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/11/55/c11250a528725/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kongfang@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b79680cbdf1aecceb5ae"
+    ],
+    "email": [
+      "claim_b79680cbdf1aecceb5ae"
+    ],
+    "name": [
+      "claim_b79680cbdf1aecceb5ae"
+    ],
+    "profile_url": [
+      "claim_b79680cbdf1aecceb5ae"
+    ],
+    "recent_papers": [
+      "claim_b79680cbdf1aecceb5ae"
+    ],
+    "research_directions": [
+      "claim_b79680cbdf1aecceb5ae"
+    ],
+    "status": [
+      "claim_b79680cbdf1aecceb5ae"
+    ],
+    "title": [
+      "claim_b79680cbdf1aecceb5ae"
+    ]
+  },
+  "id": "mentor_0553e309d357316af9f8",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b79680cbdf1aecceb5ae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孔芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_03c20f77f1a705a5094d",
+      "claim_ids": [
+        "claim_b79680cbdf1aecceb5ae"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/11/55/c11250a528725/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Adversarial Learning for Discourse Rhetorical Structure Parsing",
+    "A Top-down Neural Architecture towards Text-level Parsing of Discourse Rhetorical Structure",
+    "Incorporating Structural Information for Better Coreference Resolution",
+    "Towards Better Entity Linking",
+    "篇章视角的汉语零指代语料库构建"
+  ],
+  "research_directions": [
+    "自然语言处理、篇章分析、信息抽取、人机交互、自然语言理解、信息检索、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/11/55/c11250a528725/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

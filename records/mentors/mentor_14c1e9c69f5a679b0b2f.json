@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f354a9a20b2464e8d4da"
+      ],
+      "ended_at": null,
+      "id": "aff_77eb682cbe8984dddb58",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/1f/49/c11250a597833/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f354a9a20b2464e8d4da"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_77eb682cbe8984dddb58",
+      "claim_ids": [
+        "claim_f354a9a20b2464e8d4da"
+      ],
+      "is_primary": true,
+      "normalized_value": "jzwang6972@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/1f/49/c11250a597833/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jzwang6972@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f354a9a20b2464e8d4da"
+    ],
+    "email": [
+      "claim_f354a9a20b2464e8d4da"
+    ],
+    "name": [
+      "claim_f354a9a20b2464e8d4da"
+    ],
+    "profile_url": [
+      "claim_f354a9a20b2464e8d4da"
+    ],
+    "recent_papers": [
+      "claim_f354a9a20b2464e8d4da"
+    ],
+    "research_directions": [
+      "claim_f354a9a20b2464e8d4da"
+    ],
+    "status": [
+      "claim_f354a9a20b2464e8d4da"
+    ],
+    "title": [
+      "claim_f354a9a20b2464e8d4da"
+    ]
+  },
+  "id": "mentor_14c1e9c69f5a679b0b2f",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f354a9a20b2464e8d4da"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王竞舟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_77eb682cbe8984dddb58",
+      "claim_ids": [
+        "claim_f354a9a20b2464e8d4da"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/1f/49/c11250a597833/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Robust Service Mapping Scheme for Multi-Tenant Clouds, IEEE/ACM ToN 30(3), 会议版发表于IEEE INFOCOM 2021",
+    "Joint Request Updating and Elastic Resource Provisioning With QoS Guarantee in Clouds, IEEE/ACM ToN 32(1), 会议版发表于INFOCOM 2022",
+    "Segmented Entanglement Establishment With All-Optical Switching in Quantum Networks, IEEE/ACM ToN 32(1), 会议版发表于IEEE ICDCS 2022",
+    "COIN: Cost-Efficient Traffic Engineering with Various Pricing Schemes in Clouds, IEEE INFOCOM 2023",
+    "Leaf: Improving Throughput for Reconfigurable Datacenters with Multiple Optical Circuit Switches, IEEE/ACM IWQoS 2024"
+  ],
+  "research_directions": [
+    "计算机网络、云计算网络、数据中心网络、网络优化算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/1f/49/c11250a597833/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

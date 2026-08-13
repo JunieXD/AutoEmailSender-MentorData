@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b90f55d4f2fc8b683630"
+      ],
+      "ended_at": null,
+      "id": "aff_3b573a62219cfd1b07ea",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/8a/7b/c11250a690811/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_b90f55d4f2fc8b683630"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3b573a62219cfd1b07ea",
+      "claim_ids": [
+        "claim_b90f55d4f2fc8b683630"
+      ],
+      "is_primary": true,
+      "normalized_value": "wujinhui@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/8a/7b/c11250a690811/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wujinhui@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b90f55d4f2fc8b683630"
+    ],
+    "email": [
+      "claim_b90f55d4f2fc8b683630"
+    ],
+    "name": [
+      "claim_b90f55d4f2fc8b683630"
+    ],
+    "profile_url": [
+      "claim_b90f55d4f2fc8b683630"
+    ],
+    "recent_papers": [
+      "claim_b90f55d4f2fc8b683630"
+    ],
+    "research_directions": [
+      "claim_b90f55d4f2fc8b683630"
+    ],
+    "status": [
+      "claim_b90f55d4f2fc8b683630"
+    ],
+    "title": [
+      "claim_b90f55d4f2fc8b683630"
+    ]
+  },
+  "id": "mentor_3fc8ec8ac4798d9a12af",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b90f55d4f2fc8b683630"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴锦辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3b573a62219cfd1b07ea",
+      "claim_ids": [
+        "claim_b90f55d4f2fc8b683630"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/8a/7b/c11250a690811/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Jin-Hui Wu, Shao-Qun Zhang, Yuan Jiang, Zhi-Hua Zhou. Reparameterized Complex-valued Neurons Can Efficiently Learn More than Real-valued Neurons via Gradient Descent. Journal of Machine Learning Research (JMLR), in press. (CCF-A类期刊)",
+    "Jin-Hui Wu, Shao-Qun Zhang, Yuan Jiang, Zhi-Hua Zhou. Complex-valued Neurons Can Learn More but Slower than Real-valued Neurons via Gradient Descent. In: Advances in Neural Information Processing Systems 36 (NeurIPS), pp. 23714-23747, 2023. (CCF-A类会议)",
+    "Jin-Hui Wu, Shao-Qun Zhang, Yuan Jiang, Zhi-Hua Zhou. Theoretical Exploration of Flexible Transmitter Model. IEEE Transactions on Neural Networks and Learning Systems (TNNLS), 35(3): 3674-3688, 2024. (中科院SCI一区期刊)",
+    "吴锦辉,姜远. 四元数神经网络的通用近似与逼近优势. 计算机研究与发展, 62(5): 1205-1215, 2025",
+    "Shao-Qun Zhang, Jia-Yi Chen, Jin-Hui Wu, Gao Zhang, Huan Xiong, Bin Gu, Zhi-Hua Zhou. On the Intrinsic Structures of Spiking Neural Networks. Journal of Machine Learning Research (JMLR), 25(194): 1-74, 2024. (CCF-A类期刊)"
+  ],
+  "research_directions": [
+    "机器学习",
+    "复值神经网络理论与复值大模型",
+    "量化神经网络理论与量化大模型",
+    "李群机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/8a/7b/c11250a690811/page.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

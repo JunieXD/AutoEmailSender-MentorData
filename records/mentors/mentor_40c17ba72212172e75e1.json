@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ad09e6cc0516c18275f3"
+      ],
+      "ended_at": null,
+      "id": "aff_fb4e8479021857d270af",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0e/5f/c11250a527967/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ad09e6cc0516c18275f3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fb4e8479021857d270af",
+      "claim_ids": [
+        "claim_ad09e6cc0516c18275f3"
+      ],
+      "is_primary": true,
+      "normalized_value": "ljquan@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0e/5f/c11250a527967/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ljquan@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ad09e6cc0516c18275f3"
+    ],
+    "email": [
+      "claim_ad09e6cc0516c18275f3"
+    ],
+    "name": [
+      "claim_ad09e6cc0516c18275f3"
+    ],
+    "profile_url": [
+      "claim_ad09e6cc0516c18275f3"
+    ],
+    "recent_papers": [
+      "claim_ad09e6cc0516c18275f3"
+    ],
+    "research_directions": [
+      "claim_ad09e6cc0516c18275f3"
+    ],
+    "status": [
+      "claim_ad09e6cc0516c18275f3"
+    ],
+    "title": [
+      "claim_ad09e6cc0516c18275f3"
+    ]
+  },
+  "id": "mentor_40c17ba72212172e75e1",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ad09e6cc0516c18275f3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "权丽君"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fb4e8479021857d270af",
+      "claim_ids": [
+        "claim_ad09e6cc0516c18275f3"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0e/5f/c11250a527967/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "STRUM: structure-based prediction of protein stability changes upon single-point mutation",
+    "Cluster-Transition Determining Sites Underlying the Antigenic Evolution of Seasonal Influenza Viruses",
+    "DAMpred: Recognizing Disease-Associated nsSNPs through Bayes-Guided Neural-Network Model Built on Low-Resolution Structure Prediction of Proteins and Protein-Protein Interactions",
+    "Developing parallel ant colonies filtered by deep learned constrains for predicting RNA secondary structure with pseudo-knots",
+    "Quantifying Intensities of Transcription Factor-DNA Binding by Learning From an Ensemble of Protein Binding Microarrays"
+  ],
+  "research_directions": [
+    "生物信息学、深度学习、元启发算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0e/5f/c11250a527967/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

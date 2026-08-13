@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a7a88fd444d2b6b59acd"
+      ],
+      "ended_at": null,
+      "id": "aff_fc6b3ebb5aae2181985d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0d/de/c11250a527838/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a7a88fd444d2b6b59acd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fc6b3ebb5aae2181985d",
+      "claim_ids": [
+        "claim_a7a88fd444d2b6b59acd"
+      ],
+      "is_primary": true,
+      "normalized_value": "ghfu@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0d/de/c11250a527838/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ghfu@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a7a88fd444d2b6b59acd"
+    ],
+    "email": [
+      "claim_a7a88fd444d2b6b59acd"
+    ],
+    "name": [
+      "claim_a7a88fd444d2b6b59acd"
+    ],
+    "profile_url": [
+      "claim_a7a88fd444d2b6b59acd"
+    ],
+    "recent_papers": [
+      "claim_a7a88fd444d2b6b59acd"
+    ],
+    "research_directions": [
+      "claim_a7a88fd444d2b6b59acd"
+    ],
+    "status": [
+      "claim_a7a88fd444d2b6b59acd"
+    ],
+    "title": [
+      "claim_a7a88fd444d2b6b59acd"
+    ]
+  },
+  "id": "mentor_977c410fff725e059a89",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a7a88fd444d2b6b59acd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "付国宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fc6b3ebb5aae2181985d",
+      "claim_ids": [
+        "claim_a7a88fd444d2b6b59acd"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0d/de/c11250a527838/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Nan Yu, Meishan Zhang, Guohong Fu, Min Zhang. RST discourse parsing with second-stage EDU-level pretraining. ACL’22, 2022.",
+    "Meishan Zhang, Zhenghua Li, Guohong Fu, Min Zhang. Dependency-based syntax-aware word representations. Artificial Intelligence Journal, 2021.",
+    "Yang Sun, Nan Yu, Guohong Fu. A discourse-aware graph neural network for emotion recognition in multi-party conversations. EMNLP’21-Findings, 2021.",
+    "Meishan Zhang, Peili Liang, Guohong Fu. Enhancing opinion role labeling with semantic-aware word representations from semantic role labeling. NAACL-HLT’19, 2019.",
+    "Nan Yu, Meishan Zhang, Guohong Fu. Transition-based neural RST parsing with implicit syntax features. COLING’18, 2018, pp.559-570."
+  ],
+  "research_directions": [
+    "自然语言处理、意见挖掘&情感计算、对话系统、多模态认知计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0d/de/c11250a527838/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

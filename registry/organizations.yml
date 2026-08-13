@@ -3029,3 +3029,38 @@ organizations:
   successor_id: null
   created_at: '2026-08-13T03:24:00Z'
   updated_at: '2026-08-13T03:24:00Z'
+- id: org_auto_6d0a10ae17f678f0ece7
+  type: university
+  canonical_name: 苏州大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://suda.edu.cn/
+  approved_domains:
+  - suda.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:27:51Z'
+  updated_at: '2026-08-13T03:27:51Z'
+- id: org_auto_d743d7cb1647fc518491
+  type: school
+  canonical_name: 计算机科学与技术学院(软件学院)
+  parent_id: org_auto_6d0a10ae17f678f0ece7
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:27:51Z'
+  updated_at: '2026-08-13T03:27:51Z'
+- id: org_auto_ffc3f7ed68d8bc331918
+  type: department
+  canonical_name: 人工智能系
+  parent_id: org_auto_d743d7cb1647fc518491
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:27:51Z'
+  updated_at: '2026-08-13T03:27:51Z'

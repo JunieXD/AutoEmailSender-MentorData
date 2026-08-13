@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1d2c87bc6a90b007618f"
+      ],
+      "ended_at": null,
+      "id": "aff_617eb074a8c4e6205051",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0d/dc/c11250a527836/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1d2c87bc6a90b007618f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_617eb074a8c4e6205051",
+      "claim_ids": [
+        "claim_1d2c87bc6a90b007618f"
+      ],
+      "is_primary": true,
+      "normalized_value": "swfeng@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0d/dc/c11250a527836/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "swfeng@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1d2c87bc6a90b007618f"
+    ],
+    "email": [
+      "claim_1d2c87bc6a90b007618f"
+    ],
+    "name": [
+      "claim_1d2c87bc6a90b007618f"
+    ],
+    "profile_url": [
+      "claim_1d2c87bc6a90b007618f"
+    ],
+    "recent_papers": [
+      "claim_1d2c87bc6a90b007618f"
+    ],
+    "research_directions": [
+      "claim_1d2c87bc6a90b007618f"
+    ],
+    "status": [
+      "claim_1d2c87bc6a90b007618f"
+    ],
+    "title": [
+      "claim_1d2c87bc6a90b007618f"
+    ]
+  },
+  "id": "mentor_7548a26c6c5247bfdad1",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1d2c87bc6a90b007618f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冯思为"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_617eb074a8c4e6205051",
+      "claim_ids": [
+        "claim_1d2c87bc6a90b007618f"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0d/dc/c11250a527836/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Siwei Feng; Vertical federated learning-based feature selection with non-overlapping sample utilization, Expert Systems with Applications, 2022, 208: 118097.",
+    "Siwei Feng; Boyang Li; Han Yu; Yang Liu; Qiang Yang; Semi-Supervised Federated Heterogeneous Transfer Learning, Knowledge-Based Systems, 2022, 252: 109384.",
+    "Siwei Feng; Han Yu; Marco F. Duarte; Autoencoder Based Sample Selection for Self-Taught Learning, Knowledge-Based Systems, 2020, 192: 105343",
+    "Siwei Feng; Marco F. Duarte; Few-shot learning-based human activity recognition, Expert Systems with Applications, 2019, 138: 112782.",
+    "Siwei Feng; Marco F. Duarte; Graph autoencoder-based unsupervised feature selection with broad and local data structure preservation, Neurocomputing, 2018, 312: 310-323."
+  ],
+  "research_directions": [
+    "持续学习、联邦学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0d/dc/c11250a527836/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

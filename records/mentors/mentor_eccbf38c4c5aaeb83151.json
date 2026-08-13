@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b742d85259863c2a645f"
+      ],
+      "ended_at": null,
+      "id": "aff_7e1d048557743e56174a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0f/bc/c11250a528316/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b742d85259863c2a645f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7e1d048557743e56174a",
+      "claim_ids": [
+        "claim_b742d85259863c2a645f"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiang@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0f/bc/c11250a528316/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiang@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b742d85259863c2a645f"
+    ],
+    "email": [
+      "claim_b742d85259863c2a645f"
+    ],
+    "name": [
+      "claim_b742d85259863c2a645f"
+    ],
+    "profile_url": [
+      "claim_b742d85259863c2a645f"
+    ],
+    "recent_papers": [
+      "claim_b742d85259863c2a645f"
+    ],
+    "research_directions": [
+      "claim_b742d85259863c2a645f"
+    ],
+    "status": [
+      "claim_b742d85259863c2a645f"
+    ],
+    "title": [
+      "claim_b742d85259863c2a645f"
+    ]
+  },
+  "id": "mentor_eccbf38c4c5aaeb83151",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b742d85259863c2a645f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7e1d048557743e56174a",
+      "claim_ids": [
+        "claim_b742d85259863c2a645f"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0f/bc/c11250a528316/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "吕强,柏战华,夏晓燕. 一种求解最大团问题的并行交叉熵算法. 软件学报, 19(11):2899–2907, 2008",
+    "Qiang Lv, HongJie Wu, JinZhen Wu, Xu Huang, XiaoHu Luo, and PeiDe Qian. A parallel ant colonies approach to de novo prediction of protein backbone in casp8/9. Science China Information Sciences, 56(10):226–238, 2013",
+    "吴宏杰,吕强,权丽君,陈荣,陈沙沙,李海鸥,钱培德. Gpcr 跨膜螺旋的结构拓扑建模及其预测方法. 计算机学报, 36(10):2168–2178, 2013. 2013 中国计算机大会 CNCC 优秀论文奖",
+    "Yan Li, Lijun Quan, Yiting Zhou, Yelu Jiang, Kailong Li, Tingfang Wu, and Qiang Lyu. Identifying modifications on dna-bound histones with joint deep learning of multiple binding sites in dna sequence. Bioinformatics, 38(17):4070–4077, 2022",
+    "Lijun Quan, Jie Mei, Ruji He, Xiaoyu Sun, Liangpeng Nie, Kailong Li, and Qiang Lyu. Quantifying intensities of transcription factor-dna binding by learning from an ensemble of protein binding microarrays. IEEE Journal of Biomedical Health and Informatics, 25(7):2811–2819, 2021"
+  ],
+  "research_directions": [
+    "生物信息学、并行分布式处理、并行元启发、分布计算、计算生物学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0f/bc/c11250a528316/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

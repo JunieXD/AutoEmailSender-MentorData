@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_73897532cb5614137edc"
+      ],
+      "ended_at": null,
+      "id": "aff_aea5db243ca91a9ece7d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/4a/cd/c11250a608973/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_73897532cb5614137edc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aea5db243ca91a9ece7d",
+      "claim_ids": [
+        "claim_73897532cb5614137edc"
+      ],
+      "is_primary": true,
+      "normalized_value": "whwang@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/4a/cd/c11250a608973/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "whwang@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_73897532cb5614137edc"
+    ],
+    "email": [
+      "claim_73897532cb5614137edc"
+    ],
+    "name": [
+      "claim_73897532cb5614137edc"
+    ],
+    "profile_url": [
+      "claim_73897532cb5614137edc"
+    ],
+    "recent_papers": [
+      "claim_73897532cb5614137edc"
+    ],
+    "research_directions": [
+      "claim_73897532cb5614137edc"
+    ],
+    "status": [
+      "claim_73897532cb5614137edc"
+    ],
+    "title": [
+      "claim_73897532cb5614137edc"
+    ]
+  },
+  "id": "mentor_18b5249babe9cab16224",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_73897532cb5614137edc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王伟行"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aea5db243ca91a9ece7d",
+      "claim_ids": [
+        "claim_73897532cb5614137edc"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/4a/cd/c11250a608973/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Domain generalization for face anti-spoofing via negative data augmentation",
+    "Conv-mlp: A convolution and mlp mixed model for multimodal face anti-spoofing",
+    "A complementary fusion strategy for RGB-D face recognition",
+    "Phase unwrapping for time-of-flight sensor based on image segmentation"
+  ],
+  "research_directions": [
+    "计算机视觉与深度学习、域泛化与域自适应学习、2D/3D机器视觉、视觉与多模态大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/4a/cd/c11250a608973/page.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

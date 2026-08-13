@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8ce7ee1fd1d9f0f65fa"
+      ],
+      "ended_at": null,
+      "id": "aff_c5a43e9a1fd178f32040",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0d/d1/c11250a527825/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f8ce7ee1fd1d9f0f65fa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c5a43e9a1fd178f32040",
+      "claim_ids": [
+        "claim_f8ce7ee1fd1d9f0f65fa"
+      ],
+      "is_primary": true,
+      "normalized_value": "wlchen@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0d/d1/c11250a527825/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wlchen@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ],
+    "email": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ],
+    "name": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ],
+    "profile_url": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ],
+    "recent_papers": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ],
+    "research_directions": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ],
+    "status": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ],
+    "title": [
+      "claim_f8ce7ee1fd1d9f0f65fa"
+    ]
+  },
+  "id": "mentor_179e49a7769d3d66964a",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8ce7ee1fd1d9f0f65fa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈文亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c5a43e9a1fd178f32040",
+      "claim_ids": [
+        "claim_f8ce7ee1fd1d9f0f65fa"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0d/d1/c11250a527825/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Wenliang Chen, Jun’ichi Kazama, and Kentaro Torisawa. 2010. Bitext Dependency Parsing with Bilingual Subtree Constraints[C]//ACL-2010, pp.21-29.",
+    "Wenliang Chen, Min Zhang, Yue Zhang, Xiangyu Duan. 2016. Exploiting Meta Features for Dependency Parsing and Part-of-speech Tagging[J]. Artificial Intelligence Journal, 230(2016):173-191.",
+    "杨一帆, 马进, 王海涛, 何正球,陈文亮,张民.2020. 基于简介文本的中文人物关系图谱属性补全与纠错[J]. 中国科学-信息科学. V50(7): 1003-1018",
+    "Zhengqiu He, Wenliang Chen, Yuyi Wang, Wei Zhang, Gaochun Wang, Min Zhang.2020. Improving Neural Relation Extraction with Positive and Unlabeled Learning[C]//AAAI-2020, pp.7927-7934.",
+    "Tong Zhu, Xiaoye Qu, Wenliang Chen, Zhefeng Wang, Baoxing Huai, Nicholas Yuan, Min Zhang. 2022. Efficient Document-level Event Extraction via Pseudo-Trigger-aware Pruned Complete Graph[C]//IJCAI-2022. pp.4552-4558."
+  ],
+  "research_directions": [
+    "自然语言处理、语言分析、信息抽取、知识图谱"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0d/d1/c11250a527825/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

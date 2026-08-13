@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dfc4b2c2074f7df04139"
+      ],
+      "ended_at": null,
+      "id": "aff_2e115b80d86c0fbb1d9c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/4c/b2/c11250a543922/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_dfc4b2c2074f7df04139"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2e115b80d86c0fbb1d9c",
+      "claim_ids": [
+        "claim_dfc4b2c2074f7df04139"
+      ],
+      "is_primary": true,
+      "normalized_value": "hlhe2023@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/4c/b2/c11250a543922/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hlhe2023@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dfc4b2c2074f7df04139"
+    ],
+    "email": [
+      "claim_dfc4b2c2074f7df04139"
+    ],
+    "name": [
+      "claim_dfc4b2c2074f7df04139"
+    ],
+    "profile_url": [
+      "claim_dfc4b2c2074f7df04139"
+    ],
+    "recent_papers": [
+      "claim_dfc4b2c2074f7df04139"
+    ],
+    "research_directions": [
+      "claim_dfc4b2c2074f7df04139"
+    ],
+    "status": [
+      "claim_dfc4b2c2074f7df04139"
+    ],
+    "title": [
+      "claim_dfc4b2c2074f7df04139"
+    ]
+  },
+  "id": "mentor_05bf7f6fcf0bc846b6e8",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dfc4b2c2074f7df04139"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "何红亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2e115b80d86c0fbb1d9c",
+      "claim_ids": [
+        "claim_dfc4b2c2074f7df04139"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/4c/b2/c11250a543922/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "TopoSeg: Topology-Aware Nuclear Instance Segmentation,ICCV2023,CCF A,2023.10",
+    "CDNet: Centripetal Direction Network for Nuclear Instance Segmentation,ICCV2021,CCF A,2021.11",
+    "A novel hybrid ensemble model based on tree-based method and deep learning method for default prediction,Expert Systems with Applications,SCI Q1,2021.08",
+    "A novel ensemble method for credit scoring: Adaption of different imbalance ratios,Expert Systems with Applications,SCI Q1,2018.05",
+    "Learning Task-Aligned Mask Query for Instance Segmentation (Top 3%),ICASSP2023,CCF B,2023.06"
+  ],
+  "research_directions": [
+    "深度学习与计算机视觉、计算机视觉与模式识别、医学图像分析、视觉语言多模态学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/4c/b2/c11250a543922/page.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

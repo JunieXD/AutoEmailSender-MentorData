@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b7a5673dd9f6ade7c5f3"
+      ],
+      "ended_at": null,
+      "id": "aff_ee3c5ed3985e0f7886ab",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/b2/78/c11250a569976/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b7a5673dd9f6ade7c5f3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ee3c5ed3985e0f7886ab",
+      "claim_ids": [
+        "claim_b7a5673dd9f6ade7c5f3"
+      ],
+      "is_primary": true,
+      "normalized_value": "mhli@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/b2/78/c11250a569976/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mhli@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ],
+    "email": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ],
+    "name": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ],
+    "profile_url": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ],
+    "recent_papers": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ],
+    "research_directions": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ],
+    "status": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ],
+    "title": [
+      "claim_b7a5673dd9f6ade7c5f3"
+    ]
+  },
+  "id": "mentor_702649f680fa8d3cee15",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b7a5673dd9f6ade7c5f3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李明翰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ee3c5ed3985e0f7886ab",
+      "claim_ids": [
+        "claim_b7a5673dd9f6ade7c5f3"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/b2/78/c11250a569976/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "The power of selecting key blocks with local pre-ranking for long document information retrieval.",
+    "Dual-Layer Prompt Ensembles: Leveraging System-and User-Level Instructions for Robust LLM-Based Query Expansion and Rank Fusion.",
+    "S2G-RAG: Structured Sufficiency and Gap Judging for Iterative Retrieval-Augmented QA.",
+    "GLIER: Generative Legal Inference and Evidence Ranking for Legal Case Retrieval.",
+    "Domain Adaptation for Dense Retrieval and Conversational Dense Retrieval through Self-Supervision by Meticulous Pseudo-Relevance Labeling."
+  ],
+  "research_directions": [
+    "大语言模型的信息检索与对话问答,大语言模型的信息检索(搜索引擎算法),检索增强(RAG)的大语言模型,大语言模型的对话系统、问答系统,法律AI,大语言模型,基于大模型的推荐"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/b2/78/c11250a569976/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

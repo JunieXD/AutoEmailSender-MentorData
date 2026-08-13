@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_62ffb745f897825a2aa8"
+      ],
+      "ended_at": null,
+      "id": "aff_45b1a8eebd9a2796422c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/1f/40/c11250a597824/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_62ffb745f897825a2aa8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_45b1a8eebd9a2796422c",
+      "claim_ids": [
+        "claim_62ffb745f897825a2aa8"
+      ],
+      "is_primary": true,
+      "normalized_value": "ningc@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/1f/40/c11250a597824/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ningc@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_62ffb745f897825a2aa8"
+    ],
+    "email": [
+      "claim_62ffb745f897825a2aa8"
+    ],
+    "name": [
+      "claim_62ffb745f897825a2aa8"
+    ],
+    "profile_url": [
+      "claim_62ffb745f897825a2aa8"
+    ],
+    "recent_papers": [
+      "claim_62ffb745f897825a2aa8"
+    ],
+    "research_directions": [
+      "claim_62ffb745f897825a2aa8"
+    ],
+    "status": [
+      "claim_62ffb745f897825a2aa8"
+    ],
+    "title": [
+      "claim_62ffb745f897825a2aa8"
+    ]
+  },
+  "id": "mentor_7b49a2ed092efa376814",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_62ffb745f897825a2aa8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_45b1a8eebd9a2796422c",
+      "claim_ids": [
+        "claim_62ffb745f897825a2aa8"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/1f/40/c11250a597824/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Spliceosome: On-Camera Video Thinning and Tuning for Timely and Accurate Analytics, IEEE Transactions on Networking (ToN, CCF-A, 第一作者,计算机网络领域TOP1顶刊), 2025.",
+    "TileSR: Accelerate On-Device Super-Resolution with Parallel Offloading in Tile Granularity, IEEE Conference on Computer Communications (INFOCOM, CCF-A, 第一作者,计算机网络领域顶会), 2024.",
+    "ResMap: Exploiting Sparse Residual Feature Map for Accelerating Cross-Edge Video Analytics, IEEE Conference on Computer Communications (INFOCOM, CCF-A, 共一第一作者,计算机网络领域顶会), 2023.",
+    "ViChaser: Chase Your Viewpoint for Live Video Streaming With Block-Oriented Super-Resolution, IEEE Transactions on Networking (ToN, CCF-A, 第一作者,计算机网络领域TOP1顶刊), 2023.",
+    "Cuttlefish: Neural Configuration Adaptation for Video Analysis in Live Augmented Reality, IEEE Transactions on Parallel and Distributed System (TPDS, CCF-A, 第一作者,分布式并行计算领域顶刊), 2021."
+  ],
+  "research_directions": [
+    "边缘智能、视频流质量增强与推理分析、面向边缘终端的大模型训练与推理、高速网络流量测量"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/1f/40/c11250a597824/page.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

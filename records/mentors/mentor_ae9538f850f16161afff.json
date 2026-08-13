@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b7c2955104d2e96d8242"
+      ],
+      "ended_at": null,
+      "id": "aff_86655fb36deacf77b4df",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0e/c4/c11250a528068/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b7c2955104d2e96d8242"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_86655fb36deacf77b4df",
+      "claim_ids": [
+        "claim_b7c2955104d2e96d8242"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangbangjun@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0e/c4/c11250a528068/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangbangjun@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b7c2955104d2e96d8242"
+    ],
+    "email": [
+      "claim_b7c2955104d2e96d8242"
+    ],
+    "name": [
+      "claim_b7c2955104d2e96d8242"
+    ],
+    "profile_url": [
+      "claim_b7c2955104d2e96d8242"
+    ],
+    "recent_papers": [
+      "claim_b7c2955104d2e96d8242"
+    ],
+    "research_directions": [
+      "claim_b7c2955104d2e96d8242"
+    ],
+    "status": [
+      "claim_b7c2955104d2e96d8242"
+    ],
+    "title": [
+      "claim_b7c2955104d2e96d8242"
+    ]
+  },
+  "id": "mentor_ae9538f850f16161afff",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b7c2955104d2e96d8242"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王邦军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_86655fb36deacf77b4df",
+      "claim_ids": [
+        "claim_b7c2955104d2e96d8242"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0e/c4/c11250a528068/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "ACO-MoE-LoRA: Evolving-while-Training for Adapting Segment Anything Model 2 to Specialized Domains.ICML.2026",
+    "F2SST: Frequency-to-Spatial Semantic Transfer for Few-Shot Image Classification.AAAI.2026",
+    "Skill extraction facilitated by meta-policy fine-tuned with multi-task[J].Neurocomputing.2026",
+    "Conservative reward enhancement through the nearest neighbor integration in model-based Offline Policy Optimization[J].Expert Systems with Applications.2025",
+    "基于亲和关系学习与区域感知增强的小样本语义分割方法[J].山西大学学报.2025"
+  ],
+  "research_directions": [
+    "机器学习、数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0e/c4/c11250a528068/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}
