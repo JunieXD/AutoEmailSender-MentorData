@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_55bb5c805ae02f96900d"
+      ],
+      "ended_at": null,
+      "id": "aff_954cdc3268a75e349b06",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/zhangdan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_55bb5c805ae02f96900d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_954cdc3268a75e349b06",
+      "claim_ids": [
+        "claim_55bb5c805ae02f96900d"
+      ],
+      "is_primary": true,
+      "normalized_value": "dan.zhang@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/zhangdan",
+      "status": "current",
+      "type": "email",
+      "value": "dan.zhang@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_55bb5c805ae02f96900d"
+    ],
+    "email": [
+      "claim_55bb5c805ae02f96900d"
+    ],
+    "name": [
+      "claim_55bb5c805ae02f96900d"
+    ],
+    "profile_url": [
+      "claim_55bb5c805ae02f96900d"
+    ],
+    "research_directions": [
+      "claim_55bb5c805ae02f96900d"
+    ],
+    "status": [
+      "claim_55bb5c805ae02f96900d"
+    ],
+    "title": [
+      "claim_55bb5c805ae02f96900d"
+    ]
+  },
+  "id": "mentor_bbb53867d7242b0d8191",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_55bb5c805ae02f96900d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张亶"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_954cdc3268a75e349b06",
+      "claim_ids": [
+        "claim_55bb5c805ae02f96900d"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/zhangdan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图像处理、软件工程、企业信息化项目管理、智慧城市建设"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/zhangdan",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

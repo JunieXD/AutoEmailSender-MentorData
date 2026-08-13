@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b018b61f01a2beaa6c1b"
+      ],
+      "ended_at": null,
+      "id": "aff_acc9131c45861969f6d2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/zhaoxl",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_b018b61f01a2beaa6c1b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_acc9131c45861969f6d2",
+      "claim_ids": [
+        "claim_b018b61f01a2beaa6c1b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaoxl@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/zhaoxl",
+      "status": "current",
+      "type": "email",
+      "value": "zhaoxl@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b018b61f01a2beaa6c1b"
+    ],
+    "email": [
+      "claim_b018b61f01a2beaa6c1b"
+    ],
+    "name": [
+      "claim_b018b61f01a2beaa6c1b"
+    ],
+    "profile_url": [
+      "claim_b018b61f01a2beaa6c1b"
+    ],
+    "research_directions": [
+      "claim_b018b61f01a2beaa6c1b"
+    ],
+    "status": [
+      "claim_b018b61f01a2beaa6c1b"
+    ]
+  },
+  "id": "mentor_d5d5b4b1cab897b2aa45",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b018b61f01a2beaa6c1b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵晓亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_acc9131c45861969f6d2",
+      "claim_ids": [
+        "claim_b018b61f01a2beaa6c1b"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/zhaoxl"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "商业智能与突破性设计创新、产业孪生与工业智能仿真软件、人工智能与多智能体协同、产品定位与工业设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/zhaoxl",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

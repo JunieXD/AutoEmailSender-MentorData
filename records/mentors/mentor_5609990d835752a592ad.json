@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd7f65cdcbeaab94fd29"
+      ],
+      "ended_at": null,
+      "id": "aff_7a02d02c28611585d186",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/wangnaibo",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_fd7f65cdcbeaab94fd29"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7a02d02c28611585d186",
+      "claim_ids": [
+        "claim_fd7f65cdcbeaab94fd29"
+      ],
+      "is_primary": true,
+      "normalized_value": "naibowang@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/wangnaibo",
+      "status": "current",
+      "type": "email",
+      "value": "naibowang@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd7f65cdcbeaab94fd29"
+    ],
+    "email": [
+      "claim_fd7f65cdcbeaab94fd29"
+    ],
+    "name": [
+      "claim_fd7f65cdcbeaab94fd29"
+    ],
+    "profile_url": [
+      "claim_fd7f65cdcbeaab94fd29"
+    ],
+    "research_directions": [
+      "claim_fd7f65cdcbeaab94fd29"
+    ],
+    "status": [
+      "claim_fd7f65cdcbeaab94fd29"
+    ]
+  },
+  "id": "mentor_5609990d835752a592ad",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd7f65cdcbeaab94fd29"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王乃博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7a02d02c28611585d186",
+      "claim_ids": [
+        "claim_fd7f65cdcbeaab94fd29"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/wangnaibo"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "AI Agent/Agentic AI/大模型、软件工程/开源软件开发/系统软件智能开发、并行/分布式计算、GUI Agent/机器人流程自动化(RPA)、云计算/服务计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/wangnaibo",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

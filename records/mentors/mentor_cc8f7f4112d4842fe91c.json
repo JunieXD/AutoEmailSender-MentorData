@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0119337c553f91dbc5a3"
+      ],
+      "ended_at": null,
+      "id": "aff_2234be36311a86ce25ef",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/juncheng",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_0119337c553f91dbc5a3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2234be36311a86ce25ef",
+      "claim_ids": [
+        "claim_0119337c553f91dbc5a3"
+      ],
+      "is_primary": true,
+      "normalized_value": "junchengli@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/juncheng",
+      "status": "current",
+      "type": "email",
+      "value": "junchengli@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0119337c553f91dbc5a3"
+    ],
+    "email": [
+      "claim_0119337c553f91dbc5a3"
+    ],
+    "name": [
+      "claim_0119337c553f91dbc5a3"
+    ],
+    "profile_url": [
+      "claim_0119337c553f91dbc5a3"
+    ],
+    "research_directions": [
+      "claim_0119337c553f91dbc5a3"
+    ],
+    "status": [
+      "claim_0119337c553f91dbc5a3"
+    ]
+  },
+  "id": "mentor_cc8f7f4112d4842fe91c",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0119337c553f91dbc5a3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李俊成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2234be36311a86ce25ef",
+      "claim_ids": [
+        "claim_0119337c553f91dbc5a3"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/juncheng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态理解与生成大模型、多模态智能体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/juncheng",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c5847f7637de9f95ae11"
+      ],
+      "ended_at": null,
+      "id": "aff_e64d35bf8a2321ec3183",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/lxb",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c5847f7637de9f95ae11"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e64d35bf8a2321ec3183",
+      "claim_ids": [
+        "claim_c5847f7637de9f95ae11"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiubo@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/lxb",
+      "status": "current",
+      "type": "email",
+      "value": "xiubo@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c5847f7637de9f95ae11"
+    ],
+    "email": [
+      "claim_c5847f7637de9f95ae11"
+    ],
+    "name": [
+      "claim_c5847f7637de9f95ae11"
+    ],
+    "profile_url": [
+      "claim_c5847f7637de9f95ae11"
+    ],
+    "research_directions": [
+      "claim_c5847f7637de9f95ae11"
+    ],
+    "status": [
+      "claim_c5847f7637de9f95ae11"
+    ],
+    "title": [
+      "claim_c5847f7637de9f95ae11"
+    ]
+  },
+  "id": "mentor_b0464efdb73e5b98ecd8",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c5847f7637de9f95ae11"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "梁秀波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e64d35bf8a2321ec3183",
+      "claim_ids": [
+        "claim_c5847f7637de9f95ae11"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/lxb"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、虚拟现实、类脑计算、软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/lxb",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

@@ -2783,3 +2783,38 @@ organizations:
   successor_id: null
   created_at: '2026-08-13T03:09:05Z'
   updated_at: '2026-08-13T03:09:05Z'
+- id: org_auto_4fb345a9de00e5b3626b
+  type: university
+  canonical_name: 浙江大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://zju.edu.cn/
+  approved_domains:
+  - zju.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:12:55Z'
+  updated_at: '2026-08-13T03:12:55Z'
+- id: org_auto_35769d45f47723f33719
+  type: school
+  canonical_name: 软件学院
+  parent_id: org_auto_4fb345a9de00e5b3626b
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:12:55Z'
+  updated_at: '2026-08-13T03:12:55Z'
+- id: org_auto_67dcda45818a3339453e
+  type: school
+  canonical_name: 计算机科学与技术学院
+  parent_id: org_auto_4fb345a9de00e5b3626b
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:12:55Z'
+  updated_at: '2026-08-13T03:12:55Z'

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ddcd0eceb40ada5ecfe2"
+      ],
+      "ended_at": null,
+      "id": "aff_21f0aa3cbac5a1872cb6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/zhousheng",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ddcd0eceb40ada5ecfe2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_21f0aa3cbac5a1872cb6",
+      "claim_ids": [
+        "claim_ddcd0eceb40ada5ecfe2"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhousheng_zju@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/zhousheng",
+      "status": "current",
+      "type": "email",
+      "value": "zhousheng_zju@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ddcd0eceb40ada5ecfe2"
+    ],
+    "email": [
+      "claim_ddcd0eceb40ada5ecfe2"
+    ],
+    "name": [
+      "claim_ddcd0eceb40ada5ecfe2"
+    ],
+    "profile_url": [
+      "claim_ddcd0eceb40ada5ecfe2"
+    ],
+    "research_directions": [
+      "claim_ddcd0eceb40ada5ecfe2"
+    ],
+    "status": [
+      "claim_ddcd0eceb40ada5ecfe2"
+    ],
+    "title": [
+      "claim_ddcd0eceb40ada5ecfe2"
+    ]
+  },
+  "id": "mentor_a2a2a6a8aa27f324c9ae",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ddcd0eceb40ada5ecfe2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周晟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_21f0aa3cbac5a1872cb6",
+      "claim_ids": [
+        "claim_ddcd0eceb40ada5ecfe2"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/zhousheng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能,数据挖掘,图神经网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/zhousheng",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

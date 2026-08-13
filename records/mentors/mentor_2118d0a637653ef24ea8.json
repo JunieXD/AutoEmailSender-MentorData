@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c7281de7fa4135dd621b"
+      ],
+      "ended_at": null,
+      "id": "aff_44b11e6fc4761adc585d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/NB25053",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c7281de7fa4135dd621b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_44b11e6fc4761adc585d",
+      "claim_ids": [
+        "claim_c7281de7fa4135dd621b"
+      ],
+      "is_primary": true,
+      "normalized_value": "jikeyu@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/NB25053",
+      "status": "current",
+      "type": "email",
+      "value": "jikeyu@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c7281de7fa4135dd621b"
+    ],
+    "email": [
+      "claim_c7281de7fa4135dd621b"
+    ],
+    "name": [
+      "claim_c7281de7fa4135dd621b"
+    ],
+    "profile_url": [
+      "claim_c7281de7fa4135dd621b"
+    ],
+    "research_directions": [
+      "claim_c7281de7fa4135dd621b"
+    ],
+    "status": [
+      "claim_c7281de7fa4135dd621b"
+    ]
+  },
+  "id": "mentor_2118d0a637653ef24ea8",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c7281de7fa4135dd621b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "季珂宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_44b11e6fc4761adc585d",
+      "claim_ids": [
+        "claim_c7281de7fa4135dd621b"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/NB25053"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "密码学、数据安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/NB25053",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

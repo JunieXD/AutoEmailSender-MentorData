@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6e99a7d3ea325bbeb470"
+      ],
+      "ended_at": null,
+      "id": "aff_350df2bdfecefb061617",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/NB19006",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_6e99a7d3ea325bbeb470"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_350df2bdfecefb061617",
+      "claim_ids": [
+        "claim_6e99a7d3ea325bbeb470"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuxiaojun@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/NB19006",
+      "status": "current",
+      "type": "email",
+      "value": "zhuxiaojun@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6e99a7d3ea325bbeb470"
+    ],
+    "email": [
+      "claim_6e99a7d3ea325bbeb470"
+    ],
+    "name": [
+      "claim_6e99a7d3ea325bbeb470"
+    ],
+    "profile_url": [
+      "claim_6e99a7d3ea325bbeb470"
+    ],
+    "research_directions": [
+      "claim_6e99a7d3ea325bbeb470"
+    ],
+    "status": [
+      "claim_6e99a7d3ea325bbeb470"
+    ]
+  },
+  "id": "mentor_a1ff0c1cefd6e4ea445a",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6e99a7d3ea325bbeb470"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱小军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_350df2bdfecefb061617",
+      "claim_ids": [
+        "claim_6e99a7d3ea325bbeb470"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/NB19006"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、电子商务和区块链"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/NB19006",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_77b7e38516b43eed0352"
+      ],
+      "ended_at": null,
+      "id": "aff_f7d73e4a155de726dc22",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/wangchi",
+      "started_at": null,
+      "status": "current",
+      "title": "特聘研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_77b7e38516b43eed0352"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f7d73e4a155de726dc22",
+      "claim_ids": [
+        "claim_77b7e38516b43eed0352"
+      ],
+      "is_primary": true,
+      "normalized_value": "chi.wang@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/wangchi",
+      "status": "current",
+      "type": "email",
+      "value": "chi.wang@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_77b7e38516b43eed0352"
+    ],
+    "email": [
+      "claim_77b7e38516b43eed0352"
+    ],
+    "name": [
+      "claim_77b7e38516b43eed0352"
+    ],
+    "profile_url": [
+      "claim_77b7e38516b43eed0352"
+    ],
+    "recent_papers": [
+      "claim_77b7e38516b43eed0352"
+    ],
+    "research_directions": [
+      "claim_77b7e38516b43eed0352"
+    ],
+    "status": [
+      "claim_77b7e38516b43eed0352"
+    ],
+    "title": [
+      "claim_77b7e38516b43eed0352"
+    ]
+  },
+  "id": "mentor_89a8f9ba9652700d7639",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_77b7e38516b43eed0352"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王驰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f7d73e4a155de726dc22",
+      "claim_ids": [
+        "claim_77b7e38516b43eed0352"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/wangchi"
+    }
+  ],
+  "recent_papers": [
+    "FashionMAC: Deformation-Free Fashion Image Generation with Fine-Grained Model Appearance Customization",
+    "Artificial Intelligence for Virtual Reality: A Review",
+    "VividAnimator: An End-to-End Audio and Pose-driven Half-Body Human Animation Framework",
+    "Physically Based Facial Texture Generation In The Wild",
+    "BuildingBlock: A Hybrid Approach for Structured Building Generation",
+    "Animateanything: Consistent and Controllable Animation for Video Generation",
+    "MotionFlow:Learning Implicit Motion Flow for Complex Camera Trajectory Control in Video Generation",
+    "Detail-Preserving Latent Diffusion for Stable Shadow Removal"
+  ],
+  "research_directions": [
+    "人工智能内容生成、计算机图形学、三维视觉、数字孪生"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/wangchi",
+  "title": "特聘研究员",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

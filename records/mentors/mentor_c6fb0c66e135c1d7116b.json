@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a37d6e17f4dd2d9af3d3"
+      ],
+      "ended_at": null,
+      "id": "aff_c649521c23d062bbce0c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/xindu",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_a37d6e17f4dd2d9af3d3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c649521c23d062bbce0c",
+      "claim_ids": [
+        "claim_a37d6e17f4dd2d9af3d3"
+      ],
+      "is_primary": true,
+      "normalized_value": "xindu@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/xindu",
+      "status": "current",
+      "type": "email",
+      "value": "xindu@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a37d6e17f4dd2d9af3d3"
+    ],
+    "email": [
+      "claim_a37d6e17f4dd2d9af3d3"
+    ],
+    "name": [
+      "claim_a37d6e17f4dd2d9af3d3"
+    ],
+    "profile_url": [
+      "claim_a37d6e17f4dd2d9af3d3"
+    ],
+    "research_directions": [
+      "claim_a37d6e17f4dd2d9af3d3"
+    ],
+    "status": [
+      "claim_a37d6e17f4dd2d9af3d3"
+    ],
+    "title": [
+      "claim_a37d6e17f4dd2d9af3d3"
+    ]
+  },
+  "id": "mentor_c6fb0c66e135c1d7116b",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a37d6e17f4dd2d9af3d3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c649521c23d062bbce0c",
+      "claim_ids": [
+        "claim_a37d6e17f4dd2d9af3d3"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/xindu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "类脑计算、服务计算、新型智能与软件系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/xindu",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

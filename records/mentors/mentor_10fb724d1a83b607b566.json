@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7ae56508b23d092f24d1"
+      ],
+      "ended_at": null,
+      "id": "aff_a8e1e737e6c417ff6b5d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/zhengong",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_7ae56508b23d092f24d1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a8e1e737e6c417ff6b5d",
+      "claim_ids": [
+        "claim_7ae56508b23d092f24d1"
+      ],
+      "is_primary": true,
+      "normalized_value": "cstcaizg@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/zhengong",
+      "status": "current",
+      "type": "email",
+      "value": "cstcaizg@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7ae56508b23d092f24d1"
+    ],
+    "email": [
+      "claim_7ae56508b23d092f24d1"
+    ],
+    "name": [
+      "claim_7ae56508b23d092f24d1"
+    ],
+    "profile_url": [
+      "claim_7ae56508b23d092f24d1"
+    ],
+    "research_directions": [
+      "claim_7ae56508b23d092f24d1"
+    ],
+    "status": [
+      "claim_7ae56508b23d092f24d1"
+    ],
+    "title": [
+      "claim_7ae56508b23d092f24d1"
+    ]
+  },
+  "id": "mentor_10fb724d1a83b607b566",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7ae56508b23d092f24d1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "才振功"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a8e1e737e6c417ff6b5d",
+      "claim_ids": [
+        "claim_7ae56508b23d092f24d1"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/zhengong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云原生、边缘计算、算力调度、智能体"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/zhengong",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

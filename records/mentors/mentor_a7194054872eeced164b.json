@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9d5eabbea0403e59d52e"
+      ],
+      "ended_at": null,
+      "id": "aff_b2bf40ff851a80886c57",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/zhangjinshan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9d5eabbea0403e59d52e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b2bf40ff851a80886c57",
+      "claim_ids": [
+        "claim_9d5eabbea0403e59d52e"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjinshan@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/zhangjinshan",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjinshan@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9d5eabbea0403e59d52e"
+    ],
+    "email": [
+      "claim_9d5eabbea0403e59d52e"
+    ],
+    "name": [
+      "claim_9d5eabbea0403e59d52e"
+    ],
+    "profile_url": [
+      "claim_9d5eabbea0403e59d52e"
+    ],
+    "research_directions": [
+      "claim_9d5eabbea0403e59d52e"
+    ],
+    "status": [
+      "claim_9d5eabbea0403e59d52e"
+    ],
+    "title": [
+      "claim_9d5eabbea0403e59d52e"
+    ]
+  },
+  "id": "mentor_a7194054872eeced164b",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9d5eabbea0403e59d52e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张金山"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b2bf40ff851a80886c57",
+      "claim_ids": [
+        "claim_9d5eabbea0403e59d52e"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/zhangjinshan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "生成式人工智能、计算经济学、强化学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/zhangjinshan",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

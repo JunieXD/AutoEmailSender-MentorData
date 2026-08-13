@@ -1,0 +1,281 @@
+{
+  "created_organization_ids": [
+    "org_auto_35769d45f47723f33719",
+    "org_auto_4fb345a9de00e5b3626b",
+    "org_auto_67dcda45818a3339453e"
+  ],
+  "decided_at": "2026-08-13T03:12:55Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0b3f35856fe5047c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "zju.edu.cn"
+          ],
+          "canonical_name": "浙江大学",
+          "level": "university",
+          "official_url": "https://zju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c18703932d6bb0a9",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "zju.edu.cn"
+          ],
+          "canonical_name": "浙江大学",
+          "level": "university",
+          "official_url": "https://zju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ea650651957c86a5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "zju.edu.cn"
+          ],
+          "canonical_name": "浙江大学",
+          "level": "university",
+          "official_url": "https://zju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_67dcda45818a3339453e"
+    }
+  ],
+  "id": "organization_review_issue_66",
+  "invalid_rows": [],
+  "issue": {
+    "number": 66,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/66"
+  },
+  "manifest_sha256": "554e2c2fe6ec9be56d690fb2d21f330d995b29b89ec0b52f056f9d952b73d465",
+  "mapped_proposal_ids": [
+    "proposal_issue_66_row_1",
+    "proposal_issue_66_row_10",
+    "proposal_issue_66_row_11",
+    "proposal_issue_66_row_12",
+    "proposal_issue_66_row_13",
+    "proposal_issue_66_row_14",
+    "proposal_issue_66_row_15",
+    "proposal_issue_66_row_16",
+    "proposal_issue_66_row_17",
+    "proposal_issue_66_row_18",
+    "proposal_issue_66_row_19",
+    "proposal_issue_66_row_2",
+    "proposal_issue_66_row_20",
+    "proposal_issue_66_row_21",
+    "proposal_issue_66_row_22",
+    "proposal_issue_66_row_23",
+    "proposal_issue_66_row_24",
+    "proposal_issue_66_row_25",
+    "proposal_issue_66_row_26",
+    "proposal_issue_66_row_27",
+    "proposal_issue_66_row_28",
+    "proposal_issue_66_row_29",
+    "proposal_issue_66_row_3",
+    "proposal_issue_66_row_30",
+    "proposal_issue_66_row_31",
+    "proposal_issue_66_row_32",
+    "proposal_issue_66_row_33",
+    "proposal_issue_66_row_34",
+    "proposal_issue_66_row_35",
+    "proposal_issue_66_row_36",
+    "proposal_issue_66_row_37",
+    "proposal_issue_66_row_38",
+    "proposal_issue_66_row_39",
+    "proposal_issue_66_row_4",
+    "proposal_issue_66_row_40",
+    "proposal_issue_66_row_41",
+    "proposal_issue_66_row_42",
+    "proposal_issue_66_row_43",
+    "proposal_issue_66_row_44",
+    "proposal_issue_66_row_45",
+    "proposal_issue_66_row_46",
+    "proposal_issue_66_row_47",
+    "proposal_issue_66_row_48",
+    "proposal_issue_66_row_49",
+    "proposal_issue_66_row_5",
+    "proposal_issue_66_row_50",
+    "proposal_issue_66_row_51",
+    "proposal_issue_66_row_52",
+    "proposal_issue_66_row_53",
+    "proposal_issue_66_row_54",
+    "proposal_issue_66_row_55",
+    "proposal_issue_66_row_56",
+    "proposal_issue_66_row_57",
+    "proposal_issue_66_row_58",
+    "proposal_issue_66_row_59",
+    "proposal_issue_66_row_6",
+    "proposal_issue_66_row_60",
+    "proposal_issue_66_row_61",
+    "proposal_issue_66_row_62",
+    "proposal_issue_66_row_63",
+    "proposal_issue_66_row_64",
+    "proposal_issue_66_row_65",
+    "proposal_issue_66_row_66",
+    "proposal_issue_66_row_67",
+    "proposal_issue_66_row_68",
+    "proposal_issue_66_row_69",
+    "proposal_issue_66_row_7",
+    "proposal_issue_66_row_70",
+    "proposal_issue_66_row_71",
+    "proposal_issue_66_row_72",
+    "proposal_issue_66_row_73",
+    "proposal_issue_66_row_74",
+    "proposal_issue_66_row_75",
+    "proposal_issue_66_row_76",
+    "proposal_issue_66_row_77",
+    "proposal_issue_66_row_78",
+    "proposal_issue_66_row_79",
+    "proposal_issue_66_row_8",
+    "proposal_issue_66_row_80",
+    "proposal_issue_66_row_81",
+    "proposal_issue_66_row_82",
+    "proposal_issue_66_row_83",
+    "proposal_issue_66_row_84",
+    "proposal_issue_66_row_85",
+    "proposal_issue_66_row_86",
+    "proposal_issue_66_row_87",
+    "proposal_issue_66_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "计算机科学与技术学院",
+      "official_url": null,
+      "organization_id": "org_auto_67dcda45818a3339453e",
+      "organization_type": "school",
+      "parent_id": "org_auto_4fb345a9de00e5b3626b"
+    }
+  ],
+  "path_corrections": [
+    {
+      "kind": "department_as_school",
+      "proposal_ids": [
+        "proposal_issue_66_row_21",
+        "proposal_issue_66_row_22",
+        "proposal_issue_66_row_23"
+      ],
+      "reason": "人工确认系所字段实际为学校直属同级机构",
+      "source_domains": [
+        "www.cst.zju.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机科学与技术学院",
+        "school": "软件学院",
+        "university": "浙江大学"
+      },
+      "target_organization_id": "org_auto_67dcda45818a3339453e"
+    }
+  ],
+  "pull_request_number": 70,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275495079,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

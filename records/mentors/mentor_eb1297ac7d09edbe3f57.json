@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2f9497dd391739bcff01"
+      ],
+      "ended_at": null,
+      "id": "aff_f85dc16f4dfae9e11227",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/zhangxuhong",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2f9497dd391739bcff01"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f85dc16f4dfae9e11227",
+      "claim_ids": [
+        "claim_2f9497dd391739bcff01"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangxuhong@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/zhangxuhong",
+      "status": "current",
+      "type": "email",
+      "value": "zhangxuhong@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2f9497dd391739bcff01"
+    ],
+    "email": [
+      "claim_2f9497dd391739bcff01"
+    ],
+    "name": [
+      "claim_2f9497dd391739bcff01"
+    ],
+    "profile_url": [
+      "claim_2f9497dd391739bcff01"
+    ],
+    "research_directions": [
+      "claim_2f9497dd391739bcff01"
+    ],
+    "status": [
+      "claim_2f9497dd391739bcff01"
+    ],
+    "title": [
+      "claim_2f9497dd391739bcff01"
+    ]
+  },
+  "id": "mentor_eb1297ac7d09edbe3f57",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2f9497dd391739bcff01"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张旭鸿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f85dc16f4dfae9e11227",
+      "claim_ids": [
+        "claim_2f9497dd391739bcff01"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/zhangxuhong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态大模型、具身智能、可信人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/zhangxuhong",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

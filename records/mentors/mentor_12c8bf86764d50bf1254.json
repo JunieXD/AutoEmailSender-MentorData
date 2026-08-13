@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6a9610c5bb2edafba4e6"
+      ],
+      "ended_at": null,
+      "id": "aff_c1a5ff3ce9e2fddbb733",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/hliangzhao",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_6a9610c5bb2edafba4e6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c1a5ff3ce9e2fddbb733",
+      "claim_ids": [
+        "claim_6a9610c5bb2edafba4e6"
+      ],
+      "is_primary": true,
+      "normalized_value": "hliangzhao@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/hliangzhao",
+      "status": "current",
+      "type": "email",
+      "value": "hliangzhao@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6a9610c5bb2edafba4e6"
+    ],
+    "email": [
+      "claim_6a9610c5bb2edafba4e6"
+    ],
+    "name": [
+      "claim_6a9610c5bb2edafba4e6"
+    ],
+    "profile_url": [
+      "claim_6a9610c5bb2edafba4e6"
+    ],
+    "research_directions": [
+      "claim_6a9610c5bb2edafba4e6"
+    ],
+    "status": [
+      "claim_6a9610c5bb2edafba4e6"
+    ]
+  },
+  "id": "mentor_12c8bf86764d50bf1254",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6a9610c5bb2edafba4e6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵海亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c1a5ff3ce9e2fddbb733",
+      "claim_ids": [
+        "claim_6a9610c5bb2edafba4e6"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/hliangzhao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "服务计算、调度优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/hliangzhao",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

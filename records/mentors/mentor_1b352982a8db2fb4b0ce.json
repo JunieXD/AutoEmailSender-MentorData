@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bea35257c83b5af58c5d"
+      ],
+      "ended_at": null,
+      "id": "aff_1f96e436c3df8f43dfa3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/fangziquan",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_bea35257c83b5af58c5d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f96e436c3df8f43dfa3",
+      "claim_ids": [
+        "claim_bea35257c83b5af58c5d"
+      ],
+      "is_primary": true,
+      "normalized_value": "zqfang@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/fangziquan",
+      "status": "current",
+      "type": "email",
+      "value": "zqfang@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bea35257c83b5af58c5d"
+    ],
+    "email": [
+      "claim_bea35257c83b5af58c5d"
+    ],
+    "name": [
+      "claim_bea35257c83b5af58c5d"
+    ],
+    "profile_url": [
+      "claim_bea35257c83b5af58c5d"
+    ],
+    "research_directions": [
+      "claim_bea35257c83b5af58c5d"
+    ],
+    "status": [
+      "claim_bea35257c83b5af58c5d"
+    ]
+  },
+  "id": "mentor_1b352982a8db2fb4b0ce",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bea35257c83b5af58c5d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "房子荃"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f96e436c3df8f43dfa3",
+      "claim_ids": [
+        "claim_bea35257c83b5af58c5d"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/fangziquan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "时空数据库、时空大数据治理与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/fangziquan",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}
