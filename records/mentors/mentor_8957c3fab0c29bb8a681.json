@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b73c8ccc60dc63d8e42"
+      ],
+      "ended_at": null,
+      "id": "aff_7c4bb53862957e872cfd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_f07e4356fcf1e62abef6",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1197.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b73c8ccc60dc63d8e42"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7c4bb53862957e872cfd",
+      "claim_ids": [
+        "claim_0b73c8ccc60dc63d8e42"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuhongliang@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1197.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhuhongliang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b73c8ccc60dc63d8e42"
+    ],
+    "email": [
+      "claim_0b73c8ccc60dc63d8e42"
+    ],
+    "name": [
+      "claim_0b73c8ccc60dc63d8e42"
+    ],
+    "profile_url": [
+      "claim_0b73c8ccc60dc63d8e42"
+    ],
+    "research_directions": [
+      "claim_0b73c8ccc60dc63d8e42"
+    ],
+    "status": [
+      "claim_0b73c8ccc60dc63d8e42"
+    ],
+    "title": [
+      "claim_0b73c8ccc60dc63d8e42"
+    ]
+  },
+  "id": "mentor_8957c3fab0c29bb8a681",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b73c8ccc60dc63d8e42"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱洪亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7c4bb53862957e872cfd",
+      "claim_ids": [
+        "claim_0b73c8ccc60dc63d8e42"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1197.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能与网络安全、流量分析等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1197.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

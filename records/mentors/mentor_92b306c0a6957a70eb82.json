@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c6a2148f0852e46d527"
+      ],
+      "ended_at": null,
+      "id": "aff_5b1ef23123f0e073dd1f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_7e57adae6a952d5660e3",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1135.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c6a2148f0852e46d527"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5b1ef23123f0e073dd1f",
+      "claim_ids": [
+        "claim_1c6a2148f0852e46d527"
+      ],
+      "is_primary": true,
+      "normalized_value": "wchyang@21cn.com",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1135.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wchyang@21cn.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c6a2148f0852e46d527"
+    ],
+    "email": [
+      "claim_1c6a2148f0852e46d527"
+    ],
+    "name": [
+      "claim_1c6a2148f0852e46d527"
+    ],
+    "profile_url": [
+      "claim_1c6a2148f0852e46d527"
+    ],
+    "research_directions": [
+      "claim_1c6a2148f0852e46d527"
+    ],
+    "status": [
+      "claim_1c6a2148f0852e46d527"
+    ],
+    "title": [
+      "claim_1c6a2148f0852e46d527"
+    ]
+  },
+  "id": "mentor_92b306c0a6957a70eb82",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c6a2148f0852e46d527"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨文川"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5b1ef23123f0e073dd1f",
+      "claim_ids": [
+        "claim_1c6a2148f0852e46d527"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1135.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据处理与网络信息挖掘、高级计算机网络、数据仓库与数据挖掘、大数据分析挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1135.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

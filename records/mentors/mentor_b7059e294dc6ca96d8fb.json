@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0edb6084d2f24464e2e8"
+      ],
+      "ended_at": null,
+      "id": "aff_5b3864572041578e315c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_9ecb6f5287357895d1e0",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/5153.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_0edb6084d2f24464e2e8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5b3864572041578e315c",
+      "claim_ids": [
+        "claim_0edb6084d2f24464e2e8"
+      ],
+      "is_primary": true,
+      "normalized_value": "guosanchuan@foxmail.com",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/5153.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guosanchuan@foxmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0edb6084d2f24464e2e8"
+    ],
+    "email": [
+      "claim_0edb6084d2f24464e2e8"
+    ],
+    "name": [
+      "claim_0edb6084d2f24464e2e8"
+    ],
+    "profile_url": [
+      "claim_0edb6084d2f24464e2e8"
+    ],
+    "research_directions": [
+      "claim_0edb6084d2f24464e2e8"
+    ],
+    "status": [
+      "claim_0edb6084d2f24464e2e8"
+    ],
+    "title": [
+      "claim_0edb6084d2f24464e2e8"
+    ]
+  },
+  "id": "mentor_b7059e294dc6ca96d8fb",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0edb6084d2f24464e2e8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭三川"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5b3864572041578e315c",
+      "claim_ids": [
+        "claim_0edb6084d2f24464e2e8"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/5153.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络内容安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/5153.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

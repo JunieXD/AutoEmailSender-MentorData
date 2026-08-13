@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_65bb6b0c457b18c09c99"
+      ],
+      "ended_at": null,
+      "id": "aff_6c13119dfeba5616ad1a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_7e57adae6a952d5660e3",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1162.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_65bb6b0c457b18c09c99"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6c13119dfeba5616ad1a",
+      "claim_ids": [
+        "claim_65bb6b0c457b18c09c99"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoda99@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1162.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoda99@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_65bb6b0c457b18c09c99"
+    ],
+    "email": [
+      "claim_65bb6b0c457b18c09c99"
+    ],
+    "name": [
+      "claim_65bb6b0c457b18c09c99"
+    ],
+    "profile_url": [
+      "claim_65bb6b0c457b18c09c99"
+    ],
+    "recent_papers": [
+      "claim_65bb6b0c457b18c09c99"
+    ],
+    "research_directions": [
+      "claim_65bb6b0c457b18c09c99"
+    ],
+    "status": [
+      "claim_65bb6b0c457b18c09c99"
+    ],
+    "title": [
+      "claim_65bb6b0c457b18c09c99"
+    ]
+  },
+  "id": "mentor_99b71e78dabb60a33b52",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_65bb6b0c457b18c09c99"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖达"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6c13119dfeba5616ad1a",
+      "claim_ids": [
+        "claim_65bb6b0c457b18c09c99"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1162.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ruikang Ni,Da Xiao*, Qingye Meng, Xiangyu Li, Shihui Zheng, Hongliang Liang.Benchmarking and Understanding Compositional Relational Reasoning of LLMs. AAAI 2025 (CCF-A,AI顶会)",
+    "Da Xiao*, Qingye Meng, Shengping Li, Xingyuan Yuan.Improving Transformers with Dynamically Composable Multi-Head Attention.International Conference on Machine Learning(ICML) 2024 oral (CCF-A,AI顶会)",
+    "Hongliang Liang, Xiangyu Li,Da Xiao*, Jie Liu, Yanjie Zhou, Aibo Wang, Jin Li. Generative Pre-Trained Transformer-Based Reinforcement Learning for Testing Web Application Firewalls. IEEE Transactions on Dependable and Secure Computing, 2024 21(1):309-324. (CCF-A,安全顶刊)",
+    "Da Xiao, Dengji Hang, Lu Ai, Shengping Li, Hongliang Liang*. Path Context Augmented Statement and Network for Learning Programs. Empirical Software Engineering, 2022, 27(37). (CCF-B)",
+    "Da Xiao*, Jo-yu Liao and Xingyuan Yuan. Improving the Universality and Learnability of Neural Programmer-Interpreterswith Combinator Abstraction. The 6th International Conference on Learning Representations (ICLR 2018). (TH-CPL A类,AI顶会)",
+    "肖达*, 杨绿茵, 孙斌, 郑世慧. 面向真实云存储环境的数据持有性证明系统. 软件学报, 2016年第27卷第9期, 2400-2413.",
+    "Ian J Goodfellow, Mehdi Mirza,Da Xiao, Aaron Courville, Yoshua Bengio. An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks. The 2nd International Conference on Learning Representations (ICLR 2014). (TH-CPL A类,AI顶会)",
+    "Da Xiao*, Yan Yang, Wenbin Yao, Chunhua Wu, Jianyi Liu, Yixian Yang. Multiple-File Remote Data Checking for cloud storage. Computers & Security, 2012, 31(2): 192–205. (CCF-B)"
+  ],
+  "research_directions": [
+    "深度学习、大模型及其在自然语言处理、程序分析、软件安全等领域的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1162.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_21fe7ca24c3c87ff56bd"
+      ],
+      "ended_at": null,
+      "id": "aff_7350894dc36327f4dbde",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_9ecb6f5287357895d1e0",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3454.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_21fe7ca24c3c87ff56bd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7350894dc36327f4dbde",
+      "claim_ids": [
+        "claim_21fe7ca24c3c87ff56bd"
+      ],
+      "is_primary": true,
+      "normalized_value": "selina_zhangx@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3454.htm",
+      "status": "current",
+      "type": "email",
+      "value": "selina_zhangx@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_21fe7ca24c3c87ff56bd"
+    ],
+    "email": [
+      "claim_21fe7ca24c3c87ff56bd"
+    ],
+    "name": [
+      "claim_21fe7ca24c3c87ff56bd"
+    ],
+    "profile_url": [
+      "claim_21fe7ca24c3c87ff56bd"
+    ],
+    "research_directions": [
+      "claim_21fe7ca24c3c87ff56bd"
+    ],
+    "status": [
+      "claim_21fe7ca24c3c87ff56bd"
+    ],
+    "title": [
+      "claim_21fe7ca24c3c87ff56bd"
+    ]
+  },
+  "id": "mentor_9ec88a3d8b422cefacab",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_21fe7ca24c3c87ff56bd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张勖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7350894dc36327f4dbde",
+      "claim_ids": [
+        "claim_21fe7ca24c3c87ff56bd"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/3454.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动自组织网络安全、数据融合(data fusion)与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/3454.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

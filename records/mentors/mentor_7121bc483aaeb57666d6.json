@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e0813a33e1d4dfee3696"
+      ],
+      "ended_at": null,
+      "id": "aff_52cba1fdf16618c9637b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_7e57adae6a952d5660e3",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1140.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e0813a33e1d4dfee3696"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_52cba1fdf16618c9637b",
+      "claim_ids": [
+        "claim_e0813a33e1d4dfee3696"
+      ],
+      "is_primary": true,
+      "normalized_value": "cuibj@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1140.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cuibj@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e0813a33e1d4dfee3696"
+    ],
+    "email": [
+      "claim_e0813a33e1d4dfee3696"
+    ],
+    "name": [
+      "claim_e0813a33e1d4dfee3696"
+    ],
+    "profile_url": [
+      "claim_e0813a33e1d4dfee3696"
+    ],
+    "research_directions": [
+      "claim_e0813a33e1d4dfee3696"
+    ],
+    "status": [
+      "claim_e0813a33e1d4dfee3696"
+    ],
+    "title": [
+      "claim_e0813a33e1d4dfee3696"
+    ]
+  },
+  "id": "mentor_7121bc483aaeb57666d6",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e0813a33e1d4dfee3696"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "崔宝江"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_52cba1fdf16618c9637b",
+      "claim_ids": [
+        "claim_e0813a33e1d4dfee3696"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1140.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "漏洞挖掘技术、大数据安全分析技术、网络与主机安全行为分析、Web/软件和操作系统安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1140.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

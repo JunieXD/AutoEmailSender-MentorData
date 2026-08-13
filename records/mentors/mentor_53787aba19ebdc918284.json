@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f314ce0cf9fdaabbb251"
+      ],
+      "ended_at": null,
+      "id": "aff_fbea901facf6b9934781",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_f07e4356fcf1e62abef6",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3808.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f314ce0cf9fdaabbb251"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fbea901facf6b9934781",
+      "claim_ids": [
+        "claim_f314ce0cf9fdaabbb251"
+      ],
+      "is_primary": true,
+      "normalized_value": "haojie@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/3808.htm",
+      "status": "current",
+      "type": "email",
+      "value": "haojie@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f314ce0cf9fdaabbb251"
+    ],
+    "email": [
+      "claim_f314ce0cf9fdaabbb251"
+    ],
+    "name": [
+      "claim_f314ce0cf9fdaabbb251"
+    ],
+    "profile_url": [
+      "claim_f314ce0cf9fdaabbb251"
+    ],
+    "recent_papers": [
+      "claim_f314ce0cf9fdaabbb251"
+    ],
+    "research_directions": [
+      "claim_f314ce0cf9fdaabbb251"
+    ],
+    "status": [
+      "claim_f314ce0cf9fdaabbb251"
+    ],
+    "title": [
+      "claim_f314ce0cf9fdaabbb251"
+    ]
+  },
+  "id": "mentor_53787aba19ebdc918284",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f314ce0cf9fdaabbb251"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郝杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fbea901facf6b9934781",
+      "claim_ids": [
+        "claim_f314ce0cf9fdaabbb251"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/3808.htm"
+    }
+  ],
+  "recent_papers": [
+    "Whispering Under the Eaves Protecting User Privacy Against Commercial and LLM-powered Automatic Speech Recognition Systems",
+    "SafeSpeech: Robust and Universal Voice Protection Against Malicious Speech Synthesis",
+    "ALMGuard: Safety Shortcuts and Where to Find Them as Guardrails for Audio–Language Models",
+    "E2E-VGuard: Adversarial Prevention for Production LLM-based End-To-End Speech Synthesis",
+    "Bounds and constructions of locally repairable codes: parity-check matrix approach",
+    "Optimal ternary locally repairable codes",
+    "Constructions and Weight Distributions of Optimal Locally Repairable Code",
+    "Weight distributions of q-ary optimal locally repairable codes with locality 2, distance 5 and even dimension"
+  ],
+  "research_directions": [
+    "信息论与编码、密码学与机器学习等方向的教学与科研"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/3808.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fc258f8512dfe8b6c0b0"
+      ],
+      "ended_at": null,
+      "id": "aff_ae0fc77e98b6945205d7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_7e57adae6a952d5660e3",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/6099.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_fc258f8512dfe8b6c0b0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ae0fc77e98b6945205d7",
+      "claim_ids": [
+        "claim_fc258f8512dfe8b6c0b0"
+      ],
+      "is_primary": true,
+      "normalized_value": "zifengkang@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/6099.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zifengkang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ],
+    "email": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ],
+    "name": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ],
+    "profile_url": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ],
+    "recent_papers": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ],
+    "research_directions": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ],
+    "status": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ],
+    "title": [
+      "claim_fc258f8512dfe8b6c0b0"
+    ]
+  },
+  "id": "mentor_2ce5dcf214e016803390",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fc258f8512dfe8b6c0b0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "康梓峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ae0fc77e98b6945205d7",
+      "claim_ids": [
+        "claim_fc258f8512dfe8b6c0b0"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/6099.htm"
+    }
+  ],
+  "recent_papers": [
+    "Probe the Proto: Measuring Client-Side Prototype Pollution Vulnerabilities of One Million Real-world Websites",
+    "Follow My Flow: Unveiling Client-Side Prototype Pollution Gadgets from one Million Real-World Websites",
+    "Practical Covert Channel across Isolated Browser Instances via GPU Command Queue Contention",
+    "The DOMino Effect: Detecting and Exploiting DOM Clobbering Gadgets via Concolic Execution with Symbolic DOM",
+    "The First Large-Scale Systematic Study of Python Class Pollution Vulnerability"
+  ],
+  "research_directions": [
+    "漏洞检测与利用、Web安全、大模型系统安全、具身智能安全等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/6099.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

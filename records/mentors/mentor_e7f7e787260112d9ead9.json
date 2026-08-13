@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c991e646e4fd075f150f"
+      ],
+      "ended_at": null,
+      "id": "aff_128d52be7801cc81c3b1",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_0a0bff97c31c51fa2946",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1188.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c991e646e4fd075f150f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_128d52be7801cc81c3b1",
+      "claim_ids": [
+        "claim_c991e646e4fd075f150f"
+      ],
+      "is_primary": true,
+      "normalized_value": "penghaipeng@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/1188.htm",
+      "status": "current",
+      "type": "email",
+      "value": "penghaipeng@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c991e646e4fd075f150f"
+    ],
+    "email": [
+      "claim_c991e646e4fd075f150f"
+    ],
+    "name": [
+      "claim_c991e646e4fd075f150f"
+    ],
+    "profile_url": [
+      "claim_c991e646e4fd075f150f"
+    ],
+    "recent_papers": [
+      "claim_c991e646e4fd075f150f"
+    ],
+    "research_directions": [
+      "claim_c991e646e4fd075f150f"
+    ],
+    "status": [
+      "claim_c991e646e4fd075f150f"
+    ],
+    "title": [
+      "claim_c991e646e4fd075f150f"
+    ]
+  },
+  "id": "mentor_e7f7e787260112d9ead9",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c991e646e4fd075f150f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭海朋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_128d52be7801cc81c3b1",
+      "claim_ids": [
+        "claim_c991e646e4fd075f150f"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/1188.htm"
+    }
+  ],
+  "recent_papers": [
+    "Privacy-Preserving Subgraph Matching Scheme with Authentication in Social Networks",
+    "Privacy-Preserving Multidimensional Data Aggregation Scheme Without Trusted Authority in Smart Grid",
+    "Secure and Traceable Image Transmission Scheme Based on Semitensor Product Compressed Sensing in Telemedicine System",
+    "P-tensor product in compressed sensing",
+    "Flexible and secure data transmission system based on semitensor compressive sensing in wireless body area networks",
+    "A secure and efficient transmission method in connected vehicular cloud computing",
+    "A novel digital watermarking based on general non-negative matrix factorization",
+    "Secure and energy-efficient data transmission system based on chaotic compressive sensing in body-to-body networks"
+  ],
+  "research_directions": [
+    "复杂网络安全与同步、混沌密码、群体智能、压缩感知、智能安全、5G安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/1188.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:29Z"
+}

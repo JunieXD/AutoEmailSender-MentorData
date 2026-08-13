@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_33d92a567e652f1e4e63"
+      ],
+      "ended_at": null,
+      "id": "aff_faac42951440e1b07088",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:29Z",
+      "organization_id": "org_auto_9ecb6f5287357895d1e0",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/6113.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_33d92a567e652f1e4e63"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_faac42951440e1b07088",
+      "claim_ids": [
+        "claim_33d92a567e652f1e4e63"
+      ],
+      "is_primary": true,
+      "normalized_value": "litianzhang@bupt.edu.cn",
+      "observed_at": "2026-08-11T13:32:29Z",
+      "source_url": "https://scss.bupt.edu.cn/info/1063/6113.htm",
+      "status": "current",
+      "type": "email",
+      "value": "litianzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:29Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_33d92a567e652f1e4e63"
+    ],
+    "email": [
+      "claim_33d92a567e652f1e4e63"
+    ],
+    "name": [
+      "claim_33d92a567e652f1e4e63"
+    ],
+    "profile_url": [
+      "claim_33d92a567e652f1e4e63"
+    ],
+    "recent_papers": [
+      "claim_33d92a567e652f1e4e63"
+    ],
+    "research_directions": [
+      "claim_33d92a567e652f1e4e63"
+    ],
+    "status": [
+      "claim_33d92a567e652f1e4e63"
+    ],
+    "title": [
+      "claim_33d92a567e652f1e4e63"
+    ]
+  },
+  "id": "mentor_e424eb217023dbe41503",
+  "last_verified_at": "2026-08-11T13:32:29Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_33d92a567e652f1e4e63"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张力天"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_faac42951440e1b07088",
+      "claim_ids": [
+        "claim_33d92a567e652f1e4e63"
+      ],
+      "observed_at": "2026-08-11T13:32:29Z",
+      "status": "current",
+      "url": "https://scss.bupt.edu.cn/info/1063/6113.htm"
+    }
+  ],
+  "recent_papers": [
+    "Early Detection of Multimodal Fake News via Reinforced Propagation Path Generation. IEEE Transactions on Knowledge and Data Engineering (TKDE), 2025, 37(2): 613-625.",
+    "Reinforced Adaptive Knowledge Learning for Multimodal Fake News Detection. In AAAI, 2024.",
+    "Mitigating Social Hazards: Early Detection of Fake News via Diffusion-Guided Propagation Path Generation. In ACM MM, 2024.",
+    "Hierarchical Cross-Modality SemanticCorrelation Learning Model for Multimodal Summarization. In AAAI, 2022.",
+    "Knowledge-Aware Multimodal Pre-Training for Fake News Detection. Information Fusion, 2024, 114: 102715.",
+    "Multi-task Hierarchical Heterogeneous Fusion Framework for Multimodal Summarization. Information Processing & Management, 2024,61(4):103693.",
+    "CISum: Learning Cross-modality Interaction to Enhance Multimodal Semantic Coverage for Multimodal Summarization. In SIAM SDM, 2023.",
+    "Feint and Attack: Jailbreaking and Protecting LLMs via Attention Distribution Modeling. In IJCAI, 2025."
+  ],
+  "research_directions": [
+    "大模型安全、大模型多智能体、多模态机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:29Z",
+  "status_reason": null,
+  "status_source_url": "https://scss.bupt.edu.cn/info/1063/6113.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-11T13:32:29Z"
+}
