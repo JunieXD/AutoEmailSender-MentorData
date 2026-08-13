@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_68810578963eb3bbac06"
+      ],
+      "ended_at": null,
+      "id": "aff_59352b522b78e917f814",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//lss/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_68810578963eb3bbac06"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_59352b522b78e917f814",
+      "claim_ids": [
+        "claim_68810578963eb3bbac06"
+      ],
+      "is_primary": true,
+      "normalized_value": "lss@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//lss/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "lss@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_68810578963eb3bbac06"
+    ],
+    "email": [
+      "claim_68810578963eb3bbac06"
+    ],
+    "name": [
+      "claim_68810578963eb3bbac06"
+    ],
+    "profile_url": [
+      "claim_68810578963eb3bbac06"
+    ],
+    "recent_papers": [
+      "claim_68810578963eb3bbac06"
+    ],
+    "research_directions": [
+      "claim_68810578963eb3bbac06"
+    ],
+    "status": [
+      "claim_68810578963eb3bbac06"
+    ]
+  },
+  "id": "mentor_8a4b4a218c1d3f466e8c",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_68810578963eb3bbac06"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李杉杉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_59352b522b78e917f814",
+      "claim_ids": [
+        "claim_68810578963eb3bbac06"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//lss/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Decision Support for Selecting Blockchain-Based Application Design Patterns with Layered Taxonomy and Quality Attributes",
+    "Detecting Build Dependency Errors in Incremental Builds",
+    "Towards Efficient Build Ordering for Incremental Builds with Multiple Configurations",
+    "Refactoring Microservices to Microservices in Support of Evolutionary Design",
+    "Domain-Driven Design for Microservices: An Evidence-based Investigation",
+    "DOMICO: Checking Conformance Between Domain Models and Implementations",
+    "A blockchain‐based and microservices‐architected software composition analysis system",
+    "Revisiting the practices and pains of microservice architecture in reality: An industrial inquiry"
+  ],
+  "research_directions": [
+    "智能化软件架构、微服务架构、软件质量保证、区块链与智能合约、经验软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//lss/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

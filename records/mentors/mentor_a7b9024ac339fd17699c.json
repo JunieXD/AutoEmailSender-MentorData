@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_06b24db585755f8860d2"
+      ],
+      "ended_at": null,
+      "id": "aff_9bcdb7ba362fe39acb66",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//hetieke/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_06b24db585755f8860d2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9bcdb7ba362fe39acb66",
+      "claim_ids": [
+        "claim_06b24db585755f8860d2"
+      ],
+      "is_primary": true,
+      "normalized_value": "hetieke@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//hetieke/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "hetieke@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_06b24db585755f8860d2"
+    ],
+    "email": [
+      "claim_06b24db585755f8860d2"
+    ],
+    "name": [
+      "claim_06b24db585755f8860d2"
+    ],
+    "profile_url": [
+      "claim_06b24db585755f8860d2"
+    ],
+    "recent_papers": [
+      "claim_06b24db585755f8860d2"
+    ],
+    "research_directions": [
+      "claim_06b24db585755f8860d2"
+    ],
+    "status": [
+      "claim_06b24db585755f8860d2"
+    ]
+  },
+  "id": "mentor_a7b9024ac339fd17699c",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_06b24db585755f8860d2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "何铁科"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9bcdb7ba362fe39acb66",
+      "claim_ids": [
+        "claim_06b24db585755f8860d2"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//hetieke/index.html"
+    }
+  ],
+  "recent_papers": [
+    "HELO-APR: Enhancing Low-Resource Program Repair through Cross-Lingual Knowledge Transfer. ISSTA'26",
+    "GS-Quant: Granular Semantic and Generative Structural Quantization for Knowledge Graph Completion. ACL'26",
+    "A Survey of Reinforcement Learning for Large Language Models under Data Scarcity: Challenges and Solutions. ACL'26",
+    "CoDA: Restoring Contextual Dominance via Copy-Encouraged Attention Intervention for Mitigating RAG Hallucinations. ACL'26",
+    "Towards Anomaly-Aware Pre-Training and Fine-Tuning for Graph Anomaly Detection. ICLR'26",
+    "Tabular Foundation Models are Strong Graph Anomaly Detectors. WWW'26",
+    "Enhancing Multi-Modal Entity Alignment via Multi-Grained Decision Fusion. WWW'26",
+    "Mitigating Homophily Disparity in Graph Anomaly Detection: A Scalable and Adaptive Approach. WWW'26"
+  ],
+  "research_directions": [
+    "大模型、Agentic AI、图机器学习、大数据与工业智能应用等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//hetieke/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

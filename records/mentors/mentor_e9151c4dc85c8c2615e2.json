@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ff6b8b33e35a08d23f4f"
+      ],
+      "ended_at": null,
+      "id": "aff_829b33e51fb5ae1a7439",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//fengliu/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ff6b8b33e35a08d23f4f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_829b33e51fb5ae1a7439",
+      "claim_ids": [
+        "claim_ff6b8b33e35a08d23f4f"
+      ],
+      "is_primary": true,
+      "normalized_value": "fengliu@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//fengliu/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "fengliu@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ff6b8b33e35a08d23f4f"
+    ],
+    "email": [
+      "claim_ff6b8b33e35a08d23f4f"
+    ],
+    "name": [
+      "claim_ff6b8b33e35a08d23f4f"
+    ],
+    "profile_url": [
+      "claim_ff6b8b33e35a08d23f4f"
+    ],
+    "recent_papers": [
+      "claim_ff6b8b33e35a08d23f4f"
+    ],
+    "research_directions": [
+      "claim_ff6b8b33e35a08d23f4f"
+    ],
+    "status": [
+      "claim_ff6b8b33e35a08d23f4f"
+    ]
+  },
+  "id": "mentor_e9151c4dc85c8c2615e2",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ff6b8b33e35a08d23f4f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_829b33e51fb5ae1a7439",
+      "claim_ids": [
+        "claim_ff6b8b33e35a08d23f4f"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//fengliu/index.html"
+    }
+  ],
+  "recent_papers": [
+    "刘峰,王崇骏,骆斌,\"一种基于最优策略概率分布的POMDP值迭代算法\",电子学报,2016.5",
+    "刘峰. 基于杂合标准的POMDP值迭代求解算法[J]. 模式识别与人工智能, 2016(11).",
+    "Liu Feng ,Cheng Lei,Hanyi Liu,Chongjun Wang. A Probabilistic Forward Search Value Iteration Algorithm for POMDP[C]// IEEE International Conference on Tools with Artificial Intelligence. IEEE, 2019.",
+    "Liu F , Liu Z . A Neighborhood-Based Value Iteration Algorithm for POMDP Problems[C]// IEEE International Conference on Tools with Artificial Intelligence. IEEE, 2018.",
+    "Liu F , Wang Z , Tian Q . An Observation Dimension Weight-Based U-Tree Algorithm[C]// IEEE International Conference on Tools with Artificial Intelligence. IEEE Computer Society, 2017.",
+    "Liu F , Hua X , Jin X . A Hybrid Heuristic Value Iteration Algorithm for POMDP[C]// International Conference on Tools with Artificial Intelligence. IEEE, 2016.",
+    "Liu F , Song Z . A Probabilistic Greedy Search Value Iteration Algorithm for POMDP[C]// 2016 IEEE 28th International Conference on Tools with Artificial Intelligence (ICTAI). IEEE, 2016.",
+    "Liu F , Jin X , She Y . No-Fringe U-Tree: An Optimized Algorithm for Reinforcement Learning[C]// The 28th International Conference on Tools with Artificial Intelligence. IEEE, 2016."
+  ],
+  "research_directions": [
+    "不确定环境下决策方法研究与应用:基于马尔可夫模型的序列规划和强化学习方法",
+    "大数据分析方法研究与应用:基于粗糙集的属性约简、异常数据识别、离群点检测",
+    "智能Web技术研究与应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//fengliu/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

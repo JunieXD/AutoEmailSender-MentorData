@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a7dec0062cdf37061876"
+      ],
+      "ended_at": null,
+      "id": "aff_4a2675bd7d20f92d023c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//wzbwangzhibin/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a7dec0062cdf37061876"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4a2675bd7d20f92d023c",
+      "claim_ids": [
+        "claim_a7dec0062cdf37061876"
+      ],
+      "is_primary": true,
+      "normalized_value": "wzbwangzhibin@gmail.com",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//wzbwangzhibin/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "wzbwangzhibin@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a7dec0062cdf37061876"
+    ],
+    "email": [
+      "claim_a7dec0062cdf37061876"
+    ],
+    "name": [
+      "claim_a7dec0062cdf37061876"
+    ],
+    "profile_url": [
+      "claim_a7dec0062cdf37061876"
+    ],
+    "research_directions": [
+      "claim_a7dec0062cdf37061876"
+    ],
+    "status": [
+      "claim_a7dec0062cdf37061876"
+    ],
+    "title": [
+      "claim_a7dec0062cdf37061876"
+    ]
+  },
+  "id": "mentor_dc192d9e6e063ced160f",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a7dec0062cdf37061876"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王智彬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4a2675bd7d20f92d023c",
+      "claim_ids": [
+        "claim_a7dec0062cdf37061876"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//wzbwangzhibin/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习系统,尤其关注大语言模型的高效训练、服务与内核优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//wzbwangzhibin/index.html",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T13:32:48Z"
+}

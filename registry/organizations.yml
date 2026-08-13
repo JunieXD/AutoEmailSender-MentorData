@@ -2569,3 +2569,27 @@ organizations:
   successor_id: null
   created_at: '2026-08-13T02:38:48Z'
   updated_at: '2026-08-13T02:38:48Z'
+- id: org_auto_bcd757192fb1551f1e2e
+  type: university
+  canonical_name: 南京大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://nju.edu.cn/
+  approved_domains:
+  - nju.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T02:42:14Z'
+  updated_at: '2026-08-13T02:42:14Z'
+- id: org_auto_a5e4797a0f501cf390eb
+  type: school
+  canonical_name: 软件学院
+  parent_id: org_auto_bcd757192fb1551f1e2e
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T02:42:14Z'
+  updated_at: '2026-08-13T02:42:14Z'

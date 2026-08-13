@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7193baf69c1576c9502f"
+      ],
+      "ended_at": null,
+      "id": "aff_df5369df75097083fbf0",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//pmx/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7193baf69c1576c9502f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_df5369df75097083fbf0",
+      "claim_ids": [
+        "claim_7193baf69c1576c9502f"
+      ],
+      "is_primary": true,
+      "normalized_value": "mxp@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//pmx/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "mxp@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7193baf69c1576c9502f"
+    ],
+    "email": [
+      "claim_7193baf69c1576c9502f"
+    ],
+    "name": [
+      "claim_7193baf69c1576c9502f"
+    ],
+    "profile_url": [
+      "claim_7193baf69c1576c9502f"
+    ],
+    "research_directions": [
+      "claim_7193baf69c1576c9502f"
+    ],
+    "status": [
+      "claim_7193baf69c1576c9502f"
+    ],
+    "title": [
+      "claim_7193baf69c1576c9502f"
+    ]
+  },
+  "id": "mentor_4a352c942ab1aa15d02b",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7193baf69c1576c9502f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "潘敏学"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_df5369df75097083fbf0",
+      "claim_ids": [
+        "claim_7193baf69c1576c9502f"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//pmx/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "复杂软件系统的可信保障,集中在软件建模与验证、程序分析与测试、智能软件工程等领域"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//pmx/index.html",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:48Z"
+}

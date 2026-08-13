@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_882551baec1f23bd16f6"
+      ],
+      "ended_at": null,
+      "id": "aff_3edf4fdf77c3767539b9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//szll/szdw/zpzljs/lyf/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_882551baec1f23bd16f6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3edf4fdf77c3767539b9",
+      "claim_ids": [
+        "claim_882551baec1f23bd16f6"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyf@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//szll/szdw/zpzljs/lyf/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "lyf@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_882551baec1f23bd16f6"
+    ],
+    "email": [
+      "claim_882551baec1f23bd16f6"
+    ],
+    "name": [
+      "claim_882551baec1f23bd16f6"
+    ],
+    "profile_url": [
+      "claim_882551baec1f23bd16f6"
+    ],
+    "recent_papers": [
+      "claim_882551baec1f23bd16f6"
+    ],
+    "research_directions": [
+      "claim_882551baec1f23bd16f6"
+    ],
+    "status": [
+      "claim_882551baec1f23bd16f6"
+    ]
+  },
+  "id": "mentor_8c8d9830826a7571bdbd",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_882551baec1f23bd16f6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陆一飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3edf4fdf77c3767539b9",
+      "claim_ids": [
+        "claim_882551baec1f23bd16f6"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//szll/szdw/zpzljs/lyf/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Improving Test Efficacy for Large-Scale Android Applications by Exploiting GUI and Functional Equivalence",
+    "Towards a Theoretically-backed and Practical Framework for Selective Object-Sensitive Pointer Analysis",
+    "NATE: A Network-Aware Testing Enhancer for Network-Related Fault Detection in Android Apps",
+    "PoliCond: Condition-Aware Ontology-Driven LLMs for Privacy Policy Contradiction Analysis",
+    "Navigating Mobile Testing Evaluation: A Comprehensive Statistical Analysis of Android GUI Testing Metrics",
+    "Enhancing Web Test Script Repair Using Integrated UI Structural and Visual Information",
+    "Understanding and Finding Java Decompiler Bugs",
+    "Deeply Reinforcing Android GUI Testing with Deep Reinforcement Learning"
+  ],
+  "research_directions": [
+    "软件测试与分析方法、安卓应用、程序逆编译、混淆、程序逆向研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//szll/szdw/zpzljs/lyf/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

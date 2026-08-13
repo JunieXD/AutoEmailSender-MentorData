@@ -1,0 +1,92 @@
+{
+  "accepted": {
+    "email": "liyue@nju.edu.cn",
+    "mentor_status": "active",
+    "name": "李月",
+    "organization_id": "org_auto_a5e4797a0f501cf390eb",
+    "profile_url": "https://software.nju.edu.cn//liyue/index.html",
+    "recent_papers": [
+      "Automatic Dockerfile Generation with Large Language Models",
+      "A Knowledge Enhanced Large Language Model for Bug Localization",
+      "PairSmell: A Novel Perspective Inspecting Software Modular Structure",
+      "Automatic Fixing of Missing Dependency Errors",
+      "An Explainable Automated Model for Measuring Software Engineer Contribution",
+      "Fine-SE: Integrating Semantic Features and Expert Features for Software Effort Estimation",
+      "GPP: A Graph-Powered Prioritizer for Code Review Requests",
+      "Verification and Validation of Software Process Simulation Models: A Systematic Mapping Study"
+    ],
+    "research_directions": [
+      "智能软件工程,大语言模型,缺陷分析,代码补全"
+    ],
+    "source_url": "https://software.nju.edu.cn//szll/szdw/index.html",
+    "submitted_department": "软件学院",
+    "submitted_school": "软件学院",
+    "submitted_university": "南京大学",
+    "title": null
+  },
+  "contributor": {
+    "account_age_days_at_submission": 1520,
+    "account_created_at": "2022-06-13T08:30:46Z",
+    "github_login_at_submission": "JunieXD",
+    "github_user_id": 107397009,
+    "github_user_type": "User",
+    "issue_number": 52,
+    "issue_url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/52",
+    "submitted_at": "2026-08-11T13:32:48Z"
+  },
+  "evidence": [
+    {
+      "fields": [
+        "name",
+        "email",
+        "organization_id",
+        "research_directions",
+        "recent_papers",
+        "profile_url"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//liyue/index.html"
+    }
+  ],
+  "id": "claim_4c5c20f82cd2ec18853b",
+  "mentor_id": "mentor_58ba5df0c7f7b4f0d053",
+  "moderation": {
+    "decision_at": "2026-08-13T02:43:16Z",
+    "mode": "manual",
+    "moderator_github_user_id": 107397009,
+    "normalized_fields": [
+      "organization_id"
+    ],
+    "policy_version": 1,
+    "reason": "GitHub PR merge approval"
+  },
+  "revocation_reason": null,
+  "revoked_at": null,
+  "schema_version": 1,
+  "status": "accepted",
+  "submitted": {
+    "email": "liyue@nju.edu.cn",
+    "mentor_status": "active",
+    "name": "李月",
+    "organization_id": null,
+    "profile_url": "https://software.nju.edu.cn//liyue/index.html",
+    "recent_papers": [
+      "Automatic Dockerfile Generation with Large Language Models",
+      "A Knowledge Enhanced Large Language Model for Bug Localization",
+      "PairSmell: A Novel Perspective Inspecting Software Modular Structure",
+      "Automatic Fixing of Missing Dependency Errors",
+      "An Explainable Automated Model for Measuring Software Engineer Contribution",
+      "Fine-SE: Integrating Semantic Features and Expert Features for Software Effort Estimation",
+      "GPP: A Graph-Powered Prioritizer for Code Review Requests",
+      "Verification and Validation of Software Process Simulation Models: A Systematic Mapping Study"
+    ],
+    "research_directions": [
+      "智能软件工程,大语言模型,缺陷分析,代码补全"
+    ],
+    "source_url": "https://software.nju.edu.cn//szll/szdw/index.html",
+    "submitted_department": "软件学院",
+    "submitted_school": "软件学院",
+    "submitted_university": "南京大学",
+    "title": null
+  }
+}

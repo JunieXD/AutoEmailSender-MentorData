@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_25bfa9b00ecd866055aa"
+      ],
+      "ended_at": null,
+      "id": "aff_bdf28665bcbacc5422b6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//liujia/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_25bfa9b00ecd866055aa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bdf28665bcbacc5422b6",
+      "claim_ids": [
+        "claim_25bfa9b00ecd866055aa"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujia@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//liujia/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "liujia@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_25bfa9b00ecd866055aa"
+    ],
+    "email": [
+      "claim_25bfa9b00ecd866055aa"
+    ],
+    "name": [
+      "claim_25bfa9b00ecd866055aa"
+    ],
+    "profile_url": [
+      "claim_25bfa9b00ecd866055aa"
+    ],
+    "research_directions": [
+      "claim_25bfa9b00ecd866055aa"
+    ],
+    "status": [
+      "claim_25bfa9b00ecd866055aa"
+    ]
+  },
+  "id": "mentor_8c05bf36e45e8b704994",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_25bfa9b00ecd866055aa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘嘉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bdf28665bcbacc5422b6",
+      "claim_ids": [
+        "claim_25bfa9b00ecd866055aa"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//liujia/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能测试与优化、复杂系统质量保障、深度学习基础框架质量保障、Rust软件质量保障、Rust编译器质量保障、数据分析应用、开发者社交网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//liujia/index.html",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:48Z"
+}

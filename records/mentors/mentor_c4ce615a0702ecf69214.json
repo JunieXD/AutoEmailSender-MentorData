@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_390569c189edd712f0bf"
+      ],
+      "ended_at": null,
+      "id": "aff_d6088a41c22d6c7222cb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:48Z",
+      "organization_id": "org_auto_a5e4797a0f501cf390eb",
+      "source_url": "https://software.nju.edu.cn//lcy/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_390569c189edd712f0bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d6088a41c22d6c7222cb",
+      "claim_ids": [
+        "claim_390569c189edd712f0bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "lcy@nju.edu.cn",
+      "observed_at": "2026-08-11T13:32:48Z",
+      "source_url": "https://software.nju.edu.cn//lcy/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "lcy@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:48Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_390569c189edd712f0bf"
+    ],
+    "email": [
+      "claim_390569c189edd712f0bf"
+    ],
+    "name": [
+      "claim_390569c189edd712f0bf"
+    ],
+    "profile_url": [
+      "claim_390569c189edd712f0bf"
+    ],
+    "recent_papers": [
+      "claim_390569c189edd712f0bf"
+    ],
+    "research_directions": [
+      "claim_390569c189edd712f0bf"
+    ],
+    "status": [
+      "claim_390569c189edd712f0bf"
+    ],
+    "title": [
+      "claim_390569c189edd712f0bf"
+    ]
+  },
+  "id": "mentor_c4ce615a0702ecf69214",
+  "last_verified_at": "2026-08-11T13:32:48Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_390569c189edd712f0bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李传艺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d6088a41c22d6c7222cb",
+      "claim_ids": [
+        "claim_390569c189edd712f0bf"
+      ],
+      "observed_at": "2026-08-11T13:32:48Z",
+      "status": "current",
+      "url": "https://software.nju.edu.cn//lcy/index.html"
+    }
+  ],
+  "recent_papers": [
+    "P-NPR: Practical Neural Program Repair via Learning to Ensemble. TSE 2026 (CCF-A)",
+    "Empirical Study of Code Large Language Models for Binary Security Patch Detection. TOSEM 2026 (CCF-A)",
+    "System L: Toward System 2-Style Legal Reasoning. AAAI 2026 (CCF-A)",
+    "Legal Judgment Prediction: A Reflection on the State of the Art. ACL 2026 (CCF-A)",
+    "UNICS: Multilingual Code Search via Unified Pseudocode and Contrastive Transfer Learning. FSE 2026 (CCF-A)",
+    "Privacy protection in RAG: A novel method and evaluation framework. IP&M 2026 (CCF-B)",
+    "CHASE: Contextual History for Adaptive and Simple Exploitation in LLM Jailbreaking. AAAI 2026 (CCF-A)"
+  ],
+  "research_directions": [
+    "智能化软件工程,重点关注软件智能演化,包括代码表征学习、缺陷定位与修复、代码辅助生成等",
+    "智慧司法,包括司法判决预测、类案检索、证据清单推荐等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:48Z",
+  "status_reason": null,
+  "status_source_url": "https://software.nju.edu.cn//lcy/index.html",
+  "title": "助理教授",
+  "updated_at": "2026-08-11T13:32:48Z"
+}
