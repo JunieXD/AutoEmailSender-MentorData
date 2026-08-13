@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_48b27c1c66725935a829"
+      ],
+      "ended_at": null,
+      "id": "aff_337b71b54daeecdd6955",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1103/1114.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_48b27c1c66725935a829"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_337b71b54daeecdd6955",
+      "claim_ids": [
+        "claim_48b27c1c66725935a829"
+      ],
+      "is_primary": true,
+      "normalized_value": "lsg@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1103/1114.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lsg@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_48b27c1c66725935a829"
+    ],
+    "email": [
+      "claim_48b27c1c66725935a829"
+    ],
+    "name": [
+      "claim_48b27c1c66725935a829"
+    ],
+    "profile_url": [
+      "claim_48b27c1c66725935a829"
+    ],
+    "research_directions": [
+      "claim_48b27c1c66725935a829"
+    ],
+    "status": [
+      "claim_48b27c1c66725935a829"
+    ],
+    "title": [
+      "claim_48b27c1c66725935a829"
+    ]
+  },
+  "id": "mentor_1ade0b008aacacdd7aef",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_48b27c1c66725935a829"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘世光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_337b71b54daeecdd6955",
+      "claim_ids": [
+        "claim_48b27c1c66725935a829"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1103/1114.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机图形学、计算动画、图像、视频处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1103/1114.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

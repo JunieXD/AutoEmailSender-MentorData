@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1f480fafb1b6e9ce7ba6"
+      ],
+      "ended_at": null,
+      "id": "aff_03bf5e60b6bf07ed5dc9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1116/5208.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1f480fafb1b6e9ce7ba6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_03bf5e60b6bf07ed5dc9",
+      "claim_ids": [
+        "claim_1f480fafb1b6e9ce7ba6"
+      ],
+      "is_primary": true,
+      "normalized_value": "yueyouyueyou@gmail.com",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1116/5208.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yueyouyueyou@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1f480fafb1b6e9ce7ba6"
+    ],
+    "email": [
+      "claim_1f480fafb1b6e9ce7ba6"
+    ],
+    "name": [
+      "claim_1f480fafb1b6e9ce7ba6"
+    ],
+    "profile_url": [
+      "claim_1f480fafb1b6e9ce7ba6"
+    ],
+    "research_directions": [
+      "claim_1f480fafb1b6e9ce7ba6"
+    ],
+    "status": [
+      "claim_1f480fafb1b6e9ce7ba6"
+    ],
+    "title": [
+      "claim_1f480fafb1b6e9ce7ba6"
+    ]
+  },
+  "id": "mentor_3b36293c61f04bc24013",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1f480fafb1b6e9ce7ba6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "喻梅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_03bf5e60b6bf07ed5dc9",
+      "claim_ids": [
+        "claim_1f480fafb1b6e9ce7ba6"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1116/5208.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘、知识图谱、智慧教育、图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1116/5208.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c084d1fc36f2a06ea059"
+      ],
+      "ended_at": null,
+      "id": "aff_04111c439ec0fbba70c3",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1117/1161.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c084d1fc36f2a06ea059"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_04111c439ec0fbba70c3",
+      "claim_ids": [
+        "claim_c084d1fc36f2a06ea059"
+      ],
+      "is_primary": true,
+      "normalized_value": "pzhang@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1117/1161.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pzhang@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c084d1fc36f2a06ea059"
+    ],
+    "email": [
+      "claim_c084d1fc36f2a06ea059"
+    ],
+    "name": [
+      "claim_c084d1fc36f2a06ea059"
+    ],
+    "profile_url": [
+      "claim_c084d1fc36f2a06ea059"
+    ],
+    "research_directions": [
+      "claim_c084d1fc36f2a06ea059"
+    ],
+    "status": [
+      "claim_c084d1fc36f2a06ea059"
+    ],
+    "title": [
+      "claim_c084d1fc36f2a06ea059"
+    ]
+  },
+  "id": "mentor_e639ed393a5f9c80b746",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c084d1fc36f2a06ea059"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_04111c439ec0fbba70c3",
+      "claim_ids": [
+        "claim_c084d1fc36f2a06ea059"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1117/1161.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大语言模型、多模态大语言模型的小型化、量子人工智能、量子机器学习等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1117/1161.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

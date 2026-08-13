@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e14d079bbcce1ab8e689"
+      ],
+      "ended_at": null,
+      "id": "aff_a512a360a97de4dbc1f2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_d06ebad960f5763fae06",
+      "source_url": "https://cic.tju.edu.cn/info/1108/1120.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e14d079bbcce1ab8e689"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a512a360a97de4dbc1f2",
+      "claim_ids": [
+        "claim_e14d079bbcce1ab8e689"
+      ],
+      "is_primary": true,
+      "normalized_value": "quri@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1108/1120.htm",
+      "status": "current",
+      "type": "email",
+      "value": "quri@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e14d079bbcce1ab8e689"
+    ],
+    "email": [
+      "claim_e14d079bbcce1ab8e689"
+    ],
+    "name": [
+      "claim_e14d079bbcce1ab8e689"
+    ],
+    "profile_url": [
+      "claim_e14d079bbcce1ab8e689"
+    ],
+    "research_directions": [
+      "claim_e14d079bbcce1ab8e689"
+    ],
+    "status": [
+      "claim_e14d079bbcce1ab8e689"
+    ],
+    "title": [
+      "claim_e14d079bbcce1ab8e689"
+    ]
+  },
+  "id": "mentor_ef6ea356a024ab786237",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e14d079bbcce1ab8e689"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曲日"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a512a360a97de4dbc1f2",
+      "claim_ids": [
+        "claim_e14d079bbcce1ab8e689"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1108/1120.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子相关性、量子算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1108/1120.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

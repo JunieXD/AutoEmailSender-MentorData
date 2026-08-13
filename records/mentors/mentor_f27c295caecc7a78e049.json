@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fc536108e9987a62e057"
+      ],
+      "ended_at": null,
+      "id": "aff_e63a58164a94ec68b786",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1116/3159.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fc536108e9987a62e057"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e63a58164a94ec68b786",
+      "claim_ids": [
+        "claim_fc536108e9987a62e057"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuce@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1116/3159.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuce@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fc536108e9987a62e057"
+    ],
+    "email": [
+      "claim_fc536108e9987a62e057"
+    ],
+    "name": [
+      "claim_fc536108e9987a62e057"
+    ],
+    "profile_url": [
+      "claim_fc536108e9987a62e057"
+    ],
+    "research_directions": [
+      "claim_fc536108e9987a62e057"
+    ],
+    "status": [
+      "claim_fc536108e9987a62e057"
+    ],
+    "title": [
+      "claim_fc536108e9987a62e057"
+    ]
+  },
+  "id": "mentor_f27c295caecc7a78e049",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fc536108e9987a62e057"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于策"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e63a58164a94ec68b786",
+      "claim_ids": [
+        "claim_fc536108e9987a62e057"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1116/3159.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高性能计算、异构计算、智能计算系统、天文信息技术、调度优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1116/3159.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

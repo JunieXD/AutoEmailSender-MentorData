@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4e244afe6e4259aaa2ca"
+      ],
+      "ended_at": null,
+      "id": "aff_7af3aa4003c19af06cbd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1101/1102.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4e244afe6e4259aaa2ca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7af3aa4003c19af06cbd",
+      "claim_ids": [
+        "claim_4e244afe6e4259aaa2ca"
+      ],
+      "is_primary": true,
+      "normalized_value": "jindi@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1101/1102.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jindi@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4e244afe6e4259aaa2ca"
+    ],
+    "email": [
+      "claim_4e244afe6e4259aaa2ca"
+    ],
+    "name": [
+      "claim_4e244afe6e4259aaa2ca"
+    ],
+    "profile_url": [
+      "claim_4e244afe6e4259aaa2ca"
+    ],
+    "research_directions": [
+      "claim_4e244afe6e4259aaa2ca"
+    ],
+    "status": [
+      "claim_4e244afe6e4259aaa2ca"
+    ],
+    "title": [
+      "claim_4e244afe6e4259aaa2ca"
+    ]
+  },
+  "id": "mentor_1c8506d26d42d9d76fd3",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4e244afe6e4259aaa2ca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "金弟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7af3aa4003c19af06cbd",
+      "claim_ids": [
+        "claim_4e244afe6e4259aaa2ca"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1101/1102.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图神经网络、网络表示学习、社团发现、推荐系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1101/1102.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

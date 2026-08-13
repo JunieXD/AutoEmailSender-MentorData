@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a55a161f7c2fa7604525"
+      ],
+      "ended_at": null,
+      "id": "aff_e05f27497754942b0e5d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_d06ebad960f5763fae06",
+      "source_url": "https://cs.tju.edu.cn/info/1751/4751.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a55a161f7c2fa7604525"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e05f27497754942b0e5d",
+      "claim_ids": [
+        "claim_a55a161f7c2fa7604525"
+      ],
+      "is_primary": true,
+      "normalized_value": "2944440@qq.com",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cs.tju.edu.cn/info/1751/4751.htm",
+      "status": "current",
+      "type": "email",
+      "value": "2944440@qq.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a55a161f7c2fa7604525"
+    ],
+    "email": [
+      "claim_a55a161f7c2fa7604525"
+    ],
+    "name": [
+      "claim_a55a161f7c2fa7604525"
+    ],
+    "profile_url": [
+      "claim_a55a161f7c2fa7604525"
+    ],
+    "research_directions": [
+      "claim_a55a161f7c2fa7604525"
+    ],
+    "status": [
+      "claim_a55a161f7c2fa7604525"
+    ],
+    "title": [
+      "claim_a55a161f7c2fa7604525"
+    ]
+  },
+  "id": "mentor_8acc770d489e9a5780cb",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a55a161f7c2fa7604525"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e05f27497754942b0e5d",
+      "claim_ids": [
+        "claim_a55a161f7c2fa7604525"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cs.tju.edu.cn/info/1751/4751.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、自然语言处理、心理计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.tju.edu.cn/info/1751/4751.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

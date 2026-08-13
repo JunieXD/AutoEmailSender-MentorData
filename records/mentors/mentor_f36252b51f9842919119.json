@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3aec767dc90e7e77b9e5"
+      ],
+      "ended_at": null,
+      "id": "aff_05c78f5641baa18176d2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:18Z",
+      "organization_id": "org_auto_3b3429b7cba9d077e233",
+      "source_url": "https://cic.tju.edu.cn/info/1110/3903.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3aec767dc90e7e77b9e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_05c78f5641baa18176d2",
+      "claim_ids": [
+        "claim_3aec767dc90e7e77b9e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "fhshang@tju.edu.cn",
+      "observed_at": "2026-08-11T13:33:18Z",
+      "source_url": "https://cic.tju.edu.cn/info/1110/3903.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fhshang@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3aec767dc90e7e77b9e5"
+    ],
+    "email": [
+      "claim_3aec767dc90e7e77b9e5"
+    ],
+    "name": [
+      "claim_3aec767dc90e7e77b9e5"
+    ],
+    "profile_url": [
+      "claim_3aec767dc90e7e77b9e5"
+    ],
+    "research_directions": [
+      "claim_3aec767dc90e7e77b9e5"
+    ],
+    "status": [
+      "claim_3aec767dc90e7e77b9e5"
+    ],
+    "title": [
+      "claim_3aec767dc90e7e77b9e5"
+    ]
+  },
+  "id": "mentor_f36252b51f9842919119",
+  "last_verified_at": "2026-08-11T13:33:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3aec767dc90e7e77b9e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尚凡华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_05c78f5641baa18176d2",
+      "claim_ids": [
+        "claim_3aec767dc90e7e77b9e5"
+      ],
+      "observed_at": "2026-08-11T13:33:18Z",
+      "status": "current",
+      "url": "https://cic.tju.edu.cn/info/1110/3903.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "优化算法及理论、图像/视频处理、并行/分布式计算、隐私保护与联邦学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:18Z",
+  "status_reason": null,
+  "status_source_url": "https://cic.tju.edu.cn/info/1110/3903.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:18Z"
+}

@@ -2660,3 +2660,60 @@ organizations:
   successor_id: null
   created_at: '2026-08-13T03:01:30Z'
   updated_at: '2026-08-13T03:01:30Z'
+- id: org_auto_3ce5e783fbd769384b1f
+  type: university
+  canonical_name: 天津大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://tju.edu.cn/
+  approved_domains:
+  - tju.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:05:09Z'
+  updated_at: '2026-08-13T03:05:09Z'
+- id: org_auto_3b3429b7cba9d077e233
+  type: school
+  canonical_name: 计算机科学与技术学院
+  parent_id: org_auto_3ce5e783fbd769384b1f
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:05:09Z'
+  updated_at: '2026-08-13T03:05:09Z'
+- id: org_auto_d06ebad960f5763fae06
+  type: department
+  canonical_name: 计算机系
+  parent_id: org_auto_3b3429b7cba9d077e233
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:05:09Z'
+  updated_at: '2026-08-13T03:05:09Z'
+- id: org_auto_5d8c7c88f44e1e32b9fc
+  type: center
+  canonical_name: 智能与计算学部-实验教学中心
+  parent_id: org_auto_3b3429b7cba9d077e233
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:05:09Z'
+  updated_at: '2026-08-13T03:05:09Z'
+- id: org_auto_c2400385fde4fe5a5df0
+  type: center
+  canonical_name: 计算机实验教学中心
+  parent_id: org_auto_3b3429b7cba9d077e233
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-13T03:05:09Z'
+  updated_at: '2026-08-13T03:05:09Z'
