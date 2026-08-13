@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_729ec0d7aac348b73e29"
+      ],
+      "ended_at": null,
+      "id": "aff_c07e6bb9ec2ee3070706",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:51Z",
+      "organization_id": "org_auto_9e7bf58b3d6ccb33e738",
+      "source_url": "https://cs.seu.edu.cn/shuaiwang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_729ec0d7aac348b73e29"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c07e6bb9ec2ee3070706",
+      "claim_ids": [
+        "claim_729ec0d7aac348b73e29"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuaiwang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:51Z",
+      "source_url": "https://cs.seu.edu.cn/shuaiwang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shuaiwang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_729ec0d7aac348b73e29"
+    ],
+    "email": [
+      "claim_729ec0d7aac348b73e29"
+    ],
+    "name": [
+      "claim_729ec0d7aac348b73e29"
+    ],
+    "profile_url": [
+      "claim_729ec0d7aac348b73e29"
+    ],
+    "recent_papers": [
+      "claim_729ec0d7aac348b73e29"
+    ],
+    "research_directions": [
+      "claim_729ec0d7aac348b73e29"
+    ],
+    "status": [
+      "claim_729ec0d7aac348b73e29"
+    ]
+  },
+  "id": "mentor_7c8f8cf7a73a18aa74d2",
+  "last_verified_at": "2026-08-11T13:31:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_729ec0d7aac348b73e29"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王帅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c07e6bb9ec2ee3070706",
+      "claim_ids": [
+        "claim_729ec0d7aac348b73e29"
+      ],
+      "observed_at": "2026-08-11T13:31:51Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/shuaiwang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "[AAAI'26] DigimonGPT: An Evolvable Agent with Hierarchical Human-like Memory for Video Question Answering",
+    "[AAAI'26] ORTCL: Towards Continual Learning of Time Series Foundation Models on Streaming Data via Orthogonal Rotation",
+    "[AAAI'26] LMGL-WD: LLM-Guided Multi-Task Graph Learning for Category-Level Warehouse Demand Prediction in E-Commerce",
+    "[CIKM'25] To Know What User Concerns: Conceptual Knowledge Reasoning for User Satisfaction Estimation in E-Commerce Dialogue Systems",
+    "[DASFAA'25] CoANBR: A Collaborative Aggregation Model for Next Basket Recommendation with Time-independent Sequence Modeling",
+    "[ACL'25] MobiLoRA: Accelerating LoRA-based LLM Inference on Mobile Devices via Context-aware KV Cache Optimization",
+    "[SIGKDD'25] A Transferable Spatio-temporal Learning Framework for Cross-city Logistics Demand Prediction",
+    "[DAC'25] InfScaler: Enabling Efficient ML Inference Serving on Multi-Accelerator Edge Devices via Asymmetric Auto-Scaling"
+  ],
+  "research_directions": [
+    "具身智能、大数据分析、物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:51Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/shuaiwang/main.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:51Z"
+}

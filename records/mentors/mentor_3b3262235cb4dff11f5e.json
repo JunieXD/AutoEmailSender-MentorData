@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_711878fbba6cb2807cac"
+      ],
+      "ended_at": null,
+      "id": "aff_ab9f5cfe8501cd259fe4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:51Z",
+      "organization_id": "org_auto_9e7bf58b3d6ccb33e738",
+      "source_url": "https://cs.seu.edu.cn/pwang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_711878fbba6cb2807cac"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ab9f5cfe8501cd259fe4",
+      "claim_ids": [
+        "claim_711878fbba6cb2807cac"
+      ],
+      "is_primary": true,
+      "normalized_value": "pwang@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:51Z",
+      "source_url": "https://cs.seu.edu.cn/pwang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pwang@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_711878fbba6cb2807cac"
+    ],
+    "email": [
+      "claim_711878fbba6cb2807cac"
+    ],
+    "name": [
+      "claim_711878fbba6cb2807cac"
+    ],
+    "profile_url": [
+      "claim_711878fbba6cb2807cac"
+    ],
+    "recent_papers": [
+      "claim_711878fbba6cb2807cac"
+    ],
+    "research_directions": [
+      "claim_711878fbba6cb2807cac"
+    ],
+    "status": [
+      "claim_711878fbba6cb2807cac"
+    ],
+    "title": [
+      "claim_711878fbba6cb2807cac"
+    ]
+  },
+  "id": "mentor_3b3262235cb4dff11f5e",
+  "last_verified_at": "2026-08-11T13:31:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_711878fbba6cb2807cac"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ab9f5cfe8501cd259fe4",
+      "claim_ids": [
+        "claim_711878fbba6cb2807cac"
+      ],
+      "observed_at": "2026-08-11T13:31:51Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/pwang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Benchmarking and Enhancing Relational Diagrams Reasoning for Multimodal Large Language Models",
+    "Mitigating Tool Overuse for LLMs via Active Knowledge Boundary Probing",
+    "Capability Decomposition for Unified Information Extraction via Hierarchical Mixture-of-Experts",
+    "Exploring Layer Activation Dynamic of CoT via Knowledge Probe",
+    "From Outcome to Process: Optimizing MoE Load Balancing with MCTS",
+    "On the Role of Discriminative Models in Generative Relation Extraction",
+    "Unlearning of Knowledge Graph Embedding via Preference Optimization",
+    "Benchmarking and Enhancing Rule Knowledge-Driven Reasoning of Large Language Models"
+  ],
+  "research_directions": [
+    "人工智能,大模型,知识图谱,自然语言处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:51Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/pwang/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:51Z"
+}

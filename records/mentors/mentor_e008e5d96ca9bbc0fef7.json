@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8bf9a6a76e4f72f2b13f"
+      ],
+      "ended_at": null,
+      "id": "aff_21d6a879ea9310ac42a5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:51Z",
+      "organization_id": "org_auto_9e7bf58b3d6ccb33e738",
+      "source_url": "https://cs.seu.edu.cn/yunwang/main.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8bf9a6a76e4f72f2b13f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_21d6a879ea9310ac42a5",
+      "claim_ids": [
+        "claim_8bf9a6a76e4f72f2b13f"
+      ],
+      "is_primary": true,
+      "normalized_value": "ywang_cse@seu.edu.cn",
+      "observed_at": "2026-08-11T13:31:51Z",
+      "source_url": "https://cs.seu.edu.cn/yunwang/main.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ywang_cse@seu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ],
+    "email": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ],
+    "name": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ],
+    "profile_url": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ],
+    "recent_papers": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ],
+    "research_directions": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ],
+    "status": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ],
+    "title": [
+      "claim_8bf9a6a76e4f72f2b13f"
+    ]
+  },
+  "id": "mentor_e008e5d96ca9bbc0fef7",
+  "last_verified_at": "2026-08-11T13:31:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8bf9a6a76e4f72f2b13f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪芸"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_21d6a879ea9310ac42a5",
+      "claim_ids": [
+        "claim_8bf9a6a76e4f72f2b13f"
+      ],
+      "observed_at": "2026-08-11T13:31:51Z",
+      "status": "current",
+      "url": "https://cs.seu.edu.cn/yunwang/main.htm"
+    }
+  ],
+  "recent_papers": [
+    "Fast Long Sequence Time-Series Forecasting for Edge Service Running State Based on Data Drift and Non-Stationarity, TKDE, 2024",
+    "Multivariate Long Sequence Time Series Forecasting Based on Robust Spatiotemporal Attention, IJCNN, 2024",
+    "A Meta Meeting Mountain based Opportunistic Message Forwarding Strategy, Ad Hoc Networks, 2024",
+    "Height-sensitive multi-UAV deployment scheme in edge data acquisition system, Journal of Circuits, Systems, and Computer, 2023",
+    "A Checkpointing Recovery Approach for Soft Errors Based on Detector Locations, Electronics, 2023",
+    "An Improvement Paillier Algorithm Applied to Federated Learning, ICPADS, 2023",
+    "Joint Optimization of UAV Deployment and Task Computation Offloading Decision in UAV-assisted Edge Computing Network, HPCC 2023",
+    "JumpCrypt: Based on Precomputing Federated Learning with Homomorphic Encryption, HPCC 2023"
+  ],
+  "research_directions": [
+    "分布计算,边缘计算,计算机网络,车联网,容错理论,中间件,大数据"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:51Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.seu.edu.cn/yunwang/main.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:51Z"
+}
