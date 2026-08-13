@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_b426e82f87d7c4893ea7",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:36Z",
+          "organization_id": "org_auto_952ed80c939d019261f9",
+          "school": "数学科学学院",
+          "source_url": "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp",
+          "status": "current",
+          "title": "教授",
+          "university": "华东师范大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_b426e82f87d7c4893ea7",
+          "email": "xfwang@cs.ecnu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:36Z",
+          "source_url": "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/49"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xfwang@cs.ecnu.edu.cn",
+      "id": "mentor_b022e5367236f01ee53d",
+      "last_verified_at": "2026-08-11T13:32:36Z",
+      "name": "王祥丰",
+      "profile_url": "https://faculty.ecnu.edu.cn/_s16/wxf2/main.psp",
+      "recent_papers": [],
+      "research_direction": "Agent (Optimization, RL, MARL, LLM-based) and Applications、智能体及应用",
+      "school": "数学科学学院",
+      "source_url": "http://www.cs.ecnu.edu.cn/jzgml/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "华东师范大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_952ed80c939d019261f9",
+    "name": "数学科学学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_f7c50cb10536268671ce",
+    "name": "华东师范大学"
+  }
+}

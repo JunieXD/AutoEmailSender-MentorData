@@ -1,0 +1,117 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_686bd754b6659bd0e133",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:36Z",
+          "organization_id": "org_auto_000460f9899f23785272",
+          "school": "上海智能教育研究院",
+          "source_url": "https://faculty.ecnu.edu.cn/_s8/jb2/main.psp",
+          "status": "current",
+          "title": "教授",
+          "university": "华东师范大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_686bd754b6659bd0e133",
+          "email": "bjiang@deit.ecnu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:36Z",
+          "source_url": "https://faculty.ecnu.edu.cn/_s8/jb2/main.psp"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/49"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "bjiang@deit.ecnu.edu.cn",
+      "id": "mentor_2768929c8ad30caa466d",
+      "last_verified_at": "2026-08-11T13:32:36Z",
+      "name": "江波",
+      "profile_url": "https://faculty.ecnu.edu.cn/_s8/jb2/main.psp",
+      "recent_papers": [
+        "Li, R., & Jiang, B..Thinking in graphs with CoMAP: A shared visual workspace for designing project-based learning. ACM CHI’26. (main, CCF-A)",
+        "Wei, Y., Wang, F., Zhang, Y., Lim, B. Y., & Jiang, B. .Beyond scores: Explainable intelligent assessment strengthens pre-service teachers' assessment literacy. ACM CHI’26.(main, CCF-A)",
+        "Ma, X., Fan, M., Jiang, B., Wang, J., & He, Y. .CO-OPERA: Designing an AI system for middle school teachers to co-create social awareness drama scripts. ACM CHI’26.(poster, CCF-A)",
+        "Wei, Y., Li, R., & Jiang, B.SLOW: Strategic Logical-inference Open Workspace for cognitive adaptation in AI tutoring. AIED’26.(full paper, Accept rate 16.7%)",
+        "Li, R., Zhang, M., Yu, Z., Wei, Y., & Jiang, B.Edu-MMBias: A three-tier multimodal benchmark for auditing social bias in vision-language models under educational contexts. ACL’26 Findings.(CCF-A)",
+        "Liu, W., Hu, H., Zhou, J., Ding, Y., Li, J., Zeng, J., He, M., Chen, Q., Jiang, B., Zhou, A. and He, L., 2025. Mathematical language models: A survey. ACM Computing Surveys, 58(6):1-37. (人工智能顶刊)",
+        "Yulei Ye,Bo Jiang*.Constructing an Ontology-Based Knowledge Graph for K-12 Computer Science Competency via Human-AI Collaboration. Educational Technology & Society,2025,28(3):21-35.(SSCI一区)",
+        "Yuang Wei andBo Jiang*.Interpretable Cognitive State Prediction via Temporal Fuzzy Cognitive Map,IEEE Transactions on Learning Technologies,2024,17:514-526.(SSCI一区)"
+      ],
+      "research_direction": "教育大模型、自适应学习技术、学习分析、中小学编程与人工智能教育",
+      "school": "上海智能教育研究院",
+      "source_url": "http://www.cs.ecnu.edu.cn/jzgml/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "华东师范大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_9a4f88b4cdea3199ea0d",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:36Z",
+          "organization_id": "org_auto_000460f9899f23785272",
+          "school": "上海智能教育研究院",
+          "source_url": "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247712",
+          "status": "current",
+          "title": "教授",
+          "university": "华东师范大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_9a4f88b4cdea3199ea0d",
+          "email": "amzhou@cs.ecnu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:32:36Z",
+          "source_url": "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247712"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/49"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "amzhou@cs.ecnu.edu.cn",
+      "id": "mentor_dd7a70a8c952e8e7e4f8",
+      "last_verified_at": "2026-08-11T13:32:36Z",
+      "name": "周爱民",
+      "profile_url": "http://www.cs.ecnu.edu.cn/_redirect?siteId=499&columnId=24531&articleId=247712",
+      "recent_papers": [],
+      "research_direction": "大语言模型、智能体系统、演化优化与学习、智能教育、科学智能",
+      "school": "上海智能教育研究院",
+      "source_url": "http://www.cs.ecnu.edu.cn/jzgml/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "华东师范大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_000460f9899f23785272",
+    "name": "上海智能教育研究院",
+    "type": "institute"
+  },
+  "university": {
+    "id": "org_auto_f7c50cb10536268671ce",
+    "name": "华东师范大学"
+  }
+}
