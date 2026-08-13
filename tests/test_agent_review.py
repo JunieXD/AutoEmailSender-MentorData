@@ -161,6 +161,55 @@ def test_plan_auto_resolves_exact_parents_and_clear_department(tmp_path: Path) -
     assert applied.created_organizations == 1
 
 
+def test_new_descendants_request_existing_ancestor_domain_approval(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "域名老师",
+                "domain@nankai.edu.cn",
+                "示例大学",
+                "安全学院",
+                "https://cc.nankai.edu.cn/faculty/domain",
+                department="安全系",
+            )
+        ],
+        number=79,
+    )
+
+    first = _plan(manifest, manifest_path, issue_number=79)
+
+    assert first["decision"] is None
+    question = first["questions"][0]
+    assert question["type"] == "source_domain_mismatch"
+    assert question["context"] == {
+        "target_organization_id": "org_example_university",
+        "source_domains": ["cc.nankai.edu.cn"],
+        "approved_domains": ["example.edu"],
+    }
+
+    second = _plan(
+        manifest,
+        manifest_path,
+        issue_number=79,
+        answers={question["id"]: {"choice": "approve-domains"}},
+    )
+
+    assert second["summary"]["pending_questions"] == 0
+    assert second["decision"] is not None
+    levels = second["decision"]["decisions"][0]["levels"]
+    assert [item["action"] for item in levels] == ["create", "create", "create"]
+    assert levels[0]["canonical_name"] == "示例大学"
+    assert levels[0]["approved_domains"] == ["nankai.edu.cn"]
+    applied = _apply(root, 79, second["decision"])
+    assert applied.ready_for_finalization is True
+    assert applied.updated_organizations == 1
+
+
 def test_school_name_in_department_waits_for_user_then_creates_sibling(
     tmp_path: Path,
 ) -> None:

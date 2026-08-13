@@ -123,8 +123,17 @@ class ManifestOrganizations:
         return organization_id if organization.get("type") == "university" else None
 
     def domains(self, organization_id: str) -> list[str]:
-        organization = self.by_id.get(organization_id)
-        return list(organization.get("approved_domains", [])) if organization else []
+        domains: set[str] = set()
+        seen: set[str] = set()
+        current_id: str | None = organization_id
+        while current_id and current_id not in seen:
+            seen.add(current_id)
+            organization = self.by_id.get(current_id)
+            if organization is None:
+                break
+            domains.update(organization.get("approved_domains", []))
+            current_id = organization.get("parent_id")
+        return sorted(domains)
 
 
 def utc_now() -> str:
@@ -1292,29 +1301,39 @@ def _plan_path(
         mapping_reason=canonical_path_correction_reason,
         save_path_correction=saved_canonical_path_correction,
     )
-    if final_target_id and not final_target_is_new and not _organization_matches_sources(
+    domain_target_id = final_target_id if final_target_id and not final_target_is_new else None
+    if domain_target_id is None:
+        domain_target_id = next(
+            (
+                item.get("organization_id")
+                for item in reversed(decision["levels"])
+                if item.get("action") == "existing" and item.get("organization_id")
+            ),
+            None,
+        )
+    if domain_target_id and not _organization_matches_sources(
         group,
         organizations,
-        final_target_id,
+        domain_target_id,
     ):
         question = _group_question(
             pull_number,
             group,
             kind="source_domain_mismatch",
-            subject=final_target_id,
+            subject=domain_target_id,
             level=None,
-            prompt="投稿来源域名不属于最终机构当前批准域名",
-            reason="现有可信后端会拒绝来源域名不兼容的映射。",
+            prompt="投稿来源域名不属于现有机构当前批准域名",
+            reason="现有可信后端会拒绝来源域名不兼容的机构路径。",
             rule_default=None,
             options=_question_options(
-                ("approve-domains", "把本次来源域名加入最终机构", []),
+                ("approve-domains", "把本次来源域名加入该现有机构", []),
                 ("map-existing", "改为其他现有机构", ["organization_id"]),
                 ("reject-group", "不收录这一组", []),
             ),
             context={
-                "target_organization_id": final_target_id,
+                "target_organization_id": domain_target_id,
                 "source_domains": group.get("source_domains", []),
-                "approved_domains": organizations.domains(final_target_id),
+                "approved_domains": organizations.domains(domain_target_id),
             },
             answers=answers,
         )
@@ -1348,10 +1367,15 @@ def _plan_path(
                 mapping_reason=answer.get("reason") or "人工确认来源域名对应的最终机构",
             )
         elif choice == "approve-domains":
-            target = organizations.by_id[final_target_id]
+            target = organizations.by_id[domain_target_id]
+            approved_domains = sorted(set(group.get("source_domains", [])))
+            if target["type"] == "university":
+                approved_domains = sorted(
+                    {university_domain_from_source(item) for item in approved_domains}
+                )
             replaced = False
             for item in reversed(decision["levels"]):
-                if item.get("organization_id") == final_target_id:
+                if item.get("organization_id") == domain_target_id:
                     item.update(
                         {
                             "action": "create",
@@ -1359,7 +1383,7 @@ def _plan_path(
                             "organization_type": target["type"],
                             "canonical_name": target["canonical_name"],
                             "official_url": None,
-                            "approved_domains": sorted(set(group.get("source_domains", []))),
+                            "approved_domains": approved_domains,
                             "save_submitted_as_alias": False,
                         }
                     )
