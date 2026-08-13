@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b6107ba639ce00be5588"
+      ],
+      "ended_at": null,
+      "id": "aff_d821303d1b7e8e647846",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/zhangchao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_b6107ba639ce00be5588"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d821303d1b7e8e647846",
+      "claim_ids": [
+        "claim_b6107ba639ce00be5588"
+      ],
+      "is_primary": true,
+      "normalized_value": "chao.zhang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/zhangchao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chao.zhang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b6107ba639ce00be5588"
+    ],
+    "email": [
+      "claim_b6107ba639ce00be5588"
+    ],
+    "name": [
+      "claim_b6107ba639ce00be5588"
+    ],
+    "profile_url": [
+      "claim_b6107ba639ce00be5588"
+    ],
+    "recent_papers": [
+      "claim_b6107ba639ce00be5588"
+    ],
+    "research_directions": [
+      "claim_b6107ba639ce00be5588"
+    ],
+    "status": [
+      "claim_b6107ba639ce00be5588"
+    ]
+  },
+  "id": "mentor_6c28be5393fa0a60db5e",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b6107ba639ce00be5588"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张潮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d821303d1b7e8e647846",
+      "claim_ids": [
+        "claim_b6107ba639ce00be5588"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/zhangchao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "W. Yu, C. Zhang*, L. Wang, S. Lasaulce, M. Debbah, \"ProjQ: Project-and-Quantize for Adapter-Aware LLM Compression\", ICML, 2026.",
+    "H. Zou, Q. Zhao, S. Lasaulce*, C. Zhang*, Y. Tian, L. Bariah, M. Debbah, and F. Bader, \"From Large LLMs to On-device LLMs and Multi-agent LLMs in 6G\", Nature Review Electrical Engineering, accepted, 2025.",
+    "L. Wang, C. Zhang*, Q. Zhao, H. Zou, S. Lasaulce, G. Valenzise, Z. He, and M. Debbah, \"Generative AI for RF Sensing in IoT systems\", IEEE Internet of Things Magazine, Vol. 8, No. 2, 2025.",
+    "L. Bariah, A. Kabot, M. Debbah, C. Zhang, S. Lasaulce,A. Maatouk, C. Fischione, A. Kazemi, A. Nikou, C. Chaccour et al, \"Large Scale AI in Telecoms: Charting the Roadmap for Innovation, Scalability, and Enhanced Digital Experiences\", 6G White Paper, Dec. 2024.",
+    "Y. Sun, H. Zou*, C. Zhang*, S. Lasaulce, and M. Kieffer, \"Goal-oriented compression for Lp-norm-type goal functions: Application to power consumption scheduling\", Journal of the Franklin Institute, Special Issue on Semantic Signal Processing and Communications, Volume 361, Issue 10, 2024.",
+    "C. Zhang, H. Zou, S. Lasaulce, W. Saad, M. Kountouris, and M. Bennis, \"Goal-Oriented Communications for the IoT: A Unified View and Application to Signal Compression\", IEEE Internet of Things Magazine, Vol. 5, No. 4, 2023.",
+    "H. Zou, C. Zhang*, S. Lasaulce, L. Saludjian, and H. V. Poor, \"Goal-Oriented Quantization: Analysis, Design, and Application to Resource Allocation\", IEEE Journal of Selected Areas in Communication, Vol. 41, No.1, 2023.",
+    "C. Zhang, S. Lasaulce, L. Wang, L. Saludjian, and H. V. Poor, \"A refined consumer behavior model for energy systems: Application to the pricing and energy-efficiency problems, Applied Energy, Volume 308,118239, 2022."
+  ],
+  "research_directions": [
+    "模型压缩(量化、剪枝、低秩分解、高效微调)与边缘大模型、语义通信与任务导向通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/zhangchao/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

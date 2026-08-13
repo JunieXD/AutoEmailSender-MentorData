@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_22d965a597b16dbd0777"
+      ],
+      "ended_at": null,
+      "id": "aff_b068dc25a3c6663c6a84",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/songhong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_22d965a597b16dbd0777"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b068dc25a3c6663c6a84",
+      "claim_ids": [
+        "claim_22d965a597b16dbd0777"
+      ],
+      "is_primary": true,
+      "normalized_value": "songhong@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/songhong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "songhong@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_22d965a597b16dbd0777"
+    ],
+    "email": [
+      "claim_22d965a597b16dbd0777"
+    ],
+    "name": [
+      "claim_22d965a597b16dbd0777"
+    ],
+    "profile_url": [
+      "claim_22d965a597b16dbd0777"
+    ],
+    "research_directions": [
+      "claim_22d965a597b16dbd0777"
+    ],
+    "status": [
+      "claim_22d965a597b16dbd0777"
+    ],
+    "title": [
+      "claim_22d965a597b16dbd0777"
+    ]
+  },
+  "id": "mentor_be5e1f8f0cfe97086f46",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_22d965a597b16dbd0777"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋虹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b068dc25a3c6663c6a84",
+      "claim_ids": [
+        "claim_22d965a597b16dbd0777"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/songhong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "系统安全、漏洞检测与挖掘、网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/songhong/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

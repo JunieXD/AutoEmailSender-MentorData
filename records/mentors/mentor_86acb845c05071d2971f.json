@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f7131fd15331906700f4"
+      ],
+      "ended_at": null,
+      "id": "aff_ceb63c26ad013e19da3d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/wangjie1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f7131fd15331906700f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ceb63c26ad013e19da3d",
+      "claim_ids": [
+        "claim_f7131fd15331906700f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "jwang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/wangjie1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jwang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f7131fd15331906700f4"
+    ],
+    "email": [
+      "claim_f7131fd15331906700f4"
+    ],
+    "name": [
+      "claim_f7131fd15331906700f4"
+    ],
+    "profile_url": [
+      "claim_f7131fd15331906700f4"
+    ],
+    "recent_papers": [
+      "claim_f7131fd15331906700f4"
+    ],
+    "research_directions": [
+      "claim_f7131fd15331906700f4"
+    ],
+    "status": [
+      "claim_f7131fd15331906700f4"
+    ],
+    "title": [
+      "claim_f7131fd15331906700f4"
+    ]
+  },
+  "id": "mentor_86acb845c05071d2971f",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f7131fd15331906700f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪洁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ceb63c26ad013e19da3d",
+      "claim_ids": [
+        "claim_f7131fd15331906700f4"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/wangjie1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hulin Kuang,Guangheng Wu,Zhe Qu,Jie Wang*.HCMReg:A Pyramid Network with Hybrid Encoder and Cross Mamba Fusion for Unsupervised Medical Image Registration. IEEE Transactions on Radiation and Plasma Medical Sciences. 2026.",
+    "Wang J, Wu L, Kuang H. Hybrid region and population hypergraph neural network for mild cognitive impairment detection [J]. Pattern Recognition, 2025. (IF:7.5)",
+    "WangJ, Wu L,Kuang H. Local-Global Spatio-Temporal Encoding with Adaptive Brain Region Signal Segmentation for Mild Cognitive Impairment Detection[C]. 2024 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2024: 2639-2644.",
+    "Kuang H, Tan X, Wang J, et al. Segmenting ischemic penumbra and infarct core simultaneously on non-contrast CT of patients with acute ischemic stroke using novel convolutional neural network[J]. Biomedicines, 2024, 12(3): 580.",
+    "Kuang H, Wan W, Wang Y, Wang J. Automated collateral scoring on ct angiography of patients with acute ischemic stroke using hybrid cnn and transformer network[J]. Biomedicines, 2023, 11(2): 243.",
+    "Ning LI, Zhe Qu, Jie Wang, Hulin Kuang. ARIG-GCN: Anatomical Relationship and Isomorphic Graph Approximation Guided Graph Convolutional Network for Automated ASPECTS Scoring on Non-Contrast CT.",
+    "Hulin Kuang, Yahui Wang, Jin Liu, Jie Wang, Quanliang Cao, Bo Hu, Wu Qiu, Jianxin Wang, Hybrid CNN-Transformer Network with Circular Feature Interaction for Acute Ischemic Stroke Lesion Segmentation on Non-contrast CT Scans.",
+    "Hulin Kuang, Yingxu Chen, Jin Liu, Jie Wang, Zhe Qu, and Shichao Kan. Multimodal Foundation Model Adaptation with Multimodal Clinical Knowledge Guidance for IDH Genotyping. BIBM2025."
+  ],
+  "research_directions": [
+    "医学图像处理、智慧医疗、人工智能、信息与网络安全、工业控制系统安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/wangjie1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

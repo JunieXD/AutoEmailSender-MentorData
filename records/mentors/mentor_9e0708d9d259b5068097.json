@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_47df0784cac6d04e85c0"
+      ],
+      "ended_at": null,
+      "id": "aff_c91ff41079603896a600",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_d446300a8e919bc4c079",
+      "source_url": "http://faculty.csu.edu.cn/leiwang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_47df0784cac6d04e85c0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c91ff41079603896a600",
+      "claim_ids": [
+        "claim_47df0784cac6d04e85c0"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanglei@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/leiwang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanglei@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_47df0784cac6d04e85c0"
+    ],
+    "email": [
+      "claim_47df0784cac6d04e85c0"
+    ],
+    "name": [
+      "claim_47df0784cac6d04e85c0"
+    ],
+    "profile_url": [
+      "claim_47df0784cac6d04e85c0"
+    ],
+    "recent_papers": [
+      "claim_47df0784cac6d04e85c0"
+    ],
+    "research_directions": [
+      "claim_47df0784cac6d04e85c0"
+    ],
+    "status": [
+      "claim_47df0784cac6d04e85c0"
+    ],
+    "title": [
+      "claim_47df0784cac6d04e85c0"
+    ]
+  },
+  "id": "mentor_9e0708d9d259b5068097",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_47df0784cac6d04e85c0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c91ff41079603896a600",
+      "claim_ids": [
+        "claim_47df0784cac6d04e85c0"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/leiwang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Semi-supervised denoising for facial landmark detection in videos",
+    "Improving Micro-expression Recognition using Multi-sequence Driven Face Generation",
+    "PrysmNet a polyp refining system using salience and multimodal guidance for reproducible cross domain segmentation",
+    "Two-Stage Facial Expression Spotting with Spectrum-Based Post-Processing",
+    "Micro-expression recognition by fusing action unit detection and Spatio-temporal features",
+    "Micro-Expression Recognition with Layered Relations and More Input Frames",
+    "Validation of an MRI Technique for the 6-DOF Knee Kinematics Measurement",
+    "Micro-expression Video Clip Synthesis Method based on Spatial-temporal Statistical Model and Motion Intensity Evaluation Function"
+  ],
+  "research_directions": [
+    "微表情的计算机视觉检测与识别、大语言模型与多模态语言模型的信息提取与视觉问答、跨域模型泛化与知识迁移、医学智能交叉应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/leiwang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

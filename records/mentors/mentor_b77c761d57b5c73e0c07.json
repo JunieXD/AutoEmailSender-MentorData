@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_583e8ba217d9042d2bb7"
+      ],
+      "ended_at": null,
+      "id": "aff_cf6134e3279e05aa5f13",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/fengshi/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_583e8ba217d9042d2bb7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf6134e3279e05aa5f13",
+      "claim_ids": [
+        "claim_583e8ba217d9042d2bb7"
+      ],
+      "is_primary": true,
+      "normalized_value": "fengshi@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/fengshi/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fengshi@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_583e8ba217d9042d2bb7"
+    ],
+    "email": [
+      "claim_583e8ba217d9042d2bb7"
+    ],
+    "name": [
+      "claim_583e8ba217d9042d2bb7"
+    ],
+    "profile_url": [
+      "claim_583e8ba217d9042d2bb7"
+    ],
+    "research_directions": [
+      "claim_583e8ba217d9042d2bb7"
+    ],
+    "status": [
+      "claim_583e8ba217d9042d2bb7"
+    ],
+    "title": [
+      "claim_583e8ba217d9042d2bb7"
+    ]
+  },
+  "id": "mentor_b77c761d57b5c73e0c07",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_583e8ba217d9042d2bb7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "石峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf6134e3279e05aa5f13",
+      "claim_ids": [
+        "claim_583e8ba217d9042d2bb7"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/fengshi/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "理论计算机科学、智能优化、图论、组合优化、算法设计与分析、聚类分析、模式匹配、任务调度优化、算法理论与智能优化、算法技术与AI融合创新、算法优化与设计、机器学习算法基础"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/fengshi/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

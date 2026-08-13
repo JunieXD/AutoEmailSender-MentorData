@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1bbd5cdf46cc5c52b2e5"
+      ],
+      "ended_at": null,
+      "id": "aff_64bb2cff53666c6c7233",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/kanshichao/zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1bbd5cdf46cc5c52b2e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_64bb2cff53666c6c7233",
+      "claim_ids": [
+        "claim_1bbd5cdf46cc5c52b2e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "kanshichao@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/kanshichao/zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "kanshichao@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ],
+    "email": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ],
+    "name": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ],
+    "profile_url": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ],
+    "recent_papers": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ],
+    "research_directions": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ],
+    "status": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ],
+    "title": [
+      "claim_1bbd5cdf46cc5c52b2e5"
+    ]
+  },
+  "id": "mentor_e0c7fa1ab1f177d86176",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1bbd5cdf46cc5c52b2e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "阚世超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_64bb2cff53666c6c7233",
+      "claim_ids": [
+        "claim_1bbd5cdf46cc5c52b2e5"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/kanshichao/zh_CN"
+    }
+  ],
+  "recent_papers": [
+    "[C14] Yunzhe Liu, Wenbiao Liu, Lihui Cen, Zhe Qu, Yigang Cen, Yixiong Liang, Yongfang Xie, Shichao Kan*, HSGG: Training-Free Hierarchical Scene Graph Generation with Geometry-Guided Relation Reasoning [C], Forty-third International Conference on Machine Learning (ICML 2026). (*Corresponding author,CCF A类,accept, 场景图生成)",
+    "[J17] Peifu Wang, Yixiong Liang, Yigang Cen, Lihui Cen, Zhe Qu, Jingling Liu*, Shichao Kan*, Integrating spatial features and dynamically learned temporal features via contrastive learning for video temporal grounding in LLM [J], Image and Vision Computing, 2026. (*Corresponding author, 视频分析)",
+    "[J16] Jie Wang, Haiwei Deng, Shichao Kan*, Jiawei Xu, Multi-level Contrastive Learning with Graph Convolutional Network for Multi-View Clustering [J], Expert Systems with Applications, 2025. (*Corresponding author, 多视图聚类)",
+    "[J15] Jiazhi Xia, Xiangyu Zhu, Bingchuan Jiang, Shichao Kan*, Reasoning Elicitation and Multi-Granularity Contrastive Learning for Text-Rich Image Understanding in Large Vision-Language Models [J], Pattern Recognition (PR), 2025. (*Corresponding author,CCF B类期刊,自然场景图像)",
+    "[C13] Haojie Zhang, Yixiong Liang, Hulin Kuang, Lihui Cen, Zhe Qu, Yigang Cen, Min Zeng, Shichao Kan*, Contrastive Regularization over LoRA for Multimodal Biomedical Image Incremental Learning [C], ACM MM 2025. (*Corresponding author,CCF A类,医学影像)",
+    "[C12] Jing Jin, Xu Liu, Te Gao, Zhihong Shi, Yixiong Liang, Ruiqing Zheng, Hulin Kuang*, Min Zeng, Shichao Kan*, Dynamic Residual Encoding with Slide-Level Contrastive Learning for End-to-End Whole Slide Image Representation [C], ACM MM 2025.(*Corresponding authors,CCF A类,医学影像)",
+    "[C11] Guoqing Zhang, Shichao Kan, Fanghui Zhang, Wanru Xu, Yue Zhang, Yigang Cen, Noise-Guided Predicate Representation Extraction and Diffusion-Enhanced Discretization for Scene Graph Generation [C], Forty-second International Conference on Machine Learning (ICML 2025). (CCF A类,场景图生成)",
+    "[J14] Guoqing Zhang, Shichao Kan, Lu Shi, Wanru Xu, Gaoyun An, Yigang Cen, Cross-scene visual context parsing with large vision-language model, Pattern Recognition, 2025. (CCF B类,场景图生成)"
+  ],
+  "research_directions": [
+    "多模态大模型、新一代多模态智能系统,涵盖城市视觉智能、医学影像智能、工业视觉智能方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/kanshichao/zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

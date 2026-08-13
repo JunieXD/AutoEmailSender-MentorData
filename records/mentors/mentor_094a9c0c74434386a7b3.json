@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_19bbc65ea841e9b0e959"
+      ],
+      "ended_at": null,
+      "id": "aff_4d9fc0161a19251dfd6f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/gaoyang12/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_19bbc65ea841e9b0e959"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4d9fc0161a19251dfd6f",
+      "claim_ids": [
+        "claim_19bbc65ea841e9b0e959"
+      ],
+      "is_primary": true,
+      "normalized_value": "222285@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/gaoyang12/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "222285@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_19bbc65ea841e9b0e959"
+    ],
+    "email": [
+      "claim_19bbc65ea841e9b0e959"
+    ],
+    "name": [
+      "claim_19bbc65ea841e9b0e959"
+    ],
+    "profile_url": [
+      "claim_19bbc65ea841e9b0e959"
+    ],
+    "recent_papers": [
+      "claim_19bbc65ea841e9b0e959"
+    ],
+    "research_directions": [
+      "claim_19bbc65ea841e9b0e959"
+    ],
+    "status": [
+      "claim_19bbc65ea841e9b0e959"
+    ]
+  },
+  "id": "mentor_094a9c0c74434386a7b3",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_19bbc65ea841e9b0e959"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高杨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4d9fc0161a19251dfd6f",
+      "claim_ids": [
+        "claim_19bbc65ea841e9b0e959"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/gaoyang12/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Jin Liu, Qing Lin, Zhuang Xiong, Shanshan Shan, Chunyi Liu, Min Li, Feng Liu, G. Bruce Pike, Hongfu Sun, Yang Gao*. Highly Undersampled MRI Reconstruction via a Single Posterior Sampling of Diffusion Models, IEEE Transactions on Medical Imaging, DOI: 10.1109/TMI.2026.3654585, 2026.",
+    "Yang Gao, et al., Plug-and-Play latent feature editing for orientation-adaptive quantitative susceptibility mapping neural networks, Medical Image Analysis, 2024, https://doi.org/10.1016/j.media.2024.103160.",
+    "Min Li, Chen Chen, ... Yang Gao*, Quantitative Susceptibility Mapping via Deep Neural Networks with Iterative Reverse Concatenations and Recurrent Modules, Medical Physics, 2025.",
+    "Shanshan Shan, Yang Gao*, et al. Image Reconstruction with B0 Inhomogeneity using a Deep Unrolled Network on an Open-bore MRI-Linac, 2024, IEEE Transactions on Instrumentation and Measurement.",
+    "Ang Gao, ..., Yang Gao*. et al., PDDF-Net: A deep neural network for diagnosing Parkinson's Disease using QSM and T1w images. 2026, ISMRM.",
+    "Tianyi Ding, ... Yang Gao*, et al., Mamba-MRF: A Deep Mamba Network for Highly Accelerated Magnetic Resonance Fingerprinting Reconstruction. 2026, ISMRM.",
+    "Samiha Prima, Hongfu Sun, Yang Gao*, et al., A Self-Supervised Transformer for Myelin Water Fraction Mapping from Multi-Echo Gradient-Echo Imaging. 2026, ISMRM.",
+    "J. Lu, Y. Wu, Y. Li, Q. Liu, Y. Gao* and M. Zeng, \"RNA3D-SSCL: Improving RNA Tertiary Structure Prediction via a Secondary Structure-Constrained Loss Function,\" 2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), Wuhan, China, 2025, pp. 45-50, doi: 10.1109/BIBM66473.2025.11356756."
+  ],
+  "research_directions": [
+    "人工智能赋能的新型医学成像技术、快速高分辨率定量磁共振技术、定量磁化率成像、磁粒子成像重建及分析技术、智能磁共振影像后处理与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/gaoyang12/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

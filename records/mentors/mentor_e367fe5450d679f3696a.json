@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7ad02e61ea6384d1b10"
+      ],
+      "ended_at": null,
+      "id": "aff_265f9f04a470035d2a23",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/MingZhao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7ad02e61ea6384d1b10"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_265f9f04a470035d2a23",
+      "claim_ids": [
+        "claim_d7ad02e61ea6384d1b10"
+      ],
+      "is_primary": true,
+      "normalized_value": "meanzhao@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/MingZhao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "meanzhao@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7ad02e61ea6384d1b10"
+    ],
+    "email": [
+      "claim_d7ad02e61ea6384d1b10"
+    ],
+    "name": [
+      "claim_d7ad02e61ea6384d1b10"
+    ],
+    "profile_url": [
+      "claim_d7ad02e61ea6384d1b10"
+    ],
+    "research_directions": [
+      "claim_d7ad02e61ea6384d1b10"
+    ],
+    "status": [
+      "claim_d7ad02e61ea6384d1b10"
+    ],
+    "title": [
+      "claim_d7ad02e61ea6384d1b10"
+    ]
+  },
+  "id": "mentor_e367fe5450d679f3696a",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7ad02e61ea6384d1b10"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_265f9f04a470035d2a23",
+      "claim_ids": [
+        "claim_d7ad02e61ea6384d1b10"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/MingZhao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络智能、机器学习、健康评估"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/MingZhao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

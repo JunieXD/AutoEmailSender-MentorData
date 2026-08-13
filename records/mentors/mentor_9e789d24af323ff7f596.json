@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2a937dfb58de87c822bb"
+      ],
+      "ended_at": null,
+      "id": "aff_12dcb9d5c846239f5634",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/zhongping/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2a937dfb58de87c822bb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_12dcb9d5c846239f5634",
+      "claim_ids": [
+        "claim_2a937dfb58de87c822bb"
+      ],
+      "is_primary": true,
+      "normalized_value": "ping.zhong@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/zhongping/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ping.zhong@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2a937dfb58de87c822bb"
+    ],
+    "email": [
+      "claim_2a937dfb58de87c822bb"
+    ],
+    "name": [
+      "claim_2a937dfb58de87c822bb"
+    ],
+    "profile_url": [
+      "claim_2a937dfb58de87c822bb"
+    ],
+    "research_directions": [
+      "claim_2a937dfb58de87c822bb"
+    ],
+    "status": [
+      "claim_2a937dfb58de87c822bb"
+    ],
+    "title": [
+      "claim_2a937dfb58de87c822bb"
+    ]
+  },
+  "id": "mentor_9e789d24af323ff7f596",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2a937dfb58de87c822bb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "钟萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_12dcb9d5c846239f5634",
+      "claim_ids": [
+        "claim_2a937dfb58de87c822bb"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/zhongping/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能与具身智能、区块链、物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/zhongping/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

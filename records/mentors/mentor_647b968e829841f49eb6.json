@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8aa6e306edfe42ad5ea9"
+      ],
+      "ended_at": null,
+      "id": "aff_6bbf8eda618069a1d4d7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_a2b85de6b5e5e6bb23ea",
+      "source_url": "https://faculty.csu.edu.cn/chenyuedan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_8aa6e306edfe42ad5ea9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6bbf8eda618069a1d4d7",
+      "claim_ids": [
+        "claim_8aa6e306edfe42ad5ea9"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenyuedan@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/chenyuedan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenyuedan@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8aa6e306edfe42ad5ea9"
+    ],
+    "email": [
+      "claim_8aa6e306edfe42ad5ea9"
+    ],
+    "name": [
+      "claim_8aa6e306edfe42ad5ea9"
+    ],
+    "profile_url": [
+      "claim_8aa6e306edfe42ad5ea9"
+    ],
+    "recent_papers": [
+      "claim_8aa6e306edfe42ad5ea9"
+    ],
+    "research_directions": [
+      "claim_8aa6e306edfe42ad5ea9"
+    ],
+    "status": [
+      "claim_8aa6e306edfe42ad5ea9"
+    ]
+  },
+  "id": "mentor_647b968e829841f49eb6",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8aa6e306edfe42ad5ea9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈玥丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6bbf8eda618069a1d4d7",
+      "claim_ids": [
+        "claim_8aa6e306edfe42ad5ea9"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/chenyuedan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "G-SPAC: A More Granular Greedy Graph Partition Algorithm with Spatial Locality and Judgment-aware Edge Folding. SCIENCE CHINA Information Sciences (CCF A类), in press, 2024, https://doi.org/10.1007/s11432-023-3916-0",
+    "Efficient Utilization of Multi-Threading Parallelism on Heterogeneous Systems for Sparse Tensor Contraction. IEEE Transactions on Parallel and Distributed Systems (CCF A类), 35(6): 889-900, 2024",
+    "A Survey of Accelerating Parallel Sparse Linear Algebra. ACM Computing Surveys (中科院1区, IF:14.324), 56(1): 21:1-21:38, 2024",
+    "Machine Learning-Based Kernel Selector for SpMV Optimization in Graph Analysis. ACM Transactions on Parallel Computing (top期刊, ACM并行计算旗舰期刊), 11(2):1-25, 2024",
+    "基于异构系统的多级并行稀疏张量向量乘算法. 计算机学报 (CCF T1类), 47(2): 441-455, 2024",
+    "大规模图神经网络研究综述. 计算机学报 (CCF T1类), 47(1): 148-171, 2024.",
+    "Exploiting Hierarchical Parallelism and Reusability in Tensor Kernel Processing on Heterogeneous HPC System.In the Proceedings of the 38th IEEE International Conference on Data Engineering (ICDE 2022) (CCF A类), Kuala Lumpur, Malaysia, May 9-12, 2022, pp. 2523-2536",
+    "fgSpMSpV: A Fine-grained Parallel SpMSpV Framework on HPC Platforms. ACM Transactions on Parallel Computing (top期刊, ACM并行计算旗舰期刊), 9(2):1-29, 2022"
+  ],
+  "research_directions": [
+    "高性能智能计算、高性能计算、AI计算、医学人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/chenyuedan/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_66fe4be1c3c50121ed81"
+      ],
+      "ended_at": null,
+      "id": "aff_aabac0ed4804e10b0faa",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/zhaorongchang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_66fe4be1c3c50121ed81"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aabac0ed4804e10b0faa",
+      "claim_ids": [
+        "claim_66fe4be1c3c50121ed81"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaorc@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/zhaorongchang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaorc@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_66fe4be1c3c50121ed81"
+    ],
+    "email": [
+      "claim_66fe4be1c3c50121ed81"
+    ],
+    "name": [
+      "claim_66fe4be1c3c50121ed81"
+    ],
+    "profile_url": [
+      "claim_66fe4be1c3c50121ed81"
+    ],
+    "recent_papers": [
+      "claim_66fe4be1c3c50121ed81"
+    ],
+    "research_directions": [
+      "claim_66fe4be1c3c50121ed81"
+    ],
+    "status": [
+      "claim_66fe4be1c3c50121ed81"
+    ],
+    "title": [
+      "claim_66fe4be1c3c50121ed81"
+    ]
+  },
+  "id": "mentor_8d3429bc1d4028d60ca4",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_66fe4be1c3c50121ed81"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵荣昌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aabac0ed4804e10b0faa",
+      "claim_ids": [
+        "claim_66fe4be1c3c50121ed81"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/zhaorongchang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "MIST: Multi-Instance Selective Transformer for Histopathological Subtype Prediction. Medical Image Analysis(MedIA), In Press. 2024.",
+    "Diagnosing glaucoma on imbalanced data with self-ensemble dual-curriculum learning. Medical Image Analysis (MedIA), 2022.",
+    "Confidence-Guided Weakly-Supervised Visual Evidence Discovering for Trustworthy Glaucoma Diagnosis, 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
+    "MS-EDL: Reliable Glaucoma Assessment via Sufficient Epistemic Uncertainty, 2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM).",
+    "Prognosis Forecast of Re-Irradiation for Recurrent Nasopharyngeal Carcinoma Based on Deep Learning Multi-Modal Information Fusion, IEEE Journal of Biomedical and Health Informatics (IEEE JBHI), VOL. 27, NO. 12, DECEMBER 2023.",
+    "CT synthesis from MR in the pelvic area using Residual Transformer Conditional GAN. Comput. Medical Imaging Graph. 103: 102150 (2023)",
+    "Dual Gradient Alignment for Unsupervised Domain Adaptation on Optic Disc and Cup Segmentation, 2022 IEEE International Conference on Bioinformatics and Biomedicine (BIBM),1405-1410.",
+    "EGDCL: An Adaptive Curriculum Learning Framework for Unbiased Glaucoma Diagnosis, ECCV 2020."
+  ],
+  "research_directions": [
+    "医学图像分析、计算机视觉与模式识别、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/zhaorongchang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

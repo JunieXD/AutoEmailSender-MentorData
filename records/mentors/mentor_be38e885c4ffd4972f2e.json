@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8ea404ae259fbb0a4228"
+      ],
+      "ended_at": null,
+      "id": "aff_b699e5a10b43e95a60c9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/shenhailan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8ea404ae259fbb0a4228"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b699e5a10b43e95a60c9",
+      "claim_ids": [
+        "claim_8ea404ae259fbb0a4228"
+      ],
+      "is_primary": true,
+      "normalized_value": "hailansh@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/shenhailan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hailansh@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8ea404ae259fbb0a4228"
+    ],
+    "email": [
+      "claim_8ea404ae259fbb0a4228"
+    ],
+    "name": [
+      "claim_8ea404ae259fbb0a4228"
+    ],
+    "profile_url": [
+      "claim_8ea404ae259fbb0a4228"
+    ],
+    "research_directions": [
+      "claim_8ea404ae259fbb0a4228"
+    ],
+    "status": [
+      "claim_8ea404ae259fbb0a4228"
+    ],
+    "title": [
+      "claim_8ea404ae259fbb0a4228"
+    ]
+  },
+  "id": "mentor_be38e885c4ffd4972f2e",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8ea404ae259fbb0a4228"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈海澜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b699e5a10b43e95a60c9",
+      "claim_ids": [
+        "claim_8ea404ae259fbb0a4228"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/shenhailan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、医学图像分析、医学数据处理、目标检测、个性化推荐、医学数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/shenhailan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

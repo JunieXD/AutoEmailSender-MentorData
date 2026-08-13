@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cf2be011e88e875544a1"
+      ],
+      "ended_at": null,
+      "id": "aff_367b3b10f04b10471b69",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_a2b85de6b5e5e6bb23ea",
+      "source_url": "https://faculty.csu.edu.cn/chenxianlai/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cf2be011e88e875544a1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_367b3b10f04b10471b69",
+      "claim_ids": [
+        "claim_cf2be011e88e875544a1"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenxianlai@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/chenxianlai/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenxianlai@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cf2be011e88e875544a1"
+    ],
+    "email": [
+      "claim_cf2be011e88e875544a1"
+    ],
+    "name": [
+      "claim_cf2be011e88e875544a1"
+    ],
+    "profile_url": [
+      "claim_cf2be011e88e875544a1"
+    ],
+    "recent_papers": [
+      "claim_cf2be011e88e875544a1"
+    ],
+    "research_directions": [
+      "claim_cf2be011e88e875544a1"
+    ],
+    "status": [
+      "claim_cf2be011e88e875544a1"
+    ],
+    "title": [
+      "claim_cf2be011e88e875544a1"
+    ]
+  },
+  "id": "mentor_01484c99f088dc76bcf0",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cf2be011e88e875544a1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈先来"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_367b3b10f04b10471b69",
+      "claim_ids": [
+        "claim_cf2be011e88e875544a1"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/chenxianlai/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "解剖信息增强的医学视觉定位方法[J]. 北京.数据分析与知识发现, 2026, 10 (3) : 37-48.",
+    "HSF-Net: Hybrid spatial and frequency domain transformer network for polyp segmentation[J].Neurocomputing, 2026, 664: 132100.",
+    "BioDPP: Dynamic Prompt Policy Learning for Biomedical Vision-Language Models[C].The 40th AAAI Conference on Artificial Intelligence, 2026",
+    "HiGraphSum: Hierarchical Hypergraph-Based Dual-Stage Automatic Summarization of Discharge Summaries[C].2025 IEEE International Conference on Bioinformatics and Biomedicine, 2025",
+    "Infrared absorption spectroscopy-based non-invasive blood glucose monitoring technology: A comprehensive review[J].Biomedical Signal Processing and Control, 2025, 106: 107750.",
+    "Improvement of Non-invasive Glucose Estimation Accuracy through Multi-wavelength PPG[J].IEEE Journal of Biomedical and Health Informatics, 2025, 29 (8) : 5465-5478.",
+    "A survey on biomedical automatic text summarization with large language models[J].Information Processing & Management, 2025, 62 (5) : 104216.",
+    "A few-shot link prediction framework to drug repurposing using multi-level attention network[J].Computers in Biology and Medicine, 2024, 170: 107936."
+  ],
+  "research_directions": [
+    "医学大数据、医学人工智能、医学知识组织、自然语言处理、计算机视觉、多模态数据分析、医学数据安全与隐私保护、医学时序信息分析、医学自然语言处理、医学影像智能分析、数据安全与隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/chenxianlai/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

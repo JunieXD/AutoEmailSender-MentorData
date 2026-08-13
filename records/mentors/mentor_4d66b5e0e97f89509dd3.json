@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1eeb177eb05965c3741a"
+      ],
+      "ended_at": null,
+      "id": "aff_c3c919f44186f5817167",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/wuwei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_1eeb177eb05965c3741a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c3c919f44186f5817167",
+      "claim_ids": [
+        "claim_1eeb177eb05965c3741a"
+      ],
+      "is_primary": true,
+      "normalized_value": "wei.wu@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/wuwei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wei.wu@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1eeb177eb05965c3741a"
+    ],
+    "email": [
+      "claim_1eeb177eb05965c3741a"
+    ],
+    "name": [
+      "claim_1eeb177eb05965c3741a"
+    ],
+    "profile_url": [
+      "claim_1eeb177eb05965c3741a"
+    ],
+    "recent_papers": [
+      "claim_1eeb177eb05965c3741a"
+    ],
+    "research_directions": [
+      "claim_1eeb177eb05965c3741a"
+    ],
+    "status": [
+      "claim_1eeb177eb05965c3741a"
+    ]
+  },
+  "id": "mentor_4d66b5e0e97f89509dd3",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1eeb177eb05965c3741a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴炜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c3c919f44186f5817167",
+      "claim_ids": [
+        "claim_1eeb177eb05965c3741a"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/wuwei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Unmasking Bots in Higher Dimensions: Message Passing over Simplexes for Bot Detection[C].WWW 2026 (CCF A), 2026: 4713-4721.",
+    "Beyond Node-Centric Modeling: Sketching Signed Networks with Simplicial Complexes[C].NeurIPS 2025 (CCF A): 131394-131417.",
+    "Enhancing Long-Form Question Answering via Reflection with Question Decomposition[J].Information Processing & Management (CCF B), 2025, 62 (6) : 104274.",
+    "Heterogeneous Graph Embedding Made More Practical[C].SIGIR 2025 (CCF A), 2025: 688-697.",
+    "Sketching Very Large-scale Dynamic Attributed Networks More Practically[C].WWW 2025 (CCF A), 2025: 5264 - 5274.",
+    "Simple and Efficient Hash Sketching for Tree-Structured Data[J].Expert Systems with Applications (CCF C), 2025, 267: 125973.",
+    "Time- and Space-Efficiently Sketching Billion-Scale Attributed Networks[J].IEEE Transactions on Knowledge and Data Engineering (CCF A), 2025, 37 (2) : 966-978.",
+    "SCHash: Speedy Simplicial Complex Neural Networks via Randomized Hashing[C].SIGIR 2023 (CCF A): 1609-1618."
+  ],
+  "research_directions": [
+    "人工智能(Artificial Intelligence)、大数据(Big Data)、数据挖掘(Data Mining)、图挖掘(Graph Mining)、大模型(Large Language Models)、算法(Algorithms)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/wuwei/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

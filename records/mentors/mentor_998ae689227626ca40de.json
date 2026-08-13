@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d41ca9e2a7de99892317"
+      ],
+      "ended_at": null,
+      "id": "aff_22e5bb042ed0743d5146",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/lishaohua1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_d41ca9e2a7de99892317"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_22e5bb042ed0743d5146",
+      "claim_ids": [
+        "claim_d41ca9e2a7de99892317"
+      ],
+      "is_primary": true,
+      "normalized_value": "shaohua.li@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/lishaohua1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shaohua.li@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d41ca9e2a7de99892317"
+    ],
+    "email": [
+      "claim_d41ca9e2a7de99892317"
+    ],
+    "name": [
+      "claim_d41ca9e2a7de99892317"
+    ],
+    "profile_url": [
+      "claim_d41ca9e2a7de99892317"
+    ],
+    "research_directions": [
+      "claim_d41ca9e2a7de99892317"
+    ],
+    "status": [
+      "claim_d41ca9e2a7de99892317"
+    ],
+    "title": [
+      "claim_d41ca9e2a7de99892317"
+    ]
+  },
+  "id": "mentor_998ae689227626ca40de",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d41ca9e2a7de99892317"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李少华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_22e5bb042ed0743d5146",
+      "claim_ids": [
+        "claim_d41ca9e2a7de99892317"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/lishaohua1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "NP难问题的参数算法与参数复杂性、图算法设计与分析、机器学习算法理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/lishaohua1/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

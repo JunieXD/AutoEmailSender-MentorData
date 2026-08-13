@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7fcace2328b5d390c741"
+      ],
+      "ended_at": null,
+      "id": "aff_c53728164632419d7988",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/daipeishan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7fcace2328b5d390c741"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c53728164632419d7988",
+      "claim_ids": [
+        "claim_7fcace2328b5d390c741"
+      ],
+      "is_primary": true,
+      "normalized_value": "daipeishan@163.com",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/daipeishan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "daipeishan@163.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7fcace2328b5d390c741"
+    ],
+    "email": [
+      "claim_7fcace2328b5d390c741"
+    ],
+    "name": [
+      "claim_7fcace2328b5d390c741"
+    ],
+    "profile_url": [
+      "claim_7fcace2328b5d390c741"
+    ],
+    "recent_papers": [
+      "claim_7fcace2328b5d390c741"
+    ],
+    "research_directions": [
+      "claim_7fcace2328b5d390c741"
+    ],
+    "status": [
+      "claim_7fcace2328b5d390c741"
+    ],
+    "title": [
+      "claim_7fcace2328b5d390c741"
+    ]
+  },
+  "id": "mentor_2f06c43f0082183cb15d",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7fcace2328b5d390c741"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "戴培山"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c53728164632419d7988",
+      "claim_ids": [
+        "claim_7fcace2328b5d390c741"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/daipeishan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Deep learning models for ischemic stroke lesion segmentation in medical images: A survey, Computers in Biology and Medicine, 2024.(JCR Q1)",
+    "Deep learning-based magnetic resonance image super-resolution: A survey,Neural Computing and Applications, 2024",
+    "Classification of Recurrent Major Depressive Disorder Using a Residual Denoising Autoencoder Framework: Insights from Large-Scale Multisite fMRI Data, Computer Methods and Programs in Biomedicine, 2024.(JCR Q1)",
+    "Classification of MDD using a Transformer classifier with large-scale multi-site resting-state fMRI data, Human Brain Mapping, 2023.(JCR Q1)",
+    "Classification of recurrent major depressive disorder using a new time series feature extraction method through multisite rs-fMRI data, Journal of Affective Disorders, 2023.(JCR Q1)",
+    "Semi-supervised OCT lesion segmentation via transformation-consistent with uncertainty and self-deep supervision, Biomedical Optics Express, 2023.",
+    "AC-E Network: Attentive Context-Enhanced Network for Liver Segmentation, IEEE Journal of Biomedical and Health Informatics, 2023.(JCR Q1)",
+    "Marginal samples for knowledge distillation, Neurocomputing, 2022, 507."
+  ],
+  "research_directions": [
+    "人脑图像处理与分析、多模态医学图像分析与处理、人工智能在脑认知科学中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/daipeishan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

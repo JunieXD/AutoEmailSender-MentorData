@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_109fc240de0f8fba3223"
+      ],
+      "ended_at": null,
+      "id": "aff_4fa900d9ca3f51f7ba81",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/zhangshigeng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_109fc240de0f8fba3223"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4fa900d9ca3f51f7ba81",
+      "claim_ids": [
+        "claim_109fc240de0f8fba3223"
+      ],
+      "is_primary": true,
+      "normalized_value": "sgzhang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/zhangshigeng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sgzhang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_109fc240de0f8fba3223"
+    ],
+    "email": [
+      "claim_109fc240de0f8fba3223"
+    ],
+    "name": [
+      "claim_109fc240de0f8fba3223"
+    ],
+    "profile_url": [
+      "claim_109fc240de0f8fba3223"
+    ],
+    "research_directions": [
+      "claim_109fc240de0f8fba3223"
+    ],
+    "status": [
+      "claim_109fc240de0f8fba3223"
+    ],
+    "title": [
+      "claim_109fc240de0f8fba3223"
+    ]
+  },
+  "id": "mentor_0247db4142f319b57561",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_109fc240de0f8fba3223"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张士庚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4fa900d9ca3f51f7ba81",
+      "claim_ids": [
+        "claim_109fc240de0f8fba3223"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/zhangshigeng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "物联网、无线感知、物联网安全、人工智能安全、RFID协议设计与优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/zhangshigeng/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

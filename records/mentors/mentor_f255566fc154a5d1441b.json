@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_38fb4b36af672a04d98d"
+      ],
+      "ended_at": null,
+      "id": "aff_9ef5b3624b8a14219271",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/shenchengchao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_38fb4b36af672a04d98d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9ef5b3624b8a14219271",
+      "claim_ids": [
+        "claim_38fb4b36af672a04d98d"
+      ],
+      "is_primary": true,
+      "normalized_value": "scc.cs@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/shenchengchao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "scc.cs@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_38fb4b36af672a04d98d"
+    ],
+    "email": [
+      "claim_38fb4b36af672a04d98d"
+    ],
+    "name": [
+      "claim_38fb4b36af672a04d98d"
+    ],
+    "profile_url": [
+      "claim_38fb4b36af672a04d98d"
+    ],
+    "recent_papers": [
+      "claim_38fb4b36af672a04d98d"
+    ],
+    "research_directions": [
+      "claim_38fb4b36af672a04d98d"
+    ],
+    "status": [
+      "claim_38fb4b36af672a04d98d"
+    ]
+  },
+  "id": "mentor_f255566fc154a5d1441b",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_38fb4b36af672a04d98d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈成超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9ef5b3624b8a14219271",
+      "claim_ids": [
+        "claim_38fb4b36af672a04d98d"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/shenchengchao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hao Tang, Chengchao Shen*. Learning Compact Vision Tokens for Efficient Large Multimodal Models. Arxiv, 2025.",
+    "Chengchao Shen, Hourun Zhu, Gongfan Fang, Jianxin Wang, Xinchao Wang. Diversity-Guided MLP Reduction for Efficient Large Vision Transformers. Arxiv, 2025.",
+    "Hourun Zhu,Chengchao Shen*. SDMPrune: Self-Distillation MLP Pruning for Efficient Large Language Models. Arxiv, 2025.",
+    "Hao Tang, Dawei Liu, Chengchao Shen*. Data-Efficient Multi-Scale Fusion Vision Transformer.Pattern Recognition (中科院一区, IF=9.1),2025.",
+    "Chengchao Shen, Jianzhong Chen, Jianxin Wang. Multi-Grained Contrast for Data-Efficient Unsupervised Representation Learning. Pattern Recognition (中科院一区, IF=9.1), 2025.",
+    "Chengchao Shen, Dawei Liu, Hao Tang, Zhe Qu, Jianxin Wang. Inter-Instance Similarity Modeling for Contrastive Learning. Arxiv, 2023.",
+    "Chengchao Shen, Jianzhong Chen, Shu Wang, Hulin Kuang, Jin Liu, Jianxin Wang. Asymmetric Patch Sampling for Contrastive Learning. Pattern Recognition (中科院一区, IF=9.1), 2025.",
+    "Chengchao Shen, Dawei Liu, Jianxin Wang. Multiple Object Stitching for Unsupervised Representation Learning. Pattern Recognition (中科院一区, IF=9.1), 2025."
+  ],
+  "research_directions": [
+    "主要从事计算机视觉研究,涉及视觉/多模态大模型、LLM Reasoning、无监督学习、模型推理加速等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/shenchengchao/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

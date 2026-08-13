@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a1e3460dff5127fae1bc"
+      ],
+      "ended_at": null,
+      "id": "aff_a46321d63e69bec818c6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/liujin1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a1e3460dff5127fae1bc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a46321d63e69bec818c6",
+      "claim_ids": [
+        "claim_a1e3460dff5127fae1bc"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujin06@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/liujin1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liujin06@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a1e3460dff5127fae1bc"
+    ],
+    "email": [
+      "claim_a1e3460dff5127fae1bc"
+    ],
+    "name": [
+      "claim_a1e3460dff5127fae1bc"
+    ],
+    "profile_url": [
+      "claim_a1e3460dff5127fae1bc"
+    ],
+    "recent_papers": [
+      "claim_a1e3460dff5127fae1bc"
+    ],
+    "research_directions": [
+      "claim_a1e3460dff5127fae1bc"
+    ],
+    "status": [
+      "claim_a1e3460dff5127fae1bc"
+    ],
+    "title": [
+      "claim_a1e3460dff5127fae1bc"
+    ]
+  },
+  "id": "mentor_e76ce3130e20fc245ae1",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a1e3460dff5127fae1bc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘锦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a46321d63e69bec818c6",
+      "claim_ids": [
+        "claim_a1e3460dff5127fae1bc"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/liujin1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Highly Undersampled MRI Reconstruction via a Single Posterior Sampling of Diffusion Models",
+    "Towards Integrating Federated Learning with Split Learning via Spatio-temporal Graph Framework for Brain Disease Prediction",
+    "Inspired by Pathogenic Mechanisms: A Novel Gradual Multi-modal Fusion Framework for Mild Cognitive Impairment Diagnosis",
+    "Tetra-Orientated Mamba with T2-FLAIR Mismatch Features for Glioma Segmentation, IDH Genotyping, and Grading",
+    "MiCo: Multiple Instance Learning with Context-Aware Clustering for Whole Slide Image Analysis",
+    "Multi-modal Multi-kernel Graph Learning for Autism Prediction and Biomarker Discovery",
+    "Source-free Domain Adaptation for Millimeter Wave Radar based Human Activity Recognition",
+    "CAKE: a flexible self-supervised framework for enhancing cell visualization, clustering and rare cell identification"
+  ],
+  "research_directions": [
+    "人工智能、医疗及健康大数据分析与挖掘、健康监测智能设备研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/liujin1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

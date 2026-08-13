@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cedc8c86f8d3a4ee047d"
+      ],
+      "ended_at": null,
+      "id": "aff_d312b0f244463a9ab582",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_6664fac4e86acfc76559",
+      "source_url": "http://faculty.csu.edu.cn/kuixiaoyan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cedc8c86f8d3a4ee047d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d312b0f244463a9ab582",
+      "claim_ids": [
+        "claim_cedc8c86f8d3a4ee047d"
+      ],
+      "is_primary": true,
+      "normalized_value": "xykui@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/kuixiaoyan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xykui@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ],
+    "email": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ],
+    "name": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ],
+    "profile_url": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ],
+    "recent_papers": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ],
+    "research_directions": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ],
+    "status": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ],
+    "title": [
+      "claim_cedc8c86f8d3a4ee047d"
+    ]
+  },
+  "id": "mentor_c0d5a1f6a94fb005695a",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cedc8c86f8d3a4ee047d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "奎晓燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d312b0f244463a9ab582",
+      "claim_ids": [
+        "claim_cedc8c86f8d3a4ee047d"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/kuixiaoyan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "TFKAN: Time-frequency KAN for long-term time series forecasting. Neurocomputing (IF: 6.5, 中科院二区Top), 2026, Accepted.",
+    "MHDP:Discover driver genes based on Multi-view Hypergraph and Dynamic Reward-Penalty Feature Fusion Model, IEEE Transactions on Computational Biology and Bioinformatics(JCR 1区,CCF-B类期刊),2026,Accpted.",
+    "TEM-Net: A Tri-Channel Edge-Aware Multi-Scale Network for Thyroid Nodule Segmentation in Ultrasound Images, Bioengineering(JCR 2区,IF 4.36), 2026 Accepted",
+    "WaveEdge-Net: Hybrid Wavelet Attention and Edge-Aware Enhancement for Automatic Tumor Segmentation, Biomedical Signal Processing and Control (中科院2区,IF 5.7) ,2026,Accpted",
+    "Cycle-LVDM: Cycle-Consistent Latent Variational Diffusion Model for Unpaired Medical Image Translation, 《Meta-Radiology》,2026年已录用",
+    "Memory-Guided Random-Direction Feature Disentanglement Model for Multi-Phase MRI Translation, MICCAI 2026( 医学影像顶会),2026 Accpted",
+    "A comprehensive survey on magnetic resonance image reconstruction[J]. Image and Vision Computing, 2025: 105832. JCR 1, IF 4.2",
+    "基于频域交互与密集融合的人脸超分辨率重建. 《模式识别与人工智能》(复合影响因子: 2.145,CCF-T2),2026,已录用"
+  ],
+  "research_directions": [
+    "模式识别与图像处理、机器视觉与智慧医疗、医疗大数据、智能医学影像分析、数据可视化与可视分析、教育信息化等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/kuixiaoyan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0a672e91988766aa6964"
+      ],
+      "ended_at": null,
+      "id": "aff_0c838c4c38c9acd98d6a",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/liaozhifang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0a672e91988766aa6964"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0c838c4c38c9acd98d6a",
+      "claim_ids": [
+        "claim_0a672e91988766aa6964"
+      ],
+      "is_primary": true,
+      "normalized_value": "zfliao@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/liaozhifang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zfliao@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0a672e91988766aa6964"
+    ],
+    "email": [
+      "claim_0a672e91988766aa6964"
+    ],
+    "name": [
+      "claim_0a672e91988766aa6964"
+    ],
+    "profile_url": [
+      "claim_0a672e91988766aa6964"
+    ],
+    "research_directions": [
+      "claim_0a672e91988766aa6964"
+    ],
+    "status": [
+      "claim_0a672e91988766aa6964"
+    ],
+    "title": [
+      "claim_0a672e91988766aa6964"
+    ]
+  },
+  "id": "mentor_a256be2c0a7fe0a9483d",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0a672e91988766aa6964"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "廖志芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0c838c4c38c9acd98d6a",
+      "claim_ids": [
+        "claim_0a672e91988766aa6964"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/liaozhifang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能软件工程(AI4SE):代码评审自动化、软件仓库挖掘与分析、软件智能推荐等",
+    "医学影像分析计算:医学影像域泛化、医学影像域适应、跨模态医学影像分析等",
+    "知识图谱与智能推荐:知识图谱推荐、大模型推荐等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/liaozhifang/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

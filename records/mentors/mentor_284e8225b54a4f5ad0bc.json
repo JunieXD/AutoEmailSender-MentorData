@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f7d2aa1ef7f4f1d55b39"
+      ],
+      "ended_at": null,
+      "id": "aff_22267c8ca7737b0845cd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_a2b85de6b5e5e6bb23ea",
+      "source_url": "https://faculty.csu.edu.cn/zhaohaochen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f7d2aa1ef7f4f1d55b39"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_22267c8ca7737b0845cd",
+      "claim_ids": [
+        "claim_f7d2aa1ef7f4f1d55b39"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaohaochen@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/zhaohaochen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaohaochen@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ],
+    "email": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ],
+    "name": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ],
+    "profile_url": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ],
+    "recent_papers": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ],
+    "research_directions": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ],
+    "status": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ],
+    "title": [
+      "claim_f7d2aa1ef7f4f1d55b39"
+    ]
+  },
+  "id": "mentor_284e8225b54a4f5ad0bc",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f7d2aa1ef7f4f1d55b39"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵皓晨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_22267c8ca7737b0845cd",
+      "claim_ids": [
+        "claim_f7d2aa1ef7f4f1d55b39"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/zhaohaochen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Multi-Modal Feature Fusion Method Enhanced by Dynamic Sample Graphs for Predicting Drug Responses",
+    "MVCASyn: Predicting Synergistic Drug Combinations Based on Multi-View Learning and Cross-Attention Mechanism",
+    "MMFF-DDI: a Multi-Modal Fusion Framework for Drug-Drug Interaction Event Prediction with Contrastive Learning",
+    "MRLF-DDI: A Multi-view Representation Learning Framework for Drug-Drug Interaction Event Prediction",
+    "ColdstartCPI: Induced-fit theory-guided DTI predictive model with improved generalization performance",
+    "Probiotic–Disease Association Prediction via Cross-Modal Feature Aggregation",
+    "A deep learning-based method for predicting the frequency classes of drug side effects based on multi-source similarity fusion",
+    "AGPred: An End-to-End Deep Learning Model for Predicting Drug Approvals in Clinical Trials Based on Molecular Features"
+  ],
+  "research_directions": [
+    "利用人工智能算法解决生物信息学问题,包括小分子药物发现、肽药物识别与功能预测、药物生物效应属性预测、药物信息学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/zhaohaochen/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:03Z"
+}
