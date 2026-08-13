@@ -1,0 +1,155 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_f500442ee874d3365fae",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:34:02Z",
+          "organization_id": "org_auto_67dcda45818a3339453e",
+          "school": "计算机科学与技术学院",
+          "source_url": "https://person.zju.edu.cn/msong",
+          "status": "current",
+          "title": "教授",
+          "university": "浙江大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_f500442ee874d3365fae",
+          "email": "songml@zju.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:34:02Z",
+          "source_url": "https://person.zju.edu.cn/msong"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/66"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "songml@zju.edu.cn",
+      "id": "mentor_5d7b9113d903ff804d30",
+      "last_verified_at": "2026-08-11T13:34:02Z",
+      "name": "宋明黎",
+      "profile_url": "https://person.zju.edu.cn/msong",
+      "recent_papers": [],
+      "research_direction": "人工智能、计算机视觉、机器学习",
+      "school": "计算机科学与技术学院",
+      "source_url": "http://www.cst.zju.edu.cn/szdw/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "浙江大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_68e275773f3cc1afedd5",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:34:02Z",
+          "organization_id": "org_auto_67dcda45818a3339453e",
+          "school": "计算机科学与技术学院",
+          "source_url": "https://person.zju.edu.cn/0011057",
+          "status": "current",
+          "title": "教授",
+          "university": "浙江大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_68e275773f3cc1afedd5",
+          "email": "wusai@zju.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:34:02Z",
+          "source_url": "https://person.zju.edu.cn/0011057"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/66"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "wusai@zju.edu.cn",
+      "id": "mentor_88740508ae43d6752124",
+      "last_verified_at": "2026-08-11T13:34:02Z",
+      "name": "伍赛",
+      "profile_url": "https://person.zju.edu.cn/0011057",
+      "recent_papers": [],
+      "research_direction": "数据库、大数据处理、数据库智能化、分布式数据处理",
+      "school": "计算机科学与技术学院",
+      "source_url": "http://www.cst.zju.edu.cn/szdw/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "浙江大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_f7106d7d17245e2c638e",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:34:02Z",
+          "organization_id": "org_auto_67dcda45818a3339453e",
+          "school": "计算机科学与技术学院",
+          "source_url": "https://person.zju.edu.cn/gaoyj_cn",
+          "status": "current",
+          "title": "教授",
+          "university": "浙江大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_f7106d7d17245e2c638e",
+          "email": "gaoyj@zju.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-11T13:34:02Z",
+          "source_url": "https://person.zju.edu.cn/gaoyj_cn"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/66"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "gaoyj@zju.edu.cn",
+      "id": "mentor_fcb889eeadba07407825",
+      "last_verified_at": "2026-08-11T13:34:02Z",
+      "name": "高云君",
+      "profile_url": "https://person.zju.edu.cn/gaoyj_cn",
+      "recent_papers": [],
+      "research_direction": "数据库、大数据管理与分析、DB与AI融合",
+      "school": "计算机科学与技术学院",
+      "source_url": "http://www.cst.zju.edu.cn/szdw/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "浙江大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_67dcda45818a3339453e",
+    "name": "计算机科学与技术学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_4fb345a9de00e5b3626b",
+    "name": "浙江大学"
+  }
+}
