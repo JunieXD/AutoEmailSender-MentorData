@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_2f17779afbd274e858bf",
+          "is_primary": true,
+          "observed_at": "2026-08-12T07:26:28Z",
+          "organization_id": "org_auto_4872c4c7ffb46d9df7f9",
+          "school": null,
+          "source_url": "https://faculty.xidian.edu.cn/WQ4/zh_CN/index.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "西安电子科技大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_2f17779afbd274e858bf",
+          "email": "qwang@xidian.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-12T07:26:28Z",
+          "source_url": "https://faculty.xidian.edu.cn/WQ4/zh_CN/index.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/80"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "qwang@xidian.edu.cn",
+      "id": "mentor_e6e2db6081e5ef008d2f",
+      "last_verified_at": "2026-08-12T07:26:28Z",
+      "name": "王泉",
+      "profile_url": "https://faculty.xidian.edu.cn/WQ4/zh_CN/index.htm",
+      "recent_papers": [],
+      "research_direction": "嵌入式计算、人机交互与可穿戴设备、计算机输入输出系统与安全",
+      "school": null,
+      "source_url": "https://faculty.xidian.edu.cn/xyjslb.jsp?urltype=tsites.CollegeTeacherList&wbtreeid=1001&st=0&id=1584&lang=zh_CN#collegeteacher",
+      "status": "active",
+      "title": "教授",
+      "university": "西安电子科技大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_4872c4c7ffb46d9df7f9",
+    "name": "西安电子科技大学",
+    "type": "university"
+  },
+  "university": {
+    "id": "org_auto_4872c4c7ffb46d9df7f9",
+    "name": "西安电子科技大学"
+  }
+}
