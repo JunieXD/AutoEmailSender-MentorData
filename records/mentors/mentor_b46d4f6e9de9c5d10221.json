@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d1ed11c00609272dfd13"
+      ],
+      "ended_at": null,
+      "id": "aff_23ffbd2ee3d14ba1beca",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0e/e0/c11250a528096/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d1ed11c00609272dfd13"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_23ffbd2ee3d14ba1beca",
+      "claim_ids": [
+        "claim_d1ed11c00609272dfd13"
+      ],
+      "is_primary": true,
+      "normalized_value": "lfzh@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0e/e0/c11250a528096/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lfzh@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d1ed11c00609272dfd13"
+    ],
+    "email": [
+      "claim_d1ed11c00609272dfd13"
+    ],
+    "name": [
+      "claim_d1ed11c00609272dfd13"
+    ],
+    "profile_url": [
+      "claim_d1ed11c00609272dfd13"
+    ],
+    "recent_papers": [
+      "claim_d1ed11c00609272dfd13"
+    ],
+    "research_directions": [
+      "claim_d1ed11c00609272dfd13"
+    ],
+    "status": [
+      "claim_d1ed11c00609272dfd13"
+    ],
+    "title": [
+      "claim_d1ed11c00609272dfd13"
+    ]
+  },
+  "id": "mentor_b46d4f6e9de9c5d10221",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d1ed11c00609272dfd13"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李凡长"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_23ffbd2ee3d14ba1beca",
+      "claim_ids": [
+        "claim_d1ed11c00609272dfd13"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0e/e0/c11250a528096/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Li Liu, Fanzhang Li:A Survey on Dynamic Fuzzy Machine Learning. ACM Comput. Surv., 55(7), 2023",
+    "Mengjuan Jiang, Fanzhang Li:Lie group continual meta learning algorithm Mengjuan Jiang, Fanzhang Li. apin, 52(10):10965-10978, 2022"
+  ],
+  "research_directions": [
+    "李群机器学习,认知软件理论与方法、大数据科学与技术、人工智能、动态模糊机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0e/e0/c11250a528096/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

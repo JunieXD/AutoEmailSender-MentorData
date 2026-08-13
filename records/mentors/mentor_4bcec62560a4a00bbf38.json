@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4a878b1ec60f36942ccf"
+      ],
+      "ended_at": null,
+      "id": "aff_d38da742e58b7cf6b06e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/10/3f/c11250a528447/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4a878b1ec60f36942ccf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d38da742e58b7cf6b06e",
+      "claim_ids": [
+        "claim_4a878b1ec60f36942ccf"
+      ],
+      "is_primary": true,
+      "normalized_value": "zqcao@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/10/3f/c11250a528447/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zqcao@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4a878b1ec60f36942ccf"
+    ],
+    "email": [
+      "claim_4a878b1ec60f36942ccf"
+    ],
+    "name": [
+      "claim_4a878b1ec60f36942ccf"
+    ],
+    "profile_url": [
+      "claim_4a878b1ec60f36942ccf"
+    ],
+    "recent_papers": [
+      "claim_4a878b1ec60f36942ccf"
+    ],
+    "research_directions": [
+      "claim_4a878b1ec60f36942ccf"
+    ],
+    "status": [
+      "claim_4a878b1ec60f36942ccf"
+    ],
+    "title": [
+      "claim_4a878b1ec60f36942ccf"
+    ]
+  },
+  "id": "mentor_4bcec62560a4a00bbf38",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4a878b1ec60f36942ccf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹自强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d38da742e58b7cf6b06e",
+      "claim_ids": [
+        "claim_4a878b1ec60f36942ccf"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/10/3f/c11250a528447/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Document-level Event Factuality Identification via Machine Reading Comprehension Frameworks with Transfer Learning. COLING 2022",
+    "Document-level Event Factuality Identification via Reinforced Multi-Granularity Hierarchical Attention Networks. IJCAI 2022",
+    "Document-Level Event Factuality Identification via Adversarial Neural Network. NAACL 2019",
+    "Event Factuality Identification via Generative Adversarial Networks with Auxiliary Classification. IJCAI 2018",
+    "Speculation and Negation Scope Detection via Convolutional Neural Networks. EMNLP 2016"
+  ],
+  "research_directions": [
+    "自然语言处理、自然语言生成、多模态模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/10/3f/c11250a528447/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

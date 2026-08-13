@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3a8fd6686fbf7662604a"
+      ],
+      "ended_at": null,
+      "id": "aff_dd0a231d30215a34dbbb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0c/f9/c11250a527609/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3a8fd6686fbf7662604a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dd0a231d30215a34dbbb",
+      "claim_ids": [
+        "claim_3a8fd6686fbf7662604a"
+      ],
+      "is_primary": true,
+      "normalized_value": "tianxianer@gmail.com",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0c/f9/c11250a527609/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tianxianer@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3a8fd6686fbf7662604a"
+    ],
+    "email": [
+      "claim_3a8fd6686fbf7662604a"
+    ],
+    "name": [
+      "claim_3a8fd6686fbf7662604a"
+    ],
+    "profile_url": [
+      "claim_3a8fd6686fbf7662604a"
+    ],
+    "recent_papers": [
+      "claim_3a8fd6686fbf7662604a"
+    ],
+    "research_directions": [
+      "claim_3a8fd6686fbf7662604a"
+    ],
+    "status": [
+      "claim_3a8fd6686fbf7662604a"
+    ],
+    "title": [
+      "claim_3a8fd6686fbf7662604a"
+    ]
+  },
+  "id": "mentor_4944db49edef973b904a",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3a8fd6686fbf7662604a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "洪宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dd0a231d30215a34dbbb",
+      "claim_ids": [
+        "claim_3a8fd6686fbf7662604a"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0c/f9/c11250a527609/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xu M. and Hong Y (Corresponding Author). 2022. Sub-word alignment is still useful: A vest-pocket method for enhancing low-resource machine translation. ACL: 613-619.",
+    "Li Z., Hong Y (Corresponding Author)., Wang J., He S. and Zhou G. 2022. Unregulated Chinese-to-English data expansion does not work for neural event detection. COLING: 2633-2638.",
+    "Xing X., Hong Y (Corresponding Author)., Xu M., Yao J. and Zhou G. 2022. Taking actions separately: A bidirectionally-adaptive transfer learning method for low-resource neural machine translation. COLING: 4481-4491.",
+    "Zhou S., Xia Q., Li Z., Zhang Y., Hong Y. and Zhang M. 2022. Fast and accurate end-to-end span-based semantic role labeling as word-based graph parsing. COLING: 4160-4171.",
+    "Dou Z., Hong Y (Corresponding Author)., Sun Y. and Zhou G. 2021. CVAE-based re-anchoring for implicit discourse relation classification. EMNLP: 1275-1283."
+  ],
+  "research_directions": [
+    "自然语言处理、信息抽取与篇章理解、自动问答、低资源机器翻译"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0c/f9/c11250a527609/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

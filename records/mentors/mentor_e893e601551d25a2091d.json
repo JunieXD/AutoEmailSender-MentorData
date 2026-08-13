@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e8c5f49a46103ed8c136"
+      ],
+      "ended_at": null,
+      "id": "aff_67a9353ab800133a1823",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/11/9c/c11250a528796/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e8c5f49a46103ed8c136"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_67a9353ab800133a1823",
+      "claim_ids": [
+        "claim_e8c5f49a46103ed8c136"
+      ],
+      "is_primary": true,
+      "normalized_value": "hlwang@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/11/9c/c11250a528796/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hlwang@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e8c5f49a46103ed8c136"
+    ],
+    "email": [
+      "claim_e8c5f49a46103ed8c136"
+    ],
+    "name": [
+      "claim_e8c5f49a46103ed8c136"
+    ],
+    "profile_url": [
+      "claim_e8c5f49a46103ed8c136"
+    ],
+    "recent_papers": [
+      "claim_e8c5f49a46103ed8c136"
+    ],
+    "research_directions": [
+      "claim_e8c5f49a46103ed8c136"
+    ],
+    "status": [
+      "claim_e8c5f49a46103ed8c136"
+    ],
+    "title": [
+      "claim_e8c5f49a46103ed8c136"
+    ]
+  },
+  "id": "mentor_e893e601551d25a2091d",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e8c5f49a46103ed8c136"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王红玲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_67a9353ab800133a1823",
+      "claim_ids": [
+        "claim_e8c5f49a46103ed8c136"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/11/9c/c11250a528796/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "全局自匹配机制的短文本摘要生成方法",
+    "Toward a unified framework for standard and update multi-document summarization",
+    "Semantic Role Labeling of Chinese Nominal Predicates with Dependency-Driven Constituent Parse Tree Structure",
+    "基于文本结构和图卷积网络的生成式摘要",
+    "基于篇章修辞结构的自动文摘连贯性研究"
+  ],
+  "research_directions": [
+    "自然语言处理、信息抽取"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/11/9c/c11250a528796/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

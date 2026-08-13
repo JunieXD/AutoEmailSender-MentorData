@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0da60e7b2423da487b3"
+      ],
+      "ended_at": null,
+      "id": "aff_e52d0b1661c5c1c0b5a8",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/bf/c1/c11250a704449/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0da60e7b2423da487b3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e52d0b1661c5c1c0b5a8",
+      "claim_ids": [
+        "claim_d0da60e7b2423da487b3"
+      ],
+      "is_primary": true,
+      "normalized_value": "liwei26@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/bf/c1/c11250a704449/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liwei26@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0da60e7b2423da487b3"
+    ],
+    "email": [
+      "claim_d0da60e7b2423da487b3"
+    ],
+    "name": [
+      "claim_d0da60e7b2423da487b3"
+    ],
+    "profile_url": [
+      "claim_d0da60e7b2423da487b3"
+    ],
+    "recent_papers": [
+      "claim_d0da60e7b2423da487b3"
+    ],
+    "research_directions": [
+      "claim_d0da60e7b2423da487b3"
+    ],
+    "status": [
+      "claim_d0da60e7b2423da487b3"
+    ],
+    "title": [
+      "claim_d0da60e7b2423da487b3"
+    ]
+  },
+  "id": "mentor_531180b9a35b04f304af",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0da60e7b2423da487b3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李威"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e52d0b1661c5c1c0b5a8",
+      "claim_ids": [
+        "claim_d0da60e7b2423da487b3"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/bf/c1/c11250a704449/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Wei Li, Borui Yang, Yujie Sun, Suyu Chen, Yuting Chen, and Liyao Xiang. CodeMark: Contextual and Natural Watermarking for Tracing Code Snippet Provenance. IEEE Transactions on Dependable and Secure Computing (TDSC'25) CCF-A",
+    "Wei Li, Borui Yang, Hangyu Ye, Liyao Xiang, Qingxiao Tao, Xinbing Wang, and Chenghu Zhou. Minitracker: Large-scale sensitive information tracking in mini apps. IEEE Transactions on Dependable and Secure Computing (TDSC'23) CCF-A",
+    "Wei Li, Haozhe Qin, Shuhan Yan, Beijun Shen, and Yuting Chen. Learning Code-Query Interaction for Enhancing Code Searches. International Conference on Software Maintenance and Evolution (ICSME'20) CCF-B",
+    "Wei Li, Shuhan Yan, Beijun Shen, and Yuting Chen. Reinforcement Learning of Code Search Sessions. Asia-Pacific Software Engineering Conference (APSEC'19) CCF-C",
+    "Borui Yang, Wei Li, Liyao Xiang, Bo Li. SrcMarker: Dual-Channel Source Code Watermarking via Scalable Code Transformations. IEEE Symposium on Security and Privacy (S&P'24) CCF-A"
+  ],
+  "research_directions": [
+    "面向软件安全的智能程序分析,程序静态分析、软件安全与隐私保护、代码溯源与软件水印、大语言模型增强的程序分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/bf/c1/c11250a704449/page.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

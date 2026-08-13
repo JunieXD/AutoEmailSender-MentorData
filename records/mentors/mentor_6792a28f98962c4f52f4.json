@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3d5ce475e90ae964a8e9"
+      ],
+      "ended_at": null,
+      "id": "aff_d2666223bd052106f71e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/fb/fe/c11250a654334/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_3d5ce475e90ae964a8e9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d2666223bd052106f71e",
+      "claim_ids": [
+        "claim_3d5ce475e90ae964a8e9"
+      ],
+      "is_primary": true,
+      "normalized_value": "dengtao@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/fb/fe/c11250a654334/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dengtao@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3d5ce475e90ae964a8e9"
+    ],
+    "email": [
+      "claim_3d5ce475e90ae964a8e9"
+    ],
+    "name": [
+      "claim_3d5ce475e90ae964a8e9"
+    ],
+    "profile_url": [
+      "claim_3d5ce475e90ae964a8e9"
+    ],
+    "recent_papers": [
+      "claim_3d5ce475e90ae964a8e9"
+    ],
+    "research_directions": [
+      "claim_3d5ce475e90ae964a8e9"
+    ],
+    "status": [
+      "claim_3d5ce475e90ae964a8e9"
+    ],
+    "title": [
+      "claim_3d5ce475e90ae964a8e9"
+    ]
+  },
+  "id": "mentor_6792a28f98962c4f52f4",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3d5ce475e90ae964a8e9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓滔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d2666223bd052106f71e",
+      "claim_ids": [
+        "claim_3d5ce475e90ae964a8e9"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/fb/fe/c11250a654334/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Rong Li, Tao Deng, Siwei Feng, Mingjie Sun, and Juncheng Jia, “ConSense: Continually Sensing Human Activity with WiFi via Growing and Picking,” in Proc. AAAI, 2025",
+    "Tao Deng, Zhanwei Yu, and Di Yuan, “Task offloading optimization in mobile edge computing under uncertain processing cycles and intermittent communications,” Computer Networks, 245: 110359, 2024",
+    "Tao Deng, Dongyu Chen, Juncheng Jia, Mianxiong Dong, Kaoru Ota, Zhanwei Yu, and Di Yuan, “Optimizing resource allocation and request routing for AI-generated content (AIGC) services in mobile edge networks with cell coupling,” IEEE Transactions on Vehicular Technology, vol. 73, no. 11, pp. 17911-17916, 2024.",
+    "Tao Deng, Zhanwei Yu, and Di Yuan, “Scheduling for multi-cell caching: Hit maximization subject to age of information,” IEEE Transactions on Vehicular Technology, Vol. 72, no. 9, pp. 12441-12446, 2023"
+  ],
+  "research_directions": [
+    "边缘智能、模型压缩、嵌入式AI系统、端侧小模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/fb/fe/c11250a654334/page.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

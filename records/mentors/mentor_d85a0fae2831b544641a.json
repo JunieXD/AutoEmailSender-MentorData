@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_332c0e18ac61bcbaa910"
+      ],
+      "ended_at": null,
+      "id": "aff_db89c3d38de25ccbcac4",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0e/4d/c11250a527949/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_332c0e18ac61bcbaa910"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_db89c3d38de25ccbcac4",
+      "claim_ids": [
+        "claim_332c0e18ac61bcbaa910"
+      ],
+      "is_primary": true,
+      "normalized_value": "pfli@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0e/4d/c11250a527949/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pfli@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_332c0e18ac61bcbaa910"
+    ],
+    "email": [
+      "claim_332c0e18ac61bcbaa910"
+    ],
+    "name": [
+      "claim_332c0e18ac61bcbaa910"
+    ],
+    "profile_url": [
+      "claim_332c0e18ac61bcbaa910"
+    ],
+    "recent_papers": [
+      "claim_332c0e18ac61bcbaa910"
+    ],
+    "research_directions": [
+      "claim_332c0e18ac61bcbaa910"
+    ],
+    "status": [
+      "claim_332c0e18ac61bcbaa910"
+    ],
+    "title": [
+      "claim_332c0e18ac61bcbaa910"
+    ]
+  },
+  "id": "mentor_d85a0fae2831b544641a",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_332c0e18ac61bcbaa910"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李培峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_db89c3d38de25ccbcac4",
+      "claim_ids": [
+        "claim_332c0e18ac61bcbaa910"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0e/4d/c11250a527949/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Peifeng Li; Guodong Zhou ; Joint Argument Inference in Chinese Event Extraction with Argument Consistency and Event Relevance, IEEE/ACM TRANSACTIONS ON AUDIO, SPEECH, AND LANGUAGE PROCESSING, 2016, 24(4): 612-622",
+    "Sheng Xu; Peifeng Li; Fang Kong; Qiaoming Zhu; Guodong Zhou ; Topic Tensor Network for Implicit Discourse Relation Recognition in Chinese, ACL 2019: 608-618",
+    "Zhong Qian, Peifeng Li, Qiaoming Zhu, Guodong Zhou: Document-level Event Factuality Identification via Reinforced Multi-Granularity Hierarchical Attention Networks. IJCAI 2022: 4338-4345",
+    "Peifeng Li; Guodong Zhou ; Three-Layer Joint Modeling of Chinese Trigger Extraction with Constraints on Trigger and Argument Semantics, Journal of Computer Science and Technology, 2017, 32(5): 1044-1056",
+    "李培峰;周国栋;朱巧明;基于语义的中文事件触发词抽取联合模型,软件学报,2016, 27(2): 280-294"
+  ],
+  "research_directions": [
+    "自然语言处理、中文信息处理、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0e/4d/c11250a527949/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

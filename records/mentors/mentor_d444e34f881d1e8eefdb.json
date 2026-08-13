@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d13a4be28fcea60dc7eb"
+      ],
+      "ended_at": null,
+      "id": "aff_f7fe7db892d4d928640f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/10/40/c11250a528448/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d13a4be28fcea60dc7eb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f7fe7db892d4d928640f",
+      "claim_ids": [
+        "claim_d13a4be28fcea60dc7eb"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangzhe@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/10/40/c11250a528448/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangzhe@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d13a4be28fcea60dc7eb"
+    ],
+    "email": [
+      "claim_d13a4be28fcea60dc7eb"
+    ],
+    "name": [
+      "claim_d13a4be28fcea60dc7eb"
+    ],
+    "profile_url": [
+      "claim_d13a4be28fcea60dc7eb"
+    ],
+    "recent_papers": [
+      "claim_d13a4be28fcea60dc7eb"
+    ],
+    "research_directions": [
+      "claim_d13a4be28fcea60dc7eb"
+    ],
+    "status": [
+      "claim_d13a4be28fcea60dc7eb"
+    ],
+    "title": [
+      "claim_d13a4be28fcea60dc7eb"
+    ]
+  },
+  "id": "mentor_d444e34f881d1e8eefdb",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d13a4be28fcea60dc7eb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨哲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f7fe7db892d4d928640f",
+      "claim_ids": [
+        "claim_d13a4be28fcea60dc7eb"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/10/40/c11250a528448/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhe Yang, Lingzhi Li, Fei Gu, Xinghong Ling, Maryam Hajiee. TADR-EAODV: A trust-aware dynamic routing algorithm based on extended AODV protocol for secure communications in wireless sensor networks [J]. Internet of Things, 2022. https://doi.org/10.1016/j.iot.2022.100627",
+    "Zhe Yang, Lingzhi Li, Fei Gu, Xinghong Ling. Dependable and reliable cloud-based architectures for vehicular communications: A systematic literature review [J]. International Journal of Communication Systems, 2023. https://doi.org/10.1002/dac.5457",
+    "Zhe Yang, Yi-peng Chen, Fei Gu, Jin Wang, Lei Zhao. A Two-Way Update Resource Allocation Strategy in Mobile Edge Computing [J]. Wireless Communications and Mobile Computing, 2022. https://doi.org/10.1155/2022/1117597",
+    "Zhe Yang, Zi-Yu Bu, Chun-Ping Liu. SSD Optimization Model Based on Shallow Feature Fusion [J]. International Journal of Pattern Recognition and Artificial Intelligence, 2022, 36(11): 1-22. https://doi.org/10.1142/S0218001422590339",
+    "Feng Cheng, Zhe Yang. FastMFDs: a fast, efficient algorithm for mining minimal functional dependencies from large-scale distributed data with Spark [J]. Journal of supercomputing. 2019, 75(5): 2497-2517 https://dl.acm.org/doi/10.1007/s11227-018-2643-8"
+  ],
+  "research_directions": [
+    "机器学习、计算机视觉、超图学习、物联网应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/10/40/c11250a528448/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

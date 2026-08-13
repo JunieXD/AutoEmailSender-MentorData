@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_943dd619f5ebbfcaf5e8"
+      ],
+      "ended_at": null,
+      "id": "aff_dadd4af7fadd00c26ff2",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0e/5c/c11250a527964/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_943dd619f5ebbfcaf5e8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dadd4af7fadd00c26ff2",
+      "claim_ids": [
+        "claim_943dd619f5ebbfcaf5e8"
+      ],
+      "is_primary": true,
+      "normalized_value": "mhpiao@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0e/5c/c11250a527964/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mhpiao@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ],
+    "email": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ],
+    "name": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ],
+    "profile_url": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ],
+    "recent_papers": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ],
+    "research_directions": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ],
+    "status": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ],
+    "title": [
+      "claim_943dd619f5ebbfcaf5e8"
+    ]
+  },
+  "id": "mentor_4ad0eabcc7606aa83149",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_943dd619f5ebbfcaf5e8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朴明浩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dadd4af7fadd00c26ff2",
+      "claim_ids": [
+        "claim_943dd619f5ebbfcaf5e8"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0e/5c/c11250a527964/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "CNN and ensemble learning based wafer map failure pattern recognition based on local property based features",
+    "Wafer map defect pattern classification based on convolutional neural network features and error-correcting output codes",
+    "Fabrication and Decryption of a Microarray of Digital Dithiosuccinimide Oligomers"
+  ],
+  "research_directions": [
+    "数据挖掘、模式识别,主要研究方向包括缺陷模式识别(图像处理与模式识别)、数据挖掘(特征工程、聚类与分类)、数字高分子(数据降噪与转换、机器学习模型)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0e/5c/c11250a527964/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}

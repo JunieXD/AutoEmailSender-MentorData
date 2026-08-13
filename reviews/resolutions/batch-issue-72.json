@@ -1,0 +1,272 @@
+{
+  "created_organization_ids": [
+    "org_auto_6d0a10ae17f678f0ece7",
+    "org_auto_d743d7cb1647fc518491",
+    "org_auto_ffc3f7ed68d8bc331918"
+  ],
+  "decided_at": "2026-08-13T03:27:51Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_4884b58d2a7c00dd",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "suda.edu.cn"
+          ],
+          "canonical_name": "苏州大学",
+          "level": "university",
+          "official_url": "https://suda.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院(软件学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认将投稿系所名称“计算机科学与技术学院人工智能系”规范为“人工智能系”。",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": true,
+      "target_organization_id": "org_auto_ffc3f7ed68d8bc331918"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_58af029ef936ccb7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "suda.edu.cn"
+          ],
+          "canonical_name": "苏州大学",
+          "level": "university",
+          "official_url": "https://suda.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院(软件学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ee1fd9c42f0d8b6e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "suda.edu.cn"
+          ],
+          "canonical_name": "苏州大学",
+          "level": "university",
+          "official_url": "https://suda.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学与技术学院(软件学院)",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_72",
+  "invalid_rows": [],
+  "issue": {
+    "number": 72,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/72"
+  },
+  "manifest_sha256": "cec68f8bba1d1bd03c03d04686c8f6efbe51526ad1d7824c22c0ca3773f221a9",
+  "mapped_proposal_ids": [
+    "proposal_issue_72_row_1",
+    "proposal_issue_72_row_10",
+    "proposal_issue_72_row_11",
+    "proposal_issue_72_row_12",
+    "proposal_issue_72_row_13",
+    "proposal_issue_72_row_14",
+    "proposal_issue_72_row_15",
+    "proposal_issue_72_row_16",
+    "proposal_issue_72_row_17",
+    "proposal_issue_72_row_18",
+    "proposal_issue_72_row_19",
+    "proposal_issue_72_row_2",
+    "proposal_issue_72_row_20",
+    "proposal_issue_72_row_21",
+    "proposal_issue_72_row_22",
+    "proposal_issue_72_row_23",
+    "proposal_issue_72_row_24",
+    "proposal_issue_72_row_25",
+    "proposal_issue_72_row_26",
+    "proposal_issue_72_row_27",
+    "proposal_issue_72_row_28",
+    "proposal_issue_72_row_29",
+    "proposal_issue_72_row_3",
+    "proposal_issue_72_row_30",
+    "proposal_issue_72_row_31",
+    "proposal_issue_72_row_32",
+    "proposal_issue_72_row_33",
+    "proposal_issue_72_row_34",
+    "proposal_issue_72_row_35",
+    "proposal_issue_72_row_36",
+    "proposal_issue_72_row_37",
+    "proposal_issue_72_row_38",
+    "proposal_issue_72_row_39",
+    "proposal_issue_72_row_4",
+    "proposal_issue_72_row_40",
+    "proposal_issue_72_row_41",
+    "proposal_issue_72_row_42",
+    "proposal_issue_72_row_43",
+    "proposal_issue_72_row_44",
+    "proposal_issue_72_row_45",
+    "proposal_issue_72_row_46",
+    "proposal_issue_72_row_47",
+    "proposal_issue_72_row_48",
+    "proposal_issue_72_row_49",
+    "proposal_issue_72_row_5",
+    "proposal_issue_72_row_50",
+    "proposal_issue_72_row_51",
+    "proposal_issue_72_row_52",
+    "proposal_issue_72_row_53",
+    "proposal_issue_72_row_54",
+    "proposal_issue_72_row_55",
+    "proposal_issue_72_row_56",
+    "proposal_issue_72_row_57",
+    "proposal_issue_72_row_58",
+    "proposal_issue_72_row_59",
+    "proposal_issue_72_row_6",
+    "proposal_issue_72_row_60",
+    "proposal_issue_72_row_61",
+    "proposal_issue_72_row_62",
+    "proposal_issue_72_row_63",
+    "proposal_issue_72_row_64",
+    "proposal_issue_72_row_65",
+    "proposal_issue_72_row_66",
+    "proposal_issue_72_row_67",
+    "proposal_issue_72_row_68",
+    "proposal_issue_72_row_69",
+    "proposal_issue_72_row_7",
+    "proposal_issue_72_row_70",
+    "proposal_issue_72_row_71",
+    "proposal_issue_72_row_72",
+    "proposal_issue_72_row_73",
+    "proposal_issue_72_row_74",
+    "proposal_issue_72_row_75",
+    "proposal_issue_72_row_76",
+    "proposal_issue_72_row_77",
+    "proposal_issue_72_row_78",
+    "proposal_issue_72_row_79",
+    "proposal_issue_72_row_8",
+    "proposal_issue_72_row_80",
+    "proposal_issue_72_row_81",
+    "proposal_issue_72_row_82",
+    "proposal_issue_72_row_83",
+    "proposal_issue_72_row_84",
+    "proposal_issue_72_row_85",
+    "proposal_issue_72_row_86",
+    "proposal_issue_72_row_87",
+    "proposal_issue_72_row_88",
+    "proposal_issue_72_row_89",
+    "proposal_issue_72_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [
+    {
+      "kind": "custom",
+      "proposal_ids": [
+        "proposal_issue_72_row_36"
+      ],
+      "reason": "人工确认将投稿系所名称“计算机科学与技术学院人工智能系”规范为“人工智能系”。",
+      "source_domains": [
+        "scst.suda.edu.cn"
+      ],
+      "submitted": {
+        "department": "计算机科学与技术学院人工智能系",
+        "school": "计算机科学与技术学院(软件学院)",
+        "university": "苏州大学"
+      },
+      "target_organization_id": "org_auto_ffc3f7ed68d8bc331918"
+    }
+  ],
+  "pull_request_number": 77,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5275592061,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

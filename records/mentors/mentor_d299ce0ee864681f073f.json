@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0955acf9f7b8f5c09826"
+      ],
+      "ended_at": null,
+      "id": "aff_f3975619b5397d381fcd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:41Z",
+      "organization_id": "org_auto_d743d7cb1647fc518491",
+      "source_url": "https://scst.suda.edu.cn/0e/49/c11250a527945/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0955acf9f7b8f5c09826"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f3975619b5397d381fcd",
+      "claim_ids": [
+        "claim_0955acf9f7b8f5c09826"
+      ],
+      "is_primary": true,
+      "normalized_value": "ljt@suda.edu.cn",
+      "observed_at": "2026-08-11T13:34:41Z",
+      "source_url": "https://scst.suda.edu.cn/0e/49/c11250a527945/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ljt@suda.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0955acf9f7b8f5c09826"
+    ],
+    "email": [
+      "claim_0955acf9f7b8f5c09826"
+    ],
+    "name": [
+      "claim_0955acf9f7b8f5c09826"
+    ],
+    "profile_url": [
+      "claim_0955acf9f7b8f5c09826"
+    ],
+    "recent_papers": [
+      "claim_0955acf9f7b8f5c09826"
+    ],
+    "research_directions": [
+      "claim_0955acf9f7b8f5c09826"
+    ],
+    "status": [
+      "claim_0955acf9f7b8f5c09826"
+    ],
+    "title": [
+      "claim_0955acf9f7b8f5c09826"
+    ]
+  },
+  "id": "mentor_d299ce0ee864681f073f",
+  "last_verified_at": "2026-08-11T13:34:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0955acf9f7b8f5c09826"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李俊涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f3975619b5397d381fcd",
+      "claim_ids": [
+        "claim_0955acf9f7b8f5c09826"
+      ],
+      "observed_at": "2026-08-11T13:34:41Z",
+      "status": "current",
+      "url": "https://scst.suda.edu.cn/0e/49/c11250a527945/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yue Wang, Lijun Wu,Juntao Li(通讯), Xiaobo Liang, Min Zhang. Are the BERT Family Zero-Shot Learners? A Study on Their Potential and Limitations.Artificial Intelligence,2023",
+    "Xiaobo Liang, Zecheng Tang,Juntao Li(通讯), Min Zhang. Open-ended Long Text Generation via Masked Language Modeling.ACL, 2023",
+    "Yisheng Xiao, Lijun Wu, Junliang Guo,Juntao Li(通讯), Min Zhang, Tao Qin, Tie-yan Liu. A survey on non-autoregressive generation for neural machine translation and beyond.TPAMI, 2023",
+    "XiaoboLiang, Lijun Wu,Juntao Li(通讯, Yue Wang, Qi Meng, Tao Qin, Wei Chen, Min Zhang, Tie-Yan Liu. R-drop: Regularized dropout for neural networks.NeurIPS, 2021",
+    "Juntao Li, Chang Liu, Chongyang Tao, Zhangming Chan, Dongyan Zhao, Min Zhang, Rui Yan.Dialogue history matters! personalized response selection in multi-turn retrieval-based chatbots.ACM Transactions on Information Systems, 2021"
+  ],
+  "research_directions": [
+    "文本生成、预训练语言模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scst.suda.edu.cn/0e/49/c11250a527945/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:41Z"
+}
