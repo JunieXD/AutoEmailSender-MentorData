@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5bf3bc42dc3bb23005ee"
+      ],
+      "ended_at": null,
+      "id": "aff_2a4ebedfb2d45feaca29",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/liulimin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5bf3bc42dc3bb23005ee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a4ebedfb2d45feaca29",
+      "claim_ids": [
+        "claim_5bf3bc42dc3bb23005ee"
+      ],
+      "is_primary": true,
+      "normalized_value": "liulimin@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/liulimin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liulimin@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5bf3bc42dc3bb23005ee"
+    ],
+    "email": [
+      "claim_5bf3bc42dc3bb23005ee"
+    ],
+    "name": [
+      "claim_5bf3bc42dc3bb23005ee"
+    ],
+    "profile_url": [
+      "claim_5bf3bc42dc3bb23005ee"
+    ],
+    "research_directions": [
+      "claim_5bf3bc42dc3bb23005ee"
+    ],
+    "status": [
+      "claim_5bf3bc42dc3bb23005ee"
+    ],
+    "title": [
+      "claim_5bf3bc42dc3bb23005ee"
+    ]
+  },
+  "id": "mentor_1511f2dafb0a7055941b",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5bf3bc42dc3bb23005ee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘丽敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a4ebedfb2d45feaca29",
+      "claim_ids": [
+        "claim_5bf3bc42dc3bb23005ee"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/liulimin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "工业大模型、智能计算、群智协同、强化学习、调度理论及应用、空天地一体化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/liulimin/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

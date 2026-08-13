@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ad933f93910ab4b18068"
+      ],
+      "ended_at": null,
+      "id": "aff_a222bd091ad0cefb8e03",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/yangliu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ad933f93910ab4b18068"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a222bd091ad0cefb8e03",
+      "claim_ids": [
+        "claim_ad933f93910ab4b18068"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangliu@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/yangliu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangliu@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ad933f93910ab4b18068"
+    ],
+    "email": [
+      "claim_ad933f93910ab4b18068"
+    ],
+    "name": [
+      "claim_ad933f93910ab4b18068"
+    ],
+    "profile_url": [
+      "claim_ad933f93910ab4b18068"
+    ],
+    "research_directions": [
+      "claim_ad933f93910ab4b18068"
+    ],
+    "status": [
+      "claim_ad933f93910ab4b18068"
+    ],
+    "title": [
+      "claim_ad933f93910ab4b18068"
+    ]
+  },
+  "id": "mentor_ce6f28e914245042e117",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ad933f93910ab4b18068"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨柳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a222bd091ad0cefb8e03",
+      "claim_ids": [
+        "claim_ad933f93910ab4b18068"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/yangliu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "知识图谱构建与知识表示学习、知识工程与智能服务、软件质量管理及过程改进、结合深度学习的大图智能处理、知识图谱与推理、智能图计算、知识工程与智能软件、大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/yangliu/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

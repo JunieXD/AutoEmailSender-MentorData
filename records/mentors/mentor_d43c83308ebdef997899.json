@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0d13488b27260d16ea2e"
+      ],
+      "ended_at": null,
+      "id": "aff_4d75b56b14e41b72f9c7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/denglei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0d13488b27260d16ea2e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4d75b56b14e41b72f9c7",
+      "claim_ids": [
+        "claim_0d13488b27260d16ea2e"
+      ],
+      "is_primary": true,
+      "normalized_value": "leideng@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/denglei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "leideng@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0d13488b27260d16ea2e"
+    ],
+    "email": [
+      "claim_0d13488b27260d16ea2e"
+    ],
+    "name": [
+      "claim_0d13488b27260d16ea2e"
+    ],
+    "profile_url": [
+      "claim_0d13488b27260d16ea2e"
+    ],
+    "research_directions": [
+      "claim_0d13488b27260d16ea2e"
+    ],
+    "status": [
+      "claim_0d13488b27260d16ea2e"
+    ],
+    "title": [
+      "claim_0d13488b27260d16ea2e"
+    ]
+  },
+  "id": "mentor_d43c83308ebdef997899",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0d13488b27260d16ea2e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4d75b56b14e41b72f9c7",
+      "claim_ids": [
+        "claim_0d13488b27260d16ea2e"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/denglei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据挖掘、生物计算、智能诊疗、JavaEE/C#/iOS/Android/微信应用软件开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/denglei/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

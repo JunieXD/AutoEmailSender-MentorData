@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_247bb76adc025bc78dc1"
+      ],
+      "ended_at": null,
+      "id": "aff_f22bb49f50ec7a997388",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/liujiaqi/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_247bb76adc025bc78dc1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f22bb49f50ec7a997388",
+      "claim_ids": [
+        "claim_247bb76adc025bc78dc1"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujiaqi@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/liujiaqi/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liujiaqi@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_247bb76adc025bc78dc1"
+    ],
+    "email": [
+      "claim_247bb76adc025bc78dc1"
+    ],
+    "name": [
+      "claim_247bb76adc025bc78dc1"
+    ],
+    "profile_url": [
+      "claim_247bb76adc025bc78dc1"
+    ],
+    "research_directions": [
+      "claim_247bb76adc025bc78dc1"
+    ],
+    "status": [
+      "claim_247bb76adc025bc78dc1"
+    ],
+    "title": [
+      "claim_247bb76adc025bc78dc1"
+    ]
+  },
+  "id": "mentor_a4e40fb8a0463bdbfc0a",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_247bb76adc025bc78dc1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘佳琦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f22bb49f50ec7a997388",
+      "claim_ids": [
+        "claim_247bb76adc025bc78dc1"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/liujiaqi/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "群智感知、物联网、车联网、大数据、人工智能、深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/liujiaqi/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

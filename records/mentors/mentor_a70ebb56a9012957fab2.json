@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bda91c31aac7b167e1ea"
+      ],
+      "ended_at": null,
+      "id": "aff_20191326928360fbe17b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/wangjinpeng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_bda91c31aac7b167e1ea"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_20191326928360fbe17b",
+      "claim_ids": [
+        "claim_bda91c31aac7b167e1ea"
+      ],
+      "is_primary": true,
+      "normalized_value": "jinpengwang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/wangjinpeng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jinpengwang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bda91c31aac7b167e1ea"
+    ],
+    "email": [
+      "claim_bda91c31aac7b167e1ea"
+    ],
+    "name": [
+      "claim_bda91c31aac7b167e1ea"
+    ],
+    "profile_url": [
+      "claim_bda91c31aac7b167e1ea"
+    ],
+    "recent_papers": [
+      "claim_bda91c31aac7b167e1ea"
+    ],
+    "research_directions": [
+      "claim_bda91c31aac7b167e1ea"
+    ],
+    "status": [
+      "claim_bda91c31aac7b167e1ea"
+    ]
+  },
+  "id": "mentor_a70ebb56a9012957fab2",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bda91c31aac7b167e1ea"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王金鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_20191326928360fbe17b",
+      "claim_ids": [
+        "claim_bda91c31aac7b167e1ea"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/wangjinpeng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "FlowInOne: Unifying Multimodal Generation as Image-in, Image-out Flow Matching. ECCV 2026",
+    "Glance: Accelerating Diffusion Models with 1 Sample. ECCV 2026",
+    "Evaluating and Enhancing Negation Comprehension in Remote Sensing MLLMs. ECCV 2026",
+    "Negation-aware test-time adaptation for vision-language models. TPAMI 2026",
+    "When the Prompt Becomes Visual: Vision-Centric Jailbreak Attacks for Large Image Editing Models. ICML 2026 Oral",
+    "Entropy-Aware Dynamic KV Cache Sparsification for Autoregressive Image Generation and Editing. ICML 2026",
+    "TextAtlas5M: A Large-Scale Dataset for Long Text Image Generation. ICML 2026",
+    "Mitigating Error Accumulation in Continuous Navigation via Memory-Augmented Kalman Filtering. ICML 2026"
+  ],
+  "research_directions": [
+    "多模态大模型、预训练、Data-centric AI、以视觉为中心的多模态大模型、具身智能(Vision-Language Action Model)、多智能体系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/wangjinpeng/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

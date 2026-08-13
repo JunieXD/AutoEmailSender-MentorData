@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9f95282896f8cc34d980"
+      ],
+      "ended_at": null,
+      "id": "aff_34fe72cd83a559333532",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/lishucheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_9f95282896f8cc34d980"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_34fe72cd83a559333532",
+      "claim_ids": [
+        "claim_9f95282896f8cc34d980"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuchengli@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/lishucheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shuchengli@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9f95282896f8cc34d980"
+    ],
+    "email": [
+      "claim_9f95282896f8cc34d980"
+    ],
+    "name": [
+      "claim_9f95282896f8cc34d980"
+    ],
+    "profile_url": [
+      "claim_9f95282896f8cc34d980"
+    ],
+    "research_directions": [
+      "claim_9f95282896f8cc34d980"
+    ],
+    "status": [
+      "claim_9f95282896f8cc34d980"
+    ],
+    "title": [
+      "claim_9f95282896f8cc34d980"
+    ]
+  },
+  "id": "mentor_03d56742171ad352d653",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9f95282896f8cc34d980"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李书城"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_34fe72cd83a559333532",
+      "claim_ids": [
+        "claim_9f95282896f8cc34d980"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/lishucheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "物联网、大数据、边缘智能、智能辅助诊疗"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/lishucheng/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

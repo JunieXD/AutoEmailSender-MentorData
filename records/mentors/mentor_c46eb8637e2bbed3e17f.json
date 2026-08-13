@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_30456a57e5a75839b042"
+      ],
+      "ended_at": null,
+      "id": "aff_c128eed432ba1b4578ce",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/hongdong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_30456a57e5a75839b042"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c128eed432ba1b4578ce",
+      "claim_ids": [
+        "claim_30456a57e5a75839b042"
+      ],
+      "is_primary": true,
+      "normalized_value": "hongdong@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/hongdong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hongdong@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_30456a57e5a75839b042"
+    ],
+    "email": [
+      "claim_30456a57e5a75839b042"
+    ],
+    "name": [
+      "claim_30456a57e5a75839b042"
+    ],
+    "profile_url": [
+      "claim_30456a57e5a75839b042"
+    ],
+    "research_directions": [
+      "claim_30456a57e5a75839b042"
+    ],
+    "status": [
+      "claim_30456a57e5a75839b042"
+    ],
+    "title": [
+      "claim_30456a57e5a75839b042"
+    ]
+  },
+  "id": "mentor_c46eb8637e2bbed3e17f",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_30456a57e5a75839b042"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李洪东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c128eed432ba1b4578ce",
+      "claim_ids": [
+        "claim_30456a57e5a75839b042"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/hongdong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、生物信息学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/hongdong/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

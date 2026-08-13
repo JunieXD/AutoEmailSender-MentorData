@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_067503c88350893c7b79"
+      ],
+      "ended_at": null,
+      "id": "aff_96047754d74790aa6e1e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/zengmin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_067503c88350893c7b79"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96047754d74790aa6e1e",
+      "claim_ids": [
+        "claim_067503c88350893c7b79"
+      ],
+      "is_primary": true,
+      "normalized_value": "zengmin@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/zengmin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zengmin@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_067503c88350893c7b79"
+    ],
+    "email": [
+      "claim_067503c88350893c7b79"
+    ],
+    "name": [
+      "claim_067503c88350893c7b79"
+    ],
+    "profile_url": [
+      "claim_067503c88350893c7b79"
+    ],
+    "recent_papers": [
+      "claim_067503c88350893c7b79"
+    ],
+    "research_directions": [
+      "claim_067503c88350893c7b79"
+    ],
+    "status": [
+      "claim_067503c88350893c7b79"
+    ],
+    "title": [
+      "claim_067503c88350893c7b79"
+    ]
+  },
+  "id": "mentor_3b7c0f3200bffc46c014",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_067503c88350893c7b79"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曾敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_96047754d74790aa6e1e",
+      "claim_ids": [
+        "claim_067503c88350893c7b79"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/zengmin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Protein–protein interaction site prediction through combining local and global features with deep neural networks",
+    "LncLocFormer: a Transformer-based deep learning model for multi-label lncRNA subcellular localization prediction by using localization-specific attention mechanism",
+    "RNALoc-LM: RNA subcellular localization prediction using pre-trained RNA language model",
+    "Leveraging protein language models for cross-variant CRISPR/Cas9 sgRNA activity prediction",
+    "2OMe-LM: predicting 2'-O-methylation sites in human RNA using a pre-trained RNA language model",
+    "DeepLncLoc: a deep learning framework for long non-coding RNA subcellular localization prediction based on subsequence embedding",
+    "GraphLncLoc: long non-coding RNA subcellular localization prediction using graph convolutional networks based on sequence to graph transformation",
+    "CellCircLoc: Deep Neural Network for Predicting and Explaining Cell Line-Specific CircRNA Subcellular Localization"
+  ],
+  "research_directions": [
+    "生物信息学、机器学习、深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/zengmin/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

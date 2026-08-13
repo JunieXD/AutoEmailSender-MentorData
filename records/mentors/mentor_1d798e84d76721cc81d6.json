@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_27740dc5f0e4557af26b"
+      ],
+      "ended_at": null,
+      "id": "aff_eb0bbd9ae69970f26e40",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/kuangli/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_27740dc5f0e4557af26b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eb0bbd9ae69970f26e40",
+      "claim_ids": [
+        "claim_27740dc5f0e4557af26b"
+      ],
+      "is_primary": true,
+      "normalized_value": "kuangli@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/kuangli/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kuangli@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_27740dc5f0e4557af26b"
+    ],
+    "email": [
+      "claim_27740dc5f0e4557af26b"
+    ],
+    "name": [
+      "claim_27740dc5f0e4557af26b"
+    ],
+    "profile_url": [
+      "claim_27740dc5f0e4557af26b"
+    ],
+    "research_directions": [
+      "claim_27740dc5f0e4557af26b"
+    ],
+    "status": [
+      "claim_27740dc5f0e4557af26b"
+    ],
+    "title": [
+      "claim_27740dc5f0e4557af26b"
+    ]
+  },
+  "id": "mentor_1d798e84d76721cc81d6",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_27740dc5f0e4557af26b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邝砾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eb0bbd9ae69970f26e40",
+      "claim_ids": [
+        "claim_27740dc5f0e4557af26b"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/kuangli/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向硬件描述语言HDL的安全生成与验证优化、智能服务监管:多模态大模型、生成式内容检测、恶意内容识别、智能软件服务:代码生成、代码摘要、缺陷定位、代码大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/kuangli/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

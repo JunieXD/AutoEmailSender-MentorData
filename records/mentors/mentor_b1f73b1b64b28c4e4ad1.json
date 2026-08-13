@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_458d2e674bb15c18cbc9"
+      ],
+      "ended_at": null,
+      "id": "aff_1084a52e6c97f48d135c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/xiajiazhi/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_458d2e674bb15c18cbc9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1084a52e6c97f48d135c",
+      "claim_ids": [
+        "claim_458d2e674bb15c18cbc9"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiajiazhi@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/xiajiazhi/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiajiazhi@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_458d2e674bb15c18cbc9"
+    ],
+    "email": [
+      "claim_458d2e674bb15c18cbc9"
+    ],
+    "name": [
+      "claim_458d2e674bb15c18cbc9"
+    ],
+    "profile_url": [
+      "claim_458d2e674bb15c18cbc9"
+    ],
+    "research_directions": [
+      "claim_458d2e674bb15c18cbc9"
+    ],
+    "status": [
+      "claim_458d2e674bb15c18cbc9"
+    ],
+    "title": [
+      "claim_458d2e674bb15c18cbc9"
+    ]
+  },
+  "id": "mentor_b1f73b1b64b28c4e4ad1",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_458d2e674bb15c18cbc9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "夏佳志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1084a52e6c97f48d135c",
+      "claim_ids": [
+        "claim_458d2e674bb15c18cbc9"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/xiajiazhi/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "文化智能、大数据智能、数据可视化、计算机图形学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/xiajiazhi/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_110fa13ff473550740d4"
+      ],
+      "ended_at": null,
+      "id": "aff_6d26b29c02c6d970474f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/huangjunyu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_110fa13ff473550740d4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6d26b29c02c6d970474f",
+      "claim_ids": [
+        "claim_110fa13ff473550740d4"
+      ],
+      "is_primary": true,
+      "normalized_value": "junyuhuangcsu@foxmail.com",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/huangjunyu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "junyuhuangcsu@foxmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_110fa13ff473550740d4"
+    ],
+    "email": [
+      "claim_110fa13ff473550740d4"
+    ],
+    "name": [
+      "claim_110fa13ff473550740d4"
+    ],
+    "profile_url": [
+      "claim_110fa13ff473550740d4"
+    ],
+    "recent_papers": [
+      "claim_110fa13ff473550740d4"
+    ],
+    "research_directions": [
+      "claim_110fa13ff473550740d4"
+    ],
+    "status": [
+      "claim_110fa13ff473550740d4"
+    ]
+  },
+  "id": "mentor_1da2b5807882f11fd5da",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_110fa13ff473550740d4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄俊予"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6d26b29c02c6d970474f",
+      "claim_ids": [
+        "claim_110fa13ff473550740d4"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/huangjunyu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "New Algorithms for Fully-Dynamic k-center with Outliers",
+    "Parameterized Approximation Schemes for Fair-Range Clustering",
+    "Robust LLM-based Multi-Agent System with Action Negotiation and Sharing Redundancy Enhancement",
+    "Linear Time Algorithms for Individually Fair k-means via Multi-Swap Local Search",
+    "A More Efficient Reduction from Outlier-Aware to Outlier-Free k-Median",
+    "Fast Local Search Algorithms for Clustering with Adaptive Sampling and Bandit Methods",
+    "New Algorithms for the Learning-Augmented k-means Problem",
+    "Near-Linear Time Approximation Algorithms for k-means with Outliers"
+  ],
+  "research_directions": [
+    "动态算法优化、分布式与并行算法设计、机器学习算法优化、聚类算法优化、大规模数据处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/huangjunyu/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

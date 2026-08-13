@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9fbf6c7c995050e0fc2a"
+      ],
+      "ended_at": null,
+      "id": "aff_9485e60e465e7c408311",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "https://faculty.csu.edu.cn/chenzhuang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_9fbf6c7c995050e0fc2a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9485e60e465e7c408311",
+      "claim_ids": [
+        "claim_9fbf6c7c995050e0fc2a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhchen18@foxmail.com",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/chenzhuang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhchen18@foxmail.com"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9fbf6c7c995050e0fc2a"
+    ],
+    "email": [
+      "claim_9fbf6c7c995050e0fc2a"
+    ],
+    "name": [
+      "claim_9fbf6c7c995050e0fc2a"
+    ],
+    "profile_url": [
+      "claim_9fbf6c7c995050e0fc2a"
+    ],
+    "recent_papers": [
+      "claim_9fbf6c7c995050e0fc2a"
+    ],
+    "research_directions": [
+      "claim_9fbf6c7c995050e0fc2a"
+    ],
+    "status": [
+      "claim_9fbf6c7c995050e0fc2a"
+    ]
+  },
+  "id": "mentor_d9651ad2b56d3b32ab73",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9fbf6c7c995050e0fc2a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈壮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9485e60e465e7c408311",
+      "claim_ids": [
+        "claim_9fbf6c7c995050e0fc2a"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/chenzhuang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Unveiling the Landscape of Clinical Depression Assessment: From Behavioral Signatures to Psychiatric Reasoning",
+    "Ψ-Arena: Interactive Assessment and Optimization of LLM-based Psychological Counselors with Tripartite Feedback",
+    "SocialSim: Towards Socialized Simulation of Emotional Support Conversation",
+    "MAGI: Multi-Agent Guided Interview for Psychiatric Assessment",
+    "ToMBench: Benchmarking Theory of Mind in Large Language Models",
+    "COKE: A Cognitive Knowledge Graph for Machine Theory of Mind",
+    "Depression Detection in Clinical Interviews with LLM-Empowered Structural Element Graph",
+    "CharacterGLM: Customizing Social Characters with Large Language Models"
+  ],
+  "research_directions": [
+    "大语言模型、社交智能和计算心理学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/chenzhuang/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

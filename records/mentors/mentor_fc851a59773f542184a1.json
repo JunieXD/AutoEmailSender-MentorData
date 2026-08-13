@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ecec99f1f71cea27f91c"
+      ],
+      "ended_at": null,
+      "id": "aff_a3283dafba52e2994db9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/yxliang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ecec99f1f71cea27f91c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a3283dafba52e2994db9",
+      "claim_ids": [
+        "claim_ecec99f1f71cea27f91c"
+      ],
+      "is_primary": true,
+      "normalized_value": "yxliang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/yxliang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yxliang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ecec99f1f71cea27f91c"
+    ],
+    "email": [
+      "claim_ecec99f1f71cea27f91c"
+    ],
+    "name": [
+      "claim_ecec99f1f71cea27f91c"
+    ],
+    "profile_url": [
+      "claim_ecec99f1f71cea27f91c"
+    ],
+    "recent_papers": [
+      "claim_ecec99f1f71cea27f91c"
+    ],
+    "research_directions": [
+      "claim_ecec99f1f71cea27f91c"
+    ],
+    "status": [
+      "claim_ecec99f1f71cea27f91c"
+    ],
+    "title": [
+      "claim_ecec99f1f71cea27f91c"
+    ]
+  },
+  "id": "mentor_fc851a59773f542184a1",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ecec99f1f71cea27f91c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "梁毅雄"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a3283dafba52e2994db9",
+      "claim_ids": [
+        "claim_ecec99f1f71cea27f91c"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/yxliang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xiao Zhang, Guangshuang Tan, Jie Hu, Shichao Kan, Bing Jiang, and Yixiong Liang, “Generative Vision-Language Multiple Instance Learning for Weakly Supervised Neonatal Fundus Screening and Reporting,” in IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings, 2026, pp. 5190–5200.",
+    "Yunzhe Liu, Wenbiao Liu, Lihui Cen, Zhe Qu, Yigang Cen, Yixiong Liang, Yongfang Xie, and Shichao Kan, “HSGG: Training-Free Hierarchical Scene Graph Generation with Geometry-Guided Relation Reasoning,” in International Conference on Machine Learning (ICML), 2026.",
+    "Bolei Chen, Jiaxu Kang, Haonan Yang, Ping Zhong, Yixiong Liang, Rui Fan, and Jianxin Wang, “Towards Ultrasound-Based Reliable Disease Diagnosis Using Causal Inference,” in Proceedings of the AAAI conference on Artificial Intelligence (AAAI), 2026, vol. 40, pp. 2778–2786.",
+    "Jie Guo, Keyi Wang, Guangshuang Tan, Gaojie Li, Xian Zhang, Jiawei Chen, Jie Hu, Yixiong Liang, and Bing Jiang, “Enhancing Instance Feature Representation: A Foundation Model-Based Multi-Instance Approach for Neonatal Retinal Screening,” IEEE Transactions on Biomedical Engineering, vol. 73, no. 4, pp. 1629–1639, 2026.",
+    "Yinan Zhang, Yigang Pei, Ting Meng, Yu Wang, Yong Zhong, and Yixiong Liang, “A Novel Multimodal Learning Method for Predicting Treatment Resistance in MPO-AAV with Lung Involvement,” Biomedical Signal Processing and Control, vol. 117, p. 109643, 2026.",
+    "Peifu Wang, Yixiong Liang, Yigang Cen, Lihui Cen, Zhe Qu, Jingling Liu, and Shichao Kan, “Integrating Spatial Features and Dynamically Learned Temporal Features Via Contrastive Learning for Video Temporal Grounding in LLM,” Image and Vision Computing, p. 105895, 2026.",
+    "Haojie Zhang, Yixiong Liang, Hulin Kuang, Lihui Cen, Zhe Qu, Yigang Cen, Min Zeng, and Shichao Kan, “Contrastive Regularization Over LoRA for Multimodal Biomedical Image Incremental Learning,” in ACM International Conference on Multimedia (ACM MM), 2025.",
+    "Jing Jin, Xu Liu, Te Gao, Zhihong Shi, Yixiong Liang, Ruiqing Zheng, Hulin Kuang, Min Zeng, and Shichao Kan, “Dynamic Residual Encoding with Slide-Level Contrastive Learning for End-to-End Whole Slide Image Representation,” in ACM International Conference on Multimedia (ACM MM), 2025."
+  ],
+  "research_directions": [
+    "计算机视觉与机器学习、数字图像/医学影像处理、多模态目标检测、图像语义/实例分割、计算机辅助筛查与诊断、智能机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/yxliang/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

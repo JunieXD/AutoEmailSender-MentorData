@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c91a2df0f6f5671a4d08"
+      ],
+      "ended_at": null,
+      "id": "aff_f62317e16ec0ad3086df",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_a2b85de6b5e5e6bb23ea",
+      "source_url": "https://faculty.csu.edu.cn/guolin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c91a2df0f6f5671a4d08"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f62317e16ec0ad3086df",
+      "claim_ids": [
+        "claim_c91a2df0f6f5671a4d08"
+      ],
+      "is_primary": true,
+      "normalized_value": "guolincsu@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/guolin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guolincsu@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c91a2df0f6f5671a4d08"
+    ],
+    "email": [
+      "claim_c91a2df0f6f5671a4d08"
+    ],
+    "name": [
+      "claim_c91a2df0f6f5671a4d08"
+    ],
+    "profile_url": [
+      "claim_c91a2df0f6f5671a4d08"
+    ],
+    "recent_papers": [
+      "claim_c91a2df0f6f5671a4d08"
+    ],
+    "research_directions": [
+      "claim_c91a2df0f6f5671a4d08"
+    ],
+    "status": [
+      "claim_c91a2df0f6f5671a4d08"
+    ]
+  },
+  "id": "mentor_71733b6f8920d5c59950",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c91a2df0f6f5671a4d08"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭霖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f62317e16ec0ad3086df",
+      "claim_ids": [
+        "claim_c91a2df0f6f5671a4d08"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/guolin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "KGD-GNN: A Knowledge-Guided Graph Neural Network for Myocardial Infarction Localization via 12-lead ECG",
+    "Improvement of Non-invasive Glucose Estimation Accuracy through Multi-wavelength PPG",
+    "Evaluating User Perception of Wearable ECG Devices: Facilitating and Inhibiting Factors Moderated by Health Consciousness",
+    "Lead-Grouped Multi-Stage Learning for Myocardial Infarction Localization",
+    "Supervised Semantic-Embedded Hashing for Multimedia Retrieval",
+    "DAMAL: Data Augmentation Aided Multi-channel Attention Fusion Network for Multi-label Myocardial Infarction Localization",
+    "Attention-based Multimodal Fusion with Adversarial Network for In-Hospital Mortality Prediction",
+    "KUMA-MI: A 12-Lead Knowledge-Guided Multi-branch Attention Networks for Myocardial Infarction Localization"
+  ],
+  "research_directions": [
+    "医学人工智能、生命体征多模态数据表征、心律失常监测与实时预警、穿戴式设备与人机交互、大规模时序信号可视化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/guolin/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

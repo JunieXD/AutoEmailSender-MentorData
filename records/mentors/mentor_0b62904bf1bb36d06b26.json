@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8c118f905bb4c69b9c6b"
+      ],
+      "ended_at": null,
+      "id": "aff_ecb2da39daa48a06e9d6",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/liuxiyao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8c118f905bb4c69b9c6b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ecb2da39daa48a06e9d6",
+      "claim_ids": [
+        "claim_8c118f905bb4c69b9c6b"
+      ],
+      "is_primary": true,
+      "normalized_value": "lxyzoewx@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/liuxiyao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lxyzoewx@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8c118f905bb4c69b9c6b"
+    ],
+    "email": [
+      "claim_8c118f905bb4c69b9c6b"
+    ],
+    "name": [
+      "claim_8c118f905bb4c69b9c6b"
+    ],
+    "profile_url": [
+      "claim_8c118f905bb4c69b9c6b"
+    ],
+    "research_directions": [
+      "claim_8c118f905bb4c69b9c6b"
+    ],
+    "status": [
+      "claim_8c118f905bb4c69b9c6b"
+    ],
+    "title": [
+      "claim_8c118f905bb4c69b9c6b"
+    ]
+  },
+  "id": "mentor_0b62904bf1bb36d06b26",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8c118f905bb4c69b9c6b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘熙尧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ecb2da39daa48a06e9d6",
+      "claim_ids": [
+        "claim_8c118f905bb4c69b9c6b"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/liuxiyao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "生成式人工智能(AIGC)、可信内容治理、大模型开发、多模态内容生成、数字版权保护、深度伪造识别、图像视频指纹、生成式信息隐藏"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/liuxiyao/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

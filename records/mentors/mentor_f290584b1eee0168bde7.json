@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_548ab8b8410b22b9712f"
+      ],
+      "ended_at": null,
+      "id": "aff_2ad390ba98e88abb5587",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_a2b85de6b5e5e6bb23ea",
+      "source_url": "https://faculty.csu.edu.cn/jiatingting/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_548ab8b8410b22b9712f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2ad390ba98e88abb5587",
+      "claim_ids": [
+        "claim_548ab8b8410b22b9712f"
+      ],
+      "is_primary": true,
+      "normalized_value": "jtt0129@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "https://faculty.csu.edu.cn/jiatingting/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jtt0129@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_548ab8b8410b22b9712f"
+    ],
+    "email": [
+      "claim_548ab8b8410b22b9712f"
+    ],
+    "name": [
+      "claim_548ab8b8410b22b9712f"
+    ],
+    "profile_url": [
+      "claim_548ab8b8410b22b9712f"
+    ],
+    "research_directions": [
+      "claim_548ab8b8410b22b9712f"
+    ],
+    "status": [
+      "claim_548ab8b8410b22b9712f"
+    ],
+    "title": [
+      "claim_548ab8b8410b22b9712f"
+    ]
+  },
+  "id": "mentor_f290584b1eee0168bde7",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_548ab8b8410b22b9712f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "贾婷婷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2ad390ba98e88abb5587",
+      "claim_ids": [
+        "claim_548ab8b8410b22b9712f"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/jiatingting/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "致力于非线性科学与大数据应用的交叉研究,主要研究方向为物理-数据驱动的大数据分析/计算,关注非线性波动/PDEs、物理信息神经网络、医疗大数据方向(医学辅助诊断、生物信息学算法)、AI for Science/物理引导神经网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/jiatingting/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

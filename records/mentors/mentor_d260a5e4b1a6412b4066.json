@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_74576687bef6e4c08b2a"
+      ],
+      "ended_at": null,
+      "id": "aff_a72821d29ec64c76c358",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/guokehua/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_74576687bef6e4c08b2a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a72821d29ec64c76c358",
+      "claim_ids": [
+        "claim_74576687bef6e4c08b2a"
+      ],
+      "is_primary": true,
+      "normalized_value": "guokehua@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/guokehua/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guokehua@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_74576687bef6e4c08b2a"
+    ],
+    "email": [
+      "claim_74576687bef6e4c08b2a"
+    ],
+    "name": [
+      "claim_74576687bef6e4c08b2a"
+    ],
+    "profile_url": [
+      "claim_74576687bef6e4c08b2a"
+    ],
+    "research_directions": [
+      "claim_74576687bef6e4c08b2a"
+    ],
+    "status": [
+      "claim_74576687bef6e4c08b2a"
+    ]
+  },
+  "id": "mentor_d260a5e4b1a6412b4066",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_74576687bef6e4c08b2a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭克华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a72821d29ec64c76c358",
+      "claim_ids": [
+        "claim_74576687bef6e4c08b2a"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/guokehua/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能,大数据,智能计算,机器学习,少样本生成,样本增强,多源数据融合,多模态增量学习,医疗大数据(糖尿病、皮肤、肿瘤等),国防(情报生成、智能规划)领域高可用可移植人工智能系统研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/guokehua/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:32:03Z"
+}

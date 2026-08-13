@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_963e23b4deed799138f4"
+      ],
+      "ended_at": null,
+      "id": "aff_9677f93e6ece569acc22",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/yangwang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_963e23b4deed799138f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9677f93e6ece569acc22",
+      "claim_ids": [
+        "claim_963e23b4deed799138f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangwang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/yangwang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangwang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_963e23b4deed799138f4"
+    ],
+    "email": [
+      "claim_963e23b4deed799138f4"
+    ],
+    "name": [
+      "claim_963e23b4deed799138f4"
+    ],
+    "profile_url": [
+      "claim_963e23b4deed799138f4"
+    ],
+    "research_directions": [
+      "claim_963e23b4deed799138f4"
+    ],
+    "status": [
+      "claim_963e23b4deed799138f4"
+    ],
+    "title": [
+      "claim_963e23b4deed799138f4"
+    ]
+  },
+  "id": "mentor_bbcd67a40f2a65cdd98f",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_963e23b4deed799138f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "阳旺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9677f93e6ece569acc22",
+      "claim_ids": [
+        "claim_963e23b4deed799138f4"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/yangwang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机网络体系结构、移动计算、物联网、大数据"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/yangwang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

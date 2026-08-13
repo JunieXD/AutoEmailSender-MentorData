@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_adfe1ab82bb7fa9d4ce6"
+      ],
+      "ended_at": null,
+      "id": "aff_803efd8ffcb565c3a59c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/zhangjian1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_adfe1ab82bb7fa9d4ce6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_803efd8ffcb565c3a59c",
+      "claim_ids": [
+        "claim_adfe1ab82bb7fa9d4ce6"
+      ],
+      "is_primary": true,
+      "normalized_value": "jianzhang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/zhangjian1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jianzhang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ],
+    "email": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ],
+    "name": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ],
+    "profile_url": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ],
+    "recent_papers": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ],
+    "research_directions": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ],
+    "status": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ],
+    "title": [
+      "claim_adfe1ab82bb7fa9d4ce6"
+    ]
+  },
+  "id": "mentor_d9a089fbfbbea93d8c8b",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_adfe1ab82bb7fa9d4ce6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张健"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_803efd8ffcb565c3a59c",
+      "claim_ids": [
+        "claim_adfe1ab82bb7fa9d4ce6"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/zhangjian1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Robust and Diversified Image Steganography Without Embedding Through a Disentanglement Autoencoder[J].IEEE Transactions on Dependable and Secure Computing.2026(CCF A)",
+    "ASDroid:Resisting Evolving Android Malware with API Clusters Derived from Source Code[J]. IEEE Transactions on Information Forensics andSecurity(TIFS).2025(CCF A)",
+    "Recoverable Facial Identity Protection via Adaptive Makeup Transfer Adversarial Attacks[C].AAAI2025(CCF A)",
+    "A Coarse-to-Fine Denoising Framework for Uncertainty-aware Trajectory Prediction[C].AAAI2025(CCF A)",
+    "Towards compact reversible image representations for neural style transfer[C].ECCV2024.(CCF B)",
+    "Quantum Support Vector Machine for Classifying Noisy Data[J].IEEE Transactions on Computers(TC),2024.(CCF A)",
+    "Score-CDM: Score-Weighted Convolutional Diffusion Model for Multivariate Time Series Imputation[C] .IJCAI 2024.(CCF A)",
+    "Quantum KNN Classification with K Value Selection and Neighbor Selection[J]. IEEE Transactions on Computer-Aided Design of Integrated Circuits andSystems(TCAD),2023.(CCF A)"
+  ],
+  "research_directions": [
+    "网络空间安全、物理智能、目标识别与检测、认知计算、知识图谱、软件工程、无人系统、AI for Science、Data Intelligence、红外物理智能、世界模型、具身智能、人工智能安全、认知对抗、迁移学习、知识本体、无人协同AI端侧推理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/zhangjian1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}

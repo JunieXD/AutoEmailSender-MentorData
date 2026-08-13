@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c50fbdc55a7e9ce2ffd8"
+      ],
+      "ended_at": null,
+      "id": "aff_e70c510bd0d8469b1be7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:32:03Z",
+      "organization_id": "org_auto_17c746e3c1e4b120b8bf",
+      "source_url": "http://faculty.csu.edu.cn/wangweiping/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c50fbdc55a7e9ce2ffd8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e70c510bd0d8469b1be7",
+      "claim_ids": [
+        "claim_c50fbdc55a7e9ce2ffd8"
+      ],
+      "is_primary": true,
+      "normalized_value": "wpwang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:32:03Z",
+      "source_url": "http://faculty.csu.edu.cn/wangweiping/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wpwang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:32:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ],
+    "email": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ],
+    "name": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ],
+    "profile_url": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ],
+    "recent_papers": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ],
+    "research_directions": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ],
+    "status": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ],
+    "title": [
+      "claim_c50fbdc55a7e9ce2ffd8"
+    ]
+  },
+  "id": "mentor_af1e4dad87e14c5175ae",
+  "last_verified_at": "2026-08-11T13:32:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c50fbdc55a7e9ce2ffd8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王伟平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e70c510bd0d8469b1be7",
+      "claim_ids": [
+        "claim_c50fbdc55a7e9ce2ffd8"
+      ],
+      "observed_at": "2026-08-11T13:32:03Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/wangweiping/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yuchun Han; Weiping Wang; Zhe Qu; Shigeng Zhang,Tactics and Techniques Text Classification Based on Adversarial Contrastive Learning and Meta-Path, IEEE Transactions on Information Forensics and Security, (CCF-A), vol. 20,2025",
+    "Q. Hu, W. Wang, H. Song, S. Guo, J. Zhang and S. Zhang, \"ASDroid: Resisting Evolving Android Malware With API Clusters Derived From Source Code,\" in IEEE Transactions on Information Forensics and Security(CCF-A), vol. 20, pp. 1822-1835, 2025,",
+    "Wang, W., Wang, C., Song, H., Chen, K., & Zhang, S. (2025). ProvGOutLiner: A lightweight anomaly detection method based on process behavior features within provenance graphs. Computers & Security, 104589.",
+    "Zixian Chen, Weiping Wang∗, Yan Qin, Shigeng Zhang ZipAST:Enhancing malicious JavaScript detection with sequence compression,Computers & Security, 153(2025)104390",
+    "宋虹,马俊龙,王伟平,诸亿郎基于响应相似性判定的Web越权漏洞测试方法,信息安全学报,2025,10(3):17-29",
+    "Li Z, Wang W, Li J, et al. UCG: A Universal Cross-Domain Generator for Transferable Adversarial Examples[J]. IEEE Transactions on Information Forensics and Security(CCF-A) 2024,19:5286-5300 .",
+    "Li Z, Wang W, Li J, et al. Foolmix: Strengthen the Transferability of Adversarial Examples by Dual-Blending and Direction Update Strategy[J].IEEE Transactions on Information Forensics and Security(CCF-A), 2024,19:3023-3037",
+    "Yan Qin, Weiping Wang*, Zixian Chen, Hong Song, Shigeng Zhang,TransAST: A Machine Translation-Based Approach for Obfuscated Malicious JavaScript Detection,2023 53rd Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN,CCFB类会议),327-338"
+  ],
+  "research_directions": [
+    "互联网应用安全、物联网安全、安全大数据分析、网络协议分析与行为监测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:32:03Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/wangweiping/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:32:03Z"
+}
