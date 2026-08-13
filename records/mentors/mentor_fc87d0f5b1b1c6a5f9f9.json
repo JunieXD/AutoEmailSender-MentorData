@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c1a08cba72234b314eee"
+      ],
+      "ended_at": null,
+      "id": "aff_1acfa31affd0e6a82c9b",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:33:56Z",
+      "organization_id": "org_auto_28efc5a2a551ab6b2bf9",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53762a2202383/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c1a08cba72234b314eee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1acfa31affd0e6a82c9b",
+      "claim_ids": [
+        "claim_c1a08cba72234b314eee"
+      ],
+      "is_primary": true,
+      "normalized_value": "jxleng@zju.edu.cn",
+      "observed_at": "2026-08-11T13:33:56Z",
+      "source_url": "http://oc.zju.edu.cn/2019/0614/c53762a2202383/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jxleng@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:33:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c1a08cba72234b314eee"
+    ],
+    "email": [
+      "claim_c1a08cba72234b314eee"
+    ],
+    "name": [
+      "claim_c1a08cba72234b314eee"
+    ],
+    "profile_url": [
+      "claim_c1a08cba72234b314eee"
+    ],
+    "status": [
+      "claim_c1a08cba72234b314eee"
+    ],
+    "title": [
+      "claim_c1a08cba72234b314eee"
+    ]
+  },
+  "id": "mentor_fc87d0f5b1b1c6a5f9f9",
+  "last_verified_at": "2026-08-11T13:33:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c1a08cba72234b314eee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冷建兴"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1acfa31affd0e6a82c9b",
+      "claim_ids": [
+        "claim_c1a08cba72234b314eee"
+      ],
+      "observed_at": "2026-08-11T13:33:56Z",
+      "status": "current",
+      "url": "http://oc.zju.edu.cn/2019/0614/c53762a2202383/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:33:56Z",
+  "status_reason": null,
+  "status_source_url": "http://oc.zju.edu.cn/2019/0614/c53762a2202383/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:33:56Z"
+}
