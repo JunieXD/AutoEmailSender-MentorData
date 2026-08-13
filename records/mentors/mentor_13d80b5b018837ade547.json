@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cd123fb174b89d63db78"
+      ],
+      "ended_at": null,
+      "id": "aff_6814d674bd4d9936921f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_45fa5f9ea81dfa05f160",
+      "source_url": "https://faculty.csu.edu.cn/liweijt/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cd123fb174b89d63db78"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6814d674bd4d9936921f",
+      "claim_ids": [
+        "claim_cd123fb174b89d63db78"
+      ],
+      "is_primary": true,
+      "normalized_value": "liweijt@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "https://faculty.csu.edu.cn/liweijt/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liweijt@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cd123fb174b89d63db78"
+    ],
+    "email": [
+      "claim_cd123fb174b89d63db78"
+    ],
+    "name": [
+      "claim_cd123fb174b89d63db78"
+    ],
+    "profile_url": [
+      "claim_cd123fb174b89d63db78"
+    ],
+    "research_directions": [
+      "claim_cd123fb174b89d63db78"
+    ],
+    "status": [
+      "claim_cd123fb174b89d63db78"
+    ],
+    "title": [
+      "claim_cd123fb174b89d63db78"
+    ]
+  },
+  "id": "mentor_13d80b5b018837ade547",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cd123fb174b89d63db78"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李蔚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6814d674bd4d9936921f",
+      "claim_ids": [
+        "claim_cd123fb174b89d63db78"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/liweijt/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "列车控制与牵引电传动、列车运行控制与智能驾驶、重载列车无线重联协同控制、磁浮列车控制及监控、列车新能源动力及控制、列车通信网络及控制系统、磁浮列车控制与状态感知辨识"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/liweijt/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}

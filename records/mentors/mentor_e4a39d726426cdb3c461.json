@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6f1c1f258ab3b952b6fc"
+      ],
+      "ended_at": null,
+      "id": "aff_6fcedcebe3819f3a6389",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_98eae5e1804049179d88",
+      "source_url": "http://faculty.csu.edu.cn/wangziliang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_6f1c1f258ab3b952b6fc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6fcedcebe3819f3a6389",
+      "claim_ids": [
+        "claim_6f1c1f258ab3b952b6fc"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangziliang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/wangziliang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangziliang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ],
+    "email": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ],
+    "name": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ],
+    "profile_url": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ],
+    "recent_papers": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ],
+    "research_directions": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ],
+    "status": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ],
+    "title": [
+      "claim_6f1c1f258ab3b952b6fc"
+    ]
+  },
+  "id": "mentor_e4a39d726426cdb3c461",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6f1c1f258ab3b952b6fc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王子梁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6fcedcebe3819f3a6389",
+      "claim_ids": [
+        "claim_6f1c1f258ab3b952b6fc"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/wangziliang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "[ACM MM] Yuting Yan, Jiaqi Zhang,Ziliang Wang*. Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection. 2026.",
+    "[ACL] Ziliang Wang, Ge Li*, Jia Li, Hao Zhu, Zhi Jin. VulAgent: Hypothesis-Validation Driven Multi-Agent Architecture for Vulnerability Detection. 2026.",
+    "[FSE] Hao Zhu, Jia Li, Jiaru Qian, Yihong Dong, Ziliang Wang, Lecheng Wang, Ge Li*. VulInstruct: Security Knowledge Mining for Vulnerability Detection. 2026.",
+    "[TOSEM] Ziliang Wang, Ge Li*, Jia Li, Meng Yan, Yingfei Xiong, Zhi Jin. M2CVD: Multi-Model Collaboration for Code Vulnerability Detection. 2025.",
+    "[TSC] Ziliang Wang*, Xiaohong Zhang, Ze Shi Li, Meng Yan. QoSBERT: An Uncertainty-Aware Approach Based on Pre-trained Language Models for Service Quality Prediction. 2025.",
+    "[TKDE] Ziliang Wang, Xiaohong Zhang*, Ze Shi Li, Meng Yan. A Region-Aware Dual Latent State Mining Framework for Service Recommendation in Large-Scale Service Networks. 2025.",
+    "[TSC] Ziliang Wang, Xiaohong Zhang*, Ze Shi Li, Sheng Huang, Meng Yan. Feature Noise Resilient QoS Prediction with Probabilistic Deep Supervision. 2025.",
+    "[TON]Ziliang Wang, Shiyi Zhu, Jianguo Li*, Wei Jiang, K. K. Ramakrishnan, Meng Yan, Xiaohong Zhang*, Alex X. Liu. DeepScaling: Autoscaling Microservices with Stable CPU Utilization for Large Scale Production Cloud Systems. 2024."
+  ],
+  "research_directions": [
+    "智能化软件工程、软件漏洞检测与修复、软件质量保障、大语言模型、智能运维方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/wangziliang/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-11T13:31:57Z"
+}

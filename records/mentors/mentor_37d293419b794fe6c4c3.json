@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c3443fd670a249d81625"
+      ],
+      "ended_at": null,
+      "id": "aff_cf73c64e0ee2c1f25aa9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_98eae5e1804049179d88",
+      "source_url": "http://faculty.csu.edu.cn/lixuejun/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c3443fd670a249d81625"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf73c64e0ee2c1f25aa9",
+      "claim_ids": [
+        "claim_c3443fd670a249d81625"
+      ],
+      "is_primary": true,
+      "normalized_value": "lxjneuro@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/lixuejun/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lxjneuro@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c3443fd670a249d81625"
+    ],
+    "email": [
+      "claim_c3443fd670a249d81625"
+    ],
+    "name": [
+      "claim_c3443fd670a249d81625"
+    ],
+    "profile_url": [
+      "claim_c3443fd670a249d81625"
+    ],
+    "research_directions": [
+      "claim_c3443fd670a249d81625"
+    ],
+    "status": [
+      "claim_c3443fd670a249d81625"
+    ]
+  },
+  "id": "mentor_37d293419b794fe6c4c3",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c3443fd670a249d81625"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李学军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf73c64e0ee2c1f25aa9",
+      "claim_ids": [
+        "claim_c3443fd670a249d81625"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/lixuejun/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能影像诊断、颅底与神经肿瘤临床与基础、基于中枢神经系统肿瘤大数据机器学习的智能诊断系统开发、胶质瘤抗血管生成治疗、胶质瘤免疫治疗、胶质瘤表观遗传学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/lixuejun/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:57Z"
+}

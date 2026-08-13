@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ad806d5d32c0d543b77e"
+      ],
+      "ended_at": null,
+      "id": "aff_cf51b70f255315c7684c",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_40a72300d85e3888388b",
+      "source_url": "http://faculty.csu.edu.cn/zhangdeyu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ad806d5d32c0d543b77e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf51b70f255315c7684c",
+      "claim_ids": [
+        "claim_ad806d5d32c0d543b77e"
+      ],
+      "is_primary": true,
+      "normalized_value": "zdy876@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/zhangdeyu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zdy876@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ad806d5d32c0d543b77e"
+    ],
+    "email": [
+      "claim_ad806d5d32c0d543b77e"
+    ],
+    "name": [
+      "claim_ad806d5d32c0d543b77e"
+    ],
+    "profile_url": [
+      "claim_ad806d5d32c0d543b77e"
+    ],
+    "research_directions": [
+      "claim_ad806d5d32c0d543b77e"
+    ],
+    "status": [
+      "claim_ad806d5d32c0d543b77e"
+    ],
+    "title": [
+      "claim_ad806d5d32c0d543b77e"
+    ]
+  },
+  "id": "mentor_a03ac4a6f442dcfec0a0",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ad806d5d32c0d543b77e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张德宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf51b70f255315c7684c",
+      "claim_ids": [
+        "claim_ad806d5d32c0d543b77e"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/zhangdeyu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向智能应用的端-边融合系统研究、具有能量和频谱获取能力的传感器网络资源分配问题研究、边缘计算、物联网、移动端深度学习加速"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/zhangdeyu/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}

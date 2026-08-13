@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4e8587664ffbc38e012f"
+      ],
+      "ended_at": null,
+      "id": "aff_2a188261642394c7380d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_16b7ee6f798a58a56b28",
+      "source_url": "http://faculty.csu.edu.cn/dengxiaoheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4e8587664ffbc38e012f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2a188261642394c7380d",
+      "claim_ids": [
+        "claim_4e8587664ffbc38e012f"
+      ],
+      "is_primary": true,
+      "normalized_value": "dxh@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/dengxiaoheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dxh@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4e8587664ffbc38e012f"
+    ],
+    "email": [
+      "claim_4e8587664ffbc38e012f"
+    ],
+    "name": [
+      "claim_4e8587664ffbc38e012f"
+    ],
+    "profile_url": [
+      "claim_4e8587664ffbc38e012f"
+    ],
+    "research_directions": [
+      "claim_4e8587664ffbc38e012f"
+    ],
+    "status": [
+      "claim_4e8587664ffbc38e012f"
+    ],
+    "title": [
+      "claim_4e8587664ffbc38e012f"
+    ]
+  },
+  "id": "mentor_9573813495cbd2f05a62",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4e8587664ffbc38e012f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓晓衡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2a188261642394c7380d",
+      "claim_ids": [
+        "claim_4e8587664ffbc38e012f"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/dengxiaoheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "边缘网络与边缘计算、物联网与大数据分析、分布式系统、无线网络、智能车联网、信息与通信系统研发、信息化规划"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/dengxiaoheng/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}

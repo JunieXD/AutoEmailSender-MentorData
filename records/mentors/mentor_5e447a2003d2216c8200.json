@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1a5f0bfbe57d15f79227"
+      ],
+      "ended_at": null,
+      "id": "aff_086fe52d51a97c84108f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_5c3090952227a829f5ac",
+      "source_url": "https://faculty.csu.edu.cn/chenbaifan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1a5f0bfbe57d15f79227"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_086fe52d51a97c84108f",
+      "claim_ids": [
+        "claim_1a5f0bfbe57d15f79227"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenbaifan@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "https://faculty.csu.edu.cn/chenbaifan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenbaifan@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1a5f0bfbe57d15f79227"
+    ],
+    "email": [
+      "claim_1a5f0bfbe57d15f79227"
+    ],
+    "name": [
+      "claim_1a5f0bfbe57d15f79227"
+    ],
+    "profile_url": [
+      "claim_1a5f0bfbe57d15f79227"
+    ],
+    "research_directions": [
+      "claim_1a5f0bfbe57d15f79227"
+    ],
+    "status": [
+      "claim_1a5f0bfbe57d15f79227"
+    ],
+    "title": [
+      "claim_1a5f0bfbe57d15f79227"
+    ]
+  },
+  "id": "mentor_5e447a2003d2216c8200",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1a5f0bfbe57d15f79227"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈白帆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_086fe52d51a97c84108f",
+      "claim_ids": [
+        "claim_1a5f0bfbe57d15f79227"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "https://faculty.csu.edu.cn/chenbaifan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动机器人环境感知与定位、SLAM、机器视觉、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.csu.edu.cn/chenbaifan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}

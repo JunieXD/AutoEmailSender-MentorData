@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f77e24bb41636f1c3f29"
+      ],
+      "ended_at": null,
+      "id": "aff_0ef5c77744f668e61132",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_40a72300d85e3888388b",
+      "source_url": "http://faculty.csu.edu.cn/suxiu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f77e24bb41636f1c3f29"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0ef5c77744f668e61132",
+      "claim_ids": [
+        "claim_f77e24bb41636f1c3f29"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiusu1994@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/suxiu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiusu1994@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f77e24bb41636f1c3f29"
+    ],
+    "email": [
+      "claim_f77e24bb41636f1c3f29"
+    ],
+    "name": [
+      "claim_f77e24bb41636f1c3f29"
+    ],
+    "profile_url": [
+      "claim_f77e24bb41636f1c3f29"
+    ],
+    "recent_papers": [
+      "claim_f77e24bb41636f1c3f29"
+    ],
+    "research_directions": [
+      "claim_f77e24bb41636f1c3f29"
+    ],
+    "status": [
+      "claim_f77e24bb41636f1c3f29"
+    ]
+  },
+  "id": "mentor_896f902ed3a2e9cb9bc4",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f77e24bb41636f1c3f29"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏修"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0ef5c77744f668e61132",
+      "claim_ids": [
+        "claim_f77e24bb41636f1c3f29"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/suxiu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "StateTrace: An Object-Centric Framework for Hidden-State Spatiotemporal Reasoning in Long Videos (ACMMM, CCF A), 2026",
+    "World2Act: Mining Spatiotemporal World-Model Priors for Efficient Visuomotor Control (ACMMM, CCF A), 2026",
+    "GeoClean: Training-Free Concept Erasure in Rectified Flow via Posterior-Competition Stabilization (ACMMM, CCF A), 2026",
+    "Towards Domain Generalized Neural Architecture Search via Language-Guided Visual Augmentation (ACMMM, CCF A), 2026",
+    "Geometric Probing for Isotropic Optimization Manifold in Sparse-View 3D Gaussian Splatting (ECCV, CAAI A), 2026",
+    "ArcAD: Anomaly-Rectified Calibration for Cold-Start Supervised Anomaly Detection (ECCV, CAAI A), 2026",
+    "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model (ICML, CCF A), 2026",
+    "Sentinel-VLA: A Metacognitive VLA Model with Active Status Monitoring for Dynamic Reasoning and Error Recovery (ICML, CCF A), 2026"
+  ],
+  "research_directions": [
+    "具身智能、世界模型、多模态大模型(医学)、计算机视觉、自动化机器学习等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/suxiu/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:57Z"
+}

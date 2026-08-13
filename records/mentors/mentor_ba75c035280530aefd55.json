@@ -1,0 +1,93 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d560499cf62c236067bc"
+      ],
+      "ended_at": null,
+      "id": "aff_b501276a7de044407de9",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_40a72300d85e3888388b",
+      "source_url": "http://faculty.csu.edu.cn/wangshaokai/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_d560499cf62c236067bc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b501276a7de044407de9",
+      "claim_ids": [
+        "claim_d560499cf62c236067bc"
+      ],
+      "is_primary": true,
+      "normalized_value": "skwang@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/wangshaokai/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "skwang@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d560499cf62c236067bc"
+    ],
+    "email": [
+      "claim_d560499cf62c236067bc"
+    ],
+    "name": [
+      "claim_d560499cf62c236067bc"
+    ],
+    "profile_url": [
+      "claim_d560499cf62c236067bc"
+    ],
+    "research_directions": [
+      "claim_d560499cf62c236067bc"
+    ],
+    "status": [
+      "claim_d560499cf62c236067bc"
+    ]
+  },
+  "id": "mentor_ba75c035280530aefd55",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d560499cf62c236067bc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王劭恺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b501276a7de044407de9",
+      "claim_ids": [
+        "claim_d560499cf62c236067bc"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/wangshaokai/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向复杂生物数据的人工智能方法研究(单细胞与空间组学的表示学习与多模态建模、三维基因组解析的图神经网络与结构学习方法、面向纳米孔测序与质谱数据的深度信号解析方法、图学习驱动的药物研发与蛋白质设计)",
+    "视频理解与多模态智能分析(基于视觉大模型的图像与长视频理解、关键事件检测、多模态内容分析与结构化表达)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/wangshaokai/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-11T13:31:57Z"
+}

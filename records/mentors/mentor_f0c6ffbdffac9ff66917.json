@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c124b13f5bb7318a4b6b"
+      ],
+      "ended_at": null,
+      "id": "aff_7d97191a629918912e28",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:31:57Z",
+      "organization_id": "org_auto_98eae5e1804049179d88",
+      "source_url": "http://faculty.csu.edu.cn/lijinchen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c124b13f5bb7318a4b6b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7d97191a629918912e28",
+      "claim_ids": [
+        "claim_c124b13f5bb7318a4b6b"
+      ],
+      "is_primary": true,
+      "normalized_value": "lijinchen@csu.edu.cn",
+      "observed_at": "2026-08-11T13:31:57Z",
+      "source_url": "http://faculty.csu.edu.cn/lijinchen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lijinchen@csu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:31:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c124b13f5bb7318a4b6b"
+    ],
+    "email": [
+      "claim_c124b13f5bb7318a4b6b"
+    ],
+    "name": [
+      "claim_c124b13f5bb7318a4b6b"
+    ],
+    "profile_url": [
+      "claim_c124b13f5bb7318a4b6b"
+    ],
+    "research_directions": [
+      "claim_c124b13f5bb7318a4b6b"
+    ],
+    "status": [
+      "claim_c124b13f5bb7318a4b6b"
+    ],
+    "title": [
+      "claim_c124b13f5bb7318a4b6b"
+    ]
+  },
+  "id": "mentor_f0c6ffbdffac9ff66917",
+  "last_verified_at": "2026-08-11T13:31:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c124b13f5bb7318a4b6b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李津臣"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7d97191a629918912e28",
+      "claim_ids": [
+        "claim_c124b13f5bb7318a4b6b"
+      ],
+      "observed_at": "2026-08-11T13:31:57Z",
+      "status": "current",
+      "url": "http://faculty.csu.edu.cn/lijinchen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算生物学、生物信息学、医学遗传学、神经精神疾病精准诊疗"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:31:57Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.csu.edu.cn/lijinchen/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:31:57Z"
+}
