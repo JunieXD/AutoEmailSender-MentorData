@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_db5408ff4fa65e179e33"
+      ],
+      "ended_at": null,
+      "id": "aff_c7ac3620800a713fdecd",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/tansiwei",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_db5408ff4fa65e179e33"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c7ac3620800a713fdecd",
+      "claim_ids": [
+        "claim_db5408ff4fa65e179e33"
+      ],
+      "is_primary": true,
+      "normalized_value": "siweitan@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/tansiwei",
+      "status": "current",
+      "type": "email",
+      "value": "siweitan@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_db5408ff4fa65e179e33"
+    ],
+    "email": [
+      "claim_db5408ff4fa65e179e33"
+    ],
+    "name": [
+      "claim_db5408ff4fa65e179e33"
+    ],
+    "profile_url": [
+      "claim_db5408ff4fa65e179e33"
+    ],
+    "research_directions": [
+      "claim_db5408ff4fa65e179e33"
+    ],
+    "status": [
+      "claim_db5408ff4fa65e179e33"
+    ],
+    "title": [
+      "claim_db5408ff4fa65e179e33"
+    ]
+  },
+  "id": "mentor_2b4e2dac58e2c938161b",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_db5408ff4fa65e179e33"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谭思危"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c7ac3620800a713fdecd",
+      "claim_ids": [
+        "claim_db5408ff4fa65e179e33"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/tansiwei"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子计算、体系结构、软件工程、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/tansiwei",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

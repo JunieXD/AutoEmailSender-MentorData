@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a091f0a7513041a16ae9"
+      ],
+      "ended_at": null,
+      "id": "aff_32dc9372eae844fc8b4e",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/NB25050",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_a091f0a7513041a16ae9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_32dc9372eae844fc8b4e",
+      "claim_ids": [
+        "claim_a091f0a7513041a16ae9"
+      ],
+      "is_primary": true,
+      "normalized_value": "carlzhang4@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/NB25050",
+      "status": "current",
+      "type": "email",
+      "value": "carlzhang4@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a091f0a7513041a16ae9"
+    ],
+    "email": [
+      "claim_a091f0a7513041a16ae9"
+    ],
+    "name": [
+      "claim_a091f0a7513041a16ae9"
+    ],
+    "profile_url": [
+      "claim_a091f0a7513041a16ae9"
+    ],
+    "research_directions": [
+      "claim_a091f0a7513041a16ae9"
+    ],
+    "status": [
+      "claim_a091f0a7513041a16ae9"
+    ]
+  },
+  "id": "mentor_bb4be34007a86c589dc9",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a091f0a7513041a16ae9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_32dc9372eae844fc8b4e",
+      "claim_ids": [
+        "claim_a091f0a7513041a16ae9"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/NB25050"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机系统结构、网络、大模型推理、具身智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/NB25050",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

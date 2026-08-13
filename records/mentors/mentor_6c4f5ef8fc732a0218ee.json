@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6367e3a39e8cc381ea51"
+      ],
+      "ended_at": null,
+      "id": "aff_4703306f2acd35e8c45f",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/tangxiu",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_6367e3a39e8cc381ea51"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4703306f2acd35e8c45f",
+      "claim_ids": [
+        "claim_6367e3a39e8cc381ea51"
+      ],
+      "is_primary": true,
+      "normalized_value": "tangxiu@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/tangxiu",
+      "status": "current",
+      "type": "email",
+      "value": "tangxiu@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6367e3a39e8cc381ea51"
+    ],
+    "email": [
+      "claim_6367e3a39e8cc381ea51"
+    ],
+    "name": [
+      "claim_6367e3a39e8cc381ea51"
+    ],
+    "profile_url": [
+      "claim_6367e3a39e8cc381ea51"
+    ],
+    "research_directions": [
+      "claim_6367e3a39e8cc381ea51"
+    ],
+    "status": [
+      "claim_6367e3a39e8cc381ea51"
+    ]
+  },
+  "id": "mentor_6c4f5ef8fc732a0218ee",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6367e3a39e8cc381ea51"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "唐秀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4703306f2acd35e8c45f",
+      "claim_ids": [
+        "claim_6367e3a39e8cc381ea51"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/tangxiu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "AI数据库、软件测试、数据智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/tangxiu",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

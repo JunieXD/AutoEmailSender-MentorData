@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d8b62aae97afd475a761"
+      ],
+      "ended_at": null,
+      "id": "aff_68e275773f3cc1afedd5",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_67dcda45818a3339453e",
+      "source_url": "https://person.zju.edu.cn/0011057",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d8b62aae97afd475a761"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_68e275773f3cc1afedd5",
+      "claim_ids": [
+        "claim_d8b62aae97afd475a761"
+      ],
+      "is_primary": true,
+      "normalized_value": "wusai@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/0011057",
+      "status": "current",
+      "type": "email",
+      "value": "wusai@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d8b62aae97afd475a761"
+    ],
+    "email": [
+      "claim_d8b62aae97afd475a761"
+    ],
+    "name": [
+      "claim_d8b62aae97afd475a761"
+    ],
+    "profile_url": [
+      "claim_d8b62aae97afd475a761"
+    ],
+    "research_directions": [
+      "claim_d8b62aae97afd475a761"
+    ],
+    "status": [
+      "claim_d8b62aae97afd475a761"
+    ],
+    "title": [
+      "claim_d8b62aae97afd475a761"
+    ]
+  },
+  "id": "mentor_88740508ae43d6752124",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d8b62aae97afd475a761"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "伍赛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_68e275773f3cc1afedd5",
+      "claim_ids": [
+        "claim_d8b62aae97afd475a761"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/0011057"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据库、大数据处理、数据库智能化、分布式数据处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/0011057",
+  "title": "教授",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a08a575c45ebd80ebd63"
+      ],
+      "ended_at": null,
+      "id": "aff_638989f94cacfd112d3d",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/zhangwen",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a08a575c45ebd80ebd63"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_638989f94cacfd112d3d",
+      "claim_ids": [
+        "claim_a08a575c45ebd80ebd63"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhang.wen@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/zhangwen",
+      "status": "current",
+      "type": "email",
+      "value": "zhang.wen@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a08a575c45ebd80ebd63"
+    ],
+    "email": [
+      "claim_a08a575c45ebd80ebd63"
+    ],
+    "name": [
+      "claim_a08a575c45ebd80ebd63"
+    ],
+    "profile_url": [
+      "claim_a08a575c45ebd80ebd63"
+    ],
+    "research_directions": [
+      "claim_a08a575c45ebd80ebd63"
+    ],
+    "status": [
+      "claim_a08a575c45ebd80ebd63"
+    ],
+    "title": [
+      "claim_a08a575c45ebd80ebd63"
+    ]
+  },
+  "id": "mentor_13dd0cedb91ba8067526",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a08a575c45ebd80ebd63"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张 文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_638989f94cacfd112d3d",
+      "claim_ids": [
+        "claim_a08a575c45ebd80ebd63"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/zhangwen"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "知识图谱、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/zhangwen",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_899a1672c7ed6220fb37"
+      ],
+      "ended_at": null,
+      "id": "aff_0f8aa08b2e7963c39584",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/maoyuren",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_899a1672c7ed6220fb37"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0f8aa08b2e7963c39584",
+      "claim_ids": [
+        "claim_899a1672c7ed6220fb37"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuren.mao@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/maoyuren",
+      "status": "current",
+      "type": "email",
+      "value": "yuren.mao@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_899a1672c7ed6220fb37"
+    ],
+    "email": [
+      "claim_899a1672c7ed6220fb37"
+    ],
+    "name": [
+      "claim_899a1672c7ed6220fb37"
+    ],
+    "profile_url": [
+      "claim_899a1672c7ed6220fb37"
+    ],
+    "research_directions": [
+      "claim_899a1672c7ed6220fb37"
+    ],
+    "status": [
+      "claim_899a1672c7ed6220fb37"
+    ]
+  },
+  "id": "mentor_aa645caeacf2243f8338",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_899a1672c7ed6220fb37"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "毛玉仁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0f8aa08b2e7963c39584",
+      "claim_ids": [
+        "claim_899a1672c7ed6220fb37"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/maoyuren"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大模型、机器学习、数据智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/maoyuren",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2ad2a45a2a7e70587d7c"
+      ],
+      "ended_at": null,
+      "id": "aff_f5fa9c12b1861bf84754",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/NB24090",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2ad2a45a2a7e70587d7c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f5fa9c12b1861bf84754",
+      "claim_ids": [
+        "claim_2ad2a45a2a7e70587d7c"
+      ],
+      "is_primary": true,
+      "normalized_value": "xtf_z@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/NB24090",
+      "status": "current",
+      "type": "email",
+      "value": "xtf_z@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2ad2a45a2a7e70587d7c"
+    ],
+    "email": [
+      "claim_2ad2a45a2a7e70587d7c"
+    ],
+    "name": [
+      "claim_2ad2a45a2a7e70587d7c"
+    ],
+    "profile_url": [
+      "claim_2ad2a45a2a7e70587d7c"
+    ],
+    "research_directions": [
+      "claim_2ad2a45a2a7e70587d7c"
+    ],
+    "status": [
+      "claim_2ad2a45a2a7e70587d7c"
+    ],
+    "title": [
+      "claim_2ad2a45a2a7e70587d7c"
+    ]
+  },
+  "id": "mentor_4078f25c22e952b41e3d",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2ad2a45a2a7e70587d7c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱轶凡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f5fa9c12b1861bf84754",
+      "claim_ids": [
+        "claim_2ad2a45a2a7e70587d7c"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/NB24090"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态数据管理、向量数据库、新硬件加速"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/NB24090",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

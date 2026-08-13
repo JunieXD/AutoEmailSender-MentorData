@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b3308fd966885c8e988"
+      ],
+      "ended_at": null,
+      "id": "aff_8df30462dd457d5729a7",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/wuweitian",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_7b3308fd966885c8e988"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8df30462dd457d5729a7",
+      "claim_ids": [
+        "claim_7b3308fd966885c8e988"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuweitian@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/wuweitian",
+      "status": "current",
+      "type": "email",
+      "value": "wuweitian@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b3308fd966885c8e988"
+    ],
+    "email": [
+      "claim_7b3308fd966885c8e988"
+    ],
+    "name": [
+      "claim_7b3308fd966885c8e988"
+    ],
+    "profile_url": [
+      "claim_7b3308fd966885c8e988"
+    ],
+    "research_directions": [
+      "claim_7b3308fd966885c8e988"
+    ],
+    "status": [
+      "claim_7b3308fd966885c8e988"
+    ]
+  },
+  "id": "mentor_601e3e76340155949c2b",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b3308fd966885c8e988"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田吴炜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8df30462dd457d5729a7",
+      "claim_ids": [
+        "claim_7b3308fd966885c8e988"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/wuweitian"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子计算控制系统、算法优化与软硬件结合、生成式大模型微调与训练、GPU-FPGA异构计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/wuweitian",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

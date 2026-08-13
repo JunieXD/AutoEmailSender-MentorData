@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5e43e40aa01962b552bf"
+      ],
+      "ended_at": null,
+      "id": "aff_3fe71009ae36c06f57fb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/dengdazhen",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_5e43e40aa01962b552bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3fe71009ae36c06f57fb",
+      "claim_ids": [
+        "claim_5e43e40aa01962b552bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "dengdazhen@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/dengdazhen",
+      "status": "current",
+      "type": "email",
+      "value": "dengdazhen@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5e43e40aa01962b552bf"
+    ],
+    "email": [
+      "claim_5e43e40aa01962b552bf"
+    ],
+    "name": [
+      "claim_5e43e40aa01962b552bf"
+    ],
+    "profile_url": [
+      "claim_5e43e40aa01962b552bf"
+    ],
+    "research_directions": [
+      "claim_5e43e40aa01962b552bf"
+    ],
+    "status": [
+      "claim_5e43e40aa01962b552bf"
+    ]
+  },
+  "id": "mentor_5b6213e6f22354966625",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5e43e40aa01962b552bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓达臻"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3fe71009ae36c06f57fb",
+      "claim_ids": [
+        "claim_5e43e40aa01962b552bf"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/dengdazhen"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据可视分析、人工智能、大模型安全及可解释性"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/dengdazhen",
+  "title": null,
+  "updated_at": "2026-08-11T13:34:02Z"
+}

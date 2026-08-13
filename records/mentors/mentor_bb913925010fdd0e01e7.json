@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0687f8602afaf04a68b5"
+      ],
+      "ended_at": null,
+      "id": "aff_3a6b820a074b1747c0ef",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/haobo_zju",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_0687f8602afaf04a68b5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3a6b820a074b1747c0ef",
+      "claim_ids": [
+        "claim_0687f8602afaf04a68b5"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanghaobo@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/haobo_zju",
+      "status": "current",
+      "type": "email",
+      "value": "wanghaobo@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0687f8602afaf04a68b5"
+    ],
+    "email": [
+      "claim_0687f8602afaf04a68b5"
+    ],
+    "name": [
+      "claim_0687f8602afaf04a68b5"
+    ],
+    "profile_url": [
+      "claim_0687f8602afaf04a68b5"
+    ],
+    "research_directions": [
+      "claim_0687f8602afaf04a68b5"
+    ],
+    "status": [
+      "claim_0687f8602afaf04a68b5"
+    ],
+    "title": [
+      "claim_0687f8602afaf04a68b5"
+    ]
+  },
+  "id": "mentor_bb913925010fdd0e01e7",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0687f8602afaf04a68b5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王皓波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3a6b820a074b1747c0ef",
+      "claim_ids": [
+        "claim_0687f8602afaf04a68b5"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/haobo_zju"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据智能、机器学习、结构化数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/haobo_zju",
+  "title": "研究员",
+  "updated_at": "2026-08-11T13:34:02Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9343571e8023cacc50ce"
+      ],
+      "ended_at": null,
+      "id": "aff_28e72355a5e9ecf09fcb",
+      "is_primary": true,
+      "observed_at": "2026-08-11T13:34:02Z",
+      "organization_id": "org_auto_35769d45f47723f33719",
+      "source_url": "https://person.zju.edu.cn/huxing",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9343571e8023cacc50ce"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_28e72355a5e9ecf09fcb",
+      "claim_ids": [
+        "claim_9343571e8023cacc50ce"
+      ],
+      "is_primary": true,
+      "normalized_value": "xinghu@zju.edu.cn",
+      "observed_at": "2026-08-11T13:34:02Z",
+      "source_url": "https://person.zju.edu.cn/huxing",
+      "status": "current",
+      "type": "email",
+      "value": "xinghu@zju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-11T13:34:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9343571e8023cacc50ce"
+    ],
+    "email": [
+      "claim_9343571e8023cacc50ce"
+    ],
+    "name": [
+      "claim_9343571e8023cacc50ce"
+    ],
+    "profile_url": [
+      "claim_9343571e8023cacc50ce"
+    ],
+    "research_directions": [
+      "claim_9343571e8023cacc50ce"
+    ],
+    "status": [
+      "claim_9343571e8023cacc50ce"
+    ],
+    "title": [
+      "claim_9343571e8023cacc50ce"
+    ]
+  },
+  "id": "mentor_e68b6a4bc5598a4cbd33",
+  "last_verified_at": "2026-08-11T13:34:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9343571e8023cacc50ce"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡星"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_28e72355a5e9ecf09fcb",
+      "claim_ids": [
+        "claim_9343571e8023cacc50ce"
+      ],
+      "observed_at": "2026-08-11T13:34:02Z",
+      "status": "current",
+      "url": "https://person.zju.edu.cn/huxing"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机软件与理论、AI and SE、智能化软件工程、软件供应链安全、程序理解、软件仓库挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-11T13:34:02Z",
+  "status_reason": null,
+  "status_source_url": "https://person.zju.edu.cn/huxing",
+  "title": "副教授",
+  "updated_at": "2026-08-11T13:34:02Z"
+}
