@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_81e4d687f740ff49d471"
+      ],
+      "ended_at": null,
+      "id": "aff_036a6a5ac9e06f9e9b7c",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/gtaolab/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_81e4d687f740ff49d471"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_036a6a5ac9e06f9e9b7c",
+      "claim_ids": [
+        "claim_81e4d687f740ff49d471"
+      ],
+      "is_primary": true,
+      "normalized_value": "tao@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/gtaolab/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_81e4d687f740ff49d471"
+    ],
+    "email": [
+      "claim_81e4d687f740ff49d471"
+    ],
+    "name": [
+      "claim_81e4d687f740ff49d471"
+    ],
+    "profile_url": [
+      "claim_81e4d687f740ff49d471"
+    ],
+    "research_directions": [
+      "claim_81e4d687f740ff49d471"
+    ],
+    "status": [
+      "claim_81e4d687f740ff49d471"
+    ],
+    "title": [
+      "claim_81e4d687f740ff49d471"
+    ]
+  },
+  "id": "mentor_5b0e1240d0158b55da86",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_81e4d687f740ff49d471"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陶光明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_036a6a5ac9e06f9e9b7c",
+      "claim_ids": [
+        "claim_81e4d687f740ff49d471"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/gtaolab/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "零能耗热管理新材料、智能纤维与织物空间、微创医疗纤维机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/gtaolab/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

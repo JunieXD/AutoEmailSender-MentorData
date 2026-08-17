@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5f9ce89d81a9962b2349"
+      ],
+      "ended_at": null,
+      "id": "aff_e41a3cbc8d0730f53e11",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/cuisheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5f9ce89d81a9962b2349"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e41a3cbc8d0730f53e11",
+      "claim_ids": [
+        "claim_5f9ce89d81a9962b2349"
+      ],
+      "is_primary": true,
+      "normalized_value": "cuisheng@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/cuisheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cuisheng@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5f9ce89d81a9962b2349"
+    ],
+    "email": [
+      "claim_5f9ce89d81a9962b2349"
+    ],
+    "name": [
+      "claim_5f9ce89d81a9962b2349"
+    ],
+    "profile_url": [
+      "claim_5f9ce89d81a9962b2349"
+    ],
+    "research_directions": [
+      "claim_5f9ce89d81a9962b2349"
+    ],
+    "status": [
+      "claim_5f9ce89d81a9962b2349"
+    ],
+    "title": [
+      "claim_5f9ce89d81a9962b2349"
+    ]
+  },
+  "id": "mentor_de5c47e2e9f114e613f1",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5f9ce89d81a9962b2349"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "崔晟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e41a3cbc8d0730f53e11",
+      "claim_ids": [
+        "claim_5f9ce89d81a9962b2349"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/cuisheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光通信技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/cuisheng/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

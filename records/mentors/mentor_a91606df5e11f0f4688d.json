@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_932c2706795a02238991"
+      ],
+      "ended_at": null,
+      "id": "aff_dc68290c65bf8a6ed0a6",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/pengjiahui/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_932c2706795a02238991"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dc68290c65bf8a6ed0a6",
+      "claim_ids": [
+        "claim_932c2706795a02238991"
+      ],
+      "is_primary": true,
+      "normalized_value": "jpeng@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/pengjiahui/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jpeng@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_932c2706795a02238991"
+    ],
+    "email": [
+      "claim_932c2706795a02238991"
+    ],
+    "name": [
+      "claim_932c2706795a02238991"
+    ],
+    "profile_url": [
+      "claim_932c2706795a02238991"
+    ],
+    "research_directions": [
+      "claim_932c2706795a02238991"
+    ],
+    "status": [
+      "claim_932c2706795a02238991"
+    ],
+    "title": [
+      "claim_932c2706795a02238991"
+    ]
+  },
+  "id": "mentor_a91606df5e11f0f4688d",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_932c2706795a02238991"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭家晖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dc68290c65bf8a6ed0a6",
+      "claim_ids": [
+        "claim_932c2706795a02238991"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/pengjiahui/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超快激光技术、飞秒激光解吸附及精细加工、飞秒激光光谱及显微成像、大气压飞秒激光质谱技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/pengjiahui/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_63e0e7ab374b06691769"
+      ],
+      "ended_at": null,
+      "id": "aff_448c3e4d350c64a39fc2",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/gaoming/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_63e0e7ab374b06691769"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_448c3e4d350c64a39fc2",
+      "claim_ids": [
+        "claim_63e0e7ab374b06691769"
+      ],
+      "is_primary": true,
+      "normalized_value": "mgao@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/gaoming/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mgao@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_63e0e7ab374b06691769"
+    ],
+    "email": [
+      "claim_63e0e7ab374b06691769"
+    ],
+    "name": [
+      "claim_63e0e7ab374b06691769"
+    ],
+    "profile_url": [
+      "claim_63e0e7ab374b06691769"
+    ],
+    "research_directions": [
+      "claim_63e0e7ab374b06691769"
+    ],
+    "status": [
+      "claim_63e0e7ab374b06691769"
+    ],
+    "title": [
+      "claim_63e0e7ab374b06691769"
+    ]
+  },
+  "id": "mentor_ab2d300ca4107b90910d",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_63e0e7ab374b06691769"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_448c3e4d350c64a39fc2",
+      "claim_ids": [
+        "claim_63e0e7ab374b06691769"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/gaoming/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "激光复合焊接、增材制造的工艺和机理研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/gaoming/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

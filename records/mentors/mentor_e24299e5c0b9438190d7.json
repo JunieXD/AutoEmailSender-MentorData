@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c5789243886139e6fef"
+      ],
+      "ended_at": null,
+      "id": "aff_057031485bacee57f005",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/LIZHENGYAN/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c5789243886139e6fef"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_057031485bacee57f005",
+      "claim_ids": [
+        "claim_1c5789243886139e6fef"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhengyanli@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/LIZHENGYAN/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhengyanli@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c5789243886139e6fef"
+    ],
+    "email": [
+      "claim_1c5789243886139e6fef"
+    ],
+    "name": [
+      "claim_1c5789243886139e6fef"
+    ],
+    "profile_url": [
+      "claim_1c5789243886139e6fef"
+    ],
+    "research_directions": [
+      "claim_1c5789243886139e6fef"
+    ],
+    "status": [
+      "claim_1c5789243886139e6fef"
+    ],
+    "title": [
+      "claim_1c5789243886139e6fef"
+    ]
+  },
+  "id": "mentor_e24299e5c0b9438190d7",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c5789243886139e6fef"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李政言"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_057031485bacee57f005",
+      "claim_ids": [
+        "claim_1c5789243886139e6fef"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/LIZHENGYAN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "激光等离子体物理、次级辐射源研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/LIZHENGYAN/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

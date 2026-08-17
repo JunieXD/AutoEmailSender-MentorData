@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9ddbbf98ceb8473deeaa"
+      ],
+      "ended_at": null,
+      "id": "aff_3829d54a3069ccf8c121",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/cmf/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9ddbbf98ceb8473deeaa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3829d54a3069ccf8c121",
+      "claim_ids": [
+        "claim_9ddbbf98ceb8473deeaa"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengmf@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/cmf/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chengmf@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9ddbbf98ceb8473deeaa"
+    ],
+    "email": [
+      "claim_9ddbbf98ceb8473deeaa"
+    ],
+    "name": [
+      "claim_9ddbbf98ceb8473deeaa"
+    ],
+    "profile_url": [
+      "claim_9ddbbf98ceb8473deeaa"
+    ],
+    "research_directions": [
+      "claim_9ddbbf98ceb8473deeaa"
+    ],
+    "status": [
+      "claim_9ddbbf98ceb8473deeaa"
+    ],
+    "title": [
+      "claim_9ddbbf98ceb8473deeaa"
+    ]
+  },
+  "id": "mentor_a5a7689ef394963e79d9",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9ddbbf98ceb8473deeaa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程孟凡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3829d54a3069ccf8c121",
+      "claim_ids": [
+        "claim_9ddbbf98ceb8473deeaa"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/cmf/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "安全光网络与光通信技术,具体包括光混沌系统、高速长距光纤保密通信、高速密钥分发、光器件指纹认证、光网络物理层安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/cmf/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

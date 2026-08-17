@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ffc77141ed61467ad92b"
+      ],
+      "ended_at": null,
+      "id": "aff_510999934418f510b09a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/daijiangnan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ffc77141ed61467ad92b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_510999934418f510b09a",
+      "claim_ids": [
+        "claim_ffc77141ed61467ad92b"
+      ],
+      "is_primary": true,
+      "normalized_value": "daijiangnan@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/daijiangnan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "daijiangnan@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ffc77141ed61467ad92b"
+    ],
+    "email": [
+      "claim_ffc77141ed61467ad92b"
+    ],
+    "name": [
+      "claim_ffc77141ed61467ad92b"
+    ],
+    "profile_url": [
+      "claim_ffc77141ed61467ad92b"
+    ],
+    "research_directions": [
+      "claim_ffc77141ed61467ad92b"
+    ],
+    "status": [
+      "claim_ffc77141ed61467ad92b"
+    ],
+    "title": [
+      "claim_ffc77141ed61467ad92b"
+    ]
+  },
+  "id": "mentor_79cc750c49144f4c1cdb",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ffc77141ed61467ad92b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "戴江南"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_510999934418f510b09a",
+      "claim_ids": [
+        "claim_ffc77141ed61467ad92b"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/daijiangnan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超宽禁带半导体材料与芯片领域(AlN基超宽禁带半导体深紫外固态光源器件)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/daijiangnan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

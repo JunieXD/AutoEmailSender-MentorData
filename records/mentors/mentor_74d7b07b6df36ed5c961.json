@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1cb8f258ee02c82e7354"
+      ],
+      "ended_at": null,
+      "id": "aff_77824e910f507ef615f1",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/chenyuntian/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1cb8f258ee02c82e7354"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_77824e910f507ef615f1",
+      "claim_ids": [
+        "claim_1cb8f258ee02c82e7354"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuntian@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/chenyuntian/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuntian@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1cb8f258ee02c82e7354"
+    ],
+    "email": [
+      "claim_1cb8f258ee02c82e7354"
+    ],
+    "name": [
+      "claim_1cb8f258ee02c82e7354"
+    ],
+    "profile_url": [
+      "claim_1cb8f258ee02c82e7354"
+    ],
+    "research_directions": [
+      "claim_1cb8f258ee02c82e7354"
+    ],
+    "status": [
+      "claim_1cb8f258ee02c82e7354"
+    ],
+    "title": [
+      "claim_1cb8f258ee02c82e7354"
+    ]
+  },
+  "id": "mentor_74d7b07b6df36ed5c961",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1cb8f258ee02c82e7354"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈云天"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_77824e910f507ef615f1",
+      "claim_ids": [
+        "claim_1cb8f258ee02c82e7354"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/chenyuntian/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算物理光学",
+    "研究线性及非线性介质/结构中光传输和散射的物理现象与应用,光电器件/系统的理论、算法及光学EDA仿真软件开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/chenyuntian/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

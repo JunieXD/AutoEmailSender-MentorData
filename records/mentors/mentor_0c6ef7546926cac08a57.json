@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9663cb75b330ffbc48e5"
+      ],
+      "ended_at": null,
+      "id": "aff_d4ac18555a9237f250f3",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/chenchao100/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9663cb75b330ffbc48e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d4ac18555a9237f250f3",
+      "claim_ids": [
+        "claim_9663cb75b330ffbc48e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "cchen@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/chenchao100/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cchen@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9663cb75b330ffbc48e5"
+    ],
+    "email": [
+      "claim_9663cb75b330ffbc48e5"
+    ],
+    "name": [
+      "claim_9663cb75b330ffbc48e5"
+    ],
+    "profile_url": [
+      "claim_9663cb75b330ffbc48e5"
+    ],
+    "research_directions": [
+      "claim_9663cb75b330ffbc48e5"
+    ],
+    "status": [
+      "claim_9663cb75b330ffbc48e5"
+    ],
+    "title": [
+      "claim_9663cb75b330ffbc48e5"
+    ]
+  },
+  "id": "mentor_0c6ef7546926cac08a57",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9663cb75b330ffbc48e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d4ac18555a9237f250f3",
+      "claim_ids": [
+        "claim_9663cb75b330ffbc48e5"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/chenchao100/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "红外光电探测器、新型太阳能电池"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/chenchao100/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

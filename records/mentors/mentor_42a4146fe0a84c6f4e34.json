@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_802508a10dff73b95f2b"
+      ],
+      "ended_at": null,
+      "id": "aff_7c95e9754c1fc1585d36",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/aali/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_802508a10dff73b95f2b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7c95e9754c1fc1585d36",
+      "claim_ids": [
+        "claim_802508a10dff73b95f2b"
+      ],
+      "is_primary": true,
+      "normalized_value": "aali@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/aali/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "aali@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_802508a10dff73b95f2b"
+    ],
+    "email": [
+      "claim_802508a10dff73b95f2b"
+    ],
+    "name": [
+      "claim_802508a10dff73b95f2b"
+    ],
+    "profile_url": [
+      "claim_802508a10dff73b95f2b"
+    ],
+    "recent_papers": [
+      "claim_802508a10dff73b95f2b"
+    ],
+    "research_directions": [
+      "claim_802508a10dff73b95f2b"
+    ],
+    "status": [
+      "claim_802508a10dff73b95f2b"
+    ],
+    "title": [
+      "claim_802508a10dff73b95f2b"
+    ]
+  },
+  "id": "mentor_42a4146fe0a84c6f4e34",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_802508a10dff73b95f2b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李安安"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7c95e9754c1fc1585d36",
+      "claim_ids": [
+        "claim_802508a10dff73b95f2b"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/aali/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "DeepBrainSeg: Automated Brain Region Segmentation for Micro-Optical Images With a Convolutional Neural Network. FRONTIERS IN NEUROSCIENCE",
+    "High-definition imaging using line-illumination modulation microscopy. Nature methods 18, 309-15 (2021)",
+    "A whole-brain map of long-range inputs to GABAergic interneurons in the mouse medial prefrontal cortex. Nat Neurosci 22, 1357-1370, (2019)",
+    "Automatic macroscopic density artefact removal in a Nissl-stained microscopic atlas of whole mouse brain. J Microsc-Oxford 251, 168-177, (2013)",
+    "GTree: an Open-source Tool for Dense Reconstruction of Brain-wide Neuronal Population. Neuroinformatics (2020)",
+    "Reconstruction of the Hypothalamo-Neurohypophysial System and Functional Dissection of Magnocellular Oxytocin Neurons in the Brain. Neuron 109, 331-46 (2021)"
+  ],
+  "research_directions": [
+    "基于生物医学图像大数据的高性能计算、神经图像和脑网络可视化、脑科学知识库和知识图谱、人工智能与类脑计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/aali/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

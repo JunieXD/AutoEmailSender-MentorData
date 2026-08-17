@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d75d71773a3b20ead25e"
+      ],
+      "ended_at": null,
+      "id": "aff_1bc080a8b18045aad466",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/SUNYONGMING/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d75d71773a3b20ead25e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1bc080a8b18045aad466",
+      "claim_ids": [
+        "claim_d75d71773a3b20ead25e"
+      ],
+      "is_primary": true,
+      "normalized_value": "yongmingsun@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/SUNYONGMING/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yongmingsun@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d75d71773a3b20ead25e"
+    ],
+    "email": [
+      "claim_d75d71773a3b20ead25e"
+    ],
+    "name": [
+      "claim_d75d71773a3b20ead25e"
+    ],
+    "profile_url": [
+      "claim_d75d71773a3b20ead25e"
+    ],
+    "research_directions": [
+      "claim_d75d71773a3b20ead25e"
+    ],
+    "status": [
+      "claim_d75d71773a3b20ead25e"
+    ],
+    "title": [
+      "claim_d75d71773a3b20ead25e"
+    ]
+  },
+  "id": "mentor_afe83f7931298afa8b79",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d75d71773a3b20ead25e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙永明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1bc080a8b18045aad466",
+      "claim_ids": [
+        "claim_d75d71773a3b20ead25e"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/SUNYONGMING/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高性能储能电池材料及器件(锂离子电池、锂金属电池、超级电容器等)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/SUNYONGMING/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

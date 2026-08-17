@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_043719d22b1e5a5168db"
+      ],
+      "ended_at": null,
+      "id": "aff_f8e36f3dcd4dd31ce2d8",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/zwxiao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_043719d22b1e5a5168db"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f8e36f3dcd4dd31ce2d8",
+      "claim_ids": [
+        "claim_043719d22b1e5a5168db"
+      ],
+      "is_primary": true,
+      "normalized_value": "zwxiao@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/zwxiao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zwxiao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_043719d22b1e5a5168db"
+    ],
+    "email": [
+      "claim_043719d22b1e5a5168db"
+    ],
+    "name": [
+      "claim_043719d22b1e5a5168db"
+    ],
+    "profile_url": [
+      "claim_043719d22b1e5a5168db"
+    ],
+    "research_directions": [
+      "claim_043719d22b1e5a5168db"
+    ],
+    "status": [
+      "claim_043719d22b1e5a5168db"
+    ],
+    "title": [
+      "claim_043719d22b1e5a5168db"
+    ]
+  },
+  "id": "mentor_1ccc492017c09342e417",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_043719d22b1e5a5168db"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖泽文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f8e36f3dcd4dd31ce2d8",
+      "claim_ids": [
+        "claim_043719d22b1e5a5168db"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zwxiao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型透明导电材料、材料的电子特性、半导体的缺陷与掺杂"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/zwxiao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

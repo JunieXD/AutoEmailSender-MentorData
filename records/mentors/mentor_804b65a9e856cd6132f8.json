@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bf06b9a24b370bcf1586"
+      ],
+      "ended_at": null,
+      "id": "aff_861c6edf6ad60a50e2ed",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/dongwenchan1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_bf06b9a24b370bcf1586"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_861c6edf6ad60a50e2ed",
+      "claim_ids": [
+        "claim_bf06b9a24b370bcf1586"
+      ],
+      "is_primary": true,
+      "normalized_value": "wcdong@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/dongwenchan1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wcdong@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bf06b9a24b370bcf1586"
+    ],
+    "email": [
+      "claim_bf06b9a24b370bcf1586"
+    ],
+    "name": [
+      "claim_bf06b9a24b370bcf1586"
+    ],
+    "profile_url": [
+      "claim_bf06b9a24b370bcf1586"
+    ],
+    "research_directions": [
+      "claim_bf06b9a24b370bcf1586"
+    ],
+    "status": [
+      "claim_bf06b9a24b370bcf1586"
+    ],
+    "title": [
+      "claim_bf06b9a24b370bcf1586"
+    ]
+  },
+  "id": "mentor_804b65a9e856cd6132f8",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bf06b9a24b370bcf1586"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董文婵"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_861c6edf6ad60a50e2ed",
+      "claim_ids": [
+        "claim_bf06b9a24b370bcf1586"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/dongwenchan1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "集成光计算、可重构数字光计算、光子集成芯片、非线性信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/dongwenchan1/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

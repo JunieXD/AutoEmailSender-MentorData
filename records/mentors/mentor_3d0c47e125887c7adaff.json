@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_550d41e1a14daa9baeed"
+      ],
+      "ended_at": null,
+      "id": "aff_8a84891d70270826e68c",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/SHAOMING/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_550d41e1a14daa9baeed"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8a84891d70270826e68c",
+      "claim_ids": [
+        "claim_550d41e1a14daa9baeed"
+      ],
+      "is_primary": true,
+      "normalized_value": "mingshao@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/SHAOMING/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mingshao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_550d41e1a14daa9baeed"
+    ],
+    "email": [
+      "claim_550d41e1a14daa9baeed"
+    ],
+    "name": [
+      "claim_550d41e1a14daa9baeed"
+    ],
+    "profile_url": [
+      "claim_550d41e1a14daa9baeed"
+    ],
+    "research_directions": [
+      "claim_550d41e1a14daa9baeed"
+    ],
+    "status": [
+      "claim_550d41e1a14daa9baeed"
+    ],
+    "title": [
+      "claim_550d41e1a14daa9baeed"
+    ]
+  },
+  "id": "mentor_3d0c47e125887c7adaff",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_550d41e1a14daa9baeed"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邵明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8a84891d70270826e68c",
+      "claim_ids": [
+        "claim_550d41e1a14daa9baeed"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/SHAOMING/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "有机/无机光电子材料与器件、柔性/可拉伸电子,可穿戴式设备、自旋电子器件及器件物理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/SHAOMING/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

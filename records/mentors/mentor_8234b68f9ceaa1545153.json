@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6e06fa7c96276ac7501b"
+      ],
+      "ended_at": null,
+      "id": "aff_d9c6cad65a42398a91ae",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/wangzemin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6e06fa7c96276ac7501b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d9c6cad65a42398a91ae",
+      "claim_ids": [
+        "claim_6e06fa7c96276ac7501b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zmwang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/wangzemin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zmwang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6e06fa7c96276ac7501b"
+    ],
+    "email": [
+      "claim_6e06fa7c96276ac7501b"
+    ],
+    "name": [
+      "claim_6e06fa7c96276ac7501b"
+    ],
+    "profile_url": [
+      "claim_6e06fa7c96276ac7501b"
+    ],
+    "recent_papers": [
+      "claim_6e06fa7c96276ac7501b"
+    ],
+    "research_directions": [
+      "claim_6e06fa7c96276ac7501b"
+    ],
+    "status": [
+      "claim_6e06fa7c96276ac7501b"
+    ],
+    "title": [
+      "claim_6e06fa7c96276ac7501b"
+    ]
+  },
+  "id": "mentor_8234b68f9ceaa1545153",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6e06fa7c96276ac7501b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王泽敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d9c6cad65a42398a91ae",
+      "claim_ids": [
+        "claim_6e06fa7c96276ac7501b"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wangzemin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Cracking behavior and control of β-solidifying Ti-40Al-9V-0.5Y alloy produced by selective laser melting",
+    "Selective laser melting of dual phase AlCrCuFeNix high entropy alloys: formability, heterogeneous microstructures and deformation mechanisms",
+    "Multi-objective optimisation of bio-inspired lightweight sandwich structures based on selective laser melting",
+    "Effects of circular beam oscillation technique on formability and solidification behaviour of selective laser melted Inconel 718: From single tracks to cuboid samples",
+    "The effect of energy input on reaction, phase transition and shape memory effect of NiTi alloy by selective laser melting",
+    "Microstructural evolution and mechanical properties of 300M steel produced by low and high power selective laser melting"
+  ],
+  "research_directions": [
+    "增材制造技术、激光合成新材料、激光材料加工技术、激光与物质相互作用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/wangzemin/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

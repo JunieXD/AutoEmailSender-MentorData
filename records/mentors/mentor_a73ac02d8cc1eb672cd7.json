@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c632bd98000af79a124"
+      ],
+      "ended_at": null,
+      "id": "aff_bc895d02fc4cfa0d51ef",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/chenzhangqing1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c632bd98000af79a124"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bc895d02fc4cfa0d51ef",
+      "claim_ids": [
+        "claim_1c632bd98000af79a124"
+      ],
+      "is_primary": true,
+      "normalized_value": "cqchen@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/chenzhangqing1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cqchen@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c632bd98000af79a124"
+    ],
+    "email": [
+      "claim_1c632bd98000af79a124"
+    ],
+    "name": [
+      "claim_1c632bd98000af79a124"
+    ],
+    "profile_url": [
+      "claim_1c632bd98000af79a124"
+    ],
+    "research_directions": [
+      "claim_1c632bd98000af79a124"
+    ],
+    "status": [
+      "claim_1c632bd98000af79a124"
+    ],
+    "title": [
+      "claim_1c632bd98000af79a124"
+    ]
+  },
+  "id": "mentor_a73ac02d8cc1eb672cd7",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c632bd98000af79a124"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈长清"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bc895d02fc4cfa0d51ef",
+      "claim_ids": [
+        "claim_1c632bd98000af79a124"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/chenzhangqing1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光电信息工程、光学工程、电子科学与技术",
+    "第三代半导体光电材料与芯片器件",
+    "宽禁带半导体材料与光电器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/chenzhangqing1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

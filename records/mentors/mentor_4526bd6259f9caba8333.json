@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2a0daf875625db4f44bf"
+      ],
+      "ended_at": null,
+      "id": "aff_9650ba9a1be30b5acd2a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/gaodingshan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2a0daf875625db4f44bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9650ba9a1be30b5acd2a",
+      "claim_ids": [
+        "claim_2a0daf875625db4f44bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "dsgao@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/gaodingshan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dsgao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2a0daf875625db4f44bf"
+    ],
+    "email": [
+      "claim_2a0daf875625db4f44bf"
+    ],
+    "name": [
+      "claim_2a0daf875625db4f44bf"
+    ],
+    "profile_url": [
+      "claim_2a0daf875625db4f44bf"
+    ],
+    "research_directions": [
+      "claim_2a0daf875625db4f44bf"
+    ],
+    "status": [
+      "claim_2a0daf875625db4f44bf"
+    ],
+    "title": [
+      "claim_2a0daf875625db4f44bf"
+    ]
+  },
+  "id": "mentor_4526bd6259f9caba8333",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2a0daf875625db4f44bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郜定山"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9650ba9a1be30b5acd2a",
+      "claim_ids": [
+        "claim_2a0daf875625db4f44bf"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/gaodingshan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "硅基光子学、光电子器件与集成技术、纳米光学、量子光学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/gaodingshan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

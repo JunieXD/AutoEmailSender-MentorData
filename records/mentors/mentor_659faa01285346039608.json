@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d52c95a26634d36ebb42"
+      ],
+      "ended_at": null,
+      "id": "aff_3b8fe349d00ced9720c0",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/wanghailin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d52c95a26634d36ebb42"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3b8fe349d00ced9720c0",
+      "claim_ids": [
+        "claim_d52c95a26634d36ebb42"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanghl@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/wanghailin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanghl@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d52c95a26634d36ebb42"
+    ],
+    "email": [
+      "claim_d52c95a26634d36ebb42"
+    ],
+    "name": [
+      "claim_d52c95a26634d36ebb42"
+    ],
+    "profile_url": [
+      "claim_d52c95a26634d36ebb42"
+    ],
+    "status": [
+      "claim_d52c95a26634d36ebb42"
+    ],
+    "title": [
+      "claim_d52c95a26634d36ebb42"
+    ]
+  },
+  "id": "mentor_659faa01285346039608",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d52c95a26634d36ebb42"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王海林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3b8fe349d00ced9720c0",
+      "claim_ids": [
+        "claim_d52c95a26634d36ebb42"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wanghailin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/wanghailin/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

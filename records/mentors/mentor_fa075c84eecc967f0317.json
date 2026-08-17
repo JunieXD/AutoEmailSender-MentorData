@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b1cf8464d7e9a07c1865"
+      ],
+      "ended_at": null,
+      "id": "aff_e685cd4d74a377c73a1a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/fanguifen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b1cf8464d7e9a07c1865"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e685cd4d74a377c73a1a",
+      "claim_ids": [
+        "claim_b1cf8464d7e9a07c1865"
+      ],
+      "is_primary": true,
+      "normalized_value": "fan_gf@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/fanguifen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fan_gf@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b1cf8464d7e9a07c1865"
+    ],
+    "email": [
+      "claim_b1cf8464d7e9a07c1865"
+    ],
+    "name": [
+      "claim_b1cf8464d7e9a07c1865"
+    ],
+    "profile_url": [
+      "claim_b1cf8464d7e9a07c1865"
+    ],
+    "research_directions": [
+      "claim_b1cf8464d7e9a07c1865"
+    ],
+    "status": [
+      "claim_b1cf8464d7e9a07c1865"
+    ],
+    "title": [
+      "claim_b1cf8464d7e9a07c1865"
+    ]
+  },
+  "id": "mentor_fa075c84eecc967f0317",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b1cf8464d7e9a07c1865"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "范桂芬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e685cd4d74a377c73a1a",
+      "claim_ids": [
+        "claim_b1cf8464d7e9a07c1865"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/fanguifen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型能源转换与储能技术、铁电压电材料与器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/fanguifen/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

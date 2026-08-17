@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8670e45b1fe70849e001"
+      ],
+      "ended_at": null,
+      "id": "aff_e478b18da88260064093",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/lijinyan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8670e45b1fe70849e001"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e478b18da88260064093",
+      "claim_ids": [
+        "claim_8670e45b1fe70849e001"
+      ],
+      "is_primary": true,
+      "normalized_value": "ljy@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/lijinyan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ljy@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8670e45b1fe70849e001"
+    ],
+    "email": [
+      "claim_8670e45b1fe70849e001"
+    ],
+    "name": [
+      "claim_8670e45b1fe70849e001"
+    ],
+    "profile_url": [
+      "claim_8670e45b1fe70849e001"
+    ],
+    "research_directions": [
+      "claim_8670e45b1fe70849e001"
+    ],
+    "status": [
+      "claim_8670e45b1fe70849e001"
+    ],
+    "title": [
+      "claim_8670e45b1fe70849e001"
+    ]
+  },
+  "id": "mentor_cb3f66867304f33d1e16",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8670e45b1fe70849e001"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李进延"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e478b18da88260064093",
+      "claim_ids": [
+        "claim_8670e45b1fe70849e001"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/lijinyan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微结构光纤的设计与制备",
+    "掺稀土光纤、光子晶体光纤等特种光纤,光纤激光器和光纤放大器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/lijinyan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ab0e670ecd82cf9b451c"
+      ],
+      "ended_at": null,
+      "id": "aff_6e8cf6c283cd71a2bf60",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/yangqi4/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ab0e670ecd82cf9b451c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6e8cf6c283cd71a2bf60",
+      "claim_ids": [
+        "claim_ab0e670ecd82cf9b451c"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangqi@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/yangqi4/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangqi@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ab0e670ecd82cf9b451c"
+    ],
+    "email": [
+      "claim_ab0e670ecd82cf9b451c"
+    ],
+    "name": [
+      "claim_ab0e670ecd82cf9b451c"
+    ],
+    "profile_url": [
+      "claim_ab0e670ecd82cf9b451c"
+    ],
+    "research_directions": [
+      "claim_ab0e670ecd82cf9b451c"
+    ],
+    "status": [
+      "claim_ab0e670ecd82cf9b451c"
+    ],
+    "title": [
+      "claim_ab0e670ecd82cf9b451c"
+    ]
+  },
+  "id": "mentor_ca11ddfd4bf2c2561757",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ab0e670ecd82cf9b451c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨奇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6e8cf6c283cd71a2bf60",
+      "claim_ids": [
+        "claim_ab0e670ecd82cf9b451c"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yangqi4/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超大容量、超高速、超远距离光传输,短距离互联及DSP,无线移动前传,实时信号采集与信号处理,无线通信、信道编码、编解码通信,光通信实时信号处理,低成本、低复杂度短距离光互联系统,超长跨距、无中继长距离光通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yangqi4/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

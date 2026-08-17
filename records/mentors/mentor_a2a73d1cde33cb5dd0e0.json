@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_556f11169323dcb0cf20"
+      ],
+      "ended_at": null,
+      "id": "aff_c8e6c2e68c1432864e62",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/liujianguo2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_556f11169323dcb0cf20"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c8e6c2e68c1432864e62",
+      "claim_ids": [
+        "claim_556f11169323dcb0cf20"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujg@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/liujianguo2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liujg@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_556f11169323dcb0cf20"
+    ],
+    "email": [
+      "claim_556f11169323dcb0cf20"
+    ],
+    "name": [
+      "claim_556f11169323dcb0cf20"
+    ],
+    "profile_url": [
+      "claim_556f11169323dcb0cf20"
+    ],
+    "research_directions": [
+      "claim_556f11169323dcb0cf20"
+    ],
+    "status": [
+      "claim_556f11169323dcb0cf20"
+    ],
+    "title": [
+      "claim_556f11169323dcb0cf20"
+    ]
+  },
+  "id": "mentor_a2a73d1cde33cb5dd0e0",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_556f11169323dcb0cf20"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘建国"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c8e6c2e68c1432864e62",
+      "claim_ids": [
+        "claim_556f11169323dcb0cf20"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/liujianguo2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "激光三维共形制造技术、材料的表面与界面、仿生技术、减阻技术,光电材料化学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/liujianguo2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

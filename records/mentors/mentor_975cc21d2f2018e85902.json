@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_700aa32b90a439c639e5"
+      ],
+      "ended_at": null,
+      "id": "aff_80af8bbe156ad9ab1823",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/yuhongbin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_700aa32b90a439c639e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_80af8bbe156ad9ab1823",
+      "claim_ids": [
+        "claim_700aa32b90a439c639e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuhb@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/yuhongbin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuhb@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_700aa32b90a439c639e5"
+    ],
+    "email": [
+      "claim_700aa32b90a439c639e5"
+    ],
+    "name": [
+      "claim_700aa32b90a439c639e5"
+    ],
+    "profile_url": [
+      "claim_700aa32b90a439c639e5"
+    ],
+    "research_directions": [
+      "claim_700aa32b90a439c639e5"
+    ],
+    "status": [
+      "claim_700aa32b90a439c639e5"
+    ],
+    "title": [
+      "claim_700aa32b90a439c639e5"
+    ]
+  },
+  "id": "mentor_975cc21d2f2018e85902",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_700aa32b90a439c639e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "余洪斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_80af8bbe156ad9ab1823",
+      "claim_ids": [
+        "claim_700aa32b90a439c639e5"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yuhongbin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "基于MEMS/MOEMS技术新型功能器件的结构设计、制备工艺、封装测试及其系统应用,新型光学仪器和光学检测技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yuhongbin/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

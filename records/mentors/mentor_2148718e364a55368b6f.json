@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4cc2d1614c11a15ca5bf"
+      ],
+      "ended_at": null,
+      "id": "aff_30f2bb50b989c8416d83",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/pangyuanjie/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4cc2d1614c11a15ca5bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_30f2bb50b989c8416d83",
+      "claim_ids": [
+        "claim_4cc2d1614c11a15ca5bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanjie_pang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/pangyuanjie/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuanjie_pang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ],
+    "email": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ],
+    "name": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ],
+    "profile_url": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ],
+    "recent_papers": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ],
+    "research_directions": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ],
+    "status": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ],
+    "title": [
+      "claim_4cc2d1614c11a15ca5bf"
+    ]
+  },
+  "id": "mentor_2148718e364a55368b6f",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4cc2d1614c11a15ca5bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "庞元杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_30f2bb50b989c8416d83",
+      "claim_ids": [
+        "claim_4cc2d1614c11a15ca5bf"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/pangyuanjie/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Pang, and R. Gordon*, “Metal Nano-Grid Reflective Wave Plate,” Optics Express 17(4), 2871-2879, (2009).",
+    "Y. Pang, A. N. Hone, P. P. M. So, and R. Gordon*, “Total Optical Transmission through a Small Hole in a Metal Waveguide Screen,” Optics Express 17(6), 4433-4441, (2009)."
+  ],
+  "research_directions": [
+    "电催化CO2及CO还原制取高赋值燃料储能、纳米光子光镊与原位光激发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/pangyuanjie/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

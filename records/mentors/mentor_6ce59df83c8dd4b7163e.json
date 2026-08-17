@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_004591b73b615b017c58"
+      ],
+      "ended_at": null,
+      "id": "aff_e3c0f9538583412939af",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/kechangjian/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_004591b73b615b017c58"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e3c0f9538583412939af",
+      "claim_ids": [
+        "claim_004591b73b615b017c58"
+      ],
+      "is_primary": true,
+      "normalized_value": "cjke@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/kechangjian/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cjke@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_004591b73b615b017c58"
+    ],
+    "email": [
+      "claim_004591b73b615b017c58"
+    ],
+    "name": [
+      "claim_004591b73b615b017c58"
+    ],
+    "profile_url": [
+      "claim_004591b73b615b017c58"
+    ],
+    "research_directions": [
+      "claim_004591b73b615b017c58"
+    ],
+    "status": [
+      "claim_004591b73b615b017c58"
+    ],
+    "title": [
+      "claim_004591b73b615b017c58"
+    ]
+  },
+  "id": "mentor_6ce59df83c8dd4b7163e",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_004591b73b615b017c58"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "柯昌剑"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e3c0f9538583412939af",
+      "claim_ids": [
+        "claim_004591b73b615b017c58"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/kechangjian/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光纤通信与传感"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/kechangjian/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

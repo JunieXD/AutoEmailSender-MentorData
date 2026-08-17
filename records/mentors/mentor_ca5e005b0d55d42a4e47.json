@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b032ff819c105fa5b8df"
+      ],
+      "ended_at": null,
+      "id": "aff_60745e64d0cfe581c49e",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_3c5550a51b34133dd5c5",
+      "source_url": "http://faculty.hust.edu.cn/lichong",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b032ff819c105fa5b8df"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_60745e64d0cfe581c49e",
+      "claim_ids": [
+        "claim_b032ff819c105fa5b8df"
+      ],
+      "is_primary": true,
+      "normalized_value": "chongli@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/lichong",
+      "status": "current",
+      "type": "email",
+      "value": "chongli@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b032ff819c105fa5b8df"
+    ],
+    "email": [
+      "claim_b032ff819c105fa5b8df"
+    ],
+    "name": [
+      "claim_b032ff819c105fa5b8df"
+    ],
+    "profile_url": [
+      "claim_b032ff819c105fa5b8df"
+    ],
+    "research_directions": [
+      "claim_b032ff819c105fa5b8df"
+    ],
+    "status": [
+      "claim_b032ff819c105fa5b8df"
+    ],
+    "title": [
+      "claim_b032ff819c105fa5b8df"
+    ]
+  },
+  "id": "mentor_ca5e005b0d55d42a4e47",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b032ff819c105fa5b8df"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李冲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_60745e64d0cfe581c49e",
+      "claim_ids": [
+        "claim_b032ff819c105fa5b8df"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/lichong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "荧光分子开关,超分辨荧光成像,聚集诱导发光材料,有机/高分子光响应多功能材料,有机光电子材料与器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/lichong",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

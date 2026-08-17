@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4bad3d9ea2f190cc3559"
+      ],
+      "ended_at": null,
+      "id": "aff_623ebafcb1c2ed20a89c",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/simachaotan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4bad3d9ea2f190cc3559"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_623ebafcb1c2ed20a89c",
+      "claim_ids": [
+        "claim_4bad3d9ea2f190cc3559"
+      ],
+      "is_primary": true,
+      "normalized_value": "smct@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/simachaotan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "smct@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4bad3d9ea2f190cc3559"
+    ],
+    "email": [
+      "claim_4bad3d9ea2f190cc3559"
+    ],
+    "name": [
+      "claim_4bad3d9ea2f190cc3559"
+    ],
+    "profile_url": [
+      "claim_4bad3d9ea2f190cc3559"
+    ],
+    "research_directions": [
+      "claim_4bad3d9ea2f190cc3559"
+    ],
+    "status": [
+      "claim_4bad3d9ea2f190cc3559"
+    ],
+    "title": [
+      "claim_4bad3d9ea2f190cc3559"
+    ]
+  },
+  "id": "mentor_800ff9e620129f995777",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4bad3d9ea2f190cc3559"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "司马朝坦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_623ebafcb1c2ed20a89c",
+      "claim_ids": [
+        "claim_4bad3d9ea2f190cc3559"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/simachaotan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光学气体传感(光声光谱、可调谐半导体激光吸收光谱、油中气体监测)、全光加速度计(极低频惯性传感器、低频光学重力仪)、特种光波导(平面光栅器件、空芯光纤器件)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/simachaotan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

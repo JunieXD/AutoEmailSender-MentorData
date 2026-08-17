@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6f97aa5711a02b57a245"
+      ],
+      "ended_at": null,
+      "id": "aff_e80a9100160c9a6512e8",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/ZhuHaiHong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6f97aa5711a02b57a245"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e80a9100160c9a6512e8",
+      "claim_ids": [
+        "claim_6f97aa5711a02b57a245"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuhh@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/ZhuHaiHong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhuhh@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6f97aa5711a02b57a245"
+    ],
+    "email": [
+      "claim_6f97aa5711a02b57a245"
+    ],
+    "name": [
+      "claim_6f97aa5711a02b57a245"
+    ],
+    "profile_url": [
+      "claim_6f97aa5711a02b57a245"
+    ],
+    "research_directions": [
+      "claim_6f97aa5711a02b57a245"
+    ],
+    "status": [
+      "claim_6f97aa5711a02b57a245"
+    ],
+    "title": [
+      "claim_6f97aa5711a02b57a245"
+    ]
+  },
+  "id": "mentor_b4f4b43e943660d81f3d",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6f97aa5711a02b57a245"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱海红"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e80a9100160c9a6512e8",
+      "claim_ids": [
+        "claim_6f97aa5711a02b57a245"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/ZhuHaiHong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "激光与物质相互作用、激光加工、激光3D打印"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/ZhuHaiHong/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}
