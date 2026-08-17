@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9917d1899c6152839e82"
+      ],
+      "ended_at": null,
+      "id": "aff_5a7bce5cd4eaca91560c",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/pengkai/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9917d1899c6152839e82"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5a7bce5cd4eaca91560c",
+      "claim_ids": [
+        "claim_9917d1899c6152839e82"
+      ],
+      "is_primary": true,
+      "normalized_value": "pkhust@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/pengkai/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pkhust@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9917d1899c6152839e82"
+    ],
+    "email": [
+      "claim_9917d1899c6152839e82"
+    ],
+    "name": [
+      "claim_9917d1899c6152839e82"
+    ],
+    "profile_url": [
+      "claim_9917d1899c6152839e82"
+    ],
+    "research_directions": [
+      "claim_9917d1899c6152839e82"
+    ],
+    "status": [
+      "claim_9917d1899c6152839e82"
+    ],
+    "title": [
+      "claim_9917d1899c6152839e82"
+    ]
+  },
+  "id": "mentor_44adecb5422bdd489a00",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9917d1899c6152839e82"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭凯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5a7bce5cd4eaca91560c",
+      "claim_ids": [
+        "claim_9917d1899c6152839e82"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/pengkai/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "云计算,边缘计算,区块链,分布式人工智能与安全,大小模型混合部署与优化,模型架构搜索与模型推理,智能体互联网攻击与防御,低轨卫星算力网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/pengkai/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

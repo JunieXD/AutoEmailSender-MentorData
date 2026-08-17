@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_afda38e31ff8dd4049e9"
+      ],
+      "ended_at": null,
+      "id": "aff_6bf85b616911f45a3872",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/jinjiang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_afda38e31ff8dd4049e9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6bf85b616911f45a3872",
+      "claim_ids": [
+        "claim_afda38e31ff8dd4049e9"
+      ],
+      "is_primary": true,
+      "normalized_value": "jinjiang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/jinjiang",
+      "status": "current",
+      "type": "email",
+      "value": "jinjiang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_afda38e31ff8dd4049e9"
+    ],
+    "email": [
+      "claim_afda38e31ff8dd4049e9"
+    ],
+    "name": [
+      "claim_afda38e31ff8dd4049e9"
+    ],
+    "profile_url": [
+      "claim_afda38e31ff8dd4049e9"
+    ],
+    "research_directions": [
+      "claim_afda38e31ff8dd4049e9"
+    ],
+    "status": [
+      "claim_afda38e31ff8dd4049e9"
+    ],
+    "title": [
+      "claim_afda38e31ff8dd4049e9"
+    ]
+  },
+  "id": "mentor_87ae69d30ba069fc6865",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_afda38e31ff8dd4049e9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "金江"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6bf85b616911f45a3872",
+      "claim_ids": [
+        "claim_afda38e31ff8dd4049e9"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/jinjiang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线通信、移动通信与光通信",
+    "信号处理技术",
+    "电子对抗与雷达",
+    "软件无线电",
+    "现代电子设备与系统设计",
+    "微弱信号检测与处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/jinjiang",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0a15f42ae120e67b3b7"
+      ],
+      "ended_at": null,
+      "id": "aff_e4eb6e18fb7555aa6843",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/~rQZfM3/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0a15f42ae120e67b3b7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e4eb6e18fb7555aa6843",
+      "claim_ids": [
+        "claim_d0a15f42ae120e67b3b7"
+      ],
+      "is_primary": true,
+      "normalized_value": "gui_zhou@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/~rQZfM3/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gui_zhou@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0a15f42ae120e67b3b7"
+    ],
+    "email": [
+      "claim_d0a15f42ae120e67b3b7"
+    ],
+    "name": [
+      "claim_d0a15f42ae120e67b3b7"
+    ],
+    "profile_url": [
+      "claim_d0a15f42ae120e67b3b7"
+    ],
+    "research_directions": [
+      "claim_d0a15f42ae120e67b3b7"
+    ],
+    "status": [
+      "claim_d0a15f42ae120e67b3b7"
+    ],
+    "title": [
+      "claim_d0a15f42ae120e67b3b7"
+    ]
+  },
+  "id": "mentor_97629ba436144beb3053",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0a15f42ae120e67b3b7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周桂"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e4eb6e18fb7555aa6843",
+      "claim_ids": [
+        "claim_d0a15f42ae120e67b3b7"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/~rQZfM3/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线通信中的信号处理,包括传输设计,信道估计与定位,通感一体化,AI辅助通信等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/~rQZfM3/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

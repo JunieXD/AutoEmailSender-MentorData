@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9517b2f12ecd4ef5e0db"
+      ],
+      "ended_at": null,
+      "id": "aff_ce74b25c43f2970aa490",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/WuKejun",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_9517b2f12ecd4ef5e0db"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ce74b25c43f2970aa490",
+      "claim_ids": [
+        "claim_9517b2f12ecd4ef5e0db"
+      ],
+      "is_primary": true,
+      "normalized_value": "kjwu@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/WuKejun",
+      "status": "current",
+      "type": "email",
+      "value": "kjwu@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9517b2f12ecd4ef5e0db"
+    ],
+    "email": [
+      "claim_9517b2f12ecd4ef5e0db"
+    ],
+    "name": [
+      "claim_9517b2f12ecd4ef5e0db"
+    ],
+    "profile_url": [
+      "claim_9517b2f12ecd4ef5e0db"
+    ],
+    "research_directions": [
+      "claim_9517b2f12ecd4ef5e0db"
+    ],
+    "status": [
+      "claim_9517b2f12ecd4ef5e0db"
+    ],
+    "title": [
+      "claim_9517b2f12ecd4ef5e0db"
+    ]
+  },
+  "id": "mentor_6b63fe8ebc07d62a4436",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9517b2f12ecd4ef5e0db"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴科君"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ce74b25c43f2970aa490",
+      "claim_ids": [
+        "claim_9517b2f12ecd4ef5e0db"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/WuKejun"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "Artificial Intelligence, Large Language Models, High-dimensional Vision, Generative Artificial Intelligence, Multimodal Large Language Models"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/WuKejun",
+  "title": "讲师",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

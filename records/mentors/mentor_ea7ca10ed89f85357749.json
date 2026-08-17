@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_51a7bddc2ab8eba28a1e"
+      ],
+      "ended_at": null,
+      "id": "aff_343689fb3e801255f5f3",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/lecturer/zhangdawei",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_51a7bddc2ab8eba28a1e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_343689fb3e801255f5f3",
+      "claim_ids": [
+        "claim_51a7bddc2ab8eba28a1e"
+      ],
+      "is_primary": true,
+      "normalized_value": "dwzhang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/lecturer/zhangdawei",
+      "status": "current",
+      "type": "email",
+      "value": "dwzhang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ],
+    "email": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ],
+    "name": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ],
+    "profile_url": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ],
+    "recent_papers": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ],
+    "research_directions": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ],
+    "status": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ],
+    "title": [
+      "claim_51a7bddc2ab8eba28a1e"
+    ]
+  },
+  "id": "mentor_ea7ca10ed89f85357749",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_51a7bddc2ab8eba28a1e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张大卫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_343689fb3e801255f5f3",
+      "claim_ids": [
+        "claim_51a7bddc2ab8eba28a1e"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/lecturer/zhangdawei"
+    }
+  ],
+  "recent_papers": [
+    "卫星定位接收机高精度伪码跟踪的设计与实现",
+    "卫星定位接收机载波跟踪的设计与实现",
+    "Verilog HDL与FPGA数字系统设计",
+    "Indoor High speed Non-Imaging MIMO-OFDM Visible Light Communication with White LEDs",
+    "Wavelet Transform-OFDM in indoor visible light communication",
+    "An Indoor Positioning System Based on Cross-correlation in Visible Light Communication"
+  ],
+  "research_directions": [
+    "卫星导航定位、卫星通信、卫星测控、相干光通信、可见光通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/lecturer/zhangdawei",
+  "title": "讲师",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bac4a760ee7434c712ac"
+      ],
+      "ended_at": null,
+      "id": "aff_ebe978cb91dd906d06dc",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/xwang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bac4a760ee7434c712ac"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ebe978cb91dd906d06dc",
+      "claim_ids": [
+        "claim_bac4a760ee7434c712ac"
+      ],
+      "is_primary": true,
+      "normalized_value": "xgwang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/xwang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xgwang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bac4a760ee7434c712ac"
+    ],
+    "email": [
+      "claim_bac4a760ee7434c712ac"
+    ],
+    "name": [
+      "claim_bac4a760ee7434c712ac"
+    ],
+    "profile_url": [
+      "claim_bac4a760ee7434c712ac"
+    ],
+    "research_directions": [
+      "claim_bac4a760ee7434c712ac"
+    ],
+    "status": [
+      "claim_bac4a760ee7434c712ac"
+    ],
+    "title": [
+      "claim_bac4a760ee7434c712ac"
+    ]
+  },
+  "id": "mentor_ffa4b86630ff91350976",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bac4a760ee7434c712ac"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王兴刚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ebe978cb91dd906d06dc",
+      "claim_ids": [
+        "claim_bac4a760ee7434c712ac"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/xwang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、深度学习、多模态基础模型、视觉表征学习、目标检测分割跟踪、自动驾驶"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/xwang/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

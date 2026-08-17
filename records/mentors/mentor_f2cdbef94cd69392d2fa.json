@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b83115222cb83071ee3"
+      ],
+      "ended_at": null,
+      "id": "aff_48dcc70250902603e714",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/professor/liqiang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b83115222cb83071ee3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_48dcc70250902603e714",
+      "claim_ids": [
+        "claim_0b83115222cb83071ee3"
+      ],
+      "is_primary": true,
+      "normalized_value": "qli_patrick@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/professor/liqiang",
+      "status": "current",
+      "type": "email",
+      "value": "qli_patrick@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b83115222cb83071ee3"
+    ],
+    "email": [
+      "claim_0b83115222cb83071ee3"
+    ],
+    "name": [
+      "claim_0b83115222cb83071ee3"
+    ],
+    "profile_url": [
+      "claim_0b83115222cb83071ee3"
+    ],
+    "recent_papers": [
+      "claim_0b83115222cb83071ee3"
+    ],
+    "research_directions": [
+      "claim_0b83115222cb83071ee3"
+    ],
+    "status": [
+      "claim_0b83115222cb83071ee3"
+    ],
+    "title": [
+      "claim_0b83115222cb83071ee3"
+    ]
+  },
+  "id": "mentor_f2cdbef94cd69392d2fa",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b83115222cb83071ee3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_48dcc70250902603e714",
+      "claim_ids": [
+        "claim_0b83115222cb83071ee3"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/professor/liqiang"
+    }
+  ],
+  "recent_papers": [
+    "On the performance of a dual-hop hybrid VLC/RF IoT system based on SLIPT",
+    "Sub-array hybrid precoding for massive MIMO systems: A CNN-based approach",
+    "Deep deterministic policy gradient-based edge caching: An inherent performance tradeoff",
+    "Sum rate optimization for IRS-aided two-way AF relay systems",
+    "A SLIPT-based hybrid VLC/RF cooperative communication system with relay selection",
+    "Deep reinforcement learning-based edge caching in wireless networks",
+    "Capacity-aware edge caching in fog computing networks",
+    "NFV-based tactile internet for mission-critical IoT services in 5G"
+  ],
+  "research_directions": [
+    "下一代无线通信系统、无线协作通信、全双工通信、无线信息能量同传、认知无线电、边缘计算/雾计算、边缘缓存、人工智能与深度学习、联邦学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/professor/liqiang",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

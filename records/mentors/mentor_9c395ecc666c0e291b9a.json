@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1a34038c67292d1c4f46"
+      ],
+      "ended_at": null,
+      "id": "aff_92e3d18086fd48eac146",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/lecturer/pengqinmu/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_1a34038c67292d1c4f46"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_92e3d18086fd48eac146",
+      "claim_ids": [
+        "claim_1a34038c67292d1c4f46"
+      ],
+      "is_primary": true,
+      "normalized_value": "pengqinmu@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/lecturer/pengqinmu/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pengqinmu@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1a34038c67292d1c4f46"
+    ],
+    "email": [
+      "claim_1a34038c67292d1c4f46"
+    ],
+    "name": [
+      "claim_1a34038c67292d1c4f46"
+    ],
+    "profile_url": [
+      "claim_1a34038c67292d1c4f46"
+    ],
+    "recent_papers": [
+      "claim_1a34038c67292d1c4f46"
+    ],
+    "research_directions": [
+      "claim_1a34038c67292d1c4f46"
+    ],
+    "status": [
+      "claim_1a34038c67292d1c4f46"
+    ]
+  },
+  "id": "mentor_9c395ecc666c0e291b9a",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1a34038c67292d1c4f46"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭勤牧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_92e3d18086fd48eac146",
+      "claim_ids": [
+        "claim_1a34038c67292d1c4f46"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/lecturer/pengqinmu/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "A machine-learning-based method to predict adverse events in patients with dilated cardiomyopathy and severely reduced ejection fractions",
+    "IAS-NET: Joint Intra-classly Adaptive GAN and Segmentation network for unsupervised cross-domain in Neonatal Brain MRI segmentation",
+    "CDE-GAN: Cooperative Dual Evolution Based Generative Adversarial Network",
+    "Multi-template supervised descent method for face alignment",
+    "Volumetric Deficit within the Fronto-limbic-striatal Circuit in First-Episode Drug Naïve Patients with Major Depression Disorder",
+    "Neuroanatomical underpinning of diffusion kurtosis measurements in the cerebral cortex of healthy macaque brains",
+    "Diffusion-MRI-based regional cortical microstructure at birth for predicting neurodevelopmental outcomes of 2-year-olds",
+    "Multi-instance deep learning of ultrasound imaging data for pattern classification of congenital abnormalities of the kidney and urinary tract in children"
+  ],
+  "research_directions": [
+    "visual computing, machine learning and medical image analysis"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/lecturer/pengqinmu/index.htm",
+  "title": null,
+  "updated_at": "2026-08-17T10:22:27Z"
+}

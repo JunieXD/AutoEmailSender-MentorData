@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3e75679d0c90c6238a9b"
+      ],
+      "ended_at": null,
+      "id": "aff_a9cd6962dd66f513db3a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/huangquanliang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3e75679d0c90c6238a9b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a9cd6962dd66f513db3a",
+      "claim_ids": [
+        "claim_3e75679d0c90c6238a9b"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangql@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/huangquanliang",
+      "status": "current",
+      "type": "email",
+      "value": "huangql@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3e75679d0c90c6238a9b"
+    ],
+    "email": [
+      "claim_3e75679d0c90c6238a9b"
+    ],
+    "name": [
+      "claim_3e75679d0c90c6238a9b"
+    ],
+    "profile_url": [
+      "claim_3e75679d0c90c6238a9b"
+    ],
+    "recent_papers": [
+      "claim_3e75679d0c90c6238a9b"
+    ],
+    "research_directions": [
+      "claim_3e75679d0c90c6238a9b"
+    ],
+    "status": [
+      "claim_3e75679d0c90c6238a9b"
+    ],
+    "title": [
+      "claim_3e75679d0c90c6238a9b"
+    ]
+  },
+  "id": "mentor_259dc50ab9b3fc2f5659",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3e75679d0c90c6238a9b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄全亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a9cd6962dd66f513db3a",
+      "claim_ids": [
+        "claim_3e75679d0c90c6238a9b"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/huangquanliang"
+    }
+  ],
+  "recent_papers": [
+    "A new method for passive millimeter wave image registration by applying super resolution",
+    "Study on missile-borne millimeter wave radiometric images simulation",
+    "超综合孔径辐射计系统研究",
+    "融合学习算法的单帧图像超分辨率复原"
+  ],
+  "research_directions": [
+    "毫米波辐射成像和遥感图像信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/huangquanliang",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

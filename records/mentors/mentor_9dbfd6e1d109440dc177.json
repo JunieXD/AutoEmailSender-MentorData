@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b0be2467d4dff7aad5ed"
+      ],
+      "ended_at": null,
+      "id": "aff_e35d2209003fadd076c4",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/professor/xiaoyong/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b0be2467d4dff7aad5ed"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e35d2209003fadd076c4",
+      "claim_ids": [
+        "claim_b0be2467d4dff7aad5ed"
+      ],
+      "is_primary": true,
+      "normalized_value": "yongxiao@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/professor/xiaoyong/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "yongxiao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b0be2467d4dff7aad5ed"
+    ],
+    "email": [
+      "claim_b0be2467d4dff7aad5ed"
+    ],
+    "name": [
+      "claim_b0be2467d4dff7aad5ed"
+    ],
+    "profile_url": [
+      "claim_b0be2467d4dff7aad5ed"
+    ],
+    "recent_papers": [
+      "claim_b0be2467d4dff7aad5ed"
+    ],
+    "research_directions": [
+      "claim_b0be2467d4dff7aad5ed"
+    ],
+    "status": [
+      "claim_b0be2467d4dff7aad5ed"
+    ],
+    "title": [
+      "claim_b0be2467d4dff7aad5ed"
+    ]
+  },
+  "id": "mentor_9dbfd6e1d109440dc177",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b0be2467d4dff7aad5ed"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖泳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e35d2209003fadd076c4",
+      "claim_ids": [
+        "claim_b0be2467d4dff7aad5ed"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/professor/xiaoyong/index.html"
+    }
+  ],
+  "recent_papers": [
+    "Reasoning over the Air: A Reasoning-based Implicit Semantic Communication Framework",
+    "FedChain: Secure Proof-of-Stake-based Framework for Federated-blockchain Systems",
+    "Distributed Traffic Synthesizing and Classification Over Network Edge: A Federated Self-supervised Learning Approach",
+    "Time-sensitive Learning for Heterogeneous Federated Edge Intelligence",
+    "Imitation Learning-based Implicit Semantic-aware Communication Networks: Multi-layer Representation and Collaborative Reasoning",
+    "6G Network AI Architecture for Everyone-Centric Customized Services",
+    "Misbehavior Detection in Wi-Fi/LTE Coexistence over Unlicensed Bands",
+    "AdaptiveFog: A Modelling and Optimization Framework for Fog Computing in Intelligent Transportation Systems"
+  ],
+  "research_directions": [
+    "下一代网络技术、通信网络博弈论、语义信息论、低碳网络智能、机器学习与人工智能、分布式优化、无线通信网络、云/雾/边缘智能、传感器网络与物联网、智能电网、无线能量获取、触觉互联网、超低延迟通信技术等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/professor/xiaoyong/index.html",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

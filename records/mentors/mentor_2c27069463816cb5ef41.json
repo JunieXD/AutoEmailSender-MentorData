@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9c071953d5b3f2779e3a"
+      ],
+      "ended_at": null,
+      "id": "aff_4332c752329379b974fc",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_08d368435c9a6965423a",
+      "source_url": "http://eic.hust.edu.cn/professor/mahong",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9c071953d5b3f2779e3a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4332c752329379b974fc",
+      "claim_ids": [
+        "claim_9c071953d5b3f2779e3a"
+      ],
+      "is_primary": true,
+      "normalized_value": "mahong@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/professor/mahong",
+      "status": "current",
+      "type": "email",
+      "value": "mahong@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9c071953d5b3f2779e3a"
+    ],
+    "email": [
+      "claim_9c071953d5b3f2779e3a"
+    ],
+    "name": [
+      "claim_9c071953d5b3f2779e3a"
+    ],
+    "profile_url": [
+      "claim_9c071953d5b3f2779e3a"
+    ],
+    "recent_papers": [
+      "claim_9c071953d5b3f2779e3a"
+    ],
+    "research_directions": [
+      "claim_9c071953d5b3f2779e3a"
+    ],
+    "status": [
+      "claim_9c071953d5b3f2779e3a"
+    ],
+    "title": [
+      "claim_9c071953d5b3f2779e3a"
+    ]
+  },
+  "id": "mentor_2c27069463816cb5ef41",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9c071953d5b3f2779e3a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马洪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4332c752329379b974fc",
+      "claim_ids": [
+        "claim_9c071953d5b3f2779e3a"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/professor/mahong"
+    }
+  ],
+  "recent_papers": [
+    "2018年,Method for bearing estimation of target for amplitude modulation radio-based passive radar application, ELECTRONICS LETTERS",
+    "2018年,DOA estimation for echo signals and experimental results in the AM radio-based passive radar,IEEE Access",
+    "2018年,Research on Electromagnetic Radiation of Xijiang Traction Substation,2018 Joint IEEE International Symposium on Electromagnetic Compatibility and Asia-Pacific Symposium on Electromagnetic Compatibility",
+    "2018年,西江牵引变电所电磁辐射研究,《电波科学学报》",
+    "2018年,Nonlinear Blind Compensation for Array Signal Processing Application, MDPI Sensors",
+    "2017年,Iterative robust adaptive beamforming, EURASIP Journal on Advances in Signal Processing",
+    "2017年,A Nonlinearity Mitigation Method for a Broadband RF Front-end in a Sensor Based on Best Delay Searching, MDPI Sensors",
+    "2017年,Improved singular value decomposition-based de-noising algorithm in digital receiver front-end, IET Communications"
+  ],
+  "research_directions": [
+    "互联网+智能频谱监测及频谱大数据处理、无人机探测与反制、被动探测与电磁频谱监测、无线通信与无线自组网、软件无线电、引力波探测、非稳态核磁共振理论与技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/professor/mahong",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

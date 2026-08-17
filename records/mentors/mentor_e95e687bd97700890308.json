@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b5261ae7bbf828ace4d7"
+      ],
+      "ended_at": null,
+      "id": "aff_6c0188ba953dd0609522",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/gaoyayu",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b5261ae7bbf828ace4d7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6c0188ba953dd0609522",
+      "claim_ids": [
+        "claim_b5261ae7bbf828ace4d7"
+      ],
+      "is_primary": true,
+      "normalized_value": "yayugao@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/gaoyayu",
+      "status": "current",
+      "type": "email",
+      "value": "yayugao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b5261ae7bbf828ace4d7"
+    ],
+    "email": [
+      "claim_b5261ae7bbf828ace4d7"
+    ],
+    "name": [
+      "claim_b5261ae7bbf828ace4d7"
+    ],
+    "profile_url": [
+      "claim_b5261ae7bbf828ace4d7"
+    ],
+    "recent_papers": [
+      "claim_b5261ae7bbf828ace4d7"
+    ],
+    "research_directions": [
+      "claim_b5261ae7bbf828ace4d7"
+    ],
+    "status": [
+      "claim_b5261ae7bbf828ace4d7"
+    ],
+    "title": [
+      "claim_b5261ae7bbf828ace4d7"
+    ]
+  },
+  "id": "mentor_e95e687bd97700890308",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b5261ae7bbf828ace4d7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高雅玙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6c0188ba953dd0609522",
+      "claim_ids": [
+        "claim_b5261ae7bbf828ace4d7"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/gaoyayu"
+    }
+  ],
+  "recent_papers": [
+    "Spectrum Sharing Mechanisms in the Unlicensed Band: Performance Limit and Comparison",
+    "Fair and Efficient Spectrum Sharing in Unlicensed Bands: Does Number of Links Matter?",
+    "When Aloha and CSMA Coexist: Modeling, Fairness and Throughput Optimization",
+    "Designing high efficiency asymmetric polarization converter for blue light: a deep reinforcement learning approach",
+    "Synchronous Multi-Link Access in IEEE 802.11be: Modeling and Network Sum Rate Optimization",
+    "3GPP Fairness Constrained Throughput Optimization for 5G NR-U and WiFi Coexistence in the Unlicensed Spectrum",
+    "Tandem Solar Cells Efficiency Prediction and Optimization via Deep Learning",
+    "Achieving Proportional Fairness for LTE-LAA and Wi-Fi Coexistence in Unlicensed Spectrum"
+  ],
+  "research_directions": [
+    "分布式多址接入、下一代无线网络、6G & 未来WiFi、网络智能、AI+、AI赋能垂直领域"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/gaoyayu",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c525c513816f04f60abd"
+      ],
+      "ended_at": null,
+      "id": "aff_fe9f9deeeebbee436508",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/yanzengqiang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c525c513816f04f60abd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fe9f9deeeebbee436508",
+      "claim_ids": [
+        "claim_c525c513816f04f60abd"
+      ],
+      "is_primary": true,
+      "normalized_value": "z_yan@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/yanzengqiang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "z_yan@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c525c513816f04f60abd"
+    ],
+    "email": [
+      "claim_c525c513816f04f60abd"
+    ],
+    "name": [
+      "claim_c525c513816f04f60abd"
+    ],
+    "profile_url": [
+      "claim_c525c513816f04f60abd"
+    ],
+    "research_directions": [
+      "claim_c525c513816f04f60abd"
+    ],
+    "status": [
+      "claim_c525c513816f04f60abd"
+    ],
+    "title": [
+      "claim_c525c513816f04f60abd"
+    ]
+  },
+  "id": "mentor_a523935d651cc4c93bc1",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c525c513816f04f60abd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫增强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fe9f9deeeebbee436508",
+      "claim_ids": [
+        "claim_c525c513816f04f60abd"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yanzengqiang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、医学图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yanzengqiang/zh_CN/index.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-17T10:22:27Z"
+}
