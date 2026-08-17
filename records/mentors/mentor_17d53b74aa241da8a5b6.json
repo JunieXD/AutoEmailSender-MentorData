@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_011364b23d3b3c65bc47"
+      ],
+      "ended_at": null,
+      "id": "aff_cf58952ff563cb1c16a7",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/lilei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_011364b23d3b3c65bc47"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf58952ff563cb1c16a7",
+      "claim_ids": [
+        "claim_011364b23d3b3c65bc47"
+      ],
+      "is_primary": true,
+      "normalized_value": "leili@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/lilei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "leili@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_011364b23d3b3c65bc47"
+    ],
+    "email": [
+      "claim_011364b23d3b3c65bc47"
+    ],
+    "name": [
+      "claim_011364b23d3b3c65bc47"
+    ],
+    "profile_url": [
+      "claim_011364b23d3b3c65bc47"
+    ],
+    "research_directions": [
+      "claim_011364b23d3b3c65bc47"
+    ],
+    "status": [
+      "claim_011364b23d3b3c65bc47"
+    ],
+    "title": [
+      "claim_011364b23d3b3c65bc47"
+    ]
+  },
+  "id": "mentor_17d53b74aa241da8a5b6",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_011364b23d3b3c65bc47"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李蕾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf58952ff563cb1c16a7",
+      "claim_ids": [
+        "claim_011364b23d3b3c65bc47"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/lilei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态智能信息处理、自然语言处理与脑认知交叉、多模态知识图谱、三维场景语义重建与渲染优化、大模型幻觉抑制、多模态情感计算、智能电网调度、多模态数据增强、自然语言处理、自动摘要、智能交通信号灯控制、面向短视频成瘾的脑电跨被试识别、机器学习、社交网络分析、数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/lilei/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

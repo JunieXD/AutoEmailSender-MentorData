@@ -1,0 +1,84 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_44c51179d724004189fa"
+      ],
+      "ended_at": null,
+      "id": "aff_cad02923bae4a34d66c1",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_e779dbb4f993c23b6470",
+      "source_url": "https://ai.bupt.edu.cn/szdw/szyl/znxxgcx.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_44c51179d724004189fa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cad02923bae4a34d66c1",
+      "claim_ids": [
+        "claim_44c51179d724004189fa"
+      ],
+      "is_primary": true,
+      "normalized_value": "dongchao@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://ai.bupt.edu.cn/szdw/szyl/znxxgcx.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dongchao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_44c51179d724004189fa"
+    ],
+    "email": [
+      "claim_44c51179d724004189fa"
+    ],
+    "name": [
+      "claim_44c51179d724004189fa"
+    ],
+    "research_directions": [
+      "claim_44c51179d724004189fa"
+    ],
+    "status": [
+      "claim_44c51179d724004189fa"
+    ],
+    "title": [
+      "claim_44c51179d724004189fa"
+    ]
+  },
+  "id": "mentor_d3e4eff5126dd5720be6",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_44c51179d724004189fa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董超"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "MIMO信号处理",
+    "非正交多址",
+    "单载波传输技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.bupt.edu.cn/szdw/szyl/znxxgcx.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

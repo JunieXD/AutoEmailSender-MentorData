@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b68657c6f5aa0e8653d0"
+      ],
+      "ended_at": null,
+      "id": "aff_e34e8d14a711f166b18b",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/chenguang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b68657c6f5aa0e8653d0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e34e8d14a711f166b18b",
+      "claim_ids": [
+        "claim_b68657c6f5aa0e8653d0"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenguang@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/chenguang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenguang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b68657c6f5aa0e8653d0"
+    ],
+    "email": [
+      "claim_b68657c6f5aa0e8653d0"
+    ],
+    "name": [
+      "claim_b68657c6f5aa0e8653d0"
+    ],
+    "profile_url": [
+      "claim_b68657c6f5aa0e8653d0"
+    ],
+    "research_directions": [
+      "claim_b68657c6f5aa0e8653d0"
+    ],
+    "status": [
+      "claim_b68657c6f5aa0e8653d0"
+    ],
+    "title": [
+      "claim_b68657c6f5aa0e8653d0"
+    ]
+  },
+  "id": "mentor_29895cb28fbcdc5d2de6",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b68657c6f5aa0e8653d0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e34e8d14a711f166b18b",
+      "claim_ids": [
+        "claim_b68657c6f5aa0e8653d0"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/chenguang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与机器学习、文本表示学习、推荐系统、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/chenguang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

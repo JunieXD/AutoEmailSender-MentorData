@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e05887a617801a612bf3"
+      ],
+      "ended_at": null,
+      "id": "aff_784e60639ced4c5325ec",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/chenkeliang1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e05887a617801a612bf3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_784e60639ced4c5325ec",
+      "claim_ids": [
+        "claim_e05887a617801a612bf3"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenkl@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/chenkeliang1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenkl@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e05887a617801a612bf3"
+    ],
+    "email": [
+      "claim_e05887a617801a612bf3"
+    ],
+    "name": [
+      "claim_e05887a617801a612bf3"
+    ],
+    "profile_url": [
+      "claim_e05887a617801a612bf3"
+    ],
+    "research_directions": [
+      "claim_e05887a617801a612bf3"
+    ],
+    "status": [
+      "claim_e05887a617801a612bf3"
+    ],
+    "title": [
+      "claim_e05887a617801a612bf3"
+    ]
+  },
+  "id": "mentor_1f4fe0c91593c50cfe29",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e05887a617801a612bf3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈科良"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_784e60639ced4c5325ec",
+      "claim_ids": [
+        "claim_e05887a617801a612bf3"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/chenkeliang1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向教育领域的多模态人工智能、数字孪生、生成式人工智能、大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/chenkeliang1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

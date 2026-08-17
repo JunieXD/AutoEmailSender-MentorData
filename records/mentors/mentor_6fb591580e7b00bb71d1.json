@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6a6770f7233f1fa9f672"
+      ],
+      "ended_at": null,
+      "id": "aff_0792c99acc1075db2130",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/dongyuan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6a6770f7233f1fa9f672"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0792c99acc1075db2130",
+      "claim_ids": [
+        "claim_6a6770f7233f1fa9f672"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuandong@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/dongyuan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuandong@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6a6770f7233f1fa9f672"
+    ],
+    "email": [
+      "claim_6a6770f7233f1fa9f672"
+    ],
+    "name": [
+      "claim_6a6770f7233f1fa9f672"
+    ],
+    "profile_url": [
+      "claim_6a6770f7233f1fa9f672"
+    ],
+    "research_directions": [
+      "claim_6a6770f7233f1fa9f672"
+    ],
+    "status": [
+      "claim_6a6770f7233f1fa9f672"
+    ],
+    "title": [
+      "claim_6a6770f7233f1fa9f672"
+    ]
+  },
+  "id": "mentor_6fb591580e7b00bb71d1",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6a6770f7233f1fa9f672"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董远"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0792c99acc1075db2130",
+      "claim_ids": [
+        "claim_6a6770f7233f1fa9f672"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/dongyuan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "(工业产品)图像识别、图像目标检测、文本分析、机器翻译与自然语言处理、基于深度学习的视频内容分析、视频事件检测、暴力视频检测、工业产品外观缺欠图像自动检测、人工智能、深度学习、卷积神经网络、分类聚类、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/dongyuan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

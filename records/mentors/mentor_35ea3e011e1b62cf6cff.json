@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7596d5778f2133f69740"
+      ],
+      "ended_at": null,
+      "id": "aff_6fadda4b2c313b3208fe",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/ffx/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7596d5778f2133f69740"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6fadda4b2c313b3208fe",
+      "claim_ids": [
+        "claim_7596d5778f2133f69740"
+      ],
+      "is_primary": true,
+      "normalized_value": "fxfeng@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/ffx/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fxfeng@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7596d5778f2133f69740"
+    ],
+    "email": [
+      "claim_7596d5778f2133f69740"
+    ],
+    "name": [
+      "claim_7596d5778f2133f69740"
+    ],
+    "profile_url": [
+      "claim_7596d5778f2133f69740"
+    ],
+    "research_directions": [
+      "claim_7596d5778f2133f69740"
+    ],
+    "status": [
+      "claim_7596d5778f2133f69740"
+    ],
+    "title": [
+      "claim_7596d5778f2133f69740"
+    ]
+  },
+  "id": "mentor_35ea3e011e1b62cf6cff",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7596d5778f2133f69740"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冯方向"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6fadda4b2c313b3208fe",
+      "claim_ids": [
+        "claim_7596d5778f2133f69740"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/ffx/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、多模态认知计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/ffx/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}
