@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_36a0cbad19e55ffad5f8",
+          "is_primary": true,
+          "observed_at": "2026-08-17T10:21:18Z",
+          "organization_id": "org_auto_67e83eb30ffe6d228215",
+          "school": "软件学院",
+          "source_url": "http://faculty.hust.edu.cn/guolianbo/zh_CN/index.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "华中科技大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_36a0cbad19e55ffad5f8",
+          "email": "lbguo@hust.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-17T10:21:18Z",
+          "source_url": "http://faculty.hust.edu.cn/guolianbo/zh_CN/index.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/83"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "lbguo@hust.edu.cn",
+      "id": "mentor_e959d4caf82819de4385",
+      "last_verified_at": "2026-08-17T10:21:18Z",
+      "name": "郭连波",
+      "profile_url": "http://faculty.hust.edu.cn/guolianbo/zh_CN/index.htm",
+      "recent_papers": [],
+      "research_direction": "多模态信息融合智能感知、工业软件、激光光谱智能探测、脑机接口",
+      "school": "软件学院",
+      "source_url": "https://oei.hust.edu.cn/szdw/jgjsx.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "华中科技大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_67e83eb30ffe6d228215",
+    "name": "软件学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_89927c24bd3d542ac5d3",
+    "name": "华中科技大学"
+  }
+}

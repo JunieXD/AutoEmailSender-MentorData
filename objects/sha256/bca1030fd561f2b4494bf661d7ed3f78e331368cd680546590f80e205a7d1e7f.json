@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_6d5526ea3ce072f94784",
+          "is_primary": true,
+          "observed_at": "2026-08-17T10:22:27Z",
+          "organization_id": "org_auto_ec6aa374017f6bca765f",
+          "school": "生物医学与健康工程研究院",
+          "source_url": "https://bmal.hust.edu.cn/info/1005/1091.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "华中科技大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_6d5526ea3ce072f94784",
+          "email": "youxg@mail.hust.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-17T10:22:27Z",
+          "source_url": "https://bmal.hust.edu.cn/info/1005/1091.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/88"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "youxg@mail.hust.edu.cn",
+      "id": "mentor_a6067cd1f578b844f0c0",
+      "last_verified_at": "2026-08-17T10:22:27Z",
+      "name": "尤新革",
+      "profile_url": "https://bmal.hust.edu.cn/info/1005/1091.htm",
+      "recent_papers": [
+        "Xingye Chen, Wenxiao Wu, Li Ma, Xinge You, Changxin Gao, Nong Sang, Yuanjie Shao: Exploring sample relationship for few-shot classification. Pattern Recognit, 2025",
+        "Zimin Mao, Shuiyan Chen, Zhuang Miao, Heng Li, Beihao Xia, Junzhe Cai, Wei Yuan, Xinge You: Enhancing robustness of person detection: A universal defense filter against adversarial patch attacks. Comput. Secur, 2024",
+        "Liheng Yuan, Fanghua Ye, Heng Li, Chenhao Zhang, Cuiying Gao, Chengqing Yu, Wei Yuan, Xinge You: Semi-supervised anomaly detection with contamination-resilience and incremental training. Eng. Appl. Artif. Intell, 2024",
+        "Liheng Yuan, Fanghua Ye, Wei Zhou, Wei Yuan, Xinge You: Concept drift adaptation with scarce labels: A novel approach based on diffusion and adversarial learning. Eng. Appl. Artif. Intell, 2024",
+        "Zhimeng Xin, Shiming Chen, Tianxu Wu, Yuanjie Shao, Weiping Ding, Xinge You: Few-shot object detection: Research advances and challenges. Inf. Fusion, 2024",
+        "Jiawen Gong, Bin Zou, Chen Xu, Jie Xu, Xinge You: Hybrid learning based on Fisher linear discriminant. Inf. Sci. 667, 2024",
+        "Shuo Ye, Shujian Yu, Yu Wang, Xinge You: R2-trans: Fine-grained visual categorization with redundancy reduction. Image Vis. Comput. 143: 104923 (2024)",
+        "Hui Li, Jiawen Li, Hai Liu, Tingting Liu, Qiang Chen, Xinge You: MelTrans: Mel-Spectrogram Relationship-Learning for Speech Emotion Recognition via Transformers. Sensors 24(17): 5506 (2024)"
+      ],
+      "research_direction": "模式识别,图像与信号处理,计算机视觉,机器学习与数据挖掘,小波分析及其应用,生物特征识别与智能防伪",
+      "school": "生物医学与健康工程研究院",
+      "source_url": "https://ei.hust.edu.cn/xygk/szdw/xxgcx.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "华中科技大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_ec6aa374017f6bca765f",
+    "name": "生物医学与健康工程研究院",
+    "type": "institute"
+  },
+  "university": {
+    "id": "org_auto_89927c24bd3d542ac5d3",
+    "name": "华中科技大学"
+  }
+}
