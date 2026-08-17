@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_507a2aa6ba8ad4142c29"
+      ],
+      "ended_at": null,
+      "id": "aff_247a5befa34304314a44",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/696",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_507a2aa6ba8ad4142c29"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_247a5befa34304314a44",
+      "claim_ids": [
+        "claim_507a2aa6ba8ad4142c29"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouyuren@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/696",
+      "status": "current",
+      "type": "email",
+      "value": "zhouyuren@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_507a2aa6ba8ad4142c29"
+    ],
+    "email": [
+      "claim_507a2aa6ba8ad4142c29"
+    ],
+    "name": [
+      "claim_507a2aa6ba8ad4142c29"
+    ],
+    "profile_url": [
+      "claim_507a2aa6ba8ad4142c29"
+    ],
+    "research_directions": [
+      "claim_507a2aa6ba8ad4142c29"
+    ],
+    "status": [
+      "claim_507a2aa6ba8ad4142c29"
+    ],
+    "title": [
+      "claim_507a2aa6ba8ad4142c29"
+    ]
+  },
+  "id": "mentor_2da713e8f017d0ef6a98",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_507a2aa6ba8ad4142c29"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周育人"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_247a5befa34304314a44",
+      "claim_ids": [
+        "claim_507a2aa6ba8ad4142c29"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/696"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "算法设计与分析、演化算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/696",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

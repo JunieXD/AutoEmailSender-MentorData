@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d45a4ca9550e5585c387"
+      ],
+      "ended_at": null,
+      "id": "aff_6562a0700a59fbafba44",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/986",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_d45a4ca9550e5585c387"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6562a0700a59fbafba44",
+      "claim_ids": [
+        "claim_d45a4ca9550e5585c387"
+      ],
+      "is_primary": true,
+      "normalized_value": "kongqp3@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/986",
+      "status": "current",
+      "type": "email",
+      "value": "kongqp3@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d45a4ca9550e5585c387"
+    ],
+    "email": [
+      "claim_d45a4ca9550e5585c387"
+    ],
+    "name": [
+      "claim_d45a4ca9550e5585c387"
+    ],
+    "profile_url": [
+      "claim_d45a4ca9550e5585c387"
+    ],
+    "research_directions": [
+      "claim_d45a4ca9550e5585c387"
+    ],
+    "status": [
+      "claim_d45a4ca9550e5585c387"
+    ],
+    "title": [
+      "claim_d45a4ca9550e5585c387"
+    ]
+  },
+  "id": "mentor_e49b9a9fc0ca96cd69da",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d45a4ca9550e5585c387"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孔雀屏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6562a0700a59fbafba44",
+      "claim_ids": [
+        "claim_d45a4ca9550e5585c387"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/986"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "系统软件安全、程序分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/986",
+  "title": "研究员",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

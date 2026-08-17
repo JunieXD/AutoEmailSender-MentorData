@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_461f88512f9af12a3f4c"
+      ],
+      "ended_at": null,
+      "id": "aff_58e58276a5402aa8a182",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/162",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_461f88512f9af12a3f4c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_58e58276a5402aa8a182",
+      "claim_ids": [
+        "claim_461f88512f9af12a3f4c"
+      ],
+      "is_primary": true,
+      "normalized_value": "wujiajing@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/162",
+      "status": "current",
+      "type": "email",
+      "value": "wujiajing@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_461f88512f9af12a3f4c"
+    ],
+    "email": [
+      "claim_461f88512f9af12a3f4c"
+    ],
+    "name": [
+      "claim_461f88512f9af12a3f4c"
+    ],
+    "profile_url": [
+      "claim_461f88512f9af12a3f4c"
+    ],
+    "recent_papers": [
+      "claim_461f88512f9af12a3f4c"
+    ],
+    "research_directions": [
+      "claim_461f88512f9af12a3f4c"
+    ],
+    "status": [
+      "claim_461f88512f9af12a3f4c"
+    ],
+    "title": [
+      "claim_461f88512f9af12a3f4c"
+    ]
+  },
+  "id": "mentor_9c07dcaa577fb4761f72",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_461f88512f9af12a3f4c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴嘉婧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_58e58276a5402aa8a182",
+      "claim_ids": [
+        "claim_461f88512f9af12a3f4c"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/162"
+    }
+  ],
+  "recent_papers": [
+    "[Book] J. Wu, D. Lin, Z. Zheng, “Blockchain Transaction Data Analytics,” Springer, 2024.",
+    "J. Wu, D. Lin*, Q. Fu, S. Yang, T. Chen, Z. Zheng, \"Towards Understanding Asset Flows in Crypto Money Laundering Through the Lenses of Ethereum Heists\", IEEE Transactions on Information Forensics and Security, vol. 19, 1994-2009, 2024. (CCF-A类,中科院一区期刊)",
+    "D. Lin(博士生),J. Wu*, Q. Fu, Z. Zheng, and T. Chen, “RiskProp: Account Risk Rating on Ethereum via De-anonymous Score and Network Propagation.” IEEE Transactions on Dependable and Secure Computing, doi: 10.1109/TDSC.2024.3475825, 2024. (CCF-A类,中科院一区期刊)",
+    "Z. Wu(博士生), J. Wu*, H. Zhang, Z, Li, J, Chen, Z. Zheng, Q. Xia, G. Fan, and Y. Zhen, \"DAppFL: Just-in-Time Fault Localization for Decentralized Applications in Web3,\" The ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), 2024. (CCF-A类会议)",
+    "D. Lin(博士生),J. Wu*, Y. Yu, Q. Fu, Z. Zheng, C. Yang, \"DenseFlow: Spotting Cryptocurrency Money Laundering in Ethereum Transaction Graphs\", in ACM Web Conference. May. 2023. (CCF-A类会议)",
+    "Z. Wu(博士生),J. Liu(博士生),J. Wu*, Z. Zheng, T. Chen, “TRacer: Scalable Graph-based Transaction Tracing for Account-based Blockchain Trading Systems.” IEEE Transactions on Information Forensics and Security, 2023. (CCF A类,中科院一区期刊)",
+    "Z. Wu(博士生), J. Wu*, J. Liu, Z. Zheng, X. Luo, T. Chen, “Know Your Transactions: Real-time and Generic Transaction Semantic Representation on Blockchain & Web3 Ecosystem\", in ACM Web Conference. May. 2023. (CCF-A类会议)",
+    "J. Liu(博士生), J. Chen, J. Wu*, Z. Wu, J. Fang and Z. Zheng, “Fishing for Fraudsters: Uncovering Ethereum Phishing Gangs With Blockchain Data,” IEEE Transactions on Information Forensics and Security, vol. 19, pp. 3038-3050, 2024.(CCF A类,中科院一区期刊)"
+  ],
+  "research_directions": [
+    "聚焦大模型、图学习与智能体在区块链与金融科技等领域的交叉应用,具体包括:区块链安全与智能反欺诈、智能体驱动的代码安全分析、大模型赋能的图挖掘与金融科技。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/162",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

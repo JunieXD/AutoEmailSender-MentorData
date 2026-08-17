@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f341d7f821d2dae2fa5c"
+      ],
+      "ended_at": null,
+      "id": "aff_80efc4411420407471c8",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/374",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_f341d7f821d2dae2fa5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_80efc4411420407471c8",
+      "claim_ids": [
+        "claim_f341d7f821d2dae2fa5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "me@zhengpeilin.com",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/374",
+      "status": "current",
+      "type": "email",
+      "value": "me@zhengpeilin.com"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f341d7f821d2dae2fa5c"
+    ],
+    "email": [
+      "claim_f341d7f821d2dae2fa5c"
+    ],
+    "name": [
+      "claim_f341d7f821d2dae2fa5c"
+    ],
+    "profile_url": [
+      "claim_f341d7f821d2dae2fa5c"
+    ],
+    "research_directions": [
+      "claim_f341d7f821d2dae2fa5c"
+    ],
+    "status": [
+      "claim_f341d7f821d2dae2fa5c"
+    ],
+    "title": [
+      "claim_f341d7f821d2dae2fa5c"
+    ]
+  },
+  "id": "mentor_f30b17c035d9d4ee0b3c",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f341d7f821d2dae2fa5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑沛霖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_80efc4411420407471c8",
+      "claim_ids": [
+        "claim_f341d7f821d2dae2fa5c"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/374"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "区块链、智能合约"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/374",
+  "title": "研究员",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

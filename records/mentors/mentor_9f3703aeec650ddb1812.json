@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8fe92969bcca2fadf50b"
+      ],
+      "ended_at": null,
+      "id": "aff_062fc9a40b7172e9fa6b",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/798",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_8fe92969bcca2fadf50b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_062fc9a40b7172e9fa6b",
+      "claim_ids": [
+        "claim_8fe92969bcca2fadf50b"
+      ],
+      "is_primary": true,
+      "normalized_value": "lind29@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/798",
+      "status": "current",
+      "type": "email",
+      "value": "lind29@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8fe92969bcca2fadf50b"
+    ],
+    "email": [
+      "claim_8fe92969bcca2fadf50b"
+    ],
+    "name": [
+      "claim_8fe92969bcca2fadf50b"
+    ],
+    "profile_url": [
+      "claim_8fe92969bcca2fadf50b"
+    ],
+    "recent_papers": [
+      "claim_8fe92969bcca2fadf50b"
+    ],
+    "research_directions": [
+      "claim_8fe92969bcca2fadf50b"
+    ],
+    "status": [
+      "claim_8fe92969bcca2fadf50b"
+    ],
+    "title": [
+      "claim_8fe92969bcca2fadf50b"
+    ]
+  },
+  "id": "mentor_9f3703aeec650ddb1812",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8fe92969bcca2fadf50b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_062fc9a40b7172e9fa6b",
+      "claim_ids": [
+        "claim_8fe92969bcca2fadf50b"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/798"
+    }
+  ],
+  "recent_papers": [
+    "IEEE TIFS",
+    "IEEE TDSC",
+    "IEEE TSMC",
+    "WWW2024"
+  ],
+  "research_directions": [
+    "区块链、金融监管、反洗钱、交易挖掘、复杂网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/798",
+  "title": "研究员",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

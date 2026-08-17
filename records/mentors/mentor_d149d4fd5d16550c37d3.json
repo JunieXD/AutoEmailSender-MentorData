@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6e36fc10e5cc676a5e6b"
+      ],
+      "ended_at": null,
+      "id": "aff_566175bc3788cae3d3ec",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1047",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6e36fc10e5cc676a5e6b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_566175bc3788cae3d3ec",
+      "claim_ids": [
+        "claim_6e36fc10e5cc676a5e6b"
+      ],
+      "is_primary": true,
+      "normalized_value": "isswgl@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1047",
+      "status": "current",
+      "type": "email",
+      "value": "isswgl@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6e36fc10e5cc676a5e6b"
+    ],
+    "email": [
+      "claim_6e36fc10e5cc676a5e6b"
+    ],
+    "name": [
+      "claim_6e36fc10e5cc676a5e6b"
+    ],
+    "profile_url": [
+      "claim_6e36fc10e5cc676a5e6b"
+    ],
+    "research_directions": [
+      "claim_6e36fc10e5cc676a5e6b"
+    ],
+    "status": [
+      "claim_6e36fc10e5cc676a5e6b"
+    ],
+    "title": [
+      "claim_6e36fc10e5cc676a5e6b"
+    ]
+  },
+  "id": "mentor_d149d4fd5d16550c37d3",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6e36fc10e5cc676a5e6b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王国利"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_566175bc3788cae3d3ec",
+      "claim_ids": [
+        "claim_6e36fc10e5cc676a5e6b"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/1047"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "普适计算、泛在感知与泛在智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/1047",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

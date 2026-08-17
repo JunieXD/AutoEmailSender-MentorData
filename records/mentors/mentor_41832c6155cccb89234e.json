@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0766db38c689eb7d4dd3"
+      ],
+      "ended_at": null,
+      "id": "aff_1f4d11939e142378b56f",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/220",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0766db38c689eb7d4dd3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f4d11939e142378b56f",
+      "claim_ids": [
+        "claim_0766db38c689eb7d4dd3"
+      ],
+      "is_primary": true,
+      "normalized_value": "nanyh@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/220",
+      "status": "current",
+      "type": "email",
+      "value": "nanyh@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0766db38c689eb7d4dd3"
+    ],
+    "email": [
+      "claim_0766db38c689eb7d4dd3"
+    ],
+    "name": [
+      "claim_0766db38c689eb7d4dd3"
+    ],
+    "profile_url": [
+      "claim_0766db38c689eb7d4dd3"
+    ],
+    "recent_papers": [
+      "claim_0766db38c689eb7d4dd3"
+    ],
+    "research_directions": [
+      "claim_0766db38c689eb7d4dd3"
+    ],
+    "status": [
+      "claim_0766db38c689eb7d4dd3"
+    ],
+    "title": [
+      "claim_0766db38c689eb7d4dd3"
+    ]
+  },
+  "id": "mentor_41832c6155cccb89234e",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0766db38c689eb7d4dd3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "南雨宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f4d11939e142378b56f",
+      "claim_ids": [
+        "claim_0766db38c689eb7d4dd3"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/220"
+    }
+  ],
+  "recent_papers": [
+    "[Preprint] SkillScope: Toward Fine-Grained Least-Privilege Enforcement for Agent Skills. Jiangrong Wu, Yuhong Nan, Yixi Lin, Huaijin Wang, Yuming Xiao, Shuai Wang, Zibin Zheng. arXiv preprint arXiv:2605.05868, 2026.",
+    "[Preprint] FlowArk: Boosting Agentic Data-flow Analysis for Android Apps via Context-Aware Knowledge Reuse.Yiming Zhang, Jiangrong Wu, Yuhong Nan. arXiv preprint arXiv:2607.11308, 2026.",
+    "[Preprint] AgentRaft: Automated Detection of Data Over-Exposure in LLM Agents.Yixi Lin*, Jiangrong Wu*, Yuhong Nan, Xueqiang Wang, Xinyuan Zhang, Zibin Zheng.arXiv preprint arXiv:2603.07557, 2026.",
+    "[Preprint] Control at Stake: Evaluating the Security Landscape of LLM-Driven Email Agents.Jiangrong Wu, Yuhong Nan, Jianliang Wu, Zitong Yao, Zibin Zheng. arXiv preprint arXiv:2507.02699, 2025.",
+    "[FSE'26] V2E: Validating Smart Contract Vulnerabilities through Profit-driven Exploit Generation and Execution. Jingwen Zhang, Yuhong Nan, Kaiwen Ning, Mingxi Ye, Wei Li, Yuming Xiao, Yuming Feng, Weizhe Zhang, Zibin Zheng. In Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering (FSE 2026).",
+    "[FSE'26] ChainDelta: Automatic Patch-based Exploit Generation for Ethereum with Fuzzing Agents. Mingxi Ye, Yuhong Nan, Zhijie Zhong, Jianzhong Su, Xingwei Lin, Peilin Zheng, Zibin Zheng. In Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering (FSE 2026).",
+    "[ISSTA'26] RPCSpecter: Detecting Blockchain RPC Bugs through a Specification-Driven, Constraint-Aware Fuzzing Approach. Yuming Xiao, Yuhong Nan, Zhijie Zhong, Mingxi Ye, Zibin Zheng. In Proceedings of the ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA 2026).",
+    "[ICSE’26] Is My RPC Response Reliable? Detecting RPC Bugs in Ethereum Blockchain Client under Context. Zhijie Zhong, Yuhong Nan, Mingxi Ye, Qing Xue, Jiashui Wang, Xinlei Ying, Long Liu, Zibin Zheng. In Proceedings of the 48th ACM/IEEE International Conference on Software Engineering."
+  ],
+  "research_directions": [
+    "系统安全及隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/220",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

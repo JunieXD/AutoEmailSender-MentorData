@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5eb9dd3e28d00c233701"
+      ],
+      "ended_at": null,
+      "id": "aff_0cc84a848f0ddc2c0382",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/161",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5eb9dd3e28d00c233701"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0cc84a848f0ddc2c0382",
+      "claim_ids": [
+        "claim_5eb9dd3e28d00c233701"
+      ],
+      "is_primary": true,
+      "normalized_value": "huanghw28@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/161",
+      "status": "current",
+      "type": "email",
+      "value": "huanghw28@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5eb9dd3e28d00c233701"
+    ],
+    "email": [
+      "claim_5eb9dd3e28d00c233701"
+    ],
+    "name": [
+      "claim_5eb9dd3e28d00c233701"
+    ],
+    "profile_url": [
+      "claim_5eb9dd3e28d00c233701"
+    ],
+    "recent_papers": [
+      "claim_5eb9dd3e28d00c233701"
+    ],
+    "research_directions": [
+      "claim_5eb9dd3e28d00c233701"
+    ],
+    "status": [
+      "claim_5eb9dd3e28d00c233701"
+    ],
+    "title": [
+      "claim_5eb9dd3e28d00c233701"
+    ]
+  },
+  "id": "mentor_d1bc7e296c10b53aadc5",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5eb9dd3e28d00c233701"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄华威"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0cc84a848f0ddc2c0382",
+      "claim_ids": [
+        "claim_5eb9dd3e28d00c233701"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/161"
+    }
+  ],
+  "recent_papers": [
+    "ShardCutter (IEEE ToN, 2026)",
+    "\"LiquidityPool: Game-Theoretic Analysis of Stakeholder Revenue in Ranking-Dependent DeFi\" (WWW 2026)",
+    "\"BrokerChain: A Blockchain Sharding Protocol by Exploiting Broker Accounts\" (IEEE ToN, 2025)",
+    "\"BlockEmulator: An Emulator Enabling to Test Blockchain Sharding Protocols.\" (IEEE TSC, 2025)",
+    "\"Justitia: An Incentive Mechanism towards the Fairness of Cross-shard Transactions.\" (INFOCOM 2025)",
+    "\"HiveFL: GAN-empowered Semi-asynchronous Federated Learning with Self-determining Clients\" (TCCN, 2024)",
+    "\"Scheduling Most Valuable Committees for the Sharded Blockchain\" (IEEE Transactions on Networking, 2023)",
+    "\"Adaptive Double-Spending Attacks on PoW-based Blockchains\" (IEEE TDSC, 2023)"
+  ],
+  "research_directions": [
+    "区块链系统与协议、区块链金融、AI智能体可信基础设施、分布式系统与协议"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/161",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

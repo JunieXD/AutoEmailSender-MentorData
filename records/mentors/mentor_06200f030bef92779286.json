@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_451423f98ca82166b6e3"
+      ],
+      "ended_at": null,
+      "id": "aff_bc745c008ec8026c2fe6",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/959",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_451423f98ca82166b6e3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bc745c008ec8026c2fe6",
+      "claim_ids": [
+        "claim_451423f98ca82166b6e3"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangrr9@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/959",
+      "status": "current",
+      "type": "email",
+      "value": "wangrr9@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_451423f98ca82166b6e3"
+    ],
+    "email": [
+      "claim_451423f98ca82166b6e3"
+    ],
+    "name": [
+      "claim_451423f98ca82166b6e3"
+    ],
+    "profile_url": [
+      "claim_451423f98ca82166b6e3"
+    ],
+    "recent_papers": [
+      "claim_451423f98ca82166b6e3"
+    ],
+    "research_directions": [
+      "claim_451423f98ca82166b6e3"
+    ],
+    "status": [
+      "claim_451423f98ca82166b6e3"
+    ],
+    "title": [
+      "claim_451423f98ca82166b6e3"
+    ]
+  },
+  "id": "mentor_06200f030bef92779286",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_451423f98ca82166b6e3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪冉冉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bc745c008ec8026c2fe6",
+      "claim_ids": [
+        "claim_451423f98ca82166b6e3"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/959"
+    }
+  ],
+  "recent_papers": [
+    "Distributed Rumor Source Detection Via Boosted Federated Learning.IEEE Transactions on Knowledge and Data Engineering,2024. 一作中科院一区(CCFA,SCI:Q1,IF:8.9)。",
+    "Multiscale Information Diffusion Prediction With Minimal Substitution Neural Network. IEEE Transactions on Neural Networks and Learning Systems,2023. 一作中科院一区。(SCI:Q1,IF: 10.2)。",
+    "Anomaly detection service for blockchain transactions using minimal substitution-based label propagation. IEEE Transactions on Services Computing,2024. 一作中科院二区(CCFA,SCI:Q1,IF:5.5)。",
+    "Time-varying-aware network traffic prediction via deep learning in IIoT,IEEE Transactions on Industrial Informatics,2022, 一作中科院一区。(SCI:Q1,IF: 11.7)。",
+    "Software escalation prediction based on deep learning in the cognitive internet of vehicles. IEEE Transactions on Intelligent Transportation Systems, 2022. 一作中科院一区(SCI:Q1,IF: 7.9)。",
+    "Predicting Multi-Scale Information Diffusion via Minimal Substitution Neural Networks. 2024,IEEE International Conference on Computer Communications,一作CCFA会议论文",
+    "Online Popularity Prediction Service via Minimal Substitution Reinforcement Learning for Social Networks. 2025,IEEE Transactions on Services Computing, 一作CCFA",
+    "IDCC: Influence-Driven Content Cache for NFC in IoE. 2025, IEEE Internet of Things Journal,一作中科院二区。"
+  ],
+  "research_directions": [
+    "网络信息传播机制、图挖掘、智能网络与服务、图推理、复杂网络、边缘计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/959",
+  "title": "研究员",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

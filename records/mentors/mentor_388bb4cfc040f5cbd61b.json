@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ca501785d65d5e4a5622"
+      ],
+      "ended_at": null,
+      "id": "aff_4933ff4f632653202f20",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/742",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ca501785d65d5e4a5622"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4933ff4f632653202f20",
+      "claim_ids": [
+        "claim_ca501785d65d5e4a5622"
+      ],
+      "is_primary": true,
+      "normalized_value": "liumw26@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/742",
+      "status": "current",
+      "type": "email",
+      "value": "liumw26@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ca501785d65d5e4a5622"
+    ],
+    "email": [
+      "claim_ca501785d65d5e4a5622"
+    ],
+    "name": [
+      "claim_ca501785d65d5e4a5622"
+    ],
+    "profile_url": [
+      "claim_ca501785d65d5e4a5622"
+    ],
+    "recent_papers": [
+      "claim_ca501785d65d5e4a5622"
+    ],
+    "research_directions": [
+      "claim_ca501785d65d5e4a5622"
+    ],
+    "status": [
+      "claim_ca501785d65d5e4a5622"
+    ],
+    "title": [
+      "claim_ca501785d65d5e4a5622"
+    ]
+  },
+  "id": "mentor_388bb4cfc040f5cbd61b",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ca501785d65d5e4a5622"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘名威"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4933ff4f632653202f20",
+      "claim_ids": [
+        "claim_ca501785d65d5e4a5622"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/742"
+    }
+  ],
+  "recent_papers": [
+    "[FSE 2025, CCF A] Yanlin Wang, Tianyue Jiang, *刘名威, Jiachi Chen, Mingzhi Mao, Xilin Liu, Yuchi Ma, and Zibin Zheng: Beyond Functional Correctness: Investigating Coding Style Inconsistencies in Large Language Models.",
+    "[ICSE 2025, CCF A] Chong Wang, Jian Zhang, Yiling Lou, 刘名威, Weisong Sun, Yang Liu, Xin Peng: TIGER: A Generating-Then-Ranking Framework for Practical Python Type Inference.",
+    "[ICSE 2025, CCF A] Zhiqiang Yuan, Yiling Lou, 刘名威, Shiji Ding, Kaixin Wang, Yixuan Chen, Xin Peng: Evaluating and Improving ChatGPT for Unit Test Generation.",
+    "[FSE 2023, CCF A, 杰出论文奖] 刘名威, Yanjun Yang, Yiling Lou, Xin Peng, Zhong Zhou, Xueying Du, Tianyong Yang: Recommending Analogical APIs via Knowledge Graph Embedding.",
+    "[ICSE 2024, CCF A] Xueying Du, *刘名威, Kaixin Wang, Hanlin Wang, Junwei Liu, Yixuan Chen, Jiayi Feng, Chaofeng Sha, Xin Peng, *Yiling Lou: Evaluating Large Language Models in Class-Level Code Generation.",
+    "[软件学报 2024, 中文CCF A] 邹佰翰, 汪莹, 彭鑫, 娄一翎, 刘力华, 张昕东, 林帆, *刘名威: 重新审视代码补全中的检索增强策略.",
+    "[ASE 2023, CCF A] 刘名威, Tianyong Yang, Yiling Lou, Xueying Du, Ying Wang, Xin Peng: CodeGen4Libs: A Two-Stage Approach for Library-Oriented Code Generation.",
+    "[TSE 2023, CCF A] #刘名威, Chengyuan Zhao, Xin Peng, Simin Yu, Haofen Wang, Chaofeng Sha: Task-Oriented ML/DL Library Recommendation Based on a Knowledge Graph."
+  ],
+  "research_directions": [
+    "聚焦于软件工程(SE)与人工智能(AI)交叉领域,主要探索AI4SE(AI赋能软件工程)和SE4AI(软件工程赋能AI)的前沿问题,具体研究包括基于大模型的智能化开发与维护、软件开发知识图谱、大模型可信评测、可信代码大模型等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/742",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

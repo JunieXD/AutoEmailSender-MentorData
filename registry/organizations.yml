@@ -3207,3 +3207,27 @@ organizations:
   successor_id: null
   created_at: '2026-08-17T11:08:46Z'
   updated_at: '2026-08-17T11:08:46Z'
+- id: org_auto_e8e0feead2cb29e0f44f
+  type: university
+  canonical_name: 中山大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://sysu.edu.cn/
+  approved_domains:
+  - sysu.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-17T11:08:48Z'
+  updated_at: '2026-08-17T11:08:48Z'
+- id: org_auto_816b5cc0cdead6c7fef3
+  type: school
+  canonical_name: 软件工程学院
+  parent_id: org_auto_e8e0feead2cb29e0f44f
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-17T11:08:48Z'
+  updated_at: '2026-08-17T11:08:48Z'

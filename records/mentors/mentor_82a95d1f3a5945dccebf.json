@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5a830b585bd0371b8732"
+      ],
+      "ended_at": null,
+      "id": "aff_c6c10f2afb2bf62586a6",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/985",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5a830b585bd0371b8732"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c6c10f2afb2bf62586a6",
+      "claim_ids": [
+        "claim_5a830b585bd0371b8732"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujp68@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/985",
+      "status": "current",
+      "type": "email",
+      "value": "liujp68@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5a830b585bd0371b8732"
+    ],
+    "email": [
+      "claim_5a830b585bd0371b8732"
+    ],
+    "name": [
+      "claim_5a830b585bd0371b8732"
+    ],
+    "profile_url": [
+      "claim_5a830b585bd0371b8732"
+    ],
+    "recent_papers": [
+      "claim_5a830b585bd0371b8732"
+    ],
+    "research_directions": [
+      "claim_5a830b585bd0371b8732"
+    ],
+    "status": [
+      "claim_5a830b585bd0371b8732"
+    ],
+    "title": [
+      "claim_5a830b585bd0371b8732"
+    ]
+  },
+  "id": "mentor_82a95d1f3a5945dccebf",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5a830b585bd0371b8732"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘井平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c6c10f2afb2bf62586a6",
+      "claim_ids": [
+        "claim_5a830b585bd0371b8732"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/985"
+    }
+  ],
+  "recent_papers": [
+    "Jingping Liu, Xueyan Wu, Hanxuan Chen, Ziyan Liu, Zhangquan Chen, Ronghao Chen, and Huacan Wang. Easy for Children, Hard for AI: The Limits of Multimodal LLMs in Early Childhood Learning(AAAI Oral, 2026)",
+    "Jingping Liu, Xingchen Peng, Yan Zhou, Ziyan Liu, Jie Zhai, Ronghao Chen, Huacan Wang, and Xiaofeng Jia. MirrorQA: Benchmarking Multimodal LLMs on Mirror-Orientation Reasoning(ACL Oral, 2026)",
+    "Hang Hu, Ziyan Liu, Rujie Wen, Ruihui Hou, Xueyan Wu, Mu Zhang, Jianxing Yu, Tong Ruan, Jingping Liu. From Selection to Refinement: Iterative Optimization for Instruction Data(ACL main, 2026)",
+    "Jihang Jin, Ronghao Chen, Hao Zhang, Ziyan Liu, Huacan Wang, Qi Ye, Jingping Liu. Tiny Scales, Great Challenges: The Limits of Multimodal LLMs in Scale Recognition(ACL main, 2026)",
+    "Mu Zhang, Yuxiang Chu, Guangya Yu, Yongqi Fan, Weiyan Zhang, Hang Hu, Tong Ruan, Jingping Liu. Balancing Knowledge Breadth and Task Depth for Effective Domain Adaptation Fine-Tuning(ACL Findings, 2026)",
+    "Jingping Liu, Ziyan Liu, Zhedong Cen, Yan Zhou, Yinan Zou, Weiyan Zhang, Haiyun Jiang, and Tong Ruan. Can Multimodal Large Language Models Understand Spatial Relations? (ACL main 2025)",
+    "Qi Ye, Guangya Yu, Jingping Liu, Erzhen Chen, Chenjie Dong, Xiaosheng Lin, Zelei Liu, Han Yu, and Tong Ruan. IMQC: A Large Language Model Platform for Medical Quality Control (AAAI 2025)",
+    "Dongge Xue, Zhili Pu, Zhentao Xia, Hongli Sun, Ruihui Hou, Guangya Yu, Yupian Lin, Yongqi Fan, Jingping Liu, and Tong Ruan. Text-to-ES Bench: A Comprehensive Benchmark for Converting Natural Language to Elasticsearch Query (ACL main 2025)"
+  ],
+  "research_directions": [
+    "大模型训练与推理、大模型智能体、自然语言处理、知识图谱"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/985",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

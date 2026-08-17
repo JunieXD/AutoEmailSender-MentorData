@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1cf8a73d99217fbd5690"
+      ],
+      "ended_at": null,
+      "id": "aff_e53b12f5ddbb13f9dcb7",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/209",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1cf8a73d99217fbd5690"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e53b12f5ddbb13f9dcb7",
+      "claim_ids": [
+        "claim_1cf8a73d99217fbd5690"
+      ],
+      "is_primary": true,
+      "normalized_value": "lidan263@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/209",
+      "status": "current",
+      "type": "email",
+      "value": "lidan263@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1cf8a73d99217fbd5690"
+    ],
+    "email": [
+      "claim_1cf8a73d99217fbd5690"
+    ],
+    "name": [
+      "claim_1cf8a73d99217fbd5690"
+    ],
+    "profile_url": [
+      "claim_1cf8a73d99217fbd5690"
+    ],
+    "recent_papers": [
+      "claim_1cf8a73d99217fbd5690"
+    ],
+    "research_directions": [
+      "claim_1cf8a73d99217fbd5690"
+    ],
+    "status": [
+      "claim_1cf8a73d99217fbd5690"
+    ],
+    "title": [
+      "claim_1cf8a73d99217fbd5690"
+    ]
+  },
+  "id": "mentor_05352fdaca90073f93f7",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1cf8a73d99217fbd5690"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e53b12f5ddbb13f9dcb7",
+      "claim_ids": [
+        "claim_1cf8a73d99217fbd5690"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/209"
+    }
+  ],
+  "recent_papers": [
+    "Empowering VLMs for Few-Shot Multimodal Time Series Classification via Tailored Agentic Reasoning, ACM MM 2026",
+    "Towards Effective LLM Reasoning for Time Series Classification, FMSD@ICML 2026",
+    "Time Series Reasoning via Process-Verifiable Thinking Data Synthesis and Scheduling for Tailored LLM Reasoning, ICML 2026",
+    "WaveMoE: A Wavelet-Enhanced Mixture-of-Experts Foundation Model for Time Series Forecasting, TSALM@ICLR 2026",
+    "Understanding and Preserving Safety in Fine-Tuned LLMs, ACM CCS 2026",
+    "Lightweight Time Series Data Valuation on Time Series Foundation Models via In-Context Finetuning, DASFAA 2026",
+    "Shared Representation Learning for Generalizable SOH Estimation Across Multiple Battery Configurations, PHM-AP 2025",
+    "Integrating Time Series into LLMs via Multi-layer Steerable Embedding Fusion for Enhanced Forecasting, CIKM 2025"
+  ],
+  "research_directions": [
+    "时序基座大模型、时序分析、时序多模态大模型、工业数据治理、预测性维护、异常检测、故障诊断、统计学习方法、数学建模、数据挖掘、序列预测/数据生成、数据质量控制与评估、数据生成与隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/209",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

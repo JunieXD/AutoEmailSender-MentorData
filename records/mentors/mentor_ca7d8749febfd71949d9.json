@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_33fa1594a3a939a640b8"
+      ],
+      "ended_at": null,
+      "id": "aff_45f5d750bd10c534e04f",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/249",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_33fa1594a3a939a640b8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_45f5d750bd10c534e04f",
+      "claim_ids": [
+        "claim_33fa1594a3a939a640b8"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuweibin@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/249",
+      "status": "current",
+      "type": "email",
+      "value": "wuweibin@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_33fa1594a3a939a640b8"
+    ],
+    "email": [
+      "claim_33fa1594a3a939a640b8"
+    ],
+    "name": [
+      "claim_33fa1594a3a939a640b8"
+    ],
+    "profile_url": [
+      "claim_33fa1594a3a939a640b8"
+    ],
+    "recent_papers": [
+      "claim_33fa1594a3a939a640b8"
+    ],
+    "research_directions": [
+      "claim_33fa1594a3a939a640b8"
+    ],
+    "status": [
+      "claim_33fa1594a3a939a640b8"
+    ],
+    "title": [
+      "claim_33fa1594a3a939a640b8"
+    ]
+  },
+  "id": "mentor_ca7d8749febfd71949d9",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_33fa1594a3a939a640b8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴炜滨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_45f5d750bd10c534e04f",
+      "claim_ids": [
+        "claim_33fa1594a3a939a640b8"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/249"
+    }
+  ],
+  "recent_papers": [
+    "Ref4D-VideoBench: Four-Dimensional Reference-Based Evaluation of Text-to-Video Generative Models",
+    "QRShield: Exploiting Vulnerabilities of Latent Diffusion Models for Preventing AI Art Plagiarism",
+    "Detecting Violations of Physical Common Sense in Images: A Challenge Dataset and Effective Model",
+    "An Empirical Study of Code Clones from Commercial AI Code Generators",
+    "Detecting and Reducing the Factual Hallucinations of Large Language Models with Metamorphic Testing",
+    "Improving Transferable Targeted Adversarial Attacks with Model Self-Enhancement",
+    "Improving the Adversarial Transferability of Vision Transformers with Virtual Dense Connection",
+    "Curvature-Invariant Adversarial Attacks for 3D Point Clouds"
+  ],
+  "research_directions": [
+    "可信人工智能、大模型、智能体、计算机视觉、智能软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/249",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

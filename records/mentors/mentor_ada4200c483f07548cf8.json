@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_49c039c66dae400d969c"
+      ],
+      "ended_at": null,
+      "id": "aff_c83e564a55767f23891d",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/463",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_49c039c66dae400d969c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c83e564a55767f23891d",
+      "claim_ids": [
+        "claim_49c039c66dae400d969c"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenzhb36@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/463",
+      "status": "current",
+      "type": "email",
+      "value": "chenzhb36@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_49c039c66dae400d969c"
+    ],
+    "email": [
+      "claim_49c039c66dae400d969c"
+    ],
+    "name": [
+      "claim_49c039c66dae400d969c"
+    ],
+    "profile_url": [
+      "claim_49c039c66dae400d969c"
+    ],
+    "recent_papers": [
+      "claim_49c039c66dae400d969c"
+    ],
+    "research_directions": [
+      "claim_49c039c66dae400d969c"
+    ],
+    "status": [
+      "claim_49c039c66dae400d969c"
+    ],
+    "title": [
+      "claim_49c039c66dae400d969c"
+    ]
+  },
+  "id": "mentor_ada4200c483f07548cf8",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_49c039c66dae400d969c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈壮彬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c83e564a55767f23891d",
+      "claim_ids": [
+        "claim_49c039c66dae400d969c"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/463"
+    }
+  ],
+  "recent_papers": [
+    "Zhuangbin Chen, Junsong Pu, Zibin Zheng. Tracezip: Efficient Distributed Tracing via Trace Compression. The 34th ACM SIGSOFT International Symposium on Software Testing and Analysis (ISSTA), 2025.",
+    "Zhuangbin Chen, Zhihan Jiang, Yuxin Su, Michael R. Lyu, Zibin Zheng. TraceMesh: Scalable and Streaming Sampling for Distributed Traces. IEEE International Conference on Cloud Computing (CLOUD), 2024. (最佳论文奖)",
+    "Jinyang Liu, Shilin He, Zhuangbin Chen, Liqun Li, Yu Kang, Xu Zhang, Pinjia He, Hongyu Zhang, Qingwei Lin, Zhangwei Xu, Saravan Rajmohan, Dongmei Zhang, and Michael R. Lyu. Incident-aware Duplicate Ticket Aggregation for Cloud Systems. IEEE/ACM International Conference on Software Engineering (ICSE), 2023.",
+    "Cheryl Lee, Tianyi Yang, Zhuangbin Chen, Yuxin Su, and Michael R. Lyu. Eadro: An End-to-End Troubleshooting Framework for Microservices on Multi-source Data. IEEE/ACM International Conference on Software Engineering (ICSE), 2023.",
+    "Cheryl Lee, Tianyi Yang, Zhuangbin Chen, Yuxin Su, Yongqiang Yang, and Michael R. Lyu. Heterogeneous Anomaly Detection for Software Systems via Semi-supervised Cross-modal Attention. IEEE/ACM International Conference on Software Engineering (ICSE), 2023.",
+    "Shilin He, Pinjia He, Zhuangbin Chen, Tianyi Yang, Yuxin Su, and Michael R. Lyu. A Survey on Automated Log Analysis for Reliability Engineering. ACM Computing Surveys (CSUR), 2022.",
+    "Yichen Li, Xu Zhang, Shilin He, Zhuangbin Chen, Yu Kang, Jinyang Liu, Liqun Li, Yingnong Dang, Feng Gao, Zhangwei Xu, Saravan Rajmohan, Qingwei Lin, Dongmei Zhang, and Michael R. Lyu. An Intelligent Framework for Timely, Accurate, and Comprehensive Cloud Incident Detection. ACM SIGOPS Operating Systems Review (OSR), 2022.",
+    "Hui Xu, Zhuangbin Chen, Mingshen Sun, Yangfan Zhou, and Michael R. Lyu. Memory-Safety Challenge Considered Solved? An In-Depth Study with All Rust CVEs. ACM Transactions on Software Engineering and Methodology (TOSEM), 2022."
+  ],
+  "research_directions": [
+    "软件可靠性、大模型系统、云计算、机器学习、智能运维等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/463",
+  "title": "助理教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

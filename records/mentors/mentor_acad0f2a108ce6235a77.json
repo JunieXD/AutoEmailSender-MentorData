@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_055f95880eecb58b56c5"
+      ],
+      "ended_at": null,
+      "id": "aff_c7845a37210b4fa7901a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/159",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_055f95880eecb58b56c5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c7845a37210b4fa7901a",
+      "claim_ids": [
+        "claim_055f95880eecb58b56c5"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenwuh@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/159",
+      "status": "current",
+      "type": "email",
+      "value": "chenwuh@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_055f95880eecb58b56c5"
+    ],
+    "email": [
+      "claim_055f95880eecb58b56c5"
+    ],
+    "name": [
+      "claim_055f95880eecb58b56c5"
+    ],
+    "profile_url": [
+      "claim_055f95880eecb58b56c5"
+    ],
+    "recent_papers": [
+      "claim_055f95880eecb58b56c5"
+    ],
+    "research_directions": [
+      "claim_055f95880eecb58b56c5"
+    ],
+    "status": [
+      "claim_055f95880eecb58b56c5"
+    ],
+    "title": [
+      "claim_055f95880eecb58b56c5"
+    ]
+  },
+  "id": "mentor_acad0f2a108ce6235a77",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_055f95880eecb58b56c5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈武辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c7845a37210b4fa7901a",
+      "claim_ids": [
+        "claim_055f95880eecb58b56c5"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/159"
+    }
+  ],
+  "recent_papers": [
+    "Kairox: Adaptive GPU-CPU Hybrid LLM Inference via Online Neuron Balancing. OSDI 2026.",
+    "Crimson: Collaborative Parameter Updates for Efficient Pipeline Training of Large Language Models. EuroSys 2026.",
+    "Efficient Multi-modal Serving via Module Multiplexing. EuroSys 2026.",
+    "Fate: Fast Edge Inference of Mixture-of-Experts Models via Cross-Layer Gate. WWW 2026.",
+    "Obscura: Concealing Recomputation Overhead in Training of Large Language Models with Bubble-filling Pipeline Transformation. ATC 2025.",
+    "Klotski: Efficient Mixture-of-Expert Inference via Expert-Aware Multi-Batch Pipeline. ASPLOS 2025.",
+    "Optimus: Warming Serverless ML Inference via Inter-Function Model Transformation. EuroSys 2024.",
+    "Porygon: Scaling Blockchain via 3D Parallelism, ICDE 2024."
+  ],
+  "research_directions": [
+    "大模型系统软件栈、算子自动生成及调优、端侧大模型系统软件、大模型系统训练与推理加速技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/159",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

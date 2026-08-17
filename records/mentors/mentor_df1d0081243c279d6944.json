@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3cb6ad19fc60da3dda95"
+      ],
+      "ended_at": null,
+      "id": "aff_4bbdacad0a143afea529",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/163",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3cb6ad19fc60da3dda95"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4bbdacad0a143afea529",
+      "claim_ids": [
+        "claim_3cb6ad19fc60da3dda95"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuy@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/163",
+      "status": "current",
+      "type": "email",
+      "value": "yuy@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3cb6ad19fc60da3dda95"
+    ],
+    "email": [
+      "claim_3cb6ad19fc60da3dda95"
+    ],
+    "name": [
+      "claim_3cb6ad19fc60da3dda95"
+    ],
+    "profile_url": [
+      "claim_3cb6ad19fc60da3dda95"
+    ],
+    "recent_papers": [
+      "claim_3cb6ad19fc60da3dda95"
+    ],
+    "research_directions": [
+      "claim_3cb6ad19fc60da3dda95"
+    ],
+    "status": [
+      "claim_3cb6ad19fc60da3dda95"
+    ],
+    "title": [
+      "claim_3cb6ad19fc60da3dda95"
+    ]
+  },
+  "id": "mentor_df1d0081243c279d6944",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3cb6ad19fc60da3dda95"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "余阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4bbdacad0a143afea529",
+      "claim_ids": [
+        "claim_3cb6ad19fc60da3dda95"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/163"
+    }
+  ],
+  "recent_papers": [
+    "Chunyang Meng, Shijie Song, Haogang Tong, Maolin Pan and Yang Yu*. DeepScaler: Holistic Autoscaling for Microservices Based on Spatiotemporal GNN with Adaptive Graph Learning. The 38th IEEE/ACM International Conference on Automated Software Engineering (ASE 2023), September 11 – 15, 2023. Kirchberg, Luxembourg. Accepted.【EI, CCF A】软件工程领域国际顶级会议,ACM SIGSOFT杰出论文奖.",
+    "Shangqing Feng, Chang Jia, Maolin Pan, and Yang Yu*. Smart Contract Generation Supporting Multi-instance for Inter-Organizational Process Collaboration. The 18th CCF Conference on Computer Supported Cooperative Work and Social Computing(ChineseCSCW 2023), August 18–20, 2023. Haerbin, China. Accepted. 【EI】",
+    "Haogang Tong, Chunyang Meng, Shijie Song, Yang Yu* and Maolin Pan. GMA: Graph Multi-agent Microservice Autoscaling Algorithm in Edge-Cloud Environment. The 2023 IEEE International Conference on Web Services(ICWS 2023), July 2-8, 2023, CHICAGO, ILLINOIS USA. Accepted.【EI, CCF-B】服务计算领域国际顶级会议.",
+    "Yunzhi Wu, Yang Yu*, and Maolin Pan. Deep Reinforcement Learning-Based Scheduling Algorithm for Service Differentiation in Cloud Business Process Management System. The 17th CCF Conference on Computer Supported Cooperative Work and Social Computing(ChineseCSCW 2022), November 25–27, 2022. Taiyuan, China. CCIS 1682, pp. 175–186, 13 May 2023. 【EI】",
+    "Chunyang Meng, Jingwan Tong, Maolin Pan and Yang Yu*. HRA:An Intelligent Holistic Resource Autoscaling Framework for Multi-service Applications. The 2022 IEEE International Conference on Web Services(ICWS 2022), JULY 11-15, 2022, Barcelona, Spain. pp. 129-139.【EI, CCF-B】服务计算领域国际顶级会议,最佳学生论文奖.",
+    "Tianyang Wu, Maolin Pan and Yang Yu*. A Long-term Cloud Workload Prediction Framework for Reserved Resource Allocation. The 2022 IEEE International Conference on Services Computing (SCC 2022), JULY 11-15, 2022, Barcelona, Spain. pp. 134-139.【EI,CCF-C】",
+    "Ting Cai, Wuhui Chen, Kostas E. Psannis, Sotirios K. Goudos, Yang Yu, Zibin Zheng, Shaohua Wan.Scalable On-Chain and Off-Chain Blockchain for Sharing Economy in Large-Scale Wireless Networks. IEEE Wireless Communications,2022.29(3):32-38, June 2022, doi: 10.1109/MWC.004.2100616. IF: 12.777,中科院1区, TOP期刊.",
+    "Tianhong Xiong, Maolin Pan, Yang Yu*, and Dingjun Lou. A Low-Code Framework for Complex Crowdsourcing Work Based on Process Modeling. Computational Intelligence and Neuroscience. Vol.2022, Article ID 9496741,14 pages.DOI: 10.1155/2022/9496741.IF:3.633,中科院3区."
+  ],
+  "research_directions": [
+    "工作流/BPM、服务计算/云计算、网络社会协作"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/163",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9f5b1c0d7df1cdda0ba5"
+      ],
+      "ended_at": null,
+      "id": "aff_69e22f20f47d24df809e",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/826",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9f5b1c0d7df1cdda0ba5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_69e22f20f47d24df809e",
+      "claim_ids": [
+        "claim_9f5b1c0d7df1cdda0ba5"
+      ],
+      "is_primary": true,
+      "normalized_value": "louj5@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/826",
+      "status": "current",
+      "type": "email",
+      "value": "louj5@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ],
+    "email": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ],
+    "name": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ],
+    "profile_url": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ],
+    "recent_papers": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ],
+    "research_directions": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ],
+    "status": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ],
+    "title": [
+      "claim_9f5b1c0d7df1cdda0ba5"
+    ]
+  },
+  "id": "mentor_3ee0ade18e4c62b3c80e",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9f5b1c0d7df1cdda0ba5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "娄坚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_69e22f20f47d24df809e",
+      "claim_ids": [
+        "claim_9f5b1c0d7df1cdda0ba5"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/826"
+    }
+  ],
+  "recent_papers": [
+    "[USENIX Sec]with Jiazheng Song*,Junxu Liu,Jinfei Liu, “SafeAdapt: Safety Alignment with Adaptive Thinking Allocation for Large Reasoning Models\",USENIX Sec'26.",
+    "[ICML]Jiahui Zhou*,Dan Li, Boxin Li, Xiao Zhang, Erli Meng, Lin Li*, Zhuomin Chen, Jian Lou,See-Kiong Ng, “Time Series Reasoning via Process-Verifiable Thinking Data Synthesis and Scheduling for Tailored LLM Reasoning\", ICML'26.[arXiv]",
+    "[TSALM@ICLR]Shunyu Wu*, Jiawei Huang*, Weibin Feng*, Boxin Li, Xiao Zhang, Erli Meng,Dan Li, Jian Lou,See-Kiong Ng, “WaveMoE: A Wavelet-Enhanced Mixture-of-Experts Foundation Model for Time Series Forecasting\", TSALM@ICLR'26.",
+    "[ACM CCS]Jiawen Zhang, Yangfan Hu, Kejia Chen, Lipeng He, Jiachen Ma, Jian Lou,Dan Li,Jian Liu, Xiaohu Yang,Ruoxi Jia, “Understanding and Preserving Safety in Fine-Tuned LLMs\",ACM CCS'26.",
+    "[ICLR]Shunyu Wu*,Dan Li,Wenjie Feng, Haozheng Ye*, Jian Lou,See-Kiong Ng, “Rating Quality of Diverse Time Series Data by Meta-learning from LLM Judgment\", ICLR'26.[arXiv]",
+    "[ICLR]Tianyu Chen, Jian Lou,Wenjie Wang, “Safeguarding Multimodal Knowledge Copyright in the RAG-as-a-Service Environment\", ICLR'26.[arXiv]",
+    "[AAAI]Yulin Jin,Xiaoyu Zhang, Haoyu Tong, Jian Lou,Kai Wu,Haibo Hu,Xiaofeng Chen, “Stochastic Universal Adversarial Perturbations with Fixed Optimization Constraint and Ensured High-probability Transferability\",AAAI'26.",
+    "[ACISP]Xiaoyu Zhang, Yong Lin, Meixia Miao, Jian Lou,Jin Li,Xiaofeng Chen, “Zeroth-Order Federated Private Tuning for Pretrained Large Language Models\", ACISP'25(Best Paper Award)."
+  ],
+  "research_directions": [
+    "大模型隐私保护、大模型安全对齐、数据质量与数据价值评估、数据安全隐私、数据治理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/826",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}
