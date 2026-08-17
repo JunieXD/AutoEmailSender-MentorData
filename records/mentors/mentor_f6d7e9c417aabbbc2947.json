@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7fda1e1f79b5becdd6dd"
+      ],
+      "ended_at": null,
+      "id": "aff_8ca27fd1d025e8fe4571",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/hanhongwei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7fda1e1f79b5becdd6dd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8ca27fd1d025e8fe4571",
+      "claim_ids": [
+        "claim_7fda1e1f79b5becdd6dd"
+      ],
+      "is_primary": true,
+      "normalized_value": "hongwei.han@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/hanhongwei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hongwei.han@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7fda1e1f79b5becdd6dd"
+    ],
+    "email": [
+      "claim_7fda1e1f79b5becdd6dd"
+    ],
+    "name": [
+      "claim_7fda1e1f79b5becdd6dd"
+    ],
+    "profile_url": [
+      "claim_7fda1e1f79b5becdd6dd"
+    ],
+    "research_directions": [
+      "claim_7fda1e1f79b5becdd6dd"
+    ],
+    "status": [
+      "claim_7fda1e1f79b5becdd6dd"
+    ],
+    "title": [
+      "claim_7fda1e1f79b5becdd6dd"
+    ]
+  },
+  "id": "mentor_f6d7e9c417aabbbc2947",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7fda1e1f79b5becdd6dd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩宏伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8ca27fd1d025e8fe4571",
+      "claim_ids": [
+        "claim_7fda1e1f79b5becdd6dd"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/hanhongwei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "可印刷介观钙钛矿太阳能电池"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/hanhongwei/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

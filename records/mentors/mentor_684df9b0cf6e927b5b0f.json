@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ab1f1e23dd03faa3d9f8"
+      ],
+      "ended_at": null,
+      "id": "aff_5fa4006e06e987400706",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/YANLISONG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ab1f1e23dd03faa3d9f8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5fa4006e06e987400706",
+      "claim_ids": [
+        "claim_ab1f1e23dd03faa3d9f8"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanlisong@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/YANLISONG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanlisong@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ab1f1e23dd03faa3d9f8"
+    ],
+    "email": [
+      "claim_ab1f1e23dd03faa3d9f8"
+    ],
+    "name": [
+      "claim_ab1f1e23dd03faa3d9f8"
+    ],
+    "profile_url": [
+      "claim_ab1f1e23dd03faa3d9f8"
+    ],
+    "research_directions": [
+      "claim_ab1f1e23dd03faa3d9f8"
+    ],
+    "status": [
+      "claim_ab1f1e23dd03faa3d9f8"
+    ],
+    "title": [
+      "claim_ab1f1e23dd03faa3d9f8"
+    ]
+  },
+  "id": "mentor_684df9b0cf6e927b5b0f",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ab1f1e23dd03faa3d9f8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫力松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5fa4006e06e987400706",
+      "claim_ids": [
+        "claim_ab1f1e23dd03faa3d9f8"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/YANLISONG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自适应光学与先进探测、光刻缺陷检测系统光学设计及制造、光学干涉检测技术、AR及VR光学系统设计及检测、车载激光雷达实景成像技术、基于压缩感知的车载激光雷达实景成像技术、高NA光刻缺陷检测系统光学设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/YANLISONG/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

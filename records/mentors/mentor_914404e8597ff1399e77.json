@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_561dbbc65843f5a54f4f"
+      ],
+      "ended_at": null,
+      "id": "aff_6cabc31d4a3beb03bdd0",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/shenyan1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_561dbbc65843f5a54f4f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6cabc31d4a3beb03bdd0",
+      "claim_ids": [
+        "claim_561dbbc65843f5a54f4f"
+      ],
+      "is_primary": true,
+      "normalized_value": "ciac_sheny@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/shenyan1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ciac_sheny@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_561dbbc65843f5a54f4f"
+    ],
+    "email": [
+      "claim_561dbbc65843f5a54f4f"
+    ],
+    "name": [
+      "claim_561dbbc65843f5a54f4f"
+    ],
+    "profile_url": [
+      "claim_561dbbc65843f5a54f4f"
+    ],
+    "research_directions": [
+      "claim_561dbbc65843f5a54f4f"
+    ],
+    "status": [
+      "claim_561dbbc65843f5a54f4f"
+    ],
+    "title": [
+      "claim_561dbbc65843f5a54f4f"
+    ]
+  },
+  "id": "mentor_914404e8597ff1399e77",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_561dbbc65843f5a54f4f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "申燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6cabc31d4a3beb03bdd0",
+      "claim_ids": [
+        "claim_561dbbc65843f5a54f4f"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/shenyan1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光电催化/电催化还原二氧化碳、光电催化/电催化分解水、扫描电化学显微镜(SECM)、磁电流效应"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/shenyan1/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

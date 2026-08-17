@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4df0b8aaa979bad1a3fd"
+      ],
+      "ended_at": null,
+      "id": "aff_f16525fe468baefbd8bc",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/xiamin2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4df0b8aaa979bad1a3fd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f16525fe468baefbd8bc",
+      "claim_ids": [
+        "claim_4df0b8aaa979bad1a3fd"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiamin@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/xiamin2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiamin@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4df0b8aaa979bad1a3fd"
+    ],
+    "email": [
+      "claim_4df0b8aaa979bad1a3fd"
+    ],
+    "name": [
+      "claim_4df0b8aaa979bad1a3fd"
+    ],
+    "profile_url": [
+      "claim_4df0b8aaa979bad1a3fd"
+    ],
+    "research_directions": [
+      "claim_4df0b8aaa979bad1a3fd"
+    ],
+    "status": [
+      "claim_4df0b8aaa979bad1a3fd"
+    ],
+    "title": [
+      "claim_4df0b8aaa979bad1a3fd"
+    ]
+  },
+  "id": "mentor_d03eccbbe7350aeeb1f7",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4df0b8aaa979bad1a3fd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "夏珉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f16525fe468baefbd8bc",
+      "claim_ids": [
+        "claim_4df0b8aaa979bad1a3fd"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/xiamin2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无序散射介质中的光传输特性研究、基于光电探测技术的缺陷检测与高精度测量、人工智能方法在光电检测系统中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/xiamin2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2c8a84aeb7c73799ccde"
+      ],
+      "ended_at": null,
+      "id": "aff_50d517476ad658d08bec",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/WANGZHIWEI/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2c8a84aeb7c73799ccde"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_50d517476ad658d08bec",
+      "claim_ids": [
+        "claim_2c8a84aeb7c73799ccde"
+      ],
+      "is_primary": true,
+      "normalized_value": "zwwang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/WANGZHIWEI/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zwwang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2c8a84aeb7c73799ccde"
+    ],
+    "email": [
+      "claim_2c8a84aeb7c73799ccde"
+    ],
+    "name": [
+      "claim_2c8a84aeb7c73799ccde"
+    ],
+    "profile_url": [
+      "claim_2c8a84aeb7c73799ccde"
+    ],
+    "research_directions": [
+      "claim_2c8a84aeb7c73799ccde"
+    ],
+    "status": [
+      "claim_2c8a84aeb7c73799ccde"
+    ],
+    "title": [
+      "claim_2c8a84aeb7c73799ccde"
+    ]
+  },
+  "id": "mentor_2268e93abc90f61c8627",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2c8a84aeb7c73799ccde"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王植炜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_50d517476ad658d08bec",
+      "claim_ids": [
+        "claim_2c8a84aeb7c73799ccde"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/WANGZHIWEI/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医学图像分析、深度学习、计算机视觉,主要工作包括癌症检测分级、医学图像合成、血管分割分离、图像匹配"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/WANGZHIWEI/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

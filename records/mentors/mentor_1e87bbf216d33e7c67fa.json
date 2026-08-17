@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1bd4e59e67046cb6d858"
+      ],
+      "ended_at": null,
+      "id": "aff_42b31c14d09c3ece233f",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/dainengli/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_1bd4e59e67046cb6d858"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42b31c14d09c3ece233f",
+      "claim_ids": [
+        "claim_1bd4e59e67046cb6d858"
+      ],
+      "is_primary": true,
+      "normalized_value": "dainl@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/dainengli/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dainl@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1bd4e59e67046cb6d858"
+    ],
+    "email": [
+      "claim_1bd4e59e67046cb6d858"
+    ],
+    "name": [
+      "claim_1bd4e59e67046cb6d858"
+    ],
+    "profile_url": [
+      "claim_1bd4e59e67046cb6d858"
+    ],
+    "research_directions": [
+      "claim_1bd4e59e67046cb6d858"
+    ],
+    "status": [
+      "claim_1bd4e59e67046cb6d858"
+    ],
+    "title": [
+      "claim_1bd4e59e67046cb6d858"
+    ]
+  },
+  "id": "mentor_1e87bbf216d33e7c67fa",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1bd4e59e67046cb6d858"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "戴能利"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42b31c14d09c3ece233f",
+      "claim_ids": [
+        "claim_1bd4e59e67046cb6d858"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/dainengli/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光学测试技术、新型光纤材料、光纤激光技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/dainengli/zh_CN/index.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3caa99c88e3b6c439cb5"
+      ],
+      "ended_at": null,
+      "id": "aff_f0355001a29676f7569f",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/guoweihua/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3caa99c88e3b6c439cb5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f0355001a29676f7569f",
+      "claim_ids": [
+        "claim_3caa99c88e3b6c439cb5"
+      ],
+      "is_primary": true,
+      "normalized_value": "guow@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/guoweihua/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guow@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3caa99c88e3b6c439cb5"
+    ],
+    "email": [
+      "claim_3caa99c88e3b6c439cb5"
+    ],
+    "name": [
+      "claim_3caa99c88e3b6c439cb5"
+    ],
+    "profile_url": [
+      "claim_3caa99c88e3b6c439cb5"
+    ],
+    "research_directions": [
+      "claim_3caa99c88e3b6c439cb5"
+    ],
+    "status": [
+      "claim_3caa99c88e3b6c439cb5"
+    ],
+    "title": [
+      "claim_3caa99c88e3b6c439cb5"
+    ]
+  },
+  "id": "mentor_9b1dd4361471c8124cf5",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3caa99c88e3b6c439cb5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "国伟华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f0355001a29676f7569f",
+      "claim_ids": [
+        "claim_3caa99c88e3b6c439cb5"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/guoweihua/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型半导体光电子器件尤其是光子集成器件,包括大范围可调谐激光器、高速直调DFB激光器、高速马赫曾德调制器、高速面发射激光器、相干光接收器、光频梳、激光雷达等,具体研究方向包括用于激光雷达的光电集成芯片、单片集成的相干光接收器、高品质因子光学微腔及其在非线性光学方面的应用、高速马赫曾德调制器、低功耗的高速直调面发射激光器、高速直调分布反馈激光器、大范围可调谐激光器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/guoweihua/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

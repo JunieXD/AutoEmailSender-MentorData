@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e81c6503c6313da4bd5c"
+      ],
+      "ended_at": null,
+      "id": "aff_291fcb53040a6fda0fc6",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/hubin6/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e81c6503c6313da4bd5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_291fcb53040a6fda0fc6",
+      "claim_ids": [
+        "claim_e81c6503c6313da4bd5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "bin.hu@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/hubin6/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bin.hu@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e81c6503c6313da4bd5c"
+    ],
+    "email": [
+      "claim_e81c6503c6313da4bd5c"
+    ],
+    "name": [
+      "claim_e81c6503c6313da4bd5c"
+    ],
+    "profile_url": [
+      "claim_e81c6503c6313da4bd5c"
+    ],
+    "recent_papers": [
+      "claim_e81c6503c6313da4bd5c"
+    ],
+    "research_directions": [
+      "claim_e81c6503c6313da4bd5c"
+    ],
+    "status": [
+      "claim_e81c6503c6313da4bd5c"
+    ],
+    "title": [
+      "claim_e81c6503c6313da4bd5c"
+    ]
+  },
+  "id": "mentor_83ceeaad1514ec31b483",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e81c6503c6313da4bd5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡彬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_291fcb53040a6fda0fc6",
+      "claim_ids": [
+        "claim_e81c6503c6313da4bd5c"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/hubin6/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Transparent ultrahigh-molecular-weight polyethylene/MXene films with efficient UV-absorption for thermal management. Nature Communications, 2024",
+    "Organic Ligand-Free Scalable Dual-Band Electrochromic Smart Windows. Advanced Functional Materials, 2024",
+    "Spectroelectrochemistry with hydrogen-doped indium oxide electrodes monitors electron and hole injection into PbS quantum dots. Nanoscale, 2025",
+    "Radiative Warming Glass for High-Latitude Cold Regions. Advanced Science",
+    "Cryo-Transferred Ultrathin and Stretchable Epidermal Electrodes. SMALL",
+    "A bio-inspired cilia array as the dielectric layer for flexible capacitive pressure sensors with high sensitivity and a broad detection range. JOURNAL OF MATERIALS CHEMISTRY A"
+  ],
+  "research_directions": [
+    "先进光能利用与管理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/hubin6/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c5aaf6712a8be0ba5eb5"
+      ],
+      "ended_at": null,
+      "id": "aff_cdbb09f7965769f953fc",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_3c5550a51b34133dd5c5",
+      "source_url": "http://faculty.hust.edu.cn/wangtao",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c5aaf6712a8be0ba5eb5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cdbb09f7965769f953fc",
+      "claim_ids": [
+        "claim_c5aaf6712a8be0ba5eb5"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangtao@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/wangtao",
+      "status": "current",
+      "type": "email",
+      "value": "wangtao@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c5aaf6712a8be0ba5eb5"
+    ],
+    "email": [
+      "claim_c5aaf6712a8be0ba5eb5"
+    ],
+    "name": [
+      "claim_c5aaf6712a8be0ba5eb5"
+    ],
+    "profile_url": [
+      "claim_c5aaf6712a8be0ba5eb5"
+    ],
+    "research_directions": [
+      "claim_c5aaf6712a8be0ba5eb5"
+    ],
+    "status": [
+      "claim_c5aaf6712a8be0ba5eb5"
+    ],
+    "title": [
+      "claim_c5aaf6712a8be0ba5eb5"
+    ]
+  },
+  "id": "mentor_73209c4be0c71d49b28e",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c5aaf6712a8be0ba5eb5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cdbb09f7965769f953fc",
+      "claim_ids": [
+        "claim_c5aaf6712a8be0ba5eb5"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wangtao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超材料与其器件性能研究、超材料的制备",
+    "等离激元生物化学分子传感芯片及传感器研究",
+    "高功率工业加工气体激光器,半导体激光器研制、测试与封装",
+    "光电子材料与器件研究,包括低维光电子研究、全光逻辑器件、单片集成电光开关以及全光开关、光子晶体器件研究",
+    "超材料研究及其生物传感应用",
+    "光电子器件及集成在光通信方面的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/wangtao",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

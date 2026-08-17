@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_286cdb45ed224a9c39f4"
+      ],
+      "ended_at": null,
+      "id": "aff_1c3f79e6d842db7393b2",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/wanglei11/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_286cdb45ed224a9c39f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1c3f79e6d842db7393b2",
+      "claim_ids": [
+        "claim_286cdb45ed224a9c39f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanglei@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/wanglei11/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wanglei@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_286cdb45ed224a9c39f4"
+    ],
+    "email": [
+      "claim_286cdb45ed224a9c39f4"
+    ],
+    "name": [
+      "claim_286cdb45ed224a9c39f4"
+    ],
+    "profile_url": [
+      "claim_286cdb45ed224a9c39f4"
+    ],
+    "research_directions": [
+      "claim_286cdb45ed224a9c39f4"
+    ],
+    "status": [
+      "claim_286cdb45ed224a9c39f4"
+    ],
+    "title": [
+      "claim_286cdb45ed224a9c39f4"
+    ]
+  },
+  "id": "mentor_c7bd5c3e02ee1e1794ff",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_286cdb45ed224a9c39f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1c3f79e6d842db7393b2",
+      "claim_ids": [
+        "claim_286cdb45ed224a9c39f4"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wanglei11/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "钙钛矿发光材料与器件、OLED发光材料与器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/wanglei11/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

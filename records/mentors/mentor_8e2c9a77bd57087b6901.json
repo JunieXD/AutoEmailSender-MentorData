@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8f690c4e7e13a2aec224"
+      ],
+      "ended_at": null,
+      "id": "aff_690d1e6832640320d2ca",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/liqiang15/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8f690c4e7e13a2aec224"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_690d1e6832640320d2ca",
+      "claim_ids": [
+        "claim_8f690c4e7e13a2aec224"
+      ],
+      "is_primary": true,
+      "normalized_value": "liqiang8@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/liqiang15/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liqiang8@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8f690c4e7e13a2aec224"
+    ],
+    "email": [
+      "claim_8f690c4e7e13a2aec224"
+    ],
+    "name": [
+      "claim_8f690c4e7e13a2aec224"
+    ],
+    "profile_url": [
+      "claim_8f690c4e7e13a2aec224"
+    ],
+    "research_directions": [
+      "claim_8f690c4e7e13a2aec224"
+    ],
+    "status": [
+      "claim_8f690c4e7e13a2aec224"
+    ],
+    "title": [
+      "claim_8f690c4e7e13a2aec224"
+    ]
+  },
+  "id": "mentor_8e2c9a77bd57087b6901",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8f690c4e7e13a2aec224"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_690d1e6832640320d2ca",
+      "claim_ids": [
+        "claim_8f690c4e7e13a2aec224"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/liqiang15/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医学人工智能、医学图像处理与分析、计算机辅助诊断(CAD)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/liqiang15/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

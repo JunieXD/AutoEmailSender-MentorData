@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7ff057f932f84318325e"
+      ],
+      "ended_at": null,
+      "id": "aff_f7dd5c4b55b0cca993b3",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/chenjianwei2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7ff057f932f84318325e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f7dd5c4b55b0cca993b3",
+      "claim_ids": [
+        "claim_7ff057f932f84318325e"
+      ],
+      "is_primary": true,
+      "normalized_value": "jchen1@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/chenjianwei2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jchen1@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7ff057f932f84318325e"
+    ],
+    "email": [
+      "claim_7ff057f932f84318325e"
+    ],
+    "name": [
+      "claim_7ff057f932f84318325e"
+    ],
+    "profile_url": [
+      "claim_7ff057f932f84318325e"
+    ],
+    "research_directions": [
+      "claim_7ff057f932f84318325e"
+    ],
+    "status": [
+      "claim_7ff057f932f84318325e"
+    ],
+    "title": [
+      "claim_7ff057f932f84318325e"
+    ]
+  },
+  "id": "mentor_e1bf907e1c850a23c341",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7ff057f932f84318325e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈键伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f7dd5c4b55b0cca993b3",
+      "claim_ids": [
+        "claim_7ff057f932f84318325e"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/chenjianwei2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "全脑光学成像技术、精密仪器及设备"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/chenjianwei2/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

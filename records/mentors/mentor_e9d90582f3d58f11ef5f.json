@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_409d161a1eb04f03296f"
+      ],
+      "ended_at": null,
+      "id": "aff_ddce46ccd72ba7f40bc3",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/yangkecheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_409d161a1eb04f03296f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ddce46ccd72ba7f40bc3",
+      "claim_ids": [
+        "claim_409d161a1eb04f03296f"
+      ],
+      "is_primary": true,
+      "normalized_value": "kcyang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/yangkecheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kcyang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_409d161a1eb04f03296f"
+    ],
+    "email": [
+      "claim_409d161a1eb04f03296f"
+    ],
+    "name": [
+      "claim_409d161a1eb04f03296f"
+    ],
+    "profile_url": [
+      "claim_409d161a1eb04f03296f"
+    ],
+    "research_directions": [
+      "claim_409d161a1eb04f03296f"
+    ],
+    "status": [
+      "claim_409d161a1eb04f03296f"
+    ],
+    "title": [
+      "claim_409d161a1eb04f03296f"
+    ]
+  },
+  "id": "mentor_e9d90582f3d58f11ef5f",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_409d161a1eb04f03296f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨克成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ddce46ccd72ba7f40bc3",
+      "claim_ids": [
+        "claim_409d161a1eb04f03296f"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yangkecheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "海洋领域的光电检测系统研发、物体三维尺寸和形貌综合测量、激光雷达技术、光电信号检测、水下目标远程感知、海洋光学参量测量"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yangkecheng/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

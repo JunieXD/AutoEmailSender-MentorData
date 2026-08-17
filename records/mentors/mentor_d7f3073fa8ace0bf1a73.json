@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b67aaef22eab0b29227d"
+      ],
+      "ended_at": null,
+      "id": "aff_f984d7ea3ef32b944d58",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/lvwenzhong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b67aaef22eab0b29227d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f984d7ea3ef32b944d58",
+      "claim_ids": [
+        "claim_b67aaef22eab0b29227d"
+      ],
+      "is_primary": true,
+      "normalized_value": "lwz@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/lvwenzhong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lwz@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b67aaef22eab0b29227d"
+    ],
+    "email": [
+      "claim_b67aaef22eab0b29227d"
+    ],
+    "name": [
+      "claim_b67aaef22eab0b29227d"
+    ],
+    "profile_url": [
+      "claim_b67aaef22eab0b29227d"
+    ],
+    "status": [
+      "claim_b67aaef22eab0b29227d"
+    ],
+    "title": [
+      "claim_b67aaef22eab0b29227d"
+    ]
+  },
+  "id": "mentor_d7f3073fa8ace0bf1a73",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b67aaef22eab0b29227d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕文中"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f984d7ea3ef32b944d58",
+      "claim_ids": [
+        "claim_b67aaef22eab0b29227d"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/lvwenzhong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/lvwenzhong/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

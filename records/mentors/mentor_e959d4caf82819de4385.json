@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_953332b54ae37bfc3665"
+      ],
+      "ended_at": null,
+      "id": "aff_36a0cbad19e55ffad5f8",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_67e83eb30ffe6d228215",
+      "source_url": "http://faculty.hust.edu.cn/guolianbo/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_953332b54ae37bfc3665"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_36a0cbad19e55ffad5f8",
+      "claim_ids": [
+        "claim_953332b54ae37bfc3665"
+      ],
+      "is_primary": true,
+      "normalized_value": "lbguo@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/guolianbo/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lbguo@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_953332b54ae37bfc3665"
+    ],
+    "email": [
+      "claim_953332b54ae37bfc3665"
+    ],
+    "name": [
+      "claim_953332b54ae37bfc3665"
+    ],
+    "profile_url": [
+      "claim_953332b54ae37bfc3665"
+    ],
+    "research_directions": [
+      "claim_953332b54ae37bfc3665"
+    ],
+    "status": [
+      "claim_953332b54ae37bfc3665"
+    ],
+    "title": [
+      "claim_953332b54ae37bfc3665"
+    ]
+  },
+  "id": "mentor_e959d4caf82819de4385",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_953332b54ae37bfc3665"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭连波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_36a0cbad19e55ffad5f8",
+      "claim_ids": [
+        "claim_953332b54ae37bfc3665"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/guolianbo/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态信息融合智能感知、工业软件、激光光谱智能探测、脑机接口"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/guolianbo/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

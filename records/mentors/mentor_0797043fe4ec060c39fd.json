@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cb4873260b0ca508eed6"
+      ],
+      "ended_at": null,
+      "id": "aff_7a1fb13929a728161a60",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/wangxiaochuan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cb4873260b0ca508eed6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7a1fb13929a728161a60",
+      "claim_ids": [
+        "claim_cb4873260b0ca508eed6"
+      ],
+      "is_primary": true,
+      "normalized_value": "wxc@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/wangxiaochuan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wxc@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cb4873260b0ca508eed6"
+    ],
+    "email": [
+      "claim_cb4873260b0ca508eed6"
+    ],
+    "name": [
+      "claim_cb4873260b0ca508eed6"
+    ],
+    "profile_url": [
+      "claim_cb4873260b0ca508eed6"
+    ],
+    "research_directions": [
+      "claim_cb4873260b0ca508eed6"
+    ],
+    "status": [
+      "claim_cb4873260b0ca508eed6"
+    ],
+    "title": [
+      "claim_cb4873260b0ca508eed6"
+    ]
+  },
+  "id": "mentor_0797043fe4ec060c39fd",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cb4873260b0ca508eed6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晓川"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7a1fb13929a728161a60",
+      "claim_ids": [
+        "claim_cb4873260b0ca508eed6"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/wangxiaochuan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微波毫米波天线及其阵列设计、电大尺寸复杂结构RCS计算及隐身设计、电磁兼容设计与仿真、压敏元件与高电压设备仿真设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/wangxiaochuan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

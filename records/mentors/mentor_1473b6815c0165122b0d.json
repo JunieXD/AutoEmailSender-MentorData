@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d79a011f1443e267815a"
+      ],
+      "ended_at": null,
+      "id": "aff_5d875b4955e64dea5cd7",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/chenwei123/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d79a011f1443e267815a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5d875b4955e64dea5cd7",
+      "claim_ids": [
+        "claim_d79a011f1443e267815a"
+      ],
+      "is_primary": true,
+      "normalized_value": "w.chen@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/chenwei123/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "w.chen@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d79a011f1443e267815a"
+    ],
+    "email": [
+      "claim_d79a011f1443e267815a"
+    ],
+    "name": [
+      "claim_d79a011f1443e267815a"
+    ],
+    "profile_url": [
+      "claim_d79a011f1443e267815a"
+    ],
+    "research_directions": [
+      "claim_d79a011f1443e267815a"
+    ],
+    "status": [
+      "claim_d79a011f1443e267815a"
+    ],
+    "title": [
+      "claim_d79a011f1443e267815a"
+    ]
+  },
+  "id": "mentor_1473b6815c0165122b0d",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d79a011f1443e267815a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈巍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5d875b4955e64dea5cd7",
+      "claim_ids": [
+        "claim_d79a011f1443e267815a"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/chenwei123/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光学探针与成像分析",
+    "基于特异性化学反应的小分子光学探针与生物成像",
+    "光学性质可调控的新型近红外荧光染料与生物成像",
+    "生物体内与疾病相关的活性物质的调控与生物成像"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/chenwei123/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

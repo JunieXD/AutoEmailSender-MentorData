@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_882a29baeb47e2b54090"
+      ],
+      "ended_at": null,
+      "id": "aff_75cc5121aef3eb0651e9",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/zhangzhaowei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_882a29baeb47e2b54090"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_75cc5121aef3eb0651e9",
+      "claim_ids": [
+        "claim_882a29baeb47e2b54090"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangzhaowei@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/zhangzhaowei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangzhaowei@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_882a29baeb47e2b54090"
+    ],
+    "email": [
+      "claim_882a29baeb47e2b54090"
+    ],
+    "name": [
+      "claim_882a29baeb47e2b54090"
+    ],
+    "profile_url": [
+      "claim_882a29baeb47e2b54090"
+    ],
+    "research_directions": [
+      "claim_882a29baeb47e2b54090"
+    ],
+    "status": [
+      "claim_882a29baeb47e2b54090"
+    ],
+    "title": [
+      "claim_882a29baeb47e2b54090"
+    ]
+  },
+  "id": "mentor_24ef739025f2902dae81",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_882a29baeb47e2b54090"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张兆伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_75cc5121aef3eb0651e9",
+      "claim_ids": [
+        "claim_882a29baeb47e2b54090"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zhangzhaowei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光学参量振荡器、固体光纤激光器、可调谐飞秒/皮秒激光器及生物医学成像应用、可调谐中红外激光及在光谱检测等领域的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/zhangzhaowei/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

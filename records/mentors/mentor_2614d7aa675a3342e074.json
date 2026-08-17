@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5ab9fbea0d6b63fb895d"
+      ],
+      "ended_at": null,
+      "id": "aff_877f5a04127653681432",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/DENGSUNBIN/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5ab9fbea0d6b63fb895d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_877f5a04127653681432",
+      "claim_ids": [
+        "claim_5ab9fbea0d6b63fb895d"
+      ],
+      "is_primary": true,
+      "normalized_value": "sdeng@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/DENGSUNBIN/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sdeng@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ],
+    "email": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ],
+    "name": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ],
+    "profile_url": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ],
+    "recent_papers": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ],
+    "research_directions": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ],
+    "status": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ],
+    "title": [
+      "claim_5ab9fbea0d6b63fb895d"
+    ]
+  },
+  "id": "mentor_2614d7aa675a3342e074",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5ab9fbea0d6b63fb895d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓孙斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_877f5a04127653681432",
+      "claim_ids": [
+        "claim_5ab9fbea0d6b63fb895d"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/DENGSUNBIN/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "FAB Gain Cell Memory: A Folded Asymmetric Boosted Design to Improve Sense Margin for a Refresh-Free Operation",
+    "Asymmetric Underlap-Overlap 2T Gain Cell Enabling Voltage-Sensing Readout with Minimized Capacitive Coupling",
+    "High-Efficiency BEOL-Compatible On-Chip Switched Capacitor DC-DC Converter Using Planar and Vertical Oxide Transistors with Trench Capacitors",
+    "Demonstration of 3T0C Gain Cells with Self-Aligned Oxide Transistors for Parasitic-Aware Design at Array-level",
+    "Backside Active Power Delivery with Hybrid DC-DC Converter Enabled by Amorphous Oxide Semiconductor Transistors",
+    "Machine Learning-Assistaed Compact Modeling of AC Stress-Induced Bias Temperature Instability in Top- and Bottom-Gate W-Doped In2O3 Channel Semiconductor Transistors"
+  ],
+  "research_directions": [
+    "单片三维集成电路、光电融合智能芯片、先进光电子封装"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/DENGSUNBIN/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

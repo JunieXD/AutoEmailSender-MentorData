@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9321e270e5afc0cdfdf2"
+      ],
+      "ended_at": null,
+      "id": "aff_8ae1224bc840a57694e0",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/xiongwei2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9321e270e5afc0cdfdf2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8ae1224bc840a57694e0",
+      "claim_ids": [
+        "claim_9321e270e5afc0cdfdf2"
+      ],
+      "is_primary": true,
+      "normalized_value": "weixiong@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/xiongwei2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weixiong@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9321e270e5afc0cdfdf2"
+    ],
+    "email": [
+      "claim_9321e270e5afc0cdfdf2"
+    ],
+    "name": [
+      "claim_9321e270e5afc0cdfdf2"
+    ],
+    "profile_url": [
+      "claim_9321e270e5afc0cdfdf2"
+    ],
+    "research_directions": [
+      "claim_9321e270e5afc0cdfdf2"
+    ],
+    "status": [
+      "claim_9321e270e5afc0cdfdf2"
+    ],
+    "title": [
+      "claim_9321e270e5afc0cdfdf2"
+    ]
+  },
+  "id": "mentor_2750402cb777bbc24c53",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9321e270e5afc0cdfdf2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "熊伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8ae1224bc840a57694e0",
+      "claim_ids": [
+        "claim_9321e270e5afc0cdfdf2"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/xiongwei2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "激光微纳3D/4D打印、激光诱导纳米材料生长与组装、超快激光光谱与成像、激光与物质相互作用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/xiongwei2/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

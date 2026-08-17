@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7e9be018a37257fc1c9"
+      ],
+      "ended_at": null,
+      "id": "aff_08af97a694810838c665",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/ZhangCheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7e9be018a37257fc1c9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_08af97a694810838c665",
+      "claim_ids": [
+        "claim_d7e9be018a37257fc1c9"
+      ],
+      "is_primary": true,
+      "normalized_value": "cheng.zhang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/ZhangCheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cheng.zhang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7e9be018a37257fc1c9"
+    ],
+    "email": [
+      "claim_d7e9be018a37257fc1c9"
+    ],
+    "name": [
+      "claim_d7e9be018a37257fc1c9"
+    ],
+    "profile_url": [
+      "claim_d7e9be018a37257fc1c9"
+    ],
+    "research_directions": [
+      "claim_d7e9be018a37257fc1c9"
+    ],
+    "status": [
+      "claim_d7e9be018a37257fc1c9"
+    ],
+    "title": [
+      "claim_d7e9be018a37257fc1c9"
+    ]
+  },
+  "id": "mentor_61fde91f0707835831ee",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7e9be018a37257fc1c9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张诚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_08af97a694810838c665",
+      "claim_ids": [
+        "claim_d7e9be018a37257fc1c9"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/ZhangCheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超构表面 & 超构材料、微纳加工制备、微纳光子学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/ZhangCheng/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

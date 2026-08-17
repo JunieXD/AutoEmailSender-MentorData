@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_68caed6e6c39a4192ea2"
+      ],
+      "ended_at": null,
+      "id": "aff_d0d29f1ed7f8da09d802",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/yanzhijun/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_68caed6e6c39a4192ea2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d0d29f1ed7f8da09d802",
+      "claim_ids": [
+        "claim_68caed6e6c39a4192ea2"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanzhijun@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/yanzhijun/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanzhijun@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_68caed6e6c39a4192ea2"
+    ],
+    "email": [
+      "claim_68caed6e6c39a4192ea2"
+    ],
+    "name": [
+      "claim_68caed6e6c39a4192ea2"
+    ],
+    "profile_url": [
+      "claim_68caed6e6c39a4192ea2"
+    ],
+    "research_directions": [
+      "claim_68caed6e6c39a4192ea2"
+    ],
+    "status": [
+      "claim_68caed6e6c39a4192ea2"
+    ],
+    "title": [
+      "claim_68caed6e6c39a4192ea2"
+    ]
+  },
+  "id": "mentor_feab001625058d3bdf95",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_68caed6e6c39a4192ea2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫志君"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d0d29f1ed7f8da09d802",
+      "claim_ids": [
+        "claim_68caed6e6c39a4192ea2"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yanzhijun/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "特种光纤与智能感知技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yanzhijun/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

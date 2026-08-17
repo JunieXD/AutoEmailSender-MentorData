@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dee3400cfc4f87fd8f61"
+      ],
+      "ended_at": null,
+      "id": "aff_41917445be5fe8248bf4",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/yuyu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_dee3400cfc4f87fd8f61"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_41917445be5fe8248bf4",
+      "claim_ids": [
+        "claim_dee3400cfc4f87fd8f61"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuyu@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/yuyu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuyu@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dee3400cfc4f87fd8f61"
+    ],
+    "email": [
+      "claim_dee3400cfc4f87fd8f61"
+    ],
+    "name": [
+      "claim_dee3400cfc4f87fd8f61"
+    ],
+    "profile_url": [
+      "claim_dee3400cfc4f87fd8f61"
+    ],
+    "research_directions": [
+      "claim_dee3400cfc4f87fd8f61"
+    ],
+    "status": [
+      "claim_dee3400cfc4f87fd8f61"
+    ],
+    "title": [
+      "claim_dee3400cfc4f87fd8f61"
+    ]
+  },
+  "id": "mentor_1883f883b6761ba43cc6",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dee3400cfc4f87fd8f61"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "余宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_41917445be5fe8248bf4",
+      "claim_ids": [
+        "claim_dee3400cfc4f87fd8f61"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yuyu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光通信、光电子集成器件、光信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yuyu/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

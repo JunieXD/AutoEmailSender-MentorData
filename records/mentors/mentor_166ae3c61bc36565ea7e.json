@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b532419555a4671da4f5"
+      ],
+      "ended_at": null,
+      "id": "aff_e0ec370e1910d9eec2a6",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/zhuxiao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b532419555a4671da4f5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e0ec370e1910d9eec2a6",
+      "claim_ids": [
+        "claim_b532419555a4671da4f5"
+      ],
+      "is_primary": true,
+      "normalized_value": "zx@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/zhuxiao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zx@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b532419555a4671da4f5"
+    ],
+    "email": [
+      "claim_b532419555a4671da4f5"
+    ],
+    "name": [
+      "claim_b532419555a4671da4f5"
+    ],
+    "profile_url": [
+      "claim_b532419555a4671da4f5"
+    ],
+    "research_directions": [
+      "claim_b532419555a4671da4f5"
+    ],
+    "status": [
+      "claim_b532419555a4671da4f5"
+    ],
+    "title": [
+      "claim_b532419555a4671da4f5"
+    ]
+  },
+  "id": "mentor_166ae3c61bc36565ea7e",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b532419555a4671da4f5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱晓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e0ec370e1910d9eec2a6",
+      "claim_ids": [
+        "claim_b532419555a4671da4f5"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zhuxiao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "碟片激光器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/zhuxiao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4233f48f0497ea008dd6"
+      ],
+      "ended_at": null,
+      "id": "aff_f24e12ddd249dbf81c3e",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/liubinbing/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_4233f48f0497ea008dd6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f24e12ddd249dbf81c3e",
+      "claim_ids": [
+        "claim_4233f48f0497ea008dd6"
+      ],
+      "is_primary": true,
+      "normalized_value": "493926212@qq.com",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/liubinbing/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "493926212@qq.com"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4233f48f0497ea008dd6"
+    ],
+    "email": [
+      "claim_4233f48f0497ea008dd6"
+    ],
+    "name": [
+      "claim_4233f48f0497ea008dd6"
+    ],
+    "profile_url": [
+      "claim_4233f48f0497ea008dd6"
+    ],
+    "recent_papers": [
+      "claim_4233f48f0497ea008dd6"
+    ],
+    "research_directions": [
+      "claim_4233f48f0497ea008dd6"
+    ],
+    "status": [
+      "claim_4233f48f0497ea008dd6"
+    ]
+  },
+  "id": "mentor_06399066edaf184b9831",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4233f48f0497ea008dd6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘斌昺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f24e12ddd249dbf81c3e",
+      "claim_ids": [
+        "claim_4233f48f0497ea008dd6"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/liubinbing/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Self-supervised next view prediction for limited-angle optical projection tomography.Biomedical Optics Express,",
+    "DDNSR: a dual-input degradation network for real-world super-resolution.Pattern Analysis and Applications,",
+    "Optical projection tomography reconstruction with few views using highly-generalizable deep learning at sinogram domain.Biomedical Optics Express,",
+    "Semantic redundancy-aware implicit neural compression for multidimensional biomedical image data.Communications Biology,"
+  ],
+  "research_directions": [
+    "计算成像、深度学习与图像处理,利用深度学习方法解决成像过程中的逆问题"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/liubinbing/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-17T10:21:18Z"
+}

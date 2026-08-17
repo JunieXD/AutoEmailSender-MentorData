@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3518c71359d99a6d4624"
+      ],
+      "ended_at": null,
+      "id": "aff_5db2f725ff737a196068",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/ZHOUYIYU/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3518c71359d99a6d4624"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5db2f725ff737a196068",
+      "claim_ids": [
+        "claim_3518c71359d99a6d4624"
+      ],
+      "is_primary": true,
+      "normalized_value": "yiyu_zhou@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/ZHOUYIYU/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yiyu_zhou@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3518c71359d99a6d4624"
+    ],
+    "email": [
+      "claim_3518c71359d99a6d4624"
+    ],
+    "name": [
+      "claim_3518c71359d99a6d4624"
+    ],
+    "profile_url": [
+      "claim_3518c71359d99a6d4624"
+    ],
+    "recent_papers": [
+      "claim_3518c71359d99a6d4624"
+    ],
+    "research_directions": [
+      "claim_3518c71359d99a6d4624"
+    ],
+    "status": [
+      "claim_3518c71359d99a6d4624"
+    ],
+    "title": [
+      "claim_3518c71359d99a6d4624"
+    ]
+  },
+  "id": "mentor_4822f6492ac9830131c1",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3518c71359d99a6d4624"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周宜雨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5db2f725ff737a196068",
+      "claim_ids": [
+        "claim_3518c71359d99a6d4624"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/ZHOUYIYU/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yiyu Zhou, et. al.,A 1-km photonic link connecting superconducting circuits in two dilution refrigerators.Nature Photonics,2026,",
+    "Risheng Cheng#, Yiyu Zhou#, et al.,A 100-pixel photon-number-resolving detector unveiling photon statistics.Nature Photonics,2022,112-119",
+    "F. Yang, J. Xie, Yiyu Zhou, et. al.,Degeneracy-locked optical parametric oscillator.Nature Photonics,2026,",
+    "Yiyu Zhou, et al.,Broadband frequency translation through time refraction in an epsilon-near-zero material.Nature Communications,2020,2180",
+    "Yiyu Zhou, et al.,High-fidelity spatial mode transmission through a 1-km-long multimode fiber via vectorial time reversal.Nature Communications,2021,1866",
+    "Yiyu Zhou, et al.,Direct tomography of high-dimensional density matrices for general quantum states of photons.Phys. Rev. Lett.,2021,040402"
+  ],
+  "research_directions": [
+    "多模光纤模分复用、相位共轭、非线性频率转换、集成非线性光学、电光频率转换、片上超导单光子探测器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/ZHOUYIYU/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

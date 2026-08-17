@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_96e67e2254678847a81a"
+      ],
+      "ended_at": null,
+      "id": "aff_5a23e83b0e465e720933",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/Zhengshuang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_96e67e2254678847a81a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5a23e83b0e465e720933",
+      "claim_ids": [
+        "claim_96e67e2254678847a81a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zshust@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/Zhengshuang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zshust@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_96e67e2254678847a81a"
+    ],
+    "email": [
+      "claim_96e67e2254678847a81a"
+    ],
+    "name": [
+      "claim_96e67e2254678847a81a"
+    ],
+    "profile_url": [
+      "claim_96e67e2254678847a81a"
+    ],
+    "research_directions": [
+      "claim_96e67e2254678847a81a"
+    ],
+    "status": [
+      "claim_96e67e2254678847a81a"
+    ],
+    "title": [
+      "claim_96e67e2254678847a81a"
+    ]
+  },
+  "id": "mentor_0446b21f6db9ac59de3f",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_96e67e2254678847a81a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑爽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5a23e83b0e465e720933",
+      "claim_ids": [
+        "claim_96e67e2254678847a81a"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/Zhengshuang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向算力互连的高速光电子器件(光互连、光计算、光场调控)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/Zhengshuang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

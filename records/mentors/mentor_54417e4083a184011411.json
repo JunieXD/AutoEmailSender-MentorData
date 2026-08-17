@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_357e6a68798c2b2a3ac4"
+      ],
+      "ended_at": null,
+      "id": "aff_5c8e311636368143c0c6",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/zhangminming/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_357e6a68798c2b2a3ac4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5c8e311636368143c0c6",
+      "claim_ids": [
+        "claim_357e6a68798c2b2a3ac4"
+      ],
+      "is_primary": true,
+      "normalized_value": "mmz@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/zhangminming/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mmz@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_357e6a68798c2b2a3ac4"
+    ],
+    "email": [
+      "claim_357e6a68798c2b2a3ac4"
+    ],
+    "name": [
+      "claim_357e6a68798c2b2a3ac4"
+    ],
+    "profile_url": [
+      "claim_357e6a68798c2b2a3ac4"
+    ],
+    "research_directions": [
+      "claim_357e6a68798c2b2a3ac4"
+    ],
+    "status": [
+      "claim_357e6a68798c2b2a3ac4"
+    ],
+    "title": [
+      "claim_357e6a68798c2b2a3ac4"
+    ]
+  },
+  "id": "mentor_54417e4083a184011411",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_357e6a68798c2b2a3ac4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张敏明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5c8e311636368143c0c6",
+      "claim_ids": [
+        "claim_357e6a68798c2b2a3ac4"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zhangminming/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "芯片级光互连器件与集成技术、硅基超材料/超表面光子器件与智能化设计、高速半导体激光器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/zhangminming/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

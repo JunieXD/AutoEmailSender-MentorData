@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1311604ee31e1ce1bb25"
+      ],
+      "ended_at": null,
+      "id": "aff_345185b8af366c476ca9",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/xugang12/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1311604ee31e1ce1bb25"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_345185b8af366c476ca9",
+      "claim_ids": [
+        "claim_1311604ee31e1ce1bb25"
+      ],
+      "is_primary": true,
+      "normalized_value": "gang_xu@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/xugang12/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gang_xu@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1311604ee31e1ce1bb25"
+    ],
+    "email": [
+      "claim_1311604ee31e1ce1bb25"
+    ],
+    "name": [
+      "claim_1311604ee31e1ce1bb25"
+    ],
+    "profile_url": [
+      "claim_1311604ee31e1ce1bb25"
+    ],
+    "recent_papers": [
+      "claim_1311604ee31e1ce1bb25"
+    ],
+    "research_directions": [
+      "claim_1311604ee31e1ce1bb25"
+    ],
+    "status": [
+      "claim_1311604ee31e1ce1bb25"
+    ],
+    "title": [
+      "claim_1311604ee31e1ce1bb25"
+    ]
+  },
+  "id": "mentor_86fac1d33564f23652e5",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1311604ee31e1ce1bb25"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐刚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_345185b8af366c476ca9",
+      "claim_ids": [
+        "claim_1311604ee31e1ce1bb25"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/xugang12/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Spectral dynamics of incoherent waves...",
+    "Spectral long-range interaction of te...",
+    "Generalized formulation of spectral i...",
+    "Shock wave generations triggered by a...",
+    "Breathing dynamics of symmetry-broken..."
+  ],
+  "research_directions": [
+    "非线性光学、激光物理学、超快光学、光频率梳、非线性波动力学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/xugang12/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

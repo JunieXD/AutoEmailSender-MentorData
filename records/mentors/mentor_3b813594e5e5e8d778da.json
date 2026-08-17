@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_04bf6b2c395e75d4cea8"
+      ],
+      "ended_at": null,
+      "id": "aff_e3e0edd2cb5ee4a5a71c",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/CHENGXIANG/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_04bf6b2c395e75d4cea8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e3e0edd2cb5ee4a5a71c",
+      "claim_ids": [
+        "claim_04bf6b2c395e75d4cea8"
+      ],
+      "is_primary": true,
+      "normalized_value": "cheng_xiang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/CHENGXIANG/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cheng_xiang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_04bf6b2c395e75d4cea8"
+    ],
+    "email": [
+      "claim_04bf6b2c395e75d4cea8"
+    ],
+    "name": [
+      "claim_04bf6b2c395e75d4cea8"
+    ],
+    "profile_url": [
+      "claim_04bf6b2c395e75d4cea8"
+    ],
+    "recent_papers": [
+      "claim_04bf6b2c395e75d4cea8"
+    ],
+    "research_directions": [
+      "claim_04bf6b2c395e75d4cea8"
+    ],
+    "status": [
+      "claim_04bf6b2c395e75d4cea8"
+    ],
+    "title": [
+      "claim_04bf6b2c395e75d4cea8"
+    ]
+  },
+  "id": "mentor_3b813594e5e5e8d778da",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_04bf6b2c395e75d4cea8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程祥"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e3e0edd2cb5ee4a5a71c",
+      "claim_ids": [
+        "claim_04bf6b2c395e75d4cea8"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/CHENGXIANG/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "A chip-scale polarization-spatial-momentum quantum SWAP gate in silicon nanophotonics, Nature Photonics 17, 656–665 (2023).",
+    "High-dimensional time-frequency entanglement in a singly-filtered biphoton frequency comb, Communications Physics 6, 278 (2023).",
+    "648 Hilbert-space dimensionality in a biphoton frequency comb: entanglement of formation and Schmidt mode decomposition, npj Quantum Information 7, 48 (2021).",
+    "Towards optimum Franson interference recurrence in mode locked singly-filtered biphoton frequency combs, Photonics Research 11, 1175-1184 (2023).",
+    "Large-alphabet time-bin quantum key distribution and Einstein-Podolsky-Rosen steering via dispersive optics, Quantum Science and Technology, 9, 015018 (2023)."
+  ],
+  "research_directions": [
+    "高维光量子信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/CHENGXIANG/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

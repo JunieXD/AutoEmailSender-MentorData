@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_27fafd1bda7462b320d3"
+      ],
+      "ended_at": null,
+      "id": "aff_0b4344715222c3d83a54",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_3c5550a51b34133dd5c5",
+      "source_url": "http://faculty.hust.edu.cn/zengjinwei",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_27fafd1bda7462b320d3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0b4344715222c3d83a54",
+      "claim_ids": [
+        "claim_27fafd1bda7462b320d3"
+      ],
+      "is_primary": true,
+      "normalized_value": "zengjinwei@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/zengjinwei",
+      "status": "current",
+      "type": "email",
+      "value": "zengjinwei@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_27fafd1bda7462b320d3"
+    ],
+    "email": [
+      "claim_27fafd1bda7462b320d3"
+    ],
+    "name": [
+      "claim_27fafd1bda7462b320d3"
+    ],
+    "profile_url": [
+      "claim_27fafd1bda7462b320d3"
+    ],
+    "research_directions": [
+      "claim_27fafd1bda7462b320d3"
+    ],
+    "status": [
+      "claim_27fafd1bda7462b320d3"
+    ]
+  },
+  "id": "mentor_27ed779d3aa591e7cdd4",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_27fafd1bda7462b320d3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曾进炜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0b4344715222c3d83a54",
+      "claim_ids": [
+        "claim_27fafd1bda7462b320d3"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/zengjinwei"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "Nanophotonics, Structured Light, Metamaterials/Metasurfaces, Photo-induced Force Microscopy"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/zengjinwei",
+  "title": null,
+  "updated_at": "2026-08-17T10:21:18Z"
+}

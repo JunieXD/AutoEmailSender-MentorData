@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4a29e0efc47428634a71"
+      ],
+      "ended_at": null,
+      "id": "aff_56a6b4ace95056edfad9",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/yuanjing0/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4a29e0efc47428634a71"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_56a6b4ace95056edfad9",
+      "claim_ids": [
+        "claim_4a29e0efc47428634a71"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanj@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/yuanjing0/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuanj@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4a29e0efc47428634a71"
+    ],
+    "email": [
+      "claim_4a29e0efc47428634a71"
+    ],
+    "name": [
+      "claim_4a29e0efc47428634a71"
+    ],
+    "profile_url": [
+      "claim_4a29e0efc47428634a71"
+    ],
+    "research_directions": [
+      "claim_4a29e0efc47428634a71"
+    ],
+    "status": [
+      "claim_4a29e0efc47428634a71"
+    ],
+    "title": [
+      "claim_4a29e0efc47428634a71"
+    ]
+  },
+  "id": "mentor_573ddc96f7461bed85b3",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4a29e0efc47428634a71"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁菁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_56a6b4ace95056edfad9",
+      "claim_ids": [
+        "claim_4a29e0efc47428634a71"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yuanjing0/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "病理光学成像、介观高分辨三维显微光学成像、生物医学光子学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yuanjing0/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

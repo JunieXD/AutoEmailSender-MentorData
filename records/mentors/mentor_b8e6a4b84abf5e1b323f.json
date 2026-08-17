@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_19476f52a293b16a263d"
+      ],
+      "ended_at": null,
+      "id": "aff_ad1e05ea6872e00cbed7",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/dongjianji/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_19476f52a293b16a263d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ad1e05ea6872e00cbed7",
+      "claim_ids": [
+        "claim_19476f52a293b16a263d"
+      ],
+      "is_primary": true,
+      "normalized_value": "jjdong@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/dongjianji/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jjdong@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_19476f52a293b16a263d"
+    ],
+    "email": [
+      "claim_19476f52a293b16a263d"
+    ],
+    "name": [
+      "claim_19476f52a293b16a263d"
+    ],
+    "profile_url": [
+      "claim_19476f52a293b16a263d"
+    ],
+    "recent_papers": [
+      "claim_19476f52a293b16a263d"
+    ],
+    "research_directions": [
+      "claim_19476f52a293b16a263d"
+    ],
+    "status": [
+      "claim_19476f52a293b16a263d"
+    ],
+    "title": [
+      "claim_19476f52a293b16a263d"
+    ]
+  },
+  "id": "mentor_b8e6a4b84abf5e1b323f",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_19476f52a293b16a263d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董建绩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ad1e05ea6872e00cbed7",
+      "claim_ids": [
+        "claim_19476f52a293b16a263d"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/dongjianji/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Photonic matrix multiplication lights up photonic accelerator and beyond.Light: Science & Applications,2022,(1):1-21",
+    "Compact, efficient, and scalable nanobeam core for photonic matrix-vector multiplication.[J].Optica,2024,(2):190-196",
+    "Multimodal deep learning using on-chip diffractive optics with in situ training capability.[J].Nature Communications,2024,(1):6189",
+    "Efficient Spectrum Reshaping with Photonic Gauge Potentials in Resonantly Modulated Fiber-Loop Circuits.PHYSICAL REVIEW APPLIED",
+    "Universal multimode waveguide crossing based on transformation optics: publisher's note (vol 5, pg 1549, 2018).OPTICA",
+    "Chip-Scale Optical Matrix Computation for PageRank Algorithm.IEEE Journal of Selected Topics in Quantum Electronics"
+  ],
+  "research_directions": [
+    "光计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/dongjianji/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

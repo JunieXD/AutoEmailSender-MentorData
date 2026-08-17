@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f1a8bdd5e756b3bbf844"
+      ],
+      "ended_at": null,
+      "id": "aff_c9723d60d7a22456ce8a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_206315f4b15aa2a2770c",
+      "source_url": "http://faculty.hust.edu.cn/tangjiang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f1a8bdd5e756b3bbf844"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c9723d60d7a22456ce8a",
+      "claim_ids": [
+        "claim_f1a8bdd5e756b3bbf844"
+      ],
+      "is_primary": true,
+      "normalized_value": "jtang@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/tangjiang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jtang@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f1a8bdd5e756b3bbf844"
+    ],
+    "email": [
+      "claim_f1a8bdd5e756b3bbf844"
+    ],
+    "name": [
+      "claim_f1a8bdd5e756b3bbf844"
+    ],
+    "profile_url": [
+      "claim_f1a8bdd5e756b3bbf844"
+    ],
+    "research_directions": [
+      "claim_f1a8bdd5e756b3bbf844"
+    ],
+    "status": [
+      "claim_f1a8bdd5e756b3bbf844"
+    ],
+    "title": [
+      "claim_f1a8bdd5e756b3bbf844"
+    ]
+  },
+  "id": "mentor_25cf69fdb79c78571b93",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f1a8bdd5e756b3bbf844"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "唐江"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c9723d60d7a22456ce8a",
+      "claim_ids": [
+        "claim_f1a8bdd5e756b3bbf844"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/tangjiang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "X射线探测器材料与器件、量子点红外探测材料与器件、无机化合物薄膜太阳能电池、卤素钙钛矿发光材料与器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/tangjiang/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

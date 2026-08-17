@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0a9425f13462b6893e10"
+      ],
+      "ended_at": null,
+      "id": "aff_8178caed08fee9fd1ef4",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_d4968b13d287e4bfb6b2",
+      "source_url": "http://faculty.hust.edu.cn/sunqizhen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0a9425f13462b6893e10"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8178caed08fee9fd1ef4",
+      "claim_ids": [
+        "claim_0a9425f13462b6893e10"
+      ],
+      "is_primary": true,
+      "normalized_value": "qzsun@hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "http://faculty.hust.edu.cn/sunqizhen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qzsun@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0a9425f13462b6893e10"
+    ],
+    "email": [
+      "claim_0a9425f13462b6893e10"
+    ],
+    "name": [
+      "claim_0a9425f13462b6893e10"
+    ],
+    "profile_url": [
+      "claim_0a9425f13462b6893e10"
+    ],
+    "research_directions": [
+      "claim_0a9425f13462b6893e10"
+    ],
+    "status": [
+      "claim_0a9425f13462b6893e10"
+    ],
+    "title": [
+      "claim_0a9425f13462b6893e10"
+    ]
+  },
+  "id": "mentor_ea447d4c7bb02f2fece0",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0a9425f13462b6893e10"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙琪真"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8178caed08fee9fd1ef4",
+      "claim_ids": [
+        "claim_0a9425f13462b6893e10"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/sunqizhen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新型微纳结构光纤及其传感技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/sunqizhen/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}

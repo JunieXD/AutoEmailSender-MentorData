@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_578ad0fa6af3589e66f2"
+      ],
+      "ended_at": null,
+      "id": "aff_8d9baf29ba0270ea7abb",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:18Z",
+      "organization_id": "org_auto_2e811826f6436b3422a9",
+      "source_url": "https://oei.hust.edu.cn/info/1094/5690.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_578ad0fa6af3589e66f2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8d9baf29ba0270ea7abb",
+      "claim_ids": [
+        "claim_578ad0fa6af3589e66f2"
+      ],
+      "is_primary": true,
+      "normalized_value": "dmliu@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:21:18Z",
+      "source_url": "https://oei.hust.edu.cn/info/1094/5690.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dmliu@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:18Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_578ad0fa6af3589e66f2"
+    ],
+    "email": [
+      "claim_578ad0fa6af3589e66f2"
+    ],
+    "name": [
+      "claim_578ad0fa6af3589e66f2"
+    ],
+    "profile_url": [
+      "claim_578ad0fa6af3589e66f2"
+    ],
+    "research_directions": [
+      "claim_578ad0fa6af3589e66f2"
+    ],
+    "status": [
+      "claim_578ad0fa6af3589e66f2"
+    ],
+    "title": [
+      "claim_578ad0fa6af3589e66f2"
+    ]
+  },
+  "id": "mentor_e96d6d4df1337f3f8d74",
+  "last_verified_at": "2026-08-17T10:21:18Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_578ad0fa6af3589e66f2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘德明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8d9baf29ba0270ea7abb",
+      "claim_ids": [
+        "claim_578ad0fa6af3589e66f2"
+      ],
+      "observed_at": "2026-08-17T10:21:18Z",
+      "status": "current",
+      "url": "https://oei.hust.edu.cn/info/1094/5690.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光通信器件与系统、光接入与无线接入、光传感与物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:18Z",
+  "status_reason": null,
+  "status_source_url": "https://oei.hust.edu.cn/info/1094/5690.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:18Z"
+}
