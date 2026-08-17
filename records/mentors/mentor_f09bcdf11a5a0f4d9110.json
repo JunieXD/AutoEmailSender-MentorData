@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9b739712f3dfb465da25"
+      ],
+      "ended_at": null,
+      "id": "aff_029fd2cac6ca31e692bb",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1043",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9b739712f3dfb465da25"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_029fd2cac6ca31e692bb",
+      "claim_ids": [
+        "claim_9b739712f3dfb465da25"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuyu35@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1043",
+      "status": "current",
+      "type": "email",
+      "value": "xuyu35@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9b739712f3dfb465da25"
+    ],
+    "email": [
+      "claim_9b739712f3dfb465da25"
+    ],
+    "name": [
+      "claim_9b739712f3dfb465da25"
+    ],
+    "profile_url": [
+      "claim_9b739712f3dfb465da25"
+    ],
+    "recent_papers": [
+      "claim_9b739712f3dfb465da25"
+    ],
+    "research_directions": [
+      "claim_9b739712f3dfb465da25"
+    ],
+    "status": [
+      "claim_9b739712f3dfb465da25"
+    ],
+    "title": [
+      "claim_9b739712f3dfb465da25"
+    ]
+  },
+  "id": "mentor_f09bcdf11a5a0f4d9110",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9b739712f3dfb465da25"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_029fd2cac6ca31e692bb",
+      "claim_ids": [
+        "claim_9b739712f3dfb465da25"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/1043"
+    }
+  ],
+  "recent_papers": [
+    "Yu Xu, Scott C. Ritchie, Yujian Liang, Paul R. H. J. Timmers, Maik Pietzner, Loïc Lannelongue, Samuel Lambert, Usman A. Tahir, Sebastian May-Wilson, Åsa Johansson, Praveen Surendran, Artika Nath, Elodie Persyn, James E. Peters, Clare Oliver-Williams, Shuliang Deng, Bram Prins, Nicola Pirastu, E Shyong Tai, Rob M van Dam, Dirk Paul, Christopher Yau, Robert E. Gerszten, Anders Mälarstig, John Danesh, Xueling Sim, Claudia Langenberg, James F. Wilson, Adam Butterworth, Michael Inouye. “An atlas of genetic scores to predict multi-omic traits”. Nature, 616, 123–131",
+    "Yu Xu, Dragana Vuckovic, Scott C Ritchie, Parsa Akbari, Tao Jiang, Jason Grealey, Adam S Butterworth, Willem H Ouwehand, David J Roberts, Emanuele Di Angelantonio, John Danesh, Nicole Soranzo, Michael Inouye. “Machine learning optimized polygenic scores for blood cell traits identify sex-specific trajectories and genetic correlations with disease”. Cell Genomics, 2 (1): 100086, 2022",
+    "Martin Kelemen, Yu Xu, Tao Jiang, Jing Hua Zhao, Carl Anderson, Chris Wallace, Adam Butterworth, Michael Inouye. “Performance of deep-learning based approaches to improve polygenic scores”. Nature Communications, 16:5122, 2025"
+  ],
+  "research_directions": [
+    "人工智能与多组学方法在复杂疾病机制解析及临床转化中的应用:(1)基于大规模人群队列的多组学数据,结合统计建模与人工智能方法,解析复杂疾病分子机制,构建疾病风险预测模型",
+    "(2)面向真实临床场景,开发和应用人工智能模型,用于疾病诊断、风险分层、预后评估及药物反应与异质性分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/1043",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

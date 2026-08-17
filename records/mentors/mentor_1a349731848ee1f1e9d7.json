@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1475ab032d29bdfb618e"
+      ],
+      "ended_at": null,
+      "id": "aff_e458f1aaec57c41b0d98",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1023",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1475ab032d29bdfb618e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e458f1aaec57c41b0d98",
+      "claim_ids": [
+        "claim_1475ab032d29bdfb618e"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenxp8@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1023",
+      "status": "current",
+      "type": "email",
+      "value": "chenxp8@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1475ab032d29bdfb618e"
+    ],
+    "email": [
+      "claim_1475ab032d29bdfb618e"
+    ],
+    "name": [
+      "claim_1475ab032d29bdfb618e"
+    ],
+    "profile_url": [
+      "claim_1475ab032d29bdfb618e"
+    ],
+    "recent_papers": [
+      "claim_1475ab032d29bdfb618e"
+    ],
+    "research_directions": [
+      "claim_1475ab032d29bdfb618e"
+    ],
+    "status": [
+      "claim_1475ab032d29bdfb618e"
+    ],
+    "title": [
+      "claim_1475ab032d29bdfb618e"
+    ]
+  },
+  "id": "mentor_1a349731848ee1f1e9d7",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1475ab032d29bdfb618e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈湘萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e458f1aaec57c41b0d98",
+      "claim_ids": [
+        "claim_1475ab032d29bdfb618e"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/1023"
+    }
+  ],
+  "recent_papers": [
+    "Yuan Huang, Yukang Zhou, Xiangping Chen, Zibin Zheng, Comment Traps: How Defective Commented-out Code Augment Defects in AI-Assisted Code Generation, In Proceedings of the 2026 ACM International Conference on the Foundations of Software Engineering, FSE 2026. (CCF-A)",
+    "Xiangping Chen, Xing Hu, Yuan Huang, He Jiang, Weixing Ji, Yanjie Jiang, Yanyan Jiang, Bo Liu, Hui Liu, Xiaochen Li, Xiaoli Lian, Guozhu Meng, Xin Peng, Hailong Sun, Lin Shi, Bo Wang, Chong Wang, Jiayi Wang, Tiantian Wang, Jifeng Xuan, Xin Xia, Yibiao Yang, Yixin Yang, Li Zhang, Yuming Zhou, Lu Zhang. Deep learning-based software engineering: progress, challenges, and opportunities. Sci. China Inf. Sci. 68(1) (2025) (CCF-A, ESI高被引)",
+    "Xiangping Chen,Ziang Qian, Peiyong Liao, Yuan Huang, Changlin Yang, Zibin Zheng. Characterizing Smart Contract Evolution. ACM Transactions on Software Engineering and Methodology, (TOSEM ), 2025. (CCF-A)",
+    "Yuan Huang, Zhicao Tang, Xiangping Chen, Zibin Zheng, Xiaocong Zhou, Commit Messages Generation Based on Core Changes, ACM Transactions on Software Engineering and Methodology (TOSEM ), 2025. (CCF-A)",
+    "Yuan Huang, Junqi Chen, Xiangping Chen, Neng Zhang, Changlin Yang, Zibin Zheng, ByteCue: Enhancing Bytecode Comment Generation with API Information, ACM Transactions on Software Engineering and Methodology (TOSEM ), 2025. (CCF-A)",
+    "Zhiquan Huang, Yuan Huang, Xiangping Chen, Xiaocong Zhou, Changlin Yang, Zibin Zheng. An Empirical Study on Learning-based Techniques for Explicit and Implicit Commit Messages Generation, In Proceedings of the 39th IEEE/ACM International Conference on Automated Software Engineering, ASE 2024. (CCF-A)",
+    "Yuan Huang, Jinbo Huang, Xiangping Chen, Zibin Zheng, Towards improving the performance of comment generation models by using bytecode information, IEEE Transactions on Software Engineering (TSE), 2024. (CCF-A)",
+    "Ding Xi, Peng Rui, Chen Xiangping, Yuan Huang, Bian Jing, Zheng Zibin. Do Code Summarization Models Process Too Much Information? Function Signature May Be All What Is Needed. ACM Transactions on Software Engineering and Methodology, (TOSEM), 2024. (CCF-A)"
+  ],
+  "research_directions": [
+    "智能化软件工程、人机交互、程序分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/1023",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

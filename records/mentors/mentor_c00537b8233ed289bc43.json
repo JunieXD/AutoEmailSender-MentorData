@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6255588c64bbc4bf62c3"
+      ],
+      "ended_at": null,
+      "id": "aff_fa83b18a51dd852b8c7a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1024",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6255588c64bbc4bf62c3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fa83b18a51dd852b8c7a",
+      "claim_ids": [
+        "claim_6255588c64bbc4bf62c3"
+      ],
+      "is_primary": true,
+      "normalized_value": "linshjin@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/1024",
+      "status": "current",
+      "type": "email",
+      "value": "linshjin@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6255588c64bbc4bf62c3"
+    ],
+    "email": [
+      "claim_6255588c64bbc4bf62c3"
+    ],
+    "name": [
+      "claim_6255588c64bbc4bf62c3"
+    ],
+    "profile_url": [
+      "claim_6255588c64bbc4bf62c3"
+    ],
+    "research_directions": [
+      "claim_6255588c64bbc4bf62c3"
+    ],
+    "status": [
+      "claim_6255588c64bbc4bf62c3"
+    ],
+    "title": [
+      "claim_6255588c64bbc4bf62c3"
+    ]
+  },
+  "id": "mentor_c00537b8233ed289bc43",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6255588c64bbc4bf62c3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林淑金"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fa83b18a51dd852b8c7a",
+      "claim_ids": [
+        "claim_6255588c64bbc4bf62c3"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/1024"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机图形图像处理、人机交互、多媒体技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/1024",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}

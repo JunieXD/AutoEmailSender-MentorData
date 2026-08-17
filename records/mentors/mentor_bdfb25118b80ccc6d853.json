@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5322ec024e5551139cad"
+      ],
+      "ended_at": null,
+      "id": "aff_1f635532945c7f2ec8ea",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:21:46Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://sse.sysu.edu.cn/teacher/127",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5322ec024e5551139cad"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f635532945c7f2ec8ea",
+      "claim_ids": [
+        "claim_5322ec024e5551139cad"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangyuan5@mail.sysu.edu.cn",
+      "observed_at": "2026-08-17T10:21:46Z",
+      "source_url": "https://sse.sysu.edu.cn/teacher/127",
+      "status": "current",
+      "type": "email",
+      "value": "huangyuan5@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:21:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5322ec024e5551139cad"
+    ],
+    "email": [
+      "claim_5322ec024e5551139cad"
+    ],
+    "name": [
+      "claim_5322ec024e5551139cad"
+    ],
+    "profile_url": [
+      "claim_5322ec024e5551139cad"
+    ],
+    "recent_papers": [
+      "claim_5322ec024e5551139cad"
+    ],
+    "research_directions": [
+      "claim_5322ec024e5551139cad"
+    ],
+    "status": [
+      "claim_5322ec024e5551139cad"
+    ],
+    "title": [
+      "claim_5322ec024e5551139cad"
+    ]
+  },
+  "id": "mentor_bdfb25118b80ccc6d853",
+  "last_verified_at": "2026-08-17T10:21:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5322ec024e5551139cad"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄袁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f635532945c7f2ec8ea",
+      "claim_ids": [
+        "claim_5322ec024e5551139cad"
+      ],
+      "observed_at": "2026-08-17T10:21:46Z",
+      "status": "current",
+      "url": "https://sse.sysu.edu.cn/teacher/127"
+    }
+  ],
+  "recent_papers": [
+    "Zhikun Xia, Yuan Huang, Xiangping Chen, Zibin Zheng, When Comments Mislead: An Empirical Study of Outdated Comments in LLM-based Code Completion, In Proceedings of the 2026 International Conference on Automated Software Engineering, ASE 2026.",
+    "Yuan Huang, Yukang Zhou, Xiangping Chen, Zibin Zheng, Comment Traps: How Defective Commented-out Code Augment Defects in AI-Assisted Code Generation, In Proceedings of the 2026 ACM International Conference on the Foundations of Software Engineering, FSE 2026.",
+    "Yuan Huang, Junqi Chen, Xiangping Chen, Neng Zhang, Changlin Yang, Zibin Zheng, ByteCue: enhancing bytecode comment generation with API information, ACM Transactions on Software Engineering and Methodology (TOSEM ), 2025.",
+    "Yuan Huang, Zhicao Tang, Xiangping Chen, Zibin Zheng, Xiaocong Zhou, Commit Messages Generation Based on Core Changes, ACM Transactions on Software Engineering and Methodology (TOSEM ), 2025.",
+    "Xiangping Chen,Ziang Qian, Peiyong Liao, Yuan Huang, Changlin Yang, Zibin Zheng. Characterizing Smart Contract Evolution. ACM Transactions on Software Engineering and Methodology (TOSEM ), 2025.",
+    "Yuan Huang, Rong Wang, Xiangping Chen, and Zibin Zheng. Ethereum Transaction Replay Platform Based on State-wise Account Input Data. IEEE Transactions on Services Computing (TSC), 2024.",
+    "Xiangping Chen, Xing Hu, Yuan Huang, et al. Deep Learning-based Software Engineering: Progress, Challenges, and Opportunities. SCIENCE CHINA Information Sciences, 2024. (ESI Highly Cited Paper)",
+    "Shuo Yang, Jiachi Chen, Mingyuan Huang, Zibin Zheng, Yuan Huang. Uncover the Premeditated Attacks: Detecting Exploitable Reentrancy Vulnerabilities by Identifying Attacker Contracts. The 46th International Conference on Software Engineering, ICSE 2024."
+  ],
+  "research_directions": [
+    "软件缺陷与代码智能、基于大模型的代码自动生成、代码大模型幻觉检测与消除、代码缺陷定位与修复"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:21:46Z",
+  "status_reason": null,
+  "status_source_url": "https://sse.sysu.edu.cn/teacher/127",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:21:46Z"
+}
