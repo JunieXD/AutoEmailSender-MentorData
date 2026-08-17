@@ -584,6 +584,8 @@ def _emit_error(error: AgentReviewError, *, output_format: str) -> None:
         "ok": False,
         "error": {"code": error.code, "message": error.message},
     }
+    if error.retryable:
+        payload["error"]["retryable"] = True
     if error.next_command:
         payload["error"]["next"] = error.next_command
     if output_format == "text":
@@ -787,6 +789,7 @@ def _brief(args: argparse.Namespace, root: Path, workspace: Path) -> dict[str, A
         "ready": True,
         "summary": draft["summary"],
         "organization_change_preview": draft["organization_change_preview"],
+        "organization_conflicts": draft.get("organization_conflicts", []),
         "path_normalizations": draft.get("path_normalizations", []),
         "pending_questions": pending,
         "next": (
@@ -1227,6 +1230,8 @@ def _batch_result_item(
             "ok": False,
             "error": {"code": error.code, "message": error.message},
         }
+        if error.retryable:
+            item["error"]["retryable"] = True
         if error.next_command:
             item["error"]["next"] = error.next_command
         return item
@@ -1356,7 +1361,7 @@ def _decision(args: argparse.Namespace, workspace: Path) -> Any:
         "path_normalizations": draft.get("path_normalizations", []),
         "decision_sha256": canonical_json_sha256(decision),
         "comment_characters": len(body),
-        "preflight_ok": draft.get("preflight", {}).get("ok") is True,
+        "preflight_ok": preflight.get("ok") is True,
         "submitted": draft.get("submission") is not None,
     }
 

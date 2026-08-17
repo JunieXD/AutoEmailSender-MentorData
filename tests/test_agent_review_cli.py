@@ -16,12 +16,15 @@ from mentor_data.agent_review import (
 )
 from mentor_data.agent_review_cli import (
     _answer_many,
+    _batch_result_item,
     _brief,
     _check,
     _check_many,
     _classify_status,
+    _decision,
     _discover_root,
     _doctor,
+    _emit_error,
     _questions,
     _queue,
     _retry,
@@ -364,6 +367,14 @@ def test_brief_combines_plan_questions_and_creation_preview(
                 "approved_domains": [],
             }
         ],
+        "organization_conflicts": [
+            {
+                "kind": "same-name-different-parent",
+                "requires_human_decision": True,
+                "proposed": {"id": "org_preview"},
+                "matches": [{"id": "org_existing"}],
+            }
+        ],
         "path_normalizations": [
             {
                 "group_id": "org_group_1",
@@ -407,10 +418,93 @@ def test_brief_combines_plan_questions_and_creation_preview(
 
     assert result["ready"] is True
     assert result["organization_change_preview"][0]["id"] == "org_preview"
+    assert result["organization_conflicts"][0]["kind"] == "same-name-different-parent"
     assert result["path_normalizations"][0]["row_count"] == 3
     assert result["pending_questions"][0]["id"] == "q_1"
     assert result["next"].endswith("--id q_1")
     assert load_draft(workspace, 88)["summary"]["pending_questions"] == 1
+
+
+def test_decision_summary_before_preflight_reports_false(
+    tmp_path: Path,
+) -> None:
+    workspace = tmp_path / "workspace"
+    pull = PullSnapshot(
+        number=88,
+        issue_number=87,
+        title="批量审核",
+        url="https://github.test/pull/88",
+        branch="batch/issue-87",
+        head_sha="a" * 40,
+        base_sha="b" * 40,
+        draft=True,
+        status_label="status:manual-review",
+    )
+    save_draft(
+        workspace,
+        {
+            "schema_version": 1,
+            "pull": pull.as_dict(),
+            "decision": {
+                "schema_version": 1,
+                "kind": "batch_organization_review_decision",
+                "pull_request_number": 88,
+                "issue_number": 87,
+                "manifest_sha256": "c" * 64,
+                "organization_creations": [],
+                "decisions": [],
+            },
+            "preflight": None,
+            "submission": None,
+            "path_normalizations": [],
+        },
+    )
+
+    result = _decision(argparse.Namespace(pr=88, view="summary"), workspace)
+
+    assert result["preflight_ok"] is False
+    assert result["organization_changes"] == []
+
+
+def test_retryable_error_is_machine_readable(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    _emit_error(
+        AgentReviewError(
+            "review_github_unavailable",
+            "临时失败",
+            next_command="请重试刚才的 mentor-data review 命令",
+            retryable=True,
+        ),
+        output_format="json",
+    )
+
+    payload = json.loads(capsys.readouterr().err)
+    assert payload["error"] == {
+        "code": "review_github_unavailable",
+        "message": "临时失败",
+        "retryable": True,
+        "next": "请重试刚才的 mentor-data review 命令",
+    }
+
+
+def test_batch_result_preserves_retryable_error_guidance() -> None:
+    def fail() -> dict[str, object]:
+        raise AgentReviewError(
+            "review_github_unavailable",
+            "临时失败",
+            next_command="请重试刚才的 mentor-data review 命令",
+            retryable=True,
+        )
+
+    result = _batch_result_item(88, "plan", fail)
+
+    assert result["error"] == {
+        "code": "review_github_unavailable",
+        "message": "临时失败",
+        "retryable": True,
+        "next": "请重试刚才的 mentor-data review 命令",
+    }
 
 
 def test_check_includes_path_normalizations_in_preflight_output(

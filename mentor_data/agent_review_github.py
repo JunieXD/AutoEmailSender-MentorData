@@ -103,9 +103,14 @@ class GitHubReviewClient:
                 ):
                     self.sleeper(float(2 ** (attempt - 1)))
                     continue
+                safe_to_retry = retry_transient and self._is_transient(message)
                 raise AgentReviewError(
                     "review_github_unavailable",
                     f"GitHub 命令失败：{message}",
+                    next_command=(
+                        "请重试刚才的 mentor-data review 命令" if safe_to_retry else None
+                    ),
+                    retryable=safe_to_retry,
                 ) from error
         raise AssertionError("unreachable")
 

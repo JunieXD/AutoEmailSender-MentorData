@@ -246,6 +246,12 @@ def test_school_name_in_department_waits_for_user_then_creates_sibling(
         "map-sibling",
         "create-sibling",
     ]
+    create_child = next(item for item in question["options"] if item["value"] == "create-child")
+    assert create_child["optional"] == [
+        "canonical_name",
+        "official_url",
+        "approved_domains",
+    ]
 
     second = _plan(
         manifest,
@@ -686,6 +692,466 @@ def test_similar_department_context_aggregates_only_the_collision_cluster(
         item["name"] for item in question["context"]["candidate_groups"]
     ] == ["网络安全系", "计算机学院网络安全系"]
     assert question["context"]["recommended_canonical_name"] == "网络安全系"
+
+
+def test_similar_department_recommendation_does_not_cross_shared_url_bridge(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "规范老师",
+                "canonical-bridge@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/canonical.html",
+                department="网络安全系",
+            ),
+            _row(
+                "变体老师",
+                "variant-bridge@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/shared-detail.html",
+                department="计算机学院网络安全系",
+            ),
+            _row(
+                "无关老师",
+                "unrelated-bridge@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/shared-detail.html",
+                department="激光技术系",
+            ),
+        ],
+        number=763,
+    )
+
+    draft = _plan(manifest, manifest_path, issue_number=763)
+    question = next(
+        item for item in draft["questions"] if item["path"].endswith("计算机学院网络安全系")
+    )
+
+    assert question["context_recommendation"] == "use-canonical"
+    assert question["recommendation_confidence"] == "high"
+    assert question["context"]["recommended_canonical_name"] == "网络安全系"
+    assert question["context"]["candidate_names"] == [
+        "网络安全系",
+        "计算机学院网络安全系",
+    ]
+
+
+def test_fuzzy_short_department_names_do_not_receive_merge_recommendation(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "信息老师",
+                "information@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/information.html",
+                department="信息工程系",
+            ),
+            _row(
+                "通信老师",
+                "communications@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/communications.html",
+                department="通信工程系",
+            ),
+        ],
+        number=764,
+    )
+
+    draft = _plan(manifest, manifest_path, issue_number=764)
+    pending = [item for item in draft["questions"] if item["status"] == "pending"]
+
+    assert len(pending) == 1
+    assert pending[0]["context_recommendation"] is None
+    assert pending[0]["recommendation_confidence"] is None
+
+
+def test_creation_preview_exposes_same_name_under_another_parent(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "中心老师",
+                "center@example.edu",
+                "示例大学",
+                "光电学院",
+                "https://oe.example.edu/teachers/center.html",
+                department="共享研究中心",
+            )
+        ],
+        number=765,
+    )
+    latest = [
+        {
+            "id": "org_existing_center",
+            "type": "center",
+            "canonical_name": "共享研究中心",
+            "parent_id": "org_example_cs",
+            "aliases": [],
+            "official_urls": [],
+            "approved_domains": ["example.edu"],
+            "lineage_ids": [
+                "org_example_university",
+                "org_example_cs",
+                "org_existing_center",
+            ],
+            "lineage_names": ["示例大学", "计算机学院", "共享研究中心"],
+        }
+    ]
+
+    first = _plan(
+        manifest,
+        manifest_path,
+        issue_number=765,
+        latest_organizations=latest,
+    )
+    question = first["questions"][0]
+
+    assert question["type"] == "same_name_different_parent"
+    assert question["context_recommendation"] is None
+    assert question["context"]["candidates"][0]["id"] == "org_existing_center"
+
+    draft = _plan(
+        manifest,
+        manifest_path,
+        issue_number=765,
+        latest_organizations=latest,
+        answers={question["id"]: {"choice": "keep-placement"}},
+    )
+
+    assert draft["organization_conflicts"] == [
+        {
+            "kind": "same-name-different-parent",
+            "requires_human_decision": False,
+            "acknowledged": True,
+            "proposed": {
+                "id": proposed_organization_id(
+                    "center",
+                    "共享研究中心",
+                    proposed_organization_id(
+                        "school",
+                        "光电学院",
+                        "org_example_university",
+                    ),
+                ),
+                "type": "center",
+                "path": "示例大学 / 光电学院 / 共享研究中心",
+            },
+            "matches": [
+                {
+                    "id": "org_existing_center",
+                    "type": "center",
+                    "path": "示例大学 / 计算机学院 / 共享研究中心",
+                    "parent_id": "org_example_cs",
+                }
+            ],
+        }
+    ]
+
+
+def test_cross_parent_same_name_can_map_to_existing_organization(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "中心老师",
+                "mapped-center@example.edu",
+                "示例大学",
+                "光电学院",
+                "https://oe.example.edu/teachers/mapped-center.html",
+                department="共享研究中心",
+            )
+        ],
+        number=766,
+    )
+    latest = [
+        {
+            "id": "org_existing_center",
+            "type": "center",
+            "canonical_name": "共享研究中心",
+            "parent_id": "org_example_cs",
+            "aliases": [],
+            "official_urls": [],
+            "approved_domains": ["example.edu"],
+            "lineage_ids": [
+                "org_example_university",
+                "org_example_cs",
+                "org_existing_center",
+            ],
+            "lineage_names": ["示例大学", "计算机学院", "共享研究中心"],
+        }
+    ]
+    first = _plan(
+        manifest,
+        manifest_path,
+        issue_number=766,
+        latest_organizations=latest,
+    )
+    question = first["questions"][0]
+
+    mapped = _plan(
+        manifest,
+        manifest_path,
+        issue_number=766,
+        latest_organizations=latest,
+        answers={
+            question["id"]: {
+                "choice": "map-existing",
+                "organization_id": "org_existing_center",
+            }
+        },
+    )
+
+    decision = mapped["decision"]["decisions"][0]
+    assert decision["target_organization_id"] == "org_existing_center"
+    assert mapped["organization_conflicts"] == []
+
+
+def test_canonical_name_change_triggers_cross_parent_confirmation(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "规范中心老师",
+                "canonical-center@example.edu",
+                "示例大学",
+                "光电学院",
+                "https://oe.example.edu/teachers/canonical-center.html",
+                department="共享研究中心、光电学院（中心）",
+            )
+        ],
+        number=769,
+    )
+    latest = [
+        {
+            "id": "org_existing_center",
+            "type": "center",
+            "canonical_name": "共享研究中心",
+            "parent_id": "org_example_cs",
+            "aliases": [],
+            "official_urls": [],
+            "approved_domains": ["example.edu"],
+            "lineage_ids": [
+                "org_example_university",
+                "org_example_cs",
+                "org_existing_center",
+            ],
+            "lineage_names": ["示例大学", "计算机学院", "共享研究中心"],
+        }
+    ]
+    first = _plan(
+        manifest,
+        manifest_path,
+        issue_number=769,
+        latest_organizations=latest,
+    )
+    canonical_question = first["questions"][0]
+
+    renamed = _plan(
+        manifest,
+        manifest_path,
+        issue_number=769,
+        latest_organizations=latest,
+        answers={
+            canonical_question["id"]: {
+                "choice": "create-submitted",
+                "organization_type": "center",
+                "canonical_name": "共享研究中心",
+            }
+        },
+    )
+    pending = [item for item in renamed["questions"] if item["status"] == "pending"]
+
+    assert renamed["decision"] is None
+    assert len(pending) == 1
+    assert pending[0]["type"] == "same_name_different_parent"
+    assert pending[0]["context"]["proposed"]["path"] == (
+        "示例大学 / 光电学院 / 共享研究中心"
+    )
+
+    confirmed = _plan(
+        manifest,
+        manifest_path,
+        issue_number=769,
+        latest_organizations=latest,
+        answers={
+            canonical_question["id"]: {
+                "choice": "create-submitted",
+                "organization_type": "center",
+                "canonical_name": "共享研究中心",
+            },
+            pending[0]["id"]: {"choice": "keep-placement"},
+        },
+    )
+
+    assert confirmed["summary"]["complete"] is True
+    assert confirmed["organization_conflicts"][0]["acknowledged"] is True
+    assert confirmed["organization_conflicts"][0]["requires_human_decision"] is False
+
+
+def test_planned_cross_parent_same_name_requires_recorded_decisions(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "计算机中心老师",
+                "cs-center@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/shared-center.html",
+                department="共享研究中心",
+            ),
+            _row(
+                "光电中心老师",
+                "oe-center@example.edu",
+                "示例大学",
+                "光电学院",
+                "https://oe.example.edu/teachers/shared-center.html",
+                department="共享研究中心",
+            ),
+        ],
+        number=767,
+    )
+
+    first = _plan(manifest, manifest_path, issue_number=767)
+    pending = [item for item in first["questions"] if item["status"] == "pending"]
+
+    assert first["decision"] is None
+    assert first["summary"]["complete"] is False
+    assert len(pending) == 2
+    assert {item["type"] for item in pending} == {"same_name_different_parent"}
+    assert all(item["context_recommendation"] is None for item in pending)
+
+    keep_answers = {item["id"]: {"choice": "keep-placement"} for item in pending}
+    kept = _plan(
+        manifest,
+        manifest_path,
+        issue_number=767,
+        answers=keep_answers,
+    )
+
+    assert kept["summary"]["complete"] is True
+    assert len(kept["organization_conflicts"]) == 2
+    assert all(item["acknowledged"] is True for item in kept["organization_conflicts"])
+    assert all(
+        item["requires_human_decision"] is False
+        for item in kept["organization_conflicts"]
+    )
+    applied = _apply(root, 767, kept["decision"])
+    assert applied.ready_for_finalization is True
+    assert applied.created_organizations == 3
+
+
+def test_planned_cross_parent_same_name_can_map_to_other_planned_organization(
+    tmp_path: Path,
+) -> None:
+    root = build_test_repository(tmp_path)
+    _, manifest, manifest_path = _prepare(
+        root,
+        tmp_path,
+        [
+            _row(
+                "甲中心老师",
+                "planned-a@example.edu",
+                "示例大学",
+                "计算机学院",
+                "https://cs.example.edu/teachers/planned-a.html",
+                department="联合研究中心",
+            ),
+            _row(
+                "乙中心老师",
+                "planned-b@example.edu",
+                "示例大学",
+                "光电学院",
+                "https://oe.example.edu/teachers/planned-b.html",
+                department="联合研究中心",
+            ),
+        ],
+        number=768,
+    )
+    first = _plan(manifest, manifest_path, issue_number=768)
+    questions = first["questions"]
+
+    with pytest.raises(AgentReviewError) as captured:
+        _plan(
+            manifest,
+            manifest_path,
+            issue_number=768,
+            answers={
+                item["id"]: {
+                    "choice": "map-planned",
+                    "organization_id": item["context"]["candidates"][0][
+                        "organization_id"
+                    ],
+                }
+                for item in questions
+            },
+        )
+    assert captured.value.code == "review_answer_invalid"
+
+    keep_question = next(item for item in questions if "光电学院" in item["path"])
+    map_question = next(item for item in questions if "计算机学院" in item["path"])
+    target_id = next(
+        item["organization_id"]
+        for item in map_question["context"]["candidates"]
+        if "光电学院" in item["path"]
+    )
+
+    mapped = _plan(
+        manifest,
+        manifest_path,
+        issue_number=768,
+        answers={
+            keep_question["id"]: {"choice": "keep-placement"},
+            map_question["id"]: {
+                "choice": "map-planned",
+                "organization_id": target_id,
+            },
+        },
+    )
+
+    assert mapped["summary"]["complete"] is True
+    assert mapped["organization_conflicts"] == []
+    decisions = {
+        item["group_id"]: item for item in mapped["decision"]["decisions"]
+    }
+    mapped_decision = next(
+        item for item in decisions.values() if item["target_organization_id"] == target_id
+    )
+    assert mapped_decision["levels"] == []
+    applied = _apply(root, 768, mapped["decision"])
+    assert applied.ready_for_finalization is True
+    assert applied.created_organizations == 2
 
 
 def test_latest_main_organizations_override_stale_manifest_snapshot(tmp_path: Path) -> None:

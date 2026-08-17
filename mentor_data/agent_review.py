@@ -36,10 +36,18 @@ PARENTHESIZED_ORGANIZATION_PATTERN = re.compile(
 
 
 class AgentReviewError(Exception):
-    def __init__(self, code: str, message: str, *, next_command: str | None = None) -> None:
+    def __init__(
+        self,
+        code: str,
+        message: str,
+        *,
+        next_command: str | None = None,
+        retryable: bool = False,
+    ) -> None:
         self.code = code
         self.message = message
         self.next_command = next_command
+        self.retryable = retryable
         super().__init__(message)
 
 
@@ -121,6 +129,28 @@ class ManifestOrganizations:
             if candidate and candidate.get("type") == "university":
                 return item_id
         return organization_id if organization.get("type") == "university" else None
+
+    def same_university_name(
+        self,
+        level: str,
+        university_id: str,
+        name: str,
+        *,
+        exclude_parent_id: str | None,
+    ) -> list[dict[str, Any]]:
+        name_key = normalize_organization_key(name)
+        matches: list[dict[str, Any]] = []
+        for organization in self.organizations:
+            if organization_level(organization["type"]) != level:
+                continue
+            if organization.get("parent_id") == exclude_parent_id:
+                continue
+            if self.university_id(organization["id"]) != university_id:
+                continue
+            names = [organization["canonical_name"], *organization.get("aliases", [])]
+            if name_key in {normalize_organization_key(item) for item in names}:
+                matches.append(organization)
+        return sorted(matches, key=lambda item: item["id"])
 
     def domains(self, organization_id: str) -> list[str]:
         domains: set[str] = set()
@@ -502,11 +532,21 @@ def _organization_matches_sources(
     )
 
 
-def _question_options(*values: tuple[str, str, list[str]]) -> list[dict[str, Any]]:
-    return [
-        {"value": value, "label": label, "requires": requires}
-        for value, label, requires in values
-    ]
+def _question_options(
+    *values: tuple[str, str, list[str]] | tuple[str, str, list[str], list[str]],
+) -> list[dict[str, Any]]:
+    options: list[dict[str, Any]] = []
+    for item in values:
+        value, label, requires = item[:3]
+        option: dict[str, Any] = {
+            "value": value,
+            "label": label,
+            "requires": requires,
+        }
+        if len(item) == 4:
+            option["optional"] = item[3]
+        options.append(option)
+    return options
 
 
 def _department_name_without_parent(name: str, parent_name: str) -> str:
@@ -651,7 +691,7 @@ def _similar_new_department_contexts(groups: list[dict[str, Any]]) -> dict[str, 
         visited.update(component)
         component_groups = [candidates_by_id[group_id] for group_id in component]
         parent_name = normalize_text(component_groups[0]["submitted"].get("school"))
-        canonical_group = min(
+        component_anchor = min(
             component_groups,
             key=lambda group: (
                 len(
@@ -665,63 +705,184 @@ def _similar_new_department_contexts(groups: list[dict[str, Any]]) -> dict[str, 
                 group["id"],
             ),
         )
-        canonical_name = normalize_text(canonical_group["submitted"].get("department"))
-        component_relations = [
-            value
-            for pair, value in relation_evidence.items()
-            if pair[0] in component and pair[1] in component
-        ]
-        evidence = sorted(
-            {item for relation in component_relations for item in relation["evidence"]}
-        )
-        shared_directories = sorted(
-            {
-                item
-                for relation in component_relations
-                for item in relation["shared_source_directories"]
-            }
-        )
-        shared_source_urls = sorted(
-            {
-                item
-                for relation in component_relations
-                for item in relation["shared_source_urls"]
-            }
-        )
-        candidate_contexts = sorted(
-            (_candidate_group_context(group) for group in component_groups),
-            key=lambda item: (item["name"], item["group_id"]),
-        )
         for reviewed in component_groups:
-            if reviewed["id"] == canonical_group["id"]:
-                continue
+            direct_name_ids = {reviewed["id"]}
+            for pair, relation in relation_evidence.items():
+                if reviewed["id"] not in pair or "similar_name" not in relation["evidence"]:
+                    continue
+                direct_name_ids.update(pair)
+            direct_name_groups = [candidates_by_id[group_id] for group_id in direct_name_ids]
+            recommended_group: dict[str, Any] | None = None
+            if len(direct_name_groups) > 1:
+                local_anchor = min(
+                    direct_name_groups,
+                    key=lambda group: (
+                        len(
+                            _department_name_without_parent(
+                                normalize_text(group["submitted"].get("department")),
+                                parent_name,
+                            )
+                        ),
+                        len(normalize_text(group["submitted"].get("department"))),
+                        normalize_text(group["submitted"].get("department")),
+                        group["id"],
+                    ),
+                )
+                if reviewed["id"] == local_anchor["id"]:
+                    continue
+                recommended_group = local_anchor
+                context_ids = direct_name_ids
+            else:
+                if reviewed["id"] == component_anchor["id"]:
+                    continue
+                context_ids = component
+
+            context_relations = [
+                value
+                for pair, value in relation_evidence.items()
+                if pair[0] in context_ids and pair[1] in context_ids
+            ]
+            evidence = sorted(
+                {item for relation in context_relations for item in relation["evidence"]}
+            )
+            shared_directories = sorted(
+                {
+                    item
+                    for relation in context_relations
+                    for item in relation["shared_source_directories"]
+                }
+            )
+            shared_source_urls = sorted(
+                {item for relation in context_relations for item in relation["shared_source_urls"]}
+            )
+            candidate_contexts = sorted(
+                (_candidate_group_context(candidates_by_id[group_id]) for group_id in context_ids),
+                key=lambda item: (item["name"], item["group_id"]),
+            )
             reviewed_name = normalize_text(reviewed["submitted"].get("department"))
-            reviewed_has_name_evidence = any(
-                reviewed["id"] in pair and "similar_name" in relation["evidence"]
-                for pair, relation in relation_evidence.items()
-                if pair[0] in component and pair[1] in component
+            recommended_name = (
+                normalize_text(recommended_group["submitted"].get("department"))
+                if recommended_group is not None
+                else ""
             )
             exact_parent_cleanup = _department_name_without_parent(
                 reviewed_name, parent_name
-            ) == _department_name_without_parent(canonical_name, parent_name)
+            ) == _department_name_without_parent(recommended_name, parent_name)
+            # Fuzzy similarity is useful for surfacing a collision, but only an exact
+            # parent-prefix cleanup is strong enough to recommend a canonical target.
+            has_safe_recommendation = recommended_group is not None and exact_parent_cleanup
             result[reviewed["id"]] = {
                 "candidate_names": [item["name"] for item in candidate_contexts],
                 "candidate_groups": candidate_contexts,
                 "recommended_canonical_group_id": (
-                    canonical_group["id"] if reviewed_has_name_evidence else None
+                    recommended_group["id"] if has_safe_recommendation else None
                 ),
                 "recommended_canonical_name": (
-                    canonical_name if reviewed_has_name_evidence else None
+                    recommended_name if has_safe_recommendation else None
                 ),
-                "recommendation_confidence": (
-                    "high" if exact_parent_cleanup else "medium"
-                )
-                if reviewed_has_name_evidence
-                else None,
+                "recommendation_confidence": "high" if has_safe_recommendation else None,
                 "shared_source_directories": shared_directories[:3],
                 "shared_source_urls": shared_source_urls[:3],
                 "evidence": evidence,
             }
+    return result
+
+
+def _clear_planned_department(
+    group: dict[str, Any],
+    organizations: ManifestOrganizations,
+) -> dict[str, Any] | None:
+    """Resolve the stable ID for an unambiguous department creation in this batch."""
+
+    submitted = group["submitted"]
+    parent_id: str | None = None
+    parent_name = ""
+    university_name = normalize_text(submitted.get("university"))
+    for level in ("university", "school"):
+        value = normalize_text(submitted.get(level))
+        if not value or _ambiguous_name(value):
+            return None
+        candidates = organizations.exact_candidates(level, parent_id, value)
+        if len(candidates) == 1:
+            organization = candidates[0]
+            parent_id = organization["id"]
+            parent_name = organization["canonical_name"]
+            continue
+        if candidates:
+            return None
+        organization_type = infer_organization_type(level, value)
+        if organization_type not in LEVEL_TYPES[level]:
+            return None
+        parent_id = proposed_organization_id(organization_type, value, parent_id)
+        parent_name = value
+
+    value = normalize_text(submitted.get("department"))
+    organization_type = infer_organization_type("department", value)
+    if (
+        not value
+        or _ambiguous_name(value)
+        or organization_type not in LEVEL_TYPES["department"]
+        or value.endswith(("学院", "研究院"))
+        or normalize_organization_key(value)
+        in {
+            normalize_organization_key(parent_name),
+            normalize_organization_key(university_name),
+        }
+    ):
+        return None
+    if organizations.exact_candidates("department", parent_id, value):
+        return None
+    return {
+        "group_id": group["id"],
+        "path": group_path(group),
+        "name": value,
+        "parent_id": parent_id,
+        "organization_id": proposed_organization_id(
+            organization_type,
+            value,
+            parent_id,
+        ),
+        "organization_type": organization_type,
+        "row_count": len(group.get("rows", [])),
+    }
+
+
+def _planned_cross_parent_contexts(
+    groups: list[dict[str, Any]],
+    organizations: ManifestOrganizations,
+) -> dict[str, dict[str, Any]]:
+    """Find exact same-name department creations under different planned parents."""
+
+    candidates = [
+        candidate
+        for group in groups
+        if (candidate := _clear_planned_department(group, organizations)) is not None
+    ]
+    buckets: dict[tuple[str, str], list[dict[str, Any]]] = {}
+    submitted_by_id = {group["id"]: group["submitted"] for group in groups}
+    for candidate in candidates:
+        submitted = submitted_by_id[candidate["group_id"]]
+        key = (
+            normalize_organization_key(submitted.get("university")),
+            normalize_organization_key(candidate["name"]),
+        )
+        buckets.setdefault(key, []).append(candidate)
+
+    result: dict[str, dict[str, Any]] = {}
+    for bucket in buckets.values():
+        if len({item["parent_id"] for item in bucket}) < 2:
+            continue
+        for candidate in bucket:
+            alternatives = sorted(
+                (
+                    copy.deepcopy(item)
+                    for item in bucket
+                    if item["parent_id"] != candidate["parent_id"]
+                ),
+                key=lambda item: (item["path"], item["group_id"]),
+            )
+            if alternatives:
+                result[candidate["group_id"]] = {"candidates": alternatives}
     return result
 
 
@@ -731,6 +892,7 @@ def _plan_path(
     organizations: ManifestOrganizations,
     answers: dict[str, Any],
     similar_new_department: dict[str, Any] | None = None,
+    planned_cross_parent: dict[str, Any] | None = None,
 ) -> tuple[dict[str, Any] | None, list[dict[str, Any]], list[str], list[dict[str, Any]]]:
     questions: list[dict[str, Any]] = []
     rules: list[str] = []
@@ -792,7 +954,12 @@ def _plan_path(
                     path_correction_choices=("map-existing", "create-under-university"),
                     options=_question_options(
                         ("map-existing", "直接映射到现有机构", ["organization_id"]),
-                        ("create-under-university", "在学校下新建机构", ["organization_type"]),
+                        (
+                            "create-under-university",
+                            "在学校下新建机构",
+                            ["organization_type"],
+                            ["canonical_name", "official_url", "approved_domains"],
+                        ),
                         ("reject-group", "不收录这一组", []),
                     ),
                     context={"submitted": copy.deepcopy(submitted)},
@@ -923,6 +1090,199 @@ def _plan_path(
             final_target_is_new = False
             rules.append(f"exact_{level}_match")
             continue
+
+        university_id: str | None = None
+        if university_level and university_level["action"] == "existing":
+            university_id = university_level["organization_id"]
+        elif university_level and university_level["action"] == "create":
+            university_id = proposed_organization_id(
+                "university",
+                university_level["canonical_name"],
+                None,
+            )
+        cross_parent_candidates = (
+            organizations.same_university_name(
+                level,
+                university_id,
+                value,
+                exclude_parent_id=parent_id,
+            )
+            if level == "department" and university_id is not None and not candidates
+            else []
+        )
+        if cross_parent_candidates:
+            proposed_type = infer_organization_type(level, value)
+            proposed_id = (
+                proposed_organization_id(proposed_type, value, parent_id)
+                if proposed_type in LEVEL_TYPES[level]
+                else None
+            )
+            question = _group_question(
+                pull_number,
+                group,
+                kind="same_name_different_parent",
+                subject="|".join(item["id"] for item in cross_parent_candidates),
+                level=level,
+                prompt=f"同校其他父级下已有同名机构“{value}”，请确认当前归属",
+                reason="同名机构可能是跨单位放置，也可能应映射到已有机构。",
+                rule_default="keep-placement",
+                path_correction_choices=("map-existing",),
+                options=_question_options(
+                    ("keep-placement", "保留投稿中的当前父级归属", []),
+                    ("map-existing", "映射到同校已有机构", ["organization_id"]),
+                    ("use-parent", "忽略当前字段并归入当前父级", []),
+                    ("reject-group", "不收录这一组", []),
+                ),
+                context={
+                    "submitted": copy.deepcopy(submitted),
+                    "current_parent_id": parent_id,
+                    "candidates": [
+                        {
+                            "id": item["id"],
+                            "type": item["type"],
+                            "path": " / ".join(item.get("lineage_names", [])),
+                            "parent_id": item.get("parent_id"),
+                        }
+                        for item in cross_parent_candidates
+                    ],
+                    "conflict_pair_ids": (
+                        [
+                            sorted((proposed_id, item["id"]))
+                            for item in cross_parent_candidates
+                        ]
+                        if proposed_id is not None
+                        else []
+                    ),
+                },
+                answers=answers,
+            )
+            questions.append(question)
+            choice = _answer_choice(question)
+            if choice is None:
+                return None, questions, rules, creations
+            answer = question["answer"]
+            if choice == "reject-group":
+                return (
+                    _rejected_group_decision(
+                        group["id"],
+                        answer.get("reason") or "同校跨父级机构归属无法确定",
+                    ),
+                    questions,
+                    rules,
+                    creations,
+                )
+            if choice == "use-parent":
+                levels.append(_level_skip(level))
+                rules.append("user_use_parent_for_cross_parent_name")
+                break
+            if choice == "map-existing":
+                target_id = answer.get("organization_id")
+                if target_id not in {item["id"] for item in cross_parent_candidates}:
+                    raise AgentReviewError(
+                        "review_answer_invalid",
+                        "所选机构不是当前同校跨父级候选",
+                    )
+                return (
+                    _resolved_group_decision(
+                        group["id"],
+                        levels=[],
+                        target_organization_id=target_id,
+                        mapping_kind="custom",
+                        mapping_reason=answer.get("reason")
+                        or "人工确认同名机构应映射到同校已有归属",
+                        save_path_correction=bool(answer.get("save_path_correction")),
+                    ),
+                    questions,
+                    rules,
+                    creations,
+                )
+            if choice != "keep-placement":
+                raise AgentReviewError("review_answer_invalid", "同校跨父级机构选择无效")
+            rules.append("user_keep_cross_parent_placement")
+
+        if planned_cross_parent:
+            planned_candidates = planned_cross_parent.get("candidates", [])
+            proposed_type = infer_organization_type(level, value)
+            proposed_id = proposed_organization_id(
+                proposed_type,
+                value,
+                parent_id,
+            )
+            question = _group_question(
+                pull_number,
+                group,
+                kind="same_name_different_parent",
+                subject="planned|" + "|".join(
+                    item["group_id"] for item in planned_candidates
+                ),
+                level=level,
+                prompt=f"本批次其他父级下也计划新建同名机构“{value}”，请确认当前归属",
+                reason="同名机构可能是跨单位分别设置，也可能应统一归入其中一个父级。",
+                rule_default="keep-placement",
+                path_correction_choices=("map-planned",),
+                options=_question_options(
+                    ("keep-placement", "保留投稿中的当前父级归属", []),
+                    ("map-planned", "映射到本批次另一计划机构", ["organization_id"]),
+                    ("use-parent", "忽略当前字段并归入当前父级", []),
+                    ("reject-group", "不收录这一组", []),
+                ),
+                context={
+                    "submitted": copy.deepcopy(submitted),
+                    "current_parent_id": parent_id,
+                    "candidates": copy.deepcopy(planned_candidates),
+                    "conflict_pair_ids": [
+                        sorted((proposed_id, item["organization_id"]))
+                        for item in planned_candidates
+                    ],
+                },
+                answers=answers,
+            )
+            questions.append(question)
+            choice = _answer_choice(question)
+            if choice is None:
+                return None, questions, rules, creations
+            answer = question["answer"]
+            if choice == "reject-group":
+                return (
+                    _rejected_group_decision(
+                        group["id"],
+                        answer.get("reason") or "本批次跨父级同名机构归属无法确定",
+                    ),
+                    questions,
+                    rules,
+                    creations,
+                )
+            if choice == "use-parent":
+                levels.append(_level_skip(level))
+                rules.append("user_use_parent_for_cross_parent_name")
+                break
+            if choice == "map-planned":
+                target_id = answer.get("organization_id")
+                if target_id not in {
+                    item["organization_id"] for item in planned_candidates
+                }:
+                    raise AgentReviewError(
+                        "review_answer_invalid",
+                        "所选机构不是本批次的跨父级同名候选",
+                    )
+                return (
+                    _resolved_group_decision(
+                        group["id"],
+                        levels=[],
+                        target_organization_id=target_id,
+                        mapping_kind="custom",
+                        mapping_reason=answer.get("reason")
+                        or "人工确认同名机构应映射到本批次另一计划归属",
+                        save_path_correction=bool(answer.get("save_path_correction")),
+                    ),
+                    questions,
+                    rules,
+                    creations,
+                )
+            if choice != "keep-placement":
+                raise AgentReviewError("review_answer_invalid", "本批次跨父级机构选择无效")
+            rules.append("user_keep_cross_parent_placement")
+
         if len(candidates) > 1:
             ambiguity_reason = "同一父级下存在多个精确名称候选。"
         elif _ambiguous_name(value):
@@ -1043,9 +1403,24 @@ def _plan_path(
             options.extend(
                 _question_options(
                     ("map-sibling", "映射到学校下现有同级机构", ["organization_id"]),
-                    ("create-sibling", "在学校下新建同级机构", []),
+                    (
+                        "create-sibling",
+                        "在学校下新建同级机构",
+                        [],
+                        [
+                            "organization_type",
+                            "canonical_name",
+                            "official_url",
+                            "approved_domains",
+                        ],
+                    ),
                     ("use-parent", "忽略该系所字段并归入当前学院", []),
-                    ("create-child", "作为当前学院的下级机构", ["organization_type"]),
+                    (
+                        "create-child",
+                        "作为当前学院的下级机构",
+                        ["organization_type"],
+                        ["canonical_name", "official_url", "approved_domains"],
+                    ),
                     ("reject-group", "不收录这一组", []),
                 )
             )
@@ -1193,7 +1568,12 @@ def _plan_path(
             rule_default="create-submitted" if inferred_type else None,
             path_correction_choices=("map-existing",),
             options=_question_options(
-                ("create-submitted", "按投稿名称新建当前层级机构", ["organization_type"]),
+                (
+                    "create-submitted",
+                    "按投稿名称新建当前层级机构",
+                    ["organization_type"],
+                    ["canonical_name", "official_url", "approved_domains"],
+                ),
                 ("map-existing", "直接映射到任意现有最终机构", ["organization_id"]),
                 ("skip-level", "忽略当前字段并归入上级", []),
                 ("reject-group", "不收录这一组", []),
@@ -1680,6 +2060,89 @@ def _organization_change_preview(
     return list(previews.values())
 
 
+def _organization_creation_conflicts(
+    previews: list[dict[str, Any]],
+    organizations: ManifestOrganizations,
+) -> list[dict[str, Any]]:
+    """Expose same-name placements that need review before preflight."""
+
+    conflicts: list[dict[str, Any]] = []
+    for preview in previews:
+        if preview.get("action") != "create":
+            continue
+        proposed_names = [item.strip() for item in preview["path"].split("/")]
+        if not proposed_names:
+            continue
+        university_key = normalize_organization_key(proposed_names[0])
+        name_key = normalize_organization_key(proposed_names[-1])
+        if not university_key or not name_key:
+            continue
+        matches: list[dict[str, Any]] = []
+        for organization in organizations.organizations:
+            if organization_level(organization["type"]) != organization_level(
+                preview["type"]
+            ):
+                continue
+            lineage_names = organization.get("lineage_names", [])
+            if not lineage_names or normalize_organization_key(lineage_names[0]) != university_key:
+                continue
+            organization_names = [
+                organization["canonical_name"],
+                *organization.get("aliases", []),
+            ]
+            if name_key not in {normalize_organization_key(item) for item in organization_names}:
+                continue
+            existing_path = " / ".join(lineage_names)
+            if existing_path == preview["path"]:
+                continue
+            matches.append(
+                {
+                    "id": organization["id"],
+                    "type": organization["type"],
+                    "path": existing_path,
+                    "parent_id": organization.get("parent_id"),
+                }
+            )
+        for other in previews:
+            if other["id"] == preview["id"] or other.get("action") != "create":
+                continue
+            if organization_level(other["type"]) != organization_level(preview["type"]):
+                continue
+            other_names = [item.strip() for item in other["path"].split("/")]
+            if (
+                other_names
+                and normalize_organization_key(other_names[0]) == university_key
+                and normalize_organization_key(other_names[-1]) == name_key
+                and other["path"] != preview["path"]
+            ):
+                matches.append(
+                    {
+                        "id": other["id"],
+                        "type": other["type"],
+                        "path": other["path"],
+                        "parent_id": None,
+                        "planned": True,
+                    }
+                )
+        if matches:
+            conflicts.append(
+                {
+                    "kind": "same-name-different-parent",
+                    "requires_human_decision": True,
+                    "proposed": {
+                        "id": preview["id"],
+                        "type": preview["type"],
+                        "path": preview["path"],
+                    },
+                    "matches": sorted(matches, key=lambda item: (item["path"], item["id"])),
+                }
+            )
+    return sorted(
+        conflicts,
+        key=lambda item: (item["proposed"]["path"], item["proposed"]["id"]),
+    )
+
+
 def _resolved_path(
     decision: dict[str, Any],
     organizations: ManifestOrganizations,
@@ -1791,6 +2254,10 @@ def plan_review(
     decisions: list[dict[str, Any]] = []
 
     similar_new_departments = _similar_new_department_contexts(manifest["groups"])
+    planned_cross_parents = _planned_cross_parent_contexts(
+        manifest["groups"],
+        organizations,
+    )
     for group in sorted(manifest["groups"], key=lambda item: item["id"]):
         decision, questions, rules, creations = _plan_path(
             pull.number,
@@ -1798,6 +2265,7 @@ def plan_review(
             organizations,
             answers,
             similar_new_departments.get(group["id"]),
+            planned_cross_parents.get(group["id"]),
         )
         if decision is not None:
             _apply_row_questions(
@@ -1808,6 +2276,71 @@ def plan_review(
                 organizations,
                 questions,
             )
+        previews = _organization_change_preview(
+            group,
+            rules,
+            decision,
+            creations,
+            organizations,
+        )
+        for preview in previews:
+            organization_change_preview[preview["id"]] = preview
+        if decision is not None:
+            declared_conflict_pairs = {
+                tuple(sorted(pair))
+                for question in questions
+                for pair in question.get("context", {}).get("conflict_pair_ids", [])
+                if len(pair) == 2
+            }
+            current_preview_ids = {item["id"] for item in previews}
+            preview_conflicts = [
+                item
+                for item in _organization_creation_conflicts(
+                    list(organization_change_preview.values()),
+                    organizations,
+                )
+                if item["proposed"]["id"] in current_preview_ids
+            ]
+            for conflict in preview_conflicts:
+                proposed = conflict["proposed"]
+                uncovered_matches = [
+                    item
+                    for item in conflict["matches"]
+                    if tuple(sorted((proposed["id"], item["id"])))
+                    not in declared_conflict_pairs
+                ]
+                if not uncovered_matches:
+                    continue
+                question = _group_question(
+                    pull.number,
+                    group,
+                    kind="same_name_different_parent",
+                    subject="preview|"
+                    + proposed["id"]
+                    + "|"
+                    + "|".join(item["id"] for item in uncovered_matches),
+                    level=organization_level(proposed["type"]),
+                    prompt=(
+                        "规范化后将在另一父级下创建同名机构"
+                        f"“{proposed['path'].rsplit(' / ', 1)[-1]}”，请确认"
+                    ),
+                    reason="修改后的规范名称与同校其他父级下的机构重名，需要明确确认当前归属。",
+                    rule_default="keep-placement",
+                    options=_question_options(
+                        ("keep-placement", "确认保留当前父级归属", []),
+                    ),
+                    context={
+                        "submitted": copy.deepcopy(group["submitted"]),
+                        "proposed": copy.deepcopy(proposed),
+                        "matches": copy.deepcopy(uncovered_matches),
+                        "conflict_pair_ids": [
+                            sorted((proposed["id"], item["id"]))
+                            for item in uncovered_matches
+                        ],
+                    },
+                    answers=answers,
+                )
+                questions.append(question)
         pending = [item for item in questions if item["status"] == "pending"]
         state = "pending" if pending else ("answered" if questions else "auto")
         group_plan = {
@@ -1822,15 +2355,6 @@ def plan_review(
             ),
         }
         group_plans.append(group_plan)
-        previews = _organization_change_preview(
-            group,
-            rules,
-            decision,
-            creations,
-            organizations,
-        )
-        for preview in previews:
-            organization_change_preview[preview["id"]] = preview
         normalization = _path_normalization(
             group,
             group_plan,
@@ -1852,6 +2376,48 @@ def plan_review(
     organization_creations = {
         item["organization_id"]: item for item in all_creations
     }
+    preview_values = [
+        organization_change_preview[key] for key in sorted(organization_change_preview)
+    ]
+    if pending_count == 0:
+        preview_ids = {item["id"] for item in preview_values}
+        missing_planned_targets = sorted(
+            {
+                item.get("answer", {}).get("organization_id")
+                for item in all_questions
+                if item.get("answer", {}).get("choice") == "map-planned"
+                and item.get("answer", {}).get("organization_id") not in preview_ids
+            }
+        )
+        if missing_planned_targets:
+            raise AgentReviewError(
+                "review_answer_invalid",
+                "映射到的本批次计划机构未被其他分组保留，请修改跨父级同名机构的决定",
+            )
+    organization_conflicts = _organization_creation_conflicts(
+        preview_values,
+        organizations,
+    )
+    acknowledged_conflict_pairs: set[tuple[str, str]] = set()
+    for question in all_questions:
+        if (
+            question.get("type") == "same_name_different_parent"
+            and question.get("status") == "answered"
+            and question.get("answer", {}).get("choice") == "keep-placement"
+        ):
+            acknowledged_conflict_pairs.update(
+                tuple(sorted(item))
+                for item in question.get("context", {}).get("conflict_pair_ids", [])
+                if len(item) == 2
+            )
+    for conflict in organization_conflicts:
+        acknowledged = all(
+            tuple(sorted((conflict["proposed"]["id"], item["id"])))
+            in acknowledged_conflict_pairs
+            for item in conflict["matches"]
+        )
+        conflict["acknowledged"] = acknowledged
+        conflict["requires_human_decision"] = not acknowledged
     decision_document = None
     if complete:
         decision_document = {
@@ -1877,9 +2443,8 @@ def plan_review(
         "answers": answers,
         "groups": group_plans,
         "questions": all_questions,
-        "organization_change_preview": [
-            organization_change_preview[key] for key in sorted(organization_change_preview)
-        ],
+        "organization_change_preview": preview_values,
+        "organization_conflicts": organization_conflicts,
         "path_normalizations": sorted(
             path_normalizations,
             key=lambda item: (item["submitted_path"], item["group_id"]),

@@ -114,6 +114,25 @@ def test_transient_github_eof_is_retried(tmp_path: Path) -> None:
     assert sleeps == [1.0]
 
 
+def test_exhausted_transient_error_exposes_retry_guidance(tmp_path: Path) -> None:
+    def runner(command, **kwargs):
+        raise subprocess.CalledProcessError(1, command, stderr="unexpected EOF")
+
+    client = GitHubReviewClient(
+        repository="example/repository",
+        root=tmp_path,
+        max_attempts=1,
+        runner=runner,
+    )
+
+    with pytest.raises(AgentReviewError) as captured:
+        client._json("repos/example/repository")
+
+    assert captured.value.code == "review_github_unavailable"
+    assert captured.value.retryable is True
+    assert captured.value.next_command == "请重试刚才的 mentor-data review 命令"
+
+
 def test_mutating_github_command_is_not_replayed_after_eof(tmp_path: Path) -> None:
     attempts = 0
 
@@ -129,10 +148,12 @@ def test_mutating_github_command_is_not_replayed_after_eof(tmp_path: Path) -> No
         sleeper=lambda seconds: None,
     )
 
-    with pytest.raises(AgentReviewError):
+    with pytest.raises(AgentReviewError) as captured:
         client.submit_review_comment(12, "review")
 
     assert attempts == 1
+    assert captured.value.retryable is False
+    assert captured.value.next_command is None
 
 
 def test_retry_promotion_dispatches_only_the_trusted_workflow(tmp_path: Path) -> None:

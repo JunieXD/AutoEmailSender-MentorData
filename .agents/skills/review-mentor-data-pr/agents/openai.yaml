@@ -1,4 +1,4 @@
 interface:
   display_name: "社区导师投稿审核"
-  short_description: "人机协作审核社区导师投稿的机构规范化、归属决策与安全入库流程"
-  default_prompt: "Use $review-mentor-data-pr to review one or more MentorData PRs, escalating only ambiguous organization decisions."
+  short_description: "自动处理安全规范化，仅上报有业务影响的导师投稿歧义"
+  default_prompt: "Use $review-mentor-data-pr to review one or more MentorData PRs, resolve safe normalizations autonomously, and escalate only material organization decisions."
