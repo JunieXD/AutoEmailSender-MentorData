@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d564dc3cc10fda054f8e"
+      ],
+      "ended_at": null,
+      "id": "aff_f955edbb733324a3334a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/dengtian2/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d564dc3cc10fda054f8e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f955edbb733324a3334a",
+      "claim_ids": [
+        "claim_d564dc3cc10fda054f8e"
+      ],
+      "is_primary": true,
+      "normalized_value": "tiandeng@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/dengtian2/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tiandeng@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d564dc3cc10fda054f8e"
+    ],
+    "email": [
+      "claim_d564dc3cc10fda054f8e"
+    ],
+    "name": [
+      "claim_d564dc3cc10fda054f8e"
+    ],
+    "profile_url": [
+      "claim_d564dc3cc10fda054f8e"
+    ],
+    "research_directions": [
+      "claim_d564dc3cc10fda054f8e"
+    ],
+    "status": [
+      "claim_d564dc3cc10fda054f8e"
+    ],
+    "title": [
+      "claim_d564dc3cc10fda054f8e"
+    ]
+  },
+  "id": "mentor_96a9a747a91cde9b020d",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d564dc3cc10fda054f8e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓田"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f955edbb733324a3334a",
+      "claim_ids": [
+        "claim_d564dc3cc10fda054f8e"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/dengtian2/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光学信号处理、光学颗粒物检测、火灾信号处理、嵌入式系统设计、微弱信号处理、光学颗粒物传感"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/dengtian2/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

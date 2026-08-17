@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b265b90ac04d66be9111"
+      ],
+      "ended_at": null,
+      "id": "aff_29446b06537c58357f35",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/fengbin1/zh_CN/index/1489780/list/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b265b90ac04d66be9111"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_29446b06537c58357f35",
+      "claim_ids": [
+        "claim_b265b90ac04d66be9111"
+      ],
+      "is_primary": true,
+      "normalized_value": "fengbin@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/fengbin1/zh_CN/index/1489780/list/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fengbin@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b265b90ac04d66be9111"
+    ],
+    "email": [
+      "claim_b265b90ac04d66be9111"
+    ],
+    "name": [
+      "claim_b265b90ac04d66be9111"
+    ],
+    "profile_url": [
+      "claim_b265b90ac04d66be9111"
+    ],
+    "recent_papers": [
+      "claim_b265b90ac04d66be9111"
+    ],
+    "research_directions": [
+      "claim_b265b90ac04d66be9111"
+    ],
+    "status": [
+      "claim_b265b90ac04d66be9111"
+    ],
+    "title": [
+      "claim_b265b90ac04d66be9111"
+    ]
+  },
+  "id": "mentor_e2ffbcb20bfc1ec5d7cd",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b265b90ac04d66be9111"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冯镔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_29446b06537c58357f35",
+      "claim_ids": [
+        "claim_b265b90ac04d66be9111"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/fengbin1/zh_CN/index/1489780/list/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "GO-MLVTON: Garment Occlusion-Aware Multi-Layer Virtual Try-On with Diffusion Models.ICASSP2026",
+    "TriC-Motion: Tri-Domain Causal Modeling Grounded Text-to-Motion Generation.ICLR 2026",
+    "Gait Recognition via Collaborating Discriminative and Generative Diffusion Models.AAAI 2026",
+    "Fourier-Based Adaptive Counterfactual Intervention for Object Re-Identification.Neural Networks 2025",
+    "CGTGait: Collaborative Graph and Transformer for Gait Emotion Recognition.IJCB2025",
+    "Collaborative Spatial and Channel Attention for Structural Vibration-based Gait Recognition.IJCB2025"
+  ],
+  "research_directions": [
+    "人体动作行为分析,包括手势识别、声纹识别、步态识别等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/fengbin1/zh_CN/index/1489780/list/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

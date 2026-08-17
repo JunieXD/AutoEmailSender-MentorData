@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6a67af06345218fbff6"
+      ],
+      "ended_at": null,
+      "id": "aff_85d36be87688d9514d03",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/xuyiping",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f6a67af06345218fbff6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_85d36be87688d9514d03",
+      "claim_ids": [
+        "claim_f6a67af06345218fbff6"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuyiping@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/xuyiping",
+      "status": "current",
+      "type": "email",
+      "value": "xuyiping@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6a67af06345218fbff6"
+    ],
+    "email": [
+      "claim_f6a67af06345218fbff6"
+    ],
+    "name": [
+      "claim_f6a67af06345218fbff6"
+    ],
+    "profile_url": [
+      "claim_f6a67af06345218fbff6"
+    ],
+    "research_directions": [
+      "claim_f6a67af06345218fbff6"
+    ],
+    "status": [
+      "claim_f6a67af06345218fbff6"
+    ],
+    "title": [
+      "claim_f6a67af06345218fbff6"
+    ]
+  },
+  "id": "mentor_5db3e26d3318576be635",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6a67af06345218fbff6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许毅平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_85d36be87688d9514d03",
+      "claim_ids": [
+        "claim_f6a67af06345218fbff6"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/xuyiping"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图像处理、模式识别、计算机视觉与机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/xuyiping",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

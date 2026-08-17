@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_11b56c2a4cc4a0877752"
+      ],
+      "ended_at": null,
+      "id": "aff_e2af4ab2358f8cae304e",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/professor/dongyan/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_11b56c2a4cc4a0877752"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e2af4ab2358f8cae304e",
+      "claim_ids": [
+        "claim_11b56c2a4cc4a0877752"
+      ],
+      "is_primary": true,
+      "normalized_value": "dongyan@mail.hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/professor/dongyan/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dongyan@mail.hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_11b56c2a4cc4a0877752"
+    ],
+    "email": [
+      "claim_11b56c2a4cc4a0877752"
+    ],
+    "name": [
+      "claim_11b56c2a4cc4a0877752"
+    ],
+    "profile_url": [
+      "claim_11b56c2a4cc4a0877752"
+    ],
+    "recent_papers": [
+      "claim_11b56c2a4cc4a0877752"
+    ],
+    "research_directions": [
+      "claim_11b56c2a4cc4a0877752"
+    ],
+    "status": [
+      "claim_11b56c2a4cc4a0877752"
+    ],
+    "title": [
+      "claim_11b56c2a4cc4a0877752"
+    ]
+  },
+  "id": "mentor_c61781e8a5a76c096337",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_11b56c2a4cc4a0877752"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e2af4ab2358f8cae304e",
+      "claim_ids": [
+        "claim_11b56c2a4cc4a0877752"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/professor/dongyan/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "W. Chen, F. Lu and Y. Dong,“Improved Expression for Rank Distribution of Sparse Random Linear Network Coding,“in IEEE Communications Letters, vol. 25, no. 5, pp. 1472-1476, May 2021.",
+    "F. Lu, Y. Dong and C. W. Chen, \"Layered Decoding Algorithm and Two-Level Quasi-Cyclic Matrix Construction for Rate Compatible Modulation,\" IEEE Trans. Circuits Syst. I Reg. Papers, vol.66, pp. 3213 - 3226, Aug. 2019.",
+    "W. Chen, F. Lu and Y. Dong, \"The Rank Distribution of Sparse Random Linear Network Coding,\" IEEE Access, vol. 7, pp. 43806-43819, March, 2019.",
+    "K. Peng, J. Du, F. Lu, Q. Sun, Y. Dong, \"A Hybrid Genetic Algorithm on Routing and Scheduling for Vehicle-Assisted Multi-Drone Parcel Delivery,\" in IEEE Access, vol. 7, pp. 49191-49200, 2019.",
+    "L. Wen, Y. Dong and L. Gao, “A New Ensemble Residual Convolutional Neural Network for Remaining Useful Life Estimation”, Mathematical Biosciences and Engineering, 16(2): 862-880, 2019.",
+    "L. Wen, L. Gao, Y. Dong and Z. Zhu, “A Negative Correlation Ensemble Transfer Learning Method for Fault Diagnosis based on Convolutional Neural Network,” Mathematical Biosciences and Engineering, 16(5):3311-3330, 2019.",
+    "Feng Feng, Yuqiu Zhou, Yu Zhao, Fang Lu and Yan Dong, “An constant envelope RCM signal,”空间信息网络会议,乌镇,Sept. 2019.",
+    "WenguiRao, Yan Dong, Shaoping Chen, Fang Lu and Shu Wang, “Low- complexity rate compatible modulation with hybrid weight set,” China Commun., Nov. 2019."
+  ],
+  "research_directions": [
+    "无线通信系统、卫星通信网络、自适应传输、无线传感器网络、通信信号处理、调制编码、机器学习、5G应用、自组网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/professor/dongyan/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

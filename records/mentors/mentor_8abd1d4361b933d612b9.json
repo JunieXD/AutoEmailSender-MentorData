@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_90cc15c5b1487fd03f7e"
+      ],
+      "ended_at": null,
+      "id": "aff_5ae1ea0dc3c2e41d86f8",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_08d368435c9a6965423a",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/liuminggang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_90cc15c5b1487fd03f7e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5ae1ea0dc3c2e41d86f8",
+      "claim_ids": [
+        "claim_90cc15c5b1487fd03f7e"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuminggang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/liuminggang",
+      "status": "current",
+      "type": "email",
+      "value": "liuminggang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_90cc15c5b1487fd03f7e"
+    ],
+    "email": [
+      "claim_90cc15c5b1487fd03f7e"
+    ],
+    "name": [
+      "claim_90cc15c5b1487fd03f7e"
+    ],
+    "profile_url": [
+      "claim_90cc15c5b1487fd03f7e"
+    ],
+    "recent_papers": [
+      "claim_90cc15c5b1487fd03f7e"
+    ],
+    "research_directions": [
+      "claim_90cc15c5b1487fd03f7e"
+    ],
+    "status": [
+      "claim_90cc15c5b1487fd03f7e"
+    ],
+    "title": [
+      "claim_90cc15c5b1487fd03f7e"
+    ]
+  },
+  "id": "mentor_8abd1d4361b933d612b9",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_90cc15c5b1487fd03f7e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘明罡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5ae1ea0dc3c2e41d86f8",
+      "claim_ids": [
+        "claim_90cc15c5b1487fd03f7e"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/liuminggang"
+    }
+  ],
+  "recent_papers": [
+    "刘明罡,扁波导馈电的平板缝隙天线阵的带宽扩展,微波学报2009.4",
+    "刘明罡,平面天线阵方向图计算中的仿射坐标FFT方法,微波学报2010.2",
+    "Minggang Liu,ZhengheFeng,A novel hybrid planar SIW magic tee and monopulse antenna,Microwave and Optical Technology Letters,2010.3"
+  ],
+  "research_directions": [
+    "相控阵天线系统、分布式阵列天线技术、低成本相控阵天线、相控阵阵馈源技术、相控阵天线标校与自动化测试、隐身与电磁兼容技术等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/liuminggang",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

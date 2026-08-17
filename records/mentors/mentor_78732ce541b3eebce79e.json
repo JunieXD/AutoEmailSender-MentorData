@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8df9c4ee6ae54412f950"
+      ],
+      "ended_at": null,
+      "id": "aff_41b9b1833e5a2941f4ca",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/wuweimin",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8df9c4ee6ae54412f950"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_41b9b1833e5a2941f4ca",
+      "claim_ids": [
+        "claim_8df9c4ee6ae54412f950"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuwm@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/wuweimin",
+      "status": "current",
+      "type": "email",
+      "value": "wuwm@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8df9c4ee6ae54412f950"
+    ],
+    "email": [
+      "claim_8df9c4ee6ae54412f950"
+    ],
+    "name": [
+      "claim_8df9c4ee6ae54412f950"
+    ],
+    "profile_url": [
+      "claim_8df9c4ee6ae54412f950"
+    ],
+    "recent_papers": [
+      "claim_8df9c4ee6ae54412f950"
+    ],
+    "research_directions": [
+      "claim_8df9c4ee6ae54412f950"
+    ],
+    "status": [
+      "claim_8df9c4ee6ae54412f950"
+    ],
+    "title": [
+      "claim_8df9c4ee6ae54412f950"
+    ]
+  },
+  "id": "mentor_78732ce541b3eebce79e",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8df9c4ee6ae54412f950"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴伟民"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_41b9b1833e5a2941f4ca",
+      "claim_ids": [
+        "claim_8df9c4ee6ae54412f950"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/wuweimin"
+    }
+  ],
+  "recent_papers": [
+    "Sparsity-Boosted Detection for Large MIMO Systems",
+    "The Impact of Speed on the Convergence of Gossip Algorithms with Mobility in Wireless Sensor Networks",
+    "TCP Traffic Performance Improving in LTE-A Networks",
+    "M2M access performance in LTE-A system",
+    "News videos anchor person detection by shot clustering",
+    "Optimal bandwidth allocation for hybrid Video-on-Demand streaming with a distributed max flow algorithm",
+    "Distributed averaging in wireless sensor networks with triplewise gossip algorithms",
+    "Sparsity-aware, channel order-blind pilot placement with channel estimation in orthogonal frequency division multiplexing systems"
+  ],
+  "research_directions": [
+    "无线通信系统与样机研发、4G/5G的L2协议创新性研究、WiFi协议创新性研究(MAC传输优化)、异构融合组网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/wuweimin",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

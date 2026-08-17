@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7328dcd78ef905be6914"
+      ],
+      "ended_at": null,
+      "id": "aff_ac3d2707f850fb12d76a",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/professor/liuwenyu",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7328dcd78ef905be6914"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ac3d2707f850fb12d76a",
+      "claim_ids": [
+        "claim_7328dcd78ef905be6914"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuwy@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/professor/liuwenyu",
+      "status": "current",
+      "type": "email",
+      "value": "liuwy@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7328dcd78ef905be6914"
+    ],
+    "email": [
+      "claim_7328dcd78ef905be6914"
+    ],
+    "name": [
+      "claim_7328dcd78ef905be6914"
+    ],
+    "profile_url": [
+      "claim_7328dcd78ef905be6914"
+    ],
+    "recent_papers": [
+      "claim_7328dcd78ef905be6914"
+    ],
+    "research_directions": [
+      "claim_7328dcd78ef905be6914"
+    ],
+    "status": [
+      "claim_7328dcd78ef905be6914"
+    ],
+    "title": [
+      "claim_7328dcd78ef905be6914"
+    ]
+  },
+  "id": "mentor_6dbdd4155c8cbbd34021",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7328dcd78ef905be6914"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘文予"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ac3d2707f850fb12d76a",
+      "claim_ids": [
+        "claim_7328dcd78ef905be6914"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/professor/liuwenyu"
+    }
+  ],
+  "recent_papers": [
+    "Structured random forest for label distribution learning",
+    "Deep attention network for joint hand gesture localization and recognition using static RGB-D images",
+    "DeepMitosis: Mitosis detection via deep detection, verification and segmentation networks",
+    "Revisiting multiple instance neural networks",
+    "Cascaded Segmentation-Detection Networks for Text-Based Traffic Sign Detection",
+    "Face Alignment With Deep Regression",
+    "Neural features for pedestrian detection",
+    "Learning extremely shared middle-level image representation for scene classification"
+  ],
+  "research_directions": [
+    "人工智能、机器学习、计算机视觉、机器人等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/professor/liuwenyu",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

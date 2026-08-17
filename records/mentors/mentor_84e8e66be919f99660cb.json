@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8e327f2e3d6bdec2a166"
+      ],
+      "ended_at": null,
+      "id": "aff_7f14bc658241e1dd0d90",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/zhanghua",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8e327f2e3d6bdec2a166"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7f14bc658241e1dd0d90",
+      "claim_ids": [
+        "claim_8e327f2e3d6bdec2a166"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanghua@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/zhanghua",
+      "status": "current",
+      "type": "email",
+      "value": "zhanghua@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8e327f2e3d6bdec2a166"
+    ],
+    "email": [
+      "claim_8e327f2e3d6bdec2a166"
+    ],
+    "name": [
+      "claim_8e327f2e3d6bdec2a166"
+    ],
+    "profile_url": [
+      "claim_8e327f2e3d6bdec2a166"
+    ],
+    "recent_papers": [
+      "claim_8e327f2e3d6bdec2a166"
+    ],
+    "research_directions": [
+      "claim_8e327f2e3d6bdec2a166"
+    ],
+    "status": [
+      "claim_8e327f2e3d6bdec2a166"
+    ],
+    "title": [
+      "claim_8e327f2e3d6bdec2a166"
+    ]
+  },
+  "id": "mentor_84e8e66be919f99660cb",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8e327f2e3d6bdec2a166"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7f14bc658241e1dd0d90",
+      "claim_ids": [
+        "claim_8e327f2e3d6bdec2a166"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/zhanghua"
+    }
+  ],
+  "recent_papers": [
+    "Nonlinear Blind Compensation for Array Signal Processing Application[J]. Sensors,2018,18(4)",
+    "A Nonlinearity Mitigation Method for a Broadband RF Front-End in a Sensor Based on Best Delay Searching[J].Sensors,2017, 17(10)",
+    "Improved singular value decomposition based de-noising algorithm in digital receiver front-end[J].IET Communications,2017,11(13)",
+    "SVD-based technique for interference cancellation and noise reduction in NMR measurement of time-dependent magnetic fields [J]. Sensors, 2016, 16(3)",
+    "Mitigating RF Front-end Nonlinearity of Sensor Nodes to Enhance Spectrum Sensing[J]. Sensors, 2016,16(12)",
+    "非线性盲辨识补偿处理的宽带超外差接收机[J].信号处理,2017,33(9)"
+  ],
+  "research_directions": [
+    "目标探测与定位、无线电监测、软件无线电"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/zhanghua",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5ef0be2052dab4143687"
+      ],
+      "ended_at": null,
+      "id": "aff_ea43ac73b1ecb6af9d4b",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/tangzuping",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5ef0be2052dab4143687"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ea43ac73b1ecb6af9d4b",
+      "claim_ids": [
+        "claim_5ef0be2052dab4143687"
+      ],
+      "is_primary": true,
+      "normalized_value": "tang_zuping@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/tangzuping",
+      "status": "current",
+      "type": "email",
+      "value": "tang_zuping@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5ef0be2052dab4143687"
+    ],
+    "email": [
+      "claim_5ef0be2052dab4143687"
+    ],
+    "name": [
+      "claim_5ef0be2052dab4143687"
+    ],
+    "profile_url": [
+      "claim_5ef0be2052dab4143687"
+    ],
+    "recent_papers": [
+      "claim_5ef0be2052dab4143687"
+    ],
+    "research_directions": [
+      "claim_5ef0be2052dab4143687"
+    ],
+    "status": [
+      "claim_5ef0be2052dab4143687"
+    ],
+    "title": [
+      "claim_5ef0be2052dab4143687"
+    ]
+  },
+  "id": "mentor_4b82cc66a7079fb9d0fd",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5ef0be2052dab4143687"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "唐祖平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ea43ac73b1ecb6af9d4b",
+      "claim_ids": [
+        "claim_5ef0be2052dab4143687"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/tangzuping"
+    }
+  ],
+  "recent_papers": [
+    "Unsupervised Text Style Transfer Based on Variational Auto-Encoder",
+    "A new unambiguous tracking algorithm for sine-BOC(m, n) signals",
+    "Unambiguous Tracking Technique Based on Combined Correlation Functions for Sine BOC Signals",
+    "An Unambiguous Tracking Technique for Cosine-Phased BOC Signals with Low Complexity",
+    "Spectrally Efficient Constant Envelope Modulation for GNSS Signals",
+    "Phase-aligned Dual-frequency Constant Envelope Multiplexing Technique for GNSS Signals",
+    "General Time-Division AltBOC Modulation Technique for GNSS Signals",
+    "An Unambiguous Acquisition Technique for Sine BOC(m,n) Signals"
+  ],
+  "research_directions": [
+    "导航/通信信号设计、信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/tangzuping",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

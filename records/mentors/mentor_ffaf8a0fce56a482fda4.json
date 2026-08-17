@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_34d1a3f05bfecf15279b"
+      ],
+      "ended_at": null,
+      "id": "aff_c7038311af3608bf8d15",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/yuzhou",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_34d1a3f05bfecf15279b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c7038311af3608bf8d15",
+      "claim_ids": [
+        "claim_34d1a3f05bfecf15279b"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuzhou@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/yuzhou",
+      "status": "current",
+      "type": "email",
+      "value": "yuzhou@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_34d1a3f05bfecf15279b"
+    ],
+    "email": [
+      "claim_34d1a3f05bfecf15279b"
+    ],
+    "name": [
+      "claim_34d1a3f05bfecf15279b"
+    ],
+    "profile_url": [
+      "claim_34d1a3f05bfecf15279b"
+    ],
+    "research_directions": [
+      "claim_34d1a3f05bfecf15279b"
+    ],
+    "status": [
+      "claim_34d1a3f05bfecf15279b"
+    ],
+    "title": [
+      "claim_34d1a3f05bfecf15279b"
+    ]
+  },
+  "id": "mentor_ffaf8a0fce56a482fda4",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_34d1a3f05bfecf15279b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周瑜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c7038311af3608bf8d15",
+      "claim_ids": [
+        "claim_34d1a3f05bfecf15279b"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/yuzhou"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉,开放场景视觉感知,工业视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/yuzhou",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

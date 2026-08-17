@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e8bdf43f0f7c86e58a94"
+      ],
+      "ended_at": null,
+      "id": "aff_ce143e1435a605b102ff",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/chenwang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_e8bdf43f0f7c86e58a94"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ce143e1435a605b102ff",
+      "claim_ids": [
+        "claim_e8bdf43f0f7c86e58a94"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenwang@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/chenwang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenwang@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e8bdf43f0f7c86e58a94"
+    ],
+    "email": [
+      "claim_e8bdf43f0f7c86e58a94"
+    ],
+    "name": [
+      "claim_e8bdf43f0f7c86e58a94"
+    ],
+    "profile_url": [
+      "claim_e8bdf43f0f7c86e58a94"
+    ],
+    "research_directions": [
+      "claim_e8bdf43f0f7c86e58a94"
+    ],
+    "status": [
+      "claim_e8bdf43f0f7c86e58a94"
+    ],
+    "title": [
+      "claim_e8bdf43f0f7c86e58a94"
+    ]
+  },
+  "id": "mentor_46d7bde6bed2dc79d4c4",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e8bdf43f0f7c86e58a94"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王琛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ce143e1435a605b102ff",
+      "claim_ids": [
+        "claim_e8bdf43f0f7c86e58a94"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/chenwang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络空间安全、通信与信息系统、模式识别与智能系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/chenwang/zh_CN/index.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

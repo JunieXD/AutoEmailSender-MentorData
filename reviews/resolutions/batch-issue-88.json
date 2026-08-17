@@ -1,0 +1,587 @@
+{
+  "created_organization_ids": [
+    "org_auto_08d368435c9a6965423a",
+    "org_auto_48041cdb0f366302336c",
+    "org_auto_9bf143eb818ab8e56400",
+    "org_auto_d4b7dea2c4e226273a46",
+    "org_auto_da7bb7908a757ae13f8c",
+    "org_auto_ec6aa374017f6bca765f",
+    "org_auto_f25cbe6587ff2a9c807c"
+  ],
+  "decided_at": "2026-08-17T11:08:52Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_525c15ec3651c96c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子与信息工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_59c17b6411f50367",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "通信工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6e89653968e3a338",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "国家防伪工程技术研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_72073d11cc22bfe7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_ec6aa374017f6bca765f"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_73411ec4f49f898c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7466a99108ada48f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_76d53967165d60d0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_76e078ede3f38b7c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_79b03beb74625170",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_92bc0374370389c6",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_98284fb7ccc66afc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_89927c24bd3d542ac5d3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息与通信学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_88",
+  "invalid_rows": [],
+  "issue": {
+    "number": 88,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/88"
+  },
+  "manifest_sha256": "d6c2581993cdadaf7934d325f2f728f5773cd5ef11d150ce2097ec9a69f63c2e",
+  "mapped_proposal_ids": [
+    "proposal_issue_88_row_1",
+    "proposal_issue_88_row_10",
+    "proposal_issue_88_row_11",
+    "proposal_issue_88_row_12",
+    "proposal_issue_88_row_13",
+    "proposal_issue_88_row_14",
+    "proposal_issue_88_row_15",
+    "proposal_issue_88_row_16",
+    "proposal_issue_88_row_17",
+    "proposal_issue_88_row_18",
+    "proposal_issue_88_row_19",
+    "proposal_issue_88_row_2",
+    "proposal_issue_88_row_20",
+    "proposal_issue_88_row_21",
+    "proposal_issue_88_row_22",
+    "proposal_issue_88_row_23",
+    "proposal_issue_88_row_24",
+    "proposal_issue_88_row_25",
+    "proposal_issue_88_row_26",
+    "proposal_issue_88_row_27",
+    "proposal_issue_88_row_28",
+    "proposal_issue_88_row_29",
+    "proposal_issue_88_row_3",
+    "proposal_issue_88_row_30",
+    "proposal_issue_88_row_31",
+    "proposal_issue_88_row_32",
+    "proposal_issue_88_row_33",
+    "proposal_issue_88_row_34",
+    "proposal_issue_88_row_35",
+    "proposal_issue_88_row_36",
+    "proposal_issue_88_row_37",
+    "proposal_issue_88_row_38",
+    "proposal_issue_88_row_39",
+    "proposal_issue_88_row_4",
+    "proposal_issue_88_row_40",
+    "proposal_issue_88_row_41",
+    "proposal_issue_88_row_42",
+    "proposal_issue_88_row_43",
+    "proposal_issue_88_row_44",
+    "proposal_issue_88_row_45",
+    "proposal_issue_88_row_46",
+    "proposal_issue_88_row_47",
+    "proposal_issue_88_row_48",
+    "proposal_issue_88_row_49",
+    "proposal_issue_88_row_5",
+    "proposal_issue_88_row_50",
+    "proposal_issue_88_row_51",
+    "proposal_issue_88_row_52",
+    "proposal_issue_88_row_53",
+    "proposal_issue_88_row_54",
+    "proposal_issue_88_row_55",
+    "proposal_issue_88_row_56",
+    "proposal_issue_88_row_57",
+    "proposal_issue_88_row_58",
+    "proposal_issue_88_row_59",
+    "proposal_issue_88_row_6",
+    "proposal_issue_88_row_60",
+    "proposal_issue_88_row_61",
+    "proposal_issue_88_row_62",
+    "proposal_issue_88_row_63",
+    "proposal_issue_88_row_64",
+    "proposal_issue_88_row_65",
+    "proposal_issue_88_row_66",
+    "proposal_issue_88_row_67",
+    "proposal_issue_88_row_68",
+    "proposal_issue_88_row_69",
+    "proposal_issue_88_row_7",
+    "proposal_issue_88_row_70",
+    "proposal_issue_88_row_8",
+    "proposal_issue_88_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "生物医学与健康工程研究院",
+      "official_url": null,
+      "organization_id": "org_auto_ec6aa374017f6bca765f",
+      "organization_type": "institute",
+      "parent_id": "org_auto_89927c24bd3d542ac5d3"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 91,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5315247944,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

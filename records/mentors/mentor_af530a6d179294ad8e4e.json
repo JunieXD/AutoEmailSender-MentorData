@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b876944b1b0b36aa1c23"
+      ],
+      "ended_at": null,
+      "id": "aff_27698de6d3220866a993",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/chenda/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b876944b1b0b36aa1c23"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_27698de6d3220866a993",
+      "claim_ids": [
+        "claim_b876944b1b0b36aa1c23"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenda@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/chenda/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenda@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b876944b1b0b36aa1c23"
+    ],
+    "email": [
+      "claim_b876944b1b0b36aa1c23"
+    ],
+    "name": [
+      "claim_b876944b1b0b36aa1c23"
+    ],
+    "profile_url": [
+      "claim_b876944b1b0b36aa1c23"
+    ],
+    "research_directions": [
+      "claim_b876944b1b0b36aa1c23"
+    ],
+    "status": [
+      "claim_b876944b1b0b36aa1c23"
+    ],
+    "title": [
+      "claim_b876944b1b0b36aa1c23"
+    ]
+  },
+  "id": "mentor_af530a6d179294ad8e4e",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b876944b1b0b36aa1c23"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈达"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_27698de6d3220866a993",
+      "claim_ids": [
+        "claim_b876944b1b0b36aa1c23"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/chenda/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多载波调制、波形设计、信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/chenda/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_32868735995d0aa96984"
+      ],
+      "ended_at": null,
+      "id": "aff_8023e99fcc04434fddb5",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/xuzhengguang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_32868735995d0aa96984"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8023e99fcc04434fddb5",
+      "claim_ids": [
+        "claim_32868735995d0aa96984"
+      ],
+      "is_primary": true,
+      "normalized_value": "xray@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/xuzhengguang",
+      "status": "current",
+      "type": "email",
+      "value": "xray@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_32868735995d0aa96984"
+    ],
+    "email": [
+      "claim_32868735995d0aa96984"
+    ],
+    "name": [
+      "claim_32868735995d0aa96984"
+    ],
+    "profile_url": [
+      "claim_32868735995d0aa96984"
+    ],
+    "recent_papers": [
+      "claim_32868735995d0aa96984"
+    ],
+    "research_directions": [
+      "claim_32868735995d0aa96984"
+    ],
+    "status": [
+      "claim_32868735995d0aa96984"
+    ],
+    "title": [
+      "claim_32868735995d0aa96984"
+    ]
+  },
+  "id": "mentor_4908706606f5a7049733",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_32868735995d0aa96984"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐争光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8023e99fcc04434fddb5",
+      "claim_ids": [
+        "claim_32868735995d0aa96984"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/xuzhengguang"
+    }
+  ],
+  "recent_papers": [
+    "Zhengguang Xu, Yongbiao Xie. Channel capacity analysis for dirty paper coding with the binary codeword and interference. IEEE Communications Letters, 2018, 22(12): 2411-2414.",
+    "Zhengguang Xu, Wenjing Yuan. Watermark BER and channel capacity analysis for QPSK-based RF watermarking by constellation dithering in AWGN channel. IEEE Signal Processing Letters 2017, 24(7): 1068-1072.",
+    "Zhengguang Xu, Tianqi Lu, Benxiong Huang. Fast Frequency Estimation Algorithm by Least Squares Phase Unwrapping. IEEE Signal Processing Letters, 2016, 23(6): 776-779.",
+    "Zhengguang Xu, Chenghuan Ao, Benxiong Huang. Channel Capacity Analysis of the Multiple Orthogonal Sequence Spread Spectrum Watermarking in Audio Signals. IEEE Signal Processing Letters, 2016, 23(1): 20-24."
+  ],
+  "research_directions": [
+    "软件无线电、通信信号分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/xuzhengguang",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

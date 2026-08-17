@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f7ccb4fe21776fbed910"
+      ],
+      "ended_at": null,
+      "id": "aff_9a4a7f4ab5fb18b9dafe",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_9bf143eb818ab8e56400",
+      "source_url": "http://eic.hust.edu.cn/professor/yangxin",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f7ccb4fe21776fbed910"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9a4a7f4ab5fb18b9dafe",
+      "claim_ids": [
+        "claim_f7ccb4fe21776fbed910"
+      ],
+      "is_primary": true,
+      "normalized_value": "xinyang2014@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/professor/yangxin",
+      "status": "current",
+      "type": "email",
+      "value": "xinyang2014@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f7ccb4fe21776fbed910"
+    ],
+    "email": [
+      "claim_f7ccb4fe21776fbed910"
+    ],
+    "name": [
+      "claim_f7ccb4fe21776fbed910"
+    ],
+    "profile_url": [
+      "claim_f7ccb4fe21776fbed910"
+    ],
+    "recent_papers": [
+      "claim_f7ccb4fe21776fbed910"
+    ],
+    "research_directions": [
+      "claim_f7ccb4fe21776fbed910"
+    ],
+    "status": [
+      "claim_f7ccb4fe21776fbed910"
+    ],
+    "title": [
+      "claim_f7ccb4fe21776fbed910"
+    ]
+  },
+  "id": "mentor_c1610977b8812aef8313",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f7ccb4fe21776fbed910"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨欣"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9a4a7f4ab5fb18b9dafe",
+      "claim_ids": [
+        "claim_f7ccb4fe21776fbed910"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/professor/yangxin"
+    }
+  ],
+  "recent_papers": [
+    "Junlin Xian, Xiang Li, Dandan Tu, Senhua Zhu, Changzheng Zhang, Xiaowu Liu, Xin Li, Xin Yang*, Unsupervised Cross-modality Adaptation via Dual Structural-Oriented Guidance for 3D Medical Image Segmentation,IEEE Trans. on Medical Imaging(TMI), 2023",
+    "Cheng Chi, Tianyu Hao, Qingjie Wang, Peng Guo, Xin Yang*, Subspace-PnP: A Geometric Constraint Loss for Mutual Assistance of Depth and Optical Flow Estimation,Int’l Journal of Computer Vision(IJCV), 2022",
+    "Huang C., Dang Y.J., Chen P., Yang X*, Cheng K.T, One-Shot Imitation Drone Filming of Human Motion Videos,IEEE Trans. on Pattern Analysis and Machine Intelligence(TPAMI), 2021",
+    "Chen J.Y.#, Yang X.*#, Jia Q.Z., Liao C.Y., DENAO: Monocular Depth Estimation Network with Auxiliary Optical Flow,IEEE Trans. on Pattern Analysis and Machine Intelligence(TPAMI), 2020",
+    "Yang X.*, Cheng K.-T., Local Difference Binary for Ultra-fast and Distinctive Feature Description,IEEE Trans. on Pattern Recognition and Machine Intelligence (TPAMI), 2014"
+  ],
+  "research_directions": [
+    "计算机视觉、医学影像智能分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/professor/yangxin",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

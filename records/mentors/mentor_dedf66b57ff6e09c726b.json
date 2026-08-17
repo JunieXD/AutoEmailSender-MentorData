@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_03a8f954960b4570c3a4"
+      ],
+      "ended_at": null,
+      "id": "aff_69a2fea7a9e75298f203",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_d4b7dea2c4e226273a46",
+      "source_url": "http://faculty.hust.edu.cn/XianKe/zh_CN/index/2541862/list/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_03a8f954960b4570c3a4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_69a2fea7a9e75298f203",
+      "claim_ids": [
+        "claim_03a8f954960b4570c3a4"
+      ],
+      "is_primary": true,
+      "normalized_value": "kxian@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://faculty.hust.edu.cn/XianKe/zh_CN/index/2541862/list/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kxian@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_03a8f954960b4570c3a4"
+    ],
+    "email": [
+      "claim_03a8f954960b4570c3a4"
+    ],
+    "name": [
+      "claim_03a8f954960b4570c3a4"
+    ],
+    "profile_url": [
+      "claim_03a8f954960b4570c3a4"
+    ],
+    "recent_papers": [
+      "claim_03a8f954960b4570c3a4"
+    ],
+    "research_directions": [
+      "claim_03a8f954960b4570c3a4"
+    ],
+    "status": [
+      "claim_03a8f954960b4570c3a4"
+    ],
+    "title": [
+      "claim_03a8f954960b4570c3a4"
+    ]
+  },
+  "id": "mentor_dedf66b57ff6e09c726b",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_03a8f954960b4570c3a4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "鲜可"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_69a2fea7a9e75298f203",
+      "claim_ids": [
+        "claim_03a8f954960b4570c3a4"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://faculty.hust.edu.cn/XianKe/zh_CN/index/2541862/list/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "NVDS+: Towards Efficient and Versatile Neural Stabilizer for Video Depth Estimation",
+    "Towards Robust Monocular Depth Estimation: A New Baseline and Benchmark",
+    "ViTA: Video Transformer Adaptor for Robust Video Depth Estimation",
+    "Neural Video Depth Stabilizer",
+    "Make-It-4D: Synthesizing a Consistent Long-Term Dynamic Scene Video from a Single Image",
+    "3D Cinemagraphy from a Single Image"
+  ],
+  "research_directions": [
+    "计算机视觉和计算摄影学,近年来研究兴趣主要包括鲁棒深度估计、景深渲染、图像视频3D生成和编辑、说话数字人、具身智能等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hust.edu.cn/XianKe/zh_CN/index/2541862/list/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}

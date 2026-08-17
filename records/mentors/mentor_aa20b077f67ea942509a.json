@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1b7b60a1f3970d5d197a"
+      ],
+      "ended_at": null,
+      "id": "aff_c7b58bcfea511d46ae23",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:27Z",
+      "organization_id": "org_auto_08d368435c9a6965423a",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/zhangjing",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1b7b60a1f3970d5d197a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c7b58bcfea511d46ae23",
+      "claim_ids": [
+        "claim_1b7b60a1f3970d5d197a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjing@hust.edu.cn",
+      "observed_at": "2026-08-17T10:22:27Z",
+      "source_url": "http://eic.hust.edu.cn/aprofessor/zhangjing",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjing@hust.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:27Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1b7b60a1f3970d5d197a"
+    ],
+    "email": [
+      "claim_1b7b60a1f3970d5d197a"
+    ],
+    "name": [
+      "claim_1b7b60a1f3970d5d197a"
+    ],
+    "profile_url": [
+      "claim_1b7b60a1f3970d5d197a"
+    ],
+    "recent_papers": [
+      "claim_1b7b60a1f3970d5d197a"
+    ],
+    "research_directions": [
+      "claim_1b7b60a1f3970d5d197a"
+    ],
+    "status": [
+      "claim_1b7b60a1f3970d5d197a"
+    ],
+    "title": [
+      "claim_1b7b60a1f3970d5d197a"
+    ]
+  },
+  "id": "mentor_aa20b077f67ea942509a",
+  "last_verified_at": "2026-08-17T10:22:27Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1b7b60a1f3970d5d197a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张靖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c7b58bcfea511d46ae23",
+      "claim_ids": [
+        "claim_1b7b60a1f3970d5d197a"
+      ],
+      "observed_at": "2026-08-17T10:22:27Z",
+      "status": "current",
+      "url": "http://eic.hust.edu.cn/aprofessor/zhangjing"
+    }
+  ],
+  "recent_papers": [
+    "5G millimeter-wave antenna array: Design and challenges",
+    "Multi-user Massive MIMO Communication Systems based on Irregular Antenna Arrays",
+    "Uplink power control for heterogeneous small cell networks",
+    "Performance analysis of multi-path relay channels with source power adaptation",
+    "Uplink performance analysis for heterogeneous stochastic cellular networks",
+    "Multimedia over massive MIMO wireless systems",
+    "Cooperative two-path relay channels: Performance analysis using a Markov framework",
+    "An improved IMT-A GBSM MIMO channel model"
+  ],
+  "research_directions": [
+    "移动通信、绿色通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:27Z",
+  "status_reason": null,
+  "status_source_url": "http://eic.hust.edu.cn/aprofessor/zhangjing",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:27Z"
+}
