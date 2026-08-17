@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0c703d377ad1b8c9655a"
+      ],
+      "ended_at": null,
+      "id": "aff_85e353e8da3357de0909",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/yuancaixia/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0c703d377ad1b8c9655a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_85e353e8da3357de0909",
+      "claim_ids": [
+        "claim_0c703d377ad1b8c9655a"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuancx@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/yuancaixia/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuancx@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0c703d377ad1b8c9655a"
+    ],
+    "email": [
+      "claim_0c703d377ad1b8c9655a"
+    ],
+    "name": [
+      "claim_0c703d377ad1b8c9655a"
+    ],
+    "profile_url": [
+      "claim_0c703d377ad1b8c9655a"
+    ],
+    "research_directions": [
+      "claim_0c703d377ad1b8c9655a"
+    ],
+    "status": [
+      "claim_0c703d377ad1b8c9655a"
+    ],
+    "title": [
+      "claim_0c703d377ad1b8c9655a"
+    ]
+  },
+  "id": "mentor_2124db9430ab67f771e6",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0c703d377ad1b8c9655a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁彩霞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_85e353e8da3357de0909",
+      "claim_ids": [
+        "claim_0c703d377ad1b8c9655a"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yuancaixia/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、对话式人工智能、大语言模型多智能体系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yuancaixia/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

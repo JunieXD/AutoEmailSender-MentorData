@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5dadaaec5b8ff2ca7c27"
+      ],
+      "ended_at": null,
+      "id": "aff_4e9d56b3e12aacfb90f6",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_518e01d0faf25e995891",
+      "source_url": "https://ai.bupt.edu.cn/szdw/szyl/znkxyjsx.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_5dadaaec5b8ff2ca7c27"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4e9d56b3e12aacfb90f6",
+      "claim_ids": [
+        "claim_5dadaaec5b8ff2ca7c27"
+      ],
+      "is_primary": true,
+      "normalized_value": "yingming.gao@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://ai.bupt.edu.cn/szdw/szyl/znkxyjsx.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yingming.gao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5dadaaec5b8ff2ca7c27"
+    ],
+    "email": [
+      "claim_5dadaaec5b8ff2ca7c27"
+    ],
+    "name": [
+      "claim_5dadaaec5b8ff2ca7c27"
+    ],
+    "research_directions": [
+      "claim_5dadaaec5b8ff2ca7c27"
+    ],
+    "status": [
+      "claim_5dadaaec5b8ff2ca7c27"
+    ],
+    "title": [
+      "claim_5dadaaec5b8ff2ca7c27"
+    ]
+  },
+  "id": "mentor_74437dc0cf4dd2641578",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5dadaaec5b8ff2ca7c27"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高迎明"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "语音合成与识别、人机交互、语音信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.bupt.edu.cn/szdw/szyl/znkxyjsx.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

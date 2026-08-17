@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8332723b46f0e0ae4984"
+      ],
+      "ended_at": null,
+      "id": "aff_56136e03fa4627d72cce",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/yongliu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8332723b46f0e0ae4984"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_56136e03fa4627d72cce",
+      "claim_ids": [
+        "claim_8332723b46f0e0ae4984"
+      ],
+      "is_primary": true,
+      "normalized_value": "yongliu@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/yongliu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yongliu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8332723b46f0e0ae4984"
+    ],
+    "email": [
+      "claim_8332723b46f0e0ae4984"
+    ],
+    "name": [
+      "claim_8332723b46f0e0ae4984"
+    ],
+    "profile_url": [
+      "claim_8332723b46f0e0ae4984"
+    ],
+    "research_directions": [
+      "claim_8332723b46f0e0ae4984"
+    ],
+    "status": [
+      "claim_8332723b46f0e0ae4984"
+    ],
+    "title": [
+      "claim_8332723b46f0e0ae4984"
+    ]
+  },
+  "id": "mentor_c391e0e6a0fc4f8a807a",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8332723b46f0e0ae4984"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_56136e03fa4627d72cce",
+      "claim_ids": [
+        "claim_8332723b46f0e0ae4984"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yongliu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能医学图像、脑网络,脑影像定量计算、阿尔茨海默病早期影像标记研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yongliu/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

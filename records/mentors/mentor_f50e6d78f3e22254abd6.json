@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e7d76f13d8a1f8c57f59"
+      ],
+      "ended_at": null,
+      "id": "aff_2ba832c88c17c2bddca4",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/zhaofenghe/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e7d76f13d8a1f8c57f59"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2ba832c88c17c2bddca4",
+      "claim_ids": [
+        "claim_e7d76f13d8a1f8c57f59"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaofenghe@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhaofenghe/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaofenghe@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e7d76f13d8a1f8c57f59"
+    ],
+    "email": [
+      "claim_e7d76f13d8a1f8c57f59"
+    ],
+    "name": [
+      "claim_e7d76f13d8a1f8c57f59"
+    ],
+    "profile_url": [
+      "claim_e7d76f13d8a1f8c57f59"
+    ],
+    "research_directions": [
+      "claim_e7d76f13d8a1f8c57f59"
+    ],
+    "status": [
+      "claim_e7d76f13d8a1f8c57f59"
+    ],
+    "title": [
+      "claim_e7d76f13d8a1f8c57f59"
+    ]
+  },
+  "id": "mentor_f50e6d78f3e22254abd6",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e7d76f13d8a1f8c57f59"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "何召锋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2ba832c88c17c2bddca4",
+      "claim_ids": [
+        "claim_e7d76f13d8a1f8c57f59"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhaofenghe/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "强化学习与智能博弈决策、大模型安全与治理、多模态大模型、生物特征识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhaofenghe/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}

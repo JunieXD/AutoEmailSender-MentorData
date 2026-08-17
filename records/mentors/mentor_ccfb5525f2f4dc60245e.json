@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_23fdeee3aded55864ce0"
+      ],
+      "ended_at": null,
+      "id": "aff_84011943f270c490d6a1",
+      "is_primary": true,
+      "observed_at": "2026-08-17T10:22:08Z",
+      "organization_id": "org_auto_443d4467a6ab030eee9c",
+      "source_url": "https://teacher.bupt.edu.cn/tanyongmei/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_23fdeee3aded55864ce0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_84011943f270c490d6a1",
+      "claim_ids": [
+        "claim_23fdeee3aded55864ce0"
+      ],
+      "is_primary": true,
+      "normalized_value": "ymtan@bupt.edu.cn",
+      "observed_at": "2026-08-17T10:22:08Z",
+      "source_url": "https://teacher.bupt.edu.cn/tanyongmei/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ymtan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-17T10:22:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_23fdeee3aded55864ce0"
+    ],
+    "email": [
+      "claim_23fdeee3aded55864ce0"
+    ],
+    "name": [
+      "claim_23fdeee3aded55864ce0"
+    ],
+    "profile_url": [
+      "claim_23fdeee3aded55864ce0"
+    ],
+    "research_directions": [
+      "claim_23fdeee3aded55864ce0"
+    ],
+    "status": [
+      "claim_23fdeee3aded55864ce0"
+    ],
+    "title": [
+      "claim_23fdeee3aded55864ce0"
+    ]
+  },
+  "id": "mentor_ccfb5525f2f4dc60245e",
+  "last_verified_at": "2026-08-17T10:22:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_23fdeee3aded55864ce0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谭咏梅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_84011943f270c490d6a1",
+      "claim_ids": [
+        "claim_23fdeee3aded55864ce0"
+      ],
+      "observed_at": "2026-08-17T10:22:08Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/tanyongmei/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理、机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-17T10:22:08Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/tanyongmei/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-17T10:22:08Z"
+}
