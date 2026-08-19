@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ad3bfd89abb94c649dd2"
+      ],
+      "ended_at": null,
+      "id": "aff_a8171abb8beb3d29c4b4",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/290",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ad3bfd89abb94c649dd2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a8171abb8beb3d29c4b4",
+      "claim_ids": [
+        "claim_ad3bfd89abb94c649dd2"
+      ],
+      "is_primary": true,
+      "normalized_value": "bjshen@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/290",
+      "status": "current",
+      "type": "email",
+      "value": "bjshen@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ad3bfd89abb94c649dd2"
+    ],
+    "email": [
+      "claim_ad3bfd89abb94c649dd2"
+    ],
+    "name": [
+      "claim_ad3bfd89abb94c649dd2"
+    ],
+    "profile_url": [
+      "claim_ad3bfd89abb94c649dd2"
+    ],
+    "recent_papers": [
+      "claim_ad3bfd89abb94c649dd2"
+    ],
+    "research_directions": [
+      "claim_ad3bfd89abb94c649dd2"
+    ],
+    "status": [
+      "claim_ad3bfd89abb94c649dd2"
+    ],
+    "title": [
+      "claim_ad3bfd89abb94c649dd2"
+    ]
+  },
+  "id": "mentor_f1d89564a2207fa87e11",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ad3bfd89abb94c649dd2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈备军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a8171abb8beb3d29c4b4",
+      "claim_ids": [
+        "claim_ad3bfd89abb94c649dd2"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/290"
+    }
+  ],
+  "recent_papers": [
+    "Shuai Zhang, Xiaodong Gu, Yuting Chen, Beijun Shen*. InfeRE: Step-by-Step Regex Generation via Chain of Inference, ASE, Kirchberg, Luxembourg, Sept. 11-15, 2023",
+    "Mingsheng Jiao, Tingrui Yu, Xuan Li, Guanjie Qiu, Xiaodong Gu, Beijun Shen. On the Evaluation of Neural Code Translation: Taxonomy and Benchmark, ASE, Kirchberg, Luxembourg, Sept. 11-15, 2023",
+    "X. Miao, Z. Lin, S. Wang, L. Yu, S. Li, Z. Wang, P. Nie, Y. Chen, B. Shen, H. Jiang. Lejacon: A Lightweight and Efficient Approach to Java Confidential Computing on SGX, ICSE, Melbourne, Australia, 14-20 May, 2023. ACM SIGSOFT Distinguished Paper.",
+    "Zhaowei Zhang, Hongyu Zhang, Beijun Shen, Xiaodong Gu, Diet Code is Healthy: Simplifying Programs for Pre-trained Code Models, ESEC/FSE, Singapore, November 14-18, 2022",
+    "Nan Cui, Xiaodong Gu, Beijun Shen*, Zero-Shot Program Representation Learning, ICPC, Virtual, May 16-17, 2022",
+    "Shouliang Yang, Xiaodong Gu, Beijun Shen*, Self-Supervised Learning of Smart Contract Representations, ICPC, Virtual, May 16-17, 2022",
+    "Yitian Chai, Hongyu Zhang, Beijun Shen, Xiaodong Gu, Cross-Domain Deep Code Search with Meta Learning, ICSE, Pittsburgh, Pennsylvania, USA, May 21-29, 2022",
+    "Dangwei Wu, Beijun Shen*, Yuting Chen, Tensfa: Detecting and Repairing Tensor Shape Faults in Deep Learning Systems, ISSRE, Oct. 25 - 28, 2021. Best paper candidate."
+  ],
+  "research_directions": [
+    "大数据驱动的智能软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/290",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

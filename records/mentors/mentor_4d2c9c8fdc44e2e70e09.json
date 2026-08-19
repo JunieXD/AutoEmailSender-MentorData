@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6248d0f52dc1820dad0"
+      ],
+      "ended_at": null,
+      "id": "aff_93414a5930e56e1e38b9",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/303",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f6248d0f52dc1820dad0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_93414a5930e56e1e38b9",
+      "claim_ids": [
+        "claim_f6248d0f52dc1820dad0"
+      ],
+      "is_primary": true,
+      "normalized_value": "li-jian@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/303",
+      "status": "current",
+      "type": "email",
+      "value": "li-jian@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6248d0f52dc1820dad0"
+    ],
+    "email": [
+      "claim_f6248d0f52dc1820dad0"
+    ],
+    "name": [
+      "claim_f6248d0f52dc1820dad0"
+    ],
+    "profile_url": [
+      "claim_f6248d0f52dc1820dad0"
+    ],
+    "recent_papers": [
+      "claim_f6248d0f52dc1820dad0"
+    ],
+    "research_directions": [
+      "claim_f6248d0f52dc1820dad0"
+    ],
+    "status": [
+      "claim_f6248d0f52dc1820dad0"
+    ],
+    "title": [
+      "claim_f6248d0f52dc1820dad0"
+    ]
+  },
+  "id": "mentor_4d2c9c8fdc44e2e70e09",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6248d0f52dc1820dad0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李健"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_93414a5930e56e1e38b9",
+      "claim_ids": [
+        "claim_f6248d0f52dc1820dad0"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/303"
+    }
+  ],
+  "recent_papers": [
+    "Jian Li, Jianmin Qian and Haibing Guan. A Holistic Model for Performance Prediction and Optimization on NUMA-based Virtualized Systems, INFOCOM2019.",
+    "X. Hu, C. Wei, J. Li, B. Will, P. Yu, L. Gong, H. Guan, QTLS: High-Performance TLS Asynchronous Offload Framework with Intel QuickAssist Technology, PPoPP 2019, accepted.",
+    "Jianmin Qian, Jian Li, Ruhui Ma, Haibing Guan, vDRAM: dynamic adaptive resource management for virtualized multiprocessor system, DATE 2019.",
+    "Jianmin Qian, Jian Li, Ruhui Ma and Haibing Guan. Characterizing and Optimizing Virtual Resource Management in Consolidated NUMA Servers, 2018 IEEE International Conference on Computer Design (ICCD).",
+    "Wang Zhang, Xiaokang Hu, Jian Li and Haibing Guan, “CoINT: Proactive Coordinator for Avoiding the Interruptability Holder Preemption Problem in VSMP Environment”, IEEE INFOCOM, Honolulu, USA. April 2018",
+    "Jianmin Qian, Jian Li and Ruhui Ma, “Topology-Aware Virtual Resource Management For Heterogeneous Multicore System” The 21st Automation and Test in Europe (DATE) conference and exhibition, Germany, 19–23 March, 2018.",
+    "Changzheng Wei, Jian Li, Weigang Li, Ping Yu, and Haibing Guan. “STYX: a trusted and accelerated hierarchical SSL key management and distribution system for cloud based CDN application”. In Proceedings of the 2017 Symposium on Cloud Computing (SoCC '17). ACM, New York, NY, USA, 201-213.",
+    "Xiaokang Hu, Wang Zhang, Jian Li, Ruhui Ma, Feng Wu, Haibing Guan, \"ES2: Aiming at an Optimal Virtual I/O Event Path\", 2017 46th International Conference on Parallel Processing (ICPP), vol. 00, no. , pp. 141-150, 2017"
+  ],
+  "research_directions": [
+    "云计算与虚拟化技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/303",
+  "title": "教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cce4e8b4c3da79100f24"
+      ],
+      "ended_at": null,
+      "id": "aff_f29c75369dd283c0f14e",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/272",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cce4e8b4c3da79100f24"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f29c75369dd283c0f14e",
+      "claim_ids": [
+        "claim_cce4e8b4c3da79100f24"
+      ],
+      "is_primary": true,
+      "normalized_value": "gujinyu@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/272",
+      "status": "current",
+      "type": "email",
+      "value": "gujinyu@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cce4e8b4c3da79100f24"
+    ],
+    "email": [
+      "claim_cce4e8b4c3da79100f24"
+    ],
+    "name": [
+      "claim_cce4e8b4c3da79100f24"
+    ],
+    "profile_url": [
+      "claim_cce4e8b4c3da79100f24"
+    ],
+    "recent_papers": [
+      "claim_cce4e8b4c3da79100f24"
+    ],
+    "research_directions": [
+      "claim_cce4e8b4c3da79100f24"
+    ],
+    "status": [
+      "claim_cce4e8b4c3da79100f24"
+    ],
+    "title": [
+      "claim_cce4e8b4c3da79100f24"
+    ]
+  },
+  "id": "mentor_986440af2d711571f9c0",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cce4e8b4c3da79100f24"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "古金宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f29c75369dd283c0f14e",
+      "claim_ids": [
+        "claim_cce4e8b4c3da79100f24"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/272"
+    }
+  ],
+  "recent_papers": [
+    "A Hardware-Software Co-Design for Efficient Secure Containers",
+    "Serverless Functions Made Confidential and Efficient with Split Containers",
+    "ODRP: On-Demand Remote Paging with Programmable RDMA",
+    "HTLL: Latency-Aware Scalable Blocking Mutex",
+    "No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing",
+    "Understanding and Mitigating Twin Function Misuses in Operating System Kernel",
+    "EPK: Scalable and Efficient Memory Protection Key",
+    "A Hardware-Software Co-design for Efficient Intra-Enclave Isolation"
+  ],
+  "research_directions": [
+    "微内核操作系统、可信执行环境与系统安全、同步原语"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/272",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

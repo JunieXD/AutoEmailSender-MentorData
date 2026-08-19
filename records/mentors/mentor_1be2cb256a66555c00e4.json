@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1f394fb2c99c6d33f083"
+      ],
+      "ended_at": null,
+      "id": "aff_9ee32a5998a0c7fa09b2",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/268",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_1f394fb2c99c6d33f083"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9ee32a5998a0c7fa09b2",
+      "claim_ids": [
+        "claim_1f394fb2c99c6d33f083"
+      ],
+      "is_primary": true,
+      "normalized_value": "dd_nirvana@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/268",
+      "status": "current",
+      "type": "email",
+      "value": "dd_nirvana@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1f394fb2c99c6d33f083"
+    ],
+    "email": [
+      "claim_1f394fb2c99c6d33f083"
+    ],
+    "name": [
+      "claim_1f394fb2c99c6d33f083"
+    ],
+    "profile_url": [
+      "claim_1f394fb2c99c6d33f083"
+    ],
+    "recent_papers": [
+      "claim_1f394fb2c99c6d33f083"
+    ],
+    "research_directions": [
+      "claim_1f394fb2c99c6d33f083"
+    ],
+    "status": [
+      "claim_1f394fb2c99c6d33f083"
+    ],
+    "title": [
+      "claim_1f394fb2c99c6d33f083"
+    ]
+  },
+  "id": "mentor_1be2cb256a66555c00e4",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1f394fb2c99c6d33f083"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜冬冬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9ee32a5998a0c7fa09b2",
+      "claim_ids": [
+        "claim_1f394fb2c99c6d33f083"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/268"
+    }
+  ],
+  "recent_papers": [
+    "[ASPLOS] Serverless Computing on Heterogeneous Computers. Dong Du, Qingyuan Liu, Xueqiang Jiang, and 3 more authors. In Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems 2022",
+    "[OSDI] Scalable Memory Protection in the PENGLAI Enclave. Erhu Feng, Xu Lu, Dong Du, and Bicheng Yang, Xueqiang Jiang, Yubin Xia, Binyu Zang, Haibo Chen. In 15th USENIX Symposium on Operating Systems Design and Implementation (OSDI 21) Jul 2021",
+    "[ASPLOS] Catalyzer: Sub-Millisecond Startup for Serverless Computing with Initialization-Less Booting. Dong Du, Tianyi Yu, Yubin Xia, and Binyu Zang, Guanglu Yan, Chenggang Qin, Qixuan Wu, Haibo Chen. In Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems Jul 2020",
+    "[SOCC] Characterizing Serverless Platforms with Serverlessbench. Tianyi Yu, Qingyuan Liu, Dong Du, and Yubin Xia, Binyu Zang, Ziqian Lu, Pingchao Yang, Chenggang Qin, Haibo Chen. In Proceedings of the 11th ACM Symposium on Cloud Computing Jul 2020",
+    "[ISCA] XPC: Architectural Support for Secure and Efficient Cross Process Call. Dong Du, Zhichao Hua, Yubin Xia, and Binyu Zang, Haibo Chen. In Proceedings of the 46th International Symposium on Computer Architecture Jul 2019"
+  ],
+  "research_directions": [
+    "操作系统、体系结构、服务器无感知计算、RISC-V"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/268",
+  "title": "助理研究员",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b2bb011c9ebb36489579"
+      ],
+      "ended_at": null,
+      "id": "aff_3dc83f2e3e5757339c73",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/284",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_b2bb011c9ebb36489579"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3dc83f2e3e5757339c73",
+      "claim_ids": [
+        "claim_b2bb011c9ebb36489579"
+      ],
+      "is_primary": true,
+      "normalized_value": "wgeng@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/284",
+      "status": "current",
+      "type": "email",
+      "value": "wgeng@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b2bb011c9ebb36489579"
+    ],
+    "email": [
+      "claim_b2bb011c9ebb36489579"
+    ],
+    "name": [
+      "claim_b2bb011c9ebb36489579"
+    ],
+    "profile_url": [
+      "claim_b2bb011c9ebb36489579"
+    ],
+    "recent_papers": [
+      "claim_b2bb011c9ebb36489579"
+    ],
+    "research_directions": [
+      "claim_b2bb011c9ebb36489579"
+    ],
+    "status": [
+      "claim_b2bb011c9ebb36489579"
+    ]
+  },
+  "id": "mentor_1a587d07cf1f57006836",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b2bb011c9ebb36489579"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王赓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3dc83f2e3e5757339c73",
+      "claim_ids": [
+        "claim_b2bb011c9ebb36489579"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/284"
+    }
+  ],
+  "recent_papers": [
+    "Li Jinke, Wang Geng. An improved SIFT matching algorithm based on geometric similarity. Proceedings of 2015 IEEE 5th International Conference on Electronics Information and Emergency Communication (ICEIEC 2015).",
+    "Zou Runyang, Li Qiang, Wang Geng. A Simple Real-time Object Tracking System Based on small-scale VTOL UAV, IEEE Chinese Guidance,Navigation and Control Conference (IEEE CGNCC),August 8-10, 2014",
+    "Li Jun Fei, Wang Geng, Li Qiang. Improved SURF Detection combined with Dual FLANN Matching and Clustering Analysis. 2nd International Conference on Computer Science, Electronic Technology and Intelligent System (CSETIS), 2014",
+    "Li Jing, Wang Geng. A shadow detection method based on improved Gaussian Mixture Model. Proceedings of 2013 IEEE 4th International Conference on Electronics Information and Emergency Communication (ICEIEC 2013).",
+    "Ge Xueshi, Wang Geng. Distortion based selective packet discard in H.264/SVC video transmission. Proceedings of 2013 3rd International Conference on Computer Science and Network Technology(ICCSNT 2013).",
+    "Lei Qi, Wang Geng, Wang Dong. Design of a handheld UHF RFID reader for the Internet of Things. International Conference on Computer and Management(CAMAN 2011).",
+    "Wang Geng, Sheng Huanye, Lu Tiansheng, Wang Dong, Hu Fei. Development of an autonomous flight control system for small size unmanned helicopter. 2007 IEEE International Conference on Robotics and Biomimetics, (ROBIO 2007)"
+  ],
+  "research_directions": [
+    "RFID及物联网技术、嵌入式控制系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/284",
+  "title": null,
+  "updated_at": "2026-08-19T07:00:11Z"
+}

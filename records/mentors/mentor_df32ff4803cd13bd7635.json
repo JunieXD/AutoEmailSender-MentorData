@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_31bcd3d1d4baed813ef1"
+      ],
+      "ended_at": null,
+      "id": "aff_aee5e13c4118b66e7aae",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/273",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_31bcd3d1d4baed813ef1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aee5e13c4118b66e7aae",
+      "claim_ids": [
+        "claim_31bcd3d1d4baed813ef1"
+      ],
+      "is_primary": true,
+      "normalized_value": "han_yu@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/273",
+      "status": "current",
+      "type": "email",
+      "value": "han_yu@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_31bcd3d1d4baed813ef1"
+    ],
+    "email": [
+      "claim_31bcd3d1d4baed813ef1"
+    ],
+    "name": [
+      "claim_31bcd3d1d4baed813ef1"
+    ],
+    "profile_url": [
+      "claim_31bcd3d1d4baed813ef1"
+    ],
+    "recent_papers": [
+      "claim_31bcd3d1d4baed813ef1"
+    ],
+    "research_directions": [
+      "claim_31bcd3d1d4baed813ef1"
+    ],
+    "status": [
+      "claim_31bcd3d1d4baed813ef1"
+    ],
+    "title": [
+      "claim_31bcd3d1d4baed813ef1"
+    ]
+  },
+  "id": "mentor_df32ff4803cd13bd7635",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_31bcd3d1d4baed813ef1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于晗"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aee5e13c4118b66e7aae",
+      "claim_ids": [
+        "claim_31bcd3d1d4baed813ef1"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/273"
+    }
+  ],
+  "recent_papers": [
+    "Han Yu, Li Da Xu, Hongming Cai, Shancang Li, Boyi Xu, Lihong Jiang. A Stream Processing Framework Based on Linked Data for Information Collaborating of Regional Energy Networks[J]. IEEE Transactions on Industrial Informatics, 2021, 17(1): 179-188.",
+    "Han Yu, Hongming Cai, Zhiyuan Liu, Boyi Xu, Lihong Jiang. An Automated Metadata Generation Method for Data Lake of Industrial WoT Applications[J]. IEEE Transactions on Systems, Man, Cybernetics: Systems, 2022, 52(8): 5235-5248.",
+    "于晗, 蔡鸿明, 张翼飞, 姜丽红. 基于增量式流处理的自适应群体划分方法[J]. 计算机学报, 2020, 12:2337-2351.",
+    "Han Yu, Hongming Cai, Jun Zhou, Lihong Jiang. Data service generation framework from heterogeneous printed forms using semantic link discovery[J]. Future Generation Computer Systems, 2018, 79: 514-527.",
+    "Han Yu, Congcong Ye, Hongming Cai, Lihong Jiang, Cheng Xie, Boyi Xu. CodingBlind: Automated Cloud Services Generation From Printed Forms and BPMN[J]. IEEE Access, 2018, 6: 6630-6643."
+  ],
+  "research_directions": [
+    "工业软件 知识图谱 流计算 软件互操作"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/273",
+  "title": "助理研究员",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

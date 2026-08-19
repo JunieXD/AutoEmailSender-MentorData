@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c007b052f04d6376f0a4"
+      ],
+      "ended_at": null,
+      "id": "aff_723ba52027486a305468",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/306",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c007b052f04d6376f0a4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_723ba52027486a305468",
+      "claim_ids": [
+        "claim_c007b052f04d6376f0a4"
+      ],
+      "is_primary": true,
+      "normalized_value": "byzang@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/306",
+      "status": "current",
+      "type": "email",
+      "value": "byzang@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c007b052f04d6376f0a4"
+    ],
+    "email": [
+      "claim_c007b052f04d6376f0a4"
+    ],
+    "name": [
+      "claim_c007b052f04d6376f0a4"
+    ],
+    "profile_url": [
+      "claim_c007b052f04d6376f0a4"
+    ],
+    "recent_papers": [
+      "claim_c007b052f04d6376f0a4"
+    ],
+    "research_directions": [
+      "claim_c007b052f04d6376f0a4"
+    ],
+    "status": [
+      "claim_c007b052f04d6376f0a4"
+    ]
+  },
+  "id": "mentor_f9a9f167689eafa4c9ef",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c007b052f04d6376f0a4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "臧斌宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_723ba52027486a305468",
+      "claim_ids": [
+        "claim_c007b052f04d6376f0a4"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/306"
+    }
+  ],
+  "recent_papers": [
+    "[ISCA] Reducing World Switches in Virtualized Environment with Flexible Cross-world Calls. Wenhao Li, Yubin Xia, Haibo Chen, Binyu Zang, Haibing Guan. In the 42nd International Symposium on Computer Architecture, Portland, Oregon, USA. June 2015.",
+    "[PPoPP] SYNC or ASYNC: Time to Fuse for Distributed Graph-parallel Computation. Chenning Xie, Rong Chen, Haibing Guan, Binyu Zang and Haibo Chen. ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, Bay Area, California, USA, February, 2015.",
+    "[HPCA] Concurrent and Consistent Virtual Machine Introspection with Hardware Transactional Memory. Yutao Liu, Yubin Xia, Haibing Guan, Binyu Zang, Haibo Chen. In Proceedings of the 20th IEEE International Symposium On High Performance Computer Architecture (Best Paper Nominee), Orlando, Florida, 2014.",
+    "[Usenix ATC] Revisiting Software Zero-Copy for Web-caching Applications with Twin Allocators. Xiang Song, Jicheng Shi, Haibo Chen and Binyu Zang. Proceedings of 2012 Usenix Annual Technical Conference. Boston, Massachusetts USA, 2012.",
+    "[SOSP] CloudVisor: Retrofitting Protection of Virtual Machines in Multi-tenant Cloud with Nested Virtualization. Fengzhe Zhang, Jin Chen, Haibo Chen and Binyu Zang. In 23rd ACM Symposium on Operating Systems Principles. 2011.",
+    "[PPoPP] COREMU: a Scalable and Portable Parallel Full-system Emulator. Zhaoguo Wang, Ran Liu, Yufei Chen, Xi Wu, Haibo Chen, Weihua Zang, Binyu Zang. In ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming. San Antonio, USA, February, 2011.",
+    "[TSE]Dynamic Software Updating Using a Relaxed Consistency Model. Haibo Chen, Jie Yu, Chengqun Hang, Binyu Zang and Pen-chung Yew. IEEE Transactions on Software Engineering, 2011.",
+    "Rong Chen, Haibo Chen, Binyu Zang, “Tiled-MapReduce: Optimizing Resource Usages of Data-Parallel Applications”, The19th International Conference on Parallel Architectures and Compilation Techniques (PACT 2010), pp. 523 – 534, Vienna, Austria, Sept. 2010"
+  ],
+  "research_directions": [
+    "系统软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/306",
+  "title": null,
+  "updated_at": "2026-08-19T07:00:11Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a2cdc51b92d483e2808c"
+      ],
+      "ended_at": null,
+      "id": "aff_d088b7718ee24c9b1b66",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/270",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a2cdc51b92d483e2808c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d088b7718ee24c9b1b66",
+      "claim_ids": [
+        "claim_a2cdc51b92d483e2808c"
+      ],
+      "is_primary": true,
+      "normalized_value": "pan.hu@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/270",
+      "status": "current",
+      "type": "email",
+      "value": "pan.hu@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a2cdc51b92d483e2808c"
+    ],
+    "email": [
+      "claim_a2cdc51b92d483e2808c"
+    ],
+    "name": [
+      "claim_a2cdc51b92d483e2808c"
+    ],
+    "profile_url": [
+      "claim_a2cdc51b92d483e2808c"
+    ],
+    "recent_papers": [
+      "claim_a2cdc51b92d483e2808c"
+    ],
+    "research_directions": [
+      "claim_a2cdc51b92d483e2808c"
+    ],
+    "status": [
+      "claim_a2cdc51b92d483e2808c"
+    ],
+    "title": [
+      "claim_a2cdc51b92d483e2808c"
+    ]
+  },
+  "id": "mentor_483c230ff07d71b4389e",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a2cdc51b92d483e2808c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡畔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d088b7718ee24c9b1b66",
+      "claim_ids": [
+        "claim_a2cdc51b92d483e2808c"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/270"
+    }
+  ],
+  "recent_papers": [
+    "Goal-driven Reasoning in Datalogmtl with Magic Sets",
+    "Accurate Sampling-Based Cardinality Estimation for Complex Graph Queries",
+    "Optimised Storage for Datalog Reasoning",
+    "Enhancing Datalog Reasoning with Hypertree Decompositions",
+    "Modular Materialisation of Datalog Programs",
+    "MeTeoR: Practical Reasoning in Datalog with Metric Temporal Operators",
+    "Owl2vec*: Embedding of owl ontologies",
+    "Datalog Reasoning over Compressed RDF Knowledge Bases"
+  ],
+  "research_directions": [
+    "知识表示与处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/270",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

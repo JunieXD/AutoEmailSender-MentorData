@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0f592a89a3bf18be2a94"
+      ],
+      "ended_at": null,
+      "id": "aff_4800838c05e4ef7317e9",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/310",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_0f592a89a3bf18be2a94"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4800838c05e4ef7317e9",
+      "claim_ids": [
+        "claim_0f592a89a3bf18be2a94"
+      ],
+      "is_primary": true,
+      "normalized_value": "haibochen@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/310",
+      "status": "current",
+      "type": "email",
+      "value": "haibochen@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0f592a89a3bf18be2a94"
+    ],
+    "email": [
+      "claim_0f592a89a3bf18be2a94"
+    ],
+    "name": [
+      "claim_0f592a89a3bf18be2a94"
+    ],
+    "profile_url": [
+      "claim_0f592a89a3bf18be2a94"
+    ],
+    "recent_papers": [
+      "claim_0f592a89a3bf18be2a94"
+    ],
+    "research_directions": [
+      "claim_0f592a89a3bf18be2a94"
+    ],
+    "status": [
+      "claim_0f592a89a3bf18be2a94"
+    ]
+  },
+  "id": "mentor_0539681845b2badc073b",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0f592a89a3bf18be2a94"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈海波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4800838c05e4ef7317e9",
+      "claim_ids": [
+        "claim_0f592a89a3bf18be2a94"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/310"
+    }
+  ],
+  "recent_papers": [
+    "[SOSP] Using Concurrent Relational Logic with Helper for Verifying the AtomFS File System. Mo Zou, Haoran Ding, Dong Du, Ming Fu, Ronghui Gu, Haibo Chen. The 27th ACM Symposium on Operating System Principles. Deerhurst Resort, Huntsville, Ontario, Canada, October 27-30, 2019.",
+    "[SOSP] Performance and Protection in the ZoFS User-space NVM File System. Mingkai Dong, Heng Bu, Jifei Yi, Benchao Dong, Haibo Chen. The 27th ACM Symposium on Operating System Principles. Deerhurst Resort, Huntsville, Ontario, Canada, October 27-30, 2019.",
+    "[Usenix ATC] EROFS: A Compression-friendly Readonly File System for Resource-scarce Device. Xiang Gao, Mingkai Dong, Xie Miao, Wei Du, Chao Yu, Haibo Chen. 2019 USENIX Annual Technical Conference, Renton, WA, USA, July 2019.",
+    "[ISCA] XPC: Architectural Support for Secure and Efficient Cross Process Call. Dong Du, Zhichao Hua, Yubin Xia, Binyu Zang, Haibo Chen. Proceedings of the 46th ACM/IEEE International Symposium on Computer Architecture, Phoenix, Arizona, USA. June 22-26, 2019.",
+    "[OSDI] Deconstructing RDMA-enabled Transaction Processing: Hybrid is Better! Xingda Wei, Zhiyuan Dong, Rong Chen, and Haibo Chen. Proceedings of 13th USENIX Symposium on Operating Systems Design and Implementation, Carlsbad, CA, US, October 2018.",
+    "[SOSP] Sub-millisecond Stateful Stream Querying over Fast-evolving Linked Data. Yunhao Zhang, Rong Chen, and Haibo Chen. Proceedings of the 26th ACM Symposium on Operating Systems Principles, Shanghai, China, October, 2017.",
+    "[TOCS] Fast In-memory Transaction Processing using RDMA and HTM. Haibo Chen, Rong Chen, Xingda Wei, Jiaxin Shi, Yanzhe Chen, Zhaoguo Wang, Binyu Zang, Haibing Guan. ACM Transactions on Computer Systems, Vol. 35, No. 1, Article 3, Jul, 2017.",
+    "[OSDI] Fast and Concurrent RDF Queries with RDMA-based Distributed Graph Exploration. Jiaxin Shi, Youyang Yao, Rong Chen, Haibo Chen and Feifei Li. 2016 Usenix Symposium on Operating System Design and Implementation. Savannah, GA, US, Nov, 2016."
+  ],
+  "research_directions": [
+    "操作系统、并行与分布式系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/310",
+  "title": null,
+  "updated_at": "2026-08-19T07:00:11Z"
+}

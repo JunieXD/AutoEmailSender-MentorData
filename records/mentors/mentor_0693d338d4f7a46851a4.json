@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_067e71d633b61b1bc05c"
+      ],
+      "ended_at": null,
+      "id": "aff_3565455c272e1c57265d",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/301",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_067e71d633b61b1bc05c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3565455c272e1c57265d",
+      "claim_ids": [
+        "claim_067e71d633b61b1bc05c"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiayubin@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/301",
+      "status": "current",
+      "type": "email",
+      "value": "xiayubin@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_067e71d633b61b1bc05c"
+    ],
+    "email": [
+      "claim_067e71d633b61b1bc05c"
+    ],
+    "name": [
+      "claim_067e71d633b61b1bc05c"
+    ],
+    "profile_url": [
+      "claim_067e71d633b61b1bc05c"
+    ],
+    "recent_papers": [
+      "claim_067e71d633b61b1bc05c"
+    ],
+    "research_directions": [
+      "claim_067e71d633b61b1bc05c"
+    ],
+    "status": [
+      "claim_067e71d633b61b1bc05c"
+    ],
+    "title": [
+      "claim_067e71d633b61b1bc05c"
+    ]
+  },
+  "id": "mentor_0693d338d4f7a46851a4",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_067e71d633b61b1bc05c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "夏虞斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3565455c272e1c57265d",
+      "claim_ids": [
+        "claim_067e71d633b61b1bc05c"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/301"
+    }
+  ],
+  "recent_papers": [
+    "Qingshu Chen, Liang Liang, Yubin Xia, Haibo Chen, Hyunsoo Kim, Mitigating Sync Amplification for Copy-on-write Virtual Disk,The 14th USENIX Conference on File and Storage Technologies (FAST'16),2016.2.22-2016.2.25. Santa Clara, US, Feb, 2016.",
+    "Yutao Liu, Tianyu Zhou, Kexin Chen, Haibo Chen, Yubin Xia, Thwarting Memory Disclosure with Efficient Hypervisor-enforced Intra-domain Isolation, Proceedings of the 22th ACM Conference on Computer and Communications Security (CCS'15), Denver, Colorado, US, October, 2015.",
+    "Yubin Xia, Yutao Liu, Haibing Guan, Yunji Chen, Tianshi Chen, Binyu Zang, Haibo Chen, Secure Outsourcing of Virtual Appliance, IEEE Transactions on Cloud Computing, PP(99), 2015.",
+    "Wenhao Li, Yubin Xia, Haibo Chen, Binyu Zang, Haibing Guan. Reducing World Switches in Virtualized Environment with Flexible Cross-world Calls. In the 42nd International Symposium on Computer Architecture (ISCA'15), 2015.",
+    "Wenhao Li, Haibo Li, Haibo Chen, Yubin Xia. AdAttester: Secure Online Advertisement Attestation on Mobile Devices Using TrustZone. In Proceedings of the 13th International Conference on Mobile Systems, Applications, and Services (MobiSys'15), 2015.",
+    "Yubin Xia, Yutao Liu, Cheng Tan, Mingyang Ma, Haibing Guan, Binyu Zang, Haibo Chen. TinMan: Eliminating Confidential Mobile Data Exposure with Security-oriented Offloading. In Proceedings of the 10th European Conference on Computer Systems (EuroSys'15), 2015.",
+    "Yutao Liu, Yubin Xia, Haibing Guan, Binyu Zang and Haibo Chen. Concurrent and Consistent Virtual Machine Introspection with Hardware Transactional Memory. (Best Paper Nominee) In Proceedings of 2014 International Symposium on High Performance Computer Architecture (HPCA'14), February, 2014.",
+    "Yubin Xia, Yutao Liu and Haibo Chen. Architecture Support for Guest-Transparent VM Protection from Untrusted Hypervisor and Physical Attacks. In Proceedings of 2013 International Symposium on High Performance Computer Architecture (HPCA'13), February, 2013."
+  ],
+  "research_directions": [
+    "移动安全,云计算安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/301",
+  "title": "教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

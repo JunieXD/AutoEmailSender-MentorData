@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a3e5f8f32ccb3a20392c"
+      ],
+      "ended_at": null,
+      "id": "aff_0d279e59ca1ec0f903a5",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/300",
+      "started_at": null,
+      "status": "current",
+      "title": "特聘研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_a3e5f8f32ccb3a20392c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0d279e59ca1ec0f903a5",
+      "claim_ids": [
+        "claim_a3e5f8f32ccb3a20392c"
+      ],
+      "is_primary": true,
+      "normalized_value": "guilin@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/300",
+      "status": "current",
+      "type": "email",
+      "value": "guilin@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a3e5f8f32ccb3a20392c"
+    ],
+    "email": [
+      "claim_a3e5f8f32ccb3a20392c"
+    ],
+    "name": [
+      "claim_a3e5f8f32ccb3a20392c"
+    ],
+    "profile_url": [
+      "claim_a3e5f8f32ccb3a20392c"
+    ],
+    "research_directions": [
+      "claim_a3e5f8f32ccb3a20392c"
+    ],
+    "status": [
+      "claim_a3e5f8f32ccb3a20392c"
+    ],
+    "title": [
+      "claim_a3e5f8f32ccb3a20392c"
+    ]
+  },
+  "id": "mentor_10541f87d3de41d11371",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a3e5f8f32ccb3a20392c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "归琳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0d279e59ca1ec0f903a5",
+      "claim_ids": [
+        "claim_a3e5f8f32ccb3a20392c"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/300"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "通信信号处理、移动通信网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/300",
+  "title": "特聘研究员",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

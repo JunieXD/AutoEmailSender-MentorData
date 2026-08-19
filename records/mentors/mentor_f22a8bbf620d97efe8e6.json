@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_07f8715a83045fa1797a"
+      ],
+      "ended_at": null,
+      "id": "aff_c6eeea42639b2196b9e7",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/305",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_07f8715a83045fa1797a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c6eeea42639b2196b9e7",
+      "claim_ids": [
+        "claim_07f8715a83045fa1797a"
+      ],
+      "is_primary": true,
+      "normalized_value": "hmcai@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/305",
+      "status": "current",
+      "type": "email",
+      "value": "hmcai@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_07f8715a83045fa1797a"
+    ],
+    "email": [
+      "claim_07f8715a83045fa1797a"
+    ],
+    "name": [
+      "claim_07f8715a83045fa1797a"
+    ],
+    "profile_url": [
+      "claim_07f8715a83045fa1797a"
+    ],
+    "recent_papers": [
+      "claim_07f8715a83045fa1797a"
+    ],
+    "research_directions": [
+      "claim_07f8715a83045fa1797a"
+    ],
+    "status": [
+      "claim_07f8715a83045fa1797a"
+    ],
+    "title": [
+      "claim_07f8715a83045fa1797a"
+    ]
+  },
+  "id": "mentor_f22a8bbf620d97efe8e6",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_07f8715a83045fa1797a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蔡鸿明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c6eeea42639b2196b9e7",
+      "claim_ids": [
+        "claim_07f8715a83045fa1797a"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/305"
+    }
+  ],
+  "recent_papers": [
+    "Data-driven ontology generation and evolution towards intelligent service in manufacturing systems Future Generation Computer Systems (2019)",
+    "A Short-term Energy Prediction System based on Edge Computing for Smart City, Future Generation Computer Systems (2019)",
+    "A Configurable WoT Application Platform Based on Spatiotemporal Semantic Scenarios,IEEE Transactions on Systems, Man, and Cybernetics: Systems, 49(1):123-135(2019)",
+    "A context-based service matching approach towards functional reliability for industrial systems. Enterprise Information Systems,13(2): 196-218 (2019)",
+    "Data driven business rule generation based on fog computing, Future Generation Computer Systems (2018), V89, p 494-505",
+    "Fog Computing Approach for Music Cognition System Based on Machine Learning Algorithm,IEEE Transactions on Computational Social Systems (2018), V5(4):1142-1151",
+    "A fog computing based concept drift adaptive process mining framework for mobile APPs, Future Generation Computer Systems (2018), V89, p 670-684",
+    "A service governance mechanism based on process mining for cloud-based applications, Enterprise Information Systems,12(10): 1239-1256 (2018)"
+  ],
+  "research_directions": [
+    "语义数据处理,智慧制造,协同计算,服务计算,CAD/CG"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/305",
+  "title": "教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_edb57801521f6cc4b04a"
+      ],
+      "ended_at": null,
+      "id": "aff_530f601a45108a1daf4b",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/282",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_edb57801521f6cc4b04a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_530f601a45108a1daf4b",
+      "claim_ids": [
+        "claim_edb57801521f6cc4b04a"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaodong.gu@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/282",
+      "status": "current",
+      "type": "email",
+      "value": "xiaodong.gu@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_edb57801521f6cc4b04a"
+    ],
+    "email": [
+      "claim_edb57801521f6cc4b04a"
+    ],
+    "name": [
+      "claim_edb57801521f6cc4b04a"
+    ],
+    "profile_url": [
+      "claim_edb57801521f6cc4b04a"
+    ],
+    "recent_papers": [
+      "claim_edb57801521f6cc4b04a"
+    ],
+    "research_directions": [
+      "claim_edb57801521f6cc4b04a"
+    ],
+    "status": [
+      "claim_edb57801521f6cc4b04a"
+    ],
+    "title": [
+      "claim_edb57801521f6cc4b04a"
+    ]
+  },
+  "id": "mentor_5b285b4d00b5ceda0cc1",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_edb57801521f6cc4b04a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "顾小东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_530f601a45108a1daf4b",
+      "claim_ids": [
+        "claim_edb57801521f6cc4b04a"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/282"
+    }
+  ],
+  "recent_papers": [
+    "Haoren Zhu, Hao Ge, Xiaodong Gu, Pengfei Zhao, Dik-Lun Lee. Influential Recommender System. The 39th International Conference on Data Engineering (ICDE 2023).",
+    "Xiaodong Gu, Zhaowei Zhang, Sang-Woo Lee, Kang Min Yoo, Jung-Woo Ha. Continuous Decomposition of Granularity for Neural Paraphrase Generation. The 29th International Conference on Computational Linguistics (COLING 2022)",
+    "Zhaowei Zhang, Hongyu Zhang, Beijun Shen, Xiaodong Gu* . Diet Code Is Healthy: Simplifying Programs for Pre-Trained Models of Code. The 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2022)",
+    "Nan Cui, Yuze Jiang, Xiaodong Gu, Beijun Shen, Zero-Shot Program Representation Learning. The 30th IEEE/ACM International Conference on Program Comprehension (ICPC 2022)",
+    "Shouliang Yang, Xiaodong Gu, Beijun Shen. Self-Supervised Learning of Smart Contract Representations. The 30th IEEE/ACM International Conference on Program Comprehension (ICPC 2022)",
+    "Yitian Chai, Hongyu Zhang, Beijun Shen and Xiaodong Gu* . Cross-Domain Deep Code Search with Meta Learning. The 44th International Conference on Software Engineering (ICSE 2022)",
+    "Zhen Yang, Jacky Keung, Xiao Yu, Xiaodong Gu, Zhengyuan Wei, Xiaoxue Ma, Miao Zhang. A Multi-Modal Transformer-based Code Summarization Approach for Smart Contracts. The 2021 International Conference on Program Comprehension (ICPC 2021) (CCF-B)",
+    "Xiaodong Gu, Sunghun Kim, Yo-Sub Han, Hongyu Zhang. Do Bugs Propagate? An Empirical Analysis of Temporal Correlations among Software Bugs. Proceedings of the 35th European Conference on Object-Oriented Programming (ECOOP 2021) (CCF-B)"
+  ],
+  "research_directions": [
+    "智能化软件工程、自然语言处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/282",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}
