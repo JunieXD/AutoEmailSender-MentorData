@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ec466ba6387beab284db"
+      ],
+      "ended_at": null,
+      "id": "aff_bd19a67e23694fead9a4",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhaopeilin",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ec466ba6387beab284db"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bd19a67e23694fead9a4",
+      "claim_ids": [
+        "claim_ec466ba6387beab284db"
+      ],
+      "is_primary": true,
+      "normalized_value": "peilinzhao@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhaopeilin",
+      "status": "current",
+      "type": "email",
+      "value": "peilinzhao@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ec466ba6387beab284db"
+    ],
+    "email": [
+      "claim_ec466ba6387beab284db"
+    ],
+    "name": [
+      "claim_ec466ba6387beab284db"
+    ],
+    "profile_url": [
+      "claim_ec466ba6387beab284db"
+    ],
+    "research_directions": [
+      "claim_ec466ba6387beab284db"
+    ],
+    "status": [
+      "claim_ec466ba6387beab284db"
+    ],
+    "title": [
+      "claim_ec466ba6387beab284db"
+    ]
+  },
+  "id": "mentor_8d9a67cf112c12f05e46",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ec466ba6387beab284db"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵沛霖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bd19a67e23694fead9a4",
+      "claim_ids": [
+        "claim_ec466ba6387beab284db"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhaopeilin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习及其应用,大型语言模型安全对齐、强化学习、自动化学习、制药AI、新闻推荐、公益风控"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhaopeilin",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

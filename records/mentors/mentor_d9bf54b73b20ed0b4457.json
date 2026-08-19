@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f273e74ab0c85931362c"
+      ],
+      "ended_at": null,
+      "id": "aff_a8f094d3a37d01505d84",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liyonglu",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f273e74ab0c85931362c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a8f094d3a37d01505d84",
+      "claim_ids": [
+        "claim_f273e74ab0c85931362c"
+      ],
+      "is_primary": true,
+      "normalized_value": "yonglu_li@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liyonglu",
+      "status": "current",
+      "type": "email",
+      "value": "yonglu_li@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f273e74ab0c85931362c"
+    ],
+    "email": [
+      "claim_f273e74ab0c85931362c"
+    ],
+    "name": [
+      "claim_f273e74ab0c85931362c"
+    ],
+    "profile_url": [
+      "claim_f273e74ab0c85931362c"
+    ],
+    "research_directions": [
+      "claim_f273e74ab0c85931362c"
+    ],
+    "status": [
+      "claim_f273e74ab0c85931362c"
+    ],
+    "title": [
+      "claim_f273e74ab0c85931362c"
+    ]
+  },
+  "id": "mentor_d9bf54b73b20ed0b4457",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f273e74ab0c85931362c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李永露"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a8f094d3a37d01505d84",
+      "claim_ids": [
+        "claim_f273e74ab0c85931362c"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liyonglu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "具身智能、物理推理、行为理解"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liyonglu",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

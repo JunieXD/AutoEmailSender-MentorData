@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f083f6affe881e38fb4c"
+      ],
+      "ended_at": null,
+      "id": "aff_120b96b5c76e74db0700",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/Jianhua",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f083f6affe881e38fb4c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_120b96b5c76e74db0700",
+      "claim_ids": [
+        "claim_f083f6affe881e38fb4c"
+      ],
+      "is_primary": true,
+      "normalized_value": "gothic@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/Jianhua",
+      "status": "current",
+      "type": "email",
+      "value": "gothic@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f083f6affe881e38fb4c"
+    ],
+    "email": [
+      "claim_f083f6affe881e38fb4c"
+    ],
+    "name": [
+      "claim_f083f6affe881e38fb4c"
+    ],
+    "profile_url": [
+      "claim_f083f6affe881e38fb4c"
+    ],
+    "research_directions": [
+      "claim_f083f6affe881e38fb4c"
+    ],
+    "status": [
+      "claim_f083f6affe881e38fb4c"
+    ],
+    "title": [
+      "claim_f083f6affe881e38fb4c"
+    ]
+  },
+  "id": "mentor_b56c1981f4781ce15073",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f083f6affe881e38fb4c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙健华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_120b96b5c76e74db0700",
+      "claim_ids": [
+        "claim_f083f6affe881e38fb4c"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/Jianhua"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "具身智能、空间智能、多模态理解与生成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/Jianhua",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

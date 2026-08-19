@@ -1,0 +1,120 @@
+{
+  "created_organization_ids": [
+    "org_auto_3a18b948ae6bb2e5600a",
+    "org_auto_7f6284158acd5a7f7af7"
+  ],
+  "decided_at": "2026-08-19T07:29:57Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_23f2b2d337a573b3",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "sjtu.edu.cn"
+          ],
+          "canonical_name": "上海交通大学",
+          "level": "university",
+          "official_url": "https://sjtu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_95",
+  "invalid_rows": [],
+  "issue": {
+    "number": 95,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/95"
+  },
+  "manifest_sha256": "43407b9cb33664fade56bc052f50259f7f7c6ec642b447341c3e22d20f140368",
+  "mapped_proposal_ids": [
+    "proposal_issue_95_row_1",
+    "proposal_issue_95_row_10",
+    "proposal_issue_95_row_11",
+    "proposal_issue_95_row_12",
+    "proposal_issue_95_row_13",
+    "proposal_issue_95_row_14",
+    "proposal_issue_95_row_15",
+    "proposal_issue_95_row_16",
+    "proposal_issue_95_row_17",
+    "proposal_issue_95_row_18",
+    "proposal_issue_95_row_19",
+    "proposal_issue_95_row_2",
+    "proposal_issue_95_row_20",
+    "proposal_issue_95_row_21",
+    "proposal_issue_95_row_22",
+    "proposal_issue_95_row_23",
+    "proposal_issue_95_row_24",
+    "proposal_issue_95_row_25",
+    "proposal_issue_95_row_26",
+    "proposal_issue_95_row_27",
+    "proposal_issue_95_row_28",
+    "proposal_issue_95_row_29",
+    "proposal_issue_95_row_3",
+    "proposal_issue_95_row_30",
+    "proposal_issue_95_row_31",
+    "proposal_issue_95_row_32",
+    "proposal_issue_95_row_33",
+    "proposal_issue_95_row_34",
+    "proposal_issue_95_row_35",
+    "proposal_issue_95_row_36",
+    "proposal_issue_95_row_37",
+    "proposal_issue_95_row_38",
+    "proposal_issue_95_row_39",
+    "proposal_issue_95_row_4",
+    "proposal_issue_95_row_40",
+    "proposal_issue_95_row_41",
+    "proposal_issue_95_row_42",
+    "proposal_issue_95_row_43",
+    "proposal_issue_95_row_44",
+    "proposal_issue_95_row_45",
+    "proposal_issue_95_row_5",
+    "proposal_issue_95_row_6",
+    "proposal_issue_95_row_7",
+    "proposal_issue_95_row_8",
+    "proposal_issue_95_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 98,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5338917946,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

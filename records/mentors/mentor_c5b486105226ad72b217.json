@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5df2f21c7890b759c090"
+      ],
+      "ended_at": null,
+      "id": "aff_8aec2d3020756cb596c6",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/daiguohao",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5df2f21c7890b759c090"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8aec2d3020756cb596c6",
+      "claim_ids": [
+        "claim_5df2f21c7890b759c090"
+      ],
+      "is_primary": true,
+      "normalized_value": "daiguohao@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/daiguohao",
+      "status": "current",
+      "type": "email",
+      "value": "daiguohao@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5df2f21c7890b759c090"
+    ],
+    "email": [
+      "claim_5df2f21c7890b759c090"
+    ],
+    "name": [
+      "claim_5df2f21c7890b759c090"
+    ],
+    "profile_url": [
+      "claim_5df2f21c7890b759c090"
+    ],
+    "research_directions": [
+      "claim_5df2f21c7890b759c090"
+    ],
+    "status": [
+      "claim_5df2f21c7890b759c090"
+    ],
+    "title": [
+      "claim_5df2f21c7890b759c090"
+    ]
+  },
+  "id": "mentor_c5b486105226ad72b217",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5df2f21c7890b759c090"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "戴国浩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8aec2d3020756cb596c6",
+      "claim_ids": [
+        "claim_5df2f21c7890b759c090"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/daiguohao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "稀疏计算电路与系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/daiguohao",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

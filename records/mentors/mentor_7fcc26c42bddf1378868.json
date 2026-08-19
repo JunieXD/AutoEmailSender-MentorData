@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5783d478a46fb9301fd2"
+      ],
+      "ended_at": null,
+      "id": "aff_b13cb2991dce063a5dcf",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/lucewu",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5783d478a46fb9301fd2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b13cb2991dce063a5dcf",
+      "claim_ids": [
+        "claim_5783d478a46fb9301fd2"
+      ],
+      "is_primary": true,
+      "normalized_value": "lucewu@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/lucewu",
+      "status": "current",
+      "type": "email",
+      "value": "lucewu@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5783d478a46fb9301fd2"
+    ],
+    "email": [
+      "claim_5783d478a46fb9301fd2"
+    ],
+    "name": [
+      "claim_5783d478a46fb9301fd2"
+    ],
+    "profile_url": [
+      "claim_5783d478a46fb9301fd2"
+    ],
+    "research_directions": [
+      "claim_5783d478a46fb9301fd2"
+    ],
+    "status": [
+      "claim_5783d478a46fb9301fd2"
+    ],
+    "title": [
+      "claim_5783d478a46fb9301fd2"
+    ]
+  },
+  "id": "mentor_7fcc26c42bddf1378868",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5783d478a46fb9301fd2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "卢策吾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b13cb2991dce063a5dcf",
+      "claim_ids": [
+        "claim_5783d478a46fb9301fd2"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/lucewu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉与机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/lucewu",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}
