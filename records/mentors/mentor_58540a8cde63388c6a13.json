@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a4f5a8c25bc69de572f1"
+      ],
+      "ended_at": null,
+      "id": "aff_d3bb9553a3a5cd9653f5",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yangleijing/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a4f5a8c25bc69de572f1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d3bb9553a3a5cd9653f5",
+      "claim_ids": [
+        "claim_a4f5a8c25bc69de572f1"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangleijing@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangleijing/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangleijing@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a4f5a8c25bc69de572f1"
+    ],
+    "email": [
+      "claim_a4f5a8c25bc69de572f1"
+    ],
+    "name": [
+      "claim_a4f5a8c25bc69de572f1"
+    ],
+    "profile_url": [
+      "claim_a4f5a8c25bc69de572f1"
+    ],
+    "research_directions": [
+      "claim_a4f5a8c25bc69de572f1"
+    ],
+    "status": [
+      "claim_a4f5a8c25bc69de572f1"
+    ],
+    "title": [
+      "claim_a4f5a8c25bc69de572f1"
+    ]
+  },
+  "id": "mentor_58540a8cde63388c6a13",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a4f5a8c25bc69de572f1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨雷静"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d3bb9553a3a5cd9653f5",
+      "claim_ids": [
+        "claim_a4f5a8c25bc69de572f1"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangleijing/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "(1)嵌入式开发,FPGA开发,数字信号处理",
+    "(2)光电集成芯片研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangleijing/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0e8dce3905ab6d673719"
+      ],
+      "ended_at": null,
+      "id": "aff_1a8a3d8f40739aa22746",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yucuiping/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0e8dce3905ab6d673719"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1a8a3d8f40739aa22746",
+      "claim_ids": [
+        "claim_0e8dce3905ab6d673719"
+      ],
+      "is_primary": true,
+      "normalized_value": "yucuiping@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yucuiping/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yucuiping@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0e8dce3905ab6d673719"
+    ],
+    "email": [
+      "claim_0e8dce3905ab6d673719"
+    ],
+    "name": [
+      "claim_0e8dce3905ab6d673719"
+    ],
+    "profile_url": [
+      "claim_0e8dce3905ab6d673719"
+    ],
+    "research_directions": [
+      "claim_0e8dce3905ab6d673719"
+    ],
+    "status": [
+      "claim_0e8dce3905ab6d673719"
+    ],
+    "title": [
+      "claim_0e8dce3905ab6d673719"
+    ]
+  },
+  "id": "mentor_39b6ac3d4d180656358b",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0e8dce3905ab6d673719"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于翠屏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1a8a3d8f40739aa22746",
+      "claim_ids": [
+        "claim_0e8dce3905ab6d673719"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yucuiping/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微波电路与射频系统,微波功率放大器设计,预失真线性化技术,柔性微波电路等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yucuiping/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

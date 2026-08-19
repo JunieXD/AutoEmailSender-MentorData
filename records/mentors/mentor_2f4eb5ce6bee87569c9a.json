@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e3b0b4bd1049da12b508"
+      ],
+      "ended_at": null,
+      "id": "aff_26e0f606731b1d681a0b",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yinxiaoli",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e3b0b4bd1049da12b508"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_26e0f606731b1d681a0b",
+      "claim_ids": [
+        "claim_e3b0b4bd1049da12b508"
+      ],
+      "is_primary": true,
+      "normalized_value": "yinxl@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yinxiaoli",
+      "status": "current",
+      "type": "email",
+      "value": "yinxl@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e3b0b4bd1049da12b508"
+    ],
+    "email": [
+      "claim_e3b0b4bd1049da12b508"
+    ],
+    "name": [
+      "claim_e3b0b4bd1049da12b508"
+    ],
+    "profile_url": [
+      "claim_e3b0b4bd1049da12b508"
+    ],
+    "status": [
+      "claim_e3b0b4bd1049da12b508"
+    ],
+    "title": [
+      "claim_e3b0b4bd1049da12b508"
+    ]
+  },
+  "id": "mentor_2f4eb5ce6bee87569c9a",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e3b0b4bd1049da12b508"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹霄丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_26e0f606731b1d681a0b",
+      "claim_ids": [
+        "claim_e3b0b4bd1049da12b508"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yinxiaoli"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yinxiaoli",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

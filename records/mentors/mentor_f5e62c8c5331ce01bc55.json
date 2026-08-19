@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6d33eb5ad044fc7ea2b"
+      ],
+      "ended_at": null,
+      "id": "aff_8f061ea68db076d594cf",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1051/2177.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f6d33eb5ad044fc7ea2b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8f061ea68db076d594cf",
+      "claim_ids": [
+        "claim_f6d33eb5ad044fc7ea2b"
+      ],
+      "is_primary": true,
+      "normalized_value": "kliu@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1051/2177.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kliu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6d33eb5ad044fc7ea2b"
+    ],
+    "email": [
+      "claim_f6d33eb5ad044fc7ea2b"
+    ],
+    "name": [
+      "claim_f6d33eb5ad044fc7ea2b"
+    ],
+    "profile_url": [
+      "claim_f6d33eb5ad044fc7ea2b"
+    ],
+    "research_directions": [
+      "claim_f6d33eb5ad044fc7ea2b"
+    ],
+    "status": [
+      "claim_f6d33eb5ad044fc7ea2b"
+    ],
+    "title": [
+      "claim_f6d33eb5ad044fc7ea2b"
+    ]
+  },
+  "id": "mentor_f5e62c8c5331ce01bc55",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6d33eb5ad044fc7ea2b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘凯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8f061ea68db076d594cf",
+      "claim_ids": [
+        "claim_f6d33eb5ad044fc7ea2b"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1051/2177.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "半导体光电子技术领域的设计研发、工艺实现和产品研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1051/2177.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

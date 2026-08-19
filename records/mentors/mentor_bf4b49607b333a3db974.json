@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0372202c3e5b63681f7"
+      ],
+      "ended_at": null,
+      "id": "aff_dabd3f400a3c5226e21c",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/huangshanguo/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0372202c3e5b63681f7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dabd3f400a3c5226e21c",
+      "claim_ids": [
+        "claim_d0372202c3e5b63681f7"
+      ],
+      "is_primary": true,
+      "normalized_value": "shghuang@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/huangshanguo/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shghuang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0372202c3e5b63681f7"
+    ],
+    "email": [
+      "claim_d0372202c3e5b63681f7"
+    ],
+    "name": [
+      "claim_d0372202c3e5b63681f7"
+    ],
+    "profile_url": [
+      "claim_d0372202c3e5b63681f7"
+    ],
+    "research_directions": [
+      "claim_d0372202c3e5b63681f7"
+    ],
+    "status": [
+      "claim_d0372202c3e5b63681f7"
+    ],
+    "title": [
+      "claim_d0372202c3e5b63681f7"
+    ]
+  },
+  "id": "mentor_bf4b49607b333a3db974",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0372202c3e5b63681f7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄善国"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dabd3f400a3c5226e21c",
+      "claim_ids": [
+        "claim_d0372202c3e5b63681f7"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/huangshanguo/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多维光交换与光网络理论与技术,包括大规模智能光交换与数据光网络、传输网规划与优化、地空天空间光交换与组网等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/huangshanguo/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

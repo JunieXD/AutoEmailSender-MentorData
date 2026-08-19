@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1ab8bf0c6225b918c225"
+      ],
+      "ended_at": null,
+      "id": "aff_54f2930a5376330f0cd5",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1054/2093.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_1ab8bf0c6225b918c225"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_54f2930a5376330f0cd5",
+      "claim_ids": [
+        "claim_1ab8bf0c6225b918c225"
+      ],
+      "is_primary": true,
+      "normalized_value": "buptlk@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1054/2093.htm",
+      "status": "current",
+      "type": "email",
+      "value": "buptlk@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1ab8bf0c6225b918c225"
+    ],
+    "email": [
+      "claim_1ab8bf0c6225b918c225"
+    ],
+    "name": [
+      "claim_1ab8bf0c6225b918c225"
+    ],
+    "profile_url": [
+      "claim_1ab8bf0c6225b918c225"
+    ],
+    "research_directions": [
+      "claim_1ab8bf0c6225b918c225"
+    ],
+    "status": [
+      "claim_1ab8bf0c6225b918c225"
+    ],
+    "title": [
+      "claim_1ab8bf0c6225b918c225"
+    ]
+  },
+  "id": "mentor_47515952fae5f0cbeb1b",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1ab8bf0c6225b918c225"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘人豪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_54f2930a5376330f0cd5",
+      "claim_ids": [
+        "claim_1ab8bf0c6225b918c225"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1054/2093.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "卫星移动通信、嵌入式系统及物联网、数字信号处理系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1054/2093.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

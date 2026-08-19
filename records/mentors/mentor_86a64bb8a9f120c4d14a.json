@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b965a82392cb3e0f1d5"
+      ],
+      "ended_at": null,
+      "id": "aff_530f34640a95464292ac",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yinshan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b965a82392cb3e0f1d5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_530f34640a95464292ac",
+      "claim_ids": [
+        "claim_0b965a82392cb3e0f1d5"
+      ],
+      "is_primary": true,
+      "normalized_value": "yinshan@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yinshan",
+      "status": "current",
+      "type": "email",
+      "value": "yinshan@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b965a82392cb3e0f1d5"
+    ],
+    "email": [
+      "claim_0b965a82392cb3e0f1d5"
+    ],
+    "name": [
+      "claim_0b965a82392cb3e0f1d5"
+    ],
+    "profile_url": [
+      "claim_0b965a82392cb3e0f1d5"
+    ],
+    "research_directions": [
+      "claim_0b965a82392cb3e0f1d5"
+    ],
+    "status": [
+      "claim_0b965a82392cb3e0f1d5"
+    ],
+    "title": [
+      "claim_0b965a82392cb3e0f1d5"
+    ]
+  },
+  "id": "mentor_86a64bb8a9f120c4d14a",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b965a82392cb3e0f1d5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹珊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_530f34640a95464292ac",
+      "claim_ids": [
+        "claim_0b965a82392cb3e0f1d5"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yinshan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光网络智能资源优化、城域光网络算网融合、光网络规划优化系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yinshan",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

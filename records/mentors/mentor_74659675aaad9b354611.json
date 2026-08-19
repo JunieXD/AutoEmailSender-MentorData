@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3618d9c55523a78acf9c"
+      ],
+      "ended_at": null,
+      "id": "aff_d758419eb7474e7386bc",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/suming",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3618d9c55523a78acf9c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d758419eb7474e7386bc",
+      "claim_ids": [
+        "claim_3618d9c55523a78acf9c"
+      ],
+      "is_primary": true,
+      "normalized_value": "suming@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/suming",
+      "status": "current",
+      "type": "email",
+      "value": "suming@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3618d9c55523a78acf9c"
+    ],
+    "email": [
+      "claim_3618d9c55523a78acf9c"
+    ],
+    "name": [
+      "claim_3618d9c55523a78acf9c"
+    ],
+    "profile_url": [
+      "claim_3618d9c55523a78acf9c"
+    ],
+    "research_directions": [
+      "claim_3618d9c55523a78acf9c"
+    ],
+    "status": [
+      "claim_3618d9c55523a78acf9c"
+    ],
+    "title": [
+      "claim_3618d9c55523a78acf9c"
+    ]
+  },
+  "id": "mentor_74659675aaad9b354611",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3618d9c55523a78acf9c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d758419eb7474e7386bc",
+      "claim_ids": [
+        "claim_3618d9c55523a78acf9c"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/suming"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "天线理论与技术,无线输能技术,柔性天线技术,无源通信系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/suming",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4674271cd3b69a306f90"
+      ],
+      "ended_at": null,
+      "id": "aff_dfd2624ded2a15d25e93",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/zuyunxiao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4674271cd3b69a306f90"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dfd2624ded2a15d25e93",
+      "claim_ids": [
+        "claim_4674271cd3b69a306f90"
+      ],
+      "is_primary": true,
+      "normalized_value": "zuyx@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/zuyunxiao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zuyx@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4674271cd3b69a306f90"
+    ],
+    "email": [
+      "claim_4674271cd3b69a306f90"
+    ],
+    "name": [
+      "claim_4674271cd3b69a306f90"
+    ],
+    "profile_url": [
+      "claim_4674271cd3b69a306f90"
+    ],
+    "research_directions": [
+      "claim_4674271cd3b69a306f90"
+    ],
+    "status": [
+      "claim_4674271cd3b69a306f90"
+    ],
+    "title": [
+      "claim_4674271cd3b69a306f90"
+    ]
+  },
+  "id": "mentor_aaeca6fb3345537be9ec",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4674271cd3b69a306f90"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "俎云霄"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dfd2624ded2a15d25e93",
+      "claim_ids": [
+        "claim_4674271cd3b69a306f90"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zuyunxiao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能信息处理、大数据、认知无线网络、电工理论与新技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zuyunxiao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

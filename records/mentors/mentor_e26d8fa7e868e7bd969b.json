@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e44220f03e9ca3036c42"
+      ],
+      "ended_at": null,
+      "id": "aff_830f1bb37267a1f80371",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/liuwen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e44220f03e9ca3036c42"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_830f1bb37267a1f80371",
+      "claim_ids": [
+        "claim_e44220f03e9ca3036c42"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuwen@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/liuwen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuwen@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e44220f03e9ca3036c42"
+    ],
+    "email": [
+      "claim_e44220f03e9ca3036c42"
+    ],
+    "name": [
+      "claim_e44220f03e9ca3036c42"
+    ],
+    "profile_url": [
+      "claim_e44220f03e9ca3036c42"
+    ],
+    "research_directions": [
+      "claim_e44220f03e9ca3036c42"
+    ],
+    "status": [
+      "claim_e44220f03e9ca3036c42"
+    ]
+  },
+  "id": "mentor_e26d8fa7e868e7bd969b",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e44220f03e9ca3036c42"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘雯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_830f1bb37267a1f80371",
+      "claim_ids": [
+        "claim_e44220f03e9ca3036c42"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/liuwen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "室内高精度定位技术,特别是异源异构多尺度信号及数据智能处理方面的研究,主要研究方向为嵌入式物联网、异源异构高维数据处理、融合算法等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/liuwen/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-19T06:59:07Z"
+}

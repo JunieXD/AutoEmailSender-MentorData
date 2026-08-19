@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2c60d1fb4eb78464c51c"
+      ],
+      "ended_at": null,
+      "id": "aff_184e0f0da0b075fb0da5",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "http://teacher.bupt.edu.cn/zhangminglun/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2c60d1fb4eb78464c51c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_184e0f0da0b075fb0da5",
+      "claim_ids": [
+        "claim_2c60d1fb4eb78464c51c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangml@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "http://teacher.bupt.edu.cn/zhangminglun/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangml@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2c60d1fb4eb78464c51c"
+    ],
+    "email": [
+      "claim_2c60d1fb4eb78464c51c"
+    ],
+    "name": [
+      "claim_2c60d1fb4eb78464c51c"
+    ],
+    "profile_url": [
+      "claim_2c60d1fb4eb78464c51c"
+    ],
+    "research_directions": [
+      "claim_2c60d1fb4eb78464c51c"
+    ],
+    "status": [
+      "claim_2c60d1fb4eb78464c51c"
+    ],
+    "title": [
+      "claim_2c60d1fb4eb78464c51c"
+    ]
+  },
+  "id": "mentor_f769fb6170a9b2bfb183",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2c60d1fb4eb78464c51c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张明伦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_184e0f0da0b075fb0da5",
+      "claim_ids": [
+        "claim_2c60d1fb4eb78464c51c"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "http://teacher.bupt.edu.cn/zhangminglun/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "可见光通信、激光雷达、无线光通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.bupt.edu.cn/zhangminglun/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

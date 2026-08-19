@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cd6e2c1fd4001c62a519"
+      ],
+      "ended_at": null,
+      "id": "aff_3cac91b9efe22ab5f4d6",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/zhangyong2",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cd6e2c1fd4001c62a519"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3cac91b9efe22ab5f4d6",
+      "claim_ids": [
+        "claim_cd6e2c1fd4001c62a519"
+      ],
+      "is_primary": true,
+      "normalized_value": "yongzhang@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhangyong2",
+      "status": "current",
+      "type": "email",
+      "value": "yongzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cd6e2c1fd4001c62a519"
+    ],
+    "email": [
+      "claim_cd6e2c1fd4001c62a519"
+    ],
+    "name": [
+      "claim_cd6e2c1fd4001c62a519"
+    ],
+    "profile_url": [
+      "claim_cd6e2c1fd4001c62a519"
+    ],
+    "recent_papers": [
+      "claim_cd6e2c1fd4001c62a519"
+    ],
+    "research_directions": [
+      "claim_cd6e2c1fd4001c62a519"
+    ],
+    "status": [
+      "claim_cd6e2c1fd4001c62a519"
+    ],
+    "title": [
+      "claim_cd6e2c1fd4001c62a519"
+    ]
+  },
+  "id": "mentor_01a56bac21167fdf68b5",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cd6e2c1fd4001c62a519"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3cac91b9efe22ab5f4d6",
+      "claim_ids": [
+        "claim_cd6e2c1fd4001c62a519"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhangyong2"
+    }
+  ],
+  "recent_papers": [
+    "Zhang Z.Y., Li Q., Zhang Y., et al., JCCMTM: Joint Channel-independent and Channel-dependent Strategy for Masked Multivariate Time-Series Modeling [J], Neural Networks, 2025:107922",
+    "Z. Zhang, L. Lu, Q. Li, Y. Chai, D. Wu and Y. Zhang, Joint AI Service Placement, Task Scheduling, and Resource Allocation for IoT in 6G Networks [J], in IEEE Internet of Things Journal, 2025",
+    "Zhang Z.Y., Li Q., Zhang Y., Zhang Y. M., Sha T. M., Hua X. L., Zhu L., Feng J. L., Causal Modeling-Based Multivariate KPIs Prediction for Parameter Adjustment in Cellular Networks [J], in IEEE Transactions on Vehicular Technology, 2025",
+    "Chai Y, Zhang Y, Zhang Z, et al. Research on joint game theory and multi-agent reinforcement learning-based resource allocation in micro operator networks[J]. Computer Networks, 2025: 111333.",
+    "Song X, Zhao P, Yin R, et al. Cascading failure model and resilience-based sequential recovery strategy for complex networks[J]. Reliability Engineering & System Safety, 2025, 253: 110488.",
+    "Yuhao C, Kaice. G, et al. Joint Task Offloading, Resource Allocation and Model Placement for AI as a Service in 6G Network[J], IEEE TRANSACTIONS ON SERVICES COMPUTING, 2024",
+    "Qin L, Yong Z, Longbiao W, et al. Native Network Digital Twin Architecture for 6G: From Design to Practice[J]. IEEE Communications Magazine, 2024",
+    "Zhang Z, Zhang Y, Li H, et al. Federated continual representation learning for evolutionary distributed intrusion detection in Industrial Internet of Things[J]. Engineering Applications of Artificial Intelligence, 2024, 135: 108826."
+  ],
+  "research_directions": [
+    "人工智能、网络智能化、面向AI的下一代移动通信、大模型、智能体、智算网一体6G网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhangyong2",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

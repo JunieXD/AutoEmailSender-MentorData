@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3b59953e85b1c02e9b23"
+      ],
+      "ended_at": null,
+      "id": "aff_7f8cdfd7d6adc59cd000",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2114.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3b59953e85b1c02e9b23"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7f8cdfd7d6adc59cd000",
+      "claim_ids": [
+        "claim_3b59953e85b1c02e9b23"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuyumintech@hotmail.com",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2114.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuyumintech@hotmail.com"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3b59953e85b1c02e9b23"
+    ],
+    "email": [
+      "claim_3b59953e85b1c02e9b23"
+    ],
+    "name": [
+      "claim_3b59953e85b1c02e9b23"
+    ],
+    "profile_url": [
+      "claim_3b59953e85b1c02e9b23"
+    ],
+    "research_directions": [
+      "claim_3b59953e85b1c02e9b23"
+    ],
+    "status": [
+      "claim_3b59953e85b1c02e9b23"
+    ],
+    "title": [
+      "claim_3b59953e85b1c02e9b23"
+    ]
+  },
+  "id": "mentor_bb7c5698680d1f83761b",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3b59953e85b1c02e9b23"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘玉敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7f8cdfd7d6adc59cd000",
+      "claim_ids": [
+        "claim_3b59953e85b1c02e9b23"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2114.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "长期从事纳米光子学方面的研究,特别是在半导体量子异质结构(Quantum Heterostructure)、表面等离激元(surface plasmon polaritons)及表面超构(Metasurface)材料理论与器件应用方面具有深入的研究。近年来,特别关注基于表面等离激元和表面超构材料的纳米光子管理机理研究及在新能源、绿色环保方面的应用。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2114.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

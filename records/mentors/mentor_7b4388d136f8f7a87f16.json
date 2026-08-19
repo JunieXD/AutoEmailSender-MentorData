@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c8504ebd7d2b7650711c"
+      ],
+      "ended_at": null,
+      "id": "aff_ee46adb3ef11a8112dee",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2131.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c8504ebd7d2b7650711c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ee46adb3ef11a8112dee",
+      "claim_ids": [
+        "claim_c8504ebd7d2b7650711c"
+      ],
+      "is_primary": true,
+      "normalized_value": "bhtang@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2131.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bhtang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c8504ebd7d2b7650711c"
+    ],
+    "email": [
+      "claim_c8504ebd7d2b7650711c"
+    ],
+    "name": [
+      "claim_c8504ebd7d2b7650711c"
+    ],
+    "profile_url": [
+      "claim_c8504ebd7d2b7650711c"
+    ],
+    "research_directions": [
+      "claim_c8504ebd7d2b7650711c"
+    ],
+    "status": [
+      "claim_c8504ebd7d2b7650711c"
+    ],
+    "title": [
+      "claim_c8504ebd7d2b7650711c"
+    ]
+  },
+  "id": "mentor_7b4388d136f8f7a87f16",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c8504ebd7d2b7650711c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "唐碧华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ee46adb3ef11a8112dee",
+      "claim_ids": [
+        "claim_c8504ebd7d2b7650711c"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2131.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线传感器网络/物联网关键技术、移动终端软硬件技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2131.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

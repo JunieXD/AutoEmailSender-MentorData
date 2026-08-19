@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6421ef08f32ada2ea9a0"
+      ],
+      "ended_at": null,
+      "id": "aff_72e498c7fee8299c889c",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/xsxiao",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6421ef08f32ada2ea9a0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_72e498c7fee8299c889c",
+      "claim_ids": [
+        "claim_6421ef08f32ada2ea9a0"
+      ],
+      "is_primary": true,
+      "normalized_value": "xsxiao@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/xsxiao",
+      "status": "current",
+      "type": "email",
+      "value": "xsxiao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6421ef08f32ada2ea9a0"
+    ],
+    "email": [
+      "claim_6421ef08f32ada2ea9a0"
+    ],
+    "name": [
+      "claim_6421ef08f32ada2ea9a0"
+    ],
+    "profile_url": [
+      "claim_6421ef08f32ada2ea9a0"
+    ],
+    "research_directions": [
+      "claim_6421ef08f32ada2ea9a0"
+    ],
+    "status": [
+      "claim_6421ef08f32ada2ea9a0"
+    ],
+    "title": [
+      "claim_6421ef08f32ada2ea9a0"
+    ]
+  },
+  "id": "mentor_e5c38223c695dd004919",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6421ef08f32ada2ea9a0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖晓晟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_72e498c7fee8299c889c",
+      "claim_ids": [
+        "claim_6421ef08f32ada2ea9a0"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/xsxiao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光纤通信中的偏振及非线性光学效应、光学测量与传感成像、光纤激光器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/xsxiao",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

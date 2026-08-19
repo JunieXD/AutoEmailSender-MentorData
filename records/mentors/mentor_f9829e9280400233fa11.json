@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b96ef4673fc58356ce3b"
+      ],
+      "ended_at": null,
+      "id": "aff_1f1edf397b645b7f726b",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1051/2178.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b96ef4673fc58356ce3b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f1edf397b645b7f726b",
+      "claim_ids": [
+        "claim_b96ef4673fc58356ce3b"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuezhou@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1051/2178.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuezhou@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b96ef4673fc58356ce3b"
+    ],
+    "email": [
+      "claim_b96ef4673fc58356ce3b"
+    ],
+    "name": [
+      "claim_b96ef4673fc58356ce3b"
+    ],
+    "profile_url": [
+      "claim_b96ef4673fc58356ce3b"
+    ],
+    "research_directions": [
+      "claim_b96ef4673fc58356ce3b"
+    ],
+    "status": [
+      "claim_b96ef4673fc58356ce3b"
+    ],
+    "title": [
+      "claim_b96ef4673fc58356ce3b"
+    ]
+  },
+  "id": "mentor_f9829e9280400233fa11",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b96ef4673fc58356ce3b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周月"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f1edf397b645b7f726b",
+      "claim_ids": [
+        "claim_b96ef4673fc58356ce3b"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1051/2178.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超快光纤光学、光纤激光器与光学频率梳、非线性光学、生物光子学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1051/2178.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

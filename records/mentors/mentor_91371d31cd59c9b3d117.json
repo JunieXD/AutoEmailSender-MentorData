@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e003fcfc053bfa2c5e1a"
+      ],
+      "ended_at": null,
+      "id": "aff_e2c7a94af060feff589a",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/huangjuxiang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e003fcfc053bfa2c5e1a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e2c7a94af060feff589a",
+      "claim_ids": [
+        "claim_e003fcfc053bfa2c5e1a"
+      ],
+      "is_primary": true,
+      "normalized_value": "juxianghuang@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/huangjuxiang",
+      "status": "current",
+      "type": "email",
+      "value": "juxianghuang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e003fcfc053bfa2c5e1a"
+    ],
+    "email": [
+      "claim_e003fcfc053bfa2c5e1a"
+    ],
+    "name": [
+      "claim_e003fcfc053bfa2c5e1a"
+    ],
+    "profile_url": [
+      "claim_e003fcfc053bfa2c5e1a"
+    ],
+    "research_directions": [
+      "claim_e003fcfc053bfa2c5e1a"
+    ],
+    "status": [
+      "claim_e003fcfc053bfa2c5e1a"
+    ],
+    "title": [
+      "claim_e003fcfc053bfa2c5e1a"
+    ]
+  },
+  "id": "mentor_91371d31cd59c9b3d117",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e003fcfc053bfa2c5e1a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄菊香"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e2c7a94af060feff589a",
+      "claim_ids": [
+        "claim_e003fcfc053bfa2c5e1a"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/huangjuxiang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "骨科机器人研发(软硬件平台开发,医学图像智能识别,手术路径规划,实时追踪等)、生物信息学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/huangjuxiang",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

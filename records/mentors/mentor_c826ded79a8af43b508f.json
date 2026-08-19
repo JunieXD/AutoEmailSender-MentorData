@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_381ba5067cc337849010"
+      ],
+      "ended_at": null,
+      "id": "aff_41b0aece2d8a1f495dd1",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/zhangxiaoguang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_381ba5067cc337849010"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_41b0aece2d8a1f495dd1",
+      "claim_ids": [
+        "claim_381ba5067cc337849010"
+      ],
+      "is_primary": true,
+      "normalized_value": "xgzhang@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhangxiaoguang",
+      "status": "current",
+      "type": "email",
+      "value": "xgzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_381ba5067cc337849010"
+    ],
+    "email": [
+      "claim_381ba5067cc337849010"
+    ],
+    "name": [
+      "claim_381ba5067cc337849010"
+    ],
+    "profile_url": [
+      "claim_381ba5067cc337849010"
+    ],
+    "status": [
+      "claim_381ba5067cc337849010"
+    ],
+    "title": [
+      "claim_381ba5067cc337849010"
+    ]
+  },
+  "id": "mentor_c826ded79a8af43b508f",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_381ba5067cc337849010"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张晓光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_41b0aece2d8a1f495dd1",
+      "claim_ids": [
+        "claim_381ba5067cc337849010"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhangxiaoguang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhangxiaoguang",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

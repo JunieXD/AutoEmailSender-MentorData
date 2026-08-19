@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b78dea4ddfe3aa0da93"
+      ],
+      "ended_at": null,
+      "id": "aff_8916b65f48b8f4cc74ad",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/zhaotonggang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b78dea4ddfe3aa0da93"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8916b65f48b8f4cc74ad",
+      "claim_ids": [
+        "claim_0b78dea4ddfe3aa0da93"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaotg@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/zhaotonggang",
+      "status": "current",
+      "type": "email",
+      "value": "zhaotg@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b78dea4ddfe3aa0da93"
+    ],
+    "email": [
+      "claim_0b78dea4ddfe3aa0da93"
+    ],
+    "name": [
+      "claim_0b78dea4ddfe3aa0da93"
+    ],
+    "profile_url": [
+      "claim_0b78dea4ddfe3aa0da93"
+    ],
+    "research_directions": [
+      "claim_0b78dea4ddfe3aa0da93"
+    ],
+    "status": [
+      "claim_0b78dea4ddfe3aa0da93"
+    ],
+    "title": [
+      "claim_0b78dea4ddfe3aa0da93"
+    ]
+  },
+  "id": "mentor_65ab0722764c26aa15a2",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b78dea4ddfe3aa0da93"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵同刚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8916b65f48b8f4cc74ad",
+      "claim_ids": [
+        "claim_0b78dea4ddfe3aa0da93"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/zhaotonggang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光电检测与传感技术、等离激元学、纳米光子学、光学纳米器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/zhaotonggang",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

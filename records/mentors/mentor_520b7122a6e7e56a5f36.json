@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bd4030dae369cf5a1b50"
+      ],
+      "ended_at": null,
+      "id": "aff_a96b6dbd8e0214147b65",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2139.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bd4030dae369cf5a1b50"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a96b6dbd8e0214147b65",
+      "claim_ids": [
+        "claim_bd4030dae369cf5a1b50"
+      ],
+      "is_primary": true,
+      "normalized_value": "jsyu@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2139.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jsyu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bd4030dae369cf5a1b50"
+    ],
+    "email": [
+      "claim_bd4030dae369cf5a1b50"
+    ],
+    "name": [
+      "claim_bd4030dae369cf5a1b50"
+    ],
+    "profile_url": [
+      "claim_bd4030dae369cf5a1b50"
+    ],
+    "research_directions": [
+      "claim_bd4030dae369cf5a1b50"
+    ],
+    "status": [
+      "claim_bd4030dae369cf5a1b50"
+    ],
+    "title": [
+      "claim_bd4030dae369cf5a1b50"
+    ]
+  },
+  "id": "mentor_520b7122a6e7e56a5f36",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bd4030dae369cf5a1b50"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "俞俊生"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a96b6dbd8e0214147b65",
+      "claim_ids": [
+        "claim_bd4030dae369cf5a1b50"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2139.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "卫星太赫兹载荷天线测试、校园抑郁症救助方法、AI指脉心理测评系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2139.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

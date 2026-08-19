@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_05dc613f45982ca058eb"
+      ],
+      "ended_at": null,
+      "id": "aff_e3bd6e4d4609a3546f53",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_7b0af5ee5ad45bf1b5a3",
+      "source_url": "https://teacher.bupt.edu.cn/lixiuping",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_05dc613f45982ca058eb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e3bd6e4d4609a3546f53",
+      "claim_ids": [
+        "claim_05dc613f45982ca058eb"
+      ],
+      "is_primary": true,
+      "normalized_value": "xpli@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/lixiuping",
+      "status": "current",
+      "type": "email",
+      "value": "xpli@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_05dc613f45982ca058eb"
+    ],
+    "email": [
+      "claim_05dc613f45982ca058eb"
+    ],
+    "name": [
+      "claim_05dc613f45982ca058eb"
+    ],
+    "profile_url": [
+      "claim_05dc613f45982ca058eb"
+    ],
+    "research_directions": [
+      "claim_05dc613f45982ca058eb"
+    ],
+    "status": [
+      "claim_05dc613f45982ca058eb"
+    ],
+    "title": [
+      "claim_05dc613f45982ca058eb"
+    ]
+  },
+  "id": "mentor_81f52ee654c29a5851ee",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_05dc613f45982ca058eb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李秀萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e3bd6e4d4609a3546f53",
+      "claim_ids": [
+        "claim_05dc613f45982ca058eb"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/lixiuping"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "天线与电磁兼容、微波毫米波芯片电路与射频技术、雷达信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/lixiuping",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

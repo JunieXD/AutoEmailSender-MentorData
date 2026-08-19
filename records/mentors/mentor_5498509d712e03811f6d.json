@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8cd064fe6660a6da6f95"
+      ],
+      "ended_at": null,
+      "id": "aff_3db3ece7efa1dcd673e6",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yuanjinhui/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8cd064fe6660a6da6f95"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3db3ece7efa1dcd673e6",
+      "claim_ids": [
+        "claim_8cd064fe6660a6da6f95"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanjinhui81@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yuanjinhui/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuanjinhui81@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8cd064fe6660a6da6f95"
+    ],
+    "email": [
+      "claim_8cd064fe6660a6da6f95"
+    ],
+    "name": [
+      "claim_8cd064fe6660a6da6f95"
+    ],
+    "profile_url": [
+      "claim_8cd064fe6660a6da6f95"
+    ],
+    "status": [
+      "claim_8cd064fe6660a6da6f95"
+    ],
+    "title": [
+      "claim_8cd064fe6660a6da6f95"
+    ]
+  },
+  "id": "mentor_5498509d712e03811f6d",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8cd064fe6660a6da6f95"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苑金辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3db3ece7efa1dcd673e6",
+      "claim_ids": [
+        "claim_8cd064fe6660a6da6f95"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yuanjinhui/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yuanjinhui/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b5c6f2c8b329c9499d9"
+      ],
+      "ended_at": null,
+      "id": "aff_932223af37c5cdf2c586",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yuanxueguang",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b5c6f2c8b329c9499d9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_932223af37c5cdf2c586",
+      "claim_ids": [
+        "claim_0b5c6f2c8b329c9499d9"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanxg@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yuanxueguang",
+      "status": "current",
+      "type": "email",
+      "value": "yuanxg@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b5c6f2c8b329c9499d9"
+    ],
+    "email": [
+      "claim_0b5c6f2c8b329c9499d9"
+    ],
+    "name": [
+      "claim_0b5c6f2c8b329c9499d9"
+    ],
+    "profile_url": [
+      "claim_0b5c6f2c8b329c9499d9"
+    ],
+    "research_directions": [
+      "claim_0b5c6f2c8b329c9499d9"
+    ],
+    "status": [
+      "claim_0b5c6f2c8b329c9499d9"
+    ],
+    "title": [
+      "claim_0b5c6f2c8b329c9499d9"
+    ]
+  },
+  "id": "mentor_9c95911085552db58042",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b5c6f2c8b329c9499d9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁学光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_932223af37c5cdf2c586",
+      "claim_ids": [
+        "claim_0b5c6f2c8b329c9499d9"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yuanxueguang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光电传感、智能信号处理、物联网、智慧医疗"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yuanxueguang",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}
