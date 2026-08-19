@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3cb70a411a8a8ced1247"
+      ],
+      "ended_at": null,
+      "id": "aff_00b4099fdab564fb878e",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "https://faculty.xjtu.edu.cn/anwenbin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3cb70a411a8a8ced1247"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_00b4099fdab564fb878e",
+      "claim_ids": [
+        "claim_3cb70a411a8a8ced1247"
+      ],
+      "is_primary": true,
+      "normalized_value": "wenbinan@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "https://faculty.xjtu.edu.cn/anwenbin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wenbinan@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3cb70a411a8a8ced1247"
+    ],
+    "email": [
+      "claim_3cb70a411a8a8ced1247"
+    ],
+    "name": [
+      "claim_3cb70a411a8a8ced1247"
+    ],
+    "profile_url": [
+      "claim_3cb70a411a8a8ced1247"
+    ],
+    "recent_papers": [
+      "claim_3cb70a411a8a8ced1247"
+    ],
+    "research_directions": [
+      "claim_3cb70a411a8a8ced1247"
+    ],
+    "status": [
+      "claim_3cb70a411a8a8ced1247"
+    ],
+    "title": [
+      "claim_3cb70a411a8a8ced1247"
+    ]
+  },
+  "id": "mentor_0b5b50e0945bdd034771",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3cb70a411a8a8ced1247"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "安文斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_00b4099fdab564fb878e",
+      "claim_ids": [
+        "claim_3cb70a411a8a8ced1247"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "https://faculty.xjtu.edu.cn/anwenbin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Boosting Knowledge Utilization in Multimodal Large Language Models via Adaptive Logits Fusion and Attention Reallocation[C]//The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025 Oral). 2025.",
+    "Mitigating object hallucinations in large vision-language models with assembly of global and local attention[C]//Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR 2025). 2025: 29915-29926.",
+    "Enhancing Retrieval-Augmented Large Vision Language Models via Knowledge Conflict Mitigation[C]//Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2026). 2026, 40(4): 2318-2326.",
+    "Unleashing the Potential of Model Bias for Generalized Category Discovery[C]//Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2025). 2025, 39(15): 15365-15373.",
+    "Transfer and Alignment Network for Generalized Category Discovery[C]//Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2024). 2024, 38(10): 10856-10864.",
+    "Generalized category discovery with decoupled prototypical network[C]//Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2023). 2023, 37(11): 12527-12535."
+  ],
+  "research_directions": [
+    "多模态大模型、弱监督学习、自然语言处理、智慧教育、开放世界下的层次化类别体系构建"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.xjtu.edu.cn/anwenbin/zh_CN/index.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

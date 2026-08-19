@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b3efbc060b7173d2233"
+      ],
+      "ended_at": null,
+      "id": "aff_b03f386e237d91b87fb6",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://liukeen.gr.xjtu.edu.cn",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b3efbc060b7173d2233"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b03f386e237d91b87fb6",
+      "claim_ids": [
+        "claim_7b3efbc060b7173d2233"
+      ],
+      "is_primary": true,
+      "normalized_value": "liukeen@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://liukeen.gr.xjtu.edu.cn",
+      "status": "current",
+      "type": "email",
+      "value": "liukeen@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b3efbc060b7173d2233"
+    ],
+    "email": [
+      "claim_7b3efbc060b7173d2233"
+    ],
+    "name": [
+      "claim_7b3efbc060b7173d2233"
+    ],
+    "profile_url": [
+      "claim_7b3efbc060b7173d2233"
+    ],
+    "research_directions": [
+      "claim_7b3efbc060b7173d2233"
+    ],
+    "status": [
+      "claim_7b3efbc060b7173d2233"
+    ],
+    "title": [
+      "claim_7b3efbc060b7173d2233"
+    ]
+  },
+  "id": "mentor_62e4e2bb6f371b3b4ccf",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b3efbc060b7173d2233"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘均"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b03f386e237d91b87fb6",
+      "claim_ids": [
+        "claim_7b3efbc060b7173d2233"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://liukeen.gr.xjtu.edu.cn"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "NLP、CV、e-learning、知识工程、教育数据挖掘、多媒体知识融合、知识图谱"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://liukeen.gr.xjtu.edu.cn",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

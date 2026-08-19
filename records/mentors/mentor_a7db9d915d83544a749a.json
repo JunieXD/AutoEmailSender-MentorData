@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9c30f75e46bfa7ac300a"
+      ],
+      "ended_at": null,
+      "id": "aff_50c26c70af8aca74a0db",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "https://gr.xjtu.edu.cn/zh/web/sunkai",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9c30f75e46bfa7ac300a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_50c26c70af8aca74a0db",
+      "claim_ids": [
+        "claim_9c30f75e46bfa7ac300a"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunkai@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "https://gr.xjtu.edu.cn/zh/web/sunkai",
+      "status": "current",
+      "type": "email",
+      "value": "sunkai@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9c30f75e46bfa7ac300a"
+    ],
+    "email": [
+      "claim_9c30f75e46bfa7ac300a"
+    ],
+    "name": [
+      "claim_9c30f75e46bfa7ac300a"
+    ],
+    "profile_url": [
+      "claim_9c30f75e46bfa7ac300a"
+    ],
+    "research_directions": [
+      "claim_9c30f75e46bfa7ac300a"
+    ],
+    "status": [
+      "claim_9c30f75e46bfa7ac300a"
+    ],
+    "title": [
+      "claim_9c30f75e46bfa7ac300a"
+    ]
+  },
+  "id": "mentor_a7db9d915d83544a749a",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9c30f75e46bfa7ac300a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙凯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_50c26c70af8aca74a0db",
+      "claim_ids": [
+        "claim_9c30f75e46bfa7ac300a"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "https://gr.xjtu.edu.cn/zh/web/sunkai"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "垂直领域大模型应用、知识图谱增强的大模型技术、信息抽取、情感分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "https://gr.xjtu.edu.cn/zh/web/sunkai",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

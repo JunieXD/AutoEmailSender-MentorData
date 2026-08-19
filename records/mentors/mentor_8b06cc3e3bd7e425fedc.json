@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d42808497a985bd110c9"
+      ],
+      "ended_at": null,
+      "id": "aff_0cfe216897ea61641da6",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://www.xjtu.edu.cn/jsnr.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632&wbwbxjtuteacherid=949",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d42808497a985bd110c9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0cfe216897ea61641da6",
+      "claim_ids": [
+        "claim_d42808497a985bd110c9"
+      ],
+      "is_primary": true,
+      "normalized_value": "xjzhang@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://www.xjtu.edu.cn/jsnr.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632&wbwbxjtuteacherid=949",
+      "status": "current",
+      "type": "email",
+      "value": "xjzhang@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d42808497a985bd110c9"
+    ],
+    "email": [
+      "claim_d42808497a985bd110c9"
+    ],
+    "name": [
+      "claim_d42808497a985bd110c9"
+    ],
+    "profile_url": [
+      "claim_d42808497a985bd110c9"
+    ],
+    "research_directions": [
+      "claim_d42808497a985bd110c9"
+    ],
+    "status": [
+      "claim_d42808497a985bd110c9"
+    ],
+    "title": [
+      "claim_d42808497a985bd110c9"
+    ]
+  },
+  "id": "mentor_8b06cc3e3bd7e425fedc",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d42808497a985bd110c9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张兴军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0cfe216897ea61641da6",
+      "claim_ids": [
+        "claim_d42808497a985bd110c9"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://www.xjtu.edu.cn/jsnr.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632&wbwbxjtuteacherid=949"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高性能计算,大数据存储系统,分布式机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://www.xjtu.edu.cn/jsnr.jsp?urltype=tree.TreeTempUrl&wbtreeid=1632&wbwbxjtuteacherid=949",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

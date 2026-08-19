@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d72331171ea3d3aee50c"
+      ],
+      "ended_at": null,
+      "id": "aff_7735397a60c705e3ee53",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://boblee.gr.xjtu.edu.cn",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d72331171ea3d3aee50c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7735397a60c705e3ee53",
+      "claim_ids": [
+        "claim_d72331171ea3d3aee50c"
+      ],
+      "is_primary": true,
+      "normalized_value": "boblee@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://boblee.gr.xjtu.edu.cn",
+      "status": "current",
+      "type": "email",
+      "value": "boblee@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d72331171ea3d3aee50c"
+    ],
+    "email": [
+      "claim_d72331171ea3d3aee50c"
+    ],
+    "name": [
+      "claim_d72331171ea3d3aee50c"
+    ],
+    "profile_url": [
+      "claim_d72331171ea3d3aee50c"
+    ],
+    "research_directions": [
+      "claim_d72331171ea3d3aee50c"
+    ],
+    "status": [
+      "claim_d72331171ea3d3aee50c"
+    ],
+    "title": [
+      "claim_d72331171ea3d3aee50c"
+    ]
+  },
+  "id": "mentor_eed54f6d6ef51091ba06",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d72331171ea3d3aee50c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7735397a60c705e3ee53",
+      "claim_ids": [
+        "claim_d72331171ea3d3aee50c"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://boblee.gr.xjtu.edu.cn"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "Web工程及语义式web服务发现,时空定性理论及时空知识表示与推理,多维智能地理信息系统,应急信息系统及3S技术应用,基于Agent的建模和仿真,复杂海量图形的并行绘制,计算机视觉、深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://boblee.gr.xjtu.edu.cn",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

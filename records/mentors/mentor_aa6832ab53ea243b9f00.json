@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e06090449183d830efbd"
+      ],
+      "ended_at": null,
+      "id": "aff_6dda0c5188c95673c1d2",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://gr.xjtu.edu.cn/web/jiayin",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e06090449183d830efbd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6dda0c5188c95673c1d2",
+      "claim_ids": [
+        "claim_e06090449183d830efbd"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangjiayin@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://gr.xjtu.edu.cn/web/jiayin",
+      "status": "current",
+      "type": "email",
+      "value": "wangjiayin@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e06090449183d830efbd"
+    ],
+    "email": [
+      "claim_e06090449183d830efbd"
+    ],
+    "name": [
+      "claim_e06090449183d830efbd"
+    ],
+    "profile_url": [
+      "claim_e06090449183d830efbd"
+    ],
+    "research_directions": [
+      "claim_e06090449183d830efbd"
+    ],
+    "status": [
+      "claim_e06090449183d830efbd"
+    ],
+    "title": [
+      "claim_e06090449183d830efbd"
+    ]
+  },
+  "id": "mentor_aa6832ab53ea243b9f00",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e06090449183d830efbd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王嘉寅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6dda0c5188c95673c1d2",
+      "claim_ids": [
+        "claim_e06090449183d830efbd"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://gr.xjtu.edu.cn/web/jiayin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医疗大数据与数字健康"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://gr.xjtu.edu.cn/web/jiayin",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

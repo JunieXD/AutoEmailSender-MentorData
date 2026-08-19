@@ -1,0 +1,82 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e7be293956045eee9494"
+      ],
+      "ended_at": null,
+      "id": "aff_90ff0251dad24db7a36d",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/js.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e7be293956045eee9494"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_90ff0251dad24db7a36d",
+      "claim_ids": [
+        "claim_e7be293956045eee9494"
+      ],
+      "is_primary": true,
+      "normalized_value": "cli@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/js.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cli@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e7be293956045eee9494"
+    ],
+    "email": [
+      "claim_e7be293956045eee9494"
+    ],
+    "name": [
+      "claim_e7be293956045eee9494"
+    ],
+    "research_directions": [
+      "claim_e7be293956045eee9494"
+    ],
+    "status": [
+      "claim_e7be293956045eee9494"
+    ],
+    "title": [
+      "claim_e7be293956045eee9494"
+    ]
+  },
+  "id": "mentor_9425fcebe2a60899984a",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e7be293956045eee9494"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李辰"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [
+    "Clinical structured data analysis. Digital pathology image analysis. Pathology semantic standardization. Deep learning methods on clinical data."
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/js.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

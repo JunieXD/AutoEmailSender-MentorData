@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d436e23fd37f3aa53776"
+      ],
+      "ended_at": null,
+      "id": "aff_9b2753c507bd0cc641da",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://gr.xjtu.edu.cn/web/zjz",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d436e23fd37f3aa53776"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9b2753c507bd0cc641da",
+      "claim_ids": [
+        "claim_d436e23fd37f3aa53776"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjz@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://gr.xjtu.edu.cn/web/zjz",
+      "status": "current",
+      "type": "email",
+      "value": "zjz@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d436e23fd37f3aa53776"
+    ],
+    "email": [
+      "claim_d436e23fd37f3aa53776"
+    ],
+    "name": [
+      "claim_d436e23fd37f3aa53776"
+    ],
+    "profile_url": [
+      "claim_d436e23fd37f3aa53776"
+    ],
+    "research_directions": [
+      "claim_d436e23fd37f3aa53776"
+    ],
+    "status": [
+      "claim_d436e23fd37f3aa53776"
+    ],
+    "title": [
+      "claim_d436e23fd37f3aa53776"
+    ]
+  },
+  "id": "mentor_3398a8266a56cc939bba",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d436e23fd37f3aa53776"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵季中"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9b2753c507bd0cc641da",
+      "claim_ids": [
+        "claim_d436e23fd37f3aa53776"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://gr.xjtu.edu.cn/web/zjz"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动计算,分布式系统,智能感知,物联网安全与隐私保护"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://gr.xjtu.edu.cn/web/zjz",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

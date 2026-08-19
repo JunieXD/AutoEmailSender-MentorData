@@ -1,0 +1,94 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_17ea94a28cf00614a4b4"
+      ],
+      "ended_at": null,
+      "id": "aff_f747c1ffbb1a0a12bfab",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/fjs1.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_17ea94a28cf00614a4b4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f747c1ffbb1a0a12bfab",
+      "claim_ids": [
+        "claim_17ea94a28cf00614a4b4"
+      ],
+      "is_primary": true,
+      "normalized_value": "gongtl@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/fjs1.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gongtl@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_17ea94a28cf00614a4b4"
+    ],
+    "email": [
+      "claim_17ea94a28cf00614a4b4"
+    ],
+    "name": [
+      "claim_17ea94a28cf00614a4b4"
+    ],
+    "recent_papers": [
+      "claim_17ea94a28cf00614a4b4"
+    ],
+    "research_directions": [
+      "claim_17ea94a28cf00614a4b4"
+    ],
+    "status": [
+      "claim_17ea94a28cf00614a4b4"
+    ],
+    "title": [
+      "claim_17ea94a28cf00614a4b4"
+    ]
+  },
+  "id": "mentor_e6d8005e90ff30d5fd5e",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_17ea94a28cf00614a4b4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "龚铁梁"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Accurate spatial quantification in computational pathology with multiple instance learning",
+    "Towards the generalization of multi-view learning: An information-theoretical analysis",
+    "Recovering Coherent Affective Patterns: Addressing Modality Missing in Multimodal Sentiment Analysis",
+    "Beyond Sharpness: A Flatness Decomposition Framework for Efficient Continual Learning",
+    "How Does Distribution Matching Help Domain Generalization: An Information-Theoretic Analysis",
+    "Exactly Tight Information-theoretic Generalization Bounds via Binary Jensen-Shannon Divergence",
+    "InfoSAM: Fine-Tuning the Segment Anything Model from an Information-Theoretic Perspective",
+    "Towards Generalization Bounds of GCNs for Adversarially Robust Node Classification"
+  ],
+  "research_directions": [
+    "statistical learning theory, information theory, generalization analysis of deep learning, theoretical foundations of transfer learning and continual learning, AI4Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/fjs1.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}
