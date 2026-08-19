@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_713e8bb234735772c0b4"
+      ],
+      "ended_at": null,
+      "id": "aff_791a215fc0ea6b65794e",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/277",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_713e8bb234735772c0b4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_791a215fc0ea6b65794e",
+      "claim_ids": [
+        "claim_713e8bb234735772c0b4"
+      ],
+      "is_primary": true,
+      "normalized_value": "wxdwfc@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/277",
+      "status": "current",
+      "type": "email",
+      "value": "wxdwfc@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_713e8bb234735772c0b4"
+    ],
+    "email": [
+      "claim_713e8bb234735772c0b4"
+    ],
+    "name": [
+      "claim_713e8bb234735772c0b4"
+    ],
+    "profile_url": [
+      "claim_713e8bb234735772c0b4"
+    ],
+    "recent_papers": [
+      "claim_713e8bb234735772c0b4"
+    ],
+    "research_directions": [
+      "claim_713e8bb234735772c0b4"
+    ],
+    "status": [
+      "claim_713e8bb234735772c0b4"
+    ],
+    "title": [
+      "claim_713e8bb234735772c0b4"
+    ]
+  },
+  "id": "mentor_ac1a6b05241af7307904",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_713e8bb234735772c0b4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏星达"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_791a215fc0ea6b65794e",
+      "claim_ids": [
+        "claim_713e8bb234735772c0b4"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/277"
+    }
+  ],
+  "recent_papers": [
+    "[OSDI] Xingda Wei, Fangming Lu, Tianxia Wang, Jinyu Gu, Yuhan Yang, Rong Chen, and Haibo Chen. No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing. 17th USENIX Symposium on Operating Systems Design and Implementation, Boston, MA, US, July 2023.",
+    "[OSDI] Xingda Wei, Rong Chen, and Haibo Chen. Fast RDMA-based Ordered Key-Value Store using Remote Learned Cache. 14th USENIX Symposium on Operating Systems Design and Implementation, Banff, Alberta, Canada, November 2020.",
+    "[OSDI] Xingda Wei, Zhiyuan Dong, Rong Chen, and Haibo Chen. Deconstructing RDMA-enabled Transaction Processing: Hybrid is Better! 13th USENIX Symposium on Operating Systems Design and Implementation, Carlsbad, CA, US, October 2018.",
+    "[SOSP] Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, and Haibo Chen. Fast In-memory Transaction Processing using RDMA and HTM. 25th ACM Symposium on Operating Systems Principles, Monterey, CA, USA, October 2015."
+  ],
+  "research_directions": [
+    "分布式系统,操作系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/277",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cdbf0ea3e734d77a2b4a"
+      ],
+      "ended_at": null,
+      "id": "aff_931e3a4cf9077333119d",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/297",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cdbf0ea3e734d77a2b4a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_931e3a4cf9077333119d",
+      "claim_ids": [
+        "claim_cdbf0ea3e734d77a2b4a"
+      ],
+      "is_primary": true,
+      "normalized_value": "chen-hp@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/297",
+      "status": "current",
+      "type": "email",
+      "value": "chen-hp@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ],
+    "email": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ],
+    "name": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ],
+    "profile_url": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ],
+    "recent_papers": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ],
+    "research_directions": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ],
+    "status": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ],
+    "title": [
+      "claim_cdbf0ea3e734d77a2b4a"
+    ]
+  },
+  "id": "mentor_716b19ce91db9aefd7a5",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cdbf0ea3e734d77a2b4a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈昊鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_931e3a4cf9077333119d",
+      "claim_ids": [
+        "claim_cdbf0ea3e734d77a2b4a"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/297"
+    }
+  ],
+  "recent_papers": [
+    "Zhang Q, Chen H, Shen Y, et al. Optimization of virtual resource management for cloud applications to cope with traffic burst[J]. Future Generation Computer Systems, 2016, 58: 42-55.",
+    "Wang H, Chen H, Du Z, et al. BeTL: MapReduce Checkpoint Tactics Beneath the Task Level[J]. IEEE Transactions on Services Computing, 2016, 9(1): 84-95.",
+    "Wang Z, Chen H, Fu Y, et al. Workload balancing and adaptive resource management for the swift storage system on cloud[J]. Future Generation Computer Systems, 2015, 51: 120-131.",
+    "Wang W, Chen H, Chen X. Towards Availability: A Dynamic Scaling Mechanism for Cloud Applications[J]. International Journal of Adaptive, Resilient and Autonomic Systems (IJARAS), 2014, 5(2): 23-39.",
+    "Sun J, Chen H, YIN Z. AERS: An Autonomic and Elastic Resource Scheduling Framework for Cloud Applications[C]//Service Computing(SCC), 2016 IEEE International Conference on. IEEE, 2016: 66-73.",
+    "Lingxuan S, Chen H, Ma S, et al. WHOBBS: An Object-Based Distributed Hybrid Storage Providing Block Storage for Virtual Machines[C]//High Performance Computing and Communications (HPCC), 2015 IEEE 17th International Conference on. IEEE, 2015: 160-165.",
+    "Dai W, Chen H, Wang W. RaHeC: A Mechanism of Resource Management for Heterogeneous Clouds[C]//High Performance Computing and Communications (HPCC), 2015 IEEE 17th International Conference on. IEEE, 2015: 40-45.",
+    "Ma S, Chen H, Shen Y, et al. Providing hybrid block storage for virtual machines using object-based storage[C]//2014 20th IEEE International Conference on Parallel and Distributed Systems (ICPADS). IEEE, 2014: 150-157."
+  ],
+  "research_directions": [
+    "分布式计算、云计算、大数据、软件架构"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/297",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_91b06de9ed009ccf3dce"
+      ],
+      "ended_at": null,
+      "id": "aff_a742fed09522c07418f1",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/279",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_91b06de9ed009ccf3dce"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a742fed09522c07418f1",
+      "claim_ids": [
+        "claim_91b06de9ed009ccf3dce"
+      ],
+      "is_primary": true,
+      "normalized_value": "mingyuwu@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/279",
+      "status": "current",
+      "type": "email",
+      "value": "mingyuwu@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_91b06de9ed009ccf3dce"
+    ],
+    "email": [
+      "claim_91b06de9ed009ccf3dce"
+    ],
+    "name": [
+      "claim_91b06de9ed009ccf3dce"
+    ],
+    "profile_url": [
+      "claim_91b06de9ed009ccf3dce"
+    ],
+    "recent_papers": [
+      "claim_91b06de9ed009ccf3dce"
+    ],
+    "research_directions": [
+      "claim_91b06de9ed009ccf3dce"
+    ],
+    "status": [
+      "claim_91b06de9ed009ccf3dce"
+    ],
+    "title": [
+      "claim_91b06de9ed009ccf3dce"
+    ]
+  },
+  "id": "mentor_587d626999d6643be973",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_91b06de9ed009ccf3dce"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴明瑜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a742fed09522c07418f1",
+      "claim_ids": [
+        "claim_91b06de9ed009ccf3dce"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/279"
+    }
+  ],
+  "recent_papers": [
+    "Espresso: Brewing Java For More Non-Volatility with Non-volatile Memory.Mingyu Wu, Ziming Zhao, Haoyu Li, Heting Li, Haibo Chen, Binyu Zang and Haibing Guan. The 23rd ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Williamsburg, VA, USA, March 2018.",
+    "Platinum: A CPU-Efficient Concurrent Garbage Collector for Tail-Reduction of Interactive Services. Mingyu Wu, Ziming Zhao, Yanfei Yang, Haoyu Li, Haibo Chen, Binyu Zang, Haibing Guan, Sanhong Li, Chuansheng Lu, Tongbao Zhang. USENIX Annual Technical Conference, Boston, MA, USA, July 2020.",
+    "GCPersist: An Efficient GC-assisted Lazy Persistency Framework for Resilient Java Applications on NVM. Mingyu Wu, Haibo Chen, Hao Zhu, Binyu Zang, Haibing Guan, The 16th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments, Lausanne, Switzerland, March 2020."
+  ],
+  "research_directions": [
+    "高级语言虚拟机、操作系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/279",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

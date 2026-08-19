@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5760c05246a8b886ee4b"
+      ],
+      "ended_at": null,
+      "id": "aff_c56140265d3a038b95cd",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/289",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5760c05246a8b886ee4b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c56140265d3a038b95cd",
+      "claim_ids": [
+        "claim_5760c05246a8b886ee4b"
+      ],
+      "is_primary": true,
+      "normalized_value": "tang-xh@cs.sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/289",
+      "status": "current",
+      "type": "email",
+      "value": "tang-xh@cs.sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5760c05246a8b886ee4b"
+    ],
+    "email": [
+      "claim_5760c05246a8b886ee4b"
+    ],
+    "name": [
+      "claim_5760c05246a8b886ee4b"
+    ],
+    "profile_url": [
+      "claim_5760c05246a8b886ee4b"
+    ],
+    "research_directions": [
+      "claim_5760c05246a8b886ee4b"
+    ],
+    "status": [
+      "claim_5760c05246a8b886ee4b"
+    ],
+    "title": [
+      "claim_5760c05246a8b886ee4b"
+    ]
+  },
+  "id": "mentor_5a8719b455ef57d3384f",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5760c05246a8b886ee4b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "唐新怀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c56140265d3a038b95cd",
+      "claim_ids": [
+        "claim_5760c05246a8b886ee4b"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/289"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "分布式计算,服务计算、海量信息处理,软件自适应协同技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/289",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

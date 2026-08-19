@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fc96e41ff6a6ad777aca"
+      ],
+      "ended_at": null,
+      "id": "aff_c5171737c0bb1cec2508",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/283",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fc96e41ff6a6ad777aca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c5171737c0bb1cec2508",
+      "claim_ids": [
+        "claim_fc96e41ff6a6ad777aca"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaoguowang@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/283",
+      "status": "current",
+      "type": "email",
+      "value": "zhaoguowang@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fc96e41ff6a6ad777aca"
+    ],
+    "email": [
+      "claim_fc96e41ff6a6ad777aca"
+    ],
+    "name": [
+      "claim_fc96e41ff6a6ad777aca"
+    ],
+    "profile_url": [
+      "claim_fc96e41ff6a6ad777aca"
+    ],
+    "recent_papers": [
+      "claim_fc96e41ff6a6ad777aca"
+    ],
+    "research_directions": [
+      "claim_fc96e41ff6a6ad777aca"
+    ],
+    "status": [
+      "claim_fc96e41ff6a6ad777aca"
+    ],
+    "title": [
+      "claim_fc96e41ff6a6ad777aca"
+    ]
+  },
+  "id": "mentor_c98c3a555ce80e7f6dbb",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fc96e41ff6a6ad777aca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王肇国"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c5171737c0bb1cec2508",
+      "claim_ids": [
+        "claim_fc96e41ff6a6ad777aca"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/283"
+    }
+  ],
+  "recent_papers": [
+    "[PODC] On the Parallels between Paxos and Raft, and how to Port Optimizations. Zhaoguo Wang, Changgeng Zhao, Shuai Mu, Haibo Chen and Jinyang Li. 38th Annual ACM Symposium on Principles of Distributed Computing. July 29–August 2, 2019, Toronto, Canada.",
+    "[Usenix ATC] Pisces: A Scalable and Efficient Persistent Transactional Memory. Jinyu Gu, Qianqian Yu, Xiayang Wang, Zhaoguo Wang, Binyu Zang, Haibing Guan and Haibo Chen. 2019 USENIX Annual Technical Conference, Renton, WA, USA, July 2019.",
+    "[PPoPP] Eunomia: Scaling Concurrent Search Trees under Contention Using HTM. Xin Wang, Weihua Zhang, Zhaoguo Wang, Ziyun Wei, Haibo Chen, Wenyun Zhao. PPoPP 2017.",
+    "[APSys] Extracting More Intra-transaction Parallelism with Work Stealing for OLTP Workloads. Xiaozhou Zhou, Zhaoguo Wang, Rong Chen, Haibo Chen, and Jinyang Li. Proceedings of 8th ACM Asia-Pacific Workshop on Systems. Bombay, India, Sep, 2017. (Best Paper Award)",
+    "[SIGMOD] Scaling Multicore Databases via Constrained Parallel Execution. Zhaoguo Wang, Yang Cui, Han Yi, Shuai Mu, Haibo Chen, Jinyang Li. ACM SIGMOD 2016.",
+    "[USENIX ATC] Spartan: A distributed array framework with smart tiling. Chien-Chin Huang, Qi Chen, Zhaoguo Wang, Russell Power Jorge Ortiz Jinyang Li and Zhen Xiao. In Proceedings of USENIX Annual Technical Conference 2015.",
+    "[CAL] Persistent Transactional Memory. Zhaoguo Wang, Han Yi, Ran Liu, Mingkai Dong and Haibo Chen. IEEE Computer Architecture Letters. VOL. 14, NO. 1, JANUARY-JUNE 2015.",
+    "[EuroSys]Using Restricted Transactional Memory to Build a Scalable In-Memory Database. Zhaoguo Wang, Hao Qian, Jinyang Li, Haibo Chen. The European Conference on Computer Systems, Amsterdam, The Netherlands, 2014."
+  ],
+  "research_directions": [
+    "并行与分布式系统和理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/283",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

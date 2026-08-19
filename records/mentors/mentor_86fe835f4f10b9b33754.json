@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b7ed47fcb239596dca41"
+      ],
+      "ended_at": null,
+      "id": "aff_9c529b2a88eaf5703d62",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/632",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_b7ed47fcb239596dca41"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9c529b2a88eaf5703d62",
+      "claim_ids": [
+        "claim_b7ed47fcb239596dca41"
+      ],
+      "is_primary": true,
+      "normalized_value": "lixijun@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/632",
+      "status": "current",
+      "type": "email",
+      "value": "lixijun@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b7ed47fcb239596dca41"
+    ],
+    "email": [
+      "claim_b7ed47fcb239596dca41"
+    ],
+    "name": [
+      "claim_b7ed47fcb239596dca41"
+    ],
+    "profile_url": [
+      "claim_b7ed47fcb239596dca41"
+    ],
+    "recent_papers": [
+      "claim_b7ed47fcb239596dca41"
+    ],
+    "research_directions": [
+      "claim_b7ed47fcb239596dca41"
+    ],
+    "status": [
+      "claim_b7ed47fcb239596dca41"
+    ],
+    "title": [
+      "claim_b7ed47fcb239596dca41"
+    ]
+  },
+  "id": "mentor_86fe835f4f10b9b33754",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b7ed47fcb239596dca41"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李希君"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9c529b2a88eaf5703d62",
+      "claim_ids": [
+        "claim_b7ed47fcb239596dca41"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/632"
+    }
+  ],
+  "recent_papers": [
+    "Learning Cut Selection for Mixed-Integer Linear Programming via Hierarchical Sequence Model. ICLR 2023 (THU A)",
+    "Learning to Optimize Industry-Scale Dynamic Pickup and Delivery Problems. ICDE 2021: 2511-2522 (CCF A)",
+    "A Data-Driven Three-Layer Algorithm for Split Delivery Vehicle Routing Problem with 3D Container Loading Constraint. KDD 2018: 528-536 (CCF A)",
+    "A Two-Layer Algorithmic Framework for Service Provider Configuration and Planning with Optimal Spatial Matching. CIKM 2018: 2273-2281 (CCF B)",
+    "A First Look at Information Entropy-Based Data Pricing. ICDCS 2017: 2053-2060 (CCF B)",
+    "Learning to Cut via Hierarchical Sequence/Set Model for Efficient Mixed-Integer Programming. IEEE Transactions on Pattern Analysis and Machine Intelligence (CCF A)",
+    "Joint Directory, File and IO Trace Feature Extraction and Feature-based Trace Regeneration for Enterprise Storage Systems. ICDE 2024 (CCF A)",
+    "L-QoCo: learning to optimize cache capacity overloading in storage systems. DAC 2022: 379-384 (CCF A)"
+  ],
+  "research_directions": [
+    "数值优化软件、学习优化、具身智能等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/632",
+  "title": "助理研究员",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

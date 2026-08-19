@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0ebb6d73106a83e35a15"
+      ],
+      "ended_at": null,
+      "id": "aff_22ba76b51bd44c17f625",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/271",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_0ebb6d73106a83e35a15"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_22ba76b51bd44c17f625",
+      "claim_ids": [
+        "claim_0ebb6d73106a83e35a15"
+      ],
+      "is_primary": true,
+      "normalized_value": "mingkaidong@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/271",
+      "status": "current",
+      "type": "email",
+      "value": "mingkaidong@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0ebb6d73106a83e35a15"
+    ],
+    "email": [
+      "claim_0ebb6d73106a83e35a15"
+    ],
+    "name": [
+      "claim_0ebb6d73106a83e35a15"
+    ],
+    "profile_url": [
+      "claim_0ebb6d73106a83e35a15"
+    ],
+    "recent_papers": [
+      "claim_0ebb6d73106a83e35a15"
+    ],
+    "research_directions": [
+      "claim_0ebb6d73106a83e35a15"
+    ],
+    "status": [
+      "claim_0ebb6d73106a83e35a15"
+    ],
+    "title": [
+      "claim_0ebb6d73106a83e35a15"
+    ]
+  },
+  "id": "mentor_3ab4fc2f7cbebd83c2c3",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0ebb6d73106a83e35a15"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董明凯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_22ba76b51bd44c17f625",
+      "claim_ids": [
+        "claim_0ebb6d73106a83e35a15"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/271"
+    }
+  ],
+  "recent_papers": [
+    "HTMFS: Strong Consistency Comes for Free with Hardware Transactional Memory in Persistent Memory File Systems",
+    "MT^2: Memory bandwidth Regulation on Hybrid NVM/DRAM Platforms",
+    "Performance and Protection in the ZoFS User-space NVM File System",
+    "EROFS: A Compression-friendly Readonly File System for Resource-scarce Device",
+    "Soft Updates Made Simple and Fast for Non-volatile Memories"
+  ],
+  "research_directions": [
+    "操作系统、存储系统、文件系统、DNA存储"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/271",
+  "title": "助理研究员",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

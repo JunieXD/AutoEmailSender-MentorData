@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ca5bb60a542aa9f1719d"
+      ],
+      "ended_at": null,
+      "id": "aff_d55dd8570c78e118b92d",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/309",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ca5bb60a542aa9f1719d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d55dd8570c78e118b92d",
+      "claim_ids": [
+        "claim_ca5bb60a542aa9f1719d"
+      ],
+      "is_primary": true,
+      "normalized_value": "fu-yx@cs.sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/309",
+      "status": "current",
+      "type": "email",
+      "value": "fu-yx@cs.sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ca5bb60a542aa9f1719d"
+    ],
+    "email": [
+      "claim_ca5bb60a542aa9f1719d"
+    ],
+    "name": [
+      "claim_ca5bb60a542aa9f1719d"
+    ],
+    "profile_url": [
+      "claim_ca5bb60a542aa9f1719d"
+    ],
+    "recent_papers": [
+      "claim_ca5bb60a542aa9f1719d"
+    ],
+    "research_directions": [
+      "claim_ca5bb60a542aa9f1719d"
+    ],
+    "status": [
+      "claim_ca5bb60a542aa9f1719d"
+    ],
+    "title": [
+      "claim_ca5bb60a542aa9f1719d"
+    ]
+  },
+  "id": "mentor_f5df67909c53214a17be",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ca5bb60a542aa9f1719d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "傅育熙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d55dd8570c78e118b92d",
+      "claim_ids": [
+        "claim_ca5bb60a542aa9f1719d"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/309"
+    }
+  ],
+  "recent_papers": [
+    "Yuxi Fu. Theory of Interaction. Theoretical Computer Science, 611:1-49, 2016.",
+    "Yuxi Fu. Nondeterministic Structure of Computation. Mathematical Structures in Computer Science, 25:1295-1338, 2015.",
+    "Qiang Yin, Yuxi Fu, Chaodong He, Mingzhang Huang, Xiuting Tao. Branching Bisimilarity Checking for PRS. J. Esparza et al. (Eds.): ICALP 2014, Part II, Lecture Notes in Computer Science 8573, 363--374, 2014.",
+    "Yuxi Fu. Checking Equality and Regularity for Normed BPA with Silent Moves. F.V. Fomin et al. (Eds.): ICALP 2013, Part II, Lecture Notes in Computer Science 7966, 244--255. Springer, 2013.",
+    "Yuxi Fu. The Value-Passing Calculus. Theories of Programming and Formal Methods, Lecture Notes in Computer Science 8051, 166-195, 2013.",
+    "Xiaojuan Cai, Yuxi Fu. The λ-Calculus in the π-Calculus. Mathematical Structures in Computer Science, 21: 943-996, 2011.",
+    "Yuxi Fu, Hao Lu. On the Expressiveness of Interaction. Theoretical Computer Science, 411:1387-1451, 2010.",
+    "Yuxi Fu, Zhengrong Yang. Tau laws for pi calculus. Theoretical Computer Science, 308:55-130, 2003."
+  ],
+  "research_directions": [
+    "软件理论",
+    "理论计算机科学,主要研究方向包括形式化方法与程序语言理论、模型检测的算法复杂性及应用、并发理论及其应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/309",
+  "title": "教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

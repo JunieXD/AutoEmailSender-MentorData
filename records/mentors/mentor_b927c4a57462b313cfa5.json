@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_95ab64f8a1b7f38cc216"
+      ],
+      "ended_at": null,
+      "id": "aff_6c8e401acdaee10afe7b",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/304",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_95ab64f8a1b7f38cc216"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6c8e401acdaee10afe7b",
+      "claim_ids": [
+        "claim_95ab64f8a1b7f38cc216"
+      ],
+      "is_primary": true,
+      "normalized_value": "rongchen@sjtu.eud.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/304",
+      "status": "current",
+      "type": "email",
+      "value": "rongchen@sjtu.eud.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_95ab64f8a1b7f38cc216"
+    ],
+    "email": [
+      "claim_95ab64f8a1b7f38cc216"
+    ],
+    "name": [
+      "claim_95ab64f8a1b7f38cc216"
+    ],
+    "profile_url": [
+      "claim_95ab64f8a1b7f38cc216"
+    ],
+    "recent_papers": [
+      "claim_95ab64f8a1b7f38cc216"
+    ],
+    "research_directions": [
+      "claim_95ab64f8a1b7f38cc216"
+    ],
+    "status": [
+      "claim_95ab64f8a1b7f38cc216"
+    ],
+    "title": [
+      "claim_95ab64f8a1b7f38cc216"
+    ]
+  },
+  "id": "mentor_b927c4a57462b313cfa5",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_95ab64f8a1b7f38cc216"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈榕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6c8e401acdaee10afe7b",
+      "claim_ids": [
+        "claim_95ab64f8a1b7f38cc216"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/304"
+    }
+  ],
+  "recent_papers": [
+    "[OSDI] Fast and Concurrent RDF Queries with RDMA-based Distributed Graph Exploration. Jiaxin Shi, Youyang Yao, Rong Chen, Haibo Chen, and Feifei Li. Proceedings of 12th USENIX Symposium on Operating Systems Design and Implementation, Savannah, GA, US, Nov, 2016.",
+    "[EuroSys] Fast and General Distributed Transactions Using RDMA and HTM. Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, and Haibo Chen. Proceedings of the 11th ACM European Conference on Computer Systems, London, UK, April, 2016.",
+    "[SOSP] Fast In-memory Transaction Processing using RDMA and HTM. Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, and Haibo Chen. Proceedings of the 25th ACM Symposium on Operating Systems Principles, Monterey, CA, USA, October, 2015.",
+    "[EuroSys] PowerLyra: Differentiated Graph Computation and Partitioning on Skewed Graphs. Rong Chen, Jiaxin Shi, Yanzhe Chen, and Haibo Chen. Proceedings of 10th ACM SIGOPS European Conference on Computer Systems, Bordeaux, France, April, 2015. (Best Paper Award)",
+    "[PPoPP] NUMA-aware Graph-structured Analytics. Kaiyuan Zhang, Rong Chen, and Haibo Chen. Proceedings of 20th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming. Bay Area, CA, USA, February, 2015.",
+    "[PPoPP] SYNC or ASYNC: Time to Fuse for Distributed Graph-parallel Computation. Chenning Xie, Rong Chen, Haibing Guan, Binyu Zang, and Haibo Chen. Proceedings of 20th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, Bay Area, CA, USA, February, 2015.",
+    "[HPDC] Computation and Communication Efficient Graph Processing with Distributed Immutable View. Rong Chen, Xin Ding, Peng Wang, Haibo Chen, Binyu Zang, and Haibing Guan. Proceedings of the 23rd ACM International Symposium on High-Performance Parallel and Distributed Computing, Vancouver, Canada, June, 2014.",
+    "[ACM TACO] Tiled MapReduce: Efficient and Flexible MapReduce Processing on Multicore with Tiling. Rong Chen and Haibo Chen. ACM Transactions on Architecture and Code Optimization, 10(1), Article No.3. April, 2013."
+  ],
+  "research_directions": [
+    "并行与分布式系统,操作系统与系统虚拟化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/304",
+  "title": "教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d30831b6cf31a3c7ad21"
+      ],
+      "ended_at": null,
+      "id": "aff_59b37946429c7c1fdab2",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/278",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_d30831b6cf31a3c7ad21"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_59b37946429c7c1fdab2",
+      "claim_ids": [
+        "claim_d30831b6cf31a3c7ad21"
+      ],
+      "is_primary": true,
+      "normalized_value": "zchua@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/278",
+      "status": "current",
+      "type": "email",
+      "value": "zchua@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d30831b6cf31a3c7ad21"
+    ],
+    "email": [
+      "claim_d30831b6cf31a3c7ad21"
+    ],
+    "name": [
+      "claim_d30831b6cf31a3c7ad21"
+    ],
+    "profile_url": [
+      "claim_d30831b6cf31a3c7ad21"
+    ],
+    "recent_papers": [
+      "claim_d30831b6cf31a3c7ad21"
+    ],
+    "research_directions": [
+      "claim_d30831b6cf31a3c7ad21"
+    ],
+    "status": [
+      "claim_d30831b6cf31a3c7ad21"
+    ],
+    "title": [
+      "claim_d30831b6cf31a3c7ad21"
+    ]
+  },
+  "id": "mentor_1b3e6234f9e8df4f1a23",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d30831b6cf31a3c7ad21"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "华志超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_59b37946429c7c1fdab2",
+      "claim_ids": [
+        "claim_d30831b6cf31a3c7ad21"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/278"
+    }
+  ],
+  "recent_papers": [
+    "[ASPLOS] CPS: A Cooperative Para-virtualized Scheduling Framework for Manycore Machines. Yuxuan Liu, Tianqiang Xu, Zeyu Mi, Zhichao Hua, Binyu Zang, Haibo Chen. The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, April 2024.",
+    "[ISCA] ISA-grid: Architecture of Fine-grained Privilege Control for Instructions and Registers. Shulin Fan, Zhichao Hua*, Yubin Xia, Haibo Chen, Binyu Zang. The 50th International Symposium on Computer Architecture,June 17–21, 2023, Orlando, FL, USA.",
+    "[ACM ToCS] Boosting Inter-Process Communication with Architectural Support. Yubin Xia, Dong Du, Zhichao Hua, Binyu Zang, Haibo Chen, Haibing Guan. ACM Transactions on Computer Systems.2022.",
+    "[IEEE TC] COLONY: A Privileged Trusted Execution Environment with Extensibility. Yubin Xia, Zhichao Hua*, Jinyu Gu, Haibo Chen, Binyu Zang. IEEE TRANSACTIONS ON COMPUTERS, 2021.",
+    "[SCIS] TZ-Container: Protecting Container from Untrusted OS with ARM TrustZone. Zhichao Hua, Yang Yu, Jinyu Gu, Yubin Xia, Haibo Chen, Binyu Zang. SCIENCE CHINA Information Sciences, 2020.",
+    "[ISCA] XPC: Architectural Support for Secure and Efficient Cross Process Call. Dong Du, Zhichao Hua, Yubin Xia, Binyu Zang, Haibo Chen. Proceedings of the 46th ACM/IEEE International Symposium on Computer Architecture, Phoenix, Arizona, USA. June 22-26, 2019.",
+    "[USENIX ATC] EPTI: Efficient Defence against Meltdown Attack for Unpatched VMs. Zhichao Hua, Dong Du, Yubin Xia, Haibo Chen, and Binyu Zang, 2018 USENIX Annual Technical Conference, Boston, MA, USA, July 2018",
+    "[USENIX Security] vTZ: Virtualizing ARM TrustZone. Zhichao Hua, Jinyu Gu, Yubin Xia, Haibo Chen, Binyu Zang and Haibing Guan. Usenix Security Symposium 2017. Vancouver, Canada, August, 2017."
+  ],
+  "research_directions": [
+    "操作系统、虚拟化与系统安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/278",
+  "title": "助理研究员",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

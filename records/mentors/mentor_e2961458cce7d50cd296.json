@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b5d1017ab888e648bd37"
+      ],
+      "ended_at": null,
+      "id": "aff_131eb87a727b061df631",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/285",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b5d1017ab888e648bd37"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_131eb87a727b061df631",
+      "claim_ids": [
+        "claim_b5d1017ab888e648bd37"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaosj@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/285",
+      "status": "current",
+      "type": "email",
+      "value": "xiaosj@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b5d1017ab888e648bd37"
+    ],
+    "email": [
+      "claim_b5d1017ab888e648bd37"
+    ],
+    "name": [
+      "claim_b5d1017ab888e648bd37"
+    ],
+    "profile_url": [
+      "claim_b5d1017ab888e648bd37"
+    ],
+    "research_directions": [
+      "claim_b5d1017ab888e648bd37"
+    ],
+    "status": [
+      "claim_b5d1017ab888e648bd37"
+    ],
+    "title": [
+      "claim_b5d1017ab888e648bd37"
+    ]
+  },
+  "id": "mentor_e2961458cce7d50cd296",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b5d1017ab888e648bd37"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖双九"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_131eb87a727b061df631",
+      "claim_ids": [
+        "claim_b5d1017ab888e648bd37"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/285"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机图形图像、数字孪生、虚拟现实/增强现实、智能人机交互、数据可视化、位置数据服务等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/285",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

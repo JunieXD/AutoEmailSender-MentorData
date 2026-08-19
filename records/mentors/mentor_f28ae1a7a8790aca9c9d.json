@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0726dd814abdffe965f1"
+      ],
+      "ended_at": null,
+      "id": "aff_77e5495aee573a05870c",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/294",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0726dd814abdffe965f1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_77e5495aee573a05870c",
+      "claim_ids": [
+        "claim_0726dd814abdffe965f1"
+      ],
+      "is_primary": true,
+      "normalized_value": "jianglh@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/294",
+      "status": "current",
+      "type": "email",
+      "value": "jianglh@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0726dd814abdffe965f1"
+    ],
+    "email": [
+      "claim_0726dd814abdffe965f1"
+    ],
+    "name": [
+      "claim_0726dd814abdffe965f1"
+    ],
+    "profile_url": [
+      "claim_0726dd814abdffe965f1"
+    ],
+    "recent_papers": [
+      "claim_0726dd814abdffe965f1"
+    ],
+    "research_directions": [
+      "claim_0726dd814abdffe965f1"
+    ],
+    "status": [
+      "claim_0726dd814abdffe965f1"
+    ],
+    "title": [
+      "claim_0726dd814abdffe965f1"
+    ]
+  },
+  "id": "mentor_f28ae1a7a8790aca9c9d",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0726dd814abdffe965f1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜丽红"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_77e5495aee573a05870c",
+      "claim_ids": [
+        "claim_0726dd814abdffe965f1"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/294"
+    }
+  ],
+  "recent_papers": [
+    "A process-mining-based scenarios generation method for SOA application development,Service Oriented Computing and Applications, 2015",
+    "A Linked Data-based Approach for Clinical Treatment Selecting Support,Journal of Management Analytics, 2015",
+    "An IoT-Oriented Data Storage Framework in Cloud Computing Platform,IEEE Transactions on Industrial Informatics, 2014",
+    "基于案例推理的过滤算法及智能信息推荐系统,清华大学学报(自然科学版),2006",
+    "信息自动过滤方法以及个性化的信息推荐系统,情报科学,2005",
+    "一种协同过滤方法及其在信息推荐系统中的实现,情报学报,2005",
+    "GDSS决策信息流及基于Multi-agents信息收集模型研究,复旦学报(自然科学版),2000",
+    "信息筛选中群体用户偏好聚合模型,上海交通大学学报,2000"
+  ],
+  "research_directions": [
+    "信息系统与信息技术,企业数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/294",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}

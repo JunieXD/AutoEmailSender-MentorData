@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_067e954ca824ecb5ac1d"
+      ],
+      "ended_at": null,
+      "id": "aff_0a6e19853987ebaef9d3",
+      "is_primary": true,
+      "observed_at": "2026-08-19T07:00:11Z",
+      "organization_id": "org_auto_95409c284c0c562ec2e3",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/291",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_067e954ca824ecb5ac1d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0a6e19853987ebaef9d3",
+      "claim_ids": [
+        "claim_067e954ca824ecb5ac1d"
+      ],
+      "is_primary": true,
+      "normalized_value": "li.g@sjtu.edu.cn",
+      "observed_at": "2026-08-19T07:00:11Z",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/View/291",
+      "status": "current",
+      "type": "email",
+      "value": "li.g@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T07:00:11Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_067e954ca824ecb5ac1d"
+    ],
+    "email": [
+      "claim_067e954ca824ecb5ac1d"
+    ],
+    "name": [
+      "claim_067e954ca824ecb5ac1d"
+    ],
+    "profile_url": [
+      "claim_067e954ca824ecb5ac1d"
+    ],
+    "recent_papers": [
+      "claim_067e954ca824ecb5ac1d"
+    ],
+    "research_directions": [
+      "claim_067e954ca824ecb5ac1d"
+    ],
+    "status": [
+      "claim_067e954ca824ecb5ac1d"
+    ],
+    "title": [
+      "claim_067e954ca824ecb5ac1d"
+    ]
+  },
+  "id": "mentor_3547199385d5e49dc001",
+  "last_verified_at": "2026-08-19T07:00:11Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_067e954ca824ecb5ac1d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李国强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0a6e19853987ebaef9d3",
+      "claim_ids": [
+        "claim_067e954ca824ecb5ac1d"
+      ],
+      "observed_at": "2026-08-19T07:00:11Z",
+      "status": "current",
+      "url": "http://www.se.sjtu.edu.cn/Data/View/291"
+    }
+  ],
+  "recent_papers": [
+    "Jingyang Li, Guoqiang Li*. HOBAT: Batch Verification for Homogeneous Structural Neural Networks. In Proceedings of the ASE 2023",
+    "Minyu Chen, Guoqiang Li*, Chen Ma, Jingyang Li, Hongfei Fu. Repo4QA: Answering Coding Questions via Dense Retrieval on GitHub Repositories. In Proceedings of the COLING 2022",
+    "Suyu Ma, Zhenchang Xing , Chunyang Chen*, Cheng Chen, Lizhen Qu, Guoqiang Li*.Easy-to-Deploy API Extraction by Multi-Level Feature Embedding and Transfer Learning. IEEE Transactions on Software Engineering, Vol. 47(10), 2296 - 2311, 2021",
+    "Jieshan Chen, Chunyang Chen*, Zhenchang Xing, Xiwei Xu, Liming Zhu, Guoqiang Li*, Jinshui Wang. Unblind Your Apps: Predicting Natural-Language Labels for Mobile GUI Components by Deep Learning. In Proceedings of the ICSE 2020, (Distinguished paper award!)",
+    "Dehai Zhao, Zhenchang Xing, Chunyang Chen, Xiwei Xu, Liming Zhu, Guoqiang Li*, Jinshui Wang. Seenomaly: Vision-Based Linting of GUI Animation Effects Against Design-Don't Guidelines. In Proceedings of the ICSE 2020",
+    "Xiaoxue Ren, Zhenchang Xing, Xin Xia, Guoqiang Li, Jianling Sun. Discovering, Explaining and Summarizing Controversial Discussions in Community Q&A Sites. In Proceedings of the ASE 2019",
+    "Dehai Zhao, Zhenchang Xing, Chunyang Chen*, Xin Xia*, Guoqiang Li*. ActionNet: Vision-based Workflow Action Recognition from Programming Screencasts. In Proceedings ICSE 2019",
+    "Chunyang Chen, Xi Chen, Jiamou Sun, Zhenchang Xing, Guoqiang Li*. Data-Driven Proactive Policy Assurance of Post Quality in Community Q&A Sites. In Proceedings of the CSCW 2018"
+  ],
+  "research_directions": [
+    "形式化方法",
+    "程序语言理论",
+    "知识表示、推理与验证",
+    "智能系统的验证与安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T07:00:11Z",
+  "status_reason": null,
+  "status_source_url": "http://www.se.sjtu.edu.cn/Data/View/291",
+  "title": "副教授",
+  "updated_at": "2026-08-19T07:00:11Z"
+}
