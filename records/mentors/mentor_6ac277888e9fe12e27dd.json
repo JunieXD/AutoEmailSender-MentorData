@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4ea55fde476588a97a38"
+      ],
+      "ended_at": null,
+      "id": "aff_6e1afea9f1eac5f59610",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/sunjuanjuan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4ea55fde476588a97a38"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6e1afea9f1eac5f59610",
+      "claim_ids": [
+        "claim_4ea55fde476588a97a38"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunjj@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/sunjuanjuan",
+      "status": "current",
+      "type": "email",
+      "value": "sunjj@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4ea55fde476588a97a38"
+    ],
+    "email": [
+      "claim_4ea55fde476588a97a38"
+    ],
+    "name": [
+      "claim_4ea55fde476588a97a38"
+    ],
+    "profile_url": [
+      "claim_4ea55fde476588a97a38"
+    ],
+    "status": [
+      "claim_4ea55fde476588a97a38"
+    ],
+    "title": [
+      "claim_4ea55fde476588a97a38"
+    ]
+  },
+  "id": "mentor_6ac277888e9fe12e27dd",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4ea55fde476588a97a38"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙娟娟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6e1afea9f1eac5f59610",
+      "claim_ids": [
+        "claim_4ea55fde476588a97a38"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/sunjuanjuan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/sunjuanjuan",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

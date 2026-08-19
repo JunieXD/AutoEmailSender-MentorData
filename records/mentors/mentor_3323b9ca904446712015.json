@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cd204ed0b425ffae7751"
+      ],
+      "ended_at": null,
+      "id": "aff_a316fbde63b0fd84e67d",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2147.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cd204ed0b425ffae7751"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a316fbde63b0fd84e67d",
+      "claim_ids": [
+        "claim_cd204ed0b425ffae7751"
+      ],
+      "is_primary": true,
+      "normalized_value": "yli@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2147.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yli@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cd204ed0b425ffae7751"
+    ],
+    "email": [
+      "claim_cd204ed0b425ffae7751"
+    ],
+    "name": [
+      "claim_cd204ed0b425ffae7751"
+    ],
+    "profile_url": [
+      "claim_cd204ed0b425ffae7751"
+    ],
+    "research_directions": [
+      "claim_cd204ed0b425ffae7751"
+    ],
+    "status": [
+      "claim_cd204ed0b425ffae7751"
+    ],
+    "title": [
+      "claim_cd204ed0b425ffae7751"
+    ]
+  },
+  "id": "mentor_3323b9ca904446712015",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cd204ed0b425ffae7751"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李永"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a316fbde63b0fd84e67d",
+      "claim_ids": [
+        "claim_cd204ed0b425ffae7751"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2147.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、图像处理、深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2147.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

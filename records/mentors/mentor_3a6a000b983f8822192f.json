@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_62c5f7354e75a86c01e1"
+      ],
+      "ended_at": null,
+      "id": "aff_21c3a3c799a02b548108",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yangtao1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_62c5f7354e75a86c01e1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_21c3a3c799a02b548108",
+      "claim_ids": [
+        "claim_62c5f7354e75a86c01e1"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangtao@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yangtao1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangtao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_62c5f7354e75a86c01e1"
+    ],
+    "email": [
+      "claim_62c5f7354e75a86c01e1"
+    ],
+    "name": [
+      "claim_62c5f7354e75a86c01e1"
+    ],
+    "profile_url": [
+      "claim_62c5f7354e75a86c01e1"
+    ],
+    "research_directions": [
+      "claim_62c5f7354e75a86c01e1"
+    ],
+    "status": [
+      "claim_62c5f7354e75a86c01e1"
+    ],
+    "title": [
+      "claim_62c5f7354e75a86c01e1"
+    ]
+  },
+  "id": "mentor_3a6a000b983f8822192f",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_62c5f7354e75a86c01e1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨桃"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_21c3a3c799a02b548108",
+      "claim_ids": [
+        "claim_62c5f7354e75a86c01e1"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yangtao1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超高速大容量相干光传输、下一代光接入网技术、复杂光网络智能监测、有线/无线融合光通信、紫外光通信与定位"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yangtao1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0c4e502a1ba047b9a0e0"
+      ],
+      "ended_at": null,
+      "id": "aff_1225216a27a0ff696d02",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/fanchunxiao",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0c4e502a1ba047b9a0e0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1225216a27a0ff696d02",
+      "claim_ids": [
+        "claim_0c4e502a1ba047b9a0e0"
+      ],
+      "is_primary": true,
+      "normalized_value": "fcxg100@163.com",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/fanchunxiao",
+      "status": "current",
+      "type": "email",
+      "value": "fcxg100@163.com"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0c4e502a1ba047b9a0e0"
+    ],
+    "email": [
+      "claim_0c4e502a1ba047b9a0e0"
+    ],
+    "name": [
+      "claim_0c4e502a1ba047b9a0e0"
+    ],
+    "profile_url": [
+      "claim_0c4e502a1ba047b9a0e0"
+    ],
+    "status": [
+      "claim_0c4e502a1ba047b9a0e0"
+    ],
+    "title": [
+      "claim_0c4e502a1ba047b9a0e0"
+    ]
+  },
+  "id": "mentor_2048539a42f106004bee",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0c4e502a1ba047b9a0e0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "范春晓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1225216a27a0ff696d02",
+      "claim_ids": [
+        "claim_0c4e502a1ba047b9a0e0"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/fanchunxiao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/fanchunxiao",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

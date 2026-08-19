@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0ac155523a8e504bb807"
+      ],
+      "ended_at": null,
+      "id": "aff_d72b0f37da341cd8823b",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/dengzhongliang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0ac155523a8e504bb807"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d72b0f37da341cd8823b",
+      "claim_ids": [
+        "claim_0ac155523a8e504bb807"
+      ],
+      "is_primary": true,
+      "normalized_value": "dengzhl@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/dengzhongliang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dengzhl@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0ac155523a8e504bb807"
+    ],
+    "email": [
+      "claim_0ac155523a8e504bb807"
+    ],
+    "name": [
+      "claim_0ac155523a8e504bb807"
+    ],
+    "profile_url": [
+      "claim_0ac155523a8e504bb807"
+    ],
+    "research_directions": [
+      "claim_0ac155523a8e504bb807"
+    ],
+    "status": [
+      "claim_0ac155523a8e504bb807"
+    ],
+    "title": [
+      "claim_0ac155523a8e504bb807"
+    ]
+  },
+  "id": "mentor_ae6880bba52f62184050",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0ac155523a8e504bb807"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓中亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d72b0f37da341cd8823b",
+      "claim_ids": [
+        "claim_0ac155523a8e504bb807"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/dengzhongliang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线网络定位与导航",
+    "卫星定位与导航",
+    "北斗+5G定位、低轨卫星定位与导航",
+    "5G、6G卫星移动通信、卫星互联网",
+    "多源、多传感器、视觉融合定位技术",
+    "微纳电子器件、通导融合集成电路",
+    "计算机与机器视觉、模式识别及无人机智能导航与控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/dengzhongliang/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

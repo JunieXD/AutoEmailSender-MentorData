@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_99d7c41acf8943e9b58a"
+      ],
+      "ended_at": null,
+      "id": "aff_3b148a5d6637bdf28a3a",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1051/2195.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_99d7c41acf8943e9b58a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3b148a5d6637bdf28a3a",
+      "claim_ids": [
+        "claim_99d7c41acf8943e9b58a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangyc@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1051/2195.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangyc@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_99d7c41acf8943e9b58a"
+    ],
+    "email": [
+      "claim_99d7c41acf8943e9b58a"
+    ],
+    "name": [
+      "claim_99d7c41acf8943e9b58a"
+    ],
+    "profile_url": [
+      "claim_99d7c41acf8943e9b58a"
+    ],
+    "research_directions": [
+      "claim_99d7c41acf8943e9b58a"
+    ],
+    "status": [
+      "claim_99d7c41acf8943e9b58a"
+    ],
+    "title": [
+      "claim_99d7c41acf8943e9b58a"
+    ]
+  },
+  "id": "mentor_18a84b858477cff1cae1",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_99d7c41acf8943e9b58a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张一辰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3b148a5d6637bdf28a3a",
+      "claim_ids": [
+        "claim_99d7c41acf8943e9b58a"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1051/2195.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子光学、光通信、光电信息工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1051/2195.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

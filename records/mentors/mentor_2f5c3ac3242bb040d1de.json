@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b4ff3b902d92a2241569"
+      ],
+      "ended_at": null,
+      "id": "aff_9c3224e4e979ba076c28",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/wufan",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b4ff3b902d92a2241569"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9c3224e4e979ba076c28",
+      "claim_ids": [
+        "claim_b4ff3b902d92a2241569"
+      ],
+      "is_primary": true,
+      "normalized_value": "wufanwww@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/wufan",
+      "status": "current",
+      "type": "email",
+      "value": "wufanwww@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b4ff3b902d92a2241569"
+    ],
+    "email": [
+      "claim_b4ff3b902d92a2241569"
+    ],
+    "name": [
+      "claim_b4ff3b902d92a2241569"
+    ],
+    "profile_url": [
+      "claim_b4ff3b902d92a2241569"
+    ],
+    "research_directions": [
+      "claim_b4ff3b902d92a2241569"
+    ],
+    "status": [
+      "claim_b4ff3b902d92a2241569"
+    ],
+    "title": [
+      "claim_b4ff3b902d92a2241569"
+    ]
+  },
+  "id": "mentor_2f5c3ac3242bb040d1de",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b4ff3b902d92a2241569"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴帆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9c3224e4e979ba076c28",
+      "claim_ids": [
+        "claim_b4ff3b902d92a2241569"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wufan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "移动通信、物联网多元业务建模、可重构电路设计、网络终端增强与电磁脉冲防护、无线组网与应用部署"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wufan",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

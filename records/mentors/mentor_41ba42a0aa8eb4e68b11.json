@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_edca728176f7bb4ed67f"
+      ],
+      "ended_at": null,
+      "id": "aff_3f1ac93d5bd3e5b39e63",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2060.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_edca728176f7bb4ed67f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3f1ac93d5bd3e5b39e63",
+      "claim_ids": [
+        "claim_edca728176f7bb4ed67f"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangqi@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2060.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangqi@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_edca728176f7bb4ed67f"
+    ],
+    "email": [
+      "claim_edca728176f7bb4ed67f"
+    ],
+    "name": [
+      "claim_edca728176f7bb4ed67f"
+    ],
+    "profile_url": [
+      "claim_edca728176f7bb4ed67f"
+    ],
+    "research_directions": [
+      "claim_edca728176f7bb4ed67f"
+    ],
+    "status": [
+      "claim_edca728176f7bb4ed67f"
+    ],
+    "title": [
+      "claim_edca728176f7bb4ed67f"
+    ]
+  },
+  "id": "mentor_41ba42a0aa8eb4e68b11",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_edca728176f7bb4ed67f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张琦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3f1ac93d5bd3e5b39e63",
+      "claim_ids": [
+        "claim_edca728176f7bb4ed67f"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2060.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光通信与卫星通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2060.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

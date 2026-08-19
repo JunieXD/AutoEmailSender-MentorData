@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a3d892c68502f084a747"
+      ],
+      "ended_at": null,
+      "id": "aff_0ff443094e7aff1448f4",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/wanneng",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_a3d892c68502f084a747"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0ff443094e7aff1448f4",
+      "claim_ids": [
+        "claim_a3d892c68502f084a747"
+      ],
+      "is_primary": true,
+      "normalized_value": "buptwn@qq.com",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/wanneng",
+      "status": "current",
+      "type": "email",
+      "value": "buptwn@qq.com"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a3d892c68502f084a747"
+    ],
+    "email": [
+      "claim_a3d892c68502f084a747"
+    ],
+    "name": [
+      "claim_a3d892c68502f084a747"
+    ],
+    "profile_url": [
+      "claim_a3d892c68502f084a747"
+    ],
+    "research_directions": [
+      "claim_a3d892c68502f084a747"
+    ],
+    "status": [
+      "claim_a3d892c68502f084a747"
+    ],
+    "title": [
+      "claim_a3d892c68502f084a747"
+    ]
+  },
+  "id": "mentor_b269274835ba27835a53",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a3d892c68502f084a747"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "万能"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0ff443094e7aff1448f4",
+      "claim_ids": [
+        "claim_a3d892c68502f084a747"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/wanneng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能在通信、金融等领域的应用研究、金融大数据分析与应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/wanneng",
+  "title": "讲师",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

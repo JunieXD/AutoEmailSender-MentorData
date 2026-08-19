@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f7b97a9ad724d28560fc"
+      ],
+      "ended_at": null,
+      "id": "aff_e749d98fa9af6848b7db",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2643.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f7b97a9ad724d28560fc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e749d98fa9af6848b7db",
+      "claim_ids": [
+        "claim_f7b97a9ad724d28560fc"
+      ],
+      "is_primary": true,
+      "normalized_value": "luobin@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2643.htm",
+      "status": "current",
+      "type": "email",
+      "value": "luobin@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f7b97a9ad724d28560fc"
+    ],
+    "email": [
+      "claim_f7b97a9ad724d28560fc"
+    ],
+    "name": [
+      "claim_f7b97a9ad724d28560fc"
+    ],
+    "profile_url": [
+      "claim_f7b97a9ad724d28560fc"
+    ],
+    "research_directions": [
+      "claim_f7b97a9ad724d28560fc"
+    ],
+    "status": [
+      "claim_f7b97a9ad724d28560fc"
+    ],
+    "title": [
+      "claim_f7b97a9ad724d28560fc"
+    ]
+  },
+  "id": "mentor_f29d66d88aa405197c1b",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f7b97a9ad724d28560fc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "罗斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e749d98fa9af6848b7db",
+      "claim_ids": [
+        "claim_f7b97a9ad724d28560fc"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2643.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子光学与量子信息,包括量子相干、电磁感生透明、快慢光及其在光通信及量子通信、量子存储中的应用、量子传感器、原子滤光与分子滤光及其在量子探测和量子成像中的应用等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2643.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

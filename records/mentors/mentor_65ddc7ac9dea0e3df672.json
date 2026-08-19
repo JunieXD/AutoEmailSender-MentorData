@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5c6c01aec491eca16669"
+      ],
+      "ended_at": null,
+      "id": "aff_2f3a020b9e34ce08f807",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2136.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5c6c01aec491eca16669"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2f3a020b9e34ce08f807",
+      "claim_ids": [
+        "claim_5c6c01aec491eca16669"
+      ],
+      "is_primary": true,
+      "normalized_value": "yusong@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2136.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yusong@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5c6c01aec491eca16669"
+    ],
+    "email": [
+      "claim_5c6c01aec491eca16669"
+    ],
+    "name": [
+      "claim_5c6c01aec491eca16669"
+    ],
+    "profile_url": [
+      "claim_5c6c01aec491eca16669"
+    ],
+    "research_directions": [
+      "claim_5c6c01aec491eca16669"
+    ],
+    "status": [
+      "claim_5c6c01aec491eca16669"
+    ],
+    "title": [
+      "claim_5c6c01aec491eca16669"
+    ]
+  },
+  "id": "mentor_65ddc7ac9dea0e3df672",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5c6c01aec491eca16669"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "喻松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2f3a020b9e34ce08f807",
+      "claim_ids": [
+        "claim_5c6c01aec491eca16669"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2136.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子密码、高精度时频基准传递"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2136.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

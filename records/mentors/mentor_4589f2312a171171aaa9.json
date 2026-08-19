@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b013b925c523ffa2476b"
+      ],
+      "ended_at": null,
+      "id": "aff_87706bc7ddc8a0bd766b",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/yinlu",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b013b925c523ffa2476b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_87706bc7ddc8a0bd766b",
+      "claim_ids": [
+        "claim_b013b925c523ffa2476b"
+      ],
+      "is_primary": true,
+      "normalized_value": "inlu_mail@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/yinlu",
+      "status": "current",
+      "type": "email",
+      "value": "inlu_mail@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b013b925c523ffa2476b"
+    ],
+    "email": [
+      "claim_b013b925c523ffa2476b"
+    ],
+    "name": [
+      "claim_b013b925c523ffa2476b"
+    ],
+    "profile_url": [
+      "claim_b013b925c523ffa2476b"
+    ],
+    "research_directions": [
+      "claim_b013b925c523ffa2476b"
+    ],
+    "status": [
+      "claim_b013b925c523ffa2476b"
+    ],
+    "title": [
+      "claim_b013b925c523ffa2476b"
+    ]
+  },
+  "id": "mentor_4589f2312a171171aaa9",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b013b925c523ffa2476b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹露"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_87706bc7ddc8a0bd766b",
+      "claim_ids": [
+        "claim_b013b925c523ffa2476b"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/yinlu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线通信与定位技术、智能导航、基于大数据与人工智能的新型定位系统等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/yinlu",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

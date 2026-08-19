@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd4443abe200a080511a"
+      ],
+      "ended_at": null,
+      "id": "aff_af35bac5abe0b7f85eb3",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "http://teacher.bupt.edu.cn/yuwensheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fd4443abe200a080511a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_af35bac5abe0b7f85eb3",
+      "claim_ids": [
+        "claim_fd4443abe200a080511a"
+      ],
+      "is_primary": true,
+      "normalized_value": "wsyu@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "http://teacher.bupt.edu.cn/yuwensheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wsyu@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd4443abe200a080511a"
+    ],
+    "email": [
+      "claim_fd4443abe200a080511a"
+    ],
+    "name": [
+      "claim_fd4443abe200a080511a"
+    ],
+    "profile_url": [
+      "claim_fd4443abe200a080511a"
+    ],
+    "research_directions": [
+      "claim_fd4443abe200a080511a"
+    ],
+    "status": [
+      "claim_fd4443abe200a080511a"
+    ],
+    "title": [
+      "claim_fd4443abe200a080511a"
+    ]
+  },
+  "id": "mentor_63d5b06e868c570da4c8",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd4443abe200a080511a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郁文生"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_af35bac5abe0b7f85eb3",
+      "claim_ids": [
+        "claim_fd4443abe200a080511a"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "http://teacher.bupt.edu.cn/yuwensheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器证明与自动推理、智能信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.bupt.edu.cn/yuwensheng/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

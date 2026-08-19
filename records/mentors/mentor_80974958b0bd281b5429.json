@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_093b1444f2ece151fa5c"
+      ],
+      "ended_at": null,
+      "id": "aff_e270af5fcd8cf247b231",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://teacher.bupt.edu.cn/baolin",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_093b1444f2ece151fa5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e270af5fcd8cf247b231",
+      "claim_ids": [
+        "claim_093b1444f2ece151fa5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "linbao@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://teacher.bupt.edu.cn/baolin",
+      "status": "current",
+      "type": "email",
+      "value": "linbao@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_093b1444f2ece151fa5c"
+    ],
+    "email": [
+      "claim_093b1444f2ece151fa5c"
+    ],
+    "name": [
+      "claim_093b1444f2ece151fa5c"
+    ],
+    "profile_url": [
+      "claim_093b1444f2ece151fa5c"
+    ],
+    "research_directions": [
+      "claim_093b1444f2ece151fa5c"
+    ],
+    "status": [
+      "claim_093b1444f2ece151fa5c"
+    ],
+    "title": [
+      "claim_093b1444f2ece151fa5c"
+    ]
+  },
+  "id": "mentor_80974958b0bd281b5429",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_093b1444f2ece151fa5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "鲍霖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e270af5fcd8cf247b231",
+      "claim_ids": [
+        "claim_093b1444f2ece151fa5c"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://teacher.bupt.edu.cn/baolin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "存内计算技术、神经形态器件及类脑芯片技术、先进存储器关键技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.bupt.edu.cn/baolin",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}

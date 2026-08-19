@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f76d6f553dc8493ee025"
+      ],
+      "ended_at": null,
+      "id": "aff_5fd63a7f6178a6e5b359",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:07Z",
+      "organization_id": "org_auto_3a89ea1fe1abc4305d65",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2120.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f76d6f553dc8493ee025"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5fd63a7f6178a6e5b359",
+      "claim_ids": [
+        "claim_f76d6f553dc8493ee025"
+      ],
+      "is_primary": true,
+      "normalized_value": "xzhang@bupt.edu.cn",
+      "observed_at": "2026-08-19T06:59:07Z",
+      "source_url": "https://see.bupt.edu.cn/info/1049/2120.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xzhang@bupt.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f76d6f553dc8493ee025"
+    ],
+    "email": [
+      "claim_f76d6f553dc8493ee025"
+    ],
+    "name": [
+      "claim_f76d6f553dc8493ee025"
+    ],
+    "profile_url": [
+      "claim_f76d6f553dc8493ee025"
+    ],
+    "research_directions": [
+      "claim_f76d6f553dc8493ee025"
+    ],
+    "status": [
+      "claim_f76d6f553dc8493ee025"
+    ],
+    "title": [
+      "claim_f76d6f553dc8493ee025"
+    ]
+  },
+  "id": "mentor_6f2dd2f1c0d60e261149",
+  "last_verified_at": "2026-08-19T06:59:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f76d6f553dc8493ee025"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张霞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5fd63a7f6178a6e5b359",
+      "claim_ids": [
+        "claim_f76d6f553dc8493ee025"
+      ],
+      "observed_at": "2026-08-19T06:59:07Z",
+      "status": "current",
+      "url": "https://see.bupt.edu.cn/info/1049/2120.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微纳信息器件与系统、片上信息器件的智能设计、深度学习在识别领域的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:07Z",
+  "status_reason": null,
+  "status_source_url": "https://see.bupt.edu.cn/info/1049/2120.htm",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:07Z"
+}
