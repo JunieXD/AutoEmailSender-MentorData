@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e56172d04f0d0f1fa2da"
+      ],
+      "ended_at": null,
+      "id": "aff_1db6129b3bf1e7058da9",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://gr.xjtu.edu.cn/web/xma.cs/home",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e56172d04f0d0f1fa2da"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1db6129b3bf1e7058da9",
+      "claim_ids": [
+        "claim_e56172d04f0d0f1fa2da"
+      ],
+      "is_primary": true,
+      "normalized_value": "xma.cs@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://gr.xjtu.edu.cn/web/xma.cs/home",
+      "status": "current",
+      "type": "email",
+      "value": "xma.cs@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e56172d04f0d0f1fa2da"
+    ],
+    "email": [
+      "claim_e56172d04f0d0f1fa2da"
+    ],
+    "name": [
+      "claim_e56172d04f0d0f1fa2da"
+    ],
+    "profile_url": [
+      "claim_e56172d04f0d0f1fa2da"
+    ],
+    "research_directions": [
+      "claim_e56172d04f0d0f1fa2da"
+    ],
+    "status": [
+      "claim_e56172d04f0d0f1fa2da"
+    ],
+    "title": [
+      "claim_e56172d04f0d0f1fa2da"
+    ]
+  },
+  "id": "mentor_976f67534139159fa6b9",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e56172d04f0d0f1fa2da"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马小博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1db6129b3bf1e7058da9",
+      "claim_ids": [
+        "claim_e56172d04f0d0f1fa2da"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://gr.xjtu.edu.cn/web/xma.cs/home"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "主要从事人工智能赋能网络安全与智能网络空间感知研究,围绕复杂网络环境下的安全检测、网络测量和基础设施安全等问题,探索利用人工智能、网络分析和主动测量技术提升网络空间感知与防御能力"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://gr.xjtu.edu.cn/web/xma.cs/home",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

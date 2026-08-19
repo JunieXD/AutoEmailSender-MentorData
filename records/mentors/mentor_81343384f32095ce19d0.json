@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1feb44d417f4bdd83c5c"
+      ],
+      "ended_at": null,
+      "id": "aff_1203e9168e805fd0cd8e",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "https://gr.xjtu.edu.cn/en/web/denghq7",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1feb44d417f4bdd83c5c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1203e9168e805fd0cd8e",
+      "claim_ids": [
+        "claim_1feb44d417f4bdd83c5c"
+      ],
+      "is_primary": true,
+      "normalized_value": "denghq7@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "https://gr.xjtu.edu.cn/en/web/denghq7",
+      "status": "current",
+      "type": "email",
+      "value": "denghq7@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1feb44d417f4bdd83c5c"
+    ],
+    "email": [
+      "claim_1feb44d417f4bdd83c5c"
+    ],
+    "name": [
+      "claim_1feb44d417f4bdd83c5c"
+    ],
+    "profile_url": [
+      "claim_1feb44d417f4bdd83c5c"
+    ],
+    "recent_papers": [
+      "claim_1feb44d417f4bdd83c5c"
+    ],
+    "research_directions": [
+      "claim_1feb44d417f4bdd83c5c"
+    ],
+    "status": [
+      "claim_1feb44d417f4bdd83c5c"
+    ],
+    "title": [
+      "claim_1feb44d417f4bdd83c5c"
+    ]
+  },
+  "id": "mentor_81343384f32095ce19d0",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1feb44d417f4bdd83c5c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓辉琦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1203e9168e805fd0cd8e",
+      "claim_ids": [
+        "claim_1feb44d417f4bdd83c5c"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "https://gr.xjtu.edu.cn/en/web/denghq7"
+    }
+  ],
+  "recent_papers": [
+    "Attribution Explanations for Deep Neural Networks: A Theoretical Perspective",
+    "Do LLMs Know Their Vulnerable Scenarios?",
+    "Unifying Fourteen Post-Hoc Attribution Methods With Taylor Interactions",
+    "Multi-Track Message Passing: Tackling Oversmoothing and Oversquashing in Graph Learning via Preventing Heterophily Mixing",
+    "HAGO-Net: Hierarchical Geometric Massage Passing for Molecular Representation Learning",
+    "Explaining generalization power of a dnn using interactive concepts",
+    "Towards the difficulty for a deep neural network to learn concepts of different complexities",
+    "Bayesian Neural Networks Avoid Encoding Complex and Perturbation-Sensitive Concepts"
+  ],
+  "research_directions": [
+    "大模型与智能体可信安全(LLM可信推理、LLM可解释性、LLM/Agent安全评测与防护、LLM/Agent数据生成)、大模型交叉应用(AI for Network Configuration、AI for Drug Discovery)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "https://gr.xjtu.edu.cn/en/web/denghq7",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

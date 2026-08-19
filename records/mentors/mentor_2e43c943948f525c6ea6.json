@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a6325d60c5ebc1940685"
+      ],
+      "ended_at": null,
+      "id": "aff_afffef70e337ded8733b",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://gr.xjtu.edu.cn/web/liusong",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a6325d60c5ebc1940685"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_afffef70e337ded8733b",
+      "claim_ids": [
+        "claim_a6325d60c5ebc1940685"
+      ],
+      "is_primary": true,
+      "normalized_value": "liusong@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://gr.xjtu.edu.cn/web/liusong",
+      "status": "current",
+      "type": "email",
+      "value": "liusong@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a6325d60c5ebc1940685"
+    ],
+    "email": [
+      "claim_a6325d60c5ebc1940685"
+    ],
+    "name": [
+      "claim_a6325d60c5ebc1940685"
+    ],
+    "profile_url": [
+      "claim_a6325d60c5ebc1940685"
+    ],
+    "research_directions": [
+      "claim_a6325d60c5ebc1940685"
+    ],
+    "status": [
+      "claim_a6325d60c5ebc1940685"
+    ],
+    "title": [
+      "claim_a6325d60c5ebc1940685"
+    ]
+  },
+  "id": "mentor_2e43c943948f525c6ea6",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a6325d60c5ebc1940685"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_afffef70e337ded8733b",
+      "claim_ids": [
+        "claim_a6325d60c5ebc1940685"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://gr.xjtu.edu.cn/web/liusong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "并行程序优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://gr.xjtu.edu.cn/web/liusong",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

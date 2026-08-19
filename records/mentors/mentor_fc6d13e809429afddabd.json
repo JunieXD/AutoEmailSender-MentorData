@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6fb76f21a192bd5357b"
+      ],
+      "ended_at": null,
+      "id": "aff_e147d53455c668e8b83f",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://www.cs.xjtu.edu.cn/info/2035/2413.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6fb76f21a192bd5357b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e147d53455c668e8b83f",
+      "claim_ids": [
+        "claim_c6fb76f21a192bd5357b"
+      ],
+      "is_primary": true,
+      "normalized_value": "hzhwang@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://www.cs.xjtu.edu.cn/info/2035/2413.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hzhwang@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6fb76f21a192bd5357b"
+    ],
+    "email": [
+      "claim_c6fb76f21a192bd5357b"
+    ],
+    "name": [
+      "claim_c6fb76f21a192bd5357b"
+    ],
+    "profile_url": [
+      "claim_c6fb76f21a192bd5357b"
+    ],
+    "recent_papers": [
+      "claim_c6fb76f21a192bd5357b"
+    ],
+    "research_directions": [
+      "claim_c6fb76f21a192bd5357b"
+    ],
+    "status": [
+      "claim_c6fb76f21a192bd5357b"
+    ],
+    "title": [
+      "claim_c6fb76f21a192bd5357b"
+    ]
+  },
+  "id": "mentor_fc6d13e809429afddabd",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6fb76f21a192bd5357b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王换招"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e147d53455c668e8b83f",
+      "claim_ids": [
+        "claim_c6fb76f21a192bd5357b"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://www.cs.xjtu.edu.cn/info/2035/2413.htm"
+    }
+  ],
+  "recent_papers": [
+    "孙成龙, 王换招, 胡成臣 等. 一种容错的软件定义网络多控制器体系结构,第二届中国互联网学术年会论文集,张家界,中国, 2013:319-32-5",
+    "Juan Shao, Huanzhao Wang, etc. Sleeping Node-Scheduling Protocol for Shadow Fading Environment in Wireless Sensor Networks, International Conference on Wireless Communications, Networking and Mobile Computing(WiCOM 2012). 21-23 Sept. 2012",
+    "孟凡治,王换招,何晖. 基于联合感知模型的无线传感器网络连通性覆盖协议,电子学报,2011,39(4):772-779",
+    "王换招,孟凡治,李增智. 高效节能的无线传感器网络覆盖保持协议,软件学报,2010,21(12):3124-3137",
+    "Meng Fanzhi, Wang Huanzhao. ECNS: Energy-Efficient and Coverage-Specific Node Scheduling for Wireless Sensor Networks, 13th ACM International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM 2010). October 17-21, 2010: 368-375",
+    "王换招,梅涛 等. 基于单向链路的一种低开销Ad Hoc路由策略,北京邮电大学学报,2010,33(2):111-115"
+  ],
+  "research_directions": [
+    "SDN网络结构与安全",
+    "无线网络技术与协议"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://www.cs.xjtu.edu.cn/info/2035/2413.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

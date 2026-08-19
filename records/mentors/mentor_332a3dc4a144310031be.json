@@ -1,0 +1,94 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3b264597fb9dc7dac029"
+      ],
+      "ended_at": null,
+      "id": "aff_2b2659e5162a3d9c737a",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/fjs1.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3b264597fb9dc7dac029"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2b2659e5162a3d9c737a",
+      "claim_ids": [
+        "claim_3b264597fb9dc7dac029"
+      ],
+      "is_primary": true,
+      "normalized_value": "dfshan@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/fjs1.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dfshan@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3b264597fb9dc7dac029"
+    ],
+    "email": [
+      "claim_3b264597fb9dc7dac029"
+    ],
+    "name": [
+      "claim_3b264597fb9dc7dac029"
+    ],
+    "recent_papers": [
+      "claim_3b264597fb9dc7dac029"
+    ],
+    "research_directions": [
+      "claim_3b264597fb9dc7dac029"
+    ],
+    "status": [
+      "claim_3b264597fb9dc7dac029"
+    ],
+    "title": [
+      "claim_3b264597fb9dc7dac029"
+    ]
+  },
+  "id": "mentor_332a3dc4a144310031be",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3b264597fb9dc7dac029"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "单丹枫"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Revisiting Network Support for Packet-level Load-balancing in RoCE, USENIX NSDI 2027 (to appear)",
+    "Revisiting Preemptive Buffer Management for Modern Datacenter Switch Chips, IEEE TC 2026",
+    "CCC: Re-architecting Delay-based Congestion Control in Datacenter Networks, NSDI 2026",
+    "Fast and Accurate Software Traffic Shaping With Inter-Flow Batching, IEEE ToN 2026",
+    "Efficient Headroom Allocation With Two-Level Flow Control for Lossless Datacenter Networks, IEEE ToN 2026",
+    "Occamy: A Preemptive Buffer Management for On-chip Shared-memory Switches, EuroSys 2025",
+    "Enforcing Fairness in the Traffic Policer among Heterogeneous Congestion Control Algorithms, IEEE/ACM ToN 2024",
+    "Less is More: Dynamic and Shared Headroom Allocation in PFC-enabled Datacenter Networks, IEEE ICDCS 2023"
+  ],
+  "research_directions": [
+    "Datacenter Networks, Traffic Management for High-speed Switches"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://www.cs.xjtu.edu.cn/szdw/jsml/fjs1.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

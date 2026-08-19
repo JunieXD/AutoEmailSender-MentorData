@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c67bdda73219594cd82c"
+      ],
+      "ended_at": null,
+      "id": "aff_93890c736b923f87a817",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://gr.xjtu.edu.cn/web/shibin",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c67bdda73219594cd82c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_93890c736b923f87a817",
+      "claim_ids": [
+        "claim_c67bdda73219594cd82c"
+      ],
+      "is_primary": true,
+      "normalized_value": "shibin@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://gr.xjtu.edu.cn/web/shibin",
+      "status": "current",
+      "type": "email",
+      "value": "shibin@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c67bdda73219594cd82c"
+    ],
+    "email": [
+      "claim_c67bdda73219594cd82c"
+    ],
+    "name": [
+      "claim_c67bdda73219594cd82c"
+    ],
+    "profile_url": [
+      "claim_c67bdda73219594cd82c"
+    ],
+    "research_directions": [
+      "claim_c67bdda73219594cd82c"
+    ],
+    "status": [
+      "claim_c67bdda73219594cd82c"
+    ],
+    "title": [
+      "claim_c67bdda73219594cd82c"
+    ]
+  },
+  "id": "mentor_347651ca32ed90a8e4d7",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c67bdda73219594cd82c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "师斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_93890c736b923f87a817",
+      "claim_ids": [
+        "claim_c67bdda73219594cd82c"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://gr.xjtu.edu.cn/web/shibin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据分析、垂域大模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://gr.xjtu.edu.cn/web/shibin",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}

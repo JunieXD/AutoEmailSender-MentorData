@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_320f9f742409e4c976bb"
+      ],
+      "ended_at": null,
+      "id": "aff_9dfb185a5a0beea9a463",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:58:50Z",
+      "organization_id": "org_auto_23701349c5111638af4c",
+      "source_url": "http://gr.xjtu.edu.cn/web/yangyijun",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_320f9f742409e4c976bb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9dfb185a5a0beea9a463",
+      "claim_ids": [
+        "claim_320f9f742409e4c976bb"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangyijun@xjtu.edu.cn",
+      "observed_at": "2026-08-19T06:58:50Z",
+      "source_url": "http://gr.xjtu.edu.cn/web/yangyijun",
+      "status": "current",
+      "type": "email",
+      "value": "yangyijun@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:58:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_320f9f742409e4c976bb"
+    ],
+    "email": [
+      "claim_320f9f742409e4c976bb"
+    ],
+    "name": [
+      "claim_320f9f742409e4c976bb"
+    ],
+    "profile_url": [
+      "claim_320f9f742409e4c976bb"
+    ],
+    "recent_papers": [
+      "claim_320f9f742409e4c976bb"
+    ],
+    "research_directions": [
+      "claim_320f9f742409e4c976bb"
+    ],
+    "status": [
+      "claim_320f9f742409e4c976bb"
+    ],
+    "title": [
+      "claim_320f9f742409e4c976bb"
+    ]
+  },
+  "id": "mentor_55fc826335cfff6fb02f",
+  "last_verified_at": "2026-08-19T06:58:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_320f9f742409e4c976bb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨义军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9dfb185a5a0beea9a463",
+      "claim_ids": [
+        "claim_320f9f742409e4c976bb"
+      ],
+      "observed_at": "2026-08-19T06:58:50Z",
+      "status": "current",
+      "url": "http://gr.xjtu.edu.cn/web/yangyijun"
+    }
+  ],
+  "recent_papers": [
+    "H. Zhang, Y.J. Yang*, W. Zeng*.Zero-shot image translation via query compensation and style enhancement, Engineering Applications of Artificial Intelligence, 161(112048), 2025.",
+    "X.W. Li, Y.J. Wu, Y.H. Sun, X. chen, Y.R. Chen, Y.J. Yang*.Improving the area-preserving parameterization of rational Bézier surfaces by rational bilinear transformation, Graphical Models, 140(101278), 2025.",
+    "P. Zhang, F.X. Bai, Y. Liu, W. Zeng, Y.J. Yang*, L.G. Liu, W.M. Wang*.Design and Optimization of High Stiffness Tetrahedral Lattice Structure, Additive Manufacturing, 102(104719), 2025.",
+    "H.C. Zhang, T.Q. Song*, G.X. Zhang,K. Dai,L. Wang,Y. Liu, Y.J. Yang*,W. Zeng. Blending weight BSP Tree for mesh Boolean operations, Computer-Aided Deisgn, 182(103849), 2025.",
+    "Y. Liu, P.Zhang, W.P. Xu, W. Zeng, Y.J. Yang*, W.M. Wang*. Design and Optimization of Variable Radii Self-Supporting Lattice Structures, Computer Methods in Applied Mechanics and Engineerin, 434(117510),2024.",
+    "H. Zhang, Y.J. Yang*, W. Zeng. Towards Semantically Continuous Unpaired Image-to-Image Translation Via Margin Adaptive Contrastive Learning And Wavelet Transform.Expert Systems With Applications, 252(124132),2024.",
+    "H. Zhang, Y.J. Yang*, W. Zeng.Self-supervised multi-scale semantic consistency regularization for unsupervised image-to-image translation. Computer Vision and Image Understanding, 241(103950), 2024.",
+    "H.C. Zhang,Y. Liu,K. Dai,T.Q. Song, L. Wang, W. Zeng, Y.J. Yang*. An algorithm to compute the distance of 2D line segments based on local coordinate system. Journal of Computer-Aided Design & Computer Graphics, 35(12):1966-1976, 2023."
+  ],
+  "research_directions": [
+    "计算机图形学、计算机辅助几何设计、三维建模、机器学习、图像处理、几何引擎、逆向工程、三维网格处理、曲线曲面逼近理论、三维打印、自由曲面及约束曲面参数化、几何建模、可视计算、虚拟现实、AI大模型、深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:58:50Z",
+  "status_reason": null,
+  "status_source_url": "http://gr.xjtu.edu.cn/web/yangyijun",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:58:50Z"
+}
