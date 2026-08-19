@@ -1,0 +1,108 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_e3bd6e4d4609a3546f53",
+          "is_primary": true,
+          "observed_at": "2026-08-19T06:59:07Z",
+          "organization_id": "org_auto_7b0af5ee5ad45bf1b5a3",
+          "school": "集成电路学院",
+          "source_url": "https://teacher.bupt.edu.cn/lixiuping",
+          "status": "current",
+          "title": "教授",
+          "university": "北京邮电大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_e3bd6e4d4609a3546f53",
+          "email": "xpli@bupt.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T06:59:07Z",
+          "source_url": "https://teacher.bupt.edu.cn/lixiuping"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/93"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xpli@bupt.edu.cn",
+      "id": "mentor_81f52ee654c29a5851ee",
+      "last_verified_at": "2026-08-19T06:59:07Z",
+      "name": "李秀萍",
+      "profile_url": "https://teacher.bupt.edu.cn/lixiuping",
+      "recent_papers": [],
+      "research_direction": "天线与电磁兼容、微波毫米波芯片电路与射频技术、雷达信号处理",
+      "school": "集成电路学院",
+      "source_url": "https://see.bupt.edu.cn/szdw/zgj.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "北京邮电大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_935ca87db27b13accd90",
+          "is_primary": true,
+          "observed_at": "2026-08-19T06:59:07Z",
+          "organization_id": "org_auto_7b0af5ee5ad45bf1b5a3",
+          "school": "集成电路学院",
+          "source_url": "https://teacher.bupt.edu.cn/~2eqeYb/zh_CN/index.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "北京邮电大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_935ca87db27b13accd90",
+          "email": "ywu@bupt.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T06:59:07Z",
+          "source_url": "https://teacher.bupt.edu.cn/~2eqeYb/zh_CN/index.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/93"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "ywu@bupt.edu.cn",
+      "id": "mentor_d14a07020227b543d991",
+      "last_verified_at": "2026-08-19T06:59:07Z",
+      "name": "吴永乐",
+      "profile_url": "https://teacher.bupt.edu.cn/~2eqeYb/zh_CN/index.htm",
+      "recent_papers": [],
+      "research_direction": "模拟与射频芯片与系统",
+      "school": "集成电路学院",
+      "source_url": "https://see.bupt.edu.cn/szdw/zgj.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "北京邮电大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_7b0af5ee5ad45bf1b5a3",
+    "name": "集成电路学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_7ba694bb97b7962f48d2",
+    "name": "北京邮电大学"
+  }
+}

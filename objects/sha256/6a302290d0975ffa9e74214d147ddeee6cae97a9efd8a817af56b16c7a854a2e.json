@@ -1,0 +1,1975 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_4800838c05e4ef7317e9",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/310",
+          "status": "current",
+          "title": null,
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_4800838c05e4ef7317e9",
+          "email": "haibochen@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/310"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "haibochen@sjtu.edu.cn",
+      "id": "mentor_0539681845b2badc073b",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "陈海波",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/310",
+      "recent_papers": [
+        "[SOSP] Using Concurrent Relational Logic with Helper for Verifying the AtomFS File System. Mo Zou, Haoran Ding, Dong Du, Ming Fu, Ronghui Gu, Haibo Chen. The 27th ACM Symposium on Operating System Principles. Deerhurst Resort, Huntsville, Ontario, Canada, October 27-30, 2019.",
+        "[SOSP] Performance and Protection in the ZoFS User-space NVM File System. Mingkai Dong, Heng Bu, Jifei Yi, Benchao Dong, Haibo Chen. The 27th ACM Symposium on Operating System Principles. Deerhurst Resort, Huntsville, Ontario, Canada, October 27-30, 2019.",
+        "[Usenix ATC] EROFS: A Compression-friendly Readonly File System for Resource-scarce Device. Xiang Gao, Mingkai Dong, Xie Miao, Wei Du, Chao Yu, Haibo Chen. 2019 USENIX Annual Technical Conference, Renton, WA, USA, July 2019.",
+        "[ISCA] XPC: Architectural Support for Secure and Efficient Cross Process Call. Dong Du, Zhichao Hua, Yubin Xia, Binyu Zang, Haibo Chen. Proceedings of the 46th ACM/IEEE International Symposium on Computer Architecture, Phoenix, Arizona, USA. June 22-26, 2019.",
+        "[OSDI] Deconstructing RDMA-enabled Transaction Processing: Hybrid is Better! Xingda Wei, Zhiyuan Dong, Rong Chen, and Haibo Chen. Proceedings of 13th USENIX Symposium on Operating Systems Design and Implementation, Carlsbad, CA, US, October 2018.",
+        "[SOSP] Sub-millisecond Stateful Stream Querying over Fast-evolving Linked Data. Yunhao Zhang, Rong Chen, and Haibo Chen. Proceedings of the 26th ACM Symposium on Operating Systems Principles, Shanghai, China, October, 2017.",
+        "[TOCS] Fast In-memory Transaction Processing using RDMA and HTM. Haibo Chen, Rong Chen, Xingda Wei, Jiaxin Shi, Yanzhe Chen, Zhaoguo Wang, Binyu Zang, Haibing Guan. ACM Transactions on Computer Systems, Vol. 35, No. 1, Article 3, Jul, 2017.",
+        "[OSDI] Fast and Concurrent RDF Queries with RDMA-based Distributed Graph Exploration. Jiaxin Shi, Youyang Yao, Rong Chen, Haibo Chen and Feifei Li. 2016 Usenix Symposium on Operating System Design and Implementation. Savannah, GA, US, Nov, 2016."
+      ],
+      "research_direction": "操作系统、并行与分布式系统",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": null,
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_3565455c272e1c57265d",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/301",
+          "status": "current",
+          "title": "教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_3565455c272e1c57265d",
+          "email": "xiayubin@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/301"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xiayubin@sjtu.edu.cn",
+      "id": "mentor_0693d338d4f7a46851a4",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "夏虞斌",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/301",
+      "recent_papers": [
+        "Qingshu Chen, Liang Liang, Yubin Xia, Haibo Chen, Hyunsoo Kim, Mitigating Sync Amplification for Copy-on-write Virtual Disk,The 14th USENIX Conference on File and Storage Technologies (FAST'16),2016.2.22-2016.2.25. Santa Clara, US, Feb, 2016.",
+        "Yutao Liu, Tianyu Zhou, Kexin Chen, Haibo Chen, Yubin Xia, Thwarting Memory Disclosure with Efficient Hypervisor-enforced Intra-domain Isolation, Proceedings of the 22th ACM Conference on Computer and Communications Security (CCS'15), Denver, Colorado, US, October, 2015.",
+        "Yubin Xia, Yutao Liu, Haibing Guan, Yunji Chen, Tianshi Chen, Binyu Zang, Haibo Chen, Secure Outsourcing of Virtual Appliance, IEEE Transactions on Cloud Computing, PP(99), 2015.",
+        "Wenhao Li, Yubin Xia, Haibo Chen, Binyu Zang, Haibing Guan. Reducing World Switches in Virtualized Environment with Flexible Cross-world Calls. In the 42nd International Symposium on Computer Architecture (ISCA'15), 2015.",
+        "Wenhao Li, Haibo Li, Haibo Chen, Yubin Xia. AdAttester: Secure Online Advertisement Attestation on Mobile Devices Using TrustZone. In Proceedings of the 13th International Conference on Mobile Systems, Applications, and Services (MobiSys'15), 2015.",
+        "Yubin Xia, Yutao Liu, Cheng Tan, Mingyang Ma, Haibing Guan, Binyu Zang, Haibo Chen. TinMan: Eliminating Confidential Mobile Data Exposure with Security-oriented Offloading. In Proceedings of the 10th European Conference on Computer Systems (EuroSys'15), 2015.",
+        "Yutao Liu, Yubin Xia, Haibing Guan, Binyu Zang and Haibo Chen. Concurrent and Consistent Virtual Machine Introspection with Hardware Transactional Memory. (Best Paper Nominee) In Proceedings of 2014 International Symposium on High Performance Computer Architecture (HPCA'14), February, 2014.",
+        "Yubin Xia, Yutao Liu and Haibo Chen. Architecture Support for Guest-Transparent VM Protection from Untrusted Hypervisor and Physical Attacks. In Proceedings of 2013 International Symposium on High Performance Computer Architecture (HPCA'13), February, 2013."
+      ],
+      "research_direction": "移动安全,云计算安全",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_0d279e59ca1ec0f903a5",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/300",
+          "status": "current",
+          "title": "特聘研究员",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_0d279e59ca1ec0f903a5",
+          "email": "guilin@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/300"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "guilin@sjtu.edu.cn",
+      "id": "mentor_10541f87d3de41d11371",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "归琳",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/300",
+      "recent_papers": [],
+      "research_direction": "通信信号处理、移动通信网络",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "特聘研究员",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_04dd6b9f7130ba1efa5d",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/307",
+          "status": "current",
+          "title": null,
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_04dd6b9f7130ba1efa5d",
+          "email": "yangxubo@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/307"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "yangxubo@sjtu.edu.cn",
+      "id": "mentor_1875307e497eb768903c",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "杨旭波",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/307",
+      "recent_papers": [
+        "Zhang, Yan, Xiaodan Hu, Kiyoshi Kiyokawa, and Xubo Yang. \"Add-on Occlusion: Turning Off-the-Shelf Optical See-through Head-mounted Displays Occlusion-capable.\" IEEE Transactions on Visualization and Computer Graphics 29, no. 5 (2023): 2700-2709. (IEEE VR 2023 Journal Paper)",
+        "Nianchen Deng, Zhenyi He, Jiannan Ye, Budmonde Duinkharjav, Praneeth Chakravarthula, Xubo Yang, and Qi Sun. “FoV-NeRF: Foveated Neural Radiance Fields for Virtual Reality,” in IEEE Transactions on Visualization and Computer Graphics, vol. 28, no. 11, pp. 3854-3864, Nov. 2022, doi: 10.1109/TVCG.2022.3203102. (ISMAR 2022 Best Journal Paper)",
+        "Jiannan Ye, Anqi Xie, Susmija Jabbireddy, Yunchuan Li, Xubo Yang, and Xiaoxu Meng. “Rectangular Mapping-based Foveated Rendering.” In 2022 IEEE Conference on Virtual Reality and 3D User Interfaces (VR), pp. 756-764. IEEE, 2022.",
+        "Wentao Chen, Tian Sang, Yitian Ma, Qian Chen, Yuwei Xiao, Zhigeng Pan, and Xubo Yang. “Real-time simulation of violent boiling in concentrated sulfuric acid dilution.” The Visual Computer 37, no. 9 (2021): 2631-2642.",
+        "Tian Sang, Wentao Chen, Yitian Ma, Hui Wang, and Xubo Yang. “Real-Time Fluid Simulation with Atmospheric Pressure Using Weak Air Particles.” In Computer Graphics International Conference, pp. 151-164. Springer, Cham, 2021.",
+        "Yuwei Xiao, Szeyu Chan, Siqi Wang, Bo Zhu, and Xubo Yang. “An Adaptive Staggered-Tilted Grid for Incompressible Flow Simulation”. ACM Transactions on Graphics (SIGGRAPH Asia 2020).",
+        "Hui Wang, Yongxu Jin, Anqi Luo, Xubo Yang, and Bo Zhu. “Codimensional Surface Tension Flow Using Moving-Least-Squares Particles”. ACM Transactions on Graphics (SIGGRAPH 2020).",
+        "Xiangyun Xiao, Yanqing Zhou, Hui Wang, and Xubo Yang. “A Novel CNN-based Poisson Solver for Fluid Simulation.” IEEE transactions on visualization and computer graphics. Volume: 26 , Issue: 3 , March 1, 2020."
+      ],
+      "research_direction": "虚拟现实(VR/AR/MR)、计算机图形学、人机交互",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": null,
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_3dc83f2e3e5757339c73",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/284",
+          "status": "current",
+          "title": null,
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_3dc83f2e3e5757339c73",
+          "email": "wgeng@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/284"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "wgeng@sjtu.edu.cn",
+      "id": "mentor_1a587d07cf1f57006836",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "王赓",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/284",
+      "recent_papers": [
+        "Li Jinke, Wang Geng. An improved SIFT matching algorithm based on geometric similarity. Proceedings of 2015 IEEE 5th International Conference on Electronics Information and Emergency Communication (ICEIEC 2015).",
+        "Zou Runyang, Li Qiang, Wang Geng. A Simple Real-time Object Tracking System Based on small-scale VTOL UAV, IEEE Chinese Guidance,Navigation and Control Conference (IEEE CGNCC),August 8-10, 2014",
+        "Li Jun Fei, Wang Geng, Li Qiang. Improved SURF Detection combined with Dual FLANN Matching and Clustering Analysis. 2nd International Conference on Computer Science, Electronic Technology and Intelligent System (CSETIS), 2014",
+        "Li Jing, Wang Geng. A shadow detection method based on improved Gaussian Mixture Model. Proceedings of 2013 IEEE 4th International Conference on Electronics Information and Emergency Communication (ICEIEC 2013).",
+        "Ge Xueshi, Wang Geng. Distortion based selective packet discard in H.264/SVC video transmission. Proceedings of 2013 3rd International Conference on Computer Science and Network Technology(ICCSNT 2013).",
+        "Lei Qi, Wang Geng, Wang Dong. Design of a handheld UHF RFID reader for the Internet of Things. International Conference on Computer and Management(CAMAN 2011).",
+        "Wang Geng, Sheng Huanye, Lu Tiansheng, Wang Dong, Hu Fei. Development of an autonomous flight control system for small size unmanned helicopter. 2007 IEEE International Conference on Robotics and Biomimetics, (ROBIO 2007)"
+      ],
+      "research_direction": "RFID及物联网技术、嵌入式控制系统",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": null,
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_59b37946429c7c1fdab2",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/278",
+          "status": "current",
+          "title": "助理研究员",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_59b37946429c7c1fdab2",
+          "email": "zchua@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/278"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zchua@sjtu.edu.cn",
+      "id": "mentor_1b3e6234f9e8df4f1a23",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "华志超",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/278",
+      "recent_papers": [
+        "[ASPLOS] CPS: A Cooperative Para-virtualized Scheduling Framework for Manycore Machines. Yuxuan Liu, Tianqiang Xu, Zeyu Mi, Zhichao Hua, Binyu Zang, Haibo Chen. The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, April 2024.",
+        "[ISCA] ISA-grid: Architecture of Fine-grained Privilege Control for Instructions and Registers. Shulin Fan, Zhichao Hua*, Yubin Xia, Haibo Chen, Binyu Zang. The 50th International Symposium on Computer Architecture,June 17–21, 2023, Orlando, FL, USA.",
+        "[ACM ToCS] Boosting Inter-Process Communication with Architectural Support. Yubin Xia, Dong Du, Zhichao Hua, Binyu Zang, Haibo Chen, Haibing Guan. ACM Transactions on Computer Systems.2022.",
+        "[IEEE TC] COLONY: A Privileged Trusted Execution Environment with Extensibility. Yubin Xia, Zhichao Hua*, Jinyu Gu, Haibo Chen, Binyu Zang. IEEE TRANSACTIONS ON COMPUTERS, 2021.",
+        "[SCIS] TZ-Container: Protecting Container from Untrusted OS with ARM TrustZone. Zhichao Hua, Yang Yu, Jinyu Gu, Yubin Xia, Haibo Chen, Binyu Zang. SCIENCE CHINA Information Sciences, 2020.",
+        "[ISCA] XPC: Architectural Support for Secure and Efficient Cross Process Call. Dong Du, Zhichao Hua, Yubin Xia, Binyu Zang, Haibo Chen. Proceedings of the 46th ACM/IEEE International Symposium on Computer Architecture, Phoenix, Arizona, USA. June 22-26, 2019.",
+        "[USENIX ATC] EPTI: Efficient Defence against Meltdown Attack for Unpatched VMs. Zhichao Hua, Dong Du, Yubin Xia, Haibo Chen, and Binyu Zang, 2018 USENIX Annual Technical Conference, Boston, MA, USA, July 2018",
+        "[USENIX Security] vTZ: Virtualizing ARM TrustZone. Zhichao Hua, Jinyu Gu, Yubin Xia, Haibo Chen, Binyu Zang and Haibing Guan. Usenix Security Symposium 2017. Vancouver, Canada, August, 2017."
+      ],
+      "research_direction": "操作系统、虚拟化与系统安全",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "助理研究员",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_9ee32a5998a0c7fa09b2",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/268",
+          "status": "current",
+          "title": "助理研究员",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_9ee32a5998a0c7fa09b2",
+          "email": "dd_nirvana@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/268"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "dd_nirvana@sjtu.edu.cn",
+      "id": "mentor_1be2cb256a66555c00e4",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "杜冬冬",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/268",
+      "recent_papers": [
+        "[ASPLOS] Serverless Computing on Heterogeneous Computers. Dong Du, Qingyuan Liu, Xueqiang Jiang, and 3 more authors. In Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems 2022",
+        "[OSDI] Scalable Memory Protection in the PENGLAI Enclave. Erhu Feng, Xu Lu, Dong Du, and Bicheng Yang, Xueqiang Jiang, Yubin Xia, Binyu Zang, Haibo Chen. In 15th USENIX Symposium on Operating Systems Design and Implementation (OSDI 21) Jul 2021",
+        "[ASPLOS] Catalyzer: Sub-Millisecond Startup for Serverless Computing with Initialization-Less Booting. Dong Du, Tianyi Yu, Yubin Xia, and Binyu Zang, Guanglu Yan, Chenggang Qin, Qixuan Wu, Haibo Chen. In Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems Jul 2020",
+        "[SOCC] Characterizing Serverless Platforms with Serverlessbench. Tianyi Yu, Qingyuan Liu, Dong Du, and Yubin Xia, Binyu Zang, Ziqian Lu, Pingchao Yang, Chenggang Qin, Haibo Chen. In Proceedings of the 11th ACM Symposium on Cloud Computing Jul 2020",
+        "[ISCA] XPC: Architectural Support for Secure and Efficient Cross Process Call. Dong Du, Zhichao Hua, Yubin Xia, and Binyu Zang, Haibo Chen. In Proceedings of the 46th International Symposium on Computer Architecture Jul 2019"
+      ],
+      "research_direction": "操作系统、体系结构、服务器无感知计算、RISC-V",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "助理研究员",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_56d081604a0f38a13feb",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/288",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_56d081604a0f38a13feb",
+          "email": "dr.wugang@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/288"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "dr.wugang@sjtu.edu.cn",
+      "id": "mentor_20592b322a7677988d91",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "吴刚",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/288",
+      "recent_papers": [
+        "Yadoop: an Elastic Resource Management Solution of YARN, IEEE SOSE2015, Mar30-Apr3, San Francisco,USA",
+        "StreamBench: Towards Benchmarking Modern Distributed Stream Computing Framework, IEEE/ACM UCC2014, Page69-78, Dec8-11, 2014, London",
+        "A decentralized approach for mining event correlations in distributed system monitoring, J. Parallel Distrib. Comput (JPDC). 73(3), 330-340, 2013",
+        "CAR: Securing PCM Main Memory System with Cache Address Remapping, the 18th IEEE International Conference on Parallel and Distributed Systems (ICPADS), 17-19 Dec 2012, 628-635, Singapore, 2012.",
+        "Improving PCM Endurance with Randomized Address Remapping in Hybrid Memory System, 2011 IEEE International Conference on Cluster Computing (CLUSTER), 26-30 Sept.2011, 503-507, Austin, USA, 2011.",
+        "Detecting Resource Leaks through Dynamical Mining of Resource Usage Patterns, The IEEE/IFIP International Conference on Dependable Systems and Networks(DSN), June27-30 2011, HongKong",
+        "Cost Minimization with HPDFG and Data Mining for Heterogeneous DSP, J Sign Process Syst DOI 10.1007/s11265-010-0546-x, Springer, 2010,SCI",
+        "Towards the efficiency of ontology-based context reasoning in virtual computing environment,ICPADS2010, Dec.8-10, Shanghai, China, EI"
+      ],
+      "research_direction": "云计算与大数据技术,智慧城市应用技术",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_0f307616fe81f9fe4400",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/308",
+          "status": "current",
+          "title": null,
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_0f307616fe81f9fe4400",
+          "email": "qizhwei@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/308"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "qizhwei@sjtu.edu.cn",
+      "id": "mentor_2e10411a682f3cee6f7b",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "戚正伟",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/308",
+      "recent_papers": [
+        "Yongqiang Gao, Haibing Guan, Zhengwei Qi, Yang Hou, Liang Liu: A multi-objective ant colony system algorithm for virtual machine placement in cloud computing. J. Comput. Syst. Sci. 79(8): 1230-1242 (2013)( ESI Highly Cited Paper)",
+        "Mingyuan Xia, Lu Gong, Yuanhao Lyu, Zhengwei Qi, Xue Liu: Effective Real-Time Android Application Auditing. IEEE Symposium on Security and Privacy 2015: 899-914",
+        "Yaozu Dong, Mochi Xue, Xiao Zheng, Jiajun Wang, Zhengwei Qi, Haibing Guan: Boosting GPU Virtualization Performance with Hybrid Shadow Page Tables. USENIX Annual Technical Conference 2015: 517-528",
+        "Zhengwei Qi, Jianguo Yao, Chao Zhang, Miao Yu, Zhizhou Yang, Haibing Guan: VGRIS: Virtualized GPU Resource Isolation and Scheduling in Cloud Gaming. ACM Transactions on Architecture and Code Optimization 11(2): 17:1-17:25 (2014)",
+        "Chao Zhang, Jianguo Yao, Zhengwei Qi, Miao Yu, Haibing Guan: vGASA: Adaptive Scheduling Algorithm of Virtualized GPU Resource in Cloud Gaming. IEEE Trans. Parallel Distrib. Syst. 25(11): 3036-3045 (2014)",
+        "Mochi Xue, Jiacheng Ma, Wentai Li, Kun Tian, Yaozu Dong, Jinyu Wu, Zhengwei Qi, Bingsheng He, Haibing Guan: Scalable GPU Virtualization with Dynamic Sharing of Graphics Memory Space. IEEE Trans. Parallel Distrib. Syst. 29(8): 1823-1836 (2018)",
+        "Zhouwang Fu, Tao Song, Zhengwei Qi, Haibing Guan: Efficient shuffle management with SCache for DAG computing frameworks. PPOPP 2018: 305-316",
+        "Rui Xin, Zhengwei Qi, Shiqiu Huang, Chengcheng Xiang, Yudi Zheng, Yin Wang, Haibing Guan: An Automation-Assisted Empirical Study on Lock Usage for Concurrent Programs. ICSM 2013: 100-10 (Best Paper Nominee)"
+      ],
+      "research_direction": "虚拟化系统软件、云计算、系统安全、移动互联网",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": null,
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_0a6e19853987ebaef9d3",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/291",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_0a6e19853987ebaef9d3",
+          "email": "li.g@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/291"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "li.g@sjtu.edu.cn",
+      "id": "mentor_3547199385d5e49dc001",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "李国强",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/291",
+      "recent_papers": [
+        "Jingyang Li, Guoqiang Li*. HOBAT: Batch Verification for Homogeneous Structural Neural Networks. In Proceedings of the ASE 2023",
+        "Minyu Chen, Guoqiang Li*, Chen Ma, Jingyang Li, Hongfei Fu. Repo4QA: Answering Coding Questions via Dense Retrieval on GitHub Repositories. In Proceedings of the COLING 2022",
+        "Suyu Ma, Zhenchang Xing , Chunyang Chen*, Cheng Chen, Lizhen Qu, Guoqiang Li*.Easy-to-Deploy API Extraction by Multi-Level Feature Embedding and Transfer Learning. IEEE Transactions on Software Engineering, Vol. 47(10), 2296 - 2311, 2021",
+        "Jieshan Chen, Chunyang Chen*, Zhenchang Xing, Xiwei Xu, Liming Zhu, Guoqiang Li*, Jinshui Wang. Unblind Your Apps: Predicting Natural-Language Labels for Mobile GUI Components by Deep Learning. In Proceedings of the ICSE 2020, (Distinguished paper award!)",
+        "Dehai Zhao, Zhenchang Xing, Chunyang Chen, Xiwei Xu, Liming Zhu, Guoqiang Li*, Jinshui Wang. Seenomaly: Vision-Based Linting of GUI Animation Effects Against Design-Don't Guidelines. In Proceedings of the ICSE 2020",
+        "Xiaoxue Ren, Zhenchang Xing, Xin Xia, Guoqiang Li, Jianling Sun. Discovering, Explaining and Summarizing Controversial Discussions in Community Q&A Sites. In Proceedings of the ASE 2019",
+        "Dehai Zhao, Zhenchang Xing, Chunyang Chen*, Xin Xia*, Guoqiang Li*. ActionNet: Vision-based Workflow Action Recognition from Programming Screencasts. In Proceedings ICSE 2019",
+        "Chunyang Chen, Xi Chen, Jiamou Sun, Zhenchang Xing, Guoqiang Li*. Data-Driven Proactive Policy Assurance of Post Quality in Community Q&A Sites. In Proceedings of the CSCW 2018"
+      ],
+      "research_direction": "形式化方法；程序语言理论；知识表示、推理与验证；智能系统的验证与安全",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_901d44340eb6f4d27ff2",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/302",
+          "status": "current",
+          "title": null,
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_901d44340eb6f4d27ff2",
+          "email": "jianguo.yao@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/302"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "jianguo.yao@sjtu.edu.cn",
+      "id": "mentor_364fc31cfb263f4695bb",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "姚建国",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/302",
+      "recent_papers": [
+        "Jianguo Yao, Hao Zhou, Yalin Zhang, Ying Li, Chuang Feng, Shi Chen, Jiaoyan Chen, Yongdong Wang, Qiaojuan Hu: High Performance and Power Efficient Accelerator for Cloud Inference, 1-14(2023)",
+        "Bo Peng, Yaozu Dong, Jianguo Yao, Fengguang Wu, Haibing Guan: FlexHM: A Practical System for Heterogeneous Memory with Flexible and Efficient Performance Optimizations. ACM Trans. Archit. Code Optim. 20(1): 13:1-13:26 (2023)",
+        "Bo Peng, Jianguo Yao, Yaozu Dong, Haibing Guan: MDev-NVMe: Mediated Pass-Through NVMe Virtualization Solution With Adaptive Polling. IEEE Trans. Computers 71(2): 251-265 (2022)",
+        "Jianguo Yao, Qiumin Lu, Xingyan Wang, Chao Wang, Hanyang Ma, Haibing Guan: SWVM: a light-weighted virtualization platform based on Sunway CPU architecture. Sci. China Inf. Sci. 65(6): 1-3 (2022)",
+        "Bo Peng, Ming Yang, Jianguo Yao, Haibing Guan: A Throughput-Oriented NVMe Storage Virtualization With Workload-Aware Management. IEEE Trans. Computers 70(12): 2112-2124 (2021)",
+        "Qiumin Lu, Jianguo Yao, Haibing Guan, Ping Gao: gQoS: A QoS-Oriented GPU Virtualization with Adaptive Capacity Sharing. IEEE Trans. Parallel Distrib. Syst. 31(4): 843-855 (2020)",
+        "Qiumin Lu, Xiao Zheng, Jiacheng Ma, Yaozu Dong, Zhengwei Qi, Jianguo Yao, Bingsheng He, Haibing Guan: gMig: Efficient vGPU Live Migration with Overlapped Software-Based Dirty Page Verification. IEEE Trans. Parallel Distrib. Syst. 31(5): 1209-1222 (2020)",
+        "Jianguo Yao, Ting Deng, Hans-Arno Jacobsen, Xue Liu and Haibing Guan, “HyperCo: Optimizing Network Performance in ARM-Based Mobile Virtualization”, IEEE Transactions on Services Computing 12(1): 131-143 (2019)."
+      ],
+      "research_direction": "AI芯片与智算系统、虚拟化与云系统",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": null,
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_22ba76b51bd44c17f625",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/271",
+          "status": "current",
+          "title": "助理研究员",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_22ba76b51bd44c17f625",
+          "email": "mingkaidong@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/271"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "mingkaidong@sjtu.edu.cn",
+      "id": "mentor_3ab4fc2f7cbebd83c2c3",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "董明凯",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/271",
+      "recent_papers": [
+        "HTMFS: Strong Consistency Comes for Free with Hardware Transactional Memory in Persistent Memory File Systems",
+        "MT^2: Memory bandwidth Regulation on Hybrid NVM/DRAM Platforms",
+        "Performance and Protection in the ZoFS User-space NVM File System",
+        "EROFS: A Compression-friendly Readonly File System for Resource-scarce Device",
+        "Soft Updates Made Simple and Fast for Non-volatile Memories"
+      ],
+      "research_direction": "操作系统、存储系统、文件系统、DNA存储",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "助理研究员",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_d088b7718ee24c9b1b66",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/270",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_d088b7718ee24c9b1b66",
+          "email": "pan.hu@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/270"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "pan.hu@sjtu.edu.cn",
+      "id": "mentor_483c230ff07d71b4389e",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "胡畔",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/270",
+      "recent_papers": [
+        "Goal-driven Reasoning in Datalogmtl with Magic Sets",
+        "Accurate Sampling-Based Cardinality Estimation for Complex Graph Queries",
+        "Optimised Storage for Datalog Reasoning",
+        "Enhancing Datalog Reasoning with Hypertree Decompositions",
+        "Modular Materialisation of Datalog Programs",
+        "MeTeoR: Practical Reasoning in Datalog with Metric Temporal Operators",
+        "Owl2vec*: Embedding of owl ontologies",
+        "Datalog Reasoning over Compressed RDF Knowledge Bases"
+      ],
+      "research_direction": "知识表示与处理",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_93414a5930e56e1e38b9",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/303",
+          "status": "current",
+          "title": "教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_93414a5930e56e1e38b9",
+          "email": "li-jian@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/303"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "li-jian@sjtu.edu.cn",
+      "id": "mentor_4d2c9c8fdc44e2e70e09",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "李健",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/303",
+      "recent_papers": [
+        "Jian Li, Jianmin Qian and Haibing Guan. A Holistic Model for Performance Prediction and Optimization on NUMA-based Virtualized Systems, INFOCOM2019.",
+        "X. Hu, C. Wei, J. Li, B. Will, P. Yu, L. Gong, H. Guan, QTLS: High-Performance TLS Asynchronous Offload Framework with Intel QuickAssist Technology, PPoPP 2019, accepted.",
+        "Jianmin Qian, Jian Li, Ruhui Ma, Haibing Guan, vDRAM: dynamic adaptive resource management for virtualized multiprocessor system, DATE 2019.",
+        "Jianmin Qian, Jian Li, Ruhui Ma and Haibing Guan. Characterizing and Optimizing Virtual Resource Management in Consolidated NUMA Servers, 2018 IEEE International Conference on Computer Design (ICCD).",
+        "Wang Zhang, Xiaokang Hu, Jian Li and Haibing Guan, “CoINT: Proactive Coordinator for Avoiding the Interruptability Holder Preemption Problem in VSMP Environment”, IEEE INFOCOM, Honolulu, USA. April 2018",
+        "Jianmin Qian, Jian Li and Ruhui Ma, “Topology-Aware Virtual Resource Management For Heterogeneous Multicore System” The 21st Automation and Test in Europe (DATE) conference and exhibition, Germany, 19–23 March, 2018.",
+        "Changzheng Wei, Jian Li, Weigang Li, Ping Yu, and Haibing Guan. “STYX: a trusted and accelerated hierarchical SSL key management and distribution system for cloud based CDN application”. In Proceedings of the 2017 Symposium on Cloud Computing (SoCC '17). ACM, New York, NY, USA, 201-213.",
+        "Xiaokang Hu, Wang Zhang, Jian Li, Ruhui Ma, Feng Wu, Haibing Guan, \"ES2: Aiming at an Optimal Virtual I/O Event Path\", 2017 46th International Conference on Parallel Processing (ICPP), vol. 00, no. , pp. 141-150, 2017"
+      ],
+      "research_direction": "云计算与虚拟化技术",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_f0985ac6099b52a7613a",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/281",
+          "status": "current",
+          "title": "讲师",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_f0985ac6099b52a7613a",
+          "email": "sun_yan@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/281"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "sun_yan@sjtu.edu.cn",
+      "id": "mentor_4eb50fe963e9a96844db",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "孙焱",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/281",
+      "recent_papers": [
+        "Qionghu Weng, Yan Sun, Computer-aided Diagnosis: A Support-Vector-Machine -Based Approach of Automatic Pulmonary Nodule Detection in Chest Radiographs, 2009 International Symposium on Bioelectronics and Bioinformatics, 2009, 60-63.",
+        "Tingting Xi, Yan Sun, Lixu Gu, “SurgView-RFT Electromagnetic Navigation System in Trigeminal Ganglion RF Therapy”, 2009 2nd International Conference On Biomedical Engineering and Informatics, 2009.",
+        "Shaohua Su, Yan Sun. Key Techniques Research in Computer-Aided Hepatic Lesion Diagnosis System Based on Multi-Phase CT Images,Volume 4, CISP,2011.",
+        "Xiaoying Yang, Satoshi Hamaguchi, Yan Sun, Shuangjiu Xiao. Detect of Optic Disc Center based on Gaussian Vessel detector and Tangent Information Transform. BMEI, 2011.",
+        "Xiaoying Yang, Yan Sun, Shuangjiu Xiao. Optic Disc Center Detection in Fundus images based on Gaussian Vessel Detector and Line Operator. ICCCI 2011.",
+        "Qing Dai, Yan Sun. Automated Layer Segmentation of Optical Coherence Tomography Images. BMEI, 2011.",
+        "Yuan Gao, Yan Sun, Minhua Xu. Automatic Rapid Optic Disc Detection From Infrared Radiation Retinal Fundus Images. BMEI, 2012.",
+        "Xueqing Liu,Xinghao Jiang, Yan Sun*, Ajing Xu, Haotian Lu, Inter-frame Information Based Choroid Segmentation in Enhanced Optical Coherence Tomography Images,2014 7thInternational Conference on BioMedical Engineering and Informatics(BMEI2014), Oct. 2014 (通讯作者)"
+      ],
+      "research_direction": "图像分析,模式识别,数字媒体等",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "讲师",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_e91c875cef31e05540c5",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/280",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_e91c875cef31e05540c5",
+          "email": "yzmizeyu@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/280"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "yzmizeyu@sjtu.edu.cn",
+      "id": "mentor_522fc6672afbf2965634",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "糜泽羽",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/280",
+      "recent_papers": [
+        "Jinyu Gu, Xinyue Wu, Wentai Li, Nian Liu, Zeyu Mi, Yubin Xia and Haibo Chen. Harmonizing Performance and Isolation in Microkernels with Efficient Intra-kernel Isolation and Communication. USENIX Annual Technical Conference, Boston, MA, USA, July 2020.",
+        "Zeyu Mi, Dingji Li, Haibo Chen, Binyu Zang, and Haibing Guan. (Mostly) Exitless VM Protection from Untrusted Hypervisor through Disaggregated Nested Virtualization. In Proceedings of the 29th USENIX Security Symposium, Boston, MA, USA, August, 2020.",
+        "Zeyu Mi, Dingji Li, Zihan Yang, Xinran Wang, and Haibo Chen. SkyBridge: Fast and Secure Inter-Process Communication for Microkernels. In Proceedings of 14th ACM European Conference on Computer Systems, Dresden, Germany, March, 2019.",
+        "Sanchuan Chen, Fangfei Liu, Zeyu Mi, Yinqian Zhang, Ruby B. Lee, Haibo Chen, XiaoFeng Wang. Leveraging Hardware Transactional Memory for Cache Side-Channel Defenses. ACM ASIA Conference on Information, Computer and Communications Security, Songdo, Incheon, Korea, June. 2018.",
+        "Zeyu Mi, Haibo Chen, Yinqian Zhang, Shuanghe Peng, Xiaofeng Wang, Michael Reiter. CPU Elasticity to Mitigate Cross-VM Runtime Monitoring. IEEE Transactions on Dependable and Secure Computing. Accepted, 2018."
+      ],
+      "research_direction": "操作系统、系统虚拟化、系统安全",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_a742fed09522c07418f1",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/279",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_a742fed09522c07418f1",
+          "email": "mingyuwu@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/279"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "mingyuwu@sjtu.edu.cn",
+      "id": "mentor_587d626999d6643be973",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "吴明瑜",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/279",
+      "recent_papers": [
+        "Espresso: Brewing Java For More Non-Volatility with Non-volatile Memory.Mingyu Wu, Ziming Zhao, Haoyu Li, Heting Li, Haibo Chen, Binyu Zang and Haibing Guan. The 23rd ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Williamsburg, VA, USA, March 2018.",
+        "Platinum: A CPU-Efficient Concurrent Garbage Collector for Tail-Reduction of Interactive Services. Mingyu Wu, Ziming Zhao, Yanfei Yang, Haoyu Li, Haibo Chen, Binyu Zang, Haibing Guan, Sanhong Li, Chuansheng Lu, Tongbao Zhang. USENIX Annual Technical Conference, Boston, MA, USA, July 2020.",
+        "GCPersist: An Efficient GC-assisted Lazy Persistency Framework for Resilient Java Applications on NVM. Mingyu Wu, Haibo Chen, Hao Zhu, Binyu Zang, Haibing Guan, The 16th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments, Lausanne, Switzerland, March 2020."
+      ],
+      "research_direction": "高级语言虚拟机、操作系统",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_c56140265d3a038b95cd",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/289",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_c56140265d3a038b95cd",
+          "email": "tang-xh@cs.sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/289"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "tang-xh@cs.sjtu.edu.cn",
+      "id": "mentor_5a8719b455ef57d3384f",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "唐新怀",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/289",
+      "recent_papers": [],
+      "research_direction": "分布式计算,服务计算、海量信息处理,软件自适应协同技术",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_530f601a45108a1daf4b",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/282",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_530f601a45108a1daf4b",
+          "email": "xiaodong.gu@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/282"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xiaodong.gu@sjtu.edu.cn",
+      "id": "mentor_5b285b4d00b5ceda0cc1",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "顾小东",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/282",
+      "recent_papers": [
+        "Haoren Zhu, Hao Ge, Xiaodong Gu, Pengfei Zhao, Dik-Lun Lee. Influential Recommender System. The 39th International Conference on Data Engineering (ICDE 2023).",
+        "Xiaodong Gu, Zhaowei Zhang, Sang-Woo Lee, Kang Min Yoo, Jung-Woo Ha. Continuous Decomposition of Granularity for Neural Paraphrase Generation. The 29th International Conference on Computational Linguistics (COLING 2022)",
+        "Zhaowei Zhang, Hongyu Zhang, Beijun Shen, Xiaodong Gu* . Diet Code Is Healthy: Simplifying Programs for Pre-Trained Models of Code. The 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE 2022)",
+        "Nan Cui, Yuze Jiang, Xiaodong Gu, Beijun Shen, Zero-Shot Program Representation Learning. The 30th IEEE/ACM International Conference on Program Comprehension (ICPC 2022)",
+        "Shouliang Yang, Xiaodong Gu, Beijun Shen. Self-Supervised Learning of Smart Contract Representations. The 30th IEEE/ACM International Conference on Program Comprehension (ICPC 2022)",
+        "Yitian Chai, Hongyu Zhang, Beijun Shen and Xiaodong Gu* . Cross-Domain Deep Code Search with Meta Learning. The 44th International Conference on Software Engineering (ICSE 2022)",
+        "Zhen Yang, Jacky Keung, Xiao Yu, Xiaodong Gu, Zhengyuan Wei, Xiaoxue Ma, Miao Zhang. A Multi-Modal Transformer-based Code Summarization Approach for Smart Contracts. The 2021 International Conference on Program Comprehension (ICPC 2021) (CCF-B)",
+        "Xiaodong Gu, Sunghun Kim, Yo-Sub Han, Hongyu Zhang. Do Bugs Propagate? An Empirical Analysis of Temporal Correlations among Software Bugs. Proceedings of the 35th European Conference on Object-Oriented Programming (ECOOP 2021) (CCF-B)"
+      ],
+      "research_direction": "智能化软件工程、自然语言处理",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_931e3a4cf9077333119d",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/297",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_931e3a4cf9077333119d",
+          "email": "chen-hp@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/297"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "chen-hp@sjtu.edu.cn",
+      "id": "mentor_716b19ce91db9aefd7a5",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "陈昊鹏",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/297",
+      "recent_papers": [
+        "Zhang Q, Chen H, Shen Y, et al. Optimization of virtual resource management for cloud applications to cope with traffic burst[J]. Future Generation Computer Systems, 2016, 58: 42-55.",
+        "Wang H, Chen H, Du Z, et al. BeTL: MapReduce Checkpoint Tactics Beneath the Task Level[J]. IEEE Transactions on Services Computing, 2016, 9(1): 84-95.",
+        "Wang Z, Chen H, Fu Y, et al. Workload balancing and adaptive resource management for the swift storage system on cloud[J]. Future Generation Computer Systems, 2015, 51: 120-131.",
+        "Wang W, Chen H, Chen X. Towards Availability: A Dynamic Scaling Mechanism for Cloud Applications[J]. International Journal of Adaptive, Resilient and Autonomic Systems (IJARAS), 2014, 5(2): 23-39.",
+        "Sun J, Chen H, YIN Z. AERS: An Autonomic and Elastic Resource Scheduling Framework for Cloud Applications[C]//Service Computing(SCC), 2016 IEEE International Conference on. IEEE, 2016: 66-73.",
+        "Lingxuan S, Chen H, Ma S, et al. WHOBBS: An Object-Based Distributed Hybrid Storage Providing Block Storage for Virtual Machines[C]//High Performance Computing and Communications (HPCC), 2015 IEEE 17th International Conference on. IEEE, 2015: 160-165.",
+        "Dai W, Chen H, Wang W. RaHeC: A Mechanism of Resource Management for Heterogeneous Clouds[C]//High Performance Computing and Communications (HPCC), 2015 IEEE 17th International Conference on. IEEE, 2015: 40-45.",
+        "Ma S, Chen H, Shen Y, et al. Providing hybrid block storage for virtual machines using object-based storage[C]//2014 20th IEEE International Conference on Parallel and Distributed Systems (ICPADS). IEEE, 2014: 150-157."
+      ],
+      "research_direction": "分布式计算、云计算、大数据、软件架构",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_1ca8ef236691cd29677a",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/287",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_1ca8ef236691cd29677a",
+          "email": "rnrao@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/287"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "rnrao@sjtu.edu.cn",
+      "id": "mentor_84b1df79f75396274537",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "饶若楠",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/287",
+      "recent_papers": [
+        "Yang Cao, Ruonan Rao;\"A Streaming Graph Partitioning Approach on Imbalance Cluster\",Proceedings of 18th International Conference on Advanced Communications Technology(ICACT2016),2016.Korea.",
+        "Mingrui Zhang, Wansheng Miao, Xin Zhang, Ruonan Rao,\"A Case Study of Embedded Software Development Based on Aspect-Oriented Programming\", Lecture Notes in Electrical Engineering Vol.308,pp 377-384, Springer-Verlag Berlin Heidelberg,2014(WOS:000342986500053)",
+        "Ke Sun,Wansheng Miao,Xin Zhang,Ruonan Rao; \"An Improvement to Feature Selection of Random Forests on Spark\", Proceedings of IEEE 17th International Conference on Computational Science and Engineering(pp774-9),2014.(WOS:000380512100124)",
+        "Qihong Yu,Ruonan Rao; \"An Improved Approach of Data Integration Based on Differential Privacy\",Proceedings of 2nd IEEE International Conference on Progress in Informatics and Computing (PIC) 2014. (WOS:000356505100076)",
+        "Chengling Li,Ruonan Rao; \"An RSSI-based Indoor Position Algorithm for Mobile Ad Hoc Network\",Proceedings of SPIE, Vol.8784,2013. (WOS:000318025200060)",
+        "Huijun,Shi, Ruonan Rao; \"Scalable Distributed RDFS Reasoning Using MapReduce and Bigtable\",Proceedings of 4th International Conference on Graphic and Image Processing (ICGIP),2012,Singapore. (WOS:000318032900035)",
+        "Ming Yang, Ruonan Rao;\"Indoor Positioning Data Obstacle Avoidance and Visualization Framework Based on A* Algorithm\",Lecture Notes in Artificial Intelligence Vol.7003,pp26-33,2011.(WOS:000309192100004)",
+        "Han Xia, Ruonan Rao; \"The Method of Medical Named Entity Recognition Based on Semantic Model and Improved SVM-KNN Algorithm\", Proceedings of Semantics, Knowledge and Grid(SKG2011),2011"
+      ],
+      "research_direction": "分布式计算、云计算、大数据处理、智慧金融、现代软件工程",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_9c529b2a88eaf5703d62",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/632",
+          "status": "current",
+          "title": "助理研究员",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_9c529b2a88eaf5703d62",
+          "email": "lixijun@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/632"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "lixijun@sjtu.edu.cn",
+      "id": "mentor_86fe835f4f10b9b33754",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "李希君",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/632",
+      "recent_papers": [
+        "Learning Cut Selection for Mixed-Integer Linear Programming via Hierarchical Sequence Model. ICLR 2023 (THU A)",
+        "Learning to Optimize Industry-Scale Dynamic Pickup and Delivery Problems. ICDE 2021: 2511-2522 (CCF A)",
+        "A Data-Driven Three-Layer Algorithm for Split Delivery Vehicle Routing Problem with 3D Container Loading Constraint. KDD 2018: 528-536 (CCF A)",
+        "A Two-Layer Algorithmic Framework for Service Provider Configuration and Planning with Optimal Spatial Matching. CIKM 2018: 2273-2281 (CCF B)",
+        "A First Look at Information Entropy-Based Data Pricing. ICDCS 2017: 2053-2060 (CCF B)",
+        "Learning to Cut via Hierarchical Sequence/Set Model for Efficient Mixed-Integer Programming. IEEE Transactions on Pattern Analysis and Machine Intelligence (CCF A)",
+        "Joint Directory, File and IO Trace Feature Extraction and Feature-based Trace Regeneration for Enterprise Storage Systems. ICDE 2024 (CCF A)",
+        "L-QoCo: learning to optimize cache capacity overloading in storage systems. DAC 2022: 379-384 (CCF A)"
+      ],
+      "research_direction": "数值优化软件、学习优化、具身智能等",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "助理研究员",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_db73a09eb66989b4bbad",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/286",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_db73a09eb66989b4bbad",
+          "email": "wangdong@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/286"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "wangdong@sjtu.edu.cn",
+      "id": "mentor_96a6c18b35481b689a34",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "王东",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/286",
+      "recent_papers": [
+        "Xin Xin,Dong Wang,Yue Ding,Chen Lini , FHSM: Factored Hybrid Similarity Methods for Top-N Recommender Systems, APWeb 2016: The Asia Pacific Web Conference, Sept 23-25, 2016, Suzhou, China",
+        "J Zhou,D Wang,Y Ding,L Yin,SocialFM: A Social Recommender System with Factorization Machines,WAIM 2016 : International Conference on Web-Age Information Management,Jun 3 - 5, 2016,Nanchang, China",
+        "Y Ding,D Wang , X Xin , Novel Approaches for Shop Recommendation in Large Shopping Mall Scenario: From Matrix Factorization to Tensor Decomposition, KSEM 2015: The 8th International Conference on Knowledge Science, Engineering and Management , October 28-30, 2015, Chongqing, China",
+        "高等学校物联网工程专业发展战略研究报告暨专业规范(试行),机械工业出版社,2012年7月",
+        "高等学校物联网工程专业实践教学体系与规范(试行),机械工业出版社,2012年7月"
+      ],
+      "research_direction": "基于RFID及无线通信技术的室内定位和行为感知技术、基于位置和行为大数据的推荐系统技术与算法、嵌入式系统与智能硬件技术与软件、RFID应用工程技术与系统、现代物流信息技术与系统",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_f29c75369dd283c0f14e",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/272",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_f29c75369dd283c0f14e",
+          "email": "gujinyu@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/272"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "gujinyu@sjtu.edu.cn",
+      "id": "mentor_986440af2d711571f9c0",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "古金宇",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/272",
+      "recent_papers": [
+        "A Hardware-Software Co-Design for Efficient Secure Containers",
+        "Serverless Functions Made Confidential and Efficient with Split Containers",
+        "ODRP: On-Demand Remote Paging with Programmable RDMA",
+        "HTLL: Latency-Aware Scalable Blocking Mutex",
+        "No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing",
+        "Understanding and Mitigating Twin Function Misuses in Operating System Kernel",
+        "EPK: Scalable and Efficient Memory Protection Key",
+        "A Hardware-Software Co-design for Efficient Intra-Enclave Isolation"
+      ],
+      "research_direction": "微内核操作系统、可信执行环境与系统安全、同步原语",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_791a215fc0ea6b65794e",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/277",
+          "status": "current",
+          "title": "助理教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_791a215fc0ea6b65794e",
+          "email": "wxdwfc@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/277"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "wxdwfc@sjtu.edu.cn",
+      "id": "mentor_ac1a6b05241af7307904",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "魏星达",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/277",
+      "recent_papers": [
+        "[OSDI] Xingda Wei, Fangming Lu, Tianxia Wang, Jinyu Gu, Yuhan Yang, Rong Chen, and Haibo Chen. No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing. 17th USENIX Symposium on Operating Systems Design and Implementation, Boston, MA, US, July 2023.",
+        "[OSDI] Xingda Wei, Rong Chen, and Haibo Chen. Fast RDMA-based Ordered Key-Value Store using Remote Learned Cache. 14th USENIX Symposium on Operating Systems Design and Implementation, Banff, Alberta, Canada, November 2020.",
+        "[OSDI] Xingda Wei, Zhiyuan Dong, Rong Chen, and Haibo Chen. Deconstructing RDMA-enabled Transaction Processing: Hybrid is Better! 13th USENIX Symposium on Operating Systems Design and Implementation, Carlsbad, CA, US, October 2018.",
+        "[SOSP] Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, and Haibo Chen. Fast In-memory Transaction Processing using RDMA and HTM. 25th ACM Symposium on Operating Systems Principles, Monterey, CA, USA, October 2015."
+      ],
+      "research_direction": "分布式系统,操作系统",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "助理教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_6c8e401acdaee10afe7b",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/304",
+          "status": "current",
+          "title": "教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_6c8e401acdaee10afe7b",
+          "email": "rongchen@sjtu.eud.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/304"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "rongchen@sjtu.eud.cn",
+      "id": "mentor_b927c4a57462b313cfa5",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "陈榕",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/304",
+      "recent_papers": [
+        "[OSDI] Fast and Concurrent RDF Queries with RDMA-based Distributed Graph Exploration. Jiaxin Shi, Youyang Yao, Rong Chen, Haibo Chen, and Feifei Li. Proceedings of 12th USENIX Symposium on Operating Systems Design and Implementation, Savannah, GA, US, Nov, 2016.",
+        "[EuroSys] Fast and General Distributed Transactions Using RDMA and HTM. Yanzhe Chen, Xingda Wei, Jiaxin Shi, Rong Chen, and Haibo Chen. Proceedings of the 11th ACM European Conference on Computer Systems, London, UK, April, 2016.",
+        "[SOSP] Fast In-memory Transaction Processing using RDMA and HTM. Xingda Wei, Jiaxin Shi, Yanzhe Chen, Rong Chen, and Haibo Chen. Proceedings of the 25th ACM Symposium on Operating Systems Principles, Monterey, CA, USA, October, 2015.",
+        "[EuroSys] PowerLyra: Differentiated Graph Computation and Partitioning on Skewed Graphs. Rong Chen, Jiaxin Shi, Yanzhe Chen, and Haibo Chen. Proceedings of 10th ACM SIGOPS European Conference on Computer Systems, Bordeaux, France, April, 2015. (Best Paper Award)",
+        "[PPoPP] NUMA-aware Graph-structured Analytics. Kaiyuan Zhang, Rong Chen, and Haibo Chen. Proceedings of 20th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming. Bay Area, CA, USA, February, 2015.",
+        "[PPoPP] SYNC or ASYNC: Time to Fuse for Distributed Graph-parallel Computation. Chenning Xie, Rong Chen, Haibing Guan, Binyu Zang, and Haibo Chen. Proceedings of 20th ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, Bay Area, CA, USA, February, 2015.",
+        "[HPDC] Computation and Communication Efficient Graph Processing with Distributed Immutable View. Rong Chen, Xin Ding, Peng Wang, Haibo Chen, Binyu Zang, and Haibing Guan. Proceedings of the 23rd ACM International Symposium on High-Performance Parallel and Distributed Computing, Vancouver, Canada, June, 2014.",
+        "[ACM TACO] Tiled MapReduce: Efficient and Flexible MapReduce Processing on Multicore with Tiling. Rong Chen and Haibo Chen. ACM Transactions on Architecture and Code Optimization, 10(1), Article No.3. April, 2013."
+      ],
+      "research_direction": "并行与分布式系统,操作系统与系统虚拟化",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_c5171737c0bb1cec2508",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/283",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_c5171737c0bb1cec2508",
+          "email": "zhaoguowang@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/283"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zhaoguowang@sjtu.edu.cn",
+      "id": "mentor_c98c3a555ce80e7f6dbb",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "王肇国",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/283",
+      "recent_papers": [
+        "[PODC] On the Parallels between Paxos and Raft, and how to Port Optimizations. Zhaoguo Wang, Changgeng Zhao, Shuai Mu, Haibo Chen and Jinyang Li. 38th Annual ACM Symposium on Principles of Distributed Computing. July 29–August 2, 2019, Toronto, Canada.",
+        "[Usenix ATC] Pisces: A Scalable and Efficient Persistent Transactional Memory. Jinyu Gu, Qianqian Yu, Xiayang Wang, Zhaoguo Wang, Binyu Zang, Haibing Guan and Haibo Chen. 2019 USENIX Annual Technical Conference, Renton, WA, USA, July 2019.",
+        "[PPoPP] Eunomia: Scaling Concurrent Search Trees under Contention Using HTM. Xin Wang, Weihua Zhang, Zhaoguo Wang, Ziyun Wei, Haibo Chen, Wenyun Zhao. PPoPP 2017.",
+        "[APSys] Extracting More Intra-transaction Parallelism with Work Stealing for OLTP Workloads. Xiaozhou Zhou, Zhaoguo Wang, Rong Chen, Haibo Chen, and Jinyang Li. Proceedings of 8th ACM Asia-Pacific Workshop on Systems. Bombay, India, Sep, 2017. (Best Paper Award)",
+        "[SIGMOD] Scaling Multicore Databases via Constrained Parallel Execution. Zhaoguo Wang, Yang Cui, Han Yi, Shuai Mu, Haibo Chen, Jinyang Li. ACM SIGMOD 2016.",
+        "[USENIX ATC] Spartan: A distributed array framework with smart tiling. Chien-Chin Huang, Qi Chen, Zhaoguo Wang, Russell Power Jorge Ortiz Jinyang Li and Zhen Xiao. In Proceedings of USENIX Annual Technical Conference 2015.",
+        "[CAL] Persistent Transactional Memory. Zhaoguo Wang, Han Yi, Ran Liu, Mingkai Dong and Haibo Chen. IEEE Computer Architecture Letters. VOL. 14, NO. 1, JANUARY-JUNE 2015.",
+        "[EuroSys]Using Restricted Transactional Memory to Build a Scalable In-Memory Database. Zhaoguo Wang, Hao Qian, Jinyang Li, Haibo Chen. The European Conference on Computer Systems, Amsterdam, The Netherlands, 2014."
+      ],
+      "research_direction": "并行与分布式系统和理论",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_aee5e13c4118b66e7aae",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/273",
+          "status": "current",
+          "title": "助理研究员",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_aee5e13c4118b66e7aae",
+          "email": "han_yu@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/273"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "han_yu@sjtu.edu.cn",
+      "id": "mentor_df32ff4803cd13bd7635",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "于晗",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/273",
+      "recent_papers": [
+        "Han Yu, Li Da Xu, Hongming Cai, Shancang Li, Boyi Xu, Lihong Jiang. A Stream Processing Framework Based on Linked Data for Information Collaborating of Regional Energy Networks[J]. IEEE Transactions on Industrial Informatics, 2021, 17(1): 179-188.",
+        "Han Yu, Hongming Cai, Zhiyuan Liu, Boyi Xu, Lihong Jiang. An Automated Metadata Generation Method for Data Lake of Industrial WoT Applications[J]. IEEE Transactions on Systems, Man, Cybernetics: Systems, 2022, 52(8): 5235-5248.",
+        "于晗, 蔡鸿明, 张翼飞, 姜丽红. 基于增量式流处理的自适应群体划分方法[J]. 计算机学报, 2020, 12:2337-2351.",
+        "Han Yu, Hongming Cai, Jun Zhou, Lihong Jiang. Data service generation framework from heterogeneous printed forms using semantic link discovery[J]. Future Generation Computer Systems, 2018, 79: 514-527.",
+        "Han Yu, Congcong Ye, Hongming Cai, Lihong Jiang, Cheng Xie, Boyi Xu. CodingBlind: Automated Cloud Services Generation From Printed Forms and BPMN[J]. IEEE Access, 2018, 6: 6630-6643."
+      ],
+      "research_direction": "工业软件 知识图谱 流计算 软件互操作",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "助理研究员",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_131eb87a727b061df631",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/285",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_131eb87a727b061df631",
+          "email": "xiaosj@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/285"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xiaosj@sjtu.edu.cn",
+      "id": "mentor_e2961458cce7d50cd296",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "肖双九",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/285",
+      "recent_papers": [],
+      "research_direction": "计算机图形图像、数字孪生、虚拟现实/增强现实、智能人机交互、数据可视化、位置数据服务等",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_d229366d74739ba3073a",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/574",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_d229366d74739ba3073a",
+          "email": "yingkai0301@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/574"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "yingkai0301@sjtu.edu.cn",
+      "id": "mentor_ebeb7bdb432d640b2de9",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "应凯",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/574",
+      "recent_papers": [
+        "X Mo, L Gui, Kai Ying, X Sang, X Diao, \" Low complexity joint hybrid precoding for RIS-assisted wideband wireless systems,\" Digital Signal Processing, 2023.",
+        "D. Feng, L. Lai, J. Luo, Y. Zhong, C. Zheng, Kai Ying, \"Ultra-reliable and low-latency communications: applications, opportunities and challenges,\" Science China Information Sciences, vol. 64, pp. 1-12, Jan. 2021.",
+        "L. Zhang, L. Gui, Kai Ying, Q. Qin, \"Clustering based hybrid precoding design for multi-user massive MIMO systems,\" IEEE Transactions on Vehicular Technology, vol. 68, no. 12, pp. 12164-12178, Oct. 2019.",
+        "D. Feng, C. She, Kai Ying, L. Lai, Z. Hou, T. Q.S. Quek, Y. Li, B. Vucetic, \"Towards ultra-reliable low-latency communications: typical scenarios, possible solutions, and open issues,\" IEEE Vehicular Technology Magazine, vol. 14, no. 2, pp. 94-102, June 2019.",
+        "J. Zhang, M. Xu, J. Wang, F. Lu, L. Cheng, H. Cho, Kai Ying, J. Yu, G.-K. Chang, \"Full-duplex quasi-gapless carrier-aggregation using FBMC in centralized radio-over-fiber heterogeneous networks,\" Journal of Lightwave Technology, vol. 35, no. 4, pp. 989-996, Feb. 2017",
+        "J. Wang, Z. Yu, Kai Ying, J. Zhang, F. Lu, M. Xu, L. Cheng, X. Ma, G.-K. Chang, \"Digital mobile fronthaul based on delta-sigma modulation for carrier aggregation of LTE and FBMC signals,\" Journal of Optical Communications and Networking, vol. 9, no. 2, pp. A233-A244, Feb. 2017.",
+        "Kai Ying, H. Qian, R. J. Baxley, G. T. Zhou, \"MIMO transceiver design in dynamic-range-limited VLC systems with dimming control,\" IEEE Photonics Technology Letters, vol. 28, no. 22, pp. 2593-2596, Nov. 2016.",
+        "Kai Ying, H. Qian, R. J. Baxley, S. Yao, \"Joint optimization of precoder and equalizer in MIMO VLC systems,\" IEEE Journal on Selected Areas in Communications, vol. 33, no. 9, pp. 1949-1958, Sept. 2015."
+      ],
+      "research_direction": "无线AI/ML,空天地海协同信息网络,非线性信号处理,高可靠低时延通信",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_bedf20c3ac66b9834d9b",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/575",
+          "status": "current",
+          "title": "助理研究员",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_bedf20c3ac66b9834d9b",
+          "email": "qwert3472@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/575"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "qwert3472@sjtu.edu.cn",
+      "id": "mentor_ece38e91d207f915c49c",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "张谦",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/575",
+      "recent_papers": [
+        "Qian Zhang, Dong Wang, Run Zhao, Yinggang Yu, “SoundLip: Enabling Word and Sentencelevel Lip Interaction for Smart Devices”, IMWUT/Ubicomp 2021 (CCF-A).",
+        "Qian Zhang, Dong Wang, Run Zhao, Yinggang Yu, Junjie Shen, “Sensing to Hear: Speech Enhancement for Mobile Devices Using Acoustic Signals”, IMWUT/Ubicomp 2021 (CCF-A).",
+        "Qian Zhang, Dong Wang, Run Zhao, Yinggang Yu, Jiazhen Jing, “Write, Atend and Spell:Streaming End-to-end Free-style Handwriting Recognition Using Smartwatches”, IMWUT/Ubicomp2021 (CCF-A).",
+        "Qian Zhang, Jiazhen Jing, Run Zhao, Dong Wang, “WearSign: Pushing the Limit of Sign Language Translation Using Wearables”, IMWUT/Ubicomp 2022 (CCF-A).",
+        "Yinggang Yu, Dong Wang, Run Zhao, Qian Zhang, “RFID Based Real-time Recognition of ongoing Gesture with Adversarial Learning”, Sensys 2019 (CCF-B)"
+      ],
+      "research_direction": "无线感知、物联网、普适计算、移动计算",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "助理研究员",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_a8171abb8beb3d29c4b4",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/290",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_a8171abb8beb3d29c4b4",
+          "email": "bjshen@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/290"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "bjshen@sjtu.edu.cn",
+      "id": "mentor_f1d89564a2207fa87e11",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "沈备军",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/290",
+      "recent_papers": [
+        "Shuai Zhang, Xiaodong Gu, Yuting Chen, Beijun Shen*. InfeRE: Step-by-Step Regex Generation via Chain of Inference, ASE, Kirchberg, Luxembourg, Sept. 11-15, 2023",
+        "Mingsheng Jiao, Tingrui Yu, Xuan Li, Guanjie Qiu, Xiaodong Gu, Beijun Shen. On the Evaluation of Neural Code Translation: Taxonomy and Benchmark, ASE, Kirchberg, Luxembourg, Sept. 11-15, 2023",
+        "X. Miao, Z. Lin, S. Wang, L. Yu, S. Li, Z. Wang, P. Nie, Y. Chen, B. Shen, H. Jiang. Lejacon: A Lightweight and Efficient Approach to Java Confidential Computing on SGX, ICSE, Melbourne, Australia, 14-20 May, 2023. ACM SIGSOFT Distinguished Paper.",
+        "Zhaowei Zhang, Hongyu Zhang, Beijun Shen, Xiaodong Gu, Diet Code is Healthy: Simplifying Programs for Pre-trained Code Models, ESEC/FSE, Singapore, November 14-18, 2022",
+        "Nan Cui, Xiaodong Gu, Beijun Shen*, Zero-Shot Program Representation Learning, ICPC, Virtual, May 16-17, 2022",
+        "Shouliang Yang, Xiaodong Gu, Beijun Shen*, Self-Supervised Learning of Smart Contract Representations, ICPC, Virtual, May 16-17, 2022",
+        "Yitian Chai, Hongyu Zhang, Beijun Shen, Xiaodong Gu, Cross-Domain Deep Code Search with Meta Learning, ICSE, Pittsburgh, Pennsylvania, USA, May 21-29, 2022",
+        "Dangwei Wu, Beijun Shen*, Yuting Chen, Tensfa: Detecting and Repairing Tensor Shape Faults in Deep Learning Systems, ISSRE, Oct. 25 - 28, 2021. Best paper candidate."
+      ],
+      "research_direction": "大数据驱动的智能软件工程",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_c6eeea42639b2196b9e7",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/305",
+          "status": "current",
+          "title": "教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_c6eeea42639b2196b9e7",
+          "email": "hmcai@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/305"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "hmcai@sjtu.edu.cn",
+      "id": "mentor_f22a8bbf620d97efe8e6",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "蔡鸿明",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/305",
+      "recent_papers": [
+        "Data-driven ontology generation and evolution towards intelligent service in manufacturing systems Future Generation Computer Systems (2019)",
+        "A Short-term Energy Prediction System based on Edge Computing for Smart City, Future Generation Computer Systems (2019)",
+        "A Configurable WoT Application Platform Based on Spatiotemporal Semantic Scenarios,IEEE Transactions on Systems, Man, and Cybernetics: Systems, 49(1):123-135(2019)",
+        "A context-based service matching approach towards functional reliability for industrial systems. Enterprise Information Systems,13(2): 196-218 (2019)",
+        "Data driven business rule generation based on fog computing, Future Generation Computer Systems (2018), V89, p 494-505",
+        "Fog Computing Approach for Music Cognition System Based on Machine Learning Algorithm,IEEE Transactions on Computational Social Systems (2018), V5(4):1142-1151",
+        "A fog computing based concept drift adaptive process mining framework for mobile APPs, Future Generation Computer Systems (2018), V89, p 670-684",
+        "A service governance mechanism based on process mining for cloud-based applications, Enterprise Information Systems,12(10): 1239-1256 (2018)"
+      ],
+      "research_direction": "语义数据处理,智慧制造,协同计算,服务计算,CAD/CG",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_77e5495aee573a05870c",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/294",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_77e5495aee573a05870c",
+          "email": "jianglh@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/294"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "jianglh@sjtu.edu.cn",
+      "id": "mentor_f28ae1a7a8790aca9c9d",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "姜丽红",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/294",
+      "recent_papers": [
+        "A process-mining-based scenarios generation method for SOA application development,Service Oriented Computing and Applications, 2015",
+        "A Linked Data-based Approach for Clinical Treatment Selecting Support,Journal of Management Analytics, 2015",
+        "An IoT-Oriented Data Storage Framework in Cloud Computing Platform,IEEE Transactions on Industrial Informatics, 2014",
+        "基于案例推理的过滤算法及智能信息推荐系统,清华大学学报(自然科学版),2006",
+        "信息自动过滤方法以及个性化的信息推荐系统,情报科学,2005",
+        "一种协同过滤方法及其在信息推荐系统中的实现,情报学报,2005",
+        "GDSS决策信息流及基于Multi-agents信息收集模型研究,复旦学报(自然科学版),2000",
+        "信息筛选中群体用户偏好聚合模型,上海交通大学学报,2000"
+      ],
+      "research_direction": "信息系统与信息技术,企业数据分析",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_d55dd8570c78e118b92d",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/309",
+          "status": "current",
+          "title": "教授",
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_d55dd8570c78e118b92d",
+          "email": "fu-yx@cs.sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/309"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "fu-yx@cs.sjtu.edu.cn",
+      "id": "mentor_f5df67909c53214a17be",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "傅育熙",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/309",
+      "recent_papers": [
+        "Yuxi Fu. Theory of Interaction. Theoretical Computer Science, 611:1-49, 2016.",
+        "Yuxi Fu. Nondeterministic Structure of Computation. Mathematical Structures in Computer Science, 25:1295-1338, 2015.",
+        "Qiang Yin, Yuxi Fu, Chaodong He, Mingzhang Huang, Xiuting Tao. Branching Bisimilarity Checking for PRS. J. Esparza et al. (Eds.): ICALP 2014, Part II, Lecture Notes in Computer Science 8573, 363--374, 2014.",
+        "Yuxi Fu. Checking Equality and Regularity for Normed BPA with Silent Moves. F.V. Fomin et al. (Eds.): ICALP 2013, Part II, Lecture Notes in Computer Science 7966, 244--255. Springer, 2013.",
+        "Yuxi Fu. The Value-Passing Calculus. Theories of Programming and Formal Methods, Lecture Notes in Computer Science 8051, 166-195, 2013.",
+        "Xiaojuan Cai, Yuxi Fu. The λ-Calculus in the π-Calculus. Mathematical Structures in Computer Science, 21: 943-996, 2011.",
+        "Yuxi Fu, Hao Lu. On the Expressiveness of Interaction. Theoretical Computer Science, 411:1387-1451, 2010.",
+        "Yuxi Fu, Zhengrong Yang. Tau laws for pi calculus. Theoretical Computer Science, 308:55-130, 2003."
+      ],
+      "research_direction": "软件理论；理论计算机科学,主要研究方向包括形式化方法与程序语言理论、模型检测的算法复杂性及应用、并发理论及其应用",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": "教授",
+      "university": "上海交通大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_723ba52027486a305468",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "organization_id": "org_auto_95409c284c0c562ec2e3",
+          "school": "软件学院",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/306",
+          "status": "current",
+          "title": null,
+          "university": "上海交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_723ba52027486a305468",
+          "email": "byzang@sjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-19T07:00:11Z",
+          "source_url": "http://www.se.sjtu.edu.cn/Data/View/306"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/97"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "byzang@sjtu.edu.cn",
+      "id": "mentor_f9a9f167689eafa4c9ef",
+      "last_verified_at": "2026-08-19T07:00:11Z",
+      "name": "臧斌宇",
+      "profile_url": "http://www.se.sjtu.edu.cn/Data/View/306",
+      "recent_papers": [
+        "[ISCA] Reducing World Switches in Virtualized Environment with Flexible Cross-world Calls. Wenhao Li, Yubin Xia, Haibo Chen, Binyu Zang, Haibing Guan. In the 42nd International Symposium on Computer Architecture, Portland, Oregon, USA. June 2015.",
+        "[PPoPP] SYNC or ASYNC: Time to Fuse for Distributed Graph-parallel Computation. Chenning Xie, Rong Chen, Haibing Guan, Binyu Zang and Haibo Chen. ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming, Bay Area, California, USA, February, 2015.",
+        "[HPCA] Concurrent and Consistent Virtual Machine Introspection with Hardware Transactional Memory. Yutao Liu, Yubin Xia, Haibing Guan, Binyu Zang, Haibo Chen. In Proceedings of the 20th IEEE International Symposium On High Performance Computer Architecture (Best Paper Nominee), Orlando, Florida, 2014.",
+        "[Usenix ATC] Revisiting Software Zero-Copy for Web-caching Applications with Twin Allocators. Xiang Song, Jicheng Shi, Haibo Chen and Binyu Zang. Proceedings of 2012 Usenix Annual Technical Conference. Boston, Massachusetts USA, 2012.",
+        "[SOSP] CloudVisor: Retrofitting Protection of Virtual Machines in Multi-tenant Cloud with Nested Virtualization. Fengzhe Zhang, Jin Chen, Haibo Chen and Binyu Zang. In 23rd ACM Symposium on Operating Systems Principles. 2011.",
+        "[PPoPP] COREMU: a Scalable and Portable Parallel Full-system Emulator. Zhaoguo Wang, Ran Liu, Yufei Chen, Xi Wu, Haibo Chen, Weihua Zang, Binyu Zang. In ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming. San Antonio, USA, February, 2011.",
+        "[TSE]Dynamic Software Updating Using a Relaxed Consistency Model. Haibo Chen, Jie Yu, Chengqun Hang, Binyu Zang and Pen-chung Yew. IEEE Transactions on Software Engineering, 2011.",
+        "Rong Chen, Haibo Chen, Binyu Zang, “Tiled-MapReduce: Optimizing Resource Usages of Data-Parallel Applications”, The19th International Conference on Parallel Architectures and Compilation Techniques (PACT 2010), pp. 523 – 534, Vienna, Austria, Sept. 2010"
+      ],
+      "research_direction": "系统软件",
+      "school": "软件学院",
+      "source_url": "http://www.se.sjtu.edu.cn/Data/List/people",
+      "status": "active",
+      "title": null,
+      "university": "上海交通大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_95409c284c0c562ec2e3",
+    "name": "软件学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_7f6284158acd5a7f7af7",
+    "name": "上海交通大学"
+  }
+}
