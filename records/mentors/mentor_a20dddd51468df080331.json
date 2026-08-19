@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f893a68cb70ddf8e2287"
+      ],
+      "ended_at": null,
+      "id": "aff_3ffb6a77820a5a118be5",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xiarenqiu",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f893a68cb70ddf8e2287"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3ffb6a77820a5a118be5",
+      "claim_ids": [
+        "claim_f893a68cb70ddf8e2287"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiarenqiu@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xiarenqiu",
+      "status": "current",
+      "type": "email",
+      "value": "xiarenqiu@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f893a68cb70ddf8e2287"
+    ],
+    "email": [
+      "claim_f893a68cb70ddf8e2287"
+    ],
+    "name": [
+      "claim_f893a68cb70ddf8e2287"
+    ],
+    "profile_url": [
+      "claim_f893a68cb70ddf8e2287"
+    ],
+    "research_directions": [
+      "claim_f893a68cb70ddf8e2287"
+    ],
+    "status": [
+      "claim_f893a68cb70ddf8e2287"
+    ],
+    "title": [
+      "claim_f893a68cb70ddf8e2287"
+    ]
+  },
+  "id": "mentor_a20dddd51468df080331",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f893a68cb70ddf8e2287"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "夏纫秋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3ffb6a77820a5a118be5",
+      "claim_ids": [
+        "claim_f893a68cb70ddf8e2287"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xiarenqiu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多模态推理大模型、多智能体系统、神经网络架构搜索等,尤其关注文档理解、数学物理推理和自动化科研等应用场景"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xiarenqiu",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

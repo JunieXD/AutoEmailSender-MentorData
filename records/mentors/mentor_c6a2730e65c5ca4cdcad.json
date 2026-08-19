@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0dbb992d289a05bba4bf"
+      ],
+      "ended_at": null,
+      "id": "aff_c259d1bbf075a61e72d5",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liusonghua",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0dbb992d289a05bba4bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c259d1bbf075a61e72d5",
+      "claim_ids": [
+        "claim_0dbb992d289a05bba4bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "liusonghua@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liusonghua",
+      "status": "current",
+      "type": "email",
+      "value": "liusonghua@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0dbb992d289a05bba4bf"
+    ],
+    "email": [
+      "claim_0dbb992d289a05bba4bf"
+    ],
+    "name": [
+      "claim_0dbb992d289a05bba4bf"
+    ],
+    "profile_url": [
+      "claim_0dbb992d289a05bba4bf"
+    ],
+    "research_directions": [
+      "claim_0dbb992d289a05bba4bf"
+    ],
+    "status": [
+      "claim_0dbb992d289a05bba4bf"
+    ],
+    "title": [
+      "claim_0dbb992d289a05bba4bf"
+    ]
+  },
+  "id": "mentor_c6a2730e65c5ca4cdcad",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0dbb992d289a05bba4bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘松桦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c259d1bbf075a61e72d5",
+      "claim_ids": [
+        "claim_0dbb992d289a05bba4bf"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liusonghua"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "生成式人工智能与生成数据驱动的模型训练"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/liusonghua",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

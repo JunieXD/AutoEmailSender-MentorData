@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f5a2a6c93bf60c40ae3d"
+      ],
+      "ended_at": null,
+      "id": "aff_2e19082d5a2587b21f2e",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/jinmeng",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f5a2a6c93bf60c40ae3d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2e19082d5a2587b21f2e",
+      "claim_ids": [
+        "claim_f5a2a6c93bf60c40ae3d"
+      ],
+      "is_primary": true,
+      "normalized_value": "jinm@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/jinmeng",
+      "status": "current",
+      "type": "email",
+      "value": "jinm@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f5a2a6c93bf60c40ae3d"
+    ],
+    "email": [
+      "claim_f5a2a6c93bf60c40ae3d"
+    ],
+    "name": [
+      "claim_f5a2a6c93bf60c40ae3d"
+    ],
+    "profile_url": [
+      "claim_f5a2a6c93bf60c40ae3d"
+    ],
+    "research_directions": [
+      "claim_f5a2a6c93bf60c40ae3d"
+    ],
+    "status": [
+      "claim_f5a2a6c93bf60c40ae3d"
+    ],
+    "title": [
+      "claim_f5a2a6c93bf60c40ae3d"
+    ]
+  },
+  "id": "mentor_c34e1f8adb5cfc63e646",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f5a2a6c93bf60c40ae3d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "金梦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2e19082d5a2587b21f2e",
+      "claim_ids": [
+        "claim_f5a2a6c93bf60c40ae3d"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/jinmeng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "海洋科学智能、文献度量、无源物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/jinmeng",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

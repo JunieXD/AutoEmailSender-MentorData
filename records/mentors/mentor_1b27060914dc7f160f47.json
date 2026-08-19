@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_274e427327a6f8275b8b"
+      ],
+      "ended_at": null,
+      "id": "aff_545454f8b2c5c279eadb",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/qianchen",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_274e427327a6f8275b8b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_545454f8b2c5c279eadb",
+      "claim_ids": [
+        "claim_274e427327a6f8275b8b"
+      ],
+      "is_primary": true,
+      "normalized_value": "qianc@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/qianchen",
+      "status": "current",
+      "type": "email",
+      "value": "qianc@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_274e427327a6f8275b8b"
+    ],
+    "email": [
+      "claim_274e427327a6f8275b8b"
+    ],
+    "name": [
+      "claim_274e427327a6f8275b8b"
+    ],
+    "profile_url": [
+      "claim_274e427327a6f8275b8b"
+    ],
+    "research_directions": [
+      "claim_274e427327a6f8275b8b"
+    ],
+    "status": [
+      "claim_274e427327a6f8275b8b"
+    ],
+    "title": [
+      "claim_274e427327a6f8275b8b"
+    ]
+  },
+  "id": "mentor_1b27060914dc7f160f47",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_274e427327a6f8275b8b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "钱忱"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_545454f8b2c5c279eadb",
+      "claim_ids": [
+        "claim_274e427327a6f8275b8b"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/qianchen"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大语言模型、自主智能体、多智能体系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/qianchen",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

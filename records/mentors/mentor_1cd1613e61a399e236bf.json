@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_98f213c08ceaf4e87226"
+      ],
+      "ended_at": null,
+      "id": "aff_ade708840834658a2bbf",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/guoning",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_98f213c08ceaf4e87226"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ade708840834658a2bbf",
+      "claim_ids": [
+        "claim_98f213c08ceaf4e87226"
+      ],
+      "is_primary": true,
+      "normalized_value": "sjtu7439612@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/guoning",
+      "status": "current",
+      "type": "email",
+      "value": "sjtu7439612@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_98f213c08ceaf4e87226"
+    ],
+    "email": [
+      "claim_98f213c08ceaf4e87226"
+    ],
+    "name": [
+      "claim_98f213c08ceaf4e87226"
+    ],
+    "profile_url": [
+      "claim_98f213c08ceaf4e87226"
+    ],
+    "recent_papers": [
+      "claim_98f213c08ceaf4e87226"
+    ],
+    "research_directions": [
+      "claim_98f213c08ceaf4e87226"
+    ],
+    "status": [
+      "claim_98f213c08ceaf4e87226"
+    ],
+    "title": [
+      "claim_98f213c08ceaf4e87226"
+    ]
+  },
+  "id": "mentor_1cd1613e61a399e236bf",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_98f213c08ceaf4e87226"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ade708840834658a2bbf",
+      "claim_ids": [
+        "claim_98f213c08ceaf4e87226"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/guoning"
+    }
+  ],
+  "recent_papers": [
+    "AIS 2023封面论文(基于形变图像的六维力估计方法,跨模态视触觉感知与自适应力抓取系统)",
+    "IEEE T-RO 2024(基于机器人触觉的高精度物体重建)"
+  ],
+  "research_directions": [
+    "视触觉感知机理与机器人灵巧操作"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/guoning",
+  "title": "助理研究员",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

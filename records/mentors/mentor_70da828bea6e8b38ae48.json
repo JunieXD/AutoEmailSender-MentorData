@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7d1445f3da8c25f17148"
+      ],
+      "ended_at": null,
+      "id": "aff_33306e8ea045cc2be297",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangwangyou",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7d1445f3da8c25f17148"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_33306e8ea045cc2be297",
+      "claim_ids": [
+        "claim_7d1445f3da8c25f17148"
+      ],
+      "is_primary": true,
+      "normalized_value": "wyz-97@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangwangyou",
+      "status": "current",
+      "type": "email",
+      "value": "wyz-97@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7d1445f3da8c25f17148"
+    ],
+    "email": [
+      "claim_7d1445f3da8c25f17148"
+    ],
+    "name": [
+      "claim_7d1445f3da8c25f17148"
+    ],
+    "profile_url": [
+      "claim_7d1445f3da8c25f17148"
+    ],
+    "research_directions": [
+      "claim_7d1445f3da8c25f17148"
+    ],
+    "status": [
+      "claim_7d1445f3da8c25f17148"
+    ],
+    "title": [
+      "claim_7d1445f3da8c25f17148"
+    ]
+  },
+  "id": "mentor_70da828bea6e8b38ae48",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7d1445f3da8c25f17148"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张王优"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_33306e8ea045cc2be297",
+      "claim_ids": [
+        "claim_7d1445f3da8c25f17148"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangwangyou"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "语音信号处理、鲁棒语音识别、自监督语音预训练等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangwangyou",
+  "title": "助理教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

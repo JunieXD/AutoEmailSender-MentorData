@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_648e166722612c7a1991"
+      ],
+      "ended_at": null,
+      "id": "aff_2869f0d9b8cb7d524b15",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangya",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_648e166722612c7a1991"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2869f0d9b8cb7d524b15",
+      "claim_ids": [
+        "claim_648e166722612c7a1991"
+      ],
+      "is_primary": true,
+      "normalized_value": "ya_zhang@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangya",
+      "status": "current",
+      "type": "email",
+      "value": "ya_zhang@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_648e166722612c7a1991"
+    ],
+    "email": [
+      "claim_648e166722612c7a1991"
+    ],
+    "name": [
+      "claim_648e166722612c7a1991"
+    ],
+    "profile_url": [
+      "claim_648e166722612c7a1991"
+    ],
+    "research_directions": [
+      "claim_648e166722612c7a1991"
+    ],
+    "status": [
+      "claim_648e166722612c7a1991"
+    ],
+    "title": [
+      "claim_648e166722612c7a1991"
+    ]
+  },
+  "id": "mentor_c81f7b50cfc45916018d",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_648e166722612c7a1991"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张娅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2869f0d9b8cb7d524b15",
+      "claim_ids": [
+        "claim_648e166722612c7a1991"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangya"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能及其在医疗领域的应用研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/zhangya",
+  "title": "教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}

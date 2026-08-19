@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_78f0f09a966925d95505"
+      ],
+      "ended_at": null,
+      "id": "aff_0e2dca61df146ddf97fb",
+      "is_primary": true,
+      "observed_at": "2026-08-19T06:59:51Z",
+      "organization_id": "org_auto_3a18b948ae6bb2e5600a",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xieweidi",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_78f0f09a966925d95505"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0e2dca61df146ddf97fb",
+      "claim_ids": [
+        "claim_78f0f09a966925d95505"
+      ],
+      "is_primary": true,
+      "normalized_value": "weidi@sjtu.edu.cn",
+      "observed_at": "2026-08-19T06:59:51Z",
+      "source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xieweidi",
+      "status": "current",
+      "type": "email",
+      "value": "weidi@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-19T06:59:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_78f0f09a966925d95505"
+    ],
+    "email": [
+      "claim_78f0f09a966925d95505"
+    ],
+    "name": [
+      "claim_78f0f09a966925d95505"
+    ],
+    "profile_url": [
+      "claim_78f0f09a966925d95505"
+    ],
+    "research_directions": [
+      "claim_78f0f09a966925d95505"
+    ],
+    "status": [
+      "claim_78f0f09a966925d95505"
+    ],
+    "title": [
+      "claim_78f0f09a966925d95505"
+    ]
+  },
+  "id": "mentor_b7219032f93c5051cdc1",
+  "last_verified_at": "2026-08-19T06:59:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_78f0f09a966925d95505"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢伟迪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0e2dca61df146ddf97fb",
+      "claim_ids": [
+        "claim_78f0f09a966925d95505"
+      ],
+      "observed_at": "2026-08-19T06:59:51Z",
+      "status": "current",
+      "url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xieweidi"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、AI4Medicine"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-19T06:59:51Z",
+  "status_reason": null,
+  "status_source_url": "https://soai.sjtu.edu.cn/cn/facultydetails/zzjs/xieweidi",
+  "title": "副教授",
+  "updated_at": "2026-08-19T06:59:51Z"
+}
