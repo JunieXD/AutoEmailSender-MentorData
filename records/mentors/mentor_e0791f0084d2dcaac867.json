@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_60f7d31c2343ab383f47"
+      ],
+      "ended_at": null,
+      "id": "aff_3e140c44dd8daf168db9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4691.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_60f7d31c2343ab383f47"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3e140c44dd8daf168db9",
+      "claim_ids": [
+        "claim_60f7d31c2343ab383f47"
+      ],
+      "is_primary": true,
+      "normalized_value": "yahong@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4691.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yahong@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_60f7d31c2343ab383f47"
+    ],
+    "email": [
+      "claim_60f7d31c2343ab383f47"
+    ],
+    "name": [
+      "claim_60f7d31c2343ab383f47"
+    ],
+    "profile_url": [
+      "claim_60f7d31c2343ab383f47"
+    ],
+    "recent_papers": [
+      "claim_60f7d31c2343ab383f47"
+    ],
+    "research_directions": [
+      "claim_60f7d31c2343ab383f47"
+    ],
+    "status": [
+      "claim_60f7d31c2343ab383f47"
+    ],
+    "title": [
+      "claim_60f7d31c2343ab383f47"
+    ]
+  },
+  "id": "mentor_e0791f0084d2dcaac867",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_60f7d31c2343ab383f47"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩亚洪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3e140c44dd8daf168db9",
+      "claim_ids": [
+        "claim_60f7d31c2343ab383f47"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1361/4691.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yang Li, Aming Wu, Zihao Zhang, Yahong Han. Novel Class Discovery for Point Cloud Segmentation via Joint Learning of Causal Representation and Reasoning, NeurIPS 2025.",
+    "Deng Li, Aming Wu, Yang Li, Yaowei Wang, Yahong Han. Continual Adaptation: Environment-Conditional Parameter Generation for Object Detection in Dynamic Scenarios, ICCV 2025.",
+    "Zihao Zhang, Aming Wu, Yahong Han. Style Evolving along Chain-of-Thought for Unknown-Domain Object Detection, CVPR 2025.",
+    "Yucheng Shi, Yahong Han, Qinghua Hu, Yi Yang, Qi Tian. Query-efficient Black-box Adversarial Attack with Customized Iteration and Sampling, IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI), 45(2): 2226-2245 (2023).",
+    "Aming Wu, Yahong Han, Linchao Zhu, Yi Yang. Instance-Invariant Domain Adaptive Object Detection via Progressive Disentanglement, IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI), 44(8): 4178-4193 (2022)."
+  ],
+  "research_directions": [
+    "多媒体内容理解、计算机视觉、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1361/4691.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

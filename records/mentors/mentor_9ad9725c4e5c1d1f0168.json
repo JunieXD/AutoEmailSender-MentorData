@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2fe5e8ff429a8f87f4ae"
+      ],
+      "ended_at": null,
+      "id": "aff_25303ad2359dd70525ef",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/2201/5561.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_2fe5e8ff429a8f87f4ae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_25303ad2359dd70525ef",
+      "claim_ids": [
+        "claim_2fe5e8ff429a8f87f4ae"
+      ],
+      "is_primary": true,
+      "normalized_value": "hbz@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/2201/5561.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hbz@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ],
+    "email": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ],
+    "name": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ],
+    "profile_url": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ],
+    "recent_papers": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ],
+    "research_directions": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ],
+    "status": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ],
+    "title": [
+      "claim_2fe5e8ff429a8f87f4ae"
+    ]
+  },
+  "id": "mentor_9ad9725c4e5c1d1f0168",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2fe5e8ff429a8f87f4ae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄步真"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_25303ad2359dd70525ef",
+      "claim_ids": [
+        "claim_2fe5e8ff429a8f87f4ae"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2201/5561.htm"
+    }
+  ],
+  "recent_papers": [
+    "Stability-Driven Motion Generation for Object-Guided Human-Human Co-Manipulation",
+    "Reconstructing Close Human Interaction with Appearance and Proxemics Reasoning",
+    "Closely Interactive Human Reconstruction with Proxemics and Physics-Guided Adaption",
+    "Reconstructing Groups of People with Hypergraph Relational Reasoning",
+    "Object-Occluded Human Shape and Pose Estimation with Probabilistic Latent Consistency"
+  ],
+  "research_directions": [
+    "三维视觉、具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2201/5561.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

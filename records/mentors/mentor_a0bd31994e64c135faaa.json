@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_35dde75cf7a17e9cd001"
+      ],
+      "ended_at": null,
+      "id": "aff_1266d49c49dd4d9c9fbc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_2fe1676e52a0036fc6f7",
+      "source_url": "http://sai.tju.edu.cn/info/1841/3411.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_35dde75cf7a17e9cd001"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1266d49c49dd4d9c9fbc",
+      "claim_ids": [
+        "claim_35dde75cf7a17e9cd001"
+      ],
+      "is_primary": true,
+      "normalized_value": "serena@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1841/3411.htm",
+      "status": "current",
+      "type": "email",
+      "value": "serena@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_35dde75cf7a17e9cd001"
+    ],
+    "email": [
+      "claim_35dde75cf7a17e9cd001"
+    ],
+    "name": [
+      "claim_35dde75cf7a17e9cd001"
+    ],
+    "profile_url": [
+      "claim_35dde75cf7a17e9cd001"
+    ],
+    "recent_papers": [
+      "claim_35dde75cf7a17e9cd001"
+    ],
+    "research_directions": [
+      "claim_35dde75cf7a17e9cd001"
+    ],
+    "status": [
+      "claim_35dde75cf7a17e9cd001"
+    ],
+    "title": [
+      "claim_35dde75cf7a17e9cd001"
+    ]
+  },
+  "id": "mentor_a0bd31994e64c135faaa",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_35dde75cf7a17e9cd001"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "石红"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1266d49c49dd4d9c9fbc",
+      "claim_ids": [
+        "claim_35dde75cf7a17e9cd001"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1841/3411.htm"
+    }
+  ],
+  "recent_papers": [
+    "Cluster structure preserving unsupervised feature selection for multi-view tasks, NEUROCOMPUTING, 2016, 175: 686-697",
+    "Cascade Deep Networks for Sparse Linear Inverse Problems, 2018 24th International Conference on Pattern Recognition (ICPR), 中国北京市, 2018-8-20至2018-8-24",
+    "Spatially Regularized Low Rank Tensor Optimization for Visual Data Completion, 2018 25th IEEE International Conference on Image Processing (ICIP), Athens, Greece, 2018-10-7至2018-10-10",
+    "基于多分支结构的不确定性局部通道注意力机制, 电子学报, 2022, 50(2): 374-382"
+  ],
+  "research_directions": [
+    "机器学习 粗糙集 特征选择"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1841/3411.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

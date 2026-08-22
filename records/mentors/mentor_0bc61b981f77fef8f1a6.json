@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a1eb5105db43309a3dbf"
+      ],
+      "ended_at": null,
+      "id": "aff_86c8f279806d3b5756e3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4111.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a1eb5105db43309a3dbf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_86c8f279806d3b5756e3",
+      "claim_ids": [
+        "claim_a1eb5105db43309a3dbf"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangliuyl@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4111.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangliuyl@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a1eb5105db43309a3dbf"
+    ],
+    "email": [
+      "claim_a1eb5105db43309a3dbf"
+    ],
+    "name": [
+      "claim_a1eb5105db43309a3dbf"
+    ],
+    "profile_url": [
+      "claim_a1eb5105db43309a3dbf"
+    ],
+    "recent_papers": [
+      "claim_a1eb5105db43309a3dbf"
+    ],
+    "research_directions": [
+      "claim_a1eb5105db43309a3dbf"
+    ],
+    "status": [
+      "claim_a1eb5105db43309a3dbf"
+    ],
+    "title": [
+      "claim_a1eb5105db43309a3dbf"
+    ]
+  },
+  "id": "mentor_0bc61b981f77fef8f1a6",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a1eb5105db43309a3dbf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨柳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_86c8f279806d3b5756e3",
+      "claim_ids": [
+        "claim_a1eb5105db43309a3dbf"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4111.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yuting Liu,Liu Yang,Yu Wang, Long-Tailed Classification with Multi-Granularity Semantics,International Conference on Computer Vision (ICCV), 2025.",
+    "Tianqi Jiang, Liu Yang, Xile Zhao, Zixuan Qin, Qinghua Hu.Less Is More: Rethinking Parameter-Efficient Fine-Tuning from a Subtractive Perspective,Association for the Advancement of Artificial Intelligence(AAAI), 2025.",
+    "Zixuan Qin, Liu Yang, Fei Gao, Qinghua Hu, Chenyang Shen. Uncertainty-Aware Aggregation for Federated Open Set Domain Adaptation, IEEE Transactions on Neural Networks and Learning Systems,2024, 35(6):7548-7562.",
+    "Qilong Wang, Yiwen Wu, Liu Yang, Wangmeng Zuo, Qinghua Hu.Layer-Specific Knowledge Distillation for Class Incremental Semantic Segmentation,IEEE Transactions on Image Processing, 2024,33:1977-1989.",
+    "Zixuan Qin, Liu Yang, Qilong Wang, Qinghua Hu. Reliable and Interpretable Personalized Federated Learning, IEEE Conference on Computer Vision and Pattern Recognition(CVPR), 2023."
+  ],
+  "research_directions": [
+    "机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4111.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

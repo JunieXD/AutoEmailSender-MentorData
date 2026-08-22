@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c0e33fc967e3b44129eb"
+      ],
+      "ended_at": null,
+      "id": "aff_0225d82e257b892b14fe",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4731.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c0e33fc967e3b44129eb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0225d82e257b892b14fe",
+      "claim_ids": [
+        "claim_c0e33fc967e3b44129eb"
+      ],
+      "is_primary": true,
+      "normalized_value": "rendw@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4731.htm",
+      "status": "current",
+      "type": "email",
+      "value": "rendw@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c0e33fc967e3b44129eb"
+    ],
+    "email": [
+      "claim_c0e33fc967e3b44129eb"
+    ],
+    "name": [
+      "claim_c0e33fc967e3b44129eb"
+    ],
+    "profile_url": [
+      "claim_c0e33fc967e3b44129eb"
+    ],
+    "recent_papers": [
+      "claim_c0e33fc967e3b44129eb"
+    ],
+    "research_directions": [
+      "claim_c0e33fc967e3b44129eb"
+    ],
+    "status": [
+      "claim_c0e33fc967e3b44129eb"
+    ]
+  },
+  "id": "mentor_d2c03e030833124dfe3b",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c0e33fc967e3b44129eb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任冬伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0225d82e257b892b14fe",
+      "claim_ids": [
+        "claim_c0e33fc967e3b44129eb"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1361/4731.htm"
+    }
+  ],
+  "recent_papers": [
+    "D. Ren, W. Zuo*, D. Zhang, L. Zhang, M. H. Yang, \"Simultaneous Fidelity and Regularization Learning for Image Restoration\",IEEE Transactions on Pattern Analysis and Machine Intelligence, 2021.",
+    "D. Ren*, X. Shu, Y. Li, X. Wu, J. Li, W. Zuo, \"Reblurring-Guided Single Image Defocus Deblurring: A Learning Framework with Misaligned Training Pairs\",International Journal of Computer Vision, 2025.",
+    "T. Zhu,D. Ren*, Q. Wang, X. Wu, W. Zuo, \"Generative Inbetweening through Frame-wise Conditions-Driven Video Generation\",IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025.",
+    "W. Shang,D. Ren*, C. Feng, X. Wang, L. Lei, W. Zuo, \"Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive\", inIEEE International Conference on Computer Vision (ICCV), 2023.",
+    "W. Jiao, B. Li, W. Shang, P. Wang,D. Ren*, \"Efficient RAW Image Deblurring with Adaptive Frequency Modulation\",Neural Information Processing Systems (NeurIPS), 2025."
+  ],
+  "research_directions": [
+    "计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1361/4731.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:51:09Z"
+}
