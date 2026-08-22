@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_264563eb3b6b459d5d77"
+      ],
+      "ended_at": null,
+      "id": "aff_4cc869ef0e04734ea2cb",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:36Z",
+      "organization_id": "org_auto_a7926a81aa8b1cdbf382",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4031.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_264563eb3b6b459d5d77"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4cc869ef0e04734ea2cb",
+      "claim_ids": [
+        "claim_264563eb3b6b459d5d77"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaofeiwang@tju.edu.cn",
+      "observed_at": "2026-08-21T18:50:36Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4031.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaofeiwang@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_264563eb3b6b459d5d77"
+    ],
+    "email": [
+      "claim_264563eb3b6b459d5d77"
+    ],
+    "name": [
+      "claim_264563eb3b6b459d5d77"
+    ],
+    "profile_url": [
+      "claim_264563eb3b6b459d5d77"
+    ],
+    "recent_papers": [
+      "claim_264563eb3b6b459d5d77"
+    ],
+    "research_directions": [
+      "claim_264563eb3b6b459d5d77"
+    ],
+    "status": [
+      "claim_264563eb3b6b459d5d77"
+    ],
+    "title": [
+      "claim_264563eb3b6b459d5d77"
+    ]
+  },
+  "id": "mentor_bc8b7262a81af67465a9",
+  "last_verified_at": "2026-08-21T18:50:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_264563eb3b6b459d5d77"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晓飞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4cc869ef0e04734ea2cb",
+      "claim_ids": [
+        "claim_264563eb3b6b459d5d77"
+      ],
+      "observed_at": "2026-08-21T18:50:36Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4031.htm"
+    }
+  ],
+  "recent_papers": [
+    "EdgeMatrix: A Resource-Redefined Scheduling Framework for SLA-Guaranteed Multi-Tier Edge-Cloud Computing Systems",
+    "InFEDge: A Blockchain-Based Incentive Mechanism in Hierarchical Federated Learning for End-Edge-Cloud Communications",
+    "One for all: Unified workload prediction for dynamic multi-tenant edge cloud platforms",
+    "Seer: Proactive Revenue-Aware Scheduling for Live Streaming Services in Crowdsourced Cloud-Edge Platforms",
+    "BREAK: A Holistic Approach for Efficient Container Deployment among Edge Clouds"
+  ],
+  "research_directions": [
+    "算力网络、资源调度、分布式智能、边缘计算、边缘智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:36Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4031.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:50:36Z"
+}

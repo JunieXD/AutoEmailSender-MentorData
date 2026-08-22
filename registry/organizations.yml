@@ -5092,3 +5092,36 @@ organizations:
   successor_id: null
   created_at: '2026-08-22T08:50:07Z'
   updated_at: '2026-08-22T08:50:07Z'
+- id: org_auto_a7926a81aa8b1cdbf382
+  type: school
+  canonical_name: 智能与计算学部
+  parent_id: org_auto_3ce5e783fbd769384b1f
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:11Z'
+  updated_at: '2026-08-22T08:50:11Z'
+- id: org_auto_a46e8920cc89fff2cc3d
+  type: department
+  canonical_name: 智能与计算学部
+  parent_id: org_auto_a7926a81aa8b1cdbf382
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:11Z'
+  updated_at: '2026-08-22T08:50:11Z'
+- id: org_auto_60e4fd333650b751a09a
+  type: school
+  canonical_name: 人工智能学院
+  parent_id: org_auto_3ce5e783fbd769384b1f
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:11Z'
+  updated_at: '2026-08-22T08:50:11Z'

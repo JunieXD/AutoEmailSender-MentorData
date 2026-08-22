@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8b398cb6e6553caa9060"
+      ],
+      "ended_at": null,
+      "id": "aff_20be44f78ff98ff2ae3c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:36Z",
+      "organization_id": "org_auto_a7926a81aa8b1cdbf382",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4041.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8b398cb6e6553caa9060"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_20be44f78ff98ff2ae3c",
+      "claim_ids": [
+        "claim_8b398cb6e6553caa9060"
+      ],
+      "is_primary": true,
+      "normalized_value": "wang.yu@tju.edu.cn",
+      "observed_at": "2026-08-21T18:50:36Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4041.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wang.yu@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8b398cb6e6553caa9060"
+    ],
+    "email": [
+      "claim_8b398cb6e6553caa9060"
+    ],
+    "name": [
+      "claim_8b398cb6e6553caa9060"
+    ],
+    "profile_url": [
+      "claim_8b398cb6e6553caa9060"
+    ],
+    "recent_papers": [
+      "claim_8b398cb6e6553caa9060"
+    ],
+    "research_directions": [
+      "claim_8b398cb6e6553caa9060"
+    ],
+    "status": [
+      "claim_8b398cb6e6553caa9060"
+    ],
+    "title": [
+      "claim_8b398cb6e6553caa9060"
+    ]
+  },
+  "id": "mentor_a99b0adbcc52db3d0b81",
+  "last_verified_at": "2026-08-21T18:50:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8b398cb6e6553caa9060"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王煜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_20be44f78ff98ff2ae3c",
+      "claim_ids": [
+        "claim_8b398cb6e6553caa9060"
+      ],
+      "observed_at": "2026-08-21T18:50:36Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4041.htm"
+    }
+  ],
+  "recent_papers": [
+    "Wang Yu, Junxian Mu, Hongzhi Huang, Yu Wang, Wang Qilong, Zhu Pengfei*, Hu Qinghua*. BackMix: regularizing open set recognition by removing underlying fore-background priors. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025.",
+    "Huang Hongzhi, Wang Yu*, Hu Qinghua*, Cheng Ming-Ming. Class-specific semantic reconstruction for open set recognition. IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2023.",
+    "Wang Yu, Xinjie Yao, Pengfei Zhu*, Weihao Li, Meng Cao, Qinghua Hu. Integrated Heterogeneous graph attention network for incomplete multi-modal clustering. International Journal of Computer Vision (IJCV), 2024.",
+    "Chen Huitong, Wang Yu*, Fan Yan, Jiang Guosong, Hu Qinghua. Reducing class-wise confusion for incremental learning with disentangled manifolds. IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2025.",
+    "Yan Fan, Yu Wang*, Pengfei Zhu, Dongyue Chen, Qinghua Hu, Persistence homology distillation for semisupervised continual learning,Annual Conference on Neural Information Processing Systems (NeurIPS), 2024."
+  ],
+  "research_directions": [
+    "开放环境机器学习、多粒度结构建模"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:36Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4041.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:50:36Z"
+}
