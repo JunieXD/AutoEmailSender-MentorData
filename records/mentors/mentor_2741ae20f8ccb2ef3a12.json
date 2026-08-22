@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_807c1e4f272d3b40dcbe"
+      ],
+      "ended_at": null,
+      "id": "aff_69c41424ee85b820317f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:54:57Z",
+      "organization_id": "org_auto_3f30d74b1944a64f91d2",
+      "source_url": "https://seit.sysu.edu.cn/teacher/ZhangDong",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_807c1e4f272d3b40dcbe"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_69c41424ee85b820317f",
+      "claim_ids": [
+        "claim_807c1e4f272d3b40dcbe"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangd@mail.sysu.edu.cn",
+      "observed_at": "2026-08-21T18:54:57Z",
+      "source_url": "https://seit.sysu.edu.cn/teacher/ZhangDong",
+      "status": "current",
+      "type": "email",
+      "value": "zhangd@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:54:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_807c1e4f272d3b40dcbe"
+    ],
+    "email": [
+      "claim_807c1e4f272d3b40dcbe"
+    ],
+    "name": [
+      "claim_807c1e4f272d3b40dcbe"
+    ],
+    "profile_url": [
+      "claim_807c1e4f272d3b40dcbe"
+    ],
+    "recent_papers": [
+      "claim_807c1e4f272d3b40dcbe"
+    ],
+    "research_directions": [
+      "claim_807c1e4f272d3b40dcbe"
+    ],
+    "status": [
+      "claim_807c1e4f272d3b40dcbe"
+    ],
+    "title": [
+      "claim_807c1e4f272d3b40dcbe"
+    ]
+  },
+  "id": "mentor_2741ae20f8ccb2ef3a12",
+  "last_verified_at": "2026-08-21T18:54:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_807c1e4f272d3b40dcbe"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_69c41424ee85b820317f",
+      "claim_ids": [
+        "claim_807c1e4f272d3b40dcbe"
+      ],
+      "observed_at": "2026-08-21T18:54:57Z",
+      "status": "current",
+      "url": "https://seit.sysu.edu.cn/teacher/ZhangDong"
+    }
+  ],
+  "recent_papers": [
+    "A Complementary Dual-branch Network for Appearance-based Gaze Estimation from Low-resolution Facial Image",
+    "A Self-fusion Network Based on Contrastive Learning for Group Emotion Recognition",
+    "Human pose estimation for low-resolution image using 1-D heatmaps and offset regression",
+    "Accurate Head Pose Estimation Using Image Rectification and a Lightweight Convolutional Neural Network",
+    "Typical Facial Expression Network Using a Facial Feature Decoupler and Spatial-Temporal Learning",
+    "A New Multi-feature Fusion Based Convolutional Neural Network for Facial Expression Recognition",
+    "STCAM: Spatial-Temporal and channel attention module for dynamic facial expression recognition",
+    "IIRNet: A lightweight deep neural network using intensely inverted residuals for image recognition"
+  ],
+  "research_directions": [
+    "多模态信号处理、情感计算和物联网技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:54:57Z",
+  "status_reason": null,
+  "status_source_url": "https://seit.sysu.edu.cn/teacher/ZhangDong",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:54:57Z"
+}

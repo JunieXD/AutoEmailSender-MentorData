@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6968d59e52255e12c25b"
+      ],
+      "ended_at": null,
+      "id": "aff_8b0f44b7547cbec3c716",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:54:57Z",
+      "organization_id": "org_auto_3f30d74b1944a64f91d2",
+      "source_url": "https://seit.sysu.edu.cn/teacher/JiangMing",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6968d59e52255e12c25b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8b0f44b7547cbec3c716",
+      "claim_ids": [
+        "claim_6968d59e52255e12c25b"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiangm7@mail.sysu.edu.cn",
+      "observed_at": "2026-08-21T18:54:57Z",
+      "source_url": "https://seit.sysu.edu.cn/teacher/JiangMing",
+      "status": "current",
+      "type": "email",
+      "value": "jiangm7@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:54:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6968d59e52255e12c25b"
+    ],
+    "email": [
+      "claim_6968d59e52255e12c25b"
+    ],
+    "name": [
+      "claim_6968d59e52255e12c25b"
+    ],
+    "profile_url": [
+      "claim_6968d59e52255e12c25b"
+    ],
+    "research_directions": [
+      "claim_6968d59e52255e12c25b"
+    ],
+    "status": [
+      "claim_6968d59e52255e12c25b"
+    ],
+    "title": [
+      "claim_6968d59e52255e12c25b"
+    ]
+  },
+  "id": "mentor_551a6efacd205069b710",
+  "last_verified_at": "2026-08-21T18:54:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6968d59e52255e12c25b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "江明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8b0f44b7547cbec3c716",
+      "claim_ids": [
+        "claim_6968d59e52255e12c25b"
+      ],
+      "observed_at": "2026-08-21T18:54:57Z",
+      "status": "current",
+      "url": "https://seit.sysu.edu.cn/teacher/JiangMing"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "现代移动通信系统与技术(含AI辅助通信、MIMO、OFDM、可见光通信、D2D、信号编解码与检测、信道估计等)、LTE-A/5G/5G+/6G通信技术、可见光通信(VLC/LiFi)技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:54:57Z",
+  "status_reason": null,
+  "status_source_url": "https://seit.sysu.edu.cn/teacher/JiangMing",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:54:57Z"
+}

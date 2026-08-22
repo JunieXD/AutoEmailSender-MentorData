@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e0331b6b130a24e6f7a6"
+      ],
+      "ended_at": null,
+      "id": "aff_916a40344862707a16f5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:54:57Z",
+      "organization_id": "org_auto_816b5cc0cdead6c7fef3",
+      "source_url": "https://seit.sysu.edu.cn/teacher/HuangYihua",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e0331b6b130a24e6f7a6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_916a40344862707a16f5",
+      "claim_ids": [
+        "claim_e0331b6b130a24e6f7a6"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangyih@mail.sysu.edu.cn",
+      "observed_at": "2026-08-21T18:54:57Z",
+      "source_url": "https://seit.sysu.edu.cn/teacher/HuangYihua",
+      "status": "current",
+      "type": "email",
+      "value": "huangyih@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:54:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e0331b6b130a24e6f7a6"
+    ],
+    "email": [
+      "claim_e0331b6b130a24e6f7a6"
+    ],
+    "name": [
+      "claim_e0331b6b130a24e6f7a6"
+    ],
+    "profile_url": [
+      "claim_e0331b6b130a24e6f7a6"
+    ],
+    "recent_papers": [
+      "claim_e0331b6b130a24e6f7a6"
+    ],
+    "research_directions": [
+      "claim_e0331b6b130a24e6f7a6"
+    ],
+    "status": [
+      "claim_e0331b6b130a24e6f7a6"
+    ],
+    "title": [
+      "claim_e0331b6b130a24e6f7a6"
+    ]
+  },
+  "id": "mentor_7e59ef70d5262b6fd0b6",
+  "last_verified_at": "2026-08-21T18:54:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e0331b6b130a24e6f7a6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄以华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_916a40344862707a16f5",
+      "claim_ids": [
+        "claim_e0331b6b130a24e6f7a6"
+      ],
+      "observed_at": "2026-08-21T18:54:57Z",
+      "status": "current",
+      "url": "https://seit.sysu.edu.cn/teacher/HuangYihua"
+    }
+  ],
+  "recent_papers": [
+    "HCG: Streaming DCNN Accelerator With a Hybrid Computational Granularity Scheme on FPGA",
+    "FPGA-Based Hardware Accelerator of zk-SNARK",
+    "An Efficient FPGA-Based Hardware Accelerator of Fully Quantized Mamba-2",
+    "An FPGA-based Quantization and Acceleration Framework for Multi-DNN",
+    "MRH-GCN: An Efficient GCN Accelerator for Multi-Relation Heterogeneous Graph",
+    "SpGCN: An FPGA-Based Graph Convolutional Network Accelerator for Sparse Graphs",
+    "A Novel FPGA Accelerator of R(2+1)D",
+    "BSTMSM: A High-Performance FPGA-based Multi-Scalar Multiplication Hardware Accelerator"
+  ],
+  "research_directions": [
+    "人工智能、机器学习的理论、方法及其硬件加速与实现技术",
+    "FPGA的开发技术以及专用数字集成电路与系统设计技术",
+    "现代通信技术与系统设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:54:57Z",
+  "status_reason": null,
+  "status_source_url": "https://seit.sysu.edu.cn/teacher/HuangYihua",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:54:57Z"
+}

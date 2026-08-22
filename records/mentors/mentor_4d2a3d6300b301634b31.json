@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a4a77c6567b5b60ba174"
+      ],
+      "ended_at": null,
+      "id": "aff_a51d8a026d5a4d95ce47",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:54:57Z",
+      "organization_id": "org_auto_3f30d74b1944a64f91d2",
+      "source_url": "https://seit.sysu.edu.cn/teacher/ChenLi",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a4a77c6567b5b60ba174"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a51d8a026d5a4d95ce47",
+      "claim_ids": [
+        "claim_a4a77c6567b5b60ba174"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenli55@mail.sysu.edu.cn",
+      "observed_at": "2026-08-21T18:54:57Z",
+      "source_url": "https://seit.sysu.edu.cn/teacher/ChenLi",
+      "status": "current",
+      "type": "email",
+      "value": "chenli55@mail.sysu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:54:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a4a77c6567b5b60ba174"
+    ],
+    "email": [
+      "claim_a4a77c6567b5b60ba174"
+    ],
+    "name": [
+      "claim_a4a77c6567b5b60ba174"
+    ],
+    "profile_url": [
+      "claim_a4a77c6567b5b60ba174"
+    ],
+    "recent_papers": [
+      "claim_a4a77c6567b5b60ba174"
+    ],
+    "research_directions": [
+      "claim_a4a77c6567b5b60ba174"
+    ],
+    "status": [
+      "claim_a4a77c6567b5b60ba174"
+    ],
+    "title": [
+      "claim_a4a77c6567b5b60ba174"
+    ]
+  },
+  "id": "mentor_4d2a3d6300b301634b31",
+  "last_verified_at": "2026-08-21T18:54:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a4a77c6567b5b60ba174"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈立"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a51d8a026d5a4d95ce47",
+      "claim_ids": [
+        "claim_a4a77c6567b5b60ba174"
+      ],
+      "observed_at": "2026-08-21T18:54:57Z",
+      "status": "current",
+      "url": "https://seit.sysu.edu.cn/teacher/ChenLi"
+    }
+  ],
+  "recent_papers": [
+    "Efficient ordered statistics decoding of BCH codes without Gaussian elimination",
+    "Performance analysis and enhanced Chase decoding of GII-BCH codes",
+    "Algebraic Chase decoding of elliptic codes with generalized re-encoding transform and improved root-finding",
+    "BCH based U-UV codes and its SCL decoding",
+    "Shift-sum decoding of non-binary cyclic codes",
+    "U-UV coding for bit-interleaved coded modulation",
+    "Algebraic soft decoding of elliptic codes",
+    "Guruswami-Sudan decoding of elliptic codes through module basis reduction"
+  ],
+  "research_directions": [
+    "纠错编码技术,及其在数字通信系统中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:54:57Z",
+  "status_reason": null,
+  "status_source_url": "https://seit.sysu.edu.cn/teacher/ChenLi",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:54:57Z"
+}
