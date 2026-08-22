@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_68a3da4ae32897185ddf"
+      ],
+      "ended_at": null,
+      "id": "aff_2e8b19b82f1a4324c5bd",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:57Z",
+      "organization_id": "org_auto_f68a446d4167c87ad72a",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1399/12013.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_68a3da4ae32897185ddf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2e8b19b82f1a4324c5bd",
+      "claim_ids": [
+        "claim_68a3da4ae32897185ddf"
+      ],
+      "is_primary": true,
+      "normalized_value": "wujing@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:44:57Z",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1399/12013.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wujing@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_68a3da4ae32897185ddf"
+    ],
+    "email": [
+      "claim_68a3da4ae32897185ddf"
+    ],
+    "name": [
+      "claim_68a3da4ae32897185ddf"
+    ],
+    "profile_url": [
+      "claim_68a3da4ae32897185ddf"
+    ],
+    "recent_papers": [
+      "claim_68a3da4ae32897185ddf"
+    ],
+    "research_directions": [
+      "claim_68a3da4ae32897185ddf"
+    ],
+    "status": [
+      "claim_68a3da4ae32897185ddf"
+    ]
+  },
+  "id": "mentor_e6fc069eea39c8c78699",
+  "last_verified_at": "2026-08-21T18:44:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_68a3da4ae32897185ddf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴靖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2e8b19b82f1a4324c5bd",
+      "claim_ids": [
+        "claim_68a3da4ae32897185ddf"
+      ],
+      "observed_at": "2026-08-21T18:44:57Z",
+      "status": "current",
+      "url": "https://jxxy.fzu.edu.cn/info/1399/12013.htm"
+    }
+  ],
+  "recent_papers": [
+    "DFINet: Dynamic feedback iterative network for infrared small target detection",
+    "Point-to-Point Regression: Accurate Infrared Small Target Detection With Single-Point Annotation",
+    "DRIGNet: Low-light image enhancement based on dual-range information guidance",
+    "具有偏振感知的双编码器图像去雾网络",
+    "稀薄气体环境高灵敏度高稳定性压力敏感涂料开发与表征",
+    "STAMF: Synergistic transformer and mamba fusion network for RGB-Polarization based underwater salient object detection",
+    "Adaptive haze pixel intensity perception transformer structure for image dehazing networks",
+    "Infrared Image Super-Resolution Network Utilizing the Enhanced Transformer and U-Net"
+  ],
+  "research_directions": [
+    "光机电算一体化、人工智能图像处理、光学流动成像"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:57Z",
+  "status_reason": null,
+  "status_source_url": "https://jxxy.fzu.edu.cn/info/1399/12013.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:44:57Z"
+}

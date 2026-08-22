@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d07ce011c80bce0b7f61"
+      ],
+      "ended_at": null,
+      "id": "aff_d7a93ec3bc0d7b3fec2d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:57Z",
+      "organization_id": "org_auto_2aed60b2b43b2e9ece33",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1403/11688.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d07ce011c80bce0b7f61"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d7a93ec3bc0d7b3fec2d",
+      "claim_ids": [
+        "claim_d07ce011c80bce0b7f61"
+      ],
+      "is_primary": true,
+      "normalized_value": "zdeng@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:44:57Z",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1403/11688.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zdeng@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d07ce011c80bce0b7f61"
+    ],
+    "email": [
+      "claim_d07ce011c80bce0b7f61"
+    ],
+    "name": [
+      "claim_d07ce011c80bce0b7f61"
+    ],
+    "profile_url": [
+      "claim_d07ce011c80bce0b7f61"
+    ],
+    "recent_papers": [
+      "claim_d07ce011c80bce0b7f61"
+    ],
+    "research_directions": [
+      "claim_d07ce011c80bce0b7f61"
+    ],
+    "status": [
+      "claim_d07ce011c80bce0b7f61"
+    ],
+    "title": [
+      "claim_d07ce011c80bce0b7f61"
+    ]
+  },
+  "id": "mentor_2d920fa4a07b82d95ce7",
+  "last_verified_at": "2026-08-21T18:44:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d07ce011c80bce0b7f61"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓震"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d7a93ec3bc0d7b3fec2d",
+      "claim_ids": [
+        "claim_d07ce011c80bce0b7f61"
+      ],
+      "observed_at": "2026-08-21T18:44:57Z",
+      "status": "current",
+      "url": "https://jxxy.fzu.edu.cn/info/1403/11688.htm"
+    }
+  ],
+  "recent_papers": [
+    "Constrained Visual Predictive Control of a Robotic Flexible Endoscope with Visibility and Joint Limits Constraints. IEEE Robotics and Automation Letters.",
+    "Shared control of tendon-driven continuum robots using visibility-guaranteed optimization for endoscopic surgery. IEEE Transactions on Medical Robotics and Bionics, 6(2), 487-497.",
+    "Deng Z, Zhang S, Guo Y, et al. Assisted teleoperation control of robotic endoscope with visual feedback for nasotracheal intubation[J]. Robotics and Autonomous Systems, 2024, 172: 104586.",
+    "Deng Z, Wei X, Zheng X, et al. Automatic endoscopic navigation based on attention-based network for Nasotracheal Intubation[J]. Biomedical Signal Processing and Control, 2023, 86: 105035.",
+    "Deng Z, Jiang P, Guo Y, et al. Safety-aware robotic steering of a flexible endoscope for nasotracheal intubation[J]. Biomedical Signal Processing and Control, 2023, 82: 104504.",
+    "Deng Z, Fang B, He B, et al. An adaptive planning framework for dexterous robotic grasping with grasp type detection[J]. Robotics and Autonomous Systems, 2021, 140: 103727.",
+    "Deng Z, Zhang J W. Learning synergies based in‐hand manipulation with reward shaping[J]. CAAI Transactions on Intelligence Technology, 2020, 5(3): 141-149.",
+    "Deng Z, Guan H, Huang R, et al. Combining model-based $ q $-learning with structural knowledge transfer for robot skill learning[J]. IEEE Transactions on Cognitive and Developmental Systems, 2017, 11(1): 26-35."
+  ],
+  "research_directions": [
+    "柔性机器人感知与控制、医疗手术机器人、智能机器人感知与控制、柔性机器人建模与控制、医疗机器人具身智能、医疗机器人系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:57Z",
+  "status_reason": null,
+  "status_source_url": "https://jxxy.fzu.edu.cn/info/1403/11688.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:57Z"
+}
