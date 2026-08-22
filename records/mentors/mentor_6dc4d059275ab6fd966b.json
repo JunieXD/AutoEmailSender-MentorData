@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_78d6f85b241fd6e1688b"
+      ],
+      "ended_at": null,
+      "id": "aff_bcb27471ea93ee92b132",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/1351/5571.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_78d6f85b241fd6e1688b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bcb27471ea93ee92b132",
+      "claim_ids": [
+        "claim_78d6f85b241fd6e1688b"
+      ],
+      "is_primary": true,
+      "normalized_value": "liyu07@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1351/5571.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liyu07@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_78d6f85b241fd6e1688b"
+    ],
+    "email": [
+      "claim_78d6f85b241fd6e1688b"
+    ],
+    "name": [
+      "claim_78d6f85b241fd6e1688b"
+    ],
+    "profile_url": [
+      "claim_78d6f85b241fd6e1688b"
+    ],
+    "recent_papers": [
+      "claim_78d6f85b241fd6e1688b"
+    ],
+    "research_directions": [
+      "claim_78d6f85b241fd6e1688b"
+    ],
+    "status": [
+      "claim_78d6f85b241fd6e1688b"
+    ],
+    "title": [
+      "claim_78d6f85b241fd6e1688b"
+    ]
+  },
+  "id": "mentor_6dc4d059275ab6fd966b",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_78d6f85b241fd6e1688b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李毓"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bcb27471ea93ee92b132",
+      "claim_ids": [
+        "claim_78d6f85b241fd6e1688b"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1351/5571.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yu Li. KA-DDI: A Knowledge-Adaptive Contrastive Learning Framework for Drug-Drug Interaction Prediction. Expert Systems With Applications,2025",
+    "Yu Li. KGMAEDDI: Knowledge Graph and Molecular-Graph Masked Autoencoder for Drug-Drug Interaction Prediction. IEEE Journal of Biomedical and Health Informatics,2025",
+    "Yu Li. MRGCDDI: Multi-Relation Graph Contrastive Learning without Data Augmentation for Drug-Drug Interaction Events Prediction. IEEE Journal of Biomedical and Health Informatics,2024",
+    "Yu Li. MOLGAECL: Molecular Graph Contrastive Learning via Graph Auto-Encoder Pretraining and FineTuning Based on Drug–Drug Interaction Prediction. Journal of Chemical Information and Modeling,2025",
+    "Yu Li. Integrated Knowledge Graph and Drug Molecular Graph Fusion via Adversarial Networks for Drug–Drug Interaction Prediction. Journal of Chemical Information and Modeling,2024"
+  ],
+  "research_directions": [
+    "生物医学大数据分析、生物医药知识图谱、图神经网络、大模型药物重定位、自然语言处理、药物相互作用智能预测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1351/5571.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

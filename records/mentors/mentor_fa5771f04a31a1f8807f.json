@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_03618859dea28fa3ebf5"
+      ],
+      "ended_at": null,
+      "id": "aff_2df02aed8990ebaf595e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4721.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_03618859dea28fa3ebf5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2df02aed8990ebaf595e",
+      "claim_ids": [
+        "claim_03618859dea28fa3ebf5"
+      ],
+      "is_primary": true,
+      "normalized_value": "rgz@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4721.htm",
+      "status": "current",
+      "type": "email",
+      "value": "rgz@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_03618859dea28fa3ebf5"
+    ],
+    "email": [
+      "claim_03618859dea28fa3ebf5"
+    ],
+    "name": [
+      "claim_03618859dea28fa3ebf5"
+    ],
+    "profile_url": [
+      "claim_03618859dea28fa3ebf5"
+    ],
+    "recent_papers": [
+      "claim_03618859dea28fa3ebf5"
+    ],
+    "research_directions": [
+      "claim_03618859dea28fa3ebf5"
+    ],
+    "status": [
+      "claim_03618859dea28fa3ebf5"
+    ],
+    "title": [
+      "claim_03618859dea28fa3ebf5"
+    ]
+  },
+  "id": "mentor_fa5771f04a31a1f8807f",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_03618859dea28fa3ebf5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "饶国政"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2df02aed8990ebaf595e",
+      "claim_ids": [
+        "claim_03618859dea28fa3ebf5"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1361/4721.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ma, Xiaochen,Guozheng Rao*, Lina Xu, Xin Wang, Zaiming Fan, and Zhe Zhang. Guided and knowledgeable multi-agent debate for fact verification.Expert Systems with Applications(2025): 130103.",
+    "Zhang, Jiahuan, Tianheng Wang, Ziyi Huang, Yulong Wu, Hanqing Wu, DongbaiChen DongbaiChen, Linfeng Song, Yue Zhang,Guozheng Rao*, and Kaicheng Yu. Sr-llm: Rethinking the structured representation in large language model. InProceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp. 3443-3462. 2025.",
+    "Rao, Guozheng, Weihang Huang, Zhiyong Feng, and Qiong Cong. LSTM with sentence representations for document-level sentiment classification. Neurocomputing 308 (2018): 49-57."
+  ],
+  "research_directions": [
+    "知识图谱,知识图谱与大语言模型协同"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1361/4721.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

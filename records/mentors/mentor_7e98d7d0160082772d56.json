@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_18a4ebcee04a540f5cc9"
+      ],
+      "ended_at": null,
+      "id": "aff_39193c31572e4e8cac41",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4131.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_18a4ebcee04a540f5cc9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_39193c31572e4e8cac41",
+      "claim_ids": [
+        "claim_18a4ebcee04a540f5cc9"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuqiang@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4131.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuqiang@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_18a4ebcee04a540f5cc9"
+    ],
+    "email": [
+      "claim_18a4ebcee04a540f5cc9"
+    ],
+    "name": [
+      "claim_18a4ebcee04a540f5cc9"
+    ],
+    "profile_url": [
+      "claim_18a4ebcee04a540f5cc9"
+    ],
+    "recent_papers": [
+      "claim_18a4ebcee04a540f5cc9"
+    ],
+    "research_directions": [
+      "claim_18a4ebcee04a540f5cc9"
+    ],
+    "status": [
+      "claim_18a4ebcee04a540f5cc9"
+    ],
+    "title": [
+      "claim_18a4ebcee04a540f5cc9"
+    ]
+  },
+  "id": "mentor_7e98d7d0160082772d56",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_18a4ebcee04a540f5cc9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_39193c31572e4e8cac41",
+      "claim_ids": [
+        "claim_18a4ebcee04a540f5cc9"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4131.htm"
+    }
+  ],
+  "recent_papers": [
+    "Q. Yu, M. Tsodyks, H. Sompolinsky, D. Schmitz, & R. Gütig, Interactions between long- and short-term synaptic plasticity transform temporal neural representations into spatial, Proc. Natl. Acad. Sci. U.S.A. (PNAS) 122 (47) e2426290122, 2025",
+    "Zhichao Deng, Zhikun Liu, Junxue Wang, Shengqian Chen, Xiang Wei, Qiang Yu(*), HetSyn: Versatile Timescale Integration in Spiking Neural Networks via Heterogeneous Synapses, NeurIPS, 2025",
+    "Qianyi Bai, Haiteng Wang, Qiang Yu(*), “A Brain-Inspired Gating Mechanism Unlocks Robust Computation in Spiking Neural Networks”, ICLR, 2026",
+    "Interactions between long- and short-term synaptic plasticity transform temporal neural representations into spatial",
+    "HetSyn: Versatile Timescale Integration in Spiking Neural Networks via Heterogeneous Synapses",
+    "A Brain-Inspired Gating Mechanism Unlocks Robust Computation in Spiking Neural Networks"
+  ],
+  "research_directions": [
+    "类脑感知(视觉、听觉、EEG脑机接口等)、类脑认知与决策、新一代人工智能、理论神经科学等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4131.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

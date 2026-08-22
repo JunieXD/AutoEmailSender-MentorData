@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e4fb3ce86fd39f02f130"
+      ],
+      "ended_at": null,
+      "id": "aff_cb839ebc36ed45efef09",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4081.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e4fb3ce86fd39f02f130"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cb839ebc36ed45efef09",
+      "claim_ids": [
+        "claim_e4fb3ce86fd39f02f130"
+      ],
+      "is_primary": true,
+      "normalized_value": "jhxu@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4081.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jhxu@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e4fb3ce86fd39f02f130"
+    ],
+    "email": [
+      "claim_e4fb3ce86fd39f02f130"
+    ],
+    "name": [
+      "claim_e4fb3ce86fd39f02f130"
+    ],
+    "profile_url": [
+      "claim_e4fb3ce86fd39f02f130"
+    ],
+    "recent_papers": [
+      "claim_e4fb3ce86fd39f02f130"
+    ],
+    "research_directions": [
+      "claim_e4fb3ce86fd39f02f130"
+    ],
+    "status": [
+      "claim_e4fb3ce86fd39f02f130"
+    ],
+    "title": [
+      "claim_e4fb3ce86fd39f02f130"
+    ]
+  },
+  "id": "mentor_c16b5438cdab8cc2f48b",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e4fb3ce86fd39f02f130"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐君海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cb839ebc36ed45efef09",
+      "claim_ids": [
+        "claim_e4fb3ce86fd39f02f130"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4081.htm"
+    }
+  ],
+  "recent_papers": [
+    "SHDA: Sinkhorn Domain Attention for Cross-Domain Audio Anti-Spoofing. IEEE Transactions on Information Forensics and Security, 2025.",
+    "Network occlusion sensitivity analysis identifies regional contributions to brain age prediction. Human Brain Mapping, 2025.",
+    "Optimal transport with class structure exploration for cross-domain speech emotion recognition. IEEE/ACM Transactions on Audio, Speech, and Language Processing, 2024.",
+    "EPIMR: Prediction of Enhancer-Promoter Interactions by Multi-Scale ResNet on Image Representation. Big Data Mining and Analytics, 2024.",
+    "Semisupervised Medical Image Segmentation through Prototype‐Based Mutual Consistency Learning. International Journal of Intelligent Systems, 2024."
+  ],
+  "research_directions": [
+    "脑科学、医学图像处理、人工智能、机器学习、视听觉认知计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4081.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

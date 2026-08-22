@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d80e0c93d0a9c36461f6"
+      ],
+      "ended_at": null,
+      "id": "aff_20c87449ad8474b90c6a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_2fe1676e52a0036fc6f7",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4821.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d80e0c93d0a9c36461f6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_20c87449ad8474b90c6a",
+      "claim_ids": [
+        "claim_d80e0c93d0a9c36461f6"
+      ],
+      "is_primary": true,
+      "normalized_value": "qingxu@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4821.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qingxu@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d80e0c93d0a9c36461f6"
+    ],
+    "email": [
+      "claim_d80e0c93d0a9c36461f6"
+    ],
+    "name": [
+      "claim_d80e0c93d0a9c36461f6"
+    ],
+    "profile_url": [
+      "claim_d80e0c93d0a9c36461f6"
+    ],
+    "recent_papers": [
+      "claim_d80e0c93d0a9c36461f6"
+    ],
+    "research_directions": [
+      "claim_d80e0c93d0a9c36461f6"
+    ],
+    "status": [
+      "claim_d80e0c93d0a9c36461f6"
+    ],
+    "title": [
+      "claim_d80e0c93d0a9c36461f6"
+    ]
+  },
+  "id": "mentor_1609e9b90975c133832c",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d80e0c93d0a9c36461f6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐庆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_20c87449ad8474b90c6a",
+      "claim_ids": [
+        "claim_d80e0c93d0a9c36461f6"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1361/4821.htm"
+    }
+  ],
+  "recent_papers": [
+    "Shunbo Wang; Qing Xu; Klaus Schoeffmann; Exploring the Effects of Augmented Reality Guidance Position within a Body-Fixed Coordinate System on Pedestrian Navigation, IEEE Transactions on Visualization and Computer Graphics, 2025, 31(11):9921-9931",
+    "Qing Xu; Yu Liu; Xiu Li; Zhen Yang; Jie Wang; Mateu Sbert; Riccardo Scopigno; Browsing and Exploration of Video Sequences: A New Scheme for Key Frame Extraction and 3D Visualization Using Entropy Based Jensen Divergence, Information Sciences, 2014, 278: 756-756",
+    "Qing Xu; Hailin Jiang; Riccardo Scopigno; Mateu Sbert; A Novel Approach for Enhancing Very Dark Image Sequences, Signal Processing, 2014, 103: 309-330"
+  ],
+  "research_directions": [
+    "眼动/行为认知、轨迹挖掘及可视化、虚拟/增强现实"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1361/4821.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

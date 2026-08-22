@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d73dc72d0a7f54f075e7"
+      ],
+      "ended_at": null,
+      "id": "aff_ec7e2a41ba637272aa5e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/2201/5521.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_d73dc72d0a7f54f075e7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec7e2a41ba637272aa5e",
+      "claim_ids": [
+        "claim_d73dc72d0a7f54f075e7"
+      ],
+      "is_primary": true,
+      "normalized_value": "gejiake@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/2201/5521.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gejiake@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d73dc72d0a7f54f075e7"
+    ],
+    "email": [
+      "claim_d73dc72d0a7f54f075e7"
+    ],
+    "name": [
+      "claim_d73dc72d0a7f54f075e7"
+    ],
+    "profile_url": [
+      "claim_d73dc72d0a7f54f075e7"
+    ],
+    "recent_papers": [
+      "claim_d73dc72d0a7f54f075e7"
+    ],
+    "research_directions": [
+      "claim_d73dc72d0a7f54f075e7"
+    ],
+    "status": [
+      "claim_d73dc72d0a7f54f075e7"
+    ],
+    "title": [
+      "claim_d73dc72d0a7f54f075e7"
+    ]
+  },
+  "id": "mentor_95095341e0d33b5cbdba",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d73dc72d0a7f54f075e7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "葛加可"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ec7e2a41ba637272aa5e",
+      "claim_ids": [
+        "claim_d73dc72d0a7f54f075e7"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2201/5521.htm"
+    }
+  ],
+  "recent_papers": [
+    "High Performance or Low Memory? An Updatable Learned Index Framework for Time-Space Tradeoff",
+    "ShapeShifter: Workload-Aware Adaptive Evolving Index Structures Based on Learned Models",
+    "KOE: A Key Distribution-Oriented Performance Estimation Framework for Diverse Index Structures",
+    "SALI: A Scalable Adaptive Learned Index Framework based on Probability Models",
+    "Cutting Learned Index into Pieces: An In-depth Inquiry into Updatable Learned Indexes"
+  ],
+  "research_directions": [
+    "针对LLM的多模态数据管理技术、智能数据库系统 (AI4DB-DB4AI)、大模型检索增强生成技术(RAG)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2201/5521.htm",
+  "title": "助理研究员",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

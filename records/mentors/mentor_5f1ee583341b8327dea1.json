@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c4f53059385f3b1e09be"
+      ],
+      "ended_at": null,
+      "id": "aff_4c8076304d3829b38180",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4101.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c4f53059385f3b1e09be"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4c8076304d3829b38180",
+      "claim_ids": [
+        "claim_c4f53059385f3b1e09be"
+      ],
+      "is_primary": true,
+      "normalized_value": "yjyang@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4101.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yjyang@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c4f53059385f3b1e09be"
+    ],
+    "email": [
+      "claim_c4f53059385f3b1e09be"
+    ],
+    "name": [
+      "claim_c4f53059385f3b1e09be"
+    ],
+    "profile_url": [
+      "claim_c4f53059385f3b1e09be"
+    ],
+    "recent_papers": [
+      "claim_c4f53059385f3b1e09be"
+    ],
+    "research_directions": [
+      "claim_c4f53059385f3b1e09be"
+    ],
+    "status": [
+      "claim_c4f53059385f3b1e09be"
+    ],
+    "title": [
+      "claim_c4f53059385f3b1e09be"
+    ]
+  },
+  "id": "mentor_5f1ee583341b8327dea1",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c4f53059385f3b1e09be"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨雅君"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4c8076304d3829b38180",
+      "claim_ids": [
+        "claim_c4f53059385f3b1e09be"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4101.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zihan Feng, Yajun Yang*, Xin Huang, Hong Gao, Liping Jing, Qinghua Hu. Efficient Sphere-Effect Based Information Diffusion Prediction on Large-scale Social Networks. The 31st ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2025) (CCF推荐A类会议), 2025.",
+    "Yajun Yang, Hanxiao Li, Xiangjv Zhu, Junhu Wang, Xin Wang*, Hong Gao. An Effective Index Method for Historical Reachability Queries over Evolving Graphs. The 2023 ACM SIGMOD/PODS International Conference on Management of Data (SIGMOD 2023) (CCF推荐A类会议), 2023.",
+    "Junliang Li, Yajun Yang*,Qinghua Hu, Xin Wang, Hong Gao. Public Opinion Field Effect Fusion in Representation Learning for Trending Topics Diffusion. Advances in Neural Information Processing Systems 36 (NeurIPS 2023) (CCF推荐A类会议), 2023.",
+    "Hang Zhang, Yajun Yang*, Xin Wang, Hong Gao, Qinghua Hu. MLI: A Multi-level Inference Mechanism for User Attributes in Social Networks. ACM Transactions on Information Systems (TOIS 2023) (CCF推荐A类期刊), 2023.",
+    "Yajun Yang, Hong Gao, Jeffrey Xu Yu*, Jianzhong Li. Finding the Cost-Optimal Path with Time Constraint over Time-Dependent Graphs. The 40th International Conference on Very Large Databases (VLDB 2014) (CCF推荐A类会议), 2014."
+  ],
+  "research_directions": [
+    "大模型知识增强、社会计算、图数据管理和图挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4101.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

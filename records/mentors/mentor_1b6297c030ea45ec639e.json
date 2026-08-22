@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fb4293aedc54d592a6f9"
+      ],
+      "ended_at": null,
+      "id": "aff_8bb84577cf767383ae6f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/1351/5881.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_fb4293aedc54d592a6f9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8bb84577cf767383ae6f",
+      "claim_ids": [
+        "claim_fb4293aedc54d592a6f9"
+      ],
+      "is_primary": true,
+      "normalized_value": "dyuechen@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1351/5881.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dyuechen@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fb4293aedc54d592a6f9"
+    ],
+    "email": [
+      "claim_fb4293aedc54d592a6f9"
+    ],
+    "name": [
+      "claim_fb4293aedc54d592a6f9"
+    ],
+    "profile_url": [
+      "claim_fb4293aedc54d592a6f9"
+    ],
+    "recent_papers": [
+      "claim_fb4293aedc54d592a6f9"
+    ],
+    "research_directions": [
+      "claim_fb4293aedc54d592a6f9"
+    ],
+    "status": [
+      "claim_fb4293aedc54d592a6f9"
+    ],
+    "title": [
+      "claim_fb4293aedc54d592a6f9"
+    ]
+  },
+  "id": "mentor_1b6297c030ea45ec639e",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fb4293aedc54d592a6f9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈东月"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8bb84577cf767383ae6f",
+      "claim_ids": [
+        "claim_fb4293aedc54d592a6f9"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1351/5881.htm"
+    }
+  ],
+  "recent_papers": [
+    "Long-Tail Class Incremental Learning via Bias Calibration With Application to Continuous Fault Diagnosis.",
+    "Fine-Grained Domain Generalization With Feature Structuralization.",
+    "Heterogeneous Dynamic-Aware GNN for RUL Prediction of Aeroengine.",
+    "Bayesian Hierarchical Graph Neural Networks with Uncertainty Feedback for Trustworthy Fault Diagnosis of Industrial Processes.",
+    "Interaction-Aware Graph Neural Networks for Fault Diagnosis of Complex Industrial Processes."
+  ],
+  "research_directions": [
+    "工业故障诊断、图神经网络、大小模型协同、可持续学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1351/5881.htm",
+  "title": "副研究员",
+  "updated_at": "2026-08-21T18:51:09Z"
+}

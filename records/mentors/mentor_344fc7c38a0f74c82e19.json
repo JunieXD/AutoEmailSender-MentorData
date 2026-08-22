@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_166b444123cbcb3aa516"
+      ],
+      "ended_at": null,
+      "id": "aff_ef0fe7386c47b9108392",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:09Z",
+      "organization_id": "org_auto_994cc556a9b83810832f",
+      "source_url": "http://sai.tju.edu.cn/info/1841/5701.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_166b444123cbcb3aa516"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ef0fe7386c47b9108392",
+      "claim_ids": [
+        "claim_166b444123cbcb3aa516"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanrusun@tju.edu.cn",
+      "observed_at": "2026-08-21T18:51:09Z",
+      "source_url": "http://sai.tju.edu.cn/info/1841/5701.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanrusun@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:09Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_166b444123cbcb3aa516"
+    ],
+    "email": [
+      "claim_166b444123cbcb3aa516"
+    ],
+    "name": [
+      "claim_166b444123cbcb3aa516"
+    ],
+    "profile_url": [
+      "claim_166b444123cbcb3aa516"
+    ],
+    "recent_papers": [
+      "claim_166b444123cbcb3aa516"
+    ],
+    "research_directions": [
+      "claim_166b444123cbcb3aa516"
+    ],
+    "status": [
+      "claim_166b444123cbcb3aa516"
+    ],
+    "title": [
+      "claim_166b444123cbcb3aa516"
+    ]
+  },
+  "id": "mentor_344fc7c38a0f74c82e19",
+  "last_verified_at": "2026-08-21T18:51:09Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_166b444123cbcb3aa516"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙彦茹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ef0fe7386c47b9108392",
+      "claim_ids": [
+        "claim_166b444123cbcb3aa516"
+      ],
+      "observed_at": "2026-08-21T18:51:09Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1841/5701.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yanru Sun, Zongxia Xie, Emadeldeen Eldele, Dongyue Chen, Qinghua Hu, Min Wu*. Learning pattern-specific experts for time series forecasting under patch-level distribution shift[C]. NeurIPS, 2025: 1-35.",
+    "Yanru Sun, Zongxia Xie, Dongyue Chen, Emadeldeen Eldele, Qinghua Hu. Hierarchical classification auxiliary network for time series forecasting[C]. AAAI, 2025: 39(19), 20743-20751.",
+    "Yanru Sun, Zongxia Xie, Haoyu Xing, Hualong Yu, Qinghua Hu. PPGF: Probability pattern-guided time series forecasting[J]. IEEE TNNLS, 2025: 1-12.",
+    "Wenzhe Niu#, Zongxia Xie#, Yanru Sun#, Wei He, Man Xu, Chao Hao. LangTime: A language-guided unified model for time series forecasting with proximal policy optimization[C]. ICML, 2025: 1-23.",
+    "Yanru Sun, Zongxia Xie, Yanhong Chen, Qinghua Hu. Accurate solar wind speed prediction with multimodality information[J]. Space: Science & Technology, 2022: 1-13."
+  ],
+  "research_directions": [
+    "时间序列预测,时序基础模型预训练与后训练"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:09Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1841/5701.htm",
+  "title": "助理研究员",
+  "updated_at": "2026-08-21T18:51:09Z"
+}
