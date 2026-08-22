@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a6b77792789905d77eea"
+      ],
+      "ended_at": null,
+      "id": "aff_9180f2204b1de1133d45",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:51Z",
+      "organization_id": "org_auto_99ccec10b24a7d73e931",
+      "source_url": "https://ai.cumtb.edu.cn/info/1053/1132.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a6b77792789905d77eea"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9180f2204b1de1133d45",
+      "claim_ids": [
+        "claim_a6b77792789905d77eea"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangzhenwu@126.com",
+      "observed_at": "2026-08-21T18:53:51Z",
+      "source_url": "https://ai.cumtb.edu.cn/info/1053/1132.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangzhenwu@126.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a6b77792789905d77eea"
+    ],
+    "email": [
+      "claim_a6b77792789905d77eea"
+    ],
+    "name": [
+      "claim_a6b77792789905d77eea"
+    ],
+    "profile_url": [
+      "claim_a6b77792789905d77eea"
+    ],
+    "recent_papers": [
+      "claim_a6b77792789905d77eea"
+    ],
+    "research_directions": [
+      "claim_a6b77792789905d77eea"
+    ],
+    "status": [
+      "claim_a6b77792789905d77eea"
+    ],
+    "title": [
+      "claim_a6b77792789905d77eea"
+    ]
+  },
+  "id": "mentor_25a47ed02051387ac8ca",
+  "last_verified_at": "2026-08-21T18:53:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a6b77792789905d77eea"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王振武"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9180f2204b1de1133d45",
+      "claim_ids": [
+        "claim_a6b77792789905d77eea"
+      ],
+      "observed_at": "2026-08-21T18:53:51Z",
+      "status": "current",
+      "url": "https://ai.cumtb.edu.cn/info/1053/1132.htm"
+    }
+  ],
+  "recent_papers": [
+    "Interpreting convolutional neural network by joint evaluation of multiple feature maps and an improved NSGA-II algorithm",
+    "Solving dynamic multi-objective optimization problems via quantifying intensity of environment changes and ensemble learning-based prediction strategies",
+    "PML-ED: A method of partial multi-label learning by using encoder-decoder framework and exploring label correlation",
+    "A multi-objective chicken swarm optimization algorithm based on dual external archive with various elites",
+    "A novel Bayesian network-based ensemble classifier chains for multi-label classification",
+    "An agent‐based persuasion model using emotion‐driven concession and multi‐objective optimization",
+    "A Three-Dimensional Visualization Framework for Underground Geohazard Recognition on Urban Road-Facing GPR Data",
+    "Partial Classifier Chains with Feature Selection by Exploiting Label Correlation in Multi Label Classification"
+  ],
+  "research_directions": [
+    "多标签学习、深度学习、多目标优化方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:51Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.cumtb.edu.cn/info/1053/1132.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:51Z"
+}

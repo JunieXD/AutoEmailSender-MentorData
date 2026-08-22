@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c3d57c385ec0915e09ba"
+      ],
+      "ended_at": null,
+      "id": "aff_65270b53114bacd9728e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:51Z",
+      "organization_id": "org_auto_31a7c58e67aa18815512",
+      "source_url": "https://ai.cumtb.edu.cn/info/1052/3705.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_c3d57c385ec0915e09ba"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_65270b53114bacd9728e",
+      "claim_ids": [
+        "claim_c3d57c385ec0915e09ba"
+      ],
+      "is_primary": true,
+      "normalized_value": "pnzhang@cumtb.edu.cn",
+      "observed_at": "2026-08-21T18:53:51Z",
+      "source_url": "https://ai.cumtb.edu.cn/info/1052/3705.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pnzhang@cumtb.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c3d57c385ec0915e09ba"
+    ],
+    "email": [
+      "claim_c3d57c385ec0915e09ba"
+    ],
+    "name": [
+      "claim_c3d57c385ec0915e09ba"
+    ],
+    "profile_url": [
+      "claim_c3d57c385ec0915e09ba"
+    ],
+    "research_directions": [
+      "claim_c3d57c385ec0915e09ba"
+    ],
+    "status": [
+      "claim_c3d57c385ec0915e09ba"
+    ],
+    "title": [
+      "claim_c3d57c385ec0915e09ba"
+    ]
+  },
+  "id": "mentor_928e0eeba726a0afbaaf",
+  "last_verified_at": "2026-08-21T18:53:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c3d57c385ec0915e09ba"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张培尼"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_65270b53114bacd9728e",
+      "claim_ids": [
+        "claim_c3d57c385ec0915e09ba"
+      ],
+      "observed_at": "2026-08-21T18:53:51Z",
+      "status": "current",
+      "url": "https://ai.cumtb.edu.cn/info/1052/3705.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图像处理、模式识别、信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:51Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.cumtb.edu.cn/info/1052/3705.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:53:51Z"
+}

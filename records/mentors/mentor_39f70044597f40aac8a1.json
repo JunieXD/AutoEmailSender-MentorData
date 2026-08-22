@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e0713982f0e6fd0ef321"
+      ],
+      "ended_at": null,
+      "id": "aff_03a69d856d86c3ea6281",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:51Z",
+      "organization_id": "org_auto_31a7c58e67aa18815512",
+      "source_url": "https://ai.cumtb.edu.cn/info/1053/3665.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e0713982f0e6fd0ef321"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_03a69d856d86c3ea6281",
+      "claim_ids": [
+        "claim_e0713982f0e6fd0ef321"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiaolibin@cumtb.edu.cn",
+      "observed_at": "2026-08-21T18:53:51Z",
+      "source_url": "https://ai.cumtb.edu.cn/info/1053/3665.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiaolibin@cumtb.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e0713982f0e6fd0ef321"
+    ],
+    "email": [
+      "claim_e0713982f0e6fd0ef321"
+    ],
+    "name": [
+      "claim_e0713982f0e6fd0ef321"
+    ],
+    "profile_url": [
+      "claim_e0713982f0e6fd0ef321"
+    ],
+    "recent_papers": [
+      "claim_e0713982f0e6fd0ef321"
+    ],
+    "research_directions": [
+      "claim_e0713982f0e6fd0ef321"
+    ],
+    "status": [
+      "claim_e0713982f0e6fd0ef321"
+    ],
+    "title": [
+      "claim_e0713982f0e6fd0ef321"
+    ]
+  },
+  "id": "mentor_39f70044597f40aac8a1",
+  "last_verified_at": "2026-08-21T18:53:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e0713982f0e6fd0ef321"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "矫立斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_03a69d856d86c3ea6281",
+      "claim_ids": [
+        "claim_e0713982f0e6fd0ef321"
+      ],
+      "observed_at": "2026-08-21T18:53:51Z",
+      "status": "current",
+      "url": "https://ai.cumtb.edu.cn/info/1053/3665.htm"
+    }
+  ],
+  "recent_papers": [
+    "Jiao L, Huo L, Hu C, et al. Efficient Refined UNets: Efficient segmentation networks for boundary-aware cloud and shadow detection[J], Expert Systems with Applications, 2026, 297: 129403.",
+    "Jiao L, Huo L, Hu C, et al. Permutohedral Refined Unet: Bilateral Feature-Scalable Segmentation Network for Edge-Precise Cloud and Shadow Detection[J]. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2024, 17: 10468-10489.",
+    "Jiao L, Zheng M, Tang P, et al. Towards Edge-Precise Cloud and Shadow Detection on the GaoFen-1 Dataset: A Visual, Comprehensive Investigation[J]. Remote Sensing, 2023, 15(4): 906.",
+    "Jiao L, Gao W, Bie R, et al. Golf Guided Grad-CAM: attention visualization within golf swings via guided gradient-based class activation mapping[J]. Multimedia Tools and Applications, 2023, 83: 38481-38503.",
+    "Jiao L, Huo L, Hu C, et al. Refined UNet V4: End-to-End Patch-Wise Network for Cloud and Shadow Segmentation with Bilateral Grid[J]. Remote Sensing, 2022, 14(2): 358.",
+    "Jiao L, Hu C, Huo L, et al. Guided-Pix2Pix+: End-to-end spatial and color refinement network for image dehazing[J]. Signal Processing: Image Communication, 2022, 107: 116758.",
+    "Jiao L, Huo L, Hu C, et al. Refined UNet v3: Efficient end-to-end patch-wise network for cloud and shadow segmentation with multi-channel spectral features[J]. Neural Networks, 2021, 143: 767-782.",
+    "Jiao L, Hu C, Huo L, et al. Guided-Pix2Pix: End-to-End Inference and Refinement Network for Image Dehazing[J]. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2021, 14: 3052-3069."
+  ],
+  "research_directions": [
+    "计算机视觉、机器学习、智慧矿山等,目前定位于以机器学习和计算机视觉技术为核心的图像智能处理方法及实现,以及运动信号智能识别,具体包括多通道图像语义分割、运动信号智能识别、多通道图像增强等问题"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:51Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.cumtb.edu.cn/info/1053/3665.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:51Z"
+}

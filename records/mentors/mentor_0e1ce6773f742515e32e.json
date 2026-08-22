@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8ee3d97051cbae1e2643"
+      ],
+      "ended_at": null,
+      "id": "aff_fd71d274fa49f6f008f9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:51Z",
+      "organization_id": "org_auto_31a7c58e67aa18815512",
+      "source_url": "https://ai.cumtb.edu.cn/info/1053/1123.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8ee3d97051cbae1e2643"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fd71d274fa49f6f008f9",
+      "claim_ids": [
+        "claim_8ee3d97051cbae1e2643"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanyan@cumtb.edu.cn",
+      "observed_at": "2026-08-21T18:53:51Z",
+      "source_url": "https://ai.cumtb.edu.cn/info/1053/1123.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanyan@cumtb.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8ee3d97051cbae1e2643"
+    ],
+    "email": [
+      "claim_8ee3d97051cbae1e2643"
+    ],
+    "name": [
+      "claim_8ee3d97051cbae1e2643"
+    ],
+    "profile_url": [
+      "claim_8ee3d97051cbae1e2643"
+    ],
+    "recent_papers": [
+      "claim_8ee3d97051cbae1e2643"
+    ],
+    "research_directions": [
+      "claim_8ee3d97051cbae1e2643"
+    ],
+    "status": [
+      "claim_8ee3d97051cbae1e2643"
+    ],
+    "title": [
+      "claim_8ee3d97051cbae1e2643"
+    ]
+  },
+  "id": "mentor_0e1ce6773f742515e32e",
+  "last_verified_at": "2026-08-21T18:53:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8ee3d97051cbae1e2643"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫琰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fd71d274fa49f6f008f9",
+      "claim_ids": [
+        "claim_8ee3d97051cbae1e2643"
+      ],
+      "observed_at": "2026-08-21T18:53:51Z",
+      "status": "current",
+      "url": "https://ai.cumtb.edu.cn/info/1053/1123.htm"
+    }
+  ],
+  "recent_papers": [
+    "SPRInT: Scaling Programatic Reasoning for INstruction Tuning in mathematics",
+    "InfinityMath : A Scalable Instruction Tuning Dataset in Programmatic Mathematical Reasoning",
+    "DialGNN: Heterogeneous Graph Neural Networks for Dialogue Classification",
+    "O2-BERT: two-stage target-based sentiment analysis",
+    "\"Opinion Target: Opinion Word\" Pairs Extraction Based on CRF",
+    "基于Fasttext网络的煤矿事故案例文本分类方法对比",
+    "List-wise learning to rank biomedical question-answer pairs with deep ranking recursive autoencoders",
+    "LSTM2: Multi-Label Ranking for Document Classification"
+  ],
+  "research_directions": [
+    "人工智能、大模型、自然语言处理、信息检索、生物医学等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:51Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.cumtb.edu.cn/info/1053/1123.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:51Z"
+}
