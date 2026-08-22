@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7e63eccb7dd2c81978b"
+      ],
+      "ended_at": null,
+      "id": "aff_a7b810a4592fffa1e52f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:01Z",
+      "organization_id": "org_auto_353a060e52a6086e9200",
+      "source_url": "https://eie.hebut.edu.cn/szdw/jsml/fjs/104116.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7e63eccb7dd2c81978b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a7b810a4592fffa1e52f",
+      "claim_ids": [
+        "claim_d7e63eccb7dd2c81978b"
+      ],
+      "is_primary": true,
+      "normalized_value": "sym@hebut.edu.cn",
+      "observed_at": "2026-08-21T18:48:01Z",
+      "source_url": "https://eie.hebut.edu.cn/szdw/jsml/fjs/104116.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sym@hebut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:01Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7e63eccb7dd2c81978b"
+    ],
+    "email": [
+      "claim_d7e63eccb7dd2c81978b"
+    ],
+    "name": [
+      "claim_d7e63eccb7dd2c81978b"
+    ],
+    "profile_url": [
+      "claim_d7e63eccb7dd2c81978b"
+    ],
+    "recent_papers": [
+      "claim_d7e63eccb7dd2c81978b"
+    ],
+    "research_directions": [
+      "claim_d7e63eccb7dd2c81978b"
+    ],
+    "status": [
+      "claim_d7e63eccb7dd2c81978b"
+    ],
+    "title": [
+      "claim_d7e63eccb7dd2c81978b"
+    ]
+  },
+  "id": "mentor_601102ccf838b12cb32c",
+  "last_verified_at": "2026-08-21T18:48:01Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7e63eccb7dd2c81978b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏彦莽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a7b810a4592fffa1e52f",
+      "claim_ids": [
+        "claim_d7e63eccb7dd2c81978b"
+      ],
+      "observed_at": "2026-08-21T18:48:01Z",
+      "status": "current",
+      "url": "https://eie.hebut.edu.cn/szdw/jsml/fjs/104116.htm"
+    }
+  ],
+  "recent_papers": [
+    "A New Design of Gas Detector for Automobiles Exhaust",
+    "Study on the performance of chaotic oscillator in weak signal detection",
+    "基于视频的多信息融合公交客流采集方法研究."
+  ],
+  "research_directions": [
+    "通信及测控系统、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:01Z",
+  "status_reason": null,
+  "status_source_url": "https://eie.hebut.edu.cn/szdw/jsml/fjs/104116.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:01Z"
+}

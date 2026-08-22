@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_30ed188b24aca04097d2"
+      ],
+      "ended_at": null,
+      "id": "aff_25d462fd49b39ede28a3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:01Z",
+      "organization_id": "org_auto_e31641312427781e68fc",
+      "source_url": "https://eie.hebut.edu.cn/szdw/jsml/jsjzj/491c9f541a93485a97c75dcf26e2b790.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_30ed188b24aca04097d2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_25d462fd49b39ede28a3",
+      "claim_ids": [
+        "claim_30ed188b24aca04097d2"
+      ],
+      "is_primary": true,
+      "normalized_value": "tanweiqiang@hebut.edu.cn",
+      "observed_at": "2026-08-21T18:48:01Z",
+      "source_url": "https://eie.hebut.edu.cn/szdw/jsml/jsjzj/491c9f541a93485a97c75dcf26e2b790.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tanweiqiang@hebut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:01Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_30ed188b24aca04097d2"
+    ],
+    "email": [
+      "claim_30ed188b24aca04097d2"
+    ],
+    "name": [
+      "claim_30ed188b24aca04097d2"
+    ],
+    "profile_url": [
+      "claim_30ed188b24aca04097d2"
+    ],
+    "recent_papers": [
+      "claim_30ed188b24aca04097d2"
+    ],
+    "research_directions": [
+      "claim_30ed188b24aca04097d2"
+    ],
+    "status": [
+      "claim_30ed188b24aca04097d2"
+    ],
+    "title": [
+      "claim_30ed188b24aca04097d2"
+    ]
+  },
+  "id": "mentor_d05baf05a98e75d05c8f",
+  "last_verified_at": "2026-08-21T18:48:01Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_30ed188b24aca04097d2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谭伟强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_25d462fd49b39ede28a3",
+      "claim_ids": [
+        "claim_30ed188b24aca04097d2"
+      ],
+      "observed_at": "2026-08-21T18:48:01Z",
+      "status": "current",
+      "url": "https://eie.hebut.edu.cn/szdw/jsml/jsjzj/491c9f541a93485a97c75dcf26e2b790.htm"
+    }
+  ],
+  "recent_papers": [
+    "Tan, W.-q., et al. \"An automatic beam alignment system based on relative reference points for Thomson scattering diagnosis system.\" Rev. Sci. Instrum. 90, 126102 (2019)(Q3, IF1.523 )",
+    "Tan, W.-q., et al. \" Electron Density Measurement via Dual-angle Thomson Scattering Diagnosis.\" J. Appl. Phys. 129, 043302 (2021) (Q2, IF2.546)",
+    "Wang P., Yuan P., Tan W., Zheng J. Measurement of Surface Scattering Characteristics of Black Materials in Thomson Scattering System[J]. Acta Optica Sinica, 2020, 40(21): 2129002",
+    "Yuan P., Zheng J., Tan WQ., Design of a multichannel polychromator for KTX Thomson scattering diagnostic[J]. Journal of Instrumentation, 2023, 18, P04027",
+    "Wang YM., Xie QF., Tao RY., Zhang H., BO XK., Sun TT., Lun XC,. Chen L., Tan WQ., Design of the electron cyclotron emission diagnostic on EXL-50 spherical torus, Plasma Science and Technology, 28, (2024), 034008"
+  ],
+  "research_directions": [
+    "等离子体光学诊断技术,包括汤姆逊散射、激光光谱、干涉等",
+    "激光诱导击穿光谱研究",
+    "等离子体诊断的光学系统研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:01Z",
+  "status_reason": null,
+  "status_source_url": "https://eie.hebut.edu.cn/szdw/jsml/jsjzj/491c9f541a93485a97c75dcf26e2b790.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:01Z"
+}

@@ -1,0 +1,1330 @@
+{
+  "created_organization_ids": [
+    "org_auto_078e3e9e996adaae7b85",
+    "org_auto_12f19902efdf745198b9",
+    "org_auto_185147a202e072e7b4b4",
+    "org_auto_24126c83061cff704330",
+    "org_auto_2ffa9f6abb11dceeba92",
+    "org_auto_353a060e52a6086e9200",
+    "org_auto_38f7e51725154749ef01",
+    "org_auto_3b3d499f22bb254dc1af",
+    "org_auto_4bfc6b4b910942d7524e",
+    "org_auto_83bb92198975bbd9379a",
+    "org_auto_844d2183574ae1ad38b4",
+    "org_auto_8b411184cb944f33371b",
+    "org_auto_b39475a62a07e6f596cc",
+    "org_auto_e31641312427781e68fc",
+    "org_auto_e82fd0391895599c39a2",
+    "org_auto_f11f8fadca8ef273da92"
+  ],
+  "decided_at": "2026-08-22T08:49:50Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_00fc7c6e040db4d8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "通信工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_02391586126c99cb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "微电子所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_0f803894870d9385",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子科学技术系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_127037331d2bdbd7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_24126c83061cff704330"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_14671e0b647b17da",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_21ad984b441a7666",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_26edb49abeab38ab",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_30932b3446b5df66",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_44435b1955014c5c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_55dfa9dee623cb2d",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7aa63f8f99a7766e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_80a9de1d38d7eae0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_815970f66f53b8e1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子科学与技术系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_822f28c256c56e34",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_886f0eb81af0abe9",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "实验中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8d8a08bc8319f288",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "微纳所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9dff944ed71ca63a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "微电子技术与材料研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_aeccc0e9e5f3a98a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "先进激光技术研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bb1b1d86beedd57f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bd84084dc7d3e39b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c1dd5635fb965b66",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "微电子技术与材料研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c22179bff06a4a03",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_b39475a62a07e6f596cc"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_dee5f197113f301b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e2af347891ec9dc5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院光电系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f468e51aadbbe2b0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_f11f8fadca8ef273da92"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f66a90c7fbae0198",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hebut.edu.cn"
+          ],
+          "canonical_name": "河北工业大学",
+          "level": "university",
+          "official_url": "https://hebut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "微电子研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_126",
+  "invalid_rows": [],
+  "issue": {
+    "number": 126,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/126"
+  },
+  "manifest_sha256": "3c63a66ba84c8c29699cde138d85fdfd4d16db7ca134c41d511cb9a50bdc642c",
+  "mapped_proposal_ids": [
+    "proposal_issue_126_row_1",
+    "proposal_issue_126_row_10",
+    "proposal_issue_126_row_11",
+    "proposal_issue_126_row_12",
+    "proposal_issue_126_row_13",
+    "proposal_issue_126_row_14",
+    "proposal_issue_126_row_15",
+    "proposal_issue_126_row_16",
+    "proposal_issue_126_row_17",
+    "proposal_issue_126_row_18",
+    "proposal_issue_126_row_19",
+    "proposal_issue_126_row_2",
+    "proposal_issue_126_row_20",
+    "proposal_issue_126_row_21",
+    "proposal_issue_126_row_22",
+    "proposal_issue_126_row_23",
+    "proposal_issue_126_row_24",
+    "proposal_issue_126_row_25",
+    "proposal_issue_126_row_26",
+    "proposal_issue_126_row_27",
+    "proposal_issue_126_row_28",
+    "proposal_issue_126_row_29",
+    "proposal_issue_126_row_3",
+    "proposal_issue_126_row_30",
+    "proposal_issue_126_row_31",
+    "proposal_issue_126_row_32",
+    "proposal_issue_126_row_33",
+    "proposal_issue_126_row_34",
+    "proposal_issue_126_row_35",
+    "proposal_issue_126_row_36",
+    "proposal_issue_126_row_37",
+    "proposal_issue_126_row_38",
+    "proposal_issue_126_row_39",
+    "proposal_issue_126_row_4",
+    "proposal_issue_126_row_40",
+    "proposal_issue_126_row_41",
+    "proposal_issue_126_row_42",
+    "proposal_issue_126_row_43",
+    "proposal_issue_126_row_44",
+    "proposal_issue_126_row_45",
+    "proposal_issue_126_row_46",
+    "proposal_issue_126_row_47",
+    "proposal_issue_126_row_48",
+    "proposal_issue_126_row_49",
+    "proposal_issue_126_row_5",
+    "proposal_issue_126_row_50",
+    "proposal_issue_126_row_51",
+    "proposal_issue_126_row_52",
+    "proposal_issue_126_row_53",
+    "proposal_issue_126_row_54",
+    "proposal_issue_126_row_55",
+    "proposal_issue_126_row_56",
+    "proposal_issue_126_row_57",
+    "proposal_issue_126_row_58",
+    "proposal_issue_126_row_59",
+    "proposal_issue_126_row_6",
+    "proposal_issue_126_row_60",
+    "proposal_issue_126_row_61",
+    "proposal_issue_126_row_62",
+    "proposal_issue_126_row_63",
+    "proposal_issue_126_row_64",
+    "proposal_issue_126_row_65",
+    "proposal_issue_126_row_66",
+    "proposal_issue_126_row_67",
+    "proposal_issue_126_row_68",
+    "proposal_issue_126_row_69",
+    "proposal_issue_126_row_7",
+    "proposal_issue_126_row_70",
+    "proposal_issue_126_row_71",
+    "proposal_issue_126_row_72",
+    "proposal_issue_126_row_73",
+    "proposal_issue_126_row_74",
+    "proposal_issue_126_row_75",
+    "proposal_issue_126_row_76",
+    "proposal_issue_126_row_77",
+    "proposal_issue_126_row_78",
+    "proposal_issue_126_row_79",
+    "proposal_issue_126_row_8",
+    "proposal_issue_126_row_80",
+    "proposal_issue_126_row_81",
+    "proposal_issue_126_row_82",
+    "proposal_issue_126_row_83",
+    "proposal_issue_126_row_84",
+    "proposal_issue_126_row_85",
+    "proposal_issue_126_row_86",
+    "proposal_issue_126_row_87",
+    "proposal_issue_126_row_88",
+    "proposal_issue_126_row_89",
+    "proposal_issue_126_row_9",
+    "proposal_issue_126_row_90",
+    "proposal_issue_126_row_91"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "先进装备工程与技术研究院",
+      "official_url": null,
+      "organization_id": "org_auto_24126c83061cff704330",
+      "organization_type": "institute",
+      "parent_id": "org_auto_185147a202e072e7b4b4"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "信息工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_b39475a62a07e6f596cc",
+      "organization_type": "school",
+      "parent_id": "org_auto_185147a202e072e7b4b4"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "创新研究院",
+      "official_url": null,
+      "organization_id": "org_auto_f11f8fadca8ef273da92",
+      "organization_type": "institute",
+      "parent_id": "org_auto_185147a202e072e7b4b4"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 133,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379403364,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
