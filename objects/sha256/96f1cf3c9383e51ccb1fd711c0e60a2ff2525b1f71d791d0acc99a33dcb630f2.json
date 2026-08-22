@@ -1,0 +1,66 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_5491ab861715d07e77ac",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:50:19Z",
+          "organization_id": "org_auto_634d0a2b5aa0fe614e3a",
+          "school": "电子信息与光学工程学院",
+          "source_url": "https://eie.tyut.edu.cn/info/1071/2271.htm",
+          "status": "current",
+          "title": "讲师",
+          "university": "太原理工大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_5491ab861715d07e77ac",
+          "email": "zhaozhenzhen@tyut.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:50:19Z",
+          "source_url": "https://eie.tyut.edu.cn/info/1071/2271.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/144"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zhaozhenzhen@tyut.edu.cn",
+      "id": "mentor_88f5bcc1691928607134",
+      "last_verified_at": "2026-08-21T18:50:19Z",
+      "name": "赵珍珍",
+      "profile_url": "https://eie.tyut.edu.cn/info/1071/2271.htm",
+      "recent_papers": [
+        "Qingqing Zhang;Zhenzhen Zhao#; Junhao Zheng; Furong Li; Jiazhi Tang; Yi Huang; Xiaoming Chen ; Multifunctional Frequency Selective Absorber Enabling FR1 and FR2 5G OTA Tests in a Hybrid Reverberation Chamber, IEEE Transactions on Instrumentation and Measurement, 2023, 72",
+        "Zhenzhen Zhao; Xiaoming Chen*; Ahmed A. Kishk; Anxue Zhang*; 2.5D frequency selective surface with quasi-elliptical bandpass response[J], Microwave and Optical Technology Letters, 2021, 63(6): 1693–1698",
+        "Zhenzhen Zhao; Anxue Zhang*; Xiaoming Chen*; Gantao Peng; Jianxing Li; Hongyu Shi; Ahmed A. Kishk; Bandpass FSS With Zeros Adjustable Quasi-Elliptic Response[J], IEEE Antennas and Wireless Propagation Letters, 2019, 18(6):1184-1188.",
+        "Zhenzhen Zhao; Jianxing Li; Hongyu Shi; Xiaoming Chen*; Anxue Zhang*; A Low-Profile Angle-Insensitive Bandpass Frequency-Selective Surface Based on Vias[J], IEEE Microwave and Wireless Components Letters, 2018, 28(3): 200-202."
+      ],
+      "research_direction": "频率选择表面、超表面、人工电磁媒质器件、天线",
+      "school": "电子信息与光学工程学院",
+      "source_url": "https://eie.tyut.edu.cn/szdw/jsml.htm",
+      "status": "active",
+      "title": "讲师",
+      "university": "太原理工大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_634d0a2b5aa0fe614e3a",
+    "name": "电子信息与光学工程学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_59b6b93cbaf82a76af28",
+    "name": "太原理工大学"
+  }
+}

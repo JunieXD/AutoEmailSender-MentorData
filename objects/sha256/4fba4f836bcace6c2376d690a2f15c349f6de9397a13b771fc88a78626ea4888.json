@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_5d17998e46e9067b270d",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:51:25Z",
+          "organization_id": "org_auto_f589ef5dc1e37ffe76cd",
+          "school": "西交米兰学院",
+          "source_url": "https://jsdi.xjtu.edu.cn/info/1065/1371.htm",
+          "status": "current",
+          "title": "副教授",
+          "university": "西安交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_5d17998e46e9067b270d",
+          "email": "zhangyuzhao@mail.xjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:51:25Z",
+          "source_url": "https://jsdi.xjtu.edu.cn/info/1065/1371.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/158"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zhangyuzhao@mail.xjtu.edu.cn",
+      "id": "mentor_a3e0f6832e0ce4f36ab0",
+      "last_verified_at": "2026-08-21T18:51:25Z",
+      "name": "张钰曌",
+      "profile_url": "https://jsdi.xjtu.edu.cn/info/1065/1371.htm",
+      "recent_papers": [],
+      "research_direction": "教育建筑、建筑遗产保护",
+      "school": "西交米兰学院",
+      "source_url": "https://jsdi.xjtu.edu.cn/jsml2/jzx/zf/fjs/1.htm",
+      "status": "active",
+      "title": "副教授",
+      "university": "西安交通大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_f589ef5dc1e37ffe76cd",
+    "name": "西交米兰学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_6f9fc9dbda9c601ae082",
+    "name": "西安交通大学"
+  }
+}

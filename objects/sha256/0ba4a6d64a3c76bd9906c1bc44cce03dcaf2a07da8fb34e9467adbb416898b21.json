@@ -1,0 +1,67 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_a4ddb387dc2435d5cb2c",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:44:51Z",
+          "organization_id": "org_auto_c5b0b8491403b3b86348",
+          "school": "分子工程研究院",
+          "source_url": "https://chem.fzu.edu.cn/info/1391/14123.htm",
+          "status": "current",
+          "title": "讲师",
+          "university": "福州大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_a4ddb387dc2435d5cb2c",
+          "email": "huanghan@fzu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:44:51Z",
+          "source_url": "https://chem.fzu.edu.cn/info/1391/14123.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/112"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "huanghan@fzu.edu.cn",
+      "id": "mentor_0a489329c8023e70c750",
+      "last_verified_at": "2026-08-21T18:44:51Z",
+      "name": "黄涵",
+      "profile_url": "https://chem.fzu.edu.cn/info/1391/14123.htm",
+      "recent_papers": [
+        "Han Huang, Ruiyang Zhao, Yunfei Li, Ying Ji,et al.Multicolor Organic Single-Crystal Microcavity Light Emitting Diodes With High Color-Purity and High Brightness,Adv. Mater.2025, 2418278.",
+        "Han Huang, Qian Zheng, Boyang Yu, et al.Shape-Dependent Optical Waveguides and Low-Threshold Lasers from Polymorphic Two-Dimensional Organic Single Crystals,J. Phys. Chem. Lett.2024, 15, 4890−4897.",
+        "Han Huang, Liuqing Yang, Jingping He, et al,Two-Dimensional Organic Crystals Enabling Anisotropic Photon Transport and Dual-Color Orthogonally Polarized Laser,Adv. Opt.Mater.2023, 2202797.",
+        "Han Huang, Zhenyi Yu,* Dandan Zhou, et al.,Wavelength-Turnable Organic Microring Laser Arrays from Thermally Activated Delayed Fluorescent Emitters,ACS Photon.2019,6, 3208−3214.",
+        "Yunfei Li, Yichi Zhang, Ruiyang Zhao,Han Huang*,et al.Highly Conductive and Strongly Emissive Organic Semiconductor Single Crystals for Low-Threshold Lasers and Bright Light-Emitting Transistors,Adv. Opt.Mater.2025, 2500270."
+      ],
+      "research_direction": "1.有机小分子半导体合成、组装与应用 2.有机半导体晶体与纳米光子学 有机发光二极管与有机发光晶体管",
+      "school": "分子工程研究院",
+      "source_url": "https://chem.fzu.edu.cn/szdw/kytd.htm",
+      "status": "active",
+      "title": "讲师",
+      "university": "福州大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_c5b0b8491403b3b86348",
+    "name": "分子工程研究院",
+    "type": "institute"
+  },
+  "university": {
+    "id": "org_auto_7a769986594f71fd63d9",
+    "name": "福州大学"
+  }
+}

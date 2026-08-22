@@ -1,0 +1,67 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_6e443f6a4549a519cb2c",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:49:41Z",
+          "organization_id": "org_auto_36f51ab7686342c101e2",
+          "school": "上海电影学院",
+          "source_url": "https://scie-ie.shu.edu.cn/info/1078/1172.htm",
+          "status": "current",
+          "title": "副教授",
+          "university": "上海大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_6e443f6a4549a519cb2c",
+          "email": "hanzhou@shu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:49:41Z",
+          "source_url": "https://scie-ie.shu.edu.cn/info/1078/1172.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/139"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "hanzhou@shu.edu.cn",
+      "id": "mentor_b31023d25490219f2271",
+      "last_verified_at": "2026-08-21T18:49:41Z",
+      "name": "吴汉舟",
+      "profile_url": "https://scie-ie.shu.edu.cn/info/1078/1172.htm",
+      "recent_papers": [
+        "G. Zhao, H. Wu*, X. Zhang, A. Vasilakos. ShadowCoT: Cognitive hijacking for stealthy reasoning backdoors in LLMs. IEEE Transactions on Information Forensics and Security, online available, 2026.(CCF A)",
+        "H. Zhang, Z. Zhao, H. Wu* Z. Xia, A. Vasilakos. Rotation, scale, and translation resilient black-box fingerprinting for intellectual property protection of EaaS models. IEEE Transactions on Dependable and Secure Computing, online available, 2026. (CCF A)",
+        "Y. Qin,H. Wu*. Learning anchor in dual orthogonal space for fast multi-view clustering.IEEE/CVF Conference on Computer Vision and Pattern Recognition, to appear, highlight paper, 2026.(CCF A)",
+        "Y. Liu,H. Wu*, X. Zhang. Robust and imperceptible black-box DNN watermarking based on Fourier perturbation analysis and frequency sensitivity clustering.IEEE Transactions on Dependable and Secure Computing, vol. 21, no. 6, pp. 5766-5780, 2024.(CCF A)",
+        "T. Yang,H. Wu*, B. Yi, G. Feng, X. Zhang. Semantic-preserving linguistic steganography by pivot translation and semantic-aware bins coding.IEEE Transactions on Dependable and Secure Computing, vol. 21, no. 1, pp. 139-152, 2024.(CCF A)"
+      ],
+      "research_direction": "大模型安全、人工智能安全、多媒体安全、多媒体取证、多媒体信号处理等",
+      "school": "上海电影学院",
+      "source_url": "https://scie.shu.edu.cn/szdw/sdml.htm",
+      "status": "active",
+      "title": "副教授",
+      "university": "上海大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_36f51ab7686342c101e2",
+    "name": "上海电影学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_f6fb8183d78ed957c5d9",
+    "name": "上海大学"
+  }
+}

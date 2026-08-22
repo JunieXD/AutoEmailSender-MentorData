@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_e0526ea7e37699854a43",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:01Z",
+          "organization_id": "org_auto_b39475a62a07e6f596cc",
+          "school": "信息工程学院",
+          "source_url": "https://eie.hebut.edu.cn/szdw/jsml/js/52497.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "河北工业大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_e0526ea7e37699854a43",
+          "email": "qmzh@hebut.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:01Z",
+          "source_url": "https://eie.hebut.edu.cn/szdw/jsml/js/52497.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/126"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "qmzh@hebut.edu.cn",
+      "id": "mentor_1b166e0e35d5f1085c66",
+      "last_verified_at": "2026-08-21T18:48:01Z",
+      "name": "赵全明",
+      "profile_url": "https://eie.hebut.edu.cn/szdw/jsml/js/52497.htm",
+      "recent_papers": [],
+      "research_direction": "微波电路设计、智能信息检测",
+      "school": "信息工程学院",
+      "source_url": "https://eie.hebut.edu.cn/szdw/jsml/js/index1.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "河北工业大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_b39475a62a07e6f596cc",
+    "name": "信息工程学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_185147a202e072e7b4b4",
+    "name": "河北工业大学"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_b5236bda643d1aa2e59b",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:43:52Z",
+          "organization_id": "org_auto_1edbfc1c707fc30897ec",
+          "school": "计算机学院",
+          "source_url": "https://cst.bjut.edu.cn/info/1616/1437.htm",
+          "status": "current",
+          "title": "副教授",
+          "university": "北京工业大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_b5236bda643d1aa2e59b",
+          "email": "zhanjing@bjut.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:43:52Z",
+          "source_url": "https://cst.bjut.edu.cn/info/1616/1437.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/105"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zhanjing@bjut.edu.cn",
+      "id": "mentor_11b001e85dd26b8e1557",
+      "last_verified_at": "2026-08-21T18:43:52Z",
+      "name": "詹静",
+      "profile_url": "https://cst.bjut.edu.cn/info/1616/1437.htm",
+      "recent_papers": [
+        "zk-DCIAExchange: SGX protected fair exchange with distributed zero knowledge proof for data confidentiality and authentication,The Computer Journal, 2025",
+        "代码复用攻防技术演化综述,北京工业大学学报,2024",
+        "VNGuarder: An Internal Threat Detection Approach for Virtual Network in Cloud Computing Environment, Security and Commination Networks, 2022",
+        "NSGA-II-Based Granularity-Adaptive Control-Flow Attestation, Security and Commination Networks, 2021",
+        "CIADL Cloud Insider Attack Detector and Locator on Multi-tenant Network Isolation - An OpenStack Case Study, Journal of Ambient Intelligence and Humanized Computing, 2020",
+        "SEMBeF 一种基于分片循环神经网络的敏感高效的恶意代码行为检测框架,信息安全学报,2019",
+        "TPTVer: A Trusted Third Party Based Trusted Verifier for Multi-Layered Outsourced Big Data System in Cloud Environment, China Communications, 2018",
+        "云安全基础设施构建——从解决方案的视角看云安全,机械工业出版社,2017"
+      ],
+      "research_direction": "信息安全,可信计算,云计算、工业互联网及区块链安全。",
+      "school": "计算机学院",
+      "source_url": "https://cst.bjut.edu.cn/szdw/dsdw.htm",
+      "status": "active",
+      "title": "副教授",
+      "university": "北京工业大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_66941098dc6f2bfc14a3",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:43:46Z",
+          "organization_id": "org_auto_1edbfc1c707fc30897ec",
+          "school": "计算机学院",
+          "source_url": "https://biai.bjut.edu.cn/info/1065/1132.htm",
+          "status": "current",
+          "title": "副教授",
+          "university": "北京工业大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_66941098dc6f2bfc14a3",
+          "email": "zhangxiaodan@bjut.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:43:46Z",
+          "source_url": "https://biai.bjut.edu.cn/info/1065/1132.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/104"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zhangxiaodan@bjut.edu.cn",
+      "id": "mentor_51a05a0f0ae6d2e2c7a2",
+      "last_verified_at": "2026-08-21T18:43:46Z",
+      "name": "张晓丹",
+      "profile_url": "https://biai.bjut.edu.cn/info/1065/1132.htm",
+      "recent_papers": [
+        "Intra- and Inter-Head Orthogonal Attention for Image Captioning",
+        "MEPNet: Medical Entity-balanced Prompting Network for Brain CT Report Generation",
+        "See Detail Say Clear: Towards Brain CT Report Generation via Pathological Clue-driven Representation Learning",
+        "Co-occurrence Relationship Driven Hierarchical Attention Network for Brain CT Report Generation",
+        "Weakly Guided Attention Model with Hierarchical Interaction for Brain CT Report Generation",
+        "Granularity Matters: Pathological Graph-driven Cross-modal Alignment for Brain CT Report Generation",
+        "Divergent-convergent Attention for Image Captioning",
+        "Spatio-temporal Memory Attention for Image Captioning"
+      ],
+      "research_direction": "计算机视觉、自然语言处理、多模态大模型等",
+      "school": "计算机学院",
+      "source_url": "https://biai.bjut.edu.cn/szdw/jsdw.htm",
+      "status": "active",
+      "title": "副教授",
+      "university": "北京工业大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_1edbfc1c707fc30897ec",
+    "name": "计算机学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_0d8f76811a454b3d2f88",
+    "name": "北京工业大学"
+  }
+}

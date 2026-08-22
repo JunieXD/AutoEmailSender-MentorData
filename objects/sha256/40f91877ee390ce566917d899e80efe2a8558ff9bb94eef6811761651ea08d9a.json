@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_0945b223d1acf3b0739c",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:51:25Z",
+          "organization_id": "org_auto_910a2026c5ee2c98a462",
+          "school": "人文社会科学学院",
+          "source_url": "https://jsdi.xjtu.edu.cn/info/1057/1986.htm",
+          "status": "current",
+          "title": "讲师",
+          "university": "西安交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_0945b223d1acf3b0739c",
+          "email": "minimomoer@xjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:51:25Z",
+          "source_url": "https://jsdi.xjtu.edu.cn/info/1057/1986.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/158"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "minimomoer@xjtu.edu.cn",
+      "id": "mentor_7f9a1c1021890c26e89e",
+      "last_verified_at": "2026-08-21T18:51:25Z",
+      "name": "董琪",
+      "profile_url": "https://jsdi.xjtu.edu.cn/info/1057/1986.htm",
+      "recent_papers": [],
+      "research_direction": "视觉传达设计理论及实践,视觉设计与地方文化关系研究",
+      "school": "人文社会科学学院",
+      "source_url": "https://jsdi.xjtu.edu.cn/jsml2/gysj/zf/js1.htm",
+      "status": "active",
+      "title": "讲师",
+      "university": "西安交通大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_910a2026c5ee2c98a462",
+    "name": "人文社会科学学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_6f9fc9dbda9c601ae082",
+    "name": "西安交通大学"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_0a7cd1ae3d931202b66e",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:07Z",
+          "organization_id": "org_auto_3f870ea95b81e8a701d2",
+          "school": "电气与信息工程学院",
+          "source_url": "http://robotics.hnu.edu.cn/info/1176/3131.htm",
+          "status": "current",
+          "title": "助理教授",
+          "university": "湖南大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_0a7cd1ae3d931202b66e",
+          "email": "xiangc@hnu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:07Z",
+          "source_url": "http://robotics.hnu.edu.cn/info/1176/3131.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/127"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xiangc@hnu.edu.cn",
+      "id": "mentor_13a593d448831cfcdcc0",
+      "last_verified_at": "2026-08-21T18:48:07Z",
+      "name": "陈祥",
+      "profile_url": "http://robotics.hnu.edu.cn/info/1176/3131.htm",
+      "recent_papers": [
+        "Shape registration with learned deformations for 3D shape reconstruction from sparse and incomplete point clouds",
+        "Automatic 3D+t Four-Chamber CMR Quantification of the UK Biobank:integrating imaging and non-imaging data priors at scale",
+        "A Deep Discontinuity-Preserving Image Registration Network",
+        "Spatially covariant image registration with text prompts",
+        "Deep Learning in Cardiac Magnetic Resonance Image Analysis and Cardiovascular Disease Diagnosis",
+        "Deep learning in medical image registration",
+        "Joint shape/texture representation learning for cardiovascular disease diagnosis from MRI",
+        "Cross-Modal Attention Fusion Based Generative Adversarial Network for Text-to-Image Synthesis"
+      ],
+      "research_direction": "计算机视觉,医学图像分析,大模型,具身智能,三维表面重建,医学图像配准,多模态大模型,具身智能手术机器人",
+      "school": "电气与信息工程学院",
+      "source_url": "http://robotics.hnu.edu.cn/szdw/jsjj2.htm",
+      "status": "active",
+      "title": "助理教授",
+      "university": "湖南大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_4f1cea5dbd5fe0c59040",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:07Z",
+          "organization_id": "org_auto_3f870ea95b81e8a701d2",
+          "school": "电气与信息工程学院",
+          "source_url": "http://robotics.hnu.edu.cn/info/1176/3293.htm",
+          "status": "current",
+          "title": "副教授",
+          "university": "湖南大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_4f1cea5dbd5fe0c59040",
+          "email": "zhongfuqiang@hnu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:07Z",
+          "source_url": "http://robotics.hnu.edu.cn/info/1176/3293.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/127"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zhongfuqiang@hnu.edu.cn",
+      "id": "mentor_cac3e01e6aec7be182ad",
+      "last_verified_at": "2026-08-21T18:48:07Z",
+      "name": "钟富强",
+      "profile_url": "http://robotics.hnu.edu.cn/info/1176/3293.htm",
+      "recent_papers": [
+        "Vibration compensation of the laser scanners for rail inspection based on a dynamic wheel-rail contact coordinate system projection. Measurement, 2026.",
+        "Viewpoint Planning for Active 3-D Reconstruction of Freeform Surface Parts Based on DDPG-3DCNN. IEEE/ASME Transactions on Mechatronics.",
+        "Background-Adaptive Neural Networks for Surface Mount Device Defect Segmentation by Comparing with Positive Samples. EEE Transactions on Consumer Electronics, 2025.",
+        "An apparatus and method for on-site extrinsic calibration of the laser scanner relative to IMU used in a rail inspection vehicle. Measurement, 2025.",
+        "Multi-thread two-dimensional digital image correlation for full-field displacement and rotation angle measurement. Optical Engineering, 2024, 63(2): 024105-024105.",
+        "A high-accuracy and high-efficiency digital volume correlation method to characterize in-vivo optic nerve head biomechanics from optical coherence tomography. Acta Biomaterialia2022.(IF10.6,TOP期刊)",
+        "RGB laser speckles based 3D profilometry. Applied Physics Letters114.20 (2019): 201104.(TOP期刊)",
+        "3D digital image correlation using a single 3CCD colour camera and dichroic filter. Measurement Science and Technology, 2018, 29(4): 045401.(2018年年度亮点文章)"
+      ],
+      "research_direction": "三维视觉传感器开发、机器人三维视觉测量系统研制、嵌入式系统开发、机器人视觉测量、三维重建、色亮度检测仪器开发",
+      "school": "电气与信息工程学院",
+      "source_url": "http://robotics.hnu.edu.cn/szdw/jsjj2.htm",
+      "status": "active",
+      "title": "副教授",
+      "university": "湖南大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_3f870ea95b81e8a701d2",
+    "name": "电气与信息工程学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_6f61b883b7e493270de3",
+    "name": "湖南大学"
+  }
+}

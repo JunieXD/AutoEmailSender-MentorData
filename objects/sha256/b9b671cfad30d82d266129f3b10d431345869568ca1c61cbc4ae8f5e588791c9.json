@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_fab8f3a1a7fe7035c9fd",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:43:58Z",
+          "organization_id": "org_auto_e1dbfd30cb9f35b320c3",
+          "school": "船舶与海洋工程学院",
+          "source_url": "https://ai.dlmu.edu.cn/info/1701/2001.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "大连海事大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_fab8f3a1a7fe7035c9fd",
+          "email": "liangxiao@dlmu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:43:58Z",
+          "source_url": "https://ai.dlmu.edu.cn/info/1701/2001.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/106"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "liangxiao@dlmu.edu.cn",
+      "id": "mentor_2641ecea57f32c5f5149",
+      "last_verified_at": "2026-08-21T18:43:58Z",
+      "name": "梁霄",
+      "profile_url": "https://ai.dlmu.edu.cn/info/1701/2001.htm",
+      "recent_papers": [
+        "Xiao Liang*, Xingru Qu, Ning Wang, Rubo Zhang, Ye Li. Three-Dimensional Trajectory Tracking of an Underactuated AUV based on Fuzzy Dynamic Surface Control. IET Intelligent Transport Systems. 2020,14(5): 364~370.",
+        "Xiao Liang*, Xingru Qu, Yuanhang Hou, Ye Li, Rubo Zhang. Finite-Time Unknown Observer Based Coordinated Path-Following Control of Unmanned Underwater Vehicles. Journal of the Franklin Institute. 2021, 358(5): 2703-2721.",
+        "Xiao Liang*, Xingru Qu, Ning Wang, Ye Li. Swarm velocity guidance based distributed finite-time coordinated path-following for uncertain under-actuated autonomous surface vehicles. ISA transactions, 2021, 112: 271-280.",
+        "Xiao Liang*, Zhenpeng Dong, Yuanhang Hou, Xuyang Mu. Energy-saving optimization for spacing configurations of a pair of self-propelled AUV based on hull form uncertainty design. Ocean Engineering, 2020, 218: 1~13.",
+        "Xiao Liang*, Xingru Qu, Yuanhang Hou, Ye Li, Rubo Zhang. Distributed coordinated tracking control of multiple unmanned surface vehicles under complex marine environments. Ocean Engineering, 2020, 205: 1~9.",
+        "Xiao Liang*, Xingru Qu, Ning Wang, Ye Li, Rubo Zhang. Swarm control with collision avoidance for multiple underactuated surface vehicles. Ocean Engineering, 2019, 191: 1~10.",
+        "Xiao Liang*, Xingru Qu, Ning Wang, Ye Li, Rubo Zhang. A Novel Distributed and Self-Organized Swarm Control Framework for Underactuated Unmanned Marine Vehicles. IEEE Access. 2019, 7: 112703~112712.",
+        "Xiao Liang*, Xingru Qu, Lei Wan, Qiang Ma. Three-dimensional Path Following of an Underactuated AUV Based on Fuzzy Backstepping Sliding Mode Control. International Journal of Fuzzy Systems. 2018, 20(2): 640-649."
+      ],
+      "research_direction": "海上无人系统技术、智能船舶与海底工程",
+      "school": "船舶与海洋工程学院",
+      "source_url": "https://ai.dlmu.edu.cn/szdw1/spjs.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "大连海事大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_e1dbfd30cb9f35b320c3",
+    "name": "船舶与海洋工程学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_925feb5b6f3f1d49da02",
+    "name": "大连海事大学"
+  }
+}

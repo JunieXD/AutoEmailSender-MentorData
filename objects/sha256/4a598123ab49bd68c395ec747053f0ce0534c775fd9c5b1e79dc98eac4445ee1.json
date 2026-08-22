@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_6ef70ab9d36abe287850",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:51:25Z",
+          "organization_id": "org_auto_d5089d691453b36e60ea",
+          "school": "物理学院",
+          "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1308.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "西安交通大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_6ef70ab9d36abe287850",
+          "email": "zhe.wang@xjtu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:51:25Z",
+          "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1308.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/158"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "zhe.wang@xjtu.edu.cn",
+      "id": "mentor_2a3146502f3d3093e627",
+      "last_verified_at": "2026-08-21T18:51:25Z",
+      "name": "王喆",
+      "profile_url": "https://jsdi.xjtu.edu.cn/info/1055/1308.htm",
+      "recent_papers": [],
+      "research_direction": "低维量子材料与器件、低维系统中的量子输运特性、二维磁性、超导、自旋电子器件、二维材料及异质结",
+      "school": "物理学院",
+      "source_url": "https://jsdi.xjtu.edu.cn/jsml2/gysj/zf/js.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "西安交通大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_d5089d691453b36e60ea",
+    "name": "物理学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_6f9fc9dbda9c601ae082",
+    "name": "西安交通大学"
+  }
+}

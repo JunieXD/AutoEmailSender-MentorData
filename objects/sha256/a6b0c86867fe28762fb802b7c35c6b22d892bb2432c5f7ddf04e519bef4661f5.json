@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_c2d71e88342da57f7f3a",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:47:56Z",
+          "organization_id": "org_auto_51c6c958be8caffd12d4",
+          "school": "数学科学学院",
+          "source_url": "http://faculty.hrbeu.edu.cn/wangye12",
+          "status": "current",
+          "title": "教授",
+          "university": "哈尔滨工程大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_c2d71e88342da57f7f3a",
+          "email": "ywang@hrbeu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:47:56Z",
+          "source_url": "http://faculty.hrbeu.edu.cn/wangye12"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/124"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "ywang@hrbeu.edu.cn",
+      "id": "mentor_b6e9153090160b7e1065",
+      "last_verified_at": "2026-08-21T18:47:56Z",
+      "name": "王烨",
+      "profile_url": "http://faculty.hrbeu.edu.cn/wangye12",
+      "recent_papers": [],
+      "research_direction": "组合数学与图论,研究内容主要包括图的Ramsey理论及相关极值图论问题,涉及代数构造、概率方法、Szemeredi正则引理等",
+      "school": "数学科学学院",
+      "source_url": "http://cisse.hrbeu.edu.cn/szdw/ssds.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "哈尔滨工程大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_51c6c958be8caffd12d4",
+    "name": "数学科学学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_da7b83d222a24d14c2d7",
+    "name": "哈尔滨工程大学"
+  }
+}
