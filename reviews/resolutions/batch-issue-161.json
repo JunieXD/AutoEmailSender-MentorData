@@ -1,0 +1,292 @@
+{
+  "created_organization_ids": [
+    "org_auto_02480c8517057fc771f3",
+    "org_auto_7956f1cd6d5a29f24b4a",
+    "org_auto_8bdcb8d90dc1f423e6af",
+    "org_auto_b700e73f612f49130b85",
+    "org_auto_d53f1d81c99837a8a681"
+  ],
+  "decided_at": "2026-08-22T08:50:21Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_15691a431ed93423",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xju.edu.cn"
+          ],
+          "canonical_name": "新疆大学",
+          "level": "university",
+          "official_url": "https://xju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_750bd9046cf85e1b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xju.edu.cn"
+          ],
+          "canonical_name": "新疆大学",
+          "level": "university",
+          "official_url": "https://xju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7e58f45f55e63c7a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xju.edu.cn"
+          ],
+          "canonical_name": "新疆大学",
+          "level": "university",
+          "official_url": "https://xju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_b700e73f612f49130b85"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bcc423e86a746e5c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xju.edu.cn"
+          ],
+          "canonical_name": "新疆大学",
+          "level": "university",
+          "official_url": "https://xju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院自动化系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c11767ce7b2e4b8d",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "xju.edu.cn"
+          ],
+          "canonical_name": "新疆大学",
+          "level": "university",
+          "official_url": "https://xju.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "自动化教研室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_161",
+  "invalid_rows": [],
+  "issue": {
+    "number": 161,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/161"
+  },
+  "manifest_sha256": "d905f92bd7ea094ca7224c84bc11036d041ea55bac942c7cccc68a7f4f71103c",
+  "mapped_proposal_ids": [
+    "proposal_issue_161_row_1",
+    "proposal_issue_161_row_10",
+    "proposal_issue_161_row_11",
+    "proposal_issue_161_row_12",
+    "proposal_issue_161_row_13",
+    "proposal_issue_161_row_14",
+    "proposal_issue_161_row_15",
+    "proposal_issue_161_row_16",
+    "proposal_issue_161_row_17",
+    "proposal_issue_161_row_18",
+    "proposal_issue_161_row_19",
+    "proposal_issue_161_row_2",
+    "proposal_issue_161_row_20",
+    "proposal_issue_161_row_21",
+    "proposal_issue_161_row_22",
+    "proposal_issue_161_row_23",
+    "proposal_issue_161_row_24",
+    "proposal_issue_161_row_25",
+    "proposal_issue_161_row_3",
+    "proposal_issue_161_row_4",
+    "proposal_issue_161_row_5",
+    "proposal_issue_161_row_6",
+    "proposal_issue_161_row_7",
+    "proposal_issue_161_row_8",
+    "proposal_issue_161_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "电气工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_b700e73f612f49130b85",
+      "organization_type": "school",
+      "parent_id": "org_auto_7956f1cd6d5a29f24b4a"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 171,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379405150,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
