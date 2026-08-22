@@ -3,7 +3,7 @@
     "email": "371052213@qq.com",
     "mentor_status": "active",
     "name": "孙晗",
-    "organization_id": null,
+    "organization_id": "org_auto_737dc806e9f0c3fa1e5d",
     "profile_url": "https://scs.tju.edu.cn/jzgxq_detail.jsp?urltype=tree.TreeTempUrl&wbtreeid=1191&name=%E5%AD%99%E6%99%97&title=%E5%89%AF%E6%95%99%E6%8E%88&dept=%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA%E7%B3%BB",
     "recent_papers": [],
     "research_directions": [
@@ -15,31 +15,46 @@
     "submitted_university": "天津大学",
     "title": "副教授"
   },
-  "auto_eligible": false,
   "contributor": {
     "account_age_days_at_submission": 1530,
     "account_created_at": "2022-06-13T08:30:46Z",
     "github_login_at_submission": "JunieXD",
     "github_user_id": 107397009,
     "github_user_type": "User",
+    "issue_number": 155,
+    "issue_url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/155",
     "submitted_at": "2026-08-21T18:51:15Z"
   },
-  "created_at": "2026-08-21T18:51:48Z",
-  "id": "proposal_issue_155_row_14",
-  "issue": {
-    "batch_row": 14,
-    "number": 155,
-    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/155"
-  },
-  "kind": "mentor_contribution",
-  "match_status": "conflict",
-  "review_reasons": [
-    "unknown_school",
-    "email_organization_conflict",
-    "identity_requires_manual_review",
-    "auto_merge_disabled"
+  "evidence": [
+    {
+      "fields": [
+        "name",
+        "email",
+        "organization_id",
+        "title",
+        "research_directions",
+        "profile_url"
+      ],
+      "observed_at": "2026-08-21T18:51:15Z",
+      "source_url": "https://scs.tju.edu.cn/jzgxq_detail.jsp?urltype=tree.TreeTempUrl&wbtreeid=1191&name=%E5%AD%99%E6%99%97&title=%E5%89%AF%E6%95%99%E6%8E%88&dept=%E8%BD%AF%E4%BB%B6%E7%90%86%E8%AE%BA%E7%B3%BB"
+    }
   ],
+  "id": "claim_4a41e3e5bd43c5a82adf",
+  "mentor_id": "mentor_3e6cf7704f190a11d91a",
+  "moderation": {
+    "decision_at": "2026-08-22T09:15:07Z",
+    "mode": "manual",
+    "moderator_github_user_id": 107397009,
+    "normalized_fields": [
+      "organization_id"
+    ],
+    "policy_version": 1,
+    "reason": "GitHub PR merge approval"
+  },
+  "revocation_reason": null,
+  "revoked_at": null,
   "schema_version": 1,
+  "status": "accepted",
   "submitted": {
     "email": "371052213@qq.com",
     "mentor_status": "active",
@@ -55,6 +70,5 @@
     "submitted_school": "智能与计算学部-软件学院",
     "submitted_university": "天津大学",
     "title": "副教授"
-  },
-  "target_mentor_id": "mentor_3e6cf7704f190a11d91a"
+  }
 }
