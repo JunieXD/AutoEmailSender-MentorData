@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_92e3b7c5a0024fe87820"
+      ],
+      "ended_at": null,
+      "id": "aff_4b2e407ec1a782ff6b7c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:37:10Z",
+      "organization_id": "org_auto_6788fd02f7f60a3bd1a2",
+      "source_url": "https://irch.pku.edu.cn/jszy/binwang/faculty.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_92e3b7c5a0024fe87820"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4b2e407ec1a782ff6b7c",
+      "claim_ids": [
+        "claim_92e3b7c5a0024fe87820"
+      ],
+      "is_primary": true,
+      "normalized_value": "binwang@pku.edu.cn",
+      "observed_at": "2026-08-21T18:37:10Z",
+      "source_url": "https://irch.pku.edu.cn/jszy/binwang/faculty.htm",
+      "status": "current",
+      "type": "email",
+      "value": "binwang@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:37:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_92e3b7c5a0024fe87820"
+    ],
+    "email": [
+      "claim_92e3b7c5a0024fe87820"
+    ],
+    "name": [
+      "claim_92e3b7c5a0024fe87820"
+    ],
+    "profile_url": [
+      "claim_92e3b7c5a0024fe87820"
+    ],
+    "recent_papers": [
+      "claim_92e3b7c5a0024fe87820"
+    ],
+    "research_directions": [
+      "claim_92e3b7c5a0024fe87820"
+    ],
+    "status": [
+      "claim_92e3b7c5a0024fe87820"
+    ],
+    "title": [
+      "claim_92e3b7c5a0024fe87820"
+    ]
+  },
+  "id": "mentor_d35d2dff1b0e5e9f3bc0",
+  "last_verified_at": "2026-08-21T18:37:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_92e3b7c5a0024fe87820"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4b2e407ec1a782ff6b7c",
+      "claim_ids": [
+        "claim_92e3b7c5a0024fe87820"
+      ],
+      "observed_at": "2026-08-21T18:37:10Z",
+      "status": "current",
+      "url": "https://irch.pku.edu.cn/jszy/binwang/faculty.htm"
+    }
+  ],
+  "recent_papers": [
+    "ExposomeX: Development of an Integrative Exposomic Platform to Expedite Discovery of the “Exposure−Biology−Disease” Nexus",
+    "Small-Sample Learning for Next-Generation Human Health Risk Assessment: Harnessing AI, Exposome Data, and Systems Biology",
+    "Using Machine Learning to Construct the Blood−Follicle Distribution Models of Various Trace Elements and Explore the Transport-Related Pathways with Multiomics Data",
+    "HExpPredict: In Vivo Exposure Prediction of Human Blood Exposome using A Random Forest Model and Its Application in Chemical Risk Prioritization",
+    "First evidence on the adverse effect of maternal germanium exposure on fetal neural tube defects",
+    "Using Machine Learning to Expedite the Screening of Environmental Factors Associated with the Risk of Spontaneous Preterm Birth: From Exposure Mixtures to Key Molecular Events",
+    "Exposome in human health: Utopia or wonderland?",
+    "Does low maternal exposure to per- and polyfluoroalkyl substances elevate the risk of spontaneous preterm birth? A nested case-control study in China"
+  ],
+  "research_directions": [
+    "环境健康、暴露组学、生物信息与人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:37:10Z",
+  "status_reason": null,
+  "status_source_url": "https://irch.pku.edu.cn/jszy/binwang/faculty.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:37:10Z"
+}
