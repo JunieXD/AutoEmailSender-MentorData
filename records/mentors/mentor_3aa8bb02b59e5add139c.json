@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7f1aa825d08dff89890"
+      ],
+      "ended_at": null,
+      "id": "aff_23e2ec45e9d429ef0aa5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1174/4417.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7f1aa825d08dff89890"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_23e2ec45e9d429ef0aa5",
+      "claim_ids": [
+        "claim_d7f1aa825d08dff89890"
+      ],
+      "is_primary": true,
+      "normalized_value": "fyang@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1174/4417.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fyang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7f1aa825d08dff89890"
+    ],
+    "email": [
+      "claim_d7f1aa825d08dff89890"
+    ],
+    "name": [
+      "claim_d7f1aa825d08dff89890"
+    ],
+    "profile_url": [
+      "claim_d7f1aa825d08dff89890"
+    ],
+    "research_directions": [
+      "claim_d7f1aa825d08dff89890"
+    ],
+    "status": [
+      "claim_d7f1aa825d08dff89890"
+    ],
+    "title": [
+      "claim_d7f1aa825d08dff89890"
+    ]
+  },
+  "id": "mentor_3aa8bb02b59e5add139c",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7f1aa825d08dff89890"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_23e2ec45e9d429ef0aa5",
+      "claim_ids": [
+        "claim_d7f1aa825d08dff89890"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1174/4417.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "嵌入式系统、嵌入式人工智能及其在自动驾驶和工业/农业领域的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1174/4417.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

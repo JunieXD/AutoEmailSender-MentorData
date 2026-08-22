@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a83bb8f636901d998a9f"
+      ],
+      "ended_at": null,
+      "id": "aff_afc55ce6e306e1fe5726",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/7477.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_a83bb8f636901d998a9f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_afc55ce6e306e1fe5726",
+      "claim_ids": [
+        "claim_a83bb8f636901d998a9f"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjt@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/7477.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjt@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a83bb8f636901d998a9f"
+    ],
+    "email": [
+      "claim_a83bb8f636901d998a9f"
+    ],
+    "name": [
+      "claim_a83bb8f636901d998a9f"
+    ],
+    "profile_url": [
+      "claim_a83bb8f636901d998a9f"
+    ],
+    "research_directions": [
+      "claim_a83bb8f636901d998a9f"
+    ],
+    "status": [
+      "claim_a83bb8f636901d998a9f"
+    ],
+    "title": [
+      "claim_a83bb8f636901d998a9f"
+    ]
+  },
+  "id": "mentor_6b61d1a905bc3ba2e379",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a83bb8f636901d998a9f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张静婷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_afc55ce6e306e1fe5726",
+      "claim_ids": [
+        "claim_a83bb8f636901d998a9f"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1175/7477.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "复杂人机动态系统学习与控制、康复脑机接口与交互技术、运动-认知多模人机交互、非线性动态系统机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1175/7477.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

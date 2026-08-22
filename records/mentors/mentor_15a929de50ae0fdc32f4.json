@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c56945934c84cb63fe4e"
+      ],
+      "ended_at": null,
+      "id": "aff_71c017ff6a92e3355e32",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1168/7545.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c56945934c84cb63fe4e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_71c017ff6a92e3355e32",
+      "claim_ids": [
+        "claim_c56945934c84cb63fe4e"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunyinghao@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1168/7545.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sunyinghao@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c56945934c84cb63fe4e"
+    ],
+    "email": [
+      "claim_c56945934c84cb63fe4e"
+    ],
+    "name": [
+      "claim_c56945934c84cb63fe4e"
+    ],
+    "profile_url": [
+      "claim_c56945934c84cb63fe4e"
+    ],
+    "research_directions": [
+      "claim_c56945934c84cb63fe4e"
+    ],
+    "status": [
+      "claim_c56945934c84cb63fe4e"
+    ],
+    "title": [
+      "claim_c56945934c84cb63fe4e"
+    ]
+  },
+  "id": "mentor_15a929de50ae0fdc32f4",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c56945934c84cb63fe4e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙颖豪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_71c017ff6a92e3355e32",
+      "claim_ids": [
+        "claim_c56945934c84cb63fe4e"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1168/7545.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多目标检测与跟踪、多传感器融合、雷达信号处理等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1168/7545.htm",
+  "title": "助理研究员",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

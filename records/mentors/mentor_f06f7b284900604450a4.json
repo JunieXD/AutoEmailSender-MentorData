@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_13c654e6d77071a09b0e"
+      ],
+      "ended_at": null,
+      "id": "aff_312e9144af66d0cbb4bd",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1152/7728.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_13c654e6d77071a09b0e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_312e9144af66d0cbb4bd",
+      "claim_ids": [
+        "claim_13c654e6d77071a09b0e"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenyp@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1152/7728.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenyp@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_13c654e6d77071a09b0e"
+    ],
+    "email": [
+      "claim_13c654e6d77071a09b0e"
+    ],
+    "name": [
+      "claim_13c654e6d77071a09b0e"
+    ],
+    "profile_url": [
+      "claim_13c654e6d77071a09b0e"
+    ],
+    "research_directions": [
+      "claim_13c654e6d77071a09b0e"
+    ],
+    "status": [
+      "claim_13c654e6d77071a09b0e"
+    ],
+    "title": [
+      "claim_13c654e6d77071a09b0e"
+    ]
+  },
+  "id": "mentor_f06f7b284900604450a4",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_13c654e6d77071a09b0e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈云坪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_312e9144af66d0cbb4bd",
+      "claim_ids": [
+        "claim_13c654e6d77071a09b0e"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1152/7728.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "遥感影像分析与模式识别、遥感产品真实性检验、生态遥感及大气遥感、空间统计与空间数据挖掘"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1152/7728.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1e834b0be56050917214"
+      ],
+      "ended_at": null,
+      "id": "aff_3078b6113d99a6ef6f44",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1156/4347.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1e834b0be56050917214"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3078b6113d99a6ef6f44",
+      "claim_ids": [
+        "claim_1e834b0be56050917214"
+      ],
+      "is_primary": true,
+      "normalized_value": "bin_gao@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1156/4347.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bin_gao@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1e834b0be56050917214"
+    ],
+    "email": [
+      "claim_1e834b0be56050917214"
+    ],
+    "name": [
+      "claim_1e834b0be56050917214"
+    ],
+    "profile_url": [
+      "claim_1e834b0be56050917214"
+    ],
+    "research_directions": [
+      "claim_1e834b0be56050917214"
+    ],
+    "status": [
+      "claim_1e834b0be56050917214"
+    ],
+    "title": [
+      "claim_1e834b0be56050917214"
+    ]
+  },
+  "id": "mentor_84ace0e5f9e244487958",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1e834b0be56050917214"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3078b6113d99a6ef6f44",
+      "claim_ids": [
+        "claim_1e834b0be56050917214"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1156/4347.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电磁和红外无损检测,信号处理,机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1156/4347.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

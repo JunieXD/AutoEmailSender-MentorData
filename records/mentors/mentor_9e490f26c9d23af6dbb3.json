@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1afd53d84369460b39c2"
+      ],
+      "ended_at": null,
+      "id": "aff_259bb1f051dab107f776",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1162/7733.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_1afd53d84369460b39c2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_259bb1f051dab107f776",
+      "claim_ids": [
+        "claim_1afd53d84369460b39c2"
+      ],
+      "is_primary": true,
+      "normalized_value": "jinhuami@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1162/7733.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jinhuami@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1afd53d84369460b39c2"
+    ],
+    "email": [
+      "claim_1afd53d84369460b39c2"
+    ],
+    "name": [
+      "claim_1afd53d84369460b39c2"
+    ],
+    "profile_url": [
+      "claim_1afd53d84369460b39c2"
+    ],
+    "research_directions": [
+      "claim_1afd53d84369460b39c2"
+    ],
+    "status": [
+      "claim_1afd53d84369460b39c2"
+    ],
+    "title": [
+      "claim_1afd53d84369460b39c2"
+    ]
+  },
+  "id": "mentor_9e490f26c9d23af6dbb3",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1afd53d84369460b39c2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "米金华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_259bb1f051dab107f776",
+      "claim_ids": [
+        "claim_1afd53d84369460b39c2"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1162/7733.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "复杂系统可靠性建模、分析与评估",
+    "工程不确定信息处理、不确定性量化方法,多源不确定信息融合",
+    "数据驱动的智能故障诊断、预测与健康管理的理论及其应用研究。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1162/7733.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:44:05Z"
+}
