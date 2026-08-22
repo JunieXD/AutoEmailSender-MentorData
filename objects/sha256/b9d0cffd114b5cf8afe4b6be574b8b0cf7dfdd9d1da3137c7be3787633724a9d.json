@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_9088260474ed0db35c24",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:52:59Z",
+          "organization_id": "org_auto_3049241efbc77849058d",
+          "school": "海洋微生物学院",
+          "source_url": "https://iemb.ouc.edu.cn/2016/0622/c7958a51253/page.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "中国海洋大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_9088260474ed0db35c24",
+          "email": "xhzhang@ouc.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:52:59Z",
+          "source_url": "https://iemb.ouc.edu.cn/2016/0622/c7958a51253/page.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/170"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xhzhang@ouc.edu.cn",
+      "id": "mentor_b050ddf95ff7eb9612a8",
+      "last_verified_at": "2026-08-21T18:52:59Z",
+      "name": "张晓华",
+      "profile_url": "https://iemb.ouc.edu.cn/2016/0622/c7958a51253/page.htm",
+      "recent_papers": [],
+      "research_direction": "海洋微生物生态学及海水养殖动物病原菌致病机理和病害防治研究",
+      "school": "海洋微生物学院",
+      "source_url": "https://iemb.ouc.edu.cn/bssds/list3.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "中国海洋大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_3049241efbc77849058d",
+    "name": "海洋微生物学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_5c7e19ff2c4911f60b5c",
+    "name": "中国海洋大学"
+  }
+}
