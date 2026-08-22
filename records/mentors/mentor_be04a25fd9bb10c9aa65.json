@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6912faa15bbbb444da8"
+      ],
+      "ended_at": null,
+      "id": "aff_91b5642a01439cc62b0c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/shanmingguang?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f6912faa15bbbb444da8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_91b5642a01439cc62b0c",
+      "claim_ids": [
+        "claim_f6912faa15bbbb444da8"
+      ],
+      "is_primary": true,
+      "normalized_value": "shanmingguang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/shanmingguang?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "shanmingguang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6912faa15bbbb444da8"
+    ],
+    "email": [
+      "claim_f6912faa15bbbb444da8"
+    ],
+    "name": [
+      "claim_f6912faa15bbbb444da8"
+    ],
+    "profile_url": [
+      "claim_f6912faa15bbbb444da8"
+    ],
+    "research_directions": [
+      "claim_f6912faa15bbbb444da8"
+    ],
+    "status": [
+      "claim_f6912faa15bbbb444da8"
+    ],
+    "title": [
+      "claim_f6912faa15bbbb444da8"
+    ]
+  },
+  "id": "mentor_be04a25fd9bb10c9aa65",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6912faa15bbbb444da8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "单明广"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_91b5642a01439cc62b0c",
+      "claim_ids": [
+        "claim_f6912faa15bbbb444da8"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/shanmingguang?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "光电检测与仪器、计算光电成像技术、水下成像探测技术、振动视频测量技术、图像高速处理技术、智能信息处理技术、无线光通信技术、深度学习等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/shanmingguang?locale=zh_CN",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

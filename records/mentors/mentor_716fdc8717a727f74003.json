@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dc1759c89542b71c94fb"
+      ],
+      "ended_at": null,
+      "id": "aff_c7a4256b6959c96446c0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/liuyuntao?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_dc1759c89542b71c94fb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c7a4256b6959c96446c0",
+      "claim_ids": [
+        "claim_dc1759c89542b71c94fb"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyt@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/liuyuntao?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "lyt@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dc1759c89542b71c94fb"
+    ],
+    "email": [
+      "claim_dc1759c89542b71c94fb"
+    ],
+    "name": [
+      "claim_dc1759c89542b71c94fb"
+    ],
+    "profile_url": [
+      "claim_dc1759c89542b71c94fb"
+    ],
+    "recent_papers": [
+      "claim_dc1759c89542b71c94fb"
+    ],
+    "research_directions": [
+      "claim_dc1759c89542b71c94fb"
+    ],
+    "status": [
+      "claim_dc1759c89542b71c94fb"
+    ],
+    "title": [
+      "claim_dc1759c89542b71c94fb"
+    ]
+  },
+  "id": "mentor_716fdc8717a727f74003",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dc1759c89542b71c94fb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘云涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c7a4256b6959c96446c0",
+      "claim_ids": [
+        "claim_dc1759c89542b71c94fb"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/liuyuntao?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [
+    "Quantization noise consideration and characterization in Sigma-Delta MEMS accelerometer.MICROELECTRONICS JOURNAL.2016:53-60",
+    "A dual-channel wide input range interface circuit for electrochemical amperometric sensors.IEICE ELECTRONICS EXPRESS.2015,17",
+    "A current-mode Sigma Delta AD based integrated potentiostat.IEICE ELECTRONICS EXPRESS.2018,23",
+    "A low power consumption inverter-based Sigma Delta interface for capacitive accelerometer.IEICE ELECTRONICS EXPRESS.2018,1",
+    "A dual-exposure wide dynamic range CMOS image sensor with 12 bit column-parallel incremental sigma-delta ADC.MICROELECTRONICS JOURNAL.2016:189-194",
+    "A High Dynamic Range CMOS Readout Chip for Electrochemical Sensors.IEEE SENSORS JOURNAL.2016,10:3504-3513"
+  ],
+  "research_directions": [
+    "MEMS微传感器接口电路设计,模拟/数模混合集成电路设计,CMOS图像传感器,电源管理芯片"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/liuyuntao?locale=zh_CN",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

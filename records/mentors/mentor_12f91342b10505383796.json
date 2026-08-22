@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_db670e2fa3269f4a62ff"
+      ],
+      "ended_at": null,
+      "id": "aff_1c8331f8961ccadb1e9e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "https://faculty.hrbeu.edu.cn/gaoshan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_db670e2fa3269f4a62ff"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1c8331f8961ccadb1e9e",
+      "claim_ids": [
+        "claim_db670e2fa3269f4a62ff"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaoshan08@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/gaoshan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gaoshan08@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_db670e2fa3269f4a62ff"
+    ],
+    "email": [
+      "claim_db670e2fa3269f4a62ff"
+    ],
+    "name": [
+      "claim_db670e2fa3269f4a62ff"
+    ],
+    "profile_url": [
+      "claim_db670e2fa3269f4a62ff"
+    ],
+    "research_directions": [
+      "claim_db670e2fa3269f4a62ff"
+    ],
+    "status": [
+      "claim_db670e2fa3269f4a62ff"
+    ],
+    "title": [
+      "claim_db670e2fa3269f4a62ff"
+    ]
+  },
+  "id": "mentor_12f91342b10505383796",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_db670e2fa3269f4a62ff"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高山"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1c8331f8961ccadb1e9e",
+      "claim_ids": [
+        "claim_db670e2fa3269f4a62ff"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/gaoshan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能信息处理、物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/gaoshan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

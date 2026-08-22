@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_478af7ed87418674bc29"
+      ],
+      "ended_at": null,
+      "id": "aff_b838f0818feb685f5180",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/wangtong?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_478af7ed87418674bc29"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b838f0818feb685f5180",
+      "claim_ids": [
+        "claim_478af7ed87418674bc29"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangtong@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/wangtong?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "wangtong@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_478af7ed87418674bc29"
+    ],
+    "email": [
+      "claim_478af7ed87418674bc29"
+    ],
+    "name": [
+      "claim_478af7ed87418674bc29"
+    ],
+    "profile_url": [
+      "claim_478af7ed87418674bc29"
+    ],
+    "research_directions": [
+      "claim_478af7ed87418674bc29"
+    ],
+    "status": [
+      "claim_478af7ed87418674bc29"
+    ],
+    "title": [
+      "claim_478af7ed87418674bc29"
+    ]
+  },
+  "id": "mentor_dd838cddbc0ee7527a8f",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_478af7ed87418674bc29"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王桐"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b838f0818feb685f5180",
+      "claim_ids": [
+        "claim_478af7ed87418674bc29"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/wangtong?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "群智感知、集群对抗、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/wangtong?locale=zh_CN",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

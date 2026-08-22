@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_13574938f613d0aec353"
+      ],
+      "ended_at": null,
+      "id": "aff_3d913fadc2053ab29e6b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/jiangyilin?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_13574938f613d0aec353"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3d913fadc2053ab29e6b",
+      "claim_ids": [
+        "claim_13574938f613d0aec353"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiangyilin@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/jiangyilin?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "jiangyilin@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_13574938f613d0aec353"
+    ],
+    "email": [
+      "claim_13574938f613d0aec353"
+    ],
+    "name": [
+      "claim_13574938f613d0aec353"
+    ],
+    "profile_url": [
+      "claim_13574938f613d0aec353"
+    ],
+    "recent_papers": [
+      "claim_13574938f613d0aec353"
+    ],
+    "research_directions": [
+      "claim_13574938f613d0aec353"
+    ],
+    "status": [
+      "claim_13574938f613d0aec353"
+    ],
+    "title": [
+      "claim_13574938f613d0aec353"
+    ]
+  },
+  "id": "mentor_2846098500975b065c8e",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_13574938f613d0aec353"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蒋伊琳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3d913fadc2053ab29e6b",
+      "claim_ids": [
+        "claim_13574938f613d0aec353"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/jiangyilin?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [
+    "Image reconstruction of dynamic infrared single-pixel imaging system",
+    "Beamforming of joint polarization-space matched filtering for conformal array",
+    "A novel method based on oblique projection technology for mixed sources estimation",
+    "Multiple Sparse Measurement Gradient Reconstruction Algorithm for DOA Estimation in Compressed Sensing",
+    "Infrared image reconstruction based on compressed sensing and infrared rosette scanning",
+    "Clock Synchronization Algorithm Based on Particle Swarm Optimization with Natural Selection"
+  ],
+  "research_directions": [
+    "宽带信号检测、估值和机器学习,雷达与电子战相关研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/jiangyilin?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4481d45beb99f29e97f7"
+      ],
+      "ended_at": null,
+      "id": "aff_b44fb2cdb1d25073590c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/xiaoyihan?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4481d45beb99f29e97f7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b44fb2cdb1d25073590c",
+      "claim_ids": [
+        "claim_4481d45beb99f29e97f7"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoyihan@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/xiaoyihan?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoyihan@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4481d45beb99f29e97f7"
+    ],
+    "email": [
+      "claim_4481d45beb99f29e97f7"
+    ],
+    "name": [
+      "claim_4481d45beb99f29e97f7"
+    ],
+    "profile_url": [
+      "claim_4481d45beb99f29e97f7"
+    ],
+    "recent_papers": [
+      "claim_4481d45beb99f29e97f7"
+    ],
+    "research_directions": [
+      "claim_4481d45beb99f29e97f7"
+    ],
+    "status": [
+      "claim_4481d45beb99f29e97f7"
+    ],
+    "title": [
+      "claim_4481d45beb99f29e97f7"
+    ]
+  },
+  "id": "mentor_20aaf65fe04f2bccec18",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4481d45beb99f29e97f7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖易寒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b44fb2cdb1d25073590c",
+      "claim_ids": [
+        "claim_4481d45beb99f29e97f7"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/xiaoyihan?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [
+    "Face detection based on occlusion area detection and recovery",
+    "An Intrusion Detection Model Based on Feature Reduction and Convolutional Neural Networks",
+    "Radar Signal Recognition Based on Transfer Learning and Feature Fusion",
+    "Research on RF Fingerprinting Extraction of Power Amplifier Based on Multi-domain RF-DNA Fingerprint"
+  ],
+  "research_directions": [
+    "图像信号处理,雷达信号处理,深度学习技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/xiaoyihan?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

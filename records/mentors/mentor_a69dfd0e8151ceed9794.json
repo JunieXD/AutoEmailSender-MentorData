@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bec5352ec99493f4b6e4"
+      ],
+      "ended_at": null,
+      "id": "aff_c15d40c214ddc8e5d206",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/gaojingpeng?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bec5352ec99493f4b6e4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c15d40c214ddc8e5d206",
+      "claim_ids": [
+        "claim_bec5352ec99493f4b6e4"
+      ],
+      "is_primary": true,
+      "normalized_value": "gaojingpeng@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/gaojingpeng?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "gaojingpeng@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bec5352ec99493f4b6e4"
+    ],
+    "email": [
+      "claim_bec5352ec99493f4b6e4"
+    ],
+    "name": [
+      "claim_bec5352ec99493f4b6e4"
+    ],
+    "profile_url": [
+      "claim_bec5352ec99493f4b6e4"
+    ],
+    "recent_papers": [
+      "claim_bec5352ec99493f4b6e4"
+    ],
+    "research_directions": [
+      "claim_bec5352ec99493f4b6e4"
+    ],
+    "status": [
+      "claim_bec5352ec99493f4b6e4"
+    ],
+    "title": [
+      "claim_bec5352ec99493f4b6e4"
+    ]
+  },
+  "id": "mentor_a69dfd0e8151ceed9794",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bec5352ec99493f4b6e4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高敬鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c15d40c214ddc8e5d206",
+      "claim_ids": [
+        "claim_bec5352ec99493f4b6e4"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/gaojingpeng?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [
+    "Reinforced graph aggregation cross-domain few-shot learning for hyperspectral remote sensing image classification,SIGNAL PROCESSING,238()",
+    "A Modulation Recognition Method for Radar Signal Based on ICPO-MD-SVM,2024 IEEE 12th Asia-Pacific Conference on Antennas and Propagation, APCAP 2024 - Proceedings,()",
+    "A Radar Signal Modulation Recognition Method Based on SSAGAN,2024 IEEE 12th Asia-Pacific Conference on Antennas and Propagation, APCAP 2024 - Proceedings,()",
+    "A Jamming Decision Method Based on SEEA-TD3 Algorithm,2024 IEEE 12th Asia-Pacific Conference on Antennas and Propagation, APCAP 2024 - Proceedings,()",
+    "联合熵与预训练CNN提取时频图像特征的调制识别方法",
+    "基于分数阶傅里叶变换的联合分类器多信号调制识别方法"
+  ],
+  "research_directions": [
+    "人工智能、深度学习、机器学习、目标识别、认知系统、现代通信技术与通信系统、数字信号处理等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/gaojingpeng?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

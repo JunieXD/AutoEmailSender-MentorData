@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_70352fa2c0bd00ad7d8c"
+      ],
+      "ended_at": null,
+      "id": "aff_3530d1b4993b2ab8f170",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhanglinbo?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_70352fa2c0bd00ad7d8c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3530d1b4993b2ab8f170",
+      "claim_ids": [
+        "claim_70352fa2c0bd00ad7d8c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanglinbo@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhanglinbo?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "zhanglinbo@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_70352fa2c0bd00ad7d8c"
+    ],
+    "email": [
+      "claim_70352fa2c0bd00ad7d8c"
+    ],
+    "name": [
+      "claim_70352fa2c0bd00ad7d8c"
+    ],
+    "profile_url": [
+      "claim_70352fa2c0bd00ad7d8c"
+    ],
+    "status": [
+      "claim_70352fa2c0bd00ad7d8c"
+    ],
+    "title": [
+      "claim_70352fa2c0bd00ad7d8c"
+    ]
+  },
+  "id": "mentor_993fbb7c219278ba7177",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_70352fa2c0bd00ad7d8c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张林波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3530d1b4993b2ab8f170",
+      "claim_ids": [
+        "claim_70352fa2c0bd00ad7d8c"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhanglinbo?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhanglinbo?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

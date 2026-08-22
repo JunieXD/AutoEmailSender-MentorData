@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2b63c2a0f9e467e052d3"
+      ],
+      "ended_at": null,
+      "id": "aff_e92e377734ba021218ff",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/liutong?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2b63c2a0f9e467e052d3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e92e377734ba021218ff",
+      "claim_ids": [
+        "claim_2b63c2a0f9e467e052d3"
+      ],
+      "is_primary": true,
+      "normalized_value": "liutong@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/liutong?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "liutong@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2b63c2a0f9e467e052d3"
+    ],
+    "email": [
+      "claim_2b63c2a0f9e467e052d3"
+    ],
+    "name": [
+      "claim_2b63c2a0f9e467e052d3"
+    ],
+    "profile_url": [
+      "claim_2b63c2a0f9e467e052d3"
+    ],
+    "recent_papers": [
+      "claim_2b63c2a0f9e467e052d3"
+    ],
+    "status": [
+      "claim_2b63c2a0f9e467e052d3"
+    ],
+    "title": [
+      "claim_2b63c2a0f9e467e052d3"
+    ]
+  },
+  "id": "mentor_cd7849eee175bbcf3cf0",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2b63c2a0f9e467e052d3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘彤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e92e377734ba021218ff",
+      "claim_ids": [
+        "claim_2b63c2a0f9e467e052d3"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/liutong?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [
+    "Optimal Multicasting Strategies in Underwater Acoustic Networks.IEEE TRANSACTIONS ON MOBILE COMPUTING.2021,2:678-690"
+  ],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/liutong?locale=zh_CN",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}
