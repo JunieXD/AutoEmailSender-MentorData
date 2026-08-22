@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c8c9de59047a8370c9f4"
+      ],
+      "ended_at": null,
+      "id": "aff_791c734e05540fd697b1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_0e9ff23630f083927e62",
+      "source_url": "https://cst.bjut.edu.cn/info/1605/1321.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_c8c9de59047a8370c9f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_791c734e05540fd697b1",
+      "claim_ids": [
+        "claim_c8c9de59047a8370c9f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "algorist@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1605/1321.htm",
+      "status": "current",
+      "type": "email",
+      "value": "algorist@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c8c9de59047a8370c9f4"
+    ],
+    "email": [
+      "claim_c8c9de59047a8370c9f4"
+    ],
+    "name": [
+      "claim_c8c9de59047a8370c9f4"
+    ],
+    "profile_url": [
+      "claim_c8c9de59047a8370c9f4"
+    ],
+    "recent_papers": [
+      "claim_c8c9de59047a8370c9f4"
+    ],
+    "research_directions": [
+      "claim_c8c9de59047a8370c9f4"
+    ],
+    "status": [
+      "claim_c8c9de59047a8370c9f4"
+    ],
+    "title": [
+      "claim_c8c9de59047a8370c9f4"
+    ]
+  },
+  "id": "mentor_ed999a4ea6d8f6590d58",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c8c9de59047a8370c9f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_791c734e05540fd697b1",
+      "claim_ids": [
+        "claim_c8c9de59047a8370c9f4"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1605/1321.htm"
+    }
+  ],
+  "recent_papers": [
+    "胡俊,沈昌祥,公备,《可信计算3.0工程初步》,人民邮电出版社,2017.5.",
+    "胡俊,沈昌祥,公备,《可信计算3.0工程初步(第二版)》,人民邮电出版社,2018.12."
+  ],
+  "research_directions": [
+    "可信计算、云安全、工控安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1605/1321.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:43:52Z"
+}

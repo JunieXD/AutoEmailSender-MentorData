@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e703ec272b7919882a93"
+      ],
+      "ended_at": null,
+      "id": "aff_b5236bda643d1aa2e59b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_1edbfc1c707fc30897ec",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1437.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e703ec272b7919882a93"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b5236bda643d1aa2e59b",
+      "claim_ids": [
+        "claim_e703ec272b7919882a93"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanjing@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1437.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhanjing@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e703ec272b7919882a93"
+    ],
+    "email": [
+      "claim_e703ec272b7919882a93"
+    ],
+    "name": [
+      "claim_e703ec272b7919882a93"
+    ],
+    "profile_url": [
+      "claim_e703ec272b7919882a93"
+    ],
+    "recent_papers": [
+      "claim_e703ec272b7919882a93"
+    ],
+    "research_directions": [
+      "claim_e703ec272b7919882a93"
+    ],
+    "status": [
+      "claim_e703ec272b7919882a93"
+    ],
+    "title": [
+      "claim_e703ec272b7919882a93"
+    ]
+  },
+  "id": "mentor_11b001e85dd26b8e1557",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e703ec272b7919882a93"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "詹静"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b5236bda643d1aa2e59b",
+      "claim_ids": [
+        "claim_e703ec272b7919882a93"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1616/1437.htm"
+    }
+  ],
+  "recent_papers": [
+    "zk-DCIAExchange: SGX protected fair exchange with distributed zero knowledge proof for data confidentiality and authentication,The Computer Journal, 2025",
+    "代码复用攻防技术演化综述,北京工业大学学报,2024",
+    "VNGuarder: An Internal Threat Detection Approach for Virtual Network in Cloud Computing Environment, Security and Commination Networks, 2022",
+    "NSGA-II-Based Granularity-Adaptive Control-Flow Attestation, Security and Commination Networks, 2021",
+    "CIADL Cloud Insider Attack Detector and Locator on Multi-tenant Network Isolation - An OpenStack Case Study, Journal of Ambient Intelligence and Humanized Computing, 2020",
+    "SEMBeF 一种基于分片循环神经网络的敏感高效的恶意代码行为检测框架,信息安全学报,2019",
+    "TPTVer: A Trusted Third Party Based Trusted Verifier for Multi-Layered Outsourced Big Data System in Cloud Environment, China Communications, 2018",
+    "云安全基础设施构建——从解决方案的视角看云安全,机械工业出版社,2017"
+  ],
+  "research_directions": [
+    "信息安全,可信计算,云计算、工业互联网及区块链安全。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1616/1437.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:43:52Z"
+}

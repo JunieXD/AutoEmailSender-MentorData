@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9e6f57c4b06c40784b5d"
+      ],
+      "ended_at": null,
+      "id": "aff_7a953ff2cbdbc9b3b64e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_b31e3566a7c8f54a714f",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1452.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_9e6f57c4b06c40784b5d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7a953ff2cbdbc9b3b64e",
+      "claim_ids": [
+        "claim_9e6f57c4b06c40784b5d"
+      ],
+      "is_primary": true,
+      "normalized_value": "jinxn@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1452.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jinxn@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9e6f57c4b06c40784b5d"
+    ],
+    "email": [
+      "claim_9e6f57c4b06c40784b5d"
+    ],
+    "name": [
+      "claim_9e6f57c4b06c40784b5d"
+    ],
+    "profile_url": [
+      "claim_9e6f57c4b06c40784b5d"
+    ],
+    "recent_papers": [
+      "claim_9e6f57c4b06c40784b5d"
+    ],
+    "research_directions": [
+      "claim_9e6f57c4b06c40784b5d"
+    ],
+    "status": [
+      "claim_9e6f57c4b06c40784b5d"
+    ],
+    "title": [
+      "claim_9e6f57c4b06c40784b5d"
+    ]
+  },
+  "id": "mentor_f91a4248302b859ef9a5",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9e6f57c4b06c40784b5d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "靳晓宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7a953ff2cbdbc9b3b64e",
+      "claim_ids": [
+        "claim_9e6f57c4b06c40784b5d"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1616/1452.htm"
+    }
+  ],
+  "recent_papers": [
+    "Group-Based Federated Knowledge Distillation Intrusion Detection,International Journal of Software Engineering And Knowledge Engineering,2024",
+    "模型异构的联邦学习入侵检测,北京工业大学学报,2024",
+    "Model Heterogeneous Federated Learning for Intrusion Detection based on knowledge distillation,International Conference on Communication and Network Security ICCNS 2022,2022.12.02,Beijing",
+    "A survey of autoencoder-based recommender systems, Frontiers of Computer Science, 2020",
+    "Study on the Multi-Task Model for Legal Judgment Prediction, IEEE International Conference on Artificial Intelligence and Computer Applications ICAICA2020"
+  ],
+  "research_directions": [
+    "深度学习、人工智能、网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1616/1452.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:43:52Z"
+}
