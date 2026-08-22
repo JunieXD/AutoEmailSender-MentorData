@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4ed1ef4c9d2005a13f41"
+      ],
+      "ended_at": null,
+      "id": "aff_7f62dde2e3144c40d8b6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie.shu.edu.cn/Prof/wangchao.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4ed1ef4c9d2005a13f41"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7f62dde2e3144c40d8b6",
+      "claim_ids": [
+        "claim_4ed1ef4c9d2005a13f41"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangchao@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie.shu.edu.cn/Prof/wangchao.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangchao@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ],
+    "email": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ],
+    "name": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ],
+    "profile_url": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ],
+    "recent_papers": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ],
+    "research_directions": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ],
+    "status": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ],
+    "title": [
+      "claim_4ed1ef4c9d2005a13f41"
+    ]
+  },
+  "id": "mentor_7b43f207040e4ccce95e",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4ed1ef4c9d2005a13f41"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王潮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7f62dde2e3144c40d8b6",
+      "claim_ids": [
+        "claim_4ed1ef4c9d2005a13f41"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie.shu.edu.cn/Prof/wangchao.htm"
+    }
+  ],
+  "recent_papers": [
+    "Baonan Wang, Feng Hu, Haonan Yao, Chao Wang*. Prime factorization algorithm based on parameter optimization of Ising model [J]. Scientific Reports, 2020, 10: 7106",
+    "W. C. Peng, B. N. Wang, F. Hu, Y. J. Wang, X. J. Fang, X. Y. Chen, C. Wang*. Factoring larger integers with fewer qubits via quantum annealing with optimized parameters [J]. Sci. China-Phys. Mech. Astron., 62(6): 060311, 2019"
+  ],
+  "research_directions": [
+    "网络空间安全与密码学、面向智慧城市的人工智能研究、量子计算在密码学与智慧城市应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie.shu.edu.cn/Prof/wangchao.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

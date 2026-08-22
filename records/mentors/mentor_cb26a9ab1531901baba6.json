@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_86c14a13d087e8480fc3"
+      ],
+      "ended_at": null,
+      "id": "aff_2ccbc995a8917545b3f6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie.shu.edu.cn/Prof/wangyf.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_86c14a13d087e8480fc3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2ccbc995a8917545b3f6",
+      "claim_ids": [
+        "claim_86c14a13d087e8480fc3"
+      ],
+      "is_primary": true,
+      "normalized_value": "yfw@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie.shu.edu.cn/Prof/wangyf.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yfw@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_86c14a13d087e8480fc3"
+    ],
+    "email": [
+      "claim_86c14a13d087e8480fc3"
+    ],
+    "name": [
+      "claim_86c14a13d087e8480fc3"
+    ],
+    "profile_url": [
+      "claim_86c14a13d087e8480fc3"
+    ],
+    "research_directions": [
+      "claim_86c14a13d087e8480fc3"
+    ],
+    "status": [
+      "claim_86c14a13d087e8480fc3"
+    ],
+    "title": [
+      "claim_86c14a13d087e8480fc3"
+    ]
+  },
+  "id": "mentor_cb26a9ab1531901baba6",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_86c14a13d087e8480fc3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王永芳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2ccbc995a8917545b3f6",
+      "claim_ids": [
+        "claim_86c14a13d087e8480fc3"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie.shu.edu.cn/Prof/wangyf.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能多媒体处理及分析",
+    "视觉感知模型",
+    "机器学习",
+    "AI驱动的2D/3D/VR编码及传输等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie.shu.edu.cn/Prof/wangyf.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

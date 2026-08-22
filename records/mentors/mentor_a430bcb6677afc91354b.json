@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2e3fe4560e34f5c969e9"
+      ],
+      "ended_at": null,
+      "id": "aff_9f56f40fb0656f9bf9d6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie-ie.shu.edu.cn/info/1078/1255.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_2e3fe4560e34f5c969e9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9f56f40fb0656f9bf9d6",
+      "claim_ids": [
+        "claim_2e3fe4560e34f5c969e9"
+      ],
+      "is_primary": true,
+      "normalized_value": "dingwenxiang@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie-ie.shu.edu.cn/info/1078/1255.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dingwenxiang@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2e3fe4560e34f5c969e9"
+    ],
+    "email": [
+      "claim_2e3fe4560e34f5c969e9"
+    ],
+    "name": [
+      "claim_2e3fe4560e34f5c969e9"
+    ],
+    "profile_url": [
+      "claim_2e3fe4560e34f5c969e9"
+    ],
+    "recent_papers": [
+      "claim_2e3fe4560e34f5c969e9"
+    ],
+    "research_directions": [
+      "claim_2e3fe4560e34f5c969e9"
+    ],
+    "status": [
+      "claim_2e3fe4560e34f5c969e9"
+    ],
+    "title": [
+      "claim_2e3fe4560e34f5c969e9"
+    ]
+  },
+  "id": "mentor_a430bcb6677afc91354b",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2e3fe4560e34f5c969e9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "丁文祥"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9f56f40fb0656f9bf9d6",
+      "claim_ids": [
+        "claim_2e3fe4560e34f5c969e9"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie-ie.shu.edu.cn/info/1078/1255.htm"
+    }
+  ],
+  "recent_papers": [
+    "CT-Free Attenuation and Scatter Correction of [11C]CFT Brain PET Using a Bi-Directional Matching Network",
+    "A deep learning method for total-body dynamic PET imaging with dual-time-window protocols",
+    "A shortened model for Logan reference plot implemented via the self-supervised neural network for parametric PET imaging",
+    "Machine learning-based noninvasive quantification of single-imaging session dual-tracer 18F-FDG and 68Ga-DOTATATE dynamic PET-CT in oncology",
+    "STCMT-Net: A spatiotemporal consistency motion transfer network for enhancing cardiac motion estimation",
+    "Robust and generalizable artificial intelligence for multi-organ segmentation in ultra-low-dose total-body PET imaging: a multi-center and cross-tracer study",
+    "Dynamic PET Image Reconstruction via Non-negative INR Factorization",
+    "The effects of back-projection variants in BPF-like TOF PET reconstruction using CNN filtration – Based on simulated and clinical brain data"
+  ],
+  "research_directions": [
+    "基于深度学习的医学图像分析、PET图像重建、校正与低剂量成像、动态PET药代动力学建模与参数成像、多模态医学影像融合及临床应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie-ie.shu.edu.cn/info/1078/1255.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

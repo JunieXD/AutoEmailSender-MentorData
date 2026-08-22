@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_14f42328d20e3e095a8b"
+      ],
+      "ended_at": null,
+      "id": "aff_5213a5e9426f3f417418",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie.shu.edu.cn/Prof/zhangjj.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_14f42328d20e3e095a8b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5213a5e9426f3f417418",
+      "claim_ids": [
+        "claim_14f42328d20e3e095a8b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjj@staff.shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie.shu.edu.cn/Prof/zhangjj.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zjj@staff.shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_14f42328d20e3e095a8b"
+    ],
+    "email": [
+      "claim_14f42328d20e3e095a8b"
+    ],
+    "name": [
+      "claim_14f42328d20e3e095a8b"
+    ],
+    "profile_url": [
+      "claim_14f42328d20e3e095a8b"
+    ],
+    "recent_papers": [
+      "claim_14f42328d20e3e095a8b"
+    ],
+    "research_directions": [
+      "claim_14f42328d20e3e095a8b"
+    ],
+    "status": [
+      "claim_14f42328d20e3e095a8b"
+    ],
+    "title": [
+      "claim_14f42328d20e3e095a8b"
+    ]
+  },
+  "id": "mentor_5cbb44a2bc27cb2281bd",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_14f42328d20e3e095a8b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张俊杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5213a5e9426f3f417418",
+      "claim_ids": [
+        "claim_14f42328d20e3e095a8b"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie.shu.edu.cn/Prof/zhangjj.htm"
+    }
+  ],
+  "recent_papers": [
+    "High-Precision and Low-Complexity Symbol Synchronization Algorithm Based on Dual-Threshold Amplitude Decision for Real-Time IMDD OFDM-PON",
+    "Analytical Solution of Stage-Dependent Bit Resolution of Full Parallel Variable Point FFTs for Real-Time DSP Implementation",
+    "Novel toggle-rate based energy-efficient scheme for heavy load real-time IM-DD OFDM-PON with ONU LLID identification in time-domain using amplitude decision",
+    "Robust sound event classification with bilinear multi-column ELM-AE and two-stage ensemble learning",
+    "Stage-Dependent DSP Operation Range Clipping-Induced Bit Resolution Reductions of Full Parallel 64-Point FFTs Incorporated in FPGA-Based Optical OFDM Receivers",
+    "Real-time optical OFDM transmissions with spectral efficiency up to 6.93bit/s/Hz over 50km SSMF IMDD systems",
+    "13.625 Gb/s real-time dual-band adaptive optical orthogonal frequency division multiplexing transmissions over 25 km standard single-mode fibre intensity modulation and direct detection systems utilising strongly saturated reflective semiconductor optical amplifier intensity modulators",
+    "Record-high and robust 17.125Gb/s gross-rate over 25km SSMF transmissions of real-time dual-band optical OFDM signals directly modulated by 1GHz RSOAs"
+  ],
+  "research_directions": [
+    "光接入网",
+    "拟态安全",
+    "网络通信信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie.shu.edu.cn/Prof/zhangjj.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

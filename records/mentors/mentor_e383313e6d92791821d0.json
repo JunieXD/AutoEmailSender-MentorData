@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_020fe4552f5679a1efa9"
+      ],
+      "ended_at": null,
+      "id": "aff_9fdb61e3f997ddbc1498",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie-ie.shu.edu.cn/info/1078/1235.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_020fe4552f5679a1efa9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9fdb61e3f997ddbc1498",
+      "claim_ids": [
+        "claim_020fe4552f5679a1efa9"
+      ],
+      "is_primary": true,
+      "normalized_value": "yun_sui@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie-ie.shu.edu.cn/info/1078/1235.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yun_sui@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_020fe4552f5679a1efa9"
+    ],
+    "email": [
+      "claim_020fe4552f5679a1efa9"
+    ],
+    "name": [
+      "claim_020fe4552f5679a1efa9"
+    ],
+    "profile_url": [
+      "claim_020fe4552f5679a1efa9"
+    ],
+    "recent_papers": [
+      "claim_020fe4552f5679a1efa9"
+    ],
+    "research_directions": [
+      "claim_020fe4552f5679a1efa9"
+    ],
+    "status": [
+      "claim_020fe4552f5679a1efa9"
+    ],
+    "title": [
+      "claim_020fe4552f5679a1efa9"
+    ]
+  },
+  "id": "mentor_e383313e6d92791821d0",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_020fe4552f5679a1efa9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "眭韵"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9fdb61e3f997ddbc1498",
+      "claim_ids": [
+        "claim_020fe4552f5679a1efa9"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie-ie.shu.edu.cn/info/1078/1235.htm"
+    }
+  ],
+  "recent_papers": [
+    "Sui Y, Fu H, Xu F, et al., Global Ionospheric 4-D Tomography and Forecast based on Multi-source DMD Data Assimilation[J]. IEEE Transactions on Geoscience and Remote Sensing, 2025.",
+    "Sui Y, Fu H, Xu F, et al., Global Ionospheric Tomography Based on Data-Driven Fusion Algorithm Using GNSS[J]. IEEE Geoscience and Remote Sensing Letters, vol. 21, pp. 1-5, 2024, Art no. 1003405.",
+    "Sui Y, Fu H, Wang D, et al. Sparse reconstruction of 3-D regional ionospheric tomography using data from a network of GNSS reference stations[J]. IEEE Transactions on Geoscience and Remote Sensing, 2021, 60: 1-15.",
+    "Sui Y, Fu H, Wang D, et al. Multi-layer Ionospheric Model Constrained by Physical prior based on GNSS Stations[J]. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing,2022.",
+    "Zhang, Y. , H. Fu, and Sui Y. Neural Network Model for Parameter Inversion in Electromagnetic Wave and Plasma Interaction Systems[J]. IEEE Transactions on Plasma Science,2020.",
+    "Z. Shi et al., \"A Method for dSTEC Interpolation: Ionosphere Kernel Estimation Algorithm,\" in IEEE Transactions on Geoscience and Remote Sensing, 2022.",
+    "D.Chai et al.,“Global 4D Ionospheric STEC Prediction based on DeepONet for GNSS Rays”in IEEE Transactions on Geoscience and Remote Sensing, 2024."
+  ],
+  "research_directions": [
+    "智能空间天气四维成像及预测、时空大数据信息处理、AI For Science空间电离层反演及预测理论、卫星导航高精度定位"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie-ie.shu.edu.cn/info/1078/1235.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}
