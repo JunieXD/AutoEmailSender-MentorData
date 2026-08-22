@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f5681591d42dc475ee13"
+      ],
+      "ended_at": null,
+      "id": "aff_e1b8fb095be24baac065",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690185/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f5681591d42dc475ee13"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e1b8fb095be24baac065",
+      "claim_ids": [
+        "claim_f5681591d42dc475ee13"
+      ],
+      "is_primary": true,
+      "normalized_value": "lizhihuics@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690185/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lizhihuics@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f5681591d42dc475ee13"
+    ],
+    "email": [
+      "claim_f5681591d42dc475ee13"
+    ],
+    "name": [
+      "claim_f5681591d42dc475ee13"
+    ],
+    "profile_url": [
+      "claim_f5681591d42dc475ee13"
+    ],
+    "research_directions": [
+      "claim_f5681591d42dc475ee13"
+    ],
+    "status": [
+      "claim_f5681591d42dc475ee13"
+    ],
+    "title": [
+      "claim_f5681591d42dc475ee13"
+    ]
+  },
+  "id": "mentor_ec0376e27d8a414666fd",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f5681591d42dc475ee13"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李志慧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e1b8fb095be24baac065",
+      "claim_ids": [
+        "claim_f5681591d42dc475ee13"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690185/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "具身智能、多模态大模型及多媒体计算",
+    "具身智能体中的感知、决策与人机交互机制建模与优化",
+    "多模态大模型的算法设计与跨模态语义表示学习",
+    "面向复杂场景理解的多媒体计算方法与应用探索"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690185/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

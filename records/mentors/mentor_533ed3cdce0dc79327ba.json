@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c5c984571e93c6cb72f4"
+      ],
+      "ended_at": null,
+      "id": "aff_2963fb4a29ff6d938c1d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690186/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c5c984571e93c6cb72f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2963fb4a29ff6d938c1d",
+      "claim_ids": [
+        "claim_c5c984571e93c6cb72f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "xjchang@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690186/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xjchang@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c5c984571e93c6cb72f4"
+    ],
+    "email": [
+      "claim_c5c984571e93c6cb72f4"
+    ],
+    "name": [
+      "claim_c5c984571e93c6cb72f4"
+    ],
+    "profile_url": [
+      "claim_c5c984571e93c6cb72f4"
+    ],
+    "recent_papers": [
+      "claim_c5c984571e93c6cb72f4"
+    ],
+    "research_directions": [
+      "claim_c5c984571e93c6cb72f4"
+    ],
+    "status": [
+      "claim_c5c984571e93c6cb72f4"
+    ],
+    "title": [
+      "claim_c5c984571e93c6cb72f4"
+    ]
+  },
+  "id": "mentor_533ed3cdce0dc79327ba",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c5c984571e93c6cb72f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "常晓军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2963fb4a29ff6d938c1d",
+      "claim_ids": [
+        "claim_c5c984571e93c6cb72f4"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690186/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhiying Lu, Chuanbin Liu, Xiaojun Chang, Yongdong Zhang, Hongtao Xie: DHVT: Dynamic Hybrid Vision Transformer for Small Dataset Recognition. IEEE Trans. Pattern Anal. Mach. Intell. 47(4): 2615-2631 (2025)",
+    "Lingling Zhang, Yujie Zhong, Qinghua Zheng, Jun Liu, Qianying Wang, Jiaxin Wang, Xiaojun Chang: TDGI: Translation-Guided Double-Graph Inference for Document-Level Relation Extraction. IEEE Trans. Pattern Anal. Mach. Intell. 47(4): 2647-2659 (2025)",
+    "Changlin Li, Sihao Lin, Tang Tao, Guangrun Wang, Mingjie Li, Xiaodan Liang, Xiaojun Chang: BossNAS Family: Block-Wisely Self-Supervised Neural Architecture Search. IEEE Trans. Pattern Anal. Mach. Intell. 47(5): 3500-3514 (2025)",
+    "Bingqian Lin, Yunshuang Nie, Ziming Wei, Jiaqi Chen, Shikui Ma, Jianhua Han, Hang Xu, Xiaojun Chang, Xiaodan Liang: NavCoT: Boosting LLM-Based Vision-and-Language Navigation via Learning Disentangled Reasoning. IEEE Trans. Pattern Anal. Mach. Intell. 47(7): 5945-5957 (2025)",
+    "Zhe Liu, Yun Li, Lina Yao, Xiaojun Chang, Wei Fang, Xiaojun Wu, Abdulmotaleb El-Saddik: Simple Primitives With Feasibility- and Contextuality-Dependence for Open-World Compositional Zero-Shot Learning. IEEE Trans. Pattern Anal. Mach. Intell. 46(1): 543-560 (2024)",
+    "Caixia Yan, Xiaojun Chang, Minnan Luo, Huan Liu, Xiaoqin Zhang, Qinghua Zheng: Semantics-Guided Contrastive Network for Zero-Shot Object Detection. IEEE Trans. Pattern Anal. Mach. Intell. 46(3): 1530-1544 (2024)",
+    "Guangrun Wang, Changlin Li, Liuchun Yuan, Jiefeng Peng, Xiaoyu Xian, Xiaodan Liang, Xiaojun Chang, Liang Lin: DNA Family: Boosting Weight-Sharing NAS With Block-Wise Supervisions. IEEE Trans. Pattern Anal. Mach. Intell. 46(5): 2722-2740 (2024)",
+    "Changlin Li, Guangrun Wang, Bing Wang, Xiaodan Liang, Zhihui Li, Xiaojun Chang: DS-Net++: Dynamic Weight Slicing for Efficient Inference in CNNs and Vision Transformers. IEEE Trans. Pattern Anal. Mach. Intell. 45(4): 4430-4446 (2023)"
+  ],
+  "research_directions": [
+    "具身智能体中的感知、决策与交互机制建模",
+    "多模态大模型的算法设计与跨模态表示学习",
+    "类脑多模态大模型的结构设计与融合机制研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690186/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

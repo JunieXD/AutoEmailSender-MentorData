@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4ca82ddf1177540e25f3"
+      ],
+      "ended_at": null,
+      "id": "aff_777235c6482024de377f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2023/0704/c2615a607688/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4ca82ddf1177540e25f3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_777235c6482024de377f",
+      "claim_ids": [
+        "claim_4ca82ddf1177540e25f3"
+      ],
+      "is_primary": true,
+      "normalized_value": "lewu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2023/0704/c2615a607688/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lewu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4ca82ddf1177540e25f3"
+    ],
+    "email": [
+      "claim_4ca82ddf1177540e25f3"
+    ],
+    "name": [
+      "claim_4ca82ddf1177540e25f3"
+    ],
+    "profile_url": [
+      "claim_4ca82ddf1177540e25f3"
+    ],
+    "recent_papers": [
+      "claim_4ca82ddf1177540e25f3"
+    ],
+    "research_directions": [
+      "claim_4ca82ddf1177540e25f3"
+    ],
+    "status": [
+      "claim_4ca82ddf1177540e25f3"
+    ],
+    "title": [
+      "claim_4ca82ddf1177540e25f3"
+    ]
+  },
+  "id": "mentor_53fefd49d16f14ca9afd",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4ca82ddf1177540e25f3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴乐"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_777235c6482024de377f",
+      "claim_ids": [
+        "claim_4ca82ddf1177540e25f3"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2023/0704/c2615a607688/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Signal Processing for Brain-Computer Interfaces: A Review and Current Perspectives",
+    "A Hybrid Multimodal Fusion Framework for sEMG-ACC-Based Hand Gesture Recognition",
+    "Reduce the User Burden of Multiuser Myoelectric Interface via Few-Shot Domain Adaptation",
+    "Multi-source domain generalization and adaptation towards cross-subject myoelectric pattern recognition",
+    "Unknown Motion Rejection in Myoelectric Pattern Recognition Using Convolutional Prototype Network",
+    "Rejecting Novel Motions in High-Density Myoelectric Pattern Recognition Using Hybrid Neural Networks",
+    "Electrode Shift Robust CNN for High-Density Myoelectric Pattern Recognition Control",
+    "Metric learning for novel motion rejection in high-density myoelectric pattern recognition"
+  ],
+  "research_directions": [
+    "脑机接口、医学人工智能、神经信号鲁棒解码、癫痫发作预测、运动意图解码、脑电信号降噪"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2023/0704/c2615a607688/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

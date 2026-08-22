@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1ef098d68505d4869ff1"
+      ],
+      "ended_at": null,
+      "id": "aff_6a6b665791bd7399f2d6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19508/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1ef098d68505d4869ff1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6a6b665791bd7399f2d6",
+      "claim_ids": [
+        "claim_1ef098d68505d4869ff1"
+      ],
+      "is_primary": true,
+      "normalized_value": "hclu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19508/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hclu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1ef098d68505d4869ff1"
+    ],
+    "email": [
+      "claim_1ef098d68505d4869ff1"
+    ],
+    "name": [
+      "claim_1ef098d68505d4869ff1"
+    ],
+    "profile_url": [
+      "claim_1ef098d68505d4869ff1"
+    ],
+    "recent_papers": [
+      "claim_1ef098d68505d4869ff1"
+    ],
+    "research_directions": [
+      "claim_1ef098d68505d4869ff1"
+    ],
+    "status": [
+      "claim_1ef098d68505d4869ff1"
+    ],
+    "title": [
+      "claim_1ef098d68505d4869ff1"
+    ]
+  },
+  "id": "mentor_ed239532760bd81fc806",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1ef098d68505d4869ff1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "卢汉成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6a6b665791bd7399f2d6",
+      "claim_ids": [
+        "claim_1ef098d68505d4869ff1"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19508/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Fukai Jiang, Hancheng Lu, Packet Size Optimization in Delay Tolerant Networks, IEEE CCNC 2014, Las Vegas, USA, 2014",
+    "Xiaolong Li, Hancheng Lu, Hao Lu, QoS Analysis of Self-Similar Multimedia Traffic with Variable Packet Size in Wireless Networks, IEEE VTC2013-fall, Las Vegas, USA, 2013",
+    "李志鹏,卢汉成,洪佩琳,无线环境下失真和时限感知的视频分组调度机制,电子与信息学报,2013年09期",
+    "蒋友辉,卢汉成,洪佩琳,薛开平,基于网络编码的无线多播速率选择机制,电子信息学报,2012年05期",
+    "汪玉,卢汉成,洪佩琳,薛开平,网络编码中的侦听管理策略,电子学报,2012年01期",
+    "Hancheng Lu, SMS-MIPv6: An End-to-End Mechanism for IPv6 Mobility Management in Mobile Networks, Wireless Personal Communications, Springer, July 2011, Volume 59, Issue 2, pp 217-235",
+    "Hancheng Lu, Chang Wen Chen, Playback interruption probability analysis for roadside-to-vehicle media streaming, IEEE WoWMoM’11, Lucca, Italy, June 2011",
+    "Hancheng Lu, Chang Wen Chen, Packet Loss Analysis for Media Streaming with Network Coding in Wireless Broadcast Networks, IEEE GLOBECOM’11, Houston, USA, November 2011"
+  ],
+  "research_directions": [
+    "面向下一代网络的异构网络融合技术,包括网络移动管理及其优化机制、多接口传输优化,网络虚拟化等",
+    "延时/中断容忍网络数据传输和路由技术,主要针对端到端路径不存在的极端网络环境(例如移动Ad Hoc、车载网络、深空网络等)",
+    "无线环境下视频的资源管理优化机制,包括队列分析、调度、云环境下的数模混合传输优化等",
+    "无线移动环境的网络编码和协同通信技术",
+    "可编程路由器软硬件开发以及相关算法研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19508/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}
