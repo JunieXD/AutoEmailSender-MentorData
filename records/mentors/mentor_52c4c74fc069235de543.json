@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2b2175c8202394dda2f4"
+      ],
+      "ended_at": null,
+      "id": "aff_cf0bb00be96bccecdefa",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:51Z",
+      "organization_id": "org_auto_d544439e7769458442f4",
+      "source_url": "https://ai.cumtb.edu.cn/info/1052/1113.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2b2175c8202394dda2f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf0bb00be96bccecdefa",
+      "claim_ids": [
+        "claim_2b2175c8202394dda2f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "leijiang@cumtb.edu.cn",
+      "observed_at": "2026-08-21T18:53:51Z",
+      "source_url": "https://ai.cumtb.edu.cn/info/1052/1113.htm",
+      "status": "current",
+      "type": "email",
+      "value": "leijiang@cumtb.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2b2175c8202394dda2f4"
+    ],
+    "email": [
+      "claim_2b2175c8202394dda2f4"
+    ],
+    "name": [
+      "claim_2b2175c8202394dda2f4"
+    ],
+    "profile_url": [
+      "claim_2b2175c8202394dda2f4"
+    ],
+    "recent_papers": [
+      "claim_2b2175c8202394dda2f4"
+    ],
+    "research_directions": [
+      "claim_2b2175c8202394dda2f4"
+    ],
+    "status": [
+      "claim_2b2175c8202394dda2f4"
+    ],
+    "title": [
+      "claim_2b2175c8202394dda2f4"
+    ]
+  },
+  "id": "mentor_52c4c74fc069235de543",
+  "last_verified_at": "2026-08-21T18:53:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2b2175c8202394dda2f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蒋磊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf0bb00be96bccecdefa",
+      "claim_ids": [
+        "claim_2b2175c8202394dda2f4"
+      ],
+      "observed_at": "2026-08-21T18:53:51Z",
+      "status": "current",
+      "url": "https://ai.cumtb.edu.cn/info/1052/1113.htm"
+    }
+  ],
+  "recent_papers": [
+    "Modeling of Linear Displacement and Design of Adaptive Robust Controller"
+  ],
+  "research_directions": [
+    "人工智能、自适应控制、外骨骼机器人等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:51Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.cumtb.edu.cn/info/1052/1113.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:51Z"
+}
