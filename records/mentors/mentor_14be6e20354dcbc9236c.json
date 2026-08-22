@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_86ba3771c942aa0afe02"
+      ],
+      "ended_at": null,
+      "id": "aff_7fd3593f3f58326bc118",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_2c2494dac06eae2df2ae",
+      "source_url": "https://cs.nankai.edu.cn/info/1144/2587.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_86ba3771c942aa0afe02"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7fd3593f3f58326bc118",
+      "claim_ids": [
+        "claim_86ba3771c942aa0afe02"
+      ],
+      "is_primary": true,
+      "normalized_value": "fengchisun@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1144/2587.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fengchisun@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_86ba3771c942aa0afe02"
+    ],
+    "email": [
+      "claim_86ba3771c942aa0afe02"
+    ],
+    "name": [
+      "claim_86ba3771c942aa0afe02"
+    ],
+    "profile_url": [
+      "claim_86ba3771c942aa0afe02"
+    ],
+    "recent_papers": [
+      "claim_86ba3771c942aa0afe02"
+    ],
+    "research_directions": [
+      "claim_86ba3771c942aa0afe02"
+    ],
+    "status": [
+      "claim_86ba3771c942aa0afe02"
+    ],
+    "title": [
+      "claim_86ba3771c942aa0afe02"
+    ]
+  },
+  "id": "mentor_14be6e20354dcbc9236c",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_86ba3771c942aa0afe02"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙凤池"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7fd3593f3f58326bc118",
+      "claim_ids": [
+        "claim_86ba3771c942aa0afe02"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1144/2587.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Two-Level Framework for Place Recognition with 3D Lidar Based on Spatial Relation Graph",
+    "Fusing skeleton recognition with face-TLD for human following of mobile service robots",
+    "Optimal design of trajectory parameters and position tracking with balance for riderless bicycle",
+    "Active exploration using a scheme for autonomous allocation of landmarks",
+    "Natural Landmark Extraction in Cluttered Forested Environments",
+    "Natural Feature Based Localization in Forested Environments"
+  ],
+  "research_directions": [
+    "机器学习、智能机器人系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1144/2587.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:56Z"
+}

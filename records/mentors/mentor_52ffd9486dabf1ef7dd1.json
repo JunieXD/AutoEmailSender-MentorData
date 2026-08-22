@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_29d86c1d33f281032139"
+      ],
+      "ended_at": null,
+      "id": "aff_56c7b252df9c000a5f35",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_2c2494dac06eae2df2ae",
+      "source_url": "https://cs.nankai.edu.cn/info/1143/2588.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_29d86c1d33f281032139"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_56c7b252df9c000a5f35",
+      "claim_ids": [
+        "claim_29d86c1d33f281032139"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiemq@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1143/2588.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiemq@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_29d86c1d33f281032139"
+    ],
+    "email": [
+      "claim_29d86c1d33f281032139"
+    ],
+    "name": [
+      "claim_29d86c1d33f281032139"
+    ],
+    "profile_url": [
+      "claim_29d86c1d33f281032139"
+    ],
+    "recent_papers": [
+      "claim_29d86c1d33f281032139"
+    ],
+    "research_directions": [
+      "claim_29d86c1d33f281032139"
+    ],
+    "status": [
+      "claim_29d86c1d33f281032139"
+    ],
+    "title": [
+      "claim_29d86c1d33f281032139"
+    ]
+  },
+  "id": "mentor_52ffd9486dabf1ef7dd1",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_29d86c1d33f281032139"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢茂强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_56c7b252df9c000a5f35",
+      "claim_ids": [
+        "claim_29d86c1d33f281032139"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1143/2588.htm"
+    }
+  ],
+  "recent_papers": [
+    "Mining Functional Gene Modules by Multi-View NMF of Phenome-Genome Association. BMC Genomics. 2025.",
+    "Predicting Distant Drug-Target Interactions via a Random Walk Guided Graph Neural Network. BIBM 2024",
+    "Self-Supervised Reconstructed Graph Learning for Link Prediction in Bipartite Graphs. NeuroComputing. 2024",
+    "A Heterogeneous Ranking Contrastive Learning Method for Drug-Target Interaction Prediction. BIBM. 2023.",
+    "Detection of 1.4 μg/m3 Na+ in aerosol at a 30 m distance using 1 kHz femtosecond laser filamentation in air. Optics Express. 2023",
+    "基于CNN和光丝诱导荧光光谱的NaCl气溶胶定量分析. 中国激光. 2023",
+    "光谱预处理对FIFS检测低浓度NaCl气溶胶的影响研究. 激光与光电子学进展. 2023.",
+    "Prioritizing Disease Genes via Multi-View Nonnegative Matrix Factorization with Layer-Wise Explicit Hierarchical Constraint. BIBM 2021."
+  ],
+  "research_directions": [
+    "机器学习、软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1143/2588.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:56Z"
+}

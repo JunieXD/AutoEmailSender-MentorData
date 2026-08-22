@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4bf8413879522e690e4c"
+      ],
+      "ended_at": null,
+      "id": "aff_dcc3d4b75fbf710a621e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_2c2494dac06eae2df2ae",
+      "source_url": "https://cs.nankai.edu.cn/info/1213/3536.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4bf8413879522e690e4c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dcc3d4b75fbf710a621e",
+      "claim_ids": [
+        "claim_4bf8413879522e690e4c"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunyf@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1213/3536.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sunyf@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4bf8413879522e690e4c"
+    ],
+    "email": [
+      "claim_4bf8413879522e690e4c"
+    ],
+    "name": [
+      "claim_4bf8413879522e690e4c"
+    ],
+    "profile_url": [
+      "claim_4bf8413879522e690e4c"
+    ],
+    "recent_papers": [
+      "claim_4bf8413879522e690e4c"
+    ],
+    "research_directions": [
+      "claim_4bf8413879522e690e4c"
+    ],
+    "status": [
+      "claim_4bf8413879522e690e4c"
+    ],
+    "title": [
+      "claim_4bf8413879522e690e4c"
+    ]
+  },
+  "id": "mentor_b0b7cb904598ad0ba92c",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4bf8413879522e690e4c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙羽菲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dcc3d4b75fbf710a621e",
+      "claim_ids": [
+        "claim_4bf8413879522e690e4c"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1213/3536.htm"
+    }
+  ],
+  "recent_papers": [
+    "Fixing Broken Graphs: LLM-Powered Automatic Code Optimization for DNN Programs. IEEE/ACM International Conference on Automated Software Engineering (ASE), 2025.",
+    "TransCL: An Automatic CUDA-to-OpenCL Programs Transformation Framework. ACM Transactions on Architecture and Code Optimization. (2025)",
+    "MTTorch: 面向MT-3000芯片和Transformer模型的PyTorch算子库实现与优化[J].软件学报, 2025,36(8):3896-3916",
+    "玲珑:一个小规模的高质量中文预训练语言模型[J]. 计算机研究与发展, 2024, 62(3):682-693",
+    "Deep Feature Surgery: Towards Accurate and Efficient Multi-exit Networks[C]//European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2024: 435-451.",
+    "Opencl-pytorch: an OpenCL-based extension of PyTorch. CCF Transactions on High Performance Computing, 6, 287–300 (2024)",
+    "一种面向通用计算设备的自动流水线并行训练框架[J]. 计算机科学, 2024,51(12):129-136.",
+    "oclCUB: An OpenCL parallel computing library for deep learning operators[J]. CCF Transactions on High Performance Computing, 6,319–329 (2024)"
+  ],
+  "research_directions": [
+    "深度学习、异构计算、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1213/3536.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:56Z"
+}

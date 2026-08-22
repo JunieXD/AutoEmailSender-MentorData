@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_36c8e17807f90841b1ab"
+      ],
+      "ended_at": null,
+      "id": "aff_d8c7bba6beff1d7b890f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_2c2494dac06eae2df2ae",
+      "source_url": "https://cs.nankai.edu.cn/info/1099/2579.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_36c8e17807f90841b1ab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d8c7bba6beff1d7b890f",
+      "claim_ids": [
+        "claim_36c8e17807f90841b1ab"
+      ],
+      "is_primary": true,
+      "normalized_value": "maling@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1099/2579.htm",
+      "status": "current",
+      "type": "email",
+      "value": "maling@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_36c8e17807f90841b1ab"
+    ],
+    "email": [
+      "claim_36c8e17807f90841b1ab"
+    ],
+    "name": [
+      "claim_36c8e17807f90841b1ab"
+    ],
+    "profile_url": [
+      "claim_36c8e17807f90841b1ab"
+    ],
+    "recent_papers": [
+      "claim_36c8e17807f90841b1ab"
+    ],
+    "research_directions": [
+      "claim_36c8e17807f90841b1ab"
+    ],
+    "status": [
+      "claim_36c8e17807f90841b1ab"
+    ],
+    "title": [
+      "claim_36c8e17807f90841b1ab"
+    ]
+  },
+  "id": "mentor_8576aa8afde184d8beb2",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_36c8e17807f90841b1ab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马玲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d8c7bba6beff1d7b890f",
+      "claim_ids": [
+        "claim_36c8e17807f90841b1ab"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1099/2579.htm"
+    }
+  ],
+  "recent_papers": [
+    "A new method of content based medical image retrieval and its applications to CT imaging sign retrieval",
+    "Learning with Distribution of Optimized Features for Recognizing Common CT Imaging Signs of Lung Diseases",
+    "A new classifier fusion method based on historical and on-line classification reliability for recognizing common CT imaging signs of lung diseases",
+    "Recognizing common CT imaging signs of lung diseases through a new feature selection method based on Fisher criterion and genetic optimization",
+    "A Random Walk based Prostate Segmentation Algorithm from 3D Ultrasound Images",
+    "Combination Learning for Prostate Segmentation on 3D CT Images",
+    "一种球面点投影关系的推理方法",
+    "Automatic segmentation of the prostate on CT images using deep learning and multi-atlas fusion"
+  ],
+  "research_directions": [
+    "医学图像处理与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1099/2579.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:56Z"
+}

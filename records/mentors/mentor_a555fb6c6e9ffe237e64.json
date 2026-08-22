@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5596d29b1a3bcf56a0eb"
+      ],
+      "ended_at": null,
+      "id": "aff_82c2e2292af450e199c8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_4a11b3dc8dbbaa8fdd66",
+      "source_url": "https://cs.nankai.edu.cn/info/1194/3486.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_5596d29b1a3bcf56a0eb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_82c2e2292af450e199c8",
+      "claim_ids": [
+        "claim_5596d29b1a3bcf56a0eb"
+      ],
+      "is_primary": true,
+      "normalized_value": "wwgu@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1194/3486.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wwgu@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ],
+    "email": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ],
+    "name": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ],
+    "profile_url": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ],
+    "recent_papers": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ],
+    "research_directions": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ],
+    "status": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ],
+    "title": [
+      "claim_5596d29b1a3bcf56a0eb"
+    ]
+  },
+  "id": "mentor_a555fb6c6e9ffe237e64",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5596d29b1a3bcf56a0eb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "辜文蔚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_82c2e2292af450e199c8",
+      "claim_ids": [
+        "claim_5596d29b1a3bcf56a0eb"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1194/3486.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Multi-Agent Framework for the End-to-End Automated Logging",
+    "Bridging the Delay: Lag-Aware Spatio-Temporal Causal Inference for Microservice Root Cause Analysis",
+    "Aloha: Localizing Batch Failures in Large-scale Cloud Systems via Contrast Analysis and Human-in-the-Loop Agent",
+    "KRCA: An Efficient Root Cause Analysis System in Hyper-Scale Microservice Systems via Agentic AI",
+    "Debugging the Debuggers: Failure-Anchored Structured Recovery for Software Engineering Agents",
+    "LLM-Assisted Joint Ticket and Log Analysis for Incident Triage in Intelligent and Connected Vehicles",
+    "Deployed System: Labeling the Invisible: A Scalable Framework for Labeling Fail-Slow Failures in Cloud Storage Systems",
+    "Collaborative Knowledge Distillation and Reinforcement Learning for Automated Ticket Triage in Large-Scale Production Systems"
+  ],
+  "research_directions": [
+    "多智能体驱动的智能运维、AI基础设施可靠性、多智能体系统可靠性、大模型训练可靠性"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1194/3486.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:56Z"
+}

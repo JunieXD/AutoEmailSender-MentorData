@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9fdf3f57bde0362f0ad8"
+      ],
+      "ended_at": null,
+      "id": "aff_1e18f7020023845341af",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_2c2494dac06eae2df2ae",
+      "source_url": "https://cs.nankai.edu.cn/info/1085/1126.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_9fdf3f57bde0362f0ad8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1e18f7020023845341af",
+      "claim_ids": [
+        "claim_9fdf3f57bde0362f0ad8"
+      ],
+      "is_primary": true,
+      "normalized_value": "zyz@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1085/1126.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zyz@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9fdf3f57bde0362f0ad8"
+    ],
+    "email": [
+      "claim_9fdf3f57bde0362f0ad8"
+    ],
+    "name": [
+      "claim_9fdf3f57bde0362f0ad8"
+    ],
+    "profile_url": [
+      "claim_9fdf3f57bde0362f0ad8"
+    ],
+    "research_directions": [
+      "claim_9fdf3f57bde0362f0ad8"
+    ],
+    "status": [
+      "claim_9fdf3f57bde0362f0ad8"
+    ]
+  },
+  "id": "mentor_9c3e665e9c3a228744b1",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9fdf3f57bde0362f0ad8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张玉志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1e18f7020023845341af",
+      "claim_ids": [
+        "claim_9fdf3f57bde0362f0ad8"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1085/1126.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1085/1126.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:48:56Z"
+}

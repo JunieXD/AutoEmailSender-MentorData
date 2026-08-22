@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_06c5ac8c99e0a9e7acf8"
+      ],
+      "ended_at": null,
+      "id": "aff_925aa5bbdfb9d6a64096",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_4a11b3dc8dbbaa8fdd66",
+      "source_url": "https://cs.nankai.edu.cn/info/1235/3662.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_06c5ac8c99e0a9e7acf8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_925aa5bbdfb9d6a64096",
+      "claim_ids": [
+        "claim_06c5ac8c99e0a9e7acf8"
+      ],
+      "is_primary": true,
+      "normalized_value": "mthu@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1235/3662.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mthu@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ],
+    "email": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ],
+    "name": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ],
+    "profile_url": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ],
+    "recent_papers": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ],
+    "research_directions": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ],
+    "status": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ],
+    "title": [
+      "claim_06c5ac8c99e0a9e7acf8"
+    ]
+  },
+  "id": "mentor_a206107d7064e75e8d42",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_06c5ac8c99e0a9e7acf8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡梦婷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_925aa5bbdfb9d6a64096",
+      "claim_ids": [
+        "claim_06c5ac8c99e0a9e7acf8"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1235/3662.htm"
+    }
+  ],
+  "recent_papers": [
+    "DEQA: Descriptions Enhanced Question-Answering Framework for Multimodal Aspect-Based Sentiment Analysis. AAAI, 2025.",
+    "Towards Robust Information Extraction via Binomial Distribution Guided Counterpart Sequence. KDD, 2024.",
+    "Simple but Effective Compound Geometric Operations for Temporal Knowledge Graph Completion. ACL, 2024.",
+    "Tombench: Benchmarking theory of mind in large language models. ACL, 2024.",
+    "ECoK: Emotional Commonsense Knowledge Graph for Mining Emotional Gold. Findings of ACL, 2024.",
+    "Controlled text generation for large language model with dynamic attribute graphs. Findings of ACL, 2024.",
+    "BvSP: Broad-View Soft Prompting for Few-Shot Aspect Sentiment Quad Prediction. ACL, 2024.",
+    "Coreference Graph Guidance for Mind-Map Generation. AAAI, 2024."
+  ],
+  "research_directions": [
+    "自然语言处理、大模型、社交媒体内容分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1235/3662.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:56Z"
+}
