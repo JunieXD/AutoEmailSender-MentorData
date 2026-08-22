@@ -3,7 +3,7 @@
     "email": "zhengxinyi@fzu.edu.cn",
     "mentor_status": "active",
     "name": "郑新夷",
-    "organization_id": null,
+    "organization_id": "org_auto_8e2893c1f3e97fc195f4",
     "profile_url": "https://renwen.fzu.edu.cn/info/1038/3073.htm",
     "recent_papers": [
       "郑新夷,杨艳群,陈铭,Said Easa.(2022).道路危险应激的驾驶特性等级反应和评价.中国心理学预印本平台[ChinaXiv:202203.00034]",
@@ -24,29 +24,47 @@
     "submitted_university": "福州大学",
     "title": "副教授"
   },
-  "auto_eligible": false,
   "contributor": {
     "account_age_days_at_submission": 1530,
     "account_created_at": "2022-06-13T08:30:46Z",
     "github_login_at_submission": "JunieXD",
     "github_user_id": 107397009,
     "github_user_type": "User",
+    "issue_number": 116,
+    "issue_url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/116",
     "submitted_at": "2026-08-21T18:45:09Z"
   },
-  "created_at": "2026-08-21T18:45:47Z",
-  "id": "proposal_issue_116_row_14",
-  "issue": {
-    "batch_row": 14,
-    "number": 116,
-    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/116"
-  },
-  "kind": "mentor_contribution",
-  "match_status": "new",
-  "review_reasons": [
-    "unknown_university",
-    "auto_merge_disabled"
+  "evidence": [
+    {
+      "fields": [
+        "name",
+        "email",
+        "organization_id",
+        "title",
+        "research_directions",
+        "recent_papers",
+        "profile_url"
+      ],
+      "observed_at": "2026-08-21T18:45:09Z",
+      "source_url": "https://renwen.fzu.edu.cn/info/1038/3073.htm"
+    }
   ],
+  "id": "claim_95ee940a2981d86c621e",
+  "mentor_id": "mentor_a612ed75fdf09d1a9e0d",
+  "moderation": {
+    "decision_at": "2026-08-22T08:58:50Z",
+    "mode": "manual",
+    "moderator_github_user_id": 107397009,
+    "normalized_fields": [
+      "organization_id"
+    ],
+    "policy_version": 1,
+    "reason": "GitHub PR merge approval"
+  },
+  "revocation_reason": null,
+  "revoked_at": null,
   "schema_version": 1,
+  "status": "accepted",
   "submitted": {
     "email": "zhengxinyi@fzu.edu.cn",
     "mentor_status": "active",
@@ -71,6 +89,5 @@
     "submitted_school": "人文社会科学学院",
     "submitted_university": "福州大学",
     "title": "副教授"
-  },
-  "target_mentor_id": null
+  }
 }

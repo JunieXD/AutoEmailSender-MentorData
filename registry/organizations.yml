@@ -4266,3 +4266,36 @@ organizations:
   successor_id: null
   created_at: '2026-08-22T08:49:43Z'
   updated_at: '2026-08-22T08:49:43Z'
+- id: org_auto_8e432ac2ac3a7c01b4b5
+  type: school
+  canonical_name: 人文社会科学学院
+  parent_id: org_auto_7a769986594f71fd63d9
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:45Z'
+  updated_at: '2026-08-22T08:49:45Z'
+- id: org_auto_38a70f5a96efb5d4c9b2
+  type: department
+  canonical_name: 社会学系
+  parent_id: org_auto_8e432ac2ac3a7c01b4b5
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:45Z'
+  updated_at: '2026-08-22T08:49:45Z'
+- id: org_auto_8e2893c1f3e97fc195f4
+  type: department
+  canonical_name: 应用心理学系
+  parent_id: org_auto_8e432ac2ac3a7c01b4b5
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:45Z'
+  updated_at: '2026-08-22T08:49:45Z'
