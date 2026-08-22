@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bc1e5fe5e7059e96b648"
+      ],
+      "ended_at": null,
+      "id": "aff_8f35495763f088754321",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2022/0805/c2615a563914/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bc1e5fe5e7059e96b648"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8f35495763f088754321",
+      "claim_ids": [
+        "claim_bc1e5fe5e7059e96b648"
+      ],
+      "is_primary": true,
+      "normalized_value": "duhw@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2022/0805/c2615a563914/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "duhw@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bc1e5fe5e7059e96b648"
+    ],
+    "email": [
+      "claim_bc1e5fe5e7059e96b648"
+    ],
+    "name": [
+      "claim_bc1e5fe5e7059e96b648"
+    ],
+    "profile_url": [
+      "claim_bc1e5fe5e7059e96b648"
+    ],
+    "recent_papers": [
+      "claim_bc1e5fe5e7059e96b648"
+    ],
+    "research_directions": [
+      "claim_bc1e5fe5e7059e96b648"
+    ],
+    "status": [
+      "claim_bc1e5fe5e7059e96b648"
+    ],
+    "title": [
+      "claim_bc1e5fe5e7059e96b648"
+    ]
+  },
+  "id": "mentor_66c4d4a444f7699cd468",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bc1e5fe5e7059e96b648"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜宏伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8f35495763f088754321",
+      "claim_ids": [
+        "claim_bc1e5fe5e7059e96b648"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2022/0805/c2615a563914/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Boosting Medical Image Segmentation via Conditional-Synergistic Convolution and Lesion Decoupling",
+    "DBGAN:A dual-branch generative adversarial network for undersampled MRI reconstruction",
+    "EF-Net:A novel enhancement and fusion network for RGB-D saliency detection",
+    "RGB-D Salient Object Detection via 3D Convolutional Neural Networks",
+    "Lightweight pyramid network with spatial attention mechanism for accurate retinal vessel segmentation",
+    "IKWI-net: A cross-domain convolutional neural network for undersampled magnetic resonance image reconstruction",
+    "A bone age assessment system for real-world X-ray images based on convolutional neural networks",
+    "Transfer learning on T1-weighted images for brain age estimation"
+  ],
+  "research_directions": [
+    "生物医学成像、生物医学影像",
+    "深度学习及压缩感知图像重建及处理",
+    "磁共振快速成像原理及算法",
+    "谐波成像与高帧率成像原理及算法优化",
+    "先进生物医学成像系统等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2022/0805/c2615a563914/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

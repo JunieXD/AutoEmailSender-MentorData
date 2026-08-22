@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f34cd5292525552927e3"
+      ],
+      "ended_at": null,
+      "id": "aff_1b02442085f5abba73ce",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690180/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f34cd5292525552927e3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1b02442085f5abba73ce",
+      "claim_ids": [
+        "claim_f34cd5292525552927e3"
+      ],
+      "is_primary": true,
+      "normalized_value": "qiyukang@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690180/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qiyukang@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f34cd5292525552927e3"
+    ],
+    "email": [
+      "claim_f34cd5292525552927e3"
+    ],
+    "name": [
+      "claim_f34cd5292525552927e3"
+    ],
+    "profile_url": [
+      "claim_f34cd5292525552927e3"
+    ],
+    "recent_papers": [
+      "claim_f34cd5292525552927e3"
+    ],
+    "research_directions": [
+      "claim_f34cd5292525552927e3"
+    ],
+    "status": [
+      "claim_f34cd5292525552927e3"
+    ],
+    "title": [
+      "claim_f34cd5292525552927e3"
+    ]
+  },
+  "id": "mentor_159474c1a2de5081e98e",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f34cd5292525552927e3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "康奇宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1b02442085f5abba73ce",
+      "claim_ids": [
+        "claim_f34cd5292525552927e3"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690180/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Efficient training of neural fractional-order differential equation via adjoint backpropagation, Proc. AAAI Conference on Artificial Intelligence (AAAI), Philadelphia, USA, Feb. 2025.",
+    "Unleashing the potential of fractional calculus in graph neural networks with FROND, Proc. International Conference on Learning Representations (ICLR), Vienna, Austria, May 2024, Spotlight.",
+    "Distributed-order fractional graph operating network, Advances in Neural Information Processing Systems (NeurIPS), Vancouver, Canada, Dec. 2024, Spotlight.",
+    "Coupling graph neural networks with fractional order continuous dynamics: A robustness study, Proc. AAAI Conference on Artificial Intelligence, Vancouver, Canada, Feb. 2024.",
+    "Adversarial robustness in graph neural networks: A Hamiltonian approach, Advances in Neural Information Processing Systems (NeurIPS), New Orleans, USA, Dec. 2023, Spotlight.",
+    "Node embedding from neural Hamiltonian orbits in graph neural networks, Proc. International Conference on Machine Learning (ICML), Hawaii, USA, Jul. 2023",
+    "Stable neural ODE with Lyapunov-stable equilibrium points for defending against adversarial attacks, Advances in Neural Information Processing Systems (NeurIPS), virtual, Dec. 2021.",
+    "Task recommendation in crowdsourcing based on learning preferences and reliabilities, IEEE Transactions on Services Computing, vol. 15, no. 4, pp. 1785–1798, 2022."
+  ],
+  "research_directions": [
+    "深度学习安全可信问题、物理动力系统与机器学习、大模型高效计算问题、类脑智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690180/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

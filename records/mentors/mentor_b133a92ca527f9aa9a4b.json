@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b9a4f461a1b69acfd073"
+      ],
+      "ended_at": null,
+      "id": "aff_a9341d789fa380e078bf",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19474/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b9a4f461a1b69acfd073"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a9341d789fa380e078bf",
+      "claim_ids": [
+        "claim_b9a4f461a1b69acfd073"
+      ],
+      "is_primary": true,
+      "normalized_value": "wdwang@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19474/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wdwang@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b9a4f461a1b69acfd073"
+    ],
+    "email": [
+      "claim_b9a4f461a1b69acfd073"
+    ],
+    "name": [
+      "claim_b9a4f461a1b69acfd073"
+    ],
+    "profile_url": [
+      "claim_b9a4f461a1b69acfd073"
+    ],
+    "research_directions": [
+      "claim_b9a4f461a1b69acfd073"
+    ],
+    "status": [
+      "claim_b9a4f461a1b69acfd073"
+    ],
+    "title": [
+      "claim_b9a4f461a1b69acfd073"
+    ]
+  },
+  "id": "mentor_b133a92ca527f9aa9a4b",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b9a4f461a1b69acfd073"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王卫东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a9341d789fa380e078bf",
+      "claim_ids": [
+        "claim_b9a4f461a1b69acfd073"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19474/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线通信、雷达系统、微波毫米波技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2010/0825/c2648a19474/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

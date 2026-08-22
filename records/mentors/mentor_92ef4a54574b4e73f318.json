@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_886360a43a89ae398420"
+      ],
+      "ended_at": null,
+      "id": "aff_5b36d5761580930b60f8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2017/0807/c2648a190580/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_886360a43a89ae398420"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5b36d5761580930b60f8",
+      "claim_ids": [
+        "claim_886360a43a89ae398420"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiewangx@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2017/0807/c2648a190580/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiewangx@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_886360a43a89ae398420"
+    ],
+    "email": [
+      "claim_886360a43a89ae398420"
+    ],
+    "name": [
+      "claim_886360a43a89ae398420"
+    ],
+    "profile_url": [
+      "claim_886360a43a89ae398420"
+    ],
+    "research_directions": [
+      "claim_886360a43a89ae398420"
+    ],
+    "status": [
+      "claim_886360a43a89ae398420"
+    ],
+    "title": [
+      "claim_886360a43a89ae398420"
+    ]
+  },
+  "id": "mentor_92ef4a54574b4e73f318",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_886360a43a89ae398420"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5b36d5761580930b60f8",
+      "claim_ids": [
+        "claim_886360a43a89ae398420"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2017/0807/c2648a190580/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图机器学习(图学习基础大模型研究、基于知识图谱的认知大模型研究、基于图机器学习的量子化学算法与PDE求解器研究)、学习优化(运筹优化求解器开发、芯片电子设计自动化)、强化学习(深度强化学习算法研究、自动驾驶智能决策规划)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2017/0807/c2648a190580/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4decae5768feddfb64de"
+      ],
+      "ended_at": null,
+      "id": "aff_eb9da6502e433e719688",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2011/0311/c2648a19247/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4decae5768feddfb64de"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eb9da6502e433e719688",
+      "claim_ids": [
+        "claim_4decae5768feddfb64de"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhling@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2011/0311/c2648a19247/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhling@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4decae5768feddfb64de"
+    ],
+    "email": [
+      "claim_4decae5768feddfb64de"
+    ],
+    "name": [
+      "claim_4decae5768feddfb64de"
+    ],
+    "profile_url": [
+      "claim_4decae5768feddfb64de"
+    ],
+    "research_directions": [
+      "claim_4decae5768feddfb64de"
+    ],
+    "status": [
+      "claim_4decae5768feddfb64de"
+    ],
+    "title": [
+      "claim_4decae5768feddfb64de"
+    ]
+  },
+  "id": "mentor_169c80125bf7b5240a0a",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4decae5768feddfb64de"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "凌震华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eb9da6502e433e719688",
+      "claim_ids": [
+        "claim_4decae5768feddfb64de"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2011/0311/c2648a19247/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "语音信号处理、自然语言处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2011/0311/c2648a19247/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

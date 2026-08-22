@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0db42d6bea778fe90b7"
+      ],
+      "ended_at": null,
+      "id": "aff_ee0c8bb8521b68c6e1f7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2011/0314/c2615a19383/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0db42d6bea778fe90b7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ee0c8bb8521b68c6e1f7",
+      "claim_ids": [
+        "claim_d0db42d6bea778fe90b7"
+      ],
+      "is_primary": true,
+      "normalized_value": "guowu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2011/0314/c2615a19383/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guowu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0db42d6bea778fe90b7"
+    ],
+    "email": [
+      "claim_d0db42d6bea778fe90b7"
+    ],
+    "name": [
+      "claim_d0db42d6bea778fe90b7"
+    ],
+    "profile_url": [
+      "claim_d0db42d6bea778fe90b7"
+    ],
+    "recent_papers": [
+      "claim_d0db42d6bea778fe90b7"
+    ],
+    "research_directions": [
+      "claim_d0db42d6bea778fe90b7"
+    ],
+    "status": [
+      "claim_d0db42d6bea778fe90b7"
+    ],
+    "title": [
+      "claim_d0db42d6bea778fe90b7"
+    ]
+  },
+  "id": "mentor_775a93f7994ea50fe92a",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0db42d6bea778fe90b7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭武"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ee0c8bb8521b68c6e1f7",
+      "claim_ids": [
+        "claim_d0db42d6bea778fe90b7"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2011/0314/c2615a19383/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "W. Guo, Zhao Zhang, Yanhua Long,Lirong Dai, N-gram Nearest Neighbor Algorithm For Voice Password System, Proc. ICASSP 2010, pp. 4438-4441",
+    "W. Guo, Y. H. Long, Y. J. Li, et al., Ifly System for the NIST 2008 Speaker Recognition Evaluation, Proc. ICASSP 2009, Taipei.",
+    "W. Guo, L. Pan, R. H. Wang, L. R. Dai, Angle of Models Distance as Test Algorithm in Speaker Verification,Proc. FSKD 2007, vol. 4, pp.231~234.",
+    "W. Guo, Y. J. Li, L. R. Dai, Simplified Factor Analysis in Speaker Verification, Proc. ICALIP 2008, vol. 2, pp.1081-1084.",
+    "郭武, 李轶杰, 戴礼荣, 王仁华,采用非监督得分规整和因子分析的说话人确认,电子学报,2009,4",
+    "郭武, 戴礼荣, 王仁华, 简化的信道因子估计, 清华大学学报, 2008, 48(s.1), pp.664-667.",
+    "郭武, 戴礼荣, 王仁华, 采用主成分分析的特征映射, 自动化学报, 2008, 34(8), pp. 876-879.",
+    "郭武, 戴礼荣, 王仁华, 采用高斯概率分布和支持向量机的说话人确认,模式识别与人工智能, 2008, 21(6), pp.794-798."
+  ],
+  "research_directions": [
+    "语音识别、说话人识别、语种识别、音频检索"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2011/0314/c2615a19383/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

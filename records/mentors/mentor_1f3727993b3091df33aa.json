@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d62d5d0a35c520684c72"
+      ],
+      "ended_at": null,
+      "id": "aff_0acfc700affd3f7f3504",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2012/1218/c2648a19500/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d62d5d0a35c520684c72"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0acfc700affd3f7f3504",
+      "claim_ids": [
+        "claim_d62d5d0a35c520684c72"
+      ],
+      "is_primary": true,
+      "normalized_value": "dongeliu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2012/1218/c2648a19500/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dongeliu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d62d5d0a35c520684c72"
+    ],
+    "email": [
+      "claim_d62d5d0a35c520684c72"
+    ],
+    "name": [
+      "claim_d62d5d0a35c520684c72"
+    ],
+    "profile_url": [
+      "claim_d62d5d0a35c520684c72"
+    ],
+    "recent_papers": [
+      "claim_d62d5d0a35c520684c72"
+    ],
+    "research_directions": [
+      "claim_d62d5d0a35c520684c72"
+    ],
+    "status": [
+      "claim_d62d5d0a35c520684c72"
+    ],
+    "title": [
+      "claim_d62d5d0a35c520684c72"
+    ]
+  },
+  "id": "mentor_1f3727993b3091df33aa",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d62d5d0a35c520684c72"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0acfc700affd3f7f3504",
+      "claim_ids": [
+        "claim_d62d5d0a35c520684c72"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2012/1218/c2648a19500/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Tong Xu, Dong Liu, Huanhuan Cao, Enhong Chen, Jilei Tian: Towards annotating media contents through social diffusion analysis. 2012 IEEE Int. Conf. Data Mining (ICDM 2012).",
+    "Dong Liu, Xiaoyan Sun, Feng Wu: Inpainting with image patches for compression. J. Vis. Commun. Image R. vol. 23, no. 1, pp. 100—113, Jan 2012.",
+    "Dong Liu, Xiaoyan Sun, Feng Wu: Improving inverse wavelet transform by compressive sensing decoding with deconvolution. 2009 Data Compression Conf. (DCC 2009).",
+    "Dong Liu, Xiaoyan Sun, Feng Wu, Ya-Qin Zhang: Edge-oriented uniform intra prediction. IEEE Trans. Image Process. vol. 17, no. 10, pp. 1827—1836, Oct 2008.",
+    "Dong Liu, Xiaoyan Sun, Feng Wu: Manipulating image patches for compression. 2008 IEEE Int. Conf. Multimedia & Expo (ICME 2008).",
+    "Dong Liu, Xiaoyan Sun, Feng Wu: Intra prediction via edge-based inpainting. 2008 Data Compression Conf. (DCC 2008).",
+    "Dong Liu, Xiaoyan Sun, Feng Wu, Shipeng Li, Ya-Qin Zhang: Image compression with edge-based inpainting. IEEE Trans. Circuits Syst. Video Technol. vol. 17, no. 10, 1273—1287, Oct 2007."
+  ],
+  "research_directions": [
+    "互联网数据挖掘、多媒体信息处理、图像与视频压缩等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2012/1218/c2648a19500/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

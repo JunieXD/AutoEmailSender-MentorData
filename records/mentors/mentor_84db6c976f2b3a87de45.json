@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5f5be1169b55a29397ca"
+      ],
+      "ended_at": null,
+      "id": "aff_4bcf3a69181b66067d6b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2014/0423/c2648a20109/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5f5be1169b55a29397ca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4bcf3a69181b66067d6b",
+      "claim_ids": [
+        "claim_5f5be1169b55a29397ca"
+      ],
+      "is_primary": true,
+      "normalized_value": "fengwu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2014/0423/c2648a20109/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fengwu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5f5be1169b55a29397ca"
+    ],
+    "email": [
+      "claim_5f5be1169b55a29397ca"
+    ],
+    "name": [
+      "claim_5f5be1169b55a29397ca"
+    ],
+    "profile_url": [
+      "claim_5f5be1169b55a29397ca"
+    ],
+    "research_directions": [
+      "claim_5f5be1169b55a29397ca"
+    ],
+    "status": [
+      "claim_5f5be1169b55a29397ca"
+    ],
+    "title": [
+      "claim_5f5be1169b55a29397ca"
+    ]
+  },
+  "id": "mentor_84db6c976f2b3a87de45",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5f5be1169b55a29397ca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴枫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4bcf3a69181b66067d6b",
+      "claim_ids": [
+        "claim_5f5be1169b55a29397ca"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2014/0423/c2648a20109/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "视频编码与通信、多媒体内容分析、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2014/0423/c2648a20109/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}

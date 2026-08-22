@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5f33cd7b6ab910082617"
+      ],
+      "ended_at": null,
+      "id": "aff_9ec9eb79d848060e939a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:04Z",
+      "organization_id": "org_auto_9580bad31b20d0f7966f",
+      "source_url": "https://eeis.ustc.edu.cn/2024/0613/c2648a643777/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5f33cd7b6ab910082617"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9ec9eb79d848060e939a",
+      "claim_ids": [
+        "claim_5f33cd7b6ab910082617"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuwu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:04Z",
+      "source_url": "https://eeis.ustc.edu.cn/2024/0613/c2648a643777/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuwu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5f33cd7b6ab910082617"
+    ],
+    "email": [
+      "claim_5f33cd7b6ab910082617"
+    ],
+    "name": [
+      "claim_5f33cd7b6ab910082617"
+    ],
+    "profile_url": [
+      "claim_5f33cd7b6ab910082617"
+    ],
+    "recent_papers": [
+      "claim_5f33cd7b6ab910082617"
+    ],
+    "research_directions": [
+      "claim_5f33cd7b6ab910082617"
+    ],
+    "status": [
+      "claim_5f33cd7b6ab910082617"
+    ],
+    "title": [
+      "claim_5f33cd7b6ab910082617"
+    ]
+  },
+  "id": "mentor_37a1e02fda7dd23c2dd4",
+  "last_verified_at": "2026-08-21T18:53:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5f33cd7b6ab910082617"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘武"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9ec9eb79d848060e939a",
+      "claim_ids": [
+        "claim_5f33cd7b6ab910082617"
+      ],
+      "observed_at": "2026-08-21T18:53:04Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2024/0613/c2648a643777/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "HumanNeRF-SE: A Simple yet Effective Approach to Animate HumanNeRF with Diverse Poses,CVPR 2024",
+    "Learning Monocular Regression of 3D People in Crowds via Scene-Aware Blending and De-Occlusion. IEEE Trans. Multim. 26: 2289-2302 (2024)",
+    "A Generative-Based Image Fusion Strategy for Visible-Infrared Person Re-Identification. IEEE Trans. Circuits Syst. Video Technol. 34(1): 518-533 (2024)",
+    "Recent Advances of Monocular 2D and 3D Human Pose Estimation: A Deep Learning Perspective. ACM Comput. Surv. 55(4): 80:1-80:41 (2023)",
+    "TRACE: Temporal Regression of 5D Avatars with Dynamic Cameras in 3D Environments, CVPR 2023: 8856-8866",
+    "Learning to Segment Every Referring Object Point by Point, CVPR 2023: 3021-3030",
+    "RIO: A Benchmark for Reasoning Intention-Oriented Objects in Open Environments. NeurIPS 2023",
+    "Parsing is All You Need for Accurate Gait Recognition in the Wild. ACM Multimedia 2023: 116-124"
+  ],
+  "research_directions": [
+    "多模态大模型,视频生成模型,基于多模态大模型的多智能体系统,多媒体分析与搜索,多模态人体行为分析,通用目标重识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:04Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2024/0613/c2648a643777/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:04Z"
+}
