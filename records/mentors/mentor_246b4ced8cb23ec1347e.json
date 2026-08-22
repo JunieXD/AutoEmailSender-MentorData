@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_34a379eb1b40f670b451"
+      ],
+      "ended_at": null,
+      "id": "aff_343eb8c06d3b71c84024",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3271.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_34a379eb1b40f670b451"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_343eb8c06d3b71c84024",
+      "claim_ids": [
+        "claim_34a379eb1b40f670b451"
+      ],
+      "is_primary": true,
+      "normalized_value": "limunan@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3271.htm",
+      "status": "current",
+      "type": "email",
+      "value": "limunan@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_34a379eb1b40f670b451"
+    ],
+    "email": [
+      "claim_34a379eb1b40f670b451"
+    ],
+    "name": [
+      "claim_34a379eb1b40f670b451"
+    ],
+    "profile_url": [
+      "claim_34a379eb1b40f670b451"
+    ],
+    "recent_papers": [
+      "claim_34a379eb1b40f670b451"
+    ],
+    "research_directions": [
+      "claim_34a379eb1b40f670b451"
+    ],
+    "status": [
+      "claim_34a379eb1b40f670b451"
+    ],
+    "title": [
+      "claim_34a379eb1b40f670b451"
+    ]
+  },
+  "id": "mentor_246b4ced8cb23ec1347e",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_34a379eb1b40f670b451"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李沐南"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_343eb8c06d3b71c84024",
+      "claim_ids": [
+        "claim_34a379eb1b40f670b451"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/3271.htm"
+    }
+  ],
+  "recent_papers": [
+    "Li Munan, Liu Kai, Hongbo Liu, Zheng Zhao, Tomas E Ward, Wuxindong. Heterogeneous Meta-Path Graph Learning for Higher-order Social Recommendation. ACM Transactions on Knowledge Discovery from Data 18.8 (2024): 1-25.",
+    "Li Munan, Hongbo Liu, Xiangdong Jiang, Zheng Zhao, and Tianhao Zhang. SENSE: An unsupervised semantic learning model for cross-platform vulnerability search. Computers & Security, 2023, 135: 103500.",
+    "Zhenyy Mao, Jialong Li, Dongming Jin, Munan Li, Kenji Tei. Multi-role consensus through llms discussions for vulnerability detection. In: 2024 IEEE 24th International Conference on Software Quality, Reliability, and Security Companion (QRS-C). IEEE, 2024. p. 1318-1319.",
+    "Jinyu Cai, Jialong Li, Mingyue Zhang, Munan Li, Chen-Shu Wang, Kenji Tei. Language evolution for evading social media regulation via llm-based multi-agent simulation. In: 2024 IEEE Congress on Evolutionary Computation (CEC). IEEE, 2024. p. 1-10."
+  ],
+  "research_directions": [
+    "可信人工智能",
+    "图神经网络",
+    "软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/3271.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

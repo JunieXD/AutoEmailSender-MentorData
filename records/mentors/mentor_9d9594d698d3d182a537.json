@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c0ca2d157f736e90e1d5"
+      ],
+      "ended_at": null,
+      "id": "aff_fcacb30183c47646bac2",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3111.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c0ca2d157f736e90e1d5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fcacb30183c47646bac2",
+      "claim_ids": [
+        "claim_c0ca2d157f736e90e1d5"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangluzhi@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3111.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangluzhi@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c0ca2d157f736e90e1d5"
+    ],
+    "email": [
+      "claim_c0ca2d157f736e90e1d5"
+    ],
+    "name": [
+      "claim_c0ca2d157f736e90e1d5"
+    ],
+    "profile_url": [
+      "claim_c0ca2d157f736e90e1d5"
+    ],
+    "recent_papers": [
+      "claim_c0ca2d157f736e90e1d5"
+    ],
+    "research_directions": [
+      "claim_c0ca2d157f736e90e1d5"
+    ],
+    "status": [
+      "claim_c0ca2d157f736e90e1d5"
+    ],
+    "title": [
+      "claim_c0ca2d157f736e90e1d5"
+    ]
+  },
+  "id": "mentor_9d9594d698d3d182a537",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c0ca2d157f736e90e1d5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王露芝"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fcacb30183c47646bac2",
+      "claim_ids": [
+        "claim_c0ca2d157f736e90e1d5"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/3111.htm"
+    }
+  ],
+  "recent_papers": [
+    "Luzhi Wang, Dongxiao He, He Zhang, Yixin Liu, Wenjie Wang, Shirui Pan, Di Jin, Tat-Seng Chua. GOODAT: towards test-time graph out-of-distribution detection. AAAI-24, 15537-15545.(CCF-A类会议长文,Oral,1.77%)",
+    "Luzhi Wang, Yizhen Zheng, Di Jin, Fuyi Li, Yongliang Qiao, Shirui Pan. Contrastive graph similarity networks. ACM Transactions on the Web (TWEB), 2024, 18(2): 1-20.(ACM汇刊论文,IF: 3.50)",
+    "Di Jin, Luzhi Wang, Yizhen Zheng, Guojie Song, Fei Jiang, Xiang Li, Wei Lin, Shirui Pan. Dual intent enhanced graph neural network for session-based new item recommendation. WWW-23, 684-693.(CCF-A类会议长文,Oral,攻读博士期间导师一作)",
+    "Di Jin, Luzhi Wang, Yizhen Zheng, Xiang Li, Fei Jiang, Wei Lin, Shirui Pan. CGMN: a contrastive graph matching network for self-supervised graph similarity learning. IJCAI-22, 2101-2107.(CCF-A类会议长文,Long Oral,3.75%,攻读博士期间导师一作)",
+    "Di Jin, Luzhi Wang, He Zhang, Yizhen Zheng, Weiping Ding, Feng Xia, Shirui Pan. A survey on fairness-aware recommender systems. Information Fusion, 2023, 100(101906), 1-22.(中科院一区期刊,IF: 18.60,攻读博士期间导师一作)"
+  ],
+  "research_directions": [
+    "图机器学习、图推荐系统、大语言模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/3111.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

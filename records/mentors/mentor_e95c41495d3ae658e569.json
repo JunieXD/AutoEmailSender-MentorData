@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5169984388244236c22e"
+      ],
+      "ended_at": null,
+      "id": "aff_fe3cb3a5e69a93696cb5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1951.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5169984388244236c22e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fe3cb3a5e69a93696cb5",
+      "claim_ids": [
+        "claim_5169984388244236c22e"
+      ],
+      "is_primary": true,
+      "normalized_value": "bzhang@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1951.htm",
+      "status": "current",
+      "type": "email",
+      "value": "bzhang@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5169984388244236c22e"
+    ],
+    "email": [
+      "claim_5169984388244236c22e"
+    ],
+    "name": [
+      "claim_5169984388244236c22e"
+    ],
+    "profile_url": [
+      "claim_5169984388244236c22e"
+    ],
+    "recent_papers": [
+      "claim_5169984388244236c22e"
+    ],
+    "research_directions": [
+      "claim_5169984388244236c22e"
+    ],
+    "status": [
+      "claim_5169984388244236c22e"
+    ],
+    "title": [
+      "claim_5169984388244236c22e"
+    ]
+  },
+  "id": "mentor_e95c41495d3ae658e569",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5169984388244236c22e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fe3cb3a5e69a93696cb5",
+      "claim_ids": [
+        "claim_5169984388244236c22e"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/1951.htm"
+    }
+  ],
+  "recent_papers": [
+    "Where are they going? Predicting human behaviors in crowded scenes.",
+    "Embedding group and obstacle information in LSTM networks for human trajectory prediction in crowded scenes.",
+    "Crowd Counting Based on Attention-Guided Multi-Scale Fusion Networks.",
+    "STENet: A hybrid spatio-temporal embedding network for human trajectory forecasting.",
+    "Segmentation of Discriminative Patches in Human Activity Videos.",
+    "A hierarchical framework for motion trajectory forecasting based on modality sampling.",
+    "Group LSTM: Group Trajectory Prediction in Crowded Scenarios.",
+    "Data-driven Crowd Simulation."
+  ],
+  "research_directions": [
+    "计算机视觉、模式识别、机器学习、多媒体技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/1951.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

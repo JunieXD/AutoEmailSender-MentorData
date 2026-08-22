@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_de12899cd8934466f406"
+      ],
+      "ended_at": null,
+      "id": "aff_691b43f1499ba1ebc6d3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1881.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_de12899cd8934466f406"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_691b43f1499ba1ebc6d3",
+      "claim_ids": [
+        "claim_de12899cd8934466f406"
+      ],
+      "is_primary": true,
+      "normalized_value": "guoqiang.hu@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1881.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guoqiang.hu@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_de12899cd8934466f406"
+    ],
+    "email": [
+      "claim_de12899cd8934466f406"
+    ],
+    "name": [
+      "claim_de12899cd8934466f406"
+    ],
+    "profile_url": [
+      "claim_de12899cd8934466f406"
+    ],
+    "recent_papers": [
+      "claim_de12899cd8934466f406"
+    ],
+    "research_directions": [
+      "claim_de12899cd8934466f406"
+    ],
+    "status": [
+      "claim_de12899cd8934466f406"
+    ]
+  },
+  "id": "mentor_79926808ac343d6b3287",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_de12899cd8934466f406"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡国强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_691b43f1499ba1ebc6d3",
+      "claim_ids": [
+        "claim_de12899cd8934466f406"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/1881.htm"
+    }
+  ],
+  "recent_papers": [
+    "Discovering Hidden Brain Network Responses to Naturalistic Stimuli via Tensor Component Analysis of Multi-Subject FMRI Data",
+    "Snowball ICA: A Model Order Free Independent Component Analysis Strategy for Functional Magnetic Resonance Imaging Data",
+    "Frequency specific co-activation pattern analysis via sparse nonnegative tensor decomposition",
+    "Tensor clustering on outer-product of Coefficient and Component Matrices of Independent Component Analysis for Reliable Functional Magnetic Resonance Imaging Data Decomposition",
+    "Assessment of Nonnegative Matrix Factorization Algorithms for Electroencephalography Spectral Analysis",
+    "Examining Stability of Independent Component Analysis based on Coefficient and Component Matrices for Voxel-based Morphometry of Structural Magnetic Resonance Imaging",
+    "Consistency of Independent Component Analysis for FMRI",
+    "An efficient functional magnetic resonance imaging data reduction strategy using neighborhood preserving embedding algorithm"
+  ],
+  "research_directions": [
+    "脑信号分析与处理、神经影像、功能性磁共振成像、盲源分离、张量分解"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/1881.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:43:58Z"
+}

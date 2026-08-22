@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3f032f078f24d4206a26"
+      ],
+      "ended_at": null,
+      "id": "aff_15e46ef7377d775e8794",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1861.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_3f032f078f24d4206a26"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_15e46ef7377d775e8794",
+      "claim_ids": [
+        "claim_3f032f078f24d4206a26"
+      ],
+      "is_primary": true,
+      "normalized_value": "xmhan@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1861.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xmhan@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3f032f078f24d4206a26"
+    ],
+    "email": [
+      "claim_3f032f078f24d4206a26"
+    ],
+    "name": [
+      "claim_3f032f078f24d4206a26"
+    ],
+    "profile_url": [
+      "claim_3f032f078f24d4206a26"
+    ],
+    "recent_papers": [
+      "claim_3f032f078f24d4206a26"
+    ],
+    "research_directions": [
+      "claim_3f032f078f24d4206a26"
+    ],
+    "status": [
+      "claim_3f032f078f24d4206a26"
+    ],
+    "title": [
+      "claim_3f032f078f24d4206a26"
+    ]
+  },
+  "id": "mentor_095a97abd75e3eb5e1fc",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3f032f078f24d4206a26"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩秀梅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_15e46ef7377d775e8794",
+      "claim_ids": [
+        "claim_3f032f078f24d4206a26"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/1861.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xiumei Han, et al. \"Data-driven optimal control for aero-engines with fuel saturation constraints in transient state.\" Neurocomputing (2025): 131941.",
+    "Xiumei Han, et al. \"Trajectory tracking control for underactuated autonomous vehicles via adaptive dynamic programming.\" Journal of the Franklin Institute 361.1 (2024): 474-488.",
+    "Xiumei Han, et al. \"Optimal event‐triggered trajectory tracking control for under‐actuated autonomous underwater vehicles with adaptive dynamic programming.\" Asian Journal of Control(2025).",
+    "Xiumei Han, Xudong Zhao, Hamid Reza Karimi, Ding Wang, Guangdeng Zong,Adaptive optimal control for unknown constrained nonlinear systems with a novel quasi-model network, IEEE Transactions on Neural Networks and Learning Systems, 2022. 07, 33(7), 2867-2878, DOI: 10.1109/TNNLS.2020.3046614.",
+    "Xiumei Han, Xudong Zhao, Tao Sun, Yuhu Wu, Ning Xu, Guangdeng Zong, Event-triggered optimal control for discrete-time switched nonlinear systems with constrained control input, IEEE Transactions on System, Man, Cybernetics: Systems, 2020, 51(12): 7850-7859, DOI:10.1109/TSMC.2020.2987136.",
+    "Xiumei Han, Haiqin Qin, Ning Xu, Xudong Zhao, An event-triggered integer-mixed adaptive dynamic programming for switched nonlinear systems with bounded inputs, International Journal of Robust and Nonlinear Control, 2021.09, 31(15): 7280-7297, DOI: 10.1002/rnc.566.",
+    "Xiumei Han, Mengnan Hao, Peng Li, Xudong Zhao, Ning Xu, Quantized optimal output feedback control and optimal triggering signal co-design for unknown discrete-time nonlinear systems, Optimal Control Applications and Methods,2022.05, 43(3): 962-978, DOI: 10.1002/oca.2868.",
+    "Xiumei Han, Xudong Zhao, Ding Wang, Bohui Wang, Event-triggered-based online integral reinforcement learning for optimal control of unknown constrained nonlinear systems, International Journal of Control, DOI:10.1080/00207279.2022.2137852."
+  ],
+  "research_directions": [
+    "水下机器人轨迹跟踪控制、神经网络、自适应动态规划、模型预测控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/1861.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

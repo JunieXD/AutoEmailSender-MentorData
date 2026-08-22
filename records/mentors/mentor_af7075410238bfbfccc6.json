@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_466cfda6ae4683f7d1ca"
+      ],
+      "ended_at": null,
+      "id": "aff_2084f0ec2ed7ee19a546",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3131.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_466cfda6ae4683f7d1ca"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2084f0ec2ed7ee19a546",
+      "claim_ids": [
+        "claim_466cfda6ae4683f7d1ca"
+      ],
+      "is_primary": true,
+      "normalized_value": "kesong@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3131.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kesong@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_466cfda6ae4683f7d1ca"
+    ],
+    "email": [
+      "claim_466cfda6ae4683f7d1ca"
+    ],
+    "name": [
+      "claim_466cfda6ae4683f7d1ca"
+    ],
+    "profile_url": [
+      "claim_466cfda6ae4683f7d1ca"
+    ],
+    "recent_papers": [
+      "claim_466cfda6ae4683f7d1ca"
+    ],
+    "research_directions": [
+      "claim_466cfda6ae4683f7d1ca"
+    ],
+    "status": [
+      "claim_466cfda6ae4683f7d1ca"
+    ],
+    "title": [
+      "claim_466cfda6ae4683f7d1ca"
+    ]
+  },
+  "id": "mentor_af7075410238bfbfccc6",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_466cfda6ae4683f7d1ca"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋柯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2084f0ec2ed7ee19a546",
+      "claim_ids": [
+        "claim_466cfda6ae4683f7d1ca"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/3131.htm"
+    }
+  ],
+  "recent_papers": [
+    "Online Decision Based Visual Tracking via Reinforcement Learning. Proceedings of the 34th International Conference on Neural Information Processing Systems (NeurIPS), 2020, 33: 11778-11788.",
+    "Coarse-to-Fine UAV Target Tracking with Deep Reinforcement Learning. IEEE Transactions on Automation Science and Engineering (TASE), 2019, 16(4): 1522-1530.",
+    "Visual Object Tracking via Guessing and Matching. IEEE Transactions on Circuits and Systems for Video Technology (TCSVT), 2019, 30(11): 4182-4191.",
+    "UAV Target Tracking with a Boundary-decision Network. International Conference on Pattern Recognition (ICPR), 2018: 2576-2581.",
+    "Unified Single-Stage Transformer Network for Efficient RGB-T Tracking. Proceedings of International Joint Conference on Artificial Intelligence (IJCAI), 2024, 1471-1479.",
+    "Master-Slave Curriculum Design for Reinforcement Learning. Proceedings of International Joint Conference on Artificial Intelligence (IJCAI), 2018: 1523-1529."
+  ],
+  "research_directions": [
+    "计算机视觉,目标跟踪,强化学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/3131.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:43:58Z"
+}
