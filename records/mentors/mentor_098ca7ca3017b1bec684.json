@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6097d07f2165ea1158e5"
+      ],
+      "ended_at": null,
+      "id": "aff_bb255a32b026b7376e1d",
+      "is_primary": true,
+      "observed_at": "2026-08-22T08:27:04Z",
+      "organization_id": "org_auto_03b6c3ffc40ca7d22f42",
+      "source_url": "http://chem.nju.edu.cn/lrt/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_6097d07f2165ea1158e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bb255a32b026b7376e1d",
+      "claim_ids": [
+        "claim_6097d07f2165ea1158e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "rutianli@nju.edu.cn",
+      "observed_at": "2026-08-22T08:27:04Z",
+      "source_url": "http://chem.nju.edu.cn/lrt/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "rutianli@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-22T08:27:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6097d07f2165ea1158e5"
+    ],
+    "email": [
+      "claim_6097d07f2165ea1158e5"
+    ],
+    "name": [
+      "claim_6097d07f2165ea1158e5"
+    ],
+    "profile_url": [
+      "claim_6097d07f2165ea1158e5"
+    ],
+    "status": [
+      "claim_6097d07f2165ea1158e5"
+    ]
+  },
+  "id": "mentor_098ca7ca3017b1bec684",
+  "last_verified_at": "2026-08-22T08:27:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6097d07f2165ea1158e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李茹恬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bb255a32b026b7376e1d",
+      "claim_ids": [
+        "claim_6097d07f2165ea1158e5"
+      ],
+      "observed_at": "2026-08-22T08:27:04Z",
+      "status": "current",
+      "url": "http://chem.nju.edu.cn/lrt/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-22T08:27:04Z",
+  "status_reason": null,
+  "status_source_url": "http://chem.nju.edu.cn/lrt/list.htm",
+  "title": null,
+  "updated_at": "2026-08-22T08:27:04Z"
+}

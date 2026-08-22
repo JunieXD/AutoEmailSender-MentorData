@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c168c652840e600b0614"
+      ],
+      "ended_at": null,
+      "id": "aff_e64d27b86859f72ce996",
+      "is_primary": true,
+      "observed_at": "2026-08-22T08:27:04Z",
+      "organization_id": "org_auto_a44d90661a923834917f",
+      "source_url": "http://chem.nju.edu.cn/hxq/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c168c652840e600b0614"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e64d27b86859f72ce996",
+      "claim_ids": [
+        "claim_c168c652840e600b0614"
+      ],
+      "is_primary": true,
+      "normalized_value": "huangx513@nju.edu.cn",
+      "observed_at": "2026-08-22T08:27:04Z",
+      "source_url": "http://chem.nju.edu.cn/hxq/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huangx513@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-22T08:27:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c168c652840e600b0614"
+    ],
+    "email": [
+      "claim_c168c652840e600b0614"
+    ],
+    "name": [
+      "claim_c168c652840e600b0614"
+    ],
+    "profile_url": [
+      "claim_c168c652840e600b0614"
+    ],
+    "research_directions": [
+      "claim_c168c652840e600b0614"
+    ],
+    "status": [
+      "claim_c168c652840e600b0614"
+    ]
+  },
+  "id": "mentor_a1e00f259cd618f648ab",
+  "last_verified_at": "2026-08-22T08:27:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c168c652840e600b0614"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄小强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e64d27b86859f72ce996",
+      "claim_ids": [
+        "claim_c168c652840e600b0614"
+      ],
+      "observed_at": "2026-08-22T08:27:04Z",
+      "status": "current",
+      "url": "http://chem.nju.edu.cn/hxq/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "整合合成生物学与合成化学:1.生物催化与酶工程改造",
+    "2.不对称光电化学",
+    "3.人工酶与仿生催化",
+    "4.人造微生物细胞工厂。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-22T08:27:04Z",
+  "status_reason": null,
+  "status_source_url": "http://chem.nju.edu.cn/hxq/list.htm",
+  "title": null,
+  "updated_at": "2026-08-22T08:27:04Z"
+}

@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_91b88f55691acf1c9c50"
+      ],
+      "ended_at": null,
+      "id": "aff_638e771a62ef61d31158",
+      "is_primary": true,
+      "observed_at": "2026-08-22T08:27:04Z",
+      "organization_id": "org_auto_a44d90661a923834917f",
+      "source_url": "http://chem.nju.edu.cn/qjl/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_91b88f55691acf1c9c50"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_638e771a62ef61d31158",
+      "claim_ids": [
+        "claim_91b88f55691acf1c9c50"
+      ],
+      "is_primary": true,
+      "normalized_value": "jjl@nju.edu.cn",
+      "observed_at": "2026-08-22T08:27:04Z",
+      "source_url": "http://chem.nju.edu.cn/qjl/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jjl@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-22T08:27:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_91b88f55691acf1c9c50"
+    ],
+    "email": [
+      "claim_91b88f55691acf1c9c50"
+    ],
+    "name": [
+      "claim_91b88f55691acf1c9c50"
+    ],
+    "profile_url": [
+      "claim_91b88f55691acf1c9c50"
+    ],
+    "status": [
+      "claim_91b88f55691acf1c9c50"
+    ]
+  },
+  "id": "mentor_7ff2458a0d572a813514",
+  "last_verified_at": "2026-08-22T08:27:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_91b88f55691acf1c9c50"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "强琚莉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_638e771a62ef61d31158",
+      "claim_ids": [
+        "claim_91b88f55691acf1c9c50"
+      ],
+      "observed_at": "2026-08-22T08:27:04Z",
+      "status": "current",
+      "url": "http://chem.nju.edu.cn/qjl/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-22T08:27:04Z",
+  "status_reason": null,
+  "status_source_url": "http://chem.nju.edu.cn/qjl/list.htm",
+  "title": null,
+  "updated_at": "2026-08-22T08:27:04Z"
+}

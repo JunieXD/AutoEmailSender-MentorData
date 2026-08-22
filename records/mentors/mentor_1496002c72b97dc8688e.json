@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_77aa54fbe0da6af9c253"
+      ],
+      "ended_at": null,
+      "id": "aff_e160a6e8ee1a473c43f4",
+      "is_primary": true,
+      "observed_at": "2026-08-22T08:27:04Z",
+      "organization_id": "org_auto_292cd02b9ce9fe62c13a",
+      "source_url": "http://chem.nju.edu.cn/hzc/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_77aa54fbe0da6af9c253"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e160a6e8ee1a473c43f4",
+      "claim_ids": [
+        "claim_77aa54fbe0da6af9c253"
+      ],
+      "is_primary": true,
+      "normalized_value": "huazc@nju.edu.cn",
+      "observed_at": "2026-08-22T08:27:04Z",
+      "source_url": "http://chem.nju.edu.cn/hzc/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huazc@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-22T08:27:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_77aa54fbe0da6af9c253"
+    ],
+    "email": [
+      "claim_77aa54fbe0da6af9c253"
+    ],
+    "name": [
+      "claim_77aa54fbe0da6af9c253"
+    ],
+    "profile_url": [
+      "claim_77aa54fbe0da6af9c253"
+    ],
+    "status": [
+      "claim_77aa54fbe0da6af9c253"
+    ]
+  },
+  "id": "mentor_1496002c72b97dc8688e",
+  "last_verified_at": "2026-08-22T08:27:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_77aa54fbe0da6af9c253"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "华子春"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e160a6e8ee1a473c43f4",
+      "claim_ids": [
+        "claim_77aa54fbe0da6af9c253"
+      ],
+      "observed_at": "2026-08-22T08:27:04Z",
+      "status": "current",
+      "url": "http://chem.nju.edu.cn/hzc/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-22T08:27:04Z",
+  "status_reason": null,
+  "status_source_url": "http://chem.nju.edu.cn/hzc/list.htm",
+  "title": null,
+  "updated_at": "2026-08-22T08:27:04Z"
+}

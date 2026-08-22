@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dd9262cd131a01025d3e"
+      ],
+      "ended_at": null,
+      "id": "aff_4bb161ca3e05b150eb22",
+      "is_primary": true,
+      "observed_at": "2026-08-22T08:27:04Z",
+      "organization_id": "org_auto_a44d90661a923834917f",
+      "source_url": "http://chem.nju.edu.cn/jxd/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_dd9262cd131a01025d3e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4bb161ca3e05b150eb22",
+      "claim_ids": [
+        "claim_dd9262cd131a01025d3e"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiaxd@nju.edu.cn",
+      "observed_at": "2026-08-22T08:27:04Z",
+      "source_url": "http://chem.nju.edu.cn/jxd/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiaxd@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-22T08:27:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dd9262cd131a01025d3e"
+    ],
+    "email": [
+      "claim_dd9262cd131a01025d3e"
+    ],
+    "name": [
+      "claim_dd9262cd131a01025d3e"
+    ],
+    "profile_url": [
+      "claim_dd9262cd131a01025d3e"
+    ],
+    "status": [
+      "claim_dd9262cd131a01025d3e"
+    ]
+  },
+  "id": "mentor_9580d5b740776a4a1b6d",
+  "last_verified_at": "2026-08-22T08:27:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dd9262cd131a01025d3e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "贾叙东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4bb161ca3e05b150eb22",
+      "claim_ids": [
+        "claim_dd9262cd131a01025d3e"
+      ],
+      "observed_at": "2026-08-22T08:27:04Z",
+      "status": "current",
+      "url": "http://chem.nju.edu.cn/jxd/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-22T08:27:04Z",
+  "status_reason": null,
+  "status_source_url": "http://chem.nju.edu.cn/jxd/list.htm",
+  "title": null,
+  "updated_at": "2026-08-22T08:27:04Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f92e3a22dd106e4fa468"
+      ],
+      "ended_at": null,
+      "id": "aff_a40c4a18cca428785839",
+      "is_primary": true,
+      "observed_at": "2026-08-22T08:27:04Z",
+      "organization_id": "org_auto_a44d90661a923834917f",
+      "source_url": "http://chem.nju.edu.cn/wk/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f92e3a22dd106e4fa468"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a40c4a18cca428785839",
+      "claim_ids": [
+        "claim_f92e3a22dd106e4fa468"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangkang@nju.edu.cn",
+      "observed_at": "2026-08-22T08:27:04Z",
+      "source_url": "http://chem.nju.edu.cn/wk/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangkang@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-22T08:27:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f92e3a22dd106e4fa468"
+    ],
+    "email": [
+      "claim_f92e3a22dd106e4fa468"
+    ],
+    "name": [
+      "claim_f92e3a22dd106e4fa468"
+    ],
+    "profile_url": [
+      "claim_f92e3a22dd106e4fa468"
+    ],
+    "recent_papers": [
+      "claim_f92e3a22dd106e4fa468"
+    ],
+    "research_directions": [
+      "claim_f92e3a22dd106e4fa468"
+    ],
+    "status": [
+      "claim_f92e3a22dd106e4fa468"
+    ]
+  },
+  "id": "mentor_715086b8e341c2657839",
+  "last_verified_at": "2026-08-22T08:27:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f92e3a22dd106e4fa468"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王康"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a40c4a18cca428785839",
+      "claim_ids": [
+        "claim_f92e3a22dd106e4fa468"
+      ],
+      "observed_at": "2026-08-22T08:27:04Z",
+      "status": "current",
+      "url": "http://chem.nju.edu.cn/wk/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Segmentation of 2D metal–organic framework nanopores for the detection of single-molecule DNA and peptides",
+    "Multidimensional investigations of single molecule unfolding of bovine serum albumin using plasmonic nanopores",
+    "Sequence-Dependent Single-Molecule DNA Sensing Using Covalent Organic Framework Nanopores",
+    "High-throughput single-molecule surface-enhanced Raman spectroscopic profiling of single-amino acid substitutions in peptides by a gold plasmonic nanopore",
+    "Single-molecule discrimination of saccharides using carbon nitride nanopores",
+    "Single-molecule electrical and spectroscopic profiling protein allostery using a gold plasmonic nanopore",
+    "Single molecule protein segments sequencing by a plasmonic nanopore",
+    "Single molecule DNA analysis based on atomic-controllable nanopores in covalent organic frameworks"
+  ],
+  "research_directions": [
+    "物质穿过固态纳米孔的行为研究、生物纳米器件研制、单分子分析、基于二维纳米材料的固态纳米孔单分子分析、基于等离子体金属纳米孔的单分子分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-22T08:27:04Z",
+  "status_reason": null,
+  "status_source_url": "http://chem.nju.edu.cn/wk/list.htm",
+  "title": null,
+  "updated_at": "2026-08-22T08:27:04Z"
+}
