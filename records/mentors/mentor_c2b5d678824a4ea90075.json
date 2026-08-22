@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9eb5f97640fc0f655308"
+      ],
+      "ended_at": null,
+      "id": "aff_bca211d030529be555c3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11766.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_9eb5f97640fc0f655308"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bca211d030529be555c3",
+      "claim_ids": [
+        "claim_9eb5f97640fc0f655308"
+      ],
+      "is_primary": true,
+      "normalized_value": "zwh@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11766.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zwh@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9eb5f97640fc0f655308"
+    ],
+    "email": [
+      "claim_9eb5f97640fc0f655308"
+    ],
+    "name": [
+      "claim_9eb5f97640fc0f655308"
+    ],
+    "profile_url": [
+      "claim_9eb5f97640fc0f655308"
+    ],
+    "recent_papers": [
+      "claim_9eb5f97640fc0f655308"
+    ],
+    "research_directions": [
+      "claim_9eb5f97640fc0f655308"
+    ],
+    "status": [
+      "claim_9eb5f97640fc0f655308"
+    ],
+    "title": [
+      "claim_9eb5f97640fc0f655308"
+    ]
+  },
+  "id": "mentor_c2b5d678824a4ea90075",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9eb5f97640fc0f655308"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄兆武"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bca211d030529be555c3",
+      "claim_ids": [
+        "claim_9eb5f97640fc0f655308"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/11766.htm"
+    }
+  ],
+  "recent_papers": [
+    "AccSI: Accelerating Serverless Inference via Edge-Assisted Pipelined Model Fetching[J]. IEEE Transactions on Mobile Computing (TMC), 2026.(CCF A)",
+    "FaSei: Fast Serverless Edge Inference with Synergistic Lazy Loading and Layer-wise Caching[C].IEEE International Conference on Computer Communications (INFOCOM) 2025.(CCF A)",
+    "Enabling Latency-Sensitive DNN Inference via Joint Optimization of Model Surgery and Resource Allocation in Heterogeneous Edge[C]. ACM International Conference on Parallel Processing (ICPP), 2022: 1-11.(CCF B)",
+    "Enabling Low Latency Edge Intelligence based on Multi-exit DNNs in the Wild[C]. IEEE International Conference on Distributed Computing Systems (ICDCS), 2021:729-739.(CCF B)",
+    "ADPTD: Adaptive Data Partition with Unbiased Task Dispatching for Video Analytics at the Edge[J]. IEEE Internet of Things Journal (IOT), 2024.(JCR Q1,中科院一区)",
+    "Adaptive Microservice Deployment for Data Partition-based Applications in MEC[J]. Tsinghua Science and Technology (TST), 2024. (JCR Q1,中科院一区)",
+    "Joint Layer-wise Caching and Request Routing for Serverless Inference Acceleration at the Edge[C]. IEEE International Conference on High Performance Computing and Communications (HPCC), 2024.(CCF C)",
+    "Enabling Adaptive Task Dispatching for Real-time Video Analytics in Uncertain Edge Environments[C].ACM Turing Award Celebration Conference (TURC) Poster, 2023. (共同一作, Best poster award)"
+  ],
+  "research_directions": [
+    "边缘计算与边缘智能、基于边缘智能的视觉应用优化、基于边云协同的大语言模型推理加速、面向无服务计算的函数调度与冷启动优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/11766.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

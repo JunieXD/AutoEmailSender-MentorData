@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_908542c8d060ded92760"
+      ],
+      "ended_at": null,
+      "id": "aff_37550af39d91fdce930b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_bd66ae78e26f69397bbd",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/8197.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_908542c8d060ded92760"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_37550af39d91fdce930b",
+      "claim_ids": [
+        "claim_908542c8d060ded92760"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangshu@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/8197.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangshu@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_908542c8d060ded92760"
+    ],
+    "email": [
+      "claim_908542c8d060ded92760"
+    ],
+    "name": [
+      "claim_908542c8d060ded92760"
+    ],
+    "profile_url": [
+      "claim_908542c8d060ded92760"
+    ],
+    "recent_papers": [
+      "claim_908542c8d060ded92760"
+    ],
+    "research_directions": [
+      "claim_908542c8d060ded92760"
+    ],
+    "status": [
+      "claim_908542c8d060ded92760"
+    ],
+    "title": [
+      "claim_908542c8d060ded92760"
+    ]
+  },
+  "id": "mentor_d524c5cd37c5278ddc24",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_908542c8d060ded92760"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张舒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_37550af39d91fdce930b",
+      "claim_ids": [
+        "claim_908542c8d060ded92760"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/8197.htm"
+    }
+  ],
+  "recent_papers": [
+    "Attentive feature interaction based persistent homology-augmented network for esophageal cancer lesion detection, Medical Physics, 2025.",
+    "4D computed tomography super-resolution reconstruction based on tensor product and nuclear norm optimization, Pattern Recognition, 2022, 121, 108150",
+    "An adaptive regularization method for low-dose CT reconstruction from CT transmission data in Poisson-Gaussian noise, Optik, 2019, 188: 172-186.",
+    "CT image reconstruction algorithms: A comprehensive survey, Concurrency and Computation-Practice & Experience, 2021, 33, e5506: 0",
+    "Comparison of sparse-view CT image reconstruction algorithms, 2016 International Conference on Audio, Language and Image Processing (ICALIP), Shang Hai"
+  ],
+  "research_directions": [
+    "机器学习、计算机视觉、医学图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/8197.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

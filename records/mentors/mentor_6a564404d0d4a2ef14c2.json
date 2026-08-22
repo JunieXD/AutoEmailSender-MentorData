@@ -1,0 +1,112 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b393e8d99429183fe50a"
+      ],
+      "ended_at": null,
+      "id": "aff_ce9c0006ae5b50a0aab8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4988.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b393e8d99429183fe50a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ce9c0006ae5b50a0aab8",
+      "claim_ids": [
+        "claim_b393e8d99429183fe50a"
+      ],
+      "is_primary": true,
+      "normalized_value": "fj_liying@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4988.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fj_liying@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b393e8d99429183fe50a"
+    ],
+    "email": [
+      "claim_b393e8d99429183fe50a"
+    ],
+    "name": [
+      "claim_b393e8d99429183fe50a"
+    ],
+    "profile_url": [
+      "claim_b393e8d99429183fe50a"
+    ],
+    "recent_papers": [
+      "claim_b393e8d99429183fe50a"
+    ],
+    "research_directions": [
+      "claim_b393e8d99429183fe50a"
+    ],
+    "status": [
+      "claim_b393e8d99429183fe50a"
+    ],
+    "title": [
+      "claim_b393e8d99429183fe50a"
+    ]
+  },
+  "id": "mentor_6a564404d0d4a2ef14c2",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b393e8d99429183fe50a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李应"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ce9c0006ae5b50a0aab8",
+      "claim_ids": [
+        "claim_b393e8d99429183fe50a"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/4988.htm"
+    }
+  ],
+  "recent_papers": [
+    "LI Ying, HUANG Hongkeng, and WU Zhibin. Animal Sound Recognition Based on Double Feature of Spectrogram. Chinese Journal of Electronics, 2019, 28(4): 667-673.",
+    "李应, 印佳丽. 基于多随机森林的低信噪比声音事件检测[J]. 电子学报, 2018, 46(11): 2705-2713.",
+    "LI Ying, YIN Jia-li. Sound Event Detection at Low SNR Based on Multi-random Forests. Acta Electronica Sinica, 2018, 46(11): 2705-2713.",
+    "李应, 吴灵菲. 用多频带能量分布检测低信噪比声音事件[J]. 电子与信息学报, 2018, 40(12): 2905-2912. doi: 10.11999/JEIT180180",
+    "Jia-Li Yin, Bo-Hao Chen, Kuo-Hua Robert Lai, Ying Li , Automatic Dangerous Driving Intensity Analysis for Advanced Driver Assistance Systems from Multimodal Driving Signals[J]. IEEE Sensors Journal, 2018, 18(12):4785-4794.",
+    "李应 ,陈秋菊,基于优化的正交匹配追踪声音事件识别,电子与信息学报,2017.01.10,39(1):183~190;",
+    "Xiaomin Zhou, Ying Li, Anti-noise sound recognition based on energy-frequency feature, CAAI Transactions on Intelligent Systems, 2015.10.1, 10(5): 810~819;",
+    "Xiaoxia Zhang, Ying Li, Adaptive Energy Detection for Bird Sound Classification in Complex Environments, Neurocomputing, 2015.5.1, 155: 108~116;"
+  ],
+  "research_directions": [
+    "(1)工业系统声诊断",
+    "(2)复杂声场景下异常声音事件检测",
+    "(3)生态环境声音识别",
+    "(4)Web远程渗透测试与安全分析",
+    "(5)内容安全、信息隐藏与数字水印",
+    "(6)入侵检测技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/4988.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

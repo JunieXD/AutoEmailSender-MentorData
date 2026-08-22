@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fa7ffb8938aab6768c47"
+      ],
+      "ended_at": null,
+      "id": "aff_6c9131b72d0206413e07",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4984.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fa7ffb8938aab6768c47"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6c9131b72d0206413e07",
+      "claim_ids": [
+        "claim_fa7ffb8938aab6768c47"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenxing@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4984.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenxing@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fa7ffb8938aab6768c47"
+    ],
+    "email": [
+      "claim_fa7ffb8938aab6768c47"
+    ],
+    "name": [
+      "claim_fa7ffb8938aab6768c47"
+    ],
+    "profile_url": [
+      "claim_fa7ffb8938aab6768c47"
+    ],
+    "recent_papers": [
+      "claim_fa7ffb8938aab6768c47"
+    ],
+    "research_directions": [
+      "claim_fa7ffb8938aab6768c47"
+    ],
+    "status": [
+      "claim_fa7ffb8938aab6768c47"
+    ],
+    "title": [
+      "claim_fa7ffb8938aab6768c47"
+    ]
+  },
+  "id": "mentor_4e1cb7685c85e735fca9",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fa7ffb8938aab6768c47"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈星"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6c9131b72d0206413e07",
+      "claim_ids": [
+        "claim_fa7ffb8938aab6768c47"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/4984.htm"
+    }
+  ],
+  "recent_papers": [
+    "Real-Time Offloading for Dependent and Parallel Tasks in Cloud-Edge Environments Using Deep Reinforcement Learning. IEEE Transactions on Parallel and Distributed Systems, 2024, 35(3): 391-404.",
+    "FUNOff: Offloading Applications at Function Granularity for Mobile Edge Computing. IEEE Transactions on Mobile Computing, 2024, 23(2): 1717-1734.",
+    "Load Balancing for Multi-Edge Collaboration in Wireless Metropolitan Area Networks: A Two-Stage Decision-Making Approach. IEEE Internet of Things Journal, 2023, 10(19): 17124-17136.",
+    "Resource Allocation with Workload-Time Windows for Cloud-based Software Services: A Deep Reinforcement Learning Approach. IEEE Transactions on Cloud Computing, 2023, 11(2): 1871-1885.",
+    "Energy-Efficient Offloading for DNN-based Smart IoT Systems in Cloud-Edge Environments. IEEE Transactions on Parallel and Distributed Systems, 2022, 33(3): 683-697.",
+    "A Reinforcement Learning Empowered Feedback Control System for Industrial Internet of Things. IEEE Transactions on Industrial Informatics, 2022, 18(4): 2724-2733.",
+    "DNNOff: Offloading DNN-based Intelligent IoT Applications in Mobile Edge Computing. IEEE Transactions on Industrial Informatics, 2022, 18(4): 2820-2829.",
+    "Resource Allocation for Cloud-based Software Services Using Prediction-Enabled Feedback Control with Reinforcement Learning. IEEE Transactions on Cloud Computing, 2022, 10(2): 1117-1129."
+  ],
+  "research_directions": [
+    "软件工程,系统软件,云计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/4984.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_76cddd1b381aed3c98cd"
+      ],
+      "ended_at": null,
+      "id": "aff_a5d9ab6da41a38f5d853",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_bd66ae78e26f69397bbd",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/5125.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_76cddd1b381aed3c98cd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a5d9ab6da41a38f5d853",
+      "claim_ids": [
+        "claim_76cddd1b381aed3c98cd"
+      ],
+      "is_primary": true,
+      "normalized_value": "jianglanfan@foxmail.com",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/5125.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jianglanfan@foxmail.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_76cddd1b381aed3c98cd"
+    ],
+    "email": [
+      "claim_76cddd1b381aed3c98cd"
+    ],
+    "name": [
+      "claim_76cddd1b381aed3c98cd"
+    ],
+    "profile_url": [
+      "claim_76cddd1b381aed3c98cd"
+    ],
+    "recent_papers": [
+      "claim_76cddd1b381aed3c98cd"
+    ],
+    "research_directions": [
+      "claim_76cddd1b381aed3c98cd"
+    ],
+    "status": [
+      "claim_76cddd1b381aed3c98cd"
+    ],
+    "title": [
+      "claim_76cddd1b381aed3c98cd"
+    ]
+  },
+  "id": "mentor_5b522298fb5abe4df8f8",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_76cddd1b381aed3c98cd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "江兰帆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a5d9ab6da41a38f5d853",
+      "claim_ids": [
+        "claim_76cddd1b381aed3c98cd"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/5125.htm"
+    }
+  ],
+  "recent_papers": [
+    "Iterative-Weighted Thresholding Method for Group-Sparsity-Constrained Optimization with Applications",
+    "Iterative Weighted Group Thresholding Method for Group Sparse Recovery",
+    "Weighted thresholding homotopy method for sparsity constrained optimization",
+    "Nonconvex regularizer and homotopy-based sparse optimization: Convergent algorithms and applications",
+    "Two-stage neural network classifier for the data imbalance problem with application to hotspot detection"
+  ],
+  "research_directions": [
+    "机器学习、医学人工智能与计算医学、优化理论与算法、信号处理、超大规模集成电路计算机辅助设计(EDA)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/5125.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

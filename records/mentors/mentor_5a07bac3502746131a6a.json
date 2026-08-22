@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8d767108b1f9caccc089"
+      ],
+      "ended_at": null,
+      "id": "aff_a8648f653db7cb749c45",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_bd66ae78e26f69397bbd",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/9821.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8d767108b1f9caccc089"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a8648f653db7cb749c45",
+      "claim_ids": [
+        "claim_8d767108b1f9caccc089"
+      ],
+      "is_primary": true,
+      "normalized_value": "wjb@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/9821.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wjb@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8d767108b1f9caccc089"
+    ],
+    "email": [
+      "claim_8d767108b1f9caccc089"
+    ],
+    "name": [
+      "claim_8d767108b1f9caccc089"
+    ],
+    "profile_url": [
+      "claim_8d767108b1f9caccc089"
+    ],
+    "recent_papers": [
+      "claim_8d767108b1f9caccc089"
+    ],
+    "research_directions": [
+      "claim_8d767108b1f9caccc089"
+    ],
+    "status": [
+      "claim_8d767108b1f9caccc089"
+    ],
+    "title": [
+      "claim_8d767108b1f9caccc089"
+    ]
+  },
+  "id": "mentor_5a07bac3502746131a6a",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8d767108b1f9caccc089"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪璟玢"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a8648f653db7cb749c45",
+      "claim_ids": [
+        "claim_8d767108b1f9caccc089"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/9821.htm"
+    }
+  ],
+  "recent_papers": [
+    "FIT:Enhancing Multimodal Knowledge Graph Completion via Fine-Grained Interaction and TriConvTransformer. Neural Networks. 2026,109000. https://doi.org/10.1016/j.neunet.2026.109000(SCI中科院2区)",
+    "Temporal knowledge graph reasoning based on multidimensional information interaction and dynamic frequency awareness. Neurocomputing. 2026, 133496. DOI:10.1016/j.neucom.2026.133496(SCI中科院2区)",
+    "Temporal Knowledge Graph Completion via Global Structural Representation and Deep Interaction. Information Sciences. 2026, 739: 123139. DOI:10.1016/j.ins.2026.123139(SCI中科院 2区)",
+    "SFP: temporal knowledge graph completion basedon sequence-focus patterns representation.Applied Intelligence.2025,55(6):537. DOI:10.1007/s10489-025-06306-7(SCI中科院3区)",
+    "Open Knowledge Graph Link Prediction with Semantic-Aware Embedding. Expert Systems With Applications. 2024, DOI:10.1016/j.eswa.2024.123542(SCI 中科院1区)",
+    "MPNet: Temporal Knowledge Graph Completion Based on a Multi-Policy Network. Applied Intelligence. 2024,DOI:10.1007/s10489-024-05320-5(SCI 中科院2区)",
+    "GLANet:Temporal Knowledge Graph Completion Based on Global and Local Information-Aware Network. Applied Intelligence. 2023.8, 53(16): 19285-19301, DOI:10.1007/s10489-023-04481-z(SCI 中科院2区)",
+    "Embeddings based on relation-specific constraints for open world knowledge graph completion. Applied Intelligence.2022.6, 53(12): 16192-16204, DOI:10.1007/s10489-022-04247-z(SCI 中科院2区)"
+  ],
+  "research_directions": [
+    "知识图谱、海量数据管理、软件工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/9821.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

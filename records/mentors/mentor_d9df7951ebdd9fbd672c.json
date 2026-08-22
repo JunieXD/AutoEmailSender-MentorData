@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f1b812927a98a2dbf97b"
+      ],
+      "ended_at": null,
+      "id": "aff_f3ea62275e4827da3092",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/8588.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f1b812927a98a2dbf97b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f3ea62275e4827da3092",
+      "claim_ids": [
+        "claim_f1b812927a98a2dbf97b"
+      ],
+      "is_primary": true,
+      "normalized_value": "shenglian@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/8588.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shenglian@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f1b812927a98a2dbf97b"
+    ],
+    "email": [
+      "claim_f1b812927a98a2dbf97b"
+    ],
+    "name": [
+      "claim_f1b812927a98a2dbf97b"
+    ],
+    "profile_url": [
+      "claim_f1b812927a98a2dbf97b"
+    ],
+    "recent_papers": [
+      "claim_f1b812927a98a2dbf97b"
+    ],
+    "research_directions": [
+      "claim_f1b812927a98a2dbf97b"
+    ],
+    "status": [
+      "claim_f1b812927a98a2dbf97b"
+    ],
+    "title": [
+      "claim_f1b812927a98a2dbf97b"
+    ]
+  },
+  "id": "mentor_d9df7951ebdd9fbd672c",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f1b812927a98a2dbf97b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "连盛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f3ea62275e4827da3092",
+      "claim_ids": [
+        "claim_f1b812927a98a2dbf97b"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/8588.htm"
+    }
+  ],
+  "recent_papers": [
+    "Lian, S., Cai, J., Pan, D., et al. (2026). Anatomy-Aware Text-Visual Fusion with Dual-Perspective Prompts for Fine-Grained Lumbar Spine Segmentation. International Journal of Computer Vision (IJCV). (CCF-A类期刊, IF: 10.3)",
+    "Lian, S., Li, L., Lian, G., Xiao, X., Luo, Z., & Li, S. (2021). APRIL: Anatomical Prior-guided ReInforcement Learning for Accurate Carotid Lumen Diameter and Intima media Thickness Measurement. Medical Image Analysis (MedIA). (JCR Q1, 中科院一区Top期刊, IF:11.148)",
+    "Wang, X., Liu, J., Wang, Y., Su, J., Luo, Z., & Lian, S.* (2026). DiCoP-SAM: Disagreement-Band Guided Corrective Prompting for Collaborative Semi-Supervised Medical Image Segmentation [C]. Medical Image Computing and Computer Assisted Intervention (MICCAI2026), EARLY ACCEPTED. (领域顶会, CCF-B)",
+    "Wen Q., He J., Wei X., Lian S.*, et al. (2026) EUTNet: Edge Uncertainty-Aware Consistency and topology-constrained semi-supervised medical image segmentation[J]. Biomedical Signal Processing and Control (BSPC), (JCR Q1, 中科院二区, IF: 5.7)",
+    "Xu H., Lian S.*, Wang Y., Chen J., Liu J., Li L. (2026) PromptFix: Anatomy-Aware Text Prompting for Semi-Supervised Lumbar MRI Segmentation [C]. IEEE International Conference on Multimedia & Expo, ACCEPTED (ICME-26ORAL). (CCF-B, 福大“卓越期刊”)",
+    "Wei X., Lian S.*, Chen W., Zhong H., Chen J., Xu H. (2026) CoDiff: Towards Reliable Pseudo-Labels via Collaborative Difference Learning for Semi-Supervised Medical Image Segmentation[C]. IEEE International Conference on Multimedia & Expo, ACCEPTED (ICME-26poster). (CCF-B, 福大“卓越期刊”)",
+    "Lin, Z., Li, Z., Su, J., Li, L., Lian, S.*. (2025) Enhancing semi-supervised medical image segmentation with boundary awareness and Competitive Contrastive Learning[J]. Biomedical Signal Processing and Control (BSPC), (JCR Q1, 中科院二区, IF: 5.076)",
+    "Li, Z., Lian, S.*, Pan, D., Wang, Y., Liu, W. (2025) AD-Det: Boosting Object Detection in UAV Images with Focused Small Objects and Balanced Tail Classes [J]. Remote Sensing, (JCR Q1, 中科院二区,IF: 4.2)"
+  ],
+  "research_directions": [
+    "智能医学图像分析、计算机视觉、人工智能、机器学习、遥感图像分析、分子性质预测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/8588.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

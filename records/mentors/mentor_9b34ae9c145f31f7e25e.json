@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f5b46c7a362b8354bbe9"
+      ],
+      "ended_at": null,
+      "id": "aff_bddc496ddecc825213a8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/9822.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f5b46c7a362b8354bbe9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bddc496ddecc825213a8",
+      "claim_ids": [
+        "claim_f5b46c7a362b8354bbe9"
+      ],
+      "is_primary": true,
+      "normalized_value": "dongchen@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/9822.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dongchen@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f5b46c7a362b8354bbe9"
+    ],
+    "email": [
+      "claim_f5b46c7a362b8354bbe9"
+    ],
+    "name": [
+      "claim_f5b46c7a362b8354bbe9"
+    ],
+    "profile_url": [
+      "claim_f5b46c7a362b8354bbe9"
+    ],
+    "recent_papers": [
+      "claim_f5b46c7a362b8354bbe9"
+    ],
+    "research_directions": [
+      "claim_f5b46c7a362b8354bbe9"
+    ],
+    "status": [
+      "claim_f5b46c7a362b8354bbe9"
+    ],
+    "title": [
+      "claim_f5b46c7a362b8354bbe9"
+    ]
+  },
+  "id": "mentor_9b34ae9c145f31f7e25e",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f5b46c7a362b8354bbe9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董晨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bddc496ddecc825213a8",
+      "claim_ids": [
+        "claim_f5b46c7a362b8354bbe9"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1203/9822.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hardware Trojan Object Detection Based on Bidirectional Graph Neural Networks. IEEE Transactions on Computers (TC), 2026, 75(2): 665-679.",
+    "GNN4HT: A Two-Stage GNN-Based Approach for Hardware Trojan Multifunctional Classification. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025, 44(1):172-185.",
+    "Hardware Security Meets Incomplete Netlists: Insights into Trojan Detection via Structural Reasoning. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025:1-1.",
+    "Defense in the Reverse Fragment: RL-Based Partial Netlist Hardware Trojan Detection. 2025 IEEE/ACM International Conference On Computer Aided Design (ICCAD). 2025:1-7.",
+    "Gnn4gate: A bi-directional graph neural network for gate-level hardware trojan detection. Design, Automation & Test in Europe Conference & Exhibition (DATE). 2022:1315-1320."
+  ],
+  "research_directions": [
+    "人工智能,包括大模型、机器学习、强化学习、智能计算的研究与应用,及其涉及的高性能计算、及网络空间安全方面的相关问题。涵盖大数据、并行计算、GPU加速、CUDA、多智能体等,同时也关注SoC芯片、AI芯片、生物芯片等安全策略及物理设计相关问题"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1203/9822.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

@@ -1,0 +1,91 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3b7e0c1813468a971dd7"
+      ],
+      "ended_at": null,
+      "id": "aff_260a896963ba9a79a10d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_2e8b6ef25c44d9899138",
+      "source_url": "https://ccds.fzu.edu.cn/szdw/szxx.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_3b7e0c1813468a971dd7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_260a896963ba9a79a10d",
+      "claim_ids": [
+        "claim_3b7e0c1813468a971dd7"
+      ],
+      "is_primary": true,
+      "normalized_value": "ljlin@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/szdw/szxx.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ljlin@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3b7e0c1813468a971dd7"
+    ],
+    "email": [
+      "claim_3b7e0c1813468a971dd7"
+    ],
+    "name": [
+      "claim_3b7e0c1813468a971dd7"
+    ],
+    "recent_papers": [
+      "claim_3b7e0c1813468a971dd7"
+    ],
+    "research_directions": [
+      "claim_3b7e0c1813468a971dd7"
+    ],
+    "status": [
+      "claim_3b7e0c1813468a971dd7"
+    ]
+  },
+  "id": "mentor_be4a246510d55314ed85",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3b7e0c1813468a971dd7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林洛君"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [
+    "Semi-Supervised Domain Generalization with Evolving Intermediate Domain",
+    "Adapt Anything: Tailor Any Image Classifiers across Domains And Categories Using Text-to-Image Diffusion Models",
+    "Learning Feature Alignment across Attribute Domains for Improving Facial Beauty Prediction",
+    "Parameter Exchange for Robust Dynamic Domain Generalization",
+    "MetaFBP: Learning to Learn High-Order Predictor for Personalized Facial Beauty Prediction",
+    "A Multiple Prediction Mechanisms Ensemble for Complex Remote Sensing Scenes",
+    "Distilling Vision-Language Foundation Models: A Data-Free Approach via Prompt Diversification",
+    "Periodically Exchange Teacher-Student for Source-Free Object Detection"
+  ],
+  "research_directions": [
+    "deep learning and computer vision, with special interests in self-supervised learning, unsupervised domain adaptation, domain generalization, and face affective computing"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/szdw/szxx.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:45:03Z"
+}

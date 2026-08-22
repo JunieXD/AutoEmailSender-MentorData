@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3dbec04af7bba4775135"
+      ],
+      "ended_at": null,
+      "id": "aff_e55a393b091043d789a1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/10915.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_3dbec04af7bba4775135"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e55a393b091043d789a1",
+      "claim_ids": [
+        "claim_3dbec04af7bba4775135"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyz8023lyp@gmail.com",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/10915.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lyz8023lyp@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3dbec04af7bba4775135"
+    ],
+    "email": [
+      "claim_3dbec04af7bba4775135"
+    ],
+    "name": [
+      "claim_3dbec04af7bba4775135"
+    ],
+    "profile_url": [
+      "claim_3dbec04af7bba4775135"
+    ],
+    "recent_papers": [
+      "claim_3dbec04af7bba4775135"
+    ],
+    "research_directions": [
+      "claim_3dbec04af7bba4775135"
+    ],
+    "status": [
+      "claim_3dbec04af7bba4775135"
+    ],
+    "title": [
+      "claim_3dbec04af7bba4775135"
+    ]
+  },
+  "id": "mentor_bc56e46f407d3ceacaa6",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3dbec04af7bba4775135"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘翼章"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e55a393b091043d789a1",
+      "claim_ids": [
+        "claim_3dbec04af7bba4775135"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/10915.htm"
+    }
+  ],
+  "recent_papers": [
+    "TransMatch: Transformer-based correspondence pruning via local and global consensus",
+    "MGCNet: Multi-granularity consensus network for remote sensing image correspondence pruning",
+    "RoSe: Rotation-Invariant Sequence-Aware Consensus for Robust Correspondence Pruning",
+    "Occlusion-Aware Transformer With Second-Order Attention for Person Re-Identification",
+    "PMA-Net: Progressive multi-stage adaptive feature learning for two-view correspondence",
+    "Evolutionary channel pruning for real-time object detection",
+    "Multi-granularity-Aware Network for SAR Ship Detection in Complex Backgrounds",
+    "Guided sampling for multistructure data via neighborhood consensus and residual sorting"
+  ],
+  "research_directions": [
+    "计算机视觉、图像匹配、行人重识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/10915.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

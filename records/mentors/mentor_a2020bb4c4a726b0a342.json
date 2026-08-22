@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d29dfc794907c3f96c21"
+      ],
+      "ended_at": null,
+      "id": "aff_27783d46e712ed073334",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4999.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d29dfc794907c3f96c21"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_27783d46e712ed073334",
+      "claim_ids": [
+        "claim_d29dfc794907c3f96c21"
+      ],
+      "is_primary": true,
+      "normalized_value": "baiqy@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4999.htm",
+      "status": "current",
+      "type": "email",
+      "value": "baiqy@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d29dfc794907c3f96c21"
+    ],
+    "email": [
+      "claim_d29dfc794907c3f96c21"
+    ],
+    "name": [
+      "claim_d29dfc794907c3f96c21"
+    ],
+    "profile_url": [
+      "claim_d29dfc794907c3f96c21"
+    ],
+    "research_directions": [
+      "claim_d29dfc794907c3f96c21"
+    ],
+    "status": [
+      "claim_d29dfc794907c3f96c21"
+    ],
+    "title": [
+      "claim_d29dfc794907c3f96c21"
+    ]
+  },
+  "id": "mentor_a2020bb4c4a726b0a342",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d29dfc794907c3f96c21"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "白清源"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_27783d46e712ed073334",
+      "claim_ids": [
+        "claim_d29dfc794907c3f96c21"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/4999.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据库技术、数据挖掘技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/4999.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

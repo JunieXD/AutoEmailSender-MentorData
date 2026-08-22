@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c71d93ea6c29a26271ff"
+      ],
+      "ended_at": null,
+      "id": "aff_6f478baa44a16e80d4b5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/9318.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c71d93ea6c29a26271ff"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6f478baa44a16e80d4b5",
+      "claim_ids": [
+        "claim_c71d93ea6c29a26271ff"
+      ],
+      "is_primary": true,
+      "normalized_value": "z.chen@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/9318.htm",
+      "status": "current",
+      "type": "email",
+      "value": "z.chen@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c71d93ea6c29a26271ff"
+    ],
+    "email": [
+      "claim_c71d93ea6c29a26271ff"
+    ],
+    "name": [
+      "claim_c71d93ea6c29a26271ff"
+    ],
+    "profile_url": [
+      "claim_c71d93ea6c29a26271ff"
+    ],
+    "recent_papers": [
+      "claim_c71d93ea6c29a26271ff"
+    ],
+    "research_directions": [
+      "claim_c71d93ea6c29a26271ff"
+    ],
+    "status": [
+      "claim_c71d93ea6c29a26271ff"
+    ],
+    "title": [
+      "claim_c71d93ea6c29a26271ff"
+    ]
+  },
+  "id": "mentor_68e09c6bfb5db0127e90",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c71d93ea6c29a26271ff"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈哲毅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6f478baa44a16e80d4b5",
+      "claim_ids": [
+        "claim_c71d93ea6c29a26271ff"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/9318.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zheyi Chen, Bing Xiong, Xing Chen*, Geyong Min, and Jie Li. Joint Computation Offloading and Resource Allocation in Multi-edge Smart Communities with Personalized Federated Deep Reinforcement Learning. IEEE Transactions on Mobile Computing (TMC), 23(12): 11604-11619, 2024.",
+    "Zheyi Chen, Sijin Huang, Geyong Min*, Zhaolong Ning*, Jie Li, and Yan Zhang. Mobility-aware Seamless Service Migration and Resource Allocation in Multi-edge IoV Systems. IEEE Transactions on Mobile Computing (TMC), 24(7): 6315-6332, 2025.",
+    "Zheyi Chen, Qingnan Jiang, Lixian Chen, Xing Chen*, Jie Li, and Geyong Min*. MC-2PF: A Multi-edge Cooperative Universal Framework for Load Prediction with Personalized Federated Deep Learning. IEEE Transactions on Mobile Computing (TMC), 24(6): 5138-5154, 2025.",
+    "Zheyi Chen, Longxiang Xue, Luying Zhong, and Geyong Min. FedGPA: Federated Learning with Global-Personalized Collaboration for Edge Anomaly Detection.IEEE International Conference on Computer Communications (INFOCOM), 2025.",
+    "Zheyi Chen, Jia Hu*, Geyong Min*, Albert Y. Zomaya, and Tarek El-Ghazawi. Towards Accurate Prediction for High-Dimensional and Highly-Variable Cloud Workloads with Deep Learning. IEEE Transactions on Parallel and Distributed Systems (TPDS), 31(4): 923-934, 2020.",
+    "Zheyi Chen, Junjie Zhang, Geyong Min*, Zhaolong Ning*, and Jie Li. Traffic-aware Lightweight Hierarchical Offloading towards Adaptive Slicing-enabled SAGIN. IEEE Journal on Selected Areas in Communications (JSAC), 42(12): 3536-3550, 2024.",
+    "Zheyi Chen, Jie Liang, Zhengxin Yu*, Hongju Cheng, Geyong Min*, and Jie Li. Resilient Collaborative Caching for Multi-edge Systems with Robust Federated Deep Learning. IEEE/ACM Transactions on Networking (ToN), 33(2): 654-669, 2025.",
+    "Zheyi Chen, Jiayu Zheng, Hongju Cheng, Geyong Min, Zhaolong Ning, Jie Li, and Yan Zhang. Joint Service Caching and Resource Allocation in DT-empowered Cloud-Edge Networks via MARL with Hierarchical Knowledge Transfer. IEEE Transactions on Mobile Computing (TMC), 2026."
+  ],
+  "research_directions": [
+    "云/边缘计算、资源优化、深度学习、强化学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/9318.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

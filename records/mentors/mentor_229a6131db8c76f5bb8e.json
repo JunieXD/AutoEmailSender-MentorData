@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c0b28f112774af2a1a2a"
+      ],
+      "ended_at": null,
+      "id": "aff_9f94f1eb827c5b061975",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1240/10296.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c0b28f112774af2a1a2a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9f94f1eb827c5b061975",
+      "claim_ids": [
+        "claim_c0b28f112774af2a1a2a"
+      ],
+      "is_primary": true,
+      "normalized_value": "mchen@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1240/10296.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mchen@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c0b28f112774af2a1a2a"
+    ],
+    "email": [
+      "claim_c0b28f112774af2a1a2a"
+    ],
+    "name": [
+      "claim_c0b28f112774af2a1a2a"
+    ],
+    "profile_url": [
+      "claim_c0b28f112774af2a1a2a"
+    ],
+    "research_directions": [
+      "claim_c0b28f112774af2a1a2a"
+    ],
+    "status": [
+      "claim_c0b28f112774af2a1a2a"
+    ]
+  },
+  "id": "mentor_229a6131db8c76f5bb8e",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c0b28f112774af2a1a2a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈明志"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9f94f1eb827c5b061975",
+      "claim_ids": [
+        "claim_c0b28f112774af2a1a2a"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1240/10296.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "加密通信领域科研与产业化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1240/10296.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:45:03Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_60defe3b704864c8cdd8"
+      ],
+      "ended_at": null,
+      "id": "aff_e0cecaf7f0f22cc8e84a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_04dc061892161f49e7d7",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/8828.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_60defe3b704864c8cdd8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e0cecaf7f0f22cc8e84a",
+      "claim_ids": [
+        "claim_60defe3b704864c8cdd8"
+      ],
+      "is_primary": true,
+      "normalized_value": "guoyy@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/8828.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guoyy@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_60defe3b704864c8cdd8"
+    ],
+    "email": [
+      "claim_60defe3b704864c8cdd8"
+    ],
+    "name": [
+      "claim_60defe3b704864c8cdd8"
+    ],
+    "profile_url": [
+      "claim_60defe3b704864c8cdd8"
+    ],
+    "recent_papers": [
+      "claim_60defe3b704864c8cdd8"
+    ],
+    "research_directions": [
+      "claim_60defe3b704864c8cdd8"
+    ],
+    "status": [
+      "claim_60defe3b704864c8cdd8"
+    ],
+    "title": [
+      "claim_60defe3b704864c8cdd8"
+    ]
+  },
+  "id": "mentor_ef6396be7b2beb62e5e2",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_60defe3b704864c8cdd8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭迎亚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e0cecaf7f0f22cc8e84a",
+      "claim_ids": [
+        "claim_60defe3b704864c8cdd8"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1203/8828.htm"
+    }
+  ],
+  "recent_papers": [
+    "An End-to-End Learning Approach for Traffic Engineering with Sparse Traffic Measurements[J]. IEEE Transactions on Mobile Computing, 2026,25(4),5448 - 5463.(CCF-A)",
+    "Distributionally Robust Federated Learning for Network Traffic Classification with Noisy Labels[J]. IEEE Transactions on Mobile Computing, 2024,23(5),6212 - 6226. (CCF-A)",
+    "Achieving High Availability in Inter-DC WAN Traffic Engineering [J]. IEEE/ACM Transactions on Networking, 2022:1-16.(CCF-A)",
+    "Traffic Engineering in Partially Deployed Segment Routing over IPv6 Network with Deep Reinforcement Learning [J]. IEEE/ACM Transactions on Networking, 2020, 28(4): 1573-1586.(CCF-A)",
+    "FEAT: A Federated Approach for Privacy-Preserving Network Traffic Classification in Heterogeneous Environments[J]. IEEE Internet of Things Journal, 2022, 10 (2): 1274-1285. (物联网顶刊,中科院一区SCI)",
+    "Traffic Engineering in a Shared Inter-DC WAN via Deep Reinforcement Learning[J]. IEEE Transactions on Network Science and Engineering, 2022, 9(4): 2870-2881. (中科院一区SCI)",
+    "Capturing spatial–temporal correlations with Attention based Graph Convolutional Network for network traffic prediction[J]. Journal of Network and Computer Applications, 2023, 220: 103746. (中科院一区SCI)",
+    "Traffic engineering in hybrid software defined network via reinforcement learning[J]. Journal of Network and Computer Applications, 2021,189: 103-116. (中科院一区SCI)"
+  ],
+  "research_directions": [
+    "人工智能与网络优化,流量工程,路由优化,软件定义网络,边缘计算,网络流量分类和异常监测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1203/8828.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

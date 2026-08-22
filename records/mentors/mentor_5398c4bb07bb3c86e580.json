@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bfa7345fa5d138be0d14"
+      ],
+      "ended_at": null,
+      "id": "aff_28500e31617f8941d3c9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/8849.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bfa7345fa5d138be0d14"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_28500e31617f8941d3c9",
+      "claim_ids": [
+        "claim_bfa7345fa5d138be0d14"
+      ],
+      "is_primary": true,
+      "normalized_value": "xyli@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/8849.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xyli@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bfa7345fa5d138be0d14"
+    ],
+    "email": [
+      "claim_bfa7345fa5d138be0d14"
+    ],
+    "name": [
+      "claim_bfa7345fa5d138be0d14"
+    ],
+    "profile_url": [
+      "claim_bfa7345fa5d138be0d14"
+    ],
+    "recent_papers": [
+      "claim_bfa7345fa5d138be0d14"
+    ],
+    "research_directions": [
+      "claim_bfa7345fa5d138be0d14"
+    ],
+    "status": [
+      "claim_bfa7345fa5d138be0d14"
+    ],
+    "title": [
+      "claim_bfa7345fa5d138be0d14"
+    ]
+  },
+  "id": "mentor_5398c4bb07bb3c86e580",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bfa7345fa5d138be0d14"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李小燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_28500e31617f8941d3c9",
+      "claim_ids": [
+        "claim_bfa7345fa5d138be0d14"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1203/8849.htm"
+    }
+  ],
+  "recent_papers": [
+    "Analysis of BCube datacenter network reliability based on network subversion, neighborconnectivity, and cascading failures",
+    "Optimal fault-tolerant path and cycle embedding of hypercube networks under the PEF model",
+    "Link/Switch fault-tolerant Hamiltonian path embedding in BCube networks for deadlock-free routing",
+    "Link/Switch failure analysis of data center networks on matroidal connectivity",
+    "Embedding Hamiltonian paths in k-ary n-cubes with exponentially-many faulty edges",
+    "Constructing multiple CISTs on BCube-based data center networks in the occurrence of switch failures",
+    "An efficient algorithm for Hamiltonian path embedding of k-ary n-cubes under the partitioned edge fault model",
+    "Transmission failure analysis of multi-protection routing in data center networks with heterogeneous edge-core servers"
+  ],
+  "research_directions": [
+    "网络可靠性、分布式机器学习、区块链及云计算等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1203/8849.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

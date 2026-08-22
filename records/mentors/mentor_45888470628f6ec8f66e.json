@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ff7f5599743bf9242d3c"
+      ],
+      "ended_at": null,
+      "id": "aff_063cca9e7b317389fc15",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4990.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ff7f5599743bf9242d3c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_063cca9e7b317389fc15",
+      "claim_ids": [
+        "claim_ff7f5599743bf9242d3c"
+      ],
+      "is_primary": true,
+      "normalized_value": "yu.yuanlong@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4990.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yu.yuanlong@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ff7f5599743bf9242d3c"
+    ],
+    "email": [
+      "claim_ff7f5599743bf9242d3c"
+    ],
+    "name": [
+      "claim_ff7f5599743bf9242d3c"
+    ],
+    "profile_url": [
+      "claim_ff7f5599743bf9242d3c"
+    ],
+    "recent_papers": [
+      "claim_ff7f5599743bf9242d3c"
+    ],
+    "research_directions": [
+      "claim_ff7f5599743bf9242d3c"
+    ],
+    "status": [
+      "claim_ff7f5599743bf9242d3c"
+    ],
+    "title": [
+      "claim_ff7f5599743bf9242d3c"
+    ]
+  },
+  "id": "mentor_45888470628f6ec8f66e",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ff7f5599743bf9242d3c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于元隆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_063cca9e7b317389fc15",
+      "claim_ids": [
+        "claim_ff7f5599743bf9242d3c"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/4990.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yuanlong Yu, George K. I. Mann, and Raymond G. Gosine, “An object-based visual attention model for robotic applications”, IEEE Transactions on Systems, Man and Cybernetics, Part B: Cybernetics, vol. 40, no. 5, pp. 1398-1412, 2010.",
+    "Yuanlong Yu, George K. I. Mann, and Raymond G. Gosine, “A goal-directed visual perception system using object-based top-down attention”, IEEE Transactions on Autonomous Mental Development, vol. 4, no. 1, pp. 87-103, 2012.",
+    "Yuanlong Yu, Jason Gu, George K. I. Mann, and Raymond G. Gosine, “Development and Evaluation of Object-Based Visual Attention for Automatic Perception of Robots”,IEEE Transactions on Automation Science and Engineering, vol. 10, no. 2, pp. 365-379, 2013.",
+    "Zhiyong Huang, Yuanlong Yu*, Jason Gu and Huaping Liu, “An efficient method for traffic sign recognition based on extreme learning machine”, IEEE Transactions on Cybernetics, vol. 47, no. 4, pp. 920-933, 2017. (ESI高被引论文)",
+    "Huaping Liu, Yuanlong Yu, Fuchun Sun and Jason Gu, “Visual-tactile fusion for object recognition”,IEEE Transactions on Automation Science and Engineering, vol. 14, no. 2, pp. 996-1008, 2017. (ESI高被引论文)",
+    "Feigege Wang, Yue Gu, Wenxi Liu, Yuanlong Yu*, Shengfeng He, and Jia Pan, “Context-aware Spatio-recurrent Curvilinear Structure Segmentation”, in Proceedings of IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR), pp. 12640-12649, 2019.",
+    "Xiaosheng Yan, Feigege Wang, Wenxi Liu, Yuanlong Yu*, Shengfeng He, and Jia Pan, “Visualizing the Invisible: Occluded Vehicle Segmentation and Recovery”, in Proceedings of IEEE/CVF International Conference on Computer Vision (ICCV), pp. 7617-7626, 2019.",
+    "You Huang and Yuanlong Yu*, “An Internal Covariate Shift Bounding Algorithm for Deep Neural Networks by Unitizing Layers’ Outputs”, in Proceedings of IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR), pp. 8462-8470, 2020."
+  ],
+  "research_directions": [
+    "机器学习、计算机视觉、认知机器人、机器人视觉注意算法、机器人自主成长理论与算法、终身学习理论与算法、多模态环境感知和语义理解、基于视觉的事件检测与识别、异常模式识别、图像分割"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/4990.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

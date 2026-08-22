@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d71a61a8f9663c4d9dde"
+      ],
+      "ended_at": null,
+      "id": "aff_d43d9278f992db648570",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11311.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_d71a61a8f9663c4d9dde"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d43d9278f992db648570",
+      "claim_ids": [
+        "claim_d71a61a8f9663c4d9dde"
+      ],
+      "is_primary": true,
+      "normalized_value": "linyuqin@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11311.htm",
+      "status": "current",
+      "type": "email",
+      "value": "linyuqin@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d71a61a8f9663c4d9dde"
+    ],
+    "email": [
+      "claim_d71a61a8f9663c4d9dde"
+    ],
+    "name": [
+      "claim_d71a61a8f9663c4d9dde"
+    ],
+    "profile_url": [
+      "claim_d71a61a8f9663c4d9dde"
+    ],
+    "research_directions": [
+      "claim_d71a61a8f9663c4d9dde"
+    ],
+    "status": [
+      "claim_d71a61a8f9663c4d9dde"
+    ],
+    "title": [
+      "claim_d71a61a8f9663c4d9dde"
+    ]
+  },
+  "id": "mentor_d280c22a45dad085f065",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d71a61a8f9663c4d9dde"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林羽钦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d43d9278f992db648570",
+      "claim_ids": [
+        "claim_d71a61a8f9663c4d9dde"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/11311.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、大语言模型、深度学习、智能语音、人工智能在医疗健康中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/11311.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

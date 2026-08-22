@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dc02fc3fac23c341c575"
+      ],
+      "ended_at": null,
+      "id": "aff_159130e2109fba0ab157",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/9820.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_dc02fc3fac23c341c575"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_159130e2109fba0ab157",
+      "claim_ids": [
+        "claim_dc02fc3fac23c341c575"
+      ],
+      "is_primary": true,
+      "normalized_value": "liugenggeng@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/9820.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liugenggeng@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dc02fc3fac23c341c575"
+    ],
+    "email": [
+      "claim_dc02fc3fac23c341c575"
+    ],
+    "name": [
+      "claim_dc02fc3fac23c341c575"
+    ],
+    "profile_url": [
+      "claim_dc02fc3fac23c341c575"
+    ],
+    "recent_papers": [
+      "claim_dc02fc3fac23c341c575"
+    ],
+    "research_directions": [
+      "claim_dc02fc3fac23c341c575"
+    ],
+    "status": [
+      "claim_dc02fc3fac23c341c575"
+    ],
+    "title": [
+      "claim_dc02fc3fac23c341c575"
+    ]
+  },
+  "id": "mentor_fc1b0d8754c33b60a7f9",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dc02fc3fac23c341c575"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘耿耿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_159130e2109fba0ab157",
+      "claim_ids": [
+        "claim_dc02fc3fac23c341c575"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/9820.htm"
+    }
+  ],
+  "recent_papers": [
+    "Parallel Delay-Driven Layer Assignment Leveraging Hierarchical Task Graph Modeling for Advanced Technology Nodes. IEEE Transactions on Computers (TC). (CCF Rank A)",
+    "URoute: Universal Routability Prediction. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2026. ( CCF Rank A,EDA领域的顶刊)",
+    "FTCD: Fault-Tolerant Co-Design of Flow and Control Layers for Fully Programmable Valve Array Biochips. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025, 44(7): 2669-2682. (CCF Rank A,EDA领域的顶刊)",
+    "A Unified Deep Reinforcement Learning Approach for Constructing Rectilinear and Octilinear Steiner Minimum Tree. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025, 44(7): 2711-2724. (CCF Rank A,EDA领域的顶刊)",
+    "Obstacle-Avoiding X-Architecture Bounded-Skew Tree Algorithm under Timing Slack Constraints. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2025, 55(12): 9426-9440. (中科院SCI一区, Top期刊)",
+    "Adaptive Control-Logic Routing with Length Matching and Fault Tolerance for FPVA Biochips Using Deep Reinforcement Learning. ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025, 31(1): 1-22. (CCF Rank B,EDA领域的顶刊)",
+    "SPTA 2.0: Enhanced Scalable Parallel Track Assignment Algorithm with Two-Stage Partition Considering Timing Delay, ACM Transactions on Design Automation of Electronic Systems (TODAES), 2025, 30(2): 1-23. (CCF Rank B,EDA领域的顶刊)",
+    "A Matching-Based Escape Routing Algorithm with Variable Design Rules and Multiple Constraints. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025, 44(12): 4765-4778. (CCF Rank A,EDA领域的顶刊)"
+  ],
+  "research_directions": [
+    "EDA算法、计算智能及其应用等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/9820.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

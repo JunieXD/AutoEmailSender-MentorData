@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_003403de4fa7ff8ec05d"
+      ],
+      "ended_at": null,
+      "id": "aff_c2238bcf0284b51cd906",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_04dc061892161f49e7d7",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/11335.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_003403de4fa7ff8ec05d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c2238bcf0284b51cd906",
+      "claim_ids": [
+        "claim_003403de4fa7ff8ec05d"
+      ],
+      "is_primary": true,
+      "normalized_value": "kunonkey@163.com",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/11335.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kunonkey@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_003403de4fa7ff8ec05d"
+    ],
+    "email": [
+      "claim_003403de4fa7ff8ec05d"
+    ],
+    "name": [
+      "claim_003403de4fa7ff8ec05d"
+    ],
+    "profile_url": [
+      "claim_003403de4fa7ff8ec05d"
+    ],
+    "recent_papers": [
+      "claim_003403de4fa7ff8ec05d"
+    ],
+    "research_directions": [
+      "claim_003403de4fa7ff8ec05d"
+    ],
+    "status": [
+      "claim_003403de4fa7ff8ec05d"
+    ],
+    "title": [
+      "claim_003403de4fa7ff8ec05d"
+    ]
+  },
+  "id": "mentor_4c07860e20d4069a51ac",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_003403de4fa7ff8ec05d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林德坤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c2238bcf0284b51cd906",
+      "claim_ids": [
+        "claim_003403de4fa7ff8ec05d"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1203/11335.htm"
+    }
+  ],
+  "recent_papers": [
+    "Lin D. Probability guided loss for long-tailed multi-label image classification[C]//Proceedings of the AAAI Conference on Artificial Intelligence. 2023, 37(2): 1577-1585. (CCF-A)",
+    "Lin D, Peng T, Chen R, et al. Distributionally Robust Loss for Long-Tailed Multi-label Image Classification[C]//European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2024: 417-433. (CAAI-A)",
+    "Lin D, Peng T, Chen R, et al. Let Multi-classification Help Deep Imbalanced Regression[C]//International Conference on Artificial Neural Networks. Cham: Springer Nature Switzerland, 2024: 430-447. (CCF-C)",
+    "Li Y, Yang W, Lin D, et al. AVM-SLAM: Semantic visual SLAM with multi-sensor fusion in a bird’s eye view for automated valet parking[C]//2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2024: 7937-7943. (CAAI-B)"
+  ],
+  "research_directions": [
+    "人工智能、计算机视觉、长尾学习和大模型等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1203/11335.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}
