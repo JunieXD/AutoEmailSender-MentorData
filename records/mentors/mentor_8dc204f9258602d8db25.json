@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b9bf32fc2383b10d00bb"
+      ],
+      "ended_at": null,
+      "id": "aff_04eb8eb87e1009c011d4",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:54:52Z",
+      "organization_id": "org_auto_b63813c60dc5d79571ca",
+      "source_url": "http://xagx.zuel.edu.cn/2025/0721/c3560a402323/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_b9bf32fc2383b10d00bb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_04eb8eb87e1009c011d4",
+      "claim_ids": [
+        "claim_b9bf32fc2383b10d00bb"
+      ],
+      "is_primary": true,
+      "normalized_value": "yzhang_zuel@163.com",
+      "observed_at": "2026-08-21T18:54:52Z",
+      "source_url": "http://xagx.zuel.edu.cn/2025/0721/c3560a402323/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yzhang_zuel@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:54:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b9bf32fc2383b10d00bb"
+    ],
+    "email": [
+      "claim_b9bf32fc2383b10d00bb"
+    ],
+    "name": [
+      "claim_b9bf32fc2383b10d00bb"
+    ],
+    "profile_url": [
+      "claim_b9bf32fc2383b10d00bb"
+    ],
+    "recent_papers": [
+      "claim_b9bf32fc2383b10d00bb"
+    ],
+    "research_directions": [
+      "claim_b9bf32fc2383b10d00bb"
+    ],
+    "status": [
+      "claim_b9bf32fc2383b10d00bb"
+    ],
+    "title": [
+      "claim_b9bf32fc2383b10d00bb"
+    ]
+  },
+  "id": "mentor_8dc204f9258602d8db25",
+  "last_verified_at": "2026-08-21T18:54:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b9bf32fc2383b10d00bb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张怡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_04eb8eb87e1009c011d4",
+      "claim_ids": [
+        "claim_b9bf32fc2383b10d00bb"
+      ],
+      "observed_at": "2026-08-21T18:54:52Z",
+      "status": "current",
+      "url": "http://xagx.zuel.edu.cn/2025/0721/c3560a402323/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yi Zhang,Guangyou Zhou, Zhiwen Xie, Jimmy Xiangji Huang. HGEN: Learning Hierarchical Heterogeneous Graph Encoding for Math Word Problem Solving[J]. IEEE-ACM Transactions on Audio,Speech, and Language Processing (IEEE/ACM TASLP), 2022, 30: 816-828.",
+    "Yi Zhang,Guangyou Zhou, Zhiwen Xie, Jimmy Xiangji Huang. Number-enhanced Representation with Hierarchical Recursive Tree Decoding for Math Word Problem Solving[J]. Information Processing and Management (IPM). 2024, Volume 61, Issue 2.",
+    "Yi Zhang, Guangyou Zhou, Zhiwen Xie, Jinjin Ma, Jimmy Xiangji Huang, A Diversity-enhanced Knowledge Distillation Model for Practical Math Word Problem Solving[J]. Information Processing and Management (IPM). 2025, Volume 62, Issue 3.",
+    "Zhiwen Xie,Yi Zhang, Guangyou Zhou, Jin Liu, Xinhui Tu, Jimmy Xiangji Huang. One Subgraph for All: Efficient Reasoning on Opening Subgraphs for Inductive Knowledge Graph Completion[J]. Transactions on Knowledge and Data Engineering (TKDE), 2024.",
+    "Xingyu Tao,Yi Zhang,Zhiwen Xie, Zhuo Zhao, Guangyou Zhou, Yongchun Lu. Unifying the syntax and semantics for math word problem solving[J]. Neurocomputing, Volume 636, 2025.",
+    "Zhiwen Xie,Yi Zhang, Jin Liu, Guangyou Zhou, Jimmy Xiangji Huang. Learning Query Adaptive Anchor Representation for Inductive Relation Prediction[C]. Association of Computational Linguistics 2023 (ACL 2023). 2024,14041–14053.",
+    "Qixuan Zhang, Xinyi Weng, Guangyou Zhou,Yi Zhang,Jimmy Xiangji Huang. ARL: An Adaptive Reinforcement Learning Framework for Complex Question Answering over Knowledge Base[J]. Information Processing and Management (IPM). 2024, Volume 61, Issue 2."
+  ],
+  "research_directions": [
+    "人工智能与智慧教育应用、机器学习、自然语言处理、数据挖掘、时序序列分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:54:52Z",
+  "status_reason": null,
+  "status_source_url": "http://xagx.zuel.edu.cn/2025/0721/c3560a402323/page.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:54:52Z"
+}

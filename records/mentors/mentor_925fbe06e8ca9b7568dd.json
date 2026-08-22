@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_001d2940315ae11c9121"
+      ],
+      "ended_at": null,
+      "id": "aff_caea74f742c85cdb444b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:54:52Z",
+      "organization_id": "org_auto_56c317308e1ae449045e",
+      "source_url": "http://xagx.zuel.edu.cn/2016/0918/c3560a78995/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_001d2940315ae11c9121"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_caea74f742c85cdb444b",
+      "claim_ids": [
+        "claim_001d2940315ae11c9121"
+      ],
+      "is_primary": true,
+      "normalized_value": "pingxiong@zuel.edu.cn",
+      "observed_at": "2026-08-21T18:54:52Z",
+      "source_url": "http://xagx.zuel.edu.cn/2016/0918/c3560a78995/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pingxiong@zuel.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:54:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_001d2940315ae11c9121"
+    ],
+    "email": [
+      "claim_001d2940315ae11c9121"
+    ],
+    "name": [
+      "claim_001d2940315ae11c9121"
+    ],
+    "profile_url": [
+      "claim_001d2940315ae11c9121"
+    ],
+    "research_directions": [
+      "claim_001d2940315ae11c9121"
+    ],
+    "status": [
+      "claim_001d2940315ae11c9121"
+    ],
+    "title": [
+      "claim_001d2940315ae11c9121"
+    ]
+  },
+  "id": "mentor_925fbe06e8ca9b7568dd",
+  "last_verified_at": "2026-08-21T18:54:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_001d2940315ae11c9121"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "熊平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_caea74f742c85cdb444b",
+      "claim_ids": [
+        "claim_001d2940315ae11c9121"
+      ],
+      "observed_at": "2026-08-21T18:54:52Z",
+      "status": "current",
+      "url": "http://xagx.zuel.edu.cn/2016/0918/c3560a78995/page.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信息安全、机器学习、隐私计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:54:52Z",
+  "status_reason": null,
+  "status_source_url": "http://xagx.zuel.edu.cn/2016/0918/c3560a78995/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:54:52Z"
+}
