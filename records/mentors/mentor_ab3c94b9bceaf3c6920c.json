@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c5b35a31e58c94c8d3f4"
+      ],
+      "ended_at": null,
+      "id": "aff_2ab604ae1880183189d0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhengwenqi/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c5b35a31e58c94c8d3f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2ab604ae1880183189d0",
+      "claim_ids": [
+        "claim_c5b35a31e58c94c8d3f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "zwq19960307@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhengwenqi/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zwq19960307@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c5b35a31e58c94c8d3f4"
+    ],
+    "email": [
+      "claim_c5b35a31e58c94c8d3f4"
+    ],
+    "name": [
+      "claim_c5b35a31e58c94c8d3f4"
+    ],
+    "profile_url": [
+      "claim_c5b35a31e58c94c8d3f4"
+    ],
+    "research_directions": [
+      "claim_c5b35a31e58c94c8d3f4"
+    ],
+    "status": [
+      "claim_c5b35a31e58c94c8d3f4"
+    ]
+  },
+  "id": "mentor_ab3c94b9bceaf3c6920c",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c5b35a31e58c94c8d3f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑文祺"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2ab604ae1880183189d0",
+      "claim_ids": [
+        "claim_c5b35a31e58c94c8d3f4"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/zhengwenqi/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉,包括但不限于面向自动驾驶的多模态融合、水下环境智能感知、小样本目标检测等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/zhengwenqi/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:46:55Z"
+}

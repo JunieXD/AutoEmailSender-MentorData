@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_453d84d81155fd57ef4e"
+      ],
+      "ended_at": null,
+      "id": "aff_8d51e5e0838073f4a2b6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/xuchen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_453d84d81155fd57ef4e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8d51e5e0838073f4a2b6",
+      "claim_ids": [
+        "claim_453d84d81155fd57ef4e"
+      ],
+      "is_primary": true,
+      "normalized_value": "chen.xu@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/xuchen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chen.xu@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_453d84d81155fd57ef4e"
+    ],
+    "email": [
+      "claim_453d84d81155fd57ef4e"
+    ],
+    "name": [
+      "claim_453d84d81155fd57ef4e"
+    ],
+    "profile_url": [
+      "claim_453d84d81155fd57ef4e"
+    ],
+    "research_directions": [
+      "claim_453d84d81155fd57ef4e"
+    ],
+    "status": [
+      "claim_453d84d81155fd57ef4e"
+    ],
+    "title": [
+      "claim_453d84d81155fd57ef4e"
+    ]
+  },
+  "id": "mentor_7276b815ca4026480476",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_453d84d81155fd57ef4e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "许晨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8d51e5e0838073f4a2b6",
+      "claim_ids": [
+        "claim_453d84d81155fd57ef4e"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/xuchen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自然语言处理与语音处理、多模态建模、人工智能安全、专业领域大模型、大模型前沿探索,聚焦机器翻译、语音翻译、语音识别、文本生成、多模态大模型架构设计、模型鲁棒性、教育领域大模型、水声领域大模型等方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/xuchen/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}

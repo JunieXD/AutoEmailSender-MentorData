@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_be785774f8021046bd04"
+      ],
+      "ended_at": null,
+      "id": "aff_25394469e1a366d0d5b8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/fengxiaoning/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_be785774f8021046bd04"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_25394469e1a366d0d5b8",
+      "claim_ids": [
+        "claim_be785774f8021046bd04"
+      ],
+      "is_primary": true,
+      "normalized_value": "fengxiaoning@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/fengxiaoning/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fengxiaoning@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_be785774f8021046bd04"
+    ],
+    "email": [
+      "claim_be785774f8021046bd04"
+    ],
+    "name": [
+      "claim_be785774f8021046bd04"
+    ],
+    "profile_url": [
+      "claim_be785774f8021046bd04"
+    ],
+    "research_directions": [
+      "claim_be785774f8021046bd04"
+    ],
+    "status": [
+      "claim_be785774f8021046bd04"
+    ],
+    "title": [
+      "claim_be785774f8021046bd04"
+    ]
+  },
+  "id": "mentor_4e2d10430b5db5f030eb",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_be785774f8021046bd04"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冯晓宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_25394469e1a366d0d5b8",
+      "claim_ids": [
+        "claim_be785774f8021046bd04"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/fengxiaoning/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "传感器网络、跨域通信、复杂体系试验设计、复杂系统建模与仿真、深度强化学习、无人系统及仿真、大语言模型、知识图谱、大型工业软件体系结构等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/fengxiaoning/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}

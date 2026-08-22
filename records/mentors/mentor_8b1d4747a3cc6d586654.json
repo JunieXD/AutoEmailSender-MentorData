@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bfc28c2fd092af7857e8"
+      ],
+      "ended_at": null,
+      "id": "aff_a613f708b557c467b1cf",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/xuli",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bfc28c2fd092af7857e8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a613f708b557c467b1cf",
+      "claim_ids": [
+        "claim_bfc28c2fd092af7857e8"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuli@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/xuli",
+      "status": "current",
+      "type": "email",
+      "value": "xuli@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bfc28c2fd092af7857e8"
+    ],
+    "email": [
+      "claim_bfc28c2fd092af7857e8"
+    ],
+    "name": [
+      "claim_bfc28c2fd092af7857e8"
+    ],
+    "profile_url": [
+      "claim_bfc28c2fd092af7857e8"
+    ],
+    "research_directions": [
+      "claim_bfc28c2fd092af7857e8"
+    ],
+    "status": [
+      "claim_bfc28c2fd092af7857e8"
+    ],
+    "title": [
+      "claim_bfc28c2fd092af7857e8"
+    ]
+  },
+  "id": "mentor_8b1d4747a3cc6d586654",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bfc28c2fd092af7857e8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a613f708b557c467b1cf",
+      "claim_ids": [
+        "claim_bfc28c2fd092af7857e8"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/xuli"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "生物信息、脑机接口、人工智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/xuli",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}

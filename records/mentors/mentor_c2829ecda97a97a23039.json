@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ec662044f3f61a9565f2"
+      ],
+      "ended_at": null,
+      "id": "aff_52c387e45a85b613838f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/wanghui_cs/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ec662044f3f61a9565f2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_52c387e45a85b613838f",
+      "claim_ids": [
+        "claim_ec662044f3f61a9565f2"
+      ],
+      "is_primary": true,
+      "normalized_value": "hui.wang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/wanghui_cs/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hui.wang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ec662044f3f61a9565f2"
+    ],
+    "email": [
+      "claim_ec662044f3f61a9565f2"
+    ],
+    "name": [
+      "claim_ec662044f3f61a9565f2"
+    ],
+    "profile_url": [
+      "claim_ec662044f3f61a9565f2"
+    ],
+    "research_directions": [
+      "claim_ec662044f3f61a9565f2"
+    ],
+    "status": [
+      "claim_ec662044f3f61a9565f2"
+    ]
+  },
+  "id": "mentor_c2829ecda97a97a23039",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ec662044f3f61a9565f2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_52c387e45a85b613838f",
+      "claim_ids": [
+        "claim_ec662044f3f61a9565f2"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/wanghui_cs/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人机计算与人机协作、群智感知计算、具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/wanghui_cs/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:46:55Z"
+}

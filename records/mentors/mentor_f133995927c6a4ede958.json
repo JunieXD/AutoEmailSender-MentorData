@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_10643935f0e58e8028f8"
+      ],
+      "ended_at": null,
+      "id": "aff_d8cd3dccafb221beafde",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/yuzhiwen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_10643935f0e58e8028f8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d8cd3dccafb221beafde",
+      "claim_ids": [
+        "claim_10643935f0e58e8028f8"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhiwenyu@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/yuzhiwen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhiwenyu@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_10643935f0e58e8028f8"
+    ],
+    "email": [
+      "claim_10643935f0e58e8028f8"
+    ],
+    "name": [
+      "claim_10643935f0e58e8028f8"
+    ],
+    "profile_url": [
+      "claim_10643935f0e58e8028f8"
+    ],
+    "research_directions": [
+      "claim_10643935f0e58e8028f8"
+    ],
+    "status": [
+      "claim_10643935f0e58e8028f8"
+    ],
+    "title": [
+      "claim_10643935f0e58e8028f8"
+    ]
+  },
+  "id": "mentor_f133995927c6a4ede958",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_10643935f0e58e8028f8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "於志文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d8cd3dccafb221beafde",
+      "claim_ids": [
+        "claim_10643935f0e58e8028f8"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/yuzhiwen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "感知大数据、人机系统、普适计算、物联网"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/yuzhiwen/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}

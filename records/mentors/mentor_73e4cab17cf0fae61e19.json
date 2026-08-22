@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e25f9be521fb5f04db7f"
+      ],
+      "ended_at": null,
+      "id": "aff_31ef43b17b1e1b064d69",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhanghaitao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e25f9be521fb5f04db7f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_31ef43b17b1e1b064d69",
+      "claim_ids": [
+        "claim_e25f9be521fb5f04db7f"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanghaitao@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhanghaitao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhanghaitao@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e25f9be521fb5f04db7f"
+    ],
+    "email": [
+      "claim_e25f9be521fb5f04db7f"
+    ],
+    "name": [
+      "claim_e25f9be521fb5f04db7f"
+    ],
+    "profile_url": [
+      "claim_e25f9be521fb5f04db7f"
+    ],
+    "research_directions": [
+      "claim_e25f9be521fb5f04db7f"
+    ],
+    "status": [
+      "claim_e25f9be521fb5f04db7f"
+    ],
+    "title": [
+      "claim_e25f9be521fb5f04db7f"
+    ]
+  },
+  "id": "mentor_73e4cab17cf0fae61e19",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e25f9be521fb5f04db7f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张海涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_31ef43b17b1e1b064d69",
+      "claim_ids": [
+        "claim_e25f9be521fb5f04db7f"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/zhanghaitao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大数据分析、网络与信息安全、智能信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/zhanghaitao/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}

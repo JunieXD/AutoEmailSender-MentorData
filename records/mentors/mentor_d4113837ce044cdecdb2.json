@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fce07d911fcfc6bade95"
+      ],
+      "ended_at": null,
+      "id": "aff_afb4a709a18f9e2664bb",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/fengguangsheng/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fce07d911fcfc6bade95"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_afb4a709a18f9e2664bb",
+      "claim_ids": [
+        "claim_fce07d911fcfc6bade95"
+      ],
+      "is_primary": true,
+      "normalized_value": "ica@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/fengguangsheng/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ica@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fce07d911fcfc6bade95"
+    ],
+    "email": [
+      "claim_fce07d911fcfc6bade95"
+    ],
+    "name": [
+      "claim_fce07d911fcfc6bade95"
+    ],
+    "profile_url": [
+      "claim_fce07d911fcfc6bade95"
+    ],
+    "research_directions": [
+      "claim_fce07d911fcfc6bade95"
+    ],
+    "status": [
+      "claim_fce07d911fcfc6bade95"
+    ],
+    "title": [
+      "claim_fce07d911fcfc6bade95"
+    ]
+  },
+  "id": "mentor_d4113837ce044cdecdb2",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fce07d911fcfc6bade95"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冯光升"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_afb4a709a18f9e2664bb",
+      "claim_ids": [
+        "claim_fce07d911fcfc6bade95"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/fengguangsheng/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络智能感知、边缘智能、无线室内定位技术等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/fengguangsheng/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}
