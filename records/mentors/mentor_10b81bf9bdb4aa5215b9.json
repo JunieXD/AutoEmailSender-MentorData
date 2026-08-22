@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8411fd5738411e5cc9fc"
+      ],
+      "ended_at": null,
+      "id": "aff_cbac7811edca6ef8ba45",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:19Z",
+      "organization_id": "org_auto_ab2465679c57aee3c143",
+      "source_url": "https://eie.tyut.edu.cn/info/1071/5541.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_8411fd5738411e5cc9fc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cbac7811edca6ef8ba45",
+      "claim_ids": [
+        "claim_8411fd5738411e5cc9fc"
+      ],
+      "is_primary": true,
+      "normalized_value": "niupuhua@tyut.edu.cn",
+      "observed_at": "2026-08-21T18:50:19Z",
+      "source_url": "https://eie.tyut.edu.cn/info/1071/5541.htm",
+      "status": "current",
+      "type": "email",
+      "value": "niupuhua@tyut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8411fd5738411e5cc9fc"
+    ],
+    "email": [
+      "claim_8411fd5738411e5cc9fc"
+    ],
+    "name": [
+      "claim_8411fd5738411e5cc9fc"
+    ],
+    "profile_url": [
+      "claim_8411fd5738411e5cc9fc"
+    ],
+    "recent_papers": [
+      "claim_8411fd5738411e5cc9fc"
+    ],
+    "research_directions": [
+      "claim_8411fd5738411e5cc9fc"
+    ],
+    "status": [
+      "claim_8411fd5738411e5cc9fc"
+    ],
+    "title": [
+      "claim_8411fd5738411e5cc9fc"
+    ]
+  },
+  "id": "mentor_10b81bf9bdb4aa5215b9",
+  "last_verified_at": "2026-08-21T18:50:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8411fd5738411e5cc9fc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "牛溥华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cbac7811edca6ef8ba45",
+      "claim_ids": [
+        "claim_8411fd5738411e5cc9fc"
+      ],
+      "observed_at": "2026-08-21T18:50:19Z",
+      "status": "current",
+      "url": "https://eie.tyut.edu.cn/info/1071/5541.htm"
+    }
+  ],
+  "recent_papers": [
+    "Puhua Niu, Shili Wu, and Xiaoning Qian. Evaluating GFlowNet from partial episodes for stable and flexible policy-based training. In International Conference on Learning Representations (ICLR), 2026.",
+    "Puhua Niu, Shili Wu, Mingzhou Fan, and Xiaoning Qian. GFlowNet training by policy gradients. InInternational Conference on Machine Learning(ICML), 2024.",
+    "Puhua Niu, Maria J. Soto, Byung-Jun Yoon, Edward R. Dougherty, Francis J. Alexander, Ian Blaby, and Xiaoning Qian. TRIMER: Transcription regulation integrated with metabolic regulation. Cell Iscience, 24(11), 2021."
+  ],
+  "research_directions": [
+    "变分推理,因果推理,强化学习,图概率模型,生成式AI模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:19Z",
+  "status_reason": null,
+  "status_source_url": "https://eie.tyut.edu.cn/info/1071/5541.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:50:19Z"
+}
