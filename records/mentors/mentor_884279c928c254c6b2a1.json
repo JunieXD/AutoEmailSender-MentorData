@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f412364b2a23a7d95928"
+      ],
+      "ended_at": null,
+      "id": "aff_e1049994163a158df1df",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004767",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f412364b2a23a7d95928"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e1049994163a158df1df",
+      "claim_ids": [
+        "claim_f412364b2a23a7d95928"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuyunjun@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004767",
+      "status": "current",
+      "type": "email",
+      "value": "yuyunjun@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f412364b2a23a7d95928"
+    ],
+    "email": [
+      "claim_f412364b2a23a7d95928"
+    ],
+    "name": [
+      "claim_f412364b2a23a7d95928"
+    ],
+    "profile_url": [
+      "claim_f412364b2a23a7d95928"
+    ],
+    "research_directions": [
+      "claim_f412364b2a23a7d95928"
+    ],
+    "status": [
+      "claim_f412364b2a23a7d95928"
+    ],
+    "title": [
+      "claim_f412364b2a23a7d95928"
+    ]
+  },
+  "id": "mentor_884279c928c254c6b2a1",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f412364b2a23a7d95928"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "余运俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e1049994163a158df1df",
+      "claim_ids": [
+        "claim_f412364b2a23a7d95928"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004767"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数字技术的研究,包括基于FPGA的人工智能算法加速、数字眼科图像处理、智能电网技术、数字乡村等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004767",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

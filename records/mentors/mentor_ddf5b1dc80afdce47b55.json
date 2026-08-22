@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c5f90c7228b832ee368"
+      ],
+      "ended_at": null,
+      "id": "aff_2f93221d75b8cd1db89e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092926",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c5f90c7228b832ee368"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2f93221d75b8cd1db89e",
+      "claim_ids": [
+        "claim_1c5f90c7228b832ee368"
+      ],
+      "is_primary": true,
+      "normalized_value": "d.yu@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092926",
+      "status": "current",
+      "type": "email",
+      "value": "d.yu@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c5f90c7228b832ee368"
+    ],
+    "email": [
+      "claim_1c5f90c7228b832ee368"
+    ],
+    "name": [
+      "claim_1c5f90c7228b832ee368"
+    ],
+    "profile_url": [
+      "claim_1c5f90c7228b832ee368"
+    ],
+    "research_directions": [
+      "claim_1c5f90c7228b832ee368"
+    ],
+    "status": [
+      "claim_1c5f90c7228b832ee368"
+    ],
+    "title": [
+      "claim_1c5f90c7228b832ee368"
+    ]
+  },
+  "id": "mentor_ddf5b1dc80afdce47b55",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c5f90c7228b832ee368"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于东民"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2f93221d75b8cd1db89e",
+      "claim_ids": [
+        "claim_1c5f90c7228b832ee368"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092926"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "用电技术,包括需求响应、综合能源系统优化、电力市场等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092926",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1ff81db2789c8bbc18d6"
+      ],
+      "ended_at": null,
+      "id": "aff_bbb2c8820dc9cf0fd307",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092102",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_1ff81db2789c8bbc18d6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bbb2c8820dc9cf0fd307",
+      "claim_ids": [
+        "claim_1ff81db2789c8bbc18d6"
+      ],
+      "is_primary": true,
+      "normalized_value": "wjie85@126.com",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092102",
+      "status": "current",
+      "type": "email",
+      "value": "wjie85@126.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1ff81db2789c8bbc18d6"
+    ],
+    "email": [
+      "claim_1ff81db2789c8bbc18d6"
+    ],
+    "name": [
+      "claim_1ff81db2789c8bbc18d6"
+    ],
+    "profile_url": [
+      "claim_1ff81db2789c8bbc18d6"
+    ],
+    "status": [
+      "claim_1ff81db2789c8bbc18d6"
+    ],
+    "title": [
+      "claim_1ff81db2789c8bbc18d6"
+    ]
+  },
+  "id": "mentor_77ae6b2a8fdbe85ac10f",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1ff81db2789c8bbc18d6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢文军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bbb2c8820dc9cf0fd307",
+      "claim_ids": [
+        "claim_1ff81db2789c8bbc18d6"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092102"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092102",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

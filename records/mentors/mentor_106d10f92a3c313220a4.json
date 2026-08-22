@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_883562e54bc7415835de"
+      ],
+      "ended_at": null,
+      "id": "aff_6d03a6b6d8db36e45b87",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004863",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_883562e54bc7415835de"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6d03a6b6d8db36e45b87",
+      "claim_ids": [
+        "claim_883562e54bc7415835de"
+      ],
+      "is_primary": true,
+      "normalized_value": "yhping123@163.com",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004863",
+      "status": "current",
+      "type": "email",
+      "value": "yhping123@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_883562e54bc7415835de"
+    ],
+    "email": [
+      "claim_883562e54bc7415835de"
+    ],
+    "name": [
+      "claim_883562e54bc7415835de"
+    ],
+    "profile_url": [
+      "claim_883562e54bc7415835de"
+    ],
+    "recent_papers": [
+      "claim_883562e54bc7415835de"
+    ],
+    "research_directions": [
+      "claim_883562e54bc7415835de"
+    ],
+    "status": [
+      "claim_883562e54bc7415835de"
+    ],
+    "title": [
+      "claim_883562e54bc7415835de"
+    ]
+  },
+  "id": "mentor_106d10f92a3c313220a4",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_883562e54bc7415835de"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨胡萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6d03a6b6d8db36e45b87",
+      "claim_ids": [
+        "claim_883562e54bc7415835de"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004863"
+    }
+  ],
+  "recent_papers": [
+    "计及多重不确定性的综合能源系统两阶段鲁棒低碳优化调度",
+    "绿证-碳耦合机制下考虑新型碳捕集电厂的综合能源系统优化调度",
+    "考虑碳排放的分布式电源优化配置",
+    "考虑风光的两阶段配电网动态重构方法",
+    "基于VMD-CNN-BIGRU的电力系统短期负荷预测",
+    "基于数据拟合的继保设备失效率调整因子模型",
+    "一种新的可再生能源并网发电分层结构",
+    "考虑静态电压稳定约束的低网损发电权交易优化"
+  ],
+  "research_directions": [
+    "综合能源系统优化调度、电力系统负荷预测、分布式电源优化配置、电力系统稳定与保护、可再生能源并网发电"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004863",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

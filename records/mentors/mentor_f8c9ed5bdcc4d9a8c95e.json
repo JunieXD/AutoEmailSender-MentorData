@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d49c57f12e6d93439505"
+      ],
+      "ended_at": null,
+      "id": "aff_4cca3fcc423cbe2b457f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_e1a046cfd69ffa0a63bd",
+      "source_url": "https://teacher.ncu.edu.cn/publish/091055",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d49c57f12e6d93439505"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4cca3fcc423cbe2b457f",
+      "claim_ids": [
+        "claim_d49c57f12e6d93439505"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangxiaohui@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/091055",
+      "status": "current",
+      "type": "email",
+      "value": "yangxiaohui@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d49c57f12e6d93439505"
+    ],
+    "email": [
+      "claim_d49c57f12e6d93439505"
+    ],
+    "name": [
+      "claim_d49c57f12e6d93439505"
+    ],
+    "profile_url": [
+      "claim_d49c57f12e6d93439505"
+    ],
+    "research_directions": [
+      "claim_d49c57f12e6d93439505"
+    ],
+    "status": [
+      "claim_d49c57f12e6d93439505"
+    ],
+    "title": [
+      "claim_d49c57f12e6d93439505"
+    ]
+  },
+  "id": "mentor_f8c9ed5bdcc4d9a8c95e",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d49c57f12e6d93439505"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨晓辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4cca3fcc423cbe2b457f",
+      "claim_ids": [
+        "claim_d49c57f12e6d93439505"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/091055"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新能源并网、微电网优化调度、分布式能源及储能系统优化配置"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/091055",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

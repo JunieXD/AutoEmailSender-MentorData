@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b545ed278571f462c4d3"
+      ],
+      "ended_at": null,
+      "id": "aff_ee9b72493bf31534d862",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/023045",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b545ed278571f462c4d3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ee9b72493bf31534d862",
+      "claim_ids": [
+        "claim_b545ed278571f462c4d3"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyanqing@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/023045",
+      "status": "current",
+      "type": "email",
+      "value": "wangyanqing@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b545ed278571f462c4d3"
+    ],
+    "email": [
+      "claim_b545ed278571f462c4d3"
+    ],
+    "name": [
+      "claim_b545ed278571f462c4d3"
+    ],
+    "profile_url": [
+      "claim_b545ed278571f462c4d3"
+    ],
+    "research_directions": [
+      "claim_b545ed278571f462c4d3"
+    ],
+    "status": [
+      "claim_b545ed278571f462c4d3"
+    ],
+    "title": [
+      "claim_b545ed278571f462c4d3"
+    ]
+  },
+  "id": "mentor_161b77949e0f933a0896",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b545ed278571f462c4d3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王艳庆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ee9b72493bf31534d862",
+      "claim_ids": [
+        "claim_b545ed278571f462c4d3"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/023045"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信号采集与信息传输、机器人控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/023045",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

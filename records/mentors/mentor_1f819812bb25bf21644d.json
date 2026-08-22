@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_342b49d13a02c9e947b9"
+      ],
+      "ended_at": null,
+      "id": "aff_801537b855d16282cfb8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092853",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_342b49d13a02c9e947b9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_801537b855d16282cfb8",
+      "claim_ids": [
+        "claim_342b49d13a02c9e947b9"
+      ],
+      "is_primary": true,
+      "normalized_value": "guozhijun@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092853",
+      "status": "current",
+      "type": "email",
+      "value": "guozhijun@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_342b49d13a02c9e947b9"
+    ],
+    "email": [
+      "claim_342b49d13a02c9e947b9"
+    ],
+    "name": [
+      "claim_342b49d13a02c9e947b9"
+    ],
+    "profile_url": [
+      "claim_342b49d13a02c9e947b9"
+    ],
+    "recent_papers": [
+      "claim_342b49d13a02c9e947b9"
+    ],
+    "research_directions": [
+      "claim_342b49d13a02c9e947b9"
+    ],
+    "status": [
+      "claim_342b49d13a02c9e947b9"
+    ],
+    "title": [
+      "claim_342b49d13a02c9e947b9"
+    ]
+  },
+  "id": "mentor_1f819812bb25bf21644d",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_342b49d13a02c9e947b9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭志军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_801537b855d16282cfb8",
+      "claim_ids": [
+        "claim_342b49d13a02c9e947b9"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092853"
+    }
+  ],
+  "recent_papers": [
+    "Z. Guo, G. Chen. Distributed Dynamic Event-Triggered and Practical Predefined-Time Resource Allocation in Cyber-Physical Systems[J]. Automatica, 2022, 142, 110390.",
+    "Z. Guo, G. Chen. Predefined-time Distributed Optimal Allocation of Resources: A Time-Base Generator Scheme[J]. IEEE Transactions on Systems, Man, and Cybernetics: Systems, 2022, 52(1): 438-447.",
+    "Z. Guo, G. Chen. Distributed Optimal Position Control of Networked Uncertain Euler-Lagrange Systems under Unbalanced Digraphs[J]. IEEE Transactions on Cybernetics, 2021, DOI: 10.1109/TCYB.2021.3063619.",
+    "Z. Guo, G. Chen. Exponential Convergence of Distributed Optimal Coordination for Nonlinear Multi-agent Systems under Directed Graphs[J]. IEEE Transactions on Control of Network Systems, 2022, DOI: 10.1109/TCNS.2022.3198787.",
+    "Z. Guo, G. Chen. Distributed zero-gradient-sum algorithm for convex optimization with time-varying communication delays and switching networks[J]. International Journal of Robust and Nonlinear Control, 2018, 28(16): 4900-4915."
+  ],
+  "research_directions": [
+    "网络化多智能体系统分布式控制与优化,涵盖分布式控制、分布式优化、分布式博弈、分布式学习算法理论研究,以及多机器人系统分布式路径规划/任务分配/避障与编队、智能微电网经济调度与能源管理等应用方向,同时涉及集群智能、机器人控制、人工智能领域"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092853",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

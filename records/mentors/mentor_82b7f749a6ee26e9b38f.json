@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_07edcbebcd0c9ff96c44"
+      ],
+      "ended_at": null,
+      "id": "aff_48d561dce32142777bb1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093163",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_07edcbebcd0c9ff96c44"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_48d561dce32142777bb1",
+      "claim_ids": [
+        "claim_07edcbebcd0c9ff96c44"
+      ],
+      "is_primary": true,
+      "normalized_value": "gsong@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093163",
+      "status": "current",
+      "type": "email",
+      "value": "gsong@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_07edcbebcd0c9ff96c44"
+    ],
+    "email": [
+      "claim_07edcbebcd0c9ff96c44"
+    ],
+    "name": [
+      "claim_07edcbebcd0c9ff96c44"
+    ],
+    "profile_url": [
+      "claim_07edcbebcd0c9ff96c44"
+    ],
+    "research_directions": [
+      "claim_07edcbebcd0c9ff96c44"
+    ],
+    "status": [
+      "claim_07edcbebcd0c9ff96c44"
+    ],
+    "title": [
+      "claim_07edcbebcd0c9ff96c44"
+    ]
+  },
+  "id": "mentor_82b7f749a6ee26e9b38f",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_07edcbebcd0c9ff96c44"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋冠宏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_48d561dce32142777bb1",
+      "claim_ids": [
+        "claim_07edcbebcd0c9ff96c44"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/093163"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电力电子并网逆变器控制技术、有源配电网建模控制技术、新能源发电系统相关研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/093163",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

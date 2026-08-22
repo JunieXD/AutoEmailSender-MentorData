@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_35c83f2bcd791b32b25c"
+      ],
+      "ended_at": null,
+      "id": "aff_098b1a694c5a4575969d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092488",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_35c83f2bcd791b32b25c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_098b1a694c5a4575969d",
+      "claim_ids": [
+        "claim_35c83f2bcd791b32b25c"
+      ],
+      "is_primary": true,
+      "normalized_value": "jghu@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092488",
+      "status": "current",
+      "type": "email",
+      "value": "jghu@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_35c83f2bcd791b32b25c"
+    ],
+    "email": [
+      "claim_35c83f2bcd791b32b25c"
+    ],
+    "name": [
+      "claim_35c83f2bcd791b32b25c"
+    ],
+    "profile_url": [
+      "claim_35c83f2bcd791b32b25c"
+    ],
+    "research_directions": [
+      "claim_35c83f2bcd791b32b25c"
+    ],
+    "status": [
+      "claim_35c83f2bcd791b32b25c"
+    ],
+    "title": [
+      "claim_35c83f2bcd791b32b25c"
+    ]
+  },
+  "id": "mentor_9f9ea2ded64d6ed2a1b3",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_35c83f2bcd791b32b25c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡建功"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_098b1a694c5a4575969d",
+      "claim_ids": [
+        "claim_35c83f2bcd791b32b25c"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092488"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "原子干涉精密测量、量子调控计算、量子调控、量子精密测量、优化算法、机器学习、量子成像"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092488",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

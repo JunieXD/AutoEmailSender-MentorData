@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_51c1fc1fa18d886b1b15"
+      ],
+      "ended_at": null,
+      "id": "aff_1c64ce24f8693fdad362",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090909",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_51c1fc1fa18d886b1b15"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1c64ce24f8693fdad362",
+      "claim_ids": [
+        "claim_51c1fc1fa18d886b1b15"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangminghui@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090909",
+      "status": "current",
+      "type": "email",
+      "value": "zhangminghui@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_51c1fc1fa18d886b1b15"
+    ],
+    "email": [
+      "claim_51c1fc1fa18d886b1b15"
+    ],
+    "name": [
+      "claim_51c1fc1fa18d886b1b15"
+    ],
+    "profile_url": [
+      "claim_51c1fc1fa18d886b1b15"
+    ],
+    "research_directions": [
+      "claim_51c1fc1fa18d886b1b15"
+    ],
+    "status": [
+      "claim_51c1fc1fa18d886b1b15"
+    ],
+    "title": [
+      "claim_51c1fc1fa18d886b1b15"
+    ]
+  },
+  "id": "mentor_32302d5a73adb1f24a6c",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_51c1fc1fa18d886b1b15"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张明辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1c64ce24f8693fdad362",
+      "claim_ids": [
+        "claim_51c1fc1fa18d886b1b15"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/090909"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "磁共振成像重建、医学图像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/090909",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

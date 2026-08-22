@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a51d2155e73f0eb8ae97"
+      ],
+      "ended_at": null,
+      "id": "aff_6297422775a72618a5e2",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_50c3558f024b92a98772",
+      "source_url": "https://teacher.ncu.edu.cn/publish/minweidong/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a51d2155e73f0eb8ae97"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6297422775a72618a5e2",
+      "claim_ids": [
+        "claim_a51d2155e73f0eb8ae97"
+      ],
+      "is_primary": true,
+      "normalized_value": "minweidong@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/minweidong/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "minweidong@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a51d2155e73f0eb8ae97"
+    ],
+    "email": [
+      "claim_a51d2155e73f0eb8ae97"
+    ],
+    "name": [
+      "claim_a51d2155e73f0eb8ae97"
+    ],
+    "profile_url": [
+      "claim_a51d2155e73f0eb8ae97"
+    ],
+    "research_directions": [
+      "claim_a51d2155e73f0eb8ae97"
+    ],
+    "status": [
+      "claim_a51d2155e73f0eb8ae97"
+    ],
+    "title": [
+      "claim_a51d2155e73f0eb8ae97"
+    ]
+  },
+  "id": "mentor_a472e4d6d43c5fd8a37a",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a51d2155e73f0eb8ae97"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闵卫东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6297422775a72618a5e2",
+      "claim_ids": [
+        "claim_a51d2155e73f0eb8ae97"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/minweidong/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、虚拟现实、人工智能、大数据、元宇宙、新型适应性深度学习、智能感知、自然交互"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/minweidong/index.html",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

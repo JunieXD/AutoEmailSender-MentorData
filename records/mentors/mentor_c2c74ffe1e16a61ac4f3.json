@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_397f4e0e2408ed0fa6bd"
+      ],
+      "ended_at": null,
+      "id": "aff_5a36123d55b0e8cb322c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_2685378b8459b814679b",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093300",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_397f4e0e2408ed0fa6bd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5a36123d55b0e8cb322c",
+      "claim_ids": [
+        "claim_397f4e0e2408ed0fa6bd"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuxujx@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093300",
+      "status": "current",
+      "type": "email",
+      "value": "liuxujx@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ],
+    "email": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ],
+    "name": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ],
+    "profile_url": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ],
+    "recent_papers": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ],
+    "research_directions": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ],
+    "status": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ],
+    "title": [
+      "claim_397f4e0e2408ed0fa6bd"
+    ]
+  },
+  "id": "mentor_c2c74ffe1e16a61ac4f3",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_397f4e0e2408ed0fa6bd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘旭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5a36123d55b0e8cb322c",
+      "claim_ids": [
+        "claim_397f4e0e2408ed0fa6bd"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/093300"
+    }
+  ],
+  "recent_papers": [
+    "Liu X, Li S, Xin M. Survey of trajectory optimization methods for Mars entry and powered descent, Journal of Guidance, Control, and Dynamics, 2026, 49(1): 216-239.",
+    "Xu Y, Liu X, Li S, Xin M, Huang X. Reduced-order desensitized optimal control for mars entry trajectory optimization[J]. IEEE Transactions on Aerospace and Electronic Systems, 2024, 60(6): 7663-7675.",
+    "Liu X, Li S, Wang Z. Mars entry tracking guidance via quadratically constrained quadratic programming and pseudospectral method[J]. Journal of Spacecraft and Rockets, 2023, 60(5): 1669-1678.",
+    "Liu X, Li S, Xin M. Indirect sequential convex programming for mars entry terminal altitude maximization[J]. Acta Astronautica, 2023, 211: 909-919.",
+    "Li D, Li Y, Liu X, et al. Pseudospectral convex programming for free-floating space manipulator path planning[J]. Space: Science & Technology, 2023, 3: 0030.",
+    "Liu X, Li S, Xin M. Mars entry trajectory planning with range discretization and successive convexification[J]. Journal of Guidance, Control, and Dynamics, 2022, 45(4): 755-763.",
+    "Liu X, Li S, Xin M. Pseudospectral convex optimization based model predictive static programming for constrained guidance[J]. IEEE Transactions on Aerospace and Electronic Systems, 2022, 59(3): 2232-2244.",
+    "Liu X, Li S, Xin M. Comparison of powered descent guidance laws for planetary pin-point landing[J]. Acta Astronautica, 2021, 187: 101-114."
+  ],
+  "research_directions": [
+    "飞行器轨迹优化与制导控制,最优控制,凸优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/093300",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

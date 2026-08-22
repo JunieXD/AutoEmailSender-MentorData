@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c5799fb38130c976dc80"
+      ],
+      "ended_at": null,
+      "id": "aff_f3fc79aeb9bddc8d1a59",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092942",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_c5799fb38130c976dc80"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f3fc79aeb9bddc8d1a59",
+      "claim_ids": [
+        "claim_c5799fb38130c976dc80"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaodongliu@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092942",
+      "status": "current",
+      "type": "email",
+      "value": "xiaodongliu@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c5799fb38130c976dc80"
+    ],
+    "email": [
+      "claim_c5799fb38130c976dc80"
+    ],
+    "name": [
+      "claim_c5799fb38130c976dc80"
+    ],
+    "profile_url": [
+      "claim_c5799fb38130c976dc80"
+    ],
+    "research_directions": [
+      "claim_c5799fb38130c976dc80"
+    ],
+    "status": [
+      "claim_c5799fb38130c976dc80"
+    ],
+    "title": [
+      "claim_c5799fb38130c976dc80"
+    ]
+  },
+  "id": "mentor_f24463707492fc1562b2",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c5799fb38130c976dc80"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘晓东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f3fc79aeb9bddc8d1a59",
+      "claim_ids": [
+        "claim_c5799fb38130c976dc80"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092942"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "面向高谱效、大规模连接、高安全通信等国家重大应用需求,长期聚焦可见光通信感知照明一体化、语义通信及大模型赋能6G通信的理论算法研究与嵌入式系统开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092942",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

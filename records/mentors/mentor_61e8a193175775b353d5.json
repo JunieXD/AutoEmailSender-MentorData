@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_02ee54f8f7ac31045105"
+      ],
+      "ended_at": null,
+      "id": "aff_989266d2815abd38873a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093695",
+      "started_at": null,
+      "status": "current",
+      "title": "特聘研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_02ee54f8f7ac31045105"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_989266d2815abd38873a",
+      "claim_ids": [
+        "claim_02ee54f8f7ac31045105"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhulei@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093695",
+      "status": "current",
+      "type": "email",
+      "value": "zhulei@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_02ee54f8f7ac31045105"
+    ],
+    "email": [
+      "claim_02ee54f8f7ac31045105"
+    ],
+    "name": [
+      "claim_02ee54f8f7ac31045105"
+    ],
+    "profile_url": [
+      "claim_02ee54f8f7ac31045105"
+    ],
+    "research_directions": [
+      "claim_02ee54f8f7ac31045105"
+    ],
+    "status": [
+      "claim_02ee54f8f7ac31045105"
+    ],
+    "title": [
+      "claim_02ee54f8f7ac31045105"
+    ]
+  },
+  "id": "mentor_61e8a193175775b353d5",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_02ee54f8f7ac31045105"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱雷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_989266d2815abd38873a",
+      "claim_ids": [
+        "claim_02ee54f8f7ac31045105"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/093695"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "医学影像分析、弱监督与小样本学习、多模态学习与医学大模型、AI+医疗临床应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/093695",
+  "title": "特聘研究员",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

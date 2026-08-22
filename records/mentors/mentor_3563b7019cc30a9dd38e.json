@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6328b000bb5a4d34dc7a"
+      ],
+      "ended_at": null,
+      "id": "aff_1b8ba4bc293d18da7828",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_d19d50e1643ed6d8aaa1",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090507",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_6328b000bb5a4d34dc7a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1b8ba4bc293d18da7828",
+      "claim_ids": [
+        "claim_6328b000bb5a4d34dc7a"
+      ],
+      "is_primary": true,
+      "normalized_value": "113714256@qq.com",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090507",
+      "status": "current",
+      "type": "email",
+      "value": "113714256@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6328b000bb5a4d34dc7a"
+    ],
+    "email": [
+      "claim_6328b000bb5a4d34dc7a"
+    ],
+    "name": [
+      "claim_6328b000bb5a4d34dc7a"
+    ],
+    "profile_url": [
+      "claim_6328b000bb5a4d34dc7a"
+    ],
+    "research_directions": [
+      "claim_6328b000bb5a4d34dc7a"
+    ],
+    "status": [
+      "claim_6328b000bb5a4d34dc7a"
+    ],
+    "title": [
+      "claim_6328b000bb5a4d34dc7a"
+    ]
+  },
+  "id": "mentor_3563b7019cc30a9dd38e",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6328b000bb5a4d34dc7a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邓军华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1b8ba4bc293d18da7828",
+      "claim_ids": [
+        "claim_6328b000bb5a4d34dc7a"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/090507"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线通信、天线等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/090507",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

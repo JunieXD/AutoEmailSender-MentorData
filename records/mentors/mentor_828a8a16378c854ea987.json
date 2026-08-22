@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a6940b50f6fb71c8a234"
+      ],
+      "ended_at": null,
+      "id": "aff_eb11fd12d5a7daba44c3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004835",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a6940b50f6fb71c8a234"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eb11fd12d5a7daba44c3",
+      "claim_ids": [
+        "claim_a6940b50f6fb71c8a234"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangye@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004835",
+      "status": "current",
+      "type": "email",
+      "value": "zhangye@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a6940b50f6fb71c8a234"
+    ],
+    "email": [
+      "claim_a6940b50f6fb71c8a234"
+    ],
+    "name": [
+      "claim_a6940b50f6fb71c8a234"
+    ],
+    "profile_url": [
+      "claim_a6940b50f6fb71c8a234"
+    ],
+    "research_directions": [
+      "claim_a6940b50f6fb71c8a234"
+    ],
+    "status": [
+      "claim_a6940b50f6fb71c8a234"
+    ],
+    "title": [
+      "claim_a6940b50f6fb71c8a234"
+    ]
+  },
+  "id": "mentor_828a8a16378c854ea987",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a6940b50f6fb71c8a234"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张烨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eb11fd12d5a7daba44c3",
+      "claim_ids": [
+        "claim_a6940b50f6fb71c8a234"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004835"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "盲源分离、语音信号处理、量子密钥分发、说话人分离识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004835",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

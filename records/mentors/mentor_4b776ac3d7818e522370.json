@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0157cb9ad2cedf74afa1"
+      ],
+      "ended_at": null,
+      "id": "aff_c3202ddb378b116f0ca2",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090301",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0157cb9ad2cedf74afa1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c3202ddb378b116f0ca2",
+      "claim_ids": [
+        "claim_0157cb9ad2cedf74afa1"
+      ],
+      "is_primary": true,
+      "normalized_value": "duanrongxing@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090301",
+      "status": "current",
+      "type": "email",
+      "value": "duanrongxing@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0157cb9ad2cedf74afa1"
+    ],
+    "email": [
+      "claim_0157cb9ad2cedf74afa1"
+    ],
+    "name": [
+      "claim_0157cb9ad2cedf74afa1"
+    ],
+    "profile_url": [
+      "claim_0157cb9ad2cedf74afa1"
+    ],
+    "research_directions": [
+      "claim_0157cb9ad2cedf74afa1"
+    ],
+    "status": [
+      "claim_0157cb9ad2cedf74afa1"
+    ],
+    "title": [
+      "claim_0157cb9ad2cedf74afa1"
+    ]
+  },
+  "id": "mentor_4b776ac3d7818e522370",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0157cb9ad2cedf74afa1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "段荣行"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c3202ddb378b116f0ca2",
+      "claim_ids": [
+        "claim_0157cb9ad2cedf74afa1"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/090301"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "可靠性分析、无人机系统、车地通信系统故障诊断、复杂系统故障诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/090301",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f0aca37ac9fa99e6c9a0"
+      ],
+      "ended_at": null,
+      "id": "aff_4e7806414be16876ef95",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004571",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f0aca37ac9fa99e6c9a0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4e7806414be16876ef95",
+      "claim_ids": [
+        "claim_f0aca37ac9fa99e6c9a0"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaoqm@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004571",
+      "status": "current",
+      "type": "email",
+      "value": "zhaoqm@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f0aca37ac9fa99e6c9a0"
+    ],
+    "email": [
+      "claim_f0aca37ac9fa99e6c9a0"
+    ],
+    "name": [
+      "claim_f0aca37ac9fa99e6c9a0"
+    ],
+    "profile_url": [
+      "claim_f0aca37ac9fa99e6c9a0"
+    ],
+    "status": [
+      "claim_f0aca37ac9fa99e6c9a0"
+    ],
+    "title": [
+      "claim_f0aca37ac9fa99e6c9a0"
+    ]
+  },
+  "id": "mentor_9589ba1404bffcbbab47",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f0aca37ac9fa99e6c9a0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵庆敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4e7806414be16876ef95",
+      "claim_ids": [
+        "claim_f0aca37ac9fa99e6c9a0"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004571"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004571",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

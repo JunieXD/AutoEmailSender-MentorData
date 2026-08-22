@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dc61a12cc8f208c41b47"
+      ],
+      "ended_at": null,
+      "id": "aff_c2e7da24c61c13f5abc4",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004828",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_dc61a12cc8f208c41b47"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c2e7da24c61c13f5abc4",
+      "claim_ids": [
+        "claim_dc61a12cc8f208c41b47"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaruihua@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004828",
+      "status": "current",
+      "type": "email",
+      "value": "xiaruihua@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dc61a12cc8f208c41b47"
+    ],
+    "email": [
+      "claim_dc61a12cc8f208c41b47"
+    ],
+    "name": [
+      "claim_dc61a12cc8f208c41b47"
+    ],
+    "profile_url": [
+      "claim_dc61a12cc8f208c41b47"
+    ],
+    "status": [
+      "claim_dc61a12cc8f208c41b47"
+    ],
+    "title": [
+      "claim_dc61a12cc8f208c41b47"
+    ]
+  },
+  "id": "mentor_fc0234a8bcdea785fa93",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dc61a12cc8f208c41b47"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "夏瑞华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c2e7da24c61c13f5abc4",
+      "claim_ids": [
+        "claim_dc61a12cc8f208c41b47"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004828"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004828",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}
