@@ -1,0 +1,88 @@
+{
+  "created_organization_ids": [
+    "org_auto_cfb5eddb8369993c5d37"
+  ],
+  "decided_at": "2026-08-22T08:49:31Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_ee912228f9faed11",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_af1d9e02cfcd8ddddd42",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人口研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_102",
+  "invalid_rows": [],
+  "issue": {
+    "number": 102,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/102"
+  },
+  "manifest_sha256": "971e14cf8570f964981c692beb9ae79a537380f3150de075012a95fd9e777acc",
+  "mapped_proposal_ids": [
+    "proposal_issue_102_row_1",
+    "proposal_issue_102_row_10",
+    "proposal_issue_102_row_11",
+    "proposal_issue_102_row_12",
+    "proposal_issue_102_row_13",
+    "proposal_issue_102_row_14",
+    "proposal_issue_102_row_15",
+    "proposal_issue_102_row_16",
+    "proposal_issue_102_row_2",
+    "proposal_issue_102_row_3",
+    "proposal_issue_102_row_4",
+    "proposal_issue_102_row_5",
+    "proposal_issue_102_row_6",
+    "proposal_issue_102_row_7",
+    "proposal_issue_102_row_8",
+    "proposal_issue_102_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 103,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379402139,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
