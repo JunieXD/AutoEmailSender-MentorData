@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_acdd00124b7710c9cf45"
+      ],
+      "ended_at": null,
+      "id": "aff_5805dd871ba0bcf416eb",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1163/2013.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_acdd00124b7710c9cf45"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5805dd871ba0bcf416eb",
+      "claim_ids": [
+        "claim_acdd00124b7710c9cf45"
+      ],
+      "is_primary": true,
+      "normalized_value": "davide.falabretti@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1163/2013.htm",
+      "status": "current",
+      "type": "email",
+      "value": "davide.falabretti@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_acdd00124b7710c9cf45"
+    ],
+    "email": [
+      "claim_acdd00124b7710c9cf45"
+    ],
+    "name": [
+      "claim_acdd00124b7710c9cf45"
+    ],
+    "profile_url": [
+      "claim_acdd00124b7710c9cf45"
+    ],
+    "research_directions": [
+      "claim_acdd00124b7710c9cf45"
+    ],
+    "status": [
+      "claim_acdd00124b7710c9cf45"
+    ],
+    "title": [
+      "claim_acdd00124b7710c9cf45"
+    ]
+  },
+  "id": "mentor_e3e84471bf34dd608ec9",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_acdd00124b7710c9cf45"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "FALABRETTI Davide"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5805dd871ba0bcf416eb",
+      "claim_ids": [
+        "claim_acdd00124b7710c9cf45"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1163/2013.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电力系统、智能电网、分布式发电、电力系统技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1163/2013.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

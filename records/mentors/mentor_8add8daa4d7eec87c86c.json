@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c689f9c8ee82eb3d288b"
+      ],
+      "ended_at": null,
+      "id": "aff_a32ea2f9235b1bfb0e7e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_44c298f9a918f27363c6",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1157/2175.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c689f9c8ee82eb3d288b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a32ea2f9235b1bfb0e7e",
+      "claim_ids": [
+        "claim_c689f9c8ee82eb3d288b"
+      ],
+      "is_primary": true,
+      "normalized_value": "shwang@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1157/2175.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shwang@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c689f9c8ee82eb3d288b"
+    ],
+    "email": [
+      "claim_c689f9c8ee82eb3d288b"
+    ],
+    "name": [
+      "claim_c689f9c8ee82eb3d288b"
+    ],
+    "profile_url": [
+      "claim_c689f9c8ee82eb3d288b"
+    ],
+    "research_directions": [
+      "claim_c689f9c8ee82eb3d288b"
+    ],
+    "status": [
+      "claim_c689f9c8ee82eb3d288b"
+    ],
+    "title": [
+      "claim_c689f9c8ee82eb3d288b"
+    ]
+  },
+  "id": "mentor_8add8daa4d7eec87c86c",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c689f9c8ee82eb3d288b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王曙鸿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a32ea2f9235b1bfb0e7e",
+      "claim_ids": [
+        "claim_c689f9c8ee82eb3d288b"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1157/2175.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电路、电磁场及多物理场的理论、数值分析方法和软件技术",
+    "高能效电能转换与传输设备和特殊电磁装置的设计、仿真和优化",
+    "先进电工材料(超导材料、磁性材料等)的电磁特性建模和仿真",
+    "超导电力应用技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1157/2175.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

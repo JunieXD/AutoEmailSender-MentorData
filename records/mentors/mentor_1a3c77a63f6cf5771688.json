@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d6f75109e3632814fcbb"
+      ],
+      "ended_at": null,
+      "id": "aff_37f3d9c45b7a0dd15053",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/1997.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d6f75109e3632814fcbb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_37f3d9c45b7a0dd15053",
+      "claim_ids": [
+        "claim_d6f75109e3632814fcbb"
+      ],
+      "is_primary": true,
+      "normalized_value": "flavia.grassi@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/1997.htm",
+      "status": "current",
+      "type": "email",
+      "value": "flavia.grassi@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d6f75109e3632814fcbb"
+    ],
+    "email": [
+      "claim_d6f75109e3632814fcbb"
+    ],
+    "name": [
+      "claim_d6f75109e3632814fcbb"
+    ],
+    "profile_url": [
+      "claim_d6f75109e3632814fcbb"
+    ],
+    "research_directions": [
+      "claim_d6f75109e3632814fcbb"
+    ],
+    "status": [
+      "claim_d6f75109e3632814fcbb"
+    ],
+    "title": [
+      "claim_d6f75109e3632814fcbb"
+    ]
+  },
+  "id": "mentor_1a3c77a63f6cf5771688",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d6f75109e3632814fcbb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "GRASSI Flavia"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_37f3d9c45b7a0dd15053",
+      "claim_ids": [
+        "claim_d6f75109e3632814fcbb"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1162/1997.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电磁兼容性,信号与电源完整性"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1162/1997.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

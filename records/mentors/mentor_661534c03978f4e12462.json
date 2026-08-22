@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f25850586cf9f9d398e2"
+      ],
+      "ended_at": null,
+      "id": "aff_b1d9e4c8d72c9a16041e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1165/2008.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f25850586cf9f9d398e2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1d9e4c8d72c9a16041e",
+      "claim_ids": [
+        "claim_f25850586cf9f9d398e2"
+      ],
+      "is_primary": true,
+      "normalized_value": "christian.laurano@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1165/2008.htm",
+      "status": "current",
+      "type": "email",
+      "value": "christian.laurano@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f25850586cf9f9d398e2"
+    ],
+    "email": [
+      "claim_f25850586cf9f9d398e2"
+    ],
+    "name": [
+      "claim_f25850586cf9f9d398e2"
+    ],
+    "profile_url": [
+      "claim_f25850586cf9f9d398e2"
+    ],
+    "research_directions": [
+      "claim_f25850586cf9f9d398e2"
+    ],
+    "status": [
+      "claim_f25850586cf9f9d398e2"
+    ],
+    "title": [
+      "claim_f25850586cf9f9d398e2"
+    ]
+  },
+  "id": "mentor_661534c03978f4e12462",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f25850586cf9f9d398e2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "LAURANO, Christian"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1d9e4c8d72c9a16041e",
+      "claim_ids": [
+        "claim_f25850586cf9f9d398e2"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1165/2008.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电力系统测量、数字信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1165/2008.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ad60d3c0f424077a0657"
+      ],
+      "ended_at": null,
+      "id": "aff_76ad1785fd742c53dfc8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_91b9af1790453ea9ce8e",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1312.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ad60d3c0f424077a0657"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_76ad1785fd742c53dfc8",
+      "claim_ids": [
+        "claim_ad60d3c0f424077a0657"
+      ],
+      "is_primary": true,
+      "normalized_value": "baotong.me@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1312.htm",
+      "status": "current",
+      "type": "email",
+      "value": "baotong.me@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ad60d3c0f424077a0657"
+    ],
+    "email": [
+      "claim_ad60d3c0f424077a0657"
+    ],
+    "name": [
+      "claim_ad60d3c0f424077a0657"
+    ],
+    "profile_url": [
+      "claim_ad60d3c0f424077a0657"
+    ],
+    "research_directions": [
+      "claim_ad60d3c0f424077a0657"
+    ],
+    "status": [
+      "claim_ad60d3c0f424077a0657"
+    ],
+    "title": [
+      "claim_ad60d3c0f424077a0657"
+    ]
+  },
+  "id": "mentor_6c4034f4e8a9eaf8fed5",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ad60d3c0f424077a0657"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李宝童"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_76ad1785fd742c53dfc8",
+      "claim_ids": [
+        "claim_ad60d3c0f424077a0657"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1055/1312.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大规模智能计算",
+    "能量有限元",
+    "等几何设计",
+    "结构拓扑优化",
+    "柔顺机构/软体机器人设计",
+    "元器件/芯片级的热电一体化设计。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1055/1312.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

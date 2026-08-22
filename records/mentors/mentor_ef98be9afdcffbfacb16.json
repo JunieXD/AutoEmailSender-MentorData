@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e8e4e975d0b75997e397"
+      ],
+      "ended_at": null,
+      "id": "aff_9502b5d44ae8d17d80e9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2006.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e8e4e975d0b75997e397"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9502b5d44ae8d17d80e9",
+      "claim_ids": [
+        "claim_e8e4e975d0b75997e397"
+      ],
+      "is_primary": true,
+      "normalized_value": "loredana.cristaldi@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2006.htm",
+      "status": "current",
+      "type": "email",
+      "value": "loredana.cristaldi@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e8e4e975d0b75997e397"
+    ],
+    "email": [
+      "claim_e8e4e975d0b75997e397"
+    ],
+    "name": [
+      "claim_e8e4e975d0b75997e397"
+    ],
+    "profile_url": [
+      "claim_e8e4e975d0b75997e397"
+    ],
+    "research_directions": [
+      "claim_e8e4e975d0b75997e397"
+    ],
+    "status": [
+      "claim_e8e4e975d0b75997e397"
+    ],
+    "title": [
+      "claim_e8e4e975d0b75997e397"
+    ]
+  },
+  "id": "mentor_ef98be9afdcffbfacb16",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e8e4e975d0b75997e397"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "CRISTALDI Loredana"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9502b5d44ae8d17d80e9",
+      "claim_ids": [
+        "claim_e8e4e975d0b75997e397"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1162/2006.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "测量、可靠性、诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1162/2006.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

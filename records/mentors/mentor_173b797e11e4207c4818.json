@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d009e1b427782a7c99b2"
+      ],
+      "ended_at": null,
+      "id": "aff_de92a532b8d86a49a1be",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_cc2e555e0296b10c704a",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1064/1475.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d009e1b427782a7c99b2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_de92a532b8d86a49a1be",
+      "claim_ids": [
+        "claim_d009e1b427782a7c99b2"
+      ],
+      "is_primary": true,
+      "normalized_value": "yu.zhichun@xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1064/1475.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yu.zhichun@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d009e1b427782a7c99b2"
+    ],
+    "email": [
+      "claim_d009e1b427782a7c99b2"
+    ],
+    "name": [
+      "claim_d009e1b427782a7c99b2"
+    ],
+    "profile_url": [
+      "claim_d009e1b427782a7c99b2"
+    ],
+    "research_directions": [
+      "claim_d009e1b427782a7c99b2"
+    ],
+    "status": [
+      "claim_d009e1b427782a7c99b2"
+    ],
+    "title": [
+      "claim_d009e1b427782a7c99b2"
+    ]
+  },
+  "id": "mentor_173b797e11e4207c4818",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d009e1b427782a7c99b2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "虞志淳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_de92a532b8d86a49a1be",
+      "claim_ids": [
+        "claim_d009e1b427782a7c99b2"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1064/1475.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "绿色建筑、民居建筑、地域性建筑、乡村规划"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1064/1475.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

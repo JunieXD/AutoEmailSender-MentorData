@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a1352034049df9a820aa"
+      ],
+      "ended_at": null,
+      "id": "aff_dbab64c41c8b68db34e5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_44c298f9a918f27363c6",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1158/2204.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a1352034049df9a820aa"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dbab64c41c8b68db34e5",
+      "claim_ids": [
+        "claim_a1352034049df9a820aa"
+      ],
+      "is_primary": true,
+      "normalized_value": "tydong@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1158/2204.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tydong@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a1352034049df9a820aa"
+    ],
+    "email": [
+      "claim_a1352034049df9a820aa"
+    ],
+    "name": [
+      "claim_a1352034049df9a820aa"
+    ],
+    "profile_url": [
+      "claim_a1352034049df9a820aa"
+    ],
+    "research_directions": [
+      "claim_a1352034049df9a820aa"
+    ],
+    "status": [
+      "claim_a1352034049df9a820aa"
+    ],
+    "title": [
+      "claim_a1352034049df9a820aa"
+    ]
+  },
+  "id": "mentor_fce79a5e1c9577b69a04",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a1352034049df9a820aa"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "董天宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dbab64c41c8b68db34e5",
+      "claim_ids": [
+        "claim_a1352034049df9a820aa"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1158/2204.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电磁理论与计算电磁学、等离激元与电磁超表面、无线电能传输与互联"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1158/2204.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

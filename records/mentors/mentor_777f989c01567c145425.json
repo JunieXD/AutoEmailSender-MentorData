@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_55362e8f8e513deaabf1"
+      ],
+      "ended_at": null,
+      "id": "aff_93bf4b75cfdcd59c5008",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2234.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_55362e8f8e513deaabf1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_93bf4b75cfdcd59c5008",
+      "claim_ids": [
+        "claim_55362e8f8e513deaabf1"
+      ],
+      "is_primary": true,
+      "normalized_value": "marco.santambrogio@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2234.htm",
+      "status": "current",
+      "type": "email",
+      "value": "marco.santambrogio@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_55362e8f8e513deaabf1"
+    ],
+    "email": [
+      "claim_55362e8f8e513deaabf1"
+    ],
+    "name": [
+      "claim_55362e8f8e513deaabf1"
+    ],
+    "profile_url": [
+      "claim_55362e8f8e513deaabf1"
+    ],
+    "research_directions": [
+      "claim_55362e8f8e513deaabf1"
+    ],
+    "status": [
+      "claim_55362e8f8e513deaabf1"
+    ],
+    "title": [
+      "claim_55362e8f8e513deaabf1"
+    ]
+  },
+  "id": "mentor_777f989c01567c145425",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_55362e8f8e513deaabf1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "SANTAMBROGIO, Marco Domenico"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_93bf4b75cfdcd59c5008",
+      "claim_ids": [
+        "claim_55362e8f8e513deaabf1"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1162/2234.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "PGA,自适应和可重构系统,嵌入式SoC,HPC加速卡"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1162/2234.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}
