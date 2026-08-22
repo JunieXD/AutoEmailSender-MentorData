@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6133c4abd9dc5107d85"
+      ],
+      "ended_at": null,
+      "id": "aff_056f1448d382c11bda2a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:19Z",
+      "organization_id": "org_auto_0ed63d6df00a5e564b38",
+      "source_url": "http://grzy.cug.edu.cn/huyoujian/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6133c4abd9dc5107d85"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_056f1448d382c11bda2a",
+      "claim_ids": [
+        "claim_c6133c4abd9dc5107d85"
+      ],
+      "is_primary": true,
+      "normalized_value": "hyj_06@163.com",
+      "observed_at": "2026-08-21T18:52:19Z",
+      "source_url": "http://grzy.cug.edu.cn/huyoujian/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hyj_06@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6133c4abd9dc5107d85"
+    ],
+    "email": [
+      "claim_c6133c4abd9dc5107d85"
+    ],
+    "name": [
+      "claim_c6133c4abd9dc5107d85"
+    ],
+    "profile_url": [
+      "claim_c6133c4abd9dc5107d85"
+    ],
+    "research_directions": [
+      "claim_c6133c4abd9dc5107d85"
+    ],
+    "status": [
+      "claim_c6133c4abd9dc5107d85"
+    ],
+    "title": [
+      "claim_c6133c4abd9dc5107d85"
+    ]
+  },
+  "id": "mentor_462e07cc8317b45a8b46",
+  "last_verified_at": "2026-08-21T18:52:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6133c4abd9dc5107d85"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡友健"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_056f1448d382c11bda2a",
+      "claim_ids": [
+        "claim_c6133c4abd9dc5107d85"
+      ],
+      "observed_at": "2026-08-21T18:52:19Z",
+      "status": "current",
+      "url": "http://grzy.cug.edu.cn/huyoujian/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "工程变形与地质灾害监测、GNSS数据处理、LiDAR数据处理与应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:19Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.cug.edu.cn/huyoujian/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:19Z"
+}

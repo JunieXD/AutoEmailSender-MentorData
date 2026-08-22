@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f6be7ec62efcd9f658ec"
+      ],
+      "ended_at": null,
+      "id": "aff_999f28e67bd4afeaa7cc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:19Z",
+      "organization_id": "org_auto_249a0bc259d318b42ccf",
+      "source_url": "http://grzy.cug.edu.cn/zhuqiqi",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f6be7ec62efcd9f658ec"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_999f28e67bd4afeaa7cc",
+      "claim_ids": [
+        "claim_f6be7ec62efcd9f658ec"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuqq@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:19Z",
+      "source_url": "http://grzy.cug.edu.cn/zhuqiqi",
+      "status": "current",
+      "type": "email",
+      "value": "zhuqq@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f6be7ec62efcd9f658ec"
+    ],
+    "email": [
+      "claim_f6be7ec62efcd9f658ec"
+    ],
+    "name": [
+      "claim_f6be7ec62efcd9f658ec"
+    ],
+    "profile_url": [
+      "claim_f6be7ec62efcd9f658ec"
+    ],
+    "status": [
+      "claim_f6be7ec62efcd9f658ec"
+    ],
+    "title": [
+      "claim_f6be7ec62efcd9f658ec"
+    ]
+  },
+  "id": "mentor_ea51f418acd393b50be3",
+  "last_verified_at": "2026-08-21T18:52:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f6be7ec62efcd9f658ec"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱祺琪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_999f28e67bd4afeaa7cc",
+      "claim_ids": [
+        "claim_f6be7ec62efcd9f658ec"
+      ],
+      "observed_at": "2026-08-21T18:52:19Z",
+      "status": "current",
+      "url": "http://grzy.cug.edu.cn/zhuqiqi"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:19Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.cug.edu.cn/zhuqiqi",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:19Z"
+}

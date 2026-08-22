@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_656ea66ef3c78fa9bead"
+      ],
+      "ended_at": null,
+      "id": "aff_8949df935e6263726ef5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:19Z",
+      "organization_id": "org_auto_249a0bc259d318b42ccf",
+      "source_url": "http://grzy.cug.edu.cn/zhengguizhou",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_656ea66ef3c78fa9bead"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8949df935e6263726ef5",
+      "claim_ids": [
+        "claim_656ea66ef3c78fa9bead"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhenggz@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:19Z",
+      "source_url": "http://grzy.cug.edu.cn/zhengguizhou",
+      "status": "current",
+      "type": "email",
+      "value": "zhenggz@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_656ea66ef3c78fa9bead"
+    ],
+    "email": [
+      "claim_656ea66ef3c78fa9bead"
+    ],
+    "name": [
+      "claim_656ea66ef3c78fa9bead"
+    ],
+    "profile_url": [
+      "claim_656ea66ef3c78fa9bead"
+    ],
+    "research_directions": [
+      "claim_656ea66ef3c78fa9bead"
+    ],
+    "status": [
+      "claim_656ea66ef3c78fa9bead"
+    ],
+    "title": [
+      "claim_656ea66ef3c78fa9bead"
+    ]
+  },
+  "id": "mentor_1c4f84833f586cb94f1a",
+  "last_verified_at": "2026-08-21T18:52:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_656ea66ef3c78fa9bead"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑贵洲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8949df935e6263726ef5",
+      "claim_ids": [
+        "claim_656ea66ef3c78fa9bead"
+      ],
+      "observed_at": "2026-08-21T18:52:19Z",
+      "status": "current",
+      "url": "http://grzy.cug.edu.cn/zhengguizhou"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "深度学习与时空数据挖掘、三维地理信息系统与地学模拟、资源与环境遥感、海洋遥感"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:19Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.cug.edu.cn/zhengguizhou",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:19Z"
+}

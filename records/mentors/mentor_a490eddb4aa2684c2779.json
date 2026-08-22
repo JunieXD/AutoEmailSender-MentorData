@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_262cb3473a7f4fd2ec7d"
+      ],
+      "ended_at": null,
+      "id": "aff_8dcb22bc51e3d38a1b2a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:19Z",
+      "organization_id": "org_auto_0ed63d6df00a5e564b38",
+      "source_url": "http://grzy.cug.edu.cn/guanqf/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_262cb3473a7f4fd2ec7d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8dcb22bc51e3d38a1b2a",
+      "claim_ids": [
+        "claim_262cb3473a7f4fd2ec7d"
+      ],
+      "is_primary": true,
+      "normalized_value": "guanqf@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:19Z",
+      "source_url": "http://grzy.cug.edu.cn/guanqf/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "guanqf@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_262cb3473a7f4fd2ec7d"
+    ],
+    "email": [
+      "claim_262cb3473a7f4fd2ec7d"
+    ],
+    "name": [
+      "claim_262cb3473a7f4fd2ec7d"
+    ],
+    "profile_url": [
+      "claim_262cb3473a7f4fd2ec7d"
+    ],
+    "research_directions": [
+      "claim_262cb3473a7f4fd2ec7d"
+    ],
+    "status": [
+      "claim_262cb3473a7f4fd2ec7d"
+    ],
+    "title": [
+      "claim_262cb3473a7f4fd2ec7d"
+    ]
+  },
+  "id": "mentor_a490eddb4aa2684c2779",
+  "last_verified_at": "2026-08-21T18:52:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_262cb3473a7f4fd2ec7d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "关庆锋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8dcb22bc51e3d38a1b2a",
+      "claim_ids": [
+        "claim_262cb3473a7f4fd2ec7d"
+      ],
+      "observed_at": "2026-08-21T18:52:19Z",
+      "status": "current",
+      "url": "http://grzy.cug.edu.cn/guanqf/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "时空大数据:时空大数据分析、挖掘、模拟与可视化",
+    "空间计算智能:基于机器学习/人工智能的空间分析与时空模拟,解决复杂地理空间问题",
+    "高性能地理空间计算:利用并行计算技术,突破由大数据和复杂算法造成的计算壁垒,解决复杂地理空间问题",
+    "空间感知与计算:利用多源/多元数据,智能感知空间环境,分析和模拟空间环境变化,应用包括城市、土地利用与土地覆盖、地质、环境等",
+    "城市遥感:土地利用/覆盖分类,城市功能区识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:19Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.cug.edu.cn/guanqf/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:19Z"
+}
