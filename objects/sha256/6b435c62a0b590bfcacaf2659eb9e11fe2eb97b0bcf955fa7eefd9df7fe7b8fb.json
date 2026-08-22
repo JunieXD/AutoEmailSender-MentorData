@@ -1,0 +1,108 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_bb255a32b026b7376e1d",
+          "is_primary": true,
+          "observed_at": "2026-08-22T08:27:04Z",
+          "organization_id": "org_auto_03b6c3ffc40ca7d22f42",
+          "school": "医学院",
+          "source_url": "http://chem.nju.edu.cn/lrt/list.htm",
+          "status": "current",
+          "title": null,
+          "university": "南京大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_bb255a32b026b7376e1d",
+          "email": "rutianli@nju.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-22T08:27:04Z",
+          "source_url": "http://chem.nju.edu.cn/lrt/list.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/196"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "rutianli@nju.edu.cn",
+      "id": "mentor_098ca7ca3017b1bec684",
+      "last_verified_at": "2026-08-22T08:27:04Z",
+      "name": "李茹恬",
+      "profile_url": "http://chem.nju.edu.cn/lrt/list.htm",
+      "recent_papers": [],
+      "research_direction": null,
+      "school": "医学院",
+      "source_url": "https://chem.nju.edu.cn/szll/list.htm",
+      "status": "active",
+      "title": null,
+      "university": "南京大学"
+    },
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_c0eca70c5e5c7fb41559",
+          "is_primary": true,
+          "observed_at": "2026-08-22T08:27:04Z",
+          "organization_id": "org_auto_03b6c3ffc40ca7d22f42",
+          "school": "医学院",
+          "source_url": "http://chem.nju.edu.cn/rja/list.htm",
+          "status": "current",
+          "title": null,
+          "university": "南京大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_c0eca70c5e5c7fb41559",
+          "email": "jiananr@nju.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-22T08:27:04Z",
+          "source_url": "http://chem.nju.edu.cn/rja/list.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/196"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "jiananr@nju.edu.cn",
+      "id": "mentor_641f5989193885c4b1ce",
+      "last_verified_at": "2026-08-22T08:27:04Z",
+      "name": "任建安",
+      "profile_url": "http://chem.nju.edu.cn/rja/list.htm",
+      "recent_papers": [],
+      "research_direction": null,
+      "school": "医学院",
+      "source_url": "https://chem.nju.edu.cn/szll/list.htm",
+      "status": "active",
+      "title": null,
+      "university": "南京大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_03b6c3ffc40ca7d22f42",
+    "name": "医学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_bcd757192fb1551f1e2e",
+    "name": "南京大学"
+  }
+}

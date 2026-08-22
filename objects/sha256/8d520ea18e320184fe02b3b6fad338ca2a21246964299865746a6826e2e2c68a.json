@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_e160a6e8ee1a473c43f4",
+          "is_primary": true,
+          "observed_at": "2026-08-22T08:27:04Z",
+          "organization_id": "org_auto_292cd02b9ce9fe62c13a",
+          "school": "生命科学学院",
+          "source_url": "http://chem.nju.edu.cn/hzc/list.htm",
+          "status": "current",
+          "title": null,
+          "university": "南京大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_e160a6e8ee1a473c43f4",
+          "email": "huazc@nju.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-22T08:27:04Z",
+          "source_url": "http://chem.nju.edu.cn/hzc/list.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/196"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "huazc@nju.edu.cn",
+      "id": "mentor_1496002c72b97dc8688e",
+      "last_verified_at": "2026-08-22T08:27:04Z",
+      "name": "华子春",
+      "profile_url": "http://chem.nju.edu.cn/hzc/list.htm",
+      "recent_papers": [],
+      "research_direction": null,
+      "school": "生命科学学院",
+      "source_url": "https://chem.nju.edu.cn/szll/list.htm",
+      "status": "active",
+      "title": null,
+      "university": "南京大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_292cd02b9ce9fe62c13a",
+    "name": "生命科学学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_bcd757192fb1551f1e2e",
+    "name": "南京大学"
+  }
+}
