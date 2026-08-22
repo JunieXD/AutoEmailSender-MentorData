@@ -5773,3 +5773,60 @@ organizations:
   successor_id: null
   created_at: '2026-08-22T08:50:24Z'
   updated_at: '2026-08-22T08:50:24Z'
+- id: org_auto_5c7e19ff2c4911f60b5c
+  type: university
+  canonical_name: 中国海洋大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://ouc.edu.cn/
+  approved_domains:
+  - ouc.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:25Z'
+  updated_at: '2026-08-22T08:50:25Z'
+- id: org_auto_2c1926bf4638664e23fd
+  type: institute
+  canonical_name: 海洋生物多样性与进化研究所
+  parent_id: org_auto_5c7e19ff2c4911f60b5c
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:25Z'
+  updated_at: '2026-08-22T08:50:25Z'
+- id: org_auto_19b63fefe75b26a85f68
+  type: laboratory
+  canonical_name: 海洋无脊椎动物多样性与系统演化实验室
+  parent_id: org_auto_2c1926bf4638664e23fd
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:25Z'
+  updated_at: '2026-08-22T08:50:25Z'
+- id: org_auto_3049241efbc77849058d
+  type: school
+  canonical_name: 海洋微生物学院
+  parent_id: org_auto_5c7e19ff2c4911f60b5c
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:25Z'
+  updated_at: '2026-08-22T08:50:25Z'
+- id: org_auto_5eebd0e9f9d80fac1492
+  type: school
+  canonical_name: 海洋生命学院
+  parent_id: org_auto_5c7e19ff2c4911f60b5c
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:25Z'
+  updated_at: '2026-08-22T08:50:25Z'
