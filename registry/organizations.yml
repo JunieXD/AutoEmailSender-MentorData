@@ -5536,3 +5536,27 @@ organizations:
   successor_id: null
   created_at: '2026-08-22T08:50:21Z'
   updated_at: '2026-08-22T08:50:21Z'
+- id: org_auto_c2ae1439aa2fb369b122
+  type: university
+  canonical_name: 中国地质大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://cug.edu.cn/
+  approved_domains:
+  - cug.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:22Z'
+  updated_at: '2026-08-22T08:50:22Z'
+- id: org_auto_0308bae99fd2ff7662b3
+  type: school
+  canonical_name: 机械与电子信息学院
+  parent_id: org_auto_c2ae1439aa2fb369b122
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:22Z'
+  updated_at: '2026-08-22T08:50:22Z'

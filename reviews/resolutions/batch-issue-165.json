@@ -1,0 +1,76 @@
+{
+  "created_organization_ids": [
+    "org_auto_0308bae99fd2ff7662b3",
+    "org_auto_c2ae1439aa2fb369b122"
+  ],
+  "decided_at": "2026-08-22T08:50:22Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_589923fc8f17f321",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "机械与电子信息学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_165",
+  "invalid_rows": [],
+  "issue": {
+    "number": 165,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/165"
+  },
+  "manifest_sha256": "6b20acba0dc0e6b9a8f13c781378041d722f5d32d428b9fc9e98f5eaf311e938",
+  "mapped_proposal_ids": [
+    "proposal_issue_165_row_1"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 174,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379405246,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
