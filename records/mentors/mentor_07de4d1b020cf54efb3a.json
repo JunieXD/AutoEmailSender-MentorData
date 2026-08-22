@@ -1,0 +1,112 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_110670fbb5ac76bf9e20"
+      ],
+      "ended_at": null,
+      "id": "aff_6286ce19f684aea53e47",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_a54834a99555a7f0c660",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/47b5fbc38ef349d5a162fa311e348aad.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_110670fbb5ac76bf9e20"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6286ce19f684aea53e47",
+      "claim_ids": [
+        "claim_110670fbb5ac76bf9e20"
+      ],
+      "is_primary": true,
+      "normalized_value": "liujw@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/47b5fbc38ef349d5a162fa311e348aad.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liujw@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_110670fbb5ac76bf9e20"
+    ],
+    "email": [
+      "claim_110670fbb5ac76bf9e20"
+    ],
+    "name": [
+      "claim_110670fbb5ac76bf9e20"
+    ],
+    "profile_url": [
+      "claim_110670fbb5ac76bf9e20"
+    ],
+    "recent_papers": [
+      "claim_110670fbb5ac76bf9e20"
+    ],
+    "research_directions": [
+      "claim_110670fbb5ac76bf9e20"
+    ],
+    "status": [
+      "claim_110670fbb5ac76bf9e20"
+    ],
+    "title": [
+      "claim_110670fbb5ac76bf9e20"
+    ]
+  },
+  "id": "mentor_07de4d1b020cf54efb3a",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_110670fbb5ac76bf9e20"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘建伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6286ce19f684aea53e47",
+      "claim_ids": [
+        "claim_110670fbb5ac76bf9e20"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/47b5fbc38ef349d5a162fa311e348aad.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ya-nan Han, Jian-wei Liu*. Online Continual Learning via the Knowledge Invariant and Spread-out Properties. Expert System with Applications.2022,213:119004.",
+    "Ya-nan Han, Jian-wei Liu*. Online Continual Learning via the Meta-learning update with Multi-scale Knowledge Distillation and Data Augmentation. Engineering Applications of Artificial Intelligence. 2022, 113: 104966.",
+    "Ya-nan Han, Jian-wei Liu*. Adaptive instance similarity embedding for online continual learning. Pattern Recognition .149 (2024) 110238",
+    "Jian-wei Liu*, Jiajia Zhou, Mohamed S Kamel, Xionglin Luo. Online Learning Algorithm Based on Adaptive Control Theory. IEEE Transactions on Neural Networks & Learning Systems, 2018, 29(6):2278-2293.",
+    "Si-Si Zhang, Jian-wei Liu*, Xin Zuo. Adaptive online incremental learning for evolving data streams. Applied Soft Computing, 2021, 105:107255",
+    "Dai Qi, Jian-wei Liu *, Shi Yong-hui. Class-overlap Undersampling based on Schur Decomposition for Class-imbalance Problems[J]. Expert Systems with Applications, 2023, 221, 119735.",
+    "Dai Qi, Jian-wei Liu *, Yang Jia-peng. Class-imbalanced Positive Instances Augmentation via Three-line Hybrid[J]. Knowledge-based Systems, 2022, 257, 109902.",
+    "Dai Qi, Jian-wei Liu *, Liu Yang. Multi-granularity Relabeled Undersampling Algorithm for Imbalanced Data[J]. Applied Soft Computing, 2022, 124, 109083."
+  ],
+  "research_directions": [
+    "在线学习(包括强化学习,赌博机算法,持续学习,长尾学习)",
+    "图像视频显著性目标检测,解纠缠表示学习,光场和神经场模型,以及图像视频少样本变化检测",
+    "自然语言理解中的知识补全,图神经网络",
+    "不平衡数据处理",
+    "霍克斯点过程故障预测与诊断",
+    "非线性预测与控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/47b5fbc38ef349d5a162fa311e348aad.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:58Z"
+}
