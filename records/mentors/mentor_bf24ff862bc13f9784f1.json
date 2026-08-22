@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c3734798cd4ba6fef166"
+      ],
+      "ended_at": null,
+      "id": "aff_d166a0e7fd79840e64f3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_e22774c40c0e4df2d282",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/856a0903b2ea4e78a1e6001ba846b9d3.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c3734798cd4ba6fef166"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d166a0e7fd79840e64f3",
+      "claim_ids": [
+        "claim_c3734798cd4ba6fef166"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhu.dd@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/856a0903b2ea4e78a1e6001ba846b9d3.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhu.dd@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c3734798cd4ba6fef166"
+    ],
+    "email": [
+      "claim_c3734798cd4ba6fef166"
+    ],
+    "name": [
+      "claim_c3734798cd4ba6fef166"
+    ],
+    "profile_url": [
+      "claim_c3734798cd4ba6fef166"
+    ],
+    "recent_papers": [
+      "claim_c3734798cd4ba6fef166"
+    ],
+    "research_directions": [
+      "claim_c3734798cd4ba6fef166"
+    ],
+    "status": [
+      "claim_c3734798cd4ba6fef166"
+    ],
+    "title": [
+      "claim_c3734798cd4ba6fef166"
+    ]
+  },
+  "id": "mentor_bf24ff862bc13f9784f1",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c3734798cd4ba6fef166"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱丹丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d166a0e7fd79840e64f3",
+      "claim_ids": [
+        "claim_c3734798cd4ba6fef166"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/856a0903b2ea4e78a1e6001ba846b9d3.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhu, Dandan, Xu, Qiuhan, Wang, Fei, et al. A Target-Aware Well Path Control Method Based on Transfer Reinforcement Learning[J]. SPE Journal, 2024, 29(4): 1730-1741. DOI: 10.2118/218409-PA.",
+    "Zhu, Dandan, Ji, Laihu, Zhu, Liping, et al. Gait coordination feature modeling and multi-scale gait representation for gait recognition[J]. International Journal of Machine Learning and Cybernetics, 2024, DOI: 10.1007/s13042-024-02120-8.",
+    "Zhu, Dandan, Dai, Xinping, Liu, Yi, et al. Deep Learning Approach of Drilling Decision for Subhorizontal Drain Geosteering Based on APC- LSTM Model[J]. SPE Drilling & Completion, 2023, 38(1): 1-17. DOI:10.2118/210605-PA",
+    "Zhu, Dandan, Luo, Xiaoting, Zhang, Zhanmin, et al. Full reproduction of surface dynamometer card based on periodic electric current data[J]. SPE Production and Operations, 2021, 36(3): 594-603. DOI: 10.2118/205396-PA.",
+    "曾祥安,朱丹丹,周昊等. 基于特征融合的微电阻率成像测井空白带无监督填充方法[J]. 电子测量技术, 2024."
+  ],
+  "research_directions": [
+    "人工智能应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/856a0903b2ea4e78a1e6001ba846b9d3.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:58Z"
+}

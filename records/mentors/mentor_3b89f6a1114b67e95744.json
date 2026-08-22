@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6f1ae28681d45cedf4d7"
+      ],
+      "ended_at": null,
+      "id": "aff_bb6a10c781cf342a8e01",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_a54834a99555a7f0c660",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/a8d94690678048688082e5ff675948c7.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_6f1ae28681d45cedf4d7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bb6a10c781cf342a8e01",
+      "claim_ids": [
+        "claim_6f1ae28681d45cedf4d7"
+      ],
+      "is_primary": true,
+      "normalized_value": "gengwh@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/a8d94690678048688082e5ff675948c7.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gengwh@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6f1ae28681d45cedf4d7"
+    ],
+    "email": [
+      "claim_6f1ae28681d45cedf4d7"
+    ],
+    "name": [
+      "claim_6f1ae28681d45cedf4d7"
+    ],
+    "profile_url": [
+      "claim_6f1ae28681d45cedf4d7"
+    ],
+    "recent_papers": [
+      "claim_6f1ae28681d45cedf4d7"
+    ],
+    "research_directions": [
+      "claim_6f1ae28681d45cedf4d7"
+    ],
+    "status": [
+      "claim_6f1ae28681d45cedf4d7"
+    ]
+  },
+  "id": "mentor_3b89f6a1114b67e95744",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6f1ae28681d45cedf4d7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "耿伟恒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bb6a10c781cf342a8e01",
+      "claim_ids": [
+        "claim_6f1ae28681d45cedf4d7"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/a8d94690678048688082e5ff675948c7.htm"
+    }
+  ],
+  "recent_papers": [
+    "Multitrace Seismic Impedance Inversion With Structure-Oriented Minimum Entropy Stabilizer",
+    "Warped P-SV wavelet distortion correction using a time-frequency adaptive shaping filter",
+    "Sparse Radon transform in the mixed frequency-time domain with l1-2 minimization",
+    "3D high‐order sparse radon transform with L1–2 minimization for multiple attenuation",
+    "Joint PP and PS AVA inversion using an acceleration algorithm and a multi-trace strategy",
+    "A robust method for instantaneous frequency estimation via inverse spectral decomposition",
+    "基于L1-2正则化的地震波阻抗“块”反演",
+    "Pre-stack Joint Inversion Based on Multi-components Seismic Data Using Analytical Solution of 1D Elastic Wave Equation"
+  ],
+  "research_directions": [
+    "地震信号处理、地震反演:高分辨率Radon变换、时频分析方法、地震正反演、压缩感知、反问题优化、稀疏反演",
+    "人工智能、深度学习:人工智能方法、数据智能挖掘、多元信息融合"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/a8d94690678048688082e5ff675948c7.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:53:58Z"
+}

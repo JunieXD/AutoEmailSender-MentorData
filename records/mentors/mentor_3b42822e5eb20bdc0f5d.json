@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f317b8fb4bfe58e44e69"
+      ],
+      "ended_at": null,
+      "id": "aff_aa44db8b0f47eecbcc71",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_9d01087df3f7bc2ea95b",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/9b7839bb2d9a4a7089fc523535f0808d.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f317b8fb4bfe58e44e69"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_aa44db8b0f47eecbcc71",
+      "claim_ids": [
+        "claim_f317b8fb4bfe58e44e69"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaojianhui@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/9b7839bb2d9a4a7089fc523535f0808d.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaojianhui@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f317b8fb4bfe58e44e69"
+    ],
+    "email": [
+      "claim_f317b8fb4bfe58e44e69"
+    ],
+    "name": [
+      "claim_f317b8fb4bfe58e44e69"
+    ],
+    "profile_url": [
+      "claim_f317b8fb4bfe58e44e69"
+    ],
+    "status": [
+      "claim_f317b8fb4bfe58e44e69"
+    ],
+    "title": [
+      "claim_f317b8fb4bfe58e44e69"
+    ]
+  },
+  "id": "mentor_3b42822e5eb20bdc0f5d",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f317b8fb4bfe58e44e69"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵建辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_aa44db8b0f47eecbcc71",
+      "claim_ids": [
+        "claim_f317b8fb4bfe58e44e69"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/9b7839bb2d9a4a7089fc523535f0808d.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/9b7839bb2d9a4a7089fc523535f0808d.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:53:58Z"
+}

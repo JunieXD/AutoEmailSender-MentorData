@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d27eb03b3231171a1aab"
+      ],
+      "ended_at": null,
+      "id": "aff_e538c3d3b6aad6883ad7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_224c9da10e4f85f83ab1",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/f80761e7872f48c0a58fc2230c834077.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d27eb03b3231171a1aab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e538c3d3b6aad6883ad7",
+      "claim_ids": [
+        "claim_d27eb03b3231171a1aab"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenchong@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/f80761e7872f48c0a58fc2230c834077.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenchong@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d27eb03b3231171a1aab"
+    ],
+    "email": [
+      "claim_d27eb03b3231171a1aab"
+    ],
+    "name": [
+      "claim_d27eb03b3231171a1aab"
+    ],
+    "profile_url": [
+      "claim_d27eb03b3231171a1aab"
+    ],
+    "recent_papers": [
+      "claim_d27eb03b3231171a1aab"
+    ],
+    "research_directions": [
+      "claim_d27eb03b3231171a1aab"
+    ],
+    "status": [
+      "claim_d27eb03b3231171a1aab"
+    ],
+    "title": [
+      "claim_d27eb03b3231171a1aab"
+    ]
+  },
+  "id": "mentor_a4a1988ee2e4d3a3b95e",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d27eb03b3231171a1aab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈冲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e538c3d3b6aad6883ad7",
+      "claim_ids": [
+        "claim_d27eb03b3231171a1aab"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/f80761e7872f48c0a58fc2230c834077.htm"
+    }
+  ],
+  "recent_papers": [
+    "Chong Chen, Wei He, Han Zhou, Yaru Xue, Mingda Zhu.A comparative study among machine learning and numerical models for simulating groundwater dynamics in the Heihe River Basin, northwestern China.SCIENTIFIC REPORTS.2020-03-03.10(1).",
+    "Chong Chen, Xiaoyu Zhu, Xiaobin Kang, Han Zhou.A Deep Learning Algorithm for Groundwater Level Prediction based on Spatial-temporal Attention Mechanism.Proceedings - 2021 IEEE International Conference on Dependable, Autonomic and Secure Computing, International Conference on Pervasive Intelligence and Computing, International Conference on Cloud and Big Data Computing and International Conference on Cyber Science and Technology Congress, DASC/PiCom/CBDCom/CyberSciTech 2021.2021-01-01.p716-723.",
+    "Chong Chen, Yanbo Xu, Jixuan Zhao, Lulu Chen, Yaru Xue. Combining random forest and graph wavenet for spatial-temporal data prediction. Intelligent and Converged Networks.2022-12-01.3(4).",
+    "Chong Chen, Hui Zhang, Wenxuan Shi, Wei Zhang, Yaru Xue.A novel paradigm for integrating physics-based numerical and machine learning models: A case study of eco-hydrological model. Environmental Modelling and Software.2023-03-06.163(2023).",
+    "Chong Chen, Yixuan Dou, Jie Chen, Yaru Xue.A novel neural network training framework with data assimilation. The Journal of Supercomputing.2022-11-01.78.",
+    "Jingyi Zhao, Yifan Li, Jing Cao, Yutai Gu, Yuanze Wu, Chong Chen, Yingying Wang. An Improved YOLOv5s Model for Building Detection. Electronics. 2024-06-04.",
+    "谷雨泰、赵京翼、杨腾、陈冲. 基于概率误差的三维室内定位系统最优布站方法. 计算机科学. 2024-06.",
+    "陈冲、张伟、邢庆辉、豆沂宣.基于数据同化的地下水模型不确定性分析.冰川冻土.2022-12-01.44(6)."
+  ],
+  "research_directions": [
+    "数值模拟、参数反演、机器学习、信息融合、不确定性分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/f80761e7872f48c0a58fc2230c834077.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:58Z"
+}

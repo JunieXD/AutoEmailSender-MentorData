@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0d49c3b93fe978355a51"
+      ],
+      "ended_at": null,
+      "id": "aff_1e35a88a6e9143882827",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_29fa67ca36c289dd29b9",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/d541a62e2b1d40a6b81d7c670f9b3021.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0d49c3b93fe978355a51"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1e35a88a6e9143882827",
+      "claim_ids": [
+        "claim_0d49c3b93fe978355a51"
+      ],
+      "is_primary": true,
+      "normalized_value": "weifeng.liu@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/d541a62e2b1d40a6b81d7c670f9b3021.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weifeng.liu@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0d49c3b93fe978355a51"
+    ],
+    "email": [
+      "claim_0d49c3b93fe978355a51"
+    ],
+    "name": [
+      "claim_0d49c3b93fe978355a51"
+    ],
+    "profile_url": [
+      "claim_0d49c3b93fe978355a51"
+    ],
+    "recent_papers": [
+      "claim_0d49c3b93fe978355a51"
+    ],
+    "research_directions": [
+      "claim_0d49c3b93fe978355a51"
+    ],
+    "status": [
+      "claim_0d49c3b93fe978355a51"
+    ],
+    "title": [
+      "claim_0d49c3b93fe978355a51"
+    ]
+  },
+  "id": "mentor_37d630d48dd9b1ba1913",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0d49c3b93fe978355a51"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘伟峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1e35a88a6e9143882827",
+      "claim_ids": [
+        "claim_0d49c3b93fe978355a51"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/d541a62e2b1d40a6b81d7c670f9b3021.htm"
+    }
+  ],
+  "recent_papers": [
+    "AmgT: Algebraic Multigrid Solver on Tensor Cores. 37th International Conference for High Performance Computing, Networking, Storage, and Analysis (SC '24).",
+    "Mille-feuille: A Tile-Grained Mixed Precision Single-Kernel Conjugate Gradient Solver on GPUs. 37th International Conference for High Performance Computing, Networking, Storage, and Analysis (SC '24).",
+    "ReCG: ReRAM-Accelerated Sparse Conjugate Gradient. 61st ACM/IEEE Design Automation Conference (DAC '24).",
+    "MASC: A Memory-Efficient Adjoint Sensitivity Analysis through Compression Using Novel Spatiotemporal Prediction. 61st ACM/IEEE Design Automation Conference (DAC '24).",
+    "Leda: Leveraging Tiling Dataflow to Accelerate SpMM on HBM-Equipped FPGAs for GNNs. 43rd ACM/IEEE International Conference on Computer-Aided Design (ICCAD '24).",
+    "CSP: Comprehensively-Sparsified Preconditioner for Efficient Nonlinear Circuit Simulation. 43rd ACM/IEEE International Conference on Computer-Aided Design (ICCAD '24).",
+    "Efficient Spectral-Aware Power Supply Noise Analysis for Low-Power Design Verification. 21st Design, Automation and Test in Europe Conference (DATE '24).",
+    "Cuper: Customized Dataflow and Perceptual Decoding for Sparse Matrix-Vector Multiplication on HBM-Equipped FPGAs. 21st Design, Automation and Test in Europe Conference (DATE '24)."
+  ],
+  "research_directions": [
+    "稀疏矩阵计算、高性能数值线性代数、数学软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/d541a62e2b1d40a6b81d7c670f9b3021.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:58Z"
+}

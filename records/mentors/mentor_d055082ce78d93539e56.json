@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7e07e0e0069f89b2e4d4"
+      ],
+      "ended_at": null,
+      "id": "aff_611b64306ae4b882951f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_29fa67ca36c289dd29b9",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/e9dd2232acb84750b4f7902e821e17f8.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_7e07e0e0069f89b2e4d4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_611b64306ae4b882951f",
+      "claim_ids": [
+        "claim_7e07e0e0069f89b2e4d4"
+      ],
+      "is_primary": true,
+      "normalized_value": "wsy@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/e9dd2232acb84750b4f7902e821e17f8.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wsy@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ],
+    "email": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ],
+    "name": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ],
+    "profile_url": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ],
+    "recent_papers": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ],
+    "research_directions": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ],
+    "status": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ],
+    "title": [
+      "claim_7e07e0e0069f89b2e4d4"
+    ]
+  },
+  "id": "mentor_d055082ce78d93539e56",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7e07e0e0069f89b2e4d4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴双元"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_611b64306ae4b882951f",
+      "claim_ids": [
+        "claim_7e07e0e0069f89b2e4d4"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/e9dd2232acb84750b4f7902e821e17f8.htm"
+    }
+  ],
+  "recent_papers": [
+    "Shuangyuan Wu, Zhaoqi Wang, Shihong Xia. Indexing and Retrieval of Human Motion Data by a Hierarchical Tree. ACM Symposium on Virtual Reality Software and Technology 2009, 207-214. (EI)",
+    "Shuangyuan Wu, Shihong Xia, Zhaoqi Wang, Chunpeng Li. Efficient Motion Data Indexing and Retrieval with Local Similarity Measure of Motion Strings, The Visual Computer, 25(5-7): 499-508 (2009). (SCI/EI)",
+    "吴双元, 王兆其, 夏时洪. 基于PCA相似性和均值特征融合的三维人体运动数据识别与分段, 计算机辅助设计与图形学学术会议(CAD/CG'), 2008, 377-381.",
+    "Yueqi Hu, Shuangyuan Wu, Shihong Xia, Jinghua Fu, Wei Chen. Motion Track: Visualizing Variations of Human Motion Data. IEEE Pacific Visualization Symposium 2010, 153-160. (EI)"
+  ],
+  "research_directions": [
+    "智能信息处理",
+    "深度学习算法优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/e9dd2232acb84750b4f7902e821e17f8.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:53:58Z"
+}

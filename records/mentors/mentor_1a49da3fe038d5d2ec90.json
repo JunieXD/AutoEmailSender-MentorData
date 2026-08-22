@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d61dbbf1660144502015"
+      ],
+      "ended_at": null,
+      "id": "aff_feb3e8d91275f64b805e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_a54834a99555a7f0c660",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/7e060c8894dd4bd98abe253fa30dfd31.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_d61dbbf1660144502015"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_feb3e8d91275f64b805e",
+      "claim_ids": [
+        "claim_d61dbbf1660144502015"
+      ],
+      "is_primary": true,
+      "normalized_value": "kangli@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/7e060c8894dd4bd98abe253fa30dfd31.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kangli@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d61dbbf1660144502015"
+    ],
+    "email": [
+      "claim_d61dbbf1660144502015"
+    ],
+    "name": [
+      "claim_d61dbbf1660144502015"
+    ],
+    "profile_url": [
+      "claim_d61dbbf1660144502015"
+    ],
+    "recent_papers": [
+      "claim_d61dbbf1660144502015"
+    ],
+    "research_directions": [
+      "claim_d61dbbf1660144502015"
+    ],
+    "status": [
+      "claim_d61dbbf1660144502015"
+    ],
+    "title": [
+      "claim_d61dbbf1660144502015"
+    ]
+  },
+  "id": "mentor_1a49da3fe038d5d2ec90",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d61dbbf1660144502015"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李康"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_feb3e8d91275f64b805e",
+      "claim_ids": [
+        "claim_d61dbbf1660144502015"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/7e060c8894dd4bd98abe253fa30dfd31.htm"
+    }
+  ],
+  "recent_papers": [
+    "Meta-learning with intraclass and interclass optimization for few-shot fault diagnosis",
+    "Transformer-enhanced meta-learning for few-shot fault diagnosis of electric submersible pump",
+    "Dual spatio-temporal contrastive learning network with adaptive threshold generation for anomaly detection of electric submersible pump",
+    "Abnormality detection of blast furnace ironmaking process based on an improved diffusion convolutional gated recurrent unit network",
+    "Reweighted regularized prototypical network for few-shot fault diagnosis",
+    "多变量时序标记Transformer及其在电潜泵故障诊断中的应用",
+    "Data-driven soft sensor for hot strip mill process based on multi-scale information-fusion attention network",
+    "Anomaly detection based on temporal attention network with adaptive threshold adjustment for electrical submersible pump"
+  ],
+  "research_directions": [
+    "故障诊断与容错控制、油气安全、智能机器人感知与交互、具身智能、AI4Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/7e060c8894dd4bd98abe253fa30dfd31.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:53:58Z"
+}

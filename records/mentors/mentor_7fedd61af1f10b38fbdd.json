@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_130d480b905339071ff1"
+      ],
+      "ended_at": null,
+      "id": "aff_55a3a395c9bc43389805",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_e22774c40c0e4df2d282",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/159599d9e832458dbd06687b6c632cac.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_130d480b905339071ff1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_55a3a395c9bc43389805",
+      "claim_ids": [
+        "claim_130d480b905339071ff1"
+      ],
+      "is_primary": true,
+      "normalized_value": "xueyaru@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/159599d9e832458dbd06687b6c632cac.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xueyaru@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_130d480b905339071ff1"
+    ],
+    "email": [
+      "claim_130d480b905339071ff1"
+    ],
+    "name": [
+      "claim_130d480b905339071ff1"
+    ],
+    "profile_url": [
+      "claim_130d480b905339071ff1"
+    ],
+    "recent_papers": [
+      "claim_130d480b905339071ff1"
+    ],
+    "research_directions": [
+      "claim_130d480b905339071ff1"
+    ],
+    "status": [
+      "claim_130d480b905339071ff1"
+    ],
+    "title": [
+      "claim_130d480b905339071ff1"
+    ]
+  },
+  "id": "mentor_7fedd61af1f10b38fbdd",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_130d480b905339071ff1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "薛亚茹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_55a3a395c9bc43389805",
+      "claim_ids": [
+        "claim_130d480b905339071ff1"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/159599d9e832458dbd06687b6c632cac.htm"
+    }
+  ],
+  "recent_papers": [
+    "Entropy regularization nonlinear joint PP_PS AVO inversion using Zoeppritz equations. IEEE Transactions on Geoscience and Remote Sensing, vol. 62, 2024",
+    "Radon变换频变自适应多次波压制方法. 地球物理学报, 67(6): 2402-2414, 2024",
+    "An Efficient Amplitude-Preserving Radon Transform With Frequency-Dependent Curvature for Multiple Attenuation. IEEE Transactions on Geoscience and Remote Sensing, vol. 62, 2024",
+    "三维地震数据频域无监督随机噪声压制方法. 石油地球物理勘探. 58(6), 1322-1331, 2023",
+    "A Fast Sparse Hyperbolic Radon Transform Based on Convolutional Neural Network and Its Demultiple Application. IEEE Geoscience and Remote Sensing Letters,Vol 19,2022",
+    "基于一维卷积神经网络的高分辨率Radon变换反演方法研究. 地球物理学报, 65(9): 3610-3622, 2022",
+    "De-aliased high-resolution Radon transform based on the sparse prior information from the convolutional neural network. Journal of Geophysics and Engineering, 19 (4), 663–680, 2022"
+  ],
+  "research_directions": [
+    "信号处理",
+    "图像处理",
+    "深度学习",
+    "地震资料处理",
+    "高分辨率反演等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/159599d9e832458dbd06687b6c632cac.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:58Z"
+}

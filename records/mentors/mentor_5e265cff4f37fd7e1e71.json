@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f954b60d712d4214a273"
+      ],
+      "ended_at": null,
+      "id": "aff_75751170c40c5797d4ce",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:58Z",
+      "organization_id": "org_auto_a54834a99555a7f0c660",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/91ad7fe7b99748faa201ec17f9874cac.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f954b60d712d4214a273"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_75751170c40c5797d4ce",
+      "claim_ids": [
+        "claim_f954b60d712d4214a273"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunlin@cup.edu.cn",
+      "observed_at": "2026-08-21T18:53:58Z",
+      "source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/91ad7fe7b99748faa201ec17f9874cac.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sunlin@cup.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f954b60d712d4214a273"
+    ],
+    "email": [
+      "claim_f954b60d712d4214a273"
+    ],
+    "name": [
+      "claim_f954b60d712d4214a273"
+    ],
+    "profile_url": [
+      "claim_f954b60d712d4214a273"
+    ],
+    "recent_papers": [
+      "claim_f954b60d712d4214a273"
+    ],
+    "research_directions": [
+      "claim_f954b60d712d4214a273"
+    ],
+    "status": [
+      "claim_f954b60d712d4214a273"
+    ],
+    "title": [
+      "claim_f954b60d712d4214a273"
+    ]
+  },
+  "id": "mentor_5e265cff4f37fd7e1e71",
+  "last_verified_at": "2026-08-21T18:53:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f954b60d712d4214a273"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙琳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_75751170c40c5797d4ce",
+      "claim_ids": [
+        "claim_f954b60d712d4214a273"
+      ],
+      "observed_at": "2026-08-21T18:53:58Z",
+      "status": "current",
+      "url": "https://www.cup.edu.cn/cupai/szdw/jsml/91ad7fe7b99748faa201ec17f9874cac.htm"
+    }
+  ],
+  "recent_papers": [
+    "Online control system reconfiguration towards long period energy-saving optimization of heat exchanger networks",
+    "Coordination of Bypass Control and Economic Optimisation for Heat Exchanger Network with Stream Splits",
+    "Synthesis of a multipass heat exchanger network based on life cycle energy saving",
+    "Synthesis of multipass heat exchanger network with the optimal number of shells and tubes based on pinch technology",
+    "Bypass selection for control of heat exchanger network"
+  ],
+  "research_directions": [
+    "过程控制,系统工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:58Z",
+  "status_reason": null,
+  "status_source_url": "https://www.cup.edu.cn/cupai/szdw/jsml/91ad7fe7b99748faa201ec17f9874cac.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:53:58Z"
+}
