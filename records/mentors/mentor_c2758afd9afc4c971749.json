@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cc3476e33cf39a4b8d6b"
+      ],
+      "ended_at": null,
+      "id": "aff_540475eb2433670ac638",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:53Z",
+      "organization_id": "org_auto_945b0b369051d3fa451b",
+      "source_url": "https://jidian.cug.edu.cn/info/3141/30881.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cc3476e33cf39a4b8d6b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_540475eb2433670ac638",
+      "claim_ids": [
+        "claim_cc3476e33cf39a4b8d6b"
+      ],
+      "is_primary": true,
+      "normalized_value": "787458282@qq.com",
+      "observed_at": "2026-08-21T18:52:53Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3141/30881.htm",
+      "status": "current",
+      "type": "email",
+      "value": "787458282@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ],
+    "email": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ],
+    "name": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ],
+    "profile_url": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ],
+    "recent_papers": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ],
+    "research_directions": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ],
+    "status": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ],
+    "title": [
+      "claim_cc3476e33cf39a4b8d6b"
+    ]
+  },
+  "id": "mentor_c2758afd9afc4c971749",
+  "last_verified_at": "2026-08-21T18:52:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cc3476e33cf39a4b8d6b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚亚峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_540475eb2433670ac638",
+      "claim_ids": [
+        "claim_cc3476e33cf39a4b8d6b"
+      ],
+      "observed_at": "2026-08-21T18:52:53Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3141/30881.htm"
+    }
+  ],
+  "recent_papers": [
+    "姚亚峰,杨金岷,周群群等.高精度低消耗CORDIC算法设计[J].湖南大学学报(自然科学版),2023,50(12):69-75.",
+    "Zhi Li, YaFeng Yao, QunQun Zhou, and DongBin Fu. Low-Complexity I/Q Imbalance Calibration Algorithm Based on Zero-IF Receiver[J].Journal of Circuits, Systems and Computers,2022,32(2):235-256",
+    "姚亚峰,陈怡铭,周群群,等.改进的统计特性IQ不平衡矫正算法[J].华中科技大学学报(自然科学版),2021,49(11):12-16.",
+    "王国洪,宛强,姚亚峰,等.精确频率输出的超低时延DDS电路设计[J].哈尔滨工业大学学报,2019,51(05):44-49.",
+    "侯强,揭灿,姚亚峰,等.一种结合高分辨率TDC的快速全数字锁相环设计[J].哈尔滨工业大学学报,2018,50(11):83-88.",
+    "姚亚峰,邹凌志,侯强,等.压缩查找表的高精度CORDIC算法设计[J].华南理工大学学报(自然科学版),2018,46(10):58-62+71.",
+    "Yafeng Yao,Zhongxiu Feng. BBR-Based Iteration-Free CORDIC Algo-rithm[J],Journal of Circuits Systems and Computers,2018,27(5):101-119"
+  ],
+  "research_directions": [
+    "(1)数字芯片设计,主要是数据转换器ADC/DAC芯片中的数字接口、数字滤波、数字混频、数字校正等电路设计",
+    "(2)精简指令集中央处理器即RISC CPU设计,如8051单片机、cortex M3/M4等内核设计",
+    "(3)FMCW雷达硬件加速器电路设计",
+    "(4)其它数字系统或通信系统设计,如数字短波电台、数字集群通信系统等电路设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:53Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3141/30881.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:53Z"
+}

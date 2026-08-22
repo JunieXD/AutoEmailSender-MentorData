@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c29c2690910205834880"
+      ],
+      "ended_at": null,
+      "id": "aff_4a7c87af128791050465",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:53Z",
+      "organization_id": "org_auto_9767e4eb202281c5bd23",
+      "source_url": "https://jidian.cug.edu.cn/info/3061/30141.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c29c2690910205834880"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4a7c87af128791050465",
+      "claim_ids": [
+        "claim_c29c2690910205834880"
+      ],
+      "is_primary": true,
+      "normalized_value": "yaoxy@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:53Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3061/30141.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yaoxy@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c29c2690910205834880"
+    ],
+    "email": [
+      "claim_c29c2690910205834880"
+    ],
+    "name": [
+      "claim_c29c2690910205834880"
+    ],
+    "profile_url": [
+      "claim_c29c2690910205834880"
+    ],
+    "recent_papers": [
+      "claim_c29c2690910205834880"
+    ],
+    "research_directions": [
+      "claim_c29c2690910205834880"
+    ],
+    "status": [
+      "claim_c29c2690910205834880"
+    ],
+    "title": [
+      "claim_c29c2690910205834880"
+    ]
+  },
+  "id": "mentor_fd5fb64447d5f2be95c2",
+  "last_verified_at": "2026-08-21T18:52:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c29c2690910205834880"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚翔宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4a7c87af128791050465",
+      "claim_ids": [
+        "claim_c29c2690910205834880"
+      ],
+      "observed_at": "2026-08-21T18:52:53Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3061/30141.htm"
+    }
+  ],
+  "recent_papers": [
+    "R. Zhang, Xiang-Yu Yao*, L. Wang, J. H. Park, M. Ge, Distributed fault-tolerant formation game for quadrotor UAVs with hybrid attacks, IEEE Transactions on Aerospace and Electronic Systems, 2025, doi:10.1109/TAES.2025.3568393.",
+    "M. Hua, Xiang-Yu Yao*, W. Liu, M. Geng, M. Lv, Optimizing fixed-time generalized Nash equilibrium seeking in multi-unmanned aerial vehicle games, IEEE Transactions on Aerospace and Electronic Systems, 2025, 61(3): 6339-6353.",
+    "M. Geng, H. Ding, Xiang-Yu Yao*, M. Lv, Resilient distributed quadrotor UAVs game: Addressing FDI and physical attacks, IEEE Transactions on Vehicular Technology, 2025, 74(8): 13029-13040.",
+    "D. Xiong, Xiang-Yu Yao*, J.H. Park, M. Ge, Distributed event-triggered optimization for multiple USVs with coupled objective functions, International Journal of Robust and Nonlinear Control, 2025, 35(13): 5717-5729.",
+    "Z. Chang, Xiang-Yu Yao*, Y. Zhang, J.H. Park, Multi-layer NN-based fixed-time distributed optimisation for coordinated dynamic positioning of unmanned surface vehicles. International Journal of Control, 2025, doi:10.1080/00207179.2025.2545318.",
+    "W. Liu, Xiang-Yu Yao*, M. Hua, J.H. Park, M. Ge, Distributed Nash equilibrium seeking for multi-coalition games with constrained NASVs: A hierarchical prescribed-performance algorithm, Neurocomputing, 2025: 130821.",
+    "M. Hua, Xiang-Yu Yao*, W. Liu, Fully distributed fixed-time optimisation for multiple Euler-Lagrange systems, International Journal of Control, doi:10.1080/00207179.2025.2518177.",
+    "Z. Chang, Xiang-Yu Yao*, J.H. Park, Fixed-time formation tracking for unmanned surface vehicles: A multi-layer neural networks approach. Neurocomputing, 2024, 600: 128220."
+  ],
+  "research_directions": [
+    "机器人系统先进控制与智能决策、信息物理融合与系统安全,基于机器视觉-强化学习-MPC的无人机-无人船感知规划与博弈优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:53Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3061/30141.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:53Z"
+}

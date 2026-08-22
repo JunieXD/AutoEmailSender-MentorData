@@ -1,0 +1,112 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6b36f2b165f0fd35b8be"
+      ],
+      "ended_at": null,
+      "id": "aff_ef33f99ef3a8a3d50623",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:53Z",
+      "organization_id": "org_auto_9767e4eb202281c5bd23",
+      "source_url": "https://jidian.cug.edu.cn/info/3071/30361.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6b36f2b165f0fd35b8be"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ef33f99ef3a8a3d50623",
+      "claim_ids": [
+        "claim_6b36f2b165f0fd35b8be"
+      ],
+      "is_primary": true,
+      "normalized_value": "zengming@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:53Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3071/30361.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zengming@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6b36f2b165f0fd35b8be"
+    ],
+    "email": [
+      "claim_6b36f2b165f0fd35b8be"
+    ],
+    "name": [
+      "claim_6b36f2b165f0fd35b8be"
+    ],
+    "profile_url": [
+      "claim_6b36f2b165f0fd35b8be"
+    ],
+    "recent_papers": [
+      "claim_6b36f2b165f0fd35b8be"
+    ],
+    "research_directions": [
+      "claim_6b36f2b165f0fd35b8be"
+    ],
+    "status": [
+      "claim_6b36f2b165f0fd35b8be"
+    ],
+    "title": [
+      "claim_6b36f2b165f0fd35b8be"
+    ]
+  },
+  "id": "mentor_d7c88382145ff2e1143d",
+  "last_verified_at": "2026-08-21T18:52:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6b36f2b165f0fd35b8be"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曾鸣"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ef33f99ef3a8a3d50623",
+      "claim_ids": [
+        "claim_6b36f2b165f0fd35b8be"
+      ],
+      "observed_at": "2026-08-21T18:52:53Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3071/30361.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zeng Ming, Wang Hao, Cheng Yiwei, Wei Jianyu. A Compound Fault Diagnosis Model for Gearboxes Using Correlation Information Between Single Faults, Measurement Science and Technology, 2024, 35(3): 036202. (DOI: 10.1088/1361-6501/ad1312)",
+    "Rao Fengpei,Zeng Ming, Cheng Yiwei, A Novel Interpretable Model via Algorithm Unrolling for Intelligent Fault Diagnosis of Machinery, IEEE Sensors Journal, 2024, 24(1). (DOI: 10.1109/JSEN.2023.3332755)",
+    "Chen Xiao,Zeng Ming. Convolution-Graph Attention Network With Sensor Embeddings for Remaining Useful Life Prediction of Turbofan Engines, IEEE Sensors Journal, 2023, 23(14): 15786-15794. (DOI: 10.1109/JSEN.2023.3279365)",
+    "Zeng Ming, Wu Feng, Cheng Yiwei. Remaining Useful Life Prediction via Spatio-Temporal Channels and Transformer, IEEE Sensors Journal, 2023, 23(23): 29176-29185. (DOI: 10.1109/JSEN.2023.3324330)",
+    "Zeng Ming, Chen Zhen. SOSO Boosting of the K-SVD denoising algorithm for enhancing fault-induced impulse responses of rolling element bearings, IEEE Transactions on Industrial Electronics, 2020, 67(2): 1282- 1292.",
+    "Zeng Ming, Zhang Weimin, Chen Zhen. Group-based K-SVD denoising for bearing fault diagnosis. IEEE Sensors Journal, 2019, 19( 15): 6335-6343.",
+    "Zeng Ming, Yang Yu, Zheng Jinde, Cheng Junsheng. Maximum margin classification based on flexible convex hulls for fault diagnosis of roller bearings. Mechanical Systems and Signal Processing, 2016, 66-67: 533-545.",
+    "Zeng Ming, Yang Yu, Luo Songrong, Cheng Junsheng. One-class classification based on the convex hull for bearing fault detection. Mechanical Systems and Signal Processing, 2016, 81: 274-293."
+  ],
+  "research_directions": [
+    "可解释性神经网络",
+    "深度学习(比如图神经网络)",
+    "装备故障诊断与智能维护",
+    "(机械装备、新能源电池等)剩余使用寿命预测",
+    "边缘计算(云边协同)",
+    "动态信号处理与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:53Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3071/30361.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:53Z"
+}

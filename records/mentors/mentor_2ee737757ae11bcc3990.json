@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0bb668b24c7a479ec93c"
+      ],
+      "ended_at": null,
+      "id": "aff_913d8fbf74abe5a7bb37",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:53Z",
+      "organization_id": "org_auto_2a700b1866f6962f0038",
+      "source_url": "https://jidian.cug.edu.cn/info/3061/30221.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0bb668b24c7a479ec93c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_913d8fbf74abe5a7bb37",
+      "claim_ids": [
+        "claim_0bb668b24c7a479ec93c"
+      ],
+      "is_primary": true,
+      "normalized_value": "minli@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:53Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3061/30221.htm",
+      "status": "current",
+      "type": "email",
+      "value": "minli@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0bb668b24c7a479ec93c"
+    ],
+    "email": [
+      "claim_0bb668b24c7a479ec93c"
+    ],
+    "name": [
+      "claim_0bb668b24c7a479ec93c"
+    ],
+    "profile_url": [
+      "claim_0bb668b24c7a479ec93c"
+    ],
+    "recent_papers": [
+      "claim_0bb668b24c7a479ec93c"
+    ],
+    "research_directions": [
+      "claim_0bb668b24c7a479ec93c"
+    ],
+    "status": [
+      "claim_0bb668b24c7a479ec93c"
+    ],
+    "title": [
+      "claim_0bb668b24c7a479ec93c"
+    ]
+  },
+  "id": "mentor_2ee737757ae11bcc3990",
+  "last_verified_at": "2026-08-21T18:52:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0bb668b24c7a479ec93c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_913d8fbf74abe5a7bb37",
+      "claim_ids": [
+        "claim_0bb668b24c7a479ec93c"
+      ],
+      "observed_at": "2026-08-21T18:52:53Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3061/30221.htm"
+    }
+  ],
+  "recent_papers": [
+    "M. Li, T. Chen, G.Zhi,R. Cheng, K. Yang, andS. Jin. Data-Driven MIMO Feedforward Control Approach Based on Measured Step Response.IEEE/ASME Transactions on Mechatronics, 2023, Early Access, DOI: 10.1109/TMECH.2023.3301497",
+    "M. Li, J.Xiong, R.Cheng, Y.Zhu, K.Yang, andF. Sun. Rational Feedforward Tuning Using Variance-Optimal Instrumental Variables Method Based on Dual-Loop Iterative Learning Control.IEEE Transactions on Industrial Informatics, 2023, 19(3): 2585-2595. (1区, IF: 12.3)",
+    "李敏, 陈涛涛, 鲁森, 杨开明, 朱煜. 胡楚雄光刻机超精密运动台数据驱动MIMO定结构前馈控制,机械工程学报, 2023, 59(21): 99-109.",
+    "L.Wen,Y.Zhang,L.Gao,X.Li, M.Li*.A New Multiscale Multiattention Convolutional Neural Network for Fine-Grained Surface Defect Detection.IEEE Transactions on Instrumentation and Measurement, 2023, 72: 5013811. (IF:5.6)",
+    "M. Li, T. Chen, R.Cheng, K.Yang, Y.Zhu, and C. Mao. Dual-Loop Iterative Learning Control With Application to an Ultraprecision Wafer Stage.IEEE Transactions on Industrial Electronics, 2022, 69(11): 11590-11599. (1区, IF: 7.7)",
+    "M. Li, C. Mao, Y. Zhu, K. Yang, and X. Li. Data-Based Iterative Dynamic Decoupling Control for Precision MIMO Motion Systems.IEEE Transactions on Industrial Informatics, 2020, 16(3): 1668-1676. (1区, IF: 12.3)",
+    "M. Li, Y. Zhu, K. Yang, L. Yang, and C. Hu. Data-Based Switching Feedforward Control for Repeating and Varying Tasks: With Application to an Ultraprecision Wafer Stage.IEEE Transactions on Industrial Electronics, 2019, 66(11): 8670-8680. (1区, IF: 7.7)",
+    "M. Li, Y. Zhu, K. Yang, L. Yang, C. Hu, and H. Mu. Convergence Rate Oriented Iterative Feedback Tuning with Application to an Ultraprecision Wafer Stage.IEEE Transactions on Industrial Electronics, 2019, 66(3): 1993-2003. (1区, IF: 7.7)"
+  ],
+  "research_directions": [
+    "精密/超精密动力学建模",
+    "机器视觉与精密测量",
+    "精密/超精密运动控制",
+    "微纳操控机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:53Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3061/30221.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:53Z"
+}
