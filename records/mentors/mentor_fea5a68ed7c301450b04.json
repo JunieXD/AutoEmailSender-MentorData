@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b6c4b4ba94b02bde6eef"
+      ],
+      "ended_at": null,
+      "id": "aff_4c7fd1f3787da56e3adf",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_b31e3566a7c8f54a714f",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1429.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b6c4b4ba94b02bde6eef"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4c7fd1f3787da56e3adf",
+      "claim_ids": [
+        "claim_b6c4b4ba94b02bde6eef"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangyipeng@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1429.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangyipeng@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ],
+    "email": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ],
+    "name": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ],
+    "profile_url": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ],
+    "recent_papers": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ],
+    "research_directions": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ],
+    "status": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ],
+    "title": [
+      "claim_b6c4b4ba94b02bde6eef"
+    ]
+  },
+  "id": "mentor_fea5a68ed7c301450b04",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b6c4b4ba94b02bde6eef"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王一鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4c7fd1f3787da56e3adf",
+      "claim_ids": [
+        "claim_b6c4b4ba94b02bde6eef"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1616/1429.htm"
+    }
+  ],
+  "recent_papers": [
+    "Reliable Open-Set Network Traffic Classification. IEEE Transactions on Information Forensics and Security (TIFS). 2025.",
+    "MPAF: Encrypted Traffic Classification with Multi-Phase Attribute Fingerprint. IEEE Transactions on Information Forensics and Security (TIFS). 2024.",
+    "A Two-Phase Approach to Fast and Accurate Classification of Encrypted Traffic. IEEE/ACM Transactions on Networking (TON). 2023.",
+    "Encrypted TLS Traffic Classification on Cloud Platforms. IEEE/ACM Transactions on Networking (TON). 2023.",
+    "Khaos: An Adversarial Neural Network DGA with High Anti-Detection Ability. IEEE Transactions on Information Forensics and Security (TIFS). 2020."
+  ],
+  "research_directions": [
+    "互联网应用流量分类与还原、应用流量内容精细化提取、加密流量分类、互联网应用指纹自动化推断、应用协议状态自动机推断、应用协议格式推断、人工智能算法设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1616/1429.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:52Z"
+}

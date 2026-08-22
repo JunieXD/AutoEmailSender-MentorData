@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f86713d64047cd5e8d30"
+      ],
+      "ended_at": null,
+      "id": "aff_025d9a17f0c9ed907b65",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_b31e3566a7c8f54a714f",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1448.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f86713d64047cd5e8d30"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_025d9a17f0c9ed907b65",
+      "claim_ids": [
+        "claim_f86713d64047cd5e8d30"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangzhen@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1448.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangzhen@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f86713d64047cd5e8d30"
+    ],
+    "email": [
+      "claim_f86713d64047cd5e8d30"
+    ],
+    "name": [
+      "claim_f86713d64047cd5e8d30"
+    ],
+    "profile_url": [
+      "claim_f86713d64047cd5e8d30"
+    ],
+    "recent_papers": [
+      "claim_f86713d64047cd5e8d30"
+    ],
+    "research_directions": [
+      "claim_f86713d64047cd5e8d30"
+    ],
+    "status": [
+      "claim_f86713d64047cd5e8d30"
+    ],
+    "title": [
+      "claim_f86713d64047cd5e8d30"
+    ]
+  },
+  "id": "mentor_a86d184cb27fe83dd2e7",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f86713d64047cd5e8d30"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨震"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_025d9a17f0c9ed907b65",
+      "claim_ids": [
+        "claim_f86713d64047cd5e8d30"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1616/1448.htm"
+    }
+  ],
+  "recent_papers": [
+    "Edasvic: Enabling Efficient and Dynamic Storage Verification for Clouds of Industrial Internet Platforms, DOI: 10.1109/TIFS.2024.3422790. IEEE Trans. TIFS.",
+    "PrVFL: Pruning-Aware Verifiable Federated Learning for Heterogeneous Edge Computing, DOI: 10.1109/TMC.2024.3450542. IEEE Trans. MC.",
+    "EV-FL: Efficient Verifiable Federated Learning With Weighted Aggregation for Industrial IoT Networks, DOI: 10.1109/TNET.2023.3328635. IEEE/ACM Trans. Networking.",
+    "EDCOMA: Enabling Efficient Double Compressed Auditing for Blockchain Based Decentralized Storage, DOI: 10.1109/TSC.2024.3417337. IEEE Trans. SC.",
+    "On the Comparisons of Decorrelation Approaches for Non-Gaussian Neutral Vector Variables, DOI: 10.1109/TNNLS.2020.2978858. IEEE Trans. NLS.",
+    "Toward Keyword Extraction in Constrained Information Retrieval in Vehicle Social Network, DOI: 10.1109/TVT.2019.2906799. IEEE Trans. TVT.",
+    "Physical Unclonable Function-Based Lightweight and Verifiable Data Stream Transmission for Industrial IoT, DOI: 10.1109/TII.2023.3248107. IEEE Trans. TII.",
+    "SDformer: Transformer with Spectral Filter and Dynamic Attention for Multivariate Time Series Long-term Forecasting, DOI: 10.24963/ijcai.2024/629. IJCAI 2024."
+  ],
+  "research_directions": [
+    "工业数据安全治理、人工智能安全、区块链与数据安全、可信计算等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1616/1448.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:52Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ab89a0bb552c2e4b5b30"
+      ],
+      "ended_at": null,
+      "id": "aff_c95f96f1d15d95ecbe61",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_adb80d3245ecacb23470",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1435.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ab89a0bb552c2e4b5b30"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c95f96f1d15d95ecbe61",
+      "claim_ids": [
+        "claim_ab89a0bb552c2e4b5b30"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangyang7357@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1435.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangyang7357@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ],
+    "email": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ],
+    "name": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ],
+    "profile_url": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ],
+    "recent_papers": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ],
+    "research_directions": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ],
+    "status": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ],
+    "title": [
+      "claim_ab89a0bb552c2e4b5b30"
+    ]
+  },
+  "id": "mentor_287aa98f3b3e89caa13c",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ab89a0bb552c2e4b5b30"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨宇光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c95f96f1d15d95ecbe61",
+      "claim_ids": [
+        "claim_ab89a0bb552c2e4b5b30"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1616/1435.htm"
+    }
+  ],
+  "recent_papers": [
+    "Resource-efficient self-tallying quantum anonymous voting. Physical Review A 112(5), 052418(2025).",
+    "Quantum oblivious transfer for quantum messages. Physical Review A 112(4), 042617(2025).",
+    "Practical quantum anonymous private information retrieval based on quantum key distribution. IEEE Transactions on Information Forensics and Security 18, 4034-4045(2023).",
+    "Quantum algorithm for kernelized correlation filter. Science China Information Sciences 66(2), 129501(2023).",
+    "Complete security solution for practical quantum network coding. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems 43(9), 2692-2704(2024).",
+    "Flexible quantum network coding by using quantum multiplexing. Advanced Quantum Technologies 7(9), 2400016(2024).",
+    "Towards practical anonymous quantum communication: A measurement-device-independent approach. Physical Review A 104, 052415(2021).",
+    "Participant attack on the deterministic measurement-device-independent quantum secret sharing protocol. SCIENCE CHINA Physics, Mechanics& Astronomy 64(6), 121-124 (2021)."
+  ],
+  "research_directions": [
+    "量子密码和量子通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1616/1435.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:52Z"
+}

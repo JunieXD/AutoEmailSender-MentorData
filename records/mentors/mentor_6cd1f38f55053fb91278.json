@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f52a52191192a6dd709d"
+      ],
+      "ended_at": null,
+      "id": "aff_afe07cbba5907e32f0dc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_b31e3566a7c8f54a714f",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1432.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f52a52191192a6dd709d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_afe07cbba5907e32f0dc",
+      "claim_ids": [
+        "claim_f52a52191192a6dd709d"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyugengyu@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1432.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lyugengyu@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f52a52191192a6dd709d"
+    ],
+    "email": [
+      "claim_f52a52191192a6dd709d"
+    ],
+    "name": [
+      "claim_f52a52191192a6dd709d"
+    ],
+    "profile_url": [
+      "claim_f52a52191192a6dd709d"
+    ],
+    "recent_papers": [
+      "claim_f52a52191192a6dd709d"
+    ],
+    "research_directions": [
+      "claim_f52a52191192a6dd709d"
+    ],
+    "status": [
+      "claim_f52a52191192a6dd709d"
+    ]
+  },
+  "id": "mentor_6cd1f38f55053fb91278",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f52a52191192a6dd709d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕庚育"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_afe07cbba5907e32f0dc",
+      "claim_ids": [
+        "claim_f52a52191192a6dd709d"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1616/1432.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hypergraph-Based Unaligned Multi-View Clustering via Cluster-Aware Feature Extraction",
+    "DF-VB: Dual-level Fuzzy Fusion with View-specific Boosting for Multi-view Multi-label Classification",
+    "Hypergraph-Based Multi-View Multi-Label Classification via Adaptive High-Order Semantic Fusion",
+    "CCAHCL: Multi-Level Hypergraph Contrastive Learning for Connected Component Awareness",
+    "CaliGCL: Calibrated Graph Contrastive Learning via Partitioned Similarity and Consistency Discrimination",
+    "AF-UMC: An Alignment-Free Fusion Framework for Unaligned Multi-View Clustering",
+    "Simplified Graph Contrastive Learning Model without Augmentation",
+    "Tensorized Multi-View Multi-Label Classification via Laplace Tensor Rank"
+  ],
+  "research_directions": [
+    "主要从事机器学习、数据挖掘等领域的基础理论和应用研究工作,理论层面聚焦于开放数据场景下的多模态数据理解及其数据安全研究,具体包括弱监督学习(Weakly-Supervised Learning)、多模态/视角学习(Multi-Modal/ViewLearning)、多标记学习(Multi-Label Learning)、联邦学习(Federated Learning)等",
+    "应用层面聚焦于人工智能技术在科技教育、智慧司法、工业互联网等典型场景中的工程化落地与智能体应用,具体包括教育行为的多视角建模与个性化路径推荐、法律文本的语义理解与类案匹配,多模态工业传感数据的协同智能运维、及面向跨域敏感数据的联邦学习与隐私保护推理等。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1616/1432.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:43:52Z"
+}

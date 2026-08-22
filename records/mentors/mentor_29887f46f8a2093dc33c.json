@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ca0458e4311c2a476c48"
+      ],
+      "ended_at": null,
+      "id": "aff_f53f968441f8708a8a2c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_b31e3566a7c8f54a714f",
+      "source_url": "https://cst.bjut.edu.cn/info/1608/1439.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_ca0458e4311c2a476c48"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f53f968441f8708a8a2c",
+      "claim_ids": [
+        "claim_ca0458e4311c2a476c48"
+      ],
+      "is_primary": true,
+      "normalized_value": "chaofan.chen@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1608/1439.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chaofan.chen@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ca0458e4311c2a476c48"
+    ],
+    "email": [
+      "claim_ca0458e4311c2a476c48"
+    ],
+    "name": [
+      "claim_ca0458e4311c2a476c48"
+    ],
+    "profile_url": [
+      "claim_ca0458e4311c2a476c48"
+    ],
+    "recent_papers": [
+      "claim_ca0458e4311c2a476c48"
+    ],
+    "research_directions": [
+      "claim_ca0458e4311c2a476c48"
+    ],
+    "status": [
+      "claim_ca0458e4311c2a476c48"
+    ]
+  },
+  "id": "mentor_29887f46f8a2093dc33c",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ca0458e4311c2a476c48"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈超凡"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f53f968441f8708a8a2c",
+      "claim_ids": [
+        "claim_ca0458e4311c2a476c48"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1608/1439.htm"
+    }
+  ],
+  "recent_papers": [
+    "General Covariant Action Modeling: Constructing Generalized Manifolds via Spatio-Temporal Decoupling, ICML, 2026, CCF-A类,唯一通讯作者",
+    "LAST: Bridging Vision-Language and Action Manifolds via Gromov-Wasserstein Alignment, ICML, 2026, CCF-A类,共同通讯作者(序1)",
+    "Pseudo Informative Episode Construction for Few-Shot Class-Incremental Learning, AAAI, 2025, CCF-A类,唯一第一作者",
+    "EgoPrompt: Prompt Learning for Egocentric Action Recognition, ACM MM, 2025, CCF-A类,唯一通讯作者",
+    "DMC3: Dual-Modal Counterfactual Contrastive Construction for Egocentric Video Question Answering,ACM MM, 2025, CCF-A类,共同通讯作者(序1)"
+  ],
+  "research_directions": [
+    "小样本学习、持续学习、多媒体计算、视频理解、具身智能及其安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1608/1439.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:43:52Z"
+}

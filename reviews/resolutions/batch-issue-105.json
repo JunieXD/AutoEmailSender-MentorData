@@ -1,0 +1,236 @@
+{
+  "created_organization_ids": [
+    "org_auto_0e9ff23630f083927e62",
+    "org_auto_adb80d3245ecacb23470",
+    "org_auto_b31e3566a7c8f54a714f"
+  ],
+  "decided_at": "2026-08-22T08:49:34Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_ab972922c7bad433",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bjut.edu.cn"
+          ],
+          "canonical_name": "北京工业大学",
+          "level": "university",
+          "official_url": "https://bjut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b77c9ff022c26aee",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bjut.edu.cn"
+          ],
+          "canonical_name": "北京工业大学",
+          "level": "university",
+          "official_url": "https://bjut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全基础系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f4745f1c882a2f47",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bjut.edu.cn"
+          ],
+          "canonical_name": "北京工业大学",
+          "level": "university",
+          "official_url": "https://bjut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_1edbfc1c707fc30897ec"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f82f464acfd9d3fd",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "bjut.edu.cn"
+          ],
+          "canonical_name": "北京工业大学",
+          "level": "university",
+          "official_url": "https://bjut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "密码及应用系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_105",
+  "invalid_rows": [],
+  "issue": {
+    "number": 105,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/105"
+  },
+  "manifest_sha256": "fc38a7cc2c811cf8c6729a8ab9fc0c7110b78ca8975c520e38ed462619ea7cad",
+  "mapped_proposal_ids": [
+    "proposal_issue_105_row_1",
+    "proposal_issue_105_row_10",
+    "proposal_issue_105_row_11",
+    "proposal_issue_105_row_12",
+    "proposal_issue_105_row_13",
+    "proposal_issue_105_row_14",
+    "proposal_issue_105_row_15",
+    "proposal_issue_105_row_16",
+    "proposal_issue_105_row_2",
+    "proposal_issue_105_row_3",
+    "proposal_issue_105_row_4",
+    "proposal_issue_105_row_5",
+    "proposal_issue_105_row_6",
+    "proposal_issue_105_row_7",
+    "proposal_issue_105_row_8",
+    "proposal_issue_105_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "计算机学院",
+      "official_url": null,
+      "organization_id": "org_auto_1edbfc1c707fc30897ec",
+      "organization_type": "school",
+      "parent_id": "org_auto_0d8f76811a454b3d2f88"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 109,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379402325,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

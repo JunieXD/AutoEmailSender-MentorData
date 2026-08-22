@@ -3743,3 +3743,36 @@ organizations:
   successor_id: null
   created_at: '2026-08-22T08:49:32Z'
   updated_at: '2026-08-22T08:49:32Z'
+- id: org_auto_b31e3566a7c8f54a714f
+  type: school
+  canonical_name: 网络空间安全学院
+  parent_id: org_auto_0d8f76811a454b3d2f88
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:34Z'
+  updated_at: '2026-08-22T08:49:34Z'
+- id: org_auto_0e9ff23630f083927e62
+  type: department
+  canonical_name: 网络空间安全基础系
+  parent_id: org_auto_b31e3566a7c8f54a714f
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:34Z'
+  updated_at: '2026-08-22T08:49:34Z'
+- id: org_auto_adb80d3245ecacb23470
+  type: department
+  canonical_name: 密码及应用系
+  parent_id: org_auto_b31e3566a7c8f54a714f
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:34Z'
+  updated_at: '2026-08-22T08:49:34Z'

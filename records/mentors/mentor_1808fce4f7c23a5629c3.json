@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_736beb9923f3920193fb"
+      ],
+      "ended_at": null,
+      "id": "aff_d25e69380f6fd7635f14",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:52Z",
+      "organization_id": "org_auto_b31e3566a7c8f54a714f",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1440.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_736beb9923f3920193fb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d25e69380f6fd7635f14",
+      "claim_ids": [
+        "claim_736beb9923f3920193fb"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiangnan@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:52Z",
+      "source_url": "https://cst.bjut.edu.cn/info/1616/1440.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiangnan@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:52Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_736beb9923f3920193fb"
+    ],
+    "email": [
+      "claim_736beb9923f3920193fb"
+    ],
+    "name": [
+      "claim_736beb9923f3920193fb"
+    ],
+    "profile_url": [
+      "claim_736beb9923f3920193fb"
+    ],
+    "recent_papers": [
+      "claim_736beb9923f3920193fb"
+    ],
+    "research_directions": [
+      "claim_736beb9923f3920193fb"
+    ],
+    "status": [
+      "claim_736beb9923f3920193fb"
+    ],
+    "title": [
+      "claim_736beb9923f3920193fb"
+    ]
+  },
+  "id": "mentor_1808fce4f7c23a5629c3",
+  "last_verified_at": "2026-08-21T18:43:52Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_736beb9923f3920193fb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d25e69380f6fd7635f14",
+      "claim_ids": [
+        "claim_736beb9923f3920193fb"
+      ],
+      "observed_at": "2026-08-21T18:43:52Z",
+      "status": "current",
+      "url": "https://cst.bjut.edu.cn/info/1616/1440.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhang Rui, Wang Jian, Jiang Nan,et al. Efficient and secure multi-qubit broadcast-based quantum federated learning. IEEE Transactions on Information Forensics & Security, 2025, 20: 6778-6793.",
+    "王健, 张蕊, 姜楠. 量子机器学习综述. 软件学报, 2024, 35(8): 3843-3877.",
+    "Shang Jing, Wang Jian, Wang Kailun, Liu Jiqiang, Jiang Nan, Armanuzzaman Md, Zhao Ziming. Defending against membership inference attacks on iteratively pruned deep neural networks. The Network and Distributed System Security (NDSS) Symposium 2025, 24-28 February 2025, San Diego, CA, USA."
+  ],
+  "research_directions": [
+    "量子机器学习、量子软件、量子计算、信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:52Z",
+  "status_reason": null,
+  "status_source_url": "https://cst.bjut.edu.cn/info/1616/1440.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:52Z"
+}
