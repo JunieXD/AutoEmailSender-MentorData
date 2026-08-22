@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0406bb4b45ac1e853882"
+      ],
+      "ended_at": null,
+      "id": "aff_66941098dc6f2bfc14a3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:46Z",
+      "organization_id": "org_auto_1edbfc1c707fc30897ec",
+      "source_url": "https://biai.bjut.edu.cn/info/1065/1132.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0406bb4b45ac1e853882"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_66941098dc6f2bfc14a3",
+      "claim_ids": [
+        "claim_0406bb4b45ac1e853882"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangxiaodan@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:46Z",
+      "source_url": "https://biai.bjut.edu.cn/info/1065/1132.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangxiaodan@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0406bb4b45ac1e853882"
+    ],
+    "email": [
+      "claim_0406bb4b45ac1e853882"
+    ],
+    "name": [
+      "claim_0406bb4b45ac1e853882"
+    ],
+    "profile_url": [
+      "claim_0406bb4b45ac1e853882"
+    ],
+    "recent_papers": [
+      "claim_0406bb4b45ac1e853882"
+    ],
+    "research_directions": [
+      "claim_0406bb4b45ac1e853882"
+    ],
+    "status": [
+      "claim_0406bb4b45ac1e853882"
+    ],
+    "title": [
+      "claim_0406bb4b45ac1e853882"
+    ]
+  },
+  "id": "mentor_51a05a0f0ae6d2e2c7a2",
+  "last_verified_at": "2026-08-21T18:43:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0406bb4b45ac1e853882"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张晓丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_66941098dc6f2bfc14a3",
+      "claim_ids": [
+        "claim_0406bb4b45ac1e853882"
+      ],
+      "observed_at": "2026-08-21T18:43:46Z",
+      "status": "current",
+      "url": "https://biai.bjut.edu.cn/info/1065/1132.htm"
+    }
+  ],
+  "recent_papers": [
+    "Intra- and Inter-Head Orthogonal Attention for Image Captioning",
+    "MEPNet: Medical Entity-balanced Prompting Network for Brain CT Report Generation",
+    "See Detail Say Clear: Towards Brain CT Report Generation via Pathological Clue-driven Representation Learning",
+    "Co-occurrence Relationship Driven Hierarchical Attention Network for Brain CT Report Generation",
+    "Weakly Guided Attention Model with Hierarchical Interaction for Brain CT Report Generation",
+    "Granularity Matters: Pathological Graph-driven Cross-modal Alignment for Brain CT Report Generation",
+    "Divergent-convergent Attention for Image Captioning",
+    "Spatio-temporal Memory Attention for Image Captioning"
+  ],
+  "research_directions": [
+    "计算机视觉、自然语言处理、多模态大模型等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:46Z",
+  "status_reason": null,
+  "status_source_url": "https://biai.bjut.edu.cn/info/1065/1132.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:43:46Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b4452c0a69f3d6377e5"
+      ],
+      "ended_at": null,
+      "id": "aff_50a484fba58a41800085",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:46Z",
+      "organization_id": "org_auto_d6f6508cbfe0b8f172be",
+      "source_url": "https://biai.bjut.edu.cn/info/1065/1135.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b4452c0a69f3d6377e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_50a484fba58a41800085",
+      "claim_ids": [
+        "claim_0b4452c0a69f3d6377e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "ybc@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:46Z",
+      "source_url": "https://biai.bjut.edu.cn/info/1065/1135.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ybc@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b4452c0a69f3d6377e5"
+    ],
+    "email": [
+      "claim_0b4452c0a69f3d6377e5"
+    ],
+    "name": [
+      "claim_0b4452c0a69f3d6377e5"
+    ],
+    "profile_url": [
+      "claim_0b4452c0a69f3d6377e5"
+    ],
+    "research_directions": [
+      "claim_0b4452c0a69f3d6377e5"
+    ],
+    "status": [
+      "claim_0b4452c0a69f3d6377e5"
+    ],
+    "title": [
+      "claim_0b4452c0a69f3d6377e5"
+    ]
+  },
+  "id": "mentor_13d6f433a8487fc6bff6",
+  "last_verified_at": "2026-08-21T18:43:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b4452c0a69f3d6377e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹宝才"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_50a484fba58a41800085",
+      "claim_ids": [
+        "claim_0b4452c0a69f3d6377e5"
+      ],
+      "observed_at": "2026-08-21T18:43:46Z",
+      "status": "current",
+      "url": "https://biai.bjut.edu.cn/info/1065/1135.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多媒体技术、跨媒体智能、视频编码"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:46Z",
+  "status_reason": null,
+  "status_source_url": "https://biai.bjut.edu.cn/info/1065/1135.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:46Z"
+}
