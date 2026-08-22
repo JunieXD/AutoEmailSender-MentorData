@@ -1,0 +1,201 @@
+{
+  "created_organization_ids": [],
+  "decided_at": "2026-08-22T08:50:09Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_7248497e74076f9b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_65efd0fef3c6a9ac2718",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_148_row_3",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_148_row_4",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_148_row_5",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_148_row_6",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_cdf80792d118e3fb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_65efd0fef3c6a9ac2718",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": "org_auto_9fa413d88a1af02df332",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_148_row_2",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e5f5da794cedbbfd",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": "org_auto_65efd0fef3c6a9ac2718",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_148_row_1",
+          "reason": "预检发现与现有导师记录冲突，缺少专门纠错证据，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_148",
+  "invalid_rows": [],
+  "issue": {
+    "number": 148,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/148"
+  },
+  "manifest_sha256": "b81a76b89171a726e24fe19a9976ee5cd9c0c181355ef05dc1b9b9e12f6d813f",
+  "mapped_proposal_ids": [],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 157,
+  "rejected_proposal_ids": [
+    "proposal_issue_148_row_1",
+    "proposal_issue_148_row_2",
+    "proposal_issue_148_row_3",
+    "proposal_issue_148_row_4",
+    "proposal_issue_148_row_5",
+    "proposal_issue_148_row_6"
+  ],
+  "review_comment_id": 5379404417,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
