@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b1f482d99023443f0ced"
+      ],
+      "ended_at": null,
+      "id": "aff_d2b6f8481ad6b1e6e9bc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/wangkaiyu/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_b1f482d99023443f0ced"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d2b6f8481ad6b1e6e9bc",
+      "claim_ids": [
+        "claim_b1f482d99023443f0ced"
+      ],
+      "is_primary": true,
+      "normalized_value": "wang_kaiyu@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/wangkaiyu/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wang_kaiyu@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b1f482d99023443f0ced"
+    ],
+    "email": [
+      "claim_b1f482d99023443f0ced"
+    ],
+    "name": [
+      "claim_b1f482d99023443f0ced"
+    ],
+    "profile_url": [
+      "claim_b1f482d99023443f0ced"
+    ],
+    "research_directions": [
+      "claim_b1f482d99023443f0ced"
+    ],
+    "status": [
+      "claim_b1f482d99023443f0ced"
+    ]
+  },
+  "id": "mentor_ff7f0d4bf2df3355ea3b",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b1f482d99023443f0ced"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王开宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d2b6f8481ad6b1e6e9bc",
+      "claim_ids": [
+        "claim_b1f482d99023443f0ced"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/wangkaiyu/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "分布式计算、联邦学习、边缘计算、多模态大模型,具体方向包含异构联邦学习系统、多模态联邦微调、联邦学习鲁棒性与安全性、多智能体协同训练等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/wangkaiyu/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:46:55Z"
+}

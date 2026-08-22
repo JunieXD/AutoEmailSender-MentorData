@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0b4481743e9c8493c28"
+      ],
+      "ended_at": null,
+      "id": "aff_8bce1b3dbbaa6ec31e68",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhaoguodong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_d0b4481743e9c8493c28"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8bce1b3dbbaa6ec31e68",
+      "claim_ids": [
+        "claim_d0b4481743e9c8493c28"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaoguodong@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhaoguodong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaoguodong@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0b4481743e9c8493c28"
+    ],
+    "email": [
+      "claim_d0b4481743e9c8493c28"
+    ],
+    "name": [
+      "claim_d0b4481743e9c8493c28"
+    ],
+    "profile_url": [
+      "claim_d0b4481743e9c8493c28"
+    ],
+    "research_directions": [
+      "claim_d0b4481743e9c8493c28"
+    ],
+    "status": [
+      "claim_d0b4481743e9c8493c28"
+    ]
+  },
+  "id": "mentor_c11e5ef3df72ee13ffb5",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0b4481743e9c8493c28"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵国冬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8bce1b3dbbaa6ec31e68",
+      "claim_ids": [
+        "claim_d0b4481743e9c8493c28"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/zhaoguodong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人形机器人学习、人工智能、具身智能、计算机博弈、嵌入式与物联网安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/zhaoguodong/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:46:55Z"
+}

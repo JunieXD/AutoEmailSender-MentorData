@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f88ede7957a1cd7baa27"
+      ],
+      "ended_at": null,
+      "id": "aff_9b5c94df96f837fae36b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/liuzechao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f88ede7957a1cd7baa27"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9b5c94df96f837fae36b",
+      "claim_ids": [
+        "claim_f88ede7957a1cd7baa27"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuzechao@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/liuzechao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuzechao@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f88ede7957a1cd7baa27"
+    ],
+    "email": [
+      "claim_f88ede7957a1cd7baa27"
+    ],
+    "name": [
+      "claim_f88ede7957a1cd7baa27"
+    ],
+    "profile_url": [
+      "claim_f88ede7957a1cd7baa27"
+    ],
+    "research_directions": [
+      "claim_f88ede7957a1cd7baa27"
+    ],
+    "status": [
+      "claim_f88ede7957a1cd7baa27"
+    ]
+  },
+  "id": "mentor_0cb2728e6bd5f2ccb542",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f88ede7957a1cd7baa27"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘泽超"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9b5c94df96f837fae36b",
+      "claim_ids": [
+        "claim_f88ede7957a1cd7baa27"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/liuzechao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据隐私保护、软件代码安全、人工智能安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/liuzechao/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:46:55Z"
+}

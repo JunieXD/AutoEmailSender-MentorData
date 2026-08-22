@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5e9c9a0ce7c5e9cde5c0"
+      ],
+      "ended_at": null,
+      "id": "aff_9a755cd84c586ec48a29",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/guanjian/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5e9c9a0ce7c5e9cde5c0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9a755cd84c586ec48a29",
+      "claim_ids": [
+        "claim_5e9c9a0ce7c5e9cde5c0"
+      ],
+      "is_primary": true,
+      "normalized_value": "j.guan@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/guanjian/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "j.guan@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5e9c9a0ce7c5e9cde5c0"
+    ],
+    "email": [
+      "claim_5e9c9a0ce7c5e9cde5c0"
+    ],
+    "name": [
+      "claim_5e9c9a0ce7c5e9cde5c0"
+    ],
+    "profile_url": [
+      "claim_5e9c9a0ce7c5e9cde5c0"
+    ],
+    "recent_papers": [
+      "claim_5e9c9a0ce7c5e9cde5c0"
+    ],
+    "status": [
+      "claim_5e9c9a0ce7c5e9cde5c0"
+    ],
+    "title": [
+      "claim_5e9c9a0ce7c5e9cde5c0"
+    ]
+  },
+  "id": "mentor_28af7fe8e6ee2699196b",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5e9c9a0ce7c5e9cde5c0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "关键"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9a755cd84c586ec48a29",
+      "claim_ids": [
+        "claim_5e9c9a0ce7c5e9cde5c0"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/guanjian/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Align Your Rhythm: Generating Highly Aligned Dance Poses with Gating-Enhanced Rhythm-Aware Feature Representation",
+    "FastDrag: Manipulate Anything in One Step",
+    "Fine-grained audio feature representation with pretrained model and graph attention for traffic flow monitoring",
+    "EARL: An Elliptical Distribution aided Adaptive Rotation Label Assignment for Oriented Object Detection in Remote Sensing Images",
+    "Anomalous Sound Detection Using Self-Attention-Based Frequency Pattern Analysis of Machine Sounds",
+    "Graph Attention for Automated Audio Captioning",
+    "Anomalous Sound Detection using Spectral-Temporal Information Fusion",
+    "Association Loss for Visual Object Detection"
+  ],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/guanjian/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}

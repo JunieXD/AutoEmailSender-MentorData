@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2e7fd2137e8bbe408ef7"
+      ],
+      "ended_at": null,
+      "id": "aff_da0f84105cf0937c55c1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/xuanshichang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2e7fd2137e8bbe408ef7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_da0f84105cf0937c55c1",
+      "claim_ids": [
+        "claim_2e7fd2137e8bbe408ef7"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuanshichang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/xuanshichang",
+      "status": "current",
+      "type": "email",
+      "value": "xuanshichang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2e7fd2137e8bbe408ef7"
+    ],
+    "email": [
+      "claim_2e7fd2137e8bbe408ef7"
+    ],
+    "name": [
+      "claim_2e7fd2137e8bbe408ef7"
+    ],
+    "profile_url": [
+      "claim_2e7fd2137e8bbe408ef7"
+    ],
+    "research_directions": [
+      "claim_2e7fd2137e8bbe408ef7"
+    ],
+    "status": [
+      "claim_2e7fd2137e8bbe408ef7"
+    ],
+    "title": [
+      "claim_2e7fd2137e8bbe408ef7"
+    ]
+  },
+  "id": "mentor_974b953cf86118b4fd98",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2e7fd2137e8bbe408ef7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "玄世昌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_da0f84105cf0937c55c1",
+      "claim_ids": [
+        "claim_2e7fd2137e8bbe408ef7"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/xuanshichang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络空间安全、区块链技术、分布式人工智能、联邦学习、水声通信网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/xuanshichang",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}

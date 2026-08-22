@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_db6b340619584aa68a18"
+      ],
+      "ended_at": null,
+      "id": "aff_a1bc318727c7e6e54529",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/WUTINGTING/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_db6b340619584aa68a18"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a1bc318727c7e6e54529",
+      "claim_ids": [
+        "claim_db6b340619584aa68a18"
+      ],
+      "is_primary": true,
+      "normalized_value": "ttwu@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/WUTINGTING/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ttwu@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_db6b340619584aa68a18"
+    ],
+    "email": [
+      "claim_db6b340619584aa68a18"
+    ],
+    "name": [
+      "claim_db6b340619584aa68a18"
+    ],
+    "profile_url": [
+      "claim_db6b340619584aa68a18"
+    ],
+    "recent_papers": [
+      "claim_db6b340619584aa68a18"
+    ],
+    "research_directions": [
+      "claim_db6b340619584aa68a18"
+    ],
+    "status": [
+      "claim_db6b340619584aa68a18"
+    ]
+  },
+  "id": "mentor_130e0ff3062584b76204",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_db6b340619584aa68a18"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴婷婷"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a1bc318727c7e6e54529",
+      "claim_ids": [
+        "claim_db6b340619584aa68a18"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/WUTINGTING/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hao Zhang, Yaolin Zhu, Tingting Wu*, Siyao Cheng, Jie Liu. Model-Heterogeneous Federated Learning With Bidirectional Knowledge Distillation[J]. IEEE Transactions on Mobile Computing, 2025, 25(1): 1058-1075.(CCF-A)",
+    "Shanwen Mao, Hao Zhang, Jiasheng Li, Haoyu Qiao, Chenxin Cai, Tingting Wu, Jie Liu. No outlier channels but with outlier blocks. ICLR 2026, 已录用, CCF A",
+    "吴婷婷,於志文,徐健. 水下群体智能 [J]. 智能系统学报. 2026, 21(1): 193-214.(CCF-T2类期刊)",
+    "Tingting Wu, Xiao Ding, Hao Zhang, Jinglong Gao, Minji Tang, Li Du, Bing Qin, Ting Liu. Discrimloss: A universal loss for hard samples and incorrect samples discrimination[J]. IEEE Transactions on Multimedia, 2023:1957–1968.(CCF-A, SCI 1 区 Top, IF:9.7)",
+    "Tingting Wu, Xiao Ding, Minji Tang, Hao Zhang, Bing Qin, Ting Liu. NoisywikiHow: A Benchmark for Learning with Real-world Noisy Labels in Natural Language Processing[C]. Findings of the Association for Computational Linguistics:ACL 2023.2023:4856–4873. (CCF-A)",
+    "Tingting Wu, Xiao Ding, Hao Zhang, Minji Tang, Bing Qin, Ting Liu. Uncertainty-guided label correction with wavelet-transformed discriminative representation enhancement[J]. Neural Networks, 2024, 176:1–13.(CCF-B, SCI 2 区 Top, IF:6.3)",
+    "Tingting Wu, Xiao Ding, Minji Tang, Hao Zhang, Bing Qin, Ting Liu. STGN: An implicit regularization method for learning with noisy labels in natural language processing[C]. Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing. 2022: 7587– 7598.(CCF-B)",
+    "Hao Zhang, Tingting Wu*, Siyao Cheng, Jie Liu. CC-FedAvg: Computationally customized federated averaging[J]. IEEE Internet of Things Journal, 2023, 11(3): 4826-4841.(CCF-C,SCI 2 区 Top, IF:8.9)"
+  ],
+  "research_directions": [
+    "分布式机器学习、群智计算、水下群体智能、边缘智能、联邦学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/WUTINGTING/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:46:55Z"
+}

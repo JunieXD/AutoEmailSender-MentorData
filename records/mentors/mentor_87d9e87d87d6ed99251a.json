@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_05dd35d65c4056b47586"
+      ],
+      "ended_at": null,
+      "id": "aff_9dac8603d4ddb88f1635",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/caoyue/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_05dd35d65c4056b47586"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9dac8603d4ddb88f1635",
+      "claim_ids": [
+        "claim_05dd35d65c4056b47586"
+      ],
+      "is_primary": true,
+      "normalized_value": "cscaoyue@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/caoyue/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cscaoyue@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_05dd35d65c4056b47586"
+    ],
+    "email": [
+      "claim_05dd35d65c4056b47586"
+    ],
+    "name": [
+      "claim_05dd35d65c4056b47586"
+    ],
+    "profile_url": [
+      "claim_05dd35d65c4056b47586"
+    ],
+    "recent_papers": [
+      "claim_05dd35d65c4056b47586"
+    ],
+    "research_directions": [
+      "claim_05dd35d65c4056b47586"
+    ],
+    "status": [
+      "claim_05dd35d65c4056b47586"
+    ]
+  },
+  "id": "mentor_87d9e87d87d6ed99251a",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_05dd35d65c4056b47586"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹越"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9dac8603d4ddb88f1635",
+      "claim_ids": [
+        "claim_05dd35d65c4056b47586"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/caoyue/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Robust Noise Modeling for Spike Camera via Time-Interval Quantification and Spike-DSLR Multimodal Dataset in Low-Light Imaging. AAAI Conference on Artificial Intelligence (AAAI, CCF A), 2026",
+    "Pseudo-ISP: Learning Pseudo In-camera Signal Processing Pipeline from A Color Image Denoiser. Neurocomputing, CCF C, IF: 5.394, 2024",
+    "Physics-Guided ISO-Dependent Sensor Noise Modeling for Extreme Low-Light Photography. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR, CCF A), 2023",
+    "Misalignment Insensitive Perceptual Metric for Full Reference Image Quality Assessment. Chinese Conference on Pattern Recognition and Computer Vision (PRCV, CCF C), 2023",
+    "Incorporating Semi-Supervised and Positive-Unlabeled Learning for Boosting Full Reference Image Quality Assessment. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR, CCF A), 2022",
+    "In-training Restoration Models Matter: Data Augmentation for Degraded-reference Image Quality Assessment. ACM Multimedia (ACM MM) Workshop, CCF A Workshop, 2022",
+    "Unpaired Learning of Deep Image Denoising. European Conference on Computer Vision (ECCV, CCF B), 2020",
+    "NTIRE 2020 Challenge on Real Image Denoising: Dataset, Methods and Results. IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, CCF A Workshop, 2020"
+  ],
+  "research_directions": [
+    "计算机视觉、图像复原、智能成像、AI-ISP、低光成像、噪声建模"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/caoyue/zh_CN/index.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:46:55Z"
+}

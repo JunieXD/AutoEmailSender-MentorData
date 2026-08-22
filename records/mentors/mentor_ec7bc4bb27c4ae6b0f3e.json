@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6c495b35fd43f03c4ef8"
+      ],
+      "ended_at": null,
+      "id": "aff_f8ddff1132869c93321a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:46:55Z",
+      "organization_id": "org_auto_d2c959c592bfc3959175",
+      "source_url": "https://faculty.hrbeu.edu.cn/lirongsheng1/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6c495b35fd43f03c4ef8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f8ddff1132869c93321a",
+      "claim_ids": [
+        "claim_6c495b35fd43f03c4ef8"
+      ],
+      "is_primary": true,
+      "normalized_value": "dasheng@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:46:55Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/lirongsheng1/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dasheng@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:46:55Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6c495b35fd43f03c4ef8"
+    ],
+    "email": [
+      "claim_6c495b35fd43f03c4ef8"
+    ],
+    "name": [
+      "claim_6c495b35fd43f03c4ef8"
+    ],
+    "profile_url": [
+      "claim_6c495b35fd43f03c4ef8"
+    ],
+    "research_directions": [
+      "claim_6c495b35fd43f03c4ef8"
+    ],
+    "status": [
+      "claim_6c495b35fd43f03c4ef8"
+    ],
+    "title": [
+      "claim_6c495b35fd43f03c4ef8"
+    ]
+  },
+  "id": "mentor_ec7bc4bb27c4ae6b0f3e",
+  "last_verified_at": "2026-08-21T18:46:55Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6c495b35fd43f03c4ef8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李熔盛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f8ddff1132869c93321a",
+      "claim_ids": [
+        "claim_6c495b35fd43f03c4ef8"
+      ],
+      "observed_at": "2026-08-21T18:46:55Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/lirongsheng1/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、自然语言处理、计算机视觉、多模态信息处理等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:46:55Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/lirongsheng1/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:46:55Z"
+}
