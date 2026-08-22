@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fe24e5c2182b5043e083"
+      ],
+      "ended_at": null,
+      "id": "aff_b406c2f9521212250513",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:13Z",
+      "organization_id": "org_auto_0308bae99fd2ff7662b3",
+      "source_url": "https://jidian.cug.edu.cn/info/3061/30251.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_fe24e5c2182b5043e083"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b406c2f9521212250513",
+      "claim_ids": [
+        "claim_fe24e5c2182b5043e083"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengyiwei@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:13Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3061/30251.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chengyiwei@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:13Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fe24e5c2182b5043e083"
+    ],
+    "email": [
+      "claim_fe24e5c2182b5043e083"
+    ],
+    "name": [
+      "claim_fe24e5c2182b5043e083"
+    ],
+    "profile_url": [
+      "claim_fe24e5c2182b5043e083"
+    ],
+    "recent_papers": [
+      "claim_fe24e5c2182b5043e083"
+    ],
+    "research_directions": [
+      "claim_fe24e5c2182b5043e083"
+    ],
+    "status": [
+      "claim_fe24e5c2182b5043e083"
+    ]
+  },
+  "id": "mentor_f30435e93ef0b0991433",
+  "last_verified_at": "2026-08-21T18:52:13Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fe24e5c2182b5043e083"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程一伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b406c2f9521212250513",
+      "claim_ids": [
+        "claim_fe24e5c2182b5043e083"
+      ],
+      "observed_at": "2026-08-21T18:52:13Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3061/30251.htm"
+    }
+  ],
+  "recent_papers": [
+    "Intelligent fault diagnosis of machinery based on hybrid deep learning with multi temporal correlation feature fusion",
+    "A novel hierarchical structural pruning-multiscale feature fusion residual network for intelligent fault diagnosis",
+    "Intelligent fault diagnosis of rolling bearings based on clustering algorithm of fast search and find of density peaks",
+    "Memory-enhanced hybrid deep learning networks for remaining useful life prognostics of mechanical equipment",
+    "Deep bidirectional recurrent neural networks ensemble for remaining useful life prediction of aircraft engine",
+    "Auto-encoder quasi-recurrent neural networks for remaining useful life prediction of engineering systems",
+    "基于嵌套长短期记忆网络的机械装备剩余使用寿命预测方法",
+    "Intelligent fault diagnosis of rotating machinery based on continuous wavelet transform local binary convolutional neural network"
+  ],
+  "research_directions": [
+    "复杂装备与系统的在线监测、异常检测、状态评估、故障诊断、寿命预测及维修决策",
+    "人工智能算法研究与应用、工业大数据分析与特征挖掘、高端机械装备智能运维、复合材料结构健康监测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:13Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3061/30251.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:52:13Z"
+}
