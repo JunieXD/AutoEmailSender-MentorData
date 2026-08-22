@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1963629d30a1f97872e4"
+      ],
+      "ended_at": null,
+      "id": "aff_5ee3bf5561d5b8c95071",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:45Z",
+      "organization_id": "org_auto_d72dd1df40f62e93732a",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/848.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_1963629d30a1f97872e4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5ee3bf5561d5b8c95071",
+      "claim_ids": [
+        "claim_1963629d30a1f97872e4"
+      ],
+      "is_primary": true,
+      "normalized_value": "ningxin@semi.ac.cn",
+      "observed_at": "2026-08-21T18:53:45Z",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/848.html",
+      "status": "current",
+      "type": "email",
+      "value": "ningxin@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1963629d30a1f97872e4"
+    ],
+    "email": [
+      "claim_1963629d30a1f97872e4"
+    ],
+    "name": [
+      "claim_1963629d30a1f97872e4"
+    ],
+    "profile_url": [
+      "claim_1963629d30a1f97872e4"
+    ],
+    "recent_papers": [
+      "claim_1963629d30a1f97872e4"
+    ],
+    "research_directions": [
+      "claim_1963629d30a1f97872e4"
+    ],
+    "status": [
+      "claim_1963629d30a1f97872e4"
+    ],
+    "title": [
+      "claim_1963629d30a1f97872e4"
+    ]
+  },
+  "id": "mentor_09a3d584c9a3d39f8d62",
+  "last_verified_at": "2026-08-21T18:53:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1963629d30a1f97872e4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宁欣"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5ee3bf5561d5b8c95071",
+      "claim_ids": [
+        "claim_1963629d30a1f97872e4"
+      ],
+      "observed_at": "2026-08-21T18:53:45Z",
+      "status": "current",
+      "url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/848.html"
+    }
+  ],
+  "recent_papers": [
+    "High-Fidelity Generation of Lane Scenes under Adverse Weather and Lighting Conditions without Re-annotation",
+    "Unleashing Foundation Vision Models: Adaptive Transfer for Diverse Data-Limited Scientific Domains",
+    "Flexible-weighted Chamfer Distance: Enhanced Objective Function for Point Cloud Completion",
+    "DNGaussian++: Improving Sparse-View Gaussian Radiance Fields with Depth Normalization",
+    "Dynamic Personalized Federated Learning for Cross-spectral Palmprint Recognition",
+    "Cross-modal knowledge transfer for 3D point clouds via graph offset prediction",
+    "Brain-Inspired Fast-and Slow-Update Prompt Tuning for Few-Shot Class-Incremental Learning",
+    "Pedestrian 3D Shape Understanding for Person Re-Identification via Multi-View Learning"
+  ],
+  "research_directions": [
+    "认知计算理论、智能芯片算法与硬件电路设计、AI for Science"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:45Z",
+  "status_reason": null,
+  "status_source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/848.html",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:53:45Z"
+}

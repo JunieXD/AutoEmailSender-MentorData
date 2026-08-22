@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a109b4b76e407bcf856a"
+      ],
+      "ended_at": null,
+      "id": "aff_3abb6cb5f9fc9f387e96",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:45Z",
+      "organization_id": "org_auto_67de9cfed299fa62168b",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/705.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_a109b4b76e407bcf856a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3abb6cb5f9fc9f387e96",
+      "claim_ids": [
+        "claim_a109b4b76e407bcf856a"
+      ],
+      "is_primary": true,
+      "normalized_value": "xgyang@semi.ac.cn",
+      "observed_at": "2026-08-21T18:53:45Z",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/705.html",
+      "status": "current",
+      "type": "email",
+      "value": "xgyang@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a109b4b76e407bcf856a"
+    ],
+    "email": [
+      "claim_a109b4b76e407bcf856a"
+    ],
+    "name": [
+      "claim_a109b4b76e407bcf856a"
+    ],
+    "profile_url": [
+      "claim_a109b4b76e407bcf856a"
+    ],
+    "research_directions": [
+      "claim_a109b4b76e407bcf856a"
+    ],
+    "status": [
+      "claim_a109b4b76e407bcf856a"
+    ],
+    "title": [
+      "claim_a109b4b76e407bcf856a"
+    ]
+  },
+  "id": "mentor_bd6e8d5987bf237060bf",
+  "last_verified_at": "2026-08-21T18:53:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a109b4b76e407bcf856a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨晓光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3abb6cb5f9fc9f387e96",
+      "claim_ids": [
+        "claim_a109b4b76e407bcf856a"
+      ],
+      "observed_at": "2026-08-21T18:53:45Z",
+      "status": "current",
+      "url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/705.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "低维结构半导体材料与量子材料",
+    "量子点激光器与片上集成光电芯片",
+    "量子点中间能带太阳电池",
+    "纳米线电子器件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:45Z",
+  "status_reason": null,
+  "status_source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/705.html",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:53:45Z"
+}

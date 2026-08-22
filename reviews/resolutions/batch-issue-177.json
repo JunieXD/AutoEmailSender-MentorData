@@ -1,0 +1,1720 @@
+{
+  "created_organization_ids": [
+    "org_auto_07078374a9fd861e29d0",
+    "org_auto_173db220cdff39fa3667",
+    "org_auto_1a56572603bbccee4d1c",
+    "org_auto_24c80eefc643fe11c31d",
+    "org_auto_4e261bd76f0968740849",
+    "org_auto_53cb6d59c9c84d5efa3f",
+    "org_auto_564a19fef62a963afd1b",
+    "org_auto_615d21b6a930fc3d1507",
+    "org_auto_67de9cfed299fa62168b",
+    "org_auto_75bc3fe0464b11fc8a13",
+    "org_auto_75cdbd384df48004789c",
+    "org_auto_785d675021f31412b5c4",
+    "org_auto_7861a5e352e422d06de2",
+    "org_auto_7982cbf6b4f88c84bb7e",
+    "org_auto_8f15a048615a137353a2",
+    "org_auto_92ee63ac6b6739fa7144",
+    "org_auto_ae51ac78b51cf490f1c7",
+    "org_auto_ba64ba9f97eface01645",
+    "org_auto_c0fd91c01198918a7b78",
+    "org_auto_d41a2739d9eb6238d938",
+    "org_auto_d72dd1df40f62e93732a"
+  ],
+  "decided_at": "2026-08-22T08:50:32Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0045545a648376a7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体芯片物理与技术全国重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_0a6fb1f647aad1cc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_177_row_1",
+          "reason": "现有任职关系冲突且无双聘或调动证据，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_0dc680fb8e2b902a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体超晶格国家重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_1a3b6a946e5dc5cb",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_1dd34fb3fd3f730c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能与高速电路实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_36cacc4fe877b36e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "集成技术工程研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4c84d703f30acd1f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体物理实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4d739cbea97b7a43",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "光电系统实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5ad56b21ad67cc93",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "光电材料与器件全国重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5ccf22f7ddc362a5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "全固态光源实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5f30d090881ff124",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "光电子材料与器件重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_731637a8e62f2255",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体材料重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_75e8dfb88aea760b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "光电子研究发展中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_760ec8921a1e02da",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "照明研发中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_77c85294c4497a6a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体集成技术工程研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7b7520c18f9ae097",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "超晶格国家重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7cfee87df14afb14",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体材料科学重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8dde6fb99c6d2c87",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_912a3ffa1cf33e22",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_177_row_3",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9c1b01581a9f3f78",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "纳米光电子实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_a603c2a2305e8af4",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "超晶格国家重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ae393e9902e838b9",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "光电系统实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b12f6239f07a07c7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体芯片物理与技术全国重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b3f40ceb6758ffc5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "全固态光源实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b8b517f214a5c37a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体材料科学重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ba38474611b7f4a5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体超晶格国家重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_cca47bd2c4ae70f8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "半导体照明研发中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d7cb1b83b5c40caa",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "全固态光源实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_df94a9f66d41476f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "超晶格室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_dff4155ecd96cb6b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_177_row_2",
+          "reason": "现有任职关系冲突且无双聘或调动证据，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e02d8bb9819d0272",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "光电子器件国家工程研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e8d73fa7e7a271a6",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "全固态光源实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ec305ba6176d89af",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_fccc21887596d3a7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3a48d512750510086a85",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [
+            "bdt.semi.ac.cn"
+          ],
+          "canonical_name": "半导体研究所",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "institute",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "材料重点实验室",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "laboratory",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_177",
+  "invalid_rows": [],
+  "issue": {
+    "number": 177,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/177"
+  },
+  "manifest_sha256": "efd06a6613e50ddbd2a6b0cf7eb0fb382ef607d2f844b60063e487f4ea09b06e",
+  "mapped_proposal_ids": [
+    "proposal_issue_177_row_10",
+    "proposal_issue_177_row_100",
+    "proposal_issue_177_row_101",
+    "proposal_issue_177_row_102",
+    "proposal_issue_177_row_103",
+    "proposal_issue_177_row_104",
+    "proposal_issue_177_row_105",
+    "proposal_issue_177_row_106",
+    "proposal_issue_177_row_107",
+    "proposal_issue_177_row_108",
+    "proposal_issue_177_row_109",
+    "proposal_issue_177_row_11",
+    "proposal_issue_177_row_110",
+    "proposal_issue_177_row_111",
+    "proposal_issue_177_row_112",
+    "proposal_issue_177_row_113",
+    "proposal_issue_177_row_114",
+    "proposal_issue_177_row_115",
+    "proposal_issue_177_row_116",
+    "proposal_issue_177_row_117",
+    "proposal_issue_177_row_118",
+    "proposal_issue_177_row_119",
+    "proposal_issue_177_row_12",
+    "proposal_issue_177_row_13",
+    "proposal_issue_177_row_14",
+    "proposal_issue_177_row_15",
+    "proposal_issue_177_row_16",
+    "proposal_issue_177_row_17",
+    "proposal_issue_177_row_18",
+    "proposal_issue_177_row_19",
+    "proposal_issue_177_row_20",
+    "proposal_issue_177_row_21",
+    "proposal_issue_177_row_22",
+    "proposal_issue_177_row_23",
+    "proposal_issue_177_row_24",
+    "proposal_issue_177_row_25",
+    "proposal_issue_177_row_26",
+    "proposal_issue_177_row_27",
+    "proposal_issue_177_row_28",
+    "proposal_issue_177_row_29",
+    "proposal_issue_177_row_30",
+    "proposal_issue_177_row_31",
+    "proposal_issue_177_row_32",
+    "proposal_issue_177_row_33",
+    "proposal_issue_177_row_34",
+    "proposal_issue_177_row_35",
+    "proposal_issue_177_row_36",
+    "proposal_issue_177_row_37",
+    "proposal_issue_177_row_38",
+    "proposal_issue_177_row_39",
+    "proposal_issue_177_row_4",
+    "proposal_issue_177_row_40",
+    "proposal_issue_177_row_41",
+    "proposal_issue_177_row_42",
+    "proposal_issue_177_row_43",
+    "proposal_issue_177_row_44",
+    "proposal_issue_177_row_45",
+    "proposal_issue_177_row_46",
+    "proposal_issue_177_row_47",
+    "proposal_issue_177_row_48",
+    "proposal_issue_177_row_49",
+    "proposal_issue_177_row_5",
+    "proposal_issue_177_row_50",
+    "proposal_issue_177_row_51",
+    "proposal_issue_177_row_52",
+    "proposal_issue_177_row_53",
+    "proposal_issue_177_row_54",
+    "proposal_issue_177_row_55",
+    "proposal_issue_177_row_56",
+    "proposal_issue_177_row_57",
+    "proposal_issue_177_row_58",
+    "proposal_issue_177_row_59",
+    "proposal_issue_177_row_6",
+    "proposal_issue_177_row_60",
+    "proposal_issue_177_row_61",
+    "proposal_issue_177_row_62",
+    "proposal_issue_177_row_63",
+    "proposal_issue_177_row_64",
+    "proposal_issue_177_row_65",
+    "proposal_issue_177_row_66",
+    "proposal_issue_177_row_67",
+    "proposal_issue_177_row_68",
+    "proposal_issue_177_row_69",
+    "proposal_issue_177_row_7",
+    "proposal_issue_177_row_70",
+    "proposal_issue_177_row_71",
+    "proposal_issue_177_row_72",
+    "proposal_issue_177_row_73",
+    "proposal_issue_177_row_74",
+    "proposal_issue_177_row_75",
+    "proposal_issue_177_row_76",
+    "proposal_issue_177_row_77",
+    "proposal_issue_177_row_78",
+    "proposal_issue_177_row_79",
+    "proposal_issue_177_row_8",
+    "proposal_issue_177_row_80",
+    "proposal_issue_177_row_81",
+    "proposal_issue_177_row_82",
+    "proposal_issue_177_row_83",
+    "proposal_issue_177_row_84",
+    "proposal_issue_177_row_85",
+    "proposal_issue_177_row_86",
+    "proposal_issue_177_row_87",
+    "proposal_issue_177_row_88",
+    "proposal_issue_177_row_89",
+    "proposal_issue_177_row_9",
+    "proposal_issue_177_row_90",
+    "proposal_issue_177_row_91",
+    "proposal_issue_177_row_92",
+    "proposal_issue_177_row_93",
+    "proposal_issue_177_row_94",
+    "proposal_issue_177_row_95",
+    "proposal_issue_177_row_96",
+    "proposal_issue_177_row_97",
+    "proposal_issue_177_row_98",
+    "proposal_issue_177_row_99"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 184,
+  "rejected_proposal_ids": [
+    "proposal_issue_177_row_1",
+    "proposal_issue_177_row_2",
+    "proposal_issue_177_row_3"
+  ],
+  "review_comment_id": 5379405805,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
