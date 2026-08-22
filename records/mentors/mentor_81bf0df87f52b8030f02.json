@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8eaeba9526d75c215d4f"
+      ],
+      "ended_at": null,
+      "id": "aff_32851d7c5ac31d3f8d05",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie-ce.shu.edu.cn/info/1091/1072.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8eaeba9526d75c215d4f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_32851d7c5ac31d3f8d05",
+      "claim_ids": [
+        "claim_8eaeba9526d75c215d4f"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanzansun@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie-ce.shu.edu.cn/info/1091/1072.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yanzansun@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8eaeba9526d75c215d4f"
+    ],
+    "email": [
+      "claim_8eaeba9526d75c215d4f"
+    ],
+    "name": [
+      "claim_8eaeba9526d75c215d4f"
+    ],
+    "profile_url": [
+      "claim_8eaeba9526d75c215d4f"
+    ],
+    "recent_papers": [
+      "claim_8eaeba9526d75c215d4f"
+    ],
+    "research_directions": [
+      "claim_8eaeba9526d75c215d4f"
+    ],
+    "status": [
+      "claim_8eaeba9526d75c215d4f"
+    ],
+    "title": [
+      "claim_8eaeba9526d75c215d4f"
+    ]
+  },
+  "id": "mentor_81bf0df87f52b8030f02",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8eaeba9526d75c215d4f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙彦赞"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_32851d7c5ac31d3f8d05",
+      "claim_ids": [
+        "claim_8eaeba9526d75c215d4f"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie-ce.shu.edu.cn/info/1091/1072.htm"
+    }
+  ],
+  "recent_papers": [
+    "Energy Optimization of Multi-Task DNN Inference in MEC-Assisted XR Devices: A Lyapunov-Guided Reinforcement Learning Approach",
+    "QoE Prediction in RIC-Assisted Wireless Real-Time Video Transmission System With Transformer",
+    "Privacy-Preserving Computation Offloading and 3-D Trajectory Optimization in Multi-UAV-Assisted MEC System",
+    "Toward Dynamic Resource Allocation and Client Scheduling in Hierarchical Federated Learning: A Two-Phase Deep Reinforcement Learning Approach",
+    "Intelligent Interference Coordination Mode Selection for Clustered Cell-Free Networks",
+    "A Large-Scale Energy Efficient Time-Domain Pilot Muting Mechanism for Non-Stationary Channels: A Deep Reinforcement Learning Approach",
+    "A Cluster-Based Energy-Efficient Resource Management Scheme With QoS Requirement for Ultra-Dense Networks",
+    "A novel energy efficient two-dimensional pilot muting mechanism for non-stationary channel fading environment"
+  ],
+  "research_directions": [
+    "无线通信资源管理/无线+AI、边缘智能网络、AI内生6G关键技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie-ce.shu.edu.cn/info/1091/1072.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

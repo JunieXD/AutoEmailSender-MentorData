@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6dc41758c19ad3b9df33"
+      ],
+      "ended_at": null,
+      "id": "aff_6630fe21adbe623c4973",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_bc299064b9a833135182",
+      "source_url": "https://scie-ie.shu.edu.cn/info/1078/1183.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_6dc41758c19ad3b9df33"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6630fe21adbe623c4973",
+      "claim_ids": [
+        "claim_6dc41758c19ad3b9df33"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiahua@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie-ie.shu.edu.cn/info/1078/1183.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiahua@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6dc41758c19ad3b9df33"
+    ],
+    "email": [
+      "claim_6dc41758c19ad3b9df33"
+    ],
+    "name": [
+      "claim_6dc41758c19ad3b9df33"
+    ],
+    "profile_url": [
+      "claim_6dc41758c19ad3b9df33"
+    ],
+    "recent_papers": [
+      "claim_6dc41758c19ad3b9df33"
+    ],
+    "research_directions": [
+      "claim_6dc41758c19ad3b9df33"
+    ],
+    "status": [
+      "claim_6dc41758c19ad3b9df33"
+    ],
+    "title": [
+      "claim_6dc41758c19ad3b9df33"
+    ]
+  },
+  "id": "mentor_d32398533034b371eb06",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6dc41758c19ad3b9df33"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "华夏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6630fe21adbe623c4973",
+      "claim_ids": [
+        "claim_6dc41758c19ad3b9df33"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie-ie.shu.edu.cn/info/1078/1183.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hua X, Wang Y, Wang S. et al. Ultra-compact snapshot spectral light-field imaging[J]. Nature Communications 13, 2732 (2022).",
+    "Hua X, Cai Y, Zhou Y, et al. Leukocyte Super-Resolution via Geometry Prior and Structural Consistency [J]. Journal of Biomedical Optics, 25(10), 106501 (2020).",
+    "Hua X, Yang C, Huang Y, et al. Localizing and Characterizing Colloidal Particles Scattering Using Lens-free Holographic Microscopy[J]. Chinese Physics Letters, 2019, 36(1).",
+    "Zhou Y*,Hua X*, Zhang Z, et al. Wirtinger gradient descent optimization for reducing Gaussian noise in lensless microscopy[J]. Optics and Lasers in Engineering (2020), 134: 106131.(*: equal contribution)",
+    "Xu B, Li HM, Hua X, et al. Metalens-integrated compact imaging devices for wide-field microscopy[J]. Advanced Photonics, 2(6), 066004 (2020)."
+  ],
+  "research_directions": [
+    "交叉运用光学、信号处理、机器学习等多门学科,将光学调控与智能感知有机结合,突破经典成像模型的固有局限,实现微型化智能化的多维多尺度视觉信息的捕获与重构。具体研究内容包括:近眼计算显示(相位信息采集与重建),微纳光学计算摄影(光谱信息采集与重建)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie-ie.shu.edu.cn/info/1078/1183.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

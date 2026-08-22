@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_441a98e92c2fc737fb1a"
+      ],
+      "ended_at": null,
+      "id": "aff_d9a643954e8028859e69",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_30bac2891b4e2c3e6071",
+      "source_url": "https://scie.shu.edu.cn/Prof/zhangq.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_441a98e92c2fc737fb1a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d9a643954e8028859e69",
+      "claim_ids": [
+        "claim_441a98e92c2fc737fb1a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangq@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie.shu.edu.cn/Prof/zhangq.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangq@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_441a98e92c2fc737fb1a"
+    ],
+    "email": [
+      "claim_441a98e92c2fc737fb1a"
+    ],
+    "name": [
+      "claim_441a98e92c2fc737fb1a"
+    ],
+    "profile_url": [
+      "claim_441a98e92c2fc737fb1a"
+    ],
+    "recent_papers": [
+      "claim_441a98e92c2fc737fb1a"
+    ],
+    "research_directions": [
+      "claim_441a98e92c2fc737fb1a"
+    ],
+    "status": [
+      "claim_441a98e92c2fc737fb1a"
+    ],
+    "title": [
+      "claim_441a98e92c2fc737fb1a"
+    ]
+  },
+  "id": "mentor_5f3ca577fbd5924dde3e",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_441a98e92c2fc737fb1a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张麒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d9a643954e8028859e69",
+      "claim_ids": [
+        "claim_441a98e92c2fc737fb1a"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie.shu.edu.cn/Prof/zhangq.htm"
+    }
+  ],
+  "recent_papers": [
+    "Scribble-Supervised Multi-Organ Segmentation via Epistemic-Driven Hardness-Adaptive Focusing",
+    "MambaEviScrib: Mamba and Evidence-Guided Consistency Enhance CNN Robustness for Scribble-Based Weakly Supervised Ultrasound Image Segmentation",
+    "Spatial-aware dual-regional image editing with latent diffusion for generating synthetic images to augment ultrasonic tumor diagnosis",
+    "Multi-Organ Foundation Model for Universal Ultrasound Image Segmentation with Task Prompt and Anatomical Prior",
+    "Cross-modality segmentation of ultrasound image with generative adversarial network and dual normalization network",
+    "ABUS-Net: Graph convolutional network with multi-scale features for breast cancer diagnosis using automated breast ultrasound",
+    "Artificial intelligence-assisted diagnosis of glomerular nephritis using a pathological image analysis approach: a multicentre model development and validation study",
+    "SAM-IE: SAM-based image enhancement for facilitating medical image diagnosis with segmentation foundation model"
+  ],
+  "research_directions": [
+    "医学图像分析、计算机视觉、智能诊疗技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie.shu.edu.cn/Prof/zhangq.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

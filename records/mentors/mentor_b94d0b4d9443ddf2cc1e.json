@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_426d683d463414805b43"
+      ],
+      "ended_at": null,
+      "id": "aff_6f4ae3edb3dcff41ce18",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie.shu.edu.cn/Prof/anping.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_426d683d463414805b43"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6f4ae3edb3dcff41ce18",
+      "claim_ids": [
+        "claim_426d683d463414805b43"
+      ],
+      "is_primary": true,
+      "normalized_value": "anping@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie.shu.edu.cn/Prof/anping.htm",
+      "status": "current",
+      "type": "email",
+      "value": "anping@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_426d683d463414805b43"
+    ],
+    "email": [
+      "claim_426d683d463414805b43"
+    ],
+    "name": [
+      "claim_426d683d463414805b43"
+    ],
+    "profile_url": [
+      "claim_426d683d463414805b43"
+    ],
+    "recent_papers": [
+      "claim_426d683d463414805b43"
+    ],
+    "research_directions": [
+      "claim_426d683d463414805b43"
+    ],
+    "status": [
+      "claim_426d683d463414805b43"
+    ],
+    "title": [
+      "claim_426d683d463414805b43"
+    ]
+  },
+  "id": "mentor_b94d0b4d9443ddf2cc1e",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_426d683d463414805b43"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "安平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6f4ae3edb3dcff41ce18",
+      "claim_ids": [
+        "claim_426d683d463414805b43"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie.shu.edu.cn/Prof/anping.htm"
+    }
+  ],
+  "recent_papers": [
+    "Light Field Compression Using Global Multiplane, Representation and Two-step Prediction",
+    "Full Reference Light Field Image Quality Evaluation Based on Angular-Spatial Character",
+    "Multi-Scale Frequency Reconstruction for Guided Depth Map Super-Resolution via Deep Residual Network",
+    "Post-processing for Intra Coding Through Perceptual Adversarial Learning and Progressive Refinement",
+    "Video Intra Prediction Using Convolutional Encoder Decoder Network",
+    "Content-Based Light Field Image Compression Method with Gaussian Process Regression",
+    "Light-field Compression Using A Pair of Steps and Depth Estimation",
+    "A Modified Just Noticeable Depth Difference Model Built in Perceived Depth Space"
+  ],
+  "research_directions": [
+    "光场数据压缩与重建、智能视频编码、沉浸式视频(光场/3D/VR/AR)内容生成与质量评价、计算摄像与智能视觉技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie.shu.edu.cn/Prof/anping.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

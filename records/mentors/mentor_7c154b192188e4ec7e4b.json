@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4234b3ebd86409d06624"
+      ],
+      "ended_at": null,
+      "id": "aff_2990ab15308407f27be1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie.shu.edu.cn/Prof/renyl.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4234b3ebd86409d06624"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2990ab15308407f27be1",
+      "claim_ids": [
+        "claim_4234b3ebd86409d06624"
+      ],
+      "is_primary": true,
+      "normalized_value": "renyanli@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie.shu.edu.cn/Prof/renyl.htm",
+      "status": "current",
+      "type": "email",
+      "value": "renyanli@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4234b3ebd86409d06624"
+    ],
+    "email": [
+      "claim_4234b3ebd86409d06624"
+    ],
+    "name": [
+      "claim_4234b3ebd86409d06624"
+    ],
+    "profile_url": [
+      "claim_4234b3ebd86409d06624"
+    ],
+    "recent_papers": [
+      "claim_4234b3ebd86409d06624"
+    ],
+    "research_directions": [
+      "claim_4234b3ebd86409d06624"
+    ],
+    "status": [
+      "claim_4234b3ebd86409d06624"
+    ],
+    "title": [
+      "claim_4234b3ebd86409d06624"
+    ]
+  },
+  "id": "mentor_7c154b192188e4ec7e4b",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4234b3ebd86409d06624"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任艳丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2990ab15308407f27be1",
+      "claim_ids": [
+        "claim_4234b3ebd86409d06624"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie.shu.edu.cn/Prof/renyl.htm"
+    }
+  ],
+  "recent_papers": [
+    "Privacy enhanced federated prompt tuning against backdoor attack. IEEE Transactions on Cloud Computing, doi: 10.1109/TCC.2026.3660272, 2026.",
+    "Private sampling of latent diffusion models for encrypted prompt. IEEE Transactions on Circuits and Systems for Video Technology, 35(6), 5833-5843, 2025.",
+    "EPCNN: Efficient and practical privacy-preserving convolutional neural network inference. IEEE Transactions on Network Science and Engineering, 12(3), 1567-1580, 2025.",
+    "VPFLI: Verifiable privacy-preserving federated learning with irregular users based on single server. IEEE Transactions on Services Computing, 18(2), 1124-1136, 2025.",
+    "PurifyFL: Non-interactive privacy-preserving federated learning against poisoning attacks based on single server. IEEE Transactions on Emerging Topics in Computational Intelligence, 9(3), 2232-2243, 2025.",
+    "PPNNI: Privacy-preserving neural network inference against adversarial example attack. IEEE Transactions on Services Computing, 17(6), 4083-4096, 2024.",
+    "Verifiable privacy-enhanced rotation invariant LBP feature extraction in fog computing. IEEE Transactions on Industrial Informatics, 19(12), 11518-11530, 2023.",
+    "Outsourcing LDA-based face recognition to an untrusted cloud. IEEE Transactions on Dependable and Secure Computing, 20(3), 2058-2070, 2023."
+  ],
+  "research_directions": [
+    "公钥密码学、区块链安全、外包计算、AI安全、信息安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie.shu.edu.cn/Prof/renyl.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}

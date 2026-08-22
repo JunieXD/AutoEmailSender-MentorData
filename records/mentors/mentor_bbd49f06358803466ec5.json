@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3ecc80e07ab1a57f1dbb"
+      ],
+      "ended_at": null,
+      "id": "aff_87262f8fa9014cdb392f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:41Z",
+      "organization_id": "org_auto_9ed683df66dfb56b2c0c",
+      "source_url": "https://scie-ce.shu.edu.cn/info/1092/1091.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3ecc80e07ab1a57f1dbb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_87262f8fa9014cdb392f",
+      "claim_ids": [
+        "claim_3ecc80e07ab1a57f1dbb"
+      ],
+      "is_primary": true,
+      "normalized_value": "cshan@shu.edu.cn",
+      "observed_at": "2026-08-21T18:49:41Z",
+      "source_url": "https://scie-ce.shu.edu.cn/info/1092/1091.htm",
+      "status": "current",
+      "type": "email",
+      "value": "cshan@shu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:41Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ],
+    "email": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ],
+    "name": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ],
+    "profile_url": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ],
+    "recent_papers": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ],
+    "research_directions": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ],
+    "status": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ],
+    "title": [
+      "claim_3ecc80e07ab1a57f1dbb"
+    ]
+  },
+  "id": "mentor_bbd49f06358803466ec5",
+  "last_verified_at": "2026-08-21T18:49:41Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3ecc80e07ab1a57f1dbb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹姗"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_87262f8fa9014cdb392f",
+      "claim_ids": [
+        "claim_3ecc80e07ab1a57f1dbb"
+      ],
+      "observed_at": "2026-08-21T18:49:41Z",
+      "status": "current",
+      "url": "https://scie-ce.shu.edu.cn/info/1092/1091.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Critical-Set-Based Multi-Bit Successive Cancellation List Decoder for Polar Codes: Algorithm and Implementation",
+    "Hybrid-Grained Pruning and Hardware Acceleration for Convolutional Neural Networks",
+    "Dynamically Configurable FIR Filters Based on Serial MACs and Systolic Arrays",
+    "SPMD-Based Mixed-Radix FFT and Channel Estimation for Energy-Efficient O-RAN",
+    "Parallel Computing for Energy-Efficient Baseband Processing in O-RAN: Synchronization and OFDM Implementation Based on SPMD",
+    "Loop-Tiling Based Compiling Optimization for CNN Accelerators",
+    "An FPGA-based Low Latency Sensing and Communication Platform for Collaborative Autonomous Driving",
+    "A Domain Specific Computing Architecture for Open 6G Baseband Signal Processing"
+  ],
+  "research_directions": [
+    "数字大规模集成电路设计、片上系统(SoC)设计",
+    "领域定制处理器架构、并行计算",
+    "数字无线通信系统、基带处理器、无线信道编译码器设计",
+    "深度学习、神经网络加速芯片、模型压缩与网络模型轻量化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:41Z",
+  "status_reason": null,
+  "status_source_url": "https://scie-ce.shu.edu.cn/info/1092/1091.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:41Z"
+}
