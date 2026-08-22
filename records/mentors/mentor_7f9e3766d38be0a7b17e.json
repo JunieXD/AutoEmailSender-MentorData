@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c8a05c8972d7aced9a9f"
+      ],
+      "ended_at": null,
+      "id": "aff_d2b7f6b27ff59ac86cf7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:53Z",
+      "organization_id": "org_auto_9767e4eb202281c5bd23",
+      "source_url": "https://jidian.cug.edu.cn/info/3031/29981.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c8a05c8972d7aced9a9f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d2b7f6b27ff59ac86cf7",
+      "claim_ids": [
+        "claim_c8a05c8972d7aced9a9f"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoyongni@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:53Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3031/29981.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoyongni@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c8a05c8972d7aced9a9f"
+    ],
+    "email": [
+      "claim_c8a05c8972d7aced9a9f"
+    ],
+    "name": [
+      "claim_c8a05c8972d7aced9a9f"
+    ],
+    "profile_url": [
+      "claim_c8a05c8972d7aced9a9f"
+    ],
+    "recent_papers": [
+      "claim_c8a05c8972d7aced9a9f"
+    ],
+    "research_directions": [
+      "claim_c8a05c8972d7aced9a9f"
+    ],
+    "status": [
+      "claim_c8a05c8972d7aced9a9f"
+    ],
+    "title": [
+      "claim_c8a05c8972d7aced9a9f"
+    ]
+  },
+  "id": "mentor_7f9e3766d38be0a7b17e",
+  "last_verified_at": "2026-08-21T18:52:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c8a05c8972d7aced9a9f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "倪效勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d2b7f6b27ff59ac86cf7",
+      "claim_ids": [
+        "claim_c8a05c8972d7aced9a9f"
+      ],
+      "observed_at": "2026-08-21T18:52:53Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3031/29981.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xiaoyong Ni, Hongjian Zhang, Dianhong Wang, Jian Luo. Implementation of dynamic reconfigurable interpolator for open architecture CNC by using FPGA, International Journal of Embedded Systems, 2017, 9: p45-53(EI)",
+    "Xiaoyong Ni, Dianhong Wang, Yongbo Li. Real-time NURBS curve interpolator based on section, International Journal of Advanced Manufacturing Technology,2011,54:p239-249(SCI/EI)",
+    "Xiaoyong Ni, Dapeng Luo, Yong Yang. Design of pulse detection system for measurement while drilling based on GRNN, IEEE international conference of information and automation, 2010: p2182-2185(EI)",
+    "Xiaoyong Ni, Dianhong Wang, Hongjian Zhang. Application of neural network data fusion algorithm in measurement circuit, 3rd IEEE conference on industrial electronic and application, 2008: p12-17(EI)",
+    "Dianhong Wang, Xiaoyong Ni Design of small reconfigurable embedded numerical control system, Proceeding of the international conference on embedded software and system, 2008:p415-421(EI)",
+    "倪效勇等,基于SOPC技术的传感器非线性软件校正的实现,传感器与微系统,2008: p22-24",
+    "倪效勇等,一种适于函数逼近的混合RBF专家网络快速算法,微电子学与计算机,2008: p17-20"
+  ],
+  "research_directions": [
+    "海洋探测装置、地质分析仪器、基于ARM/DSP/FPGA/单片机的数字系统设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:53Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3031/29981.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:53Z"
+}

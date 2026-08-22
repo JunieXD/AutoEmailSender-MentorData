@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_da56a88ae14ff618e159"
+      ],
+      "ended_at": null,
+      "id": "aff_7246e6706d00c267e04e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:53Z",
+      "organization_id": "org_auto_9767e4eb202281c5bd23",
+      "source_url": "https://jidian.cug.edu.cn/info/3161/30911.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_da56a88ae14ff618e159"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7246e6706d00c267e04e",
+      "claim_ids": [
+        "claim_da56a88ae14ff618e159"
+      ],
+      "is_primary": true,
+      "normalized_value": "ym_cug@126.com",
+      "observed_at": "2026-08-21T18:52:53Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3161/30911.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ym_cug@126.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_da56a88ae14ff618e159"
+    ],
+    "email": [
+      "claim_da56a88ae14ff618e159"
+    ],
+    "name": [
+      "claim_da56a88ae14ff618e159"
+    ],
+    "profile_url": [
+      "claim_da56a88ae14ff618e159"
+    ],
+    "research_directions": [
+      "claim_da56a88ae14ff618e159"
+    ],
+    "status": [
+      "claim_da56a88ae14ff618e159"
+    ],
+    "title": [
+      "claim_da56a88ae14ff618e159"
+    ]
+  },
+  "id": "mentor_4f3c7685da963a592d5e",
+  "last_verified_at": "2026-08-21T18:52:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_da56a88ae14ff618e159"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨敏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7246e6706d00c267e04e",
+      "claim_ids": [
+        "claim_da56a88ae14ff618e159"
+      ],
+      "observed_at": "2026-08-21T18:52:53Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3161/30911.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "信号处理(图像处理、目标检测与跟踪算法、智能视频监控)",
+    "模式识别(目标检测与跟踪算法、智能视频监控)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:53Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3161/30911.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:52:53Z"
+}

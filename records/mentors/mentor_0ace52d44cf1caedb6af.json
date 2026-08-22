@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a0ba1099ec51953cc782"
+      ],
+      "ended_at": null,
+      "id": "aff_c057bb45bd07d3e5e789",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:53Z",
+      "organization_id": "org_auto_9767e4eb202281c5bd23",
+      "source_url": "https://jidian.cug.edu.cn/info/3151/31001.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a0ba1099ec51953cc782"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c057bb45bd07d3e5e789",
+      "claim_ids": [
+        "claim_a0ba1099ec51953cc782"
+      ],
+      "is_primary": true,
+      "normalized_value": "xingmei_li@163.com",
+      "observed_at": "2026-08-21T18:52:53Z",
+      "source_url": "https://jidian.cug.edu.cn/info/3151/31001.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xingmei_li@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:53Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a0ba1099ec51953cc782"
+    ],
+    "email": [
+      "claim_a0ba1099ec51953cc782"
+    ],
+    "name": [
+      "claim_a0ba1099ec51953cc782"
+    ],
+    "profile_url": [
+      "claim_a0ba1099ec51953cc782"
+    ],
+    "recent_papers": [
+      "claim_a0ba1099ec51953cc782"
+    ],
+    "research_directions": [
+      "claim_a0ba1099ec51953cc782"
+    ],
+    "status": [
+      "claim_a0ba1099ec51953cc782"
+    ],
+    "title": [
+      "claim_a0ba1099ec51953cc782"
+    ]
+  },
+  "id": "mentor_0ace52d44cf1caedb6af",
+  "last_verified_at": "2026-08-21T18:52:53Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a0ba1099ec51953cc782"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李杏梅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c057bb45bd07d3e5e789",
+      "claim_ids": [
+        "claim_a0ba1099ec51953cc782"
+      ],
+      "observed_at": "2026-08-21T18:52:53Z",
+      "status": "current",
+      "url": "https://jidian.cug.edu.cn/info/3151/31001.htm"
+    }
+  ],
+  "recent_papers": [
+    "li xingmei,Yan guoping, chen liang ,image denoisebased on soft_threshold and edge enhancement,dmamh2007(EI)",
+    "李杏梅等,神经网络在建立图像退化模型中的应用,电子测量技术,2008",
+    "李杏梅等,重复利用噪声信息的图像去噪的研究,微计算机信息2008",
+    "李杏梅等,基于自适应软阈值和边缘增强的图像去噪,电子测量技术 2008",
+    "li xingmei, A new method of image denoise using contourlet transform,esiat2009(EI)",
+    "李杏梅等,基于无下采样Contourlet的图像边缘检测,计算机工程与应用,2010",
+    "Li xingmei, The research of wavelet reconstruction with incomplete signal,esiat2010(EI)",
+    "Li xingmei ,An Improved algorithm of Bayesian shrinkthreshold in image denoising,iccsit2010(EI)"
+  ],
+  "research_directions": [
+    "数字信号处理:小波分析以及应用",
+    "遥感图像分析:遥感图像分类,遥感图像元分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:53Z",
+  "status_reason": null,
+  "status_source_url": "https://jidian.cug.edu.cn/info/3151/31001.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:53Z"
+}
