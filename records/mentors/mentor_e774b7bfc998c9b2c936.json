@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d26af66a07b428b9011f"
+      ],
+      "ended_at": null,
+      "id": "aff_23319b13b01ebcadfb83",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3005.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d26af66a07b428b9011f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_23319b13b01ebcadfb83",
+      "claim_ids": [
+        "claim_d26af66a07b428b9011f"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuxinqi@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3005.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuxinqi@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d26af66a07b428b9011f"
+    ],
+    "email": [
+      "claim_d26af66a07b428b9011f"
+    ],
+    "name": [
+      "claim_d26af66a07b428b9011f"
+    ],
+    "profile_url": [
+      "claim_d26af66a07b428b9011f"
+    ],
+    "recent_papers": [
+      "claim_d26af66a07b428b9011f"
+    ],
+    "research_directions": [
+      "claim_d26af66a07b428b9011f"
+    ],
+    "status": [
+      "claim_d26af66a07b428b9011f"
+    ],
+    "title": [
+      "claim_d26af66a07b428b9011f"
+    ]
+  },
+  "id": "mentor_e774b7bfc998c9b2c936",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d26af66a07b428b9011f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘鑫琦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_23319b13b01ebcadfb83",
+      "claim_ids": [
+        "claim_d26af66a07b428b9011f"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3005.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xinqi Liu, Jituo Li, Guodong Lu: Reconstructing Complex Shaped Clothing from a Single Image with Feature Stable Unsigned Distance Fields.IEEE Transactions on Visualization and Computer Graphics.31(4):2142-2154, 2024.",
+    "Jituo Li,Xinqi Liu, Guodong Lu: Learning Pose Controllable Human Reconstruction with Dynamic Implicit Fields from a Single Image.IEEE Transactions on Visualization and Computer Graphics.31(2): 1389-1401, 2024.",
+    "Yue Sun,Xinqi Liu*, Zhiliang He, Jialu Zhang, Chenming Wu, Guodong Lu, Jituo Li: DAFU-CAD: Depth-assisted Feature Unraveling for Sketch-based Robust CAD Modeling.ACM intemational conference on Multimedia.2025. (CCF-A多媒体顶会)",
+    "Jialun Liu, Chenming Wu,Xinqi Liu, Xing Liu, Jinbo Wu, Haotian Peng, Chen Zhao, Haocheng Feng, et al. TexOct: Generating Textures of 3D Models with Octree-based Diffusion.IEEE Conference on Computer Vision and Pattern Recognition (CVPR). 2024.(CCF-A计算机视觉顶会)",
+    "Yue Sun, Jituo Li, Ziqin Xu, Jialu Zhang,Xinqi Liu, Dongliang Zhang, Guodong Lu: Sketch2Seq: Reconstruct CAD models from Feature-based Sketch Segmentation.IEEE Transactions on Visualization and Computer Graphics.Early Access, 2025. (中科院SCI一区Top)",
+    "Jialu Zhang, Jituo Li*, Jiaqi Li, Yue Sun,Xinqi Liu, et al. MBRVO: A Blur Robust Visual Odometry Based on Motion Blurred Artifact Prior.IEEE Robotics and Automation Letters.9(10): 8418-8425, 2024.",
+    "Xinqi Liu, Jituo Li, Guodong Lu: Modeling Realistic Clothing from a Single Image under Normal Guide.IEEE Transactions on Visualization and Computer Graphics.30(7):3995–4007, 2023.(SCI一区Top)",
+    "Xinqi Liu, Jituo Li, Guodong Lu: Wrinkles Realistic Clothing Reconstruction by Combining Implicit and Explicit Method.Computer-Aided Design.160:103514, 2023."
+  ],
+  "research_directions": [
+    "机器人具身运动控制VLA/VLN、三维具身场景感知、理解与生成、人机协同交互应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3005.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

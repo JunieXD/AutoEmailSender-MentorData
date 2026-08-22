@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1a62023d97174dfe981c"
+      ],
+      "ended_at": null,
+      "id": "aff_2ca384548acdf689b8f3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3115.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_1a62023d97174dfe981c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2ca384548acdf689b8f3",
+      "claim_ids": [
+        "claim_1a62023d97174dfe981c"
+      ],
+      "is_primary": true,
+      "normalized_value": "leyuan_fang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3115.htm",
+      "status": "current",
+      "type": "email",
+      "value": "leyuan_fang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1a62023d97174dfe981c"
+    ],
+    "email": [
+      "claim_1a62023d97174dfe981c"
+    ],
+    "name": [
+      "claim_1a62023d97174dfe981c"
+    ],
+    "profile_url": [
+      "claim_1a62023d97174dfe981c"
+    ],
+    "recent_papers": [
+      "claim_1a62023d97174dfe981c"
+    ],
+    "research_directions": [
+      "claim_1a62023d97174dfe981c"
+    ],
+    "status": [
+      "claim_1a62023d97174dfe981c"
+    ]
+  },
+  "id": "mentor_d0fd96a8449cb4092553",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1a62023d97174dfe981c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "方乐缘"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2ca384548acdf689b8f3",
+      "claim_ids": [
+        "claim_1a62023d97174dfe981c"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3115.htm"
+    }
+  ],
+  "recent_papers": [
+    "Generating Any Changes in the Noise Domain",
+    "Modeling the Label Distributions for Weakly-Supervised Semantic Segmentation",
+    "Open Set Recognition in Real World",
+    "SemiRS-COC: Semi-Supervised Classification for Complex Remote Sensing Scenes With Cross-Object Consistency",
+    "Sparsely Annotated Semantic Segmentation with Adaptive Gaussian Mixtures",
+    "Efficient Layer Compression Without Pruning",
+    "Structure-Guided Cross-Attention Network for Cross-Domain OCT Fluid Segmentation",
+    "Unpaired Remote Sensing Image Super-Resolution with Content-Preserving Weak Supervision Neural Network"
+  ],
+  "research_directions": [
+    "遥感图像智能解译、语义分割、高光谱成像与识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3115.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:48:07Z"
+}

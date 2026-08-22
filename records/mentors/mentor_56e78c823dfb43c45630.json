@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_adbfff1dbb6567ead511"
+      ],
+      "ended_at": null,
+      "id": "aff_e50cd326bbbf8935ab77",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3068.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_adbfff1dbb6567ead511"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e50cd326bbbf8935ab77",
+      "claim_ids": [
+        "claim_adbfff1dbb6567ead511"
+      ],
+      "is_primary": true,
+      "normalized_value": "wandongzhang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3068.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wandongzhang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_adbfff1dbb6567ead511"
+    ],
+    "email": [
+      "claim_adbfff1dbb6567ead511"
+    ],
+    "name": [
+      "claim_adbfff1dbb6567ead511"
+    ],
+    "profile_url": [
+      "claim_adbfff1dbb6567ead511"
+    ],
+    "recent_papers": [
+      "claim_adbfff1dbb6567ead511"
+    ],
+    "research_directions": [
+      "claim_adbfff1dbb6567ead511"
+    ],
+    "status": [
+      "claim_adbfff1dbb6567ead511"
+    ],
+    "title": [
+      "claim_adbfff1dbb6567ead511"
+    ]
+  },
+  "id": "mentor_56e78c823dfb43c45630",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_adbfff1dbb6567ead511"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张万栋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e50cd326bbbf8935ab77",
+      "claim_ids": [
+        "claim_adbfff1dbb6567ead511"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3068.htm"
+    }
+  ],
+  "recent_papers": [
+    "Fast Transfer Learning Method Using Random Layer Freezing and Feature Refinement Strategy",
+    "Deep Optimized Broad Learning System for Applications in Tabular Data Recognition",
+    "Coarse-to-Fine Target Detection for HFSWR with Spatial-Frequency Analysis and Subnet Structure",
+    "Progressive Learning Model for Big Data Analysis Using Sub-network and Moore-Penrose Inverse",
+    "Multi-Modal Moore-Penrose Inverse-based Recomputation Framework for Big Data Analysis",
+    "A Two-stage Hierarchical One-Class Classification Structure for HFSWR Ship-target Detection",
+    "Semi-supervised Manifold Regularization via a Subnetwork-based Representation Learning Model",
+    "Hierarchical One-Class Model with Sub-network for Representation Learning and Outlier Detection"
+  ],
+  "research_directions": [
+    "以基础研究为驱动,聚焦算法创新,专注于新型网络结构与优化算法的研发,融合理论与实践,提供机器人视觉自主检测的全面解决方案"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3068.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

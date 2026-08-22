@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_62e415bd87260a6f6d6e"
+      ],
+      "ended_at": null,
+      "id": "aff_a7426f41834cb0e70070",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3305.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_62e415bd87260a6f6d6e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a7426f41834cb0e70070",
+      "claim_ids": [
+        "claim_62e415bd87260a6f6d6e"
+      ],
+      "is_primary": true,
+      "normalized_value": "liluliu@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3305.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liluliu@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_62e415bd87260a6f6d6e"
+    ],
+    "email": [
+      "claim_62e415bd87260a6f6d6e"
+    ],
+    "name": [
+      "claim_62e415bd87260a6f6d6e"
+    ],
+    "profile_url": [
+      "claim_62e415bd87260a6f6d6e"
+    ],
+    "recent_papers": [
+      "claim_62e415bd87260a6f6d6e"
+    ],
+    "research_directions": [
+      "claim_62e415bd87260a6f6d6e"
+    ],
+    "status": [
+      "claim_62e415bd87260a6f6d6e"
+    ],
+    "title": [
+      "claim_62e415bd87260a6f6d6e"
+    ]
+  },
+  "id": "mentor_7601d66c8b6f876fbb73",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_62e415bd87260a6f6d6e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘立陆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a7426f41834cb0e70070",
+      "claim_ids": [
+        "claim_62e415bd87260a6f6d6e"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3305.htm"
+    }
+  ],
+  "recent_papers": [
+    "AI search, physician removal: Bronchoscopy robot bridges collaboration in foreign body aspiration.",
+    "AI co-pilot bronchoscope robot.",
+    "Small but strong: Lightweight architecture improves lung nodule detection and segmentation.",
+    "Vertebrae-based global X-ray to CT registration for thoracic surgeries",
+    "Weakly-Interactive-Mixed Learning: Less labelling cost for better medical image segmentation",
+    "π-BA: Probabilistic Neural Bundle Adjustment with Iterative Cycle Optimization for Driving Scene Reconstruction.",
+    "Design and stiffness control of a variable-length continuum robot for endoscopic surgery",
+    "A Novel Hand-held Bronchoscope Robot With Human-Robot Shacyan Control Strategy for Pulmonary Examination"
+  ],
+  "research_directions": [
+    "具身智能、医疗机器人、机器人导航控制、医学影像分析、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3305.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

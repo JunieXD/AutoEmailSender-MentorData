@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e9dbfaa9cb56d0469b37"
+      ],
+      "ended_at": null,
+      "id": "aff_ea7083d7c24eed5ebf08",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3323.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e9dbfaa9cb56d0469b37"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ea7083d7c24eed5ebf08",
+      "claim_ids": [
+        "claim_e9dbfaa9cb56d0469b37"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjuyinhuan@gmail.com",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3323.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zjuyinhuan@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e9dbfaa9cb56d0469b37"
+    ],
+    "email": [
+      "claim_e9dbfaa9cb56d0469b37"
+    ],
+    "name": [
+      "claim_e9dbfaa9cb56d0469b37"
+    ],
+    "profile_url": [
+      "claim_e9dbfaa9cb56d0469b37"
+    ],
+    "research_directions": [
+      "claim_e9dbfaa9cb56d0469b37"
+    ],
+    "status": [
+      "claim_e9dbfaa9cb56d0469b37"
+    ],
+    "title": [
+      "claim_e9dbfaa9cb56d0469b37"
+    ]
+  },
+  "id": "mentor_f5704284fe037c21e7c8",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e9dbfaa9cb56d0469b37"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "尹欢"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ea7083d7c24eed5ebf08",
+      "claim_ids": [
+        "claim_e9dbfaa9cb56d0469b37"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3323.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器人感知、地图构建与定位、机器人学习/具身智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3323.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

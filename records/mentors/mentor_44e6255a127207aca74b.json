@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d6b0da7777fae0705a9d"
+      ],
+      "ended_at": null,
+      "id": "aff_c87ca661c42b752b44c7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2954.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d6b0da7777fae0705a9d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c87ca661c42b752b44c7",
+      "claim_ids": [
+        "claim_d6b0da7777fae0705a9d"
+      ],
+      "is_primary": true,
+      "normalized_value": "kailun.yang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2954.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kailun.yang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d6b0da7777fae0705a9d"
+    ],
+    "email": [
+      "claim_d6b0da7777fae0705a9d"
+    ],
+    "name": [
+      "claim_d6b0da7777fae0705a9d"
+    ],
+    "profile_url": [
+      "claim_d6b0da7777fae0705a9d"
+    ],
+    "recent_papers": [
+      "claim_d6b0da7777fae0705a9d"
+    ],
+    "research_directions": [
+      "claim_d6b0da7777fae0705a9d"
+    ],
+    "status": [
+      "claim_d6b0da7777fae0705a9d"
+    ],
+    "title": [
+      "claim_d6b0da7777fae0705a9d"
+    ]
+  },
+  "id": "mentor_44e6255a127207aca74b",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d6b0da7777fae0705a9d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨恺伦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c87ca661c42b752b44c7",
+      "claim_ids": [
+        "claim_d6b0da7777fae0705a9d"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/2954.htm"
+    }
+  ],
+  "recent_papers": [
+    "Mitigating Label Noise using Prompt-Based Hyperbolic Meta-Learning in Open-Set Domain Generalization",
+    "Seeing Beyond: Extrapolative Domain Adaptive Panoramic Segmentation",
+    "ProOOD: Prototype-Guided Out-of-Distribution 3D Occupancy Prediction",
+    "OneOcc: Semantic Occupancy Prediction for Legged Robots with a Single Panoramic Camera",
+    "What if? Emulative Simulation with World Models for Situated Reasoning",
+    "PS-MOT: Cultivating Instance Awareness from Point Seeds for Multi-Object Tracking",
+    "QuaDreamer: Controllable Panoramic Video Generation for Quadruped Robots",
+    "Unlocking Constraints: Source-Free Occlusion-Aware Seamless Segmentation"
+  ],
+  "research_directions": [
+    "计算机视觉、智能交通系统、机器人、光学传感、辅助技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/2954.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

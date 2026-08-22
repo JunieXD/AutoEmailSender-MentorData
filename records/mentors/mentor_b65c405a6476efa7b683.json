@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_543a3a828553550eec39"
+      ],
+      "ended_at": null,
+      "id": "aff_a2247fee56d86f842378",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3002.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_543a3a828553550eec39"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a2247fee56d86f842378",
+      "claim_ids": [
+        "claim_543a3a828553550eec39"
+      ],
+      "is_primary": true,
+      "normalized_value": "longbin@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3002.htm",
+      "status": "current",
+      "type": "email",
+      "value": "longbin@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_543a3a828553550eec39"
+    ],
+    "email": [
+      "claim_543a3a828553550eec39"
+    ],
+    "name": [
+      "claim_543a3a828553550eec39"
+    ],
+    "profile_url": [
+      "claim_543a3a828553550eec39"
+    ],
+    "recent_papers": [
+      "claim_543a3a828553550eec39"
+    ],
+    "research_directions": [
+      "claim_543a3a828553550eec39"
+    ],
+    "status": [
+      "claim_543a3a828553550eec39"
+    ]
+  },
+  "id": "mentor_b65c405a6476efa7b683",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_543a3a828553550eec39"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "章隆彬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a2247fee56d86f842378",
+      "claim_ids": [
+        "claim_543a3a828553550eec39"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3002.htm"
+    }
+  ],
+  "recent_papers": [
+    "Physics-Informed Multimodal Learning for Wearable Estimation of Ground Reaction Forces and Lower-Limb Joint Moments",
+    "EEG Dynamics and Center of Pressure Modulation During Multi-Task Balance Challenges in Older Adults",
+    "Predicting Ground Reaction Forces by LSTM Neural Networks with Multi-modal Data",
+    "Detecting Heel Strike and toe off Events Using Kinematic Methods and LSTM Models",
+    "Towards clinical application of enhanced timed up and go with markerless motion capture and machine learning for balance and gait assessment",
+    "Emg-constrained and ultrasound-informed muscle-tendon parameter estimation in post-stroke hemiparesis",
+    "Estimation of joint torque by emg-driven neuromusculoskeletal models and lstm networks",
+    "Ankle joint torque prediction using an nms solver informed-ann model and transfer learning"
+  ],
+  "research_directions": [
+    "外骨骼康复机器人,脑机接口,智慧医疗,数据安全,具身智能,下肢骨肌系统生物力学研究,可穿戴辅助设备设计与控制,肌电控制和深度信息融合控制,人体运动仿真,数字孪生,物理信息与机器学习协同建模,康复医学,老年人摔倒风险评估,运动平衡机制研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3002.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:48:07Z"
+}

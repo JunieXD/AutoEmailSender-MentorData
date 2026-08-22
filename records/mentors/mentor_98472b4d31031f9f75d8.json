@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c54ede7eabf4fee5658c"
+      ],
+      "ended_at": null,
+      "id": "aff_6862eeb8437227d431bc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3086.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c54ede7eabf4fee5658c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6862eeb8437227d431bc",
+      "claim_ids": [
+        "claim_c54ede7eabf4fee5658c"
+      ],
+      "is_primary": true,
+      "normalized_value": "c.xiao@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3086.htm",
+      "status": "current",
+      "type": "email",
+      "value": "c.xiao@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c54ede7eabf4fee5658c"
+    ],
+    "email": [
+      "claim_c54ede7eabf4fee5658c"
+    ],
+    "name": [
+      "claim_c54ede7eabf4fee5658c"
+    ],
+    "profile_url": [
+      "claim_c54ede7eabf4fee5658c"
+    ],
+    "recent_papers": [
+      "claim_c54ede7eabf4fee5658c"
+    ],
+    "research_directions": [
+      "claim_c54ede7eabf4fee5658c"
+    ],
+    "status": [
+      "claim_c54ede7eabf4fee5658c"
+    ],
+    "title": [
+      "claim_c54ede7eabf4fee5658c"
+    ]
+  },
+  "id": "mentor_98472b4d31031f9f75d8",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c54ede7eabf4fee5658c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖昌炎"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6862eeb8437227d431bc",
+      "claim_ids": [
+        "claim_c54ede7eabf4fee5658c"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3086.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Single-Pixel Imaging Based Stereo Deflectometry for 3D Reconstruction of Free-Form Transparent Objects With Parasitic Reflections. IEEE Transactions on Computational Imaging (2023)",
+    "A Practical Micro Fringe Projection Profilometry for 3-D Automated Optical Inspection, IEEE Transactions on Instrumentation and Measurement(2022)",
+    "Online 3-D Modeling of Complex Workpieces for the Robotic Spray Painting With Low-Cost RGB-D Cameras, IEEE Transactions on Instrumentation and Measurement, 2021",
+    "Quality assessment of digital speckle patterns for the single-shot speckle projection profilometry based on a visualised simulation platform, Optics and Lasers in Engineering, 2021",
+    "Efficient Measurement of Key-Cap Flatness for Computer Keyboards With a Multi-Line Structured Light Imaging Approach, in IEEE Sensors Journal, 2019",
+    "A Machine Vision System for Stacked Substrates Counting With a Robust Stripe Detection Algorithm, IEEE Transactions on Systems Man Cybernetics-Systems, 2019",
+    "Automated Visual Inspection of Glass Bottle Bottom With Saliency Detection and Template Matching, in IEEE Transactions on Instrumentation and Measurement, 2019",
+    "Pulmonary Fissure Detection in CT Images Using a Derivative of Stick Filter, in IEEE Transactions on Medical Imaging, 2016"
+  ],
+  "research_directions": [
+    "计算机视觉与计算成像",
+    "机器人导航与定位",
+    "人工智能及工业应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3086.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

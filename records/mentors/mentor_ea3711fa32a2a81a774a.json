@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e12dd9238a8937b713b4"
+      ],
+      "ended_at": null,
+      "id": "aff_80f68f2a80e18f60b0c4",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3134.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e12dd9238a8937b713b4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_80f68f2a80e18f60b0c4",
+      "claim_ids": [
+        "claim_e12dd9238a8937b713b4"
+      ],
+      "is_primary": true,
+      "normalized_value": "qfang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3134.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qfang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e12dd9238a8937b713b4"
+    ],
+    "email": [
+      "claim_e12dd9238a8937b713b4"
+    ],
+    "name": [
+      "claim_e12dd9238a8937b713b4"
+    ],
+    "profile_url": [
+      "claim_e12dd9238a8937b713b4"
+    ],
+    "recent_papers": [
+      "claim_e12dd9238a8937b713b4"
+    ],
+    "research_directions": [
+      "claim_e12dd9238a8937b713b4"
+    ],
+    "status": [
+      "claim_e12dd9238a8937b713b4"
+    ],
+    "title": [
+      "claim_e12dd9238a8937b713b4"
+    ]
+  },
+  "id": "mentor_ea3711fa32a2a81a774a",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e12dd9238a8937b713b4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "方遒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_80f68f2a80e18f60b0c4",
+      "claim_ids": [
+        "claim_e12dd9238a8937b713b4"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3134.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ye J, Fang Q*, Peng W, et al, Viewpoint Planning for Active 3D Reconstruction of Freeform Surface Parts based on DDPG-3DCNN, IEEE/ASME Transactions on Mechatronics, 2025.",
+    "Fang Q, Gao C, Jiang T, et al, An Iterative Deep Homography Network Based on Correlation Content Calculation for High-Precision Image Registration of Fly-Capture Imaging System, IEEE Transactions on Instrumentation and Measurement, 2025.",
+    "方遒、宋豪杰、卢弘、毛建旭、王耀南,集成工人和AGV的多要素柔性作业车间调度方法,机械工程学报,2025.",
+    "卢弘、王耀南、乔非、方遒*,面向可持续生产中多任务调度的双重增强模因算法, 自动化学报, 2024, 50(4): 1000−1013.",
+    "Wang S, Ding C, Fang Q* and Wang Y, Quantum Robust Optimal Control for Linear Complex Quantum Systems with Uncertainties, IEEE Transactions on Automatic Control, 2023.",
+    "Hao X, Gao C, Fang Q*, Zheng Y, Wang Y, A Parallel Fuzzy Nonlinear ADRC Framework for Robotic Machining with Vibrations, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China, 2025.",
+    "Qin R, Fang Q*, Wang Y, A Mobile Robotic System for Data Center Thermal Environment Measurement and Reconstruction, in Proceedings of Chinese Automation Congress, Beijing, China, 2021. (Best Paper Award,最佳论文奖)"
+  ],
+  "research_directions": [
+    "机器感知与学习、机器人智能控制、复杂系统运筹优化,应用于智能制造、工业互联网、智慧能源等领域"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3134.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

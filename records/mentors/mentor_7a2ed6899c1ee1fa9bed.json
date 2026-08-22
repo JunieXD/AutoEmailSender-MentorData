@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7135940d69e58a8f75f7"
+      ],
+      "ended_at": null,
+      "id": "aff_759d5a4109933c995d6e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2962.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7135940d69e58a8f75f7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_759d5a4109933c995d6e",
+      "claim_ids": [
+        "claim_7135940d69e58a8f75f7"
+      ],
+      "is_primary": true,
+      "normalized_value": "eeyzhou@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2962.htm",
+      "status": "current",
+      "type": "email",
+      "value": "eeyzhou@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7135940d69e58a8f75f7"
+    ],
+    "email": [
+      "claim_7135940d69e58a8f75f7"
+    ],
+    "name": [
+      "claim_7135940d69e58a8f75f7"
+    ],
+    "profile_url": [
+      "claim_7135940d69e58a8f75f7"
+    ],
+    "recent_papers": [
+      "claim_7135940d69e58a8f75f7"
+    ],
+    "research_directions": [
+      "claim_7135940d69e58a8f75f7"
+    ],
+    "status": [
+      "claim_7135940d69e58a8f75f7"
+    ],
+    "title": [
+      "claim_7135940d69e58a8f75f7"
+    ]
+  },
+  "id": "mentor_7a2ed6899c1ee1fa9bed",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7135940d69e58a8f75f7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周易"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_759d5a4109933c995d6e",
+      "claim_ids": [
+        "claim_7135940d69e58a8f75f7"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/2962.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yi Zhou, Guillermo Gallego, Shaojie Shen. Event-based Stereo Visual Odometry. IEEE Transactions on Robotics (Volume: 37,Issue: 5, Oct. 2021).",
+    "Yi Zhou, Hongdong Li, and Laurent Kneip. Canny-VO: Visual Odometry with RGB-D Cameras Based on Geometric 3-D–2-DEdge Alignment. IEEE Transactions on Robotics (Volume: 35, Issue: 1, Feb. 2019): 184-199.",
+    "Yi Zhou, Guillermo Gallego, Xiuyuan Lu, Siqi Liu, Shaojie Shen. Event-based MotionSegmentation with Spatio-Temporal Graph Cuts. IEEE Transactions on Neural Networks and Learning Systems (Volume: 34, Issue: 8, Aug. 2023).",
+    "Yi Zhou, Guillermo Gallego, Henri Rebecq, Laurent Kneip, Hongdong Li, Davide Scaramuzza. Semi-dense 3d reconstruction with a stereo event camera. In Proceedings of the European Conference on Computer Vision (ECCV), pp. 235-251. 2018.",
+    "Xiuyuan Lu*, Yi Zhou*,Junkai Niu, Sheng Zhongand Shaojie Shen. Event-based Visual-Inertial Velometer.InRobotics: Science and Systems(RSS)2024.",
+    "Jinghang Li, Bangyan Liao,Xiuyuan Lu, Peidong Liu, Shaojie Shen,Yi Zhou.... Event-Aided Time-to-Collision Estimation for Autonomous Driving.In Proceedings of the European Conference on Computer Vision (ECCV),2024.",
+    "ZhongyangRen, Bangyan Liao,Delei Kong, Jinghang Li, Peidong Liu, Laurent Kneip, Guillermo Gallego,Yi Zhou....Motion and Structure from Event-based Normal Flow.In Proceedings of the European Conference on Computer Vision (ECCV),2024.",
+    "Junkai Niu, Sheng Zhong, Yi Zhou.... IMU-Aided Event-based Stereo Visual Odometry. The 2024 IEEE International Conference on Robotics and Automation (ICRA)."
+  ],
+  "research_directions": [
+    "基于先进视觉传感器的机器人感知与导航技术,包括高速自主机器人技术、视觉里程计(VO/SLAM)、动态视觉传感器(Event-based Vision)、多视角几何理论等,具体研究方向为视觉里程计(VO)、同时定位和建图(SLAM)、3D计算机视觉、仿神经形态学的动态视觉传感(Dynamic Vision Sensor,e.g., Event-based Camera)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/2962.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

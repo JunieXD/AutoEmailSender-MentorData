@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b13aadb567f870a85535"
+      ],
+      "ended_at": null,
+      "id": "aff_5d45568e833a83bd63f2",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2960.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b13aadb567f870a85535"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5d45568e833a83bd63f2",
+      "claim_ids": [
+        "claim_b13aadb567f870a85535"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhiyong.li@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2960.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhiyong.li@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b13aadb567f870a85535"
+    ],
+    "email": [
+      "claim_b13aadb567f870a85535"
+    ],
+    "name": [
+      "claim_b13aadb567f870a85535"
+    ],
+    "profile_url": [
+      "claim_b13aadb567f870a85535"
+    ],
+    "recent_papers": [
+      "claim_b13aadb567f870a85535"
+    ],
+    "research_directions": [
+      "claim_b13aadb567f870a85535"
+    ],
+    "status": [
+      "claim_b13aadb567f870a85535"
+    ],
+    "title": [
+      "claim_b13aadb567f870a85535"
+    ]
+  },
+  "id": "mentor_93d5bf0c3ff615738e05",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b13aadb567f870a85535"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李智勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5d45568e833a83bd63f2",
+      "claim_ids": [
+        "claim_b13aadb567f870a85535"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/2960.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yifan Li, Xiaoyan Peng, Jia Zhang, Zhiyong Li*, and Ming Wen. DCT-GAN: Dilated Convolutional Transformer-based GAN for Time Series Anomaly Detection. IEEE Transactions on Knowledge and Data Engineering (2022).",
+    "Ke Nai, Zhiyong Li*, Yihui Gan, and Qi Wang. Robust Visual Tracking via Multitask Sparse Correlation Filters Learning. IEEE Transactions on Neural Networks and Learning Systems. 99(2021):1-14",
+    "Zhiyong Li*, Ke Nai, Guiji Li, et al. Learning a Dynamic Feature Fusion Tracker for Object Tracking. IEEE Transactions on Intelligent Transportation Systems, 2020, PP(99):1-13.",
+    "Yifan Chen, Zhiyong Li*, Bo Yang, Ke Nai, Keqin Li. A Stackelberg Game Approach to Multiple Resources Allocation and Pricing in Mobile Edge Computing. Future Generation Computer Systems. 108 (2020) 273–287.",
+    "Ke Nai, Zhiyong Li*, Guiji Li, Shanquan Wang. Robust Object Tracking via Local Sparse Appearance Model. IEEE Transactions on Image Processing, 2018,Oct., 27(10):4958-4970.",
+    "Zhetao Li, Jie Zhang, Kaihua Zhang, Zhiyong Li. Visual Tracking with Weighted Adaptive Local Sparse Appearance Model via Spatio-Temporal Context Learning. IEEE Transactions on Image Processing. 2018-Sep. 27(9):4478-4489.",
+    "李智勇,何霜,刘俊敏,李仁发.基于蛙眼R3细胞感受野模型的运动滤波方法.自动化学报. 41(5): 981-990",
+    "李智勇,陈少淼,杨波,李仁发.异构云环境多目标Memetic优化任务调度方法.计算机学报, 39(2): 377-390."
+  ],
+  "research_directions": [
+    "多模态融合感知与自主无人系统(智能机器人、无人驾驶汽车、无人飞行器)",
+    "机器学习与行业大数据分析(时序数据挖掘、电力大数据预测、交通大数据分析)",
+    "数据驱动的智能优化调度(云计算系统资源优化、移动边缘计算任务优化)",
+    "智能机器人技能学习(灵巧作业系统感知与控制、机器人技能拟人学习)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/2960.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}
