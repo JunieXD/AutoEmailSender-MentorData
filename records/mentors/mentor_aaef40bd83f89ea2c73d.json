@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_38db86568b101f81bc27"
+      ],
+      "ended_at": null,
+      "id": "aff_1208f97594f5a74b7c18",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_44c298f9a918f27363c6",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1157/2173.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_38db86568b101f81bc27"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1208f97594f5a74b7c18",
+      "claim_ids": [
+        "claim_38db86568b101f81bc27"
+      ],
+      "is_primary": true,
+      "normalized_value": "huicao@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1157/2173.htm",
+      "status": "current",
+      "type": "email",
+      "value": "huicao@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_38db86568b101f81bc27"
+    ],
+    "email": [
+      "claim_38db86568b101f81bc27"
+    ],
+    "name": [
+      "claim_38db86568b101f81bc27"
+    ],
+    "profile_url": [
+      "claim_38db86568b101f81bc27"
+    ],
+    "research_directions": [
+      "claim_38db86568b101f81bc27"
+    ],
+    "status": [
+      "claim_38db86568b101f81bc27"
+    ],
+    "title": [
+      "claim_38db86568b101f81bc27"
+    ]
+  },
+  "id": "mentor_aaef40bd83f89ea2c73d",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_38db86568b101f81bc27"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曹晖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1208f97594f5a74b7c18",
+      "claim_ids": [
+        "claim_38db86568b101f81bc27"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1157/2173.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "数据挖掘和机器学习、人工智能及知识工程、电力机器人感知与控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1157/2173.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

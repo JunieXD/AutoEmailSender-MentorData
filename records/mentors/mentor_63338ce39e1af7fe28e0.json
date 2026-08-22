@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_25b3afff244ff1e7cf09"
+      ],
+      "ended_at": null,
+      "id": "aff_fa11d81966cf62992a74",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_6e79019a9b23abaf8533",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1056/2020.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_25b3afff244ff1e7cf09"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fa11d81966cf62992a74",
+      "claim_ids": [
+        "claim_25b3afff244ff1e7cf09"
+      ],
+      "is_primary": true,
+      "normalized_value": "weixing@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1056/2020.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weixing@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_25b3afff244ff1e7cf09"
+    ],
+    "email": [
+      "claim_25b3afff244ff1e7cf09"
+    ],
+    "name": [
+      "claim_25b3afff244ff1e7cf09"
+    ],
+    "profile_url": [
+      "claim_25b3afff244ff1e7cf09"
+    ],
+    "research_directions": [
+      "claim_25b3afff244ff1e7cf09"
+    ],
+    "status": [
+      "claim_25b3afff244ff1e7cf09"
+    ],
+    "title": [
+      "claim_25b3afff244ff1e7cf09"
+    ]
+  },
+  "id": "mentor_63338ce39e1af7fe28e0",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_25b3afff244ff1e7cf09"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏星"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fa11d81966cf62992a74",
+      "claim_ids": [
+        "claim_25b3afff244ff1e7cf09"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1056/2020.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "视觉跟踪的自回归序列预训练、课程数据集蒸馏等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1056/2020.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

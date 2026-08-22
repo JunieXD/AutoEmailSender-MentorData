@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0bc0373904c0c7e156da"
+      ],
+      "ended_at": null,
+      "id": "aff_bf75d3ee40399286e6e0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_6e79019a9b23abaf8533",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1056/2018.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0bc0373904c0c7e156da"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bf75d3ee40399286e6e0",
+      "claim_ids": [
+        "claim_0bc0373904c0c7e156da"
+      ],
+      "is_primary": true,
+      "normalized_value": "yaochenli@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1056/2018.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yaochenli@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0bc0373904c0c7e156da"
+    ],
+    "email": [
+      "claim_0bc0373904c0c7e156da"
+    ],
+    "name": [
+      "claim_0bc0373904c0c7e156da"
+    ],
+    "profile_url": [
+      "claim_0bc0373904c0c7e156da"
+    ],
+    "research_directions": [
+      "claim_0bc0373904c0c7e156da"
+    ],
+    "status": [
+      "claim_0bc0373904c0c7e156da"
+    ],
+    "title": [
+      "claim_0bc0373904c0c7e156da"
+    ]
+  },
+  "id": "mentor_76f752efcecff9baff27",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0bc0373904c0c7e156da"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李垚辰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bf75d3ee40399286e6e0",
+      "claim_ids": [
+        "claim_0bc0373904c0c7e156da"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1056/2018.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉与模式识别,人工智能与机器学习,智能交通系统,外骨骼机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1056/2018.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

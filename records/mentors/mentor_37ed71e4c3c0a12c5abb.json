@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d9de128e92b8731488ff"
+      ],
+      "ended_at": null,
+      "id": "aff_c3e149b7dd045569e994",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_91b9af1790453ea9ce8e",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1311.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d9de128e92b8731488ff"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c3e149b7dd045569e994",
+      "claim_ids": [
+        "claim_d9de128e92b8731488ff"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiao.li@xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1311.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiao.li@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d9de128e92b8731488ff"
+    ],
+    "email": [
+      "claim_d9de128e92b8731488ff"
+    ],
+    "name": [
+      "claim_d9de128e92b8731488ff"
+    ],
+    "profile_url": [
+      "claim_d9de128e92b8731488ff"
+    ],
+    "research_directions": [
+      "claim_d9de128e92b8731488ff"
+    ],
+    "status": [
+      "claim_d9de128e92b8731488ff"
+    ],
+    "title": [
+      "claim_d9de128e92b8731488ff"
+    ]
+  },
+  "id": "mentor_37ed71e4c3c0a12c5abb",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d9de128e92b8731488ff"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李骁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c3e149b7dd045569e994",
+      "claim_ids": [
+        "claim_d9de128e92b8731488ff"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1055/1311.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "微纳生物医学传感器制造方法",
+    "基于传感技术与智能算法的生物芯片系统",
+    "基于传感技术与智能算法的可穿戴设备系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1055/1311.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

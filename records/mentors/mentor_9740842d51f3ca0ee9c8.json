@@ -1,0 +1,97 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0e6dcee58cf0b80b41c"
+      ],
+      "ended_at": null,
+      "id": "aff_507468cb5650430b354d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_44c298f9a918f27363c6",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1158/2202.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0e6dcee58cf0b80b41c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_507468cb5650430b354d",
+      "claim_ids": [
+        "claim_d0e6dcee58cf0b80b41c"
+      ],
+      "is_primary": true,
+      "normalized_value": "lihui.yang@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1158/2202.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lihui.yang@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0e6dcee58cf0b80b41c"
+    ],
+    "email": [
+      "claim_d0e6dcee58cf0b80b41c"
+    ],
+    "name": [
+      "claim_d0e6dcee58cf0b80b41c"
+    ],
+    "profile_url": [
+      "claim_d0e6dcee58cf0b80b41c"
+    ],
+    "research_directions": [
+      "claim_d0e6dcee58cf0b80b41c"
+    ],
+    "status": [
+      "claim_d0e6dcee58cf0b80b41c"
+    ],
+    "title": [
+      "claim_d0e6dcee58cf0b80b41c"
+    ]
+  },
+  "id": "mentor_9740842d51f3ca0ee9c8",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0e6dcee58cf0b80b41c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨黎晖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_507468cb5650430b354d",
+      "claim_ids": [
+        "claim_d0e6dcee58cf0b80b41c"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1158/2202.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "新能源发电系统的分析、运行与控制",
+    "电力电子电路与系统的建模、复杂行为分析与控制",
+    "非线性电路与系统中的动力学行为分析及其控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1158/2202.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

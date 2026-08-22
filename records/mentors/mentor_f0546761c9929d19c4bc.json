@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_56f660c1935190b8f0f2"
+      ],
+      "ended_at": null,
+      "id": "aff_d3668cff6367b93c80d5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_cc2e555e0296b10c704a",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1064/1618.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_56f660c1935190b8f0f2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d3668cff6367b93c80d5",
+      "claim_ids": [
+        "claim_56f660c1935190b8f0f2"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangzs@mail.xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1064/1618.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangzs@mail.xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_56f660c1935190b8f0f2"
+    ],
+    "email": [
+      "claim_56f660c1935190b8f0f2"
+    ],
+    "name": [
+      "claim_56f660c1935190b8f0f2"
+    ],
+    "profile_url": [
+      "claim_56f660c1935190b8f0f2"
+    ],
+    "research_directions": [
+      "claim_56f660c1935190b8f0f2"
+    ],
+    "status": [
+      "claim_56f660c1935190b8f0f2"
+    ],
+    "title": [
+      "claim_56f660c1935190b8f0f2"
+    ]
+  },
+  "id": "mentor_f0546761c9929d19c4bc",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_56f660c1935190b8f0f2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王赞社"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d3668cff6367b93c80d5",
+      "claim_ids": [
+        "claim_56f660c1935190b8f0f2"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1064/1618.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "建筑与城市物理环境(建筑热舒适,城市微气候,低碳节能建筑)",
+    "建筑热湿环境调控(除湿技术,热湿调控,空气品质)",
+    "建筑节能技术(自然能源利用,相变蓄热技术,可再生能源利用)",
+    "新型制冷空调技术(吸收式热力系统,空气源热泵,换热器强化)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1064/1618.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

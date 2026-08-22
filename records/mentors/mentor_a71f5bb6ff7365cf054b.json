@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_77d4f9bb7fbc4a2a435d"
+      ],
+      "ended_at": null,
+      "id": "aff_d6cc3e2ec324f7acf60c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2010.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_77d4f9bb7fbc4a2a435d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d6cc3e2ec324f7acf60c",
+      "claim_ids": [
+        "claim_77d4f9bb7fbc4a2a435d"
+      ],
+      "is_primary": true,
+      "normalized_value": "matteo.maestri@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2010.htm",
+      "status": "current",
+      "type": "email",
+      "value": "matteo.maestri@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_77d4f9bb7fbc4a2a435d"
+    ],
+    "email": [
+      "claim_77d4f9bb7fbc4a2a435d"
+    ],
+    "name": [
+      "claim_77d4f9bb7fbc4a2a435d"
+    ],
+    "profile_url": [
+      "claim_77d4f9bb7fbc4a2a435d"
+    ],
+    "research_directions": [
+      "claim_77d4f9bb7fbc4a2a435d"
+    ],
+    "status": [
+      "claim_77d4f9bb7fbc4a2a435d"
+    ],
+    "title": [
+      "claim_77d4f9bb7fbc4a2a435d"
+    ]
+  },
+  "id": "mentor_a71f5bb6ff7365cf054b",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_77d4f9bb7fbc4a2a435d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "MAESTRI Matteo"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d6cc3e2ec324f7acf60c",
+      "claim_ids": [
+        "claim_77d4f9bb7fbc4a2a435d"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1162/2010.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "能源、催化、化学工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1162/2010.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

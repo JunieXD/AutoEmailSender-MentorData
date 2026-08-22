@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8bfedab4c12b9ec6b1d4"
+      ],
+      "ended_at": null,
+      "id": "aff_19fc0825963011d95487",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1163/2009.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8bfedab4c12b9ec6b1d4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_19fc0825963011d95487",
+      "claim_ids": [
+        "claim_8bfedab4c12b9ec6b1d4"
+      ],
+      "is_primary": true,
+      "normalized_value": "giacomo.verticale@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1163/2009.htm",
+      "status": "current",
+      "type": "email",
+      "value": "giacomo.verticale@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8bfedab4c12b9ec6b1d4"
+    ],
+    "email": [
+      "claim_8bfedab4c12b9ec6b1d4"
+    ],
+    "name": [
+      "claim_8bfedab4c12b9ec6b1d4"
+    ],
+    "profile_url": [
+      "claim_8bfedab4c12b9ec6b1d4"
+    ],
+    "research_directions": [
+      "claim_8bfedab4c12b9ec6b1d4"
+    ],
+    "status": [
+      "claim_8bfedab4c12b9ec6b1d4"
+    ],
+    "title": [
+      "claim_8bfedab4c12b9ec6b1d4"
+    ]
+  },
+  "id": "mentor_11bc41ed68e23c447762",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8bfedab4c12b9ec6b1d4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "VERTICALE, Giacomo"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_19fc0825963011d95487",
+      "claim_ids": [
+        "claim_8bfedab4c12b9ec6b1d4"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1163/2009.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机网络、网络安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1163/2009.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

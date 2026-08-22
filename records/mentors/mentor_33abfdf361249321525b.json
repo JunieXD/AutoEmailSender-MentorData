@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3ce34408f1cbfe40d42c"
+      ],
+      "ended_at": null,
+      "id": "aff_d1c8a28177c239fbadb9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_6e79019a9b23abaf8533",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1987.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3ce34408f1cbfe40d42c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d1c8a28177c239fbadb9",
+      "claim_ids": [
+        "claim_3ce34408f1cbfe40d42c"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuaizheng@xjtu.edu.cn",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1055/1987.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shuaizheng@xjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3ce34408f1cbfe40d42c"
+    ],
+    "email": [
+      "claim_3ce34408f1cbfe40d42c"
+    ],
+    "name": [
+      "claim_3ce34408f1cbfe40d42c"
+    ],
+    "profile_url": [
+      "claim_3ce34408f1cbfe40d42c"
+    ],
+    "research_directions": [
+      "claim_3ce34408f1cbfe40d42c"
+    ],
+    "status": [
+      "claim_3ce34408f1cbfe40d42c"
+    ],
+    "title": [
+      "claim_3ce34408f1cbfe40d42c"
+    ]
+  },
+  "id": "mentor_33abfdf361249321525b",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3ce34408f1cbfe40d42c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郑帅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d1c8a28177c239fbadb9",
+      "claim_ids": [
+        "claim_3ce34408f1cbfe40d42c"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1055/1987.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "基于知识图谱/大语言模型的复杂装备制造工艺设计方法、软件内核及软件开发",
+    "气液固耦合流场智能分析与仿真算法研究、软件内核及软件开发",
+    "国产大型CAD平台内外部接口设计及V/AR软件开发",
+    "无人机空中加油视觉对准算法研究及软硬件平台开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1055/1987.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

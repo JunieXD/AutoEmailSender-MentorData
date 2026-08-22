@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6e258d413a23e18da61"
+      ],
+      "ended_at": null,
+      "id": "aff_af2d9b6ec344defbc677",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_a35422245cec2ec50c1c",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2016.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6e258d413a23e18da61"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_af2d9b6ec344defbc677",
+      "claim_ids": [
+        "claim_c6e258d413a23e18da61"
+      ],
+      "is_primary": true,
+      "normalized_value": "francesca.malpei@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/2016.htm",
+      "status": "current",
+      "type": "email",
+      "value": "francesca.malpei@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6e258d413a23e18da61"
+    ],
+    "email": [
+      "claim_c6e258d413a23e18da61"
+    ],
+    "name": [
+      "claim_c6e258d413a23e18da61"
+    ],
+    "profile_url": [
+      "claim_c6e258d413a23e18da61"
+    ],
+    "research_directions": [
+      "claim_c6e258d413a23e18da61"
+    ],
+    "status": [
+      "claim_c6e258d413a23e18da61"
+    ],
+    "title": [
+      "claim_c6e258d413a23e18da61"
+    ]
+  },
+  "id": "mentor_aaab0d01a37ae69900e1",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6e258d413a23e18da61"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "Francesca Malpei"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_af2d9b6ec344defbc677",
+      "claim_ids": [
+        "claim_c6e258d413a23e18da61"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1162/2016.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "生物技术",
+    "生物燃料"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1162/2016.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}

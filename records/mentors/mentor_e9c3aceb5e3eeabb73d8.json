@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_35000d77d5a1b4e93e9b"
+      ],
+      "ended_at": null,
+      "id": "aff_088ae83a5a7bfdc065c7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:51:25Z",
+      "organization_id": "org_auto_698602db7a9da9713139",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/1998.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_35000d77d5a1b4e93e9b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_088ae83a5a7bfdc065c7",
+      "claim_ids": [
+        "claim_35000d77d5a1b4e93e9b"
+      ],
+      "is_primary": true,
+      "normalized_value": "francesco.castellidezza@polimi.it",
+      "observed_at": "2026-08-21T18:51:25Z",
+      "source_url": "https://jsdi.xjtu.edu.cn/info/1162/1998.htm",
+      "status": "current",
+      "type": "email",
+      "value": "francesco.castellidezza@polimi.it"
+    }
+  ],
+  "created_at": "2026-08-21T18:51:25Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_35000d77d5a1b4e93e9b"
+    ],
+    "email": [
+      "claim_35000d77d5a1b4e93e9b"
+    ],
+    "name": [
+      "claim_35000d77d5a1b4e93e9b"
+    ],
+    "profile_url": [
+      "claim_35000d77d5a1b4e93e9b"
+    ],
+    "research_directions": [
+      "claim_35000d77d5a1b4e93e9b"
+    ],
+    "status": [
+      "claim_35000d77d5a1b4e93e9b"
+    ],
+    "title": [
+      "claim_35000d77d5a1b4e93e9b"
+    ]
+  },
+  "id": "mentor_e9c3aceb5e3eeabb73d8",
+  "last_verified_at": "2026-08-21T18:51:25Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_35000d77d5a1b4e93e9b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "Castelli-Dezza Francesco"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_088ae83a5a7bfdc065c7",
+      "claim_ids": [
+        "claim_35000d77d5a1b4e93e9b"
+      ],
+      "observed_at": "2026-08-21T18:51:25Z",
+      "status": "current",
+      "url": "https://jsdi.xjtu.edu.cn/info/1162/1998.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电力电子学,涉及各种变流器拓扑结构的研究和控制,以及中高功率变流器的高性能调制方法和控制方法的研究",
+    "应用于分布式发电、汽车和铁路的静态变流器",
+    "无传感器控制技术",
+    "应用于铁路基础设施、机车车辆和结构健康监测的无线传感器节点的研制工作"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:51:25Z",
+  "status_reason": null,
+  "status_source_url": "https://jsdi.xjtu.edu.cn/info/1162/1998.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:51:25Z"
+}
