@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f8ba2337667be4d12bd6"
+      ],
+      "ended_at": null,
+      "id": "aff_e1dd5635e71ec3e35fd0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:19Z",
+      "organization_id": "org_auto_46c3075c58f12878356a",
+      "source_url": "http://grzy.cug.edu.cn/zhangjianbo",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f8ba2337667be4d12bd6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e1dd5635e71ec3e35fd0",
+      "claim_ids": [
+        "claim_f8ba2337667be4d12bd6"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjb@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:19Z",
+      "source_url": "http://grzy.cug.edu.cn/zhangjianbo",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjb@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f8ba2337667be4d12bd6"
+    ],
+    "email": [
+      "claim_f8ba2337667be4d12bd6"
+    ],
+    "name": [
+      "claim_f8ba2337667be4d12bd6"
+    ],
+    "profile_url": [
+      "claim_f8ba2337667be4d12bd6"
+    ],
+    "research_directions": [
+      "claim_f8ba2337667be4d12bd6"
+    ],
+    "status": [
+      "claim_f8ba2337667be4d12bd6"
+    ]
+  },
+  "id": "mentor_7a0c39cbec829c37093d",
+  "last_verified_at": "2026-08-21T18:52:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f8ba2337667be4d12bd6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张剑波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e1dd5635e71ec3e35fd0",
+      "claim_ids": [
+        "claim_f8ba2337667be4d12bd6"
+      ],
+      "observed_at": "2026-08-21T18:52:19Z",
+      "status": "current",
+      "url": "http://grzy.cug.edu.cn/zhangjianbo"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "时空分析与大数据挖据 高性能空间计算(分布式计算Hadoop/Spark/Flink、GPU异构计算) 智能运维数据分析与应用 空间信息智能服务与应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:19Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.cug.edu.cn/zhangjianbo",
+  "title": null,
+  "updated_at": "2026-08-21T18:52:19Z"
+}

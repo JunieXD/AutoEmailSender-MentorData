@@ -1,0 +1,549 @@
+{
+  "created_organization_ids": [
+    "org_auto_0ed63d6df00a5e564b38",
+    "org_auto_249a0bc259d318b42ccf",
+    "org_auto_292773a20ea1e271b1c9",
+    "org_auto_32c9b2d44fdd4806a101",
+    "org_auto_46c3075c58f12878356a",
+    "org_auto_501f246cece462f6bc73",
+    "org_auto_588c6bf5e55fc970d6ec",
+    "org_auto_dd69d2c6633a1ae9a77d",
+    "org_auto_e83e3048ff7e37b73092"
+  ],
+  "decided_at": "2026-08-22T08:50:24Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_257ba97e753f9444",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_32c9b2d44fdd4806a101"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4e1ee2319aa0f422",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理科学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_69ddc9582c014646",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "空间信息系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_94cac743efadc381",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "测绘工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_a1dccd7fb7af8176",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_cd2f607dfb7652ef",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "遥感科学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_dc64f8910c8b6634",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "国家地理信息系统工程技术研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e1b9326bfdf0653f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f4eda8a79065ab0e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "cug.edu.cn"
+          ],
+          "canonical_name": "中国地质大学(武汉)",
+          "level": "university",
+          "official_url": "https://cug.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "地理与信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "实验中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_166",
+  "invalid_rows": [],
+  "issue": {
+    "number": 166,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/166"
+  },
+  "manifest_sha256": "ea4dd725f306d502c1661df96106bfe3391ecf495beb7a3a57133827ee23e274",
+  "mapped_proposal_ids": [
+    "proposal_issue_166_row_1",
+    "proposal_issue_166_row_10",
+    "proposal_issue_166_row_11",
+    "proposal_issue_166_row_12",
+    "proposal_issue_166_row_13",
+    "proposal_issue_166_row_14",
+    "proposal_issue_166_row_15",
+    "proposal_issue_166_row_16",
+    "proposal_issue_166_row_17",
+    "proposal_issue_166_row_18",
+    "proposal_issue_166_row_19",
+    "proposal_issue_166_row_2",
+    "proposal_issue_166_row_20",
+    "proposal_issue_166_row_21",
+    "proposal_issue_166_row_22",
+    "proposal_issue_166_row_23",
+    "proposal_issue_166_row_24",
+    "proposal_issue_166_row_25",
+    "proposal_issue_166_row_26",
+    "proposal_issue_166_row_27",
+    "proposal_issue_166_row_28",
+    "proposal_issue_166_row_29",
+    "proposal_issue_166_row_3",
+    "proposal_issue_166_row_30",
+    "proposal_issue_166_row_31",
+    "proposal_issue_166_row_32",
+    "proposal_issue_166_row_33",
+    "proposal_issue_166_row_34",
+    "proposal_issue_166_row_35",
+    "proposal_issue_166_row_36",
+    "proposal_issue_166_row_37",
+    "proposal_issue_166_row_38",
+    "proposal_issue_166_row_39",
+    "proposal_issue_166_row_4",
+    "proposal_issue_166_row_40",
+    "proposal_issue_166_row_41",
+    "proposal_issue_166_row_42",
+    "proposal_issue_166_row_43",
+    "proposal_issue_166_row_44",
+    "proposal_issue_166_row_45",
+    "proposal_issue_166_row_46",
+    "proposal_issue_166_row_47",
+    "proposal_issue_166_row_48",
+    "proposal_issue_166_row_49",
+    "proposal_issue_166_row_5",
+    "proposal_issue_166_row_50",
+    "proposal_issue_166_row_51",
+    "proposal_issue_166_row_52",
+    "proposal_issue_166_row_53",
+    "proposal_issue_166_row_54",
+    "proposal_issue_166_row_55",
+    "proposal_issue_166_row_56",
+    "proposal_issue_166_row_57",
+    "proposal_issue_166_row_58",
+    "proposal_issue_166_row_59",
+    "proposal_issue_166_row_6",
+    "proposal_issue_166_row_60",
+    "proposal_issue_166_row_61",
+    "proposal_issue_166_row_62",
+    "proposal_issue_166_row_63",
+    "proposal_issue_166_row_64",
+    "proposal_issue_166_row_65",
+    "proposal_issue_166_row_66",
+    "proposal_issue_166_row_67",
+    "proposal_issue_166_row_68",
+    "proposal_issue_166_row_69",
+    "proposal_issue_166_row_7",
+    "proposal_issue_166_row_70",
+    "proposal_issue_166_row_71",
+    "proposal_issue_166_row_72",
+    "proposal_issue_166_row_73",
+    "proposal_issue_166_row_74",
+    "proposal_issue_166_row_75",
+    "proposal_issue_166_row_76",
+    "proposal_issue_166_row_77",
+    "proposal_issue_166_row_78",
+    "proposal_issue_166_row_79",
+    "proposal_issue_166_row_8",
+    "proposal_issue_166_row_80",
+    "proposal_issue_166_row_81",
+    "proposal_issue_166_row_82",
+    "proposal_issue_166_row_83",
+    "proposal_issue_166_row_84",
+    "proposal_issue_166_row_85",
+    "proposal_issue_166_row_86",
+    "proposal_issue_166_row_87",
+    "proposal_issue_166_row_88",
+    "proposal_issue_166_row_89",
+    "proposal_issue_166_row_9",
+    "proposal_issue_166_row_90",
+    "proposal_issue_166_row_91",
+    "proposal_issue_166_row_92",
+    "proposal_issue_166_row_93",
+    "proposal_issue_166_row_94",
+    "proposal_issue_166_row_95",
+    "proposal_issue_166_row_96",
+    "proposal_issue_166_row_97",
+    "proposal_issue_166_row_98"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "信息工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_32c9b2d44fdd4806a101",
+      "organization_type": "school",
+      "parent_id": "org_auto_501f246cece462f6bc73"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 175,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379405332,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

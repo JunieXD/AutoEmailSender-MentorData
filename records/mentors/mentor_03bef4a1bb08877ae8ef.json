@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_713c602fb0cb15bf7e86"
+      ],
+      "ended_at": null,
+      "id": "aff_a826a103e97ca045ed38",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:19Z",
+      "organization_id": "org_auto_292773a20ea1e271b1c9",
+      "source_url": "http://grzy.cug.edu.cn/zm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_713c602fb0cb15bf7e86"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a826a103e97ca045ed38",
+      "claim_ids": [
+        "claim_713c602fb0cb15bf7e86"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangm@cug.edu.cn",
+      "observed_at": "2026-08-21T18:52:19Z",
+      "source_url": "http://grzy.cug.edu.cn/zm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangm@cug.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_713c602fb0cb15bf7e86"
+    ],
+    "email": [
+      "claim_713c602fb0cb15bf7e86"
+    ],
+    "name": [
+      "claim_713c602fb0cb15bf7e86"
+    ],
+    "profile_url": [
+      "claim_713c602fb0cb15bf7e86"
+    ],
+    "research_directions": [
+      "claim_713c602fb0cb15bf7e86"
+    ],
+    "status": [
+      "claim_713c602fb0cb15bf7e86"
+    ],
+    "title": [
+      "claim_713c602fb0cb15bf7e86"
+    ]
+  },
+  "id": "mentor_03bef4a1bb08877ae8ef",
+  "last_verified_at": "2026-08-21T18:52:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_713c602fb0cb15bf7e86"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a826a103e97ca045ed38",
+      "claim_ids": [
+        "claim_713c602fb0cb15bf7e86"
+      ],
+      "observed_at": "2026-08-21T18:52:19Z",
+      "status": "current",
+      "url": "http://grzy.cug.edu.cn/zm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "大气与生态环境遥感、气溶胶与云辐射效应、空气质量与污染事件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:19Z",
+  "status_reason": null,
+  "status_source_url": "http://grzy.cug.edu.cn/zm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:19Z"
+}
