@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c69be8fc9cb24438b87d"
+      ],
+      "ended_at": null,
+      "id": "aff_cd132e3dfe5f77362c8a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:36Z",
+      "organization_id": "org_auto_60e4fd333650b751a09a",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4061.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c69be8fc9cb24438b87d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cd132e3dfe5f77362c8a",
+      "claim_ids": [
+        "claim_c69be8fc9cb24438b87d"
+      ],
+      "is_primary": true,
+      "normalized_value": "wzheng@tju.edu.cn",
+      "observed_at": "2026-08-21T18:50:36Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4061.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wzheng@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c69be8fc9cb24438b87d"
+    ],
+    "email": [
+      "claim_c69be8fc9cb24438b87d"
+    ],
+    "name": [
+      "claim_c69be8fc9cb24438b87d"
+    ],
+    "profile_url": [
+      "claim_c69be8fc9cb24438b87d"
+    ],
+    "recent_papers": [
+      "claim_c69be8fc9cb24438b87d"
+    ],
+    "research_directions": [
+      "claim_c69be8fc9cb24438b87d"
+    ],
+    "status": [
+      "claim_c69be8fc9cb24438b87d"
+    ],
+    "title": [
+      "claim_c69be8fc9cb24438b87d"
+    ]
+  },
+  "id": "mentor_2b657b21860148f7ab5c",
+  "last_verified_at": "2026-08-21T18:50:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c69be8fc9cb24438b87d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王征"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cd132e3dfe5f77362c8a",
+      "claim_ids": [
+        "claim_c69be8fc9cb24438b87d"
+      ],
+      "observed_at": "2026-08-21T18:50:36Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4061.htm"
+    }
+  ],
+  "recent_papers": [
+    "Liu, Cheng, Zheng Wang, Xinyu Yan, Meijun Sun, and Qinghua Hu. \"Visible-Infrared Camouflaged Object Detection.\" IEEE Transactions on Circuits and Systems for Video Technology (2025).",
+    "Zheng Wang, Haowei Ran, Jinchang Ren, et al. PWDformer: Deformable transformer for long-term series forecasting[J]. Pattern Recognition, 2024, 147: 110118.",
+    "Zheng Wang, Pengzhi Wang, Yahong Han*, Xue Zhang, Meijun Sun and Qi Tian. Curiosity-Driven Salient Object Detection With Fragment Attention[J]. IEEE Transactions on Image Processing, 2022.10, 31: 5989-6001.",
+    "Zheng Wang, Ziqi Zhou, Huchuan Lu, Jianmin Jiang, Global and Local Sensitivity Guided Key Salient Object Re-Augmentation for Video Saliency Detection, Pattern Recogniton, 2020",
+    "Zheng Wang, Ziqi Zhou, Huchuan Lu, Qinghua Hu, Jianmin Jiang, Video Saliency Prediction via Joint Discrimination and Local Consistency, IEEE Transactions on Cybernetics, 2020, 52(3):1490-1501"
+  ],
+  "research_directions": [
+    "时间序列预测大模型、视觉推理大模型、智能体记忆与推理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:36Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4061.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:50:36Z"
+}

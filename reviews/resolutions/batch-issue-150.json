@@ -1,0 +1,277 @@
+{
+  "created_organization_ids": [
+    "org_auto_60e4fd333650b751a09a",
+    "org_auto_a46e8920cc89fff2cc3d",
+    "org_auto_a7926a81aa8b1cdbf382"
+  ],
+  "decided_at": "2026-08-22T08:50:11Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_3fd5d9fd46b05d3f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_150_row_1",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_65efd0fef3c6a9ac2718"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4152d1cceec730a7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_60e4fd333650b751a09a"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_46aae2e88f5d1876",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_74b35340bfad7c5b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b567737cfe99cd13",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_150",
+  "invalid_rows": [],
+  "issue": {
+    "number": 150,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/150"
+  },
+  "manifest_sha256": "af3aa40fa25bca4b7b48c11b505de5fe9e1004bd17a41f7096bf48b30006eb3e",
+  "mapped_proposal_ids": [
+    "proposal_issue_150_row_10",
+    "proposal_issue_150_row_11",
+    "proposal_issue_150_row_12",
+    "proposal_issue_150_row_13",
+    "proposal_issue_150_row_14",
+    "proposal_issue_150_row_2",
+    "proposal_issue_150_row_3",
+    "proposal_issue_150_row_4",
+    "proposal_issue_150_row_5",
+    "proposal_issue_150_row_6",
+    "proposal_issue_150_row_7",
+    "proposal_issue_150_row_8",
+    "proposal_issue_150_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "人工智能学院",
+      "official_url": null,
+      "organization_id": "org_auto_60e4fd333650b751a09a",
+      "organization_type": "school",
+      "parent_id": "org_auto_3ce5e783fbd769384b1f"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 159,
+  "rejected_proposal_ids": [
+    "proposal_issue_150_row_1"
+  ],
+  "review_comment_id": 5379404532,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

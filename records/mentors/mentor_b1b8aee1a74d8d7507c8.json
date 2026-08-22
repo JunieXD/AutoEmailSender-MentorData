@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ce8cd6e651254f647dba"
+      ],
+      "ended_at": null,
+      "id": "aff_d50c4d174245cf639478",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:36Z",
+      "organization_id": "org_auto_60e4fd333650b751a09a",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4711.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ce8cd6e651254f647dba"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d50c4d174245cf639478",
+      "claim_ids": [
+        "claim_ce8cd6e651254f647dba"
+      ],
+      "is_primary": true,
+      "normalized_value": "anan0422@gmail.com",
+      "observed_at": "2026-08-21T18:50:36Z",
+      "source_url": "http://sai.tju.edu.cn/info/1361/4711.htm",
+      "status": "current",
+      "type": "email",
+      "value": "anan0422@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ce8cd6e651254f647dba"
+    ],
+    "email": [
+      "claim_ce8cd6e651254f647dba"
+    ],
+    "name": [
+      "claim_ce8cd6e651254f647dba"
+    ],
+    "profile_url": [
+      "claim_ce8cd6e651254f647dba"
+    ],
+    "recent_papers": [
+      "claim_ce8cd6e651254f647dba"
+    ],
+    "research_directions": [
+      "claim_ce8cd6e651254f647dba"
+    ],
+    "status": [
+      "claim_ce8cd6e651254f647dba"
+    ],
+    "title": [
+      "claim_ce8cd6e651254f647dba"
+    ]
+  },
+  "id": "mentor_b1b8aee1a74d8d7507c8",
+  "last_verified_at": "2026-08-21T18:50:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ce8cd6e651254f647dba"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘安安"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d50c4d174245cf639478",
+      "claim_ids": [
+        "claim_ce8cd6e651254f647dba"
+      ],
+      "observed_at": "2026-08-21T18:50:36Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/1361/4711.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hierarchical Clustering Multi-Task Learning for Joint Human Action Grouping and Recognition",
+    "Multi-Modal Meta-Transfer Fusion Network for Few-Shot 3D Model Classification",
+    "Next Chain Prediction: A Generative Recommendation Model With Sequence-Chain Attention",
+    "Few-Shot In-Coxt Learningnte for Implicit Semantic Multimodal Content Detection and Interpretation",
+    "Gaussian Distribution-Aware Commonsense Knowledge Learning for Scene Graph Generation",
+    "Hierarchical Clustering Multi-Task Learning for Joint Human Action Grouping and Recognition. IEEE Trans. Pattern Anal. Mach. Intell. 39(1): 102-114 (2017)",
+    "Multi-Modal Meta-Transfer Fusion Network for Few-Shot 3D Model Classification. Int. J. Comput. Vis. 132(3): 673-688 (2024)",
+    "Next Chain Prediction: A Generative Recommendation Model With Sequence-Chain Attention. IEEE Trans. Multim. 28: 321-332 (2026)"
+  ],
+  "research_directions": [
+    "多模态信息感知、生成和决策"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:36Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/1361/4711.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:50:36Z"
+}

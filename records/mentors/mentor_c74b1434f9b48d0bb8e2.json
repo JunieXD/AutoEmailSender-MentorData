@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f765b574d515775ac34f"
+      ],
+      "ended_at": null,
+      "id": "aff_27e2e6e79fb71bc86abf",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:36Z",
+      "organization_id": "org_auto_a46e8920cc89fff2cc3d",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4001.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f765b574d515775ac34f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_27e2e6e79fb71bc86abf",
+      "claim_ids": [
+        "claim_f765b574d515775ac34f"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangx@tju.edu.cn",
+      "observed_at": "2026-08-21T18:50:36Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/4001.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangx@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f765b574d515775ac34f"
+    ],
+    "email": [
+      "claim_f765b574d515775ac34f"
+    ],
+    "name": [
+      "claim_f765b574d515775ac34f"
+    ],
+    "profile_url": [
+      "claim_f765b574d515775ac34f"
+    ],
+    "recent_papers": [
+      "claim_f765b574d515775ac34f"
+    ],
+    "research_directions": [
+      "claim_f765b574d515775ac34f"
+    ],
+    "status": [
+      "claim_f765b574d515775ac34f"
+    ],
+    "title": [
+      "claim_f765b574d515775ac34f"
+    ]
+  },
+  "id": "mentor_c74b1434f9b48d0bb8e2",
+  "last_verified_at": "2026-08-21T18:50:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f765b574d515775ac34f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_27e2e6e79fb71bc86abf",
+      "claim_ids": [
+        "claim_f765b574d515775ac34f"
+      ],
+      "observed_at": "2026-08-21T18:50:36Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/4001.htm"
+    }
+  ],
+  "recent_papers": [
+    "Lingbing Guo, Zhuo Chen, Yichi Zhang, Wenbin Guo, Haonan Yang, Zhao Li, Zirui Chen,Xin Wang. rMMEA: Robust Multi-Modal Entity Alignment with Missing and Noise Visual Modality. The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026) (CCF-A) (Corresponding author) accepted.",
+    "Zhao Li,Xin Wang, Zhao Jun, Feng Feng, Zirui Chen, Jianxin Li. HySAE: An Efficient Semantic-Enhanced Representation Learning Model for Knowledge Hypergraph Link Prediction. The 2025 ACM Web Conference (WWW 2025), pages 86–97, (CCF-A). (https://dl.acm.org/doi/10.1145/3696410.3714549) (Corresponding author)",
+    "Wenbin Guo, Zhao Li,Xin Wang, Zirui Chen, Jun Zhao, Jianxin Li, Ye Yuan. ConvD: Attention Enhanced Dynamic Convolutional Embeddings for Knowledge Graph Completion. IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), 37(9):5049-5062, 2025. (CCF-A) (https://doi.org/10.1109/TKDE.2025.3582243) (Corresponding author)",
+    "Zhao Li,Xin Wang, Jun Zhao, Wenbin Guo, Jianxin Li. HyCubE: Efficient Knowledge Hypergraph 3D Circular Convolutional Embedding. IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), 37(4):1902-1914, 2025. (CCF-A) (https://doi.org/10.1109/TKDE.2025.3531372) (Corresponding author)",
+    "Yajun Yang, Hanxiao Li, Xiangjv Zhu, Junhu Wang,Xin Wang, Hong Gao. HR-Index: An Effectiveness Index Method for Historical Reachability Queries over Evolving Graphs. The 2023 ACM SIGMOD/PODS International Conference on Management of Data (SIGMOD 2023).https://doi.org/10.1145/3589272(CCF-A) (Corresponding author)"
+  ],
+  "research_directions": [
+    "知识图谱数据管理、图数据库、大数据分布式处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:36Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/4001.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:50:36Z"
+}

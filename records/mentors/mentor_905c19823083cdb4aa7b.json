@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_21131c9d63639895798d"
+      ],
+      "ended_at": null,
+      "id": "aff_6bc5ad4cfd167cf56d47",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:36Z",
+      "organization_id": "org_auto_60e4fd333650b751a09a",
+      "source_url": "http://sai.tju.edu.cn/info/2231/5771.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_21131c9d63639895798d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6bc5ad4cfd167cf56d47",
+      "claim_ids": [
+        "claim_21131c9d63639895798d"
+      ],
+      "is_primary": true,
+      "normalized_value": "wjwang@tju.edu.cn",
+      "observed_at": "2026-08-21T18:50:36Z",
+      "source_url": "http://sai.tju.edu.cn/info/2231/5771.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wjwang@tju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:36Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_21131c9d63639895798d"
+    ],
+    "email": [
+      "claim_21131c9d63639895798d"
+    ],
+    "name": [
+      "claim_21131c9d63639895798d"
+    ],
+    "profile_url": [
+      "claim_21131c9d63639895798d"
+    ],
+    "recent_papers": [
+      "claim_21131c9d63639895798d"
+    ],
+    "research_directions": [
+      "claim_21131c9d63639895798d"
+    ],
+    "status": [
+      "claim_21131c9d63639895798d"
+    ],
+    "title": [
+      "claim_21131c9d63639895798d"
+    ]
+  },
+  "id": "mentor_905c19823083cdb4aa7b",
+  "last_verified_at": "2026-08-21T18:50:36Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_21131c9d63639895798d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王文俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6bc5ad4cfd167cf56d47",
+      "claim_ids": [
+        "claim_21131c9d63639895798d"
+      ],
+      "observed_at": "2026-08-21T18:50:36Z",
+      "status": "current",
+      "url": "http://sai.tju.edu.cn/info/2231/5771.htm"
+    }
+  ],
+  "recent_papers": [
+    "Wu, Nannan, Hongdou Dong, Wenjun Wang, and Yiming Zhao. \"Dual encoder contrastive learning with augmented views for graph anomaly detection.\" In Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence, pp. 3480-3488. 2025.",
+    "Liu, Xueli, Bowen Dong, Wenzhi Fu, Nannan Wu, Xin Wang, and Wenjun Wang. \"Extending graph rules with oracles.\" Proceedings of the VLDB Endowment 17, no. 7 (2024): 1775-1787.",
+    "Xu, Hongyan, Qiyao Peng, Hongtao Liu, Yueheng Sun, and Wenjun Wang. \"Group-based personalized news recommendation with long-and short-term fine-grained matching.\" ACM Transactions on Information Systems 42, no. 1 (2023): 1-27.",
+    "Guo, Xuan, Pengfei Jiao, Wang Zhang, Ting Pan, Mengyu Jia, Danyang Shi, and Wenjun Wang. \"Representation learning on heterostructures via heterogeneous anonymous walks.\" IEEE Transactions on Neural Networks and Learning Systems 35, no. 7 (2023): 9538-9552.",
+    "Jin, Di, Yingli Gong, Zhiqiang Wang, Zhizhi Yu, Dongxiao He, Yuxiao Huang, and Wenjun Wang. \"Graph neural network for higher-order dependency networks.\" In Proceedings of the ACM Web Conference 2022, pp. 1622-1630. 2022."
+  ],
+  "research_directions": [
+    "大数据智能与领域大模型",
+    "长期致力于\"智能+\"学科交叉融合研究,围绕“数据+算法+场景”大数据智能三位一体,形成基于复杂网络科学的社会因控论、基于图计算的风险计算与深度认知智能分析方法、智慧城市与城市安全大模型等研究方向,探索垂直领域大模型、领域知识底座、应用场景试验场等方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:36Z",
+  "status_reason": null,
+  "status_source_url": "http://sai.tju.edu.cn/info/2231/5771.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:50:36Z"
+}
