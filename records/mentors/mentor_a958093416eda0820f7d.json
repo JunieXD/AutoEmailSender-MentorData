@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0022a14f585c7fec7bb"
+      ],
+      "ended_at": null,
+      "id": "aff_88f78a49628cd095bd4c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1165/4454.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0022a14f585c7fec7bb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_88f78a49628cd095bd4c",
+      "claim_ids": [
+        "claim_d0022a14f585c7fec7bb"
+      ],
+      "is_primary": true,
+      "normalized_value": "pengxm@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1165/4454.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pengxm@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0022a14f585c7fec7bb"
+    ],
+    "email": [
+      "claim_d0022a14f585c7fec7bb"
+    ],
+    "name": [
+      "claim_d0022a14f585c7fec7bb"
+    ],
+    "profile_url": [
+      "claim_d0022a14f585c7fec7bb"
+    ],
+    "research_directions": [
+      "claim_d0022a14f585c7fec7bb"
+    ],
+    "status": [
+      "claim_d0022a14f585c7fec7bb"
+    ],
+    "title": [
+      "claim_d0022a14f585c7fec7bb"
+    ]
+  },
+  "id": "mentor_a958093416eda0820f7d",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0022a14f585c7fec7bb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭晓明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_88f78a49628cd095bd4c",
+      "claim_ids": [
+        "claim_d0022a14f585c7fec7bb"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1165/4454.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "图像/视频处理、模式识别、深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1165/4454.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

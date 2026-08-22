@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0ec40b54a60667902fd"
+      ],
+      "ended_at": null,
+      "id": "aff_02a58b09979c1c8e9075",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1172/4438.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0ec40b54a60667902fd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_02a58b09979c1c8e9075",
+      "claim_ids": [
+        "claim_d0ec40b54a60667902fd"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangchengdong@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1172/4438.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangchengdong@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0ec40b54a60667902fd"
+    ],
+    "email": [
+      "claim_d0ec40b54a60667902fd"
+    ],
+    "name": [
+      "claim_d0ec40b54a60667902fd"
+    ],
+    "profile_url": [
+      "claim_d0ec40b54a60667902fd"
+    ],
+    "research_directions": [
+      "claim_d0ec40b54a60667902fd"
+    ],
+    "status": [
+      "claim_d0ec40b54a60667902fd"
+    ],
+    "title": [
+      "claim_d0ec40b54a60667902fd"
+    ]
+  },
+  "id": "mentor_d1ff9bea1755caab0612",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0ec40b54a60667902fd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王成栋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_02a58b09979c1c8e9075",
+      "claim_ids": [
+        "claim_d0ec40b54a60667902fd"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1172/4438.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "故障诊断技术、电机故障诊断、容错控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1172/4438.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

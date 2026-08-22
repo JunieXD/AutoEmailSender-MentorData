@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9f38900ae59e53d264d6"
+      ],
+      "ended_at": null,
+      "id": "aff_06f230ff5851c646c22e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1173/6034.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9f38900ae59e53d264d6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_06f230ff5851c646c22e",
+      "claim_ids": [
+        "claim_9f38900ae59e53d264d6"
+      ],
+      "is_primary": true,
+      "normalized_value": "xydarcher@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1173/6034.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xydarcher@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9f38900ae59e53d264d6"
+    ],
+    "email": [
+      "claim_9f38900ae59e53d264d6"
+    ],
+    "name": [
+      "claim_9f38900ae59e53d264d6"
+    ],
+    "profile_url": [
+      "claim_9f38900ae59e53d264d6"
+    ],
+    "research_directions": [
+      "claim_9f38900ae59e53d264d6"
+    ],
+    "status": [
+      "claim_9f38900ae59e53d264d6"
+    ],
+    "title": [
+      "claim_9f38900ae59e53d264d6"
+    ]
+  },
+  "id": "mentor_83f4e0a243c361f6248e",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9f38900ae59e53d264d6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖寅东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_06f230ff5851c646c22e",
+      "claim_ids": [
+        "claim_9f38900ae59e53d264d6"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1173/6034.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机网络测试技术、高速数据发生技术、计算机及其通信相关设备测试技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1173/6034.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

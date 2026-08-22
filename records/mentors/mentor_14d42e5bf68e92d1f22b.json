@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f61550572091a1e48045"
+      ],
+      "ended_at": null,
+      "id": "aff_2fb9f04b06cefeb80e99",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1172/7601.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_f61550572091a1e48045"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2fb9f04b06cefeb80e99",
+      "claim_ids": [
+        "claim_f61550572091a1e48045"
+      ],
+      "is_primary": true,
+      "normalized_value": "colorsky@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1172/7601.htm",
+      "status": "current",
+      "type": "email",
+      "value": "colorsky@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f61550572091a1e48045"
+    ],
+    "email": [
+      "claim_f61550572091a1e48045"
+    ],
+    "name": [
+      "claim_f61550572091a1e48045"
+    ],
+    "profile_url": [
+      "claim_f61550572091a1e48045"
+    ],
+    "research_directions": [
+      "claim_f61550572091a1e48045"
+    ],
+    "status": [
+      "claim_f61550572091a1e48045"
+    ]
+  },
+  "id": "mentor_14d42e5bf68e92d1f22b",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f61550572091a1e48045"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王锂"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2fb9f04b06cefeb80e99",
+      "claim_ids": [
+        "claim_f61550572091a1e48045"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1172/7601.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "高精度电量、非电量测量,微弱电流电压测量,微弱信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1172/7601.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:44:05Z"
+}

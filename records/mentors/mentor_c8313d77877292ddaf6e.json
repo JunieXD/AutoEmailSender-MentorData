@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e163766134be90e98779"
+      ],
+      "ended_at": null,
+      "id": "aff_9f551924913157b931ea",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1161/4365.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_e163766134be90e98779"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9f551924913157b931ea",
+      "claim_ids": [
+        "claim_e163766134be90e98779"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuke@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1161/4365.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuke@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e163766134be90e98779"
+    ],
+    "email": [
+      "claim_e163766134be90e98779"
+    ],
+    "name": [
+      "claim_e163766134be90e98779"
+    ],
+    "profile_url": [
+      "claim_e163766134be90e98779"
+    ],
+    "research_directions": [
+      "claim_e163766134be90e98779"
+    ],
+    "status": [
+      "claim_e163766134be90e98779"
+    ],
+    "title": [
+      "claim_e163766134be90e98779"
+    ]
+  },
+  "id": "mentor_c8313d77877292ddaf6e",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e163766134be90e98779"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘科"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9f551924913157b931ea",
+      "claim_ids": [
+        "claim_e163766134be90e98779"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1161/4365.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "频率合成技术、波形数字化合成方法、测试仪器仪表、系统设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1161/4365.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

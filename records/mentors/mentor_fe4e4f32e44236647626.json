@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9c8dd1e08273a9389e6d"
+      ],
+      "ended_at": null,
+      "id": "aff_749f3db64ed45ca4f989",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1156/7409.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9c8dd1e08273a9389e6d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_749f3db64ed45ca4f989",
+      "claim_ids": [
+        "claim_9c8dd1e08273a9389e6d"
+      ],
+      "is_primary": true,
+      "normalized_value": "hang.geng@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1156/7409.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hang.geng@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9c8dd1e08273a9389e6d"
+    ],
+    "email": [
+      "claim_9c8dd1e08273a9389e6d"
+    ],
+    "name": [
+      "claim_9c8dd1e08273a9389e6d"
+    ],
+    "profile_url": [
+      "claim_9c8dd1e08273a9389e6d"
+    ],
+    "research_directions": [
+      "claim_9c8dd1e08273a9389e6d"
+    ],
+    "status": [
+      "claim_9c8dd1e08273a9389e6d"
+    ],
+    "title": [
+      "claim_9c8dd1e08273a9389e6d"
+    ]
+  },
+  "id": "mentor_fe4e4f32e44236647626",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9c8dd1e08273a9389e6d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "耿航"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_749f3db64ed45ca4f989",
+      "claim_ids": [
+        "claim_9c8dd1e08273a9389e6d"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1156/7409.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "多源信息捕获与融合、微弱信号检测与估计、装备智能测试与评估、复杂系统综合自动化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1156/7409.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

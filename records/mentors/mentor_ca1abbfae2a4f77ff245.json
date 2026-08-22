@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_46e3c619d1418f5c1101"
+      ],
+      "ended_at": null,
+      "id": "aff_e740a2c7c425b6d7941f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1161/4361.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_46e3c619d1418f5c1101"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e740a2c7c425b6d7941f",
+      "claim_ids": [
+        "claim_46e3c619d1418f5c1101"
+      ],
+      "is_primary": true,
+      "normalized_value": "longbing@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1161/4361.htm",
+      "status": "current",
+      "type": "email",
+      "value": "longbing@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_46e3c619d1418f5c1101"
+    ],
+    "email": [
+      "claim_46e3c619d1418f5c1101"
+    ],
+    "name": [
+      "claim_46e3c619d1418f5c1101"
+    ],
+    "profile_url": [
+      "claim_46e3c619d1418f5c1101"
+    ],
+    "research_directions": [
+      "claim_46e3c619d1418f5c1101"
+    ],
+    "status": [
+      "claim_46e3c619d1418f5c1101"
+    ],
+    "title": [
+      "claim_46e3c619d1418f5c1101"
+    ]
+  },
+  "id": "mentor_ca1abbfae2a4f77ff245",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_46e3c619d1418f5c1101"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "龙兵"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e740a2c7c425b6d7941f",
+      "claim_ids": [
+        "claim_46e3c619d1418f5c1101"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1161/4361.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电路与系统测试、诊断、预测与可测性设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1161/4361.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

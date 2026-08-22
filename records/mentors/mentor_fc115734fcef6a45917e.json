@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c2ccbea6cff1722a4a11"
+      ],
+      "ended_at": null,
+      "id": "aff_2fa78b669e6886be4de3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1157/4513.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c2ccbea6cff1722a4a11"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2fa78b669e6886be4de3",
+      "claim_ids": [
+        "claim_c2ccbea6cff1722a4a11"
+      ],
+      "is_primary": true,
+      "normalized_value": "hanxili@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1157/4513.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hanxili@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c2ccbea6cff1722a4a11"
+    ],
+    "email": [
+      "claim_c2ccbea6cff1722a4a11"
+    ],
+    "name": [
+      "claim_c2ccbea6cff1722a4a11"
+    ],
+    "profile_url": [
+      "claim_c2ccbea6cff1722a4a11"
+    ],
+    "research_directions": [
+      "claim_c2ccbea6cff1722a4a11"
+    ],
+    "status": [
+      "claim_c2ccbea6cff1722a4a11"
+    ]
+  },
+  "id": "mentor_fc115734fcef6a45917e",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c2ccbea6cff1722a4a11"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "韩熙利"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2fa78b669e6886be4de3",
+      "claim_ids": [
+        "claim_c2ccbea6cff1722a4a11"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1157/4513.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "集成电路测试、高速数据采集、数据域测试"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1157/4513.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:44:05Z"
+}

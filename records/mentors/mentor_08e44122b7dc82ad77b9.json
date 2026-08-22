@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6f17213739a38f2cc1a"
+      ],
+      "ended_at": null,
+      "id": "aff_3ee56b402c9b37b3c9c5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4303.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6f17213739a38f2cc1a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3ee56b402c9b37b3c9c5",
+      "claim_ids": [
+        "claim_c6f17213739a38f2cc1a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zenghao@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4303.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zenghao@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6f17213739a38f2cc1a"
+    ],
+    "email": [
+      "claim_c6f17213739a38f2cc1a"
+    ],
+    "name": [
+      "claim_c6f17213739a38f2cc1a"
+    ],
+    "profile_url": [
+      "claim_c6f17213739a38f2cc1a"
+    ],
+    "research_directions": [
+      "claim_c6f17213739a38f2cc1a"
+    ],
+    "status": [
+      "claim_c6f17213739a38f2cc1a"
+    ],
+    "title": [
+      "claim_c6f17213739a38f2cc1a"
+    ]
+  },
+  "id": "mentor_08e44122b7dc82ad77b9",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6f17213739a38f2cc1a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "曾浩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3ee56b402c9b37b3c9c5",
+      "claim_ids": [
+        "claim_c6f17213739a38f2cc1a"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1175/4303.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "宽带信号实时捕获方法与技术、无缝采集与处理技术、高精度同步技术、数字存储示波器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1175/4303.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

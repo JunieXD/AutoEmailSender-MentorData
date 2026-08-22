@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8b030c467132b8148b82"
+      ],
+      "ended_at": null,
+      "id": "aff_fe46e7cd8c262705e346",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1152/4305.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8b030c467132b8148b82"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fe46e7cd8c262705e346",
+      "claim_ids": [
+        "claim_8b030c467132b8148b82"
+      ],
+      "is_primary": true,
+      "normalized_value": "kaichen@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1152/4305.htm",
+      "status": "current",
+      "type": "email",
+      "value": "kaichen@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8b030c467132b8148b82"
+    ],
+    "email": [
+      "claim_8b030c467132b8148b82"
+    ],
+    "name": [
+      "claim_8b030c467132b8148b82"
+    ],
+    "profile_url": [
+      "claim_8b030c467132b8148b82"
+    ],
+    "research_directions": [
+      "claim_8b030c467132b8148b82"
+    ],
+    "status": [
+      "claim_8b030c467132b8148b82"
+    ],
+    "title": [
+      "claim_8b030c467132b8148b82"
+    ]
+  },
+  "id": "mentor_aef0af0ca0cc6795e2b2",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8b030c467132b8148b82"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈凯"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fe46e7cd8c262705e346",
+      "claim_ids": [
+        "claim_8b030c467132b8148b82"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1152/4305.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电子测试仪器、装备综合测试与诊断、精密测控、高精度信号采集、微弱信号测试、精密传感、故障诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1152/4305.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

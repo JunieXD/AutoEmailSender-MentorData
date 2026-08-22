@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5602fd547ae337a910a5"
+      ],
+      "ended_at": null,
+      "id": "aff_7e155d4b06b4620f34e6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1152/4333.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5602fd547ae337a910a5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7e155d4b06b4620f34e6",
+      "claim_ids": [
+        "claim_5602fd547ae337a910a5"
+      ],
+      "is_primary": true,
+      "normalized_value": "yhcheng@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1152/4333.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yhcheng@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5602fd547ae337a910a5"
+    ],
+    "email": [
+      "claim_5602fd547ae337a910a5"
+    ],
+    "name": [
+      "claim_5602fd547ae337a910a5"
+    ],
+    "profile_url": [
+      "claim_5602fd547ae337a910a5"
+    ],
+    "research_directions": [
+      "claim_5602fd547ae337a910a5"
+    ],
+    "status": [
+      "claim_5602fd547ae337a910a5"
+    ],
+    "title": [
+      "claim_5602fd547ae337a910a5"
+    ]
+  },
+  "id": "mentor_cf33b9442a36423ef6a9",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5602fd547ae337a910a5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程玉华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7e155d4b06b4620f34e6",
+      "claim_ids": [
+        "claim_5602fd547ae337a910a5"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1152/4333.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电子测试技术、精密无损检测、故障诊断与健康管理(DPHM)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1152/4333.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

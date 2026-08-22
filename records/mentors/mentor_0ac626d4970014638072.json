@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6d2af8e64d10893d33cc"
+      ],
+      "ended_at": null,
+      "id": "aff_da009cbd5cf9c672ccd5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1165/4359.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6d2af8e64d10893d33cc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_da009cbd5cf9c672ccd5",
+      "claim_ids": [
+        "claim_6d2af8e64d10893d33cc"
+      ],
+      "is_primary": true,
+      "normalized_value": "pengjiegang@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1165/4359.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pengjiegang@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6d2af8e64d10893d33cc"
+    ],
+    "email": [
+      "claim_6d2af8e64d10893d33cc"
+    ],
+    "name": [
+      "claim_6d2af8e64d10893d33cc"
+    ],
+    "profile_url": [
+      "claim_6d2af8e64d10893d33cc"
+    ],
+    "research_directions": [
+      "claim_6d2af8e64d10893d33cc"
+    ],
+    "status": [
+      "claim_6d2af8e64d10893d33cc"
+    ],
+    "title": [
+      "claim_6d2af8e64d10893d33cc"
+    ]
+  },
+  "id": "mentor_0ac626d4970014638072",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6d2af8e64d10893d33cc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "彭杰钢"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_da009cbd5cf9c672ccd5",
+      "claim_ids": [
+        "claim_6d2af8e64d10893d33cc"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1165/4359.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "传感技术,机器人技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1165/4359.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

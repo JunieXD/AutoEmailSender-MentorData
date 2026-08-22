@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f0b9eebb9e8abec67352"
+      ],
+      "ended_at": null,
+      "id": "aff_fd378f3e76a4a9a496bf",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4287.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f0b9eebb9e8abec67352"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fd378f3e76a4a9a496bf",
+      "claim_ids": [
+        "claim_f0b9eebb9e8abec67352"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouxue@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4287.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhouxue@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f0b9eebb9e8abec67352"
+    ],
+    "email": [
+      "claim_f0b9eebb9e8abec67352"
+    ],
+    "name": [
+      "claim_f0b9eebb9e8abec67352"
+    ],
+    "profile_url": [
+      "claim_f0b9eebb9e8abec67352"
+    ],
+    "recent_papers": [
+      "claim_f0b9eebb9e8abec67352"
+    ],
+    "research_directions": [
+      "claim_f0b9eebb9e8abec67352"
+    ],
+    "status": [
+      "claim_f0b9eebb9e8abec67352"
+    ],
+    "title": [
+      "claim_f0b9eebb9e8abec67352"
+    ]
+  },
+  "id": "mentor_25ade648c918f80de4fc",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f0b9eebb9e8abec67352"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周雪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fd378f3e76a4a9a496bf",
+      "claim_ids": [
+        "claim_f0b9eebb9e8abec67352"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1175/4287.htm"
+    }
+  ],
+  "recent_papers": [
+    "IEEE Trans. on Cybernetics",
+    "TIP",
+    "CSVT",
+    "Signal Processing",
+    "AAAI",
+    "ICASSP",
+    "ICIP",
+    "ACCV"
+  ],
+  "research_directions": [
+    "模式识别、计算机视觉、运动目标检测、跟踪和行人重识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1175/4287.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

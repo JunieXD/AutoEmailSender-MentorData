@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f5fd7af732c34c071a00"
+      ],
+      "ended_at": null,
+      "id": "aff_71fc0581117e07c22d45",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1161/4382.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f5fd7af732c34c071a00"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_71fc0581117e07c22d45",
+      "claim_ids": [
+        "claim_f5fd7af732c34c071a00"
+      ],
+      "is_primary": true,
+      "normalized_value": "longyue@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1161/4382.htm",
+      "status": "current",
+      "type": "email",
+      "value": "longyue@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f5fd7af732c34c071a00"
+    ],
+    "email": [
+      "claim_f5fd7af732c34c071a00"
+    ],
+    "name": [
+      "claim_f5fd7af732c34c071a00"
+    ],
+    "profile_url": [
+      "claim_f5fd7af732c34c071a00"
+    ],
+    "research_directions": [
+      "claim_f5fd7af732c34c071a00"
+    ],
+    "status": [
+      "claim_f5fd7af732c34c071a00"
+    ],
+    "title": [
+      "claim_f5fd7af732c34c071a00"
+    ]
+  },
+  "id": "mentor_d5a27f374f86b6ec51f1",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f5fd7af732c34c071a00"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "龙跃"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_71fc0581117e07c22d45",
+      "claim_ids": [
+        "claim_f5fd7af732c34c071a00"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1161/4382.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "故障诊断与容错控制,无人集群智能协同与安全控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1161/4382.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

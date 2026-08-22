@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cfb5eaf7c2a5e8311329"
+      ],
+      "ended_at": null,
+      "id": "aff_ab6c35240370f2118cc6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4119.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_cfb5eaf7c2a5e8311329"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ab6c35240370f2118cc6",
+      "claim_ids": [
+        "claim_cfb5eaf7c2a5e8311329"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangj@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4119.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangj@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cfb5eaf7c2a5e8311329"
+    ],
+    "email": [
+      "claim_cfb5eaf7c2a5e8311329"
+    ],
+    "name": [
+      "claim_cfb5eaf7c2a5e8311329"
+    ],
+    "profile_url": [
+      "claim_cfb5eaf7c2a5e8311329"
+    ],
+    "status": [
+      "claim_cfb5eaf7c2a5e8311329"
+    ]
+  },
+  "id": "mentor_e09cce82e75d4c6c679b",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cfb5eaf7c2a5e8311329"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张健"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ab6c35240370f2118cc6",
+      "claim_ids": [
+        "claim_cfb5eaf7c2a5e8311329"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1175/4119.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1175/4119.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:44:05Z"
+}

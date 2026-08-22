@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6a8ea2d32972bdf2c15"
+      ],
+      "ended_at": null,
+      "id": "aff_57f4391a9094a97d6ea6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1174/4315.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6a8ea2d32972bdf2c15"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_57f4391a9094a97d6ea6",
+      "claim_ids": [
+        "claim_c6a8ea2d32972bdf2c15"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangkuojun@uestc.edu.cn",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1174/4315.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangkuojun@uestc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6a8ea2d32972bdf2c15"
+    ],
+    "email": [
+      "claim_c6a8ea2d32972bdf2c15"
+    ],
+    "name": [
+      "claim_c6a8ea2d32972bdf2c15"
+    ],
+    "profile_url": [
+      "claim_c6a8ea2d32972bdf2c15"
+    ],
+    "research_directions": [
+      "claim_c6a8ea2d32972bdf2c15"
+    ],
+    "status": [
+      "claim_c6a8ea2d32972bdf2c15"
+    ],
+    "title": [
+      "claim_c6a8ea2d32972bdf2c15"
+    ]
+  },
+  "id": "mentor_b74aa3726d138accd369",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6a8ea2d32972bdf2c15"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨扩军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_57f4391a9094a97d6ea6",
+      "claim_ids": [
+        "claim_c6a8ea2d32972bdf2c15"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1174/4315.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "超宽带高速数据采集系统、基于FPGA的高速数据实时处理、宽带数字示波器、多信息域智能测试仪器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1174/4315.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}

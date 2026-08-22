@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_08d897c615d7695b6ec4"
+      ],
+      "ended_at": null,
+      "id": "aff_8d51f76081016e86a077",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:05Z",
+      "organization_id": "org_auto_ac6af5d06d7a9749dcfc",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4293.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_08d897c615d7695b6ec4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8d51f76081016e86a077",
+      "claim_ids": [
+        "claim_08d897c615d7695b6ec4"
+      ],
+      "is_primary": true,
+      "normalized_value": "zyp_002@163.com",
+      "observed_at": "2026-08-21T18:44:05Z",
+      "source_url": "https://www.auto.uestc.edu.cn/info/1175/4293.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zyp_002@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:05Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_08d897c615d7695b6ec4"
+    ],
+    "email": [
+      "claim_08d897c615d7695b6ec4"
+    ],
+    "name": [
+      "claim_08d897c615d7695b6ec4"
+    ],
+    "profile_url": [
+      "claim_08d897c615d7695b6ec4"
+    ],
+    "research_directions": [
+      "claim_08d897c615d7695b6ec4"
+    ],
+    "status": [
+      "claim_08d897c615d7695b6ec4"
+    ],
+    "title": [
+      "claim_08d897c615d7695b6ec4"
+    ]
+  },
+  "id": "mentor_fe1a2a3d7cd96028b5fe",
+  "last_verified_at": "2026-08-21T18:44:05Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_08d897c615d7695b6ec4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张榆平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8d51f76081016e86a077",
+      "claim_ids": [
+        "claim_08d897c615d7695b6ec4"
+      ],
+      "observed_at": "2026-08-21T18:44:05Z",
+      "status": "current",
+      "url": "https://www.auto.uestc.edu.cn/info/1175/4293.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "复杂系统分析设计与实现,现代智能控制以及智能仪器仪表设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:05Z",
+  "status_reason": null,
+  "status_source_url": "https://www.auto.uestc.edu.cn/info/1175/4293.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:05Z"
+}
