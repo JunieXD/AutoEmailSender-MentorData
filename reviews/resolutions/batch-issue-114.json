@@ -1,0 +1,589 @@
+{
+  "created_organization_ids": [
+    "org_auto_04dc061892161f49e7d7",
+    "org_auto_2e8b6ef25c44d9899138",
+    "org_auto_82682f81f076d1d66f99",
+    "org_auto_8c7710e323621aa926e8",
+    "org_auto_b975896d77c59e7ecc1a",
+    "org_auto_bd66ae78e26f69397bbd",
+    "org_auto_e617ceb0bdc1d628b958"
+  ],
+  "decided_at": "2026-08-22T08:49:41Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_02f4195f938fb689",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机与大数据学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "Computer Science",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_36ac7d7439bea1d8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_8c7710e323621aa926e8"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_41f3e2a1bcd15e7f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机与大数据学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_480a25fd936af917",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_8c7710e323621aa926e8"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_499fec46e4931843",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_8c7710e323621aa926e8"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5df7d28b4e2c6359",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机与大数据学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "网络工程与系统安全系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6a15421191e99a94",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机与大数据学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_77eb792e7c2362b1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_82682f81f076d1d66f99"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_db87f594d3a3a464",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机与大数据学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f0616fcf5b099a45",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机与大数据学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "计算机科学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_114",
+  "invalid_rows": [],
+  "issue": {
+    "number": 114,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/114"
+  },
+  "manifest_sha256": "05fb2a84d9cfbe263a4f8be71c531cee49e0f028476ccf7de02673cbbccd14ad",
+  "mapped_proposal_ids": [
+    "proposal_issue_114_row_1",
+    "proposal_issue_114_row_10",
+    "proposal_issue_114_row_11",
+    "proposal_issue_114_row_12",
+    "proposal_issue_114_row_13",
+    "proposal_issue_114_row_14",
+    "proposal_issue_114_row_15",
+    "proposal_issue_114_row_16",
+    "proposal_issue_114_row_17",
+    "proposal_issue_114_row_18",
+    "proposal_issue_114_row_19",
+    "proposal_issue_114_row_2",
+    "proposal_issue_114_row_20",
+    "proposal_issue_114_row_21",
+    "proposal_issue_114_row_22",
+    "proposal_issue_114_row_23",
+    "proposal_issue_114_row_24",
+    "proposal_issue_114_row_25",
+    "proposal_issue_114_row_26",
+    "proposal_issue_114_row_27",
+    "proposal_issue_114_row_28",
+    "proposal_issue_114_row_29",
+    "proposal_issue_114_row_3",
+    "proposal_issue_114_row_30",
+    "proposal_issue_114_row_31",
+    "proposal_issue_114_row_32",
+    "proposal_issue_114_row_33",
+    "proposal_issue_114_row_34",
+    "proposal_issue_114_row_35",
+    "proposal_issue_114_row_36",
+    "proposal_issue_114_row_37",
+    "proposal_issue_114_row_38",
+    "proposal_issue_114_row_39",
+    "proposal_issue_114_row_4",
+    "proposal_issue_114_row_40",
+    "proposal_issue_114_row_41",
+    "proposal_issue_114_row_42",
+    "proposal_issue_114_row_43",
+    "proposal_issue_114_row_44",
+    "proposal_issue_114_row_45",
+    "proposal_issue_114_row_46",
+    "proposal_issue_114_row_47",
+    "proposal_issue_114_row_48",
+    "proposal_issue_114_row_49",
+    "proposal_issue_114_row_5",
+    "proposal_issue_114_row_50",
+    "proposal_issue_114_row_51",
+    "proposal_issue_114_row_52",
+    "proposal_issue_114_row_53",
+    "proposal_issue_114_row_54",
+    "proposal_issue_114_row_55",
+    "proposal_issue_114_row_56",
+    "proposal_issue_114_row_57",
+    "proposal_issue_114_row_58",
+    "proposal_issue_114_row_59",
+    "proposal_issue_114_row_6",
+    "proposal_issue_114_row_60",
+    "proposal_issue_114_row_61",
+    "proposal_issue_114_row_62",
+    "proposal_issue_114_row_63",
+    "proposal_issue_114_row_64",
+    "proposal_issue_114_row_65",
+    "proposal_issue_114_row_66",
+    "proposal_issue_114_row_67",
+    "proposal_issue_114_row_68",
+    "proposal_issue_114_row_69",
+    "proposal_issue_114_row_7",
+    "proposal_issue_114_row_70",
+    "proposal_issue_114_row_71",
+    "proposal_issue_114_row_72",
+    "proposal_issue_114_row_73",
+    "proposal_issue_114_row_74",
+    "proposal_issue_114_row_75",
+    "proposal_issue_114_row_76",
+    "proposal_issue_114_row_77",
+    "proposal_issue_114_row_78",
+    "proposal_issue_114_row_79",
+    "proposal_issue_114_row_8",
+    "proposal_issue_114_row_80",
+    "proposal_issue_114_row_81",
+    "proposal_issue_114_row_82",
+    "proposal_issue_114_row_83",
+    "proposal_issue_114_row_84",
+    "proposal_issue_114_row_85",
+    "proposal_issue_114_row_86",
+    "proposal_issue_114_row_87",
+    "proposal_issue_114_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "数学与计算机科学学院",
+      "official_url": null,
+      "organization_id": "org_auto_82682f81f076d1d66f99",
+      "organization_type": "school",
+      "parent_id": "org_auto_7a769986594f71fd63d9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "软件学院",
+      "official_url": null,
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "organization_type": "school",
+      "parent_id": "org_auto_7a769986594f71fd63d9"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 119,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379402825,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

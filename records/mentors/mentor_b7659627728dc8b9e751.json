@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eed8395c4bd30fba40a1"
+      ],
+      "ended_at": null,
+      "id": "aff_36511fdff2cddf452e5b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11508.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_eed8395c4bd30fba40a1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_36511fdff2cddf452e5b",
+      "claim_ids": [
+        "claim_eed8395c4bd30fba40a1"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuyao@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11508.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wuyao@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eed8395c4bd30fba40a1"
+    ],
+    "email": [
+      "claim_eed8395c4bd30fba40a1"
+    ],
+    "name": [
+      "claim_eed8395c4bd30fba40a1"
+    ],
+    "profile_url": [
+      "claim_eed8395c4bd30fba40a1"
+    ],
+    "recent_papers": [
+      "claim_eed8395c4bd30fba40a1"
+    ],
+    "research_directions": [
+      "claim_eed8395c4bd30fba40a1"
+    ],
+    "status": [
+      "claim_eed8395c4bd30fba40a1"
+    ],
+    "title": [
+      "claim_eed8395c4bd30fba40a1"
+    ]
+  },
+  "id": "mentor_b7659627728dc8b9e751",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eed8395c4bd30fba40a1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴垚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_36511fdff2cddf452e5b",
+      "claim_ids": [
+        "claim_eed8395c4bd30fba40a1"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/11508.htm"
+    }
+  ],
+  "recent_papers": [
+    "BeyondSparse: Facilitating Mamba to Enhance Cross-Domain 3D Semantic Segmentation in Adverse Weather[C]//AAAI Conference on Artificial Intelligence (AAAI). 2026. (CCF-A)",
+    "xMHashSeg: Cross-modal Hash Learning for Training-free Unsupervised LiDAR Semantic Segmentation[C]//AAAI Conference on Artificial Intelligence (AAAI). 2026. (CCF-A)",
+    "PLATO-TTA: Prototype-Guided Pseudo-Labeling and Adaptive Tuning for Multi-Modal Test-Time Adaptation of 3D Segmentation[C]//ACM International Conference on Multimedia (ACM MM). 2025: 2226-2234. (CCF-A)",
+    "Omni-Query Active Learning for Source-Free Domain Adaptive Cross-Modality 3D Semantic Segmentation[C]//AAAI Conference on Artificial Intelligence (AAAI). 2025: 8709-8717. (CCF-A)",
+    "UniDSeg: Unified Cross-Domain 3D Semantic Segmentation via Visual Foundation Models Prior [C]//Annual Conference on Neural Information Processing Systems (NeurIPS). 2024: 101223-101249. (CCF-A)",
+    "CLIP2UDA: Making Frozen CLIP Reward Unsupervised Domain Adaptation in 3D Semantic Segmentation [C]//ACM International Conference on Multimedia (ACM MM). 2024: 8662-8671. (CCF-A)",
+    "CLIP-FSAC: Boosting CLIP for Few-Shot Anomaly Classification with Synthetic Anomalies[C]//International Joint Conference on Artificial Intelligence (IJCAI). 2024: 1834-1842. (CCF-A)",
+    "Cross-modal Unsupervised Domain Adaptation for 3D Semantic Segmentation via Bidirectional Fusion-then-Distillation [C]//ACM International Conference on Multimedia (ACM MM). 2023: 490-498. (CCF-A)"
+  ],
+  "research_directions": [
+    "计算机视觉、深度学习、模式识别,主要有3D场景感知、多模态学习、大模型、域泛化、域自适应、异常检测等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/11508.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

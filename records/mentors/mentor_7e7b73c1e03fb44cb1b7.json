@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_60bf79be51083f8e4ef9"
+      ],
+      "ended_at": null,
+      "id": "aff_18b05e50f4f5d7fee280",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11393.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_60bf79be51083f8e4ef9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_18b05e50f4f5d7fee280",
+      "claim_ids": [
+        "claim_60bf79be51083f8e4ef9"
+      ],
+      "is_primary": true,
+      "normalized_value": "zh1995@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11393.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zh1995@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_60bf79be51083f8e4ef9"
+    ],
+    "email": [
+      "claim_60bf79be51083f8e4ef9"
+    ],
+    "name": [
+      "claim_60bf79be51083f8e4ef9"
+    ],
+    "profile_url": [
+      "claim_60bf79be51083f8e4ef9"
+    ],
+    "recent_papers": [
+      "claim_60bf79be51083f8e4ef9"
+    ],
+    "research_directions": [
+      "claim_60bf79be51083f8e4ef9"
+    ],
+    "status": [
+      "claim_60bf79be51083f8e4ef9"
+    ],
+    "title": [
+      "claim_60bf79be51083f8e4ef9"
+    ]
+  },
+  "id": "mentor_7e7b73c1e03fb44cb1b7",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_60bf79be51083f8e4ef9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周辉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_18b05e50f4f5d7fee280",
+      "claim_ids": [
+        "claim_60bf79be51083f8e4ef9"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/11393.htm"
+    }
+  ],
+  "recent_papers": [
+    "Asynchronously delayed intermittent control for highly nonlinear stochastic delayed large-scale networks",
+    "Event-triggered control for complex-valued hybrid stochastic multilinks networks",
+    "Intermittent stabilization for stochastic complex dynamical networks via asynchronously periodic self-triggered strategy",
+    "Intermittent sampled-data stabilization of highly nonlinear delayed stochastic networks via periodic self-triggered strategy",
+    "Periodic self-triggered impulsive synchronization of hybrid stochastic complex-valued delayed networks",
+    "Synchronization of hybrid switching diffusions delayed networks via stochastic event-triggered control",
+    "Sampled-data synchronization of complex network based on periodic self-triggered intermittent control and its application to image encryption",
+    "Impulsive stabilization of complex-valued stochastic complex networks via periodic self-triggered intermittent control"
+  ],
+  "research_directions": [
+    "随机微分方程理论及应用、网络控制系统、微分方程稳定性理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/11393.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6d0a4717169aacadd14c"
+      ],
+      "ended_at": null,
+      "id": "aff_940db0f75044e729c251",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_04dc061892161f49e7d7",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/8488.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6d0a4717169aacadd14c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_940db0f75044e729c251",
+      "claim_ids": [
+        "claim_6d0a4717169aacadd14c"
+      ],
+      "is_primary": true,
+      "normalized_value": "ygfu@qq.com",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/8488.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ygfu@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6d0a4717169aacadd14c"
+    ],
+    "email": [
+      "claim_6d0a4717169aacadd14c"
+    ],
+    "name": [
+      "claim_6d0a4717169aacadd14c"
+    ],
+    "profile_url": [
+      "claim_6d0a4717169aacadd14c"
+    ],
+    "recent_papers": [
+      "claim_6d0a4717169aacadd14c"
+    ],
+    "research_directions": [
+      "claim_6d0a4717169aacadd14c"
+    ],
+    "status": [
+      "claim_6d0a4717169aacadd14c"
+    ],
+    "title": [
+      "claim_6d0a4717169aacadd14c"
+    ]
+  },
+  "id": "mentor_0694c206920b03788f9f",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6d0a4717169aacadd14c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "傅仰耿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_940db0f75044e729c251",
+      "claim_ids": [
+        "claim_6d0a4717169aacadd14c"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/8488.htm"
+    }
+  ],
+  "recent_papers": [
+    "GT-EBRB: An Extended Belief Rule Base System Optimized via Clustering Graph Structure and Graph Transformer",
+    "CurST-Net: Curriculum Learning Guided Spatial-Temporal Network For Traffic Flow Prediction",
+    "Hybrid adaptive graph transformer: Integrating neighborhood diversity and structural distillation",
+    "Graph Contrastive Learning with Virtual Nodes for Few-Shot Semi-Supervised Classification",
+    "UniTrain: A universal iterative semi-supervised training framework for graph representation learning",
+    "Feature space variation-based active learning sample query strategy for graph deep learning",
+    "Curriculum-guided graph self-augmentation: A progressive deepening framework for GNNs",
+    "SE-GSSL: Soft-Mask enhanced graph self-supervised learning with multi-aspect knowledge encoding and adaptive sample selection"
+  ],
+  "research_directions": [
+    "数据挖掘与机器学习、智能决策支持系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/8488.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

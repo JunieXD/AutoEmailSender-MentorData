@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fde38051dcb6330f0036"
+      ],
+      "ended_at": null,
+      "id": "aff_2158b3882fd14cadfab1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/8884.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fde38051dcb6330f0036"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2158b3882fd14cadfab1",
+      "claim_ids": [
+        "claim_fde38051dcb6330f0036"
+      ],
+      "is_primary": true,
+      "normalized_value": "gychen@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/8884.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gychen@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fde38051dcb6330f0036"
+    ],
+    "email": [
+      "claim_fde38051dcb6330f0036"
+    ],
+    "name": [
+      "claim_fde38051dcb6330f0036"
+    ],
+    "profile_url": [
+      "claim_fde38051dcb6330f0036"
+    ],
+    "recent_papers": [
+      "claim_fde38051dcb6330f0036"
+    ],
+    "research_directions": [
+      "claim_fde38051dcb6330f0036"
+    ],
+    "status": [
+      "claim_fde38051dcb6330f0036"
+    ],
+    "title": [
+      "claim_fde38051dcb6330f0036"
+    ]
+  },
+  "id": "mentor_61256bf8f27ddbe88005",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fde38051dcb6330f0036"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈光永"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2158b3882fd14cadfab1",
+      "claim_ids": [
+        "claim_fde38051dcb6330f0036"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/8884.htm"
+    }
+  ],
+  "recent_papers": [
+    "Global Learnable Attention for Single Image Super-Resolution",
+    "Bi-Level Collaborative Learning for Few-Shot Scribble-Supervised Medical Image Segmentation",
+    "BiEvLight: Bi-level Learning of Task-Aware Event Refinement for Low-Light Image Enhancement",
+    "Bridging Optimization and Neural Networks for Efficient Multi-view Clustering",
+    "Dual Guidance of Visual and Semantic Information for Real-World Scene Text Image Super-resolution: A novel approach and benchmark dataset",
+    "SAFAformer: Scale-Aware Frequency-Adaptive Guidance for Nighttime Flare Removal",
+    "Real-World Image Reflection Removal: An Ultra-High-Definition Dataset and an Efficient Baseline",
+    "LPFSformer: Location Prior Guided Frequency and Spatial Interactive Learning for Nighttime Flare Removal"
+  ],
+  "research_directions": [
+    "机器学习、计算机视觉、系统辨识"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/8884.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_eb2401f5748348cff038"
+      ],
+      "ended_at": null,
+      "id": "aff_b73903e6e9c610eb15f9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11629.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_eb2401f5748348cff038"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b73903e6e9c610eb15f9",
+      "claim_ids": [
+        "claim_eb2401f5748348cff038"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangzexian@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11629.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangzexian@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_eb2401f5748348cff038"
+    ],
+    "email": [
+      "claim_eb2401f5748348cff038"
+    ],
+    "name": [
+      "claim_eb2401f5748348cff038"
+    ],
+    "profile_url": [
+      "claim_eb2401f5748348cff038"
+    ],
+    "recent_papers": [
+      "claim_eb2401f5748348cff038"
+    ],
+    "research_directions": [
+      "claim_eb2401f5748348cff038"
+    ],
+    "status": [
+      "claim_eb2401f5748348cff038"
+    ],
+    "title": [
+      "claim_eb2401f5748348cff038"
+    ]
+  },
+  "id": "mentor_070a9e81b96a7c05229b",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_eb2401f5748348cff038"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨泽娴"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b73903e6e9c610eb15f9",
+      "claim_ids": [
+        "claim_eb2401f5748348cff038"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/11629.htm"
+    }
+  ],
+  "recent_papers": [
+    "Handling Label Uncertainty for Camera Incremental Person Re-Identification. In Proceedings of the 31st ACM International Conference on Multimedia (ACM MM), 2023, pp.6253-6263. (CCF-A)",
+    "A Pedestrian is Worth One Prompt: Towards Language Guidance Person Re-Identification. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024, pp.17343-17353. (CCF-A, Highlight)",
+    "Mitigating the Evolving Semantic Entanglement in Continual Learning of Vision-Language Models. In Proceedings of International Conference on Machine Learning (ACM MM), 2025, pp. 4562-4570. (CCF-A)",
+    "Privacy-Preserving Replay and Adaptive Relation Distillation for Camera Incremental Person Re-Identification. In IEEE International Conference on Multimedia and Expo (ICME), 2024, pp.1-6. (CCF-B)",
+    "Uneven Event Modeling for Partially Relevant Video Retrieval. In IEEE International Conference on Multimedia and Expo (ICME), 2025, pp.1-6. (CCF-B)"
+  ],
+  "research_directions": [
+    "计算机视觉、多模态理解与对齐、多模态检索(行人重识别)、多模态大模型幻觉缓解"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/11629.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

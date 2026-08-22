@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bae0dbda97a318471c77"
+      ],
+      "ended_at": null,
+      "id": "aff_4a001d023803ce641795",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_04dc061892161f49e7d7",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/8827.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_bae0dbda97a318471c77"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4a001d023803ce641795",
+      "claim_ids": [
+        "claim_bae0dbda97a318471c77"
+      ],
+      "is_primary": true,
+      "normalized_value": "gukn123@163.com",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/8827.htm",
+      "status": "current",
+      "type": "email",
+      "value": "gukn123@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bae0dbda97a318471c77"
+    ],
+    "email": [
+      "claim_bae0dbda97a318471c77"
+    ],
+    "name": [
+      "claim_bae0dbda97a318471c77"
+    ],
+    "profile_url": [
+      "claim_bae0dbda97a318471c77"
+    ],
+    "recent_papers": [
+      "claim_bae0dbda97a318471c77"
+    ],
+    "research_directions": [
+      "claim_bae0dbda97a318471c77"
+    ],
+    "status": [
+      "claim_bae0dbda97a318471c77"
+    ],
+    "title": [
+      "claim_bae0dbda97a318471c77"
+    ]
+  },
+  "id": "mentor_e3e69a5868c5607ea3e9",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bae0dbda97a318471c77"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭昆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4a001d023803ce641795",
+      "claim_ids": [
+        "claim_bae0dbda97a318471c77"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/8827.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Federated Split Autoencoder for Privacy-Preserving Non-IID Graph Learning",
+    "Federated trajectory clustering based on multi-feature similarity calculation",
+    "Evolutionary Computing Empowered Community Detection in Attributed Networks",
+    "Adaptive graph contrastive learning for community detection",
+    "Globally Consistent Federated Graph Autoencoder for Non-IID Graphs",
+    "Privacy-Preserving Multi-Label Propagation Based on Federated Learning",
+    "Federated Clique Percolation for Privacy-preserving Overlapping Community Detection",
+    "Network Embedding Based on Biased Random Walk for Community Detection in Attributed Networks"
+  ],
+  "research_directions": [
+    "复杂网络数据挖掘,分布式并行计算,联邦学习,灰色系统理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/8827.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

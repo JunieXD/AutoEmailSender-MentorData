@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0d92a88e7b36b0b62617"
+      ],
+      "ended_at": null,
+      "id": "aff_a95b5783d05a086a8310",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/9083.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_0d92a88e7b36b0b62617"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a95b5783d05a086a8310",
+      "claim_ids": [
+        "claim_0d92a88e7b36b0b62617"
+      ],
+      "is_primary": true,
+      "normalized_value": "yunbotang@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/9083.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yunbotang@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0d92a88e7b36b0b62617"
+    ],
+    "email": [
+      "claim_0d92a88e7b36b0b62617"
+    ],
+    "name": [
+      "claim_0d92a88e7b36b0b62617"
+    ],
+    "profile_url": [
+      "claim_0d92a88e7b36b0b62617"
+    ],
+    "recent_papers": [
+      "claim_0d92a88e7b36b0b62617"
+    ],
+    "research_directions": [
+      "claim_0d92a88e7b36b0b62617"
+    ],
+    "status": [
+      "claim_0d92a88e7b36b0b62617"
+    ]
+  },
+  "id": "mentor_e6f2660ff1676319806a",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0d92a88e7b36b0b62617"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汤云波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a95b5783d05a086a8310",
+      "claim_ids": [
+        "claim_0d92a88e7b36b0b62617"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/9083.htm"
+    }
+  ],
+  "recent_papers": [
+    "DBLTD: Deep Bayesian Low-rank Tensor Decomposition for Multivariate Data Analysis",
+    "CT-DCENet: Deep EEG Denoising via CNN-Transformer-based Dual-stage Collaborative Ensemble Learning",
+    "EEG Super-resolution with Laplacian Regularized Coupled Matrix Decomposition: A Case Study of Autism Spectrum Disorder EEG Enhancement",
+    "Multi-domain EEG feature fusion network with supervised contrastive learning for epileptic seizure prediction",
+    "Learning Interpretable Brain Functional Connectivity via Self-supervised Triplet Network with Depth-wise Attention",
+    "Individual EEG super-resolution via ADMM-based coupled matrix decomposition towards long-term brain monitoring",
+    "Functional connectivity learning via Siamese-based SPD matrix representation of brain imaging data",
+    "Deep EEG Superresolution via Correlating Brain Structural and Functional Connectivities"
+  ],
+  "research_directions": [
+    "脑机接口、医学信号分析与处理、神经科学与工程、脑疾病智能诊断等,具体研究内容包括脑信号增强、脑病生物标记物构建、脑功能连接度量、脑网络分析、脑状态分类等,系列工作有效支持包括自闭症、癫痫、重度抑郁症、睡眠障碍等脑功能性疾病的评估诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/9083.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:45:03Z"
+}

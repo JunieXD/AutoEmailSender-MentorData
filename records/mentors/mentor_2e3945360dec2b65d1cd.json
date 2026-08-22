@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cbcebcbe293f607fa418"
+      ],
+      "ended_at": null,
+      "id": "aff_8e448f96d5e674c9155f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/5008.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cbcebcbe293f607fa418"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8e448f96d5e674c9155f",
+      "claim_ids": [
+        "claim_cbcebcbe293f607fa418"
+      ],
+      "is_primary": true,
+      "normalized_value": "chzhzou@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/5008.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chzhzou@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cbcebcbe293f607fa418"
+    ],
+    "email": [
+      "claim_cbcebcbe293f607fa418"
+    ],
+    "name": [
+      "claim_cbcebcbe293f607fa418"
+    ],
+    "profile_url": [
+      "claim_cbcebcbe293f607fa418"
+    ],
+    "recent_papers": [
+      "claim_cbcebcbe293f607fa418"
+    ],
+    "research_directions": [
+      "claim_cbcebcbe293f607fa418"
+    ],
+    "status": [
+      "claim_cbcebcbe293f607fa418"
+    ],
+    "title": [
+      "claim_cbcebcbe293f607fa418"
+    ]
+  },
+  "id": "mentor_2e3945360dec2b65d1cd",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cbcebcbe293f607fa418"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "邹长忠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8e448f96d5e674c9155f",
+      "claim_ids": [
+        "claim_cbcebcbe293f607fa418"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1203/5008.htm"
+    }
+  ],
+  "recent_papers": [
+    "A unified network for noise hyperspectral anomaly detection based on autoencoder-transformer architecture",
+    "Patch Clustering-Based Spectral-Transformer with Multi-level Fusion Network for Spectral Reconstruction",
+    "Hyperspectral Image Change Detection Based on An Improved Multi-Scale and Spectral-Wise Transformer",
+    "Attention and Transformer Complementary Fusion Network for Hyperspectral Image Spectral Reconstruction",
+    "A Semi-Parallel CNN-Transformer Fusion Network for Semantic Change Detection",
+    "Hyperspectral image super-resolution using cluster-based deep convolutional networks",
+    "Enhanced Channel Attention Network With Cross-Layer Feature Fusion for Spectral Reconstruction in the Presence of Gaussian Noise",
+    "Label-aware Graph Representation Learning for Multi-label Image Classification"
+  ],
+  "research_directions": [
+    "机器学习、深度神经网络、图像和视频处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1203/5008.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

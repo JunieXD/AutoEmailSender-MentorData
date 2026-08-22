@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c198629f4117528885fd"
+      ],
+      "ended_at": null,
+      "id": "aff_9ec13fb583deee64f5da",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/9819.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c198629f4117528885fd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9ec13fb583deee64f5da",
+      "claim_ids": [
+        "claim_c198629f4117528885fd"
+      ],
+      "is_primary": true,
+      "normalized_value": "fzuwq@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/9819.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fzuwq@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c198629f4117528885fd"
+    ],
+    "email": [
+      "claim_c198629f4117528885fd"
+    ],
+    "name": [
+      "claim_c198629f4117528885fd"
+    ],
+    "profile_url": [
+      "claim_c198629f4117528885fd"
+    ],
+    "recent_papers": [
+      "claim_c198629f4117528885fd"
+    ],
+    "research_directions": [
+      "claim_c198629f4117528885fd"
+    ],
+    "status": [
+      "claim_c198629f4117528885fd"
+    ],
+    "title": [
+      "claim_c198629f4117528885fd"
+    ]
+  },
+  "id": "mentor_df426993dcea12846b09",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c198629f4117528885fd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "翁谦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9ec13fb583deee64f5da",
+      "claim_ids": [
+        "claim_c198629f4117528885fd"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1203/9819.htm"
+    }
+  ],
+  "recent_papers": [
+    "MRC-Former: A Multi-Scale Rotation-Invariant and Center-Preserving Transformer for Hyperspectral Image Classification",
+    "DEAF-Net: Dual-Domain Enhanced Adaptive Fusion Network for UAV Visible–Infrared Object Detection",
+    "GIMMNet: Geometry-Aware Interactive Multi-Modal Network for Semantic Segmentation of High-Resolution Remote Sensing Imagery",
+    "ARE-Net: An Improved Interactive Model for Accurate Building Extraction in High-Resolution Remote Sensing Imagery",
+    "Remote Sensing Scene Classification Via Multigranularity Alternating Feature Mining",
+    "A Multisensor Data Fusion Model for Semantic Segmentation in Aerial Images",
+    "Land-use scene classification based on a CNN using a constrained extreme learning machine",
+    "Land-Use Classification via Extreme Learning Classifier Based on Deep Convolutional Features"
+  ],
+  "research_directions": [
+    "遥感图像分析,机器学习,以及阵列麦克风音频算法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1203/9819.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

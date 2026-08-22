@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8a5a300e66743f30b8d0"
+      ],
+      "ended_at": null,
+      "id": "aff_bcb8be5168bd89a7ae4d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/5001.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8a5a300e66743f30b8d0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bcb8be5168bd89a7ae4d",
+      "claim_ids": [
+        "claim_8a5a300e66743f30b8d0"
+      ],
+      "is_primary": true,
+      "normalized_value": "fzusc09@126.com",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/5001.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fzusc09@126.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8a5a300e66743f30b8d0"
+    ],
+    "email": [
+      "claim_8a5a300e66743f30b8d0"
+    ],
+    "name": [
+      "claim_8a5a300e66743f30b8d0"
+    ],
+    "profile_url": [
+      "claim_8a5a300e66743f30b8d0"
+    ],
+    "recent_papers": [
+      "claim_8a5a300e66743f30b8d0"
+    ],
+    "research_directions": [
+      "claim_8a5a300e66743f30b8d0"
+    ],
+    "status": [
+      "claim_8a5a300e66743f30b8d0"
+    ],
+    "title": [
+      "claim_8a5a300e66743f30b8d0"
+    ]
+  },
+  "id": "mentor_3b0b38a2b82315ace37b",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8a5a300e66743f30b8d0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "廖祥文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bcb8be5168bd89a7ae4d",
+      "claim_ids": [
+        "claim_8a5a300e66743f30b8d0"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/5001.htm"
+    }
+  ],
+  "recent_papers": [
+    "From Attribution to Action: Jointly ALIGNing Predictions and Explanations. AAAI 2026, Singapore.",
+    "MSR: A Multifaceted Self-Retrieval Framework for Microscopic Cascade Prediction. AAAI 2025, USA",
+    "Training for Stable Explanation for Free. NeurIPS 2024, Canada",
+    "An Iterative Associative Memory Model for Empathetic Response Generation. ACL 2024: 3081–3092, Thailand",
+    "基于深度学习的情感对话响应综述,计算机学报,2023,46(12): 2489-2519",
+    "CTSM: Combining Trait and State Emotions for Empathetic Response Model. LREC-COLING 2024:4214–4225, Italy",
+    "Situation-aware empathetic response generation. Information Processing & Management, 2024, 61(6): 103824",
+    "Exploiting Emotion-Semantic Correlations for Empathetic Response Generation. In Findings of EMNLP 2023: 4826–4837, Singapore"
+  ],
+  "research_directions": [
+    "自然语言处理、大模型技术、网络大数据分析、AI4Science(智能医学、医工交叉等)、网络内容安全/人工智能安全、医疗大数据与智能医学(医疗多模态大模型)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/5001.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

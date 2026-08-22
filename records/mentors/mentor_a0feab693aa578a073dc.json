@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6823c4cfea4b498930f0"
+      ],
+      "ended_at": null,
+      "id": "aff_9df3232550cddf0338b7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11596.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_6823c4cfea4b498930f0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9df3232550cddf0338b7",
+      "claim_ids": [
+        "claim_6823c4cfea4b498930f0"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenzhisheng@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/11596.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenzhisheng@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6823c4cfea4b498930f0"
+    ],
+    "email": [
+      "claim_6823c4cfea4b498930f0"
+    ],
+    "name": [
+      "claim_6823c4cfea4b498930f0"
+    ],
+    "profile_url": [
+      "claim_6823c4cfea4b498930f0"
+    ],
+    "recent_papers": [
+      "claim_6823c4cfea4b498930f0"
+    ],
+    "research_directions": [
+      "claim_6823c4cfea4b498930f0"
+    ],
+    "status": [
+      "claim_6823c4cfea4b498930f0"
+    ],
+    "title": [
+      "claim_6823c4cfea4b498930f0"
+    ]
+  },
+  "id": "mentor_a0feab693aa578a073dc",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6823c4cfea4b498930f0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈志盛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9df3232550cddf0338b7",
+      "claim_ids": [
+        "claim_6823c4cfea4b498930f0"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/11596.htm"
+    }
+  ],
+  "recent_papers": [
+    "Capacity-aware Wash Optimization with Dynamic Fluid Scheduling and Channel Storage for Continuous-Flow Microfluidic Biochips",
+    "Application Mapping and Control-System Design for Microfluidic Biochips with Distributed Channel Storage",
+    "Physical Synthesis of Flow-Based Microfluidic Biochips Considering Distributed Channel Storage",
+    "SDCLR: Scalable Dual Control-Layer Routing for Continuous-Flow Microfluidic Biochips with Minimized Control Ports",
+    "Flow-Based Microfluidic Biochips With Distributed Channel Storage: Synthesis, Physical Design, and Wash Optimization",
+    "TPRepair: Tree-based Pipelined Repair in Clustered Storage Systems",
+    "A Unified Algorithm Based on HTS and Self-Adapting PSO for the Construction of Octagonal and Rectilinear SMT",
+    "Application Mapping Method based on Particle Swarm Optimization for Continuous-Flow Microfluidic Biochips"
+  ],
+  "research_directions": [
+    "微流控生物芯片设计自动化、计算机辅助设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/11596.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

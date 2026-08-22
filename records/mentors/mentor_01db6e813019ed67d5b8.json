@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ab5a983944f3cb5d72f0"
+      ],
+      "ended_at": null,
+      "id": "aff_b30cb3744407d01a36a0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_8c7710e323621aa926e8",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4982.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ab5a983944f3cb5d72f0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b30cb3744407d01a36a0",
+      "claim_ids": [
+        "claim_ab5a983944f3cb5d72f0"
+      ],
+      "is_primary": true,
+      "normalized_value": "hzh@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1202/4982.htm",
+      "status": "current",
+      "type": "email",
+      "value": "hzh@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ab5a983944f3cb5d72f0"
+    ],
+    "email": [
+      "claim_ab5a983944f3cb5d72f0"
+    ],
+    "name": [
+      "claim_ab5a983944f3cb5d72f0"
+    ],
+    "profile_url": [
+      "claim_ab5a983944f3cb5d72f0"
+    ],
+    "research_directions": [
+      "claim_ab5a983944f3cb5d72f0"
+    ],
+    "status": [
+      "claim_ab5a983944f3cb5d72f0"
+    ],
+    "title": [
+      "claim_ab5a983944f3cb5d72f0"
+    ]
+  },
+  "id": "mentor_01db6e813019ed67d5b8",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ab5a983944f3cb5d72f0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄志华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b30cb3744407d01a36a0",
+      "claim_ids": [
+        "claim_ab5a983944f3cb5d72f0"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1202/4982.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "脑机接口、脑疾病智能诊疗、认知计算、神经信号处理、系统软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1202/4982.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

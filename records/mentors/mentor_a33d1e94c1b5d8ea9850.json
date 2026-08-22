@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d980ed44ea8ef504fed9"
+      ],
+      "ended_at": null,
+      "id": "aff_1d4a67e3caddcff59972",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/10091.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d980ed44ea8ef504fed9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1d4a67e3caddcff59972",
+      "claim_ids": [
+        "claim_d980ed44ea8ef504fed9"
+      ],
+      "is_primary": true,
+      "normalized_value": "chengyongli@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1203/10091.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chengyongli@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d980ed44ea8ef504fed9"
+    ],
+    "email": [
+      "claim_d980ed44ea8ef504fed9"
+    ],
+    "name": [
+      "claim_d980ed44ea8ef504fed9"
+    ],
+    "profile_url": [
+      "claim_d980ed44ea8ef504fed9"
+    ],
+    "recent_papers": [
+      "claim_d980ed44ea8ef504fed9"
+    ],
+    "research_directions": [
+      "claim_d980ed44ea8ef504fed9"
+    ],
+    "status": [
+      "claim_d980ed44ea8ef504fed9"
+    ],
+    "title": [
+      "claim_d980ed44ea8ef504fed9"
+    ]
+  },
+  "id": "mentor_a33d1e94c1b5d8ea9850",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d980ed44ea8ef504fed9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程永利"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1d4a67e3caddcff59972",
+      "claim_ids": [
+        "claim_d980ed44ea8ef504fed9"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1203/10091.htm"
+    }
+  ],
+  "recent_papers": [
+    "An Efficient SSSP Algorithm on Time-evolving Graphs with Prediction of Computation Results",
+    "TgStore: An Efficient Storage System for Large Time-Evolving Graphs",
+    "Graphago: Accelerating SSD-based Graph Processing via Activity-Aware Graph Preprocessing",
+    "Positive Mining in Graph Contrastive Learning",
+    "A Disk I/O Optimized System for Concurrent Graph Processing Jobs",
+    "Deep Metric Multi-View Hashing for Multimedia Retrieval",
+    "MatchMaker: Aspect-based sentiment classification via Mutual Information",
+    "IBFM: An Instance-weight Balanced Factorization Machine for Sparse Prediction"
+  ],
+  "research_directions": [
+    "大模型向量搜索、图计算与存储系统、图表示学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1203/10091.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:45:03Z"
+}

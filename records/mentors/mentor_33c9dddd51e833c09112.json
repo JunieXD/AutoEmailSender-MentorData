@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_26ac4094768ba7351bc2"
+      ],
+      "ended_at": null,
+      "id": "aff_7a4ecfa290dfa9907778",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:45:03Z",
+      "organization_id": "org_auto_b975896d77c59e7ecc1a",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/10670.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_26ac4094768ba7351bc2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7a4ecfa290dfa9907778",
+      "claim_ids": [
+        "claim_26ac4094768ba7351bc2"
+      ],
+      "is_primary": true,
+      "normalized_value": "jin_yw@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:45:03Z",
+      "source_url": "https://ccds.fzu.edu.cn/info/1204/10670.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jin_yw@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:45:03Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_26ac4094768ba7351bc2"
+    ],
+    "email": [
+      "claim_26ac4094768ba7351bc2"
+    ],
+    "name": [
+      "claim_26ac4094768ba7351bc2"
+    ],
+    "profile_url": [
+      "claim_26ac4094768ba7351bc2"
+    ],
+    "recent_papers": [
+      "claim_26ac4094768ba7351bc2"
+    ],
+    "research_directions": [
+      "claim_26ac4094768ba7351bc2"
+    ],
+    "status": [
+      "claim_26ac4094768ba7351bc2"
+    ],
+    "title": [
+      "claim_26ac4094768ba7351bc2"
+    ]
+  },
+  "id": "mentor_33c9dddd51e833c09112",
+  "last_verified_at": "2026-08-21T18:45:03Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_26ac4094768ba7351bc2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "金永文"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7a4ecfa290dfa9907778",
+      "claim_ids": [
+        "claim_26ac4094768ba7351bc2"
+      ],
+      "observed_at": "2026-08-21T18:45:03Z",
+      "status": "current",
+      "url": "https://ccds.fzu.edu.cn/info/1204/10670.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yongwen Jin, Jianxun Li. A discrepant information selection mechanism for cooperative sensors[J]. Signal Processing, 2023, 203:108772.",
+    "Yongwen Jin, Jianxun Li. Time-space domain assignment for generalized covariance intersection fusion with labeled multitarget densities[J]. Digital Signal Processing, 2022, 132:103786.",
+    "Yongwen Jin, Jianxun Li. Multi-view fusion with the labeled multi-Bernoulli densities in the network without feedback[J]. IEEE Transactions on Aerospace and Electronic Systems, 2023, 59(6):9650-9664.",
+    "Yongwen Jin, Xiaoyang Lu, Jianxun Li. Multisensor multitarget distributed fusion for discrepant fields of view[J]. Digital Signal Processing, 2024, 153:104585."
+  ],
+  "research_directions": [
+    "多目标跟踪滤波算法、多源信息融合"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:45:03Z",
+  "status_reason": null,
+  "status_source_url": "https://ccds.fzu.edu.cn/info/1204/10670.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:45:03Z"
+}
