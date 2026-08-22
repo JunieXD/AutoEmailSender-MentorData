@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_057645c554623d3ffb68"
+      ],
+      "ended_at": null,
+      "id": "aff_107b3fe42c594b2e8284",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3891.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_057645c554623d3ffb68"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_107b3fe42c594b2e8284",
+      "claim_ids": [
+        "claim_057645c554623d3ffb68"
+      ],
+      "is_primary": true,
+      "normalized_value": "duangh@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/3891.htm",
+      "status": "current",
+      "type": "email",
+      "value": "duangh@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_057645c554623d3ffb68"
+    ],
+    "email": [
+      "claim_057645c554623d3ffb68"
+    ],
+    "name": [
+      "claim_057645c554623d3ffb68"
+    ],
+    "profile_url": [
+      "claim_057645c554623d3ffb68"
+    ],
+    "recent_papers": [
+      "claim_057645c554623d3ffb68"
+    ],
+    "research_directions": [
+      "claim_057645c554623d3ffb68"
+    ],
+    "status": [
+      "claim_057645c554623d3ffb68"
+    ],
+    "title": [
+      "claim_057645c554623d3ffb68"
+    ]
+  },
+  "id": "mentor_b04ff5be3a3a55bf8df1",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_057645c554623d3ffb68"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "段广晗"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_107b3fe42c594b2e8284",
+      "claim_ids": [
+        "claim_057645c554623d3ffb68"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/3891.htm"
+    }
+  ],
+  "recent_papers": [
+    "Duan Guanghan, Lv Hongwu, Wang Huiqiang, Feng Gunagsheng. Application of a Dynamic Line Graph Neural Network for Intrusion Detection With Semisupervised Learning [J]. IEEE Transactions on Information Forensics and Security, 2023, 18, 699-714. (JCR 1区 CCF A)",
+    "Duan Guanghan, Lv Hongwu, Wang Huiqiang, Feng Gunagsheng, et al. Practical Cyber Attack Detection with Continuous Temporal Graph in Dynamic Network System [J]. IEEE Transactions on Information Forensics and Security, 2024, 19, 4815-4864. (JCR 1区 CCF A)",
+    "段广晗,马春光,宋蕾,武朋.深度学习中对抗样本的构造及防御研究[J].网络与信息安全学报,2020,6(02):1-11.",
+    "宋蕾,马春光,段广晗,袁琪.基于数据纵向分布的隐私保护逻辑回归[J].计算机研究与发展, 2019, 56(10): 2243-2249."
+  ],
+  "research_directions": [
+    "动态图神经网络",
+    "网络异常检测",
+    "入侵检测",
+    "欺诈检测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/3891.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

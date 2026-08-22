@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_280bb68a69d7acc5c280"
+      ],
+      "ended_at": null,
+      "id": "aff_84e65ac2fd54fc6d52ca",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/2051.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_280bb68a69d7acc5c280"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_84e65ac2fd54fc6d52ca",
+      "claim_ids": [
+        "claim_280bb68a69d7acc5c280"
+      ],
+      "is_primary": true,
+      "normalized_value": "dmu_rhx@163.com",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/2051.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dmu_rhx@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_280bb68a69d7acc5c280"
+    ],
+    "email": [
+      "claim_280bb68a69d7acc5c280"
+    ],
+    "name": [
+      "claim_280bb68a69d7acc5c280"
+    ],
+    "profile_url": [
+      "claim_280bb68a69d7acc5c280"
+    ],
+    "research_directions": [
+      "claim_280bb68a69d7acc5c280"
+    ],
+    "status": [
+      "claim_280bb68a69d7acc5c280"
+    ],
+    "title": [
+      "claim_280bb68a69d7acc5c280"
+    ]
+  },
+  "id": "mentor_3297541bcddef6be32bd",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_280bb68a69d7acc5c280"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任鸿翔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_84e65ac2fd54fc6d52ca",
+      "claim_ids": [
+        "claim_280bb68a69d7acc5c280"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/2051.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能船舶与海底工程、港航数字化与智能决策,航海仿真,数字孪生,智能决策"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/2051.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

@@ -1,0 +1,650 @@
+{
+  "created_organization_ids": [
+    "org_auto_1122d0ddde3695acd5cc",
+    "org_auto_508a5bf3197e003eb53e",
+    "org_auto_86bf3b168606543a689d",
+    "org_auto_925feb5b6f3f1d49da02",
+    "org_auto_e1dbfd30cb9f35b320c3",
+    "org_auto_f895058d8344a55685fe"
+  ],
+  "decided_at": "2026-08-22T08:49:35Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0353865d6d0929b4",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4401b33ac14e482f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4b6419345668c6f7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_e1dbfd30cb9f35b320c3"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5e784140ccbdc58b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6648734b90061172",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_84dcaf5671a3097e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_508a5bf3197e003eb53e"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_96e8b1bc9c687dbc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_debba772645cb6bc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "通信工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e951a8b2ae36d1c5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_edb119678fa10d54",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_1122d0ddde3695acd5cc"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_edc949a6c59cb4e4",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f6c553f4c3390fde",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "dlmu.edu.cn"
+          ],
+          "canonical_name": "大连海事大学",
+          "level": "university",
+          "official_url": "https://dlmu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_106",
+  "invalid_rows": [],
+  "issue": {
+    "number": 106,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/106"
+  },
+  "manifest_sha256": "78531c2c5664b79f0993b207bec89761d1fa06469068201110a002facbeda6ca",
+  "mapped_proposal_ids": [
+    "proposal_issue_106_row_1",
+    "proposal_issue_106_row_10",
+    "proposal_issue_106_row_11",
+    "proposal_issue_106_row_12",
+    "proposal_issue_106_row_13",
+    "proposal_issue_106_row_14",
+    "proposal_issue_106_row_15",
+    "proposal_issue_106_row_16",
+    "proposal_issue_106_row_17",
+    "proposal_issue_106_row_18",
+    "proposal_issue_106_row_19",
+    "proposal_issue_106_row_2",
+    "proposal_issue_106_row_20",
+    "proposal_issue_106_row_21",
+    "proposal_issue_106_row_22",
+    "proposal_issue_106_row_23",
+    "proposal_issue_106_row_24",
+    "proposal_issue_106_row_25",
+    "proposal_issue_106_row_26",
+    "proposal_issue_106_row_27",
+    "proposal_issue_106_row_28",
+    "proposal_issue_106_row_29",
+    "proposal_issue_106_row_3",
+    "proposal_issue_106_row_30",
+    "proposal_issue_106_row_31",
+    "proposal_issue_106_row_32",
+    "proposal_issue_106_row_33",
+    "proposal_issue_106_row_34",
+    "proposal_issue_106_row_35",
+    "proposal_issue_106_row_36",
+    "proposal_issue_106_row_37",
+    "proposal_issue_106_row_38",
+    "proposal_issue_106_row_39",
+    "proposal_issue_106_row_4",
+    "proposal_issue_106_row_40",
+    "proposal_issue_106_row_41",
+    "proposal_issue_106_row_42",
+    "proposal_issue_106_row_43",
+    "proposal_issue_106_row_44",
+    "proposal_issue_106_row_45",
+    "proposal_issue_106_row_46",
+    "proposal_issue_106_row_47",
+    "proposal_issue_106_row_48",
+    "proposal_issue_106_row_49",
+    "proposal_issue_106_row_5",
+    "proposal_issue_106_row_50",
+    "proposal_issue_106_row_51",
+    "proposal_issue_106_row_6",
+    "proposal_issue_106_row_7",
+    "proposal_issue_106_row_8",
+    "proposal_issue_106_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "航海学院",
+      "official_url": null,
+      "organization_id": "org_auto_1122d0ddde3695acd5cc",
+      "organization_type": "school",
+      "parent_id": "org_auto_925feb5b6f3f1d49da02"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "轮机工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_508a5bf3197e003eb53e",
+      "organization_type": "school",
+      "parent_id": "org_auto_925feb5b6f3f1d49da02"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "船舶与海洋工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_e1dbfd30cb9f35b320c3",
+      "organization_type": "school",
+      "parent_id": "org_auto_925feb5b6f3f1d49da02"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 111,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379402414,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

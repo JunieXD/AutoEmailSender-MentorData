@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b4cd7737b55274479b69"
+      ],
+      "ended_at": null,
+      "id": "aff_f4fc3ab35ac1399f7470",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1781.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b4cd7737b55274479b69"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f4fc3ab35ac1399f7470",
+      "claim_ids": [
+        "claim_b4cd7737b55274479b69"
+      ],
+      "is_primary": true,
+      "normalized_value": "ycd@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1781.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ycd@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b4cd7737b55274479b69"
+    ],
+    "email": [
+      "claim_b4cd7737b55274479b69"
+    ],
+    "name": [
+      "claim_b4cd7737b55274479b69"
+    ],
+    "profile_url": [
+      "claim_b4cd7737b55274479b69"
+    ],
+    "recent_papers": [
+      "claim_b4cd7737b55274479b69"
+    ],
+    "research_directions": [
+      "claim_b4cd7737b55274479b69"
+    ],
+    "status": [
+      "claim_b4cd7737b55274479b69"
+    ],
+    "title": [
+      "claim_b4cd7737b55274479b69"
+    ]
+  },
+  "id": "mentor_b013d1b8ae61046414f1",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b4cd7737b55274479b69"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于长东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f4fc3ab35ac1399f7470",
+      "claim_ids": [
+        "claim_b4cd7737b55274479b69"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/1781.htm"
+    }
+  ],
+  "recent_papers": [
+    "Changdong Yu, Zhihao Zhang, Xuyang Liu, Chengbin Yang, Yizhuo Wang, Xiao Liang*. Verification method for formation control of USVs based on virtual-real integration[J]. Ocean Engineering, 2025, 335: 121677.",
+    "Changdong Yu, Xiaotong Gu, Yuhang Yao, Shihan Wang, Xiao Liang*, Liuliu Pan, Yupeng Xiao. Real-time 6-DoF pose estimation for UUVs based on advanced CNN architecture with adaptive loss constraints[J]. Ocean Engineering, 2025, 333: 121425.",
+    "Changdong Yu, Haoke Yin, Chenyi Rong, Xiao Liang*, Ruijie Li, Xinrong Mo. YOLO-MRS: An efficient deep learning-based maritime object detection method for unmanned surface vehicles[J]. Applied Ocean Research, 2024, 153: 104240.",
+    "Changdong Yu, Xiaojun Bi*, Yiwei Fan. Deep learning for fluid velocity field estimation: A review[J]. Ocean Engineering, 2023, 271: 113693.",
+    "Changdong Yu, Yongpeng Chang, Xiao Liang*, Chen Liang and Zhengpeng Xie. Deep learning for particle image velocimetry with attentional transformer and cross-correlation embedded [J]. Ocean Engineering, 2024, 292:116522.",
+    "Changdong Yu, Yongpeng Chang, Xiao Liang* and Yiwei Fan. Robust fluid motion estimator based on attentional transformer [J]. IEEE Transactions on Instrumentation & Measurement, 72: 1-14, 2023.",
+    "Changdong Yu, Yiwei Fan, Xiaojun Bi*, Yunfei Kuai and Yongpeng Chang. Deep dual recurrence optical flow learning for time-resolved particle image velocimetry[J]. Physics of Fluids, 35(4), 2023.",
+    "Changdong Yu, Xiaojun Bi*, Yiwei Fan, Yang Han, and Yunfei Kuai. LightPIVNet: An effective convolutional neural network for particle image velocimetry. IEEE Transactions on Instrumentation & Measurement, 70:1-15, 2021."
+  ],
+  "research_directions": [
+    "海洋智能感知与决策技术,聚焦流场计算与感知、视觉感知与理解、无人系统决策与控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/1781.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

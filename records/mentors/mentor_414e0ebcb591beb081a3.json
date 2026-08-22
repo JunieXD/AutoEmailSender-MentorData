@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9e08d1e4703d1c85096a"
+      ],
+      "ended_at": null,
+      "id": "aff_5c5721286ecb9ae24692",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1811.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9e08d1e4703d1c85096a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5c5721286ecb9ae24692",
+      "claim_ids": [
+        "claim_9e08d1e4703d1c85096a"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiexinqiang@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1811.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xiexinqiang@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9e08d1e4703d1c85096a"
+    ],
+    "email": [
+      "claim_9e08d1e4703d1c85096a"
+    ],
+    "name": [
+      "claim_9e08d1e4703d1c85096a"
+    ],
+    "profile_url": [
+      "claim_9e08d1e4703d1c85096a"
+    ],
+    "recent_papers": [
+      "claim_9e08d1e4703d1c85096a"
+    ],
+    "research_directions": [
+      "claim_9e08d1e4703d1c85096a"
+    ],
+    "status": [
+      "claim_9e08d1e4703d1c85096a"
+    ],
+    "title": [
+      "claim_9e08d1e4703d1c85096a"
+    ]
+  },
+  "id": "mentor_414e0ebcb591beb081a3",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9e08d1e4703d1c85096a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谢新强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5c5721286ecb9ae24692",
+      "claim_ids": [
+        "claim_9e08d1e4703d1c85096a"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/1811.htm"
+    }
+  ],
+  "recent_papers": [
+    "DevRec: Multi-Relationship Embedded Software Developer Recommendation",
+    "APIRec: deep knowledge and diversity-aware web API recommendation",
+    "SoftRec: Multi-Relationship Fused Software Developer Recommendation",
+    "多特征融合的软件开发者推荐",
+    "基于复杂网络的网构软件信任模型",
+    "基于司法案例知识图谱的类案推荐",
+    "ExpRec: Deep Knowledge-awared Question Routing in Software Question Answering Community",
+    "A Neighbor-aware Group Recommendation Algorithm"
+  ],
+  "research_directions": [
+    "人工智能、推荐系统、知识图谱、大模型智能体、大数据技术与应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/1811.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:58Z"
+}

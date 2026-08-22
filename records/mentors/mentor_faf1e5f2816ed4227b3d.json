@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8b831b24b5d8d353e2d7"
+      ],
+      "ended_at": null,
+      "id": "aff_802ec0144317918d2a6f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1831.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_8b831b24b5d8d353e2d7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_802ec0144317918d2a6f",
+      "claim_ids": [
+        "claim_8b831b24b5d8d353e2d7"
+      ],
+      "is_primary": true,
+      "normalized_value": "yilin.pan@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/1831.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yilin.pan@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8b831b24b5d8d353e2d7"
+    ],
+    "email": [
+      "claim_8b831b24b5d8d353e2d7"
+    ],
+    "name": [
+      "claim_8b831b24b5d8d353e2d7"
+    ],
+    "profile_url": [
+      "claim_8b831b24b5d8d353e2d7"
+    ],
+    "recent_papers": [
+      "claim_8b831b24b5d8d353e2d7"
+    ],
+    "research_directions": [
+      "claim_8b831b24b5d8d353e2d7"
+    ],
+    "status": [
+      "claim_8b831b24b5d8d353e2d7"
+    ]
+  },
+  "id": "mentor_faf1e5f2816ed4227b3d",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8b831b24b5d8d353e2d7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "潘怡霖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_802ec0144317918d2a6f",
+      "claim_ids": [
+        "claim_8b831b24b5d8d353e2d7"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/1831.htm"
+    }
+  ],
+  "recent_papers": [
+    "Pan, Yilin, T. Zheng, and C. Chen, \"I-vector kullback-leibler divisive normalization for plda speaker verification\", in 2017 IEEE Global Conference on Signal and Information Processing (GlobalSIP), 2017, pp. 56–60.",
+    "Pan, Yilin, B. Mirheidari, M. Reuber, A. Venneri, D. Blackburn, and H. Christensen, \"Automatic hierarchical attention neural network for detecting AD.\", in INTERSPEECH, 2019, pp. 4105–4109.",
+    "Pan, Yilin, B. Mirheidari, M. Reuber, A. Venneri, D. Blackburn, and H. Christensen, \"Improving detection of Alzheimer's Disease using automatic speech recognition to identify high-quality segments for more robust feature extraction\", in INTERSPEECH, 2020, pp. 4961–4965.",
+    "Pan, Yilin, B. Mirheidari, Z. Tu, R. O'Malley, T. Walker, A. Venneri, M. Reuber, D. Blackburn, and H. Christensen, \"Acoustic feature extraction with interpretable deep neural network for neurodegenerative related disorder classification\", in INTERSPEECH, 2020, pp. 4806–4810.",
+    "Pan, Yilin, V. S. Nallanthighal, D. Blackburn, H. Christensen, and A. Härmä, \"Multi-task estimation of age and cognitive decline from speech\", in ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), IEEE, 2021, pp. 7258–7262.",
+    "Pan, Yilin∗, Mirheidari, Bahman∗, J. M. Harris, J. C. Thompson, M. Jones, J. S. Snowden, D. Blackburn, and H. Christensen, \"Exploring using the outputs of different automatic speech recognition paradigms for acoustic- and bert-based Alzheimer's dementia detection through spontaneous speech\", in INTERSPEECH, 2021 (*co-author), pp. 3810–3814.",
+    "Pan, Yilin, M. Lu, Y. Shi, et al. A Path Signature Approach for Speech-based Dementia Detection[J]. IEEE Signal Processing Letters, 2023.",
+    "Pan, Yilin, B. Mirheidari, D. Blackburn, and H. Christensen. A Two-Step Attention-Based Feature Combination Cross-Attention System for Speech-Based Dementia Detection[J]. IEEE Transactions on Audio, Speech and Language Processing, 2025."
+  ],
+  "research_directions": [
+    "病理语音检测、语音处理、自然语言处理、多模态融合"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/1831.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:43:58Z"
+}

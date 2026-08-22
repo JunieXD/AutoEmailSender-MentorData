@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8530fd9987ca5095976f"
+      ],
+      "ended_at": null,
+      "id": "aff_99d6812cd97b46de67cd",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:58Z",
+      "organization_id": "org_auto_86bf3b168606543a689d",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/2061.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8530fd9987ca5095976f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_99d6812cd97b46de67cd",
+      "claim_ids": [
+        "claim_8530fd9987ca5095976f"
+      ],
+      "is_primary": true,
+      "normalized_value": "jsren@dlmu.edu.cn",
+      "observed_at": "2026-08-21T18:43:58Z",
+      "source_url": "https://ai.dlmu.edu.cn/info/1701/2061.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jsren@dlmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:58Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8530fd9987ca5095976f"
+    ],
+    "email": [
+      "claim_8530fd9987ca5095976f"
+    ],
+    "name": [
+      "claim_8530fd9987ca5095976f"
+    ],
+    "profile_url": [
+      "claim_8530fd9987ca5095976f"
+    ],
+    "recent_papers": [
+      "claim_8530fd9987ca5095976f"
+    ],
+    "research_directions": [
+      "claim_8530fd9987ca5095976f"
+    ],
+    "status": [
+      "claim_8530fd9987ca5095976f"
+    ],
+    "title": [
+      "claim_8530fd9987ca5095976f"
+    ]
+  },
+  "id": "mentor_f874c77cc3a13b2df3ba",
+  "last_verified_at": "2026-08-21T18:43:58Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8530fd9987ca5095976f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "任俊生"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_99d6812cd97b46de67cd",
+      "claim_ids": [
+        "claim_8530fd9987ca5095976f"
+      ],
+      "observed_at": "2026-08-21T18:43:58Z",
+      "status": "current",
+      "url": "https://ai.dlmu.edu.cn/info/1701/2061.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhao Zhang, Junsheng Ren (2021) Locally Weighted Non-Parametric Modeling of Ship Maneuvering Motion Based on Sparse Gaussian Process, Journal of Marine Science and Engineering, vol. 9.",
+    "Zhang Teng, Ren Junsheng (2020) Prediction of ship motions via a three-dimensional time-domain method following a quad-tree adaptive mesh technique, Polish Maritime Research, 27: 29-38.",
+    "张腾, 任俊生, 张秀凤 (2019) 基于三维时域格林函数法的船舶在规则波中运动数值预报.交通运输工程学报, 19: 110-121.",
+    "Bai Weiwei, Ren Junsheng, Li Tieshan, (2019) Modified genetic optimization-based locally weighted learning identification modeling of ship maneuvering with full scale trial, Future Generation Computer Systems, 93: 1036-1045.",
+    "Bai Weiwei, Ren Junsheng, Li Tieshan (2018) Multi-innovation gradient iterative locally weighted learning identification for a nonlinear ship maneuvering system, China Ocean Engineering, 32: 288-300."
+  ],
+  "research_directions": [
+    "主要从事船舶运动控制及其应用的研究,研究方向有:船舶运动辨识建模,船舶计算流体力学,船舶操纵模拟器,智能船舶"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:58Z",
+  "status_reason": null,
+  "status_source_url": "https://ai.dlmu.edu.cn/info/1701/2061.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:58Z"
+}
