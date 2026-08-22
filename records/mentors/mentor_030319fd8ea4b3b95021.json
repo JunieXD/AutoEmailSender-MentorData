@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cd958a3e80fbdfbd2ee7"
+      ],
+      "ended_at": null,
+      "id": "aff_fddf1944c8fbcbe58d4c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/xuerui?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_cd958a3e80fbdfbd2ee7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fddf1944c8fbcbe58d4c",
+      "claim_ids": [
+        "claim_cd958a3e80fbdfbd2ee7"
+      ],
+      "is_primary": true,
+      "normalized_value": "xuerui@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/xuerui?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "xuerui@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cd958a3e80fbdfbd2ee7"
+    ],
+    "email": [
+      "claim_cd958a3e80fbdfbd2ee7"
+    ],
+    "name": [
+      "claim_cd958a3e80fbdfbd2ee7"
+    ],
+    "profile_url": [
+      "claim_cd958a3e80fbdfbd2ee7"
+    ],
+    "research_directions": [
+      "claim_cd958a3e80fbdfbd2ee7"
+    ],
+    "status": [
+      "claim_cd958a3e80fbdfbd2ee7"
+    ],
+    "title": [
+      "claim_cd958a3e80fbdfbd2ee7"
+    ]
+  },
+  "id": "mentor_030319fd8ea4b3b95021",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cd958a3e80fbdfbd2ee7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "薛睿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fddf1944c8fbcbe58d4c",
+      "claim_ids": [
+        "claim_cd958a3e80fbdfbd2ee7"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/xuerui?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "现代数字通信技术、卫星通信、卫星导航与定位、无人机/舰船通信等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/xuerui?locale=zh_CN",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

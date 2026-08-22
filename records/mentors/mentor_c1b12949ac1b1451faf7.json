@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_335f112bf9aa35cfc74f"
+      ],
+      "ended_at": null,
+      "id": "aff_95b196eef2f92d1e68d0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/sunan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_335f112bf9aa35cfc74f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_95b196eef2f92d1e68d0",
+      "claim_ids": [
+        "claim_335f112bf9aa35cfc74f"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunan08@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/sunan",
+      "status": "current",
+      "type": "email",
+      "value": "sunan08@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_335f112bf9aa35cfc74f"
+    ],
+    "email": [
+      "claim_335f112bf9aa35cfc74f"
+    ],
+    "name": [
+      "claim_335f112bf9aa35cfc74f"
+    ],
+    "profile_url": [
+      "claim_335f112bf9aa35cfc74f"
+    ],
+    "research_directions": [
+      "claim_335f112bf9aa35cfc74f"
+    ],
+    "status": [
+      "claim_335f112bf9aa35cfc74f"
+    ],
+    "title": [
+      "claim_335f112bf9aa35cfc74f"
+    ]
+  },
+  "id": "mentor_c1b12949ac1b1451faf7",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_335f112bf9aa35cfc74f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宿南"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_95b196eef2f92d1e68d0",
+      "claim_ids": [
+        "claim_335f112bf9aa35cfc74f"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/sunan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "遥感图像智能解译、多模态信息融合"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/sunan",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4c99bbfe4a9367a9eea2"
+      ],
+      "ended_at": null,
+      "id": "aff_72a23ce770864a01ed80",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhangchunjie?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4c99bbfe4a9367a9eea2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_72a23ce770864a01ed80",
+      "claim_ids": [
+        "claim_4c99bbfe4a9367a9eea2"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangchunjie@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhangchunjie?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "zhangchunjie@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4c99bbfe4a9367a9eea2"
+    ],
+    "email": [
+      "claim_4c99bbfe4a9367a9eea2"
+    ],
+    "name": [
+      "claim_4c99bbfe4a9367a9eea2"
+    ],
+    "profile_url": [
+      "claim_4c99bbfe4a9367a9eea2"
+    ],
+    "research_directions": [
+      "claim_4c99bbfe4a9367a9eea2"
+    ],
+    "status": [
+      "claim_4c99bbfe4a9367a9eea2"
+    ],
+    "title": [
+      "claim_4c99bbfe4a9367a9eea2"
+    ]
+  },
+  "id": "mentor_72d69fb08fe216762248",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4c99bbfe4a9367a9eea2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张春杰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_72a23ce770864a01ed80",
+      "claim_ids": [
+        "claim_4c99bbfe4a9367a9eea2"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhangchunjie?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "宽带信号检测、处理及识别,包括主被动雷达目标测向,信号分选,数字接收机,毫米波雷达研究及应用等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhangchunjie?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

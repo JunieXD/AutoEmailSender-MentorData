@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e34ff64a4f3eb84c76b7"
+      ],
+      "ended_at": null,
+      "id": "aff_62e7f7e1b182e8f032ae",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/huanglilian?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e34ff64a4f3eb84c76b7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_62e7f7e1b182e8f032ae",
+      "claim_ids": [
+        "claim_e34ff64a4f3eb84c76b7"
+      ],
+      "is_primary": true,
+      "normalized_value": "huanglilian@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/huanglilian?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "huanglilian@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ],
+    "email": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ],
+    "name": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ],
+    "profile_url": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ],
+    "recent_papers": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ],
+    "research_directions": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ],
+    "status": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ],
+    "title": [
+      "claim_e34ff64a4f3eb84c76b7"
+    ]
+  },
+  "id": "mentor_245dad9208da5eff676a",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e34ff64a4f3eb84c76b7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄丽莲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_62e7f7e1b182e8f032ae",
+      "claim_ids": [
+        "claim_e34ff64a4f3eb84c76b7"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/huanglilian?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [
+    "A new 5D Hamiltonian conservative hyperchaotic system with four center type equilibrium points, wide range and coexisting hyperchaotic orbits.Nonlinear Dynamics",
+    "Generating multi-wing hidden hyperchaotic attractors with a single stable equilibrium.IEEE Transactions on Circuits and Systems II: Express Briefs",
+    "Design and implementation of grid-wing hidden chaotic attractors with only stable equilibria.IEEE Transactions on Circuits and Systems I, Regular Papers",
+    "Generating multiwing hidden chaotic attractors with only stable node-foci: analysis, implementation and application.IEEE Transactions on Industrial Electronics",
+    "Three-Dimensional Sine chaotic system with multi-stability and multi-scroll attractor..IEEE Transactions on Circuits and Systems II: Express Briefs",
+    "Generating multi-wing hidden attractors with only stable node-foci via non-autonomous approach.Physica Scripta"
+  ],
+  "research_directions": [
+    "非线性电路设计,混沌系统的动力学分析和混沌同步控制,分数阶混沌系统,忆阻器设计及其在通信中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/huanglilian?locale=zh_CN",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

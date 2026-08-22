@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_557681b2a91cc3aa74f1"
+      ],
+      "ended_at": null,
+      "id": "aff_017534a3b3f175288e17",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/chenchunyu?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_557681b2a91cc3aa74f1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_017534a3b3f175288e17",
+      "claim_ids": [
+        "claim_557681b2a91cc3aa74f1"
+      ],
+      "is_primary": true,
+      "normalized_value": "springrain@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/chenchunyu?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "springrain@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_557681b2a91cc3aa74f1"
+    ],
+    "email": [
+      "claim_557681b2a91cc3aa74f1"
+    ],
+    "name": [
+      "claim_557681b2a91cc3aa74f1"
+    ],
+    "profile_url": [
+      "claim_557681b2a91cc3aa74f1"
+    ],
+    "research_directions": [
+      "claim_557681b2a91cc3aa74f1"
+    ],
+    "status": [
+      "claim_557681b2a91cc3aa74f1"
+    ],
+    "title": [
+      "claim_557681b2a91cc3aa74f1"
+    ]
+  },
+  "id": "mentor_47aaf1bb5486fbbb63a7",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_557681b2a91cc3aa74f1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈春雨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_017534a3b3f175288e17",
+      "claim_ids": [
+        "claim_557681b2a91cc3aa74f1"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/chenchunyu?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能、深度学习,图像的分割、特征提取、分类识别以及理解",
+    "动目标的跟踪",
+    "基于立体视觉的目标三维重建,低信噪比环境下语音信号的智能处理",
+    "基于ARM、DSP、FPGA的嵌入式设备软硬件平台的设计以及算法优化与嵌入"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/chenchunyu?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

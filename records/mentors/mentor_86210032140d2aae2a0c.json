@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_87765157cf829c97f3f5"
+      ],
+      "ended_at": null,
+      "id": "aff_1eaf9b7a6e63a8983130",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/xiaoshuang?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_87765157cf829c97f3f5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1eaf9b7a6e63a8983130",
+      "claim_ids": [
+        "claim_87765157cf829c97f3f5"
+      ],
+      "is_primary": true,
+      "normalized_value": "xiaoshuang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/xiaoshuang?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "xiaoshuang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_87765157cf829c97f3f5"
+    ],
+    "email": [
+      "claim_87765157cf829c97f3f5"
+    ],
+    "name": [
+      "claim_87765157cf829c97f3f5"
+    ],
+    "profile_url": [
+      "claim_87765157cf829c97f3f5"
+    ],
+    "research_directions": [
+      "claim_87765157cf829c97f3f5"
+    ],
+    "status": [
+      "claim_87765157cf829c97f3f5"
+    ],
+    "title": [
+      "claim_87765157cf829c97f3f5"
+    ]
+  },
+  "id": "mentor_86210032140d2aae2a0c",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_87765157cf829c97f3f5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "肖爽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1eaf9b7a6e63a8983130",
+      "claim_ids": [
+        "claim_87765157cf829c97f3f5"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/xiaoshuang?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线通信、水声通信与信号处理技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/xiaoshuang?locale=zh_CN",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

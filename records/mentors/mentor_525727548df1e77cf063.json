@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_54cd8d1190e0c017665e"
+      ],
+      "ended_at": null,
+      "id": "aff_42fe967a25c27b2a16a2",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/ningxiaoyan?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_54cd8d1190e0c017665e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_42fe967a25c27b2a16a2",
+      "claim_ids": [
+        "claim_54cd8d1190e0c017665e"
+      ],
+      "is_primary": true,
+      "normalized_value": "ningxiaoyan@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/ningxiaoyan?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "ningxiaoyan@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_54cd8d1190e0c017665e"
+    ],
+    "email": [
+      "claim_54cd8d1190e0c017665e"
+    ],
+    "name": [
+      "claim_54cd8d1190e0c017665e"
+    ],
+    "profile_url": [
+      "claim_54cd8d1190e0c017665e"
+    ],
+    "research_directions": [
+      "claim_54cd8d1190e0c017665e"
+    ],
+    "status": [
+      "claim_54cd8d1190e0c017665e"
+    ],
+    "title": [
+      "claim_54cd8d1190e0c017665e"
+    ]
+  },
+  "id": "mentor_525727548df1e77cf063",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_54cd8d1190e0c017665e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宁晓燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_42fe967a25c27b2a16a2",
+      "claim_ids": [
+        "claim_54cd8d1190e0c017665e"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/ningxiaoyan?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "通信物理层新技术,6G通信,数据链通信,通信感知一体化波形,变换域通信,认知抗干扰通信等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/ningxiaoyan?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

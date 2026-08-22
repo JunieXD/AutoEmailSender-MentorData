@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7fe1c6c7c33ebe81dbc2"
+      ],
+      "ended_at": null,
+      "id": "aff_d922e9a675ebc49c0a16",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/xizhihong?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7fe1c6c7c33ebe81dbc2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d922e9a675ebc49c0a16",
+      "claim_ids": [
+        "claim_7fe1c6c7c33ebe81dbc2"
+      ],
+      "is_primary": true,
+      "normalized_value": "xizhihong@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/xizhihong?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "xizhihong@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7fe1c6c7c33ebe81dbc2"
+    ],
+    "email": [
+      "claim_7fe1c6c7c33ebe81dbc2"
+    ],
+    "name": [
+      "claim_7fe1c6c7c33ebe81dbc2"
+    ],
+    "profile_url": [
+      "claim_7fe1c6c7c33ebe81dbc2"
+    ],
+    "status": [
+      "claim_7fe1c6c7c33ebe81dbc2"
+    ],
+    "title": [
+      "claim_7fe1c6c7c33ebe81dbc2"
+    ]
+  },
+  "id": "mentor_d7db3b69601a4a7e6d74",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7fe1c6c7c33ebe81dbc2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "席志红"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d922e9a675ebc49c0a16",
+      "claim_ids": [
+        "claim_7fe1c6c7c33ebe81dbc2"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/xizhihong?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/xizhihong?locale=zh_CN",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}

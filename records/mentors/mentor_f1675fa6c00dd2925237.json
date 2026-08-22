@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9f7ef65947f8e4cfba58"
+      ],
+      "ended_at": null,
+      "id": "aff_4fe107badc3d4dbdfa4d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:50Z",
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "source_url": "http://faculty.hrbeu.edu.cn/qilin?locale=zh_CN",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9f7ef65947f8e4cfba58"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4fe107badc3d4dbdfa4d",
+      "claim_ids": [
+        "claim_9f7ef65947f8e4cfba58"
+      ],
+      "is_primary": true,
+      "normalized_value": "qilin@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:50Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/qilin?locale=zh_CN",
+      "status": "current",
+      "type": "email",
+      "value": "qilin@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:50Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9f7ef65947f8e4cfba58"
+    ],
+    "email": [
+      "claim_9f7ef65947f8e4cfba58"
+    ],
+    "name": [
+      "claim_9f7ef65947f8e4cfba58"
+    ],
+    "profile_url": [
+      "claim_9f7ef65947f8e4cfba58"
+    ],
+    "status": [
+      "claim_9f7ef65947f8e4cfba58"
+    ],
+    "title": [
+      "claim_9f7ef65947f8e4cfba58"
+    ]
+  },
+  "id": "mentor_f1675fa6c00dd2925237",
+  "last_verified_at": "2026-08-21T18:47:50Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9f7ef65947f8e4cfba58"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "齐琳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4fe107badc3d4dbdfa4d",
+      "claim_ids": [
+        "claim_9f7ef65947f8e4cfba58"
+      ],
+      "observed_at": "2026-08-21T18:47:50Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/qilin?locale=zh_CN"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:50Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/qilin?locale=zh_CN",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:50Z"
+}
