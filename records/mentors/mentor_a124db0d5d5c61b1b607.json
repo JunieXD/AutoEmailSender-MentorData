@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b4b8fccb9cdf8a167b70"
+      ],
+      "ended_at": null,
+      "id": "aff_19b23e9ad46aed036a99",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:10Z",
+      "organization_id": "org_auto_4737f7c0b22981b8795b",
+      "source_url": "https://eeis.ustc.edu.cn/2012/0306/c2648a19378/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b4b8fccb9cdf8a167b70"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_19b23e9ad46aed036a99",
+      "claim_ids": [
+        "claim_b4b8fccb9cdf8a167b70"
+      ],
+      "is_primary": true,
+      "normalized_value": "xinmei@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:10Z",
+      "source_url": "https://eeis.ustc.edu.cn/2012/0306/c2648a19378/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xinmei@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ],
+    "email": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ],
+    "name": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ],
+    "profile_url": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ],
+    "recent_papers": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ],
+    "research_directions": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ],
+    "status": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ],
+    "title": [
+      "claim_b4b8fccb9cdf8a167b70"
+    ]
+  },
+  "id": "mentor_a124db0d5d5c61b1b607",
+  "last_verified_at": "2026-08-21T18:53:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b4b8fccb9cdf8a167b70"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田新梅"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_19b23e9ad46aed036a99",
+      "claim_ids": [
+        "claim_b4b8fccb9cdf8a167b70"
+      ],
+      "observed_at": "2026-08-21T18:53:10Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2012/0306/c2648a19378/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xinmei Tian, Linjun Yang, Yijuan Lu, Qi Tian, and Dacheng Tao. Image Search Reranking With Hierarchical Topic Awareness. IEEE Transactions on Cybernetics, 2015.",
+    "Xinmei Tian, Qianghuai Jia, and Tao Mei. Query Difficulty Estimation for Image Search With Query Reconstruction Error. IEEE Transactions on Multimedia (TMM), 2015.",
+    "Ya Li, Xinmei Tian, Mingli Song, and Dacheng Tao. Multi-task proximal support vector machine. Pattern Recognition, 2015.",
+    "Ya Li, Xinmei Tian, Tongliang Liu, and Dacheng Tao. Multi-Task Model and Feature Joint Learning. IJCAI, 2015.",
+    "Qianghuai Jia and Xinmei Tian. Query difficulty estimation via relevance prediction for image retrieval. Signal Processing, 2014.",
+    "Xinmei Tian and Yijuan Lu. Discriminative codebook learning for Web image Search. Signal Processing, 2013.",
+    "Xinmei Tian, Yijuan Lu and Linjun Yang. Query Difficulty Prediction for Web Image Search. IEEE Transactions on Multimedia (TMM), 2012.",
+    "Xinmei Tian, Dacheng Tao and Yong Rui. Sparse transfer learning for interactive video search reranking. ACM Transactions on Multimedia Computing, Communications, and Applications (TOMCCAP), 2012."
+  ],
+  "research_directions": [
+    "多媒体信息检索、计算机视觉和机器学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:10Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2012/0306/c2648a19378/page.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:53:10Z"
+}

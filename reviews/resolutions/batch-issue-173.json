@@ -1,0 +1,183 @@
+{
+  "created_organization_ids": [
+    "org_auto_0ec2f8f15b1474690cc0",
+    "org_auto_4737f7c0b22981b8795b"
+  ],
+  "decided_at": "2026-08-22T08:50:30Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_10ea8b8e202756d5",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ustc.edu.cn"
+          ],
+          "canonical_name": "中国科学技术大学",
+          "level": "university",
+          "official_url": "https://ustc.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息科学技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_2375b2c7909b4dae",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ustc.edu.cn"
+          ],
+          "canonical_name": "中国科学技术大学",
+          "level": "university",
+          "official_url": "https://ustc.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息科学技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子工程与信息科学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_fa7feaef09686fa9",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "ustc.edu.cn"
+          ],
+          "canonical_name": "中国科学技术大学",
+          "level": "university",
+          "official_url": "https://ustc.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息科学技术学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子工程与信息科学系(6系)",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_173",
+  "invalid_rows": [],
+  "issue": {
+    "number": 173,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/173"
+  },
+  "manifest_sha256": "7eb377d87efc698c1e4deb20f703fae84f91d5a9e20b972c8b90aeb8b52e3374",
+  "mapped_proposal_ids": [
+    "proposal_issue_173_row_1",
+    "proposal_issue_173_row_10",
+    "proposal_issue_173_row_11",
+    "proposal_issue_173_row_12",
+    "proposal_issue_173_row_13",
+    "proposal_issue_173_row_14",
+    "proposal_issue_173_row_15",
+    "proposal_issue_173_row_16",
+    "proposal_issue_173_row_17",
+    "proposal_issue_173_row_18",
+    "proposal_issue_173_row_2",
+    "proposal_issue_173_row_3",
+    "proposal_issue_173_row_4",
+    "proposal_issue_173_row_5",
+    "proposal_issue_173_row_6",
+    "proposal_issue_173_row_7",
+    "proposal_issue_173_row_8",
+    "proposal_issue_173_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 183,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379405691,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
