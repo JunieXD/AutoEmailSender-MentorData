@@ -1,0 +1,644 @@
+{
+  "created_organization_ids": [
+    "org_auto_45b213ba2078e6b39c2f",
+    "org_auto_51c6c958be8caffd12d4",
+    "org_auto_d37c3b5e36685c0001ae"
+  ],
+  "decided_at": "2026-08-22T08:49:52Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_00bb0d3f005c5c0f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认系所字段实际为学校下同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_7c95a6f8de93c63dc44f"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_04e9a314e00287dd",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_067de96db90edcf8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_45b213ba2078e6b39c2f"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_243b155e3f3ce332",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_451ed5cf1edc535b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_834945a4343af34b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9c9b9d20eec26236",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b36b021bba822267",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能科学与工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d8cbd2b9e6fbb75b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_45b213ba2078e6b39c2f"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ed5f16a1884ff693",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "hrbeu.edu.cn"
+          ],
+          "canonical_name": "哈尔滨工程大学",
+          "level": "university",
+          "official_url": "https://hrbeu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_51c6c958be8caffd12d4"
+    }
+  ],
+  "id": "organization_review_issue_124",
+  "invalid_rows": [],
+  "issue": {
+    "number": 124,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/124"
+  },
+  "manifest_sha256": "e227044790d8a429208a2dde320c17d65a508f786c448b29cfea373bda0df177",
+  "mapped_proposal_ids": [
+    "proposal_issue_124_row_1",
+    "proposal_issue_124_row_10",
+    "proposal_issue_124_row_100",
+    "proposal_issue_124_row_101",
+    "proposal_issue_124_row_102",
+    "proposal_issue_124_row_103",
+    "proposal_issue_124_row_104",
+    "proposal_issue_124_row_105",
+    "proposal_issue_124_row_106",
+    "proposal_issue_124_row_107",
+    "proposal_issue_124_row_108",
+    "proposal_issue_124_row_109",
+    "proposal_issue_124_row_11",
+    "proposal_issue_124_row_110",
+    "proposal_issue_124_row_111",
+    "proposal_issue_124_row_112",
+    "proposal_issue_124_row_113",
+    "proposal_issue_124_row_114",
+    "proposal_issue_124_row_115",
+    "proposal_issue_124_row_116",
+    "proposal_issue_124_row_117",
+    "proposal_issue_124_row_118",
+    "proposal_issue_124_row_119",
+    "proposal_issue_124_row_12",
+    "proposal_issue_124_row_120",
+    "proposal_issue_124_row_121",
+    "proposal_issue_124_row_122",
+    "proposal_issue_124_row_123",
+    "proposal_issue_124_row_124",
+    "proposal_issue_124_row_125",
+    "proposal_issue_124_row_126",
+    "proposal_issue_124_row_127",
+    "proposal_issue_124_row_128",
+    "proposal_issue_124_row_129",
+    "proposal_issue_124_row_13",
+    "proposal_issue_124_row_130",
+    "proposal_issue_124_row_131",
+    "proposal_issue_124_row_132",
+    "proposal_issue_124_row_133",
+    "proposal_issue_124_row_134",
+    "proposal_issue_124_row_135",
+    "proposal_issue_124_row_136",
+    "proposal_issue_124_row_137",
+    "proposal_issue_124_row_138",
+    "proposal_issue_124_row_14",
+    "proposal_issue_124_row_15",
+    "proposal_issue_124_row_16",
+    "proposal_issue_124_row_17",
+    "proposal_issue_124_row_18",
+    "proposal_issue_124_row_19",
+    "proposal_issue_124_row_2",
+    "proposal_issue_124_row_20",
+    "proposal_issue_124_row_21",
+    "proposal_issue_124_row_22",
+    "proposal_issue_124_row_23",
+    "proposal_issue_124_row_24",
+    "proposal_issue_124_row_25",
+    "proposal_issue_124_row_26",
+    "proposal_issue_124_row_27",
+    "proposal_issue_124_row_28",
+    "proposal_issue_124_row_29",
+    "proposal_issue_124_row_3",
+    "proposal_issue_124_row_30",
+    "proposal_issue_124_row_31",
+    "proposal_issue_124_row_32",
+    "proposal_issue_124_row_33",
+    "proposal_issue_124_row_34",
+    "proposal_issue_124_row_35",
+    "proposal_issue_124_row_36",
+    "proposal_issue_124_row_37",
+    "proposal_issue_124_row_38",
+    "proposal_issue_124_row_39",
+    "proposal_issue_124_row_4",
+    "proposal_issue_124_row_40",
+    "proposal_issue_124_row_41",
+    "proposal_issue_124_row_42",
+    "proposal_issue_124_row_43",
+    "proposal_issue_124_row_44",
+    "proposal_issue_124_row_45",
+    "proposal_issue_124_row_46",
+    "proposal_issue_124_row_47",
+    "proposal_issue_124_row_48",
+    "proposal_issue_124_row_49",
+    "proposal_issue_124_row_5",
+    "proposal_issue_124_row_50",
+    "proposal_issue_124_row_51",
+    "proposal_issue_124_row_52",
+    "proposal_issue_124_row_53",
+    "proposal_issue_124_row_54",
+    "proposal_issue_124_row_55",
+    "proposal_issue_124_row_56",
+    "proposal_issue_124_row_57",
+    "proposal_issue_124_row_58",
+    "proposal_issue_124_row_59",
+    "proposal_issue_124_row_6",
+    "proposal_issue_124_row_60",
+    "proposal_issue_124_row_61",
+    "proposal_issue_124_row_62",
+    "proposal_issue_124_row_63",
+    "proposal_issue_124_row_64",
+    "proposal_issue_124_row_65",
+    "proposal_issue_124_row_66",
+    "proposal_issue_124_row_67",
+    "proposal_issue_124_row_68",
+    "proposal_issue_124_row_69",
+    "proposal_issue_124_row_7",
+    "proposal_issue_124_row_70",
+    "proposal_issue_124_row_71",
+    "proposal_issue_124_row_72",
+    "proposal_issue_124_row_73",
+    "proposal_issue_124_row_74",
+    "proposal_issue_124_row_75",
+    "proposal_issue_124_row_76",
+    "proposal_issue_124_row_77",
+    "proposal_issue_124_row_78",
+    "proposal_issue_124_row_79",
+    "proposal_issue_124_row_8",
+    "proposal_issue_124_row_80",
+    "proposal_issue_124_row_81",
+    "proposal_issue_124_row_82",
+    "proposal_issue_124_row_83",
+    "proposal_issue_124_row_84",
+    "proposal_issue_124_row_85",
+    "proposal_issue_124_row_86",
+    "proposal_issue_124_row_87",
+    "proposal_issue_124_row_88",
+    "proposal_issue_124_row_89",
+    "proposal_issue_124_row_9",
+    "proposal_issue_124_row_90",
+    "proposal_issue_124_row_91",
+    "proposal_issue_124_row_92",
+    "proposal_issue_124_row_93",
+    "proposal_issue_124_row_94",
+    "proposal_issue_124_row_95",
+    "proposal_issue_124_row_96",
+    "proposal_issue_124_row_97",
+    "proposal_issue_124_row_98",
+    "proposal_issue_124_row_99"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "烟台研究院",
+      "official_url": null,
+      "organization_id": "org_auto_45b213ba2078e6b39c2f",
+      "organization_type": "institute",
+      "parent_id": "org_auto_da7b83d222a24d14c2d7"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "数学科学学院",
+      "official_url": null,
+      "organization_id": "org_auto_51c6c958be8caffd12d4",
+      "organization_type": "school",
+      "parent_id": "org_auto_da7b83d222a24d14c2d7"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "信息与通信工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_7c95a6f8de93c63dc44f",
+      "organization_type": "school",
+      "parent_id": "org_auto_da7b83d222a24d14c2d7"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 135,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379403438,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

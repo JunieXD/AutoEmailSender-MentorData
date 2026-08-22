@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e975d4e158d5933e4ef4"
+      ],
+      "ended_at": null,
+      "id": "aff_b58c8b8255e72759a91e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/yulingzhou",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_e975d4e158d5933e4ef4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b58c8b8255e72759a91e",
+      "claim_ids": [
+        "claim_e975d4e158d5933e4ef4"
+      ],
+      "is_primary": true,
+      "normalized_value": "lingzhouyu@foxmail.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/yulingzhou",
+      "status": "current",
+      "type": "email",
+      "value": "lingzhouyu@foxmail.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e975d4e158d5933e4ef4"
+    ],
+    "email": [
+      "claim_e975d4e158d5933e4ef4"
+    ],
+    "name": [
+      "claim_e975d4e158d5933e4ef4"
+    ],
+    "profile_url": [
+      "claim_e975d4e158d5933e4ef4"
+    ],
+    "research_directions": [
+      "claim_e975d4e158d5933e4ef4"
+    ],
+    "status": [
+      "claim_e975d4e158d5933e4ef4"
+    ],
+    "title": [
+      "claim_e975d4e158d5933e4ef4"
+    ]
+  },
+  "id": "mentor_362e9df004409e9317b5",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e975d4e158d5933e4ef4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于凌舟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b58c8b8255e72759a91e",
+      "claim_ids": [
+        "claim_e975d4e158d5933e4ef4"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/yulingzhou"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "外骨骼机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/yulingzhou",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

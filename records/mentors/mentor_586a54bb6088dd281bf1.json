@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b67ac7b70fce8301edf1"
+      ],
+      "ended_at": null,
+      "id": "aff_c1d1733d30395e00daab",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/gaozhongxing",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b67ac7b70fce8301edf1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c1d1733d30395e00daab",
+      "claim_ids": [
+        "claim_b67ac7b70fce8301edf1"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhongxing1141@sina.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/gaozhongxing",
+      "status": "current",
+      "type": "email",
+      "value": "zhongxing1141@sina.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b67ac7b70fce8301edf1"
+    ],
+    "email": [
+      "claim_b67ac7b70fce8301edf1"
+    ],
+    "name": [
+      "claim_b67ac7b70fce8301edf1"
+    ],
+    "profile_url": [
+      "claim_b67ac7b70fce8301edf1"
+    ],
+    "recent_papers": [
+      "claim_b67ac7b70fce8301edf1"
+    ],
+    "status": [
+      "claim_b67ac7b70fce8301edf1"
+    ],
+    "title": [
+      "claim_b67ac7b70fce8301edf1"
+    ]
+  },
+  "id": "mentor_586a54bb6088dd281bf1",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b67ac7b70fce8301edf1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郜中星"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c1d1733d30395e00daab",
+      "claim_ids": [
+        "claim_b67ac7b70fce8301edf1"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/gaozhongxing"
+    }
+  ],
+  "recent_papers": [
+    "Z. X. Gao. Self-calibration for phase shift in Coriolis vibratory gyroscope with whole-angle mode operation,Measurement,",
+    "Z. X. Gao. Stiffness tuning of hemispherical shell resonator based on electrostatic force applied to discrete electrodes,IEEE Transactions on Instrumentation and Measurement,",
+    "Z. X. Gao. Identification and calibration of the detection signal distortion in whole angle mode hemispherical resonator gyro,IEEE Transactions on Instrumentation and Measurement,",
+    "Z. X. Gao. Control system based on double-frequency drive and single-channel detection for rate integrating vibratory gyroscope,IEEE Sensors Journal,",
+    "Z. X. Gao. Dual-channel phase delay compensation for hemispherical resonator gyroscopes with angle-dependent bias reduction to 3.190×10-5◦/s,IEEE Sensors Journal,",
+    "Z. X. Gao. Fast parameter identification method for damping and stiffness errors in hemispherical resonator gyroscopes,IEEE Sensors Journal,"
+  ],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/gaozhongxing",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

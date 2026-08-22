@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8415a613a23647d55659"
+      ],
+      "ended_at": null,
+      "id": "aff_82f42b5b0fd3c295346c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhanglanyong",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8415a613a23647d55659"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_82f42b5b0fd3c295346c",
+      "claim_ids": [
+        "claim_8415a613a23647d55659"
+      ],
+      "is_primary": true,
+      "normalized_value": "zlyalf@sina.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhanglanyong",
+      "status": "current",
+      "type": "email",
+      "value": "zlyalf@sina.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8415a613a23647d55659"
+    ],
+    "email": [
+      "claim_8415a613a23647d55659"
+    ],
+    "name": [
+      "claim_8415a613a23647d55659"
+    ],
+    "profile_url": [
+      "claim_8415a613a23647d55659"
+    ],
+    "research_directions": [
+      "claim_8415a613a23647d55659"
+    ],
+    "status": [
+      "claim_8415a613a23647d55659"
+    ],
+    "title": [
+      "claim_8415a613a23647d55659"
+    ]
+  },
+  "id": "mentor_715b788f8513c535e81a",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8415a613a23647d55659"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张兰勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_82f42b5b0fd3c295346c",
+      "claim_ids": [
+        "claim_8415a613a23647d55659"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhanglanyong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "集群智能控制、智能物联网及机器人控制、随机信号处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhanglanyong",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

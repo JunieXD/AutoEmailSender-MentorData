@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0e8fd115b3fe81e1c735"
+      ],
+      "ended_at": null,
+      "id": "aff_b280715dca280248d7db",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "https://faculty.hrbeu.edu.cn/fuhuixuan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0e8fd115b3fe81e1c735"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b280715dca280248d7db",
+      "claim_ids": [
+        "claim_0e8fd115b3fe81e1c735"
+      ],
+      "is_primary": true,
+      "normalized_value": "fuhuixuan@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/fuhuixuan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fuhuixuan@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0e8fd115b3fe81e1c735"
+    ],
+    "email": [
+      "claim_0e8fd115b3fe81e1c735"
+    ],
+    "name": [
+      "claim_0e8fd115b3fe81e1c735"
+    ],
+    "profile_url": [
+      "claim_0e8fd115b3fe81e1c735"
+    ],
+    "research_directions": [
+      "claim_0e8fd115b3fe81e1c735"
+    ],
+    "status": [
+      "claim_0e8fd115b3fe81e1c735"
+    ],
+    "title": [
+      "claim_0e8fd115b3fe81e1c735"
+    ]
+  },
+  "id": "mentor_03a5062c9e0ec1677ea8",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0e8fd115b3fe81e1c735"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "傅荟璇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b280715dca280248d7db",
+      "claim_ids": [
+        "claim_0e8fd115b3fe81e1c735"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/fuhuixuan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与人工智能、深度学习及机器视觉检测、无人系统视觉伺服控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/fuhuixuan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

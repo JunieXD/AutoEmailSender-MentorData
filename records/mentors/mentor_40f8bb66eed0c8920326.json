@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ce164bcae51afc96b2ce"
+      ],
+      "ended_at": null,
+      "id": "aff_f2443e038f5e9d0cec91",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhouweidong",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ce164bcae51afc96b2ce"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f2443e038f5e9d0cec91",
+      "claim_ids": [
+        "claim_ce164bcae51afc96b2ce"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouweidong@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhouweidong",
+      "status": "current",
+      "type": "email",
+      "value": "zhouweidong@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ce164bcae51afc96b2ce"
+    ],
+    "email": [
+      "claim_ce164bcae51afc96b2ce"
+    ],
+    "name": [
+      "claim_ce164bcae51afc96b2ce"
+    ],
+    "profile_url": [
+      "claim_ce164bcae51afc96b2ce"
+    ],
+    "status": [
+      "claim_ce164bcae51afc96b2ce"
+    ],
+    "title": [
+      "claim_ce164bcae51afc96b2ce"
+    ]
+  },
+  "id": "mentor_40f8bb66eed0c8920326",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ce164bcae51afc96b2ce"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周卫东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f2443e038f5e9d0cec91",
+      "claim_ids": [
+        "claim_ce164bcae51afc96b2ce"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhouweidong"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhouweidong",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

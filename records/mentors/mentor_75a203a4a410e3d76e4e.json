@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e0317702c11db669c9c0"
+      ],
+      "ended_at": null,
+      "id": "aff_5a971d884065043f70ba",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/wangxianfeng",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e0317702c11db669c9c0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5a971d884065043f70ba",
+      "claim_ids": [
+        "claim_e0317702c11db669c9c0"
+      ],
+      "is_primary": true,
+      "normalized_value": "19800446@qq.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/wangxianfeng",
+      "status": "current",
+      "type": "email",
+      "value": "19800446@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e0317702c11db669c9c0"
+    ],
+    "email": [
+      "claim_e0317702c11db669c9c0"
+    ],
+    "name": [
+      "claim_e0317702c11db669c9c0"
+    ],
+    "profile_url": [
+      "claim_e0317702c11db669c9c0"
+    ],
+    "research_directions": [
+      "claim_e0317702c11db669c9c0"
+    ],
+    "status": [
+      "claim_e0317702c11db669c9c0"
+    ]
+  },
+  "id": "mentor_75a203a4a410e3d76e4e",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e0317702c11db669c9c0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王显峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5a971d884065043f70ba",
+      "claim_ids": [
+        "claim_e0317702c11db669c9c0"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/wangxianfeng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能制造技术研究及系统研发、机器视觉技术研究与应用开发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/wangxianfeng",
+  "title": null,
+  "updated_at": "2026-08-21T18:47:56Z"
+}

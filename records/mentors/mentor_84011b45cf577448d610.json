@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b1ef10d6813f9f3141b1"
+      ],
+      "ended_at": null,
+      "id": "aff_e637fda859708ba66463",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/jiangxiangli",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b1ef10d6813f9f3141b1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e637fda859708ba66463",
+      "claim_ids": [
+        "claim_b1ef10d6813f9f3141b1"
+      ],
+      "is_primary": true,
+      "normalized_value": "acheuedu@163.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/jiangxiangli",
+      "status": "current",
+      "type": "email",
+      "value": "acheuedu@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b1ef10d6813f9f3141b1"
+    ],
+    "email": [
+      "claim_b1ef10d6813f9f3141b1"
+    ],
+    "name": [
+      "claim_b1ef10d6813f9f3141b1"
+    ],
+    "profile_url": [
+      "claim_b1ef10d6813f9f3141b1"
+    ],
+    "recent_papers": [
+      "claim_b1ef10d6813f9f3141b1"
+    ],
+    "research_directions": [
+      "claim_b1ef10d6813f9f3141b1"
+    ],
+    "status": [
+      "claim_b1ef10d6813f9f3141b1"
+    ],
+    "title": [
+      "claim_b1ef10d6813f9f3141b1"
+    ]
+  },
+  "id": "mentor_84011b45cf577448d610",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b1ef10d6813f9f3141b1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姜享利"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e637fda859708ba66463",
+      "claim_ids": [
+        "claim_b1ef10d6813f9f3141b1"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/jiangxiangli"
+    }
+  ],
+  "recent_papers": [
+    "第一作者. Dissipative Leaderless Formation via Nonfragile Memory Sampled-Data Control for Unmanned Surface Vehicles With Switching Topologies. IEEE/ASME Trans Mechatronics, 2025.",
+    "第一作者. Reachable Set Estimation of Multiagent Systems: An Approximate Consensus Perspective. IEEE Trans Control Netw Syst, 2024.",
+    "第一作者. Event-Triggered Practical Formation Control of Leaderless Unmanned Surface Vehicles With Environmental Disturbances. IEEE Trans Circuits Syst II Exp Briefs, 2024.",
+    "第一作者. Dissipativity-Based Consensus Tracking of Singular Multiagent Systems With Switching Topologies and Communication Delays. IEEE Trans Cybern, 2022.",
+    "第一作者. Nonfragile Formation Seeking of Unmanned Surface Vehicles: A Sliding Mode Control Approach. IEEE Trans Netw Sci Eng, 2022."
+  ],
+  "research_directions": [
+    "海洋智能无人系统自主控制与集群协同,研究内容包括轨迹跟踪、编队控制、合围控制等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/jiangxiangli",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

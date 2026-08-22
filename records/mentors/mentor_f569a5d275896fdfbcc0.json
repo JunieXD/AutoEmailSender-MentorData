@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c01d1198222373d7db2d"
+      ],
+      "ended_at": null,
+      "id": "aff_79b407a3bcad69e475f9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/sunqi1",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_c01d1198222373d7db2d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_79b407a3bcad69e475f9",
+      "claim_ids": [
+        "claim_c01d1198222373d7db2d"
+      ],
+      "is_primary": true,
+      "normalized_value": "qisun@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/sunqi1",
+      "status": "current",
+      "type": "email",
+      "value": "qisun@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c01d1198222373d7db2d"
+    ],
+    "email": [
+      "claim_c01d1198222373d7db2d"
+    ],
+    "name": [
+      "claim_c01d1198222373d7db2d"
+    ],
+    "profile_url": [
+      "claim_c01d1198222373d7db2d"
+    ],
+    "research_directions": [
+      "claim_c01d1198222373d7db2d"
+    ],
+    "status": [
+      "claim_c01d1198222373d7db2d"
+    ],
+    "title": [
+      "claim_c01d1198222373d7db2d"
+    ]
+  },
+  "id": "mentor_f569a5d275896fdfbcc0",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c01d1198222373d7db2d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙琦"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_79b407a3bcad69e475f9",
+      "claim_ids": [
+        "claim_c01d1198222373d7db2d"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/sunqi1"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "海洋智能装备技术、海浪主动补偿技术、机器人机构学、机器人动力学与控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/sunqi1",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

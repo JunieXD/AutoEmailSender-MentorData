@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0958c9699f51f1545289"
+      ],
+      "ended_at": null,
+      "id": "aff_daa0df592df9dc2f9e18",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/pangming",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0958c9699f51f1545289"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_daa0df592df9dc2f9e18",
+      "claim_ids": [
+        "claim_0958c9699f51f1545289"
+      ],
+      "is_primary": true,
+      "normalized_value": "pangm@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/pangming",
+      "status": "current",
+      "type": "email",
+      "value": "pangm@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0958c9699f51f1545289"
+    ],
+    "email": [
+      "claim_0958c9699f51f1545289"
+    ],
+    "name": [
+      "claim_0958c9699f51f1545289"
+    ],
+    "profile_url": [
+      "claim_0958c9699f51f1545289"
+    ],
+    "recent_papers": [
+      "claim_0958c9699f51f1545289"
+    ],
+    "research_directions": [
+      "claim_0958c9699f51f1545289"
+    ],
+    "status": [
+      "claim_0958c9699f51f1545289"
+    ],
+    "title": [
+      "claim_0958c9699f51f1545289"
+    ]
+  },
+  "id": "mentor_78855e837825e1953001",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0958c9699f51f1545289"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "庞明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_daa0df592df9dc2f9e18",
+      "claim_ids": [
+        "claim_0958c9699f51f1545289"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/pangming"
+    }
+  ],
+  "recent_papers": [
+    "A suspending, shrinkage-free electrospun PLGA nanofibrous scaffold for skin tissue engineering,ACS APPLIED MATERIALS & INTERFACES,2015,:10872~10877",
+    "Scale Invariant Feature Transform-Gauss Mosaic Method for Blood,JOURNAL OF MEDICAL IMAGING AND HEALTH INFORMATICS,2019,:134~139",
+    "A stick-slip positioning stage robust to load variations,IEEE-ASME TRANSACTIONS ON MECHATRONICS,2016,:2165~2173",
+    "A suspending, shrinkage-free electrospun PLGA nanofibrous scaffold for skin tissue engineering",
+    "Scale Invariant Feature Transform-Gauss Mosaic Method for Blood",
+    "A stick-slip positioning stage robust to load variations"
+  ],
+  "research_directions": [
+    "机器人及智能系统应用、精密定位技术、生物医用材料、医学影像处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/pangming",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f859ca270c45ce4015e8"
+      ],
+      "ended_at": null,
+      "id": "aff_2db6c554747057893183",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/liliang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f859ca270c45ce4015e8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2db6c554747057893183",
+      "claim_ids": [
+        "claim_f859ca270c45ce4015e8"
+      ],
+      "is_primary": true,
+      "normalized_value": "liliang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/liliang",
+      "status": "current",
+      "type": "email",
+      "value": "liliang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f859ca270c45ce4015e8"
+    ],
+    "email": [
+      "claim_f859ca270c45ce4015e8"
+    ],
+    "name": [
+      "claim_f859ca270c45ce4015e8"
+    ],
+    "profile_url": [
+      "claim_f859ca270c45ce4015e8"
+    ],
+    "recent_papers": [
+      "claim_f859ca270c45ce4015e8"
+    ],
+    "research_directions": [
+      "claim_f859ca270c45ce4015e8"
+    ],
+    "status": [
+      "claim_f859ca270c45ce4015e8"
+    ],
+    "title": [
+      "claim_f859ca270c45ce4015e8"
+    ]
+  },
+  "id": "mentor_64b1ce56899439b55932",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f859ca270c45ce4015e8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李亮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2db6c554747057893183",
+      "claim_ids": [
+        "claim_f859ca270c45ce4015e8"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/liliang"
+    }
+  ],
+  "recent_papers": [
+    "BDS triple-frequency tightly coupled short-baseline RTK method by calibrating the between-receiver inter-frequency biases,Science China-Earth Sciences,2019",
+    "BeiDou reliable integer ambiguity resolution in the presence of time-correlated observation errors,China Satellite Navigation Conference,2018,:571-584",
+    "北斗站间单差载波相位差分定位方法,中国惯性技术学报,2018,:649-653",
+    "基于模糊度线性约束的消电离层多频模糊度解算方法,测绘学报,2018,:930-939"
+  ],
+  "research_directions": [
+    "高精度组合导航定位及完好性监测"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/liliang",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

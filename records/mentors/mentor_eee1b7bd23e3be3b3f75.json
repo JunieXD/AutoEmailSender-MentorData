@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dabf95fcfe43a415ff08"
+      ],
+      "ended_at": null,
+      "id": "aff_12af992675feab746d69",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/luankuan",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_dabf95fcfe43a415ff08"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_12af992675feab746d69",
+      "claim_ids": [
+        "claim_dabf95fcfe43a415ff08"
+      ],
+      "is_primary": true,
+      "normalized_value": "luankuan@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/luankuan",
+      "status": "current",
+      "type": "email",
+      "value": "luankuan@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dabf95fcfe43a415ff08"
+    ],
+    "email": [
+      "claim_dabf95fcfe43a415ff08"
+    ],
+    "name": [
+      "claim_dabf95fcfe43a415ff08"
+    ],
+    "profile_url": [
+      "claim_dabf95fcfe43a415ff08"
+    ],
+    "recent_papers": [
+      "claim_dabf95fcfe43a415ff08"
+    ],
+    "research_directions": [
+      "claim_dabf95fcfe43a415ff08"
+    ],
+    "status": [
+      "claim_dabf95fcfe43a415ff08"
+    ],
+    "title": [
+      "claim_dabf95fcfe43a415ff08"
+    ]
+  },
+  "id": "mentor_eee1b7bd23e3be3b3f75",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dabf95fcfe43a415ff08"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "栾宽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_12af992675feab746d69",
+      "claim_ids": [
+        "claim_dabf95fcfe43a415ff08"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/luankuan"
+    }
+  ],
+  "recent_papers": [
+    "谈多媒体在生物医学传感器教学中的应用,哈尔滨工程大学学报,2007",
+    "Association between the macrophage inflammatory protein-l alpha gene polymorphism and Alzheimer’s disease in the Chinese population,Neuroscience Letters,2008",
+    "A freehand on-line ultrasound probe calibration method based on unscented Kalman filtering,Journal of Japan Society of Computer Aided Surgery,2010",
+    "Flexible Endoscope Tracking with Three Dimension Ultrasound,Journal of Japan Society of Computer Aided Surgery,2010",
+    "Evaluation using a probability distribution of measurement error of Magnetic tracking system,Journal of Japan Society of Computer Aided Surgery,2011",
+    "A freehand on-line ultrasound probe calibration method based on unscented Kalman filtering,Journal of Japan Society of Computer Aided Surgery,2010,:274-275"
+  ],
+  "research_directions": [
+    "人工智能、手术机器人、医学图像可视化、虚拟现实"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/luankuan",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

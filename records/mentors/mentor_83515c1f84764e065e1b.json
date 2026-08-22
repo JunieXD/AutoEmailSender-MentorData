@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9ef5653cf278e6e5abdb"
+      ],
+      "ended_at": null,
+      "id": "aff_db357100f524f1eda050",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_45b213ba2078e6b39c2f",
+      "source_url": "https://faculty.hrbeu.edu.cn/lidan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9ef5653cf278e6e5abdb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_db357100f524f1eda050",
+      "claim_ids": [
+        "claim_9ef5653cf278e6e5abdb"
+      ],
+      "is_primary": true,
+      "normalized_value": "davidlee@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/lidan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "davidlee@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9ef5653cf278e6e5abdb"
+    ],
+    "email": [
+      "claim_9ef5653cf278e6e5abdb"
+    ],
+    "name": [
+      "claim_9ef5653cf278e6e5abdb"
+    ],
+    "profile_url": [
+      "claim_9ef5653cf278e6e5abdb"
+    ],
+    "recent_papers": [
+      "claim_9ef5653cf278e6e5abdb"
+    ],
+    "research_directions": [
+      "claim_9ef5653cf278e6e5abdb"
+    ],
+    "status": [
+      "claim_9ef5653cf278e6e5abdb"
+    ],
+    "title": [
+      "claim_9ef5653cf278e6e5abdb"
+    ]
+  },
+  "id": "mentor_83515c1f84764e065e1b",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9ef5653cf278e6e5abdb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李聃"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_db357100f524f1eda050",
+      "claim_ids": [
+        "claim_9ef5653cf278e6e5abdb"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/lidan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Non-Communication Frequency-Variable Auto-Resonance WPT for Constant Power and Efficiency Control with Lightweight Receiver Design,IEEE Transactions on Transportation Electrification,2025,:8294-8304",
+    "Simplified Analysis and Characterization of Dual Power Source Wireless Power Transfer System,IEEE Journal of Emerging and Selected Topics in Industrial Electronics,4(3):948-959",
+    "Self-Adaptive Resonance Technology for Wireless Power Transfer Systems to Eliminate Impedance Mismatches,IEEE TRANSACTIONS ON POWER ELECTRONICS,39(8):10482-10495"
+  ],
+  "research_directions": [
+    "无线电能传输技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/lidan/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8f57e3f379ece92f18a5"
+      ],
+      "ended_at": null,
+      "id": "aff_2e2708f35234153028f0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/xubo",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8f57e3f379ece92f18a5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_2e2708f35234153028f0",
+      "claim_ids": [
+        "claim_8f57e3f379ece92f18a5"
+      ],
+      "is_primary": true,
+      "normalized_value": "xubocarter@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/xubo",
+      "status": "current",
+      "type": "email",
+      "value": "xubocarter@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8f57e3f379ece92f18a5"
+    ],
+    "email": [
+      "claim_8f57e3f379ece92f18a5"
+    ],
+    "name": [
+      "claim_8f57e3f379ece92f18a5"
+    ],
+    "profile_url": [
+      "claim_8f57e3f379ece92f18a5"
+    ],
+    "research_directions": [
+      "claim_8f57e3f379ece92f18a5"
+    ],
+    "status": [
+      "claim_8f57e3f379ece92f18a5"
+    ],
+    "title": [
+      "claim_8f57e3f379ece92f18a5"
+    ]
+  },
+  "id": "mentor_e8f1d326c48eaabbbbb7",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8f57e3f379ece92f18a5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "徐博"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_2e2708f35234153028f0",
+      "claim_ids": [
+        "claim_8f57e3f379ece92f18a5"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/xubo"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "惯性导航、多智能体协同控制、多传感器智能信息融合"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/xubo",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4ab37f4e3ce6374af8df"
+      ],
+      "ended_at": null,
+      "id": "aff_a8e32e2ad752fbe02148",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/wanghuachuan",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_4ab37f4e3ce6374af8df"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a8e32e2ad752fbe02148",
+      "claim_ids": [
+        "claim_4ab37f4e3ce6374af8df"
+      ],
+      "is_primary": true,
+      "normalized_value": "hcwang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/wanghuachuan",
+      "status": "current",
+      "type": "email",
+      "value": "hcwang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4ab37f4e3ce6374af8df"
+    ],
+    "email": [
+      "claim_4ab37f4e3ce6374af8df"
+    ],
+    "name": [
+      "claim_4ab37f4e3ce6374af8df"
+    ],
+    "profile_url": [
+      "claim_4ab37f4e3ce6374af8df"
+    ],
+    "research_directions": [
+      "claim_4ab37f4e3ce6374af8df"
+    ],
+    "status": [
+      "claim_4ab37f4e3ce6374af8df"
+    ],
+    "title": [
+      "claim_4ab37f4e3ce6374af8df"
+    ]
+  },
+  "id": "mentor_0be85ce20478fee5743f",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4ab37f4e3ce6374af8df"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王华川"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a8e32e2ad752fbe02148",
+      "claim_ids": [
+        "claim_4ab37f4e3ce6374af8df"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/wanghuachuan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "量子传感器件多场模拟、分子电子器件的多尺度模拟、自适应滤波系统、实时系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/wanghuachuan",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

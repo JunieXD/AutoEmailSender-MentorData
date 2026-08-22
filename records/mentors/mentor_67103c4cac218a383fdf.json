@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ef3e91d2c0f4dee2881e"
+      ],
+      "ended_at": null,
+      "id": "aff_311d11ead8c8887042e8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/huangyulong",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ef3e91d2c0f4dee2881e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_311d11ead8c8887042e8",
+      "claim_ids": [
+        "claim_ef3e91d2c0f4dee2881e"
+      ],
+      "is_primary": true,
+      "normalized_value": "heuedu@163.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/huangyulong",
+      "status": "current",
+      "type": "email",
+      "value": "heuedu@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ],
+    "email": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ],
+    "name": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ],
+    "profile_url": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ],
+    "recent_papers": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ],
+    "research_directions": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ],
+    "status": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ],
+    "title": [
+      "claim_ef3e91d2c0f4dee2881e"
+    ]
+  },
+  "id": "mentor_67103c4cac218a383fdf",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ef3e91d2c0f4dee2881e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄玉龙"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_311d11ead8c8887042e8",
+      "claim_ids": [
+        "claim_ef3e91d2c0f4dee2881e"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/huangyulong"
+    }
+  ],
+  "recent_papers": [
+    "A 7K Parameter Model for Underwater Image Enhancement based on Transmission Map Prior",
+    "An Underwater Acoustic Target Recognition Method Based on Iterative Short-Time Fourier Transform",
+    "Underwater acoustic target recognition based on spectrum component analysis of ship radiated noise",
+    "Robust two-stage underwater acoustic target recognition method based on supervised contrastive learning",
+    "Robust Decentralized Cooperative Localization for Multi-robot System Against Measurement Outliers,IEEE Internet of Things Journal,2024,:17934 - 17947"
+  ],
+  "research_directions": [
+    "智能信息融合理论、智能导航应用、水下声学目标识别、水下图像增强、多机器人协同定位"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/huangyulong",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

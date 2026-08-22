@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c6b6def0201bdd2ab8cd"
+      ],
+      "ended_at": null,
+      "id": "aff_255712b4fec80e5ab376",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/chenliheng",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c6b6def0201bdd2ab8cd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_255712b4fec80e5ab376",
+      "claim_ids": [
+        "claim_c6b6def0201bdd2ab8cd"
+      ],
+      "is_primary": true,
+      "normalized_value": "clh114131@163.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/chenliheng",
+      "status": "current",
+      "type": "email",
+      "value": "clh114131@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c6b6def0201bdd2ab8cd"
+    ],
+    "email": [
+      "claim_c6b6def0201bdd2ab8cd"
+    ],
+    "name": [
+      "claim_c6b6def0201bdd2ab8cd"
+    ],
+    "profile_url": [
+      "claim_c6b6def0201bdd2ab8cd"
+    ],
+    "research_directions": [
+      "claim_c6b6def0201bdd2ab8cd"
+    ],
+    "status": [
+      "claim_c6b6def0201bdd2ab8cd"
+    ],
+    "title": [
+      "claim_c6b6def0201bdd2ab8cd"
+    ]
+  },
+  "id": "mentor_baea2c2c9ec88694f274",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c6b6def0201bdd2ab8cd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈力恒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_255712b4fec80e5ab376",
+      "claim_ids": [
+        "claim_c6b6def0201bdd2ab8cd"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/chenliheng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能控制与决策及在船海领域的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/chenliheng",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

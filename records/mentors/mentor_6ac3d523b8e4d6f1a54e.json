@@ -1,0 +1,99 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5de3781ca3ef8c9ab6fd"
+      ],
+      "ended_at": null,
+      "id": "aff_28cd1b8c25ce2e08a53b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "https://faculty.hrbeu.edu.cn/wudi/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_5de3781ca3ef8c9ab6fd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_28cd1b8c25ce2e08a53b",
+      "claim_ids": [
+        "claim_5de3781ca3ef8c9ab6fd"
+      ],
+      "is_primary": true,
+      "normalized_value": "dwu.robotics@gmail.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/wudi/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dwu.robotics@gmail.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5de3781ca3ef8c9ab6fd"
+    ],
+    "email": [
+      "claim_5de3781ca3ef8c9ab6fd"
+    ],
+    "name": [
+      "claim_5de3781ca3ef8c9ab6fd"
+    ],
+    "profile_url": [
+      "claim_5de3781ca3ef8c9ab6fd"
+    ],
+    "recent_papers": [
+      "claim_5de3781ca3ef8c9ab6fd"
+    ],
+    "status": [
+      "claim_5de3781ca3ef8c9ab6fd"
+    ],
+    "title": [
+      "claim_5de3781ca3ef8c9ab6fd"
+    ]
+  },
+  "id": "mentor_6ac3d523b8e4d6f1a54e",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5de3781ca3ef8c9ab6fd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴迪"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_28cd1b8c25ce2e08a53b",
+      "claim_ids": [
+        "claim_5de3781ca3ef8c9ab6fd"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/wudi/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [
+    "Underwater autonomous exploration method for flat area based on region growing,SHIPS AND OFFSHORE STRUCTURES,()",
+    "Formation tracking of multiple amphibious robots with unknown nonlinear dynamics,INTERNATIONAL JOURNAL OF ADVANCED ROBOTIC SYSTEMS,2020,5",
+    "Trajectory tracking sliding mode control for underactuated autonomous underwater vehicles with time delays,INTERNATIONAL JOURNAL OF ADVANCED ROBOTIC SYSTEMS,2020,3",
+    "Cooperative current estimation based multi-AUVs localization for deep ocean applications,OCEAN ENGINEERING,2019,C",
+    "Underwater autonomous exploration method for flat area based on region growing,SHIPS AND OFFSHORE STRUCTURES"
+  ],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/wudi/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

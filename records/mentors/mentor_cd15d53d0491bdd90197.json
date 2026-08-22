@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_915044dd0211f4e2bfda"
+      ],
+      "ended_at": null,
+      "id": "aff_c46d087bf68fe93437d1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/YangLiu",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_915044dd0211f4e2bfda"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c46d087bf68fe93437d1",
+      "claim_ids": [
+        "claim_915044dd0211f4e2bfda"
+      ],
+      "is_primary": true,
+      "normalized_value": "lyang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/YangLiu",
+      "status": "current",
+      "type": "email",
+      "value": "lyang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_915044dd0211f4e2bfda"
+    ],
+    "email": [
+      "claim_915044dd0211f4e2bfda"
+    ],
+    "name": [
+      "claim_915044dd0211f4e2bfda"
+    ],
+    "profile_url": [
+      "claim_915044dd0211f4e2bfda"
+    ],
+    "research_directions": [
+      "claim_915044dd0211f4e2bfda"
+    ],
+    "status": [
+      "claim_915044dd0211f4e2bfda"
+    ],
+    "title": [
+      "claim_915044dd0211f4e2bfda"
+    ]
+  },
+  "id": "mentor_cd15d53d0491bdd90197",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_915044dd0211f4e2bfda"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨柳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c46d087bf68fe93437d1",
+      "claim_ids": [
+        "claim_915044dd0211f4e2bfda"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/YangLiu"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "惯性传感器(光纤陀螺仪、集成光学陀螺仪等)、水下导航、智能航海、海洋环境保障"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/YangLiu",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

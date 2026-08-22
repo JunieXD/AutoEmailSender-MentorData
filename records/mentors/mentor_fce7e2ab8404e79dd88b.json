@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6a78c31673bae661577e"
+      ],
+      "ended_at": null,
+      "id": "aff_f083a9f6fbbea7322f66",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/liutao",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6a78c31673bae661577e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f083a9f6fbbea7322f66",
+      "claim_ids": [
+        "claim_6a78c31673bae661577e"
+      ],
+      "is_primary": true,
+      "normalized_value": "liutao@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/liutao",
+      "status": "current",
+      "type": "email",
+      "value": "liutao@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6a78c31673bae661577e"
+    ],
+    "email": [
+      "claim_6a78c31673bae661577e"
+    ],
+    "name": [
+      "claim_6a78c31673bae661577e"
+    ],
+    "profile_url": [
+      "claim_6a78c31673bae661577e"
+    ],
+    "research_directions": [
+      "claim_6a78c31673bae661577e"
+    ],
+    "status": [
+      "claim_6a78c31673bae661577e"
+    ],
+    "title": [
+      "claim_6a78c31673bae661577e"
+    ]
+  },
+  "id": "mentor_fce7e2ab8404e79dd88b",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6a78c31673bae661577e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f083a9f6fbbea7322f66",
+      "claim_ids": [
+        "claim_6a78c31673bae661577e"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/liutao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "工业机器视觉技术与应用、水面水下视觉图像识别、三维重建、水下机器人及无人艇控制与系统集成、工业机器人技术、计算机视觉、人工智能、无人控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/liutao",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

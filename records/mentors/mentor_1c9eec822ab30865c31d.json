@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d3e819a64308f2342d80"
+      ],
+      "ended_at": null,
+      "id": "aff_b7e98a190d52c61404fc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhangzhongping",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d3e819a64308f2342d80"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b7e98a190d52c61404fc",
+      "claim_ids": [
+        "claim_d3e819a64308f2342d80"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhongping@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhangzhongping",
+      "status": "current",
+      "type": "email",
+      "value": "zhongping@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d3e819a64308f2342d80"
+    ],
+    "email": [
+      "claim_d3e819a64308f2342d80"
+    ],
+    "name": [
+      "claim_d3e819a64308f2342d80"
+    ],
+    "profile_url": [
+      "claim_d3e819a64308f2342d80"
+    ],
+    "research_directions": [
+      "claim_d3e819a64308f2342d80"
+    ],
+    "status": [
+      "claim_d3e819a64308f2342d80"
+    ],
+    "title": [
+      "claim_d3e819a64308f2342d80"
+    ]
+  },
+  "id": "mentor_1c9eec822ab30865c31d",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d3e819a64308f2342d80"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张中平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b7e98a190d52c61404fc",
+      "claim_ids": [
+        "claim_d3e819a64308f2342d80"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhangzhongping"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、自然语言处理、人工智能、图像隐写、多模态生成、AIGC鉴伪与溯源"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhangzhongping",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

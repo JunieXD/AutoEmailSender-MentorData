@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4a2f73ceea0be69b0826"
+      ],
+      "ended_at": null,
+      "id": "aff_7da2aee33fcbb7d15f5b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhanghongquan",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_4a2f73ceea0be69b0826"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7da2aee33fcbb7d15f5b",
+      "claim_ids": [
+        "claim_4a2f73ceea0be69b0826"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanghq1@126.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhanghongquan",
+      "status": "current",
+      "type": "email",
+      "value": "zhanghq1@126.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4a2f73ceea0be69b0826"
+    ],
+    "email": [
+      "claim_4a2f73ceea0be69b0826"
+    ],
+    "name": [
+      "claim_4a2f73ceea0be69b0826"
+    ],
+    "profile_url": [
+      "claim_4a2f73ceea0be69b0826"
+    ],
+    "status": [
+      "claim_4a2f73ceea0be69b0826"
+    ],
+    "title": [
+      "claim_4a2f73ceea0be69b0826"
+    ]
+  },
+  "id": "mentor_fb42fa57d8c964e7fd9f",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4a2f73ceea0be69b0826"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张洪泉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7da2aee33fcbb7d15f5b",
+      "claim_ids": [
+        "claim_4a2f73ceea0be69b0826"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhanghongquan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhanghongquan",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

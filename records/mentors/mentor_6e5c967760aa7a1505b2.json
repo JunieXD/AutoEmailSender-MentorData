@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7ce9826ef440d27a5c1b"
+      ],
+      "ended_at": null,
+      "id": "aff_618e34b4c1631a54d479",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/caichengtao",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7ce9826ef440d27a5c1b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_618e34b4c1631a54d479",
+      "claim_ids": [
+        "claim_7ce9826ef440d27a5c1b"
+      ],
+      "is_primary": true,
+      "normalized_value": "caichengtao@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/caichengtao",
+      "status": "current",
+      "type": "email",
+      "value": "caichengtao@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7ce9826ef440d27a5c1b"
+    ],
+    "email": [
+      "claim_7ce9826ef440d27a5c1b"
+    ],
+    "name": [
+      "claim_7ce9826ef440d27a5c1b"
+    ],
+    "profile_url": [
+      "claim_7ce9826ef440d27a5c1b"
+    ],
+    "research_directions": [
+      "claim_7ce9826ef440d27a5c1b"
+    ],
+    "status": [
+      "claim_7ce9826ef440d27a5c1b"
+    ],
+    "title": [
+      "claim_7ce9826ef440d27a5c1b"
+    ]
+  },
+  "id": "mentor_6e5c967760aa7a1505b2",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7ce9826ef440d27a5c1b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "蔡成涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_618e34b4c1631a54d479",
+      "claim_ids": [
+        "claim_7ce9826ef440d27a5c1b"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/caichengtao"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "海洋自主无人系统复杂环境感知与决策、高速运动目标探测识别及智能分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/caichengtao",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

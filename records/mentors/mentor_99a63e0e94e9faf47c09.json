@@ -1,0 +1,98 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7431b80bcf57ee1d1ce1"
+      ],
+      "ended_at": null,
+      "id": "aff_57db6f04eeeebec11868",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_45b213ba2078e6b39c2f",
+      "source_url": "http://faculty.hrbeu.edu.cn/youjiang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7431b80bcf57ee1d1ce1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_57db6f04eeeebec11868",
+      "claim_ids": [
+        "claim_7431b80bcf57ee1d1ce1"
+      ],
+      "is_primary": true,
+      "normalized_value": "youjiang@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/youjiang",
+      "status": "current",
+      "type": "email",
+      "value": "youjiang@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7431b80bcf57ee1d1ce1"
+    ],
+    "email": [
+      "claim_7431b80bcf57ee1d1ce1"
+    ],
+    "name": [
+      "claim_7431b80bcf57ee1d1ce1"
+    ],
+    "profile_url": [
+      "claim_7431b80bcf57ee1d1ce1"
+    ],
+    "research_directions": [
+      "claim_7431b80bcf57ee1d1ce1"
+    ],
+    "status": [
+      "claim_7431b80bcf57ee1d1ce1"
+    ],
+    "title": [
+      "claim_7431b80bcf57ee1d1ce1"
+    ]
+  },
+  "id": "mentor_99a63e0e94e9faf47c09",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7431b80bcf57ee1d1ce1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "游江"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_57db6f04eeeebec11868",
+      "claim_ids": [
+        "claim_7431b80bcf57ee1d1ce1"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/youjiang"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "(1)运载电源系统中的电能变换:宽范围/混合能源的电能变换与控制,多端口能量路由器,双向/两电平/三电平变换器技术",
+    "(2)海洋工程装备中的电能变换:(水下)/无线电能传输,功率堆栈的组合变换器,海工作业特种电能变换与控制,海洋能发电",
+    "(3)运载器电源系统的电能管控:电力电子化电源系统的智能自主管控技术",
+    "(4)系统设计:ARM/DSP/FPGA为核心的电能变换与控制系统研发"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/youjiang",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

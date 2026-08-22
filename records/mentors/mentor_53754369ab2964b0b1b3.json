@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_004a36bd2741b3e7a3f4"
+      ],
+      "ended_at": null,
+      "id": "aff_865904151c898c87f8e1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhangwenyi",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_004a36bd2741b3e7a3f4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_865904151c898c87f8e1",
+      "claim_ids": [
+        "claim_004a36bd2741b3e7a3f4"
+      ],
+      "is_primary": true,
+      "normalized_value": "wenyiz@163.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhangwenyi",
+      "status": "current",
+      "type": "email",
+      "value": "wenyiz@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_004a36bd2741b3e7a3f4"
+    ],
+    "email": [
+      "claim_004a36bd2741b3e7a3f4"
+    ],
+    "name": [
+      "claim_004a36bd2741b3e7a3f4"
+    ],
+    "profile_url": [
+      "claim_004a36bd2741b3e7a3f4"
+    ],
+    "recent_papers": [
+      "claim_004a36bd2741b3e7a3f4"
+    ],
+    "research_directions": [
+      "claim_004a36bd2741b3e7a3f4"
+    ],
+    "status": [
+      "claim_004a36bd2741b3e7a3f4"
+    ],
+    "title": [
+      "claim_004a36bd2741b3e7a3f4"
+    ]
+  },
+  "id": "mentor_53754369ab2964b0b1b3",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_004a36bd2741b3e7a3f4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张文义"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_865904151c898c87f8e1",
+      "claim_ids": [
+        "claim_004a36bd2741b3e7a3f4"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhangwenyi"
+    }
+  ],
+  "recent_papers": [
+    "Electric Vehicles Based on Selective Harmonic Elimination Type Variable Voltage Variable Frequency Speed Regulation System.2014",
+    "Analyzing of Voltage-Source Selective Harmonic Elimination Inverter.International Conference on Mechatronics and Automation 2011.2011",
+    "特定消谐式逆变器无死区控制策略研究.电力自动化设备.2006",
+    "特定消谐式逆变器中窄脉冲的优化策略.电力系统自动化.2006"
+  ],
+  "research_directions": [
+    "智能控制、特定消谐技术、电力电子变换器"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhangwenyi",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}
