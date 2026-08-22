@@ -1,0 +1,481 @@
+{
+  "created_organization_ids": [
+    "org_auto_0e9e0a6514a51c91af75",
+    "org_auto_59b6b93cbaf82a76af28",
+    "org_auto_634d0a2b5aa0fe614e3a",
+    "org_auto_8456d88f59ea0bad44b1",
+    "org_auto_ab2465679c57aee3c143",
+    "org_auto_f695f5b8091a4dd63924"
+  ],
+  "decided_at": "2026-08-22T08:50:05Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0194ef986738c9a8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_1d00f5525daad483",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_33fd8594bcf0a6b1",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_8456d88f59ea0bad44b1"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4b02e154c278da36",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_634d0a2b5aa0fe614e3a"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4c1f93271a9718dd",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "通信工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_52842714da766b67",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_d03e425f480133fd",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_fb0f423958083bde",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "tyut.edu.cn"
+          ],
+          "canonical_name": "太原理工大学",
+          "level": "university",
+          "official_url": "https://tyut.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "电子信息工程学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "通信工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_144",
+  "invalid_rows": [],
+  "issue": {
+    "number": 144,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/144"
+  },
+  "manifest_sha256": "f8f27f26cce8fa5cfaf0f9e83ef7674bbc98fe48ebc495f0a798ef6507093315",
+  "mapped_proposal_ids": [
+    "proposal_issue_144_row_1",
+    "proposal_issue_144_row_10",
+    "proposal_issue_144_row_11",
+    "proposal_issue_144_row_12",
+    "proposal_issue_144_row_13",
+    "proposal_issue_144_row_14",
+    "proposal_issue_144_row_15",
+    "proposal_issue_144_row_16",
+    "proposal_issue_144_row_17",
+    "proposal_issue_144_row_18",
+    "proposal_issue_144_row_19",
+    "proposal_issue_144_row_2",
+    "proposal_issue_144_row_20",
+    "proposal_issue_144_row_21",
+    "proposal_issue_144_row_22",
+    "proposal_issue_144_row_23",
+    "proposal_issue_144_row_24",
+    "proposal_issue_144_row_25",
+    "proposal_issue_144_row_26",
+    "proposal_issue_144_row_27",
+    "proposal_issue_144_row_28",
+    "proposal_issue_144_row_29",
+    "proposal_issue_144_row_3",
+    "proposal_issue_144_row_30",
+    "proposal_issue_144_row_31",
+    "proposal_issue_144_row_32",
+    "proposal_issue_144_row_33",
+    "proposal_issue_144_row_34",
+    "proposal_issue_144_row_35",
+    "proposal_issue_144_row_36",
+    "proposal_issue_144_row_37",
+    "proposal_issue_144_row_38",
+    "proposal_issue_144_row_39",
+    "proposal_issue_144_row_4",
+    "proposal_issue_144_row_40",
+    "proposal_issue_144_row_41",
+    "proposal_issue_144_row_42",
+    "proposal_issue_144_row_43",
+    "proposal_issue_144_row_44",
+    "proposal_issue_144_row_45",
+    "proposal_issue_144_row_46",
+    "proposal_issue_144_row_47",
+    "proposal_issue_144_row_48",
+    "proposal_issue_144_row_49",
+    "proposal_issue_144_row_5",
+    "proposal_issue_144_row_50",
+    "proposal_issue_144_row_51",
+    "proposal_issue_144_row_52",
+    "proposal_issue_144_row_53",
+    "proposal_issue_144_row_54",
+    "proposal_issue_144_row_55",
+    "proposal_issue_144_row_56",
+    "proposal_issue_144_row_57",
+    "proposal_issue_144_row_58",
+    "proposal_issue_144_row_59",
+    "proposal_issue_144_row_6",
+    "proposal_issue_144_row_60",
+    "proposal_issue_144_row_61",
+    "proposal_issue_144_row_62",
+    "proposal_issue_144_row_63",
+    "proposal_issue_144_row_64",
+    "proposal_issue_144_row_65",
+    "proposal_issue_144_row_66",
+    "proposal_issue_144_row_67",
+    "proposal_issue_144_row_68",
+    "proposal_issue_144_row_69",
+    "proposal_issue_144_row_7",
+    "proposal_issue_144_row_70",
+    "proposal_issue_144_row_8",
+    "proposal_issue_144_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "电子信息与光学工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_634d0a2b5aa0fe614e3a",
+      "organization_type": "school",
+      "parent_id": "org_auto_59b6b93cbaf82a76af28"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "信息与计算机工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_8456d88f59ea0bad44b1",
+      "organization_type": "school",
+      "parent_id": "org_auto_59b6b93cbaf82a76af28"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 152,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379404216,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

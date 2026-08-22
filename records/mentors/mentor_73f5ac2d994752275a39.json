@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d9fa42ceec57fca57d4c"
+      ],
+      "ended_at": null,
+      "id": "aff_b1b2df5fd1a7cba366d8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:19Z",
+      "organization_id": "org_auto_f695f5b8091a4dd63924",
+      "source_url": "https://eie.tyut.edu.cn/info/1070/2221.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_d9fa42ceec57fca57d4c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b1b2df5fd1a7cba366d8",
+      "claim_ids": [
+        "claim_d9fa42ceec57fca57d4c"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangsuzhe@tyut.edu.cn",
+      "observed_at": "2026-08-21T18:50:19Z",
+      "source_url": "https://eie.tyut.edu.cn/info/1070/2221.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wangsuzhe@tyut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d9fa42ceec57fca57d4c"
+    ],
+    "email": [
+      "claim_d9fa42ceec57fca57d4c"
+    ],
+    "name": [
+      "claim_d9fa42ceec57fca57d4c"
+    ],
+    "profile_url": [
+      "claim_d9fa42ceec57fca57d4c"
+    ],
+    "research_directions": [
+      "claim_d9fa42ceec57fca57d4c"
+    ],
+    "status": [
+      "claim_d9fa42ceec57fca57d4c"
+    ],
+    "title": [
+      "claim_d9fa42ceec57fca57d4c"
+    ]
+  },
+  "id": "mentor_73f5ac2d994752275a39",
+  "last_verified_at": "2026-08-21T18:50:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d9fa42ceec57fca57d4c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王夙喆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b1b2df5fd1a7cba366d8",
+      "claim_ids": [
+        "claim_d9fa42ceec57fca57d4c"
+      ],
+      "observed_at": "2026-08-21T18:50:19Z",
+      "status": "current",
+      "url": "https://eie.tyut.edu.cn/info/1070/2221.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器学习、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:19Z",
+  "status_reason": null,
+  "status_source_url": "https://eie.tyut.edu.cn/info/1070/2221.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:50:19Z"
+}

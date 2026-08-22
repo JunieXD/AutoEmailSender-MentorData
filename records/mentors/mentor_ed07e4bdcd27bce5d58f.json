@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f16452d730fb64cd488c"
+      ],
+      "ended_at": null,
+      "id": "aff_6cc0c6b72af2fe1b2a97",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:50:19Z",
+      "organization_id": "org_auto_f695f5b8091a4dd63924",
+      "source_url": "https://eie.tyut.edu.cn/info/1070/2081.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f16452d730fb64cd488c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6cc0c6b72af2fe1b2a97",
+      "claim_ids": [
+        "claim_f16452d730fb64cd488c"
+      ],
+      "is_primary": true,
+      "normalized_value": "wentao@tyut.edu.cn",
+      "observed_at": "2026-08-21T18:50:19Z",
+      "source_url": "https://eie.tyut.edu.cn/info/1070/2081.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wentao@tyut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:50:19Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f16452d730fb64cd488c"
+    ],
+    "email": [
+      "claim_f16452d730fb64cd488c"
+    ],
+    "name": [
+      "claim_f16452d730fb64cd488c"
+    ],
+    "profile_url": [
+      "claim_f16452d730fb64cd488c"
+    ],
+    "research_directions": [
+      "claim_f16452d730fb64cd488c"
+    ],
+    "status": [
+      "claim_f16452d730fb64cd488c"
+    ],
+    "title": [
+      "claim_f16452d730fb64cd488c"
+    ]
+  },
+  "id": "mentor_ed07e4bdcd27bce5d58f",
+  "last_verified_at": "2026-08-21T18:50:19Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f16452d730fb64cd488c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "温涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6cc0c6b72af2fe1b2a97",
+      "claim_ids": [
+        "claim_f16452d730fb64cd488c"
+      ],
+      "observed_at": "2026-08-21T18:50:19Z",
+      "status": "current",
+      "url": "https://eie.tyut.edu.cn/info/1070/2081.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "通讯、电子"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:50:19Z",
+  "status_reason": null,
+  "status_source_url": "https://eie.tyut.edu.cn/info/1070/2081.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:50:19Z"
+}
