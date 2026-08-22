@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_b026cae0b4a8bcd9a185",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:52:19Z",
+          "organization_id": "org_auto_32c9b2d44fdd4806a101",
+          "school": "信息工程学院",
+          "source_url": "http://grzy.cug.edu.cn/lvjianjun/zh_CN/index.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "中国地质大学(武汉)"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_b026cae0b4a8bcd9a185",
+          "email": "jjlv@cug.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:52:19Z",
+          "source_url": "http://grzy.cug.edu.cn/lvjianjun/zh_CN/index.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/166"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "jjlv@cug.edu.cn",
+      "id": "mentor_7677de26418dff84110e",
+      "last_verified_at": "2026-08-21T18:52:19Z",
+      "name": "吕建军",
+      "profile_url": "http://grzy.cug.edu.cn/lvjianjun/zh_CN/index.htm",
+      "recent_papers": [
+        "湖北省暴雨人口暴露时空特征与贡献率研究《灾害学》第二作者 ,《灾害学》2018年第4期",
+        "Temporal and Spatial Analyses of the Landscape Pattern of Wuhan City Based on Remote.pdf---ISPRS int.J.Geo-inf.,Volume 7, Issue9(September2018)"
+      ],
+      "research_direction": "地理空间分析、GIS应用开发、遥感应用",
+      "school": "信息工程学院",
+      "source_url": "https://xgxy.cug.edu.cn/szdw/kjxxx.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "中国地质大学(武汉)"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_32c9b2d44fdd4806a101",
+    "name": "信息工程学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_501f246cece462f6bc73",
+    "name": "中国地质大学(武汉)"
+  }
+}
