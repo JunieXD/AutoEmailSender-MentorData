@@ -5479,3 +5479,60 @@ organizations:
   successor_id: null
   created_at: '2026-08-22T08:50:19Z'
   updated_at: '2026-08-22T08:50:19Z'
+- id: org_auto_7956f1cd6d5a29f24b4a
+  type: university
+  canonical_name: 新疆大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://xju.edu.cn/
+  approved_domains:
+  - xju.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:21Z'
+  updated_at: '2026-08-22T08:50:21Z'
+- id: org_auto_d53f1d81c99837a8a681
+  type: school
+  canonical_name: 智能科学与技术学院
+  parent_id: org_auto_7956f1cd6d5a29f24b4a
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:21Z'
+  updated_at: '2026-08-22T08:50:21Z'
+- id: org_auto_02480c8517057fc771f3
+  type: department
+  canonical_name: 智能科学与技术学院自动化系
+  parent_id: org_auto_d53f1d81c99837a8a681
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:21Z'
+  updated_at: '2026-08-22T08:50:21Z'
+- id: org_auto_8bdcb8d90dc1f423e6af
+  type: department
+  canonical_name: 自动化教研室
+  parent_id: org_auto_d53f1d81c99837a8a681
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:21Z'
+  updated_at: '2026-08-22T08:50:21Z'
+- id: org_auto_b700e73f612f49130b85
+  type: school
+  canonical_name: 电气工程学院
+  parent_id: org_auto_7956f1cd6d5a29f24b4a
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:50:21Z'
+  updated_at: '2026-08-22T08:50:21Z'

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d723bb22cde0d1b15b85"
+      ],
+      "ended_at": null,
+      "id": "aff_3238a3456910fe9a8e97",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:02Z",
+      "organization_id": "org_auto_d53f1d81c99837a8a681",
+      "source_url": "https://wljs.xju.edu.cn/info/1063/1498.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d723bb22cde0d1b15b85"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3238a3456910fe9a8e97",
+      "claim_ids": [
+        "claim_d723bb22cde0d1b15b85"
+      ],
+      "is_primary": true,
+      "normalized_value": "zeg@xju.edu.cn",
+      "observed_at": "2026-08-21T18:52:02Z",
+      "source_url": "https://wljs.xju.edu.cn/info/1063/1498.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zeg@xju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d723bb22cde0d1b15b85"
+    ],
+    "email": [
+      "claim_d723bb22cde0d1b15b85"
+    ],
+    "name": [
+      "claim_d723bb22cde0d1b15b85"
+    ],
+    "profile_url": [
+      "claim_d723bb22cde0d1b15b85"
+    ],
+    "recent_papers": [
+      "claim_d723bb22cde0d1b15b85"
+    ],
+    "research_directions": [
+      "claim_d723bb22cde0d1b15b85"
+    ],
+    "status": [
+      "claim_d723bb22cde0d1b15b85"
+    ],
+    "title": [
+      "claim_d723bb22cde0d1b15b85"
+    ]
+  },
+  "id": "mentor_4931469c7b0551054680",
+  "last_verified_at": "2026-08-21T18:52:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d723bb22cde0d1b15b85"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "左恩光"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3238a3456910fe9a8e97",
+      "claim_ids": [
+        "claim_d723bb22cde0d1b15b85"
+      ],
+      "observed_at": "2026-08-21T18:52:02Z",
+      "status": "current",
+      "url": "https://wljs.xju.edu.cn/info/1063/1498.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zuo, E. SUCOLA: Self-adaptive structure refinement unsupervised contrastive learning framework for food safety risk early warning[J]. Engineering Applications of Artificial Intelligence, 2023, 126: 107016.",
+    "Zuo, E. A food safety prescreening method with domain-specific information using online reviews[J]. Journal of Consumer Protection and Food Safety, 2022, 17(2): 163-175.",
+    "Zuo, E. Anomaly Score-Based Risk Early Warning System for Rapidly Controlling Food Safety Risk[J]. Foods, 2022, 11(14): 2076.",
+    "Bi X, Chen C, Chen C, et al. PatchFusionMLP: A Scalable Multi-Resolution MLP Framework for Time Series Prediction[J]. Pattern Recognition, 2026: 113263.",
+    "Zhang G, Zuo E, Yan Z, et al. Rethinking link prediction: A multi-scale graph masked autoencoder[J]. Neurocomputing, 2025: 132115.",
+    "Wang W, Zuo E, Chen C, et al. Efficient time series adaptive representation learning via Dynamic Routing Sparse Attention[J]. Pattern Recognition, 2025, 158: 111058.",
+    "Sun R, Wang R, Zuo E, et al. SCGRL: Graph representation learning based on edge structure contrastive self-supervised framework[C]//2025 IEEE International Conference on Multimedia and Expo (ICME). IEEE, 2025: 1-6.",
+    "Li Y, Qu H, Chen C, et al. TreeXformer: Extracting tabular feature-context information using tree-structured semantics[J]. Information Processing & Management, 2025, 62(6): 104291."
+  ],
+  "research_directions": [
+    "图神经网络、时序表征学习、食品安全风险监测预警、生物信息"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:02Z",
+  "status_reason": null,
+  "status_source_url": "https://wljs.xju.edu.cn/info/1063/1498.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:02Z"
+}

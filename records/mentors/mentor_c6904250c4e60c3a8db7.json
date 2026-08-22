@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d8d1e2fded95e43bdd4f"
+      ],
+      "ended_at": null,
+      "id": "aff_06d3e55e9443274b0c62",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:02Z",
+      "organization_id": "org_auto_d53f1d81c99837a8a681",
+      "source_url": "https://wljs.xju.edu.cn/info/1061/1643.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_d8d1e2fded95e43bdd4f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_06d3e55e9443274b0c62",
+      "claim_ids": [
+        "claim_d8d1e2fded95e43bdd4f"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouxixuan18@mails.ucas.ac.cn",
+      "observed_at": "2026-08-21T18:52:02Z",
+      "source_url": "https://wljs.xju.edu.cn/info/1061/1643.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhouxixuan18@mails.ucas.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:02Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ],
+    "email": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ],
+    "name": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ],
+    "profile_url": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ],
+    "recent_papers": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ],
+    "research_directions": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ],
+    "status": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ],
+    "title": [
+      "claim_d8d1e2fded95e43bdd4f"
+    ]
+  },
+  "id": "mentor_c6904250c4e60c3a8db7",
+  "last_verified_at": "2026-08-21T18:52:02Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d8d1e2fded95e43bdd4f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周玺璇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_06d3e55e9443274b0c62",
+      "claim_ids": [
+        "claim_d8d1e2fded95e43bdd4f"
+      ],
+      "observed_at": "2026-08-21T18:52:02Z",
+      "status": "current",
+      "url": "https://wljs.xju.edu.cn/info/1061/1643.htm"
+    }
+  ],
+  "recent_papers": [
+    "ST-FEiTNet: A trajectory prediction model for complex sea states via multiscale spatiotemporal feature extraction and cross-modal frequency enhancement",
+    "Towards Real-Time Detection of Wakes for Various Sea States with Lightweight Deep Learning Model in Synthetic Aperture Radar Images",
+    "An Overview of Coastline Extraction from Remote Sensing Data",
+    "UAV Data as an Alternative to Field Sampling to Monitor Vineyards Using Machine Learning Based on UAV/Sentinel-2 Data Fusion",
+    "Scene classification for remote sensing image of land use and land cover using dual-model architecture with multilevel feature fusion"
+  ],
+  "research_directions": [
+    "智能农业、航天信息处理与应用,遥感图像智能处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:02Z",
+  "status_reason": null,
+  "status_source_url": "https://wljs.xju.edu.cn/info/1061/1643.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:52:02Z"
+}
