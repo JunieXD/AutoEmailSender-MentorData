@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2f63b76ed940b054e3bd"
+      ],
+      "ended_at": null,
+      "id": "aff_3f15f46e073fa2652d65",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:44Z",
+      "organization_id": "org_auto_92035af2ef2a2900dbd9",
+      "source_url": "https://hxxy.neau.edu.cn/info/1145/1536.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_2f63b76ed940b054e3bd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3f15f46e073fa2652d65",
+      "claim_ids": [
+        "claim_2f63b76ed940b054e3bd"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangfan@neau.edu.cn",
+      "observed_at": "2026-08-21T18:44:44Z",
+      "source_url": "https://hxxy.neau.edu.cn/info/1145/1536.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yangfan@neau.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:44Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2f63b76ed940b054e3bd"
+    ],
+    "email": [
+      "claim_2f63b76ed940b054e3bd"
+    ],
+    "name": [
+      "claim_2f63b76ed940b054e3bd"
+    ],
+    "profile_url": [
+      "claim_2f63b76ed940b054e3bd"
+    ],
+    "status": [
+      "claim_2f63b76ed940b054e3bd"
+    ]
+  },
+  "id": "mentor_f64a5871d760ba98a890",
+  "last_verified_at": "2026-08-21T18:44:44Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2f63b76ed940b054e3bd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨帆"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3f15f46e073fa2652d65",
+      "claim_ids": [
+        "claim_2f63b76ed940b054e3bd"
+      ],
+      "observed_at": "2026-08-21T18:44:44Z",
+      "status": "current",
+      "url": "https://hxxy.neau.edu.cn/info/1145/1536.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:44Z",
+  "status_reason": null,
+  "status_source_url": "https://hxxy.neau.edu.cn/info/1145/1536.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:44:44Z"
+}

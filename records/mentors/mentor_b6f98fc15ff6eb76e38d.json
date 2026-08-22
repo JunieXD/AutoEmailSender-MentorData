@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1d0706fde5d84e9218de"
+      ],
+      "ended_at": null,
+      "id": "aff_a5d98eb59b0465cf2fc6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:44Z",
+      "organization_id": "org_auto_518298dcc9dcb1ad8413",
+      "source_url": "https://hxxy.neau.edu.cn/info/1143/1520.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_1d0706fde5d84e9218de"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a5d98eb59b0465cf2fc6",
+      "claim_ids": [
+        "claim_1d0706fde5d84e9218de"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenguo@neau.edu.cn",
+      "observed_at": "2026-08-21T18:44:44Z",
+      "source_url": "https://hxxy.neau.edu.cn/info/1143/1520.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chenguo@neau.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:44Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1d0706fde5d84e9218de"
+    ],
+    "email": [
+      "claim_1d0706fde5d84e9218de"
+    ],
+    "name": [
+      "claim_1d0706fde5d84e9218de"
+    ],
+    "profile_url": [
+      "claim_1d0706fde5d84e9218de"
+    ],
+    "recent_papers": [
+      "claim_1d0706fde5d84e9218de"
+    ],
+    "research_directions": [
+      "claim_1d0706fde5d84e9218de"
+    ],
+    "status": [
+      "claim_1d0706fde5d84e9218de"
+    ],
+    "title": [
+      "claim_1d0706fde5d84e9218de"
+    ]
+  },
+  "id": "mentor_b6f98fc15ff6eb76e38d",
+  "last_verified_at": "2026-08-21T18:44:44Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1d0706fde5d84e9218de"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭晨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a5d98eb59b0465cf2fc6",
+      "claim_ids": [
+        "claim_1d0706fde5d84e9218de"
+      ],
+      "observed_at": "2026-08-21T18:44:44Z",
+      "status": "current",
+      "url": "https://hxxy.neau.edu.cn/info/1143/1520.htm"
+    }
+  ],
+  "recent_papers": [
+    "Strategies for enhancing hydrogen storage capacity of carbon-based sandwich material by boron doping: Exploring the optimal doping ratio",
+    "The effect of boron atom doping on hydrogen storage capacity",
+    "Stability and hydrogen storage properties of Sc6O8 and Y6O8 cagelike complexes",
+    "The hydrogen storage capacities of 4d transition metals in various boron systems",
+    "Stability and Hydrogen Storage Properties of Mx-B6H6 Complexes (M = Y-Mo, Ru-Ag, x=1-2)"
+  ],
+  "research_directions": [
+    "储氢材料的理论研究、尿素合成的理论研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:44Z",
+  "status_reason": null,
+  "status_source_url": "https://hxxy.neau.edu.cn/info/1143/1520.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:44:44Z"
+}
