@@ -1,0 +1,77 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ab8d239db825a2cd73a5"
+      ],
+      "ended_at": null,
+      "id": "aff_4b0a8435a8d483605830",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:46Z",
+      "organization_id": "org_auto_6b2ccebc8bff27754167",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_ab8d239db825a2cd73a5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4b0a8435a8d483605830",
+      "claim_ids": [
+        "claim_ab8d239db825a2cd73a5"
+      ],
+      "is_primary": true,
+      "normalized_value": "yanjunyang@sjtu.edu.cn",
+      "observed_at": "2026-08-21T18:49:46Z",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+      "status": "current",
+      "type": "email",
+      "value": "yanjunyang@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ab8d239db825a2cd73a5"
+    ],
+    "email": [
+      "claim_ab8d239db825a2cd73a5"
+    ],
+    "name": [
+      "claim_ab8d239db825a2cd73a5"
+    ],
+    "status": [
+      "claim_ab8d239db825a2cd73a5"
+    ],
+    "title": [
+      "claim_ab8d239db825a2cd73a5"
+    ]
+  },
+  "id": "mentor_301a4aceb376db3399e4",
+  "last_verified_at": "2026-08-21T18:49:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ab8d239db825a2cd73a5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨彦君"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:46Z",
+  "status_reason": null,
+  "status_source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:49:46Z"
+}

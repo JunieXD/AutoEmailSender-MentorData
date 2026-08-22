@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7b564dbbe04c88457821"
+      ],
+      "ended_at": null,
+      "id": "aff_38653b22a6be0fb7690a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:46Z",
+      "organization_id": "org_auto_6b2ccebc8bff27754167",
+      "source_url": "https://shss.sjtu.edu.cn/Web/FacultyDetail/28",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7b564dbbe04c88457821"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_38653b22a6be0fb7690a",
+      "claim_ids": [
+        "claim_7b564dbbe04c88457821"
+      ],
+      "is_primary": true,
+      "normalized_value": "bobmone@hotmail.com",
+      "observed_at": "2026-08-21T18:49:46Z",
+      "source_url": "https://shss.sjtu.edu.cn/Web/FacultyDetail/28",
+      "status": "current",
+      "type": "email",
+      "value": "bobmone@hotmail.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7b564dbbe04c88457821"
+    ],
+    "email": [
+      "claim_7b564dbbe04c88457821"
+    ],
+    "name": [
+      "claim_7b564dbbe04c88457821"
+    ],
+    "profile_url": [
+      "claim_7b564dbbe04c88457821"
+    ],
+    "research_directions": [
+      "claim_7b564dbbe04c88457821"
+    ],
+    "status": [
+      "claim_7b564dbbe04c88457821"
+    ],
+    "title": [
+      "claim_7b564dbbe04c88457821"
+    ]
+  },
+  "id": "mentor_c57eb8ff8e13fdc9e8e6",
+  "last_verified_at": "2026-08-21T18:49:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7b564dbbe04c88457821"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴一波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_38653b22a6be0fb7690a",
+      "claim_ids": [
+        "claim_7b564dbbe04c88457821"
+      ],
+      "observed_at": "2026-08-21T18:49:46Z",
+      "status": "current",
+      "url": "https://shss.sjtu.edu.cn/Web/FacultyDetail/28"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "音乐学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:46Z",
+  "status_reason": null,
+  "status_source_url": "https://shss.sjtu.edu.cn/Web/FacultyDetail/28",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:46Z"
+}

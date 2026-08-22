@@ -1,0 +1,77 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c3ddcbf30ce16f8fbcd7"
+      ],
+      "ended_at": null,
+      "id": "aff_40a337d3018e6a274dac",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:46Z",
+      "organization_id": "org_auto_6b2ccebc8bff27754167",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=65",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c3ddcbf30ce16f8fbcd7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_40a337d3018e6a274dac",
+      "claim_ids": [
+        "claim_c3ddcbf30ce16f8fbcd7"
+      ],
+      "is_primary": true,
+      "normalized_value": "yang.chan@sjtu.edu.cn",
+      "observed_at": "2026-08-21T18:49:46Z",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=65",
+      "status": "current",
+      "type": "email",
+      "value": "yang.chan@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c3ddcbf30ce16f8fbcd7"
+    ],
+    "email": [
+      "claim_c3ddcbf30ce16f8fbcd7"
+    ],
+    "name": [
+      "claim_c3ddcbf30ce16f8fbcd7"
+    ],
+    "status": [
+      "claim_c3ddcbf30ce16f8fbcd7"
+    ],
+    "title": [
+      "claim_c3ddcbf30ce16f8fbcd7"
+    ]
+  },
+  "id": "mentor_f732e76fb4f2dcb2431c",
+  "last_verified_at": "2026-08-21T18:49:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c3ddcbf30ce16f8fbcd7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨婵"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:46Z",
+  "status_reason": null,
+  "status_source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=65",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:46Z"
+}
