@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f120fe85fff1b7d72ed5"
+      ],
+      "ended_at": null,
+      "id": "aff_8c60f8ce3942d1fac03c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:10Z",
+      "organization_id": "org_auto_a138f4ecd6636d1519de",
+      "source_url": "https://eeis.ustc.edu.cn/2022/0328/c2648a550457/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f120fe85fff1b7d72ed5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8c60f8ce3942d1fac03c",
+      "claim_ids": [
+        "claim_f120fe85fff1b7d72ed5"
+      ],
+      "is_primary": true,
+      "normalized_value": "xyang21@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:10Z",
+      "source_url": "https://eeis.ustc.edu.cn/2022/0328/c2648a550457/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xyang21@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f120fe85fff1b7d72ed5"
+    ],
+    "email": [
+      "claim_f120fe85fff1b7d72ed5"
+    ],
+    "name": [
+      "claim_f120fe85fff1b7d72ed5"
+    ],
+    "profile_url": [
+      "claim_f120fe85fff1b7d72ed5"
+    ],
+    "recent_papers": [
+      "claim_f120fe85fff1b7d72ed5"
+    ],
+    "research_directions": [
+      "claim_f120fe85fff1b7d72ed5"
+    ],
+    "status": [
+      "claim_f120fe85fff1b7d72ed5"
+    ],
+    "title": [
+      "claim_f120fe85fff1b7d72ed5"
+    ]
+  },
+  "id": "mentor_7523bbe394c3fe59c12e",
+  "last_verified_at": "2026-08-21T18:53:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f120fe85fff1b7d72ed5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨勋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8c60f8ce3942d1fac03c",
+      "claim_ids": [
+        "claim_f120fe85fff1b7d72ed5"
+      ],
+      "observed_at": "2026-08-21T18:53:10Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2022/0328/c2648a550457/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xun Yang, Jianfeng Dong, Yixin Cao, Xun Wang, Meng Wang, Tat-Seng Chua. “Tree-augmented cross-modal encoding for complex-query video retrieval”.Proceedings of the 43rd ACM SIGIR Conference on Research and Development in Information Retrieval(SIGIR), 2020: 1339-1348",
+    "Xun Yang, Fuli Feng, Wei Ji, Meng Wang, Tat-Seng Chua. “Deconfounded Video Moment Retrieval with Causal Intervention”.Proceedings of the44th ACM SIGIR Conference on Research and Development in Information Retrieval(SIGIR), 2021: 1-10",
+    "Xun Yang, Shanshan Wang, Jian Dong, Jianfeng Dong, Meng Wang, Tat-Seng Chua. “Video Moment Retrieval with Cross-Modal Neural Architecture Search”.IEEE Transactions on Image Processing(TIP), 2022, 31: 1204-1216",
+    "Xun Yang, Xueliang Liu, Meng Jian, Xinjian Gao, Meng Wang. “Weakly-supervised video object grounding by exploring spatio-temporal contexts”.Proceedings of the 28th ACM International Conference on Multimedia(ACM MM), 2020: 1939-1947",
+    "Xun Yang, Meng Wang, Dacheng Tao. “Person re-identification with metric learning using privileged information”.IEEE Transactions on Image Processing(TIP), 2018, 27(2): 791-805",
+    "Xun Yang, Peicheng Zhou, Meng Wang. “Person reidentification via structural deep metric learning”.IEEE Transactions on Neural Networks and Learning Systems(TNNLS), 2019, 30(10): 2987-2998",
+    "Xun Yang, Meng Wang, Richang Hong, Qi Tian, Yong Rui. “Enhancing Person Re-identification in a Self-trained Subspace”.ACM Transactions on Multimedia Computing, Communications, and Applications(TOMM), 2017, 13(3), 1-23",
+    "Xun Yang, Xiangnan He, Xiang Wang, Yunshan Ma, Fuli Feng, Meng Wang, Tat-Seng Chua. “Interpretable Fashion Matching with Rich Attributes”,Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval(SIGIR), 2019, 775-784"
+  ],
+  "research_directions": [
+    "多媒体计算、跨媒体分析与推理、多媒体内容结构化理解、视觉媒体相关性关联建模"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:10Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2022/0328/c2648a550457/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:10Z"
+}

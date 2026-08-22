@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0b02563d1de2bd295499"
+      ],
+      "ended_at": null,
+      "id": "aff_175acc3122a12c2a8fe0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:10Z",
+      "organization_id": "org_auto_4737f7c0b22981b8795b",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690174/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0b02563d1de2bd295499"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_175acc3122a12c2a8fe0",
+      "claim_ids": [
+        "claim_0b02563d1de2bd295499"
+      ],
+      "is_primary": true,
+      "normalized_value": "tyniu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:10Z",
+      "source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690174/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tyniu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0b02563d1de2bd295499"
+    ],
+    "email": [
+      "claim_0b02563d1de2bd295499"
+    ],
+    "name": [
+      "claim_0b02563d1de2bd295499"
+    ],
+    "profile_url": [
+      "claim_0b02563d1de2bd295499"
+    ],
+    "recent_papers": [
+      "claim_0b02563d1de2bd295499"
+    ],
+    "research_directions": [
+      "claim_0b02563d1de2bd295499"
+    ],
+    "status": [
+      "claim_0b02563d1de2bd295499"
+    ],
+    "title": [
+      "claim_0b02563d1de2bd295499"
+    ]
+  },
+  "id": "mentor_2552f79c46b81bae21d6",
+  "last_verified_at": "2026-08-21T18:53:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0b02563d1de2bd295499"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "牛田野"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_175acc3122a12c2a8fe0",
+      "claim_ids": [
+        "claim_0b02563d1de2bd295499"
+      ],
+      "observed_at": "2026-08-21T18:53:10Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690174/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xianghong Wang#, Zhengwei Ou#, Peng Jin, Jiayi Xie, Ze Teng, Lei Xu, Jichen Du, Mingchao Ding, Yang Chen* and Tianye Niu*, Four-Dimensional Cone-Beam CT Reconstruction via Diffusion Model and Motion Compensation, IEEE Transactions on Radiation and Plasma Medical Sciences, 9(2):191-201, 2025",
+    "Tianye Niu#*, Lei Xu#, Qing Ren, Yajuan Gao, Chen Luo, Ze Teng, Jichen Du, Mingchao Ding, Jiayi Xie, Hongbin Han, Yin Jiang, UBES: Unified scatter correction using ultrafast Boltzmann equation solver for conebeam CT. Comput. Biol. Medicine, 170: 108045, 2024",
+    "Jiajun Xiang, Aihua Mao*, Jiayi Xie, Hongbin Han, Xianghong Wang , Peng Jin, Jichen Du, Mingchao Ding, Lequan Yu and Tianye Niu*, DER-GAN: Dual-Energy Recovery GAN for Conebeam CT, IEEE Transactions Computational Imaging, 10: 28-42, 2023",
+    "Pengfei Yang, Xin Ge, Tiffany Tsui, Xiaokun Liang, Yaoqin Xie, Zhanli Hu, Tianye Niu*, Four-Dimensional Cone Beam CT Imaging Using A Single Routine Scan via Deep Learning, IEEE Transactions on Medical Imaging, 42(5):1495-1508, 2023",
+    "Yangkang Jiang#, Yibao Zhang#, Chen Luo, Pengfei Yang, Jing Wang, Xiaokun Liang, Wei Zhao, Rencang Li and Tianye Niu*, A generalized image quality improvement strategy of cone-beam CT using multiple spectral CT labels in Pix2pix GAN, Phys Med Biol, 67(11):115003, 2022",
+    "Yi Xue#, Wenjian Qin#, Chen Luo, Pengfei Yang, Yangkang Jiang, Tiffany Tsui, Hongjian He, Li Wang, Jiale Qin, Yaoqin Xie, Tianye Niu*, Multi-material decomposition for single energy CT using material sparsity constraint, IEEE Transactions on Medical Imaging, 40(5):1303-1318, 2021",
+    "Yangkang Jiang, Yi Xue, Qihui Lyu, Lei Xu, Chen Luo, Pengfei Yang, Chunlin Yang, Jing Wang, Xi Hu, Xiaoqun Zhang, Ke Sheng, Tianye Niu*, Noise Suppression in Image-domain Multi-material Decomposition for Dual-energy CT, IEEE Transactions on Biomedical Engineering, 67(2): 523-535, 2020"
+  ],
+  "research_directions": [
+    "X射线椎束CT智能成像、散射校正与伪影消除"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:10Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2025/0704/c2648a690174/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:10Z"
+}

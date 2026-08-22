@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_49ddb0690d791388209a"
+      ],
+      "ended_at": null,
+      "id": "aff_393273f8a65aa291461c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:10Z",
+      "organization_id": "org_auto_4737f7c0b22981b8795b",
+      "source_url": "https://eeis.ustc.edu.cn/2015/0721/c2648a19419/page.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_49ddb0690d791388209a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_393273f8a65aa291461c",
+      "claim_ids": [
+        "claim_49ddb0690d791388209a"
+      ],
+      "is_primary": true,
+      "normalized_value": "jundu@ustc.edu.cn",
+      "observed_at": "2026-08-21T18:53:10Z",
+      "source_url": "https://eeis.ustc.edu.cn/2015/0721/c2648a19419/page.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jundu@ustc.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_49ddb0690d791388209a"
+    ],
+    "email": [
+      "claim_49ddb0690d791388209a"
+    ],
+    "name": [
+      "claim_49ddb0690d791388209a"
+    ],
+    "profile_url": [
+      "claim_49ddb0690d791388209a"
+    ],
+    "recent_papers": [
+      "claim_49ddb0690d791388209a"
+    ],
+    "research_directions": [
+      "claim_49ddb0690d791388209a"
+    ],
+    "status": [
+      "claim_49ddb0690d791388209a"
+    ],
+    "title": [
+      "claim_49ddb0690d791388209a"
+    ]
+  },
+  "id": "mentor_2493fe50de89f55cffa6",
+  "last_verified_at": "2026-08-21T18:53:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_49ddb0690d791388209a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杜俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_393273f8a65aa291461c",
+      "claim_ids": [
+        "claim_49ddb0690d791388209a"
+      ],
+      "observed_at": "2026-08-21T18:53:10Z",
+      "status": "current",
+      "url": "https://eeis.ustc.edu.cn/2015/0721/c2648a19419/page.htm"
+    }
+  ],
+  "recent_papers": [
+    "Jun Du, Jian-Fang Zhai, Jin-Shui Hu, Bo Zhu, Si Wei, and Li-Rong Dai, “Writer adaptive feature extraction based on convolutional neural networks for online handwritten Chinese character recognition,” Accepted by Proc. ICDAR 2015.",
+    "Jun Du, Yan-Hui Tu, Yong Xu, Li-Rong Dai, and Chin-Hui Lee, “Speech separation of a target speaker based on deep neural networks,” Proc. ICSP, 2014, pp.473-477.",
+    "Jun Du, “Irrelevant variability normalization via hierarchical deep neural networks for online handwritten Chinese character recognition,” Proc. ICFHR, 2014, pp.303-308.",
+    "Jun Du, Jin-Shui Hu, Bo Zhu, Si Wei, and Li-Rong Dai, “Writer adaptation using bottleneck features and discriminative linear regression for online handwritten Chinese character recognition,” Proc. ICFHR, 2014, pp.311-316.",
+    "Jun Du, Jin-Shui Hu, Bo Zhu, Si Wei, and Li-Rong Dai, “A study of designing compact classifiers using deep neural networks for online handwritten Chinese character recognition,” Proc. ICPR, 2014, pp.2950-2955.",
+    "Jun Du, Qing Wang, Tian Gao, Li-Rong Dai, and Chin-Hui Lee, “Robust speech recognition with speech enhanced deep neural networks,” Proc. INTERSPEECH, 2014, pp.616-620.",
+    "Jun Du and Qiang Huo, “Synthesized stereo mapping via deep neural networks for noisy speech recognition,” Proc. ICASSP, 2014, pp.1783-1787.",
+    "Jun Du and Qiang Huo, “An irrelevant variability normalization approach to discriminative training of multi-prototype based classifiers and its applications for online handwritten Chinese character recognition,” Pattern Recognition, Vol. 47, No. 12, pp.3959-3966, 2014."
+  ],
+  "research_directions": [
+    "语音增强、语音分离等语音信号处理技术以及噪声鲁棒性语音识别、自然场景下的OCR和面向用户定制的手写识别等多模态交互核心技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:10Z",
+  "status_reason": null,
+  "status_source_url": "https://eeis.ustc.edu.cn/2015/0721/c2648a19419/page.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:53:10Z"
+}
