@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_983e7aebcef029615b98",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:54:04Z",
+          "organization_id": "org_auto_a6e815307d708ce2b7ed",
+          "school": "法与经济学院",
+          "source_url": "https://law.zuel.edu.cn/2025/0525/c16276a396830/page.htm",
+          "status": "current",
+          "title": "教授",
+          "university": "中南财经政法大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_983e7aebcef029615b98",
+          "email": "lijun-ius@zuel.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:54:04Z",
+          "source_url": "https://law.zuel.edu.cn/2025/0525/c16276a396830/page.htm"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/182"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "lijun-ius@zuel.edu.cn",
+      "id": "mentor_90b2d80fffb18bd620c4",
+      "last_verified_at": "2026-08-21T18:54:04Z",
+      "name": "李俊",
+      "profile_url": "https://law.zuel.edu.cn/2025/0525/c16276a396830/page.htm",
+      "recent_papers": [],
+      "research_direction": "民商法、罗马法",
+      "school": "法与经济学院",
+      "source_url": "https://law.zuel.edu.cn/szdw/list.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "中南财经政法大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_a6e815307d708ce2b7ed",
+    "name": "法与经济学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_6c38036982326fb05b42",
+    "name": "中南财经政法大学"
+  }
+}
