@@ -1,0 +1,113 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1b2f1516ef834dce43b2"
+      ],
+      "ended_at": null,
+      "id": "aff_bad04bdf8b0a1fd9ce6a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:01Z",
+      "organization_id": "org_auto_83bb92198975bbd9379a",
+      "source_url": "https://eie.hebut.edu.cn/szdw/jsml/js/52490.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1b2f1516ef834dce43b2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bad04bdf8b0a1fd9ce6a",
+      "claim_ids": [
+        "claim_1b2f1516ef834dce43b2"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuming@scse.hebut.edu.cn",
+      "observed_at": "2026-08-21T18:48:01Z",
+      "source_url": "https://eie.hebut.edu.cn/szdw/jsml/js/52490.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuming@scse.hebut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:01Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1b2f1516ef834dce43b2"
+    ],
+    "email": [
+      "claim_1b2f1516ef834dce43b2"
+    ],
+    "name": [
+      "claim_1b2f1516ef834dce43b2"
+    ],
+    "profile_url": [
+      "claim_1b2f1516ef834dce43b2"
+    ],
+    "recent_papers": [
+      "claim_1b2f1516ef834dce43b2"
+    ],
+    "research_directions": [
+      "claim_1b2f1516ef834dce43b2"
+    ],
+    "status": [
+      "claim_1b2f1516ef834dce43b2"
+    ],
+    "title": [
+      "claim_1b2f1516ef834dce43b2"
+    ]
+  },
+  "id": "mentor_0c16b23ff28d3b79aed7",
+  "last_verified_at": "2026-08-21T18:48:01Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1b2f1516ef834dce43b2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "于明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bad04bdf8b0a1fd9ce6a",
+      "claim_ids": [
+        "claim_1b2f1516ef834dce43b2"
+      ],
+      "observed_at": "2026-08-21T18:48:01Z",
+      "status": "current",
+      "url": "https://eie.hebut.edu.cn/szdw/jsml/js/52490.htm"
+    }
+  ],
+  "recent_papers": [
+    "2017,Probabilistic Model for Robust Affine and Non-rigid Point Set Matching,IEEE transactions on pattern analysis and machine intelligence",
+    "2016,基于差分能量图和CGBP的微表情识别,西南交通大学报,CSCD:5854284,EI:20165003125360",
+    "2016,Real-time vehicle detection using histograms of oriented gradients and AdaBoost classification,Optik,WOS:000380417900066(通信作者)",
+    "2015,Micro-expression recognition based on CBP-TOP feature with ELM,Optik,WOS: 000370097900159",
+    "2015,基于对比敏感度的小波域图像显著性检测,通信学报,EI:20154701584312",
+    "2014,基于K近邻法和脊线追踪的指纹匹配算法吉林大学学报.工学版,CSCD:5284244,EI:20144900286041",
+    "2013,融合Hough与Radon变换的车牌倾斜校正算法,控制工程,CSCD",
+    "2013,基于LGBP特征和稀疏表示的人脸表情识别,控制工程,CSCD"
+  ],
+  "research_directions": [
+    "图像处理",
+    "计算机视觉",
+    "生物特征识别",
+    "压缩视频传输",
+    "视频数据挖掘",
+    "人脸识别",
+    "笔迹鉴别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:01Z",
+  "status_reason": null,
+  "status_source_url": "https://eie.hebut.edu.cn/szdw/jsml/js/52490.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:01Z"
+}
