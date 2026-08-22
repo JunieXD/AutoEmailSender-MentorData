@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_84942b7a599c45fd61fd",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:49Z",
+          "organization_id": "org_auto_2deafdb27300d89081b5",
+          "school": null,
+          "source_url": "https://teacher.ncu.edu.cn/publish/004108",
+          "status": "current",
+          "title": "教授",
+          "university": "南昌大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_84942b7a599c45fd61fd",
+          "email": "xulongquan@ncu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:49Z",
+          "source_url": "https://teacher.ncu.edu.cn/publish/004108"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/131"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "xulongquan@ncu.edu.cn",
+      "id": "mentor_ec15d186691bfdfc6ab3",
+      "last_verified_at": "2026-08-21T18:48:49Z",
+      "name": "徐龙权",
+      "profile_url": "https://teacher.ncu.edu.cn/publish/004108",
+      "recent_papers": [],
+      "research_direction": "MOCVD装备研究、高端装备系统设计与分析、智能控制与软件开发、LED电子应用产品研发、装备性能计算、物理场模拟、关键零部件制造",
+      "school": null,
+      "source_url": "https://ie.ncu.edu.cn/szdw/yjszdjs/xsxssyjszdjs.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "南昌大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_2deafdb27300d89081b5",
+    "name": "南昌大学",
+    "type": "university"
+  },
+  "university": {
+    "id": "org_auto_2deafdb27300d89081b5",
+    "name": "南昌大学"
+  }
+}

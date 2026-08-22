@@ -1,0 +1,61 @@
+{
+  "records": [
+    {
+      "affiliations": [
+        {
+          "department": null,
+          "id": "aff_6297422775a72618a5e2",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:49Z",
+          "organization_id": "org_auto_50c3558f024b92a98772",
+          "school": "数学与计算机学院",
+          "source_url": "https://teacher.ncu.edu.cn/publish/minweidong/index.html",
+          "status": "current",
+          "title": "教授",
+          "university": "南昌大学"
+        }
+      ],
+      "contacts": [
+        {
+          "affiliation_id": "aff_6297422775a72618a5e2",
+          "email": "minweidong@ncu.edu.cn",
+          "is_primary": true,
+          "observed_at": "2026-08-21T18:48:49Z",
+          "source_url": "https://teacher.ncu.edu.cn/publish/minweidong/index.html"
+        }
+      ],
+      "contributors": [
+        {
+          "github_login_at_submission": "JunieXD",
+          "github_user_id": 107397009,
+          "issue_urls": [
+            "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/131"
+          ]
+        }
+      ],
+      "department": null,
+      "email": "minweidong@ncu.edu.cn",
+      "id": "mentor_a472e4d6d43c5fd8a37a",
+      "last_verified_at": "2026-08-21T18:48:49Z",
+      "name": "闵卫东",
+      "profile_url": "https://teacher.ncu.edu.cn/publish/minweidong/index.html",
+      "recent_papers": [],
+      "research_direction": "计算机视觉、虚拟现实、人工智能、大数据、元宇宙、新型适应性深度学习、智能感知、自然交互",
+      "school": "数学与计算机学院",
+      "source_url": "https://ie.ncu.edu.cn/szdw/yjszdjs/xxytxgcbsdds.htm",
+      "status": "active",
+      "title": "教授",
+      "university": "南昌大学"
+    }
+  ],
+  "schema_version": 2,
+  "unit": {
+    "id": "org_auto_50c3558f024b92a98772",
+    "name": "数学与计算机学院",
+    "type": "school"
+  },
+  "university": {
+    "id": "org_auto_2deafdb27300d89081b5",
+    "name": "南昌大学"
+  }
+}
