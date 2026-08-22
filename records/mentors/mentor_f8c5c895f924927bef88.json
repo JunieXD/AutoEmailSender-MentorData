@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c42acb4507c77bb533ee"
+      ],
+      "ended_at": null,
+      "id": "aff_e6276fa32b6ce7ed9f58",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:43:46Z",
+      "organization_id": "org_auto_d6f6508cbfe0b8f172be",
+      "source_url": "https://biai.bjut.edu.cn/info/1065/1141.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c42acb4507c77bb533ee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e6276fa32b6ce7ed9f58",
+      "claim_ids": [
+        "claim_c42acb4507c77bb533ee"
+      ],
+      "is_primary": true,
+      "normalized_value": "wenjing.li@bjut.edu.cn",
+      "observed_at": "2026-08-21T18:43:46Z",
+      "source_url": "https://biai.bjut.edu.cn/info/1065/1141.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wenjing.li@bjut.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:43:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c42acb4507c77bb533ee"
+    ],
+    "email": [
+      "claim_c42acb4507c77bb533ee"
+    ],
+    "name": [
+      "claim_c42acb4507c77bb533ee"
+    ],
+    "profile_url": [
+      "claim_c42acb4507c77bb533ee"
+    ],
+    "recent_papers": [
+      "claim_c42acb4507c77bb533ee"
+    ],
+    "research_directions": [
+      "claim_c42acb4507c77bb533ee"
+    ],
+    "status": [
+      "claim_c42acb4507c77bb533ee"
+    ],
+    "title": [
+      "claim_c42acb4507c77bb533ee"
+    ]
+  },
+  "id": "mentor_f8c5c895f924927bef88",
+  "last_verified_at": "2026-08-21T18:43:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c42acb4507c77bb533ee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李文静"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e6276fa32b6ce7ed9f58",
+      "claim_ids": [
+        "claim_c42acb4507c77bb533ee"
+      ],
+      "observed_at": "2026-08-21T18:43:46Z",
+      "status": "current",
+      "url": "https://biai.bjut.edu.cn/info/1065/1141.htm"
+    }
+  ],
+  "recent_papers": [
+    "Wenjing Li*, Minghui Chu. A pruning feedforward small-world neural network by dynamic sparse regularization with smoothing l1/2 norm for nonlinear system modeling.Applied Soft Computing, 136: 110133, 2023.",
+    "Wenjing Li*, Xiaoxiao Wang, Honggui Han, Junfei Qiao. A PLS-based pruning algorithm for simplified long-short term memory neural network in time series prediction.Knowledge Based Systems, 2022, 254: 109608. (SCI)",
+    "Wenjing Li*, Minghui Chu, Junfei Qiao. A pruning feedforward small-world neural network based on Katz centrality for nonlinear system modeling.Neural Networks, 2020, 130: 269-285. (SCI)",
+    "Wenjing Li*, Meng Li, Junkai Zhang, Junfei Qiao. Design of a self-organizing reciprocal modular neural network for nonlinear system modeling.Neurocomputing, 2020, 411: 327-339. (SCI)",
+    "Wenjing Li*, Meng Li, Junfei Qiao, Xin Guo. A feature clustering-based adaptive modular neural network for nonlinear system modeling.ISA Transactions, 2020, 100: 185-197 (SCI).",
+    "Wenjing Li*, Junkai Zhang. Prediction of BOD concentration in wastewater treatment process using a modular neural network in combination with the weather condition.Applied Sciences, 2020, 10(21): 7477 (SCI).",
+    "Wenjing Li*, Minghui Chu, Junfei Qiao. Design of a hierarchy modular neural network and its application in multi-modal emotion recognition.Soft Computing, 2019, 23(22): 11817-11828 (SCI).",
+    "李文静*, 李治港,乔俊飞.基于突触巩固机制的前馈小世界神经网络设计.自动化学报. 49(10): 2145-2158, 2023."
+  ],
+  "research_directions": [
+    "智能建模,类脑计算,模式识别,神经科学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:43:46Z",
+  "status_reason": null,
+  "status_source_url": "https://biai.bjut.edu.cn/info/1065/1141.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:43:46Z"
+}

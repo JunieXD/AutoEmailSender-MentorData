@@ -3686,3 +3686,60 @@ organizations:
   successor_id: null
   created_at: '2026-08-22T08:49:31Z'
   updated_at: '2026-08-22T08:49:31Z'
+- id: org_auto_0d8f76811a454b3d2f88
+  type: university
+  canonical_name: 北京工业大学
+  parent_id: null
+  aliases: []
+  official_urls:
+  - https://bjut.edu.cn/
+  approved_domains:
+  - bjut.edu.cn
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:32Z'
+  updated_at: '2026-08-22T08:49:32Z'
+- id: org_auto_d6f6508cbfe0b8f172be
+  type: institute
+  canonical_name: 北京人工智能研究院
+  parent_id: org_auto_0d8f76811a454b3d2f88
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:32Z'
+  updated_at: '2026-08-22T08:49:32Z'
+- id: org_auto_1edbfc1c707fc30897ec
+  type: school
+  canonical_name: 计算机学院
+  parent_id: org_auto_0d8f76811a454b3d2f88
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:32Z'
+  updated_at: '2026-08-22T08:49:32Z'
+- id: org_auto_5f91d18f4a56f751b3ef
+  type: school
+  canonical_name: 人工智能学院
+  parent_id: org_auto_0d8f76811a454b3d2f88
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:32Z'
+  updated_at: '2026-08-22T08:49:32Z'
+- id: org_auto_7727f065810e64a354cc
+  type: school
+  canonical_name: 人工智能与自动化学院
+  parent_id: org_auto_0d8f76811a454b3d2f88
+  aliases: []
+  official_urls: []
+  approved_domains: []
+  status: active
+  successor_id: null
+  created_at: '2026-08-22T08:49:32Z'
+  updated_at: '2026-08-22T08:49:32Z'
