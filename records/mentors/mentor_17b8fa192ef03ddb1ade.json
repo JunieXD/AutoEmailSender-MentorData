@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aefa127dfed554c137ab"
+      ],
+      "ended_at": null,
+      "id": "aff_dde4f3976fa112cfdeda",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/wanglipeng",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aefa127dfed554c137ab"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dde4f3976fa112cfdeda",
+      "claim_ids": [
+        "claim_aefa127dfed554c137ab"
+      ],
+      "is_primary": true,
+      "normalized_value": "wanglipeng@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/wanglipeng",
+      "status": "current",
+      "type": "email",
+      "value": "wanglipeng@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aefa127dfed554c137ab"
+    ],
+    "email": [
+      "claim_aefa127dfed554c137ab"
+    ],
+    "name": [
+      "claim_aefa127dfed554c137ab"
+    ],
+    "profile_url": [
+      "claim_aefa127dfed554c137ab"
+    ],
+    "research_directions": [
+      "claim_aefa127dfed554c137ab"
+    ],
+    "status": [
+      "claim_aefa127dfed554c137ab"
+    ],
+    "title": [
+      "claim_aefa127dfed554c137ab"
+    ]
+  },
+  "id": "mentor_17b8fa192ef03ddb1ade",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aefa127dfed554c137ab"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王立鹏"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dde4f3976fa112cfdeda",
+      "claim_ids": [
+        "claim_aefa127dfed554c137ab"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/wanglipeng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "复杂系统动力学仿真与智能化、舰载飞行器智能适配、机器人环境感知与智能控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/wanglipeng",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

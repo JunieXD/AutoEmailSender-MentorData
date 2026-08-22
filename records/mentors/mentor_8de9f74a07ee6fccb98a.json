@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c1627072c7142de3f35"
+      ],
+      "ended_at": null,
+      "id": "aff_8b174aa5210e3edd0573",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhuqidan",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c1627072c7142de3f35"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8b174aa5210e3edd0573",
+      "claim_ids": [
+        "claim_1c1627072c7142de3f35"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhuqidan@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhuqidan",
+      "status": "current",
+      "type": "email",
+      "value": "zhuqidan@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c1627072c7142de3f35"
+    ],
+    "email": [
+      "claim_1c1627072c7142de3f35"
+    ],
+    "name": [
+      "claim_1c1627072c7142de3f35"
+    ],
+    "profile_url": [
+      "claim_1c1627072c7142de3f35"
+    ],
+    "research_directions": [
+      "claim_1c1627072c7142de3f35"
+    ],
+    "status": [
+      "claim_1c1627072c7142de3f35"
+    ],
+    "title": [
+      "claim_1c1627072c7142de3f35"
+    ]
+  },
+  "id": "mentor_8de9f74a07ee6fccb98a",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c1627072c7142de3f35"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱齐丹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8b174aa5210e3edd0573",
+      "claim_ids": [
+        "claim_1c1627072c7142de3f35"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhuqidan"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "(1)研究方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhuqidan",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

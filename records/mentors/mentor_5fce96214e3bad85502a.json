@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_909c2853b133b164bbcb"
+      ],
+      "ended_at": null,
+      "id": "aff_604eb0305feb9b6b344d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/liuyang12",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_909c2853b133b164bbcb"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_604eb0305feb9b6b344d",
+      "claim_ids": [
+        "claim_909c2853b133b164bbcb"
+      ],
+      "is_primary": true,
+      "normalized_value": "y_liu@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/liuyang12",
+      "status": "current",
+      "type": "email",
+      "value": "y_liu@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_909c2853b133b164bbcb"
+    ],
+    "email": [
+      "claim_909c2853b133b164bbcb"
+    ],
+    "name": [
+      "claim_909c2853b133b164bbcb"
+    ],
+    "profile_url": [
+      "claim_909c2853b133b164bbcb"
+    ],
+    "research_directions": [
+      "claim_909c2853b133b164bbcb"
+    ],
+    "status": [
+      "claim_909c2853b133b164bbcb"
+    ],
+    "title": [
+      "claim_909c2853b133b164bbcb"
+    ]
+  },
+  "id": "mentor_5fce96214e3bad85502a",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_909c2853b133b164bbcb"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_604eb0305feb9b6b344d",
+      "claim_ids": [
+        "claim_909c2853b133b164bbcb"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/liuyang12"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "先进制导与控制理论在无人飞行器及水下无人航行器中的应用、小型跨介质航行器系统设计与集成、鲁棒非线性控制理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/liuyang12",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

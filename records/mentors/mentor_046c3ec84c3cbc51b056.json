@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6aa2976732ae41e12e64"
+      ],
+      "ended_at": null,
+      "id": "aff_f65c7dd4b12412cb1d87",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhaodawei",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6aa2976732ae41e12e64"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f65c7dd4b12412cb1d87",
+      "claim_ids": [
+        "claim_6aa2976732ae41e12e64"
+      ],
+      "is_primary": true,
+      "normalized_value": "daweizhao@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/zhaodawei",
+      "status": "current",
+      "type": "email",
+      "value": "daweizhao@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6aa2976732ae41e12e64"
+    ],
+    "email": [
+      "claim_6aa2976732ae41e12e64"
+    ],
+    "name": [
+      "claim_6aa2976732ae41e12e64"
+    ],
+    "profile_url": [
+      "claim_6aa2976732ae41e12e64"
+    ],
+    "research_directions": [
+      "claim_6aa2976732ae41e12e64"
+    ],
+    "status": [
+      "claim_6aa2976732ae41e12e64"
+    ],
+    "title": [
+      "claim_6aa2976732ae41e12e64"
+    ]
+  },
+  "id": "mentor_046c3ec84c3cbc51b056",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6aa2976732ae41e12e64"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵大威"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f65c7dd4b12412cb1d87",
+      "claim_ids": [
+        "claim_6aa2976732ae41e12e64"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/zhaodawei"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "船舶动力定位控制、人工智能控制、水下搜救"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/zhaodawei",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

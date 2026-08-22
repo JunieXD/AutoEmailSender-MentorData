@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_48f53c1b15d9e1d60bf7"
+      ],
+      "ended_at": null,
+      "id": "aff_7808e96bea8e61e56428",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/libing",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_48f53c1b15d9e1d60bf7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7808e96bea8e61e56428",
+      "claim_ids": [
+        "claim_48f53c1b15d9e1d60bf7"
+      ],
+      "is_primary": true,
+      "normalized_value": "libing265@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/libing",
+      "status": "current",
+      "type": "email",
+      "value": "libing265@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_48f53c1b15d9e1d60bf7"
+    ],
+    "email": [
+      "claim_48f53c1b15d9e1d60bf7"
+    ],
+    "name": [
+      "claim_48f53c1b15d9e1d60bf7"
+    ],
+    "profile_url": [
+      "claim_48f53c1b15d9e1d60bf7"
+    ],
+    "research_directions": [
+      "claim_48f53c1b15d9e1d60bf7"
+    ],
+    "status": [
+      "claim_48f53c1b15d9e1d60bf7"
+    ],
+    "title": [
+      "claim_48f53c1b15d9e1d60bf7"
+    ]
+  },
+  "id": "mentor_9bc5df007213440e51ce",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_48f53c1b15d9e1d60bf7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李冰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7808e96bea8e61e56428",
+      "claim_ids": [
+        "claim_48f53c1b15d9e1d60bf7"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/libing"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机视觉、水下视觉伺服、水面/水下运动体控制、虚拟仿真(半物理仿真)/数字孪生系统设计集成、板级/芯片级测试系统设计集成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/libing",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

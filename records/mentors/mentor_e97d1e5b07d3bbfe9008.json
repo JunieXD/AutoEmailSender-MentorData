@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2a7d34210ff5e3f6c83e"
+      ],
+      "ended_at": null,
+      "id": "aff_f144dfffc31ffa51cab9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/yexiufen",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2a7d34210ff5e3f6c83e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f144dfffc31ffa51cab9",
+      "claim_ids": [
+        "claim_2a7d34210ff5e3f6c83e"
+      ],
+      "is_primary": true,
+      "normalized_value": "yexiufen@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/yexiufen",
+      "status": "current",
+      "type": "email",
+      "value": "yexiufen@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2a7d34210ff5e3f6c83e"
+    ],
+    "email": [
+      "claim_2a7d34210ff5e3f6c83e"
+    ],
+    "name": [
+      "claim_2a7d34210ff5e3f6c83e"
+    ],
+    "profile_url": [
+      "claim_2a7d34210ff5e3f6c83e"
+    ],
+    "research_directions": [
+      "claim_2a7d34210ff5e3f6c83e"
+    ],
+    "status": [
+      "claim_2a7d34210ff5e3f6c83e"
+    ],
+    "title": [
+      "claim_2a7d34210ff5e3f6c83e"
+    ]
+  },
+  "id": "mentor_e97d1e5b07d3bbfe9008",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2a7d34210ff5e3f6c83e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "叶秀芬"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f144dfffc31ffa51cab9",
+      "claim_ids": [
+        "claim_2a7d34210ff5e3f6c83e"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/yexiufen"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "水下声光图像处理、目标检测与识别及水下智能机器人系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/yexiufen",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

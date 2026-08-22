@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c0cb1761d9aa879001cc"
+      ],
+      "ended_at": null,
+      "id": "aff_63235f49e640327196d5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "https://faculty.hrbeu.edu.cn/chengjianhua/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c0cb1761d9aa879001cc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_63235f49e640327196d5",
+      "claim_ids": [
+        "claim_c0cb1761d9aa879001cc"
+      ],
+      "is_primary": true,
+      "normalized_value": "ins_cheng@163.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/chengjianhua/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ins_cheng@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c0cb1761d9aa879001cc"
+    ],
+    "email": [
+      "claim_c0cb1761d9aa879001cc"
+    ],
+    "name": [
+      "claim_c0cb1761d9aa879001cc"
+    ],
+    "profile_url": [
+      "claim_c0cb1761d9aa879001cc"
+    ],
+    "research_directions": [
+      "claim_c0cb1761d9aa879001cc"
+    ],
+    "status": [
+      "claim_c0cb1761d9aa879001cc"
+    ],
+    "title": [
+      "claim_c0cb1761d9aa879001cc"
+    ]
+  },
+  "id": "mentor_de3cb73c6e09bdeb5ef9",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c0cb1761d9aa879001cc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程建华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_63235f49e640327196d5",
+      "claim_ids": [
+        "claim_c0cb1761d9aa879001cc"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/chengjianhua/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "惯性导航、卫星导航、组合导航、系统设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/chengjianhua/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

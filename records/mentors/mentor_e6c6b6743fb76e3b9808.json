@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ed2fe5e48bbe7e287535"
+      ],
+      "ended_at": null,
+      "id": "aff_7df29ae4f2007f3dda1a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/wangwei1",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ed2fe5e48bbe7e287535"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7df29ae4f2007f3dda1a",
+      "claim_ids": [
+        "claim_ed2fe5e48bbe7e287535"
+      ],
+      "is_primary": true,
+      "normalized_value": "wangwei407@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/wangwei1",
+      "status": "current",
+      "type": "email",
+      "value": "wangwei407@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ed2fe5e48bbe7e287535"
+    ],
+    "email": [
+      "claim_ed2fe5e48bbe7e287535"
+    ],
+    "name": [
+      "claim_ed2fe5e48bbe7e287535"
+    ],
+    "profile_url": [
+      "claim_ed2fe5e48bbe7e287535"
+    ],
+    "research_directions": [
+      "claim_ed2fe5e48bbe7e287535"
+    ],
+    "status": [
+      "claim_ed2fe5e48bbe7e287535"
+    ],
+    "title": [
+      "claim_ed2fe5e48bbe7e287535"
+    ]
+  },
+  "id": "mentor_e6c6b6743fb76e3b9808",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ed2fe5e48bbe7e287535"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7df29ae4f2007f3dda1a",
+      "claim_ids": [
+        "claim_ed2fe5e48bbe7e287535"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/wangwei1"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "现代舰船智能导航与探测技术、海洋运载器导航系统设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/wangwei1",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

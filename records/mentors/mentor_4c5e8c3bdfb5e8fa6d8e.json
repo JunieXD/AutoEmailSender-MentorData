@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a377de3312655b07847c"
+      ],
+      "ended_at": null,
+      "id": "aff_09c0aa6ef6aca421d4c6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/baitao",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a377de3312655b07847c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_09c0aa6ef6aca421d4c6",
+      "claim_ids": [
+        "claim_a377de3312655b07847c"
+      ],
+      "is_primary": true,
+      "normalized_value": "baitao1@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/baitao",
+      "status": "current",
+      "type": "email",
+      "value": "baitao1@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a377de3312655b07847c"
+    ],
+    "email": [
+      "claim_a377de3312655b07847c"
+    ],
+    "name": [
+      "claim_a377de3312655b07847c"
+    ],
+    "profile_url": [
+      "claim_a377de3312655b07847c"
+    ],
+    "recent_papers": [
+      "claim_a377de3312655b07847c"
+    ],
+    "research_directions": [
+      "claim_a377de3312655b07847c"
+    ],
+    "status": [
+      "claim_a377de3312655b07847c"
+    ],
+    "title": [
+      "claim_a377de3312655b07847c"
+    ]
+  },
+  "id": "mentor_4c5e8c3bdfb5e8fa6d8e",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a377de3312655b07847c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "白涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_09c0aa6ef6aca421d4c6",
+      "claim_ids": [
+        "claim_a377de3312655b07847c"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/baitao"
+    }
+  ],
+  "recent_papers": [
+    "分叉分析在水下高速运动体稳定控制中的应用",
+    "Vision-Based Robot Navigation through Combining Unsupervised Learning and Hierarchical,Reinforcement Learning"
+  ],
+  "research_directions": [
+    "水下高速航行体的导航及控制、水下图像识别"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/baitao",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ebcefbe12a428e63ab21"
+      ],
+      "ended_at": null,
+      "id": "aff_3fd2a088a0c81704dff0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhangxun/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ebcefbe12a428e63ab21"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3fd2a088a0c81704dff0",
+      "claim_ids": [
+        "claim_ebcefbe12a428e63ab21"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangxun_hit@sina.com",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "https://faculty.hrbeu.edu.cn/zhangxun/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangxun_hit@sina.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ebcefbe12a428e63ab21"
+    ],
+    "email": [
+      "claim_ebcefbe12a428e63ab21"
+    ],
+    "name": [
+      "claim_ebcefbe12a428e63ab21"
+    ],
+    "profile_url": [
+      "claim_ebcefbe12a428e63ab21"
+    ],
+    "research_directions": [
+      "claim_ebcefbe12a428e63ab21"
+    ],
+    "status": [
+      "claim_ebcefbe12a428e63ab21"
+    ],
+    "title": [
+      "claim_ebcefbe12a428e63ab21"
+    ]
+  },
+  "id": "mentor_d3e064f95cac96919037",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ebcefbe12a428e63ab21"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张勋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3fd2a088a0c81704dff0",
+      "claim_ids": [
+        "claim_ebcefbe12a428e63ab21"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "https://faculty.hrbeu.edu.cn/zhangxun/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "水下无人系统控制、高超声速飞行器控制、图像处理和数据挖掘等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.hrbeu.edu.cn/zhangxun/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f07d2f27a1a87f029bbd"
+      ],
+      "ended_at": null,
+      "id": "aff_96acdb58cee140b998f7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/suli",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f07d2f27a1a87f029bbd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_96acdb58cee140b998f7",
+      "claim_ids": [
+        "claim_f07d2f27a1a87f029bbd"
+      ],
+      "is_primary": true,
+      "normalized_value": "suli406@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/suli",
+      "status": "current",
+      "type": "email",
+      "value": "suli406@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f07d2f27a1a87f029bbd"
+    ],
+    "email": [
+      "claim_f07d2f27a1a87f029bbd"
+    ],
+    "name": [
+      "claim_f07d2f27a1a87f029bbd"
+    ],
+    "profile_url": [
+      "claim_f07d2f27a1a87f029bbd"
+    ],
+    "research_directions": [
+      "claim_f07d2f27a1a87f029bbd"
+    ],
+    "status": [
+      "claim_f07d2f27a1a87f029bbd"
+    ],
+    "title": [
+      "claim_f07d2f27a1a87f029bbd"
+    ]
+  },
+  "id": "mentor_d0ebd17e109503c25b0f",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f07d2f27a1a87f029bbd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "苏丽"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_96acdb58cee140b998f7",
+      "claim_ids": [
+        "claim_f07d2f27a1a87f029bbd"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/suli"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "船舶数字与智能技术、环境感知与智能控制、多传感器信息融合、先进控制理论及应用、智能服务机器人"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/suli",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

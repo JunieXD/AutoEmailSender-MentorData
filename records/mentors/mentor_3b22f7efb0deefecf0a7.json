@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e6e2700e75ba4089a221"
+      ],
+      "ended_at": null,
+      "id": "aff_0979ee1ea3c8a35b3c05",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/yanjinjin",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e6e2700e75ba4089a221"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0979ee1ea3c8a35b3c05",
+      "claim_ids": [
+        "claim_e6e2700e75ba4089a221"
+      ],
+      "is_primary": true,
+      "normalized_value": "jinjin.yan@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/yanjinjin",
+      "status": "current",
+      "type": "email",
+      "value": "jinjin.yan@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e6e2700e75ba4089a221"
+    ],
+    "email": [
+      "claim_e6e2700e75ba4089a221"
+    ],
+    "name": [
+      "claim_e6e2700e75ba4089a221"
+    ],
+    "profile_url": [
+      "claim_e6e2700e75ba4089a221"
+    ],
+    "research_directions": [
+      "claim_e6e2700e75ba4089a221"
+    ],
+    "status": [
+      "claim_e6e2700e75ba4089a221"
+    ],
+    "title": [
+      "claim_e6e2700e75ba4089a221"
+    ]
+  },
+  "id": "mentor_3b22f7efb0deefecf0a7",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e6e2700e75ba4089a221"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "闫金金"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0979ee1ea3c8a35b3c05",
+      "claim_ids": [
+        "claim_e6e2700e75ba4089a221"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/yanjinjin"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "水下无人潜航器导航及控制、无人系统集群协同路径规划、集群协同拓扑结构、集群协同控制、集群协同全覆盖路径规划、集群协同任务分配、集群SLAM、ROS系统、三维空间导航、三维空间细分及导航网络构建、室内外无缝导航、导航路径算法、目标识别、移动即服务(Mobility as a Service, MaaS)、超级导航网络"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/yanjinjin",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}

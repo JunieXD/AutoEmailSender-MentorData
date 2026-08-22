@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0aabdf0c43ce498d52a"
+      ],
+      "ended_at": null,
+      "id": "aff_1e9050b56ec846faa272",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:47:56Z",
+      "organization_id": "org_auto_d37c3b5e36685c0001ae",
+      "source_url": "http://faculty.hrbeu.edu.cn/sunyue",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0aabdf0c43ce498d52a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1e9050b56ec846faa272",
+      "claim_ids": [
+        "claim_d0aabdf0c43ce498d52a"
+      ],
+      "is_primary": true,
+      "normalized_value": "syue@hrbeu.edu.cn",
+      "observed_at": "2026-08-21T18:47:56Z",
+      "source_url": "http://faculty.hrbeu.edu.cn/sunyue",
+      "status": "current",
+      "type": "email",
+      "value": "syue@hrbeu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:47:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0aabdf0c43ce498d52a"
+    ],
+    "email": [
+      "claim_d0aabdf0c43ce498d52a"
+    ],
+    "name": [
+      "claim_d0aabdf0c43ce498d52a"
+    ],
+    "profile_url": [
+      "claim_d0aabdf0c43ce498d52a"
+    ],
+    "recent_papers": [
+      "claim_d0aabdf0c43ce498d52a"
+    ],
+    "research_directions": [
+      "claim_d0aabdf0c43ce498d52a"
+    ],
+    "status": [
+      "claim_d0aabdf0c43ce498d52a"
+    ],
+    "title": [
+      "claim_d0aabdf0c43ce498d52a"
+    ]
+  },
+  "id": "mentor_8de0090e356228e2d5c2",
+  "last_verified_at": "2026-08-21T18:47:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0aabdf0c43ce498d52a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙越"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1e9050b56ec846faa272",
+      "claim_ids": [
+        "claim_d0aabdf0c43ce498d52a"
+      ],
+      "observed_at": "2026-08-21T18:47:56Z",
+      "status": "current",
+      "url": "http://faculty.hrbeu.edu.cn/sunyue"
+    }
+  ],
+  "recent_papers": [
+    "Decentralized Control for Continuous-Time Stochastic Systems With Asymmetric Information Controllers, INTERNATIONAL JOURNAL OF ROBUST AND NONLINEAR CONTROL",
+    "Modeling and Output Feedback Tracking Control of Self-Developed Autonomous Underwater Vehicle, UNMANNED SYSTEMS",
+    "Probabilistic generative olfactory-based navigation in turbulent environments for Mars methane exploration, NONLINEAR DYNAMICS, 113(11):13167-13192",
+    "Olfactory-based powered descent guidance for Mars methane plume exploration in long-time-average wind environment, Advances in Space Research, 75(1):1245-1263",
+    "Further results on optimal local and remote control with packet losses and transmission delay, SYSTEMS & CONTROL LETTERS, 186()",
+    "Decentralized Control for Continuous-Time Stochastic Systems With Asymmetric Information Controllers",
+    "Modeling and Output Feedback Tracking Control of Self-Developed Autonomous Underwater Vehicle",
+    "Probabilistic generative olfactory-based navigation in turbulent environments for Mars methane exploration"
+  ],
+  "research_directions": [
+    "水下无人系统自主控制、策略规划、强化学习等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:47:56Z",
+  "status_reason": null,
+  "status_source_url": "http://faculty.hrbeu.edu.cn/sunyue",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:47:56Z"
+}
