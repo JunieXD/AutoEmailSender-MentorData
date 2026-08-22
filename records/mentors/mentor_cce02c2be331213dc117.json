@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ccfa50a4286d6ff3c8a4"
+      ],
+      "ended_at": null,
+      "id": "aff_7a437457b05abcde2bc6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3030.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ccfa50a4286d6ff3c8a4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_7a437457b05abcde2bc6",
+      "claim_ids": [
+        "claim_ccfa50a4286d6ff3c8a4"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiamingzhang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3030.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiamingzhang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ],
+    "email": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ],
+    "name": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ],
+    "profile_url": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ],
+    "recent_papers": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ],
+    "research_directions": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ],
+    "status": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ],
+    "title": [
+      "claim_ccfa50a4286d6ff3c8a4"
+    ]
+  },
+  "id": "mentor_cce02c2be331213dc117",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ccfa50a4286d6ff3c8a4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张嘉明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_7a437457b05abcde2bc6",
+      "claim_ids": [
+        "claim_ccfa50a4286d6ff3c8a4"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3030.htm"
+    }
+  ],
+  "recent_papers": [
+    "Behind Every Domain There Is a Shift: Adapting Distortion-aware Vision Transformers for Panoramic Semantic Segmentation",
+    "CMX: Cross-modal Fusion for RGB-X Semantic Segmentation with Transformers",
+    "Trans4Trans: Efficient Transformer for Transparent Object and Semantic Scene Segmentation in Real-World Navigation Assistance",
+    "Bending Reality: Distortion-aware Transformers for Adapting to Panoramic Semantic Segmentation",
+    "Delivering Arbitrary Modal Semantic Segmentation",
+    "ISSAFE: Improving Semantic Segmentation in Accidents by Fusing Event-based Data"
+  ],
+  "research_directions": [
+    "基于视觉感知的场景理解和智能辅助技术的研究,涵盖自动驾驶、盲人辅助、无人机、机器人等应用场景,具体包括视觉感知与场景理解、具身智能与共身导航、无障碍辅助与人机交互等方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3030.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

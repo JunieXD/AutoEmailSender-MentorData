@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_564112914529a2f37110"
+      ],
+      "ended_at": null,
+      "id": "aff_3964bc30ec31e14d59a8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2953.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_564112914529a2f37110"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3964bc30ec31e14d59a8",
+      "claim_ids": [
+        "claim_564112914529a2f37110"
+      ],
+      "is_primary": true,
+      "normalized_value": "likunwang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2953.htm",
+      "status": "current",
+      "type": "email",
+      "value": "likunwang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_564112914529a2f37110"
+    ],
+    "email": [
+      "claim_564112914529a2f37110"
+    ],
+    "name": [
+      "claim_564112914529a2f37110"
+    ],
+    "profile_url": [
+      "claim_564112914529a2f37110"
+    ],
+    "recent_papers": [
+      "claim_564112914529a2f37110"
+    ],
+    "research_directions": [
+      "claim_564112914529a2f37110"
+    ],
+    "status": [
+      "claim_564112914529a2f37110"
+    ],
+    "title": [
+      "claim_564112914529a2f37110"
+    ]
+  },
+  "id": "mentor_e96266e2638c73e07fb0",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_564112914529a2f37110"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王立坤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3964bc30ec31e14d59a8",
+      "claim_ids": [
+        "claim_564112914529a2f37110"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/2953.htm"
+    }
+  ],
+  "recent_papers": [
+    "Wang, Likun, et al. \"Uncertainty-propagated Cartesian coordinated human–robot collaboration on Riemannian manifold with hidden state-space model.\" Engineering Applications of Artificial Intelligence 117 (2023): 105491.(IF = 8.0, Top)",
+    "Wang, Likun, et al. \"Imitation learning for coordinated human–robot collaboration based on hidden state-space models.\" Robotics and computer-integrated manufacturing 76 (2022): 102310.(IF = 10.4, Top)",
+    "Wang, Likun, et al. \"Deep Dynamic Layout Optimization of Photogrammetry Camera Position Based on Digital Twin.\" IEEE Transactions on Automation Science and Engineering (2023).(IF= 5.6, Top)",
+    "Wang, Likun, et al. \"Digital-twin deep dynamic camera position optimisation for the V-STARS photogrammetry system based on 3D reconstruction.\" International Journal of Production Research (2023): 1-20.(IF = 9.2, Top)",
+    "Wang, Likun, et al.\"Multi-agent Cooperative Swarm Learning for Dynamic Layout Optimisation of Reconfigurable Robotic Assembly Cells based on Digital Twin,\"Journal of Intelligent Manufacturing. Accepted,(IF=8.3, Top)"
+  ],
+  "research_directions": [
+    "模仿学习",
+    "数字孪生",
+    "高精度测量",
+    "智能制造",
+    "集群制造",
+    "大飞机装配"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/2953.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

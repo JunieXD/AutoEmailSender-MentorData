@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1fe866f932556d0da4d5"
+      ],
+      "ended_at": null,
+      "id": "aff_b815b24865a510a8b37f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2957.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1fe866f932556d0da4d5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b815b24865a510a8b37f",
+      "claim_ids": [
+        "claim_1fe866f932556d0da4d5"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhonghang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2957.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhonghang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1fe866f932556d0da4d5"
+    ],
+    "email": [
+      "claim_1fe866f932556d0da4d5"
+    ],
+    "name": [
+      "claim_1fe866f932556d0da4d5"
+    ],
+    "profile_url": [
+      "claim_1fe866f932556d0da4d5"
+    ],
+    "recent_papers": [
+      "claim_1fe866f932556d0da4d5"
+    ],
+    "research_directions": [
+      "claim_1fe866f932556d0da4d5"
+    ],
+    "status": [
+      "claim_1fe866f932556d0da4d5"
+    ],
+    "title": [
+      "claim_1fe866f932556d0da4d5"
+    ]
+  },
+  "id": "mentor_48bcd1d65094b9a8f298",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1fe866f932556d0da4d5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "钟杭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b815b24865a510a8b37f",
+      "claim_ids": [
+        "claim_1fe866f932556d0da4d5"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/2957.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Singularity-Free Vector-Field-Based Framework for Safe Distributed Motion Coordination of Multi-Robot Systems[J].IEEE Transactions on Robotics.",
+    "A Spherical Flying-Rolling Robot With Triaxial Gimbal Mechanism: Gimbal Lock Analysis and Control[J]. IEEE Robotics and Automation Letters, 2026.",
+    "Stability-Guaranteed Hybrid Motion/Force Control for Aerial Interaction Based on Switching Strategy[J]. IEEE Transactions on Aerospace and Electronic Systems, 2026.",
+    "Electric Power Robots: Modeling, Control, and Applications[M]. Springer Nature, 2025.",
+    "Parameterized Motion Planning for Aerial Manipulators in Contact with Unstructured Surfaces[C]//2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2025: 5401-5406.",
+    "A Method for Constructing Building Structure Grid Map Based on a Climbing Algorithm[C]//2025 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2025: 13753-13758.",
+    "Optimization-Based Single Anchor UWB Positioning System for Mobile Robots[J]. IEEE Transactions on Instrumentation and Measurement, 2024, 73: 1-11.",
+    "Prototype, modeling, and control of aerial robots with physical interaction: A review[J]. IEEE Transactions on Automation Science and Engineering, 2024, 22: 3528-3542."
+  ],
+  "research_directions": [
+    "新型空中机器人建模、规划与控制,新概念机器人形态设计与具身控制,仿生驱动的多机器人自主与协同,极端环境机器人具身学习作业"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/2957.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

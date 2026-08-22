@@ -1,0 +1,516 @@
+{
+  "created_organization_ids": [
+    "org_auto_04d2e0c7b458454ad81a",
+    "org_auto_12d359f957fb706e412f",
+    "org_auto_3f870ea95b81e8a701d2",
+    "org_auto_69a105117ffde2915b8d",
+    "org_auto_92dec01a812e31a369a3",
+    "org_auto_b5c398834044e2788229"
+  ],
+  "decided_at": "2026-08-22T08:49:49Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0c9cede775fcf55e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_127_row_1",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_127_row_4",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_b5c398834044e2788229"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_55e5f198f4fb2777",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_3f870ea95b81e8a701d2"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_5cb5cbde222cfa79",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_b5c398834044e2788229"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_617f9f93c1e81353",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_3f870ea95b81e8a701d2"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_774b0a49136212e2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能与机器人学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8826579b63fccac7",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能与机器人学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "控制科学与工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b4dd7a092f366a2d",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能与机器人学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "机器人工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e0baeebf4d39b5ec",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能与机器人学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f7d3ca350093169c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_6f61b883b7e493270de3",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人工智能与机器人学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "机器人视觉感知与控制技术国家工程研究中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_127",
+  "invalid_rows": [],
+  "issue": {
+    "number": 127,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/127"
+  },
+  "manifest_sha256": "8b68f8a0405c72194590dff3ee8e1592401d7dc85897db463517b68614fd3b29",
+  "mapped_proposal_ids": [
+    "proposal_issue_127_row_10",
+    "proposal_issue_127_row_11",
+    "proposal_issue_127_row_12",
+    "proposal_issue_127_row_13",
+    "proposal_issue_127_row_14",
+    "proposal_issue_127_row_15",
+    "proposal_issue_127_row_16",
+    "proposal_issue_127_row_17",
+    "proposal_issue_127_row_18",
+    "proposal_issue_127_row_19",
+    "proposal_issue_127_row_2",
+    "proposal_issue_127_row_20",
+    "proposal_issue_127_row_21",
+    "proposal_issue_127_row_22",
+    "proposal_issue_127_row_23",
+    "proposal_issue_127_row_24",
+    "proposal_issue_127_row_25",
+    "proposal_issue_127_row_26",
+    "proposal_issue_127_row_27",
+    "proposal_issue_127_row_28",
+    "proposal_issue_127_row_29",
+    "proposal_issue_127_row_3",
+    "proposal_issue_127_row_30",
+    "proposal_issue_127_row_31",
+    "proposal_issue_127_row_32",
+    "proposal_issue_127_row_33",
+    "proposal_issue_127_row_34",
+    "proposal_issue_127_row_35",
+    "proposal_issue_127_row_36",
+    "proposal_issue_127_row_37",
+    "proposal_issue_127_row_38",
+    "proposal_issue_127_row_39",
+    "proposal_issue_127_row_40",
+    "proposal_issue_127_row_41",
+    "proposal_issue_127_row_42",
+    "proposal_issue_127_row_43",
+    "proposal_issue_127_row_44",
+    "proposal_issue_127_row_45",
+    "proposal_issue_127_row_46",
+    "proposal_issue_127_row_47",
+    "proposal_issue_127_row_48",
+    "proposal_issue_127_row_49",
+    "proposal_issue_127_row_5",
+    "proposal_issue_127_row_50",
+    "proposal_issue_127_row_51",
+    "proposal_issue_127_row_52",
+    "proposal_issue_127_row_53",
+    "proposal_issue_127_row_54",
+    "proposal_issue_127_row_55",
+    "proposal_issue_127_row_56",
+    "proposal_issue_127_row_57",
+    "proposal_issue_127_row_58",
+    "proposal_issue_127_row_59",
+    "proposal_issue_127_row_6",
+    "proposal_issue_127_row_60",
+    "proposal_issue_127_row_61",
+    "proposal_issue_127_row_62",
+    "proposal_issue_127_row_63",
+    "proposal_issue_127_row_64",
+    "proposal_issue_127_row_7",
+    "proposal_issue_127_row_8",
+    "proposal_issue_127_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "电气与信息工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_3f870ea95b81e8a701d2",
+      "organization_type": "school",
+      "parent_id": "org_auto_6f61b883b7e493270de3"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "机器人学院",
+      "official_url": null,
+      "organization_id": "org_auto_b5c398834044e2788229",
+      "organization_type": "school",
+      "parent_id": "org_auto_6f61b883b7e493270de3"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 132,
+  "rejected_proposal_ids": [
+    "proposal_issue_127_row_1",
+    "proposal_issue_127_row_4"
+  ],
+  "review_comment_id": 5379403280,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a82ed04190951e4efe45"
+      ],
+      "ended_at": null,
+      "id": "aff_5c9ceac671a7b43affa7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3215.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a82ed04190951e4efe45"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5c9ceac671a7b43affa7",
+      "claim_ids": [
+        "claim_a82ed04190951e4efe45"
+      ],
+      "is_primary": true,
+      "normalized_value": "2459154312@qq.com",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3215.htm",
+      "status": "current",
+      "type": "email",
+      "value": "2459154312@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a82ed04190951e4efe45"
+    ],
+    "email": [
+      "claim_a82ed04190951e4efe45"
+    ],
+    "name": [
+      "claim_a82ed04190951e4efe45"
+    ],
+    "profile_url": [
+      "claim_a82ed04190951e4efe45"
+    ],
+    "recent_papers": [
+      "claim_a82ed04190951e4efe45"
+    ],
+    "research_directions": [
+      "claim_a82ed04190951e4efe45"
+    ],
+    "status": [
+      "claim_a82ed04190951e4efe45"
+    ],
+    "title": [
+      "claim_a82ed04190951e4efe45"
+    ]
+  },
+  "id": "mentor_6bca9934de437240261d",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a82ed04190951e4efe45"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "黄石峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5c9ceac671a7b43affa7",
+      "claim_ids": [
+        "claim_a82ed04190951e4efe45"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3215.htm"
+    }
+  ],
+  "recent_papers": [
+    "An analytical approach for dealing with explicit physical constraints in excitation optimization problems of dynamic identification",
+    "Robust estimation for an extended dynamic parameter set of serial manipulators and unmodeled dynamics compensation",
+    "Collision detection for cobots: A back-input compensation approach",
+    "In-situ fault diagnosis for the harmonic reducer of industrial robots via multi-scale mixed convolutional neural networks",
+    "Advancing general robotic manipulation with multimodal foundation models: An embodied ai paradigm",
+    "六关节工业机器人 tcp 标定模型研究与算法改进",
+    "Harmonic reducer in-situ fault diagnosis for industrial robots based on deep learning",
+    "Target force tracking and automatic contour surface processing in grinding of industrial robots"
+  ],
+  "research_directions": [
+    "动力学建模与参数辨识、AI4Science、机器人伺服运动控制、振动抑制、具身智能机器人的灵巧装配技能、多机器人协同的无碰撞最优运动规划、基于多模态基础模型的机器人任务级规划、机器人的智能焊接技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3215.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

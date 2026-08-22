@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9743f1e8812b7fc06ecd"
+      ],
+      "ended_at": null,
+      "id": "aff_900212fe69c877b3f28d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3089.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_9743f1e8812b7fc06ecd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_900212fe69c877b3f28d",
+      "claim_ids": [
+        "claim_9743f1e8812b7fc06ecd"
+      ],
+      "is_primary": true,
+      "normalized_value": "miaozhiqiang@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3089.htm",
+      "status": "current",
+      "type": "email",
+      "value": "miaozhiqiang@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9743f1e8812b7fc06ecd"
+    ],
+    "email": [
+      "claim_9743f1e8812b7fc06ecd"
+    ],
+    "name": [
+      "claim_9743f1e8812b7fc06ecd"
+    ],
+    "profile_url": [
+      "claim_9743f1e8812b7fc06ecd"
+    ],
+    "recent_papers": [
+      "claim_9743f1e8812b7fc06ecd"
+    ],
+    "research_directions": [
+      "claim_9743f1e8812b7fc06ecd"
+    ],
+    "status": [
+      "claim_9743f1e8812b7fc06ecd"
+    ],
+    "title": [
+      "claim_9743f1e8812b7fc06ecd"
+    ]
+  },
+  "id": "mentor_4ca616875a04a9074d46",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9743f1e8812b7fc06ecd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "缪志强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_900212fe69c877b3f28d",
+      "claim_ids": [
+        "claim_9743f1e8812b7fc06ecd"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3089.htm"
+    }
+  ],
+  "recent_papers": [
+    "Weiwei Zhan, Zhiqiang Miao*, Jianxin Zeng, Yanjie Chen, Zheng-Guang Wu, Wei He, Yaonan Wang. Resilient formation control based on watermarks for networked quadrotors under deception attacks,IEEE Transactions on Vehicular Technology,DOI:10.1109/TVT.2025.3541455, 2025.",
+    "Weiwei Zhan, Zhiqiang Miao*, Xiangke Wang, Zheng-Guang Wu, Wei He, and Yaonan Wang. Resilient dynamic coverage control for networked unmanned aerial vehicles under deception attacks,IEEE/ASME Transactions on Mechatronics, DOI: 10.1109/TMECH.2025.3585520, 2025.",
+    "Yang Hu, Zhiqiang Miao*, Yaonan Wang, Xiangke Wang, and Wei He. L1 adaptive control-based formation tracking of multiple quadrotors without linear velocity feedback under unknown disturbances.IEEE Transactions on Automation Science and Engineering, DOI: 10.1109/TASE.2024.3431019, 2024.",
+    "Yang Hu, Zhiqiang Miao*, Yaonan Wang, Hui Zhang, Min Liu, Xiangke Wang, and Hesheng Wang. Uncertainty and disturbance estimator-based distributed formation tracking for quadrotors without linear velocity measurements.IEEE Transactions on Intelligent Vehicles, DOI: 10.1109/TIV.2024.3442444, 2024.",
+    "Yang Hu, Zhiqiang Miao*, Yaonan Wang, Hui Zhang, Xiangke Wang, and He Wei. Safe and reliable distributed fault-tolerant formation control for quadrotor swarms,IEEE Transactions on Aerospace and Electronic Systems, 10.1109/TAES.2025.3553120, 2025.",
+    "Qiong Lin, Zhiqiang Miao*, Yanjie Chen, Xiangke Wang, Wei He, and Yaonan Wang. Bearing-only formation maneuvering for UAV Swarm over directed interaction topologies.IEEE Transactions on Intelligent Vehicles, DOI:10.1109/TIV.2024.3382104, 2024.",
+    "Qiong Lin, Zhiqiang Miao*, Xiangke Wang, Wei He, Yaonan Wang, Peng Shi. Collision-free coordination for quadrotors based on differential flatness.IEEE Transactions on Industrial Electronics, DOI: 10.1109/TIE.2025.3579101, 2025.",
+    "Qiong Lin, Zhiqiang Miao*, Xiangke Wang, Wei He, Yaonan Wang, Peng Shi. GPBF: A Gaussian process-driven adaptive barrier functions for safety-critical control of quadrotors.IEEE Transactions on Aerospace and Electronic Systems, 2025."
+  ],
+  "research_directions": [
+    "多机器人系统、跨域无人系统、多模态机器人、机器人自主导航与控制",
+    "多机器人系统、无人系统跨域协同、协同规划与控制",
+    "多模态机器人、两栖机器人、跨域无人系统",
+    "任务规划、自主导航、安全控制与学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3089.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_618dedadf0ad9bd4d0e6"
+      ],
+      "ended_at": null,
+      "id": "aff_bbdce73cfc42587595e9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3097.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_618dedadf0ad9bd4d0e6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bbdce73cfc42587595e9",
+      "claim_ids": [
+        "claim_618dedadf0ad9bd4d0e6"
+      ],
+      "is_primary": true,
+      "normalized_value": "zheli@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3097.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zheli@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ],
+    "email": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ],
+    "name": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ],
+    "profile_url": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ],
+    "recent_papers": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ],
+    "research_directions": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ],
+    "status": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ],
+    "title": [
+      "claim_618dedadf0ad9bd4d0e6"
+    ]
+  },
+  "id": "mentor_04ae91cd0df0db3af1fa",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_618dedadf0ad9bd4d0e6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李哲"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bbdce73cfc42587595e9",
+      "claim_ids": [
+        "claim_618dedadf0ad9bd4d0e6"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3097.htm"
+    }
+  ],
+  "recent_papers": [
+    "Contrastive learning framework with cross-sensor adaptive signal representation for fault diagnosis",
+    "Fault Identification of Rotating Machinery Based on Dynamic Feature Reconstruction Signal Graph",
+    "A timestamp-based log-linear algorithm for solving locally-informed multi-agent finite games",
+    "Dynamic task Scheduling Optimization by Rolling Horizon Deep Reinforcement Learning for Distributed Satellite System",
+    "Robust driving intention prediction based on multi-stage learning under vehicle–infrastructure cooperative perception",
+    "Unified Diagnostic and Matching Framework of Fault and Quality for Robotic Grinding System",
+    "MQKIN: Manufacturing Quality Knowledge-Driven Interpretable Fault Diagnosis Network for Robotic Grinding Equipment",
+    "A signal-to-image fault classification method based on multi-sensor data for robotic grinding monitoring"
+  ],
+  "research_directions": [
+    "车路网联协同自动驾驶技术、智能化电力作业机器人技术与装备、分布式卫星系统任务规划与应用、复杂工业系统故障诊断方法"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3097.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

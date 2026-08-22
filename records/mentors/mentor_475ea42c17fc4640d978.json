@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f478740c2ed1761307bf"
+      ],
+      "ended_at": null,
+      "id": "aff_30238de652c3e346afa4",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2952.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f478740c2ed1761307bf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_30238de652c3e346afa4",
+      "claim_ids": [
+        "claim_f478740c2ed1761307bf"
+      ],
+      "is_primary": true,
+      "normalized_value": "wjyao@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2952.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wjyao@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f478740c2ed1761307bf"
+    ],
+    "email": [
+      "claim_f478740c2ed1761307bf"
+    ],
+    "name": [
+      "claim_f478740c2ed1761307bf"
+    ],
+    "profile_url": [
+      "claim_f478740c2ed1761307bf"
+    ],
+    "recent_papers": [
+      "claim_f478740c2ed1761307bf"
+    ],
+    "research_directions": [
+      "claim_f478740c2ed1761307bf"
+    ],
+    "status": [
+      "claim_f478740c2ed1761307bf"
+    ],
+    "title": [
+      "claim_f478740c2ed1761307bf"
+    ]
+  },
+  "id": "mentor_475ea42c17fc4640d978",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f478740c2ed1761307bf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "姚伟嘉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_30238de652c3e346afa4",
+      "claim_ids": [
+        "claim_f478740c2ed1761307bf"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/2952.htm"
+    }
+  ],
+  "recent_papers": [
+    "W. Yao, H. G. de Marina, Z. Sun and M. Cao, “Distributed coordinated path following using guiding vector fields,” in IEEE International Conference on Robotics and Automation (ICRA), 2021, Best Conference Paper Award Finalist",
+    "W. Yao, H. G. de Marina, B. Lin and M. Cao, “Singularity-free guiding vector field for robot navigation,” IEEE Transactions on Robotics (TRO), pp. 1206–1221, vol. 37, no. 4, 2021",
+    "W. Yao and M. Cao, “Path following control in 3D using a vector field,” Automatica, pp. 108957, vol. 117, 2020",
+    "Y. Lu, X. Zhang, X. Xu, W. Yao, “Learning-based Near-optimal Motion Planning for Intelligent Vehicles with Uncertain Dynamics,” IEEE Robotics & Automation Letter (RAL), 2023",
+    "Y. Lu, W. Yao, Y. Xiao, X. Xu, “Vector Field-Guided Learning Predictive Control for Motion Planning of Mobile Robots with Unknown Dynamics“, arXiv preprint arXiv:2405.08283, 2024",
+    "W. Yao, B. Lin, Brian D. O. Anderson and M. Cao, “Guiding Vector Fields for Following Occluded Paths,” IEEE Transactions on Automatic Control (TAC), 2022",
+    "W. Yao, B. Lin, Brian D. O. Anderson and M. Cao, “Topological Analysis of Vector-Field Guided Path Following on Manifolds,” IEEE Transactions on Automatic Control (TAC), 2022",
+    "P. Zhu, Z. Zeng, W. Yao, W. Dai, H. Lu, Z. Zhou. “DVRP-MHSI: Dynamic Visualization Research Platform for Multimodal Human-Swarm Interaction”, arXiv preprint arXiv:2408.10861, 2024"
+  ],
+  "research_directions": [
+    "多机器人控制、机器人运动规划",
+    "人工智能、视觉感知、视觉-语言多模态学习",
+    "系统与控制、博弈论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/2952.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

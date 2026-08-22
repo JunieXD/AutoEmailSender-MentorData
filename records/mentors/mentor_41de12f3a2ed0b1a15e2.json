@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_805679f72fda0134a27d"
+      ],
+      "ended_at": null,
+      "id": "aff_d8e1be0d33ca28bdc4c1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3101.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_805679f72fda0134a27d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d8e1be0d33ca28bdc4c1",
+      "claim_ids": [
+        "claim_805679f72fda0134a27d"
+      ],
+      "is_primary": true,
+      "normalized_value": "lichengliu@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3101.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lichengliu@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_805679f72fda0134a27d"
+    ],
+    "email": [
+      "claim_805679f72fda0134a27d"
+    ],
+    "name": [
+      "claim_805679f72fda0134a27d"
+    ],
+    "profile_url": [
+      "claim_805679f72fda0134a27d"
+    ],
+    "recent_papers": [
+      "claim_805679f72fda0134a27d"
+    ],
+    "research_directions": [
+      "claim_805679f72fda0134a27d"
+    ],
+    "status": [
+      "claim_805679f72fda0134a27d"
+    ],
+    "title": [
+      "claim_805679f72fda0134a27d"
+    ]
+  },
+  "id": "mentor_41de12f3a2ed0b1a15e2",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_805679f72fda0134a27d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘立成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d8e1be0d33ca28bdc4c1",
+      "claim_ids": [
+        "claim_805679f72fda0134a27d"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3101.htm"
+    }
+  ],
+  "recent_papers": [
+    "MAPANet: A Multi-Scale Attention-Guided Progressive Aggregation Network for Multi-Contrast MRI Super-Resolution",
+    "Dynamic Graph Regularized Broad Learning with Marginal Fisher Representation for Noisy Data Classification",
+    "Reciprocal Transformation-based Joint Deep and Broad Learning for Change Detection with Heterogeneous Images",
+    "TC3Net: Transformer and Convolution Coupled Contrastive Network for Single Image Super-Resolution",
+    "Efficient and High-Quality Path Planning Guided by Map Information for Mobile Robots",
+    "CMANet: A TCN-RMamba-Attention Network for Surgical Phase Online Recognition",
+    "Graph Attention Prototype Network for Robust Few-Shot Classification",
+    "WaveletMixer: When Wavelet Transform Meets Self-Attention in Single Image Super-Resolution"
+  ],
+  "research_directions": [
+    "图像处理、计算机视觉、人工智能,具体研究方向包括图像超分辨率、暗光图像增强、暗弱目标检测、低质图像识别,以及深度学习、机器学习、宽度学习等新型模型和算法设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3101.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

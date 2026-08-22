@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_7844f6b9fcec937984a6"
+      ],
+      "ended_at": null,
+      "id": "aff_d0c68d566761317cd340",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3121.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "助理教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_7844f6b9fcec937984a6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d0c68d566761317cd340",
+      "claim_ids": [
+        "claim_7844f6b9fcec937984a6"
+      ],
+      "is_primary": true,
+      "normalized_value": "carney@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3121.htm",
+      "status": "current",
+      "type": "email",
+      "value": "carney@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_7844f6b9fcec937984a6"
+    ],
+    "email": [
+      "claim_7844f6b9fcec937984a6"
+    ],
+    "name": [
+      "claim_7844f6b9fcec937984a6"
+    ],
+    "profile_url": [
+      "claim_7844f6b9fcec937984a6"
+    ],
+    "recent_papers": [
+      "claim_7844f6b9fcec937984a6"
+    ],
+    "research_directions": [
+      "claim_7844f6b9fcec937984a6"
+    ],
+    "status": [
+      "claim_7844f6b9fcec937984a6"
+    ],
+    "title": [
+      "claim_7844f6b9fcec937984a6"
+    ]
+  },
+  "id": "mentor_5ef03871aeb7ea0bec51",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_7844f6b9fcec937984a6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张恺宁"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d0c68d566761317cd340",
+      "claim_ids": [
+        "claim_7844f6b9fcec937984a6"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3121.htm"
+    }
+  ],
+  "recent_papers": [
+    "Adapting dense matching for homography estimation with grid-based acceleration, Proceedings of the IEEE/CVF conference on Computer Vision and Pattern Recognition (CVPR), 2025",
+    "Sparse-to-dense multimodal image registration via multi-task learning, International Conference on Machine Learning (ICML), 2024",
+    "Loop closure detection with bidirectional manifold representation consensus, IEEE Transactions on Intelligent Transportation Systems (TITS), 24(4), pp. 3949-3962, 2023",
+    "Loop closure detection via locality preserving matching with global consensus, IEEE/CAA Journal of Automatica Sinica (JAS), 10(2), pp. 411-426, 2023",
+    "Appearance-based loop closure detection via locality-driven accurate motion field learning, IEEE Transactions on Intelligent Transportation Systems (TITS), 23(3), pp. 2350-2365, 2022",
+    "Loop closure detection with reweighting NetVLAD and local motion and structure consensus, IEEE/CAA Journal of Automatica Sinica (JAS), 9(6), pp. 1087-1090, 2022",
+    "Appearance-based loop closure detection via bidirectional manifold representation consensus, IEEE International Conference on Robotics and Automation (ICRA), pp. 6811-6817, 2021",
+    "Motion field consensus with locality preservation: a geometric confirmation strategy for loop closure detection, IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 445-451, 2021"
+  ],
+  "research_directions": [
+    "三维重建、SLAM、多模态场景感知与理解、遥感图像分析与智能解译"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3121.htm",
+  "title": "助理教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

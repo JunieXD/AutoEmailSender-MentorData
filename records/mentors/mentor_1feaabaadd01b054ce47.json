@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1e8d1262be97da202428"
+      ],
+      "ended_at": null,
+      "id": "aff_34063c555100df7569c4",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3114.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1e8d1262be97da202428"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_34063c555100df7569c4",
+      "claim_ids": [
+        "claim_1e8d1262be97da202428"
+      ],
+      "is_primary": true,
+      "normalized_value": "xyliu_hnu@163.com",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3114.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xyliu_hnu@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1e8d1262be97da202428"
+    ],
+    "email": [
+      "claim_1e8d1262be97da202428"
+    ],
+    "name": [
+      "claim_1e8d1262be97da202428"
+    ],
+    "profile_url": [
+      "claim_1e8d1262be97da202428"
+    ],
+    "research_directions": [
+      "claim_1e8d1262be97da202428"
+    ],
+    "status": [
+      "claim_1e8d1262be97da202428"
+    ],
+    "title": [
+      "claim_1e8d1262be97da202428"
+    ]
+  },
+  "id": "mentor_1feaabaadd01b054ce47",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1e8d1262be97da202428"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘小燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_34063c555100df7569c4",
+      "claim_ids": [
+        "claim_1e8d1262be97da202428"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3114.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "机器人视觉检测与目标识别、医学影像处理与计算、智能建模与控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3114.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_06e30d7017a2cfefb6cc"
+      ],
+      "ended_at": null,
+      "id": "aff_df4d736f03f3340618db",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_92dec01a812e31a369a3",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3147.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_06e30d7017a2cfefb6cc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_df4d736f03f3340618db",
+      "claim_ids": [
+        "claim_06e30d7017a2cfefb6cc"
+      ],
+      "is_primary": true,
+      "normalized_value": "tanhaoran@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/3147.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tanhaoran@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_06e30d7017a2cfefb6cc"
+    ],
+    "email": [
+      "claim_06e30d7017a2cfefb6cc"
+    ],
+    "name": [
+      "claim_06e30d7017a2cfefb6cc"
+    ],
+    "profile_url": [
+      "claim_06e30d7017a2cfefb6cc"
+    ],
+    "recent_papers": [
+      "claim_06e30d7017a2cfefb6cc"
+    ],
+    "research_directions": [
+      "claim_06e30d7017a2cfefb6cc"
+    ],
+    "status": [
+      "claim_06e30d7017a2cfefb6cc"
+    ],
+    "title": [
+      "claim_06e30d7017a2cfefb6cc"
+    ]
+  },
+  "id": "mentor_6cdedcfdfecc036b7983",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_06e30d7017a2cfefb6cc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "谭浩然"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_df4d736f03f3340618db",
+      "claim_ids": [
+        "claim_06e30d7017a2cfefb6cc"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/3147.htm"
+    }
+  ],
+  "recent_papers": [
+    "Event-Triggered Data-Driven Trajectory Tracking Control for Networked Mobile-Robot Systems: Application to Workpiece Transport",
+    "Data-Driven Bipartite Consensus Control for Large Workpieces Rotation of Multi-Robot Systems",
+    "Pade-augmented Artificial Potential Field-based Cooperative Control for Multi-mobile Robot Transportation Systems with Input Delays",
+    "Transparent Objects Pose Estimation via RGB-D Enhancement and Depth-Directed Feature Fusion",
+    "Distributed Group Coordination of Multiagent Systems in Cloud Computing Systems Using a Model-free Adaptive Predictive Control Strategy",
+    "Adaptive Finite-Time Coordination Control of a Multi-robotic Fiber Placement System With Model Uncertainties and Closed Architecture",
+    "Data-Driven Distributed Coordinated Control for Cloud-Based Model-Free Multiagent Systems With Communication Constraints",
+    "Event-triggered Super-twisting Fixed-time Consensus Control for Networked Nonlinear Multi-agent Systems with Disturbance"
+  ],
+  "research_directions": [
+    "群体机器人网络化协同控制、多机器人安全运动规划、智能制造机器人系统与装备、大小脑协同的机器人控制器技术与装备"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/3147.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}

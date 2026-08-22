@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6e3f9aa7fd13d610bef3"
+      ],
+      "ended_at": null,
+      "id": "aff_4e6ed973ca5cad2e5ddc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:07Z",
+      "organization_id": "org_auto_69a105117ffde2915b8d",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2956.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6e3f9aa7fd13d610bef3"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4e6ed973ca5cad2e5ddc",
+      "claim_ids": [
+        "claim_6e3f9aa7fd13d610bef3"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuanw@hnu.edu.cn",
+      "observed_at": "2026-08-21T18:48:07Z",
+      "source_url": "http://robotics.hnu.edu.cn/info/1176/2956.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuanw@hnu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:07Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ],
+    "email": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ],
+    "name": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ],
+    "profile_url": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ],
+    "recent_papers": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ],
+    "research_directions": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ],
+    "status": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ],
+    "title": [
+      "claim_6e3f9aa7fd13d610bef3"
+    ]
+  },
+  "id": "mentor_9af5b54a9a2b369d7b10",
+  "last_verified_at": "2026-08-21T18:48:07Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6e3f9aa7fd13d610bef3"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "汪渊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4e6ed973ca5cad2e5ddc",
+      "claim_ids": [
+        "claim_6e3f9aa7fd13d610bef3"
+      ],
+      "observed_at": "2026-08-21T18:48:07Z",
+      "status": "current",
+      "url": "http://robotics.hnu.edu.cn/info/1176/2956.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yuan Wang, Hideaki Ishii, Francois Bonnet, and Xavier Defago, “Resilient real-valued consensus in spite of mobile malicious agents on directed graphs,”IEEE Transactions on Parallel and Distributed Systems, 2022.",
+    "Yuan Wang, Hideaki Ishii, Francois Bonnet, and Xavier Defago, “Resilient Consensus for Multi-Agent Systems under Adversarial Spreading Processes,”IEEE Transactions on Network Science and Engineering,2022.",
+    "Yuan Wang, and Hideaki Ishii,“Resilient consensus through event-based communication,”IEEE Transactions on Control of Network Systems, 2020.",
+    "Yuan Wang, and Hideaki Ishii,“An event-triggered approach to quantized resilient consensus,”International Journal of Robust and Nonlinear Control, 2020.",
+    "Yuan Wang, Sebin. Gracy, Hideaki. Ishii, and Karl. Henrik. Johansson, Mitigation of discrete-time SIS networked epidemics: A local state feedback approach, International Journal of Robust and Nonlinear Control, 2025.",
+    "Zhongqi Deng, Yuan Wang*, , Jian Huang, Hui Zhang, and Yaonan Wang, “Coordinated Energy-Trajectory Economic Model Predictive Control for Autonomous Surface Vehicles under Disturbances”, The 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems(IROS 2025), to appear",
+    "Hiroki Matsume; Yuan Wang*; Hideaki Ishii; Xavier Defago ; Mixed self/event-triggered ternary control for resilient consensus against mobile adversarial agents, Nonlinear Analysis: Hybrid Systems, 2024",
+    "Yuhao Yi; Ronghui You; Hong Liu; Changxin Liu; Yuan Wang* ; Jiancheng Lv* ; Near-optimal resilient aggregation rules for distributed learning using 1-center and 1-mean clustering with outliers, Proc. 38th Annual AAAI Conference on Artificial Intelligence, 2024"
+  ],
+  "research_directions": [
+    "多机器人弹性控制",
+    "鲁棒网络及弹性一致性",
+    "移动机器人路径规划导航",
+    "弹性分布式机器学习",
+    "嵌入式系统及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:07Z",
+  "status_reason": null,
+  "status_source_url": "http://robotics.hnu.edu.cn/info/1176/2956.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:07Z"
+}
