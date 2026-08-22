@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_aad032ed6310589640ae"
+      ],
+      "ended_at": null,
+      "id": "aff_b6b353eab6444423c341",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/002688/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_aad032ed6310589640ae"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b6b353eab6444423c341",
+      "claim_ids": [
+        "claim_aad032ed6310589640ae"
+      ],
+      "is_primary": true,
+      "normalized_value": "lichisheng@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/002688/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "lichisheng@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_aad032ed6310589640ae"
+    ],
+    "email": [
+      "claim_aad032ed6310589640ae"
+    ],
+    "name": [
+      "claim_aad032ed6310589640ae"
+    ],
+    "profile_url": [
+      "claim_aad032ed6310589640ae"
+    ],
+    "research_directions": [
+      "claim_aad032ed6310589640ae"
+    ],
+    "status": [
+      "claim_aad032ed6310589640ae"
+    ],
+    "title": [
+      "claim_aad032ed6310589640ae"
+    ]
+  },
+  "id": "mentor_6a76949b30b6405cdf88",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_aad032ed6310589640ae"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李迟生"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b6b353eab6444423c341",
+      "claim_ids": [
+        "claim_aad032ed6310589640ae"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/002688/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "跳频信号检测和参数估计、深度学习莫尔斯码解码、无线电信号测向交叉定位、OFDM和DSSS宽频信号分析、信息通信与对抗技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/002688/index.html",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

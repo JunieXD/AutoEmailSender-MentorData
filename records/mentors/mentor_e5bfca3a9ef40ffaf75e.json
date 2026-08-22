@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f91235687a92aa9def62"
+      ],
+      "ended_at": null,
+      "id": "aff_3be00cfba35ad486bcb3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092155",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f91235687a92aa9def62"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3be00cfba35ad486bcb3",
+      "claim_ids": [
+        "claim_f91235687a92aa9def62"
+      ],
+      "is_primary": true,
+      "normalized_value": "shenghong@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092155",
+      "status": "current",
+      "type": "email",
+      "value": "shenghong@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f91235687a92aa9def62"
+    ],
+    "email": [
+      "claim_f91235687a92aa9def62"
+    ],
+    "name": [
+      "claim_f91235687a92aa9def62"
+    ],
+    "profile_url": [
+      "claim_f91235687a92aa9def62"
+    ],
+    "recent_papers": [
+      "claim_f91235687a92aa9def62"
+    ],
+    "research_directions": [
+      "claim_f91235687a92aa9def62"
+    ],
+    "status": [
+      "claim_f91235687a92aa9def62"
+    ],
+    "title": [
+      "claim_f91235687a92aa9def62"
+    ]
+  },
+  "id": "mentor_e5bfca3a9ef40ffaf75e",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f91235687a92aa9def62"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "洪升"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3be00cfba35ad486bcb3",
+      "claim_ids": [
+        "claim_f91235687a92aa9def62"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092155"
+    }
+  ],
+  "recent_papers": [
+    "Artificial-Noise-Aided Secure MIMO Wireless Communications via Intelligent Reflecting Surface"
+  ],
+  "research_directions": [
+    "雷达和无线通信信号处理、可重构智能超表面辅助通信感知一体化、人工智能在雷达和通信中的应用、无线通信物理层安全"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092155",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

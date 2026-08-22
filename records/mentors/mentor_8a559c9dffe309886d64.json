@@ -1,0 +1,100 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_75dc4d0a9b457e7ff653"
+      ],
+      "ended_at": null,
+      "id": "aff_165496be396580359fad",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092927",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_75dc4d0a9b457e7ff653"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_165496be396580359fad",
+      "claim_ids": [
+        "claim_75dc4d0a9b457e7ff653"
+      ],
+      "is_primary": true,
+      "normalized_value": "litan@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092927",
+      "status": "current",
+      "type": "email",
+      "value": "litan@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_75dc4d0a9b457e7ff653"
+    ],
+    "email": [
+      "claim_75dc4d0a9b457e7ff653"
+    ],
+    "name": [
+      "claim_75dc4d0a9b457e7ff653"
+    ],
+    "profile_url": [
+      "claim_75dc4d0a9b457e7ff653"
+    ],
+    "recent_papers": [
+      "claim_75dc4d0a9b457e7ff653"
+    ],
+    "research_directions": [
+      "claim_75dc4d0a9b457e7ff653"
+    ],
+    "status": [
+      "claim_75dc4d0a9b457e7ff653"
+    ],
+    "title": [
+      "claim_75dc4d0a9b457e7ff653"
+    ]
+  },
+  "id": "mentor_8a559c9dffe309886d64",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_75dc4d0a9b457e7ff653"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李潭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_165496be396580359fad",
+      "claim_ids": [
+        "claim_75dc4d0a9b457e7ff653"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092927"
+    }
+  ],
+  "recent_papers": [
+    "云制造系统3.0——一种“智能+”时代的新智能制造系统"
+  ],
+  "research_directions": [
+    "智能制造、云制造、工业互联网、工业元宇宙"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092927",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

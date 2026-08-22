@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d050d41a3d46996b231a"
+      ],
+      "ended_at": null,
+      "id": "aff_e6c6e5bd5b49e68fc071",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/yangdingcheng",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d050d41a3d46996b231a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e6c6e5bd5b49e68fc071",
+      "claim_ids": [
+        "claim_d050d41a3d46996b231a"
+      ],
+      "is_primary": true,
+      "normalized_value": "yangdingcheng@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/yangdingcheng",
+      "status": "current",
+      "type": "email",
+      "value": "yangdingcheng@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d050d41a3d46996b231a"
+    ],
+    "email": [
+      "claim_d050d41a3d46996b231a"
+    ],
+    "name": [
+      "claim_d050d41a3d46996b231a"
+    ],
+    "profile_url": [
+      "claim_d050d41a3d46996b231a"
+    ],
+    "research_directions": [
+      "claim_d050d41a3d46996b231a"
+    ],
+    "status": [
+      "claim_d050d41a3d46996b231a"
+    ],
+    "title": [
+      "claim_d050d41a3d46996b231a"
+    ]
+  },
+  "id": "mentor_a092b8fa6dbc992e09e3",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d050d41a3d46996b231a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨鼎成"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e6c6e5bd5b49e68fc071",
+      "claim_ids": [
+        "claim_d050d41a3d46996b231a"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/yangdingcheng"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无线通信、移动物联网,工业互联网及人工智能相关领域的关键技术研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/yangdingcheng",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

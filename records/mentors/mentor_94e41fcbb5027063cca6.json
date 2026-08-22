@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4101c9811f0b18896ab7"
+      ],
+      "ended_at": null,
+      "id": "aff_573ba07c729abcf8f3b2",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/GuoHang",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4101c9811f0b18896ab7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_573ba07c729abcf8f3b2",
+      "claim_ids": [
+        "claim_4101c9811f0b18896ab7"
+      ],
+      "is_primary": true,
+      "normalized_value": "hguo@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/GuoHang",
+      "status": "current",
+      "type": "email",
+      "value": "hguo@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4101c9811f0b18896ab7"
+    ],
+    "email": [
+      "claim_4101c9811f0b18896ab7"
+    ],
+    "name": [
+      "claim_4101c9811f0b18896ab7"
+    ],
+    "profile_url": [
+      "claim_4101c9811f0b18896ab7"
+    ],
+    "recent_papers": [
+      "claim_4101c9811f0b18896ab7"
+    ],
+    "research_directions": [
+      "claim_4101c9811f0b18896ab7"
+    ],
+    "status": [
+      "claim_4101c9811f0b18896ab7"
+    ],
+    "title": [
+      "claim_4101c9811f0b18896ab7"
+    ]
+  },
+  "id": "mentor_94e41fcbb5027063cca6",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4101c9811f0b18896ab7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭杭"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_573ba07c729abcf8f3b2",
+      "claim_ids": [
+        "claim_4101c9811f0b18896ab7"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/GuoHang"
+    }
+  ],
+  "recent_papers": [
+    "Zhang, M., Wang, M., Guo*, H., Hu, J., Xiong, J. Tropospheric Delay Model Based on VMF and ERA5 Reanalysis Data. Appl. Sci. 2023, 13, 5789.",
+    "Guo, H., Chen, X., Yu, M., Uradziński*, M. and Cheng, L., The usefulness of sensor fusion for unmanned aerial vehicle indoor positioning, International Journal of Intelligent Unmanned Systems, 2023",
+    "朱晨,王宇杰,郭杭.基于双目相机的SLAM回环检测改进算法研究.测控技术,2023, 42(1):113-118",
+    "Ting Ni, Hang Guo, et al. Water vapor retrieved from ground-based GNSS and its applications in lightning weather in Hong Kong, Proceedings of the 36th International Technical Meeting of the Satellite Division of The Institute of Navigation (ION GNSS+ 2023), Denver, Colorado, September 2023",
+    "倪婷,郭杭,利用COSMIC-2掩星大气折射率确定对流层顶高度, Proc. China Satellite Navigation Conference (CSNC) 2023, Jinan, May, 2023",
+    "朱晨,郭杭,基于EKF结合ZUPT/ZARU+姿态自测修正的行人导航算法,Proc. China Satellite Navigation Conference (CSNC) 2023, Jinan, May, 2023",
+    "Gaochong You, Hang Guo, Jianfeng Wu, Min Yu*, Inversion Method of Tidal Level Based on GNSS Triple-Frequency, Geometry-Free, Ionospheric Phase Combination. Appl. Sci. 2022, 12, 4983.",
+    "黄聪,郭杭*.基于GPT3模型的ZTD及PWV反演精度分析[J].大地测量与地球动力学,2022,42(05):489-493"
+  ],
+  "research_directions": [
+    "室内定位与导航、GNSS/INS组合导航、多传感器融合、SLAM技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/GuoHang",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

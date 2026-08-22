@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8fff4481c6ce08484480"
+      ],
+      "ended_at": null,
+      "id": "aff_48c47a6e47b49aa6b0ef",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092589/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8fff4481c6ce08484480"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_48c47a6e47b49aa6b0ef",
+      "claim_ids": [
+        "claim_8fff4481c6ce08484480"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhenghai.wang@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092589/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "zhenghai.wang@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8fff4481c6ce08484480"
+    ],
+    "email": [
+      "claim_8fff4481c6ce08484480"
+    ],
+    "name": [
+      "claim_8fff4481c6ce08484480"
+    ],
+    "profile_url": [
+      "claim_8fff4481c6ce08484480"
+    ],
+    "research_directions": [
+      "claim_8fff4481c6ce08484480"
+    ],
+    "status": [
+      "claim_8fff4481c6ce08484480"
+    ],
+    "title": [
+      "claim_8fff4481c6ce08484480"
+    ]
+  },
+  "id": "mentor_9e1044202e20968a2d0f",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8fff4481c6ce08484480"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王正海"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_48c47a6e47b49aa6b0ef",
+      "claim_ids": [
+        "claim_8fff4481c6ce08484480"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092589/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "综合可见光、射频、激光、超声等多种介质,基于大规模混合集成芯片与系统,利用嵌入式信号处理和深度学习,形成通信、探测、成像、定位、识别、跟踪的一体化智能感知系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092589/index.html",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e0da189844aab90de053"
+      ],
+      "ended_at": null,
+      "id": "aff_5315b91be489bf0a133c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004864",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_e0da189844aab90de053"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5315b91be489bf0a133c",
+      "claim_ids": [
+        "claim_e0da189844aab90de053"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenlimin@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004864",
+      "status": "current",
+      "type": "email",
+      "value": "chenlimin@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e0da189844aab90de053"
+    ],
+    "email": [
+      "claim_e0da189844aab90de053"
+    ],
+    "name": [
+      "claim_e0da189844aab90de053"
+    ],
+    "profile_url": [
+      "claim_e0da189844aab90de053"
+    ],
+    "research_directions": [
+      "claim_e0da189844aab90de053"
+    ],
+    "status": [
+      "claim_e0da189844aab90de053"
+    ],
+    "title": [
+      "claim_e0da189844aab90de053"
+    ]
+  },
+  "id": "mentor_694b7f2f3ea2a889c9bd",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e0da189844aab90de053"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈利民"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5315b91be489bf0a133c",
+      "claim_ids": [
+        "claim_e0da189844aab90de053"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004864"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "嵌入式人工智能、机器人自主导航技术、远程智慧医疗系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004864",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

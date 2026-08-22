@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_01019aa9fd3758de4e9c"
+      ],
+      "ended_at": null,
+      "id": "aff_3f361786a3de70b81ebc",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092473",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_01019aa9fd3758de4e9c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3f361786a3de70b81ebc",
+      "claim_ids": [
+        "claim_01019aa9fd3758de4e9c"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhou_song@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092473",
+      "status": "current",
+      "type": "email",
+      "value": "zhou_song@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_01019aa9fd3758de4e9c"
+    ],
+    "email": [
+      "claim_01019aa9fd3758de4e9c"
+    ],
+    "name": [
+      "claim_01019aa9fd3758de4e9c"
+    ],
+    "profile_url": [
+      "claim_01019aa9fd3758de4e9c"
+    ],
+    "research_directions": [
+      "claim_01019aa9fd3758de4e9c"
+    ],
+    "status": [
+      "claim_01019aa9fd3758de4e9c"
+    ],
+    "title": [
+      "claim_01019aa9fd3758de4e9c"
+    ]
+  },
+  "id": "mentor_499f2ffb8ba7a3b5725c",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_01019aa9fd3758de4e9c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3f361786a3de70b81ebc",
+      "claim_ids": [
+        "claim_01019aa9fd3758de4e9c"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092473"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "长期致力于高精度微波智能感知技术研究,主要涵盖轻小型无人机雷达成像、无人机集群SAR协同感知、低空智联通感一体、毫米波智能感知等关键技术方向"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092473",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

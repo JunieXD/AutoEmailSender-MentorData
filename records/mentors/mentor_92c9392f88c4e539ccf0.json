@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2cce2745d2cf59e4b808"
+      ],
+      "ended_at": null,
+      "id": "aff_78e8af5e1d2cdd2658aa",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/huxiong",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2cce2745d2cf59e4b808"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_78e8af5e1d2cdd2658aa",
+      "claim_ids": [
+        "claim_2cce2745d2cf59e4b808"
+      ],
+      "is_primary": true,
+      "normalized_value": "huxiong@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/huxiong",
+      "status": "current",
+      "type": "email",
+      "value": "huxiong@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2cce2745d2cf59e4b808"
+    ],
+    "email": [
+      "claim_2cce2745d2cf59e4b808"
+    ],
+    "name": [
+      "claim_2cce2745d2cf59e4b808"
+    ],
+    "profile_url": [
+      "claim_2cce2745d2cf59e4b808"
+    ],
+    "recent_papers": [
+      "claim_2cce2745d2cf59e4b808"
+    ],
+    "research_directions": [
+      "claim_2cce2745d2cf59e4b808"
+    ],
+    "status": [
+      "claim_2cce2745d2cf59e4b808"
+    ],
+    "title": [
+      "claim_2cce2745d2cf59e4b808"
+    ]
+  },
+  "id": "mentor_92c9392f88c4e539ccf0",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2cce2745d2cf59e4b808"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "胡雄"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_78e8af5e1d2cdd2658aa",
+      "claim_ids": [
+        "claim_2cce2745d2cf59e4b808"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/huxiong"
+    }
+  ],
+  "recent_papers": [
+    "X. Hu, Z. Liu*, G. Wen, X. Yu and C. Liu, \"Voltage Control for Distribution Networks via Coordinated Regulation of Active and Reactive Power of DGs,\" IEEE Transactions on Smart Grid, vol. 11, no. 5, pp. 4017-4031, 2020.",
+    "X. Hu, Z. Liu*, G. Wen, X. Yu and C. Li, \"Branch-Wise Parallel Successive Algorithm for Online Voltage Regulation in Distribution Networks,\" IEEE Transactions on Smart Grid, vol. 10, no. 6, pp. 6678-6689, 2019.",
+    "X. Hu, H. Zhou, Z. Liu*, X. Yu and C. Li, \"Hierarchical Distributed Scheme for Demand Estimation and Power Reallocation in a Future Power Grid,\" IEEE Transactions on Industrial Informatics, vol. 13, no. 5, pp. 2279-2290, 2017.",
+    "Zhi-Wei Liu*, Xiong Hu*(通讯作者), Ming-Feng Ge and Yan-Wu Wang. Asynchronous impulsive control for consensus of second-order multi-agent networks. Communications in Nonlinear Science and Numerical Simulation, 79(2019), Article 10489, DOI: 10.1016/j.cnsns.2019.104892."
+  ],
+  "research_directions": [
+    "电力系统优化、配电网电压调节、多智能体分布式优化、新能源协同调控"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/huxiong",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

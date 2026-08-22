@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3a3b8cc0ec097cfaf36c"
+      ],
+      "ended_at": null,
+      "id": "aff_3aaacc7d46ec89f489aa",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090753/index.html",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_3a3b8cc0ec097cfaf36c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3aaacc7d46ec89f489aa",
+      "claim_ids": [
+        "claim_3a3b8cc0ec097cfaf36c"
+      ],
+      "is_primary": true,
+      "normalized_value": "wulihui@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090753/index.html",
+      "status": "current",
+      "type": "email",
+      "value": "wulihui@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3a3b8cc0ec097cfaf36c"
+    ],
+    "email": [
+      "claim_3a3b8cc0ec097cfaf36c"
+    ],
+    "name": [
+      "claim_3a3b8cc0ec097cfaf36c"
+    ],
+    "profile_url": [
+      "claim_3a3b8cc0ec097cfaf36c"
+    ],
+    "status": [
+      "claim_3a3b8cc0ec097cfaf36c"
+    ],
+    "title": [
+      "claim_3a3b8cc0ec097cfaf36c"
+    ]
+  },
+  "id": "mentor_777e03bdbd52ff718e65",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3a3b8cc0ec097cfaf36c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴黎晖"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3aaacc7d46ec89f489aa",
+      "claim_ids": [
+        "claim_3a3b8cc0ec097cfaf36c"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/090753/index.html"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/090753/index.html",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

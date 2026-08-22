@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c1ebbeca900bd5cbdae6"
+      ],
+      "ended_at": null,
+      "id": "aff_cb62c8d540aab4c6754f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_2685378b8459b814679b",
+      "source_url": "https://teacher.ncu.edu.cn/publish/002611",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c1ebbeca900bd5cbdae6"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cb62c8d540aab4c6754f",
+      "claim_ids": [
+        "claim_c1ebbeca900bd5cbdae6"
+      ],
+      "is_primary": true,
+      "normalized_value": "xfwan@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/002611",
+      "status": "current",
+      "type": "email",
+      "value": "xfwan@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c1ebbeca900bd5cbdae6"
+    ],
+    "email": [
+      "claim_c1ebbeca900bd5cbdae6"
+    ],
+    "name": [
+      "claim_c1ebbeca900bd5cbdae6"
+    ],
+    "profile_url": [
+      "claim_c1ebbeca900bd5cbdae6"
+    ],
+    "research_directions": [
+      "claim_c1ebbeca900bd5cbdae6"
+    ],
+    "status": [
+      "claim_c1ebbeca900bd5cbdae6"
+    ],
+    "title": [
+      "claim_c1ebbeca900bd5cbdae6"
+    ]
+  },
+  "id": "mentor_7f7a2b2da10f397be42c",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c1ebbeca900bd5cbdae6"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "万晓凤"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cb62c8d540aab4c6754f",
+      "claim_ids": [
+        "claim_c1ebbeca900bd5cbdae6"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/002611"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "自动化、电气工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/002611",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

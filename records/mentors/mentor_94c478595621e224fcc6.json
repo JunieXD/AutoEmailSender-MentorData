@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2f41979faaec9d80416a"
+      ],
+      "ended_at": null,
+      "id": "aff_54ac3b49dd9f22df9cc8",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/091600",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_2f41979faaec9d80416a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_54ac3b49dd9f22df9cc8",
+      "claim_ids": [
+        "claim_2f41979faaec9d80416a"
+      ],
+      "is_primary": true,
+      "normalized_value": "mpliu@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/091600",
+      "status": "current",
+      "type": "email",
+      "value": "mpliu@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2f41979faaec9d80416a"
+    ],
+    "email": [
+      "claim_2f41979faaec9d80416a"
+    ],
+    "name": [
+      "claim_2f41979faaec9d80416a"
+    ],
+    "profile_url": [
+      "claim_2f41979faaec9d80416a"
+    ],
+    "research_directions": [
+      "claim_2f41979faaec9d80416a"
+    ],
+    "status": [
+      "claim_2f41979faaec9d80416a"
+    ],
+    "title": [
+      "claim_2f41979faaec9d80416a"
+    ]
+  },
+  "id": "mentor_94c478595621e224fcc6",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2f41979faaec9d80416a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘明萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_54ac3b49dd9f22df9cc8",
+      "claim_ids": [
+        "claim_2f41979faaec9d80416a"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/091600"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能电网分析与优化控制、新能源(光伏与风电)、智能计算成像及激光与材料相互作用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/091600",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

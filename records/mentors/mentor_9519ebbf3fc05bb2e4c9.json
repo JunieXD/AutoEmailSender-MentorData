@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c2083baecb4c0c42ccb2"
+      ],
+      "ended_at": null,
+      "id": "aff_44402362046ef78f2c52",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/002646",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c2083baecb4c0c42ccb2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_44402362046ef78f2c52",
+      "claim_ids": [
+        "claim_c2083baecb4c0c42ccb2"
+      ],
+      "is_primary": true,
+      "normalized_value": "zjjiang@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/002646",
+      "status": "current",
+      "type": "email",
+      "value": "zjjiang@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c2083baecb4c0c42ccb2"
+    ],
+    "email": [
+      "claim_c2083baecb4c0c42ccb2"
+    ],
+    "name": [
+      "claim_c2083baecb4c0c42ccb2"
+    ],
+    "profile_url": [
+      "claim_c2083baecb4c0c42ccb2"
+    ],
+    "research_directions": [
+      "claim_c2083baecb4c0c42ccb2"
+    ],
+    "status": [
+      "claim_c2083baecb4c0c42ccb2"
+    ],
+    "title": [
+      "claim_c2083baecb4c0c42ccb2"
+    ]
+  },
+  "id": "mentor_9519ebbf3fc05bb2e4c9",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c2083baecb4c0c42ccb2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "江智军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_44402362046ef78f2c52",
+      "claim_ids": [
+        "claim_c2083baecb4c0c42ccb2"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/002646"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电气工程及其自动化、电力电子与电力传动技术、水泵控制技术、热处理炉控制技术、反渗透海水淡化技术、PLC技术、现场总线与工业以太网技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/002646",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

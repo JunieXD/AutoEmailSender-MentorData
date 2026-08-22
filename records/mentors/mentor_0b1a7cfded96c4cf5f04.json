@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5ceac9988298d1ff2055"
+      ],
+      "ended_at": null,
+      "id": "aff_bc3ce1ac3a98dd9add81",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacherman.ncu.edu.cn/publish/023028",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_5ceac9988298d1ff2055"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bc3ce1ac3a98dd9add81",
+      "claim_ids": [
+        "claim_5ceac9988298d1ff2055"
+      ],
+      "is_primary": true,
+      "normalized_value": "laiqingwu@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacherman.ncu.edu.cn/publish/023028",
+      "status": "current",
+      "type": "email",
+      "value": "laiqingwu@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5ceac9988298d1ff2055"
+    ],
+    "email": [
+      "claim_5ceac9988298d1ff2055"
+    ],
+    "name": [
+      "claim_5ceac9988298d1ff2055"
+    ],
+    "profile_url": [
+      "claim_5ceac9988298d1ff2055"
+    ],
+    "status": [
+      "claim_5ceac9988298d1ff2055"
+    ],
+    "title": [
+      "claim_5ceac9988298d1ff2055"
+    ]
+  },
+  "id": "mentor_0b1a7cfded96c4cf5f04",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5ceac9988298d1ff2055"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赖青梧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bc3ce1ac3a98dd9add81",
+      "claim_ids": [
+        "claim_5ceac9988298d1ff2055"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacherman.ncu.edu.cn/publish/023028"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacherman.ncu.edu.cn/publish/023028",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

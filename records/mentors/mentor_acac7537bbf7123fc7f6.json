@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_64ad8eabfb8325d128d1"
+      ],
+      "ended_at": null,
+      "id": "aff_c02dfe937bfad2301af4",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090755",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_64ad8eabfb8325d128d1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c02dfe937bfad2301af4",
+      "claim_ids": [
+        "claim_64ad8eabfb8325d128d1"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhouhuilin@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/090755",
+      "status": "current",
+      "type": "email",
+      "value": "zhouhuilin@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_64ad8eabfb8325d128d1"
+    ],
+    "email": [
+      "claim_64ad8eabfb8325d128d1"
+    ],
+    "name": [
+      "claim_64ad8eabfb8325d128d1"
+    ],
+    "profile_url": [
+      "claim_64ad8eabfb8325d128d1"
+    ],
+    "research_directions": [
+      "claim_64ad8eabfb8325d128d1"
+    ],
+    "status": [
+      "claim_64ad8eabfb8325d128d1"
+    ],
+    "title": [
+      "claim_64ad8eabfb8325d128d1"
+    ]
+  },
+  "id": "mentor_acac7537bbf7123fc7f6",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_64ad8eabfb8325d128d1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "周辉林"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c02dfe937bfad2301af4",
+      "claim_ids": [
+        "claim_64ad8eabfb8325d128d1"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/090755"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "探地雷达成像、5G-V2X智能驾驶、人工智能医学影像辅助诊断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/090755",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

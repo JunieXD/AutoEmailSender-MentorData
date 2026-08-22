@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8725121fc7eeeccada5b"
+      ],
+      "ended_at": null,
+      "id": "aff_b635e8362126f0da5f4b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004904",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8725121fc7eeeccada5b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b635e8362126f0da5f4b",
+      "claim_ids": [
+        "claim_8725121fc7eeeccada5b"
+      ],
+      "is_primary": true,
+      "normalized_value": "lichunquan@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004904",
+      "status": "current",
+      "type": "email",
+      "value": "lichunquan@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8725121fc7eeeccada5b"
+    ],
+    "email": [
+      "claim_8725121fc7eeeccada5b"
+    ],
+    "name": [
+      "claim_8725121fc7eeeccada5b"
+    ],
+    "profile_url": [
+      "claim_8725121fc7eeeccada5b"
+    ],
+    "research_directions": [
+      "claim_8725121fc7eeeccada5b"
+    ],
+    "status": [
+      "claim_8725121fc7eeeccada5b"
+    ],
+    "title": [
+      "claim_8725121fc7eeeccada5b"
+    ]
+  },
+  "id": "mentor_8fbcabd99f1ccc020e21",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8725121fc7eeeccada5b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李春泉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b635e8362126f0da5f4b",
+      "claim_ids": [
+        "claim_8725121fc7eeeccada5b"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004904"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "智能机器人与具身智能、虚拟手术仿真与力触觉感知反馈、嵌入式人工智能、脑机接口与多模态信息处理、人工智能、大模型以及智能体技术及其在工业和医学中的应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004904",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

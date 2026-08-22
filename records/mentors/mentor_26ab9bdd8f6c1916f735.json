@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d6388bfb47edb3675e11"
+      ],
+      "ended_at": null,
+      "id": "aff_ec107cf05c12a670735c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004394",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d6388bfb47edb3675e11"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ec107cf05c12a670735c",
+      "claim_ids": [
+        "claim_d6388bfb47edb3675e11"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjingming@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004394",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjingming@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d6388bfb47edb3675e11"
+    ],
+    "email": [
+      "claim_d6388bfb47edb3675e11"
+    ],
+    "name": [
+      "claim_d6388bfb47edb3675e11"
+    ],
+    "profile_url": [
+      "claim_d6388bfb47edb3675e11"
+    ],
+    "research_directions": [
+      "claim_d6388bfb47edb3675e11"
+    ],
+    "status": [
+      "claim_d6388bfb47edb3675e11"
+    ],
+    "title": [
+      "claim_d6388bfb47edb3675e11"
+    ]
+  },
+  "id": "mentor_26ab9bdd8f6c1916f735",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d6388bfb47edb3675e11"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张景明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ec107cf05c12a670735c",
+      "claim_ids": [
+        "claim_d6388bfb47edb3675e11"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004394"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电机及其系统设计与控制"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004394",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

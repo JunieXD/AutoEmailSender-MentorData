@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b60ca83985c4fa76bdce"
+      ],
+      "ended_at": null,
+      "id": "aff_0744d73a5a3e0e04ac02",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004905",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_b60ca83985c4fa76bdce"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0744d73a5a3e0e04ac02",
+      "claim_ids": [
+        "claim_b60ca83985c4fa76bdce"
+      ],
+      "is_primary": true,
+      "normalized_value": "weiqingguo@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004905",
+      "status": "current",
+      "type": "email",
+      "value": "weiqingguo@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b60ca83985c4fa76bdce"
+    ],
+    "email": [
+      "claim_b60ca83985c4fa76bdce"
+    ],
+    "name": [
+      "claim_b60ca83985c4fa76bdce"
+    ],
+    "profile_url": [
+      "claim_b60ca83985c4fa76bdce"
+    ],
+    "research_directions": [
+      "claim_b60ca83985c4fa76bdce"
+    ],
+    "status": [
+      "claim_b60ca83985c4fa76bdce"
+    ],
+    "title": [
+      "claim_b60ca83985c4fa76bdce"
+    ]
+  },
+  "id": "mentor_edb5e28671f8afcfcb08",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b60ca83985c4fa76bdce"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "魏庆国"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0744d73a5a3e0e04ac02",
+      "claim_ids": [
+        "claim_b60ca83985c4fa76bdce"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004905"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "脑机接口、运动想象脑机接口、视觉脑机接口、混合脑机接口、神经康复应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004905",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

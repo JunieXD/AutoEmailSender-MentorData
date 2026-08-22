@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_13b770b93174a52a4269"
+      ],
+      "ended_at": null,
+      "id": "aff_34c97db89173d796b9f7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_2685378b8459b814679b",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093458",
+      "started_at": null,
+      "status": "current",
+      "title": "特聘研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_13b770b93174a52a4269"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_34c97db89173d796b9f7",
+      "claim_ids": [
+        "claim_13b770b93174a52a4269"
+      ],
+      "is_primary": true,
+      "normalized_value": "yong.ding@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093458",
+      "status": "current",
+      "type": "email",
+      "value": "yong.ding@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_13b770b93174a52a4269"
+    ],
+    "email": [
+      "claim_13b770b93174a52a4269"
+    ],
+    "name": [
+      "claim_13b770b93174a52a4269"
+    ],
+    "profile_url": [
+      "claim_13b770b93174a52a4269"
+    ],
+    "recent_papers": [
+      "claim_13b770b93174a52a4269"
+    ],
+    "research_directions": [
+      "claim_13b770b93174a52a4269"
+    ],
+    "status": [
+      "claim_13b770b93174a52a4269"
+    ],
+    "title": [
+      "claim_13b770b93174a52a4269"
+    ]
+  },
+  "id": "mentor_fc1fda8a7e657f6e15db",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_13b770b93174a52a4269"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "丁勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_34c97db89173d796b9f7",
+      "claim_ids": [
+        "claim_13b770b93174a52a4269"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/093458"
+    }
+  ],
+  "recent_papers": [
+    "Distributed continuous-time time-varying optimization for networked Lagrangian systems with quadratic cost functions",
+    "Distributed optimal time-varying resource allocation for networked high-order systems",
+    "Invariant subset and set stability of boolean networks under arbitrary switching signals"
+  ],
+  "research_directions": [
+    "多智能体系统分布式控制、优化和学习,逻辑动态网络,切换系统"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/093458",
+  "title": "特聘研究员",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

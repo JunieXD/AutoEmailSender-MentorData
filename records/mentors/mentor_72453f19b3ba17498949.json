@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bc92fc9c14bc2f89618a"
+      ],
+      "ended_at": null,
+      "id": "aff_4959b589fa284310adaa",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093184",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_bc92fc9c14bc2f89618a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4959b589fa284310adaa",
+      "claim_ids": [
+        "claim_bc92fc9c14bc2f89618a"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhanglsh12@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/093184",
+      "status": "current",
+      "type": "email",
+      "value": "zhanglsh12@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bc92fc9c14bc2f89618a"
+    ],
+    "email": [
+      "claim_bc92fc9c14bc2f89618a"
+    ],
+    "name": [
+      "claim_bc92fc9c14bc2f89618a"
+    ],
+    "profile_url": [
+      "claim_bc92fc9c14bc2f89618a"
+    ],
+    "research_directions": [
+      "claim_bc92fc9c14bc2f89618a"
+    ],
+    "status": [
+      "claim_bc92fc9c14bc2f89618a"
+    ],
+    "title": [
+      "claim_bc92fc9c14bc2f89618a"
+    ]
+  },
+  "id": "mentor_72453f19b3ba17498949",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bc92fc9c14bc2f89618a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张立朔"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4959b589fa284310adaa",
+      "claim_ids": [
+        "claim_bc92fc9c14bc2f89618a"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/093184"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人工智能驱动的三维视觉与智能系统研究,聚焦于点云数据处理、计算机视觉、无人机自主巡检等前沿方向,致力于推动人工智能技术在基础设施巡检、城市建模、环境感知等领域的创新应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/093184",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

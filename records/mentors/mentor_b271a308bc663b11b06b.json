@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1d39b9f4ea5f457d1b33"
+      ],
+      "ended_at": null,
+      "id": "aff_5ac3b0081a5b2c36fea6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004829",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1d39b9f4ea5f457d1b33"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5ac3b0081a5b2c36fea6",
+      "claim_ids": [
+        "claim_1d39b9f4ea5f457d1b33"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangzhonghui@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/004829",
+      "status": "current",
+      "type": "email",
+      "value": "zhangzhonghui@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1d39b9f4ea5f457d1b33"
+    ],
+    "email": [
+      "claim_1d39b9f4ea5f457d1b33"
+    ],
+    "name": [
+      "claim_1d39b9f4ea5f457d1b33"
+    ],
+    "profile_url": [
+      "claim_1d39b9f4ea5f457d1b33"
+    ],
+    "research_directions": [
+      "claim_1d39b9f4ea5f457d1b33"
+    ],
+    "status": [
+      "claim_1d39b9f4ea5f457d1b33"
+    ],
+    "title": [
+      "claim_1d39b9f4ea5f457d1b33"
+    ]
+  },
+  "id": "mentor_b271a308bc663b11b06b",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1d39b9f4ea5f457d1b33"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张忠会"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5ac3b0081a5b2c36fea6",
+      "claim_ids": [
+        "claim_1d39b9f4ea5f457d1b33"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/004829"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电力系统规划设计、输配电价研究、大电网运行安全风险评价"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/004829",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:49Z"
+}

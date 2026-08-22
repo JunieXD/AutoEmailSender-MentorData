@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d5910aa5af1a2656d277"
+      ],
+      "ended_at": null,
+      "id": "aff_e140b7b603368f0fda6f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:49Z",
+      "organization_id": "org_auto_6b8c7361be4c6bdee597",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092058",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_d5910aa5af1a2656d277"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e140b7b603368f0fda6f",
+      "claim_ids": [
+        "claim_d5910aa5af1a2656d277"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangjianli@ncu.edu.cn",
+      "observed_at": "2026-08-21T18:48:49Z",
+      "source_url": "https://teacher.ncu.edu.cn/publish/092058",
+      "status": "current",
+      "type": "email",
+      "value": "zhangjianli@ncu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:49Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d5910aa5af1a2656d277"
+    ],
+    "email": [
+      "claim_d5910aa5af1a2656d277"
+    ],
+    "name": [
+      "claim_d5910aa5af1a2656d277"
+    ],
+    "profile_url": [
+      "claim_d5910aa5af1a2656d277"
+    ],
+    "recent_papers": [
+      "claim_d5910aa5af1a2656d277"
+    ],
+    "research_directions": [
+      "claim_d5910aa5af1a2656d277"
+    ],
+    "status": [
+      "claim_d5910aa5af1a2656d277"
+    ],
+    "title": [
+      "claim_d5910aa5af1a2656d277"
+    ]
+  },
+  "id": "mentor_ed72b5df919555d77a17",
+  "last_verified_at": "2026-08-21T18:48:49Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d5910aa5af1a2656d277"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张建立"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e140b7b603368f0fda6f",
+      "claim_ids": [
+        "claim_d5910aa5af1a2656d277"
+      ],
+      "observed_at": "2026-08-21T18:48:49Z",
+      "status": "current",
+      "url": "https://teacher.ncu.edu.cn/publish/092058"
+    }
+  ],
+  "recent_papers": [
+    "Efficient emission of InGaN-based light-emitting diodes: toward orange and red",
+    "Effect of horizontal p-n junction on optoelectronics characteristics in InGaN-based light-emitting diodes with V-shaped pits",
+    "Enhance the efficiency of green-yellow LED by optimizing the growth condition of preparation layer",
+    "Detailed surface analysis of V-defects in GaN films on patterned silicon(111) substrates by metal-organic chemical vapour deposition",
+    "Study on Carrier transportation in InGaN based green LEDs with V-pits structure in the active region"
+  ],
+  "research_directions": [
+    "氮化物材料、器件与应用研究,包括氮化镓材料生长、LED器件结构与器件物理、LED应用、可见光通信光源、功率射频器件开发等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:49Z",
+  "status_reason": null,
+  "status_source_url": "https://teacher.ncu.edu.cn/publish/092058",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:48:49Z"
+}
