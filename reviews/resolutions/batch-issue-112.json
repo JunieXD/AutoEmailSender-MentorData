@@ -1,0 +1,811 @@
+{
+  "created_organization_ids": [
+    "org_auto_14bcd66bb24492079ab7",
+    "org_auto_3d2baccc03d7ba87da4c",
+    "org_auto_6300962cb1ed47271ba1",
+    "org_auto_6d343cc1f5be3308bd7e",
+    "org_auto_739b11a7288c83a70d24",
+    "org_auto_7a769986594f71fd63d9",
+    "org_auto_817b812af21610ff76d8",
+    "org_auto_c5b0b8491403b3b86348",
+    "org_auto_da4e5069cdbe6857653d",
+    "org_auto_f66fbe32ff8aa3288923",
+    "org_auto_fc405e33dcdd34f45648"
+  ],
+  "decided_at": "2026-08-22T08:49:40Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_0129248b2490e79a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_817b812af21610ff76d8"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_03c0cd02aa3fa83b",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_11dbcfbe7c1d6300",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_c5b0b8491403b3b86348"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_216942c9d91fe464",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "有机化学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_4a08e2e45905c9a4",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "分析化学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_7738483c2156e18e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "福州大学化学学院实验中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_776a563edd1ee6e0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学生物与制药工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8cd9d93c90dc2e0a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9b639f6be9cf90d3",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "环境分析与检测研究所",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_b788884b9ea43f8f",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "有机化学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ea11c6c98cc5aff2",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "物理化学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_eee9172b8ca8a067",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "fzu.edu.cn"
+          ],
+          "canonical_name": "福州大学",
+          "level": "university",
+          "official_url": "https://fzu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "化学学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_112",
+  "invalid_rows": [],
+  "issue": {
+    "number": 112,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/112"
+  },
+  "manifest_sha256": "2a6b848c5405980baab5cc1fdc91e4c2c74c09f89b437cbaaf3301db2b80729b",
+  "mapped_proposal_ids": [
+    "proposal_issue_112_row_1",
+    "proposal_issue_112_row_10",
+    "proposal_issue_112_row_100",
+    "proposal_issue_112_row_101",
+    "proposal_issue_112_row_102",
+    "proposal_issue_112_row_103",
+    "proposal_issue_112_row_104",
+    "proposal_issue_112_row_105",
+    "proposal_issue_112_row_106",
+    "proposal_issue_112_row_107",
+    "proposal_issue_112_row_108",
+    "proposal_issue_112_row_109",
+    "proposal_issue_112_row_11",
+    "proposal_issue_112_row_110",
+    "proposal_issue_112_row_111",
+    "proposal_issue_112_row_112",
+    "proposal_issue_112_row_113",
+    "proposal_issue_112_row_114",
+    "proposal_issue_112_row_115",
+    "proposal_issue_112_row_116",
+    "proposal_issue_112_row_117",
+    "proposal_issue_112_row_118",
+    "proposal_issue_112_row_119",
+    "proposal_issue_112_row_12",
+    "proposal_issue_112_row_120",
+    "proposal_issue_112_row_121",
+    "proposal_issue_112_row_122",
+    "proposal_issue_112_row_123",
+    "proposal_issue_112_row_124",
+    "proposal_issue_112_row_125",
+    "proposal_issue_112_row_126",
+    "proposal_issue_112_row_127",
+    "proposal_issue_112_row_128",
+    "proposal_issue_112_row_129",
+    "proposal_issue_112_row_13",
+    "proposal_issue_112_row_130",
+    "proposal_issue_112_row_131",
+    "proposal_issue_112_row_132",
+    "proposal_issue_112_row_133",
+    "proposal_issue_112_row_134",
+    "proposal_issue_112_row_135",
+    "proposal_issue_112_row_136",
+    "proposal_issue_112_row_137",
+    "proposal_issue_112_row_138",
+    "proposal_issue_112_row_139",
+    "proposal_issue_112_row_14",
+    "proposal_issue_112_row_140",
+    "proposal_issue_112_row_141",
+    "proposal_issue_112_row_142",
+    "proposal_issue_112_row_143",
+    "proposal_issue_112_row_144",
+    "proposal_issue_112_row_145",
+    "proposal_issue_112_row_146",
+    "proposal_issue_112_row_147",
+    "proposal_issue_112_row_148",
+    "proposal_issue_112_row_149",
+    "proposal_issue_112_row_15",
+    "proposal_issue_112_row_150",
+    "proposal_issue_112_row_151",
+    "proposal_issue_112_row_152",
+    "proposal_issue_112_row_153",
+    "proposal_issue_112_row_154",
+    "proposal_issue_112_row_155",
+    "proposal_issue_112_row_156",
+    "proposal_issue_112_row_157",
+    "proposal_issue_112_row_158",
+    "proposal_issue_112_row_159",
+    "proposal_issue_112_row_16",
+    "proposal_issue_112_row_160",
+    "proposal_issue_112_row_161",
+    "proposal_issue_112_row_162",
+    "proposal_issue_112_row_163",
+    "proposal_issue_112_row_164",
+    "proposal_issue_112_row_165",
+    "proposal_issue_112_row_166",
+    "proposal_issue_112_row_167",
+    "proposal_issue_112_row_168",
+    "proposal_issue_112_row_169",
+    "proposal_issue_112_row_17",
+    "proposal_issue_112_row_170",
+    "proposal_issue_112_row_171",
+    "proposal_issue_112_row_172",
+    "proposal_issue_112_row_173",
+    "proposal_issue_112_row_174",
+    "proposal_issue_112_row_175",
+    "proposal_issue_112_row_176",
+    "proposal_issue_112_row_177",
+    "proposal_issue_112_row_178",
+    "proposal_issue_112_row_179",
+    "proposal_issue_112_row_18",
+    "proposal_issue_112_row_180",
+    "proposal_issue_112_row_181",
+    "proposal_issue_112_row_182",
+    "proposal_issue_112_row_183",
+    "proposal_issue_112_row_184",
+    "proposal_issue_112_row_185",
+    "proposal_issue_112_row_186",
+    "proposal_issue_112_row_187",
+    "proposal_issue_112_row_188",
+    "proposal_issue_112_row_189",
+    "proposal_issue_112_row_19",
+    "proposal_issue_112_row_190",
+    "proposal_issue_112_row_191",
+    "proposal_issue_112_row_192",
+    "proposal_issue_112_row_193",
+    "proposal_issue_112_row_194",
+    "proposal_issue_112_row_195",
+    "proposal_issue_112_row_196",
+    "proposal_issue_112_row_197",
+    "proposal_issue_112_row_198",
+    "proposal_issue_112_row_199",
+    "proposal_issue_112_row_2",
+    "proposal_issue_112_row_20",
+    "proposal_issue_112_row_200",
+    "proposal_issue_112_row_201",
+    "proposal_issue_112_row_202",
+    "proposal_issue_112_row_203",
+    "proposal_issue_112_row_204",
+    "proposal_issue_112_row_205",
+    "proposal_issue_112_row_206",
+    "proposal_issue_112_row_207",
+    "proposal_issue_112_row_208",
+    "proposal_issue_112_row_209",
+    "proposal_issue_112_row_21",
+    "proposal_issue_112_row_210",
+    "proposal_issue_112_row_211",
+    "proposal_issue_112_row_212",
+    "proposal_issue_112_row_213",
+    "proposal_issue_112_row_214",
+    "proposal_issue_112_row_215",
+    "proposal_issue_112_row_22",
+    "proposal_issue_112_row_23",
+    "proposal_issue_112_row_24",
+    "proposal_issue_112_row_25",
+    "proposal_issue_112_row_26",
+    "proposal_issue_112_row_27",
+    "proposal_issue_112_row_28",
+    "proposal_issue_112_row_29",
+    "proposal_issue_112_row_3",
+    "proposal_issue_112_row_30",
+    "proposal_issue_112_row_31",
+    "proposal_issue_112_row_32",
+    "proposal_issue_112_row_33",
+    "proposal_issue_112_row_34",
+    "proposal_issue_112_row_35",
+    "proposal_issue_112_row_36",
+    "proposal_issue_112_row_37",
+    "proposal_issue_112_row_38",
+    "proposal_issue_112_row_39",
+    "proposal_issue_112_row_4",
+    "proposal_issue_112_row_40",
+    "proposal_issue_112_row_41",
+    "proposal_issue_112_row_42",
+    "proposal_issue_112_row_43",
+    "proposal_issue_112_row_44",
+    "proposal_issue_112_row_45",
+    "proposal_issue_112_row_46",
+    "proposal_issue_112_row_47",
+    "proposal_issue_112_row_48",
+    "proposal_issue_112_row_49",
+    "proposal_issue_112_row_5",
+    "proposal_issue_112_row_50",
+    "proposal_issue_112_row_51",
+    "proposal_issue_112_row_52",
+    "proposal_issue_112_row_53",
+    "proposal_issue_112_row_54",
+    "proposal_issue_112_row_55",
+    "proposal_issue_112_row_56",
+    "proposal_issue_112_row_57",
+    "proposal_issue_112_row_58",
+    "proposal_issue_112_row_59",
+    "proposal_issue_112_row_6",
+    "proposal_issue_112_row_60",
+    "proposal_issue_112_row_61",
+    "proposal_issue_112_row_62",
+    "proposal_issue_112_row_63",
+    "proposal_issue_112_row_64",
+    "proposal_issue_112_row_65",
+    "proposal_issue_112_row_66",
+    "proposal_issue_112_row_67",
+    "proposal_issue_112_row_68",
+    "proposal_issue_112_row_69",
+    "proposal_issue_112_row_7",
+    "proposal_issue_112_row_70",
+    "proposal_issue_112_row_71",
+    "proposal_issue_112_row_72",
+    "proposal_issue_112_row_73",
+    "proposal_issue_112_row_74",
+    "proposal_issue_112_row_75",
+    "proposal_issue_112_row_76",
+    "proposal_issue_112_row_77",
+    "proposal_issue_112_row_78",
+    "proposal_issue_112_row_79",
+    "proposal_issue_112_row_8",
+    "proposal_issue_112_row_80",
+    "proposal_issue_112_row_81",
+    "proposal_issue_112_row_82",
+    "proposal_issue_112_row_83",
+    "proposal_issue_112_row_84",
+    "proposal_issue_112_row_85",
+    "proposal_issue_112_row_86",
+    "proposal_issue_112_row_87",
+    "proposal_issue_112_row_88",
+    "proposal_issue_112_row_89",
+    "proposal_issue_112_row_9",
+    "proposal_issue_112_row_90",
+    "proposal_issue_112_row_91",
+    "proposal_issue_112_row_92",
+    "proposal_issue_112_row_93",
+    "proposal_issue_112_row_94",
+    "proposal_issue_112_row_95",
+    "proposal_issue_112_row_96",
+    "proposal_issue_112_row_97",
+    "proposal_issue_112_row_98",
+    "proposal_issue_112_row_99"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "化学化工学院",
+      "official_url": null,
+      "organization_id": "org_auto_817b812af21610ff76d8",
+      "organization_type": "school",
+      "parent_id": "org_auto_7a769986594f71fd63d9"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "分子工程研究院",
+      "official_url": null,
+      "organization_id": "org_auto_c5b0b8491403b3b86348",
+      "organization_type": "institute",
+      "parent_id": "org_auto_7a769986594f71fd63d9"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 118,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379402743,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

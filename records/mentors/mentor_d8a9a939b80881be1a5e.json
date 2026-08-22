@@ -1,0 +1,92 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c3bd41b71de98b20c107"
+      ],
+      "ended_at": null,
+      "id": "aff_3ca301ceb77442b9ba65",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:51Z",
+      "organization_id": "org_auto_fc405e33dcdd34f45648",
+      "source_url": "https://chem.fzu.edu.cn/info/1443/14864.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_c3bd41b71de98b20c107"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3ca301ceb77442b9ba65",
+      "claim_ids": [
+        "claim_c3bd41b71de98b20c107"
+      ],
+      "is_primary": true,
+      "normalized_value": "116618210@qq.com",
+      "observed_at": "2026-08-21T18:44:51Z",
+      "source_url": "https://chem.fzu.edu.cn/info/1443/14864.htm",
+      "status": "current",
+      "type": "email",
+      "value": "116618210@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:51Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c3bd41b71de98b20c107"
+    ],
+    "email": [
+      "claim_c3bd41b71de98b20c107"
+    ],
+    "name": [
+      "claim_c3bd41b71de98b20c107"
+    ],
+    "profile_url": [
+      "claim_c3bd41b71de98b20c107"
+    ],
+    "research_directions": [
+      "claim_c3bd41b71de98b20c107"
+    ],
+    "status": [
+      "claim_c3bd41b71de98b20c107"
+    ]
+  },
+  "id": "mentor_d8a9a939b80881be1a5e",
+  "last_verified_at": "2026-08-21T18:44:51Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c3bd41b71de98b20c107"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郭钰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3ca301ceb77442b9ba65",
+      "claim_ids": [
+        "claim_c3bd41b71de98b20c107"
+      ],
+      "observed_at": "2026-08-21T18:44:51Z",
+      "status": "current",
+      "url": "https://chem.fzu.edu.cn/info/1443/14864.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "无机化学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:51Z",
+  "status_reason": null,
+  "status_source_url": "https://chem.fzu.edu.cn/info/1443/14864.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:44:51Z"
+}
