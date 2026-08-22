@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d2a0daff54371213f3d0"
+      ],
+      "ended_at": null,
+      "id": "aff_1f69725c03d5d4847f72",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_e10e3ecad06d2b49e227",
+      "source_url": "http://teacher.nxu.edu.cn/sunli/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d2a0daff54371213f3d0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1f69725c03d5d4847f72",
+      "claim_ids": [
+        "claim_d2a0daff54371213f3d0"
+      ],
+      "is_primary": true,
+      "normalized_value": "sunamei@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/sunli/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "sunamei@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d2a0daff54371213f3d0"
+    ],
+    "email": [
+      "claim_d2a0daff54371213f3d0"
+    ],
+    "name": [
+      "claim_d2a0daff54371213f3d0"
+    ],
+    "profile_url": [
+      "claim_d2a0daff54371213f3d0"
+    ],
+    "research_directions": [
+      "claim_d2a0daff54371213f3d0"
+    ],
+    "status": [
+      "claim_d2a0daff54371213f3d0"
+    ],
+    "title": [
+      "claim_d2a0daff54371213f3d0"
+    ]
+  },
+  "id": "mentor_605d7df06ccca15df8cc",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d2a0daff54371213f3d0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙莉"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1f69725c03d5d4847f72",
+      "claim_ids": [
+        "claim_d2a0daff54371213f3d0"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/sunli/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机通信"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/sunli/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

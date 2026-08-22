@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c90d6bdff793c25517d"
+      ],
+      "ended_at": null,
+      "id": "aff_c6d0d5f7165f0f99cd7d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_ff211732a80b91017302",
+      "source_url": "http://teacher.nxu.edu.cn/yuanhuaimin/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c90d6bdff793c25517d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c6d0d5f7165f0f99cd7d",
+      "claim_ids": [
+        "claim_1c90d6bdff793c25517d"
+      ],
+      "is_primary": true,
+      "normalized_value": "yuan_hm@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/yuanhuaimin/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yuan_hm@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c90d6bdff793c25517d"
+    ],
+    "email": [
+      "claim_1c90d6bdff793c25517d"
+    ],
+    "name": [
+      "claim_1c90d6bdff793c25517d"
+    ],
+    "profile_url": [
+      "claim_1c90d6bdff793c25517d"
+    ],
+    "research_directions": [
+      "claim_1c90d6bdff793c25517d"
+    ],
+    "status": [
+      "claim_1c90d6bdff793c25517d"
+    ],
+    "title": [
+      "claim_1c90d6bdff793c25517d"
+    ]
+  },
+  "id": "mentor_ca885e1d24f3ecf4ab83",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c90d6bdff793c25517d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁怀民"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c6d0d5f7165f0f99cd7d",
+      "claim_ids": [
+        "claim_1c90d6bdff793c25517d"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/yuanhuaimin/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电子工程"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/yuanhuaimin/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

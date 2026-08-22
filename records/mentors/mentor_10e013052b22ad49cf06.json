@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_619e2ad22b06515f8b4d"
+      ],
+      "ended_at": null,
+      "id": "aff_bbeb2e4928dfbc2cfbd9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_e10e3ecad06d2b49e227",
+      "source_url": "http://teacher.nxu.edu.cn/mazirui/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_619e2ad22b06515f8b4d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bbeb2e4928dfbc2cfbd9",
+      "claim_ids": [
+        "claim_619e2ad22b06515f8b4d"
+      ],
+      "is_primary": true,
+      "normalized_value": "mzr@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/mazirui/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "mzr@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_619e2ad22b06515f8b4d"
+    ],
+    "email": [
+      "claim_619e2ad22b06515f8b4d"
+    ],
+    "name": [
+      "claim_619e2ad22b06515f8b4d"
+    ],
+    "profile_url": [
+      "claim_619e2ad22b06515f8b4d"
+    ],
+    "research_directions": [
+      "claim_619e2ad22b06515f8b4d"
+    ],
+    "status": [
+      "claim_619e2ad22b06515f8b4d"
+    ],
+    "title": [
+      "claim_619e2ad22b06515f8b4d"
+    ]
+  },
+  "id": "mentor_10e013052b22ad49cf06",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_619e2ad22b06515f8b4d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马子睿"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bbeb2e4928dfbc2cfbd9",
+      "claim_ids": [
+        "claim_619e2ad22b06515f8b4d"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/mazirui/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机软件"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/mazirui/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

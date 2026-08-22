@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_4b94c5c53d434987c03b"
+      ],
+      "ended_at": null,
+      "id": "aff_1255a17c7cd4971e69dd",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "source_url": "https://faculty.nxu.edu.cn/yangjun/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_4b94c5c53d434987c03b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1255a17c7cd4971e69dd",
+      "claim_ids": [
+        "claim_4b94c5c53d434987c03b"
+      ],
+      "is_primary": true,
+      "normalized_value": "dragon@nxu.edu",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "https://faculty.nxu.edu.cn/yangjun/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "dragon@nxu.edu"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_4b94c5c53d434987c03b"
+    ],
+    "email": [
+      "claim_4b94c5c53d434987c03b"
+    ],
+    "name": [
+      "claim_4b94c5c53d434987c03b"
+    ],
+    "profile_url": [
+      "claim_4b94c5c53d434987c03b"
+    ],
+    "research_directions": [
+      "claim_4b94c5c53d434987c03b"
+    ],
+    "status": [
+      "claim_4b94c5c53d434987c03b"
+    ],
+    "title": [
+      "claim_4b94c5c53d434987c03b"
+    ]
+  },
+  "id": "mentor_07acc2dda181110e0c16",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_4b94c5c53d434987c03b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1255a17c7cd4971e69dd",
+      "claim_ids": [
+        "claim_4b94c5c53d434987c03b"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "https://faculty.nxu.edu.cn/yangjun/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "网络、边缘智能计算和信息安全技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "https://faculty.nxu.edu.cn/yangjun/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

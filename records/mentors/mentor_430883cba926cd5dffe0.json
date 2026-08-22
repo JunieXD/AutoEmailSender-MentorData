@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_635499d81af0d90a1799"
+      ],
+      "ended_at": null,
+      "id": "aff_f510979a0c9c04f49aea",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_4dbadc2f39a0b6320add",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1122/3777.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_635499d81af0d90a1799"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f510979a0c9c04f49aea",
+      "claim_ids": [
+        "claim_635499d81af0d90a1799"
+      ],
+      "is_primary": true,
+      "normalized_value": "shuaiyingyuan@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1122/3777.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shuaiyingyuan@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_635499d81af0d90a1799"
+    ],
+    "email": [
+      "claim_635499d81af0d90a1799"
+    ],
+    "name": [
+      "claim_635499d81af0d90a1799"
+    ],
+    "profile_url": [
+      "claim_635499d81af0d90a1799"
+    ],
+    "recent_papers": [
+      "claim_635499d81af0d90a1799"
+    ],
+    "research_directions": [
+      "claim_635499d81af0d90a1799"
+    ],
+    "status": [
+      "claim_635499d81af0d90a1799"
+    ],
+    "title": [
+      "claim_635499d81af0d90a1799"
+    ]
+  },
+  "id": "mentor_430883cba926cd5dffe0",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_635499d81af0d90a1799"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "袁帅英"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f510979a0c9c04f49aea",
+      "claim_ids": [
+        "claim_635499d81af0d90a1799"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "https://xxgc.nxu.edu.cn/info/1122/3777.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yongkang Qin,Shuaiying Yuan*,Lei Ma, Hao Liu. Multi-Scale Spatio-Temporal–Spectral Sparse Attention–Based Hierarchical Graph Convolutional Network for Seizure Prediction. Knowledge-Based Systems (2026): 115429.",
+    "ZheWang,ShuaiyingYuan*,Xue Wang,Yongkang Qin. A Personalized Transfer Learning Framework for Myocardial Infarction Localization[C]//2025 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2025: 2932-2937.",
+    "Shuaiying Yuan, Ziyang He, Jianhui Zhao, et al. Hypergraph and cross-attention-based unsupervised domain adaptation framework for cross-domain myocardial infarction localization, Information Sciences, 2023, 633: 245-263.",
+    "Shuaiying Yuan, Ziyang He, Jianhui Zhao, et al. Long-term electrocardiogram signal quality assessment pipeline based on a frequency-adaptive mean absolute deviation curve, Applied Intelligence, 2023, 53: 20418-20440.",
+    "Shuaiying Yuan, Ziyang He, Jianhui Zhao, et al. Fusing depth local dual-view features and dual-input transformer framework for improving the recognition ability of motion artifact-contaminated electrocardiogram, Complex & Intelligent Systems, 2022, 9(1): 981-999.",
+    "Shuaiying Yuan, Ziyang He, Jianhui Zhao, et al. Low-dimensional depth local dual-view features embedded transformer for electrocardiogram signal quality assessment[C]//2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2021: 1137-1144.",
+    "Ziyang He,Shuaiying Yuan,JianhuiZhao, et al. A robust myocardial infarction localization system based on multi-branch residual shrinkage network and active learning with clustering[J]. Biomedical Signal Processing and Control, 2023, 80: 104238.",
+    "Ziyang He,Shuaiying Yuan, Jianhui Zhao, et al. A novel myocardial infarction localization method using multi-branch DenseNet and spatial matching-based active semi-supervised learning, Information Sciences, 2022,606: 649-668."
+  ],
+  "research_directions": [
+    "主要从事医学人工智能与多模态生物医学数据处理、深度学习等方面的研究,具体研究包括大模型时代下的多模态心、脑血管疾病智能诊断(早期筛查、云-边协同分级诊疗、预后评估)、面向边缘智能的生理信号增强与质量评估、远程健康监测等方面的研究工作。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "https://xxgc.nxu.edu.cn/info/1122/3777.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

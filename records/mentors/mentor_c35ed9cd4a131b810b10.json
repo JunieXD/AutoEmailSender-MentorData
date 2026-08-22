@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_df4084e77d58708161ee"
+      ],
+      "ended_at": null,
+      "id": "aff_d71b7b4526c954a59fa1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/2631.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_df4084e77d58708161ee"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_d71b7b4526c954a59fa1",
+      "claim_ids": [
+        "claim_df4084e77d58708161ee"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhyu@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/2631.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhyu@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_df4084e77d58708161ee"
+    ],
+    "email": [
+      "claim_df4084e77d58708161ee"
+    ],
+    "name": [
+      "claim_df4084e77d58708161ee"
+    ],
+    "profile_url": [
+      "claim_df4084e77d58708161ee"
+    ],
+    "recent_papers": [
+      "claim_df4084e77d58708161ee"
+    ],
+    "research_directions": [
+      "claim_df4084e77d58708161ee"
+    ],
+    "status": [
+      "claim_df4084e77d58708161ee"
+    ],
+    "title": [
+      "claim_df4084e77d58708161ee"
+    ]
+  },
+  "id": "mentor_c35ed9cd4a131b810b10",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_df4084e77d58708161ee"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "余振华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_d71b7b4526c954a59fa1",
+      "claim_ids": [
+        "claim_df4084e77d58708161ee"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "https://xxgc.nxu.edu.cn/info/1113/2631.htm"
+    }
+  ],
+  "recent_papers": [
+    "Y. Li, F. Liu, J. Zhou, F. Shi and Z. Yu*: scSTD: A Swin Transformer-Based Diffusion Model for Recovering scRNA-Seq Data.IEEE Journal of Biomedical and Health Informatics, 2025, 29 (10), 7763-7775.",
+    "J.Zhou, J. Xue, Y. Li, F. Liu, F. Du,Z. Yu*. scDCT: a conditional diffusion-based deep learning model for high-fidelity single-cell cross-modality translation.Briefings in Bioinformatics, 2025, 26(4): bbaf400.",
+    "J. Zhou, R. Li, F. Shi, X. Huo, F. Du,Z. Yu*. scCMP: A Deep Learning Method for Identifying Clonal Mutational Profiles From Single-Cell Genomic Data.IEEE Transactions on Computational Biology and Bioinformatics, 2025, 22(4): 1378-1387.",
+    "Z. Yu*, F. Liu, Y. Li. scTCA: a hybrid Transformer-CNN architecture for imputation and denoising of scDNA-seq data.Briefings in Bioinformatics, 2024, 25(6): bbae577.",
+    "F. Liu, F. Shi, F. Du, X. Cao,Z. Yu*. CoT: a transformer-based method for inferring tumor clonal copy number substructure from scDNA-seq data.Briefings in Bioinformatics, 2024, 25(3): bbae187.",
+    "R.Li, F.Shi, L. Song,Z. Yu*. scGAL: unmask tumor clonal substructure by jointly analyzing independent single-cell copy number and scRNA-seq data.BMC genomics, 2024, 25(1): 393.",
+    "F.Liu, F. Shi,Z. Yu*. Inferring single-cell copy number profiles through cross-cell segmentation of read counts.BMC Genomics, 2024, 25(1): 25.",
+    "Z. Yu, F. Liu, F. Shi, F. Du. rcCAE: a convolutional autoencoder method for detecting intra-tumor heterogeneity and single-cell copy number alterations.Briefings in Bioinformatics, 2023, 24(3): bbad108."
+  ],
+  "research_directions": [
+    "AI for Science(Biology and Medicine)"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "https://xxgc.nxu.edu.cn/info/1113/2631.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

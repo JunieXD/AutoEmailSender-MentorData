@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_b6dc9fa1ada3678359e8"
+      ],
+      "ended_at": null,
+      "id": "aff_82b227dfc35df97e1785",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_ff211732a80b91017302",
+      "source_url": "http://teacher.nxu.edu.cn/shenrong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_b6dc9fa1ada3678359e8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_82b227dfc35df97e1785",
+      "claim_ids": [
+        "claim_b6dc9fa1ada3678359e8"
+      ],
+      "is_primary": true,
+      "normalized_value": "3055876288@qq.com",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/shenrong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "3055876288@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_b6dc9fa1ada3678359e8"
+    ],
+    "email": [
+      "claim_b6dc9fa1ada3678359e8"
+    ],
+    "name": [
+      "claim_b6dc9fa1ada3678359e8"
+    ],
+    "profile_url": [
+      "claim_b6dc9fa1ada3678359e8"
+    ],
+    "research_directions": [
+      "claim_b6dc9fa1ada3678359e8"
+    ],
+    "status": [
+      "claim_b6dc9fa1ada3678359e8"
+    ],
+    "title": [
+      "claim_b6dc9fa1ada3678359e8"
+    ]
+  },
+  "id": "mentor_50dd778472a46d4e62dd",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_b6dc9fa1ada3678359e8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "沈荣"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_82b227dfc35df97e1785",
+      "claim_ids": [
+        "claim_b6dc9fa1ada3678359e8"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/shenrong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/shenrong/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

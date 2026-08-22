@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a60ce560c84dc3e9eac2"
+      ],
+      "ended_at": null,
+      "id": "aff_00c685986eca991b4451",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_e10e3ecad06d2b49e227",
+      "source_url": "http://teacher.nxu.edu.cn/zhanghaiyan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a60ce560c84dc3e9eac2"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_00c685986eca991b4451",
+      "claim_ids": [
+        "claim_a60ce560c84dc3e9eac2"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhy@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/zhanghaiyan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhy@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a60ce560c84dc3e9eac2"
+    ],
+    "email": [
+      "claim_a60ce560c84dc3e9eac2"
+    ],
+    "name": [
+      "claim_a60ce560c84dc3e9eac2"
+    ],
+    "profile_url": [
+      "claim_a60ce560c84dc3e9eac2"
+    ],
+    "research_directions": [
+      "claim_a60ce560c84dc3e9eac2"
+    ],
+    "status": [
+      "claim_a60ce560c84dc3e9eac2"
+    ],
+    "title": [
+      "claim_a60ce560c84dc3e9eac2"
+    ]
+  },
+  "id": "mentor_e79f7bc1ab1aba6f91df",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a60ce560c84dc3e9eac2"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张海燕"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_00c685986eca991b4451",
+      "claim_ids": [
+        "claim_a60ce560c84dc3e9eac2"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/zhanghaiyan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机及应用"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/zhanghaiyan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

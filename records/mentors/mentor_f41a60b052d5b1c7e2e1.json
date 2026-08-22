@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c155482113de9df38bdc"
+      ],
+      "ended_at": null,
+      "id": "aff_db219d10c1285940c6cf",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_4dbadc2f39a0b6320add",
+      "source_url": "http://teacher.nxu.edu.cn/liuhao/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c155482113de9df38bdc"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_db219d10c1285940c6cf",
+      "claim_ids": [
+        "claim_c155482113de9df38bdc"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuhao@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/liuhao/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuhao@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c155482113de9df38bdc"
+    ],
+    "email": [
+      "claim_c155482113de9df38bdc"
+    ],
+    "name": [
+      "claim_c155482113de9df38bdc"
+    ],
+    "profile_url": [
+      "claim_c155482113de9df38bdc"
+    ],
+    "research_directions": [
+      "claim_c155482113de9df38bdc"
+    ],
+    "status": [
+      "claim_c155482113de9df38bdc"
+    ],
+    "title": [
+      "claim_c155482113de9df38bdc"
+    ]
+  },
+  "id": "mentor_f41a60b052d5b1c7e2e1",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c155482113de9df38bdc"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘昊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_db219d10c1285940c6cf",
+      "claim_ids": [
+        "claim_c155482113de9df38bdc"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/liuhao/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "模式识别与计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/liuhao/zh_CN/index.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2ee85712ca47606ef8ed"
+      ],
+      "ended_at": null,
+      "id": "aff_165f16c641ece506fc8d",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_ff211732a80b91017302",
+      "source_url": "http://teacher.nxu.edu.cn/yangping/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_2ee85712ca47606ef8ed"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_165f16c641ece506fc8d",
+      "claim_ids": [
+        "claim_2ee85712ca47606ef8ed"
+      ],
+      "is_primary": true,
+      "normalized_value": "120361077@qq.com",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/yangping/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "120361077@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2ee85712ca47606ef8ed"
+    ],
+    "email": [
+      "claim_2ee85712ca47606ef8ed"
+    ],
+    "name": [
+      "claim_2ee85712ca47606ef8ed"
+    ],
+    "profile_url": [
+      "claim_2ee85712ca47606ef8ed"
+    ],
+    "research_directions": [
+      "claim_2ee85712ca47606ef8ed"
+    ],
+    "status": [
+      "claim_2ee85712ca47606ef8ed"
+    ],
+    "title": [
+      "claim_2ee85712ca47606ef8ed"
+    ]
+  },
+  "id": "mentor_f0bfbf486eee5f0d5e8f",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2ee85712ca47606ef8ed"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "杨萍"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_165f16c641ece506fc8d",
+      "claim_ids": [
+        "claim_2ee85712ca47606ef8ed"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/yangping/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机软件与理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/yangping/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

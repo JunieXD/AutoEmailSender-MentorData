@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ffc466afb442f0af5896"
+      ],
+      "ended_at": null,
+      "id": "aff_89a8102344f17d634676",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/2626.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_ffc466afb442f0af5896"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_89a8102344f17d634676",
+      "claim_ids": [
+        "claim_ffc466afb442f0af5896"
+      ],
+      "is_primary": true,
+      "normalized_value": "jfliu@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/2626.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jfliu@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ffc466afb442f0af5896"
+    ],
+    "email": [
+      "claim_ffc466afb442f0af5896"
+    ],
+    "name": [
+      "claim_ffc466afb442f0af5896"
+    ],
+    "profile_url": [
+      "claim_ffc466afb442f0af5896"
+    ],
+    "recent_papers": [
+      "claim_ffc466afb442f0af5896"
+    ],
+    "research_directions": [
+      "claim_ffc466afb442f0af5896"
+    ],
+    "status": [
+      "claim_ffc466afb442f0af5896"
+    ],
+    "title": [
+      "claim_ffc466afb442f0af5896"
+    ]
+  },
+  "id": "mentor_f7162ca0605a5deb98e6",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ffc466afb442f0af5896"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘进锋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_89a8102344f17d634676",
+      "claim_ids": [
+        "claim_ffc466afb442f0af5896"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "https://xxgc.nxu.edu.cn/info/1113/2626.htm"
+    }
+  ],
+  "recent_papers": [
+    "基于知识蒸馏的不存储旧数据的类增量学习,计算机应用,2024",
+    "基于因果关系的领域泛化长尾学习,计算机科学,2024",
+    "Online Continual Learning via Maximal Coding Rate Reduction,ICIC,2024",
+    "基于因果推断的两阶段长尾分类研究,郑州大学学报(理学版) , 2024",
+    "基于因果关系的小样本类增量学习,计算机应用, 2024",
+    "基于有损压缩编码的降噪自编码器,计算机科学, 2024",
+    "扩散模型与傅里叶滤波器结合的图像去雾方法,液晶与显示,2024",
+    "Maximizing Coding Rate Reduction for Robust Classification of Long-Tailed Data with Noisy Labels,CAC,2023"
+  ],
+  "research_directions": [
+    "可解释机器学习,智能信息处理,异构计算"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "https://xxgc.nxu.edu.cn/info/1113/2626.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

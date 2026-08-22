@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d01061d7033b0a6f7c93"
+      ],
+      "ended_at": null,
+      "id": "aff_eb2e3e40a391ea8b7e41",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_ff211732a80b91017302",
+      "source_url": "http://teacher.nxu.edu.cn/jiaoxiaogang/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d01061d7033b0a6f7c93"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_eb2e3e40a391ea8b7e41",
+      "claim_ids": [
+        "claim_d01061d7033b0a6f7c93"
+      ],
+      "is_primary": true,
+      "normalized_value": "jxg@163.com",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/jiaoxiaogang/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jxg@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d01061d7033b0a6f7c93"
+    ],
+    "email": [
+      "claim_d01061d7033b0a6f7c93"
+    ],
+    "name": [
+      "claim_d01061d7033b0a6f7c93"
+    ],
+    "profile_url": [
+      "claim_d01061d7033b0a6f7c93"
+    ],
+    "research_directions": [
+      "claim_d01061d7033b0a6f7c93"
+    ],
+    "status": [
+      "claim_d01061d7033b0a6f7c93"
+    ],
+    "title": [
+      "claim_d01061d7033b0a6f7c93"
+    ]
+  },
+  "id": "mentor_c95467f6592fd3a0eb19",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d01061d7033b0a6f7c93"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "焦小刚"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_eb2e3e40a391ea8b7e41",
+      "claim_ids": [
+        "claim_d01061d7033b0a6f7c93"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/jiaoxiaogang/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "应用数学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/jiaoxiaogang/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

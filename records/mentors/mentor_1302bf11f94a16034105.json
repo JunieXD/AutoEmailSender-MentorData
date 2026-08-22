@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d32dd4a48d6a1d29f924"
+      ],
+      "ended_at": null,
+      "id": "aff_fa133f3aa0071cba2ffb",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_4dbadc2f39a0b6320add",
+      "source_url": "http://teacher.nxu.edu.cn/juanzi1213/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d32dd4a48d6a1d29f924"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_fa133f3aa0071cba2ffb",
+      "claim_ids": [
+        "claim_d32dd4a48d6a1d29f924"
+      ],
+      "is_primary": true,
+      "normalized_value": "4349996@qq.com",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/juanzi1213/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "4349996@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d32dd4a48d6a1d29f924"
+    ],
+    "email": [
+      "claim_d32dd4a48d6a1d29f924"
+    ],
+    "name": [
+      "claim_d32dd4a48d6a1d29f924"
+    ],
+    "profile_url": [
+      "claim_d32dd4a48d6a1d29f924"
+    ],
+    "research_directions": [
+      "claim_d32dd4a48d6a1d29f924"
+    ],
+    "status": [
+      "claim_d32dd4a48d6a1d29f924"
+    ],
+    "title": [
+      "claim_d32dd4a48d6a1d29f924"
+    ]
+  },
+  "id": "mentor_1302bf11f94a16034105",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d32dd4a48d6a1d29f924"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "高宏娟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_fa133f3aa0071cba2ffb",
+      "claim_ids": [
+        "claim_d32dd4a48d6a1d29f924"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/juanzi1213/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机应用技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/juanzi1213/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

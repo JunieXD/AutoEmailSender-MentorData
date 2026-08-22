@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a12ccb294bb288494195"
+      ],
+      "ended_at": null,
+      "id": "aff_9e215df129fb23991aa9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_4dbadc2f39a0b6320add",
+      "source_url": "http://teacher.nxu.edu.cn/lizhendong/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_a12ccb294bb288494195"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9e215df129fb23991aa9",
+      "claim_ids": [
+        "claim_a12ccb294bb288494195"
+      ],
+      "is_primary": true,
+      "normalized_value": "lizhendong13@mails.ucas.ac.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/lizhendong/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lizhendong13@mails.ucas.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a12ccb294bb288494195"
+    ],
+    "email": [
+      "claim_a12ccb294bb288494195"
+    ],
+    "name": [
+      "claim_a12ccb294bb288494195"
+    ],
+    "profile_url": [
+      "claim_a12ccb294bb288494195"
+    ],
+    "research_directions": [
+      "claim_a12ccb294bb288494195"
+    ],
+    "status": [
+      "claim_a12ccb294bb288494195"
+    ],
+    "title": [
+      "claim_a12ccb294bb288494195"
+    ]
+  },
+  "id": "mentor_00131e2e1303def7ace1",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a12ccb294bb288494195"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李振东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9e215df129fb23991aa9",
+      "claim_ids": [
+        "claim_a12ccb294bb288494195"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/lizhendong/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机软件与理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/lizhendong/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:30Z"
+}
