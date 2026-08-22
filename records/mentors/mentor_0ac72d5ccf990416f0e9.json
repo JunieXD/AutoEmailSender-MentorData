@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_9ffdc7556ae43d1aede8"
+      ],
+      "ended_at": null,
+      "id": "aff_f9b2e21e3c922ba719a5",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:45Z",
+      "organization_id": "org_auto_67de9cfed299fa62168b",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/805.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_9ffdc7556ae43d1aede8"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f9b2e21e3c922ba719a5",
+      "claim_ids": [
+        "claim_9ffdc7556ae43d1aede8"
+      ],
+      "is_primary": true,
+      "normalized_value": "ml@semi.ac.cn",
+      "observed_at": "2026-08-21T18:53:45Z",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/805.html",
+      "status": "current",
+      "type": "email",
+      "value": "ml@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_9ffdc7556ae43d1aede8"
+    ],
+    "email": [
+      "claim_9ffdc7556ae43d1aede8"
+    ],
+    "name": [
+      "claim_9ffdc7556ae43d1aede8"
+    ],
+    "profile_url": [
+      "claim_9ffdc7556ae43d1aede8"
+    ],
+    "recent_papers": [
+      "claim_9ffdc7556ae43d1aede8"
+    ],
+    "research_directions": [
+      "claim_9ffdc7556ae43d1aede8"
+    ],
+    "status": [
+      "claim_9ffdc7556ae43d1aede8"
+    ],
+    "title": [
+      "claim_9ffdc7556ae43d1aede8"
+    ]
+  },
+  "id": "mentor_0ac72d5ccf990416f0e9",
+  "last_verified_at": "2026-08-21T18:53:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_9ffdc7556ae43d1aede8"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李明"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f9b2e21e3c922ba719a5",
+      "claim_ids": [
+        "claim_9ffdc7556ae43d1aede8"
+      ],
+      "observed_at": "2026-08-21T18:53:45Z",
+      "status": "current",
+      "url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/805.html"
+    }
+  ],
+  "recent_papers": [
+    "Programmable optoelectronic Ising machine for optimization of real-world problems,",
+    "A monolithically integrated optical Ising machine,",
+    "High-integrated photonic tensor core utilizing high-dimensional lightwave and microwave multidomain multiplexing,",
+    "Time-variant parity-time symmetry in frequency-scanning systems,",
+    "Monolithic back-end-of-line integration of phase change materials into foundry-manufactured silicon photonics,",
+    "Compact optical convolution processing unit based on multimode interference,",
+    "Large-scale coherent Ising machine based on optoelectronic parametric oscillator,",
+    "Broadband random optoelectronic oscillator,"
+  ],
+  "research_directions": [
+    "光电振荡器、光电智能计算、光电子集成"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:45Z",
+  "status_reason": null,
+  "status_source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/805.html",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:53:45Z"
+}

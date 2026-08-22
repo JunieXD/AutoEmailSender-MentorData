@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e65011ee855a1a5430e5"
+      ],
+      "ended_at": null,
+      "id": "aff_5236483ee2dbc283a429",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:45Z",
+      "organization_id": "org_auto_67de9cfed299fa62168b",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/745.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_e65011ee855a1a5430e5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5236483ee2dbc283a429",
+      "claim_ids": [
+        "claim_e65011ee855a1a5430e5"
+      ],
+      "is_primary": true,
+      "normalized_value": "jxwang@semi.ac.cn",
+      "observed_at": "2026-08-21T18:53:45Z",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/745.html",
+      "status": "current",
+      "type": "email",
+      "value": "jxwang@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e65011ee855a1a5430e5"
+    ],
+    "email": [
+      "claim_e65011ee855a1a5430e5"
+    ],
+    "name": [
+      "claim_e65011ee855a1a5430e5"
+    ],
+    "profile_url": [
+      "claim_e65011ee855a1a5430e5"
+    ],
+    "recent_papers": [
+      "claim_e65011ee855a1a5430e5"
+    ],
+    "research_directions": [
+      "claim_e65011ee855a1a5430e5"
+    ],
+    "status": [
+      "claim_e65011ee855a1a5430e5"
+    ],
+    "title": [
+      "claim_e65011ee855a1a5430e5"
+    ]
+  },
+  "id": "mentor_b6951dab83aa464d4f75",
+  "last_verified_at": "2026-08-21T18:53:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e65011ee855a1a5430e5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王军喜"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5236483ee2dbc283a429",
+      "claim_ids": [
+        "claim_e65011ee855a1a5430e5"
+      ],
+      "observed_at": "2026-08-21T18:53:45Z",
+      "status": "current",
+      "url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/745.html"
+    }
+  ],
+  "recent_papers": [
+    "High-quality GaN grown by gas-source MBE",
+    "High-mobility Ga-polarity GaN achieved by NH3-MBE",
+    "AlGaN Grown by MOCVD with High Temperature AlN Layer",
+    "GaN growth on Si (111), Si (100) and SOI substrates",
+    "Study on mechanical properties of GaN epitaxy films grown on sapphire by MOCVD",
+    "Growth and characterization of InN on sapphire substrate by RF-MBE",
+    "Cathodoluminescence and Raman research of V-shape inverted pyramid in HVPE grown GaN film",
+    "Characterization of free-standing GaN substrate grown through hydride vapor phase epitaxy with a TiN interlayer"
+  ],
+  "research_directions": [
+    "氮化物材料的MOCVD生长研究、深紫外LED用氮化物材料生长研究及LED器件制备"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:45Z",
+  "status_reason": null,
+  "status_source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/745.html",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:53:45Z"
+}

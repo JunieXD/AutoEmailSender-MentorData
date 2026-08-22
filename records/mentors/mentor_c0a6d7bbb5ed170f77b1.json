@@ -1,0 +1,110 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8b1480c91a54dfb610ba"
+      ],
+      "ended_at": null,
+      "id": "aff_230b3a3a25a111d704ae",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:45Z",
+      "organization_id": "org_auto_615d21b6a930fc3d1507",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/797.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_8b1480c91a54dfb610ba"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_230b3a3a25a111d704ae",
+      "claim_ids": [
+        "claim_8b1480c91a54dfb610ba"
+      ],
+      "is_primary": true,
+      "normalized_value": "liangsong@semi.ac.cn",
+      "observed_at": "2026-08-21T18:53:45Z",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/797.html",
+      "status": "current",
+      "type": "email",
+      "value": "liangsong@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8b1480c91a54dfb610ba"
+    ],
+    "email": [
+      "claim_8b1480c91a54dfb610ba"
+    ],
+    "name": [
+      "claim_8b1480c91a54dfb610ba"
+    ],
+    "profile_url": [
+      "claim_8b1480c91a54dfb610ba"
+    ],
+    "recent_papers": [
+      "claim_8b1480c91a54dfb610ba"
+    ],
+    "research_directions": [
+      "claim_8b1480c91a54dfb610ba"
+    ],
+    "status": [
+      "claim_8b1480c91a54dfb610ba"
+    ],
+    "title": [
+      "claim_8b1480c91a54dfb610ba"
+    ]
+  },
+  "id": "mentor_c0a6d7bbb5ed170f77b1",
+  "last_verified_at": "2026-08-21T18:53:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8b1480c91a54dfb610ba"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "梁松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_230b3a3a25a111d704ae",
+      "claim_ids": [
+        "claim_8b1480c91a54dfb610ba"
+      ],
+      "observed_at": "2026-08-21T18:53:45Z",
+      "status": "current",
+      "url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/797.html"
+    }
+  ],
+  "recent_papers": [
+    "Laser Arrays With 25-GHz Channel Spacing Fabricated by Combining SAG and REC Techniques. IEEE Photonics Technology Letters, 28(20), 2249-2252(2016)",
+    "Doping of Active Region in Long Wavelength InP-Based Transistor Lasers. IEEE Photonics Journal, 8(3), 1-8(2016)",
+    "A Dual-Grating InGaAsP/InP DFB Laser Integrated With an SOA for THz Generation. IEEE Photonics Technology Letters, 28(21), 2307-2310(2016)",
+    "High current gain transistor laser, Scientific Reports 6, 27850 (2016)",
+    "DBR Laser with over 20nm Wavelength Tuning Range, IEEE Photonics Technology Letters, 2016, 28(9) 943-946.",
+    "Continuous-wave operation up to 20 oC of deep-ridge npn-InGaAsP/InP multiple quantum well transistor laser emitting at 1.5-μm wavelength, Optics Express, 2015, 23(9):11388-11393.",
+    "Fabrication of Low-Cost Multiwavelength Laser Arrays for OLTs in WDM-PONs by Combining the SAG and BIG Techniques, Photonics Journal, IEEE, 2015, 7(4):1-7.",
+    "Fabrication of an electro-absorption modulated distributed feedback laser by quantum well intermixing with etching ion-implantation buffer layer, Chinese Optics Letters, 2015, 13(8):081301-1-081301-4."
+  ],
+  "research_directions": [
+    "1)InP基半导体光电子单片集成芯片的研制,如多波长DFB激光器阵列、可调谐激光器阵列、用于THz信号产生的高速光混频器阵列等",
+    "2)新型光电子器件研究,如晶体管激光器、晶体管光探测器、新型ROF系统光源等",
+    "3)高性能III-V族半导体光电子材料的MOCVD生长",
+    "4)半导体光电子器件及材料的数值模拟。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:45Z",
+  "status_reason": null,
+  "status_source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/797.html",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:53:45Z"
+}

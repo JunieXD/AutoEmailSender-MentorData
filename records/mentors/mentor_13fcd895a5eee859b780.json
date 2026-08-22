@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a43cfd643af12d38be17"
+      ],
+      "ended_at": null,
+      "id": "aff_abae11d4425b9ce2568e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:45Z",
+      "organization_id": "org_auto_ba64ba9f97eface01645",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/740.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_a43cfd643af12d38be17"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_abae11d4425b9ce2568e",
+      "claim_ids": [
+        "claim_a43cfd643af12d38be17"
+      ],
+      "is_primary": true,
+      "normalized_value": "xdwang@semi.ac.cn",
+      "observed_at": "2026-08-21T18:53:45Z",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/740.html",
+      "status": "current",
+      "type": "email",
+      "value": "xdwang@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a43cfd643af12d38be17"
+    ],
+    "email": [
+      "claim_a43cfd643af12d38be17"
+    ],
+    "name": [
+      "claim_a43cfd643af12d38be17"
+    ],
+    "profile_url": [
+      "claim_a43cfd643af12d38be17"
+    ],
+    "recent_papers": [
+      "claim_a43cfd643af12d38be17"
+    ],
+    "research_directions": [
+      "claim_a43cfd643af12d38be17"
+    ],
+    "status": [
+      "claim_a43cfd643af12d38be17"
+    ],
+    "title": [
+      "claim_a43cfd643af12d38be17"
+    ]
+  },
+  "id": "mentor_13fcd895a5eee859b780",
+  "last_verified_at": "2026-08-21T18:53:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a43cfd643af12d38be17"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王晓东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_abae11d4425b9ce2568e",
+      "claim_ids": [
+        "claim_a43cfd643af12d38be17"
+      ],
+      "observed_at": "2026-08-21T18:53:45Z",
+      "status": "current",
+      "url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/740.html"
+    }
+  ],
+  "recent_papers": [
+    "Ultralow in-plane thermal conductivity of Cu2-xSe nanobelts prepared by magnetron sputtering",
+    "Removing residual PbI2 on the perovskite surface for efficient solar cells",
+    "Optimization and Fabrication of MEMS suspended structures for nanoscale thermoelectric devices",
+    "Fabrication of black GaAs by maskless inductively coupled plasma etching in Cl2/BCl3/O2/Ar chemistry",
+    "Review of current high-ZT thermoelectric materials",
+    "Rapidly fabricating a large area nanotip microstructure for high-sensitivity SERS applications"
+  ],
+  "research_directions": [
+    "半导体微纳器件技术,纳米热电结构与器件,新型太阳能电池"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:45Z",
+  "status_reason": null,
+  "status_source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/740.html",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:53:45Z"
+}

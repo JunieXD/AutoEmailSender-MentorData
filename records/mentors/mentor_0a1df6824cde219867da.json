@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e72c47d1dc6b581a4509"
+      ],
+      "ended_at": null,
+      "id": "aff_98aec7f95172dfd48459",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:53:45Z",
+      "organization_id": "org_auto_92ee63ac6b6739fa7144",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/762.html",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_e72c47d1dc6b581a4509"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_98aec7f95172dfd48459",
+      "claim_ids": [
+        "claim_e72c47d1dc6b581a4509"
+      ],
+      "is_primary": true,
+      "normalized_value": "qinan@semi.ac.cn",
+      "observed_at": "2026-08-21T18:53:45Z",
+      "source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/762.html",
+      "status": "current",
+      "type": "email",
+      "value": "qinan@semi.ac.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:53:45Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e72c47d1dc6b581a4509"
+    ],
+    "email": [
+      "claim_e72c47d1dc6b581a4509"
+    ],
+    "name": [
+      "claim_e72c47d1dc6b581a4509"
+    ],
+    "profile_url": [
+      "claim_e72c47d1dc6b581a4509"
+    ],
+    "recent_papers": [
+      "claim_e72c47d1dc6b581a4509"
+    ],
+    "research_directions": [
+      "claim_e72c47d1dc6b581a4509"
+    ],
+    "status": [
+      "claim_e72c47d1dc6b581a4509"
+    ],
+    "title": [
+      "claim_e72c47d1dc6b581a4509"
+    ]
+  },
+  "id": "mentor_0a1df6824cde219867da",
+  "last_verified_at": "2026-08-21T18:53:45Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e72c47d1dc6b581a4509"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "祁楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_98aec7f95172dfd48459",
+      "claim_ids": [
+        "claim_e72c47d1dc6b581a4509"
+      ],
+      "observed_at": "2026-08-21T18:53:45Z",
+      "status": "current",
+      "url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/762.html"
+    }
+  ],
+  "recent_papers": [
+    "A 50Gb/s PAM-4 Retimer-CDR + VCSEL Driver with Asymmetric Pulsed Pre-Emphasis Integrated into a Single CMOS Die, IEEE OFC 2019",
+    "design techniques for signal reflection suppression in high-speed 25Gb/s laser drivers in CMOS, IEEE Photon. Technol. Lett. (PTL), 2018",
+    "A 77-GHz Mixed-Mode FMCW Signal Generator Based on Bang-Bang Phase Detector, IEEE Journal of Solid-State Circuits (JSSC), 2018",
+    "Low-power 2.4 GHz ZigBee transceiver with inductor-less radio-frequency front-end for Internet of things applications, IET Circuits, Devices and Systems (CDS), vol. 12, issue 2, March 2018",
+    "Co-design and demonstration of a 25Gb/s Silicon-Photonic Mach-Zehnder modulator with a CMOS-based high-swing driver, IEEE Journal of Selected Topics in Quantum Electronics(JSTQE), vol. 22, issue 6, Nov.-Dec. 2016",
+    "A 25Gb/s, 520mW, 6.4Vpp Silicon-Photonic Mach-Zehnder Modulator with Distributed Driver in CMOS, IEEE OFC, April 2015",
+    "A 25 Gb/s, 4.4 V-Swing, AC-Coupled Ring Modulator-Based WDM Transmitter with Wavelength Stabilization in 65 nm CMOS, IEEE Journal of Solid-State Circuits (JSSC), Vol. 50, Issue 12, pp. 3145-3159, Dec. 2015",
+    "A 2.7mW 1.36-1.86GHz LC-VCO with a FOM of 202dBc/Hz Enabled by a 26%-Size-Reduced Nano Particle Magnetic Enhanced Inductor, IEEE Transactions on Microwave Theory and Techniques (TMTT), 2014"
+  ],
+  "research_directions": [
+    "高速有线(光纤、SERDES)通信集成电路、光电融合集成互连芯片,数模混合集成电路与系统设计,硅基光通信高速集成电路及光/电集成,激光测距TOF专用芯片与系统,CMOS有线和无线高速通信集成电路"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:53:45Z",
+  "status_reason": null,
+  "status_source_url": "http://bdt.semi.ac.cn/yanjiusheng/contents/695/762.html",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:53:45Z"
+}
