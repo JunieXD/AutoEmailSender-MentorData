@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_685380f7c036db9e983a"
+      ],
+      "ended_at": null,
+      "id": "aff_85ab4ace66700351eeff",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/4014.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_685380f7c036db9e983a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_85ab4ace66700351eeff",
+      "claim_ids": [
+        "claim_685380f7c036db9e983a"
+      ],
+      "is_primary": true,
+      "normalized_value": "domius@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/4014.htm",
+      "status": "current",
+      "type": "email",
+      "value": "domius@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_685380f7c036db9e983a"
+    ],
+    "email": [
+      "claim_685380f7c036db9e983a"
+    ],
+    "name": [
+      "claim_685380f7c036db9e983a"
+    ],
+    "profile_url": [
+      "claim_685380f7c036db9e983a"
+    ],
+    "recent_papers": [
+      "claim_685380f7c036db9e983a"
+    ],
+    "research_directions": [
+      "claim_685380f7c036db9e983a"
+    ],
+    "status": [
+      "claim_685380f7c036db9e983a"
+    ]
+  },
+  "id": "mentor_73baec7402969ca811b4",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_685380f7c036db9e983a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马昊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_85ab4ace66700351eeff",
+      "claim_ids": [
+        "claim_685380f7c036db9e983a"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "https://xxgc.nxu.edu.cn/info/1113/4014.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hao Ma, Fan Wu, Yun Guan, Le Xu, Jiangcong Liu, Lixia Tian*. BrainNet with connectivity attention for individualized predictions based on multi-facet connections extracted from resting-state fMRI data. Cognitive Computation, 2023, 15: 1566-1580.(JCR Q2 区,中科院三区2023,IF 4.300).",
+    "Hao Ma, Yongkang Xu, Lixia Tian*.RS-MAE: Region-state masked autoencoder for neuropsychiatric disorder classifications based on resting-state fMRI. IEEE Transactions on Neural Networks and Learning Systems, 2025, 36 (6): 10707-10720.(JCR Q1 区,中科院一区,Top期刊, 2025,IF 10.200).",
+    "Fan Wu,Hao Ma, Yun Guan, Lixia Tian*. Manifold-based unsupervised metric Learning, with applications in individualized predictions based on functional connectivity. Biomedical Signal Processing and Control, 2023, 79: 104081.(JCR Q1区,中科院二区,2023,IF 6.700).",
+    "Yun Guan,Hao Ma,Jiangcong Liu,Zhang Yang, Lixia Tian*. The abilities of movie-watching functional connectivity in individual identifications and individualized predictions. Brain Imaging and Behavior, 2023, 17(6): 628-638.(JCR Q2区,中科院三区,2023,IF 2.400).",
+    "Xiaoxi Tian,Hao Ma, Yun Guan, Le Xu, Jiangcong Liu, Lixia Tian*. Transformer^3: A pure transformer framework for fMRI-based representations of human brain function. IEEE Journal of Biomedical and Health Informatics. 2025, 29: 468-481(JCR Q1区,中科院一区,Top期刊, 2023,IF 6.700).",
+    "Le Xu,Hao Ma, Yun Guan, Jiangcong Liu, Huifang Huang, Yang Zhang, Lixia Tian*. A Siamese network with node convolution for individualized predictions based on connectivity maps extracted from resting-state fMRI data. IEEE Journal of Biomedical and Health Informatics, 2023, 27: 5418-5429(JCR Q1区,中科院一区,Top期刊, 2023,IF 6.700).",
+    "Mengting Ye,Jiangcong Liu,Yun Guan,Hao Ma, Lixia Tian*. Are inter-subject functional correlations consistent across different movies?[J]. Brain Imaging and Behavior, 2023, 17(1): 44-53.(JCR Q2区,中科院三区,2023,IF 2.400).",
+    "Jiangcong Liu, Le Xu, Yun Guan,Hao Ma, Lixia Tian*. CL-ADDA: Contrastive learning with amplitude-driven data augmentation for fMRI-Based individualized predictions. MICCAI. 2023: 384-393. (医学图像处理顶会)"
+  ],
+  "research_directions": [
+    "认知计算、深度学习、医学智能"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "https://xxgc.nxu.edu.cn/info/1113/4014.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:49:30Z"
+}

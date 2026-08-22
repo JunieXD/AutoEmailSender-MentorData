@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_5a0e5eff2e8f40c693da"
+      ],
+      "ended_at": null,
+      "id": "aff_0404d04e4b4c53eceb22",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_404411a3cb1e59bd0a76",
+      "source_url": "http://teacher.nxu.edu.cn/diaochen/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_5a0e5eff2e8f40c693da"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_0404d04e4b4c53eceb22",
+      "claim_ids": [
+        "claim_5a0e5eff2e8f40c693da"
+      ],
+      "is_primary": true,
+      "normalized_value": "383895315@qq.com",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/diaochen/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "383895315@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_5a0e5eff2e8f40c693da"
+    ],
+    "email": [
+      "claim_5a0e5eff2e8f40c693da"
+    ],
+    "name": [
+      "claim_5a0e5eff2e8f40c693da"
+    ],
+    "profile_url": [
+      "claim_5a0e5eff2e8f40c693da"
+    ],
+    "status": [
+      "claim_5a0e5eff2e8f40c693da"
+    ],
+    "title": [
+      "claim_5a0e5eff2e8f40c693da"
+    ]
+  },
+  "id": "mentor_7f4cfafb21f0351524c4",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_5a0e5eff2e8f40c693da"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刁晨"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_0404d04e4b4c53eceb22",
+      "claim_ids": [
+        "claim_5a0e5eff2e8f40c693da"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/diaochen/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/diaochen/zh_CN/index.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

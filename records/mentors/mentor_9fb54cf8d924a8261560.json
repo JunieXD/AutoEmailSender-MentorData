@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e711b748bb2353e04f38"
+      ],
+      "ended_at": null,
+      "id": "aff_f00095f576a70a487a05",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/3911.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_e711b748bb2353e04f38"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f00095f576a70a487a05",
+      "claim_ids": [
+        "claim_e711b748bb2353e04f38"
+      ],
+      "is_primary": true,
+      "normalized_value": "yeping@nxu.edu.xn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1113/3911.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yeping@nxu.edu.xn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e711b748bb2353e04f38"
+    ],
+    "email": [
+      "claim_e711b748bb2353e04f38"
+    ],
+    "name": [
+      "claim_e711b748bb2353e04f38"
+    ],
+    "profile_url": [
+      "claim_e711b748bb2353e04f38"
+    ],
+    "recent_papers": [
+      "claim_e711b748bb2353e04f38"
+    ],
+    "research_directions": [
+      "claim_e711b748bb2353e04f38"
+    ],
+    "status": [
+      "claim_e711b748bb2353e04f38"
+    ],
+    "title": [
+      "claim_e711b748bb2353e04f38"
+    ]
+  },
+  "id": "mentor_9fb54cf8d924a8261560",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e711b748bb2353e04f38"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "冶平"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f00095f576a70a487a05",
+      "claim_ids": [
+        "claim_e711b748bb2353e04f38"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "https://xxgc.nxu.edu.cn/info/1113/3911.htm"
+    }
+  ],
+  "recent_papers": [
+    "Ping Ye, Gang Xiao*, Jun Liu. Multimodal Features Alignment for Vision–Language Object Tracking[J]. Remote Sensing, 2024, 16:1168.",
+    "Ping Ye, Gang Xiao*, Jun Liu. AMATrack: A Unified Network With Asymmetric Multimodal Mixed Attention for RGBD Tracking[J]. IEEE Transactions on Instrumentation and Measurement, 2024, 73:1-11.",
+    "Jun Liu,Ping Ye, Xingchen Zhang, et al. Real-time long-term tracking with reliability assessment and object recovery[J]. IET Image Processing, 2021, 15:918-935.",
+    "Xingchen Zhang,Ping Ye, Henry Leung, Ke Gong, Gang Xiao*. Object fusion tracking based on visible and infrared images: A comprehensive review[J]. Information Fusion, 2020, 63:166-187.",
+    "Xingchen Zhang,Ping Ye, Shengyun Peng, Jun Liu, Gang Xiao*. DSiamMFT: An RGB-T fusion tracking method via dynamic Siamese networks using multi-layer feature fusion[J]. Signal Processing: Image Communication, 2020, 84:115756.",
+    "肖刚,冶平, 张星辰, et al. 多源异构图像融合跟踪研究现状与展望[J]. 指挥控制与仿真, 2020, 42:1-6.",
+    "Xingchen Zhang,Ping Ye, Jun Liu, et al. Decision-level visible and infrared fusion tracking via Siamese networks[C]//Proc. 9th Chin. Conf. Inf. Fusion. 2019",
+    "Xingchen Zhang,Ping Ye,Gang Xiao*. VIFB: A visible and infrared image fusion benchmark[C]//Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops. 2020:104-105."
+  ],
+  "research_directions": [
+    "多模态融合与感知、目标跟踪、图像融合"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "https://xxgc.nxu.edu.cn/info/1113/3911.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

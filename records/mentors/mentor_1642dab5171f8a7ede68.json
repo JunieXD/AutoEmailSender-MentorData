@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_c678b0ecb9ea87b0fb43"
+      ],
+      "ended_at": null,
+      "id": "aff_95c8e905d253e996a2c1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_e10e3ecad06d2b49e227",
+      "source_url": "http://teacher.nxu.edu.cn/yuzhenhua/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_c678b0ecb9ea87b0fb43"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_95c8e905d253e996a2c1",
+      "claim_ids": [
+        "claim_c678b0ecb9ea87b0fb43"
+      ],
+      "is_primary": true,
+      "normalized_value": "qasim0208@163.com",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/yuzhenhua/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "qasim0208@163.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_c678b0ecb9ea87b0fb43"
+    ],
+    "email": [
+      "claim_c678b0ecb9ea87b0fb43"
+    ],
+    "name": [
+      "claim_c678b0ecb9ea87b0fb43"
+    ],
+    "profile_url": [
+      "claim_c678b0ecb9ea87b0fb43"
+    ],
+    "research_directions": [
+      "claim_c678b0ecb9ea87b0fb43"
+    ],
+    "status": [
+      "claim_c678b0ecb9ea87b0fb43"
+    ],
+    "title": [
+      "claim_c678b0ecb9ea87b0fb43"
+    ]
+  },
+  "id": "mentor_1642dab5171f8a7ede68",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_c678b0ecb9ea87b0fb43"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "余振华"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_95c8e905d253e996a2c1",
+      "claim_ids": [
+        "claim_c678b0ecb9ea87b0fb43"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/yuzhenhua/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "电子科学与技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/yuzhenhua/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

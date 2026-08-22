@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a877be382b98ae5e517d"
+      ],
+      "ended_at": null,
+      "id": "aff_12f39a725f800ab41462",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_ff211732a80b91017302",
+      "source_url": "http://teacher.nxu.edu.cn/zhaojing/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a877be382b98ae5e517d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_12f39a725f800ab41462",
+      "claim_ids": [
+        "claim_a877be382b98ae5e517d"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhaojing_nx@sina.com",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/zhaojing/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhaojing_nx@sina.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a877be382b98ae5e517d"
+    ],
+    "email": [
+      "claim_a877be382b98ae5e517d"
+    ],
+    "name": [
+      "claim_a877be382b98ae5e517d"
+    ],
+    "profile_url": [
+      "claim_a877be382b98ae5e517d"
+    ],
+    "research_directions": [
+      "claim_a877be382b98ae5e517d"
+    ],
+    "status": [
+      "claim_a877be382b98ae5e517d"
+    ],
+    "title": [
+      "claim_a877be382b98ae5e517d"
+    ]
+  },
+  "id": "mentor_4a45322323b4e27ddc75",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a877be382b98ae5e517d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "赵静"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_12f39a725f800ab41462",
+      "claim_ids": [
+        "claim_a877be382b98ae5e517d"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/zhaojing/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机软件与理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/zhaojing/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

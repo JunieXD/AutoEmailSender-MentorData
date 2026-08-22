@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_29bccc53d2a1480f2faf"
+      ],
+      "ended_at": null,
+      "id": "aff_3727a949dc79c2914f7c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_4dbadc2f39a0b6320add",
+      "source_url": "http://teacher.nxu.edu.cn/songlijuan/zh_CN/index.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_29bccc53d2a1480f2faf"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3727a949dc79c2914f7c",
+      "claim_ids": [
+        "claim_29bccc53d2a1480f2faf"
+      ],
+      "is_primary": true,
+      "normalized_value": "slj@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "http://teacher.nxu.edu.cn/songlijuan/zh_CN/index.htm",
+      "status": "current",
+      "type": "email",
+      "value": "slj@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_29bccc53d2a1480f2faf"
+    ],
+    "email": [
+      "claim_29bccc53d2a1480f2faf"
+    ],
+    "name": [
+      "claim_29bccc53d2a1480f2faf"
+    ],
+    "profile_url": [
+      "claim_29bccc53d2a1480f2faf"
+    ],
+    "research_directions": [
+      "claim_29bccc53d2a1480f2faf"
+    ],
+    "status": [
+      "claim_29bccc53d2a1480f2faf"
+    ],
+    "title": [
+      "claim_29bccc53d2a1480f2faf"
+    ]
+  },
+  "id": "mentor_4cb9ffbdc8a7e7e27d19",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_29bccc53d2a1480f2faf"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋丽娟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3727a949dc79c2914f7c",
+      "claim_ids": [
+        "claim_29bccc53d2a1480f2faf"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "http://teacher.nxu.edu.cn/songlijuan/zh_CN/index.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "计算机软件与理论"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "http://teacher.nxu.edu.cn/songlijuan/zh_CN/index.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}

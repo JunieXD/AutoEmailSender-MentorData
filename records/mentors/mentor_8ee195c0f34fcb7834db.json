@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d7923f16ff858d13c62f"
+      ],
+      "ended_at": null,
+      "id": "aff_bb6c57d0fc2925713b97",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:30Z",
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1124/3573.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d7923f16ff858d13c62f"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bb6c57d0fc2925713b97",
+      "claim_ids": [
+        "claim_d7923f16ff858d13c62f"
+      ],
+      "is_primary": true,
+      "normalized_value": "maziqiang@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:30Z",
+      "source_url": "https://xxgc.nxu.edu.cn/info/1124/3573.htm",
+      "status": "current",
+      "type": "email",
+      "value": "maziqiang@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:30Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d7923f16ff858d13c62f"
+    ],
+    "email": [
+      "claim_d7923f16ff858d13c62f"
+    ],
+    "name": [
+      "claim_d7923f16ff858d13c62f"
+    ],
+    "profile_url": [
+      "claim_d7923f16ff858d13c62f"
+    ],
+    "recent_papers": [
+      "claim_d7923f16ff858d13c62f"
+    ],
+    "research_directions": [
+      "claim_d7923f16ff858d13c62f"
+    ],
+    "status": [
+      "claim_d7923f16ff858d13c62f"
+    ],
+    "title": [
+      "claim_d7923f16ff858d13c62f"
+    ]
+  },
+  "id": "mentor_8ee195c0f34fcb7834db",
+  "last_verified_at": "2026-08-21T18:49:30Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d7923f16ff858d13c62f"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马自强"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bb6c57d0fc2925713b97",
+      "claim_ids": [
+        "claim_d7923f16ff858d13c62f"
+      ],
+      "observed_at": "2026-08-21T18:49:30Z",
+      "status": "current",
+      "url": "https://xxgc.nxu.edu.cn/info/1124/3573.htm"
+    }
+  ],
+  "recent_papers": [
+    "Another Lattice Attack Against ECDSA with the wNAF to Recover More Bits per Signature",
+    "Towards the optimal performance of integrating Warm and Delay against remote cache timing side channels on block ciphers",
+    "Evaluating the Cache Side Channel Attacks against ECDSA",
+    "Applications and Developments of the Lattice Attack in Side Channel Attacks"
+  ],
+  "research_directions": [
+    "密码应用,系统安全,区块链,恶意流量识别,网络舆情分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:30Z",
+  "status_reason": null,
+  "status_source_url": "https://xxgc.nxu.edu.cn/info/1124/3573.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:49:30Z"
+}
