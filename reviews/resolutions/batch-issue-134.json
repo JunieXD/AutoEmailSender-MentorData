@@ -1,0 +1,194 @@
+{
+  "created_organization_ids": [
+    "org_auto_2c2494dac06eae2df2ae",
+    "org_auto_4a11b3dc8dbbaa8fdd66"
+  ],
+  "decided_at": "2026-08-22T08:49:56Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_4de724d74d68c57a",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_41bbf5cfe92ed1491ef7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_81caa106aa0c1ddc",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_41bbf5cfe92ed1491ef7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件工程系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ce5148d641a46aff",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_41bbf5cfe92ed1491ef7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_134",
+  "invalid_rows": [],
+  "issue": {
+    "number": 134,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/134"
+  },
+  "manifest_sha256": "6f798963e15675f605a0401cf015bbdda6bcf38be15b86db41b957fc472c60ce",
+  "mapped_proposal_ids": [
+    "proposal_issue_134_row_1",
+    "proposal_issue_134_row_10",
+    "proposal_issue_134_row_11",
+    "proposal_issue_134_row_12",
+    "proposal_issue_134_row_13",
+    "proposal_issue_134_row_14",
+    "proposal_issue_134_row_15",
+    "proposal_issue_134_row_16",
+    "proposal_issue_134_row_17",
+    "proposal_issue_134_row_18",
+    "proposal_issue_134_row_19",
+    "proposal_issue_134_row_2",
+    "proposal_issue_134_row_20",
+    "proposal_issue_134_row_21",
+    "proposal_issue_134_row_22",
+    "proposal_issue_134_row_23",
+    "proposal_issue_134_row_24",
+    "proposal_issue_134_row_25",
+    "proposal_issue_134_row_26",
+    "proposal_issue_134_row_27",
+    "proposal_issue_134_row_28",
+    "proposal_issue_134_row_29",
+    "proposal_issue_134_row_3",
+    "proposal_issue_134_row_30",
+    "proposal_issue_134_row_31",
+    "proposal_issue_134_row_32",
+    "proposal_issue_134_row_33",
+    "proposal_issue_134_row_34",
+    "proposal_issue_134_row_35",
+    "proposal_issue_134_row_4",
+    "proposal_issue_134_row_5",
+    "proposal_issue_134_row_6",
+    "proposal_issue_134_row_7",
+    "proposal_issue_134_row_8",
+    "proposal_issue_134_row_9"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 141,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379403693,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

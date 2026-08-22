@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_19da467b7b89b9ba9974"
+      ],
+      "ended_at": null,
+      "id": "aff_bebea9fe34f4934c7e6f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_4a11b3dc8dbbaa8fdd66",
+      "source_url": "https://cs.nankai.edu.cn/info/1140/2585.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_19da467b7b89b9ba9974"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bebea9fe34f4934c7e6f",
+      "claim_ids": [
+        "claim_19da467b7b89b9ba9974"
+      ],
+      "is_primary": true,
+      "normalized_value": "jtian@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1140/2585.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jtian@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_19da467b7b89b9ba9974"
+    ],
+    "email": [
+      "claim_19da467b7b89b9ba9974"
+    ],
+    "name": [
+      "claim_19da467b7b89b9ba9974"
+    ],
+    "profile_url": [
+      "claim_19da467b7b89b9ba9974"
+    ],
+    "recent_papers": [
+      "claim_19da467b7b89b9ba9974"
+    ],
+    "research_directions": [
+      "claim_19da467b7b89b9ba9974"
+    ],
+    "status": [
+      "claim_19da467b7b89b9ba9974"
+    ]
+  },
+  "id": "mentor_1bfa232f9e65367812f1",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_19da467b7b89b9ba9974"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "田军"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bebea9fe34f4934c7e6f",
+      "claim_ids": [
+        "claim_19da467b7b89b9ba9974"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1140/2585.htm"
+    }
+  ],
+  "recent_papers": [
+    "DyMAS-Net: Dynamic Multi-scale Adaptive Sampling Network for Efficient Medical Image Segmentation.",
+    "SATU-net: A Shadow Adaptive Tracing U-net for Gastric Cavity Segmentation based on the Principle of Ultrasound Imaging.",
+    "PMSS-NeXt: An Efficient Polarized Multi-Scale Synergy Network for Complex Medical Image Segmentation",
+    "SAMM: SEGMENT ANYTHING MAMBA MODEL FOR GENERAL MEDICAL IMAGE SEGMENTATION.",
+    "Robust context-aware medical images segmentation using multi-scale convolutions and adaptive feature fusion.",
+    "MSCANet: A Lightweight and Robust Model for Colorectal Tumor Segmentation in Medical Imaging.",
+    "Context-Aware Boundary Refinement for Ultrasound Segmentation: Introducing U-SegRefine.",
+    "MTSNet: A Lightweight Boundary-Aware Multi-Scale Network for Medical Image Segmentation."
+  ],
+  "research_directions": [
+    "人工智能、具身智能、企业数智化、医学AI"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1140/2585.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:48:56Z"
+}

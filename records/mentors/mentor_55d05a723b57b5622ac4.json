@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_071f1f3fafe0ba31f227"
+      ],
+      "ended_at": null,
+      "id": "aff_3678b1d774cc6059a155",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_4a11b3dc8dbbaa8fdd66",
+      "source_url": "https://cs.nankai.edu.cn/info/1151/2593.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_071f1f3fafe0ba31f227"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_3678b1d774cc6059a155",
+      "claim_ids": [
+        "claim_071f1f3fafe0ba31f227"
+      ],
+      "is_primary": true,
+      "normalized_value": "lange@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1151/2593.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lange@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_071f1f3fafe0ba31f227"
+    ],
+    "email": [
+      "claim_071f1f3fafe0ba31f227"
+    ],
+    "name": [
+      "claim_071f1f3fafe0ba31f227"
+    ],
+    "profile_url": [
+      "claim_071f1f3fafe0ba31f227"
+    ],
+    "recent_papers": [
+      "claim_071f1f3fafe0ba31f227"
+    ],
+    "research_directions": [
+      "claim_071f1f3fafe0ba31f227"
+    ],
+    "status": [
+      "claim_071f1f3fafe0ba31f227"
+    ],
+    "title": [
+      "claim_071f1f3fafe0ba31f227"
+    ]
+  },
+  "id": "mentor_55d05a723b57b5622ac4",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_071f1f3fafe0ba31f227"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "兰格"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_3678b1d774cc6059a155",
+      "claim_ids": [
+        "claim_071f1f3fafe0ba31f227"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1151/2593.htm"
+    }
+  ],
+  "recent_papers": [
+    "Lan G, Hu M, Li Y, et al. Contrastive knowledge integrated graph neural networks for Chinese medical text classification[J]. Engineering Applications of Artificial Intelligence, 2023, 122: 106057.",
+    "兰格, 王瑾瑜, 孙羽菲, 等. 基于知识图谱的图匹配文本分类[J]. 数据与计算发展前沿, 2022, 4(2): 39-49.",
+    "Lan G, Li Y, Hu M, et al. Knowledge graph integrated graph neural networks for Chinese medical text classification[C]//2021 IEEE International Conference on Bioinformatics and Biomedicine (BIBM). IEEE, 2021: 682-687.",
+    "Li Y, Liu Z X, Lan G, et al. A DDPG-based solution for optimal consensus of continuous-time linear multi-agent systems[J]. Science China Technological Sciences, 2023, 66(8): 2441-2453.",
+    "Liu Z, Li Y, Lan G, et al. A novel data-driven model-free synchronization protocol for discrete-time multi-agent systems via TD3 based algorithm[J]. Knowledge-Based Systems, 2024, 287: 111430."
+  ],
+  "research_directions": [
+    "自然语言处理、知识图谱、预训练语言模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1151/2593.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:56Z"
+}

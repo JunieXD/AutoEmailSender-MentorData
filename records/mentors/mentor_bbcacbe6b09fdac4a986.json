@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d0a982037c300e1f6cf9"
+      ],
+      "ended_at": null,
+      "id": "aff_b7f1cebb57482a9ead9c",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_2c2494dac06eae2df2ae",
+      "source_url": "https://cs.nankai.edu.cn/info/1142/2589.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d0a982037c300e1f6cf9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_b7f1cebb57482a9ead9c",
+      "claim_ids": [
+        "claim_d0a982037c300e1f6cf9"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangb@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1142/2589.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangb@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d0a982037c300e1f6cf9"
+    ],
+    "email": [
+      "claim_d0a982037c300e1f6cf9"
+    ],
+    "name": [
+      "claim_d0a982037c300e1f6cf9"
+    ],
+    "profile_url": [
+      "claim_d0a982037c300e1f6cf9"
+    ],
+    "recent_papers": [
+      "claim_d0a982037c300e1f6cf9"
+    ],
+    "research_directions": [
+      "claim_d0a982037c300e1f6cf9"
+    ],
+    "status": [
+      "claim_d0a982037c300e1f6cf9"
+    ],
+    "title": [
+      "claim_d0a982037c300e1f6cf9"
+    ]
+  },
+  "id": "mentor_bbcacbe6b09fdac4a986",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d0a982037c300e1f6cf9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张波"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_b7f1cebb57482a9ead9c",
+      "claim_ids": [
+        "claim_d0a982037c300e1f6cf9"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1142/2589.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xi Gong, Xin Huang, Shanshan Chen, Bo Zhang. Enhancing 3D Detection Accuracy in Autonomous Driving throughPseudo-LiDAR Augmentation and Downsampling[C]//2024 International Conference on Image Processing, ComputerVision and Machine Learning, ICICML 2024.",
+    "Zheng Zhang, Yanbin Zhao, Xiaoxi Fan, Bo Zhang. Big Data Oriented Graph Division and Storage[C]//2023 IEEE8th International Conference on Big Data Analytics (ICBDA). IEEE, 03-05 March 2023,p.47-52.",
+    "Luyang Sun, Xiawei Yue, Zheng Zhang, Bo Zhang. OpenCL implementation of a cascaded decompression algorithmfor querying of big table data. Second International Conference on Electronic Information Engineering, Big Data, andComputer Technology (EIBDCT 2023). January 06-08, 2023, Xishuangbanna, China.",
+    "Tao Liu, Meiqian Duan, Luyang Sun, Bo Zhang. An Auditory Measure for Anomaly Detection based on Auto-encoders. 2022 Asia Conference on Algorithms, Computing and Machine Learning(CACML 2022). March 25-27, 2022,Hangzhou, China.",
+    "Renhang HONG, Yang ZHOU, Shenghe SHI, Bo ZHANG, Fast Clustering for Redundancy Removal In Audio AnomalyDetection, Proceedings of 2022 7th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA),April 22-24, 2022, Chengdu, China.",
+    "Shan Huang, Shenghe Shi, Bo Zhang, Application of Noise Adaptation Layer for Phoneme Recognition with NoisyLabels, Proceedings of the 2021 1st International Conference on Artificial Intelligence and Pattern Recognition(ICAIPR2021),June 25-27,2021,Beijing, China.",
+    "Yunhao Zhang, Bo Zhang, Zhenhui Zhou, \"Zero-Copy Data Transfer for an OpenCL API Remoting System\", International Conference on Cloud Computing and Big Data Analytics(ICCCBDA-2019), April 10-13, 2020, Chengdu, China.",
+    "Chen Li, Bo Zhang, Shan Huang, Zhenhuan Liu, \"Using Noisy Word-level Labels to Train a Phoneme Recognizerbased on Neural Networks by Expectation Maximization\",International Conference on Computing and Pattern Recognition(ICCPR 2019), October 23-25, 2019, Beijing, China."
+  ],
+  "research_directions": [
+    "自动驾驶,深度学习"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1142/2589.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:48:56Z"
+}

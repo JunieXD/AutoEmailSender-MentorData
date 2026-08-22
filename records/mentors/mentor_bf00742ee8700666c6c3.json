@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_daf4a7e87b4aef67e61b"
+      ],
+      "ended_at": null,
+      "id": "aff_9506ab9f6a1943f5c7d0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:48:56Z",
+      "organization_id": "org_auto_4a11b3dc8dbbaa8fdd66",
+      "source_url": "https://cs.nankai.edu.cn/info/1195/3485.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_daf4a7e87b4aef67e61b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9506ab9f6a1943f5c7d0",
+      "claim_ids": [
+        "claim_daf4a7e87b4aef67e61b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangzhongqun@nankai.edu.cn",
+      "observed_at": "2026-08-21T18:48:56Z",
+      "source_url": "https://cs.nankai.edu.cn/info/1195/3485.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangzhongqun@nankai.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:48:56Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_daf4a7e87b4aef67e61b"
+    ],
+    "email": [
+      "claim_daf4a7e87b4aef67e61b"
+    ],
+    "name": [
+      "claim_daf4a7e87b4aef67e61b"
+    ],
+    "profile_url": [
+      "claim_daf4a7e87b4aef67e61b"
+    ],
+    "recent_papers": [
+      "claim_daf4a7e87b4aef67e61b"
+    ],
+    "research_directions": [
+      "claim_daf4a7e87b4aef67e61b"
+    ],
+    "status": [
+      "claim_daf4a7e87b4aef67e61b"
+    ],
+    "title": [
+      "claim_daf4a7e87b4aef67e61b"
+    ]
+  },
+  "id": "mentor_bf00742ee8700666c6c3",
+  "last_verified_at": "2026-08-21T18:48:56Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_daf4a7e87b4aef67e61b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张重群"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9506ab9f6a1943f5c7d0",
+      "claim_ids": [
+        "claim_daf4a7e87b4aef67e61b"
+      ],
+      "observed_at": "2026-08-21T18:48:56Z",
+      "status": "current",
+      "url": "https://cs.nankai.edu.cn/info/1195/3485.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhuo Chen,Zhongqun Zhang*,Yihua Cheng, Hyung Jin Chang, Force-Aware 3D Contact Modeling for Stable Grasp Generation, AAAI2026.",
+    "Zhongqun Zhang, Yihua Cheng, Eduardo Pérez-Pellitero, Yiren Zhou, Jiankang Deng, Hyung Jin Chang, Jifei Song, Single-view Image to Novel-view Generation for Hand-Object Interactions, AAAI2025.",
+    "Yihua Cheng, Hengfei Wang,Zhongqun Zhang*, Yang Yue, Boeun Kim, Feng Lu, Hyung Jin Chang, 3D Prior Is All You Need: Cross-Task Few-shot 2D Gaze Estimation, CVPR2025.",
+    "Zhongqun Zhang, Hengfei Wang, Ziwei Yu, Yihua Cheng, Angela Yao, Hyung Jin Chang, NL2Contact: Natural Language Guided 3D Hand-Object Contact Modeling with Diffusion Model, ECCV2024 (Oral, top 2%).",
+    "Zhongqun Zhang, Jifei Song, Eduardo Pérez-Pellitero, Yiren Zhou, Hyung Jin Chang, AlešLeonardis, NCRF: Neural Contact Radiance Fields for Free-Viewpoint Rendering of Hand-Object Interaction, 3DV2024 (Spotlight, top 4%).",
+    "Tze Ho Elden Tse#,Zhongqun Zhang#*, Kwang In Kim, AlešLeonardis, Feng Zheng, Hyung Jin Chang, S2Contact: Graph-Based Network for 3D Hand-Object Contact Estimation with Semi-supervised Learning, ECCV2022.",
+    "Zhongqun Zhang, Wei Chen, Linfang Zheng, AlešLeonardis, Hyung Jin Chang, Trans6d: Transformer-based 6d object pose estimation and refinement, ECCV2022."
+  ],
+  "research_directions": [
+    "机器人、具身智能、计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:48:56Z",
+  "status_reason": null,
+  "status_source_url": "https://cs.nankai.edu.cn/info/1195/3485.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:48:56Z"
+}
