@@ -1,0 +1,130 @@
+{
+  "created_organization_ids": [
+    "org_auto_436cdad19645d7abcfe7"
+  ],
+  "decided_at": "2026-08-22T08:50:02Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_167e6368d9601837",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "nxu.edu.cn"
+          ],
+          "canonical_name": "宁夏大学",
+          "level": "university",
+          "official_url": "https://nxu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_82d5dde988eb1325c42e"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6724b74d192e853c",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "create",
+          "approved_domains": [
+            "nxu.edu.cn"
+          ],
+          "canonical_name": "宁夏大学",
+          "level": "university",
+          "official_url": "https://nxu.edu.cn/",
+          "organization_id": null,
+          "organization_type": "university",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "信息与网络空间安全学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_138",
+  "invalid_rows": [],
+  "issue": {
+    "number": 138,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/138"
+  },
+  "manifest_sha256": "ce5bdee0fb0fd8f7e4a8114c7455692d572801b5191e59856a9740d0e98a002b",
+  "mapped_proposal_ids": [
+    "proposal_issue_138_row_1",
+    "proposal_issue_138_row_2"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "信息工程学院",
+      "official_url": null,
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "organization_type": "school",
+      "parent_id": "org_auto_d5b1827166c129a346f6"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 149,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379404060,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}

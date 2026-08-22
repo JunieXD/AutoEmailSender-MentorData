@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1bda75183a75e6b47be0"
+      ],
+      "ended_at": null,
+      "id": "aff_677979094995be49e01b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:35Z",
+      "organization_id": "org_auto_82d5dde988eb1325c42e",
+      "source_url": "https://sic.nxu.edu.cn/info/1022/1078.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_1bda75183a75e6b47be0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_677979094995be49e01b",
+      "claim_ids": [
+        "claim_1bda75183a75e6b47be0"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangrn@nxu.edu.cn",
+      "observed_at": "2026-08-21T18:49:35Z",
+      "source_url": "https://sic.nxu.edu.cn/info/1022/1078.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangrn@nxu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:35Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1bda75183a75e6b47be0"
+    ],
+    "email": [
+      "claim_1bda75183a75e6b47be0"
+    ],
+    "name": [
+      "claim_1bda75183a75e6b47be0"
+    ],
+    "profile_url": [
+      "claim_1bda75183a75e6b47be0"
+    ],
+    "recent_papers": [
+      "claim_1bda75183a75e6b47be0"
+    ],
+    "research_directions": [
+      "claim_1bda75183a75e6b47be0"
+    ],
+    "status": [
+      "claim_1bda75183a75e6b47be0"
+    ]
+  },
+  "id": "mentor_5d331d458358b3d54ffe",
+  "last_verified_at": "2026-08-21T18:49:35Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1bda75183a75e6b47be0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张若楠"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_677979094995be49e01b",
+      "claim_ids": [
+        "claim_1bda75183a75e6b47be0"
+      ],
+      "observed_at": "2026-08-21T18:49:35Z",
+      "status": "current",
+      "url": "https://sic.nxu.edu.cn/info/1022/1078.htm"
+    }
+  ],
+  "recent_papers": [
+    "A Quantum-Inspired Framework in Leader-Servant Mode for Large-Scale Multi-Modal Place Recognition",
+    "ComPoint: Can Complex-valued Point Cloud Feature Representation Benefit for Place Recognition?",
+    "SDE2D: Semantic-Guided Discriminability Enhancement Feature Detector and Descriptor",
+    "PointOT: Interpretable Geometry-Inspired Point Cloud Generative Model via Optimal Transport",
+    "QINet: Decision Surface Learning and Adversarial Enhancement for Quasi-Immune Completion of Diverse Corrupted Point Clouds",
+    "Vaccine-style-net: Point Cloud Completion in Implicit Continuous Function Space",
+    "Sketch-aided with Interactive Fusion Point Cloud Place Recognition",
+    "A Point is a Wave: Point-Wave Network for Place Recognition"
+  ],
+  "research_directions": [
+    "量子启发式多源异构信息感知、面向人机感知共友好的多媒体处理与分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:35Z",
+  "status_reason": null,
+  "status_source_url": "https://sic.nxu.edu.cn/info/1022/1078.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:49:35Z"
+}
