@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f625debac623196256c0"
+      ],
+      "ended_at": null,
+      "id": "aff_acb39a01b6de6425010e",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_3b5ab7ad25877e002450",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/lrc/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f625debac623196256c0"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_acb39a01b6de6425010e",
+      "claim_ids": [
+        "claim_f625debac623196256c0"
+      ],
+      "is_primary": true,
+      "normalized_value": "liuruochen@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/lrc/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "liuruochen@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f625debac623196256c0"
+    ],
+    "email": [
+      "claim_f625debac623196256c0"
+    ],
+    "name": [
+      "claim_f625debac623196256c0"
+    ],
+    "profile_url": [
+      "claim_f625debac623196256c0"
+    ],
+    "recent_papers": [
+      "claim_f625debac623196256c0"
+    ],
+    "research_directions": [
+      "claim_f625debac623196256c0"
+    ],
+    "status": [
+      "claim_f625debac623196256c0"
+    ],
+    "title": [
+      "claim_f625debac623196256c0"
+    ]
+  },
+  "id": "mentor_642ec871223843ed1067",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f625debac623196256c0"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘若辰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_acb39a01b6de6425010e",
+      "claim_ids": [
+        "claim_f625debac623196256c0"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/lrc/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "一种改进的双基地声纳马尔可夫定位算法,信息与控制,2012",
+    "基于线性最小二乘方法的多基地声呐定位算法,电声技术,2011",
+    "Research on location algorithm with linear least squares method for bistatic sonar,PEITS 2010,2010"
+  ],
+  "research_directions": [
+    "水声信号处理,多基地声纳关键技术研究,车联网中车辆混合定位技术研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/lrc/list.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

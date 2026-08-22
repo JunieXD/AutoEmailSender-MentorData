@@ -1,0 +1,103 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e38bd5dc7e743f96a45a"
+      ],
+      "ended_at": null,
+      "id": "aff_dc1216dc66a0fc571a49",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "https://js.chd.edu.cn/xxgcxy/lyq2/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_e38bd5dc7e743f96a45a"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_dc1216dc66a0fc571a49",
+      "claim_ids": [
+        "claim_e38bd5dc7e743f96a45a"
+      ],
+      "is_primary": true,
+      "normalized_value": "yunqiu.lyu@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "https://js.chd.edu.cn/xxgcxy/lyq2/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yunqiu.lyu@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e38bd5dc7e743f96a45a"
+    ],
+    "email": [
+      "claim_e38bd5dc7e743f96a45a"
+    ],
+    "name": [
+      "claim_e38bd5dc7e743f96a45a"
+    ],
+    "profile_url": [
+      "claim_e38bd5dc7e743f96a45a"
+    ],
+    "recent_papers": [
+      "claim_e38bd5dc7e743f96a45a"
+    ],
+    "research_directions": [
+      "claim_e38bd5dc7e743f96a45a"
+    ],
+    "status": [
+      "claim_e38bd5dc7e743f96a45a"
+    ]
+  },
+  "id": "mentor_7e2f733e532ecd79062e",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e38bd5dc7e743f96a45a"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吕韵秋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_dc1216dc66a0fc571a49",
+      "claim_ids": [
+        "claim_e38bd5dc7e743f96a45a"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "https://js.chd.edu.cn/xxgcxy/lyq2/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Lv Y, Zhang J, Barnes N, et al. Weakly-supervised contrastive learning for unsupervised object discovery[J]. IEEE Transactions on Image Processing, 2024, 33: 2689-2702.(SCI一区Top、CCF-A类期刊论文)",
+    "Lv Y, Zhang J, Dai Y, et al. Toward deeper understanding of camouflaged object detection[J]. TCSVT, 2023, 33(7): 3462-3476. (SCI一区Top论文,Scopus前1%顶尖论文)",
+    "Lv Y, Liu B, Zhang J, et al. Semi-supervised active salient object detection[J]. Pattern Recognition, 2022, 123: 108364. (SCI一区Top论文)",
+    "Lv Y, Zhang J, Dai Y, et al. Simultaneously localize, segment and rank the camouflaged objects[C], CVPR. 2021: 11591-11601. (CCF-A类会议论文,引用数:624)",
+    "Lv Y, Liu K, Cheng F, et al. Visual tracking with tree-structured appearance model for online learning[J]. IET Image Processing, 2019, 13(12): 2106-2115. (CCF-C类期刊论文)",
+    "Li A, Zhang J, Lv Y, et al. Uncertainty-aware joint salient object and camouflaged object detection[C], CVPR, 2021: 10071-10081. (CCF-A类会议论文)",
+    "Mao Y, Zhang J, Xiang M, Lv Y, et al. Contrastive conditional latent diffusion for audio-visual segmentation[J]. IEEE Transactions on Image Processing, 2025. (SCI一区Top、CCF-A类期刊论文)"
+  ],
+  "research_directions": [
+    "计算机视觉、图像处理、多模态视觉感知、隐式视觉感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "https://js.chd.edu.cn/xxgcxy/lyq2/list.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:52:08Z"
+}

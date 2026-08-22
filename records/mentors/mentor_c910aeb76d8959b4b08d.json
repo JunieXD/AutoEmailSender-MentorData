@@ -1,0 +1,109 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8850c2bdd2618346de2d"
+      ],
+      "ended_at": null,
+      "id": "aff_602c0944540b70b3ca32",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/ln103/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_8850c2bdd2618346de2d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_602c0944540b70b3ca32",
+      "claim_ids": [
+        "claim_8850c2bdd2618346de2d"
+      ],
+      "is_primary": true,
+      "normalized_value": "niliu@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/ln103/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "niliu@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8850c2bdd2618346de2d"
+    ],
+    "email": [
+      "claim_8850c2bdd2618346de2d"
+    ],
+    "name": [
+      "claim_8850c2bdd2618346de2d"
+    ],
+    "profile_url": [
+      "claim_8850c2bdd2618346de2d"
+    ],
+    "recent_papers": [
+      "claim_8850c2bdd2618346de2d"
+    ],
+    "research_directions": [
+      "claim_8850c2bdd2618346de2d"
+    ],
+    "status": [
+      "claim_8850c2bdd2618346de2d"
+    ],
+    "title": [
+      "claim_8850c2bdd2618346de2d"
+    ]
+  },
+  "id": "mentor_c910aeb76d8959b4b08d",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8850c2bdd2618346de2d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "刘妮"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_602c0944540b70b3ca32",
+      "claim_ids": [
+        "claim_8850c2bdd2618346de2d"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/ln103/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Convolutional neural network for recognizing highway traffic congestion",
+    "Learnable high-order MGRF models for contrast-invariant texture recognition",
+    "Image-based CAD system for accurate identification of lung injury",
+    "Segmenting Kidney DCE-MRI Using 1st-Order Shape and 5th-Order Appearance Priors",
+    "Learning High-Order Structures for Texture Retrieval",
+    "Combined Ternary patterns for Texture Recognition",
+    "High-order MGRF models for contrast/offset invariant texture retrieval",
+    "Texture modelling with generic translation-and contrast/offset-invariant 2nd-4th-order MGRFs"
+  ],
+  "research_directions": [
+    "图像处理、模式识别、机器学习,具体包括:(1)纹理图像识别与生成",
+    "(2)视频中异常事件检测",
+    "(3)概率图模型"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/ln103/list.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

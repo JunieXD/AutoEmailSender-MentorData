@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8233e8d3490a7787628e"
+      ],
+      "ended_at": null,
+      "id": "aff_5efc6de3f88fd7cd0111",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_1f4b26c582c2ee40cbd3",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/zjw100/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8233e8d3490a7787628e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5efc6de3f88fd7cd0111",
+      "claim_ids": [
+        "claim_8233e8d3490a7787628e"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiawei.zhu@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/zjw100/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiawei.zhu@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8233e8d3490a7787628e"
+    ],
+    "email": [
+      "claim_8233e8d3490a7787628e"
+    ],
+    "name": [
+      "claim_8233e8d3490a7787628e"
+    ],
+    "profile_url": [
+      "claim_8233e8d3490a7787628e"
+    ],
+    "recent_papers": [
+      "claim_8233e8d3490a7787628e"
+    ],
+    "research_directions": [
+      "claim_8233e8d3490a7787628e"
+    ],
+    "status": [
+      "claim_8233e8d3490a7787628e"
+    ],
+    "title": [
+      "claim_8233e8d3490a7787628e"
+    ]
+  },
+  "id": "mentor_3f02662ffb885c6aa0ab",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8233e8d3490a7787628e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱家伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_5efc6de3f88fd7cd0111",
+      "claim_ids": [
+        "claim_8233e8d3490a7787628e"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/zjw100/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Multi-objective optimal scheduling of household appliances for demand side management using a hybrid heuristic algorithm",
+    "MLATSO: A method for task scheduling optimization in multi-load AGVs-based systems",
+    "A multi-AGV routing planning method based on deep reinforcement learning and recurrent neural network",
+    "Optimization of the electricity consumption behaviors of users under uncertain electricity prices and consumption patterns",
+    "Optimal scheduling of electric vehicle charging operations considering real-time traffic condition and travel distance",
+    "Residential Demand Response Scheduling Optimization and Simulation based on an Improved PSO Algorithm",
+    "Parameter extraction of PEMFC via Bayesian regularization neural network based meta-heuristic algorithms",
+    "A model and a task scheduling method for double-deep tier-captive SBS/RS with alternative elevator-patterns"
+  ],
+  "research_directions": [
+    "电力需求响应与调度优化、电力信息感知、电动汽车车-站-网一体化运行"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/zjw100/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

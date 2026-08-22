@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_cf93d7d35fe327b827d4"
+      ],
+      "ended_at": null,
+      "id": "aff_db7b6533a202f1dafbdb",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/wly_9560/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_cf93d7d35fe327b827d4"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_db7b6533a202f1dafbdb",
+      "claim_ids": [
+        "claim_cf93d7d35fe327b827d4"
+      ],
+      "is_primary": true,
+      "normalized_value": "luyangwang@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/wly_9560/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "luyangwang@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_cf93d7d35fe327b827d4"
+    ],
+    "email": [
+      "claim_cf93d7d35fe327b827d4"
+    ],
+    "name": [
+      "claim_cf93d7d35fe327b827d4"
+    ],
+    "profile_url": [
+      "claim_cf93d7d35fe327b827d4"
+    ],
+    "status": [
+      "claim_cf93d7d35fe327b827d4"
+    ]
+  },
+  "id": "mentor_4ee728bad79f32d2adf4",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_cf93d7d35fe327b827d4"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王路阳"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_db7b6533a202f1dafbdb",
+      "claim_ids": [
+        "claim_cf93d7d35fe327b827d4"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/wly_9560/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/wly_9560/list.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:52:08Z"
+}

@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a63be6fc174cf7d0c04c"
+      ],
+      "ended_at": null,
+      "id": "aff_6e508b3cf75df1b30873",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/wk1/list.psp",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_a63be6fc174cf7d0c04c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6e508b3cf75df1b30873",
+      "claim_ids": [
+        "claim_a63be6fc174cf7d0c04c"
+      ],
+      "is_primary": true,
+      "normalized_value": "kwangdd@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/wk1/list.psp",
+      "status": "current",
+      "type": "email",
+      "value": "kwangdd@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a63be6fc174cf7d0c04c"
+    ],
+    "email": [
+      "claim_a63be6fc174cf7d0c04c"
+    ],
+    "name": [
+      "claim_a63be6fc174cf7d0c04c"
+    ],
+    "profile_url": [
+      "claim_a63be6fc174cf7d0c04c"
+    ],
+    "recent_papers": [
+      "claim_a63be6fc174cf7d0c04c"
+    ],
+    "research_directions": [
+      "claim_a63be6fc174cf7d0c04c"
+    ],
+    "status": [
+      "claim_a63be6fc174cf7d0c04c"
+    ],
+    "title": [
+      "claim_a63be6fc174cf7d0c04c"
+    ]
+  },
+  "id": "mentor_a41387063a5bb8af79a9",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a63be6fc174cf7d0c04c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王珂"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6e508b3cf75df1b30873",
+      "claim_ids": [
+        "claim_a63be6fc174cf7d0c04c"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/wk1/list.psp"
+    }
+  ],
+  "recent_papers": [
+    "[R15]Ke Wang, Yaohui Feng, Bingcao Wu, Zhanwen Liu, Yisheng An and Shaojie Shen.Depth Estimation using Short-Long Focal Binocular Cameras, in IEEE Robotics and Automation Letters, under review.",
+    "[R14]Lei Shi, Ke Wang, Zhanwen Liu, Shuai Ren and Weiping Ding.A Cross-View Object Matching Framework for Vehicle-Infrastructure Collaboration Based on Topological Scene Representation, in IEEE Transactions on Intelligent Transportation Systems, under review.",
+    "[R13]Long Min, Yaohui Feng, Ke Wang*, Bingcao Wu, Chuhao Liu and Shaojie Shen.Loop Closure Detection: A Viewpoint Invariant BEV SceneRepresentation for RGB-D based SLAM,2026 IEEE International Conference on Robotics and Automation (ICRA), under review.",
+    "[R12] Yueyang Ding,KeWang*, XuelianLiu, Zhanwen Liu and ChunyangWang.Gravity Vector Guided Targetless Extrinsic Calibration between LiDAR and Camera, in IEEE Robotics and Automation Letters, under review.",
+    "[R11] Binfang Zhang,KeWang*, ChenxiWu, Zhukai Wang andZhanwen Liu.Virtual-Real Fusion Testing for Autonomous Driving Based on AR + VI-SLAM,in Communications in Computer and Information Science, 2025.",
+    "[R10]Chuhao Liu, ZhijianQiao, Jieqi Shi,Ke Wang, PeizeLiu andShaojie Shen, SG-Reg: Generalizable and Efficient Scene Graph Registration,IEEE Transactions on Robotics (T-RO), 2025",
+    "[R9]Lei Shi, Shuai Ren, Xing Fan, Ke Wang, Shan Lin and Zhanwen Liu, Modified You Only Look Once Network Model for Enhanced Traffic Scene Detection Performance for Small Targets,IET Image Processing,2025",
+    "[R8]Di Wang, Fei Ge, Ke Wang*, Hui Chen, Wenwen Jia, Xuelian Liu and Zhanwen Liu, Vehicle Global Localization Based on V2I Collaboration in GNSS-Denied Environments,in proceeding of the4th International Conference on Intelligent Traffic Systems and Smart City, Augest 2024"
+  ],
+  "research_directions": [
+    "车路协同感知、智能车(机器人)自主环境感知、神经辐射场、视觉深度估计、动态场景信息捕捉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/wk1/list.psp",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

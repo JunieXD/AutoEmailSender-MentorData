@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_42505b11180633dcee17"
+      ],
+      "ended_at": null,
+      "id": "aff_cf828348838a8a5f3711",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "https://js.chd.edu.cn/xxgcxy/wz7/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_42505b11180633dcee17"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cf828348838a8a5f3711",
+      "claim_ids": [
+        "claim_42505b11180633dcee17"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhenwang@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "https://js.chd.edu.cn/xxgcxy/wz7/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhenwang@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_42505b11180633dcee17"
+    ],
+    "email": [
+      "claim_42505b11180633dcee17"
+    ],
+    "name": [
+      "claim_42505b11180633dcee17"
+    ],
+    "profile_url": [
+      "claim_42505b11180633dcee17"
+    ],
+    "recent_papers": [
+      "claim_42505b11180633dcee17"
+    ],
+    "research_directions": [
+      "claim_42505b11180633dcee17"
+    ],
+    "status": [
+      "claim_42505b11180633dcee17"
+    ],
+    "title": [
+      "claim_42505b11180633dcee17"
+    ]
+  },
+  "id": "mentor_8473aee75f850ad30fcb",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_42505b11180633dcee17"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王振"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cf828348838a8a5f3711",
+      "claim_ids": [
+        "claim_42505b11180633dcee17"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "https://js.chd.edu.cn/xxgcxy/wz7/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "MLPRNet: A Multi-Level Pixel Reconstruction Approach for Green Fruit Object Detection in Complex Orchard Environments",
+    "BAENet: driver distraction detection method based on binarised attention-enhanced network",
+    "Interaction-aware trajectory prediction with ego motion plan priors for autonomous driving",
+    "Driving Behavior Classification Method Based on Fourier Transformer Multimodal Fusion",
+    "Efficient Critical Data Generation Framework for Vision Sensors of Autonomous Vehicle Perception System",
+    "A Survey on Testbench‐Based Vehicle‐in‐the‐Loop Simulation Testing for Autonomous Vehicles: Architecture, Principle, and Equipment",
+    "Modelling Decentralised Mandatory Lane Change for Connected and Autonomous Vehicles: An Analytical Method",
+    "A Dynamic Cooperative Lane-Changing Model for Connected and Autonomous Vehicles with Possible Accelerations of a Preceding Vehicle"
+  ],
+  "research_directions": [
+    "智能网联汽车高精度定位、轨迹规划与控制、整车在环测试"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "https://js.chd.edu.cn/xxgcxy/wz7/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

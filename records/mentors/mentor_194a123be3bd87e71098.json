@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0a529186185a7f41dc22"
+      ],
+      "ended_at": null,
+      "id": "aff_68c0cd239c6099a5bc7a",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/cx101/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0a529186185a7f41dc22"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_68c0cd239c6099a5bc7a",
+      "claim_ids": [
+        "claim_0a529186185a7f41dc22"
+      ],
+      "is_primary": true,
+      "normalized_value": "xincheng@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/cx101/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xincheng@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0a529186185a7f41dc22"
+    ],
+    "email": [
+      "claim_0a529186185a7f41dc22"
+    ],
+    "name": [
+      "claim_0a529186185a7f41dc22"
+    ],
+    "profile_url": [
+      "claim_0a529186185a7f41dc22"
+    ],
+    "recent_papers": [
+      "claim_0a529186185a7f41dc22"
+    ],
+    "research_directions": [
+      "claim_0a529186185a7f41dc22"
+    ],
+    "status": [
+      "claim_0a529186185a7f41dc22"
+    ],
+    "title": [
+      "claim_0a529186185a7f41dc22"
+    ]
+  },
+  "id": "mentor_194a123be3bd87e71098",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0a529186185a7f41dc22"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "程鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_68c0cd239c6099a5bc7a",
+      "claim_ids": [
+        "claim_0a529186185a7f41dc22"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/cx101/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "3D Vehicle Object Tracking Algorithm Based on Bounding Box Similarity Measurement",
+    "A Highway Traffic Image Enhancement Algorithm Based on Improved GAN in Complex Weather Conditions",
+    "An improved RRT-Connect path planning algorithm of robotic arm for automatic sampling of exhaust emission detection in Industry 4.0",
+    "A Presentation Attack Detection Network Based on Dynamic Convolution and Multi-level Feature Fusion with Security and Reliability",
+    "基于体素柱形的激光雷达点云车辆目标检测算法",
+    "基于任务联合的三维车辆检测与跟踪集成算法",
+    "FDG-PointNet:融合密集连接和高斯距离的3D目标检测",
+    "融合注意力机制与时序特征的异常驾驶行为识别算法"
+  ],
+  "research_directions": [
+    "车辆与道路智能检测、自动驾驶与车路协同、人工智能与计算机视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/cx101/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

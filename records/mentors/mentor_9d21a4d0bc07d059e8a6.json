@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_d82a81547b12d63ce708"
+      ],
+      "ended_at": null,
+      "id": "aff_8642df1b2934b1d02aa0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/sqs/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_d82a81547b12d63ce708"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_8642df1b2934b1d02aa0",
+      "claim_ids": [
+        "claim_d82a81547b12d63ce708"
+      ],
+      "is_primary": true,
+      "normalized_value": "50917614@qq.com",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/sqs/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "50917614@qq.com"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_d82a81547b12d63ce708"
+    ],
+    "email": [
+      "claim_d82a81547b12d63ce708"
+    ],
+    "name": [
+      "claim_d82a81547b12d63ce708"
+    ],
+    "profile_url": [
+      "claim_d82a81547b12d63ce708"
+    ],
+    "recent_papers": [
+      "claim_d82a81547b12d63ce708"
+    ],
+    "research_directions": [
+      "claim_d82a81547b12d63ce708"
+    ],
+    "status": [
+      "claim_d82a81547b12d63ce708"
+    ],
+    "title": [
+      "claim_d82a81547b12d63ce708"
+    ]
+  },
+  "id": "mentor_9d21a4d0bc07d059e8a6",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_d82a81547b12d63ce708"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "宋青松"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_8642df1b2934b1d02aa0",
+      "claim_ids": [
+        "claim_d82a81547b12d63ce708"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/sqs/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Hybrid graph convolutional and deep convolutional networks for enhanced pavement crack detection",
+    "A three-stage pavement image crack detection framework with positive sample augmentation",
+    "Two-stage framework with improved U-Net based on self-supervised contrastive learning for pavement crack segmentation",
+    "Computer vision-based illumination-robust and multi-point simultaneous structural displacement measuring method",
+    "Robust principal component analysis and support vector machine for detection of microcracks with distributed optical fiber sensors",
+    "Micro-crack detection method of steel beam surface using stacked autoencoders on massive full-scale sensing strains",
+    "Deep learning method for detection of structural microcracks by brillouin scattering based distributed optical fiber sensors",
+    "Visual saliency–based image binarization approach for detection of surface microcracks by distributed optical fiber sensors"
+  ],
+  "research_directions": [
+    "人工智能、智能感知与决策"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/sqs/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

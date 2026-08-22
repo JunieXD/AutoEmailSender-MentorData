@@ -1,0 +1,111 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_0d899fddbc07c5b53f4d"
+      ],
+      "ended_at": null,
+      "id": "aff_18dc020ab95bc5b7b3fe",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/hrr/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_0d899fddbc07c5b53f4d"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_18dc020ab95bc5b7b3fe",
+      "claim_ids": [
+        "claim_0d899fddbc07c5b53f4d"
+      ],
+      "is_primary": true,
+      "normalized_value": "rrhao@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/hrr/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "rrhao@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_0d899fddbc07c5b53f4d"
+    ],
+    "email": [
+      "claim_0d899fddbc07c5b53f4d"
+    ],
+    "name": [
+      "claim_0d899fddbc07c5b53f4d"
+    ],
+    "profile_url": [
+      "claim_0d899fddbc07c5b53f4d"
+    ],
+    "recent_papers": [
+      "claim_0d899fddbc07c5b53f4d"
+    ],
+    "research_directions": [
+      "claim_0d899fddbc07c5b53f4d"
+    ],
+    "status": [
+      "claim_0d899fddbc07c5b53f4d"
+    ],
+    "title": [
+      "claim_0d899fddbc07c5b53f4d"
+    ]
+  },
+  "id": "mentor_e9e45420b39d21049d58",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_0d899fddbc07c5b53f4d"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "郝茹茹"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_18dc020ab95bc5b7b3fe",
+      "claim_ids": [
+        "claim_0d899fddbc07c5b53f4d"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/hrr/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Simulation Verification for Automobile Anti-lock Braking System Bench Test Principle. International Journal of Information Technology and Management, Vol.19, Nos.2-3:220-239, 2020.3.",
+    "Driving Behavior Evaluation Model Base on Big Data from Internet of Vehicles. International Journal of Ambient Computing and Intelligence. 2019.10, vol.10(4):78-95.",
+    "New Runge-Kutta type symmetric two step finite difference pair with improved properties for second order initial and/or boundary value problems. Journal of Mathematical Chemistry, 2018.11, vol.56(10):3014-3044.",
+    "Novel bench-based inspection approach for automobile anti-lock braking system, International Journal of Automotive Technology, 2018.10, vol.19(5):825-836.",
+    "Modelling for ABS Bench Detection Method. 2017 International Conference on Applied Mathematics, Modelling and Statistics Application (AMMSA 2017), Advances in Intelligent Systems Research (AISR), 2017.5, vol.141: 432-434.",
+    "Improved algorithm based on block iteration for ultrasonic computerized tomography on concrete. Journal of Information and Computational Science,2015.7.20,vol.12(11):4377-4384.",
+    "One-dimensional cellular automaton traffic flow model based on driving rules. Journal of Information and Computational Science, 2015.3.20, vol.12(5): 1845-1853.",
+    "Three-dimensional Vehicle Attitude Estimation Using Modified Invasive Weed Optimized Particle Filter, International Journal of Automotive Technology, 2014.12, vol.15(7):1143-1154."
+  ],
+  "research_directions": [
+    "主要从事分布式计算机网络测控技术、交通智能检测与控制技术、车联网技术、智能网联汽车等相关方向的研究,具体研究内容有:1. 汽车安全/综合/环保性能检测技术",
+    "2. 智能汽车测试场景生成",
+    "3. 车辆生态驾驶行为优化与控制",
+    "4. 交叉口协同优化控制",
+    "5. 信号灯动态配时优化"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/hrr/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

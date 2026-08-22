@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f05d0998c66329c957cd"
+      ],
+      "ended_at": null,
+      "id": "aff_6c34d33d772e49767239",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "https://js.chd.edu.cn/xxgcxy/spp/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_f05d0998c66329c957cd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_6c34d33d772e49767239",
+      "claim_ids": [
+        "claim_f05d0998c66329c957cd"
+      ],
+      "is_primary": true,
+      "normalized_value": "pengpeng.sun@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "https://js.chd.edu.cn/xxgcxy/spp/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "pengpeng.sun@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f05d0998c66329c957cd"
+    ],
+    "email": [
+      "claim_f05d0998c66329c957cd"
+    ],
+    "name": [
+      "claim_f05d0998c66329c957cd"
+    ],
+    "profile_url": [
+      "claim_f05d0998c66329c957cd"
+    ],
+    "recent_papers": [
+      "claim_f05d0998c66329c957cd"
+    ],
+    "research_directions": [
+      "claim_f05d0998c66329c957cd"
+    ],
+    "status": [
+      "claim_f05d0998c66329c957cd"
+    ],
+    "title": [
+      "claim_f05d0998c66329c957cd"
+    ]
+  },
+  "id": "mentor_c52c6ad3b9ec78f2b101",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f05d0998c66329c957cd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "孙朋朋"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_6c34d33d772e49767239",
+      "claim_ids": [
+        "claim_f05d0998c66329c957cd"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "https://js.chd.edu.cn/xxgcxy/spp/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "C. Sun,P. Sun*, J. Wang, Y. Guo and X. Zhao.Weather-Robust LiDAR Perception: Point Cloud Restoration from Adverse Weather. 2026,AAAI. (CCF-A, 人工智能顶会)",
+    "X. Zhao, C. Sun andP. Sun*, A Parametric-Adaptive Filter for Improving LiDAR Performance Under Snowfall Conditions, in IEEE Transactions on Intelligent Transportation Systems, doi: 10.1109/TITS.2026.3665537. 2026, (中科院一区 TOP)",
+    "C. Sun,P. Sun*, J. Wang, Y. Guo and X. Zhao, Understanding LiDAR Performance for Autonomous Vehicles Under Snowfall Conditions[J], IEEE Transactions on Intelligent Transportation Systems,2024.11. (中科院一区 TOP)",
+    "Sun P,Sun C, Wan L, et al. Objects Detection With 3-D Roadside LIDAR Under Snowy Weather[J]. IEEE Sensors Journal, 2022, 22(23): 23051-23063. (中科院二区 TOP)",
+    "Sun P,Sun C, Wang R, et al. Object detection based on roadside LiDAR for cooperative driving automation: a review[J]. Sensors, 2022, 22(23): 9316.",
+    "孙朋朋,赵祥模,蒋渊德,文舜智,闵海根.降雨条件对车载激光雷达性能影响的试验研究[J].中国公路学报,2022,35(11):318-328.DOI:10.19721/j.cnki.1001-7372.2022.11.027.",
+    "蒋渊德,孙朋朋,秦孔建,闵海根,赵祥模,杨智博,徐志刚.雨雪天气对自动驾驶视觉图像质量的影响[J].中国公路学报,2022,35(03):307-316.",
+    "万凌峰,孙朋朋*,赵祥模,文舜智.考虑路侧激光雷达摆动的背景建模及动态更新方法[J].汽车技术,2022(08):54-62."
+  ],
+  "research_directions": [
+    "智能驾驶、车路协同关键技术(以感知为主),云控感知能力建模、混合交通流下交通状态估计及交通流预测方法研究,三维激光雷达点云处理、点云与图像等多模态感知"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "https://js.chd.edu.cn/xxgcxy/spp/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

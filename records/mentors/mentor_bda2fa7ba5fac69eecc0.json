@@ -1,0 +1,96 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_f00fb7a6bf334f0d46b9"
+      ],
+      "ended_at": null,
+      "id": "aff_bbf6c4194ae09ad323d6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/hc/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_f00fb7a6bf334f0d46b9"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_bbf6c4194ae09ad323d6",
+      "claim_ids": [
+        "claim_f00fb7a6bf334f0d46b9"
+      ],
+      "is_primary": true,
+      "normalized_value": "chaohuai@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/hc/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "chaohuai@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_f00fb7a6bf334f0d46b9"
+    ],
+    "email": [
+      "claim_f00fb7a6bf334f0d46b9"
+    ],
+    "name": [
+      "claim_f00fb7a6bf334f0d46b9"
+    ],
+    "profile_url": [
+      "claim_f00fb7a6bf334f0d46b9"
+    ],
+    "recent_papers": [
+      "claim_f00fb7a6bf334f0d46b9"
+    ],
+    "status": [
+      "claim_f00fb7a6bf334f0d46b9"
+    ],
+    "title": [
+      "claim_f00fb7a6bf334f0d46b9"
+    ]
+  },
+  "id": "mentor_bda2fa7ba5fac69eecc0",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_f00fb7a6bf334f0d46b9"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "怀婵"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_bbf6c4194ae09ad323d6",
+      "claim_ids": [
+        "claim_f00fb7a6bf334f0d46b9"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/hc/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "《指纹认证技术在远程网络教育平台中的应用》",
+    "《计算机软件工程教育分析和改革建议》"
+  ],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/hc/list.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:52:08Z"
+}
