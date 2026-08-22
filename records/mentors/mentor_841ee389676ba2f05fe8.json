@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6b324bb078ffcf3722ea"
+      ],
+      "ended_at": null,
+      "id": "aff_ae58f3b74af5f7f74e41",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/mjy/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6b324bb078ffcf3722ea"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_ae58f3b74af5f7f74e41",
+      "claim_ids": [
+        "claim_6b324bb078ffcf3722ea"
+      ],
+      "is_primary": true,
+      "normalized_value": "majy@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/mjy/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "majy@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6b324bb078ffcf3722ea"
+    ],
+    "email": [
+      "claim_6b324bb078ffcf3722ea"
+    ],
+    "name": [
+      "claim_6b324bb078ffcf3722ea"
+    ],
+    "profile_url": [
+      "claim_6b324bb078ffcf3722ea"
+    ],
+    "recent_papers": [
+      "claim_6b324bb078ffcf3722ea"
+    ],
+    "research_directions": [
+      "claim_6b324bb078ffcf3722ea"
+    ],
+    "status": [
+      "claim_6b324bb078ffcf3722ea"
+    ],
+    "title": [
+      "claim_6b324bb078ffcf3722ea"
+    ]
+  },
+  "id": "mentor_841ee389676ba2f05fe8",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6b324bb078ffcf3722ea"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "马峻岩"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_ae58f3b74af5f7f74e41",
+      "claim_ids": [
+        "claim_6b324bb078ffcf3722ea"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/mjy/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Shujia Miao,Junyan Ma*, Wenjun Chen. CrashKG: Modeling and Application of Temporal Knowledge Graphs for Traffic Accident Reports Assisted by Large Language Models. The 26th COTA International Conference of Transportation Professionals (CICTP 2026), Jinan, China.",
+    "Fujun Wang,Junyan Ma*. A Benchmark for Cooperative Control in Mixed Traffic Environment. The 26th COTA International Conference of Transportation Professionals (CICTP 2026), Jinan, China.",
+    "Xinrong, Li, Youquan Liu,Junyan Ma. Template Matching Based Automated Test Scenarios Construction for Vehicle-Infrastructure Cooperative System. The 26th COTA International Conference of Transportation Professionals (CICTP 2026), Jinan, China.",
+    "Weiye He,Junyan Ma*. JDFuzz: A Hardware-Software Approach for Accelerating Fuzzing Embedded Systems(WIP). International Conference on Hardware/Software Codesign and System Synthesis (CODES+ISSS 2025), Taipei, China. (CCF B)",
+    "Pin Wang,Junyan Ma*. Risk2Scenario: LLM-Assisted Scenario Generation for Autonomous Driving Testing Based on Hierarchical Risk Analysis. International Conference on Computer Systems (ICCS 2025), Xi'an, China.",
+    "MUHAMMAD UMER ABBASI,Junyan Ma*. Acr2Xodr: From Accident Reports to OpenDRIVE - Road Scenario Generation Using Large Language Models. International Conference on Computer Systems (ICCS 2025), Xi'an, China.",
+    "Te Zhang, Yugang Wang,Junyan Ma, et. al. LogOracle: A Declarative Language for Log Pattern Validation (Industrial Track). International Conference on Software Quality, Reliability and Security (QRS2025), Hangzhou, China. (CCF C)",
+    "Zhongwen Feng,Junyan Ma*. TWFuzz: Fuzzing Embedded Systems with Three Wires. the 25th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES 2024), Copenhagen, Denmark. (CCF B)"
+  ],
+  "research_directions": [
+    "嵌入式系统与软件、智能车路系统、自动驾驶系统仿真测试与验证、FPGA加速的物联网固件模糊测试方法、智能网联环境下新型混合交通流管控"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/mjy/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

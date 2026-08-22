@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_04028bb40d55db0778f7"
+      ],
+      "ended_at": null,
+      "id": "aff_cfdcefa0a090fa2a4035",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_d9eab9fda2c18b8acd85",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/tl/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_04028bb40d55db0778f7"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_cfdcefa0a090fa2a4035",
+      "claim_ids": [
+        "claim_04028bb40d55db0778f7"
+      ],
+      "is_primary": true,
+      "normalized_value": "tanglei24@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/tl/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "tanglei24@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_04028bb40d55db0778f7"
+    ],
+    "email": [
+      "claim_04028bb40d55db0778f7"
+    ],
+    "name": [
+      "claim_04028bb40d55db0778f7"
+    ],
+    "profile_url": [
+      "claim_04028bb40d55db0778f7"
+    ],
+    "recent_papers": [
+      "claim_04028bb40d55db0778f7"
+    ],
+    "research_directions": [
+      "claim_04028bb40d55db0778f7"
+    ],
+    "status": [
+      "claim_04028bb40d55db0778f7"
+    ],
+    "title": [
+      "claim_04028bb40d55db0778f7"
+    ]
+  },
+  "id": "mentor_865b51af29414d5fe46c",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_04028bb40d55db0778f7"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "唐蕾"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_cfdcefa0a090fa2a4035",
+      "claim_ids": [
+        "claim_04028bb40d55db0778f7"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/tl/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhengxin Cao, Lei Tang, Xin Zhou et al., VLGeo: Bridging Viewpoints in UAV-View Geo-Localization Using A Large Vision-Language Model, in IEEE Transactions on Geoscience and Remote Sensing, doi: 10.1109/TGRS.2026.3680280. 2026. (CCF-A)",
+    "Yaling Zhao, Lei Tang, Yunji Liang, Zeyu He, and Junchi Ma. 2025. Optimizing Matching for On-Demand Ride-Pooling with Stochastic Day-to-Day Dynamics. ACM Trans. Knowl. Discov. Data 19, 4, Article 83 (May 2025), 29 pages. https://doi.org/10.1145/3721434 (CCF-B)",
+    "Tang, Lei, Cao, Zhengxin, Zhou, Xin, Zhang, Junzhe, Ma, Junchi, STF-LPPVA: Local Privacy-Preserving Method for Vehicle Assignment Based on Spatial–Temporal Fusion, IET Information Security, 2025, 1915019, 14 pages, 2025. https://doi.org/10.1049/ise2/1915019 (CCF-C)",
+    "Tang, Lei; Wang, Ruijie; Liu, Zhanwen; Liang, Yunji; Niu, Yuanyuan; Zhu, Wei; Duan, ZongTao,Scenario-based Accelerated Testing for SOTIF in Autonomous Driving: A Review.IEEE Internet of Things Journal.Accept, 2024. (SCI 1区,TOP期刊,CCF-C,IF:8.2)",
+    "Benbei Xing, Lei Tang, Junchi Ma.VRPU: An Efficient Robust Optimization Approach for the Vehicle Routing Problem with Uncertain Travel Times and Demands.The 20th International Conference on Mobility, Sensing and Networking (MSN 2024). (CCF-C)",
+    "L.Tang, Z. Hang, R. Zhang, Z.Duan and Y. Liang, Personalized Ranking using Attributed Network Embedding for Pooling. IEEE Transactions on Intelligent Transportation Systems. doi: 10.1109/TITS.2021.3113661. (SCI 1区, TOP期刊,CCF-B,IF:6.492)",
+    "ZW.Wang, L.Tang, YL.Zhao, Algorithm for Integrating Multi-Proximity for Trust-Based Group Recommendation in Ridesharing. The 25th IEEE International Conference on Intelligent Transportation Systems (IEEE ITSC 2022). (智能交通顶会)",
+    "L. Tang, Z. Duan, Y. Zhu, J. Ma and Z. Liu, Recommendation for Ridesharing Groups Through Destination Prediction on Trajectory Data.IEEE Transactions on Intelligent Transportation Systems. doi: 10.1109/TITS.2019.2961170. (SCI 1区, TOP期刊,CCF-B,IF:5.744)"
+  ],
+  "research_directions": [
+    "自动驾驶高危场景生成与数字孪生评测:旨在提高自动驾驶汽车安全性。通过模拟复杂、罕见或危险的行驶环境,创建数字孪生测试环境,模拟车辆在现实世界中的行为和性能,在虚拟环境中测试和优化自动驾驶系统。车路协同感知与自主决策:使用车载和路侧传感器、摄像头、雷达、激光雷达(LiDAR)等设备来收集车辆周围环境的数据,基于此进行多模态信息融合与时空对齐,提升车辆的场景理解能力。通过优化算法开发决策系统,实现自主导航、避障、路径规划、速度控制。多网联车对抗博弈与运力调控:旨在探讨智能网联车辆(ICV)在复杂交通环境中的交互行为、决策优化和网络化协同控制,包括使用博弈论来模拟和优化车辆在交叉口等场景中的交互行为,通过车辆之间的协作博弈来提高交通流的效率和安全性。项目组研发了支持大规模(共享)出行的车辆调度仿真环境,开发了分布式车辆调度、动态随机需求下鲁棒调度、开放交通环境下车辆混合博弈等研究工作。复杂干扰环境下弱小目标跟踪与轨迹预测:在复杂干扰环境下,弱小目标跟踪与轨迹预测技术对于无人机侦查任务至关重要。这项技术可以帮助无人机在气流、大风、雾霾、阴雨等自然因素干扰下,准确进行跟踪并进一步预测出行人、车辆等远距离弱小目标的运动轨迹,减少目标检测错误和跟踪丢失的风险。项目组结合可见光和激光雷达等传感器采集的图像与点云数据,利用多模态信息融合技术,提升弱小目标运动轨迹的预测精度。智能无人系统视觉定位与自主避障:视觉导航由于其结构简单、抗干扰能力强,被广泛应用。但受其传感器成像特征影响,各类视觉传感器均存在其应用弊端。项目组搭建了无人系统飞行与防撞的深度强化学习环境,研究可见光与红外图像匹配与视觉定位算法,实现不同环境下视觉导航功能。可支持无人系统能够在卫星拒止情况下进行自主飞行,并构建三维环境地图",
+    "研究基于人工智能的飞行器防撞与路径规划算法,实现飞行器之间的自主防撞。"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/tl/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

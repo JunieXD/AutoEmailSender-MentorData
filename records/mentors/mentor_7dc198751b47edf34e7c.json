@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_e8e3a3bb72fd1997a147"
+      ],
+      "ended_at": null,
+      "id": "aff_9f4eef39316c6f7c72a0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_3b5ab7ad25877e002450",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/fpf/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_e8e3a3bb72fd1997a147"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9f4eef39316c6f7c72a0",
+      "claim_ids": [
+        "claim_e8e3a3bb72fd1997a147"
+      ],
+      "is_primary": true,
+      "normalized_value": "fpf@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/fpf/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "fpf@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_e8e3a3bb72fd1997a147"
+    ],
+    "email": [
+      "claim_e8e3a3bb72fd1997a147"
+    ],
+    "name": [
+      "claim_e8e3a3bb72fd1997a147"
+    ],
+    "profile_url": [
+      "claim_e8e3a3bb72fd1997a147"
+    ],
+    "research_directions": [
+      "claim_e8e3a3bb72fd1997a147"
+    ],
+    "status": [
+      "claim_e8e3a3bb72fd1997a147"
+    ],
+    "title": [
+      "claim_e8e3a3bb72fd1997a147"
+    ]
+  },
+  "id": "mentor_7dc198751b47edf34e7c",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_e8e3a3bb72fd1997a147"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "傅攀峰"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9f4eef39316c6f7c72a0",
+      "claim_ids": [
+        "claim_e8e3a3bb72fd1997a147"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/fpf/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "系统评价、无线传输、信息处理"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/fpf/list.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

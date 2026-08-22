@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_6c80d000112a1c29e874"
+      ],
+      "ended_at": null,
+      "id": "aff_a921bb4b13a8ed1ceec7",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_fa05a23ebc3a10b954b9",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/ays/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_6c80d000112a1c29e874"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a921bb4b13a8ed1ceec7",
+      "claim_ids": [
+        "claim_6c80d000112a1c29e874"
+      ],
+      "is_primary": true,
+      "normalized_value": "aysm@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/ays/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "aysm@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_6c80d000112a1c29e874"
+    ],
+    "email": [
+      "claim_6c80d000112a1c29e874"
+    ],
+    "name": [
+      "claim_6c80d000112a1c29e874"
+    ],
+    "profile_url": [
+      "claim_6c80d000112a1c29e874"
+    ],
+    "recent_papers": [
+      "claim_6c80d000112a1c29e874"
+    ],
+    "research_directions": [
+      "claim_6c80d000112a1c29e874"
+    ],
+    "status": [
+      "claim_6c80d000112a1c29e874"
+    ],
+    "title": [
+      "claim_6c80d000112a1c29e874"
+    ]
+  },
+  "id": "mentor_719a641cdb4a4208aae0",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_6c80d000112a1c29e874"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "安毅生"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a921bb4b13a8ed1ceec7",
+      "claim_ids": [
+        "claim_6c80d000112a1c29e874"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/ays/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "X. Chen, Y. Kong,Y. An*, C. Mu, Y. Li and X. Zhao, Optimizing Cooperative Off-Ramp Diverging for Connected and Automated Vehicles,inIEEE Transactions on Vehicular Technology,2025. (中科院2区,IF=7.1)",
+    "C. Mu, L. Du,Y. An,et al, Compliance-constrained Resilient System Optimal Trajectory Planning for CAVs at On-ramp Intersection with Multiple Lanes, in Transportation Research Part B: Methodological, vol. 194, 2025. (领域顶级期刊,中科院1区Top, IF=6.1)",
+    "Y. Kong,C. Mu, X. Chen, Y. Wei,Y. An*, et al, Petri Net-Aided Iterative Trajectory Optimization for Multi-CAV Coordination at Unsignalized Intersections, in IEEE Transactions on Intelligent Transportation Systems,2025. (中科院2区,IF=7.9)",
+    "J. Zhu, F. Chen, S. Liu, Y. An*, et al, Multi-Objective Planning Optimization of Electric Vehicle Charging Stations With Coordinated Spatiotemporal Charging Demand, in IEEE Transactions on Intelligent Transportation Systems, vol. 26, pp. 1754-1768, 2025. (领域顶级期刊,中科院1区Top,CCF B类期刊,IF=8.5)",
+    "H. Ning, H. Zhu, Y. An*,et al, Modeling and functional verification of autonomous emergency braking systems based on extended colored hybrid petri nets, inSimulation Modelling Practice and Theory,2025.",
+    "Y. Xiao, Y. An*, T. Li, et al, Autonomous Driving Policy Learning from Demonstration Using Regression Loss Function, in Knowledge-Based Systems, vol. 295, 2024. (领域顶级期刊,中科院1区Top,IF=8.0)",
+    "Z. Ren,S. Liu, Y. An*, et al, A Blockchain-based Data Storage Architecture for Internet of Vehicles: Delay-Aware Consensus and Data Query Algorithms, in Vehicular Communications, vol. 47, 2024. (中科院2区,IF=6.7)",
+    "刘树美,安毅生*,慕晨等.车联网中时延感知的依赖任务调度与计算卸载策略.中国公路学报, 37(9):221-235, 2024."
+  ],
+  "research_directions": [
+    "自动驾驶系统测试、交通流建模与仿真、数字孪生系统构建、离散事件系统建模与应用、Petri网理论与应用、网络协议的建模与验证、软件系统建模、实时系统的建模与验证、智能车路协同系统、车联网与智能交通系统、智能驾驶决策与控制、交叉口交通组织优化、车载边缘计算资源调度"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/ays/list.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}

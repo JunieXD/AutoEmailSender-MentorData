@@ -1,0 +1,106 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_8fc128cd2b5838de8d89"
+      ],
+      "ended_at": null,
+      "id": "aff_a477b33804cf35e455b0",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:52:08Z",
+      "organization_id": "org_auto_3b5ab7ad25877e002450",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/wxd/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_8fc128cd2b5838de8d89"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a477b33804cf35e455b0",
+      "claim_ids": [
+        "claim_8fc128cd2b5838de8d89"
+      ],
+      "is_primary": true,
+      "normalized_value": "xdwu@chd.edu.cn",
+      "observed_at": "2026-08-21T18:52:08Z",
+      "source_url": "http://js.chd.edu.cn/xxgcxy/wxd/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "xdwu@chd.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:52:08Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_8fc128cd2b5838de8d89"
+    ],
+    "email": [
+      "claim_8fc128cd2b5838de8d89"
+    ],
+    "name": [
+      "claim_8fc128cd2b5838de8d89"
+    ],
+    "profile_url": [
+      "claim_8fc128cd2b5838de8d89"
+    ],
+    "recent_papers": [
+      "claim_8fc128cd2b5838de8d89"
+    ],
+    "research_directions": [
+      "claim_8fc128cd2b5838de8d89"
+    ],
+    "status": [
+      "claim_8fc128cd2b5838de8d89"
+    ],
+    "title": [
+      "claim_8fc128cd2b5838de8d89"
+    ]
+  },
+  "id": "mentor_8d754f02308094708a65",
+  "last_verified_at": "2026-08-21T18:52:08Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_8fc128cd2b5838de8d89"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴向东"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a477b33804cf35e455b0",
+      "claim_ids": [
+        "claim_8fc128cd2b5838de8d89"
+      ],
+      "observed_at": "2026-08-21T18:52:08Z",
+      "status": "current",
+      "url": "http://js.chd.edu.cn/xxgcxy/wxd/list.htm"
+    }
+  ],
+  "recent_papers": [
+    "吴向东,马仑,和洁. 基于聚焦预处理的累量域空间平滑算法,系统工程与电子技术,2015,(37)8:1729-1733.",
+    "吴向东,马仑,梁中华.基于波束域的米波雷达低仰角波达方向估计,电波科学学报,2014,(26)6:1147-1152.",
+    "吴向东,赵永波,张守宏,董玫.利用改进的Toeplitz化技术实现米波雷达低仰角测高,电子与信息学报,2010,32(3):570-574.",
+    "吴向东,马仑,梁中华.一种改进的加权空间平滑算法,数据采集与处理,2015(30)4:824-829.",
+    "吴向东,存在互耦误差条件下米波雷达低仰角测高算法,信号处理,2010(26)9:1341-1348."
+  ],
+  "research_directions": [
+    "机器学习、深度学习在无人驾驶、图像目标检测与识别中的应用",
+    "无线传感器网络在信息感知、交通中的应用研究",
+    "雷达信号处理,阵列信号处理在目标检测、参数估计方面的研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:52:08Z",
+  "status_reason": null,
+  "status_source_url": "http://js.chd.edu.cn/xxgcxy/wxd/list.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:52:08Z"
+}
