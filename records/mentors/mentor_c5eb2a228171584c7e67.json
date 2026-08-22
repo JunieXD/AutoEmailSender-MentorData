@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a38709d848c8088b0741"
+      ],
+      "ended_at": null,
+      "id": "aff_9d9677ca9bc76c333dd9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:57Z",
+      "organization_id": "org_auto_2aed60b2b43b2e9ece33",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1403/12154.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_a38709d848c8088b0741"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_9d9677ca9bc76c333dd9",
+      "claim_ids": [
+        "claim_a38709d848c8088b0741"
+      ],
+      "is_primary": true,
+      "normalized_value": "lw.zhang@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:44:57Z",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1403/12154.htm",
+      "status": "current",
+      "type": "email",
+      "value": "lw.zhang@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a38709d848c8088b0741"
+    ],
+    "email": [
+      "claim_a38709d848c8088b0741"
+    ],
+    "name": [
+      "claim_a38709d848c8088b0741"
+    ],
+    "profile_url": [
+      "claim_a38709d848c8088b0741"
+    ],
+    "research_directions": [
+      "claim_a38709d848c8088b0741"
+    ],
+    "status": [
+      "claim_a38709d848c8088b0741"
+    ],
+    "title": [
+      "claim_a38709d848c8088b0741"
+    ]
+  },
+  "id": "mentor_c5eb2a228171584c7e67",
+  "last_verified_at": "2026-08-21T18:44:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a38709d848c8088b0741"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张立伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_9d9677ca9bc76c333dd9",
+      "claim_ids": [
+        "claim_a38709d848c8088b0741"
+      ],
+      "observed_at": "2026-08-21T18:44:57Z",
+      "status": "current",
+      "url": "https://jxxy.fzu.edu.cn/info/1403/12154.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "人形机器人、地面移动机器人、机器人操作系统、机器人学习、多机器人系统、机器视觉"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:57Z",
+  "status_reason": null,
+  "status_source_url": "https://jxxy.fzu.edu.cn/info/1403/12154.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:57Z"
+}

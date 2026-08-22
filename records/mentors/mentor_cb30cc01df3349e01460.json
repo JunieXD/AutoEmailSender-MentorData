@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3de58ddd5fecd15237a1"
+      ],
+      "ended_at": null,
+      "id": "aff_4d09d49bfa8ec54c37d1",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:57Z",
+      "organization_id": "org_auto_2aed60b2b43b2e9ece33",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1404/11940.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3de58ddd5fecd15237a1"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4d09d49bfa8ec54c37d1",
+      "claim_ids": [
+        "claim_3de58ddd5fecd15237a1"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuchong@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:44:57Z",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1404/11940.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wuchong@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3de58ddd5fecd15237a1"
+    ],
+    "email": [
+      "claim_3de58ddd5fecd15237a1"
+    ],
+    "name": [
+      "claim_3de58ddd5fecd15237a1"
+    ],
+    "profile_url": [
+      "claim_3de58ddd5fecd15237a1"
+    ],
+    "recent_papers": [
+      "claim_3de58ddd5fecd15237a1"
+    ],
+    "research_directions": [
+      "claim_3de58ddd5fecd15237a1"
+    ],
+    "status": [
+      "claim_3de58ddd5fecd15237a1"
+    ],
+    "title": [
+      "claim_3de58ddd5fecd15237a1"
+    ]
+  },
+  "id": "mentor_cb30cc01df3349e01460",
+  "last_verified_at": "2026-08-21T18:44:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3de58ddd5fecd15237a1"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "武翀"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4d09d49bfa8ec54c37d1",
+      "claim_ids": [
+        "claim_3de58ddd5fecd15237a1"
+      ],
+      "observed_at": "2026-08-21T18:44:57Z",
+      "status": "current",
+      "url": "https://jxxy.fzu.edu.cn/info/1404/11940.htm"
+    }
+  ],
+  "recent_papers": [
+    "RF-SLAM: Simultaneous UHF-RFID Tags Mapping and Robot Localization Algorithm for Smart Warehouse Position Service",
+    "A UHF RFID-Based Dynamic Object Following Method for a Mobile Robot Using Phase Difference Information",
+    "RFID Tag Classification for False-positive Reads Identification via Deep Learning with Multidimensional Signal Fusion",
+    "A Lightweight Combined Ferrite-Core Segmented RFID Tag Antenna for Underground Applications",
+    "An Improved Phase-Unwrapping Method for Unwrapped Phase based RFID Localization"
+  ],
+  "research_directions": [
+    "机器人多模态感知技术、具身智能技术、无线定位技术"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:57Z",
+  "status_reason": null,
+  "status_source_url": "https://jxxy.fzu.edu.cn/info/1404/11940.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:44:57Z"
+}

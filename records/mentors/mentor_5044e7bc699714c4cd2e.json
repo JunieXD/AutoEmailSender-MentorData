@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1cc445e3e46a2ff12227"
+      ],
+      "ended_at": null,
+      "id": "aff_a8144e60e1f7fb7f80e9",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:57Z",
+      "organization_id": "org_auto_9115589e3199ac1f3d33",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1388/11768.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_1cc445e3e46a2ff12227"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_a8144e60e1f7fb7f80e9",
+      "claim_ids": [
+        "claim_1cc445e3e46a2ff12227"
+      ],
+      "is_primary": true,
+      "normalized_value": "zychen@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:44:57Z",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1388/11768.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zychen@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1cc445e3e46a2ff12227"
+    ],
+    "email": [
+      "claim_1cc445e3e46a2ff12227"
+    ],
+    "name": [
+      "claim_1cc445e3e46a2ff12227"
+    ],
+    "profile_url": [
+      "claim_1cc445e3e46a2ff12227"
+    ],
+    "recent_papers": [
+      "claim_1cc445e3e46a2ff12227"
+    ],
+    "research_directions": [
+      "claim_1cc445e3e46a2ff12227"
+    ],
+    "status": [
+      "claim_1cc445e3e46a2ff12227"
+    ],
+    "title": [
+      "claim_1cc445e3e46a2ff12227"
+    ]
+  },
+  "id": "mentor_5044e7bc699714c4cd2e",
+  "last_verified_at": "2026-08-21T18:44:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1cc445e3e46a2ff12227"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈志勇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_a8144e60e1f7fb7f80e9",
+      "claim_ids": [
+        "claim_1cc445e3e46a2ff12227"
+      ],
+      "observed_at": "2026-08-21T18:44:57Z",
+      "status": "current",
+      "url": "https://jxxy.fzu.edu.cn/info/1388/11768.htm"
+    }
+  ],
+  "recent_papers": [
+    "陈志勇, 李攀, 叶明旭, 林歆悠. 自动驾驶电动车辆基于参数预测的径向基函数神经网络自适应控制. 中国机械工程, 2024, 35(6): 982-992.",
+    "Xinyou Lin, Zhiyong Chen, Jiajin Zhang, Chaoyu Wu. A Multi‐objective Optimization Control Strategy of a Range‐Extended Electric Vehicle for the Trip Range and Road Gradient Adaption. International Journal of Automotive Technology, 2024, 25(1): 131-145.",
+    "Xinyou Lin, Xiankang Chen, Zhiyong Chen, Liping Xie. Stochastic Model Predictive Control Strategy with Short-Term Forecast Optimal SOC for a Plug-In Hybrid Electric Vehicle. IEEE Transactions on Transportation Electrification, 2024, 10(4):8685-8697.",
+    "Xinyou Lin, Xiankang Chen, Zhiyong Chen, Jiayun Wu. Ecological Approach and Departure-Driving Strategy Optimized by Using Syncretic Learning with Trapezoidal Collocation Algorithm for the Plug-In Hybrid Electric Vehicles. Energy Technology, 2024, 12: 2301290.",
+    "Xinyou Lin, Tianfeng Wang, Songrong Zeng, Zhiyong Chen, Liping Xie. Autonomous Vehicles Lane-Changing Trajectory Planning Based on Hierarchical Decoupling. IEEE Transactions on Intelligent Transportation Systems, 2024, 25(12): 20741-20752.",
+    "Xinyou Lin, Jiawang Huang, Biao Zhang, Binhao Zhou, Zhiyong Chen. A Velocity Adaptive Steering Control Strategy of Autonomous Vehicle Based on Double Deep Q-learning Network with Varied Agents. Engineering Applications of Artificial Intelligence, 2025, 139: 109655.",
+    "陈志勇, 吴精华. 基于目标导向采样的机器人改进概率路图法研究. 农业机械学报, 2023,54(6): 410-418(+426).",
+    "陈志勇, 黄泽麟, 曾德财, 于潇雁. 复杂环境下六自由度机械臂路径规划的Biased-RRT修正算法. 福州大学学报(自然科学版), 2022,50(5): 658-666."
+  ],
+  "research_directions": [
+    "机器人轨迹规划与智能控制、智能车辆的轨迹追踪控制、基于机器视觉的目标识别、定位"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:57Z",
+  "status_reason": null,
+  "status_source_url": "https://jxxy.fzu.edu.cn/info/1388/11768.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:44:57Z"
+}

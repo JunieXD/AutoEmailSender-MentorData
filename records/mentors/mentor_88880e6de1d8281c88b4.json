@@ -1,0 +1,101 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_bbbe64e7b05f53179181"
+      ],
+      "ended_at": null,
+      "id": "aff_c5220bd1d4ac9fdc7098",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:57Z",
+      "organization_id": "org_auto_f7bfe5c50e8a9c3e68ae",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1391/12054.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_bbbe64e7b05f53179181"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_c5220bd1d4ac9fdc7098",
+      "claim_ids": [
+        "claim_bbbe64e7b05f53179181"
+      ],
+      "is_primary": true,
+      "normalized_value": "shu@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:44:57Z",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1391/12054.htm",
+      "status": "current",
+      "type": "email",
+      "value": "shu@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_bbbe64e7b05f53179181"
+    ],
+    "email": [
+      "claim_bbbe64e7b05f53179181"
+    ],
+    "name": [
+      "claim_bbbe64e7b05f53179181"
+    ],
+    "profile_url": [
+      "claim_bbbe64e7b05f53179181"
+    ],
+    "recent_papers": [
+      "claim_bbbe64e7b05f53179181"
+    ],
+    "research_directions": [
+      "claim_bbbe64e7b05f53179181"
+    ],
+    "status": [
+      "claim_bbbe64e7b05f53179181"
+    ]
+  },
+  "id": "mentor_88880e6de1d8281c88b4",
+  "last_verified_at": "2026-08-21T18:44:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_bbbe64e7b05f53179181"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王舒"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_c5220bd1d4ac9fdc7098",
+      "claim_ids": [
+        "claim_bbbe64e7b05f53179181"
+      ],
+      "observed_at": "2026-08-21T18:44:57Z",
+      "status": "current",
+      "url": "https://jxxy.fzu.edu.cn/info/1391/12054.htm"
+    }
+  ],
+  "recent_papers": [
+    "Nature Communications, 2023, 14: 5393",
+    "Light: Science & Applications, 2024, 13: 254",
+    "Theranostics, 2022, 12: 6595-6610",
+    "Advanced Science, 2026, 11: 104051",
+    "Medical Image Analysis, 2026, e75709"
+  ],
+  "research_directions": [
+    "多模态多光子智能成像及应用、多模态光学成像、人工智能交叉学科研究"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:57Z",
+  "status_reason": null,
+  "status_source_url": "https://jxxy.fzu.edu.cn/info/1391/12054.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:44:57Z"
+}

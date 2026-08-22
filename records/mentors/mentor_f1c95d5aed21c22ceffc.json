@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3c4318835f7a4a097606"
+      ],
+      "ended_at": null,
+      "id": "aff_f75a52d1b112e6385784",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:57Z",
+      "organization_id": "org_auto_9115589e3199ac1f3d33",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1387/11673.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3c4318835f7a4a097606"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_f75a52d1b112e6385784",
+      "claim_ids": [
+        "claim_3c4318835f7a4a097606"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhugy@fzu.edu.cn",
+      "observed_at": "2026-08-21T18:44:57Z",
+      "source_url": "https://jxxy.fzu.edu.cn/info/1387/11673.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhugy@fzu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:57Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3c4318835f7a4a097606"
+    ],
+    "email": [
+      "claim_3c4318835f7a4a097606"
+    ],
+    "name": [
+      "claim_3c4318835f7a4a097606"
+    ],
+    "profile_url": [
+      "claim_3c4318835f7a4a097606"
+    ],
+    "recent_papers": [
+      "claim_3c4318835f7a4a097606"
+    ],
+    "research_directions": [
+      "claim_3c4318835f7a4a097606"
+    ],
+    "status": [
+      "claim_3c4318835f7a4a097606"
+    ],
+    "title": [
+      "claim_3c4318835f7a4a097606"
+    ]
+  },
+  "id": "mentor_f1c95d5aed21c22ceffc",
+  "last_verified_at": "2026-08-21T18:44:57Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3c4318835f7a4a097606"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "朱光宇"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_f75a52d1b112e6385784",
+      "claim_ids": [
+        "claim_3c4318835f7a4a097606"
+      ],
+      "observed_at": "2026-08-21T18:44:57Z",
+      "status": "current",
+      "url": "https://jxxy.fzu.edu.cn/info/1387/11673.htm"
+    }
+  ],
+  "recent_papers": [
+    "A literature review of reinforcement learning methods applied to job-shop scheduling problems",
+    "Multi-objective hole-making sequence optimization by genetic algorithm based on Q-Learning",
+    "Improved optimal foraging algorithm for global optimization",
+    "Sampling-focused marching tree: optimal planning based on minimized topological refinement and Homotopy-heuristic exploration",
+    "Solving a many-objective PFSP with reinforcement cumulative prospect theory in low-volume PCB manufacturing",
+    "Multiobjective Optimization for FJSP under Immediate Predecessor Constraints Based OFA and Pythagorean Fuzzy Set",
+    "Particle swarm optimization based on temporal-difference learning for solving multi-objective optimization problems",
+    "Optimal foraging algorithm with direction prediction and Gaussian oscillation for constrained optimization problems"
+  ],
+  "research_directions": [
+    "智能制造、车间调度、工业大数据、优化设计"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:57Z",
+  "status_reason": null,
+  "status_source_url": "https://jxxy.fzu.edu.cn/info/1387/11673.htm",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:44:57Z"
+}
