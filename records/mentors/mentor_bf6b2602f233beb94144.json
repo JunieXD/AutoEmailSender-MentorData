@@ -1,0 +1,105 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_a54b173ba600a2015037"
+      ],
+      "ended_at": null,
+      "id": "aff_e5c4e0397d2482e72be2",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:37:10Z",
+      "organization_id": "org_auto_577cf15bce4cc1f6aec7",
+      "source_url": "https://sph.pku.edu.cn/info/1616/4002.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_a54b173ba600a2015037"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_e5c4e0397d2482e72be2",
+      "claim_ids": [
+        "claim_a54b173ba600a2015037"
+      ],
+      "is_primary": true,
+      "normalized_value": "weilin@math.pku.edu.cn",
+      "observed_at": "2026-08-21T18:37:10Z",
+      "source_url": "https://sph.pku.edu.cn/info/1616/4002.htm",
+      "status": "current",
+      "type": "email",
+      "value": "weilin@math.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:37:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_a54b173ba600a2015037"
+    ],
+    "email": [
+      "claim_a54b173ba600a2015037"
+    ],
+    "name": [
+      "claim_a54b173ba600a2015037"
+    ],
+    "profile_url": [
+      "claim_a54b173ba600a2015037"
+    ],
+    "recent_papers": [
+      "claim_a54b173ba600a2015037"
+    ],
+    "research_directions": [
+      "claim_a54b173ba600a2015037"
+    ],
+    "status": [
+      "claim_a54b173ba600a2015037"
+    ],
+    "title": [
+      "claim_a54b173ba600a2015037"
+    ]
+  },
+  "id": "mentor_bf6b2602f233beb94144",
+  "last_verified_at": "2026-08-21T18:37:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_a54b173ba600a2015037"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "林伟"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_e5c4e0397d2482e72be2",
+      "claim_ids": [
+        "claim_a54b173ba600a2015037"
+      ],
+      "observed_at": "2026-08-21T18:37:10Z",
+      "status": "current",
+      "url": "https://sph.pku.edu.cn/info/1616/4002.htm"
+    }
+  ],
+  "recent_papers": [
+    "Zhang, J. and Lin, W. (2019). Scalable estimation and regularization for the logistic normal multinomial model. Biometrics, to appear.",
+    "Cao, Y., Lin, W. and Li, H. (2019). Large covariance estimation for compositional data via composition-adjusted thresholding. Journal of the American Statistical Association, to appear.",
+    "Cao, Y., Lin, W. and Li, H. (2018). Two-sample tests of high-dimensional means for compositional data. Biometrika, 105, 115-132.",
+    "Lin, W., Feng, R. and Li, H. (2015). Regularization methods for high-dimensional instrumental variables regression with an application to genetical genomics. Journal of the American Statistical Association, 110, 270-288.",
+    "Lin, W., Shi, P., Feng, R. and Li, H. (2014). Variable selection in regression with compositional covariates. Biometrika, 101, 785-797.",
+    "Lin, W. and Lv, J. (2013). High-dimensional sparse additive hazards regression. Journal of the American Statistical Association, 108, 247-264."
+  ],
+  "research_directions": [
+    "高维统计、机器学习、因果推断、成分数据分析、生存分析、统计遗传学与基因组学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:37:10Z",
+  "status_reason": null,
+  "status_source_url": "https://sph.pku.edu.cn/info/1616/4002.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:37:10Z"
+}

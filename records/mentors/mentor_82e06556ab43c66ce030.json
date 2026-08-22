@@ -1,0 +1,102 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_2e93ee55126502ae279e"
+      ],
+      "ended_at": null,
+      "id": "aff_242c57d32edbeba96d28",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:37:10Z",
+      "organization_id": "org_auto_050c2d8f7645a5cc4342",
+      "source_url": "https://nutrition.pku.edu.cn/info/1063/2762.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_2e93ee55126502ae279e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_242c57d32edbeba96d28",
+      "claim_ids": [
+        "claim_2e93ee55126502ae279e"
+      ],
+      "is_primary": true,
+      "normalized_value": "jiashu@bjmu.edu.cn",
+      "observed_at": "2026-08-21T18:37:10Z",
+      "source_url": "https://nutrition.pku.edu.cn/info/1063/2762.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jiashu@bjmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:37:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_2e93ee55126502ae279e"
+    ],
+    "email": [
+      "claim_2e93ee55126502ae279e"
+    ],
+    "name": [
+      "claim_2e93ee55126502ae279e"
+    ],
+    "profile_url": [
+      "claim_2e93ee55126502ae279e"
+    ],
+    "recent_papers": [
+      "claim_2e93ee55126502ae279e"
+    ],
+    "research_directions": [
+      "claim_2e93ee55126502ae279e"
+    ],
+    "status": [
+      "claim_2e93ee55126502ae279e"
+    ]
+  },
+  "id": "mentor_82e06556ab43c66ce030",
+  "last_verified_at": "2026-08-21T18:37:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_2e93ee55126502ae279e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "李嘉树"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_242c57d32edbeba96d28",
+      "claim_ids": [
+        "claim_2e93ee55126502ae279e"
+      ],
+      "observed_at": "2026-08-21T18:37:10Z",
+      "status": "current",
+      "url": "https://nutrition.pku.edu.cn/info/1063/2762.htm"
+    }
+  ],
+  "recent_papers": [
+    "Understanding the effect of pH on structure formation in high moisture extrudates produced from soy protein-dietary fiber blends",
+    "The interplay between soy proteins and dietary fiber in determining the structure and texture of high moisture extrudates",
+    "Impact of soy protein concentrate preparation method on structure formation during high moisture extrusion",
+    "Varying precipitation conditions allow directing the composition and physical properties of soy protein concentrates",
+    "Relating the protein denaturation degree and solubility of soy protein isolates to the structure of high moisture extrudates"
+  ],
+  "research_directions": [
+    "营养流行病学",
+    "食品科学"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:37:10Z",
+  "status_reason": null,
+  "status_source_url": "https://nutrition.pku.edu.cn/info/1063/2762.htm",
+  "title": null,
+  "updated_at": "2026-08-21T18:37:10Z"
+}

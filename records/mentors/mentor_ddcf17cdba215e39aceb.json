@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_fd1c1795f890b285d642"
+      ],
+      "ended_at": null,
+      "id": "aff_92fdef7745063cb3e617",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:37:10Z",
+      "organization_id": "org_auto_577cf15bce4cc1f6aec7",
+      "source_url": "https://sph.pku.edu.cn/info/1702/5059.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_fd1c1795f890b285d642"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_92fdef7745063cb3e617",
+      "claim_ids": [
+        "claim_fd1c1795f890b285d642"
+      ],
+      "is_primary": true,
+      "normalized_value": "yjzhang@bjmu.edu.cn",
+      "observed_at": "2026-08-21T18:37:10Z",
+      "source_url": "https://sph.pku.edu.cn/info/1702/5059.htm",
+      "status": "current",
+      "type": "email",
+      "value": "yjzhang@bjmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:37:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_fd1c1795f890b285d642"
+    ],
+    "email": [
+      "claim_fd1c1795f890b285d642"
+    ],
+    "name": [
+      "claim_fd1c1795f890b285d642"
+    ],
+    "profile_url": [
+      "claim_fd1c1795f890b285d642"
+    ],
+    "recent_papers": [
+      "claim_fd1c1795f890b285d642"
+    ],
+    "research_directions": [
+      "claim_fd1c1795f890b285d642"
+    ],
+    "status": [
+      "claim_fd1c1795f890b285d642"
+    ],
+    "title": [
+      "claim_fd1c1795f890b285d642"
+    ]
+  },
+  "id": "mentor_ddcf17cdba215e39aceb",
+  "last_verified_at": "2026-08-21T18:37:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_fd1c1795f890b285d642"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张云俊"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_92fdef7745063cb3e617",
+      "claim_ids": [
+        "claim_fd1c1795f890b285d642"
+      ],
+      "observed_at": "2026-08-21T18:37:10Z",
+      "status": "current",
+      "url": "https://sph.pku.edu.cn/info/1702/5059.htm"
+    }
+  ],
+  "recent_papers": [
+    "Yun Jun Zhang and Guozhong Xu, “Bearings-Only Target Motion Analysis via Instrumental Variable Estimation,” IEEE Transactions on Signal Processing, vol. 58, pp. 5523-5533, 2010.",
+    "Yun Jun Zhang and Zhi Geng, “Detection of Target Maneuver from Bearings-only Measurements”, IEEE Transactions on Aerospace and Electronic Systems, vol. 49, pp. 2028-2034, 2013",
+    "Yun Jun Zhang, Qi OuYang and Zhi Geng, “Refining Network Reconstruction Based on Functional Reliability”, Journal of Theoretical Biology 353(c), 170-178, 2014",
+    "Yun Jun Zhang, Qi OuYang and Zhi Geng, “Topological Origin of Global Attractors in Gene Regulatory Networks”,SCIENCE CHINA Physics, Mechanics & Astronomy, 2015, 58(2): 028701.",
+    "Li, Kai, Zhang Yun Jun, and He Dong Qi. \"Homogeneous orthogonal diffusion of drugs in the rat brain.\" Clinical and Experimental Pharmacology and Physiology 46.4 (2019): 398-403. (Co-first author)"
+  ],
+  "research_directions": [
+    "贝叶斯统计学, 病毒传播与演化动力学,复杂数据分析"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:37:10Z",
+  "status_reason": null,
+  "status_source_url": "https://sph.pku.edu.cn/info/1702/5059.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:37:10Z"
+}

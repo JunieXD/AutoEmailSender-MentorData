@@ -1,0 +1,107 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_dba38209df0500554489"
+      ],
+      "ended_at": null,
+      "id": "aff_71d7ef7a1d9762c7fedd",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:37:10Z",
+      "organization_id": "org_auto_577cf15bce4cc1f6aec7",
+      "source_url": "https://sph.pku.edu.cn/info/1566/4001.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_dba38209df0500554489"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_71d7ef7a1d9762c7fedd",
+      "claim_ids": [
+        "claim_dba38209df0500554489"
+      ],
+      "is_primary": true,
+      "normalized_value": "jzjia@pku.edu.cn",
+      "observed_at": "2026-08-21T18:37:10Z",
+      "source_url": "https://sph.pku.edu.cn/info/1566/4001.htm",
+      "status": "current",
+      "type": "email",
+      "value": "jzjia@pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:37:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_dba38209df0500554489"
+    ],
+    "email": [
+      "claim_dba38209df0500554489"
+    ],
+    "name": [
+      "claim_dba38209df0500554489"
+    ],
+    "profile_url": [
+      "claim_dba38209df0500554489"
+    ],
+    "recent_papers": [
+      "claim_dba38209df0500554489"
+    ],
+    "research_directions": [
+      "claim_dba38209df0500554489"
+    ],
+    "status": [
+      "claim_dba38209df0500554489"
+    ],
+    "title": [
+      "claim_dba38209df0500554489"
+    ]
+  },
+  "id": "mentor_a6e4bb4cafc4d0c1a13d",
+  "last_verified_at": "2026-08-21T18:37:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_dba38209df0500554489"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "贾金柱"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_71d7ef7a1d9762c7fedd",
+      "claim_ids": [
+        "claim_dba38209df0500554489"
+      ],
+      "observed_at": "2026-08-21T18:37:10Z",
+      "status": "current",
+      "url": "https://sph.pku.edu.cn/info/1566/4001.htm"
+    }
+  ],
+  "recent_papers": [
+    "Huizhuo Yuan, Jinzhu Jia, Zhanxing Zhu (2018). SIPID: A deep learning framework for sinogram interpolation and image denoising in low-dose CT reconstruction. ISBI 2018: 1521-1524",
+    "Li Yanfang and Jinzhu Jia (2017) . L1 least squares for sparse highdimensional LDA. Electronic Journal of Statistics, 2017, 11(1):2499-2518.",
+    "Junyang Qian and Jinzhu Jia (2016). On Piecewise Pattern Recovery of Fused Lasso. Computational Statistics and Data Analysis 94 (2016), pp 221-237.",
+    "Jinzhu Jia and Karl Rohe (2015). Preconditioning the Lasso for sign consistency. Electronic Journal of Statistics 2015, pp 1150-1172.",
+    "Yangbo He, Jinzhu Jia and Bin Yu (2015). Counting and Exploring Sizes of Markov Equivalence Classes of Directed Acyclic Graphs. Journal of Machine Learning Research16 (Dec), pp: 2589-2609.",
+    "Jinzhu Jia, Luke Miratrix, Bin Yu, Brian Gawalt, Laurent El Ghaoui, Luke Barnesmoore and Sophie Clavier (2014). Concise Comparative Summaries of Large Text Corpora with Human Experiment. The Annals of Applied Statistics, 499-529.",
+    "Yangbo He, Jinzhu Jia and Bin Yu (2013). Reversible MCMC on Markov equivalence classes of sparse directed acyclic graphs. Annals of Statistics 2013, pp 1742-1779.",
+    "Jinzhu Jia, Karl Rohe and Bin Yu (2013). The Lasso under Poisson-like Heteroscedasticity. Staitstica Sinica 2013, pp 99-118"
+  ],
+  "research_directions": [
+    "生物统计、高维统计推断、大数据分析、统计机器学习、因果推断"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:37:10Z",
+  "status_reason": null,
+  "status_source_url": "https://sph.pku.edu.cn/info/1566/4001.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:37:10Z"
+}

@@ -1,0 +1,108 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_00f805bafb80dfe020d5"
+      ],
+      "ended_at": null,
+      "id": "aff_1aa0ec188e1b9826fc58",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:37:10Z",
+      "organization_id": "org_auto_577cf15bce4cc1f6aec7",
+      "source_url": "https://sph.pku.edu.cn/info/1617/4004.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_00f805bafb80dfe020d5"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_1aa0ec188e1b9826fc58",
+      "claim_ids": [
+        "claim_00f805bafb80dfe020d5"
+      ],
+      "is_primary": true,
+      "normalized_value": "ruibinxi@math.pku.edu.cn",
+      "observed_at": "2026-08-21T18:37:10Z",
+      "source_url": "https://sph.pku.edu.cn/info/1617/4004.htm",
+      "status": "current",
+      "type": "email",
+      "value": "ruibinxi@math.pku.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:37:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_00f805bafb80dfe020d5"
+    ],
+    "email": [
+      "claim_00f805bafb80dfe020d5"
+    ],
+    "name": [
+      "claim_00f805bafb80dfe020d5"
+    ],
+    "profile_url": [
+      "claim_00f805bafb80dfe020d5"
+    ],
+    "recent_papers": [
+      "claim_00f805bafb80dfe020d5"
+    ],
+    "research_directions": [
+      "claim_00f805bafb80dfe020d5"
+    ],
+    "status": [
+      "claim_00f805bafb80dfe020d5"
+    ],
+    "title": [
+      "claim_00f805bafb80dfe020d5"
+    ]
+  },
+  "id": "mentor_c2d5d4829c1d829b5510",
+  "last_verified_at": "2026-08-21T18:37:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_00f805bafb80dfe020d5"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "席瑞斌"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_1aa0ec188e1b9826fc58",
+      "claim_ids": [
+        "claim_00f805bafb80dfe020d5"
+      ],
+      "observed_at": "2026-08-21T18:37:10Z",
+      "status": "current",
+      "url": "https://sph.pku.edu.cn/info/1617/4004.htm"
+    }
+  ],
+  "recent_papers": [
+    "Xia,Y., Liu, Y., Deng, M.and Xi, R.* (2018+) Detecting virus integration sites based on multiple related sequencing data by VirTect, BMC Medical Genomics,Accepted.",
+    "Xia, Y., Liu, Y., Deng, M.and Xi, R.* (2017) SVmine improves structural variation detection by integrative mining of predictions from multiple algorithms, Bioinformatics, 1;33(21):3348-3354.",
+    "Yuan, H.Xi, R.*, Chen, C.and Deng, M.* (2017) Differential network analysis via lasso penalized D-trace loss, Biometrika, 104 (4):755-770.",
+    "Xia, Y., Liu Y., Deng, M.and Xi, R.* (2017) Pysim-sv: a package for simulating structural variation data with GC-biases, BCM Bioinformatics,18(Suppl 3):53.",
+    "Xi, R.*, Lee, S., Xia, Y., Kim, T.and Park, P.* (2016) Copy number analysis of whole-genome data using BIC-seq2 and its application to detection of cancer susceptibility variants, Nucleic Acids Research, 44(13): 6274-86.",
+    "Xi, R.*, Li, Y.and Hu, Y.(2015) Bayesian quantile regression based on the empirical likelihood with spike and slab priors, Bayesian Analysis,11(3):821-855.",
+    "Xi, R.and Lin, N.* (2015) Direct regression modelling of high-order moments in big data, Statistics and Its Interface, 9(4):445-452.",
+    "Yang, L., Luquette, L.J., Gehlenborg, N., Xi, R., Haseley, P.S., Hsieh, C.H.,Zhang, C., Ren, X., Protopopov, A., Chin, L., Kucherlapati, R., Lee, C.and Park P.J.* (2013) Diverse mechanisms of somatic structural variations in human cancer genomes, Cell, 153(4):919-929."
+  ],
+  "research_directions": [
+    "发展新的统计理论和算法,解决生物、医学、计算机领域的问题",
+    "基因组学和生物信息学,研究癌基因组测序数据及单细胞测序数据等"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:37:10Z",
+  "status_reason": null,
+  "status_source_url": "https://sph.pku.edu.cn/info/1617/4004.htm",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:37:10Z"
+}

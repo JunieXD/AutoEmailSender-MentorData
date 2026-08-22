@@ -1,0 +1,90 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_3a503db7fc0ea52e7e7c"
+      ],
+      "ended_at": null,
+      "id": "aff_4a32f0ba27dfdc49131b",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:37:10Z",
+      "organization_id": "org_auto_2d95fd18de92569efa61",
+      "source_url": "https://sph.pku.edu.cn/info/1174/3588.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "副教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_3a503db7fc0ea52e7e7c"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4a32f0ba27dfdc49131b",
+      "claim_ids": [
+        "claim_3a503db7fc0ea52e7e7c"
+      ],
+      "is_primary": true,
+      "normalized_value": "twang@bjmu.edu.cn",
+      "observed_at": "2026-08-21T18:37:10Z",
+      "source_url": "https://sph.pku.edu.cn/info/1174/3588.htm",
+      "status": "current",
+      "type": "email",
+      "value": "twang@bjmu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:37:10Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_3a503db7fc0ea52e7e7c"
+    ],
+    "email": [
+      "claim_3a503db7fc0ea52e7e7c"
+    ],
+    "name": [
+      "claim_3a503db7fc0ea52e7e7c"
+    ],
+    "profile_url": [
+      "claim_3a503db7fc0ea52e7e7c"
+    ],
+    "status": [
+      "claim_3a503db7fc0ea52e7e7c"
+    ],
+    "title": [
+      "claim_3a503db7fc0ea52e7e7c"
+    ]
+  },
+  "id": "mentor_33e9d9dc1ffb903aac0a",
+  "last_verified_at": "2026-08-21T18:37:10Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_3a503db7fc0ea52e7e7c"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王涛"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4a32f0ba27dfdc49131b",
+      "claim_ids": [
+        "claim_3a503db7fc0ea52e7e7c"
+      ],
+      "observed_at": "2026-08-21T18:37:10Z",
+      "status": "current",
+      "url": "https://sph.pku.edu.cn/info/1174/3588.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:37:10Z",
+  "status_reason": null,
+  "status_source_url": "https://sph.pku.edu.cn/info/1174/3588.htm",
+  "title": "副教授",
+  "updated_at": "2026-08-21T18:37:10Z"
+}
