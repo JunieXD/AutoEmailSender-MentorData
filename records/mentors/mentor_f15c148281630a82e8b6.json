@@ -1,0 +1,104 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_1c690bb119bdda9e6ddd"
+      ],
+      "ended_at": null,
+      "id": "aff_40cd7b6af13ef0c9cce6",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:44Z",
+      "organization_id": "org_auto_4d766304be22d769c245",
+      "source_url": "https://hxxy.neau.edu.cn/info/1143/1528.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_1c690bb119bdda9e6ddd"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_40cd7b6af13ef0c9cce6",
+      "claim_ids": [
+        "claim_1c690bb119bdda9e6ddd"
+      ],
+      "is_primary": true,
+      "normalized_value": "wang_duo@neau.edu.cn",
+      "observed_at": "2026-08-21T18:44:44Z",
+      "source_url": "https://hxxy.neau.edu.cn/info/1143/1528.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wang_duo@neau.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:44Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_1c690bb119bdda9e6ddd"
+    ],
+    "email": [
+      "claim_1c690bb119bdda9e6ddd"
+    ],
+    "name": [
+      "claim_1c690bb119bdda9e6ddd"
+    ],
+    "profile_url": [
+      "claim_1c690bb119bdda9e6ddd"
+    ],
+    "recent_papers": [
+      "claim_1c690bb119bdda9e6ddd"
+    ],
+    "research_directions": [
+      "claim_1c690bb119bdda9e6ddd"
+    ],
+    "status": [
+      "claim_1c690bb119bdda9e6ddd"
+    ],
+    "title": [
+      "claim_1c690bb119bdda9e6ddd"
+    ]
+  },
+  "id": "mentor_f15c148281630a82e8b6",
+  "last_verified_at": "2026-08-21T18:44:44Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_1c690bb119bdda9e6ddd"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "王多"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_40cd7b6af13ef0c9cce6",
+      "claim_ids": [
+        "claim_1c690bb119bdda9e6ddd"
+      ],
+      "observed_at": "2026-08-21T18:44:44Z",
+      "status": "current",
+      "url": "https://hxxy.neau.edu.cn/info/1143/1528.htm"
+    }
+  ],
+  "recent_papers": [
+    "AIEgen-functionalised mesoporous silica nanoparticles as a FRET donor for monitoring drug delivery",
+    "Biodegradable AIEgen-functionalised mesoporous bioactive glass nanospheres for drug delivery and cell imaging",
+    "Biocompatible Eu doped mesoporous calcium silicate nanospheres for pH-responsive drug release",
+    "AIEgens functionalized hollow mesoporous silica nanospheres for selective detection of the antimicrobial furazolidone",
+    "Amino-Fortified AIEgens Functionalized SBA-15 for Detecting Environmental Contaminants Furazolidone and Potassium Dichromate"
+  ],
+  "research_directions": [
+    "介孔材料,荧光检测,药物控释"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:44Z",
+  "status_reason": null,
+  "status_source_url": "https://hxxy.neau.edu.cn/info/1143/1528.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:44:44Z"
+}

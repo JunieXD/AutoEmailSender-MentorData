@@ -1,0 +1,95 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_35c9a54ae5fc99a66a2b"
+      ],
+      "ended_at": null,
+      "id": "aff_090176a1f3d763b7c0b4",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:44:44Z",
+      "organization_id": "org_auto_23bd840bd261cf5c2b27",
+      "source_url": "https://hxxy.neau.edu.cn/info/1143/1521.htm",
+      "started_at": null,
+      "status": "current",
+      "title": "讲师"
+    }
+  ],
+  "claim_ids": [
+    "claim_35c9a54ae5fc99a66a2b"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_090176a1f3d763b7c0b4",
+      "claim_ids": [
+        "claim_35c9a54ae5fc99a66a2b"
+      ],
+      "is_primary": true,
+      "normalized_value": "zhangxin@neau.edu.cn",
+      "observed_at": "2026-08-21T18:44:44Z",
+      "source_url": "https://hxxy.neau.edu.cn/info/1143/1521.htm",
+      "status": "current",
+      "type": "email",
+      "value": "zhangxin@neau.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:44:44Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_35c9a54ae5fc99a66a2b"
+    ],
+    "email": [
+      "claim_35c9a54ae5fc99a66a2b"
+    ],
+    "name": [
+      "claim_35c9a54ae5fc99a66a2b"
+    ],
+    "profile_url": [
+      "claim_35c9a54ae5fc99a66a2b"
+    ],
+    "research_directions": [
+      "claim_35c9a54ae5fc99a66a2b"
+    ],
+    "status": [
+      "claim_35c9a54ae5fc99a66a2b"
+    ],
+    "title": [
+      "claim_35c9a54ae5fc99a66a2b"
+    ]
+  },
+  "id": "mentor_eec240170c255245fe55",
+  "last_verified_at": "2026-08-21T18:44:44Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_35c9a54ae5fc99a66a2b"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "张鑫"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_090176a1f3d763b7c0b4",
+      "claim_ids": [
+        "claim_35c9a54ae5fc99a66a2b"
+      ],
+      "observed_at": "2026-08-21T18:44:44Z",
+      "status": "current",
+      "url": "https://hxxy.neau.edu.cn/info/1143/1521.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [
+    "天然产物提取"
+  ],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:44:44Z",
+  "status_reason": null,
+  "status_source_url": "https://hxxy.neau.edu.cn/info/1143/1521.htm",
+  "title": "讲师",
+  "updated_at": "2026-08-21T18:44:44Z"
+}
