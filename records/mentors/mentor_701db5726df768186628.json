@@ -1,0 +1,77 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_59bd92fd22ba2efc863e"
+      ],
+      "ended_at": null,
+      "id": "aff_5eabf0c29117727a137f",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:46Z",
+      "organization_id": "org_auto_6b2ccebc8bff27754167",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+      "started_at": null,
+      "status": "current",
+      "title": "教授"
+    }
+  ],
+  "claim_ids": [
+    "claim_59bd92fd22ba2efc863e"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_5eabf0c29117727a137f",
+      "claim_ids": [
+        "claim_59bd92fd22ba2efc863e"
+      ],
+      "is_primary": true,
+      "normalized_value": "xlw@sjtu.edu.cn",
+      "observed_at": "2026-08-21T18:49:46Z",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+      "status": "current",
+      "type": "email",
+      "value": "xlw@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_59bd92fd22ba2efc863e"
+    ],
+    "email": [
+      "claim_59bd92fd22ba2efc863e"
+    ],
+    "name": [
+      "claim_59bd92fd22ba2efc863e"
+    ],
+    "status": [
+      "claim_59bd92fd22ba2efc863e"
+    ],
+    "title": [
+      "claim_59bd92fd22ba2efc863e"
+    ]
+  },
+  "id": "mentor_701db5726df768186628",
+  "last_verified_at": "2026-08-21T18:49:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_59bd92fd22ba2efc863e"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "向隆万"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:46Z",
+  "status_reason": null,
+  "status_source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+  "title": "教授",
+  "updated_at": "2026-08-21T18:49:46Z"
+}

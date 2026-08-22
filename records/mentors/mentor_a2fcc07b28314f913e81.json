@@ -1,0 +1,77 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_ba47b2b33cb59e16a512"
+      ],
+      "ended_at": null,
+      "id": "aff_da97feea668de80693d3",
+      "is_primary": true,
+      "observed_at": "2026-08-21T18:49:46Z",
+      "organization_id": "org_auto_6b2ccebc8bff27754167",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+      "started_at": null,
+      "status": "current",
+      "title": "研究员"
+    }
+  ],
+  "claim_ids": [
+    "claim_ba47b2b33cb59e16a512"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_da97feea668de80693d3",
+      "claim_ids": [
+        "claim_ba47b2b33cb59e16a512"
+      ],
+      "is_primary": true,
+      "normalized_value": "chenyinan@sjtu.edu.cn",
+      "observed_at": "2026-08-21T18:49:46Z",
+      "source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+      "status": "current",
+      "type": "email",
+      "value": "chenyinan@sjtu.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-21T18:49:46Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_ba47b2b33cb59e16a512"
+    ],
+    "email": [
+      "claim_ba47b2b33cb59e16a512"
+    ],
+    "name": [
+      "claim_ba47b2b33cb59e16a512"
+    ],
+    "status": [
+      "claim_ba47b2b33cb59e16a512"
+    ],
+    "title": [
+      "claim_ba47b2b33cb59e16a512"
+    ]
+  },
+  "id": "mentor_a2fcc07b28314f913e81",
+  "last_verified_at": "2026-08-21T18:49:46Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_ba47b2b33cb59e16a512"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "陈亦楠"
+    }
+  ],
+  "profiles": [],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-21T18:49:46Z",
+  "status_reason": null,
+  "status_source_url": "https://wctwp.sjtu.edu.cn/Web/Faculty?p=3&w=64",
+  "title": "研究员",
+  "updated_at": "2026-08-21T18:49:46Z"
+}

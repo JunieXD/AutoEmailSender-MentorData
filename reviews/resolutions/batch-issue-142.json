@@ -1,0 +1,542 @@
+{
+  "created_organization_ids": [
+    "org_auto_071c36125e092e379e6c",
+    "org_auto_6b2ccebc8bff27754167",
+    "org_auto_741c153a420e3f061951",
+    "org_auto_79cb3c4bb5081edb3a60",
+    "org_auto_8cc2d20960bfb7c08076",
+    "org_auto_dc5b5846be706f58067c",
+    "org_auto_e3d1f9f003f0a791e8a0"
+  ],
+  "decided_at": "2026-08-22T08:50:04Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_16a340d7c60f91a9",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人文学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "历史系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_1a5abc5236465440",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人文学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_3b32cc01895838d9",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_8cc2d20960bfb7c08076"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_62c718b5fe94beb8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_071c36125e092e379e6c"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_6689c8583ac9a484",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_institute",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_071c36125e092e379e6c"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_66bac4b4e7339988",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人文学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "汉语国际教育中心",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "center",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_9632da1127cae1df",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人文学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "哲学系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_97db7a4012277c74",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人文学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_bdbd96c1b73e8e2e",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人文学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "中文系",
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "department",
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ccefcafabf52beb8",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_7f6284158acd5a7f7af7",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "人文学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_142",
+  "invalid_rows": [],
+  "issue": {
+    "number": 142,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/142"
+  },
+  "manifest_sha256": "4d701052173db64de4f3dc71f04caa100eca2b9aaf0c9fea2a4b1ea25c1e90b9",
+  "mapped_proposal_ids": [
+    "proposal_issue_142_row_1",
+    "proposal_issue_142_row_10",
+    "proposal_issue_142_row_11",
+    "proposal_issue_142_row_12",
+    "proposal_issue_142_row_13",
+    "proposal_issue_142_row_14",
+    "proposal_issue_142_row_15",
+    "proposal_issue_142_row_16",
+    "proposal_issue_142_row_17",
+    "proposal_issue_142_row_18",
+    "proposal_issue_142_row_19",
+    "proposal_issue_142_row_2",
+    "proposal_issue_142_row_20",
+    "proposal_issue_142_row_21",
+    "proposal_issue_142_row_22",
+    "proposal_issue_142_row_23",
+    "proposal_issue_142_row_24",
+    "proposal_issue_142_row_25",
+    "proposal_issue_142_row_26",
+    "proposal_issue_142_row_27",
+    "proposal_issue_142_row_28",
+    "proposal_issue_142_row_29",
+    "proposal_issue_142_row_3",
+    "proposal_issue_142_row_30",
+    "proposal_issue_142_row_31",
+    "proposal_issue_142_row_32",
+    "proposal_issue_142_row_33",
+    "proposal_issue_142_row_34",
+    "proposal_issue_142_row_35",
+    "proposal_issue_142_row_36",
+    "proposal_issue_142_row_37",
+    "proposal_issue_142_row_38",
+    "proposal_issue_142_row_39",
+    "proposal_issue_142_row_4",
+    "proposal_issue_142_row_40",
+    "proposal_issue_142_row_41",
+    "proposal_issue_142_row_42",
+    "proposal_issue_142_row_43",
+    "proposal_issue_142_row_44",
+    "proposal_issue_142_row_45",
+    "proposal_issue_142_row_46",
+    "proposal_issue_142_row_47",
+    "proposal_issue_142_row_48",
+    "proposal_issue_142_row_49",
+    "proposal_issue_142_row_5",
+    "proposal_issue_142_row_50",
+    "proposal_issue_142_row_51",
+    "proposal_issue_142_row_52",
+    "proposal_issue_142_row_53",
+    "proposal_issue_142_row_54",
+    "proposal_issue_142_row_55",
+    "proposal_issue_142_row_56",
+    "proposal_issue_142_row_57",
+    "proposal_issue_142_row_58",
+    "proposal_issue_142_row_59",
+    "proposal_issue_142_row_6",
+    "proposal_issue_142_row_60",
+    "proposal_issue_142_row_7",
+    "proposal_issue_142_row_8",
+    "proposal_issue_142_row_9"
+  ],
+  "organization_creations": [
+    {
+      "approved_domains": [],
+      "canonical_name": "人文艺术研究院",
+      "official_url": null,
+      "organization_id": "org_auto_071c36125e092e379e6c",
+      "organization_type": "institute",
+      "parent_id": "org_auto_7f6284158acd5a7f7af7"
+    },
+    {
+      "approved_domains": [],
+      "canonical_name": "战争审判与世界和平研究院",
+      "official_url": null,
+      "organization_id": "org_auto_8cc2d20960bfb7c08076",
+      "organization_type": "institute",
+      "parent_id": "org_auto_7f6284158acd5a7f7af7"
+    }
+  ],
+  "path_corrections": [],
+  "pull_request_number": 151,
+  "rejected_proposal_ids": [],
+  "review_comment_id": 5379404140,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
