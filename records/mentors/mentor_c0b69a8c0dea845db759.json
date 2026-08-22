@@ -1,0 +1,87 @@
+{
+  "affiliations": [
+    {
+      "claim_ids": [
+        "claim_993ce8b0c76537d15963"
+      ],
+      "ended_at": null,
+      "id": "aff_4bbd37696fe854e64f28",
+      "is_primary": true,
+      "observed_at": "2026-08-22T08:27:04Z",
+      "organization_id": "org_auto_a44d90661a923834917f",
+      "source_url": "http://chem.nju.edu.cn/wjh2/list.htm",
+      "started_at": null,
+      "status": "current",
+      "title": null
+    }
+  ],
+  "claim_ids": [
+    "claim_993ce8b0c76537d15963"
+  ],
+  "contacts": [
+    {
+      "affiliation_id": "aff_4bbd37696fe854e64f28",
+      "claim_ids": [
+        "claim_993ce8b0c76537d15963"
+      ],
+      "is_primary": true,
+      "normalized_value": "wuj@nju.edu.cn",
+      "observed_at": "2026-08-22T08:27:04Z",
+      "source_url": "http://chem.nju.edu.cn/wjh2/list.htm",
+      "status": "current",
+      "type": "email",
+      "value": "wuj@nju.edu.cn"
+    }
+  ],
+  "created_at": "2026-08-22T08:27:04Z",
+  "field_provenance": {
+    "affiliations": [
+      "claim_993ce8b0c76537d15963"
+    ],
+    "email": [
+      "claim_993ce8b0c76537d15963"
+    ],
+    "name": [
+      "claim_993ce8b0c76537d15963"
+    ],
+    "profile_url": [
+      "claim_993ce8b0c76537d15963"
+    ],
+    "status": [
+      "claim_993ce8b0c76537d15963"
+    ]
+  },
+  "id": "mentor_c0b69a8c0dea845db759",
+  "last_verified_at": "2026-08-22T08:27:04Z",
+  "names": [
+    {
+      "claim_ids": [
+        "claim_993ce8b0c76537d15963"
+      ],
+      "is_primary": true,
+      "kind": "native",
+      "value": "吴锦慧"
+    }
+  ],
+  "profiles": [
+    {
+      "affiliation_id": "aff_4bbd37696fe854e64f28",
+      "claim_ids": [
+        "claim_993ce8b0c76537d15963"
+      ],
+      "observed_at": "2026-08-22T08:27:04Z",
+      "status": "current",
+      "url": "http://chem.nju.edu.cn/wjh2/list.htm"
+    }
+  ],
+  "recent_papers": [],
+  "research_directions": [],
+  "resolution_ids": [],
+  "schema_version": 1,
+  "status": "active",
+  "status_observed_at": "2026-08-22T08:27:04Z",
+  "status_reason": null,
+  "status_source_url": "http://chem.nju.edu.cn/wjh2/list.htm",
+  "title": null,
+  "updated_at": "2026-08-22T08:27:04Z"
+}
