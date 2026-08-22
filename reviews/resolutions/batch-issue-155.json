@@ -1,0 +1,571 @@
+{
+  "created_organization_ids": [
+    "org_auto_9ed56e6a8f084ab73b5b"
+  ],
+  "decided_at": "2026-08-22T08:50:14Z",
+  "decisions": [
+    {
+      "action": "resolve",
+      "group_id": "org_group_1778da2f8e3bd760",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_65efd0fef3c6a9ac2718"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_8fd7cfbe996d0694",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部-软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_1",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_2",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_5",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_13",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_19",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_20",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_22",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_28",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_34",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_36",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_37",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_39",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_41",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_94607c5df53ef544",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "department_as_school",
+      "mapping_reason": "人工确认系所字段实际为学校直属同级机构",
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_6",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_10",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_11",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_12",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_21",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_26",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_30",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_31",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_35",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_38",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_3",
+          "reason": "预检发现与现有导师记录冲突，缺少专门纠错证据，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_65efd0fef3c6a9ac2718"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_95cd0fedaab9234e",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认同名机构应映射到同校已有归属",
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_24",
+          "reason": "与已有记录的资料不一致，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_1c5437803743e38f6d96"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_a3e898d7de5a481e",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认同名机构应映射到同校已有归属",
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_15",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_16",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_8",
+          "reason": "预检发现与现有导师记录冲突，缺少专门纠错证据，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_737dc806e9f0c3fa1e5d"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_ae1dd5e115d20bb5",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认同名机构应映射到同校已有归属",
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_17",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_5e89c44004427f7dedc7"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c0f9cb5c441ff9e0",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部-软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_29",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_c6dd3c73491252b9",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认同名机构应映射到同校已有归属",
+      "reason": null,
+      "row_overrides": [],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_2a7a2c537c4df0815420"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_e8b55d3c4e7e8f2f",
+      "identity_resolutions": [],
+      "levels": [],
+      "mapping_kind": "custom",
+      "mapping_reason": "人工确认同名机构应映射到同校已有归属",
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_9",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_23",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_27",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_40",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": "org_auto_9fa413d88a1af02df332"
+    },
+    {
+      "action": "resolve",
+      "group_id": "org_group_f99796a25102e346",
+      "identity_resolutions": [],
+      "levels": [
+        {
+          "action": "existing",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "university",
+          "official_url": null,
+          "organization_id": "org_auto_3ce5e783fbd769384b1f",
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "create",
+          "approved_domains": [],
+          "canonical_name": "智能与计算学部-软件学院",
+          "level": "school",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": "school",
+          "save_submitted_as_alias": false
+        },
+        {
+          "action": "skip",
+          "approved_domains": [],
+          "canonical_name": null,
+          "level": "department",
+          "official_url": null,
+          "organization_id": null,
+          "organization_type": null,
+          "save_submitted_as_alias": false
+        }
+      ],
+      "mapping_kind": "standard",
+      "mapping_reason": null,
+      "reason": null,
+      "row_overrides": [
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_4",
+          "reason": "任职关系无法确认，本次不采纳"
+        },
+        {
+          "action": "reject",
+          "organization_id": null,
+          "proposal_id": "proposal_issue_155_row_7",
+          "reason": "任职关系无法确认，本次不采纳"
+        }
+      ],
+      "save_path_correction": false,
+      "target_organization_id": null
+    }
+  ],
+  "id": "organization_review_issue_155",
+  "invalid_rows": [
+    18
+  ],
+  "issue": {
+    "number": 155,
+    "url": "https://github.com/JunieXD/AutoEmailSender-MentorData/issues/155"
+  },
+  "manifest_sha256": "6c9e0c1ec90c09c586d09ff9f6b7a2fbc7cb374f0566c24fc9bab106ae3847a6",
+  "mapped_proposal_ids": [
+    "proposal_issue_155_row_14",
+    "proposal_issue_155_row_25",
+    "proposal_issue_155_row_32",
+    "proposal_issue_155_row_33"
+  ],
+  "organization_creations": [],
+  "path_corrections": [],
+  "pull_request_number": 163,
+  "rejected_proposal_ids": [
+    "proposal_issue_155_row_1",
+    "proposal_issue_155_row_10",
+    "proposal_issue_155_row_11",
+    "proposal_issue_155_row_12",
+    "proposal_issue_155_row_13",
+    "proposal_issue_155_row_15",
+    "proposal_issue_155_row_16",
+    "proposal_issue_155_row_17",
+    "proposal_issue_155_row_19",
+    "proposal_issue_155_row_2",
+    "proposal_issue_155_row_20",
+    "proposal_issue_155_row_21",
+    "proposal_issue_155_row_22",
+    "proposal_issue_155_row_23",
+    "proposal_issue_155_row_24",
+    "proposal_issue_155_row_26",
+    "proposal_issue_155_row_27",
+    "proposal_issue_155_row_28",
+    "proposal_issue_155_row_29",
+    "proposal_issue_155_row_3",
+    "proposal_issue_155_row_30",
+    "proposal_issue_155_row_31",
+    "proposal_issue_155_row_34",
+    "proposal_issue_155_row_35",
+    "proposal_issue_155_row_36",
+    "proposal_issue_155_row_37",
+    "proposal_issue_155_row_38",
+    "proposal_issue_155_row_39",
+    "proposal_issue_155_row_4",
+    "proposal_issue_155_row_40",
+    "proposal_issue_155_row_41",
+    "proposal_issue_155_row_5",
+    "proposal_issue_155_row_6",
+    "proposal_issue_155_row_7",
+    "proposal_issue_155_row_8",
+    "proposal_issue_155_row_9"
+  ],
+  "review_comment_id": 5379404759,
+  "reviewer": {
+    "author_association": "OWNER",
+    "github_login": "JunieXD",
+    "github_user_id": 107397009
+  },
+  "schema_version": 1,
+  "updated_organization_ids": []
+}
